@@ -1,0 +1,1302 @@
+# -*- coding: utf-8; mode: conf -*-
+include "%L"
+
+# Some additional Compose key sequences, focusing on maths, linguistics and general text input.
+# To use them, copy all or parts of this config into your ~/.XCompose file.
+#
+# For consistency and simplicity, a few of the rules here conflict with the system files, with
+# workarounds given where possible in the comments (e.g. <underscore>'s usefulness for subscripting
+# often interferes with its system use for macrons, for which <minus> works as an alternative).
+#
+# For a simple command line tool to help manage your compose configuration, check out
+# https://github.com/Udzu/xcompose
+
+##########
+# Spaces #
+##########
+
+<Multi_key> <space> <space>      : " "  U00A0   # NO-BREAK SPACE
+<Multi_key> <space> <n>          : " "  U2002   # EN SPACE
+<Multi_key> <space> <m>          : " "  U2003   # EM SPACE
+<Multi_key> <space> <3>          : " "  U2004   # THREE-PER-EM SPACE
+<Multi_key> <space> <4>          : " "  U2005   # FOUR-PER-EM SPACE
+<Multi_key> <space> <6>          : " "  U2006   # SIX-PER-EM SPACE
+<Multi_key> <space> <numbersign> : " "  U2007   # FIGURE SPACE
+<Multi_key> <space> <period>     : " "  U2008   # PUNCTUATION SPACE
+<Multi_key> <space> <t>          : " "  U2009   # THIN SPACE
+<Multi_key> <space> <h>          : " "  U200A   # HAIR SPACE
+<Multi_key> <space> <bar>        : " "  U200A   # HAIR SPACE
+<Multi_key> <space> <0>          : "​"  U200B   # ZERO WIDTH SPACE
+<Multi_key> <space> <plus>       : " "  U205F   # MEDIUM MATHEMATICAL SPACE
+
+##########
+# Dashes #
+##########
+
+<Multi_key> <minus> <space>          : "­"  U00AD   # SOFT HYPHEN (conflicts with useless ~)
+<Multi_key> <minus> <Return>         : "‑"  U2011   # NON-BREAKING HYPHEN
+<Multi_key> <minus> <numbersign>     : "‒"  U2012   # FIGURE DASH
+<Multi_key> <minus> <n>              : "–"  U2013   # EN DASH
+<Multi_key> <minus> <m>              : "—"  U2014   # EM DASH
+<Multi_key> <minus> <asciitilde>     : "⁓"  U2053   # SWUNG DASH
+<Multi_key> <minus> <2>              : "⸺"  U2E3A   # TWO-EM DASH
+<Multi_key> <minus> <3>              : "⸻"  U2E3B   # THREE-EM DASH
+
+############
+# Brackets #
+############
+
+<Multi_key> <bar> <bar>                   : "‖"  U2016   # DOUBLE VERTICAL LINE
+<Multi_key> <bracketleft> <bracketleft>   : "⟦"  U27E6   # MATHEMATICAL LEFT WHITE SQUARE BRACKET
+<Multi_key> <bracketright> <bracketright> : "⟧"  U27E7   # MATHEMATICAL RIGHT WHITE SQUARE BRACKET
+<Multi_key> <less> <parenleft>            : "⟨"  U27E8   # MATHEMATICAL LEFT ANGLE BRACKET
+<Multi_key> <greater> <parenright>        : "⟩"  U27E9   # MATHEMATICAL RIGHT ANGLE BRACKET
+<Multi_key> <slash> <slash> <slash>       : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
+<Multi_key> <parenleft> <parenleft>       : "⸨"  U2E28   # LEFT DOUBLE PARENTHESIS (conflicts with useless [)
+<Multi_key> <parenright> <parenright>     : "⸩"  U2E29   # RIGHT DOUBLE PARENTHESIS (conflicts with useless ])
+
+########################
+# Combining diacritics #
+########################
+
+# Convention: all combining character sequences end with <Return>
+
+<Multi_key> <grave> <Return>         : "̀"  U0300   # COMBINING GRAVE ACCENT
+<Multi_key> <apostrophe> <Return>    : "́"  U0301   # COMBINING ACUTE ACCENT
+<Multi_key> <asciicircum> <Return>   : "̂"  U0302   # COMBINING CIRCUMFLEX ACCENT
+<Multi_key> <asciitilde> <Return>    : "̃"  U0303   # COMBINING TILDE
+<Multi_key> <underscore> <Return>    : "̄"  U0304   # COMBINING MACRON
+<Multi_key> <asciicircum> <underscore> <Return> : "̅"  U0305   # COMBINING OVERLINE
+<Multi_key> <u> <Return>             : "̆"  U0306   # COMBINING BREVE
+<Multi_key> <period> <Return>        : "̇"  U0307   # COMBINING DOT ABOVE
+<Multi_key> <quotedbl> <Return>      : "̈"  U0308   # COMBINING DIAERESIS
+<Multi_key> <question> <Return>      : "̉"  U0309   # COMBINING HOOK ABOVE
+<Multi_key> <o> <Return>             : "̊"  U030A   # COMBINING RING ABOVE
+<Multi_key> <equal> <Return>         : "̋"  U030B   # COMBINING DOUBLE ACUTE ACCENT
+<Multi_key> <v> <Return>             : "̌"  U030C   # COMBINING CARON
+<Multi_key> <bar> <Return>           : "̍"  U030D   # COMBINING VERTICAL LINE ABOVE
+<Multi_key> <grave> <grave> <Return> : "̏"  U030F   # COMBINING DOUBLE GRAVE ACCENT
+<Multi_key> <u> <v> <Return>         : "̑"  U0311   # COMBINING INVERTED BREVE
+<Multi_key> <asciicircum> <comma> <Return> : "̓"  U0313   # COMBINING COMMA ABOVE (less important than cedilla)
+<Multi_key> <comma> <less> <Return>  : "̔"  U0314   # COMBINING REVERSED COMMA ABOVE
+<Multi_key> <notsign> <Return>       : "̚"  U031A   # COMBINING LEFT ANGLE ABOVE
+<Multi_key> <exclam> <Return>        : "̣"  U0323   # COMBINING DOT BELOW
+<Multi_key> <comma> <Return>         : "̧"  U0327   # COMBINING CEDILLA
+<Multi_key> <semicolon> <Return>     : "̨"  U0328   # COMBINING OGONEK
+<Multi_key> <leftbracket> <Return>   : "͆"  U0346   # COMBINING BRIDGE ABOVE
+<Multi_key> <asciitilde> <slash> <Return> : "͊"  U034A   # COMBINING NOT TILDE ABOVE
+<Multi_key> <slash> <asciitilde> <Return> : "͊"  U034A   # COMBINING NOT TILDE ABOVE
+<Multi_key> <parenright> <Return>    : "͝"  U035D   # COMBINING DOUBLE BREVE  
+<Multi_key> <parenleft> <Return>     : "͡"  U0361   # COMBINING DOUBLE INVERTED BREVE
+
+<Multi_key> <underscore> <grave> <Return>            : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
+<Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (overrides APL ⍘)
+<Multi_key> <underscore> <comma> <less> <Return>     : "̜"  U031C   # COMBINING LEFT HALF RING BELOW
+<Multi_key> <underscore> <bar> <underscore> <Return> : "̝"  U031D   # COMBINING UP TACK BELOW
+<Multi_key> <underscore> <T> <Return>                : "̞"  U031E   # COMBINING DOWN TACK BELOW
+<Multi_key> <underscore> <underscore> <plus> <Return> : "̟"  U031F   # COMBINING PLUS SIGN BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <underscore> <minus> <Return> : "̠"  U0320   # COMBINING MINUS SIGN BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <underscore> <j> <Return>   : "̡"  U0321   # COMBINING PALATALIZED HOOK BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <underscore> <l> <Return>   : "̢"  U0322   # COMBINING RETROFLEX HOOK BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <period> <Return>           : "̣"  U0323   # COMBINING DOT BELOW
+<Multi_key> <underscore> <quotedbl> <Return>         : "̤"  U0324   # COMBINING DIAERESIS BELOW
+<Multi_key> <underscore> <o> <Return>                : "̥"  U0325   # COMBINING RING BELOW (conflicts with ō, use -o)
+<Multi_key> <underscore> <underscore> <comma> <Return> : "̦"  U0326   # COMBINING COMMA BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <comma> <Return>            : "̧"  U0327   # COMBINING CEDILLA
+<Multi_key> <underscore> <semicolon> <Return>        : "̨"  U0328   # COMBINING OGONEK
+<Multi_key> <underscore> <bar> <Return>              : "̩"  U0329   # COMBINING VERTICAL LINE BELOW
+<Multi_key> <underscore> <bracketleft> <Return>      : "̪"  U032A   # COMBINING BRIDGE BELOW
+<Multi_key> <underscore> <w> <Return>                : "̫"  U032B   # COMBINING INVERTED DOUBLE ARCH BELOW
+<Multi_key> <underscore> <v> <Return>                : "̬"  U032C   # COMBINING CARON BELOW
+<Multi_key> <underscore> <asciicircum> <Return>      : "̭"  U032D   # COMBINING CIRCUMFLEX ACCENT BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <u> <Return>                : "̮"  U032E   # COMBINING BREVE BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <u> <v> <Return>            : "̯"  U032F   # COMBINING INVERTED BREVE BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <asciitilde> <Return>       : "̰"  U0330   # COMBINING TILDE BELOW
+<Multi_key> <underscore> <underscore> <Return>       : "̱"  U0331   # COMBINING MACRON BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <underscore> <Return> : "̲"  U0332   # COMBINING LOW LINE (UNDERLINE) (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <equal> <Return> : "̳"  U0333   # COMBINING DOUBLE LOW LINE (UNDERLINE) (conflicts with ¯, use -^)
+<Multi_key> <underscore> <bracketright> <Return>     : "̺"  U033A   # COMBINING INVERTED BRIDGE BELOW
+<Multi_key> <underscore> <bracketleft> <bracketright> <Return> : "̻"  U033B   # COMBINING SQUARE BELOW
+<Multi_key> <underscore> <M> <Return>                : "̼"  U033C   # COMBINING SEAGULL BELOW
+<Multi_key> <underscore> <underscore> <underscore> <equal> <Return> : "͇"  U0347   # COMBINING EQUALS SIGN BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <bar> <bar> <Return>        : "͈"  U0348   # COMBINING DOUBLE VERTICAL LINE BELOW
+<Multi_key> <underscore> <notsign> <Return>          : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
+<Multi_key> <parenright> <underscore> <Return>       : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW
+
+<Multi_key> <minus> <tilde> <Return> : "̴"  U0334   # COMBINING TILDE OVERLAY
+<Multi_key> <minus> <minus> <Return> : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
+<Multi_key> <slash> <slash> <Return> : "̸"  U0338   # COMBINING LONG SOLIDUS OVERLAY (conflicts with useless \)
+
+###############################
+# Superscripts and subscripts #
+###############################
+
+<Multi_key> <asciicircum> <underscore> <a>  : "ᵃ"  U1D43   # MODIFIER LETTER SMALL A (conflicts with ª, use ^f defined below)
+<Multi_key> <asciicircum> <underscore> <b>  : "ᵇ"  U1D47   # MODIFIER LETTER SMALL B
+<Multi_key> <asciicircum> <underscore> <c>  : "ᶜ"  U1D9C   # MODIFIER LETTER SMALL C
+<Multi_key> <asciicircum> <underscore> <d>  : "ᵈ"  U1D48   # MODIFIER LETTER SMALL D
+<Multi_key> <asciicircum> <underscore> <e>  : "ᵉ"  U1D49   # MODIFIER LETTER SMALL E
+<Multi_key> <asciicircum> <underscore> <f>  : "ᶠ"  U1DA0   # MODIFIER LETTER SMALL F
+<Multi_key> <asciicircum> <underscore> <g>  : "ᵍ"  U1D4D   # MODIFIER LETTER SMALL G
+<Multi_key> <asciicircum> <underscore> <h>  : "ʰ"  U02B0   # MODIFIER LETTER SMALL H
+<Multi_key> <asciicircum> <underscore> <i>  : "ⁱ"  U2071   # SUPERSCRIPT LATIN SMALL LETTER I
+<Multi_key> <asciicircum> <underscore> <j>  : "ʲ"  U02B2   # MODIFIER LETTER SMALL J
+<Multi_key> <asciicircum> <underscore> <k>  : "ᵏ"  U1D4F   # MODIFIER LETTER SMALL K
+<Multi_key> <asciicircum> <underscore> <l>  : "ˡ"  U02E1   # MODIFIER LETTER SMALL L
+<Multi_key> <asciicircum> <underscore> <m>  : "ᵐ"  U1D50   # MODIFIER LETTER SMALL M
+<Multi_key> <asciicircum> <underscore> <n>  : "ⁿ"  U207F   # SUPERSCRIPT LATIN SMALL LETTER N
+<Multi_key> <asciicircum> <underscore> <o>  : "ᵒ"  U1D52   # MODIFIER LETTER SMALL O (conflicts with º, use ^m defined below)
+<Multi_key> <asciicircum> <underscore> <p>  : "ᵖ"  U1D56   # MODIFIER LETTER SMALL P
+<Multi_key> <asciicircum> <underscore> <q>  : "𐞥"  U107A5  # MODIFIER LETTER SMALL Q
+<Multi_key> <asciicircum> <underscore> <r>  : "ʳ"  U02B3   # MODIFIER LETTER SMALL R
+<Multi_key> <asciicircum> <underscore> <s>  : "ˢ"  U02E2   # MODIFIER LETTER SMALL S
+<Multi_key> <asciicircum> <underscore> <t>  : "ᵗ"  U1D57   # MODIFIER LETTER SMALL T
+<Multi_key> <asciicircum> <underscore> <u>  : "ᵘ"  U1D58   # MODIFIER LETTER SMALL U
+<Multi_key> <asciicircum> <underscore> <v>  : "ᵛ"  U1D5B   # MODIFIER LETTER SMALL V
+<Multi_key> <asciicircum> <underscore> <w>  : "ʷ"  U02B7   # MODIFIER LETTER SMALL W
+<Multi_key> <asciicircum> <underscore> <x>  : "ˣ"  U02E3   # MODIFIER LETTER SMALL X
+<Multi_key> <asciicircum> <underscore> <y>  : "ʸ"  U02B8   # MODIFIER LETTER SMALL Y
+<Multi_key> <asciicircum> <underscore> <z>  : "ᶻ"  U1DBB   # MODIFIER LETTER SMALL Z
+
+<Multi_key> <asciicircum> <f>  : "ª"  U00AA   # FEMININE ORDINAL INDICATOR
+<Multi_key> <asciicircum> <m>  : "º"  U00BA   # MASCULINE ORDINAL INDICATOR
+
+<Multi_key> <asciicircum> <underscore> <A>  : "ᴬ"  U1D2C   # MODIFIER LETTER CAPITAL A
+<Multi_key> <asciicircum> <underscore> <B>  : "ᴮ"  U1D2E   # MODIFIER LETTER CAPITAL B
+<Multi_key> <asciicircum> <underscore> <C>  : "ꟲ"  UA7F2   # MODIFIER LETTER CAPITAL C
+<Multi_key> <asciicircum> <underscore> <D>  : "ᴰ"  U1D30   # MODIFIER LETTER CAPITAL D
+<Multi_key> <asciicircum> <underscore> <E>  : "ᴱ"  U1D31   # MODIFIER LETTER CAPITAL E
+<Multi_key> <asciicircum> <underscore> <F>  : "ꟳ"  UA7F3   # MODIFIER LETTER CAPITAL F
+<Multi_key> <asciicircum> <underscore> <G>  : "ᴳ"  U1D33   # MODIFIER LETTER CAPITAL G
+<Multi_key> <asciicircum> <underscore> <H>  : "ᴴ"  U1D34   # MODIFIER LETTER CAPITAL H
+<Multi_key> <asciicircum> <underscore> <I>  : "ᴵ"  U1D35   # MODIFIER LETTER CAPITAL I
+<Multi_key> <asciicircum> <underscore> <J>  : "ᴶ"  U1D36   # MODIFIER LETTER CAPITAL J
+<Multi_key> <asciicircum> <underscore> <K>  : "ᴷ"  U1D37   # MODIFIER LETTER CAPITAL K
+<Multi_key> <asciicircum> <underscore> <L>  : "ᴸ"  U1D38   # MODIFIER LETTER CAPITAL L
+<Multi_key> <asciicircum> <underscore> <M>  : "ᴹ"  U1D39   # MODIFIER LETTER CAPITAL M
+<Multi_key> <asciicircum> <underscore> <N>  : "ᴺ"  U1D3A   # MODIFIER LETTER CAPITAL N
+<Multi_key> <asciicircum> <underscore> <O>  : "ᴼ"  U1D3C   # MODIFIER LETTER CAPITAL O
+<Multi_key> <asciicircum> <underscore> <P>  : "ᴾ"  U1D3E   # MODIFIER LETTER CAPITAL P
+<Multi_key> <asciicircum> <underscore> <Q>  : "ꟴ"  UA7F4   # MODIFIER LETTER CAPITAL Q
+<Multi_key> <asciicircum> <underscore> <R>  : "ᴿ"  U1D3F   # MODIFIER LETTER CAPITAL R
+<Multi_key> <asciicircum> <underscore> <T>  : "ᵀ"  U1D40   # MODIFIER LETTER CAPITAL T
+<Multi_key> <asciicircum> <underscore> <U>  : "ᵁ"  U1D41   # MODIFIER LETTER CAPITAL U
+<Multi_key> <asciicircum> <underscore> <V>  : "ⱽ"  U2C7D   # MODIFIER LETTER CAPITAL V
+<Multi_key> <asciicircum> <underscore> <W>  : "ᵂ"  U1D42   # MODIFIER LETTER CAPITAL W
+
+<Multi_key> <underscore> <a>              : "ₐ"  U2090   # LATIN SUBSCRIPT SMALL LETTER A (conflicts with ā, use -a)
+<Multi_key> <underscore> <e>              : "ₑ"  U2091   # LATIN SUBSCRIPT SMALL LETTER E (conflicts with ē, use -e)
+<Multi_key> <underscore> <h>              : "ₕ"  U2095   # LATIN SUBSCRIPT SMALL LETTER H
+<Multi_key> <underscore> <i>              : "ᵢ"  U1D62   # LATIN SUBSCRIPT SMALL LETTER I (conflicts with ī, use -i)
+<Multi_key> <underscore> <j>              : "ⱼ"  U2C7C   # LATIN SUBSCRIPT SMALL LETTER J
+<Multi_key> <underscore> <k>              : "ₖ"  U2096   # LATIN SUBSCRIPT SMALL LETTER K
+<Multi_key> <underscore> <l>              : "ₗ"  U2097   # LATIN SUBSCRIPT SMALL LETTER L
+<Multi_key> <underscore> <m>              : "ₘ"  U2098   # LATIN SUBSCRIPT SMALL LETTER M
+<Multi_key> <underscore> <n>              : "ₙ"  U2099   # LATIN SUBSCRIPT SMALL LETTER N
+<Multi_key> <underscore> <o> <underscore> : "ₒ"  U2092   # LATIN SUBSCRIPT SMALL LETTER O (conflicts with ō, use -o)
+<Multi_key> <underscore> <p>              : "ₚ"  U209A   # LATIN SUBSCRIPT SMALL LETTER P
+<Multi_key> <underscore> <r>              : "ᵣ"  U1D63   # LATIN SUBSCRIPT SMALL LETTER R
+<Multi_key> <underscore> <s>              : "ₛ"  U209B   # LATIN SUBSCRIPT SMALL LETTER S
+<Multi_key> <underscore> <t>              : "ₜ"  U209C   # LATIN SUBSCRIPT SMALL LETTER T
+<Multi_key> <underscore> <u> <underscore> : "ᵤ"  U1D64   # LATIN SUBSCRIPT SMALL LETTER U (conflicts with ū, use -u)
+<Multi_key> <underscore> <v> <underscore> : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
+<Multi_key> <underscore> <x>              : "ₓ"  U2093   # LATIN SUBSCRIPT SMALL LETTER X
+
+###########################################################
+# International Phonetic Alphabet (and other linguistics) #
+###########################################################
+
+# Also see combining diacritics section above
+
+<Multi_key> <b> <h>                 : "β"  U03B2   # GREEK SMALL LETTER BETA
+<Multi_key> <g> <h>                 : "ɣ"  U0263   # LATIN SMALL LETTER GAMMA
+<Multi_key> <j> <h>                 : "ʝ"  U029D   # LATIN SMALL LETTER J WITH CROSSED-TAIL
+<Multi_key> <l> <h>                 : "ɬ"  U026C   # LATIN SMALL LETTER L WITH BELT
+<Multi_key> <p> <h>                 : "ɸ"  U0278   # LATIN SMALL LETTER PHI
+<Multi_key> <q> <h>                 : "χ"  U03C7   # GREEK SMALL LETTER CHI
+<Multi_key> <s> <h>                 : "ʃ"  U0283   # LATIN SMALL LETTER ESH
+<Multi_key> <x> <h>                 : "χ"  U03C7   # GREEK SMALL LETTER CHI
+<Multi_key> <z> <h>                 : "ʒ"  U0292   # LATIN SMALL LETTER EZH
+<Multi_key> <g> <n>                 : "ɲ"  U0272   # LATIN SMALL LETTER N WITH LEFT HOOK
+<Multi_key> <m> <f>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
+<Multi_key> <n> <g>                 : "ŋ"  U014B   # LATIN SMALL LETTER ENG
+<Multi_key> <r> <d>                 : "ɾ"  U027E   # LATIN SMALL LETTER R WITH FISHHOOK
+<Multi_key> <g> <w>                 : "ɰ"  U0270   # LATIN SMALL LETTER TURNED M WITH LONG LEG
+<Multi_key> <v> <w>                 : "ʋ"  U028B   # LATIN SMALL LETTER V WITH HOOK
+
+<Multi_key> <a> <h>                 : "ɑ"  U0251   # LATIN SMALL LETTER ALPHA
+<Multi_key> <e> <h>                 : "ɛ"  U025B   # LATIN SMALL LETTER OPEN E
+<Multi_key> <i> <h>                 : "ɪ"  U026A   # LATIN LETTER SMALL CAPITAL I
+<Multi_key> <u> <h>                 : "ʊ"  U028A   # LATIN SMALL LETTER UPSILON
+<Multi_key> <w> <h>                 : "ɯ"  U026F   # LATIN SMALL LETTER TURNED M
+<Multi_key> <y> <h>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
+<Multi_key> <e> <r>                 : "ɚ"  U025A   # LATIN SMALL LETTER SCHWA WITH HOOK
+
+<Multi_key> <b> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
+<Multi_key> <B> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
+<Multi_key> <G> <G>                 : "ɢ"  U0262   # LATIN LETTER SMALL CAPITAL G
+<Multi_key> <i> <I>                 : "ɪ"  U026A   # LATIN LETTER SMALL CAPITAL I
+<Multi_key> <I> <I>                 : "ɪ"  U026A   # LATIN LETTER SMALL CAPITAL I
+<Multi_key> <h> <H>                 : "ʜ"  U029C   # LATIN LETTER SMALL CAPITAL H
+<Multi_key> <H> <H>                 : "ʜ"  U029C   # LATIN LETTER SMALL CAPITAL H
+<Multi_key> <l> <L>                 : "ʟ"  U029F   # LATIN LETTER SMALL CAPITAL L
+<Multi_key> <n> <N>                 : "ɴ"  U0274   # LATIN LETTER SMALL CAPITAL N
+<Multi_key> <r> <R>                 : "ʀ"  U0280   # LATIN LETTER SMALL CAPITAL R
+<Multi_key> <y> <Y>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
+<Multi_key> <Y> <Y>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
+
+<Multi_key> <e> <e>                 : "ə"  U0259   # LATIN SMALL LETTER SCHWA
+<Multi_key> <r> <r>                 : "ɹ"  U0279   # LATIN SMALL LETTER TURNED R
+
+<Multi_key> <a> <v>                 : "ɐ"  U0250   # LATIN SMALL LETTER TURNED A
+<Multi_key> <e> <v>                 : "ə"  U0259   # LATIN SMALL LETTER SCHWA
+<Multi_key> <h> <v>                 : "ɥ"  U0265   # LATIN SMALL LETTER TURNED H
+<Multi_key> <m> <v>                 : "ɯ"  U026F   # LATIN SMALL LETTER TURNED M
+<Multi_key> <r> <v>                 : "ɹ"  U0279   # LATIN SMALL LETTER TURNED R
+<Multi_key> <R> <v>                 : "ʁ"  U0281   # LATIN LETTER SMALL CAPITAL INVERTED R
+<Multi_key> <v> <v>                 : "ʌ"  U028C   # LATIN SMALL LETTER TURNED V
+<Multi_key> <W> <v>                 : "ʍ"  U028D   # LATIN SMALL LETTER TURNED W
+<Multi_key> <y> <v>                 : "ʎ"  U028E   # LATIN SMALL LETTER TURNED Y
+
+<Multi_key> <a> <less>              : "ɒ"  U0252   # LATIN SMALL LETTER TURNED ALPHA (close enough)
+<Multi_key> <e> <less>              : "ɘ"  U0258   # LATIN SMALL LETTER REVERSED E (conflicts with ě, use ve)
+<Multi_key> <question> <less> <period> : "ʕ"  U0295   # LATIN LETTER PHARYNGEAL VOICED FRICATIVE
+<Multi_key> <question> <less> <minus> : "ʢ"  U02A2   # LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE
+
+<Multi_key> <d> <l>                 : "ɖ"  U0256   # LATIN SMALL LETTER D WITH TAIL
+<Multi_key> <n> <l>                 : "ɳ"  U0273   # LATIN SMALL LETTER N WITH RETROFLEX HOOK
+<Multi_key> <s> <l>                 : "ʂ"  U0282   # LATIN SMALL LETTER S WITH HOOK
+<Multi_key> <z> <l>                 : "ʐ"  U0290   # LATIN SMALL LETTER Z WITH RETROFLEX HOOK
+<Multi_key> <r> <l> <Return>        : "ɽ"  U027D   # LATIN SMALL LETTER R WITH TAIL
+<Multi_key> <r> <l> <v>             : "ɻ"  U027B   # LATIN SMALL LETTER TURNED R WITH HOOK
+<Multi_key> <c> <at>                : "ɕ"  U0255   # LATIN SMALL LETTER C WITH CURL
+<Multi_key> <z> <at>                : "ʑ"  U0291   # LATIN SMALL LETTER Z WITH CURL
+<Multi_key> <h> <minus>             : "ħ"  U0127   # LATIN SMALL LETTER H WITH STROKE
+<Multi_key> <j> <minus>             : "ɟ"  U025F   # LATIN SMALL LETTER DOTLESS J WITH STROKE
+<Multi_key> <0> <minus>             : "θ"  U03B8   # GREEK SMALL LETTER THETA
+<Multi_key> <o> <bar>               : "ɵ"  U0275   # LATIN SMALL LETTER BARRED O
+<Multi_key> <O> <bar>               : "θ"  U03B8   # GREEK SMALL LETTER THETA
+<Multi_key> <b> <apostrophe>        : "ɓ"  U0253   # LATIN SMALL LETTER B WITH HOOK
+<Multi_key> <h> <apostrophe>        : "ɦ"  U0266   # LATIN SMALL LETTER H WITH HOOK
+<Multi_key> <v> <apostrophe>        : "ⱱ"  U2C71   # LATIN SMALL LETTER V WITH RIGHT HOOK
+
+<Multi_key> <asciicircum> <asciicircum>  : "ʌ"  U028C   # LATIN SMALL LETTER TURNED V
+<Multi_key> <question> <period>     : "ʔ"  U0294   # LATIN LETTER GLOTTAL STOP
+<Multi_key> <question> <minus>      : "ʡ"  U02A1   # LATIN LETTER GLOTTAL STOP WITH STROKE
+<Multi_key> <e> <3>                 : "ɜ"  U025C   # LATIN SMALL LETTER REVERSED OPEN E
+<Multi_key> <o> <g>                 : "ɤ"  U0264   # LATIN SMALL LETTER RAMS HORN
+<Multi_key> <o> <parenright>        : "ɔ"  U0254   # LATIN SMALL LETTER OPEN O
+<Multi_key> <v> <backslash>         : "ʋ"  U028B   # LATIN SMALL LETTER V WITH HOOK
+
+<Multi_key> <l> <z>                 : "ɮ"  U026E   # LATIN SMALL LETTER LEZH
+<Multi_key> <o> <E>                 : "ɶ"  U0276   # LATIN LETTER SMALL CAPITAL OE
+
+<Multi_key> <g> <g>                 : "ˠ"  U02E0   # MODIFIER LETTER SMALL GAMMA
+<Multi_key> <h> <h>                 : "ʰ"  U02B0   # MODIFIER LETTER SMALL H
+<Multi_key> <j> <j>                 : "ʲ"  U02B2   # MODIFIER LETTER SMALL J
+<Multi_key> <l> <l>                 : "ˡ"  U02E1   # MODIFIER LETTER SMALL L
+<Multi_key> <n> <n>                 : "ⁿ"  U207F   # SUPERSCRIPT LATIN SMALL LETTER N
+<Multi_key> <w> <w>                 : "ʷ"  U02B7   # MODIFIER LETTER SMALL W
+<Multi_key> <T> <T>                 : "˕"  U02D5   # MODIFIER LETTER DOWN TACK
+<Multi_key> <T> <v> <T>             : "˔"  U02D4   # MODIFIER LETTER UP TACK
+<Multi_key> <0> <0> <minus>         : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
+<Multi_key> <O> <O> <bar>           : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
+<Multi_key> <x> <asciicircum> <x>   : "ˣ"  U02E3   # MODIFIER LETTER SMALL X
+<Multi_key> <question> <asciicircum> <question> : "ˤ"  U02E4   # MODIFIER LETTER SMALL REVERSED GLOTTAL STOP
+<Multi_key> <plus> <asciicircum> <plus> : "˖"  U02D6   # MODIFIER LETTER PLUS SIGN
+<Multi_key> <minus> <minus> <asciicircum> : "˗"  U02D7   # MODIFIER LETTER MINUS SIGN (annoyingly inconsistent)
+
+<Multi_key> <apostrophe> <1>        : "ˈ"  U02C8   # MODIFIER LETTER VERTICAL LINE
+<Multi_key> <apostrophe> <2>        : "ˌ"  U02CC   # MODIFIER LETTER LOW VERTICAL LINE
+<Multi_key> <colon> <colon>         : "ː"  U02D0   # MODIFIER LETTER TRIANGULAR COLON
+<Multi_key> <backslash> <underscore> <slash> : "‿"  U203F   # UNDERTIE
+
+<Multi_key> <W> <N>                 : "Ƿ"  U01F7   # LATIN CAPITAL LETTER WYNN
+<Multi_key> <w> <n>                 : "ƿ"  U01BF   # LATIN LETTER WYNN
+<Multi_key> <Y> <G>                 : "Ȝ"  U021C   # LATIN CAPITAL LETTER YOGH
+<Multi_key> <y> <g>                 : "ȝ"  U021D   # LATIN SMALL LETTER YOGH
+
+#######################################
+# Mathematical and scientific symbols #
+#######################################
+
+<Multi_key> <greater> <Return>        : "⃗"   U20D7   # COMBINING RIGHT ARROW ABOVE (VECTOR)
+<Multi_key> <slash> <slash> <percent> : "⁄"  U2044   # FRACTION SLASH (conflicts with useless \)
+<Multi_key> <slash> <slash> <period>  : "∕"  U2215   # DIVISION SLASH (conflicts with useless \)
+<Multi_key> <backslash> <backslash>   : "∖"  U2216   # SET MINUS
+<Multi_key> <less> <greater>          : "↔"  U2194   # LEFT RIGHT ARROW (conflicts with ⋄, use ><)
+<Multi_key> <minus> <plus>            : "∓"  U2213   # MINUS-OR-PLUS SIGN (conflicts with ±, use +-)
+<Multi_key> <3> <v> <slash>           : "∛"  U221B   # CUBE ROOT
+<Multi_key> <4> <v> <slash>           : "∜"  U221C   # FOURTH ROOT
+<Multi_key> <parenleft> <plus> <parenright>     : "⊕"  U2295   # CIRCLED PLUS
+<Multi_key> <parenleft> <asterisk> <parenright> : "⊗"  U2297   # CIRCLED TIMES
+<Multi_key> <1> <apostrophe>          : "′"  U2032   # PRIME (not to be confused with '1)
+<Multi_key> <2> <apostrophe>          : "″"  U2033   # DOUBLE PRIME (not to be confused with '2)
+<Multi_key> <3> <apostrophe>          : "‴"  U2034   # TRIPLE PRIME
+<Multi_key> <4> <apostrophe>          : "⁗"  U2057   # QUADRUPLE PRIME
+<Multi_key> <backslash> <A>           : "∀"  U2200   # FOR ALL
+<Multi_key> <backslash> <E>           : "∃"  U2203   # THERE EXISTS
+<Multi_key> <slash> <E>               : "∄"  U2204   # THERE DOES NOT EXIST
+<Multi_key> <bar> <T>                 : "⊤"  U22A4   # DOWN TACK
+<Multi_key> <bar> <underscore>        : "⊥"  U22A5   # UP TACK
+<Multi_key> <bar> <F>                 : "⊥"  U22A5   # UP TACK
+
+<Multi_key> <a> <l> <e> <p> <h>         : "ℵ"  U2135   # ALEF SYMBOL
+<Multi_key> <a> <l> <p> <h> <a>         : "α"  U03B1   # GREEK SMALL LETTER ALPHA
+<Multi_key> <b> <e> <t> <a>             : "β"  U03B2   # GREEK SMALL LETTER BETA (conflicts with ĕ, use ue)
+<Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va)
+<Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
+<Multi_key> <d> <e> <l> <Return>        : "∇"  U2207   # NABLA
+<Multi_key> <d> <e> <l> <t> <a>         : "δ"  U03B4   # GREEK SMALL LETTER DELTA
+<Multi_key> <e> <p> <s> <i> <l> <o> <n> : "ε"  U03B5   # GREEK SMALL LETTER EPSILON
+<Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
+<Multi_key> <i> <n> <t>                 : "∫"  U222B   # INTEGRAL
+<Multi_key> <i> <s> <i> <n>             : "∈"  U2208   # ELEMENT OF
+<Multi_key> <l> <a> <m> <b> <d> <a>     : "λ"  U03BB   # GREEK SMALL LETTER LAMDA
+<Multi_key> <l> <a> <m> <b> <d> <slash> : "ƛ"  U019B   # LATIN SMALL LETTER LAMBDA WITH STROKE
+<Multi_key> <l> <a> <m> <b> <d> <minus> : "ƛ"  U019B   # LATIN SMALL LETTER LAMBDA WITH STROKE
+<Multi_key> <l> <a> <n> <d>             : "∧"  U2227   # LOGICAL AND
+<Multi_key> <l> <i> <t> <r> <e>         : "ℓ"  U2113   # SCRIPT SMALL L
+<Multi_key> <l> <o> <r>                 : "∨"  U2228   # LOGICAL OR
+<Multi_key> <m> <u>                     : "µ"  U00B5   # MICRO SIGN
+<Multi_key> <n> <a> <b> <l> <a>         : "∇"  U2207   # NABLA
+<Multi_key> <n> <i>                     : "∋"  U220B   # CONTAINS AS MEMBER
+<Multi_key> <n> <o> <t> <i> <n>         : "∉"  U2209   # NOT AN ELEMENT OF
+<Multi_key> <n> <o> <t> <n> <i>         : "∌"  U220C   # DOES NOT CONTAIN AS MEMBER
+<Multi_key> <n> <s> <u> <b> <Return>    : "⊄"  U2284   # NOT A SUBSET OF
+<Multi_key> <n> <s> <u> <b> <e> <q>     : "⊈"  U2288   # NEITHER A SUBSET OF NOR EQUAL TO
+<Multi_key> <n> <s> <u> <p> <Return>    : "⊅"  U2285   # NOT A SUPERSET OF
+<Multi_key> <n> <s> <u> <p> <e> <q>     : "⊉"  U2289   # NEITHER A SUPERSET OF NOR EQUAL TO
+<Multi_key> <n> <u>                     : "ν"  U03BD   # GREEK SMALL LETTER NU
+<Multi_key> <o> <h> <m>                 : "Ω"  U2126   # OHM SIGN
+<Multi_key> <o> <m> <e> <g> <a>         : "ω"  U03C9   # GREEK SMALL LETTER OMEGA
+<Multi_key> <p> <a> <r> <t>             : "∂"  U2202   # PARTIAL DIFFERENTIAL
+<Multi_key> <p> <i>                     : "π"  U03C0   # GREEK SMALL LETTER PI
+<Multi_key> <p> <r> <o> <d>             : "∏"  U220F   # N-ARY PRODUCT
+<Multi_key> <p> <s> <i>                 : "ψ"  U03C8   # GREEK SMALL LETTER PSI
+<Multi_key> <r> <h> <o>                 : "ρ"  U03C1   # GREEK SMALL LETTER RHO
+<Multi_key> <s> <i> <g> <m> <a>         : "σ"  U03C3   # GREEK SMALL LETTER SIGMA
+<Multi_key> <s> <u> <b> <Return>        : "⊂"  U2282   # SUBSET OF
+<Multi_key> <s> <u> <b> <e> <q>         : "⊆"  U2286   # SUBSET OF OR EQUAL TO
+<Multi_key> <s> <u> <b> <n> <e> <q>     : "⊊"  U228A   # SUBSET OF WITH NOT EQUAL TO
+<Multi_key> <s> <u> <m>                 : "∑"  U2211   # N-ARY SUMMATION
+<Multi_key> <s> <u> <p> <Return>        : "⊃"  U2283   # SUPERSET OF
+<Multi_key> <s> <u> <p> <e> <q>         : "⊇"  U2287   # SUPERSET OF OR EQUAL TO
+<Multi_key> <s> <u> <p> <n> <e> <q>     : "⊋"  U228B   # SUPERSET OF WITH NOT EQUAL TO
+<Multi_key> <z> <e> <t> <a>             : "ζ"  U03B6   # GREEK SMALL LETTER ZETA
+<Multi_key> <P> <H> <I>                 : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
+<Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
+<Multi_key> <Q> <E> <D>                 : "∎"  U220E   # END OF PROOF
+
+########################
+# Non-Latin characters #
+########################
+
+# Convention: script prefix + glyph type (a = letters b = extra letters 0 = numbers ; = punctuation) + code
+
+##############
+# (a) Arabic #
+##############
+
+<Multi_key> <a> <a> <a> : "ا" U0627    # ARABIC LETTER ALEF (conflicts with å, use oa)
+<Multi_key> <a> <a> <b> : "ب" U0628    # ARABIC LETTER BEH (conflicts with å, use oa)
+<Multi_key> <a> <a> <t> : "ت" U062A    # ARABIC LETTER TEH (conflicts with å, use oa)
+<Multi_key> <a> <a> <T> : "ث" U062B    # ARABIC LETTER THEH (conflicts with å, use oa)
+<Multi_key> <a> <a> <j> : "ج" U062C    # ARABIC LETTER JEEM (conflicts with å, use oa)
+<Multi_key> <a> <a> <H> : "ح" U062D    # ARABIC LETTER HAH (conflicts with å, use oa)
+<Multi_key> <a> <b> <h> : "ح" U062D    # ARABIC LETTER HAH (conflicts with å, use oa)
+<Multi_key> <a> <a> <K> : "خ" U062E    # ARABIC LETTER KHAH (conflicts with å, use oa)
+<Multi_key> <a> <a> <d> : "د" U062F    # ARABIC LETTER DAL (conflicts with å, use oa)
+<Multi_key> <a> <a> <D> : "ذ" U0630    # ARABIC LETTER THAL (conflicts with å, use oa)
+<Multi_key> <a> <a> <r> : "ر" U0631    # ARABIC LETTER REH (conflicts with å, use oa)
+<Multi_key> <a> <a> <z> : "ز" U0632    # ARABIC LETTER ZAIN (conflicts with å, use oa)
+<Multi_key> <a> <a> <s> : "س" U0633    # ARABIC LETTER SEEN (conflicts with å, use oa)
+<Multi_key> <a> <a> <S> : "ش" U0634    # ARABIC LETTER SHEEN (conflicts with å, use oa)
+<Multi_key> <a> <b> <s> : "ص" U0635    # ARABIC LETTER SAD (conflicts with å, use oa)
+<Multi_key> <a> <b> <d> : "ض" U0636    # ARABIC LETTER DAD (conflicts with å, use oa)
+<Multi_key> <a> <b> <t> : "ط" U0637    # ARABIC LETTER TAH (conflicts with å, use oa)
+<Multi_key> <a> <b> <z> : "ظ" U0638    # ARABIC LETTER ZAH (conflicts with å, use oa)
+<Multi_key> <a> <a> <3> : "ع" U0639    # ARABIC LETTER AIN (conflicts with å, use oa)
+<Multi_key> <a> <a> <G> : "غ" U063A    # ARABIC LETTER GHAIN (conflicts with å, use oa)
+<Multi_key> <a> <a> <f> : "ف" U0641    # ARABIC LETTER FEH (conflicts with å, use oa)
+<Multi_key> <a> <a> <q> : "ق" U0642    # ARABIC LETTER QAF (conflicts with å, use oa)
+<Multi_key> <a> <a> <k> : "ك" U0643    # ARABIC LETTER KAF (conflicts with å, use oa)
+<Multi_key> <a> <a> <l> : "ل" U0644    # ARABIC LETTER LAM (conflicts with å, use oa)
+<Multi_key> <a> <a> <m> : "م" U0645    # ARABIC LETTER MEEM (conflicts with å, use oa)
+<Multi_key> <a> <a> <n> : "ن" U0646    # ARABIC LETTER NOON (conflicts with å, use oa)
+<Multi_key> <a> <a> <h> : "ه" U0647    # ARABIC LETTER HEH (conflicts with å, use oa)
+<Multi_key> <a> <a> <w> : "و" U0648    # ARABIC LETTER WAW (conflicts with å, use oa)
+<Multi_key> <a> <a> <u> : "و" U0648    # ARABIC LETTER WAW (conflicts with å, use oa)
+<Multi_key> <a> <a> <y> : "ي" U064A    # ARABIC LETTER YEH (conflicts with å, use oa)
+<Multi_key> <a> <a> <i> : "ي" U064A    # ARABIC LETTER YEH (conflicts with å, use oa)
+<Multi_key> <a> <a> <apostrophe> : "ء" U0621    # ARABIC LETTER HAMZA (conflicts with å, use oa)
+<Multi_key> <a> <a> <2> : "ء" U0621    # ARABIC LETTER HAMZA (conflicts with å, use oa)
+# Persian
+<Multi_key> <a> <a> <g> : "گ" U06AF    # ARABIC LETTER GAF (conflicts with å, use oa)
+<Multi_key> <a> <a> <J> : "ژ" U0698    # ARABIC LETTER JEH (conflicts with å, use oa)
+<Multi_key> <a> <a> <C> : "چ" U0686    # ARABIC LETTER TCHEH (conflicts with å, use oa)
+<Multi_key> <a> <a> <p> : "پ" U067E    # ARABIC LETTER PEH (conflicts with å, use oa)
+
+<Multi_key> <a> <b> <a> <tilde> : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
+<Multi_key> <a> <b> <a> <2> : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
+<Multi_key> <a> <b> <w> <2> : "ؤ"  U0624   # ARABIC LETTER WAW WITH HAMZA ABOVE
+<Multi_key> <a> <b> <a> <underscore> <2> : "إ"  U0625   # ARABIC LETTER ALEF WITH HAMZA BELOW
+<Multi_key> <a> <b> <y> <2> : "ئ"  U0626   # ARABIC LETTER YEH WITH HAMZA ABOVE
+<Multi_key> <a> <b> <a> <y> : "ى" U0649    # ARABIC LETTER ALEF MAKSURA
+
+<Multi_key> <a> <semicolon> <a> <Return>              : "َ" U064E    # ARABIC FATHA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <u> <Return>              : "ُ" U064F    # ARABIC DAMMA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <i> <Return>              : "ِ" U0650    # ARABIC KASRA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <underscore> <i> <Return> : "ِ" U0650    # ARABIC KASRA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <w> <Return>              : "ّ" U0651    # ARABIC SHADDA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <o> <Return>              : "ْ" U0652    # ARABIC SUKUN (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <tilde> <Return>          : "ٓ" U0653    # ARABIC MADDAH ABOVE (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <2> <Return>              : "ٔ" U0654    # ARABIC HAMZA ABOVE (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <underscore> <2> <Return> : "ٕ" U0655    # ARABIC HAMZA BELOW (conflicts with ą, use ,a)
+
+<Multi_key> <a> <semicolon> <comma>     : "،" U060C    # ARABIC COMMA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <question>  : "؟" U061F    # ARABIC QUESTION MARK (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <minus>     : "ـ" U0640    # ARABIC TATWEEL (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <percent>   : "٪" U066A    # ARABIC PERCENT SIGN (conflicts with ą, use ,a)
+
+<Multi_key> <a> <0> <0> : "٠"  U0660   # ARABIC-INDIC DIGIT ZERO
+<Multi_key> <a> <0> <1> : "١"  U0661   # ARABIC-INDIC DIGIT ONE
+<Multi_key> <a> <0> <2> : "٢"  U0662   # ARABIC-INDIC DIGIT TWO
+<Multi_key> <a> <0> <3> : "٣"  U0663   # ARABIC-INDIC DIGIT THREE
+<Multi_key> <a> <0> <4> : "٤"  U0664   # ARABIC-INDIC DIGIT FOUR
+<Multi_key> <a> <0> <5> : "٥"  U0665   # ARABIC-INDIC DIGIT FIVE
+<Multi_key> <a> <0> <6> : "٦"  U0666   # ARABIC-INDIC DIGIT SIX
+<Multi_key> <a> <0> <7> : "٧"  U0667   # ARABIC-INDIC DIGIT SEVEN
+<Multi_key> <a> <0> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
+<Multi_key> <a> <0> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
+
+#############
+# (g) Greek #
+#############
+
+<Multi_key> <g> <a> <A> : "Α"  U0391   # GREEK CAPITAL LETTER ALPHA
+<Multi_key> <g> <a> <B> : "Β"  U0392   # GREEK CAPITAL LETTER BETA
+<Multi_key> <g> <a> <G> : "Γ"  U0393   # GREEK CAPITAL LETTER GAMMA
+<Multi_key> <g> <a> <D> : "Δ"  U0394   # GREEK CAPITAL LETTER DELTA
+<Multi_key> <g> <a> <E> : "Ε"  U0395   # GREEK CAPITAL LETTER EPSILON
+<Multi_key> <g> <a> <Z> : "Ζ"  U0396   # GREEK CAPITAL LETTER ZETA
+<Multi_key> <g> <a> <H> : "Η"  U0397   # GREEK CAPITAL LETTER ETA
+<Multi_key> <g> <b> <T> <H> : "Θ"  U0398   # GREEK CAPITAL LETTER THETA
+<Multi_key> <g> <a> <I> : "Ι"  U0399   # GREEK CAPITAL LETTER IOTA
+<Multi_key> <g> <a> <K> : "Κ"  U039A   # GREEK CAPITAL LETTER KAPPA
+<Multi_key> <g> <a> <L> : "Λ"  U039B   # GREEK CAPITAL LETTER LAMDA
+<Multi_key> <g> <a> <M> : "Μ"  U039C   # GREEK CAPITAL LETTER MU
+<Multi_key> <g> <a> <N> : "Ν"  U039D   # GREEK CAPITAL LETTER NU
+<Multi_key> <g> <a> <X> : "Ξ"  U039E   # GREEK CAPITAL LETTER XI
+<Multi_key> <g> <a> <O> : "Ο"  U039F   # GREEK CAPITAL LETTER OMICRON
+<Multi_key> <g> <a> <P> : "Π"  U03A0   # GREEK CAPITAL LETTER PI
+<Multi_key> <g> <a> <R> : "Ρ"  U03A1   # GREEK CAPITAL LETTER RHO
+<Multi_key> <g> <a> <S> : "Σ"  U03A3   # GREEK CAPITAL LETTER SIGMA
+<Multi_key> <g> <a> <T> : "Τ"  U03A4   # GREEK CAPITAL LETTER TAU
+<Multi_key> <g> <a> <Y> : "Υ"  U03A5   # GREEK CAPITAL LETTER UPSILON
+<Multi_key> <g> <a> <F> : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
+<Multi_key> <g> <b> <P> <H> : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI (alternatively gaF)
+<Multi_key> <g> <a> <C> : "Χ"  U03A7   # GREEK CAPITAL LETTER CHI
+<Multi_key> <g> <b> <P> <S> : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
+<Multi_key> <g> <b> <O>     : "Ω"  U03A9   # GREEK CAPITAL LETTER OMEGA
+
+<Multi_key> <g> <a> <a> : "α"  U03B1   # GREEK SMALL LETTER ALPHA
+<Multi_key> <g> <a> <b> : "β"  U03B2   # GREEK SMALL LETTER BETA
+<Multi_key> <g> <a> <g> : "γ"  U03B3   # GREEK SMALL LETTER GAMMA
+<Multi_key> <g> <a> <d> : "δ"  U03B4   # GREEK SMALL LETTER DELTA
+<Multi_key> <g> <a> <e> : "ε"  U03B5   # GREEK SMALL LETTER EPSILON
+<Multi_key> <g> <a> <z> : "ζ"  U03B6   # GREEK SMALL LETTER ZETA
+<Multi_key> <g> <a> <h> : "η"  U03B7   # GREEK SMALL LETTER ETA
+<Multi_key> <g> <b> <t> <h> : "θ"  U03B8   # GREEK SMALL LETTER THETA
+<Multi_key> <g> <a> <i> : "ι"  U03B9   # GREEK SMALL LETTER IOTA
+<Multi_key> <g> <a> <k> : "κ"  U03BA   # GREEK SMALL LETTER KAPPA
+<Multi_key> <g> <a> <l> : "λ"  U03BB   # GREEK SMALL LETTER LAMDA
+<Multi_key> <g> <a> <m> : "μ"  U03BC   # GREEK SMALL LETTER MU
+<Multi_key> <g> <a> <n> : "ν"  U03BD   # GREEK SMALL LETTER NU
+<Multi_key> <g> <a> <x> : "ξ"  U03BE   # GREEK SMALL LETTER XI
+<Multi_key> <g> <a> <o> : "ο"  U03BF   # GREEK SMALL LETTER OMICRON
+<Multi_key> <g> <a> <p> : "π"  U03C0   # GREEK SMALL LETTER PI
+<Multi_key> <g> <a> <r> : "ρ"  U03C1   # GREEK SMALL LETTER RHO
+<Multi_key> <g> <a> <greater> <s> : "ς"  U03C2   # GREEK SMALL LETTER FINAL SIGMA
+<Multi_key> <g> <b> <s> : "ς"  U03C2   # GREEK SMALL LETTER FINAL SIGMA (alternatively ga>s)
+<Multi_key> <g> <a> <s> : "σ"  U03C3   # GREEK SMALL LETTER SIGMA
+<Multi_key> <g> <a> <t> : "τ"  U03C4   # GREEK SMALL LETTER TAU
+<Multi_key> <g> <a> <y> : "υ"  U03C5   # GREEK SMALL LETTER UPSILON
+<Multi_key> <g> <a> <f> : "φ"  U03C6   # GREEK SMALL LETTER PHI
+<Multi_key> <g> <b> <p> <h> : "φ"  U03C6   # GREEK SMALL LETTER PHI (alternatively gaf)
+<Multi_key> <g> <a> <c> : "χ"  U03C7   # GREEK SMALL LETTER CHI
+<Multi_key> <g> <b> <p> <s> : "ψ"  U03C8   # GREEK SMALL LETTER PSI
+<Multi_key> <g> <b> <o>     : "ω"  U03C9   # GREEK SMALL LETTER OMEGA
+
+<Multi_key> <g> <semicolon> <question>   : ";"  U037E   # GREEK QUESTION MARK
+<Multi_key> <g> <semicolon> <apostrophe> : "΄"  U0384   # GREEK TONOS
+
+<Multi_key> <g> <a> <W>     : "Ϝ"  U03DC   # GREEK LETTER DIGAMMA
+<Multi_key> <g> <a> <Q>     : "Ϙ"  U03D8   # GREEK LETTER ARCHAIC KOPPA
+<Multi_key> <g> <b> <T> <S> : "Ͳ"  U0372   # GREEK CAPITAL LETTER ARCHAIC SAMPI
+<Multi_key> <g> <a> <w>     : "ϝ"  U03DD   # GREEK SMALL LETTER DIGAMMA
+<Multi_key> <g> <a> <q>     : "ϙ"  U03D9   # GREEK SMALL LETTER ARCHAIC KOPPA
+<Multi_key> <g> <b> <t> <s> : "ͳ"  U0373   # GREEK SMALL LETTER ARCHAIC SAMPI
+
+<Multi_key> <g> <0> <w> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
+<Multi_key> <g> <0> <6> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
+<Multi_key> <g> <0> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
+<Multi_key> <g> <0> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
+
+##############
+# (h) Hebrew #
+##############
+
+<Multi_key> <h> <a> <a>        : "א"  U05D0   # HEBREW LETTER ALEF
+<Multi_key> <h> <a> <b>        : "ב"  U05D1   # HEBREW LETTER BET
+<Multi_key> <h> <a> <g>        : "ג"  U05D2   # HEBREW LETTER GIMEL
+<Multi_key> <h> <a> <d>        : "ד"  U05D3   # HEBREW LETTER DALET
+<Multi_key> <h> <a> <h>        : "ה"  U05D4   # HEBREW LETTER HE
+<Multi_key> <h> <a> <v>        : "ו"  U05D5   # HEBREW LETTER VAV
+<Multi_key> <h> <a> <z>        : "ז"  U05D6   # HEBREW LETTER ZAYIN
+<Multi_key> <h> <a> <H>        : "ח"  U05D7   # HEBREW LETTER HET
+<Multi_key> <h> <a> <T>        : "ט"  U05D8   # HEBREW LETTER TET
+<Multi_key> <h> <a> <i>        : "י"  U05D9   # HEBREW LETTER YOD
+<Multi_key> <h> <a> <y>        : "י"  U05D9   # HEBREW LETTER YOD
+<Multi_key> <h> <a> <less> <k> : "ך"  U05DA   # HEBREW LETTER FINAL KAF
+<Multi_key> <h> <a> <k>        : "כ"  U05DB   # HEBREW LETTER KAF
+<Multi_key> <h> <a> <l>        : "ל"  U05DC   # HEBREW LETTER LAMED
+<Multi_key> <h> <a> <less> <m> : "ם"  U05DD   # HEBREW LETTER FINAL MEM
+<Multi_key> <h> <a> <m>        : "מ"  U05DE   # HEBREW LETTER MEM
+<Multi_key> <h> <a> <less> <n> : "ן"  U05DF   # HEBREW LETTER FINAL NUN
+<Multi_key> <h> <a> <n>        : "נ"  U05E0   # HEBREW LETTER NUN
+<Multi_key> <h> <a> <s>        : "ס"  U05E1   # HEBREW LETTER SAMEKH
+<Multi_key> <h> <a> <e>        : "ע"  U05E2   # HEBREW LETTER AYIN
+<Multi_key> <h> <a> <less> <p> : "ף"  U05E3   # HEBREW LETTER FINAL PE
+<Multi_key> <h> <a> <less> <f> : "ף"  U05E3   # HEBREW LETTER FINAL PE
+<Multi_key> <h> <a> <p>        : "פ"  U05E4   # HEBREW LETTER PE
+<Multi_key> <h> <a> <f>        : "פ"  U05E4   # HEBREW LETTER PE
+<Multi_key> <h> <a> <less> <Z> : "ץ"  U05E5   # HEBREW LETTER FINAL TSADI
+<Multi_key> <h> <a> <Z>        : "צ"  U05E6   # HEBREW LETTER TSADI
+<Multi_key> <h> <a> <q>        : "ק"  U05E7   # HEBREW LETTER QOF
+<Multi_key> <h> <a> <r>        : "ר"  U05E8   # HEBREW LETTER RESH
+<Multi_key> <h> <a> <S>        : "ש"  U05E9   # HEBREW LETTER SHIN
+<Multi_key> <h> <a> <t>        : "ת"  U05EA   # HEBREW LETTER TAV
+
+<Multi_key> <h> <a> <c> <h>     : "צ׳"  U05E6 U05F3   # HEBREW LETTER CHADI
+<Multi_key> <h> <a> <j>         : "ג׳"  U05D2 U05F3   # HEBREW LETTER JIMEL
+<Multi_key> <h> <a> <o>         : "וֹ"  UFB4B   # HEBREW LETTER VAV WITH HOLAM
+<Multi_key> <h> <a> <u>         : "וּ"  U05D5 U05BC   # HEBREW LETTER VAV WITH SHURUK
+<Multi_key> <h> <a> <w>         : "װ"  U05F0   # HEBREW LIGATURE YIDDISH DOUBLE VAV
+<Multi_key> <h> <a> <Y>         : "ײ"  U05F2   # HEBREW LIGATURE YIDDISH DOUBLE YOD
+<Multi_key> <h> <a> <N> <I> <S> : "₪"  U20AA   # NEW SHEQEL SIGN
+
+<Multi_key> <h> <semicolon> <colon> <Return>                   : "ְ"  U05B0   # HEBREW POINT SHEVA
+<Multi_key> <h> <semicolon> <v> <period> <period> <Return>     : "ֱ"  U05B1   # HEBREW POINT HATAF SEGOL
+<Multi_key> <h> <semicolon> <minus> <period> <period> <Return> : "ֲ"  U05B2   # HEBREW POINT HATAF PATAH
+<Multi_key> <h> <semicolon> <T> <period> <period> <Return>     : "ֳ"  U05B3   # HEBREW POINT HATAF QAMATS
+<Multi_key> <h> <semicolon> <period> <Return>                  : "ִ"  U05B4   # HEBREW POINT HIRIQ
+<Multi_key> <h> <semicolon> <period> <period> <Return>         : "ֵ"  U05B5   # HEBREW POINT TSERE
+<Multi_key> <h> <semicolon> <v> <Return>                       : "ֶ"  U05B6   # HEBREW POINT SEGOL
+<Multi_key> <h> <semicolon> <minus> <Return>                   : "ַ"  U05B7   # HEBREW POINT PATAH
+<Multi_key> <h> <semicolon> <T> <Return>                       : "ָ"  U05B8   # HEBREW POINT QAMATS
+<Multi_key> <h> <semicolon> <asciicircum> <period> <Return>    : "ֹ"  U05B9   # HEBREW POINT HOLAM
+<Multi_key> <h> <semicolon> <backslash> <Return>               : "ֻ"  U05BB   # HEBREW POINT QUBUTS
+<Multi_key> <h> <semicolon> <less> <period> <Return>           : "ּ"  U05BC   # HEBREW POINT DAGESH OR MAPIQ
+<Multi_key> <h> <semicolon> <asciicircum> <minus> <Return>     : "ֿ"  U05BF   # HEBREW POINT RAFE
+<Multi_key> <h> <semicolon> <s> <h> <Return>                   : "ׁ"  U05C1   # HEBREW POINT SHIN DOT
+<Multi_key> <h> <semicolon> <s> <Return>                       : "ׂ"  U05C2   # HEBREW POINT SIN DOT
+
+<Multi_key> <h> <semicolon> <minus> <minus> : "־"  U05BE   # HEBREW PUNCTUATION MAQAF
+<Multi_key> <h> <semicolon> <apostrophe>    : "׳"  U05F3   # HEBREW PUNCTUATION GERESH
+<Multi_key> <h> <semicolon> <quotedbl>      : "״"  U05F4   # HEBREW PUNCTUATION GERSHAYIM
+
+################
+# (j) Japanese #
+################
+
+# Hiragana
+
+<Multi_key> <j> <a> <underscore> <a> : "ぁ"  U3041   # HIRAGANA LETTER SMALL A
+<Multi_key> <j> <a> <a>              : "あ"  U3042   # HIRAGANA LETTER A
+<Multi_key> <j> <a> <underscore> <i> : "ぃ"  U3043   # HIRAGANA LETTER SMALL I
+<Multi_key> <j> <a> <i>              : "い"  U3044   # HIRAGANA LETTER I
+<Multi_key> <j> <a> <underscore> <u> : "ぅ"  U3045   # HIRAGANA LETTER SMALL U
+<Multi_key> <j> <a> <u>              : "う"  U3046   # HIRAGANA LETTER U
+<Multi_key> <j> <a> <underscore> <e> : "ぇ"  U3047   # HIRAGANA LETTER SMALL E
+<Multi_key> <j> <a> <e>              : "え"  U3048   # HIRAGANA LETTER E
+<Multi_key> <j> <a> <underscore> <o> : "ぉ"  U3049   # HIRAGANA LETTER SMALL O
+<Multi_key> <j> <a> <o>              : "お"  U304A   # HIRAGANA LETTER O
+
+<Multi_key> <j> <a> <k> <a>          : "か"  U304B   # HIRAGANA LETTER KA
+<Multi_key> <j> <a> <g> <a>          : "が"  U304C   # HIRAGANA LETTER GA
+<Multi_key> <j> <a> <k> <i>          : "き"  U304D   # HIRAGANA LETTER KI
+<Multi_key> <j> <a> <g> <i>          : "ぎ"  U304E   # HIRAGANA LETTER GI
+<Multi_key> <j> <a> <k> <u>          : "く"  U304F   # HIRAGANA LETTER KU
+<Multi_key> <j> <a> <g> <u>          : "ぐ"  U3050   # HIRAGANA LETTER GU
+<Multi_key> <j> <a> <k> <e>          : "け"  U3051   # HIRAGANA LETTER KE
+<Multi_key> <j> <a> <g> <e>          : "げ"  U3052   # HIRAGANA LETTER GE
+<Multi_key> <j> <a> <k> <o>          : "こ"  U3053   # HIRAGANA LETTER KO
+<Multi_key> <j> <a> <g> <o>          : "ご"  U3054   # HIRAGANA LETTER GO
+
+<Multi_key> <j> <a> <s> <a>          : "さ"  U3055   # HIRAGANA LETTER SA
+<Multi_key> <j> <a> <z> <a>          : "ざ"  U3056   # HIRAGANA LETTER ZA
+<Multi_key> <j> <a> <s> <h> <i>      : "し"  U3057   # HIRAGANA LETTER SI
+<Multi_key> <j> <a> <s> <i>          : "し"  U3057   # HIRAGANA LETTER SI
+<Multi_key> <j> <a> <j> <i>          : "じ"  U3058   # HIRAGANA LETTER ZI
+<Multi_key> <j> <a> <z> <i>          : "じ"  U3058   # HIRAGANA LETTER ZI
+<Multi_key> <j> <a> <s> <u>          : "す"  U3059   # HIRAGANA LETTER SU
+<Multi_key> <j> <a> <z> <u>          : "ず"  U305A   # HIRAGANA LETTER ZU
+<Multi_key> <j> <a> <s> <e>          : "せ"  U305B   # HIRAGANA LETTER SE
+<Multi_key> <j> <a> <z> <e>          : "ぜ"  U305C   # HIRAGANA LETTER ZE
+<Multi_key> <j> <a> <s> <o>          : "そ"  U305D   # HIRAGANA LETTER SO
+<Multi_key> <j> <a> <z> <o>          : "ぞ"  U305E   # HIRAGANA LETTER ZO
+
+<Multi_key> <j> <a> <t> <a>          : "た"  U305F   # HIRAGANA LETTER TA
+<Multi_key> <j> <a> <d> <a>          : "だ"  U3060   # HIRAGANA LETTER DA
+<Multi_key> <j> <a> <c> <h> <i>      : "ち"  U3061   # HIRAGANA LETTER TI
+<Multi_key> <j> <a> <t> <i>          : "ち"  U3061   # HIRAGANA LETTER TI
+<Multi_key> <j> <a> <d> <j> <i>      : "ぢ"  U3062   # HIRAGANA LETTER DI
+<Multi_key> <j> <a> <d> <i>          : "ぢ"  U3062   # HIRAGANA LETTER DI
+<Multi_key> <j> <a> <underscore> <t> <s> <u> : "っ"  U3063   # HIRAGANA LETTER SMALL TU
+<Multi_key> <j> <a> <underscore> <t> <u> : "っ"  U3063   # HIRAGANA LETTER SMALL TU
+<Multi_key> <j> <a> <t> <s> <u>      : "つ"  U3064   # HIRAGANA LETTER TU
+<Multi_key> <j> <a> <t> <u>          : "つ"  U3064   # HIRAGANA LETTER TU
+<Multi_key> <j> <a> <d> <z> <u>      : "づ"  U3065   # HIRAGANA LETTER DU
+<Multi_key> <j> <a> <d> <u>          : "づ"  U3065   # HIRAGANA LETTER DU
+<Multi_key> <j> <a> <t> <e>          : "て"  U3066   # HIRAGANA LETTER TE
+<Multi_key> <j> <a> <d> <e>          : "で"  U3067   # HIRAGANA LETTER DE
+<Multi_key> <j> <a> <t> <o>          : "と"  U3068   # HIRAGANA LETTER TO
+<Multi_key> <j> <a> <d> <o>          : "ど"  U3069   # HIRAGANA LETTER DO
+
+<Multi_key> <j> <a> <n> <a>          : "な"  U306A   # HIRAGANA LETTER NA
+<Multi_key> <j> <a> <n> <i>          : "に"  U306B   # HIRAGANA LETTER NI
+<Multi_key> <j> <a> <n> <u>          : "ぬ"  U306C   # HIRAGANA LETTER NU
+<Multi_key> <j> <a> <n> <e>          : "ね"  U306D   # HIRAGANA LETTER NE
+<Multi_key> <j> <a> <n> <o>          : "の"  U306E   # HIRAGANA LETTER NO
+
+<Multi_key> <j> <a> <h> <a>          : "は"  U306F   # HIRAGANA LETTER HA
+<Multi_key> <j> <a> <b> <a>          : "ば"  U3070   # HIRAGANA LETTER BA
+<Multi_key> <j> <a> <p> <a>          : "ぱ"  U3071   # HIRAGANA LETTER PA
+<Multi_key> <j> <a> <h> <i>          : "ひ"  U3072   # HIRAGANA LETTER HI
+<Multi_key> <j> <a> <b> <i>          : "び"  U3073   # HIRAGANA LETTER BI
+<Multi_key> <j> <a> <p> <i>          : "ぴ"  U3074   # HIRAGANA LETTER PI
+<Multi_key> <j> <a> <f> <u>          : "ふ"  U3075   # HIRAGANA LETTER HU
+<Multi_key> <j> <a> <h> <u>          : "ふ"  U3075   # HIRAGANA LETTER HU
+<Multi_key> <j> <a> <b> <u>          : "ぶ"  U3076   # HIRAGANA LETTER BU
+<Multi_key> <j> <a> <p> <u>          : "ぷ"  U3077   # HIRAGANA LETTER PU
+<Multi_key> <j> <a> <h> <e>          : "へ"  U3078   # HIRAGANA LETTER HE
+<Multi_key> <j> <a> <b> <e>          : "べ"  U3079   # HIRAGANA LETTER BE
+<Multi_key> <j> <a> <p> <e>          : "ぺ"  U307A   # HIRAGANA LETTER PE
+<Multi_key> <j> <a> <h> <o>          : "ほ"  U307B   # HIRAGANA LETTER HO
+<Multi_key> <j> <a> <b> <o>          : "ぼ"  U307C   # HIRAGANA LETTER BO
+<Multi_key> <j> <a> <p> <o>          : "ぽ"  U307D   # HIRAGANA LETTER PO
+
+<Multi_key> <j> <a> <m> <a>          : "ま"  U307E   # HIRAGANA LETTER MA
+<Multi_key> <j> <a> <m> <i>          : "み"  U307F   # HIRAGANA LETTER MI
+<Multi_key> <j> <a> <m> <u>          : "む"  U3080   # HIRAGANA LETTER MU
+<Multi_key> <j> <a> <m> <e>          : "め"  U3081   # HIRAGANA LETTER ME
+<Multi_key> <j> <a> <m> <o>          : "も"  U3082   # HIRAGANA LETTER MO
+
+<Multi_key> <j> <a> <underscore> <y> <a> : "ゃ"  U3083   # HIRAGANA LETTER SMALL YA
+<Multi_key> <j> <a> <y> <a>              : "や"  U3084   # HIRAGANA LETTER YA
+<Multi_key> <j> <a> <underscore> <y> <u> : "ゅ"  U3085   # HIRAGANA LETTER SMALL YU
+<Multi_key> <j> <a> <y> <u>              : "ゆ"  U3086   # HIRAGANA LETTER YU
+<Multi_key> <j> <a> <underscore> <y> <o> : "ょ"  U3087   # HIRAGANA LETTER SMALL YO
+<Multi_key> <j> <a> <y> <o>              : "よ"  U3088   # HIRAGANA LETTER YO
+
+<Multi_key> <j> <a> <r> <a>          : "ら"  U3089   # HIRAGANA LETTER RA
+<Multi_key> <j> <a> <r> <i>          : "り"  U308A   # HIRAGANA LETTER RI
+<Multi_key> <j> <a> <r> <u>          : "る"  U308B   # HIRAGANA LETTER RU
+<Multi_key> <j> <a> <r> <e>          : "れ"  U308C   # HIRAGANA LETTER RE
+<Multi_key> <j> <a> <r> <o>          : "ろ"  U308D   # HIRAGANA LETTER RO
+
+<Multi_key> <j> <a> <underscore> <w> <a> : "ゎ"  U308E   # HIRAGANA LETTER SMALL WA
+<Multi_key> <j> <a> <w> <a>              : "わ"  U308F   # HIRAGANA LETTER WA
+<Multi_key> <j> <a> <w> <i>              : "ゐ"  U3090   # HIRAGANA LETTER WI
+<Multi_key> <j> <a> <w> <e>              : "ゑ"  U3091   # HIRAGANA LETTER WE
+<Multi_key> <j> <a> <w> <o>              : "を"  U3092   # HIRAGANA LETTER WO
+
+<Multi_key> <j> <a> <n> <n>              : "ん"  U3093   # HIRAGANA LETTER N
+<Multi_key> <j> <a> <v> <u>              : "ゔ"  U3094   # HIRAGANA LETTER VU
+
+<Multi_key> <j> <a> <quotedbl> <i>       : "ゝ"  U309D   # HIRAGANA ITERATION MARK
+<Multi_key> <j> <a> <quotedbl> <v>       : "ゞ"  U309E   # HIRAGANA VOICED ITERATION MARK
+
+# Katakana
+
+<Multi_key> <j> <a> <underscore> <A> : "ァ"  U30A1   # KATAKANA LETTER SMALL A
+<Multi_key> <j> <a> <A>              : "ア"  U30A2   # KATAKANA LETTER A
+<Multi_key> <j> <a> <underscore> <I> : "ィ"  U30A3   # KATAKANA LETTER SMALL I
+<Multi_key> <j> <a> <I>              : "イ"  U30A4   # KATAKANA LETTER I
+<Multi_key> <j> <a> <underscore> <U> : "ゥ"  U30A5   # KATAKANA LETTER SMALL U
+<Multi_key> <j> <a> <U>              : "ウ"  U30A6   # KATAKANA LETTER U
+<Multi_key> <j> <a> <underscore> <E> : "ェ"  U30A7   # KATAKANA LETTER SMALL E
+<Multi_key> <j> <a> <E>              : "エ"  U30A8   # KATAKANA LETTER E
+<Multi_key> <j> <a> <underscore> <O> : "ォ"  U30A9   # KATAKANA LETTER SMALL O
+<Multi_key> <j> <a> <O>              : "オ"  U30AA   # KATAKANA LETTER O
+
+<Multi_key> <j> <a> <K> <A>          : "カ"  U30AB   # KATAKANA LETTER KA
+<Multi_key> <j> <a> <G> <A>          : "ガ"  U30AC   # KATAKANA LETTER GA
+<Multi_key> <j> <a> <K> <I>          : "キ"  U30AD   # KATAKANA LETTER KI
+<Multi_key> <j> <a> <G> <I>          : "ギ"  U30AE   # KATAKANA LETTER GI
+<Multi_key> <j> <a> <K> <U>          : "ク"  U30AF   # KATAKANA LETTER KU
+<Multi_key> <j> <a> <G> <U>          : "グ"  U30B0   # KATAKANA LETTER GU
+<Multi_key> <j> <a> <K> <E>          : "ケ"  U30B1   # KATAKANA LETTER KE
+<Multi_key> <j> <a> <G> <E>          : "ゲ"  U30B2   # KATAKANA LETTER GE
+<Multi_key> <j> <a> <K> <O>          : "コ"  U30B3   # KATAKANA LETTER KO
+<Multi_key> <j> <a> <G> <O>          : "ゴ"  U30B4   # KATAKANA LETTER GO
+
+<Multi_key> <j> <a> <S> <A>          : "サ"  U30B5   # KATAKANA LETTER SA
+<Multi_key> <j> <a> <Z> <A>          : "ザ"  U30B6   # KATAKANA LETTER ZA
+<Multi_key> <j> <a> <S> <H> <I>      : "シ"  U30B7   # KATAKANA LETTER SI
+<Multi_key> <j> <a> <S> <I>          : "シ"  U30B7   # KATAKANA LETTER SI
+<Multi_key> <j> <a> <J> <I>          : "ジ"  U30B8   # KATAKANA LETTER ZI
+<Multi_key> <j> <a> <Z> <I>          : "ジ"  U30B8   # KATAKANA LETTER ZI
+<Multi_key> <j> <a> <S> <U>          : "ス"  U30B9   # KATAKANA LETTER SU
+<Multi_key> <j> <a> <Z> <U>          : "ズ"  U30BA   # KATAKANA LETTER ZU
+<Multi_key> <j> <a> <S> <E>          : "セ"  U30BB   # KATAKANA LETTER SE
+<Multi_key> <j> <a> <Z> <E>          : "ゼ"  U30BC   # KATAKANA LETTER ZE
+<Multi_key> <j> <a> <S> <O>          : "ソ"  U30BD   # KATAKANA LETTER SO
+<Multi_key> <j> <a> <Z> <O>          : "ゾ"  U30BE   # KATAKANA LETTER ZO
+
+<Multi_key> <j> <a> <T> <A>          : "タ"  U30BF   # KATAKANA LETTER TA
+<Multi_key> <j> <a> <D> <A>          : "ダ"  U30C0   # KATAKANA LETTER DA
+<Multi_key> <j> <a> <C> <H> <I>      : "チ"  U30C1   # KATAKANA LETTER TI
+<Multi_key> <j> <a> <T> <I>          : "チ"  U30C1   # KATAKANA LETTER TI
+<Multi_key> <j> <a> <D> <J> <I>      : "ヂ"  U30C2   # KATAKANA LETTER DI
+<Multi_key> <j> <a> <D> <I>          : "ヂ"  U30C2   # KATAKANA LETTER DI
+<Multi_key> <j> <a> <underscore> <T> <S> <U> : "ッ"  U30C3   # KATAKANA LETTER SMALL TU
+<Multi_key> <j> <a> <underscore> <T> <U> : "ッ"  U30C3   # KATAKANA LETTER SMALL TU
+<Multi_key> <j> <a> <T> <S> <U>      : "ツ"  U30C4   # KATAKANA LETTER TU
+<Multi_key> <j> <a> <T> <U>          : "ツ"  U30C4   # KATAKANA LETTER TU
+<Multi_key> <j> <a> <D> <Z> <U>      : "ヅ"  U30C5   # KATAKANA LETTER DU
+<Multi_key> <j> <a> <D> <U>          : "ヅ"  U30C5   # KATAKANA LETTER DU
+<Multi_key> <j> <a> <T> <E>          : "テ"  U30C6   # KATAKANA LETTER TE
+<Multi_key> <j> <a> <D> <E>          : "デ"  U30C7   # KATAKANA LETTER DE
+<Multi_key> <j> <a> <T> <O>          : "ト"  U30C8   # KATAKANA LETTER TO
+<Multi_key> <j> <a> <D> <O>          : "ド"  U30C9   # KATAKANA LETTER DO
+
+<Multi_key> <j> <a> <N> <A>          : "ナ"  U30CA   # KATAKANA LETTER NA
+<Multi_key> <j> <a> <N> <I>          : "ニ"  U30CB   # KATAKANA LETTER NI
+<Multi_key> <j> <a> <N> <U>          : "ヌ"  U30CC   # KATAKANA LETTER NU
+<Multi_key> <j> <a> <N> <E>          : "ネ"  U30CD   # KATAKANA LETTER NE
+<Multi_key> <j> <a> <N> <O>          : "ノ"  U30CE   # KATAKANA LETTER NO
+
+<Multi_key> <j> <a> <H> <A>          : "ハ"  U30CF   # KATAKANA LETTER HA
+<Multi_key> <j> <a> <B> <A>          : "バ"  U30D0   # KATAKANA LETTER BA
+<Multi_key> <j> <a> <P> <A>          : "パ"  U30D1   # KATAKANA LETTER PA
+<Multi_key> <j> <a> <H> <I>          : "ヒ"  U30D2   # KATAKANA LETTER HI
+<Multi_key> <j> <a> <B> <I>          : "ビ"  U30D3   # KATAKANA LETTER BI
+<Multi_key> <j> <a> <P> <I>          : "ピ"  U30D4   # KATAKANA LETTER PI
+<Multi_key> <j> <a> <F> <U>          : "フ"  U30D5   # KATAKANA LETTER HU
+<Multi_key> <j> <a> <H> <U>          : "フ"  U30D5   # KATAKANA LETTER HU
+<Multi_key> <j> <a> <B> <U>          : "ブ"  U30D6   # KATAKANA LETTER BU
+<Multi_key> <j> <a> <P> <U>          : "プ"  U30D7   # KATAKANA LETTER PU
+<Multi_key> <j> <a> <H> <E>          : "ヘ"  U30D8   # KATAKANA LETTER HE
+<Multi_key> <j> <a> <B> <E>          : "ベ"  U30D9   # KATAKANA LETTER BE
+<Multi_key> <j> <a> <P> <E>          : "ペ"  U30DA   # KATAKANA LETTER PE
+<Multi_key> <j> <a> <H> <O>          : "ホ"  U30DB   # KATAKANA LETTER HO
+<Multi_key> <j> <a> <B> <O>          : "ボ"  U30DC   # KATAKANA LETTER BO
+<Multi_key> <j> <a> <P> <O>          : "ポ"  U30DD   # KATAKANA LETTER PO
+
+<Multi_key> <j> <a> <M> <A>          : "マ"  U30DE   # KATAKANA LETTER MA
+<Multi_key> <j> <a> <M> <I>          : "ミ"  U30DF   # KATAKANA LETTER MI
+<Multi_key> <j> <a> <M> <U>          : "ム"  U30E0   # KATAKANA LETTER MU
+<Multi_key> <j> <a> <M> <E>          : "メ"  U30E1   # KATAKANA LETTER ME
+<Multi_key> <j> <a> <M> <O>          : "モ"  U30E2   # KATAKANA LETTER MO
+
+<Multi_key> <j> <a> <underscore> <Y> <A> : "ャ"  U30E3   # KATAKANA LETTER SMALL YA
+<Multi_key> <j> <a> <Y> <A>              : "ヤ"  U30E4   # KATAKANA LETTER YA
+<Multi_key> <j> <a> <underscore> <Y> <U> : "ュ"  U30E5   # KATAKANA LETTER SMALL YU
+<Multi_key> <j> <a> <Y> <U>              : "ユ"  U30E6   # KATAKANA LETTER YU
+<Multi_key> <j> <a> <underscore> <Y> <O> : "ョ"  U30E7   # KATAKANA LETTER SMALL YO
+<Multi_key> <j> <a> <Y> <O>              : "ヨ"  U30E8   # KATAKANA LETTER YO
+
+<Multi_key> <j> <a> <R> <A>          : "ラ"  U30E9   # KATAKANA LETTER RA
+<Multi_key> <j> <a> <R> <I>          : "リ"  U30EA   # KATAKANA LETTER RI
+<Multi_key> <j> <a> <R> <U>          : "ル"  U30EB   # KATAKANA LETTER RU
+<Multi_key> <j> <a> <R> <E>          : "レ"  U30EC   # KATAKANA LETTER RE
+<Multi_key> <j> <a> <R> <O>          : "ロ"  U30ED   # KATAKANA LETTER RO
+
+<Multi_key> <j> <a> <underscore> <W> <A> : "ヮ"  U30EE   # KATAKANA LETTER SMALL WA
+<Multi_key> <j> <a> <W> <A>              : "ワ"  U30EF   # KATAKANA LETTER WA
+<Multi_key> <j> <a> <W> <I>              : "ヰ"  U30F0   # KATAKANA LETTER WI
+<Multi_key> <j> <a> <W> <E>              : "ヱ"  U30F1   # KATAKANA LETTER WE
+<Multi_key> <j> <a> <W> <O>              : "ヲ"  U30F2   # KATAKANA LETTER WO
+
+<Multi_key> <j> <a> <N> <N>              : "ン"  U30F3   # KATAKANA LETTER N
+
+<Multi_key> <j> <a> <V> <A>              : "ヷ"  U30F7   # KATAKANA LETTER VA
+<Multi_key> <j> <a> <V> <I>              : "ヸ"  U30F8   # KATAKANA LETTER VI
+<Multi_key> <j> <a> <V> <U>              : "ヴ"  U30F4   # KATAKANA LETTER VU
+<Multi_key> <j> <a> <V> <E>              : "ヹ"  U30F9   # KATAKANA LETTER VE
+<Multi_key> <j> <a> <V> <O>              : "ヺ"  U30FA   # KATAKANA LETTER VO
+
+<Multi_key> <j> <a> <quotedbl> <I>       : "ヽ"  U30FD   # KATAKANA ITERATION MARK
+<Multi_key> <j> <a> <quotedbl> <V>       : "ヾ"  U30FE   # KATAKANA VOICED ITERATION MARK
+
+# (very small number of) Kanji
+
+<Multi_key> <j> <a> <Y> <equal>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen)
+<Multi_key> <j> <a> <equal> <Y>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen)
+
+<Multi_key> <j> <0> <0>                  : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
+<Multi_key> <j> <0> <1>                  : "一"  U4E00   # CJK UNIFIED IDEOGRAPH-4E00 (1)
+<Multi_key> <j> <0> <2>                  : "二"  U4E8C   # CJK UNIFIED IDEOGRAPH-4E8C (2)
+<Multi_key> <j> <0> <3>                  : "三"  U4E09   # CJK UNIFIED IDEOGRAPH-4E09 (3)
+<Multi_key> <j> <0> <4>                  : "四"  U56DB   # CJK UNIFIED IDEOGRAPH-56DB (4)
+<Multi_key> <j> <0> <5>                  : "五"  U4E94   # CJK UNIFIED IDEOGRAPH-4E94 (5)
+<Multi_key> <j> <0> <6>                  : "六"  U516D   # CJK UNIFIED IDEOGRAPH-516D (6)
+<Multi_key> <j> <0> <7>                  : "七"  U4E03   # CJK UNIFIED IDEOGRAPH-4E03 (7)
+<Multi_key> <j> <0> <8>                  : "八"  U516B   # CJK UNIFIED IDEOGRAPH-516B (8)
+<Multi_key> <j> <0> <9>                  : "九"  U4E5D   # CJK UNIFIED IDEOGRAPH-4E5D (9)
+<Multi_key> <j> <0> <E> <1>              : "十"  U5341   # CJK UNIFIED IDEOGRAPH-5341 (10)
+<Multi_key> <j> <0> <E> <2>              : "百"  U767E   # CJK UNIFIED IDEOGRAPH-767E (100)
+<Multi_key> <j> <0> <E> <3>              : "千"  U5343   # CJK UNIFIED IDEOGRAPH-5343 (1_000)
+<Multi_key> <j> <0> <E> <4>              : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000)
+<Multi_key> <j> <0> <E> <8>              : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
+
+# Punctuation
+
+<Multi_key> <j> <semicolon> <quotedbl> <Return>    : "゙"  U3099  # COMBINING KATAKANA-HIRAGANA VOICED SOUND MARK
+<Multi_key> <j> <semicolon> <o> <Return> : "゚"  U309A  # COMBINING KATAKANA-HIRAGANA SEMI-VOICED SOUND MARK
+<Multi_key> <j> <semicolon> <minus>      : "ー"  U30FC   # KATAKANA-HIRAGANA PROLONGED SOUND MARK
+<Multi_key> <j> <semicolon> <asciicircum> <period> : "・"  U30FB   # KATAKANA MIDDLE DOT
+
+<Multi_key> <j> <semicolon> <space>      : "　"  U3000   # IDEOGRAPHIC SPACE
+<Multi_key> <j> <semicolon> <comma>      : "、"  U3001   # IDEOGRAPHIC COMMA
+<Multi_key> <j> <semicolon> <period>     : "。"  U3002   # IDEOGRAPHIC FULL STOP
+<Multi_key> <j> <semicolon> <left> <apostrophe>    : "「"  U300C   # LEFT CORNER BRACKET
+<Multi_key> <j> <semicolon> <right> <apostrophe>   : "」"  U300D   # RIGHT CORNER BRACKET
+<Multi_key> <j> <semicolon> <left> <quotedbl>      : "『"  U300E   # LEFT WHITE CORNER BRACKET
+<Multi_key> <j> <semicolon> <right> <quotedbl>     : "』"  U300F   # RIGHT WHITE CORNER BRACKET
+<Multi_key> <j> <semicolon> <bar> <parenleft>      : "【"  U3010   # LEFT BLACK LENTICULAR BRACKET
+<Multi_key> <j> <semicolon> <bar> <parenright>     : "】"  U3011   # RIGHT BLACK LENTICULAR BRACKET
+<Multi_key> <j> <semicolon> <exclam>     : "！"  UFF01   # FULLWIDTH EXCLAMATION MARK
+<Multi_key> <j> <semicolon> <parenleft>  : "（"  UFF08   # FULLWIDTH LEFT PARENTHESIS
+<Multi_key> <j> <semicolon> <parenright> : "）"  UFF09   # FULLWIDTH RIGHT PARENTHESIS
+<Multi_key> <j> <semicolon> <colon>      : "："  UFF1A   # FULLWIDTH COLON
+<Multi_key> <j> <semicolon> <question>   : "？"  UFF1F   # FULLWIDTH QUESTION MARK
+<Multi_key> <j> <semicolon> <braceleft>  : "｛"  UFF5B   # FULLWIDTH LEFT CURLY BRACKET
+<Multi_key> <j> <semicolon> <braceright> : "｝"  UFF5D   # FULLWIDTH RIGHT CURLY BRACKET
+
+#####################
+# (k) Korean/Hangul #
+#####################
+
+# a = initial, b = medial, c = final, d = standalone
+
+<Multi_key> <k> <a> <g> : "ᄀ"  U1100   # HANGUL CHOSEONG KIYEOK
+<Multi_key> <k> <a> <G> : "ᄁ"  U1101   # HANGUL CHOSEONG SSANGKIYEOK
+<Multi_key> <k> <a> <n> : "ᄂ"  U1102   # HANGUL CHOSEONG NIEUN
+<Multi_key> <k> <a> <d> : "ᄃ"  U1103   # HANGUL CHOSEONG TIKEUT
+<Multi_key> <k> <a> <D> : "ᄄ"  U1104   # HANGUL CHOSEONG SSANGTIKEUT
+<Multi_key> <k> <a> <r> : "ᄅ"  U1105   # HANGUL CHOSEONG RIEUL
+<Multi_key> <k> <a> <m> : "ᄆ"  U1106   # HANGUL CHOSEONG MIEUM
+<Multi_key> <k> <a> <b> : "ᄇ"  U1107   # HANGUL CHOSEONG PIEUP
+<Multi_key> <k> <a> <B> : "ᄈ"  U1108   # HANGUL CHOSEONG SSANGPIEUP
+<Multi_key> <k> <a> <s> : "ᄉ"  U1109   # HANGUL CHOSEONG SIOS
+<Multi_key> <k> <a> <S> : "ᄊ"  U110A   # HANGUL CHOSEONG SSANGSIOS
+<Multi_key> <k> <a> <0> : "ᄋ"  U110B   # HANGUL CHOSEONG IEUNG
+<Multi_key> <k> <a> <o> : "ᄋ"  U110B   # HANGUL CHOSEONG IEUNG
+<Multi_key> <k> <a> <j> : "ᄌ"  U110C   # HANGUL CHOSEONG CIEUC
+<Multi_key> <k> <a> <J> : "ᄍ"  U110D   # HANGUL CHOSEONG SSANGCIEUC
+<Multi_key> <k> <a> <c> : "ᄎ"  U110E   # HANGUL CHOSEONG CHIEUCH
+<Multi_key> <k> <a> <k> : "ᄏ"  U110F   # HANGUL CHOSEONG KHIEUKH
+<Multi_key> <k> <a> <t> : "ᄐ"  U1110   # HANGUL CHOSEONG THIEUTH
+<Multi_key> <k> <a> <p> : "ᄑ"  U1111   # HANGUL CHOSEONG PHIEUPH
+<Multi_key> <k> <a> <h> : "ᄒ"  U1112   # HANGUL CHOSEONG HIEUH
+
+<Multi_key> <k> <b> <a> <period>     : "ᅡ"  U1161   # HANGUL JUNGSEONG A
+<Multi_key> <k> <b> <a> <e>          : "ᅢ"  U1162   # HANGUL JUNGSEONG AE
+<Multi_key> <k> <b> <y> <a> <period> : "ᅣ"  U1163   # HANGUL JUNGSEONG YA
+<Multi_key> <k> <b> <y> <a> <e>      : "ᅤ"  U1164   # HANGUL JUNGSEONG YAE
+<Multi_key> <k> <b> <e> <o>          : "ᅥ"  U1165   # HANGUL JUNGSEONG EO
+<Multi_key> <k> <b> <e> <period>     : "ᅦ"  U1166   # HANGUL JUNGSEONG E
+<Multi_key> <k> <b> <y> <e> <o>      : "ᅧ"  U1167   # HANGUL JUNGSEONG YEO
+<Multi_key> <k> <b> <y> <e> <period> : "ᅨ"  U1168   # HANGUL JUNGSEONG YE
+<Multi_key> <k> <b> <o> <period>     : "ᅩ"  U1169   # HANGUL JUNGSEONG O
+<Multi_key> <k> <b> <w> <a> <period> : "ᅪ"  U116A   # HANGUL JUNGSEONG WA
+<Multi_key> <k> <b> <w> <a> <e>      : "ᅫ"  U116B   # HANGUL JUNGSEONG WAE
+<Multi_key> <k> <b> <o> <e>          : "ᅬ"  U116C   # HANGUL JUNGSEONG OE
+<Multi_key> <k> <b> <y> <o>          : "ᅭ"  U116D   # HANGUL JUNGSEONG YO
+<Multi_key> <k> <b> <u>              : "ᅮ"  U116E   # HANGUL JUNGSEONG U
+<Multi_key> <k> <b> <w> <e> <o>      : "ᅯ"  U116F   # HANGUL JUNGSEONG WEO
+<Multi_key> <k> <b> <w> <e> <period> : "ᅰ"  U1170   # HANGUL JUNGSEONG WE
+<Multi_key> <k> <b> <w> <i>          : "ᅱ"  U1171   # HANGUL JUNGSEONG WI
+<Multi_key> <k> <b> <y> <u>          : "ᅲ"  U1172   # HANGUL JUNGSEONG YU
+<Multi_key> <k> <b> <e> <u>          : "ᅳ"  U1173   # HANGUL JUNGSEONG EU
+<Multi_key> <k> <b> <y> <i>          : "ᅴ"  U1174   # HANGUL JUNGSEONG YI
+<Multi_key> <k> <b> <i>              : "ᅵ"  U1175   # HANGUL JUNGSEONG I
+
+<Multi_key> <k> <c> <g> <period> : "ᆨ"  U11A8   # HANGUL JONGSEONG KIYEOK
+<Multi_key> <k> <c> <g> <g>      : "ᆩ"  U11A9   # HANGUL JONGSEONG SSANGKIYEOK
+<Multi_key> <k> <c> <G>          : "ᆩ"  U11A9   # HANGUL JONGSEONG SSANGKIYEOK
+<Multi_key> <k> <c> <g> <s>      : "ᆪ"  U11AA   # HANGUL JONGSEONG KIYEOK-SIOS
+<Multi_key> <k> <c> <n> <period> : "ᆫ"  U11AB   # HANGUL JONGSEONG NIEUN
+<Multi_key> <k> <c> <n> <j>      : "ᆬ"  U11AC   # HANGUL JONGSEONG NIEUN-CIEUC
+<Multi_key> <k> <c> <n> <h>      : "ᆭ"  U11AD   # HANGUL JONGSEONG NIEUN-HIEUH
+<Multi_key> <k> <c> <d>          : "ᆮ"  U11AE   # HANGUL JONGSEONG TIKEUT
+<Multi_key> <k> <c> <l> <period> : "ᆯ"  U11AF   # HANGUL JONGSEONG RIEUL
+<Multi_key> <k> <c> <l> <g>      : "ᆰ"  U11B0   # HANGUL JONGSEONG RIEUL-KIYEOK
+<Multi_key> <k> <c> <l> <m>      : "ᆱ"  U11B1   # HANGUL JONGSEONG RIEUL-MIEUM
+<Multi_key> <k> <c> <l> <b>      : "ᆲ"  U11B2   # HANGUL JONGSEONG RIEUL-PIEUP
+<Multi_key> <k> <c> <l> <s>      : "ᆳ"  U11B3   # HANGUL JONGSEONG RIEUL-SIOS
+<Multi_key> <k> <c> <l> <t>      : "ᆴ"  U11B4   # HANGUL JONGSEONG RIEUL-THIEUTH
+<Multi_key> <k> <c> <l> <p>      : "ᆵ"  U11B5   # HANGUL JONGSEONG RIEUL-PHIEUPH
+<Multi_key> <k> <c> <l> <h>      : "ᆶ"  U11B6   # HANGUL JONGSEONG RIEUL-HIEUH
+<Multi_key> <k> <c> <m>          : "ᆷ"  U11B7   # HANGUL JONGSEONG MIEUM
+<Multi_key> <k> <c> <b> <period> : "ᆸ"  U11B8   # HANGUL JONGSEONG PIEUP
+<Multi_key> <k> <c> <b> <s>      : "ᆹ"  U11B9   # HANGUL JONGSEONG PIEUP-SIOS
+<Multi_key> <k> <c> <s>          : "ᆺ"  U11BA   # HANGUL JONGSEONG SIOS
+<Multi_key> <k> <c> <S>          : "ᆻ"  U11BB   # HANGUL JONGSEONG SSANGSIOS
+<Multi_key> <k> <c> <o>          : "ᆼ"  U11BC   # HANGUL JONGSEONG IEUNG
+<Multi_key> <k> <c> <n> <g>      : "ᆼ"  U11BC   # HANGUL JONGSEONG IEUNG
+<Multi_key> <k> <c> <j>          : "ᆽ"  U11BD   # HANGUL JONGSEONG CIEUC
+<Multi_key> <k> <c> <c>          : "ᆾ"  U11BE   # HANGUL JONGSEONG CHIEUCH
+<Multi_key> <k> <c> <k>          : "ᆿ"  U11BF   # HANGUL JONGSEONG KHIEUKH
+<Multi_key> <k> <c> <t>          : "ᇀ"  U11C0   # HANGUL JONGSEONG THIEUTH
+<Multi_key> <k> <c> <p>          : "ᇁ"  U11C1   # HANGUL JONGSEONG PHIEUPH
+<Multi_key> <k> <c> <h>          : "ᇂ"  U11C2   # HANGUL JONGSEONG HIEUH
+
+<Multi_key> <k> <d> <g> <period> : "ㄱ"  U3131   # HANGUL LETTER KIYEOK
+<Multi_key> <k> <d> <g> <g>      : "ㄲ"  U3132   # HANGUL LETTER SSANGKIYEOK
+<Multi_key> <k> <d> <G>          : "ㄲ"  U3132   # HANGUL LETTER SSANGKIYEOK
+<Multi_key> <k> <d> <g> <s>      : "ㄳ"  U3133   # HANGUL LETTER KIYEOK-SIOS
+<Multi_key> <k> <d> <n> <period> : "ㄴ"  U3134   # HANGUL LETTER NIEUN
+<Multi_key> <k> <d> <n> <j>      : "ㄵ"  U3135   # HANGUL LETTER NIEUN-CIEUC
+<Multi_key> <k> <d> <n> <h>      : "ㄶ"  U3136   # HANGUL LETTER NIEUN-HIEUH
+<Multi_key> <k> <d> <d>          : "ㄷ"  U3137   # HANGUL LETTER TIKEUT
+<Multi_key> <k> <d> <D>          : "ㄸ"  U3138   # HANGUL LETTER SSANGTIKEUT
+<Multi_key> <k> <d> <l> <period> : "ㄹ"  U3139   # HANGUL LETTER RIEUL
+<Multi_key> <k> <d> <l> <g>      : "ㄺ"  U313A   # HANGUL LETTER RIEUL-KIYEOK
+<Multi_key> <k> <d> <l> <m>      : "ㄻ"  U313B   # HANGUL LETTER RIEUL-MIEUM
+<Multi_key> <k> <d> <l> <b>      : "ㄼ"  U313C   # HANGUL LETTER RIEUL-PIEUP
+<Multi_key> <k> <d> <l> <s>      : "ㄽ"  U313D   # HANGUL LETTER RIEUL-SIOS
+<Multi_key> <k> <d> <l> <t>      : "ㄾ"  U313E   # HANGUL LETTER RIEUL-THIEUTH
+<Multi_key> <k> <d> <l> <p>      : "ㄿ"  U313F   # HANGUL LETTER RIEUL-PHIEUPH
+<Multi_key> <k> <d> <l> <h>      : "ㅀ"  U3140   # HANGUL LETTER RIEUL-HIEUH
+<Multi_key> <k> <d> <m>          : "ㅁ"  U3141   # HANGUL LETTER MIEUM
+<Multi_key> <k> <d> <b> <period> : "ㅂ"  U3142   # HANGUL LETTER PIEUP
+<Multi_key> <k> <d> <b> <b>      : "ㅃ"  U3143   # HANGUL LETTER SSANGPIEUP
+<Multi_key> <k> <d> <B>          : "ㅃ"  U3143   # HANGUL LETTER SSANGPIEUP
+<Multi_key> <k> <d> <b> <s>      : "ㅄ"  U3144   # HANGUL LETTER PIEUP-SIOS
+<Multi_key> <k> <d> <s>          : "ㅅ"  U3145   # HANGUL LETTER SIOS
+<Multi_key> <k> <d> <S>          : "ㅆ"  U3146   # HANGUL LETTER SSANGSIOS
+<Multi_key> <k> <d> <0>          : "ㅇ"  U3147   # HANGUL LETTER IEUNG
+<Multi_key> <k> <d> <n> <g>      : "ㅇ"  U3147   # HANGUL LETTER IEUNG
+<Multi_key> <k> <d> <j>          : "ㅈ"  U3148   # HANGUL LETTER CIEUC
+<Multi_key> <k> <d> <J>          : "ㅉ"  U3149   # HANGUL LETTER SSANGCIEUC
+<Multi_key> <k> <d> <c>          : "ㅊ"  U314A   # HANGUL LETTER CHIEUCH
+<Multi_key> <k> <d> <k>          : "ㅋ"  U314B   # HANGUL LETTER KHIEUKH
+<Multi_key> <k> <d> <t>          : "ㅌ"  U314C   # HANGUL LETTER THIEUTH
+<Multi_key> <k> <d> <p>          : "ㅍ"  U314D   # HANGUL LETTER PHIEUPH
+<Multi_key> <k> <d> <h>          : "ㅎ"  U314E   # HANGUL LETTER HIEUH
+
+<Multi_key> <k> <d> <a> <period>     : "ㅏ"  U314F   # HANGUL LETTER A
+<Multi_key> <k> <d> <a> <e>          : "ㅐ"  U3150   # HANGUL LETTER AE
+<Multi_key> <k> <d> <y> <a> <period> : "ㅑ"  U3151   # HANGUL LETTER YA
+<Multi_key> <k> <d> <y> <a> <e>      : "ㅒ"  U3152   # HANGUL LETTER YAE
+<Multi_key> <k> <d> <e> <o>          : "ㅓ"  U3153   # HANGUL LETTER EO
+<Multi_key> <k> <d> <e> <period>     : "ㅔ"  U3154   # HANGUL LETTER E
+<Multi_key> <k> <d> <y> <e> <o>      : "ㅕ"  U3155   # HANGUL LETTER YEO
+<Multi_key> <k> <d> <y> <e> <period> : "ㅖ"  U3156   # HANGUL LETTER YE
+<Multi_key> <k> <d> <o> <period>     : "ㅗ"  U3157   # HANGUL LETTER O
+<Multi_key> <k> <d> <w> <a> <period> : "ㅘ"  U3158   # HANGUL LETTER WA
+<Multi_key> <k> <d> <w> <a> <e>      : "ㅙ"  U3159   # HANGUL LETTER WAE
+<Multi_key> <k> <d> <o> <e>          : "ㅚ"  U315A   # HANGUL LETTER OE
+<Multi_key> <k> <d> <y> <o>          : "ㅛ"  U315B   # HANGUL LETTER YO
+<Multi_key> <k> <d> <u>              : "ㅜ"  U315C   # HANGUL LETTER U
+<Multi_key> <k> <d> <w> <e> <o>      : "ㅝ"  U315D   # HANGUL LETTER WEO
+<Multi_key> <k> <d> <w> <e> <period> : "ㅞ"  U315E   # HANGUL LETTER WE
+<Multi_key> <k> <d> <w> <i>          : "ㅟ"  U315F   # HANGUL LETTER WI
+<Multi_key> <k> <d> <y> <u>          : "ㅠ"  U3160   # HANGUL LETTER YU
+<Multi_key> <k> <d> <e> <u>          : "ㅡ"  U3161   # HANGUL LETTER EU
+<Multi_key> <k> <d> <y> <i>          : "ㅢ"  U3162   # HANGUL LETTER YI
+<Multi_key> <k> <d> <i>              : "ㅣ"  U3163   # HANGUL LETTER I
+
+########################
+# (r) Russian/Cyrillic # 
+########################
+
+<Multi_key> <r> <a> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A
+<Multi_key> <r> <a> <B>          : "Б"  U0411   # CYRILLIC CAPITAL LETTER BE
+<Multi_key> <r> <a> <V>          : "В"  U0412   # CYRILLIC CAPITAL LETTER VE
+<Multi_key> <r> <a> <G>          : "Г"  U0413   # CYRILLIC CAPITAL LETTER GHE
+<Multi_key> <r> <a> <D>          : "Д"  U0414   # CYRILLIC CAPITAL LETTER DE
+<Multi_key> <r> <a> <Y> <E>      : "Е"  U0415   # CYRILLIC CAPITAL LETTER IE
+<Multi_key> <r> <a> <Y> <O>      : "Ё"  U0401   # CYRILLIC CAPITAL LETTER IO
+<Multi_key> <r> <a> <quotedbl> <E> : "Ё"  U0401   # CYRILLIC CAPITAL LETTER IO
+<Multi_key> <r> <b> <Z> <H>      : "Ж"  U0416   # CYRILLIC CAPITAL LETTER ZHE
+<Multi_key> <r> <a> <Z>          : "З"  U0417   # CYRILLIC CAPITAL LETTER ZE
+<Multi_key> <r> <a> <I>          : "И"  U0418   # CYRILLIC CAPITAL LETTER I
+<Multi_key> <r> <a> <J>          : "Й"  U0419   # CYRILLIC CAPITAL LETTER SHORT I
+<Multi_key> <r> <a> <K>          : "К"  U041A   # CYRILLIC CAPITAL LETTER KA
+<Multi_key> <r> <a> <L>          : "Л"  U041B   # CYRILLIC CAPITAL LETTER EL
+<Multi_key> <r> <a> <M>          : "М"  U041C   # CYRILLIC CAPITAL LETTER EM
+<Multi_key> <r> <a> <N>          : "Н"  U041D   # CYRILLIC CAPITAL LETTER EN
+<Multi_key> <r> <a> <O>          : "О"  U041E   # CYRILLIC CAPITAL LETTER O
+<Multi_key> <r> <a> <P>          : "П"  U041F   # CYRILLIC CAPITAL LETTER PE
+<Multi_key> <r> <a> <R>          : "Р"  U0420   # CYRILLIC CAPITAL LETTER ER
+<Multi_key> <r> <a> <S>          : "С"  U0421   # CYRILLIC CAPITAL LETTER ES
+<Multi_key> <r> <a> <T>          : "Т"  U0422   # CYRILLIC CAPITAL LETTER TE
+<Multi_key> <r> <a> <U>          : "У"  U0423   # CYRILLIC CAPITAL LETTER U
+<Multi_key> <r> <a> <F>          : "Ф"  U0424   # CYRILLIC CAPITAL LETTER EF
+<Multi_key> <r> <a> <H>          : "Х"  U0425   # CYRILLIC CAPITAL LETTER HA
+<Multi_key> <r> <a> <C>          : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE
+<Multi_key> <r> <b> <T> <S> <Return> : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE
+<Multi_key> <r> <b> <C> <H>      : "Ч"  U0427   # CYRILLIC CAPITAL LETTER CHE
+<Multi_key> <r> <b> <S> <H>      : "Ш"  U0428   # CYRILLIC CAPITAL LETTER SHA
+<Multi_key> <r> <b> <S> <C> <H>  : "Щ"  U0429   # CYRILLIC CAPITAL LETTER SHCHA
+<Multi_key> <r> <a> <quotedbl> <quotedbl> : "Ъ"  U042A   # CYRILLIC CAPITAL LETTER HARD SIGN
+<Multi_key> <r> <a> <Y> <Return> : "Ы"  U042B   # CYRILLIC CAPITAL LETTER YERU
+<Multi_key> <r> <a> <apostrophe> <apostrophe> : "Ь"  U042C   # CYRILLIC CAPITAL LETTER SOFT SIGN
+<Multi_key> <r> <a> <E>          : "Э"  U042D   # CYRILLIC CAPITAL LETTER E
+<Multi_key> <r> <a> <Y> <U>      : "Ю"  U042E   # CYRILLIC CAPITAL LETTER YU
+<Multi_key> <r> <a> <Y> <A>      : "Я"  U042F   # CYRILLIC CAPITAL LETTER YA
+# Ukrainian
+<Multi_key> <r> <b> <G> <G>      : "Ґ"  U0490   # CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+<Multi_key> <r> <b> <Y> <E>      : "Є"  U0404   # CYRILLIC CAPITAL LETTER UKRAINIAN IE
+<Multi_key> <r> <b> <I>          : "І"  U0406   # CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <r> <b> <Y> <I>      : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
+<Multi_key> <r> <b> <quotedbl> <I> : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
+# Belarussian
+<Multi_key> <r> <b> <u> <Y>      :"Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
+<Multi_key> <r> <b> <Y> <Y>      :"Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
+# Serbian
+<Multi_key> <r> <b> <D> <J>      : "Ђ"  U0402   # CYRILLIC CAPITAL LETTER DJE
+<Multi_key> <r> <b> <L> <J>      : "Љ"  U0409   # CYRILLIC CAPITAL LETTER LJE
+<Multi_key> <r> <b> <N> <J>      : "Њ"  U040A   # CYRILLIC CAPITAL LETTER NJE
+<Multi_key> <r> <b> <T> <S> <H>  : "Ћ"  U040B   # CYRILLIC CAPITAL LETTER TSHE
+<Multi_key> <r> <b> <D> <Z> <H>  : "Џ"  U040F   # CYRILLIC CAPITAL LETTER DZHE
+# Macedonian
+<Multi_key> <r> <b> <G> <J>      : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
+<Multi_key> <r> <b> <apostrophe> <G> : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
+<Multi_key> <r> <b> <D> <Z> <Return> : "Ѕ"  U0405   # CYRILLIC CAPITAL LETTER DZE
+<Multi_key> <r> <b> <J>          : "Ј"  U0408   # CYRILLIC CAPITAL LETTER JE
+<Multi_key> <r> <b> <K> <J>      : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
+<Multi_key> <r> <b> <apostrophe> <K> : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
+
+<Multi_key> <r> <a> <a>          : "а"  U0430   # CYRILLIC SMALL LETTER A
+<Multi_key> <r> <a> <b>          : "б"  U0431   # CYRILLIC SMALL LETTER BE
+<Multi_key> <r> <a> <v>          : "в"  U0432   # CYRILLIC SMALL LETTER VE
+<Multi_key> <r> <a> <g>          : "г"  U0433   # CYRILLIC SMALL LETTER GHE
+<Multi_key> <r> <a> <d>          : "д"  U0434   # CYRILLIC SMALL LETTER DE
+<Multi_key> <r> <a> <y> <e>      : "е"  U0435   # CYRILLIC SMALL LETTER IE
+<Multi_key> <r> <a> <y> <o>      : "ё"  U0451   # CYRILLIC SMALL LETTER IO
+<Multi_key> <r> <a> <quotedbl> <e> : "ё"  U0451   # CYRILLIC SMALL LETTER IO
+<Multi_key> <r> <b> <z> <h>      : "ж"  U0436   # CYRILLIC SMALL LETTER ZHE
+<Multi_key> <r> <a> <z>          : "з"  U0437   # CYRILLIC SMALL LETTER ZE
+<Multi_key> <r> <a> <i>          : "и"  U0438   # CYRILLIC SMALL LETTER I
+<Multi_key> <r> <a> <j>          : "й"  U0439   # CYRILLIC SMALL LETTER SHORT I
+<Multi_key> <r> <a> <k>          : "к"  U043A   # CYRILLIC SMALL LETTER KA
+<Multi_key> <r> <a> <l>          : "л"  U043B   # CYRILLIC SMALL LETTER EL
+<Multi_key> <r> <a> <m>          : "м"  U043C   # CYRILLIC SMALL LETTER EM
+<Multi_key> <r> <a> <n>          : "н"  U043D   # CYRILLIC SMALL LETTER EN
+<Multi_key> <r> <a> <o>          : "о"  U043E   # CYRILLIC SMALL LETTER O
+<Multi_key> <r> <a> <p>          : "п"  U043F   # CYRILLIC SMALL LETTER PE
+<Multi_key> <r> <a> <r>          : "р"  U0440   # CYRILLIC SMALL LETTER ER
+<Multi_key> <r> <a> <s>          : "с"  U0441   # CYRILLIC SMALL LETTER ES
+<Multi_key> <r> <a> <t>          : "т"  U0442   # CYRILLIC SMALL LETTER TE
+<Multi_key> <r> <a> <u>          : "у"  U0443   # CYRILLIC SMALL LETTER U
+<Multi_key> <r> <a> <f>          : "ф"  U0444   # CYRILLIC SMALL LETTER EF
+<Multi_key> <r> <a> <h>          : "х"  U0445   # CYRILLIC SMALL LETTER HA
+<Multi_key> <r> <a> <c>          : "ц"  U0446   # CYRILLIC SMALL LETTER TSE
+<Multi_key> <r> <b> <t> <s> <Return> : "ц"  U0446   # CYRILLIC SMALL LETTER TSE
+<Multi_key> <r> <b> <c> <h>      : "ч"  U0447   # CYRILLIC SMALL LETTER CHE
+<Multi_key> <r> <b> <s> <h>      : "ш"  U0448   # CYRILLIC SMALL LETTER SHA
+<Multi_key> <r> <b> <s> <c> <h>  : "щ"  U0449   # CYRILLIC SMALL LETTER SHCHA
+<Multi_key> <r> <a> <quotedbl> <Return> : "ъ"  U044A   # CYRILLIC SMALL LETTER HARD SIGN
+<Multi_key> <r> <a> <y> <Return> : "ы"  U044B   # CYRILLIC SMALL LETTER YERU
+<Multi_key> <r> <a> <apostrophe> <Return> : "ь"  U044C   # CYRILLIC SMALL LETTER SOFT SIGN
+<Multi_key> <r> <a> <e>          : "э"  U044D   # CYRILLIC SMALL LETTER E
+<Multi_key> <r> <a> <y> <u>      : "ю"  U044E   # CYRILLIC SMALL LETTER YU
+<Multi_key> <r> <a> <y> <a>      : "я"  U044F   # CYRILLIC SMALL LETTER YA
+# Ukrainian
+<Multi_key> <r> <b> <g> <g>      : "ґ"  U0491   # CYRILLIC SMALL LETTER GHE WITH UPTURN
+<Multi_key> <r> <b> <y> <e>      : "є"  U0454   # CYRILLIC SMALL LETTER UKRAINIAN IE
+<Multi_key> <r> <b> <i>          : "і"  U0456   # CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <r> <b> <y> <i>      : "ї"  U0457   # CYRILLIC SMALL LETTER YI
+<Multi_key> <r> <b> <quotedbl> <i> : "ї"  U0457   # CYRILLIC SMALL LETTER YI
+# Belarussian
+<Multi_key> <r> <b> <u> <y>      :"ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
+<Multi_key> <r> <b> <y> <y>      :"ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
+# Serbian
+<Multi_key> <r> <b> <d> <j>      : "ђ"  U0452   # CYRILLIC SMALL LETTER DJE
+<Multi_key> <r> <b> <l> <j>      : "љ"  U0459   # CYRILLIC SMALL LETTER LJE
+<Multi_key> <r> <b> <n> <j>      : "њ"  U045A   # CYRILLIC SMALL LETTER NJE
+<Multi_key> <r> <b> <t> <s> <h>  : "ћ"  U045B   # CYRILLIC SMALL LETTER TSHE
+<Multi_key> <r> <b> <d> <z> <h>  : "џ"  U045F   # CYRILLIC SMALL LETTER DZHE
+# Macedonian
+<Multi_key> <r> <b> <g> <j>      : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
+<Multi_key> <r> <b> <apostrophe> <g> : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
+<Multi_key> <r> <b> <d> <z> <Return> : "ѕ"  U0455   # CYRILLIC SMALL LETTER DZE
+<Multi_key> <r> <b> <j>          : "ј"  U0458   # CYRILLIC SMALL LETTER JE
+<Multi_key> <r> <b> <k> <j>      : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
+<Multi_key> <r> <b> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
+
+#########
+# Emoji #
+#########
+
+# Uses emoji-style variation selector where appropriate
+
+<Multi_key> <colon> <parenright>   : "☺️"   U263A UFE0F   # WHITE SMILING FACE EMOJI (overrides ☺ )
+<Multi_key> <colon> <bracketright> : "☺️"   U263A UFE0F   # WHITE SMILING FACE EMOJI
+<Multi_key> <colon> <parenleft>    : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI (overrides ☺ )
+<Multi_key> <colon> <bracketleft>  : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI
+<Multi_key> <less> <3>             : "♥️"   U2665 UFE0F   # HEAVY BLACK HEART EMOJI (overrides ♥ )
+<Multi_key> <colon> <D>            : "😃"  U1F603        # SMILING FACE WITH OPEN MOUTH
+<Multi_key> <colon> <P>            : "😛"  U1F61B        # FACE WITH STUCK-OUT TONGUE
+<Multi_key> <colon> <asterisk>     : "😗"  U1F617        # KISSING FACE
+<Multi_key> <x> <D>                : "😆"  U1F606        # SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES
+<Multi_key> <colon> <apostrophe> <parenleft> : "😢"  U1F622   # CRYING FACE
+<Multi_key> <semicolon> <parenright>         : "😉"  U1F609   # WINKING FACE
+<Multi_key> <greater> <colon> <parenleft>    : "😠"  U1F620   # ANGRY FACE
+<Multi_key> <o> <7>                : "🫡"  U1FAE1        # SALUTING FACE
+
+<Multi_key> <F> <P>                : "🤦"  U1F926        # FACE PALM
+<Multi_key> <T> <U>                : "👍"  U1F44D        # THUMBS UP SIGN
+<Multi_key> <T> <D>                : "👎"  U1F44E        # THUMBS DOWN SIGN
+<Multi_key> <O> <K>                : "👌"  U1F44C        # OK HAND SIGN
+<Multi_key> <T> <Y>                : "🙏"  U1F64F        # PERSON WITH FOLDED HANDS
+<Multi_key> <W> <D>                : "👏"  U1F44F        # CLAPPING HANDS SIGN
+<Multi_key> <W> <exclam>           : "⚠️"   U26A0 UFE0F   # WARNING SIGN EMOJI
+<Multi_key> <l> <o> <l>            : "😂"  U1F602        # FACE WITH TEARS OF JOY
+<Multi_key> <r> <o> <f> <l>        : "🤣"  U1F923        # ROLLING ON THE FLOOR LAUGHING
+<Multi_key> <u> <w> <u>            : "😌"  U1F60C        # RELIEVED FACE
+
+<Multi_key> <V> <V>                : "✅"  U2705         # WHITE HEAVY CHECK MARK
+<Multi_key> <X> <X>                : "❌"  U274C         # CROSS MARK
+<Multi_key> <asterisk> <asterisk>  : "✨"  U2728         # SPARKLES
+
+<Multi_key> <F> <asciicircum>      : "👆"  U1F446        # WHITE UP POINTING BACKHAND INDEX
+<Multi_key> <F> <v>                : "👇"  U1F447        # WHITE DOWN POINTING BACKHAND INDEX
+<Multi_key> <F> <less>             : "👈"  U1F448        # WHITE LEFT POINTING BACKHAND INDEX
+<Multi_key> <F> <greater>          : "👉"  U1F449        # WHITE RIGHT POINTING BACKHAND INDEX
+
+<Multi_key> <O> <backslash> <Return> : "⃠"  U20E0         # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
+<Multi_key> <backslash> <O> <Return> : "⃠"  U20E0         # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
+
+# Emoji modifiers used to set skin colour on people emoji
+
+<Multi_key> <s> <1> <Return>       : "🏻"  U1F3FB        # EMOJI MODIFIER FITZPATRICK TYPE-1-2
+<Multi_key> <s> <2> <Return>       : "🏻"  U1F3FB        # EMOJI MODIFIER FITZPATRICK TYPE-1-2
+<Multi_key> <s> <3> <Return>       : "🏼"  U1F3FC        # EMOJI MODIFIER FITZPATRICK TYPE-3
+<Multi_key> <s> <4> <Return>       : "🏽"  U1F3FD        # EMOJI MODIFIER FITZPATRICK TYPE-4
+<Multi_key> <s> <5> <Return>       : "🏾"  U1F3FE        # EMOJI MODIFIER FITZPATRICK TYPE-5
+<Multi_key> <s> <6> <Return>       : "🏿"  U1F3FF        # EMOJI MODIFIER FITZPATRICK TYPE-6
+
+# Regional indicator symbols used to encode flag emoji (e.g. U + S = US flag)
+
+<Multi_key> <at> <A> : "🇦"  U1F1E6  # REGIONAL INDICATOR SYMBOL LETTER A
+<Multi_key> <at> <B> : "🇧"  U1F1E7  # REGIONAL INDICATOR SYMBOL LETTER B
+<Multi_key> <at> <C> : "🇨"  U1F1E8  # REGIONAL INDICATOR SYMBOL LETTER C
+<Multi_key> <at> <D> : "🇩"  U1F1E9  # REGIONAL INDICATOR SYMBOL LETTER D
+<Multi_key> <at> <E> : "🇪"  U1F1EA  # REGIONAL INDICATOR SYMBOL LETTER E
+<Multi_key> <at> <F> : "🇫"  U1F1EB  # REGIONAL INDICATOR SYMBOL LETTER F
+<Multi_key> <at> <G> : "🇬"  U1F1EC  # REGIONAL INDICATOR SYMBOL LETTER G
+<Multi_key> <at> <H> : "🇭"  U1F1ED  # REGIONAL INDICATOR SYMBOL LETTER H
+<Multi_key> <at> <I> : "🇮"  U1F1EE  # REGIONAL INDICATOR SYMBOL LETTER I
+<Multi_key> <at> <J> : "🇯"  U1F1EF  # REGIONAL INDICATOR SYMBOL LETTER J
+<Multi_key> <at> <K> : "🇰"  U1F1F0  # REGIONAL INDICATOR SYMBOL LETTER K
+<Multi_key> <at> <L> : "🇱"  U1F1F1  # REGIONAL INDICATOR SYMBOL LETTER L
+<Multi_key> <at> <M> : "🇲"  U1F1F2  # REGIONAL INDICATOR SYMBOL LETTER M
+<Multi_key> <at> <N> : "🇳"  U1F1F3  # REGIONAL INDICATOR SYMBOL LETTER N
+<Multi_key> <at> <O> : "🇴"  U1F1F4  # REGIONAL INDICATOR SYMBOL LETTER O
+<Multi_key> <at> <P> : "🇵"  U1F1F5  # REGIONAL INDICATOR SYMBOL LETTER P
+<Multi_key> <at> <Q> : "🇶"  U1F1F6  # REGIONAL INDICATOR SYMBOL LETTER Q
+<Multi_key> <at> <R> : "🇷"  U1F1F7  # REGIONAL INDICATOR SYMBOL LETTER R
+<Multi_key> <at> <S> : "🇸"  U1F1F8  # REGIONAL INDICATOR SYMBOL LETTER S
+<Multi_key> <at> <T> : "🇹"  U1F1F9  # REGIONAL INDICATOR SYMBOL LETTER T
+<Multi_key> <at> <U> : "🇺"  U1F1FA  # REGIONAL INDICATOR SYMBOL LETTER U
+<Multi_key> <at> <V> : "🇻"  U1F1FB  # REGIONAL INDICATOR SYMBOL LETTER V
+<Multi_key> <at> <W> : "🇼"  U1F1FC  # REGIONAL INDICATOR SYMBOL LETTER W
+<Multi_key> <at> <X> : "🇽"  U1F1FD  # REGIONAL INDICATOR SYMBOL LETTER X
+<Multi_key> <at> <Y> : "🇾"  U1F1FE  # REGIONAL INDICATOR SYMBOL LETTER Y
+<Multi_key> <at> <Z> : "🇿"  U1F1FF  # REGIONAL INDICATOR SYMBOL LETTER Z
+
+####################################
+# Bidirectional control characters #
+####################################
+
+<Multi_key> <l> <r> <m> : "‎"  U200E   # LEFT-TO-RIGHT MARK
+<Multi_key> <r> <l> <m> : "‏"  U200F   # RIGHT-TO-LEFT MARK
+<Multi_key> <l> <r> <e> : "‪"  U202A   # LEFT-TO-RIGHT EMBEDDING
+<Multi_key> <r> <l> <e> : "‫"  U202B   # RIGHT-TO-LEFT EMBEDDING
+<Multi_key> <p> <d> <f> : "‬"  U202C   # POP DIRECTIONAL FORMATTING
+<Multi_key> <l> <r> <o> : "‭"  U202D   # LEFT-TO-RIGHT OVERRIDE
+<Multi_key> <r> <l> <o> : "‮"  U202E   # RIGHT-TO-LEFT OVERRIDE
+<Multi_key> <l> <r> <i> : "⁦"  U2066   # LEFT-TO-RIGHT ISOLATE
+<Multi_key> <r> <l> <i> : "⁧"  U2067   # RIGHT-TO-LEFT ISOLATE
+<Multi_key> <p> <d> <i> : "⁩"  U2069   # POP DIRECTIONAL ISOLATE
+
+######################
+# "Upside down" text #
+######################
+
+<Multi_key> <v> <asciicircum> <A> : "ꓯ" UA4EF    # LISU LETTER AE
+<Multi_key> <v> <asciicircum> <B> : "ꓭ" UA4ED    # LISU LETTER GHA
+<Multi_key> <v> <asciicircum> <C> : "ꓛ" UA4DB    # LISU LETTER CHA
+<Multi_key> <v> <asciicircum> <D> : "ꓷ" UA4F7    # LISU LETTER OE
+<Multi_key> <v> <asciicircum> <E> : "ꓱ" UA4F1    # LISU LETTER EU
+<Multi_key> <v> <asciicircum> <F> : "ꓞ" UA4DE    # LISU LETTER TSHA
+<Multi_key> <v> <asciicircum> <G> : "ꓨ" UA4E8    # LISU LETTER HHA
+<Multi_key> <v> <asciicircum> <H> : "H" U0048    # LATIN CAPITAL LETTER H
+<Multi_key> <v> <asciicircum> <I> : "I" U0049    # LATIN CAPITAL LETTER I
+<Multi_key> <v> <asciicircum> <J> : "ꓩ" UA4E9    # LISU LETTER FA
+<Multi_key> <v> <asciicircum> <K> : "ꓘ" UA4D8    # LISU LETTER KHA
+<Multi_key> <v> <asciicircum> <L> : "ꓶ" UA4F6    # LISU LETTER UH
+<Multi_key> <v> <asciicircum> <M> : "ꟽ" UA7FD    # LATIN EPIGRAPHIC LETTER INVERTED M
+<Multi_key> <v> <asciicircum> <N> : "N" U004E    # LATIN CAPITAL LETTER N
+<Multi_key> <v> <asciicircum> <O> : "O" U004F    # LATIN CAPITAL LETTER O
+<Multi_key> <v> <asciicircum> <P> : "Ԁ" U0500    # CYRILLIC CAPITAL LETTER KOMI DE
+<Multi_key> <v> <asciicircum> <Q> : "Ό" U038C    # GREEK CAPITAL LETTER OMICRON WITH TONOS
+<Multi_key> <v> <asciicircum> <R> : "ꓤ" UA4E4    # LISU LETTER ZA
+<Multi_key> <v> <asciicircum> <S> : "S" U0053    # LATIN CAPITAL LETTER S
+<Multi_key> <v> <asciicircum> <T> : "ꓕ" UA4D5    # LISU LETTER THA
+<Multi_key> <v> <asciicircum> <U> : "ꓵ" UA4F5    # LISU LETTER UE
+<Multi_key> <v> <asciicircum> <V> : "ꓥ" UA4E5    # LISU LETTER NGA
+<Multi_key> <v> <asciicircum> <W> : "M" U004D    # LATIN CAPITAL LETTER M
+<Multi_key> <v> <asciicircum> <X> : "X" U0058    # LATIN CAPITAL LETTER X
+<Multi_key> <v> <asciicircum> <Y> : "⅄" U2144    # TURNED SANS-SERIF CAPITAL Y
+<Multi_key> <v> <asciicircum> <Z> : "Z" U005A    # LATIN CAPITAL LETTER Z
+
+<Multi_key> <v> <asciicircum> <a> : "ɐ" U0250    # LATIN SMALL LETTER TURNED A
+<Multi_key> <v> <asciicircum> <b> : "q" U0071    # LATIN SMALL LETTER Q
+<Multi_key> <v> <asciicircum> <c> : "ɔ" U0254    # LATIN SMALL LETTER OPEN O
+<Multi_key> <v> <asciicircum> <d> : "p" U0070    # LATIN SMALL LETTER P
+<Multi_key> <v> <asciicircum> <e> : "ǝ" U01DD    # LATIN SMALL LETTER TURNED E
+<Multi_key> <v> <asciicircum> <f> : "ɟ" U025F    # LATIN SMALL LETTER DOTLESS J WITH STROKE
+<Multi_key> <v> <asciicircum> <g> : "ᵷ" U1D77    # LATIN SMALL LETTER TURNED G
+<Multi_key> <v> <asciicircum> <h> : "ɥ" U0265    # LATIN SMALL LETTER TURNED H
+<Multi_key> <v> <asciicircum> <i> : "ᴉ" U1D09    # LATIN SMALL LETTER TURNED I
+<Multi_key> <v> <asciicircum> <j> : "ſ̣" U017F U0323   # LATIN SMALL LETTER LONG S + COMBINING DOT BELOW
+<Multi_key> <v> <asciicircum> <k> : "ʞ" U029E    # LATIN SMALL LETTER TURNED K
+<Multi_key> <v> <asciicircum> <l> : "ꞁ" UA781    # LATIN SMALL LETTER TURNED L
+<Multi_key> <v> <asciicircum> <m> : "ɯ" U026F    # LATIN SMALL LETTER TURNED M
+<Multi_key> <v> <asciicircum> <n> : "u" U0075    # LATIN SMALL LETTER U
+<Multi_key> <v> <asciicircum> <o> : "o" U006F    # LATIN SMALL LETTER O
+<Multi_key> <v> <asciicircum> <p> : "d" U0064    # LATIN SMALL LETTER D
+<Multi_key> <v> <asciicircum> <q> : "b" U0062    # LATIN SMALL LETTER B
+<Multi_key> <v> <asciicircum> <r> : "ɹ" U0279    # LATIN SMALL LETTER TURNED R
+<Multi_key> <v> <asciicircum> <s> : "s" U0073    # LATIN SMALL LETTER S
+<Multi_key> <v> <asciicircum> <t> : "ʇ" U0287    # LATIN SMALL LETTER TURNED T
+<Multi_key> <v> <asciicircum> <u> : "n" U006E    # LATIN SMALL LETTER N
+<Multi_key> <v> <asciicircum> <v> : "ʌ" U028C    # LATIN SMALL LETTER TURNED V
+<Multi_key> <v> <asciicircum> <w> : "ʍ" U028D    # LATIN SMALL LETTER TURNED W
+<Multi_key> <v> <asciicircum> <x> : "x" U0078    # LATIN SMALL LETTER X
+<Multi_key> <v> <asciicircum> <y> : "ʎ" U028E    # LATIN SMALL LETTER TURNED Y
+<Multi_key> <v> <asciicircum> <z> : "z" U007A    # LATIN SMALL LETTER Z
+
+<Multi_key> <v> <asciicircum> <0> : "0" U0030    # DIGIT ZERO
+<Multi_key> <v> <asciicircum> <1> : "Ɩ" U0196    # LATIN CAPITAL LETTER IOTA
+<Multi_key> <v> <asciicircum> <2> : "↊" U218A    # TURNED DIGIT TWO
+<Multi_key> <v> <asciicircum> <3> : "Ɛ" U0190    # LATIN CAPITAL LETTER OPEN E (↋ is better but less supported)
+<Multi_key> <v> <asciicircum> <4> : "ᔭ" U152D    # CANADIAN SYLLABICS YA
+<Multi_key> <v> <asciicircum> <5> : "5" U0035    # DIGIT FIVE
+<Multi_key> <v> <asciicircum> <6> : "9" U0039    # DIGIT NINE
+<Multi_key> <v> <asciicircum> <7> : "Ɫ" U2C62    # LATIN CAPITAL LETTER L WITH MIDDLE TILDE
+<Multi_key> <v> <asciicircum> <8> : "8" U0038    # DIGIT EIGHT
+<Multi_key> <v> <asciicircum> <9> : "6" U0036    # DIGIT SIX
+
+<Multi_key> <v> <asciicircum> <exclam>    : "¡" U00A1    # INVERTED EXCLAMATION MARK
+<Multi_key> <v> <asciicircum> <question>  : "¿" U00BF    # INVERTED QUESTION MARK
+<Multi_key> <v> <asciicircum> <quotedbl>  : "„" U201E    # DOUBLE LOW-9 QUOTATION MARK
+<Multi_key> <v> <asciicircum> <ampersand> : "⅋" U214B    # TURNED AMPERSAND
