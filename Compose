@@ -323,20 +323,40 @@ include "%L"
 <Multi_key> <greater> <Return>        : "⃗"   U20D7   # COMBINING RIGHT ARROW ABOVE (VECTOR)
 <Multi_key> <slash> <slash> <percent> : "⁄"  U2044   # FRACTION SLASH (conflicts with useless \)
 <Multi_key> <slash> <slash> <period>  : "∕"  U2215   # DIVISION SLASH (conflicts with useless \)
-<Multi_key> <backslash> <backslash>   : "∖"  U2216   # SET MINUS
-<Multi_key> <less> <greater>          : "↔"  U2194   # LEFT RIGHT ARROW (conflicts with ⋄, use ><)
 <Multi_key> <minus> <plus>            : "∓"  U2213   # MINUS-OR-PLUS SIGN (conflicts with ±, use +-)
 <Multi_key> <3> <v> <slash>           : "∛"  U221B   # CUBE ROOT
 <Multi_key> <4> <v> <slash>           : "∜"  U221C   # FOURTH ROOT
-<Multi_key> <parenleft> <plus> <parenright>     : "⊕"  U2295   # CIRCLED PLUS
-<Multi_key> <parenleft> <asterisk> <parenright> : "⊗"  U2297   # CIRCLED TIMES
 <Multi_key> <1> <apostrophe>          : "′"  U2032   # PRIME (not to be confused with '1)
 <Multi_key> <2> <apostrophe>          : "″"  U2033   # DOUBLE PRIME (not to be confused with '2)
 <Multi_key> <3> <apostrophe>          : "‴"  U2034   # TRIPLE PRIME
 <Multi_key> <4> <apostrophe>          : "⁗"  U2057   # QUADRUPLE PRIME
+<Multi_key> <bar> <period>            : "∣"  U2223   # DIVIDES
+<Multi_key> <bar> <slash>             : "∤"  U2224   # DOES NOT DIVIDE
+<Multi_key> <tilde> <minus>           : "≃"  U2243   # ASYMPTOTICALLY EQUAL TO
+<Multi_key> <slash> <tilde> <minus>   : "≄"  U2244   # NOT ASYMPTOTICALLY EQUAL TO
+<Multi_key> <tilde> <equals>          : "≅"  U2245   # APPROXIMATELY EQUAL TO
+<Multi_key> <tilde> <slash> <equals>  : "≆"  U2246   # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
+<Multi_key> <slash> <tilde> <equals>  : "≇"  U2247   # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
+<Multi_key> <slash> <tilde> <tilde>   : "≉"  U2249   # NOT ALMOST EQUAL TO
+<Multi_key> <equals> <D>              : "≜"  U225C   # DELTA EQUAL TO
+<Multi_key> <equals> <d>              : "≝"  U225D   # EQUAL TO BY DEFINITION
+<Multi_key> <equals> <question>       : "≟"  U225F   # QUESTIONED EQUAL TO
+<Multi_key> <2> <less>                : "≪"  U226A   # MUCH LESS-THAN
+<Multi_key> <3> <less>                : "⋘"  U22D8   # VERY MUCH LESS-THAN
+<Multi_key> <2> <greater>             : "≫"  U226B   # MUCH GREATER-THAN
+<Multi_key> <less> <Multi_key> <slash> <equals>    : "≨"  U2268   # LESS-THAN BUT NOT EQUAL TO
+<Multi_key> <greater> <Multi_key> <slash> <equals> : "≩"  U2269   # GREATER-THAN BUT NOT EQUAL TO
+<Multi_key> <slash> <Multi_key> <less> <equals>    : "≰"  U2270   # NEITHER LESS-THAN NOR EQUAL TO
+<Multi_key> <slash> <Multi_key> <greater> <equals> : "≱"  U2271   # NEITHER GREATER-THAN NOR EQUAL TO
+<Multi_key> <parenleft> <plus> <parenright>        : "⊕"  U2295   # CIRCLED PLUS
+<Multi_key> <parenleft> <minus> <parenright>       : "⊖"  U2296   # CIRCLED MINUS (overrides useless {)
+<Multi_key> <parenleft> <asterisk> <parenright>    : "⊗"  U2297   # CIRCLED TIMES
+<Multi_key> <parenleft> <slash> <parenright>       : "⊘"  U2298   # CIRCLED DIVISION SLASH
 <Multi_key> <backslash> <A>           : "∀"  U2200   # FOR ALL
 <Multi_key> <backslash> <E>           : "∃"  U2203   # THERE EXISTS
 <Multi_key> <slash> <E>               : "∄"  U2204   # THERE DOES NOT EXIST
+<Multi_key> <backslash> <backslash>   : "∖"  U2216   # SET MINUS
+<Multi_key> <less> <greater>          : "↔"  U2194   # LEFT RIGHT ARROW (conflicts with ⋄, use ><)
 <Multi_key> <bar> <T>                 : "⊤"  U22A4   # DOWN TACK
 <Multi_key> <bar> <underscore>        : "⊥"  U22A5   # UP TACK
 <Multi_key> <bar> <F>                 : "⊥"  U22A5   # UP TACK

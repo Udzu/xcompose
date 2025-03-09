@@ -127,6 +127,7 @@ def get_definitions(
 
 def add(args: argparse.Namespace) -> None:
     """Print line defining a new key sequence"""
+    # TODO: check for conflicts
     keys = " ".join(f"<{CHAR_TO_KEYWORD.get(k, k)}>" for k in args.keys)
     if args.modifier_key is not None:
         keys = f"<{args.modifier_key}> {keys}"
