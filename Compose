@@ -54,6 +54,10 @@ include "%L"
 <Multi_key> <slash> <slash> <slash>       : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
 <Multi_key> <parenleft> <parenleft>       : "⸨"  U2E28   # LEFT DOUBLE PARENTHESIS (conflicts with useless [)
 <Multi_key> <parenright> <parenright>     : "⸩"  U2E29   # RIGHT DOUBLE PARENTHESIS (conflicts with useless ])
+<Multi_key> <parenleft> <asciicircum>     : "⌈"  U2308   # LEFT CEILING
+<Multi_key> <parenright> <asciicircum>    : "⌉"  U2309   # RIGHT CEILING
+<Multi_key> <parenleft> <underscore>      : "⌊"  U230A   # LEFT FLOOR
+<Multi_key> <parenright> <underscore>     : "⌋"  U230B   # RIGHT FLOOR
 
 ########################
 # Combining diacritics #
@@ -121,7 +125,7 @@ include "%L"
 <Multi_key> <underscore> <underscore> <underscore> <equal> <Return> : "͇"  U0347   # COMBINING EQUALS SIGN BELOW (conflicts with ū, use -u)
 <Multi_key> <underscore> <bar> <bar> <Return>        : "͈"  U0348   # COMBINING DOUBLE VERTICAL LINE BELOW
 <Multi_key> <underscore> <notsign> <Return>          : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
-<Multi_key> <parenright> <underscore> <Return>       : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW
+<Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
 
 <Multi_key> <minus> <tilde> <Return> : "̴"  U0334   # COMBINING TILDE OVERLAY
 <Multi_key> <minus> <minus> <Return> : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
@@ -206,7 +210,7 @@ include "%L"
 # International Phonetic Alphabet (and other linguistics) #
 ###########################################################
 
-# Also see combining diacritics section above
+# Also see brackets and combining diacritics sections
 
 <Multi_key> <b> <h>                 : "β"  U03B2   # GREEK SMALL LETTER BETA
 <Multi_key> <g> <h>                 : "ɣ"  U0263   # LATIN SMALL LETTER GAMMA
@@ -320,6 +324,8 @@ include "%L"
 # Mathematical and scientific symbols #
 #######################################
 
+# Also see brackets and logic sections (though some of the latter's symbols are duplicated here)
+
 <Multi_key> <greater> <Return>        : "⃗"   U20D7   # COMBINING RIGHT ARROW ABOVE (VECTOR)
 <Multi_key> <slash> <slash> <percent> : "⁄"  U2044   # FRACTION SLASH (conflicts with useless \)
 <Multi_key> <slash> <slash> <period>  : "∕"  U2215   # DIVISION SLASH (conflicts with useless \)
@@ -330,58 +336,84 @@ include "%L"
 <Multi_key> <2> <apostrophe>          : "″"  U2033   # DOUBLE PRIME (not to be confused with '2)
 <Multi_key> <3> <apostrophe>          : "‴"  U2034   # TRIPLE PRIME
 <Multi_key> <4> <apostrophe>          : "⁗"  U2057   # QUADRUPLE PRIME
+<Multi_key> <less> <greater>          : "↔"  U2194   # LEFT RIGHT ARROW (conflicts with ⋄, use ><)
+<Multi_key> <bar> <greater>           : "↦"  U21A6   # RIGHTWARDS ARROW FROM BAR (MAPS TO)
+<Multi_key> <o> <period>              : "∘"  U2218   # RING OPERATOR (COMPOSITION)
+<Multi_key> <backslash> <A>           : "∀"  U2200   # FOR ALL
+<Multi_key> <backslash> <E>           : "∃"  U2203   # THERE EXISTS
+<Multi_key> <slash> <E>               : "∄"  U2204   # THERE DOES NOT EXIST
+<Multi_key> <backslash> <backslash>   : "∖"  U2216   # SET MINUS
+<Multi_key> <bar> <T>                 : "⊤"  U22A4   # DOWN TACK (TEE)
+<Multi_key> <bar> <underscore>        : "⊥"  U22A5   # UP TACK
+<Multi_key> <bar> <F>                 : "⊥"  U22A5   # UP TACK
 <Multi_key> <bar> <period>            : "∣"  U2223   # DIVIDES
 <Multi_key> <bar> <slash>             : "∤"  U2224   # DOES NOT DIVIDE
 <Multi_key> <tilde> <minus>           : "≃"  U2243   # ASYMPTOTICALLY EQUAL TO
 <Multi_key> <slash> <tilde> <minus>   : "≄"  U2244   # NOT ASYMPTOTICALLY EQUAL TO
-<Multi_key> <tilde> <equals>          : "≅"  U2245   # APPROXIMATELY EQUAL TO
+<Multi_key> <tilde> <equals>          : "≅"  U2245   # APPROXIMATELY EQUAL TO (ISOMORPHIC)
 <Multi_key> <tilde> <slash> <equals>  : "≆"  U2246   # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
 <Multi_key> <slash> <tilde> <equals>  : "≇"  U2247   # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
 <Multi_key> <slash> <tilde> <tilde>   : "≉"  U2249   # NOT ALMOST EQUAL TO
+<Multi_key> <colon> <equals>          : "≔"  U2254   # COLON EQUALS
 <Multi_key> <equals> <D>              : "≜"  U225C   # DELTA EQUAL TO
 <Multi_key> <equals> <d>              : "≝"  U225D   # EQUAL TO BY DEFINITION
 <Multi_key> <equals> <question>       : "≟"  U225F   # QUESTIONED EQUAL TO
 <Multi_key> <2> <less>                : "≪"  U226A   # MUCH LESS-THAN
 <Multi_key> <3> <less>                : "⋘"  U22D8   # VERY MUCH LESS-THAN
 <Multi_key> <2> <greater>             : "≫"  U226B   # MUCH GREATER-THAN
+<Multi_key> <less> <bar>              : "⊲"  U22B2   # NORMAL SUBGROUP OF
+<Multi_key> <greater> <bar>           : "⊳"  U22B3   # CONTAINS AS NORMAL SUBGROUP OF (not to be confused with |>)
+<Multi_key> <bar> <X> <bar>           : "⋈"  U22C8   # BOWTIE (JOIN)
+<Multi_key> <bar> <x>                 : "⋉"  U22C9   # LEFT NORMAL FACTOR SEMIDIRECT PRODUCT
+<Multi_key> <x> <bar>                 : "⋊"  U22CA   # RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT
 <Multi_key> <less> <Multi_key> <slash> <equals>    : "≨"  U2268   # LESS-THAN BUT NOT EQUAL TO
 <Multi_key> <greater> <Multi_key> <slash> <equals> : "≩"  U2269   # GREATER-THAN BUT NOT EQUAL TO
 <Multi_key> <slash> <Multi_key> <less> <equals>    : "≰"  U2270   # NEITHER LESS-THAN NOR EQUAL TO
 <Multi_key> <slash> <Multi_key> <greater> <equals> : "≱"  U2271   # NEITHER GREATER-THAN NOR EQUAL TO
+<Multi_key> <equals> <Multi_key> <less> <bar>      : "⊴"  U22B4   # NORMAL SUBGROUP OF OR EQUAL TO
+<Multi_key> <equals> <Multi_key> <greater> <bar>   : "⊵"  U22B5   # CONTAINS AS NORMAL SUBGROUP OR EQUAL TO
 <Multi_key> <parenleft> <plus> <parenright>        : "⊕"  U2295   # CIRCLED PLUS
 <Multi_key> <parenleft> <minus> <parenright>       : "⊖"  U2296   # CIRCLED MINUS (overrides useless {)
 <Multi_key> <parenleft> <asterisk> <parenright>    : "⊗"  U2297   # CIRCLED TIMES
 <Multi_key> <parenleft> <slash> <parenright>       : "⊘"  U2298   # CIRCLED DIVISION SLASH
-<Multi_key> <backslash> <A>           : "∀"  U2200   # FOR ALL
-<Multi_key> <backslash> <E>           : "∃"  U2203   # THERE EXISTS
-<Multi_key> <slash> <E>               : "∄"  U2204   # THERE DOES NOT EXIST
-<Multi_key> <backslash> <backslash>   : "∖"  U2216   # SET MINUS
-<Multi_key> <less> <greater>          : "↔"  U2194   # LEFT RIGHT ARROW (conflicts with ⋄, use ><)
-<Multi_key> <bar> <T>                 : "⊤"  U22A4   # DOWN TACK
-<Multi_key> <bar> <underscore>        : "⊥"  U22A5   # UP TACK
-<Multi_key> <bar> <F>                 : "⊥"  U22A5   # UP TACK
+
+# LaTeX-inspired names
 
 <Multi_key> <a> <l> <e> <p> <h>         : "ℵ"  U2135   # ALEF SYMBOL
 <Multi_key> <a> <l> <p> <h> <a>         : "α"  U03B1   # GREEK SMALL LETTER ALPHA
 <Multi_key> <b> <e> <t> <a>             : "β"  U03B2   # GREEK SMALL LETTER BETA (conflicts with ĕ, use ue)
-<Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va)
-<Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
-<Multi_key> <d> <e> <l> <Return>        : "∇"  U2207   # NABLA
 <Multi_key> <d> <e> <l> <t> <a>         : "δ"  U03B4   # GREEK SMALL LETTER DELTA
 <Multi_key> <e> <p> <s> <i> <l> <o> <n> : "ε"  U03B5   # GREEK SMALL LETTER EPSILON
+<Multi_key> <l> <a> <m> <b> <d> <a>     : "λ"  U03BB   # GREEK SMALL LETTER LAMDA
+<Multi_key> <l> <a> <m> <b> <d> <slash> : "ƛ"  U019B   # LATIN SMALL LETTER LAMBDA WITH STROKE
+<Multi_key> <l> <a> <m> <b> <d> <minus> : "ƛ"  U019B   # LATIN SMALL LETTER LAMBDA WITH STROKE
+<Multi_key> <l> <i> <t> <r> <e>         : "ℓ"  U2113   # SCRIPT SMALL L
+<Multi_key> <m> <u>                     : "µ"  U00B5   # MICRO SIGN
+<Multi_key> <n> <u>                     : "ν"  U03BD   # GREEK SMALL LETTER NU
+<Multi_key> <o> <h> <m>                 : "Ω"  U2126   # OHM SIGN
+<Multi_key> <o> <m> <e> <g> <a>         : "ω"  U03C9   # GREEK SMALL LETTER OMEGA
+<Multi_key> <p> <i>                     : "π"  U03C0   # GREEK SMALL LETTER PI
+<Multi_key> <p> <s> <i>                 : "ψ"  U03C8   # GREEK SMALL LETTER PSI
+<Multi_key> <r> <h> <o>                 : "ρ"  U03C1   # GREEK SMALL LETTER RHO
+<Multi_key> <s> <i> <g> <m> <a>         : "σ"  U03C3   # GREEK SMALL LETTER SIGMA
+<Multi_key> <z> <e> <t> <a>             : "ζ"  U03B6   # GREEK SMALL LETTER ZETA
+<Multi_key> <D> <E> <L> <T> <A>         : "∆"  U2206   # INCREMENT
+<Multi_key> <P> <H> <I>                 : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
+<Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
+
+<Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va)
+<Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
+<Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
+<Multi_key> <d> <e> <l> <Return>        : "∇"  U2207   # NABLA (alternatively nabla)
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
 <Multi_key> <i> <i> <i> <i> <n> <t>     : "⨌"  U2A0C   # QUADRUPLE INTEGRAL OPERATOR
 <Multi_key> <i> <i> <i> <n> <t>         : "∭"  U222D   # TRIPLE INTEGRAL
 <Multi_key> <i> <i> <n> <t>             : "∬"  U222C   # DOUBLE INTEGRAL
 <Multi_key> <i> <n> <t>                 : "∫"  U222B   # INTEGRAL
+<Multi_key> <i> <n> <Return>            : "∈"  U2208   # ELEMENT OF (alternatively isin)
 <Multi_key> <i> <s> <i> <n>             : "∈"  U2208   # ELEMENT OF
-<Multi_key> <l> <a> <m> <b> <d> <a>     : "λ"  U03BB   # GREEK SMALL LETTER LAMDA
-<Multi_key> <l> <a> <m> <b> <d> <slash> : "ƛ"  U019B   # LATIN SMALL LETTER LAMBDA WITH STROKE
-<Multi_key> <l> <a> <m> <b> <d> <minus> : "ƛ"  U019B   # LATIN SMALL LETTER LAMBDA WITH STROKE
 <Multi_key> <l> <a> <n> <d>             : "∧"  U2227   # LOGICAL AND
-<Multi_key> <l> <i> <t> <r> <e>         : "ℓ"  U2113   # SCRIPT SMALL L
 <Multi_key> <l> <o> <r>                 : "∨"  U2228   # LOGICAL OR
-<Multi_key> <m> <u>                     : "µ"  U00B5   # MICRO SIGN
 <Multi_key> <n> <a> <b> <l> <a>         : "∇"  U2207   # NABLA
 <Multi_key> <n> <i>                     : "∋"  U220B   # CONTAINS AS MEMBER
 <Multi_key> <n> <o> <t> <i> <n>         : "∉"  U2209   # NOT AN ELEMENT OF
@@ -390,30 +422,67 @@ include "%L"
 <Multi_key> <n> <s> <u> <b> <e> <q>     : "⊈"  U2288   # NEITHER A SUBSET OF NOR EQUAL TO
 <Multi_key> <n> <s> <u> <p> <Return>    : "⊅"  U2285   # NOT A SUPERSET OF
 <Multi_key> <n> <s> <u> <p> <e> <q>     : "⊉"  U2289   # NEITHER A SUPERSET OF NOR EQUAL TO
-<Multi_key> <n> <u>                     : "ν"  U03BD   # GREEK SMALL LETTER NU
-<Multi_key> <o> <h> <m>                 : "Ω"  U2126   # OHM SIGN
 <Multi_key> <o> <i> <i> <i> <n> <t>     : "∰"  U2230   # VOLUME INTEGRAL
 <Multi_key> <o> <i> <i> <n> <t>         : "∯"  U222F   # SURFACE INTEGRAL
 <Multi_key> <o> <i> <n> <t>             : "∮"  U222E   # CONTOUR INTEGRAL
-<Multi_key> <o> <m> <e> <g> <a>         : "ω"  U03C9   # GREEK SMALL LETTER OMEGA
 <Multi_key> <p> <a> <r> <t>             : "∂"  U2202   # PARTIAL DIFFERENTIAL
-<Multi_key> <p> <i>                     : "π"  U03C0   # GREEK SMALL LETTER PI
+<Multi_key> <p> <r> <e> <c> <Return>    : "≺"  U227A   # PRECEDES
+<Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
 <Multi_key> <p> <r> <o> <d>             : "∏"  U220F   # N-ARY PRODUCT
 <Multi_key> <p> <r> <o> <p>             : "∝"  U221D   # PROPORTIONAL TO
-<Multi_key> <p> <s> <i>                 : "ψ"  U03C8   # GREEK SMALL LETTER PSI
-<Multi_key> <r> <h> <o>                 : "ρ"  U03C1   # GREEK SMALL LETTER RHO
-<Multi_key> <s> <i> <g> <m> <a>         : "σ"  U03C3   # GREEK SMALL LETTER SIGMA
+<Multi_key> <s> <q> <c> <a> <p>         : "⊓"  U2293   # SQUARE CAP
+<Multi_key> <s> <q> <c> <u> <p>         : "⊔"  U2294   # SQUARE CUP (COPRODUCT)
 <Multi_key> <s> <u> <b> <Return>        : "⊂"  U2282   # SUBSET OF
 <Multi_key> <s> <u> <b> <e> <q>         : "⊆"  U2286   # SUBSET OF OR EQUAL TO
 <Multi_key> <s> <u> <b> <n> <e> <q>     : "⊊"  U228A   # SUBSET OF WITH NOT EQUAL TO
+<Multi_key> <s> <u> <c> <c> <Return>    : "≻"  U227B   # SUCCEEDS
+<Multi_key> <s> <u> <c> <c> <e> <q>     : "≽"  U227D   # SUCCEEDS OR EQUAL TO
 <Multi_key> <s> <u> <m>                 : "∑"  U2211   # N-ARY SUMMATION
 <Multi_key> <s> <u> <p> <Return>        : "⊃"  U2283   # SUPERSET OF
 <Multi_key> <s> <u> <p> <e> <q>         : "⊇"  U2287   # SUPERSET OF OR EQUAL TO
 <Multi_key> <s> <u> <p> <n> <e> <q>     : "⊋"  U228B   # SUPERSET OF WITH NOT EQUAL TO
-<Multi_key> <z> <e> <t> <a>             : "ζ"  U03B6   # GREEK SMALL LETTER ZETA
-<Multi_key> <P> <H> <I>                 : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
-<Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 <Multi_key> <Q> <E> <D>                 : "∎"  U220E   # END OF PROOF
+
+#################
+# Logic symbols #
+#################
+
+# Convention: prefixed by &
+
+<Multi_key> <ampersand> <tilde>       : "¬"  U00AC   # NOT SIGN
+<Multi_key> <ampersand> <asciicircum> : "∧"  U2227   # LOGICAL AND
+<Multi_key> <ampersand> <v>           : "∨"  U2228   # LOGICAL OR
+<Multi_key> <ampersand> <T>           : "⊤"  U22A4   # DOWN TACK (TEE)
+<Multi_key> <ampersand> <F>           : "⊥"  U22A5   # UP TACK
+<Multi_key> <ampersand> <A>           : "∀"  U2200   # FOR ALL
+<Multi_key> <ampersand> <E>           : "∃"  U2203   # THERE EXISTS
+<Multi_key> <ampersand> <slash> <E>   : "∄"  U2204   # THERE DOES NOT EXIST
+<Multi_key> <ampersand> <C>           : "⊂"  U2282   # SUBSET OF (CONSEQUENCE OF)
+<Multi_key> <ampersand> <less> <C>    : "⊃"  U2283   # SUPERSET OF (IMPLIES)
+
+<Multi_key> <ampersand> <bracketleft> <bracketright> : "□"  U25A1   # WHITE SQUARE (NECESSITY)
+<Multi_key> <ampersand> <less> <greater>             : "◇"  U25C7   # WHITE DIAMOND (POSSIBILITY)
+<Multi_key> <ampersand> <minus> <greater>            : "→"  U2192   # RIGHTWARDS ARROW
+<Multi_key> <ampersand> <minus> <slash> <greater>    : "↛"  U219B   # RIGHTWARDS ARROW WITH STROKE
+<Multi_key> <ampersand> <less> <minus> <Return>      : "←"  U2190   # LEFTWARDS ARROW
+<Multi_key> <ampersand> <less> <slash> <minus>       : "↚"  U219A   # LEFTWARDS ARROW WITH STROKE
+<Multi_key> <ampersand> <less> <minus> <greater>     : "↔"  U2194   # LEFT RIGHT ARROW
+<Multi_key> <ampersand> <less> <minus> <slash> <greater>  : "↮"  U21AE   # LEFT RIGHT ARROW WITH STROKE
+<Multi_key> <ampersand> <equals> <greater>           : "⇒"  U21D2   # RIGHTWARDS DOUBLE ARROW
+<Multi_key> <ampersand> <equals> <slash> <greater>   : "⇏"  U21CF   # RIGHTWARDS DOUBLE ARROW WITH STROKE
+<Multi_key> <ampersand> <less> <equals> <Return>     : "⇐"  U21D0   # LEFTWARDS DOUBLE ARROW
+<Multi_key> <ampersand> <less> <slash> <equals>      : "⇍"  U21CD   # LEFTWARDS DOUBLE ARROW WITH STROKE
+<Multi_key> <ampersand> <less> <equals> <greater>    : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
+<Multi_key> <ampersand> <less> <equals> <slash> <greater>  : "⇎"  U21CE   # LEFT RIGHT DOUBLE ARROW WITH STROKE
+<Multi_key> <ampersand> <bar> <minus>                : "⊢"  U22A2   # RIGHT TACK (PROVES)
+<Multi_key> <ampersand> <bar> <equals>               : "⊨"  U22A8   # TRUE (MODELS)
+<Multi_key> <ampersand> <bar> <bar> <minus>          : "⊩"  U22A9   # FORCES
+<Multi_key> <ampersand> <bar> <bar> <bar> <minus>    : "⊪"  U22AA   # TRIPLE VERTICAL BAR RIGHT TURNSTILE
+<Multi_key> <ampersand> <bar> <bar> <equals>         : "⊫"  U22AB   # DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
+<Multi_key> <ampersand> <bar> <slash> <minus>        : "⊬"  U22AC   # DOES NOT PROVE
+<Multi_key> <ampersand> <bar> <slash> <equals>       : "⊭"  U22AD   # NOT TRUE (DOES NOT MODEL)
+<Multi_key> <ampersand> <bar> <bar> <slash> <minus>  : "⊮"  U22AE   # DOES NOT FORCES
+<Multi_key> <ampersand> <bar> <bar> <slash> <equals> : "⊯"  U22AF   # NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
 
 ########################
 # Non-Latin characters #
@@ -624,7 +693,7 @@ include "%L"
 <Multi_key> <h> <semicolon> <T> <Return>                       : "ָ"  U05B8   # HEBREW POINT QAMATS
 <Multi_key> <h> <semicolon> <asciicircum> <period> <Return>    : "ֹ"  U05B9   # HEBREW POINT HOLAM
 <Multi_key> <h> <semicolon> <backslash> <Return>               : "ֻ"  U05BB   # HEBREW POINT QUBUTS
-<Multi_key> <h> <semicolon> <less> <period> <Return>           : "ּ"  U05BC   # HEBREW POINT DAGESH OR MAPIQ
+<Multi_key> <h> <semicolon> <asterisk> <Return>                : "ּ"  U05BC   # HEBREW POINT DAGESH OR MAPIQ
 <Multi_key> <h> <semicolon> <asciicircum> <minus> <Return>     : "ֿ"  U05BF   # HEBREW POINT RAFE
 <Multi_key> <h> <semicolon> <s> <h> <Return>                   : "ׁ"  U05C1   # HEBREW POINT SHIN DOT
 <Multi_key> <h> <semicolon> <s> <Return>                       : "ׂ"  U05C2   # HEBREW POINT SIN DOT
