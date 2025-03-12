@@ -84,6 +84,7 @@ include "%L"
 <Multi_key> <asciicircum> <comma> <Return> : "̓"  U0313   # COMBINING COMMA ABOVE (less important than cedilla)
 <Multi_key> <comma> <less> <Return>  : "̔"  U0314   # COMBINING REVERSED COMMA ABOVE
 <Multi_key> <notsign> <Return>       : "̚"  U031A   # COMBINING LEFT ANGLE ABOVE
+<Multi_key> <Multi_key> <minus> <comma> <Return> : "̚"  U031A   # COMBINING LEFT ANGLE ABOVE
 <Multi_key> <exclam> <Return>        : "̣"  U0323   # COMBINING DOT BELOW
 <Multi_key> <comma> <Return>         : "̧"  U0327   # COMBINING CEDILLA
 <Multi_key> <semicolon> <Return>     : "̨"  U0328   # COMBINING OGONEK
@@ -125,6 +126,7 @@ include "%L"
 <Multi_key> <underscore> <underscore> <underscore> <equal> <Return> : "͇"  U0347   # COMBINING EQUALS SIGN BELOW (conflicts with ū, use -u)
 <Multi_key> <underscore> <bar> <bar> <Return>        : "͈"  U0348   # COMBINING DOUBLE VERTICAL LINE BELOW
 <Multi_key> <underscore> <notsign> <Return>          : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
+<Multi_key> <underscore> <Multi_key> <minus> <comma> <Return> : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
 <Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
 
 <Multi_key> <minus> <tilde> <Return> : "̴"  U0334   # COMBINING TILDE OVERLAY
@@ -366,6 +368,7 @@ include "%L"
 <Multi_key> <bar> <X> <bar>           : "⋈"  U22C8   # BOWTIE (JOIN)
 <Multi_key> <bar> <x>                 : "⋉"  U22C9   # LEFT NORMAL FACTOR SEMIDIRECT PRODUCT
 <Multi_key> <x> <bar>                 : "⋊"  U22CA   # RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT
+
 <Multi_key> <less> <Multi_key> <slash> <equals>    : "≨"  U2268   # LESS-THAN BUT NOT EQUAL TO
 <Multi_key> <greater> <Multi_key> <slash> <equals> : "≩"  U2269   # GREATER-THAN BUT NOT EQUAL TO
 <Multi_key> <slash> <Multi_key> <less> <equals>    : "≰"  U2270   # NEITHER LESS-THAN NOR EQUAL TO
@@ -447,7 +450,7 @@ include "%L"
 # Logic symbols #
 #################
 
-# Convention: prefixed by &
+# Convention: prefixed with &
 
 <Multi_key> <ampersand> <tilde>       : "¬"  U00AC   # NOT SIGN
 <Multi_key> <ampersand> <asciicircum> : "∧"  U2227   # LOGICAL AND
@@ -1279,6 +1282,11 @@ include "%L"
 <Multi_key> <s> <5> <Return>       : "🏾"  U1F3FE        # EMOJI MODIFIER FITZPATRICK TYPE-5
 <Multi_key> <s> <6> <Return>       : "🏿"  U1F3FF        # EMOJI MODIFIER FITZPATRICK TYPE-6
 
+# ZWJ-based emoji modifiers to set gender
+
+<Multi_key> <F> <Return>           : "‍♂"  U200D U2640   # ZWJ + FEMALE SIGN
+<Multi_key> <M> <Return>           : "‍♁"  U200D U2641   # ZWJ + MALE SIGN
+
 # Regional indicator symbols used to encode flag emoji (e.g. U + S = US flag)
 
 <Multi_key> <at> <A> : "🇦"  U1F1E6  # REGIONAL INDICATOR SYMBOL LETTER A
@@ -1396,3 +1404,59 @@ include "%L"
 <Multi_key> <v> <asciicircum> <question>  : "¿" U00BF    # INVERTED QUESTION MARK
 <Multi_key> <v> <asciicircum> <quotedbl>  : "„" U201E    # DOUBLE LOW-9 QUOTATION MARK
 <Multi_key> <v> <asciicircum> <ampersand> : "⅋" U214B    # TURNED AMPERSAND
+
+################################
+# CP437 Box drawing characters #
+################################
+
+# Box drawings: | + horizontal line (l/r/h/ ) + vertical line (u/d/v/ )
+
+<Multi_key> <bar> <space> <v> : "│" U2502  # BOX DRAWINGS LIGHT VERTICAL
+<Multi_key> <bar> <l> <v>     : "┤" U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
+<Multi_key> <bar> <L> <v>     : "╡" U2561  # BOX DRAWINGS VERTICAL SINGLE AND LEFT DOUBLE
+<Multi_key> <bar> <l> <V>     : "╢" U2562  # BOX DRAWINGS VERTICAL DOUBLE AND LEFT SINGLE
+<Multi_key> <bar> <l> <D>     : "╖" U2556  # BOX DRAWINGS DOWN DOUBLE AND LEFT SINGLE
+<Multi_key> <bar> <L> <d>     : "╕" U2555  # BOX DRAWINGS DOWN SINGLE AND LEFT DOUBLE
+<Multi_key> <bar> <L> <V>     : "╣" U2563  # BOX DRAWINGS DOUBLE VERTICAL AND LEFT
+<Multi_key> <bar> <space> <V> : "║" U2551  # BOX DRAWINGS DOUBLE VERTICAL
+<Multi_key> <bar> <L> <D>     : "╗" U2557  # BOX DRAWINGS DOUBLE DOWN AND LEFT
+<Multi_key> <bar> <L> <U>     : "╝" U255D  # BOX DRAWINGS DOUBLE UP AND LEFT
+<Multi_key> <bar> <k> <U>     : "╜" U255C  # BOX DRAWINGS UP DOUBLE AND LEFT SINGLE
+<Multi_key> <bar> <L> <u>     : "╛" U255B  # BOX DRAWINGS UP SINGLE AND LEFT DOUBLE
+<Multi_key> <bar> <l> <d>     : "┐" U2510  # BOX DRAWINGS LIGHT DOWN AND LEFT
+<Multi_key> <bar> <r> <u>     : "└" U2514  # BOX DRAWINGS LIGHT UP AND RIGHT
+<Multi_key> <bar> <h> <u>     : "┴" U2534  # BOX DRAWINGS LIGHT UP AND HORIZONTAL
+<Multi_key> <bar> <h> <d>     : "┬" U252C  # BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
+<Multi_key> <bar> <r> <v>     : "├" U251C  # BOX DRAWINGS LIGHT VERTICAL AND RIGHT
+<Multi_key> <bar> <h> <space> : "─" U2500  # BOX DRAWINGS LIGHT HORIZONTAL
+<Multi_key> <bar> <h> <v>     : "┼" U253C  # BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <R> <v>     : "╞" U255E  # BOX DRAWINGS VERTICAL SINGLE AND RIGHT DOUBLE
+<Multi_key> <bar> <r> <V>     : "╟" U255F  # BOX DRAWINGS VERTICAL DOUBLE AND RIGHT SINGLE
+<Multi_key> <bar> <R> <U>     : "╚" U255A  # BOX DRAWINGS DOUBLE UP AND RIGHT
+<Multi_key> <bar> <R> <D>     : "╔" U2554  # BOX DRAWINGS DOUBLE DOWN AND RIGHT
+<Multi_key> <bar> <H> <U>     : "╩" U2569  # BOX DRAWINGS DOUBLE UP AND HORIZONTAL
+<Multi_key> <bar> <H> <D>     : "╦" U2566  # BOX DRAWINGS DOUBLE DOWN AND HORIZONTAL
+<Multi_key> <bar> <R> <V>     : "╠" U2560  # BOX DRAWINGS DOUBLE VERTICAL AND RIGHT
+<Multi_key> <bar> <H> <space> : "═" U2550  # BOX DRAWINGS DOUBLE HORIZONTAL
+<Multi_key> <bar> <H> <V>     : "╬" U256C  # BOX DRAWINGS DOUBLE VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <H> <u>     : "╧" U2567  # BOX DRAWINGS UP SINGLE AND HORIZONTAL DOUBLE
+<Multi_key> <bar> <h> <U>     : "╨" U2568  # BOX DRAWINGS UP DOUBLE AND HORIZONTAL SINGLE
+<Multi_key> <bar> <H> <d>     : "╤" U2564  # BOX DRAWINGS DOWN SINGLE AND HORIZONTAL DOUBLE
+<Multi_key> <bar> <h> <D>     : "╥" U2565  # BOX DRAWINGS DOWN DOUBLE AND HORIZONTAL SINGLE
+<Multi_key> <bar> <r> <U>     : "╙" U2559  # BOX DRAWINGS UP DOUBLE AND RIGHT SINGLE
+<Multi_key> <bar> <R> <u>     : "╘" U2558  # BOX DRAWINGS UP SINGLE AND RIGHT DOUBLE
+<Multi_key> <bar> <R> <d>     : "╒" U2552  # BOX DRAWINGS DOWN SINGLE AND RIGHT DOUBLE
+<Multi_key> <bar> <r> <D>     : "╓" U2553  # BOX DRAWINGS DOWN DOUBLE AND RIGHT SINGLE
+<Multi_key> <bar> <h> <V>     : "╫" U256B  # BOX DRAWINGS VERTICAL DOUBLE AND HORIZONTAL SINGLE
+<Multi_key> <bar> <H> <v>     : "╪" U256A  # BOX DRAWINGS VERTICAL SINGLE AND HORIZONTAL DOUBLE
+<Multi_key> <bar> <l> <u>     : "┘" U2518  # BOX DRAWINGS LIGHT UP AND LEFT
+<Multi_key> <bar> <r> <d>     : "┌" U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
+
+<Multi_key> <bar> <b> <1>     : "░" U2591  # LIGHT SHADE
+<Multi_key> <bar> <b> <2>     : "▒" U2592  # MEDIUM SHADE
+<Multi_key> <bar> <b> <3>     : "▓" U2593  # DARK SHADE
+<Multi_key> <bar> <b> <4>     : "█" U2588  # FULL BLOCK
+<Multi_key> <bar> <b> <d>     : "▄" U2584  # LOWER HALF BLOCK
+<Multi_key> <bar> <b> <l>     : "▌" U258C  # LEFT HALF BLOCK
+<Multi_key> <bar> <b> <r>     : "▐" U2590  # RIGHT HALF BLOCK
+<Multi_key> <bar> <b> <u>     : "▀" U2580  # UPPER HALF BLOCK
