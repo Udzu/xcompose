@@ -352,14 +352,14 @@ include "%L"
 <Multi_key> <bar> <slash>             : "∤"  U2224   # DOES NOT DIVIDE
 <Multi_key> <tilde> <minus>           : "≃"  U2243   # ASYMPTOTICALLY EQUAL TO
 <Multi_key> <slash> <tilde> <minus>   : "≄"  U2244   # NOT ASYMPTOTICALLY EQUAL TO
-<Multi_key> <tilde> <equals>          : "≅"  U2245   # APPROXIMATELY EQUAL TO (ISOMORPHIC)
-<Multi_key> <tilde> <slash> <equals>  : "≆"  U2246   # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
-<Multi_key> <slash> <tilde> <equals>  : "≇"  U2247   # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
+<Multi_key> <tilde> <equal>           : "≅"  U2245   # APPROXIMATELY EQUAL TO (ISOMORPHIC)
+<Multi_key> <tilde> <slash> <equal>   : "≆"  U2246   # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
+<Multi_key> <slash> <tilde> <equal>   : "≇"  U2247   # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
 <Multi_key> <slash> <tilde> <tilde>   : "≉"  U2249   # NOT ALMOST EQUAL TO
-<Multi_key> <colon> <equals>          : "≔"  U2254   # COLON EQUALS
-<Multi_key> <equals> <D>              : "≜"  U225C   # DELTA EQUAL TO
-<Multi_key> <equals> <d>              : "≝"  U225D   # EQUAL TO BY DEFINITION
-<Multi_key> <equals> <question>       : "≟"  U225F   # QUESTIONED EQUAL TO
+<Multi_key> <colon> <equal>           : "≔"  U2254   # COLON EQUALS
+<Multi_key> <equal> <D>               : "≜"  U225C   # DELTA EQUAL TO
+<Multi_key> <equal> <d>               : "≝"  U225D   # EQUAL TO BY DEFINITION (conflicts with ₫, use d=)
+<Multi_key> <equal> <question>        : "≟"  U225F   # QUESTIONED EQUAL TO
 <Multi_key> <2> <less>                : "≪"  U226A   # MUCH LESS-THAN
 <Multi_key> <3> <less>                : "⋘"  U22D8   # VERY MUCH LESS-THAN
 <Multi_key> <2> <greater>             : "≫"  U226B   # MUCH GREATER-THAN
@@ -369,12 +369,12 @@ include "%L"
 <Multi_key> <bar> <x>                 : "⋉"  U22C9   # LEFT NORMAL FACTOR SEMIDIRECT PRODUCT
 <Multi_key> <x> <bar>                 : "⋊"  U22CA   # RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT
 
-<Multi_key> <less> <Multi_key> <slash> <equals>    : "≨"  U2268   # LESS-THAN BUT NOT EQUAL TO
-<Multi_key> <greater> <Multi_key> <slash> <equals> : "≩"  U2269   # GREATER-THAN BUT NOT EQUAL TO
-<Multi_key> <slash> <Multi_key> <less> <equals>    : "≰"  U2270   # NEITHER LESS-THAN NOR EQUAL TO
-<Multi_key> <slash> <Multi_key> <greater> <equals> : "≱"  U2271   # NEITHER GREATER-THAN NOR EQUAL TO
-<Multi_key> <equals> <Multi_key> <less> <bar>      : "⊴"  U22B4   # NORMAL SUBGROUP OF OR EQUAL TO
-<Multi_key> <equals> <Multi_key> <greater> <bar>   : "⊵"  U22B5   # CONTAINS AS NORMAL SUBGROUP OR EQUAL TO
+<Multi_key> <less> <Multi_key> <slash> <equal>     : "≨"  U2268   # LESS-THAN BUT NOT EQUAL TO
+<Multi_key> <greater> <Multi_key> <slash> <equal>  : "≩"  U2269   # GREATER-THAN BUT NOT EQUAL TO
+<Multi_key> <slash> <Multi_key> <less> <equal>     : "≰"  U2270   # NEITHER LESS-THAN NOR EQUAL TO
+<Multi_key> <slash> <Multi_key> <greater> <equal>  : "≱"  U2271   # NEITHER GREATER-THAN NOR EQUAL TO
+<Multi_key> <equal> <Multi_key> <less> <bar>       : "⊴"  U22B4   # NORMAL SUBGROUP OF OR EQUAL TO
+<Multi_key> <equal> <Multi_key> <greater> <bar>    : "⊵"  U22B5   # CONTAINS AS NORMAL SUBGROUP OR EQUAL TO
 <Multi_key> <parenleft> <plus> <parenright>        : "⊕"  U2295   # CIRCLED PLUS
 <Multi_key> <parenleft> <minus> <parenright>       : "⊖"  U2296   # CIRCLED MINUS (overrides useless {)
 <Multi_key> <parenleft> <asterisk> <parenright>    : "⊗"  U2297   # CIRCLED TIMES
@@ -471,21 +471,21 @@ include "%L"
 <Multi_key> <ampersand> <less> <slash> <minus>       : "↚"  U219A   # LEFTWARDS ARROW WITH STROKE
 <Multi_key> <ampersand> <less> <minus> <greater>     : "↔"  U2194   # LEFT RIGHT ARROW
 <Multi_key> <ampersand> <less> <minus> <slash> <greater>  : "↮"  U21AE   # LEFT RIGHT ARROW WITH STROKE
-<Multi_key> <ampersand> <equals> <greater>           : "⇒"  U21D2   # RIGHTWARDS DOUBLE ARROW
-<Multi_key> <ampersand> <equals> <slash> <greater>   : "⇏"  U21CF   # RIGHTWARDS DOUBLE ARROW WITH STROKE
-<Multi_key> <ampersand> <less> <equals> <Return>     : "⇐"  U21D0   # LEFTWARDS DOUBLE ARROW
-<Multi_key> <ampersand> <less> <slash> <equals>      : "⇍"  U21CD   # LEFTWARDS DOUBLE ARROW WITH STROKE
-<Multi_key> <ampersand> <less> <equals> <greater>    : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
-<Multi_key> <ampersand> <less> <equals> <slash> <greater>  : "⇎"  U21CE   # LEFT RIGHT DOUBLE ARROW WITH STROKE
+<Multi_key> <ampersand> <equal> <greater>            : "⇒"  U21D2   # RIGHTWARDS DOUBLE ARROW
+<Multi_key> <ampersand> <equal> <slash> <greater>    : "⇏"  U21CF   # RIGHTWARDS DOUBLE ARROW WITH STROKE
+<Multi_key> <ampersand> <less> <equal> <Return>      : "⇐"  U21D0   # LEFTWARDS DOUBLE ARROW
+<Multi_key> <ampersand> <less> <slash> <equal>       : "⇍"  U21CD   # LEFTWARDS DOUBLE ARROW WITH STROKE
+<Multi_key> <ampersand> <less> <equal> <greater>     : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
+<Multi_key> <ampersand> <less> <equal> <slash> <greater>  : "⇎"  U21CE   # LEFT RIGHT DOUBLE ARROW WITH STROKE
 <Multi_key> <ampersand> <bar> <minus>                : "⊢"  U22A2   # RIGHT TACK (PROVES)
-<Multi_key> <ampersand> <bar> <equals>               : "⊨"  U22A8   # TRUE (MODELS)
+<Multi_key> <ampersand> <bar> <equal>                : "⊨"  U22A8   # TRUE (MODELS)
 <Multi_key> <ampersand> <bar> <bar> <minus>          : "⊩"  U22A9   # FORCES
 <Multi_key> <ampersand> <bar> <bar> <bar> <minus>    : "⊪"  U22AA   # TRIPLE VERTICAL BAR RIGHT TURNSTILE
-<Multi_key> <ampersand> <bar> <bar> <equals>         : "⊫"  U22AB   # DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
+<Multi_key> <ampersand> <bar> <bar> <equal>          : "⊫"  U22AB   # DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
 <Multi_key> <ampersand> <bar> <slash> <minus>        : "⊬"  U22AC   # DOES NOT PROVE
-<Multi_key> <ampersand> <bar> <slash> <equals>       : "⊭"  U22AD   # NOT TRUE (DOES NOT MODEL)
+<Multi_key> <ampersand> <bar> <slash> <equal>        : "⊭"  U22AD   # NOT TRUE (DOES NOT MODEL)
 <Multi_key> <ampersand> <bar> <bar> <slash> <minus>  : "⊮"  U22AE   # DOES NOT FORCES
-<Multi_key> <ampersand> <bar> <bar> <slash> <equals> : "⊯"  U22AF   # NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
+<Multi_key> <ampersand> <bar> <bar> <slash> <equal>  : "⊯"  U22AF   # NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
 
 ########################
 # Non-Latin characters #
@@ -554,6 +554,7 @@ include "%L"
 <Multi_key> <a> <semicolon> <underscore> <2> <Return> : "ٕ" U0655    # ARABIC HAMZA BELOW (conflicts with ą, use ,a)
 
 <Multi_key> <a> <semicolon> <comma>     : "،" U060C    # ARABIC COMMA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <semicolon> : "؛" U061B    # ARABIC SEMICOLON (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <question>  : "؟" U061F    # ARABIC QUESTION MARK (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <minus>     : "ـ" U0640    # ARABIC TATWEEL (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <percent>   : "٪" U066A    # ARABIC PERCENT SIGN (conflicts with ą, use ,a)
@@ -1251,6 +1252,7 @@ include "%L"
 <Multi_key> <o> <7>                : "🫡"  U1FAE1        # SALUTING FACE
 
 <Multi_key> <F> <P>                : "🤦"  U1F926        # FACE PALM
+<Multi_key> <S> <question>         : "🤷"  U1F937        # SHRUG
 <Multi_key> <T> <U>                : "👍"  U1F44D        # THUMBS UP SIGN
 <Multi_key> <T> <D>                : "👎"  U1F44E        # THUMBS DOWN SIGN
 <Multi_key> <O> <K>                : "👌"  U1F44C        # OK HAND SIGN
@@ -1282,10 +1284,10 @@ include "%L"
 <Multi_key> <s> <5> <Return>       : "🏾"  U1F3FE        # EMOJI MODIFIER FITZPATRICK TYPE-5
 <Multi_key> <s> <6> <Return>       : "🏿"  U1F3FF        # EMOJI MODIFIER FITZPATRICK TYPE-6
 
-# ZWJ-based emoji modifiers to set gender
+# ZWJ-based emoji modifiers to set gender on people emoji
 
-<Multi_key> <F> <Return>           : "‍♂"  U200D U2640   # ZWJ + FEMALE SIGN
-<Multi_key> <M> <Return>           : "‍♁"  U200D U2641   # ZWJ + MALE SIGN
+<Multi_key> <F> <Return>           : "‍♀️"  U200D U2640 UFE0F  # ZWJ + FEMALE SIGN
+<Multi_key> <M> <Return>           : "‍♂️"  U200D U2642 UFE0F  # ZWJ + MALE SIGN
 
 # Regional indicator symbols used to encode flag emoji (e.g. U + S = US flag)
 
@@ -1315,6 +1317,10 @@ include "%L"
 <Multi_key> <at> <X> : "🇽"  U1F1FD  # REGIONAL INDICATOR SYMBOL LETTER X
 <Multi_key> <at> <Y> : "🇾"  U1F1FE  # REGIONAL INDICATOR SYMBOL LETTER Y
 <Multi_key> <at> <Z> : "🇿"  U1F1FF  # REGIONAL INDICATOR SYMBOL LETTER Z
+
+<Multi_key> <at> <l> <g> <b> <t> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG
+<Multi_key> <at> <p> <r> <i> <d> <e> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG
+<Multi_key> <at> <t> <r> <a> <n> <s> : "🏳️‍⚧️" U1F3F3 UFE0F U200D U26A7 UFE0F    # TRANS FLAG
 
 ####################################
 # Bidirectional control characters #
