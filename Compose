@@ -88,7 +88,7 @@ include "%L"
 <Multi_key> <exclam> <Return>        : "̣"  U0323   # COMBINING DOT BELOW
 <Multi_key> <comma> <Return>         : "̧"  U0327   # COMBINING CEDILLA
 <Multi_key> <semicolon> <Return>     : "̨"  U0328   # COMBINING OGONEK
-<Multi_key> <leftbracket> <Return>   : "͆"  U0346   # COMBINING BRIDGE ABOVE
+<Multi_key> <bracketleft> <Return>   : "͆"  U0346   # COMBINING BRIDGE ABOVE
 <Multi_key> <asciitilde> <slash> <Return> : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <slash> <asciitilde> <Return> : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <parenright> <Return>    : "͝"  U035D   # COMBINING DOUBLE BREVE  
@@ -129,7 +129,6 @@ include "%L"
 <Multi_key> <underscore> <Multi_key> <minus> <comma> <Return> : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
 <Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
 
-<Multi_key> <minus> <tilde> <Return> : "̴"  U0334   # COMBINING TILDE OVERLAY
 <Multi_key> <minus> <minus> <Return> : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
 <Multi_key> <slash> <slash> <Return> : "̸"  U0338   # COMBINING LONG SOLIDUS OVERLAY (conflicts with useless \)
 
@@ -350,12 +349,12 @@ include "%L"
 <Multi_key> <bar> <F>                 : "⊥"  U22A5   # UP TACK
 <Multi_key> <bar> <period>            : "∣"  U2223   # DIVIDES
 <Multi_key> <bar> <slash>             : "∤"  U2224   # DOES NOT DIVIDE
-<Multi_key> <tilde> <minus>           : "≃"  U2243   # ASYMPTOTICALLY EQUAL TO
-<Multi_key> <slash> <tilde> <minus>   : "≄"  U2244   # NOT ASYMPTOTICALLY EQUAL TO
-<Multi_key> <tilde> <equal>           : "≅"  U2245   # APPROXIMATELY EQUAL TO (ISOMORPHIC)
-<Multi_key> <tilde> <slash> <equal>   : "≆"  U2246   # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
-<Multi_key> <slash> <tilde> <equal>   : "≇"  U2247   # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
-<Multi_key> <slash> <tilde> <tilde>   : "≉"  U2249   # NOT ALMOST EQUAL TO
+<Multi_key> <asciitilde> <minus>      : "≃"  U2243   # ASYMPTOTICALLY EQUAL TO
+<Multi_key> <slash> <asciitilde> <minus> : "≄"  U2244   # NOT ASYMPTOTICALLY EQUAL TO
+<Multi_key> <asciitilde> <equal>      : "≅"  U2245   # APPROXIMATELY EQUAL TO (ISOMORPHIC)
+<Multi_key> <asciitilde> <slash> <equal> : "≆"  U2246   # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
+<Multi_key> <slash> <asciitilde> <equal> : "≇"  U2247   # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
+<Multi_key> <slash> <asciitilde> <asciitilde> : "≉"  U2249   # NOT ALMOST EQUAL TO
 <Multi_key> <colon> <equal>           : "≔"  U2254   # COLON EQUALS
 <Multi_key> <equal> <D>               : "≜"  U225C   # DELTA EQUAL TO
 <Multi_key> <equal> <d>               : "≝"  U225D   # EQUAL TO BY DEFINITION (conflicts with ₫, use d=)
@@ -452,7 +451,7 @@ include "%L"
 
 # Convention: prefixed with &
 
-<Multi_key> <ampersand> <tilde>       : "¬"  U00AC   # NOT SIGN
+<Multi_key> <ampersand> <asciitilde>  : "¬"  U00AC   # NOT SIGN
 <Multi_key> <ampersand> <asciicircum> : "∧"  U2227   # LOGICAL AND
 <Multi_key> <ampersand> <v>           : "∨"  U2228   # LOGICAL OR
 <Multi_key> <ampersand> <T>           : "⊤"  U22A4   # DOWN TACK (TEE)
@@ -536,7 +535,7 @@ include "%L"
 <Multi_key> <a> <a> <C> : "چ" U0686    # ARABIC LETTER TCHEH (conflicts with å, use oa)
 <Multi_key> <a> <a> <p> : "پ" U067E    # ARABIC LETTER PEH (conflicts with å, use oa)
 
-<Multi_key> <a> <b> <a> <tilde> : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
+<Multi_key> <a> <b> <a> <asciitilde> : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
 <Multi_key> <a> <b> <a> <2> : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
 <Multi_key> <a> <b> <w> <2> : "ؤ"  U0624   # ARABIC LETTER WAW WITH HAMZA ABOVE
 <Multi_key> <a> <b> <a> <underscore> <2> : "إ"  U0625   # ARABIC LETTER ALEF WITH HAMZA BELOW
@@ -549,7 +548,7 @@ include "%L"
 <Multi_key> <a> <semicolon> <underscore> <i> <Return> : "ِ" U0650    # ARABIC KASRA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <w> <Return>              : "ّ" U0651    # ARABIC SHADDA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <o> <Return>              : "ْ" U0652    # ARABIC SUKUN (conflicts with ą, use ,a)
-<Multi_key> <a> <semicolon> <tilde> <Return>          : "ٓ" U0653    # ARABIC MADDAH ABOVE (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <asciitilde> <Return>     : "ٓ" U0653    # ARABIC MADDAH ABOVE (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <2> <Return>              : "ٔ" U0654    # ARABIC HAMZA ABOVE (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <underscore> <2> <Return> : "ٕ" U0655    # ARABIC HAMZA BELOW (conflicts with ą, use ,a)
 
@@ -962,10 +961,10 @@ include "%L"
 <Multi_key> <j> <semicolon> <space>      : "　"  U3000   # IDEOGRAPHIC SPACE
 <Multi_key> <j> <semicolon> <comma>      : "、"  U3001   # IDEOGRAPHIC COMMA
 <Multi_key> <j> <semicolon> <period>     : "。"  U3002   # IDEOGRAPHIC FULL STOP
-<Multi_key> <j> <semicolon> <left> <apostrophe>    : "「"  U300C   # LEFT CORNER BRACKET
-<Multi_key> <j> <semicolon> <right> <apostrophe>   : "」"  U300D   # RIGHT CORNER BRACKET
-<Multi_key> <j> <semicolon> <left> <quotedbl>      : "『"  U300E   # LEFT WHITE CORNER BRACKET
-<Multi_key> <j> <semicolon> <right> <quotedbl>     : "』"  U300F   # RIGHT WHITE CORNER BRACKET
+<Multi_key> <j> <semicolon> <less> <apostrophe>    : "「"  U300C   # LEFT CORNER BRACKET
+<Multi_key> <j> <semicolon> <greater> <apostrophe> : "」"  U300D   # RIGHT CORNER BRACKET
+<Multi_key> <j> <semicolon> <less> <quotedbl>      : "『"  U300E   # LEFT WHITE CORNER BRACKET
+<Multi_key> <j> <semicolon> <greater> <quotedbl>   : "』"  U300F   # RIGHT WHITE CORNER BRACKET
 <Multi_key> <j> <semicolon> <bar> <parenleft>      : "【"  U3010   # LEFT BLACK LENTICULAR BRACKET
 <Multi_key> <j> <semicolon> <bar> <parenright>     : "】"  U3011   # RIGHT BLACK LENTICULAR BRACKET
 <Multi_key> <j> <semicolon> <exclam>     : "！"  UFF01   # FULLWIDTH EXCLAMATION MARK

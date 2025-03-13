@@ -12,6 +12,7 @@ KEYSYM_DEF = Path("/usr/include/X11/keysymdef.h")
 
 CHAR_TO_KEYWORD: dict[str, str] = {}
 KEYWORD_TO_CHAR: dict[str, str] = {}
+KEYSYMS: set[str] = set()
 
 with KEYSYM_DEF.open() as f:
     for line in f:
@@ -20,6 +21,8 @@ with KEYSYM_DEF.open() as f:
             char = chr(int(code, base=16))
             CHAR_TO_KEYWORD.setdefault(char, key)
             KEYWORD_TO_CHAR.setdefault(key, char)
+        if m := re.match(r"#define XK_([^ ]+)\s", line):
+            KEYSYMS.add(m.group(1))
 
 
 def get_system_xcompose_name(lang: str | None = None) -> str:
@@ -70,6 +73,11 @@ def from_code_point(code: str) -> str | None:
     if m := re.match(r"(?:U[+]?|0x)([0-9a-fA-F]{2,6})$", code):
         return chr(int(m.group(1), base=16))
     return KEYWORD_TO_CHAR.get(code)
+
+
+def is_keysym(code: str) -> bool:
+    """Whether the given keysym is recognised."""
+    return code in KEYSYMS or from_code_point(code) is not None
 
 
 COMPOSE_KEY = "Multi_key"
@@ -212,6 +220,12 @@ def validate(args: argparse.Namespace) -> None:
         if defn.file == file:
             expected_keysym = " ".join(to_code_point(c) for c in defn.value)
             expected_comment = " ".join(unicodedata.name(c) for c in defn.value)
+
+            if any(not is_keysym(c) for c in defn.keys):
+                print(
+                    f"[{defn.file}#{defn.line_no}] Unrecognised keysyms: "
+                    f"{', '.join({c for c in defn.keys if not is_keysym(c) })}"
+                )
 
             if len(defn.value) == 1:
                 if defn.keysym is None:
