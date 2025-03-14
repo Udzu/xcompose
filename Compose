@@ -1236,8 +1236,8 @@ include "%L"
 
 # Uses emoji-style variation selector where appropriate
 
-<Multi_key> <colon> <parenright>   : "☺️"   U263A UFE0F   # WHITE SMILING FACE EMOJI (overrides ☺ )
-<Multi_key> <colon> <bracketright> : "☺️"   U263A UFE0F   # WHITE SMILING FACE EMOJI
+<Multi_key> <colon> <parenright>   : "😊"  U1F60A        # SMILING FACE WITH SMILING EYES (overrides ☺ )
+<Multi_key> <colon> <bracketright> : "😊"  U1F60A        # SMILING FACE WITH SMILING EYES
 <Multi_key> <colon> <parenleft>    : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI (overrides ☺ )
 <Multi_key> <colon> <bracketleft>  : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI
 <Multi_key> <less> <3>             : "♥️"   U2665 UFE0F   # HEAVY BLACK HEART EMOJI (overrides ♥ )
@@ -1246,18 +1246,22 @@ include "%L"
 <Multi_key> <colon> <P>            : "😛"  U1F61B        # FACE WITH STUCK-OUT TONGUE
 <Multi_key> <semicolon> <P>        : "😜"  U1F61C        # FACE WITH STUCK-OUT TONGUE AND WINKING EYE
 <Multi_key> <colon> <asterisk>     : "😘"  U1F618        # FACE THROWING A KISS
+<Multi_key> <colon> <bar>          : "😐"  U1F610        # NEUTRAL FACE
 <Multi_key> <x> <D>                : "😆"  U1F606        # SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES
 <Multi_key> <colon> <apostrophe> <parenleft> : "😢"  U1F622   # CRYING FACE
 <Multi_key> <semicolon> <parenright>         : "😉"  U1F609   # WINKING FACE
 <Multi_key> <greater> <colon> <parenleft>    : "😡"  U1F621   # POUTING FACE
 <Multi_key> <O> <colon> <parenright>         : "😇"  U1F607   # SMILING FACE WITH HALO
+<Multi_key> <parenleft> <colon>    : "🙃"  U1F643        # UPSIDE-DOWN FACE
 <Multi_key> <o> <7>                : "🫡"  U1FAE1        # SALUTING FACE
 <Multi_key> <u> <w> <u>            : "😌"  U1F60C        # RELIEVED FACE
 
-<Multi_key> <F> <C>                : "🤞"  U1f91E        # HAND WITH INDEX AND MIDDLE FINGERS CROSSED
+<Multi_key> <E> <R>                : "🙄"  U1F644        # FACE WITH ROLLING EYES
+<Multi_key> <F> <C>                : "🤞"  U1F91E        # HAND WITH INDEX AND MIDDLE FINGERS CROSSED
 <Multi_key> <F> <P>                : "🤦"  U1F926        # FACE PALM
 <Multi_key> <F> <Y>                : "🖕"  U1F595        # REVERSED HAND WITH MIDDLE FINGER EXTENDED (FUCK YOU)
 <Multi_key> <I> <L> <Y>            : "🤟"  U1F91F        # I LOVE YOU HAND SIGN
+<Multi_key> <J> <H>                : "🤗"  U1F917        # HUGGING FACE (JAZZ HANDS)
 <Multi_key> <M> <T>                : "🙋"  U1F64B        # HAPPY PERSON RAISING ONE HAND (ME TOO)
 <Multi_key> <O> <K>                : "👌"  U1F44C        # OK HAND SIGN
 <Multi_key> <S> <question>         : "🤷"  U1F937        # SHRUG
@@ -1267,12 +1271,15 @@ include "%L"
 <Multi_key> <W> <D>                : "👏"  U1F44F        # CLAPPING HANDS SIGN (WELL DONE)
 <Multi_key> <W> <exclam>           : "⚠️"   U26A0 UFE0F   # WARNING SIGN EMOJI
 <Multi_key> <c> <o> <o> <l>        : "😎"  U1F60E        # SMILING FACE WITH SUNGLASSES (COOL) (conflicts with ǒ, use vo)
+<Multi_key> <e> <y> <e> <s>        : "👀"  U1F440        # EYES
 <Multi_key> <h> <i>                : "👋"  U1F44B        # WAVING HAND SIGN
 <Multi_key> <h> <m> <m>            : "🤔"  U1F914        # THINKING FACE (HMM)
 <Multi_key> <h> <o> <t>            : "🔥"  U1F525        # FIRE (HOT)
 <Multi_key> <l> <o> <l>            : "😂"  U1F602        # FACE WITH TEARS OF JOY (LOL)
 <Multi_key> <r> <o> <f> <l>        : "🤣"  U1F923        # ROLLING ON THE FLOOR LAUGHING (ROFL)
 <Multi_key> <s> <t> <o> <p>        : "✋"  U270B         # RAISED HAND
+<Multi_key> <y> <a> <y>            : "🎉"  U1F389        # PARTY POPPER (YAY)
+<Multi_key> <1> <0> <0>            : "💯"  U1F4AF        # HUNDRED POINTS SYMBOL
 
 <Multi_key> <V> <V>                : "✅"  U2705         # WHITE HEAVY CHECK MARK
 <Multi_key> <X> <X>                : "❌"  U274C         # CROSS MARK
