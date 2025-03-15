@@ -375,7 +375,7 @@ include "%L"
 <Multi_key> <equal> <Multi_key> <less> <bar>       : "⊴"  U22B4   # NORMAL SUBGROUP OF OR EQUAL TO
 <Multi_key> <equal> <Multi_key> <greater> <bar>    : "⊵"  U22B5   # CONTAINS AS NORMAL SUBGROUP OR EQUAL TO
 <Multi_key> <parenleft> <plus> <parenright>        : "⊕"  U2295   # CIRCLED PLUS
-<Multi_key> <parenleft> <minus> <parenright>       : "⊖"  U2296   # CIRCLED MINUS (overrides useless {)
+<Multi_key> <parenleft> <minus> <parenright>       : "⊖"  U2296   # CIRCLED MINUS (conflicts with useless {)
 <Multi_key> <parenleft> <asterisk> <parenright>    : "⊗"  U2297   # CIRCLED TIMES
 <Multi_key> <parenleft> <slash> <parenright>       : "⊘"  U2298   # CIRCLED DIVISION SLASH
 
@@ -448,8 +448,6 @@ include "%L"
 #################
 # Logic symbols #
 #################
-
-# Convention: prefixed with &
 
 <Multi_key> <ampersand> <asciitilde>  : "¬"  U00AC   # NOT SIGN
 <Multi_key> <ampersand> <asciicircum> : "∧"  U2227   # LOGICAL AND
@@ -961,6 +959,7 @@ include "%L"
 <Multi_key> <j> <semicolon> <space>      : "　"  U3000   # IDEOGRAPHIC SPACE
 <Multi_key> <j> <semicolon> <comma>      : "、"  U3001   # IDEOGRAPHIC COMMA
 <Multi_key> <j> <semicolon> <period>     : "。"  U3002   # IDEOGRAPHIC FULL STOP
+<Multi_key> <j> <semicolon> <apostrophe> <apostrophe> : "〃"  U3003   # DITTO MARK
 <Multi_key> <j> <semicolon> <less> <apostrophe>    : "「"  U300C   # LEFT CORNER BRACKET
 <Multi_key> <j> <semicolon> <greater> <apostrophe> : "」"  U300D   # RIGHT CORNER BRACKET
 <Multi_key> <j> <semicolon> <less> <quotedbl>      : "『"  U300E   # LEFT WHITE CORNER BRACKET
@@ -1284,6 +1283,8 @@ include "%L"
 <Multi_key> <V> <V>                : "✅"  U2705         # WHITE HEAVY CHECK MARK
 <Multi_key> <X> <X>                : "❌"  U274C         # CROSS MARK
 <Multi_key> <asterisk> <asterisk>  : "✨"  U2728         # SPARKLES
+<Multi_key> <asterisk> <0>         : "☆"   U2606         # WHITE STAR (RATING) (conflicts with °, use oo)
+<Multi_key> <asterisk> <1>         : "★"   U2605         # BLACK STAR (RATING)
 
 <Multi_key> <f> <asciicircum>      : "👆"  U1F446        # WHITE UP POINTING BACKHAND INDEX
 <Multi_key> <f> <v>                : "👇"  U1F447        # WHITE DOWN POINTING BACKHAND INDEX
@@ -1340,6 +1341,9 @@ include "%L"
 <Multi_key> <at> <Y> : "🇾"  U1F1FE  # REGIONAL INDICATOR SYMBOL LETTER Y
 <Multi_key> <at> <Z> : "🇿"  U1F1FF  # REGIONAL INDICATOR SYMBOL LETTER Z
 
+<Multi_key> <at> <g> <b> <e> <n> <g> : "🏴󠁧󠁢󠁥󠁮󠁧󠁿" U1F3F4 UE0067 UE0062 UE0065 UE006E UE0067 UE007F  # ENGLAND FLAG
+<Multi_key> <at> <g> <b> <s> <c> <t> : "🏴󠁧󠁢󠁳󠁣󠁴󠁿" U1F3F4 UE0067 UE0062 UE0073 UE0063 UE0074 UE007F  # SCOTLAND FLAG
+<Multi_key> <at> <g> <b> <w> <l> <s> : "🏴󠁧󠁢󠁷󠁬󠁳󠁿" U1F3F4 UE0067 UE0062 UE0077 UE006C UE0073 UE007F  # WALES FLAG
 <Multi_key> <at> <l> <g> <b> <t> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG
 <Multi_key> <at> <p> <r> <i> <d> <e> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG
 <Multi_key> <at> <t> <r> <a> <n> <s> : "🏳️‍⚧️" U1F3F3 UFE0F U200D U26A7 UFE0F    # TRANS FLAG
@@ -1433,11 +1437,96 @@ include "%L"
 <Multi_key> <v> <asciicircum> <quotedbl>  : "„" U201E    # DOUBLE LOW-9 QUOTATION MARK
 <Multi_key> <v> <asciicircum> <ampersand> : "⅋" U214B    # TURNED AMPERSAND
 
+######################################################
+# Character lookalikes for (ab)use in variable names #
+######################################################
+
+<Multi_key> <dollar> <exclam>      : "ǃ" U01C3    # LATIN LETTER RETROFLEX CLICK
+<Multi_key> <dollar> <question>    : "ɂ̣" U0242 U0323    # LATIN SMALL LETTER GLOTTAL STOP COMBINING DOT BELOW
+<Multi_key> <dollar> <quotedbl>    : "ˮ" U02EE    # MODIFIER LETTER DOUBLE APOSTROPHE
+<Multi_key> <dollar> <asciicircum> : "ˆ" U02C6    # MODIFIER LETTER CIRCUMFLEX ACCENT
+<Multi_key> <dollar> <period>      : "ꓸ" UA4F8    # LISU LETTER TONE MYA TI
+<Multi_key> <dollar> <comma>       : "ꓹ" UA4F9    # LISU LETTER TONE NA PO
+<Multi_key> <dollar> <semicolon>   : "ꓼ" UA4FC    # LISU LETTER TONE MYA NA
+<Multi_key> <dollar> <colon>       : "ꓽ" UA4FD    # LISU LETTER TONE MYA JEU
+<Multi_key> <dollar> <apostrophe>  : "ꞌ" UA78C    # LATIN SMALL LETTER SALTILLO
+<Multi_key> <dollar> <plus>        : "𐊛" U1029B   # LYCIAN LETTER H
+<Multi_key> <dollar> <asterisk>    : "𐌟" U1031F    # OLD ITALIC LETTER ES
+<Multi_key> <dollar> <slash>       : "Ⳇ" U2CC6    # COPTIC CAPITAL LETTER OLD COPTIC ESH
+<Multi_key> <dollar> <less>        : "ᐸ" U1438    # CANADIAN SYLLABICS PA
+<Multi_key> <dollar> <greater>     : "𖼿" U16F3F   # MIAO LETTER ARCHAIC ZZA
+<Multi_key> <dollar> <space>       : "ㅤ" U3164   # HANGUL FILLER
+
+<Multi_key> <dollar> <0> : "𐐄" U10404   # DESERET CAPITAL LETTER LONG O
+<Multi_key> <dollar> <1> : "ו" U05D5    # HEBREW LETTER VAV
+<Multi_key> <dollar> <2> : "ᒿ" U14BF    # CANADIAN SYLLABICS SAYISI M
+<Multi_key> <dollar> <3> : "З" U0417    # CYRILLIC CAPITAL LETTER ZE
+<Multi_key> <dollar> <4> : "Ꮞ" U13CE    # CHEROKEE LETTER SE
+<Multi_key> <dollar> <5> : "𑢻" U118BB   # WARANG CITI CAPITAL LETTER HORR
+<Multi_key> <dollar> <6> : "Ꮾ" U13EE    # CHEROKEE LETTER WV
+<Multi_key> <dollar> <7> : "𐓒" U104D2   # OSAGE CAPITAL LETTER ZA
+<Multi_key> <dollar> <8> : "𐌚" U1031A   # OLD ITALIC LETTER EF
+<Multi_key> <dollar> <9> : "Ꝯ" UA76E    # LATIN CAPITAL LETTER CON
+
+<Multi_key> <dollar> <a> : "а" U0430    # CYRILLIC SMALL LETTER A
+<Multi_key> <dollar> <b> : "ᖯ" U15AF    # CANADIAN SYLLABICS AIVILIK B
+<Multi_key> <dollar> <c> : "с" U0441    # CYRILLIC SMALL LETTER ES
+<Multi_key> <dollar> <d> : "ԁ" U0501    # CYRILLIC SMALL LETTER KOMI DE
+<Multi_key> <dollar> <e> : "е" U0435    # CYRILLIC SMALL LETTER IE
+<Multi_key> <dollar> <f> : "ꬵ" UAB35    # LATIN SMALL LETTER LENIS F
+<Multi_key> <dollar> <g> : "ց" U0581    # ARMENIAN SMALL LETTER CO
+<Multi_key> <dollar> <h> : "һ" U04BB    # CYRILLIC SMALL LETTER SHHA
+<Multi_key> <dollar> <i> : "і" U0456    # CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <dollar> <j> : "ј" U0458    # CYRILLIC SMALL LETTER JE
+# k ???
+<Multi_key> <dollar> <l> : "Ɩ" U0196    # LATIN CAPITAL LETTER IOTA
+<Multi_key> <dollar> <m> : "𑜀" U11700   # AHOM LETTER KA
+<Multi_key> <dollar> <n> : "ո" U0578    # ARMENIAN SMALL LETTER VO
+<Multi_key> <dollar> <o> : "о" U043E    # CYRILLIC SMALL LETTER O
+<Multi_key> <dollar> <p> : "р" U0440    # CYRILLIC SMALL LETTER ER
+<Multi_key> <dollar> <q> : "ԛ" U051B    # CYRILLIC SMALL LETTER QA
+<Multi_key> <dollar> <r> : "г" U0433    # CYRILLIC SMALL LETTER GHE
+<Multi_key> <dollar> <s> : "ѕ" U0455    # CYRILLIC SMALL LETTER DZE
+# t ???
+<Multi_key> <dollar> <u> : "ս" U057D    # ARMENIAN SMALL LETTER SEH
+<Multi_key> <dollar> <v> : "ᴠ" U1D20    # LATIN LETTER SMALL CAPITAL V
+<Multi_key> <dollar> <w> : "ԝ" U051D    # CYRILLIC SMALL LETTER WE
+<Multi_key> <dollar> <x> : "х" U0445    # CYRILLIC SMALL LETTER HA
+<Multi_key> <dollar> <y> : "у" U0443    # CYRILLIC SMALL LETTER U
+<Multi_key> <dollar> <z> : "ᴢ" U1D22    # LATIN LETTER SMALL CAPITAL Z
+
+<Multi_key> <dollar> <A> : "А" U0410    # CYRILLIC CAPITAL LETTER A
+<Multi_key> <dollar> <B> : "В" U0412    # CYRILLIC CAPITAL LETTER VE
+<Multi_key> <dollar> <C> : "С" U0421    # CYRILLIC CAPITAL LETTER ES
+<Multi_key> <dollar> <D> : "ꓓ" UA4D3    # LISU LETTER DA
+<Multi_key> <dollar> <E> : "Е" U0415    # CYRILLIC CAPITAL LETTER IE
+<Multi_key> <dollar> <F> : "𐊇" U10287   # LYCIAN LETTER W
+<Multi_key> <dollar> <G> : "ꓖ" UA4D6    # LISU LETTER GA
+<Multi_key> <dollar> <H> : "Н" U041D    # CYRILLIC CAPITAL LETTER EN
+<Multi_key> <dollar> <I> : "Ι" U0399    # GREEK CAPITAL LETTER IOTA
+<Multi_key> <dollar> <J> : "Ј" U0408    # CYRILLIC CAPITAL LETTER JE
+<Multi_key> <dollar> <K> : "К" U041A    # CYRILLIC CAPITAL LETTER KA
+<Multi_key> <dollar> <L> : "𑢣" U118A3   # WARANG CITI CAPITAL LETTER YU
+<Multi_key> <dollar> <M> : "М" U041C    # CYRILLIC CAPITAL LETTER EM
+<Multi_key> <dollar> <N> : "Ν" U039D    # GREEK CAPITAL LETTER NU
+<Multi_key> <dollar> <O> : "О" U041E    # CYRILLIC CAPITAL LETTER O
+<Multi_key> <dollar> <P> : "Р" U0420    # CYRILLIC CAPITAL LETTER ER
+<Multi_key> <dollar> <Q> : "Ԛ" U051A    # CYRILLIC CAPITAL LETTER QA
+<Multi_key> <dollar> <R> : "𖼵" U16F35   # MIAO LETTER ZHA
+<Multi_key> <dollar> <S> : "Ѕ" U0405    # CYRILLIC CAPITAL LETTER DZE
+<Multi_key> <dollar> <T> : "Т" U0422    # CYRILLIC CAPITAL LETTER TE
+<Multi_key> <dollar> <U> : "Ս" U054D    # ARMENIAN CAPITAL LETTER SEH
+<Multi_key> <dollar> <V> : "ꛟ" UA6DF    # BAMUM LETTER KO
+<Multi_key> <dollar> <W> : "Ԝ" U051C    # CYRILLIC CAPITAL LETTER WE
+<Multi_key> <dollar> <X> : "Х" U0425    # CYRILLIC CAPITAL LETTER HA
+<Multi_key> <dollar> <Y> : "Υ" U03A5    # GREEK CAPITAL LETTER UPSILON
+<Multi_key> <dollar> <Z> : "Ζ" U0396    # GREEK CAPITAL LETTER ZETA
+
 ################################
 # CP437 Box drawing characters #
 ################################
 
-# Convention: | + horizontal (l/r/h/ ) + vertical (u/d/v/ ), with capitals for double lines
+# Convention: | + horizontal line (l/r/h/ ) + vertical line (u/d/v/ ), with capitals for double lines
 
 <Multi_key> <bar> <space> <v> : "│" U2502  # BOX DRAWINGS LIGHT VERTICAL
 <Multi_key> <bar> <l> <v>     : "┤" U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
