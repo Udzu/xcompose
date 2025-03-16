@@ -46,12 +46,12 @@ include "%L"
 # Brackets #
 ############
 
-<Multi_key> <bar> <bar>                   : "‖"  U2016   # DOUBLE VERTICAL LINE
+<Multi_key> <bar> <bar> <period>          : "‖"  U2016   # DOUBLE VERTICAL LINE
 <Multi_key> <bracketleft> <bracketleft>   : "⟦"  U27E6   # MATHEMATICAL LEFT WHITE SQUARE BRACKET
 <Multi_key> <bracketright> <bracketright> : "⟧"  U27E7   # MATHEMATICAL RIGHT WHITE SQUARE BRACKET
 <Multi_key> <less> <parenleft>            : "⟨"  U27E8   # MATHEMATICAL LEFT ANGLE BRACKET
 <Multi_key> <greater> <parenright>        : "⟩"  U27E9   # MATHEMATICAL RIGHT ANGLE BRACKET
-<Multi_key> <slash> <slash> <slash>       : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
+<Multi_key> <slash> <slash> <period>      : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
 <Multi_key> <parenleft> <parenleft>       : "⸨"  U2E28   # LEFT DOUBLE PARENTHESIS (conflicts with useless [)
 <Multi_key> <parenright> <parenright>     : "⸩"  U2E29   # RIGHT DOUBLE PARENTHESIS (conflicts with useless ])
 <Multi_key> <parenleft> <asciicircum>     : "⌈"  U2308   # LEFT CEILING
@@ -129,8 +129,11 @@ include "%L"
 <Multi_key> <underscore> <Multi_key> <minus> <comma> <Return> : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
 <Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
 
-<Multi_key> <minus> <minus> <Return> : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
-<Multi_key> <slash> <slash> <Return> : "̸"  U0338   # COMBINING LONG SOLIDUS OVERLAY (conflicts with useless \)
+<Multi_key> <minus> <minus> <Return>         : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
+<Multi_key> <minus> <slash> <Return>         : "̸"  U0338   # COMBINING LONG SOLIDUS OVERLAY (overrides APL ⌿)
+<Multi_key> <minus> <bar> <Return>           : "⃒"  U20D2   # COMBINING LONG VERTICAL LINE OVERLAY
+<Multi_key> <minus> <bar> <bar> <Return>     : "⃦"  U20E6   # COMBINING DOUBLE VERTICAL STROKE OVERLAY
+<Multi_key> <minus> <slash> <slash> <Return> : "⃫"  U20EB   # COMBINING LONG DOUBLE SOLIDUS OVERLAY (conflicts with useless \)
 
 ###############################
 # Superscripts and subscripts #
@@ -218,7 +221,7 @@ include "%L"
 <Multi_key> <j> <h>                 : "ʝ"  U029D   # LATIN SMALL LETTER J WITH CROSSED-TAIL
 <Multi_key> <l> <h>                 : "ɬ"  U026C   # LATIN SMALL LETTER L WITH BELT
 <Multi_key> <p> <h>                 : "ɸ"  U0278   # LATIN SMALL LETTER PHI
-<Multi_key> <q> <h>                 : "χ"  U03C7   # GREEK SMALL LETTER CHI
+<Multi_key> <q> <h>                 : "χ"  U03C7   # GREEK SMALL LETTER CHI (alternatively xh)
 <Multi_key> <s> <h>                 : "ʃ"  U0283   # LATIN SMALL LETTER ESH
 <Multi_key> <x> <h>                 : "χ"  U03C7   # GREEK SMALL LETTER CHI
 <Multi_key> <z> <h>                 : "ʒ"  U0292   # LATIN SMALL LETTER EZH
@@ -1442,9 +1445,9 @@ include "%L"
 ###################################################
 
 <Multi_key> <dollar> <exclam>      : "ǃ" U01C3    # LATIN LETTER RETROFLEX CLICK
-<Multi_key> <dollar> <question>    : "ɂ̣" U0242 U0323    # LATIN SMALL LETTER GLOTTAL STOP COMBINING DOT BELOW
 <Multi_key> <dollar> <quotedbl>    : "ˮ" U02EE    # MODIFIER LETTER DOUBLE APOSTROPHE
 <Multi_key> <dollar> <asciicircum> : "ˆ" U02C6    # MODIFIER LETTER CIRCUMFLEX ACCENT
+<Multi_key> <dollar> <dollar>      : "ֆ" U0586    # ARMENIAN SMALL LETTER FEH (S⃒ is better on some platforms but not others)
 <Multi_key> <dollar> <period>      : "ꓸ" UA4F8    # LISU LETTER TONE MYA TI
 <Multi_key> <dollar> <comma>       : "ꓹ" UA4F9    # LISU LETTER TONE NA PO
 <Multi_key> <dollar> <semicolon>   : "ꓼ" UA4FC    # LISU LETTER TONE MYA NA
@@ -1458,6 +1461,7 @@ include "%L"
 <Multi_key> <dollar> <less>        : "ᐸ" U1438    # CANADIAN SYLLABICS PA
 <Multi_key> <dollar> <greater>     : "𖼿" U16F3F   # MIAO LETTER ARCHAIC ZZA
 <Multi_key> <dollar> <space>       : "ㅤ" U3164   # HANGUL FILLER
+<Multi_key> <dollar> <question>    : "ɂ̣" U0242 U0323    # LATIN SMALL LETTER GLOTTAL STOP COMBINING DOT BELOW
 <Multi_key> <dollar> <percent>     : "ºⳆₒ" U00BA U2CC6 U2092    # MASCULINE ORDINAL INDICATOR COPTIC CAPITAL LETTER OLD COPTIC ESH LATIN SUBSCRIPT SMALL LETTER O
 <Multi_key> <dollar> <Multi_key> <period> <minus> : "ꞏ" UA78F   # LATIN LETTER SINOLOGICAL DOT
 
