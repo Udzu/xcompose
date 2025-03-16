@@ -1437,9 +1437,9 @@ include "%L"
 <Multi_key> <v> <asciicircum> <quotedbl>  : "„" U201E    # DOUBLE LOW-9 QUOTATION MARK
 <Multi_key> <v> <asciicircum> <ampersand> : "⅋" U214B    # TURNED AMPERSAND
 
-######################################################
-# Character lookalikes for (ab)use in variable names #
-######################################################
+###################################################
+# Letter lookalikes for (ab)use in variable names #
+###################################################
 
 <Multi_key> <dollar> <exclam>      : "ǃ" U01C3    # LATIN LETTER RETROFLEX CLICK
 <Multi_key> <dollar> <question>    : "ɂ̣" U0242 U0323    # LATIN SMALL LETTER GLOTTAL STOP COMBINING DOT BELOW
@@ -1450,12 +1450,16 @@ include "%L"
 <Multi_key> <dollar> <semicolon>   : "ꓼ" UA4FC    # LISU LETTER TONE MYA NA
 <Multi_key> <dollar> <colon>       : "ꓽ" UA4FD    # LISU LETTER TONE MYA JEU
 <Multi_key> <dollar> <apostrophe>  : "ꞌ" UA78C    # LATIN SMALL LETTER SALTILLO
+<Multi_key> <dollar> <equal>       : "ꘌ" UA60C    # VAI SYLLABLE LENGTHENER
 <Multi_key> <dollar> <plus>        : "𐊛" U1029B   # LYCIAN LETTER H
-<Multi_key> <dollar> <asterisk>    : "𐌟" U1031F    # OLD ITALIC LETTER ES
+<Multi_key> <dollar> <minus>       : "Ⲻ" U2CBA    # COPTIC CAPITAL LETTER DIALECT-P NI
+<Multi_key> <dollar> <asterisk>    : "𐌟" U1031F   # OLD ITALIC LETTER ESS
 <Multi_key> <dollar> <slash>       : "Ⳇ" U2CC6    # COPTIC CAPITAL LETTER OLD COPTIC ESH
 <Multi_key> <dollar> <less>        : "ᐸ" U1438    # CANADIAN SYLLABICS PA
 <Multi_key> <dollar> <greater>     : "𖼿" U16F3F   # MIAO LETTER ARCHAIC ZZA
 <Multi_key> <dollar> <space>       : "ㅤ" U3164   # HANGUL FILLER
+<Multi_key> <dollar> <percent>     : "ºⳆₒ" U00BA U2CC6 U2092    # MASCULINE ORDINAL INDICATOR COPTIC CAPITAL LETTER OLD COPTIC ESH LATIN SUBSCRIPT SMALL LETTER O
+<Multi_key> <dollar> <Multi_key> <period> <minus> : "ꞏ" UA78F   # LATIN LETTER SINOLOGICAL DOT
 
 <Multi_key> <dollar> <0> : "𐐄" U10404   # DESERET CAPITAL LETTER LONG O
 <Multi_key> <dollar> <1> : "ו" U05D5    # HEBREW LETTER VAV
@@ -1478,7 +1482,7 @@ include "%L"
 <Multi_key> <dollar> <h> : "һ" U04BB    # CYRILLIC SMALL LETTER SHHA
 <Multi_key> <dollar> <i> : "і" U0456    # CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
 <Multi_key> <dollar> <j> : "ј" U0458    # CYRILLIC SMALL LETTER JE
-# k ???
+<Multi_key> <dollar> <k> : "κ" U03BA    # GREEK SMALL LETTER KAPPA
 <Multi_key> <dollar> <l> : "Ɩ" U0196    # LATIN CAPITAL LETTER IOTA
 <Multi_key> <dollar> <m> : "𑜀" U11700   # AHOM LETTER KA
 <Multi_key> <dollar> <n> : "ո" U0578    # ARMENIAN SMALL LETTER VO
@@ -1487,7 +1491,7 @@ include "%L"
 <Multi_key> <dollar> <q> : "ԛ" U051B    # CYRILLIC SMALL LETTER QA
 <Multi_key> <dollar> <r> : "г" U0433    # CYRILLIC SMALL LETTER GHE
 <Multi_key> <dollar> <s> : "ѕ" U0455    # CYRILLIC SMALL LETTER DZE
-# t ???
+<Multi_key> <dollar> <t> : "τ" U03C4    # GREEK SMALL LETTER TAU
 <Multi_key> <dollar> <u> : "ս" U057D    # ARMENIAN SMALL LETTER SEH
 <Multi_key> <dollar> <v> : "ᴠ" U1D20    # LATIN LETTER SMALL CAPITAL V
 <Multi_key> <dollar> <w> : "ԝ" U051D    # CYRILLIC SMALL LETTER WE
