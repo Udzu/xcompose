@@ -572,6 +572,111 @@ include "%L"
 <Multi_key> <a> <0> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <0> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
 
+###############################
+# (b) Unified English Braille #
+###############################
+
+<Multi_key> <b> <a> <a> : "⠁" U2801    # BRAILLE PATTERN DOTS-1 (A) (conflicts with ă, use va)
+<Multi_key> <b> <a> <b> : "⠃" U2803    # BRAILLE PATTERN DOTS-12 (B) (conflict)
+<Multi_key> <b> <a> <c> : "⠉" U2809    # BRAILLE PATTERN DOTS-14 (C) (conflict)
+<Multi_key> <b> <a> <d> : "⠙" U2819    # BRAILLE PATTERN DOTS-145 (D) (conflict)
+<Multi_key> <b> <a> <e> : "⠑" U2811    # BRAILLE PATTERN DOTS-15 (E) (conflict)
+<Multi_key> <b> <a> <f> : "⠋" U280B    # BRAILLE PATTERN DOTS-124 (F) (conflict)
+<Multi_key> <b> <a> <g> : "⠛" U281B    # BRAILLE PATTERN DOTS-1245 (G) (conflict)
+<Multi_key> <b> <a> <h> : "⠓" U2813    # BRAILLE PATTERN DOTS-125 (H) (conflict)
+<Multi_key> <b> <a> <i> : "⠊" U280A    # BRAILLE PATTERN DOTS-24 (I) (conflict)
+<Multi_key> <b> <a> <j> : "⠚" U281A    # BRAILLE PATTERN DOTS-245 (J) (conflict)
+<Multi_key> <b> <a> <k> : "⠅" U2805    # BRAILLE PATTERN DOTS-13 (K) (conflict)
+<Multi_key> <b> <a> <l> : "⠇" U2807    # BRAILLE PATTERN DOTS-123 (L) (conflict)
+<Multi_key> <b> <a> <m> : "⠍" U280D    # BRAILLE PATTERN DOTS-134 (M) (conflict)
+<Multi_key> <b> <a> <n> : "⠝" U281D    # BRAILLE PATTERN DOTS-1345 (N) (conflict)
+<Multi_key> <b> <a> <o> : "⠕" U2815    # BRAILLE PATTERN DOTS-135 (O) (conflict)
+<Multi_key> <b> <a> <p> : "⠏" U280F    # BRAILLE PATTERN DOTS-1234 (P) (conflict)
+<Multi_key> <b> <a> <q> : "⠟" U281F    # BRAILLE PATTERN DOTS-12345 (Q) (conflict)
+<Multi_key> <b> <a> <r> : "⠗" U2817    # BRAILLE PATTERN DOTS-1235 (R) (conflict)
+<Multi_key> <b> <a> <s> : "⠎" U280E    # BRAILLE PATTERN DOTS-234 (S) (conflict)
+<Multi_key> <b> <a> <t> : "⠞" U281E    # BRAILLE PATTERN DOTS-2345 (T) (conflict)
+<Multi_key> <b> <a> <u> : "⠥" U2825    # BRAILLE PATTERN DOTS-136 (U) (conflict)
+<Multi_key> <b> <a> <v> : "⠧" U2827    # BRAILLE PATTERN DOTS-1236 (V) (conflict)
+<Multi_key> <b> <a> <w> : "⠺" U283A    # BRAILLE PATTERN DOTS-2456 (W) (conflict)
+<Multi_key> <b> <a> <x> : "⠭" U282D    # BRAILLE PATTERN DOTS-1346 (X) (conflict)
+<Multi_key> <b> <a> <y> : "⠽" U283D    # BRAILLE PATTERN DOTS-13456 (Y) (conflict)
+<Multi_key> <b> <a> <z> : "⠵" U2835    # BRAILLE PATTERN DOTS-1356 (Z) (conflict)
+<Multi_key> <b> <a> <at> : "⠈" U2808   # BRAILLE PATTERN DOTS-4 (ACCENT MARK) (conflict)
+
+<Multi_key> <b> <b> <a> <r>          : "⠜" U281C   # BRAILLE PATTERN DOTS-345 (AR)
+<Multi_key> <b> <b> <b> <b>          : "⠆" U2806   # BRAILLE PATTERN DOTS-23 (-BB-)
+<Multi_key> <b> <b> <c> <c>          : "⠒" U2812   # BRAILLE PATTERN DOTS-25 (-CC-)
+<Multi_key> <b> <b> <c> <h>          : "⠡" U2821   # BRAILLE PATTERN DOTS-16 (CH)
+<Multi_key> <b> <b> <e> <a>          : "⠂" U2802   # BRAILLE PATTERN DOTS-2 (-EA-)
+<Multi_key> <b> <b> <e> <d>          : "⠫" U282B   # BRAILLE PATTERN DOTS-1246 (ED)
+<Multi_key> <b> <b> <e> <n>          : "⠢" U2822   # BRAILLE PATTERN DOTS-26 (EN)
+<Multi_key> <b> <b> <e> <r>          : "⠻" U283B   # BRAILLE PATTERN DOTS-12456 (ER)
+<Multi_key> <b> <b> <f> <f>          : "⠖" U2816   # BRAILLE PATTERN DOTS-235 (-FF-)
+<Multi_key> <b> <b> <g> <g>          : "⠶" U2836   # BRAILLE PATTERN DOTS-2356 (-GG-)
+<Multi_key> <b> <b> <g> <h>          : "⠣" U2823   # BRAILLE PATTERN DOTS-126 (GH)
+<Multi_key> <b> <b> <i> <n> <Return> : "⠔" U2814   # BRAILLE PATTERN DOTS-35 (IN)
+<Multi_key> <b> <b> <i> <n> <g>      : "⠬" U282C   # BRAILLE PATTERN DOTS-346 (-ING)
+<Multi_key> <b> <b> <o> <u>          : "⠳" U2833   # BRAILLE PATTERN DOTS-1256 (OU)
+<Multi_key> <b> <b> <o> <w>          : "⠪" U282A   # BRAILLE PATTERN DOTS-246 (OW)
+<Multi_key> <b> <b> <s> <h>          : "⠩" U2829   # BRAILLE PATTERN DOTS-146 (SH)
+<Multi_key> <b> <b> <s> <t>          : "⠆" U2806   # BRAILLE PATTERN DOTS-23 (ST)
+<Multi_key> <b> <b> <t> <h> <Return> : "⠹" U2839   # BRAILLE PATTERN DOTS-1456 (TH)
+<Multi_key> <b> <b> <w> <h>          : "⠱" U2831   # BRAILLE PATTERN DOTS-156 (WH)
+<Multi_key> <b> <b> <a> <n> <d>      : "⠯" U282F   # BRAILLE PATTERN DOTS-12346 (AND)
+<Multi_key> <b> <b> <f> <o> <r>      : "⠿" U283F   # BRAILLE PATTERN DOTS-123456 (FOR)
+<Multi_key> <b> <b> <o> <f>          : "⠷" U2837   # BRAILLE PATTERN DOTS-12356 (OF)
+<Multi_key> <b> <b> <t> <h> <e>      : "⠮" U282E   # BRAILLE PATTERN DOTS-2346 (THE)
+<Multi_key> <b> <b> <w> <i> <t> <h>  : "⠾" U283E   # BRAILLE PATTERN DOTS-23456 (WITH)
+
+<Multi_key> <b> <0> <numbersign> : "⠼" U283C    # BRAILLE PATTERN DOTS-3456 (NUMBER SIGN)
+<Multi_key> <b> <0> <1>          : "⠁" U2801    # BRAILLE PATTERN DOTS-1 (1)
+<Multi_key> <b> <0> <2>          : "⠃" U2803    # BRAILLE PATTERN DOTS-12 (2)
+<Multi_key> <b> <0> <3>          : "⠉" U2809    # BRAILLE PATTERN DOTS-14 (3)
+<Multi_key> <b> <0> <4>          : "⠙" U2819    # BRAILLE PATTERN DOTS-145 (4)
+<Multi_key> <b> <0> <5>          : "⠑" U2811    # BRAILLE PATTERN DOTS-15 (5)
+<Multi_key> <b> <0> <6>          : "⠋" U280B    # BRAILLE PATTERN DOTS-124 (6)
+<Multi_key> <b> <0> <7>          : "⠛" U281B    # BRAILLE PATTERN DOTS-1245 (7)
+<Multi_key> <b> <0> <8>          : "⠓" U2813    # BRAILLE PATTERN DOTS-125 (8)
+<Multi_key> <b> <0> <9>          : "⠊" U280A    # BRAILLE PATTERN DOTS-24 (9)
+<Multi_key> <b> <0> <0>          : "⠚" U281A    # BRAILLE PATTERN DOTS-245 (0)
+<Multi_key> <b> <0> <period>     : "⠨" U2828    # BRAILLE PATTERN DOTS-46 (DECIMAL POINT)
+
+<Multi_key> <b> <semicolon> <space>              : "⠀" U2800    # BRAILLE PATTERN BLANK (SPACE)
+<Multi_key> <b> <semicolon> <comma>              : "⠂" U2802    # BRAILLE PATTERN DOTS-2 (,)
+<Multi_key> <b> <semicolon> <semicolon>          : "⠆" U2806    # BRAILLE PATTERN DOTS-23 (;)
+<Multi_key> <b> <semicolon> <colon>              : "⠒" U2812    # BRAILLE PATTERN DOTS-25 (:)
+<Multi_key> <b> <semicolon> <period>             : "⠲" U2832    # BRAILLE PATTERN DOTS-256 (.)
+<Multi_key> <b> <semicolon> <question>           : "⠦" U2826    # BRAILLE PATTERN DOTS-236 (?)
+<Multi_key> <b> <semicolon> <exclam>             : "⠖" U2816    # BRAILLE PATTERN DOTS-235 (!)
+<Multi_key> <b> <semicolon> <apostrophe>         : "⠄" U2804    # BRAILLE PATTERN DOTS-3 (')
+<Multi_key> <b> <semicolon> <minus>              : "⠤" U2824    # BRAILLE PATTERN DOTS-36 (-)
+<Multi_key> <b> <semicolon> <less> <quotedbl>    : "⠦" U2826    # BRAILLE PATTERN DOTS-236 (“)
+<Multi_key> <b> <semicolon> <greater> <quotedbl> : "⠴" U2834    # BRAILLE PATTERN DOTS-356 (”)
+
+<Multi_key> <b> <semicolon> <at>                   : "⠈⠁" U2808 U2801    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-1 (@)
+<Multi_key> <b> <semicolon> <ampersand>            : "⠈⠯" U2808 U282F    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-12346 (&)
+<Multi_key> <b> <semicolon> <dollar>               : "⠈⠎" U2808 U280E    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-234 ($)
+<Multi_key> <b> <semicolon> <asterisk>             : "⠐⠔" U2810 U2814    # BRAILLE PATTERN DOTS-5 BRAILLE PATTERN DOTS-35 (*)
+<Multi_key> <b> <semicolon> <percent>              : "⠨⠴" U2828 U2834    # BRAILLE PATTERN DOTS-46 BRAILLE PATTERN DOTS-356 (%)
+<Multi_key> <b> <semicolon> <numbersign>           : "⠸⠹" U2838 U2839    # BRAILLE PATTERN DOTS-456 BRAILLE PATTERN DOTS-1456 (#)
+<Multi_key> <b> <semicolon> <less> <apostrophe>    : "⠠⠦" U2820 U2826    # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-236 (‘)
+<Multi_key> <b> <semicolon> <greater> <apostrophe> : "⠠⠴" U2820 U2834    # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-356 (’)
+<Multi_key> <b> <semicolon> <parenleft>            : "⠐⠣" U2810 U2823    # BRAILLE PATTERN DOTS-5 BRAILLE PATTERN DOTS-126 (()
+<Multi_key> <b> <semicolon> <parenright>           : "⠐⠜" U2810 U281C    # BRAILLE PATTERN DOTS-5 BRAILLE PATTERN DOTS-345 ())
+<Multi_key> <b> <semicolon> <bracketleft>          : "⠨⠣" U2828 U2823    # BRAILLE PATTERN DOTS-46 BRAILLE PATTERN DOTS-126 ([)
+<Multi_key> <b> <semicolon> <bracketright>         : "⠨⠜" U2828 U281C    # BRAILLE PATTERN DOTS-46 BRAILLE PATTERN DOTS-345 (])
+<Multi_key> <b> <semicolon> <braceleft>            : "⠸⠣" U2838 U2823    # BRAILLE PATTERN DOTS-456 BRAILLE PATTERN DOTS-126 ({)
+<Multi_key> <b> <semicolon> <braceright>           : "⠸⠜" U2838 U281C    # BRAILLE PATTERN DOTS-456 BRAILLE PATTERN DOTS-345 (})
+
+# (f = formatting marks)
+
+<Multi_key> <b> <f> <c> : "⠠" U2820    # BRAILLE PATTERN DOTS-6 (CAPITAL SIGN)
+<Multi_key> <b> <f> <e> : "⠨" U2828    # BRAILLE PATTERN DOTS-46 (EMPHASIS SIGN)
+<Multi_key> <b> <f> <n> : "⠼" U283C    # BRAILLE PATTERN DOTS-3456 (NUMBER SIGN) (alternatively, b0#)
+<Multi_key> <b> <f> <l> : "⠰" U2830    # BRAILLE PATTERN DOTS-56 (LETTER SIGN)
+<Multi_key> <b> <f> <t> : "⠠⠄" U2820 U2804   # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-3 (TERMINATION SIGN)
+
 #############
 # (g) Greek #
 #############
@@ -972,7 +1077,7 @@ include "%L"
 <Multi_key> <j> <semicolon> <bar> <parenleft>      : "【"  U3010   # LEFT BLACK LENTICULAR BRACKET
 <Multi_key> <j> <semicolon> <bar> <parenright>     : "】"  U3011   # RIGHT BLACK LENTICULAR BRACKET
 
-# f = fullwidth forms
+# (f = fullwidth forms)
 
 <Multi_key> <j> <f> <exclam>       : "！" UFF01    # FULLWIDTH EXCLAMATION MARK
 <Multi_key> <j> <f> <quotedbl>     : "＂" UFF02    # FULLWIDTH QUOTATION MARK
@@ -1278,7 +1383,6 @@ include "%L"
 <Multi_key> <m> <0> <8> : "---··"  # MORSE CODE 8
 <Multi_key> <m> <0> <9> : "----·"  # MORSE CODE 9
 
-<Multi_key> <m> <semicolon> <ampersand>  : "·-···"   # MORSE CODE &
 <Multi_key> <m> <semicolon> <apostrophe> : "·----·"  # MORSE CODE '
 <Multi_key> <m> <semicolon> <at>         : "·--·-·"  # MORSE CODE @
 <Multi_key> <m> <semicolon> <parenleft>  : "-·--·"   # MORSE CODE (
@@ -1286,16 +1390,17 @@ include "%L"
 <Multi_key> <m> <semicolon> <colon>      : "---···"  # MORSE CODE :
 <Multi_key> <m> <semicolon> <comma>      : "--··--"  # MORSE CODE ,
 <Multi_key> <m> <semicolon> <equal>      : "-···-"   # MORSE CODE =
-<Multi_key> <m> <semicolon> <exclam>     : "-·-·--"  # MORSE CODE !
 <Multi_key> <m> <semicolon> <period>     : "·-·-·-"  # MORSE CODE .
 <Multi_key> <m> <semicolon> <minus>      : "-····-"  # MORSE CODE -
 <Multi_key> <m> <semicolon> <plus>       : "·-·-·"   # MORSE CODE +
 <Multi_key> <m> <semicolon> <quotedbl>   : "·-··-·"  # MORSE CODE "
 <Multi_key> <m> <semicolon> <question>   : "··--··"  # MORSE CODE ?
 <Multi_key> <m> <semicolon> <slash>      : "-··-·"   # MORSE CODE /
-<Multi_key> <m> <semicolon> <semicolon>  : "-·-·-·"  # MORSE CODE ;
-<Multi_key> <m> <semicolon> <underscore> : "··--·-"  # MORSE CODE _
-<Multi_key> <m> <semicolon> <dollar>     : "···-··-" # MORSE CODE $
+<Multi_key> <m> <semicolon> <ampersand>  : "·-···"   # MORSE CODE & (nonstandard)
+<Multi_key> <m> <semicolon> <exclam>     : "-·-·--"  # MORSE CODE ! (nonstandard)
+<Multi_key> <m> <semicolon> <dollar>     : "···-··-" # MORSE CODE $ (nonstandard)
+<Multi_key> <m> <semicolon> <semicolon>  : "-·-·-·"  # MORSE CODE ; (nonstandard)
+<Multi_key> <m> <semicolon> <underscore> : "··--·-"  # MORSE CODE _ (nonstandard)
 
 ########################
 # (r) Russian/Cyrillic # 
