@@ -132,8 +132,10 @@ include "%L"
 <Multi_key> <minus> <minus> <Return>         : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
 <Multi_key> <minus> <slash> <Return>         : "̸"  U0338   # COMBINING LONG SOLIDUS OVERLAY (overrides APL ⌿)
 <Multi_key> <minus> <bar> <Return>           : "⃒"  U20D2   # COMBINING LONG VERTICAL LINE OVERLAY
+<Multi_key> <minus> <backslash> <Return>     : "⃥"  U20E5   # COMBINING REVERSE SOLIDUS OVERLAY (overrides APL ⍀)
 <Multi_key> <minus> <bar> <bar> <Return>     : "⃦"  U20E6   # COMBINING DOUBLE VERTICAL STROKE OVERLAY
-<Multi_key> <minus> <slash> <slash> <Return> : "⃫"  U20EB   # COMBINING LONG DOUBLE SOLIDUS OVERLAY (conflicts with useless \)
+<Multi_key> <minus> <less> <minus> <Return>  : "⃪"  U20EA   # COMBINING LEFTWARDS ARROW OVERLAY
+<Multi_key> <minus> <slash> <slash> <Return> : "⃫"  U20EB   # COMBINING LONG DOUBLE SOLIDUS OVERLAY (overrides APL ⌿)
 
 ###############################
 # Superscripts and subscripts #
@@ -969,13 +971,103 @@ include "%L"
 <Multi_key> <j> <semicolon> <greater> <quotedbl>   : "』"  U300F   # RIGHT WHITE CORNER BRACKET
 <Multi_key> <j> <semicolon> <bar> <parenleft>      : "【"  U3010   # LEFT BLACK LENTICULAR BRACKET
 <Multi_key> <j> <semicolon> <bar> <parenright>     : "】"  U3011   # RIGHT BLACK LENTICULAR BRACKET
-<Multi_key> <j> <semicolon> <exclam>     : "！"  UFF01   # FULLWIDTH EXCLAMATION MARK
-<Multi_key> <j> <semicolon> <parenleft>  : "（"  UFF08   # FULLWIDTH LEFT PARENTHESIS
-<Multi_key> <j> <semicolon> <parenright> : "）"  UFF09   # FULLWIDTH RIGHT PARENTHESIS
-<Multi_key> <j> <semicolon> <colon>      : "："  UFF1A   # FULLWIDTH COLON
-<Multi_key> <j> <semicolon> <question>   : "？"  UFF1F   # FULLWIDTH QUESTION MARK
-<Multi_key> <j> <semicolon> <braceleft>  : "｛"  UFF5B   # FULLWIDTH LEFT CURLY BRACKET
-<Multi_key> <j> <semicolon> <braceright> : "｝"  UFF5D   # FULLWIDTH RIGHT CURLY BRACKET
+
+# f = fullwidth forms
+
+<Multi_key> <j> <f> <exclam>       : "！" UFF01    # FULLWIDTH EXCLAMATION MARK
+<Multi_key> <j> <f> <quotedbl>     : "＂" UFF02    # FULLWIDTH QUOTATION MARK
+<Multi_key> <j> <f> <numbersign>   : "＃" UFF03    # FULLWIDTH NUMBER SIGN
+<Multi_key> <j> <f> <dollar>       : "＄" UFF04    # FULLWIDTH DOLLAR SIGN
+<Multi_key> <j> <f> <percent>      : "％" UFF05    # FULLWIDTH PERCENT SIGN
+<Multi_key> <j> <f> <ampersand>    : "＆" UFF06    # FULLWIDTH AMPERSAND
+<Multi_key> <j> <f> <apostrophe>   : "＇" UFF07    # FULLWIDTH APOSTROPHE
+<Multi_key> <j> <f> <parenleft>    : "（" UFF08    # FULLWIDTH LEFT PARENTHESIS
+<Multi_key> <j> <f> <parenright>   : "）" UFF09    # FULLWIDTH RIGHT PARENTHESIS
+<Multi_key> <j> <f> <asterisk>     : "＊" UFF0A    # FULLWIDTH ASTERISK
+<Multi_key> <j> <f> <plus>         : "＋" UFF0B    # FULLWIDTH PLUS SIGN
+<Multi_key> <j> <f> <comma>        : "，" UFF0C    # FULLWIDTH COMMA
+<Multi_key> <j> <f> <minus>        : "－" UFF0D    # FULLWIDTH HYPHEN-MINUS
+<Multi_key> <j> <f> <period>       : "．" UFF0E    # FULLWIDTH FULL STOP
+<Multi_key> <j> <f> <slash>        : "／" UFF0F    # FULLWIDTH SOLIDUS
+<Multi_key> <j> <f> <0>            : "０" UFF10    # FULLWIDTH DIGIT ZERO
+<Multi_key> <j> <f> <1>            : "１" UFF11    # FULLWIDTH DIGIT ONE
+<Multi_key> <j> <f> <2>            : "２" UFF12    # FULLWIDTH DIGIT TWO
+<Multi_key> <j> <f> <3>            : "３" UFF13    # FULLWIDTH DIGIT THREE
+<Multi_key> <j> <f> <4>            : "４" UFF14    # FULLWIDTH DIGIT FOUR
+<Multi_key> <j> <f> <5>            : "５" UFF15    # FULLWIDTH DIGIT FIVE
+<Multi_key> <j> <f> <6>            : "６" UFF16    # FULLWIDTH DIGIT SIX
+<Multi_key> <j> <f> <7>            : "７" UFF17    # FULLWIDTH DIGIT SEVEN
+<Multi_key> <j> <f> <8>            : "８" UFF18    # FULLWIDTH DIGIT EIGHT
+<Multi_key> <j> <f> <9>            : "９" UFF19    # FULLWIDTH DIGIT NINE
+<Multi_key> <j> <f> <colon>        : "：" UFF1A    # FULLWIDTH COLON
+<Multi_key> <j> <f> <semicolon>    : "；" UFF1B    # FULLWIDTH SEMICOLON
+<Multi_key> <j> <f> <less>         : "＜" UFF1C    # FULLWIDTH LESS-THAN SIGN
+<Multi_key> <j> <f> <equal>        : "＝" UFF1D    # FULLWIDTH EQUALS SIGN
+<Multi_key> <j> <f> <greater>      : "＞" UFF1E    # FULLWIDTH GREATER-THAN SIGN
+<Multi_key> <j> <f> <question>     : "？" UFF1F    # FULLWIDTH QUESTION MARK
+<Multi_key> <j> <f> <at>           : "＠" UFF20    # FULLWIDTH COMMERCIAL AT
+<Multi_key> <j> <f> <A>            : "Ａ" UFF21    # FULLWIDTH LATIN CAPITAL LETTER A
+<Multi_key> <j> <f> <B>            : "Ｂ" UFF22    # FULLWIDTH LATIN CAPITAL LETTER B
+<Multi_key> <j> <f> <C>            : "Ｃ" UFF23    # FULLWIDTH LATIN CAPITAL LETTER C
+<Multi_key> <j> <f> <D>            : "Ｄ" UFF24    # FULLWIDTH LATIN CAPITAL LETTER D
+<Multi_key> <j> <f> <E>            : "Ｅ" UFF25    # FULLWIDTH LATIN CAPITAL LETTER E
+<Multi_key> <j> <f> <F>            : "Ｆ" UFF26    # FULLWIDTH LATIN CAPITAL LETTER F
+<Multi_key> <j> <f> <G>            : "Ｇ" UFF27    # FULLWIDTH LATIN CAPITAL LETTER G
+<Multi_key> <j> <f> <H>            : "Ｈ" UFF28    # FULLWIDTH LATIN CAPITAL LETTER H
+<Multi_key> <j> <f> <I>            : "Ｉ" UFF29    # FULLWIDTH LATIN CAPITAL LETTER I
+<Multi_key> <j> <f> <J>            : "Ｊ" UFF2A    # FULLWIDTH LATIN CAPITAL LETTER J
+<Multi_key> <j> <f> <K>            : "Ｋ" UFF2B    # FULLWIDTH LATIN CAPITAL LETTER K
+<Multi_key> <j> <f> <L>            : "Ｌ" UFF2C    # FULLWIDTH LATIN CAPITAL LETTER L
+<Multi_key> <j> <f> <M>            : "Ｍ" UFF2D    # FULLWIDTH LATIN CAPITAL LETTER M
+<Multi_key> <j> <f> <N>            : "Ｎ" UFF2E    # FULLWIDTH LATIN CAPITAL LETTER N
+<Multi_key> <j> <f> <O>            : "Ｏ" UFF2F    # FULLWIDTH LATIN CAPITAL LETTER O
+<Multi_key> <j> <f> <P>            : "Ｐ" UFF30    # FULLWIDTH LATIN CAPITAL LETTER P
+<Multi_key> <j> <f> <Q>            : "Ｑ" UFF31    # FULLWIDTH LATIN CAPITAL LETTER Q
+<Multi_key> <j> <f> <R>            : "Ｒ" UFF32    # FULLWIDTH LATIN CAPITAL LETTER R
+<Multi_key> <j> <f> <S>            : "Ｓ" UFF33    # FULLWIDTH LATIN CAPITAL LETTER S
+<Multi_key> <j> <f> <T>            : "Ｔ" UFF34    # FULLWIDTH LATIN CAPITAL LETTER T
+<Multi_key> <j> <f> <U>            : "Ｕ" UFF35    # FULLWIDTH LATIN CAPITAL LETTER U
+<Multi_key> <j> <f> <V>            : "Ｖ" UFF36    # FULLWIDTH LATIN CAPITAL LETTER V
+<Multi_key> <j> <f> <W>            : "Ｗ" UFF37    # FULLWIDTH LATIN CAPITAL LETTER W
+<Multi_key> <j> <f> <X>            : "Ｘ" UFF38    # FULLWIDTH LATIN CAPITAL LETTER X
+<Multi_key> <j> <f> <Y>            : "Ｙ" UFF39    # FULLWIDTH LATIN CAPITAL LETTER Y
+<Multi_key> <j> <f> <Z>            : "Ｚ" UFF3A    # FULLWIDTH LATIN CAPITAL LETTER Z
+<Multi_key> <j> <f> <bracketleft>  : "［" UFF3B    # FULLWIDTH LEFT SQUARE BRACKET
+<Multi_key> <j> <f> <backslash>    : "＼" UFF3C    # FULLWIDTH REVERSE SOLIDUS
+<Multi_key> <j> <f> <bracketright> : "］" UFF3D    # FULLWIDTH RIGHT SQUARE BRACKET
+<Multi_key> <j> <f> <asciicircum>  : "＾" UFF3E    # FULLWIDTH CIRCUMFLEX ACCENT
+<Multi_key> <j> <f> <underscore>   : "＿" UFF3F    # FULLWIDTH LOW LINE
+<Multi_key> <j> <f> <grave>        : "｀" UFF40    # FULLWIDTH GRAVE ACCENT
+<Multi_key> <j> <f> <a>            : "ａ" UFF41    # FULLWIDTH LATIN SMALL LETTER A
+<Multi_key> <j> <f> <b>            : "ｂ" UFF42    # FULLWIDTH LATIN SMALL LETTER B
+<Multi_key> <j> <f> <c>            : "ｃ" UFF43    # FULLWIDTH LATIN SMALL LETTER C
+<Multi_key> <j> <f> <d>            : "ｄ" UFF44    # FULLWIDTH LATIN SMALL LETTER D
+<Multi_key> <j> <f> <e>            : "ｅ" UFF45    # FULLWIDTH LATIN SMALL LETTER E
+<Multi_key> <j> <f> <f>            : "ｆ" UFF46    # FULLWIDTH LATIN SMALL LETTER F
+<Multi_key> <j> <f> <g>            : "ｇ" UFF47    # FULLWIDTH LATIN SMALL LETTER G
+<Multi_key> <j> <f> <h>            : "ｈ" UFF48    # FULLWIDTH LATIN SMALL LETTER H
+<Multi_key> <j> <f> <i>            : "ｉ" UFF49    # FULLWIDTH LATIN SMALL LETTER I
+<Multi_key> <j> <f> <j>            : "ｊ" UFF4A    # FULLWIDTH LATIN SMALL LETTER J
+<Multi_key> <j> <f> <k>            : "ｋ" UFF4B    # FULLWIDTH LATIN SMALL LETTER K
+<Multi_key> <j> <f> <l>            : "ｌ" UFF4C    # FULLWIDTH LATIN SMALL LETTER L
+<Multi_key> <j> <f> <m>            : "ｍ" UFF4D    # FULLWIDTH LATIN SMALL LETTER M
+<Multi_key> <j> <f> <n>            : "ｎ" UFF4E    # FULLWIDTH LATIN SMALL LETTER N
+<Multi_key> <j> <f> <o>            : "ｏ" UFF4F    # FULLWIDTH LATIN SMALL LETTER O
+<Multi_key> <j> <f> <p>            : "ｐ" UFF50    # FULLWIDTH LATIN SMALL LETTER P
+<Multi_key> <j> <f> <q>            : "ｑ" UFF51    # FULLWIDTH LATIN SMALL LETTER Q
+<Multi_key> <j> <f> <r>            : "ｒ" UFF52    # FULLWIDTH LATIN SMALL LETTER R
+<Multi_key> <j> <f> <s>            : "ｓ" UFF53    # FULLWIDTH LATIN SMALL LETTER S
+<Multi_key> <j> <f> <t>            : "ｔ" UFF54    # FULLWIDTH LATIN SMALL LETTER T
+<Multi_key> <j> <f> <u>            : "ｕ" UFF55    # FULLWIDTH LATIN SMALL LETTER U
+<Multi_key> <j> <f> <v>            : "ｖ" UFF56    # FULLWIDTH LATIN SMALL LETTER V
+<Multi_key> <j> <f> <w>            : "ｗ" UFF57    # FULLWIDTH LATIN SMALL LETTER W
+<Multi_key> <j> <f> <x>            : "ｘ" UFF58    # FULLWIDTH LATIN SMALL LETTER X
+<Multi_key> <j> <f> <y>            : "ｙ" UFF59    # FULLWIDTH LATIN SMALL LETTER Y
+<Multi_key> <j> <f> <z>            : "ｚ" UFF5A    # FULLWIDTH LATIN SMALL LETTER Z
+<Multi_key> <j> <f> <braceleft>    : "｛" UFF5B    # FULLWIDTH LEFT CURLY BRACKET
+<Multi_key> <j> <f> <bar>          : "｜" UFF5C    # FULLWIDTH VERTICAL LINE
+<Multi_key> <j> <f> <braceright>   : "｝" UFF5D    # FULLWIDTH RIGHT CURLY BRACKET
+<Multi_key> <j> <f> <asciitilde>   : "～" UFF5E    # FULLWIDTH TILDE
 
 #####################
 # (k) Korean/Hangul #
@@ -1111,6 +1203,99 @@ include "%L"
 <Multi_key> <k> <d> <e> <u>          : "ㅡ"  U3161   # HANGUL LETTER EU
 <Multi_key> <k> <d> <y> <i>          : "ㅢ"  U3162   # HANGUL LETTER YI
 <Multi_key> <k> <d> <i>              : "ㅣ"  U3163   # HANGUL LETTER I
+
+################################
+# (m) International Morse Code #
+################################
+
+<Multi_key> <m> <a> <a> : "·-"     # MORSE CODE A
+<Multi_key> <m> <a> <b> : "-···"   # MORSE CODE B
+<Multi_key> <m> <a> <c> : "-·-·"   # MORSE CODE C
+<Multi_key> <m> <a> <d> : "-··"    # MORSE CODE D
+<Multi_key> <m> <a> <e> : "·" U00B7  # MORSE CODE E (MIDDLE DOT)
+<Multi_key> <m> <a> <f> : "··-·"   # MORSE CODE F
+<Multi_key> <m> <a> <g> : "--·"    # MORSE CODE G
+<Multi_key> <m> <a> <h> : "····"   # MORSE CODE H
+<Multi_key> <m> <a> <i> : "··"     # MORSE CODE I
+<Multi_key> <m> <a> <j> : "·---"   # MORSE CODE J
+<Multi_key> <m> <a> <k> : "-·-"    # MORSE CODE K
+<Multi_key> <m> <a> <l> : "·-··"   # MORSE CODE L
+<Multi_key> <m> <a> <m> : "--"     # MORSE CODE M
+<Multi_key> <m> <a> <n> : "-·"     # MORSE CODE N
+<Multi_key> <m> <a> <o> : "---"    # MORSE CODE O
+<Multi_key> <m> <a> <p> : "·--·"   # MORSE CODE P
+<Multi_key> <m> <a> <q> : "--·-"   # MORSE CODE Q
+<Multi_key> <m> <a> <r> : "·-·"    # MORSE CODE R
+<Multi_key> <m> <a> <s> : "···"    # MORSE CODE S
+<Multi_key> <m> <a> <t> : "-" U002D  # MORSE CODE T (HYPHEN-MINUS)
+<Multi_key> <m> <a> <u> : "··-"    # MORSE CODE U
+<Multi_key> <m> <a> <v> : "···-"   # MORSE CODE V
+<Multi_key> <m> <a> <w> : "·--"    # MORSE CODE W
+<Multi_key> <m> <a> <x> : "-··-"   # MORSE CODE X
+<Multi_key> <m> <a> <y> : "-·--"   # MORSE CODE Y
+<Multi_key> <m> <a> <z> : "--··"   # MORSE CODE Z
+
+<Multi_key> <m> <b> <grave> <a>       : "·--·-"   # MORSE CODE À
+<Multi_key> <m> <b> <o> <a>           : "·--·-"   # MORSE CODE Å
+<Multi_key> <m> <b> <quotedbl> <a>    : "·-·-"    # MORSE CODE Ä
+<Multi_key> <m> <b> <comma> <a>       : "·-·-"    # MORSE CODE Ą
+<Multi_key> <m> <b> <a> <e>           : "·-·-"    # MORSE CODE Æ
+<Multi_key> <m> <b> <apostrophe> <c>  : "-·-··"   # MORSE CODE Ć
+<Multi_key> <m> <b> <asciicircum> <c> : "-·-··"   # MORSE CODE Ĉ
+<Multi_key> <m> <b> <comma> <c>       : "-·-··"   # MORSE CODE Ç
+<Multi_key> <m> <b> <c> <h>           : "----"    # MORSE CODE CH
+<Multi_key> <m> <b> <asciicircum> <h> : "----"    # MORSE CODE Ĥ
+<Multi_key> <m> <b> <v> <s>           : "----"    # MORSE CODE Š
+<Multi_key> <m> <b> <minus> <d>       : "··-··"   # MORSE CODE Đ (đ)
+<Multi_key> <m> <b> <apostrophe> <e>  : "··-··"   # MORSE CODE É
+<Multi_key> <m> <b> <comma> <e>       : "··-··"   # MORSE CODE Ę
+<Multi_key> <m> <b> <d> <h>           : "··--·"   # MORSE CODE Ð (ð)
+<Multi_key> <m> <b> <grave> <e>       : "·-··-"   # MORSE CODE È
+<Multi_key> <m> <b> <slash> <l>       : "·-··-"   # MORSE CODE Ł
+<Multi_key> <m> <b> <asciicircum> <g> : "--·-·"   # MORSE CODE Ĝ
+<Multi_key> <m> <b> <asciicircum> <j> : "·---·"   # MORSE CODE Ĵ
+<Multi_key> <m> <b> <apostrophe> <n>  : "--·--"   # MORSE CODE Ń
+<Multi_key> <m> <b> <asciitilde> <n>  : "--·--"   # MORSE CODE Ñ
+<Multi_key> <m> <b> <apostrophe> <o>  : "---·"    # MORSE CODE Ó
+<Multi_key> <m> <b> <quotedbl> <o>    : "---·"    # MORSE CODE Ö
+<Multi_key> <m> <b> <slash> <o>       : "---·"    # MORSE CODE Ø
+<Multi_key> <m> <b> <apostrophe> <s>  : "···-···" # MORSE CODE Ś
+<Multi_key> <m> <b> <asciicircum> <s> : "···-·"   # MORSE CODE Ŝ
+<Multi_key> <m> <b> <t> <h>           : "·--··"   # MORSE CODE Þ
+<Multi_key> <m> <b> <quotedbl> <u>    : "··--"    # MORSE CODE Ü
+<Multi_key> <m> <b> <v> <u>           : "··--"    # MORSE CODE Ǔ
+<Multi_key> <m> <b> <apostrophe> <z>  : "--··-·"  # MORSE CODE Ź
+<Multi_key> <m> <b> <period> <z>      : "--··-"   # MORSE CODE Ż
+
+<Multi_key> <m> <0> <0> : "-----"  # MORSE CODE 0
+<Multi_key> <m> <0> <1> : "·----"  # MORSE CODE 1
+<Multi_key> <m> <0> <2> : "··---"  # MORSE CODE 2
+<Multi_key> <m> <0> <3> : "···--"  # MORSE CODE 3
+<Multi_key> <m> <0> <4> : "····-"  # MORSE CODE 4
+<Multi_key> <m> <0> <5> : "·····"  # MORSE CODE 5
+<Multi_key> <m> <0> <6> : "-····"  # MORSE CODE 6
+<Multi_key> <m> <0> <7> : "--···"  # MORSE CODE 7
+<Multi_key> <m> <0> <8> : "---··"  # MORSE CODE 8
+<Multi_key> <m> <0> <9> : "----·"  # MORSE CODE 9
+
+<Multi_key> <m> <semicolon> <ampersand>  : "·-···"   # MORSE CODE &
+<Multi_key> <m> <semicolon> <apostrophe> : "·----·"  # MORSE CODE '
+<Multi_key> <m> <semicolon> <at>         : "·--·-·"  # MORSE CODE @
+<Multi_key> <m> <semicolon> <parenleft>  : "-·--·"   # MORSE CODE (
+<Multi_key> <m> <semicolon> <parenright> : "-·--·-"  # MORSE CODE )
+<Multi_key> <m> <semicolon> <colon>      : "---···"  # MORSE CODE :
+<Multi_key> <m> <semicolon> <comma>      : "--··--"  # MORSE CODE ,
+<Multi_key> <m> <semicolon> <equal>      : "-···-"   # MORSE CODE =
+<Multi_key> <m> <semicolon> <exclam>     : "-·-·--"  # MORSE CODE !
+<Multi_key> <m> <semicolon> <period>     : "·-·-·-"  # MORSE CODE .
+<Multi_key> <m> <semicolon> <minus>      : "-····-"  # MORSE CODE -
+<Multi_key> <m> <semicolon> <plus>       : "·-·-·"   # MORSE CODE +
+<Multi_key> <m> <semicolon> <quotedbl>   : "·-··-·"  # MORSE CODE "
+<Multi_key> <m> <semicolon> <question>   : "··--··"  # MORSE CODE ?
+<Multi_key> <m> <semicolon> <slash>      : "-··-·"   # MORSE CODE /
+<Multi_key> <m> <semicolon> <semicolon>  : "-·-·-·"  # MORSE CODE ;
+<Multi_key> <m> <semicolon> <underscore> : "··--·-"  # MORSE CODE _
+<Multi_key> <m> <semicolon> <dollar>     : "···-··-" # MORSE CODE $
 
 ########################
 # (r) Russian/Cyrillic # 
@@ -1444,6 +1629,7 @@ include "%L"
 # Letter lookalikes for (ab)use in variable names #
 ###################################################
 
+<Multi_key> <dollar> <space>       : "ㅤ" U3164   # HANGUL FILLER
 <Multi_key> <dollar> <exclam>      : "ǃ" U01C3    # LATIN LETTER RETROFLEX CLICK
 <Multi_key> <dollar> <quotedbl>    : "ˮ" U02EE    # MODIFIER LETTER DOUBLE APOSTROPHE
 <Multi_key> <dollar> <asciicircum> : "ˆ" U02C6    # MODIFIER LETTER CIRCUMFLEX ACCENT
@@ -1460,7 +1646,6 @@ include "%L"
 <Multi_key> <dollar> <slash>       : "Ⳇ" U2CC6    # COPTIC CAPITAL LETTER OLD COPTIC ESH
 <Multi_key> <dollar> <less>        : "ᐸ" U1438    # CANADIAN SYLLABICS PA
 <Multi_key> <dollar> <greater>     : "𖼿" U16F3F   # MIAO LETTER ARCHAIC ZZA
-<Multi_key> <dollar> <space>       : "ㅤ" U3164   # HANGUL FILLER
 <Multi_key> <dollar> <question>    : "ɂ̣" U0242 U0323    # LATIN SMALL LETTER GLOTTAL STOP COMBINING DOT BELOW
 <Multi_key> <dollar> <percent>     : "ºⳆₒ" U00BA U2CC6 U2092    # MASCULINE ORDINAL INDICATOR COPTIC CAPITAL LETTER OLD COPTIC ESH LATIN SUBSCRIPT SMALL LETTER O
 <Multi_key> <dollar> <Multi_key> <period> <minus> : "ꞏ" UA78F   # LATIN LETTER SINOLOGICAL DOT

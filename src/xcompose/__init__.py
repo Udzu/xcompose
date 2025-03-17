@@ -114,7 +114,7 @@ def get_definitions(
                 yield from get_definitions(include_path, modifier_key=modifier_key)
             elif m := re.match(
                 r"^\s*(?P<events>(?:<[^>]+>\s*)+):"
-                r'\s*"(?P<string>(?:[^"]|\")+)"'
+                r'\s*"(?P<string>(?:\\"|[^"])+)"'
                 r"\s*(?P<keysym>[^#]*[^\s#])?"
                 r"\s*(?:#\s*(?P<comment>.+\S)?)?\s*$",
                 line,
