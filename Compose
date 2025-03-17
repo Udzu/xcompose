@@ -602,7 +602,7 @@ include "%L"
 <Multi_key> <b> <a> <x> : "⠭" U282D    # BRAILLE PATTERN DOTS-1346 (X) (conflict)
 <Multi_key> <b> <a> <y> : "⠽" U283D    # BRAILLE PATTERN DOTS-13456 (Y) (conflict)
 <Multi_key> <b> <a> <z> : "⠵" U2835    # BRAILLE PATTERN DOTS-1356 (Z) (conflict)
-<Multi_key> <b> <a> <at> : "⠈" U2808   # BRAILLE PATTERN DOTS-4 (ACCENT MARK) (conflict)
+<Multi_key> <b> <a> <apostrophe> : "⠈" U2808   # BRAILLE PATTERN DOTS-4 (ACCENT MARK) (conflict)
 
 <Multi_key> <b> <b> <a> <r>          : "⠜" U281C   # BRAILLE PATTERN DOTS-345 (AR)
 <Multi_key> <b> <b> <b> <b>          : "⠆" U2806   # BRAILLE PATTERN DOTS-23 (-BB-)
@@ -671,11 +671,14 @@ include "%L"
 
 # (f = formatting marks)
 
-<Multi_key> <b> <f> <c> : "⠠" U2820    # BRAILLE PATTERN DOTS-6 (CAPITAL SIGN)
-<Multi_key> <b> <f> <e> : "⠨" U2828    # BRAILLE PATTERN DOTS-46 (EMPHASIS SIGN)
-<Multi_key> <b> <f> <n> : "⠼" U283C    # BRAILLE PATTERN DOTS-3456 (NUMBER SIGN) (alternatively, b0#)
-<Multi_key> <b> <f> <l> : "⠰" U2830    # BRAILLE PATTERN DOTS-56 (LETTER SIGN)
-<Multi_key> <b> <f> <t> : "⠠⠄" U2820 U2804   # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-3 (TERMINATION SIGN)
+<Multi_key> <b> <f> <a> <1> : "⠐" U2810   # BRAILLE PATTERN DOTS-5 (ABBREVIATION SIGN 1)
+<Multi_key> <b> <f> <a> <2> : "⠘" U2818   # BRAILLE PATTERN DOTS-45 (ABBREVIATION SIGN 2)
+<Multi_key> <b> <f> <a> <3> : "⠸" U2838   # BRAILLE PATTERN DOTS-456 (ABBREVIATION SIGN 3)
+<Multi_key> <b> <f> <c>     : "⠠" U2820   # BRAILLE PATTERN DOTS-6 (CAPITAL SIGN)
+<Multi_key> <b> <f> <e>     : "⠨" U2828   # BRAILLE PATTERN DOTS-46 (EMPHASIS SIGN)
+<Multi_key> <b> <f> <n>     : "⠼" U283C   # BRAILLE PATTERN DOTS-3456 (NUMBER SIGN) (alternatively, b0#)
+<Multi_key> <b> <f> <l>     : "⠰" U2830   # BRAILLE PATTERN DOTS-56 (LETTER SIGN)
+<Multi_key> <b> <f> <t>     : "⠠⠄" U2820 U2804  # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-3 (TERMINATION SIGN)
 
 #############
 # (g) Greek #
@@ -812,6 +815,36 @@ include "%L"
 <Multi_key> <h> <semicolon> <minus> <minus> : "־"  U05BE   # HEBREW PUNCTUATION MAQAF
 <Multi_key> <h> <semicolon> <apostrophe>    : "׳"  U05F3   # HEBREW PUNCTUATION GERESH
 <Multi_key> <h> <semicolon> <quotedbl>      : "״"  U05F4   # HEBREW PUNCTUATION GERSHAYIM
+
+# (p = Palaeo-Hebrew/Phoenician)
+
+<Multi_key> <h> <p> <apostrophe> : "𐤀"  U10900  # PHOENICIAN LETTER ALF
+<Multi_key> <h> <p> <a>          : "𐤀"  U10900  # PHOENICIAN LETTER ALF
+<Multi_key> <h> <p> <b>          : "𐤁"  U10901  # PHOENICIAN LETTER BET
+<Multi_key> <h> <p> <g>          : "𐤂"  U10902  # PHOENICIAN LETTER GAML
+<Multi_key> <h> <p> <d>          : "𐤃"  U10903  # PHOENICIAN LETTER DELT
+<Multi_key> <h> <p> <h>          : "𐤄"  U10904  # PHOENICIAN LETTER HE
+<Multi_key> <h> <p> <w>          : "𐤅"  U10905  # PHOENICIAN LETTER WAU
+<Multi_key> <h> <p> <v>          : "𐤅"  U10905  # PHOENICIAN LETTER WAU
+<Multi_key> <h> <p> <z>          : "𐤆"  U10906  # PHOENICIAN LETTER ZAI
+<Multi_key> <h> <p> <H>          : "𐤇"  U10907  # PHOENICIAN LETTER HET
+<Multi_key> <h> <p> <T>          : "𐤈"  U10908  # PHOENICIAN LETTER TET
+<Multi_key> <h> <p> <y>          : "𐤉"  U10909  # PHOENICIAN LETTER YOD
+<Multi_key> <h> <p> <i>          : "𐤉"  U10909  # PHOENICIAN LETTER YOD
+<Multi_key> <h> <p> <k>          : "𐤊"  U1090A  # PHOENICIAN LETTER KAF
+<Multi_key> <h> <p> <l>          : "𐤋"  U1090B  # PHOENICIAN LETTER LAMD
+<Multi_key> <h> <p> <m>          : "𐤌"  U1090C  # PHOENICIAN LETTER MEM
+<Multi_key> <h> <p> <n>          : "𐤍"  U1090D  # PHOENICIAN LETTER NUN
+<Multi_key> <h> <p> <s>          : "𐤎"  U1090E  # PHOENICIAN LETTER SEMK
+<Multi_key> <h> <p> <grave>      : "𐤏"  U1090F  # PHOENICIAN LETTER AIN
+<Multi_key> <h> <p> <e>          : "𐤏"  U1090F  # PHOENICIAN LETTER AIN
+<Multi_key> <h> <p> <p>          : "𐤐"  U10910  # PHOENICIAN LETTER PE
+<Multi_key> <h> <p> <Z>          : "𐤑"  U10911  # PHOENICIAN LETTER SADE
+<Multi_key> <h> <p> <q>          : "𐤒"  U10912  # PHOENICIAN LETTER QOF
+<Multi_key> <h> <p> <r>          : "𐤓"  U10913  # PHOENICIAN LETTER ROSH
+<Multi_key> <h> <p> <S>          : "𐤔"  U10914  # PHOENICIAN LETTER SHIN
+<Multi_key> <h> <p> <t>          : "𐤕"  U10915  # PHOENICIAN LETTER TAU
+<Multi_key> <h> <p> <space>      : "𐤟"  U1091F  # PHOENICIAN WORD SEPARATOR
 
 ################
 # (j) Japanese #

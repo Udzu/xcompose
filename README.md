@@ -83,7 +83,7 @@ $ xcompose --sort keys get /
 [/home/Udzu/.XCompose#35] Compose sequence Multi_key + c + slash for 'ć' conflicts with Multi_key + c + slash for '¢'
     to ignore this, include the string 'conflict' or 'override' in the comment
 
->>> xcompose validate --ignore-include  # (no conflicts if we ignore the system file)
+>>> xcompose --ignore-include validate  # (no conflicts if we ignore the system file)
 ```
 
 ## Sample .XCompose file
@@ -94,8 +94,8 @@ This repo currently also hosts my personal .XCompose file, which contains extens
 
 Amongst other characters, the configuration supports:
 
-* Maths: ρ(∂v⃗/∂t + (v⃗·∇)v), ∫πeⁱᶿ dθ, ∃ A.A ⊊ B∖A, etc.
+* Maths: ρ(∂v⃗/∂t + (v⃗·∇)v), ∫πeⁱᶿ dθ, ∃ A.A ⊊ B∖A, ⊨ P ⊃ ◇P, etc.
 * IPA : ⫽ˈɹɛ.dɪt⫽, [aɪ̯ pʰiː eɪ̯], etc.
-* Latin script: Spın̈al Tap, ʇᴉppǝɹ, etc.
-* Other scripts: Ρέντιτ, Ре́ддит, ⁧רֶדִיט⁩, ⁧رِيدِيت⁩, 「レヂィット」, 레딧, etc.
-* Emoji: 👌🏾 🇳🇿 🫡 👉🏼 🤣 🤦 etc
+* Latin script: Spın̈al Tap, ʇᴉppǝɹ, Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃, etc.
+* Other scripts: Ρέντιτ, Ре́ддит, ⁧רֶדִיט⁩, ⁧رِيدِيت⁩, 「レヂィット」, 레딧, ⠗⠫⠙⠊⠞, etc.
+* Emoji: 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ (and many more)
