@@ -224,7 +224,7 @@ def validate(args: argparse.Namespace) -> None:
             if any(not is_keysym(c) for c in defn.keys):
                 print(
                     f"[{defn.file}#{defn.line_no}] Unrecognised keysyms: "
-                    f"{', '.join({c for c in defn.keys if not is_keysym(c) })}"
+                    f"{', '.join({c for c in defn.keys if not is_keysym(c)})}"
                 )
 
             if len(defn.value) == 1:
