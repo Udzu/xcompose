@@ -69,21 +69,22 @@ $ xcompose --sort keys get /
 <Multi_key> <slash> <slash>		: "\\"	backslash # REVERSE SOLIDUS
 <Multi_key> <slash> <less>		: "\\"	backslash # REVERSE SOLIDUS
 <Multi_key> <slash> <equal>		: "≠"	U2260 # NOT EQUAL TO
-<Multi_key> <slash> <B>				: "Ƀ"	U0243 # LATIN CAPITAL LETTER B WITH STROKE
+<Multi_key> <slash> <B>			: "Ƀ"	U0243 # LATIN CAPITAL LETTER B WITH STROKE
 <Multi_key> <slash> <C>			: "₡"	U20a1 # COLON SIGN
 <Multi_key> <slash> <D>			: "Đ"	Dstroke # LATIN CAPITAL LETTER D WITH STROKE
 [...]
 <Multi_key> <slash> <U2194>		: "↮"	U21AE # LEFT RIGHT ARROW WITH STROKE
 <Multi_key> <slash> <U2395>		: "⍁"	U2341 # / ⎕ APL FUNCTIONAL SYMBOL QUAD SLASH
 
->>> xcompose add ć / c | tee -a ~/.XCompose   # NB tee -a appends to .XCompose
+$ xcompose add ć / c | tee -a ~/.XCompose   # NB tee -a appends to .XCompose
 <Multi_key> <c> <slash> : "ć" U0107    # LATIN SMALL LETTER C WITH ACUTE
 
->>> xcompose validate  # (assuming .XCompose contains an 'include "%L"' line)
-[/home/Udzu/.XCompose#35] Compose sequence Multi_key + c + slash for 'ć' conflicts with Multi_key + c + slash for '¢'
+$ xcompose validate  # (assuming .XCompose contains an 'include "%L"' line)
+[/home/Udzu/.XCompose#35] Compose sequence Multi_key + c + slash for 'ć' conflicts with
+Multi_key + c + slash for '¢'
     to ignore this, include the string 'conflict' or 'override' in the comment
 
->>> xcompose --ignore-include validate  # (no conflicts if we ignore the system file)
+$ xcompose --ignore-include validate  # (no conflicts if we ignore the system file)
 ```
 
 ## Sample .XCompose file
@@ -92,7 +93,7 @@ $ xcompose --sort keys get /
 
 This repo currently also hosts my personal .XCompose file, which contains extensive additions to the default config focusing on mathematics, linguistics and general text entry. Note that this is not distributed with the xcompose utility: it might be in future, or I might move it elsewhere.
 
-Amongst other characters, the configuration supports:
+Amongst other characters, the configuration currently supports:
 
 * Maths: ρ(∂v⃗/∂t + (v⃗·∇)v), ∫πeⁱᶿ dθ, ∃ A.A ⊊ B∖A, ⊨ P ⊃ ◇P, etc.
 * IPA : ⫽ˈɹɛ.dɪt⫽, [aɪ̯ pʰiː eɪ̯], etc.
