@@ -224,7 +224,7 @@ def validate(args: argparse.Namespace) -> None:
             if any(not is_keysym(c) for c in defn.keys):
                 print(
                     f"[{defn.file}#{defn.line_no}] Unrecognised keysyms: "
-                    f"{', '.join({c for c in defn.keys if not is_keysym(c) })}"
+                    f"{', '.join({c for c in defn.keys if not is_keysym(c)})}"
                 )
 
             if len(defn.value) == 1:
@@ -264,7 +264,8 @@ def validate(args: argparse.Namespace) -> None:
                         f"[{file}#{defn.line_no}] Compose sequence "
                         f"{' + '.join(defn.keys)} for {defn.value!r} "
                         f"conflicts with {' + '.join(k)} for {v!r}\n"
-                        "    to ignore this, include the string 'conflict' or 'override' in the comment"
+                        "    to ignore this, include the string "
+                        "'conflict' or 'override' in the comment"
                     )
                     break
 
