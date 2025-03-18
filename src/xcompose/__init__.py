@@ -264,7 +264,8 @@ def validate(args: argparse.Namespace) -> None:
                         f"[{file}#{defn.line_no}] Compose sequence "
                         f"{' + '.join(defn.keys)} for {defn.value!r} "
                         f"conflicts with {' + '.join(k)} for {v!r}\n"
-                        "    to ignore this, include the string 'conflict' or 'override' in the comment"
+                        "    to ignore this, include the string "
+                        "'conflict' or 'override' in the comment"
                     )
                     break
 
