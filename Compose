@@ -331,7 +331,7 @@ include "%L"
 # Mathematical and scientific symbols #
 #######################################
 
-# Also see brackets and logic sections (though some of the latter's symbols are duplicated here)
+# Also see brackets, alphanumeric and logic sections (though some of the logic symbols are duplicated here)
 
 <Multi_key> <greater> <Return>        : "⃗"   U20D7   # COMBINING RIGHT ARROW ABOVE (VECTOR)
 <Multi_key> <slash> <slash> <percent> : "⁄"  U2044   # FRACTION SLASH (conflicts with useless \)
@@ -1007,13 +1007,13 @@ include "%L"
 
 <Multi_key> <percent> <f> <n> <A> : "𝔄" U1D504    # MATHEMATICAL FRAKTUR CAPITAL A
 <Multi_key> <percent> <f> <n> <B> : "𝔅" U1D505    # MATHEMATICAL FRAKTUR CAPITAL B
-# TODO: fnC
+<Multi_key> <percent> <f> <n> <C> : "ℭ" U0212D    # BLACK-LETTER CAPITAL C
 <Multi_key> <percent> <f> <n> <D> : "𝔇" U1D507    # MATHEMATICAL FRAKTUR CAPITAL D
 <Multi_key> <percent> <f> <n> <E> : "𝔈" U1D508    # MATHEMATICAL FRAKTUR CAPITAL E
 <Multi_key> <percent> <f> <n> <F> : "𝔉" U1D509    # MATHEMATICAL FRAKTUR CAPITAL F
 <Multi_key> <percent> <f> <n> <G> : "𝔊" U1D50A    # MATHEMATICAL FRAKTUR CAPITAL G
-# TODO: fnH
-# TODO: fnI
+<Multi_key> <percent> <f> <n> <H> : "ℌ" U0210C    # BLACK-LETTER CAPITAL H
+<Multi_key> <percent> <f> <n> <I> : "ℑ" U02111    # BLACK-LETTER CAPITAL I
 <Multi_key> <percent> <f> <n> <J> : "𝔍" U1D50D    # MATHEMATICAL FRAKTUR CAPITAL J
 <Multi_key> <percent> <f> <n> <K> : "𝔎" U1D50E    # MATHEMATICAL FRAKTUR CAPITAL K
 <Multi_key> <percent> <f> <n> <L> : "𝔏" U1D50F    # MATHEMATICAL FRAKTUR CAPITAL L
@@ -1022,7 +1022,7 @@ include "%L"
 <Multi_key> <percent> <f> <n> <O> : "𝔒" U1D512    # MATHEMATICAL FRAKTUR CAPITAL O
 <Multi_key> <percent> <f> <n> <P> : "𝔓" U1D513    # MATHEMATICAL FRAKTUR CAPITAL P
 <Multi_key> <percent> <f> <n> <Q> : "𝔔" U1D514    # MATHEMATICAL FRAKTUR CAPITAL Q
-# TODO: fnR
+<Multi_key> <percent> <f> <n> <R> : "ℜ" U0211C    # BLACK-LETTER CAPITAL R
 <Multi_key> <percent> <f> <n> <S> : "𝔖" U1D516    # MATHEMATICAL FRAKTUR CAPITAL S
 <Multi_key> <percent> <f> <n> <T> : "𝔗" U1D517    # MATHEMATICAL FRAKTUR CAPITAL T
 <Multi_key> <percent> <f> <n> <U> : "𝔘" U1D518    # MATHEMATICAL FRAKTUR CAPITAL U
@@ -1030,7 +1030,7 @@ include "%L"
 <Multi_key> <percent> <f> <n> <W> : "𝔚" U1D51A    # MATHEMATICAL FRAKTUR CAPITAL W
 <Multi_key> <percent> <f> <n> <X> : "𝔛" U1D51B    # MATHEMATICAL FRAKTUR CAPITAL X
 <Multi_key> <percent> <f> <n> <Y> : "𝔜" U1D51C    # MATHEMATICAL FRAKTUR CAPITAL Y
-# TODO: fnZ
+<Multi_key> <percent> <f> <n> <Z> : "ℨ" U02128    # BLACK-LETTER CAPITAL Z
 <Multi_key> <percent> <f> <n> <a> : "𝔞" U1D51E    # MATHEMATICAL FRAKTUR SMALL A
 <Multi_key> <percent> <f> <n> <b> : "𝔟" U1D51F    # MATHEMATICAL FRAKTUR SMALL B
 <Multi_key> <percent> <f> <n> <c> : "𝔠" U1D520    # MATHEMATICAL FRAKTUR SMALL C
@@ -1176,22 +1176,22 @@ include "%L"
 
 <Multi_key> <percent> <d> <n> <A> : "𝔸" U1D538    # MATHEMATICAL DOUBLE-STRUCK CAPITAL A
 <Multi_key> <percent> <d> <n> <B> : "𝔹" U1D539    # MATHEMATICAL DOUBLE-STRUCK CAPITAL B
-# TODO: dnC
+<Multi_key> <percent> <d> <n> <C> : "ℂ" U02102    # DOUBLE-STRUCK CAPITAL C
 <Multi_key> <percent> <d> <n> <D> : "𝔻" U1D53B    # MATHEMATICAL DOUBLE-STRUCK CAPITAL D
 <Multi_key> <percent> <d> <n> <E> : "𝔼" U1D53C    # MATHEMATICAL DOUBLE-STRUCK CAPITAL E
 <Multi_key> <percent> <d> <n> <F> : "𝔽" U1D53D    # MATHEMATICAL DOUBLE-STRUCK CAPITAL F
 <Multi_key> <percent> <d> <n> <G> : "𝔾" U1D53E    # MATHEMATICAL DOUBLE-STRUCK CAPITAL G
-# TODO: dnH
+<Multi_key> <percent> <d> <n> <H> : "ℍ" U0210D    # DOUBLE-STRUCK CAPITAL H
 <Multi_key> <percent> <d> <n> <I> : "𝕀" U1D540    # MATHEMATICAL DOUBLE-STRUCK CAPITAL I
 <Multi_key> <percent> <d> <n> <J> : "𝕁" U1D541    # MATHEMATICAL DOUBLE-STRUCK CAPITAL J
 <Multi_key> <percent> <d> <n> <K> : "𝕂" U1D542    # MATHEMATICAL DOUBLE-STRUCK CAPITAL K
 <Multi_key> <percent> <d> <n> <L> : "𝕃" U1D543    # MATHEMATICAL DOUBLE-STRUCK CAPITAL L
 <Multi_key> <percent> <d> <n> <M> : "𝕄" U1D544    # MATHEMATICAL DOUBLE-STRUCK CAPITAL M
-# TODO: dnN
+<Multi_key> <percent> <d> <n> <N> : "ℕ" U02115    # DOUBLE-STRUCK CAPITAL N
 <Multi_key> <percent> <d> <n> <O> : "𝕆" U1D546    # MATHEMATICAL DOUBLE-STRUCK CAPITAL O
-# TODO: dnP
-# TODO: dnQ
-# TODO: dnR
+<Multi_key> <percent> <d> <n> <P> : "ℙ" U02119    # DOUBLE-STRUCK CAPITAL P
+<Multi_key> <percent> <d> <n> <Q> : "ℚ" U0211A    # DOUBLE-STRUCK CAPITAL Q
+<Multi_key> <percent> <d> <n> <R> : "ℝ" U0211D    # DOUBLE-STRUCK CAPITAL R
 <Multi_key> <percent> <d> <n> <S> : "𝕊" U1D54A    # MATHEMATICAL DOUBLE-STRUCK CAPITAL S
 <Multi_key> <percent> <d> <n> <T> : "𝕋" U1D54B    # MATHEMATICAL DOUBLE-STRUCK CAPITAL T
 <Multi_key> <percent> <d> <n> <U> : "𝕌" U1D54C    # MATHEMATICAL DOUBLE-STRUCK CAPITAL U
@@ -1199,7 +1199,7 @@ include "%L"
 <Multi_key> <percent> <d> <n> <W> : "𝕎" U1D54E    # MATHEMATICAL DOUBLE-STRUCK CAPITAL W
 <Multi_key> <percent> <d> <n> <X> : "𝕏" U1D54F    # MATHEMATICAL DOUBLE-STRUCK CAPITAL X
 <Multi_key> <percent> <d> <n> <Y> : "𝕐" U1D550    # MATHEMATICAL DOUBLE-STRUCK CAPITAL Y
-# TODO: dnZ
+<Multi_key> <percent> <d> <n> <Z> : "ℤ" U02124    # DOUBLE-STRUCK CAPITAL Z
 <Multi_key> <percent> <d> <n> <a> : "𝕒" U1D552    # MATHEMATICAL DOUBLE-STRUCK SMALL A
 <Multi_key> <percent> <d> <n> <b> : "𝕓" U1D553    # MATHEMATICAL DOUBLE-STRUCK SMALL B
 <Multi_key> <percent> <d> <n> <c> : "𝕔" U1D554    # MATHEMATICAL DOUBLE-STRUCK SMALL C
