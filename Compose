@@ -326,6 +326,7 @@ include "%L"
 <Multi_key> <w> <n>                 : "ƿ"  U01BF   # LATIN LETTER WYNN
 <Multi_key> <Y> <G>                 : "Ȝ"  U021C   # LATIN CAPITAL LETTER YOGH
 <Multi_key> <y> <g>                 : "ȝ"  U021D   # LATIN SMALL LETTER YOGH
+<Multi_key> <o> <k>                 : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA (OKINA)
 
 #######################################
 # Mathematical and scientific symbols #
@@ -2539,7 +2540,12 @@ include "%L"
 <Multi_key> <dollar> <greater>     : "𖼿" U16F3F   # MIAO LETTER ARCHAIC ZZA
 <Multi_key> <dollar> <question>    : "ɂ̣" U0242 U0323    # LATIN SMALL LETTER GLOTTAL STOP COMBINING DOT BELOW
 <Multi_key> <dollar> <percent>     : "ºⳆₒ" U00BA U2CC6 U2092    # MASCULINE ORDINAL INDICATOR COPTIC CAPITAL LETTER OLD COPTIC ESH LATIN SUBSCRIPT SMALL LETTER O
-<Multi_key> <dollar> <Multi_key> <period> <minus> : "ꞏ" UA78F   # LATIN LETTER SINOLOGICAL DOT
+
+<Multi_key> <dollar> <Multi_key> <period> <minus>       : "ꞏ" UA78F   # LATIN LETTER SINOLOGICAL DOT
+<Multi_key> <dollar> <Multi_key> <1> <apostrophe>       : "ʹ" U02B9   # MODIFIER LETTER PRIME
+<Multi_key> <dollar> <Multi_key> <2> <apostrophe>       : "ʺ" U02BA   # MODIFIER LETTER DOUBLE PRIME
+<Multi_key> <dollar> <Multi_key> <greater> <apostrophe> : "ʼ" U02BC   # MODIFIER LETTER APOSTROPHE
+<Multi_key> <dollar> <Multi_key> <greater> <quotedbl>   : "ˮ" U02EE   # MODIFIER LETTER DOUBLE APOSTROPHE
 
 <Multi_key> <dollar> <0> : "𐐄" U10404   # DESERET CAPITAL LETTER LONG O
 <Multi_key> <dollar> <1> : "ו" U05D5    # HEBREW LETTER VAV
