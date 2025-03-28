@@ -29,7 +29,6 @@ include "%L"
 <Multi_key> <space> <bar>        : " "  U200A   # HAIR SPACE
 <Multi_key> <space> <0>          : "​"  U200B   # ZERO WIDTH SPACE
 <Multi_key> <space> <plus>       : " "  U205F   # MEDIUM MATHEMATICAL SPACE
-<Multi_key> <w> <j>              : "⁠"  U2060   # WORD JOINER
 
 ##########
 # Dashes #
@@ -451,6 +450,8 @@ include "%L"
 <Multi_key> <o> <i> <i> <i> <n> <t>     : "∰"  U2230   # VOLUME INTEGRAL
 <Multi_key> <o> <i> <i> <n> <t>         : "∯"  U222F   # SURFACE INTEGRAL
 <Multi_key> <o> <i> <n> <t>             : "∮"  U222E   # CONTOUR INTEGRAL
+<Multi_key> <m> <h> <o>                 : "℧"  U2127   # INVERTED OHM SIGN (MHO)
+<Multi_key> <o> <z>                     : "℥"  U2125   # OUNCE SIGN
 <Multi_key> <p> <a> <r> <t>             : "∂"  U2202   # PARTIAL DIFFERENTIAL
 <Multi_key> <p> <r> <e> <c> <Return>    : "≺"  U227A   # PRECEDES
 <Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
@@ -1875,6 +1876,7 @@ include "%L"
 <Multi_key> <j> <semicolon> <greater> <quotedbl>   : "』"  U300F   # RIGHT WHITE CORNER BRACKET
 <Multi_key> <j> <semicolon> <bar> <parenleft>      : "【"  U3010   # LEFT BLACK LENTICULAR BRACKET
 <Multi_key> <j> <semicolon> <bar> <parenright>     : "】"  U3011   # RIGHT BLACK LENTICULAR BRACKET
+<Multi_key> <j> <semicolon> <w> <j>      : "⁠"  U2060   # WORD JOINER
 
 # (f = fullwidth forms)
 
@@ -2347,7 +2349,8 @@ include "%L"
 <Multi_key> <o> <7>                : "🫡"  U1FAE1        # SALUTING FACE
 <Multi_key> <u> <w> <u>            : "😌"  U1F60C        # RELIEVED FACE
 
-<Multi_key> <E> <R>                : "🙄"  U1F644        # FACE WITH ROLLING EYES
+<Multi_key> <C> <K>                : "🤌"  U1F90C        # PINCHED FINGERS (CHEF'S KISS)
+<Multi_key> <E> <R>                : "🙄"  U1F644        # FACE WITH ROLLING EYES (EYE ROLL)
 <Multi_key> <F> <C>                : "🤞"  U1F91E        # HAND WITH INDEX AND MIDDLE FINGERS CROSSED
 <Multi_key> <F> <P>                : "🤦"  U1F926        # FACE PALM
 <Multi_key> <F> <Y>                : "🖕"  U1F595        # REVERSED HAND WITH MIDDLE FINGER EXTENDED (FUCK YOU)
