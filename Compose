@@ -360,7 +360,7 @@ include "%L"
 <Multi_key> <2> <apostrophe>          : "″"  U2033   # DOUBLE PRIME (not to be confused with '2)
 <Multi_key> <3> <apostrophe>          : "‴"  U2034   # TRIPLE PRIME
 <Multi_key> <4> <apostrophe>          : "⁗"  U2057   # QUADRUPLE PRIME
-<Multi_key> <less> <greater>          : "↔"  U2194   # LEFT RIGHT ARROW (conflicts with ⋄, use ><)
+<Multi_key> <less> <greater>          : "↔"  U2194   # LEFT RIGHT ARROW (conflicts with ⋄, use diamond)
 <Multi_key> <bar> <greater>           : "↦"  U21A6   # RIGHTWARDS ARROW FROM BAR (MAPS TO)
 <Multi_key> <o> <period>              : "∘"  U2218   # RING OPERATOR (COMPOSITION)
 <Multi_key> <backslash> <A>           : "∀"  U2200   # FOR ALL
@@ -408,6 +408,8 @@ include "%L"
 <Multi_key> <a> <l> <p> <h> <a>         : "α"  U03B1   # GREEK SMALL LETTER ALPHA
 <Multi_key> <b> <e> <t> <a>             : "β"  U03B2   # GREEK SMALL LETTER BETA (conflicts with ĕ, use ue)
 <Multi_key> <d> <e> <l> <t> <a>         : "δ"  U03B4   # GREEK SMALL LETTER DELTA
+<Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN (override)
+<Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter)
 <Multi_key> <e> <p> <s> <i> <l> <o> <n> : "ε"  U03B5   # GREEK SMALL LETTER EPSILON
 <Multi_key> <l> <a> <m> <b> <d> <a>     : "λ"  U03BB   # GREEK SMALL LETTER LAMDA
 <Multi_key> <l> <a> <m> <b> <d> <slash> : "ƛ"  U019B   # LATIN SMALL LETTER LAMBDA WITH STROKE
@@ -2464,9 +2466,13 @@ include "%L"
 <Multi_key> <r> <l> <i> : "⁧"  U2067   # RIGHT-TO-LEFT ISOLATE
 <Multi_key> <p> <d> <i> : "⁩"  U2069   # POP DIRECTIONAL ISOLATE
 
-######################
-# "Upside down" text #
-######################
+################
+# Letter games #
+################
+
+########################
+# → "Upside down" text #
+########################
 
 <Multi_key> <v> <asciicircum> <A> : "ꓯ" UA4EF    # LISU LETTER AE
 <Multi_key> <v> <asciicircum> <B> : "ꓭ" UA4ED    # LISU LETTER GHA
@@ -2538,9 +2544,78 @@ include "%L"
 <Multi_key> <v> <asciicircum> <quotedbl>  : "„" U201E    # DOUBLE LOW-9 QUOTATION MARK
 <Multi_key> <v> <asciicircum> <ampersand> : "⅋" U214B    # TURNED AMPERSAND
 
-###################################################
-# Letter lookalikes for (ab)use in variable names #
-###################################################
+#####################
+# → "Mirrored" text #
+#####################
+
+<Multi_key> <greater> <less> <A> : "A" U0041    # LATIN CAPITAL LETTER A (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <B> : "ꓭ" UA4ED    # LISU LETTER GHA (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <C> : "ꓛ" UA4DB    # LISU LETTER CHA (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <D> : "ꓷ" UA4F7    # LISU LETTER OE (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <E> : "Ǝ" U018E    # LATIN CAPITAL LETTER REVERSED E (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <F> : "ꟻ" UA7FB    # LATIN EPIGRAPHIC LETTER REVERSED F (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <G> : "ᘐ" U1610    # CANADIAN SYLLABICS CARRIER YE (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <H> : "H" U0048    # LATIN CAPITAL LETTER H (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <I> : "I" U0049    # LATIN CAPITAL LETTER I (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <J> : "ᒐ" U1490    # CANADIAN SYLLABICS CA (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <K> : "ꓘ" UA4D8    # LISU LETTER KHA (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <L> : "⅃" U2143    # REVERSED SANS-SERIF CAPITAL L (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <M> : "M" U004D    # LATIN CAPITAL LETTER M (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <M> : "И" U0418    # CYRILLIC CAPITAL LETTER I (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <O> : "O" U004F    # LATIN CAPITAL LETTER O (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <P> : "ꟼ" UA7FC    # LATIN EPIGRAPHIC LETTER REVERSED P (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <Q> : "⌕" U2315    # TELEPHONE RECORDER (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <R> : "Я" U042F    # CYRILLIC CAPITAL LETTER YA (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <S> : "Ƨ" U01A7    # LATIN CAPITAL LETTER TONE TWO (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <T> : "T" U0054    # LATIN CAPITAL LETTER T (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <U> : "U" U0055    # LATIN CAPITAL LETTER U (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <V> : "V" U0056    # LATIN CAPITAL LETTER V (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <W> : "W" U0057    # LATIN CAPITAL LETTER W (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <X> : "X" U0058    # LATIN CAPITAL LETTER X (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <Y> : "Y" U0059    # LATIN CAPITAL LETTER Y (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <Z> : "S" U0053    # LATIN CAPITAL LETTER S (conflicts with ⋄, use diamond)
+
+<Multi_key> <greater> <less> <a> : "ɒ" U0252    # LATIN SMALL LETTER TURNED ALPHA (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <b> : "d" U0064    # LATIN SMALL LETTER D (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <c> : "ↄ" U2184    # LATIN SMALL LETTER REVERSED C (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <d> : "b" U0062    # LATIN SMALL LETTER B (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <e> : "ɘ" U0258    # LATIN SMALL LETTER REVERSED E (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <f> : "ʇ" U0287    # LATIN SMALL LETTER TURNED T (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <g> : "ϱ" U03F1    # GREEK RHO SYMBOL (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <h> : "ᖹ" U15B9    # CANADIAN SYLLABICS BLACKFOOT NI (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <i> : "i" U0069    # LATIN SMALL LETTER I (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <j> : "ɩ̇" U0269 U0307    # LATIN SMALL LETTER IOTA COMBINING DOT ABOVE (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <k> : "ʞ" U029E    # LATIN SMALL LETTER TURNED K (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <l> : "l" U006C    # LATIN SMALL LETTER L (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <m> : "m" U006D    # LATIN SMALL LETTER M (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <n> : "n" U006E    # LATIN SMALL LETTER N (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <o> : "o" U006F    # LATIN SMALL LETTER O (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <p> : "q" U0071    # LATIN SMALL LETTER Q (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <q> : "p" U0070    # LATIN SMALL LETTER P (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <r> : "ɿ" U027F    # LATIN SMALL LETTER REVERSED R WITH FISHHOOK (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <s> : "ƨ" U01A8    # LATIN SMALL LETTER TONE TWO (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <t> : "ɟ" U025F    # LATIN SMALL LETTER DOTLESS J WITH STROKE (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <u> : "u" U0075    # LATIN SMALL LETTER U (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <v> : "v" U0076    # LATIN SMALL LETTER V (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <w> : "w" U0077    # LATIN SMALL LETTER W (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <x> : "x" U0078    # LATIN SMALL LETTER X (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <y> : "μ" U03BC    # GREEK SMALL LETTER MU (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <z> : "s" U0073    # LATIN SMALL LETTER S (conflicts with ⋄, use diamond)
+
+<Multi_key> <greater> <less> <0> : "0" U0030    # DIGIT ZERO (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <1> : "⨡" U2A21    # Z NOTATION SCHEMA PROJECTION (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <2> : "Ϛ̲" U03DA U0332    # GREEK LETTER STIGMA COMBINING LOW LINE (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <3> : "Ɛ" U0190    # LATIN CAPITAL LETTER OPEN E (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <4> : "ⵤ̶" U2D64 U0336    # TIFINAGH LETTER TAWELLEMET YAZ COMBINING LONG STROKE OVERLAY (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <5> : "ट" U091F    # DEVANAGARI LETTER TTA (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <6> : "∂" U2202    # PARTIAL DIFFERENTIAL (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <7> : "ߖ" U07D6    # NKO LETTER JA (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <8> : "8" U0038    # DIGIT EIGHT (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <less> <9> : "ϱ" U03F1    # GREEK RHO SYMBOL (conflicts with ⋄, use diamond)
+
+#####################################################
+# → Lookalikes for (ab)use in variable names #
+#####################################################
 
 <Multi_key> <dollar> <space>       : "ㅤ" U3164   # HANGUL FILLER
 <Multi_key> <dollar> <exclam>      : "ǃ" U01C3    # LATIN LETTER RETROFLEX CLICK
