@@ -323,6 +323,7 @@ include "%L"
 <Multi_key> <backslash> <underscore> <slash> : "‿"  U203F   # UNDERTIE
 
 # additional non-IPA letters
+
 <Multi_key> <A> <H>                 : "Ɑ"  U2C6D   # LATIN CAPITAL LETTER ALPHA
 <Multi_key> <E> <E>                 : "Ə"  U018F   # LATIN CAPITAL LETTER SCHWA
 <Multi_key> <E> <v>                 : "Ǝ"  U018E   # LATIN CAPITAL LETTER REVERSED E
@@ -2723,7 +2724,7 @@ include "%L"
 # Arrows #
 ##########
 
-# Convention: TAB + 3-letter-shape from left-to-right or top-to-bottom
+# Convention: [TAB] + 3 letter shape from left-to-right or top-to-bottom
 
 <Multi_key> <Tab> <less> <minus> <minus>                 : "←" U2190    # LEFTWARDS ARROW
 <Multi_key> <Tab> <asciicircum> <bar> <bar>              : "↑" U2191    # UPWARDS ARROW
@@ -2825,6 +2826,17 @@ include "%L"
 <Multi_key> <Tab> <bar> <less> <minus>                   : "⇤" U21E4    # LEFTWARDS ARROW TO BAR
 <Multi_key> <Tab> <minus> <greater> <bar>                : "⇥" U21E5    # RIGHTWARDS ARROW TO BAR
 
+<Multi_key> <Tab> <less> <0> <0>                         : "⇦" U21E6    # LEFTWARDS WHITE ARROW
+<Multi_key> <Tab> <asciicircum> <0> <0>                  : "⇧" U21E7    # UPWARDS WHITE ARROW
+<Multi_key> <Tab> <0> <0> <greater>                      : "⇨" U21E8    # RIGHTWARDS WHITE ARROW
+<Multi_key> <Tab> <0> <0> <v>                            : "⇩" U21E9    # DOWNWARDS WHITE ARROW
+<Multi_key> <Tab> <asciicircum> <0> <period>             : "⇪" U21EA    # UPWARDS WHITE ARROW FROM BAR
+<Multi_key> <Tab> <asciicircum> <0> <minus>              : "⇫" U21EB    # UPWARDS WHITE ARROW ON PEDESTAL
+<Multi_key> <Tab> <asciicircum> <asciicircum> <0> <0>    : "⇮" U21EE    # UPWARDS WHITE DOUBLE ARROW
+<Multi_key> <Tab> <asciicircum> <asciicircum> <0> <minus> : "⇯" U21EF    # UPWARDS WHITE DOUBLE ARROW ON PEDESTAL
+<Multi_key> <Tab> <bar> <0> <greater>                    : "⇰" U21F0    # RIGHTWARDS WHITE ARROW FROM WALL
+<Multi_key> <Tab> <asciicircum> <0> <v>                  : "⇳" U21F3    # UP DOWN WHITE ARROW
+
 <Multi_key> <Tab> <minus> <o> <greater>                  : "⇴" U21F4    # RIGHT ARROW WITH SMALL CIRCLE
 <Multi_key> <Tab> <2> <v> <asciicircum>                  : "⇵" U21F5    # DOWNWARDS ARROW LEFTWARDS OF UPWARDS ARROW
 <Multi_key> <Tab> <3> <greater> <greater> <greater>      : "⇶" U21F6    # THREE RIGHTWARDS ARROWS
@@ -2837,6 +2849,58 @@ include "%L"
 <Multi_key> <Tab> <D> <minus> <minus>                    : "⇽" U21FD    # LEFTWARDS OPEN-HEADED ARROW
 <Multi_key> <Tab> <minus> <minus> <D>                    : "⇾" U21FE    # RIGHTWARDS OPEN-HEADED ARROW
 <Multi_key> <Tab> <D> <minus> <D>                        : "⇿" U21FF    # LEFT RIGHT OPEN-HEADED ARROW
+
+# (very incomplete coverage of supplemental arrows...)
+
+<Multi_key> <Tab> <asciicircum> <4> <bar>                : "⟰" U27F0    # UPWARDS QUADRUPLE ARROW
+<Multi_key> <Tab> <bar> <4> <v>                          : "⟱" U27F1    # DOWNWARDS QUADRUPLE ARROW
+
+<Multi_key> <Tab> <less> <bar> <equal>                   : "⤂" U2902    # LEFTWARDS DOUBLE ARROW WITH VERTICAL STROKE
+<Multi_key> <Tab> <equal> <bar> <greater>                : "⤃" U2903    # RIGHTWARDS DOUBLE ARROW WITH VERTICAL STROKE
+<Multi_key> <Tab> <less> <equal> <bar>                   : "⤆" U2906    # LEFTWARDS DOUBLE ARROW FROM BAR
+<Multi_key> <Tab> <bar> <equal> <greater>                : "⤇" U2907    # RIGHTWARDS DOUBLE ARROW FROM BAR
+<Multi_key> <Tab> <bar> <minus> <v>                      : "⤈" U2908    # DOWNWARDS ARROW WITH HORIZONTAL STROKE
+<Multi_key> <Tab> <asciicircum> <minus> <bar>            : "⤉" U2909    # UPWARDS ARROW WITH HORIZONTAL STROKE
+<Multi_key> <Tab> <asciicircum> <3> <bar>                : "⤊" U290A    # UPWARDS TRIPLE ARROW
+<Multi_key> <Tab> <bar> <3> <v>                          : "⤋" U290B    # DOWNWARDS TRIPLE ARROW
+<Multi_key> <Tab> <minus> <asciicircum> <bar>            : "⤒" U2912    # UPWARDS ARROW TO BAR
+<Multi_key> <Tab> <bar> <v> <minus>                      : "⤓" U2913    # DOWNWARDS ARROW TO BAR
+
+<Multi_key> <Tab> <minus> <minus> <less>                 : "⤙" U2919    # LEFTWARDS ARROW-TAIL
+<Multi_key> <Tab> <greater> <minus> <minus>              : "⤚" U291A    # RIGHTWARDS ARROW-TAIL
+<Multi_key> <Tab> <minus> <less> <less>                  : "⤛" U291B    # LEFTWARDS DOUBLE ARROW-TAIL
+<Multi_key> <Tab> <greater> <greater> <minus>            : "⤜" U291C    # RIGHTWARDS DOUBLE ARROW-TAIL
+
+<Multi_key> <Tab> <O> <less>                             : "⥀" U2940    # ANTICLOCKWISE CLOSED CIRCLE ARROW
+<Multi_key> <Tab> <O> <greater>                          : "⥁" U2941    # CLOCKWISE CLOSED CIRCLE ARROW
+
+<Multi_key> <Tab> <slash> <minus> <slash>                : "⥊" U294A    # LEFT BARB UP RIGHT BARB DOWN HARPOON
+<Multi_key> <Tab> <backslash> <minus> <backslash>        : "⥋" U294B    # LEFT BARB DOWN RIGHT BARB UP HARPOON
+<Multi_key> <Tab> <backslash> <bar> <backslash>          : "⥌" U294C    # UP BARB RIGHT DOWN BARB LEFT HARPOON
+<Multi_key> <Tab> <slash> <bar> <slash>                  : "⥍" U294D    # UP BARB LEFT DOWN BARB RIGHT HARPOON
+<Multi_key> <Tab> <slash> <minus> <backslash>            : "⥎" U294E    # LEFT BARB UP RIGHT BARB UP HARPOON
+<Multi_key> <Tab> <backslash> <bar> <slash>              : "⥏" U294F    # UP BARB RIGHT DOWN BARB RIGHT HARPOON
+<Multi_key> <Tab> <backslash> <minus> <slash>            : "⥐" U2950    # LEFT BARB DOWN RIGHT BARB DOWN HARPOON
+<Multi_key> <Tab> <slash> <bar> <backslash>              : "⥑" U2951    # UP BARB LEFT DOWN BARB LEFT HARPOON
+
+<Multi_key> <Tab> <equal> <equal> <parenright>           : "⥰" U2970    # RIGHT DOUBLE ARROW WITH ROUNDED HEAD
+
+<Multi_key> <Tab> <asciicircum> <0> <slash>              : "⬀" U2B00    # NORTH EAST WHITE ARROW
+<Multi_key> <Tab> <slash> <0> <greater>                  : "⬀" U2B00    # NORTH EAST WHITE ARROW
+<Multi_key> <Tab> <asciicircum> <0> <backslash>          : "⬁" U2B01    # NORTH WEST WHITE ARROW
+<Multi_key> <Tab> <less> <0> <backslash>                 : "⬁" U2B01    # NORTH WEST WHITE ARROW
+<Multi_key> <Tab> <backslash> <0> <greater>              : "⬂" U2B02    # SOUTH EAST WHITE ARROW
+<Multi_key> <Tab> <backslash> <0> <v>                    : "⬂" U2B02    # SOUTH EAST WHITE ARROW
+<Multi_key> <Tab> <slash> <0> <v>                        : "⬃" U2B03    # SOUTH WEST WHITE ARROW
+<Multi_key> <Tab> <less> <0> <slash>                     : "⬃" U2B03    # SOUTH WEST WHITE ARROW
+<Multi_key> <Tab> <less> <0> <greater>                   : "⬄" U2B04    # LEFT RIGHT WHITE ARROW
+
+<Multi_key> <Tab> <less> <o> <minus>                     : "⬰" U2B30    # LEFT ARROW WITH SMALL CIRCLE
+<Multi_key> <Tab> <3> <less> <less> <less>               : "⬱" U2B31    # THREE LEFTWARDS ARROWS
+<Multi_key> <Tab> <less> <less> <bar> <minus>            : "⬴" U2B34    # LEFTWARDS TWO-HEADED ARROW WITH VERTICAL STROKE
+<Multi_key> <Tab> <less> <less> <bar> <bar> <minus>      : "⬵" U2B35    # LEFTWARDS TWO-HEADED ARROW WITH DOUBLE VERTICAL STROKE
+<Multi_key> <Tab> <less> <4> <minus>                     : "⭅" U2B45    # LEFTWARDS QUADRUPLE ARROW
+<Multi_key> <Tab> <minus> <4> <greater>                  : "⭆" U2B46    # RIGHTWARDS QUADRUPLE ARROW
 
 ################################
 # CP437 Box drawing characters #
