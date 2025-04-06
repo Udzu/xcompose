@@ -67,6 +67,16 @@ include "%L"
 <Multi_key> <parenleft> <parenleft>       : "⸨"  U2E28   # LEFT DOUBLE PARENTHESIS (conflicts with useless [)
 <Multi_key> <parenright> <parenright>     : "⸩"  U2E29   # RIGHT DOUBLE PARENTHESIS (conflicts with useless ])
 
+###########
+# Bullets #
+###########
+
+<Multi_key> <asterisk> <asterisk> : "•" U2022    # BULLET
+<Multi_key> <asterisk> <greater>  : "‣" U2023    # TRIANGULAR BULLET
+<Multi_key> <asterisk> <minus>    : "⁃" U2043    # HYPHEN BULLET
+<Multi_key> <asterisk> <at>       : "◉" U25C9    # FISHEYE (TAINOME)
+<Multi_key> <asterisk> <o>        : "◦" U25E6    # WHITE BULLET
+
 ########################
 # Combining diacritics #
 ########################
@@ -2388,7 +2398,7 @@ include "%L"
 
 <Multi_key> <V> <V>                : "✅"  U2705         # WHITE HEAVY CHECK MARK
 <Multi_key> <X> <X>                : "❌"  U274C         # CROSS MARK
-<Multi_key> <asterisk> <asterisk>  : "✨"  U2728         # SPARKLES
+<Multi_key> <asterisk> <plus>      : "✨"  U2728         # SPARKLES
 <Multi_key> <asterisk> <0>         : "☆"   U2606         # WHITE STAR (RATING) (conflicts with °, use oo)
 <Multi_key> <asterisk> <1>         : "★"   U2605         # BLACK STAR (RATING)
 
