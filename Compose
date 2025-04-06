@@ -39,6 +39,7 @@ include "%L"
 <Multi_key> <minus> <numbersign>     : "‒"  U2012   # FIGURE DASH
 <Multi_key> <minus> <n>              : "–"  U2013   # EN DASH
 <Multi_key> <minus> <m>              : "—"  U2014   # EM DASH
+<Multi_key> <minus> <quotedbl>       : "―"  U2015   # HORIZONTAL BAR (QUOTATION DASH)
 <Multi_key> <minus> <asciitilde>     : "⁓"  U2053   # SWUNG DASH
 <Multi_key> <minus> <2>              : "⸺"  U2E3A   # TWO-EM DASH
 <Multi_key> <minus> <3>              : "⸻"  U2E3B   # THREE-EM DASH
@@ -47,18 +48,24 @@ include "%L"
 # Brackets #
 ############
 
-<Multi_key> <bar> <bar> <period>          : "‖"  U2016   # DOUBLE VERTICAL LINE
+<Multi_key> <bar> <bar>                   : "‖"  U2016   # DOUBLE VERTICAL LINE
+<Multi_key> <bracketleft> <minus>         : "⁅"  U2045   # LEFT SQUARE BRACKET WITH QUILL
+<Multi_key> <bracketright> <minus>        : "⁆"  U2046   # RIGHT SQUARE BRACKET WITH QUILL
+<Multi_key> <bracketleft> <asciicircum>   : "⌈"  U2308   # LEFT CEILING
+<Multi_key> <bracketright> <asciicircum>  : "⌉"  U2309   # RIGHT CEILING
+<Multi_key> <bracketleft> <underscore>    : "⌊"  U230A   # LEFT FLOOR
+<Multi_key> <bracketright> <underscore>   : "⌋"  U230B   # RIGHT FLOOR
 <Multi_key> <bracketleft> <bracketleft>   : "⟦"  U27E6   # MATHEMATICAL LEFT WHITE SQUARE BRACKET
 <Multi_key> <bracketright> <bracketright> : "⟧"  U27E7   # MATHEMATICAL RIGHT WHITE SQUARE BRACKET
 <Multi_key> <less> <parenleft>            : "⟨"  U27E8   # MATHEMATICAL LEFT ANGLE BRACKET
 <Multi_key> <greater> <parenright>        : "⟩"  U27E9   # MATHEMATICAL RIGHT ANGLE BRACKET
-<Multi_key> <slash> <slash> <period>      : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
+<Multi_key> <parenleft> <less> <less>     : "⟪"  U27EA   # MATHEMATICAL LEFT DOUBLE ANGLE BRACKET
+<Multi_key> <parenright> <greater> <greater> : "⟫"  U27EB   # MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
+<Multi_key> <parenleft> <slash> <slash>   : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR
+<Multi_key> <parenright> <slash> <slash>  : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR
+<Multi_key> <slash> <slash> <slash>       : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
 <Multi_key> <parenleft> <parenleft>       : "⸨"  U2E28   # LEFT DOUBLE PARENTHESIS (conflicts with useless [)
 <Multi_key> <parenright> <parenright>     : "⸩"  U2E29   # RIGHT DOUBLE PARENTHESIS (conflicts with useless ])
-<Multi_key> <parenleft> <asciicircum>     : "⌈"  U2308   # LEFT CEILING
-<Multi_key> <parenright> <asciicircum>    : "⌉"  U2309   # RIGHT CEILING
-<Multi_key> <parenleft> <underscore>      : "⌊"  U230A   # LEFT FLOOR
-<Multi_key> <parenright> <underscore>     : "⌋"  U230B   # RIGHT FLOOR
 
 ########################
 # Combining diacritics #
