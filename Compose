@@ -369,11 +369,12 @@ include "%L"
 # Mathematical and scientific symbols #
 #######################################
 
-# Also see brackets, arrows, alphanumeric and logic sections (though some of the logic symbols are duplicated here)
+# Also see brackets, arrows, alphanumeric and logic sections (though some of the arrows and logic symbols are duplicated here)
 
 <Multi_key> <greater> <Return>        : "⃗"   U20D7   # COMBINING RIGHT ARROW ABOVE (VECTOR)
 <Multi_key> <slash> <slash> <percent> : "⁄"  U2044   # FRACTION SLASH (conflicts with useless \)
 <Multi_key> <slash> <slash> <period>  : "∕"  U2215   # DIVISION SLASH (conflicts with useless \)
+<Multi_key> <minus> <0>               : "−"  U2212   # MINUS SIGN (alternatively -_)
 <Multi_key> <minus> <plus>            : "∓"  U2213   # MINUS-OR-PLUS SIGN (conflicts with ±, use +-)
 <Multi_key> <period> <asterisk>       : "⋅"  U22C5   # DOT OPERATOR
 <Multi_key> <3> <v> <slash>           : "∛"  U221B   # CUBE ROOT
@@ -428,7 +429,7 @@ include "%L"
 <Multi_key> <parenleft> <minus> <parenright>         : "⊖"  U2296   # CIRCLED MINUS (conflicts with useless {)
 <Multi_key> <parenleft> <asterisk> <parenright>      : "⊗"  U2297   # CIRCLED TIMES
 <Multi_key> <parenleft> <slash> <parenright>         : "⊘"  U2298   # CIRCLED DIVISION SLASH
-<Multi_key> <underscore> <Multi_key> <backslash> <slash> : "⊻"  U22BB   # XOR
+<Multi_key> <underscore> <Multi_key> <backslash> <slash> : "⊻"  U22BB   # XOR (alternatively xor)
 
 # LaTeX-inspired names
 
@@ -436,8 +437,6 @@ include "%L"
 <Multi_key> <a> <l> <p> <h> <a>         : "α"  U03B1   # GREEK SMALL LETTER ALPHA
 <Multi_key> <b> <e> <t> <a>             : "β"  U03B2   # GREEK SMALL LETTER BETA (conflicts with ĕ, use ue)
 <Multi_key> <d> <e> <l> <t> <a>         : "δ"  U03B4   # GREEK SMALL LETTER DELTA
-<Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN (override)
-<Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter)
 <Multi_key> <e> <p> <s> <i> <l> <o> <n> : "ε"  U03B5   # GREEK SMALL LETTER EPSILON
 <Multi_key> <l> <a> <m> <b> <d> <a>     : "λ"  U03BB   # GREEK SMALL LETTER LAMDA
 <Multi_key> <l> <a> <m> <b> <d> <slash> : "ƛ"  U019B   # LATIN SMALL LETTER LAMBDA WITH STROKE
@@ -460,6 +459,8 @@ include "%L"
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
 <Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
 <Multi_key> <d> <e> <l> <Return>        : "∇"  U2207   # NABLA (alternatively nabla)
+<Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN (override)
+<Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter)
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
 <Multi_key> <i> <i> <i> <i> <n> <t>     : "⨌"  U2A0C   # QUADRUPLE INTEGRAL OPERATOR
 <Multi_key> <i> <i> <i> <n> <t>         : "∭"  U222D   # TRIPLE INTEGRAL
@@ -467,8 +468,8 @@ include "%L"
 <Multi_key> <i> <n> <t>                 : "∫"  U222B   # INTEGRAL
 <Multi_key> <i> <n> <Return>            : "∈"  U2208   # ELEMENT OF (alternatively isin)
 <Multi_key> <i> <s> <i> <n>             : "∈"  U2208   # ELEMENT OF
-<Multi_key> <l> <a> <n> <d>             : "∧"  U2227   # LOGICAL AND
-<Multi_key> <l> <o> <r>                 : "∨"  U2228   # LOGICAL OR
+<Multi_key> <l> <a> <n> <d>             : "∧"  U2227   # LOGICAL AND (alternatively /\)
+<Multi_key> <l> <o> <r>                 : "∨"  U2228   # LOGICAL OR (alternatively \/)
 <Multi_key> <n> <a> <b> <l> <a>         : "∇"  U2207   # NABLA
 <Multi_key> <n> <i>                     : "∋"  U220B   # CONTAINS AS MEMBER
 <Multi_key> <n> <o> <t> <i> <n>         : "∉"  U2209   # NOT AN ELEMENT OF
@@ -2236,7 +2237,7 @@ include "%L"
 <Multi_key> <m> <semicolon> <underscore> : "··--·-"  # MORSE CODE _ (nonstandard)
 
 ########################
-# (r) Russian/Cyrillic # 
+# (r) Russian/Cyrillic #
 ########################
 
 <Multi_key> <r> <a> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A
