@@ -6,6 +6,8 @@
 
 A simple utility to help configure X11 compose key sequences.
 
+> The repo also hosts an extensive [.XCompose file](Compose) with over 2500 new sequences; [more details here](Compose.md).
+
 ## Installation
 
 ```bash
@@ -86,17 +88,3 @@ Multi_key + c + slash for '¢'
 
 $ xcompose --ignore-include validate  # (no conflicts if we ignore the system file)
 ```
-
-## Sample .XCompose file
-
-> Link: https://github.com/Udzu/xcompose/blob/master/Compose
-
-This repo currently also hosts my personal .XCompose file, which contains extensive additions to the default config focusing on mathematics, linguistics and general text entry. Note that this is not distributed with the xcompose utility: it might be in future, or I might move it elsewhere.
-
-Amongst other characters, the configuration currently supports:
-
-* Maths: ρ(∂v⃗/∂t + (v⃗·∇)v), ∫πeⁱᶿ dθ, ∃ A.A ⊊ B∖A, ⊨ P ⊃ ◇P, etc.
-* IPA : ⫽ˈɹɛ.dɪt⫽, [aɪ̯ pʰiː eɪ̯], etc.
-* Latin script: Spın̈al Tap, ʇᴉppǝɹ, Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃, etc.
-* Other scripts: Ρέντιτ, Ре́ддит, ⁧רֶדִיט⁩, ⁧رِيدِيت⁩, 「レヂィット」, 레딧, ⠗⠫⠙⠊⠞, etc.
-* Emoji: 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ (and many more)
