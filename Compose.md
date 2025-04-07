@@ -17,11 +17,11 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (63): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 
-### Latin script characters (1109)
+### Latin script characters (1085)
 * **International Phonetic Alphabet** (97): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (726): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
-* **Superscripts and subscripts** (67): ᵃ ᴬ ₐ etc
-* **Letter games** (219): ʇᴉppǝɹ duᖹɟiϱ etc
+* **Superscripts and subscripts** (68): ᵃ ᴬ ₐ etc
+* **Letter games** (194): ʇᴉppǝɹ duᖹɟiϱ etc
 
 ### Non-Latin script characters (857)
 * **Greek** (60): Ρέντιτ etc
@@ -33,9 +33,9 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **International Morse Code** (71): ·-· · -·· -·· ·· - etc
 
-### Symbols [643]
-* **Math and science** (151): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ ∃ A.A ⊊ B∖A ⊨ P ⊃ ◇P etc.
-* **Emoji** (97): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Games** (197): ♞c6 🩡 🂽 🁖 
+### Symbols (654)
+* **Math and science** (141): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ ∃ A.A ⊊ B∖A ⊨ P ⊃ ◇P etc.
+* **Emoji** (98): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+* **Games** (219): ♞c6 🩡 🂽 🁖 
 * **Arrows** (148): ↦ ↺ ⇄ ⇼ ⏎ etc
 * **Box drawing** (48): ╞╦╕ etc
