@@ -36,6 +36,6 @@ The file aims for memorability and consistency. As a result, a small number of t
 ### Symbols [643]
 * **Math and science** (151): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ ∃ A.A ⊊ B∖A ⊨ P ⊃ ◇P etc.
 * **Emoji** (97): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Games** (197): ♞c6 🂽 🁖 
-* **Arrows** (148):
-* **Box drawing** (48):
+* **Games** (197): ♞c6 🩡 🂽 🁖 
+* **Arrows** (148): ↦ ↺ ⇄ ⇼ ⏎ etc
+* **Box drawing** (48): ╞╦╕ etc
