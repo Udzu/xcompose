@@ -33,9 +33,9 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **International Morse Code** (71): ·-· · -·· -·· ·· - etc
 
-### Symbols (654)
+### Symbols (698)
 * **Math and science** (141): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ ∃ A.A ⊊ B∖A etc.
 * **Emoji** (98): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Games** (219): ♞c6 🩡 🂽 🁖 etc
+* **Games** (263): ♞c6 🩡 🂽 🁖 🀄 etc
 * **Arrows** (148): ↦ ↺ ⇄ ⇼ ⏎ etc
 * **Box drawing** (48): ╞╦╕ etc
