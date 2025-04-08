@@ -2641,8 +2641,6 @@ include "%L"
 <Multi_key> <colon> <bracketright> : "😊"  U1F60A        # SMILING FACE WITH SMILING EYES
 <Multi_key> <colon> <parenleft>    : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI (overrides ☹ )
 <Multi_key> <colon> <bracketleft>  : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI
-<Multi_key> <less> <3>             : "♥️"   U2665 UFE0F   # HEAVY BLACK HEART EMOJI (overrides ♥ )
-<Multi_key> <less> <backslash> <3> : "💔"  U1F494        # BROKEN HEART
 <Multi_key> <colon> <D>            : "😃"  U1F603        # SMILING FACE WITH OPEN MOUTH
 <Multi_key> <colon> <P>            : "😛"  U1F61B        # FACE WITH STUCK-OUT TONGUE
 <Multi_key> <semicolon> <P>        : "😜"  U1F61C        # FACE WITH STUCK-OUT TONGUE AND WINKING EYE
@@ -2656,6 +2654,28 @@ include "%L"
 <Multi_key> <parenleft> <colon>    : "🙃"  U1F643        # UPSIDE-DOWN FACE
 <Multi_key> <o> <7>                : "🫡"  U1FAE1        # SALUTING FACE
 <Multi_key> <u> <w> <u>            : "😌"  U1F60C        # RELIEVED FACE
+
+<Multi_key> <less> <3> <Return>    : "♥️"  U2665 UFE0F   # HEAVY BLACK HEART EMOJI (overrides ♥ )
+<Multi_key> <less> <3> <exclam>    : "❣️"  U2763 UFE0F   # HEAVY HEART EXCLAMATION MARK ORNAMENT VARIATION SELECTOR-16
+<Multi_key> <less> <3> <quotedbl> <quotedbl> : "💓"  U1F493    # BEATING HEART
+<Multi_key> <less> <3> <slash>     : "💔"  U1F494        # BROKEN HEART
+<Multi_key> <less> <backslash> <3> : "💔"  U1F494        # BROKEN HEART
+<Multi_key> <less> <3> <2>         : "💕"  U1F495        # TWO HEARTS
+<Multi_key> <less> <3> <asterisk>  : "💖"  U1F496        # SPARKLING HEART
+<Multi_key> <less> <3> <plus>      : "💗"  U1F497        # GROWING HEART
+<Multi_key> <less> <3> <backslash> : "💘"  U1F498        # HEART WITH ARROW
+<Multi_key> <less> <3> <R>         : "♥️"  U2665 UFE0F   # HEAVY BLACK HEART EMOJI
+<Multi_key> <less> <3> <B>         : "💙"  U1F499        # BLUE HEART
+<Multi_key> <less> <3> <G>         : "💚"  U1F49A        # GREEN HEART
+<Multi_key> <less> <3> <Y>         : "💛"  U1F49B        # YELLOW HEART
+<Multi_key> <less> <3> <P>         : "💜"  U1F49C        # PURPLE HEART
+<Multi_key> <less> <3> <K>         : "🖤"  U1F5A4        # BLACK HEART
+<Multi_key> <less> <3> <W>         : "🤍"  U1F90D        # WHITE HEART
+<Multi_key> <less> <3> <o> <o>     : "😍"  U1F60D        # SMILING FACE WITH HEART-SHAPED EYES
+<Multi_key> <less> <3> <x> <x>     : "😘"  U1F618        # FACE THROWING A KISS
+<Multi_key> <less> <3> <asciicircum> <asciicircum> : "😻"  U1F63B    # SMILING CAT FACE WITH HEART-SHAPED EYES
+<Multi_key> <less> <3> <colon> <parenright>        : "🥰"  U1F970    # SMILING FACE WITH SMILING EYES AND THREE HEARTS
+<Multi_key> <less> <3> <parenleft> <parenright>    : "🫶"  U1FAF6    # HEART HANDS
 
 <Multi_key> <C> <K>                : "🤌"  U1F90C        # PINCHED FINGERS (CHEF'S KISS)
 <Multi_key> <E> <R>                : "🙄"  U1F644        # FACE WITH ROLLING EYES (EYE ROLL)
@@ -2678,11 +2698,16 @@ include "%L"
 <Multi_key> <h> <i>                : "👋"  U1F44B        # WAVING HAND SIGN
 <Multi_key> <h> <m> <m>            : "🤔"  U1F914        # THINKING FACE (HMM)
 <Multi_key> <h> <o> <t>            : "🔥"  U1F525        # FIRE (HOT)
+<Multi_key> <i> <d> <e> <a>        : "💡"  U1F4A1        # ELECTRIC LIGHT BULB
+<Multi_key> <k> <i> <s> <s>        : "💋"  U1F48B        # KISS MARK
 <Multi_key> <l> <o> <l>            : "😂"  U1F602        # FACE WITH TEARS OF JOY (LOL)
 <Multi_key> <r> <o> <f> <l>        : "🤣"  U1F923        # ROLLING ON THE FLOOR LAUGHING (ROFL)
 <Multi_key> <s> <t> <o> <p>        : "✋"  U270B         # RAISED HAND
+<Multi_key> <x> <o> <x> <o>        : "💋"  U1F48B        # KISS MARK (not quite, but xx was already taken) (conflicts with ¤, use ox)
 <Multi_key> <y> <a> <y>            : "🎉"  U1F389        # PARTY POPPER (YAY)
+<Multi_key> <z> <z> <z>            : "💤"  U1F4A4        # SLEEPING SYMBOL (ZZZ)
 <Multi_key> <1> <0> <0>            : "💯"  U1F4AF        # HUNDRED POINTS SYMBOL
+<Multi_key> <1> <0> <x>            : "🙏"  U1F64F        # PERSON WITH FOLDED HANDS (THANKS)
 
 <Multi_key> <V> <V>                : "✅"  U2705         # WHITE HEAVY CHECK MARK
 <Multi_key> <X> <X>                : "❌"  U274C         # CROSS MARK
