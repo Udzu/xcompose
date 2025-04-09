@@ -33,10 +33,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **International Morse Code** (71): ·-· · -·· -·· ·· - etc
 
-### Symbols (782)
+### Symbols (793)
 * **Math and science** (141): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ ∃ A.A ⊊ B∖A etc.
 * **Emoji** (123): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Music** (58): 
+* **Music** (69): 
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄 etc
 * **Arrows** (148): ↦ ↺ ⇄ ⇼ ⏎ etc
 * **Box drawing** (48): ╞╦╕ etc
