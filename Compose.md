@@ -3,7 +3,7 @@
 
 > Link: https://github.com/Udzu/xcompose/blob/master/Compose
 
-This repo also hosts my personal .XCompose file, which contains over 2500 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
+This repo also hosts my personal .XCompose file, which contains over 3000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
 
 The file aims for memorability and consistency. As a result, a small number of the rules here conflict with the default system rules, with workarounds given wherever possible in the comments (e.g. \<underscore>'s usefulness for subscripting often interferes with its system use for macrons, for which \<minus> works equally well as an alternative).
 
@@ -33,9 +33,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **International Morse Code** (71): ·-· · -·· -·· ·· - etc
 
-### Symbols (723)
+### Symbols (820)
 * **Math and science** (141): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ ∃ A.A ⊊ B∖A etc.
 * **Emoji** (123): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+* **Music** (96): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄 etc
 * **Arrows** (148): ↦ ↺ ⇄ ⇼ ⏎ etc
 * **Box drawing** (48): ╞╦╕ etc
