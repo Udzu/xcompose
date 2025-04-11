@@ -2700,7 +2700,6 @@ include "%L"
 <Multi_key> <J> <H>                : "🤗"  U1F917        # HUGGING FACE (JAZZ HANDS)
 <Multi_key> <M> <T>                : "🙋"  U1F64B        # HAPPY PERSON RAISING ONE HAND (ME TOO)
 <Multi_key> <O> <K>                : "👌"  U1F44C        # OK HAND SIGN
-<Multi_key> <S> <T> <O> <P>        : "⛔"  U26D4         # NO ENTRY (STOP, not to be confused with stop)
 <Multi_key> <S> <question>         : "🤷"  U1F937        # SHRUG
 <Multi_key> <T> <D>                : "👎"  U1F44E        # THUMBS DOWN SIGN
 <Multi_key> <T> <U>                : "👍"  U1F44D        # THUMBS UP SIGN
@@ -2709,6 +2708,9 @@ include "%L"
 <Multi_key> <W> <exclam>           : "⚠️"   U26A0 UFE0F   # WARNING SIGN EMOJI
 <Multi_key> <X> <M>                : "🍆"  U1F346        # AUBERGINE (MALE GENITALIA)
 <Multi_key> <X> <F>                : "🍑"  U1F351        # PEACH (FEMALE GENITALIA)
+<Multi_key> <1> <0> <x>            : "🙏"  U1F64F        # PERSON WITH FOLDED HANDS (THANKS)
+<Multi_key> <1> <slash>            : "🧵"  U1F9F5        # SPOOL OF THREAD
+
 <Multi_key> <a> <r> <g> <h>        : "😱"  U1F631        # FACE SCREAMING IN FEAR (ARGH)
 <Multi_key> <c> <o> <o> <l>        : "😎"  U1F60E        # SMILING FACE WITH SUNGLASSES (COOL) (conflicts with ǒ, use vo)
 <Multi_key> <d> <e> <a> <d>        : "💀"  U1F480        # SKULL (DEAD)
@@ -2721,12 +2723,11 @@ include "%L"
 <Multi_key> <l> <o> <l>            : "😂"  U1F602        # FACE WITH TEARS OF JOY (LOL)
 <Multi_key> <r> <o> <f> <l>        : "🤣"  U1F923        # ROLLING ON THE FLOOR LAUGHING (ROFL)
 <Multi_key> <s> <t> <o> <p>        : "✋"  U270B         # RAISED HAND (STOP)
-<Multi_key> <x> <o> <x> <o>        : "💋"  U1F48B        # KISS MARK (not quite, but xx was already taken) (conflicts with ¤, use ox)
+<Multi_key> <S> <T> <O> <P>        : "⛔"  U26D4         # NO ENTRY (STOP)
 <Multi_key> <y> <a> <y>            : "🎉"  U1F389        # PARTY POPPER (YAY)
+<Multi_key> <y> <o> <u>            : "🫵"  U1FAF5        # INDEX POINTING AT THE VIEWER
 <Multi_key> <z> <z> <z>            : "💤"  U1F4A4        # SLEEPING SYMBOL (ZZZ)
 <Multi_key> <1> <0> <0>            : "💯"  U1F4AF        # HUNDRED POINTS SYMBOL
-<Multi_key> <1> <0> <x>            : "🙏"  U1F64F        # PERSON WITH FOLDED HANDS (THANKS)
-<Multi_key> <1> <slash>            : "🧵"  U1F9F5        # SPOOL OF THREAD
 
 <Multi_key> <V> <V>                : "✅"  U2705         # WHITE HEAVY CHECK MARK
 <Multi_key> <X> <X>                : "❌"  U274C         # CROSS MARK
@@ -3103,6 +3104,7 @@ include "%L"
 <Multi_key> <numbersign> <n> <1> <2> <8> <slash> : "𝅘𝅥𝅲" U1D164    # MUSICAL SYMBOL ONE HUNDRED TWENTY-EIGHTH NOTE
 
 # rests
+<Multi_key> <numbersign> <r> <plus>          : "𝄩" U1D129    # MUSICAL SYMBOL MULTIPLE MEASURE REST
 <Multi_key> <numbersign> <r> <b>             : "𝄺" U1D13A    # MUSICAL SYMBOL MULTI REST (BREVE)
 <Multi_key> <numbersign> <r> <s> <b>         : "𝄻" U1D13B    # MUSICAL SYMBOL WHOLE REST (SEMIBREVE)
 <Multi_key> <numbersign> <r> <m>             : "𝄼" U1D13C    # MUSICAL SYMBOL HALF REST (MINIM)
@@ -3194,7 +3196,7 @@ include "%L"
 # Games #
 #########
 
-# Convention: # + color (W/B) + (v for inverted) + piece
+# Convention: # + color (W/B/R) + (v for inverted) + piece
 
 # Chess
 <Multi_key> <numbersign> <W> <K> : "♔" U2654    # WHITE CHESS KING
