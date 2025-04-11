@@ -2345,6 +2345,21 @@ include "%L"
 <Multi_key> <m> <semicolon> <semicolon>  : "-·-·-·"  # MORSE CODE ; (nonstandard)
 <Multi_key> <m> <semicolon> <underscore> : "··--·-"  # MORSE CODE _ (nonstandard)
 
+# (p = prosign)
+
+<Multi_key> <m> <p> <a> <a>     : "·-·-"   # MORSE CODE PROSIGN AA (UNKNOWN STATION)
+<Multi_key> <m> <p> <a> <r>     : "·-·-·"  # MORSE CODE PROSIGN AR (OUT)
+<Multi_key> <m> <p> <a> <s>     : "·-···"  # MORSE CODE PROSIGN AS (WAIT)
+<Multi_key> <m> <p> <b> <t>     : "-···-"  # MORSE CODE PROSIGN BT (BREAK)
+<Multi_key> <m> <p> <c> <t>     : "-·-·-"  # MORSE CODE PROSIGN CT (ATTENTION)
+<Multi_key> <m> <p> <h> <h>     : "········"  # MORSE CODE PROSIGN HH (CORRECTION)
+<Multi_key> <m> <p> <i> <n> <t> : "··-·-"  # MORSE CODE PROSIGN INT (INTERROGATIVE)
+<Multi_key> <m> <p> <k> <a>     : "-·-·-"  # MORSE CODE PROSIGN KA (ATTENTION)
+<Multi_key> <m> <p> <s> <k>     : "···-·-" # MORSE CODE PROSIGN SK (OUT)
+<Multi_key> <m> <p> <s> <n>     : "···-·"  # MORSE CODE PROSIGN SN (VERIFIED)
+<Multi_key> <m> <p> <s> <o> <s> : "···---···"  # MORSE CODE PROSIGN SOS (DISTRESS SIGNAL)
+<Multi_key> <m> <p> <v> <e>     : "···-·"  # MORSE CODE PROSIGN VE (VERIFIED)
+
 ########################
 # (r) Russian/Cyrillic #
 ########################

@@ -23,7 +23,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (68): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (863)
+### Non-Latin script characters (868)
 * **Greek** (60): Ρέντιτ etc
 * **Cyrillic** (92): Ре́ддит etc
 * **Arabic** (68): ⁧رِيدِيت⁩ etc
@@ -31,7 +31,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Korean** (via jamo) (118): 레딧 etc
 * **Japanese** (kana) (301): 「レヂィット」 etc
 * **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
-* **International Morse Code** (71): ·-· · -·· -·· ·· - etc
+* **International Morse Code** (76): ···---··· etc
 
 ### Symbols (822)
 * **Math and science** (141): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ ∃ A.A ⊊ B∖A etc.
