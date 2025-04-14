@@ -1986,8 +1986,8 @@ include "%L"
 
 # (very small number of) Kanji
 
-<Multi_key> <j> <a> <Y> <equal>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen)
-<Multi_key> <j> <a> <equal> <Y>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen)
+<Multi_key> <j> <a> <Y> <equal>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
+<Multi_key> <j> <a> <equal> <Y>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
 
 <Multi_key> <j> <0> <0>                  : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
 <Multi_key> <j> <0> <1>                  : "一"  U4E00   # CJK UNIFIED IDEOGRAPH-4E00 (1)
@@ -2365,7 +2365,7 @@ include "%L"
 <Multi_key> <m> <p> <v> <e>     : "···-·"  # MORSE CODE PROSIGN VE (VERIFIED)
 
 ########################
-# (r) Russian/Cyrillic #
+# (r) Cyrillic/Russian #
 ########################
 
 <Multi_key> <r> <a> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A
@@ -2484,6 +2484,134 @@ include "%L"
 <Multi_key> <r> <b> <k> <j>      : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 <Multi_key> <r> <b> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 
+############################################
+# (z) Bopomofo/Zhuyin and Chinese/Zhongwen #
+############################################
+
+# (a = one-letter, b = two-letter)
+
+<Multi_key> <z> <a> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
+<Multi_key> <z> <a> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
+<Multi_key> <z> <a> <m> : "ㄇ" U3107    # BOPOMOFO LETTER M
+<Multi_key> <z> <a> <f> : "ㄈ" U3108    # BOPOMOFO LETTER F
+<Multi_key> <z> <a> <d> : "ㄉ" U3109    # BOPOMOFO LETTER D
+<Multi_key> <z> <a> <t> : "ㄊ" U310A    # BOPOMOFO LETTER T
+<Multi_key> <z> <a> <n> : "ㄋ" U310B    # BOPOMOFO LETTER N
+<Multi_key> <z> <a> <l> : "ㄌ" U310C    # BOPOMOFO LETTER L
+<Multi_key> <z> <a> <g> : "ㄍ" U310D    # BOPOMOFO LETTER G
+<Multi_key> <z> <a> <k> : "ㄎ" U310E    # BOPOMOFO LETTER K
+<Multi_key> <z> <a> <h> : "ㄏ" U310F    # BOPOMOFO LETTER H
+<Multi_key> <z> <a> <j> : "ㄐ" U3110    # BOPOMOFO LETTER J
+<Multi_key> <z> <a> <q> : "ㄑ" U3111    # BOPOMOFO LETTER Q
+<Multi_key> <z> <a> <x> : "ㄒ" U3112    # BOPOMOFO LETTER X
+<Multi_key> <z> <a> <r> : "ㄖ" U3116    # BOPOMOFO LETTER R
+<Multi_key> <z> <a> <z> : "ㄗ" U3117    # BOPOMOFO LETTER Z
+<Multi_key> <z> <a> <c> : "ㄘ" U3118    # BOPOMOFO LETTER C
+<Multi_key> <z> <a> <s> : "ㄙ" U3119    # BOPOMOFO LETTER S
+<Multi_key> <z> <a> <a> : "ㄚ" U311A    # BOPOMOFO LETTER A
+<Multi_key> <z> <a> <o> : "ㄛ" U311B    # BOPOMOFO LETTER O
+<Multi_key> <z> <a> <e> : "ㄜ" U311C    # BOPOMOFO LETTER E
+<Multi_key> <z> <a> <i> : "ㄧ" U3127    # BOPOMOFO LETTER I
+<Multi_key> <z> <a> <u> : "ㄨ" U3128    # BOPOMOFO LETTER U
+<Multi_key> <z> <a> <v> : "ㄪ" U312A    # BOPOMOFO LETTER V
+<Multi_key> <z> <a> <period> <o> : "ㄮ" U312E    # BOPOMOFO LETTER O WITH DOT ABOVE
+
+<Multi_key> <z> <b> <z> <h> : "ㄓ" U3113    # BOPOMOFO LETTER ZH
+<Multi_key> <z> <b> <c> <h> : "ㄔ" U3114    # BOPOMOFO LETTER CH
+<Multi_key> <z> <b> <s> <h> : "ㄕ" U3115    # BOPOMOFO LETTER SH
+<Multi_key> <z> <b> <e> <h> : "ㄝ" U311D    # BOPOMOFO LETTER EH
+<Multi_key> <z> <b> <a> <i> : "ㄞ" U311E    # BOPOMOFO LETTER AI
+<Multi_key> <z> <b> <e> <i> : "ㄟ" U311F    # BOPOMOFO LETTER EI
+<Multi_key> <z> <b> <a> <u> : "ㄠ" U3120    # BOPOMOFO LETTER AU
+<Multi_key> <z> <b> <o> <u> : "ㄡ" U3121    # BOPOMOFO LETTER OU
+<Multi_key> <z> <b> <a> <n> : "ㄢ" U3122    # BOPOMOFO LETTER AN
+<Multi_key> <z> <b> <e> <n> : "ㄣ" U3123    # BOPOMOFO LETTER EN
+<Multi_key> <z> <b> <a> <Multi_key> <n> <g> : "ㄤ" U3124    # BOPOMOFO LETTER ANG
+<Multi_key> <z> <b> <e> <Multi_key> <n> <g> : "ㄥ" U3125    # BOPOMOFO LETTER ENG
+<Multi_key> <z> <b> <e> <r> : "ㄦ" U3126    # BOPOMOFO LETTER ER
+<Multi_key> <z> <b> <i> <u> : "ㄩ" U3129    # BOPOMOFO LETTER IU
+<Multi_key> <z> <b> <n> <g> : "ㄫ" U312B    # BOPOMOFO LETTER NG
+<Multi_key> <z> <b> <g> <n> : "ㄬ" U312C    # BOPOMOFO LETTER GN
+<Multi_key> <z> <b> <i> <h> : "ㄭ" U312D    # BOPOMOFO LETTER IH
+<Multi_key> <z> <b> <n> <n> : "ㄯ" U312F    # BOPOMOFO LETTER NN
+
+# Hokkien
+
+<Multi_key> <z> <a> <asciitilde> <e> : "ㆥ" U31A5    # BOPOMOFO LETTER ENN
+<Multi_key> <z> <a> <asciitilde> <o> : "ㆧ" U31A7    # BOPOMOFO LETTER ONN
+<Multi_key> <z> <a> <asciitilde> <a> : "ㆩ" U31A9    # BOPOMOFO LETTER ANN
+<Multi_key> <z> <a> <asciitilde> <i> : "ㆪ" U31AA    # BOPOMOFO LETTER INN
+<Multi_key> <z> <a> <asciitilde> <u> : "ㆫ" U31AB    # BOPOMOFO LETTER UNN
+<Multi_key> <z> <a> <greater> <p> : "ㆴ" U31B4    # BOPOMOFO FINAL LETTER P
+<Multi_key> <z> <a> <greater> <t> : "ㆵ" U31B5    # BOPOMOFO FINAL LETTER T
+<Multi_key> <z> <a> <greater> <k> : "ㆶ" U31B6    # BOPOMOFO FINAL LETTER K
+<Multi_key> <z> <a> <greater> <h> : "ㆷ" U31B7    # BOPOMOFO FINAL LETTER H
+<Multi_key> <z> <a> <greater> <g> : "ㆻ" U31BB    # BOPOMOFO FINAL LETTER G
+
+<Multi_key> <z> <b> <b> <u> : "ㆠ" U31A0    # BOPOMOFO LETTER BU
+<Multi_key> <z> <b> <z> <i> : "ㆡ" U31A1    # BOPOMOFO LETTER ZI
+<Multi_key> <z> <b> <j> <i> : "ㆢ" U31A2    # BOPOMOFO LETTER JI
+<Multi_key> <z> <b> <g> <u> : "ㆣ" U31A3    # BOPOMOFO LETTER GU
+<Multi_key> <z> <b> <e> <e> : "ㆤ" U31A4    # BOPOMOFO LETTER EE
+<Multi_key> <z> <b> <o> <o> : "ㆦ" U31A6    # BOPOMOFO LETTER OO
+<Multi_key> <z> <b> <i> <r> : "ㆨ" U31A8    # BOPOMOFO LETTER IR
+<Multi_key> <z> <b> <i> <m> : "ㆬ" U31AC    # BOPOMOFO LETTER IM
+<Multi_key> <z> <b> <n> <G> : "ㆭ" U31AD    # BOPOMOFO LETTER NGG
+<Multi_key> <z> <b> <asciitilde> <a> <i> : "ㆮ" U31AE    # BOPOMOFO LETTER AINN
+<Multi_key> <z> <b> <asciitilde> <a> <u> : "ㆯ" U31AF    # BOPOMOFO LETTER AUNN
+<Multi_key> <z> <b> <a> <m> : "ㆰ" U31B0    # BOPOMOFO LETTER AM
+<Multi_key> <z> <b> <o> <m> : "ㆱ" U31B1    # BOPOMOFO LETTER OM
+<Multi_key> <z> <b> <o> <Multi_key> <n> <g> : "ㆲ" U31B2    # BOPOMOFO LETTER ONG
+<Multi_key> <z> <b> <asciitilde> <i> <n> : "ㆳ" U31B3    # BOPOMOFO LETTER INNN
+<Multi_key> <z> <b> <g> <h> : "ㆸ" U31B8    # BOPOMOFO LETTER GH
+<Multi_key> <z> <b> <l> <h> : "ㆹ" U31B9    # BOPOMOFO LETTER LH
+<Multi_key> <z> <b> <z> <y> : "ㆺ" U31BA    # BOPOMOFO LETTER ZY
+<Multi_key> <z> <b> <g> <w> : "ㆼ" U31BC    # BOPOMOFO LETTER GW
+<Multi_key> <z> <b> <k> <w> : "ㆽ" U31BD    # BOPOMOFO LETTER KW
+<Multi_key> <z> <b> <o> <e> : "ㆾ" U31BE    # BOPOMOFO LETTER OE
+<Multi_key> <z> <b> <a> <h> : "ㆿ" U31BF    # BOPOMOFO LETTER AH
+
+# Tones
+
+<Multi_key> <z> <a> <1> : "ˉ" U02C9    # MODIFIER LETTER MACRON (alternatively z;-)
+<Multi_key> <z> <a> <2> : "ˊ" U02CA    # MODIFIER LETTER ACUTE ACCENT (alternatively z;')
+<Multi_key> <z> <a> <3> : "ˇ" U02C7    # CARON (alternatively z;v)
+<Multi_key> <z> <a> <4> : "ˋ" U02CB    # MODIFIER LETTER GRAVE ACCENT (alternatively z;`)
+<Multi_key> <z> <a> <5> : "˙" U02D9    # DOT ABOVE (alternatively z;.)
+
+<Multi_key> <z> <semicolon> <minus>      : "ˉ" U02C9    # MODIFIER LETTER MACRON
+<Multi_key> <z> <semicolon> <apostrophe> : "ˊ" U02CA    # MODIFIER LETTER ACUTE ACCENT
+<Multi_key> <z> <semicolon> <v>          : "ˇ" U02C7    # CARON
+<Multi_key> <z> <semicolon> <grave>      : "ˋ" U02CB    # MODIFIER LETTER GRAVE ACCENT
+<Multi_key> <z> <semicolon> <period>     : "˙" U02D9    # DOT ABOVE
+<Multi_key> <z> <semicolon> <L>          : "˪" U02EA    # MODIFIER LETTER YIN DEPARTING TONE MARK
+<Multi_key> <z> <semicolon> <T>          : "˫" U02EB    # MODIFIER LETTER YANG DEPARTING TONE MARK
+
+# (very small number of) Hanzi
+
+<Multi_key> <z> <0> <0>                  : "零"  U96F6   # CJK UNIFIED IDEOGRAPH-96F6 (0)
+<Multi_key> <z> <0> <O>                  : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
+<Multi_key> <z> <0> <1>                  : "一"  U4E00   # CJK UNIFIED IDEOGRAPH-4E00 (1)
+<Multi_key> <z> <0> <2>                  : "二"  U4E8C   # CJK UNIFIED IDEOGRAPH-4E8C (2)
+<Multi_key> <z> <0> <3>                  : "三"  U4E09   # CJK UNIFIED IDEOGRAPH-4E09 (3)
+<Multi_key> <z> <0> <4>                  : "四"  U56DB   # CJK UNIFIED IDEOGRAPH-56DB (4)
+<Multi_key> <z> <0> <5>                  : "五"  U4E94   # CJK UNIFIED IDEOGRAPH-4E94 (5)
+<Multi_key> <z> <0> <6>                  : "六"  U516D   # CJK UNIFIED IDEOGRAPH-516D (6)
+<Multi_key> <z> <0> <7>                  : "七"  U4E03   # CJK UNIFIED IDEOGRAPH-4E03 (7)
+<Multi_key> <z> <0> <8>                  : "八"  U516B   # CJK UNIFIED IDEOGRAPH-516B (8)
+<Multi_key> <z> <0> <9>                  : "九"  U4E5D   # CJK UNIFIED IDEOGRAPH-4E5D (9)
+<Multi_key> <z> <0> <E> <1>              : "十"  U5341   # CJK UNIFIED IDEOGRAPH-5341 (10)
+<Multi_key> <z> <0> <E> <2>              : "百"  U767E   # CJK UNIFIED IDEOGRAPH-767E (100)
+<Multi_key> <z> <0> <E> <3>              : "千"  U5343   # CJK UNIFIED IDEOGRAPH-5343 (1_000)
+<Multi_key> <z> <0> <E> <4>              : "萬"  U842C   # CJK UNIFIED IDEOGRAPH-842C (10_000)
+<Multi_key> <z> <0> <e> <4>              : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000 simplified)
+<Multi_key> <z> <0> <E> <8>              : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
+<Multi_key> <z> <0> <e> <8>              : "亿"  U4EBF   # CJK UNIFIED IDEOGRAPH-4EBF (100_000_000 simplified)
+
+<Multi_key> <z> <a> <Y> <equal>          : "元" U5143    # CJK UNIFIED IDEOGRAPH-5143 (Chinese yuan) (use Y= for ¥)
+<Multi_key> <z> <a> <Y> <dollar>         : "圓" U5713    # CJK UNIFIED IDEOGRAPH-5713 (New Taiwan $)
+<Multi_key> <z> <a> <Y> <j>              : "角" U89D2    # CJK UNIFIED IDEOGRAPH-89D2 (Chinese jiao)
+<Multi_key> <z> <a> <Y> <f>              : "分" U5206    # CJK UNIFIED IDEOGRAPH-5206 (Chinese fen)
 
 ##############
 # D. SYMBOLS #
