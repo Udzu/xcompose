@@ -1986,8 +1986,8 @@ include "%L"
 
 # (very small number of) Kanji
 
-<Multi_key> <j> <a> <Y> <equal>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen)
-<Multi_key> <j> <a> <equal> <Y>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen)
+<Multi_key> <j> <a> <Y> <equal>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
+<Multi_key> <j> <a> <equal> <Y>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
 
 <Multi_key> <j> <0> <0>                  : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
 <Multi_key> <j> <0> <1>                  : "一"  U4E00   # CJK UNIFIED IDEOGRAPH-4E00 (1)
@@ -2365,7 +2365,7 @@ include "%L"
 <Multi_key> <m> <p> <v> <e>     : "···-·"  # MORSE CODE PROSIGN VE (VERIFIED)
 
 ########################
-# (r) Russian/Cyrillic #
+# (r) Cyrillic/Russian #
 ########################
 
 <Multi_key> <r> <a> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A
@@ -2484,9 +2484,9 @@ include "%L"
 <Multi_key> <r> <b> <k> <j>      : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 <Multi_key> <r> <b> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 
-#######################
-# (z) Zhuyin/Bopomofo #
-#######################
+############################################
+# (z) Bopomofo/Zhuyin and Chinese/Zhongwen #
+############################################
 
 # (a = one-letter, b = two-letter)
 
@@ -2587,9 +2587,10 @@ include "%L"
 <Multi_key> <z> <semicolon> <L>          : "˪" U02EA    # MODIFIER LETTER YIN DEPARTING TONE MARK
 <Multi_key> <z> <semicolon> <T>          : "˫" U02EB    # MODIFIER LETTER YANG DEPARTING TONE MARK
 
-# Numbers
+# (very small number of) Hanzi
 
 <Multi_key> <z> <0> <0>                  : "零"  U96F6   # CJK UNIFIED IDEOGRAPH-96F6 (0)
+<Multi_key> <z> <0> <O>                  : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
 <Multi_key> <z> <0> <1>                  : "一"  U4E00   # CJK UNIFIED IDEOGRAPH-4E00 (1)
 <Multi_key> <z> <0> <2>                  : "二"  U4E8C   # CJK UNIFIED IDEOGRAPH-4E8C (2)
 <Multi_key> <z> <0> <3>                  : "三"  U4E09   # CJK UNIFIED IDEOGRAPH-4E09 (3)
@@ -2603,12 +2604,14 @@ include "%L"
 <Multi_key> <z> <0> <E> <2>              : "百"  U767E   # CJK UNIFIED IDEOGRAPH-767E (100)
 <Multi_key> <z> <0> <E> <3>              : "千"  U5343   # CJK UNIFIED IDEOGRAPH-5343 (1_000)
 <Multi_key> <z> <0> <E> <4>              : "萬"  U842C   # CJK UNIFIED IDEOGRAPH-842C (10_000)
+<Multi_key> <z> <0> <e> <4>              : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000 simplified)
 <Multi_key> <z> <0> <E> <8>              : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
-# (simpler or simplified)
-<Multi_key> <z> <0> <s> <0>              : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
-<Multi_key> <z> <0> <s> <E> <4>          : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07
-<Multi_key> <z> <0> <s> <E> <8>          : "亿"  U4EBF   # CJK UNIFIED IDEOGRAPH-4EBF
+<Multi_key> <z> <0> <e> <8>              : "亿"  U4EBF   # CJK UNIFIED IDEOGRAPH-4EBF (100_000_000 simplified)
 
+<Multi_key> <z> <a> <Y> <equal>          : "元" U5143    # CJK UNIFIED IDEOGRAPH-5143 (Chinese yuan) (use Y= for ¥)
+<Multi_key> <z> <a> <Y> <dollar>         : "圓" U5713    # CJK UNIFIED IDEOGRAPH-5713 (New Taiwan $)
+<Multi_key> <z> <a> <Y> <j>              : "角" U89D2    # CJK UNIFIED IDEOGRAPH-89D2 (Chinese jiao)
+<Multi_key> <z> <a> <Y> <f>              : "分" U5206    # CJK UNIFIED IDEOGRAPH-5206 (Chinese fen)
 
 ##############
 # D. SYMBOLS #
