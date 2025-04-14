@@ -199,6 +199,7 @@ include "%L"
 <Multi_key> <z> <h>                 : "ʒ"  U0292   # LATIN SMALL LETTER EZH
 <Multi_key> <g> <n>                 : "ɲ"  U0272   # LATIN SMALL LETTER N WITH LEFT HOOK
 <Multi_key> <m> <f>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
+<Multi_key> <m> <g>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
 <Multi_key> <n> <g>                 : "ŋ"  U014B   # LATIN SMALL LETTER ENG
 <Multi_key> <r> <d>                 : "ɾ"  U027E   # LATIN SMALL LETTER R WITH FISHHOOK
 <Multi_key> <g> <w>                 : "ɰ"  U0270   # LATIN SMALL LETTER TURNED M WITH LONG LEG
@@ -308,6 +309,7 @@ include "%L"
 <Multi_key> <V> <backslash>         : "Ʋ"  U01B2   # LATIN CAPITAL LETTER V WITH HOOK
 <Multi_key> <Z> <H>                 : "Ʒ"  U01B7   # LATIN CAPITAL LETTER EZH
 
+<Multi_key> <l> <s>                 : "ſ"  U017F   # LATIN SMALL LETTER LONG S (alternatively fs)
 <Multi_key> <o> <k>                 : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA (OKINA)
 <Multi_key> <W> <N>                 : "Ƿ"  U01F7   # LATIN CAPITAL LETTER WYNN
 <Multi_key> <w> <n>                 : "ƿ"  U01BF   # LATIN LETTER WYNN
@@ -1613,6 +1615,7 @@ include "%L"
 <Multi_key> <g> <a> <S> : "Σ"  U03A3   # GREEK CAPITAL LETTER SIGMA
 <Multi_key> <g> <a> <T> : "Τ"  U03A4   # GREEK CAPITAL LETTER TAU
 <Multi_key> <g> <a> <Y> : "Υ"  U03A5   # GREEK CAPITAL LETTER UPSILON
+<Multi_key> <g> <a> <U> : "Υ"  U03A5   # GREEK CAPITAL LETTER UPSILON
 <Multi_key> <g> <a> <F> : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
 <Multi_key> <g> <b> <P> <H> : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI (alternatively gaF)
 <Multi_key> <g> <a> <C> : "Χ"  U03A7   # GREEK CAPITAL LETTER CHI
@@ -1641,6 +1644,7 @@ include "%L"
 <Multi_key> <g> <a> <s> : "σ"  U03C3   # GREEK SMALL LETTER SIGMA
 <Multi_key> <g> <a> <t> : "τ"  U03C4   # GREEK SMALL LETTER TAU
 <Multi_key> <g> <a> <y> : "υ"  U03C5   # GREEK SMALL LETTER UPSILON
+<Multi_key> <g> <a> <u> : "υ"  U03C5   # GREEK SMALL LETTER UPSILON
 <Multi_key> <g> <a> <f> : "φ"  U03C6   # GREEK SMALL LETTER PHI
 <Multi_key> <g> <b> <p> <h> : "φ"  U03C6   # GREEK SMALL LETTER PHI (alternatively gaf)
 <Multi_key> <g> <a> <c> : "χ"  U03C7   # GREEK SMALL LETTER CHI
@@ -2711,11 +2715,13 @@ include "%L"
 <Multi_key> <F> <C>                : "🤞"  U1F91E        # HAND WITH INDEX AND MIDDLE FINGERS CROSSED
 <Multi_key> <F> <P>                : "🤦"  U1F926        # FACE PALM
 <Multi_key> <F> <Y>                : "🖕"  U1F595        # REVERSED HAND WITH MIDDLE FINGER EXTENDED (FUCK YOU)
+<Multi_key> <H> <S>                : "🤝"  U1F91D        # HANDSHAKE
 <Multi_key> <I> <L> <Y>            : "🤟"  U1F91F        # I LOVE YOU HAND SIGN
 <Multi_key> <J> <H>                : "🤗"  U1F917        # HUGGING FACE (JAZZ HANDS)
 <Multi_key> <M> <T>                : "🙋"  U1F64B        # HAPPY PERSON RAISING ONE HAND (ME TOO)
 <Multi_key> <O> <K>                : "👌"  U1F44C        # OK HAND SIGN
 <Multi_key> <S> <question>         : "🤷"  U1F937        # SHRUG
+<Multi_key> <s> <question>         : "¯\_(ツ)_/¯" U00AF U005C U005F U0028 U30C4 U0029 U005F U002F U00AF    # SHRUGGIE
 <Multi_key> <T> <D>                : "👎"  U1F44E        # THUMBS DOWN SIGN
 <Multi_key> <T> <U>                : "👍"  U1F44D        # THUMBS UP SIGN
 <Multi_key> <T> <Y>                : "🙏"  U1F64F        # PERSON WITH FOLDED HANDS (THANK YOU)
@@ -2818,6 +2824,26 @@ include "%L"
 <Multi_key> <at> <0>      : "︎" UFE0E   # VARIATION SELECTOR-15 (TEXT-STYLE)
 <Multi_key> <z> <w> <j>   : "‍" U200D   # ZERO WIDTH JOINER
 
+# Arrows (emoji presentations of arrows defined below)
+
+<Multi_key> <at> <less> <minus> <greater>               : "↔️" U2194 UFE0F    # LEFT RIGHT ARROW (EMOJI)
+<Multi_key> <at> <asciicircum> <bar> <v>                : "↕️" U2195 UFE0F    # UP DOWN ARROW (EMOJI)
+<Multi_key> <at> <asciicircum> <backslash> <backslash>  : "↖️" U2196 UFE0F    # NORTH WEST ARROW (EMOJI)
+<Multi_key> <at> <less> <backslash> <backslash>         : "↖️" U2196 UFE0F    # NORTH WEST ARROW (EMOJI)
+<Multi_key> <at> <asciicircum> <slash> <slash>          : "↗️" U2197 UFE0F    # NORTH EAST ARROW (EMOJI)
+<Multi_key> <at> <slash> <slash> <greater>              : "↗️" U2197 UFE0F    # NORTH EAST ARROW (EMOJI)
+<Multi_key> <at> <backslash> <backslash> <greater>      : "↘️" U2198 UFE0F    # SOUTH EAST ARROW (EMOJI)
+<Multi_key> <at> <backslash> <backslash> <v>            : "↘️" U2198 UFE0F    # SOUTH EAST ARROW (EMOJI)
+<Multi_key> <at> <less> <slash> <slash>                 : "↙️" U2199 UFE0F    # SOUTH WEST ARROW (EMOJI)
+<Multi_key> <at> <slash> <slash> <v>                    : "↙️" U2199 UFE0F    # SOUTH WEST ARROW (EMOJI)
+<Multi_key> <at> <less> <minus> <parenright>            : "↩️" U21A9 UFE0F    # LEFTWARDS ARROW WITH HOOK (EMOJI)
+<Multi_key> <at> <parenleft> <minus> <greater>          : "↪️" U21AA UFE0F    # RIGHTWARDS ARROW WITH HOOK (EMOJI)
+<Multi_key> <at> <greater> <bar> <asciicircum>          : "⤴️" U2934 UFE0F    # ARROW POINTING RIGHTWARDS THEN CURVING UPWARDS (EMOJI)
+<Multi_key> <at> <greater> <bar> <v>                    : "⤵️" U2935 UFE0F    # ARROW POINTING RIGHTWARDS THEN CURVING DOWNWARDS (EMOJI)
+<Multi_key> <at> <less> <minus> <minus>                 : "⬅️" U2B05 UFE0F    # LEFTWARDS BLACK ARROW (EMOJI)
+<Multi_key> <at> <asciicircum> <bar> <bar>              : "⬆️" U2B06 UFE0F    # UPWARDS BLACK ARROW (EMOJI)
+<Multi_key> <at> <bar> <bar> <v>                        : "⬇️" U2B07 UFE0F    # DOWNWARDS BLACK ARROW (EMOJI)
+
 ##########
 # Arrows #
 ##########
@@ -2867,8 +2893,8 @@ include "%L"
 <Multi_key> <Tab> <greater> <bar> <bar>                  : "↱" U21B1    # UPWARDS ARROW WITH TIP RIGHTWARDS
 <Multi_key> <Tab> <bar> <bar> <less>                     : "↲" U21B2    # DOWNWARDS ARROW WITH TIP LEFTWARDS
 <Multi_key> <Tab> <bar> <bar> <greater>                  : "↳" U21B3    # DOWNWARDS ARROW WITH TIP RIGHTWARDS
-<Multi_key> <Tab> <greater> <bar> <v>                    : "↴" U21B4    # RIGHTWARDS ARROW WITH CORNER DOWNWARDS
-<Multi_key> <Tab> <v> <minus> <less>                     : "↵" U21B5    # DOWNWARDS ARROW WITH CORNER LEFTWARDS
+<Multi_key> <Tab> <minus> <L> <v>                        : "↴" U21B4    # RIGHTWARDS ARROW WITH CORNER DOWNWARDS
+<Multi_key> <Tab> <bar> <L> <less>                       : "↵" U21B5    # DOWNWARDS ARROW WITH CORNER LEFTWARDS
 <Multi_key> <Tab> <v> <parenleft> <parenright>           : "↶" U21B6    # ANTICLOCKWISE TOP SEMICIRCLE ARROW
 <Multi_key> <Tab> <parenleft> <parenright> <v>           : "↷" U21B7    # CLOCKWISE TOP SEMICIRCLE ARROW
 <Multi_key> <Tab> <2> <bar> <bar>                        : "↹" U21B9    # LEFTWARDS ARROW TO BAR OVER RIGHTWARDS ARROW TO BAR
@@ -2931,9 +2957,15 @@ include "%L"
 <Multi_key> <Tab> <0> <0> <v>                            : "⇩" U21E9    # DOWNWARDS WHITE ARROW
 <Multi_key> <Tab> <asciicircum> <0> <period>             : "⇪" U21EA    # UPWARDS WHITE ARROW FROM BAR
 <Multi_key> <Tab> <asciicircum> <0> <minus>              : "⇫" U21EB    # UPWARDS WHITE ARROW ON PEDESTAL
+<Multi_key> <Tab> <asciicircum> <C> <L>                  : "⇬" U21EC    # UPWARDS WHITE ARROW ON PEDESTAL WITH HORIZONTAL BAR (CAPS LOCK)
+<Multi_key> <Tab> <asciicircum> <N> <L>                  : "⇭" U21ED    # UPWARDS WHITE ARROW ON PEDESTAL WITH VERTICAL BAR (NUM LOCK)
 <Multi_key> <Tab> <asciicircum> <asciicircum> <0> <0>    : "⇮" U21EE    # UPWARDS WHITE DOUBLE ARROW
 <Multi_key> <Tab> <asciicircum> <asciicircum> <0> <minus> : "⇯" U21EF    # UPWARDS WHITE DOUBLE ARROW ON PEDESTAL
 <Multi_key> <Tab> <bar> <0> <greater>                    : "⇰" U21F0    # RIGHTWARDS WHITE ARROW FROM WALL
+<Multi_key> <Tab> <less> <less> <backslash>              : "⇱" U21F1    # NORTH WEST ARROW TO CORNER
+<Multi_key> <Tab> <asciicircum> <asciicircum> <backslash> : "⇱" U21F1    # NORTH WEST ARROW TO CORNER
+<Multi_key> <Tab> <backslash> <greater> <greater>        : "⇲" U21F2    # SOUTH EAST ARROW TO CORNER
+<Multi_key> <Tab> <backslash> <v> <v>                    : "⇲" U21F2    # SOUTH EAST ARROW TO CORNER
 <Multi_key> <Tab> <asciicircum> <0> <v>                  : "⇳" U21F3    # UP DOWN WHITE ARROW
 
 <Multi_key> <Tab> <minus> <o> <greater>                  : "⇴" U21F4    # RIGHT ARROW WITH SMALL CIRCLE
@@ -2973,6 +3005,9 @@ include "%L"
 <Multi_key> <Tab> <greater> <minus> <minus>              : "⤚" U291A    # RIGHTWARDS ARROW-TAIL
 <Multi_key> <Tab> <minus> <less> <less>                  : "⤛" U291B    # LEFTWARDS DOUBLE ARROW-TAIL
 <Multi_key> <Tab> <greater> <greater> <minus>            : "⤜" U291C    # RIGHTWARDS DOUBLE ARROW-TAIL
+
+<Multi_key> <Tab> <greater> <bar> <asciicircum>          : "⤴" U2934    # ARROW POINTING RIGHTWARDS THEN CURVING UPWARDS
+<Multi_key> <Tab> <greater> <bar> <v>                    : "⤵" U2935    # ARROW POINTING RIGHTWARDS THEN CURVING DOWNWARDS
 
 <Multi_key> <Tab> <O> <less>                             : "⥀" U2940    # ANTICLOCKWISE CLOSED CIRCLE ARROW
 <Multi_key> <Tab> <O> <greater>                          : "⥁" U2941    # CLOCKWISE CLOSED CIRCLE ARROW
