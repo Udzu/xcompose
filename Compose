@@ -1671,6 +1671,7 @@ include "%L"
 ##############
 
 <Multi_key> <h> <a> <a>        : "א"  U05D0   # HEBREW LETTER ALEF
+<Multi_key> <h> <a> <apostrophe> : "א"  U05D0   # HEBREW LETTER ALEF
 <Multi_key> <h> <a> <b>        : "ב"  U05D1   # HEBREW LETTER BET
 <Multi_key> <h> <a> <g>        : "ג"  U05D2   # HEBREW LETTER GIMEL
 <Multi_key> <h> <a> <d>        : "ד"  U05D3   # HEBREW LETTER DALET
@@ -1679,8 +1680,8 @@ include "%L"
 <Multi_key> <h> <a> <z>        : "ז"  U05D6   # HEBREW LETTER ZAYIN
 <Multi_key> <h> <a> <H>        : "ח"  U05D7   # HEBREW LETTER HET
 <Multi_key> <h> <a> <T>        : "ט"  U05D8   # HEBREW LETTER TET
-<Multi_key> <h> <a> <i>        : "י"  U05D9   # HEBREW LETTER YOD
 <Multi_key> <h> <a> <y>        : "י"  U05D9   # HEBREW LETTER YOD
+<Multi_key> <h> <a> <i>        : "י"  U05D9   # HEBREW LETTER YOD
 <Multi_key> <h> <a> <less> <k> : "ך"  U05DA   # HEBREW LETTER FINAL KAF
 <Multi_key> <h> <a> <k>        : "כ"  U05DB   # HEBREW LETTER KAF
 <Multi_key> <h> <a> <l>        : "ל"  U05DC   # HEBREW LETTER LAMED
@@ -1690,6 +1691,7 @@ include "%L"
 <Multi_key> <h> <a> <n>        : "נ"  U05E0   # HEBREW LETTER NUN
 <Multi_key> <h> <a> <s>        : "ס"  U05E1   # HEBREW LETTER SAMEKH
 <Multi_key> <h> <a> <e>        : "ע"  U05E2   # HEBREW LETTER AYIN
+<Multi_key> <h> <a> <grave>    : "ע"  U05E2   # HEBREW LETTER AYIN
 <Multi_key> <h> <a> <less> <p> : "ף"  U05E3   # HEBREW LETTER FINAL PE
 <Multi_key> <h> <a> <less> <f> : "ף"  U05E3   # HEBREW LETTER FINAL PE
 <Multi_key> <h> <a> <p>        : "פ"  U05E4   # HEBREW LETTER PE
@@ -1728,6 +1730,7 @@ include "%L"
 <Multi_key> <h> <semicolon> <minus> <minus> : "־"  U05BE   # HEBREW PUNCTUATION MAQAF
 <Multi_key> <h> <semicolon> <apostrophe>    : "׳"  U05F3   # HEBREW PUNCTUATION GERESH
 <Multi_key> <h> <semicolon> <quotedbl>      : "״"  U05F4   # HEBREW PUNCTUATION GERSHAYIM
+<Multi_key> <h> <semicolon> <plus>          : "﬩" UFB29    # HEBREW LETTER ALTERNATIVE PLUS SIGN
 
 # (p = Palaeo-Hebrew/Phoenician)
 
@@ -2484,9 +2487,9 @@ include "%L"
 <Multi_key> <r> <b> <k> <j>      : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 <Multi_key> <r> <b> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 
-############################################
-# (z) Bopomofo/Zhuyin and Chinese/Zhongwen #
-############################################
+##############################################################
+# (z) Bopomofo/Zhuyin (and some additional Chinese/Zhongwen) #
+##############################################################
 
 # (a = one-letter, b = two-letter)
 
@@ -2688,20 +2691,28 @@ include "%L"
 <Multi_key> <a> <l> <e> <p> <h>         : "ℵ"  U2135   # ALEF SYMBOL
 <Multi_key> <a> <l> <p> <h> <a>         : "α"  U03B1   # GREEK SMALL LETTER ALPHA
 <Multi_key> <b> <e> <t> <a>             : "β"  U03B2   # GREEK SMALL LETTER BETA (conflicts with ĕ, use ue)
+<Multi_key> <d> <e> <l> <Return>        : "∇"  U2207   # NABLA (alternatively nabla)
 <Multi_key> <d> <e> <l> <t> <a>         : "δ"  U03B4   # GREEK SMALL LETTER DELTA
 <Multi_key> <e> <p> <s> <i> <l> <o> <n> : "ε"  U03B5   # GREEK SMALL LETTER EPSILON
+<Multi_key> <h> <b> <a> <r>             : "ℏ"  U210F   # PLANCK CONSTANT OVER TWO PI
 <Multi_key> <l> <a> <m> <b> <d> <a>     : "λ"  U03BB   # GREEK SMALL LETTER LAMDA
 <Multi_key> <l> <a> <m> <b> <d> <slash> : "ƛ"  U019B   # LATIN SMALL LETTER LAMBDA WITH STROKE
 <Multi_key> <l> <a> <m> <b> <d> <minus> : "ƛ"  U019B   # LATIN SMALL LETTER LAMBDA WITH STROKE
 <Multi_key> <l> <i> <t> <r> <e>         : "ℓ"  U2113   # SCRIPT SMALL L
+<Multi_key> <m> <h> <o>                 : "℧"  U2127   # INVERTED OHM SIGN (MHO)
+<Multi_key> <m> <i> <c> <r> <o>         : "µ"  U00B5   # MICRO SIGN
 <Multi_key> <m> <u>                     : "µ"  U00B5   # MICRO SIGN
+<Multi_key> <n> <a> <b> <l> <a>         : "∇"  U2207   # NABLA
 <Multi_key> <n> <u>                     : "ν"  U03BD   # GREEK SMALL LETTER NU
 <Multi_key> <o> <h> <m>                 : "Ω"  U2126   # OHM SIGN
 <Multi_key> <o> <m> <e> <g> <a>         : "ω"  U03C9   # GREEK SMALL LETTER OMEGA
+<Multi_key> <o> <z>                     : "℥"  U2125   # OUNCE SIGN
+<Multi_key> <p> <a> <r> <t>             : "∂"  U2202   # PARTIAL DIFFERENTIAL
 <Multi_key> <p> <i>                     : "π"  U03C0   # GREEK SMALL LETTER PI
 <Multi_key> <p> <s> <i>                 : "ψ"  U03C8   # GREEK SMALL LETTER PSI
 <Multi_key> <r> <h> <o>                 : "ρ"  U03C1   # GREEK SMALL LETTER RHO
 <Multi_key> <s> <i> <g> <m> <a>         : "σ"  U03C3   # GREEK SMALL LETTER SIGMA
+<Multi_key> <w> <p>                     : "℘"  U2118   # SCRIPT CAPITAL P (WEIERSTRASS ELLIPTIC FUNCTION)
 <Multi_key> <z> <e> <t> <a>             : "ζ"  U03B6   # GREEK SMALL LETTER ZETA
 <Multi_key> <D> <E> <L> <T> <A>         : "∆"  U2206   # INCREMENT
 <Multi_key> <P> <H> <I>                 : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
@@ -2710,7 +2721,6 @@ include "%L"
 <Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va)
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
 <Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
-<Multi_key> <d> <e> <l> <Return>        : "∇"  U2207   # NABLA (alternatively nabla)
 <Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN (override)
 <Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter)
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
@@ -2722,7 +2732,6 @@ include "%L"
 <Multi_key> <i> <s> <i> <n>             : "∈"  U2208   # ELEMENT OF
 <Multi_key> <l> <a> <n> <d>             : "∧"  U2227   # LOGICAL AND (alternatively /\)
 <Multi_key> <l> <o> <r>                 : "∨"  U2228   # LOGICAL OR (alternatively \/)
-<Multi_key> <n> <a> <b> <l> <a>         : "∇"  U2207   # NABLA
 <Multi_key> <n> <i>                     : "∋"  U220B   # CONTAINS AS MEMBER
 <Multi_key> <n> <o> <t> <i> <n>         : "∉"  U2209   # NOT AN ELEMENT OF
 <Multi_key> <n> <o> <t> <n> <i>         : "∌"  U220C   # DOES NOT CONTAIN AS MEMBER
@@ -2733,9 +2742,6 @@ include "%L"
 <Multi_key> <o> <i> <i> <i> <n> <t>     : "∰"  U2230   # VOLUME INTEGRAL
 <Multi_key> <o> <i> <i> <n> <t>         : "∯"  U222F   # SURFACE INTEGRAL
 <Multi_key> <o> <i> <n> <t>             : "∮"  U222E   # CONTOUR INTEGRAL
-<Multi_key> <m> <h> <o>                 : "℧"  U2127   # INVERTED OHM SIGN (MHO)
-<Multi_key> <o> <z>                     : "℥"  U2125   # OUNCE SIGN
-<Multi_key> <p> <a> <r> <t>             : "∂"  U2202   # PARTIAL DIFFERENTIAL
 <Multi_key> <p> <r> <e> <c> <Return>    : "≺"  U227A   # PRECEDES
 <Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
 <Multi_key> <p> <r> <o> <d>             : "∏"  U220F   # N-ARY PRODUCT
@@ -2752,7 +2758,7 @@ include "%L"
 <Multi_key> <s> <u> <p> <Return>        : "⊃"  U2283   # SUPERSET OF
 <Multi_key> <s> <u> <p> <e> <q>         : "⊇"  U2287   # SUPERSET OF OR EQUAL TO
 <Multi_key> <s> <u> <p> <n> <e> <q>     : "⊋"  U228B   # SUPERSET OF WITH NOT EQUAL TO
-<Multi_key> <x> <o> <r>                 : "⊻" U22BB    # XOR (conflicts with ¤, use ox)
+<Multi_key> <x> <o> <r>                 : "⊻"  U22BB   # XOR (conflicts with ¤, use ox)
 <Multi_key> <Q> <E> <D>                 : "∎"  U220E   # END OF PROOF
 
 # Logic symbols
@@ -2767,6 +2773,7 @@ include "%L"
 <Multi_key> <ampersand> <slash> <E>   : "∄"  U2204   # THERE DOES NOT EXIST
 <Multi_key> <ampersand> <C>           : "⊂"  U2282   # SUBSET OF (CONSEQUENCE OF)
 <Multi_key> <ampersand> <less> <C>    : "⊃"  U2283   # SUPERSET OF (IMPLIES)
+<Multi_key> <ampersand> <ampersand>   : "⅋" U214B    # TURNED AMPERSAND (INTENSIONAL DISJUNCTION)
 
 <Multi_key> <ampersand> <bracketleft> <bracketright> : "□"  U25A1   # WHITE SQUARE (NECESSITY)
 <Multi_key> <ampersand> <less> <greater>             : "◇"  U25C7   # WHITE DIAMOND (POSSIBILITY)
@@ -2801,19 +2808,31 @@ include "%L"
 <Multi_key> <colon> <parenleft>    : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI (overrides ☹ )
 <Multi_key> <colon> <bracketleft>  : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI
 <Multi_key> <colon> <D>            : "😃"  U1F603        # SMILING FACE WITH OPEN MOUTH
+<Multi_key> <colon> <E>            : "😬"  U1F62C        # GRIMACING FACE
+<Multi_key> <colon> <J>            : "😏"  U1F60F        # SMIRKING FACE
+<Multi_key> <colon> <O>            : "😮"  U1F62E        # FACE WITH OPEN MOUTH
 <Multi_key> <colon> <P>            : "😛"  U1F61B        # FACE WITH STUCK-OUT TONGUE
-<Multi_key> <semicolon> <P>        : "😜"  U1F61C        # FACE WITH STUCK-OUT TONGUE AND WINKING EYE
+<Multi_key> <colon> <numbersign>   : "🤐"  U1F910        # ZIPPER-MOUTH FACE
 <Multi_key> <colon> <asterisk>     : "😘"  U1F618        # FACE THROWING A KISS
 <Multi_key> <colon> <bar>          : "😐"  U1F610        # NEUTRAL FACE
-<Multi_key> <x> <D>                : "😆"  U1F606        # SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES
+<Multi_key> <colon> <slash>        : "🫤"  U1FAE4        # FACE WITH DIAGONAL MOUTH
 <Multi_key> <colon> <apostrophe> <parenleft> : "😢"  U1F622   # CRYING FACE
-<Multi_key> <semicolon> <parenright>         : "😉"  U1F609   # WINKING FACE
+<Multi_key> <colon> <apostrophe> <parenright> : "🥲" U1F972   # SMILING FACE WITH TEAR
+<Multi_key> <percent> <parenright> : "😵‍💫" U1F635 U200D U1F4AB    # FACE WITH SPIRAL EYES
+<Multi_key> <semicolon> <parenright> : "😉"  U1F609   # WINKING FACE
+<Multi_key> <semicolon> <P>        : "😜"  U1F61C        # FACE WITH STUCK-OUT TONGUE AND WINKING EYE
+<Multi_key> <x> <D>                : "😆"  U1F606        # SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES
 <Multi_key> <greater> <colon> <parenleft>    : "😡"  U1F621   # POUTING FACE
+<Multi_key> <greater> <colon> <parenright>   : "😈"  U1F608   # SMILING FACE WITH HORNS
 <Multi_key> <O> <colon> <parenright>         : "😇"  U1F607   # SMILING FACE WITH HALO
 <Multi_key> <parenleft> <colon>    : "🙃"  U1F643        # UPSIDE-DOWN FACE
+<Multi_key> <backslash> <o> <slash> : "🙌" U1F64C        # PERSON RAISING BOTH HANDS IN CELEBRATION
 <Multi_key> <o> <7>                : "🫡"  U1FAE1        # SALUTING FACE
 <Multi_key> <q> <q>                : "🥺"  U1F97A        # FACE WITH PLEADING EYES
 <Multi_key> <u> <w> <u>            : "😌"  U1F60C        # RELIEVED FACE
+<Multi_key> <x> <underscore> <x>   : "😵"  U1F635        # DIZZY FACE
+<Multi_key> <Q> <underscore> <Q>   : "ಠ_ಠ"               # LOOK OF DISAPPROVAL
+<Multi_key> <greater> <less> <greater> : "🐟" U1F41F     # FISH (conflicts with ⋄, use diamond)
 
 <Multi_key> <less> <3> <Return>    : "❤️"  U2764 UFE0F   # HEAVY BLACK HEART EMOJI (overrides ♥ )
 <Multi_key> <less> <3> <equal>     : "❤️‍🩹" U2764 UFE0F U200D U1FA79   # MENDING HEART
@@ -2846,10 +2865,11 @@ include "%L"
 <Multi_key> <H> <S>                : "🤝"  U1F91D        # HANDSHAKE
 <Multi_key> <I> <L> <Y>            : "🤟"  U1F91F        # I LOVE YOU HAND SIGN
 <Multi_key> <J> <H>                : "🤗"  U1F917        # HUGGING FACE (JAZZ HANDS)
+<Multi_key> <L> <L> <A> <P>        : "🖖"  U1F596        # RAISED HAND WITH PART BETWEEN MIDDLE AND RING FINGERS (LIVE LONG AND PROSPER)
 <Multi_key> <M> <T>                : "🙋"  U1F64B        # HAPPY PERSON RAISING ONE HAND (ME TOO)
 <Multi_key> <O> <K>                : "👌"  U1F44C        # OK HAND SIGN
 <Multi_key> <S> <question>         : "🤷"  U1F937        # SHRUG
-<Multi_key> <s> <question>         : "¯\_(ツ)_/¯" U00AF U005C U005F U0028 U30C4 U0029 U005F U002F U00AF    # SHRUGGIE
+<Multi_key> <s> <question>         : "¯\_(ツ)_/¯"        # SHRUGGIE
 <Multi_key> <T> <D>                : "👎"  U1F44E        # THUMBS DOWN SIGN
 <Multi_key> <T> <U>                : "👍"  U1F44D        # THUMBS UP SIGN
 <Multi_key> <T> <Y>                : "🙏"  U1F64F        # PERSON WITH FOLDED HANDS (THANK YOU)
@@ -2861,20 +2881,36 @@ include "%L"
 <Multi_key> <1> <slash>            : "🧵"  U1F9F5        # SPOOL OF THREAD
 
 <Multi_key> <a> <r> <g> <h>        : "😱"  U1F631        # FACE SCREAMING IN FEAR (ARGH)
+<Multi_key> <b> <e> <e> <r>        : "🍺"  U1F37A        # BEER MUG (conflicts with ĕ, use ue)
+<Multi_key> <c> <l> <o> <w> <n>    : "🤡"  U1F921        # CLOWN FACE (conflicts with ľ, use <l)
 <Multi_key> <c> <o> <o> <l>        : "😎"  U1F60E        # SMILING FACE WITH SUNGLASSES (COOL) (conflicts with ǒ, use vo)
+<Multi_key> <c> <o> <y>            : "🤭"  U1F92D        # SMILING FACE WITH SMILING EYES AND HAND COVERING MOUTH (COY) (conflicts with ǒ, use vo)
 <Multi_key> <d> <e> <a> <d>        : "💀"  U1F480        # SKULL (DEAD)
+<Multi_key> <d> <o> <u> <b> <t>    : "🤨"  U1F928        # FACE WITH ONE EYEBROW RAISED (DOUBT)
+<Multi_key> <d> <r> <u> <n> <k>    : "🥴"  U1F974        # FACE WITH UNEVEN EYES AND WAVY MOUTH (DRUNK)
 <Multi_key> <e> <y> <e> <s>        : "👀"  U1F440        # EYES
-<Multi_key> <h> <i>                : "👋"  U1F44B        # WAVING HAND SIGN
+<Multi_key> <h> <i>                : "👋"  U1F44B        # WAVING HAND SIGN (HI)
 <Multi_key> <h> <m> <m>            : "🤔"  U1F914        # THINKING FACE (HMM)
 <Multi_key> <h> <o> <t>            : "🔥"  U1F525        # FIRE (HOT)
-<Multi_key> <i> <d> <e> <a>        : "💡"  U1F4A1        # ELECTRIC LIGHT BULB
+<Multi_key> <h> <u> <s> <h>        : "🤫"  U1F92B        # FACE WITH FINGER COVERING CLOSED LIPS (HUSH)
+<Multi_key> <i> <d> <e> <a>        : "💡"  U1F4A1        # ELECTRIC LIGHT BULB (IDEA)
 <Multi_key> <k> <i> <s> <s>        : "💋"  U1F48B        # KISS MARK
+<Multi_key> <l> <e> <n> <n> <y>    : "( ͡° ͜ʖ ͡°)"          # LENNY FACE
+<Multi_key> <l> <i> <p> <s>        : "🫦"  U1FAE6        # BITING LIP
 <Multi_key> <l> <o> <l>            : "😂"  U1F602        # FACE WITH TEARS OF JOY (LOL)
+<Multi_key> <n> <e> <r> <d>        : "🤓"  U1F913        # NERD FACE
+<Multi_key> <p> <u> <k> <e>        : "🤮"  U1F92E        # FACE WITH OPEN MOUTH VOMITING (PUKE)
+<Multi_key> <r> <o> <b> <o> <t>    : "🤖"  U1F916        # ROBOT FACE
 <Multi_key> <r> <o> <f> <l>        : "🤣"  U1F923        # ROLLING ON THE FLOOR LAUGHING (ROFL)
+<Multi_key> <s> <a> <d>            : "😔"  U1F614        # PENSIVE FACE
 <Multi_key> <s> <t> <o> <p>        : "✋"  U270B         # RAISED HAND (STOP)
 <Multi_key> <S> <T> <O> <P>        : "⛔"  U26D4         # NO ENTRY (STOP)
+<Multi_key> <s> <t> <r> <o> <n> <g> : "💪" U1F4AA        # FLEXED BICEPS
+<Multi_key> <w> <a> <h>            : "😭"  U1F62D        # LOUDLY CRYING FACE (WAH)
+<Multi_key> <w> <i> <n> <e>        : "🍷"  U1F377        # WINE GLASS
+<Multi_key> <y> <a> <w> <n>        : "🥱"  U1F971        # YAWNING FACE
 <Multi_key> <y> <a> <y>            : "🎉"  U1F389        # PARTY POPPER (YAY)
-<Multi_key> <y> <o> <u>            : "🫵"  U1FAF5        # INDEX POINTING AT THE VIEWER
+<Multi_key> <y> <o> <u>            : "🫵"  U1FAF5        # INDEX POINTING AT THE VIEWER (YOU)
 <Multi_key> <z> <z> <z>            : "💤"  U1F4A4        # SLEEPING SYMBOL (ZZZ)
 <Multi_key> <1> <0> <0>            : "💯"  U1F4AF        # HUNDRED POINTS SYMBOL
 

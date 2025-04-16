@@ -23,20 +23,20 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (68): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (972)
+### Non-Latin script characters (973)
 * **Greek** (60): Ρέντιτ etc
 * **Cyrillic** (92): Ре́ддит etc
 * **Arabic** (68): ⁧رِيدِيت⁩ etc
-* **Hebrew** (75): ⁧רֶדִיט⁩ etc
+* **Hebrew** (76): ⁧רֶדִיט⁩ etc
 * **Korean** (via jamo) (118): 레딧 etc
 * **Japanese** (kana) (301): 「レヂィット」 etc
 * **Bopomofo** (104): ㄏㄨㄥˊㄉㄧˊ etc
 * **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **International Morse Code** (76): ···---··· etc
 
-### Symbols (843)
-* **Math and science** (141): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ ∃ A.A ⊊ B∖A etc.
-* **Emoji** (140): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+### Symbols (875)
+* **Math and science** (144): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ ∃ A.A ⊊ B∖A etc.
+* **Emoji** (169): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Arrows** (154): ↦ ↺ ⇄ ⇼ ⏎ etc
