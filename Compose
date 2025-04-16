@@ -2773,7 +2773,7 @@ include "%L"
 <Multi_key> <ampersand> <slash> <E>   : "∄"  U2204   # THERE DOES NOT EXIST
 <Multi_key> <ampersand> <C>           : "⊂"  U2282   # SUBSET OF (CONSEQUENCE OF)
 <Multi_key> <ampersand> <less> <C>    : "⊃"  U2283   # SUPERSET OF (IMPLIES)
-<Multi_key> <ampersand> <ampersand>   : "⅋" U214B    # TURNED AMPERSAND
+<Multi_key> <ampersand> <ampersand>   : "⅋" U214B    # TURNED AMPERSAND (INTENSIONAL DISJUNCTION)
 
 <Multi_key> <ampersand> <bracketleft> <bracketright> : "□"  U25A1   # WHITE SQUARE (NECESSITY)
 <Multi_key> <ampersand> <less> <greater>             : "◇"  U25C7   # WHITE DIAMOND (POSSIBILITY)
@@ -2808,11 +2808,13 @@ include "%L"
 <Multi_key> <colon> <parenleft>    : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI (overrides ☹ )
 <Multi_key> <colon> <bracketleft>  : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI
 <Multi_key> <colon> <D>            : "😃"  U1F603        # SMILING FACE WITH OPEN MOUTH
+<Multi_key> <colon> <E>            : "😬"  U1F62C        # GRIMACING FACE
 <Multi_key> <colon> <P>            : "😛"  U1F61B        # FACE WITH STUCK-OUT TONGUE
 <Multi_key> <semicolon> <P>        : "😜"  U1F61C        # FACE WITH STUCK-OUT TONGUE AND WINKING EYE
 <Multi_key> <colon> <asterisk>     : "😘"  U1F618        # FACE THROWING A KISS
 <Multi_key> <colon> <bar>          : "😐"  U1F610        # NEUTRAL FACE
 <Multi_key> <x> <D>                : "😆"  U1F606        # SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES
+<Multi_key> <percent> <parenright> : "😵‍💫" U1F635 U200D U1F4AB    # FACE WITH SPIRAL EYES
 <Multi_key> <colon> <apostrophe> <parenleft> : "😢"  U1F622   # CRYING FACE
 <Multi_key> <semicolon> <parenright>         : "😉"  U1F609   # WINKING FACE
 <Multi_key> <greater> <colon> <parenleft>    : "😡"  U1F621   # POUTING FACE
@@ -2872,7 +2874,7 @@ include "%L"
 <Multi_key> <b> <e> <e> <r>        : "🍺"  U1F37A        # BEER MUG (conflicts with ĕ, use ue)
 <Multi_key> <c> <l> <o> <w> <n>    : "🤡"  U1F921        # CLOWN FACE (conflicts with ľ, use <l)
 <Multi_key> <c> <o> <o> <l>        : "😎"  U1F60E        # SMILING FACE WITH SUNGLASSES (COOL) (conflicts with ǒ, use vo)
-<Multi_key> <c> <o> <y>            : "🤭"  U1F92D        # SMILING FACE WITH SMILING EYES AND HAND COVERING MOUTH (conflicts with ǒ, use vo)
+<Multi_key> <c> <o> <y>            : "🤭"  U1F92D        # SMILING FACE WITH SMILING EYES AND HAND COVERING MOUTH (COY) (conflicts with ǒ, use vo)
 <Multi_key> <d> <e> <a> <d>        : "💀"  U1F480        # SKULL (DEAD)
 <Multi_key> <d> <o> <u> <b> <t>    : "🤨"  U1F928        # FACE WITH ONE EYEBROW RAISED (DOUBT)
 <Multi_key> <d> <r> <u> <n> <k>    : "🥴"  U1F974        # FACE WITH UNEVEN EYES AND WAVY MOUTH (DRUNK)
