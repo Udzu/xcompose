@@ -2809,28 +2809,32 @@ include "%L"
 <Multi_key> <colon> <bracketright> : "😊"  U1F60A        # SMILING FACE WITH SMILING EYES
 <Multi_key> <colon> <parenleft>    : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI (overrides ☹ )
 <Multi_key> <colon> <bracketleft>  : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI
+<Multi_key> <colon> <braceleft>    : "😞"  U1F61E        # DISAPPOINTED FACE
 <Multi_key> <colon> <D>            : "😃"  U1F603        # SMILING FACE WITH OPEN MOUTH
 <Multi_key> <colon> <E>            : "😬"  U1F62C        # GRIMACING FACE
 <Multi_key> <colon> <J>            : "😏"  U1F60F        # SMIRKING FACE
+<Multi_key> <colon> <L>            : "😕"  U1F615        # CONFUSED FACE
 <Multi_key> <colon> <O>            : "😮"  U1F62E        # FACE WITH OPEN MOUTH
 <Multi_key> <colon> <P>            : "😛"  U1F61B        # FACE WITH STUCK-OUT TONGUE
-<Multi_key> <colon> <numbersign>   : "🤐"  U1F910        # ZIPPER-MOUTH FACE
+<Multi_key> <colon> <x>            : "😙"  U1F619        # KISSING FACE WITH SMILING EYES
 <Multi_key> <colon> <asterisk>     : "😘"  U1F618        # FACE THROWING A KISS
+<Multi_key> <colon> <numbersign>   : "🤐"  U1F910        # ZIPPER-MOUTH FACE
 <Multi_key> <colon> <bar>          : "😐"  U1F610        # NEUTRAL FACE
 <Multi_key> <colon> <slash>        : "🫤"  U1FAE4        # FACE WITH DIAGONAL MOUTH
-<Multi_key> <colon> <apostrophe> <parenleft> : "😢"  U1F622   # CRYING FACE
-<Multi_key> <colon> <apostrophe> <parenright> : "🥲" U1F972   # SMILING FACE WITH TEAR
+<Multi_key> <colon> <apostrophe> <parenleft>  : "😢"  U1F622   # CRYING FACE
+<Multi_key> <colon> <apostrophe> <parenright> : "🥲"  U1F972   # SMILING FACE WITH TEAR
 <Multi_key> <percent> <parenright> : "😵‍💫" U1F635 U200D U1F4AB    # FACE WITH SPIRAL EYES
 <Multi_key> <semicolon> <parenright> : "😉"  U1F609   # WINKING FACE
 <Multi_key> <semicolon> <P>        : "😜"  U1F61C        # FACE WITH STUCK-OUT TONGUE AND WINKING EYE
 <Multi_key> <x> <D>                : "😆"  U1F606        # SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES
 <Multi_key> <x> <P>                : "😝"  U1F61D        # FACE WITH STUCK-OUT TONGUE AND TIGHTLY-CLOSED EYES
 <Multi_key> <x> <parenleft>        : "😫"  U1F62B        # TIRED FACE
-<Multi_key> <greater> <colon> <parenleft>    : "😡"  U1F621   # POUTING FACE
-<Multi_key> <greater> <colon> <parenright>   : "😈"  U1F608   # SMILING FACE WITH HORNS
-<Multi_key> <O> <colon> <parenright>         : "😇"  U1F607   # SMILING FACE WITH HALO
+<Multi_key> <x> <braceleft>        : "😖"  U1F616        # CONFOUNDED FACE
+<Multi_key> <greater> <colon> <parenleft>     : "😡"  U1F621   # POUTING FACE
+<Multi_key> <greater> <colon> <parenright>    : "😈"  U1F608   # SMILING FACE WITH HORNS
+<Multi_key> <O> <colon> <parenright>          : "😇"  U1F607   # SMILING FACE WITH HALO
 <Multi_key> <apostrophe> <colon> <parenright> : "😅" U1F605    # SMILING FACE WITH OPEN MOUTH AND COLD SWEAT
-<Multi_key> <apostrophe> <colon> <parenleft> : "😓" U1F613    # FACE WITH COLD SWEAT
+<Multi_key> <apostrophe> <colon> <parenleft>  : "😓" U1F613    # FACE WITH COLD SWEAT
 <Multi_key> <parenleft> <colon>    : "🙃"  U1F643        # UPSIDE-DOWN FACE
 <Multi_key> <backslash> <o> <slash> : "🙌" U1F64C        # PERSON RAISING BOTH HANDS IN CELEBRATION
 <Multi_key> <o> <7>                : "🫡"  U1FAE1        # SALUTING FACE
@@ -2838,6 +2842,7 @@ include "%L"
 <Multi_key> <u> <w> <u>            : "😌"  U1F60C        # RELIEVED FACE
 <Multi_key> <x> <underscore> <x>   : "😵"  U1F635        # DIZZY FACE
 <Multi_key> <Q> <underscore> <Q>   : "ಠ_ಠ"               # LOOK OF DISAPPROVAL
+<Multi_key> <at> <underscore> <at> : "😵‍💫" U1F635 U200D U1F4AB    # FACE WITH SPIRAL EYES
 <Multi_key> <dollar> <underscore> <dollar> : "🤑" U1F911    # MONEY-MOUTH FACE
 <Multi_key> <greater> <less> <greater> : "🐟" U1F41F     # FISH (conflicts with ⋄, use diamond)
 
@@ -2913,6 +2918,7 @@ include "%L"
 <Multi_key> <c> <a> <l> <l>        : "🤙"  U1F919        # CALL ME HAND (conflicts with ǎ, use va)
 <Multi_key> <c> <l> <o> <w> <n>    : "🤡"  U1F921        # CLOWN FACE (conflicts with ľ, use <l)
 <Multi_key> <c> <o> <o> <l>        : "😎"  U1F60E        # SMILING FACE WITH SUNGLASSES (COOL) (conflicts with ǒ, use vo)
+<Multi_key> <c> <o> <v> <i> <d>    : "😷"  U1F637        # FACE WITH MEDICAL MASK (COVID) (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <y>            : "🤭"  U1F92D        # SMILING FACE WITH SMILING EYES AND HAND COVERING MOUTH (COY) (conflicts with ǒ, use vo)
 <Multi_key> <d> <e> <a> <d>        : "💀"  U1F480        # SKULL (DEAD)
 <Multi_key> <d> <e> <a> <f>        : "🧏"  U1F9CF        # DEAF PERSON
@@ -2920,6 +2926,7 @@ include "%L"
 <Multi_key> <d> <r> <o> <o> <l>    : "🤤"  U1F924        # DROOLING FACE
 <Multi_key> <d> <r> <u> <n> <k>    : "🥴"  U1F974        # FACE WITH UNEVEN EYES AND WAVY MOUTH (DRUNK)
 <Multi_key> <e> <y> <e> <s>        : "👀"  U1F440        # EYES
+<Multi_key> <f> <u> <c> <k>        : "🤬"  U1F92C        # SERIOUS FACE WITH SYMBOLS COVERING MOUTH (FUCK) (use FY for 🖕)
 <Multi_key> <h> <i>                : "👋"  U1F44B        # WAVING HAND SIGN (HI)
 <Multi_key> <h> <m> <m>            : "🤔"  U1F914        # THINKING FACE (HMM)
 <Multi_key> <h> <o> <t>            : "🔥"  U1F525        # FIRE (HOT)
@@ -2935,6 +2942,7 @@ include "%L"
 <Multi_key> <l> <o> <l>            : "😂"  U1F602        # FACE WITH TEARS OF JOY (LOL)
 <Multi_key> <n> <e> <r> <d>        : "🤓"  U1F913        # NERD FACE
 <Multi_key> <p> <a> <r> <t> <y>    : "🥳"  U1F973        # FACE WITH PARTY HORN AND PARTY HAT (use yay for 🎉)
+<Multi_key> <p> <e> <e> <k>        : "🫣"  U1FAE3        # FACE WITH PEEKING EYE
 <Multi_key> <p> <o> <o>            : "💩"  U1F4A9        # PILE OF POO
 <Multi_key> <p> <u> <k> <e>        : "🤮"  U1F92E        # FACE WITH OPEN MOUTH VOMITING (PUKE)
 <Multi_key> <r> <o> <b> <o> <t>    : "🤖"  U1F916        # ROBOT FACE
@@ -2947,6 +2955,7 @@ include "%L"
 <Multi_key> <t> <i> <n> <y>        : "🤏"  U1F90F        # PINCHING HAND (TINY)
 <Multi_key> <w> <a> <h>            : "😭"  U1F62D        # LOUDLY CRYING FACE (WAH)
 <Multi_key> <w> <i> <n> <e>        : "🍷"  U1F377        # WINE GLASS
+<Multi_key> <w> <o> <r> <r> <y>    : "😟"  U1F61F        # WORRIED FACE
 <Multi_key> <w> <o> <w>            : "😮"  U1F62E        # FACE WITH OPEN MOUTH (WOW) (alternatively :O)
 <Multi_key> <y> <a> <w> <n>        : "🥱"  U1F971        # YAWNING FACE
 <Multi_key> <y> <a> <y>            : "🎉"  U1F389        # PARTY POPPER (YAY)
@@ -3044,10 +3053,10 @@ include "%L"
 
 # Punctuation
 
-<Multi_key> <at> <exclam> <Return> : "❗" U2757    # HEAVY EXCLAMATION MARK SYMBOL
-<Multi_key> <at> <exclam> <exclam> : "‼️" U203C UFE0F    # DOUBLE EXCLAMATION MARK VARIATION SELECTOR-16
+<Multi_key> <at> <exclam> <Return>   : "❗" U2757    # HEAVY EXCLAMATION MARK SYMBOL
+<Multi_key> <at> <exclam> <exclam>   : "‼️" U203C UFE0F    # DOUBLE EXCLAMATION MARK VARIATION SELECTOR-16
 <Multi_key> <at> <exclam> <question> : "⁉️" U2049 UFE0F    # EXCLAMATION QUESTION MARK VARIATION SELECTOR-16
-<Multi_key> <at> <question> : "❓" U2753    # BLACK QUESTION MARK ORNAMENT
+<Multi_key> <at> <question>          : "❓" U2753    # BLACK QUESTION MARK ORNAMENT
 
 ##########
 # Arrows #
