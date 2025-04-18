@@ -3033,9 +3033,10 @@ include "%L"
 
 # Control characters
 
-<Multi_key> <at> <Return> : "️" UFE0F   # VARIATION SELECTOR-16 (EMOJI-STYLE)
-<Multi_key> <at> <0>      : "︎" UFE0E   # VARIATION SELECTOR-15 (TEXT-STYLE)
-<Multi_key> <z> <w> <j>   : "‍" U200D   # ZERO WIDTH JOINER
+<Multi_key> <at> <Return>   : "️" UFE0F   # VARIATION SELECTOR-16 (EMOJI-STYLE)
+<Multi_key> <at> <0>        : "︎" UFE0E   # VARIATION SELECTOR-15 (TEXT-STYLE)
+<Multi_key> <z> <w> <n> <j> : "‌" U200C   # ZERO WIDTH NON-JOINER
+<Multi_key> <z> <w> <j>     : "‍" U200D   # ZERO WIDTH JOINER
 
 # Regional indicator symbols used to encode flag emoji (e.g. U + S = US flag)
 
