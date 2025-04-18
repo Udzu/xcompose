@@ -2916,8 +2916,10 @@ include "%L"
 # Names (max 5 letters)
 
 <Multi_key> <a> <c> <h> <o> <o>    : "🤧"  U1F927        # SNEEZING FACE (ACHOO)
+<Multi_key> <a> <n> <g> <r> <y>    : "😠"  U1F620        # ANGRY FACE (use >:( for 😡)
 <Multi_key> <a> <r> <g> <h>        : "😱"  U1F631        # FACE SCREAMING IN FEAR (ARGH)
 <Multi_key> <b> <e> <e> <r>        : "🍺"  U1F37A        # BEER MUG (conflicts with ĕ, use ue)
+<Multi_key> <b> <o> <m> <b>        : "💣"  U1F4A3        # BOMB (conflicts with ŏ, use uo)
 <Multi_key> <c> <a> <k> <e>        : "🎂"  U1F382        # BIRTHDAY CAKE (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <l> <l>        : "🤙"  U1F919        # CALL ME HAND (conflicts with ǎ, use va)
 <Multi_key> <c> <l> <o> <w> <n>    : "🤡"  U1F921        # CLOWN FACE (conflicts with ľ, use <l)
@@ -2928,6 +2930,7 @@ include "%L"
 <Multi_key> <d> <e> <a> <f>        : "🧏"  U1F9CF        # DEAF PERSON
 <Multi_key> <d> <o> <u> <b> <t>    : "🤨"  U1F928        # FACE WITH ONE EYEBROW RAISED (DOUBT)
 <Multi_key> <d> <r> <o> <o> <l>    : "🤤"  U1F924        # DROOLING FACE
+<Multi_key> <d> <r> <o> <p>        : "💧"  U1F4A7        # DROPLET
 <Multi_key> <d> <r> <u> <n> <k>    : "🥴"  U1F974        # FACE WITH UNEVEN EYES AND WAVY MOUTH (DRUNK)
 <Multi_key> <e> <y> <e> <s>        : "👀"  U1F440        # EYES
 <Multi_key> <f> <u> <c> <k>        : "🤬"  U1F92C        # SERIOUS FACE WITH SYMBOLS COVERING MOUTH (FUCK) (use FY for 🖕)
@@ -3035,6 +3038,33 @@ include "%L"
 <Multi_key> <at> <l> <g> <b> <t> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG
 <Multi_key> <at> <p> <r> <i> <d> <e> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG
 <Multi_key> <at> <t> <r> <a> <n> <s> : "🏳️‍⚧️" U1F3F3 UFE0F U200D U26A7 UFE0F    # TRANS FLAG
+
+# Clock faces
+
+<Multi_key> <at> <1> <colon> <0> <0> : "🕐" U1F550    # CLOCK FACE ONE OCLOCK
+<Multi_key> <at> <2> <colon> <0> <0> : "🕑" U1F551    # CLOCK FACE TWO OCLOCK
+<Multi_key> <at> <3> <colon> <0> <0> : "🕒" U1F552    # CLOCK FACE THREE OCLOCK
+<Multi_key> <at> <4> <colon> <0> <0> : "🕓" U1F553    # CLOCK FACE FOUR OCLOCK
+<Multi_key> <at> <5> <colon> <0> <0> : "🕔" U1F554    # CLOCK FACE FIVE OCLOCK
+<Multi_key> <at> <6> <colon> <0> <0> : "🕕" U1F555    # CLOCK FACE SIX OCLOCK
+<Multi_key> <at> <7> <colon> <0> <0> : "🕖" U1F556    # CLOCK FACE SEVEN OCLOCK
+<Multi_key> <at> <8> <colon> <0> <0> : "🕗" U1F557    # CLOCK FACE EIGHT OCLOCK
+<Multi_key> <at> <9> <colon> <0> <0> : "🕘" U1F558    # CLOCK FACE NINE OCLOCK
+<Multi_key> <at> <1> <0> <colon> <0> <0> : "🕙" U1F559    # CLOCK FACE TEN OCLOCK
+<Multi_key> <at> <1> <1> <colon> <0> <0> : "🕚" U1F55A    # CLOCK FACE ELEVEN OCLOCK
+<Multi_key> <at> <1> <2> <colon> <0> <0> : "🕛" U1F55B    # CLOCK FACE TWELVE OCLOCK
+<Multi_key> <at> <1> <colon> <3> <0> : "🕜" U1F55C    # CLOCK FACE ONE-THIRTY
+<Multi_key> <at> <2> <colon> <3> <0> : "🕝" U1F55D    # CLOCK FACE TWO-THIRTY
+<Multi_key> <at> <3> <colon> <3> <0> : "🕞" U1F55E    # CLOCK FACE THREE-THIRTY
+<Multi_key> <at> <4> <colon> <3> <0> : "🕟" U1F55F    # CLOCK FACE FOUR-THIRTY
+<Multi_key> <at> <5> <colon> <3> <0> : "🕠" U1F560    # CLOCK FACE FIVE-THIRTY
+<Multi_key> <at> <6> <colon> <3> <0> : "🕡" U1F561    # CLOCK FACE SIX-THIRTY
+<Multi_key> <at> <7> <colon> <3> <0> : "🕢" U1F562    # CLOCK FACE SEVEN-THIRTY
+<Multi_key> <at> <8> <colon> <3> <0> : "🕣" U1F563    # CLOCK FACE EIGHT-THIRTY
+<Multi_key> <at> <9> <colon> <3> <0> : "🕤" U1F564    # CLOCK FACE NINE-THIRTY
+<Multi_key> <at> <1> <0> <colon> <3> <0> : "🕥" U1F565    # CLOCK FACE TEN-THIRTY
+<Multi_key> <at> <1> <1> <colon> <3> <0> : "🕦" U1F566    # CLOCK FACE ELEVEN-THIRTY
+<Multi_key> <at> <1> <2> <colon> <3> <0> : "🕧" U1F567    # CLOCK FACE TWELVE-THIRTY
 
 # Arrows (emoji presentations of arrows defined below)
 
