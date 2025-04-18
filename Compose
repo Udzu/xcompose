@@ -2721,6 +2721,7 @@ include "%L"
 <Multi_key> <P> <H> <I>                 : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
 <Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 
+<Multi_key> <a> <s>                     : "∷" U2237    # PROPORTION (AS)
 <Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va)
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
 <Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
@@ -2752,6 +2753,10 @@ include "%L"
 <Multi_key> <s> <i> <n> <t>             : "⨋"  U2A0B   # SUMMATION WITH INTEGRAL
 <Multi_key> <s> <q> <c> <a> <p>         : "⊓"  U2293   # SQUARE CAP
 <Multi_key> <s> <q> <c> <u> <p>         : "⊔"  U2294   # SQUARE CUP (COPRODUCT)
+<Multi_key> <s> <q> <s> <u> <b> <Return> : "⊏" U228F    # SQUARE IMAGE OF
+<Multi_key> <s> <q> <s> <u> <p> <Return> : "⊐" U2290    # SQUARE ORIGINAL OF
+<Multi_key> <s> <q> <s> <u> <b> <e> <q> : "⊑" U2291    # SQUARE IMAGE OF OR EQUAL TO
+<Multi_key> <s> <q> <s> <u> <p> <e> <q> : "⊒" U2292    # SQUARE ORIGINAL OF OR EQUAL TO
 <Multi_key> <s> <u> <b> <Return>        : "⊂"  U2282   # SUBSET OF
 <Multi_key> <s> <u> <b> <e> <q>         : "⊆"  U2286   # SUBSET OF OR EQUAL TO
 <Multi_key> <s> <u> <b> <n> <e> <q>     : "⊊"  U228A   # SUBSET OF WITH NOT EQUAL TO
