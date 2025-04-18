@@ -206,7 +206,6 @@ include "%L"
 <Multi_key> <r> <d>                 : "ɾ"  U027E   # LATIN SMALL LETTER R WITH FISHHOOK
 <Multi_key> <g> <w>                 : "ɰ"  U0270   # LATIN SMALL LETTER TURNED M WITH LONG LEG
 <Multi_key> <v> <w>                 : "ʋ"  U028B   # LATIN SMALL LETTER V WITH HOOK
-<Multi_key> <k> <s>                 : "ʘ" U0298    # LATIN LETTER BILABIAL CLICK (kiss sound)
 
 <Multi_key> <a> <h>                 : "ɑ"  U0251   # LATIN SMALL LETTER ALPHA
 <Multi_key> <e> <h>                 : "ɛ"  U025B   # LATIN SMALL LETTER OPEN E
@@ -257,6 +256,7 @@ include "%L"
 <Multi_key> <z> <at>                : "ʑ"  U0291   # LATIN SMALL LETTER Z WITH CURL
 <Multi_key> <h> <minus>             : "ħ"  U0127   # LATIN SMALL LETTER H WITH STROKE
 <Multi_key> <j> <minus>             : "ɟ"  U025F   # LATIN SMALL LETTER DOTLESS J WITH STROKE
+<Multi_key> <0> <period>            : "ʘ" U0298    # LATIN LETTER BILABIAL CLICK
 <Multi_key> <0> <minus>             : "θ"  U03B8   # GREEK SMALL LETTER THETA
 <Multi_key> <o> <bar>               : "ɵ"  U0275   # LATIN SMALL LETTER BARRED O
 <Multi_key> <O> <bar>               : "θ"  U03B8   # GREEK SMALL LETTER THETA
@@ -401,8 +401,8 @@ include "%L"
 #####################################
 
 # Convention: % + script + weight + character
-#   font: n = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace, d = double-struck
-#   weight: n = normal, b = bold, i = italic, B = bold italic
+#   font: n = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace*, d = double-struck*
+#   weight: n = normal, b = bold, i = italic, B = bold italic (*fonts m and d don't specify a weight)
 
 <Multi_key> <percent> <n> <b> <A> : "𝐀" U1D400    # MATHEMATICAL BOLD CAPITAL A
 <Multi_key> <percent> <n> <b> <B> : "𝐁" U1D401    # MATHEMATICAL BOLD CAPITAL B
@@ -1174,7 +1174,7 @@ include "%L"
 <Multi_key> <v> <asciicircum> <W> : "M" U004D    # LATIN CAPITAL LETTER M
 <Multi_key> <v> <asciicircum> <X> : "X" U0058    # LATIN CAPITAL LETTER X
 <Multi_key> <v> <asciicircum> <Y> : "⅄" U2144    # TURNED SANS-SERIF CAPITAL Y
-# ↳ 𑾰 U11FB0 is better but not widely supported
+# ↳ 𑾰 U11FB0 is better but not yet widely supported
 <Multi_key> <v> <asciicircum> <Z> : "Z" U005A    # LATIN CAPITAL LETTER Z
 
 <Multi_key> <v> <asciicircum> <a> : "ɐ" U0250    # LATIN SMALL LETTER TURNED A
@@ -1259,12 +1259,12 @@ include "%L"
 <Multi_key> <greater> <less> <e> : "ɘ" U0258    # LATIN SMALL LETTER REVERSED E (conflicts with ⋄, use diamond)
 <Multi_key> <greater> <less> <f> : "ʇ" U0287    # LATIN SMALL LETTER TURNED T (conflicts with ⋄, use diamond)
 <Multi_key> <greater> <less> <g> : "ϱ" U03F1    # GREEK RHO SYMBOL (conflicts with ⋄, use diamond)
-# ↳ 𝼁 U1DF01 is better but not widely supported
+# ↳ 𝼁 U1DF01 is better but not yet widely supported
 <Multi_key> <greater> <less> <h> : "ᖹ" U15B9    # CANADIAN SYLLABICS BLACKFOOT NI (conflicts with ⋄, use diamond)
 <Multi_key> <greater> <less> <i> : "i" U0069    # LATIN SMALL LETTER I (conflicts with ⋄, use diamond)
 <Multi_key> <greater> <less> <j> : "ɩ̇" U0269 U0307    # LATIN SMALL LETTER IOTA COMBINING DOT ABOVE (conflicts with ⋄, use diamond)
 <Multi_key> <greater> <less> <k> : "ʞ" U029E    # LATIN SMALL LETTER TURNED K (conflicts with ⋄, use diamond)
-# ↳ 𝼃 U1DF03 is better but not widely supported
+# ↳ 𝼃 U1DF03 is better but not yet widely supported
 <Multi_key> <greater> <less> <l> : "l" U006C    # LATIN SMALL LETTER L (conflicts with ⋄, use diamond)
 <Multi_key> <greater> <less> <m> : "m" U006D    # LATIN SMALL LETTER M (conflicts with ⋄, use diamond)
 <Multi_key> <greater> <less> <n> : "n" U006E    # LATIN SMALL LETTER N (conflicts with ⋄, use diamond)
@@ -1299,7 +1299,7 @@ include "%L"
 <Multi_key> <greater> <less> <question>   : "⸮" U2E2E    # REVERSED QUESTION MARK (conflicts with ⋄, use diamond)
 <Multi_key> <greater> <less> <percent>    : "ₒ\ᵒ" U2092 U005C U1D52    # LATIN SUBSCRIPT SMALL LETTER O REVERSE SOLIDUS MODIFIER LETTER SMALL O (conflicts with ⋄, use diamond)
 
-# Lookalikes for (ab)use in variable names
+# Letter-category lookalikes for (ab)use in variable names
 
 <Multi_key> <dollar> <space>       : "ㅤ" U3164   # HANGUL FILLER
 <Multi_key> <dollar> <exclam>      : "ǃ" U01C3    # LATIN LETTER RETROFLEX CLICK
@@ -3033,9 +3033,10 @@ include "%L"
 
 # Control characters
 
-<Multi_key> <at> <Return> : "️" UFE0F   # VARIATION SELECTOR-16 (EMOJI-STYLE)
-<Multi_key> <at> <0>      : "︎" UFE0E   # VARIATION SELECTOR-15 (TEXT-STYLE)
-<Multi_key> <z> <w> <j>   : "‍" U200D   # ZERO WIDTH JOINER
+<Multi_key> <at> <Return>   : "️" UFE0F   # VARIATION SELECTOR-16 (EMOJI-STYLE)
+<Multi_key> <at> <0>        : "︎" UFE0E   # VARIATION SELECTOR-15 (TEXT-STYLE)
+<Multi_key> <z> <w> <n> <j> : "‌" U200C   # ZERO WIDTH NON-JOINER
+<Multi_key> <z> <w> <j>     : "‍" U200D   # ZERO WIDTH JOINER
 
 # Regional indicator symbols used to encode flag emoji (e.g. U + S = US flag)
 
