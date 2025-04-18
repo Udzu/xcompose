@@ -2413,8 +2413,8 @@ include "%L"
 <Multi_key> <r> <b> <Y> <I>      : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
 <Multi_key> <r> <b> <quotedbl> <I> : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
 # Belarussian
-<Multi_key> <r> <b> <u> <Y>      :"Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
-<Multi_key> <r> <b> <Y> <Y>      :"Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
+<Multi_key> <r> <b> <u> <Y>      : "Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
+<Multi_key> <r> <b> <Y> <Y>      : "Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
 # Serbian
 <Multi_key> <r> <b> <D> <J>      : "Ђ"  U0402   # CYRILLIC CAPITAL LETTER DJE
 <Multi_key> <r> <b> <L> <J>      : "Љ"  U0409   # CYRILLIC CAPITAL LETTER LJE
@@ -2471,8 +2471,8 @@ include "%L"
 <Multi_key> <r> <b> <y> <i>      : "ї"  U0457   # CYRILLIC SMALL LETTER YI
 <Multi_key> <r> <b> <quotedbl> <i> : "ї"  U0457   # CYRILLIC SMALL LETTER YI
 # Belarussian
-<Multi_key> <r> <b> <u> <y>      :"ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
-<Multi_key> <r> <b> <y> <y>      :"ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
+<Multi_key> <r> <b> <u> <y>      : "ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
+<Multi_key> <r> <b> <y> <y>      : "ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
 # Serbian
 <Multi_key> <r> <b> <d> <j>      : "ђ"  U0452   # CYRILLIC SMALL LETTER DJE
 <Multi_key> <r> <b> <l> <j>      : "љ"  U0459   # CYRILLIC SMALL LETTER LJE
@@ -2807,8 +2807,8 @@ include "%L"
 
 <Multi_key> <colon> <parenright>   : "😊"  U1F60A        # SMILING FACE WITH SMILING EYES (overrides ☺ )
 <Multi_key> <colon> <bracketright> : "😊"  U1F60A        # SMILING FACE WITH SMILING EYES
-<Multi_key> <colon> <parenleft>    : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI (overrides ☹ )
-<Multi_key> <colon> <bracketleft>  : "☹️"   U2639 UFE0F   # WHITE FROWNING FACE EMOJI
+<Multi_key> <colon> <parenleft>    : "☹️"  U2639 UFE0F   # WHITE FROWNING FACE EMOJI (overrides ☹ )
+<Multi_key> <colon> <bracketleft>  : "☹️"  U2639 UFE0F   # WHITE FROWNING FACE EMOJI
 <Multi_key> <colon> <braceleft>    : "😞"  U1F61E        # DISAPPOINTED FACE
 <Multi_key> <colon> <D>            : "😃"  U1F603        # SMILING FACE WITH OPEN MOUTH
 <Multi_key> <colon> <E>            : "😬"  U1F62C        # GRIMACING FACE
@@ -2836,7 +2836,7 @@ include "%L"
 <Multi_key> <apostrophe> <colon> <parenright> : "😅" U1F605    # SMILING FACE WITH OPEN MOUTH AND COLD SWEAT
 <Multi_key> <apostrophe> <colon> <parenleft>  : "😓" U1F613    # FACE WITH COLD SWEAT
 <Multi_key> <parenleft> <colon>    : "🙃"  U1F643        # UPSIDE-DOWN FACE
-<Multi_key> <backslash> <o> <slash> : "🙌" U1F64C        # PERSON RAISING BOTH HANDS IN CELEBRATION
+
 <Multi_key> <o> <7>                : "🫡"  U1FAE1        # SALUTING FACE
 <Multi_key> <q> <q>                : "🥺"  U1F97A        # FACE WITH PLEADING EYES
 <Multi_key> <u> <w> <u>            : "😌"  U1F60C        # RELIEVED FACE
@@ -2844,6 +2844,8 @@ include "%L"
 <Multi_key> <Q> <underscore> <Q>   : "ಠ_ಠ"               # LOOK OF DISAPPROVAL
 <Multi_key> <at> <underscore> <at> : "😵‍💫" U1F635 U200D U1F4AB    # FACE WITH SPIRAL EYES
 <Multi_key> <dollar> <underscore> <dollar> : "🤑" U1F911    # MONEY-MOUTH FACE
+<Multi_key> <asterisk> <underscore> <asterisk> : "🤩" U1F929    # GRINNING FACE WITH STAR EYES
+<Multi_key> <backslash> <o> <slash> : "🙌" U1F64C        # PERSON RAISING BOTH HANDS IN CELEBRATION
 <Multi_key> <greater> <less> <greater> : "🐟" U1F41F     # FISH (conflicts with ⋄, use diamond)
 
 # Hearts (start with <3)
@@ -2882,16 +2884,17 @@ include "%L"
 <Multi_key> <I> <L> <Y>            : "🤟"  U1F91F        # I LOVE YOU HAND SIGN
 <Multi_key> <J> <H>                : "🤗"  U1F917        # HUGGING FACE (JAZZ HANDS)
 <Multi_key> <L> <L> <A> <P>        : "🖖"  U1F596        # RAISED HAND WITH PART BETWEEN MIDDLE AND RING FINGERS (LIVE LONG AND PROSPER)
+<Multi_key> <M> <B>                : "🤯"  U1F92F        # SHOCKED FACE WITH EXPLODING HEAD (MIND BLOWN)
 <Multi_key> <M> <T>                : "🙋"  U1F64B        # HAPPY PERSON RAISING ONE HAND (ME TOO)
 <Multi_key> <O> <K>                : "👌"  U1F44C        # OK HAND SIGN
 <Multi_key> <P> <C>                : "🍿"  U1F37F        # POPCORN
 <Multi_key> <S> <question>         : "🤷"  U1F937        # SHRUG
-<Multi_key> <s> <question>         : "¯\_(ツ)_/¯"        # SHRUGGIE
+<Multi_key> <s> <question>         : "¯\_(ツ)_/¯"         # SHRUGGIE
 <Multi_key> <T> <D>                : "👎"  U1F44E        # THUMBS DOWN SIGN
 <Multi_key> <T> <U>                : "👍"  U1F44D        # THUMBS UP SIGN
 <Multi_key> <T> <Y>                : "🙏"  U1F64F        # PERSON WITH FOLDED HANDS (THANK YOU)
 <Multi_key> <W> <D>                : "👏"  U1F44F        # CLAPPING HANDS SIGN (WELL DONE)
-<Multi_key> <W> <exclam>           : "⚠️"   U26A0 UFE0F   # WARNING SIGN EMOJI
+<Multi_key> <W> <exclam>           : "⚠️"  U26A0 UFE0F   # WARNING SIGN EMOJI
 <Multi_key> <X> <M>                : "🍆"  U1F346        # AUBERGINE (MALE GENITALIA)
 <Multi_key> <X> <F>                : "🍑"  U1F351        # PEACH (FEMALE GENITALIA)
 <Multi_key> <X> <quotedbl>         : "💦"  U1F4A6        # SPLASHING SWEAT SYMBOL (SEX FLUIDS) (alternatively sweat)
@@ -2915,6 +2918,7 @@ include "%L"
 <Multi_key> <a> <c> <h> <o> <o>    : "🤧"  U1F927        # SNEEZING FACE (ACHOO)
 <Multi_key> <a> <r> <g> <h>        : "😱"  U1F631        # FACE SCREAMING IN FEAR (ARGH)
 <Multi_key> <b> <e> <e> <r>        : "🍺"  U1F37A        # BEER MUG (conflicts with ĕ, use ue)
+<Multi_key> <c> <a> <k> <e>        : "🎂"  U1F382        # BIRTHDAY CAKE (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <l> <l>        : "🤙"  U1F919        # CALL ME HAND (conflicts with ǎ, use va)
 <Multi_key> <c> <l> <o> <w> <n>    : "🤡"  U1F921        # CLOWN FACE (conflicts with ľ, use <l)
 <Multi_key> <c> <o> <o> <l>        : "😎"  U1F60E        # SMILING FACE WITH SUNGLASSES (COOL) (conflicts with ǒ, use vo)
@@ -2954,6 +2958,7 @@ include "%L"
 <Multi_key> <s> <w> <e> <a> <t>    : "💦"  U1F4A6        # SPLASHING SWEAT SYMBOL
 <Multi_key> <t> <i> <n> <y>        : "🤏"  U1F90F        # PINCHING HAND (TINY)
 <Multi_key> <w> <a> <h>            : "😭"  U1F62D        # LOUDLY CRYING FACE (WAH)
+<Multi_key> <w> <i> <f> <i>        : "🛜"  U1F6DC        # WIRELESS (WIFI)
 <Multi_key> <w> <i> <n> <e>        : "🍷"  U1F377        # WINE GLASS
 <Multi_key> <w> <o> <r> <r> <y>    : "😟"  U1F61F        # WORRIED FACE
 <Multi_key> <w> <o> <w>            : "😮"  U1F62E        # FACE WITH OPEN MOUTH (WOW) (alternatively :O)
@@ -3756,3 +3761,95 @@ include "%L"
 
 <Multi_key> <numbersign> <M> <J> : "🀪" U1F02A    # MAHJONG TILE JOKER
 <Multi_key> <numbersign> <M> <question> : "🀫" U1F02B    # MAHJONG TILE BACK
+
+#########################################
+# Astrological and astronomical symbols #
+#########################################
+
+# Convention: * + two letter abbreviation
+
+# zodiac signs (use selectors @[Return]/@0 for emoji/text presentation)
+
+<Multi_key> <asterisk> <A> <R> : "♈" U2648    # ARIES (conflicts with Å, use oA)
+<Multi_key> <asterisk> <T> <A> : "♉" U2649    # TAURUS
+<Multi_key> <asterisk> <G> <E> : "♊" U264A    # GEMINI
+<Multi_key> <asterisk> <C> <N> : "♋" U264B    # CANCER
+<Multi_key> <asterisk> <L> <E> : "♌" U264C    # LEO
+<Multi_key> <asterisk> <V> <I> : "♍" U264D    # VIRGO
+<Multi_key> <asterisk> <L> <B> : "♎" U264E    # LIBRA
+<Multi_key> <asterisk> <L> <I> : "♎" U264E    # LIBRA
+<Multi_key> <asterisk> <S> <C> : "♏" U264F    # SCORPIUS
+<Multi_key> <asterisk> <S> <G> : "♐" U2650    # SAGITTARIUS
+<Multi_key> <asterisk> <C> <P> : "♑" U2651    # CAPRICORN
+<Multi_key> <asterisk> <A> <Q> : "♒" U2652    # AQUARIUS (conflicts with Å, use oA)
+<Multi_key> <asterisk> <P> <I> : "♓" U2653    # PISCES
+
+# moon phases (use selectors @[Return]/@0 for emoji/text presentation)
+
+<Multi_key> <asterisk> <N> <M> : "🌑" U1F311    # NEW MOON SYMBOL
+<Multi_key> <asterisk> <F> <M> : "🌕" U1F315    # FULL MOON SYMBOL
+<Multi_key> <asterisk> <W> <x> <C> : "🌒" U1F312    # WAXING CRESCENT MOON SYMBOL
+<Multi_key> <asterisk> <W> <x> <Q> : "🌓" U1F313    # FIRST QUARTER MOON SYMBOL
+<Multi_key> <asterisk> <W> <x> <G> : "🌔" U1F314    # WAXING GIBBOUS MOON SYMBOL
+<Multi_key> <asterisk> <W> <n> <G> : "🌖" U1F316    # WANING GIBBOUS MOON SYMBOL
+<Multi_key> <asterisk> <W> <n> <Q> : "🌗" U1F317    # LAST QUARTER MOON SYMBOL
+<Multi_key> <asterisk> <W> <n> <C> : "🌘" U1F318    # WANING CRESCENT MOON SYMBOL
+
+# celestial bodies
+
+<Multi_key> <asterisk> <C> <O> : "☄" U2604    # COMET
+<Multi_key> <asterisk> <S> <O> : "☉" U2609    # SUN (SOL)
+<Multi_key> <asterisk> <S> <U> : "☉" U2609    # SUN
+<Multi_key> <asterisk> <M> <O> : "☾" U263E    # LAST QUARTER MOON
+<Multi_key> <asterisk> <less> <M> <O> : "☽" U263D    # FIRST QUARTER MOON
+
+<Multi_key> <asterisk> <M> <E> : "☿" U263F    # MERCURY
+<Multi_key> <asterisk> <V> <E> : "♀" U2640    # FEMALE SIGN (VENUS)
+<Multi_key> <asterisk> <T> <E> : "♁" U2641    # EARTH (TERRA)
+<Multi_key> <asterisk> <E> <A> : "♁" U2641    # EARTH (TERRA)
+<Multi_key> <asterisk> <M> <A> : "♂" U2642    # MALE SIGN (MARS)
+<Multi_key> <asterisk> <J> <U> : "♃" U2643    # JUPITER
+<Multi_key> <asterisk> <S> <A> : "♄" U2644    # SATURN
+<Multi_key> <asterisk> <S> <T> : "♄" U2644    # SATURN
+<Multi_key> <asterisk> <U> <R> : "♅" U2645    # URANUS (conflicts with Ů, use oU)
+<Multi_key> <asterisk> <N> <E> : "♆" U2646    # NEPTUNE
+
+<Multi_key> <asterisk> <P> <L> : "♇" U2647    # PLUTO
+<Multi_key> <asterisk> <C> <E> : "⚳" U26B3    # CERES
+<Multi_key> <asterisk> <P> <A> : "⚴" U26B4    # PALLAS
+<Multi_key> <asterisk> <J> <O> : "⚵" U26B5    # JUNO
+<Multi_key> <asterisk> <V> <A> : "⚶" U26B6    # VESTA
+<Multi_key> <asterisk> <C> <H> : "⚷" U26B7    # CHIRON
+<Multi_key> <asterisk> <E> <R> : "⯰" U2BF0    # ERIS FORM ONE
+<Multi_key> <asterisk> <S> <E> : "⯲" U2BF2    # SEDNA
+<Multi_key> <asterisk> <H> <U> : "🝻" U1F77B    # HAUMEA
+<Multi_key> <asterisk> <M> <K> : "🝼" U1F77C    # MAKEMAKE
+<Multi_key> <asterisk> <G> <O> : "🝽" U1F77D    # GONGGONG
+<Multi_key> <asterisk> <Q> <U> : "🝾" U1F77E    # QUAOAR
+<Multi_key> <asterisk> <O> <R> : "🝿" U1F77F    # ORCUS
+
+# fictitious bodies
+
+<Multi_key> <asterisk> <B> <M> : "⚸" U26B8    # BLACK MOON LILITH
+<Multi_key> <asterisk> <L> <T> : "⚸" U26B8    # BLACK MOON LILITH
+<Multi_key> <asterisk> <T> <P> : "⯗" U2BD7    # TRANSPLUTO
+<Multi_key> <asterisk> <P> <R> : "⯘" U2BD8    # PROSERPINA
+<Multi_key> <asterisk> <C> <U> : "⯠" U2BE0    # CUPIDO
+<Multi_key> <asterisk> <H> <A> : "⯡" U2BE1    # HADES
+<Multi_key> <asterisk> <Z> <E> : "⯢" U2BE2    # ZEUS
+<Multi_key> <asterisk> <K> <R> : "⯣" U2BE3    # KRONOS
+<Multi_key> <asterisk> <A> <P> : "⯤" U2BE4    # APOLLON (conflicts with Å, use oA)
+<Multi_key> <asterisk> <A> <D> : "⯥" U2BE5    # ADMETOS (conflicts with Å, use oA)
+<Multi_key> <asterisk> <V> <U> : "⯦" U2BE6    # VULCANUS
+<Multi_key> <asterisk> <P> <O> : "⯧" U2BE7    # POSEIDON
+
+# other symbols
+
+<Multi_key> <asterisk> <R> <G> : "℞" U211E    # PRESCRIPTION TAKE (RETROGRADE)
+<Multi_key> <asterisk> <A> <N> : "☊" U260A    # ASCENDING NODE (conflicts with Å, use oA)
+<Multi_key> <asterisk> <D> <N> : "☋" U260B    # DESCENDING NODE
+<Multi_key> <asterisk> <C> <J> : "☌" U260C    # CONJUNCTION
+<Multi_key> <asterisk> <O> <P> : "☍" U260D    # OPPOSITION
+<Multi_key> <asterisk> <L> <F> : "🝴" U1F774    # LOT OF FORTUNE
+<Multi_key> <asterisk> <O> <C> : "🝵" U1F775    # OCCULTATION
+<Multi_key> <asterisk> <E> <C> : "🝶" U1F776    # LUNAR ECLIPSE
