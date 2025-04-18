@@ -162,6 +162,8 @@ include "%L"
 <Multi_key> <minus> <less> <minus> <Return>  : "⃪"  U20EA   # COMBINING LEFTWARDS ARROW OVERLAY
 <Multi_key> <minus> <slash> <slash> <Return> : "⃫"  U20EB   # COMBINING LONG DOUBLE SOLIDUS OVERLAY (overrides APL ⌿)
 
+<Multi_key> <O> <period> : "◌" U25CC    # DOTTED CIRCLE (PLACEHOLDER GLYPH)
+
 ####################################
 # Bidirectional control characters #
 ####################################
@@ -204,6 +206,7 @@ include "%L"
 <Multi_key> <r> <d>                 : "ɾ"  U027E   # LATIN SMALL LETTER R WITH FISHHOOK
 <Multi_key> <g> <w>                 : "ɰ"  U0270   # LATIN SMALL LETTER TURNED M WITH LONG LEG
 <Multi_key> <v> <w>                 : "ʋ"  U028B   # LATIN SMALL LETTER V WITH HOOK
+<Multi_key> <k> <s>                 : "ʘ" U0298    # LATIN LETTER BILABIAL CLICK (kiss sound)
 
 <Multi_key> <a> <h>                 : "ɑ"  U0251   # LATIN SMALL LETTER ALPHA
 <Multi_key> <e> <h>                 : "ɛ"  U025B   # LATIN SMALL LETTER OPEN E
@@ -2931,6 +2934,7 @@ include "%L"
 # Names (max 5 letters)
 
 <Multi_key> <a> <c> <h> <o> <o>    : "🤧"  U1F927        # SNEEZING FACE (ACHOO)
+<Multi_key> <a> <l> <a> <r> <m>    : "⏰"  U23F0         # ALARM CLOCK
 <Multi_key> <a> <n> <g> <r> <y>    : "😠"  U1F620        # ANGRY FACE (use >:( for 😡)
 <Multi_key> <a> <r> <g> <h>        : "😱"  U1F631        # FACE SCREAMING IN FEAR (ARGH)
 <Multi_key> <b> <e> <e> <r>        : "🍺"  U1F37A        # BEER MUG (conflicts with ĕ, use ue)
@@ -2978,8 +2982,10 @@ include "%L"
 <Multi_key> <s> <t> <o> <p>        : "✋"  U270B         # RAISED HAND (STOP)
 <Multi_key> <S> <T> <O> <P>        : "⛔"  U26D4         # NO ENTRY (STOP)
 <Multi_key> <s> <w> <e> <a> <t>    : "💦"  U1F4A6        # SPLASHING SWEAT SYMBOL
+<Multi_key> <t> <e> <a>            : "☕"  U2615         # HOT BEVERAGE (TEA)
 <Multi_key> <t> <i> <n> <y>        : "🤏"  U1F90F        # PINCHING HAND (TINY)
 <Multi_key> <w> <a> <h>            : "😭"  U1F62D        # LOUDLY CRYING FACE (WAH)
+<Multi_key> <w> <a> <i> <t>        : "⌛"  U231B         # HOURGLASS (WAIT)
 <Multi_key> <w> <i> <f> <i>        : "🛜"  U1F6DC        # WIRELESS (WIFI)
 <Multi_key> <w> <i> <n> <e>        : "🍷"  U1F377        # WINE GLASS
 <Multi_key> <w> <o> <r> <r> <y>    : "😟"  U1F61F        # WORRIED FACE
@@ -3001,6 +3007,7 @@ include "%L"
 <Multi_key> <asterisk> <4>         : "✦"   U2726         # BLACK FOUR POINTED STAR
 <Multi_key> <asterisk> <6>         : "✡"   U2721         # STAR OF DAVID
 <Multi_key> <asterisk> <8>         : "✷"   U2737         # EIGHT POINTED RECTILINEAR BLACK STAR
+<Multi_key> <O> <asterisk>         : "✪"   U272A         # CIRCLED WHITE STAR
 
 <Multi_key> <O> <backslash> <Return> : "⃠"  U20E0         # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
 <Multi_key> <backslash> <O> <Return> : "⃠"  U20E0         # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
