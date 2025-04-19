@@ -23,9 +23,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (68): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (975)
+### Non-Latin script characters (1017)
 * **Greek** (60): Ρέντιτ etc
 * **Cyrillic** (94): Ре́ддит etc
+* **Etruscan** (42): 𐌓𐌄𐌃𐌃𐌉𐌕 etc
 * **Arabic** (68): ⁧رِيدِيت⁩ etc
 * **Hebrew** (76): ⁧רֶדִיט⁩ etc
 * **Korean** (via jamo) (118): 레딧 etc
