@@ -3385,7 +3385,7 @@ include "%L"
 # Music #
 #########
 
-# Note that this now shares a namespace with games (though this favours lowercase to games's uppercase)
+# Note that this now shares a namespace with games and numerals (though this favours lowercase to games's uppercase)
 
 # clefs
 <Multi_key> <numbersign> <at> <g>            : "𝄞" U1D11E    # MUSICAL SYMBOL G CLEF
@@ -3827,6 +3827,114 @@ include "%L"
 
 <Multi_key> <numbersign> <M> <J> : "🀪" U1F02A    # MAHJONG TILE JOKER
 <Multi_key> <numbersign> <M> <question> : "🀫" U1F02B    # MAHJONG TILE BACK
+
+############
+# Numerals #
+############
+
+# Convention: # + number + type
+#   type: f = fency tally, i = ideographic tally, r = Roman numerals, R = uppercase Roman
+#
+# Also see Arabic (a0), Japanese (j0) and Chinese (z0) numerals above.
+
+# Tally marks
+
+<Multi_key> <numbersign> <1> <f> : "𝍷" U1D377    # TALLY MARK ONE
+<Multi_key> <numbersign> <5> <f> : "𝍸" U1D378    # TALLY MARK FIVE
+
+<Multi_key> <numbersign> <1> <i> : "𝍲" U1D372    # IDEOGRAPHIC TALLY MARK ONE
+<Multi_key> <numbersign> <2> <i> : "𝍳" U1D373    # IDEOGRAPHIC TALLY MARK TWO
+<Multi_key> <numbersign> <3> <i> : "𝍴" U1D374    # IDEOGRAPHIC TALLY MARK THREE
+<Multi_key> <numbersign> <4> <i> : "𝍵" U1D375    # IDEOGRAPHIC TALLY MARK FOUR
+<Multi_key> <numbersign> <5> <i> : "𝍶" U1D376    # IDEOGRAPHIC TALLY MARK FIVE
+
+# Roman numerals (numeric notation)
+
+<Multi_key> <numbersign> <1> <R> : "Ⅰ" U2160    # ROMAN NUMERAL ONE
+<Multi_key> <numbersign> <2> <R> : "Ⅱ" U2161    # ROMAN NUMERAL TWO
+<Multi_key> <numbersign> <3> <R> : "Ⅲ" U2162    # ROMAN NUMERAL THREE
+<Multi_key> <numbersign> <4> <R> : "Ⅳ" U2163    # ROMAN NUMERAL FOUR
+<Multi_key> <numbersign> <5> <R> : "Ⅴ" U2164    # ROMAN NUMERAL FIVE
+<Multi_key> <numbersign> <6> <R> : "Ⅵ" U2165    # ROMAN NUMERAL SIX
+<Multi_key> <numbersign> <7> <R> : "Ⅶ" U2166    # ROMAN NUMERAL SEVEN
+<Multi_key> <numbersign> <8> <R> : "Ⅷ" U2167    # ROMAN NUMERAL EIGHT
+<Multi_key> <numbersign> <9> <R> : "Ⅸ" U2168    # ROMAN NUMERAL NINE
+<Multi_key> <numbersign> <1> <0> <R> : "Ⅹ" U2169    # ROMAN NUMERAL TEN
+<Multi_key> <numbersign> <1> <1> <R> : "Ⅺ" U216A    # ROMAN NUMERAL ELEVEN
+<Multi_key> <numbersign> <1> <2> <R> : "Ⅻ" U216B    # ROMAN NUMERAL TWELVE
+<Multi_key> <numbersign> <5> <0> <R> : "Ⅼ" U216C    # ROMAN NUMERAL FIFTY
+<Multi_key> <numbersign> <1> <0> <0> <R> : "Ⅽ" U216D    # ROMAN NUMERAL ONE HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <R> : "Ⅾ" U216E    # ROMAN NUMERAL FIVE HUNDRED
+<Multi_key> <numbersign> <1> <0> <0> <0> <R> : "Ⅿ" U216F    # ROMAN NUMERAL ONE THOUSAND
+
+<Multi_key> <numbersign> <k> <R> : "̅" U0305    # COMBINING OVERLINE (VINCULUM)
+<Multi_key> <numbersign> <1> <k> <R> : "ↀ" U2180    # ROMAN NUMERAL ONE THOUSAND C D
+<Multi_key> <numbersign> <1> <k> <R> : "ↀ" U2180    # ROMAN NUMERAL ONE THOUSAND C D
+<Multi_key> <numbersign> <5> <k> <R> : "ↁ" U2181    # ROMAN NUMERAL FIVE THOUSAND
+<Multi_key> <numbersign> <1> <0> <k> <R> : "ↂ" U2182    # ROMAN NUMERAL TEN THOUSAND
+<Multi_key> <numbersign> <5> <0> <k> <R> : "ↇ" U2187    # ROMAN NUMERAL FIFTY THOUSAND
+<Multi_key> <numbersign> <1> <0> <0> <k> <R> : "ↈ" U2188    # ROMAN NUMERAL ONE HUNDRED THOUSAND
+
+<Multi_key> <numbersign> <1> <r> : "ⅰ" U2170    # SMALL ROMAN NUMERAL ONE
+<Multi_key> <numbersign> <2> <r> : "ⅱ" U2171    # SMALL ROMAN NUMERAL TWO
+<Multi_key> <numbersign> <3> <r> : "ⅲ" U2172    # SMALL ROMAN NUMERAL THREE
+<Multi_key> <numbersign> <4> <r> : "ⅳ" U2173    # SMALL ROMAN NUMERAL FOUR
+<Multi_key> <numbersign> <5> <r> : "ⅴ" U2174    # SMALL ROMAN NUMERAL FIVE
+<Multi_key> <numbersign> <6> <r> : "ⅵ" U2175    # SMALL ROMAN NUMERAL SIX
+<Multi_key> <numbersign> <7> <r> : "ⅶ" U2176    # SMALL ROMAN NUMERAL SEVEN
+<Multi_key> <numbersign> <8> <r> : "ⅷ" U2177    # SMALL ROMAN NUMERAL EIGHT
+<Multi_key> <numbersign> <9> <r> : "ⅸ" U2178    # SMALL ROMAN NUMERAL NINE
+<Multi_key> <numbersign> <1> <0> <r> : "ⅹ" U2179    # SMALL ROMAN NUMERAL TEN
+<Multi_key> <numbersign> <1> <1> <r> : "ⅺ" U217A    # SMALL ROMAN NUMERAL ELEVEN
+<Multi_key> <numbersign> <1> <2> <r> : "ⅻ" U217B    # SMALL ROMAN NUMERAL TWELVE
+<Multi_key> <numbersign> <5> <0> <r> : "ⅼ" U217C    # SMALL ROMAN NUMERAL FIFTY
+<Multi_key> <numbersign> <1> <0> <0> <r> : "ⅽ" U217D    # SMALL ROMAN NUMERAL ONE HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <r> : "ⅾ" U217E    # SMALL ROMAN NUMERAL FIVE HUNDRED
+<Multi_key> <numbersign> <1> <0> <0> <0> <r> : "ⅿ" U217F    # SMALL ROMAN NUMERAL ONE THOUSAND
+
+# Roman numerals (visual notation)
+
+<Multi_key> <numbersign> <I> <r> : "Ⅰ" U2160    # ROMAN NUMERAL ONE
+<Multi_key> <numbersign> <I> <I> <r> : "Ⅱ" U2161    # ROMAN NUMERAL TWO
+<Multi_key> <numbersign> <I> <I> <I> <r> : "Ⅲ" U2162    # ROMAN NUMERAL THREE
+<Multi_key> <numbersign> <I> <V> <r> : "Ⅳ" U2163    # ROMAN NUMERAL FOUR
+<Multi_key> <numbersign> <V> <r> : "Ⅴ" U2164    # ROMAN NUMERAL FIVE
+<Multi_key> <numbersign> <V> <I> <r> : "Ⅵ" U2165    # ROMAN NUMERAL SIX
+<Multi_key> <numbersign> <V> <I> <I> <r> : "Ⅶ" U2166    # ROMAN NUMERAL SEVEN
+<Multi_key> <numbersign> <V> <I> <I> <I> <r> : "Ⅷ" U2167    # ROMAN NUMERAL EIGHT
+<Multi_key> <numbersign> <I> <X> <r> : "Ⅸ" U2168    # ROMAN NUMERAL NINE
+<Multi_key> <numbersign> <X> <r> : "Ⅹ" U2169    # ROMAN NUMERAL TEN
+<Multi_key> <numbersign> <X> <I> <r> : "Ⅺ" U216A    # ROMAN NUMERAL ELEVEN
+<Multi_key> <numbersign> <X> <I> <I> <r> : "Ⅻ" U216B    # ROMAN NUMERAL TWELVE
+<Multi_key> <numbersign> <L> <r> : "Ⅼ" U216C    # ROMAN NUMERAL FIFTY
+<Multi_key> <numbersign> <C> <r> : "Ⅽ" U216D    # ROMAN NUMERAL ONE HUNDRED
+<Multi_key> <numbersign> <D> <r> : "Ⅾ" U216E    # ROMAN NUMERAL FIVE HUNDRED
+<Multi_key> <numbersign> <M> <r> : "Ⅿ" U216F    # ROMAN NUMERAL ONE THOUSAND
+
+<Multi_key> <numbersign> <minus> <r> : "̅" U0305    # COMBINING OVERLINE (VINCULUM)
+<Multi_key> <numbersign> <parenright> <r> : "Ↄ" U2183    # ROMAN NUMERAL REVERSED ONE HUNDRED
+<Multi_key> <numbersign> <parenleft> <I> <parenright> <r> : "ↀ" U2180    # ROMAN NUMERAL ONE THOUSAND C D
+<Multi_key> <numbersign> <I> <parenright> <parenright> <r> : "ↁ" U2181    # ROMAN NUMERAL FIVE THOUSAND
+<Multi_key> <numbersign> <parenleft> <parenleft> <I> <parenright> <parenright> <r> : "ↂ" U2182    # ROMAN NUMERAL TEN THOUSAND
+<Multi_key> <numbersign> <I> <parenright> <parenright> <parenright> <r> : "ↇ" U2187    # ROMAN NUMERAL FIFTY THOUSAND
+<Multi_key> <numbersign> <parenleft> <parenleft> <parenleft> <I> <parenright> <parenright> <parenright> <r> : "ↈ" U2188    # ROMAN NUMERAL ONE HUNDRED THOUSAND
+
+<Multi_key> <numbersign> <i> <r> : "ⅰ" U2170    # SMALL ROMAN NUMERAL ONE
+<Multi_key> <numbersign> <i> <i> <r> : "ⅱ" U2171    # SMALL ROMAN NUMERAL TWO
+<Multi_key> <numbersign> <i> <i> <i> <r> : "ⅲ" U2172    # SMALL ROMAN NUMERAL THREE
+<Multi_key> <numbersign> <i> <v> <r> : "ⅳ" U2173    # SMALL ROMAN NUMERAL FOUR
+<Multi_key> <numbersign> <v> <r> : "ⅴ" U2174    # SMALL ROMAN NUMERAL FIVE
+<Multi_key> <numbersign> <v> <i> <r> : "ⅵ" U2175    # SMALL ROMAN NUMERAL SIX
+<Multi_key> <numbersign> <v> <i> <i> <r> : "ⅶ" U2176    # SMALL ROMAN NUMERAL SEVEN
+<Multi_key> <numbersign> <v> <i> <i> <i> <r> : "ⅷ" U2177    # SMALL ROMAN NUMERAL EIGHT
+<Multi_key> <numbersign> <i> <x> <r> : "ⅸ" U2178    # SMALL ROMAN NUMERAL NINE
+<Multi_key> <numbersign> <x> <0> <r> : "ⅹ" U2179    # SMALL ROMAN NUMERAL TEN
+<Multi_key> <numbersign> <x> <i> <r> : "ⅺ" U217A    # SMALL ROMAN NUMERAL ELEVEN
+<Multi_key> <numbersign> <x> <i> <i> <r> : "ⅻ" U217B    # SMALL ROMAN NUMERAL TWELVE
+<Multi_key> <numbersign> <l> <r> : "ⅼ" U217C    # SMALL ROMAN NUMERAL FIFTY
+<Multi_key> <numbersign> <c> <r> : "ⅽ" U217D    # SMALL ROMAN NUMERAL ONE HUNDRED
+<Multi_key> <numbersign> <d> <r> : "ⅾ" U217E    # SMALL ROMAN NUMERAL FIVE HUNDRED
+<Multi_key> <numbersign> <m> <r> : "ⅿ" U217F    # SMALL ROMAN NUMERAL ONE THOUSAND
 
 #########################################
 # Astrological and astronomical symbols #
