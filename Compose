@@ -1765,6 +1765,63 @@ include "%L"
 <Multi_key> <h> <p> <t>          : "𐤕"  U10915  # PHOENICIAN LETTER TAU
 <Multi_key> <h> <p> <space>      : "𐤟"  U1091F  # PHOENICIAN WORD SEPARATOR
 
+#################################
+# (i) Old Italic/Etruscan/Latin #
+#################################
+
+# Also see numerals sections for Roman Numerals
+
+<Multi_key> <i> <c> <a> : "𐌀" U10300    # OLD ITALIC LETTER A
+<Multi_key> <i> <c> <b> : "𐌁" U10301    # OLD ITALIC LETTER BE
+<Multi_key> <i> <c> <c> : "𐌂" U10302    # OLD ITALIC LETTER KE
+<Multi_key> <i> <c> <d> : "𐌃" U10303    # OLD ITALIC LETTER DE
+<Multi_key> <i> <c> <e> : "𐌄" U10304    # OLD ITALIC LETTER E
+<Multi_key> <i> <c> <v> : "𐌅" U10305    # OLD ITALIC LETTER VE
+<Multi_key> <i> <c> <z> : "𐌆" U10306    # OLD ITALIC LETTER ZE
+<Multi_key> <i> <c> <h> : "𐌇" U10307    # OLD ITALIC LETTER HE
+<Multi_key> <i> <c> <T> : "𐌈" U10308    # OLD ITALIC LETTER THE
+<Multi_key> <i> <x> <t> <h> : "𐌈" U10308    # OLD ITALIC LETTER THE (alternatively icT)
+<Multi_key> <i> <c> <i> : "𐌉" U10309    # OLD ITALIC LETTER I
+<Multi_key> <i> <c> <k> : "𐌊" U1030A    # OLD ITALIC LETTER KA
+<Multi_key> <i> <c> <l> : "𐌋" U1030B    # OLD ITALIC LETTER EL
+<Multi_key> <i> <c> <m> : "𐌌" U1030C    # OLD ITALIC LETTER EM
+<Multi_key> <i> <c> <n> : "𐌍" U1030D    # OLD ITALIC LETTER EN
+<Multi_key> <i> <c> <X> : "𐌎" U1030E    # OLD ITALIC LETTER ESH
+<Multi_key> <i> <c> <o> : "𐌏" U1030F    # OLD ITALIC LETTER O
+<Multi_key> <i> <c> <p> : "𐌐" U10310    # OLD ITALIC LETTER PE
+<Multi_key> <i> <c> <S> : "𐌑" U10311    # OLD ITALIC LETTER SHE
+<Multi_key> <i> <x> <s> <h> : "𐌑" U10311    # OLD ITALIC LETTER SHE (alternatively icS)
+<Multi_key> <i> <c> <q> : "𐌒" U10312    # OLD ITALIC LETTER KU
+<Multi_key> <i> <c> <r> : "𐌓" U10313    # OLD ITALIC LETTER ER
+<Multi_key> <i> <c> <s> : "𐌔" U10314    # OLD ITALIC LETTER ES
+<Multi_key> <i> <c> <t> : "𐌕" U10315    # OLD ITALIC LETTER TE
+<Multi_key> <i> <c> <u> : "𐌖" U10316    # OLD ITALIC LETTER U
+<Multi_key> <i> <c> <x> : "𐌗" U10317    # OLD ITALIC LETTER EKS
+<Multi_key> <i> <c> <P> : "𐌘" U10318    # OLD ITALIC LETTER PHE
+<Multi_key> <i> <x> <p> <h> : "𐌘" U10318    # OLD ITALIC LETTER PHE (alternatively icP)
+<Multi_key> <i> <c> <K> : "𐌙" U10319    # OLD ITALIC LETTER KHE
+<Multi_key> <i> <x> <k> <h> : "𐌙" U10319    # OLD ITALIC LETTER KHE (alternatively icK)
+<Multi_key> <i> <c> <f> : "𐌚" U1031A    # OLD ITALIC LETTER EF
+
+<Multi_key> <i> <0> <1> <Return> : "𐌠" U10320    # OLD ITALIC NUMERAL ONE
+<Multi_key> <i> <0> <5> <Return> : "𐌡" U10321    # OLD ITALIC NUMERAL FIVE
+<Multi_key> <i> <0> <1> <0> <Return> : "𐌢" U10322    # OLD ITALIC NUMERAL TEN
+<Multi_key> <i> <0> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
+<Multi_key> <i> <0> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
+
+# archaic Latin
+<Multi_key> <i> <x> <v> <F> : "Ⅎ" U2132    # TURNED CAPITAL F (DIGAMMA INVERSUM)
+<Multi_key> <i> <x> <less> <C> : "Ↄ" U2183    # ROMAN NUMERAL REVERSED ONE HUNDRED (ANTISIGMA)
+<Multi_key> <i> <x> <bar> <minus> : "Ⱶ" U2C75    # LATIN CAPITAL LETTER HALF H
+<Multi_key> <i> <x> <minus> <bar> : "Ꟶ" UA7F5    # LATIN CAPITAL LETTER REVERSED HALF H
+<Multi_key> <i> <x> <I> <minus> : "ꟷ" UA7F7    # LATIN EPIGRAPHIC LETTER SIDEWAYS I
+<Multi_key> <i> <x> <less> <F> : "ꟻ" UA7FB    # LATIN EPIGRAPHIC LETTER REVERSED F
+<Multi_key> <i> <x> <less> <P> : "ꟼ" UA7FC    # LATIN EPIGRAPHIC LETTER REVERSED P
+<Multi_key> <i> <x> <v> <M> : "ꟽ" UA7FD    # LATIN EPIGRAPHIC LETTER INVERTED M
+<Multi_key> <i> <x> <I> <colon> : "ꟾ" UA7FE    # LATIN EPIGRAPHIC LETTER I LONGA
+<Multi_key> <i> <x> <M> <N> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
+<Multi_key> <i> <x> <M> <apostrophe> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
+
 ################
 # (j) Japanese #
 ################
@@ -3835,7 +3892,7 @@ include "%L"
 # Convention: # + number + type
 #   type: f = fency tally, i = ideographic tally, r = Roman numerals, R = uppercase Roman
 #
-# Also see Arabic (a0), Japanese (j0) and Chinese (z0) numerals above.
+# Also see Arabic (a0), Etruscan (i0), Japanese (j0) and Chinese (z0) numerals above.
 
 # Tally marks
 
