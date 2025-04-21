@@ -35,12 +35,13 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **International Morse Code** (76): ···---··· etc
 
-### Symbols (1112)
-* **Emoji** (283): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+### Symbols (1143)
+* **Emoji** (265): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (149): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ ∃ A.A ⊊ B∖A etc.
 * **Numerals** (54): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (64): ♈ 🌒 ☿ ♇ etc
 * **Arrows** (154): ↦ ↺ ⇄ ⇼ ⏎ etc
+* **Geometric shapes** (49): ⬛ ⬚ 🟣 ◐ etc
 * **Box drawing** (48): ╞╦╕ etc

@@ -1324,6 +1324,7 @@ include "%L"
 <Multi_key> <dollar> <Return>      : "︍" UFE0D   # VARIATION SELECTOR-14
 
 <Multi_key> <dollar> <Multi_key> <period> <minus>       : "ꞏ" UA78F   # LATIN LETTER SINOLOGICAL DOT
+<Multi_key> <dollar> <Multi_key> <asciicircum> <period> : "ꞏ" UA78F   # LATIN LETTER SINOLOGICAL DOT
 <Multi_key> <dollar> <Multi_key> <1> <apostrophe>       : "ʹ" U02B9   # MODIFIER LETTER PRIME
 <Multi_key> <dollar> <Multi_key> <2> <apostrophe>       : "ʺ" U02BA   # MODIFIER LETTER DOUBLE PRIME
 <Multi_key> <dollar> <Multi_key> <greater> <apostrophe> : "ʼ" U02BC   # MODIFIER LETTER APOSTROPHE
@@ -2913,7 +2914,7 @@ include "%L"
 <Multi_key> <backslash> <o> <slash> : "🙌" U1F64C        # PERSON RAISING BOTH HANDS IN CELEBRATION
 <Multi_key> <greater> <less> <greater> : "🐟" U1F41F     # FISH (conflicts with ⋄, use diamond)
 
-# Hearts (start with <3)
+# Hearts (start with <3) - also see geometric shapes section
 
 <Multi_key> <less> <3> <Return>    : "❤️"  U2764 UFE0F   # HEAVY BLACK HEART EMOJI (overrides ♥ )
 <Multi_key> <less> <3> <equal>     : "❤️‍🩹" U2764 UFE0F U200D U1FA79   # MENDING HEART
@@ -2943,27 +2944,7 @@ include "%L"
 <Multi_key> <less> <3> <colon> <parenright>        : "🥰"  U1F970    # SMILING FACE WITH SMILING EYES AND THREE HEARTS
 <Multi_key> <less> <3> <parenleft> <parenright>    : "🫶"  U1FAF6    # HEART HANDS
 
-# Squares [] and circles ()
-
-<Multi_key> <bracketleft> <bracketright> <K> : "⬛" U2B1B    # BLACK LARGE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <W> : "⬜" U2B1C    # WHITE LARGE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <R> : "🟥" U1F7E5    # LARGE RED SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <B> : "🟦" U1F7E6    # LARGE BLUE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <O> : "🟧" U1F7E7    # LARGE ORANGE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <Y> : "🟨" U1F7E8    # LARGE YELLOW SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <G> : "🟩" U1F7E9    # LARGE GREEN SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <P> : "🟪" U1F7EA    # LARGE PURPLE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <b> : "🟫" U1F7EB    # LARGE BROWN SQUARE (overrides APL ⌷)
-
-<Multi_key> <parenleft> <parenright> <W> : "⚪" U26AA    # MEDIUM WHITE CIRCLE
-<Multi_key> <parenleft> <parenright> <K> : "⚫" U26AB    # MEDIUM BLACK CIRCLE
-<Multi_key> <parenleft> <parenright> <R> : "🔴" U1F534    # LARGE RED CIRCLE
-<Multi_key> <parenleft> <parenright> <B> : "🔵" U1F535    # LARGE BLUE CIRCLE
-<Multi_key> <parenleft> <parenright> <O> : "🟠" U1F7E0    # LARGE ORANGE CIRCLE
-<Multi_key> <parenleft> <parenright> <Y> : "🟡" U1F7E1    # LARGE YELLOW CIRCLE
-<Multi_key> <parenleft> <parenright> <G> : "🟢" U1F7E2    # LARGE GREEN CIRCLE
-<Multi_key> <parenleft> <parenright> <P> : "🟣" U1F7E3    # LARGE PURPLE CIRCLE
-<Multi_key> <parenleft> <parenright> <b> : "🟤" U1F7E4    # LARGE BROWN CIRCLE
+# TODO
 
 # Gender and sexuality (also start with <3)
 
@@ -3215,6 +3196,68 @@ include "%L"
 <Multi_key> <at> <exclam> <question> : "⁉️" U2049 UFE0F    # EXCLAMATION QUESTION MARK VARIATION SELECTOR-16
 <Multi_key> <at> <question>          : "❓" U2753    # BLACK QUESTION MARK ORNAMENT
 <Multi_key> <at> <numbersign>        : "⌘" U2318    # PLACE OF INTEREST SIGN (COMMAND KEY)
+
+####################
+# Geometric shapes #
+####################
+
+# Squares []
+
+<Multi_key> <bracketleft> <bracketright> <K> : "⬛" U2B1B    # BLACK LARGE SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <W> : "⬜" U2B1C    # WHITE LARGE SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <R> : "🟥" U1F7E5    # LARGE RED SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <B> : "🟦" U1F7E6    # LARGE BLUE SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <O> : "🟧" U1F7E7    # LARGE ORANGE SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <Y> : "🟨" U1F7E8    # LARGE YELLOW SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <G> : "🟩" U1F7E9    # LARGE GREEN SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <P> : "🟪" U1F7EA    # LARGE PURPLE SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <b> : "🟫" U1F7EB    # LARGE BROWN SQUARE (overrides APL ⌷)
+
+<Multi_key> <bracketleft> <bracketright> <period>      : "⬚" U2B1A    # DOTTED SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <less>        : "◧" U25E7    # SQUARE WITH LEFT HALF BLACK (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <greater>     : "◨" U25E8    # SQUARE WITH RIGHT HALF BLACK (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <asciicircum> : "⬒" U2B12    # SQUARE WITH TOP HALF BLACK (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <v>           : "⬓" U2B13    # SQUARE WITH BOTTOM HALF BLACK (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <bar>         : "◫" U25EB    # WHITE SQUARE WITH VERTICAL BISECTING LINE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <U> <L> <Q>   : "◰" U25F0    # WHITE SQUARE WITH UPPER LEFT QUADRANT (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <L> <L> <Q>   : "◱" U25F1    # WHITE SQUARE WITH LOWER LEFT QUADRANT (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <L> <R> <Q>   : "◲" U25F2    # WHITE SQUARE WITH LOWER RIGHT QUADRANT (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <U> <R> <Q>   : "◳" U25F3    # WHITE SQUARE WITH UPPER RIGHT QUADRANT (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <slash>       : "⧄" U29C4    # SQUARED RISING DIAGONAL SLASH (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <backslash>   : "⧅" U29C5    # SQUARED FALLING DIAGONAL SLASH (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <plus>        : "⊞" U229E    # SQUARED PLUS (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <X>           : "⊠" U22A0    # SQUARED TIMES (overrides APL ⌷)
+
+# Circles ()
+
+<Multi_key> <parenleft> <parenright> <W> : "⚪" U26AA    # MEDIUM WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <K> : "⚫" U26AB    # MEDIUM BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <R> : "🔴" U1F534    # LARGE RED CIRCLE
+<Multi_key> <parenleft> <parenright> <B> : "🔵" U1F535    # LARGE BLUE CIRCLE
+<Multi_key> <parenleft> <parenright> <O> : "🟠" U1F7E0    # LARGE ORANGE CIRCLE
+<Multi_key> <parenleft> <parenright> <Y> : "🟡" U1F7E1    # LARGE YELLOW CIRCLE
+<Multi_key> <parenleft> <parenright> <G> : "🟢" U1F7E2    # LARGE GREEN CIRCLE
+<Multi_key> <parenleft> <parenright> <P> : "🟣" U1F7E3    # LARGE PURPLE CIRCLE
+<Multi_key> <parenleft> <parenright> <b> : "🟤" U1F7E4    # LARGE BROWN CIRCLE
+
+<Multi_key> <parenleft> <parenright> <period>      : "◌" U25CC    # DOTTED CIRCLE (alrnatively O.)
+<Multi_key> <parenleft> <parenright> <less>        : "◐" U25D0    # CIRCLE WITH LEFT HALF BLACK
+<Multi_key> <parenleft> <parenright> <greater>     : "◑" U25D1    # CIRCLE WITH RIGHT HALF BLACK
+<Multi_key> <parenleft> <parenright> <v>           : "◒" U25D2    # CIRCLE WITH LOWER HALF BLACK
+<Multi_key> <parenleft> <parenright> <asciicircum> : "◓" U25D3    # CIRCLE WITH UPPER HALF BLACK
+<Multi_key> <parenleft> <parenright> <U> <L> <Q>   : "◴" U25F4    # WHITE CIRCLE WITH UPPER LEFT QUADRANT
+<Multi_key> <parenleft> <parenright> <L> <L> <Q>   : "◵" U25F5    # WHITE CIRCLE WITH LOWER LEFT QUADRANT
+<Multi_key> <parenleft> <parenright> <L> <R> <Q>   : "◶" U25F6    # WHITE CIRCLE WITH LOWER RIGHT QUADRANT
+<Multi_key> <parenleft> <parenright> <U> <R> <Q>   : "◷" U25F7    # WHITE CIRCLE WITH UPPER RIGHT QUADRANT
+<Multi_key> <parenleft> <parenright> <plus>        : "⊕" U2295   # CIRCLED PLUS (alternatively (+))
+<Multi_key> <parenleft> <parenright> <minus>       : "⊖" U2296   # CIRCLED MINUS (alternatively (-))
+<Multi_key> <parenleft> <parenright> <X>           : "⊗" U2297   # CIRCLED TIMES (alternatively (*))
+<Multi_key> <parenleft> <parenright> <slash>       : "⊘" U2298   # CIRCLED DIVISION SLASH (alternatively (/))
+<Multi_key> <parenleft> <parenright> <Multi_key> <asciicircum> <period> : "⊙" U2299    # CIRCLED DOT OPERATOR
+<Multi_key> <parenleft> <parenright> <Multi_key> <period> <minus> : "⊙" U2299    # CIRCLED DOT OPERATOR
+<Multi_key> <parenleft> <parenright> <o>           : "⊚" U229A    # CIRCLED RING OPERATOR
+<Multi_key> <parenleft> <parenright> <asterisk>    : "⊛" U229B    # CIRCLED ASTERISK OPERATOR
+<Multi_key> <parenleft> <parenright> <equal>       : "⊜" U229C    # CIRCLED EQUALS
 
 ##########
 # Arrows #
