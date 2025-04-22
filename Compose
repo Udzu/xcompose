@@ -2914,7 +2914,7 @@ include "%L"
 <Multi_key> <backslash> <o> <slash> : "🙌" U1F64C        # PERSON RAISING BOTH HANDS IN CELEBRATION
 <Multi_key> <greater> <less> <greater> : "🐟" U1F41F     # FISH (conflicts with ⋄, use diamond)
 
-# Hearts (start with <3) - also see geometric shapes section
+# Hearts (start with <3) - see geometric shapes section for other colored shapes 
 
 <Multi_key> <less> <3> <Return>    : "❤️"  U2764 UFE0F   # HEAVY BLACK HEART EMOJI (overrides ♥ )
 <Multi_key> <less> <3> <equal>     : "❤️‍🩹" U2764 UFE0F U200D U1FA79   # MENDING HEART
@@ -2943,8 +2943,6 @@ include "%L"
 <Multi_key> <less> <3> <asciicircum> <asciicircum> : "😻"  U1F63B    # SMILING CAT FACE WITH HEART-SHAPED EYES
 <Multi_key> <less> <3> <colon> <parenright>        : "🥰"  U1F970    # SMILING FACE WITH SMILING EYES AND THREE HEARTS
 <Multi_key> <less> <3> <parenleft> <parenright>    : "🫶"  U1FAF6    # HEART HANDS
-
-# TODO
 
 # Gender and sexuality (also start with <3)
 
@@ -3068,7 +3066,7 @@ include "%L"
 <Multi_key> <z> <z> <z>            : "💤"  U1F4A4        # SLEEPING SYMBOL (ZZZ)
 <Multi_key> <1> <0> <0>            : "💯"  U1F4AF        # HUNDRED POINTS SYMBOL
 
-# Shapes (see geometric shapes section for more)
+# Shapes (see geometric shapes section for many more)
 
 <Multi_key> <V> <V>                : "✅"  U2705         # WHITE HEAVY CHECK MARK
 <Multi_key> <X> <X>                : "❌"  U274C         # CROSS MARK
@@ -3076,13 +3074,12 @@ include "%L"
 <Multi_key> <asterisk> <0>         : "☆"   U2606         # WHITE STAR (RATING) (conflicts with °, use oo)
 <Multi_key> <asterisk> <1>         : "★"   U2605         # BLACK STAR (RATING)
 <Multi_key> <asterisk> <h>         : "⯪"   U2BEA         # STAR WITH LEFT HALF BLACK (RATING)
-<Multi_key> <asterisk> <6>         : "✡"   U2721         # STAR OF DAVID
-<Multi_key> <O> <asterisk>         : "✪"   U272A         # CIRCLED WHITE STAR
+<Multi_key> <asterisk> <6>         : "✡️"   U2721 UFE0F  # STAR OF DAVID (EMOJI) (use TAB*6- for text ✡)
 
 <Multi_key> <O> <backslash> <Return> : "⃠"  U20E0         # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
 <Multi_key> <backslash> <O> <Return> : "⃠"  U20E0         # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
 
-# Emoji modifiers used to set skin colour on people emoji
+# Emoji modifiers used to set skin color on people emoji
 
 <Multi_key> <s> <1> <Return>       : "🏻"  U1F3FB        # EMOJI MODIFIER FITZPATRICK TYPE-1-2
 <Multi_key> <s> <2> <Return>       : "🏻"  U1F3FB        # EMOJI MODIFIER FITZPATRICK TYPE-1-2
@@ -3318,20 +3315,31 @@ include "%L"
 <Multi_key> <Tab> <less> <greater> <2> <0>       : "🞜" U1F79C    # DIAMOND TARGET
 <Multi_key> <Tab> <less> <greater> <2> <1>       : "◈" U25C8    # WHITE DIAMOND CONTAINING BLACK SMALL DIAMOND
 
-<Multi_key> <Tab> <O> <5> <0> : "⬠" U2B20    # WHITE PENTAGON
-<Multi_key> <Tab> <O> <5> <1> : "⬟" U2B1F    # BLACK PENTAGON
-<Multi_key> <Tab> <O> <6> <0> : "⬡" U2B21    # WHITE HEXAGON
-<Multi_key> <Tab> <O> <6> <1> : "⬢" U2B22    # BLACK HEXAGON
+<Multi_key> <Tab> <O> <5> <0>           : "⬠" U2B20    # WHITE PENTAGON
+<Multi_key> <Tab> <O> <5> <1>           : "⬟" U2B1F    # BLACK PENTAGON
+<Multi_key> <Tab> <O> <5> <greater> <0> : "⭔" U2B54    # WHITE RIGHT-POINTING PENTAGON
+<Multi_key> <Tab> <O> <5> <greater> <1> : "⭓" U2B53    # BLACK RIGHT-POINTING PENTAGON
+<Multi_key> <Tab> <O> <5> <v> <1>       : "⯂" U2BC2    # TURNED BLACK PENTAGON
+<Multi_key> <Tab> <O> <6> <0>           : "⬡" U2B21    # WHITE HEXAGON
+<Multi_key> <Tab> <O> <6> <1>           : "⬢" U2B22    # BLACK HEXAGON
+<Multi_key> <Tab> <O> <6> <h> <1>       : "⬣" U2B23    # HORIZONTAL BLACK HEXAGON
+<Multi_key> <Tab> <O> <8> <1>           : "⯄" U2BC4    # BLACK OCTAGON
+<Multi_key> <Tab> <O> <8> <h> <1>       : "⯃" U2BC3    # HORIZONTAL BLACK OCTAGON
 
 <Multi_key> <Tab> <asterisk> <3> <1> : "🟂" U1F7C2    # THREE POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <4> <0> : "✧" U2727    # WHITE FOUR POINTED STAR
 <Multi_key> <Tab> <asterisk> <4> <1> : "🟆" U1F7C6    # FOUR POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <5> <0> : "☆" U2606    # WHITE STAR (alternatively *0)
 <Multi_key> <Tab> <asterisk> <5> <1> : "★" U2605    # BLACK STAR (alternatively *1)
+<Multi_key> <Tab> <asterisk> <5> <O> : "✪"   U272A         # CIRCLED WHITE STAR
 <Multi_key> <Tab> <asterisk> <5> <less> : "⯪" U2BEA    # STAR WITH LEFT HALF BLACK (alternatively *h)
 <Multi_key> <Tab> <asterisk> <5> <greater> : "⯫" U2BEB    # STAR WITH RIGHT HALF BLACK
+<Multi_key> <Tab> <asterisk> <5> <minus> : "⛤" U26E4    # PENTAGRAM
+<Multi_key> <Tab> <asterisk> <5> <v> <minus> : "⛧" U26E7    # INVERTED PENTAGRAM
 <Multi_key> <Tab> <asterisk> <6> <1> : "✶" U2736    # SIX POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <6> <minus> : "✡" U2721    # STAR OF DAVID (alternatively *6)
 <Multi_key> <Tab> <asterisk> <8> <1> : "✴" U2734    # EIGHT POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <8> <O> : "❂" U2742    # CIRCLED OPEN CENTRE EIGHT POINTED STAR
 <Multi_key> <Tab> <asterisk> <9> <0> : "🟙" U1F7D9    # NINE POINTED WHITE STAR
 <Multi_key> <Tab> <asterisk> <1> <2> <1> : "✹" U2739    # TWELVE POINTED BLACK STAR
 
