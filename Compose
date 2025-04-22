@@ -3068,16 +3068,15 @@ include "%L"
 <Multi_key> <z> <z> <z>            : "💤"  U1F4A4        # SLEEPING SYMBOL (ZZZ)
 <Multi_key> <1> <0> <0>            : "💯"  U1F4AF        # HUNDRED POINTS SYMBOL
 
-# Shapes
+# Shapes (see geometric shapes section for more)
 
 <Multi_key> <V> <V>                : "✅"  U2705         # WHITE HEAVY CHECK MARK
 <Multi_key> <X> <X>                : "❌"  U274C         # CROSS MARK
 <Multi_key> <asterisk> <plus>      : "✨"  U2728         # SPARKLES
 <Multi_key> <asterisk> <0>         : "☆"   U2606         # WHITE STAR (RATING) (conflicts with °, use oo)
 <Multi_key> <asterisk> <1>         : "★"   U2605         # BLACK STAR (RATING)
-<Multi_key> <asterisk> <4>         : "✦"   U2726         # BLACK FOUR POINTED STAR
+<Multi_key> <asterisk> <h>         : "⯪"   U2BEA         # STAR WITH LEFT HALF BLACK (RATING)
 <Multi_key> <asterisk> <6>         : "✡"   U2721         # STAR OF DAVID
-<Multi_key> <asterisk> <8>         : "✷"   U2737         # EIGHT POINTED RECTILINEAR BLACK STAR
 <Multi_key> <O> <asterisk>         : "✪"   U272A         # CIRCLED WHITE STAR
 
 <Multi_key> <O> <backslash> <Return> : "⃠"  U20E0         # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
@@ -3231,16 +3230,7 @@ include "%L"
 <Multi_key> <bracketleft> <bracketright> <backslash>   : "⧅" U29C5    # SQUARED FALLING DIAGONAL SLASH (overrides APL ⌷)
 <Multi_key> <bracketleft> <bracketright> <plus>        : "⊞" U229E    # SQUARED PLUS (overrides APL ⌷)
 <Multi_key> <bracketleft> <bracketright> <X>           : "⊠" U22A0    # SQUARED TIMES (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <bracketleft> <bracketright> <1> : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (overrides APL ⌷)
-
-# Rectangles [ ]
-
-<Multi_key> <bracketleft> <space> <bracketright> <0> : "▭" U25AD    # WHITE RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <1> : "▬" U25AC    # BLACK RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <v> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <v> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
+<Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (overrides APL ⌷)
 
 # Circles ()
 
@@ -3274,10 +3264,26 @@ include "%L"
 <Multi_key> <parenleft> <parenright> <o>           : "⊚" U229A    # CIRCLED RING OPERATOR
 <Multi_key> <parenleft> <parenright> <asterisk>    : "⊛" U229B    # CIRCLED ASTERISK OPERATOR
 <Multi_key> <parenleft> <parenright> <equal>       : "⊜" U229C    # CIRCLED EQUALS
-<Multi_key> <parenleft> <parenright> <parenleft> <parenright> <0> : "◎" U25CE    # BULLSEYE
-<Multi_key> <parenleft> <parenright> <parenleft> <parenright> <1> : "◉" U25C9    # FISHEYE
+<Multi_key> <parenleft> <parenright> <2> <0>       : "◎" U25CE    # BULLSEYE
+<Multi_key> <parenleft> <parenright> <2> <1>       : "◉" U25C9    # FISHEYE
 
-# Other shapes: [TAB] + 2 letter shape + code (shares a namespace with arrows)
+# Rectangles [ ] and ellipses ( )
+
+<Multi_key> <bracketleft> <space> <bracketright> <0> : "▭" U25AD    # WHITE RECTANGLE
+<Multi_key> <bracketleft> <space> <bracketright> <1> : "▬" U25AC    # BLACK RECTANGLE
+<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
+<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
+<Multi_key> <bracketleft> <space> <bracketright> <v> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
+<Multi_key> <bracketleft> <space> <bracketright> <v> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
+
+<Multi_key> <parenleft> <space> <parenright> <0> : "⬭" U2B2D    # WHITE HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
+<Multi_key> <parenleft> <space> <parenright> <1> : "⬬" U2B2C    # BLACK HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
+<Multi_key> <parenleft> <space> <parenright> <asciicircum> <0> : "⬯" U2B2F    # WHITE VERTICAL ELLIPSE (conflicts with ˘, use ␣()
+<Multi_key> <parenleft> <space> <parenright> <asciicircum> <1> : "⬮" U2B2E    # BLACK VERTICAL ELLIPSE (conflicts with ˘, use ␣()
+<Multi_key> <parenleft> <space> <parenright> <v> <0> : "⬯" U2B2F    # WHITE VERTICAL ELLIPSE (conflicts with ˘, use ␣()
+<Multi_key> <parenleft> <space> <parenright> <v> <1> : "⬮" U2B2E    # BLACK VERTICAL ELLIPSE (conflicts with ˘, use ␣()
+
+# Other shapes: [TAB] + 2 letter shape + code (note this shares a namespace with arrows)
 
 <Multi_key> <Tab> <slash> <backslash> <1> : "▲" U25B2    # BLACK UP-POINTING TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <0> : "△" U25B3    # WHITE UP-POINTING TRIANGLE
@@ -3292,7 +3298,6 @@ include "%L"
 <Multi_key> <Tab> <backslash> <slash> <1> : "▼" U25BC    # BLACK DOWN-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <0>      : "◁" U25C1    # WHITE LEFT-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <1>      : "◀" U25C0    # BLACK LEFT-POINTING TRIANGLE
-
 <Multi_key> <Tab> <slash> <bar> <0>     : "◿" U25FF    # LOWER RIGHT TRIANGLE
 <Multi_key> <Tab> <slash> <bar> <1>     : "◢" U25E2    # BLACK LOWER RIGHT TRIANGLE
 <Multi_key> <Tab> <bar> <backslash> <0> : "◺" U25FA    # LOWER LEFT TRIANGLE
@@ -3301,20 +3306,30 @@ include "%L"
 <Multi_key> <Tab> <bar> <slash> <1>     : "◤" U25E4    # BLACK UPPER LEFT TRIANGLE
 <Multi_key> <Tab> <backslash> <bar> <0> : "◹" U25F9    # UPPER RIGHT TRIANGLE
 <Multi_key> <Tab> <backslash> <bar> <1> : "◥" U25E5    # BLACK UPPER RIGHT TRIANGLE
+<Multi_key> <Tab> <slash> <slash> <0>   : "▱" U25B1    # WHITE PARALLELOGRAM
+<Multi_key> <Tab> <slash> <slash> <1>   : "▰" U25B0    # BLACK PARALLELOGRAM
 
-<Multi_key> <Tab> <less> <greater> <0>  : "◇" U25C7    # WHITE DIAMOND
-<Multi_key> <Tab> <less> <greater> <1>  : "◆" U25C6    # BLACK DIAMOND
-<Multi_key> <Tab> <less> <greater> <less> <greater> <0> : "🞜" U1F79C    # DIAMOND TARGET
-<Multi_key> <Tab> <less> <greater> <less> <greater> <1> : "◈" U25C8    # WHITE DIAMOND CONTAINING BLACK SMALL DIAMOND
+<Multi_key> <Tab> <less> <greater> <0>           : "◇" U25C7    # WHITE DIAMOND
+<Multi_key> <Tab> <less> <greater> <1>           : "◆" U25C6    # BLACK DIAMOND
+<Multi_key> <Tab> <less> <greater> <less>        : "⬖" U2B16    # DIAMOND WITH LEFT HALF BLACK
+<Multi_key> <Tab> <less> <greater> <greater>     : "⬗" U2B17    # DIAMOND WITH RIGHT HALF BLACK
+<Multi_key> <Tab> <less> <greater> <asciicircum> : "⬘" U2B18    # DIAMOND WITH TOP HALF BLACK
+<Multi_key> <Tab> <less> <greater> <v>           : "⬙" U2B19    # DIAMOND WITH BOTTOM HALF BLACK
+<Multi_key> <Tab> <less> <greater> <2> <0>       : "🞜" U1F79C    # DIAMOND TARGET
+<Multi_key> <Tab> <less> <greater> <2> <1>       : "◈" U25C8    # WHITE DIAMOND CONTAINING BLACK SMALL DIAMOND
 
-<Multi_key> <Tab> <slash> <slash> <0> : "▱" U25B1    # WHITE PARALLELOGRAM
-<Multi_key> <Tab> <slash> <slash> <1> : "▰" U25B0    # BLACK PARALLELOGRAM
+<Multi_key> <Tab> <O> <5> <0> : "⬠" U2B20    # WHITE PENTAGON
+<Multi_key> <Tab> <O> <5> <1> : "⬟" U2B1F    # BLACK PENTAGON
+<Multi_key> <Tab> <O> <6> <0> : "⬡" U2B21    # WHITE HEXAGON
+<Multi_key> <Tab> <O> <6> <1> : "⬢" U2B22    # BLACK HEXAGON
 
 <Multi_key> <Tab> <asterisk> <3> <1> : "🟂" U1F7C2    # THREE POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <4> <0> : "✧" U2727    # WHITE FOUR POINTED STAR
 <Multi_key> <Tab> <asterisk> <4> <1> : "🟆" U1F7C6    # FOUR POINTED BLACK STAR
-<Multi_key> <Tab> <asterisk> <5> <0> : "☆" U2606    # WHITE STAR
-<Multi_key> <Tab> <asterisk> <5> <1> : "★" U2605    # BLACK STAR
+<Multi_key> <Tab> <asterisk> <5> <0> : "☆" U2606    # WHITE STAR (alternatively *0)
+<Multi_key> <Tab> <asterisk> <5> <1> : "★" U2605    # BLACK STAR (alternatively *1)
+<Multi_key> <Tab> <asterisk> <5> <less> : "⯪" U2BEA    # STAR WITH LEFT HALF BLACK (alternatively *h)
+<Multi_key> <Tab> <asterisk> <5> <greater> : "⯫" U2BEB    # STAR WITH RIGHT HALF BLACK
 <Multi_key> <Tab> <asterisk> <6> <1> : "✶" U2736    # SIX POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <8> <1> : "✴" U2734    # EIGHT POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <9> <0> : "🟙" U1F7D9    # NINE POINTED WHITE STAR
