@@ -190,7 +190,7 @@ def get(args: argparse.Namespace) -> None:
 
 
 def _print_sorted(
-    definitions: Sequence[Definition], sort: Literal["value", "keys"]
+    definitions: Sequence[Definition], sort: Literal["value", "keys", "keys_length"]
 ) -> None:
     if sort == "value":
         definitions = sorted(
@@ -201,6 +201,11 @@ def _print_sorted(
         definitions = sorted(
             definitions,
             key=lambda d: ([from_code_point(k) or k for k in d.keys], d.value),
+        )
+    elif sort == "keys_length":
+        definitions = sorted(
+            definitions,
+            key=lambda d: (len(d.keys), [from_code_point(k) or k for k in d.keys], d.value),
         )
     print("\n".join(d.line for d in definitions))
 
@@ -309,7 +314,7 @@ def main() -> None:
         "--sort",
         metavar="SORT",
         # dest="modifier_key",
-        choices=["keys", "value"],
+        choices=["keys", "keys_length", "value"],
         default=None,
         help="sort resulting sequences (options: 'keys', 'value')",
     )
