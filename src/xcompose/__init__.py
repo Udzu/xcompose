@@ -140,7 +140,7 @@ def add(args: argparse.Namespace) -> None:
     if args.modifier_key is not None:
         keys = f"<{args.modifier_key}> {keys}"
     codes = " ".join(to_code_point(c) for c in args.value)
-    names = " ".join(unicodedata.name(c) for c in args.value)
+    names = " ".join(unicodedata.name(c, "???") for c in args.value)
     print(f'{keys} : "{args.value}" {codes}    # {names}')
 
 
@@ -228,7 +228,10 @@ def validate(args: argparse.Namespace) -> None:
         # don't validate the included files (but still parse them for conflicts)
         if defn.file == file:
             expected_keysym = " ".join(to_code_point(c) for c in defn.value)
-            expected_comment = " ".join(unicodedata.name(c) for c in defn.value)
+            try:
+                expected_comment = " ".join(unicodedata.name(c) for c in defn.value)
+            except ValueError:
+                expected_comment = None
 
             if any(not is_keysym(c) for c in defn.keys):
                 print(
@@ -248,16 +251,17 @@ def validate(args: argparse.Namespace) -> None:
                         f"Incorrect keysym: {defn.keysym}, expected {expected_keysym}"
                     )
 
-            if defn.comment is None:
-                print(
-                    f"[{defn.file}#{defn.line_no}] Missing comment: "
-                    f"expected {expected_comment}"
-                )
-            elif len(defn.value) == 1 and expected_comment not in defn.comment:
-                print(
-                    f"[{defn.file}#{defn.line_no}] "
-                    f"Incorrect comment: {defn.comment}, expected {expected_comment}"
-                )
+            if expected_comment:
+                if defn.comment is None:
+                    print(
+                        f"[{defn.file}#{defn.line_no}] Missing comment: "
+                        f"expected {expected_comment}"
+                    )
+                elif len(defn.value) == 1 and expected_comment not in defn.comment:
+                    print(
+                        f"[{defn.file}#{defn.line_no}] Incorrect comment: "
+                        f"{defn.comment}, expected {expected_comment}"
+                    )
 
             for k, v in d.items():
                 n = min(len(k), len(defn.keys))
