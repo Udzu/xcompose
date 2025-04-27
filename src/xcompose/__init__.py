@@ -205,7 +205,11 @@ def _print_sorted(
     elif sort == "keys_length":
         definitions = sorted(
             definitions,
-            key=lambda d: (len(d.keys), [from_code_point(k) or k for k in d.keys], d.value),
+            key=lambda d: (
+                len(d.keys),
+                [from_code_point(k) or k for k in d.keys],
+                d.value,
+            ),
         )
     print("\n".join(d.line for d in definitions))
 
