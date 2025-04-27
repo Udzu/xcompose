@@ -179,7 +179,7 @@ def get(args: argparse.Namespace) -> None:
         ignore_includes=args.ignore_include,
         modifier_key=args.modifier_key,
     ):
-        if keys == defn.keys[1 : len(keys) + 1]:
+        if keys[: len(defn.keys) - 1] == defn.keys[1 : len(keys) + 1]:
             if args.sort is None:
                 print(defn.line)
             else:
