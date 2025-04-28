@@ -3064,6 +3064,7 @@ include "%L"
 <Multi_key> <3> <P>                : "🥉"  U1F949        # THIRD PLACE MEDAL
 
 <Multi_key> <I> <S> <S>            : "🛰️"  U1F6F0 UFE0F  # SATELLITE (EMOJI) (ISS)
+<Multi_key> <U> <F> <O>            : "🛸"  U1F6F8        # FLYING SAUCER (UFO)
 
 <Multi_key> <A> <T> <M>            : "🏧"  U1F3E7        # AUTOMATED TELLER MACHINE (conflicts with useless @)
 <Multi_key> <C> <D>                : "💿"  U1F4BF        # OPTICAL DISC (CD)
@@ -3268,6 +3269,7 @@ include "%L"
 <Multi_key> <h> <o> <t>            : "🔥"  U1F525        # FIRE (HOT)
 <Multi_key> <l> <o> <t> <u> <s>    : "🪷"  U1FAB7        # LOTUS
 <Multi_key> <m> <a> <p>            : "🗺️"  U1F5FA UFE0F  # WORLD MAP (EMOJI)
+<Multi_key> <m> <o> <o> <n>        : "🌙"  U1F319        # CRESCENT MOON (see astrology section for moon phases)
 <Multi_key> <p> <a> <l> <m>        : "🌴"  U1F334        # PALM TREE
 <Multi_key> <r> <a> <i> <n>        : "🌧️"  U1F327 UFE0F  # CLOUD WITH RAIN (EMOJI)
 <Multi_key> <r> <o> <s> <e>        : "🌹"  U1F339        # ROSE
@@ -3278,6 +3280,7 @@ include "%L"
 <Multi_key> <s> <u> <n>            : "☀️"  U2600 UFE0F   # BLACK SUN WITH RAYS (EMOJI)
 <Multi_key> <t> <u> <l> <i> <p>    : "🌷"  U1F337        # TULIP
 <Multi_key> <w> <a> <v> <e>        : "🌊"  U1F30A        # WATER WAVE (use hi for 👋)
+<Multi_key> <w> <i> <n> <d>        : "🌬️"  U1F32C UFE0F  # WIND BLOWING FACE (EMOJI)
 <Multi_key> <w> <o> <o> <d>        : "🪵"  U1FAB5        # WOOD
 <Multi_key> <x> <m> <a> <s>        : "🎄"  U1F384        # CHRISTMAS TREE
 
@@ -3453,6 +3456,7 @@ include "%L"
 <Multi_key> <r> <a> <d> <i> <o>    : "📻"  U1F4FB        # RADIO
 <Multi_key> <r> <a> <z> <o> <r>    : "🪒"  U1FA92        # RAZOR
 <Multi_key> <s> <a> <x>            : "🎷"  U1F3B7        # SAXOPHONE
+<Multi_key> <s> <e> <w>            : "🪡"  U1FAA1        # SEWING NEEDLE
 <Multi_key> <s> <m> <o> <k> <e>    : "🚬"  U1F6AC        # SMOKING SYMBOL (conflicts with ℠, use SM)
 <Multi_key> <t> <e> <d> <d> <y>    : "🧸"  U1F9F8        # TEDDY BEAR
 <Multi_key> <t> <o> <r> <c> <h>    : "🔦"  U1F526        # ELECTRIC TORCH
@@ -3557,10 +3561,11 @@ include "%L"
 <Multi_key> <at> <Z> : "🇿"  U1F1FF  # REGIONAL INDICATOR SYMBOL LETTER Z
 
 <Multi_key> <at> <r> <e> <d> : "🚩" U1F6A9    # TRIANGULAR FLAG ON POST
+<Multi_key> <at> <s> <t> <a> <r> <t> : "🏁" U1F3C1    # CHEQUERED FLAG (START)
 <Multi_key> <at> <b> <l> <a> <c> <k> : "🏴" U1F3F4    # WAVING BLACK FLAG
 <Multi_key> <at> <w> <h> <i> <t> <e> : "🏳️" U1F3F3 UFE0F   # WAVING WHITE FLAG
-<Multi_key> <at> <l> <g> <b> <t> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG
-<Multi_key> <at> <p> <r> <i> <d> <e> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG
+<Multi_key> <at> <l> <g> <b> <t> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG (LGBT)
+<Multi_key> <at> <p> <r> <i> <d> <e> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG (PRIDE)
 <Multi_key> <at> <t> <r> <a> <n> <s> : "🏳️‍⚧️" U1F3F3 UFE0F U200D U26A7 UFE0F    # TRANS FLAG
 <Multi_key> <at> <e> <n> <g> : "🏴󠁧󠁢󠁥󠁮󠁧󠁿" U1F3F4 UE0067 UE0062 UE0065 UE006E UE0067 UE007F  # ENGLAND FLAG
 <Multi_key> <at> <s> <c> <t> : "🏴󠁧󠁢󠁳󠁣󠁴󠁿" U1F3F4 UE0067 UE0062 UE0073 UE0063 UE0074 UE007F  # SCOTLAND FLAG
@@ -3619,7 +3624,8 @@ include "%L"
 <Multi_key> <at> <exclam> <exclam>   : "‼️" U203C UFE0F    # DOUBLE EXCLAMATION MARK (EMOJI)
 <Multi_key> <at> <exclam> <question> : "⁉️" U2049 UFE0F    # EXCLAMATION QUESTION MARK (EMOJI)
 <Multi_key> <at> <question>          : "❓" U2753    # BLACK QUESTION MARK ORNAMENT
-<Multi_key> <at> <numbersign>        : "⌘" U2318    # PLACE OF INTEREST SIGN (COMMAND KEY)
+<Multi_key> <at> <dollar>            : "💲" U1F4B2   # HEAVY DOLLAR SIGN
+<Multi_key> <at> <numbersign>        : "⌘" U2318     # PLACE OF INTEREST SIGN (COMMAND KEY)
 
 ####################
 # Geometric shapes #
@@ -4635,6 +4641,11 @@ include "%L"
 <Multi_key> <asterisk> <W> <n> <G> : "🌖" U1F316    # WANING GIBBOUS MOON SYMBOL
 <Multi_key> <asterisk> <W> <n> <Q> : "🌗" U1F317    # LAST QUARTER MOON SYMBOL
 <Multi_key> <asterisk> <W> <n> <C> : "🌘" U1F318    # WANING CRESCENT MOON SYMBOL
+
+<Multi_key> <asterisk> <colon> <parenright> <N> <M> : "🌚" U1F31A    # NEW MOON WITH FACE
+<Multi_key> <asterisk> <colon> <parenright> <F> <M> : "🌝" U1F31D    # FULL MOON WITH FACE
+<Multi_key> <asterisk> <colon> <parenright> <W> <x> <C> : "🌛" U1F31B    # FIRST QUARTER MOON WITH FACE
+<Multi_key> <asterisk> <colon> <parenright> <W> <n> <C> : "🌜" U1F31C    # LAST QUARTER MOON WITH FACE
 
 # celestial bodies
 
