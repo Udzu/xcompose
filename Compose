@@ -3194,12 +3194,14 @@ include "%L"
 <Multi_key> <r> <o> <c> <k>        : "🤘"  U1F918        # SIGN OF THE HORNS (ROCK ON)
 <Multi_key> <s> <n> <a> <p>        : "🫰"  U1FAF0       # HAND WITH INDEX FINGER AND THUMB CROSSED (SNAP)
 <Multi_key> <s> <t> <o> <p>        : "✋"  U270B         # RAISED HAND (STOP)
-<Multi_key> <s> <t> <r> <o> <n> <g> : "💪" U1F4AA        # FLEXED BICEPS (6 letters but useful)
+<Multi_key> <s> <t> <r> <o> <n> <g> : "💪" U1F4AA        # FLEXED BICEPS (STRONG) (6 letters but useful)
 <Multi_key> <s> <w> <e> <a> <t>    : "💦"  U1F4A6        # SPLASHING SWEAT SYMBOL
 <Multi_key> <t> <i> <n> <y>        : "🤏"  U1F90F        # PINCHING HAND (TINY)
 <Multi_key> <t> <o> <o> <t> <h>    : "🦷"  U1F9B7        # TOOTH
 <Multi_key> <y> <o> <u>            : "🫵"  U1FAF5        # INDEX POINTING AT THE VIEWER (YOU)
 
+<Multi_key> <a> <p> <p> <l> <e>    : "🍎"  U1F34E        # RED APPLE
+<Multi_key> <b> <a> <c> <o> <n>    : "🥓"  U1F953        # BACON (conflicts with ă, use ua)
 <Multi_key> <b> <e> <e> <r>        : "🍺"  U1F37A        # BEER MUG (conflicts with ĕ, use ue)
 <Multi_key> <b> <r> <e> <a> <d>    : "🍞"  U1F35E        # BREAD
 <Multi_key> <c> <a> <f> <e>        : "☕"  U2615         # HOT BEVERAGE (CAFE) (alternatively tea) (conflicts with ǎ, use va)
@@ -3207,9 +3209,15 @@ include "%L"
 <Multi_key> <c> <a> <n> <d> <y>    : "🍬"  U1F36C        # CANDY (conflicts with ǎ, use va)
 <Multi_key> <c> <h> <e> <e> <r> <s> : "🍻" U1F37B        # CLINKING BEER MUGS (conflicts with ȟ, use vh) (6 letters but useful)
 <Multi_key> <c> <h> <o> <c> <o>    : "🍫"  U1F36B        # CHOCOLATE BAR (conflicts with ȟ, use vh)
+<Multi_key> <e> <g> <g>            : "🥚"  U1F95A        # EGG
+<Multi_key> <g> <r> <a> <p> <e>    : "🍇"  U1F347        # GRAPES
+<Multi_key> <h> <e> <r> <b>        : "🌿"  U1F33F        # HERB
 <Multi_key> <h> <o> <n> <e> <y>    : "🍯"  U1F36F        # HONEY POT
 <Multi_key> <k> <n> <i> <f> <e>    : "🔪"  U1F52A        # HOCHO (KNIFE)
+<Multi_key> <l> <e> <m> <o> <n>    : "🍋"  U1F34B        # LEMON
+<Multi_key> <m> <e> <l> <o> <n>    : "🍈"  U1F348        # MELON
 <Multi_key> <m> <i> <l> <k>        : "🥛"  U1F95B        # GLASS OF MILK
+<Multi_key> <p> <e> <a> <r>        : "🍐"  U1F350        # PEAR
 <Multi_key> <s> <a> <l> <t>        : "🧂"  U1F9C2        # SALT SHAKER
 <Multi_key> <s> <p> <i> <c> <y>    : "🌶️" U1F336 UFE0F   # HOT PEPPER (EMOJI) (SPICY)
 <Multi_key> <s> <p> <o> <o> <n>    : "🥄"  U1F944        # SPOON
@@ -3229,6 +3237,7 @@ include "%L"
 <Multi_key> <w> <a> <v> <e>        : "🌊"  U1F30A        # WATER WAVE (use hi for 👋)
 <Multi_key> <x> <m> <a> <s>        : "🎄"  U1F384        # CHRISTMAS TREE
 
+# (also see Chinese Zodiac signs below)
 <Multi_key> <a> <n> <t>            : "🐜"  U1F41C        # ANT
 <Multi_key> <a> <p> <e>            : "🦍"  U1F98D        # GORILLA (APE)
 <Multi_key> <b> <a> <t>            : "🦇"  U1F987        # BAT (conflicts with ă, use ua)
@@ -3237,7 +3246,7 @@ include "%L"
 <Multi_key> <b> <i> <s> <o> <n>    : "🦬"  U1F9AC        # BISON (conflicts with ĭ, use ui)
 <Multi_key> <b> <o> <a> <r>        : "🐗"  U1F417        # BOAR (conflicts with ŏ, use uo)
 <Multi_key> <b> <u> <g>            : "🐛"  U1F41B        # BUG (conflicts with ŭ, use uu)
-<Multi_key> <b> <u> <n> <n> <y>    : "🐰"  U1F430        # RABBIT FACE (BUNNY) (conflicts with ŭ, use uu)
+<Multi_key> <b> <u> <n> <n> <y>    : "🐰"  U1F430        # RABBIT FACE (BUNNY) (conflicts with ŭ, use uu) (use *RB for 🐇)
 <Multi_key> <b> <z> <z>            : "🐝"  U1F41D        # HONEYBEE (BZZ)
 <Multi_key> <c> <a> <m> <e> <l>    : "🐪"  U1F42A        # DROMEDARY CAMEL (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <t>            : "🐱"  U1F431        # CAT FACE (conflicts with ǎ, use va) (also see ^^ section)
@@ -3247,19 +3256,20 @@ include "%L"
 <Multi_key> <d> <e> <e> <r>        : "🦌"  U1F98C        # DEER
 <Multi_key> <d> <i> <n> <o>        : "🦕"  U1F995        # SAUROPOD (DINO) (conflicts with ⌀, use diameter)
 <Multi_key> <d> <o> <d> <o>        : "🦤"  U1F9A4        # DODO
-<Multi_key> <d> <o> <g>            : "🐶"  U1F436        # DOG FACE
+<Multi_key> <d> <o> <g>            : "🐶"  U1F436        # DOG FACE (use *DG for 🐕)
 <Multi_key> <d> <o> <v> <e>        : "🕊️"  U1F54A UFE0F  # DOVE OF PEACE (EMOJI)
 <Multi_key> <d> <u> <c> <k>        : "🦆"  U1F986        # DUCK
+<Multi_key> <e> <a> <g> <l> <e>    : "🦅"  U1F985        # EAGLE
 <Multi_key> <e> <w> <e>            : "🐑"  U1F411        # SHEEP (EWE)
 <Multi_key> <f> <o> <x>            : "🦊"  U1F98A        # FOX FACE
 <Multi_key> <f> <r> <o> <g>        : "🐸"  U1F438        # FROG FACE
 <Multi_key> <g> <e> <r> <m>        : "🦠"  U1F9A0        # MICROBE (GERM)
 <Multi_key> <g> <o> <a> <t>        : "🐐"  U1F410        # GOAT
-<Multi_key> <h> <o> <r> <s> <e>    : "🐴"  U1F434        # HORSE FACE
+<Multi_key> <h> <o> <r> <s> <e>    : "🐴"  U1F434        # HORSE FACE (use *HR for 🐎)
 <Multi_key> <k> <a> <n> <g> <a>    : "🦘"  U1F998        # KANGAROO
 <Multi_key> <k> <o> <a> <l> <a>    : "🐨"  U1F428        # KOALA
 <Multi_key> <l> <i> <o> <n>        : "🦁"  U1F981        # LION FACE
-<Multi_key> <m> <o> <n> <k> <e> <y> : "🐵" U1F435        # MONKEY FACE (6 letters but useful)
+<Multi_key> <m> <o> <n> <k> <e> <y> : "🐵" U1F435        # MONKEY FACE (6 letters but useful) (use *MN for 🐒)
 <Multi_key> <m> <o> <o> <s> <e>    : "🫎"  U1FACE        # MOOSE
 <Multi_key> <m> <o> <u> <s> <e>    : "🐭"  U1F42D        # MOUSE FACE
 <Multi_key> <o> <t> <t> <e> <r>    : "🦦"  U1F9A6        # OTTER
@@ -3274,11 +3284,13 @@ include "%L"
 <Multi_key> <s> <n> <a> <i> <l>    : "🐌"  U1F40C        # SNAIL
 <Multi_key> <s> <n> <a> <k> <e>    : "🐍"  U1F40D        # SNAKE
 <Multi_key> <s> <n> <o> <u> <t>    : "🐽"  U1F43D        # PIG NOSE (SNOUT)
+<Multi_key> <s> <p> <i> <d> <e> <r> : "🕷️" U1F577 UFE0F  # SPIDER (EMOJI) (6 letters but useful)
 <Multi_key> <s> <q> <u> <i> <d>    : "🦑"  U1F991        # SQUID
 <Multi_key> <s> <w> <a> <n>        : "🦢"  U1F9A2        # SWAN
-<Multi_key> <s> <w> <i> <n> <e>    : "🐷"  U1F437        # PIG FACE (SWINE) (not ideal but π is taken)
-<Multi_key> <t> <i> <g> <e> <r>    : "🐯"  U1F42F        # TIGER FACE
+<Multi_key> <s> <w> <i> <n> <e>    : "🐷"  U1F437        # PIG FACE (SWINE) (not ideal but π is taken) (use *PG for 🐖)
+<Multi_key> <t> <i> <g> <e> <r>    : "🐯"  U1F42F        # TIGER FACE (use *TG for 🐅)
 <Multi_key> <t> <r> <e> <x>        : "🦖"  U1F996        # T-REX
+<Multi_key> <t> <r> <o> <l> <l>    : "🧌"  U1F9CC        # TROLL
 <Multi_key> <t> <u> <r> <k> <e> <y> : "🦃" U1F983        # TURKEY (6 letters but useful) (use @T+@R for 🇹🇷)
 <Multi_key> <u> <n> <i>            : "🦄"  U1F984        # UNICORN FACE
 <Multi_key> <w> <o> <l> <f>        : "🐺"  U1F43A        # WOLF FACE
@@ -3295,16 +3307,33 @@ include "%L"
 <Multi_key> <1> <0> <p> <i> <n>    : "🎳"  U1F3B3        # BOWLING (10 PIN)
 <Multi_key> <8> <b> <a> <l> <l>    : "🎱"  U1F3B1        # BILLIARDS (8 BALL)
 
+<Multi_key> <c> <o> <a> <t>        : "🧥"  U1F9E5        # COAT (conflicts with ǒ, use vo)
+<Multi_key> <c> <r> <o> <w> <n>    : "👑"  U1F451        # CROWN (conflicts with ř, use vr)
+<Multi_key> <d> <r> <e> <s> <s>    : "👗"  U1F457        # DRESS
+<Multi_key> <g> <e> <m>            : "💎"  U1F48E        # GEM STONE
+<Multi_key> <j> <e> <a> <n> <s>    : "👖"  U1F456        # JEANS
+<Multi_key> <p> <o> <u> <c> <h>    : "👝"  U1F45D        # POUCH
+<Multi_key> <p> <u> <r> <s> <e>    : "👛"  U1F45B        # PURSE
+<Multi_key> <r> <i> <n> <g>        : "💍"  U1F48D        # RING
+
+<Multi_key> <b> <a> <n> <k>        : "🏦"  U1F3E6        # BANK (conflicts with ă, use ua)
+<Multi_key> <b> <u> <s>            : "🚌"  U1F68C        # BUS (conflicts with ŭ, use uu)
+<Multi_key> <d> <i> <n> <g>        : "🛎️"  U1F6CE UFE0F  # BELLHOP BELL (EMOJI)  (conflicts with ⌀, use diameter) (use bell for 🔔)
+<Multi_key> <h> <u> <t>            : "🛖"  U1F6D6        # HUT
+<Multi_key> <m> <e> <t> <r> <o>    : "🚇"  U1F687        # METRO
+<Multi_key> <p> <l> <a> <n> <e>    : "✈️"  U2708 UFE0F   # AIRPLANE (EMOJI)
+<Multi_key> <t> <a> <x> <i>        : "🚕"  U1F695        # TAXI
+<Multi_key> <t> <e> <n> <t>        : "⛺"  U26FA         # TENT
+<Multi_key> <t> <r> <a> <i> <n>    : "🚆"  U1F686        # TRAIN
+<Multi_key> <t> <r> <a> <m>        : "🚊"  U1F68A        # TRAM
+
 <Multi_key> <a> <l> <a> <r> <m>    : "⏰"  U23F0         # ALARM CLOCK
 <Multi_key> <b> <a> <l> <l>        : "🎈"  U1F388        # BALLOON (conflicts with ă, use ua) (use AFL/FIFA/MLB/NBA/etc for sport balls)
 <Multi_key> <b> <e> <l> <l>        : "🔔"  U1F514        # BELL (conflicts with ĕ, use ue)
 <Multi_key> <b> <o> <m> <b>        : "💣"  U1F4A3        # BOMB (conflicts with ŏ, use uo)
 <Multi_key> <b> <u> <l> <b>        : "💡"  U1F4A1        # ELECTRIC LIGHT BULB (conflicts with ŭ, use uu)
-<Multi_key> <d> <i> <n> <g>        : "🛎️"  U1F6CE UFE0F  # BELLHOP BELL (EMOJI)  (conflicts with ⌀, use diameter) (use bell for 🔔)
 <Multi_key> <c> <a> <m>            : "📷"  U1F4F7        # CAMERA (conflicts with ǎ, use va)
-<Multi_key> <c> <r> <o> <w> <n>    : "👑"  U1F451        # CROWN (conflicts with ř, use vr)
 <Multi_key> <d> <r> <u> <g>        : "💊"  U1F48A        # PILL (DRUG)
-<Multi_key> <g> <e> <m>            : "💎"  U1F48E        # GEM STONE
 <Multi_key> <g> <i> <f> <t>        : "🎁"  U1F381        # WRAPPED PRESENT (GIFT)
 <Multi_key> <i> <d> <e> <a>        : "💡"  U1F4A1        # ELECTRIC LIGHT BULB (IDEA)
 <Multi_key> <k> <e> <y>            : "🔑"  U1F511        # KEY
@@ -3313,9 +3342,7 @@ include "%L"
 <Multi_key> <m> <i> <k> <e>        : "🎤"  U1F3A4        # MICROPHONE (MIKE)
 <Multi_key> <m> <o> <v> <i> <e>    : "🎥"  U1F3A5        # MOVIE CAMERA
 <Multi_key> <n> <o> <t> <e> <s>    : "🎶"  U1F3B6        # MULTIPLE MUSICAL NOTES
-<Multi_key> <p> <e> <a> <c> <e>    : "☮️"  U262E UFE0F   # PEACE SYMBOL (EMOJI) (use AQ for ✌️)
-<Multi_key> <p> <l> <a> <n> <e>    : "✈️"  U2708 UFE0F   # AIRPLANE (EMOJI)
-<Multi_key> <r> <i> <n> <g>        : "💍"  U1F48D        # RING
+<Multi_key> <r> <a> <d> <i> <o>    : "📻"  U1F4FB        # RADIO
 <Multi_key> <s> <a> <x>            : "🎷"  U1F3B7        # SAXOPHONE
 <Multi_key> <y> <a> <y>            : "🎉"  U1F389        # PARTY POPPER (YAY)
 
@@ -3324,6 +3351,7 @@ include "%L"
 <Multi_key> <d> <a> <s> <h>        : "💨"  U1F4A8        # DASH SYMBOL
 <Multi_key> <d> <i> <z> <z> <y>    : "💫"  U1F4AB        # DIZZY SYMBOL (use x_x for 😵 and @_@ for 😵‍💫) (conflicts with ⌀, use diameter)
 <Multi_key> <i> <n> <f> <o>        : "ℹ️"  U2139 UFE0F   # INFORMATION SOURCE (EMOJI)
+<Multi_key> <p> <e> <a> <c> <e>    : "☮️"  U262E UFE0F   # PEACE SYMBOL (EMOJI) (use AQ for ✌️)
 <Multi_key> <S> <T> <O> <P>        : "🛑"  U1F6D1        # OCTAGONAL SIGN (STOP)
 <Multi_key> <w> <a> <i> <t>        : "⌛"  U231B         # HOURGLASS (WAIT)
 <Multi_key> <w> <i> <f> <i>        : "🛜"  U1F6DC        # WIRELESS (WIFI)
@@ -4460,6 +4488,21 @@ include "%L"
 <Multi_key> <asterisk> <C> <P> : "♑" U2651    # CAPRICORN
 <Multi_key> <asterisk> <A> <Q> : "♒" U2652    # AQUARIUS (conflicts with Å, use oA)
 <Multi_key> <asterisk> <P> <I> : "♓" U2653    # PISCES
+
+# chinese zodiac signs
+
+<Multi_key> <asterisk> <R> <T> : "🐀" U1F400    # RAT
+<Multi_key> <asterisk> <O> <X> : "🐂" U1F402    # OX
+<Multi_key> <asterisk> <T> <G> : "🐅" U1F405    # TIGER
+<Multi_key> <asterisk> <R> <B> : "🐇" U1F407    # RABBIT
+<Multi_key> <asterisk> <D> <R> : "🐉" U1F409    # DRAGON
+<Multi_key> <asterisk> <S> <N> : "🐍" U1F40D    # SNAKE
+<Multi_key> <asterisk> <H> <R> : "🐎" U1F40E    # HORSE
+<Multi_key> <asterisk> <G> <T> : "🐐" U1F410    # GOAT
+<Multi_key> <asterisk> <M> <N> : "🐒" U1F412    # MONKEY
+<Multi_key> <asterisk> <R> <O> : "🐓" U1F413    # ROOSTER
+<Multi_key> <asterisk> <D> <G> : "🐕" U1F415    # DOG
+<Multi_key> <asterisk> <P> <G> : "🐖" U1F416    # PIG
 
 # moon phases (use selectors @[Return]/@0 for emoji/text presentation)
 
