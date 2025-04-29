@@ -262,6 +262,16 @@ def validate(args: argparse.Namespace) -> None:
                         f"[{defn.file}#{defn.line_no}] Incorrect comment: "
                         f"{defn.comment}, expected {expected_comment}"
                     )
+                elif (
+                    len(defn.value) > 1
+                    and "\ufe0f" in defn.value
+                    and "EMOJI" not in defn.comment.upper()
+                ):
+                    print(
+                        f"[{defn.file}#{defn.line_no}] Missing emoji marker: "
+                        f"comment {defn.comment} for {defn.value!r} should "
+                        f"include the string EMOJI"
+                    )
 
             for k, v in d.items():
                 n = min(len(k), len(defn.keys))
