@@ -5,7 +5,8 @@
 #
 # For consistency and simplicity, a few of the rules here conflict with the system files, with
 # workarounds given where possible in the comments (e.g. <underscore>'s usefulness for subscripting
-# often interferes with its system use for macrons, for which <minus> works as an alternative).
+# often interferes with its system use for ¯, for which <minus> works as an alternative;
+# similarly, <b> for ˘ and <c> for ˇ are easily replaced with <u> and <v>).
 #
 # For a simple command line tool to help manage your compose configuration, check out
 # https://github.com/Udzu/xcompose
@@ -3273,6 +3274,7 @@ include "%L"
 <Multi_key> <m> <i> <l> <k>        : "🥛"  U1F95B        # GLASS OF MILK
 <Multi_key> <o> <l> <i> <v> <e>    : "🫒"  U1FAD2        # OLIVE
 <Multi_key> <o> <n> <i> <o> <n>    : "🧅"  U1F9C5        # ONION
+<Multi_key> <o> <r> <a> <n> <g> <e> : "🍊" U1F34A        # TANGERINE (ORANGE) (conflicts with ®, use OR)
 <Multi_key> <p> <e> <a> <n> <u> <t> : "🥜" U1F95C        # PEANUTS
 <Multi_key> <p> <e> <a> <r>        : "🍐"  U1F350        # PEAR
 <Multi_key> <p> <e> <a> <s>        : "🫛"  U1FADB        # PEA POD
@@ -3323,8 +3325,11 @@ include "%L"
 <Multi_key> <a> <n> <t>            : "🐜"  U1F41C        # ANT
 <Multi_key> <a> <p> <e>            : "🦍"  U1F98D        # GORILLA (APE)
 <Multi_key> <b> <a> <t>            : "🦇"  U1F987        # BAT (conflicts with ă, use ua)
+<Multi_key> <b> <b> <i> <r> <d>    : "🐦‍⬛" U1F426 U200D U2B1B    # BLACKBIRD (B'BIRD)
 <Multi_key> <b> <e> <a> <r>        : "🐻"  U1F43B        # BEAR FACE (conflicts with ĕ, use ue)
 <Multi_key> <b> <e> <e> <t> <l> <e> : "🪲" U1FAB2        # BEETLE (conflicts with ĕ, use ue)
+<Multi_key> <b> <e> <a> <v> <e> <r> : "🦫" U1F9AB        # BEAVER (conflicts with ĕ, use ue)
+<Multi_key> <b> <f> <i> <s> <h>     : "🐡" U1F421        # BLOWFISH (B'FISH)
 <Multi_key> <b> <i> <r> <d>        : "🐦"  U1F426        # BIRD (conflicts with ĭ, use ui)
 <Multi_key> <b> <i> <s> <o> <n>    : "🦬"  U1F9AC        # BISON (conflicts with ĭ, use ui)
 <Multi_key> <b> <o> <a> <r>        : "🐗"  U1F417        # BOAR (conflicts with ŏ, use uo)
@@ -3337,10 +3342,13 @@ include "%L"
 <Multi_key> <c> <o> <r> <a> <l>    : "🪸"  U1FAB8        # CORAL (conflicts with vo, use ǒ)
 <Multi_key> <c> <o> <w>            : "🐮"  U1F42E        # COW FACE (conflicts with vo, use ǒ) (use >cow for 🐄)
 <Multi_key> <c> <r> <a> <b>        : "🦀"  U1F980        # CRAB (conflicts with ř, use vr)
+<Multi_key> <c> <r> <o> <c>        : "🐊"  U1F40A        # CROCODILE (conflicts with ř, use vr)
 <Multi_key> <d> <e> <e> <r>        : "🦌"  U1F98C        # DEER
 <Multi_key> <d> <i> <n> <o>        : "🦕"  U1F995        # SAUROPOD (DINO) (conflicts with ⌀, use diameter)
 <Multi_key> <d> <o> <d> <o>        : "🦤"  U1F9A4        # DODO
 <Multi_key> <d> <o> <g>            : "🐶"  U1F436        # DOG FACE (use >dog for 🐕)
+<Multi_key> <d> <o> <l> <p> <h>    : "🐬"  U1F42C        # DOLPHIN
+<Multi_key> <d> <o> <n> <k> <e> <y> : "🫏" U1FACF        # DONKEY
 <Multi_key> <d> <o> <v> <e>        : "🕊️"  U1F54A UFE0F  # DOVE OF PEACE EMOJI
 <Multi_key> <d> <r> <a> <g> <o> <n> : "🐲" U1F432        # DRAGON FACE (use >dragon for 🐉)
 <Multi_key> <d> <u> <c> <k>        : "🦆"  U1F986        # DUCK
@@ -3360,6 +3368,7 @@ include "%L"
 <Multi_key> <j> <e> <l> <l> <y>    : "🪼"  U1FABC        # JELLYFISH
 <Multi_key> <k> <a> <n> <g> <a>    : "🦘"  U1F998        # KANGAROO
 <Multi_key> <k> <o> <a> <l> <a>    : "🐨"  U1F428        # KOALA
+<Multi_key> <l> <a> <d> <y> <b>    : "🐞"  U1F41E        # LADY BEETLE/BIRD/BUG
 <Multi_key> <l> <i> <o> <n>        : "🦁"  U1F981        # LION FACE
 <Multi_key> <l> <i> <z> <a> <r> <d> : "🦎" U1F98E        # LIZARD
 <Multi_key> <l> <o> <b> <s> <t>    : "🦞"  U1F99E        # LOBSTER
@@ -3370,10 +3379,12 @@ include "%L"
 <Multi_key> <m> <o> <u> <s> <e>    : "🐭"  U1F42D        # MOUSE FACE (use >mouse for 🐁)
 <Multi_key> <n> <e> <m> <o>        : "🐠"  U1F420        # TROPICAL FISH (NEMO) (use ><> for 🐟)
 <Multi_key> <n> <e> <s> <t>        : "🪺"  U1FABA        # NEST WITH EGGS
+<Multi_key> <o> <r> <a> <n> <g> <u> : "🦧" U1F9A7        # ORANGUTAN (conflicts with ®, use OR)
 <Multi_key> <o> <t> <t> <e> <r>    : "🦦"  U1F9A6        # OTTER
 <Multi_key> <p> <a> <n> <d> <a>    : "🐼"  U1F43C        # PANDA FACE
 <Multi_key> <p> <a> <r> <r> <o> <t> : "🦜" U1F99C        # PARROT
 <Multi_key> <p> <a> <w> <s>        : "🐾"  U1F43E        # PAW PRINTS (PAWS)
+<Multi_key> <p> <e> <n> <g> <u>    : "🐧"  U1F427        # PENGUIN
 <Multi_key> <p> <o> <l> <a> <r>    : "🐻‍❄️"  U1F43B U200D U2744 UFE0F    # POLAR BEAR FACE EMOJI
 <Multi_key> <r> <a> <m>            : "🐏"  U1F40F        # RAM
 <Multi_key> <r> <a> <t>            : "🐀"  U1F400        # RAT
