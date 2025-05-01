@@ -3069,6 +3069,7 @@ include "%L"
 <Multi_key> <U> <F> <O>        : "🛸"  U1F6F8        # FLYING SAUCER (UFO)
 
 <Multi_key> <A> <T> <M>        : "🏧"  U1F3E7        # AUTOMATED TELLER MACHINE (conflicts with useless @)
+
 <Multi_key> <C> <D>            : "💿"  U1F4BF        # OPTICAL DISC (CD)
 <Multi_key> <D> <N> <A>        : "🧬"  U1F9EC        # DNA DOUBLE HELIX
 <Multi_key> <D> <V> <D>        : "📀"  U1F4C0        # DVD
@@ -3282,6 +3283,7 @@ include "%L"
 <Multi_key> <m> <e> <l> <o> <n>     : "🍈"  U1F348        # MELON
 <Multi_key> <m> <i> <l> <k>         : "🥛"  U1F95B        # GLASS OF MILK
 <Multi_key> <n> <a> <a> <n>         : "🫓"  U1FAD3        # FLATBREAD (NAAN)
+<Multi_key> <n> <a> <r> <u> <t> <o> : "🍥" U1F365         # FISH CAKE WITH SWIRL DESIGN (NARUTO)
 <Multi_key> <o> <d> <e> <n>         : "🍢"  U1F362        # ODEN
 <Multi_key> <o> <l> <i> <v> <e>     : "🫒"  U1FAD2        # OLIVE
 <Multi_key> <o> <n> <i> <o> <n>     : "🧅"  U1F9C5        # ONION
@@ -3323,6 +3325,7 @@ include "%L"
 <Multi_key> <l> <o> <t> <u> <s>     : "🪷"  U1FAB7        # LOTUS
 <Multi_key> <m> <a> <p>             : "🗺️"  U1F5FA UFE0F  # WORLD MAP EMOJI
 <Multi_key> <m> <o> <o> <n>         : "🌙"  U1F319        # CRESCENT MOON (see astrology section for moon phases)
+<Multi_key> <m> <o> <u> <n> <t>     : "⛰️"  U26F0 UFE0F   # MOUNTAIN EMOJI
 <Multi_key> <o> <n> <s> <e> <n>     : "♨️"  U2668 UFE0F   # HOT SPRINGS EMOJI (ONSEN)
 <Multi_key> <p> <a> <l> <m>         : "🌴"  U1F334        # PALM TREE
 <Multi_key> <p> <l> <a> <n> <t>     : "🪴"  U1FAB4        # POTTED PLANT
@@ -3525,12 +3528,27 @@ include "%L"
 <Multi_key> <t> <r> <a> <m>         : "🚊"  U1F68A        # TRAM
 <Multi_key> <w> <e> <d>             : "💒"  U1F492        # WEDDING
 
+<Multi_key> <a> <m> <e> <x>         : "💳"  U1F4B3        # CREDIT CARD (AMEX)
+<Multi_key> <b> <a> <d> <g> <e>     : "📛"  U1F4DB        # NAME BADGE (conflicts with ă, use ua)
+<Multi_key> <c> <h> <a> <r> <t> <b> : "📊"  U1F4CA        # BAR CHART (conflicts with ȟ, use vh)
+<Multi_key> <c> <h> <a> <r> <t> <v> : "📉"  U1F4C9        # CHART WITH DOWNWARDS TREND (conflicts with ȟ, use vh)
+<Multi_key> <c> <h> <a> <r> <t> <asciicircum> : "📈"  U1F4C8    # CHART WITH UPWARDS TREND (conflicts with ȟ, use vh)
+<Multi_key> <c> <l> <i> <p>         : "📎"  U1F4CE        # PAPERCLIP (conflicts with ľ, use <l)
+<Multi_key> <c> <o> <i> <n>         : "🪙"  U1FA99        # COIN (conflicts with ǒ, use vo)
+<Multi_key> <d> <o> <l> <l> <a> <r> : "💵"  U1F4B5        # BANKNOTE WITH DOLLAR SIGN
+<Multi_key> <e> <m> <a> <i> <l>     : "📧"  U1F4E7        # E-MAIL SYMBOL
+<Multi_key> <e> <u> <r> <o>         : "💶"  U1F4B6        # BANKNOTE WITH EURO SIGN (use E= for €)
+<Multi_key> <f> <a> <x>             : "📠"  U1F4E0        # FAX MACHINE
+<Multi_key> <l> <a> <b> <e> <l>     : "🏷️"  U1F3F7 UFE0F   # LABEL EMOJI
+<Multi_key> <l> <o> <o> <t>         : "💰"  U1F4B0        # MONEY BAG (LOOT)
+<Multi_key> <m> <e> <m> <o>         : "📝"  U1F4DD        # MEMO
+<Multi_key> <p> <o> <u> <n> <d>     : "💷"  U1F4B7        # BANKNOTE WITH POUND SIGN (use L= for ₤)
+<Multi_key> <y> <e> <n>             : "💴"  U1F4B4        # BANKNOTE WITH YEN SIGN (use Y= for ¥ and jcY= for 円)
+
 <Multi_key> <a> <b> <a> <c> <u> <s> : "🧮"  U1F9EE        # ABACUS
 <Multi_key> <a> <l> <a> <r> <m>     : "⏰"  U23F0         # ALARM CLOCK
 <Multi_key> <b> <a> <s> <k> <e> <t> : "🧺"  U1F9FA        # BASKET (conflicts with ă, use ua)
-<Multi_key> <a> <m> <e> <x>         : "💳"  U1F4B3        # CREDIT CARD (AMEX)
 <Multi_key> <a> <x> <e>             : "🪓"  U1FA93        # AXE
-<Multi_key> <b> <a> <d> <g> <e>     : "📛"  U1F4DB        # NAME BADGE (conflicts with ă, use ua)
 <Multi_key> <b> <a> <l> <l>         : "🎈"  U1F388        # BALLOON (conflicts with ă, use ua) (use AFL/FIFA/MLB/NBA/etc for sport balls)
 <Multi_key> <b> <a> <n> <d>         : "🩹"  U1FA79        # ADHESIVE BANDAGE (conflicts with ă, use ua)
 <Multi_key> <b> <a> <n> <j> <o>     : "🪕"  U1FA95        # BANJO (conflicts with ă, use ua)
@@ -3543,17 +3561,12 @@ include "%L"
 <Multi_key> <b> <r> <u> <s> <h>     : "🖌️"  U1F58C UFE0F  # LOWER LEFT PAINTBRUSH EMOJI
 <Multi_key> <b> <u> <c> <k> <e> <t> : "🪣"  U1FAA3        # BUCKET (conflicts with ŭ, use uu)
 <Multi_key> <b> <u> <l> <b>         : "💡"  U1F4A1        # ELECTRIC LIGHT BULB (conflicts with ŭ, use uu)
+<Multi_key> <b> <u> <o> <y>         : "🛟"  U1F6DF        # RING BUOY (conflicts with ŭ, use uu)
 <Multi_key> <c> <a> <m>             : "📷"  U1F4F7        # CAMERA (conflicts with ǎ, use va)
 <Multi_key> <c> <h> <a> <i> <r>     : "🪑"  U1FA91        # CHAIR (conflicts with ȟ, use vh)
-<Multi_key> <c> <l> <i> <p>         : "📎"  U1F4CE        # PAPERCLIP (conflicts with ľ, use <l)
-<Multi_key> <c> <o> <i> <n>         : "🪙"  U1FA99        # COIN (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <m> <b>         : "🪮"  U1FAAE        # HAIR PICK (conflicts with ǒ, use vo)
-<Multi_key> <d> <o> <l> <l> <a> <r> : "💵"  U1F4B5        # BANKNOTE WITH DOLLAR SIGN
 <Multi_key> <d> <r> <u> <g>         : "💊"  U1F48A        # PILL (DRUG)
 <Multi_key> <d> <r> <u> <m>         : "🥁"  U1F941        # DRUM WITH DRUMSTICKS
-<Multi_key> <e> <m> <a> <i> <l>     : "📧"  U1F4E7        # E-MAIL SYMBOL
-<Multi_key> <e> <u> <r> <o>         : "💶"  U1F4B6        # BANKNOTE WITH EURO SIGN (use E= for €)
-<Multi_key> <f> <a> <x>             : "📠"  U1F4E0        # FAX MACHINE
 <Multi_key> <g> <e> <a> <r>         : "⚙️"  U2699 UFE0F   # GEAR EMOJI
 <Multi_key> <g> <i> <f> <t>         : "🎁"  U1F381        # WRAPPED PRESENT (GIFT)
 <Multi_key> <h> <a> <r> <p>         : "🪉"  U1FA89        # HARP
@@ -3564,27 +3577,25 @@ include "%L"
 <Multi_key> <k> <e> <y>             : "🔑"  U1F511        # KEY
 <Multi_key> <k> <i> <t> <e>         : "🪁"  U1FA81        # KITE
 <Multi_key> <k> <n> <o> <t>         : "🪢"  U1FAA2        # KNOT
-<Multi_key> <l> <a> <b> <e> <l>     : "🏷️"  U1F3F7 UFE0F   # LABEL EMOJI
 <Multi_key> <l> <o> <c> <k>         : "🔒"  U1F512        # LOCK
-<Multi_key> <l> <o> <o> <t>         : "💰"  U1F4B0        # MONEY BAG (LOOT)
 <Multi_key> <m> <a> <r> <a> <c>     : "🪇"  U1FA87        # MARACAS
-<Multi_key> <m> <e> <m> <o>         : "📝"  U1F4DD        # MEMO
 <Multi_key> <m> <i> <k> <e>         : "🎤"  U1F3A4        # MICROPHONE (MIKE)
 <Multi_key> <m> <i> <r> <r> <o> <r> : "🪞"  U1FA9E        # MIRROR
 <Multi_key> <m> <o> <b> <i> <l> <e> : "📱"  U1F4F1        # MOBILE PHONE
 <Multi_key> <m> <o> <v> <i> <e>     : "🎥"  U1F3A5        # MOVIE CAMERA
 <Multi_key> <n> <o> <t> <e> <s>     : "🎶"  U1F3B6        # MULTIPLE MUSICAL NOTES
 <Multi_key> <o> <i> <l>             : "🛢️"  U1F6E2 UFE0F  # OIL DRUM EMOJI
+<Multi_key> <p> <a> <g> <e> <r>     : "📟"  U1F4DF        # PAGER
 <Multi_key> <p> <e> <t> <r> <i>     : "🧫"  U1F9EB        # PETRI DISH
 <Multi_key> <p> <l> <u> <g>         : "🔌"  U1F50C        # ELECTRIC PLUG
 <Multi_key> <p> <l> <u> <n> <g> <e> : "🪠"  U1FAA0        # PLUNGER
-<Multi_key> <p> <o> <u> <n> <d>     : "💷"  U1F4B7        # BANKNOTE WITH POUND SIGN (use L= for ₤)
 <Multi_key> <r> <a> <d> <i> <o>     : "📻"  U1F4FB        # RADIO
 <Multi_key> <r> <a> <z> <o> <r>     : "🪒"  U1FA92        # RAZOR
 <Multi_key> <s> <a> <x>             : "🎷"  U1F3B7        # SAXOPHONE
 <Multi_key> <s> <c> <r> <o> <l> <l> : "📜"  U1F4DC        # SCROLL
 <Multi_key> <s> <e> <w>             : "🪡"  U1FAA1        # SEWING NEEDLE
 <Multi_key> <s> <m> <o> <k> <e>     : "🚬"  U1F6AC        # SMOKING SYMBOL (conflicts with ℠, use SM)
+<Multi_key> <s> <p> <o> <n> <g> <e> : "🧽"  U1F9FD        # SPONGE
 <Multi_key> <t> <e> <d> <d> <y>     : "🧸"  U1F9F8        # TEDDY BEAR
 <Multi_key> <t> <o> <r> <c> <h>     : "🔦"  U1F526        # ELECTRIC TORCH
 <Multi_key> <t> <r> <a> <p>         : "🪤"  U1FAA4        # MOUSE TRAP
@@ -3592,7 +3603,6 @@ include "%L"
 <Multi_key> <w> <a> <n> <d>         : "🪄"  U1FA84        # MAGIC WAND
 <Multi_key> <y> <a> <r> <n>         : "🧶"  U1F9F6        # BALL OF YARN
 <Multi_key> <y> <a> <y>             : "🎉"  U1F389        # PARTY POPPER (YAY)
-<Multi_key> <y> <e> <n>             : "💴"  U1F4B4        # BANKNOTE WITH YEN SIGN (use Y= for ¥ and jcY= for 円)
 
 <Multi_key> <a> <n> <g> <e> <r>     : "💢"  U1F4A2        # ANGER SYMBOL
 <Multi_key> <a> <t> <o> <m>         : "⚛️"  U269B UFE0F   # ATOM EMOJI
@@ -3620,7 +3630,9 @@ include "%L"
 <Multi_key> <backslash> <l> <i> <t> <t> <e> <r> : "🚯"  U1F6AF    # DO NOT LITTER SYMBOL
 <Multi_key> <backslash> <m> <o> <b> <i> <l> <e> : "📵"  U1F4F5    # NO MOBILE PHONES
 <Multi_key> <backslash> <p> <h> <o> <n> <e>     : "📵"  U1F4F5    # NO MOBILE PHONES
+<Multi_key> <backslash> <r> <i> <n> <g>         : "🔕"  U1F515    # BELL WITH CANCELLATION STROKE
 <Multi_key> <backslash> <s> <m> <o> <k> <e>     : "🚭"  U1F6AD    # NO SMOKING SYMBOL
+<Multi_key> <backslash> <s> <o> <u> <n> <d>     : "🔇"  U1F507    # SPEAKER WITH CANCELLATION STROKE
 <Multi_key> <backslash> <w> <a> <l> <k>         : "🚷"  U1F6B7    # NO PEDESTRIANS
 <Multi_key> <backslash> <1> <8>                 : "🔞"  U1F51E    # NO ONE UNDER EIGHTEEN SYMBOL (alternatively NSFW)
 <Multi_key> <backslash> <Return>                : "🚫"  U1F6AB    # NO ENTRY SIGN
