@@ -141,6 +141,8 @@ def add(args: argparse.Namespace) -> None:
         keys = f"<{args.modifier_key}> {keys}"
     codes = " ".join(to_code_point(c) for c in args.value)
     names = " ".join(unicodedata.name(c, "???") for c in args.value)
+    if len(args.value) > 1 and "VARIATION SELECTOR-16" in names:
+        names = names.replace("VARIATION SELECTOR-16", "EMOJI")
     print(f'{keys} : "{args.value}" {codes}    # {names}')
 
 

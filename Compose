@@ -3099,7 +3099,6 @@ include "%L"
 <Multi_key> <b> <a> <b> <y>         : "👶"  U1F476        # BABY (conflicts with ă, use ua)
 <Multi_key> <b> <a> <g> <s>         : "🫩"  U1FAE9        # FACE WITH BAGS UNDER EYES (conflicts with ă, use ua)
 <Multi_key> <b> <l> <u> <s> <h>     : "😳"  U1F633        # FLUSHED FACE (BLUSH)
-<Multi_key> <b> <o> <o>             : "👻"  U1F47B        # GHOST (BOO) (conflicts with ŏ, use uo)
 <Multi_key> <c> <l> <o> <w> <n>     : "🤡"  U1F921        # CLOWN FACE (conflicts with ľ, use <l)
 <Multi_key> <c> <o> <l> <d>         : "🥶"  U1F976        # FREEZING FACE (COLD)  (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <o> <l>         : "😎"  U1F60E        # SMILING FACE WITH SUNGLASSES (COOL) (conflicts with ǒ, use vo)
@@ -3115,6 +3114,7 @@ include "%L"
 <Multi_key> <g> <a> <s> <p>         : "😲"  U1F632        # ASTONISHED FACE (GASP)
 <Multi_key> <g> <r> <i> <n>         : "😁"  U1F601        # GRINNING FACE WITH SMILING EYES
 <Multi_key> <h> <a> <p> <p> <y>     : "😀"  U1F600        # GRINNING FACE (HAPPY) (use :) for 😊, :D for 😃 and grin for 😁)
+<Multi_key> <h> <a> <u> <n> <t>     : "👻"  U1F47B        # GHOST (HAUNT)
 <Multi_key> <h> <m> <m>             : "🤔"  U1F914        # THINKING FACE (HMM)
 <Multi_key> <h> <u> <f> <f>         : "😤"  U1F624        # FACE WITH LOOK OF TRIUMPH (HUFF)
 <Multi_key> <h> <u> <r> <t>         : "🤕"  U1F915        # FACE WITH HEAD-BANDAGE (HURT)
@@ -3324,8 +3324,10 @@ include "%L"
 <Multi_key> <l> <e> <a> <f>         : "🍃"  U1F343        # LEAF FLUTTERING IN WIND
 <Multi_key> <l> <o> <t> <u> <s>     : "🪷"  U1FAB7        # LOTUS
 <Multi_key> <m> <a> <p>             : "🗺️"  U1F5FA UFE0F  # WORLD MAP EMOJI
+<Multi_key> <m> <o> <a> <i>         : "🗿"  U1F5FF        # MOYAI
 <Multi_key> <m> <o> <o> <n>         : "🌙"  U1F319        # CRESCENT MOON (see astrology section for moon phases)
 <Multi_key> <m> <o> <u> <n> <t>     : "⛰️"  U26F0 UFE0F   # MOUNTAIN EMOJI
+<Multi_key> <m> <o> <y> <a> <i>     : "🗿"  U1F5FF        # MOYAI
 <Multi_key> <o> <n> <s> <e> <n>     : "♨️"  U2668 UFE0F   # HOT SPRINGS EMOJI (ONSEN)
 <Multi_key> <p> <a> <l> <m>         : "🌴"  U1F334        # PALM TREE
 <Multi_key> <p> <l> <a> <n> <t>     : "🪴"  U1FAB4        # POTTED PLANT
@@ -3401,6 +3403,7 @@ include "%L"
 <Multi_key> <m> <o> <b> <y>         : "🐳"  U1F433        # SPOUTING WHALE (not ideal but ɯ is taken)
 <Multi_key> <m> <o> <n> <k> <e> <y> : "🐵"  U1F435        # MONKEY FACE (use >monkey for 🐒)
 <Multi_key> <m> <o> <o> <s> <e>     : "🫎"  U1FACE        # MOOSE
+<Multi_key> <m> <o> <s> <q> <u> <i> : "🦟"  U1F99F        # MOSQUITO
 <Multi_key> <m> <o> <u> <s> <e>     : "🐭"  U1F42D        # MOUSE FACE (use >mouse for 🐁)
 <Multi_key> <n> <e> <m> <o>         : "🐠"  U1F420        # TROPICAL FISH (NEMO) (use ><> for 🐟)
 <Multi_key> <n> <e> <s> <t>         : "🪺"  U1FABA        # NEST WITH EGGS
@@ -3517,6 +3520,7 @@ include "%L"
 <Multi_key> <l> <a> <d> <d> <e> <r> : "🪜"  U1FA9C        # LADDER
 <Multi_key> <l> <i> <f> <t>         : "🛗"  U1F6D7        # ELEVATOR (LIFT)
 <Multi_key> <m> <e> <t> <r> <o>     : "🚇"  U1F687        # METRO
+<Multi_key> <m> <o> <s> <q> <u> <e> : "🕌"  U1F54C        # MOSQUE
 <Multi_key> <p> <l> <a> <n> <e>     : "✈️"  U2708 UFE0F   # AIRPLANE EMOJI
 <Multi_key> <s> <c> <h> <o> <o> <l> : "🏫"  U1F3EB        # SCHOOL
 <Multi_key> <s> <c> <o> <o> <t>     : "🛴"  U1F6F4        # SCOOTER
@@ -3530,6 +3534,12 @@ include "%L"
 
 <Multi_key> <a> <m> <e> <x>         : "💳"  U1F4B3        # CREDIT CARD (AMEX)
 <Multi_key> <b> <a> <d> <g> <e>     : "📛"  U1F4DB        # NAME BADGE (conflicts with ă, use ua)
+<Multi_key> <b> <o> <o> <k> <B>     : "📘"  U1F4D8        # BLUE BOOK (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <o> <k> <G>     : "📗"  U1F4D7        # GREEN BOOK (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <o> <k> <O>     : "📙"  U1F4D9        # ORANGE BOOK (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <o> <k> <R>     : "📕"  U1F4D5        # CLOSED BOOK (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <o> <k> <m>     : "🔖"  U1F516        # BOOKMARK (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <o> <k> <s>     : "📚"  U1F4DA        # BOOKS (conflicts with ŏ, use uo)
 <Multi_key> <c> <h> <a> <r> <t> <b> : "📊"  U1F4CA        # BAR CHART (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <a> <r> <t> <v> : "📉"  U1F4C9        # CHART WITH DOWNWARDS TREND (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <a> <r> <t> <asciicircum> : "📈"  U1F4C8    # CHART WITH UPWARDS TREND (conflicts with ȟ, use vh)
@@ -3542,6 +3552,7 @@ include "%L"
 <Multi_key> <l> <a> <b> <e> <l>     : "🏷️"  U1F3F7 UFE0F   # LABEL EMOJI
 <Multi_key> <l> <o> <o> <t>         : "💰"  U1F4B0        # MONEY BAG (LOOT)
 <Multi_key> <m> <e> <m> <o>         : "📝"  U1F4DD        # MEMO
+<Multi_key> <p> <a> <d>             : "🗒️"  U1F5D2 UFE0F  # SPIRAL NOTE PAD EMOJI
 <Multi_key> <p> <o> <u> <n> <d>     : "💷"  U1F4B7        # BANKNOTE WITH POUND SIGN (use L= for ₤)
 <Multi_key> <y> <e> <n>             : "💴"  U1F4B4        # BANKNOTE WITH YEN SIGN (use Y= for ¥ and jcY= for 円)
 
