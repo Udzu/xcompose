@@ -35,8 +35,8 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **International Morse Code** (76): ···---··· etc
 
-### Symbols (1927)
-* **Emoji** (961): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+### Symbols (1937)
+* **Emoji** (971): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (149): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (54): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
