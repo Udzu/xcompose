@@ -195,6 +195,7 @@ include "%L"
 <Multi_key> <g> <h>                 : "ɣ"  U0263   # LATIN SMALL LETTER GAMMA
 <Multi_key> <j> <h>                 : "ʝ"  U029D   # LATIN SMALL LETTER J WITH CROSSED-TAIL
 <Multi_key> <l> <h>                 : "ɬ"  U026C   # LATIN SMALL LETTER L WITH BELT
+<Multi_key> <L> <h>                 : "𝼄"  U1DF04   # LATIN LETTER SMALL CAPITAL L WITH BELT
 <Multi_key> <p> <h>                 : "ɸ"  U0278   # LATIN SMALL LETTER PHI
 <Multi_key> <q> <h>                 : "χ"  U03C7   # GREEK SMALL LETTER CHI (alternatively xh)
 <Multi_key> <s> <h>                 : "ʃ"  U0283   # LATIN SMALL LETTER ESH
@@ -248,8 +249,11 @@ include "%L"
 <Multi_key> <question> <less> <minus> : "ʢ"  U02A2   # LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE
 
 <Multi_key> <d> <l>                 : "ɖ"  U0256   # LATIN SMALL LETTER D WITH TAIL
+<Multi_key> <l> <l> <Return>        : "ɭ"  U026D   # LATIN SMALL LETTER L WITH RETROFLEX HOOK (use l^l for ˡ)
+<Multi_key> <l> <l> <h>             : "ꞎ"  UA78E   # LATIN SMALL LETTER L WITH RETROFLEX HOOK AND BELT
 <Multi_key> <n> <l>                 : "ɳ"  U0273   # LATIN SMALL LETTER N WITH RETROFLEX HOOK
 <Multi_key> <s> <l>                 : "ʂ"  U0282   # LATIN SMALL LETTER S WITH HOOK
+<Multi_key> <t> <l>                 : "ʈ"  U0288   # LATIN SMALL LETTER T WITH RETROFLEX HOOK
 <Multi_key> <z> <l>                 : "ʐ"  U0290   # LATIN SMALL LETTER Z WITH RETROFLEX HOOK
 <Multi_key> <r> <l> <Return>        : "ɽ"  U027D   # LATIN SMALL LETTER R WITH TAIL
 <Multi_key> <r> <l> <v>             : "ɻ"  U027B   # LATIN SMALL LETTER TURNED R WITH HOOK
@@ -257,16 +261,29 @@ include "%L"
 <Multi_key> <z> <at>                : "ʑ"  U0291   # LATIN SMALL LETTER Z WITH CURL
 <Multi_key> <h> <minus>             : "ħ"  U0127   # LATIN SMALL LETTER H WITH STROKE
 <Multi_key> <j> <minus>             : "ɟ"  U025F   # LATIN SMALL LETTER DOTLESS J WITH STROKE
-<Multi_key> <0> <period>            : "ʘ" U0298    # LATIN LETTER BILABIAL CLICK
+<Multi_key> <0> <period>            : "ʘ"  U0298   # LATIN LETTER BILABIAL CLICK
 <Multi_key> <0> <minus>             : "θ"  U03B8   # GREEK SMALL LETTER THETA
 <Multi_key> <o> <bar>               : "ɵ"  U0275   # LATIN SMALL LETTER BARRED O
+<Multi_key> <u> <bar>               : "ʉ"  U0289   # LATIN SMALL LETTER U BAR
 <Multi_key> <O> <bar>               : "θ"  U03B8   # GREEK SMALL LETTER THETA
+<Multi_key> <l> <asciitilde>        : "ɫ"  U026B   # LATIN SMALL LETTER L WITH MIDDLE TILDE
 <Multi_key> <b> <apostrophe>        : "ɓ"  U0253   # LATIN SMALL LETTER B WITH HOOK
+<Multi_key> <d> <apostrophe>        : "ɗ"  U0257   # LATIN SMALL LETTER D WITH HOOK
+<Multi_key> <g> <apostrophe>        : "ɠ"  U0260   # LATIN SMALL LETTER G WITH HOOK
+<Multi_key> <G> <apostrophe>        : "ʛ"  U029B   # LATIN LETTER SMALL CAPITAL G WITH HOOK
 <Multi_key> <h> <apostrophe>        : "ɦ"  U0266   # LATIN SMALL LETTER H WITH HOOK
 <Multi_key> <v> <apostrophe>        : "ⱱ"  U2C71   # LATIN SMALL LETTER V WITH RIGHT HOOK
 
+<Multi_key> <apostrophe> <0>        : "ʘ"  U0298   # LATIN LETTER BILABIAL CLICK
+<Multi_key> <apostrophe> <bar>      : "ǀ" U01C0    # LATIN LETTER DENTAL CLICK
+<Multi_key> <apostrophe> <equal> <bar> : "ǂ" U01C2    # LATIN LETTER ALVEOLAR CLICK
+<Multi_key> <apostrophe> <exclam>   : "ǃ" U01C3    # LATIN LETTER RETROFLEX CLICK
+<Multi_key> <apostrophe> <Multi_key> <bar> <bar> : "ǁ" U01C1    # LATIN LETTER LATERAL CLICK
+<Multi_key> <apostrophe> <Multi_key> <exclam> <l> : "𝼊" U1DF0A    # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
+
 <Multi_key> <question> <period>     : "ʔ"  U0294   # LATIN LETTER GLOTTAL STOP
 <Multi_key> <question> <minus>      : "ʡ"  U02A1   # LATIN LETTER GLOTTAL STOP WITH STROKE
+<Multi_key> <c> <3>                 : "ɞ"  U025E   # LATIN SMALL LETTER CLOSED REVERSED OPEN E
 <Multi_key> <e> <3>                 : "ɜ"  U025C   # LATIN SMALL LETTER REVERSED OPEN E
 <Multi_key> <o> <g>                 : "ɤ"  U0264   # LATIN SMALL LETTER RAMS HORN
 <Multi_key> <o> <parenright>        : "ɔ"  U0254   # LATIN SMALL LETTER OPEN O
@@ -278,13 +295,13 @@ include "%L"
 <Multi_key> <g> <g>                 : "ˠ"  U02E0   # MODIFIER LETTER SMALL GAMMA
 <Multi_key> <h> <h>                 : "ʰ"  U02B0   # MODIFIER LETTER SMALL H
 <Multi_key> <j> <j>                 : "ʲ"  U02B2   # MODIFIER LETTER SMALL J
-<Multi_key> <l> <l>                 : "ˡ"  U02E1   # MODIFIER LETTER SMALL L
 <Multi_key> <n> <n>                 : "ⁿ"  U207F   # SUPERSCRIPT LATIN SMALL LETTER N
 <Multi_key> <w> <w>                 : "ʷ"  U02B7   # MODIFIER LETTER SMALL W
 <Multi_key> <T> <T>                 : "˕"  U02D5   # MODIFIER LETTER DOWN TACK
 <Multi_key> <T> <v> <T>             : "˔"  U02D4   # MODIFIER LETTER UP TACK
 <Multi_key> <0> <0> <minus>         : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
 <Multi_key> <O> <O> <bar>           : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
+<Multi_key> <l> <asciicircum> <l>   : "ˡ"  U02E1   # MODIFIER LETTER SMALL L
 <Multi_key> <x> <asciicircum> <x>   : "ˣ"  U02E3   # MODIFIER LETTER SMALL X
 <Multi_key> <question> <asciicircum> <question> : "ˤ"  U02E4   # MODIFIER LETTER SMALL REVERSED GLOTTAL STOP
 <Multi_key> <plus> <asciicircum> <plus> : "˖"  U02D6   # MODIFIER LETTER PLUS SIGN
@@ -3257,6 +3274,7 @@ include "%L"
 <Multi_key> <a> <p> <p> <l> <e>     : "🍎"  U1F34E        # RED APPLE
 <Multi_key> <b> <a> <c> <o> <n>     : "🥓"  U1F953        # BACON (conflicts with ă, use ua)
 <Multi_key> <b> <a> <g> <e> <l>     : "🥯"  U1F96F        # BAGEL (conflicts with ă, use ua)
+<Multi_key> <b> <a> <g> <u> <e> <t> : "🥖"  U1F956        # BAGUETTE BREAD (conflicts with ă, use ua)
 <Multi_key> <b> <a> <n> <a> <n> <a> : "🍌"  U1F34C        # BANANA (conflicts with ă, use ua)
 <Multi_key> <b> <b> <e> <r> <r> <y> : "🫐"  U1FAD0        # BLUEBERRIES (B'BERRY)
 <Multi_key> <b> <e> <a> <n> <s>     : "🫘"  U1FAD8        # BEANS (conflicts with ĕ, use ue)
@@ -3516,6 +3534,7 @@ include "%L"
 <Multi_key> <b> <o> <x> <i> <n> <g> : "🥊"  U1F94A        # BOXING GLOVE (conflicts with ŏ, use uo)
 <Multi_key> <c> <a> <n> <o> <e>     : "🛶"  U1F6F6        # CANOE (conflicts with ǎ, use va)
 <Multi_key> <c> <h> <u> <t> <e>     : "🪂"  U1FA82        # PARACHUTE (CHUTE) (conflicts with ȟ, use vh)
+<Multi_key> <c> <u> <r> <l>         : "🥌"  U1F94C        # CURLING STONE (conflicts with vu, use ǔ)
 <Multi_key> <d> <i> <c> <e>         : "🎲"  U1F3B2        # GAME DIE (DICE) (conflicts with ⌀, use diameter)
 <Multi_key> <d> <i> <s> <c>         : "🥏"  U1F94F        # FLYING DISC (use CD for 💿) (conflicts with ⌀, use diameter)
 <Multi_key> <f> <e> <n> <c> <e>     : "🤺"  U1F93A        # FENCER
@@ -3566,13 +3585,16 @@ include "%L"
 <Multi_key> <j> <a> <n> <d> <a> <l> : "🩴"  U1FA74        # THONG SANDAL (JANDAL)
 <Multi_key> <j> <e> <a> <n> <s>     : "👖"  U1F456        # JEANS
 <Multi_key> <k> <i> <m> <o> <n> <o> : "👘"  U1F458        # KIMONO
+<Multi_key> <l> <o> <t> <i> <o> <n> : "🧴"  U1F9F4        # LOTION BOTTLE
 <Multi_key> <m> <i> <r> <r> <o> <r> : "🪞"  U1FA9E        # MIRROR
 <Multi_key> <n> <a> <z> <a> <r>     : "🧿"  U1F9FF        # NAZAR AMULET
 <Multi_key> <p> <o> <u> <c> <h>     : "👝"  U1F45D        # POUCH
 <Multi_key> <p> <u> <r> <s> <e>     : "👛"  U1F45B        # PURSE
 <Multi_key> <r> <a> <z> <o> <r>     : "🪒"  U1FA92        # RAZOR
-<Multi_key> <r> <i> <b> <b> <o> <n> : "🎀" U1F380         # RIBBON
+<Multi_key> <r> <i> <b> <b> <o> <n> : "🎀"  U1F380        # RIBBON
 <Multi_key> <r> <i> <n> <g>         : "💍"  U1F48D        # RING
+<Multi_key> <r> <o> <l> <l>         : "🧻"  U1F9FB        # ROLL OF PAPER (use ER for 🙄)
+<Multi_key> <s> <a> <f> <e>         : "🦺"  U1F9BA        # SAFETY VEST
 <Multi_key> <s> <a> <n> <d> <a> <l> : "👡"  U1F461        # WOMANS SANDAL
 <Multi_key> <s> <a> <r> <i>         : "🥻"  U1F97B        # SARI
 <Multi_key> <s> <c> <a> <r> <f>     : "🧣"  U1F9E3        # SCARF
@@ -3646,6 +3668,7 @@ include "%L"
 <Multi_key> <c> <h> <a> <r> <t> <b> : "📊"  U1F4CA        # BAR CHART (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <a> <r> <t> <v> : "📉"  U1F4C9        # CHART WITH DOWNWARDS TREND (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <a> <r> <t> <asciicircum> : "📈"  U1F4C8    # CHART WITH UPWARDS TREND (conflicts with ȟ, use vh)
+<Multi_key> <c> <h> <a> <r> <t> <Y> : "💹"  U1F4B9        # CHART WITH UPWARDS TREND AND YEN SIGN (conflicts with ȟ, use vh)
 <Multi_key> <c> <l> <i> <p>         : "📎"  U1F4CE        # PAPERCLIP (conflicts with ľ, use <l)
 <Multi_key> <c> <o> <i> <n>         : "🪙"  U1FA99        # COIN (conflicts with ǒ, use vo)
 <Multi_key> <c> <r> <a> <y> <o> <n> : "🖍️"  U1F58D UFE0F  # LOWER LEFT CRAYON EMOJI (conflicts with ř, use vr)
@@ -3741,6 +3764,7 @@ include "%L"
 <Multi_key> <c> <i> <n> <e> <m> <a> : "🎦"  U1F3A6        # CINEMA (conflicts with vi, use ǐ)
 <Multi_key> <d> <a> <s> <h>         : "💨"  U1F4A8        # DASH SYMBOL
 <Multi_key> <d> <i> <z> <z> <y>     : "💫"  U1F4AB        # DIZZY SYMBOL (use x_x for 😵 and @_@ for 😵‍💫) (conflicts with ⌀, use diameter)
+<Multi_key> <d> <o> <n> <e>         : "⌛"  U231B         # HOURGLASS (DONE)
 <Multi_key> <h> <o> <l> <e>         : "🕳️"  U1F573 UFE0F  # HOLE VARIATION EMOJI
 <Multi_key> <i> <n> <f> <o>         : "ℹ️"  U2139 UFE0F   # INFORMATION SOURCE EMOJI
 <Multi_key> <l> <i> <n> <k>         : "🔗"  U1F517        # LINK SYMBOL
@@ -3748,7 +3772,7 @@ include "%L"
 <Multi_key> <p> <e> <a> <c> <e>     : "☮️"  U262E UFE0F   # PEACE SYMBOL EMOJI (use AQ for ✌️)
 <Multi_key> <s> <p> <l> <a> <t>     : "🫟"  U1FADF        # SPLATTER
 <Multi_key> <S> <T> <O> <P>         : "🛑"  U1F6D1        # OCTAGONAL SIGN (STOP)
-<Multi_key> <w> <a> <i> <t>         : "⌛"  U231B         # HOURGLASS (WAIT)
+<Multi_key> <w> <a> <i> <t>         : "⏳"  U23F3         # HOURGLASS WITH FLOWING SAND (WAIT)
 <Multi_key> <w> <a> <t> <e> <r>     : "🚰"  U1F6B0        # POTABLE WATER SYMBOL
 <Multi_key> <w> <i> <f> <i>         : "🛜"  U1F6DC        # WIRELESS (WIFI)
 <Multi_key> <z> <a> <p>             : "⚡"  U26A1         # HIGH VOLTAGE SIGN (ZAP)
