@@ -17,8 +17,8 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (71): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 
-### Latin script characters (1110)
-* **International Phonetic Alphabet** (120): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
+### Latin script characters (1121)
+* **International Phonetic Alphabet** (131): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (726): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Superscripts and subscripts** (68): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc

@@ -243,7 +243,6 @@ include "%L"
 <Multi_key> <r> <r>                 : "ɹ"  U0279   # LATIN SMALL LETTER TURNED R
 
 <Multi_key> <a> <v>                 : "ɐ"  U0250   # LATIN SMALL LETTER TURNED A
-<Multi_key> <e> <v>                 : "ə"  U0259   # LATIN SMALL LETTER SCHWA
 <Multi_key> <h> <v>                 : "ɥ"  U0265   # LATIN SMALL LETTER TURNED H
 <Multi_key> <m> <v>                 : "ɯ"  U026F   # LATIN SMALL LETTER TURNED M
 <Multi_key> <r> <v>                 : "ɹ"  U0279   # LATIN SMALL LETTER TURNED R
@@ -312,6 +311,7 @@ include "%L"
 <Multi_key> <T> <v> <T>             : "˔"  U02D4   # MODIFIER LETTER UP TACK
 <Multi_key> <T> <less> <T>          : "꭪"  UAB6A   # MODIFIER LETTER LEFT TACK (conflicts with Ť, use vT)
 <Multi_key> <T> <greater> <T>       : "꭫"  UAB6B   # MODIFIER LETTER RIGHT TACK
+<Multi_key> <e> <v> <e>             : "ᵊ"  U1D4A   # MODIFIER LETTER SMALL SCHWA
 <Multi_key> <0> <0> <minus>         : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
 <Multi_key> <O> <O> <bar>           : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
 <Multi_key> <l> <asciicircum> <l>   : "ˡ"  U02E1   # MODIFIER LETTER SMALL L
@@ -325,6 +325,17 @@ include "%L"
 <Multi_key> <colon> <colon>         : "ː"  U02D0   # MODIFIER LETTER TRIANGULAR COLON
 <Multi_key> <colon> <asciicircum>   : "ˑ"  U02D1   # MODIFIER LETTER HALF TRIANGULAR COLON
 <Multi_key> <backslash> <underscore> <slash> : "‿"  U203F   # UNDERTIE
+
+<Multi_key> <5> <bar> : "˥"  U02E5   # MODIFIER LETTER EXTRA-HIGH TONE BAR
+<Multi_key> <4> <bar> : "˦"  U02E6   # MODIFIER LETTER HIGH TONE BAR
+<Multi_key> <3> <bar> : "˧"  U02E7   # MODIFIER LETTER MID TONE BAR
+<Multi_key> <2> <bar> : "˨"  U02E8   # MODIFIER LETTER LOW TONE BAR
+<Multi_key> <1> <bar> : "˩"  U02E9   # MODIFIER LETTER EXTRA-LOW TONE BAR
+<Multi_key> <bar> <5> : "꜒"  UA712   # MODIFIER LETTER EXTRA-HIGH LEFT-STEM TONE BAR
+<Multi_key> <bar> <4> : "꜓"  UA713   # MODIFIER LETTER HIGH LEFT-STEM TONE BAR
+<Multi_key> <bar> <3> : "꜔"  UA714   # MODIFIER LETTER MID LEFT-STEM TONE BAR
+<Multi_key> <bar> <2> : "꜕"  UA715   # MODIFIER LETTER LOW LEFT-STEM TONE BAR
+<Multi_key> <bar> <1> : "꜖"  UA716   # MODIFIER LETTER EXTRA-LOW LEFT-STEM TONE BAR
 
 # additional non-IPA letters
 
