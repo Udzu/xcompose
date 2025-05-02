@@ -46,7 +46,8 @@ include "%L"
 <Multi_key> <minus> <n>              : "–"  U2013   # EN DASH
 <Multi_key> <minus> <m>              : "—"  U2014   # EM DASH
 <Multi_key> <minus> <quotedbl>       : "―"  U2015   # HORIZONTAL BAR (QUOTATION DASH)
-<Multi_key> <minus> <asciitilde>     : "⁓"  U2053   # SWUNG DASH
+<Multi_key> <minus> <s>              : "⁓"  U2053   # SWUNG DASH
+<Multi_key> <minus> <minus> <asciitilde> : "⁓"  U2053   # SWUNG DASH
 <Multi_key> <minus> <2>              : "⸺"  U2E3A   # TWO-EM DASH
 <Multi_key> <minus> <3>              : "⸻"  U2E3B   # THREE-EM DASH
 
@@ -114,16 +115,21 @@ include "%L"
 <Multi_key> <exclam> <Return>        : "̣"  U0323   # COMBINING DOT BELOW
 <Multi_key> <comma> <Return>         : "̧"  U0327   # COMBINING CEDILLA
 <Multi_key> <semicolon> <Return>     : "̨"  U0328   # COMBINING OGONEK
+<Multi_key> <x> <Return>             : "̽"  U033D   # COMBINING X ABOVE
 <Multi_key> <bracketleft> <Return>   : "͆"  U0346   # COMBINING BRIDGE ABOVE
 <Multi_key> <asciitilde> <slash> <Return> : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <slash> <asciitilde> <Return> : "͊"  U034A   # COMBINING NOT TILDE ABOVE
+<Multi_key> <c> <Return>             : "͑"  U0351   # COMBINING LEFT HALF RING ABOVE
+<Multi_key> <c> <less> <Return>      : "͗"  U0357   # COMBINING RIGHT HALF RING ABOVE (conflicts with č, use vc)
 <Multi_key> <parenright> <Return>    : "͝"  U035D   # COMBINING DOUBLE BREVE  
 <Multi_key> <parenleft> <Return>     : "͡"  U0361   # COMBINING DOUBLE INVERTED BREVE
 
 <Multi_key> <underscore> <grave> <Return>            : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
 <Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (overrides APL ⍘)
-<Multi_key> <underscore> <comma> <less> <Return>     : "̜"  U031C   # COMBINING LEFT HALF RING BELOW
-<Multi_key> <underscore> <bar> <underscore> <Return> : "̝"  U031D   # COMBINING UP TACK BELOW
+<Multi_key> <underscore> <T> <less> <Return>         : "̘"  U0318   # COMBINING LEFT TACK BELOW
+<Multi_key> <underscore> <T> <greater> <Return>      : "̙"  U0319   # COMBINING RIGHT TACK BELOW
+<Multi_key> <underscore> <c> <Return>                : "̜"  U031C   # COMBINING LEFT HALF RING BELOW
+<Multi_key> <underscore> <T> <v> <Return>            : "̝"  U031D   # COMBINING UP TACK BELOW
 <Multi_key> <underscore> <T> <Return>                : "̞"  U031E   # COMBINING DOWN TACK BELOW
 <Multi_key> <underscore> <underscore> <plus> <Return> : "̟"  U031F   # COMBINING PLUS SIGN BELOW (conflicts with ū, use -u)
 <Multi_key> <underscore> <underscore> <minus> <Return> : "̠"  U0320   # COMBINING MINUS SIGN BELOW (conflicts with ū, use -u)
@@ -146,6 +152,7 @@ include "%L"
 <Multi_key> <underscore> <underscore> <Return>       : "̱"  U0331   # COMBINING MACRON BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <underscore> <Return> : "̲"  U0332   # COMBINING LOW LINE (UNDERLINE) (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <equal> <Return> : "̳"  U0333   # COMBINING DOUBLE LOW LINE (UNDERLINE) (conflicts with ¯, use -^)
+<Multi_key> <underscore> <c> <less> <Return>         : "̹"  U0339   # COMBINING RIGHT HALF RING BELOW
 <Multi_key> <underscore> <bracketright> <Return>     : "̺"  U033A   # COMBINING INVERTED BRIDGE BELOW
 <Multi_key> <underscore> <bracketleft> <bracketright> <Return> : "̻"  U033B   # COMBINING SQUARE BELOW
 <Multi_key> <underscore> <M> <Return>                : "̼"  U033C   # COMBINING SEAGULL BELOW
@@ -155,6 +162,7 @@ include "%L"
 <Multi_key> <underscore> <Multi_key> <minus> <comma> <Return> : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
 <Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
 
+<Multi_key> <minus> <asciitilde> <Return>    : "̴"  U0334   # COMBINING TILDE OVERLAY
 <Multi_key> <minus> <minus> <Return>         : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
 <Multi_key> <minus> <slash> <Return>         : "̸"  U0338   # COMBINING LONG SOLIDUS OVERLAY (overrides APL ⌿)
 <Multi_key> <minus> <bar> <Return>           : "⃒"  U20D2   # COMBINING LONG VERTICAL LINE OVERLAY
@@ -216,6 +224,7 @@ include "%L"
 <Multi_key> <w> <h>                 : "ɯ"  U026F   # LATIN SMALL LETTER TURNED M
 <Multi_key> <y> <h>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
 <Multi_key> <e> <r>                 : "ɚ"  U025A   # LATIN SMALL LETTER SCHWA WITH HOOK
+<Multi_key> <r> <Return>            : "˞"  U02DE   # MODIFIER LETTER RHOTIC HOOK
 
 <Multi_key> <b> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
 <Multi_key> <B> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
@@ -292,6 +301,8 @@ include "%L"
 <Multi_key> <l> <z>                 : "ɮ"  U026E   # LATIN SMALL LETTER LEZH
 <Multi_key> <o> <E>                 : "ɶ"  U0276   # LATIN LETTER SMALL CAPITAL OE
 
+<Multi_key> <c> <c>                 : "˓"  U02D3   # MODIFIER LETTER CENTRED LEFT HALF RING (conflicts with č, use vc)
+<Multi_key> <c> <less> <c>          : "˒"  U02D2   # MODIFIER LETTER CENTRED RIGHT HALF RING (conflicts with č, use vc)
 <Multi_key> <g> <g>                 : "ˠ"  U02E0   # MODIFIER LETTER SMALL GAMMA
 <Multi_key> <h> <h>                 : "ʰ"  U02B0   # MODIFIER LETTER SMALL H
 <Multi_key> <j> <j>                 : "ʲ"  U02B2   # MODIFIER LETTER SMALL J
@@ -299,6 +310,8 @@ include "%L"
 <Multi_key> <w> <w>                 : "ʷ"  U02B7   # MODIFIER LETTER SMALL W
 <Multi_key> <T> <T>                 : "˕"  U02D5   # MODIFIER LETTER DOWN TACK
 <Multi_key> <T> <v> <T>             : "˔"  U02D4   # MODIFIER LETTER UP TACK
+<Multi_key> <T> <less> <T>          : "꭪"  UAB6A   # MODIFIER LETTER LEFT TACK (conflicts with Ť, use vT)
+<Multi_key> <T> <greater> <T>       : "꭫"  UAB6B   # MODIFIER LETTER RIGHT TACK
 <Multi_key> <0> <0> <minus>         : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
 <Multi_key> <O> <O> <bar>           : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
 <Multi_key> <l> <asciicircum> <l>   : "ˡ"  U02E1   # MODIFIER LETTER SMALL L
@@ -310,6 +323,7 @@ include "%L"
 <Multi_key> <apostrophe> <1>        : "ˈ"  U02C8   # MODIFIER LETTER VERTICAL LINE
 <Multi_key> <apostrophe> <2>        : "ˌ"  U02CC   # MODIFIER LETTER LOW VERTICAL LINE
 <Multi_key> <colon> <colon>         : "ː"  U02D0   # MODIFIER LETTER TRIANGULAR COLON
+<Multi_key> <colon> <asciicircum>   : "ˑ"  U02D1   # MODIFIER LETTER HALF TRIANGULAR COLON
 <Multi_key> <backslash> <underscore> <slash> : "‿"  U203F   # UNDERTIE
 
 # additional non-IPA letters
@@ -3477,6 +3491,7 @@ include "%L"
 <Multi_key> <l> <a> <d> <y> <b>     : "🐞"  U1F41E        # LADY BEETLE/BIRD/BUG
 <Multi_key> <l> <i> <o> <n>         : "🦁"  U1F981        # LION FACE
 <Multi_key> <l> <i> <z> <a> <r> <d> : "🦎"  U1F98E        # LIZARD
+<Multi_key> <l> <l> <a> <m> <a>     : "🦙"  U1F999        # LLAMA
 <Multi_key> <l> <o> <b> <s> <t>     : "🦞"  U1F99E        # LOBSTER
 <Multi_key> <m> <a> <m> <m> <o>     : "🦣"  U1F9A3        # MAMMOTH
 <Multi_key> <m> <o> <b> <y>         : "🐳"  U1F433        # SPOUTING WHALE (not ideal but ɯ is taken)
@@ -3583,6 +3598,7 @@ include "%L"
 <Multi_key> <b> <i> <k> <i> <n> <i> : "👙"  U1F459        # BIKINI (conflicts with ĭ, use ui)
 <Multi_key> <b> <l> <i> <n> <d>     : "🦯"  U1F9AF        # PROBING CANE (🧑+ZWJ+🦯=🧑‍🦯)
 <Multi_key> <b> <o> <o> <t>         : "👢"  U1F462        # WOMANS BOOTS (conflicts with ŏ, use uo)
+<Multi_key> <b> <r> <i> <e> <f> <s> : "🩲"  U1FA72        # BRIEFS
 <Multi_key> <c> <o> <a> <t>         : "🧥"  U1F9E5        # COAT (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <m> <b>         : "🪮"  U1FAAE        # HAIR PICK (conflicts with ǒ, use vo)
 <Multi_key> <c> <r> <o> <w> <n>     : "👑"  U1F451        # CROWN (conflicts with ř, use vr)
@@ -3791,6 +3807,7 @@ include "%L"
 <Multi_key> <l> <i> <n> <k>         : "🔗"  U1F517        # LINK SYMBOL
 <Multi_key> <l> <i> <t> <t> <e> <r> : "🚮"  U1F6AE        # PUT LITTER IN ITS PLACE SYMBOL
 <Multi_key> <p> <e> <a> <c> <e>     : "☮️"  U262E UFE0F   # PEACE SYMBOL EMOJI (use AQ for ✌️)
+<Multi_key> <r> <e> <c> <y> <c>     : "♻️"  U267B UFE0F   # BLACK UNIVERSAL RECYCLING SYMBOL EMOJI
 <Multi_key> <s> <p> <l> <a> <t>     : "🫟"  U1FADF        # SPLATTER
 <Multi_key> <S> <T> <O> <P>         : "🛑"  U1F6D1        # OCTAGONAL SIGN (STOP)
 <Multi_key> <w> <a> <i> <t>         : "⏳"  U23F3         # HOURGLASS WITH FLOWING SAND (WAIT)
@@ -3828,6 +3845,7 @@ include "%L"
 <Multi_key> <X> <t>                 : "✝️"  U271D UFE0F  # LATIN CROSS EMOJI
 <Multi_key> <O> <asterisk>          : "☸️"  U2638 UFE0F  # WHEEL OF DHARMA EMOJI
 <Multi_key> <O> <m>                 : "🕉️"  U1F549 UFE0F # OM SYMBOL EMOJI (not shape-based but fits here)
+<Multi_key> <m> <e> <n> <o> <r> <a> : "🕎"  U1F54E       # MENORAH WITH NINE BRANCHES (not shape-based but fits here)
 <Multi_key> <s> <i> <k> <h>         : "🪯"  U1FAAF       # KHANDA (not shape-based but fits here) (use turban for 👳)
 <Multi_key> <y> <i> <n>             : "☯️"  U262F UFE0F  # YIN YANG EMOJI (not shape-based but fits here)
 
