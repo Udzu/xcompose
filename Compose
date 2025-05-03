@@ -40,16 +40,17 @@ include "%L"
 # Dashes #
 ##########
 
-<Multi_key> <minus> <space>          : "­"  U00AD   # SOFT HYPHEN (conflicts with useless ~)
-<Multi_key> <minus> <Return>         : "‑"  U2011   # NON-BREAKING HYPHEN
-<Multi_key> <minus> <numbersign>     : "‒"  U2012   # FIGURE DASH
-<Multi_key> <minus> <n>              : "–"  U2013   # EN DASH
-<Multi_key> <minus> <m>              : "—"  U2014   # EM DASH
-<Multi_key> <minus> <quotedbl>       : "―"  U2015   # HORIZONTAL BAR (QUOTATION DASH)
-<Multi_key> <minus> <s>              : "⁓"  U2053   # SWUNG DASH
+<Multi_key> <minus> <space>              : "­"  U00AD   # SOFT HYPHEN (conflicts with useless ~)
+<Multi_key> <minus> <Return>             : "‑"  U2011   # NON-BREAKING HYPHEN
+<Multi_key> <minus> <numbersign>         : "‒"  U2012   # FIGURE DASH
+<Multi_key> <minus> <n>                  : "–"  U2013   # EN DASH
+<Multi_key> <minus> <m>                  : "—"  U2014   # EM DASH
+<Multi_key> <minus> <quotedbl>           : "―"  U2015   # HORIZONTAL BAR (QUOTATION DASH)
 <Multi_key> <minus> <minus> <asciitilde> : "⁓"  U2053   # SWUNG DASH
-<Multi_key> <minus> <2>              : "⸺"  U2E3A   # TWO-EM DASH
-<Multi_key> <minus> <3>              : "⸻"  U2E3B   # THREE-EM DASH
+<Multi_key> <minus> <s>                  : "⁓"  U2053   # SWUNG DASH
+<Multi_key> <minus> <2>                  : "⸺"  U2E3A   # TWO-EM DASH
+<Multi_key> <minus> <3>                  : "⸻"  U2E3B   # THREE-EM DASH
+<Multi_key> <quotedbl> <minus>           : "⸚"  U2E1A   # HYPHEN WITH DIAERESIS
 
 ############
 # Brackets #
@@ -62,12 +63,16 @@ include "%L"
 <Multi_key> <bracketright> <asciicircum>  : "⌉"  U2309   # RIGHT CEILING
 <Multi_key> <bracketleft> <underscore>    : "⌊"  U230A   # LEFT FLOOR
 <Multi_key> <bracketright> <underscore>   : "⌋"  U230B   # RIGHT FLOOR
+<Multi_key> <parenleft> <bar>             : "⎸"  U23B8   # LEFT VERTICAL BOX LINE
+<Multi_key> <parenright> <bar>            : "⎹"  U23B9   # RIGHT VERTICAL BOX LINE
 <Multi_key> <bracketleft> <bracketleft>   : "⟦"  U27E6   # MATHEMATICAL LEFT WHITE SQUARE BRACKET
 <Multi_key> <bracketright> <bracketright> : "⟧"  U27E7   # MATHEMATICAL RIGHT WHITE SQUARE BRACKET
 <Multi_key> <less> <parenleft>            : "⟨"  U27E8   # MATHEMATICAL LEFT ANGLE BRACKET
 <Multi_key> <greater> <parenright>        : "⟩"  U27E9   # MATHEMATICAL RIGHT ANGLE BRACKET
 <Multi_key> <parenleft> <less> <less>     : "⟪"  U27EA   # MATHEMATICAL LEFT DOUBLE ANGLE BRACKET
 <Multi_key> <parenright> <greater> <greater> : "⟫"  U27EB   # MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
+<Multi_key> <less> <bracketleft>          : "⟬"  U27EC   # MATHEMATICAL LEFT WHITE TORTOISE SHELL BRACKET
+<Multi_key> <greater> <bracketright>      : "⟭"  U27ED   # MATHEMATICAL RIGHT WHITE TORTOISE SHELL BRACKET
 <Multi_key> <parenleft> <slash> <slash>   : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR
 <Multi_key> <parenright> <slash> <slash>  : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR
 <Multi_key> <slash> <slash> <slash>       : "⫽"  U2AFD   # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
@@ -78,13 +83,15 @@ include "%L"
 # Bullets #
 ###########
 
-<Multi_key> <asterisk> <asterisk>   : "•" U2022    # BULLET
-<Multi_key> <asterisk> <greater>    : "‣" U2023    # TRIANGULAR BULLET
-<Multi_key> <asterisk> <minus>      : "⁃" U2043    # HYPHEN BULLET
-<Multi_key> <asterisk> <parenleft>  : "⁌" U204C    # BLACK LEFTWARDS BULLET
-<Multi_key> <asterisk> <parenright> : "⁍" U204D    # BLACK RIGHTWARDS BULLET
-<Multi_key> <asterisk> <at>         : "◉" U25C9    # FISHEYE (TAINOME)
-<Multi_key> <asterisk> <o>          : "◦" U25E6    # WHITE BULLET
+<Multi_key> <asterisk> <asterisk>     : "•" U2022    # BULLET
+<Multi_key> <asterisk> <greater>      : "‣" U2023    # TRIANGULAR BULLET
+<Multi_key> <asterisk> <minus>        : "⁃" U2043    # HYPHEN BULLET
+<Multi_key> <asterisk> <parenleft>    : "⁌" U204C    # BLACK LEFTWARDS BULLET
+<Multi_key> <asterisk> <parenright>   : "⁍" U204D    # BLACK RIGHTWARDS BULLET
+<Multi_key> <asterisk> <at>           : "◉" U25C9    # FISHEYE (TAINOME)
+<Multi_key> <asterisk> <o>            : "◦" U25E6    # WHITE BULLET
+<Multi_key> <asterisk> <O> <o>        : "⦾" U29BE   # CIRCLED WHITE BULLET
+<Multi_key> <asterisk> <O> <asterisk> : "⦿" U29BF   # CIRCLED BULLET
 
 ########################
 # Combining diacritics #
@@ -123,6 +130,14 @@ include "%L"
 <Multi_key> <c> <less> <Return>      : "͗"  U0357   # COMBINING RIGHT HALF RING ABOVE (conflicts with č, use vc)
 <Multi_key> <parenright> <Return>    : "͝"  U035D   # COMBINING DOUBLE BREVE  
 <Multi_key> <parenleft> <Return>     : "͡"  U0361   # COMBINING DOUBLE INVERTED BREVE
+<Multi_key> <asciicircum> <underscore> <apostrophe> <Return> : "᷄" U1DC4   # COMBINING MACRON-ACUTE
+<Multi_key> <grave> <underscore> <Return>               : "᷅" U1DC5   # COMBINING GRAVE-MACRON
+<Multi_key> <asciicircum> <underscore> <grave> <Return> : "᷆" U1DC6   # COMBINING MACRON-GRAVE
+<Multi_key> <apostrophe> <underscore> <Return>          : "᷇" U1DC7   # COMBINING ACUTE-MACRON
+<Multi_key> <grave> <apostrophe> <grave> <Return>       : "᷈" U1DC8   # COMBINING GRAVE-ACUTE-GRAVE
+<Multi_key> <apostrophe> <grave> <apostrophe> <Return>  : "᷉" U1DC9   # COMBINING ACUTE-GRAVE-ACUTE
+<Multi_key> <u> <underscore> <Return>                   : "᷋" U1DCB   # COMBINING BREVE-MACRON (conflicts with ū, use -u or u-)
+<Multi_key> <underscore> <u> <Return>                   : "᷌" U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
 
 <Multi_key> <underscore> <grave> <Return>            : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
 <Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (overrides APL ⍘)
@@ -161,6 +176,7 @@ include "%L"
 <Multi_key> <underscore> <notsign> <Return>          : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
 <Multi_key> <underscore> <Multi_key> <minus> <comma> <Return> : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
 <Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <parenleft> <Return> : "᷼" U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (conflicts with ¯, use -^)
 
 <Multi_key> <minus> <asciitilde> <Return>    : "̴"  U0334   # COMBINING TILDE OVERLAY
 <Multi_key> <minus> <minus> <Return>         : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
@@ -319,6 +335,8 @@ include "%L"
 <Multi_key> <question> <asciicircum> <question> : "ˤ"  U02E4   # MODIFIER LETTER SMALL REVERSED GLOTTAL STOP
 <Multi_key> <plus> <asciicircum> <plus> : "˖"  U02D6   # MODIFIER LETTER PLUS SIGN
 <Multi_key> <minus> <minus> <asciicircum> : "˗"  U02D7   # MODIFIER LETTER MINUS SIGN (annoyingly inconsistent)
+<Multi_key> <asciicircum> <asciicircum> <bar> : "ꜛ"  UA71B   # MODIFIER LETTER RAISED UP ARROW
+<Multi_key> <asciicircum> <v> <bar> : "ꜜ"  UA71C   # MODIFIER LETTER RAISED DOWN ARROW
 
 <Multi_key> <apostrophe> <1>        : "ˈ"  U02C8   # MODIFIER LETTER VERTICAL LINE
 <Multi_key> <apostrophe> <2>        : "ˌ"  U02CC   # MODIFIER LETTER LOW VERTICAL LINE
@@ -436,6 +454,7 @@ include "%L"
 <Multi_key> <underscore> <v> <underscore> : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
 <Multi_key> <underscore> <x>              : "ₓ"  U2093   # LATIN SUBSCRIPT SMALL LETTER X
 
+<Multi_key> <asciicircum> <underscore> <colon>  : "˸" U02F8    # MODIFIER LETTER RAISED COLON
 <Multi_key> <asciicircum> <underscore> <exclam> : "ꜝ" UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
 
 #####################################
@@ -1356,7 +1375,7 @@ include "%L"
 <Multi_key> <dollar> <apostrophe>  : "ꞌ" UA78C    # LATIN SMALL LETTER SALTILLO
 <Multi_key> <dollar> <equal>       : "ꘌ" UA60C    # VAI SYLLABLE LENGTHENER
 <Multi_key> <dollar> <plus>        : "𐊛" U1029B   # LYCIAN LETTER H
-<Multi_key> <dollar> <minus>       : "Ⲻ" U2CBA    # COPTIC CAPITAL LETTER DIALECT-P NI
+<Multi_key> <dollar> <minus>       : "ㅡ" U3161   # HANGUL LETTER EU
 <Multi_key> <dollar> <asterisk>    : "𐌟" U1031F   # OLD ITALIC LETTER ESS
 <Multi_key> <dollar> <slash>       : "Ⳇ" U2CC6    # COPTIC CAPITAL LETTER OLD COPTIC ESH
 <Multi_key> <dollar> <less>        : "ᐸ" U1438    # CANADIAN SYLLABICS PA
