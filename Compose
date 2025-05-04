@@ -204,6 +204,29 @@ include "%L"
 <Multi_key> <r> <l> <i> : "⁧"  U2067   # RIGHT-TO-LEFT ISOLATE
 <Multi_key> <p> <d> <i> : "⁩"  U2069   # POP DIRECTIONAL ISOLATE
 
+####################
+# Currency symbols #
+####################
+
+# (most currency symbols are already provided in the system config)
+
+<Multi_key> <D> <p>          : "₯" U20AF   # DRACHMA SIGN
+<Multi_key> <P> <equal>      : "₱" U20B1   # PESO SIGN (overrides ₽, use P-)
+<Multi_key> <A> <equal>      : "₳" U20B3   # AUSTRAL SIGN
+<Multi_key> <S> <equal>      : "₴" U20B4   # HRYVNIA SIGN
+<Multi_key> <M> <bar>        : "₼" U20BC   # MANAT SIGN
+<Multi_key> <P> <minus>      : "₽" U20BD   # RUBLE SIGN
+<Multi_key> <L> <quotedbl>   : "₾" U20BE   # LARI SIGN
+<Multi_key> <B> <quotedbl>   : "₿" U20BF   # BITCOIN SIGN
+
+<Multi_key> <equal> <P>      : "₱" U20B1   # PESO SIGN (overrides ₽, use -P)
+<Multi_key> <equal> <A>      : "₳" U20B3   # AUSTRAL SIGN
+<Multi_key> <equal> <S>      : "₴" U20B4   # HRYVNIA SIGN
+<Multi_key> <bar> <M>        : "₼" U20BC   # MANAT SIGN
+<Multi_key> <minus> <P>      : "₽" U20BD   # RUBLE SIGN
+<Multi_key> <quotedbl> <L>   : "₾" U20BE   # LARI SIGN
+<Multi_key> <quotedbl> <B>   : "₿" U20BF   # BITCOIN SIGN
+
 
 ##############################
 # B. LATIN SCRIPT CHARACTERS #
@@ -3939,6 +3962,7 @@ include "%L"
 <Multi_key> <at> <s> <t> <a> <r> <t> : "🏁" U1F3C1    # CHEQUERED FLAG (START)
 <Multi_key> <at> <b> <l> <a> <c> <k> : "🏴" U1F3F4    # WAVING BLACK FLAG
 <Multi_key> <at> <w> <h> <i> <t> <e> : "🏳️" U1F3F3 UFE0F   # WAVING WHITE FLAG EMOJI
+<Multi_key> <at> <r> <o> <g> <e> <r> : "🏴‍☠️" U1F3F4 U200D U2620 UFE0F     # PIRATE FLAG EMOJI (JOLLY ROGER)
 <Multi_key> <at> <l> <g> <b> <t>     : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG EMOJI (LGBT)
 <Multi_key> <at> <p> <r> <i> <d> <e> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG EMOJI (PRIDE)
 <Multi_key> <at> <t> <r> <a> <n> <s> : "🏳️‍⚧️" U1F3F3 UFE0F U200D U26A7 UFE0F    # TRANS FLAG EMOJI
