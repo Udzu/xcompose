@@ -210,26 +210,36 @@ include "%L"
 
 # (most currency symbols are already provided in the system config)
 
+<Multi_key> <f> <comma>      : "ƒ" U0192   # LATIN SMALL LETTER F WITH HOOK (FLORIN)
+<Multi_key> <D> <equal>      : "֏" U058F   # ARMENIAN DRAM SIGN
+<Multi_key> <T> <k>          : "৳" U09F3   # BENGALI RUPEE SIGN (TAKA)
+<Multi_key> <W> <minus>      : "₩" U20A9   # WON SIGN
+<Multi_key> <minus> <W>      : "₩" U20A9   # WON SIGN
 <Multi_key> <D> <p>          : "₯" U20AF   # DRACHMA SIGN
 <Multi_key> <p> <f>          : "₰" U20B0   # GERMAN PENNY SIGN
 <Multi_key> <P> <equal>      : "₱" U20B1   # PESO SIGN (overrides ₽, use P-)
+<Multi_key> <equal> <P>      : "₱" U20B1   # PESO SIGN (overrides ₽, use -P)
 <Multi_key> <A> <equal>      : "₳" U20B3   # AUSTRAL SIGN
+<Multi_key> <equal> <A>      : "₳" U20B3   # AUSTRAL SIGN
 <Multi_key> <S> <equal>      : "₴" U20B4   # HRYVNIA SIGN
+<Multi_key> <equal> <S>      : "₴" U20B4   # HRYVNIA SIGN
 <Multi_key> <T> <underscore> : "₸" U20B8   # TENGE SIGN
 <Multi_key> <T> <L>          : "₺" U20BA   # TURKISH LIRA SIGN
 <Multi_key> <M> <bar>        : "₼" U20BC   # MANAT SIGN
-<Multi_key> <P> <minus>      : "₽" U20BD   # RUBLE SIGN
-<Multi_key> <L> <quotedbl>   : "₾" U20BE   # LARI SIGN
-<Multi_key> <B> <quotedbl>   : "₿" U20BF   # BITCOIN SIGN
-
-<Multi_key> <equal> <P>      : "₱" U20B1   # PESO SIGN (overrides ₽, use -P)
-<Multi_key> <equal> <A>      : "₳" U20B3   # AUSTRAL SIGN
-<Multi_key> <equal> <S>      : "₴" U20B4   # HRYVNIA SIGN
 <Multi_key> <bar> <M>        : "₼" U20BC   # MANAT SIGN
+<Multi_key> <P> <minus>      : "₽" U20BD   # RUBLE SIGN
 <Multi_key> <minus> <P>      : "₽" U20BD   # RUBLE SIGN
+<Multi_key> <L> <quotedbl>   : "₾" U20BE   # LARI SIGN
 <Multi_key> <quotedbl> <L>   : "₾" U20BE   # LARI SIGN
+<Multi_key> <B> <quotedbl>   : "₿" U20BF   # BITCOIN SIGN
 <Multi_key> <quotedbl> <B>   : "₿" U20BF   # BITCOIN SIGN
+<Multi_key> <C> <underscore> : "⃀" U20C0   # SOM SIGN
+<Multi_key> <underscore> <C> : "⃀" U20C0   # SOM SIGN
 
+<Multi_key> <I> <L> <S>      : "₪" U20AA   # NEW SHEQEL SIGN
+<Multi_key> <I> <R> <R>      : "﷼" UFDFC   # RIAL SIGN
+<Multi_key> <K> <H> <R>      : "៛" U17DB   # KHMER CURRENCY SYMBOL RIEL
+<Multi_key> <N> <I> <S>      : "₪" U20AA   # NEW SHEQEL SIGN
 
 ##############################
 # B. LATIN SCRIPT CHARACTERS #
@@ -1545,7 +1555,6 @@ include "%L"
 <Multi_key> <a> <x> <A> <W> <J> : "﷿" UFDFF    # ARABIC LIGATURE AZZA WA JALL
 <Multi_key> <a> <x> <P> <B> <U> <H> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM (PEACE BE UPON HIM)
 <Multi_key> <a> <x> <S> <W> <T> : "﷾" UFDFE    # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
-<Multi_key> <a> <x> <I> <R> <R> : "﷼" UFDFC    # RIAL SIGN
 
 <Multi_key> <a> <semicolon> <a> <Return>              : "َ" U064E    # ARABIC FATHA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <u> <Return>              : "ُ" U064F    # ARABIC DAMMA (conflicts with ą, use ,a)
@@ -1800,7 +1809,6 @@ include "%L"
 <Multi_key> <h> <c> <u>         : "וּ"  U05D5 U05BC   # HEBREW LETTER VAV WITH SHURUK
 <Multi_key> <h> <c> <w>         : "װ"  U05F0   # HEBREW LIGATURE YIDDISH DOUBLE VAV
 <Multi_key> <h> <c> <Y>         : "ײ"  U05F2   # HEBREW LIGATURE YIDDISH DOUBLE YOD
-<Multi_key> <h> <c> <N> <I> <S> : "₪"  U20AA   # NEW SHEQEL SIGN
 
 <Multi_key> <h> <semicolon> <colon> <Return>                   : "ְ"  U05B0   # HEBREW POINT SHEVA
 <Multi_key> <h> <semicolon> <v> <period> <period> <Return>     : "ֱ"  U05B1   # HEBREW POINT HATAF SEGOL

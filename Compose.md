@@ -9,14 +9,14 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (153)
+### Common script characters (161)
 * **Spaces** (13): NBSP MMSP ZWSP etc
 * **Dashes** (10): – — ⁓ ⸻ etc
 * **Brackets** (20): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (9): • ‣ ⁃ ◉ etc
 * **Combining diacritics** (80): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
-* **Currency symbols** (11): ₱ ₿ etc
+* **Currency symbols** (19): ₱ ₿ ₪ etc
 
 ### Latin script characters (1124)
 * **International Phonetic Alphabet** (133): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
@@ -24,12 +24,12 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (1017)
+### Non-Latin script characters (1015)
 * **Greek** (60): Ρέντιτ etc
 * **Cyrillic** (94): Ре́ддит etc
 * **Etruscan** (42): 𐌓𐌄𐌃𐌃𐌉𐌕 etc
-* **Arabic** (68): ⁧رِيدِيت⁩ etc
-* **Hebrew** (76): ⁧רֶדִיט⁩ etc
+* **Arabic** (67): ⁧رِيدِيت⁩ etc
+* **Hebrew** (75): ⁧רֶדִיט⁩ etc
 * **Korean** (via jamo) (118): 레딧 etc
 * **Japanese** (kana) (301): 「レヂィット」 etc
 * **Bopomofo** (104): ㄏㄨㄥˊㄉㄧˊ etc
