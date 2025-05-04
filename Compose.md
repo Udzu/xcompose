@@ -9,13 +9,14 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (142)
+### Common script characters (162)
 * **Spaces** (13): NBSP MMSP ZWSP etc
-* **Dashes** (10): – — ⁓ ⸻ etc
+* **Dashes** (11): – — ⁓ ⸻ etc
 * **Brackets** (20): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (9): • ‣ ⁃ ◉ etc
 * **Combining diacritics** (80): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
+* **Currency symbols** (19): ₱ ₿ ₪ etc
 
 ### Latin script characters (1124)
 * **International Phonetic Alphabet** (133): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
@@ -23,22 +24,22 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (1017)
+### Non-Latin script characters (1016)
 * **Greek** (60): Ρέντιτ etc
 * **Cyrillic** (94): Ре́ддит etc
 * **Etruscan** (42): 𐌓𐌄𐌃𐌃𐌉𐌕 etc
-* **Arabic** (68): ⁧رِيدِيت⁩ etc
-* **Hebrew** (76): ⁧רֶדִיט⁩ etc
+* **Arabic** (67): ⁧رِيدِيت⁩ etc
+* **Hebrew** (75): ⁧רֶדִיט⁩ etc
 * **Korean** (via jamo) (118): 레딧 etc
-* **Japanese** (kana) (301): 「レヂィット」 etc
+* **Japanese** (kana) (302): 「レヂィット」 etc
 * **Bopomofo** (104): ㄏㄨㄥˊㄉㄧˊ etc
 * **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **International Morse Code** (76): ···---··· etc
 
-### Symbols (2046)
-* **Emoji** (1080): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Math and science** (149): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
-* **Numerals** (54): 𝍸𝍷 𝍵 Ⅻ ↁ etc
+### Symbols (2078)
+* **Emoji** (1081): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+* **Math and science** (150): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (80): ♈ 🐉 🌒 ☿ ♇ etc

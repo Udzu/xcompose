@@ -51,6 +51,7 @@ include "%L"
 <Multi_key> <minus> <2>                  : "⸺"  U2E3A   # TWO-EM DASH
 <Multi_key> <minus> <3>                  : "⸻"  U2E3B   # THREE-EM DASH
 <Multi_key> <quotedbl> <minus>           : "⸚"  U2E1A   # HYPHEN WITH DIAERESIS
+<Multi_key> <2> <minus>                  : "⹀"  U2E40   # DOUBLE HYPHEN
 
 ############
 # Brackets #
@@ -204,6 +205,42 @@ include "%L"
 <Multi_key> <r> <l> <i> : "⁧"  U2067   # RIGHT-TO-LEFT ISOLATE
 <Multi_key> <p> <d> <i> : "⁩"  U2069   # POP DIRECTIONAL ISOLATE
 
+####################
+# Currency symbols #
+####################
+
+# (most currency symbols are already provided in the system config)
+
+<Multi_key> <f> <comma>      : "ƒ" U0192   # LATIN SMALL LETTER F WITH HOOK (FLORIN)
+<Multi_key> <D> <equal>      : "֏" U058F   # ARMENIAN DRAM SIGN
+<Multi_key> <T> <k>          : "৳" U09F3   # BENGALI RUPEE SIGN (TAKA)
+<Multi_key> <W> <minus>      : "₩" U20A9   # WON SIGN
+<Multi_key> <minus> <W>      : "₩" U20A9   # WON SIGN
+<Multi_key> <D> <p>          : "₯" U20AF   # DRACHMA SIGN
+<Multi_key> <p> <f>          : "₰" U20B0   # GERMAN PENNY SIGN
+<Multi_key> <P> <equal>      : "₱" U20B1   # PESO SIGN (overrides ₽, use P-)
+<Multi_key> <equal> <P>      : "₱" U20B1   # PESO SIGN (overrides ₽, use -P)
+<Multi_key> <A> <equal>      : "₳" U20B3   # AUSTRAL SIGN
+<Multi_key> <equal> <A>      : "₳" U20B3   # AUSTRAL SIGN
+<Multi_key> <S> <equal>      : "₴" U20B4   # HRYVNIA SIGN
+<Multi_key> <equal> <S>      : "₴" U20B4   # HRYVNIA SIGN
+<Multi_key> <T> <underscore> : "₸" U20B8   # TENGE SIGN
+<Multi_key> <T> <L>          : "₺" U20BA   # TURKISH LIRA SIGN
+<Multi_key> <M> <bar>        : "₼" U20BC   # MANAT SIGN
+<Multi_key> <bar> <M>        : "₼" U20BC   # MANAT SIGN
+<Multi_key> <P> <minus>      : "₽" U20BD   # RUBLE SIGN
+<Multi_key> <minus> <P>      : "₽" U20BD   # RUBLE SIGN
+<Multi_key> <L> <quotedbl>   : "₾" U20BE   # LARI SIGN
+<Multi_key> <quotedbl> <L>   : "₾" U20BE   # LARI SIGN
+<Multi_key> <B> <quotedbl>   : "₿" U20BF   # BITCOIN SIGN
+<Multi_key> <quotedbl> <B>   : "₿" U20BF   # BITCOIN SIGN
+<Multi_key> <C> <underscore> : "⃀" U20C0   # SOM SIGN
+<Multi_key> <underscore> <C> : "⃀" U20C0   # SOM SIGN
+
+<Multi_key> <I> <L> <S>      : "₪" U20AA   # NEW SHEQEL SIGN
+<Multi_key> <I> <R> <R>      : "﷼" UFDFC   # RIAL SIGN
+<Multi_key> <K> <H> <R>      : "៛" U17DB   # KHMER CURRENCY SYMBOL RIEL
+<Multi_key> <N> <I> <S>      : "₪" U20AA   # NEW SHEQEL SIGN
 
 ##############################
 # B. LATIN SCRIPT CHARACTERS #
@@ -1519,7 +1556,6 @@ include "%L"
 <Multi_key> <a> <x> <A> <W> <J> : "﷿" UFDFF    # ARABIC LIGATURE AZZA WA JALL
 <Multi_key> <a> <x> <P> <B> <U> <H> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM (PEACE BE UPON HIM)
 <Multi_key> <a> <x> <S> <W> <T> : "﷾" UFDFE    # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
-<Multi_key> <a> <x> <I> <R> <R> : "﷼" UFDFC    # RIAL SIGN
 
 <Multi_key> <a> <semicolon> <a> <Return>              : "َ" U064E    # ARABIC FATHA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <u> <Return>              : "ُ" U064F    # ARABIC DAMMA (conflicts with ą, use ,a)
@@ -1774,7 +1810,6 @@ include "%L"
 <Multi_key> <h> <c> <u>         : "וּ"  U05D5 U05BC   # HEBREW LETTER VAV WITH SHURUK
 <Multi_key> <h> <c> <w>         : "װ"  U05F0   # HEBREW LIGATURE YIDDISH DOUBLE VAV
 <Multi_key> <h> <c> <Y>         : "ײ"  U05F2   # HEBREW LIGATURE YIDDISH DOUBLE YOD
-<Multi_key> <h> <c> <N> <I> <S> : "₪"  U20AA   # NEW SHEQEL SIGN
 
 <Multi_key> <h> <semicolon> <colon> <Return>                   : "ְ"  U05B0   # HEBREW POINT SHEVA
 <Multi_key> <h> <semicolon> <v> <period> <period> <Return>     : "ֱ"  U05B1   # HEBREW POINT HATAF SEGOL
@@ -2079,6 +2114,7 @@ include "%L"
 <Multi_key> <j> <semicolon> <o> <Return> : "゚"  U309A  # COMBINING KATAKANA-HIRAGANA SEMI-VOICED SOUND MARK
 <Multi_key> <j> <semicolon> <minus>      : "ー"  U30FC   # KATAKANA-HIRAGANA PROLONGED SOUND MARK
 <Multi_key> <j> <semicolon> <asciicircum> <period> : "・"  U30FB   # KATAKANA MIDDLE DOT
+<Multi_key> <j> <semicolon> <asterisk>   : "※" U203B   # REFERENCE MARK
 
 <Multi_key> <j> <semicolon> <space>      : "　"  U3000   # IDEOGRAPHIC SPACE
 <Multi_key> <j> <semicolon> <comma>      : "、"  U3001   # IDEOGRAPHIC COMMA
@@ -2362,13 +2398,6 @@ include "%L"
 <Multi_key> <l> <x> <k> <h> : "𐌙" U10319    # OLD ITALIC LETTER KHE (alternatively icK)
 <Multi_key> <l> <c> <f> : "𐌚" U1031A    # OLD ITALIC LETTER EF
 
-<Multi_key> <l> <0> <1> <Return> : "𐌠" U10320    # OLD ITALIC NUMERAL ONE
-<Multi_key> <l> <0> <5> <Return> : "𐌡" U10321    # OLD ITALIC NUMERAL FIVE
-<Multi_key> <l> <0> <1> <0> <Return> : "𐌢" U10322    # OLD ITALIC NUMERAL TEN
-<Multi_key> <l> <0> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
-<Multi_key> <l> <0> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
-
-# archaic Latin
 <Multi_key> <l> <x> <v> <F> : "Ⅎ" U2132    # TURNED CAPITAL F (DIGAMMA INVERSUM)
 <Multi_key> <l> <x> <less> <C> : "Ↄ" U2183    # ROMAN NUMERAL REVERSED ONE HUNDRED (ANTISIGMA)
 <Multi_key> <l> <x> <bar> <minus> : "Ⱶ" U2C75    # LATIN CAPITAL LETTER HALF H
@@ -2380,6 +2409,12 @@ include "%L"
 <Multi_key> <l> <x> <I> <colon> : "ꟾ" UA7FE    # LATIN EPIGRAPHIC LETTER I LONGA
 <Multi_key> <l> <x> <M> <N> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
 <Multi_key> <l> <x> <M> <apostrophe> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
+
+<Multi_key> <l> <0> <1> <Return> : "𐌠" U10320    # OLD ITALIC NUMERAL ONE
+<Multi_key> <l> <0> <5> <Return> : "𐌡" U10321    # OLD ITALIC NUMERAL FIVE
+<Multi_key> <l> <0> <1> <0> <Return> : "𐌢" U10322    # OLD ITALIC NUMERAL TEN
+<Multi_key> <l> <0> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
+<Multi_key> <l> <0> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
 
 ################################
 # (m) International Morse Code #
@@ -2490,7 +2525,7 @@ include "%L"
 <Multi_key> <m> <p> <v> <e>     : "···-·"  # MORSE CODE PROSIGN VE (VERIFIED)
 
 ########################
-# (r) Cyrillic/Russian #
+# (r) Russian/Cyrillic #
 ########################
 
 <Multi_key> <r> <c> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A
@@ -2610,7 +2645,7 @@ include "%L"
 <Multi_key> <r> <x> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 
 ##############################################################
-# (z) Bopomofo/Zhuyin (and some additional Chinese/Zhongwen) #
+# (z) Zhuyin/Bopomofo (and some additional Zhongwen/Chinese) #
 ##############################################################
 
 # (c = one-letter, x = two-letter)
@@ -2756,6 +2791,7 @@ include "%L"
 <Multi_key> <period> <asterisk>       : "⋅"  U22C5   # DOT OPERATOR
 <Multi_key> <3> <v> <slash>           : "∛"  U221B   # CUBE ROOT
 <Multi_key> <4> <v> <slash>           : "∜"  U221C   # FOURTH ROOT
+<Multi_key> <percent> <percent>       : "‱"  U2031   # PER TEN THOUSAND SIGN
 <Multi_key> <1> <apostrophe>          : "′"  U2032   # PRIME (not to be confused with '1)
 <Multi_key> <2> <apostrophe>          : "″"  U2033   # DOUBLE PRIME (not to be confused with '2)
 <Multi_key> <3> <apostrophe>          : "‴"  U2034   # TRIPLE PRIME
@@ -3031,15 +3067,15 @@ include "%L"
 
 # Gender and sexuality (also start with <3)
 
-<Multi_key> <less> <3> <F> <Return> : "♀"  U2640    # FEMALE SIGN
-<Multi_key> <less> <3> <M> <Return> : "♂"  U2642    # MALE SIGN
+<Multi_key> <less> <3> <F> <Return> : "♀"  U2640    # FEMALE SIGN (use @[Return] for emoji form)
+<Multi_key> <less> <3> <M> <Return> : "♂"  U2642    # MALE SIGN (use @[Return] for emoji form)
 <Multi_key> <less> <3> <F> <F>      : "⚢"  U26A2    # DOUBLED FEMALE SIGN (FEMALE HOMOSEXUAL)
 <Multi_key> <less> <3> <M> <M>      : "⚣"  U26A3    # DOUBLED MALE SIGN (MALE HOMOSEXUAL)
 <Multi_key> <less> <3> <H> <S>      : "⚤"  U26A4    # INTERLOCKED FEMALE AND MALE SIGN (HETEROSEXUAL)
 <Multi_key> <less> <3> <I> <S>      : "⚥"  U26A5    # MALE AND FEMALE SIGN (INTERSEX) (use *ME for ☿)
 <Multi_key> <less> <3> <F> <M>      : "⚦"  U26A6    # MALE WITH STROKE SIGN (TRANSGENDER)
 <Multi_key> <less> <3> <M> <F>      : "⚦"  U26A6    # MALE WITH STROKE SIGN (TRANSGENDER)
-<Multi_key> <less> <3> <T> <G>      : "⚧"  U26A7    # MALE WITH STROKE AND MALE AND FEMALE SIGN (TRANSGENDER)
+<Multi_key> <less> <3> <T> <G>      : "⚧"  U26A7    # MALE WITH STROKE AND MALE AND FEMALE SIGN (TRANSGENDER) (use @[Return] for emoji form)
 <Multi_key> <less> <3> <A> <G>      : "○"  U25CB    # WHITE CIRCLE (AGENDER)
 <Multi_key> <less> <3> <N> <G>      : "⚲"  U26B2    # NEUTER (NEUTRAL GENDER)
 <Multi_key> <less> <3> <N> <B>      : "🜬"  U1F72C   # ALCHEMICAL SYMBOL FOR SUBLIMATE OF ANTIMONY (NON-BINARY)
@@ -3940,6 +3976,7 @@ include "%L"
 <Multi_key> <at> <s> <t> <a> <r> <t> : "🏁" U1F3C1    # CHEQUERED FLAG (START)
 <Multi_key> <at> <b> <l> <a> <c> <k> : "🏴" U1F3F4    # WAVING BLACK FLAG
 <Multi_key> <at> <w> <h> <i> <t> <e> : "🏳️" U1F3F3 UFE0F   # WAVING WHITE FLAG EMOJI
+<Multi_key> <at> <r> <o> <g> <e> <r> : "🏴‍☠️" U1F3F4 U200D U2620 UFE0F     # PIRATE FLAG EMOJI (JOLLY ROGER)
 <Multi_key> <at> <l> <g> <b> <t>     : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG EMOJI (LGBT)
 <Multi_key> <at> <p> <r> <i> <d> <e> : "🏳️‍🌈" U1F3F3 UFE0F U200D U1F308    # RAINBOW FLAG EMOJI (PRIDE)
 <Multi_key> <at> <t> <r> <a> <n> <s> : "🏳️‍⚧️" U1F3F3 UFE0F U200D U26A7 UFE0F    # TRANS FLAG EMOJI
@@ -4995,15 +5032,16 @@ include "%L"
 # Numerals #
 ############
 
-# Convention: # + number + type
-#   type: f = fency tally, i = ideographic tally, r = Roman numerals, R = uppercase Roman
+# Convention: # + number + type suffix
 #
-# Also see Arabic (a0), Etruscan (i0), Japanese (j0) and Chinese (z0) numerals above.
+# Also see Arabic (a0), Japanese (j0) and Chinese (z0) numerals above
 
-# Tally marks
+# (f) fence tally
 
 <Multi_key> <numbersign> <1> <f> : "𝍷" U1D377    # TALLY MARK ONE
 <Multi_key> <numbersign> <5> <f> : "𝍸" U1D378    # TALLY MARK FIVE
+
+# (i) ideographic tally
 
 <Multi_key> <numbersign> <1> <i> : "𝍲" U1D372    # IDEOGRAPHIC TALLY MARK ONE
 <Multi_key> <numbersign> <2> <i> : "𝍳" U1D373    # IDEOGRAPHIC TALLY MARK TWO
@@ -5011,7 +5049,30 @@ include "%L"
 <Multi_key> <numbersign> <4> <i> : "𝍵" U1D375    # IDEOGRAPHIC TALLY MARK FOUR
 <Multi_key> <numbersign> <5> <i> : "𝍶" U1D376    # IDEOGRAPHIC TALLY MARK FIVE
 
-# Roman numerals (numeric notation)
+# (m) Mayan numerals
+
+<Multi_key> <numbersign> <0> <m> : "𝋠" U1D2E0    # MAYAN NUMERAL ZERO
+<Multi_key> <numbersign> <1> <m> : "𝋡" U1D2E1    # MAYAN NUMERAL ONE
+<Multi_key> <numbersign> <2> <m> : "𝋢" U1D2E2    # MAYAN NUMERAL TWO
+<Multi_key> <numbersign> <3> <m> : "𝋣" U1D2E3    # MAYAN NUMERAL THREE
+<Multi_key> <numbersign> <4> <m> : "𝋤" U1D2E4    # MAYAN NUMERAL FOUR
+<Multi_key> <numbersign> <5> <m> : "𝋥" U1D2E5    # MAYAN NUMERAL FIVE
+<Multi_key> <numbersign> <6> <m> : "𝋦" U1D2E6    # MAYAN NUMERAL SIX
+<Multi_key> <numbersign> <7> <m> : "𝋧" U1D2E7    # MAYAN NUMERAL SEVEN
+<Multi_key> <numbersign> <8> <m> : "𝋨" U1D2E8    # MAYAN NUMERAL EIGHT
+<Multi_key> <numbersign> <9> <m> : "𝋩" U1D2E9    # MAYAN NUMERAL NINE
+<Multi_key> <numbersign> <1> <0> <m> : "𝋪" U1D2EA    # MAYAN NUMERAL TEN
+<Multi_key> <numbersign> <1> <1> <m> : "𝋫" U1D2EB    # MAYAN NUMERAL ELEVEN
+<Multi_key> <numbersign> <1> <2> <m> : "𝋬" U1D2EC    # MAYAN NUMERAL TWELVE
+<Multi_key> <numbersign> <1> <3> <m> : "𝋭" U1D2ED    # MAYAN NUMERAL THIRTEEN
+<Multi_key> <numbersign> <1> <4> <m> : "𝋮" U1D2EE    # MAYAN NUMERAL FOURTEEN
+<Multi_key> <numbersign> <1> <5> <m> : "𝋯" U1D2EF    # MAYAN NUMERAL FIFTEEN
+<Multi_key> <numbersign> <1> <6> <m> : "𝋰" U1D2F0    # MAYAN NUMERAL SIXTEEN
+<Multi_key> <numbersign> <1> <7> <m> : "𝋱" U1D2F1    # MAYAN NUMERAL SEVENTEEN
+<Multi_key> <numbersign> <1> <8> <m> : "𝋲" U1D2F2    # MAYAN NUMERAL EIGHTEEN
+<Multi_key> <numbersign> <1> <9> <m> : "𝋳" U1D2F3    # MAYAN NUMERAL NINETEEN
+
+# (r/R) Roman numerals (numeric notation)
 
 <Multi_key> <numbersign> <1> <R> : "Ⅰ" U2160    # ROMAN NUMERAL ONE
 <Multi_key> <numbersign> <2> <R> : "Ⅱ" U2161    # ROMAN NUMERAL TWO
@@ -5065,7 +5126,7 @@ include "%L"
 <Multi_key> <numbersign> <5> <0> <0> <r> : "ⅾ" U217E    # SMALL ROMAN NUMERAL FIVE HUNDRED
 <Multi_key> <numbersign> <1> <0> <0> <0> <r> : "ⅿ" U217F    # SMALL ROMAN NUMERAL ONE THOUSAND
 
-# Roman numerals (visual notation)
+# (r) Roman numerals (visual notation)
 
 <Multi_key> <numbersign> <I> <r> : "Ⅰ" U2160    # ROMAN NUMERAL ONE
 <Multi_key> <numbersign> <I> <I> <r> : "Ⅱ" U2161    # ROMAN NUMERAL TWO
@@ -5108,6 +5169,19 @@ include "%L"
 <Multi_key> <numbersign> <c> <r> : "ⅽ" U217D    # SMALL ROMAN NUMERAL ONE HUNDRED
 <Multi_key> <numbersign> <d> <r> : "ⅾ" U217E    # SMALL ROMAN NUMERAL FIVE HUNDRED
 <Multi_key> <numbersign> <m> <r> : "ⅿ" U217F    # SMALL ROMAN NUMERAL ONE THOUSAND
+
+# (s) Seven-segment display
+
+<Multi_key> <numbersign> <0> <s> : "🯰" U1FBF0    # SEGMENTED DIGIT ZERO
+<Multi_key> <numbersign> <1> <s> : "🯱" U1FBF1    # SEGMENTED DIGIT ONE
+<Multi_key> <numbersign> <2> <s> : "🯲" U1FBF2    # SEGMENTED DIGIT TWO
+<Multi_key> <numbersign> <3> <s> : "🯳" U1FBF3    # SEGMENTED DIGIT THREE
+<Multi_key> <numbersign> <4> <s> : "🯴" U1FBF4    # SEGMENTED DIGIT FOUR
+<Multi_key> <numbersign> <5> <s> : "🯵" U1FBF5    # SEGMENTED DIGIT FIVE
+<Multi_key> <numbersign> <6> <s> : "🯶" U1FBF6    # SEGMENTED DIGIT SIX
+<Multi_key> <numbersign> <7> <s> : "🯷" U1FBF7    # SEGMENTED DIGIT SEVEN
+<Multi_key> <numbersign> <8> <s> : "🯸" U1FBF8    # SEGMENTED DIGIT EIGHT
+<Multi_key> <numbersign> <9> <s> : "🯹" U1FBF9    # SEGMENTED DIGIT NINE
 
 #########################################
 # Astrological and astronomical symbols #
