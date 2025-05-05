@@ -3469,6 +3469,7 @@ include "%L"
 <Multi_key> <c> <a> <m> <p>         : "🏕️"  U1F3D5 UFE0F  # CAMPING EMOJI (conflicts with ǎ, use va)
 <Multi_key> <c> <l> <o> <u> <d>     : "☁️"  U2601 UFE0F   # CLOUD EMOJI (conflicts with ľ, use <l)
 <Multi_key> <c> <o> <m> <e> <t>     : "☄️"  U2604 UFE0F   # COMET EMOJI (conflicts with ǒ, use vo) (use *CO for text ☄)
+<Multi_key> <c> <y> <c> <l> <o> <n> : "🌀"  U1F300        # CYCLONE
 <Multi_key> <d> <e> <s> <e> <r> <t> : "🏜️"  U1F3DC UFE0F  # DESERT EMOJI
 <Multi_key> <d> <r> <o> <p>         : "💧"  U1F4A7        # DROPLET
 <Multi_key> <e> <t> <n> <a>         : "🌋"  U1F30B        # VOLCANO (ETNA)
@@ -3504,8 +3505,9 @@ include "%L"
 <Multi_key> <r> <o> <s> <e>         : "🌹"  U1F339        # ROSE
 <Multi_key> <s> <a> <t> <u> <r> <n> : "🪐"  U1FA90        # RINGED PLANET (SATURN)
 <Multi_key> <s> <e> <e> <d>         : "🌱"  U1F331        # SEEDLING
+<Multi_key> <s> <f> <l> <a> <k> <e> : "❄️"  U2744 UFE0F   # SNOWFLAKE EMOJI
 <Multi_key> <s> <m> <a> <n>         : "☃️"  U2603 UFE0F   # SNOWMAN EMOJI (conflicts with ℠, use SM)
-<Multi_key> <s> <n> <o> <w>         : "❄️"  U2744 UFE0F   # SNOWFLAKE EMOJI
+<Multi_key> <s> <n> <o> <w>         : "🌨️"  U1F328 UFE0F  # CLOUD WITH SNOW EMOJI
 <Multi_key> <s> <p> <r> <i> <n> <g> : "🌸"  U1F338        # CHERRY BLOSSOM (SPRING)
 <Multi_key> <s> <r> <o> <c> <k>     : "☘️"  U2618 UFE0F   # SHAMROCK EMOJI
 <Multi_key> <s> <t> <o> <n> <e>     : "🪨"  U1FAA8        # ROCK (STONE)
@@ -3515,11 +3517,13 @@ include "%L"
 <Multi_key> <s> <u> <n> <B> <parenright> : "😎"  U1F60E   # SMILING FACE WITH SUNGLASSES
 <Multi_key> <s> <u> <n> <asciicircum> : "🌅"  U1F305      # SUNRISE
 <Multi_key> <s> <u> <n> <v>         : "🌇"  U1F307        # SUNSET OVER BUILDINGS
+<Multi_key> <s> <u> <n> <n> <y>     : "🌤️"  U1F324 UFE0F  # WHITE SUN WITH SMALL CLOUD EMOJI (SUNNY)
 <Multi_key> <s> <u> <n> <c> <l>     : "⛅"  U26C5         # SUN BEHIND CLOUD
 <Multi_key> <s> <u> <n> <f> <l>     : "🌻"  U1F33B        # SUNFLOWER
 <Multi_key> <s> <u> <n> <g> <l>     : "🕶️"  U1F576 UFE0F  # DARK SUNGLASSES EMOJI (use cool for 😎)
-<Multi_key> <s> <u> <n> <r> <c>     : "🌦️" U1F326 UFE0F   # WHITE SUN BEHIND CLOUD WITH RAIN EMOJI
+<Multi_key> <s> <u> <n> <r> <c>     : "🌦️"  U1F326 UFE0F  # WHITE SUN BEHIND CLOUD WITH RAIN EMOJI
 <Multi_key> <t> <o> <k> <y> <o>     : "🗼"  U1F5FC        # TOKYO TOWER
+<Multi_key> <t> <o> <r> <n> <a> <d> : "🌪️"  U1F32A UFE0F  # CLOUD WITH TORNADO EMOJI
 <Multi_key> <t> <r> <e> <e>         : "🌳"  U1F333        # DECIDUOUS TREE
 <Multi_key> <t> <u> <l> <i> <p>     : "🌷"  U1F337        # TULIP
 <Multi_key> <w> <a> <v> <e>         : "🌊"  U1F30A        # WATER WAVE (use hello or bye for 👋)
@@ -3809,8 +3813,10 @@ include "%L"
 <Multi_key> <l> <a> <p> <t> <o> <p> : "💻"  U1F4BB        # PERSONAL COMPUTER (LAPTOP)
 <Multi_key> <l> <o> <o> <t>         : "💰"  U1F4B0        # MONEY BAG (LOOT)
 <Multi_key> <m> <e> <m> <o>         : "📝"  U1F4DD        # MEMO
+<Multi_key> <n> <i> <b>             : "✒️"  U2712 UFE0F   # BLACK NIB EMOJI
 <Multi_key> <p> <a> <d>             : "🗒️"  U1F5D2 UFE0F  # SPIRAL NOTE PAD EMOJI
 <Multi_key> <p> <a> <g> <e> <r>     : "📟"  U1F4DF        # PAGER
+<Multi_key> <p> <e> <n> <Return>    : "🖊️"  U1F58A UFE0F  # LOWER LEFT BALLPOINT PEN EMOJI
 <Multi_key> <p> <e> <n> <c> <i> <l> : "✏️"  U270F UFE0F   # PENCIL EMOJI
 <Multi_key> <p> <o> <u> <n> <d>     : "💷"  U1F4B7        # BANKNOTE WITH POUND SIGN (use L= for ₤)
 <Multi_key> <r> <u> <l> <e> <r>     : "📏"  U1F4CF        # STRAIGHT RULER
@@ -4343,6 +4349,7 @@ include "%L"
 
 # Other shapes: [TAB] + 2 letter shape + code (note this shares a namespace with arrows)
 
+<Multi_key> <Tab> <slash> <backslash> <R> : "🔺" U1F53A   # UP-POINTING RED TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <1> : "▲" U25B2    # BLACK UP-POINTING TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <0> : "△" U25B3    # WHITE UP-POINTING TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <Multi_key> <asciicircum> <period> : "◬" U25EC    # WHITE UP-POINTING TRIANGLE WITH DOT
@@ -4352,6 +4359,7 @@ include "%L"
 
 <Multi_key> <Tab> <bar> <greater> <0>   : "▷" U25B7    # WHITE RIGHT-POINTING TRIANGLE
 <Multi_key> <Tab> <bar> <greater> <1>   : "▶" U25B6    # BLACK RIGHT-POINTING TRIANGLE
+<Multi_key> <Tab> <backslash> <slash> <R> : "🔻" U1F53B   # DOWN-POINTING RED TRIANGLE
 <Multi_key> <Tab> <backslash> <slash> <0> : "▽" U25BD    # WHITE DOWN-POINTING TRIANGLE
 <Multi_key> <Tab> <backslash> <slash> <1> : "▼" U25BC    # BLACK DOWN-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <0>      : "◁" U25C1    # WHITE LEFT-POINTING TRIANGLE
@@ -4367,6 +4375,8 @@ include "%L"
 <Multi_key> <Tab> <slash> <slash> <0>   : "▱" U25B1    # WHITE PARALLELOGRAM
 <Multi_key> <Tab> <slash> <slash> <1>   : "▰" U25B0    # BLACK PARALLELOGRAM
 
+<Multi_key> <Tab> <less> <greater> <B>           : "🔷" U1F537   # LARGE BLUE DIAMOND
+<Multi_key> <Tab> <less> <greater> <O>           : "🔶" U1F536   # LARGE ORANGE DIAMOND
 <Multi_key> <Tab> <less> <greater> <0>           : "◇" U25C7    # WHITE DIAMOND
 <Multi_key> <Tab> <less> <greater> <1>           : "◆" U25C6    # BLACK DIAMOND
 <Multi_key> <Tab> <less> <greater> <less>        : "⬖" U2B16    # DIAMOND WITH LEFT HALF BLACK
