@@ -3496,7 +3496,7 @@ include "%L"
 <Multi_key> <m> <r> <o> <o> <m>     : "🍄"  U1F344        # MUSHROOM
 <Multi_key> <o> <n> <s> <e> <n>     : "♨️"  U2668 UFE0F   # HOT SPRINGS EMOJI (ONSEN)
 <Multi_key> <p> <a> <l> <m>         : "🌴"  U1F334        # PALM TREE
-<Multi_key> <p> <a> <r> <k>         : "🏞️"  U1F3DE UFE0F  # NATIONAL PARK EMOJI
+<Multi_key> <p> <a> <r> <k>         : "🏞️"  U1F3DE UFE0F  # NATIONAL PARK EMOJI (use @[P] for 🅿️)
 <Multi_key> <p> <e> <a> <k>         : "🏔️"  U1F3D4 UFE0F  # SNOW CAPPED MOUNTAIN EMOJI (PEAK)
 <Multi_key> <p> <l> <a> <n> <t>     : "🪴"  U1FAB4        # POTTED PLANT
 <Multi_key> <p> <o> <s> <y>         : "💐"  U1F490        # BOUQUET (POSY)
@@ -4220,6 +4220,39 @@ include "%L"
 <Multi_key> <at> <parenleft> <r> <parenright> : "®️" U00AE UFE0F    # REGISTERED SIGN EMOJI
 <Multi_key> <at> <dollar>            : "💲" U1F4B2        # HEAVY DOLLAR SIGN
 <Multi_key> <at> <numbersign>        : "⌘" U2318          # PLACE OF INTEREST SIGN (COMMAND KEY)
+
+# Alphanumerics
+<Multi_key> <at> <bracketleft> <bracketright> <Return>     : "⃣" U20E3   # COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <numbersign> <bracketright> : "#️⃣" U0023 UFE0F U20E3   # NUMBER SIGN EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <asterisk> <bracketright>   : "*️⃣" U002A UFE0F U20E3   # ASTERISK EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <0> <bracketright> : "0️⃣" U0030 UFE0F U20E3   # DIGIT ZERO EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <1> <bracketright> : "1️⃣" U0031 UFE0F U20E3   # DIGIT ONE EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <2> <bracketright> : "2️⃣" U0032 UFE0F U20E3   # DIGIT TWO EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <3> <bracketright> : "3️⃣" U0033 UFE0F U20E3   # DIGIT THREE EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <4> <bracketright> : "4️⃣" U0034 UFE0F U20E3   # DIGIT FOUR EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <5> <bracketright> : "5️⃣" U0035 UFE0F U20E3   # DIGIT FIVE EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <6> <bracketright> : "6️⃣" U0036 UFE0F U20E3   # DIGIT SIX EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <7> <bracketright> : "7️⃣" U0037 UFE0F U20E3   # DIGIT SEVEN EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <8> <bracketright> : "8️⃣" U0038 UFE0F U20E3   # DIGIT EIGHT EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <9> <bracketright> : "9️⃣" U0039 UFE0F U20E3   # DIGIT NINE EMOJI COMBINING ENCLOSING KEYCAP
+<Multi_key> <at> <bracketleft> <i> <bracketright> : "ℹ️" U2139 UFE0F         # INFORMATION SOURCE EMOJI
+<Multi_key> <at> <bracketleft> <v> <bracketright> : "☑️" U2611 UFE0F         # BALLOT BOX WITH CHECK EMOJI
+
+<Multi_key> <at> <bracketleft> <A> <bracketright> : "🅰️" U1F170 UFE0F        # NEGATIVE SQUARED LATIN CAPITAL LETTER A EMOJI
+<Multi_key> <at> <bracketleft> <B> <bracketright> : "🅱️" U1F171 UFE0F        # NEGATIVE SQUARED LATIN CAPITAL LETTER B EMOJI
+<Multi_key> <at> <bracketleft> <O> <bracketright> : "🅾️" U1F17E UFE0F        # NEGATIVE SQUARED LATIN CAPITAL LETTER O EMOJI
+<Multi_key> <at> <bracketleft> <P> <bracketright> : "🅿️" U1F17F UFE0F        # NEGATIVE SQUARED LATIN CAPITAL LETTER P EMOJI
+<Multi_key> <at> <bracketleft> <A> <B> <bracketright>          : "🆎" U1F18E   # NEGATIVE SQUARED AB
+<Multi_key> <at> <bracketleft> <C> <L> <bracketright>          : "🆑" U1F191   # SQUARED CL
+<Multi_key> <at> <bracketleft> <C> <O> <O> <L> <bracketright>  : "🆒" U1F192   # SQUARED COOL
+<Multi_key> <at> <bracketleft> <F> <R> <E> <E> <bracketright>  : "🆓" U1F193   # SQUARED FREE
+<Multi_key> <at> <bracketleft> <I> <D> <bracketright>          : "🆔" U1F194   # SQUARED ID
+<Multi_key> <at> <bracketleft> <N> <E> <W> <bracketright>      : "🆕" U1F195   # SQUARED NEW
+<Multi_key> <at> <bracketleft> <N> <G> <bracketright>          : "🆖" U1F196   # SQUARED NG
+<Multi_key> <at> <bracketleft> <O> <K> <bracketright>          : "🆗" U1F197   # SQUARED OK
+<Multi_key> <at> <bracketleft> <S> <O> <S> <bracketright>      : "🆘" U1F198   # SQUARED SOS
+<Multi_key> <at> <bracketleft> <U> <P> <exclam> <bracketright> : "🆙" U1F199   # SQUARED UP WITH EXCLAMATION MARK
+<Multi_key> <at> <bracketleft> <V> <S> <bracketright>          : "🆚" U1F19A   # SQUARED VS
 
 ####################
 # Geometric shapes #
