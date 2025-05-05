@@ -98,11 +98,12 @@ class Definition:
 
 
 def get_definitions(
-    file: Path,
+    file: Path | None = None,
     ignore_includes: bool = False,
     modifier_key: str | None = COMPOSE_KEY,
     ignore_errors: bool = True,
 ) -> Iterable[Definition]:
+    file = file or get_xcompose_path()
     with file.open() as f:
         for i, line in enumerate(f, 1):
             if re.match(r"^\s*(#.*)?$", line):
