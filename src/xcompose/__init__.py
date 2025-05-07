@@ -9,6 +9,7 @@ from typing import Literal, Sequence
 
 LOCALE_DIR = Path("/usr/share/X11/locale/")
 KEYSYM_DEF = Path("/usr/include/X11/keysymdef.h")
+CONFLICT_MARKERS = ["conflict", "override"]
 
 CHAR_TO_KEYWORD: dict[str, str] = {}
 KEYWORD_TO_CHAR: dict[str, str] = {}
@@ -276,24 +277,32 @@ def validate(args: argparse.Namespace) -> None:
                         f"include the string EMOJI"
                     )
 
+            conflict = False
             for k, v in d.items():
                 n = min(len(k), len(defn.keys))
-                if (
-                    k[:n] == defn.keys[:n]
-                    and v != defn.value
-                    and not any(
+                if k[:n] == defn.keys[:n] and v != defn.value:
+                    conflict = True
+                    if not any(
                         defn.comment is not None and x in defn.comment
-                        for x in ("conflict", "override")
-                    )
-                ):
-                    print(
-                        f"[{file}#{defn.line_no}] Compose sequence "
-                        f"{' + '.join(defn.keys)} for {defn.value!r} "
-                        f"conflicts with {' + '.join(k)} for {v!r}\n"
-                        "    to ignore this, include the string "
-                        "'conflict' or 'override' in the comment"
-                    )
-                    break
+                        for x in CONFLICT_MARKERS
+                    ):
+                        print(
+                            f"[{file}#{defn.line_no}] Compose sequence "
+                            f"{' + '.join(defn.keys)} for {defn.value!r} "
+                            f"conflicts with {' + '.join(k)} for {v!r}\n"
+                            "    to ignore this, include the string "
+                            "'conflict' or 'override' in the comment"
+                        )
+                        break
+
+            if not conflict and any(
+                defn.comment is not None and x in defn.comment for x in CONFLICT_MARKERS
+            ):
+                print(
+                    f"[{file}#{defn.line_no}] Compose sequence "
+                    f"{' + '.join(defn.keys)} for {defn.value!r} "
+                    f"has superfluous conflict/override comment marker"
+                )
 
         d[defn.keys] = defn.value
 
