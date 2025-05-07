@@ -131,14 +131,14 @@ include "%L"
 <Multi_key> <c> <less> <Return>      : "͗"  U0357   # COMBINING RIGHT HALF RING ABOVE (conflicts with č, use vc)
 <Multi_key> <parenright> <Return>    : "͝"  U035D   # COMBINING DOUBLE BREVE  
 <Multi_key> <parenleft> <Return>     : "͡"  U0361   # COMBINING DOUBLE INVERTED BREVE
-<Multi_key> <asciicircum> <underscore> <apostrophe> <Return> : "᷄" U1DC4   # COMBINING MACRON-ACUTE
-<Multi_key> <grave> <underscore> <Return>               : "᷅" U1DC5   # COMBINING GRAVE-MACRON
-<Multi_key> <asciicircum> <underscore> <grave> <Return> : "᷆" U1DC6   # COMBINING MACRON-GRAVE
-<Multi_key> <apostrophe> <underscore> <Return>          : "᷇" U1DC7   # COMBINING ACUTE-MACRON
+<Multi_key> <underscore> <apostrophe> <space> <Return>  : "᷄" U1DC4   # COMBINING MACRON-ACUTE (overrides APL ⍘)
+<Multi_key> <grave> <underscore> <space> <Return>       : "᷅" U1DC5   # COMBINING GRAVE-MACRON
+<Multi_key> <underscore> <grave> <space> <Return>       : "᷆" U1DC6   # COMBINING MACRON-GRAVE
+<Multi_key> <apostrophe> <underscore> <space> <Return>  : "᷇" U1DC7   # COMBINING ACUTE-MACRON
 <Multi_key> <grave> <apostrophe> <grave> <Return>       : "᷈" U1DC8   # COMBINING GRAVE-ACUTE-GRAVE
 <Multi_key> <apostrophe> <grave> <apostrophe> <Return>  : "᷉" U1DC9   # COMBINING ACUTE-GRAVE-ACUTE
-<Multi_key> <u> <underscore> <Return>                   : "᷋" U1DCB   # COMBINING BREVE-MACRON (conflicts with ū, use -u or u-)
-<Multi_key> <underscore> <u> <Return>                   : "᷌" U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
+<Multi_key> <u> <underscore> <space> <Return>           : "᷋" U1DCB   # COMBINING BREVE-MACRON (conflicts with ū, use -u or u-)
+<Multi_key> <underscore> <u> <space> <Return>           : "᷌" U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
 
 <Multi_key> <underscore> <grave> <Return>            : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
 <Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (overrides APL ⍘)
@@ -353,13 +353,13 @@ include "%L"
 <Multi_key> <l> <z>                 : "ɮ"  U026E   # LATIN SMALL LETTER LEZH
 <Multi_key> <o> <E>                 : "ɶ"  U0276   # LATIN LETTER SMALL CAPITAL OE
 
-<Multi_key> <c> <c>                 : "˓"  U02D3   # MODIFIER LETTER CENTRED LEFT HALF RING (conflicts with č, use vc)
-<Multi_key> <c> <less> <c>          : "˒"  U02D2   # MODIFIER LETTER CENTRED RIGHT HALF RING (conflicts with č, use vc)
 <Multi_key> <g> <g>                 : "ˠ"  U02E0   # MODIFIER LETTER SMALL GAMMA
 <Multi_key> <h> <h>                 : "ʰ"  U02B0   # MODIFIER LETTER SMALL H
 <Multi_key> <j> <j>                 : "ʲ"  U02B2   # MODIFIER LETTER SMALL J
 <Multi_key> <n> <n>                 : "ⁿ"  U207F   # SUPERSCRIPT LATIN SMALL LETTER N
 <Multi_key> <w> <w>                 : "ʷ"  U02B7   # MODIFIER LETTER SMALL W
+<Multi_key> <C> <c>                 : "˓"  U02D3   # MODIFIER LETTER CENTRED LEFT HALF RING
+<Multi_key> <C> <less> <c>          : "˒"  U02D2   # MODIFIER LETTER CENTRED RIGHT HALF RING (conflicts with Č, use vC)
 <Multi_key> <T> <T>                 : "˕"  U02D5   # MODIFIER LETTER DOWN TACK
 <Multi_key> <T> <v> <T>             : "˔"  U02D4   # MODIFIER LETTER UP TACK
 <Multi_key> <T> <less> <T>          : "꭪"  UAB6A   # MODIFIER LETTER LEFT TACK (conflicts with Ť, use vT)
@@ -1504,44 +1504,44 @@ include "%L"
 # (a) Arabic #
 ##############
 
-<Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF (conflicts with å, use oa)
-<Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH (conflicts with å, use oa)
-<Multi_key> <a> <c> <t> : "ت" U062A    # ARABIC LETTER TEH (conflicts with å, use oa)
-<Multi_key> <a> <c> <T> : "ث" U062B    # ARABIC LETTER THEH (conflicts with å, use oa)
-<Multi_key> <a> <c> <j> : "ج" U062C    # ARABIC LETTER JEEM (conflicts with å, use oa)
-<Multi_key> <a> <c> <H> : "ح" U062D    # ARABIC LETTER HAH (conflicts with å, use oa)
-<Multi_key> <a> <x> <h> : "ح" U062D    # ARABIC LETTER HAH (conflicts with å, use oa)
-<Multi_key> <a> <c> <K> : "خ" U062E    # ARABIC LETTER KHAH (conflicts with å, use oa)
-<Multi_key> <a> <c> <d> : "د" U062F    # ARABIC LETTER DAL (conflicts with å, use oa)
-<Multi_key> <a> <c> <D> : "ذ" U0630    # ARABIC LETTER THAL (conflicts with å, use oa)
-<Multi_key> <a> <c> <r> : "ر" U0631    # ARABIC LETTER REH (conflicts with å, use oa)
-<Multi_key> <a> <c> <z> : "ز" U0632    # ARABIC LETTER ZAIN (conflicts with å, use oa)
-<Multi_key> <a> <c> <s> : "س" U0633    # ARABIC LETTER SEEN (conflicts with å, use oa)
-<Multi_key> <a> <c> <S> : "ش" U0634    # ARABIC LETTER SHEEN (conflicts with å, use oa)
-<Multi_key> <a> <x> <s> : "ص" U0635    # ARABIC LETTER SAD (conflicts with å, use oa)
-<Multi_key> <a> <x> <d> : "ض" U0636    # ARABIC LETTER DAD (conflicts with å, use oa)
-<Multi_key> <a> <x> <t> : "ط" U0637    # ARABIC LETTER TAH (conflicts with å, use oa)
-<Multi_key> <a> <x> <z> : "ظ" U0638    # ARABIC LETTER ZAH (conflicts with å, use oa)
-<Multi_key> <a> <c> <3> : "ع" U0639    # ARABIC LETTER AIN (conflicts with å, use oa)
-<Multi_key> <a> <c> <G> : "غ" U063A    # ARABIC LETTER GHAIN (conflicts with å, use oa)
-<Multi_key> <a> <c> <f> : "ف" U0641    # ARABIC LETTER FEH (conflicts with å, use oa)
-<Multi_key> <a> <c> <q> : "ق" U0642    # ARABIC LETTER QAF (conflicts with å, use oa)
-<Multi_key> <a> <c> <k> : "ك" U0643    # ARABIC LETTER KAF (conflicts with å, use oa)
-<Multi_key> <a> <c> <l> : "ل" U0644    # ARABIC LETTER LAM (conflicts with å, use oa)
-<Multi_key> <a> <c> <m> : "م" U0645    # ARABIC LETTER MEEM (conflicts with å, use oa)
-<Multi_key> <a> <c> <n> : "ن" U0646    # ARABIC LETTER NOON (conflicts with å, use oa)
-<Multi_key> <a> <c> <h> : "ه" U0647    # ARABIC LETTER HEH (conflicts with å, use oa)
-<Multi_key> <a> <c> <w> : "و" U0648    # ARABIC LETTER WAW (conflicts with å, use oa)
-<Multi_key> <a> <c> <u> : "و" U0648    # ARABIC LETTER WAW (conflicts with å, use oa)
-<Multi_key> <a> <c> <y> : "ي" U064A    # ARABIC LETTER YEH (conflicts with å, use oa)
-<Multi_key> <a> <c> <i> : "ي" U064A    # ARABIC LETTER YEH (conflicts with å, use oa)
-<Multi_key> <a> <c> <apostrophe> : "ء" U0621    # ARABIC LETTER HAMZA (conflicts with å, use oa)
-<Multi_key> <a> <c> <2> : "ء" U0621    # ARABIC LETTER HAMZA (conflicts with å, use oa)
+<Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
+<Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
+<Multi_key> <a> <c> <t> : "ت" U062A    # ARABIC LETTER TEH
+<Multi_key> <a> <c> <T> : "ث" U062B    # ARABIC LETTER THEH
+<Multi_key> <a> <c> <j> : "ج" U062C    # ARABIC LETTER JEEM
+<Multi_key> <a> <c> <H> : "ح" U062D    # ARABIC LETTER HAH
+<Multi_key> <a> <x> <h> : "ح" U062D    # ARABIC LETTER HAH
+<Multi_key> <a> <c> <K> : "خ" U062E    # ARABIC LETTER KHAH
+<Multi_key> <a> <c> <d> : "د" U062F    # ARABIC LETTER DAL
+<Multi_key> <a> <c> <D> : "ذ" U0630    # ARABIC LETTER THAL
+<Multi_key> <a> <c> <r> : "ر" U0631    # ARABIC LETTER REH
+<Multi_key> <a> <c> <z> : "ز" U0632    # ARABIC LETTER ZAIN
+<Multi_key> <a> <c> <s> : "س" U0633    # ARABIC LETTER SEEN
+<Multi_key> <a> <c> <S> : "ش" U0634    # ARABIC LETTER SHEEN
+<Multi_key> <a> <x> <s> : "ص" U0635    # ARABIC LETTER SAD
+<Multi_key> <a> <x> <d> : "ض" U0636    # ARABIC LETTER DAD
+<Multi_key> <a> <x> <t> : "ط" U0637    # ARABIC LETTER TAH
+<Multi_key> <a> <x> <z> : "ظ" U0638    # ARABIC LETTER ZAH
+<Multi_key> <a> <c> <3> : "ع" U0639    # ARABIC LETTER AIN
+<Multi_key> <a> <c> <G> : "غ" U063A    # ARABIC LETTER GHAIN
+<Multi_key> <a> <c> <f> : "ف" U0641    # ARABIC LETTER FEH
+<Multi_key> <a> <c> <q> : "ق" U0642    # ARABIC LETTER QAF
+<Multi_key> <a> <c> <k> : "ك" U0643    # ARABIC LETTER KAF
+<Multi_key> <a> <c> <l> : "ل" U0644    # ARABIC LETTER LAM
+<Multi_key> <a> <c> <m> : "م" U0645    # ARABIC LETTER MEEM
+<Multi_key> <a> <c> <n> : "ن" U0646    # ARABIC LETTER NOON
+<Multi_key> <a> <c> <h> : "ه" U0647    # ARABIC LETTER HEH
+<Multi_key> <a> <c> <w> : "و" U0648    # ARABIC LETTER WAW
+<Multi_key> <a> <c> <u> : "و" U0648    # ARABIC LETTER WAW
+<Multi_key> <a> <c> <y> : "ي" U064A    # ARABIC LETTER YEH
+<Multi_key> <a> <c> <i> : "ي" U064A    # ARABIC LETTER YEH
+<Multi_key> <a> <c> <apostrophe> : "ء" U0621    # ARABIC LETTER HAMZA
+<Multi_key> <a> <c> <2> : "ء" U0621    # ARABIC LETTER HAMZA
 # Persian
-<Multi_key> <a> <c> <g> : "گ" U06AF    # ARABIC LETTER GAF (conflicts with å, use oa)
-<Multi_key> <a> <c> <J> : "ژ" U0698    # ARABIC LETTER JEH (conflicts with å, use oa)
-<Multi_key> <a> <c> <C> : "چ" U0686    # ARABIC LETTER TCHEH (conflicts with å, use oa)
-<Multi_key> <a> <c> <p> : "پ" U067E    # ARABIC LETTER PEH (conflicts with å, use oa)
+<Multi_key> <a> <c> <g> : "گ" U06AF    # ARABIC LETTER GAF
+<Multi_key> <a> <c> <J> : "ژ" U0698    # ARABIC LETTER JEH
+<Multi_key> <a> <c> <C> : "چ" U0686    # ARABIC LETTER TCHEH
+<Multi_key> <a> <c> <p> : "پ" U067E    # ARABIC LETTER PEH
 
 <Multi_key> <a> <x> <a> <asciitilde> : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
 <Multi_key> <a> <x> <a> <2> : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
@@ -1588,33 +1588,33 @@ include "%L"
 # (b) Unified English Braille #
 ###############################
 
-<Multi_key> <b> <c> <a> : "⠁" U2801    # BRAILLE PATTERN DOTS-1 (A) (conflicts with ă, use va)
-<Multi_key> <b> <c> <b> : "⠃" U2803    # BRAILLE PATTERN DOTS-12 (B) (conflict)
-<Multi_key> <b> <c> <c> : "⠉" U2809    # BRAILLE PATTERN DOTS-14 (C) (conflict)
-<Multi_key> <b> <c> <d> : "⠙" U2819    # BRAILLE PATTERN DOTS-145 (D) (conflict)
-<Multi_key> <b> <c> <e> : "⠑" U2811    # BRAILLE PATTERN DOTS-15 (E) (conflict)
-<Multi_key> <b> <c> <f> : "⠋" U280B    # BRAILLE PATTERN DOTS-124 (F) (conflict)
-<Multi_key> <b> <c> <g> : "⠛" U281B    # BRAILLE PATTERN DOTS-1245 (G) (conflict)
-<Multi_key> <b> <c> <h> : "⠓" U2813    # BRAILLE PATTERN DOTS-125 (H) (conflict)
-<Multi_key> <b> <c> <i> : "⠊" U280A    # BRAILLE PATTERN DOTS-24 (I) (conflict)
-<Multi_key> <b> <c> <j> : "⠚" U281A    # BRAILLE PATTERN DOTS-245 (J) (conflict)
-<Multi_key> <b> <c> <k> : "⠅" U2805    # BRAILLE PATTERN DOTS-13 (K) (conflict)
-<Multi_key> <b> <c> <l> : "⠇" U2807    # BRAILLE PATTERN DOTS-123 (L) (conflict)
-<Multi_key> <b> <c> <m> : "⠍" U280D    # BRAILLE PATTERN DOTS-134 (M) (conflict)
-<Multi_key> <b> <c> <n> : "⠝" U281D    # BRAILLE PATTERN DOTS-1345 (N) (conflict)
-<Multi_key> <b> <c> <o> : "⠕" U2815    # BRAILLE PATTERN DOTS-135 (O) (conflict)
-<Multi_key> <b> <c> <p> : "⠏" U280F    # BRAILLE PATTERN DOTS-1234 (P) (conflict)
-<Multi_key> <b> <c> <q> : "⠟" U281F    # BRAILLE PATTERN DOTS-12345 (Q) (conflict)
-<Multi_key> <b> <c> <r> : "⠗" U2817    # BRAILLE PATTERN DOTS-1235 (R) (conflict)
-<Multi_key> <b> <c> <s> : "⠎" U280E    # BRAILLE PATTERN DOTS-234 (S) (conflict)
-<Multi_key> <b> <c> <t> : "⠞" U281E    # BRAILLE PATTERN DOTS-2345 (T) (conflict)
-<Multi_key> <b> <c> <u> : "⠥" U2825    # BRAILLE PATTERN DOTS-136 (U) (conflict)
-<Multi_key> <b> <c> <v> : "⠧" U2827    # BRAILLE PATTERN DOTS-1236 (V) (conflict)
-<Multi_key> <b> <c> <w> : "⠺" U283A    # BRAILLE PATTERN DOTS-2456 (W) (conflict)
-<Multi_key> <b> <c> <x> : "⠭" U282D    # BRAILLE PATTERN DOTS-1346 (X) (conflict)
-<Multi_key> <b> <c> <y> : "⠽" U283D    # BRAILLE PATTERN DOTS-13456 (Y) (conflict)
-<Multi_key> <b> <c> <z> : "⠵" U2835    # BRAILLE PATTERN DOTS-1356 (Z) (conflict)
-<Multi_key> <b> <c> <apostrophe> : "⠈" U2808   # BRAILLE PATTERN DOTS-4 (ACCENT MARK) (conflict)
+<Multi_key> <b> <c> <a> : "⠁" U2801    # BRAILLE PATTERN DOTS-1 (A)
+<Multi_key> <b> <c> <b> : "⠃" U2803    # BRAILLE PATTERN DOTS-12 (B)
+<Multi_key> <b> <c> <c> : "⠉" U2809    # BRAILLE PATTERN DOTS-14 (C)
+<Multi_key> <b> <c> <d> : "⠙" U2819    # BRAILLE PATTERN DOTS-145 (D)
+<Multi_key> <b> <c> <e> : "⠑" U2811    # BRAILLE PATTERN DOTS-15 (E)
+<Multi_key> <b> <c> <f> : "⠋" U280B    # BRAILLE PATTERN DOTS-124 (F)
+<Multi_key> <b> <c> <g> : "⠛" U281B    # BRAILLE PATTERN DOTS-1245 (G)
+<Multi_key> <b> <c> <h> : "⠓" U2813    # BRAILLE PATTERN DOTS-125 (H)
+<Multi_key> <b> <c> <i> : "⠊" U280A    # BRAILLE PATTERN DOTS-24 (I)
+<Multi_key> <b> <c> <j> : "⠚" U281A    # BRAILLE PATTERN DOTS-245 (J)
+<Multi_key> <b> <c> <k> : "⠅" U2805    # BRAILLE PATTERN DOTS-13 (K)
+<Multi_key> <b> <c> <l> : "⠇" U2807    # BRAILLE PATTERN DOTS-123 (L)
+<Multi_key> <b> <c> <m> : "⠍" U280D    # BRAILLE PATTERN DOTS-134 (M)
+<Multi_key> <b> <c> <n> : "⠝" U281D    # BRAILLE PATTERN DOTS-1345 (N)
+<Multi_key> <b> <c> <o> : "⠕" U2815    # BRAILLE PATTERN DOTS-135 (O)
+<Multi_key> <b> <c> <p> : "⠏" U280F    # BRAILLE PATTERN DOTS-1234 (P)
+<Multi_key> <b> <c> <q> : "⠟" U281F    # BRAILLE PATTERN DOTS-12345 (Q)
+<Multi_key> <b> <c> <r> : "⠗" U2817    # BRAILLE PATTERN DOTS-1235 (R)
+<Multi_key> <b> <c> <s> : "⠎" U280E    # BRAILLE PATTERN DOTS-234 (S)
+<Multi_key> <b> <c> <t> : "⠞" U281E    # BRAILLE PATTERN DOTS-2345 (T)
+<Multi_key> <b> <c> <u> : "⠥" U2825    # BRAILLE PATTERN DOTS-136 (U)
+<Multi_key> <b> <c> <v> : "⠧" U2827    # BRAILLE PATTERN DOTS-1236 (V)
+<Multi_key> <b> <c> <w> : "⠺" U283A    # BRAILLE PATTERN DOTS-2456 (W)
+<Multi_key> <b> <c> <x> : "⠭" U282D    # BRAILLE PATTERN DOTS-1346 (X)
+<Multi_key> <b> <c> <y> : "⠽" U283D    # BRAILLE PATTERN DOTS-13456 (Y)
+<Multi_key> <b> <c> <z> : "⠵" U2835    # BRAILLE PATTERN DOTS-1356 (Z)
+<Multi_key> <b> <c> <apostrophe> : "⠈" U2808   # BRAILLE PATTERN DOTS-4 (ACCENT MARK)
 
 <Multi_key> <b> <x> <a> <r>          : "⠜" U281C   # BRAILLE PATTERN DOTS-345 (AR)
 <Multi_key> <b> <x> <b> <b>          : "⠆" U2806   # BRAILLE PATTERN DOTS-23 (-BB-)
@@ -1691,6 +1691,362 @@ include "%L"
 <Multi_key> <b> <f> <n>     : "⠼" U283C   # BRAILLE PATTERN DOTS-3456 (NUMBER SIGN) (alternatively, b0#)
 <Multi_key> <b> <f> <l>     : "⠰" U2830   # BRAILLE PATTERN DOTS-56 (LETTER SIGN)
 <Multi_key> <b> <f> <t>     : "⠠⠄" U2820 U2804  # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-3 (TERMINATION SIGN)
+
+########################
+# (c) Cyrillic/Russian #
+########################
+
+<Multi_key> <c> <c> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A (conflicts with č, use vc)
+<Multi_key> <c> <c> <B>          : "Б"  U0411   # CYRILLIC CAPITAL LETTER BE (conflicts)
+<Multi_key> <c> <c> <V>          : "В"  U0412   # CYRILLIC CAPITAL LETTER VE (conflicts)
+<Multi_key> <c> <c> <G>          : "Г"  U0413   # CYRILLIC CAPITAL LETTER GHE (conflicts)
+<Multi_key> <c> <c> <D>          : "Д"  U0414   # CYRILLIC CAPITAL LETTER DE (conflicts)
+<Multi_key> <c> <c> <Y> <E>      : "Е"  U0415   # CYRILLIC CAPITAL LETTER IE (conflicts)
+<Multi_key> <c> <c> <Y> <O>      : "Ё"  U0401   # CYRILLIC CAPITAL LETTER IO (conflicts)
+<Multi_key> <c> <c> <quotedbl> <E> : "Ё"  U0401   # CYRILLIC CAPITAL LETTER IO (conflicts)
+<Multi_key> <c> <x> <Z> <H>      : "Ж"  U0416   # CYRILLIC CAPITAL LETTER ZHE
+<Multi_key> <c> <c> <Z>          : "З"  U0417   # CYRILLIC CAPITAL LETTER ZE (conflicts)
+<Multi_key> <c> <c> <I>          : "И"  U0418   # CYRILLIC CAPITAL LETTER I (conflicts)
+<Multi_key> <c> <c> <J>          : "Й"  U0419   # CYRILLIC CAPITAL LETTER SHORT I (conflicts)
+<Multi_key> <c> <c> <K>          : "К"  U041A   # CYRILLIC CAPITAL LETTER KA (conflicts)
+<Multi_key> <c> <c> <L>          : "Л"  U041B   # CYRILLIC CAPITAL LETTER EL (conflicts)
+<Multi_key> <c> <c> <M>          : "М"  U041C   # CYRILLIC CAPITAL LETTER EM (conflicts)
+<Multi_key> <c> <c> <N>          : "Н"  U041D   # CYRILLIC CAPITAL LETTER EN (conflicts)
+<Multi_key> <c> <c> <O>          : "О"  U041E   # CYRILLIC CAPITAL LETTER O (conflicts)
+<Multi_key> <c> <c> <P>          : "П"  U041F   # CYRILLIC CAPITAL LETTER PE (conflicts)
+<Multi_key> <c> <c> <R>          : "Р"  U0420   # CYRILLIC CAPITAL LETTER ER (conflicts)
+<Multi_key> <c> <c> <S>          : "С"  U0421   # CYRILLIC CAPITAL LETTER ES (conflicts)
+<Multi_key> <c> <c> <T>          : "Т"  U0422   # CYRILLIC CAPITAL LETTER TE (conflicts)
+<Multi_key> <c> <c> <U>          : "У"  U0423   # CYRILLIC CAPITAL LETTER U (conflicts)
+<Multi_key> <c> <c> <F>          : "Ф"  U0424   # CYRILLIC CAPITAL LETTER EF (conflicts)
+<Multi_key> <c> <c> <H>          : "Х"  U0425   # CYRILLIC CAPITAL LETTER HA (conflicts)
+<Multi_key> <c> <c> <C>          : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE (conflicts)
+<Multi_key> <c> <x> <T> <S> <Return> : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE
+<Multi_key> <c> <x> <C> <H>      : "Ч"  U0427   # CYRILLIC CAPITAL LETTER CHE
+<Multi_key> <c> <x> <S> <H>      : "Ш"  U0428   # CYRILLIC CAPITAL LETTER SHA
+<Multi_key> <c> <x> <S> <C> <H>  : "Щ"  U0429   # CYRILLIC CAPITAL LETTER SHCHA
+<Multi_key> <c> <c> <quotedbl> <quotedbl> : "Ъ"  U042A   # CYRILLIC CAPITAL LETTER HARD SIGN (conflicts)
+<Multi_key> <c> <c> <Y> <Return> : "Ы"  U042B   # CYRILLIC CAPITAL LETTER YERU (conflicts)
+<Multi_key> <c> <c> <apostrophe> <apostrophe> : "Ь"  U042C   # CYRILLIC CAPITAL LETTER SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <E>          : "Э"  U042D   # CYRILLIC CAPITAL LETTER E (conflicts)
+<Multi_key> <c> <c> <Y> <U>      : "Ю"  U042E   # CYRILLIC CAPITAL LETTER YU (conflicts)
+<Multi_key> <c> <c> <Y> <A>      : "Я"  U042F   # CYRILLIC CAPITAL LETTER YA (conflicts)
+# Ukrainian
+<Multi_key> <c> <x> <G> <G>      : "Ґ"  U0490   # CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+<Multi_key> <c> <x> <Y> <E>      : "Є"  U0404   # CYRILLIC CAPITAL LETTER UKRAINIAN IE
+<Multi_key> <c> <x> <I>          : "І"  U0406   # CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <Y> <I>      : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
+<Multi_key> <c> <x> <quotedbl> <I> : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
+# Belarussian
+<Multi_key> <c> <x> <u> <Y>      : "Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
+<Multi_key> <c> <x> <Y> <Y>      : "Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
+# Serbian
+<Multi_key> <c> <x> <D> <J>      : "Ђ"  U0402   # CYRILLIC CAPITAL LETTER DJE
+<Multi_key> <c> <x> <L> <J>      : "Љ"  U0409   # CYRILLIC CAPITAL LETTER LJE
+<Multi_key> <c> <x> <N> <J>      : "Њ"  U040A   # CYRILLIC CAPITAL LETTER NJE
+<Multi_key> <c> <x> <T> <S> <H>  : "Ћ"  U040B   # CYRILLIC CAPITAL LETTER TSHE
+<Multi_key> <c> <x> <D> <Z> <H>  : "Џ"  U040F   # CYRILLIC CAPITAL LETTER DZHE
+# Macedonian
+<Multi_key> <c> <x> <G> <J>      : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
+<Multi_key> <c> <x> <apostrophe> <G> : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
+<Multi_key> <c> <x> <D> <Z> <Return> : "Ѕ"  U0405   # CYRILLIC CAPITAL LETTER DZE
+<Multi_key> <c> <x> <J>          : "Ј"  U0408   # CYRILLIC CAPITAL LETTER JE
+<Multi_key> <c> <x> <K> <J>      : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
+<Multi_key> <c> <x> <apostrophe> <K> : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
+
+<Multi_key> <c> <c> <a>          : "а"  U0430   # CYRILLIC SMALL LETTER A (conflicts)
+<Multi_key> <c> <c> <b>          : "б"  U0431   # CYRILLIC SMALL LETTER BE (conflicts)
+<Multi_key> <c> <c> <v>          : "в"  U0432   # CYRILLIC SMALL LETTER VE (conflicts)
+<Multi_key> <c> <c> <g>          : "г"  U0433   # CYRILLIC SMALL LETTER GHE (conflicts)
+<Multi_key> <c> <c> <d>          : "д"  U0434   # CYRILLIC SMALL LETTER DE (conflicts)
+<Multi_key> <c> <c> <y> <e>      : "е"  U0435   # CYRILLIC SMALL LETTER IE (conflicts)
+<Multi_key> <c> <c> <y> <o>      : "ё"  U0451   # CYRILLIC SMALL LETTER IO (conflicts)
+<Multi_key> <c> <c> <quotedbl> <e> : "ё"  U0451   # CYRILLIC SMALL LETTER IO (conflicts)
+<Multi_key> <c> <x> <z> <h>      : "ж"  U0436   # CYRILLIC SMALL LETTER ZHE
+<Multi_key> <c> <c> <z>          : "з"  U0437   # CYRILLIC SMALL LETTER ZE (conflicts)
+<Multi_key> <c> <c> <i>          : "и"  U0438   # CYRILLIC SMALL LETTER I (conflicts)
+<Multi_key> <c> <c> <j>          : "й"  U0439   # CYRILLIC SMALL LETTER SHORT I (conflicts)
+<Multi_key> <c> <c> <k>          : "к"  U043A   # CYRILLIC SMALL LETTER KA (conflicts)
+<Multi_key> <c> <c> <l>          : "л"  U043B   # CYRILLIC SMALL LETTER EL (conflicts)
+<Multi_key> <c> <c> <m>          : "м"  U043C   # CYRILLIC SMALL LETTER EM (conflicts)
+<Multi_key> <c> <c> <n>          : "н"  U043D   # CYRILLIC SMALL LETTER EN (conflicts)
+<Multi_key> <c> <c> <o>          : "о"  U043E   # CYRILLIC SMALL LETTER O (conflicts)
+<Multi_key> <c> <c> <p>          : "п"  U043F   # CYRILLIC SMALL LETTER PE (conflicts)
+<Multi_key> <c> <c> <r>          : "р"  U0440   # CYRILLIC SMALL LETTER ER (conflicts)
+<Multi_key> <c> <c> <s>          : "с"  U0441   # CYRILLIC SMALL LETTER ES (conflicts)
+<Multi_key> <c> <c> <t>          : "т"  U0442   # CYRILLIC SMALL LETTER TE (conflicts)
+<Multi_key> <c> <c> <u>          : "у"  U0443   # CYRILLIC SMALL LETTER U (conflicts)
+<Multi_key> <c> <c> <f>          : "ф"  U0444   # CYRILLIC SMALL LETTER EF (conflicts)
+<Multi_key> <c> <c> <h>          : "х"  U0445   # CYRILLIC SMALL LETTER HA (conflicts)
+<Multi_key> <c> <c> <c>          : "ц"  U0446   # CYRILLIC SMALL LETTER TSE (conflicts)
+<Multi_key> <c> <x> <t> <s> <Return> : "ц"  U0446   # CYRILLIC SMALL LETTER TSE
+<Multi_key> <c> <x> <c> <h>      : "ч"  U0447   # CYRILLIC SMALL LETTER CHE
+<Multi_key> <c> <x> <s> <h>      : "ш"  U0448   # CYRILLIC SMALL LETTER SHA
+<Multi_key> <c> <x> <s> <c> <h>  : "щ"  U0449   # CYRILLIC SMALL LETTER SHCHA
+<Multi_key> <c> <c> <quotedbl> <Return> : "ъ"  U044A   # CYRILLIC SMALL LETTER HARD SIGN (conflicts)
+<Multi_key> <c> <c> <y> <Return> : "ы"  U044B   # CYRILLIC SMALL LETTER YERU (conflicts)
+<Multi_key> <c> <c> <apostrophe> <Return> : "ь"  U044C   # CYRILLIC SMALL LETTER SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <e>          : "э"  U044D   # CYRILLIC SMALL LETTER E (conflicts)
+<Multi_key> <c> <c> <y> <u>      : "ю"  U044E   # CYRILLIC SMALL LETTER YU (conflicts)
+<Multi_key> <c> <c> <y> <a>      : "я"  U044F   # CYRILLIC SMALL LETTER YA (conflicts)
+# Ukrainian
+<Multi_key> <c> <x> <g> <g>      : "ґ"  U0491   # CYRILLIC SMALL LETTER GHE WITH UPTURN
+<Multi_key> <c> <x> <y> <e>      : "є"  U0454   # CYRILLIC SMALL LETTER UKRAINIAN IE
+<Multi_key> <c> <x> <i>          : "і"  U0456   # CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <y> <i>      : "ї"  U0457   # CYRILLIC SMALL LETTER YI
+<Multi_key> <c> <x> <quotedbl> <i> : "ї"  U0457   # CYRILLIC SMALL LETTER YI
+# Belarussian
+<Multi_key> <c> <x> <u> <y>      : "ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
+<Multi_key> <c> <x> <y> <y>      : "ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
+# Serbian
+<Multi_key> <c> <x> <d> <j>      : "ђ"  U0452   # CYRILLIC SMALL LETTER DJE
+<Multi_key> <c> <x> <l> <j>      : "љ"  U0459   # CYRILLIC SMALL LETTER LJE
+<Multi_key> <c> <x> <n> <j>      : "њ"  U045A   # CYRILLIC SMALL LETTER NJE
+<Multi_key> <c> <x> <t> <s> <h>  : "ћ"  U045B   # CYRILLIC SMALL LETTER TSHE
+<Multi_key> <c> <x> <d> <z> <h>  : "џ"  U045F   # CYRILLIC SMALL LETTER DZHE
+# Macedonian
+<Multi_key> <c> <x> <g> <j>      : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
+<Multi_key> <c> <x> <apostrophe> <g> : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
+<Multi_key> <c> <x> <d> <z> <Return> : "ѕ"  U0455   # CYRILLIC SMALL LETTER DZE
+<Multi_key> <c> <x> <j>          : "ј"  U0458   # CYRILLIC SMALL LETTER JE
+<Multi_key> <c> <x> <k> <j>      : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
+<Multi_key> <c> <x> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
+
+# (g/G = Glagolitic)
+
+<Multi_key> <c> <g> <A>          : "Ⰰ" U2C00   # GLAGOLITIC CAPITAL LETTER AZU (conflicts with ǧ, use vg)
+<Multi_key> <c> <g> <B>          : "Ⰱ" U2C01   # GLAGOLITIC CAPITAL LETTER BUKY (conflicts)
+<Multi_key> <c> <g> <V>          : "Ⰲ" U2C02   # GLAGOLITIC CAPITAL LETTER VEDE (conflicts)
+<Multi_key> <c> <g> <G>          : "Ⰳ" U2C03   # GLAGOLITIC CAPITAL LETTER GLAGOLI (conflicts)
+<Multi_key> <c> <g> <D>          : "Ⰴ" U2C04   # GLAGOLITIC CAPITAL LETTER DOBRO (conflicts)
+<Multi_key> <c> <g> <E>          : "Ⰵ" U2C05   # GLAGOLITIC CAPITAL LETTER YESTU (conflicts)
+<Multi_key> <c> <G> <Z> <H>      : "Ⰶ" U2C06   # GLAGOLITIC CAPITAL LETTER ZHIVETE (conflicts)
+<Multi_key> <c> <G> <D> <Z>      : "Ⰷ" U2C07   # GLAGOLITIC CAPITAL LETTER DZELO (conflicts)
+<Multi_key> <c> <g> <Z>          : "Ⰸ" U2C08   # GLAGOLITIC CAPITAL LETTER ZEMLJA (conflicts)
+<Multi_key> <c> <g> <J>          : "Ⰹ" U2C09   # GLAGOLITIC CAPITAL LETTER IZHE (conflicts)
+<Multi_key> <c> <g> <less> <J>   : "Ⰺ" U2C0A   # GLAGOLITIC CAPITAL LETTER INITIAL IZHE (conflicts)
+<Multi_key> <c> <g> <I>          : "Ⰻ" U2C0B   # GLAGOLITIC CAPITAL LETTER I (conflicts)
+<Multi_key> <c> <G> <D> <J>      : "Ⰼ" U2C0C   # GLAGOLITIC CAPITAL LETTER DJERVI (conflicts)
+<Multi_key> <c> <g> <K>          : "Ⰽ" U2C0D   # GLAGOLITIC CAPITAL LETTER KAKO (conflicts)
+<Multi_key> <c> <g> <L>          : "Ⰾ" U2C0E   # GLAGOLITIC CAPITAL LETTER LJUDIJE (conflicts)
+<Multi_key> <c> <g> <M>          : "Ⰿ" U2C0F   # GLAGOLITIC CAPITAL LETTER MYSLITE (conflicts)
+<Multi_key> <c> <g> <N>          : "Ⱀ" U2C10   # GLAGOLITIC CAPITAL LETTER NASHI (conflicts)
+<Multi_key> <c> <g> <O>          : "Ⱁ" U2C11   # GLAGOLITIC CAPITAL LETTER ONU (conflicts)
+<Multi_key> <c> <g> <P>          : "Ⱂ" U2C12   # GLAGOLITIC CAPITAL LETTER POKOJI (conflicts)
+<Multi_key> <c> <g> <R>          : "Ⱃ" U2C13   # GLAGOLITIC CAPITAL LETTER RITSI (conflicts)
+<Multi_key> <c> <g> <S>          : "Ⱄ" U2C14   # GLAGOLITIC CAPITAL LETTER SLOVO (conflicts)
+<Multi_key> <c> <g> <T>          : "Ⱅ" U2C15   # GLAGOLITIC CAPITAL LETTER TVRIDO (conflicts)
+<Multi_key> <c> <g> <U>          : "Ⱆ" U2C16   # GLAGOLITIC CAPITAL LETTER UKU (conflicts)
+<Multi_key> <c> <g> <F>          : "Ⱇ" U2C17   # GLAGOLITIC CAPITAL LETTER FRITU (conflicts)
+<Multi_key> <c> <g> <X>          : "Ⱈ" U2C18   # GLAGOLITIC CAPITAL LETTER HERU (conflicts)
+<Multi_key> <c> <G> <O>          : "Ⱉ" U2C19   # GLAGOLITIC CAPITAL LETTER OTU (conflicts)
+<Multi_key> <c> <G> <F>          : "Ⱊ" U2C1A   # GLAGOLITIC CAPITAL LETTER PE (conflicts)
+<Multi_key> <c> <G> <S> <C> <H>  : "Ⱋ" U2C1B   # GLAGOLITIC CAPITAL LETTER SHTA (conflicts)
+<Multi_key> <c> <g> <C>          : "Ⱌ" U2C1C   # GLAGOLITIC CAPITAL LETTER TSI (conflicts)
+<Multi_key> <c> <G> <T> <S>      : "Ⱌ" U2C1C   # GLAGOLITIC CAPITAL LETTER TSI (conflicts)
+<Multi_key> <c> <G> <C> <H>      : "Ⱍ" U2C1D   # GLAGOLITIC CAPITAL LETTER CHRIVI (conflicts)
+<Multi_key> <c> <G> <S> <H>      : "Ⱎ" U2C1E   # GLAGOLITIC CAPITAL LETTER SHA (conflicts)
+<Multi_key> <c> <g> <quotedbl> <quotedbl> : "Ⱏ" U2C1F   # GLAGOLITIC CAPITAL LETTER YERU (conflicts)
+<Multi_key> <c> <g> <Y> <Return> : "Ⱐ" U2C20   # GLAGOLITIC CAPITAL LETTER YERI (conflicts)
+<Multi_key> <c> <g> <Y> <E>      : "Ⱑ" U2C21   # GLAGOLITIC CAPITAL LETTER YATI (conflicts)
+<Multi_key> <c> <g> <H>          : "Ⱒ" U2C22   # GLAGOLITIC CAPITAL LETTER SPIDERY HA (conflicts)
+<Multi_key> <c> <g> <Y> <U>      : "Ⱓ" U2C23   # GLAGOLITIC CAPITAL LETTER YU (conflicts)
+<Multi_key> <c> <g> <comma> <E>  : "Ⱔ" U2C24   # GLAGOLITIC CAPITAL LETTER SMALL YUS (conflicts)
+<Multi_key> <c> <G> <comma> <E>  : "Ⱕ" U2C25   # GLAGOLITIC CAPITAL LETTER SMALL YUS WITH TAIL (conflicts)
+<Multi_key> <c> <g> <Y> <O>      : "Ⱖ" U2C26   # GLAGOLITIC CAPITAL LETTER YO (conflicts)
+<Multi_key> <c> <g> <comma> <Y> <E> : "Ⱗ" U2C27   # GLAGOLITIC CAPITAL LETTER IOTATED SMALL YUS (conflicts)
+<Multi_key> <c> <g> <comma> <O>  : "Ⱘ" U2C28   # GLAGOLITIC CAPITAL LETTER BIG YUS (conflicts)
+<Multi_key> <c> <g> <comma> <Y> <O> : "Ⱙ" U2C29   # GLAGOLITIC CAPITAL LETTER IOTATED BIG YUS (conflicts)
+<Multi_key> <c> <G> <T> <H>      : "Ⱚ" U2C2A   # GLAGOLITIC CAPITAL LETTER FITA (conflicts)
+<Multi_key> <c> <g> <W>          : "Ⱛ" U2C2B   # GLAGOLITIC CAPITAL LETTER IZHITSA (conflicts)
+<Multi_key> <c> <G> <quotedbl> <quotedbl> : "Ⱜ" U2C2C   # GLAGOLITIC CAPITAL LETTER SHTAPIC (conflicts)
+<Multi_key> <c> <G> <A>          : "Ⱝ" U2C2D   # GLAGOLITIC CAPITAL LETTER TROKUTASTI A (conflicts)
+<Multi_key> <c> <G> <M>          : "Ⱞ" U2C2E   # GLAGOLITIC CAPITAL LETTER LATINATE MYSLITE (conflicts)
+<Multi_key> <c> <G> <less> <C> <H> : "Ⱟ" U2C2F   # GLAGOLITIC CAPITAL LETTER CAUDATE CHRIVI (conflicts)
+
+<Multi_key> <c> <g> <a>          : "ⰰ" U2C30   # GLAGOLITIC SMALL LETTER AZU (conflicts with Ǧ, use vG)
+<Multi_key> <c> <g> <b>          : "ⰱ" U2C31   # GLAGOLITIC SMALL LETTER BUKY (conflicts)
+<Multi_key> <c> <g> <v>          : "ⰲ" U2C32   # GLAGOLITIC SMALL LETTER VEDE (conflicts)
+<Multi_key> <c> <g> <g>          : "ⰳ" U2C33   # GLAGOLITIC SMALL LETTER GLAGOLI (conflicts)
+<Multi_key> <c> <g> <d>          : "ⰴ" U2C34   # GLAGOLITIC SMALL LETTER DOBRO (conflicts)
+<Multi_key> <c> <g> <e>          : "ⰵ" U2C35   # GLAGOLITIC SMALL LETTER YESTU (conflicts)
+<Multi_key> <c> <G> <z> <h>      : "ⰶ" U2C36   # GLAGOLITIC SMALL LETTER ZHIVETE (conflicts)
+<Multi_key> <c> <G> <d> <z>      : "ⰷ" U2C37   # GLAGOLITIC SMALL LETTER DZELO (conflicts)
+<Multi_key> <c> <g> <z>          : "ⰸ" U2C38   # GLAGOLITIC SMALL LETTER ZEMLJA (conflicts)
+<Multi_key> <c> <g> <j>          : "ⰹ" U2C39   # GLAGOLITIC SMALL LETTER IZHE (conflicts)
+<Multi_key> <c> <g> <less> <j>   : "ⰺ" U2C3A   # GLAGOLITIC SMALL LETTER INITIAL IZHE (conflicts)
+<Multi_key> <c> <g> <i>          : "ⰻ" U2C3B   # GLAGOLITIC SMALL LETTER I (conflicts)
+<Multi_key> <c> <G> <d> <j>      : "ⰼ" U2C3C   # GLAGOLITIC SMALL LETTER DJERVI (conflicts)
+<Multi_key> <c> <g> <k>          : "ⰽ" U2C3D   # GLAGOLITIC SMALL LETTER KAKO (conflicts)
+<Multi_key> <c> <g> <l>          : "ⰾ" U2C3E   # GLAGOLITIC SMALL LETTER LJUDIJE (conflicts)
+<Multi_key> <c> <g> <m>          : "ⰿ" U2C3F   # GLAGOLITIC SMALL LETTER MYSLITE (conflicts)
+<Multi_key> <c> <g> <n>          : "ⱀ" U2C40   # GLAGOLITIC SMALL LETTER NASHI (conflicts)
+<Multi_key> <c> <g> <o>          : "ⱁ" U2C41   # GLAGOLITIC SMALL LETTER ONU (conflicts)
+<Multi_key> <c> <g> <p>          : "ⱂ" U2C42   # GLAGOLITIC SMALL LETTER POKOJI (conflicts)
+<Multi_key> <c> <g> <r>          : "ⱃ" U2C43   # GLAGOLITIC SMALL LETTER RITSI (conflicts)
+<Multi_key> <c> <g> <s>          : "ⱄ" U2C44   # GLAGOLITIC SMALL LETTER SLOVO (conflicts)
+<Multi_key> <c> <g> <t>          : "ⱅ" U2C45   # GLAGOLITIC SMALL LETTER TVRIDO (conflicts)
+<Multi_key> <c> <g> <u>          : "ⱆ" U2C46   # GLAGOLITIC SMALL LETTER UKU (conflicts)
+<Multi_key> <c> <g> <f>          : "ⱇ" U2C47   # GLAGOLITIC SMALL LETTER FRITU (conflicts)
+<Multi_key> <c> <g> <x>          : "ⱈ" U2C48   # GLAGOLITIC SMALL LETTER HERU (conflicts)
+<Multi_key> <c> <G> <o>          : "ⱉ" U2C49   # GLAGOLITIC SMALL LETTER OTU (conflicts)
+<Multi_key> <c> <G> <f>          : "ⱊ" U2C4A   # GLAGOLITIC SMALL LETTER PE (conflicts)
+<Multi_key> <c> <G> <s> <c> <h>  : "ⱋ" U2C4B   # GLAGOLITIC SMALL LETTER SHTA (conflicts)
+<Multi_key> <c> <g> <c>          : "ⱌ" U2C4C   # GLAGOLITIC SMALL LETTER TSI (conflicts)
+<Multi_key> <c> <G> <t> <s>      : "ⱌ" U2C4C   # GLAGOLITIC SMALL LETTER TSI (conflicts)
+<Multi_key> <c> <G> <c> <h>      : "ⱍ" U2C4D   # GLAGOLITIC SMALL LETTER CHRIVI (conflicts)
+<Multi_key> <c> <G> <s> <h>      : "ⱎ" U2C4E   # GLAGOLITIC SMALL LETTER SHA (conflicts)
+<Multi_key> <c> <g> <quotedbl> <Return>   : "ⱏ" U2C4F   # GLAGOLITIC SMALL LETTER YERU (conflicts)
+<Multi_key> <c> <g> <y> <Return> : "ⱐ" U2C50   # GLAGOLITIC SMALL LETTER YERI (conflicts)
+<Multi_key> <c> <g> <y> <e>      : "ⱑ" U2C51   # GLAGOLITIC SMALL LETTER YATI (conflicts)
+<Multi_key> <c> <g> <h>          : "ⱒ" U2C52   # GLAGOLITIC SMALL LETTER SPIDERY HA (conflicts)
+<Multi_key> <c> <g> <y> <u>      : "ⱓ" U2C53   # GLAGOLITIC SMALL LETTER YU (conflicts)
+<Multi_key> <c> <g> <comma> <e>  : "ⱔ" U2C54   # GLAGOLITIC SMALL LETTER SMALL YUS (conflicts)
+<Multi_key> <c> <G> <comma> <e>  : "ⱕ" U2C55   # GLAGOLITIC SMALL LETTER SMALL YUS WITH TAIL (conflicts)
+<Multi_key> <c> <g> <y> <o>      : "ⱖ" U2C56   # GLAGOLITIC SMALL LETTER YO (conflicts)
+<Multi_key> <c> <g> <comma> <y> <e> : "ⱗ" U2C57   # GLAGOLITIC SMALL LETTER IOTATED SMALL YUS (conflicts)
+<Multi_key> <c> <g> <comma> <o>  : "ⱘ" U2C58   # GLAGOLITIC SMALL LETTER BIG YUS (conflicts)
+<Multi_key> <c> <g> <comma> <y> <o> : "ⱙ" U2C59   # GLAGOLITIC SMALL LETTER IOTATED BIG YUS (conflicts)
+<Multi_key> <c> <G> <t> <h>      : "ⱚ" U2C5A   # GLAGOLITIC SMALL LETTER FITA (conflicts)
+<Multi_key> <c> <g> <w>          : "ⱛ" U2C5B   # GLAGOLITIC SMALL LETTER IZHITSA (conflicts)
+<Multi_key> <c> <G> <quotedbl> <Return> : "ⱜ" U2C5C   # GLAGOLITIC SMALL LETTER SHTAPIC (conflicts)
+<Multi_key> <c> <G> <a>          : "ⱝ" U2C5D   # GLAGOLITIC SMALL LETTER TROKUTASTI A (conflicts)
+<Multi_key> <c> <G> <m>          : "ⱞ" U2C5E   # GLAGOLITIC SMALL LETTER LATINATE MYSLITE (conflicts)
+<Multi_key> <c> <G> <less> <c> <h> : "ⱟ" U2C5F   # GLAGOLITIC SMALL LETTER CAUDATE CHRIVI (conflicts)
+
+##################
+# (d) Devanagari #
+##################
+
+# (mostly based on 7-bit ISO 15919)
+
+# Consonants
+
+<Multi_key> <d> <c> <k> <space>          : "क" U0915   # DEVANAGARI LETTER KA
+<Multi_key> <d> <c> <k> <h>              : "ख" U0916   # DEVANAGARI LETTER KHA
+<Multi_key> <d> <c> <g> <space>          : "ग" U0917   # DEVANAGARI LETTER GA
+<Multi_key> <d> <c> <g> <h>              : "घ" U0918   # DEVANAGARI LETTER GHA
+<Multi_key> <d> <c> <semicolon> <n>      : "ङ" U0919   # DEVANAGARI LETTER NGA
+<Multi_key> <d> <c> <c> <space>          : "च" U091A   # DEVANAGARI LETTER CA
+<Multi_key> <d> <c> <c> <h>              : "छ" U091B   # DEVANAGARI LETTER CHA
+<Multi_key> <d> <c> <j> <space>          : "ज" U091C   # DEVANAGARI LETTER JA
+<Multi_key> <d> <c> <j> <h>              : "झ" U091D   # DEVANAGARI LETTER JHA
+<Multi_key> <d> <c> <asciitilde> <n>     : "ञ" U091E   # DEVANAGARI LETTER NYA
+<Multi_key> <d> <c> <period> <t> <space> : "ट" U091F   # DEVANAGARI LETTER TTA
+<Multi_key> <d> <c> <period> <t> <h>     : "ठ" U0920   # DEVANAGARI LETTER TTHA
+<Multi_key> <d> <c> <period> <d> <space> : "ड" U0921   # DEVANAGARI LETTER DDA
+<Multi_key> <d> <c> <period> <d> <h>     : "ढ" U0922   # DEVANAGARI LETTER DDHA
+<Multi_key> <d> <c> <period> <n>         : "ण" U0923   # DEVANAGARI LETTER NNA
+<Multi_key> <d> <c> <t> <space>          : "त" U0924   # DEVANAGARI LETTER TA
+<Multi_key> <d> <c> <t> <h>              : "थ" U0925   # DEVANAGARI LETTER THA
+<Multi_key> <d> <c> <d> <space>          : "द" U0926   # DEVANAGARI LETTER DA
+<Multi_key> <d> <c> <d> <h>              : "ध" U0927   # DEVANAGARI LETTER DHA
+<Multi_key> <d> <c> <n>                  : "न" U0928   # DEVANAGARI LETTER NA
+<Multi_key> <d> <c> <underscore> <n>     : "ऩ" U0929   # DEVANAGARI LETTER NNNA
+<Multi_key> <d> <c> <p> <space>          : "प" U092A   # DEVANAGARI LETTER PA
+<Multi_key> <d> <c> <p> <h>              : "फ" U092B   # DEVANAGARI LETTER PHA
+<Multi_key> <d> <c> <b> <space>          : "ब" U092C   # DEVANAGARI LETTER BA
+<Multi_key> <d> <c> <b> <h>              : "भ" U092D   # DEVANAGARI LETTER BHA
+<Multi_key> <d> <c> <m>                  : "म" U092E   # DEVANAGARI LETTER MA
+<Multi_key> <d> <c> <y>                  : "य" U092F   # DEVANAGARI LETTER YA
+<Multi_key> <d> <c> <r>                  : "र" U0930   # DEVANAGARI LETTER RA
+<Multi_key> <d> <c> <underscore> <r>     : "ऱ" U0931   # DEVANAGARI LETTER RRA
+<Multi_key> <d> <c> <l>                  : "ल" U0932   # DEVANAGARI LETTER LA
+<Multi_key> <d> <c> <period> <l>         : "ळ" U0933   # DEVANAGARI LETTER LLA
+<Multi_key> <d> <c> <underscore> <l>     : "ऴ" U0934   # DEVANAGARI LETTER LLLA
+<Multi_key> <d> <c> <v>                  : "व" U0935   # DEVANAGARI LETTER VA
+<Multi_key> <d> <c> <semicolon> <s>      : "श" U0936   # DEVANAGARI LETTER SHA
+<Multi_key> <d> <c> <period> <s>         : "ष" U0937   # DEVANAGARI LETTER SSA
+<Multi_key> <d> <c> <s>                  : "स" U0938   # DEVANAGARI LETTER SA
+<Multi_key> <d> <c> <h>                  : "ह" U0939   # DEVANAGARI LETTER HA
+
+# Independent vowels
+
+<Multi_key> <d> <c> <period> <a> <space>      : "ऄ" U0904   # DEVANAGARI LETTER SHORT A
+<Multi_key> <d> <c> <a> <space>               : "अ" U0905   # DEVANAGARI LETTER A
+<Multi_key> <d> <c> <a> <a> <space>           : "आ" U0906   # DEVANAGARI LETTER AA
+<Multi_key> <d> <c> <i> <space>               : "इ" U0907   # DEVANAGARI LETTER I
+<Multi_key> <d> <c> <i> <i> <space>           : "ई" U0908   # DEVANAGARI LETTER II
+<Multi_key> <d> <c> <u> <space>               : "उ" U0909   # DEVANAGARI LETTER U
+<Multi_key> <d> <c> <u> <u> <space>           : "ऊ" U090A   # DEVANAGARI LETTER UU
+<Multi_key> <d> <c> <comma> <r> <space>       : "ऋ" U090B   # DEVANAGARI LETTER VOCALIC R
+<Multi_key> <d> <c> <comma> <l> <space>       : "ऌ" U090C   # DEVANAGARI LETTER VOCALIC L
+<Multi_key> <d> <c> <asciicircum> <e> <space> : "ऍ" U090D   # DEVANAGARI LETTER CANDRA E
+<Multi_key> <d> <c> <period> <e> <space>      : "ऎ" U090E   # DEVANAGARI LETTER SHORT E
+<Multi_key> <d> <c> <e> <space>               : "ऎ" U090E   # DEVANAGARI LETTER SHORT E
+<Multi_key> <d> <c> <e> <e> <space>           : "ए" U090F   # DEVANAGARI LETTER E
+<Multi_key> <d> <c> <a> <i> <space>           : "ऐ" U0910   # DEVANAGARI LETTER AI
+<Multi_key> <d> <c> <asciicircum> <o> <space> : "ऑ" U0911   # DEVANAGARI LETTER CANDRA O
+<Multi_key> <d> <c> <period> <o> <space>      : "ऒ" U0912   # DEVANAGARI LETTER SHORT O
+<Multi_key> <d> <c> <o> <o> <space>           : "ओ" U0913   # DEVANAGARI LETTER O
+<Multi_key> <d> <c> <a> <u> <space>           : "औ" U0914   # DEVANAGARI LETTER AU
+<Multi_key> <d> <c> <comma> <r> <r> <space>   : "ॠ" U0960   # DEVANAGARI LETTER VOCALIC RR
+<Multi_key> <d> <c> <comma> <l> <l> <space>   : "ॡ" U0961   # DEVANAGARI LETTER VOCALIC LL
+<Multi_key> <d> <c> <asciicircum> <a> <space> : "ॲ" U0972   # DEVANAGARI LETTER CANDRA A
+<Multi_key> <d> <c> <o> <e> <space>           : "ॳ" U0973   # DEVANAGARI LETTER OE
+<Multi_key> <d> <c> <o> <o> <e> <space>       : "ॴ" U0974   # DEVANAGARI LETTER OOE
+<Multi_key> <d> <c> <a> <w> <space>           : "ॵ" U0975   # DEVANAGARI LETTER AW
+<Multi_key> <d> <c> <u> <e> <space>           : "ॶ" U0976   # DEVANAGARI LETTER UE
+<Multi_key> <d> <c> <u> <u> <e> <space>       : "ॷ" U0977   # DEVANAGARI LETTER UUE
+
+# Dependent vowels
+
+<Multi_key> <d> <c> <o> <e> <Return>           : "ऺ" U093A   # DEVANAGARI VOWEL SIGN OE
+<Multi_key> <d> <c> <o> <o> <e> <Return>       : "ऻ" U093B   # DEVANAGARI VOWEL SIGN OOE
+<Multi_key> <d> <c> <a> <a> <Return>           : "ा" U093E   # DEVANAGARI VOWEL SIGN AA
+<Multi_key> <d> <c> <i> <Return>               : "ि" U093F   # DEVANAGARI VOWEL SIGN I
+<Multi_key> <d> <c> <i> <i> <Return>           : "ी" U0940   # DEVANAGARI VOWEL SIGN II
+<Multi_key> <d> <c> <u> <Return>               : "ु" U0941   # DEVANAGARI VOWEL SIGN U
+<Multi_key> <d> <c> <u> <u> <Return>           : "ू" U0942   # DEVANAGARI VOWEL SIGN UU
+<Multi_key> <d> <c> <comma> <r> <Return>       : "ृ" U0943   # DEVANAGARI VOWEL SIGN VOCALIC R
+<Multi_key> <d> <c> <comma> <r> <r> <Return>   : "ॄ" U0944   # DEVANAGARI VOWEL SIGN VOCALIC RR
+<Multi_key> <d> <c> <asciicircum> <e> <Return> : "ॅ" U0945   # DEVANAGARI VOWEL SIGN CANDRA E
+<Multi_key> <d> <c> <period> <e> <Return>      : "ॆ" U0946   # DEVANAGARI VOWEL SIGN SHORT E
+<Multi_key> <d> <c> <e> <Return>               : "ॆ" U0946   # DEVANAGARI VOWEL SIGN SHORT E
+<Multi_key> <d> <c> <e> <e> <Return>           : "े" U0947   # DEVANAGARI VOWEL SIGN E
+<Multi_key> <d> <c> <a> <i> <Return>           : "ै" U0948   # DEVANAGARI VOWEL SIGN AI
+<Multi_key> <d> <c> <asciicircum> <o> <Return> : "ॉ" U0949   # DEVANAGARI VOWEL SIGN CANDRA O
+<Multi_key> <d> <c> <period> <o> <Return>      : "ॊ" U094A   # DEVANAGARI VOWEL SIGN SHORT O
+<Multi_key> <d> <c> <o> <o> <Return>           : "ो" U094B   # DEVANAGARI VOWEL SIGN O
+<Multi_key> <d> <c> <a> <u> <Return>           : "ौ" U094C   # DEVANAGARI VOWEL SIGN AU
+<Multi_key> <d> <c> <a> <w> <Return>           : "ॏ" U094F   # DEVANAGARI VOWEL SIGN AW
+<Multi_key> <d> <c> <u> <e> <Return>           : "ॖ" U0956   # DEVANAGARI VOWEL SIGN UE
+<Multi_key> <d> <c> <u> <u> <e> <Return>       : "ॗ" U0957   # DEVANAGARI VOWEL SIGN UUE
+<Multi_key> <d> <c> <comma> <l> <Return>       : "ॢ" U0962   # DEVANAGARI VOWEL SIGN VOCALIC L
+<Multi_key> <d> <c> <comma> <l> <l> <Return>   : "ॣ" U0963   # DEVANAGARI VOWEL SIGN VOCALIC LL
+
+# Other signs
+
+<Multi_key> <d> <c> <parenleft> <period> <Return>  : "ऀ" U0900   # DEVANAGARI SIGN INVERTED CANDRABINDU
+<Multi_key> <d> <c> <period> <parenright> <Return> : "ँ" U0901   # DEVANAGARI SIGN CANDRABINDU
+<Multi_key> <d> <c> <period> <Return>              : "ं" U0902   # DEVANAGARI SIGN ANUSVARA
+<Multi_key> <d> <c> <colon> <Return>               : "ः" U0903   # DEVANAGARI SIGN VISARGA
+<Multi_key> <d> <c> <underscore> <period> <Return> : "़" U093C   # DEVANAGARI SIGN NUKTA
+<Multi_key> <d> <c> <comma> <Return>               : "्" U094D   # DEVANAGARI SIGN VIRAMA
+<Multi_key> <d> <c> <apostrophe> <Return>          : "॑" U0951   # DEVANAGARI STRESS SIGN UDATTA
+<Multi_key> <d> <c> <underscore> <Return>          : "॒" U0952   # DEVANAGARI STRESS SIGN ANUDATTA
+
+<Multi_key> <d> <c> <S>                            : "ऽ" U093D   # DEVANAGARI SIGN AVAGRAHA
+<Multi_key> <d> <c> <o> <m>                        : "ॐ" U0950   # DEVANAGARI OM
+
+# Numerals
+
+<Multi_key> <d> <0> <0> : "०" U0966   # DEVANAGARI DIGIT ZERO
+<Multi_key> <d> <0> <1> : "१" U0967   # DEVANAGARI DIGIT ONE
+<Multi_key> <d> <0> <2> : "२" U0968   # DEVANAGARI DIGIT TWO
+<Multi_key> <d> <0> <3> : "३" U0969   # DEVANAGARI DIGIT THREE
+<Multi_key> <d> <0> <4> : "४" U096A   # DEVANAGARI DIGIT FOUR
+<Multi_key> <d> <0> <5> : "५" U096B   # DEVANAGARI DIGIT FIVE
+<Multi_key> <d> <0> <6> : "६" U096C   # DEVANAGARI DIGIT SIX
+<Multi_key> <d> <0> <7> : "७" U096D   # DEVANAGARI DIGIT SEVEN
+<Multi_key> <d> <0> <8> : "८" U096E   # DEVANAGARI DIGIT EIGHT
+<Multi_key> <d> <0> <9> : "९" U096F   # DEVANAGARI DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <d> <semicolon> <bar>     : "।" U0964   # DEVANAGARI DANDA
+<Multi_key> <d> <semicolon> <2> <bar> : "॥" U0965   # DEVANAGARI DOUBLE DANDA
+<Multi_key> <d> <semicolon> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
 
 #############
 # (g) Greek #
@@ -2361,7 +2717,7 @@ include "%L"
 <Multi_key> <k> <c> <i>              : "ㅣ"  U3163   # HANGUL LETTER I
 
 ##################################
-# (l) Old Latin/Italic/Etruscan  #
+# (l) Latin/Old Italic/Etruscan  #
 ##################################
 
 # Also see numerals sections for Roman Numerals
@@ -2523,126 +2879,6 @@ include "%L"
 <Multi_key> <m> <p> <s> <n>     : "···-·"  # MORSE CODE PROSIGN SN (VERIFIED)
 <Multi_key> <m> <p> <s> <o> <s> : "···---···"  # MORSE CODE PROSIGN SOS (DISTRESS SIGNAL)
 <Multi_key> <m> <p> <v> <e>     : "···-·"  # MORSE CODE PROSIGN VE (VERIFIED)
-
-########################
-# (r) Russian/Cyrillic #
-########################
-
-<Multi_key> <r> <c> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A
-<Multi_key> <r> <c> <B>          : "Б"  U0411   # CYRILLIC CAPITAL LETTER BE
-<Multi_key> <r> <c> <V>          : "В"  U0412   # CYRILLIC CAPITAL LETTER VE
-<Multi_key> <r> <c> <G>          : "Г"  U0413   # CYRILLIC CAPITAL LETTER GHE
-<Multi_key> <r> <c> <D>          : "Д"  U0414   # CYRILLIC CAPITAL LETTER DE
-<Multi_key> <r> <c> <Y> <E>      : "Е"  U0415   # CYRILLIC CAPITAL LETTER IE
-<Multi_key> <r> <c> <Y> <O>      : "Ё"  U0401   # CYRILLIC CAPITAL LETTER IO
-<Multi_key> <r> <c> <quotedbl> <E> : "Ё"  U0401   # CYRILLIC CAPITAL LETTER IO
-<Multi_key> <r> <x> <Z> <H>      : "Ж"  U0416   # CYRILLIC CAPITAL LETTER ZHE
-<Multi_key> <r> <c> <Z>          : "З"  U0417   # CYRILLIC CAPITAL LETTER ZE
-<Multi_key> <r> <c> <I>          : "И"  U0418   # CYRILLIC CAPITAL LETTER I
-<Multi_key> <r> <c> <J>          : "Й"  U0419   # CYRILLIC CAPITAL LETTER SHORT I
-<Multi_key> <r> <c> <K>          : "К"  U041A   # CYRILLIC CAPITAL LETTER KA
-<Multi_key> <r> <c> <L>          : "Л"  U041B   # CYRILLIC CAPITAL LETTER EL
-<Multi_key> <r> <c> <M>          : "М"  U041C   # CYRILLIC CAPITAL LETTER EM
-<Multi_key> <r> <c> <N>          : "Н"  U041D   # CYRILLIC CAPITAL LETTER EN
-<Multi_key> <r> <c> <O>          : "О"  U041E   # CYRILLIC CAPITAL LETTER O
-<Multi_key> <r> <c> <P>          : "П"  U041F   # CYRILLIC CAPITAL LETTER PE
-<Multi_key> <r> <c> <R>          : "Р"  U0420   # CYRILLIC CAPITAL LETTER ER
-<Multi_key> <r> <c> <S>          : "С"  U0421   # CYRILLIC CAPITAL LETTER ES
-<Multi_key> <r> <c> <T>          : "Т"  U0422   # CYRILLIC CAPITAL LETTER TE
-<Multi_key> <r> <c> <U>          : "У"  U0423   # CYRILLIC CAPITAL LETTER U
-<Multi_key> <r> <c> <F>          : "Ф"  U0424   # CYRILLIC CAPITAL LETTER EF
-<Multi_key> <r> <c> <H>          : "Х"  U0425   # CYRILLIC CAPITAL LETTER HA
-<Multi_key> <r> <c> <C>          : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE
-<Multi_key> <r> <x> <T> <S> <Return> : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE
-<Multi_key> <r> <x> <C> <H>      : "Ч"  U0427   # CYRILLIC CAPITAL LETTER CHE
-<Multi_key> <r> <x> <S> <H>      : "Ш"  U0428   # CYRILLIC CAPITAL LETTER SHA
-<Multi_key> <r> <x> <S> <C> <H>  : "Щ"  U0429   # CYRILLIC CAPITAL LETTER SHCHA
-<Multi_key> <r> <c> <quotedbl> <quotedbl> : "Ъ"  U042A   # CYRILLIC CAPITAL LETTER HARD SIGN
-<Multi_key> <r> <c> <Y> <Return> : "Ы"  U042B   # CYRILLIC CAPITAL LETTER YERU
-<Multi_key> <r> <c> <apostrophe> <apostrophe> : "Ь"  U042C   # CYRILLIC CAPITAL LETTER SOFT SIGN
-<Multi_key> <r> <c> <E>          : "Э"  U042D   # CYRILLIC CAPITAL LETTER E
-<Multi_key> <r> <c> <Y> <U>      : "Ю"  U042E   # CYRILLIC CAPITAL LETTER YU
-<Multi_key> <r> <c> <Y> <A>      : "Я"  U042F   # CYRILLIC CAPITAL LETTER YA
-# Ukrainian
-<Multi_key> <r> <x> <G> <G>      : "Ґ"  U0490   # CYRILLIC CAPITAL LETTER GHE WITH UPTURN
-<Multi_key> <r> <x> <Y> <E>      : "Є"  U0404   # CYRILLIC CAPITAL LETTER UKRAINIAN IE
-<Multi_key> <r> <x> <I>          : "І"  U0406   # CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
-<Multi_key> <r> <x> <Y> <I>      : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
-<Multi_key> <r> <x> <quotedbl> <I> : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
-# Belarussian
-<Multi_key> <r> <x> <u> <Y>      : "Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
-<Multi_key> <r> <x> <Y> <Y>      : "Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
-# Serbian
-<Multi_key> <r> <x> <D> <J>      : "Ђ"  U0402   # CYRILLIC CAPITAL LETTER DJE
-<Multi_key> <r> <x> <L> <J>      : "Љ"  U0409   # CYRILLIC CAPITAL LETTER LJE
-<Multi_key> <r> <x> <N> <J>      : "Њ"  U040A   # CYRILLIC CAPITAL LETTER NJE
-<Multi_key> <r> <x> <T> <S> <H>  : "Ћ"  U040B   # CYRILLIC CAPITAL LETTER TSHE
-<Multi_key> <r> <x> <D> <Z> <H>  : "Џ"  U040F   # CYRILLIC CAPITAL LETTER DZHE
-# Macedonian
-<Multi_key> <r> <x> <G> <J>      : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
-<Multi_key> <r> <x> <apostrophe> <G> : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
-<Multi_key> <r> <x> <D> <Z> <Return> : "Ѕ"  U0405   # CYRILLIC CAPITAL LETTER DZE
-<Multi_key> <r> <x> <J>          : "Ј"  U0408   # CYRILLIC CAPITAL LETTER JE
-<Multi_key> <r> <x> <K> <J>      : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
-<Multi_key> <r> <x> <apostrophe> <K> : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
-
-<Multi_key> <r> <c> <a>          : "а"  U0430   # CYRILLIC SMALL LETTER A
-<Multi_key> <r> <c> <b>          : "б"  U0431   # CYRILLIC SMALL LETTER BE
-<Multi_key> <r> <c> <v>          : "в"  U0432   # CYRILLIC SMALL LETTER VE
-<Multi_key> <r> <c> <g>          : "г"  U0433   # CYRILLIC SMALL LETTER GHE
-<Multi_key> <r> <c> <d>          : "д"  U0434   # CYRILLIC SMALL LETTER DE
-<Multi_key> <r> <c> <y> <e>      : "е"  U0435   # CYRILLIC SMALL LETTER IE
-<Multi_key> <r> <c> <y> <o>      : "ё"  U0451   # CYRILLIC SMALL LETTER IO
-<Multi_key> <r> <c> <quotedbl> <e> : "ё"  U0451   # CYRILLIC SMALL LETTER IO
-<Multi_key> <r> <x> <z> <h>      : "ж"  U0436   # CYRILLIC SMALL LETTER ZHE
-<Multi_key> <r> <c> <z>          : "з"  U0437   # CYRILLIC SMALL LETTER ZE
-<Multi_key> <r> <c> <i>          : "и"  U0438   # CYRILLIC SMALL LETTER I
-<Multi_key> <r> <c> <j>          : "й"  U0439   # CYRILLIC SMALL LETTER SHORT I
-<Multi_key> <r> <c> <k>          : "к"  U043A   # CYRILLIC SMALL LETTER KA
-<Multi_key> <r> <c> <l>          : "л"  U043B   # CYRILLIC SMALL LETTER EL
-<Multi_key> <r> <c> <m>          : "м"  U043C   # CYRILLIC SMALL LETTER EM
-<Multi_key> <r> <c> <n>          : "н"  U043D   # CYRILLIC SMALL LETTER EN
-<Multi_key> <r> <c> <o>          : "о"  U043E   # CYRILLIC SMALL LETTER O
-<Multi_key> <r> <c> <p>          : "п"  U043F   # CYRILLIC SMALL LETTER PE
-<Multi_key> <r> <c> <r>          : "р"  U0440   # CYRILLIC SMALL LETTER ER
-<Multi_key> <r> <c> <s>          : "с"  U0441   # CYRILLIC SMALL LETTER ES
-<Multi_key> <r> <c> <t>          : "т"  U0442   # CYRILLIC SMALL LETTER TE
-<Multi_key> <r> <c> <u>          : "у"  U0443   # CYRILLIC SMALL LETTER U
-<Multi_key> <r> <c> <f>          : "ф"  U0444   # CYRILLIC SMALL LETTER EF
-<Multi_key> <r> <c> <h>          : "х"  U0445   # CYRILLIC SMALL LETTER HA
-<Multi_key> <r> <c> <c>          : "ц"  U0446   # CYRILLIC SMALL LETTER TSE
-<Multi_key> <r> <x> <t> <s> <Return> : "ц"  U0446   # CYRILLIC SMALL LETTER TSE
-<Multi_key> <r> <x> <c> <h>      : "ч"  U0447   # CYRILLIC SMALL LETTER CHE
-<Multi_key> <r> <x> <s> <h>      : "ш"  U0448   # CYRILLIC SMALL LETTER SHA
-<Multi_key> <r> <x> <s> <c> <h>  : "щ"  U0449   # CYRILLIC SMALL LETTER SHCHA
-<Multi_key> <r> <c> <quotedbl> <Return> : "ъ"  U044A   # CYRILLIC SMALL LETTER HARD SIGN
-<Multi_key> <r> <c> <y> <Return> : "ы"  U044B   # CYRILLIC SMALL LETTER YERU
-<Multi_key> <r> <c> <apostrophe> <Return> : "ь"  U044C   # CYRILLIC SMALL LETTER SOFT SIGN
-<Multi_key> <r> <c> <e>          : "э"  U044D   # CYRILLIC SMALL LETTER E
-<Multi_key> <r> <c> <y> <u>      : "ю"  U044E   # CYRILLIC SMALL LETTER YU
-<Multi_key> <r> <c> <y> <a>      : "я"  U044F   # CYRILLIC SMALL LETTER YA
-# Ukrainian
-<Multi_key> <r> <x> <g> <g>      : "ґ"  U0491   # CYRILLIC SMALL LETTER GHE WITH UPTURN
-<Multi_key> <r> <x> <y> <e>      : "є"  U0454   # CYRILLIC SMALL LETTER UKRAINIAN IE
-<Multi_key> <r> <x> <i>          : "і"  U0456   # CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
-<Multi_key> <r> <x> <y> <i>      : "ї"  U0457   # CYRILLIC SMALL LETTER YI
-<Multi_key> <r> <x> <quotedbl> <i> : "ї"  U0457   # CYRILLIC SMALL LETTER YI
-# Belarussian
-<Multi_key> <r> <x> <u> <y>      : "ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
-<Multi_key> <r> <x> <y> <y>      : "ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
-# Serbian
-<Multi_key> <r> <x> <d> <j>      : "ђ"  U0452   # CYRILLIC SMALL LETTER DJE
-<Multi_key> <r> <x> <l> <j>      : "љ"  U0459   # CYRILLIC SMALL LETTER LJE
-<Multi_key> <r> <x> <n> <j>      : "њ"  U045A   # CYRILLIC SMALL LETTER NJE
-<Multi_key> <r> <x> <t> <s> <h>  : "ћ"  U045B   # CYRILLIC SMALL LETTER TSHE
-<Multi_key> <r> <x> <d> <z> <h>  : "џ"  U045F   # CYRILLIC SMALL LETTER DZHE
-# Macedonian
-<Multi_key> <r> <x> <g> <j>      : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
-<Multi_key> <r> <x> <apostrophe> <g> : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
-<Multi_key> <r> <x> <d> <z> <Return> : "ѕ"  U0455   # CYRILLIC SMALL LETTER DZE
-<Multi_key> <r> <x> <j>          : "ј"  U0458   # CYRILLIC SMALL LETTER JE
-<Multi_key> <r> <x> <k> <j>      : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
-<Multi_key> <r> <x> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 
 ##############################################################
 # (z) Zhuyin/Bopomofo (and some additional Zhongwen/Chinese) #
@@ -2880,7 +3116,7 @@ include "%L"
 <Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va) (use hat for 🧢)
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
 <Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
-<Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN (override)
+<Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN
 <Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter)
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
 <Multi_key> <i> <i> <i> <i> <n> <t>     : "⨌"  U2A0C   # QUADRUPLE INTEGRAL OPERATOR
@@ -2968,9 +3204,9 @@ include "%L"
 
 # Emoticons
 
-<Multi_key> <colon> <parenright>              : "😊"  U1F60A        # SMILING FACE WITH SMILING EYES (overrides ☺ )
+<Multi_key> <colon> <parenright>              : "😊"  U1F60A        # SMILING FACE WITH SMILING EYES
 <Multi_key> <colon> <bracketright>            : "😊"  U1F60A        # SMILING FACE WITH SMILING EYES
-<Multi_key> <colon> <parenleft>               : "☹️"  U2639 UFE0F   # WHITE FROWNING FACE EMOJI (overrides ☹ )
+<Multi_key> <colon> <parenleft>               : "☹️"  U2639 UFE0F   # WHITE FROWNING FACE EMOJI
 <Multi_key> <colon> <bracketleft>             : "☹️"  U2639 UFE0F   # WHITE FROWNING FACE EMOJI
 <Multi_key> <colon> <C>                       : "😞"  U1F61E        # DISAPPOINTED FACE
 <Multi_key> <colon> <D>                       : "😃"  U1F603        # SMILING FACE WITH OPEN MOUTH
@@ -3034,7 +3270,7 @@ include "%L"
 
 # Hearts (start with <3) - see geometric shapes section for other colored shapes 
 
-<Multi_key> <less> <3> <Return>     : "❤️"  U2764 UFE0F   # HEAVY BLACK HEART EMOJI (overrides ♥)
+<Multi_key> <less> <3> <Return>     : "❤️"  U2764 UFE0F   # HEAVY BLACK HEART EMOJI
 <Multi_key> <less> <3> <equal>      : "❤️‍🩹"  U2764 UFE0F U200D U1FA79   # MENDING HEART EMOJI
 <Multi_key> <less> <3> <greater> <less> : "💝"  U1F49D    # HEART WITH RIBBON
 <Multi_key> <less> <3> <exclam>     : "❣️"  U2763 UFE0F   # HEAVY HEART EXCLAMATION MARK ORNAMENT EMOJI
@@ -3705,7 +3941,6 @@ include "%L"
 <Multi_key> <8> <b> <a> <l> <l>     : "🎱"  U1F3B1        # BILLIARDS (8 BALL)
 
 <Multi_key> <b> <a> <n> <d>         : "🩹"  U1FA79        # ADHESIVE BANDAGE (conflicts with ă, use ua)
-<Multi_key> <b> <a> <r>             : "🧼"  U1F9FC        # BAR OF SOAP (conflicts with ă, use ua) (use choc for 🍫 and chartb for 📊)
 <Multi_key> <b> <i> <k> <i> <n> <i> : "👙"  U1F459        # BIKINI (conflicts with ĭ, use ui)
 <Multi_key> <b> <l> <i> <n> <d>     : "🦯"  U1F9AF        # PROBING CANE (🧑+ZWJ+🦯=🧑‍🦯)
 <Multi_key> <b> <o> <o> <t>         : "👢"  U1F462        # WOMANS BOOTS (conflicts with ŏ, use uo)
@@ -4816,7 +5051,7 @@ include "%L"
 <Multi_key> <numbersign> <less> <z>          : "𝆎" U1D18E    # MUSICAL SYMBOL Z
 <Multi_key> <numbersign> <less> <p>          : "𝆏" U1D18F    # MUSICAL SYMBOL PIANO
 <Multi_key> <numbersign> <less> <m>          : "𝆐" U1D190    # MUSICAL SYMBOL MEZZO
-<Multi_key> <numbersign> <less> <f>          : "𝆑" U1D191    # MUSICAL SYMBOL FORTE (conflicts with ♮, use #=)
+<Multi_key> <numbersign> <less> <f>          : "𝆑" U1D191    # MUSICAL SYMBOL FORTE
 <Multi_key> <numbersign> <less> <less>       : "𝆒" U1D192    # MUSICAL SYMBOL CRESCENDO
 <Multi_key> <numbersign> <less> <greater>    : "𝆓" U1D193    # MUSICAL SYMBOL DECRESCENDO
 <Multi_key> <numbersign> <greater> <greater> : "𝆓" U1D193    # MUSICAL SYMBOL DECRESCENDO
