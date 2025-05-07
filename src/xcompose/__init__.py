@@ -221,7 +221,7 @@ def _print_sorted(
 def validate(args: argparse.Namespace) -> None:
     """Validate compose file, looking for syntax errors, inconsistencies
     and conflicts."""
-    d: dict[Sequence[str], str] = {}
+    d: dict[Sequence[str], Definition] = {}
     file = args.file or get_xcompose_path(system=args.system)
     for defn in get_definitions(
         file,
@@ -280,23 +280,35 @@ def validate(args: argparse.Namespace) -> None:
             conflict = False
             for k, v in d.items():
                 n = min(len(k), len(defn.keys))
-                if k[:n] == defn.keys[:n] and v != defn.value:
+                if k[:n] == defn.keys[:n] and v.value != defn.value:
                     conflict = True
-                    if not any(
+                    if defn.file == v.file:
+                        print(
+                            f"[{file}#{defn.line_no}] Compose sequence "
+                            f"{' + '.join(defn.keys)} for {defn.value!r} conflicts with\n"
+                            f"  [...#{v.line_no}] {' + '.join(k)} for {v.value!r}"
+                        )
+                        break
+                    elif not any(
                         defn.comment is not None and x in defn.comment
                         for x in CONFLICT_MARKERS
                     ):
                         print(
                             f"[{file}#{defn.line_no}] Compose sequence "
-                            f"{' + '.join(defn.keys)} for {defn.value!r} "
-                            f"conflicts with {' + '.join(k)} for {v!r}\n"
+                            f"{' + '.join(defn.keys)} for {defn.value!r} conflicts with \n"
+                            f"  [{v.file}#{v.line_no}] {' + '.join(k)} for {v.value!r}\n"
                             "    to ignore this, include the string "
                             "'conflict' or 'override' in the comment"
                         )
                         break
 
-            if not conflict and any(
-                defn.comment is not None and x in defn.comment for x in CONFLICT_MARKERS
+            if (
+                not conflict
+                and not args.ignore_include
+                and any(
+                    defn.comment is not None and x in defn.comment
+                    for x in CONFLICT_MARKERS
+                )
             ):
                 print(
                     f"[{file}#{defn.line_no}] Compose sequence "
@@ -304,7 +316,7 @@ def validate(args: argparse.Namespace) -> None:
                     f"has superfluous conflict/override comment marker"
                 )
 
-        d[defn.keys] = defn.value
+        d[defn.keys] = defn
 
 
 def main() -> None:

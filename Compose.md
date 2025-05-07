@@ -24,10 +24,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (1016)
+### Non-Latin script characters (1112)
 * **Greek** (60): Ρέντιτ etc
-* **Cyrillic** (94): Ре́ддит etc
-* **Etruscan** (42): 𐌓𐌄𐌃𐌃𐌉𐌕 etc
+* **Cyrillic** (190): Ре́ддит etc
+* **Old Italic** (42): 𐌓𐌄𐌃𐌃𐌉𐌕 etc
 * **Arabic** (67): ⁧رِيدِيت⁩ etc
 * **Hebrew** (75): ⁧רֶדִיט⁩ etc
 * **Korean** (via jamo) (118): 레딧 etc
@@ -36,8 +36,8 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **International Morse Code** (76): ···---··· etc
 
-### Symbols (2185)
-* **Emoji** (1184): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+### Symbols (2184)
+* **Emoji** (1183): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (150): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
