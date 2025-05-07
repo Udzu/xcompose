@@ -1914,6 +1914,81 @@ include "%L"
 <Multi_key> <c> <G> <m>          : "ⱞ" U2C5E   # GLAGOLITIC SMALL LETTER LATINATE MYSLITE (conflicts)
 <Multi_key> <c> <G> <less> <c> <h> : "ⱟ" U2C5F   # GLAGOLITIC SMALL LETTER CAUDATE CHRIVI (conflicts)
 
+##################
+# (d) Devanagari #
+##################
+
+# (based on 7-bit ISO 15919)
+
+# Independent vowels
+
+<Multi_key> <d> <c> <a> <space>          : "अ" U0905   # DEVANAGARI LETTER A
+<Multi_key> <d> <c> <a> <a>              : "आ" U0906   # DEVANAGARI LETTER AA
+<Multi_key> <d> <c> <i> <space>          : "इ" U0907   # DEVANAGARI LETTER I
+<Multi_key> <d> <c> <i> <i>              : "ई" U0908   # DEVANAGARI LETTER II
+<Multi_key> <d> <c> <u> <space>          : "उ" U0909   # DEVANAGARI LETTER U
+<Multi_key> <d> <c> <u> <u>              : "ऊ" U090A   # DEVANAGARI LETTER UU
+<Multi_key> <d> <c> <comma> <r> <space>  : "ऋ" U090B   # DEVANAGARI LETTER VOCALIC R
+<Multi_key> <d> <c> <comma> <l> <space>  : "ऌ" U090C   # DEVANAGARI LETTER VOCALIC L
+<Multi_key> <d> <c> <asciicircum> <e>    : "ऍ" U090D   # DEVANAGARI LETTER CANDRA E
+<Multi_key> <d> <c> <e> <e>              : "ए" U090F   # DEVANAGARI LETTER E
+<Multi_key> <d> <c> <a> <i>              : "ऐ" U0910   # DEVANAGARI LETTER AI
+<Multi_key> <d> <c> <asciicircum> <o>    : "ऑ" U0911   # DEVANAGARI LETTER CANDRA O
+<Multi_key> <d> <c> <o> <o>              : "ओ" U0913   # DEVANAGARI LETTER O
+<Multi_key> <d> <c> <a> <u>              : "औ" U0914   # DEVANAGARI LETTER AU
+<Multi_key> <d> <c> <comma> <r> <r>      : "ॠ" U0960   # DEVANAGARI LETTER VOCALIC RR
+<Multi_key> <d> <c> <comma> <l> <l>      : "ॡ" U0961   # DEVANAGARI LETTER VOCALIC LL
+<Multi_key> <d> <c> <asciicircum> <a>    : "ॲ" U0972   # DEVANAGARI LETTER CANDRA A
+
+<Multi_key> <d> <x> <period> <a>         : "ऄ" U0904   # DEVANAGARI LETTER SHORT A
+<Multi_key> <d> <x> <period> <e>         : "ऎ" U090E   # DEVANAGARI LETTER SHORT E
+<Multi_key> <d> <x> <period> <o>         : "ऒ" U0912   # DEVANAGARI LETTER SHORT O
+<Multi_key> <d> <x> <o> <e>              : "ॳ" U0973   # DEVANAGARI LETTER OE
+<Multi_key> <d> <x> <o> <o> <e>          : "ॴ" U0974   # DEVANAGARI LETTER OOE
+<Multi_key> <d> <x> <a> <w>              : "ॵ" U0975   # DEVANAGARI LETTER AW
+<Multi_key> <d> <x> <u> <e>              : "ॶ" U0976   # DEVANAGARI LETTER UE
+<Multi_key> <d> <x> <u> <u> <e>          : "ॷ" U0977   # DEVANAGARI LETTER UUE
+
+# Consonants
+
+<Multi_key> <d> <c> <k> <space>          : "क" U0915   # DEVANAGARI LETTER KA
+<Multi_key> <d> <c> <k> <h>              : "ख" U0916   # DEVANAGARI LETTER KHA
+<Multi_key> <d> <c> <g> <space>          : "ग" U0917   # DEVANAGARI LETTER GA
+<Multi_key> <d> <c> <g> <h>              : "घ" U0918   # DEVANAGARI LETTER GHA
+<Multi_key> <d> <c> <semicolon> <n>      : "ङ" U0919   # DEVANAGARI LETTER NGA
+<Multi_key> <d> <c> <c> <space>          : "च" U091A   # DEVANAGARI LETTER CA
+<Multi_key> <d> <c> <c> <h>              : "छ" U091B   # DEVANAGARI LETTER CHA
+<Multi_key> <d> <c> <j> <space>          : "ज" U091C   # DEVANAGARI LETTER JA
+<Multi_key> <d> <c> <j> <h>              : "झ" U091D   # DEVANAGARI LETTER JHA
+<Multi_key> <d> <c> <asciitilde> <n>     : "ञ" U091E   # DEVANAGARI LETTER NYA
+<Multi_key> <d> <c> <period> <t> <space> : "ट" U091F   # DEVANAGARI LETTER TTA
+<Multi_key> <d> <c> <period> <t> <h>     : "ठ" U0920   # DEVANAGARI LETTER TTHA
+<Multi_key> <d> <c> <period> <d> <space> : "ड" U0921   # DEVANAGARI LETTER DDA
+<Multi_key> <d> <c> <period> <d> <h>     : "ढ" U0922   # DEVANAGARI LETTER DDHA
+<Multi_key> <d> <c> <period> <n>         : "ण" U0923   # DEVANAGARI LETTER NNA
+<Multi_key> <d> <c> <t> <space>          : "त" U0924   # DEVANAGARI LETTER TA
+<Multi_key> <d> <c> <t> <h>              : "थ" U0925   # DEVANAGARI LETTER THA
+<Multi_key> <d> <c> <d> <space>          : "द" U0926   # DEVANAGARI LETTER DA
+<Multi_key> <d> <c> <d> <h>              : "ध" U0927   # DEVANAGARI LETTER DHA
+<Multi_key> <d> <c> <n>                  : "न" U0928   # DEVANAGARI LETTER NA
+<Multi_key> <d> <c> <underscore> <n>     : "ऩ" U0929   # DEVANAGARI LETTER NNNA
+<Multi_key> <d> <c> <p> <space>          : "प" U092A   # DEVANAGARI LETTER PA
+<Multi_key> <d> <c> <p> <h>              : "फ" U092B   # DEVANAGARI LETTER PHA
+<Multi_key> <d> <c> <b> <space>          : "ब" U092C   # DEVANAGARI LETTER BA
+<Multi_key> <d> <c> <b> <h>              : "भ" U092D   # DEVANAGARI LETTER BHA
+<Multi_key> <d> <c> <m>                  : "म" U092E   # DEVANAGARI LETTER MA
+<Multi_key> <d> <c> <y>                  : "य" U092F   # DEVANAGARI LETTER YA
+<Multi_key> <d> <c> <r>                  : "र" U0930   # DEVANAGARI LETTER RA
+<Multi_key> <d> <c> <underscore> <r>     : "ऱ" U0931   # DEVANAGARI LETTER RRA
+<Multi_key> <d> <c> <l>                  : "ल" U0932   # DEVANAGARI LETTER LA
+<Multi_key> <d> <c> <period> <l>         : "ळ" U0933   # DEVANAGARI LETTER LLA
+<Multi_key> <d> <c> <underscore> <l>     : "ऴ" U0934   # DEVANAGARI LETTER LLLA
+<Multi_key> <d> <c> <v>                  : "व" U0935   # DEVANAGARI LETTER VA
+<Multi_key> <d> <c> <semicolon> <s>      : "श" U0936   # DEVANAGARI LETTER SHA
+<Multi_key> <d> <c> <period> <s>         : "ष" U0937   # DEVANAGARI LETTER SSA
+<Multi_key> <d> <c> <s>                  : "स" U0938   # DEVANAGARI LETTER SA
+<Multi_key> <d> <c> <h>                  : "ह" U0939   # DEVANAGARI LETTER HA
+
 #############
 # (g) Greek #
 #############
