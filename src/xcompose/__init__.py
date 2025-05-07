@@ -285,8 +285,9 @@ def validate(args: argparse.Namespace) -> None:
                     if defn.file == v.file:
                         print(
                             f"[{file}#{defn.line_no}] Compose sequence "
-                            f"{' + '.join(defn.keys)} for {defn.value!r} conflicts with\n"
-                            f"  [...#{v.line_no}] {' + '.join(k)} for {v.value!r}"
+                            f"{' + '.join(defn.keys)} for {defn.value!r} "
+                            "conflicts with\n  "
+                            f"[...#{v.line_no}] {' + '.join(k)} for {v.value!r}"
                         )
                         break
                     elif not any(
@@ -295,8 +296,9 @@ def validate(args: argparse.Namespace) -> None:
                     ):
                         print(
                             f"[{file}#{defn.line_no}] Compose sequence "
-                            f"{' + '.join(defn.keys)} for {defn.value!r} conflicts with \n"
-                            f"  [{v.file}#{v.line_no}] {' + '.join(k)} for {v.value!r}\n"
+                            f"{' + '.join(defn.keys)} for {defn.value!r} "
+                            "conflicts with \n  "
+                            f"[{v.file}#{v.line_no}] {' + '.join(k)} for {v.value!r}\n"
                             "    to ignore this, include the string "
                             "'conflict' or 'override' in the comment"
                         )
