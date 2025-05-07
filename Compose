@@ -1692,6 +1692,126 @@ include "%L"
 <Multi_key> <b> <f> <l>     : "⠰" U2830   # BRAILLE PATTERN DOTS-56 (LETTER SIGN)
 <Multi_key> <b> <f> <t>     : "⠠⠄" U2820 U2804  # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-3 (TERMINATION SIGN)
 
+########################
+# (c) Cyrillic/Russian #
+########################
+
+<Multi_key> <c> <c> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A (conflicts with č, use vc)
+<Multi_key> <c> <c> <B>          : "Б"  U0411   # CYRILLIC CAPITAL LETTER BE (conflicts)
+<Multi_key> <c> <c> <V>          : "В"  U0412   # CYRILLIC CAPITAL LETTER VE (conflicts)
+<Multi_key> <c> <c> <G>          : "Г"  U0413   # CYRILLIC CAPITAL LETTER GHE (conflicts)
+<Multi_key> <c> <c> <D>          : "Д"  U0414   # CYRILLIC CAPITAL LETTER DE (conflicts)
+<Multi_key> <c> <c> <Y> <E>      : "Е"  U0415   # CYRILLIC CAPITAL LETTER IE (conflicts)
+<Multi_key> <c> <c> <Y> <O>      : "Ё"  U0401   # CYRILLIC CAPITAL LETTER IO (conflicts)
+<Multi_key> <c> <c> <quotedbl> <E> : "Ё"  U0401   # CYRILLIC CAPITAL LETTER IO (conflicts)
+<Multi_key> <c> <x> <Z> <H>      : "Ж"  U0416   # CYRILLIC CAPITAL LETTER ZHE
+<Multi_key> <c> <c> <Z>          : "З"  U0417   # CYRILLIC CAPITAL LETTER ZE (conflicts)
+<Multi_key> <c> <c> <I>          : "И"  U0418   # CYRILLIC CAPITAL LETTER I (conflicts)
+<Multi_key> <c> <c> <J>          : "Й"  U0419   # CYRILLIC CAPITAL LETTER SHORT I (conflicts)
+<Multi_key> <c> <c> <K>          : "К"  U041A   # CYRILLIC CAPITAL LETTER KA (conflicts)
+<Multi_key> <c> <c> <L>          : "Л"  U041B   # CYRILLIC CAPITAL LETTER EL (conflicts)
+<Multi_key> <c> <c> <M>          : "М"  U041C   # CYRILLIC CAPITAL LETTER EM (conflicts)
+<Multi_key> <c> <c> <N>          : "Н"  U041D   # CYRILLIC CAPITAL LETTER EN (conflicts)
+<Multi_key> <c> <c> <O>          : "О"  U041E   # CYRILLIC CAPITAL LETTER O (conflicts)
+<Multi_key> <c> <c> <P>          : "П"  U041F   # CYRILLIC CAPITAL LETTER PE (conflicts)
+<Multi_key> <c> <c> <R>          : "Р"  U0420   # CYRILLIC CAPITAL LETTER ER (conflicts)
+<Multi_key> <c> <c> <S>          : "С"  U0421   # CYRILLIC CAPITAL LETTER ES (conflicts)
+<Multi_key> <c> <c> <T>          : "Т"  U0422   # CYRILLIC CAPITAL LETTER TE (conflicts)
+<Multi_key> <c> <c> <U>          : "У"  U0423   # CYRILLIC CAPITAL LETTER U (conflicts)
+<Multi_key> <c> <c> <F>          : "Ф"  U0424   # CYRILLIC CAPITAL LETTER EF (conflicts)
+<Multi_key> <c> <c> <H>          : "Х"  U0425   # CYRILLIC CAPITAL LETTER HA (conflicts)
+<Multi_key> <c> <c> <C>          : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE (conflicts)
+<Multi_key> <c> <x> <T> <S> <Return> : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE
+<Multi_key> <c> <x> <C> <H>      : "Ч"  U0427   # CYRILLIC CAPITAL LETTER CHE
+<Multi_key> <c> <x> <S> <H>      : "Ш"  U0428   # CYRILLIC CAPITAL LETTER SHA
+<Multi_key> <c> <x> <S> <C> <H>  : "Щ"  U0429   # CYRILLIC CAPITAL LETTER SHCHA
+<Multi_key> <c> <c> <quotedbl> <quotedbl> : "Ъ"  U042A   # CYRILLIC CAPITAL LETTER HARD SIGN (conflicts)
+<Multi_key> <c> <c> <Y> <Return> : "Ы"  U042B   # CYRILLIC CAPITAL LETTER YERU (conflicts)
+<Multi_key> <c> <c> <apostrophe> <apostrophe> : "Ь"  U042C   # CYRILLIC CAPITAL LETTER SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <E>          : "Э"  U042D   # CYRILLIC CAPITAL LETTER E (conflicts)
+<Multi_key> <c> <c> <Y> <U>      : "Ю"  U042E   # CYRILLIC CAPITAL LETTER YU (conflicts)
+<Multi_key> <c> <c> <Y> <A>      : "Я"  U042F   # CYRILLIC CAPITAL LETTER YA (conflicts)
+# Ukrainian
+<Multi_key> <c> <x> <G> <G>      : "Ґ"  U0490   # CYRILLIC CAPITAL LETTER GHE WITH UPTURN
+<Multi_key> <c> <x> <Y> <E>      : "Є"  U0404   # CYRILLIC CAPITAL LETTER UKRAINIAN IE
+<Multi_key> <c> <x> <I>          : "І"  U0406   # CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <Y> <I>      : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
+<Multi_key> <c> <x> <quotedbl> <I> : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
+# Belarussian
+<Multi_key> <c> <x> <u> <Y>      : "Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
+<Multi_key> <c> <x> <Y> <Y>      : "Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
+# Serbian
+<Multi_key> <c> <x> <D> <J>      : "Ђ"  U0402   # CYRILLIC CAPITAL LETTER DJE
+<Multi_key> <c> <x> <L> <J>      : "Љ"  U0409   # CYRILLIC CAPITAL LETTER LJE
+<Multi_key> <c> <x> <N> <J>      : "Њ"  U040A   # CYRILLIC CAPITAL LETTER NJE
+<Multi_key> <c> <x> <T> <S> <H>  : "Ћ"  U040B   # CYRILLIC CAPITAL LETTER TSHE
+<Multi_key> <c> <x> <D> <Z> <H>  : "Џ"  U040F   # CYRILLIC CAPITAL LETTER DZHE
+# Macedonian
+<Multi_key> <c> <x> <G> <J>      : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
+<Multi_key> <c> <x> <apostrophe> <G> : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
+<Multi_key> <c> <x> <D> <Z> <Return> : "Ѕ"  U0405   # CYRILLIC CAPITAL LETTER DZE
+<Multi_key> <c> <x> <J>          : "Ј"  U0408   # CYRILLIC CAPITAL LETTER JE
+<Multi_key> <c> <x> <K> <J>      : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
+<Multi_key> <c> <x> <apostrophe> <K> : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
+
+<Multi_key> <c> <c> <a>          : "а"  U0430   # CYRILLIC SMALL LETTER A (conflicts)
+<Multi_key> <c> <c> <b>          : "б"  U0431   # CYRILLIC SMALL LETTER BE (conflicts)
+<Multi_key> <c> <c> <v>          : "в"  U0432   # CYRILLIC SMALL LETTER VE (conflicts)
+<Multi_key> <c> <c> <g>          : "г"  U0433   # CYRILLIC SMALL LETTER GHE (conflicts)
+<Multi_key> <c> <c> <d>          : "д"  U0434   # CYRILLIC SMALL LETTER DE (conflicts)
+<Multi_key> <c> <c> <y> <e>      : "е"  U0435   # CYRILLIC SMALL LETTER IE (conflicts)
+<Multi_key> <c> <c> <y> <o>      : "ё"  U0451   # CYRILLIC SMALL LETTER IO (conflicts)
+<Multi_key> <c> <c> <quotedbl> <e> : "ё"  U0451   # CYRILLIC SMALL LETTER IO (conflicts)
+<Multi_key> <c> <x> <z> <h>      : "ж"  U0436   # CYRILLIC SMALL LETTER ZHE
+<Multi_key> <c> <c> <z>          : "з"  U0437   # CYRILLIC SMALL LETTER ZE (conflicts)
+<Multi_key> <c> <c> <i>          : "и"  U0438   # CYRILLIC SMALL LETTER I (conflicts)
+<Multi_key> <c> <c> <j>          : "й"  U0439   # CYRILLIC SMALL LETTER SHORT I (conflicts)
+<Multi_key> <c> <c> <k>          : "к"  U043A   # CYRILLIC SMALL LETTER KA (conflicts)
+<Multi_key> <c> <c> <l>          : "л"  U043B   # CYRILLIC SMALL LETTER EL (conflicts)
+<Multi_key> <c> <c> <m>          : "м"  U043C   # CYRILLIC SMALL LETTER EM (conflicts)
+<Multi_key> <c> <c> <n>          : "н"  U043D   # CYRILLIC SMALL LETTER EN (conflicts)
+<Multi_key> <c> <c> <o>          : "о"  U043E   # CYRILLIC SMALL LETTER O (conflicts)
+<Multi_key> <c> <c> <p>          : "п"  U043F   # CYRILLIC SMALL LETTER PE (conflicts)
+<Multi_key> <c> <c> <r>          : "р"  U0440   # CYRILLIC SMALL LETTER ER (conflicts)
+<Multi_key> <c> <c> <s>          : "с"  U0441   # CYRILLIC SMALL LETTER ES (conflicts)
+<Multi_key> <c> <c> <t>          : "т"  U0442   # CYRILLIC SMALL LETTER TE (conflicts)
+<Multi_key> <c> <c> <u>          : "у"  U0443   # CYRILLIC SMALL LETTER U (conflicts)
+<Multi_key> <c> <c> <f>          : "ф"  U0444   # CYRILLIC SMALL LETTER EF (conflicts)
+<Multi_key> <c> <c> <h>          : "х"  U0445   # CYRILLIC SMALL LETTER HA (conflicts)
+<Multi_key> <c> <c> <c>          : "ц"  U0446   # CYRILLIC SMALL LETTER TSE (conflicts)
+<Multi_key> <c> <x> <t> <s> <Return> : "ц"  U0446   # CYRILLIC SMALL LETTER TSE
+<Multi_key> <c> <x> <c> <h>      : "ч"  U0447   # CYRILLIC SMALL LETTER CHE
+<Multi_key> <c> <x> <s> <h>      : "ш"  U0448   # CYRILLIC SMALL LETTER SHA
+<Multi_key> <c> <x> <s> <c> <h>  : "щ"  U0449   # CYRILLIC SMALL LETTER SHCHA
+<Multi_key> <c> <c> <quotedbl> <Return> : "ъ"  U044A   # CYRILLIC SMALL LETTER HARD SIGN (conflicts)
+<Multi_key> <c> <c> <y> <Return> : "ы"  U044B   # CYRILLIC SMALL LETTER YERU (conflicts)
+<Multi_key> <c> <c> <apostrophe> <Return> : "ь"  U044C   # CYRILLIC SMALL LETTER SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <e>          : "э"  U044D   # CYRILLIC SMALL LETTER E (conflicts)
+<Multi_key> <c> <c> <y> <u>      : "ю"  U044E   # CYRILLIC SMALL LETTER YU (conflicts)
+<Multi_key> <c> <c> <y> <a>      : "я"  U044F   # CYRILLIC SMALL LETTER YA (conflicts)
+# Ukrainian
+<Multi_key> <c> <x> <g> <g>      : "ґ"  U0491   # CYRILLIC SMALL LETTER GHE WITH UPTURN
+<Multi_key> <c> <x> <y> <e>      : "є"  U0454   # CYRILLIC SMALL LETTER UKRAINIAN IE
+<Multi_key> <c> <x> <i>          : "і"  U0456   # CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <y> <i>      : "ї"  U0457   # CYRILLIC SMALL LETTER YI
+<Multi_key> <c> <x> <quotedbl> <i> : "ї"  U0457   # CYRILLIC SMALL LETTER YI
+# Belarussian
+<Multi_key> <c> <x> <u> <y>      : "ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
+<Multi_key> <c> <x> <y> <y>      : "ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
+# Serbian
+<Multi_key> <c> <x> <d> <j>      : "ђ"  U0452   # CYRILLIC SMALL LETTER DJE
+<Multi_key> <c> <x> <l> <j>      : "љ"  U0459   # CYRILLIC SMALL LETTER LJE
+<Multi_key> <c> <x> <n> <j>      : "њ"  U045A   # CYRILLIC SMALL LETTER NJE
+<Multi_key> <c> <x> <t> <s> <h>  : "ћ"  U045B   # CYRILLIC SMALL LETTER TSHE
+<Multi_key> <c> <x> <d> <z> <h>  : "џ"  U045F   # CYRILLIC SMALL LETTER DZHE
+# Macedonian
+<Multi_key> <c> <x> <g> <j>      : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
+<Multi_key> <c> <x> <apostrophe> <g> : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
+<Multi_key> <c> <x> <d> <z> <Return> : "ѕ"  U0455   # CYRILLIC SMALL LETTER DZE
+<Multi_key> <c> <x> <j>          : "ј"  U0458   # CYRILLIC SMALL LETTER JE
+<Multi_key> <c> <x> <k> <j>      : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
+<Multi_key> <c> <x> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
+
 #############
 # (g) Greek #
 #############
@@ -2523,126 +2643,6 @@ include "%L"
 <Multi_key> <m> <p> <s> <n>     : "···-·"  # MORSE CODE PROSIGN SN (VERIFIED)
 <Multi_key> <m> <p> <s> <o> <s> : "···---···"  # MORSE CODE PROSIGN SOS (DISTRESS SIGNAL)
 <Multi_key> <m> <p> <v> <e>     : "···-·"  # MORSE CODE PROSIGN VE (VERIFIED)
-
-########################
-# (c) Cyrillic/Russian #
-########################
-
-<Multi_key> <c> <c> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A (conflicts with č, use vc)
-<Multi_key> <c> <c> <B>          : "Б"  U0411   # CYRILLIC CAPITAL LETTER BE (conflicts)
-<Multi_key> <c> <c> <V>          : "В"  U0412   # CYRILLIC CAPITAL LETTER VE (conflicts)
-<Multi_key> <c> <c> <G>          : "Г"  U0413   # CYRILLIC CAPITAL LETTER GHE (conflicts)
-<Multi_key> <c> <c> <D>          : "Д"  U0414   # CYRILLIC CAPITAL LETTER DE (conflicts)
-<Multi_key> <c> <c> <Y> <E>      : "Е"  U0415   # CYRILLIC CAPITAL LETTER IE (conflicts)
-<Multi_key> <c> <c> <Y> <O>      : "Ё"  U0401   # CYRILLIC CAPITAL LETTER IO (conflicts)
-<Multi_key> <c> <c> <quotedbl> <E> : "Ё"  U0401   # CYRILLIC CAPITAL LETTER IO (conflicts)
-<Multi_key> <c> <x> <Z> <H>      : "Ж"  U0416   # CYRILLIC CAPITAL LETTER ZHE
-<Multi_key> <c> <c> <Z>          : "З"  U0417   # CYRILLIC CAPITAL LETTER ZE (conflicts)
-<Multi_key> <c> <c> <I>          : "И"  U0418   # CYRILLIC CAPITAL LETTER I (conflicts)
-<Multi_key> <c> <c> <J>          : "Й"  U0419   # CYRILLIC CAPITAL LETTER SHORT I (conflicts)
-<Multi_key> <c> <c> <K>          : "К"  U041A   # CYRILLIC CAPITAL LETTER KA (conflicts)
-<Multi_key> <c> <c> <L>          : "Л"  U041B   # CYRILLIC CAPITAL LETTER EL (conflicts)
-<Multi_key> <c> <c> <M>          : "М"  U041C   # CYRILLIC CAPITAL LETTER EM (conflicts)
-<Multi_key> <c> <c> <N>          : "Н"  U041D   # CYRILLIC CAPITAL LETTER EN (conflicts)
-<Multi_key> <c> <c> <O>          : "О"  U041E   # CYRILLIC CAPITAL LETTER O (conflicts)
-<Multi_key> <c> <c> <P>          : "П"  U041F   # CYRILLIC CAPITAL LETTER PE (conflicts)
-<Multi_key> <c> <c> <R>          : "Р"  U0420   # CYRILLIC CAPITAL LETTER ER (conflicts)
-<Multi_key> <c> <c> <S>          : "С"  U0421   # CYRILLIC CAPITAL LETTER ES (conflicts)
-<Multi_key> <c> <c> <T>          : "Т"  U0422   # CYRILLIC CAPITAL LETTER TE (conflicts)
-<Multi_key> <c> <c> <U>          : "У"  U0423   # CYRILLIC CAPITAL LETTER U (conflicts)
-<Multi_key> <c> <c> <F>          : "Ф"  U0424   # CYRILLIC CAPITAL LETTER EF (conflicts)
-<Multi_key> <c> <c> <H>          : "Х"  U0425   # CYRILLIC CAPITAL LETTER HA (conflicts)
-<Multi_key> <c> <c> <C>          : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE (conflicts)
-<Multi_key> <c> <x> <T> <S> <Return> : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE
-<Multi_key> <c> <x> <C> <H>      : "Ч"  U0427   # CYRILLIC CAPITAL LETTER CHE
-<Multi_key> <c> <x> <S> <H>      : "Ш"  U0428   # CYRILLIC CAPITAL LETTER SHA
-<Multi_key> <c> <x> <S> <C> <H>  : "Щ"  U0429   # CYRILLIC CAPITAL LETTER SHCHA
-<Multi_key> <c> <c> <quotedbl> <quotedbl> : "Ъ"  U042A   # CYRILLIC CAPITAL LETTER HARD SIGN (conflicts)
-<Multi_key> <c> <c> <Y> <Return> : "Ы"  U042B   # CYRILLIC CAPITAL LETTER YERU (conflicts)
-<Multi_key> <c> <c> <apostrophe> <apostrophe> : "Ь"  U042C   # CYRILLIC CAPITAL LETTER SOFT SIGN (conflicts)
-<Multi_key> <c> <c> <E>          : "Э"  U042D   # CYRILLIC CAPITAL LETTER E (conflicts)
-<Multi_key> <c> <c> <Y> <U>      : "Ю"  U042E   # CYRILLIC CAPITAL LETTER YU (conflicts)
-<Multi_key> <c> <c> <Y> <A>      : "Я"  U042F   # CYRILLIC CAPITAL LETTER YA (conflicts)
-# Ukrainian
-<Multi_key> <c> <x> <G> <G>      : "Ґ"  U0490   # CYRILLIC CAPITAL LETTER GHE WITH UPTURN
-<Multi_key> <c> <x> <Y> <E>      : "Є"  U0404   # CYRILLIC CAPITAL LETTER UKRAINIAN IE
-<Multi_key> <c> <x> <I>          : "І"  U0406   # CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
-<Multi_key> <c> <x> <Y> <I>      : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
-<Multi_key> <c> <x> <quotedbl> <I> : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
-# Belarussian
-<Multi_key> <c> <x> <u> <Y>      : "Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
-<Multi_key> <c> <x> <Y> <Y>      : "Ў"   U040E   # CYRILLIC CAPITAL LETTER SHORT U
-# Serbian
-<Multi_key> <c> <x> <D> <J>      : "Ђ"  U0402   # CYRILLIC CAPITAL LETTER DJE
-<Multi_key> <c> <x> <L> <J>      : "Љ"  U0409   # CYRILLIC CAPITAL LETTER LJE
-<Multi_key> <c> <x> <N> <J>      : "Њ"  U040A   # CYRILLIC CAPITAL LETTER NJE
-<Multi_key> <c> <x> <T> <S> <H>  : "Ћ"  U040B   # CYRILLIC CAPITAL LETTER TSHE
-<Multi_key> <c> <x> <D> <Z> <H>  : "Џ"  U040F   # CYRILLIC CAPITAL LETTER DZHE
-# Macedonian
-<Multi_key> <c> <x> <G> <J>      : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
-<Multi_key> <c> <x> <apostrophe> <G> : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
-<Multi_key> <c> <x> <D> <Z> <Return> : "Ѕ"  U0405   # CYRILLIC CAPITAL LETTER DZE
-<Multi_key> <c> <x> <J>          : "Ј"  U0408   # CYRILLIC CAPITAL LETTER JE
-<Multi_key> <c> <x> <K> <J>      : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
-<Multi_key> <c> <x> <apostrophe> <K> : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
-
-<Multi_key> <c> <c> <a>          : "а"  U0430   # CYRILLIC SMALL LETTER A (conflicts)
-<Multi_key> <c> <c> <b>          : "б"  U0431   # CYRILLIC SMALL LETTER BE (conflicts)
-<Multi_key> <c> <c> <v>          : "в"  U0432   # CYRILLIC SMALL LETTER VE (conflicts)
-<Multi_key> <c> <c> <g>          : "г"  U0433   # CYRILLIC SMALL LETTER GHE (conflicts)
-<Multi_key> <c> <c> <d>          : "д"  U0434   # CYRILLIC SMALL LETTER DE (conflicts)
-<Multi_key> <c> <c> <y> <e>      : "е"  U0435   # CYRILLIC SMALL LETTER IE (conflicts)
-<Multi_key> <c> <c> <y> <o>      : "ё"  U0451   # CYRILLIC SMALL LETTER IO (conflicts)
-<Multi_key> <c> <c> <quotedbl> <e> : "ё"  U0451   # CYRILLIC SMALL LETTER IO (conflicts)
-<Multi_key> <c> <x> <z> <h>      : "ж"  U0436   # CYRILLIC SMALL LETTER ZHE
-<Multi_key> <c> <c> <z>          : "з"  U0437   # CYRILLIC SMALL LETTER ZE (conflicts)
-<Multi_key> <c> <c> <i>          : "и"  U0438   # CYRILLIC SMALL LETTER I (conflicts)
-<Multi_key> <c> <c> <j>          : "й"  U0439   # CYRILLIC SMALL LETTER SHORT I (conflicts)
-<Multi_key> <c> <c> <k>          : "к"  U043A   # CYRILLIC SMALL LETTER KA (conflicts)
-<Multi_key> <c> <c> <l>          : "л"  U043B   # CYRILLIC SMALL LETTER EL (conflicts)
-<Multi_key> <c> <c> <m>          : "м"  U043C   # CYRILLIC SMALL LETTER EM (conflicts)
-<Multi_key> <c> <c> <n>          : "н"  U043D   # CYRILLIC SMALL LETTER EN (conflicts)
-<Multi_key> <c> <c> <o>          : "о"  U043E   # CYRILLIC SMALL LETTER O (conflicts)
-<Multi_key> <c> <c> <p>          : "п"  U043F   # CYRILLIC SMALL LETTER PE (conflicts)
-<Multi_key> <c> <c> <r>          : "р"  U0440   # CYRILLIC SMALL LETTER ER (conflicts)
-<Multi_key> <c> <c> <s>          : "с"  U0441   # CYRILLIC SMALL LETTER ES (conflicts)
-<Multi_key> <c> <c> <t>          : "т"  U0442   # CYRILLIC SMALL LETTER TE (conflicts)
-<Multi_key> <c> <c> <u>          : "у"  U0443   # CYRILLIC SMALL LETTER U (conflicts)
-<Multi_key> <c> <c> <f>          : "ф"  U0444   # CYRILLIC SMALL LETTER EF (conflicts)
-<Multi_key> <c> <c> <h>          : "х"  U0445   # CYRILLIC SMALL LETTER HA (conflicts)
-<Multi_key> <c> <c> <c>          : "ц"  U0446   # CYRILLIC SMALL LETTER TSE (conflicts)
-<Multi_key> <c> <x> <t> <s> <Return> : "ц"  U0446   # CYRILLIC SMALL LETTER TSE
-<Multi_key> <c> <x> <c> <h>      : "ч"  U0447   # CYRILLIC SMALL LETTER CHE
-<Multi_key> <c> <x> <s> <h>      : "ш"  U0448   # CYRILLIC SMALL LETTER SHA
-<Multi_key> <c> <x> <s> <c> <h>  : "щ"  U0449   # CYRILLIC SMALL LETTER SHCHA
-<Multi_key> <c> <c> <quotedbl> <Return> : "ъ"  U044A   # CYRILLIC SMALL LETTER HARD SIGN (conflicts)
-<Multi_key> <c> <c> <y> <Return> : "ы"  U044B   # CYRILLIC SMALL LETTER YERU (conflicts)
-<Multi_key> <c> <c> <apostrophe> <Return> : "ь"  U044C   # CYRILLIC SMALL LETTER SOFT SIGN (conflicts)
-<Multi_key> <c> <c> <e>          : "э"  U044D   # CYRILLIC SMALL LETTER E (conflicts)
-<Multi_key> <c> <c> <y> <u>      : "ю"  U044E   # CYRILLIC SMALL LETTER YU (conflicts)
-<Multi_key> <c> <c> <y> <a>      : "я"  U044F   # CYRILLIC SMALL LETTER YA (conflicts)
-# Ukrainian
-<Multi_key> <c> <x> <g> <g>      : "ґ"  U0491   # CYRILLIC SMALL LETTER GHE WITH UPTURN
-<Multi_key> <c> <x> <y> <e>      : "є"  U0454   # CYRILLIC SMALL LETTER UKRAINIAN IE
-<Multi_key> <c> <x> <i>          : "і"  U0456   # CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
-<Multi_key> <c> <x> <y> <i>      : "ї"  U0457   # CYRILLIC SMALL LETTER YI
-<Multi_key> <c> <x> <quotedbl> <i> : "ї"  U0457   # CYRILLIC SMALL LETTER YI
-# Belarussian
-<Multi_key> <c> <x> <u> <y>      : "ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
-<Multi_key> <c> <x> <y> <y>      : "ў"   U045E   # CYRILLIC SMALL LETTER SHORT U
-# Serbian
-<Multi_key> <c> <x> <d> <j>      : "ђ"  U0452   # CYRILLIC SMALL LETTER DJE
-<Multi_key> <c> <x> <l> <j>      : "љ"  U0459   # CYRILLIC SMALL LETTER LJE
-<Multi_key> <c> <x> <n> <j>      : "њ"  U045A   # CYRILLIC SMALL LETTER NJE
-<Multi_key> <c> <x> <t> <s> <h>  : "ћ"  U045B   # CYRILLIC SMALL LETTER TSHE
-<Multi_key> <c> <x> <d> <z> <h>  : "џ"  U045F   # CYRILLIC SMALL LETTER DZHE
-# Macedonian
-<Multi_key> <c> <x> <g> <j>      : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
-<Multi_key> <c> <x> <apostrophe> <g> : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
-<Multi_key> <c> <x> <d> <z> <Return> : "ѕ"  U0455   # CYRILLIC SMALL LETTER DZE
-<Multi_key> <c> <x> <j>          : "ј"  U0458   # CYRILLIC SMALL LETTER JE
-<Multi_key> <c> <x> <k> <j>      : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
-<Multi_key> <c> <x> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 
 ##############################################################
 # (z) Zhuyin/Bopomofo (and some additional Zhongwen/Chinese) #
