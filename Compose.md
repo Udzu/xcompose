@@ -24,8 +24,8 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (1219)
-* **Arabic** (67): ⁧رِيدِيت⁩ etc
+### Non-Latin script characters (1278)
+* **Arabic** (and Syriac) (126): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ etc
 * **Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
 * **Devanagari** (107): रेडिट etc

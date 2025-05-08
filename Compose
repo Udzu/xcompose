@@ -1500,9 +1500,9 @@ include "%L"
 
 # Convention: script prefix + glyph type (c = characters x = extra characters 0 = numbers ; = punctuation) + code
 
-##############
-# (a) Arabic #
-##############
+###########################
+# (a) Arabic (and Syriac) #
+###########################
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -1523,6 +1523,7 @@ include "%L"
 <Multi_key> <a> <x> <t> : "ط" U0637    # ARABIC LETTER TAH
 <Multi_key> <a> <x> <z> : "ظ" U0638    # ARABIC LETTER ZAH
 <Multi_key> <a> <c> <3> : "ع" U0639    # ARABIC LETTER AIN
+<Multi_key> <a> <c> <grave> : "ع" U0639    # ARABIC LETTER AIN
 <Multi_key> <a> <c> <G> : "غ" U063A    # ARABIC LETTER GHAIN
 <Multi_key> <a> <c> <f> : "ف" U0641    # ARABIC LETTER FEH
 <Multi_key> <a> <c> <q> : "ق" U0642    # ARABIC LETTER QAF
@@ -1583,6 +1584,73 @@ include "%L"
 <Multi_key> <a> <0> <7> : "٧"  U0667   # ARABIC-INDIC DIGIT SEVEN
 <Multi_key> <a> <0> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <0> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
+
+# (s/S = Syriac)
+
+<Multi_key> <a> <s> <a> : "ܐ" U0710   # SYRIAC LETTER ALAPH
+<Multi_key> <a> <s> <asciicircum> <a> : "ܑ" U0711   # SYRIAC LETTER SUPERSCRIPT ALAPH
+<Multi_key> <a> <s> <b> : "ܒ" U0712   # SYRIAC LETTER BETH
+<Multi_key> <a> <s> <g> : "ܓ" U0713   # SYRIAC LETTER GAMAL
+<Multi_key> <a> <s> <d> : "ܕ" U0715   # SYRIAC LETTER DALATH
+<Multi_key> <a> <s> <h> : "ܗ" U0717   # SYRIAC LETTER HE
+<Multi_key> <a> <s> <w> : "ܘ" U0718   # SYRIAC LETTER WAW
+<Multi_key> <a> <s> <z> : "ܙ" U0719   # SYRIAC LETTER ZAIN
+<Multi_key> <a> <s> <H> : "ܚ" U071A   # SYRIAC LETTER HETH
+<Multi_key> <a> <S> <h> : "ܚ" U071A   # SYRIAC LETTER HETH
+<Multi_key> <a> <s> <T> : "ܛ" U071B   # SYRIAC LETTER TETH
+<Multi_key> <a> <S> <t> : "ܛ" U071B   # SYRIAC LETTER TETH
+<Multi_key> <a> <s> <y> : "ܝ" U071D   # SYRIAC LETTER YUDH
+<Multi_key> <a> <S> <y> <h> : "ܞ" U071E   # SYRIAC LETTER YUDH HE
+<Multi_key> <a> <s> <k> : "ܟ" U071F   # SYRIAC LETTER KAPH
+<Multi_key> <a> <s> <l> : "ܠ" U0720   # SYRIAC LETTER LAMADH
+<Multi_key> <a> <s> <m> : "ܡ" U0721   # SYRIAC LETTER MIM
+<Multi_key> <a> <s> <n> : "ܢ" U0722   # SYRIAC LETTER NUN
+<Multi_key> <a> <s> <s> : "ܣ" U0723   # SYRIAC LETTER SEMKATH
+<Multi_key> <a> <s> <less> <s> : "ܤ" U0724   # SYRIAC LETTER FINAL SEMKATH
+<Multi_key> <a> <s> <e> : "ܥ" U0725   # SYRIAC LETTER E
+<Multi_key> <a> <s> <grave> : "ܥ" U0725   # SYRIAC LETTER E
+<Multi_key> <a> <s> <p> : "ܦ" U0726   # SYRIAC LETTER PE
+<Multi_key> <a> <s> <greater> <p> : "ܧ" U0727   # SYRIAC LETTER REVERSED PE
+<Multi_key> <a> <S> <s> : "ܨ" U0728   # SYRIAC LETTER SADHE
+<Multi_key> <a> <s> <q> : "ܩ" U0729   # SYRIAC LETTER QAPH
+<Multi_key> <a> <s> <r> : "ܪ" U072A   # SYRIAC LETTER RISH
+<Multi_key> <a> <s> <S> : "ܫ" U072B   # SYRIAC LETTER SHIN
+<Multi_key> <a> <s> <t> : "ܬ" U072C   # SYRIAC LETTER TAW
+<Multi_key> <a> <S> <b> : "ܭ" U072D   # SYRIAC LETTER PERSIAN BHETH
+<Multi_key> <a> <S> <g> : "ܮ" U072E   # SYRIAC LETTER PERSIAN GHAMAL
+<Multi_key> <a> <S> <d> : "ܯ" U072F   # SYRIAC LETTER PERSIAN DHALATH
+<Multi_key> <a> <S> <z> : "ݍ" U074D   # SYRIAC LETTER SOGDIAN ZHAIN
+<Multi_key> <a> <S> <k> : "ݎ" U074E   # SYRIAC LETTER SOGDIAN KHAPH
+<Multi_key> <a> <S> <f> : "ݏ" U074F   # SYRIAC LETTER SOGDIAN FE
+
+<Multi_key> <a> <s> <asciicircum> <D> <Return>     : "ܰ" U0730   # SYRIAC PTHAHA ABOVE
+<Multi_key> <a> <s> <underscore> <D> <Return>      : "ܱ" U0731   # SYRIAC PTHAHA BELOW
+<Multi_key> <a> <s> <apostrophe> <underscore> <apostrophe> <Return> : "ܲ" U0732   # SYRIAC PTHAHA DOTTED
+<Multi_key> <a> <s> <asciicircum> <6> <Return>     : "ܳ" U0733   # SYRIAC ZQAPHA ABOVE
+<Multi_key> <a> <s> <underscore> <6> <Return>      : "ܴ" U0734   # SYRIAC ZQAPHA BELOW
+<Multi_key> <a> <s> <apostrophe> <apostrophe> <Return> : "ܵ" U0735   # SYRIAC ZQAPHA DOTTED
+<Multi_key> <a> <s> <asciicircum> <E> <Return>     : "ܶ" U0736   # SYRIAC RBASA ABOVE
+<Multi_key> <a> <s> <underscore> <E> <Return>      : "ܷ" U0737   # SYRIAC RBASA BELOW
+<Multi_key> <a> <s> <underscore> <apostrophe> <apostrophe> <Return> : "ܸ" U0738   # SYRIAC DOTTED ZLAMA HORIZONTAL
+<Multi_key> <a> <s> <underscore> <apostrophe> <slash> <Return> : "ܹ" U0739   # SYRIAC DOTTED ZLAMA ANGULAR
+<Multi_key> <a> <s> <asciicircum> <H> <Return>     : "ܺ" U073A   # SYRIAC HBASA ABOVE
+<Multi_key> <a> <s> <underscore> <H> <Return>      : "ܻ" U073B   # SYRIAC HBASA BELOW
+<Multi_key> <a> <s> <underscore> <apostrophe> <Return> : "ܼ" U073C   # SYRIAC HBASA-ESASA DOTTED
+<Multi_key> <a> <s> <asciicircum> <T> <Return>     : "ܽ" U073D   # SYRIAC ESASA ABOVE
+<Multi_key> <a> <s> <underscore> <T> <Return>      : "ܾ" U073E   # SYRIAC ESASA BELOW
+<Multi_key> <a> <s> <apostrophe> <Return> : "ܿ" U073F   # SYRIAC RWAHA
+
+<Multi_key> <a> <s> <less> <period> <Return>       : "݀" U0740   # SYRIAC FEMININE DOT
+<Multi_key> <a> <s> <period> <Return>              : "݁" U0741   # SYRIAC QUSHSHAYA
+<Multi_key> <a> <s> <underscore> <period> <Return> : "݂" U0742   # SYRIAC RUKKAKHA
+<Multi_key> <a> <s> <colon> <Return>               : "݃" U0743   # SYRIAC TWO VERTICAL DOTS ABOVE
+<Multi_key> <a> <s> <underscore> <colon> <Return>  : "݄" U0744   # SYRIAC TWO VERTICAL DOTS BELOW
+<Multi_key> <a> <s> <period> <colon> <Return>      : "݅" U0745   # SYRIAC THREE DOTS ABOVE
+<Multi_key> <a> <s> <underscore> <colon> <period> <Return> : "݆" U0746   # SYRIAC THREE DOTS BELOW
+<Multi_key> <a> <s> <slash> <Return>               : "݇" U0747   # SYRIAC OBLIQUE LINE ABOVE
+<Multi_key> <a> <s> <underscore> <backslash> <Return> : "݈" U0748   # SYRIAC OBLIQUE LINE BELOW
+<Multi_key> <a> <s> <backslash> <Return>           : "݉" U0749   # SYRIAC MUSIC
+<Multi_key> <a> <s> <plus> <Return>                : "݊" U074A   # SYRIAC BARREKH
 
 ###############################
 # (b) Unified English Braille #
@@ -3046,6 +3114,7 @@ include "%L"
 <Multi_key> <backslash> <slash>       : "∨"  U2228   # LOGICAL OR
 <Multi_key> <bar> <period>            : "∣"  U2223   # DIVIDES
 <Multi_key> <bar> <slash>             : "∤"  U2224   # DOES NOT DIVIDE
+<Multi_key> <colon> <a> <s>           : "∷" U2237    # PROPORTION (AS)
 <Multi_key> <asciitilde> <minus>      : "≃"  U2243   # ASYMPTOTICALLY EQUAL TO
 <Multi_key> <slash> <asciitilde> <minus> : "≄"  U2244   # NOT ASYMPTOTICALLY EQUAL TO
 <Multi_key> <asciitilde> <equal>      : "≅"  U2245   # APPROXIMATELY EQUAL TO (ISOMORPHIC)
@@ -3112,7 +3181,6 @@ include "%L"
 <Multi_key> <P> <H> <I>                 : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
 <Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 
-<Multi_key> <a> <s>                     : "∷" U2237    # PROPORTION (AS)
 <Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va) (use hat for 🧢)
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
 <Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
