@@ -1415,7 +1415,7 @@ include "%L"
 <Multi_key> <dollar> <minus>       : "ㅡ" U3161   # HANGUL LETTER EU
 <Multi_key> <dollar> <asterisk>    : "𐌟" U1031F   # OLD ITALIC LETTER ESS
 <Multi_key> <dollar> <slash>       : "Ⳇ" U2CC6    # COPTIC CAPITAL LETTER OLD COPTIC ESH
-<Multi_key> <dollar> <less>        : "ᐸ" U1438    # CANADIAN SYLLABICS PA
+<Multi_key> <dollar> <less>        : "ⵦ" U2D66    # TIFINAGH LETTER YE
 <Multi_key> <dollar> <greater>     : "𖼿" U16F3F   # MIAO LETTER ARCHAIC ZZA
 <Multi_key> <dollar> <question>    : "ɂ̣" U0242 U0323    # LATIN SMALL LETTER GLOTTAL STOP COMBINING DOT BELOW
 <Multi_key> <dollar> <percent>     : "ºⳆₒ" U00BA U2CC6 U2092    # MASCULINE ORDINAL INDICATOR COPTIC CAPITAL LETTER OLD COPTIC ESH LATIN SUBSCRIPT SMALL LETTER O
@@ -1500,9 +1500,9 @@ include "%L"
 
 # Convention: script prefix + glyph type (c = characters x = extra characters 0 = numbers ; = punctuation) + code
 
-###########################
-# (a) Arabic (and Syriac) #
-###########################
+##########################################
+# (a) Arabic (and Syriac & Neo-Tifinagh) #
+##########################################
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -1651,6 +1651,53 @@ include "%L"
 <Multi_key> <a> <s> <underscore> <backslash> <Return> : "݈" U0748   # SYRIAC OBLIQUE LINE BELOW
 <Multi_key> <a> <s> <backslash> <Return>           : "݉" U0749   # SYRIAC MUSIC
 <Multi_key> <a> <s> <plus> <Return>                : "݊" U074A   # SYRIAC BARREKH
+
+# (t/T = Neo-Tifinagh)
+
+<Multi_key> <a> <t> <a> : "ⴰ" U2D30   # TIFINAGH LETTER YA
+<Multi_key> <a> <t> <b> : "ⴱ" U2D31   # TIFINAGH LETTER YAB
+<Multi_key> <a> <t> <g> : "ⴳ" U2D33   # TIFINAGH LETTER YAG
+<Multi_key> <a> <t> <d> : "ⴷ" U2D37   # TIFINAGH LETTER YAD
+<Multi_key> <a> <t> <D> : "ⴹ" U2D39   # TIFINAGH LETTER YADD
+<Multi_key> <a> <t> <e> : "ⴻ" U2D3B   # TIFINAGH LETTER YEY
+<Multi_key> <a> <t> <f> : "ⴼ" U2D3C   # TIFINAGH LETTER YAF
+<Multi_key> <a> <t> <k> : "ⴽ" U2D3D   # TIFINAGH LETTER YAK
+<Multi_key> <a> <t> <h> : "ⵀ" U2D40   # TIFINAGH LETTER YAH
+<Multi_key> <a> <t> <H> : "ⵃ" U2D43   # TIFINAGH LETTER YAHH
+<Multi_key> <a> <t> <grave> : "ⵄ" U2D44   # TIFINAGH LETTER YAA
+<Multi_key> <a> <t> <o> : "ⵄ" U2D44   # TIFINAGH LETTER YAA
+<Multi_key> <a> <T> <k> <h> : "ⵅ" U2D45   # TIFINAGH LETTER YAKH
+<Multi_key> <a> <t> <q> : "ⵇ" U2D47   # TIFINAGH LETTER YAQ
+<Multi_key> <a> <t> <i> : "ⵉ" U2D49   # TIFINAGH LETTER YI
+<Multi_key> <a> <t> <j> : "ⵊ" U2D4A   # TIFINAGH LETTER YAZH
+<Multi_key> <a> <t> <l> : "ⵍ" U2D4D   # TIFINAGH LETTER YAL
+<Multi_key> <a> <t> <m> : "ⵎ" U2D4E   # TIFINAGH LETTER YAM
+<Multi_key> <a> <t> <n> : "ⵏ" U2D4F   # TIFINAGH LETTER YAN
+<Multi_key> <a> <t> <u> : "ⵓ" U2D53   # TIFINAGH LETTER YU
+<Multi_key> <a> <t> <r> : "ⵔ" U2D54   # TIFINAGH LETTER YAR
+<Multi_key> <a> <t> <R> : "ⵕ" U2D55   # TIFINAGH LETTER YARR
+<Multi_key> <a> <T> <g> <h> : "ⵖ" U2D56   # TIFINAGH LETTER YAGH
+<Multi_key> <a> <t> <s> : "ⵙ" U2D59   # TIFINAGH LETTER YAS
+<Multi_key> <a> <t> <S> : "ⵚ" U2D5A   # TIFINAGH LETTER YASS
+<Multi_key> <a> <t> <c> : "ⵛ" U2D5B   # TIFINAGH LETTER YASH
+<Multi_key> <a> <t> <t> : "ⵜ" U2D5C   # TIFINAGH LETTER YAT
+<Multi_key> <a> <t> <T> : "ⵟ" U2D5F   # TIFINAGH LETTER YATT
+<Multi_key> <a> <t> <w> : "ⵡ" U2D61   # TIFINAGH LETTER YAW
+<Multi_key> <a> <t> <asciicircum> <w> : "ⵯ" U2D6F   # TIFINAGH MODIFIER LETTER LABIALIZATION MARK
+<Multi_key> <a> <t> <y> : "ⵢ" U2D62   # TIFINAGH LETTER YAY
+<Multi_key> <a> <t> <z> : "ⵣ" U2D63   # TIFINAGH LETTER YAZ
+<Multi_key> <a> <t> <Z> : "ⵥ" U2D65   # TIFINAGH LETTER YAZZ
+
+<Multi_key> <a> <T> <b> <h> : "ⴲ" U2D32   # TIFINAGH LETTER YABH
+<Multi_key> <a> <T> <g> <H> : "ⴴ" U2D34   # TIFINAGH LETTER YAGHH
+<Multi_key> <a> <T> <D> <h> : "ⴺ" U2D3A   # TIFINAGH LETTER YADDH
+<Multi_key> <a> <T> <k> <H> : "ⴿ" U2D3F   # TIFINAGH LETTER YAKHH
+<Multi_key> <a> <t> <p> : "ⵒ" U2D52   # TIFINAGH LETTER YAP
+<Multi_key> <a> <T> <t> <h> : "ⵝ" U2D5D   # TIFINAGH LETTER YATH
+<Multi_key> <a> <t> <v> : "ⵠ" U2D60   # TIFINAGH LETTER YAV
+<Multi_key> <a> <T> <d> <j> : "ⴵ" U2D35   # TIFINAGH LETTER BERBER ACADEMY YAJ
+<Multi_key> <a> <T> <h> : "ⵁ" U2D41   # TIFINAGH LETTER BERBER ACADEMY YAH
+<Multi_key> <a> <T> <c> <h> : "ⵞ" U2D5E   # TIFINAGH LETTER YACH
 
 ################
 # (A) Armenian #
@@ -4084,7 +4131,6 @@ include "%L"
 <Multi_key> <a> <n> <g> <s> <t>     : "😧"  U1F627        # ANGUISHED FACE (ANGST)
 <Multi_key> <a> <n> <x>             : "😰"  U1F630        # FACE WITH OPEN MOUTH AND COLD SWEAT (ANXIOUS)
 <Multi_key> <a> <r> <g> <h>         : "😱"  U1F631        # FACE SCREAMING IN FEAR (ARGH)
-<Multi_key> <a> <t> <c> <h> <o> <o> : "🤧"  U1F927        # SNEEZING FACE (ATCHOO) (alternatively sneeze)
 <Multi_key> <b> <a> <b> <y>         : "👶"  U1F476        # BABY (conflicts with ă, use ua)
 <Multi_key> <b> <a> <g> <s>         : "🫩"  U1FAE9        # FACE WITH BAGS UNDER EYES (conflicts with ă, use ua)
 <Multi_key> <b> <e> <a> <m> <y>     : "😄"  U1F604        # SMILING FACE WITH OPEN MOUTH AND SMILING EYES (BEAMY) (conflicts with ĕ, use ue)
@@ -4816,7 +4862,6 @@ include "%L"
 <Multi_key> <y> <a> <y>             : "🎉"  U1F389        # PARTY POPPER (YAY)
 
 <Multi_key> <a> <n> <g> <e> <r>     : "💢"  U1F4A2        # ANGER SYMBOL
-<Multi_key> <a> <t> <o> <m>         : "⚛️"  U269B UFE0F   # ATOM EMOJI
 <Multi_key> <b> <a> <n> <g>         : "💥"  U1F4A5        # COLLISION SYMBOL (BANG) (conflicts with ă, use ua)
 <Multi_key> <b> <i> <o> <h> <a> <z> : "☣️"  U2623 UFE0F   # BIOHAZARD SIGN EMOJI (conflicts with ĭ, use ui)
 <Multi_key> <c> <i> <n> <e> <m> <a> : "🎦"  U1F3A6        # CINEMA (conflicts with vi, use ǐ)
