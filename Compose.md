@@ -24,18 +24,18 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (1219)
-* **Greek** (60): Ρέντιτ etc
-* **Cyrillic** (190): Ре́ддит etc
-* **Old Italic** (42): 𐌓𐌄𐌃𐌃𐌉𐌕 etc
-* **Arabic** (67): ⁧رِيدِيت⁩ etc
-* **Hebrew** (75): ⁧רֶדִיט⁩ etc
-* **Korean** (via jamo) (118): 레딧 etc
-* **Japanese** (kana) (302): 「レヂィット」 etc
-* **Bopomofo** (104): ㄏㄨㄥˊㄉㄧˊ etc
+### Non-Latin script characters (1417)
+* **Arabic** (and Syriac) (126): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ etc
+* **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
 * **Devanagari** (107): रेडिट etc
-* **Unified English Braille** (78): ⠗⠫⠙⠊⠞ etc
-* **International Morse Code** (76): ···---··· etc
+* **Greek** (and Coptic) (124): Ρέντιτ Ⲣⲉⲇⲇⲓⲧ etc
+* **Hebrew** (and Phoenician) (75): ⁧רֶדִיט⁩ ⁧𐤓𐤃𐤕⁩ etc
+* **Korean** (via jamo) (118): 레딧 etc
+* **Japanese** (mainly kanas) (302): 「レヂィット」 etc
+* **Old Italic** (and Runic) (117): 𐌓𐌄𐌃𐌃𐌉𐌕 ᚱᛖᛞᛞᛁᛏ etc
+* **Zhuyin** (104): ㄏㄨㄥˊㄉㄧˊ etc
+* **Braille** (78): ⠗⠫⠙⠊⠞ etc
+* **Morse Code** (76): ···---··· etc
 
 ### Symbols (2184)
 * **Emoji** (1183): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc

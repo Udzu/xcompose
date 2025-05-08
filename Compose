@@ -1500,9 +1500,9 @@ include "%L"
 
 # Convention: script prefix + glyph type (c = characters x = extra characters 0 = numbers ; = punctuation) + code
 
-##############
-# (a) Arabic #
-##############
+###########################
+# (a) Arabic (and Syriac) #
+###########################
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -1523,6 +1523,7 @@ include "%L"
 <Multi_key> <a> <x> <t> : "ط" U0637    # ARABIC LETTER TAH
 <Multi_key> <a> <x> <z> : "ظ" U0638    # ARABIC LETTER ZAH
 <Multi_key> <a> <c> <3> : "ع" U0639    # ARABIC LETTER AIN
+<Multi_key> <a> <c> <grave> : "ع" U0639    # ARABIC LETTER AIN
 <Multi_key> <a> <c> <G> : "غ" U063A    # ARABIC LETTER GHAIN
 <Multi_key> <a> <c> <f> : "ف" U0641    # ARABIC LETTER FEH
 <Multi_key> <a> <c> <q> : "ق" U0642    # ARABIC LETTER QAF
@@ -1583,6 +1584,73 @@ include "%L"
 <Multi_key> <a> <0> <7> : "٧"  U0667   # ARABIC-INDIC DIGIT SEVEN
 <Multi_key> <a> <0> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <0> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
+
+# (s/S = Syriac)
+
+<Multi_key> <a> <s> <a> : "ܐ" U0710   # SYRIAC LETTER ALAPH
+<Multi_key> <a> <s> <asciicircum> <a> : "ܑ" U0711   # SYRIAC LETTER SUPERSCRIPT ALAPH
+<Multi_key> <a> <s> <b> : "ܒ" U0712   # SYRIAC LETTER BETH
+<Multi_key> <a> <s> <g> : "ܓ" U0713   # SYRIAC LETTER GAMAL
+<Multi_key> <a> <s> <d> : "ܕ" U0715   # SYRIAC LETTER DALATH
+<Multi_key> <a> <s> <h> : "ܗ" U0717   # SYRIAC LETTER HE
+<Multi_key> <a> <s> <w> : "ܘ" U0718   # SYRIAC LETTER WAW
+<Multi_key> <a> <s> <z> : "ܙ" U0719   # SYRIAC LETTER ZAIN
+<Multi_key> <a> <s> <H> : "ܚ" U071A   # SYRIAC LETTER HETH
+<Multi_key> <a> <S> <h> : "ܚ" U071A   # SYRIAC LETTER HETH
+<Multi_key> <a> <s> <T> : "ܛ" U071B   # SYRIAC LETTER TETH
+<Multi_key> <a> <S> <t> : "ܛ" U071B   # SYRIAC LETTER TETH
+<Multi_key> <a> <s> <y> : "ܝ" U071D   # SYRIAC LETTER YUDH
+<Multi_key> <a> <S> <y> <h> : "ܞ" U071E   # SYRIAC LETTER YUDH HE
+<Multi_key> <a> <s> <k> : "ܟ" U071F   # SYRIAC LETTER KAPH
+<Multi_key> <a> <s> <l> : "ܠ" U0720   # SYRIAC LETTER LAMADH
+<Multi_key> <a> <s> <m> : "ܡ" U0721   # SYRIAC LETTER MIM
+<Multi_key> <a> <s> <n> : "ܢ" U0722   # SYRIAC LETTER NUN
+<Multi_key> <a> <s> <s> : "ܣ" U0723   # SYRIAC LETTER SEMKATH
+<Multi_key> <a> <s> <less> <s> : "ܤ" U0724   # SYRIAC LETTER FINAL SEMKATH
+<Multi_key> <a> <s> <e> : "ܥ" U0725   # SYRIAC LETTER E
+<Multi_key> <a> <s> <grave> : "ܥ" U0725   # SYRIAC LETTER E
+<Multi_key> <a> <s> <p> : "ܦ" U0726   # SYRIAC LETTER PE
+<Multi_key> <a> <s> <greater> <p> : "ܧ" U0727   # SYRIAC LETTER REVERSED PE
+<Multi_key> <a> <S> <s> : "ܨ" U0728   # SYRIAC LETTER SADHE
+<Multi_key> <a> <s> <q> : "ܩ" U0729   # SYRIAC LETTER QAPH
+<Multi_key> <a> <s> <r> : "ܪ" U072A   # SYRIAC LETTER RISH
+<Multi_key> <a> <s> <S> : "ܫ" U072B   # SYRIAC LETTER SHIN
+<Multi_key> <a> <s> <t> : "ܬ" U072C   # SYRIAC LETTER TAW
+<Multi_key> <a> <S> <b> : "ܭ" U072D   # SYRIAC LETTER PERSIAN BHETH
+<Multi_key> <a> <S> <g> : "ܮ" U072E   # SYRIAC LETTER PERSIAN GHAMAL
+<Multi_key> <a> <S> <d> : "ܯ" U072F   # SYRIAC LETTER PERSIAN DHALATH
+<Multi_key> <a> <S> <z> : "ݍ" U074D   # SYRIAC LETTER SOGDIAN ZHAIN
+<Multi_key> <a> <S> <k> : "ݎ" U074E   # SYRIAC LETTER SOGDIAN KHAPH
+<Multi_key> <a> <S> <f> : "ݏ" U074F   # SYRIAC LETTER SOGDIAN FE
+
+<Multi_key> <a> <s> <asciicircum> <D> <Return>     : "ܰ" U0730   # SYRIAC PTHAHA ABOVE
+<Multi_key> <a> <s> <underscore> <D> <Return>      : "ܱ" U0731   # SYRIAC PTHAHA BELOW
+<Multi_key> <a> <s> <apostrophe> <underscore> <apostrophe> <Return> : "ܲ" U0732   # SYRIAC PTHAHA DOTTED
+<Multi_key> <a> <s> <asciicircum> <6> <Return>     : "ܳ" U0733   # SYRIAC ZQAPHA ABOVE
+<Multi_key> <a> <s> <underscore> <6> <Return>      : "ܴ" U0734   # SYRIAC ZQAPHA BELOW
+<Multi_key> <a> <s> <apostrophe> <apostrophe> <Return> : "ܵ" U0735   # SYRIAC ZQAPHA DOTTED
+<Multi_key> <a> <s> <asciicircum> <E> <Return>     : "ܶ" U0736   # SYRIAC RBASA ABOVE
+<Multi_key> <a> <s> <underscore> <E> <Return>      : "ܷ" U0737   # SYRIAC RBASA BELOW
+<Multi_key> <a> <s> <underscore> <apostrophe> <apostrophe> <Return> : "ܸ" U0738   # SYRIAC DOTTED ZLAMA HORIZONTAL
+<Multi_key> <a> <s> <underscore> <apostrophe> <slash> <Return> : "ܹ" U0739   # SYRIAC DOTTED ZLAMA ANGULAR
+<Multi_key> <a> <s> <asciicircum> <H> <Return>     : "ܺ" U073A   # SYRIAC HBASA ABOVE
+<Multi_key> <a> <s> <underscore> <H> <Return>      : "ܻ" U073B   # SYRIAC HBASA BELOW
+<Multi_key> <a> <s> <underscore> <apostrophe> <Return> : "ܼ" U073C   # SYRIAC HBASA-ESASA DOTTED
+<Multi_key> <a> <s> <asciicircum> <T> <Return>     : "ܽ" U073D   # SYRIAC ESASA ABOVE
+<Multi_key> <a> <s> <underscore> <T> <Return>      : "ܾ" U073E   # SYRIAC ESASA BELOW
+<Multi_key> <a> <s> <apostrophe> <Return> : "ܿ" U073F   # SYRIAC RWAHA
+
+<Multi_key> <a> <s> <less> <period> <Return>       : "݀" U0740   # SYRIAC FEMININE DOT
+<Multi_key> <a> <s> <period> <Return>              : "݁" U0741   # SYRIAC QUSHSHAYA
+<Multi_key> <a> <s> <underscore> <period> <Return> : "݂" U0742   # SYRIAC RUKKAKHA
+<Multi_key> <a> <s> <colon> <Return>               : "݃" U0743   # SYRIAC TWO VERTICAL DOTS ABOVE
+<Multi_key> <a> <s> <underscore> <colon> <Return>  : "݄" U0744   # SYRIAC TWO VERTICAL DOTS BELOW
+<Multi_key> <a> <s> <period> <colon> <Return>      : "݅" U0745   # SYRIAC THREE DOTS ABOVE
+<Multi_key> <a> <s> <underscore> <colon> <period> <Return> : "݆" U0746   # SYRIAC THREE DOTS BELOW
+<Multi_key> <a> <s> <slash> <Return>               : "݇" U0747   # SYRIAC OBLIQUE LINE ABOVE
+<Multi_key> <a> <s> <underscore> <backslash> <Return> : "݈" U0748   # SYRIAC OBLIQUE LINE BELOW
+<Multi_key> <a> <s> <backslash> <Return>           : "݉" U0749   # SYRIAC MUSIC
+<Multi_key> <a> <s> <plus> <Return>                : "݊" U074A   # SYRIAC BARREKH
 
 ###############################
 # (b) Unified English Braille #
@@ -1692,9 +1760,9 @@ include "%L"
 <Multi_key> <b> <f> <l>     : "⠰" U2830   # BRAILLE PATTERN DOTS-56 (LETTER SIGN)
 <Multi_key> <b> <f> <t>     : "⠠⠄" U2820 U2804  # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-3 (TERMINATION SIGN)
 
-########################
-# (c) Cyrillic/Russian #
-########################
+#################################
+# (c) Cyrillic (and Glagolitic) #
+#################################
 
 <Multi_key> <c> <c> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A (conflicts with č, use vc)
 <Multi_key> <c> <c> <B>          : "Б"  U0411   # CYRILLIC CAPITAL LETTER BE (conflicts)
@@ -2048,9 +2116,9 @@ include "%L"
 <Multi_key> <d> <semicolon> <2> <bar> : "॥" U0965   # DEVANAGARI DOUBLE DANDA
 <Multi_key> <d> <semicolon> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
 
-#############
-# (g) Greek #
-#############
+##########################
+# (g) Greek (and Coptic) #
+##########################
 
 <Multi_key> <g> <c> <A> : "Α"  U0391   # GREEK CAPITAL LETTER ALPHA
 <Multi_key> <g> <c> <B> : "Β"  U0392   # GREEK CAPITAL LETTER BETA
@@ -2076,6 +2144,7 @@ include "%L"
 <Multi_key> <g> <c> <F> : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
 <Multi_key> <g> <x> <P> <H> : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI (alternatively gcF)
 <Multi_key> <g> <c> <C> : "Χ"  U03A7   # GREEK CAPITAL LETTER CHI
+<Multi_key> <g> <x> <K> <H> : "Χ"  U03A7   # GREEK CAPITAL LETTER CHI
 <Multi_key> <g> <x> <P> <S> : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 <Multi_key> <g> <x> <O>     : "Ω"  U03A9   # GREEK CAPITAL LETTER OMEGA
 
@@ -2105,6 +2174,7 @@ include "%L"
 <Multi_key> <g> <c> <f> : "φ"  U03C6   # GREEK SMALL LETTER PHI
 <Multi_key> <g> <x> <p> <h> : "φ"  U03C6   # GREEK SMALL LETTER PHI (alternatively gcf)
 <Multi_key> <g> <c> <c> : "χ"  U03C7   # GREEK SMALL LETTER CHI
+<Multi_key> <g> <x> <k> <h> : "χ"  U03C7   # GREEK SMALL LETTER CHI
 <Multi_key> <g> <x> <p> <s> : "ψ"  U03C8   # GREEK SMALL LETTER PSI
 <Multi_key> <g> <x> <o>     : "ω"  U03C9   # GREEK SMALL LETTER OMEGA
 
@@ -2123,9 +2193,78 @@ include "%L"
 <Multi_key> <g> <0> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
 <Multi_key> <g> <0> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
 
-##############
-# (h) Hebrew #
-##############
+# (p/P = Coptic)
+
+<Multi_key> <g> <p> <A> : "Ⲁ" U2C80   # COPTIC CAPITAL LETTER ALFA
+<Multi_key> <g> <p> <a> : "ⲁ" U2C81   # COPTIC SMALL LETTER ALFA
+<Multi_key> <g> <p> <V> : "Ⲃ" U2C82   # COPTIC CAPITAL LETTER VIDA
+<Multi_key> <g> <p> <v> : "ⲃ" U2C83   # COPTIC SMALL LETTER VIDA
+<Multi_key> <g> <p> <G> : "Ⲅ" U2C84   # COPTIC CAPITAL LETTER GAMMA
+<Multi_key> <g> <p> <g> : "ⲅ" U2C85   # COPTIC SMALL LETTER GAMMA
+<Multi_key> <g> <p> <D> : "Ⲇ" U2C86   # COPTIC CAPITAL LETTER DALDA
+<Multi_key> <g> <p> <d> : "ⲇ" U2C87   # COPTIC SMALL LETTER DALDA
+<Multi_key> <g> <p> <E> : "Ⲉ" U2C88   # COPTIC CAPITAL LETTER EIE
+<Multi_key> <g> <p> <e> : "ⲉ" U2C89   # COPTIC SMALL LETTER EIE
+<Multi_key> <g> <p> <W> : "Ⲋ" U2C8A   # COPTIC CAPITAL LETTER SOU
+<Multi_key> <g> <p> <w> : "ⲋ" U2C8B   # COPTIC SMALL LETTER SOU
+<Multi_key> <g> <p> <Z> : "Ⲍ" U2C8C   # COPTIC CAPITAL LETTER ZATA
+<Multi_key> <g> <p> <z> : "ⲍ" U2C8D   # COPTIC SMALL LETTER ZATA
+<Multi_key> <g> <p> <H> : "Ⲏ" U2C8E   # COPTIC CAPITAL LETTER HATE
+<Multi_key> <g> <p> <h> : "ⲏ" U2C8F   # COPTIC SMALL LETTER HATE
+<Multi_key> <g> <P> <T> <H> : "Ⲑ" U2C90   # COPTIC CAPITAL LETTER THETHE
+<Multi_key> <g> <P> <t> <h> : "ⲑ" U2C91   # COPTIC SMALL LETTER THETHE
+<Multi_key> <g> <p> <I> : "Ⲓ" U2C92   # COPTIC CAPITAL LETTER IAUDA
+<Multi_key> <g> <p> <i> : "ⲓ" U2C93   # COPTIC SMALL LETTER IAUDA
+<Multi_key> <g> <p> <K> : "Ⲕ" U2C94   # COPTIC CAPITAL LETTER KAPA
+<Multi_key> <g> <p> <k> : "ⲕ" U2C95   # COPTIC SMALL LETTER KAPA
+<Multi_key> <g> <p> <L> : "Ⲗ" U2C96   # COPTIC CAPITAL LETTER LAULA
+<Multi_key> <g> <p> <l> : "ⲗ" U2C97   # COPTIC SMALL LETTER LAULA
+<Multi_key> <g> <p> <M> : "Ⲙ" U2C98   # COPTIC CAPITAL LETTER MI
+<Multi_key> <g> <p> <m> : "ⲙ" U2C99   # COPTIC SMALL LETTER MI
+<Multi_key> <g> <p> <N> : "Ⲛ" U2C9A   # COPTIC CAPITAL LETTER NI
+<Multi_key> <g> <p> <n> : "ⲛ" U2C9B   # COPTIC SMALL LETTER NI
+<Multi_key> <g> <p> <X> : "Ⲝ" U2C9C   # COPTIC CAPITAL LETTER KSI
+<Multi_key> <g> <p> <x> : "ⲝ" U2C9D   # COPTIC SMALL LETTER KSI
+<Multi_key> <g> <p> <O> : "Ⲟ" U2C9E   # COPTIC CAPITAL LETTER O
+<Multi_key> <g> <p> <o> : "ⲟ" U2C9F   # COPTIC SMALL LETTER O
+<Multi_key> <g> <p> <P> : "Ⲡ" U2CA0   # COPTIC CAPITAL LETTER PI
+<Multi_key> <g> <p> <p> : "ⲡ" U2CA1   # COPTIC SMALL LETTER PI
+<Multi_key> <g> <p> <R> : "Ⲣ" U2CA2   # COPTIC CAPITAL LETTER RO
+<Multi_key> <g> <p> <r> : "ⲣ" U2CA3   # COPTIC SMALL LETTER RO
+<Multi_key> <g> <p> <S> : "Ⲥ" U2CA4   # COPTIC CAPITAL LETTER SIMA
+<Multi_key> <g> <p> <s> : "ⲥ" U2CA5   # COPTIC SMALL LETTER SIMA
+<Multi_key> <g> <p> <T> : "Ⲧ" U2CA6   # COPTIC CAPITAL LETTER TAU
+<Multi_key> <g> <p> <t> : "ⲧ" U2CA7   # COPTIC SMALL LETTER TAU
+<Multi_key> <g> <p> <U> : "Ⲩ" U2CA8   # COPTIC CAPITAL LETTER UA
+<Multi_key> <g> <p> <Y> : "Ⲩ" U2CA8   # COPTIC CAPITAL LETTER UA
+<Multi_key> <g> <p> <u> : "ⲩ" U2CA9   # COPTIC SMALL LETTER UA
+<Multi_key> <g> <p> <y> : "ⲩ" U2CA9   # COPTIC SMALL LETTER UA
+<Multi_key> <g> <P> <P> <H> : "Ⲫ" U2CAA   # COPTIC CAPITAL LETTER FI
+<Multi_key> <g> <P> <p> <h> : "ⲫ" U2CAB   # COPTIC SMALL LETTER FI
+<Multi_key> <g> <p> <C> : "Ⲭ" U2CAC   # COPTIC CAPITAL LETTER KHI
+<Multi_key> <g> <p> <c> : "ⲭ" U2CAD   # COPTIC SMALL LETTER KHI
+<Multi_key> <g> <P> <P> <S> : "Ⲯ" U2CAE   # COPTIC CAPITAL LETTER PSI
+<Multi_key> <g> <P> <p> <s> : "ⲯ" U2CAF   # COPTIC SMALL LETTER PSI
+<Multi_key> <g> <P> <O> : "Ⲱ" U2CB0   # COPTIC CAPITAL LETTER OOU
+<Multi_key> <g> <P> <o> : "ⲱ" U2CB1   # COPTIC SMALL LETTER OOU
+<Multi_key> <g> <P> <S> <H> : "Ϣ" U03E2   # COPTIC CAPITAL LETTER SHEI
+<Multi_key> <g> <P> <s> <h> : "ϣ" U03E3   # COPTIC SMALL LETTER SHEI
+<Multi_key> <g> <p> <F> : "Ϥ" U03E4   # COPTIC CAPITAL LETTER FEI
+<Multi_key> <g> <p> <f> : "ϥ" U03E5   # COPTIC SMALL LETTER FEI
+<Multi_key> <g> <P> <K> <H> : "Ϧ" U03E6   # COPTIC CAPITAL LETTER KHEI
+<Multi_key> <g> <P> <k> <h> : "ϧ" U03E7   # COPTIC SMALL LETTER KHEI
+<Multi_key> <g> <P> <H> : "Ϩ" U03E8   # COPTIC CAPITAL LETTER HORI
+<Multi_key> <g> <P> <h> : "ϩ" U03E9   # COPTIC SMALL LETTER HORI
+<Multi_key> <g> <p> <J> : "Ϫ" U03EA   # COPTIC CAPITAL LETTER GANGIA
+<Multi_key> <g> <p> <j> : "ϫ" U03EB   # COPTIC SMALL LETTER GANGIA
+<Multi_key> <g> <P> <C> <H> : "Ϭ" U03EC   # COPTIC CAPITAL LETTER SHIMA
+<Multi_key> <g> <P> <c> <h> : "ϭ" U03ED   # COPTIC SMALL LETTER SHIMA
+<Multi_key> <g> <P> <T> <I> : "Ϯ" U03EE   # COPTIC CAPITAL LETTER DEI
+<Multi_key> <g> <P> <t> <i> : "ϯ" U03EF   # COPTIC SMALL LETTER DEI
+
+###############################
+# (h) Hebrew (and Phoenician) #
+###############################
 
 <Multi_key> <h> <c> <a>        : "א"  U05D0   # HEBREW LETTER ALEF
 <Multi_key> <h> <c> <apostrophe> : "א"  U05D0   # HEBREW LETTER ALEF
@@ -2716,62 +2855,6 @@ include "%L"
 <Multi_key> <k> <c> <y> <i>          : "ㅢ"  U3162   # HANGUL LETTER YI
 <Multi_key> <k> <c> <i>              : "ㅣ"  U3163   # HANGUL LETTER I
 
-##################################
-# (l) Latin/Old Italic/Etruscan  #
-##################################
-
-# Also see numerals sections for Roman Numerals
-
-<Multi_key> <l> <c> <a> : "𐌀" U10300    # OLD ITALIC LETTER A
-<Multi_key> <l> <c> <b> : "𐌁" U10301    # OLD ITALIC LETTER BE
-<Multi_key> <l> <c> <c> : "𐌂" U10302    # OLD ITALIC LETTER KE
-<Multi_key> <l> <c> <d> : "𐌃" U10303    # OLD ITALIC LETTER DE
-<Multi_key> <l> <c> <e> : "𐌄" U10304    # OLD ITALIC LETTER E
-<Multi_key> <l> <c> <v> : "𐌅" U10305    # OLD ITALIC LETTER VE
-<Multi_key> <l> <c> <z> : "𐌆" U10306    # OLD ITALIC LETTER ZE
-<Multi_key> <l> <c> <h> : "𐌇" U10307    # OLD ITALIC LETTER HE
-<Multi_key> <l> <c> <T> : "𐌈" U10308    # OLD ITALIC LETTER THE
-<Multi_key> <l> <x> <t> <h> : "𐌈" U10308    # OLD ITALIC LETTER THE (alternatively icT)
-<Multi_key> <l> <c> <i> : "𐌉" U10309    # OLD ITALIC LETTER I
-<Multi_key> <l> <c> <k> : "𐌊" U1030A    # OLD ITALIC LETTER KA
-<Multi_key> <l> <c> <l> : "𐌋" U1030B    # OLD ITALIC LETTER EL
-<Multi_key> <l> <c> <m> : "𐌌" U1030C    # OLD ITALIC LETTER EM
-<Multi_key> <l> <c> <n> : "𐌍" U1030D    # OLD ITALIC LETTER EN
-<Multi_key> <l> <c> <X> : "𐌎" U1030E    # OLD ITALIC LETTER ESH
-<Multi_key> <l> <c> <o> : "𐌏" U1030F    # OLD ITALIC LETTER O
-<Multi_key> <l> <c> <p> : "𐌐" U10310    # OLD ITALIC LETTER PE
-<Multi_key> <l> <c> <S> : "𐌑" U10311    # OLD ITALIC LETTER SHE
-<Multi_key> <l> <x> <s> <h> : "𐌑" U10311    # OLD ITALIC LETTER SHE (alternatively icS)
-<Multi_key> <l> <c> <q> : "𐌒" U10312    # OLD ITALIC LETTER KU
-<Multi_key> <l> <c> <r> : "𐌓" U10313    # OLD ITALIC LETTER ER
-<Multi_key> <l> <c> <s> : "𐌔" U10314    # OLD ITALIC LETTER ES
-<Multi_key> <l> <c> <t> : "𐌕" U10315    # OLD ITALIC LETTER TE
-<Multi_key> <l> <c> <u> : "𐌖" U10316    # OLD ITALIC LETTER U
-<Multi_key> <l> <c> <x> : "𐌗" U10317    # OLD ITALIC LETTER EKS
-<Multi_key> <l> <c> <P> : "𐌘" U10318    # OLD ITALIC LETTER PHE
-<Multi_key> <l> <x> <p> <h> : "𐌘" U10318    # OLD ITALIC LETTER PHE (alternatively icP)
-<Multi_key> <l> <c> <K> : "𐌙" U10319    # OLD ITALIC LETTER KHE
-<Multi_key> <l> <x> <k> <h> : "𐌙" U10319    # OLD ITALIC LETTER KHE (alternatively icK)
-<Multi_key> <l> <c> <f> : "𐌚" U1031A    # OLD ITALIC LETTER EF
-
-<Multi_key> <l> <x> <v> <F> : "Ⅎ" U2132    # TURNED CAPITAL F (DIGAMMA INVERSUM)
-<Multi_key> <l> <x> <less> <C> : "Ↄ" U2183    # ROMAN NUMERAL REVERSED ONE HUNDRED (ANTISIGMA)
-<Multi_key> <l> <x> <bar> <minus> : "Ⱶ" U2C75    # LATIN CAPITAL LETTER HALF H
-<Multi_key> <l> <x> <minus> <bar> : "Ꟶ" UA7F5    # LATIN CAPITAL LETTER REVERSED HALF H
-<Multi_key> <l> <x> <I> <minus> : "ꟷ" UA7F7    # LATIN EPIGRAPHIC LETTER SIDEWAYS I
-<Multi_key> <l> <x> <less> <F> : "ꟻ" UA7FB    # LATIN EPIGRAPHIC LETTER REVERSED F
-<Multi_key> <l> <x> <less> <P> : "ꟼ" UA7FC    # LATIN EPIGRAPHIC LETTER REVERSED P
-<Multi_key> <l> <x> <v> <M> : "ꟽ" UA7FD    # LATIN EPIGRAPHIC LETTER INVERTED M
-<Multi_key> <l> <x> <I> <colon> : "ꟾ" UA7FE    # LATIN EPIGRAPHIC LETTER I LONGA
-<Multi_key> <l> <x> <M> <N> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
-<Multi_key> <l> <x> <M> <apostrophe> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
-
-<Multi_key> <l> <0> <1> <Return> : "𐌠" U10320    # OLD ITALIC NUMERAL ONE
-<Multi_key> <l> <0> <5> <Return> : "𐌡" U10321    # OLD ITALIC NUMERAL FIVE
-<Multi_key> <l> <0> <1> <0> <Return> : "𐌢" U10322    # OLD ITALIC NUMERAL TEN
-<Multi_key> <l> <0> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
-<Multi_key> <l> <0> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
-
 ################################
 # (m) International Morse Code #
 ################################
@@ -2879,6 +2962,147 @@ include "%L"
 <Multi_key> <m> <p> <s> <n>     : "···-·"  # MORSE CODE PROSIGN SN (VERIFIED)
 <Multi_key> <m> <p> <s> <o> <s> : "···---···"  # MORSE CODE PROSIGN SOS (DISTRESS SIGNAL)
 <Multi_key> <m> <p> <v> <e>     : "···-·"  # MORSE CODE PROSIGN VE (VERIFIED)
+
+###############################
+# (oi) Old Italic (and Runic) #
+###############################
+
+# Also see numerals sections for Roman Numerals
+
+<Multi_key> <o> <i> <c> <a> : "𐌀" U10300    # OLD ITALIC LETTER A
+<Multi_key> <o> <i> <c> <b> : "𐌁" U10301    # OLD ITALIC LETTER BE
+<Multi_key> <o> <i> <c> <c> : "𐌂" U10302    # OLD ITALIC LETTER KE
+<Multi_key> <o> <i> <c> <d> : "𐌃" U10303    # OLD ITALIC LETTER DE
+<Multi_key> <o> <i> <c> <e> : "𐌄" U10304    # OLD ITALIC LETTER E
+<Multi_key> <o> <i> <c> <v> : "𐌅" U10305    # OLD ITALIC LETTER VE
+<Multi_key> <o> <i> <c> <z> : "𐌆" U10306    # OLD ITALIC LETTER ZE
+<Multi_key> <o> <i> <c> <h> : "𐌇" U10307    # OLD ITALIC LETTER HE
+<Multi_key> <o> <i> <c> <T> : "𐌈" U10308    # OLD ITALIC LETTER THE
+<Multi_key> <o> <i> <x> <t> <h> : "𐌈" U10308    # OLD ITALIC LETTER THE (alternatively icT)
+<Multi_key> <o> <i> <c> <i> : "𐌉" U10309    # OLD ITALIC LETTER I
+<Multi_key> <o> <i> <c> <k> : "𐌊" U1030A    # OLD ITALIC LETTER KA
+<Multi_key> <o> <i> <c> <l> : "𐌋" U1030B    # OLD ITALIC LETTER EL
+<Multi_key> <o> <i> <c> <m> : "𐌌" U1030C    # OLD ITALIC LETTER EM
+<Multi_key> <o> <i> <c> <n> : "𐌍" U1030D    # OLD ITALIC LETTER EN
+<Multi_key> <o> <i> <c> <X> : "𐌎" U1030E    # OLD ITALIC LETTER ESH
+<Multi_key> <o> <i> <c> <o> : "𐌏" U1030F    # OLD ITALIC LETTER O
+<Multi_key> <o> <i> <c> <p> : "𐌐" U10310    # OLD ITALIC LETTER PE
+<Multi_key> <o> <i> <c> <S> : "𐌑" U10311    # OLD ITALIC LETTER SHE
+<Multi_key> <o> <i> <x> <s> <h> : "𐌑" U10311    # OLD ITALIC LETTER SHE (alternatively icS)
+<Multi_key> <o> <i> <c> <q> : "𐌒" U10312    # OLD ITALIC LETTER KU
+<Multi_key> <o> <i> <c> <r> : "𐌓" U10313    # OLD ITALIC LETTER ER
+<Multi_key> <o> <i> <c> <s> : "𐌔" U10314    # OLD ITALIC LETTER ES
+<Multi_key> <o> <i> <c> <t> : "𐌕" U10315    # OLD ITALIC LETTER TE
+<Multi_key> <o> <i> <c> <u> : "𐌖" U10316    # OLD ITALIC LETTER U
+<Multi_key> <o> <i> <c> <x> : "𐌗" U10317    # OLD ITALIC LETTER EKS
+<Multi_key> <o> <i> <c> <P> : "𐌘" U10318    # OLD ITALIC LETTER PHE
+<Multi_key> <o> <i> <x> <p> <h> : "𐌘" U10318    # OLD ITALIC LETTER PHE (alternatively icP)
+<Multi_key> <o> <i> <c> <K> : "𐌙" U10319    # OLD ITALIC LETTER KHE
+<Multi_key> <o> <i> <x> <k> <h> : "𐌙" U10319    # OLD ITALIC LETTER KHE (alternatively icK)
+<Multi_key> <o> <i> <c> <f> : "𐌚" U1031A    # OLD ITALIC LETTER EF
+
+<Multi_key> <o> <i> <x> <v> <F> : "Ⅎ" U2132    # TURNED CAPITAL F (DIGAMMA INVERSUM)
+<Multi_key> <o> <i> <x> <less> <C> : "Ↄ" U2183    # ROMAN NUMERAL REVERSED ONE HUNDRED (ANTISIGMA)
+<Multi_key> <o> <i> <x> <bar> <minus> : "Ⱶ" U2C75    # LATIN CAPITAL LETTER HALF H
+<Multi_key> <o> <i> <x> <minus> <bar> : "Ꟶ" UA7F5    # LATIN CAPITAL LETTER REVERSED HALF H
+<Multi_key> <o> <i> <x> <I> <minus> : "ꟷ" UA7F7    # LATIN EPIGRAPHIC LETTER SIDEWAYS I
+<Multi_key> <o> <i> <x> <less> <F> : "ꟻ" UA7FB    # LATIN EPIGRAPHIC LETTER REVERSED F
+<Multi_key> <o> <i> <x> <less> <P> : "ꟼ" UA7FC    # LATIN EPIGRAPHIC LETTER REVERSED P
+<Multi_key> <o> <i> <x> <v> <M> : "ꟽ" UA7FD    # LATIN EPIGRAPHIC LETTER INVERTED M
+<Multi_key> <o> <i> <x> <I> <colon> : "ꟾ" UA7FE    # LATIN EPIGRAPHIC LETTER I LONGA
+<Multi_key> <o> <i> <x> <M> <N> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
+<Multi_key> <o> <i> <x> <M> <apostrophe> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
+
+<Multi_key> <o> <i> <0> <1> <Return> : "𐌠" U10320    # OLD ITALIC NUMERAL ONE
+<Multi_key> <o> <i> <0> <5> <Return> : "𐌡" U10321    # OLD ITALIC NUMERAL FIVE
+<Multi_key> <o> <i> <0> <1> <0> <Return> : "𐌢" U10322    # OLD ITALIC NUMERAL TEN
+<Multi_key> <o> <i> <0> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
+<Multi_key> <o> <i> <0> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
+
+# Runic (suffixes: G=germanic, E=english, N=norse, D=danish (=long branch), M=medieval)
+
+<Multi_key> <o> <i> <r> <a> <D> : "ᛅ" U16C5   # RUNIC LETTER LONG-BRANCH-AR AE
+<Multi_key> <o> <i> <r> <a> <E> : "ᚪ" U16AA   # RUNIC LETTER AC A
+<Multi_key> <o> <i> <r> <a> <G> : "ᚨ" U16A8   # RUNIC LETTER ANSUZ A
+<Multi_key> <o> <i> <r> <a> <N> : "ᛆ" U16C6   # RUNIC LETTER SHORT-TWIG-AR A
+<Multi_key> <o> <i> <r> <a> <e> : "ᚫ" U16AB   # RUNIC LETTER AESC
+<Multi_key> <o> <i> <r> <b> <N> : "ᛓ" U16D3   # RUNIC LETTER SHORT-TWIG-BJARKAN B
+<Multi_key> <o> <i> <r> <b> <Return> : "ᛒ" U16D2   # RUNIC LETTER BERKANAN BEORC BJARKAN B
+<Multi_key> <o> <i> <r> <c> <E> : "ᚳ" U16B3   # RUNIC LETTER CEN
+<Multi_key> <o> <i> <r> <c> <M> : "ᛍ" U16CD   # RUNIC LETTER C
+<Multi_key> <o> <i> <r> <c> <k> : "ᛤ" U16E4   # RUNIC LETTER CEALC
+<Multi_key> <o> <i> <r> <d> <E> : "ᛞ" U16DE   # RUNIC LETTER DAGAZ DAEG D
+<Multi_key> <o> <i> <r> <d> <G> : "ᛞ" U16DE   # RUNIC LETTER DAGAZ DAEG D
+<Multi_key> <o> <i> <r> <d> <N> : "ᛑ" U16D1   # RUNIC LETTER D
+<Multi_key> <o> <i> <r> <d> <h> : "ᚧ" U16A7   # RUNIC LETTER ETH
+<Multi_key> <o> <i> <r> <e> <E> : "ᛖ" U16D6   # RUNIC LETTER EHWAZ EH E
+<Multi_key> <o> <i> <r> <e> <G> : "ᛖ" U16D6   # RUNIC LETTER EHWAZ EH E
+<Multi_key> <o> <i> <r> <e> <N> : "ᛂ" U16C2   # RUNIC LETTER E
+<Multi_key> <o> <i> <r> <e> <a> : "ᛠ" U16E0   # RUNIC LETTER EAR
+<Multi_key> <o> <i> <r> <f> : "ᚠ" U16A0   # RUNIC LETTER FEHU FEOH FE F
+<Multi_key> <o> <i> <r> <g> <E> : "ᚸ" U16B8   # RUNIC LETTER GAR
+<Multi_key> <o> <i> <r> <g> <G> : "ᚷ" U16B7   # RUNIC LETTER GEBO GYFU G
+<Multi_key> <o> <i> <r> <g> <N> : "ᚵ" U16B5   # RUNIC LETTER G
+<Multi_key> <o> <i> <r> <h> <1> : "ᚺ" U16BA   # RUNIC LETTER HAGLAZ H
+<Multi_key> <o> <i> <r> <h> <2> : "ᚻ" U16BB   # RUNIC LETTER HAEGL H
+<Multi_key> <o> <i> <r> <h> <D> : "ᚼ" U16BC   # RUNIC LETTER LONG-BRANCH-HAGALL H
+<Multi_key> <o> <i> <r> <h> <N> : "ᚽ" U16BD   # RUNIC LETTER SHORT-TWIG-HAGALL H
+<Multi_key> <o> <i> <r> <i>     : "ᛁ" U16C1   # RUNIC LETTER ISAZ IS ISS I
+<Multi_key> <o> <i> <r> <j> <1> : "ᛄ" U16C4   # RUNIC LETTER GER
+<Multi_key> <o> <i> <r> <j> <2> : "ᛡ" U16E1   # RUNIC LETTER IOR
+<Multi_key> <o> <i> <r> <j> <G> : "ᛃ" U16C3   # RUNIC LETTER JERAN J
+<Multi_key> <o> <i> <r> <k> <E> : "ᛣ" U16E3   # RUNIC LETTER CALC
+<Multi_key> <o> <i> <r> <k> <G> : "ᚲ" U16B2   # RUNIC LETTER KAUNA
+<Multi_key> <o> <i> <r> <k> <N> : "ᚴ" U16B4   # RUNIC LETTER KAUN K
+<Multi_key> <o> <i> <r> <l> : "ᛚ" U16DA   # RUNIC LETTER LAUKAZ LAGU LOGR L
+<Multi_key> <o> <i> <r> <m> <D> : "ᛘ" U16D8   # RUNIC LETTER LONG-BRANCH-MADR M
+<Multi_key> <o> <i> <r> <m> <E> : "ᛗ" U16D7   # RUNIC LETTER MANNAZ MAN M
+<Multi_key> <o> <i> <r> <m> <G> : "ᛗ" U16D7   # RUNIC LETTER MANNAZ MAN M
+<Multi_key> <o> <i> <r> <m> <N> : "ᛙ" U16D9   # RUNIC LETTER SHORT-TWIG-MADR M
+<Multi_key> <o> <i> <r> <n> <N> : "ᚿ" U16BF   # RUNIC LETTER SHORT-TWIG-NAUD N
+<Multi_key> <o> <i> <r> <n> <Return> : "ᚾ" U16BE   # RUNIC LETTER NAUDIZ NYD NAUD N
+<Multi_key> <o> <i> <r> <n> <g> <0> : "ᛜ" U16DC   # RUNIC LETTER INGWAZ
+<Multi_key> <o> <i> <r> <n> <g> <M> : "ᚶ" U16B6   # RUNIC LETTER ENG
+<Multi_key> <o> <i> <r> <n> <g> <Return> : "ᛝ" U16DD   # RUNIC LETTER ING
+<Multi_key> <o> <i> <r> <o> <D> : "ᚬ" U16AC   # RUNIC LETTER LONG-BRANCH-OSS O
+<Multi_key> <o> <i> <r> <o> <E> : "ᚩ" U16A9   # RUNIC LETTER OS O
+<Multi_key> <o> <i> <r> <o> <G> : "ᛟ" U16DF   # RUNIC LETTER OTHALAN ETHEL O
+<Multi_key> <o> <i> <r> <o> <M> : "ᚮ" U16AE   # RUNIC LETTER O
+<Multi_key> <o> <i> <r> <o> <N> : "ᚭ" U16AD   # RUNIC LETTER SHORT-TWIG-OSS O
+<Multi_key> <o> <i> <r> <o> <e> <E> : "ᛟ" U16DF   # RUNIC LETTER OTHALAN ETHEL O
+<Multi_key> <o> <i> <r> <o> <e> <M> : "ᚯ" U16AF   # RUNIC LETTER OE
+<Multi_key> <o> <i> <r> <o> <n> : "ᚰ" U16B0   # RUNIC LETTER ON
+<Multi_key> <o> <i> <r> <p> <E> : "ᛈ" U16C8   # RUNIC LETTER PERTHO PEORTH P
+<Multi_key> <o> <i> <r> <p> <G> : "ᛈ" U16C8   # RUNIC LETTER PERTHO PEORTH P
+<Multi_key> <o> <i> <r> <p> <M> : "ᛕ" U16D5   # RUNIC LETTER OPEN-P
+<Multi_key> <o> <i> <r> <p> <N> : "ᛔ" U16D4   # RUNIC LETTER DOTTED-P
+<Multi_key> <o> <i> <r> <q> <E> : "ᛢ" U16E2   # RUNIC LETTER CWEORTH
+<Multi_key> <o> <i> <r> <q> <M> : "ᛩ" U16E9   # RUNIC LETTER Q
+<Multi_key> <o> <i> <r> <r>     : "ᚱ" U16B1   # RUNIC LETTER RAIDO RAD REID R
+<Multi_key> <o> <i> <r> <s> <D> : "ᛋ" U16CB   # RUNIC LETTER SIGEL LONG-BRANCH-SOL S
+<Multi_key> <o> <i> <r> <s> <E> : "ᛋ" U16CB   # RUNIC LETTER SIGEL LONG-BRANCH-SOL S
+<Multi_key> <o> <i> <r> <s> <G> : "ᛊ" U16CA   # RUNIC LETTER SOWILO S
+<Multi_key> <o> <i> <r> <s> <N> : "ᛌ" U16CC   # RUNIC LETTER SHORT-TWIG-SOL S
+<Multi_key> <o> <i> <r> <s> <t> : "ᛥ" U16E5   # RUNIC LETTER STAN
+<Multi_key> <o> <i> <r> <t> <N> : "ᛐ" U16D0   # RUNIC LETTER SHORT-TWIG-TYR T
+<Multi_key> <o> <i> <r> <t> <Return> : "ᛏ" U16CF   # RUNIC LETTER TIWAZ TIR TYR T
+<Multi_key> <o> <i> <r> <t> <h> : "ᚦ" U16A6   # RUNIC LETTER THURISAZ THURS THORN
+<Multi_key> <o> <i> <r> <u> : "ᚢ" U16A2   # RUNIC LETTER URUZ UR U
+<Multi_key> <o> <i> <r> <v> : "ᚡ" U16A1   # RUNIC LETTER V
+<Multi_key> <o> <i> <r> <w> <M> : "ᚥ" U16A5   # RUNIC LETTER W
+<Multi_key> <o> <i> <r> <w> <n> : "ᚹ" U16B9   # RUNIC LETTER WUNJO WYNN W
+<Multi_key> <o> <i> <r> <x> <E> : "ᛉ" U16C9   # RUNIC LETTER ALGIZ EOLHX
+<Multi_key> <o> <i> <r> <x> <M> : "ᛪ" U16EA   # RUNIC LETTER X
+<Multi_key> <o> <i> <r> <y> <E> : "ᚣ" U16A3   # RUNIC LETTER YR
+<Multi_key> <o> <i> <r> <y> <M> : "ᛨ" U16E8   # RUNIC LETTER ICELANDIC-YR
+<Multi_key> <o> <i> <r> <y> <N> : "ᚤ" U16A4   # RUNIC LETTER Y
+<Multi_key> <o> <i> <r> <z> <G> : "ᛉ" U16C9   # RUNIC LETTER ALGIZ EOLHX
+<Multi_key> <o> <i> <r> <z> <M> : "ᛎ" U16CE   # RUNIC LETTER Z
+<Multi_key> <o> <i> <r> <L>     : "ᛛ" U16DB   # RUNIC LETTER DOTTED-L
+<Multi_key> <o> <i> <r> <N>     : "ᛀ" U16C0   # RUNIC LETTER DOTTED-N
+<Multi_key> <o> <i> <r> <R> <D> : "ᛦ" U16E6   # RUNIC LETTER LONG-BRANCH-YR
+<Multi_key> <o> <i> <r> <R> <N> : "ᛧ" U16E7   # RUNIC LETTER SHORT-TWIG-YR
+<Multi_key> <o> <i> <r> <quotedbl> <i> : "ᛇ" U16C7   # RUNIC LETTER IWAZ EOH
 
 ##############################################################
 # (z) Zhuyin/Bopomofo (and some additional Zhongwen/Chinese) #
@@ -3046,6 +3270,7 @@ include "%L"
 <Multi_key> <backslash> <slash>       : "∨"  U2228   # LOGICAL OR
 <Multi_key> <bar> <period>            : "∣"  U2223   # DIVIDES
 <Multi_key> <bar> <slash>             : "∤"  U2224   # DOES NOT DIVIDE
+<Multi_key> <colon> <a> <s>           : "∷" U2237    # PROPORTION (AS)
 <Multi_key> <asciitilde> <minus>      : "≃"  U2243   # ASYMPTOTICALLY EQUAL TO
 <Multi_key> <slash> <asciitilde> <minus> : "≄"  U2244   # NOT ASYMPTOTICALLY EQUAL TO
 <Multi_key> <asciitilde> <equal>      : "≅"  U2245   # APPROXIMATELY EQUAL TO (ISOMORPHIC)
@@ -3112,7 +3337,6 @@ include "%L"
 <Multi_key> <P> <H> <I>                 : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
 <Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 
-<Multi_key> <a> <s>                     : "∷" U2237    # PROPORTION (AS)
 <Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va) (use hat for 🧢)
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
 <Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
@@ -5382,7 +5606,7 @@ include "%L"
 
 # Convention: # + number + type suffix
 #
-# Also see Arabic (a0), Japanese (j0) and Chinese (z0) numerals above
+# Also see Arabic (a0), Devanagar (d0), Japanese (j0) and Chinese (z0) numerals above
 
 # (f) fence tally
 
