@@ -24,14 +24,16 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (1417)
+### Non-Latin script characters (1795)
 * **Arabic** (and Syriac) (126): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ etc
+* **Armenian** (86): Րեդդit etc
 * **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
-* **Devanagari** (107): रेडिट etc
-* **Greek** (and Coptic) (124): Ρέντιτ Ⲣⲉⲇⲇⲓⲧ etc
+* **Devanagari** (and Brahmi) (217): रेडिट 𑀭𑁂𑀟𑀺𑀝 etc
+* **Georgian** (154): რედდიტ ႰႤႣႣႨႲ etc
+* **Greek** (and Coptic) (152): Ρέντιτ Ⲣⲉⲇⲇⲓⲧ etc
 * **Hebrew** (and Phoenician) (75): ⁧רֶדִיט⁩ ⁧𐤓𐤃𐤕⁩ etc
-* **Korean** (via jamo) (118): 레딧 etc
-* **Japanese** (mainly kanas) (302): 「レヂィット」 etc
+* **Korean** (using jamo) (118): 레딧 etc
+* **Japanese** (mostly kana) (302): 「レヂィット」 etc
 * **Old Italic** (and Runic) (117): 𐌓𐌄𐌃𐌃𐌉𐌕 ᚱᛖᛞᛞᛁᛏ etc
 * **Zhuyin** (104): ㄏㄨㄥˊㄉㄧˊ etc
 * **Braille** (78): ⠗⠫⠙⠊⠞ etc
