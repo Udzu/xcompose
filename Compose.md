@@ -24,8 +24,8 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (1795)
-* **Arabic** (and Syriac) (126): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ etc
+### Non-Latin script characters (1837)
+* **Arabic** (and Syriac & Neo-Tifinagh) (168): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
 * **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
 * **Devanagari** (and Brahmi) (217): रेडिट 𑀭𑁂𑀟𑀺𑀝 etc
@@ -39,8 +39,8 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **Morse Code** (76): ···---··· etc
 
-### Symbols (2184)
-* **Emoji** (1183): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+### Symbols (2183)
+* **Emoji** (1182): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (150): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
