@@ -2116,9 +2116,9 @@ include "%L"
 <Multi_key> <d> <semicolon> <2> <bar> : "॥" U0965   # DEVANAGARI DOUBLE DANDA
 <Multi_key> <d> <semicolon> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
 
-#############
-# (g) Greek #
-#############
+##########################
+# (g) Greek (and Coptic) #
+##########################
 
 <Multi_key> <g> <c> <A> : "Α"  U0391   # GREEK CAPITAL LETTER ALPHA
 <Multi_key> <g> <c> <B> : "Β"  U0392   # GREEK CAPITAL LETTER BETA
@@ -2144,6 +2144,7 @@ include "%L"
 <Multi_key> <g> <c> <F> : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
 <Multi_key> <g> <x> <P> <H> : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI (alternatively gcF)
 <Multi_key> <g> <c> <C> : "Χ"  U03A7   # GREEK CAPITAL LETTER CHI
+<Multi_key> <g> <x> <K> <H> : "Χ"  U03A7   # GREEK CAPITAL LETTER CHI
 <Multi_key> <g> <x> <P> <S> : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 <Multi_key> <g> <x> <O>     : "Ω"  U03A9   # GREEK CAPITAL LETTER OMEGA
 
@@ -2173,6 +2174,7 @@ include "%L"
 <Multi_key> <g> <c> <f> : "φ"  U03C6   # GREEK SMALL LETTER PHI
 <Multi_key> <g> <x> <p> <h> : "φ"  U03C6   # GREEK SMALL LETTER PHI (alternatively gcf)
 <Multi_key> <g> <c> <c> : "χ"  U03C7   # GREEK SMALL LETTER CHI
+<Multi_key> <g> <x> <k> <h> : "χ"  U03C7   # GREEK SMALL LETTER CHI
 <Multi_key> <g> <x> <p> <s> : "ψ"  U03C8   # GREEK SMALL LETTER PSI
 <Multi_key> <g> <x> <o>     : "ω"  U03C9   # GREEK SMALL LETTER OMEGA
 
@@ -2190,6 +2192,75 @@ include "%L"
 <Multi_key> <g> <0> <6> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
 <Multi_key> <g> <0> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
 <Multi_key> <g> <0> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
+
+# (p/P = Coptic)
+
+<Multi_key> <g> <p> <A> : "Ⲁ" U2C80   # COPTIC CAPITAL LETTER ALFA
+<Multi_key> <g> <p> <a> : "ⲁ" U2C81   # COPTIC SMALL LETTER ALFA
+<Multi_key> <g> <p> <V> : "Ⲃ" U2C82   # COPTIC CAPITAL LETTER VIDA
+<Multi_key> <g> <p> <v> : "ⲃ" U2C83   # COPTIC SMALL LETTER VIDA
+<Multi_key> <g> <p> <G> : "Ⲅ" U2C84   # COPTIC CAPITAL LETTER GAMMA
+<Multi_key> <g> <p> <g> : "ⲅ" U2C85   # COPTIC SMALL LETTER GAMMA
+<Multi_key> <g> <p> <D> : "Ⲇ" U2C86   # COPTIC CAPITAL LETTER DALDA
+<Multi_key> <g> <p> <d> : "ⲇ" U2C87   # COPTIC SMALL LETTER DALDA
+<Multi_key> <g> <p> <E> : "Ⲉ" U2C88   # COPTIC CAPITAL LETTER EIE
+<Multi_key> <g> <p> <e> : "ⲉ" U2C89   # COPTIC SMALL LETTER EIE
+<Multi_key> <g> <p> <W> : "Ⲋ" U2C8A   # COPTIC CAPITAL LETTER SOU
+<Multi_key> <g> <p> <w> : "ⲋ" U2C8B   # COPTIC SMALL LETTER SOU
+<Multi_key> <g> <p> <Z> : "Ⲍ" U2C8C   # COPTIC CAPITAL LETTER ZATA
+<Multi_key> <g> <p> <z> : "ⲍ" U2C8D   # COPTIC SMALL LETTER ZATA
+<Multi_key> <g> <p> <H> : "Ⲏ" U2C8E   # COPTIC CAPITAL LETTER HATE
+<Multi_key> <g> <p> <h> : "ⲏ" U2C8F   # COPTIC SMALL LETTER HATE
+<Multi_key> <g> <P> <T> <H> : "Ⲑ" U2C90   # COPTIC CAPITAL LETTER THETHE
+<Multi_key> <g> <P> <t> <h> : "ⲑ" U2C91   # COPTIC SMALL LETTER THETHE
+<Multi_key> <g> <p> <I> : "Ⲓ" U2C92   # COPTIC CAPITAL LETTER IAUDA
+<Multi_key> <g> <p> <i> : "ⲓ" U2C93   # COPTIC SMALL LETTER IAUDA
+<Multi_key> <g> <p> <K> : "Ⲕ" U2C94   # COPTIC CAPITAL LETTER KAPA
+<Multi_key> <g> <p> <k> : "ⲕ" U2C95   # COPTIC SMALL LETTER KAPA
+<Multi_key> <g> <p> <L> : "Ⲗ" U2C96   # COPTIC CAPITAL LETTER LAULA
+<Multi_key> <g> <p> <l> : "ⲗ" U2C97   # COPTIC SMALL LETTER LAULA
+<Multi_key> <g> <p> <M> : "Ⲙ" U2C98   # COPTIC CAPITAL LETTER MI
+<Multi_key> <g> <p> <m> : "ⲙ" U2C99   # COPTIC SMALL LETTER MI
+<Multi_key> <g> <p> <N> : "Ⲛ" U2C9A   # COPTIC CAPITAL LETTER NI
+<Multi_key> <g> <p> <n> : "ⲛ" U2C9B   # COPTIC SMALL LETTER NI
+<Multi_key> <g> <p> <X> : "Ⲝ" U2C9C   # COPTIC CAPITAL LETTER KSI
+<Multi_key> <g> <p> <x> : "ⲝ" U2C9D   # COPTIC SMALL LETTER KSI
+<Multi_key> <g> <p> <O> : "Ⲟ" U2C9E   # COPTIC CAPITAL LETTER O
+<Multi_key> <g> <p> <o> : "ⲟ" U2C9F   # COPTIC SMALL LETTER O
+<Multi_key> <g> <p> <P> : "Ⲡ" U2CA0   # COPTIC CAPITAL LETTER PI
+<Multi_key> <g> <p> <p> : "ⲡ" U2CA1   # COPTIC SMALL LETTER PI
+<Multi_key> <g> <p> <R> : "Ⲣ" U2CA2   # COPTIC CAPITAL LETTER RO
+<Multi_key> <g> <p> <r> : "ⲣ" U2CA3   # COPTIC SMALL LETTER RO
+<Multi_key> <g> <p> <S> : "Ⲥ" U2CA4   # COPTIC CAPITAL LETTER SIMA
+<Multi_key> <g> <p> <s> : "ⲥ" U2CA5   # COPTIC SMALL LETTER SIMA
+<Multi_key> <g> <p> <T> : "Ⲧ" U2CA6   # COPTIC CAPITAL LETTER TAU
+<Multi_key> <g> <p> <t> : "ⲧ" U2CA7   # COPTIC SMALL LETTER TAU
+<Multi_key> <g> <p> <U> : "Ⲩ" U2CA8   # COPTIC CAPITAL LETTER UA
+<Multi_key> <g> <p> <Y> : "Ⲩ" U2CA8   # COPTIC CAPITAL LETTER UA
+<Multi_key> <g> <p> <u> : "ⲩ" U2CA9   # COPTIC SMALL LETTER UA
+<Multi_key> <g> <p> <y> : "ⲩ" U2CA9   # COPTIC SMALL LETTER UA
+<Multi_key> <g> <P> <P> <H> : "Ⲫ" U2CAA   # COPTIC CAPITAL LETTER FI
+<Multi_key> <g> <P> <p> <h> : "ⲫ" U2CAB   # COPTIC SMALL LETTER FI
+<Multi_key> <g> <p> <C> : "Ⲭ" U2CAC   # COPTIC CAPITAL LETTER KHI
+<Multi_key> <g> <p> <c> : "ⲭ" U2CAD   # COPTIC SMALL LETTER KHI
+<Multi_key> <g> <P> <P> <S> : "Ⲯ" U2CAE   # COPTIC CAPITAL LETTER PSI
+<Multi_key> <g> <P> <p> <s> : "ⲯ" U2CAF   # COPTIC SMALL LETTER PSI
+<Multi_key> <g> <P> <O> : "Ⲱ" U2CB0   # COPTIC CAPITAL LETTER OOU
+<Multi_key> <g> <P> <o> : "ⲱ" U2CB1   # COPTIC SMALL LETTER OOU
+<Multi_key> <g> <P> <S> <H> : "Ϣ" U03E2   # COPTIC CAPITAL LETTER SHEI
+<Multi_key> <g> <P> <s> <h> : "ϣ" U03E3   # COPTIC SMALL LETTER SHEI
+<Multi_key> <g> <p> <F> : "Ϥ" U03E4   # COPTIC CAPITAL LETTER FEI
+<Multi_key> <g> <p> <f> : "ϥ" U03E5   # COPTIC SMALL LETTER FEI
+<Multi_key> <g> <P> <K> <H> : "Ϧ" U03E6   # COPTIC CAPITAL LETTER KHEI
+<Multi_key> <g> <P> <k> <h> : "ϧ" U03E7   # COPTIC SMALL LETTER KHEI
+<Multi_key> <g> <P> <H> : "Ϩ" U03E8   # COPTIC CAPITAL LETTER HORI
+<Multi_key> <g> <P> <h> : "ϩ" U03E9   # COPTIC SMALL LETTER HORI
+<Multi_key> <g> <p> <J> : "Ϫ" U03EA   # COPTIC CAPITAL LETTER GANGIA
+<Multi_key> <g> <p> <j> : "ϫ" U03EB   # COPTIC SMALL LETTER GANGIA
+<Multi_key> <g> <P> <C> <H> : "Ϭ" U03EC   # COPTIC CAPITAL LETTER SHIMA
+<Multi_key> <g> <P> <c> <h> : "ϭ" U03ED   # COPTIC SMALL LETTER SHIMA
+<Multi_key> <g> <P> <T> <I> : "Ϯ" U03EE   # COPTIC CAPITAL LETTER DEI
+<Multi_key> <g> <P> <t> <i> : "ϯ" U03EF   # COPTIC SMALL LETTER DEI
 
 ###############################
 # (h) Hebrew (and Phoenician) #
