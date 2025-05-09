@@ -27,6 +27,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 ### Non-Latin script characters (1965)
 * **Arabic** (and Syriac & Neo-Tifinagh) (168): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
+* **ConScripts** (Deseret & Shavian) (128): 𐐡𐐇𐐔𐐆𐐓 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
 * **Devanagari** (and Brahmi) (217): रेडिट 𑀭𑁂𑀟𑀺𑀝 etc
 * **Georgian** (154): რედდიტ ႰႤႣႣႨႲ etc
@@ -37,11 +38,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Old Italic** (and Runic) (117): 𐌓𐌄𐌃𐌃𐌉𐌕 ᚱᛖᛞᛞᛁᛏ etc
 * **Zhuyin** (104): ㄏㄨㄥˊㄉㄧˊ etc
 * **Braille** (78): ⠗⠫⠙⠊⠞ etc
-* **ConScripts** (128): 𐐡𐐇𐐔𐐆𐐓 𐑮𐑧𐑛𐑦𐑑 etc
 * **Morse Code** (76): ···---··· etc
 
-### Symbols (2183)
-* **Emoji** (1182): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+### Symbols (2193)
+* **Emoji** (1192): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (150): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
