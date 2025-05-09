@@ -4263,15 +4263,16 @@ include "%L"
 <Multi_key> <A> <B>            : "🗯️"  U1F5EF UFE0F  # RIGHT ANGER BUBBLE EMOJI
 <Multi_key> <B> <q>            : "☢️"  U2622 UFE0F   # RADIOACTIVE SIGN EMOJI (Bq SI UNIT)
 <Multi_key> <F> <D> <L>        : "⚜️"  U269C UFE0F   # FLEUR-DE-LIS EMOJI
-<Multi_key> <M> <R>            : "🚹"  U1F6B9        # MENS SYMBOL (MEN'S ROOM)
 <Multi_key> <N> <E>            : "⛔"  U26D4         # NO ENTRY
 <Multi_key> <N> <S> <F> <W>    : "🔞"  U1F51E        # NO ONE UNDER EIGHTEEN SYMBOL (NSWF)
 <Multi_key> <S> <B>            : "💬"  U1F4AC        # SPEECH BALLOON
 <Multi_key> <less> <S> <B>     : "🗨️"  U1F5E8 UFE0F  # LEFT SPEECH BUBBLE EMOJI (conflicts with Š, use vS)
 <Multi_key> <T> <B>            : "💭"  U1F4AD        # THOUGHT BALLOON
+<Multi_key> <W> <exclam>       : "⚠️"  U26A0 UFE0F   # WARNING SIGN EMOJI
+
+<Multi_key> <M> <R>            : "🚹"  U1F6B9        # MENS SYMBOL (MEN'S ROOM)
 <Multi_key> <W> <C>            : "🚻"  U1F6BB        # RESTROOM (WC) (use @[WC] for 🚾)
 <Multi_key> <W> <R>            : "🚺"  U1F6BA        # WOMENS SYMBOL (WOMEN'S ROOM)
-<Multi_key> <W> <exclam>       : "⚠️"  U26A0 UFE0F   # WARNING SIGN EMOJI
 
 # Names (max 5-6 letters, with some truncations)
 
@@ -4280,7 +4281,7 @@ include "%L"
 <Multi_key> <a> <n> <g> <s> <t>     : "😧"  U1F627        # ANGUISHED FACE (ANGST)
 <Multi_key> <a> <n> <x>             : "😰"  U1F630        # FACE WITH OPEN MOUTH AND COLD SWEAT (ANXIOUS)
 <Multi_key> <a> <r> <g> <h>         : "😱"  U1F631        # FACE SCREAMING IN FEAR (ARGH)
-<Multi_key> <b> <a> <b> <y>         : "👶"  U1F476        # BABY (conflicts with ă, use ua)
+<Multi_key> <b> <a> <b> <y>         : "👶"  U1F476        # BABY (conflicts with ă, use ua) (use diaper or nappy for 🚼)
 <Multi_key> <b> <e> <a> <m> <y>     : "😄"  U1F604        # SMILING FACE WITH OPEN MOUTH AND SMILING EYES (BEAMY) (conflicts with ĕ, use ue)
 <Multi_key> <b> <l> <u> <s> <h>     : "😳"  U1F633        # FLUSHED FACE (BLUSH)
 <Multi_key> <c> <l> <o> <w> <n>     : "🤡"  U1F921        # CLOWN FACE (conflicts with ľ, use vl)
@@ -4869,6 +4870,7 @@ include "%L"
 <Multi_key> <y> <a> <r> <n>         : "🧶"  U1F9F6        # BALL OF YARN
 
 <Multi_key> <a> <n> <c> <h> <o> <r> : "⚓"  U2693         # ANCHOR
+<Multi_key> <a> <r> <r> <i> <v> <e> : "🛬"  U1F6EC        # AIRPLANE ARRIVING
 <Multi_key> <a> <u> <t> <o>         : "🚘"  U1F698        # ONCOMING AUTOMOBILE (use <auto or car for 🚗)
 <Multi_key> <less> <a> <u> <t> <o>  : "🚗"  U1F697        # AUTOMOBILE
 <Multi_key> <b> <a> <n> <k>         : "🏦"  U1F3E6        # BANK (conflicts with ă, use ua)
@@ -4902,7 +4904,6 @@ include "%L"
 <Multi_key> <l> <a> <d> <d> <e> <r> : "🪜"  U1FA9C        # LADDER
 <Multi_key> <l> <a> <u> <n> <c> <h> : "🚀"  U1F680        # ROCKET (LAUNCH)
 <Multi_key> <l> <i> <b> <e> <r> <t> : "🗽"  U1F5FD        # STATUE OF LIBERTY
-<Multi_key> <l> <i> <f> <t>         : "🛗"  U1F6D7        # ELEVATOR (LIFT)
 <Multi_key> <m> <a> <c> <y> <s>     : "🏬"  U1F3EC        # DEPARTMENT STORE (MACY'S)
 <Multi_key> <m> <a> <r> <t>         : "🏪"  U1F3EA        # CONVENIENCE STORE (MART)
 <Multi_key> <m> <e> <d> <i> <c>     : "🚑"  U1F691        # AMBULANCE (MEDIC)
@@ -4910,11 +4911,14 @@ include "%L"
 <Multi_key> <m> <o> <n> <o>         : "🚝"  U1F69D        # MONORAIL
 <Multi_key> <m> <o> <p> <e> <d>     : "🛵"  U1F6F5        # MOTOR SCOOTER
 <Multi_key> <m> <o> <s> <q> <u> <e> : "🕌"  U1F54C        # MOSQUE
+<Multi_key> <m> <o> <t> <o> <r> <b> : "🛥️"  U1F6E5 UFE0F  # MOTOR BOAT EMOJI
+<Multi_key> <m> <o> <t> <o> <r> <w> : "🛣️"  U1F6E3 UFE0F  # MOTORWAY EMOJI
 <Multi_key> <o> <f> <f> <i> <c> <e> : "🏢"  U1F3E2        # OFFICE BUILDING
 <Multi_key> <p> <b> <o> <x>         : "📮"  U1F4EE        # POSTBOX
 <Multi_key> <p> <l> <a> <n> <e>     : "✈️"  U2708 UFE0F   # AIRPLANE EMOJI
 <Multi_key> <p> <o> <l> <i> <c> <e> : "🚔"  U1F694        # ONCOMING POLICE CAR (use <police for 🚓 and cop[RETURN] for 👮)
 <Multi_key> <less> <p> <o> <l> <i> <c> <e> : "🚓"  U1F693 # POLICE CAR
+<Multi_key> <r> <a> <i> <l> <s>     : "🛤️"  U1F6E4 UFE0F  # RAILWAY TRACK EMOJI
 <Multi_key> <r> <i> <d> <e>         : "🎢"  U1F3A2        # ROLLER COASTER (RIDE)
 <Multi_key> <s> <c> <h> <o> <o> <l> : "🏫"  U1F3EB        # SCHOOL
 <Multi_key> <s> <c> <o> <o> <t>     : "🛴"  U1F6F4        # SCOOTER
@@ -5100,16 +5104,26 @@ include "%L"
 <Multi_key> <h> <o> <l> <e>         : "🕳️"  U1F573 UFE0F  # HOLE VARIATION EMOJI
 <Multi_key> <i> <n> <f> <o>         : "ℹ️"  U2139 UFE0F   # INFORMATION SOURCE EMOJI
 <Multi_key> <l> <i> <n> <k>         : "🔗"  U1F517        # LINK SYMBOL
-<Multi_key> <l> <i> <t> <t> <e> <r> : "🚮"  U1F6AE        # PUT LITTER IN ITS PLACE SYMBOL
 <Multi_key> <r> <e> <c> <y> <c>     : "♻️"  U267B UFE0F   # BLACK UNIVERSAL RECYCLING SYMBOL EMOJI
 <Multi_key> <s> <p> <l> <a> <t>     : "🫟"  U1FADF        # SPLATTER
 <Multi_key> <S> <T> <O> <P>         : "🛑"  U1F6D1        # OCTAGONAL SIGN (STOP)
 <Multi_key> <w> <a> <i> <t>         : "⏳"  U23F3         # HOURGLASS WITH FLOWING SAND (WAIT)
-<Multi_key> <w> <a> <t> <e> <r>     : "🚰"  U1F6B0        # POTABLE WATER SYMBOL
 <Multi_key> <w> <i> <f> <i>         : "🛜"  U1F6DC        # WIRELESS (WIFI)
 <Multi_key> <z> <a> <p>             : "⚡"  U26A1         # HIGH VOLTAGE SIGN (ZAP)
 <Multi_key> <z> <z> <z>             : "💤"  U1F4A4        # SLEEPING SYMBOL (ZZZ)
 <Multi_key> <1> <0> <0>             : "💯"  U1F4AF        # HUNDRED POINTS SYMBOL
+
+<Multi_key> <b> <a> <g> <g> <a> <g> : "🛄"  U1F6C4        # BAGGAGE CLAIM (conflicts with ă, use ua)
+<Multi_key> <c> <u> <s> <t> <o> <m> : "🛃"  U1F6C3        # CUSTOMS (conflicts with ǔ, use vu)
+<Multi_key> <d> <i> <a> <p> <e> <r> : "🚼"  U1F6BC        # BABY SYMBOL (DIAPER) (conflicts with ⌀, use diameter)
+<Multi_key> <e> <l> <e> <v> <a> <t> : "🛗"  U1F6D7        # ELEVATOR
+<Multi_key> <l> <i> <f> <t>         : "🛗"  U1F6D7        # ELEVATOR (LIFT)
+<Multi_key> <l> <i> <t> <t> <e> <r> : "🚮"  U1F6AE        # PUT LITTER IN ITS PLACE SYMBOL
+<Multi_key> <l> <u> <g> <g> <a> <g> : "🛅"  U1F6C5        # LEFT LUGGAGE
+<Multi_key> <n> <a> <p> <p> <y>     : "🚼"  U1F6BC        # BABY SYMBOL (NAPPY)
+<Multi_key> <p> <a> <s> <s> <p>     : "🛂"  U1F6C2        # PASSPORT CONTROL
+<Multi_key> <w> <a> <t> <e> <r>     : "🚰"  U1F6B0        # POTABLE WATER SYMBOL
+<Multi_key> <w> <c> <h> <a> <i> <r> : "♿️"  U267F UFE0F   # WHEELCHAIR SYMBOL EMOJI
 
 <Multi_key> <backslash> <b> <i> <k> <e>         : "🚳"  U1F6B3    # NO BICYCLES
 <Multi_key> <backslash> <d> <r> <i> <n> <k>     : "🚱"  U1F6B1    # NON-POTABLE WATER SYMBOL
