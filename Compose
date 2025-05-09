@@ -416,6 +416,9 @@ include "%L"
 <Multi_key> <Y> <G>                 : "Ȝ"  U021C   # LATIN CAPITAL LETTER YOGH
 <Multi_key> <y> <g>                 : "ȝ"  U021D   # LATIN SMALL LETTER YOGH
 
+# for consistency since we priorities using v for carons
+<Multi_key> <v> <l>                 : "ľ"  U013E   # LATIN SMALL LETTER L WITH CARON (conflicts with useless |)
+
 ###############################
 # Superscripts and subscripts #
 ###############################
@@ -4277,10 +4280,9 @@ include "%L"
 <Multi_key> <a> <n> <x>             : "😰"  U1F630        # FACE WITH OPEN MOUTH AND COLD SWEAT (ANXIOUS)
 <Multi_key> <a> <r> <g> <h>         : "😱"  U1F631        # FACE SCREAMING IN FEAR (ARGH)
 <Multi_key> <b> <a> <b> <y>         : "👶"  U1F476        # BABY (conflicts with ă, use ua)
-<Multi_key> <b> <a> <g> <s>         : "🫩"  U1FAE9        # FACE WITH BAGS UNDER EYES (conflicts with ă, use ua)
 <Multi_key> <b> <e> <a> <m> <y>     : "😄"  U1F604        # SMILING FACE WITH OPEN MOUTH AND SMILING EYES (BEAMY) (conflicts with ĕ, use ue)
 <Multi_key> <b> <l> <u> <s> <h>     : "😳"  U1F633        # FLUSHED FACE (BLUSH)
-<Multi_key> <c> <l> <o> <w> <n>     : "🤡"  U1F921        # CLOWN FACE (conflicts with ľ, use <l)
+<Multi_key> <c> <l> <o> <w> <n>     : "🤡"  U1F921        # CLOWN FACE (conflicts with ľ, use vl)
 <Multi_key> <c> <o> <l> <d>         : "🥶"  U1F976        # FREEZING FACE (COLD)  (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <o> <l>         : "😎"  U1F60E        # SMILING FACE WITH SUNGLASSES (COOL) (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <v> <i> <d>     : "😷"  U1F637        # FACE WITH MEDICAL MASK (COVID) (conflicts with ǒ, use vo) (alternatively mask)
@@ -4330,6 +4332,7 @@ include "%L"
 <Multi_key> <s> <n> <e> <e> <z> <e> : "🤧"  U1F927        # SNEEZING FACE
 <Multi_key> <s> <n> <o> <g>         : "😚"  U1F61A        # KISSING FACE WITH CLOSED EYES (SNOG) (use mwah for 😗 and :x for 😙)
 <Multi_key> <t> <e> <n> <g> <u>     : "👺"  U1F47A        # JAPANESE GOBLIN (TENGU) (alternatively goblin)
+<Multi_key> <t> <i> <r> <e> <d>     : "🫩"  U1FAE9        # FACE WITH BAGS UNDER EYES
 <Multi_key> <t> <o> <o> <h> <o> <t> : "🥵"  U1F975        # OVERHEATED FACE
 <Multi_key> <w> <a> <h>             : "😭"  U1F62D        # LOUDLY CRYING FACE (WAH)
 <Multi_key> <w> <e> <a> <r> <y>     : "😩"  U1F629        # WEARY FACE
@@ -4353,7 +4356,7 @@ include "%L"
 <Multi_key> <b> <u> <i> <l> <d>     : "👷"  U1F477        # CONSTRUCTION WORKER (BUILD) (conflicts with ŭ, use uu) (use crane for 🏗️)
 <Multi_key> <c> <h> <e> <r> <u> <b> : "👼"  U1F47C        # BABY ANGEL (CHERUB) (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <i> <l> <d>     : "🧒"  U1F9D2        # CHILD (conflicts with ȟ, use vh)
-<Multi_key> <c> <l> <i> <m> <b>     : "🧗"  U1F9D7        # PERSON CLIMBING (conflicts with ľ, use <l)
+<Multi_key> <c> <l> <i> <m> <b>     : "🧗"  U1F9D7        # PERSON CLIMBING (conflicts with ľ, use vl)
 <Multi_key> <c> <h> <e> <f>         : "🧑‍🍳"  U1F9D1 U200D U1F373    # COOK (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <p> <Return>    : "👮"  U1F46E        # POLICE OFFICER (COP) (conflicts with ǒ, use vo)
 <Multi_key> <c> <y> <c> <l> <e>     : "🚴"  U1F6B4        # BICYCLIST (use bike for 🚲)
@@ -4407,7 +4410,7 @@ include "%L"
 <Multi_key> <b> <o> <n> <e>         : "🦴"  U1F9B4        # BONE (conflicts with ŏ, use uo)
 <Multi_key> <b> <y> <e>             : "👋"  U1F44B        # WAVING HAND SIGN (BYE)
 <Multi_key> <c> <a> <l> <l>         : "🤙"  U1F919        # CALL ME HAND (conflicts with ǎ, use va)
-<Multi_key> <c> <l> <a> <p>         : "👏"  U1F44F        # CLAPPING HANDS SIGN (conflicts with ľ, use <l)
+<Multi_key> <c> <l> <a> <p>         : "👏"  U1F44F        # CLAPPING HANDS SIGN (conflicts with ľ, use vl)
 <Multi_key> <e> <a> <r>             : "👂"  U1F442        # EAR
 <Multi_key> <e> <y> <e> <Return>    : "👁️"  U1F441 UFE0F  # EYE EMOJI
 <Multi_key> <e> <y> <e> <s>         : "👀"  U1F440        # EYES
@@ -4460,6 +4463,7 @@ include "%L"
 <Multi_key> <c> <a> <f> <e>         : "☕"  U2615         # HOT BEVERAGE (CAFE) (alternatively tea) (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <k> <e>         : "🍰"  U1F370        # SHORTCAKE (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <n> <d> <y>     : "🍬"  U1F36C        # CANDY (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <n> <n> <e> <d> : "🥫"  U1F96B        # CANNED FOOD (conflicts with ǎ, use va)
 <Multi_key> <c> <h> <a> <r> <d>     : "🥬"  U1F96C        # LEAFY GREEN (CHARD) (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <e> <e> <r> <s> : "🍻"  U1F37B        # CLINKING BEER MUGS (CHEERS) (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <e> <e> <s> <e> : "🧀"  U1F9C0        # CHEESE WEDGE (conflicts with ȟ, use vh)
@@ -4468,7 +4472,7 @@ include "%L"
 <Multi_key> <c> <h> <i> <p> <s>     : "🍟"  U1F35F        # FRENCH FRIES (CHIPS) (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <o> <c>         : "🍫"  U1F36B        # CHOCOLATE BAR (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <o> <p>         : "🥢"  U1F962        # CHOPSTICKS (conflicts with ȟ, use vh)
-<Multi_key> <c> <l> <i> <n> <k>     : "🥂"  U1F942        # CLINKING GLASSES (conflicts with ľ, use <l)
+<Multi_key> <c> <l> <i> <n> <k>     : "🥂"  U1F942        # CLINKING GLASSES (conflicts with ľ, use vl)
 <Multi_key> <c> <o> <c> <k> <t>     : "🍸"  U1F378        # COCKTAIL GLASS (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <o> <k> <Return> : "🍳"  U1F373       # COOKING (conflicts with ǒ, use vo) (use chef for 🧑‍🍳)
 <Multi_key> <c> <o> <o> <k> <i> <e> : "🍪"  U1F36A        # COOKIE (conflicts with ǒ, use vo)
@@ -4490,6 +4494,7 @@ include "%L"
 <Multi_key> <g> <i> <n> <g> <e> <r> : "🫚"  U1FADA        # GINGER ROOT
 <Multi_key> <g> <l> <a> <s> <s>     : "🥃"  U1F943        # TUMBLER GLASS
 <Multi_key> <g> <r> <a> <p> <e>     : "🍇"  U1F347        # GRAPES
+<Multi_key> <g> <y> <o> <z> <a>     : "🥟"  U1F95F        # DUMPLING (GYOZA)
 <Multi_key> <h> <e> <r> <b>         : "🌿"  U1F33F        # HERB
 <Multi_key> <h> <o> <n> <e> <y>     : "🍯"  U1F36F        # HONEY POT
 <Multi_key> <i> <c> <e>             : "🧊"  U1F9CA        # ICE CUBE
@@ -4542,6 +4547,7 @@ include "%L"
 <Multi_key> <t> <a> <m> <a> <l> <e> : "🫔"  U1FAD4        # TAMALE
 <Multi_key> <t> <e> <a>             : "☕"  U2615         # HOT BEVERAGE (TEA) (use tpot for 🫖)
 <Multi_key> <t> <e> <m> <p> <u> <r> : "🍤"  U1F364        # FRIED SHRIMP (TEMPURA)
+<Multi_key> <t> <i> <n> <n> <e> <d> : "🥫"  U1F96B        # CANNED FOOD (TINNED)
 <Multi_key> <t> <o> <m> <a> <t> <o> : "🍅"  U1F345        # TOMATO
 <Multi_key> <t> <p> <o> <t>         : "🫖"  U1FAD6        # TEAPOT
 <Multi_key> <t> <u> <b> <e> <r>     : "🫜"  U1FADC        # ROOT VEGETABLE (TUBER)
@@ -4555,7 +4561,7 @@ include "%L"
 <Multi_key> <b> <u> <b> <b> <l> <e> : "🫧"  U1FAE7        # BUBBLES (conflicts with ŭ, use uu)
 <Multi_key> <c> <a> <c> <t> <u> <s> : "🌵"  U1F335        # CACTUS (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <m> <p>         : "🏕️"  U1F3D5 UFE0F  # CAMPING EMOJI (conflicts with ǎ, use va)
-<Multi_key> <c> <l> <o> <u> <d>     : "☁️"  U2601 UFE0F   # CLOUD EMOJI (conflicts with ľ, use <l)
+<Multi_key> <c> <l> <o> <u> <d>     : "☁️"  U2601 UFE0F   # CLOUD EMOJI (conflicts with ľ, use vl)
 <Multi_key> <c> <o> <m> <e> <t>     : "☄️"  U2604 UFE0F   # COMET EMOJI (conflicts with ǒ, use vo) (use *CO for text ☄)
 <Multi_key> <c> <y> <c> <l> <o> <n> : "🌀"  U1F300        # CYCLONE
 <Multi_key> <d> <e> <s> <e> <r> <t> : "🏜️"  U1F3DC UFE0F  # DESERT EMOJI
@@ -4642,6 +4648,7 @@ include "%L"
 <Multi_key> <c> <a> <m> <e> <l>     : "🐪"  U1F42A        # DROMEDARY CAMEL (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <t>             : "🐱"  U1F431        # CAT FACE (conflicts with ǎ, use va) (use >cat for 🐈; also see ^^ section)
 <Multi_key> <c> <h> <i> <c> <k>     : "🐥"  U1F425        # FRONT-FACING BABY CHICK (conflicts with ȟ, use vh) (use >chick for 🐤)
+<Multi_key> <c> <h> <i> <p> <m>     : "🐿️"  U1F43F UFE0F  # CHIPMUNK EMOJI (conflicts with ȟ, use vh)
 <Multi_key> <c> <o> <c> <o>         : "🥥"  U1F965        # COCONUT (conflicts with vo, use ǒ)
 <Multi_key> <c> <o> <r> <a> <l>     : "🪸"  U1FAB8        # CORAL (conflicts with vo, use ǒ)
 <Multi_key> <c> <o> <w>             : "🐮"  U1F42E        # COW FACE (conflicts with vo, use ǒ) (use >cow for 🐄)
@@ -4715,6 +4722,7 @@ include "%L"
 <Multi_key> <s> <n> <o> <u> <t>     : "🐽"  U1F43D        # PIG NOSE (SNOUT)
 <Multi_key> <s> <p> <i> <d> <e> <r> : "🕷️"  U1F577 UFE0F  # SPIDER EMOJI
 <Multi_key> <s> <q> <u> <i> <d>     : "🦑"  U1F991        # SQUID
+<Multi_key> <s> <q> <u> <i> <r>     : "🐿️"  U1F43F UFE0F  # CHIPMUNK EMOJI (SQUIRREL)
 <Multi_key> <s> <w> <a> <n>         : "🦢"  U1F9A2        # SWAN
 <Multi_key> <s> <w> <i> <n> <e>     : "🐷"  U1F437        # PIG FACE (SWINE) (not ideal but π is taken; use >swine or >pig for 🐖)
 <Multi_key> <t> <i> <g> <e> <r>     : "🐯"  U1F42F        # TIGER FACE (use >tiger for 🐅)
@@ -4751,7 +4759,7 @@ include "%L"
 <Multi_key> <b> <o> <x> <i> <n> <g> : "🥊"  U1F94A        # BOXING GLOVE (conflicts with ŏ, use uo)
 <Multi_key> <c> <a> <n> <o> <e>     : "🛶"  U1F6F6        # CANOE (conflicts with ǎ, use va)
 <Multi_key> <c> <h> <u> <t> <e>     : "🪂"  U1FA82        # PARACHUTE (CHUTE) (conflicts with ȟ, use vh)
-<Multi_key> <c> <l> <a> <s> <h>     : "⚔️"  U2694 UFE0F   # CROSSED SWORDS EMOJI (conflicts with ľ, use <l)
+<Multi_key> <c> <l> <a> <s> <h>     : "⚔️"  U2694 UFE0F   # CROSSED SWORDS EMOJI (conflicts with ľ, use vl)
 <Multi_key> <c> <u> <r> <l>         : "🥌"  U1F94C        # CURLING STONE (conflicts with vu, use ǔ)
 <Multi_key> <d> <e> <f> <e> <n> <d> : "🛡️"  U1F6E1 UFE0F  # SHIELD EMOJI (DEFEND)
 <Multi_key> <d> <i> <c> <e>         : "🎲"  U1F3B2        # GAME DIE (DICE) (conflicts with ⌀, use diameter)
@@ -4801,10 +4809,12 @@ include "%L"
 <Multi_key> <8> <b> <a> <l> <l>     : "🎱"  U1F3B1        # BILLIARDS (8 BALL)
 
 <Multi_key> <a> <w> <a> <r> <e>     : "🎗️"  U1F397 UFE0F  # REMINDER RIBBON EMOJI (AWARENESS RIBBON)
+<Multi_key> <b> <a> <g> <s>         : "🛍️"  U1F6CD UFE0F  # SHOPPING BAGS EMOJI (conflicts with ă, use ua)
 <Multi_key> <b> <a> <n> <d>         : "🩹"  U1FA79        # ADHESIVE BANDAGE (conflicts with ă, use ua)
 <Multi_key> <b> <e> <a> <d> <s>     : "📿"  U1F4FF        # PRAYER BEADS (conflicts with ĕ, use ue)
 <Multi_key> <b> <i> <k> <i> <n> <i> : "👙"  U1F459        # BIKINI (conflicts with ĭ, use ui)
 <Multi_key> <b> <l> <i> <n> <d>     : "🦯"  U1F9AF        # PROBING CANE (🧑+ZWJ+🦯=🧑‍🦯)
+<Multi_key> <b> <l> <o> <u> <s> <e> : "👚"  U1F45A        # WOMANS CLOTHES (BLOUSE)
 <Multi_key> <b> <o> <o> <t>         : "👢"  U1F462        # WOMANS BOOTS (conflicts with ŏ, use uo)
 <Multi_key> <b> <r> <i> <e> <f> <s> : "🩲"  U1FA72        # BRIEFS
 <Multi_key> <c> <o> <a> <t>         : "🧥"  U1F9E5        # COAT (conflicts with ǒ, use vo)
@@ -4844,6 +4854,8 @@ include "%L"
 <Multi_key> <s> <e> <w>             : "🪡"  U1FAA1        # SEWING NEEDLE
 <Multi_key> <s> <p> <o> <n> <g> <e> : "🧽"  U1F9FD        # SPONGE
 <Multi_key> <s> <t> <i> <l> <e> <t> : "👠"  U1F460        # HIGH-HEELED SHOE (STILETTO)
+<Multi_key> <s> <u> <i> <t> <F>     : "🩱"  U1FA71        # ONE-PIECE SWIMSUIT (use bikini for 👙)
+<Multi_key> <s> <u> <i> <t> <M>     : "🩳"  U1FA73        # SHORTS (use briefs for 🩲)
 <Multi_key> <s> <u> <n> <g> <l>     : "🕶️"  U1F576 UFE0F  # DARK SUNGLASSES EMOJI (use cool for 😎)
 <Multi_key> <t> <b> <r> <u> <s> <h> : "🪥"  U1FAA5        # TOOTHBRUSH
 <Multi_key> <t> <i> <e>             : "👔"  U1F454        # NECKTIE
@@ -4887,6 +4899,7 @@ include "%L"
 <Multi_key> <l> <a> <u> <n> <c> <h> : "🚀"  U1F680        # ROCKET (LAUNCH)
 <Multi_key> <l> <i> <b> <e> <r> <t> : "🗽"  U1F5FD        # STATUE OF LIBERTY
 <Multi_key> <l> <i> <f> <t>         : "🛗"  U1F6D7        # ELEVATOR (LIFT)
+<Multi_key> <m> <a> <c> <y> <s>     : "🏬"  U1F3EC        # DEPARTMENT STORE (MACY'S)
 <Multi_key> <m> <a> <r> <t>         : "🏪"  U1F3EA        # CONVENIENCE STORE (MART)
 <Multi_key> <m> <e> <d> <i> <c>     : "🚑"  U1F691        # AMBULANCE (MEDIC)
 <Multi_key> <m> <e> <t> <r> <o>     : "🚇"  U1F687        # METRO
@@ -4898,6 +4911,7 @@ include "%L"
 <Multi_key> <p> <l> <a> <n> <e>     : "✈️"  U2708 UFE0F   # AIRPLANE EMOJI
 <Multi_key> <p> <o> <l> <i> <c> <e> : "🚔"  U1F694        # ONCOMING POLICE CAR (use <police for 🚓 and cop[RETURN] for 👮)
 <Multi_key> <less> <p> <o> <l> <i> <c> <e> : "🚓"  U1F693 # POLICE CAR
+<Multi_key> <r> <i> <d> <e>         : "🎢"  U1F3A2        # ROLLER COASTER (RIDE)
 <Multi_key> <s> <c> <h> <o> <o> <l> : "🏫"  U1F3EB        # SCHOOL
 <Multi_key> <s> <c> <o> <o> <t>     : "🛴"  U1F6F4        # SCOOTER
 <Multi_key> <s> <e> <a> <t>         : "💺"  U1F4BA        # SEAT
@@ -4936,7 +4950,7 @@ include "%L"
 <Multi_key> <c> <h> <a> <r> <t> <v> : "📉"  U1F4C9        # CHART WITH DOWNWARDS TREND (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <a> <r> <t> <asciicircum> : "📈"  U1F4C8    # CHART WITH UPWARDS TREND (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <a> <r> <t> <Y> : "💹"  U1F4B9        # CHART WITH UPWARDS TREND AND YEN SIGN (conflicts with ȟ, use vh)
-<Multi_key> <c> <l> <i> <p>         : "📎"  U1F4CE        # PAPERCLIP (conflicts with ľ, use <l)
+<Multi_key> <c> <l> <i> <p>         : "📎"  U1F4CE        # PAPERCLIP (conflicts with ľ, use vl)
 <Multi_key> <c> <o> <i> <n>         : "🪙"  U1FA99        # COIN (conflicts with ǒ, use vo)
 <Multi_key> <c> <r> <a> <y> <o> <n> : "🖍️"  U1F58D UFE0F  # LOWER LEFT CRAYON EMOJI (conflicts with ř, use vr)
 <Multi_key> <d> <e> <s> <k>         : "🖥️"  U1F5A5 UFE0F  # DESKTOP COMPUTER EMOJI
@@ -5019,6 +5033,7 @@ include "%L"
 <Multi_key> <c> <a> <n> <d> <l> <e> : "🕯️"  U1F56F UFE0F  # CANDLE EMOJI (conflicts with ǎ, use va)
 <Multi_key> <c> <h> <a> <i> <n>     : "⛓️"  U26D3 UFE0F   # CHAINS EMOJI (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <a> <i> <r>     : "🪑"  U1FA91        # CHAIR (conflicts with ȟ, use vh)
+<Multi_key> <c> <l> <a> <m> <p>     : "🗜️"  U1F5DC UFE0F  # COMPRESSION EMOJI (conflicts with ľ, use vl)
 <Multi_key> <c> <o> <n> <f> <e> <t> : "🎊"  U1F38A        # CONFETTI BALL (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <u> <c> <h>     : "🛋️"  U1F6CB UFE0F  # COUCH AND LAMP EMOJI (conflicts with ǒ, use vo)
 <Multi_key> <c> <u> <t>             : "✂️"  U2702 UFE0F   # BLACK SCISSORS EMOJI (CUT) (conflicts with ǔ, use vu)
