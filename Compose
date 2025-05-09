@@ -4237,6 +4237,7 @@ include "%L"
 <Multi_key> <1> <P>            : "🥇"  U1F947        # FIRST PLACE MEDAL
 <Multi_key> <2> <P>            : "🥈"  U1F948        # SECOND PLACE MEDAL
 <Multi_key> <3> <P>            : "🥉"  U1F949        # THIRD PLACE MEDAL
+<Multi_key> <7> <7> <7>        : "🎰"  U1F3B0        # SLOT MACHINE (777)
 
 <Multi_key> <I> <C> <R> <C>    : "⛑️"  U26D1 UFE0F   # HELMET WITH WHITE CROSS EMOJI (ICRC)
 
@@ -4264,7 +4265,7 @@ include "%L"
 <Multi_key> <S> <B>            : "💬"  U1F4AC        # SPEECH BALLOON
 <Multi_key> <less> <S> <B>     : "🗨️"  U1F5E8 UFE0F  # LEFT SPEECH BUBBLE EMOJI (conflicts with Š, use vS)
 <Multi_key> <T> <B>            : "💭"  U1F4AD        # THOUGHT BALLOON
-<Multi_key> <W> <C>            : "🚻"  U1F6BB        # RESTROOM (WC)
+<Multi_key> <W> <C>            : "🚻"  U1F6BB        # RESTROOM (WC) (use @[WC] for 🚾)
 <Multi_key> <W> <R>            : "🚺"  U1F6BA        # WOMENS SYMBOL (WOMEN'S ROOM)
 <Multi_key> <W> <exclam>       : "⚠️"  U26A0 UFE0F   # WARNING SIGN EMOJI
 
@@ -4532,6 +4533,7 @@ include "%L"
 <Multi_key> <s> <p> <o> <o> <n>     : "🥄"  U1F944        # SPOON
 <Multi_key> <s> <p> <u> <d>         : "🥔"  U1F954        # POTATO (SPUD) (alternatively potato)
 <Multi_key> <s> <t> <e> <w>         : "🍲"  U1F372        # POT OF FOOD (STEW)
+<Multi_key> <s> <t> <r> <a> <w>     : "🥤"  U1F964        # CUP WITH STRAW
 <Multi_key> <s> <u> <c> <k> <e> <r> : "🍭"  U1F36D        # LOLLIPOP (SUCKER)
 <Multi_key> <s> <u> <s> <h> <i>     : "🍣"  U1F363        # SUSHI
 <Multi_key> <s> <w> <i> <c> <h>     : "🥪"  U1F96A        # SANDWICH
@@ -4755,6 +4757,7 @@ include "%L"
 <Multi_key> <d> <i> <c> <e>         : "🎲"  U1F3B2        # GAME DIE (DICE) (conflicts with ⌀, use diameter)
 <Multi_key> <f> <e> <n> <c> <e>     : "🤺"  U1F93A        # FENCER
 <Multi_key> <f> <r> <i> <s> <b>     : "🥏"  U1F94F        # FLYING DISC
+<Multi_key> <g> <a> <m> <b> <l> <e> : "🎰"  U1F3B0        # SLOT MACHINE (GAMBLE)
 <Multi_key> <g> <o> <l> <f>         : "🏌️"  U1F3CC UFE0F  # GOLFER EMOJI (use green for ⛳)
 <Multi_key> <g> <r> <e> <e> <n>     : "⛳"  U26F3         # FLAG IN HOLE (GREEN)
 <Multi_key> <g> <u> <n>             : "🔫"  U1F52B        # PISTOL (GUN)
@@ -4900,6 +4903,7 @@ include "%L"
 <Multi_key> <s> <e> <a> <t>         : "💺"  U1F4BA        # SEAT
 <Multi_key> <s> <i> <r> <e> <n>     : "🚨"  U1F6A8        # POLICE CARS REVOLVING LIGHT (SIREN)
 <Multi_key> <s> <p> <e> <e> <d> <b> : "🚤"  U1F6A4        # SPEEDBOAT
+<Multi_key> <s> <t> <e> <a> <m>     : "🚂"  U1F682        # STEAM LOCOMOTIVE (use huff for 😤)
 <Multi_key> <s> <t> <r> <e> <e> <t> : "🏘️"  U1F3D8 UFE0F  # HOUSE BUILDINGS EMOJI
 <Multi_key> <s> <y> <n> <a> <g>     : "🕍"  U1F54D        # SYNAGOGUE
 <Multi_key> <t> <a> <x> <i>         : "🚖"  U1F696        # ONCOMING TAXI (use <taxi for 🚕)
@@ -5020,6 +5024,7 @@ include "%L"
 <Multi_key> <c> <u> <t>             : "✂️"  U2702 UFE0F   # BLACK SCISSORS EMOJI (CUT) (conflicts with ǔ, use vu)
 <Multi_key> <d> <i> <s> <h>         : "📡"  U1F4E1        # SATELLITE ANTENNA (DISH) (conflicts with ⌀, use diameter) (use petri for 🧫)
 <Multi_key> <d> <i> <y> <a>         : "🪔"  U1FA94        # DIYA LAMP (conflicts with ⌀, use diameter)
+<Multi_key> <e> <x> <t> <i> <n> <g> : "🧯"  U1F9EF        # FIRE EXTINGUISHER
 <Multi_key> <f> <r> <a> <m> <e> <d> : "🖼️"  U1F5BC UFE0F  # FRAME WITH PICTURE EMOJI
 <Multi_key> <f> <r> <a> <m> <e> <s> : "🎞️"  U1F39E UFE0F  # FILM FRAMES EMOJI
 <Multi_key> <g> <e> <a> <r>         : "⚙️"  U2699 UFE0F   # GEAR EMOJI
@@ -5404,6 +5409,12 @@ include "%L"
 <Multi_key> <at> <bracketleft> <1> <0> <bracketright> : "🔟" U1F51F          # KEYCAP TEN
 <Multi_key> <at> <bracketleft> <i> <bracketright> : "ℹ️" U2139 UFE0F         # INFORMATION SOURCE EMOJI
 <Multi_key> <at> <bracketleft> <v> <bracketright> : "☑️" U2611 UFE0F         # BALLOT BOX WITH CHECK EMOJI
+<Multi_key> <at> <bracketleft> <A> <B> <C> <D> <bracketright> : "🔠" U1F520   # INPUT SYMBOL FOR LATIN CAPITAL LETTERS
+<Multi_key> <at> <bracketleft> <a> <b> <c> <d> <bracketright> : "🔡" U1F521   # INPUT SYMBOL FOR LATIN SMALL LETTERS
+<Multi_key> <at> <bracketleft> <1> <2> <3> <4> <bracketright> : "🔢" U1F522   # INPUT SYMBOL FOR NUMBERS
+<Multi_key> <at> <bracketleft> <a> <b> <c> <bracketright>     : "🔤" U1F524   # INPUT SYMBOL FOR LATIN LETTERS
+<Multi_key> <at> <bracketleft> <ampersand> <percent> <bracketright> : "🔣" U1F523   # INPUT SYMBOL FOR SYMBOLS
+<Multi_key> <at> <bracketleft> <at> <percent> <bracketright>  : "🔣" U1F523   # INPUT SYMBOL FOR SYMBOLS
 
 <Multi_key> <at> <bracketleft> <A> <bracketright> : "🅰️" U1F170 UFE0F        # NEGATIVE SQUARED LATIN CAPITAL LETTER A EMOJI
 <Multi_key> <at> <bracketleft> <B> <bracketright> : "🅱️" U1F171 UFE0F        # NEGATIVE SQUARED LATIN CAPITAL LETTER B EMOJI
@@ -5420,6 +5431,7 @@ include "%L"
 <Multi_key> <at> <bracketleft> <S> <O> <S> <bracketright>      : "🆘" U1F198   # SQUARED SOS
 <Multi_key> <at> <bracketleft> <U> <P> <exclam> <bracketright> : "🆙" U1F199   # SQUARED UP WITH EXCLAMATION MARK
 <Multi_key> <at> <bracketleft> <V> <S> <bracketright>          : "🆚" U1F19A   # SQUARED VS
+<Multi_key> <at> <bracketleft> <W> <C> <bracketright>          : "🚾" U1F6BE   # WATER CLOSET
 
 ####################
 # Geometric shapes #
