@@ -24,7 +24,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (1965)
+### Non-Latin script characters (2019)
 * **Arabic** (and Syriac & Neo-Tifinagh) (168): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
 * **ConScripts** (Deseret & Shavian) (128): 𐐡𐐇𐐔𐐆𐐓 𐑮𐑧𐑛𐑦𐑑 etc
@@ -33,10 +33,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Georgian** (154): რედდიტ ႰႤႣႣႨႲ etc
 * **Greek** (and Coptic) (152): Ρέντιτ Ⲣⲉⲇⲇⲓⲧ etc
 * **Hebrew** (and Phoenician) (75): ⁧רֶדִיט⁩ ⁧𐤓𐤃𐤕⁩ etc
-* **Korean** (using jamo) (118): 레딧 etc
 * **Japanese** (mostly kana) (302): 「レヂィット」 etc
+* **Korean** (using jamo) (118): 레딧 etc
 * **Old Italic** (and Runic) (117): 𐌓𐌄𐌃𐌃𐌉𐌕 ᚱᛖᛞᛞᛁᛏ etc
-* **Zhuyin** (104): ㄏㄨㄥˊㄉㄧˊ etc
+* **Zhuyin** (and Mongolian) (158): ㄏㄨㄥˊㄉㄧˊ ᠷᠡᠳᠢᠲ etc
 * **Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **Morse Code** (76): ···---··· etc
 
