@@ -1501,7 +1501,9 @@ include "%L"
 # C. NON-LATIN CHARACTERS #
 ###########################
 
-# Convention: script prefix + glyph type (c = characters x = extra characters # = numbers ; = punctuation) + code
+# Convention: script prefix + glyph type + code
+
+# default glyph types are (c = characters x = extra characters # = numbers ; = punctuation)
 
 ##########################################
 # (a) Arabic (and Syriac & Neo-Tifinagh) #
@@ -1810,7 +1812,7 @@ include "%L"
 # (b) Brahmi scripts (Brahmi, Devanagari, Tamil) #
 ##################################################
 
-# (based on ISO 15919)
+# based on 7-bit ISO 15919
 
 # (b = Brahmi)
 
@@ -1896,10 +1898,11 @@ include "%L"
 <Multi_key> <b> <b> <parenleft> <period> <Return> : "𑀀" U11000   # BRAHMI SIGN CANDRABINDU
 <Multi_key> <b> <b> <period> <Return>       : "𑀁" U11001   # BRAHMI SIGN ANUSVARA
 <Multi_key> <b> <b> <colon> <Return>        : "𑀂" U11002   # BRAHMI SIGN VISARGA
-<Multi_key> <b> <b> <x>                     : "𑀃" U11003   # BRAHMI SIGN JIHVAMULIYA
-<Multi_key> <b> <b> <o> <x>                 : "𑀄" U11004   # BRAHMI SIGN UPADHMANIYA
 <Multi_key> <b> <b> <minus> <Return>        : "𑁆" U11046   # BRAHMI VIRAMA
 <Multi_key> <b> <b> <greater> <period> <Return> : "𑁰" U11070   # BRAHMI SIGN OLD TAMIL VIRAMA
+
+<Multi_key> <b> <b> <x>                     : "𑀃" U11003   # BRAHMI SIGN JIHVAMULIYA
+<Multi_key> <b> <b> <o> <x>                 : "𑀄" U11004   # BRAHMI SIGN UPADHMANIYA
 
 # Punctuation
 
@@ -2133,8 +2136,9 @@ include "%L"
 # Other signs
 
 <Multi_key> <b> <t> <asciicircum> <o> <Return> : "ஂ" U0B82   # TAMIL SIGN ANUSVARA
-<Multi_key> <b> <t> <3> <o> : "ஃ" U0B83   # TAMIL SIGN VISARGA
 <Multi_key> <b> <t> <asciicircum> <period> <Return> : "்" U0BCD   # TAMIL SIGN VIRAMA
+
+<Multi_key> <b> <t> <3> <o> : "ஃ" U0B83   # TAMIL SIGN VISARGA
 <Multi_key> <b> <t> <o> <m> : "ௐ" U0BD0   # TAMIL OM
 <Multi_key> <b> <t> <R> <u> : "௹" U0BF9   # TAMIL RUPEE SIGN
 
@@ -2154,7 +2158,6 @@ include "%L"
 <Multi_key> <b> <t> <1> <0> <Return> : "௰" U0BF0   # TAMIL NUMBER TEN
 <Multi_key> <b> <t> <1> <0> <0> <Return> : "௱" U0BF1   # TAMIL NUMBER ONE HUNDRED
 <Multi_key> <b> <t> <1> <0> <0> <0>  : "௲" U0BF2   # TAMIL NUMBER ONE THOUSAND
-
 
 ###############################
 # (B) Unified English Braille #
@@ -2704,7 +2707,7 @@ include "%L"
 <Multi_key> <g> <numbersign> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
 <Multi_key> <g> <numbersign> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
 
-# (p/P = Coptic)
+# (p/P = Coptic) (note the best abbreviation, but think gp = egyptian)
 
 <Multi_key> <g> <p> <A> : "Ⲁ" U2C80   # COPTIC CAPITAL LETTER ALFA
 <Multi_key> <g> <p> <a> : "ⲁ" U2C81   # COPTIC SMALL LETTER ALFA
@@ -3035,7 +3038,7 @@ include "%L"
 <Multi_key> <h> <semicolon> <quotedbl>      : "״"  U05F4   # HEBREW PUNCTUATION GERSHAYIM
 <Multi_key> <h> <semicolon> <plus>          : "﬩" UFB29    # HEBREW LETTER ALTERNATIVE PLUS SIGN
 
-# (p = Palaeo-Hebrew/Phoenician)
+# (p = Phoenician/Palaeo-Hebrew)
 
 <Multi_key> <h> <p> <apostrophe> : "𐤀"  U10900  # PHOENICIAN LETTER ALF
 <Multi_key> <h> <p> <a>          : "𐤀"  U10900  # PHOENICIAN LETTER ALF
@@ -3069,7 +3072,7 @@ include "%L"
 # (j) Japanese #
 ################
 
-# Hiragana
+# Hiragana (lower case)
 
 <Multi_key> <j> <c> <underscore> <a> : "ぁ"  U3041   # HIRAGANA LETTER SMALL A
 <Multi_key> <j> <c> <a>              : "あ"  U3042   # HIRAGANA LETTER A
@@ -3177,7 +3180,7 @@ include "%L"
 <Multi_key> <j> <c> <quotedbl> <i>       : "ゝ"  U309D   # HIRAGANA ITERATION MARK
 <Multi_key> <j> <c> <quotedbl> <v>       : "ゞ"  U309E   # HIRAGANA VOICED ITERATION MARK
 
-# Katakana
+# Katakana (upper case)
 
 <Multi_key> <j> <c> <underscore> <A> : "ァ"  U30A1   # KATAKANA LETTER SMALL A
 <Multi_key> <j> <c> <A>              : "ア"  U30A2   # KATAKANA LETTER A
@@ -3290,7 +3293,7 @@ include "%L"
 <Multi_key> <j> <c> <quotedbl> <I>       : "ヽ"  U30FD   # KATAKANA ITERATION MARK
 <Multi_key> <j> <c> <quotedbl> <V>       : "ヾ"  U30FE   # KATAKANA VOICED ITERATION MARK
 
-# (very small number of) Kanji
+# Kanji
 
 <Multi_key> <j> <c> <Y> <equal>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
 <Multi_key> <j> <c> <equal> <Y>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
@@ -3816,8 +3819,6 @@ include "%L"
 # (z) Zhuyin/Bopomofo (and Mongolian) #
 #######################################
 
-# (c = one-letter, x = two-letter)
-
 <Multi_key> <z> <c> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
 <Multi_key> <z> <c> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
 <Multi_key> <z> <c> <m> : "ㄇ" U3107    # BOPOMOFO LETTER M
@@ -3915,7 +3916,7 @@ include "%L"
 <Multi_key> <z> <semicolon> <L>          : "˪" U02EA    # MODIFIER LETTER YIN DEPARTING TONE MARK
 <Multi_key> <z> <semicolon> <T>          : "˫" U02EB    # MODIFIER LETTER YANG DEPARTING TONE MARK
 
-# (very small number of) Hanzi
+# Hanzi
 
 <Multi_key> <z> <numbersign> <0>         : "零"  U96F6   # CJK UNIFIED IDEOGRAPH-96F6 (0)
 <Multi_key> <z> <numbersign> <O>         : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
@@ -6515,8 +6516,8 @@ include "%L"
 
 # Convention: # + number + type suffix
 #
-# Also see Arabic (a0), Devanagari (d0), Brahmi (db), Coptic (gp), Japanese (j0),
-# Chinese (z0) and Mongolian (zm) numerals above
+# Also see Arabic (a0), Brahmi (bb), Devanagari (bd), Tamil (bt), Coptic (gp),
+# Japanese (j0), Chinese (z0) and Mongolian (zm) numerals above
 
 # (f) fence tally
 
