@@ -1501,7 +1501,9 @@ include "%L"
 # C. NON-LATIN CHARACTERS #
 ###########################
 
-# Convention: script prefix + glyph type (c = characters x = extra characters 0 = numbers ; = punctuation) + code
+# Convention: script prefix + glyph type + code
+
+# default glyph types are (c = characters x = extra characters # = numbers ; = punctuation)
 
 ##########################################
 # (a) Arabic (and Syriac & Neo-Tifinagh) #
@@ -1577,16 +1579,16 @@ include "%L"
 <Multi_key> <a> <semicolon> <minus>     : "ـ" U0640    # ARABIC TATWEEL (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <percent>   : "٪" U066A    # ARABIC PERCENT SIGN (conflicts with ą, use ,a)
 
-<Multi_key> <a> <0> <0> : "٠"  U0660   # ARABIC-INDIC DIGIT ZERO
-<Multi_key> <a> <0> <1> : "١"  U0661   # ARABIC-INDIC DIGIT ONE
-<Multi_key> <a> <0> <2> : "٢"  U0662   # ARABIC-INDIC DIGIT TWO
-<Multi_key> <a> <0> <3> : "٣"  U0663   # ARABIC-INDIC DIGIT THREE
-<Multi_key> <a> <0> <4> : "٤"  U0664   # ARABIC-INDIC DIGIT FOUR
-<Multi_key> <a> <0> <5> : "٥"  U0665   # ARABIC-INDIC DIGIT FIVE
-<Multi_key> <a> <0> <6> : "٦"  U0666   # ARABIC-INDIC DIGIT SIX
-<Multi_key> <a> <0> <7> : "٧"  U0667   # ARABIC-INDIC DIGIT SEVEN
-<Multi_key> <a> <0> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
-<Multi_key> <a> <0> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
+<Multi_key> <a> <numbersign> <0> : "٠"  U0660   # ARABIC-INDIC DIGIT ZERO
+<Multi_key> <a> <numbersign> <1> : "١"  U0661   # ARABIC-INDIC DIGIT ONE
+<Multi_key> <a> <numbersign> <2> : "٢"  U0662   # ARABIC-INDIC DIGIT TWO
+<Multi_key> <a> <numbersign> <3> : "٣"  U0663   # ARABIC-INDIC DIGIT THREE
+<Multi_key> <a> <numbersign> <4> : "٤"  U0664   # ARABIC-INDIC DIGIT FOUR
+<Multi_key> <a> <numbersign> <5> : "٥"  U0665   # ARABIC-INDIC DIGIT FIVE
+<Multi_key> <a> <numbersign> <6> : "٦"  U0666   # ARABIC-INDIC DIGIT SIX
+<Multi_key> <a> <numbersign> <7> : "٧"  U0667   # ARABIC-INDIC DIGIT SEVEN
+<Multi_key> <a> <numbersign> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
+<Multi_key> <a> <numbersign> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
 
 # (s/S = Syriac)
 
@@ -1806,113 +1808,464 @@ include "%L"
 <Multi_key> <A> <semicolon> <period> : "։" U0589   # ARMENIAN FULL STOP (conflicts)
 <Multi_key> <A> <semicolon> <minus> : "֊" U058A   # ARMENIAN HYPHEN (conflicts)
 
+##################################################
+# (b) Brahmi scripts (Brahmi, Devanagari, Tamil) #
+##################################################
+
+# based on 7-bit ISO 15919
+
+# (b = Brahmi)
+
+# Consonants
+
+<Multi_key> <b> <b> <k> <space>          : "𑀓" U11013   # BRAHMI LETTER KA
+<Multi_key> <b> <b> <k> <h>              : "𑀔" U11014   # BRAHMI LETTER KHA
+<Multi_key> <b> <b> <g> <space>          : "𑀕" U11015   # BRAHMI LETTER GA
+<Multi_key> <b> <b> <g> <h>              : "𑀖" U11016   # BRAHMI LETTER GHA
+<Multi_key> <b> <b> <semicolon> <n>      : "𑀗" U11017   # BRAHMI LETTER NGA
+<Multi_key> <b> <b> <c> <space>          : "𑀘" U11018   # BRAHMI LETTER CA
+<Multi_key> <b> <b> <c> <h>              : "𑀙" U11019   # BRAHMI LETTER CHA
+<Multi_key> <b> <b> <j> <space>          : "𑀚" U1101A   # BRAHMI LETTER JA
+<Multi_key> <b> <b> <j> <h>              : "𑀛" U1101B   # BRAHMI LETTER JHA
+<Multi_key> <b> <b> <asciitilde> <n>     : "𑀜" U1101C   # BRAHMI LETTER NYA
+<Multi_key> <b> <b> <period> <t> <space> : "𑀝" U1101D   # BRAHMI LETTER TTA
+<Multi_key> <b> <b> <period> <t> <h>     : "𑀞" U1101E   # BRAHMI LETTER TTHA
+<Multi_key> <b> <b> <period> <d> <space> : "𑀟" U1101F   # BRAHMI LETTER DDA
+<Multi_key> <b> <b> <period> <d> <h>     : "𑀠" U11020   # BRAHMI LETTER DDHA
+<Multi_key> <b> <b> <period> <n>         : "𑀡" U11021   # BRAHMI LETTER NNA
+<Multi_key> <b> <b> <t> <space>          : "𑀢" U11022   # BRAHMI LETTER TA
+<Multi_key> <b> <b> <t> <h>              : "𑀣" U11023   # BRAHMI LETTER THA
+<Multi_key> <b> <b> <d> <space>          : "𑀤" U11024   # BRAHMI LETTER DA
+<Multi_key> <b> <b> <d> <h>              : "𑀥" U11025   # BRAHMI LETTER DHA
+<Multi_key> <b> <b> <n>                  : "𑀦" U11026   # BRAHMI LETTER NA
+<Multi_key> <b> <b> <p> <space>          : "𑀧" U11027   # BRAHMI LETTER PA
+<Multi_key> <b> <b> <p> <h>              : "𑀨" U11028   # BRAHMI LETTER PHA
+<Multi_key> <b> <b> <b> <space>          : "𑀩" U11029   # BRAHMI LETTER BA
+<Multi_key> <b> <b> <b> <h>              : "𑀪" U1102A   # BRAHMI LETTER BHA
+<Multi_key> <b> <b> <m>                  : "𑀫" U1102B   # BRAHMI LETTER MA
+<Multi_key> <b> <b> <y>                  : "𑀬" U1102C   # BRAHMI LETTER YA
+<Multi_key> <b> <b> <r>                  : "𑀭" U1102D   # BRAHMI LETTER RA
+<Multi_key> <b> <b> <l>                  : "𑀮" U1102E   # BRAHMI LETTER LA
+<Multi_key> <b> <b> <v>                  : "𑀯" U1102F   # BRAHMI LETTER VA
+<Multi_key> <b> <b> <semicolon> <s>      : "𑀰" U11030   # BRAHMI LETTER SHA
+<Multi_key> <b> <b> <period> <s>         : "𑀱" U11031   # BRAHMI LETTER SSA
+<Multi_key> <b> <b> <s>                  : "𑀲" U11032   # BRAHMI LETTER SA
+<Multi_key> <b> <b> <h>                  : "𑀳" U11033   # BRAHMI LETTER HA
+<Multi_key> <b> <b> <period> <l>         : "𑀴" U11034   # BRAHMI LETTER LLA
+<Multi_key> <b> <b> <underscore> <l>     : "𑀵" U11035   # BRAHMI LETTER OLD TAMIL LLLA
+<Multi_key> <b> <b> <underscore> <r>     : "𑀶" U11036   # BRAHMI LETTER OLD TAMIL RRA
+<Multi_key> <b> <b> <underscore> <n>     : "𑀷" U11037   # BRAHMI LETTER OLD TAMIL NNNA
+
+# Independent vowels
+
+<Multi_key> <b> <b> <a> <space>             : "𑀅" U11005   # BRAHMI LETTER A
+<Multi_key> <b> <b> <a> <a> <space>         : "𑀆" U11006   # BRAHMI LETTER AA
+<Multi_key> <b> <b> <i> <space>             : "𑀇" U11007   # BRAHMI LETTER I
+<Multi_key> <b> <b> <i> <i> <space>         : "𑀈" U11008   # BRAHMI LETTER II
+<Multi_key> <b> <b> <u> <space>             : "𑀉" U11009   # BRAHMI LETTER U
+<Multi_key> <b> <b> <u> <u> <space>         : "𑀊" U1100A   # BRAHMI LETTER UU
+<Multi_key> <b> <b> <comma> <r> <space>     : "𑀋" U1100B   # BRAHMI LETTER VOCALIC R
+<Multi_key> <b> <b> <comma> <r> <r> <space> : "𑀌" U1100C   # BRAHMI LETTER VOCALIC RR
+<Multi_key> <b> <b> <comma> <l> <space>     : "𑀍" U1100D   # BRAHMI LETTER VOCALIC L
+<Multi_key> <b> <b> <comma> <l> <l> <space> : "𑀎" U1100E   # BRAHMI LETTER VOCALIC LL
+<Multi_key> <b> <b> <e> <e> <space>         : "𑀏" U1100F   # BRAHMI LETTER E
+<Multi_key> <b> <b> <a> <i> <space>         : "𑀐" U11010   # BRAHMI LETTER AI
+<Multi_key> <b> <b> <o> <o> <space>         : "𑀑" U11011   # BRAHMI LETTER O
+<Multi_key> <b> <b> <a> <u> <space>         : "𑀒" U11012   # BRAHMI LETTER AU
+<Multi_key> <b> <b> <e> <space>             : "𑁱" U11071   # BRAHMI LETTER OLD TAMIL SHORT E
+<Multi_key> <b> <b> <o> <space>             : "𑁲" U11072   # BRAHMI LETTER OLD TAMIL SHORT O
+
+# Dependent vowels
+
+<Multi_key> <b> <b> <a> <a> <Return>        : "𑀸" U11038   # BRAHMI VOWEL SIGN AA
+<Multi_key> <b> <b> <i> <Return>            : "𑀺" U1103A   # BRAHMI VOWEL SIGN I
+<Multi_key> <b> <b> <i> <i> <Return>        : "𑀻" U1103B   # BRAHMI VOWEL SIGN II
+<Multi_key> <b> <b> <u> <Return>            : "𑀼" U1103C   # BRAHMI VOWEL SIGN U
+<Multi_key> <b> <b> <u> <u> <Return>        : "𑀽" U1103D   # BRAHMI VOWEL SIGN UU
+<Multi_key> <b> <b> <comma> <r> <Return>    : "𑀾" U1103E   # BRAHMI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <b> <comma> <r> <r> <Return> : "𑀿" U1103F   # BRAHMI VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <b> <comma> <l> <Return>    : "𑁀" U11040   # BRAHMI VOWEL SIGN VOCALIC L
+<Multi_key> <b> <b> <comma> <l> <l> <Return> : "𑁁" U11041   # BRAHMI VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <b> <e> <e> <Return>        : "𑁂" U11042   # BRAHMI VOWEL SIGN E
+<Multi_key> <b> <b> <a> <i> <Return>        : "𑁃" U11043   # BRAHMI VOWEL SIGN AI
+<Multi_key> <b> <b> <o> <o> <Return>        : "𑁄" U11044   # BRAHMI VOWEL SIGN O
+<Multi_key> <b> <b> <a> <u> <Return>        : "𑁅" U11045   # BRAHMI VOWEL SIGN AU
+<Multi_key> <b> <b> <e> <Return>            : "𑁳" U11073   # BRAHMI VOWEL SIGN OLD TAMIL SHORT E
+<Multi_key> <b> <b> <o> <Return>            : "𑁴" U11074   # BRAHMI VOWEL SIGN OLD TAMIL SHORT O
+
+# Other signs
+
+<Multi_key> <b> <b> <parenleft> <period> <Return> : "𑀀" U11000   # BRAHMI SIGN CANDRABINDU
+<Multi_key> <b> <b> <period> <Return>       : "𑀁" U11001   # BRAHMI SIGN ANUSVARA
+<Multi_key> <b> <b> <colon> <Return>        : "𑀂" U11002   # BRAHMI SIGN VISARGA
+<Multi_key> <b> <b> <minus> <Return>        : "𑁆" U11046   # BRAHMI VIRAMA
+<Multi_key> <b> <b> <greater> <period> <Return> : "𑁰" U11070   # BRAHMI SIGN OLD TAMIL VIRAMA
+
+<Multi_key> <b> <b> <x>                     : "𑀃" U11003   # BRAHMI SIGN JIHVAMULIYA
+<Multi_key> <b> <b> <o> <x>                 : "𑀄" U11004   # BRAHMI SIGN UPADHMANIYA
+
+# Punctuation
+
+<Multi_key> <b> <b> <bar> : "𑁇" U11047   # BRAHMI DANDA
+<Multi_key> <b> <b> <2> <bar> : "𑁈" U11048   # BRAHMI DOUBLE DANDA
+<Multi_key> <b> <b> <minus> <period> : "𑁉" U11049   # BRAHMI PUNCTUATION DOT
+<Multi_key> <b> <b> <minus> <colon> : "𑁊" U1104A   # BRAHMI PUNCTUATION DOUBLE DOT
+<Multi_key> <b> <b> <minus> <minus> : "𑁋" U1104B   # BRAHMI PUNCTUATION LINE
+
+# Numbers
+
+<Multi_key> <b> <b> <numbersign> <0> : "𑁦" U11066   # BRAHMI DIGIT ZERO
+<Multi_key> <b> <b> <numbersign> <1> : "𑁧" U11067   # BRAHMI DIGIT ONE
+<Multi_key> <b> <b> <numbersign> <2> : "𑁨" U11068   # BRAHMI DIGIT TWO
+<Multi_key> <b> <b> <numbersign> <3> : "𑁩" U11069   # BRAHMI DIGIT THREE
+<Multi_key> <b> <b> <numbersign> <4> : "𑁪" U1106A   # BRAHMI DIGIT FOUR
+<Multi_key> <b> <b> <numbersign> <5> : "𑁫" U1106B   # BRAHMI DIGIT FIVE
+<Multi_key> <b> <b> <numbersign> <6> : "𑁬" U1106C   # BRAHMI DIGIT SIX
+<Multi_key> <b> <b> <numbersign> <7> : "𑁭" U1106D   # BRAHMI DIGIT SEVEN
+<Multi_key> <b> <b> <numbersign> <8> : "𑁮" U1106E   # BRAHMI DIGIT EIGHT
+<Multi_key> <b> <b> <numbersign> <9> : "𑁯" U1106F   # BRAHMI DIGIT NINE
+
+<Multi_key> <b> <b> <1> <Return> : "𑁒" U11052   # BRAHMI NUMBER ONE
+<Multi_key> <b> <b> <2> <Return> : "𑁓" U11053   # BRAHMI NUMBER TWO
+<Multi_key> <b> <b> <3> <Return> : "𑁔" U11054   # BRAHMI NUMBER THREE
+<Multi_key> <b> <b> <4> <Return> : "𑁕" U11055   # BRAHMI NUMBER FOUR
+<Multi_key> <b> <b> <5> <Return> : "𑁖" U11056   # BRAHMI NUMBER FIVE
+<Multi_key> <b> <b> <6> <Return> : "𑁗" U11057   # BRAHMI NUMBER SIX
+<Multi_key> <b> <b> <7> <Return> : "𑁘" U11058   # BRAHMI NUMBER SEVEN
+<Multi_key> <b> <b> <8> <Return> : "𑁙" U11059   # BRAHMI NUMBER EIGHT
+<Multi_key> <b> <b> <9> <Return> : "𑁚" U1105A   # BRAHMI NUMBER NINE
+<Multi_key> <b> <b> <1> <0> <Return> : "𑁛" U1105B   # BRAHMI NUMBER TEN
+<Multi_key> <b> <b> <2> <0> <Return> : "𑁜" U1105C   # BRAHMI NUMBER TWENTY
+<Multi_key> <b> <b> <3> <0> <Return> : "𑁝" U1105D   # BRAHMI NUMBER THIRTY
+<Multi_key> <b> <b> <4> <0> <Return> : "𑁞" U1105E   # BRAHMI NUMBER FORTY
+<Multi_key> <b> <b> <5> <0> <Return> : "𑁟" U1105F   # BRAHMI NUMBER FIFTY
+<Multi_key> <b> <b> <6> <0> <Return> : "𑁠" U11060   # BRAHMI NUMBER SIXTY
+<Multi_key> <b> <b> <7> <0> <Return> : "𑁡" U11061   # BRAHMI NUMBER SEVENTY
+<Multi_key> <b> <b> <8> <0> <Return> : "𑁢" U11062   # BRAHMI NUMBER EIGHTY
+<Multi_key> <b> <b> <9> <0> <Return> : "𑁣" U11063   # BRAHMI NUMBER NINETY
+<Multi_key> <b> <b> <1> <0> <0> <Return> : "𑁤" U11064   # BRAHMI NUMBER ONE HUNDRED
+<Multi_key> <b> <b> <1> <0> <0> <0> : "𑁥" U11065   # BRAHMI NUMBER ONE THOUSAND
+
+# (d = Devanagari)
+
+# Consonants
+
+<Multi_key> <b> <d> <k> <space>          : "क" U0915   # DEVANAGARI LETTER KA
+<Multi_key> <b> <d> <k> <h>              : "ख" U0916   # DEVANAGARI LETTER KHA
+<Multi_key> <b> <d> <g> <space>          : "ग" U0917   # DEVANAGARI LETTER GA
+<Multi_key> <b> <d> <g> <h>              : "घ" U0918   # DEVANAGARI LETTER GHA
+<Multi_key> <b> <d> <semicolon> <n>      : "ङ" U0919   # DEVANAGARI LETTER NGA
+<Multi_key> <b> <d> <c> <space>          : "च" U091A   # DEVANAGARI LETTER CA
+<Multi_key> <b> <d> <c> <h>              : "छ" U091B   # DEVANAGARI LETTER CHA
+<Multi_key> <b> <d> <j> <space>          : "ज" U091C   # DEVANAGARI LETTER JA
+<Multi_key> <b> <d> <j> <h>              : "झ" U091D   # DEVANAGARI LETTER JHA
+<Multi_key> <b> <d> <asciitilde> <n>     : "ञ" U091E   # DEVANAGARI LETTER NYA
+<Multi_key> <b> <d> <period> <t> <space> : "ट" U091F   # DEVANAGARI LETTER TTA
+<Multi_key> <b> <d> <period> <t> <h>     : "ठ" U0920   # DEVANAGARI LETTER TTHA
+<Multi_key> <b> <d> <period> <d> <space> : "ड" U0921   # DEVANAGARI LETTER DDA
+<Multi_key> <b> <d> <period> <d> <h>     : "ढ" U0922   # DEVANAGARI LETTER DDHA
+<Multi_key> <b> <d> <period> <n>         : "ण" U0923   # DEVANAGARI LETTER NNA
+<Multi_key> <b> <d> <t> <space>          : "त" U0924   # DEVANAGARI LETTER TA
+<Multi_key> <b> <d> <t> <h>              : "थ" U0925   # DEVANAGARI LETTER THA
+<Multi_key> <b> <d> <d> <space>          : "द" U0926   # DEVANAGARI LETTER DA
+<Multi_key> <b> <d> <d> <h>              : "ध" U0927   # DEVANAGARI LETTER DHA
+<Multi_key> <b> <d> <n>                  : "न" U0928   # DEVANAGARI LETTER NA
+<Multi_key> <b> <d> <underscore> <n>     : "ऩ" U0929   # DEVANAGARI LETTER NNNA
+<Multi_key> <b> <d> <p> <space>          : "प" U092A   # DEVANAGARI LETTER PA
+<Multi_key> <b> <d> <p> <h>              : "फ" U092B   # DEVANAGARI LETTER PHA
+<Multi_key> <b> <d> <b> <space>          : "ब" U092C   # DEVANAGARI LETTER BA
+<Multi_key> <b> <d> <b> <h>              : "भ" U092D   # DEVANAGARI LETTER BHA
+<Multi_key> <b> <d> <m>                  : "म" U092E   # DEVANAGARI LETTER MA
+<Multi_key> <b> <d> <y>                  : "य" U092F   # DEVANAGARI LETTER YA
+<Multi_key> <b> <d> <r>                  : "र" U0930   # DEVANAGARI LETTER RA
+<Multi_key> <b> <d> <underscore> <r>     : "ऱ" U0931   # DEVANAGARI LETTER RRA
+<Multi_key> <b> <d> <l>                  : "ल" U0932   # DEVANAGARI LETTER LA
+<Multi_key> <b> <d> <period> <l>         : "ळ" U0933   # DEVANAGARI LETTER LLA
+<Multi_key> <b> <d> <underscore> <l>     : "ऴ" U0934   # DEVANAGARI LETTER LLLA
+<Multi_key> <b> <d> <v>                  : "व" U0935   # DEVANAGARI LETTER VA
+<Multi_key> <b> <d> <semicolon> <s>      : "श" U0936   # DEVANAGARI LETTER SHA
+<Multi_key> <b> <d> <period> <s>         : "ष" U0937   # DEVANAGARI LETTER SSA
+<Multi_key> <b> <d> <s>                  : "स" U0938   # DEVANAGARI LETTER SA
+<Multi_key> <b> <d> <h>                  : "ह" U0939   # DEVANAGARI LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <d> <period> <a> <space>      : "ऄ" U0904   # DEVANAGARI LETTER SHORT A
+<Multi_key> <b> <d> <a> <space>               : "अ" U0905   # DEVANAGARI LETTER A
+<Multi_key> <b> <d> <a> <a> <space>           : "आ" U0906   # DEVANAGARI LETTER AA
+<Multi_key> <b> <d> <i> <space>               : "इ" U0907   # DEVANAGARI LETTER I
+<Multi_key> <b> <d> <i> <i> <space>           : "ई" U0908   # DEVANAGARI LETTER II
+<Multi_key> <b> <d> <u> <space>               : "उ" U0909   # DEVANAGARI LETTER U
+<Multi_key> <b> <d> <u> <u> <space>           : "ऊ" U090A   # DEVANAGARI LETTER UU
+<Multi_key> <b> <d> <comma> <r> <space>       : "ऋ" U090B   # DEVANAGARI LETTER VOCALIC R
+<Multi_key> <b> <d> <comma> <l> <space>       : "ऌ" U090C   # DEVANAGARI LETTER VOCALIC L
+<Multi_key> <b> <d> <asciicircum> <e> <space> : "ऍ" U090D   # DEVANAGARI LETTER CANDRA E
+<Multi_key> <b> <d> <period> <e> <space>      : "ऎ" U090E   # DEVANAGARI LETTER SHORT E
+<Multi_key> <b> <d> <e> <space>               : "ऎ" U090E   # DEVANAGARI LETTER SHORT E
+<Multi_key> <b> <d> <e> <e> <space>           : "ए" U090F   # DEVANAGARI LETTER E
+<Multi_key> <b> <d> <a> <i> <space>           : "ऐ" U0910   # DEVANAGARI LETTER AI
+<Multi_key> <b> <d> <asciicircum> <o> <space> : "ऑ" U0911   # DEVANAGARI LETTER CANDRA O
+<Multi_key> <b> <d> <period> <o> <space>      : "ऒ" U0912   # DEVANAGARI LETTER SHORT O
+<Multi_key> <b> <d> <o> <o> <space>           : "ओ" U0913   # DEVANAGARI LETTER O
+<Multi_key> <b> <d> <a> <u> <space>           : "औ" U0914   # DEVANAGARI LETTER AU
+<Multi_key> <b> <d> <comma> <r> <r> <space>   : "ॠ" U0960   # DEVANAGARI LETTER VOCALIC RR
+<Multi_key> <b> <d> <comma> <l> <l> <space>   : "ॡ" U0961   # DEVANAGARI LETTER VOCALIC LL
+<Multi_key> <b> <d> <asciicircum> <a> <space> : "ॲ" U0972   # DEVANAGARI LETTER CANDRA A
+<Multi_key> <b> <d> <o> <e> <space>           : "ॳ" U0973   # DEVANAGARI LETTER OE
+<Multi_key> <b> <d> <o> <o> <e> <space>       : "ॴ" U0974   # DEVANAGARI LETTER OOE
+<Multi_key> <b> <d> <a> <w> <space>           : "ॵ" U0975   # DEVANAGARI LETTER AW
+<Multi_key> <b> <d> <u> <e> <space>           : "ॶ" U0976   # DEVANAGARI LETTER UE
+<Multi_key> <b> <d> <u> <u> <e> <space>       : "ॷ" U0977   # DEVANAGARI LETTER UUE
+
+# Dependent vowels
+
+<Multi_key> <b> <d> <o> <e> <Return>           : "ऺ" U093A   # DEVANAGARI VOWEL SIGN OE
+<Multi_key> <b> <d> <o> <o> <e> <Return>       : "ऻ" U093B   # DEVANAGARI VOWEL SIGN OOE
+<Multi_key> <b> <d> <a> <a> <Return>           : "ा" U093E   # DEVANAGARI VOWEL SIGN AA
+<Multi_key> <b> <d> <i> <Return>               : "ि" U093F   # DEVANAGARI VOWEL SIGN I
+<Multi_key> <b> <d> <i> <i> <Return>           : "ी" U0940   # DEVANAGARI VOWEL SIGN II
+<Multi_key> <b> <d> <u> <Return>               : "ु" U0941   # DEVANAGARI VOWEL SIGN U
+<Multi_key> <b> <d> <u> <u> <Return>           : "ू" U0942   # DEVANAGARI VOWEL SIGN UU
+<Multi_key> <b> <d> <comma> <r> <Return>       : "ृ" U0943   # DEVANAGARI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <d> <comma> <r> <r> <Return>   : "ॄ" U0944   # DEVANAGARI VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <d> <asciicircum> <e> <Return> : "ॅ" U0945   # DEVANAGARI VOWEL SIGN CANDRA E
+<Multi_key> <b> <d> <period> <e> <Return>      : "ॆ" U0946   # DEVANAGARI VOWEL SIGN SHORT E
+<Multi_key> <b> <d> <e> <Return>               : "ॆ" U0946   # DEVANAGARI VOWEL SIGN SHORT E
+<Multi_key> <b> <d> <e> <e> <Return>           : "े" U0947   # DEVANAGARI VOWEL SIGN E
+<Multi_key> <b> <d> <a> <i> <Return>           : "ै" U0948   # DEVANAGARI VOWEL SIGN AI
+<Multi_key> <b> <d> <asciicircum> <o> <Return> : "ॉ" U0949   # DEVANAGARI VOWEL SIGN CANDRA O
+<Multi_key> <b> <d> <period> <o> <Return>      : "ॊ" U094A   # DEVANAGARI VOWEL SIGN SHORT O
+<Multi_key> <b> <d> <o> <o> <Return>           : "ो" U094B   # DEVANAGARI VOWEL SIGN O
+<Multi_key> <b> <d> <a> <u> <Return>           : "ौ" U094C   # DEVANAGARI VOWEL SIGN AU
+<Multi_key> <b> <d> <a> <w> <Return>           : "ॏ" U094F   # DEVANAGARI VOWEL SIGN AW
+<Multi_key> <b> <d> <u> <e> <Return>           : "ॖ" U0956   # DEVANAGARI VOWEL SIGN UE
+<Multi_key> <b> <d> <u> <u> <e> <Return>       : "ॗ" U0957   # DEVANAGARI VOWEL SIGN UUE
+<Multi_key> <b> <d> <comma> <l> <Return>       : "ॢ" U0962   # DEVANAGARI VOWEL SIGN VOCALIC L
+<Multi_key> <b> <d> <comma> <l> <l> <Return>   : "ॣ" U0963   # DEVANAGARI VOWEL SIGN VOCALIC LL
+
+# Other signs
+
+<Multi_key> <b> <d> <parenleft> <period> <Return>  : "ऀ" U0900   # DEVANAGARI SIGN INVERTED CANDRABINDU
+<Multi_key> <b> <d> <period> <parenright> <Return> : "ँ" U0901   # DEVANAGARI SIGN CANDRABINDU
+<Multi_key> <b> <d> <period> <Return>              : "ं" U0902   # DEVANAGARI SIGN ANUSVARA
+<Multi_key> <b> <d> <colon> <Return>               : "ः" U0903   # DEVANAGARI SIGN VISARGA
+<Multi_key> <b> <d> <underscore> <period> <Return> : "़" U093C   # DEVANAGARI SIGN NUKTA
+<Multi_key> <b> <d> <comma> <Return>               : "्" U094D   # DEVANAGARI SIGN VIRAMA
+<Multi_key> <b> <d> <apostrophe> <Return>          : "॑" U0951   # DEVANAGARI STRESS SIGN UDATTA
+<Multi_key> <b> <d> <underscore> <Return>          : "॒" U0952   # DEVANAGARI STRESS SIGN ANUDATTA
+
+<Multi_key> <b> <d> <S>                            : "ऽ" U093D   # DEVANAGARI SIGN AVAGRAHA
+<Multi_key> <b> <d> <o> <m>                        : "ॐ" U0950   # DEVANAGARI OM
+
+# Numerals
+
+<Multi_key> <b> <d> <numbersign> <0> : "०" U0966   # DEVANAGARI DIGIT ZERO
+<Multi_key> <b> <d> <numbersign> <1> : "१" U0967   # DEVANAGARI DIGIT ONE
+<Multi_key> <b> <d> <numbersign> <2> : "२" U0968   # DEVANAGARI DIGIT TWO
+<Multi_key> <b> <d> <numbersign> <3> : "३" U0969   # DEVANAGARI DIGIT THREE
+<Multi_key> <b> <d> <numbersign> <4> : "४" U096A   # DEVANAGARI DIGIT FOUR
+<Multi_key> <b> <d> <numbersign> <5> : "५" U096B   # DEVANAGARI DIGIT FIVE
+<Multi_key> <b> <d> <numbersign> <6> : "६" U096C   # DEVANAGARI DIGIT SIX
+<Multi_key> <b> <d> <numbersign> <7> : "७" U096D   # DEVANAGARI DIGIT SEVEN
+<Multi_key> <b> <d> <numbersign> <8> : "८" U096E   # DEVANAGARI DIGIT EIGHT
+<Multi_key> <b> <d> <numbersign> <9> : "९" U096F   # DEVANAGARI DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <d> <bar>         : "।" U0964   # DEVANAGARI DANDA
+<Multi_key> <b> <d> <2> <bar>     : "॥" U0965   # DEVANAGARI DOUBLE DANDA
+<Multi_key> <b> <d> <o> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
+
+# (t = Tamil)
+
+# Consonants
+
+<Multi_key> <b> <t> <k> <space> : "க" U0B95   # TAMIL LETTER KA
+<Multi_key> <b> <t> <semicolon> <n> : "ங" U0B99   # TAMIL LETTER NGA
+<Multi_key> <b> <t> <c> <space> : "ச" U0B9A   # TAMIL LETTER CA
+<Multi_key> <b> <t> <j> <space> : "ஜ" U0B9C   # TAMIL LETTER JA
+<Multi_key> <b> <t> <asciitilde> <n> : "ஞ" U0B9E   # TAMIL LETTER NYA
+<Multi_key> <b> <t> <period> <t> <space> : "ட" U0B9F   # TAMIL LETTER TTA
+<Multi_key> <b> <t> <period> <n> : "ண" U0BA3   # TAMIL LETTER NNA
+<Multi_key> <b> <t> <t> <space> : "த" U0BA4   # TAMIL LETTER TA
+<Multi_key> <b> <t> <n> : "ந" U0BA8   # TAMIL LETTER NA
+<Multi_key> <b> <t> <underscore> <n> : "ன" U0BA9   # TAMIL LETTER NNNA
+<Multi_key> <b> <t> <p> <space> : "ப" U0BAA   # TAMIL LETTER PA
+<Multi_key> <b> <t> <m> : "ம" U0BAE   # TAMIL LETTER MA
+<Multi_key> <b> <t> <y> : "ய" U0BAF   # TAMIL LETTER YA
+<Multi_key> <b> <t> <r> : "ர" U0BB0   # TAMIL LETTER RA
+<Multi_key> <b> <t> <underscore> <r> : "ற" U0BB1   # TAMIL LETTER RRA
+<Multi_key> <b> <t> <l> : "ல" U0BB2   # TAMIL LETTER LA
+<Multi_key> <b> <t> <period> <l> : "ள" U0BB3   # TAMIL LETTER LLA
+<Multi_key> <b> <t> <underscore> <l> : "ழ" U0BB4   # TAMIL LETTER LLLA
+<Multi_key> <b> <t> <v> : "வ" U0BB5   # TAMIL LETTER VA
+<Multi_key> <b> <t> <semicolon> <s> : "ஶ" U0BB6   # TAMIL LETTER SHA
+<Multi_key> <b> <t> <period> <s> : "ஷ" U0BB7   # TAMIL LETTER SSA
+<Multi_key> <b> <t> <s> : "ஸ" U0BB8   # TAMIL LETTER SA
+<Multi_key> <b> <t> <h> : "ஹ" U0BB9   # TAMIL LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <t> <a> <space> : "அ" U0B85   # TAMIL LETTER A
+<Multi_key> <b> <t> <a> <a> <space> : "ஆ" U0B86   # TAMIL LETTER AA
+<Multi_key> <b> <t> <i> <space>  : "இ" U0B87   # TAMIL LETTER I
+<Multi_key> <b> <t> <i> <i> <space> : "ஈ" U0B88   # TAMIL LETTER II
+<Multi_key> <b> <t> <u> <space> : "உ" U0B89   # TAMIL LETTER U
+<Multi_key> <b> <t> <u> <u> <space> : "ஊ" U0B8A   # TAMIL LETTER UU
+<Multi_key> <b> <t> <e> <space> : "எ" U0B8E   # TAMIL LETTER E
+<Multi_key> <b> <t> <e> <e> <space> : "ஏ" U0B8F   # TAMIL LETTER EE
+<Multi_key> <b> <t> <a> <i> <space>  : "ஐ" U0B90   # TAMIL LETTER AI
+<Multi_key> <b> <t> <o> <space> : "ஒ" U0B92   # TAMIL LETTER O
+<Multi_key> <b> <t> <o> <o> <space> : "ஓ" U0B93   # TAMIL LETTER OO
+<Multi_key> <b> <t> <a> <u> <space> : "ஔ" U0B94   # TAMIL LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <t> <a> <a> <Return> : "ா" U0BBE   # TAMIL VOWEL SIGN AA
+<Multi_key> <b> <t> <i> <Return> : "ி" U0BBF   # TAMIL VOWEL SIGN I
+<Multi_key> <b> <t> <i> <i> <Return> : "ீ" U0BC0   # TAMIL VOWEL SIGN II
+<Multi_key> <b> <t> <u> <Return> : "ு" U0BC1   # TAMIL VOWEL SIGN U
+<Multi_key> <b> <t> <u> <u> <Return> : "ூ" U0BC2   # TAMIL VOWEL SIGN UU
+<Multi_key> <b> <t> <e> <Return> : "ெ" U0BC6   # TAMIL VOWEL SIGN E
+<Multi_key> <b> <t> <e> <e> <Return> : "ே" U0BC7   # TAMIL VOWEL SIGN EE
+<Multi_key> <b> <t> <a> <i> <Return> : "ை" U0BC8   # TAMIL VOWEL SIGN AI
+<Multi_key> <b> <t> <o> <Return> : "ொ" U0BCA   # TAMIL VOWEL SIGN O
+<Multi_key> <b> <t> <o> <o> <Return> : "ோ" U0BCB   # TAMIL VOWEL SIGN OO
+<Multi_key> <b> <t> <a> <u> <Return> : "ௌ" U0BCC   # TAMIL VOWEL SIGN AU
+
+# Other signs
+
+<Multi_key> <b> <t> <asciicircum> <o> <Return> : "ஂ" U0B82   # TAMIL SIGN ANUSVARA
+<Multi_key> <b> <t> <asciicircum> <period> <Return> : "்" U0BCD   # TAMIL SIGN VIRAMA
+
+<Multi_key> <b> <t> <3> <o> : "ஃ" U0B83   # TAMIL SIGN VISARGA
+<Multi_key> <b> <t> <o> <m> : "ௐ" U0BD0   # TAMIL OM
+<Multi_key> <b> <t> <R> <u> : "௹" U0BF9   # TAMIL RUPEE SIGN
+
+# Numerals
+
+<Multi_key> <b> <t> <numbersign> <0> : "௦" U0BE6   # TAMIL DIGIT ZERO
+<Multi_key> <b> <t> <numbersign> <1> : "௧" U0BE7   # TAMIL DIGIT ONE
+<Multi_key> <b> <t> <numbersign> <2> : "௨" U0BE8   # TAMIL DIGIT TWO
+<Multi_key> <b> <t> <numbersign> <3> : "௩" U0BE9   # TAMIL DIGIT THREE
+<Multi_key> <b> <t> <numbersign> <4> : "௪" U0BEA   # TAMIL DIGIT FOUR
+<Multi_key> <b> <t> <numbersign> <5> : "௫" U0BEB   # TAMIL DIGIT FIVE
+<Multi_key> <b> <t> <numbersign> <6> : "௬" U0BEC   # TAMIL DIGIT SIX
+<Multi_key> <b> <t> <numbersign> <7> : "௭" U0BED   # TAMIL DIGIT SEVEN
+<Multi_key> <b> <t> <numbersign> <8> : "௮" U0BEE   # TAMIL DIGIT EIGHT
+<Multi_key> <b> <t> <numbersign> <9> : "௯" U0BEF   # TAMIL DIGIT NINE
+
+<Multi_key> <b> <t> <1> <0> <Return> : "௰" U0BF0   # TAMIL NUMBER TEN
+<Multi_key> <b> <t> <1> <0> <0> <Return> : "௱" U0BF1   # TAMIL NUMBER ONE HUNDRED
+<Multi_key> <b> <t> <1> <0> <0> <0>  : "௲" U0BF2   # TAMIL NUMBER ONE THOUSAND
+
 ###############################
-# (b) Unified English Braille #
+# (B) Unified English Braille #
 ###############################
 
-<Multi_key> <b> <c> <a> : "⠁" U2801    # BRAILLE PATTERN DOTS-1 (A)
-<Multi_key> <b> <c> <b> : "⠃" U2803    # BRAILLE PATTERN DOTS-12 (B)
-<Multi_key> <b> <c> <c> : "⠉" U2809    # BRAILLE PATTERN DOTS-14 (C)
-<Multi_key> <b> <c> <d> : "⠙" U2819    # BRAILLE PATTERN DOTS-145 (D)
-<Multi_key> <b> <c> <e> : "⠑" U2811    # BRAILLE PATTERN DOTS-15 (E)
-<Multi_key> <b> <c> <f> : "⠋" U280B    # BRAILLE PATTERN DOTS-124 (F)
-<Multi_key> <b> <c> <g> : "⠛" U281B    # BRAILLE PATTERN DOTS-1245 (G)
-<Multi_key> <b> <c> <h> : "⠓" U2813    # BRAILLE PATTERN DOTS-125 (H)
-<Multi_key> <b> <c> <i> : "⠊" U280A    # BRAILLE PATTERN DOTS-24 (I)
-<Multi_key> <b> <c> <j> : "⠚" U281A    # BRAILLE PATTERN DOTS-245 (J)
-<Multi_key> <b> <c> <k> : "⠅" U2805    # BRAILLE PATTERN DOTS-13 (K)
-<Multi_key> <b> <c> <l> : "⠇" U2807    # BRAILLE PATTERN DOTS-123 (L)
-<Multi_key> <b> <c> <m> : "⠍" U280D    # BRAILLE PATTERN DOTS-134 (M)
-<Multi_key> <b> <c> <n> : "⠝" U281D    # BRAILLE PATTERN DOTS-1345 (N)
-<Multi_key> <b> <c> <o> : "⠕" U2815    # BRAILLE PATTERN DOTS-135 (O)
-<Multi_key> <b> <c> <p> : "⠏" U280F    # BRAILLE PATTERN DOTS-1234 (P)
-<Multi_key> <b> <c> <q> : "⠟" U281F    # BRAILLE PATTERN DOTS-12345 (Q)
-<Multi_key> <b> <c> <r> : "⠗" U2817    # BRAILLE PATTERN DOTS-1235 (R)
-<Multi_key> <b> <c> <s> : "⠎" U280E    # BRAILLE PATTERN DOTS-234 (S)
-<Multi_key> <b> <c> <t> : "⠞" U281E    # BRAILLE PATTERN DOTS-2345 (T)
-<Multi_key> <b> <c> <u> : "⠥" U2825    # BRAILLE PATTERN DOTS-136 (U)
-<Multi_key> <b> <c> <v> : "⠧" U2827    # BRAILLE PATTERN DOTS-1236 (V)
-<Multi_key> <b> <c> <w> : "⠺" U283A    # BRAILLE PATTERN DOTS-2456 (W)
-<Multi_key> <b> <c> <x> : "⠭" U282D    # BRAILLE PATTERN DOTS-1346 (X)
-<Multi_key> <b> <c> <y> : "⠽" U283D    # BRAILLE PATTERN DOTS-13456 (Y)
-<Multi_key> <b> <c> <z> : "⠵" U2835    # BRAILLE PATTERN DOTS-1356 (Z)
-<Multi_key> <b> <c> <apostrophe> : "⠈" U2808   # BRAILLE PATTERN DOTS-4 (ACCENT MARK)
+<Multi_key> <B> <c> <a> : "⠁" U2801    # BRAILLE PATTERN DOTS-1 (A)
+<Multi_key> <B> <c> <b> : "⠃" U2803    # BRAILLE PATTERN DOTS-12 (B)
+<Multi_key> <B> <c> <c> : "⠉" U2809    # BRAILLE PATTERN DOTS-14 (C)
+<Multi_key> <B> <c> <d> : "⠙" U2819    # BRAILLE PATTERN DOTS-145 (D)
+<Multi_key> <B> <c> <e> : "⠑" U2811    # BRAILLE PATTERN DOTS-15 (E)
+<Multi_key> <B> <c> <f> : "⠋" U280B    # BRAILLE PATTERN DOTS-124 (F)
+<Multi_key> <B> <c> <g> : "⠛" U281B    # BRAILLE PATTERN DOTS-1245 (G)
+<Multi_key> <B> <c> <h> : "⠓" U2813    # BRAILLE PATTERN DOTS-125 (H)
+<Multi_key> <B> <c> <i> : "⠊" U280A    # BRAILLE PATTERN DOTS-24 (I)
+<Multi_key> <B> <c> <j> : "⠚" U281A    # BRAILLE PATTERN DOTS-245 (J)
+<Multi_key> <B> <c> <k> : "⠅" U2805    # BRAILLE PATTERN DOTS-13 (K)
+<Multi_key> <B> <c> <l> : "⠇" U2807    # BRAILLE PATTERN DOTS-123 (L)
+<Multi_key> <B> <c> <m> : "⠍" U280D    # BRAILLE PATTERN DOTS-134 (M)
+<Multi_key> <B> <c> <n> : "⠝" U281D    # BRAILLE PATTERN DOTS-1345 (N)
+<Multi_key> <B> <c> <o> : "⠕" U2815    # BRAILLE PATTERN DOTS-135 (O)
+<Multi_key> <B> <c> <p> : "⠏" U280F    # BRAILLE PATTERN DOTS-1234 (P)
+<Multi_key> <B> <c> <q> : "⠟" U281F    # BRAILLE PATTERN DOTS-12345 (Q)
+<Multi_key> <B> <c> <r> : "⠗" U2817    # BRAILLE PATTERN DOTS-1235 (R)
+<Multi_key> <B> <c> <s> : "⠎" U280E    # BRAILLE PATTERN DOTS-234 (S)
+<Multi_key> <B> <c> <t> : "⠞" U281E    # BRAILLE PATTERN DOTS-2345 (T)
+<Multi_key> <B> <c> <u> : "⠥" U2825    # BRAILLE PATTERN DOTS-136 (U)
+<Multi_key> <B> <c> <v> : "⠧" U2827    # BRAILLE PATTERN DOTS-1236 (V)
+<Multi_key> <B> <c> <w> : "⠺" U283A    # BRAILLE PATTERN DOTS-2456 (W)
+<Multi_key> <B> <c> <x> : "⠭" U282D    # BRAILLE PATTERN DOTS-1346 (X)
+<Multi_key> <B> <c> <y> : "⠽" U283D    # BRAILLE PATTERN DOTS-13456 (Y)
+<Multi_key> <B> <c> <z> : "⠵" U2835    # BRAILLE PATTERN DOTS-1356 (Z)
+<Multi_key> <B> <c> <apostrophe> : "⠈" U2808   # BRAILLE PATTERN DOTS-4 (ACCENT MARK)
 
-<Multi_key> <b> <x> <a> <r>          : "⠜" U281C   # BRAILLE PATTERN DOTS-345 (AR)
-<Multi_key> <b> <x> <b> <b>          : "⠆" U2806   # BRAILLE PATTERN DOTS-23 (-BB-)
-<Multi_key> <b> <x> <c> <c>          : "⠒" U2812   # BRAILLE PATTERN DOTS-25 (-CC-)
-<Multi_key> <b> <x> <c> <h>          : "⠡" U2821   # BRAILLE PATTERN DOTS-16 (CH)
-<Multi_key> <b> <x> <e> <a>          : "⠂" U2802   # BRAILLE PATTERN DOTS-2 (-EA-)
-<Multi_key> <b> <x> <e> <d>          : "⠫" U282B   # BRAILLE PATTERN DOTS-1246 (ED)
-<Multi_key> <b> <x> <e> <n>          : "⠢" U2822   # BRAILLE PATTERN DOTS-26 (EN)
-<Multi_key> <b> <x> <e> <r>          : "⠻" U283B   # BRAILLE PATTERN DOTS-12456 (ER)
-<Multi_key> <b> <x> <f> <f>          : "⠖" U2816   # BRAILLE PATTERN DOTS-235 (-FF-)
-<Multi_key> <b> <x> <g> <g>          : "⠶" U2836   # BRAILLE PATTERN DOTS-2356 (-GG-)
-<Multi_key> <b> <x> <g> <h>          : "⠣" U2823   # BRAILLE PATTERN DOTS-126 (GH)
-<Multi_key> <b> <x> <i> <n> <Return> : "⠔" U2814   # BRAILLE PATTERN DOTS-35 (IN)
-<Multi_key> <b> <x> <i> <n> <g>      : "⠬" U282C   # BRAILLE PATTERN DOTS-346 (-ING)
-<Multi_key> <b> <x> <o> <u>          : "⠳" U2833   # BRAILLE PATTERN DOTS-1256 (OU)
-<Multi_key> <b> <x> <o> <w>          : "⠪" U282A   # BRAILLE PATTERN DOTS-246 (OW)
-<Multi_key> <b> <x> <s> <h>          : "⠩" U2829   # BRAILLE PATTERN DOTS-146 (SH)
-<Multi_key> <b> <x> <s> <t>          : "⠆" U2806   # BRAILLE PATTERN DOTS-23 (ST)
-<Multi_key> <b> <x> <t> <h> <Return> : "⠹" U2839   # BRAILLE PATTERN DOTS-1456 (TH)
-<Multi_key> <b> <x> <w> <h>          : "⠱" U2831   # BRAILLE PATTERN DOTS-156 (WH)
-<Multi_key> <b> <x> <a> <n> <d>      : "⠯" U282F   # BRAILLE PATTERN DOTS-12346 (AND)
-<Multi_key> <b> <x> <f> <o> <r>      : "⠿" U283F   # BRAILLE PATTERN DOTS-123456 (FOR)
-<Multi_key> <b> <x> <o> <f>          : "⠷" U2837   # BRAILLE PATTERN DOTS-12356 (OF)
-<Multi_key> <b> <x> <t> <h> <e>      : "⠮" U282E   # BRAILLE PATTERN DOTS-2346 (THE)
-<Multi_key> <b> <x> <w> <i> <t> <h>  : "⠾" U283E   # BRAILLE PATTERN DOTS-23456 (WITH)
+<Multi_key> <B> <x> <a> <r>          : "⠜" U281C   # BRAILLE PATTERN DOTS-345 (AR)
+<Multi_key> <B> <x> <b> <b>          : "⠆" U2806   # BRAILLE PATTERN DOTS-23 (-BB-)
+<Multi_key> <B> <x> <c> <c>          : "⠒" U2812   # BRAILLE PATTERN DOTS-25 (-CC-)
+<Multi_key> <B> <x> <c> <h>          : "⠡" U2821   # BRAILLE PATTERN DOTS-16 (CH)
+<Multi_key> <B> <x> <e> <a>          : "⠂" U2802   # BRAILLE PATTERN DOTS-2 (-EA-)
+<Multi_key> <B> <x> <e> <d>          : "⠫" U282B   # BRAILLE PATTERN DOTS-1246 (ED)
+<Multi_key> <B> <x> <e> <n>          : "⠢" U2822   # BRAILLE PATTERN DOTS-26 (EN)
+<Multi_key> <B> <x> <e> <r>          : "⠻" U283B   # BRAILLE PATTERN DOTS-12456 (ER)
+<Multi_key> <B> <x> <f> <f>          : "⠖" U2816   # BRAILLE PATTERN DOTS-235 (-FF-)
+<Multi_key> <B> <x> <g> <g>          : "⠶" U2836   # BRAILLE PATTERN DOTS-2356 (-GG-)
+<Multi_key> <B> <x> <g> <h>          : "⠣" U2823   # BRAILLE PATTERN DOTS-126 (GH)
+<Multi_key> <B> <x> <i> <n> <Return> : "⠔" U2814   # BRAILLE PATTERN DOTS-35 (IN)
+<Multi_key> <B> <x> <i> <n> <g>      : "⠬" U282C   # BRAILLE PATTERN DOTS-346 (-ING)
+<Multi_key> <B> <x> <o> <u>          : "⠳" U2833   # BRAILLE PATTERN DOTS-1256 (OU)
+<Multi_key> <B> <x> <o> <w>          : "⠪" U282A   # BRAILLE PATTERN DOTS-246 (OW)
+<Multi_key> <B> <x> <s> <h>          : "⠩" U2829   # BRAILLE PATTERN DOTS-146 (SH)
+<Multi_key> <B> <x> <s> <t>          : "⠆" U2806   # BRAILLE PATTERN DOTS-23 (ST)
+<Multi_key> <B> <x> <t> <h> <Return> : "⠹" U2839   # BRAILLE PATTERN DOTS-1456 (TH)
+<Multi_key> <B> <x> <w> <h>          : "⠱" U2831   # BRAILLE PATTERN DOTS-156 (WH)
+<Multi_key> <B> <x> <a> <n> <d>      : "⠯" U282F   # BRAILLE PATTERN DOTS-12346 (AND)
+<Multi_key> <B> <x> <f> <o> <r>      : "⠿" U283F   # BRAILLE PATTERN DOTS-123456 (FOR)
+<Multi_key> <B> <x> <o> <f>          : "⠷" U2837   # BRAILLE PATTERN DOTS-12356 (OF)
+<Multi_key> <B> <x> <t> <h> <e>      : "⠮" U282E   # BRAILLE PATTERN DOTS-2346 (THE)
+<Multi_key> <B> <x> <w> <i> <t> <h>  : "⠾" U283E   # BRAILLE PATTERN DOTS-23456 (WITH)
 
-<Multi_key> <b> <0> <numbersign> : "⠼" U283C    # BRAILLE PATTERN DOTS-3456 (NUMBER SIGN)
-<Multi_key> <b> <0> <1>          : "⠁" U2801    # BRAILLE PATTERN DOTS-1 (1)
-<Multi_key> <b> <0> <2>          : "⠃" U2803    # BRAILLE PATTERN DOTS-12 (2)
-<Multi_key> <b> <0> <3>          : "⠉" U2809    # BRAILLE PATTERN DOTS-14 (3)
-<Multi_key> <b> <0> <4>          : "⠙" U2819    # BRAILLE PATTERN DOTS-145 (4)
-<Multi_key> <b> <0> <5>          : "⠑" U2811    # BRAILLE PATTERN DOTS-15 (5)
-<Multi_key> <b> <0> <6>          : "⠋" U280B    # BRAILLE PATTERN DOTS-124 (6)
-<Multi_key> <b> <0> <7>          : "⠛" U281B    # BRAILLE PATTERN DOTS-1245 (7)
-<Multi_key> <b> <0> <8>          : "⠓" U2813    # BRAILLE PATTERN DOTS-125 (8)
-<Multi_key> <b> <0> <9>          : "⠊" U280A    # BRAILLE PATTERN DOTS-24 (9)
-<Multi_key> <b> <0> <0>          : "⠚" U281A    # BRAILLE PATTERN DOTS-245 (0)
-<Multi_key> <b> <0> <period>     : "⠨" U2828    # BRAILLE PATTERN DOTS-46 (DECIMAL POINT)
+<Multi_key> <B> <numbersign> <numbersign> : "⠼" U283C    # BRAILLE PATTERN DOTS-3456 (NUMBER SIGN)
+<Multi_key> <B> <numbersign> <1>          : "⠁" U2801    # BRAILLE PATTERN DOTS-1 (1)
+<Multi_key> <B> <numbersign> <2>          : "⠃" U2803    # BRAILLE PATTERN DOTS-12 (2)
+<Multi_key> <B> <numbersign> <3>          : "⠉" U2809    # BRAILLE PATTERN DOTS-14 (3)
+<Multi_key> <B> <numbersign> <4>          : "⠙" U2819    # BRAILLE PATTERN DOTS-145 (4)
+<Multi_key> <B> <numbersign> <5>          : "⠑" U2811    # BRAILLE PATTERN DOTS-15 (5)
+<Multi_key> <B> <numbersign> <6>          : "⠋" U280B    # BRAILLE PATTERN DOTS-124 (6)
+<Multi_key> <B> <numbersign> <7>          : "⠛" U281B    # BRAILLE PATTERN DOTS-1245 (7)
+<Multi_key> <B> <numbersign> <8>          : "⠓" U2813    # BRAILLE PATTERN DOTS-125 (8)
+<Multi_key> <B> <numbersign> <9>          : "⠊" U280A    # BRAILLE PATTERN DOTS-24 (9)
+<Multi_key> <B> <numbersign> <0>          : "⠚" U281A    # BRAILLE PATTERN DOTS-245 (0)
+<Multi_key> <B> <numbersign> <period>     : "⠨" U2828    # BRAILLE PATTERN DOTS-46 (DECIMAL POINT)
 
-<Multi_key> <b> <semicolon> <space>              : "⠀" U2800    # BRAILLE PATTERN BLANK (SPACE)
-<Multi_key> <b> <semicolon> <comma>              : "⠂" U2802    # BRAILLE PATTERN DOTS-2 (,)
-<Multi_key> <b> <semicolon> <semicolon>          : "⠆" U2806    # BRAILLE PATTERN DOTS-23 (;)
-<Multi_key> <b> <semicolon> <colon>              : "⠒" U2812    # BRAILLE PATTERN DOTS-25 (:)
-<Multi_key> <b> <semicolon> <period>             : "⠲" U2832    # BRAILLE PATTERN DOTS-256 (.)
-<Multi_key> <b> <semicolon> <question>           : "⠦" U2826    # BRAILLE PATTERN DOTS-236 (?)
-<Multi_key> <b> <semicolon> <exclam>             : "⠖" U2816    # BRAILLE PATTERN DOTS-235 (!)
-<Multi_key> <b> <semicolon> <apostrophe>         : "⠄" U2804    # BRAILLE PATTERN DOTS-3 (')
-<Multi_key> <b> <semicolon> <minus>              : "⠤" U2824    # BRAILLE PATTERN DOTS-36 (-)
-<Multi_key> <b> <semicolon> <less> <quotedbl>    : "⠦" U2826    # BRAILLE PATTERN DOTS-236 (“)
-<Multi_key> <b> <semicolon> <greater> <quotedbl> : "⠴" U2834    # BRAILLE PATTERN DOTS-356 (”)
+<Multi_key> <B> <semicolon> <space>              : "⠀" U2800    # BRAILLE PATTERN BLANK (SPACE)
+<Multi_key> <B> <semicolon> <comma>              : "⠂" U2802    # BRAILLE PATTERN DOTS-2 (,)
+<Multi_key> <B> <semicolon> <semicolon>          : "⠆" U2806    # BRAILLE PATTERN DOTS-23 (;)
+<Multi_key> <B> <semicolon> <colon>              : "⠒" U2812    # BRAILLE PATTERN DOTS-25 (:)
+<Multi_key> <B> <semicolon> <period>             : "⠲" U2832    # BRAILLE PATTERN DOTS-256 (.)
+<Multi_key> <B> <semicolon> <question>           : "⠦" U2826    # BRAILLE PATTERN DOTS-236 (?)
+<Multi_key> <B> <semicolon> <exclam>             : "⠖" U2816    # BRAILLE PATTERN DOTS-235 (!)
+<Multi_key> <B> <semicolon> <apostrophe>         : "⠄" U2804    # BRAILLE PATTERN DOTS-3 (')
+<Multi_key> <B> <semicolon> <minus>              : "⠤" U2824    # BRAILLE PATTERN DOTS-36 (-)
+<Multi_key> <B> <semicolon> <less> <quotedbl>    : "⠦" U2826    # BRAILLE PATTERN DOTS-236 (“)
+<Multi_key> <B> <semicolon> <greater> <quotedbl> : "⠴" U2834    # BRAILLE PATTERN DOTS-356 (”)
 
-<Multi_key> <b> <semicolon> <at>                   : "⠈⠁" U2808 U2801    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-1 (@)
-<Multi_key> <b> <semicolon> <ampersand>            : "⠈⠯" U2808 U282F    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-12346 (&)
-<Multi_key> <b> <semicolon> <dollar>               : "⠈⠎" U2808 U280E    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-234 ($)
-<Multi_key> <b> <semicolon> <asterisk>             : "⠐⠔" U2810 U2814    # BRAILLE PATTERN DOTS-5 BRAILLE PATTERN DOTS-35 (*)
-<Multi_key> <b> <semicolon> <percent>              : "⠨⠴" U2828 U2834    # BRAILLE PATTERN DOTS-46 BRAILLE PATTERN DOTS-356 (%)
-<Multi_key> <b> <semicolon> <numbersign>           : "⠸⠹" U2838 U2839    # BRAILLE PATTERN DOTS-456 BRAILLE PATTERN DOTS-1456 (#)
-<Multi_key> <b> <semicolon> <less> <apostrophe>    : "⠠⠦" U2820 U2826    # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-236 (‘)
-<Multi_key> <b> <semicolon> <greater> <apostrophe> : "⠠⠴" U2820 U2834    # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-356 (’)
-<Multi_key> <b> <semicolon> <parenleft>            : "⠐⠣" U2810 U2823    # BRAILLE PATTERN DOTS-5 BRAILLE PATTERN DOTS-126 (()
-<Multi_key> <b> <semicolon> <parenright>           : "⠐⠜" U2810 U281C    # BRAILLE PATTERN DOTS-5 BRAILLE PATTERN DOTS-345 ())
-<Multi_key> <b> <semicolon> <bracketleft>          : "⠨⠣" U2828 U2823    # BRAILLE PATTERN DOTS-46 BRAILLE PATTERN DOTS-126 ([)
-<Multi_key> <b> <semicolon> <bracketright>         : "⠨⠜" U2828 U281C    # BRAILLE PATTERN DOTS-46 BRAILLE PATTERN DOTS-345 (])
-<Multi_key> <b> <semicolon> <braceleft>            : "⠸⠣" U2838 U2823    # BRAILLE PATTERN DOTS-456 BRAILLE PATTERN DOTS-126 ({)
-<Multi_key> <b> <semicolon> <braceright>           : "⠸⠜" U2838 U281C    # BRAILLE PATTERN DOTS-456 BRAILLE PATTERN DOTS-345 (})
+<Multi_key> <B> <semicolon> <at>                   : "⠈⠁" U2808 U2801    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-1 (@)
+<Multi_key> <B> <semicolon> <ampersand>            : "⠈⠯" U2808 U282F    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-12346 (&)
+<Multi_key> <B> <semicolon> <dollar>               : "⠈⠎" U2808 U280E    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-234 ($)
+<Multi_key> <B> <semicolon> <asterisk>             : "⠐⠔" U2810 U2814    # BRAILLE PATTERN DOTS-5 BRAILLE PATTERN DOTS-35 (*)
+<Multi_key> <B> <semicolon> <percent>              : "⠨⠴" U2828 U2834    # BRAILLE PATTERN DOTS-46 BRAILLE PATTERN DOTS-356 (%)
+<Multi_key> <B> <semicolon> <numbersign>           : "⠸⠹" U2838 U2839    # BRAILLE PATTERN DOTS-456 BRAILLE PATTERN DOTS-1456 (#)
+<Multi_key> <B> <semicolon> <less> <apostrophe>    : "⠠⠦" U2820 U2826    # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-236 (‘)
+<Multi_key> <B> <semicolon> <greater> <apostrophe> : "⠠⠴" U2820 U2834    # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-356 (’)
+<Multi_key> <B> <semicolon> <parenleft>            : "⠐⠣" U2810 U2823    # BRAILLE PATTERN DOTS-5 BRAILLE PATTERN DOTS-126 (()
+<Multi_key> <B> <semicolon> <parenright>           : "⠐⠜" U2810 U281C    # BRAILLE PATTERN DOTS-5 BRAILLE PATTERN DOTS-345 ())
+<Multi_key> <B> <semicolon> <bracketleft>          : "⠨⠣" U2828 U2823    # BRAILLE PATTERN DOTS-46 BRAILLE PATTERN DOTS-126 ([)
+<Multi_key> <B> <semicolon> <bracketright>         : "⠨⠜" U2828 U281C    # BRAILLE PATTERN DOTS-46 BRAILLE PATTERN DOTS-345 (])
+<Multi_key> <B> <semicolon> <braceleft>            : "⠸⠣" U2838 U2823    # BRAILLE PATTERN DOTS-456 BRAILLE PATTERN DOTS-126 ({)
+<Multi_key> <B> <semicolon> <braceright>           : "⠸⠜" U2838 U281C    # BRAILLE PATTERN DOTS-456 BRAILLE PATTERN DOTS-345 (})
 
 # (f = formatting marks)
 
-<Multi_key> <b> <f> <a> <1> : "⠐" U2810   # BRAILLE PATTERN DOTS-5 (ABBREVIATION SIGN 1)
-<Multi_key> <b> <f> <a> <2> : "⠘" U2818   # BRAILLE PATTERN DOTS-45 (ABBREVIATION SIGN 2)
-<Multi_key> <b> <f> <a> <3> : "⠸" U2838   # BRAILLE PATTERN DOTS-456 (ABBREVIATION SIGN 3)
-<Multi_key> <b> <f> <c>     : "⠠" U2820   # BRAILLE PATTERN DOTS-6 (CAPITAL SIGN)
-<Multi_key> <b> <f> <e>     : "⠨" U2828   # BRAILLE PATTERN DOTS-46 (EMPHASIS SIGN)
-<Multi_key> <b> <f> <n>     : "⠼" U283C   # BRAILLE PATTERN DOTS-3456 (NUMBER SIGN) (alternatively, b0#)
-<Multi_key> <b> <f> <l>     : "⠰" U2830   # BRAILLE PATTERN DOTS-56 (LETTER SIGN)
-<Multi_key> <b> <f> <t>     : "⠠⠄" U2820 U2804  # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-3 (TERMINATION SIGN)
+<Multi_key> <B> <f> <a> <1> : "⠐" U2810   # BRAILLE PATTERN DOTS-5 (ABBREVIATION SIGN 1)
+<Multi_key> <B> <f> <a> <2> : "⠘" U2818   # BRAILLE PATTERN DOTS-45 (ABBREVIATION SIGN 2)
+<Multi_key> <B> <f> <a> <3> : "⠸" U2838   # BRAILLE PATTERN DOTS-456 (ABBREVIATION SIGN 3)
+<Multi_key> <B> <f> <c>     : "⠠" U2820   # BRAILLE PATTERN DOTS-6 (CAPITAL SIGN)
+<Multi_key> <B> <f> <e>     : "⠨" U2828   # BRAILLE PATTERN DOTS-46 (EMPHASIS SIGN)
+<Multi_key> <B> <f> <n>     : "⠼" U283C   # BRAILLE PATTERN DOTS-3456 (NUMBER SIGN) (alternatively, b0#)
+<Multi_key> <B> <f> <l>     : "⠰" U2830   # BRAILLE PATTERN DOTS-56 (LETTER SIGN)
+<Multi_key> <B> <f> <t>     : "⠠⠄" U2820 U2804  # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-3 (TERMINATION SIGN)
 
 #################################
 # (c) Cyrillic (and Glagolitic) #
@@ -2277,271 +2630,6 @@ include "%L"
 <Multi_key> <C> <S> <y> <u> <h> : "𐑾" U1047E   # SHAVIAN LETTER IAN
 <Multi_key> <C> <S> <y> <o> <o> : "𐑿" U1047F   # SHAVIAN LETTER YEW
 
-###############################
-# (d) Devanagari (and Brahmi) #
-###############################
-
-# (based on ISO 15919)
-
-# Consonants
-
-<Multi_key> <d> <c> <k> <space>          : "क" U0915   # DEVANAGARI LETTER KA
-<Multi_key> <d> <c> <k> <h>              : "ख" U0916   # DEVANAGARI LETTER KHA
-<Multi_key> <d> <c> <g> <space>          : "ग" U0917   # DEVANAGARI LETTER GA
-<Multi_key> <d> <c> <g> <h>              : "घ" U0918   # DEVANAGARI LETTER GHA
-<Multi_key> <d> <c> <semicolon> <n>      : "ङ" U0919   # DEVANAGARI LETTER NGA
-<Multi_key> <d> <c> <c> <space>          : "च" U091A   # DEVANAGARI LETTER CA
-<Multi_key> <d> <c> <c> <h>              : "छ" U091B   # DEVANAGARI LETTER CHA
-<Multi_key> <d> <c> <j> <space>          : "ज" U091C   # DEVANAGARI LETTER JA
-<Multi_key> <d> <c> <j> <h>              : "झ" U091D   # DEVANAGARI LETTER JHA
-<Multi_key> <d> <c> <asciitilde> <n>     : "ञ" U091E   # DEVANAGARI LETTER NYA
-<Multi_key> <d> <c> <period> <t> <space> : "ट" U091F   # DEVANAGARI LETTER TTA
-<Multi_key> <d> <c> <period> <t> <h>     : "ठ" U0920   # DEVANAGARI LETTER TTHA
-<Multi_key> <d> <c> <period> <d> <space> : "ड" U0921   # DEVANAGARI LETTER DDA
-<Multi_key> <d> <c> <period> <d> <h>     : "ढ" U0922   # DEVANAGARI LETTER DDHA
-<Multi_key> <d> <c> <period> <n>         : "ण" U0923   # DEVANAGARI LETTER NNA
-<Multi_key> <d> <c> <t> <space>          : "त" U0924   # DEVANAGARI LETTER TA
-<Multi_key> <d> <c> <t> <h>              : "थ" U0925   # DEVANAGARI LETTER THA
-<Multi_key> <d> <c> <d> <space>          : "द" U0926   # DEVANAGARI LETTER DA
-<Multi_key> <d> <c> <d> <h>              : "ध" U0927   # DEVANAGARI LETTER DHA
-<Multi_key> <d> <c> <n>                  : "न" U0928   # DEVANAGARI LETTER NA
-<Multi_key> <d> <c> <underscore> <n>     : "ऩ" U0929   # DEVANAGARI LETTER NNNA
-<Multi_key> <d> <c> <p> <space>          : "प" U092A   # DEVANAGARI LETTER PA
-<Multi_key> <d> <c> <p> <h>              : "फ" U092B   # DEVANAGARI LETTER PHA
-<Multi_key> <d> <c> <b> <space>          : "ब" U092C   # DEVANAGARI LETTER BA
-<Multi_key> <d> <c> <b> <h>              : "भ" U092D   # DEVANAGARI LETTER BHA
-<Multi_key> <d> <c> <m>                  : "म" U092E   # DEVANAGARI LETTER MA
-<Multi_key> <d> <c> <y>                  : "य" U092F   # DEVANAGARI LETTER YA
-<Multi_key> <d> <c> <r>                  : "र" U0930   # DEVANAGARI LETTER RA
-<Multi_key> <d> <c> <underscore> <r>     : "ऱ" U0931   # DEVANAGARI LETTER RRA
-<Multi_key> <d> <c> <l>                  : "ल" U0932   # DEVANAGARI LETTER LA
-<Multi_key> <d> <c> <period> <l>         : "ळ" U0933   # DEVANAGARI LETTER LLA
-<Multi_key> <d> <c> <underscore> <l>     : "ऴ" U0934   # DEVANAGARI LETTER LLLA
-<Multi_key> <d> <c> <v>                  : "व" U0935   # DEVANAGARI LETTER VA
-<Multi_key> <d> <c> <semicolon> <s>      : "श" U0936   # DEVANAGARI LETTER SHA
-<Multi_key> <d> <c> <period> <s>         : "ष" U0937   # DEVANAGARI LETTER SSA
-<Multi_key> <d> <c> <s>                  : "स" U0938   # DEVANAGARI LETTER SA
-<Multi_key> <d> <c> <h>                  : "ह" U0939   # DEVANAGARI LETTER HA
-
-# Independent vowels
-
-<Multi_key> <d> <c> <period> <a> <space>      : "ऄ" U0904   # DEVANAGARI LETTER SHORT A
-<Multi_key> <d> <c> <a> <space>               : "अ" U0905   # DEVANAGARI LETTER A
-<Multi_key> <d> <c> <a> <a> <space>           : "आ" U0906   # DEVANAGARI LETTER AA
-<Multi_key> <d> <c> <i> <space>               : "इ" U0907   # DEVANAGARI LETTER I
-<Multi_key> <d> <c> <i> <i> <space>           : "ई" U0908   # DEVANAGARI LETTER II
-<Multi_key> <d> <c> <u> <space>               : "उ" U0909   # DEVANAGARI LETTER U
-<Multi_key> <d> <c> <u> <u> <space>           : "ऊ" U090A   # DEVANAGARI LETTER UU
-<Multi_key> <d> <c> <comma> <r> <space>       : "ऋ" U090B   # DEVANAGARI LETTER VOCALIC R
-<Multi_key> <d> <c> <comma> <l> <space>       : "ऌ" U090C   # DEVANAGARI LETTER VOCALIC L
-<Multi_key> <d> <c> <asciicircum> <e> <space> : "ऍ" U090D   # DEVANAGARI LETTER CANDRA E
-<Multi_key> <d> <c> <period> <e> <space>      : "ऎ" U090E   # DEVANAGARI LETTER SHORT E
-<Multi_key> <d> <c> <e> <space>               : "ऎ" U090E   # DEVANAGARI LETTER SHORT E
-<Multi_key> <d> <c> <e> <e> <space>           : "ए" U090F   # DEVANAGARI LETTER E
-<Multi_key> <d> <c> <a> <i> <space>           : "ऐ" U0910   # DEVANAGARI LETTER AI
-<Multi_key> <d> <c> <asciicircum> <o> <space> : "ऑ" U0911   # DEVANAGARI LETTER CANDRA O
-<Multi_key> <d> <c> <period> <o> <space>      : "ऒ" U0912   # DEVANAGARI LETTER SHORT O
-<Multi_key> <d> <c> <o> <o> <space>           : "ओ" U0913   # DEVANAGARI LETTER O
-<Multi_key> <d> <c> <a> <u> <space>           : "औ" U0914   # DEVANAGARI LETTER AU
-<Multi_key> <d> <c> <comma> <r> <r> <space>   : "ॠ" U0960   # DEVANAGARI LETTER VOCALIC RR
-<Multi_key> <d> <c> <comma> <l> <l> <space>   : "ॡ" U0961   # DEVANAGARI LETTER VOCALIC LL
-<Multi_key> <d> <c> <asciicircum> <a> <space> : "ॲ" U0972   # DEVANAGARI LETTER CANDRA A
-<Multi_key> <d> <c> <o> <e> <space>           : "ॳ" U0973   # DEVANAGARI LETTER OE
-<Multi_key> <d> <c> <o> <o> <e> <space>       : "ॴ" U0974   # DEVANAGARI LETTER OOE
-<Multi_key> <d> <c> <a> <w> <space>           : "ॵ" U0975   # DEVANAGARI LETTER AW
-<Multi_key> <d> <c> <u> <e> <space>           : "ॶ" U0976   # DEVANAGARI LETTER UE
-<Multi_key> <d> <c> <u> <u> <e> <space>       : "ॷ" U0977   # DEVANAGARI LETTER UUE
-
-# Dependent vowels
-
-<Multi_key> <d> <c> <o> <e> <Return>           : "ऺ" U093A   # DEVANAGARI VOWEL SIGN OE
-<Multi_key> <d> <c> <o> <o> <e> <Return>       : "ऻ" U093B   # DEVANAGARI VOWEL SIGN OOE
-<Multi_key> <d> <c> <a> <a> <Return>           : "ा" U093E   # DEVANAGARI VOWEL SIGN AA
-<Multi_key> <d> <c> <i> <Return>               : "ि" U093F   # DEVANAGARI VOWEL SIGN I
-<Multi_key> <d> <c> <i> <i> <Return>           : "ी" U0940   # DEVANAGARI VOWEL SIGN II
-<Multi_key> <d> <c> <u> <Return>               : "ु" U0941   # DEVANAGARI VOWEL SIGN U
-<Multi_key> <d> <c> <u> <u> <Return>           : "ू" U0942   # DEVANAGARI VOWEL SIGN UU
-<Multi_key> <d> <c> <comma> <r> <Return>       : "ृ" U0943   # DEVANAGARI VOWEL SIGN VOCALIC R
-<Multi_key> <d> <c> <comma> <r> <r> <Return>   : "ॄ" U0944   # DEVANAGARI VOWEL SIGN VOCALIC RR
-<Multi_key> <d> <c> <asciicircum> <e> <Return> : "ॅ" U0945   # DEVANAGARI VOWEL SIGN CANDRA E
-<Multi_key> <d> <c> <period> <e> <Return>      : "ॆ" U0946   # DEVANAGARI VOWEL SIGN SHORT E
-<Multi_key> <d> <c> <e> <Return>               : "ॆ" U0946   # DEVANAGARI VOWEL SIGN SHORT E
-<Multi_key> <d> <c> <e> <e> <Return>           : "े" U0947   # DEVANAGARI VOWEL SIGN E
-<Multi_key> <d> <c> <a> <i> <Return>           : "ै" U0948   # DEVANAGARI VOWEL SIGN AI
-<Multi_key> <d> <c> <asciicircum> <o> <Return> : "ॉ" U0949   # DEVANAGARI VOWEL SIGN CANDRA O
-<Multi_key> <d> <c> <period> <o> <Return>      : "ॊ" U094A   # DEVANAGARI VOWEL SIGN SHORT O
-<Multi_key> <d> <c> <o> <o> <Return>           : "ो" U094B   # DEVANAGARI VOWEL SIGN O
-<Multi_key> <d> <c> <a> <u> <Return>           : "ौ" U094C   # DEVANAGARI VOWEL SIGN AU
-<Multi_key> <d> <c> <a> <w> <Return>           : "ॏ" U094F   # DEVANAGARI VOWEL SIGN AW
-<Multi_key> <d> <c> <u> <e> <Return>           : "ॖ" U0956   # DEVANAGARI VOWEL SIGN UE
-<Multi_key> <d> <c> <u> <u> <e> <Return>       : "ॗ" U0957   # DEVANAGARI VOWEL SIGN UUE
-<Multi_key> <d> <c> <comma> <l> <Return>       : "ॢ" U0962   # DEVANAGARI VOWEL SIGN VOCALIC L
-<Multi_key> <d> <c> <comma> <l> <l> <Return>   : "ॣ" U0963   # DEVANAGARI VOWEL SIGN VOCALIC LL
-
-# Other signs
-
-<Multi_key> <d> <c> <parenleft> <period> <Return>  : "ऀ" U0900   # DEVANAGARI SIGN INVERTED CANDRABINDU
-<Multi_key> <d> <c> <period> <parenright> <Return> : "ँ" U0901   # DEVANAGARI SIGN CANDRABINDU
-<Multi_key> <d> <c> <period> <Return>              : "ं" U0902   # DEVANAGARI SIGN ANUSVARA
-<Multi_key> <d> <c> <colon> <Return>               : "ः" U0903   # DEVANAGARI SIGN VISARGA
-<Multi_key> <d> <c> <underscore> <period> <Return> : "़" U093C   # DEVANAGARI SIGN NUKTA
-<Multi_key> <d> <c> <comma> <Return>               : "्" U094D   # DEVANAGARI SIGN VIRAMA
-<Multi_key> <d> <c> <apostrophe> <Return>          : "॑" U0951   # DEVANAGARI STRESS SIGN UDATTA
-<Multi_key> <d> <c> <underscore> <Return>          : "॒" U0952   # DEVANAGARI STRESS SIGN ANUDATTA
-
-<Multi_key> <d> <c> <S>                            : "ऽ" U093D   # DEVANAGARI SIGN AVAGRAHA
-<Multi_key> <d> <c> <o> <m>                        : "ॐ" U0950   # DEVANAGARI OM
-
-# Numerals
-
-<Multi_key> <d> <0> <0> : "०" U0966   # DEVANAGARI DIGIT ZERO
-<Multi_key> <d> <0> <1> : "१" U0967   # DEVANAGARI DIGIT ONE
-<Multi_key> <d> <0> <2> : "२" U0968   # DEVANAGARI DIGIT TWO
-<Multi_key> <d> <0> <3> : "३" U0969   # DEVANAGARI DIGIT THREE
-<Multi_key> <d> <0> <4> : "४" U096A   # DEVANAGARI DIGIT FOUR
-<Multi_key> <d> <0> <5> : "५" U096B   # DEVANAGARI DIGIT FIVE
-<Multi_key> <d> <0> <6> : "६" U096C   # DEVANAGARI DIGIT SIX
-<Multi_key> <d> <0> <7> : "७" U096D   # DEVANAGARI DIGIT SEVEN
-<Multi_key> <d> <0> <8> : "८" U096E   # DEVANAGARI DIGIT EIGHT
-<Multi_key> <d> <0> <9> : "९" U096F   # DEVANAGARI DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <d> <semicolon> <bar>     : "।" U0964   # DEVANAGARI DANDA
-<Multi_key> <d> <semicolon> <2> <bar> : "॥" U0965   # DEVANAGARI DOUBLE DANDA
-<Multi_key> <d> <semicolon> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
-
-# (b=Brahmi)
-
-# Consonnts
-
-<Multi_key> <d> <b> <k> <space>          : "𑀓" U11013   # BRAHMI LETTER KA
-<Multi_key> <d> <b> <k> <h>              : "𑀔" U11014   # BRAHMI LETTER KHA
-<Multi_key> <d> <b> <g> <space>          : "𑀕" U11015   # BRAHMI LETTER GA
-<Multi_key> <d> <b> <g> <h>              : "𑀖" U11016   # BRAHMI LETTER GHA
-<Multi_key> <d> <b> <semicolon> <n>      : "𑀗" U11017   # BRAHMI LETTER NGA
-<Multi_key> <d> <b> <c> <space>          : "𑀘" U11018   # BRAHMI LETTER CA
-<Multi_key> <d> <b> <c> <h>              : "𑀙" U11019   # BRAHMI LETTER CHA
-<Multi_key> <d> <b> <j> <space>          : "𑀚" U1101A   # BRAHMI LETTER JA
-<Multi_key> <d> <b> <j> <h>              : "𑀛" U1101B   # BRAHMI LETTER JHA
-<Multi_key> <d> <b> <asciitilde> <n>     : "𑀜" U1101C   # BRAHMI LETTER NYA
-<Multi_key> <d> <b> <period> <t> <space> : "𑀝" U1101D   # BRAHMI LETTER TTA
-<Multi_key> <d> <b> <period> <t> <h>     : "𑀞" U1101E   # BRAHMI LETTER TTHA
-<Multi_key> <d> <b> <period> <d> <space> : "𑀟" U1101F   # BRAHMI LETTER DDA
-<Multi_key> <d> <b> <period> <d> <h>     : "𑀠" U11020   # BRAHMI LETTER DDHA
-<Multi_key> <d> <b> <period> <n>         : "𑀡" U11021   # BRAHMI LETTER NNA
-<Multi_key> <d> <b> <t> <space>          : "𑀢" U11022   # BRAHMI LETTER TA
-<Multi_key> <d> <b> <t> <h>              : "𑀣" U11023   # BRAHMI LETTER THA
-<Multi_key> <d> <b> <d> <space>          : "𑀤" U11024   # BRAHMI LETTER DA
-<Multi_key> <d> <b> <d> <h>              : "𑀥" U11025   # BRAHMI LETTER DHA
-<Multi_key> <d> <b> <n>                  : "𑀦" U11026   # BRAHMI LETTER NA
-<Multi_key> <d> <b> <p> <space>          : "𑀧" U11027   # BRAHMI LETTER PA
-<Multi_key> <d> <b> <p> <h>              : "𑀨" U11028   # BRAHMI LETTER PHA
-<Multi_key> <d> <b> <b> <space>          : "𑀩" U11029   # BRAHMI LETTER BA
-<Multi_key> <d> <b> <b> <h>              : "𑀪" U1102A   # BRAHMI LETTER BHA
-<Multi_key> <d> <b> <m>                  : "𑀫" U1102B   # BRAHMI LETTER MA
-<Multi_key> <d> <b> <y>                  : "𑀬" U1102C   # BRAHMI LETTER YA
-<Multi_key> <d> <b> <r>                  : "𑀭" U1102D   # BRAHMI LETTER RA
-<Multi_key> <d> <b> <l>                  : "𑀮" U1102E   # BRAHMI LETTER LA
-<Multi_key> <d> <b> <v>                  : "𑀯" U1102F   # BRAHMI LETTER VA
-<Multi_key> <d> <b> <semicolon> <s>      : "𑀰" U11030   # BRAHMI LETTER SHA
-<Multi_key> <d> <b> <period> <s>         : "𑀱" U11031   # BRAHMI LETTER SSA
-<Multi_key> <d> <b> <s>                  : "𑀲" U11032   # BRAHMI LETTER SA
-<Multi_key> <d> <b> <h>                  : "𑀳" U11033   # BRAHMI LETTER HA
-<Multi_key> <d> <b> <period> <l>         : "𑀴" U11034   # BRAHMI LETTER LLA
-<Multi_key> <d> <b> <underscore> <l>     : "𑀵" U11035   # BRAHMI LETTER OLD TAMIL LLLA
-<Multi_key> <d> <b> <underscore> <r>     : "𑀶" U11036   # BRAHMI LETTER OLD TAMIL RRA
-<Multi_key> <d> <b> <underscore> <n>     : "𑀷" U11037   # BRAHMI LETTER OLD TAMIL NNNA
-
-# Independent vowels
-
-<Multi_key> <d> <b> <a> <space>             : "𑀅" U11005   # BRAHMI LETTER A
-<Multi_key> <d> <b> <a> <a> <space>         : "𑀆" U11006   # BRAHMI LETTER AA
-<Multi_key> <d> <b> <i> <space>             : "𑀇" U11007   # BRAHMI LETTER I
-<Multi_key> <d> <b> <i> <i> <space>         : "𑀈" U11008   # BRAHMI LETTER II
-<Multi_key> <d> <b> <u> <space>             : "𑀉" U11009   # BRAHMI LETTER U
-<Multi_key> <d> <b> <u> <u> <space>         : "𑀊" U1100A   # BRAHMI LETTER UU
-<Multi_key> <d> <b> <comma> <r> <space>     : "𑀋" U1100B   # BRAHMI LETTER VOCALIC R
-<Multi_key> <d> <b> <comma> <r> <r> <space> : "𑀌" U1100C   # BRAHMI LETTER VOCALIC RR
-<Multi_key> <d> <b> <comma> <l> <space>     : "𑀍" U1100D   # BRAHMI LETTER VOCALIC L
-<Multi_key> <d> <b> <comma> <l> <l> <space> : "𑀎" U1100E   # BRAHMI LETTER VOCALIC LL
-<Multi_key> <d> <b> <e> <e> <space>         : "𑀏" U1100F   # BRAHMI LETTER E
-<Multi_key> <d> <b> <a> <i> <space>         : "𑀐" U11010   # BRAHMI LETTER AI
-<Multi_key> <d> <b> <o> <o> <space>         : "𑀑" U11011   # BRAHMI LETTER O
-<Multi_key> <d> <b> <a> <u> <space>         : "𑀒" U11012   # BRAHMI LETTER AU
-<Multi_key> <d> <b> <e> <space>             : "𑁱" U11071   # BRAHMI LETTER OLD TAMIL SHORT E
-<Multi_key> <d> <b> <o> <space>             : "𑁲" U11072   # BRAHMI LETTER OLD TAMIL SHORT O
-
-# Dependent vowels
-
-<Multi_key> <d> <b> <a> <a> <Return>        : "𑀸" U11038   # BRAHMI VOWEL SIGN AA
-<Multi_key> <d> <b> <i> <Return>            : "𑀺" U1103A   # BRAHMI VOWEL SIGN I
-<Multi_key> <d> <b> <i> <i> <Return>        : "𑀻" U1103B   # BRAHMI VOWEL SIGN II
-<Multi_key> <d> <b> <u> <Return>            : "𑀼" U1103C   # BRAHMI VOWEL SIGN U
-<Multi_key> <d> <b> <u> <u> <Return>        : "𑀽" U1103D   # BRAHMI VOWEL SIGN UU
-<Multi_key> <d> <b> <comma> <r> <Return>    : "𑀾" U1103E   # BRAHMI VOWEL SIGN VOCALIC R
-<Multi_key> <d> <b> <comma> <r> <r> <Return> : "𑀿" U1103F   # BRAHMI VOWEL SIGN VOCALIC RR
-<Multi_key> <d> <b> <comma> <l> <Return>    : "𑁀" U11040   # BRAHMI VOWEL SIGN VOCALIC L
-<Multi_key> <d> <b> <comma> <l> <l> <Return> : "𑁁" U11041   # BRAHMI VOWEL SIGN VOCALIC LL
-<Multi_key> <d> <b> <e> <e> <Return>        : "𑁂" U11042   # BRAHMI VOWEL SIGN E
-<Multi_key> <d> <b> <a> <i> <Return>        : "𑁃" U11043   # BRAHMI VOWEL SIGN AI
-<Multi_key> <d> <b> <o> <o> <Return>        : "𑁄" U11044   # BRAHMI VOWEL SIGN O
-<Multi_key> <d> <b> <a> <u> <Return>        : "𑁅" U11045   # BRAHMI VOWEL SIGN AU
-<Multi_key> <d> <b> <e> <Return>            : "𑁳" U11073   # BRAHMI VOWEL SIGN OLD TAMIL SHORT E
-<Multi_key> <d> <b> <o> <Return>            : "𑁴" U11074   # BRAHMI VOWEL SIGN OLD TAMIL SHORT O
-
-# Other signs
-
-<Multi_key> <d> <b> <parenleft> <period> <Return> : "𑀀" U11000   # BRAHMI SIGN CANDRABINDU
-<Multi_key> <d> <b> <period> <Return>       : "𑀁" U11001   # BRAHMI SIGN ANUSVARA
-<Multi_key> <d> <b> <colon> <Return>        : "𑀂" U11002   # BRAHMI SIGN VISARGA
-<Multi_key> <d> <b> <x>                     : "𑀃" U11003   # BRAHMI SIGN JIHVAMULIYA
-<Multi_key> <d> <b> <o> <x>                 : "𑀄" U11004   # BRAHMI SIGN UPADHMANIYA
-<Multi_key> <d> <b> <minus> <Return>        : "𑁆" U11046   # BRAHMI VIRAMA
-<Multi_key> <d> <b> <greater> <period> <Return> : "𑁰" U11070   # BRAHMI SIGN OLD TAMIL VIRAMA
-
-# Punctuation
-
-<Multi_key> <d> <b> <bar> : "𑁇" U11047   # BRAHMI DANDA
-<Multi_key> <d> <b> <2> <bar> : "𑁈" U11048   # BRAHMI DOUBLE DANDA
-<Multi_key> <d> <b> <minus> <period> : "𑁉" U11049   # BRAHMI PUNCTUATION DOT
-<Multi_key> <d> <b> <minus> <colon> : "𑁊" U1104A   # BRAHMI PUNCTUATION DOUBLE DOT
-<Multi_key> <d> <b> <minus> <minus> : "𑁋" U1104B   # BRAHMI PUNCTUATION LINE
-
-# Numbers
-
-<Multi_key> <d> <b> <1> <Return> : "𑁒" U11052   # BRAHMI NUMBER ONE
-<Multi_key> <d> <b> <2> <Return> : "𑁓" U11053   # BRAHMI NUMBER TWO
-<Multi_key> <d> <b> <3> <Return> : "𑁔" U11054   # BRAHMI NUMBER THREE
-<Multi_key> <d> <b> <4> <Return> : "𑁕" U11055   # BRAHMI NUMBER FOUR
-<Multi_key> <d> <b> <5> <Return> : "𑁖" U11056   # BRAHMI NUMBER FIVE
-<Multi_key> <d> <b> <6> <Return> : "𑁗" U11057   # BRAHMI NUMBER SIX
-<Multi_key> <d> <b> <7> <Return> : "𑁘" U11058   # BRAHMI NUMBER SEVEN
-<Multi_key> <d> <b> <8> <Return> : "𑁙" U11059   # BRAHMI NUMBER EIGHT
-<Multi_key> <d> <b> <9> <Return> : "𑁚" U1105A   # BRAHMI NUMBER NINE
-<Multi_key> <d> <b> <1> <0> <Return> : "𑁛" U1105B   # BRAHMI NUMBER TEN
-<Multi_key> <d> <b> <2> <0> <Return> : "𑁜" U1105C   # BRAHMI NUMBER TWENTY
-<Multi_key> <d> <b> <3> <0> <Return> : "𑁝" U1105D   # BRAHMI NUMBER THIRTY
-<Multi_key> <d> <b> <4> <0> <Return> : "𑁞" U1105E   # BRAHMI NUMBER FORTY
-<Multi_key> <d> <b> <5> <0> <Return> : "𑁟" U1105F   # BRAHMI NUMBER FIFTY
-<Multi_key> <d> <b> <6> <0> <Return> : "𑁠" U11060   # BRAHMI NUMBER SIXTY
-<Multi_key> <d> <b> <7> <0> <Return> : "𑁡" U11061   # BRAHMI NUMBER SEVENTY
-<Multi_key> <d> <b> <8> <0> <Return> : "𑁢" U11062   # BRAHMI NUMBER EIGHTY
-<Multi_key> <d> <b> <9> <0> <Return> : "𑁣" U11063   # BRAHMI NUMBER NINETY
-<Multi_key> <d> <b> <1> <0> <0> <Return> : "𑁤" U11064   # BRAHMI NUMBER ONE HUNDRED
-<Multi_key> <d> <b> <1> <0> <0> <0> : "𑁥" U11065   # BRAHMI NUMBER ONE THOUSAND
-
-<Multi_key> <d> <b> <numbersign> <0> : "𑁦" U11066   # BRAHMI DIGIT ZERO
-<Multi_key> <d> <b> <numbersign> <1> : "𑁧" U11067   # BRAHMI DIGIT ONE
-<Multi_key> <d> <b> <numbersign> <2> : "𑁨" U11068   # BRAHMI DIGIT TWO
-<Multi_key> <d> <b> <numbersign> <3> : "𑁩" U11069   # BRAHMI DIGIT THREE
-<Multi_key> <d> <b> <numbersign> <4> : "𑁪" U1106A   # BRAHMI DIGIT FOUR
-<Multi_key> <d> <b> <numbersign> <5> : "𑁫" U1106B   # BRAHMI DIGIT FIVE
-<Multi_key> <d> <b> <numbersign> <6> : "𑁬" U1106C   # BRAHMI DIGIT SIX
-<Multi_key> <d> <b> <numbersign> <7> : "𑁭" U1106D   # BRAHMI DIGIT SEVEN
-<Multi_key> <d> <b> <numbersign> <8> : "𑁮" U1106E   # BRAHMI DIGIT EIGHT
-<Multi_key> <d> <b> <numbersign> <9> : "𑁯" U1106F   # BRAHMI DIGIT NINE
-
 ##########################
 # (g) Greek (and Coptic) #
 ##########################
@@ -2614,12 +2702,12 @@ include "%L"
 <Multi_key> <g> <c> <q>     : "ϙ"  U03D9   # GREEK SMALL LETTER ARCHAIC KOPPA
 <Multi_key> <g> <x> <t> <s> : "ͳ"  U0373   # GREEK SMALL LETTER ARCHAIC SAMPI
 
-<Multi_key> <g> <0> <w> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
-<Multi_key> <g> <0> <6> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
-<Multi_key> <g> <0> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
-<Multi_key> <g> <0> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
+<Multi_key> <g> <numbersign> <w> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
+<Multi_key> <g> <numbersign> <6> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
+<Multi_key> <g> <numbersign> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
+<Multi_key> <g> <numbersign> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
 
-# (p/P = Coptic)
+# (p/P = Coptic) (note the best abbreviation, but think gp = egyptian)
 
 <Multi_key> <g> <p> <A> : "Ⲁ" U2C80   # COPTIC CAPITAL LETTER ALFA
 <Multi_key> <g> <p> <a> : "ⲁ" U2C81   # COPTIC SMALL LETTER ALFA
@@ -2950,7 +3038,7 @@ include "%L"
 <Multi_key> <h> <semicolon> <quotedbl>      : "״"  U05F4   # HEBREW PUNCTUATION GERSHAYIM
 <Multi_key> <h> <semicolon> <plus>          : "﬩" UFB29    # HEBREW LETTER ALTERNATIVE PLUS SIGN
 
-# (p = Palaeo-Hebrew/Phoenician)
+# (p = Phoenician/Palaeo-Hebrew)
 
 <Multi_key> <h> <p> <apostrophe> : "𐤀"  U10900  # PHOENICIAN LETTER ALF
 <Multi_key> <h> <p> <a>          : "𐤀"  U10900  # PHOENICIAN LETTER ALF
@@ -2984,7 +3072,7 @@ include "%L"
 # (j) Japanese #
 ################
 
-# Hiragana
+# Hiragana (lower case)
 
 <Multi_key> <j> <c> <underscore> <a> : "ぁ"  U3041   # HIRAGANA LETTER SMALL A
 <Multi_key> <j> <c> <a>              : "あ"  U3042   # HIRAGANA LETTER A
@@ -3092,7 +3180,7 @@ include "%L"
 <Multi_key> <j> <c> <quotedbl> <i>       : "ゝ"  U309D   # HIRAGANA ITERATION MARK
 <Multi_key> <j> <c> <quotedbl> <v>       : "ゞ"  U309E   # HIRAGANA VOICED ITERATION MARK
 
-# Katakana
+# Katakana (upper case)
 
 <Multi_key> <j> <c> <underscore> <A> : "ァ"  U30A1   # KATAKANA LETTER SMALL A
 <Multi_key> <j> <c> <A>              : "ア"  U30A2   # KATAKANA LETTER A
@@ -3205,26 +3293,26 @@ include "%L"
 <Multi_key> <j> <c> <quotedbl> <I>       : "ヽ"  U30FD   # KATAKANA ITERATION MARK
 <Multi_key> <j> <c> <quotedbl> <V>       : "ヾ"  U30FE   # KATAKANA VOICED ITERATION MARK
 
-# (very small number of) Kanji
+# Kanji
 
 <Multi_key> <j> <c> <Y> <equal>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
 <Multi_key> <j> <c> <equal> <Y>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
 
-<Multi_key> <j> <0> <0>                  : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
-<Multi_key> <j> <0> <1>                  : "一"  U4E00   # CJK UNIFIED IDEOGRAPH-4E00 (1)
-<Multi_key> <j> <0> <2>                  : "二"  U4E8C   # CJK UNIFIED IDEOGRAPH-4E8C (2)
-<Multi_key> <j> <0> <3>                  : "三"  U4E09   # CJK UNIFIED IDEOGRAPH-4E09 (3)
-<Multi_key> <j> <0> <4>                  : "四"  U56DB   # CJK UNIFIED IDEOGRAPH-56DB (4)
-<Multi_key> <j> <0> <5>                  : "五"  U4E94   # CJK UNIFIED IDEOGRAPH-4E94 (5)
-<Multi_key> <j> <0> <6>                  : "六"  U516D   # CJK UNIFIED IDEOGRAPH-516D (6)
-<Multi_key> <j> <0> <7>                  : "七"  U4E03   # CJK UNIFIED IDEOGRAPH-4E03 (7)
-<Multi_key> <j> <0> <8>                  : "八"  U516B   # CJK UNIFIED IDEOGRAPH-516B (8)
-<Multi_key> <j> <0> <9>                  : "九"  U4E5D   # CJK UNIFIED IDEOGRAPH-4E5D (9)
-<Multi_key> <j> <0> <E> <1>              : "十"  U5341   # CJK UNIFIED IDEOGRAPH-5341 (10)
-<Multi_key> <j> <0> <E> <2>              : "百"  U767E   # CJK UNIFIED IDEOGRAPH-767E (100)
-<Multi_key> <j> <0> <E> <3>              : "千"  U5343   # CJK UNIFIED IDEOGRAPH-5343 (1_000)
-<Multi_key> <j> <0> <E> <4>              : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000)
-<Multi_key> <j> <0> <E> <8>              : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
+<Multi_key> <j> <numbersign> <0>         : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
+<Multi_key> <j> <numbersign> <1>         : "一"  U4E00   # CJK UNIFIED IDEOGRAPH-4E00 (1)
+<Multi_key> <j> <numbersign> <2>         : "二"  U4E8C   # CJK UNIFIED IDEOGRAPH-4E8C (2)
+<Multi_key> <j> <numbersign> <3>         : "三"  U4E09   # CJK UNIFIED IDEOGRAPH-4E09 (3)
+<Multi_key> <j> <numbersign> <4>         : "四"  U56DB   # CJK UNIFIED IDEOGRAPH-56DB (4)
+<Multi_key> <j> <numbersign> <5>         : "五"  U4E94   # CJK UNIFIED IDEOGRAPH-4E94 (5)
+<Multi_key> <j> <numbersign> <6>         : "六"  U516D   # CJK UNIFIED IDEOGRAPH-516D (6)
+<Multi_key> <j> <numbersign> <7>         : "七"  U4E03   # CJK UNIFIED IDEOGRAPH-4E03 (7)
+<Multi_key> <j> <numbersign> <8>         : "八"  U516B   # CJK UNIFIED IDEOGRAPH-516B (8)
+<Multi_key> <j> <numbersign> <9>         : "九"  U4E5D   # CJK UNIFIED IDEOGRAPH-4E5D (9)
+<Multi_key> <j> <numbersign> <E> <1>     : "十"  U5341   # CJK UNIFIED IDEOGRAPH-5341 (10)
+<Multi_key> <j> <numbersign> <E> <2>     : "百"  U767E   # CJK UNIFIED IDEOGRAPH-767E (100)
+<Multi_key> <j> <numbersign> <E> <3>     : "千"  U5343   # CJK UNIFIED IDEOGRAPH-5343 (1_000)
+<Multi_key> <j> <numbersign> <E> <4>     : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000)
+<Multi_key> <j> <numbersign> <E> <8>     : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
 
 # Punctuation
 
@@ -3541,16 +3629,16 @@ include "%L"
 <Multi_key> <m> <x> <apostrophe> <z>  : "--··-·"  # MORSE CODE Ź
 <Multi_key> <m> <x> <period> <z>      : "--··-"   # MORSE CODE Ż
 
-<Multi_key> <m> <0> <0> : "-----"  # MORSE CODE 0
-<Multi_key> <m> <0> <1> : "·----"  # MORSE CODE 1
-<Multi_key> <m> <0> <2> : "··---"  # MORSE CODE 2
-<Multi_key> <m> <0> <3> : "···--"  # MORSE CODE 3
-<Multi_key> <m> <0> <4> : "····-"  # MORSE CODE 4
-<Multi_key> <m> <0> <5> : "·····"  # MORSE CODE 5
-<Multi_key> <m> <0> <6> : "-····"  # MORSE CODE 6
-<Multi_key> <m> <0> <7> : "--···"  # MORSE CODE 7
-<Multi_key> <m> <0> <8> : "---··"  # MORSE CODE 8
-<Multi_key> <m> <0> <9> : "----·"  # MORSE CODE 9
+<Multi_key> <m> <numbersign> <0> : "-----"  # MORSE CODE 0
+<Multi_key> <m> <numbersign> <1> : "·----"  # MORSE CODE 1
+<Multi_key> <m> <numbersign> <2> : "··---"  # MORSE CODE 2
+<Multi_key> <m> <numbersign> <3> : "···--"  # MORSE CODE 3
+<Multi_key> <m> <numbersign> <4> : "····-"  # MORSE CODE 4
+<Multi_key> <m> <numbersign> <5> : "·····"  # MORSE CODE 5
+<Multi_key> <m> <numbersign> <6> : "-····"  # MORSE CODE 6
+<Multi_key> <m> <numbersign> <7> : "--···"  # MORSE CODE 7
+<Multi_key> <m> <numbersign> <8> : "---··"  # MORSE CODE 8
+<Multi_key> <m> <numbersign> <9> : "----·"  # MORSE CODE 9
 
 <Multi_key> <m> <semicolon> <apostrophe> : "·----·"  # MORSE CODE '
 <Multi_key> <m> <semicolon> <at>         : "·--·-·"  # MORSE CODE @
@@ -3636,13 +3724,13 @@ include "%L"
 <Multi_key> <o> <i> <x> <M> <N> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
 <Multi_key> <o> <i> <x> <M> <apostrophe> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
 
-<Multi_key> <o> <i> <0> <1> <Return> : "𐌠" U10320    # OLD ITALIC NUMERAL ONE
-<Multi_key> <o> <i> <0> <5> <Return> : "𐌡" U10321    # OLD ITALIC NUMERAL FIVE
-<Multi_key> <o> <i> <0> <1> <0> <Return> : "𐌢" U10322    # OLD ITALIC NUMERAL TEN
-<Multi_key> <o> <i> <0> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
-<Multi_key> <o> <i> <0> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
+<Multi_key> <o> <i> <numbersign> <1> <Return> : "𐌠" U10320    # OLD ITALIC NUMERAL ONE
+<Multi_key> <o> <i> <numbersign> <5> <Return> : "𐌡" U10321    # OLD ITALIC NUMERAL FIVE
+<Multi_key> <o> <i> <numbersign> <1> <0> <Return> : "𐌢" U10322    # OLD ITALIC NUMERAL TEN
+<Multi_key> <o> <i> <numbersign> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
+<Multi_key> <o> <i> <numbersign> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
 
-# Runic (suffixes: G=germanic, E=english, N=norse, D=danish (=long branch), M=medieval)
+# (r = Runic) (suffixes: G=germanic, E=english, N=norse, D=danish (=long branch), M=medieval)
 
 <Multi_key> <o> <i> <r> <a> <D> : "ᛅ" U16C5   # RUNIC LETTER LONG-BRANCH-AR AE
 <Multi_key> <o> <i> <r> <a> <E> : "ᚪ" U16AA   # RUNIC LETTER AC A
@@ -3730,8 +3818,6 @@ include "%L"
 #######################################
 # (z) Zhuyin/Bopomofo (and Mongolian) #
 #######################################
-
-# (c = one-letter, x = two-letter)
 
 <Multi_key> <z> <c> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
 <Multi_key> <z> <c> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
@@ -3830,26 +3916,26 @@ include "%L"
 <Multi_key> <z> <semicolon> <L>          : "˪" U02EA    # MODIFIER LETTER YIN DEPARTING TONE MARK
 <Multi_key> <z> <semicolon> <T>          : "˫" U02EB    # MODIFIER LETTER YANG DEPARTING TONE MARK
 
-# (very small number of) Hanzi
+# Hanzi
 
-<Multi_key> <z> <0> <0>                  : "零"  U96F6   # CJK UNIFIED IDEOGRAPH-96F6 (0)
-<Multi_key> <z> <0> <O>                  : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
-<Multi_key> <z> <0> <1>                  : "一"  U4E00   # CJK UNIFIED IDEOGRAPH-4E00 (1)
-<Multi_key> <z> <0> <2>                  : "二"  U4E8C   # CJK UNIFIED IDEOGRAPH-4E8C (2)
-<Multi_key> <z> <0> <3>                  : "三"  U4E09   # CJK UNIFIED IDEOGRAPH-4E09 (3)
-<Multi_key> <z> <0> <4>                  : "四"  U56DB   # CJK UNIFIED IDEOGRAPH-56DB (4)
-<Multi_key> <z> <0> <5>                  : "五"  U4E94   # CJK UNIFIED IDEOGRAPH-4E94 (5)
-<Multi_key> <z> <0> <6>                  : "六"  U516D   # CJK UNIFIED IDEOGRAPH-516D (6)
-<Multi_key> <z> <0> <7>                  : "七"  U4E03   # CJK UNIFIED IDEOGRAPH-4E03 (7)
-<Multi_key> <z> <0> <8>                  : "八"  U516B   # CJK UNIFIED IDEOGRAPH-516B (8)
-<Multi_key> <z> <0> <9>                  : "九"  U4E5D   # CJK UNIFIED IDEOGRAPH-4E5D (9)
-<Multi_key> <z> <0> <E> <1>              : "十"  U5341   # CJK UNIFIED IDEOGRAPH-5341 (10)
-<Multi_key> <z> <0> <E> <2>              : "百"  U767E   # CJK UNIFIED IDEOGRAPH-767E (100)
-<Multi_key> <z> <0> <E> <3>              : "千"  U5343   # CJK UNIFIED IDEOGRAPH-5343 (1_000)
-<Multi_key> <z> <0> <E> <4>              : "萬"  U842C   # CJK UNIFIED IDEOGRAPH-842C (10_000)
-<Multi_key> <z> <0> <e> <4>              : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000 simplified)
-<Multi_key> <z> <0> <E> <8>              : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
-<Multi_key> <z> <0> <e> <8>              : "亿"  U4EBF   # CJK UNIFIED IDEOGRAPH-4EBF (100_000_000 simplified)
+<Multi_key> <z> <numbersign> <0>         : "零"  U96F6   # CJK UNIFIED IDEOGRAPH-96F6 (0)
+<Multi_key> <z> <numbersign> <O>         : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
+<Multi_key> <z> <numbersign> <1>         : "一"  U4E00   # CJK UNIFIED IDEOGRAPH-4E00 (1)
+<Multi_key> <z> <numbersign> <2>         : "二"  U4E8C   # CJK UNIFIED IDEOGRAPH-4E8C (2)
+<Multi_key> <z> <numbersign> <3>         : "三"  U4E09   # CJK UNIFIED IDEOGRAPH-4E09 (3)
+<Multi_key> <z> <numbersign> <4>         : "四"  U56DB   # CJK UNIFIED IDEOGRAPH-56DB (4)
+<Multi_key> <z> <numbersign> <5>         : "五"  U4E94   # CJK UNIFIED IDEOGRAPH-4E94 (5)
+<Multi_key> <z> <numbersign> <6>         : "六"  U516D   # CJK UNIFIED IDEOGRAPH-516D (6)
+<Multi_key> <z> <numbersign> <7>         : "七"  U4E03   # CJK UNIFIED IDEOGRAPH-4E03 (7)
+<Multi_key> <z> <numbersign> <8>         : "八"  U516B   # CJK UNIFIED IDEOGRAPH-516B (8)
+<Multi_key> <z> <numbersign> <9>         : "九"  U4E5D   # CJK UNIFIED IDEOGRAPH-4E5D (9)
+<Multi_key> <z> <numbersign> <E> <1>     : "十"  U5341   # CJK UNIFIED IDEOGRAPH-5341 (10)
+<Multi_key> <z> <numbersign> <E> <2>     : "百"  U767E   # CJK UNIFIED IDEOGRAPH-767E (100)
+<Multi_key> <z> <numbersign> <E> <3>     : "千"  U5343   # CJK UNIFIED IDEOGRAPH-5343 (1_000)
+<Multi_key> <z> <numbersign> <E> <4>     : "萬"  U842C   # CJK UNIFIED IDEOGRAPH-842C (10_000)
+<Multi_key> <z> <numbersign> <e> <4>     : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000 simplified)
+<Multi_key> <z> <numbersign> <E> <8>     : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
+<Multi_key> <z> <numbersign> <e> <8>     : "亿"  U4EBF   # CJK UNIFIED IDEOGRAPH-4EBF (100_000_000 simplified)
 
 <Multi_key> <z> <c> <Y> <equal>          : "元" U5143    # CJK UNIFIED IDEOGRAPH-5143 (Chinese yuan) (use Y= for ¥)
 <Multi_key> <z> <c> <Y> <dollar>         : "圓" U5713    # CJK UNIFIED IDEOGRAPH-5713 (New Taiwan $)
@@ -6430,8 +6516,8 @@ include "%L"
 
 # Convention: # + number + type suffix
 #
-# Also see Arabic (a0), Devanagari (d0), Brahmi (db), Coptic (gp), Japanese (j0),
-# Chinese (z0) and Mongolian (zm) numerals above
+# Also see Arabic (a0), Brahmi (bb), Devanagari (bd), Tamil (bt), Coptic (gp),
+# Japanese (j0), Chinese (z0) and Mongolian (zm) numerals above
 
 # (f) fence tally
 
