@@ -131,7 +131,7 @@ include "%L"
 <Multi_key> <c> <less> <Return>      : "͗"  U0357   # COMBINING RIGHT HALF RING ABOVE (conflicts with č, use vc)
 <Multi_key> <parenright> <Return>    : "͝"  U035D   # COMBINING DOUBLE BREVE  
 <Multi_key> <parenleft> <Return>     : "͡"  U0361   # COMBINING DOUBLE INVERTED BREVE
-<Multi_key> <underscore> <apostrophe> <space> <Return>  : "᷄" U1DC4   # COMBINING MACRON-ACUTE (overrides APL ⍘)
+<Multi_key> <underscore> <apostrophe> <space> <Return>  : "᷄" U1DC4   # COMBINING MACRON-ACUTE (conflicts with ⍘, use '_[RETURN] defined below)
 <Multi_key> <grave> <underscore> <space> <Return>       : "᷅" U1DC5   # COMBINING GRAVE-MACRON
 <Multi_key> <underscore> <grave> <space> <Return>       : "᷆" U1DC6   # COMBINING MACRON-GRAVE
 <Multi_key> <apostrophe> <underscore> <space> <Return>  : "᷇" U1DC7   # COMBINING ACUTE-MACRON
@@ -141,7 +141,7 @@ include "%L"
 <Multi_key> <underscore> <u> <space> <Return>           : "᷌" U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
 
 <Multi_key> <underscore> <grave> <Return>            : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
-<Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (overrides APL ⍘)
+<Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (conflicts with ⍘, use '_[RETURN] defined below)
 <Multi_key> <underscore> <T> <less> <Return>         : "̘"  U0318   # COMBINING LEFT TACK BELOW
 <Multi_key> <underscore> <T> <greater> <Return>      : "̙"  U0319   # COMBINING RIGHT TACK BELOW
 <Multi_key> <underscore> <c> <Return>                : "̜"  U031C   # COMBINING LEFT HALF RING BELOW
@@ -181,14 +181,15 @@ include "%L"
 
 <Multi_key> <minus> <asciitilde> <Return>    : "̴"  U0334   # COMBINING TILDE OVERLAY
 <Multi_key> <minus> <minus> <Return>         : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
-<Multi_key> <minus> <slash> <Return>         : "̸"  U0338   # COMBINING LONG SOLIDUS OVERLAY (overrides APL ⌿)
+<Multi_key> <minus> <slash> <Return>         : "̸"  U0338   # COMBINING LONG SOLIDUS OVERLAY (conflicts with ⌿, use /-)
 <Multi_key> <minus> <bar> <Return>           : "⃒"  U20D2   # COMBINING LONG VERTICAL LINE OVERLAY
-<Multi_key> <minus> <backslash> <Return>     : "⃥"  U20E5   # COMBINING REVERSE SOLIDUS OVERLAY (overrides APL ⍀)
+<Multi_key> <minus> <backslash> <Return>     : "⃥"  U20E5   # COMBINING REVERSE SOLIDUS OVERLAY (conflicts with ⍀, use \-)
 <Multi_key> <minus> <bar> <bar> <Return>     : "⃦"  U20E6   # COMBINING DOUBLE VERTICAL STROKE OVERLAY
 <Multi_key> <minus> <less> <minus> <Return>  : "⃪"  U20EA   # COMBINING LEFTWARDS ARROW OVERLAY
-<Multi_key> <minus> <slash> <slash> <Return> : "⃫"  U20EB   # COMBINING LONG DOUBLE SOLIDUS OVERLAY (overrides APL ⌿)
+<Multi_key> <minus> <slash> <slash> <Return> : "⃫"  U20EB   # COMBINING LONG DOUBLE SOLIDUS OVERLAY (conflicts with ⌿, use /-)
 
 <Multi_key> <O> <period> : "◌" U25CC    # DOTTED CIRCLE (PLACEHOLDER GLYPH)
+<Multi_key> <apostrophe> <underscore> <Return> : "⍘" U2358   # APL FUNCTIONAL SYMBOL QUOTE UNDERBAR (to free up _')
 
 ####################################
 # Bidirectional control characters #
@@ -218,8 +219,8 @@ include "%L"
 <Multi_key> <minus> <W>      : "₩" U20A9   # WON SIGN
 <Multi_key> <D> <p>          : "₯" U20AF   # DRACHMA SIGN
 <Multi_key> <p> <f>          : "₰" U20B0   # GERMAN PENNY SIGN
-<Multi_key> <P> <equal>      : "₱" U20B1   # PESO SIGN (overrides ₽, use P-)
-<Multi_key> <equal> <P>      : "₱" U20B1   # PESO SIGN (overrides ₽, use -P)
+<Multi_key> <P> <equal>      : "₱" U20B1   # PESO SIGN (conflicts with ₽, use P- defined below)
+<Multi_key> <equal> <P>      : "₱" U20B1   # PESO SIGN (conflicts with ₽, use -P defined below)
 <Multi_key> <A> <equal>      : "₳" U20B3   # AUSTRAL SIGN
 <Multi_key> <equal> <A>      : "₳" U20B3   # AUSTRAL SIGN
 <Multi_key> <S> <equal>      : "₴" U20B4   # HRYVNIA SIGN
@@ -6126,42 +6127,42 @@ include "%L"
 
 # Squares []
 
-<Multi_key> <bracketleft> <bracketright> <K> : "⬛" U2B1B    # BLACK LARGE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <W> : "⬜" U2B1C    # WHITE LARGE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <R> : "🟥" U1F7E5    # LARGE RED SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <B> : "🟦" U1F7E6    # LARGE BLUE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <O> : "🟧" U1F7E7    # LARGE ORANGE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <Y> : "🟨" U1F7E8    # LARGE YELLOW SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <G> : "🟩" U1F7E9    # LARGE GREEN SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <P> : "🟪" U1F7EA    # LARGE PURPLE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <b> : "🟫" U1F7EB    # LARGE BROWN SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <K> : "⬛" U2B1B    # BLACK LARGE SQUARE (conflicts with ⌷, use ][)
+<Multi_key> <bracketleft> <bracketright> <W> : "⬜" U2B1C    # WHITE LARGE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <R> : "🟥" U1F7E5    # LARGE RED SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <B> : "🟦" U1F7E6    # LARGE BLUE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <O> : "🟧" U1F7E7    # LARGE ORANGE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Y> : "🟨" U1F7E8    # LARGE YELLOW SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <G> : "🟩" U1F7E9    # LARGE GREEN SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <P> : "🟪" U1F7EA    # LARGE PURPLE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <b> : "🟫" U1F7EB    # LARGE BROWN SQUARE (conflicts)
 
-<Multi_key> <bracketleft> <bracketright> <S> <K> : "▪️" U25AA UFE0F   # BLACK SMALL SQUARE EMOJI (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <S> <W> : "▫️" U25AB UFE0F   # WHITE SMALL SQUARE EMOJI (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <M> <W> : "◻️" U25FB UFE0F   # WHITE MEDIUM SQUARE EMOJI (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <M> <K> : "◼️" U25FC UFE0F   # BLACK MEDIUM SQUARE EMOJI (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <M> <S> <W> : "◽️" U25FD UFE0F   # WHITE MEDIUM SMALL SQUARE EMOJI (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <M> <S> <K> : "◾️" U25FE UFE0F   # BLACK MEDIUM SMALL SQUARE EMOJI (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <S> <K> : "▪️" U25AA UFE0F   # BLACK SMALL SQUARE EMOJI (conflicts)
+<Multi_key> <bracketleft> <bracketright> <S> <W> : "▫️" U25AB UFE0F   # WHITE SMALL SQUARE EMOJI (conflicts)
+<Multi_key> <bracketleft> <bracketright> <M> <W> : "◻️" U25FB UFE0F   # WHITE MEDIUM SQUARE EMOJI (conflicts)
+<Multi_key> <bracketleft> <bracketright> <M> <K> : "◼️" U25FC UFE0F   # BLACK MEDIUM SQUARE EMOJI (conflicts)
+<Multi_key> <bracketleft> <bracketright> <M> <S> <W> : "◽️" U25FD UFE0F   # WHITE MEDIUM SMALL SQUARE EMOJI (conflicts)
+<Multi_key> <bracketleft> <bracketright> <M> <S> <K> : "◾️" U25FE UFE0F   # BLACK MEDIUM SMALL SQUARE EMOJI (conflicts)
 
-<Multi_key> <bracketleft> <bracketright> <0>           : "□" U25A1    # WHITE SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <1>           : "■" U25A0    # BLACK SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <period>      : "⬚" U2B1A    # DOTTED SQUARE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <less>        : "◧" U25E7    # SQUARE WITH LEFT HALF BLACK (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <greater>     : "◨" U25E8    # SQUARE WITH RIGHT HALF BLACK (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <asciicircum> : "⬒" U2B12    # SQUARE WITH TOP HALF BLACK (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <v>           : "⬓" U2B13    # SQUARE WITH BOTTOM HALF BLACK (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <U> <L> <D>   : "◩" U25E9    # SQUARE WITH UPPER LEFT DIAGONAL HALF BLACK (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <L> <R> <D>   : "◪" U25EA    # SQUARE WITH LOWER RIGHT DIAGONAL HALF BLACK (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <bar>         : "◫" U25EB    # WHITE SQUARE WITH VERTICAL BISECTING LINE (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <U> <L> <Q>   : "◰" U25F0    # WHITE SQUARE WITH UPPER LEFT QUADRANT (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <L> <L> <Q>   : "◱" U25F1    # WHITE SQUARE WITH LOWER LEFT QUADRANT (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <L> <R> <Q>   : "◲" U25F2    # WHITE SQUARE WITH LOWER RIGHT QUADRANT (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <U> <R> <Q>   : "◳" U25F3    # WHITE SQUARE WITH UPPER RIGHT QUADRANT (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <slash>       : "⧄" U29C4    # SQUARED RISING DIAGONAL SLASH (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <backslash>   : "⧅" U29C5    # SQUARED FALLING DIAGONAL SLASH (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <plus>        : "⊞" U229E    # SQUARED PLUS (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <X>           : "⊠" U22A0    # SQUARED TIMES (overrides APL ⌷)
-<Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (overrides APL ⌷)
+<Multi_key> <bracketleft> <bracketright> <0>           : "□" U25A1    # WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <1>           : "■" U25A0    # BLACK SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <period>      : "⬚" U2B1A    # DOTTED SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <less>        : "◧" U25E7    # SQUARE WITH LEFT HALF BLACK (conflicts)
+<Multi_key> <bracketleft> <bracketright> <greater>     : "◨" U25E8    # SQUARE WITH RIGHT HALF BLACK (conflicts)
+<Multi_key> <bracketleft> <bracketright> <asciicircum> : "⬒" U2B12    # SQUARE WITH TOP HALF BLACK (conflicts)
+<Multi_key> <bracketleft> <bracketright> <v>           : "⬓" U2B13    # SQUARE WITH BOTTOM HALF BLACK (conflicts)
+<Multi_key> <bracketleft> <bracketright> <U> <L> <D>   : "◩" U25E9    # SQUARE WITH UPPER LEFT DIAGONAL HALF BLACK (conflicts)
+<Multi_key> <bracketleft> <bracketright> <L> <R> <D>   : "◪" U25EA    # SQUARE WITH LOWER RIGHT DIAGONAL HALF BLACK (conflicts)
+<Multi_key> <bracketleft> <bracketright> <bar>         : "◫" U25EB    # WHITE SQUARE WITH VERTICAL BISECTING LINE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <U> <L> <Q>   : "◰" U25F0    # WHITE SQUARE WITH UPPER LEFT QUADRANT (conflicts)
+<Multi_key> <bracketleft> <bracketright> <L> <L> <Q>   : "◱" U25F1    # WHITE SQUARE WITH LOWER LEFT QUADRANT (conflicts)
+<Multi_key> <bracketleft> <bracketright> <L> <R> <Q>   : "◲" U25F2    # WHITE SQUARE WITH LOWER RIGHT QUADRANT (conflicts)
+<Multi_key> <bracketleft> <bracketright> <U> <R> <Q>   : "◳" U25F3    # WHITE SQUARE WITH UPPER RIGHT QUADRANT (conflicts)
+<Multi_key> <bracketleft> <bracketright> <slash>       : "⧄" U29C4    # SQUARED RISING DIAGONAL SLASH (conflicts)
+<Multi_key> <bracketleft> <bracketright> <backslash>   : "⧅" U29C5    # SQUARED FALLING DIAGONAL SLASH (conflicts)
+<Multi_key> <bracketleft> <bracketright> <plus>        : "⊞" U229E    # SQUARED PLUS (conflicts)
+<Multi_key> <bracketleft> <bracketright> <X>           : "⊠" U22A0    # SQUARED TIMES (conflicts)
+<Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
 
 # Circles ()
 
