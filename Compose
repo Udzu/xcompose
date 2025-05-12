@@ -4,9 +4,9 @@
 # To use them, copy all or parts of this config into your ~/.XCompose file.
 #
 # For consistency and simplicity, a few of the rules here conflict with the system files, with
-# workarounds given where possible in the comments (e.g. <underscore>'s usefulness for subscripting
-# often interferes with its system use for ¯, for which <minus> works as an alternative;
-# similarly, <b> for ˘ and <c> for ˇ are easily replaced with <u> and <v>).
+# workarounds given in the comments (e.g. <underscore>'s usefulness for subscripting often
+# interferes with its system use for ¯, for which <minus> works as an alternative; similarly,
+# <b> for ˘ and <c> for ˇ are easily replaced with <u> and <v>).
 #
 # For a simple command line tool to help manage your compose configuration, check out
 # https://github.com/Udzu/xcompose
@@ -1255,6 +1255,7 @@ include "%L"
 
 <Multi_key> <parenleft> <A> <A> <parenright> : "Ꜳ" UA732   # LATIN CAPITAL LETTER AA
 <Multi_key> <parenleft> <A> <E> <parenright> : "Æ" U00C6   # LATIN CAPITAL LETTER AE
+<Multi_key> <parenleft> <A> <i> <parenright> : "ᾼ" U1FBC   # GREEK CAPITAL LETTER ALPHA WITH PROSGEGRAMMENI (visually similar)
 <Multi_key> <parenleft> <A> <O> <parenright> : "Ꜵ" UA734   # LATIN CAPITAL LETTER AO
 <Multi_key> <parenleft> <A> <U> <parenright> : "㍳" U3373   # SQUARE AU
 <Multi_key> <parenleft> <A> <V> <parenright> : "Ꜹ" UA738   # LATIN CAPITAL LETTER AV
@@ -1264,6 +1265,7 @@ include "%L"
 <Multi_key> <parenleft> <C> <C> <parenright> : "ꕆ" UA546   # VAI SYLLABLE MI (visually similar)
 <Multi_key> <parenleft> <C> <D> <parenright> : "ↀ" U2180   # ROMAN NUMERAL ONE THOUSAND C D
 <Multi_key> <parenleft> <D> <J> <parenright> : "🆐" U1F190   # SQUARE DJ
+<Multi_key> <parenleft> <D> <K> <parenright> : "Ԫ" U052A   # CYRILLIC CAPITAL LETTER DZZHE (visually similar)
 <Multi_key> <parenleft> <D> <o> <parenright> : "Ⰸ" U2C08   # GLAGOLITIC CAPITAL LETTER ZEMLJA (visually similar)
 <Multi_key> <parenleft> <D> <Z> <parenright> : "Ǳ" U01F1   # LATIN CAPITAL LETTER DZ
 <Multi_key> <parenleft> <D> <z> <parenright> : "ǲ" U01F2   # LATIN CAPITAL LETTER D WITH SMALL LETTER Z
@@ -1276,6 +1278,7 @@ include "%L"
 <Multi_key> <parenleft> <G> <y> <parenright> : "㏉" U33C9   # SQUARE GY
 <Multi_key> <parenleft> <H> <g> <parenright> : "㋌" U32CC   # SQUARE HG
 <Multi_key> <parenleft> <H> <I> <parenright> : "𖨟" U16A1F   # BAMUM LETTER PHASE-F PEUX (visually similar)
+<Multi_key> <parenleft> <H> <i> <parenright> : "ῌ" U1FCC   # GREEK CAPITAL LETTER ETA WITH PROSGEGRAMMENI (visually similar)
 <Multi_key> <parenleft> <H> <P> <parenright> : "㏋" U33CB   # SQUARE HP
 <Multi_key> <parenleft> <H> <u> <parenright> : "Ƕ" U01F6   # LATIN CAPITAL LETTER HWAIR (visually similar)
 <Multi_key> <parenleft> <H> <z> <parenright> : "㎐" U3390   # SQUARE HZ
@@ -1307,17 +1310,20 @@ include "%L"
 <Multi_key> <parenleft> <N> <H> <parenright> : "𖨒" U16A12   # BAMUM LETTER PHASE-F SUU (visually similar)
 <Multi_key> <parenleft> <N> <J> <parenright> : "Ǌ" U01CA   # LATIN CAPITAL LETTER NJ
 <Multi_key> <parenleft> <N> <j> <parenright> : "ǋ" U01CB   # LATIN CAPITAL LETTER N WITH SMALL LETTER J
+<Multi_key> <parenleft> <N> <V> <parenright> : "ꟿ" UA7FF   # LATIN EPIGRAPHIC LETTER ARCHAIC M (visually similar)
 <Multi_key> <parenleft> <O> <b> <parenright> : "Ⰴ" U2C04   # GLAGOLITIC CAPITAL LETTER DOBRO (visually similar)
 <Multi_key> <parenleft> <O> <E> <parenright> : "Œ" U0152   # LATIN CAPITAL LIGATURE OE
 <Multi_key> <parenleft> <O> <I> <parenright> : "Ꮊ" U13BA   # CHEROKEE LETTER ME (visually similar)
 <Multi_key> <parenleft> <O> <O> <parenright> : "Ꝏ" UA74E   # LATIN CAPITAL LETTER OO
 <Multi_key> <parenleft> <O> <y> <parenright> : "Ѹ" U0478   # CYRILLIC CAPITAL LETTER UK (visually similar)
 <Multi_key> <parenleft> <P> <a> <parenright> : "㎩" U33A9   # SQUARE PA
+<Multi_key> <parenleft> <P> <C> <parenright> : "Ԗ" U0516   # CYRILLIC CAPITAL LETTER RHA (visually similar)
 <Multi_key> <parenleft> <P> <H> <parenright> : "㏗" U33D7   # SQUARE PH
 <Multi_key> <parenleft> <P> <i> <parenright> : "ꛓ" UA6D3   # BAMUM LETTER NGKWAEN (visually similar)
 <Multi_key> <parenleft> <P> <P> <M> <parenright> : "㏙" U33D9   # SQUARE PPM
 <Multi_key> <parenleft> <P> <R> <parenright> : "㏚" U33DA   # SQUARE PR
 <Multi_key> <parenleft> <P> <T> <E> <parenright> : "㉐" U3250   # PARTNERSHIP SIGN
+<Multi_key> <parenleft> <R> <E> <parenright> : "Ԙ" U0518   # CYRILLIC CAPITAL LETTER YAE (visually similar)
 <Multi_key> <parenleft> <R> <s> <parenright> : "₨" U20A8   # RUPEE SIGN
 <Multi_key> <parenleft> <S> <i> <parenright> : "𞤇" U1E907   # ADLAM CAPITAL LETTER BHE (visually similar)
 <Multi_key> <parenleft> <S> <S> <parenright> : "𐠿" U1083F   # CYPRIOT SYLLABLE ZO (visually similar)
@@ -1326,6 +1332,7 @@ include "%L"
 <Multi_key> <parenleft> <T> <i> <parenright> : "Ԏ" U050E   # CYRILLIC CAPITAL LETTER KOMI TJE (visually similar)
 <Multi_key> <parenleft> <T> <z> <parenright> : "Ꜩ" UA728   # LATIN CAPITAL LETTER TZ
 <Multi_key> <parenleft> <U> <I> <parenright> : "𖬓" U16B13   # PAHAWH HMONG VOWEL KOV (visually similar)
+<Multi_key> <parenleft> <V> <B> <parenright> : "Ꟃ" UA7C2   # LATIN CAPITAL LETTER ANGLICANA W (visually similar)
 <Multi_key> <parenleft> <V> <I> <parenright> : "Ⅵ" U2165   # ROMAN NUMERAL SIX
 <Multi_key> <parenleft> <V> <I> <I> <parenright> : "Ⅶ" U2166   # ROMAN NUMERAL SEVEN
 <Multi_key> <parenleft> <V> <I> <I> <I> <parenright> : "Ⅷ" U2167   # ROMAN NUMERAL EIGHT
@@ -1370,13 +1377,14 @@ include "%L"
 <Multi_key> <parenleft> <f> <i> <parenright> : "ﬁ" UFB01   # LATIN SMALL LIGATURE FI
 <Multi_key> <parenleft> <f> <l> <parenright> : "ﬂ" UFB02   # LATIN SMALL LIGATURE FL
 <Multi_key> <parenleft> <f> <m> <parenright> : "㎙" U3399   # SQUARE FM
+<Multi_key> <parenleft> <f> <n> <parenright> : "ʩ" U02A9   # LATIN SMALL LETTER FENG DIGRAPH (visually similar)
 <Multi_key> <parenleft> <g> <a> <l> <parenright> : "㏿" U33FF   # SQUARE GAL
 <Multi_key> <parenleft> <h> <a> <parenright> : "㏊" U33CA   # SQUARE HA
 <Multi_key> <parenleft> <h> <P> <a> <parenright> : "㍱" U3371   # SQUARE HPA
 <Multi_key> <parenleft> <h> <u> <parenright> : "ƕ" U0195   # LATIN SMALL LETTER HV (visually similar)
 <Multi_key> <parenleft> <i> <a> <parenright> : "ꙗ" UA657   # CYRILLIC SMALL LETTER IOTIFIED A (visually similar)
 <Multi_key> <parenleft> <i> <b> <parenright> : "ꪊ" UAA8A   # TAI VIET LETTER LOW CO (visually similar)
-<Multi_key> <parenleft> <i> <e> <parenright> : "ѥ" U0465   # CYRILLIC SMALL LETTER IOTIFIED E (visually similar)
+<Multi_key> <parenleft> <i> <e> <parenright> : "ꭡ" UAB61   # LATIN SMALL LETTER IOTIFIED E
 <Multi_key> <parenleft> <i> <h> <parenright> : "ⴐ" U2D10   # GEORGIAN SMALL LETTER RAE (visually similar)
 <Multi_key> <parenleft> <i> <i> <i> <parenright> : "ⅲ" U2172   # SMALL ROMAN NUMERAL THREE
 <Multi_key> <parenleft> <i> <i> <parenright> : "ⅱ" U2171   # SMALL ROMAN NUMERAL TWO
@@ -1406,6 +1414,7 @@ include "%L"
 <Multi_key> <parenleft> <l> <o> <parenright> : "𐴔" U10D14   # HANIFI ROHINGYA LETTER MA (visually similar)
 <Multi_key> <parenleft> <l> <o> <g> <parenright> : "㏒" U33D2   # SQUARE LOG
 <Multi_key> <parenleft> <l> <s> <parenright> : "ʪ" U02AA   # LATIN SMALL LETTER LS DIGRAPH
+<Multi_key> <parenleft> <l> <t> <parenright> : "け" U3051   # HIRAGANA LETTER KE (visually similar)
 <Multi_key> <parenleft> <l> <x> <parenright> : "㏓" U33D3   # SQUARE LX
 <Multi_key> <parenleft> <l> <z> <parenright> : "ʫ" U02AB   # LATIN SMALL LETTER LZ DIGRAPH
 <Multi_key> <parenleft> <m> <A> <parenright> : "㎃" U3383   # SQUARE MA
@@ -1415,6 +1424,7 @@ include "%L"
 <Multi_key> <parenleft> <m> <i> <l> <parenright> : "㏕" U33D5   # SQUARE MIL
 <Multi_key> <parenleft> <m> <m> <parenright> : "㎜" U339C   # SQUARE MM
 <Multi_key> <parenleft> <m> <o> <l> <parenright> : "㏖" U33D6   # SQUARE MOL
+<Multi_key> <parenleft> <m> <r> <parenright> : "ꙧ" UA667   # CYRILLIC SMALL LETTER SOFT EM (visually similar)
 <Multi_key> <parenleft> <m> <s> <parenright> : "㎳" U33B3   # SQUARE MS
 <Multi_key> <parenleft> <m> <V> <parenright> : "㎷" U33B7   # SQUARE MV
 <Multi_key> <parenleft> <m> <W> <parenright> : "㎽" U33BD   # SQUARE MW
@@ -1444,6 +1454,7 @@ include "%L"
 <Multi_key> <parenleft> <q> <i> <parenright> : "ᦽ" U19BD   # NEW TAI LUE VOWEL SIGN OY (visually similar)
 <Multi_key> <parenleft> <q> <p> <parenright> : "ȹ" U0239   # LATIN SMALL LETTER QP DIGRAPH
 <Multi_key> <parenleft> <r> <a> <d> <parenright> : "㎭" U33AD   # SQUARE RAD
+<Multi_key> <parenleft> <r> <b> <parenright> : "ꭠ" UAB60   # LATIN SMALL LETTER SAKHA YAT (visually similar)
 <Multi_key> <parenleft> <r> <l> <parenright> : "𑀲" U11032   # BRAHMI LETTER SA (visually similar)
 <Multi_key> <parenleft> <r> <o> <o> <parenright> : "ᰢ" U1C22   # LEPCHA LETTER WA (visually similar)
 <Multi_key> <parenleft> <r> <s> <parenright> : "𖹇" U16E47   # MEDEFAIDRIN CAPITAL LETTER P (visually similar)
@@ -1452,6 +1463,8 @@ include "%L"
 <Multi_key> <parenleft> <s> <o> <parenright> : "𑅲" U11172   # MAHAJANI LETTER RRA (visually similar)
 <Multi_key> <parenleft> <s> <r> <parenright> : "㏛" U33DB   # SQUARE SR
 <Multi_key> <parenleft> <s> <t> <parenright> : "ﬆ" UFB06   # LATIN SMALL LIGATURE ST
+<Multi_key> <parenleft> <t> <a> <parenright> : "な" U306A   # HIRAGANA LETTER NA (visually similar)
+<Multi_key> <parenleft> <t> <c> <parenright> : "ʨ" U02A8   # LATIN SMALL LETTER TC DIGRAPH WITH CURL
 <Multi_key> <parenleft> <t> <h> <parenright> : "ᵺ" U1D7A   # LATIN SMALL LETTER TH WITH STRIKETHROUGH
 <Multi_key> <parenleft> <t> <i> <parenright> : "ե" U0565   # ARMENIAN SMALL LETTER ECH (visually similar)
 <Multi_key> <parenleft> <t> <r> <parenright> : "Ꮏ" U13BF   # CHEROKEE LETTER HNA (visually similar)
