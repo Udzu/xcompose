@@ -5117,6 +5117,7 @@ include "%L"
 
 <Multi_key> <a> <n> <t>             : "🐜"  U1F41C        # ANT
 <Multi_key> <a> <p> <e>             : "🦍"  U1F98D        # GORILLA (APE)
+<Multi_key> <b> <a> <d> <g> <r>     : "🦡"  U1F9A1        # BADGER (conflicts with ă, use ua) (not ideal but badge=📛 is taken)
 <Multi_key> <b> <a> <t>             : "🦇"  U1F987        # BAT (conflicts with ă, use ua)
 <Multi_key> <b> <b> <i> <r> <d>     : "🐦‍⬛"  U1F426 U200D U2B1B    # BLACKBIRD
 <Multi_key> <b> <e> <a> <r>         : "🐻"  U1F43B        # BEAR FACE (conflicts with ĕ, use ue)
@@ -5126,6 +5127,7 @@ include "%L"
 <Multi_key> <b> <i> <r> <d>         : "🐦"  U1F426        # BIRD (conflicts with ĭ, use ui)
 <Multi_key> <b> <i> <s> <o> <n>     : "🦬"  U1F9AC        # BISON (conflicts with ĭ, use ui)
 <Multi_key> <b> <o> <a> <r>         : "🐗"  U1F417        # BOAR (conflicts with ŏ, use uo)
+<Multi_key> <b> <u> <f> <f> <a> <l> : "🐃" U1F403         # WATER BUFFALO (conflicts with ŭ, use uu)
 <Multi_key> <b> <u> <g>             : "🐛"  U1F41B        # BUG (conflicts with ŭ, use uu)
 <Multi_key> <b> <u> <n> <n> <y>     : "🐰"  U1F430        # RABBIT FACE (BUNNY) (conflicts with ŭ, use uu) (use >bunny for 🐇)
 <Multi_key> <b> <z> <z>             : "🐝"  U1F41D        # HONEYBEE (BZZ)
@@ -5174,12 +5176,13 @@ include "%L"
 <Multi_key> <k> <o> <a> <l> <a>     : "🐨"  U1F428        # KOALA
 <Multi_key> <l> <a> <d> <y> <b>     : "🐞"  U1F41E        # LADY BEETLE/BIRD/BUG
 <Multi_key> <l> <a> <p> <d> <o> <g> : "🐩"  U1F429        # POODLE (LAP DOG)
+<Multi_key> <l> <a> <z> <y>         : "🦥"  U1F9A5        # SLOTH (LAZY) (only sequence as sl=ʂ is taken)
 <Multi_key> <l> <i> <o> <n>         : "🦁"  U1F981        # LION FACE
 <Multi_key> <l> <i> <z> <a> <r> <d> : "🦎"  U1F98E        # LIZARD
 <Multi_key> <l> <l> <a> <m> <a>     : "🦙"  U1F999        # LLAMA
 <Multi_key> <l> <o> <b> <s> <t>     : "🦞"  U1F99E        # LOBSTER
 <Multi_key> <m> <a> <m> <m> <o>     : "🦣"  U1F9A3        # MAMMOTH
-<Multi_key> <m> <o> <b> <y>         : "🐳"  U1F433        # SPOUTING WHALE (not ideal but wh=ɯ is taken)
+<Multi_key> <m> <o> <b> <y>         : "🐳"  U1F433        # SPOUTING WHALE (MOBY DICK) (not ideal but wh=ɯ is taken; use willy for 🐋)
 <Multi_key> <m> <o> <n> <k> <e> <y> : "🐵"  U1F435        # MONKEY FACE (use >monkey for 🐒)
 <Multi_key> <m> <o> <o> <s> <e>     : "🫎"  U1FACE        # MOOSE
 <Multi_key> <m> <o> <s> <q> <u> <i> : "🦟"  U1F99F        # MOSQUITO
@@ -5223,6 +5226,8 @@ include "%L"
 <Multi_key> <u> <n> <i>             : "🦄"  U1F984        # UNICORN FACE
 <Multi_key> <w> <e> <b>             : "🕸️"  U1F578 UFE0F  # SPIDER WEB EMOJI      
 <Multi_key> <w> <i> <n> <g>         : "🪽"  U1FABD        # WING
+<Multi_key> <w> <i> <l> <l> <y>     : "🐋"  U1F40B        # WHALE (WILLY) (not ideal but wh=ɯ is taken; use moby for 🐳)
+<Multi_key> <w> <i> <s> <e>         : "🦉"  U1F989        # OWL (only sequence as ow=ẘ is taken)
 <Multi_key> <w> <o> <l> <f>         : "🐺"  U1F43A        # WOLF FACE
 <Multi_key> <w> <o> <r> <m>         : "🪱"  U1FAB1        # WORM
 <Multi_key> <z> <e> <b> <r> <a>     : "🦓"  U1F993        # ZEBRA FACE
@@ -5399,9 +5404,12 @@ include "%L"
 <Multi_key> <c> <o> <u> <r> <t>     : "🏛️"  U1F3DB UFE0F  # CLASSICAL BUILDING EMOJI (COURT) (conflicts with ǒ, use vo)
 <Multi_key> <c> <r> <a> <n> <e>     : "🏗️"  U1F3D7 UFE0F  # BUILDING CONSTRUCTION EMOJI (CRANE) (conflicts with ř, use vr)
 <Multi_key> <c> <r> <u> <i> <s> <e> : "🚢"  U1F6A2        # SHIP (CRUISE) (conflicts with ř, use vr)
+<Multi_key> <d> <e> <c> <a> <y>     : "🏚️"  U1F3DA UFE0F  # DERELICT HOUSE BUILDING EMOJI (DECAY)
 <Multi_key> <d> <e> <p> <a> <r> <t> : "🛫"  U1F6EB        # AIRPLANE DEPARTURE
+<Multi_key> <d> <e> <r> <e> <l> <i> : "🏚️"  U1F3DA UFE0F  # DERELICT HOUSE BUILDING EMOJI
 <Multi_key> <d> <i> <n> <g>         : "🛎️"  U1F6CE UFE0F  # BELLHOP BELL EMOJI  (conflicts with ⌀, use diameter) (use bell for 🔔)
 <Multi_key> <d> <o> <o> <r>         : "🚪"  U1F6AA        # DOOR
+<Multi_key> <d> <o> <u> <c> <h> <e> : "🚿"  U1F6BF        # SHOWER (DOUCHE)
 <Multi_key> <f> <a> <c> <t> <o> <r> : "🏭"  U1F3ED        # FACTORY (🧑+ZWJ+🏭=🧑‍🏭)
 <Multi_key> <f> <e> <r> <r> <i> <s> : "🎡"  U1F3A1        # FERRIS WHEEL
 <Multi_key> <f> <e> <r> <r> <y>     : "⛴️"  U26F4 UFE0F   # FERRY EMOJI
@@ -5439,6 +5447,7 @@ include "%L"
 <Multi_key> <m> <o> <t> <o> <r> <c> : "🏍️"  U1F3CD UFE0F  # RACING MOTORCYCLE EMOJI
 <Multi_key> <m> <o> <t> <o> <r> <w> : "🛣️"  U1F6E3 UFE0F  # MOTORWAY EMOJI
 <Multi_key> <o> <f> <f> <i> <c> <e> : "🏢"  U1F3E2        # OFFICE BUILDING
+<Multi_key> <p> <a> <g> <o> <d> <a> : "🏯"  U1F3EF        # JAPANESE CASTLE (PAGODA)
 <Multi_key> <p> <b> <o> <x>         : "📮"  U1F4EE        # POSTBOX
 <Multi_key> <p> <l> <a> <n> <e>     : "✈️"  U2708 UFE0F   # AIRPLANE EMOJI
 <Multi_key> <p> <l> <a> <y> <g> <r> : "🛝"  U1F6DD        # PLAYGROUND SLIDE
@@ -5455,6 +5464,7 @@ include "%L"
 <Multi_key> <s> <e> <a> <t>         : "💺"  U1F4BA        # SEAT
 <Multi_key> <s> <i> <r> <e> <n>     : "🚨"  U1F6A8        # POLICE CARS REVOLVING LIGHT (SIREN)
 <Multi_key> <s> <p> <e> <e> <d> <b> : "🚤"  U1F6A4        # SPEEDBOAT
+<Multi_key> <s> <t> <a> <t> <i> <o> : "🚉"  U1F689        # STATION
 <Multi_key> <s> <t> <e> <a> <m>     : "🚂"  U1F682        # STEAM LOCOMOTIVE (use huff for 😤)
 <Multi_key> <s> <t> <r> <e> <e> <t> : "🏘️"  U1F3D8 UFE0F  # HOUSE BUILDINGS EMOJI
 <Multi_key> <s> <y> <n> <a> <g>     : "🕍"  U1F54D        # SYNAGOGUE
@@ -5472,6 +5482,7 @@ include "%L"
 <Multi_key> <t> <r> <u> <c> <k>     : "🛻"  U1F6FB        # PICKUP TRUCK
 <Multi_key> <t> <u> <k> <t> <u> <k> : "🛺"  U1F6FA        # AUTO RICKSHAW
 <Multi_key> <t> <y> <r> <e>         : "🛞"  U1F6DE        # WHEEL (TYRE)
+<Multi_key> <w> <d> <o> <w>         : "🪟"  U1FA9F        # WINDOW
 <Multi_key> <w> <e> <d>             : "💒"  U1F492        # WEDDING
 <Multi_key> <7> <1> <1>             : "🏪"  U1F3EA        # CONVENIENCE STORE (7-11)
 
