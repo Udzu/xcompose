@@ -4574,6 +4574,8 @@ include "%L"
 <Multi_key> <M> <r>            : "👨"  U1F468        # MAN
 <Multi_key> <M> <s>            : "👩"  U1F469        # WOMAN
 <Multi_key> <M> <x>            : "🧑"  U1F9D1        # ADULT
+<Multi_key> <M> <H> <H>        : "👬"  U1F46C        # TWO MEN HOLDING HANDS
+<Multi_key> <M> <W> <H> <H>    : "👫"  U1F46B        # MAN AND WOMAN HOLDING HANDS (should really be WMHH but WM=🍉 is taken)
 <Multi_key> <O> <M> <r>        : "👴"  U1F474        # OLDER MAN
 <Multi_key> <O> <M> <s>        : "👵"  U1F475        # OLDER WOMAN
 <Multi_key> <O> <M> <x>        : "🧓"  U1F9D3        # OLDER ADULT
@@ -4582,12 +4584,13 @@ include "%L"
 <Multi_key> <R> <H>            : "🙋"  U1F64B        # HAPPY PERSON RAISING ONE HAND (RAISES HAND)
 <Multi_key> <S> <question>     : "🤷"  U1F937        # SHRUG
 <Multi_key> <s> <question>     : "¯\\_(ツ)_/¯"       # SHRUGGIE
+<Multi_key> <W> <H> <H>        : "👭"  U1F46D        # TWO WOMEN HOLDING HANDS
 
 <Multi_key> <A> <Q>            : "✌️"  U270C UFE0F   # VICTORY HAND EMOJI (AIR QUOTES)
 <Multi_key> <C> <K>            : "🤌"  U1F90C        # PINCHED FINGERS (CHEF'S KISS)
 <Multi_key> <F> <C>            : "🤞"  U1F91E        # HAND WITH INDEX AND MIDDLE FINGERS CROSSED
 <Multi_key> <F> <Y>            : "🖕"  U1F595        # REVERSED HAND WITH MIDDLE FINGER EXTENDED (FUCK YOU) (alternatively FU)
-<Multi_key> <H> <S>            : "🤝"  U1F91D        # HANDSHAKE
+<Multi_key> <H> <S>            : "🤝"  U1F91D        # HANDSHAKE (🧑+ZWJ+🤝+ZWJ+🧑=🧑‍🤝‍🧑)
 <Multi_key> <H> <5>            : "🖐️"  U1F590 UFE0F  # RAISED HAND WITH FINGERS SPLAYED EMOJI (HIGH FIVE) (use TY or 10x for 🙏)
 <Multi_key> <I> <L> <Y>        : "🤟"  U1F91F        # I LOVE YOU HAND SIGN
 <Multi_key> <L> <L> <A> <P>    : "🖖"  U1F596        # RAISED HAND WITH PART BETWEEN MIDDLE AND RING FINGERS (LIVE LONG AND PROSPER)
@@ -4772,6 +4775,7 @@ include "%L"
 <Multi_key> <c> <l> <i> <m> <b>     : "🧗"  U1F9D7        # PERSON CLIMBING (conflicts with ľ, use vl)
 <Multi_key> <c> <h> <e> <f>         : "🧑‍🍳"  U1F9D1 U200D U1F373    # COOK (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <p> <Return>    : "👮"  U1F46E        # POLICE OFFICER (COP) (conflicts with ǒ, use vo) (use pman for 👮‍♂️ and pwoman for 👮‍♀️)
+<Multi_key> <c> <o> <u> <p> <l> <e> : "💑"  U1F491        # COUPLE WITH HEART (conflicts with ǒ, use vo) (use 👨+ZWJ+❤️+ZWJ+👨 for 👨‍❤️‍👨 etc)
 <Multi_key> <c> <y> <c> <l> <e>     : "🚴"  U1F6B4        # BICYCLIST (use bike for 🚲)
 <Multi_key> <d> <a> <n> <c> <e>     : "💃"  U1F483        # DANCER (use strut for 🕺)
 <Multi_key> <d> <e> <a> <f>         : "🧏"  U1F9CF        # DEAF PERSON
@@ -4800,16 +4804,21 @@ include "%L"
 <Multi_key> <l> <e> <v> <i> <t> <a> : "🕴️"  U1F574 UFE0F  # MAN IN BUSINESS SUIT LEVITATING EMOJI
 <Multi_key> <m> <a> <g> <e>         : "🧙"  U1F9D9        # MAGE
 <Multi_key> <m> <a> <n>             : "👨"  U1F468        # MAN (altenatively Mr)
-<Multi_key> <m> <e> <c> <h>         : "🧑‍🔧" U1F9D1 U200D U1F527   # MECHANIC
+<Multi_key> <m> <e> <c> <h>         : "🧑‍🔧"  U1F9D1 U200D U1F527   # MECHANIC
 <Multi_key> <m> <e> <r>             : "🧜"  U1F9DC        # MERPERSON (🧜+‍♀️=🧜‍♀️)
 <Multi_key> <m> <e> <t> <o> <o>     : "🙋"  U1F64B        # HAPPY PERSON RAISING ONE HAND (ME TOO)
 <Multi_key> <m> <r> <s> <c> <l> <a> : "🤶"  U1F936        # MOTHER CHRISTMAS (MRS CLAUS)
 <Multi_key> <n> <i> <n> <j> <a>     : "🥷"  U1F977        # NINJA
+<Multi_key> <p> <l> <a> <y> <b>     : "👯"  U1F46F        # WOMAN WITH BUNNY EARS (PLAYBOY BUNNY) (👯+‍♀️=👯‍♀️)
 <Multi_key> <p> <m> <a> <n>         : "👮‍♂️"  U1F46E U200D U2642 UFE0F   # MAN POLICE OFFICER EMOJI (POLICEMAN)
 <Multi_key> <p> <o> <u> <t>         : "🙎"  U1F64E        # PERSON WITH POUTING FACE
-<Multi_key> <p> <r> <e> <g>         : "🤰"  U1F930        # PREGNANT WOMAN
+<Multi_key> <p> <r> <e> <g> <m>     : "🫃"  U1FAC3        # PREGNANT MAN
+<Multi_key> <p> <r> <e> <g> <n>     : "🤰"  U1F930        # PREGNANT WOMAN
+<Multi_key> <p> <r> <e> <g> <w>     : "🤰"  U1F930        # PREGNANT WOMAN (alternatively just pregn)
+<Multi_key> <p> <r> <e> <g> <x>     : "🫄"  U1FAC4        # PREGNANT PERSON
 <Multi_key> <p> <r> <i> <n> <c> <e> : "🤴"  U1F934        # PRINCE
 <Multi_key> <p> <r> <i> <n> <c> <s> : "👸"  U1F478        # PRINCESS
+<Multi_key> <p> <r> <i> <n> <c> <x> : "🫅"  U1FAC5        # PERSON WITH CROWN (PRINCEX)
 <Multi_key> <p> <r> <o> <f>         : "🧑‍🏫"  U1F9D1 U200D U1F3EB   # TEACHER (PROF)
 <Multi_key> <p> <w> <o> <m> <a> <n> : "👮‍♀️"  U1F46E U200D U2640 UFE0F   # WOMAN POLICE OFFICER EMOJI (POLICEWOMAN)
 <Multi_key> <r> <u> <b>             : "💆"  U1F486        # FACE MASSAGE (RUB)
@@ -5625,6 +5634,7 @@ include "%L"
 
 <Multi_key> <a> <n> <g> <e> <r>     : "💢"  U1F4A2        # ANGER SYMBOL
 <Multi_key> <b> <a> <n> <g>         : "💥"  U1F4A5        # COLLISION SYMBOL (BANG) (conflicts with ă, use ua)
+<Multi_key> <b> <b> <t> <n>         : "🔳"  U1F533        # WHITE SQUARE BUTTON (BLACK BUTTON)
 <Multi_key> <b> <i> <o> <h> <a> <z> : "☣️"  U2623 UFE0F   # BIOHAZARD SIGN EMOJI (conflicts with ĭ, use ui)
 <Multi_key> <b> <r> <i> <g> <h> <t> : "🔆"  U1F506        # HIGH BRIGHTNESS SYMBOL
 <Multi_key> <c> <i> <n> <e> <m> <a> : "🎦"  U1F3A6        # CINEMA (conflicts with vi, use ǐ)
@@ -5639,11 +5649,13 @@ include "%L"
 <Multi_key> <i> <o> <r> <i> <t> <e> : "〽️"  U303D UFE0F   # PART ALTERNATION MARK EMOJI (IORITEN)
 <Multi_key> <l> <i> <n> <k>         : "🔗"  U1F517        # LINK SYMBOL
 <Multi_key> <l> <o> <o> <p>         : "➰"  U27B0         # CURLY LOOP
+<Multi_key> <r> <b> <t> <n>         : "🔘"  U1F518        # RADIO BUTTON
 <Multi_key> <r> <e> <c> <y> <c>     : "♻️"  U267B UFE0F   # BLACK UNIVERSAL RECYCLING SYMBOL EMOJI
 <Multi_key> <s> <p> <l> <a> <t>     : "🫟"  U1FADF        # SPLATTER
 <Multi_key> <s> <t> <a> <f> <f>     : "⚕️"  U2695 UFE0F   # STAFF OF AESCULAPIUS EMOJI (ROD) (use pole for 🎣) (🧑+ZWJ+⚕️=🧑‍⚕️)
 <Multi_key> <S> <T> <O> <P>         : "🛑"  U1F6D1        # OCTAGONAL SIGN (STOP)
 <Multi_key> <w> <a> <i> <t>         : "⏳"  U23F3         # HOURGLASS WITH FLOWING SAND (WAIT)
+<Multi_key> <w> <b> <t> <n>         : "🔲"  U1F532        # BLACK SQUARE BUTTON (WHITE BUTTON)
 <Multi_key> <w> <i> <f> <i>         : "🛜"  U1F6DC        # WIRELESS (WIFI)
 <Multi_key> <z> <a> <p>             : "⚡"  U26A1         # HIGH VOLTAGE SIGN (ZAP)
 <Multi_key> <z> <z> <z>             : "💤"  U1F4A4        # SLEEPING SYMBOL (ZZZ)
@@ -5948,6 +5960,8 @@ include "%L"
 <Multi_key> <at> <less> <minus> <minus>                 : "⬅️" U2B05 UFE0F    # LEFTWARDS BLACK ARROW EMOJI
 <Multi_key> <at> <asciicircum> <bar> <bar>              : "⬆️" U2B06 UFE0F    # UPWARDS BLACK ARROW EMOJI
 <Multi_key> <at> <bar> <bar> <v>                        : "⬇️" U2B07 UFE0F    # DOWNWARDS BLACK ARROW EMOJI
+<Multi_key> <at> <2> <asciicircum> <v>                  : "🔃" U1F503         # CLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS
+<Multi_key> <at> <2> <less> <greater>                   : "🔄" U1F504         # ANTICLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS
 
 <Multi_key> <at> <b> <a> <c> <k>  : "🔙" U1F519   # BACK WITH LEFTWARDS ARROW ABOVE
 <Multi_key> <at> <e> <n> <d>      : "🔚" U1F51A   # END WITH LEFTWARDS ARROW ABOVE
@@ -5973,6 +5987,7 @@ include "%L"
 <Multi_key> <at> <asciitilde>        : "〰️" U3030 UFE0F    # WAVY DASH EMOJI
 <Multi_key> <at> <t> <m>             : "™️" U2122 UFE0F    # TRADE MARK SIGN EMOJI
 <Multi_key> <at> <parenleft> <c> <parenright> : "©️" U00A9 UFE0F    # COPYRIGHT SIGN EMOJI
+<Multi_key> <at> <parenleft> <m> <parenright> : "Ⓜ️" U24C2 UFE0F    # CIRCLED LATIN CAPITAL LETTER M EMOJI
 <Multi_key> <at> <parenleft> <r> <parenright> : "®️" U00AE UFE0F    # REGISTERED SIGN EMOJI
 <Multi_key> <at> <dollar>            : "💲" U1F4B2        # HEAVY DOLLAR SIGN
 <Multi_key> <at> <numbersign>        : "⌘" U2318          # PLACE OF INTEREST SIGN (COMMAND KEY)
