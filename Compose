@@ -4538,6 +4538,7 @@ include "%L"
 <Multi_key> <less> <3> <asciitilde> : "💞"  U1F49E        # REVOLVING HEARTS
 <Multi_key> <less> <3> <asciicircum> <asciicircum> : "😻"  U1F63B    # SMILING CAT FACE WITH HEART-SHAPED EYES
 <Multi_key> <less> <3> <colon> <parenright>        : "🥰"  U1F970    # SMILING FACE WITH SMILING EYES AND THREE HEARTS
+<Multi_key> <less> <3> <colon> <x>                 : "💏"  U1F48F    # KISS
 <Multi_key> <less> <3> <parenleft> <parenright>    : "🫶"  U1FAF6    # HEART HANDS
 
 # Gender and sexuality (also start with <3)
@@ -4774,6 +4775,7 @@ include "%L"
 <Multi_key> <c> <l> <e> <r> <k>     : "🧑‍💼"  U1F9D1 U200D U1F4BC   # OFFICE WORKER (CLERK) (conflicts with ľ, use vl)
 <Multi_key> <c> <l> <i> <m> <b>     : "🧗"  U1F9D7        # PERSON CLIMBING (conflicts with ľ, use vl)
 <Multi_key> <c> <h> <e> <f>         : "🧑‍🍳"  U1F9D1 U200D U1F373    # COOK (conflicts with ǒ, use vo)
+<Multi_key> <c> <o> <n> <t> <a> <c> : "👥"  U1F465        # BUSTS IN SILHOUETTE (CONTACTS) (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <p> <Return>    : "👮"  U1F46E        # POLICE OFFICER (COP) (conflicts with ǒ, use vo) (use pman for 👮‍♂️ and pwoman for 👮‍♀️)
 <Multi_key> <c> <o> <u> <p> <l> <e> : "💑"  U1F491        # COUPLE WITH HEART (conflicts with ǒ, use vo) (use 👨+ZWJ+❤️+ZWJ+👨 for 👨‍❤️‍👨 etc)
 <Multi_key> <c> <y> <c> <l> <e>     : "🚴"  U1F6B4        # BICYCLIST (use bike for 🚲)
@@ -4837,7 +4839,7 @@ include "%L"
 <Multi_key> <s> <t> <u> <d> <e> <n> : "🧑‍🎓"  U1F9D1 U200D U1F393   # STUDENT
 <Multi_key> <s> <w> <i> <m>         : "🏊"  U1F3CA        # SWIMMER
 <Multi_key> <u> <p> <s> <e> <t>     : "🙍"  U1F64D        # PERSON FROWNING (UPSET)
-<Multi_key> <u> <s> <e> <r>         : "👤"  U1F464        # BUST IN SILHOUETTE (USER)
+<Multi_key> <u> <s> <e> <r>         : "👤"  U1F464        # BUST IN SILHOUETTE (USER) (use contac for 👥)
 <Multi_key> <w> <a> <l> <k>         : "🚶"  U1F6B6        # PEDESTRIAN (WALK)
 <Multi_key> <w> <o> <m> <a> <n>     : "👩"  U1F469        # WOMAN (alternatively Ms)
 <Multi_key> <y> <o> <g> <a>         : "🧘"  U1F9D8        # PERSON IN LOTUS POSITION (YOGA)
@@ -4911,6 +4913,7 @@ include "%L"
 <Multi_key> <c> <a> <n> <d> <y>     : "🍬"  U1F36C        # CANDY (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <n> <n> <e> <d> : "🥫"  U1F96B        # CANNED FOOD (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <r> <r> <o> <t> : "🥕"  U1F955        # CARROT (conflicts with ǎ, use va)
+<Multi_key> <c> <c> <a> <k> <e>     : "🧁"  U1F9C1        # CUPCAKE
 <Multi_key> <c> <h> <a> <r> <d>     : "🥬"  U1F96C        # LEAFY GREEN (CHARD) (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <e> <e> <r> <s> : "🍻"  U1F37B        # CLINKING BEER MUGS (CHEERS) (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <e> <e> <s> <e> : "🧀"  U1F9C0        # CHEESE WEDGE (conflicts with ȟ, use vh)
@@ -4946,6 +4949,7 @@ include "%L"
 <Multi_key> <g> <r> <a> <p> <e>     : "🍇"  U1F347        # GRAPES
 <Multi_key> <g> <u> <a> <c>         : "🥑"  U1F951        # AVOCADO (GUACAMOLE) (not ideal but av=ɐ is taken)
 <Multi_key> <g> <y> <o> <z> <a>     : "🥟"  U1F95F        # DUMPLING (GYOZA)
+<Multi_key> <g> <y> <r> <o>         : "🥙"  U1F959        # STUFFED FLATBREAD (GYRO)
 <Multi_key> <h> <e> <r> <b>         : "🌿"  U1F33F        # HERB
 <Multi_key> <h> <o> <n> <e> <y>     : "🍯"  U1F36F        # HONEY POT
 <Multi_key> <h> <u> <n> <k>         : "🍖"  U1F356        # MEAT ON BONE (HUNK)
@@ -4963,6 +4967,8 @@ include "%L"
 <Multi_key> <m> <e> <a> <t>         : "🥩"  U1F969        # CUT OF MEAT (use hunk for 🍖)
 <Multi_key> <m> <e> <l> <o> <n>     : "🍈"  U1F348        # MELON
 <Multi_key> <m> <i> <l> <k>         : "🥛"  U1F95B        # GLASS OF MILK
+<Multi_key> <m> <n> <c> <a> <k> <e> : "🥮"  U1F96E        # MOON CAKE
+<Multi_key> <m> <n> <g> <o>         : "🥭"  U1F96D        # MANGO (not ideal but man=👨 is taken)
 <Multi_key> <n> <a> <a> <n>         : "🫓"  U1FAD3        # FLATBREAD (NAAN)
 <Multi_key> <n> <a> <r> <u> <t> <o> : "🍥"  U1F365        # FISH CAKE WITH SWIRL DESIGN (NARUTO)
 <Multi_key> <n> <o> <o> <d> <l> <e> : "🍜"  U1F35C        # STEAMING BOWL (NOODLE)
@@ -5045,6 +5051,7 @@ include "%L"
 <Multi_key> <g> <r> <a> <i> <n>     : "🌾"  U1F33E        # EAR OF RICE (GRAIN)
 <Multi_key> <h> <i> <b> <i> <s> <c> : "🌺"  U1F33A        # HIBISCUS
 <Multi_key> <h> <o> <t>             : "🔥"  U1F525        # FIRE (HOT)
+<Multi_key> <h> <y> <a> <c> <i> <n> : "🪻"  U1FABB        # HYACINTH
 <Multi_key> <i> <s> <l> <a> <n> <d> : "🏝️"  U1F3DD UFE0F  # DESERT ISLAND EMOJI
 <Multi_key> <j> <a> <p> <a> <n>     : "🗾"  U1F5FE        # SILHOUETTE OF JAPAN
 <Multi_key> <k> <a> <d> <o> <m> <a> : "🎍"  U1F38D        # PINE DECORATION (KADOMATSU)
@@ -5094,6 +5101,7 @@ include "%L"
 <Multi_key> <t> <o> <k> <y> <o>     : "🗼"  U1F5FC        # TOKYO TOWER
 <Multi_key> <t> <o> <r> <n> <a> <d> : "🌪️"  U1F32A UFE0F  # CLOUD WITH TORNADO EMOJI
 <Multi_key> <t> <r> <e> <e>         : "🌳"  U1F333        # DECIDUOUS TREE
+<Multi_key> <t> <r> <u> <n> <k>     : "🪾"  U1FABE        # LEAFLESS TREE (TRUNK)
 <Multi_key> <t> <s> <t> <o> <r> <m> : "🌩️"  U1F329 UFE0F  # CLOUD WITH LIGHTNING EMOJI (THUNDER STORM)
 <Multi_key> <t> <s> <u> <k> <i>     : "🎑"  U1F391        # MOON VIEWING CEREMONY (TSUKIMI)
 <Multi_key> <t> <u> <l> <i> <p>     : "🌷"  U1F337        # TULIP
@@ -5101,6 +5109,7 @@ include "%L"
 <Multi_key> <u> <m> <b> <r> <e> <l> : "☂️"  U2602 UFE0F   # UMBRELLA EMOJI (alternatively brolly)
 <Multi_key> <u> <m> <b> <r> <r> <a> : "☔️"  U2614 UFE0F   # UMBRELLA WITH RAIN DROPS EMOJI (alternatively condom)
 <Multi_key> <w> <a> <v> <e>         : "🌊"  U1F30A        # WATER WAVE (use hello or bye for 👋)
+<Multi_key> <w> <f> <l> <o> <w> <e> : "💮"  U1F4AE        # WHITE FLOWER
 <Multi_key> <w> <i> <l> <t>         : "🥀"  U1F940        # WILTED FLOWER
 <Multi_key> <w> <i> <n> <d>         : "🌬️"  U1F32C UFE0F  # WIND BLOWING FACE EMOJI
 <Multi_key> <w> <o> <o> <d>         : "🪵"  U1FAB5        # WOOD
@@ -5647,6 +5656,7 @@ include "%L"
 <Multi_key> <h> <o> <l> <e>         : "🕳️"  U1F573 UFE0F  # HOLE VARIATION EMOJI
 <Multi_key> <i> <n> <f> <o>         : "ℹ️"  U2139 UFE0F   # INFORMATION SOURCE EMOJI
 <Multi_key> <i> <o> <r> <i> <t> <e> : "〽️"  U303D UFE0F   # PART ALTERNATION MARK EMOJI (IORITEN)
+<Multi_key> <k> <a> <w> <a> <i> <i> : "💠"  U1F4A0        # DIAMOND SHAPE WITH A DOT INSIDE (KAWAII)
 <Multi_key> <l> <i> <n> <k>         : "🔗"  U1F517        # LINK SYMBOL
 <Multi_key> <l> <o> <o> <p>         : "➰"  U27B0         # CURLY LOOP
 <Multi_key> <r> <b> <t> <n>         : "🔘"  U1F518        # RADIO BUTTON
