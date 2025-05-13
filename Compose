@@ -131,7 +131,7 @@ include "%L"
 <Multi_key> <c> <less> <Return>      : "͗"  U0357   # COMBINING RIGHT HALF RING ABOVE (conflicts with č, use vc)
 <Multi_key> <parenright> <Return>    : "͝"  U035D   # COMBINING DOUBLE BREVE  
 <Multi_key> <parenleft> <Return>     : "͡"  U0361   # COMBINING DOUBLE INVERTED BREVE
-<Multi_key> <underscore> <apostrophe> <space> <Return>  : "᷄" U1DC4   # COMBINING MACRON-ACUTE (conflicts with ⍘, use '_[RETURN] defined below)
+<Multi_key> <underscore> <apostrophe> <space> <Return>  : "᷄" U1DC4   # COMBINING MACRON-ACUTE (conflicts with ⍘, use '_[Return] defined below)
 <Multi_key> <grave> <underscore> <space> <Return>       : "᷅" U1DC5   # COMBINING GRAVE-MACRON
 <Multi_key> <underscore> <grave> <space> <Return>       : "᷆" U1DC6   # COMBINING MACRON-GRAVE
 <Multi_key> <apostrophe> <underscore> <space> <Return>  : "᷇" U1DC7   # COMBINING ACUTE-MACRON
@@ -141,7 +141,7 @@ include "%L"
 <Multi_key> <underscore> <u> <space> <Return>           : "᷌" U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
 
 <Multi_key> <underscore> <grave> <Return>            : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
-<Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (conflicts with ⍘, use '_[RETURN] defined below)
+<Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (conflicts with ⍘, use '_[Return] defined below)
 <Multi_key> <underscore> <T> <less> <Return>         : "̘"  U0318   # COMBINING LEFT TACK BELOW
 <Multi_key> <underscore> <T> <greater> <Return>      : "̙"  U0319   # COMBINING RIGHT TACK BELOW
 <Multi_key> <underscore> <c> <Return>                : "̜"  U031C   # COMBINING LEFT HALF RING BELOW
@@ -187,6 +187,16 @@ include "%L"
 <Multi_key> <minus> <bar> <bar> <Return>     : "⃦"  U20E6   # COMBINING DOUBLE VERTICAL STROKE OVERLAY
 <Multi_key> <minus> <less> <minus> <Return>  : "⃪"  U20EA   # COMBINING LEFTWARDS ARROW OVERLAY
 <Multi_key> <minus> <slash> <slash> <Return> : "⃫"  U20EB   # COMBINING LONG DOUBLE SOLIDUS OVERLAY (conflicts with ⌿, use /-)
+
+<Multi_key> <2> <underscore> <u> <Return>          : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (alternatively __)[Return])
+<Multi_key> <2> <u> <Return>                       : "͝"  U035D   # COMBINING DOUBLE BREVE (alternatively )[Return])
+<Multi_key> <2> <underscore> <Return>              : "͞"  U035E   # COMBINING DOUBLE MACRON
+<Multi_key> <2> <underscore> <underscore> <Return> : "͟"  U035F   # COMBINING DOUBLE MACRON BELOW
+<Multi_key> <2> <asciitilde> <Return>              : "͠"  U0360   # COMBINING DOUBLE TILDE
+<Multi_key> <2> <u> <v> <Return>                   : "͡"  U0361   # COMBINING DOUBLE INVERTED BREVE (alternatively ([Return])
+<Multi_key> <2> <underscore> <greater> <Return>    : "͢"  U0362   # COMBINING DOUBLE RIGHTWARDS ARROW BELOW
+<Multi_key> <2> <underscore> <u> <v> <Return>      : "᷼"  U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (alternatively __([Return])
+<Multi_key> <2> <asciicircum> <Return>             : "᷍"  U1DCD   # COMBINING DOUBLE CIRCUMFLEX ABOVE (conflicts with ², use ^2)
 
 <Multi_key> <O> <period> : "◌" U25CC    # DOTTED CIRCLE (PLACEHOLDER GLYPH)
 <Multi_key> <apostrophe> <underscore> <Return> : "⍘" U2358   # APL FUNCTIONAL SYMBOL QUOTE UNDERBAR (to free up _')
@@ -1255,7 +1265,6 @@ include "%L"
 
 <Multi_key> <parenleft> <A> <A> <parenright> : "Ꜳ" UA732   # LATIN CAPITAL LETTER AA
 <Multi_key> <parenleft> <A> <E> <parenright> : "Æ" U00C6   # LATIN CAPITAL LETTER AE
-<Multi_key> <parenleft> <A> <i> <parenright> : "ᾼ" U1FBC   # GREEK CAPITAL LETTER ALPHA WITH PROSGEGRAMMENI (visually similar)
 <Multi_key> <parenleft> <A> <O> <parenright> : "Ꜵ" UA734   # LATIN CAPITAL LETTER AO
 <Multi_key> <parenleft> <A> <U> <parenright> : "㍳" U3373   # SQUARE AU
 <Multi_key> <parenleft> <A> <V> <parenright> : "Ꜹ" UA738   # LATIN CAPITAL LETTER AV
@@ -1278,7 +1287,6 @@ include "%L"
 <Multi_key> <parenleft> <G> <y> <parenright> : "㏉" U33C9   # SQUARE GY
 <Multi_key> <parenleft> <H> <g> <parenright> : "㋌" U32CC   # SQUARE HG
 <Multi_key> <parenleft> <H> <I> <parenright> : "𖨟" U16A1F   # BAMUM LETTER PHASE-F PEUX (visually similar)
-<Multi_key> <parenleft> <H> <i> <parenright> : "ῌ" U1FCC   # GREEK CAPITAL LETTER ETA WITH PROSGEGRAMMENI (visually similar)
 <Multi_key> <parenleft> <H> <P> <parenright> : "㏋" U33CB   # SQUARE HP
 <Multi_key> <parenleft> <H> <u> <parenright> : "Ƕ" U01F6   # LATIN CAPITAL LETTER HWAIR (visually similar)
 <Multi_key> <parenleft> <H> <z> <parenright> : "㎐" U3390   # SQUARE HZ
@@ -5491,7 +5499,7 @@ include "%L"
 <Multi_key> <p> <b> <o> <x>         : "📮"  U1F4EE        # POSTBOX
 <Multi_key> <p> <l> <a> <n> <e>     : "✈️"  U2708 UFE0F   # AIRPLANE EMOJI
 <Multi_key> <p> <l> <a> <y> <g> <r> : "🛝"  U1F6DD        # PLAYGROUND SLIDE
-<Multi_key> <p> <o> <l> <i> <c> <e> : "🚔"  U1F694        # ONCOMING POLICE CAR (use <police for 🚓 and cop[RETURN] for 👮)
+<Multi_key> <p> <o> <l> <i> <c> <e> : "🚔"  U1F694        # ONCOMING POLICE CAR (use <police for 🚓 and cop[Return] for 👮)
 <Multi_key> <less> <p> <o> <l> <i> <c> <e> : "🚓"  U1F693 # POLICE CAR
 <Multi_key> <p> <o> <s> <t>         : "🏤"  U1F3E4        # EUROPEAN POST OFFICE
 <Multi_key> <r> <a> <i> <l> <c>     : "🚃"  U1F683        # RAILWAY CAR
