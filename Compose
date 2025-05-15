@@ -421,6 +421,7 @@ include "%L"
 <Multi_key> <Z> <H>                 : "Ʒ"  U01B7   # LATIN CAPITAL LETTER EZH
 
 <Multi_key> <l> <s>                 : "ſ"  U017F   # LATIN SMALL LETTER LONG S (alternatively fs)
+<Multi_key> <s> <t> <Return>        : "ﬅ"  UFB05   # LATIN SMALL LIGATURE LONG S T
 <Multi_key> <o> <k>                 : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA (OKINA)
 <Multi_key> <W> <N>                 : "Ƿ"  U01F7   # LATIN CAPITAL LETTER WYNN
 <Multi_key> <w> <n>                 : "ƿ"  U01BF   # LATIN LETTER WYNN
@@ -512,622 +513,622 @@ include "%L"
 # Mathematical alphanumeric symbols #
 #####################################
 
-# Convention: % + script + weight + character
-#   font: n = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace*, d = double-struck*
-#   weight: n = normal, b = bold, i = italic, B = bold italic (*fonts m and d don't specify a weight)
+# Convention: % + script + [weight] + character
+#   font: n = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace, d = double-struck
+#   weight: ∅ = normal, * = bold, / = italic, */ = bold italic
 
-<Multi_key> <percent> <n> <b> <A> : "𝐀" U1D400    # MATHEMATICAL BOLD CAPITAL A
-<Multi_key> <percent> <n> <b> <B> : "𝐁" U1D401    # MATHEMATICAL BOLD CAPITAL B
-<Multi_key> <percent> <n> <b> <C> : "𝐂" U1D402    # MATHEMATICAL BOLD CAPITAL C
-<Multi_key> <percent> <n> <b> <D> : "𝐃" U1D403    # MATHEMATICAL BOLD CAPITAL D
-<Multi_key> <percent> <n> <b> <E> : "𝐄" U1D404    # MATHEMATICAL BOLD CAPITAL E
-<Multi_key> <percent> <n> <b> <F> : "𝐅" U1D405    # MATHEMATICAL BOLD CAPITAL F
-<Multi_key> <percent> <n> <b> <G> : "𝐆" U1D406    # MATHEMATICAL BOLD CAPITAL G
-<Multi_key> <percent> <n> <b> <H> : "𝐇" U1D407    # MATHEMATICAL BOLD CAPITAL H
-<Multi_key> <percent> <n> <b> <I> : "𝐈" U1D408    # MATHEMATICAL BOLD CAPITAL I
-<Multi_key> <percent> <n> <b> <J> : "𝐉" U1D409    # MATHEMATICAL BOLD CAPITAL J
-<Multi_key> <percent> <n> <b> <K> : "𝐊" U1D40A    # MATHEMATICAL BOLD CAPITAL K
-<Multi_key> <percent> <n> <b> <L> : "𝐋" U1D40B    # MATHEMATICAL BOLD CAPITAL L
-<Multi_key> <percent> <n> <b> <M> : "𝐌" U1D40C    # MATHEMATICAL BOLD CAPITAL M
-<Multi_key> <percent> <n> <b> <N> : "𝐍" U1D40D    # MATHEMATICAL BOLD CAPITAL N
-<Multi_key> <percent> <n> <b> <O> : "𝐎" U1D40E    # MATHEMATICAL BOLD CAPITAL O
-<Multi_key> <percent> <n> <b> <P> : "𝐏" U1D40F    # MATHEMATICAL BOLD CAPITAL P
-<Multi_key> <percent> <n> <b> <Q> : "𝐐" U1D410    # MATHEMATICAL BOLD CAPITAL Q
-<Multi_key> <percent> <n> <b> <R> : "𝐑" U1D411    # MATHEMATICAL BOLD CAPITAL R
-<Multi_key> <percent> <n> <b> <S> : "𝐒" U1D412    # MATHEMATICAL BOLD CAPITAL S
-<Multi_key> <percent> <n> <b> <T> : "𝐓" U1D413    # MATHEMATICAL BOLD CAPITAL T
-<Multi_key> <percent> <n> <b> <U> : "𝐔" U1D414    # MATHEMATICAL BOLD CAPITAL U
-<Multi_key> <percent> <n> <b> <V> : "𝐕" U1D415    # MATHEMATICAL BOLD CAPITAL V
-<Multi_key> <percent> <n> <b> <W> : "𝐖" U1D416    # MATHEMATICAL BOLD CAPITAL W
-<Multi_key> <percent> <n> <b> <X> : "𝐗" U1D417    # MATHEMATICAL BOLD CAPITAL X
-<Multi_key> <percent> <n> <b> <Y> : "𝐘" U1D418    # MATHEMATICAL BOLD CAPITAL Y
-<Multi_key> <percent> <n> <b> <Z> : "𝐙" U1D419    # MATHEMATICAL BOLD CAPITAL Z
-<Multi_key> <percent> <n> <b> <a> : "𝐚" U1D41A    # MATHEMATICAL BOLD SMALL A
-<Multi_key> <percent> <n> <b> <b> : "𝐛" U1D41B    # MATHEMATICAL BOLD SMALL B
-<Multi_key> <percent> <n> <b> <c> : "𝐜" U1D41C    # MATHEMATICAL BOLD SMALL C
-<Multi_key> <percent> <n> <b> <d> : "𝐝" U1D41D    # MATHEMATICAL BOLD SMALL D
-<Multi_key> <percent> <n> <b> <e> : "𝐞" U1D41E    # MATHEMATICAL BOLD SMALL E
-<Multi_key> <percent> <n> <b> <f> : "𝐟" U1D41F    # MATHEMATICAL BOLD SMALL F
-<Multi_key> <percent> <n> <b> <g> : "𝐠" U1D420    # MATHEMATICAL BOLD SMALL G
-<Multi_key> <percent> <n> <b> <h> : "𝐡" U1D421    # MATHEMATICAL BOLD SMALL H
-<Multi_key> <percent> <n> <b> <i> : "𝐢" U1D422    # MATHEMATICAL BOLD SMALL I
-<Multi_key> <percent> <n> <b> <j> : "𝐣" U1D423    # MATHEMATICAL BOLD SMALL J
-<Multi_key> <percent> <n> <b> <k> : "𝐤" U1D424    # MATHEMATICAL BOLD SMALL K
-<Multi_key> <percent> <n> <b> <l> : "𝐥" U1D425    # MATHEMATICAL BOLD SMALL L
-<Multi_key> <percent> <n> <b> <m> : "𝐦" U1D426    # MATHEMATICAL BOLD SMALL M
-<Multi_key> <percent> <n> <b> <n> : "𝐧" U1D427    # MATHEMATICAL BOLD SMALL N
-<Multi_key> <percent> <n> <b> <o> : "𝐨" U1D428    # MATHEMATICAL BOLD SMALL O
-<Multi_key> <percent> <n> <b> <p> : "𝐩" U1D429    # MATHEMATICAL BOLD SMALL P
-<Multi_key> <percent> <n> <b> <q> : "𝐪" U1D42A    # MATHEMATICAL BOLD SMALL Q
-<Multi_key> <percent> <n> <b> <r> : "𝐫" U1D42B    # MATHEMATICAL BOLD SMALL R
-<Multi_key> <percent> <n> <b> <s> : "𝐬" U1D42C    # MATHEMATICAL BOLD SMALL S
-<Multi_key> <percent> <n> <b> <t> : "𝐭" U1D42D    # MATHEMATICAL BOLD SMALL T
-<Multi_key> <percent> <n> <b> <u> : "𝐮" U1D42E    # MATHEMATICAL BOLD SMALL U
-<Multi_key> <percent> <n> <b> <v> : "𝐯" U1D42F    # MATHEMATICAL BOLD SMALL V
-<Multi_key> <percent> <n> <b> <w> : "𝐰" U1D430    # MATHEMATICAL BOLD SMALL W
-<Multi_key> <percent> <n> <b> <x> : "𝐱" U1D431    # MATHEMATICAL BOLD SMALL X
-<Multi_key> <percent> <n> <b> <y> : "𝐲" U1D432    # MATHEMATICAL BOLD SMALL Y
-<Multi_key> <percent> <n> <b> <z> : "𝐳" U1D433    # MATHEMATICAL BOLD SMALL Z
-<Multi_key> <percent> <n> <b> <0> : "𝟎" U1D7CE    # MATHEMATICAL BOLD DIGIT ZERO
-<Multi_key> <percent> <n> <b> <1> : "𝟏" U1D7CF    # MATHEMATICAL BOLD DIGIT ONE
-<Multi_key> <percent> <n> <b> <2> : "𝟐" U1D7D0    # MATHEMATICAL BOLD DIGIT TWO
-<Multi_key> <percent> <n> <b> <3> : "𝟑" U1D7D1    # MATHEMATICAL BOLD DIGIT THREE
-<Multi_key> <percent> <n> <b> <4> : "𝟒" U1D7D2    # MATHEMATICAL BOLD DIGIT FOUR
-<Multi_key> <percent> <n> <b> <5> : "𝟓" U1D7D3    # MATHEMATICAL BOLD DIGIT FIVE
-<Multi_key> <percent> <n> <b> <6> : "𝟔" U1D7D4    # MATHEMATICAL BOLD DIGIT SIX
-<Multi_key> <percent> <n> <b> <7> : "𝟕" U1D7D5    # MATHEMATICAL BOLD DIGIT SEVEN
-<Multi_key> <percent> <n> <b> <8> : "𝟖" U1D7D6    # MATHEMATICAL BOLD DIGIT EIGHT
-<Multi_key> <percent> <n> <b> <9> : "𝟗" U1D7D7    # MATHEMATICAL BOLD DIGIT NINE
+<Multi_key> <percent> <n> <asterisk> <A> : "𝐀" U1D400    # MATHEMATICAL BOLD CAPITAL A
+<Multi_key> <percent> <n> <asterisk> <B> : "𝐁" U1D401    # MATHEMATICAL BOLD CAPITAL B
+<Multi_key> <percent> <n> <asterisk> <C> : "𝐂" U1D402    # MATHEMATICAL BOLD CAPITAL C
+<Multi_key> <percent> <n> <asterisk> <D> : "𝐃" U1D403    # MATHEMATICAL BOLD CAPITAL D
+<Multi_key> <percent> <n> <asterisk> <E> : "𝐄" U1D404    # MATHEMATICAL BOLD CAPITAL E
+<Multi_key> <percent> <n> <asterisk> <F> : "𝐅" U1D405    # MATHEMATICAL BOLD CAPITAL F
+<Multi_key> <percent> <n> <asterisk> <G> : "𝐆" U1D406    # MATHEMATICAL BOLD CAPITAL G
+<Multi_key> <percent> <n> <asterisk> <H> : "𝐇" U1D407    # MATHEMATICAL BOLD CAPITAL H
+<Multi_key> <percent> <n> <asterisk> <I> : "𝐈" U1D408    # MATHEMATICAL BOLD CAPITAL I
+<Multi_key> <percent> <n> <asterisk> <J> : "𝐉" U1D409    # MATHEMATICAL BOLD CAPITAL J
+<Multi_key> <percent> <n> <asterisk> <K> : "𝐊" U1D40A    # MATHEMATICAL BOLD CAPITAL K
+<Multi_key> <percent> <n> <asterisk> <L> : "𝐋" U1D40B    # MATHEMATICAL BOLD CAPITAL L
+<Multi_key> <percent> <n> <asterisk> <M> : "𝐌" U1D40C    # MATHEMATICAL BOLD CAPITAL M
+<Multi_key> <percent> <n> <asterisk> <N> : "𝐍" U1D40D    # MATHEMATICAL BOLD CAPITAL N
+<Multi_key> <percent> <n> <asterisk> <O> : "𝐎" U1D40E    # MATHEMATICAL BOLD CAPITAL O
+<Multi_key> <percent> <n> <asterisk> <P> : "𝐏" U1D40F    # MATHEMATICAL BOLD CAPITAL P
+<Multi_key> <percent> <n> <asterisk> <Q> : "𝐐" U1D410    # MATHEMATICAL BOLD CAPITAL Q
+<Multi_key> <percent> <n> <asterisk> <R> : "𝐑" U1D411    # MATHEMATICAL BOLD CAPITAL R
+<Multi_key> <percent> <n> <asterisk> <S> : "𝐒" U1D412    # MATHEMATICAL BOLD CAPITAL S
+<Multi_key> <percent> <n> <asterisk> <T> : "𝐓" U1D413    # MATHEMATICAL BOLD CAPITAL T
+<Multi_key> <percent> <n> <asterisk> <U> : "𝐔" U1D414    # MATHEMATICAL BOLD CAPITAL U
+<Multi_key> <percent> <n> <asterisk> <V> : "𝐕" U1D415    # MATHEMATICAL BOLD CAPITAL V
+<Multi_key> <percent> <n> <asterisk> <W> : "𝐖" U1D416    # MATHEMATICAL BOLD CAPITAL W
+<Multi_key> <percent> <n> <asterisk> <X> : "𝐗" U1D417    # MATHEMATICAL BOLD CAPITAL X
+<Multi_key> <percent> <n> <asterisk> <Y> : "𝐘" U1D418    # MATHEMATICAL BOLD CAPITAL Y
+<Multi_key> <percent> <n> <asterisk> <Z> : "𝐙" U1D419    # MATHEMATICAL BOLD CAPITAL Z
+<Multi_key> <percent> <n> <asterisk> <a> : "𝐚" U1D41A    # MATHEMATICAL BOLD SMALL A
+<Multi_key> <percent> <n> <asterisk> <b> : "𝐛" U1D41B    # MATHEMATICAL BOLD SMALL B
+<Multi_key> <percent> <n> <asterisk> <c> : "𝐜" U1D41C    # MATHEMATICAL BOLD SMALL C
+<Multi_key> <percent> <n> <asterisk> <d> : "𝐝" U1D41D    # MATHEMATICAL BOLD SMALL D
+<Multi_key> <percent> <n> <asterisk> <e> : "𝐞" U1D41E    # MATHEMATICAL BOLD SMALL E
+<Multi_key> <percent> <n> <asterisk> <f> : "𝐟" U1D41F    # MATHEMATICAL BOLD SMALL F
+<Multi_key> <percent> <n> <asterisk> <g> : "𝐠" U1D420    # MATHEMATICAL BOLD SMALL G
+<Multi_key> <percent> <n> <asterisk> <h> : "𝐡" U1D421    # MATHEMATICAL BOLD SMALL H
+<Multi_key> <percent> <n> <asterisk> <i> : "𝐢" U1D422    # MATHEMATICAL BOLD SMALL I
+<Multi_key> <percent> <n> <asterisk> <j> : "𝐣" U1D423    # MATHEMATICAL BOLD SMALL J
+<Multi_key> <percent> <n> <asterisk> <k> : "𝐤" U1D424    # MATHEMATICAL BOLD SMALL K
+<Multi_key> <percent> <n> <asterisk> <l> : "𝐥" U1D425    # MATHEMATICAL BOLD SMALL L
+<Multi_key> <percent> <n> <asterisk> <m> : "𝐦" U1D426    # MATHEMATICAL BOLD SMALL M
+<Multi_key> <percent> <n> <asterisk> <n> : "𝐧" U1D427    # MATHEMATICAL BOLD SMALL N
+<Multi_key> <percent> <n> <asterisk> <o> : "𝐨" U1D428    # MATHEMATICAL BOLD SMALL O
+<Multi_key> <percent> <n> <asterisk> <p> : "𝐩" U1D429    # MATHEMATICAL BOLD SMALL P
+<Multi_key> <percent> <n> <asterisk> <q> : "𝐪" U1D42A    # MATHEMATICAL BOLD SMALL Q
+<Multi_key> <percent> <n> <asterisk> <r> : "𝐫" U1D42B    # MATHEMATICAL BOLD SMALL R
+<Multi_key> <percent> <n> <asterisk> <s> : "𝐬" U1D42C    # MATHEMATICAL BOLD SMALL S
+<Multi_key> <percent> <n> <asterisk> <t> : "𝐭" U1D42D    # MATHEMATICAL BOLD SMALL T
+<Multi_key> <percent> <n> <asterisk> <u> : "𝐮" U1D42E    # MATHEMATICAL BOLD SMALL U
+<Multi_key> <percent> <n> <asterisk> <v> : "𝐯" U1D42F    # MATHEMATICAL BOLD SMALL V
+<Multi_key> <percent> <n> <asterisk> <w> : "𝐰" U1D430    # MATHEMATICAL BOLD SMALL W
+<Multi_key> <percent> <n> <asterisk> <x> : "𝐱" U1D431    # MATHEMATICAL BOLD SMALL X
+<Multi_key> <percent> <n> <asterisk> <y> : "𝐲" U1D432    # MATHEMATICAL BOLD SMALL Y
+<Multi_key> <percent> <n> <asterisk> <z> : "𝐳" U1D433    # MATHEMATICAL BOLD SMALL Z
+<Multi_key> <percent> <n> <asterisk> <0> : "𝟎" U1D7CE    # MATHEMATICAL BOLD DIGIT ZERO
+<Multi_key> <percent> <n> <asterisk> <1> : "𝟏" U1D7CF    # MATHEMATICAL BOLD DIGIT ONE
+<Multi_key> <percent> <n> <asterisk> <2> : "𝟐" U1D7D0    # MATHEMATICAL BOLD DIGIT TWO
+<Multi_key> <percent> <n> <asterisk> <3> : "𝟑" U1D7D1    # MATHEMATICAL BOLD DIGIT THREE
+<Multi_key> <percent> <n> <asterisk> <4> : "𝟒" U1D7D2    # MATHEMATICAL BOLD DIGIT FOUR
+<Multi_key> <percent> <n> <asterisk> <5> : "𝟓" U1D7D3    # MATHEMATICAL BOLD DIGIT FIVE
+<Multi_key> <percent> <n> <asterisk> <6> : "𝟔" U1D7D4    # MATHEMATICAL BOLD DIGIT SIX
+<Multi_key> <percent> <n> <asterisk> <7> : "𝟕" U1D7D5    # MATHEMATICAL BOLD DIGIT SEVEN
+<Multi_key> <percent> <n> <asterisk> <8> : "𝟖" U1D7D6    # MATHEMATICAL BOLD DIGIT EIGHT
+<Multi_key> <percent> <n> <asterisk> <9> : "𝟗" U1D7D7    # MATHEMATICAL BOLD DIGIT NINE
 
-<Multi_key> <percent> <n> <i> <A> : "𝐴" U1D434    # MATHEMATICAL ITALIC CAPITAL A
-<Multi_key> <percent> <n> <i> <B> : "𝐵" U1D435    # MATHEMATICAL ITALIC CAPITAL B
-<Multi_key> <percent> <n> <i> <C> : "𝐶" U1D436    # MATHEMATICAL ITALIC CAPITAL C
-<Multi_key> <percent> <n> <i> <D> : "𝐷" U1D437    # MATHEMATICAL ITALIC CAPITAL D
-<Multi_key> <percent> <n> <i> <E> : "𝐸" U1D438    # MATHEMATICAL ITALIC CAPITAL E
-<Multi_key> <percent> <n> <i> <F> : "𝐹" U1D439    # MATHEMATICAL ITALIC CAPITAL F
-<Multi_key> <percent> <n> <i> <G> : "𝐺" U1D43A    # MATHEMATICAL ITALIC CAPITAL G
-<Multi_key> <percent> <n> <i> <H> : "𝐻" U1D43B    # MATHEMATICAL ITALIC CAPITAL H
-<Multi_key> <percent> <n> <i> <I> : "𝐼" U1D43C    # MATHEMATICAL ITALIC CAPITAL I
-<Multi_key> <percent> <n> <i> <J> : "𝐽" U1D43D    # MATHEMATICAL ITALIC CAPITAL J
-<Multi_key> <percent> <n> <i> <K> : "𝐾" U1D43E    # MATHEMATICAL ITALIC CAPITAL K
-<Multi_key> <percent> <n> <i> <L> : "𝐿" U1D43F    # MATHEMATICAL ITALIC CAPITAL L
-<Multi_key> <percent> <n> <i> <M> : "𝑀" U1D440    # MATHEMATICAL ITALIC CAPITAL M
-<Multi_key> <percent> <n> <i> <N> : "𝑁" U1D441    # MATHEMATICAL ITALIC CAPITAL N
-<Multi_key> <percent> <n> <i> <O> : "𝑂" U1D442    # MATHEMATICAL ITALIC CAPITAL O
-<Multi_key> <percent> <n> <i> <P> : "𝑃" U1D443    # MATHEMATICAL ITALIC CAPITAL P
-<Multi_key> <percent> <n> <i> <Q> : "𝑄" U1D444    # MATHEMATICAL ITALIC CAPITAL Q
-<Multi_key> <percent> <n> <i> <R> : "𝑅" U1D445    # MATHEMATICAL ITALIC CAPITAL R
-<Multi_key> <percent> <n> <i> <S> : "𝑆" U1D446    # MATHEMATICAL ITALIC CAPITAL S
-<Multi_key> <percent> <n> <i> <T> : "𝑇" U1D447    # MATHEMATICAL ITALIC CAPITAL T
-<Multi_key> <percent> <n> <i> <U> : "𝑈" U1D448    # MATHEMATICAL ITALIC CAPITAL U
-<Multi_key> <percent> <n> <i> <V> : "𝑉" U1D449    # MATHEMATICAL ITALIC CAPITAL V
-<Multi_key> <percent> <n> <i> <W> : "𝑊" U1D44A    # MATHEMATICAL ITALIC CAPITAL W
-<Multi_key> <percent> <n> <i> <X> : "𝑋" U1D44B    # MATHEMATICAL ITALIC CAPITAL X
-<Multi_key> <percent> <n> <i> <Y> : "𝑌" U1D44C    # MATHEMATICAL ITALIC CAPITAL Y
-<Multi_key> <percent> <n> <i> <Z> : "𝑍" U1D44D    # MATHEMATICAL ITALIC CAPITAL Z
-<Multi_key> <percent> <n> <i> <a> : "𝑎" U1D44E    # MATHEMATICAL ITALIC SMALL A
-<Multi_key> <percent> <n> <i> <b> : "𝑏" U1D44F    # MATHEMATICAL ITALIC SMALL B
-<Multi_key> <percent> <n> <i> <c> : "𝑐" U1D450    # MATHEMATICAL ITALIC SMALL C
-<Multi_key> <percent> <n> <i> <d> : "𝑑" U1D451    # MATHEMATICAL ITALIC SMALL D
-<Multi_key> <percent> <n> <i> <e> : "𝑒" U1D452    # MATHEMATICAL ITALIC SMALL E
-<Multi_key> <percent> <n> <i> <f> : "𝑓" U1D453    # MATHEMATICAL ITALIC SMALL F
-<Multi_key> <percent> <n> <i> <g> : "𝑔" U1D454    # MATHEMATICAL ITALIC SMALL G
-<Multi_key> <percent> <n> <i> <h> : "ℎ" U0210E    # PLANCK CONSTANT
-<Multi_key> <percent> <n> <i> <i> : "𝑖" U1D456    # MATHEMATICAL ITALIC SMALL I
-<Multi_key> <percent> <n> <i> <j> : "𝑗" U1D457    # MATHEMATICAL ITALIC SMALL J
-<Multi_key> <percent> <n> <i> <k> : "𝑘" U1D458    # MATHEMATICAL ITALIC SMALL K
-<Multi_key> <percent> <n> <i> <l> : "𝑙" U1D459    # MATHEMATICAL ITALIC SMALL L
-<Multi_key> <percent> <n> <i> <m> : "𝑚" U1D45A    # MATHEMATICAL ITALIC SMALL M
-<Multi_key> <percent> <n> <i> <n> : "𝑛" U1D45B    # MATHEMATICAL ITALIC SMALL N
-<Multi_key> <percent> <n> <i> <o> : "𝑜" U1D45C    # MATHEMATICAL ITALIC SMALL O
-<Multi_key> <percent> <n> <i> <p> : "𝑝" U1D45D    # MATHEMATICAL ITALIC SMALL P
-<Multi_key> <percent> <n> <i> <q> : "𝑞" U1D45E    # MATHEMATICAL ITALIC SMALL Q
-<Multi_key> <percent> <n> <i> <r> : "𝑟" U1D45F    # MATHEMATICAL ITALIC SMALL R
-<Multi_key> <percent> <n> <i> <s> : "𝑠" U1D460    # MATHEMATICAL ITALIC SMALL S
-<Multi_key> <percent> <n> <i> <t> : "𝑡" U1D461    # MATHEMATICAL ITALIC SMALL T
-<Multi_key> <percent> <n> <i> <u> : "𝑢" U1D462    # MATHEMATICAL ITALIC SMALL U
-<Multi_key> <percent> <n> <i> <v> : "𝑣" U1D463    # MATHEMATICAL ITALIC SMALL V
-<Multi_key> <percent> <n> <i> <w> : "𝑤" U1D464    # MATHEMATICAL ITALIC SMALL W
-<Multi_key> <percent> <n> <i> <x> : "𝑥" U1D465    # MATHEMATICAL ITALIC SMALL X
-<Multi_key> <percent> <n> <i> <y> : "𝑦" U1D466    # MATHEMATICAL ITALIC SMALL Y
-<Multi_key> <percent> <n> <i> <z> : "𝑧" U1D467    # MATHEMATICAL ITALIC SMALL Z
+<Multi_key> <percent> <n> <slash> <A> : "𝐴" U1D434    # MATHEMATICAL ITALIC CAPITAL A
+<Multi_key> <percent> <n> <slash> <B> : "𝐵" U1D435    # MATHEMATICAL ITALIC CAPITAL B
+<Multi_key> <percent> <n> <slash> <C> : "𝐶" U1D436    # MATHEMATICAL ITALIC CAPITAL C
+<Multi_key> <percent> <n> <slash> <D> : "𝐷" U1D437    # MATHEMATICAL ITALIC CAPITAL D
+<Multi_key> <percent> <n> <slash> <E> : "𝐸" U1D438    # MATHEMATICAL ITALIC CAPITAL E
+<Multi_key> <percent> <n> <slash> <F> : "𝐹" U1D439    # MATHEMATICAL ITALIC CAPITAL F
+<Multi_key> <percent> <n> <slash> <G> : "𝐺" U1D43A    # MATHEMATICAL ITALIC CAPITAL G
+<Multi_key> <percent> <n> <slash> <H> : "𝐻" U1D43B    # MATHEMATICAL ITALIC CAPITAL H
+<Multi_key> <percent> <n> <slash> <I> : "𝐼" U1D43C    # MATHEMATICAL ITALIC CAPITAL I
+<Multi_key> <percent> <n> <slash> <J> : "𝐽" U1D43D    # MATHEMATICAL ITALIC CAPITAL J
+<Multi_key> <percent> <n> <slash> <K> : "𝐾" U1D43E    # MATHEMATICAL ITALIC CAPITAL K
+<Multi_key> <percent> <n> <slash> <L> : "𝐿" U1D43F    # MATHEMATICAL ITALIC CAPITAL L
+<Multi_key> <percent> <n> <slash> <M> : "𝑀" U1D440    # MATHEMATICAL ITALIC CAPITAL M
+<Multi_key> <percent> <n> <slash> <N> : "𝑁" U1D441    # MATHEMATICAL ITALIC CAPITAL N
+<Multi_key> <percent> <n> <slash> <O> : "𝑂" U1D442    # MATHEMATICAL ITALIC CAPITAL O
+<Multi_key> <percent> <n> <slash> <P> : "𝑃" U1D443    # MATHEMATICAL ITALIC CAPITAL P
+<Multi_key> <percent> <n> <slash> <Q> : "𝑄" U1D444    # MATHEMATICAL ITALIC CAPITAL Q
+<Multi_key> <percent> <n> <slash> <R> : "𝑅" U1D445    # MATHEMATICAL ITALIC CAPITAL R
+<Multi_key> <percent> <n> <slash> <S> : "𝑆" U1D446    # MATHEMATICAL ITALIC CAPITAL S
+<Multi_key> <percent> <n> <slash> <T> : "𝑇" U1D447    # MATHEMATICAL ITALIC CAPITAL T
+<Multi_key> <percent> <n> <slash> <U> : "𝑈" U1D448    # MATHEMATICAL ITALIC CAPITAL U
+<Multi_key> <percent> <n> <slash> <V> : "𝑉" U1D449    # MATHEMATICAL ITALIC CAPITAL V
+<Multi_key> <percent> <n> <slash> <W> : "𝑊" U1D44A    # MATHEMATICAL ITALIC CAPITAL W
+<Multi_key> <percent> <n> <slash> <X> : "𝑋" U1D44B    # MATHEMATICAL ITALIC CAPITAL X
+<Multi_key> <percent> <n> <slash> <Y> : "𝑌" U1D44C    # MATHEMATICAL ITALIC CAPITAL Y
+<Multi_key> <percent> <n> <slash> <Z> : "𝑍" U1D44D    # MATHEMATICAL ITALIC CAPITAL Z
+<Multi_key> <percent> <n> <slash> <a> : "𝑎" U1D44E    # MATHEMATICAL ITALIC SMALL A
+<Multi_key> <percent> <n> <slash> <b> : "𝑏" U1D44F    # MATHEMATICAL ITALIC SMALL B
+<Multi_key> <percent> <n> <slash> <c> : "𝑐" U1D450    # MATHEMATICAL ITALIC SMALL C
+<Multi_key> <percent> <n> <slash> <d> : "𝑑" U1D451    # MATHEMATICAL ITALIC SMALL D
+<Multi_key> <percent> <n> <slash> <e> : "𝑒" U1D452    # MATHEMATICAL ITALIC SMALL E
+<Multi_key> <percent> <n> <slash> <f> : "𝑓" U1D453    # MATHEMATICAL ITALIC SMALL F
+<Multi_key> <percent> <n> <slash> <g> : "𝑔" U1D454    # MATHEMATICAL ITALIC SMALL G
+<Multi_key> <percent> <n> <slash> <h> : "ℎ" U0210E    # PLANCK CONSTANT
+<Multi_key> <percent> <n> <slash> <i> : "𝑖" U1D456    # MATHEMATICAL ITALIC SMALL I
+<Multi_key> <percent> <n> <slash> <j> : "𝑗" U1D457    # MATHEMATICAL ITALIC SMALL J
+<Multi_key> <percent> <n> <slash> <k> : "𝑘" U1D458    # MATHEMATICAL ITALIC SMALL K
+<Multi_key> <percent> <n> <slash> <l> : "𝑙" U1D459    # MATHEMATICAL ITALIC SMALL L
+<Multi_key> <percent> <n> <slash> <m> : "𝑚" U1D45A    # MATHEMATICAL ITALIC SMALL M
+<Multi_key> <percent> <n> <slash> <n> : "𝑛" U1D45B    # MATHEMATICAL ITALIC SMALL N
+<Multi_key> <percent> <n> <slash> <o> : "𝑜" U1D45C    # MATHEMATICAL ITALIC SMALL O
+<Multi_key> <percent> <n> <slash> <p> : "𝑝" U1D45D    # MATHEMATICAL ITALIC SMALL P
+<Multi_key> <percent> <n> <slash> <q> : "𝑞" U1D45E    # MATHEMATICAL ITALIC SMALL Q
+<Multi_key> <percent> <n> <slash> <r> : "𝑟" U1D45F    # MATHEMATICAL ITALIC SMALL R
+<Multi_key> <percent> <n> <slash> <s> : "𝑠" U1D460    # MATHEMATICAL ITALIC SMALL S
+<Multi_key> <percent> <n> <slash> <t> : "𝑡" U1D461    # MATHEMATICAL ITALIC SMALL T
+<Multi_key> <percent> <n> <slash> <u> : "𝑢" U1D462    # MATHEMATICAL ITALIC SMALL U
+<Multi_key> <percent> <n> <slash> <v> : "𝑣" U1D463    # MATHEMATICAL ITALIC SMALL V
+<Multi_key> <percent> <n> <slash> <w> : "𝑤" U1D464    # MATHEMATICAL ITALIC SMALL W
+<Multi_key> <percent> <n> <slash> <x> : "𝑥" U1D465    # MATHEMATICAL ITALIC SMALL X
+<Multi_key> <percent> <n> <slash> <y> : "𝑦" U1D466    # MATHEMATICAL ITALIC SMALL Y
+<Multi_key> <percent> <n> <slash> <z> : "𝑧" U1D467    # MATHEMATICAL ITALIC SMALL Z
 
-<Multi_key> <percent> <n> <B> <A> : "𝑨" U1D468    # MATHEMATICAL BOLD ITALIC CAPITAL A
-<Multi_key> <percent> <n> <B> <B> : "𝑩" U1D469    # MATHEMATICAL BOLD ITALIC CAPITAL B
-<Multi_key> <percent> <n> <B> <C> : "𝑪" U1D46A    # MATHEMATICAL BOLD ITALIC CAPITAL C
-<Multi_key> <percent> <n> <B> <D> : "𝑫" U1D46B    # MATHEMATICAL BOLD ITALIC CAPITAL D
-<Multi_key> <percent> <n> <B> <E> : "𝑬" U1D46C    # MATHEMATICAL BOLD ITALIC CAPITAL E
-<Multi_key> <percent> <n> <B> <F> : "𝑭" U1D46D    # MATHEMATICAL BOLD ITALIC CAPITAL F
-<Multi_key> <percent> <n> <B> <G> : "𝑮" U1D46E    # MATHEMATICAL BOLD ITALIC CAPITAL G
-<Multi_key> <percent> <n> <B> <H> : "𝑯" U1D46F    # MATHEMATICAL BOLD ITALIC CAPITAL H
-<Multi_key> <percent> <n> <B> <I> : "𝑰" U1D470    # MATHEMATICAL BOLD ITALIC CAPITAL I
-<Multi_key> <percent> <n> <B> <J> : "𝑱" U1D471    # MATHEMATICAL BOLD ITALIC CAPITAL J
-<Multi_key> <percent> <n> <B> <K> : "𝑲" U1D472    # MATHEMATICAL BOLD ITALIC CAPITAL K
-<Multi_key> <percent> <n> <B> <L> : "𝑳" U1D473    # MATHEMATICAL BOLD ITALIC CAPITAL L
-<Multi_key> <percent> <n> <B> <M> : "𝑴" U1D474    # MATHEMATICAL BOLD ITALIC CAPITAL M
-<Multi_key> <percent> <n> <B> <N> : "𝑵" U1D475    # MATHEMATICAL BOLD ITALIC CAPITAL N
-<Multi_key> <percent> <n> <B> <O> : "𝑶" U1D476    # MATHEMATICAL BOLD ITALIC CAPITAL O
-<Multi_key> <percent> <n> <B> <P> : "𝑷" U1D477    # MATHEMATICAL BOLD ITALIC CAPITAL P
-<Multi_key> <percent> <n> <B> <Q> : "𝑸" U1D478    # MATHEMATICAL BOLD ITALIC CAPITAL Q
-<Multi_key> <percent> <n> <B> <R> : "𝑹" U1D479    # MATHEMATICAL BOLD ITALIC CAPITAL R
-<Multi_key> <percent> <n> <B> <S> : "𝑺" U1D47A    # MATHEMATICAL BOLD ITALIC CAPITAL S
-<Multi_key> <percent> <n> <B> <T> : "𝑻" U1D47B    # MATHEMATICAL BOLD ITALIC CAPITAL T
-<Multi_key> <percent> <n> <B> <U> : "𝑼" U1D47C    # MATHEMATICAL BOLD ITALIC CAPITAL U
-<Multi_key> <percent> <n> <B> <V> : "𝑽" U1D47D    # MATHEMATICAL BOLD ITALIC CAPITAL V
-<Multi_key> <percent> <n> <B> <W> : "𝑾" U1D47E    # MATHEMATICAL BOLD ITALIC CAPITAL W
-<Multi_key> <percent> <n> <B> <X> : "𝑿" U1D47F    # MATHEMATICAL BOLD ITALIC CAPITAL X
-<Multi_key> <percent> <n> <B> <Y> : "𝒀" U1D480    # MATHEMATICAL BOLD ITALIC CAPITAL Y
-<Multi_key> <percent> <n> <B> <Z> : "𝒁" U1D481    # MATHEMATICAL BOLD ITALIC CAPITAL Z
-<Multi_key> <percent> <n> <B> <a> : "𝒂" U1D482    # MATHEMATICAL BOLD ITALIC SMALL A
-<Multi_key> <percent> <n> <B> <b> : "𝒃" U1D483    # MATHEMATICAL BOLD ITALIC SMALL B
-<Multi_key> <percent> <n> <B> <c> : "𝒄" U1D484    # MATHEMATICAL BOLD ITALIC SMALL C
-<Multi_key> <percent> <n> <B> <d> : "𝒅" U1D485    # MATHEMATICAL BOLD ITALIC SMALL D
-<Multi_key> <percent> <n> <B> <e> : "𝒆" U1D486    # MATHEMATICAL BOLD ITALIC SMALL E
-<Multi_key> <percent> <n> <B> <f> : "𝒇" U1D487    # MATHEMATICAL BOLD ITALIC SMALL F
-<Multi_key> <percent> <n> <B> <g> : "𝒈" U1D488    # MATHEMATICAL BOLD ITALIC SMALL G
-<Multi_key> <percent> <n> <B> <h> : "𝒉" U1D489    # MATHEMATICAL BOLD ITALIC SMALL H
-<Multi_key> <percent> <n> <B> <i> : "𝒊" U1D48A    # MATHEMATICAL BOLD ITALIC SMALL I
-<Multi_key> <percent> <n> <B> <j> : "𝒋" U1D48B    # MATHEMATICAL BOLD ITALIC SMALL J
-<Multi_key> <percent> <n> <B> <k> : "𝒌" U1D48C    # MATHEMATICAL BOLD ITALIC SMALL K
-<Multi_key> <percent> <n> <B> <l> : "𝒍" U1D48D    # MATHEMATICAL BOLD ITALIC SMALL L
-<Multi_key> <percent> <n> <B> <m> : "𝒎" U1D48E    # MATHEMATICAL BOLD ITALIC SMALL M
-<Multi_key> <percent> <n> <B> <n> : "𝒏" U1D48F    # MATHEMATICAL BOLD ITALIC SMALL N
-<Multi_key> <percent> <n> <B> <o> : "𝒐" U1D490    # MATHEMATICAL BOLD ITALIC SMALL O
-<Multi_key> <percent> <n> <B> <p> : "𝒑" U1D491    # MATHEMATICAL BOLD ITALIC SMALL P
-<Multi_key> <percent> <n> <B> <q> : "𝒒" U1D492    # MATHEMATICAL BOLD ITALIC SMALL Q
-<Multi_key> <percent> <n> <B> <r> : "𝒓" U1D493    # MATHEMATICAL BOLD ITALIC SMALL R
-<Multi_key> <percent> <n> <B> <s> : "𝒔" U1D494    # MATHEMATICAL BOLD ITALIC SMALL S
-<Multi_key> <percent> <n> <B> <t> : "𝒕" U1D495    # MATHEMATICAL BOLD ITALIC SMALL T
-<Multi_key> <percent> <n> <B> <u> : "𝒖" U1D496    # MATHEMATICAL BOLD ITALIC SMALL U
-<Multi_key> <percent> <n> <B> <v> : "𝒗" U1D497    # MATHEMATICAL BOLD ITALIC SMALL V
-<Multi_key> <percent> <n> <B> <w> : "𝒘" U1D498    # MATHEMATICAL BOLD ITALIC SMALL W
-<Multi_key> <percent> <n> <B> <x> : "𝒙" U1D499    # MATHEMATICAL BOLD ITALIC SMALL X
-<Multi_key> <percent> <n> <B> <y> : "𝒚" U1D49A    # MATHEMATICAL BOLD ITALIC SMALL Y
-<Multi_key> <percent> <n> <B> <z> : "𝒛" U1D49B    # MATHEMATICAL BOLD ITALIC SMALL Z
+<Multi_key> <percent> <n> <asterisk> <slash> <A> : "𝑨" U1D468    # MATHEMATICAL BOLD ITALIC CAPITAL A
+<Multi_key> <percent> <n> <asterisk> <slash> <B> : "𝑩" U1D469    # MATHEMATICAL BOLD ITALIC CAPITAL B
+<Multi_key> <percent> <n> <asterisk> <slash> <C> : "𝑪" U1D46A    # MATHEMATICAL BOLD ITALIC CAPITAL C
+<Multi_key> <percent> <n> <asterisk> <slash> <D> : "𝑫" U1D46B    # MATHEMATICAL BOLD ITALIC CAPITAL D
+<Multi_key> <percent> <n> <asterisk> <slash> <E> : "𝑬" U1D46C    # MATHEMATICAL BOLD ITALIC CAPITAL E
+<Multi_key> <percent> <n> <asterisk> <slash> <F> : "𝑭" U1D46D    # MATHEMATICAL BOLD ITALIC CAPITAL F
+<Multi_key> <percent> <n> <asterisk> <slash> <G> : "𝑮" U1D46E    # MATHEMATICAL BOLD ITALIC CAPITAL G
+<Multi_key> <percent> <n> <asterisk> <slash> <H> : "𝑯" U1D46F    # MATHEMATICAL BOLD ITALIC CAPITAL H
+<Multi_key> <percent> <n> <asterisk> <slash> <I> : "𝑰" U1D470    # MATHEMATICAL BOLD ITALIC CAPITAL I
+<Multi_key> <percent> <n> <asterisk> <slash> <J> : "𝑱" U1D471    # MATHEMATICAL BOLD ITALIC CAPITAL J
+<Multi_key> <percent> <n> <asterisk> <slash> <K> : "𝑲" U1D472    # MATHEMATICAL BOLD ITALIC CAPITAL K
+<Multi_key> <percent> <n> <asterisk> <slash> <L> : "𝑳" U1D473    # MATHEMATICAL BOLD ITALIC CAPITAL L
+<Multi_key> <percent> <n> <asterisk> <slash> <M> : "𝑴" U1D474    # MATHEMATICAL BOLD ITALIC CAPITAL M
+<Multi_key> <percent> <n> <asterisk> <slash> <N> : "𝑵" U1D475    # MATHEMATICAL BOLD ITALIC CAPITAL N
+<Multi_key> <percent> <n> <asterisk> <slash> <O> : "𝑶" U1D476    # MATHEMATICAL BOLD ITALIC CAPITAL O
+<Multi_key> <percent> <n> <asterisk> <slash> <P> : "𝑷" U1D477    # MATHEMATICAL BOLD ITALIC CAPITAL P
+<Multi_key> <percent> <n> <asterisk> <slash> <Q> : "𝑸" U1D478    # MATHEMATICAL BOLD ITALIC CAPITAL Q
+<Multi_key> <percent> <n> <asterisk> <slash> <R> : "𝑹" U1D479    # MATHEMATICAL BOLD ITALIC CAPITAL R
+<Multi_key> <percent> <n> <asterisk> <slash> <S> : "𝑺" U1D47A    # MATHEMATICAL BOLD ITALIC CAPITAL S
+<Multi_key> <percent> <n> <asterisk> <slash> <T> : "𝑻" U1D47B    # MATHEMATICAL BOLD ITALIC CAPITAL T
+<Multi_key> <percent> <n> <asterisk> <slash> <U> : "𝑼" U1D47C    # MATHEMATICAL BOLD ITALIC CAPITAL U
+<Multi_key> <percent> <n> <asterisk> <slash> <V> : "𝑽" U1D47D    # MATHEMATICAL BOLD ITALIC CAPITAL V
+<Multi_key> <percent> <n> <asterisk> <slash> <W> : "𝑾" U1D47E    # MATHEMATICAL BOLD ITALIC CAPITAL W
+<Multi_key> <percent> <n> <asterisk> <slash> <X> : "𝑿" U1D47F    # MATHEMATICAL BOLD ITALIC CAPITAL X
+<Multi_key> <percent> <n> <asterisk> <slash> <Y> : "𝒀" U1D480    # MATHEMATICAL BOLD ITALIC CAPITAL Y
+<Multi_key> <percent> <n> <asterisk> <slash> <Z> : "𝒁" U1D481    # MATHEMATICAL BOLD ITALIC CAPITAL Z
+<Multi_key> <percent> <n> <asterisk> <slash> <a> : "𝒂" U1D482    # MATHEMATICAL BOLD ITALIC SMALL A
+<Multi_key> <percent> <n> <asterisk> <slash> <b> : "𝒃" U1D483    # MATHEMATICAL BOLD ITALIC SMALL B
+<Multi_key> <percent> <n> <asterisk> <slash> <c> : "𝒄" U1D484    # MATHEMATICAL BOLD ITALIC SMALL C
+<Multi_key> <percent> <n> <asterisk> <slash> <d> : "𝒅" U1D485    # MATHEMATICAL BOLD ITALIC SMALL D
+<Multi_key> <percent> <n> <asterisk> <slash> <e> : "𝒆" U1D486    # MATHEMATICAL BOLD ITALIC SMALL E
+<Multi_key> <percent> <n> <asterisk> <slash> <f> : "𝒇" U1D487    # MATHEMATICAL BOLD ITALIC SMALL F
+<Multi_key> <percent> <n> <asterisk> <slash> <g> : "𝒈" U1D488    # MATHEMATICAL BOLD ITALIC SMALL G
+<Multi_key> <percent> <n> <asterisk> <slash> <h> : "𝒉" U1D489    # MATHEMATICAL BOLD ITALIC SMALL H
+<Multi_key> <percent> <n> <asterisk> <slash> <i> : "𝒊" U1D48A    # MATHEMATICAL BOLD ITALIC SMALL I
+<Multi_key> <percent> <n> <asterisk> <slash> <j> : "𝒋" U1D48B    # MATHEMATICAL BOLD ITALIC SMALL J
+<Multi_key> <percent> <n> <asterisk> <slash> <k> : "𝒌" U1D48C    # MATHEMATICAL BOLD ITALIC SMALL K
+<Multi_key> <percent> <n> <asterisk> <slash> <l> : "𝒍" U1D48D    # MATHEMATICAL BOLD ITALIC SMALL L
+<Multi_key> <percent> <n> <asterisk> <slash> <m> : "𝒎" U1D48E    # MATHEMATICAL BOLD ITALIC SMALL M
+<Multi_key> <percent> <n> <asterisk> <slash> <n> : "𝒏" U1D48F    # MATHEMATICAL BOLD ITALIC SMALL N
+<Multi_key> <percent> <n> <asterisk> <slash> <o> : "𝒐" U1D490    # MATHEMATICAL BOLD ITALIC SMALL O
+<Multi_key> <percent> <n> <asterisk> <slash> <p> : "𝒑" U1D491    # MATHEMATICAL BOLD ITALIC SMALL P
+<Multi_key> <percent> <n> <asterisk> <slash> <q> : "𝒒" U1D492    # MATHEMATICAL BOLD ITALIC SMALL Q
+<Multi_key> <percent> <n> <asterisk> <slash> <r> : "𝒓" U1D493    # MATHEMATICAL BOLD ITALIC SMALL R
+<Multi_key> <percent> <n> <asterisk> <slash> <s> : "𝒔" U1D494    # MATHEMATICAL BOLD ITALIC SMALL S
+<Multi_key> <percent> <n> <asterisk> <slash> <t> : "𝒕" U1D495    # MATHEMATICAL BOLD ITALIC SMALL T
+<Multi_key> <percent> <n> <asterisk> <slash> <u> : "𝒖" U1D496    # MATHEMATICAL BOLD ITALIC SMALL U
+<Multi_key> <percent> <n> <asterisk> <slash> <v> : "𝒗" U1D497    # MATHEMATICAL BOLD ITALIC SMALL V
+<Multi_key> <percent> <n> <asterisk> <slash> <w> : "𝒘" U1D498    # MATHEMATICAL BOLD ITALIC SMALL W
+<Multi_key> <percent> <n> <asterisk> <slash> <x> : "𝒙" U1D499    # MATHEMATICAL BOLD ITALIC SMALL X
+<Multi_key> <percent> <n> <asterisk> <slash> <y> : "𝒚" U1D49A    # MATHEMATICAL BOLD ITALIC SMALL Y
+<Multi_key> <percent> <n> <asterisk> <slash> <z> : "𝒛" U1D49B    # MATHEMATICAL BOLD ITALIC SMALL Z
 
-<Multi_key> <percent> <s> <n> <A> : "𝖠" U1D5A0    # MATHEMATICAL SANS-SERIF CAPITAL A
-<Multi_key> <percent> <s> <n> <B> : "𝖡" U1D5A1    # MATHEMATICAL SANS-SERIF CAPITAL B
-<Multi_key> <percent> <s> <n> <C> : "𝖢" U1D5A2    # MATHEMATICAL SANS-SERIF CAPITAL C
-<Multi_key> <percent> <s> <n> <D> : "𝖣" U1D5A3    # MATHEMATICAL SANS-SERIF CAPITAL D
-<Multi_key> <percent> <s> <n> <E> : "𝖤" U1D5A4    # MATHEMATICAL SANS-SERIF CAPITAL E
-<Multi_key> <percent> <s> <n> <F> : "𝖥" U1D5A5    # MATHEMATICAL SANS-SERIF CAPITAL F
-<Multi_key> <percent> <s> <n> <G> : "𝖦" U1D5A6    # MATHEMATICAL SANS-SERIF CAPITAL G
-<Multi_key> <percent> <s> <n> <H> : "𝖧" U1D5A7    # MATHEMATICAL SANS-SERIF CAPITAL H
-<Multi_key> <percent> <s> <n> <I> : "𝖨" U1D5A8    # MATHEMATICAL SANS-SERIF CAPITAL I
-<Multi_key> <percent> <s> <n> <J> : "𝖩" U1D5A9    # MATHEMATICAL SANS-SERIF CAPITAL J
-<Multi_key> <percent> <s> <n> <K> : "𝖪" U1D5AA    # MATHEMATICAL SANS-SERIF CAPITAL K
-<Multi_key> <percent> <s> <n> <L> : "𝖫" U1D5AB    # MATHEMATICAL SANS-SERIF CAPITAL L
-<Multi_key> <percent> <s> <n> <M> : "𝖬" U1D5AC    # MATHEMATICAL SANS-SERIF CAPITAL M
-<Multi_key> <percent> <s> <n> <N> : "𝖭" U1D5AD    # MATHEMATICAL SANS-SERIF CAPITAL N
-<Multi_key> <percent> <s> <n> <O> : "𝖮" U1D5AE    # MATHEMATICAL SANS-SERIF CAPITAL O
-<Multi_key> <percent> <s> <n> <P> : "𝖯" U1D5AF    # MATHEMATICAL SANS-SERIF CAPITAL P
-<Multi_key> <percent> <s> <n> <Q> : "𝖰" U1D5B0    # MATHEMATICAL SANS-SERIF CAPITAL Q
-<Multi_key> <percent> <s> <n> <R> : "𝖱" U1D5B1    # MATHEMATICAL SANS-SERIF CAPITAL R
-<Multi_key> <percent> <s> <n> <S> : "𝖲" U1D5B2    # MATHEMATICAL SANS-SERIF CAPITAL S
-<Multi_key> <percent> <s> <n> <T> : "𝖳" U1D5B3    # MATHEMATICAL SANS-SERIF CAPITAL T
-<Multi_key> <percent> <s> <n> <U> : "𝖴" U1D5B4    # MATHEMATICAL SANS-SERIF CAPITAL U
-<Multi_key> <percent> <s> <n> <V> : "𝖵" U1D5B5    # MATHEMATICAL SANS-SERIF CAPITAL V
-<Multi_key> <percent> <s> <n> <W> : "𝖶" U1D5B6    # MATHEMATICAL SANS-SERIF CAPITAL W
-<Multi_key> <percent> <s> <n> <X> : "𝖷" U1D5B7    # MATHEMATICAL SANS-SERIF CAPITAL X
-<Multi_key> <percent> <s> <n> <Y> : "𝖸" U1D5B8    # MATHEMATICAL SANS-SERIF CAPITAL Y
-<Multi_key> <percent> <s> <n> <Z> : "𝖹" U1D5B9    # MATHEMATICAL SANS-SERIF CAPITAL Z
-<Multi_key> <percent> <s> <n> <a> : "𝖺" U1D5BA    # MATHEMATICAL SANS-SERIF SMALL A
-<Multi_key> <percent> <s> <n> <b> : "𝖻" U1D5BB    # MATHEMATICAL SANS-SERIF SMALL B
-<Multi_key> <percent> <s> <n> <c> : "𝖼" U1D5BC    # MATHEMATICAL SANS-SERIF SMALL C
-<Multi_key> <percent> <s> <n> <d> : "𝖽" U1D5BD    # MATHEMATICAL SANS-SERIF SMALL D
-<Multi_key> <percent> <s> <n> <e> : "𝖾" U1D5BE    # MATHEMATICAL SANS-SERIF SMALL E
-<Multi_key> <percent> <s> <n> <f> : "𝖿" U1D5BF    # MATHEMATICAL SANS-SERIF SMALL F
-<Multi_key> <percent> <s> <n> <g> : "𝗀" U1D5C0    # MATHEMATICAL SANS-SERIF SMALL G
-<Multi_key> <percent> <s> <n> <h> : "𝗁" U1D5C1    # MATHEMATICAL SANS-SERIF SMALL H
-<Multi_key> <percent> <s> <n> <i> : "𝗂" U1D5C2    # MATHEMATICAL SANS-SERIF SMALL I
-<Multi_key> <percent> <s> <n> <j> : "𝗃" U1D5C3    # MATHEMATICAL SANS-SERIF SMALL J
-<Multi_key> <percent> <s> <n> <k> : "𝗄" U1D5C4    # MATHEMATICAL SANS-SERIF SMALL K
-<Multi_key> <percent> <s> <n> <l> : "𝗅" U1D5C5    # MATHEMATICAL SANS-SERIF SMALL L
-<Multi_key> <percent> <s> <n> <m> : "𝗆" U1D5C6    # MATHEMATICAL SANS-SERIF SMALL M
-<Multi_key> <percent> <s> <n> <n> : "𝗇" U1D5C7    # MATHEMATICAL SANS-SERIF SMALL N
-<Multi_key> <percent> <s> <n> <o> : "𝗈" U1D5C8    # MATHEMATICAL SANS-SERIF SMALL O
-<Multi_key> <percent> <s> <n> <p> : "𝗉" U1D5C9    # MATHEMATICAL SANS-SERIF SMALL P
-<Multi_key> <percent> <s> <n> <q> : "𝗊" U1D5CA    # MATHEMATICAL SANS-SERIF SMALL Q
-<Multi_key> <percent> <s> <n> <r> : "𝗋" U1D5CB    # MATHEMATICAL SANS-SERIF SMALL R
-<Multi_key> <percent> <s> <n> <s> : "𝗌" U1D5CC    # MATHEMATICAL SANS-SERIF SMALL S
-<Multi_key> <percent> <s> <n> <t> : "𝗍" U1D5CD    # MATHEMATICAL SANS-SERIF SMALL T
-<Multi_key> <percent> <s> <n> <u> : "𝗎" U1D5CE    # MATHEMATICAL SANS-SERIF SMALL U
-<Multi_key> <percent> <s> <n> <v> : "𝗏" U1D5CF    # MATHEMATICAL SANS-SERIF SMALL V
-<Multi_key> <percent> <s> <n> <w> : "𝗐" U1D5D0    # MATHEMATICAL SANS-SERIF SMALL W
-<Multi_key> <percent> <s> <n> <x> : "𝗑" U1D5D1    # MATHEMATICAL SANS-SERIF SMALL X
-<Multi_key> <percent> <s> <n> <y> : "𝗒" U1D5D2    # MATHEMATICAL SANS-SERIF SMALL Y
-<Multi_key> <percent> <s> <n> <z> : "𝗓" U1D5D3    # MATHEMATICAL SANS-SERIF SMALL Z
-<Multi_key> <percent> <s> <n> <0> : "𝟢" U1D7E2    # MATHEMATICAL SANS-SERIF DIGIT ZERO
-<Multi_key> <percent> <s> <n> <1> : "𝟣" U1D7E3    # MATHEMATICAL SANS-SERIF DIGIT ONE
-<Multi_key> <percent> <s> <n> <2> : "𝟤" U1D7E4    # MATHEMATICAL SANS-SERIF DIGIT TWO
-<Multi_key> <percent> <s> <n> <3> : "𝟥" U1D7E5    # MATHEMATICAL SANS-SERIF DIGIT THREE
-<Multi_key> <percent> <s> <n> <4> : "𝟦" U1D7E6    # MATHEMATICAL SANS-SERIF DIGIT FOUR
-<Multi_key> <percent> <s> <n> <5> : "𝟧" U1D7E7    # MATHEMATICAL SANS-SERIF DIGIT FIVE
-<Multi_key> <percent> <s> <n> <6> : "𝟨" U1D7E8    # MATHEMATICAL SANS-SERIF DIGIT SIX
-<Multi_key> <percent> <s> <n> <7> : "𝟩" U1D7E9    # MATHEMATICAL SANS-SERIF DIGIT SEVEN
-<Multi_key> <percent> <s> <n> <8> : "𝟪" U1D7EA    # MATHEMATICAL SANS-SERIF DIGIT EIGHT
-<Multi_key> <percent> <s> <n> <9> : "𝟫" U1D7EB    # MATHEMATICAL SANS-SERIF DIGIT NINE
+<Multi_key> <percent> <s> <A> : "𝖠" U1D5A0    # MATHEMATICAL SANS-SERIF CAPITAL A
+<Multi_key> <percent> <s> <B> : "𝖡" U1D5A1    # MATHEMATICAL SANS-SERIF CAPITAL B
+<Multi_key> <percent> <s> <C> : "𝖢" U1D5A2    # MATHEMATICAL SANS-SERIF CAPITAL C
+<Multi_key> <percent> <s> <D> : "𝖣" U1D5A3    # MATHEMATICAL SANS-SERIF CAPITAL D
+<Multi_key> <percent> <s> <E> : "𝖤" U1D5A4    # MATHEMATICAL SANS-SERIF CAPITAL E
+<Multi_key> <percent> <s> <F> : "𝖥" U1D5A5    # MATHEMATICAL SANS-SERIF CAPITAL F
+<Multi_key> <percent> <s> <G> : "𝖦" U1D5A6    # MATHEMATICAL SANS-SERIF CAPITAL G
+<Multi_key> <percent> <s> <H> : "𝖧" U1D5A7    # MATHEMATICAL SANS-SERIF CAPITAL H
+<Multi_key> <percent> <s> <I> : "𝖨" U1D5A8    # MATHEMATICAL SANS-SERIF CAPITAL I
+<Multi_key> <percent> <s> <J> : "𝖩" U1D5A9    # MATHEMATICAL SANS-SERIF CAPITAL J
+<Multi_key> <percent> <s> <K> : "𝖪" U1D5AA    # MATHEMATICAL SANS-SERIF CAPITAL K
+<Multi_key> <percent> <s> <L> : "𝖫" U1D5AB    # MATHEMATICAL SANS-SERIF CAPITAL L
+<Multi_key> <percent> <s> <M> : "𝖬" U1D5AC    # MATHEMATICAL SANS-SERIF CAPITAL M
+<Multi_key> <percent> <s> <N> : "𝖭" U1D5AD    # MATHEMATICAL SANS-SERIF CAPITAL N
+<Multi_key> <percent> <s> <O> : "𝖮" U1D5AE    # MATHEMATICAL SANS-SERIF CAPITAL O
+<Multi_key> <percent> <s> <P> : "𝖯" U1D5AF    # MATHEMATICAL SANS-SERIF CAPITAL P
+<Multi_key> <percent> <s> <Q> : "𝖰" U1D5B0    # MATHEMATICAL SANS-SERIF CAPITAL Q
+<Multi_key> <percent> <s> <R> : "𝖱" U1D5B1    # MATHEMATICAL SANS-SERIF CAPITAL R
+<Multi_key> <percent> <s> <S> : "𝖲" U1D5B2    # MATHEMATICAL SANS-SERIF CAPITAL S
+<Multi_key> <percent> <s> <T> : "𝖳" U1D5B3    # MATHEMATICAL SANS-SERIF CAPITAL T
+<Multi_key> <percent> <s> <U> : "𝖴" U1D5B4    # MATHEMATICAL SANS-SERIF CAPITAL U
+<Multi_key> <percent> <s> <V> : "𝖵" U1D5B5    # MATHEMATICAL SANS-SERIF CAPITAL V
+<Multi_key> <percent> <s> <W> : "𝖶" U1D5B6    # MATHEMATICAL SANS-SERIF CAPITAL W
+<Multi_key> <percent> <s> <X> : "𝖷" U1D5B7    # MATHEMATICAL SANS-SERIF CAPITAL X
+<Multi_key> <percent> <s> <Y> : "𝖸" U1D5B8    # MATHEMATICAL SANS-SERIF CAPITAL Y
+<Multi_key> <percent> <s> <Z> : "𝖹" U1D5B9    # MATHEMATICAL SANS-SERIF CAPITAL Z
+<Multi_key> <percent> <s> <a> : "𝖺" U1D5BA    # MATHEMATICAL SANS-SERIF SMALL A
+<Multi_key> <percent> <s> <b> : "𝖻" U1D5BB    # MATHEMATICAL SANS-SERIF SMALL B
+<Multi_key> <percent> <s> <c> : "𝖼" U1D5BC    # MATHEMATICAL SANS-SERIF SMALL C
+<Multi_key> <percent> <s> <d> : "𝖽" U1D5BD    # MATHEMATICAL SANS-SERIF SMALL D
+<Multi_key> <percent> <s> <e> : "𝖾" U1D5BE    # MATHEMATICAL SANS-SERIF SMALL E
+<Multi_key> <percent> <s> <f> : "𝖿" U1D5BF    # MATHEMATICAL SANS-SERIF SMALL F
+<Multi_key> <percent> <s> <g> : "𝗀" U1D5C0    # MATHEMATICAL SANS-SERIF SMALL G
+<Multi_key> <percent> <s> <h> : "𝗁" U1D5C1    # MATHEMATICAL SANS-SERIF SMALL H
+<Multi_key> <percent> <s> <i> : "𝗂" U1D5C2    # MATHEMATICAL SANS-SERIF SMALL I
+<Multi_key> <percent> <s> <j> : "𝗃" U1D5C3    # MATHEMATICAL SANS-SERIF SMALL J
+<Multi_key> <percent> <s> <k> : "𝗄" U1D5C4    # MATHEMATICAL SANS-SERIF SMALL K
+<Multi_key> <percent> <s> <l> : "𝗅" U1D5C5    # MATHEMATICAL SANS-SERIF SMALL L
+<Multi_key> <percent> <s> <m> : "𝗆" U1D5C6    # MATHEMATICAL SANS-SERIF SMALL M
+<Multi_key> <percent> <s> <n> : "𝗇" U1D5C7    # MATHEMATICAL SANS-SERIF SMALL N
+<Multi_key> <percent> <s> <o> : "𝗈" U1D5C8    # MATHEMATICAL SANS-SERIF SMALL O
+<Multi_key> <percent> <s> <p> : "𝗉" U1D5C9    # MATHEMATICAL SANS-SERIF SMALL P
+<Multi_key> <percent> <s> <q> : "𝗊" U1D5CA    # MATHEMATICAL SANS-SERIF SMALL Q
+<Multi_key> <percent> <s> <r> : "𝗋" U1D5CB    # MATHEMATICAL SANS-SERIF SMALL R
+<Multi_key> <percent> <s> <s> : "𝗌" U1D5CC    # MATHEMATICAL SANS-SERIF SMALL S
+<Multi_key> <percent> <s> <t> : "𝗍" U1D5CD    # MATHEMATICAL SANS-SERIF SMALL T
+<Multi_key> <percent> <s> <u> : "𝗎" U1D5CE    # MATHEMATICAL SANS-SERIF SMALL U
+<Multi_key> <percent> <s> <v> : "𝗏" U1D5CF    # MATHEMATICAL SANS-SERIF SMALL V
+<Multi_key> <percent> <s> <w> : "𝗐" U1D5D0    # MATHEMATICAL SANS-SERIF SMALL W
+<Multi_key> <percent> <s> <x> : "𝗑" U1D5D1    # MATHEMATICAL SANS-SERIF SMALL X
+<Multi_key> <percent> <s> <y> : "𝗒" U1D5D2    # MATHEMATICAL SANS-SERIF SMALL Y
+<Multi_key> <percent> <s> <z> : "𝗓" U1D5D3    # MATHEMATICAL SANS-SERIF SMALL Z
+<Multi_key> <percent> <s> <0> : "𝟢" U1D7E2    # MATHEMATICAL SANS-SERIF DIGIT ZERO
+<Multi_key> <percent> <s> <1> : "𝟣" U1D7E3    # MATHEMATICAL SANS-SERIF DIGIT ONE
+<Multi_key> <percent> <s> <2> : "𝟤" U1D7E4    # MATHEMATICAL SANS-SERIF DIGIT TWO
+<Multi_key> <percent> <s> <3> : "𝟥" U1D7E5    # MATHEMATICAL SANS-SERIF DIGIT THREE
+<Multi_key> <percent> <s> <4> : "𝟦" U1D7E6    # MATHEMATICAL SANS-SERIF DIGIT FOUR
+<Multi_key> <percent> <s> <5> : "𝟧" U1D7E7    # MATHEMATICAL SANS-SERIF DIGIT FIVE
+<Multi_key> <percent> <s> <6> : "𝟨" U1D7E8    # MATHEMATICAL SANS-SERIF DIGIT SIX
+<Multi_key> <percent> <s> <7> : "𝟩" U1D7E9    # MATHEMATICAL SANS-SERIF DIGIT SEVEN
+<Multi_key> <percent> <s> <8> : "𝟪" U1D7EA    # MATHEMATICAL SANS-SERIF DIGIT EIGHT
+<Multi_key> <percent> <s> <9> : "𝟫" U1D7EB    # MATHEMATICAL SANS-SERIF DIGIT NINE
 
-<Multi_key> <percent> <s> <b> <A> : "𝗔" U1D5D4    # MATHEMATICAL SANS-SERIF BOLD CAPITAL A
-<Multi_key> <percent> <s> <b> <B> : "𝗕" U1D5D5    # MATHEMATICAL SANS-SERIF BOLD CAPITAL B
-<Multi_key> <percent> <s> <b> <C> : "𝗖" U1D5D6    # MATHEMATICAL SANS-SERIF BOLD CAPITAL C
-<Multi_key> <percent> <s> <b> <D> : "𝗗" U1D5D7    # MATHEMATICAL SANS-SERIF BOLD CAPITAL D
-<Multi_key> <percent> <s> <b> <E> : "𝗘" U1D5D8    # MATHEMATICAL SANS-SERIF BOLD CAPITAL E
-<Multi_key> <percent> <s> <b> <F> : "𝗙" U1D5D9    # MATHEMATICAL SANS-SERIF BOLD CAPITAL F
-<Multi_key> <percent> <s> <b> <G> : "𝗚" U1D5DA    # MATHEMATICAL SANS-SERIF BOLD CAPITAL G
-<Multi_key> <percent> <s> <b> <H> : "𝗛" U1D5DB    # MATHEMATICAL SANS-SERIF BOLD CAPITAL H
-<Multi_key> <percent> <s> <b> <I> : "𝗜" U1D5DC    # MATHEMATICAL SANS-SERIF BOLD CAPITAL I
-<Multi_key> <percent> <s> <b> <J> : "𝗝" U1D5DD    # MATHEMATICAL SANS-SERIF BOLD CAPITAL J
-<Multi_key> <percent> <s> <b> <K> : "𝗞" U1D5DE    # MATHEMATICAL SANS-SERIF BOLD CAPITAL K
-<Multi_key> <percent> <s> <b> <L> : "𝗟" U1D5DF    # MATHEMATICAL SANS-SERIF BOLD CAPITAL L
-<Multi_key> <percent> <s> <b> <M> : "𝗠" U1D5E0    # MATHEMATICAL SANS-SERIF BOLD CAPITAL M
-<Multi_key> <percent> <s> <b> <N> : "𝗡" U1D5E1    # MATHEMATICAL SANS-SERIF BOLD CAPITAL N
-<Multi_key> <percent> <s> <b> <O> : "𝗢" U1D5E2    # MATHEMATICAL SANS-SERIF BOLD CAPITAL O
-<Multi_key> <percent> <s> <b> <P> : "𝗣" U1D5E3    # MATHEMATICAL SANS-SERIF BOLD CAPITAL P
-<Multi_key> <percent> <s> <b> <Q> : "𝗤" U1D5E4    # MATHEMATICAL SANS-SERIF BOLD CAPITAL Q
-<Multi_key> <percent> <s> <b> <R> : "𝗥" U1D5E5    # MATHEMATICAL SANS-SERIF BOLD CAPITAL R
-<Multi_key> <percent> <s> <b> <S> : "𝗦" U1D5E6    # MATHEMATICAL SANS-SERIF BOLD CAPITAL S
-<Multi_key> <percent> <s> <b> <T> : "𝗧" U1D5E7    # MATHEMATICAL SANS-SERIF BOLD CAPITAL T
-<Multi_key> <percent> <s> <b> <U> : "𝗨" U1D5E8    # MATHEMATICAL SANS-SERIF BOLD CAPITAL U
-<Multi_key> <percent> <s> <b> <V> : "𝗩" U1D5E9    # MATHEMATICAL SANS-SERIF BOLD CAPITAL V
-<Multi_key> <percent> <s> <b> <W> : "𝗪" U1D5EA    # MATHEMATICAL SANS-SERIF BOLD CAPITAL W
-<Multi_key> <percent> <s> <b> <X> : "𝗫" U1D5EB    # MATHEMATICAL SANS-SERIF BOLD CAPITAL X
-<Multi_key> <percent> <s> <b> <Y> : "𝗬" U1D5EC    # MATHEMATICAL SANS-SERIF BOLD CAPITAL Y
-<Multi_key> <percent> <s> <b> <Z> : "𝗭" U1D5ED    # MATHEMATICAL SANS-SERIF BOLD CAPITAL Z
-<Multi_key> <percent> <s> <b> <a> : "𝗮" U1D5EE    # MATHEMATICAL SANS-SERIF BOLD SMALL A
-<Multi_key> <percent> <s> <b> <b> : "𝗯" U1D5EF    # MATHEMATICAL SANS-SERIF BOLD SMALL B
-<Multi_key> <percent> <s> <b> <c> : "𝗰" U1D5F0    # MATHEMATICAL SANS-SERIF BOLD SMALL C
-<Multi_key> <percent> <s> <b> <d> : "𝗱" U1D5F1    # MATHEMATICAL SANS-SERIF BOLD SMALL D
-<Multi_key> <percent> <s> <b> <e> : "𝗲" U1D5F2    # MATHEMATICAL SANS-SERIF BOLD SMALL E
-<Multi_key> <percent> <s> <b> <f> : "𝗳" U1D5F3    # MATHEMATICAL SANS-SERIF BOLD SMALL F
-<Multi_key> <percent> <s> <b> <g> : "𝗴" U1D5F4    # MATHEMATICAL SANS-SERIF BOLD SMALL G
-<Multi_key> <percent> <s> <b> <h> : "𝗵" U1D5F5    # MATHEMATICAL SANS-SERIF BOLD SMALL H
-<Multi_key> <percent> <s> <b> <i> : "𝗶" U1D5F6    # MATHEMATICAL SANS-SERIF BOLD SMALL I
-<Multi_key> <percent> <s> <b> <j> : "𝗷" U1D5F7    # MATHEMATICAL SANS-SERIF BOLD SMALL J
-<Multi_key> <percent> <s> <b> <k> : "𝗸" U1D5F8    # MATHEMATICAL SANS-SERIF BOLD SMALL K
-<Multi_key> <percent> <s> <b> <l> : "𝗹" U1D5F9    # MATHEMATICAL SANS-SERIF BOLD SMALL L
-<Multi_key> <percent> <s> <b> <m> : "𝗺" U1D5FA    # MATHEMATICAL SANS-SERIF BOLD SMALL M
-<Multi_key> <percent> <s> <b> <n> : "𝗻" U1D5FB    # MATHEMATICAL SANS-SERIF BOLD SMALL N
-<Multi_key> <percent> <s> <b> <o> : "𝗼" U1D5FC    # MATHEMATICAL SANS-SERIF BOLD SMALL O
-<Multi_key> <percent> <s> <b> <p> : "𝗽" U1D5FD    # MATHEMATICAL SANS-SERIF BOLD SMALL P
-<Multi_key> <percent> <s> <b> <q> : "𝗾" U1D5FE    # MATHEMATICAL SANS-SERIF BOLD SMALL Q
-<Multi_key> <percent> <s> <b> <r> : "𝗿" U1D5FF    # MATHEMATICAL SANS-SERIF BOLD SMALL R
-<Multi_key> <percent> <s> <b> <s> : "𝘀" U1D600    # MATHEMATICAL SANS-SERIF BOLD SMALL S
-<Multi_key> <percent> <s> <b> <t> : "𝘁" U1D601    # MATHEMATICAL SANS-SERIF BOLD SMALL T
-<Multi_key> <percent> <s> <b> <u> : "𝘂" U1D602    # MATHEMATICAL SANS-SERIF BOLD SMALL U
-<Multi_key> <percent> <s> <b> <v> : "𝘃" U1D603    # MATHEMATICAL SANS-SERIF BOLD SMALL V
-<Multi_key> <percent> <s> <b> <w> : "𝘄" U1D604    # MATHEMATICAL SANS-SERIF BOLD SMALL W
-<Multi_key> <percent> <s> <b> <x> : "𝘅" U1D605    # MATHEMATICAL SANS-SERIF BOLD SMALL X
-<Multi_key> <percent> <s> <b> <y> : "𝘆" U1D606    # MATHEMATICAL SANS-SERIF BOLD SMALL Y
-<Multi_key> <percent> <s> <b> <z> : "𝘇" U1D607    # MATHEMATICAL SANS-SERIF BOLD SMALL Z
-<Multi_key> <percent> <s> <b> <0> : "𝟬" U1D7EC    # MATHEMATICAL SANS-SERIF BOLD DIGIT ZERO
-<Multi_key> <percent> <s> <b> <1> : "𝟭" U1D7ED    # MATHEMATICAL SANS-SERIF BOLD DIGIT ONE
-<Multi_key> <percent> <s> <b> <2> : "𝟮" U1D7EE    # MATHEMATICAL SANS-SERIF BOLD DIGIT TWO
-<Multi_key> <percent> <s> <b> <3> : "𝟯" U1D7EF    # MATHEMATICAL SANS-SERIF BOLD DIGIT THREE
-<Multi_key> <percent> <s> <b> <4> : "𝟰" U1D7F0    # MATHEMATICAL SANS-SERIF BOLD DIGIT FOUR
-<Multi_key> <percent> <s> <b> <5> : "𝟱" U1D7F1    # MATHEMATICAL SANS-SERIF BOLD DIGIT FIVE
-<Multi_key> <percent> <s> <b> <6> : "𝟲" U1D7F2    # MATHEMATICAL SANS-SERIF BOLD DIGIT SIX
-<Multi_key> <percent> <s> <b> <7> : "𝟳" U1D7F3    # MATHEMATICAL SANS-SERIF BOLD DIGIT SEVEN
-<Multi_key> <percent> <s> <b> <8> : "𝟴" U1D7F4    # MATHEMATICAL SANS-SERIF BOLD DIGIT EIGHT
-<Multi_key> <percent> <s> <b> <9> : "𝟵" U1D7F5    # MATHEMATICAL SANS-SERIF BOLD DIGIT NINE
+<Multi_key> <percent> <s> <asterisk> <A> : "𝗔" U1D5D4    # MATHEMATICAL SANS-SERIF BOLD CAPITAL A
+<Multi_key> <percent> <s> <asterisk> <B> : "𝗕" U1D5D5    # MATHEMATICAL SANS-SERIF BOLD CAPITAL B
+<Multi_key> <percent> <s> <asterisk> <C> : "𝗖" U1D5D6    # MATHEMATICAL SANS-SERIF BOLD CAPITAL C
+<Multi_key> <percent> <s> <asterisk> <D> : "𝗗" U1D5D7    # MATHEMATICAL SANS-SERIF BOLD CAPITAL D
+<Multi_key> <percent> <s> <asterisk> <E> : "𝗘" U1D5D8    # MATHEMATICAL SANS-SERIF BOLD CAPITAL E
+<Multi_key> <percent> <s> <asterisk> <F> : "𝗙" U1D5D9    # MATHEMATICAL SANS-SERIF BOLD CAPITAL F
+<Multi_key> <percent> <s> <asterisk> <G> : "𝗚" U1D5DA    # MATHEMATICAL SANS-SERIF BOLD CAPITAL G
+<Multi_key> <percent> <s> <asterisk> <H> : "𝗛" U1D5DB    # MATHEMATICAL SANS-SERIF BOLD CAPITAL H
+<Multi_key> <percent> <s> <asterisk> <I> : "𝗜" U1D5DC    # MATHEMATICAL SANS-SERIF BOLD CAPITAL I
+<Multi_key> <percent> <s> <asterisk> <J> : "𝗝" U1D5DD    # MATHEMATICAL SANS-SERIF BOLD CAPITAL J
+<Multi_key> <percent> <s> <asterisk> <K> : "𝗞" U1D5DE    # MATHEMATICAL SANS-SERIF BOLD CAPITAL K
+<Multi_key> <percent> <s> <asterisk> <L> : "𝗟" U1D5DF    # MATHEMATICAL SANS-SERIF BOLD CAPITAL L
+<Multi_key> <percent> <s> <asterisk> <M> : "𝗠" U1D5E0    # MATHEMATICAL SANS-SERIF BOLD CAPITAL M
+<Multi_key> <percent> <s> <asterisk> <N> : "𝗡" U1D5E1    # MATHEMATICAL SANS-SERIF BOLD CAPITAL N
+<Multi_key> <percent> <s> <asterisk> <O> : "𝗢" U1D5E2    # MATHEMATICAL SANS-SERIF BOLD CAPITAL O
+<Multi_key> <percent> <s> <asterisk> <P> : "𝗣" U1D5E3    # MATHEMATICAL SANS-SERIF BOLD CAPITAL P
+<Multi_key> <percent> <s> <asterisk> <Q> : "𝗤" U1D5E4    # MATHEMATICAL SANS-SERIF BOLD CAPITAL Q
+<Multi_key> <percent> <s> <asterisk> <R> : "𝗥" U1D5E5    # MATHEMATICAL SANS-SERIF BOLD CAPITAL R
+<Multi_key> <percent> <s> <asterisk> <S> : "𝗦" U1D5E6    # MATHEMATICAL SANS-SERIF BOLD CAPITAL S
+<Multi_key> <percent> <s> <asterisk> <T> : "𝗧" U1D5E7    # MATHEMATICAL SANS-SERIF BOLD CAPITAL T
+<Multi_key> <percent> <s> <asterisk> <U> : "𝗨" U1D5E8    # MATHEMATICAL SANS-SERIF BOLD CAPITAL U
+<Multi_key> <percent> <s> <asterisk> <V> : "𝗩" U1D5E9    # MATHEMATICAL SANS-SERIF BOLD CAPITAL V
+<Multi_key> <percent> <s> <asterisk> <W> : "𝗪" U1D5EA    # MATHEMATICAL SANS-SERIF BOLD CAPITAL W
+<Multi_key> <percent> <s> <asterisk> <X> : "𝗫" U1D5EB    # MATHEMATICAL SANS-SERIF BOLD CAPITAL X
+<Multi_key> <percent> <s> <asterisk> <Y> : "𝗬" U1D5EC    # MATHEMATICAL SANS-SERIF BOLD CAPITAL Y
+<Multi_key> <percent> <s> <asterisk> <Z> : "𝗭" U1D5ED    # MATHEMATICAL SANS-SERIF BOLD CAPITAL Z
+<Multi_key> <percent> <s> <asterisk> <a> : "𝗮" U1D5EE    # MATHEMATICAL SANS-SERIF BOLD SMALL A
+<Multi_key> <percent> <s> <asterisk> <b> : "𝗯" U1D5EF    # MATHEMATICAL SANS-SERIF BOLD SMALL B
+<Multi_key> <percent> <s> <asterisk> <c> : "𝗰" U1D5F0    # MATHEMATICAL SANS-SERIF BOLD SMALL C
+<Multi_key> <percent> <s> <asterisk> <d> : "𝗱" U1D5F1    # MATHEMATICAL SANS-SERIF BOLD SMALL D
+<Multi_key> <percent> <s> <asterisk> <e> : "𝗲" U1D5F2    # MATHEMATICAL SANS-SERIF BOLD SMALL E
+<Multi_key> <percent> <s> <asterisk> <f> : "𝗳" U1D5F3    # MATHEMATICAL SANS-SERIF BOLD SMALL F
+<Multi_key> <percent> <s> <asterisk> <g> : "𝗴" U1D5F4    # MATHEMATICAL SANS-SERIF BOLD SMALL G
+<Multi_key> <percent> <s> <asterisk> <h> : "𝗵" U1D5F5    # MATHEMATICAL SANS-SERIF BOLD SMALL H
+<Multi_key> <percent> <s> <asterisk> <i> : "𝗶" U1D5F6    # MATHEMATICAL SANS-SERIF BOLD SMALL I
+<Multi_key> <percent> <s> <asterisk> <j> : "𝗷" U1D5F7    # MATHEMATICAL SANS-SERIF BOLD SMALL J
+<Multi_key> <percent> <s> <asterisk> <k> : "𝗸" U1D5F8    # MATHEMATICAL SANS-SERIF BOLD SMALL K
+<Multi_key> <percent> <s> <asterisk> <l> : "𝗹" U1D5F9    # MATHEMATICAL SANS-SERIF BOLD SMALL L
+<Multi_key> <percent> <s> <asterisk> <m> : "𝗺" U1D5FA    # MATHEMATICAL SANS-SERIF BOLD SMALL M
+<Multi_key> <percent> <s> <asterisk> <n> : "𝗻" U1D5FB    # MATHEMATICAL SANS-SERIF BOLD SMALL N
+<Multi_key> <percent> <s> <asterisk> <o> : "𝗼" U1D5FC    # MATHEMATICAL SANS-SERIF BOLD SMALL O
+<Multi_key> <percent> <s> <asterisk> <p> : "𝗽" U1D5FD    # MATHEMATICAL SANS-SERIF BOLD SMALL P
+<Multi_key> <percent> <s> <asterisk> <q> : "𝗾" U1D5FE    # MATHEMATICAL SANS-SERIF BOLD SMALL Q
+<Multi_key> <percent> <s> <asterisk> <r> : "𝗿" U1D5FF    # MATHEMATICAL SANS-SERIF BOLD SMALL R
+<Multi_key> <percent> <s> <asterisk> <s> : "𝘀" U1D600    # MATHEMATICAL SANS-SERIF BOLD SMALL S
+<Multi_key> <percent> <s> <asterisk> <t> : "𝘁" U1D601    # MATHEMATICAL SANS-SERIF BOLD SMALL T
+<Multi_key> <percent> <s> <asterisk> <u> : "𝘂" U1D602    # MATHEMATICAL SANS-SERIF BOLD SMALL U
+<Multi_key> <percent> <s> <asterisk> <v> : "𝘃" U1D603    # MATHEMATICAL SANS-SERIF BOLD SMALL V
+<Multi_key> <percent> <s> <asterisk> <w> : "𝘄" U1D604    # MATHEMATICAL SANS-SERIF BOLD SMALL W
+<Multi_key> <percent> <s> <asterisk> <x> : "𝘅" U1D605    # MATHEMATICAL SANS-SERIF BOLD SMALL X
+<Multi_key> <percent> <s> <asterisk> <y> : "𝘆" U1D606    # MATHEMATICAL SANS-SERIF BOLD SMALL Y
+<Multi_key> <percent> <s> <asterisk> <z> : "𝘇" U1D607    # MATHEMATICAL SANS-SERIF BOLD SMALL Z
+<Multi_key> <percent> <s> <asterisk> <0> : "𝟬" U1D7EC    # MATHEMATICAL SANS-SERIF BOLD DIGIT ZERO
+<Multi_key> <percent> <s> <asterisk> <1> : "𝟭" U1D7ED    # MATHEMATICAL SANS-SERIF BOLD DIGIT ONE
+<Multi_key> <percent> <s> <asterisk> <2> : "𝟮" U1D7EE    # MATHEMATICAL SANS-SERIF BOLD DIGIT TWO
+<Multi_key> <percent> <s> <asterisk> <3> : "𝟯" U1D7EF    # MATHEMATICAL SANS-SERIF BOLD DIGIT THREE
+<Multi_key> <percent> <s> <asterisk> <4> : "𝟰" U1D7F0    # MATHEMATICAL SANS-SERIF BOLD DIGIT FOUR
+<Multi_key> <percent> <s> <asterisk> <5> : "𝟱" U1D7F1    # MATHEMATICAL SANS-SERIF BOLD DIGIT FIVE
+<Multi_key> <percent> <s> <asterisk> <6> : "𝟲" U1D7F2    # MATHEMATICAL SANS-SERIF BOLD DIGIT SIX
+<Multi_key> <percent> <s> <asterisk> <7> : "𝟳" U1D7F3    # MATHEMATICAL SANS-SERIF BOLD DIGIT SEVEN
+<Multi_key> <percent> <s> <asterisk> <8> : "𝟴" U1D7F4    # MATHEMATICAL SANS-SERIF BOLD DIGIT EIGHT
+<Multi_key> <percent> <s> <asterisk> <9> : "𝟵" U1D7F5    # MATHEMATICAL SANS-SERIF BOLD DIGIT NINE
 
-<Multi_key> <percent> <s> <i> <A> : "𝘈" U1D608    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL A
-<Multi_key> <percent> <s> <i> <B> : "𝘉" U1D609    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL B
-<Multi_key> <percent> <s> <i> <C> : "𝘊" U1D60A    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL C
-<Multi_key> <percent> <s> <i> <D> : "𝘋" U1D60B    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL D
-<Multi_key> <percent> <s> <i> <E> : "𝘌" U1D60C    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL E
-<Multi_key> <percent> <s> <i> <F> : "𝘍" U1D60D    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL F
-<Multi_key> <percent> <s> <i> <G> : "𝘎" U1D60E    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL G
-<Multi_key> <percent> <s> <i> <H> : "𝘏" U1D60F    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL H
-<Multi_key> <percent> <s> <i> <I> : "𝘐" U1D610    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL I
-<Multi_key> <percent> <s> <i> <J> : "𝘑" U1D611    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL J
-<Multi_key> <percent> <s> <i> <K> : "𝘒" U1D612    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL K
-<Multi_key> <percent> <s> <i> <L> : "𝘓" U1D613    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL L
-<Multi_key> <percent> <s> <i> <M> : "𝘔" U1D614    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL M
-<Multi_key> <percent> <s> <i> <N> : "𝘕" U1D615    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL N
-<Multi_key> <percent> <s> <i> <O> : "𝘖" U1D616    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL O
-<Multi_key> <percent> <s> <i> <P> : "𝘗" U1D617    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL P
-<Multi_key> <percent> <s> <i> <Q> : "𝘘" U1D618    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL Q
-<Multi_key> <percent> <s> <i> <R> : "𝘙" U1D619    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL R
-<Multi_key> <percent> <s> <i> <S> : "𝘚" U1D61A    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL S
-<Multi_key> <percent> <s> <i> <T> : "𝘛" U1D61B    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL T
-<Multi_key> <percent> <s> <i> <U> : "𝘜" U1D61C    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL U
-<Multi_key> <percent> <s> <i> <V> : "𝘝" U1D61D    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL V
-<Multi_key> <percent> <s> <i> <W> : "𝘞" U1D61E    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL W
-<Multi_key> <percent> <s> <i> <X> : "𝘟" U1D61F    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL X
-<Multi_key> <percent> <s> <i> <Y> : "𝘠" U1D620    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL Y
-<Multi_key> <percent> <s> <i> <Z> : "𝘡" U1D621    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL Z
-<Multi_key> <percent> <s> <i> <a> : "𝘢" U1D622    # MATHEMATICAL SANS-SERIF ITALIC SMALL A
-<Multi_key> <percent> <s> <i> <b> : "𝘣" U1D623    # MATHEMATICAL SANS-SERIF ITALIC SMALL B
-<Multi_key> <percent> <s> <i> <c> : "𝘤" U1D624    # MATHEMATICAL SANS-SERIF ITALIC SMALL C
-<Multi_key> <percent> <s> <i> <d> : "𝘥" U1D625    # MATHEMATICAL SANS-SERIF ITALIC SMALL D
-<Multi_key> <percent> <s> <i> <e> : "𝘦" U1D626    # MATHEMATICAL SANS-SERIF ITALIC SMALL E
-<Multi_key> <percent> <s> <i> <f> : "𝘧" U1D627    # MATHEMATICAL SANS-SERIF ITALIC SMALL F
-<Multi_key> <percent> <s> <i> <g> : "𝘨" U1D628    # MATHEMATICAL SANS-SERIF ITALIC SMALL G
-<Multi_key> <percent> <s> <i> <h> : "𝘩" U1D629    # MATHEMATICAL SANS-SERIF ITALIC SMALL H
-<Multi_key> <percent> <s> <i> <i> : "𝘪" U1D62A    # MATHEMATICAL SANS-SERIF ITALIC SMALL I
-<Multi_key> <percent> <s> <i> <j> : "𝘫" U1D62B    # MATHEMATICAL SANS-SERIF ITALIC SMALL J
-<Multi_key> <percent> <s> <i> <k> : "𝘬" U1D62C    # MATHEMATICAL SANS-SERIF ITALIC SMALL K
-<Multi_key> <percent> <s> <i> <l> : "𝘭" U1D62D    # MATHEMATICAL SANS-SERIF ITALIC SMALL L
-<Multi_key> <percent> <s> <i> <m> : "𝘮" U1D62E    # MATHEMATICAL SANS-SERIF ITALIC SMALL M
-<Multi_key> <percent> <s> <i> <n> : "𝘯" U1D62F    # MATHEMATICAL SANS-SERIF ITALIC SMALL N
-<Multi_key> <percent> <s> <i> <o> : "𝘰" U1D630    # MATHEMATICAL SANS-SERIF ITALIC SMALL O
-<Multi_key> <percent> <s> <i> <p> : "𝘱" U1D631    # MATHEMATICAL SANS-SERIF ITALIC SMALL P
-<Multi_key> <percent> <s> <i> <q> : "𝘲" U1D632    # MATHEMATICAL SANS-SERIF ITALIC SMALL Q
-<Multi_key> <percent> <s> <i> <r> : "𝘳" U1D633    # MATHEMATICAL SANS-SERIF ITALIC SMALL R
-<Multi_key> <percent> <s> <i> <s> : "𝘴" U1D634    # MATHEMATICAL SANS-SERIF ITALIC SMALL S
-<Multi_key> <percent> <s> <i> <t> : "𝘵" U1D635    # MATHEMATICAL SANS-SERIF ITALIC SMALL T
-<Multi_key> <percent> <s> <i> <u> : "𝘶" U1D636    # MATHEMATICAL SANS-SERIF ITALIC SMALL U
-<Multi_key> <percent> <s> <i> <v> : "𝘷" U1D637    # MATHEMATICAL SANS-SERIF ITALIC SMALL V
-<Multi_key> <percent> <s> <i> <w> : "𝘸" U1D638    # MATHEMATICAL SANS-SERIF ITALIC SMALL W
-<Multi_key> <percent> <s> <i> <x> : "𝘹" U1D639    # MATHEMATICAL SANS-SERIF ITALIC SMALL X
-<Multi_key> <percent> <s> <i> <y> : "𝘺" U1D63A    # MATHEMATICAL SANS-SERIF ITALIC SMALL Y
-<Multi_key> <percent> <s> <i> <z> : "𝘻" U1D63B    # MATHEMATICAL SANS-SERIF ITALIC SMALL Z
+<Multi_key> <percent> <s> <slash> <A> : "𝘈" U1D608    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL A
+<Multi_key> <percent> <s> <slash> <B> : "𝘉" U1D609    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL B
+<Multi_key> <percent> <s> <slash> <C> : "𝘊" U1D60A    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL C
+<Multi_key> <percent> <s> <slash> <D> : "𝘋" U1D60B    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL D
+<Multi_key> <percent> <s> <slash> <E> : "𝘌" U1D60C    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL E
+<Multi_key> <percent> <s> <slash> <F> : "𝘍" U1D60D    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL F
+<Multi_key> <percent> <s> <slash> <G> : "𝘎" U1D60E    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL G
+<Multi_key> <percent> <s> <slash> <H> : "𝘏" U1D60F    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL H
+<Multi_key> <percent> <s> <slash> <I> : "𝘐" U1D610    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL I
+<Multi_key> <percent> <s> <slash> <J> : "𝘑" U1D611    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL J
+<Multi_key> <percent> <s> <slash> <K> : "𝘒" U1D612    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL K
+<Multi_key> <percent> <s> <slash> <L> : "𝘓" U1D613    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL L
+<Multi_key> <percent> <s> <slash> <M> : "𝘔" U1D614    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL M
+<Multi_key> <percent> <s> <slash> <N> : "𝘕" U1D615    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL N
+<Multi_key> <percent> <s> <slash> <O> : "𝘖" U1D616    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL O
+<Multi_key> <percent> <s> <slash> <P> : "𝘗" U1D617    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL P
+<Multi_key> <percent> <s> <slash> <Q> : "𝘘" U1D618    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL Q
+<Multi_key> <percent> <s> <slash> <R> : "𝘙" U1D619    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL R
+<Multi_key> <percent> <s> <slash> <S> : "𝘚" U1D61A    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL S
+<Multi_key> <percent> <s> <slash> <T> : "𝘛" U1D61B    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL T
+<Multi_key> <percent> <s> <slash> <U> : "𝘜" U1D61C    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL U
+<Multi_key> <percent> <s> <slash> <V> : "𝘝" U1D61D    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL V
+<Multi_key> <percent> <s> <slash> <W> : "𝘞" U1D61E    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL W
+<Multi_key> <percent> <s> <slash> <X> : "𝘟" U1D61F    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL X
+<Multi_key> <percent> <s> <slash> <Y> : "𝘠" U1D620    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL Y
+<Multi_key> <percent> <s> <slash> <Z> : "𝘡" U1D621    # MATHEMATICAL SANS-SERIF ITALIC CAPITAL Z
+<Multi_key> <percent> <s> <slash> <a> : "𝘢" U1D622    # MATHEMATICAL SANS-SERIF ITALIC SMALL A
+<Multi_key> <percent> <s> <slash> <b> : "𝘣" U1D623    # MATHEMATICAL SANS-SERIF ITALIC SMALL B
+<Multi_key> <percent> <s> <slash> <c> : "𝘤" U1D624    # MATHEMATICAL SANS-SERIF ITALIC SMALL C
+<Multi_key> <percent> <s> <slash> <d> : "𝘥" U1D625    # MATHEMATICAL SANS-SERIF ITALIC SMALL D
+<Multi_key> <percent> <s> <slash> <e> : "𝘦" U1D626    # MATHEMATICAL SANS-SERIF ITALIC SMALL E
+<Multi_key> <percent> <s> <slash> <f> : "𝘧" U1D627    # MATHEMATICAL SANS-SERIF ITALIC SMALL F
+<Multi_key> <percent> <s> <slash> <g> : "𝘨" U1D628    # MATHEMATICAL SANS-SERIF ITALIC SMALL G
+<Multi_key> <percent> <s> <slash> <h> : "𝘩" U1D629    # MATHEMATICAL SANS-SERIF ITALIC SMALL H
+<Multi_key> <percent> <s> <slash> <i> : "𝘪" U1D62A    # MATHEMATICAL SANS-SERIF ITALIC SMALL I
+<Multi_key> <percent> <s> <slash> <j> : "𝘫" U1D62B    # MATHEMATICAL SANS-SERIF ITALIC SMALL J
+<Multi_key> <percent> <s> <slash> <k> : "𝘬" U1D62C    # MATHEMATICAL SANS-SERIF ITALIC SMALL K
+<Multi_key> <percent> <s> <slash> <l> : "𝘭" U1D62D    # MATHEMATICAL SANS-SERIF ITALIC SMALL L
+<Multi_key> <percent> <s> <slash> <m> : "𝘮" U1D62E    # MATHEMATICAL SANS-SERIF ITALIC SMALL M
+<Multi_key> <percent> <s> <slash> <n> : "𝘯" U1D62F    # MATHEMATICAL SANS-SERIF ITALIC SMALL N
+<Multi_key> <percent> <s> <slash> <o> : "𝘰" U1D630    # MATHEMATICAL SANS-SERIF ITALIC SMALL O
+<Multi_key> <percent> <s> <slash> <p> : "𝘱" U1D631    # MATHEMATICAL SANS-SERIF ITALIC SMALL P
+<Multi_key> <percent> <s> <slash> <q> : "𝘲" U1D632    # MATHEMATICAL SANS-SERIF ITALIC SMALL Q
+<Multi_key> <percent> <s> <slash> <r> : "𝘳" U1D633    # MATHEMATICAL SANS-SERIF ITALIC SMALL R
+<Multi_key> <percent> <s> <slash> <s> : "𝘴" U1D634    # MATHEMATICAL SANS-SERIF ITALIC SMALL S
+<Multi_key> <percent> <s> <slash> <t> : "𝘵" U1D635    # MATHEMATICAL SANS-SERIF ITALIC SMALL T
+<Multi_key> <percent> <s> <slash> <u> : "𝘶" U1D636    # MATHEMATICAL SANS-SERIF ITALIC SMALL U
+<Multi_key> <percent> <s> <slash> <v> : "𝘷" U1D637    # MATHEMATICAL SANS-SERIF ITALIC SMALL V
+<Multi_key> <percent> <s> <slash> <w> : "𝘸" U1D638    # MATHEMATICAL SANS-SERIF ITALIC SMALL W
+<Multi_key> <percent> <s> <slash> <x> : "𝘹" U1D639    # MATHEMATICAL SANS-SERIF ITALIC SMALL X
+<Multi_key> <percent> <s> <slash> <y> : "𝘺" U1D63A    # MATHEMATICAL SANS-SERIF ITALIC SMALL Y
+<Multi_key> <percent> <s> <slash> <z> : "𝘻" U1D63B    # MATHEMATICAL SANS-SERIF ITALIC SMALL Z
 
-<Multi_key> <percent> <s> <B> <A> : "𝘼" U1D63C    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL A
-<Multi_key> <percent> <s> <B> <B> : "𝘽" U1D63D    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL B
-<Multi_key> <percent> <s> <B> <C> : "𝘾" U1D63E    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL C
-<Multi_key> <percent> <s> <B> <D> : "𝘿" U1D63F    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL D
-<Multi_key> <percent> <s> <B> <E> : "𝙀" U1D640    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL E
-<Multi_key> <percent> <s> <B> <F> : "𝙁" U1D641    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL F
-<Multi_key> <percent> <s> <B> <G> : "𝙂" U1D642    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL G
-<Multi_key> <percent> <s> <B> <H> : "𝙃" U1D643    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL H
-<Multi_key> <percent> <s> <B> <I> : "𝙄" U1D644    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL I
-<Multi_key> <percent> <s> <B> <J> : "𝙅" U1D645    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL J
-<Multi_key> <percent> <s> <B> <K> : "𝙆" U1D646    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL K
-<Multi_key> <percent> <s> <B> <L> : "𝙇" U1D647    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL L
-<Multi_key> <percent> <s> <B> <M> : "𝙈" U1D648    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL M
-<Multi_key> <percent> <s> <B> <N> : "𝙉" U1D649    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL N
-<Multi_key> <percent> <s> <B> <O> : "𝙊" U1D64A    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL O
-<Multi_key> <percent> <s> <B> <P> : "𝙋" U1D64B    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL P
-<Multi_key> <percent> <s> <B> <Q> : "𝙌" U1D64C    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL Q
-<Multi_key> <percent> <s> <B> <R> : "𝙍" U1D64D    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL R
-<Multi_key> <percent> <s> <B> <S> : "𝙎" U1D64E    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL S
-<Multi_key> <percent> <s> <B> <T> : "𝙏" U1D64F    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL T
-<Multi_key> <percent> <s> <B> <U> : "𝙐" U1D650    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL U
-<Multi_key> <percent> <s> <B> <V> : "𝙑" U1D651    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL V
-<Multi_key> <percent> <s> <B> <W> : "𝙒" U1D652    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL W
-<Multi_key> <percent> <s> <B> <X> : "𝙓" U1D653    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL X
-<Multi_key> <percent> <s> <B> <Y> : "𝙔" U1D654    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL Y
-<Multi_key> <percent> <s> <B> <Z> : "𝙕" U1D655    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL Z
-<Multi_key> <percent> <s> <B> <a> : "𝙖" U1D656    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL A
-<Multi_key> <percent> <s> <B> <b> : "𝙗" U1D657    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL B
-<Multi_key> <percent> <s> <B> <c> : "𝙘" U1D658    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL C
-<Multi_key> <percent> <s> <B> <d> : "𝙙" U1D659    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL D
-<Multi_key> <percent> <s> <B> <e> : "𝙚" U1D65A    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL E
-<Multi_key> <percent> <s> <B> <f> : "𝙛" U1D65B    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL F
-<Multi_key> <percent> <s> <B> <g> : "𝙜" U1D65C    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL G
-<Multi_key> <percent> <s> <B> <h> : "𝙝" U1D65D    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL H
-<Multi_key> <percent> <s> <B> <i> : "𝙞" U1D65E    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL I
-<Multi_key> <percent> <s> <B> <j> : "𝙟" U1D65F    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL J
-<Multi_key> <percent> <s> <B> <k> : "𝙠" U1D660    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL K
-<Multi_key> <percent> <s> <B> <l> : "𝙡" U1D661    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL L
-<Multi_key> <percent> <s> <B> <m> : "𝙢" U1D662    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL M
-<Multi_key> <percent> <s> <B> <n> : "𝙣" U1D663    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL N
-<Multi_key> <percent> <s> <B> <o> : "𝙤" U1D664    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL O
-<Multi_key> <percent> <s> <B> <p> : "𝙥" U1D665    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL P
-<Multi_key> <percent> <s> <B> <q> : "𝙦" U1D666    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL Q
-<Multi_key> <percent> <s> <B> <r> : "𝙧" U1D667    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL R
-<Multi_key> <percent> <s> <B> <s> : "𝙨" U1D668    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL S
-<Multi_key> <percent> <s> <B> <t> : "𝙩" U1D669    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL T
-<Multi_key> <percent> <s> <B> <u> : "𝙪" U1D66A    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL U
-<Multi_key> <percent> <s> <B> <v> : "𝙫" U1D66B    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL V
-<Multi_key> <percent> <s> <B> <w> : "𝙬" U1D66C    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL W
-<Multi_key> <percent> <s> <B> <x> : "𝙭" U1D66D    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL X
-<Multi_key> <percent> <s> <B> <y> : "𝙮" U1D66E    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL Y
-<Multi_key> <percent> <s> <B> <z> : "𝙯" U1D66F    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL Z
+<Multi_key> <percent> <s> <asterisk> <slash> <A> : "𝘼" U1D63C    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL A
+<Multi_key> <percent> <s> <asterisk> <slash> <B> : "𝘽" U1D63D    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL B
+<Multi_key> <percent> <s> <asterisk> <slash> <C> : "𝘾" U1D63E    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL C
+<Multi_key> <percent> <s> <asterisk> <slash> <D> : "𝘿" U1D63F    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL D
+<Multi_key> <percent> <s> <asterisk> <slash> <E> : "𝙀" U1D640    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL E
+<Multi_key> <percent> <s> <asterisk> <slash> <F> : "𝙁" U1D641    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL F
+<Multi_key> <percent> <s> <asterisk> <slash> <G> : "𝙂" U1D642    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL G
+<Multi_key> <percent> <s> <asterisk> <slash> <H> : "𝙃" U1D643    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL H
+<Multi_key> <percent> <s> <asterisk> <slash> <I> : "𝙄" U1D644    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL I
+<Multi_key> <percent> <s> <asterisk> <slash> <J> : "𝙅" U1D645    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL J
+<Multi_key> <percent> <s> <asterisk> <slash> <K> : "𝙆" U1D646    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL K
+<Multi_key> <percent> <s> <asterisk> <slash> <L> : "𝙇" U1D647    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL L
+<Multi_key> <percent> <s> <asterisk> <slash> <M> : "𝙈" U1D648    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL M
+<Multi_key> <percent> <s> <asterisk> <slash> <N> : "𝙉" U1D649    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL N
+<Multi_key> <percent> <s> <asterisk> <slash> <O> : "𝙊" U1D64A    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL O
+<Multi_key> <percent> <s> <asterisk> <slash> <P> : "𝙋" U1D64B    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL P
+<Multi_key> <percent> <s> <asterisk> <slash> <Q> : "𝙌" U1D64C    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL Q
+<Multi_key> <percent> <s> <asterisk> <slash> <R> : "𝙍" U1D64D    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL R
+<Multi_key> <percent> <s> <asterisk> <slash> <S> : "𝙎" U1D64E    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL S
+<Multi_key> <percent> <s> <asterisk> <slash> <T> : "𝙏" U1D64F    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL T
+<Multi_key> <percent> <s> <asterisk> <slash> <U> : "𝙐" U1D650    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL U
+<Multi_key> <percent> <s> <asterisk> <slash> <V> : "𝙑" U1D651    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL V
+<Multi_key> <percent> <s> <asterisk> <slash> <W> : "𝙒" U1D652    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL W
+<Multi_key> <percent> <s> <asterisk> <slash> <X> : "𝙓" U1D653    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL X
+<Multi_key> <percent> <s> <asterisk> <slash> <Y> : "𝙔" U1D654    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL Y
+<Multi_key> <percent> <s> <asterisk> <slash> <Z> : "𝙕" U1D655    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL Z
+<Multi_key> <percent> <s> <asterisk> <slash> <a> : "𝙖" U1D656    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL A
+<Multi_key> <percent> <s> <asterisk> <slash> <b> : "𝙗" U1D657    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL B
+<Multi_key> <percent> <s> <asterisk> <slash> <c> : "𝙘" U1D658    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL C
+<Multi_key> <percent> <s> <asterisk> <slash> <d> : "𝙙" U1D659    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL D
+<Multi_key> <percent> <s> <asterisk> <slash> <e> : "𝙚" U1D65A    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL E
+<Multi_key> <percent> <s> <asterisk> <slash> <f> : "𝙛" U1D65B    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL F
+<Multi_key> <percent> <s> <asterisk> <slash> <g> : "𝙜" U1D65C    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL G
+<Multi_key> <percent> <s> <asterisk> <slash> <h> : "𝙝" U1D65D    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL H
+<Multi_key> <percent> <s> <asterisk> <slash> <i> : "𝙞" U1D65E    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL I
+<Multi_key> <percent> <s> <asterisk> <slash> <j> : "𝙟" U1D65F    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL J
+<Multi_key> <percent> <s> <asterisk> <slash> <k> : "𝙠" U1D660    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL K
+<Multi_key> <percent> <s> <asterisk> <slash> <l> : "𝙡" U1D661    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL L
+<Multi_key> <percent> <s> <asterisk> <slash> <m> : "𝙢" U1D662    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL M
+<Multi_key> <percent> <s> <asterisk> <slash> <n> : "𝙣" U1D663    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL N
+<Multi_key> <percent> <s> <asterisk> <slash> <o> : "𝙤" U1D664    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL O
+<Multi_key> <percent> <s> <asterisk> <slash> <p> : "𝙥" U1D665    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL P
+<Multi_key> <percent> <s> <asterisk> <slash> <q> : "𝙦" U1D666    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL Q
+<Multi_key> <percent> <s> <asterisk> <slash> <r> : "𝙧" U1D667    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL R
+<Multi_key> <percent> <s> <asterisk> <slash> <s> : "𝙨" U1D668    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL S
+<Multi_key> <percent> <s> <asterisk> <slash> <t> : "𝙩" U1D669    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL T
+<Multi_key> <percent> <s> <asterisk> <slash> <u> : "𝙪" U1D66A    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL U
+<Multi_key> <percent> <s> <asterisk> <slash> <v> : "𝙫" U1D66B    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL V
+<Multi_key> <percent> <s> <asterisk> <slash> <w> : "𝙬" U1D66C    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL W
+<Multi_key> <percent> <s> <asterisk> <slash> <x> : "𝙭" U1D66D    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL X
+<Multi_key> <percent> <s> <asterisk> <slash> <y> : "𝙮" U1D66E    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL Y
+<Multi_key> <percent> <s> <asterisk> <slash> <z> : "𝙯" U1D66F    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL Z
 
-<Multi_key> <percent> <c> <n> <A> : "𝒜" U1D49C    # MATHEMATICAL SCRIPT CAPITAL A
-<Multi_key> <percent> <c> <n> <B> : "ℬ" U0212C    # SCRIPT CAPITAL B
-<Multi_key> <percent> <c> <n> <C> : "𝒞" U1D49E    # MATHEMATICAL SCRIPT CAPITAL C
-<Multi_key> <percent> <c> <n> <D> : "𝒟" U1D49F    # MATHEMATICAL SCRIPT CAPITAL D
-<Multi_key> <percent> <c> <n> <E> : "ℰ" U02130    # SCRIPT CAPITAL E
-<Multi_key> <percent> <c> <n> <F> : "ℱ" U02131    # SCRIPT CAPITAL F
-<Multi_key> <percent> <c> <n> <G> : "𝒢" U1D4A2    # MATHEMATICAL SCRIPT CAPITAL G
-<Multi_key> <percent> <c> <n> <H> : "ℋ" U0210B    # SCRIPT CAPITAL H
-<Multi_key> <percent> <c> <n> <I> : "ℐ" U02110    # SCRIPT CAPITAL I
-<Multi_key> <percent> <c> <n> <J> : "𝒥" U1D4A5    # MATHEMATICAL SCRIPT CAPITAL J
-<Multi_key> <percent> <c> <n> <K> : "𝒦" U1D4A6    # MATHEMATICAL SCRIPT CAPITAL K
-<Multi_key> <percent> <c> <n> <L> : "ℒ" U02112    # SCRIPT CAPITAL L
-<Multi_key> <percent> <c> <n> <M> : "ℳ" U02133    # SCRIPT CAPITAL M
-<Multi_key> <percent> <c> <n> <N> : "𝒩" U1D4A9    # MATHEMATICAL SCRIPT CAPITAL N
-<Multi_key> <percent> <c> <n> <O> : "𝒪" U1D4AA    # MATHEMATICAL SCRIPT CAPITAL O
-<Multi_key> <percent> <c> <n> <P> : "𝒫" U1D4AB    # MATHEMATICAL SCRIPT CAPITAL P
-<Multi_key> <percent> <c> <n> <Q> : "𝒬" U1D4AC    # MATHEMATICAL SCRIPT CAPITAL Q
-<Multi_key> <percent> <c> <n> <R> : "ℛ" U0211B    # SCRIPT CAPITAL R
-<Multi_key> <percent> <c> <n> <S> : "𝒮" U1D4AE    # MATHEMATICAL SCRIPT CAPITAL S
-<Multi_key> <percent> <c> <n> <T> : "𝒯" U1D4AF    # MATHEMATICAL SCRIPT CAPITAL T
-<Multi_key> <percent> <c> <n> <U> : "𝒰" U1D4B0    # MATHEMATICAL SCRIPT CAPITAL U
-<Multi_key> <percent> <c> <n> <V> : "𝒱" U1D4B1    # MATHEMATICAL SCRIPT CAPITAL V
-<Multi_key> <percent> <c> <n> <W> : "𝒲" U1D4B2    # MATHEMATICAL SCRIPT CAPITAL W
-<Multi_key> <percent> <c> <n> <X> : "𝒳" U1D4B3    # MATHEMATICAL SCRIPT CAPITAL X
-<Multi_key> <percent> <c> <n> <Y> : "𝒴" U1D4B4    # MATHEMATICAL SCRIPT CAPITAL Y
-<Multi_key> <percent> <c> <n> <Z> : "𝒵" U1D4B5    # MATHEMATICAL SCRIPT CAPITAL Z
-<Multi_key> <percent> <c> <n> <a> : "𝒶" U1D4B6    # MATHEMATICAL SCRIPT SMALL A
-<Multi_key> <percent> <c> <n> <b> : "𝒷" U1D4B7    # MATHEMATICAL SCRIPT SMALL B
-<Multi_key> <percent> <c> <n> <c> : "𝒸" U1D4B8    # MATHEMATICAL SCRIPT SMALL C
-<Multi_key> <percent> <c> <n> <d> : "𝒹" U1D4B9    # MATHEMATICAL SCRIPT SMALL D
-<Multi_key> <percent> <c> <n> <e> : "ℯ" U0212F    # SCRIPT SMALL E
-<Multi_key> <percent> <c> <n> <f> : "𝒻" U1D4BB    # MATHEMATICAL SCRIPT SMALL F
-<Multi_key> <percent> <c> <n> <g> : "ℊ" U0210A    # SCRIPT SMALL G
-<Multi_key> <percent> <c> <n> <h> : "𝒽" U1D4BD    # MATHEMATICAL SCRIPT SMALL H
-<Multi_key> <percent> <c> <n> <i> : "𝒾" U1D4BE    # MATHEMATICAL SCRIPT SMALL I
-<Multi_key> <percent> <c> <n> <j> : "𝒿" U1D4BF    # MATHEMATICAL SCRIPT SMALL J
-<Multi_key> <percent> <c> <n> <k> : "𝓀" U1D4C0    # MATHEMATICAL SCRIPT SMALL K
-<Multi_key> <percent> <c> <n> <l> : "𝓁" U1D4C1    # MATHEMATICAL SCRIPT SMALL L
-<Multi_key> <percent> <c> <n> <m> : "𝓂" U1D4C2    # MATHEMATICAL SCRIPT SMALL M
-<Multi_key> <percent> <c> <n> <n> : "𝓃" U1D4C3    # MATHEMATICAL SCRIPT SMALL N
-<Multi_key> <percent> <c> <n> <o> : "ℴ" U02134    # SCRIPT SMALL O
-<Multi_key> <percent> <c> <n> <p> : "𝓅" U1D4C5    # MATHEMATICAL SCRIPT SMALL P
-<Multi_key> <percent> <c> <n> <q> : "𝓆" U1D4C6    # MATHEMATICAL SCRIPT SMALL Q
-<Multi_key> <percent> <c> <n> <r> : "𝓇" U1D4C7    # MATHEMATICAL SCRIPT SMALL R
-<Multi_key> <percent> <c> <n> <s> : "𝓈" U1D4C8    # MATHEMATICAL SCRIPT SMALL S
-<Multi_key> <percent> <c> <n> <t> : "𝓉" U1D4C9    # MATHEMATICAL SCRIPT SMALL T
-<Multi_key> <percent> <c> <n> <u> : "𝓊" U1D4CA    # MATHEMATICAL SCRIPT SMALL U
-<Multi_key> <percent> <c> <n> <v> : "𝓋" U1D4CB    # MATHEMATICAL SCRIPT SMALL V
-<Multi_key> <percent> <c> <n> <w> : "𝓌" U1D4CC    # MATHEMATICAL SCRIPT SMALL W
-<Multi_key> <percent> <c> <n> <x> : "𝓍" U1D4CD    # MATHEMATICAL SCRIPT SMALL X
-<Multi_key> <percent> <c> <n> <y> : "𝓎" U1D4CE    # MATHEMATICAL SCRIPT SMALL Y
-<Multi_key> <percent> <c> <n> <z> : "𝓏" U1D4CF    # MATHEMATICAL SCRIPT SMALL Z
+<Multi_key> <percent> <c> <A> : "𝒜" U1D49C    # MATHEMATICAL SCRIPT CAPITAL A
+<Multi_key> <percent> <c> <B> : "ℬ" U0212C    # SCRIPT CAPITAL B
+<Multi_key> <percent> <c> <C> : "𝒞" U1D49E    # MATHEMATICAL SCRIPT CAPITAL C
+<Multi_key> <percent> <c> <D> : "𝒟" U1D49F    # MATHEMATICAL SCRIPT CAPITAL D
+<Multi_key> <percent> <c> <E> : "ℰ" U02130    # SCRIPT CAPITAL E
+<Multi_key> <percent> <c> <F> : "ℱ" U02131    # SCRIPT CAPITAL F
+<Multi_key> <percent> <c> <G> : "𝒢" U1D4A2    # MATHEMATICAL SCRIPT CAPITAL G
+<Multi_key> <percent> <c> <H> : "ℋ" U0210B    # SCRIPT CAPITAL H
+<Multi_key> <percent> <c> <I> : "ℐ" U02110    # SCRIPT CAPITAL I
+<Multi_key> <percent> <c> <J> : "𝒥" U1D4A5    # MATHEMATICAL SCRIPT CAPITAL J
+<Multi_key> <percent> <c> <K> : "𝒦" U1D4A6    # MATHEMATICAL SCRIPT CAPITAL K
+<Multi_key> <percent> <c> <L> : "ℒ" U02112    # SCRIPT CAPITAL L
+<Multi_key> <percent> <c> <M> : "ℳ" U02133    # SCRIPT CAPITAL M
+<Multi_key> <percent> <c> <N> : "𝒩" U1D4A9    # MATHEMATICAL SCRIPT CAPITAL N
+<Multi_key> <percent> <c> <O> : "𝒪" U1D4AA    # MATHEMATICAL SCRIPT CAPITAL O
+<Multi_key> <percent> <c> <P> : "𝒫" U1D4AB    # MATHEMATICAL SCRIPT CAPITAL P
+<Multi_key> <percent> <c> <Q> : "𝒬" U1D4AC    # MATHEMATICAL SCRIPT CAPITAL Q
+<Multi_key> <percent> <c> <R> : "ℛ" U0211B    # SCRIPT CAPITAL R
+<Multi_key> <percent> <c> <S> : "𝒮" U1D4AE    # MATHEMATICAL SCRIPT CAPITAL S
+<Multi_key> <percent> <c> <T> : "𝒯" U1D4AF    # MATHEMATICAL SCRIPT CAPITAL T
+<Multi_key> <percent> <c> <U> : "𝒰" U1D4B0    # MATHEMATICAL SCRIPT CAPITAL U
+<Multi_key> <percent> <c> <V> : "𝒱" U1D4B1    # MATHEMATICAL SCRIPT CAPITAL V
+<Multi_key> <percent> <c> <W> : "𝒲" U1D4B2    # MATHEMATICAL SCRIPT CAPITAL W
+<Multi_key> <percent> <c> <X> : "𝒳" U1D4B3    # MATHEMATICAL SCRIPT CAPITAL X
+<Multi_key> <percent> <c> <Y> : "𝒴" U1D4B4    # MATHEMATICAL SCRIPT CAPITAL Y
+<Multi_key> <percent> <c> <Z> : "𝒵" U1D4B5    # MATHEMATICAL SCRIPT CAPITAL Z
+<Multi_key> <percent> <c> <a> : "𝒶" U1D4B6    # MATHEMATICAL SCRIPT SMALL A
+<Multi_key> <percent> <c> <b> : "𝒷" U1D4B7    # MATHEMATICAL SCRIPT SMALL B
+<Multi_key> <percent> <c> <c> : "𝒸" U1D4B8    # MATHEMATICAL SCRIPT SMALL C
+<Multi_key> <percent> <c> <d> : "𝒹" U1D4B9    # MATHEMATICAL SCRIPT SMALL D
+<Multi_key> <percent> <c> <e> : "ℯ" U0212F    # SCRIPT SMALL E
+<Multi_key> <percent> <c> <f> : "𝒻" U1D4BB    # MATHEMATICAL SCRIPT SMALL F
+<Multi_key> <percent> <c> <g> : "ℊ" U0210A    # SCRIPT SMALL G
+<Multi_key> <percent> <c> <h> : "𝒽" U1D4BD    # MATHEMATICAL SCRIPT SMALL H
+<Multi_key> <percent> <c> <i> : "𝒾" U1D4BE    # MATHEMATICAL SCRIPT SMALL I
+<Multi_key> <percent> <c> <j> : "𝒿" U1D4BF    # MATHEMATICAL SCRIPT SMALL J
+<Multi_key> <percent> <c> <k> : "𝓀" U1D4C0    # MATHEMATICAL SCRIPT SMALL K
+<Multi_key> <percent> <c> <l> : "𝓁" U1D4C1    # MATHEMATICAL SCRIPT SMALL L
+<Multi_key> <percent> <c> <m> : "𝓂" U1D4C2    # MATHEMATICAL SCRIPT SMALL M
+<Multi_key> <percent> <c> <n> : "𝓃" U1D4C3    # MATHEMATICAL SCRIPT SMALL N
+<Multi_key> <percent> <c> <o> : "ℴ" U02134    # SCRIPT SMALL O
+<Multi_key> <percent> <c> <p> : "𝓅" U1D4C5    # MATHEMATICAL SCRIPT SMALL P
+<Multi_key> <percent> <c> <q> : "𝓆" U1D4C6    # MATHEMATICAL SCRIPT SMALL Q
+<Multi_key> <percent> <c> <r> : "𝓇" U1D4C7    # MATHEMATICAL SCRIPT SMALL R
+<Multi_key> <percent> <c> <s> : "𝓈" U1D4C8    # MATHEMATICAL SCRIPT SMALL S
+<Multi_key> <percent> <c> <t> : "𝓉" U1D4C9    # MATHEMATICAL SCRIPT SMALL T
+<Multi_key> <percent> <c> <u> : "𝓊" U1D4CA    # MATHEMATICAL SCRIPT SMALL U
+<Multi_key> <percent> <c> <v> : "𝓋" U1D4CB    # MATHEMATICAL SCRIPT SMALL V
+<Multi_key> <percent> <c> <w> : "𝓌" U1D4CC    # MATHEMATICAL SCRIPT SMALL W
+<Multi_key> <percent> <c> <x> : "𝓍" U1D4CD    # MATHEMATICAL SCRIPT SMALL X
+<Multi_key> <percent> <c> <y> : "𝓎" U1D4CE    # MATHEMATICAL SCRIPT SMALL Y
+<Multi_key> <percent> <c> <z> : "𝓏" U1D4CF    # MATHEMATICAL SCRIPT SMALL Z
 
-<Multi_key> <percent> <c> <b> <A> : "𝓐" U1D4D0    # MATHEMATICAL BOLD SCRIPT CAPITAL A
-<Multi_key> <percent> <c> <b> <B> : "𝓑" U1D4D1    # MATHEMATICAL BOLD SCRIPT CAPITAL B
-<Multi_key> <percent> <c> <b> <C> : "𝓒" U1D4D2    # MATHEMATICAL BOLD SCRIPT CAPITAL C
-<Multi_key> <percent> <c> <b> <D> : "𝓓" U1D4D3    # MATHEMATICAL BOLD SCRIPT CAPITAL D
-<Multi_key> <percent> <c> <b> <E> : "𝓔" U1D4D4    # MATHEMATICAL BOLD SCRIPT CAPITAL E
-<Multi_key> <percent> <c> <b> <F> : "𝓕" U1D4D5    # MATHEMATICAL BOLD SCRIPT CAPITAL F
-<Multi_key> <percent> <c> <b> <G> : "𝓖" U1D4D6    # MATHEMATICAL BOLD SCRIPT CAPITAL G
-<Multi_key> <percent> <c> <b> <H> : "𝓗" U1D4D7    # MATHEMATICAL BOLD SCRIPT CAPITAL H
-<Multi_key> <percent> <c> <b> <I> : "𝓘" U1D4D8    # MATHEMATICAL BOLD SCRIPT CAPITAL I
-<Multi_key> <percent> <c> <b> <J> : "𝓙" U1D4D9    # MATHEMATICAL BOLD SCRIPT CAPITAL J
-<Multi_key> <percent> <c> <b> <K> : "𝓚" U1D4DA    # MATHEMATICAL BOLD SCRIPT CAPITAL K
-<Multi_key> <percent> <c> <b> <L> : "𝓛" U1D4DB    # MATHEMATICAL BOLD SCRIPT CAPITAL L
-<Multi_key> <percent> <c> <b> <M> : "𝓜" U1D4DC    # MATHEMATICAL BOLD SCRIPT CAPITAL M
-<Multi_key> <percent> <c> <b> <N> : "𝓝" U1D4DD    # MATHEMATICAL BOLD SCRIPT CAPITAL N
-<Multi_key> <percent> <c> <b> <O> : "𝓞" U1D4DE    # MATHEMATICAL BOLD SCRIPT CAPITAL O
-<Multi_key> <percent> <c> <b> <P> : "𝓟" U1D4DF    # MATHEMATICAL BOLD SCRIPT CAPITAL P
-<Multi_key> <percent> <c> <b> <Q> : "𝓠" U1D4E0    # MATHEMATICAL BOLD SCRIPT CAPITAL Q
-<Multi_key> <percent> <c> <b> <R> : "𝓡" U1D4E1    # MATHEMATICAL BOLD SCRIPT CAPITAL R
-<Multi_key> <percent> <c> <b> <S> : "𝓢" U1D4E2    # MATHEMATICAL BOLD SCRIPT CAPITAL S
-<Multi_key> <percent> <c> <b> <T> : "𝓣" U1D4E3    # MATHEMATICAL BOLD SCRIPT CAPITAL T
-<Multi_key> <percent> <c> <b> <U> : "𝓤" U1D4E4    # MATHEMATICAL BOLD SCRIPT CAPITAL U
-<Multi_key> <percent> <c> <b> <V> : "𝓥" U1D4E5    # MATHEMATICAL BOLD SCRIPT CAPITAL V
-<Multi_key> <percent> <c> <b> <W> : "𝓦" U1D4E6    # MATHEMATICAL BOLD SCRIPT CAPITAL W
-<Multi_key> <percent> <c> <b> <X> : "𝓧" U1D4E7    # MATHEMATICAL BOLD SCRIPT CAPITAL X
-<Multi_key> <percent> <c> <b> <Y> : "𝓨" U1D4E8    # MATHEMATICAL BOLD SCRIPT CAPITAL Y
-<Multi_key> <percent> <c> <b> <Z> : "𝓩" U1D4E9    # MATHEMATICAL BOLD SCRIPT CAPITAL Z
-<Multi_key> <percent> <c> <b> <a> : "𝓪" U1D4EA    # MATHEMATICAL BOLD SCRIPT SMALL A
-<Multi_key> <percent> <c> <b> <b> : "𝓫" U1D4EB    # MATHEMATICAL BOLD SCRIPT SMALL B
-<Multi_key> <percent> <c> <b> <c> : "𝓬" U1D4EC    # MATHEMATICAL BOLD SCRIPT SMALL C
-<Multi_key> <percent> <c> <b> <d> : "𝓭" U1D4ED    # MATHEMATICAL BOLD SCRIPT SMALL D
-<Multi_key> <percent> <c> <b> <e> : "𝓮" U1D4EE    # MATHEMATICAL BOLD SCRIPT SMALL E
-<Multi_key> <percent> <c> <b> <f> : "𝓯" U1D4EF    # MATHEMATICAL BOLD SCRIPT SMALL F
-<Multi_key> <percent> <c> <b> <g> : "𝓰" U1D4F0    # MATHEMATICAL BOLD SCRIPT SMALL G
-<Multi_key> <percent> <c> <b> <h> : "𝓱" U1D4F1    # MATHEMATICAL BOLD SCRIPT SMALL H
-<Multi_key> <percent> <c> <b> <i> : "𝓲" U1D4F2    # MATHEMATICAL BOLD SCRIPT SMALL I
-<Multi_key> <percent> <c> <b> <j> : "𝓳" U1D4F3    # MATHEMATICAL BOLD SCRIPT SMALL J
-<Multi_key> <percent> <c> <b> <k> : "𝓴" U1D4F4    # MATHEMATICAL BOLD SCRIPT SMALL K
-<Multi_key> <percent> <c> <b> <l> : "𝓵" U1D4F5    # MATHEMATICAL BOLD SCRIPT SMALL L
-<Multi_key> <percent> <c> <b> <m> : "𝓶" U1D4F6    # MATHEMATICAL BOLD SCRIPT SMALL M
-<Multi_key> <percent> <c> <b> <n> : "𝓷" U1D4F7    # MATHEMATICAL BOLD SCRIPT SMALL N
-<Multi_key> <percent> <c> <b> <o> : "𝓸" U1D4F8    # MATHEMATICAL BOLD SCRIPT SMALL O
-<Multi_key> <percent> <c> <b> <p> : "𝓹" U1D4F9    # MATHEMATICAL BOLD SCRIPT SMALL P
-<Multi_key> <percent> <c> <b> <q> : "𝓺" U1D4FA    # MATHEMATICAL BOLD SCRIPT SMALL Q
-<Multi_key> <percent> <c> <b> <r> : "𝓻" U1D4FB    # MATHEMATICAL BOLD SCRIPT SMALL R
-<Multi_key> <percent> <c> <b> <s> : "𝓼" U1D4FC    # MATHEMATICAL BOLD SCRIPT SMALL S
-<Multi_key> <percent> <c> <b> <t> : "𝓽" U1D4FD    # MATHEMATICAL BOLD SCRIPT SMALL T
-<Multi_key> <percent> <c> <b> <u> : "𝓾" U1D4FE    # MATHEMATICAL BOLD SCRIPT SMALL U
-<Multi_key> <percent> <c> <b> <v> : "𝓿" U1D4FF    # MATHEMATICAL BOLD SCRIPT SMALL V
-<Multi_key> <percent> <c> <b> <w> : "𝔀" U1D500    # MATHEMATICAL BOLD SCRIPT SMALL W
-<Multi_key> <percent> <c> <b> <x> : "𝔁" U1D501    # MATHEMATICAL BOLD SCRIPT SMALL X
-<Multi_key> <percent> <c> <b> <y> : "𝔂" U1D502    # MATHEMATICAL BOLD SCRIPT SMALL Y
-<Multi_key> <percent> <c> <b> <z> : "𝔃" U1D503    # MATHEMATICAL BOLD SCRIPT SMALL Z
+<Multi_key> <percent> <c> <asterisk> <A> : "𝓐" U1D4D0    # MATHEMATICAL BOLD SCRIPT CAPITAL A
+<Multi_key> <percent> <c> <asterisk> <B> : "𝓑" U1D4D1    # MATHEMATICAL BOLD SCRIPT CAPITAL B
+<Multi_key> <percent> <c> <asterisk> <C> : "𝓒" U1D4D2    # MATHEMATICAL BOLD SCRIPT CAPITAL C
+<Multi_key> <percent> <c> <asterisk> <D> : "𝓓" U1D4D3    # MATHEMATICAL BOLD SCRIPT CAPITAL D
+<Multi_key> <percent> <c> <asterisk> <E> : "𝓔" U1D4D4    # MATHEMATICAL BOLD SCRIPT CAPITAL E
+<Multi_key> <percent> <c> <asterisk> <F> : "𝓕" U1D4D5    # MATHEMATICAL BOLD SCRIPT CAPITAL F
+<Multi_key> <percent> <c> <asterisk> <G> : "𝓖" U1D4D6    # MATHEMATICAL BOLD SCRIPT CAPITAL G
+<Multi_key> <percent> <c> <asterisk> <H> : "𝓗" U1D4D7    # MATHEMATICAL BOLD SCRIPT CAPITAL H
+<Multi_key> <percent> <c> <asterisk> <I> : "𝓘" U1D4D8    # MATHEMATICAL BOLD SCRIPT CAPITAL I
+<Multi_key> <percent> <c> <asterisk> <J> : "𝓙" U1D4D9    # MATHEMATICAL BOLD SCRIPT CAPITAL J
+<Multi_key> <percent> <c> <asterisk> <K> : "𝓚" U1D4DA    # MATHEMATICAL BOLD SCRIPT CAPITAL K
+<Multi_key> <percent> <c> <asterisk> <L> : "𝓛" U1D4DB    # MATHEMATICAL BOLD SCRIPT CAPITAL L
+<Multi_key> <percent> <c> <asterisk> <M> : "𝓜" U1D4DC    # MATHEMATICAL BOLD SCRIPT CAPITAL M
+<Multi_key> <percent> <c> <asterisk> <N> : "𝓝" U1D4DD    # MATHEMATICAL BOLD SCRIPT CAPITAL N
+<Multi_key> <percent> <c> <asterisk> <O> : "𝓞" U1D4DE    # MATHEMATICAL BOLD SCRIPT CAPITAL O
+<Multi_key> <percent> <c> <asterisk> <P> : "𝓟" U1D4DF    # MATHEMATICAL BOLD SCRIPT CAPITAL P
+<Multi_key> <percent> <c> <asterisk> <Q> : "𝓠" U1D4E0    # MATHEMATICAL BOLD SCRIPT CAPITAL Q
+<Multi_key> <percent> <c> <asterisk> <R> : "𝓡" U1D4E1    # MATHEMATICAL BOLD SCRIPT CAPITAL R
+<Multi_key> <percent> <c> <asterisk> <S> : "𝓢" U1D4E2    # MATHEMATICAL BOLD SCRIPT CAPITAL S
+<Multi_key> <percent> <c> <asterisk> <T> : "𝓣" U1D4E3    # MATHEMATICAL BOLD SCRIPT CAPITAL T
+<Multi_key> <percent> <c> <asterisk> <U> : "𝓤" U1D4E4    # MATHEMATICAL BOLD SCRIPT CAPITAL U
+<Multi_key> <percent> <c> <asterisk> <V> : "𝓥" U1D4E5    # MATHEMATICAL BOLD SCRIPT CAPITAL V
+<Multi_key> <percent> <c> <asterisk> <W> : "𝓦" U1D4E6    # MATHEMATICAL BOLD SCRIPT CAPITAL W
+<Multi_key> <percent> <c> <asterisk> <X> : "𝓧" U1D4E7    # MATHEMATICAL BOLD SCRIPT CAPITAL X
+<Multi_key> <percent> <c> <asterisk> <Y> : "𝓨" U1D4E8    # MATHEMATICAL BOLD SCRIPT CAPITAL Y
+<Multi_key> <percent> <c> <asterisk> <Z> : "𝓩" U1D4E9    # MATHEMATICAL BOLD SCRIPT CAPITAL Z
+<Multi_key> <percent> <c> <asterisk> <a> : "𝓪" U1D4EA    # MATHEMATICAL BOLD SCRIPT SMALL A
+<Multi_key> <percent> <c> <asterisk> <b> : "𝓫" U1D4EB    # MATHEMATICAL BOLD SCRIPT SMALL B
+<Multi_key> <percent> <c> <asterisk> <c> : "𝓬" U1D4EC    # MATHEMATICAL BOLD SCRIPT SMALL C
+<Multi_key> <percent> <c> <asterisk> <d> : "𝓭" U1D4ED    # MATHEMATICAL BOLD SCRIPT SMALL D
+<Multi_key> <percent> <c> <asterisk> <e> : "𝓮" U1D4EE    # MATHEMATICAL BOLD SCRIPT SMALL E
+<Multi_key> <percent> <c> <asterisk> <f> : "𝓯" U1D4EF    # MATHEMATICAL BOLD SCRIPT SMALL F
+<Multi_key> <percent> <c> <asterisk> <g> : "𝓰" U1D4F0    # MATHEMATICAL BOLD SCRIPT SMALL G
+<Multi_key> <percent> <c> <asterisk> <h> : "𝓱" U1D4F1    # MATHEMATICAL BOLD SCRIPT SMALL H
+<Multi_key> <percent> <c> <asterisk> <i> : "𝓲" U1D4F2    # MATHEMATICAL BOLD SCRIPT SMALL I
+<Multi_key> <percent> <c> <asterisk> <j> : "𝓳" U1D4F3    # MATHEMATICAL BOLD SCRIPT SMALL J
+<Multi_key> <percent> <c> <asterisk> <k> : "𝓴" U1D4F4    # MATHEMATICAL BOLD SCRIPT SMALL K
+<Multi_key> <percent> <c> <asterisk> <l> : "𝓵" U1D4F5    # MATHEMATICAL BOLD SCRIPT SMALL L
+<Multi_key> <percent> <c> <asterisk> <m> : "𝓶" U1D4F6    # MATHEMATICAL BOLD SCRIPT SMALL M
+<Multi_key> <percent> <c> <asterisk> <n> : "𝓷" U1D4F7    # MATHEMATICAL BOLD SCRIPT SMALL N
+<Multi_key> <percent> <c> <asterisk> <o> : "𝓸" U1D4F8    # MATHEMATICAL BOLD SCRIPT SMALL O
+<Multi_key> <percent> <c> <asterisk> <p> : "𝓹" U1D4F9    # MATHEMATICAL BOLD SCRIPT SMALL P
+<Multi_key> <percent> <c> <asterisk> <q> : "𝓺" U1D4FA    # MATHEMATICAL BOLD SCRIPT SMALL Q
+<Multi_key> <percent> <c> <asterisk> <r> : "𝓻" U1D4FB    # MATHEMATICAL BOLD SCRIPT SMALL R
+<Multi_key> <percent> <c> <asterisk> <s> : "𝓼" U1D4FC    # MATHEMATICAL BOLD SCRIPT SMALL S
+<Multi_key> <percent> <c> <asterisk> <t> : "𝓽" U1D4FD    # MATHEMATICAL BOLD SCRIPT SMALL T
+<Multi_key> <percent> <c> <asterisk> <u> : "𝓾" U1D4FE    # MATHEMATICAL BOLD SCRIPT SMALL U
+<Multi_key> <percent> <c> <asterisk> <v> : "𝓿" U1D4FF    # MATHEMATICAL BOLD SCRIPT SMALL V
+<Multi_key> <percent> <c> <asterisk> <w> : "𝔀" U1D500    # MATHEMATICAL BOLD SCRIPT SMALL W
+<Multi_key> <percent> <c> <asterisk> <x> : "𝔁" U1D501    # MATHEMATICAL BOLD SCRIPT SMALL X
+<Multi_key> <percent> <c> <asterisk> <y> : "𝔂" U1D502    # MATHEMATICAL BOLD SCRIPT SMALL Y
+<Multi_key> <percent> <c> <asterisk> <z> : "𝔃" U1D503    # MATHEMATICAL BOLD SCRIPT SMALL Z
 
-<Multi_key> <percent> <f> <n> <A> : "𝔄" U1D504    # MATHEMATICAL FRAKTUR CAPITAL A
-<Multi_key> <percent> <f> <n> <B> : "𝔅" U1D505    # MATHEMATICAL FRAKTUR CAPITAL B
-<Multi_key> <percent> <f> <n> <C> : "ℭ" U0212D    # BLACK-LETTER CAPITAL C
-<Multi_key> <percent> <f> <n> <D> : "𝔇" U1D507    # MATHEMATICAL FRAKTUR CAPITAL D
-<Multi_key> <percent> <f> <n> <E> : "𝔈" U1D508    # MATHEMATICAL FRAKTUR CAPITAL E
-<Multi_key> <percent> <f> <n> <F> : "𝔉" U1D509    # MATHEMATICAL FRAKTUR CAPITAL F
-<Multi_key> <percent> <f> <n> <G> : "𝔊" U1D50A    # MATHEMATICAL FRAKTUR CAPITAL G
-<Multi_key> <percent> <f> <n> <H> : "ℌ" U0210C    # BLACK-LETTER CAPITAL H
-<Multi_key> <percent> <f> <n> <I> : "ℑ" U02111    # BLACK-LETTER CAPITAL I
-<Multi_key> <percent> <f> <n> <J> : "𝔍" U1D50D    # MATHEMATICAL FRAKTUR CAPITAL J
-<Multi_key> <percent> <f> <n> <K> : "𝔎" U1D50E    # MATHEMATICAL FRAKTUR CAPITAL K
-<Multi_key> <percent> <f> <n> <L> : "𝔏" U1D50F    # MATHEMATICAL FRAKTUR CAPITAL L
-<Multi_key> <percent> <f> <n> <M> : "𝔐" U1D510    # MATHEMATICAL FRAKTUR CAPITAL M
-<Multi_key> <percent> <f> <n> <N> : "𝔑" U1D511    # MATHEMATICAL FRAKTUR CAPITAL N
-<Multi_key> <percent> <f> <n> <O> : "𝔒" U1D512    # MATHEMATICAL FRAKTUR CAPITAL O
-<Multi_key> <percent> <f> <n> <P> : "𝔓" U1D513    # MATHEMATICAL FRAKTUR CAPITAL P
-<Multi_key> <percent> <f> <n> <Q> : "𝔔" U1D514    # MATHEMATICAL FRAKTUR CAPITAL Q
-<Multi_key> <percent> <f> <n> <R> : "ℜ" U0211C    # BLACK-LETTER CAPITAL R
-<Multi_key> <percent> <f> <n> <S> : "𝔖" U1D516    # MATHEMATICAL FRAKTUR CAPITAL S
-<Multi_key> <percent> <f> <n> <T> : "𝔗" U1D517    # MATHEMATICAL FRAKTUR CAPITAL T
-<Multi_key> <percent> <f> <n> <U> : "𝔘" U1D518    # MATHEMATICAL FRAKTUR CAPITAL U
-<Multi_key> <percent> <f> <n> <V> : "𝔙" U1D519    # MATHEMATICAL FRAKTUR CAPITAL V
-<Multi_key> <percent> <f> <n> <W> : "𝔚" U1D51A    # MATHEMATICAL FRAKTUR CAPITAL W
-<Multi_key> <percent> <f> <n> <X> : "𝔛" U1D51B    # MATHEMATICAL FRAKTUR CAPITAL X
-<Multi_key> <percent> <f> <n> <Y> : "𝔜" U1D51C    # MATHEMATICAL FRAKTUR CAPITAL Y
-<Multi_key> <percent> <f> <n> <Z> : "ℨ" U02128    # BLACK-LETTER CAPITAL Z
-<Multi_key> <percent> <f> <n> <a> : "𝔞" U1D51E    # MATHEMATICAL FRAKTUR SMALL A
-<Multi_key> <percent> <f> <n> <b> : "𝔟" U1D51F    # MATHEMATICAL FRAKTUR SMALL B
-<Multi_key> <percent> <f> <n> <c> : "𝔠" U1D520    # MATHEMATICAL FRAKTUR SMALL C
-<Multi_key> <percent> <f> <n> <d> : "𝔡" U1D521    # MATHEMATICAL FRAKTUR SMALL D
-<Multi_key> <percent> <f> <n> <e> : "𝔢" U1D522    # MATHEMATICAL FRAKTUR SMALL E
-<Multi_key> <percent> <f> <n> <f> : "𝔣" U1D523    # MATHEMATICAL FRAKTUR SMALL F
-<Multi_key> <percent> <f> <n> <g> : "𝔤" U1D524    # MATHEMATICAL FRAKTUR SMALL G
-<Multi_key> <percent> <f> <n> <h> : "𝔥" U1D525    # MATHEMATICAL FRAKTUR SMALL H
-<Multi_key> <percent> <f> <n> <i> : "𝔦" U1D526    # MATHEMATICAL FRAKTUR SMALL I
-<Multi_key> <percent> <f> <n> <j> : "𝔧" U1D527    # MATHEMATICAL FRAKTUR SMALL J
-<Multi_key> <percent> <f> <n> <k> : "𝔨" U1D528    # MATHEMATICAL FRAKTUR SMALL K
-<Multi_key> <percent> <f> <n> <l> : "𝔩" U1D529    # MATHEMATICAL FRAKTUR SMALL L
-<Multi_key> <percent> <f> <n> <m> : "𝔪" U1D52A    # MATHEMATICAL FRAKTUR SMALL M
-<Multi_key> <percent> <f> <n> <n> : "𝔫" U1D52B    # MATHEMATICAL FRAKTUR SMALL N
-<Multi_key> <percent> <f> <n> <o> : "𝔬" U1D52C    # MATHEMATICAL FRAKTUR SMALL O
-<Multi_key> <percent> <f> <n> <p> : "𝔭" U1D52D    # MATHEMATICAL FRAKTUR SMALL P
-<Multi_key> <percent> <f> <n> <q> : "𝔮" U1D52E    # MATHEMATICAL FRAKTUR SMALL Q
-<Multi_key> <percent> <f> <n> <r> : "𝔯" U1D52F    # MATHEMATICAL FRAKTUR SMALL R
-<Multi_key> <percent> <f> <n> <s> : "𝔰" U1D530    # MATHEMATICAL FRAKTUR SMALL S
-<Multi_key> <percent> <f> <n> <t> : "𝔱" U1D531    # MATHEMATICAL FRAKTUR SMALL T
-<Multi_key> <percent> <f> <n> <u> : "𝔲" U1D532    # MATHEMATICAL FRAKTUR SMALL U
-<Multi_key> <percent> <f> <n> <v> : "𝔳" U1D533    # MATHEMATICAL FRAKTUR SMALL V
-<Multi_key> <percent> <f> <n> <w> : "𝔴" U1D534    # MATHEMATICAL FRAKTUR SMALL W
-<Multi_key> <percent> <f> <n> <x> : "𝔵" U1D535    # MATHEMATICAL FRAKTUR SMALL X
-<Multi_key> <percent> <f> <n> <y> : "𝔶" U1D536    # MATHEMATICAL FRAKTUR SMALL Y
-<Multi_key> <percent> <f> <n> <z> : "𝔷" U1D537    # MATHEMATICAL FRAKTUR SMALL Z
+<Multi_key> <percent> <f> <A> : "𝔄" U1D504    # MATHEMATICAL FRAKTUR CAPITAL A
+<Multi_key> <percent> <f> <B> : "𝔅" U1D505    # MATHEMATICAL FRAKTUR CAPITAL B
+<Multi_key> <percent> <f> <C> : "ℭ" U0212D    # BLACK-LETTER CAPITAL C
+<Multi_key> <percent> <f> <D> : "𝔇" U1D507    # MATHEMATICAL FRAKTUR CAPITAL D
+<Multi_key> <percent> <f> <E> : "𝔈" U1D508    # MATHEMATICAL FRAKTUR CAPITAL E
+<Multi_key> <percent> <f> <F> : "𝔉" U1D509    # MATHEMATICAL FRAKTUR CAPITAL F
+<Multi_key> <percent> <f> <G> : "𝔊" U1D50A    # MATHEMATICAL FRAKTUR CAPITAL G
+<Multi_key> <percent> <f> <H> : "ℌ" U0210C    # BLACK-LETTER CAPITAL H
+<Multi_key> <percent> <f> <I> : "ℑ" U02111    # BLACK-LETTER CAPITAL I
+<Multi_key> <percent> <f> <J> : "𝔍" U1D50D    # MATHEMATICAL FRAKTUR CAPITAL J
+<Multi_key> <percent> <f> <K> : "𝔎" U1D50E    # MATHEMATICAL FRAKTUR CAPITAL K
+<Multi_key> <percent> <f> <L> : "𝔏" U1D50F    # MATHEMATICAL FRAKTUR CAPITAL L
+<Multi_key> <percent> <f> <M> : "𝔐" U1D510    # MATHEMATICAL FRAKTUR CAPITAL M
+<Multi_key> <percent> <f> <N> : "𝔑" U1D511    # MATHEMATICAL FRAKTUR CAPITAL N
+<Multi_key> <percent> <f> <O> : "𝔒" U1D512    # MATHEMATICAL FRAKTUR CAPITAL O
+<Multi_key> <percent> <f> <P> : "𝔓" U1D513    # MATHEMATICAL FRAKTUR CAPITAL P
+<Multi_key> <percent> <f> <Q> : "𝔔" U1D514    # MATHEMATICAL FRAKTUR CAPITAL Q
+<Multi_key> <percent> <f> <R> : "ℜ" U0211C    # BLACK-LETTER CAPITAL R
+<Multi_key> <percent> <f> <S> : "𝔖" U1D516    # MATHEMATICAL FRAKTUR CAPITAL S
+<Multi_key> <percent> <f> <T> : "𝔗" U1D517    # MATHEMATICAL FRAKTUR CAPITAL T
+<Multi_key> <percent> <f> <U> : "𝔘" U1D518    # MATHEMATICAL FRAKTUR CAPITAL U
+<Multi_key> <percent> <f> <V> : "𝔙" U1D519    # MATHEMATICAL FRAKTUR CAPITAL V
+<Multi_key> <percent> <f> <W> : "𝔚" U1D51A    # MATHEMATICAL FRAKTUR CAPITAL W
+<Multi_key> <percent> <f> <X> : "𝔛" U1D51B    # MATHEMATICAL FRAKTUR CAPITAL X
+<Multi_key> <percent> <f> <Y> : "𝔜" U1D51C    # MATHEMATICAL FRAKTUR CAPITAL Y
+<Multi_key> <percent> <f> <Z> : "ℨ" U02128    # BLACK-LETTER CAPITAL Z
+<Multi_key> <percent> <f> <a> : "𝔞" U1D51E    # MATHEMATICAL FRAKTUR SMALL A
+<Multi_key> <percent> <f> <b> : "𝔟" U1D51F    # MATHEMATICAL FRAKTUR SMALL B
+<Multi_key> <percent> <f> <c> : "𝔠" U1D520    # MATHEMATICAL FRAKTUR SMALL C
+<Multi_key> <percent> <f> <d> : "𝔡" U1D521    # MATHEMATICAL FRAKTUR SMALL D
+<Multi_key> <percent> <f> <e> : "𝔢" U1D522    # MATHEMATICAL FRAKTUR SMALL E
+<Multi_key> <percent> <f> <f> : "𝔣" U1D523    # MATHEMATICAL FRAKTUR SMALL F
+<Multi_key> <percent> <f> <g> : "𝔤" U1D524    # MATHEMATICAL FRAKTUR SMALL G
+<Multi_key> <percent> <f> <h> : "𝔥" U1D525    # MATHEMATICAL FRAKTUR SMALL H
+<Multi_key> <percent> <f> <i> : "𝔦" U1D526    # MATHEMATICAL FRAKTUR SMALL I
+<Multi_key> <percent> <f> <j> : "𝔧" U1D527    # MATHEMATICAL FRAKTUR SMALL J
+<Multi_key> <percent> <f> <k> : "𝔨" U1D528    # MATHEMATICAL FRAKTUR SMALL K
+<Multi_key> <percent> <f> <l> : "𝔩" U1D529    # MATHEMATICAL FRAKTUR SMALL L
+<Multi_key> <percent> <f> <m> : "𝔪" U1D52A    # MATHEMATICAL FRAKTUR SMALL M
+<Multi_key> <percent> <f> <n> : "𝔫" U1D52B    # MATHEMATICAL FRAKTUR SMALL N
+<Multi_key> <percent> <f> <o> : "𝔬" U1D52C    # MATHEMATICAL FRAKTUR SMALL O
+<Multi_key> <percent> <f> <p> : "𝔭" U1D52D    # MATHEMATICAL FRAKTUR SMALL P
+<Multi_key> <percent> <f> <q> : "𝔮" U1D52E    # MATHEMATICAL FRAKTUR SMALL Q
+<Multi_key> <percent> <f> <r> : "𝔯" U1D52F    # MATHEMATICAL FRAKTUR SMALL R
+<Multi_key> <percent> <f> <s> : "𝔰" U1D530    # MATHEMATICAL FRAKTUR SMALL S
+<Multi_key> <percent> <f> <t> : "𝔱" U1D531    # MATHEMATICAL FRAKTUR SMALL T
+<Multi_key> <percent> <f> <u> : "𝔲" U1D532    # MATHEMATICAL FRAKTUR SMALL U
+<Multi_key> <percent> <f> <v> : "𝔳" U1D533    # MATHEMATICAL FRAKTUR SMALL V
+<Multi_key> <percent> <f> <w> : "𝔴" U1D534    # MATHEMATICAL FRAKTUR SMALL W
+<Multi_key> <percent> <f> <x> : "𝔵" U1D535    # MATHEMATICAL FRAKTUR SMALL X
+<Multi_key> <percent> <f> <y> : "𝔶" U1D536    # MATHEMATICAL FRAKTUR SMALL Y
+<Multi_key> <percent> <f> <z> : "𝔷" U1D537    # MATHEMATICAL FRAKTUR SMALL Z
 
-<Multi_key> <percent> <f> <b> <A> : "𝕬" U1D56C    # MATHEMATICAL BOLD FRAKTUR CAPITAL A
-<Multi_key> <percent> <f> <b> <B> : "𝕭" U1D56D    # MATHEMATICAL BOLD FRAKTUR CAPITAL B
-<Multi_key> <percent> <f> <b> <C> : "𝕮" U1D56E    # MATHEMATICAL BOLD FRAKTUR CAPITAL C
-<Multi_key> <percent> <f> <b> <D> : "𝕯" U1D56F    # MATHEMATICAL BOLD FRAKTUR CAPITAL D
-<Multi_key> <percent> <f> <b> <E> : "𝕰" U1D570    # MATHEMATICAL BOLD FRAKTUR CAPITAL E
-<Multi_key> <percent> <f> <b> <F> : "𝕱" U1D571    # MATHEMATICAL BOLD FRAKTUR CAPITAL F
-<Multi_key> <percent> <f> <b> <G> : "𝕲" U1D572    # MATHEMATICAL BOLD FRAKTUR CAPITAL G
-<Multi_key> <percent> <f> <b> <H> : "𝕳" U1D573    # MATHEMATICAL BOLD FRAKTUR CAPITAL H
-<Multi_key> <percent> <f> <b> <I> : "𝕴" U1D574    # MATHEMATICAL BOLD FRAKTUR CAPITAL I
-<Multi_key> <percent> <f> <b> <J> : "𝕵" U1D575    # MATHEMATICAL BOLD FRAKTUR CAPITAL J
-<Multi_key> <percent> <f> <b> <K> : "𝕶" U1D576    # MATHEMATICAL BOLD FRAKTUR CAPITAL K
-<Multi_key> <percent> <f> <b> <L> : "𝕷" U1D577    # MATHEMATICAL BOLD FRAKTUR CAPITAL L
-<Multi_key> <percent> <f> <b> <M> : "𝕸" U1D578    # MATHEMATICAL BOLD FRAKTUR CAPITAL M
-<Multi_key> <percent> <f> <b> <N> : "𝕹" U1D579    # MATHEMATICAL BOLD FRAKTUR CAPITAL N
-<Multi_key> <percent> <f> <b> <O> : "𝕺" U1D57A    # MATHEMATICAL BOLD FRAKTUR CAPITAL O
-<Multi_key> <percent> <f> <b> <P> : "𝕻" U1D57B    # MATHEMATICAL BOLD FRAKTUR CAPITAL P
-<Multi_key> <percent> <f> <b> <Q> : "𝕼" U1D57C    # MATHEMATICAL BOLD FRAKTUR CAPITAL Q
-<Multi_key> <percent> <f> <b> <R> : "𝕽" U1D57D    # MATHEMATICAL BOLD FRAKTUR CAPITAL R
-<Multi_key> <percent> <f> <b> <S> : "𝕾" U1D57E    # MATHEMATICAL BOLD FRAKTUR CAPITAL S
-<Multi_key> <percent> <f> <b> <T> : "𝕿" U1D57F    # MATHEMATICAL BOLD FRAKTUR CAPITAL T
-<Multi_key> <percent> <f> <b> <U> : "𝖀" U1D580    # MATHEMATICAL BOLD FRAKTUR CAPITAL U
-<Multi_key> <percent> <f> <b> <V> : "𝖁" U1D581    # MATHEMATICAL BOLD FRAKTUR CAPITAL V
-<Multi_key> <percent> <f> <b> <W> : "𝖂" U1D582    # MATHEMATICAL BOLD FRAKTUR CAPITAL W
-<Multi_key> <percent> <f> <b> <X> : "𝖃" U1D583    # MATHEMATICAL BOLD FRAKTUR CAPITAL X
-<Multi_key> <percent> <f> <b> <Y> : "𝖄" U1D584    # MATHEMATICAL BOLD FRAKTUR CAPITAL Y
-<Multi_key> <percent> <f> <b> <Z> : "𝖅" U1D585    # MATHEMATICAL BOLD FRAKTUR CAPITAL Z
-<Multi_key> <percent> <f> <b> <a> : "𝖆" U1D586    # MATHEMATICAL BOLD FRAKTUR SMALL A
-<Multi_key> <percent> <f> <b> <b> : "𝖇" U1D587    # MATHEMATICAL BOLD FRAKTUR SMALL B
-<Multi_key> <percent> <f> <b> <c> : "𝖈" U1D588    # MATHEMATICAL BOLD FRAKTUR SMALL C
-<Multi_key> <percent> <f> <b> <d> : "𝖉" U1D589    # MATHEMATICAL BOLD FRAKTUR SMALL D
-<Multi_key> <percent> <f> <b> <e> : "𝖊" U1D58A    # MATHEMATICAL BOLD FRAKTUR SMALL E
-<Multi_key> <percent> <f> <b> <f> : "𝖋" U1D58B    # MATHEMATICAL BOLD FRAKTUR SMALL F
-<Multi_key> <percent> <f> <b> <g> : "𝖌" U1D58C    # MATHEMATICAL BOLD FRAKTUR SMALL G
-<Multi_key> <percent> <f> <b> <h> : "𝖍" U1D58D    # MATHEMATICAL BOLD FRAKTUR SMALL H
-<Multi_key> <percent> <f> <b> <i> : "𝖎" U1D58E    # MATHEMATICAL BOLD FRAKTUR SMALL I
-<Multi_key> <percent> <f> <b> <j> : "𝖏" U1D58F    # MATHEMATICAL BOLD FRAKTUR SMALL J
-<Multi_key> <percent> <f> <b> <k> : "𝖐" U1D590    # MATHEMATICAL BOLD FRAKTUR SMALL K
-<Multi_key> <percent> <f> <b> <l> : "𝖑" U1D591    # MATHEMATICAL BOLD FRAKTUR SMALL L
-<Multi_key> <percent> <f> <b> <m> : "𝖒" U1D592    # MATHEMATICAL BOLD FRAKTUR SMALL M
-<Multi_key> <percent> <f> <b> <n> : "𝖓" U1D593    # MATHEMATICAL BOLD FRAKTUR SMALL N
-<Multi_key> <percent> <f> <b> <o> : "𝖔" U1D594    # MATHEMATICAL BOLD FRAKTUR SMALL O
-<Multi_key> <percent> <f> <b> <p> : "𝖕" U1D595    # MATHEMATICAL BOLD FRAKTUR SMALL P
-<Multi_key> <percent> <f> <b> <q> : "𝖖" U1D596    # MATHEMATICAL BOLD FRAKTUR SMALL Q
-<Multi_key> <percent> <f> <b> <r> : "𝖗" U1D597    # MATHEMATICAL BOLD FRAKTUR SMALL R
-<Multi_key> <percent> <f> <b> <s> : "𝖘" U1D598    # MATHEMATICAL BOLD FRAKTUR SMALL S
-<Multi_key> <percent> <f> <b> <t> : "𝖙" U1D599    # MATHEMATICAL BOLD FRAKTUR SMALL T
-<Multi_key> <percent> <f> <b> <u> : "𝖚" U1D59A    # MATHEMATICAL BOLD FRAKTUR SMALL U
-<Multi_key> <percent> <f> <b> <v> : "𝖛" U1D59B    # MATHEMATICAL BOLD FRAKTUR SMALL V
-<Multi_key> <percent> <f> <b> <w> : "𝖜" U1D59C    # MATHEMATICAL BOLD FRAKTUR SMALL W
-<Multi_key> <percent> <f> <b> <x> : "𝖝" U1D59D    # MATHEMATICAL BOLD FRAKTUR SMALL X
-<Multi_key> <percent> <f> <b> <y> : "𝖞" U1D59E    # MATHEMATICAL BOLD FRAKTUR SMALL Y
-<Multi_key> <percent> <f> <b> <z> : "𝖟" U1D59F    # MATHEMATICAL BOLD FRAKTUR SMALL Z
+<Multi_key> <percent> <f> <asterisk> <A> : "𝕬" U1D56C    # MATHEMATICAL BOLD FRAKTUR CAPITAL A
+<Multi_key> <percent> <f> <asterisk> <B> : "𝕭" U1D56D    # MATHEMATICAL BOLD FRAKTUR CAPITAL B
+<Multi_key> <percent> <f> <asterisk> <C> : "𝕮" U1D56E    # MATHEMATICAL BOLD FRAKTUR CAPITAL C
+<Multi_key> <percent> <f> <asterisk> <D> : "𝕯" U1D56F    # MATHEMATICAL BOLD FRAKTUR CAPITAL D
+<Multi_key> <percent> <f> <asterisk> <E> : "𝕰" U1D570    # MATHEMATICAL BOLD FRAKTUR CAPITAL E
+<Multi_key> <percent> <f> <asterisk> <F> : "𝕱" U1D571    # MATHEMATICAL BOLD FRAKTUR CAPITAL F
+<Multi_key> <percent> <f> <asterisk> <G> : "𝕲" U1D572    # MATHEMATICAL BOLD FRAKTUR CAPITAL G
+<Multi_key> <percent> <f> <asterisk> <H> : "𝕳" U1D573    # MATHEMATICAL BOLD FRAKTUR CAPITAL H
+<Multi_key> <percent> <f> <asterisk> <I> : "𝕴" U1D574    # MATHEMATICAL BOLD FRAKTUR CAPITAL I
+<Multi_key> <percent> <f> <asterisk> <J> : "𝕵" U1D575    # MATHEMATICAL BOLD FRAKTUR CAPITAL J
+<Multi_key> <percent> <f> <asterisk> <K> : "𝕶" U1D576    # MATHEMATICAL BOLD FRAKTUR CAPITAL K
+<Multi_key> <percent> <f> <asterisk> <L> : "𝕷" U1D577    # MATHEMATICAL BOLD FRAKTUR CAPITAL L
+<Multi_key> <percent> <f> <asterisk> <M> : "𝕸" U1D578    # MATHEMATICAL BOLD FRAKTUR CAPITAL M
+<Multi_key> <percent> <f> <asterisk> <N> : "𝕹" U1D579    # MATHEMATICAL BOLD FRAKTUR CAPITAL N
+<Multi_key> <percent> <f> <asterisk> <O> : "𝕺" U1D57A    # MATHEMATICAL BOLD FRAKTUR CAPITAL O
+<Multi_key> <percent> <f> <asterisk> <P> : "𝕻" U1D57B    # MATHEMATICAL BOLD FRAKTUR CAPITAL P
+<Multi_key> <percent> <f> <asterisk> <Q> : "𝕼" U1D57C    # MATHEMATICAL BOLD FRAKTUR CAPITAL Q
+<Multi_key> <percent> <f> <asterisk> <R> : "𝕽" U1D57D    # MATHEMATICAL BOLD FRAKTUR CAPITAL R
+<Multi_key> <percent> <f> <asterisk> <S> : "𝕾" U1D57E    # MATHEMATICAL BOLD FRAKTUR CAPITAL S
+<Multi_key> <percent> <f> <asterisk> <T> : "𝕿" U1D57F    # MATHEMATICAL BOLD FRAKTUR CAPITAL T
+<Multi_key> <percent> <f> <asterisk> <U> : "𝖀" U1D580    # MATHEMATICAL BOLD FRAKTUR CAPITAL U
+<Multi_key> <percent> <f> <asterisk> <V> : "𝖁" U1D581    # MATHEMATICAL BOLD FRAKTUR CAPITAL V
+<Multi_key> <percent> <f> <asterisk> <W> : "𝖂" U1D582    # MATHEMATICAL BOLD FRAKTUR CAPITAL W
+<Multi_key> <percent> <f> <asterisk> <X> : "𝖃" U1D583    # MATHEMATICAL BOLD FRAKTUR CAPITAL X
+<Multi_key> <percent> <f> <asterisk> <Y> : "𝖄" U1D584    # MATHEMATICAL BOLD FRAKTUR CAPITAL Y
+<Multi_key> <percent> <f> <asterisk> <Z> : "𝖅" U1D585    # MATHEMATICAL BOLD FRAKTUR CAPITAL Z
+<Multi_key> <percent> <f> <asterisk> <a> : "𝖆" U1D586    # MATHEMATICAL BOLD FRAKTUR SMALL A
+<Multi_key> <percent> <f> <asterisk> <b> : "𝖇" U1D587    # MATHEMATICAL BOLD FRAKTUR SMALL B
+<Multi_key> <percent> <f> <asterisk> <c> : "𝖈" U1D588    # MATHEMATICAL BOLD FRAKTUR SMALL C
+<Multi_key> <percent> <f> <asterisk> <d> : "𝖉" U1D589    # MATHEMATICAL BOLD FRAKTUR SMALL D
+<Multi_key> <percent> <f> <asterisk> <e> : "𝖊" U1D58A    # MATHEMATICAL BOLD FRAKTUR SMALL E
+<Multi_key> <percent> <f> <asterisk> <f> : "𝖋" U1D58B    # MATHEMATICAL BOLD FRAKTUR SMALL F
+<Multi_key> <percent> <f> <asterisk> <g> : "𝖌" U1D58C    # MATHEMATICAL BOLD FRAKTUR SMALL G
+<Multi_key> <percent> <f> <asterisk> <h> : "𝖍" U1D58D    # MATHEMATICAL BOLD FRAKTUR SMALL H
+<Multi_key> <percent> <f> <asterisk> <i> : "𝖎" U1D58E    # MATHEMATICAL BOLD FRAKTUR SMALL I
+<Multi_key> <percent> <f> <asterisk> <j> : "𝖏" U1D58F    # MATHEMATICAL BOLD FRAKTUR SMALL J
+<Multi_key> <percent> <f> <asterisk> <k> : "𝖐" U1D590    # MATHEMATICAL BOLD FRAKTUR SMALL K
+<Multi_key> <percent> <f> <asterisk> <l> : "𝖑" U1D591    # MATHEMATICAL BOLD FRAKTUR SMALL L
+<Multi_key> <percent> <f> <asterisk> <m> : "𝖒" U1D592    # MATHEMATICAL BOLD FRAKTUR SMALL M
+<Multi_key> <percent> <f> <asterisk> <n> : "𝖓" U1D593    # MATHEMATICAL BOLD FRAKTUR SMALL N
+<Multi_key> <percent> <f> <asterisk> <o> : "𝖔" U1D594    # MATHEMATICAL BOLD FRAKTUR SMALL O
+<Multi_key> <percent> <f> <asterisk> <p> : "𝖕" U1D595    # MATHEMATICAL BOLD FRAKTUR SMALL P
+<Multi_key> <percent> <f> <asterisk> <q> : "𝖖" U1D596    # MATHEMATICAL BOLD FRAKTUR SMALL Q
+<Multi_key> <percent> <f> <asterisk> <r> : "𝖗" U1D597    # MATHEMATICAL BOLD FRAKTUR SMALL R
+<Multi_key> <percent> <f> <asterisk> <s> : "𝖘" U1D598    # MATHEMATICAL BOLD FRAKTUR SMALL S
+<Multi_key> <percent> <f> <asterisk> <t> : "𝖙" U1D599    # MATHEMATICAL BOLD FRAKTUR SMALL T
+<Multi_key> <percent> <f> <asterisk> <u> : "𝖚" U1D59A    # MATHEMATICAL BOLD FRAKTUR SMALL U
+<Multi_key> <percent> <f> <asterisk> <v> : "𝖛" U1D59B    # MATHEMATICAL BOLD FRAKTUR SMALL V
+<Multi_key> <percent> <f> <asterisk> <w> : "𝖜" U1D59C    # MATHEMATICAL BOLD FRAKTUR SMALL W
+<Multi_key> <percent> <f> <asterisk> <x> : "𝖝" U1D59D    # MATHEMATICAL BOLD FRAKTUR SMALL X
+<Multi_key> <percent> <f> <asterisk> <y> : "𝖞" U1D59E    # MATHEMATICAL BOLD FRAKTUR SMALL Y
+<Multi_key> <percent> <f> <asterisk> <z> : "𝖟" U1D59F    # MATHEMATICAL BOLD FRAKTUR SMALL Z
 
 <Multi_key> <percent> <m> <A> : "𝙰" U1D670    # MATHEMATICAL MONOSPACE CAPITAL A
 <Multi_key> <percent> <m> <B> : "𝙱" U1D671    # MATHEMATICAL MONOSPACE CAPITAL B
@@ -1255,6 +1256,12 @@ include "%L"
 <Multi_key> <percent> <d> <8> : "𝟠" U1D7E0    # MATHEMATICAL DOUBLE-STRUCK DIGIT EIGHT
 <Multi_key> <percent> <d> <9> : "𝟡" U1D7E1    # MATHEMATICAL DOUBLE-STRUCK DIGIT NINE
 
+<Multi_key> <percent> <d> <slash> <D> : "ⅅ" U2145   # DOUBLE-STRUCK ITALIC CAPITAL D
+<Multi_key> <percent> <d> <slash> <d> : "ⅆ" U2146   # DOUBLE-STRUCK ITALIC SMALL D
+<Multi_key> <percent> <d> <slash> <e> : "ⅇ" U2147   # DOUBLE-STRUCK ITALIC SMALL E
+<Multi_key> <percent> <d> <slash> <i> : "ⅈ" U2148   # DOUBLE-STRUCK ITALIC SMALL I
+<Multi_key> <percent> <d> <slash> <j> : "ⅉ" U2149   # DOUBLE-STRUCK ITALIC SMALL J
+
 #############################
 # Multigraphs and ligatures #
 #############################
@@ -1369,6 +1376,7 @@ include "%L"
 <Multi_key> <parenleft> <I> <P> <parenright> : "卭" U536D   # CJK UNIFIED IDEOGRAPH-536D (visually similar)
 <Multi_key> <parenleft> <I> <S> <parenright> : "巧" U5DE7   # CJK UNIFIED IDEOGRAPH-5DE7 (visually similar)     
 <Multi_key> <parenleft> <i> <s> <parenright> : "ꪭ" UAAAD   # TAI VIET LETTER HIGH HO (visually similar)
+<Multi_key> <parenleft> <i> <t> <parenright> : "计" U8BA1   # CJK UNIFIED IDEOGRAPH-8BA1 (visually similar)
 <Multi_key> <parenleft> <I> <U> <parenright> : "㍺" U337A   # SQUARE IU
 <Multi_key> <parenleft> <i> <u> <parenright> : "𐬈" U10B08   # AVESTAN LETTER E (visually similar)
 <Multi_key> <parenleft> <I> <V> <parenright> : "Ⅳ" U2163   # ROMAN NUMERAL FOUR
@@ -1448,16 +1456,20 @@ include "%L"
 <Multi_key> <parenleft> <O> <E> <parenright> : "Œ" U0152   # LATIN CAPITAL LIGATURE OE
 <Multi_key> <parenleft> <o> <e> <parenright> : "œ" U0153   # LATIN SMALL LIGATURE OE
 <Multi_key> <parenleft> <O> <H> <parenright> : "애" UC560   # HANGUL SYLLABLE AE (visually similar)
+<Multi_key> <parenleft> <o> <h> <parenright> : "㕤" U3564   # CJK UNIFIED IDEOGRAPH-3564 (visually similar)
 <Multi_key> <parenleft> <O> <I> <parenright> : "Ꮊ" U13BA   # CHEROKEE LETTER ME (visually similar)
 <Multi_key> <parenleft> <o> <i> <parenright> : "ꮊ" UAB8A   # CHEROKEE SMALL LETTER ME (visually similar)
-<Multi_key> <parenleft> <O> <J> <parenright> : "叮" U53EE   # CJK UNIFIED IDEOGRAPH-53EE
+<Multi_key> <parenleft> <O> <J> <parenright> : "叮" U53EE   # CJK UNIFIED IDEOGRAPH-53EE (visually similar)
 <Multi_key> <parenleft> <O> <l> <parenright> : "이" UC774   # HANGUL SYLLABLE I (visually similar)
 <Multi_key> <parenleft> <o> <o> <l> <parenright> : "𑈥" U11225   # KHOJKI LETTER YA (visually similar)
 <Multi_key> <parenleft> <O> <O> <parenright> : "Ꝏ" UA74E   # LATIN CAPITAL LETTER OO
 <Multi_key> <parenleft> <o> <o> <parenright> : "ꝏ" UA74F   # LATIN SMALL LETTER OO
 <Multi_key> <parenleft> <O> <P> <parenright> : "叩" U53E9   # CJK UNIFIED IDEOGRAPH-53E9 (visually similar)
+<Multi_key> <parenleft> <O> <R> <parenright> : "呎" U544E   # CJK UNIFIED IDEOGRAPH-544E (visually similar)
 <Multi_key> <parenleft> <o> <s> <parenright> : "𑄢" U11122   # CHAKMA LETTER RAA (visually similar)
+<Multi_key> <parenleft> <o> <t> <parenright> : "𠮟" U20B9F   # CJK UNIFIED IDEOGRAPH-20B9F (visually similar)
 <Multi_key> <parenleft> <o> <V> <parenright> : "㍵" U3375   # SQUARE OV
+<Multi_key> <parenleft> <O> <Y> <parenright> : "吖" U5416   # CJK UNIFIED IDEOGRAPH-5416 (visually similar)
 <Multi_key> <parenleft> <O> <y> <parenright> : "Ѹ" U0478   # CYRILLIC CAPITAL LETTER UK (visually similar)
 <Multi_key> <parenleft> <o> <y> <parenright> : "ѹ" U0479   # CYRILLIC SMALL LETTER UK (visually similar)
 <Multi_key> <parenleft> <o> <z> <parenright> : "𑄑" U11111   # CHAKMA LETTER TTAA (visually similar)
@@ -1543,6 +1555,7 @@ include "%L"
 <Multi_key> <parenleft> <x> <i> <i> <parenright> : "ⅻ" U217B   # SMALL ROMAN NUMERAL TWELVE
 <Multi_key> <parenleft> <X> <I> <parenright> : "Ⅺ" U216A   # ROMAN NUMERAL ELEVEN
 <Multi_key> <parenleft> <x> <i> <parenright> : "ⅺ" U217A   # SMALL ROMAN NUMERAL ELEVEN
+<Multi_key> <parenleft> <X> <I> <J> <parenright> : "刈" U5208   # CJK UNIFIED IDEOGRAPH-5208 (visually similar)
 
 <Multi_key> <parenleft> <Z> <B> <parenright> : "邔" U9094   # CJK UNIFIED IDEOGRAPH-9094 (visually similar)
 <Multi_key> <parenleft> <z> <e> <parenright> : "𑣰" U118F0   # WARANG CITI NUMBER SEVENTY (visually similar)
@@ -4352,6 +4365,8 @@ include "%L"
 <Multi_key> <backslash> <E>           : "∃"  U2203   # THERE EXISTS
 <Multi_key> <slash> <E>               : "∄"  U2204   # THERE DOES NOT EXIST
 <Multi_key> <backslash> <backslash>   : "∖"  U2216   # SET MINUS
+<Multi_key> <slash> <0>               : "∅"  U2205   # EMPTY SET (alternatively {})
+<Multi_key> <0> <slash>               : "∅"  U2205   # EMPTY SET (alternatively {})
 <Multi_key> <bar> <T>                 : "⊤"  U22A4   # DOWN TACK (TEE)
 <Multi_key> <bar> <underscore>        : "⊥"  U22A5   # UP TACK
 <Multi_key> <bar> <F>                 : "⊥"  U22A5   # UP TACK
@@ -4374,6 +4389,7 @@ include "%L"
 <Multi_key> <2> <less>                : "≪"  U226A   # MUCH LESS-THAN
 <Multi_key> <3> <less>                : "⋘"  U22D8   # VERY MUCH LESS-THAN
 <Multi_key> <2> <greater>             : "≫"  U226B   # MUCH GREATER-THAN
+<Multi_key> <3> <greater>             : "⋙"  U22D9   # VERY MUCH GREATER-THAN
 <Multi_key> <less> <bar>              : "⊲"  U22B2   # NORMAL SUBGROUP OF
 <Multi_key> <greater> <bar>           : "⊳"  U22B3   # CONTAINS AS NORMAL SUBGROUP OF (not to be confused with |>)
 <Multi_key> <bar> <X> <bar>           : "⋈"  U22C8   # BOWTIE (JOIN)
@@ -5832,7 +5848,7 @@ include "%L"
 <Multi_key> <n> <a> <p> <p> <y>     : "🚼"  U1F6BC        # BABY SYMBOL (NAPPY)
 <Multi_key> <p> <a> <s> <s> <p>     : "🛂"  U1F6C2        # PASSPORT CONTROL
 <Multi_key> <w> <a> <t> <e> <r>     : "🚰"  U1F6B0        # POTABLE WATER SYMBOL
-<Multi_key> <w> <c> <h> <a> <i> <r> : "♿️"  U267F UFE0F   # WHEELCHAIR SYMBOL EMOJI
+<Multi_key> <w> <c> <h> <a> <i> <r> : "♿"  U267F         # WHEELCHAIR SYMBOL
 
 <Multi_key> <backslash> <b> <i> <k> <e>         : "🚳"  U1F6B3    # NO BICYCLES
 <Multi_key> <backslash> <d> <r> <i> <n> <k>     : "🚱"  U1F6B1    # NON-POTABLE WATER SYMBOL
