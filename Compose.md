@@ -18,17 +18,17 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Bidirectional control** (10): LRI RLI PDI etc
 * **Currency symbols** (19): ₱ ₿ ₪ etc
 
-### Latin script characters (1357)
+### Latin script characters (1386)
 * **International Phonetic Alphabet** (134): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (726): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
-* **Multigraphs and ligatures** (232): ʣ ㏈ etc
+* **Multigraphs and ligatures** (261): ʣ ㏈ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
 ### Non-Latin script characters (2083)
 * **Arabic** (and Syriac & Neo-Tifinagh) (168): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
-* **Brahmi** (Brahmi, Devanagari and Tamil) (281): 𑀭𑁂𑀟𑀺𑀝 रेडिट ரெதிட etc
+* **Brahmi** (Brahmi, Devanagari & Tamil) (281): 𑀭𑁂𑀟𑀺𑀝 रेडिट ரெதிட etc
 * **ConScripts** (Deseret & Shavian) (128): 𐐡𐐇𐐔𐐆𐐓 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
 * **Georgian** (154): რედდიტ ႰႤႣႣႨႲ etc
