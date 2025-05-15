@@ -28,7 +28,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 ### Non-Latin script characters (2083)
 * **Arabic** (and Syriac & Neo-Tifinagh) (168): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
-* **Brahmi** (Brahmi, Devanagari and Tamil) (281): 𑀭𑁂𑀟𑀺𑀝 रेडिट ரெதிட etc
+* **Brahmi** (Brahmi, Devanagari & Tamil) (281): 𑀭𑁂𑀟𑀺𑀝 रेडिट ரெதிட etc
 * **ConScripts** (Deseret & Shavian) (128): 𐐡𐐇𐐔𐐆𐐓 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
 * **Georgian** (154): რედდიტ ႰႤႣႣႨႲ etc
