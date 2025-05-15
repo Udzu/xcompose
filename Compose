@@ -509,9 +509,9 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <colon>  : "˸" U02F8    # MODIFIER LETTER RAISED COLON
 <Multi_key> <asciicircum> <underscore> <exclam> : "ꜝ" UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
 
-#####################################
-# Mathematical alphanumeric symbols #
-#####################################
+##############################
+# Mathematical alphanumerics #
+##############################
 
 # Convention: % + script + [weight] + character
 #   font: n = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace, d = double-struck
@@ -1261,6 +1261,166 @@ include "%L"
 <Multi_key> <percent> <d> <slash> <e> : "ⅇ" U2147   # DOUBLE-STRUCK ITALIC SMALL E
 <Multi_key> <percent> <d> <slash> <i> : "ⅈ" U2148   # DOUBLE-STRUCK ITALIC SMALL I
 <Multi_key> <percent> <d> <slash> <j> : "ⅉ" U2149   # DOUBLE-STRUCK ITALIC SMALL J
+
+##########################
+# Enclosed alphanumerics #
+##########################
+
+# Convention: prefix + ( + characters + )
+
+<Multi_key> <2> <parenleft> <1> <parenright> : "⓵" U24F5   # DOUBLE CIRCLED DIGIT ONE
+<Multi_key> <2> <parenleft> <2> <parenright> : "⓶" U24F6   # DOUBLE CIRCLED DIGIT TWO
+<Multi_key> <2> <parenleft> <3> <parenright> : "⓷" U24F7   # DOUBLE CIRCLED DIGIT THREE
+<Multi_key> <2> <parenleft> <4> <parenright> : "⓸" U24F8   # DOUBLE CIRCLED DIGIT FOUR
+<Multi_key> <2> <parenleft> <5> <parenright> : "⓹" U24F9   # DOUBLE CIRCLED DIGIT FIVE
+<Multi_key> <2> <parenleft> <6> <parenright> : "⓺" U24FA   # DOUBLE CIRCLED DIGIT SIX
+<Multi_key> <2> <parenleft> <7> <parenright> : "⓻" U24FB   # DOUBLE CIRCLED DIGIT SEVEN
+<Multi_key> <2> <parenleft> <8> <parenright> : "⓼" U24FC   # DOUBLE CIRCLED DIGIT EIGHT
+<Multi_key> <2> <parenleft> <9> <parenright> : "⓽" U24FD   # DOUBLE CIRCLED DIGIT NINE
+<Multi_key> <2> <parenleft> <1> <0> <parenright> : "⓾" U24FE   # DOUBLE CIRCLED NUMBER TEN
+<Multi_key> <2> <parenleft> <x> <parenright> : "⨷" U2A37   # MULTIPLICATION SIGN IN DOUBLE CIRCLE
+
+<Multi_key> <exclam> <parenleft> <0> <parenright> : "⓿" U24FF   # NEGATIVE CIRCLED DIGIT ZERO
+<Multi_key> <exclam> <parenleft> <1> <parenright> : "❶" U2776   # DINGBAT NEGATIVE CIRCLED DIGIT ONE
+<Multi_key> <exclam> <parenleft> <2> <parenright> : "❷" U2777   # DINGBAT NEGATIVE CIRCLED DIGIT TWO
+<Multi_key> <exclam> <parenleft> <3> <parenright> : "❸" U2778   # DINGBAT NEGATIVE CIRCLED DIGIT THREE
+<Multi_key> <exclam> <parenleft> <4> <parenright> : "❹" U2779   # DINGBAT NEGATIVE CIRCLED DIGIT FOUR
+<Multi_key> <exclam> <parenleft> <5> <parenright> : "❺" U277A   # DINGBAT NEGATIVE CIRCLED DIGIT FIVE
+<Multi_key> <exclam> <parenleft> <6> <parenright> : "❻" U277B   # DINGBAT NEGATIVE CIRCLED DIGIT SIX
+<Multi_key> <exclam> <parenleft> <7> <parenright> : "❼" U277C   # DINGBAT NEGATIVE CIRCLED DIGIT SEVEN
+<Multi_key> <exclam> <parenleft> <8> <parenright> : "❽" U277D   # DINGBAT NEGATIVE CIRCLED DIGIT EIGHT
+<Multi_key> <exclam> <parenleft> <9> <parenright> : "❾" U277E   # DINGBAT NEGATIVE CIRCLED DIGIT NINE
+<Multi_key> <exclam> <parenleft> <1> <0> <parenright> : "❿" U277F   # DINGBAT NEGATIVE CIRCLED NUMBER TEN
+<Multi_key> <exclam> <parenleft> <1> <1> <parenright> : "⓫" U24EB   # NEGATIVE CIRCLED NUMBER ELEVEN
+<Multi_key> <exclam> <parenleft> <1> <2> <parenright> : "⓬" U24EC   # NEGATIVE CIRCLED NUMBER TWELVE
+<Multi_key> <exclam> <parenleft> <1> <3> <parenright> : "⓭" U24ED   # NEGATIVE CIRCLED NUMBER THIRTEEN
+<Multi_key> <exclam> <parenleft> <1> <4> <parenright> : "⓮" U24EE   # NEGATIVE CIRCLED NUMBER FOURTEEN
+<Multi_key> <exclam> <parenleft> <1> <5> <parenright> : "⓯" U24EF   # NEGATIVE CIRCLED NUMBER FIFTEEN
+<Multi_key> <exclam> <parenleft> <1> <6> <parenright> : "⓰" U24F0   # NEGATIVE CIRCLED NUMBER SIXTEEN
+<Multi_key> <exclam> <parenleft> <1> <7> <parenright> : "⓱" U24F1   # NEGATIVE CIRCLED NUMBER SEVENTEEN
+<Multi_key> <exclam> <parenleft> <1> <8> <parenright> : "⓲" U24F2   # NEGATIVE CIRCLED NUMBER EIGHTEEN
+<Multi_key> <exclam> <parenleft> <1> <9> <parenright> : "⓳" U24F3   # NEGATIVE CIRCLED NUMBER NINETEEN
+<Multi_key> <exclam> <parenleft> <2> <0> <parenright> : "⓴" U24F4   # NEGATIVE CIRCLED NUMBER TWENTY
+<Multi_key> <exclam> <parenleft> <A> <parenright> : "🅐" U1F150   # NEGATIVE CIRCLED LATIN CAPITAL LETTER A
+<Multi_key> <exclam> <parenleft> <B> <parenright> : "🅑" U1F151   # NEGATIVE CIRCLED LATIN CAPITAL LETTER B
+<Multi_key> <exclam> <parenleft> <C> <parenright> : "🅒" U1F152   # NEGATIVE CIRCLED LATIN CAPITAL LETTER C
+<Multi_key> <exclam> <parenleft> <D> <parenright> : "🅓" U1F153   # NEGATIVE CIRCLED LATIN CAPITAL LETTER D
+<Multi_key> <exclam> <parenleft> <E> <parenright> : "🅔" U1F154   # NEGATIVE CIRCLED LATIN CAPITAL LETTER E
+<Multi_key> <exclam> <parenleft> <F> <parenright> : "🅕" U1F155   # NEGATIVE CIRCLED LATIN CAPITAL LETTER F
+<Multi_key> <exclam> <parenleft> <G> <parenright> : "🅖" U1F156   # NEGATIVE CIRCLED LATIN CAPITAL LETTER G
+<Multi_key> <exclam> <parenleft> <H> <parenright> : "🅗" U1F157   # NEGATIVE CIRCLED LATIN CAPITAL LETTER H
+<Multi_key> <exclam> <parenleft> <I> <parenright> : "🅘" U1F158   # NEGATIVE CIRCLED LATIN CAPITAL LETTER I
+<Multi_key> <exclam> <parenleft> <J> <parenright> : "🅙" U1F159   # NEGATIVE CIRCLED LATIN CAPITAL LETTER J
+<Multi_key> <exclam> <parenleft> <K> <parenright> : "🅚" U1F15A   # NEGATIVE CIRCLED LATIN CAPITAL LETTER K
+<Multi_key> <exclam> <parenleft> <L> <parenright> : "🅛" U1F15B   # NEGATIVE CIRCLED LATIN CAPITAL LETTER L
+<Multi_key> <exclam> <parenleft> <M> <parenright> : "🅜" U1F15C   # NEGATIVE CIRCLED LATIN CAPITAL LETTER M
+<Multi_key> <exclam> <parenleft> <N> <parenright> : "🅝" U1F15D   # NEGATIVE CIRCLED LATIN CAPITAL LETTER N
+<Multi_key> <exclam> <parenleft> <O> <parenright> : "🅞" U1F15E   # NEGATIVE CIRCLED LATIN CAPITAL LETTER O
+<Multi_key> <exclam> <parenleft> <P> <parenright> : "🅟" U1F15F   # NEGATIVE CIRCLED LATIN CAPITAL LETTER P
+<Multi_key> <exclam> <parenleft> <Q> <parenright> : "🅠" U1F160   # NEGATIVE CIRCLED LATIN CAPITAL LETTER Q
+<Multi_key> <exclam> <parenleft> <R> <parenright> : "🅡" U1F161   # NEGATIVE CIRCLED LATIN CAPITAL LETTER R
+<Multi_key> <exclam> <parenleft> <S> <parenright> : "🅢" U1F162   # NEGATIVE CIRCLED LATIN CAPITAL LETTER S
+<Multi_key> <exclam> <parenleft> <T> <parenright> : "🅣" U1F163   # NEGATIVE CIRCLED LATIN CAPITAL LETTER T
+<Multi_key> <exclam> <parenleft> <U> <parenright> : "🅤" U1F164   # NEGATIVE CIRCLED LATIN CAPITAL LETTER U
+<Multi_key> <exclam> <parenleft> <V> <parenright> : "🅥" U1F165   # NEGATIVE CIRCLED LATIN CAPITAL LETTER V
+<Multi_key> <exclam> <parenleft> <W> <parenright> : "🅦" U1F166   # NEGATIVE CIRCLED LATIN CAPITAL LETTER W
+<Multi_key> <exclam> <parenleft> <X> <parenright> : "🅧" U1F167   # NEGATIVE CIRCLED LATIN CAPITAL LETTER X
+<Multi_key> <exclam> <parenleft> <Y> <parenright> : "🅨" U1F168   # NEGATIVE CIRCLED LATIN CAPITAL LETTER Y
+<Multi_key> <exclam> <parenleft> <Z> <parenright> : "🅩" U1F169   # NEGATIVE CIRCLED LATIN CAPITAL LETTER Z
+
+<Multi_key> <asciitilde> <parenleft> <1> <parenright> : "⑴" U2474   # PARENTHESIZED DIGIT ONE
+<Multi_key> <asciitilde> <parenleft> <2> <parenright> : "⑵" U2475   # PARENTHESIZED DIGIT TWO
+<Multi_key> <asciitilde> <parenleft> <3> <parenright> : "⑶" U2476   # PARENTHESIZED DIGIT THREE
+<Multi_key> <asciitilde> <parenleft> <4> <parenright> : "⑷" U2477   # PARENTHESIZED DIGIT FOUR
+<Multi_key> <asciitilde> <parenleft> <5> <parenright> : "⑸" U2478   # PARENTHESIZED DIGIT FIVE
+<Multi_key> <asciitilde> <parenleft> <6> <parenright> : "⑹" U2479   # PARENTHESIZED DIGIT SIX
+<Multi_key> <asciitilde> <parenleft> <7> <parenright> : "⑺" U247A   # PARENTHESIZED DIGIT SEVEN
+<Multi_key> <asciitilde> <parenleft> <8> <parenright> : "⑻" U247B   # PARENTHESIZED DIGIT EIGHT
+<Multi_key> <asciitilde> <parenleft> <9> <parenright> : "⑼" U247C   # PARENTHESIZED DIGIT NINE
+<Multi_key> <asciitilde> <parenleft> <1> <0> <parenright> : "⑽" U247D   # PARENTHESIZED NUMBER TEN
+<Multi_key> <asciitilde> <parenleft> <1> <1> <parenright> : "⑾" U247E   # PARENTHESIZED NUMBER ELEVEN
+<Multi_key> <asciitilde> <parenleft> <1> <2> <parenright> : "⑿" U247F   # PARENTHESIZED NUMBER TWELVE
+<Multi_key> <asciitilde> <parenleft> <1> <3> <parenright> : "⒀" U2480   # PARENTHESIZED NUMBER THIRTEEN
+<Multi_key> <asciitilde> <parenleft> <1> <4> <parenright> : "⒁" U2481   # PARENTHESIZED NUMBER FOURTEEN
+<Multi_key> <asciitilde> <parenleft> <1> <5> <parenright> : "⒂" U2482   # PARENTHESIZED NUMBER FIFTEEN
+<Multi_key> <asciitilde> <parenleft> <1> <6> <parenright> : "⒃" U2483   # PARENTHESIZED NUMBER SIXTEEN
+<Multi_key> <asciitilde> <parenleft> <1> <7> <parenright> : "⒄" U2484   # PARENTHESIZED NUMBER SEVENTEEN
+<Multi_key> <asciitilde> <parenleft> <1> <8> <parenright> : "⒅" U2485   # PARENTHESIZED NUMBER EIGHTEEN
+<Multi_key> <asciitilde> <parenleft> <1> <9> <parenright> : "⒆" U2486   # PARENTHESIZED NUMBER NINETEEN
+<Multi_key> <asciitilde> <parenleft> <2> <0> <parenright> : "⒇" U2487   # PARENTHESIZED NUMBER TWENTY
+<Multi_key> <asciitilde> <parenleft> <a> <parenright> : "⒜" U249C   # PARENTHESIZED LATIN SMALL LETTER A
+<Multi_key> <asciitilde> <parenleft> <b> <parenright> : "⒝" U249D   # PARENTHESIZED LATIN SMALL LETTER B
+<Multi_key> <asciitilde> <parenleft> <c> <parenright> : "⒞" U249E   # PARENTHESIZED LATIN SMALL LETTER C
+<Multi_key> <asciitilde> <parenleft> <d> <parenright> : "⒟" U249F   # PARENTHESIZED LATIN SMALL LETTER D
+<Multi_key> <asciitilde> <parenleft> <e> <parenright> : "⒠" U24A0   # PARENTHESIZED LATIN SMALL LETTER E
+<Multi_key> <asciitilde> <parenleft> <f> <parenright> : "⒡" U24A1   # PARENTHESIZED LATIN SMALL LETTER F
+<Multi_key> <asciitilde> <parenleft> <g> <parenright> : "⒢" U24A2   # PARENTHESIZED LATIN SMALL LETTER G
+<Multi_key> <asciitilde> <parenleft> <h> <parenright> : "⒣" U24A3   # PARENTHESIZED LATIN SMALL LETTER H
+<Multi_key> <asciitilde> <parenleft> <i> <parenright> : "⒤" U24A4   # PARENTHESIZED LATIN SMALL LETTER I
+<Multi_key> <asciitilde> <parenleft> <j> <parenright> : "⒥" U24A5   # PARENTHESIZED LATIN SMALL LETTER J
+<Multi_key> <asciitilde> <parenleft> <k> <parenright> : "⒦" U24A6   # PARENTHESIZED LATIN SMALL LETTER K
+<Multi_key> <asciitilde> <parenleft> <l> <parenright> : "⒧" U24A7   # PARENTHESIZED LATIN SMALL LETTER L
+<Multi_key> <asciitilde> <parenleft> <m> <parenright> : "⒨" U24A8   # PARENTHESIZED LATIN SMALL LETTER M
+<Multi_key> <asciitilde> <parenleft> <n> <parenright> : "⒩" U24A9   # PARENTHESIZED LATIN SMALL LETTER N
+<Multi_key> <asciitilde> <parenleft> <o> <parenright> : "⒪" U24AA   # PARENTHESIZED LATIN SMALL LETTER O
+<Multi_key> <asciitilde> <parenleft> <p> <parenright> : "⒫" U24AB   # PARENTHESIZED LATIN SMALL LETTER P
+<Multi_key> <asciitilde> <parenleft> <q> <parenright> : "⒬" U24AC   # PARENTHESIZED LATIN SMALL LETTER Q
+<Multi_key> <asciitilde> <parenleft> <r> <parenright> : "⒭" U24AD   # PARENTHESIZED LATIN SMALL LETTER R
+<Multi_key> <asciitilde> <parenleft> <s> <parenright> : "⒮" U24AE   # PARENTHESIZED LATIN SMALL LETTER S
+<Multi_key> <asciitilde> <parenleft> <t> <parenright> : "⒯" U24AF   # PARENTHESIZED LATIN SMALL LETTER T
+<Multi_key> <asciitilde> <parenleft> <u> <parenright> : "⒰" U24B0   # PARENTHESIZED LATIN SMALL LETTER U
+<Multi_key> <asciitilde> <parenleft> <v> <parenright> : "⒱" U24B1   # PARENTHESIZED LATIN SMALL LETTER V
+<Multi_key> <asciitilde> <parenleft> <w> <parenright> : "⒲" U24B2   # PARENTHESIZED LATIN SMALL LETTER W
+<Multi_key> <asciitilde> <parenleft> <x> <parenright> : "⒳" U24B3   # PARENTHESIZED LATIN SMALL LETTER X
+<Multi_key> <asciitilde> <parenleft> <y> <parenright> : "⒴" U24B4   # PARENTHESIZED LATIN SMALL LETTER Y
+<Multi_key> <asciitilde> <parenleft> <z> <parenright> : "⒵" U24B5   # PARENTHESIZED LATIN SMALL LETTER Z
+<Multi_key> <asciitilde> <parenleft> <A> <parenright> : "🄐" U1F110   # PARENTHESIZED LATIN CAPITAL LETTER A
+<Multi_key> <asciitilde> <parenleft> <B> <parenright> : "🄑" U1F111   # PARENTHESIZED LATIN CAPITAL LETTER B
+<Multi_key> <asciitilde> <parenleft> <C> <parenright> : "🄒" U1F112   # PARENTHESIZED LATIN CAPITAL LETTER C
+<Multi_key> <asciitilde> <parenleft> <D> <parenright> : "🄓" U1F113   # PARENTHESIZED LATIN CAPITAL LETTER D
+<Multi_key> <asciitilde> <parenleft> <E> <parenright> : "🄔" U1F114   # PARENTHESIZED LATIN CAPITAL LETTER E
+<Multi_key> <asciitilde> <parenleft> <F> <parenright> : "🄕" U1F115   # PARENTHESIZED LATIN CAPITAL LETTER F
+<Multi_key> <asciitilde> <parenleft> <G> <parenright> : "🄖" U1F116   # PARENTHESIZED LATIN CAPITAL LETTER G
+<Multi_key> <asciitilde> <parenleft> <H> <parenright> : "🄗" U1F117   # PARENTHESIZED LATIN CAPITAL LETTER H
+<Multi_key> <asciitilde> <parenleft> <I> <parenright> : "🄘" U1F118   # PARENTHESIZED LATIN CAPITAL LETTER I
+<Multi_key> <asciitilde> <parenleft> <J> <parenright> : "🄙" U1F119   # PARENTHESIZED LATIN CAPITAL LETTER J
+<Multi_key> <asciitilde> <parenleft> <K> <parenright> : "🄚" U1F11A   # PARENTHESIZED LATIN CAPITAL LETTER K
+<Multi_key> <asciitilde> <parenleft> <L> <parenright> : "🄛" U1F11B   # PARENTHESIZED LATIN CAPITAL LETTER L
+<Multi_key> <asciitilde> <parenleft> <M> <parenright> : "🄜" U1F11C   # PARENTHESIZED LATIN CAPITAL LETTER M
+<Multi_key> <asciitilde> <parenleft> <N> <parenright> : "🄝" U1F11D   # PARENTHESIZED LATIN CAPITAL LETTER N
+<Multi_key> <asciitilde> <parenleft> <O> <parenright> : "🄞" U1F11E   # PARENTHESIZED LATIN CAPITAL LETTER O
+<Multi_key> <asciitilde> <parenleft> <P> <parenright> : "🄟" U1F11F   # PARENTHESIZED LATIN CAPITAL LETTER P
+<Multi_key> <asciitilde> <parenleft> <Q> <parenright> : "🄠" U1F120   # PARENTHESIZED LATIN CAPITAL LETTER Q
+<Multi_key> <asciitilde> <parenleft> <R> <parenright> : "🄡" U1F121   # PARENTHESIZED LATIN CAPITAL LETTER R
+<Multi_key> <asciitilde> <parenleft> <S> <parenright> : "🄢" U1F122   # PARENTHESIZED LATIN CAPITAL LETTER S
+<Multi_key> <asciitilde> <parenleft> <T> <parenright> : "🄣" U1F123   # PARENTHESIZED LATIN CAPITAL LETTER T
+<Multi_key> <asciitilde> <parenleft> <U> <parenright> : "🄤" U1F124   # PARENTHESIZED LATIN CAPITAL LETTER U
+<Multi_key> <asciitilde> <parenleft> <V> <parenright> : "🄥" U1F125   # PARENTHESIZED LATIN CAPITAL LETTER V
+<Multi_key> <asciitilde> <parenleft> <W> <parenright> : "🄦" U1F126   # PARENTHESIZED LATIN CAPITAL LETTER W
+<Multi_key> <asciitilde> <parenleft> <X> <parenright> : "🄧" U1F127   # PARENTHESIZED LATIN CAPITAL LETTER X
+<Multi_key> <asciitilde> <parenleft> <Y> <parenright> : "🄨" U1F128   # PARENTHESIZED LATIN CAPITAL LETTER Y
+<Multi_key> <asciitilde> <parenleft> <Z> <parenright> : "🄩" U1F129   # PARENTHESIZED LATIN CAPITAL LETTER Z
+
+<Multi_key> <period> <parenleft> <1> <parenright> : "⒈" U2488   # DIGIT ONE FULL STOP
+<Multi_key> <period> <parenleft> <2> <parenright> : "⒉" U2489   # DIGIT TWO FULL STOP
+<Multi_key> <period> <parenleft> <3> <parenright> : "⒊" U248A   # DIGIT THREE FULL STOP
+<Multi_key> <period> <parenleft> <4> <parenright> : "⒋" U248B   # DIGIT FOUR FULL STOP
+<Multi_key> <period> <parenleft> <5> <parenright> : "⒌" U248C   # DIGIT FIVE FULL STOP
+<Multi_key> <period> <parenleft> <6> <parenright> : "⒍" U248D   # DIGIT SIX FULL STOP
+<Multi_key> <period> <parenleft> <7> <parenright> : "⒎" U248E   # DIGIT SEVEN FULL STOP
+<Multi_key> <period> <parenleft> <8> <parenright> : "⒏" U248F   # DIGIT EIGHT FULL STOP
+<Multi_key> <period> <parenleft> <9> <parenright> : "⒐" U2490   # DIGIT NINE FULL STOP
+<Multi_key> <period> <parenleft> <1> <0> <parenright> : "⒑" U2491   # NUMBER TEN FULL STOP
+<Multi_key> <period> <parenleft> <1> <1> <parenright> : "⒒" U2492   # NUMBER ELEVEN FULL STOP
+<Multi_key> <period> <parenleft> <1> <2> <parenright> : "⒓" U2493   # NUMBER TWELVE FULL STOP
+<Multi_key> <period> <parenleft> <1> <3> <parenright> : "⒔" U2494   # NUMBER THIRTEEN FULL STOP
+<Multi_key> <period> <parenleft> <1> <4> <parenright> : "⒕" U2495   # NUMBER FOURTEEN FULL STOP
+<Multi_key> <period> <parenleft> <1> <5> <parenright> : "⒖" U2496   # NUMBER FIFTEEN FULL STOP
+<Multi_key> <period> <parenleft> <1> <6> <parenright> : "⒗" U2497   # NUMBER SIXTEEN FULL STOP
+<Multi_key> <period> <parenleft> <1> <7> <parenright> : "⒘" U2498   # NUMBER SEVENTEEN FULL STOP
+<Multi_key> <period> <parenleft> <1> <8> <parenright> : "⒙" U2499   # NUMBER EIGHTEEN FULL STOP
+<Multi_key> <period> <parenleft> <1> <9> <parenright> : "⒚" U249A   # NUMBER NINETEEN FULL STOP
+<Multi_key> <period> <parenleft> <2> <0> <parenright> : "⒛" U249B   # NUMBER TWENTY FULL STOP
 
 #############################
 # Multigraphs and ligatures #
