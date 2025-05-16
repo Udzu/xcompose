@@ -18,12 +18,12 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Bidirectional control** (10): LRI RLI PDI etc
 * **Currency symbols** (19): ₱ ₿ ₪ etc
 
-### Latin script characters (1650)
+### Latin script characters (1655)
 * **International Phonetic Alphabet** (134): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (251): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
-* **Multigraphs and ligatures** (269): ʣ ㏈ etc
+* **Multigraphs and ligatures** (274): ʣ ㏈ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
 ### Non-Latin script characters (2083)
@@ -42,9 +42,9 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **Morse Code** (76): ···---··· etc
 
-### Symbols (2603)
+### Symbols (2605)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Math and science** (228): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Math and science** (230): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
