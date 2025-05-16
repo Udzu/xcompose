@@ -18,11 +18,11 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Bidirectional control** (10): LRI RLI PDI etc
 * **Currency symbols** (19): ₱ ₿ ₪ etc
 
-### Latin script characters (1665)
+### Latin script characters (1691)
 * **International Phonetic Alphabet** (134): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (251): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
+* **Superscripts and subscripts** (95): ᵃ ᴬ ₐ ᴀ etc
 * **Multigraphs and ligatures** (284): ʣ ㏈ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 

@@ -430,9 +430,11 @@ include "%L"
 # for consistency since we priorities using v for carons
 <Multi_key> <v> <l>                 : "ľ"  U013E   # LATIN SMALL LETTER L WITH CARON (conflicts with useless |)
 
-###############################
-# Superscripts and subscripts #
-###############################
+###############################################
+# Superscripts, subscripts and small capitals #
+###############################################
+
+# superscripts: ^_x
 
 <Multi_key> <asciicircum> <underscore> <a>  : "ᵃ"  U1D43   # MODIFIER LETTER SMALL A (conflicts with ª, use ^f defined below)
 <Multi_key> <asciicircum> <underscore> <b>  : "ᵇ"  U1D47   # MODIFIER LETTER SMALL B
@@ -487,6 +489,11 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <V>  : "ⱽ"  U2C7D   # MODIFIER LETTER CAPITAL V
 <Multi_key> <asciicircum> <underscore> <W>  : "ᵂ"  U1D42   # MODIFIER LETTER CAPITAL W
 
+<Multi_key> <asciicircum> <underscore> <colon>  : "˸" U02F8    # MODIFIER LETTER RAISED COLON
+<Multi_key> <asciicircum> <underscore> <exclam> : "ꜝ" UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
+
+# subscripts: _x (or _x_ if there's a clash with a combining character)
+
 <Multi_key> <underscore> <a>              : "ₐ"  U2090   # LATIN SUBSCRIPT SMALL LETTER A (conflicts with ā, use -a)
 <Multi_key> <underscore> <e>              : "ₑ"  U2091   # LATIN SUBSCRIPT SMALL LETTER E (conflicts with ē, use -e)
 <Multi_key> <underscore> <h>              : "ₕ"  U2095   # LATIN SUBSCRIPT SMALL LETTER H
@@ -505,8 +512,34 @@ include "%L"
 <Multi_key> <underscore> <v> <underscore> : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
 <Multi_key> <underscore> <x>              : "ₓ"  U2093   # LATIN SUBSCRIPT SMALL LETTER X
 
-<Multi_key> <asciicircum> <underscore> <colon>  : "˸" U02F8    # MODIFIER LETTER RAISED COLON
-<Multi_key> <asciicircum> <underscore> <exclam> : "ꜝ" UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
+# small capitals: _^x
+
+<Multi_key> <underscore> <asciicircum> <A> : "ᴀ" U1D00   # LATIN LETTER SMALL CAPITAL A (conflicts with ¯, use -^)
+<Multi_key> <underscore> <asciicircum> <B> : "ʙ" U0299   # LATIN LETTER SMALL CAPITAL B (conflicts)
+<Multi_key> <underscore> <asciicircum> <C> : "ᴄ" U1D04   # LATIN LETTER SMALL CAPITAL C (conflicts)
+<Multi_key> <underscore> <asciicircum> <D> : "ᴅ" U1D05   # LATIN LETTER SMALL CAPITAL D (conflicts)
+<Multi_key> <underscore> <asciicircum> <E> : "ᴇ" U1D07   # LATIN LETTER SMALL CAPITAL E (conflicts)
+<Multi_key> <underscore> <asciicircum> <F> : "ꜰ" UA730   # LATIN LETTER SMALL CAPITAL F (conflicts)
+<Multi_key> <underscore> <asciicircum> <G> : "ɢ" U0262   # LATIN LETTER SMALL CAPITAL G (conflicts)
+<Multi_key> <underscore> <asciicircum> <H> : "ʜ" U029C   # LATIN LETTER SMALL CAPITAL H (conflicts)
+<Multi_key> <underscore> <asciicircum> <I> : "ɪ" U026A   # LATIN LETTER SMALL CAPITAL I (conflicts)
+<Multi_key> <underscore> <asciicircum> <J> : "ᴊ" U1D0A   # LATIN LETTER SMALL CAPITAL J (conflicts)
+<Multi_key> <underscore> <asciicircum> <K> : "ᴋ" U1D0B   # LATIN LETTER SMALL CAPITAL K (conflicts)
+<Multi_key> <underscore> <asciicircum> <L> : "ʟ" U029F   # LATIN LETTER SMALL CAPITAL L (conflicts)
+<Multi_key> <underscore> <asciicircum> <M> : "ᴍ" U1D0D   # LATIN LETTER SMALL CAPITAL M (conflicts)
+<Multi_key> <underscore> <asciicircum> <N> : "ɴ" U0274   # LATIN LETTER SMALL CAPITAL N (conflicts)
+<Multi_key> <underscore> <asciicircum> <O> : "ᴏ" U1D0F   # LATIN LETTER SMALL CAPITAL O (conflicts)
+<Multi_key> <underscore> <asciicircum> <P> : "ᴘ" U1D18   # LATIN LETTER SMALL CAPITAL P (conflicts)
+<Multi_key> <underscore> <asciicircum> <Q> : "ꞯ" UA7AF   # LATIN LETTER SMALL CAPITAL Q (conflicts)
+<Multi_key> <underscore> <asciicircum> <R> : "ʀ" U0280   # LATIN LETTER SMALL CAPITAL R (conflicts)
+<Multi_key> <underscore> <asciicircum> <S> : "ꜱ" UA731   # LATIN LETTER SMALL CAPITAL S (conflicts)
+<Multi_key> <underscore> <asciicircum> <T> : "ᴛ" U1D1B   # LATIN LETTER SMALL CAPITAL T (conflicts)
+<Multi_key> <underscore> <asciicircum> <U> : "ᴜ" U1D1C   # LATIN LETTER SMALL CAPITAL U (conflicts)
+<Multi_key> <underscore> <asciicircum> <V> : "ᴠ" U1D20   # LATIN LETTER SMALL CAPITAL V (conflicts)
+<Multi_key> <underscore> <asciicircum> <W> : "ᴡ" U1D21   # LATIN LETTER SMALL CAPITAL W (conflicts)
+<Multi_key> <underscore> <asciicircum> <X> : "x" U0078   # LATIN SMALL LETTER X (conflicts)
+<Multi_key> <underscore> <asciicircum> <Y> : "ʏ" U028F   # LATIN LETTER SMALL CAPITAL Y (conflicts)
+<Multi_key> <underscore> <asciicircum> <Z> : "ᴢ" U1D22   # LATIN LETTER SMALL CAPITAL Z (conflicts)
 
 ##############################
 # Mathematical alphanumerics #
