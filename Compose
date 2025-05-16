@@ -4706,6 +4706,10 @@ include "%L"
 <Multi_key> <Multi_key> <greater> <equal> <less>     : "⋛"  U22DB   # GREATER-THAN EQUAL TO OR LESS-THAN
 <Multi_key> <Multi_key> <less> <bar> <equal>         : "⊴"  U22B4   # NORMAL SUBGROUP OF OR EQUAL TO
 <Multi_key> <Multi_key> <greater> <bar> <equal>      : "⊵"  U22B5   # CONTAINS AS NORMAL SUBGROUP OR EQUAL TO
+<Multi_key> <slash> <Multi_key> <less> <bar>         : "⋪"  U22EA   # NOT NORMAL SUBGROUP OF
+<Multi_key> <slash> <Multi_key> <greater> <bar>     : "⋫"  U22EB   # DOES NOT CONTAIN AS NORMAL SUBGROUP
+<Multi_key> <slash> <Multi_key> <Multi_key> <less> <bar> <equal> : "⋬" U22EC   # NOT NORMAL SUBGROUP OF OR EQUAL TO
+<Multi_key> <slash> <Multi_key> <Multi_key> <greater> <bar> <equal> : "⋭" U22ED   # DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL
 <Multi_key> <Multi_key> <asciitilde> <asciitilde> <equal> : "≊" U224A   # ALMOST EQUAL OR EQUAL TO
 <Multi_key> <parenleft> <plus> <parenright>          : "⊕"  U2295   # CIRCLED PLUS
 <Multi_key> <parenleft> <minus> <parenright>         : "⊖"  U2296   # CIRCLED MINUS (conflicts with useless {)
