@@ -26,7 +26,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (284): ʣ ㏈ etc
 * **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
 
-### Non-Latin script characters (2083)
+### Non-Latin script characters (2091)
 * **Arabic** (and Syriac & Neo-Tifinagh) (168): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
 * **Brahmi** (Brahmi, Devanagari & Tamil) (281): 𑀭𑁂𑀟𑀺𑀝 रेडिट ரெதிட etc
@@ -34,7 +34,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
 * **Georgian** (154): რედდიტ ႰႤႣႣႨႲ etc
 * **Greek** (and Coptic) (152): Ρέντιτ Ⲣⲉⲇⲇⲓⲧ etc
-* **Hebrew** (and Phoenician) (75): ⁧רֶדִיט⁩ ⁧𐤓𐤃𐤕⁩ etc
+* **Hebrew** (and Phoenician) (83): ⁧רֶדִיט⁩ ⁧𐤓𐤃𐤕⁩ etc
 * **Japanese** (mostly kana) (302): 「レヂィット」 etc
 * **Korean** (using jamo) (118): 레딧 etc
 * **Old Italic** (and Runic) (117): 𐌓𐌄𐌃𐌃𐌉𐌕 ᚱᛖᛞᛞᛁᛏ etc
