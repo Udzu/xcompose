@@ -4637,6 +4637,7 @@ include "%L"
 <Multi_key> <slash> <0>               : "∅"  U2205   # EMPTY SET (alternatively {})
 <Multi_key> <0> <slash>               : "∅"  U2205   # EMPTY SET (alternatively {})
 <Multi_key> <backslash> <bar>         : "∥"  U2225   # PARALLEL TO
+<Multi_key> <slash> <bar> <bar>       : "∦"  U2226   # NOT PARALLEL TO
 <Multi_key> <bar> <T>                 : "⊤"  U22A4   # DOWN TACK (TEE)
 <Multi_key> <bar> <underscore>        : "⊥"  U22A5   # UP TACK
 <Multi_key> <bar> <F>                 : "⊥"  U22A5   # UP TACK
@@ -4685,6 +4686,7 @@ include "%L"
 <Multi_key> <equal> <Multi_key> <v>                  : "≚"  U225A   # EQUIANGULAR TO
 <Multi_key> <equal> <Multi_key> <less>               : "≦"  U2266   # LESS-THAN OVER EQUAL TO
 <Multi_key> <equal> <Multi_key> <greater>            : "≧"  U2267   # GREATER-THAN OVER EQUAL TO
+<Multi_key> <minus> <Multi_key> <period>             : "∸"  U2238   # DOT MINUS
 <Multi_key> <minus> <Multi_key> <colon>              : "∹"  U2239   # EXCESS (really should swap with ÷ but that's much more useful)
 
 <Multi_key> <slash> <Multi_key> <equal> <underscore> : "≢"  U2262   # NOT IDENTICAL TO
@@ -4694,7 +4696,10 @@ include "%L"
 <Multi_key> <greater> <Multi_key> <slash> <asciitilde> : "⋧"  U22E7   # GREATER-THAN BUT NOT EQUIVALENT TO
 <Multi_key> <slash> <Multi_key> <less> <equal>       : "≰"  U2270   # NEITHER LESS-THAN NOR EQUAL TO
 <Multi_key> <slash> <Multi_key> <greater> <equal>    : "≱"  U2271   # NEITHER GREATER-THAN NOR EQUAL TO
+<Multi_key> <slash> <Multi_key> <greater> <asciitilde> : "≵"  U2275   # NEITHER GREATER-THAN NOR EQUIVALENT TO
+<Multi_key> <slash> <Multi_key> <less> <asciitilde>  : "≴"  U2274   # NEITHER LESS-THAN NOR EQUIVALENT TO
 <Multi_key> <slash> <Multi_key> <less> <greater>     : "≸"  U2278   # NEITHER LESS-THAN NOR GREATER-THAN
+<Multi_key> <slash> <Multi_key> <greater> <less>     : "≹"  U2279   # NEITHER GREATER-THAN NOR LESS-THAN
 <Multi_key> <Multi_key> <less> <greater>             : "≶"  U2276   # LESS-THAN OR GREATER-THAN
 <Multi_key> <Multi_key> <greater> <less>             : "≷"  U2277   # GREATER-THAN OR LESS-THAN
 <Multi_key> <Multi_key> <less> <equal> <greater>     : "⋚"  U22DA   # LESS-THAN EQUAL TO OR GREATER-THAN
@@ -4741,10 +4746,15 @@ include "%L"
 <Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 
 <Multi_key> <a> <n> <g> <l> <e>         : "∠"  U2220   # ANGLE
+<Multi_key> <b> <e> <t> <w> <e> <e> <n> : "≬"  U226C   # BETWEEN (conflicts with ĕ, use ue)
+<Multi_key> <b> <u> <m> <p> <e> <q>     : "≏"  U224F   # DIFFERENCE BETWEEN (conflicts with ŭ, use uu)
+<Multi_key> <B> <u> <m> <p> <e> <q>     : "≎"  U224E   # GEOMETRICALLY EQUIVALENT TO
 <Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va) (use hat for 🧢)
+<Multi_key> <C> <a> <p>                 : "⋒"  U22D2   # DOUBLE INTERSECTION
 <Multi_key> <c> <o> <m> <p> <l>         : "∁"  U2201   # COMPLEMENT (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
 <Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
+<Multi_key> <C> <u> <p>                 : "⋓"  U22D3   # DOUBLE UNION
 <Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN
 <Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter) (use gem for 💎)
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
@@ -4762,8 +4772,14 @@ include "%L"
 <Multi_key> <n> <o> <r>                 : "⊽"  U22BD   # NOR
 <Multi_key> <n> <o> <t> <i> <n>         : "∉"  U2209   # NOT AN ELEMENT OF
 <Multi_key> <n> <o> <t> <n> <i>         : "∌"  U220C   # DOES NOT CONTAIN AS MEMBER
+<Multi_key> <n> <p> <r> <e> <c> <Return> : "⊀"  U2280   # DOES NOT PRECEDE
+<Multi_key> <n> <p> <r> <e> <c> <e> <q> : "⋠"  U22E0   # DOES NOT PRECEDE OR EQUAL
+<Multi_key> <n> <s> <q> <s> <u> <b> <e> <q> : "⋢"  U22E2   # NOT SQUARE IMAGE OF OR EQUAL TO
+<Multi_key> <n> <s> <q> <s> <u> <p> <e> <q> : "⋣"  U22E3   # NOT SQUARE ORIGINAL OF OR EQUAL TO
 <Multi_key> <n> <s> <u> <b> <Return>    : "⊄"  U2284   # NOT A SUBSET OF
 <Multi_key> <n> <s> <u> <b> <e> <q>     : "⊈"  U2288   # NEITHER A SUBSET OF NOR EQUAL TO
+<Multi_key> <n> <s> <u> <c> <c> <Return> : "⊁"  U2281   # DOES NOT SUCCEED
+<Multi_key> <n> <s> <u> <c> <c> <e> <q> : "⋡"  U22E1   # DOES NOT SUCCEED OR EQUAL
 <Multi_key> <n> <s> <u> <p> <Return>    : "⊅"  U2285   # NOT A SUPERSET OF
 <Multi_key> <n> <s> <u> <p> <e> <q>     : "⊉"  U2289   # NEITHER A SUPERSET OF NOR EQUAL TO
 <Multi_key> <o> <i> <i> <i> <n> <t>     : "∰"  U2230   # VOLUME INTEGRAL
@@ -4771,6 +4787,7 @@ include "%L"
 <Multi_key> <o> <i> <n> <t>             : "∮"  U222E   # CONTOUR INTEGRAL
 <Multi_key> <p> <r> <e> <c> <Return>    : "≺"  U227A   # PRECEDES
 <Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
+<Multi_key> <p> <r> <e> <c> <s> <i> <m> : "≾"  U227E   # PRECEDES OR EQUIVALENT TO
 <Multi_key> <p> <r> <o> <d>             : "∏"  U220F   # N-ARY PRODUCT
 <Multi_key> <p> <r> <o> <p>             : "∝"  U221D   # PROPORTIONAL TO
 <Multi_key> <r> <a> <n> <g> <l> <e>     : "∟"  U221F   # RIGHT ANGLE
@@ -4785,21 +4802,19 @@ include "%L"
 <Multi_key> <s> <q> <s> <u> <b> <n> <e> <q> : "⋤" U22E4   # SQUARE IMAGE OF OR NOT EQUAL TO
 <Multi_key> <s> <q> <s> <u> <p> <n> <e> <q> : "⋥" U22E5   # SQUARE ORIGINAL OF OR NOT EQUAL TO
 <Multi_key> <s> <u> <b> <Return>        : "⊂"  U2282   # SUBSET OF
+<Multi_key> <S> <u> <b>                 : "⋐"  U22D0   # DOUBLE SUBSET
 <Multi_key> <s> <u> <b> <e> <q>         : "⊆"  U2286   # SUBSET OF OR EQUAL TO
 <Multi_key> <s> <u> <b> <n> <e> <q>     : "⊊"  U228A   # SUBSET OF WITH NOT EQUAL TO
 <Multi_key> <s> <u> <c> <c> <Return>    : "≻"  U227B   # SUCCEEDS
 <Multi_key> <s> <u> <c> <c> <e> <q>     : "≽"  U227D   # SUCCEEDS OR EQUAL TO
+<Multi_key> <s> <u> <c> <c> <s> <i> <m> : "≿"  U227F   # SUCCEEDS OR EQUIVALENT TO
 <Multi_key> <s> <u> <m>                 : "∑"  U2211   # N-ARY SUMMATION
 <Multi_key> <s> <u> <p> <Return>        : "⊃"  U2283   # SUPERSET OF
+<Multi_key> <S> <u> <p>                 : "⋑"  U22D1   # DOUBLE SUPERSET
 <Multi_key> <s> <u> <p> <e> <q>         : "⊇"  U2287   # SUPERSET OF OR EQUAL TO
 <Multi_key> <s> <u> <p> <n> <e> <q>     : "⊋"  U228B   # SUPERSET OF WITH NOT EQUAL TO
 <Multi_key> <x> <o> <r>                 : "⊻"  U22BB   # XOR (conflicts with ¤, use ox)
-
-<Multi_key> <C> <a> <p>                 : "⋒"  U22D2   # DOUBLE INTERSECTION
-<Multi_key> <C> <u> <p>                 : "⋓"  U22D3   # DOUBLE UNION
 <Multi_key> <Q> <E> <D>                 : "∎"  U220E   # END OF PROOF
-<Multi_key> <S> <u> <b>                 : "⋐"  U22D0   # DOUBLE SUBSET
-<Multi_key> <S> <u> <p>                 : "⋑"  U22D1   # DOUBLE SUPERSET
 
 # Logic symbols
 
