@@ -9,20 +9,20 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (168)
+### Common script characters (171)
 * **Spaces** (13): NBSP MMSP ZWSP etc
 * **Dashes** (11): – — ⁓ ⸻ etc
 * **Brackets** (20): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (9): • ‣ ⁃ ◉ etc
-* **Combining diacritics** (86): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
+* **Combining diacritics** (89): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 * **Currency symbols** (19): ₱ ₿ ₪ etc
 
-### Latin script characters (1794)
+### Latin script characters (1824)
 * **International Phonetic Alphabet** (134): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (251): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (95): ᵃ ᴬ ₐ ᴀ etc
+* **Superscripts and subscripts** (125): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (286): ʣ ㏈ etc
 * **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ ⟞–·ᓇᓇനﬧ etc
 

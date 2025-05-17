@@ -100,6 +100,8 @@ include "%L"
 
 # Convention: all combining character sequences end with <Return>
 
+# See superscripts section for combining Latin letters
+
 <Multi_key> <grave> <Return>         : "̀"  U0300   # COMBINING GRAVE ACCENT
 <Multi_key> <apostrophe> <Return>    : "́"  U0301   # COMBINING ACUTE ACCENT
 <Multi_key> <asciicircum> <Return>   : "̂"  U0302   # COMBINING CIRCUMFLEX ACCENT
@@ -115,6 +117,7 @@ include "%L"
 <Multi_key> <v> <Return>             : "̌"  U030C   # COMBINING CARON
 <Multi_key> <bar> <Return>           : "̍"  U030D   # COMBINING VERTICAL LINE ABOVE
 <Multi_key> <grave> <grave> <Return> : "̏"  U030F   # COMBINING DOUBLE GRAVE ACCENT
+<Multi_key> <period> <parenright> <Return> : "̐" U0310   # COMBINING CANDRABINDU
 <Multi_key> <u> <v> <Return>         : "̑"  U0311   # COMBINING INVERTED BREVE
 <Multi_key> <asciicircum> <comma> <Return> : "̓"  U0313   # COMBINING COMMA ABOVE (less important than cedilla)
 <Multi_key> <comma> <less> <Return>  : "̔"  U0314   # COMBINING REVERSED COMMA ABOVE
@@ -147,14 +150,14 @@ include "%L"
 <Multi_key> <underscore> <c> <Return>                : "̜"  U031C   # COMBINING LEFT HALF RING BELOW
 <Multi_key> <underscore> <T> <v> <Return>            : "̝"  U031D   # COMBINING UP TACK BELOW
 <Multi_key> <underscore> <T> <Return>                : "̞"  U031E   # COMBINING DOWN TACK BELOW
-<Multi_key> <underscore> <underscore> <plus> <Return> : "̟"  U031F   # COMBINING PLUS SIGN BELOW (conflicts with ū, use -u)
-<Multi_key> <underscore> <underscore> <minus> <Return> : "̠"  U0320   # COMBINING MINUS SIGN BELOW (conflicts with ū, use -u)
-<Multi_key> <underscore> <underscore> <j> <Return>   : "̡"  U0321   # COMBINING PALATALIZED HOOK BELOW (conflicts with ū, use -u)
-<Multi_key> <underscore> <underscore> <l> <Return>   : "̢"  U0322   # COMBINING RETROFLEX HOOK BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <underscore> <plus> <Return> : "̟"  U031F   # COMBINING PLUS SIGN BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <minus> <Return> : "̠"  U0320   # COMBINING MINUS SIGN BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <j> <Return>   : "̡"  U0321   # COMBINING PALATALIZED HOOK BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <l> <Return>   : "̢"  U0322   # COMBINING RETROFLEX HOOK BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <period> <Return>           : "̣"  U0323   # COMBINING DOT BELOW
 <Multi_key> <underscore> <quotedbl> <Return>         : "̤"  U0324   # COMBINING DIAERESIS BELOW
-<Multi_key> <underscore> <o> <Return>                : "̥"  U0325   # COMBINING RING BELOW (conflicts with ō, use -o)
-<Multi_key> <underscore> <underscore> <comma> <Return> : "̦"  U0326   # COMBINING COMMA BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <o> <Return>                : "̥"  U0325   # COMBINING RING BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <comma> <Return> : "̦"  U0326   # COMBINING COMMA BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <comma> <Return>            : "̧"  U0327   # COMBINING CEDILLA
 <Multi_key> <underscore> <semicolon> <Return>        : "̨"  U0328   # COMBINING OGONEK
 <Multi_key> <underscore> <bar> <Return>              : "̩"  U0329   # COMBINING VERTICAL LINE BELOW
@@ -172,10 +175,12 @@ include "%L"
 <Multi_key> <underscore> <bracketright> <Return>     : "̺"  U033A   # COMBINING INVERTED BRIDGE BELOW
 <Multi_key> <underscore> <bracketleft> <bracketright> <Return> : "̻"  U033B   # COMBINING SQUARE BELOW
 <Multi_key> <underscore> <M> <Return>                : "̼"  U033C   # COMBINING SEAGULL BELOW
-<Multi_key> <underscore> <underscore> <underscore> <equal> <Return> : "͇"  U0347   # COMBINING EQUALS SIGN BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <underscore> <underscore> <equal> <Return> : "͇"  U0347   # COMBINING EQUALS SIGN BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <bar> <bar> <Return>        : "͈"  U0348   # COMBINING DOUBLE VERTICAL LINE BELOW
 <Multi_key> <underscore> <notsign> <Return>          : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
 <Multi_key> <underscore> <Multi_key> <minus> <comma> <Return> : "͉"  U0349   # COMBINING LEFT ANGLE BELOW
+<Multi_key> <underscore> <underscore> <x> <Return>   : "͓"  U0353   # COMBINING X BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <asterisk> <Return>         : "͙"  U0359   # COMBINING ASTERISK BELOW
 <Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <parenleft> <Return> : "᷼" U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (conflicts with ¯, use -^)
 
@@ -540,6 +545,43 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <X> : "x" U0078   # LATIN SMALL LETTER X (conflicts)
 <Multi_key> <underscore> <asciicircum> <Y> : "ʏ" U028F   # LATIN LETTER SMALL CAPITAL Y (conflicts)
 <Multi_key> <underscore> <asciicircum> <Z> : "ᴢ" U1D22   # LATIN LETTER SMALL CAPITAL Z (conflicts)
+
+# combining letters above: ^^x
+
+<Multi_key> <asciicircum> <asciicircum> <a> <Return> : "ͣ" U0363   # COMBINING LATIN SMALL LETTER A
+<Multi_key> <asciicircum> <asciicircum> <b> <Return> : "ᷨ" U1DE8   # COMBINING LATIN SMALL LETTER B
+<Multi_key> <asciicircum> <asciicircum> <c> <Return> : "ͨ" U0368   # COMBINING LATIN SMALL LETTER C
+<Multi_key> <asciicircum> <asciicircum> <d> <Return> : "ͩ" U0369   # COMBINING LATIN SMALL LETTER D
+<Multi_key> <asciicircum> <asciicircum> <e> <Return> : "ͤ" U0364   # COMBINING LATIN SMALL LETTER E
+<Multi_key> <asciicircum> <asciicircum> <f> <Return> : "ᷫ" U1DEB   # COMBINING LATIN SMALL LETTER F
+<Multi_key> <asciicircum> <asciicircum> <g> <Return> : "ᷚ" U1DDA   # COMBINING LATIN SMALL LETTER G
+<Multi_key> <asciicircum> <asciicircum> <h> <Return> : "ͪ" U036A   # COMBINING LATIN SMALL LETTER H
+<Multi_key> <asciicircum> <asciicircum> <i> <Return> : "ͥ" U0365   # COMBINING LATIN SMALL LETTER I
+<Multi_key> <asciicircum> <asciicircum> <k> <Return> : "ᷜ" U1DDC   # COMBINING LATIN SMALL LETTER K
+<Multi_key> <asciicircum> <asciicircum> <l> <Return> : "ᷝ" U1DDD   # COMBINING LATIN SMALL LETTER L
+<Multi_key> <asciicircum> <asciicircum> <m> <Return> : "ͫ" U036B   # COMBINING LATIN SMALL LETTER M
+<Multi_key> <asciicircum> <asciicircum> <n> <Return> : "ᷠ" U1DE0   # COMBINING LATIN SMALL LETTER N
+<Multi_key> <asciicircum> <asciicircum> <o> <Return> : "ͦ" U0366   # COMBINING LATIN SMALL LETTER O
+<Multi_key> <asciicircum> <asciicircum> <p> <Return> : "ᷮ" U1DEE   # COMBINING LATIN SMALL LETTER P
+<Multi_key> <asciicircum> <asciicircum> <r> <Return> : "ͬ" U036C   # COMBINING LATIN SMALL LETTER R
+<Multi_key> <asciicircum> <asciicircum> <s> <Return> : "ᷤ" U1DE4   # COMBINING LATIN SMALL LETTER S
+<Multi_key> <asciicircum> <asciicircum> <t> <Return> : "ͭ" U036D   # COMBINING LATIN SMALL LETTER T
+<Multi_key> <asciicircum> <asciicircum> <u> <Return> : "ͧ" U0367   # COMBINING LATIN SMALL LETTER U
+<Multi_key> <asciicircum> <asciicircum> <v> <Return> : "ͮ" U036E   # COMBINING LATIN SMALL LETTER V
+<Multi_key> <asciicircum> <asciicircum> <w> <Return> : "ᷱ" U1DF1   # COMBINING LATIN SMALL LETTER W
+<Multi_key> <asciicircum> <asciicircum> <x> <Return> : "ͯ" U036F   # COMBINING LATIN SMALL LETTER X
+<Multi_key> <asciicircum> <asciicircum> <z> <Return> : "ᷦ" U1DE6   # COMBINING LATIN SMALL LETTER Z
+
+<Multi_key> <asciicircum> <asciicircum> <G> <Return> : "ᷛ" U1DDB   # COMBINING LATIN LETTER SMALL CAPITAL G
+<Multi_key> <asciicircum> <asciicircum> <L> <Return> : "ᷞ" U1DDE   # COMBINING LATIN LETTER SMALL CAPITAL L
+<Multi_key> <asciicircum> <asciicircum> <M> <Return> : "ᷟ" U1DDF   # COMBINING LATIN LETTER SMALL CAPITAL M
+<Multi_key> <asciicircum> <asciicircum> <N> <Return> : "ᷡ" U1DE1   # COMBINING LATIN LETTER SMALL CAPITAL N
+<Multi_key> <asciicircum> <asciicircum> <R> <Return> : "ᷢ" U1DE2   # COMBINING LATIN LETTER SMALL CAPITAL R
+
+# combining letters below: __x
+
+<Multi_key> <underscore> <underscore> <r> <Return> : "᷊" U1DCA   # COMBINING LATIN SMALL LETTER R BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <w> <Return> : "ᪿ" U1ABF   # COMBINING LATIN SMALL LETTER W BELOW (conflicts with ¯, use -^)
 
 ##############################
 # Mathematical alphanumerics #
