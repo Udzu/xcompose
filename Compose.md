@@ -3,7 +3,7 @@
 
 > Link: https://github.com/Udzu/xcompose/blob/master/Compose
 
-This repo also hosts my personal .XCompose file, which contains over 6000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
+This repo also hosts my personal .XCompose file, which contains over 7000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
 
 The file aims for memorability and consistency. As a result, a small number of the rules here conflict with the default system rules, with workarounds given wherever possible in the comments (e.g. \<underscore>'s usefulness for subscripting often interferes with its system use for macrons, for which \<minus> works equally well as an alternative).
 
@@ -18,15 +18,15 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Bidirectional control** (10): LRI RLI PDI etc
 * **Currency symbols** (19): ₱ ₿ ₪ etc
 
-### Latin script characters (1650)
+### Latin script characters (1793)
 * **International Phonetic Alphabet** (134): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (251): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (69): ᵃ ᴬ ₐ etc
-* **Multigraphs and ligatures** (269): ʣ ㏈ etc
-* **Letter games** (196): ʇᴉppǝɹ duᖹɟiϱ etc
+* **Superscripts and subscripts** (95): ᵃ ᴬ ₐ ᴀ etc
+* **Multigraphs and ligatures** (286): ʣ ㏈ etc
+* **Letter games** (296): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⊢ ⟞–·ᓇᓇനﬧ etc
 
-### Non-Latin script characters (2083)
+### Non-Latin script characters (2091)
 * **Arabic** (and Syriac & Neo-Tifinagh) (168): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
 * **Brahmi** (Brahmi, Devanagari & Tamil) (281): 𑀭𑁂𑀟𑀺𑀝 रेडिट ரெதிட etc
@@ -34,7 +34,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
 * **Georgian** (154): რედდიტ ႰႤႣႣႨႲ etc
 * **Greek** (and Coptic) (152): Ρέντιτ Ⲣⲉⲇⲇⲓⲧ etc
-* **Hebrew** (and Phoenician) (75): ⁧רֶדִיט⁩ ⁧𐤓𐤃𐤕⁩ etc
+* **Hebrew** (and Phoenician) (83): ⁧רֶדִיט⁩ ⁧𐤓𐤃𐤕⁩ etc
 * **Japanese** (mostly kana) (302): 「レヂィット」 etc
 * **Korean** (using jamo) (118): 레딧 etc
 * **Old Italic** (and Runic) (117): 𐌓𐌄𐌃𐌃𐌉𐌕 ᚱᛖᛞᛞᛁᛏ etc
@@ -42,13 +42,13 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **Morse Code** (76): ···---··· etc
 
-### Symbols (2590)
+### Symbols (2606)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Math and science** (215): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Math and science** (230): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
 * **Arrows** (154): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
-* **Geometric shapes** (133): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
+* **Geometric shapes** (134): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (48): ╞╦╕ etc
