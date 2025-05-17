@@ -1659,6 +1659,7 @@ include "%L"
 <Multi_key> <parenleft> <H> <I> <parenright> : "𖨟" U16A1F   # BAMUM LETTER PHASE-F PEUX (visually similar)
 <Multi_key> <parenleft> <h> <P> <a> <parenright> : "㍱" U3371   # SQUARE HPA
 <Multi_key> <parenleft> <H> <P> <parenright> : "㏋" U33CB   # SQUARE HP
+<Multi_key> <parenleft> <H> <S> <parenright> : "𐆘" U10198   # ROMAN SESTERTIUS SIGN (visually similar)
 <Multi_key> <parenleft> <h> <u> <parenright> : "ƕ" U0195   # LATIN SMALL LETTER HV (visually similar)
 <Multi_key> <parenleft> <H> <u> <parenright> : "Ƕ" U01F6   # LATIN CAPITAL LETTER HWAIR (visually similar)
 <Multi_key> <parenleft> <H> <z> <parenright> : "㎐" U3390   # SQUARE HZ
@@ -1823,6 +1824,7 @@ include "%L"
 <Multi_key> <parenleft> <t> <a> <parenright> : "な" U306A   # HIRAGANA LETTER NA (visually similar)
 <Multi_key> <parenleft> <T> <B> <parenright> : "邗" U9097   # CJK UNIFIED IDEOGRAPH-9097 (visually similar)
 <Multi_key> <parenleft> <t> <c> <parenright> : "ʨ" U02A8   # LATIN SMALL LETTER TC DIGRAPH WITH CURL
+<Multi_key> <parenleft> <T> <E> <parenright> : "𐅫" U1016B   # GREEK ACROPHONIC THESPIAN THREE HUNDRED (visually similar)
 <Multi_key> <parenleft> <t> <h> <parenright> : "ᵺ" U1D7A   # LATIN SMALL LETTER TH WITH STRIKETHROUGH
 <Multi_key> <parenleft> <T> <H> <z> <parenright> : "㎔" U3394   # SQUARE THZ
 <Multi_key> <parenleft> <T> <i> <parenright> : "Ԏ" U050E   # CYRILLIC CAPITAL LETTER KOMI TJE (visually similar)
@@ -2032,6 +2034,89 @@ include "%L"
 <Multi_key> <greater> <less> <asciitilde> : "∽" U223D    # REVERSED TILDE (conflicts)
 <Multi_key> <greater> <less> <question>   : "⸮" U2E2E    # REVERSED QUESTION MARK (conflicts)
 <Multi_key> <greater> <less> <percent>    : "ₒ\ᵒ" U2092 U005C U1D52    # LATIN SUBSCRIPT SMALL LETTER O REVERSE SOLIDUS MODIFIER LETTER SMALL O (conflicts)
+
+# Upward-facing "Sideways" text
+
+<Multi_key> <asciicircum> <less> <A> : "ᗉ" U15C9   # CANADIAN SYLLABICS CARRIER GHA
+<Multi_key> <asciicircum> <less> <B> : "ߘ" U07D8   # NKO LETTER DA
+<Multi_key> <asciicircum> <less> <C> : "𝈱" U1D231   # GREEK INSTRUMENTAL NOTATION SYMBOL-32
+<Multi_key> <asciicircum> <less> <D> : "ᗝ" U15DD   # CANADIAN SYLLABICS CARRIER THO
+<Multi_key> <asciicircum> <less> <E> : "𝈧" U1D227   # GREEK INSTRUMENTAL NOTATION SYMBOL-17
+<Multi_key> <asciicircum> <less> <F> : "𝈯" U1D22F   # GREEK INSTRUMENTAL NOTATION SYMBOL-29
+<Multi_key> <asciicircum> <less> <G> : "ᘎ" U160E   # CANADIAN SYLLABICS CARRIER YU
+<Multi_key> <asciicircum> <less> <H> : "ェ" U30A7   # KATAKANA LETTER SMALL E
+<Multi_key> <asciicircum> <less> <I> : "ꟷ" UA7F7   # LATIN EPIGRAPHIC LETTER SIDEWAYS I
+<Multi_key> <asciicircum> <less> <J> : "ᓓ" U14D3   # CANADIAN SYLLABICS LE
+<Multi_key> <asciicircum> <less> <K> : "𝈎" U1D20E   # GREEK VOCAL NOTATION SYMBOL-15
+<Multi_key> <asciicircum> <less> <L> : "ᒧ" U14A7   # CANADIAN SYLLABICS MO
+<Multi_key> <asciicircum> <less> <M> : "ᓬ" U14EC   # CANADIAN SYLLABICS MEDIAL L
+<Multi_key> <asciicircum> <less> <N> : "Z" U005A   # LATIN CAPITAL LETTER Z
+<Multi_key> <asciicircum> <less> <O> : "⬭" U2B2D   # WHITE HORIZONTAL ELLIPSE
+<Multi_key> <asciicircum> <less> <P> : "𝈟" U1D21F   # GREEK INSTRUMENTAL NOTATION SYMBOL-4
+<Multi_key> <asciicircum> <less> <Q> : "℺" U213A   # ROTATED CAPITAL Q
+# R
+<Multi_key> <asciicircum> <less> <S> : "ഗ" U0D17   # MALAYALAM LETTER GA
+<Multi_key> <asciicircum> <less> <T> : "⊢" U22A2   # RIGHT TACK
+<Multi_key> <asciicircum> <less> <U> : "⊃" U2283   # SUPERSET OF
+<Multi_key> <asciicircum> <less> <V> : "𝈷" U1D237   # GREEK INSTRUMENTAL NOTATION SYMBOL-42
+<Multi_key> <asciicircum> <less> <W> : "ᕒ" U1552   # CANADIAN SYLLABICS MEDIAL R
+<Multi_key> <asciicircum> <less> <X> : "⋊" U22CA   # RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT
+<Multi_key> <asciicircum> <less> <Y> : "𝈠" U1D220   # GREEK INSTRUMENTAL NOTATION SYMBOL-5
+<Multi_key> <asciicircum> <less> <Z> : "N" U004E   # LATIN CAPITAL LETTER N
+
+<Multi_key> <asciicircum> <less> <a> : "σ" U03C3   # GREEK SMALL LETTER SIGMA
+<Multi_key> <asciicircum> <less> <b> : "ᓄ" U14C4   # CANADIAN SYLLABICS NO
+<Multi_key> <asciicircum> <less> <c> : "ߎ" U07CE   # NKO LETTER U
+<Multi_key> <asciicircum> <less> <d> : "ᓀ" U14C0   # CANADIAN SYLLABICS NE
+<Multi_key> <asciicircum> <less> <e> : "ω" U03C9   # GREEK SMALL LETTER OMEGA
+# f
+<Multi_key> <asciicircum> <less> <g> : "თ" U10D7   # GEORGIAN LETTER TAN
+<Multi_key> <asciicircum> <less> <h> : "𝈦" U1D226   # GREEK INSTRUMENTAL NOTATION SYMBOL-14
+<Multi_key> <asciicircum> <less> <i> : "·–" U00B7 U2013   # MIDDLE DOT EN DASH
+<Multi_key> <asciicircum> <less> <j> : "·¬" U00B7 U00AC   # MIDDLE DOT ZERO WIDTH JOINER NOT SIGN
+# k
+<Multi_key> <asciicircum> <less> <l> : "ᓗ" U14D7   # CANADIAN SYLLABICS LO
+<Multi_key> <asciicircum> <less> <m> : "ε" U03B5   # GREEK SMALL LETTER EPSILON
+<Multi_key> <asciicircum> <less> <n> : "c" U0063   # LATIN SMALL LETTER C
+<Multi_key> <asciicircum> <less> <o> : "ᴑ" U1D11   # LATIN SMALL LETTER SIDEWAYS O
+<Multi_key> <asciicircum> <less> <p> : "؎" U060E   # ARABIC POETIC VERSE SIGN
+<Multi_key> <asciicircum> <less> <q> : "ᓂ" U14C2   # CANADIAN SYLLABICS NI
+<Multi_key> <asciicircum> <less> <r> : "ட" U0B9F   # TAMIL LETTER TTA
+<Multi_key> <asciicircum> <less> <s> : "𝆘" U1D198   # MUSICAL SYMBOL INVERTED TURN
+# t
+<Multi_key> <asciicircum> <less> <u> : "ᴝ" U1D1D   # LATIN SMALL LETTER SIDEWAYS U
+<Multi_key> <asciicircum> <less> <v> : ">" U003E   # GREATER-THAN SIGN
+<Multi_key> <asciicircum> <less> <w> : "ᴟ" U1D1F   # LATIN SMALL LETTER SIDEWAYS TURNED M
+<Multi_key> <asciicircum> <less> <x> : "×" U00D7   # MULTIPLICATION SIGN
+<Multi_key> <asciicircum> <less> <y> : "⋋" U22CB   # LEFT SEMIDIRECT PRODUCT
+<Multi_key> <asciicircum> <less> <z> : "ɴ" U0274   # LATIN LETTER SMALL CAPITAL N
+
+<Multi_key> <asciicircum> <less> <0> : "⬭" U2B2D   # WHITE HORIZONTAL ELLIPSE
+<Multi_key> <asciicircum> <less> <1> : "↽" U21BD   # LEFTWARDS HARPOON WITH BARB DOWNWARDS
+<Multi_key> <asciicircum> <less> <2> : "വ" U0D35   # MALAYALAM LETTER VA
+<Multi_key> <asciicircum> <less> <3> : "ന" U0D28   # MALAYALAM LETTER NA
+# 4
+<Multi_key> <asciicircum> <less> <5> : "।ᕄ" U0964 U1544   # DEVANAGARI DANDA CANADIAN SYLLABICS WEST-CREE LE
+<Multi_key> <asciicircum> <less> <6> : "ᓄ" U14C4   # CANADIAN SYLLABICS NO
+<Multi_key> <asciicircum> <less> <7> : "⌐" U2310   # REVERSED NOT SIGN
+<Multi_key> <asciicircum> <less> <8> : "∞" U221E   # INFINITY
+<Multi_key> <asciicircum> <less> <9> : "ᓂ" U14C2   # CANADIAN SYLLABICS NI
+
+<Multi_key> <asciicircum> <less> <minus> : "।" U0964   # DEVANAGARI DANDA
+<Multi_key> <asciicircum> <less> <equal> : "॥" U0965   # DEVANAGARI DOUBLE DANDA
+<Multi_key> <asciicircum> <less> <asciitilde> : "≀" U2240   # WREATH PRODUCT
+<Multi_key> <asciicircum> <less> <colon> : "‥" U2025   # TWO DOT LEADER
+<Multi_key> <asciicircum> <less> <quotedbl> : "꞊" UA78A   # MODIFIER LETTER SHORT EQUALS SIGN
+<Multi_key> <asciicircum> <less> <apostrophe> : "˗" U02D7   # MODIFIER LETTER MINUS SIGN
+<Multi_key> <asciicircum> <less> <bracketright> : "⎴" U23B4   # TOP SQUARE BRACKET
+<Multi_key> <asciicircum> <less> <bracketleft> : "⎵" U23B5   # BOTTOM SQUARE BRACKET
+<Multi_key> <asciicircum> <less> <parenright> : "⏜" U23DC   # TOP PARENTHESIS
+<Multi_key> <asciicircum> <less> <parenleft> : "⏝" U23DD   # BOTTOM PARENTHESIS
+<Multi_key> <asciicircum> <less> <braceright> : "⏞" U23DE   # TOP CURLY BRACKET
+<Multi_key> <asciicircum> <less> <braceleft> : "⏟" U23DF   # BOTTOM CURLY BRACKET
+<Multi_key> <asciicircum> <less> <asciicircum> : "‹" U2039   # SINGLE LEFT-POINTING ANGLE QUOTATION MARK
+<Multi_key> <asciicircum> <less> <less> : "∨" U2228   # LOGICAL OR
+<Multi_key> <asciicircum> <less> <greater> : "∧" U2227   # LOGICAL AND
 
 # Letter-category lookalikes for (ab)use in variable names
 
@@ -6753,6 +6838,7 @@ include "%L"
 <Multi_key> <Tab> <less> <greater> <v>           : "⬙" U2B19    # DIAMOND WITH BOTTOM HALF BLACK
 <Multi_key> <Tab> <less> <greater> <2> <0>       : "🞜" U1F79C    # DIAMOND TARGET
 <Multi_key> <Tab> <less> <greater> <2> <1>       : "◈" U25C8    # WHITE DIAMOND CONTAINING BLACK SMALL DIAMOND
+<Multi_key> <Tab> <less> <greater> <question>    : "�" UFFFD   # REPLACEMENT CHARACTER
 
 <Multi_key> <Tab> <O> <5> <0>           : "⬠" U2B20    # WHITE PENTAGON
 <Multi_key> <Tab> <O> <5> <1>           : "⬟" U2B1F    # BLACK PENTAGON
