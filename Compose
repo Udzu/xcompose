@@ -42,6 +42,7 @@ include "%L"
 
 <Multi_key> <minus> <space>              : "­"  U00AD   # SOFT HYPHEN (conflicts with useless ~)
 <Multi_key> <minus> <Return>             : "‑"  U2011   # NON-BREAKING HYPHEN
+<Multi_key> <minus> <period> <Return>    : "‧"  U2027   # HYPHENATION POINT
 <Multi_key> <minus> <numbersign>         : "‒"  U2012   # FIGURE DASH
 <Multi_key> <minus> <n>                  : "–"  U2013   # EN DASH
 <Multi_key> <minus> <m>                  : "—"  U2014   # EM DASH
@@ -90,9 +91,11 @@ include "%L"
 <Multi_key> <asterisk> <parenleft>    : "⁌" U204C    # BLACK LEFTWARDS BULLET
 <Multi_key> <asterisk> <parenright>   : "⁍" U204D    # BLACK RIGHTWARDS BULLET
 <Multi_key> <asterisk> <at>           : "◉" U25C9    # FISHEYE (TAINOME)
+<Multi_key> <asterisk> <exclam>       : "◘" U25D8   # INVERSE BULLET
 <Multi_key> <asterisk> <o>            : "◦" U25E6    # WHITE BULLET
 <Multi_key> <asterisk> <O> <o>        : "⦾" U29BE   # CIRCLED WHITE BULLET
 <Multi_key> <asterisk> <O> <asterisk> : "⦿" U29BF   # CIRCLED BULLET
+<Multi_key> <asterisk> <less> <3>     : "❥"  U2765   # ROTATED HEAVY BLACK HEART BULLET
 
 ########################
 # Combining diacritics #
