@@ -3107,6 +3107,7 @@ include "%L"
 <Multi_key> <B> <semicolon> <minus>              : "⠤" U2824    # BRAILLE PATTERN DOTS-36 (-)
 <Multi_key> <B> <semicolon> <less> <quotedbl>    : "⠦" U2826    # BRAILLE PATTERN DOTS-236 (“)
 <Multi_key> <B> <semicolon> <greater> <quotedbl> : "⠴" U2834    # BRAILLE PATTERN DOTS-356 (”)
+<Multi_key> <b> <semicolon> <slash>              : "⠸⠌" U2838 U280C   # BRAILLE PATTERN DOTS-456 BRAILLE PATTERN DOTS-34 (/)
 
 <Multi_key> <B> <semicolon> <at>                   : "⠈⠁" U2808 U2801    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-1 (@)
 <Multi_key> <B> <semicolon> <ampersand>            : "⠈⠯" U2808 U282F    # BRAILLE PATTERN DOTS-4 BRAILLE PATTERN DOTS-12346 (&)
@@ -3978,7 +3979,15 @@ include "%L"
 <Multi_key> <h> <p> <r>          : "𐤓"  U10913  # PHOENICIAN LETTER ROSH
 <Multi_key> <h> <p> <S>          : "𐤔"  U10914  # PHOENICIAN LETTER SHIN
 <Multi_key> <h> <p> <t>          : "𐤕"  U10915  # PHOENICIAN LETTER TAU
+
 <Multi_key> <h> <p> <space>      : "𐤟"  U1091F  # PHOENICIAN WORD SEPARATOR
+<Multi_key> <h> <p> <1> <Return> : "𐤖" U10916   # PHOENICIAN NUMBER ONE
+<Multi_key> <h> <p> <2> <Return> : "𐤚" U1091A   # PHOENICIAN NUMBER TWO
+<Multi_key> <h> <p> <3>          : "𐤛" U1091B   # PHOENICIAN NUMBER THREE
+<Multi_key> <h> <p> <1> <0> <Return> : "𐤗" U10917   # PHOENICIAN NUMBER TEN
+<Multi_key> <h> <p> <2> <0>      : "𐤘" U10918   # PHOENICIAN NUMBER TWENTY
+<Multi_key> <h> <p> <1> <0> <0>  : "𐤙" U10919   # PHOENICIAN NUMBER ONE HUNDRED
+
 
 ################
 # (j) Japanese #
