@@ -9,22 +9,22 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (168)
+### Common script characters (175)
 * **Spaces** (13): NBSP MMSP ZWSP etc
-* **Dashes** (11): – — ⁓ ⸻ etc
+* **Dashes** (12): – — ⁓ ⸻ etc
 * **Brackets** (20): ⟨ ⟦ ⸨ ⌈ ⫽ etc
-* **Bullets** (9): • ‣ ⁃ ◉ etc
-* **Combining diacritics** (86): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
+* **Bullets** (11): • ‣ ⁃ ◉ etc
+* **Combining diacritics** (90): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 * **Currency symbols** (19): ₱ ₿ ₪ etc
 
-### Latin script characters (1793)
+### Latin script characters (1839)
 * **International Phonetic Alphabet** (134): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (251): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (95): ᵃ ᴬ ₐ ᴀ etc
+* **Superscripts and subscripts** (140): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (286): ʣ ㏈ etc
-* **Letter games** (296): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⊢ ⟞–·ᓇᓇനﬧ etc
+* **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ ⟞–·ᓇᓇനﬧ etc
 
 ### Non-Latin script characters (2091)
 * **Arabic** (and Syriac & Neo-Tifinagh) (168): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ ⵔⴻⴷⴷⵉⵜ etc
@@ -42,9 +42,9 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Braille** (78): ⠗⠫⠙⠊⠞ etc
 * **Morse Code** (76): ···---··· etc
 
-### Symbols (2606)
-* **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Math and science** (230): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+### Symbols (2610)
+* **Emoji** (1516): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+* **Math and science** (233): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
