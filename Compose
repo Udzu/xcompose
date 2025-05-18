@@ -611,7 +611,7 @@ include "%L"
 # Mathematical alphanumerics #
 ##############################
 
-# Convention: % + script + [weight] + character
+# Convention: % + font + [weight] + character
 #   font: n = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace, d = double-struck
 #   weight: ∅ = normal, * = bold, / = italic, */ = bold italic
 
@@ -3672,6 +3672,368 @@ include "%L"
 <Multi_key> <g> <p> <8> <0> <0> : "𐋺" U102FA   # COPTIC EPACT NUMBER EIGHT HUNDRED
 <Multi_key> <g> <p> <9> <0> <0> : "𐋻" U102FB   # COPTIC EPACT NUMBER NINE HUNDRED
 <Multi_key> <g> <p> <1> <0> <0> <0> : "𐋠" U102E0   # COPTIC EPACT THOUSANDS MARK
+
+# mathematical alphanumerics (same convention as Latin alphanumerics above)
+
+# Convention: % + g/G + font + [weight] + character
+#   prefix: g corresponds to gc above, and G to gx
+#   font: n = normal, s = sans-serif, d = double-struck
+#   weight: ∅ = normal, * = bold, / = italic, */ = bold italic
+#   character: as above, with symbol variants preceded by @ as follows
+
+<Multi_key> <percent> <G> <n> <at> <T> <H> : "ϴ" U03F4   # GREEK CAPITAL THETA SYMBOL
+<Multi_key> <percent> <g> <n> <at> <D> : "∇" U2207   # NABLA
+<Multi_key> <percent> <g> <n> <at> <d> : "∂" U2202   # PARTIAL DIFFERENTIAL
+<Multi_key> <percent> <g> <n> <at> <e> : "ϵ" U03F5   # GREEK LUNATE EPSILON SYMBOL
+<Multi_key> <percent> <G> <n> <at> <t> <h> : "ϑ" U03D1   # GREEK THETA SYMBOL
+<Multi_key> <percent> <g> <n> <at> <k> : "ϰ" U03F0   # GREEK KAPPA SYMBOL
+<Multi_key> <percent> <g> <n> <at> <f> : "ϕ" U03D5   # GREEK PHI SYMBOL
+<Multi_key> <percent> <G> <n> <at> <p> <h> : "ϕ" U03D5   # GREEK PHI SYMBOL
+<Multi_key> <percent> <g> <n> <at> <r> : "ϱ" U03F1   # GREEK RHO SYMBOL
+<Multi_key> <percent> <g> <n> <at> <p> : "ϖ" U03D6   # GREEK PI SYMBOL
+
+<Multi_key> <percent> <g> <n> <asterisk> <A> : "𝚨" U1D6A8    # MATHEMATICAL BOLD CAPITAL ALPHA
+<Multi_key> <percent> <g> <n> <asterisk> <B> : "𝚩" U1D6A9    # MATHEMATICAL BOLD CAPITAL BETA
+<Multi_key> <percent> <g> <n> <asterisk> <G> : "𝚪" U1D6AA    # MATHEMATICAL BOLD CAPITAL GAMMA
+<Multi_key> <percent> <g> <n> <asterisk> <D> : "𝚫" U1D6AB    # MATHEMATICAL BOLD CAPITAL DELTA
+<Multi_key> <percent> <g> <n> <asterisk> <E> : "𝚬" U1D6AC    # MATHEMATICAL BOLD CAPITAL EPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <Z> : "𝚭" U1D6AD    # MATHEMATICAL BOLD CAPITAL ZETA
+<Multi_key> <percent> <g> <n> <asterisk> <H> : "𝚮" U1D6AE    # MATHEMATICAL BOLD CAPITAL ETA
+<Multi_key> <percent> <G> <n> <asterisk> <T> <H> : "𝚯" U1D6AF    # MATHEMATICAL BOLD CAPITAL THETA
+<Multi_key> <percent> <g> <n> <asterisk> <I> : "𝚰" U1D6B0    # MATHEMATICAL BOLD CAPITAL IOTA
+<Multi_key> <percent> <g> <n> <asterisk> <K> : "𝚱" U1D6B1    # MATHEMATICAL BOLD CAPITAL KAPPA
+<Multi_key> <percent> <g> <n> <asterisk> <L> : "𝚲" U1D6B2    # MATHEMATICAL BOLD CAPITAL LAMDA
+<Multi_key> <percent> <g> <n> <asterisk> <M> : "𝚳" U1D6B3    # MATHEMATICAL BOLD CAPITAL MU
+<Multi_key> <percent> <g> <n> <asterisk> <N> : "𝚴" U1D6B4    # MATHEMATICAL BOLD CAPITAL NU
+<Multi_key> <percent> <g> <n> <asterisk> <X> : "𝚵" U1D6B5    # MATHEMATICAL BOLD CAPITAL XI
+<Multi_key> <percent> <g> <n> <asterisk> <O> : "𝚶" U1D6B6    # MATHEMATICAL BOLD CAPITAL OMICRON
+<Multi_key> <percent> <g> <n> <asterisk> <P> : "𝚷" U1D6B7    # MATHEMATICAL BOLD CAPITAL PI
+<Multi_key> <percent> <g> <n> <asterisk> <R> : "𝚸" U1D6B8    # MATHEMATICAL BOLD CAPITAL RHO
+<Multi_key> <percent> <G> <n> <asterisk> <at> <T> <H> : "𝚹" U1D6B9    # MATHEMATICAL BOLD CAPITAL THETA SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <S> : "𝚺" U1D6BA    # MATHEMATICAL BOLD CAPITAL SIGMA
+<Multi_key> <percent> <g> <n> <asterisk> <T> : "𝚻" U1D6BB    # MATHEMATICAL BOLD CAPITAL TAU
+<Multi_key> <percent> <g> <n> <asterisk> <Y> : "𝚼" U1D6BC    # MATHEMATICAL BOLD CAPITAL UPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <U> : "𝚼" U1D6BC    # MATHEMATICAL BOLD CAPITAL UPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <F> : "𝚽" U1D6BD    # MATHEMATICAL BOLD CAPITAL PHI
+<Multi_key> <percent> <G> <n> <asterisk> <P> <H> : "𝚽" U1D6BD    # MATHEMATICAL BOLD CAPITAL PHI
+<Multi_key> <percent> <g> <n> <asterisk> <C> : "𝚾" U1D6BE    # MATHEMATICAL BOLD CAPITAL CHI
+<Multi_key> <percent> <G> <n> <asterisk> <K> <H> : "𝚾" U1D6BE    # MATHEMATICAL BOLD CAPITAL CHI
+<Multi_key> <percent> <G> <n> <asterisk> <P> <S> : "𝚿" U1D6BF    # MATHEMATICAL BOLD CAPITAL PSI
+<Multi_key> <percent> <G> <n> <asterisk> <O> : "𝛀" U1D6C0    # MATHEMATICAL BOLD CAPITAL OMEGA
+<Multi_key> <percent> <g> <n> <asterisk> <at> <D> : "𝛁" U1D6C1    # MATHEMATICAL BOLD NABLA
+<Multi_key> <percent> <g> <n> <asterisk> <W> : "𝟊" U1D7CA   # MATHEMATICAL BOLD CAPITAL DIGAMMA
+<Multi_key> <percent> <g> <n> <asterisk> <a> : "𝛂" U1D6C2    # MATHEMATICAL BOLD SMALL ALPHA
+<Multi_key> <percent> <g> <n> <asterisk> <b> : "𝛃" U1D6C3    # MATHEMATICAL BOLD SMALL BETA
+<Multi_key> <percent> <g> <n> <asterisk> <g> : "𝛄" U1D6C4    # MATHEMATICAL BOLD SMALL GAMMA
+<Multi_key> <percent> <g> <n> <asterisk> <d> : "𝛅" U1D6C5    # MATHEMATICAL BOLD SMALL DELTA
+<Multi_key> <percent> <g> <n> <asterisk> <e> : "𝛆" U1D6C6    # MATHEMATICAL BOLD SMALL EPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <z> : "𝛇" U1D6C7    # MATHEMATICAL BOLD SMALL ZETA
+<Multi_key> <percent> <g> <n> <asterisk> <h> : "𝛈" U1D6C8    # MATHEMATICAL BOLD SMALL ETA
+<Multi_key> <percent> <G> <n> <asterisk> <t> <h> : "𝛉" U1D6C9    # MATHEMATICAL BOLD SMALL THETA
+<Multi_key> <percent> <g> <n> <asterisk> <i> : "𝛊" U1D6CA    # MATHEMATICAL BOLD SMALL IOTA
+<Multi_key> <percent> <g> <n> <asterisk> <k> : "𝛋" U1D6CB    # MATHEMATICAL BOLD SMALL KAPPA
+<Multi_key> <percent> <g> <n> <asterisk> <l> : "𝛌" U1D6CC    # MATHEMATICAL BOLD SMALL LAMDA
+<Multi_key> <percent> <g> <n> <asterisk> <m> : "𝛍" U1D6CD    # MATHEMATICAL BOLD SMALL MU
+<Multi_key> <percent> <g> <n> <asterisk> <n> : "𝛎" U1D6CE    # MATHEMATICAL BOLD SMALL NU
+<Multi_key> <percent> <g> <n> <asterisk> <x> : "𝛏" U1D6CF    # MATHEMATICAL BOLD SMALL XI
+<Multi_key> <percent> <g> <n> <asterisk> <o> : "𝛐" U1D6D0    # MATHEMATICAL BOLD SMALL OMICRON
+<Multi_key> <percent> <g> <n> <asterisk> <p> : "𝛑" U1D6D1    # MATHEMATICAL BOLD SMALL PI
+<Multi_key> <percent> <g> <n> <asterisk> <r> : "𝛒" U1D6D2    # MATHEMATICAL BOLD SMALL RHO
+<Multi_key> <percent> <g> <n> <asterisk> <greater> <s> : "𝛓" U1D6D3    # MATHEMATICAL BOLD SMALL FINAL SIGMA
+<Multi_key> <percent> <G> <n> <asterisk> <s> : "𝛓" U1D6D3    # MATHEMATICAL BOLD SMALL FINAL SIGMA
+<Multi_key> <percent> <g> <n> <asterisk> <s> : "𝛔" U1D6D4    # MATHEMATICAL BOLD SMALL SIGMA
+<Multi_key> <percent> <g> <n> <asterisk> <t> : "𝛕" U1D6D5    # MATHEMATICAL BOLD SMALL TAU
+<Multi_key> <percent> <g> <n> <asterisk> <y> : "𝛖" U1D6D6    # MATHEMATICAL BOLD SMALL UPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <u> : "𝛖" U1D6D6    # MATHEMATICAL BOLD SMALL UPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <f> : "𝛗" U1D6D7    # MATHEMATICAL BOLD SMALL PHI
+<Multi_key> <percent> <G> <n> <asterisk> <p> <h> : "𝛗" U1D6D7    # MATHEMATICAL BOLD SMALL PHI
+<Multi_key> <percent> <g> <n> <asterisk> <c> : "𝛘" U1D6D8    # MATHEMATICAL BOLD SMALL CHI
+<Multi_key> <percent> <G> <n> <asterisk> <k> <h> : "𝛘" U1D6D8    # MATHEMATICAL BOLD SMALL CHI
+<Multi_key> <percent> <G> <n> <asterisk> <p> <s> : "𝛙" U1D6D9    # MATHEMATICAL BOLD SMALL PSI
+<Multi_key> <percent> <G> <n> <asterisk> <o> : "𝛚" U1D6DA    # MATHEMATICAL BOLD SMALL OMEGA
+<Multi_key> <percent> <g> <n> <asterisk> <at> <d> : "𝛛" U1D6DB    # MATHEMATICAL BOLD PARTIAL DIFFERENTIAL
+<Multi_key> <percent> <g> <n> <asterisk> <at> <e> : "𝛜" U1D6DC    # MATHEMATICAL BOLD EPSILON SYMBOL
+<Multi_key> <percent> <G> <n> <asterisk> <at> <t> <h> : "𝛝" U1D6DD    # MATHEMATICAL BOLD THETA SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <at> <k> : "𝛞" U1D6DE    # MATHEMATICAL BOLD KAPPA SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <at> <f> : "𝛟" U1D6DF    # MATHEMATICAL BOLD PHI SYMBOL
+<Multi_key> <percent> <G> <n> <asterisk> <at> <p> <h> : "𝛟" U1D6DF    # MATHEMATICAL BOLD PHI SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <at> <r> : "𝛠" U1D6E0    # MATHEMATICAL BOLD RHO SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <at> <p> : "𝛡" U1D6E1    # MATHEMATICAL BOLD PI SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <w> : "𝟋" U1D7CB   # MATHEMATICAL BOLD SMALL DIGAMMA
+
+<Multi_key> <percent> <g> <n> <slash> <A> : "𝛢" U1D6E2    # MATHEMATICAL ITALIC CAPITAL ALPHA
+<Multi_key> <percent> <g> <n> <slash> <B> : "𝛣" U1D6E3    # MATHEMATICAL ITALIC CAPITAL BETA
+<Multi_key> <percent> <g> <n> <slash> <G> : "𝛤" U1D6E4    # MATHEMATICAL ITALIC CAPITAL GAMMA
+<Multi_key> <percent> <g> <n> <slash> <D> : "𝛥" U1D6E5    # MATHEMATICAL ITALIC CAPITAL DELTA
+<Multi_key> <percent> <g> <n> <slash> <E> : "𝛦" U1D6E6    # MATHEMATICAL ITALIC CAPITAL EPSILON
+<Multi_key> <percent> <g> <n> <slash> <Z> : "𝛧" U1D6E7    # MATHEMATICAL ITALIC CAPITAL ZETA
+<Multi_key> <percent> <g> <n> <slash> <H> : "𝛨" U1D6E8    # MATHEMATICAL ITALIC CAPITAL ETA
+<Multi_key> <percent> <G> <n> <slash> <T> <H> : "𝛩" U1D6E9    # MATHEMATICAL ITALIC CAPITAL THETA
+<Multi_key> <percent> <g> <n> <slash> <I> : "𝛪" U1D6EA    # MATHEMATICAL ITALIC CAPITAL IOTA
+<Multi_key> <percent> <g> <n> <slash> <K> : "𝛫" U1D6EB    # MATHEMATICAL ITALIC CAPITAL KAPPA
+<Multi_key> <percent> <g> <n> <slash> <L> : "𝛬" U1D6EC    # MATHEMATICAL ITALIC CAPITAL LAMDA
+<Multi_key> <percent> <g> <n> <slash> <M> : "𝛭" U1D6ED    # MATHEMATICAL ITALIC CAPITAL MU
+<Multi_key> <percent> <g> <n> <slash> <N> : "𝛮" U1D6EE    # MATHEMATICAL ITALIC CAPITAL NU
+<Multi_key> <percent> <g> <n> <slash> <X> : "𝛯" U1D6EF    # MATHEMATICAL ITALIC CAPITAL XI
+<Multi_key> <percent> <g> <n> <slash> <O> : "𝛰" U1D6F0    # MATHEMATICAL ITALIC CAPITAL OMICRON
+<Multi_key> <percent> <g> <n> <slash> <P> : "𝛱" U1D6F1    # MATHEMATICAL ITALIC CAPITAL PI
+<Multi_key> <percent> <g> <n> <slash> <R> : "𝛲" U1D6F2    # MATHEMATICAL ITALIC CAPITAL RHO
+<Multi_key> <percent> <G> <n> <slash> <at> <T> <H> : "𝛳" U1D6F3    # MATHEMATICAL ITALIC CAPITAL THETA SYMBOL
+<Multi_key> <percent> <g> <n> <slash> <S> : "𝛴" U1D6F4    # MATHEMATICAL ITALIC CAPITAL SIGMA
+<Multi_key> <percent> <g> <n> <slash> <T> : "𝛵" U1D6F5    # MATHEMATICAL ITALIC CAPITAL TAU
+<Multi_key> <percent> <g> <n> <slash> <Y> : "𝛶" U1D6F6    # MATHEMATICAL ITALIC CAPITAL UPSILON
+<Multi_key> <percent> <g> <n> <slash> <U> : "𝛶" U1D6F6    # MATHEMATICAL ITALIC CAPITAL UPSILON
+<Multi_key> <percent> <g> <n> <slash> <F> : "𝛷" U1D6F7    # MATHEMATICAL ITALIC CAPITAL PHI
+<Multi_key> <percent> <G> <n> <slash> <P> <H> : "𝛷" U1D6F7    # MATHEMATICAL ITALIC CAPITAL PHI
+<Multi_key> <percent> <g> <n> <slash> <C> : "𝛸" U1D6F8    # MATHEMATICAL ITALIC CAPITAL CHI
+<Multi_key> <percent> <G> <n> <slash> <K> <H> : "𝛸" U1D6F8    # MATHEMATICAL ITALIC CAPITAL CHI
+<Multi_key> <percent> <G> <n> <slash> <P> <S> : "𝛹" U1D6F9    # MATHEMATICAL ITALIC CAPITAL PSI
+<Multi_key> <percent> <G> <n> <slash> <O> : "𝛺" U1D6FA    # MATHEMATICAL ITALIC CAPITAL OMEGA
+<Multi_key> <percent> <g> <n> <slash> <at> <D> : "𝛻" U1D6FB    # MATHEMATICAL ITALIC NABLA
+<Multi_key> <percent> <g> <n> <slash> <a> : "𝛼" U1D6FC    # MATHEMATICAL ITALIC SMALL ALPHA
+<Multi_key> <percent> <g> <n> <slash> <b> : "𝛽" U1D6FD    # MATHEMATICAL ITALIC SMALL BETA
+<Multi_key> <percent> <g> <n> <slash> <g> : "𝛾" U1D6FE    # MATHEMATICAL ITALIC SMALL GAMMA
+<Multi_key> <percent> <g> <n> <slash> <d> : "𝛿" U1D6FF    # MATHEMATICAL ITALIC SMALL DELTA
+<Multi_key> <percent> <g> <n> <slash> <e> : "𝜀" U1D700    # MATHEMATICAL ITALIC SMALL EPSILON
+<Multi_key> <percent> <g> <n> <slash> <z> : "𝜁" U1D701    # MATHEMATICAL ITALIC SMALL ZETA
+<Multi_key> <percent> <g> <n> <slash> <h> : "𝜂" U1D702    # MATHEMATICAL ITALIC SMALL ETA
+<Multi_key> <percent> <G> <n> <slash> <t> <h> : "𝜃" U1D703    # MATHEMATICAL ITALIC SMALL THETA
+<Multi_key> <percent> <g> <n> <slash> <i> : "𝜄" U1D704    # MATHEMATICAL ITALIC SMALL IOTA
+<Multi_key> <percent> <g> <n> <slash> <k> : "𝜅" U1D705    # MATHEMATICAL ITALIC SMALL KAPPA
+<Multi_key> <percent> <g> <n> <slash> <l> : "𝜆" U1D706    # MATHEMATICAL ITALIC SMALL LAMDA
+<Multi_key> <percent> <g> <n> <slash> <m> : "𝜇" U1D707    # MATHEMATICAL ITALIC SMALL MU
+<Multi_key> <percent> <g> <n> <slash> <n> : "𝜈" U1D708    # MATHEMATICAL ITALIC SMALL NU
+<Multi_key> <percent> <g> <n> <slash> <x> : "𝜉" U1D709    # MATHEMATICAL ITALIC SMALL XI
+<Multi_key> <percent> <g> <n> <slash> <o> : "𝜊" U1D70A    # MATHEMATICAL ITALIC SMALL OMICRON
+<Multi_key> <percent> <g> <n> <slash> <p> : "𝜋" U1D70B    # MATHEMATICAL ITALIC SMALL PI
+<Multi_key> <percent> <g> <n> <slash> <r> : "𝜌" U1D70C    # MATHEMATICAL ITALIC SMALL RHO
+<Multi_key> <percent> <g> <n> <slash> <greater> <s> : "𝜍" U1D70D    # MATHEMATICAL ITALIC SMALL FINAL SIGMA
+<Multi_key> <percent> <G> <n> <slash> <s> : "𝜍" U1D70D    # MATHEMATICAL ITALIC SMALL FINAL SIGMA
+<Multi_key> <percent> <g> <n> <slash> <s> : "𝜎" U1D70E    # MATHEMATICAL ITALIC SMALL SIGMA
+<Multi_key> <percent> <g> <n> <slash> <t> : "𝜏" U1D70F    # MATHEMATICAL ITALIC SMALL TAU
+<Multi_key> <percent> <g> <n> <slash> <y> : "𝜐" U1D710    # MATHEMATICAL ITALIC SMALL UPSILON
+<Multi_key> <percent> <g> <n> <slash> <u> : "𝜐" U1D710    # MATHEMATICAL ITALIC SMALL UPSILON
+<Multi_key> <percent> <g> <n> <slash> <f> : "𝜑" U1D711    # MATHEMATICAL ITALIC SMALL PHI
+<Multi_key> <percent> <G> <n> <slash> <p> <h> : "𝜑" U1D711    # MATHEMATICAL ITALIC SMALL PHI
+<Multi_key> <percent> <g> <n> <slash> <c> : "𝜒" U1D712    # MATHEMATICAL ITALIC SMALL CHI
+<Multi_key> <percent> <G> <n> <slash> <k> <h> : "𝜒" U1D712    # MATHEMATICAL ITALIC SMALL CHI
+<Multi_key> <percent> <G> <n> <slash> <p> <s> : "𝜓" U1D713    # MATHEMATICAL ITALIC SMALL PSI
+<Multi_key> <percent> <G> <n> <slash> <o> : "𝜔" U1D714    # MATHEMATICAL ITALIC SMALL OMEGA
+<Multi_key> <percent> <g> <n> <slash> <at> <d> : "𝜕" U1D715    # MATHEMATICAL ITALIC PARTIAL DIFFERENTIAL
+<Multi_key> <percent> <g> <n> <slash> <at> <e> : "𝜖" U1D716    # MATHEMATICAL ITALIC EPSILON SYMBOL
+<Multi_key> <percent> <G> <n> <slash> <at> <t> <h> : "𝜗" U1D717    # MATHEMATICAL ITALIC THETA SYMBOL
+<Multi_key> <percent> <g> <n> <slash> <at> <k> : "𝜘" U1D718    # MATHEMATICAL ITALIC KAPPA SYMBOL
+<Multi_key> <percent> <g> <n> <slash> <at> <f> : "𝜙" U1D719    # MATHEMATICAL ITALIC PHI SYMBOL
+<Multi_key> <percent> <G> <n> <slash> <at> <p> <h> : "𝜙" U1D719    # MATHEMATICAL ITALIC PHI SYMBOL
+<Multi_key> <percent> <g> <n> <slash> <at> <r> : "𝜚" U1D71A    # MATHEMATICAL ITALIC RHO SYMBOL
+<Multi_key> <percent> <g> <n> <slash> <at> <p> : "𝜛" U1D71B    # MATHEMATICAL ITALIC PI SYMBOL
+
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <A> : "𝜜" U1D71C    # MATHEMATICAL BOLD ITALIC CAPITAL ALPHA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <B> : "𝜝" U1D71D    # MATHEMATICAL BOLD ITALIC CAPITAL BETA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <G> : "𝜞" U1D71E    # MATHEMATICAL BOLD ITALIC CAPITAL GAMMA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <D> : "𝜟" U1D71F    # MATHEMATICAL BOLD ITALIC CAPITAL DELTA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <E> : "𝜠" U1D720    # MATHEMATICAL BOLD ITALIC CAPITAL EPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <Z> : "𝜡" U1D721    # MATHEMATICAL BOLD ITALIC CAPITAL ZETA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <H> : "𝜢" U1D722    # MATHEMATICAL BOLD ITALIC CAPITAL ETA
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <T> <H> : "𝜣" U1D723    # MATHEMATICAL BOLD ITALIC CAPITAL THETA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <I> : "𝜤" U1D724    # MATHEMATICAL BOLD ITALIC CAPITAL IOTA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <K> : "𝜥" U1D725    # MATHEMATICAL BOLD ITALIC CAPITAL KAPPA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <L> : "𝜦" U1D726    # MATHEMATICAL BOLD ITALIC CAPITAL LAMDA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <M> : "𝜧" U1D727    # MATHEMATICAL BOLD ITALIC CAPITAL MU
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <N> : "𝜨" U1D728    # MATHEMATICAL BOLD ITALIC CAPITAL NU
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <X> : "𝜩" U1D729    # MATHEMATICAL BOLD ITALIC CAPITAL XI
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <O> : "𝜪" U1D72A    # MATHEMATICAL BOLD ITALIC CAPITAL OMICRON
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <P> : "𝜫" U1D72B    # MATHEMATICAL BOLD ITALIC CAPITAL PI
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <R> : "𝜬" U1D72C    # MATHEMATICAL BOLD ITALIC CAPITAL RHO
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <at> <T> <H> : "𝜭" U1D72D    # MATHEMATICAL BOLD ITALIC CAPITAL THETA SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <S> : "𝜮" U1D72E    # MATHEMATICAL BOLD ITALIC CAPITAL SIGMA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <T> : "𝜯" U1D72F    # MATHEMATICAL BOLD ITALIC CAPITAL TAU
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <Y> : "𝜰" U1D730    # MATHEMATICAL BOLD ITALIC CAPITAL UPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <U> : "𝜰" U1D730    # MATHEMATICAL BOLD ITALIC CAPITAL UPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <F> : "𝜱" U1D731    # MATHEMATICAL BOLD ITALIC CAPITAL PHI
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <P> <H> : "𝜱" U1D731    # MATHEMATICAL BOLD ITALIC CAPITAL PHI
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <C> : "𝜲" U1D732    # MATHEMATICAL BOLD ITALIC CAPITAL CHI
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <K> <H> : "𝜲" U1D732    # MATHEMATICAL BOLD ITALIC CAPITAL CHI
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <P> <S> : "𝜳" U1D733    # MATHEMATICAL BOLD ITALIC CAPITAL PSI
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <O> : "𝜴" U1D734    # MATHEMATICAL BOLD ITALIC CAPITAL OMEGA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <D> : "𝜵" U1D735    # MATHEMATICAL BOLD ITALIC NABLA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <a> : "𝜶" U1D736    # MATHEMATICAL BOLD ITALIC SMALL ALPHA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <b> : "𝜷" U1D737    # MATHEMATICAL BOLD ITALIC SMALL BETA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <g> : "𝜸" U1D738    # MATHEMATICAL BOLD ITALIC SMALL GAMMA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <d> : "𝜹" U1D739    # MATHEMATICAL BOLD ITALIC SMALL DELTA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <e> : "𝜺" U1D73A    # MATHEMATICAL BOLD ITALIC SMALL EPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <z> : "𝜻" U1D73B    # MATHEMATICAL BOLD ITALIC SMALL ZETA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <h> : "𝜼" U1D73C    # MATHEMATICAL BOLD ITALIC SMALL ETA
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <t> <h> : "𝜽" U1D73D    # MATHEMATICAL BOLD ITALIC SMALL THETA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <i> : "𝜾" U1D73E    # MATHEMATICAL BOLD ITALIC SMALL IOTA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <k> : "𝜿" U1D73F    # MATHEMATICAL BOLD ITALIC SMALL KAPPA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <l> : "𝝀" U1D740    # MATHEMATICAL BOLD ITALIC SMALL LAMDA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <m> : "𝝁" U1D741    # MATHEMATICAL BOLD ITALIC SMALL MU
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <n> : "𝝂" U1D742    # MATHEMATICAL BOLD ITALIC SMALL NU
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <x> : "𝝃" U1D743    # MATHEMATICAL BOLD ITALIC SMALL XI
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <o> : "𝝄" U1D744    # MATHEMATICAL BOLD ITALIC SMALL OMICRON
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <p> : "𝝅" U1D745    # MATHEMATICAL BOLD ITALIC SMALL PI
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <r> : "𝝆" U1D746    # MATHEMATICAL BOLD ITALIC SMALL RHO
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <greater> <s> : "𝝇" U1D747    # MATHEMATICAL BOLD ITALIC SMALL FINAL SIGMA
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <s> : "𝝇" U1D747    # MATHEMATICAL BOLD ITALIC SMALL FINAL SIGMA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <s> : "𝝈" U1D748    # MATHEMATICAL BOLD ITALIC SMALL SIGMA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <t> : "𝝉" U1D749    # MATHEMATICAL BOLD ITALIC SMALL TAU
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <y> : "𝝊" U1D74A    # MATHEMATICAL BOLD ITALIC SMALL UPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <u> : "𝝊" U1D74A    # MATHEMATICAL BOLD ITALIC SMALL UPSILON
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <f> : "𝝋" U1D74B    # MATHEMATICAL BOLD ITALIC SMALL PHI
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <p> <h> : "𝝋" U1D74B    # MATHEMATICAL BOLD ITALIC SMALL PHI
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <c> : "𝝌" U1D74C    # MATHEMATICAL BOLD ITALIC SMALL CHI
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <k> <h> : "𝝌" U1D74C    # MATHEMATICAL BOLD ITALIC SMALL CHI
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <p> <s> : "𝝍" U1D74D    # MATHEMATICAL BOLD ITALIC SMALL PSI
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <o> : "𝝎" U1D74E    # MATHEMATICAL BOLD ITALIC SMALL OMEGA
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <d> : "𝝏" U1D74F    # MATHEMATICAL BOLD ITALIC PARTIAL DIFFERENTIAL
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <e> : "𝝐" U1D750    # MATHEMATICAL BOLD ITALIC EPSILON SYMBOL
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <at> <t> <h> : "𝝑" U1D751    # MATHEMATICAL BOLD ITALIC THETA SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <k> : "𝝒" U1D752    # MATHEMATICAL BOLD ITALIC KAPPA SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <f> : "𝝓" U1D753    # MATHEMATICAL BOLD ITALIC PHI SYMBOL
+<Multi_key> <percent> <G> <n> <asterisk> <slash> <at> <p> <h> : "𝝓" U1D753    # MATHEMATICAL BOLD ITALIC PHI SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <r> : "𝝔" U1D754    # MATHEMATICAL BOLD ITALIC RHO SYMBOL
+<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <p> : "𝝕" U1D755    # MATHEMATICAL BOLD ITALIC PI SYMBOL
+
+<Multi_key> <percent> <g> <s> <asterisk> <A> : "𝝖" U1D756    # MATHEMATICAL SANS-SERIF BOLD CAPITAL ALPHA
+<Multi_key> <percent> <g> <s> <asterisk> <B> : "𝝗" U1D757    # MATHEMATICAL SANS-SERIF BOLD CAPITAL BETA
+<Multi_key> <percent> <g> <s> <asterisk> <G> : "𝝘" U1D758    # MATHEMATICAL SANS-SERIF BOLD CAPITAL GAMMA
+<Multi_key> <percent> <g> <s> <asterisk> <D> : "𝝙" U1D759    # MATHEMATICAL SANS-SERIF BOLD CAPITAL DELTA
+<Multi_key> <percent> <g> <s> <asterisk> <E> : "𝝚" U1D75A    # MATHEMATICAL SANS-SERIF BOLD CAPITAL EPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <Z> : "𝝛" U1D75B    # MATHEMATICAL SANS-SERIF BOLD CAPITAL ZETA
+<Multi_key> <percent> <g> <s> <asterisk> <H> : "𝝜" U1D75C    # MATHEMATICAL SANS-SERIF BOLD CAPITAL ETA
+<Multi_key> <percent> <G> <s> <asterisk> <T> <H> : "𝝝" U1D75D    # MATHEMATICAL SANS-SERIF BOLD CAPITAL THETA
+<Multi_key> <percent> <g> <s> <asterisk> <I> : "𝝞" U1D75E    # MATHEMATICAL SANS-SERIF BOLD CAPITAL IOTA
+<Multi_key> <percent> <g> <s> <asterisk> <K> : "𝝟" U1D75F    # MATHEMATICAL SANS-SERIF BOLD CAPITAL KAPPA
+<Multi_key> <percent> <g> <s> <asterisk> <L> : "𝝠" U1D760    # MATHEMATICAL SANS-SERIF BOLD CAPITAL LAMDA
+<Multi_key> <percent> <g> <s> <asterisk> <M> : "𝝡" U1D761    # MATHEMATICAL SANS-SERIF BOLD CAPITAL MU
+<Multi_key> <percent> <g> <s> <asterisk> <N> : "𝝢" U1D762    # MATHEMATICAL SANS-SERIF BOLD CAPITAL NU
+<Multi_key> <percent> <g> <s> <asterisk> <X> : "𝝣" U1D763    # MATHEMATICAL SANS-SERIF BOLD CAPITAL XI
+<Multi_key> <percent> <g> <s> <asterisk> <O> : "𝝤" U1D764    # MATHEMATICAL SANS-SERIF BOLD CAPITAL OMICRON
+<Multi_key> <percent> <g> <s> <asterisk> <P> : "𝝥" U1D765    # MATHEMATICAL SANS-SERIF BOLD CAPITAL PI
+<Multi_key> <percent> <g> <s> <asterisk> <R> : "𝝦" U1D766    # MATHEMATICAL SANS-SERIF BOLD CAPITAL RHO
+<Multi_key> <percent> <G> <s> <asterisk> <at> <T> <H> : "𝝧" U1D767    # MATHEMATICAL SANS-SERIF BOLD CAPITAL THETA SYMBOL
+<Multi_key> <percent> <g> <s> <asterisk> <S> : "𝝨" U1D768    # MATHEMATICAL SANS-SERIF BOLD CAPITAL SIGMA
+<Multi_key> <percent> <g> <s> <asterisk> <T> : "𝝩" U1D769    # MATHEMATICAL SANS-SERIF BOLD CAPITAL TAU
+<Multi_key> <percent> <g> <s> <asterisk> <Y> : "𝝪" U1D76A    # MATHEMATICAL SANS-SERIF BOLD CAPITAL UPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <U> : "𝝪" U1D76A    # MATHEMATICAL SANS-SERIF BOLD CAPITAL UPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <F> : "𝝫" U1D76B    # MATHEMATICAL SANS-SERIF BOLD CAPITAL PHI
+<Multi_key> <percent> <G> <s> <asterisk> <P> <H> : "𝝫" U1D76B    # MATHEMATICAL SANS-SERIF BOLD CAPITAL PHI
+<Multi_key> <percent> <g> <s> <asterisk> <C> : "𝝬" U1D76C    # MATHEMATICAL SANS-SERIF BOLD CAPITAL CHI
+<Multi_key> <percent> <G> <s> <asterisk> <K> <H> : "𝝬" U1D76C    # MATHEMATICAL SANS-SERIF BOLD CAPITAL CHI
+<Multi_key> <percent> <G> <s> <asterisk> <P> <S> : "𝝭" U1D76D    # MATHEMATICAL SANS-SERIF BOLD CAPITAL PSI
+<Multi_key> <percent> <G> <s> <asterisk> <O> : "𝝮" U1D76E    # MATHEMATICAL SANS-SERIF BOLD CAPITAL OMEGA
+<Multi_key> <percent> <g> <s> <asterisk> <at> <D> : "𝝯" U1D76F    # MATHEMATICAL SANS-SERIF BOLD NABLA
+<Multi_key> <percent> <g> <s> <asterisk> <a> : "𝝰" U1D770    # MATHEMATICAL SANS-SERIF BOLD SMALL ALPHA
+<Multi_key> <percent> <g> <s> <asterisk> <b> : "𝝱" U1D771    # MATHEMATICAL SANS-SERIF BOLD SMALL BETA
+<Multi_key> <percent> <g> <s> <asterisk> <g> : "𝝲" U1D772    # MATHEMATICAL SANS-SERIF BOLD SMALL GAMMA
+<Multi_key> <percent> <g> <s> <asterisk> <d> : "𝝳" U1D773    # MATHEMATICAL SANS-SERIF BOLD SMALL DELTA
+<Multi_key> <percent> <g> <s> <asterisk> <e> : "𝝴" U1D774    # MATHEMATICAL SANS-SERIF BOLD SMALL EPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <z> : "𝝵" U1D775    # MATHEMATICAL SANS-SERIF BOLD SMALL ZETA
+<Multi_key> <percent> <g> <s> <asterisk> <h> : "𝝶" U1D776    # MATHEMATICAL SANS-SERIF BOLD SMALL ETA
+<Multi_key> <percent> <G> <s> <asterisk> <t> <h> : "𝝷" U1D777    # MATHEMATICAL SANS-SERIF BOLD SMALL THETA
+<Multi_key> <percent> <g> <s> <asterisk> <i> : "𝝸" U1D778    # MATHEMATICAL SANS-SERIF BOLD SMALL IOTA
+<Multi_key> <percent> <g> <s> <asterisk> <k> : "𝝹" U1D779    # MATHEMATICAL SANS-SERIF BOLD SMALL KAPPA
+<Multi_key> <percent> <g> <s> <asterisk> <l> : "𝝺" U1D77A    # MATHEMATICAL SANS-SERIF BOLD SMALL LAMDA
+<Multi_key> <percent> <g> <s> <asterisk> <m> : "𝝻" U1D77B    # MATHEMATICAL SANS-SERIF BOLD SMALL MU
+<Multi_key> <percent> <g> <s> <asterisk> <n> : "𝝼" U1D77C    # MATHEMATICAL SANS-SERIF BOLD SMALL NU
+<Multi_key> <percent> <g> <s> <asterisk> <x> : "𝝽" U1D77D    # MATHEMATICAL SANS-SERIF BOLD SMALL XI
+<Multi_key> <percent> <g> <s> <asterisk> <o> : "𝝾" U1D77E    # MATHEMATICAL SANS-SERIF BOLD SMALL OMICRON
+<Multi_key> <percent> <g> <s> <asterisk> <p> : "𝝿" U1D77F    # MATHEMATICAL SANS-SERIF BOLD SMALL PI
+<Multi_key> <percent> <g> <s> <asterisk> <r> : "𝞀" U1D780    # MATHEMATICAL SANS-SERIF BOLD SMALL RHO
+<Multi_key> <percent> <g> <s> <asterisk> <greater> <s> : "𝞁" U1D781    # MATHEMATICAL SANS-SERIF BOLD SMALL FINAL SIGMA
+<Multi_key> <percent> <G> <s> <asterisk> <s> : "𝞁" U1D781    # MATHEMATICAL SANS-SERIF BOLD SMALL FINAL SIGMA
+<Multi_key> <percent> <g> <s> <asterisk> <s> : "𝞂" U1D782    # MATHEMATICAL SANS-SERIF BOLD SMALL SIGMA
+<Multi_key> <percent> <g> <s> <asterisk> <t> : "𝞃" U1D783    # MATHEMATICAL SANS-SERIF BOLD SMALL TAU
+<Multi_key> <percent> <g> <s> <asterisk> <y> : "𝞄" U1D784    # MATHEMATICAL SANS-SERIF BOLD SMALL UPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <u> : "𝞄" U1D784    # MATHEMATICAL SANS-SERIF BOLD SMALL UPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <f> : "𝞅" U1D785    # MATHEMATICAL SANS-SERIF BOLD SMALL PHI
+<Multi_key> <percent> <G> <s> <asterisk> <p> <h> : "𝞅" U1D785    # MATHEMATICAL SANS-SERIF BOLD SMALL PHI
+<Multi_key> <percent> <g> <s> <asterisk> <c> : "𝞆" U1D786    # MATHEMATICAL SANS-SERIF BOLD SMALL CHI
+<Multi_key> <percent> <G> <s> <asterisk> <k> <h> : "𝞆" U1D786    # MATHEMATICAL SANS-SERIF BOLD SMALL CHI
+<Multi_key> <percent> <G> <s> <asterisk> <p> <s> : "𝞇" U1D787    # MATHEMATICAL SANS-SERIF BOLD SMALL PSI
+<Multi_key> <percent> <G> <s> <asterisk> <o> : "𝞈" U1D788    # MATHEMATICAL SANS-SERIF BOLD SMALL OMEGA
+<Multi_key> <percent> <g> <s> <asterisk> <at> <d> : "𝞉" U1D789    # MATHEMATICAL SANS-SERIF BOLD PARTIAL DIFFERENTIAL
+<Multi_key> <percent> <g> <s> <asterisk> <at> <e> : "𝞊" U1D78A    # MATHEMATICAL SANS-SERIF BOLD EPSILON SYMBOL
+<Multi_key> <percent> <G> <s> <asterisk> <at> <t> <h> : "𝞋" U1D78B    # MATHEMATICAL SANS-SERIF BOLD THETA SYMBOL
+<Multi_key> <percent> <g> <s> <asterisk> <at> <k> : "𝞌" U1D78C    # MATHEMATICAL SANS-SERIF BOLD KAPPA SYMBOL
+<Multi_key> <percent> <g> <s> <asterisk> <at> <f> : "𝞍" U1D78D    # MATHEMATICAL SANS-SERIF BOLD PHI SYMBOL
+<Multi_key> <percent> <G> <s> <asterisk> <at> <p> <h> : "𝞍" U1D78D    # MATHEMATICAL SANS-SERIF BOLD PHI SYMBOL
+<Multi_key> <percent> <g> <s> <asterisk> <at> <r> : "𝞎" U1D78E    # MATHEMATICAL SANS-SERIF BOLD RHO SYMBOL
+<Multi_key> <percent> <g> <s> <asterisk> <at> <p> : "𝞏" U1D78F    # MATHEMATICAL SANS-SERIF BOLD PI SYMBOL
+
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <A> : "𝞐" U1D790    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL ALPHA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <B> : "𝞑" U1D791    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL BETA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <G> : "𝞒" U1D792    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL GAMMA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <D> : "𝞓" U1D793    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL DELTA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <E> : "𝞔" U1D794    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL EPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <Z> : "𝞕" U1D795    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL ZETA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <H> : "𝞖" U1D796    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL ETA
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <T> <H> : "𝞗" U1D797    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL THETA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <I> : "𝞘" U1D798    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL IOTA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <K> : "𝞙" U1D799    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL KAPPA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <L> : "𝞚" U1D79A    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL LAMDA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <M> : "𝞛" U1D79B    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL MU
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <N> : "𝞜" U1D79C    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL NU
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <X> : "𝞝" U1D79D    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL XI
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <O> : "𝞞" U1D79E    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL OMICRON
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <P> : "𝞟" U1D79F    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL PI
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <R> : "𝞠" U1D7A0    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL RHO
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <at> <T> <H> : "𝞡" U1D7A1    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL THETA SYMBOL
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <S> : "𝞢" U1D7A2    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL SIGMA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <T> : "𝞣" U1D7A3    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL TAU
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <Y> : "𝞤" U1D7A4    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL UPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <U> : "𝞤" U1D7A4    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL UPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <F> : "𝞥" U1D7A5    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL PHI
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <P> <H> : "𝞥" U1D7A5    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL PHI
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <C> : "𝞦" U1D7A6    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL CHI
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <K> <H> : "𝞦" U1D7A6    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL CHI
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <P> <S> : "𝞧" U1D7A7    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL PSI
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <O> : "𝞨" U1D7A8    # MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL OMEGA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <at> <D> : "𝞩" U1D7A9    # MATHEMATICAL SANS-SERIF BOLD ITALIC NABLA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <a> : "𝞪" U1D7AA    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL ALPHA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <b> : "𝞫" U1D7AB    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL BETA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <g> : "𝞬" U1D7AC    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL GAMMA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <d> : "𝞭" U1D7AD    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL DELTA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <e> : "𝞮" U1D7AE    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL EPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <z> : "𝞯" U1D7AF    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL ZETA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <h> : "𝞰" U1D7B0    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL ETA
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <t> <h> : "𝞱" U1D7B1    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL THETA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <i> : "𝞲" U1D7B2    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL IOTA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <k> : "𝞳" U1D7B3    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL KAPPA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <l> : "𝞴" U1D7B4    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL LAMDA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <m> : "𝞵" U1D7B5    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL MU
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <n> : "𝞶" U1D7B6    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL NU
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <x> : "𝞷" U1D7B7    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL XI
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <o> : "𝞸" U1D7B8    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL OMICRON
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <p> : "𝞹" U1D7B9    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL PI
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <r> : "𝞺" U1D7BA    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL RHO
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <greater> <s> : "𝞻" U1D7BB    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL FINAL SIGMA
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <s> : "𝞻" U1D7BB    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL FINAL SIGMA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <s> : "𝞼" U1D7BC    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL SIGMA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <t> : "𝞽" U1D7BD    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL TAU
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <y> : "𝞾" U1D7BE    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL UPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <u> : "𝞾" U1D7BE    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL UPSILON
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <f> : "𝞿" U1D7BF    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL PHI
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <p> <h> : "𝞿" U1D7BF    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL PHI
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <c> : "𝟀" U1D7C0    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL CHI
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <k> <h> : "𝟀" U1D7C0    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL CHI
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <p> <s> : "𝟁" U1D7C1    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL PSI
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <o> : "𝟂" U1D7C2    # MATHEMATICAL SANS-SERIF BOLD ITALIC SMALL OMEGA
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <at> <d> : "𝟃" U1D7C3    # MATHEMATICAL SANS-SERIF BOLD ITALIC PARTIAL DIFFERENTIAL
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <at> <e> : "𝟄" U1D7C4    # MATHEMATICAL SANS-SERIF BOLD ITALIC EPSILON SYMBOL
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <at> <t> <h> : "𝟅" U1D7C5    # MATHEMATICAL SANS-SERIF BOLD ITALIC THETA SYMBOL
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <at> <k> : "𝟆" U1D7C6    # MATHEMATICAL SANS-SERIF BOLD ITALIC KAPPA SYMBOL
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <at> <f> : "𝟇" U1D7C7    # MATHEMATICAL SANS-SERIF BOLD ITALIC PHI SYMBOL
+<Multi_key> <percent> <G> <s> <asterisk> <slash> <at> <p> <h> : "𝟇" U1D7C7    # MATHEMATICAL SANS-SERIF BOLD ITALIC PHI SYMBOL
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <at> <r> : "𝟈" U1D7C8    # MATHEMATICAL SANS-SERIF BOLD ITALIC RHO SYMBOL
+<Multi_key> <percent> <g> <s> <asterisk> <slash> <at> <p> : "𝟉" U1D7C9    # MATHEMATICAL SANS-SERIF BOLD ITALIC PI SYMBOL
+
+<Multi_key> <percent> <g> <d> <G> : "ℾ" U213E   # DOUBLE-STRUCK CAPITAL GAMMA
+<Multi_key> <percent> <g> <d> <P> : "ℿ" U213F   # DOUBLE-STRUCK CAPITAL PI
+<Multi_key> <percent> <g> <d> <S> : "⅀" U2140   # DOUBLE-STRUCK N-ARY SUMMATION
+<Multi_key> <percent> <g> <d> <g> : "ℽ" U213D   # DOUBLE-STRUCK SMALL GAMMA
+<Multi_key> <percent> <g> <d> <p> : "ℼ" U213C   # DOUBLE-STRUCK SMALL PI
 
 ################
 # (G) Georgian #
