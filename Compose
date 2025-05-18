@@ -103,7 +103,7 @@ include "%L"
 
 # Convention: all combining character sequences end with <Return>
 
-# See superscripts section for combining Latin letters
+# See superscripts… section for combining Latin letters
 
 <Multi_key> <grave> <Return>         : "̀"  U0300   # COMBINING GRAVE ACCENT
 <Multi_key> <apostrophe> <Return>    : "́"  U0301   # COMBINING ACUTE ACCENT
@@ -135,17 +135,19 @@ include "%L"
 <Multi_key> <asciitilde> <slash> <Return> : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <slash> <asciitilde> <Return> : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <c> <Return>             : "͑"  U0351   # COMBINING LEFT HALF RING ABOVE
+<Multi_key> <parenleft> <period> <Return> : "͒" U0352   # COMBINING FERMATA
 <Multi_key> <c> <less> <Return>      : "͗"  U0357   # COMBINING RIGHT HALF RING ABOVE (conflicts with č, use vc)
 <Multi_key> <parenright> <Return>    : "͝"  U035D   # COMBINING DOUBLE BREVE  
 <Multi_key> <parenleft> <Return>     : "͡"  U0361   # COMBINING DOUBLE INVERTED BREVE
-<Multi_key> <underscore> <apostrophe> <space> <Return>  : "᷄" U1DC4   # COMBINING MACRON-ACUTE (conflicts with ⍘, use '_[Return] defined below)
-<Multi_key> <grave> <underscore> <space> <Return>       : "᷅" U1DC5   # COMBINING GRAVE-MACRON
-<Multi_key> <underscore> <grave> <space> <Return>       : "᷆" U1DC6   # COMBINING MACRON-GRAVE
-<Multi_key> <apostrophe> <underscore> <space> <Return>  : "᷇" U1DC7   # COMBINING ACUTE-MACRON
-<Multi_key> <grave> <apostrophe> <grave> <Return>       : "᷈" U1DC8   # COMBINING GRAVE-ACUTE-GRAVE
-<Multi_key> <apostrophe> <grave> <apostrophe> <Return>  : "᷉" U1DC9   # COMBINING ACUTE-GRAVE-ACUTE
-<Multi_key> <u> <underscore> <space> <Return>           : "᷋" U1DCB   # COMBINING BREVE-MACRON (conflicts with ū, use -u or u-)
-<Multi_key> <underscore> <u> <space> <Return>           : "᷌" U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
+<Multi_key> <underscore> <apostrophe> <space> <Return> : "᷄" U1DC4   # COMBINING MACRON-ACUTE (conflicts with ⍘, use '_[Return] defined below)
+<Multi_key> <grave> <underscore> <space> <Return>      : "᷅" U1DC5   # COMBINING GRAVE-MACRON
+<Multi_key> <underscore> <grave> <space> <Return>      : "᷆" U1DC6   # COMBINING MACRON-GRAVE
+<Multi_key> <apostrophe> <underscore> <space> <Return> : "᷇" U1DC7   # COMBINING ACUTE-MACRON
+<Multi_key> <grave> <apostrophe> <grave> <Return>      : "᷈" U1DC8   # COMBINING GRAVE-ACUTE-GRAVE
+<Multi_key> <apostrophe> <grave> <apostrophe> <Return> : "᷉" U1DC9   # COMBINING ACUTE-GRAVE-ACUTE
+<Multi_key> <u> <underscore> <space> <Return>          : "᷋" U1DCB   # COMBINING BREVE-MACRON (conflicts with ū, use -u or u-)
+<Multi_key> <underscore> <u> <space> <Return>          : "᷌" U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
+<Multi_key> <asterisk> <Return>      : "⃰" U20F0   # COMBINING ASTERISK ABOVE
 
 <Multi_key> <underscore> <grave> <Return>            : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
 <Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (conflicts with ⍘, use '_[Return] defined below)
@@ -3853,7 +3855,7 @@ include "%L"
 <Multi_key> <h> <c> <H>        : "ח"  U05D7   # HEBREW LETTER HET
 <Multi_key> <h> <c> <T>        : "ט"  U05D8   # HEBREW LETTER TET
 <Multi_key> <h> <c> <y>        : "י"  U05D9   # HEBREW LETTER YOD
-<Multi_key> <h> <c> <i>        : "י"  U05D9   # HEBREW LETTER YOD
+<Multi_key> <h> <c> <i>        : "יִ"  UFB1D   # HEBREW LETTER YOD WITH HIRIQ
 <Multi_key> <h> <c> <less> <k> : "ך"  U05DA   # HEBREW LETTER FINAL KAF
 <Multi_key> <h> <c> <k>        : "כ"  U05DB   # HEBREW LETTER KAF
 <Multi_key> <h> <c> <l>        : "ל"  U05DC   # HEBREW LETTER LAMED
@@ -3873,6 +3875,8 @@ include "%L"
 <Multi_key> <h> <c> <q>        : "ק"  U05E7   # HEBREW LETTER QOF
 <Multi_key> <h> <c> <r>        : "ר"  U05E8   # HEBREW LETTER RESH
 <Multi_key> <h> <c> <S>        : "ש"  U05E9   # HEBREW LETTER SHIN
+<Multi_key> <h> <c> <greater> <S> : "שׁ"  UFB2A   # HEBREW LETTER SHIN WITH SHIN DOT
+<Multi_key> <h> <c> <less> <S> : "שׂ"  UFB2B   # HEBREW LETTER SHIN WITH SIN DOT
 <Multi_key> <h> <c> <t>        : "ת"  U05EA   # HEBREW LETTER TAV
 
 <Multi_key> <h> <c> <c> <h>     : "צ׳"  U05E6 U05F3   # HEBREW LETTER CHADI
@@ -3881,16 +3885,6 @@ include "%L"
 <Multi_key> <h> <c> <u>         : "וּ"  U05D5 U05BC   # HEBREW LETTER VAV WITH SHURUK
 <Multi_key> <h> <c> <w>         : "װ"  U05F0   # HEBREW LIGATURE YIDDISH DOUBLE VAV
 <Multi_key> <h> <c> <Y>         : "ײ"  U05F2   # HEBREW LIGATURE YIDDISH DOUBLE YOD
-
-<Multi_key> <h> <c> <minus> <a> : "ﬡ" UFB21   # HEBREW LETTER WIDE ALEF
-<Multi_key> <h> <c> <minus> <apostrophe> : "ﬡ" UFB21   # HEBREW LETTER WIDE ALEF
-<Multi_key> <h> <c> <minus> <d> : "ﬢ" UFB22   # HEBREW LETTER WIDE DALET
-<Multi_key> <h> <c> <minus> <h> : "ﬣ" UFB23   # HEBREW LETTER WIDE HE
-<Multi_key> <h> <c> <minus> <k> : "ﬤ" UFB24   # HEBREW LETTER WIDE KAF
-<Multi_key> <h> <c> <minus> <l> : "ﬥ" UFB25   # HEBREW LETTER WIDE LAMED
-<Multi_key> <h> <c> <minus> <less> <m> : "ﬦ" UFB26   # HEBREW LETTER WIDE FINAL MEM
-<Multi_key> <h> <c> <minus> <r> : "ﬧ" UFB27   # HEBREW LETTER WIDE RESH
-<Multi_key> <h> <c> <minus> <t> : "ﬨ" UFB28   # HEBREW LETTER WIDE TAV
 
 <Multi_key> <h> <semicolon> <colon> <Return>                   : "ְ"  U05B0   # HEBREW POINT SHEVA
 <Multi_key> <h> <semicolon> <v> <period> <period> <Return>     : "ֱ"  U05B1   # HEBREW POINT HATAF SEGOL
@@ -3912,6 +3906,49 @@ include "%L"
 <Multi_key> <h> <semicolon> <apostrophe>    : "׳"  U05F3   # HEBREW PUNCTUATION GERESH
 <Multi_key> <h> <semicolon> <quotedbl>      : "״"  U05F4   # HEBREW PUNCTUATION GERSHAYIM
 <Multi_key> <h> <semicolon> <plus>          : "﬩" UFB29    # HEBREW LETTER ALTERNATIVE PLUS SIGN
+
+<Multi_key> <h> <c> <minus> <a> : "ﬡ" UFB21   # HEBREW LETTER WIDE ALEF
+<Multi_key> <h> <c> <minus> <apostrophe> : "ﬡ" UFB21   # HEBREW LETTER WIDE ALEF
+<Multi_key> <h> <c> <minus> <d> : "ﬢ" UFB22   # HEBREW LETTER WIDE DALET
+<Multi_key> <h> <c> <minus> <h> : "ﬣ" UFB23   # HEBREW LETTER WIDE HE
+<Multi_key> <h> <c> <minus> <k> : "ﬤ" UFB24   # HEBREW LETTER WIDE KAF
+<Multi_key> <h> <c> <minus> <l> : "ﬥ" UFB25   # HEBREW LETTER WIDE LAMED
+<Multi_key> <h> <c> <minus> <less> <m> : "ﬦ" UFB26   # HEBREW LETTER WIDE FINAL MEM
+<Multi_key> <h> <c> <minus> <r> : "ﬧ" UFB27   # HEBREW LETTER WIDE RESH
+<Multi_key> <h> <c> <minus> <t> : "ﬨ" UFB28   # HEBREW LETTER WIDE TAV
+
+<Multi_key> <h> <c> <asterisk> <a> : "אּ" UFB30   # HEBREW LETTER ALEF WITH MAPIQ
+<Multi_key> <h> <c> <asterisk> <apostrophe> : "אּ" UFB30   # HEBREW LETTER ALEF WITH MAPIQ
+<Multi_key> <h> <c> <asterisk> <b> : "בּ" UFB31   # HEBREW LETTER BET WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <g> : "גּ" UFB32   # HEBREW LETTER GIMEL WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <d> : "דּ" UFB33   # HEBREW LETTER DALET WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <h> : "הּ" UFB34   # HEBREW LETTER HE WITH MAPIQ
+<Multi_key> <h> <c> <asterisk> <v> : "וּ" UFB35   # HEBREW LETTER VAV WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <z> : "זּ" UFB36   # HEBREW LETTER ZAYIN WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <T> : "טּ" UFB38   # HEBREW LETTER TET WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <y> : "יּ" UFB39   # HEBREW LETTER YOD WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <less> <k> : "ךּ" UFB3A   # HEBREW LETTER FINAL KAF WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <k> : "כּ" UFB3B   # HEBREW LETTER KAF WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <l> : "לּ" UFB3C   # HEBREW LETTER LAMED WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <m> : "מּ" UFB3E   # HEBREW LETTER MEM WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <n> : "נּ" UFB40   # HEBREW LETTER NUN WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <s> : "סּ" UFB41   # HEBREW LETTER SAMEKH WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <less> <p> : "ףּ" UFB43   # HEBREW LETTER FINAL PE WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <p> : "פּ" UFB44   # HEBREW LETTER PE WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <Z> : "צּ" UFB46   # HEBREW LETTER TSADI WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <q> : "קּ" UFB47   # HEBREW LETTER QOF WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <r> : "רּ" UFB48   # HEBREW LETTER RESH WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <S> : "שּ" UFB49   # HEBREW LETTER SHIN WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <t> : "תּ" UFB4A   # HEBREW LETTER TAV WITH DAGESH
+<Multi_key> <h> <c> <asterisk> <greater> <S> : "שּׁ" UFB2C   # HEBREW LETTER SHIN WITH DAGESH AND SHIN DOT
+<Multi_key> <h> <c> <asterisk> <less> <S> : "שּׂ" UFB2D   # HEBREW LETTER SHIN WITH DAGESH AND SIN DOT
+
+<Multi_key> <h> <c> <period> <y> : "יִ" UFB1D   # HEBREW LETTER YOD WITH HIRIQ (alternatively hci)
+<Multi_key> <h> <c> <period> <v> : "וֹ"  UFB4B   # HEBREW LETTER VAV WITH HOLAM (alternatively hco)
+<Multi_key> <h> <c> <asciicircum> <underscore> <b> : "בֿ" UFB4C   # HEBREW LETTER BET WITH RAFE
+<Multi_key> <h> <c> <asciicircum> <underscore> <k> : "כֿ" UFB4D   # HEBREW LETTER KAF WITH RAFE
+<Multi_key> <h> <c> <asciicircum> <underscore> <p> : "פֿ" UFB4E   # HEBREW LETTER PE WITH RAFE
+<Multi_key> <h> <c> <asciicircum> <underscore> <f> : "פֿ" UFB4E   # HEBREW LETTER PE WITH RAFE
 
 # (p = Phoenician/Palaeo-Hebrew)
 
