@@ -9,31 +9,31 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (177)
-* **Spaces** (13): NBSP MMSP ZWSP etc
+### Common script characters (180)
+* **Spaces** (15): NBSP MMSP ZWSP etc
 * **Dashes** (12): – — ⁓ ⸻ etc
 * **Brackets** (20): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
 * **Combining diacritics** (92): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
-* **Currency symbols** (19): ₱ ₿ ₪ etc
+* **Currency symbols** (20): ₱ ₿ ₪ etc
 
-### Latin script characters (1839)
+### Latin script characters (1844)
 * **International Phonetic Alphabet** (134): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
-* **Enclosed alphanumerics** (251): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (140): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
+* **Enclosed alphanumerics** (252): ⓼ 🅛 🆛 ⒜ ⒓ etc
+* **Superscripts and subscripts** (144): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (286): ʣ ㏈ etc
 * **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ ⟞–·ᓇᓇനﬧ etc
 
-### Non-Latin script characters (2434)
+### Non-Latin script characters (2437)
 * **Arabic** (and Syriac & Neo-Tifinagh) (168): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
 * **Brahmi** (Brahmi, Devanagari & Tamil) (281): 𑀭𑁂𑀟𑀺𑀝 रेडिट ரெதிட etc
 * **ConScripts** (Deseret & Shavian) (128): 𐐡𐐇𐐔𐐆𐐓 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
 * **Georgian** (154): რედდიტ ႰႤႣႣႨႲ etc
-* **Greek** (and Coptic) (458): Ρέντιτ Ⲣⲉⲇⲇⲓⲧ etc
+* **Greek** (and Coptic) (461): Ρέντιτ Ⲣⲉⲇⲇⲓⲧ etc
 * **Hebrew** (and Phoenician) (119): ⁧רֶדִיט⁩ ⁧𐤓𐤃𐤕⁩ etc
 * **Japanese** (mostly kana) (302): 「レヂィット」 etc
 * **Korean** (using jamo) (118): 레딧 etc
@@ -42,13 +42,13 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Braille** (79): ⠗⠫⠙⠊⠞ etc
 * **Morse Code** (76): ···---··· etc
 
-### Symbols (2610)
+### Symbols (2643)
 * **Emoji** (1516): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Math and science** (233): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Math and science** (259): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
 * **Arrows** (154): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
-* **Geometric shapes** (134): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
+* **Geometric shapes** (141): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (48): ╞╦╕ etc
