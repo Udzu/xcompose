@@ -5349,6 +5349,8 @@ include "%L"
 <Multi_key> <backslash> <slash>       : "∨"  U2228   # LOGICAL OR
 <Multi_key> <comma> <minus>           : "⌐"  U2310   # REVERSED NOT SIGN (conflicts with ¬, use -,)
 <Multi_key> <apostrophe> <minus>      : "⌙ " U2319   # TURNED NOT SIGN
+<Multi_key> <equal> <comma>           : "⫬"  U2AEC   # DOUBLE STROKE NOT SIGN
+<Multi_key> <comma> <equal>           : "⫭"  U2AED   # REVERSED DOUBLE STROKE NOT SIGN
 <Multi_key> <bar> <period>            : "∣"  U2223   # DIVIDES
 <Multi_key> <bar> <slash>             : "∤"  U2224   # DOES NOT DIVIDE
 <Multi_key> <colon> <a> <s>           : "∷" U2237    # PROPORTION (AS)
@@ -5473,6 +5475,10 @@ include "%L"
 <Multi_key> <C> <A> <P>                 : "⋂"  U22C2   # N-ARY INTERSECTION
 <Multi_key> <c> <o> <m> <p> <l>         : "∁"  U2201   # COMPLEMENT (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
+<Multi_key> <c> <s> <u> <b> <Return>    : "⫏"  U2ACF   # CLOSED SUBSET (conflicts with š, use vs)
+<Multi_key> <c> <s> <u> <b> <e> <q>     : "⫑"  U2AD1   # CLOSED SUBSET OR EQUAL TO (conflicts with š, use vs)
+<Multi_key> <c> <s> <u> <p> <Return>    : "⫐"  U2AD0   # CLOSED SUPERSET (conflicts with š, use vs)
+<Multi_key> <c> <s> <u> <p> <e> <q>     : "⫒"  U2AD2   # CLOSED SUPERSET OR EQUAL TO (conflicts with š, use vs)
 <Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
 <Multi_key> <C> <u> <p>                 : "⋓"  U22D3   # DOUBLE UNION
 <Multi_key> <C> <U> <P>                 : "⋃"  U22C3   # N-ARY UNION
@@ -5532,6 +5538,11 @@ include "%L"
 <Multi_key> <S> <u> <b>                 : "⋐"  U22D0   # DOUBLE SUBSET
 <Multi_key> <s> <u> <b> <e> <q>         : "⊆"  U2286   # SUBSET OF OR EQUAL TO
 <Multi_key> <s> <u> <b> <n> <e> <q>     : "⊊"  U228A   # SUBSET OF WITH NOT EQUAL TO
+<Multi_key> <s> <u> <b> <s> <i> <m>     : "⫇"  U2AC7   # SUBSET OF ABOVE TILDE OPERATOR
+<Multi_key> <s> <u> <b> <o>             : "⟃"  U27C3   # OPEN SUBSET
+<Multi_key> <s> <u> <b> <period>        : "⪽"  U2ABD   # SUBSET WITH DOT
+<Multi_key> <s> <u> <b> <plus>          : "⪿"  U2ABF   # SUBSET WITH PLUS SIGN BELOW
+<Multi_key> <s> <u> <b> <asterisk>      : "⫁"  U2AC1   # SUBSET WITH MULTIPLICATION SIGN BELOW
 <Multi_key> <s> <u> <c> <c> <Return>    : "≻"  U227B   # SUCCEEDS
 <Multi_key> <s> <u> <c> <c> <e> <q>     : "≽"  U227D   # SUCCEEDS OR EQUAL TO
 <Multi_key> <s> <u> <c> <c> <s> <i> <m> : "≿"  U227F   # SUCCEEDS OR EQUIVALENT TO
@@ -5540,7 +5551,12 @@ include "%L"
 <Multi_key> <S> <u> <p>                 : "⋑"  U22D1   # DOUBLE SUPERSET
 <Multi_key> <s> <u> <p> <e> <q>         : "⊇"  U2287   # SUPERSET OF OR EQUAL TO
 <Multi_key> <s> <u> <p> <n> <e> <q>     : "⊋"  U228B   # SUPERSET OF WITH NOT EQUAL TO
-<Multi_key> <w> <r> <e> <a> <t> <h>     : "≀"  U2240   # WREATH PRODUCT
+<Multi_key> <s> <u> <p> <s> <i> <m>     : "⫈"  U2AC8   # SUPERSET OF ABOVE TILDE OPERATOR
+<Multi_key> <s> <u> <p> <o>             : "⟄"  U27C4   # OPEN SUPERSET
+<Multi_key> <s> <u> <p> <period>        : "⪾"  U2ABE   # SUPERSET WITH DOT
+<Multi_key> <s> <u> <p> <plus>          : "⫀"  U2AC0   # SUPERSET WITH PLUS SIGN BELOW
+<Multi_key> <s> <u> <p> <asterisk>      : "⫂"  U2AC2   # SUPERSET WITH MULTIPLICATION SIGN BELOW
+<Multi_key> <w> <r> <e> <a> <t> <h>     : "≀"   U2240   # WREATH PRODUCT
 <Multi_key> <x> <o> <r>                 : "⊻"  U22BB   # XOR (conflicts with ¤, use ox)
 <Multi_key> <Q> <E> <D>                 : "∎"  U220E   # END OF PROOF
 
