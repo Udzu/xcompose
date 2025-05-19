@@ -2687,6 +2687,8 @@ include "%L"
 
 # based on 7-bit ISO 15919
 
+# standalone vowels end with <space> (to contrast <Return> for dependent vowel modifiers)
+
 # (b = Brahmi)
 
 # Consonants
@@ -5359,7 +5361,9 @@ include "%L"
 <Multi_key> <asciitilde> <minus>      : "≃"  U2243   # ASYMPTOTICALLY EQUAL TO
 <Multi_key> <slash> <asciitilde> <minus> : "≄"  U2244   # NOT ASYMPTOTICALLY EQUAL TO
 <Multi_key> <asciitilde> <equal>      : "≅"  U2245   # APPROXIMATELY EQUAL TO (ISOMORPHIC)
+<Multi_key> <asciitilde> <slash> <space> : "≁"  U2241   # NOT TILDE
 <Multi_key> <asciitilde> <slash> <equal> : "≆"  U2246   # APPROXIMATELY BUT NOT ACTUALLY EQUAL TO
+<Multi_key> <slash> <asciitilde> <space> : "≁"  U2241   # NOT TILDE
 <Multi_key> <slash> <asciitilde> <equal> : "≇"  U2247   # NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO
 <Multi_key> <slash> <asciitilde> <asciitilde> : "≉"  U2249   # NOT ALMOST EQUAL TO
 <Multi_key> <3> <asciitilde>          : "≋"  U224B   # TRIPLE TILDE
@@ -5471,6 +5475,7 @@ include "%L"
 <Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 
 <Multi_key> <a> <n> <g> <l> <e>         : "∠"  U2220   # ANGLE
+<Multi_key> <a> <s> <Return>            : "∶"  U2236   # RATIO (AS)
 <Multi_key> <b> <e> <t> <w> <e> <e> <n> : "≬"  U226C   # BETWEEN (conflicts with ĕ, use ue)
 <Multi_key> <b> <u> <m> <p> <e> <q>     : "≏"  U224F   # DIFFERENCE BETWEEN (conflicts with ŭ, use uu)
 <Multi_key> <B> <u> <m> <p> <e> <q>     : "≎"  U224E   # GEOMETRICALLY EQUIVALENT TO
