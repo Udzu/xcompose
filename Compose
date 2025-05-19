@@ -500,6 +500,11 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <V>  : "ⱽ"  U2C7D   # MODIFIER LETTER CAPITAL V
 <Multi_key> <asciicircum> <underscore> <W>  : "ᵂ"  U1D42   # MODIFIER LETTER CAPITAL W
 
+<Multi_key> <asciicircum> <underscore> <underscore> <I> : "ᶦ" U1DA6   # MODIFIER LETTER SMALL CAPITAL I
+<Multi_key> <asciicircum> <underscore> <underscore> <L> : "ᶫ" U1DAB   # MODIFIER LETTER SMALL CAPITAL L
+<Multi_key> <asciicircum> <underscore> <underscore> <N> : "ᶰ" U1DB0   # MODIFIER LETTER SMALL CAPITAL N
+<Multi_key> <asciicircum> <underscore> <underscore> <U> : "ᶸ" U1DB8   # MODIFIER LETTER SMALL CAPITAL U
+
 <Multi_key> <asciicircum> <underscore> <colon>  : "˸" U02F8    # MODIFIER LETTER RAISED COLON
 <Multi_key> <asciicircum> <underscore> <exclam> : "ꜝ" UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
 
@@ -1501,6 +1506,7 @@ include "%L"
 <Multi_key> <asciitilde> <parenleft> <Y> <parenright> : "🄨" U1F128   # PARENTHESIZED LATIN CAPITAL LETTER Y
 <Multi_key> <asciitilde> <parenleft> <Z> <parenright> : "🄩" U1F129   # PARENTHESIZED LATIN CAPITAL LETTER Z
 
+<Multi_key> <period> <parenleft> <0> <parenright> : "🄀" U1F100   # DIGIT ZERO FULL STOP
 <Multi_key> <period> <parenleft> <1> <parenright> : "⒈" U2488   # DIGIT ONE FULL STOP
 <Multi_key> <period> <parenleft> <2> <parenright> : "⒉" U2489   # DIGIT TWO FULL STOP
 <Multi_key> <period> <parenleft> <3> <parenright> : "⒊" U248A   # DIGIT THREE FULL STOP
@@ -5341,6 +5347,8 @@ include "%L"
 <Multi_key> <bar> <F>                 : "⊥"  U22A5   # UP TACK
 <Multi_key> <slash> <backslash>       : "∧"  U2227   # LOGICAL AND
 <Multi_key> <backslash> <slash>       : "∨"  U2228   # LOGICAL OR
+<Multi_key> <comma> <minus>           : "⌐"  U2310   # REVERSED NOT SIGN (conflicts with ¬, use -,)
+<Multi_key> <apostrophe> <minus>      : "⌙ " U2319   # TURNED NOT SIGN
 <Multi_key> <bar> <period>            : "∣"  U2223   # DIVIDES
 <Multi_key> <bar> <slash>             : "∤"  U2224   # DOES NOT DIVIDE
 <Multi_key> <colon> <a> <s>           : "∷" U2237    # PROPORTION (AS)
