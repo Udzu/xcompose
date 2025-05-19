@@ -34,6 +34,8 @@ include "%L"
 <Multi_key> <space> <bar>        : " "  U200A   # HAIR SPACE
 <Multi_key> <space> <0>          : "​"  U200B   # ZERO WIDTH SPACE
 <Multi_key> <space> <plus>       : " "  U205F   # MEDIUM MATHEMATICAL SPACE
+<Multi_key> <space> <i>          : "　" U3000   # IDEOGRAPHIC SPACE
+<Multi_key> <backslash> <comma>  : " "  U202F   # NARROW NO-BREAK SPACE
 <Multi_key> <backslash> <space>  : "␣"  U2423   # OPEN BOX
 
 ##########
@@ -263,6 +265,8 @@ include "%L"
 <Multi_key> <I> <R> <R>      : "﷼" UFDFC   # RIAL SIGN
 <Multi_key> <K> <H> <R>      : "៛" U17DB   # KHMER CURRENCY SYMBOL RIEL
 <Multi_key> <N> <I> <S>      : "₪" U20AA   # NEW SHEQEL SIGN
+
+<Multi_key> <period> <slash> <period> : "⁒" U2052   # COMMERCIAL MINUS SIGN
 
 ##############################
 # B. LATIN SCRIPT CHARACTERS #
@@ -3687,18 +3691,23 @@ include "%L"
 #   prefix: g corresponds to gc above, and G to gx
 #   font: n = normal, s = sans-serif, d = double-struck
 #   weight: ∅ = normal, * = bold, / = italic, */ = bold italic
-#   character: as above, with symbol variants preceded by @ as follows
+#   character: as above, with symbol variants preceded by @
 
-<Multi_key> <percent> <G> <n> <at> <T> <H> : "ϴ" U03F4   # GREEK CAPITAL THETA SYMBOL
 <Multi_key> <percent> <g> <n> <at> <D> : "∇" U2207   # NABLA
+<Multi_key> <percent> <G> <n> <at> <T> <H> : "ϴ" U03F4   # GREEK CAPITAL THETA SYMBOL
 <Multi_key> <percent> <g> <n> <at> <d> : "∂" U2202   # PARTIAL DIFFERENTIAL
 <Multi_key> <percent> <g> <n> <at> <e> : "ϵ" U03F5   # GREEK LUNATE EPSILON SYMBOL
 <Multi_key> <percent> <G> <n> <at> <t> <h> : "ϑ" U03D1   # GREEK THETA SYMBOL
 <Multi_key> <percent> <g> <n> <at> <k> : "ϰ" U03F0   # GREEK KAPPA SYMBOL
+<Multi_key> <percent> <g> <n> <at> <p> : "ϖ" U03D6   # GREEK PI SYMBOL
+<Multi_key> <percent> <g> <n> <at> <r> : "ϱ" U03F1   # GREEK RHO SYMBOL
 <Multi_key> <percent> <g> <n> <at> <f> : "ϕ" U03D5   # GREEK PHI SYMBOL
 <Multi_key> <percent> <G> <n> <at> <p> <h> : "ϕ" U03D5   # GREEK PHI SYMBOL
-<Multi_key> <percent> <g> <n> <at> <r> : "ϱ" U03F1   # GREEK RHO SYMBOL
-<Multi_key> <percent> <g> <n> <at> <p> : "ϖ" U03D6   # GREEK PI SYMBOL
+# additional Greek letter variants not represented in the alphanumerics block
+<Multi_key> <percent> <g> <n> <at> <U> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
+<Multi_key> <percent> <g> <n> <at> <Y> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
+<Multi_key> <percent> <g> <n> <at> <b> : "ϐ" U03D0   # GREEK BETA SYMBOL
+<Multi_key> <percent> <g> <n> <at> <s> : "ϲ" U03F2   # GREEK LUNATE SIGMA SYMBOL
 
 <Multi_key> <percent> <g> <n> <asterisk> <A> : "𝚨" U1D6A8    # MATHEMATICAL BOLD CAPITAL ALPHA
 <Multi_key> <percent> <g> <n> <asterisk> <B> : "𝚩" U1D6A9    # MATHEMATICAL BOLD CAPITAL BETA
