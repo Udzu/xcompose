@@ -5390,6 +5390,10 @@ include "%L"
 <Multi_key> <minus> <minus> <o>       : "⊸"  U22B8   # MULTIMAP
 <Multi_key> <less> <question>         : "⩻"  U2A7B   # LESS-THAN WITH QUESTION MARK ABOVE
 <Multi_key> <greater> <question>      : "⩼"  U2A7C   # GREATER-THAN WITH QUESTION MARK ABOVE
+<Multi_key> <slash> <greater>         : "⩾"  U2A7E   # GREATER-THAN OR SLANTED EQUAL TO
+<Multi_key> <backslash> <less>        : "⩽"  U2A7D   # LESS-THAN OR SLANTED EQUAL TO
+<Multi_key> <slash> <less>            : "⪕"  U2A95   # SLANTED EQUAL TO OR LESS-THAN (conflicts with useless \)
+<Multi_key> <backslash> <greater>     : "⪖"  U2A96   # SLANTED EQUAL TO OR GREATER-THAN
 
 <Multi_key> <equal> <Multi_key> <period>             : "≐"  U2250   # APPROACHES THE LIMIT
 <Multi_key> <equal> <Multi_key> <colon>              : "≑"  U2251   # GEOMETRICALLY EQUAL TO
@@ -5497,7 +5501,7 @@ include "%L"
 <Multi_key> <l> <o> <r>                 : "∨"  U2228   # LOGICAL OR (alternatively \/)
 <Multi_key> <L> <o> <r>                 : "⩔"  U2A54   # DOUBLE LOGICAL OR
 <Multi_key> <L> <O> <R>                 : "⋁"  U22C1   # N-ARY LOGICAL OR
-<Multi_key> <m> <e> <a> <n> <g> <l> <e> : "∡"  U2221   # MEASURED ANGLE
+<Multi_key> <m> <e> <a> <n> <g> <l> <e> : "∡"  U2221   # MEASURED ANGLE (not ideal)
 <Multi_key> <n> <a> <n> <d>             : "⊼"  U22BC   # NAND
 <Multi_key> <n> <i> <Return>            : "∋"  U220B   # CONTAINS AS MEMBER
 <Multi_key> <n> <o> <r>                 : "⊽"  U22BD   # NOR
@@ -5526,8 +5530,10 @@ include "%L"
 <Multi_key> <s> <p> <a> <n> <g> <l> <e> : "∢"  U2222   # SPHERICAL ANGLE
 <Multi_key> <s> <q> <c> <a> <p>         : "⊓"  U2293   # SQUARE CAP
 <Multi_key> <S> <q> <c> <a> <p>         : "⩎"  U2A4E   # DOUBLE SQUARE INTERSECTION
+<Multi_key> <S> <Q> <C> <A> <P>         : "⨅"  U2A05   # N-ARY SQUARE INTERSECTION OPERATOR
 <Multi_key> <s> <q> <c> <u> <p>         : "⊔"  U2294   # SQUARE CUP (COPRODUCT)
 <Multi_key> <S> <q> <c> <u> <p>         : "⩏"  U2A4F   # DOUBLE SQUARE UNION
+<Multi_key> <S> <Q> <C> <U> <P>         : "⨆"  U2A06   # N-ARY SQUARE UNION OPERATOR
 <Multi_key> <s> <q> <s> <u> <b> <Return> : "⊏" U228F    # SQUARE IMAGE OF
 <Multi_key> <s> <q> <s> <u> <p> <Return> : "⊐" U2290    # SQUARE ORIGINAL OF
 <Multi_key> <s> <q> <s> <u> <b> <e> <q> : "⊑" U2291    # SQUARE IMAGE OF OR EQUAL TO
