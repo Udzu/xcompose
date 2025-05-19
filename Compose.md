@@ -42,7 +42,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Braille** (79): ⠗⠫⠙⠊⠞ etc
 * **Morse Code** (76): ···---··· etc
 
-### Symbols (2636)
+### Symbols (2643)
 * **Emoji** (1516): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (259): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
@@ -50,5 +50,5 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
 * **Arrows** (154): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
-* **Geometric shapes** (134): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
+* **Geometric shapes** (141): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (48): ╞╦╕ etc

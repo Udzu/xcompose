@@ -7384,6 +7384,7 @@ include "%L"
 <Multi_key> <bracketleft> <space> <bracketright> <asciicircum> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
 <Multi_key> <bracketleft> <space> <bracketright> <v> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
 <Multi_key> <bracketleft> <space> <bracketright> <v> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
+<Multi_key> <bracketleft> <space> <bracketright> <X> : "⌧" U2327   # X IN A RECTANGLE BOX
 
 <Multi_key> <parenleft> <space> <parenright> <0> : "⬭" U2B2D    # WHITE HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <1> : "⬬" U2B2C    # BLACK HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
@@ -7401,6 +7402,11 @@ include "%L"
 <Multi_key> <Tab> <slash> <backslash> <Multi_key> <period> <minus> : "◬" U25EC    # WHITE UP-POINTING TRIANGLE WITH DOT
 <Multi_key> <Tab> <slash> <backslash> <less> : "◭" U25ED    # UP-POINTING TRIANGLE WITH LEFT HALF BLACK
 <Multi_key> <Tab> <slash> <backslash> <greater> : "◮" U25EE    # UP-POINTING TRIANGLE WITH RIGHT HALF BLACK
+<Multi_key> <Tab> <slash> <backslash> <2> <0> : "⟁" U27C1   # WHITE TRIANGLE CONTAINING SMALL WHITE TRIANGLE
+<Multi_key> <Tab> <slash> <backslash> <plus> : "⨹" U2A39   # PLUS SIGN IN TRIANGLE
+<Multi_key> <Tab> <slash> <backslash> <minus> : "⨺" U2A3A   # MINUS SIGN IN TRIANGLE
+<Multi_key> <Tab> <slash> <backslash> <X> : "⨻" U2A3B   # MULTIPLICATION SIGN IN TRIANGLE
+<Multi_key> <Tab> <slash> <backslash> <period> : "⧊" U29CA   # TRIANGLE WITH DOT ABOVE
 
 <Multi_key> <Tab> <bar> <greater> <0>   : "▷" U25B7    # WHITE RIGHT-POINTING TRIANGLE
 <Multi_key> <Tab> <bar> <greater> <1>   : "▶" U25B6    # BLACK RIGHT-POINTING TRIANGLE
@@ -7431,7 +7437,8 @@ include "%L"
 <Multi_key> <Tab> <less> <greater> <asciicircum> : "⬘" U2B18    # DIAMOND WITH TOP HALF BLACK
 <Multi_key> <Tab> <less> <greater> <v>           : "⬙" U2B19    # DIAMOND WITH BOTTOM HALF BLACK
 <Multi_key> <Tab> <less> <greater> <2> <0>       : "🞜" U1F79C    # DIAMOND TARGET
-<Multi_key> <Tab> <less> <greater> <2> <1>       : "◈" U25C8    # WHITE DIAMOND CONTAINING BLACK SMALL DIAMOND
+<Multi_key> <Tab> <less> <greater> <2> <1>       : "🞛" U1F79B   # WHITE DIAMOND CONTAINING BLACK MEDIUM DIAMOND
+<Multi_key> <Tab> <less> <greater> <period>      : "⟐" U27D0   # WHITE DIAMOND WITH CENTRED DOT
 <Multi_key> <Tab> <less> <greater> <question>    : "�" UFFFD   # REPLACEMENT CHARACTER
 
 <Multi_key> <Tab> <O> <5> <0>           : "⬠" U2B20    # WHITE PENTAGON
