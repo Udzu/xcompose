@@ -18,16 +18,16 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (92): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 
-### Latin script characters (1844)
+### Latin script characters (1845)
 * **International Phonetic Alphabet** (134): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (252): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (144): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
-* **Multigraphs and ligatures** (286): ʣ ㏈ etc
+* **Multigraphs and ligatures** (287): ʣ ㏈ etc
 * **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (3298)
-* **Arabic**, Syriac & Neo-Tifinagh (168): ⁧رِيدِيت⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ etc
+### Non-Latin script characters (3327)
+* **Arabic**, Mandaic, Syriac & Neo-Tifinagh (197): ⁧رِيدِيت⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
 * **Brahmic Scripts** (Bengali, Brahmi, Burmese, Devanagari, Gujarati, Gurmukhi, Kannada, Malayalam, Odia, Tamil, Telugu) (930): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆದಿತ, രെഡിട, ରେଡିଟ, ரெதிட, రెడిట etc
 * **Braille** (79): ⠗⠫⠙⠊⠞ etc
