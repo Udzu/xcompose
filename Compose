@@ -3101,7 +3101,7 @@ include "%L"
 <Multi_key> <b> <g> <h> : "હ" U0AB9   # GUJARATI LETTER HA (conflicts)
 <Multi_key> <b> <g> <z> <h> : "ૹ" U0AF9   # GUJARATI LETTER ZHA (conflicts)
 
-# Independent Vowels
+# Independent vowels
 
 <Multi_key> <b> <g> <a> <space> : "અ" U0A85   # GUJARATI LETTER A (conflicts)
 <Multi_key> <b> <g> <a> <a> <space> : "આ" U0A86   # GUJARATI LETTER AA (conflicts)
@@ -3120,7 +3120,7 @@ include "%L"
 <Multi_key> <b> <g> <comma> <r> <r> <space> : "ૠ" U0AE0   # GUJARATI LETTER VOCALIC RR (conflicts)
 <Multi_key> <b> <g> <comma> <l> <l> <space> : "ૡ" U0AE1   # GUJARATI LETTER VOCALIC LL (conflicts)
 
-# Dependent Vowels
+# Dependent vowels
 
 <Multi_key> <b> <g> <a> <a> <Return> : "ા" U0ABE   # GUJARATI VOWEL SIGN AA (conflicts)
 <Multi_key> <b> <g> <i> <Return> : "િ" U0ABF   # GUJARATI VOWEL SIGN I (conflicts)
@@ -3167,6 +3167,99 @@ include "%L"
 
 <Multi_key> <b> <g> <o> <period> : "૰" U0AF0   # GUJARATI ABBREVIATION SIGN (conflicts)
 
+# (G = Gurmukhi)
+
+# Consonants
+
+<Multi_key> <b> <G> <k> <space> : "ਕ" U0A15   # GURMUKHI LETTER KA (conflicts with Ğ, use uG)
+<Multi_key> <b> <G> <k> <h> : "ਖ" U0A16   # GURMUKHI LETTER KHA (conflicts)
+<Multi_key> <b> <G> <g> <space> : "ਗ" U0A17   # GURMUKHI LETTER GA (conflicts)
+<Multi_key> <b> <G> <g> <h> : "ਘ" U0A18   # GURMUKHI LETTER GHA (conflicts)
+<Multi_key> <b> <G> <semicolon> <n> : "ਙ" U0A19   # GURMUKHI LETTER NGA (conflicts)
+<Multi_key> <b> <G> <c> <space> : "ਚ" U0A1A   # GURMUKHI LETTER CA (conflicts)
+<Multi_key> <b> <G> <c> <h> : "ਛ" U0A1B   # GURMUKHI LETTER CHA (conflicts)
+<Multi_key> <b> <G> <j> <space> : "ਜ" U0A1C   # GURMUKHI LETTER JA (conflicts)
+<Multi_key> <b> <G> <j> <h> : "ਝ" U0A1D   # GURMUKHI LETTER JHA (conflicts)
+<Multi_key> <b> <G> <asciitilde> <n> : "ਞ" U0A1E   # GURMUKHI LETTER NYA (conflicts)
+<Multi_key> <b> <G> <period> <t> <space> : "ਟ" U0A1F   # GURMUKHI LETTER TTA (conflicts)
+<Multi_key> <b> <G> <period> <t> <h> : "ਠ" U0A20   # GURMUKHI LETTER TTHA (conflicts)
+<Multi_key> <b> <G> <period> <d> <space> : "ਡ" U0A21   # GURMUKHI LETTER DDA (conflicts)
+<Multi_key> <b> <G> <period> <d> <h> : "ਢ" U0A22   # GURMUKHI LETTER DDHA (conflicts)
+<Multi_key> <b> <G> <period> <n> : "ਣ" U0A23   # GURMUKHI LETTER NNA (conflicts)
+<Multi_key> <b> <G> <t> <space> : "ਤ" U0A24   # GURMUKHI LETTER TA (conflicts)
+<Multi_key> <b> <G> <t> <h> : "ਥ" U0A25   # GURMUKHI LETTER THA (conflicts)
+<Multi_key> <b> <G> <d> <space> : "ਦ" U0A26   # GURMUKHI LETTER DA (conflicts)
+<Multi_key> <b> <G> <d> <h> : "ਧ" U0A27   # GURMUKHI LETTER DHA (conflicts)
+<Multi_key> <b> <G> <n> : "ਨ" U0A28   # GURMUKHI LETTER NA (conflicts)
+<Multi_key> <b> <G> <p> <space> : "ਪ" U0A2A   # GURMUKHI LETTER PA (conflicts)
+<Multi_key> <b> <G> <p> <h> : "ਫ" U0A2B   # GURMUKHI LETTER PHA (conflicts)
+<Multi_key> <b> <G> <b> <space> : "ਬ" U0A2C   # GURMUKHI LETTER BA (conflicts)
+<Multi_key> <b> <G> <b> <h> : "ਭ" U0A2D   # GURMUKHI LETTER BHA (conflicts)
+<Multi_key> <b> <G> <m> : "ਮ" U0A2E   # GURMUKHI LETTER MA (conflicts)
+<Multi_key> <b> <G> <y> : "ਯ" U0A2F   # GURMUKHI LETTER YA (conflicts)
+<Multi_key> <b> <G> <r> : "ਰ" U0A30   # GURMUKHI LETTER RA (conflicts)
+<Multi_key> <b> <G> <l> : "ਲ" U0A32   # GURMUKHI LETTER LA (conflicts)
+<Multi_key> <b> <G> <period> <l> : "ਲ਼" U0A33   # GURMUKHI LETTER LLA (conflicts)
+<Multi_key> <b> <G> <v> : "ਵ" U0A35   # GURMUKHI LETTER VA (conflicts)
+<Multi_key> <b> <G> <semicolon> <s> : "ਸ਼" U0A36   # GURMUKHI LETTER SHA (conflicts)
+<Multi_key> <b> <G> <s> : "ਸ" U0A38   # GURMUKHI LETTER SA (conflicts)
+<Multi_key> <b> <G> <h> : "ਹ" U0A39   # GURMUKHI LETTER HA (conflicts)
+<Multi_key> <b> <G> <underscore> <k> <h> : "ਖ਼" U0A59   # GURMUKHI LETTER KHHA (conflicts)
+<Multi_key> <b> <G> <period> <g> : "ਗ਼" U0A5A   # GURMUKHI LETTER GHHA (conflicts)
+<Multi_key> <b> <G> <z> : "ਜ਼" U0A5B   # GURMUKHI LETTER ZA (conflicts)
+<Multi_key> <b> <G> <underscore> <r> : "ੜ" U0A5C   # GURMUKHI LETTER RRA (conflicts)
+<Multi_key> <b> <G> <f> : "ਫ਼" U0A5E   # GURMUKHI LETTER FA (conflicts)
+
+# Independent vowels
+
+<Multi_key> <b> <G> <a> <space> : "ਅ" U0A05   # GURMUKHI LETTER A (conflicts)
+<Multi_key> <b> <G> <a> <a> <space> : "ਆ" U0A06   # GURMUKHI LETTER AA (conflicts)
+<Multi_key> <b> <G> <i> <space> : "ਇ" U0A07   # GURMUKHI LETTER I (conflicts)
+<Multi_key> <b> <G> <i> <i> <space> : "ਈ" U0A08   # GURMUKHI LETTER II (conflicts)
+<Multi_key> <b> <G> <u> <space> : "ਉ" U0A09   # GURMUKHI LETTER U (conflicts)
+<Multi_key> <b> <G> <u> <u> <space> : "ਊ" U0A0A   # GURMUKHI LETTER UU (conflicts)
+<Multi_key> <b> <G> <e> <e> <space> : "ਏ" U0A0F   # GURMUKHI LETTER EE (conflicts)
+<Multi_key> <b> <G> <a> <i> <space> : "ਐ" U0A10   # GURMUKHI LETTER AI (conflicts)
+<Multi_key> <b> <G> <o> <o> <space> : "ਓ" U0A13   # GURMUKHI LETTER OO (conflicts)
+<Multi_key> <b> <G> <a> <u> <space> : "ਔ" U0A14   # GURMUKHI LETTER AU (conflicts)
+
+# Dependent vowels
+
+<Multi_key> <b> <G> <a> <a> <Return> : "ਾ" U0A3E   # GURMUKHI VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <G> <i> <Return> : "ਿ" U0A3F   # GURMUKHI VOWEL SIGN I (conflicts)
+<Multi_key> <b> <G> <i> <i> <Return> : "ੀ" U0A40   # GURMUKHI VOWEL SIGN II (conflicts)
+<Multi_key> <b> <G> <u> <Return> : "ੁ" U0A41   # GURMUKHI VOWEL SIGN U (conflicts)
+<Multi_key> <b> <G> <u> <u> <Return> : "ੂ" U0A42   # GURMUKHI VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <G> <e> <e> <Return> : "ੇ" U0A47   # GURMUKHI VOWEL SIGN EE (conflicts)
+<Multi_key> <b> <G> <a> <i> <Return> : "ੈ" U0A48   # GURMUKHI VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <G> <o> <o> <Return> : "ੋ" U0A4B   # GURMUKHI VOWEL SIGN OO (conflicts)
+<Multi_key> <b> <G> <a> <u> <Return> : "ੌ" U0A4C   # GURMUKHI VOWEL SIGN AU (conflicts)
+
+# Other signs
+
+<Multi_key> <b> <G> <period> <parenright> <Return> : "ਁ" U0A01   # GURMUKHI SIGN ADAK BINDI (conflicts)
+<Multi_key> <b> <G> <period> <Return> : "ਂ" U0A02   # GURMUKHI SIGN BINDI (conflicts)
+<Multi_key> <b> <G> <colon> <Return> : "ਃ" U0A03   # GURMUKHI SIGN VISARGA (conflicts)
+<Multi_key> <b> <G> <underscore> <period> <Return> : "਼" U0A3C   # GURMUKHI SIGN NUKTA (conflicts)
+<Multi_key> <b> <G> <comma> <Return> : "੍" U0A4D   # GURMUKHI SIGN VIRAMA (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <G> <numbersign> <0> : "੦" U0A66   # GURMUKHI DIGIT ZERO (conflicts)
+<Multi_key> <b> <G> <numbersign> <1> : "੧" U0A67   # GURMUKHI DIGIT ONE (conflicts)
+<Multi_key> <b> <G> <numbersign> <2> : "੨" U0A68   # GURMUKHI DIGIT TWO (conflicts)
+<Multi_key> <b> <G> <numbersign> <3> : "੩" U0A69   # GURMUKHI DIGIT THREE (conflicts)
+<Multi_key> <b> <G> <numbersign> <4> : "੪" U0A6A   # GURMUKHI DIGIT FOUR (conflicts)
+<Multi_key> <b> <G> <numbersign> <5> : "੫" U0A6B   # GURMUKHI DIGIT FIVE (conflicts)
+<Multi_key> <b> <G> <numbersign> <6> : "੬" U0A6C   # GURMUKHI DIGIT SIX (conflicts)
+<Multi_key> <b> <G> <numbersign> <7> : "੭" U0A6D   # GURMUKHI DIGIT SEVEN (conflicts)
+<Multi_key> <b> <G> <numbersign> <8> : "੮" U0A6E   # GURMUKHI DIGIT EIGHT (conflicts)
+<Multi_key> <b> <G> <numbersign> <9> : "੯" U0A6F   # GURMUKHI DIGIT NINE (conflicts)
+
+# Punctuation
+
+<Multi_key> <b> <G> <o> <period> : "੶" U0A76   # GURMUKHI ABBREVIATION SIGN (conflicts)
+
 # (k = Kannada)
 
 # Consonants
@@ -3208,7 +3301,7 @@ include "%L"
 <Multi_key> <b> <k> <h> : "ಹ" U0CB9   # KANNADA LETTER HA
 <Multi_key> <b> <k> <f> : "ೞ" U0CDE   # KANNADA LETTER FA
 
-# Independent Vowels
+# Independent vowels
 
 <Multi_key> <b> <k> <a> <space> : "ಅ" U0C85   # KANNADA LETTER A
 <Multi_key> <b> <k> <a> <a> <space> : "ಆ" U0C86   # KANNADA LETTER AA
@@ -3227,7 +3320,7 @@ include "%L"
 <Multi_key> <b> <k> <comma> <r> <r> <space> : "ೠ" U0CE0   # KANNADA LETTER VOCALIC RR
 <Multi_key> <b> <k> <comma> <l> <l> <space> : "ೡ" U0CE1   # KANNADA LETTER VOCALIC LL
 
-# Dependent Vowels
+# Dependent vowels
 
 <Multi_key> <b> <k> <a> <a> <Return> : "ಾ" U0CBE   # KANNADA VOWEL SIGN AA
 <Multi_key> <b> <k> <i> <Return> : "ಿ" U0CBF   # KANNADA VOWEL SIGN I
@@ -3314,7 +3407,7 @@ include "%L"
 <Multi_key> <b> <m> <h> : "ഹ" U0D39   # MALAYALAM LETTER HA
 <Multi_key> <b> <m> <underscore> <t> : "ഺ" U0D3A   # MALAYALAM LETTER TTTA
 
-# Independent Vowels
+# Independent vowels
 
 <Multi_key> <b> <m> <a> <space> : "അ" U0D05   # MALAYALAM LETTER A
 <Multi_key> <b> <m> <a> <a> <space> : "ആ" U0D06   # MALAYALAM LETTER AA
@@ -3333,7 +3426,7 @@ include "%L"
 <Multi_key> <b> <m> <comma> <r> <r> <space> : "ൠ" U0D60   # MALAYALAM LETTER VOCALIC RR
 <Multi_key> <b> <m> <comma> <l> <l> <space> : "ൡ" U0D61   # MALAYALAM LETTER VOCALIC LL
 
-# Dependent Vowels
+# Dependent vowels
 
 <Multi_key> <b> <m> <a> <a> <Return> : "ാ" U0D3E   # MALAYALAM VOWEL SIGN AA
 <Multi_key> <b> <m> <i> <Return> : "ി" U0D3F   # MALAYALAM VOWEL SIGN I
@@ -8658,8 +8751,8 @@ include "%L"
 
 # Convention: # + number + type suffix
 #
-# Also see Arabic (a0), Brahmi (bb), Devanagari (bd), Tamil (bt), Coptic (gp),
-# Japanese (j0), Chinese (z0) and Mongolian (zm) numerals above
+# Also see Arabic (a0), Brahmic (b*), Coptic (gp), Japanese (j0), Chinese (z0)
+# and Mongolian (zm) numerals above
 
 # (f) fence tally
 

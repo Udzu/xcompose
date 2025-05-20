@@ -3,7 +3,7 @@
 
 > Link: https://github.com/Udzu/xcompose/blob/master/Compose
 
-This repo also hosts my personal .XCompose file, which contains over 7500 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
+This repo also hosts my personal .XCompose file, which contains over 8000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
 
 The file aims for memorability and consistency. As a result, a small number of the rules here conflict with the default system rules, with workarounds given wherever possible in the comments (e.g. \<underscore>'s usefulness for subscripting often interferes with its system use for macrons, for which \<minus> works equally well as an alternative).
 
@@ -26,11 +26,11 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (286): ʣ ㏈ etc
 * **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (2818)
+### Non-Latin script characters (2891)
 * **Arabic** (+ Syriac, Neo-Tifinagh) (168): ⁧رِيدِيت⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
-* **Brahmic Scripts** (Bengali, Brahmi, Devanagari, Gujarati, Kannada, Malayalam, Tamil) (622):
-  * রেডিট, 𑀭𑁂𑀟𑀺𑀝, रेडिट, રેડિટ, ರೆದಿತ, രെഡിട, ரெதிட etc
+* **Brahmic Scripts** (Bengali, Brahmi, Devanagari, Gujarati, Gurmukhi, Kannada, Malayalam, Tamil) (695):
+  * রেডিট, 𑀭𑁂𑀟𑀺𑀝, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆದಿತ, രെഡിട, ரெதிட etc
 * **Braille** (79): ⠗⠫⠙⠊⠞ etc
 * **ConScripts** (Deseret, Shavian) (128): 𐐡𐐇𐐔𐐆𐐓, 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** (+ Glagolitic) (190): Ре́ддит, Ⱃⰵδδιτ etc
