@@ -2694,7 +2694,7 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# (Brahmi, Devanagari, Bengali, Gujarati, Kannada, Tamil)
+# (Brahmi, Devanagari, Bengali, Gujarati, Gurmukhi, Kannada, Malayalam, Oriya, Tamil, Telugu)
 
 # based on 7-bit ISO 15919
 
@@ -3364,7 +3364,7 @@ include "%L"
 <Multi_key> <b> <k> <numbersign> <8> : "೮" U0CEE   # KANNADA DIGIT EIGHT
 <Multi_key> <b> <k> <numbersign> <9> : "೯" U0CEF   # KANNADA DIGIT NINE
 
-# (m = malayalam)
+# (m = Malayalam)
 
 # Consonants
 
@@ -3473,6 +3473,106 @@ include "%L"
 <Multi_key> <b> <m> <1> <0> <Return> : "൰" U0D70   # MALAYALAM NUMBER TEN
 <Multi_key> <b> <m> <1> <0> <0> <Return> : "൱" U0D71   # MALAYALAM NUMBER ONE HUNDRED
 <Multi_key> <b> <m> <1> <0> <0> <0>  : "൲" U0D72   # MALAYALAM NUMBER ONE THOUSAND
+
+# (O = Oriya)
+
+# Consonants
+
+<Multi_key> <b> <O> <k> <space> : "କ" U0B15   # ORIYA LETTER KA (conflicts with Ŏ, use uO)
+<Multi_key> <b> <O> <k> <h> : "ଖ" U0B16   # ORIYA LETTER KHA (conflicts)
+<Multi_key> <b> <O> <g> <space> : "ଗ" U0B17   # ORIYA LETTER GA (conflicts)
+<Multi_key> <b> <O> <g> <h> : "ଘ" U0B18   # ORIYA LETTER GHA (conflicts)
+<Multi_key> <b> <O> <semicolon> <n> : "ଙ" U0B19   # ORIYA LETTER NGA (conflicts)
+<Multi_key> <b> <O> <c> <space> : "ଚ" U0B1A   # ORIYA LETTER CA (conflicts)
+<Multi_key> <b> <O> <c> <h> : "ଛ" U0B1B   # ORIYA LETTER CHA (conflicts)
+<Multi_key> <b> <O> <j> <space> : "ଜ" U0B1C   # ORIYA LETTER JA (conflicts)
+<Multi_key> <b> <O> <j> <h> : "ଝ" U0B1D   # ORIYA LETTER JHA (conflicts)
+<Multi_key> <b> <O> <asciitilde> <n> : "ଞ" U0B1E   # ORIYA LETTER NYA (conflicts)
+<Multi_key> <b> <O> <period> <t> <space> : "ଟ" U0B1F   # ORIYA LETTER TTA (conflicts)
+<Multi_key> <b> <O> <period> <t> <h> : "ଠ" U0B20   # ORIYA LETTER TTHA (conflicts)
+<Multi_key> <b> <O> <period> <d> <space> : "ଡ" U0B21   # ORIYA LETTER DDA (conflicts)
+<Multi_key> <b> <O> <period> <d> <h> : "ଢ" U0B22   # ORIYA LETTER DDHA (conflicts)
+<Multi_key> <b> <O> <period> <n> : "ଣ" U0B23   # ORIYA LETTER NNA (conflicts)
+<Multi_key> <b> <O> <t> <space> : "ତ" U0B24   # ORIYA LETTER TA (conflicts)
+<Multi_key> <b> <O> <t> <h> : "ଥ" U0B25   # ORIYA LETTER THA (conflicts)
+<Multi_key> <b> <O> <d> <space> : "ଦ" U0B26   # ORIYA LETTER DA (conflicts)
+<Multi_key> <b> <O> <d> <h> : "ଧ" U0B27   # ORIYA LETTER DHA (conflicts)
+<Multi_key> <b> <O> <n> : "ନ" U0B28   # ORIYA LETTER NA (conflicts)
+<Multi_key> <b> <O> <p> <space> : "ପ" U0B2A   # ORIYA LETTER PA (conflicts)
+<Multi_key> <b> <O> <p> <h> : "ଫ" U0B2B   # ORIYA LETTER PHA (conflicts)
+<Multi_key> <b> <O> <b> <space> : "ବ" U0B2C   # ORIYA LETTER BA (conflicts)
+<Multi_key> <b> <O> <b> <h> : "ଭ" U0B2D   # ORIYA LETTER BHA (conflicts)
+<Multi_key> <b> <O> <m> : "ମ" U0B2E   # ORIYA LETTER MA (conflicts)
+<Multi_key> <b> <O> <y> : "ଯ" U0B2F   # ORIYA LETTER YA (conflicts)
+<Multi_key> <b> <O> <r> : "ର" U0B30   # ORIYA LETTER RA (conflicts)
+<Multi_key> <b> <O> <l> : "ଲ" U0B32   # ORIYA LETTER LA (conflicts)
+<Multi_key> <b> <O> <period> <l> : "ଳ" U0B33   # ORIYA LETTER LLA (conflicts)
+<Multi_key> <b> <O> <v> : "ଵ" U0B35   # ORIYA LETTER VA (conflicts)
+<Multi_key> <b> <O> <semicolon> <s> : "ଶ" U0B36   # ORIYA LETTER SHA (conflicts)
+<Multi_key> <b> <O> <period> <s> : "ଷ" U0B37   # ORIYA LETTER SSA (conflicts)
+<Multi_key> <b> <O> <s> : "ସ" U0B38   # ORIYA LETTER SA (conflicts)
+<Multi_key> <b> <O> <h> : "ହ" U0B39   # ORIYA LETTER HA (conflicts)
+<Multi_key> <b> <O> <underscore> <r> : "ଡ଼" U0B5C   # ORIYA LETTER RRA (conflicts)
+
+# Independent vowels
+
+<Multi_key> <b> <O> <period> <parenright> <Return> : "ଁ" U0B01   # ORIYA SIGN CANDRABINDU (conflicts)
+<Multi_key> <b> <O> <period> <Return> : "ଂ" U0B02   # ORIYA SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <O> <colon> <Return> : "ଃ" U0B03   # ORIYA SIGN VISARGA (conflicts)
+<Multi_key> <b> <O> <a> <space> : "ଅ" U0B05   # ORIYA LETTER A (conflicts)
+<Multi_key> <b> <O> <a> <a> <space> : "ଆ" U0B06   # ORIYA LETTER AA (conflicts)
+<Multi_key> <b> <O> <i> <space> : "ଇ" U0B07   # ORIYA LETTER I (conflicts)
+<Multi_key> <b> <O> <i> <i> <space> : "ଈ" U0B08   # ORIYA LETTER II (conflicts)
+<Multi_key> <b> <O> <u> <space> : "ଉ" U0B09   # ORIYA LETTER U (conflicts)
+<Multi_key> <b> <O> <u> <u> <space> : "ଊ" U0B0A   # ORIYA LETTER UU (conflicts)
+<Multi_key> <b> <O> <comma> <r> <space> : "ଋ" U0B0B   # ORIYA LETTER VOCALIC R (conflicts)
+<Multi_key> <b> <O> <comma> <l> <space> : "ଌ" U0B0C   # ORIYA LETTER VOCALIC L (conflicts)
+<Multi_key> <b> <O> <e> <e> <space> : "ଏ" U0B0F   # ORIYA LETTER E (conflicts)
+<Multi_key> <b> <O> <a> <i> <space> : "ଐ" U0B10   # ORIYA LETTER AI (conflicts)
+<Multi_key> <b> <O> <o> <o> <space> : "ଓ" U0B13   # ORIYA LETTER O (conflicts)
+<Multi_key> <b> <O> <a> <u> <space> : "ଔ" U0B14   # ORIYA LETTER AU (conflicts)
+<Multi_key> <b> <O> <comma> <r> <r> <space> : "ୠ" U0B60   # ORIYA LETTER VOCALIC RR (conflicts)
+<Multi_key> <b> <O> <comma> <l> <l> <space> : "ୡ" U0B61   # ORIYA LETTER VOCALIC LL (conflicts)
+
+# Dependent vowels
+
+<Multi_key> <b> <O> <a> <a> <Return> : "ା" U0B3E   # ORIYA VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <O> <i> <Return> : "ି" U0B3F   # ORIYA VOWEL SIGN I (conflicts)
+<Multi_key> <b> <O> <i> <i> <Return> : "ୀ" U0B40   # ORIYA VOWEL SIGN II (conflicts)
+<Multi_key> <b> <O> <u> <Return> : "ୁ" U0B41   # ORIYA VOWEL SIGN U (conflicts)
+<Multi_key> <b> <O> <u> <u> <Return> : "ୂ" U0B42   # ORIYA VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <O> <comma> <r> <Return> : "ୃ" U0B43   # ORIYA VOWEL SIGN VOCALIC R (conflicts)
+<Multi_key> <b> <O> <comma> <r> <r> <Return> : "ୄ" U0B44   # ORIYA VOWEL SIGN VOCALIC RR (conflicts)
+<Multi_key> <b> <O> <e> <e> <Return> : "େ" U0B47   # ORIYA VOWEL SIGN E (conflicts)
+<Multi_key> <b> <O> <a> <i> <Return> : "ୈ" U0B48   # ORIYA VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <O> <o> <o> <Return> : "ୋ" U0B4B   # ORIYA VOWEL SIGN O (conflicts)
+<Multi_key> <b> <O> <a> <u> <Return> : "ୌ" U0B4C   # ORIYA VOWEL SIGN AU (conflicts)
+<Multi_key> <b> <O> <comma> <l> <Return> : "ୢ" U0B62   # ORIYA VOWEL SIGN VOCALIC L (conflicts)
+<Multi_key> <b> <O> <comma> <l> <l> <Return> : "ୣ" U0B63   # ORIYA VOWEL SIGN VOCALIC LL (conflicts)
+
+# Other signs
+
+<Multi_key> <b> <O> <period> <parenright> <Return> : "ଁ" U0B01   # ORIYA SIGN CANDRABINDU (conflicts)
+<Multi_key> <b> <O> <period> <Return> : "ଂ" U0B02   # ORIYA SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <O> <colon> <Return> : "ଃ" U0B03   # ORIYA SIGN VISARGA (conflicts)
+<Multi_key> <b> <O> <8> <Return> : "ଃ" U0B03   # ORIYA SIGN VISARGA (conflicts)
+<Multi_key> <b> <O> <underscore> <period> <Return> : "଼" U0B3C   # ORIYA SIGN NUKTA (conflicts)
+<Multi_key> <b> <O> <comma> <Return> : "୍" U0B4D   # ORIYA SIGN VIRAMA (conflicts)
+
+<Multi_key> <b> <O> <S> : "ଽ" U0B3D   # ORIYA SIGN AVAGRAHA (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <O> <numbersign> <0> : "୦" U0B66   # ORIYA DIGIT ZERO (conflicts)
+<Multi_key> <b> <O> <numbersign> <1> : "୧" U0B67   # ORIYA DIGIT ONE (conflicts)
+<Multi_key> <b> <O> <numbersign> <2> : "୨" U0B68   # ORIYA DIGIT TWO (conflicts)
+<Multi_key> <b> <O> <numbersign> <3> : "୩" U0B69   # ORIYA DIGIT THREE (conflicts)
+<Multi_key> <b> <O> <numbersign> <4> : "୪" U0B6A   # ORIYA DIGIT FOUR (conflicts)
+<Multi_key> <b> <O> <numbersign> <5> : "୫" U0B6B   # ORIYA DIGIT FIVE (conflicts)
+<Multi_key> <b> <O> <numbersign> <6> : "୬" U0B6C   # ORIYA DIGIT SIX (conflicts)
+<Multi_key> <b> <O> <numbersign> <7> : "୭" U0B6D   # ORIYA DIGIT SEVEN (conflicts)
+<Multi_key> <b> <O> <numbersign> <8> : "୮" U0B6E   # ORIYA DIGIT EIGHT (conflicts)
+<Multi_key> <b> <O> <numbersign> <9> : "୯" U0B6F   # ORIYA DIGIT NINE (conflicts)
 
 # (t = Tamil)
 
