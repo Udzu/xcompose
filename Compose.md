@@ -14,9 +14,9 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Dashes** (12): – — ⁓ ⸻ etc
 * **Brackets** (20): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
+* **Currency symbols** (20): ₱ ₿ ₪ etc
 * **Combining diacritics** (92): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
-* **Currency symbols** (20): ₱ ₿ ₪ etc
 
 ### Latin script characters (1844)
 * **International Phonetic Alphabet** (134): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
@@ -24,23 +24,23 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Enclosed alphanumerics** (252): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (144): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (286): ʣ ㏈ etc
-* **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ ⟞–·ᓇᓇനﬧ etc
+* **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (2477)
-* **Arabic** (and Syriac & Neo-Tifinagh) (168): ⁧رِيدِيت⁩ ⁧ܪܝܕܝܬ⁩ ⵔⴻⴷⴷⵉⵜ etc
+### Non-Latin script characters (2555)
+* **Arabic** (+ Syriac, Neo-Tifinagh) (168): ⁧رِيدِيت⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
-* **Brahmi** (Brahmi, Devanagari & Tamil) (281): 𑀭𑁂𑀟𑀺𑀝 रेडिट ரெதிட etc
-* **ConScripts** (Deseret & Shavian) (128): 𐐡𐐇𐐔𐐆𐐓 𐑮𐑧𐑛𐑦𐑑 etc
-* **Cyrillic** (and Glagolitic) (190): Ре́ддит Ⱃⰵδδιτ etc
-* **Georgian** (154): რედდიტ ႰႤႣႣႨႲ etc
-* **Greek** (and Coptic) (461): Ρέντιτ Ⲣⲉⲇⲇⲓⲧ etc
-* **Hebrew** (and Phoenician & Samaritan) (159): ⁧רֶדִיט⁩ ⁧𐤓𐤃𐤕⁩ ⁧ࠓࠝࠃࠪࠕ⁩ etc
+* **Brahmic** (Devanagari, Bengali, Tamil, Brahmi) (359): रेडिट, রেডিট, ரெதிட, 𑀭𑁂𑀟𑀺𑀝 etc
+* **Braille** (79): ⠗⠫⠙⠊⠞ etc
+* **ConScripts** (Deseret, Shavian) (128): 𐐡𐐇𐐔𐐆𐐓, 𐑮𐑧𐑛𐑦𐑑 etc
+* **Cyrillic** (+ Glagolitic) (190): Ре́ддит, Ⱃⰵδδιτ etc
+* **Georgian** (154): რედდიტ, ႰႤႣႣႨႲ etc
+* **Greek** (+ Coptic) (461): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ etc
+* **Hebrew** (+ Phoenician, Samaritan) (159): ⁧רֶדִיט⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc
 * **Japanese** (mostly kana) (302): 「レヂィット」 etc
 * **Korean** (using jamo) (118): 레딧 etc
-* **Old Italic** (and Runic) (117): 𐌓𐌄𐌃𐌃𐌉𐌕 ᚱᛖᛞᛞᛁᛏ etc
-* **Zhuyin** (and Mongolian) (158): ㄏㄨㄥˊㄉㄧˊ ᠷᠡᠳᠢᠲ etc
-* **Braille** (79): ⠗⠫⠙⠊⠞ etc
 * **Morse Code** (76): ···---··· etc
+* **Old Italic** (+ Runic) (117): 𐌓𐌄𐌃𐌃𐌉𐌕, ᚱᛖᛞᛞᛁᛏ etc
+* **Zhuyin** (+ Mongolian) (158): ㄏㄨㄥˊㄉㄧˊ, ᠷᠡᠳᠢᠲ etc
 
 ### Symbols (2643)
 * **Emoji** (1516): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
