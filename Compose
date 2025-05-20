@@ -3249,8 +3249,8 @@ include "%L"
 
 <Multi_key> <b> <k> <period> <parenright> <space> : "ಀ" U0C80   # KANNADA SIGN SPACING CANDRABINDU
 <Multi_key> <b> <k> <period> <parenright> <Return> : "ಁ" U0C81   # KANNADA SIGN CANDRABINDU
-<Multi_key> <b> <k> <0> <Return> : "ಂ" U0C82   # KANNADA SIGN ANUSVARA
-<Multi_key> <b> <k> <8> <Return> : "ಃ" U0C83   # KANNADA SIGN VISARGA
+<Multi_key> <b> <k> <period> <Return> : "ಂ" U0C82   # KANNADA SIGN ANUSVARA
+<Multi_key> <b> <k> <colon> <Return> : "ಃ" U0C83   # KANNADA SIGN VISARGA
 <Multi_key> <b> <k> <underscore> <period> <period> <Return> : "಼" U0CBC   # KANNADA SIGN NUKTA
 
 <Multi_key> <b> <k> <at> : "಄" U0C84   # KANNADA SIGN SIDDHAM
@@ -3270,6 +3270,116 @@ include "%L"
 <Multi_key> <b> <k> <numbersign> <7> : "೭" U0CED   # KANNADA DIGIT SEVEN
 <Multi_key> <b> <k> <numbersign> <8> : "೮" U0CEE   # KANNADA DIGIT EIGHT
 <Multi_key> <b> <k> <numbersign> <9> : "೯" U0CEF   # KANNADA DIGIT NINE
+
+# (m = malayalam)
+
+# Consonants
+
+<Multi_key> <b> <m> <k> <space> : "ക" U0D15   # MALAYALAM LETTER KA
+<Multi_key> <b> <m> <k> <h> : "ഖ" U0D16   # MALAYALAM LETTER KHA
+<Multi_key> <b> <m> <g> <space> : "ഗ" U0D17   # MALAYALAM LETTER GA
+<Multi_key> <b> <m> <g> <h> : "ഘ" U0D18   # MALAYALAM LETTER GHA
+<Multi_key> <b> <m> <semicolon> <n> : "ങ" U0D19   # MALAYALAM LETTER NGA
+<Multi_key> <b> <m> <c> <space> : "ച" U0D1A   # MALAYALAM LETTER CA
+<Multi_key> <b> <m> <c> <h> : "ഛ" U0D1B   # MALAYALAM LETTER CHA
+<Multi_key> <b> <m> <j> <space> : "ജ" U0D1C   # MALAYALAM LETTER JA
+<Multi_key> <b> <m> <j> <h> : "ഝ" U0D1D   # MALAYALAM LETTER JHA
+<Multi_key> <b> <m> <asciitilde> <n> : "ഞ" U0D1E   # MALAYALAM LETTER NYA
+<Multi_key> <b> <m> <period> <t> <space> : "ട" U0D1F   # MALAYALAM LETTER TTA
+<Multi_key> <b> <m> <period> <t> <h> : "ഠ" U0D20   # MALAYALAM LETTER TTHA
+<Multi_key> <b> <m> <period> <d> <space> : "ഡ" U0D21   # MALAYALAM LETTER DDA
+<Multi_key> <b> <m> <period> <d> <h> : "ഢ" U0D22   # MALAYALAM LETTER DDHA
+<Multi_key> <b> <m> <period> <n> : "ണ" U0D23   # MALAYALAM LETTER NNA
+<Multi_key> <b> <m> <t> <space> : "ത" U0D24   # MALAYALAM LETTER TA
+<Multi_key> <b> <m> <t> <h> : "ഥ" U0D25   # MALAYALAM LETTER THA
+<Multi_key> <b> <m> <d> <space> : "ദ" U0D26   # MALAYALAM LETTER DA
+<Multi_key> <b> <m> <d> <h> : "ധ" U0D27   # MALAYALAM LETTER DHA
+<Multi_key> <b> <m> <n> : "ന" U0D28   # MALAYALAM LETTER NA
+<Multi_key> <b> <m> <underscore> <n> : "ഩ" U0D29   # MALAYALAM LETTER NNNA
+<Multi_key> <b> <m> <p> <space> : "പ" U0D2A   # MALAYALAM LETTER PA
+<Multi_key> <b> <m> <p> <h> : "ഫ" U0D2B   # MALAYALAM LETTER PHA
+<Multi_key> <b> <m> <b> <space> : "ബ" U0D2C   # MALAYALAM LETTER BA
+<Multi_key> <b> <m> <b> <h> : "ഭ" U0D2D   # MALAYALAM LETTER BHA
+<Multi_key> <b> <m> <m> : "മ" U0D2E   # MALAYALAM LETTER MA
+<Multi_key> <b> <m> <y> : "യ" U0D2F   # MALAYALAM LETTER YA
+<Multi_key> <b> <m> <r> : "ര" U0D30   # MALAYALAM LETTER RA
+<Multi_key> <b> <m> <underscore> <r> : "റ" U0D31   # MALAYALAM LETTER RRA
+<Multi_key> <b> <m> <l> : "ല" U0D32   # MALAYALAM LETTER LA
+<Multi_key> <b> <m> <period> <l> : "ള" U0D33   # MALAYALAM LETTER LLA
+<Multi_key> <b> <m> <underscore> <l> : "ഴ" U0D34   # MALAYALAM LETTER LLLA
+<Multi_key> <b> <m> <v> : "വ" U0D35   # MALAYALAM LETTER VA
+<Multi_key> <b> <m> <semicolon> <s> : "ശ" U0D36   # MALAYALAM LETTER SHA
+<Multi_key> <b> <m> <period> <s> : "ഷ" U0D37   # MALAYALAM LETTER SSA
+<Multi_key> <b> <m> <s> : "സ" U0D38   # MALAYALAM LETTER SA
+<Multi_key> <b> <m> <h> : "ഹ" U0D39   # MALAYALAM LETTER HA
+<Multi_key> <b> <m> <underscore> <t> : "ഺ" U0D3A   # MALAYALAM LETTER TTTA
+
+# Independent Vowels
+
+<Multi_key> <b> <m> <a> <space> : "അ" U0D05   # MALAYALAM LETTER A
+<Multi_key> <b> <m> <a> <a> <space> : "ആ" U0D06   # MALAYALAM LETTER AA
+<Multi_key> <b> <m> <i> <space> : "ഇ" U0D07   # MALAYALAM LETTER I
+<Multi_key> <b> <m> <i> <i> <space> : "ഈ" U0D08   # MALAYALAM LETTER II
+<Multi_key> <b> <m> <u> <space> : "ഉ" U0D09   # MALAYALAM LETTER U
+<Multi_key> <b> <m> <u> <u> <space> : "ഊ" U0D0A   # MALAYALAM LETTER UU
+<Multi_key> <b> <m> <comma> <r> <space> : "ഋ" U0D0B   # MALAYALAM LETTER VOCALIC R
+<Multi_key> <b> <m> <comma> <l> <space> : "ഌ" U0D0C   # MALAYALAM LETTER VOCALIC L
+<Multi_key> <b> <m> <e> <space> : "എ" U0D0E   # MALAYALAM LETTER E
+<Multi_key> <b> <m> <e> <e> <space> : "ഏ" U0D0F   # MALAYALAM LETTER EE
+<Multi_key> <b> <m> <a> <i> <space> : "ഐ" U0D10   # MALAYALAM LETTER AI
+<Multi_key> <b> <m> <o> <space> : "ഒ" U0D12   # MALAYALAM LETTER O
+<Multi_key> <b> <m> <o> <o> <space> : "ഓ" U0D13   # MALAYALAM LETTER OO
+<Multi_key> <b> <m> <a> <u> <space> : "ഔ" U0D14   # MALAYALAM LETTER AU
+<Multi_key> <b> <m> <comma> <r> <r> <space> : "ൠ" U0D60   # MALAYALAM LETTER VOCALIC RR
+<Multi_key> <b> <m> <comma> <l> <l> <space> : "ൡ" U0D61   # MALAYALAM LETTER VOCALIC LL
+
+# Dependent Vowels
+
+<Multi_key> <b> <m> <a> <a> <Return> : "ാ" U0D3E   # MALAYALAM VOWEL SIGN AA
+<Multi_key> <b> <m> <i> <Return> : "ി" U0D3F   # MALAYALAM VOWEL SIGN I
+<Multi_key> <b> <m> <i> <i> <Return> : "ീ" U0D40   # MALAYALAM VOWEL SIGN II
+<Multi_key> <b> <m> <u> <Return> : "ു" U0D41   # MALAYALAM VOWEL SIGN U
+<Multi_key> <b> <m> <u> <u> <Return> : "ൂ" U0D42   # MALAYALAM VOWEL SIGN UU
+<Multi_key> <b> <m> <comma> <r> <Return> : "ൃ" U0D43   # MALAYALAM VOWEL SIGN VOCALIC R
+<Multi_key> <b> <m> <comma> <r> <r> <Return> : "ൄ" U0D44   # MALAYALAM VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <m> <e> <Return> : "െ" U0D46   # MALAYALAM VOWEL SIGN E
+<Multi_key> <b> <m> <e> <e> <Return> : "േ" U0D47   # MALAYALAM VOWEL SIGN EE
+<Multi_key> <b> <m> <a> <i> <Return> : "ൈ" U0D48   # MALAYALAM VOWEL SIGN AI
+<Multi_key> <b> <m> <o> <Return> : "ൊ" U0D4A   # MALAYALAM VOWEL SIGN O
+<Multi_key> <b> <m> <o> <o> <Return> : "ോ" U0D4B   # MALAYALAM VOWEL SIGN OO
+<Multi_key> <b> <m> <a> <u> <Return> : "ൌ" U0D4C   # MALAYALAM VOWEL SIGN AU
+<Multi_key> <b> <m> <comma> <Return> : "്" U0D4D   # MALAYALAM SIGN VIRAMA
+<Multi_key> <b> <m> <comma> <l> <Return> : "ൢ" U0D62   # MALAYALAM VOWEL SIGN VOCALIC L
+<Multi_key> <b> <m> <comma> <l> <l> <Return> : "ൣ" U0D63   # MALAYALAM VOWEL SIGN VOCALIC LL
+
+# Other signs
+
+<Multi_key> <b> <m> <asciicircum> <period> <Return> : "ഀ" U0D00   # MALAYALAM SIGN COMBINING ANUSVARA ABOVE
+<Multi_key> <b> <m> <period> <parenright> <Return> : "ഁ" U0D01   # MALAYALAM SIGN CANDRABINDU
+<Multi_key> <b> <m> <period> <Return> : "ം" U0D02   # MALAYALAM SIGN ANUSVARA
+<Multi_key> <b> <m> <colon> <Return> : "ഃ" U0D03   # MALAYALAM SIGN VISARGA
+<Multi_key> <b> <m> <bar> <Return> : "഻" U0D3B   # MALAYALAM SIGN VERTICAL BAR VIRAMA
+<Multi_key> <b> <m> <0> <Return> : "഼" U0D3C   # MALAYALAM SIGN CIRCULAR VIRAMA
+
+<Multi_key> <b> <m> <period> <parenright> <space> : "ഄ" U0D04   # MALAYALAM LETTER VEDIC ANUSVARA
+<Multi_key> <b> <m> <S> : "ഽ" U0D3D   # MALAYALAM SIGN AVAGRAHA
+
+# Numerals
+
+<Multi_key> <b> <m> <numbersign> <0> : "൦" U0D66   # MALAYALAM DIGIT ZERO
+<Multi_key> <b> <m> <numbersign> <1> : "൧" U0D67   # MALAYALAM DIGIT ONE
+<Multi_key> <b> <m> <numbersign> <2> : "൨" U0D68   # MALAYALAM DIGIT TWO
+<Multi_key> <b> <m> <numbersign> <3> : "൩" U0D69   # MALAYALAM DIGIT THREE
+<Multi_key> <b> <m> <numbersign> <4> : "൪" U0D6A   # MALAYALAM DIGIT FOUR
+<Multi_key> <b> <m> <numbersign> <5> : "൫" U0D6B   # MALAYALAM DIGIT FIVE
+<Multi_key> <b> <m> <numbersign> <6> : "൬" U0D6C   # MALAYALAM DIGIT SIX
+<Multi_key> <b> <m> <numbersign> <7> : "൭" U0D6D   # MALAYALAM DIGIT SEVEN
+<Multi_key> <b> <m> <numbersign> <8> : "൮" U0D6E   # MALAYALAM DIGIT EIGHT
+<Multi_key> <b> <m> <numbersign> <9> : "൯" U0D6F   # MALAYALAM DIGIT NINE
+
+<Multi_key> <b> <m> <1> <0> <Return> : "൰" U0D70   # MALAYALAM NUMBER TEN
+<Multi_key> <b> <m> <1> <0> <0> <Return> : "൱" U0D71   # MALAYALAM NUMBER ONE HUNDRED
+<Multi_key> <b> <m> <1> <0> <0> <0>  : "൲" U0D72   # MALAYALAM NUMBER ONE THOUSAND
 
 # (t = Tamil)
 
