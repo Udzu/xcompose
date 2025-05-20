@@ -150,6 +150,7 @@ include "%L"
 <Multi_key> <u> <underscore> <space> <Return>          : "᷋" U1DCB   # COMBINING BREVE-MACRON (conflicts with ū, use -u or u-)
 <Multi_key> <underscore> <u> <space> <Return>          : "᷌" U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
 <Multi_key> <asterisk> <Return>      : "⃰" U20F0   # COMBINING ASTERISK ABOVE
+<Multi_key> <parenleft> <parenright> <Return> : "᪻" U1ABB   # COMBINING PARENTHESES ABOVE
 
 <Multi_key> <underscore> <grave> <Return>            : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
 <Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (conflicts with ⍘, use '_[Return] defined below)
@@ -191,6 +192,7 @@ include "%L"
 <Multi_key> <underscore> <asterisk> <Return>         : "͙"  U0359   # COMBINING ASTERISK BELOW
 <Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <parenleft> <Return> : "᷼" U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <parenleft> <parenright> <Return> : "᪽" U1ABD   # COMBINING PARENTHESES BELOW (conflicts with ¯, use -^)
 
 <Multi_key> <minus> <asciitilde> <Return>    : "̴"  U0334   # COMBINING TILDE OVERLAY
 <Multi_key> <minus> <minus> <Return>         : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
@@ -200,6 +202,8 @@ include "%L"
 <Multi_key> <minus> <bar> <bar> <Return>     : "⃦"  U20E6   # COMBINING DOUBLE VERTICAL STROKE OVERLAY
 <Multi_key> <minus> <less> <minus> <Return>  : "⃪"  U20EA   # COMBINING LEFTWARDS ARROW OVERLAY
 <Multi_key> <minus> <slash> <slash> <Return> : "⃫"  U20EB   # COMBINING LONG DOUBLE SOLIDUS OVERLAY (conflicts with ⌿, use /-)
+<Multi_key> <minus> <parenleft> <parenright> <Return> : "᪾" U1ABE   # COMBINING PARENTHESES OVERLAY (conflicts with useless {)
+<Multi_key> <minus> <Multi_key> <o> <Return> : "⃘" U20D8   # COMBINING RING OVERLAY (not ideal)
 
 <Multi_key> <2> <underscore> <u> <Return>          : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (alternatively __)[Return])
 <Multi_key> <2> <u> <Return>                       : "͝"  U035D   # COMBINING DOUBLE BREVE (alternatively )[Return])
@@ -307,6 +311,7 @@ include "%L"
 
 <Multi_key> <b> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
 <Multi_key> <B> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
+<Multi_key> <g> <G>                 : "ɢ"  U0262   # LATIN LETTER SMALL CAPITAL G
 <Multi_key> <G> <G>                 : "ɢ"  U0262   # LATIN LETTER SMALL CAPITAL G
 <Multi_key> <i> <I>                 : "ɪ"  U026A   # LATIN LETTER SMALL CAPITAL I
 <Multi_key> <I> <I>                 : "ɪ"  U026A   # LATIN LETTER SMALL CAPITAL I
@@ -2685,145 +2690,148 @@ include "%L"
 <Multi_key> <A> <semicolon> <period> : "։" U0589   # ARMENIAN FULL STOP (conflicts)
 <Multi_key> <A> <semicolon> <minus> : "֊" U058A   # ARMENIAN HYPHEN (conflicts)
 
-##################################################
-# (b) Brahmi scripts (Brahmi, Devanagari, Tamil) #
-##################################################
+#######################
+# (b) Brahmic scripts #
+#######################
+
+# (Brahmi, Devanagari, Bengali, Burmese, Gujarati, Gurmukhi, Kannada, Malayalam, Odia, Tamil, Telugu)
 
 # based on 7-bit ISO 15919
 
 # standalone vowels end with <space> (to contrast <Return> for dependent vowel modifiers)
+# as do non-aspirated consonants (to leave space for h)
 
-# (b = Brahmi)
+# (c = Brahmi)
 
 # Consonants
 
-<Multi_key> <b> <b> <k> <space>          : "𑀓" U11013   # BRAHMI LETTER KA
-<Multi_key> <b> <b> <k> <h>              : "𑀔" U11014   # BRAHMI LETTER KHA
-<Multi_key> <b> <b> <g> <space>          : "𑀕" U11015   # BRAHMI LETTER GA
-<Multi_key> <b> <b> <g> <h>              : "𑀖" U11016   # BRAHMI LETTER GHA
-<Multi_key> <b> <b> <semicolon> <n>      : "𑀗" U11017   # BRAHMI LETTER NGA
-<Multi_key> <b> <b> <c> <space>          : "𑀘" U11018   # BRAHMI LETTER CA
-<Multi_key> <b> <b> <c> <h>              : "𑀙" U11019   # BRAHMI LETTER CHA
-<Multi_key> <b> <b> <j> <space>          : "𑀚" U1101A   # BRAHMI LETTER JA
-<Multi_key> <b> <b> <j> <h>              : "𑀛" U1101B   # BRAHMI LETTER JHA
-<Multi_key> <b> <b> <asciitilde> <n>     : "𑀜" U1101C   # BRAHMI LETTER NYA
-<Multi_key> <b> <b> <period> <t> <space> : "𑀝" U1101D   # BRAHMI LETTER TTA
-<Multi_key> <b> <b> <period> <t> <h>     : "𑀞" U1101E   # BRAHMI LETTER TTHA
-<Multi_key> <b> <b> <period> <d> <space> : "𑀟" U1101F   # BRAHMI LETTER DDA
-<Multi_key> <b> <b> <period> <d> <h>     : "𑀠" U11020   # BRAHMI LETTER DDHA
-<Multi_key> <b> <b> <period> <n>         : "𑀡" U11021   # BRAHMI LETTER NNA
-<Multi_key> <b> <b> <t> <space>          : "𑀢" U11022   # BRAHMI LETTER TA
-<Multi_key> <b> <b> <t> <h>              : "𑀣" U11023   # BRAHMI LETTER THA
-<Multi_key> <b> <b> <d> <space>          : "𑀤" U11024   # BRAHMI LETTER DA
-<Multi_key> <b> <b> <d> <h>              : "𑀥" U11025   # BRAHMI LETTER DHA
-<Multi_key> <b> <b> <n>                  : "𑀦" U11026   # BRAHMI LETTER NA
-<Multi_key> <b> <b> <p> <space>          : "𑀧" U11027   # BRAHMI LETTER PA
-<Multi_key> <b> <b> <p> <h>              : "𑀨" U11028   # BRAHMI LETTER PHA
-<Multi_key> <b> <b> <b> <space>          : "𑀩" U11029   # BRAHMI LETTER BA
-<Multi_key> <b> <b> <b> <h>              : "𑀪" U1102A   # BRAHMI LETTER BHA
-<Multi_key> <b> <b> <m>                  : "𑀫" U1102B   # BRAHMI LETTER MA
-<Multi_key> <b> <b> <y>                  : "𑀬" U1102C   # BRAHMI LETTER YA
-<Multi_key> <b> <b> <r>                  : "𑀭" U1102D   # BRAHMI LETTER RA
-<Multi_key> <b> <b> <l>                  : "𑀮" U1102E   # BRAHMI LETTER LA
-<Multi_key> <b> <b> <v>                  : "𑀯" U1102F   # BRAHMI LETTER VA
-<Multi_key> <b> <b> <semicolon> <s>      : "𑀰" U11030   # BRAHMI LETTER SHA
-<Multi_key> <b> <b> <period> <s>         : "𑀱" U11031   # BRAHMI LETTER SSA
-<Multi_key> <b> <b> <s>                  : "𑀲" U11032   # BRAHMI LETTER SA
-<Multi_key> <b> <b> <h>                  : "𑀳" U11033   # BRAHMI LETTER HA
-<Multi_key> <b> <b> <period> <l>         : "𑀴" U11034   # BRAHMI LETTER LLA
-<Multi_key> <b> <b> <underscore> <l>     : "𑀵" U11035   # BRAHMI LETTER OLD TAMIL LLLA
-<Multi_key> <b> <b> <underscore> <r>     : "𑀶" U11036   # BRAHMI LETTER OLD TAMIL RRA
-<Multi_key> <b> <b> <underscore> <n>     : "𑀷" U11037   # BRAHMI LETTER OLD TAMIL NNNA
+<Multi_key> <b> <c> <k> <space>          : "𑀓" U11013   # BRAHMI LETTER KA
+<Multi_key> <b> <c> <k> <h>              : "𑀔" U11014   # BRAHMI LETTER KHA
+<Multi_key> <b> <c> <g> <space>          : "𑀕" U11015   # BRAHMI LETTER GA
+<Multi_key> <b> <c> <g> <h>              : "𑀖" U11016   # BRAHMI LETTER GHA
+<Multi_key> <b> <c> <semicolon> <n>      : "𑀗" U11017   # BRAHMI LETTER NGA
+<Multi_key> <b> <c> <c> <space>          : "𑀘" U11018   # BRAHMI LETTER CA
+<Multi_key> <b> <c> <c> <h>              : "𑀙" U11019   # BRAHMI LETTER CHA
+<Multi_key> <b> <c> <j> <space>          : "𑀚" U1101A   # BRAHMI LETTER JA
+<Multi_key> <b> <c> <j> <h>              : "𑀛" U1101B   # BRAHMI LETTER JHA
+<Multi_key> <b> <c> <asciitilde> <n>     : "𑀜" U1101C   # BRAHMI LETTER NYA
+<Multi_key> <b> <c> <period> <t> <space> : "𑀝" U1101D   # BRAHMI LETTER TTA
+<Multi_key> <b> <c> <period> <t> <h>     : "𑀞" U1101E   # BRAHMI LETTER TTHA
+<Multi_key> <b> <c> <period> <d> <space> : "𑀟" U1101F   # BRAHMI LETTER DDA
+<Multi_key> <b> <c> <period> <d> <h>     : "𑀠" U11020   # BRAHMI LETTER DDHA
+<Multi_key> <b> <c> <period> <n>         : "𑀡" U11021   # BRAHMI LETTER NNA
+<Multi_key> <b> <c> <t> <space>          : "𑀢" U11022   # BRAHMI LETTER TA
+<Multi_key> <b> <c> <t> <h>              : "𑀣" U11023   # BRAHMI LETTER THA
+<Multi_key> <b> <c> <d> <space>          : "𑀤" U11024   # BRAHMI LETTER DA
+<Multi_key> <b> <c> <d> <h>              : "𑀥" U11025   # BRAHMI LETTER DHA
+<Multi_key> <b> <c> <n>                  : "𑀦" U11026   # BRAHMI LETTER NA
+<Multi_key> <b> <c> <p> <space>          : "𑀧" U11027   # BRAHMI LETTER PA
+<Multi_key> <b> <c> <p> <h>              : "𑀨" U11028   # BRAHMI LETTER PHA
+<Multi_key> <b> <c> <b> <space>          : "𑀩" U11029   # BRAHMI LETTER BA
+<Multi_key> <b> <c> <b> <h>              : "𑀪" U1102A   # BRAHMI LETTER BHA
+<Multi_key> <b> <c> <m>                  : "𑀫" U1102B   # BRAHMI LETTER MA
+<Multi_key> <b> <c> <y>                  : "𑀬" U1102C   # BRAHMI LETTER YA
+<Multi_key> <b> <c> <r>                  : "𑀭" U1102D   # BRAHMI LETTER RA
+<Multi_key> <b> <c> <l>                  : "𑀮" U1102E   # BRAHMI LETTER LA
+<Multi_key> <b> <c> <v>                  : "𑀯" U1102F   # BRAHMI LETTER VA
+<Multi_key> <b> <c> <semicolon> <s>      : "𑀰" U11030   # BRAHMI LETTER SHA
+<Multi_key> <b> <c> <period> <s>         : "𑀱" U11031   # BRAHMI LETTER SSA
+<Multi_key> <b> <c> <s>                  : "𑀲" U11032   # BRAHMI LETTER SA
+<Multi_key> <b> <c> <h>                  : "𑀳" U11033   # BRAHMI LETTER HA
+<Multi_key> <b> <c> <period> <l>         : "𑀴" U11034   # BRAHMI LETTER LLA
+<Multi_key> <b> <c> <underscore> <l>     : "𑀵" U11035   # BRAHMI LETTER OLD TAMIL LLLA
+<Multi_key> <b> <c> <underscore> <r>     : "𑀶" U11036   # BRAHMI LETTER OLD TAMIL RRA
+<Multi_key> <b> <c> <underscore> <n>     : "𑀷" U11037   # BRAHMI LETTER OLD TAMIL NNNA
 
 # Independent vowels
 
-<Multi_key> <b> <b> <a> <space>             : "𑀅" U11005   # BRAHMI LETTER A
-<Multi_key> <b> <b> <a> <a> <space>         : "𑀆" U11006   # BRAHMI LETTER AA
-<Multi_key> <b> <b> <i> <space>             : "𑀇" U11007   # BRAHMI LETTER I
-<Multi_key> <b> <b> <i> <i> <space>         : "𑀈" U11008   # BRAHMI LETTER II
-<Multi_key> <b> <b> <u> <space>             : "𑀉" U11009   # BRAHMI LETTER U
-<Multi_key> <b> <b> <u> <u> <space>         : "𑀊" U1100A   # BRAHMI LETTER UU
-<Multi_key> <b> <b> <comma> <r> <space>     : "𑀋" U1100B   # BRAHMI LETTER VOCALIC R
-<Multi_key> <b> <b> <comma> <r> <r> <space> : "𑀌" U1100C   # BRAHMI LETTER VOCALIC RR
-<Multi_key> <b> <b> <comma> <l> <space>     : "𑀍" U1100D   # BRAHMI LETTER VOCALIC L
-<Multi_key> <b> <b> <comma> <l> <l> <space> : "𑀎" U1100E   # BRAHMI LETTER VOCALIC LL
-<Multi_key> <b> <b> <e> <e> <space>         : "𑀏" U1100F   # BRAHMI LETTER E
-<Multi_key> <b> <b> <a> <i> <space>         : "𑀐" U11010   # BRAHMI LETTER AI
-<Multi_key> <b> <b> <o> <o> <space>         : "𑀑" U11011   # BRAHMI LETTER O
-<Multi_key> <b> <b> <a> <u> <space>         : "𑀒" U11012   # BRAHMI LETTER AU
-<Multi_key> <b> <b> <e> <space>             : "𑁱" U11071   # BRAHMI LETTER OLD TAMIL SHORT E
-<Multi_key> <b> <b> <o> <space>             : "𑁲" U11072   # BRAHMI LETTER OLD TAMIL SHORT O
+<Multi_key> <b> <c> <a> <space>             : "𑀅" U11005   # BRAHMI LETTER A
+<Multi_key> <b> <c> <a> <a> <space>         : "𑀆" U11006   # BRAHMI LETTER AA
+<Multi_key> <b> <c> <i> <space>             : "𑀇" U11007   # BRAHMI LETTER I
+<Multi_key> <b> <c> <i> <i> <space>         : "𑀈" U11008   # BRAHMI LETTER II
+<Multi_key> <b> <c> <u> <space>             : "𑀉" U11009   # BRAHMI LETTER U
+<Multi_key> <b> <c> <u> <u> <space>         : "𑀊" U1100A   # BRAHMI LETTER UU
+<Multi_key> <b> <c> <comma> <r> <space>     : "𑀋" U1100B   # BRAHMI LETTER VOCALIC R
+<Multi_key> <b> <c> <comma> <r> <r> <space> : "𑀌" U1100C   # BRAHMI LETTER VOCALIC RR
+<Multi_key> <b> <c> <comma> <l> <space>     : "𑀍" U1100D   # BRAHMI LETTER VOCALIC L
+<Multi_key> <b> <c> <comma> <l> <l> <space> : "𑀎" U1100E   # BRAHMI LETTER VOCALIC LL
+<Multi_key> <b> <c> <e> <e> <space>         : "𑀏" U1100F   # BRAHMI LETTER E
+<Multi_key> <b> <c> <a> <i> <space>         : "𑀐" U11010   # BRAHMI LETTER AI
+<Multi_key> <b> <c> <o> <o> <space>         : "𑀑" U11011   # BRAHMI LETTER O
+<Multi_key> <b> <c> <a> <u> <space>         : "𑀒" U11012   # BRAHMI LETTER AU
+<Multi_key> <b> <c> <e> <space>             : "𑁱" U11071   # BRAHMI LETTER OLD TAMIL SHORT E
+<Multi_key> <b> <c> <o> <space>             : "𑁲" U11072   # BRAHMI LETTER OLD TAMIL SHORT O
 
 # Dependent vowels
 
-<Multi_key> <b> <b> <a> <a> <Return>        : "𑀸" U11038   # BRAHMI VOWEL SIGN AA
-<Multi_key> <b> <b> <i> <Return>            : "𑀺" U1103A   # BRAHMI VOWEL SIGN I
-<Multi_key> <b> <b> <i> <i> <Return>        : "𑀻" U1103B   # BRAHMI VOWEL SIGN II
-<Multi_key> <b> <b> <u> <Return>            : "𑀼" U1103C   # BRAHMI VOWEL SIGN U
-<Multi_key> <b> <b> <u> <u> <Return>        : "𑀽" U1103D   # BRAHMI VOWEL SIGN UU
-<Multi_key> <b> <b> <comma> <r> <Return>    : "𑀾" U1103E   # BRAHMI VOWEL SIGN VOCALIC R
-<Multi_key> <b> <b> <comma> <r> <r> <Return> : "𑀿" U1103F   # BRAHMI VOWEL SIGN VOCALIC RR
-<Multi_key> <b> <b> <comma> <l> <Return>    : "𑁀" U11040   # BRAHMI VOWEL SIGN VOCALIC L
-<Multi_key> <b> <b> <comma> <l> <l> <Return> : "𑁁" U11041   # BRAHMI VOWEL SIGN VOCALIC LL
-<Multi_key> <b> <b> <e> <e> <Return>        : "𑁂" U11042   # BRAHMI VOWEL SIGN E
-<Multi_key> <b> <b> <a> <i> <Return>        : "𑁃" U11043   # BRAHMI VOWEL SIGN AI
-<Multi_key> <b> <b> <o> <o> <Return>        : "𑁄" U11044   # BRAHMI VOWEL SIGN O
-<Multi_key> <b> <b> <a> <u> <Return>        : "𑁅" U11045   # BRAHMI VOWEL SIGN AU
-<Multi_key> <b> <b> <e> <Return>            : "𑁳" U11073   # BRAHMI VOWEL SIGN OLD TAMIL SHORT E
-<Multi_key> <b> <b> <o> <Return>            : "𑁴" U11074   # BRAHMI VOWEL SIGN OLD TAMIL SHORT O
+<Multi_key> <b> <c> <a> <a> <Return>        : "𑀸" U11038   # BRAHMI VOWEL SIGN AA
+<Multi_key> <b> <c> <i> <Return>            : "𑀺" U1103A   # BRAHMI VOWEL SIGN I
+<Multi_key> <b> <c> <i> <i> <Return>        : "𑀻" U1103B   # BRAHMI VOWEL SIGN II
+<Multi_key> <b> <c> <u> <Return>            : "𑀼" U1103C   # BRAHMI VOWEL SIGN U
+<Multi_key> <b> <c> <u> <u> <Return>        : "𑀽" U1103D   # BRAHMI VOWEL SIGN UU
+<Multi_key> <b> <c> <comma> <r> <Return>    : "𑀾" U1103E   # BRAHMI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <c> <comma> <r> <r> <Return> : "𑀿" U1103F   # BRAHMI VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <c> <comma> <l> <Return>    : "𑁀" U11040   # BRAHMI VOWEL SIGN VOCALIC L
+<Multi_key> <b> <c> <comma> <l> <l> <Return> : "𑁁" U11041   # BRAHMI VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <c> <e> <e> <Return>        : "𑁂" U11042   # BRAHMI VOWEL SIGN E
+<Multi_key> <b> <c> <a> <i> <Return>        : "𑁃" U11043   # BRAHMI VOWEL SIGN AI
+<Multi_key> <b> <c> <o> <o> <Return>        : "𑁄" U11044   # BRAHMI VOWEL SIGN O
+<Multi_key> <b> <c> <a> <u> <Return>        : "𑁅" U11045   # BRAHMI VOWEL SIGN AU
+<Multi_key> <b> <c> <e> <Return>            : "𑁳" U11073   # BRAHMI VOWEL SIGN OLD TAMIL SHORT E
+<Multi_key> <b> <c> <o> <Return>            : "𑁴" U11074   # BRAHMI VOWEL SIGN OLD TAMIL SHORT O
 
 # Other signs
 
-<Multi_key> <b> <b> <parenleft> <period> <Return> : "𑀀" U11000   # BRAHMI SIGN CANDRABINDU
-<Multi_key> <b> <b> <period> <Return>       : "𑀁" U11001   # BRAHMI SIGN ANUSVARA
-<Multi_key> <b> <b> <colon> <Return>        : "𑀂" U11002   # BRAHMI SIGN VISARGA
-<Multi_key> <b> <b> <minus> <Return>        : "𑁆" U11046   # BRAHMI VIRAMA
-<Multi_key> <b> <b> <greater> <period> <Return> : "𑁰" U11070   # BRAHMI SIGN OLD TAMIL VIRAMA
+<Multi_key> <b> <c> <parenleft> <period> <Return> : "𑀀" U11000   # BRAHMI SIGN CANDRABINDU
+<Multi_key> <b> <c> <period> <Return>       : "𑀁" U11001   # BRAHMI SIGN ANUSVARA
+<Multi_key> <b> <c> <colon> <Return>        : "𑀂" U11002   # BRAHMI SIGN VISARGA
+<Multi_key> <b> <c> <minus> <Return>        : "𑁆" U11046   # BRAHMI VIRAMA
+<Multi_key> <b> <c> <greater> <period> <Return> : "𑁰" U11070   # BRAHMI SIGN OLD TAMIL VIRAMA
 
-<Multi_key> <b> <b> <x>                     : "𑀃" U11003   # BRAHMI SIGN JIHVAMULIYA
-<Multi_key> <b> <b> <o> <x>                 : "𑀄" U11004   # BRAHMI SIGN UPADHMANIYA
+<Multi_key> <b> <c> <x>                     : "𑀃" U11003   # BRAHMI SIGN JIHVAMULIYA
+<Multi_key> <b> <c> <o> <x>                 : "𑀄" U11004   # BRAHMI SIGN UPADHMANIYA
 
 # Punctuation
 
-<Multi_key> <b> <b> <bar> : "𑁇" U11047   # BRAHMI DANDA
-<Multi_key> <b> <b> <2> <bar> : "𑁈" U11048   # BRAHMI DOUBLE DANDA
-<Multi_key> <b> <b> <minus> <period> : "𑁉" U11049   # BRAHMI PUNCTUATION DOT
-<Multi_key> <b> <b> <minus> <colon> : "𑁊" U1104A   # BRAHMI PUNCTUATION DOUBLE DOT
-<Multi_key> <b> <b> <minus> <minus> : "𑁋" U1104B   # BRAHMI PUNCTUATION LINE
+<Multi_key> <b> <c> <bar> : "𑁇" U11047   # BRAHMI DANDA
+<Multi_key> <b> <c> <2> <bar> : "𑁈" U11048   # BRAHMI DOUBLE DANDA
+<Multi_key> <b> <c> <minus> <period> : "𑁉" U11049   # BRAHMI PUNCTUATION DOT
+<Multi_key> <b> <c> <minus> <colon> : "𑁊" U1104A   # BRAHMI PUNCTUATION DOUBLE DOT
+<Multi_key> <b> <c> <minus> <minus> : "𑁋" U1104B   # BRAHMI PUNCTUATION LINE
 
 # Numbers
 
-<Multi_key> <b> <b> <numbersign> <0> : "𑁦" U11066   # BRAHMI DIGIT ZERO
-<Multi_key> <b> <b> <numbersign> <1> : "𑁧" U11067   # BRAHMI DIGIT ONE
-<Multi_key> <b> <b> <numbersign> <2> : "𑁨" U11068   # BRAHMI DIGIT TWO
-<Multi_key> <b> <b> <numbersign> <3> : "𑁩" U11069   # BRAHMI DIGIT THREE
-<Multi_key> <b> <b> <numbersign> <4> : "𑁪" U1106A   # BRAHMI DIGIT FOUR
-<Multi_key> <b> <b> <numbersign> <5> : "𑁫" U1106B   # BRAHMI DIGIT FIVE
-<Multi_key> <b> <b> <numbersign> <6> : "𑁬" U1106C   # BRAHMI DIGIT SIX
-<Multi_key> <b> <b> <numbersign> <7> : "𑁭" U1106D   # BRAHMI DIGIT SEVEN
-<Multi_key> <b> <b> <numbersign> <8> : "𑁮" U1106E   # BRAHMI DIGIT EIGHT
-<Multi_key> <b> <b> <numbersign> <9> : "𑁯" U1106F   # BRAHMI DIGIT NINE
+<Multi_key> <b> <c> <numbersign> <0> : "𑁦" U11066   # BRAHMI DIGIT ZERO
+<Multi_key> <b> <c> <numbersign> <1> : "𑁧" U11067   # BRAHMI DIGIT ONE
+<Multi_key> <b> <c> <numbersign> <2> : "𑁨" U11068   # BRAHMI DIGIT TWO
+<Multi_key> <b> <c> <numbersign> <3> : "𑁩" U11069   # BRAHMI DIGIT THREE
+<Multi_key> <b> <c> <numbersign> <4> : "𑁪" U1106A   # BRAHMI DIGIT FOUR
+<Multi_key> <b> <c> <numbersign> <5> : "𑁫" U1106B   # BRAHMI DIGIT FIVE
+<Multi_key> <b> <c> <numbersign> <6> : "𑁬" U1106C   # BRAHMI DIGIT SIX
+<Multi_key> <b> <c> <numbersign> <7> : "𑁭" U1106D   # BRAHMI DIGIT SEVEN
+<Multi_key> <b> <c> <numbersign> <8> : "𑁮" U1106E   # BRAHMI DIGIT EIGHT
+<Multi_key> <b> <c> <numbersign> <9> : "𑁯" U1106F   # BRAHMI DIGIT NINE
 
-<Multi_key> <b> <b> <1> <Return> : "𑁒" U11052   # BRAHMI NUMBER ONE
-<Multi_key> <b> <b> <2> <Return> : "𑁓" U11053   # BRAHMI NUMBER TWO
-<Multi_key> <b> <b> <3> <Return> : "𑁔" U11054   # BRAHMI NUMBER THREE
-<Multi_key> <b> <b> <4> <Return> : "𑁕" U11055   # BRAHMI NUMBER FOUR
-<Multi_key> <b> <b> <5> <Return> : "𑁖" U11056   # BRAHMI NUMBER FIVE
-<Multi_key> <b> <b> <6> <Return> : "𑁗" U11057   # BRAHMI NUMBER SIX
-<Multi_key> <b> <b> <7> <Return> : "𑁘" U11058   # BRAHMI NUMBER SEVEN
-<Multi_key> <b> <b> <8> <Return> : "𑁙" U11059   # BRAHMI NUMBER EIGHT
-<Multi_key> <b> <b> <9> <Return> : "𑁚" U1105A   # BRAHMI NUMBER NINE
-<Multi_key> <b> <b> <1> <0> <Return> : "𑁛" U1105B   # BRAHMI NUMBER TEN
-<Multi_key> <b> <b> <2> <0> <Return> : "𑁜" U1105C   # BRAHMI NUMBER TWENTY
-<Multi_key> <b> <b> <3> <0> <Return> : "𑁝" U1105D   # BRAHMI NUMBER THIRTY
-<Multi_key> <b> <b> <4> <0> <Return> : "𑁞" U1105E   # BRAHMI NUMBER FORTY
-<Multi_key> <b> <b> <5> <0> <Return> : "𑁟" U1105F   # BRAHMI NUMBER FIFTY
-<Multi_key> <b> <b> <6> <0> <Return> : "𑁠" U11060   # BRAHMI NUMBER SIXTY
-<Multi_key> <b> <b> <7> <0> <Return> : "𑁡" U11061   # BRAHMI NUMBER SEVENTY
-<Multi_key> <b> <b> <8> <0> <Return> : "𑁢" U11062   # BRAHMI NUMBER EIGHTY
-<Multi_key> <b> <b> <9> <0> <Return> : "𑁣" U11063   # BRAHMI NUMBER NINETY
-<Multi_key> <b> <b> <1> <0> <0> <Return> : "𑁤" U11064   # BRAHMI NUMBER ONE HUNDRED
-<Multi_key> <b> <b> <1> <0> <0> <0> : "𑁥" U11065   # BRAHMI NUMBER ONE THOUSAND
+<Multi_key> <b> <c> <1> <Return> : "𑁒" U11052   # BRAHMI NUMBER ONE
+<Multi_key> <b> <c> <2> <Return> : "𑁓" U11053   # BRAHMI NUMBER TWO
+<Multi_key> <b> <c> <3> <Return> : "𑁔" U11054   # BRAHMI NUMBER THREE
+<Multi_key> <b> <c> <4> <Return> : "𑁕" U11055   # BRAHMI NUMBER FOUR
+<Multi_key> <b> <c> <5> <Return> : "𑁖" U11056   # BRAHMI NUMBER FIVE
+<Multi_key> <b> <c> <6> <Return> : "𑁗" U11057   # BRAHMI NUMBER SIX
+<Multi_key> <b> <c> <7> <Return> : "𑁘" U11058   # BRAHMI NUMBER SEVEN
+<Multi_key> <b> <c> <8> <Return> : "𑁙" U11059   # BRAHMI NUMBER EIGHT
+<Multi_key> <b> <c> <9> <Return> : "𑁚" U1105A   # BRAHMI NUMBER NINE
+<Multi_key> <b> <c> <1> <0> <Return> : "𑁛" U1105B   # BRAHMI NUMBER TEN
+<Multi_key> <b> <c> <2> <0> <Return> : "𑁜" U1105C   # BRAHMI NUMBER TWENTY
+<Multi_key> <b> <c> <3> <0> <Return> : "𑁝" U1105D   # BRAHMI NUMBER THIRTY
+<Multi_key> <b> <c> <4> <0> <Return> : "𑁞" U1105E   # BRAHMI NUMBER FORTY
+<Multi_key> <b> <c> <5> <0> <Return> : "𑁟" U1105F   # BRAHMI NUMBER FIFTY
+<Multi_key> <b> <c> <6> <0> <Return> : "𑁠" U11060   # BRAHMI NUMBER SIXTY
+<Multi_key> <b> <c> <7> <0> <Return> : "𑁡" U11061   # BRAHMI NUMBER SEVENTY
+<Multi_key> <b> <c> <8> <0> <Return> : "𑁢" U11062   # BRAHMI NUMBER EIGHTY
+<Multi_key> <b> <c> <9> <0> <Return> : "𑁣" U11063   # BRAHMI NUMBER NINETY
+<Multi_key> <b> <c> <1> <0> <0> <Return> : "𑁤" U11064   # BRAHMI NUMBER ONE HUNDRED
+<Multi_key> <b> <c> <1> <0> <0> <0> : "𑁥" U11065   # BRAHMI NUMBER ONE THOUSAND
 
 # (d = Devanagari)
 
@@ -2935,6 +2943,7 @@ include "%L"
 
 <Multi_key> <b> <d> <S>                            : "ऽ" U093D   # DEVANAGARI SIGN AVAGRAHA
 <Multi_key> <b> <d> <o> <m>                        : "ॐ" U0950   # DEVANAGARI OM
+<Multi_key> <b> <d> <R> <u>                        : "௹" U0BF9   # TAMIL RUPEE SIGN
 
 # Numerals
 
@@ -2954,6 +2963,703 @@ include "%L"
 <Multi_key> <b> <d> <bar>         : "।" U0964   # DEVANAGARI DANDA
 <Multi_key> <b> <d> <2> <bar>     : "॥" U0965   # DEVANAGARI DOUBLE DANDA
 <Multi_key> <b> <d> <o> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
+
+# (b = Bengali)
+
+# Consonants
+
+<Multi_key> <b> <b> <k> <space> : "ক" U0995   # BENGALI LETTER KA
+<Multi_key> <b> <b> <k> <h> : "খ" U0996   # BENGALI LETTER KHA
+<Multi_key> <b> <b> <g> <space> : "গ" U0997   # BENGALI LETTER GA
+<Multi_key> <b> <b> <g> <h> : "ঘ" U0998   # BENGALI LETTER GHA
+<Multi_key> <b> <b> <semicolon> <n> : "ঙ" U0999   # BENGALI LETTER NGA
+<Multi_key> <b> <b> <c> <space> : "চ" U099A   # BENGALI LETTER CA
+<Multi_key> <b> <b> <c> <h> : "ছ" U099B   # BENGALI LETTER CHA
+<Multi_key> <b> <b> <j> <space> : "জ" U099C   # BENGALI LETTER JA
+<Multi_key> <b> <b> <j> <h> : "ঝ" U099D   # BENGALI LETTER JHA
+<Multi_key> <b> <b> <asciitilde> <n> : "ঞ" U099E   # BENGALI LETTER NYA
+<Multi_key> <b> <b> <period> <t> <space> : "ট" U099F   # BENGALI LETTER TTA
+<Multi_key> <b> <b> <period> <t> <h> : "ঠ" U09A0   # BENGALI LETTER TTHA
+<Multi_key> <b> <b> <period> <d> <space> : "ড" U09A1   # BENGALI LETTER DDA
+<Multi_key> <b> <b> <period> <d> <h> : "ঢ" U09A2   # BENGALI LETTER DDHA
+<Multi_key> <b> <b> <period> <n> : "ণ" U09A3   # BENGALI LETTER NNA
+<Multi_key> <b> <b> <t> <space> : "ত" U09A4   # BENGALI LETTER TA
+<Multi_key> <b> <b> <t> <h> : "থ" U09A5   # BENGALI LETTER THA
+<Multi_key> <b> <b> <d> <space> : "দ" U09A6   # BENGALI LETTER DA
+<Multi_key> <b> <b> <d> <h> : "ধ" U09A7   # BENGALI LETTER DHA
+<Multi_key> <b> <b> <n> : "ন" U09A8   # BENGALI LETTER NA
+<Multi_key> <b> <b> <p> <space> : "প" U09AA   # BENGALI LETTER PA
+<Multi_key> <b> <b> <p> <h> : "ফ" U09AB   # BENGALI LETTER PHA
+<Multi_key> <b> <b> <b> <space> : "ব" U09AC   # BENGALI LETTER BA
+<Multi_key> <b> <b> <b> <h> : "ভ" U09AD   # BENGALI LETTER BHA
+<Multi_key> <b> <b> <m> : "ম" U09AE   # BENGALI LETTER MA
+<Multi_key> <b> <b> <y> : "য" U09AF   # BENGALI LETTER YA
+<Multi_key> <b> <b> <r> : "র" U09B0   # BENGALI LETTER RA
+<Multi_key> <b> <b> <l> : "ল" U09B2   # BENGALI LETTER LA
+<Multi_key> <b> <b> <semicolon> <s> : "শ" U09B6   # BENGALI LETTER SHA
+<Multi_key> <b> <b> <period> <s> : "ষ" U09B7   # BENGALI LETTER SSA
+<Multi_key> <b> <b> <s> : "স" U09B8   # BENGALI LETTER SA
+<Multi_key> <b> <b> <h> : "হ" U09B9   # BENGALI LETTER HA
+<Multi_key> <b> <b> <underscore> <r> : "ড়" U09DC   # BENGALI LETTER RRA
+<Multi_key> <b> <b> <period> <r> <h> : "ঢ়" U09DD   # BENGALI LETTER RHA
+<Multi_key> <b> <b> <period> <y> : "য়" U09DF   # BENGALI LETTER YYA
+
+# Independent vowels
+
+<Multi_key> <b> <b> <a> <space> : "অ" U0985   # BENGALI LETTER A
+<Multi_key> <b> <b> <a> <a> <space> : "আ" U0986   # BENGALI LETTER AA
+<Multi_key> <b> <b> <i> <space> : "ই" U0987   # BENGALI LETTER I
+<Multi_key> <b> <b> <i> <i> <space> : "ঈ" U0988   # BENGALI LETTER II
+<Multi_key> <b> <b> <u> <space> : "উ" U0989   # BENGALI LETTER U
+<Multi_key> <b> <b> <u> <u> <space> : "ঊ" U098A   # BENGALI LETTER UU
+<Multi_key> <b> <b> <comma> <r> <space> : "ঋ" U098B   # BENGALI LETTER VOCALIC R
+<Multi_key> <b> <b> <comma> <l> <space> : "ঌ" U098C   # BENGALI LETTER VOCALIC L
+<Multi_key> <b> <b> <e> <e> <space> : "এ" U098F   # BENGALI LETTER E
+<Multi_key> <b> <b> <a> <i> <space> : "ঐ" U0990   # BENGALI LETTER AI
+<Multi_key> <b> <b> <o> <o> <space> : "ও" U0993   # BENGALI LETTER O
+<Multi_key> <b> <b> <a> <u> <space> : "ঔ" U0994   # BENGALI LETTER AU
+<Multi_key> <b> <b> <comma> <r> <r> <space> : "ৠ" U09E0   # BENGALI LETTER VOCALIC RR
+<Multi_key> <b> <b> <comma> <l> <l> <space> : "ৡ" U09E1   # BENGALI LETTER VOCALIC LL
+
+# Dependent vowels
+
+<Multi_key> <b> <b> <a> <a> <Return> : "া" U09BE   # BENGALI VOWEL SIGN AA
+<Multi_key> <b> <b> <i> <Return> : "ি" U09BF   # BENGALI VOWEL SIGN I
+<Multi_key> <b> <b> <i> <i> <Return> : "ী" U09C0   # BENGALI VOWEL SIGN II
+<Multi_key> <b> <b> <u> <Return> : "ু" U09C1   # BENGALI VOWEL SIGN U
+<Multi_key> <b> <b> <u> <u> <Return> : "ূ" U09C2   # BENGALI VOWEL SIGN UU
+<Multi_key> <b> <b> <comma> <r> <Return> : "ৃ" U09C3   # BENGALI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <b> <comma> <r> <r> <Return> : "ৄ" U09C4   # BENGALI VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <b> <e> <e> <Return> : "ে" U09C7   # BENGALI VOWEL SIGN E
+<Multi_key> <b> <b> <a> <i> <Return> : "ৈ" U09C8   # BENGALI VOWEL SIGN AI
+<Multi_key> <b> <b> <o> <o> <Return> : "ো" U09CB   # BENGALI VOWEL SIGN O
+<Multi_key> <b> <b> <a> <u> <Return> : "ৌ" U09CC   # BENGALI VOWEL SIGN AU
+<Multi_key> <b> <b> <comma> <l> <Return> : "ৢ" U09E2   # BENGALI VOWEL SIGN VOCALIC L
+<Multi_key> <b> <b> <comma> <l> <l> <Return> : "ৣ" U09E3   # BENGALI VOWEL SIGN VOCALIC LL
+
+# Other signs
+
+<Multi_key> <b> <b> <period> <parenright> <Return> : "ঁ" U0981   # BENGALI SIGN CANDRABINDU
+<Multi_key> <b> <b> <semicolon> <Return> : "ং" U0982   # BENGALI SIGN ANUSVARA
+<Multi_key> <b> <b> <colon> <Return> : "ঃ" U0983   # BENGALI SIGN VISARGA
+<Multi_key> <b> <b> <underscore> <period> <Return> : "়" U09BC   # BENGALI SIGN NUKTA
+<Multi_key> <b> <b> <comma> <Return> : "্" U09CD   # BENGALI SIGN VIRAMA
+
+<Multi_key> <b> <b> <2> : "ঽ" U09BD   # BENGALI SIGN AVAGRAHA
+<Multi_key> <b> <b> <R> <u> : "৳" U09F3   # BENGALI RUPEE SIGN
+
+# Numerals
+
+<Multi_key> <b> <b> <numbersign> <0> : "০" U09E6   # BENGALI DIGIT ZERO
+<Multi_key> <b> <b> <numbersign> <1> : "১" U09E7   # BENGALI DIGIT ONE
+<Multi_key> <b> <b> <numbersign> <2> : "২" U09E8   # BENGALI DIGIT TWO
+<Multi_key> <b> <b> <numbersign> <3> : "৩" U09E9   # BENGALI DIGIT THREE
+<Multi_key> <b> <b> <numbersign> <4> : "৪" U09EA   # BENGALI DIGIT FOUR
+<Multi_key> <b> <b> <numbersign> <5> : "৫" U09EB   # BENGALI DIGIT FIVE
+<Multi_key> <b> <b> <numbersign> <6> : "৬" U09EC   # BENGALI DIGIT SIX
+<Multi_key> <b> <b> <numbersign> <7> : "৭" U09ED   # BENGALI DIGIT SEVEN
+<Multi_key> <b> <b> <numbersign> <8> : "৮" U09EE   # BENGALI DIGIT EIGHT
+<Multi_key> <b> <b> <numbersign> <9> : "৯" U09EF   # BENGALI DIGIT NINE
+
+# (g = Gujarati)
+
+# Consonants
+
+<Multi_key> <b> <g> <k> <space> : "ક" U0A95   # GUJARATI LETTER KA (conflicts with ğ, use ug)
+<Multi_key> <b> <g> <k> <h> : "ખ" U0A96   # GUJARATI LETTER KHA (conflicts)
+<Multi_key> <b> <g> <g> <space> : "ગ" U0A97   # GUJARATI LETTER GA (conflicts)
+<Multi_key> <b> <g> <g> <h> : "ઘ" U0A98   # GUJARATI LETTER GHA (conflicts)
+<Multi_key> <b> <g> <semicolon> <n> : "ઙ" U0A99   # GUJARATI LETTER NGA (conflicts)
+<Multi_key> <b> <g> <c> <space> : "ચ" U0A9A   # GUJARATI LETTER CA (conflicts)
+<Multi_key> <b> <g> <c> <h> : "છ" U0A9B   # GUJARATI LETTER CHA (conflicts)
+<Multi_key> <b> <g> <j> <space> : "જ" U0A9C   # GUJARATI LETTER JA (conflicts)
+<Multi_key> <b> <g> <j> <h> : "ઝ" U0A9D   # GUJARATI LETTER JHA (conflicts)
+<Multi_key> <b> <g> <asciitilde> <n> : "ઞ" U0A9E   # GUJARATI LETTER NYA (conflicts)
+<Multi_key> <b> <g> <period> <t> <space> : "ટ" U0A9F   # GUJARATI LETTER TTA (conflicts)
+<Multi_key> <b> <g> <period> <t> <h> : "ઠ" U0AA0   # GUJARATI LETTER TTHA (conflicts)
+<Multi_key> <b> <g> <period> <d> <space> : "ડ" U0AA1   # GUJARATI LETTER DDA (conflicts)
+<Multi_key> <b> <g> <period> <d> <h> : "ઢ" U0AA2   # GUJARATI LETTER DDHA (conflicts)
+<Multi_key> <b> <g> <period> <n> : "ણ" U0AA3   # GUJARATI LETTER NNA (conflicts)
+<Multi_key> <b> <g> <t> <space> : "ત" U0AA4   # GUJARATI LETTER TA (conflicts)
+<Multi_key> <b> <g> <t> <h> : "થ" U0AA5   # GUJARATI LETTER THA (conflicts)
+<Multi_key> <b> <g> <d> <space> : "દ" U0AA6   # GUJARATI LETTER DA (conflicts)
+<Multi_key> <b> <g> <d> <h> : "ધ" U0AA7   # GUJARATI LETTER DHA (conflicts)
+<Multi_key> <b> <g> <n> : "ન" U0AA8   # GUJARATI LETTER NA (conflicts)
+<Multi_key> <b> <g> <p> <space> : "પ" U0AAA   # GUJARATI LETTER PA (conflicts)
+<Multi_key> <b> <g> <p> <h> : "ફ" U0AAB   # GUJARATI LETTER PHA (conflicts)
+<Multi_key> <b> <g> <b> <space> : "બ" U0AAC   # GUJARATI LETTER BA (conflicts)
+<Multi_key> <b> <g> <b> <h> : "ભ" U0AAD   # GUJARATI LETTER BHA (conflicts)
+<Multi_key> <b> <g> <m> : "મ" U0AAE   # GUJARATI LETTER MA (conflicts)
+<Multi_key> <b> <g> <y> : "ય" U0AAF   # GUJARATI LETTER YA (conflicts)
+<Multi_key> <b> <g> <r> : "ર" U0AB0   # GUJARATI LETTER RA (conflicts)
+<Multi_key> <b> <g> <l> : "લ" U0AB2   # GUJARATI LETTER LA (conflicts)
+<Multi_key> <b> <g> <period> <l> : "ળ" U0AB3   # GUJARATI LETTER LLA (conflicts)
+<Multi_key> <b> <g> <v> : "વ" U0AB5   # GUJARATI LETTER VA (conflicts)
+<Multi_key> <b> <g> <semicolon> <s> : "શ" U0AB6   # GUJARATI LETTER SHA (conflicts)
+<Multi_key> <b> <g> <period> <s> : "ષ" U0AB7   # GUJARATI LETTER SSA (conflicts)
+<Multi_key> <b> <g> <s> : "સ" U0AB8   # GUJARATI LETTER SA (conflicts)
+<Multi_key> <b> <g> <h> : "હ" U0AB9   # GUJARATI LETTER HA (conflicts)
+<Multi_key> <b> <g> <z> <h> : "ૹ" U0AF9   # GUJARATI LETTER ZHA (conflicts)
+
+# Independent vowels
+
+<Multi_key> <b> <g> <a> <space> : "અ" U0A85   # GUJARATI LETTER A (conflicts)
+<Multi_key> <b> <g> <a> <a> <space> : "આ" U0A86   # GUJARATI LETTER AA (conflicts)
+<Multi_key> <b> <g> <i> <space> : "ઇ" U0A87   # GUJARATI LETTER I (conflicts)
+<Multi_key> <b> <g> <i> <i> <space> : "ઈ" U0A88   # GUJARATI LETTER II (conflicts)
+<Multi_key> <b> <g> <u> <space> : "ઉ" U0A89   # GUJARATI LETTER U (conflicts)
+<Multi_key> <b> <g> <u> <u> <space> : "ઊ" U0A8A   # GUJARATI LETTER UU (conflicts)
+<Multi_key> <b> <g> <comma> <r> <space> : "ઋ" U0A8B   # GUJARATI LETTER VOCALIC R (conflicts)
+<Multi_key> <b> <g> <comma> <l> <space> : "ઌ" U0A8C   # GUJARATI LETTER VOCALIC L (conflicts)
+<Multi_key> <b> <g> <asciicircum> <e> <space>: "ઍ" U0A8D   # GUJARATI VOWEL CANDRA E (conflicts)
+<Multi_key> <b> <g> <e> <e> <space> : "એ" U0A8F   # GUJARATI LETTER E (conflicts)
+<Multi_key> <b> <g> <a> <i> <space> : "ઐ" U0A90   # GUJARATI LETTER AI (conflicts)
+<Multi_key> <b> <g> <asciicircum> <o> <space>: "ઑ" U0A91   # GUJARATI VOWEL CANDRA O (conflicts)
+<Multi_key> <b> <g> <o> <o> <space> : "ઓ" U0A93   # GUJARATI LETTER O (conflicts)
+<Multi_key> <b> <g> <a> <u> <space> : "ઔ" U0A94   # GUJARATI LETTER AU (conflicts)
+<Multi_key> <b> <g> <comma> <r> <r> <space> : "ૠ" U0AE0   # GUJARATI LETTER VOCALIC RR (conflicts)
+<Multi_key> <b> <g> <comma> <l> <l> <space> : "ૡ" U0AE1   # GUJARATI LETTER VOCALIC LL (conflicts)
+
+# Dependent vowels
+
+<Multi_key> <b> <g> <a> <a> <Return> : "ા" U0ABE   # GUJARATI VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <g> <i> <Return> : "િ" U0ABF   # GUJARATI VOWEL SIGN I (conflicts)
+<Multi_key> <b> <g> <i> <i> <Return> : "ી" U0AC0   # GUJARATI VOWEL SIGN II (conflicts)
+<Multi_key> <b> <g> <u> <Return> : "ુ" U0AC1   # GUJARATI VOWEL SIGN U (conflicts)
+<Multi_key> <b> <g> <u> <u> <Return> : "ૂ" U0AC2   # GUJARATI VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <g> <comma> <r> <Return> : "ૃ" U0AC3   # GUJARATI VOWEL SIGN VOCALIC R (conflicts)
+<Multi_key> <b> <g> <comma> <r> <r> <Return> : "ૄ" U0AC4   # GUJARATI VOWEL SIGN VOCALIC RR (conflicts)
+<Multi_key> <b> <g> <asciicircum> <e> <Return> : "ૅ" U0AC5   # GUJARATI VOWEL SIGN CANDRA E (conflicts)
+<Multi_key> <b> <g> <e> <e> <Return> : "ે" U0AC7   # GUJARATI VOWEL SIGN E (conflicts)
+<Multi_key> <b> <g> <a> <i> <Return> : "ૈ" U0AC8   # GUJARATI VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <g> <asciicircum> <o> <Return> : "ૉ" U0AC9   # GUJARATI VOWEL SIGN CANDRA O (conflicts)
+<Multi_key> <b> <g> <o> <o> <Return> : "ો" U0ACB   # GUJARATI VOWEL SIGN O (conflicts)
+<Multi_key> <b> <g> <a> <u> <Return> : "ૌ" U0ACC   # GUJARATI VOWEL SIGN AU (conflicts)
+<Multi_key> <b> <g> <comma> <l> <Return> : "ૢ" U0AE2   # GUJARATI VOWEL SIGN VOCALIC L (conflicts)
+<Multi_key> <b> <g> <comma> <l> <l> <Return> : "ૣ" U0AE3   # GUJARATI VOWEL SIGN VOCALIC LL (conflicts)
+
+# Other signs
+
+<Multi_key> <b> <g> <period> <parenright> <Return> : "ઁ" U0A81   # GUJARATI SIGN CANDRABINDU (conflicts)
+<Multi_key> <b> <g> <period> <Return> : "ં" U0A82   # GUJARATI SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <g> <colon> <Return> : "ઃ" U0A83   # GUJARATI SIGN VISARGA (conflicts)
+<Multi_key> <b> <g> <underscore> <period> <Return> : "઼" U0ABC   # GUJARATI SIGN NUKTA (conflicts)
+<Multi_key> <b> <g> <comma> <Return> : "્" U0ACD   # GUJARATI SIGN VIRAMA (conflicts)
+
+<Multi_key> <b> <g> <S> : "ઽ" U0ABD   # GUJARATI SIGN AVAGRAHA (conflicts)
+<Multi_key> <b> <g> <o> <m> : "ૐ" U0AD0   # GUJARATI OM (conflicts)
+<Multi_key> <b> <g> <R> <u> : "૱" U0AF1   # GUJARATI RUPEE SIGN (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <g> <numbersign> <0> : "૦" U0AE6   # GUJARATI DIGIT ZERO (conflicts)
+<Multi_key> <b> <g> <numbersign> <1> : "૧" U0AE7   # GUJARATI DIGIT ONE (conflicts)
+<Multi_key> <b> <g> <numbersign> <2> : "૨" U0AE8   # GUJARATI DIGIT TWO (conflicts)
+<Multi_key> <b> <g> <numbersign> <3> : "૩" U0AE9   # GUJARATI DIGIT THREE (conflicts)
+<Multi_key> <b> <g> <numbersign> <4> : "૪" U0AEA   # GUJARATI DIGIT FOUR (conflicts)
+<Multi_key> <b> <g> <numbersign> <5> : "૫" U0AEB   # GUJARATI DIGIT FIVE (conflicts)
+<Multi_key> <b> <g> <numbersign> <6> : "૬" U0AEC   # GUJARATI DIGIT SIX (conflicts)
+<Multi_key> <b> <g> <numbersign> <7> : "૭" U0AED   # GUJARATI DIGIT SEVEN (conflicts)
+<Multi_key> <b> <g> <numbersign> <8> : "૮" U0AEE   # GUJARATI DIGIT EIGHT (conflicts)
+<Multi_key> <b> <g> <numbersign> <9> : "૯" U0AEF   # GUJARATI DIGIT NINE (conflicts)
+
+# Punctuation
+
+<Multi_key> <b> <g> <o> <period> : "૰" U0AF0   # GUJARATI ABBREVIATION SIGN (conflicts)
+
+# (G = Gurmukhi)
+
+# Consonants
+
+<Multi_key> <b> <G> <k> <space> : "ਕ" U0A15   # GURMUKHI LETTER KA (conflicts with Ğ, use uG)
+<Multi_key> <b> <G> <k> <h> : "ਖ" U0A16   # GURMUKHI LETTER KHA (conflicts)
+<Multi_key> <b> <G> <g> <space> : "ਗ" U0A17   # GURMUKHI LETTER GA (conflicts)
+<Multi_key> <b> <G> <g> <h> : "ਘ" U0A18   # GURMUKHI LETTER GHA (conflicts)
+<Multi_key> <b> <G> <semicolon> <n> : "ਙ" U0A19   # GURMUKHI LETTER NGA (conflicts)
+<Multi_key> <b> <G> <c> <space> : "ਚ" U0A1A   # GURMUKHI LETTER CA (conflicts)
+<Multi_key> <b> <G> <c> <h> : "ਛ" U0A1B   # GURMUKHI LETTER CHA (conflicts)
+<Multi_key> <b> <G> <j> <space> : "ਜ" U0A1C   # GURMUKHI LETTER JA (conflicts)
+<Multi_key> <b> <G> <j> <h> : "ਝ" U0A1D   # GURMUKHI LETTER JHA (conflicts)
+<Multi_key> <b> <G> <asciitilde> <n> : "ਞ" U0A1E   # GURMUKHI LETTER NYA (conflicts)
+<Multi_key> <b> <G> <period> <t> <space> : "ਟ" U0A1F   # GURMUKHI LETTER TTA (conflicts)
+<Multi_key> <b> <G> <period> <t> <h> : "ਠ" U0A20   # GURMUKHI LETTER TTHA (conflicts)
+<Multi_key> <b> <G> <period> <d> <space> : "ਡ" U0A21   # GURMUKHI LETTER DDA (conflicts)
+<Multi_key> <b> <G> <period> <d> <h> : "ਢ" U0A22   # GURMUKHI LETTER DDHA (conflicts)
+<Multi_key> <b> <G> <period> <n> : "ਣ" U0A23   # GURMUKHI LETTER NNA (conflicts)
+<Multi_key> <b> <G> <t> <space> : "ਤ" U0A24   # GURMUKHI LETTER TA (conflicts)
+<Multi_key> <b> <G> <t> <h> : "ਥ" U0A25   # GURMUKHI LETTER THA (conflicts)
+<Multi_key> <b> <G> <d> <space> : "ਦ" U0A26   # GURMUKHI LETTER DA (conflicts)
+<Multi_key> <b> <G> <d> <h> : "ਧ" U0A27   # GURMUKHI LETTER DHA (conflicts)
+<Multi_key> <b> <G> <n> : "ਨ" U0A28   # GURMUKHI LETTER NA (conflicts)
+<Multi_key> <b> <G> <p> <space> : "ਪ" U0A2A   # GURMUKHI LETTER PA (conflicts)
+<Multi_key> <b> <G> <p> <h> : "ਫ" U0A2B   # GURMUKHI LETTER PHA (conflicts)
+<Multi_key> <b> <G> <b> <space> : "ਬ" U0A2C   # GURMUKHI LETTER BA (conflicts)
+<Multi_key> <b> <G> <b> <h> : "ਭ" U0A2D   # GURMUKHI LETTER BHA (conflicts)
+<Multi_key> <b> <G> <m> : "ਮ" U0A2E   # GURMUKHI LETTER MA (conflicts)
+<Multi_key> <b> <G> <y> : "ਯ" U0A2F   # GURMUKHI LETTER YA (conflicts)
+<Multi_key> <b> <G> <r> : "ਰ" U0A30   # GURMUKHI LETTER RA (conflicts)
+<Multi_key> <b> <G> <l> : "ਲ" U0A32   # GURMUKHI LETTER LA (conflicts)
+<Multi_key> <b> <G> <period> <l> : "ਲ਼" U0A33   # GURMUKHI LETTER LLA (conflicts)
+<Multi_key> <b> <G> <v> : "ਵ" U0A35   # GURMUKHI LETTER VA (conflicts)
+<Multi_key> <b> <G> <semicolon> <s> : "ਸ਼" U0A36   # GURMUKHI LETTER SHA (conflicts)
+<Multi_key> <b> <G> <s> : "ਸ" U0A38   # GURMUKHI LETTER SA (conflicts)
+<Multi_key> <b> <G> <h> : "ਹ" U0A39   # GURMUKHI LETTER HA (conflicts)
+<Multi_key> <b> <G> <underscore> <k> <h> : "ਖ਼" U0A59   # GURMUKHI LETTER KHHA (conflicts)
+<Multi_key> <b> <G> <period> <g> : "ਗ਼" U0A5A   # GURMUKHI LETTER GHHA (conflicts)
+<Multi_key> <b> <G> <z> : "ਜ਼" U0A5B   # GURMUKHI LETTER ZA (conflicts)
+<Multi_key> <b> <G> <underscore> <r> : "ੜ" U0A5C   # GURMUKHI LETTER RRA (conflicts)
+<Multi_key> <b> <G> <f> : "ਫ਼" U0A5E   # GURMUKHI LETTER FA (conflicts)
+
+# Independent vowels
+
+<Multi_key> <b> <G> <a> <space> : "ਅ" U0A05   # GURMUKHI LETTER A (conflicts)
+<Multi_key> <b> <G> <a> <a> <space> : "ਆ" U0A06   # GURMUKHI LETTER AA (conflicts)
+<Multi_key> <b> <G> <i> <space> : "ਇ" U0A07   # GURMUKHI LETTER I (conflicts)
+<Multi_key> <b> <G> <i> <i> <space> : "ਈ" U0A08   # GURMUKHI LETTER II (conflicts)
+<Multi_key> <b> <G> <u> <space> : "ਉ" U0A09   # GURMUKHI LETTER U (conflicts)
+<Multi_key> <b> <G> <u> <u> <space> : "ਊ" U0A0A   # GURMUKHI LETTER UU (conflicts)
+<Multi_key> <b> <G> <e> <e> <space> : "ਏ" U0A0F   # GURMUKHI LETTER EE (conflicts)
+<Multi_key> <b> <G> <a> <i> <space> : "ਐ" U0A10   # GURMUKHI LETTER AI (conflicts)
+<Multi_key> <b> <G> <o> <o> <space> : "ਓ" U0A13   # GURMUKHI LETTER OO (conflicts)
+<Multi_key> <b> <G> <a> <u> <space> : "ਔ" U0A14   # GURMUKHI LETTER AU (conflicts)
+
+# Dependent vowels
+
+<Multi_key> <b> <G> <a> <a> <Return> : "ਾ" U0A3E   # GURMUKHI VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <G> <i> <Return> : "ਿ" U0A3F   # GURMUKHI VOWEL SIGN I (conflicts)
+<Multi_key> <b> <G> <i> <i> <Return> : "ੀ" U0A40   # GURMUKHI VOWEL SIGN II (conflicts)
+<Multi_key> <b> <G> <u> <Return> : "ੁ" U0A41   # GURMUKHI VOWEL SIGN U (conflicts)
+<Multi_key> <b> <G> <u> <u> <Return> : "ੂ" U0A42   # GURMUKHI VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <G> <e> <e> <Return> : "ੇ" U0A47   # GURMUKHI VOWEL SIGN EE (conflicts)
+<Multi_key> <b> <G> <a> <i> <Return> : "ੈ" U0A48   # GURMUKHI VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <G> <o> <o> <Return> : "ੋ" U0A4B   # GURMUKHI VOWEL SIGN OO (conflicts)
+<Multi_key> <b> <G> <a> <u> <Return> : "ੌ" U0A4C   # GURMUKHI VOWEL SIGN AU (conflicts)
+
+# Other signs
+
+<Multi_key> <b> <G> <period> <parenright> <Return> : "ਁ" U0A01   # GURMUKHI SIGN ADAK BINDI (conflicts)
+<Multi_key> <b> <G> <period> <Return> : "ਂ" U0A02   # GURMUKHI SIGN BINDI (conflicts)
+<Multi_key> <b> <G> <colon> <Return> : "ਃ" U0A03   # GURMUKHI SIGN VISARGA (conflicts)
+<Multi_key> <b> <G> <underscore> <period> <Return> : "਼" U0A3C   # GURMUKHI SIGN NUKTA (conflicts)
+<Multi_key> <b> <G> <comma> <Return> : "੍" U0A4D   # GURMUKHI SIGN VIRAMA (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <G> <numbersign> <0> : "੦" U0A66   # GURMUKHI DIGIT ZERO (conflicts)
+<Multi_key> <b> <G> <numbersign> <1> : "੧" U0A67   # GURMUKHI DIGIT ONE (conflicts)
+<Multi_key> <b> <G> <numbersign> <2> : "੨" U0A68   # GURMUKHI DIGIT TWO (conflicts)
+<Multi_key> <b> <G> <numbersign> <3> : "੩" U0A69   # GURMUKHI DIGIT THREE (conflicts)
+<Multi_key> <b> <G> <numbersign> <4> : "੪" U0A6A   # GURMUKHI DIGIT FOUR (conflicts)
+<Multi_key> <b> <G> <numbersign> <5> : "੫" U0A6B   # GURMUKHI DIGIT FIVE (conflicts)
+<Multi_key> <b> <G> <numbersign> <6> : "੬" U0A6C   # GURMUKHI DIGIT SIX (conflicts)
+<Multi_key> <b> <G> <numbersign> <7> : "੭" U0A6D   # GURMUKHI DIGIT SEVEN (conflicts)
+<Multi_key> <b> <G> <numbersign> <8> : "੮" U0A6E   # GURMUKHI DIGIT EIGHT (conflicts)
+<Multi_key> <b> <G> <numbersign> <9> : "੯" U0A6F   # GURMUKHI DIGIT NINE (conflicts)
+
+# Punctuation
+
+<Multi_key> <b> <G> <o> <period> : "੶" U0A76   # GURMUKHI ABBREVIATION SIGN (conflicts)
+
+# (k = Kannada)
+
+# Consonants
+
+<Multi_key> <b> <k> <k> <space> : "ಕ" U0C95   # KANNADA LETTER KA
+<Multi_key> <b> <k> <k> <h> : "ಖ" U0C96   # KANNADA LETTER KHA
+<Multi_key> <b> <k> <g> <space> : "ಗ" U0C97   # KANNADA LETTER GA
+<Multi_key> <b> <k> <g> <h> : "ಘ" U0C98   # KANNADA LETTER GHA
+<Multi_key> <b> <k> <semicolon> <n> : "ಙ" U0C99   # KANNADA LETTER NGA
+<Multi_key> <b> <k> <c> <space> : "ಚ" U0C9A   # KANNADA LETTER CA
+<Multi_key> <b> <k> <c> <h> : "ಛ" U0C9B   # KANNADA LETTER CHA
+<Multi_key> <b> <k> <j> <space> : "ಜ" U0C9C   # KANNADA LETTER JA
+<Multi_key> <b> <k> <j> <h> : "ಝ" U0C9D   # KANNADA LETTER JHA
+<Multi_key> <b> <k> <asciitilde> <n> : "ಞ" U0C9E   # KANNADA LETTER NYA
+<Multi_key> <b> <k> <period> <t> <space> : "ಟ" U0C9F   # KANNADA LETTER TTA
+<Multi_key> <b> <k> <period> <t> <h> : "ಠ" U0CA0   # KANNADA LETTER TTHA
+<Multi_key> <b> <k> <period> <d> <space> : "ಡ" U0CA1   # KANNADA LETTER DDA
+<Multi_key> <b> <k> <period> <d> <h> : "ಢ" U0CA2   # KANNADA LETTER DDHA
+<Multi_key> <b> <k> <period> <n> : "ಣ" U0CA3   # KANNADA LETTER NNA
+<Multi_key> <b> <k> <t> <space> : "ತ" U0CA4   # KANNADA LETTER TA
+<Multi_key> <b> <k> <t> <h> : "ಥ" U0CA5   # KANNADA LETTER THA
+<Multi_key> <b> <k> <d> <space> : "ದ" U0CA6   # KANNADA LETTER DA
+<Multi_key> <b> <k> <d> <h> : "ಧ" U0CA7   # KANNADA LETTER DHA
+<Multi_key> <b> <k> <n> : "ನ" U0CA8   # KANNADA LETTER NA
+<Multi_key> <b> <k> <p> <space> : "ಪ" U0CAA   # KANNADA LETTER PA
+<Multi_key> <b> <k> <p> <h> : "ಫ" U0CAB   # KANNADA LETTER PHA
+<Multi_key> <b> <k> <b> <space> : "ಬ" U0CAC   # KANNADA LETTER BA
+<Multi_key> <b> <k> <b> <h> : "ಭ" U0CAD   # KANNADA LETTER BHA
+<Multi_key> <b> <k> <m> : "ಮ" U0CAE   # KANNADA LETTER MA
+<Multi_key> <b> <k> <y> : "ಯ" U0CAF   # KANNADA LETTER YA
+<Multi_key> <b> <k> <r> : "ರ" U0CB0   # KANNADA LETTER RA
+<Multi_key> <b> <k> <underscore> <r> : "ಱ" U0CB1   # KANNADA LETTER RRA
+<Multi_key> <b> <k> <l> : "ಲ" U0CB2   # KANNADA LETTER LA
+<Multi_key> <b> <k> <period> <l> : "ಳ" U0CB3   # KANNADA LETTER LLA
+<Multi_key> <b> <k> <v> : "ವ" U0CB5   # KANNADA LETTER VA
+<Multi_key> <b> <k> <semicolon> <s> : "ಶ" U0CB6   # KANNADA LETTER SHA
+<Multi_key> <b> <k> <period> <s> : "ಷ" U0CB7   # KANNADA LETTER SSA
+<Multi_key> <b> <k> <s> : "ಸ" U0CB8   # KANNADA LETTER SA
+<Multi_key> <b> <k> <h> : "ಹ" U0CB9   # KANNADA LETTER HA
+<Multi_key> <b> <k> <f> : "ೞ" U0CDE   # KANNADA LETTER FA
+
+# Independent vowels
+
+<Multi_key> <b> <k> <a> <space> : "ಅ" U0C85   # KANNADA LETTER A
+<Multi_key> <b> <k> <a> <a> <space> : "ಆ" U0C86   # KANNADA LETTER AA
+<Multi_key> <b> <k> <i> <space> : "ಇ" U0C87   # KANNADA LETTER I
+<Multi_key> <b> <k> <i> <i> <space> : "ಈ" U0C88   # KANNADA LETTER II
+<Multi_key> <b> <k> <u> <space> : "ಉ" U0C89   # KANNADA LETTER U
+<Multi_key> <b> <k> <u> <u> <space> : "ಊ" U0C8A   # KANNADA LETTER UU
+<Multi_key> <b> <k> <comma> <r> <space> : "ಋ" U0C8B   # KANNADA LETTER VOCALIC R
+<Multi_key> <b> <k> <comma> <l> <space> : "ಌ" U0C8C   # KANNADA LETTER VOCALIC L
+<Multi_key> <b> <k> <e> <space> : "ಎ" U0C8E   # KANNADA LETTER E
+<Multi_key> <b> <k> <e> <e> <space> : "ಏ" U0C8F   # KANNADA LETTER EE
+<Multi_key> <b> <k> <a> <i> <space> : "ಐ" U0C90   # KANNADA LETTER AI
+<Multi_key> <b> <k> <o> <space> : "ಒ" U0C92   # KANNADA LETTER O
+<Multi_key> <b> <k> <o> <o> <space> : "ಓ" U0C93   # KANNADA LETTER OO
+<Multi_key> <b> <k> <a> <u> <space> : "ಔ" U0C94   # KANNADA LETTER AU
+<Multi_key> <b> <k> <comma> <r> <r> <space> : "ೠ" U0CE0   # KANNADA LETTER VOCALIC RR
+<Multi_key> <b> <k> <comma> <l> <l> <space> : "ೡ" U0CE1   # KANNADA LETTER VOCALIC LL
+
+# Dependent vowels
+
+<Multi_key> <b> <k> <a> <a> <Return> : "ಾ" U0CBE   # KANNADA VOWEL SIGN AA
+<Multi_key> <b> <k> <i> <Return> : "ಿ" U0CBF   # KANNADA VOWEL SIGN I
+<Multi_key> <b> <k> <i> <i> <Return> : "ೀ" U0CC0   # KANNADA VOWEL SIGN II
+<Multi_key> <b> <k> <u> <Return> : "ು" U0CC1   # KANNADA VOWEL SIGN U
+<Multi_key> <b> <k> <u> <u> <Return> : "ೂ" U0CC2   # KANNADA VOWEL SIGN UU
+<Multi_key> <b> <k> <comma> <r> <Return> : "ೃ" U0CC3   # KANNADA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <k> <comma> <r> <r> <Return> : "ೄ" U0CC4   # KANNADA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <k> <e> <Return> : "ೆ" U0CC6   # KANNADA VOWEL SIGN E
+<Multi_key> <b> <k> <e> <e> <Return> : "ೇ" U0CC7   # KANNADA VOWEL SIGN EE
+<Multi_key> <b> <k> <a> <i> <Return> : "ೈ" U0CC8   # KANNADA VOWEL SIGN AI
+<Multi_key> <b> <k> <o> <Return> : "ೊ" U0CCA   # KANNADA VOWEL SIGN O
+<Multi_key> <b> <k> <o> <o> <Return> : "ೋ" U0CCB   # KANNADA VOWEL SIGN OO
+<Multi_key> <b> <k> <a> <u> <Return> : "ೌ" U0CCC   # KANNADA VOWEL SIGN AU
+<Multi_key> <b> <k> <comma> <l> <Return> : "ೢ" U0CE2   # KANNADA VOWEL SIGN VOCALIC L
+<Multi_key> <b> <k> <comma> <l> <l> <Return> : "ೣ" U0CE3   # KANNADA VOWEL SIGN VOCALIC LL
+
+# Other signs
+
+<Multi_key> <b> <k> <period> <parenright> <space> : "ಀ" U0C80   # KANNADA SIGN SPACING CANDRABINDU
+<Multi_key> <b> <k> <period> <parenright> <Return> : "ಁ" U0C81   # KANNADA SIGN CANDRABINDU
+<Multi_key> <b> <k> <period> <Return> : "ಂ" U0C82   # KANNADA SIGN ANUSVARA
+<Multi_key> <b> <k> <colon> <Return> : "ಃ" U0C83   # KANNADA SIGN VISARGA
+<Multi_key> <b> <k> <underscore> <period> <period> <Return> : "಼" U0CBC   # KANNADA SIGN NUKTA
+
+<Multi_key> <b> <k> <at> : "಄" U0C84   # KANNADA SIGN SIDDHAM
+<Multi_key> <b> <k> <S> : "ಽ" U0CBD   # KANNADA SIGN AVAGRAHA
+<Multi_key> <b> <k> <x> : "ೱ" U0CF1   # KANNADA SIGN JIHVAMULIYA
+<Multi_key> <b> <k> <o> <x> : "ೲ" U0CF2   # KANNADA SIGN UPADHMANIYA
+
+# Numerals
+
+<Multi_key> <b> <k> <numbersign> <0> : "೦" U0CE6   # KANNADA DIGIT ZERO
+<Multi_key> <b> <k> <numbersign> <1> : "೧" U0CE7   # KANNADA DIGIT ONE
+<Multi_key> <b> <k> <numbersign> <2> : "೨" U0CE8   # KANNADA DIGIT TWO
+<Multi_key> <b> <k> <numbersign> <3> : "೩" U0CE9   # KANNADA DIGIT THREE
+<Multi_key> <b> <k> <numbersign> <4> : "೪" U0CEA   # KANNADA DIGIT FOUR
+<Multi_key> <b> <k> <numbersign> <5> : "೫" U0CEB   # KANNADA DIGIT FIVE
+<Multi_key> <b> <k> <numbersign> <6> : "೬" U0CEC   # KANNADA DIGIT SIX
+<Multi_key> <b> <k> <numbersign> <7> : "೭" U0CED   # KANNADA DIGIT SEVEN
+<Multi_key> <b> <k> <numbersign> <8> : "೮" U0CEE   # KANNADA DIGIT EIGHT
+<Multi_key> <b> <k> <numbersign> <9> : "೯" U0CEF   # KANNADA DIGIT NINE
+
+# (m = Malayalam)
+
+# Consonants
+
+<Multi_key> <b> <m> <k> <space> : "ക" U0D15   # MALAYALAM LETTER KA
+<Multi_key> <b> <m> <k> <h> : "ഖ" U0D16   # MALAYALAM LETTER KHA
+<Multi_key> <b> <m> <g> <space> : "ഗ" U0D17   # MALAYALAM LETTER GA
+<Multi_key> <b> <m> <g> <h> : "ഘ" U0D18   # MALAYALAM LETTER GHA
+<Multi_key> <b> <m> <semicolon> <n> : "ങ" U0D19   # MALAYALAM LETTER NGA
+<Multi_key> <b> <m> <c> <space> : "ച" U0D1A   # MALAYALAM LETTER CA
+<Multi_key> <b> <m> <c> <h> : "ഛ" U0D1B   # MALAYALAM LETTER CHA
+<Multi_key> <b> <m> <j> <space> : "ജ" U0D1C   # MALAYALAM LETTER JA
+<Multi_key> <b> <m> <j> <h> : "ഝ" U0D1D   # MALAYALAM LETTER JHA
+<Multi_key> <b> <m> <asciitilde> <n> : "ഞ" U0D1E   # MALAYALAM LETTER NYA
+<Multi_key> <b> <m> <period> <t> <space> : "ട" U0D1F   # MALAYALAM LETTER TTA
+<Multi_key> <b> <m> <period> <t> <h> : "ഠ" U0D20   # MALAYALAM LETTER TTHA
+<Multi_key> <b> <m> <period> <d> <space> : "ഡ" U0D21   # MALAYALAM LETTER DDA
+<Multi_key> <b> <m> <period> <d> <h> : "ഢ" U0D22   # MALAYALAM LETTER DDHA
+<Multi_key> <b> <m> <period> <n> : "ണ" U0D23   # MALAYALAM LETTER NNA
+<Multi_key> <b> <m> <t> <space> : "ത" U0D24   # MALAYALAM LETTER TA
+<Multi_key> <b> <m> <t> <h> : "ഥ" U0D25   # MALAYALAM LETTER THA
+<Multi_key> <b> <m> <d> <space> : "ദ" U0D26   # MALAYALAM LETTER DA
+<Multi_key> <b> <m> <d> <h> : "ധ" U0D27   # MALAYALAM LETTER DHA
+<Multi_key> <b> <m> <n> : "ന" U0D28   # MALAYALAM LETTER NA
+<Multi_key> <b> <m> <underscore> <n> : "ഩ" U0D29   # MALAYALAM LETTER NNNA
+<Multi_key> <b> <m> <p> <space> : "പ" U0D2A   # MALAYALAM LETTER PA
+<Multi_key> <b> <m> <p> <h> : "ഫ" U0D2B   # MALAYALAM LETTER PHA
+<Multi_key> <b> <m> <b> <space> : "ബ" U0D2C   # MALAYALAM LETTER BA
+<Multi_key> <b> <m> <b> <h> : "ഭ" U0D2D   # MALAYALAM LETTER BHA
+<Multi_key> <b> <m> <m> : "മ" U0D2E   # MALAYALAM LETTER MA
+<Multi_key> <b> <m> <y> : "യ" U0D2F   # MALAYALAM LETTER YA
+<Multi_key> <b> <m> <r> : "ര" U0D30   # MALAYALAM LETTER RA
+<Multi_key> <b> <m> <underscore> <r> : "റ" U0D31   # MALAYALAM LETTER RRA
+<Multi_key> <b> <m> <l> : "ല" U0D32   # MALAYALAM LETTER LA
+<Multi_key> <b> <m> <period> <l> : "ള" U0D33   # MALAYALAM LETTER LLA
+<Multi_key> <b> <m> <underscore> <l> : "ഴ" U0D34   # MALAYALAM LETTER LLLA
+<Multi_key> <b> <m> <v> : "വ" U0D35   # MALAYALAM LETTER VA
+<Multi_key> <b> <m> <semicolon> <s> : "ശ" U0D36   # MALAYALAM LETTER SHA
+<Multi_key> <b> <m> <period> <s> : "ഷ" U0D37   # MALAYALAM LETTER SSA
+<Multi_key> <b> <m> <s> : "സ" U0D38   # MALAYALAM LETTER SA
+<Multi_key> <b> <m> <h> : "ഹ" U0D39   # MALAYALAM LETTER HA
+<Multi_key> <b> <m> <underscore> <t> : "ഺ" U0D3A   # MALAYALAM LETTER TTTA
+
+# Independent vowels
+
+<Multi_key> <b> <m> <a> <space> : "അ" U0D05   # MALAYALAM LETTER A
+<Multi_key> <b> <m> <a> <a> <space> : "ആ" U0D06   # MALAYALAM LETTER AA
+<Multi_key> <b> <m> <i> <space> : "ഇ" U0D07   # MALAYALAM LETTER I
+<Multi_key> <b> <m> <i> <i> <space> : "ഈ" U0D08   # MALAYALAM LETTER II
+<Multi_key> <b> <m> <u> <space> : "ഉ" U0D09   # MALAYALAM LETTER U
+<Multi_key> <b> <m> <u> <u> <space> : "ഊ" U0D0A   # MALAYALAM LETTER UU
+<Multi_key> <b> <m> <comma> <r> <space> : "ഋ" U0D0B   # MALAYALAM LETTER VOCALIC R
+<Multi_key> <b> <m> <comma> <l> <space> : "ഌ" U0D0C   # MALAYALAM LETTER VOCALIC L
+<Multi_key> <b> <m> <e> <space> : "എ" U0D0E   # MALAYALAM LETTER E
+<Multi_key> <b> <m> <e> <e> <space> : "ഏ" U0D0F   # MALAYALAM LETTER EE
+<Multi_key> <b> <m> <a> <i> <space> : "ഐ" U0D10   # MALAYALAM LETTER AI
+<Multi_key> <b> <m> <o> <space> : "ഒ" U0D12   # MALAYALAM LETTER O
+<Multi_key> <b> <m> <o> <o> <space> : "ഓ" U0D13   # MALAYALAM LETTER OO
+<Multi_key> <b> <m> <a> <u> <space> : "ഔ" U0D14   # MALAYALAM LETTER AU
+<Multi_key> <b> <m> <comma> <r> <r> <space> : "ൠ" U0D60   # MALAYALAM LETTER VOCALIC RR
+<Multi_key> <b> <m> <comma> <l> <l> <space> : "ൡ" U0D61   # MALAYALAM LETTER VOCALIC LL
+
+# Dependent vowels
+
+<Multi_key> <b> <m> <a> <a> <Return> : "ാ" U0D3E   # MALAYALAM VOWEL SIGN AA
+<Multi_key> <b> <m> <i> <Return> : "ി" U0D3F   # MALAYALAM VOWEL SIGN I
+<Multi_key> <b> <m> <i> <i> <Return> : "ീ" U0D40   # MALAYALAM VOWEL SIGN II
+<Multi_key> <b> <m> <u> <Return> : "ു" U0D41   # MALAYALAM VOWEL SIGN U
+<Multi_key> <b> <m> <u> <u> <Return> : "ൂ" U0D42   # MALAYALAM VOWEL SIGN UU
+<Multi_key> <b> <m> <comma> <r> <Return> : "ൃ" U0D43   # MALAYALAM VOWEL SIGN VOCALIC R
+<Multi_key> <b> <m> <comma> <r> <r> <Return> : "ൄ" U0D44   # MALAYALAM VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <m> <e> <Return> : "െ" U0D46   # MALAYALAM VOWEL SIGN E
+<Multi_key> <b> <m> <e> <e> <Return> : "േ" U0D47   # MALAYALAM VOWEL SIGN EE
+<Multi_key> <b> <m> <a> <i> <Return> : "ൈ" U0D48   # MALAYALAM VOWEL SIGN AI
+<Multi_key> <b> <m> <o> <Return> : "ൊ" U0D4A   # MALAYALAM VOWEL SIGN O
+<Multi_key> <b> <m> <o> <o> <Return> : "ോ" U0D4B   # MALAYALAM VOWEL SIGN OO
+<Multi_key> <b> <m> <a> <u> <Return> : "ൌ" U0D4C   # MALAYALAM VOWEL SIGN AU
+<Multi_key> <b> <m> <comma> <Return> : "്" U0D4D   # MALAYALAM SIGN VIRAMA
+<Multi_key> <b> <m> <comma> <l> <Return> : "ൢ" U0D62   # MALAYALAM VOWEL SIGN VOCALIC L
+<Multi_key> <b> <m> <comma> <l> <l> <Return> : "ൣ" U0D63   # MALAYALAM VOWEL SIGN VOCALIC LL
+
+# Other signs
+
+<Multi_key> <b> <m> <asciicircum> <period> <Return> : "ഀ" U0D00   # MALAYALAM SIGN COMBINING ANUSVARA ABOVE
+<Multi_key> <b> <m> <period> <parenright> <Return> : "ഁ" U0D01   # MALAYALAM SIGN CANDRABINDU
+<Multi_key> <b> <m> <period> <Return> : "ം" U0D02   # MALAYALAM SIGN ANUSVARA
+<Multi_key> <b> <m> <colon> <Return> : "ഃ" U0D03   # MALAYALAM SIGN VISARGA
+<Multi_key> <b> <m> <bar> <Return> : "഻" U0D3B   # MALAYALAM SIGN VERTICAL BAR VIRAMA
+<Multi_key> <b> <m> <0> <Return> : "഼" U0D3C   # MALAYALAM SIGN CIRCULAR VIRAMA
+
+<Multi_key> <b> <m> <period> <parenright> <space> : "ഄ" U0D04   # MALAYALAM LETTER VEDIC ANUSVARA
+<Multi_key> <b> <m> <S> : "ഽ" U0D3D   # MALAYALAM SIGN AVAGRAHA
+
+# Numerals
+
+<Multi_key> <b> <m> <numbersign> <0> : "൦" U0D66   # MALAYALAM DIGIT ZERO
+<Multi_key> <b> <m> <numbersign> <1> : "൧" U0D67   # MALAYALAM DIGIT ONE
+<Multi_key> <b> <m> <numbersign> <2> : "൨" U0D68   # MALAYALAM DIGIT TWO
+<Multi_key> <b> <m> <numbersign> <3> : "൩" U0D69   # MALAYALAM DIGIT THREE
+<Multi_key> <b> <m> <numbersign> <4> : "൪" U0D6A   # MALAYALAM DIGIT FOUR
+<Multi_key> <b> <m> <numbersign> <5> : "൫" U0D6B   # MALAYALAM DIGIT FIVE
+<Multi_key> <b> <m> <numbersign> <6> : "൬" U0D6C   # MALAYALAM DIGIT SIX
+<Multi_key> <b> <m> <numbersign> <7> : "൭" U0D6D   # MALAYALAM DIGIT SEVEN
+<Multi_key> <b> <m> <numbersign> <8> : "൮" U0D6E   # MALAYALAM DIGIT EIGHT
+<Multi_key> <b> <m> <numbersign> <9> : "൯" U0D6F   # MALAYALAM DIGIT NINE
+
+<Multi_key> <b> <m> <1> <0> <Return> : "൰" U0D70   # MALAYALAM NUMBER TEN
+<Multi_key> <b> <m> <1> <0> <0> <Return> : "൱" U0D71   # MALAYALAM NUMBER ONE HUNDRED
+<Multi_key> <b> <m> <1> <0> <0> <0>  : "൲" U0D72   # MALAYALAM NUMBER ONE THOUSAND
+
+# (M = Myanmar/Burmese) - not covered by ISO 15919 but similar enough to fit
+
+# Consonants
+
+<Multi_key> <b> <M> <k> <space> : "က" U1000   # MYANMAR LETTER KA
+<Multi_key> <b> <M> <k> <h> : "ခ" U1001   # MYANMAR LETTER KHA
+<Multi_key> <b> <M> <g> <space> : "ဂ" U1002   # MYANMAR LETTER GA
+<Multi_key> <b> <M> <g> <h> : "ဃ" U1003   # MYANMAR LETTER GHA
+<Multi_key> <b> <M> <semicolon> <n> : "င" U1004   # MYANMAR LETTER NGA
+<Multi_key> <b> <M> <c> <space> : "စ" U1005   # MYANMAR LETTER CA
+<Multi_key> <b> <M> <c> <h> : "ဆ" U1006   # MYANMAR LETTER CHA
+<Multi_key> <b> <M> <j> <space> : "ဇ" U1007   # MYANMAR LETTER JA
+<Multi_key> <b> <M> <j> <h> : "ဈ" U1008   # MYANMAR LETTER JHA
+<Multi_key> <b> <M> <asciitilde> <n> : "ဉ" U1009   # MYANMAR LETTER NYA
+<Multi_key> <b> <M> <period> <asciitilde> <n> : "ည" U100A   # MYANMAR LETTER NNYA
+<Multi_key> <b> <M> <period> <t> <space> : "ဋ" U100B   # MYANMAR LETTER TTA
+<Multi_key> <b> <M> <period> <t> <h> : "ဌ" U100C   # MYANMAR LETTER TTHA
+<Multi_key> <b> <M> <period> <d> <space> : "ဍ" U100D   # MYANMAR LETTER DDA
+<Multi_key> <b> <M> <period> <d> <h> : "ဎ" U100E   # MYANMAR LETTER DDHA
+<Multi_key> <b> <M> <period> <n> : "ဏ" U100F   # MYANMAR LETTER NNA
+<Multi_key> <b> <M> <t> <space> : "တ" U1010   # MYANMAR LETTER TA
+<Multi_key> <b> <M> <t> <h> : "ထ" U1011   # MYANMAR LETTER THA
+<Multi_key> <b> <M> <d> <space> : "ဒ" U1012   # MYANMAR LETTER DA
+<Multi_key> <b> <M> <d> <h> : "ဓ" U1013   # MYANMAR LETTER DHA
+<Multi_key> <b> <M> <n> : "န" U1014   # MYANMAR LETTER NA
+<Multi_key> <b> <M> <p> <space> : "ပ" U1015   # MYANMAR LETTER PA
+<Multi_key> <b> <M> <p> <h> : "ဖ" U1016   # MYANMAR LETTER PHA
+<Multi_key> <b> <M> <b> <space> : "ဗ" U1017   # MYANMAR LETTER BA
+<Multi_key> <b> <M> <b> <h> : "ဘ" U1018   # MYANMAR LETTER BHA
+<Multi_key> <b> <M> <m> : "မ" U1019   # MYANMAR LETTER MA
+<Multi_key> <b> <M> <y> <space> : "ယ" U101A   # MYANMAR LETTER YA
+<Multi_key> <b> <M> <y> <Return> : "ျ" U103B   # MYANMAR CONSONANT SIGN MEDIAL YA
+<Multi_key> <b> <M> <r> <space> : "ရ" U101B   # MYANMAR LETTER RA
+<Multi_key> <b> <M> <r> <Return> : "ြ" U103C   # MYANMAR CONSONANT SIGN MEDIAL RA
+<Multi_key> <b> <M> <l> : "လ" U101C   # MYANMAR LETTER LA
+<Multi_key> <b> <M> <w> <space> : "ဝ" U101D   # MYANMAR LETTER WA
+<Multi_key> <b> <M> <w> <Return> : "ွ" U103D   # MYANMAR CONSONANT SIGN MEDIAL WA
+<Multi_key> <b> <M> <s> <space> : "သ" U101E   # MYANMAR LETTER SA
+<Multi_key> <b> <M> <s> <s> : "ဿ" U103F   # MYANMAR LETTER GREAT SA
+<Multi_key> <b> <M> <h> <space> : "ဟ" U101F   # MYANMAR LETTER HA
+<Multi_key> <b> <M> <h> <Return> : "ှ" U103E   # MYANMAR CONSONANT SIGN MEDIAL HA
+<Multi_key> <b> <M> <period> <l> : "ဠ" U1020   # MYANMAR LETTER LLA
+
+# Independent vowels
+
+<Multi_key> <b> <M> <a> <space> : "အ" U1021   # MYANMAR LETTER A
+<Multi_key> <b> <M> <i> <space> : "ဣ" U1023   # MYANMAR LETTER I
+<Multi_key> <b> <M> <i> <i> <space> : "ဤ" U1024   # MYANMAR LETTER II
+<Multi_key> <b> <M> <u> <space> : "ဥ" U1025   # MYANMAR LETTER U
+<Multi_key> <b> <M> <u> <u> <space> : "ဦ" U1026   # MYANMAR LETTER UU
+<Multi_key> <b> <M> <e> <e> <space> : "ဧ" U1027   # MYANMAR LETTER E
+<Multi_key> <b> <M> <o> <o> <space> : "ဩ" U1029   # MYANMAR LETTER O
+<Multi_key> <b> <M> <a> <u> <space> : "ဪ" U102A   # MYANMAR LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <M> <asciicircum> <a> <a> <Return> : "ါ" U102B   # MYANMAR VOWEL SIGN TALL AA
+<Multi_key> <b> <M> <a> <a> <Return> : "ာ" U102C   # MYANMAR VOWEL SIGN AA
+<Multi_key> <b> <M> <i> <Return> : "ိ" U102D   # MYANMAR VOWEL SIGN I
+<Multi_key> <b> <M> <i> <i> <Return> : "ီ" U102E   # MYANMAR VOWEL SIGN II
+<Multi_key> <b> <M> <u> <Return> : "ု" U102F   # MYANMAR VOWEL SIGN U
+<Multi_key> <b> <M> <u> <u> <Return> : "ူ" U1030   # MYANMAR VOWEL SIGN UU
+<Multi_key> <b> <M> <e> <e> <Return> : "ေ" U1031   # MYANMAR VOWEL SIGN E
+<Multi_key> <b> <M> <a> <i> <Return> : "ဲ" U1032   # MYANMAR VOWEL SIGN AI
+<Multi_key> <b> <M> <asciicircum> <e> <e> <Return> : "ဵ" U1035   # MYANMAR VOWEL SIGN E ABOVE
+
+# Other signs
+
+<Multi_key> <b> <M> <period> <Return> : "ံ" U1036   # MYANMAR SIGN ANUSVARA
+<Multi_key> <b> <M> <underscore> <period> <Return> : "့" U1037   # MYANMAR SIGN DOT BELOW
+<Multi_key> <b> <M> <colon> <Return> : "း" U1038   # MYANMAR SIGN VISARGA
+<Multi_key> <b> <M> <underscore> <plus> <Return> : "္" U1039   # MYANMAR SIGN VIRAMA
+<Multi_key> <b> <M> <c> <Return> : "်" U103A   # MYANMAR SIGN ASAT
+
+# Numerals
+
+<Multi_key> <b> <M> <numbersign> <0> : "၀" U1040   # MYANMAR DIGIT ZERO
+<Multi_key> <b> <M> <numbersign> <1> : "၁" U1041   # MYANMAR DIGIT ONE
+<Multi_key> <b> <M> <numbersign> <2> : "၂" U1042   # MYANMAR DIGIT TWO
+<Multi_key> <b> <M> <numbersign> <3> : "၃" U1043   # MYANMAR DIGIT THREE
+<Multi_key> <b> <M> <numbersign> <4> : "၄" U1044   # MYANMAR DIGIT FOUR
+<Multi_key> <b> <M> <numbersign> <5> : "၅" U1045   # MYANMAR DIGIT FIVE
+<Multi_key> <b> <M> <numbersign> <6> : "၆" U1046   # MYANMAR DIGIT SIX
+<Multi_key> <b> <M> <numbersign> <7> : "၇" U1047   # MYANMAR DIGIT SEVEN
+<Multi_key> <b> <M> <numbersign> <8> : "၈" U1048   # MYANMAR DIGIT EIGHT
+<Multi_key> <b> <M> <numbersign> <9> : "၉" U1049   # MYANMAR DIGIT NINE
+
+# (O = Odia)
+
+# Consonants
+
+<Multi_key> <b> <O> <k> <space> : "କ" U0B15   # ORIYA LETTER KA (conflicts with Ŏ, use uO)
+<Multi_key> <b> <O> <k> <h> : "ଖ" U0B16   # ORIYA LETTER KHA (conflicts)
+<Multi_key> <b> <O> <g> <space> : "ଗ" U0B17   # ORIYA LETTER GA (conflicts)
+<Multi_key> <b> <O> <g> <h> : "ଘ" U0B18   # ORIYA LETTER GHA (conflicts)
+<Multi_key> <b> <O> <semicolon> <n> : "ଙ" U0B19   # ORIYA LETTER NGA (conflicts)
+<Multi_key> <b> <O> <c> <space> : "ଚ" U0B1A   # ORIYA LETTER CA (conflicts)
+<Multi_key> <b> <O> <c> <h> : "ଛ" U0B1B   # ORIYA LETTER CHA (conflicts)
+<Multi_key> <b> <O> <j> <space> : "ଜ" U0B1C   # ORIYA LETTER JA (conflicts)
+<Multi_key> <b> <O> <j> <h> : "ଝ" U0B1D   # ORIYA LETTER JHA (conflicts)
+<Multi_key> <b> <O> <asciitilde> <n> : "ଞ" U0B1E   # ORIYA LETTER NYA (conflicts)
+<Multi_key> <b> <O> <period> <t> <space> : "ଟ" U0B1F   # ORIYA LETTER TTA (conflicts)
+<Multi_key> <b> <O> <period> <t> <h> : "ଠ" U0B20   # ORIYA LETTER TTHA (conflicts)
+<Multi_key> <b> <O> <period> <d> <space> : "ଡ" U0B21   # ORIYA LETTER DDA (conflicts)
+<Multi_key> <b> <O> <period> <d> <h> : "ଢ" U0B22   # ORIYA LETTER DDHA (conflicts)
+<Multi_key> <b> <O> <period> <n> : "ଣ" U0B23   # ORIYA LETTER NNA (conflicts)
+<Multi_key> <b> <O> <t> <space> : "ତ" U0B24   # ORIYA LETTER TA (conflicts)
+<Multi_key> <b> <O> <t> <h> : "ଥ" U0B25   # ORIYA LETTER THA (conflicts)
+<Multi_key> <b> <O> <d> <space> : "ଦ" U0B26   # ORIYA LETTER DA (conflicts)
+<Multi_key> <b> <O> <d> <h> : "ଧ" U0B27   # ORIYA LETTER DHA (conflicts)
+<Multi_key> <b> <O> <n> : "ନ" U0B28   # ORIYA LETTER NA (conflicts)
+<Multi_key> <b> <O> <p> <space> : "ପ" U0B2A   # ORIYA LETTER PA (conflicts)
+<Multi_key> <b> <O> <p> <h> : "ଫ" U0B2B   # ORIYA LETTER PHA (conflicts)
+<Multi_key> <b> <O> <b> <space> : "ବ" U0B2C   # ORIYA LETTER BA (conflicts)
+<Multi_key> <b> <O> <b> <h> : "ଭ" U0B2D   # ORIYA LETTER BHA (conflicts)
+<Multi_key> <b> <O> <m> : "ମ" U0B2E   # ORIYA LETTER MA (conflicts)
+<Multi_key> <b> <O> <y> : "ଯ" U0B2F   # ORIYA LETTER YA (conflicts)
+<Multi_key> <b> <O> <r> : "ର" U0B30   # ORIYA LETTER RA (conflicts)
+<Multi_key> <b> <O> <l> : "ଲ" U0B32   # ORIYA LETTER LA (conflicts)
+<Multi_key> <b> <O> <period> <l> : "ଳ" U0B33   # ORIYA LETTER LLA (conflicts)
+<Multi_key> <b> <O> <v> : "ଵ" U0B35   # ORIYA LETTER VA (conflicts)
+<Multi_key> <b> <O> <semicolon> <s> : "ଶ" U0B36   # ORIYA LETTER SHA (conflicts)
+<Multi_key> <b> <O> <period> <s> : "ଷ" U0B37   # ORIYA LETTER SSA (conflicts)
+<Multi_key> <b> <O> <s> : "ସ" U0B38   # ORIYA LETTER SA (conflicts)
+<Multi_key> <b> <O> <h> : "ହ" U0B39   # ORIYA LETTER HA (conflicts)
+<Multi_key> <b> <O> <underscore> <r> : "ଡ଼" U0B5C   # ORIYA LETTER RRA (conflicts)
+
+# Independent vowels
+
+<Multi_key> <b> <O> <period> <parenright> <Return> : "ଁ" U0B01   # ORIYA SIGN CANDRABINDU (conflicts)
+<Multi_key> <b> <O> <period> <Return> : "ଂ" U0B02   # ORIYA SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <O> <colon> <Return> : "ଃ" U0B03   # ORIYA SIGN VISARGA (conflicts)
+<Multi_key> <b> <O> <a> <space> : "ଅ" U0B05   # ORIYA LETTER A (conflicts)
+<Multi_key> <b> <O> <a> <a> <space> : "ଆ" U0B06   # ORIYA LETTER AA (conflicts)
+<Multi_key> <b> <O> <i> <space> : "ଇ" U0B07   # ORIYA LETTER I (conflicts)
+<Multi_key> <b> <O> <i> <i> <space> : "ଈ" U0B08   # ORIYA LETTER II (conflicts)
+<Multi_key> <b> <O> <u> <space> : "ଉ" U0B09   # ORIYA LETTER U (conflicts)
+<Multi_key> <b> <O> <u> <u> <space> : "ଊ" U0B0A   # ORIYA LETTER UU (conflicts)
+<Multi_key> <b> <O> <comma> <r> <space> : "ଋ" U0B0B   # ORIYA LETTER VOCALIC R (conflicts)
+<Multi_key> <b> <O> <comma> <l> <space> : "ଌ" U0B0C   # ORIYA LETTER VOCALIC L (conflicts)
+<Multi_key> <b> <O> <e> <e> <space> : "ଏ" U0B0F   # ORIYA LETTER E (conflicts)
+<Multi_key> <b> <O> <a> <i> <space> : "ଐ" U0B10   # ORIYA LETTER AI (conflicts)
+<Multi_key> <b> <O> <o> <o> <space> : "ଓ" U0B13   # ORIYA LETTER O (conflicts)
+<Multi_key> <b> <O> <a> <u> <space> : "ଔ" U0B14   # ORIYA LETTER AU (conflicts)
+<Multi_key> <b> <O> <comma> <r> <r> <space> : "ୠ" U0B60   # ORIYA LETTER VOCALIC RR (conflicts)
+<Multi_key> <b> <O> <comma> <l> <l> <space> : "ୡ" U0B61   # ORIYA LETTER VOCALIC LL (conflicts)
+
+# Dependent vowels
+
+<Multi_key> <b> <O> <a> <a> <Return> : "ା" U0B3E   # ORIYA VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <O> <i> <Return> : "ି" U0B3F   # ORIYA VOWEL SIGN I (conflicts)
+<Multi_key> <b> <O> <i> <i> <Return> : "ୀ" U0B40   # ORIYA VOWEL SIGN II (conflicts)
+<Multi_key> <b> <O> <u> <Return> : "ୁ" U0B41   # ORIYA VOWEL SIGN U (conflicts)
+<Multi_key> <b> <O> <u> <u> <Return> : "ୂ" U0B42   # ORIYA VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <O> <comma> <r> <Return> : "ୃ" U0B43   # ORIYA VOWEL SIGN VOCALIC R (conflicts)
+<Multi_key> <b> <O> <comma> <r> <r> <Return> : "ୄ" U0B44   # ORIYA VOWEL SIGN VOCALIC RR (conflicts)
+<Multi_key> <b> <O> <e> <e> <Return> : "େ" U0B47   # ORIYA VOWEL SIGN E (conflicts)
+<Multi_key> <b> <O> <a> <i> <Return> : "ୈ" U0B48   # ORIYA VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <O> <o> <o> <Return> : "ୋ" U0B4B   # ORIYA VOWEL SIGN O (conflicts)
+<Multi_key> <b> <O> <a> <u> <Return> : "ୌ" U0B4C   # ORIYA VOWEL SIGN AU (conflicts)
+<Multi_key> <b> <O> <comma> <l> <Return> : "ୢ" U0B62   # ORIYA VOWEL SIGN VOCALIC L (conflicts)
+<Multi_key> <b> <O> <comma> <l> <l> <Return> : "ୣ" U0B63   # ORIYA VOWEL SIGN VOCALIC LL (conflicts)
+
+# Other signs
+
+<Multi_key> <b> <O> <period> <parenright> <Return> : "ଁ" U0B01   # ORIYA SIGN CANDRABINDU (conflicts)
+<Multi_key> <b> <O> <period> <Return> : "ଂ" U0B02   # ORIYA SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <O> <colon> <Return> : "ଃ" U0B03   # ORIYA SIGN VISARGA (conflicts)
+<Multi_key> <b> <O> <8> <Return> : "ଃ" U0B03   # ORIYA SIGN VISARGA (conflicts)
+<Multi_key> <b> <O> <underscore> <period> <Return> : "଼" U0B3C   # ORIYA SIGN NUKTA (conflicts)
+<Multi_key> <b> <O> <comma> <Return> : "୍" U0B4D   # ORIYA SIGN VIRAMA (conflicts)
+
+<Multi_key> <b> <O> <S> : "ଽ" U0B3D   # ORIYA SIGN AVAGRAHA (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <O> <numbersign> <0> : "୦" U0B66   # ORIYA DIGIT ZERO (conflicts)
+<Multi_key> <b> <O> <numbersign> <1> : "୧" U0B67   # ORIYA DIGIT ONE (conflicts)
+<Multi_key> <b> <O> <numbersign> <2> : "୨" U0B68   # ORIYA DIGIT TWO (conflicts)
+<Multi_key> <b> <O> <numbersign> <3> : "୩" U0B69   # ORIYA DIGIT THREE (conflicts)
+<Multi_key> <b> <O> <numbersign> <4> : "୪" U0B6A   # ORIYA DIGIT FOUR (conflicts)
+<Multi_key> <b> <O> <numbersign> <5> : "୫" U0B6B   # ORIYA DIGIT FIVE (conflicts)
+<Multi_key> <b> <O> <numbersign> <6> : "୬" U0B6C   # ORIYA DIGIT SIX (conflicts)
+<Multi_key> <b> <O> <numbersign> <7> : "୭" U0B6D   # ORIYA DIGIT SEVEN (conflicts)
+<Multi_key> <b> <O> <numbersign> <8> : "୮" U0B6E   # ORIYA DIGIT EIGHT (conflicts)
+<Multi_key> <b> <O> <numbersign> <9> : "୯" U0B6F   # ORIYA DIGIT NINE (conflicts)
 
 # (t = Tamil)
 
@@ -3037,6 +3743,112 @@ include "%L"
 <Multi_key> <b> <t> <1> <0> <Return> : "௰" U0BF0   # TAMIL NUMBER TEN
 <Multi_key> <b> <t> <1> <0> <0> <Return> : "௱" U0BF1   # TAMIL NUMBER ONE HUNDRED
 <Multi_key> <b> <t> <1> <0> <0> <0>  : "௲" U0BF2   # TAMIL NUMBER ONE THOUSAND
+
+# (T = Telugu)
+
+# Consonants
+
+<Multi_key> <b> <T> <k> <space> : "క" U0C15   # TELUGU LETTER KA
+<Multi_key> <b> <T> <k> <h> : "ఖ" U0C16   # TELUGU LETTER KHA
+<Multi_key> <b> <T> <g> <space> : "గ" U0C17   # TELUGU LETTER GA
+<Multi_key> <b> <T> <g> <h> : "ఘ" U0C18   # TELUGU LETTER GHA
+<Multi_key> <b> <T> <semicolon> <n> : "ఙ" U0C19   # TELUGU LETTER NGA
+<Multi_key> <b> <T> <c> <space> : "చ" U0C1A   # TELUGU LETTER CA
+<Multi_key> <b> <T> <c> <h> : "ఛ" U0C1B   # TELUGU LETTER CHA
+<Multi_key> <b> <T> <j> <space> : "జ" U0C1C   # TELUGU LETTER JA
+<Multi_key> <b> <T> <j> <h> : "ఝ" U0C1D   # TELUGU LETTER JHA
+<Multi_key> <b> <T> <asciitilde> <n> : "ఞ" U0C1E   # TELUGU LETTER NYA
+<Multi_key> <b> <T> <period> <t> <space> : "ట" U0C1F   # TELUGU LETTER TTA
+<Multi_key> <b> <T> <period> <t> <h> : "ఠ" U0C20   # TELUGU LETTER TTHA
+<Multi_key> <b> <T> <period> <d> <space> : "డ" U0C21   # TELUGU LETTER DDA
+<Multi_key> <b> <T> <period> <d> <h> : "ఢ" U0C22   # TELUGU LETTER DDHA
+<Multi_key> <b> <T> <period> <n> : "ణ" U0C23   # TELUGU LETTER NNA
+<Multi_key> <b> <T> <t> <space> : "త" U0C24   # TELUGU LETTER TA
+<Multi_key> <b> <T> <t> <h> : "థ" U0C25   # TELUGU LETTER THA
+<Multi_key> <b> <T> <d> <space> : "ద" U0C26   # TELUGU LETTER DA
+<Multi_key> <b> <T> <d> <h> : "ధ" U0C27   # TELUGU LETTER DHA
+<Multi_key> <b> <T> <n> : "న" U0C28   # TELUGU LETTER NA
+<Multi_key> <b> <T> <p> <space> : "ప" U0C2A   # TELUGU LETTER PA
+<Multi_key> <b> <T> <p> <h> : "ఫ" U0C2B   # TELUGU LETTER PHA
+<Multi_key> <b> <T> <b> <space> : "బ" U0C2C   # TELUGU LETTER BA
+<Multi_key> <b> <T> <b> <h> : "భ" U0C2D   # TELUGU LETTER BHA
+<Multi_key> <b> <T> <m> : "మ" U0C2E   # TELUGU LETTER MA
+<Multi_key> <b> <T> <y> : "య" U0C2F   # TELUGU LETTER YA
+<Multi_key> <b> <T> <r> : "ర" U0C30   # TELUGU LETTER RA
+<Multi_key> <b> <T> <underscore> <r> : "ఱ" U0C31   # TELUGU LETTER RRA
+<Multi_key> <b> <T> <l> : "ల" U0C32   # TELUGU LETTER LA
+<Multi_key> <b> <T> <period> <l> : "ళ" U0C33   # TELUGU LETTER LLA
+<Multi_key> <b> <T> <underscore> <l> : "ఴ" U0C34   # TELUGU LETTER LLLA
+<Multi_key> <b> <T> <v> : "వ" U0C35   # TELUGU LETTER VA
+<Multi_key> <b> <T> <semicolon> <s> : "శ" U0C36   # TELUGU LETTER SHA
+<Multi_key> <b> <T> <period> <s> : "ష" U0C37   # TELUGU LETTER SSA
+<Multi_key> <b> <T> <s> : "స" U0C38   # TELUGU LETTER SA
+<Multi_key> <b> <T> <h> : "హ" U0C39   # TELUGU LETTER HA
+<Multi_key> <b> <T> <asciicircum> <c> : "ౘ" U0C58   # TELUGU LETTER TSA
+<Multi_key> <b> <T> <z> : "ౙ" U0C59   # TELUGU LETTER DZA
+
+# Independent vowels
+
+<Multi_key> <b> <T> <a> <space> : "అ" U0C05   # TELUGU LETTER A
+<Multi_key> <b> <T> <a> <a> <space> : "ఆ" U0C06   # TELUGU LETTER AA
+<Multi_key> <b> <T> <i> <space> : "ఇ" U0C07   # TELUGU LETTER I
+<Multi_key> <b> <T> <i> <i> <space> : "ఈ" U0C08   # TELUGU LETTER II
+<Multi_key> <b> <T> <u> <space> : "ఉ" U0C09   # TELUGU LETTER U
+<Multi_key> <b> <T> <u> <u> <space> : "ఊ" U0C0A   # TELUGU LETTER UU
+<Multi_key> <b> <T> <comma> <r> <space> : "ఋ" U0C0B   # TELUGU LETTER VOCALIC R
+<Multi_key> <b> <T> <comma> <l> <space> : "ఌ" U0C0C   # TELUGU LETTER VOCALIC L
+<Multi_key> <b> <T> <e> <space> : "ఎ" U0C0E   # TELUGU LETTER E
+<Multi_key> <b> <T> <e> <e> <space> : "ఏ" U0C0F   # TELUGU LETTER EE
+<Multi_key> <b> <T> <a> <i> <space> : "ఐ" U0C10   # TELUGU LETTER AI
+<Multi_key> <b> <T> <o> <space> : "ఒ" U0C12   # TELUGU LETTER O
+<Multi_key> <b> <T> <o> <o> <space> : "ఓ" U0C13   # TELUGU LETTER OO
+<Multi_key> <b> <T> <a> <u> <space> : "ఔ" U0C14   # TELUGU LETTER AU
+<Multi_key> <b> <T> <comma> <r> <r> <space> : "ౠ" U0C60   # TELUGU LETTER VOCALIC RR
+<Multi_key> <b> <T> <comma> <l> <l> <space> : "ౡ" U0C61   # TELUGU LETTER VOCALIC LL
+
+# Dependent vowels
+
+<Multi_key> <b> <T> <a> <a> <Return> : "ా" U0C3E   # TELUGU VOWEL SIGN AA
+<Multi_key> <b> <T> <i> <Return> : "ి" U0C3F   # TELUGU VOWEL SIGN I
+<Multi_key> <b> <T> <i> <i> <Return> : "ీ" U0C40   # TELUGU VOWEL SIGN II
+<Multi_key> <b> <T> <u> <Return> : "ు" U0C41   # TELUGU VOWEL SIGN U
+<Multi_key> <b> <T> <u> <u> <Return> : "ూ" U0C42   # TELUGU VOWEL SIGN UU
+<Multi_key> <b> <T> <comma> <r> <Return> : "ృ" U0C43   # TELUGU VOWEL SIGN VOCALIC R
+<Multi_key> <b> <T> <comma> <r> <r> <Return> : "ౄ" U0C44   # TELUGU VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <T> <e> <Return> : "ె" U0C46   # TELUGU VOWEL SIGN E
+<Multi_key> <b> <T> <e> <e> <Return> : "ే" U0C47   # TELUGU VOWEL SIGN EE
+<Multi_key> <b> <T> <a> <i> <Return> : "ై" U0C48   # TELUGU VOWEL SIGN AI
+<Multi_key> <b> <T> <o> <Return> : "ొ" U0C4A   # TELUGU VOWEL SIGN O
+<Multi_key> <b> <T> <o> <o> <Return> : "ో" U0C4B   # TELUGU VOWEL SIGN OO
+<Multi_key> <b> <T> <a> <u> <Return> : "ౌ" U0C4C   # TELUGU VOWEL SIGN AU
+<Multi_key> <b> <T> <comma> <l> <Return> : "ౢ" U0C62   # TELUGU VOWEL SIGN VOCALIC L
+<Multi_key> <b> <T> <comma> <l> <l> <Return> : "ౣ" U0C63   # TELUGU VOWEL SIGN VOCALIC LL
+
+# Other signs
+
+<Multi_key> <b> <T> <period> <parenright> <Return> : "ఀ" U0C00   # TELUGU SIGN COMBINING CANDRABINDU ABOVE
+<Multi_key> <b> <T> <parenleft> <Return> : "ఁ" U0C01   # TELUGU SIGN CANDRABINDU
+<Multi_key> <b> <T> <period> <Return> : "ం" U0C02   # TELUGU SIGN ANUSVARA
+<Multi_key> <b> <T> <colon> <Return> : "ః" U0C03   # TELUGU SIGN VISARGA
+<Multi_key> <b> <T> <asciicircum> <period> <Return> : "ఄ" U0C04   # TELUGU SIGN COMBINING ANUSVARA ABOVE
+<Multi_key> <b> <T> <underscore> <period> <Return> : "఼" U0C3C   # TELUGU SIGN NUKTA
+<Multi_key> <b> <T> <comma> <Return> : "్" U0C4D   # TELUGU SIGN VIRAMA
+
+<Multi_key> <b> <T> <S> : "ఽ" U0C3D   # TELUGU SIGN AVAGRAHA
+
+# Numerals
+
+<Multi_key> <b> <T> <numbersign> <0> : "౦" U0C66   # TELUGU DIGIT ZERO
+<Multi_key> <b> <T> <numbersign> <1> : "౧" U0C67   # TELUGU DIGIT ONE
+<Multi_key> <b> <T> <numbersign> <2> : "౨" U0C68   # TELUGU DIGIT TWO
+<Multi_key> <b> <T> <numbersign> <3> : "౩" U0C69   # TELUGU DIGIT THREE
+<Multi_key> <b> <T> <numbersign> <4> : "౪" U0C6A   # TELUGU DIGIT FOUR
+<Multi_key> <b> <T> <numbersign> <5> : "౫" U0C6B   # TELUGU DIGIT FIVE
+<Multi_key> <b> <T> <numbersign> <6> : "౬" U0C6C   # TELUGU DIGIT SIX
+<Multi_key> <b> <T> <numbersign> <7> : "౭" U0C6D   # TELUGU DIGIT SEVEN
+<Multi_key> <b> <T> <numbersign> <8> : "౮" U0C6E   # TELUGU DIGIT EIGHT
+<Multi_key> <b> <T> <numbersign> <9> : "౯" U0C6F   # TELUGU DIGIT NINE
+
 
 ###############################
 # (B) Unified English Braille #
@@ -6432,7 +7244,7 @@ include "%L"
 <Multi_key> <m> <o> <n> <k> <e> <y> : "🐵"  U1F435        # MONKEY FACE (use >monkey for 🐒)
 <Multi_key> <m> <o> <o> <s> <e>     : "🫎"  U1FACE        # MOOSE
 <Multi_key> <m> <o> <s> <q> <u> <i> : "🦟"  U1F99F        # MOSQUITO
-<Multi_key> <m> <o> <t> <h>         : "🦋"  U1F98B        # BUTTERFLY (MOTH) (not ideal)
+<Multi_key> <m> <o> <t> <h>         : "🦋"  U1F98B        # BUTTERFLY (MOTH) (not ideal but butter=🧈 is taken)
 <Multi_key> <m> <o> <u> <s> <e>     : "🐭"  U1F42D        # MOUSE FACE (use >mouse for 🐁)
 <Multi_key> <n> <e> <m> <o>         : "🐠"  U1F420        # TROPICAL FISH (NEMO) (use ><> for 🐟)
 <Multi_key> <n> <e> <s> <t>         : "🪺"  U1FABA        # NEST WITH EGGS (use empty for 🪹)
@@ -8232,8 +9044,8 @@ include "%L"
 
 # Convention: # + number + type suffix
 #
-# Also see Arabic (a0), Brahmi (bb), Devanagari (bd), Tamil (bt), Coptic (gp),
-# Japanese (j0), Chinese (z0) and Mongolian (zm) numerals above
+# Also see Arabic (a0), Brahmic (b*), Coptic (gp), Japanese (j0), Chinese (z0)
+# and Mongolian (zm) numerals above
 
 # (f) fence tally
 
