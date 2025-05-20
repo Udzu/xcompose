@@ -26,11 +26,12 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (286): ʣ ㏈ etc
 * **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (2641)
+### Non-Latin script characters (2727)
 * **Arabic** (+ Syriac, Neo-Tifinagh) (168): ⁧رِيدِيت⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ etc
 * **Armenian** (86): Րեդդit etc
-* **Brahmic** (Devanagari, Bengali, Gujarati, Tamil, Brahmi) (445):
-  * रेडिट, রেডিট, રેડિટ, ரெதிட, 𑀭𑁂𑀟𑀺𑀝 etc
+* **Brahmic Scripts** (445):
+  * (Bengali, Brahmi, Devanagari, Gujarati, Kannada, Tamil)
+  * রেডিট, 𑀭𑁂𑀟𑀺𑀝, रेडिट, રેડિટ, ರೆದಿತ, ரெதிட etc
 * **Braille** (79): ⠗⠫⠙⠊⠞ etc
 * **ConScripts** (Deseret, Shavian) (128): 𐐡𐐇𐐔𐐆𐐓, 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** (+ Glagolitic) (190): Ре́ддит, Ⱃⰵδδιτ etc

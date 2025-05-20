@@ -2690,13 +2690,16 @@ include "%L"
 <Multi_key> <A> <semicolon> <period> : "։" U0589   # ARMENIAN FULL STOP (conflicts)
 <Multi_key> <A> <semicolon> <minus> : "֊" U058A   # ARMENIAN HYPHEN (conflicts)
 
-###########################################################
-# (b) Brahmi scripts (Brahmi, Devanagari, Bengali, Tamil) #
-###########################################################
+#######################
+# (b) Brahmic scripts #
+#######################
+
+# (Brahmi, Devanagari, Bengali, Gujarati, Kannada, Tamil)
 
 # based on 7-bit ISO 15919
 
 # standalone vowels end with <space> (to contrast <Return> for dependent vowel modifiers)
+# as do non-aspirated consonants (to leave space for h)
 
 # (c = Brahmi)
 
@@ -3037,11 +3040,12 @@ include "%L"
 # Other signs
 
 <Multi_key> <b> <b> <period> <parenright> <Return> : "ঁ" U0981   # BENGALI SIGN CANDRABINDU
-<Multi_key> <b> <b> <period> <Return> : "ং" U0982   # BENGALI SIGN ANUSVARA
+<Multi_key> <b> <b> <semicolon> <Return> : "ং" U0982   # BENGALI SIGN ANUSVARA
 <Multi_key> <b> <b> <colon> <Return> : "ঃ" U0983   # BENGALI SIGN VISARGA
 <Multi_key> <b> <b> <underscore> <period> <Return> : "়" U09BC   # BENGALI SIGN NUKTA
-<Multi_key> <b> <b> <S> : "ঽ" U09BD   # BENGALI SIGN AVAGRAHA
 <Multi_key> <b> <b> <comma> <Return> : "্" U09CD   # BENGALI SIGN VIRAMA
+
+<Multi_key> <b> <b> <2> : "ঽ" U09BD   # BENGALI SIGN AVAGRAHA
 <Multi_key> <b> <b> <R> <u> : "৳" U09F3   # BENGALI RUPEE SIGN
 
 # Numerals
@@ -3140,8 +3144,9 @@ include "%L"
 <Multi_key> <b> <g> <period> <Return> : "ં" U0A82   # GUJARATI SIGN ANUSVARA (conflicts)
 <Multi_key> <b> <g> <colon> <Return> : "ઃ" U0A83   # GUJARATI SIGN VISARGA (conflicts)
 <Multi_key> <b> <g> <underscore> <period> <Return> : "઼" U0ABC   # GUJARATI SIGN NUKTA (conflicts)
-<Multi_key> <b> <g> <S> : "ઽ" U0ABD   # GUJARATI SIGN AVAGRAHA (conflicts)
 <Multi_key> <b> <g> <comma> <Return> : "્" U0ACD   # GUJARATI SIGN VIRAMA (conflicts)
+
+<Multi_key> <b> <g> <S> : "ઽ" U0ABD   # GUJARATI SIGN AVAGRAHA (conflicts)
 <Multi_key> <b> <g> <o> <m> : "ૐ" U0AD0   # GUJARATI OM (conflicts)
 <Multi_key> <b> <g> <R> <u> : "૱" U0AF1   # GUJARATI RUPEE SIGN (conflicts)
 
@@ -3161,6 +3166,110 @@ include "%L"
 # Punctuation
 
 <Multi_key> <b> <g> <o> <period> : "૰" U0AF0   # GUJARATI ABBREVIATION SIGN (conflicts)
+
+# (k = Kannada)
+
+# Consonants
+
+<Multi_key> <b> <k> <k> <space> : "ಕ" U0C95   # KANNADA LETTER KA
+<Multi_key> <b> <k> <k> <h> : "ಖ" U0C96   # KANNADA LETTER KHA
+<Multi_key> <b> <k> <g> <space> : "ಗ" U0C97   # KANNADA LETTER GA
+<Multi_key> <b> <k> <g> <h> : "ಘ" U0C98   # KANNADA LETTER GHA
+<Multi_key> <b> <k> <semicolon> <n> : "ಙ" U0C99   # KANNADA LETTER NGA
+<Multi_key> <b> <k> <c> <space> : "ಚ" U0C9A   # KANNADA LETTER CA
+<Multi_key> <b> <k> <c> <h> : "ಛ" U0C9B   # KANNADA LETTER CHA
+<Multi_key> <b> <k> <j> <space> : "ಜ" U0C9C   # KANNADA LETTER JA
+<Multi_key> <b> <k> <j> <h> : "ಝ" U0C9D   # KANNADA LETTER JHA
+<Multi_key> <b> <k> <asciitilde> <n> : "ಞ" U0C9E   # KANNADA LETTER NYA
+<Multi_key> <b> <k> <period> <t> <space> : "ಟ" U0C9F   # KANNADA LETTER TTA
+<Multi_key> <b> <k> <period> <t> <h> : "ಠ" U0CA0   # KANNADA LETTER TTHA
+<Multi_key> <b> <k> <period> <d> <space> : "ಡ" U0CA1   # KANNADA LETTER DDA
+<Multi_key> <b> <k> <period> <d> <h> : "ಢ" U0CA2   # KANNADA LETTER DDHA
+<Multi_key> <b> <k> <period> <n> : "ಣ" U0CA3   # KANNADA LETTER NNA
+<Multi_key> <b> <k> <t> <space> : "ತ" U0CA4   # KANNADA LETTER TA
+<Multi_key> <b> <k> <t> <h> : "ಥ" U0CA5   # KANNADA LETTER THA
+<Multi_key> <b> <k> <d> <space> : "ದ" U0CA6   # KANNADA LETTER DA
+<Multi_key> <b> <k> <d> <h> : "ಧ" U0CA7   # KANNADA LETTER DHA
+<Multi_key> <b> <k> <n> : "ನ" U0CA8   # KANNADA LETTER NA
+<Multi_key> <b> <k> <p> <space> : "ಪ" U0CAA   # KANNADA LETTER PA
+<Multi_key> <b> <k> <p> <h> : "ಫ" U0CAB   # KANNADA LETTER PHA
+<Multi_key> <b> <k> <b> <space> : "ಬ" U0CAC   # KANNADA LETTER BA
+<Multi_key> <b> <k> <b> <h> : "ಭ" U0CAD   # KANNADA LETTER BHA
+<Multi_key> <b> <k> <m> : "ಮ" U0CAE   # KANNADA LETTER MA
+<Multi_key> <b> <k> <y> : "ಯ" U0CAF   # KANNADA LETTER YA
+<Multi_key> <b> <k> <r> : "ರ" U0CB0   # KANNADA LETTER RA
+<Multi_key> <b> <k> <underscore> <r> : "ಱ" U0CB1   # KANNADA LETTER RRA
+<Multi_key> <b> <k> <l> : "ಲ" U0CB2   # KANNADA LETTER LA
+<Multi_key> <b> <k> <period> <l> : "ಳ" U0CB3   # KANNADA LETTER LLA
+<Multi_key> <b> <k> <v> : "ವ" U0CB5   # KANNADA LETTER VA
+<Multi_key> <b> <k> <semicolon> <s> : "ಶ" U0CB6   # KANNADA LETTER SHA
+<Multi_key> <b> <k> <period> <s> : "ಷ" U0CB7   # KANNADA LETTER SSA
+<Multi_key> <b> <k> <s> : "ಸ" U0CB8   # KANNADA LETTER SA
+<Multi_key> <b> <k> <h> : "ಹ" U0CB9   # KANNADA LETTER HA
+<Multi_key> <b> <k> <f> : "ೞ" U0CDE   # KANNADA LETTER FA
+
+# Independent Vowels
+
+<Multi_key> <b> <k> <a> <space> : "ಅ" U0C85   # KANNADA LETTER A
+<Multi_key> <b> <k> <a> <a> <space> : "ಆ" U0C86   # KANNADA LETTER AA
+<Multi_key> <b> <k> <i> <space> : "ಇ" U0C87   # KANNADA LETTER I
+<Multi_key> <b> <k> <i> <i> <space> : "ಈ" U0C88   # KANNADA LETTER II
+<Multi_key> <b> <k> <u> <space> : "ಉ" U0C89   # KANNADA LETTER U
+<Multi_key> <b> <k> <u> <u> <space> : "ಊ" U0C8A   # KANNADA LETTER UU
+<Multi_key> <b> <k> <comma> <r> <space> : "ಋ" U0C8B   # KANNADA LETTER VOCALIC R
+<Multi_key> <b> <k> <comma> <l> <space> : "ಌ" U0C8C   # KANNADA LETTER VOCALIC L
+<Multi_key> <b> <k> <e> <space> : "ಎ" U0C8E   # KANNADA LETTER E
+<Multi_key> <b> <k> <e> <e> <space> : "ಏ" U0C8F   # KANNADA LETTER EE
+<Multi_key> <b> <k> <a> <i> <space> : "ಐ" U0C90   # KANNADA LETTER AI
+<Multi_key> <b> <k> <o> <space> : "ಒ" U0C92   # KANNADA LETTER O
+<Multi_key> <b> <k> <o> <o> <space> : "ಓ" U0C93   # KANNADA LETTER OO
+<Multi_key> <b> <k> <a> <u> <space> : "ಔ" U0C94   # KANNADA LETTER AU
+<Multi_key> <b> <k> <comma> <r> <r> <space> : "ೠ" U0CE0   # KANNADA LETTER VOCALIC RR
+<Multi_key> <b> <k> <comma> <l> <l> <space> : "ೡ" U0CE1   # KANNADA LETTER VOCALIC LL
+
+# Dependent Vowels
+
+<Multi_key> <b> <k> <a> <a> <Return> : "ಾ" U0CBE   # KANNADA VOWEL SIGN AA
+<Multi_key> <b> <k> <i> <Return> : "ಿ" U0CBF   # KANNADA VOWEL SIGN I
+<Multi_key> <b> <k> <i> <i> <Return> : "ೀ" U0CC0   # KANNADA VOWEL SIGN II
+<Multi_key> <b> <k> <u> <Return> : "ು" U0CC1   # KANNADA VOWEL SIGN U
+<Multi_key> <b> <k> <u> <u> <Return> : "ೂ" U0CC2   # KANNADA VOWEL SIGN UU
+<Multi_key> <b> <k> <comma> <r> <Return> : "ೃ" U0CC3   # KANNADA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <k> <comma> <r> <r> <Return> : "ೄ" U0CC4   # KANNADA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <k> <e> <Return> : "ೆ" U0CC6   # KANNADA VOWEL SIGN E
+<Multi_key> <b> <k> <e> <e> <Return> : "ೇ" U0CC7   # KANNADA VOWEL SIGN EE
+<Multi_key> <b> <k> <a> <i> <Return> : "ೈ" U0CC8   # KANNADA VOWEL SIGN AI
+<Multi_key> <b> <k> <o> <Return> : "ೊ" U0CCA   # KANNADA VOWEL SIGN O
+<Multi_key> <b> <k> <o> <o> <Return> : "ೋ" U0CCB   # KANNADA VOWEL SIGN OO
+<Multi_key> <b> <k> <a> <u> <Return> : "ೌ" U0CCC   # KANNADA VOWEL SIGN AU
+<Multi_key> <b> <k> <comma> <l> <Return> : "ೢ" U0CE2   # KANNADA VOWEL SIGN VOCALIC L
+<Multi_key> <b> <k> <comma> <l> <l> <Return> : "ೣ" U0CE3   # KANNADA VOWEL SIGN VOCALIC LL
+
+# Other signs
+
+<Multi_key> <b> <k> <period> <parenright> <space> : "ಀ" U0C80   # KANNADA SIGN SPACING CANDRABINDU
+<Multi_key> <b> <k> <period> <parenright> <Return> : "ಁ" U0C81   # KANNADA SIGN CANDRABINDU
+<Multi_key> <b> <k> <0> <Return> : "ಂ" U0C82   # KANNADA SIGN ANUSVARA
+<Multi_key> <b> <k> <8> <Return> : "ಃ" U0C83   # KANNADA SIGN VISARGA
+<Multi_key> <b> <k> <underscore> <period> <period> <Return> : "಼" U0CBC   # KANNADA SIGN NUKTA
+
+<Multi_key> <b> <k> <at> : "಄" U0C84   # KANNADA SIGN SIDDHAM
+<Multi_key> <b> <k> <S> : "ಽ" U0CBD   # KANNADA SIGN AVAGRAHA
+<Multi_key> <b> <k> <x> : "ೱ" U0CF1   # KANNADA SIGN JIHVAMULIYA
+<Multi_key> <b> <k> <o> <x> : "ೲ" U0CF2   # KANNADA SIGN UPADHMANIYA
+
+# Numerals
+
+<Multi_key> <b> <k> <numbersign> <0> : "೦" U0CE6   # KANNADA DIGIT ZERO
+<Multi_key> <b> <k> <numbersign> <1> : "೧" U0CE7   # KANNADA DIGIT ONE
+<Multi_key> <b> <k> <numbersign> <2> : "೨" U0CE8   # KANNADA DIGIT TWO
+<Multi_key> <b> <k> <numbersign> <3> : "೩" U0CE9   # KANNADA DIGIT THREE
+<Multi_key> <b> <k> <numbersign> <4> : "೪" U0CEA   # KANNADA DIGIT FOUR
+<Multi_key> <b> <k> <numbersign> <5> : "೫" U0CEB   # KANNADA DIGIT FIVE
+<Multi_key> <b> <k> <numbersign> <6> : "೬" U0CEC   # KANNADA DIGIT SIX
+<Multi_key> <b> <k> <numbersign> <7> : "೭" U0CED   # KANNADA DIGIT SEVEN
+<Multi_key> <b> <k> <numbersign> <8> : "೮" U0CEE   # KANNADA DIGIT EIGHT
+<Multi_key> <b> <k> <numbersign> <9> : "೯" U0CEF   # KANNADA DIGIT NINE
 
 # (t = Tamil)
 
