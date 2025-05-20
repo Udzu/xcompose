@@ -1889,6 +1889,7 @@ include "%L"
 <Multi_key> <parenleft> <r> <b> <parenright> : "ꭠ" UAB60   # LATIN SMALL LETTER SAKHA YAT (visually similar)
 <Multi_key> <parenleft> <R> <E> <parenright> : "Ԙ" U0518   # CYRILLIC CAPITAL LETTER YAE (visually similar)
 <Multi_key> <parenleft> <r> <l> <parenright> : "𑀲" U11032   # BRAHMI LETTER SA (visually similar)
+<Multi_key> <parenleft> <r> <o> <parenright> : "ᘙ" U1619   # CANADIAN SYLLABICS CARRIER JI (visually similar)
 <Multi_key> <parenleft> <r> <o> <o> <parenright> : "ᰢ" U1C22   # LEPCHA LETTER WA (visually similar)
 <Multi_key> <parenleft> <R> <s> <parenright> : "₨" U20A8   # RUPEE SIGN
 <Multi_key> <parenleft> <r> <s> <parenright> : "𖹇" U16E47   # MEDEFAIDRIN CAPITAL LETTER P (visually similar)
@@ -2387,9 +2388,9 @@ include "%L"
 
 # default glyph types are (c = characters x = extra characters # = numbers ; = punctuation)
 
-##########################################
-# (a) Arabic (and Syriac & Neo-Tifinagh) #
-##########################################
+###################################################
+# (a) Arabic (and Mandaic, Syriac & Neo-Tifinagh) #
+###################################################
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -2471,6 +2472,40 @@ include "%L"
 <Multi_key> <a> <numbersign> <7> : "٧"  U0667   # ARABIC-INDIC DIGIT SEVEN
 <Multi_key> <a> <numbersign> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <numbersign> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
+
+# (m = Mandaic)
+
+<Multi_key> <a> <m> <a> : "ࡀ" U0840   # MANDAIC LETTER HALQA
+<Multi_key> <a> <m> <b> : "ࡁ" U0841   # MANDAIC LETTER AB
+<Multi_key> <a> <m> <g> : "ࡂ" U0842   # MANDAIC LETTER AG
+<Multi_key> <a> <m> <d> : "ࡃ" U0843   # MANDAIC LETTER AD
+<Multi_key> <a> <m> <h> : "ࡄ" U0844   # MANDAIC LETTER AH
+<Multi_key> <a> <m> <u> : "ࡅ" U0845   # MANDAIC LETTER USHENNA
+<Multi_key> <a> <m> <z> : "ࡆ" U0846   # MANDAIC LETTER AZ
+<Multi_key> <a> <m> <H> : "ࡇ" U0847   # MANDAIC LETTER IT
+<Multi_key> <a> <m> <T> : "ࡈ" U0848   # MANDAIC LETTER ATT
+<Multi_key> <a> <m> <i> : "ࡉ" U0849   # MANDAIC LETTER AKSA
+<Multi_key> <a> <m> <k> : "ࡊ" U084A   # MANDAIC LETTER AK
+<Multi_key> <a> <m> <l> : "ࡋ" U084B   # MANDAIC LETTER AL
+<Multi_key> <a> <m> <m> : "ࡌ" U084C   # MANDAIC LETTER AM
+<Multi_key> <a> <m> <n> : "ࡍ" U084D   # MANDAIC LETTER AN
+<Multi_key> <a> <m> <s> : "ࡎ" U084E   # MANDAIC LETTER AS
+<Multi_key> <a> <m> <e> : "ࡏ" U084F   # MANDAIC LETTER IN
+<Multi_key> <a> <m> <p> : "ࡐ" U0850   # MANDAIC LETTER AP
+<Multi_key> <a> <m> <Z> : "ࡑ" U0851   # MANDAIC LETTER ASZ
+<Multi_key> <a> <m> <q> : "ࡒ" U0852   # MANDAIC LETTER AQ
+<Multi_key> <a> <m> <r> : "ࡓ" U0853   # MANDAIC LETTER AR
+<Multi_key> <a> <m> <S> : "ࡔ" U0854   # MANDAIC LETTER ASH
+<Multi_key> <a> <m> <t> : "ࡕ" U0855   # MANDAIC LETTER AT
+<Multi_key> <a> <m> <D> : "ࡖ" U0856   # MANDAIC LETTER DUSHENNA
+<Multi_key> <a> <m> <K> <D> : "ࡗ" U0857   # MANDAIC LETTER KAD
+<Multi_key> <a> <m> <grave> : "ࡘ" U0858   # MANDAIC LETTER AIN
+
+<Multi_key> <a> <m> <period> <period> <Return> : "࡙" U0859   # MANDAIC AFFRICATION MARK
+<Multi_key> <a> <m> <underscore> <Return> : "࡚" U085A   # MANDAIC VOCALIZATION MARK
+<Multi_key> <a> <m> <period> <Return> : "࡛" U085B   # MANDAIC GEMINATION MARK
+
+<Multi_key> <a> <m> <period> <o> : "࡞" U085E   # MANDAIC PUNCTUATION
 
 # (s/S = Syriac)
 
@@ -4181,9 +4216,9 @@ include "%L"
 <Multi_key> <c> <G> <m>          : "ⱞ" U2C5E   # GLAGOLITIC SMALL LETTER LATINATE MYSLITE (conflicts)
 <Multi_key> <c> <G> <less> <c> <h> : "ⱟ" U2C5F   # GLAGOLITIC SMALL LETTER CAUDATE CHRIVI (conflicts)
 
-######################################
-# (C) ConScripts (Deseret & Shavian) #
-######################################
+################################################
+# (C) ConScripts (Cherokee, Deseret & Shavian) #
+################################################
 
 # (d/D = Deseret)
 
@@ -7738,7 +7773,6 @@ include "%L"
 
 <Multi_key> <a> <b> <a> <c> <u> <s> : "🧮"  U1F9EE        # ABACUS
 <Multi_key> <a> <d> <m> <i> <t>     : "🎟️"  U1F39F UFE0F  # ADMISSION TICKETS EMOJI
-<Multi_key> <a> <m> <e> <x>         : "💳"  U1F4B3        # CREDIT CARD (AMEX)
 <Multi_key> <b> <a> <d> <g> <e>     : "📛"  U1F4DB        # NAME BADGE (conflicts with ă, use ua)
 <Multi_key> <b> <i> <l> <l> <s>     : "💸"  U1F4B8        # MONEY WITH WINGS (BILLS) (use dollar for 💵) (conflicts with ĭ, use ui)
 <Multi_key> <b> <o> <o> <k> <B>     : "📘"  U1F4D8        # BLUE BOOK (conflicts with ŏ, use uo)
@@ -7851,7 +7885,6 @@ include "%L"
 <Multi_key> <w> <d> <w> <i> <n> <d> : "🪈"  U1FA88        # FLUTE (WOODWIND) (not ideal but flute=ﬂ, pipe=π and fife=ﬁ are taken)
 
 <Multi_key> <a> <l> <e> <m> <b>     : "⚗️"  U2697 UFE0F   # ALEMBIC EMOJI
-<Multi_key> <a> <m> <p> <h> <o> <r> : "🏺"  U1F3FA        # AMPHORA
 <Multi_key> <a> <n> <d> <c> <u> <t> : "🎬"  U1F3AC        # CLAPPER BOARD (AND CUT!)
 <Multi_key> <a> <x> <e>             : "🪓"  U1FA93        # AXE
 <Multi_key> <b> <a> <l> <l>         : "🎈"  U1F388        # BALLOON (conflicts with ă, use ua) (use AFL/FIFA/MLB/NBA/etc for sport balls)
@@ -7888,6 +7921,7 @@ include "%L"
 <Multi_key> <g> <e> <a> <r>         : "⚙️"  U2699 UFE0F   # GEAR EMOJI
 <Multi_key> <g> <i> <f> <t>         : "🎁"  U1F381        # WRAPPED PRESENT (GIFT)
 <Multi_key> <g> <l> <i> <t> <t> <e> : "🪩"  U1FAA9        # MIRROR BALL (GLITTER BALL)
+<Multi_key> <g> <r> <e> <e> <k>     : "🏺"  U1F3FA        # AMPHORA (GREEK)
 <Multi_key> <h> <a> <m> <m> <e> <r> : "🔨"  U1F528        # HAMMER
 <Multi_key> <h> <o> <o> <k>         : "🪝"  U1FA9D        # HOOK
 <Multi_key> <i> <d> <e> <a>         : "💡"  U1F4A1        # ELECTRIC LIGHT BULB (IDEA)
