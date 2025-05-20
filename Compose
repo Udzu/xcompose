@@ -2940,6 +2940,7 @@ include "%L"
 
 <Multi_key> <b> <d> <S>                            : "ऽ" U093D   # DEVANAGARI SIGN AVAGRAHA
 <Multi_key> <b> <d> <o> <m>                        : "ॐ" U0950   # DEVANAGARI OM
+<Multi_key> <b> <d> <R> <u>                        : "௹" U0BF9   # TAMIL RUPEE SIGN
 
 # Numerals
 
@@ -3041,6 +3042,7 @@ include "%L"
 <Multi_key> <b> <b> <underscore> <period> <Return> : "়" U09BC   # BENGALI SIGN NUKTA
 <Multi_key> <b> <b> <S> : "ঽ" U09BD   # BENGALI SIGN AVAGRAHA
 <Multi_key> <b> <b> <comma> <Return> : "্" U09CD   # BENGALI SIGN VIRAMA
+<Multi_key> <b> <b> <R> <u> : "৳" U09F3   # BENGALI RUPEE SIGN
 
 # Numerals
 
@@ -3054,6 +3056,111 @@ include "%L"
 <Multi_key> <b> <b> <numbersign> <7> : "৭" U09ED   # BENGALI DIGIT SEVEN
 <Multi_key> <b> <b> <numbersign> <8> : "৮" U09EE   # BENGALI DIGIT EIGHT
 <Multi_key> <b> <b> <numbersign> <9> : "৯" U09EF   # BENGALI DIGIT NINE
+
+# (g = Gujarati)
+
+# Consonants
+
+<Multi_key> <b> <g> <k> <space> : "ક" U0A95   # GUJARATI LETTER KA (conflicts with ğ, use ug)
+<Multi_key> <b> <g> <k> <h> : "ખ" U0A96   # GUJARATI LETTER KHA (conflicts)
+<Multi_key> <b> <g> <g> <space> : "ગ" U0A97   # GUJARATI LETTER GA (conflicts)
+<Multi_key> <b> <g> <g> <h> : "ઘ" U0A98   # GUJARATI LETTER GHA (conflicts)
+<Multi_key> <b> <g> <semicolon> <n> : "ઙ" U0A99   # GUJARATI LETTER NGA (conflicts)
+<Multi_key> <b> <g> <c> <space> : "ચ" U0A9A   # GUJARATI LETTER CA (conflicts)
+<Multi_key> <b> <g> <c> <h> : "છ" U0A9B   # GUJARATI LETTER CHA (conflicts)
+<Multi_key> <b> <g> <j> <space> : "જ" U0A9C   # GUJARATI LETTER JA (conflicts)
+<Multi_key> <b> <g> <j> <h> : "ઝ" U0A9D   # GUJARATI LETTER JHA (conflicts)
+<Multi_key> <b> <g> <asciitilde> <n> : "ઞ" U0A9E   # GUJARATI LETTER NYA (conflicts)
+<Multi_key> <b> <g> <period> <t> <space> : "ટ" U0A9F   # GUJARATI LETTER TTA (conflicts)
+<Multi_key> <b> <g> <period> <t> <h> : "ઠ" U0AA0   # GUJARATI LETTER TTHA (conflicts)
+<Multi_key> <b> <g> <period> <d> <space> : "ડ" U0AA1   # GUJARATI LETTER DDA (conflicts)
+<Multi_key> <b> <g> <period> <d> <h> : "ઢ" U0AA2   # GUJARATI LETTER DDHA (conflicts)
+<Multi_key> <b> <g> <period> <n> : "ણ" U0AA3   # GUJARATI LETTER NNA (conflicts)
+<Multi_key> <b> <g> <t> <space> : "ત" U0AA4   # GUJARATI LETTER TA (conflicts)
+<Multi_key> <b> <g> <t> <h> : "થ" U0AA5   # GUJARATI LETTER THA (conflicts)
+<Multi_key> <b> <g> <d> <space> : "દ" U0AA6   # GUJARATI LETTER DA (conflicts)
+<Multi_key> <b> <g> <d> <h> : "ધ" U0AA7   # GUJARATI LETTER DHA (conflicts)
+<Multi_key> <b> <g> <n> : "ન" U0AA8   # GUJARATI LETTER NA (conflicts)
+<Multi_key> <b> <g> <p> <space> : "પ" U0AAA   # GUJARATI LETTER PA (conflicts)
+<Multi_key> <b> <g> <p> <h> : "ફ" U0AAB   # GUJARATI LETTER PHA (conflicts)
+<Multi_key> <b> <g> <b> <space> : "બ" U0AAC   # GUJARATI LETTER BA (conflicts)
+<Multi_key> <b> <g> <b> <h> : "ભ" U0AAD   # GUJARATI LETTER BHA (conflicts)
+<Multi_key> <b> <g> <m> : "મ" U0AAE   # GUJARATI LETTER MA (conflicts)
+<Multi_key> <b> <g> <y> : "ય" U0AAF   # GUJARATI LETTER YA (conflicts)
+<Multi_key> <b> <g> <r> : "ર" U0AB0   # GUJARATI LETTER RA (conflicts)
+<Multi_key> <b> <g> <l> : "લ" U0AB2   # GUJARATI LETTER LA (conflicts)
+<Multi_key> <b> <g> <period> <l> : "ળ" U0AB3   # GUJARATI LETTER LLA (conflicts)
+<Multi_key> <b> <g> <v> : "વ" U0AB5   # GUJARATI LETTER VA (conflicts)
+<Multi_key> <b> <g> <semicolon> <s> : "શ" U0AB6   # GUJARATI LETTER SHA (conflicts)
+<Multi_key> <b> <g> <period> <s> : "ષ" U0AB7   # GUJARATI LETTER SSA (conflicts)
+<Multi_key> <b> <g> <s> : "સ" U0AB8   # GUJARATI LETTER SA (conflicts)
+<Multi_key> <b> <g> <h> : "હ" U0AB9   # GUJARATI LETTER HA (conflicts)
+<Multi_key> <b> <g> <z> <h> : "ૹ" U0AF9   # GUJARATI LETTER ZHA (conflicts)
+
+# Independent Vowels
+
+<Multi_key> <b> <g> <a> <space> : "અ" U0A85   # GUJARATI LETTER A (conflicts)
+<Multi_key> <b> <g> <a> <a> <space> : "આ" U0A86   # GUJARATI LETTER AA (conflicts)
+<Multi_key> <b> <g> <i> <space> : "ઇ" U0A87   # GUJARATI LETTER I (conflicts)
+<Multi_key> <b> <g> <i> <i> <space> : "ઈ" U0A88   # GUJARATI LETTER II (conflicts)
+<Multi_key> <b> <g> <u> <space> : "ઉ" U0A89   # GUJARATI LETTER U (conflicts)
+<Multi_key> <b> <g> <u> <u> <space> : "ઊ" U0A8A   # GUJARATI LETTER UU (conflicts)
+<Multi_key> <b> <g> <comma> <r> <space> : "ઋ" U0A8B   # GUJARATI LETTER VOCALIC R (conflicts)
+<Multi_key> <b> <g> <comma> <l> <space> : "ઌ" U0A8C   # GUJARATI LETTER VOCALIC L (conflicts)
+<Multi_key> <b> <g> <asciicircum> <e> <space>: "ઍ" U0A8D   # GUJARATI VOWEL CANDRA E (conflicts)
+<Multi_key> <b> <g> <e> <e> <space> : "એ" U0A8F   # GUJARATI LETTER E (conflicts)
+<Multi_key> <b> <g> <a> <i> <space> : "ઐ" U0A90   # GUJARATI LETTER AI (conflicts)
+<Multi_key> <b> <g> <asciicircum> <o> <space>: "ઑ" U0A91   # GUJARATI VOWEL CANDRA O (conflicts)
+<Multi_key> <b> <g> <o> <o> <space> : "ઓ" U0A93   # GUJARATI LETTER O (conflicts)
+<Multi_key> <b> <g> <a> <u> <space> : "ઔ" U0A94   # GUJARATI LETTER AU (conflicts)
+<Multi_key> <b> <g> <comma> <r> <r> <space> : "ૠ" U0AE0   # GUJARATI LETTER VOCALIC RR (conflicts)
+<Multi_key> <b> <g> <comma> <l> <l> <space> : "ૡ" U0AE1   # GUJARATI LETTER VOCALIC LL (conflicts)
+
+# Dependent Vowels
+
+<Multi_key> <b> <g> <a> <a> <Return> : "ા" U0ABE   # GUJARATI VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <g> <i> <Return> : "િ" U0ABF   # GUJARATI VOWEL SIGN I (conflicts)
+<Multi_key> <b> <g> <i> <i> <Return> : "ી" U0AC0   # GUJARATI VOWEL SIGN II (conflicts)
+<Multi_key> <b> <g> <u> <Return> : "ુ" U0AC1   # GUJARATI VOWEL SIGN U (conflicts)
+<Multi_key> <b> <g> <u> <u> <Return> : "ૂ" U0AC2   # GUJARATI VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <g> <comma> <r> <Return> : "ૃ" U0AC3   # GUJARATI VOWEL SIGN VOCALIC R (conflicts)
+<Multi_key> <b> <g> <comma> <r> <r> <Return> : "ૄ" U0AC4   # GUJARATI VOWEL SIGN VOCALIC RR (conflicts)
+<Multi_key> <b> <g> <asciicircum> <e> <Return> : "ૅ" U0AC5   # GUJARATI VOWEL SIGN CANDRA E (conflicts)
+<Multi_key> <b> <g> <e> <e> <Return> : "ે" U0AC7   # GUJARATI VOWEL SIGN E (conflicts)
+<Multi_key> <b> <g> <a> <i> <Return> : "ૈ" U0AC8   # GUJARATI VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <g> <asciicircum> <o> <Return> : "ૉ" U0AC9   # GUJARATI VOWEL SIGN CANDRA O (conflicts)
+<Multi_key> <b> <g> <o> <o> <Return> : "ો" U0ACB   # GUJARATI VOWEL SIGN O (conflicts)
+<Multi_key> <b> <g> <a> <u> <Return> : "ૌ" U0ACC   # GUJARATI VOWEL SIGN AU (conflicts)
+<Multi_key> <b> <g> <comma> <l> <Return> : "ૢ" U0AE2   # GUJARATI VOWEL SIGN VOCALIC L (conflicts)
+<Multi_key> <b> <g> <comma> <l> <l> <Return> : "ૣ" U0AE3   # GUJARATI VOWEL SIGN VOCALIC LL (conflicts)
+
+# Other signs
+
+<Multi_key> <b> <g> <period> <parenright> <Return> : "ઁ" U0A81   # GUJARATI SIGN CANDRABINDU (conflicts)
+<Multi_key> <b> <g> <period> <Return> : "ં" U0A82   # GUJARATI SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <g> <colon> <Return> : "ઃ" U0A83   # GUJARATI SIGN VISARGA (conflicts)
+<Multi_key> <b> <g> <underscore> <period> <Return> : "઼" U0ABC   # GUJARATI SIGN NUKTA (conflicts)
+<Multi_key> <b> <g> <S> : "ઽ" U0ABD   # GUJARATI SIGN AVAGRAHA (conflicts)
+<Multi_key> <b> <g> <comma> <Return> : "્" U0ACD   # GUJARATI SIGN VIRAMA (conflicts)
+<Multi_key> <b> <g> <o> <m> : "ૐ" U0AD0   # GUJARATI OM (conflicts)
+<Multi_key> <b> <g> <R> <u> : "૱" U0AF1   # GUJARATI RUPEE SIGN (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <g> <numbersign> <0> : "૦" U0AE6   # GUJARATI DIGIT ZERO (conflicts)
+<Multi_key> <b> <g> <numbersign> <1> : "૧" U0AE7   # GUJARATI DIGIT ONE (conflicts)
+<Multi_key> <b> <g> <numbersign> <2> : "૨" U0AE8   # GUJARATI DIGIT TWO (conflicts)
+<Multi_key> <b> <g> <numbersign> <3> : "૩" U0AE9   # GUJARATI DIGIT THREE (conflicts)
+<Multi_key> <b> <g> <numbersign> <4> : "૪" U0AEA   # GUJARATI DIGIT FOUR (conflicts)
+<Multi_key> <b> <g> <numbersign> <5> : "૫" U0AEB   # GUJARATI DIGIT FIVE (conflicts)
+<Multi_key> <b> <g> <numbersign> <6> : "૬" U0AEC   # GUJARATI DIGIT SIX (conflicts)
+<Multi_key> <b> <g> <numbersign> <7> : "૭" U0AED   # GUJARATI DIGIT SEVEN (conflicts)
+<Multi_key> <b> <g> <numbersign> <8> : "૮" U0AEE   # GUJARATI DIGIT EIGHT (conflicts)
+<Multi_key> <b> <g> <numbersign> <9> : "૯" U0AEF   # GUJARATI DIGIT NINE (conflicts)
+
+# Punctuation
+
+<Multi_key> <b> <g> <o> <period> : "૰" U0AF0   # GUJARATI ABBREVIATION SIGN (conflicts)
 
 # (t = Tamil)
 
