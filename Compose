@@ -6532,6 +6532,9 @@ include "%L"
 <Multi_key> <parenleft> <less> <parenright>          : "⧀"  U29C0   # CIRCLED LESS-THAN
 <Multi_key> <parenleft> <greater> <parenright>       : "⧁"  U29C1   # CIRCLED GREATER-THAN
 <Multi_key> <parenleft> <minus> <colon> <parenright> : "⨸"  U2A38   # CIRCLED DIVISION SIGN (conflicts with useless {)
+<Multi_key> <bracketleft> <asterisk> <bracketright>  : "⧆"  U29C6   # SQUARED ASTERISK
+<Multi_key> <bracketleft> <slash> <backslash> <bracketright> : "⟎"  U27CE   # SQUARED LOGICAL AND
+<Multi_key> <bracketleft> <backslash> <slash> <bracketright> : "⟏"  U27CF   # SQUARED LOGICAL OR
 <Multi_key> <underscore> <Multi_key> <backslash> <slash> : "⊻"  U22BB   # XOR (alternatively xor)
 
 # LaTeX-inspired names
@@ -8432,7 +8435,9 @@ include "%L"
 <Multi_key> <bracketleft> <bracketright> <backslash>   : "⧅" U29C5    # SQUARED FALLING DIAGONAL SLASH (conflicts)
 <Multi_key> <bracketleft> <bracketright> <plus>        : "⊞" U229E    # SQUARED PLUS (conflicts)
 <Multi_key> <bracketleft> <bracketright> <X>           : "⊠" U22A0    # SQUARED TIMES (conflicts)
+<Multi_key> <bracketleft> <bracketright> <o>           : "⧇" U29C7    # SQUARED SMALL CIRCLE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <2> <0>       : "⧈" U29C8    # SQUARED SQUARE (conflicts)
 
 # Circles ()
 
