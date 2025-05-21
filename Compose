@@ -2792,7 +2792,7 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# (Brahmi, Devanagari, Bengali, Burmese, Gujarati, Gurmukhi, Kannada, Malayalam, Odia, Tamil, Telugu)
+# (Brahmi, Devanagari, Bengali, Burmese, Gujarati, Gurmukhi, Kannada, Malayalam, Odia, Sinhala, Tamil, Telugu)
 
 # based on 7-bit ISO 15919
 
@@ -3758,6 +3758,113 @@ include "%L"
 <Multi_key> <b> <O> <numbersign> <7> : "୭" U0B6D   # ORIYA DIGIT SEVEN (conflicts)
 <Multi_key> <b> <O> <numbersign> <8> : "୮" U0B6E   # ORIYA DIGIT EIGHT (conflicts)
 <Multi_key> <b> <O> <numbersign> <9> : "୯" U0B6F   # ORIYA DIGIT NINE (conflicts)
+
+# (s = Sinhala)
+
+# Consonants
+
+<Multi_key> <b> <s> <k> <space> : "ක" U0D9A   # SINHALA LETTER ALPAPRAANA KAYANNA
+<Multi_key> <b> <s> <k> <h> : "ඛ" U0D9B   # SINHALA LETTER MAHAAPRAANA KAYANNA
+<Multi_key> <b> <s> <g> <space> : "ග" U0D9C   # SINHALA LETTER ALPAPRAANA GAYANNA
+<Multi_key> <b> <s> <g> <h> : "ඝ" U0D9D   # SINHALA LETTER MAHAAPRAANA GAYANNA
+<Multi_key> <b> <s> <semicolon> <n> : "ඞ" U0D9E   # SINHALA LETTER KANTAJA NAASIKYAYA
+<Multi_key> <b> <s> <asciicircum> <n> <g> : "ඟ" U0D9F   # SINHALA LETTER SANYAKA GAYANNA
+<Multi_key> <b> <s> <c> <space> : "ච" U0DA0   # SINHALA LETTER ALPAPRAANA CAYANNA
+<Multi_key> <b> <s> <c> <h> : "ඡ" U0DA1   # SINHALA LETTER MAHAAPRAANA CAYANNA
+<Multi_key> <b> <s> <j> <space> : "ජ" U0DA2   # SINHALA LETTER ALPAPRAANA JAYANNA
+<Multi_key> <b> <s> <j> <h> : "ඣ" U0DA3   # SINHALA LETTER MAHAAPRAANA JAYANNA
+<Multi_key> <b> <s> <asciitilde> <n> : "ඤ" U0DA4   # SINHALA LETTER TAALUJA NAASIKYAYA
+<Multi_key> <b> <s> <j> <asciitilde> <n> : "ඥ" U0DA5   # SINHALA LETTER TAALUJA SANYOOGA NAAKSIKYAYA
+<Multi_key> <b> <s> <asciicircum> <n> <j> : "ඦ" U0DA6   # SINHALA LETTER SANYAKA JAYANNA
+<Multi_key> <b> <s> <period> <t> <space> : "ට" U0DA7   # SINHALA LETTER ALPAPRAANA TTAYANNA
+<Multi_key> <b> <s> <period> <t> <h> : "ඨ" U0DA8   # SINHALA LETTER MAHAAPRAANA TTAYANNA
+<Multi_key> <b> <s> <period> <d> <space> : "ඩ" U0DA9   # SINHALA LETTER ALPAPRAANA DDAYANNA
+<Multi_key> <b> <s> <period> <d> <h> : "ඪ" U0DAA   # SINHALA LETTER MAHAAPRAANA DDAYANNA
+<Multi_key> <b> <s> <period> <n> : "ණ" U0DAB   # SINHALA LETTER MUURDHAJA NAYANNA
+<Multi_key> <b> <s> <asciicircum> <n> <period> <d> : "ඬ" U0DAC   # SINHALA LETTER SANYAKA DDAYANNA
+<Multi_key> <b> <s> <t> <space> : "ත" U0DAD   # SINHALA LETTER ALPAPRAANA TAYANNA
+<Multi_key> <b> <s> <t> <h> : "ථ" U0DAE   # SINHALA LETTER MAHAAPRAANA TAYANNA
+<Multi_key> <b> <s> <d> <space> : "ද" U0DAF   # SINHALA LETTER ALPAPRAANA DAYANNA
+<Multi_key> <b> <s> <d> <h> : "ධ" U0DB0   # SINHALA LETTER MAHAAPRAANA DAYANNA
+<Multi_key> <b> <s> <n> <space> : "න" U0DB1   # SINHALA LETTER DANTAJA NAYANNA
+<Multi_key> <b> <s> <n> <d> : "ඳ" U0DB3   # SINHALA LETTER SANYAKA DAYANNA
+<Multi_key> <b> <s> <p> <space> : "ප" U0DB4   # SINHALA LETTER ALPAPRAANA PAYANNA
+<Multi_key> <b> <s> <p> <h> : "ඵ" U0DB5   # SINHALA LETTER MAHAAPRAANA PAYANNA
+<Multi_key> <b> <s> <b> <space> : "බ" U0DB6   # SINHALA LETTER ALPAPRAANA BAYANNA
+<Multi_key> <b> <s> <b> <h> : "භ" U0DB7   # SINHALA LETTER MAHAAPRAANA BAYANNA
+<Multi_key> <b> <s> <m> : "ම" U0DB8   # SINHALA LETTER MAYANNA
+<Multi_key> <b> <s> <asciicircum> <m> <b> : "ඹ" U0DB9   # SINHALA LETTER AMBA BAYANNA
+<Multi_key> <b> <s> <y> : "ය" U0DBA   # SINHALA LETTER YAYANNA
+<Multi_key> <b> <s> <r> : "ර" U0DBB   # SINHALA LETTER RAYANNA
+<Multi_key> <b> <s> <l> : "ල" U0DBD   # SINHALA LETTER DANTAJA LAYANNA
+<Multi_key> <b> <s> <v> : "ව" U0DC0   # SINHALA LETTER VAYANNA
+<Multi_key> <b> <s> <semicolon> <s> : "ශ" U0DC1   # SINHALA LETTER TAALUJA SAYANNA
+<Multi_key> <b> <s> <period> <s> : "ෂ" U0DC2   # SINHALA LETTER MUURDHAJA SAYANNA
+<Multi_key> <b> <s> <s> : "ස" U0DC3   # SINHALA LETTER DANTAJA SAYANNA
+<Multi_key> <b> <s> <h> : "හ" U0DC4   # SINHALA LETTER HAYANNA
+<Multi_key> <b> <s> <period> <l> : "ළ" U0DC5   # SINHALA LETTER MUURDHAJA LAYANNA
+<Multi_key> <b> <s> <f> : "ෆ" U0DC6   # SINHALA LETTER FAYANNA
+
+# Independent vowels
+
+<Multi_key> <b> <s> <a> <space> : "අ" U0D85   # SINHALA LETTER AYANNA
+<Multi_key> <b> <s> <a> <a> <space> : "ආ" U0D86   # SINHALA LETTER AAYANNA
+<Multi_key> <b> <s> <a> <e> <space> : "ඇ" U0D87   # SINHALA LETTER AEYANNA
+<Multi_key> <b> <s> <a> <e> <e> <space> : "ඈ" U0D88   # SINHALA LETTER AEEYANNA
+<Multi_key> <b> <s> <i> <space> : "ඉ" U0D89   # SINHALA LETTER IYANNA
+<Multi_key> <b> <s> <i> <i> <space> : "ඊ" U0D8A   # SINHALA LETTER IIYANNA
+<Multi_key> <b> <s> <u> <space> : "උ" U0D8B   # SINHALA LETTER UYANNA
+<Multi_key> <b> <s> <u> <u> <space> : "ඌ" U0D8C   # SINHALA LETTER UUYANNA
+<Multi_key> <b> <s> <comma> <r> <space> : "ඍ" U0D8D   # SINHALA LETTER IRUYANNA
+<Multi_key> <b> <s> <comma> <r> <r> <space> : "ඎ" U0D8E   # SINHALA LETTER IRUUYANNA
+<Multi_key> <b> <s> <comma> <l> <space> : "ඏ" U0D8F   # SINHALA LETTER ILUYANNA
+<Multi_key> <b> <s> <comma> <l> <l> <space> : "ඐ" U0D90   # SINHALA LETTER ILUUYANNA
+<Multi_key> <b> <s> <e> <space> : "එ" U0D91   # SINHALA LETTER EYANNA
+<Multi_key> <b> <s> <e> <e> <space> : "ඒ" U0D92   # SINHALA LETTER EEYANNA
+<Multi_key> <b> <s> <a> <i> <space> : "ඓ" U0D93   # SINHALA LETTER AIYANNA
+<Multi_key> <b> <s> <o> <space> : "ඔ" U0D94   # SINHALA LETTER OYANNA
+<Multi_key> <b> <s> <o> <o> <space> : "ඕ" U0D95   # SINHALA LETTER OOYANNA
+<Multi_key> <b> <s> <a> <u> <space> : "ඖ" U0D96   # SINHALA LETTER AUYANNA
+
+# Dependent vowels
+
+<Multi_key> <b> <s> <a> <a> <Return> : "ා" U0DCF   # SINHALA VOWEL SIGN AELA-PILLA
+<Multi_key> <b> <s> <a> <e> <Return> : "ැ" U0DD0   # SINHALA VOWEL SIGN KETTI AEDA-PILLA
+<Multi_key> <b> <s> <a> <a> <e> <Return> : "ෑ" U0DD1   # SINHALA VOWEL SIGN DIGA AEDA-PILLA
+<Multi_key> <b> <s> <i> <Return> : "ි" U0DD2   # SINHALA VOWEL SIGN KETTI IS-PILLA
+<Multi_key> <b> <s> <i> <i> <Return> : "ී" U0DD3   # SINHALA VOWEL SIGN DIGA IS-PILLA
+<Multi_key> <b> <s> <u> <Return> : "ු" U0DD4   # SINHALA VOWEL SIGN KETTI PAA-PILLA
+<Multi_key> <b> <s> <u> <u> <Return> : "ූ" U0DD6   # SINHALA VOWEL SIGN DIGA PAA-PILLA
+<Multi_key> <b> <s> <comma> <r> <Return> : "ෘ" U0DD8   # SINHALA VOWEL SIGN GAETTA-PILLA
+<Multi_key> <b> <s> <e> <Return> : "ෙ" U0DD9   # SINHALA VOWEL SIGN KOMBUVA
+<Multi_key> <b> <s> <e> <e> <Return> : "ේ" U0DDA   # SINHALA VOWEL SIGN DIGA KOMBUVA
+<Multi_key> <b> <s> <a> <i> <Return> : "ෛ" U0DDB   # SINHALA VOWEL SIGN KOMBU DEKA
+<Multi_key> <b> <s> <o> <Return> : "ො" U0DDC   # SINHALA VOWEL SIGN KOMBUVA HAA AELA-PILLA
+<Multi_key> <b> <s> <o> <o> <Return> : "ෝ" U0DDD   # SINHALA VOWEL SIGN KOMBUVA HAA DIGA AELA-PILLA
+<Multi_key> <b> <s> <a> <u> <Return> : "ෞ" U0DDE   # SINHALA VOWEL SIGN KOMBUVA HAA GAYANUKITTA
+<Multi_key> <b> <s> <comma> <l> <Return> : "ෟ" U0DDF   # SINHALA VOWEL SIGN GAYANUKITTA
+<Multi_key> <b> <s> <comma> <r> <r> <Return> : "ෲ" U0DF2   # SINHALA VOWEL SIGN DIGA GAETTA-PILLA
+<Multi_key> <b> <s> <comma> <l> <l> <Return> : "ෳ" U0DF3   # SINHALA VOWEL SIGN DIGA GAYANUKITTA
+
+# Other signs
+
+<Multi_key> <b> <s> <period> <parenright> <Return> : "ඁ" U0D81   # SINHALA SIGN CANDRABINDU
+<Multi_key> <b> <s> <period> <Return> : "ං" U0D82   # SINHALA SIGN ANUSVARAYA
+<Multi_key> <b> <s> <colon> <Return> : "ඃ" U0D83   # SINHALA SIGN VISARGAYA
+<Multi_key> <b> <s> <P> <Return> : "්" U0DCA   # SINHALA SIGN AL-LAKUNA
+
+# Numerals
+
+<Multi_key> <b> <s> <numbersign> <0> : "෦" U0DE6   # SINHALA LITH DIGIT ZERO
+<Multi_key> <b> <s> <numbersign> <1> : "෧" U0DE7   # SINHALA LITH DIGIT ONE
+<Multi_key> <b> <s> <numbersign> <2> : "෨" U0DE8   # SINHALA LITH DIGIT TWO
+<Multi_key> <b> <s> <numbersign> <3> : "෩" U0DE9   # SINHALA LITH DIGIT THREE
+<Multi_key> <b> <s> <numbersign> <4> : "෪" U0DEA   # SINHALA LITH DIGIT FOUR
+<Multi_key> <b> <s> <numbersign> <5> : "෫" U0DEB   # SINHALA LITH DIGIT FIVE
+<Multi_key> <b> <s> <numbersign> <6> : "෬" U0DEC   # SINHALA LITH DIGIT SIX
+<Multi_key> <b> <s> <numbersign> <7> : "෭" U0DED   # SINHALA LITH DIGIT SEVEN
+<Multi_key> <b> <s> <numbersign> <8> : "෮" U0DEE   # SINHALA LITH DIGIT EIGHT
+<Multi_key> <b> <s> <numbersign> <9> : "෯" U0DEF   # SINHALA LITH DIGIT NINE
 
 # (t = Tamil)
 
@@ -7734,7 +7841,6 @@ include "%L"
 <Multi_key> <b> <i> <k> <e>         : "🚲"  U1F6B2        # BICYCLE (BIKE) (conflicts with ĭ, use ui)
 <Multi_key> <b> <i> <v> <a> <l> <v> : "🦪"  U1F9AA        # OYSTER (BIVALVE) (conflicts with ĭ, use ui) (not ideal but oy=ẙ and pearl=🍐 are taken)
 <Multi_key> <b> <r> <i> <c> <k>     : "🧱"  U1F9F1        # BRICK
-<Multi_key> <b> <s> <t> <o> <p>     : "🚏"  U1F68F        # BUS STOP
 <Multi_key> <b> <t> <u> <b>         : "🛁"  U1F6C1        # BATHTUB
 <Multi_key> <b> <u> <l> <l> <e> <t> : "🚅"  U1F685        # HIGH-SPEED TRAIN WITH BULLET NOSE (conflicts with ŭ, use uu)
 <Multi_key> <b> <u> <s>             : "🚍"  U1F68D        # ONCOMING BUS (conflicts with ŭ, use uu) (use <bus for 🚌)
@@ -7832,6 +7938,7 @@ include "%L"
 <Multi_key> <less> <t> <r> <a> <m>  : "🚋"  U1F68B        # TRAM CAR (conflicts with ť, use vt)
 <Multi_key> <t> <r> <a> <n> <s> <p> : "🚛"  U1F69B        # ARTICULATED LORRY (TRANSPORT)
 <Multi_key> <t> <r> <u> <c> <k>     : "🛻"  U1F6FB        # PICKUP TRUCK (use delive for 🚚 and transp for 🚛)
+<Multi_key> <t> <s> <t> <o> <p>     : "🚏"  U1F68F        # BUS STOP (TRAM STOP) (not ideal but bus and bstop are taken)
 <Multi_key> <t> <u> <k> <t> <u> <k> : "🛺"  U1F6FA        # AUTO RICKSHAW
 <Multi_key> <t> <y> <r> <e>         : "🛞"  U1F6DE        # WHEEL (TYRE)
 <Multi_key> <w> <d> <o> <w>         : "🪟"  U1FA9F        # WINDOW
