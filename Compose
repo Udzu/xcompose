@@ -1382,6 +1382,9 @@ include "%L"
 
 # (normal circled alphanumerics are defined in the system config with no prefix)
 
+<Multi_key> <parenleft> <C> <D> <parenright> : "🄭" U1F12D   # CIRCLED CD
+<Multi_key> <parenleft> <W> <z> <parenright> : "🄮" U1F12E   # CIRCLED WZ
+
 <Multi_key> <2> <parenleft> <1> <parenright> : "⓵" U24F5   # DOUBLE CIRCLED DIGIT ONE
 <Multi_key> <2> <parenleft> <2> <parenright> : "⓶" U24F6   # DOUBLE CIRCLED DIGIT TWO
 <Multi_key> <2> <parenleft> <3> <parenright> : "⓷" U24F7   # DOUBLE CIRCLED DIGIT THREE
@@ -1641,325 +1644,334 @@ include "%L"
 <Multi_key> <exclam> <bracketleft> <A> <B> <bracketright> : "🆎︎" U1F18E UFE0E  # NEGATIVE SQUARED AB (prefix with @ for emoji variant)
 <Multi_key> <exclam> <bracketleft> <W> <C> <bracketright> : "🆏" U1F18F   # NEGATIVE SQUARED WC
 
+<Multi_key> <bracketleft> <parenleft> <1> <0> <parenright> <bracketright> : "㉈" U3248   # CIRCLED NUMBER TEN ON BLACK SQUARE
+<Multi_key> <bracketleft> <parenleft> <2> <0> <parenright> <bracketright> : "㉉" U3249   # CIRCLED NUMBER TWENTY ON BLACK SQUARE
+<Multi_key> <bracketleft> <parenleft> <3> <0> <parenright> <bracketright> : "㉊" U324A   # CIRCLED NUMBER THIRTY ON BLACK SQUARE
+<Multi_key> <bracketleft> <parenleft> <4> <0> <parenright> <bracketright> : "㉋" U324B   # CIRCLED NUMBER FORTY ON BLACK SQUARE
+<Multi_key> <bracketleft> <parenleft> <5> <0> <parenright> <bracketright> : "㉌" U324C   # CIRCLED NUMBER FIFTY ON BLACK SQUARE
+<Multi_key> <bracketleft> <parenleft> <6> <0> <parenright> <bracketright> : "㉍" U324D   # CIRCLED NUMBER SIXTY ON BLACK SQUARE
+<Multi_key> <bracketleft> <parenleft> <7> <0> <parenright> <bracketright> : "㉎" U324E   # CIRCLED NUMBER SEVENTY ON BLACK SQUARE
+<Multi_key> <bracketleft> <parenleft> <8> <0> <parenright> <bracketright> : "㉏" U324F   # CIRCLED NUMBER EIGHTY ON BLACK SQUARE
+
 #############################
 # Multigraphs and ligatures #
 #############################
 
 # Includes both real multigraphs and lookalikes
 
-# Convention: ( + letters + )
+# Convention: { + letters + }
 
-<Multi_key> <parenleft> <A> <A> <parenright> : "Ꜳ" UA732   # LATIN CAPITAL LETTER AA
-<Multi_key> <parenleft> <a> <a> <parenright> : "ꜳ" UA733   # LATIN SMALL LETTER AA
-<Multi_key> <parenleft> <a> <slash> <c> <parenright> : "℀" U2100   # ACCOUNT OF
-<Multi_key> <parenleft> <A> <E> <parenright> : "Æ" U00C6   # LATIN CAPITAL LETTER AE
-<Multi_key> <parenleft> <a> <e> <parenright> : "æ" U00E6   # LATIN SMALL LETTER AE
-<Multi_key> <parenleft> <A> <l> <m> <parenright> : "㏟" U33DF   # SQUARE A OVER M (visually similar)
-<Multi_key> <parenleft> <a> <m> <parenright> : "㏂" U33C2   # SQUARE AM
-<Multi_key> <parenleft> <A> <O> <parenright> : "Ꜵ" UA734   # LATIN CAPITAL LETTER AO
-<Multi_key> <parenleft> <a> <o> <parenright> : "ꜵ" UA735   # LATIN SMALL LETTER AO
-<Multi_key> <parenleft> <A> <slash> <S> <parenright> : "⅍" U214D   # AKTIESELSKAB
-<Multi_key> <parenleft> <a> <slash> <s> <parenright> : "℁" U2101   # ADDRESSED TO THE SUBJECT
-<Multi_key> <parenleft> <A> <U> <parenright> : "㍳" U3373   # SQUARE AU
-<Multi_key> <parenleft> <a> <u> <parenright> : "ꜷ" UA737   # LATIN SMALL LETTER AU
-<Multi_key> <parenleft> <A> <V> <parenright> : "Ꜹ" UA738   # LATIN CAPITAL LETTER AV
-<Multi_key> <parenleft> <a> <v> <parenright> : "ꜹ" UA739   # LATIN SMALL LETTER AV
-<Multi_key> <parenleft> <A> <Y> <parenright> : "Ꜽ" UA73C   # LATIN CAPITAL LETTER AY
-<Multi_key> <parenleft> <a> <y> <parenright> : "ꜽ" UA73D   # LATIN SMALL LETTER AY
+<Multi_key> <braceleft> <A> <A> <braceright> : "Ꜳ" UA732   # LATIN CAPITAL LETTER AA
+<Multi_key> <braceleft> <a> <a> <braceright> : "ꜳ" UA733   # LATIN SMALL LETTER AA
+<Multi_key> <braceleft> <a> <slash> <c> <braceright> : "℀" U2100   # ACCOUNT OF
+<Multi_key> <braceleft> <A> <E> <braceright> : "Æ" U00C6   # LATIN CAPITAL LETTER AE
+<Multi_key> <braceleft> <a> <e> <braceright> : "æ" U00E6   # LATIN SMALL LETTER AE
+<Multi_key> <braceleft> <A> <l> <m> <braceright> : "㏟" U33DF   # SQUARE A OVER M (visually similar)
+<Multi_key> <braceleft> <a> <m> <braceright> : "㏂" U33C2   # SQUARE AM
+<Multi_key> <braceleft> <A> <O> <braceright> : "Ꜵ" UA734   # LATIN CAPITAL LETTER AO
+<Multi_key> <braceleft> <a> <o> <braceright> : "ꜵ" UA735   # LATIN SMALL LETTER AO
+<Multi_key> <braceleft> <A> <slash> <S> <braceright> : "⅍" U214D   # AKTIESELSKAB
+<Multi_key> <braceleft> <a> <slash> <s> <braceright> : "℁" U2101   # ADDRESSED TO THE SUBJECT
+<Multi_key> <braceleft> <A> <U> <braceright> : "㍳" U3373   # SQUARE AU
+<Multi_key> <braceleft> <a> <u> <braceright> : "ꜷ" UA737   # LATIN SMALL LETTER AU
+<Multi_key> <braceleft> <A> <V> <braceright> : "Ꜹ" UA738   # LATIN CAPITAL LETTER AV
+<Multi_key> <braceleft> <a> <v> <braceright> : "ꜹ" UA739   # LATIN SMALL LETTER AV
+<Multi_key> <braceleft> <A> <Y> <braceright> : "Ꜽ" UA73C   # LATIN CAPITAL LETTER AY
+<Multi_key> <braceleft> <a> <y> <braceright> : "ꜽ" UA73D   # LATIN SMALL LETTER AY
 
-<Multi_key> <parenleft> <b> <a> <r> <parenright> : "㍴" U3374   # SQUARE BAR
-<Multi_key> <parenleft> <B> <E> <parenright> : "Ⱘ" U2C28   # GLAGOLITIC CAPITAL LETTER BIG YUS (visually similar)
-<Multi_key> <parenleft> <B> <J> <parenright> : "䦺" U49BA   # CJK UNIFIED IDEOGRAPH-49BA (visually similar)
-<Multi_key> <parenleft> <b> <l> <parenright> : "Ы" U042B   # CYRILLIC CAPITAL LETTER YERU (visually similar)
-<Multi_key> <parenleft> <B> <q> <parenright> : "㏃" U33C3   # SQUARE BQ
-<Multi_key> <parenleft> <B> <T> <parenright> : "𨸗" U28E17   # CJK UNIFIED IDEOGRAPH-28E17 (visually similar)
+<Multi_key> <braceleft> <b> <a> <r> <braceright> : "㍴" U3374   # SQUARE BAR
+<Multi_key> <braceleft> <B> <E> <braceright> : "Ⱘ" U2C28   # GLAGOLITIC CAPITAL LETTER BIG YUS (visually similar)
+<Multi_key> <braceleft> <B> <J> <braceright> : "䦺" U49BA   # CJK UNIFIED IDEOGRAPH-49BA (visually similar)
+<Multi_key> <braceleft> <b> <l> <braceright> : "Ы" U042B   # CYRILLIC CAPITAL LETTER YERU (visually similar)
+<Multi_key> <braceleft> <B> <q> <braceright> : "㏃" U33C3   # SQUARE BQ
+<Multi_key> <braceleft> <B> <T> <braceright> : "𨸗" U28E17   # CJK UNIFIED IDEOGRAPH-28E17 (visually similar)
 
-<Multi_key> <parenleft> <c> <a> <l> <parenright> : "㎈" U3388   # SQUARE CAL
-<Multi_key> <parenleft> <C> <C> <parenright> : "ꕆ" UA546   # VAI SYLLABLE MI (visually similar)
-<Multi_key> <parenleft> <c> <c> <parenright> : "㏄" U33C4   # SQUARE CC
-<Multi_key> <parenleft> <C> <D> <parenright> : "ↀ" U2180   # ROMAN NUMERAL ONE THOUSAND C D
-<Multi_key> <parenleft> <c> <d> <parenright> : "㏅" U33C5   # SQUARE CD
-<Multi_key> <parenleft> <C> <H> <parenright> : "대" UB300   # HANGUL SYLLABLE DAE (visually similar)
-<Multi_key> <parenleft> <C> <l> <parenright> : "디" UB514   # HANGUL SYLLABLE DI (visually similar)
-<Multi_key> <parenleft> <c> <l> <parenright> : "𖩖" U16A56   # MRO LETTER EA (visually similar)
-<Multi_key> <parenleft> <c> <m> <parenright> : "㎝" U339D   # SQUARE CM
-<Multi_key> <parenleft> <c> <o> <parenright> : "ၸ" U1078   # MYANMAR LETTER SHAN CA (visually similar)
-<Multi_key> <parenleft> <c> <slash> <o> <parenright> : "℅" U2105   # CARE OF
-<Multi_key> <parenleft> <C> <o> <parenright> : "㏇" U33C7   # SQUARE CO
-<Multi_key> <parenleft> <C> <P> <parenright> : "卬" U536C   # CJK UNIFIED IDEOGRAPH-536C (visually similar)
-<Multi_key> <parenleft> <c> <slash> <u> <parenright> : "℆" U2106   # CADA UNA
+<Multi_key> <braceleft> <c> <a> <l> <braceright> : "㎈" U3388   # SQUARE CAL
+<Multi_key> <braceleft> <C> <C> <braceright> : "ꕆ" UA546   # VAI SYLLABLE MI (visually similar)
+<Multi_key> <braceleft> <c> <c> <braceright> : "㏄" U33C4   # SQUARE CC
+<Multi_key> <braceleft> <C> <D> <braceright> : "ↀ" U2180   # ROMAN NUMERAL ONE THOUSAND C D
+<Multi_key> <braceleft> <c> <d> <braceright> : "㏅" U33C5   # SQUARE CD
+<Multi_key> <braceleft> <C> <H> <braceright> : "대" UB300   # HANGUL SYLLABLE DAE (visually similar)
+<Multi_key> <braceleft> <C> <l> <braceright> : "디" UB514   # HANGUL SYLLABLE DI (visually similar)
+<Multi_key> <braceleft> <c> <l> <braceright> : "𖩖" U16A56   # MRO LETTER EA (visually similar)
+<Multi_key> <braceleft> <c> <m> <braceright> : "㎝" U339D   # SQUARE CM
+<Multi_key> <braceleft> <c> <o> <braceright> : "ၸ" U1078   # MYANMAR LETTER SHAN CA (visually similar)
+<Multi_key> <braceleft> <c> <slash> <o> <braceright> : "℅" U2105   # CARE OF
+<Multi_key> <braceleft> <C> <o> <braceright> : "㏇" U33C7   # SQUARE CO
+<Multi_key> <braceleft> <C> <P> <braceright> : "卬" U536C   # CJK UNIFIED IDEOGRAPH-536C (visually similar)
+<Multi_key> <braceleft> <c> <slash> <u> <braceright> : "℆" U2106   # CADA UNA
 
-<Multi_key> <parenleft> <d> <a> <parenright> : "㍲" U3372   # SQUARE DA
-<Multi_key> <parenleft> <d> <b> <parenright> : "ȸ" U0238   # LATIN SMALL LETTER DB DIGRAPH
-<Multi_key> <parenleft> <d> <B> <parenright> : "㏈" U33C8   # SQUARE DB
-<Multi_key> <parenleft> <d> <e> <parenright> : "𞄇" U1E107   # NYIAKENG PUACHUE HMONG LETTER NKA (visually similar)
-<Multi_key> <parenleft> <D> <J> <parenright> : "🆐" U1F190   # SQUARE DJ
-<Multi_key> <parenleft> <D> <K> <parenright> : "Ԫ" U052A   # CYRILLIC CAPITAL LETTER DZZHE (visually similar)
-<Multi_key> <parenleft> <d> <l> <parenright> : "㎗" U3397   # SQUARE DL
-<Multi_key> <parenleft> <d> <m> <parenright> : "㍷" U3377   # SQUARE DM
-<Multi_key> <parenleft> <D> <o> <parenright> : "Ⰸ" U2C08   # GLAGOLITIC CAPITAL LETTER ZEMLJA (visually similar)
-<Multi_key> <parenleft> <D> <Z> <parenright> : "Ǳ" U01F1   # LATIN CAPITAL LETTER DZ
-<Multi_key> <parenleft> <D> <z> <parenright> : "ǲ" U01F2   # LATIN CAPITAL LETTER D WITH SMALL LETTER Z
-<Multi_key> <parenleft> <d> <z> <parenright> : "ʣ" U02A3   # LATIN SMALL LETTER DZ DIGRAPH
+<Multi_key> <braceleft> <d> <a> <braceright> : "㍲" U3372   # SQUARE DA
+<Multi_key> <braceleft> <d> <b> <braceright> : "ȸ" U0238   # LATIN SMALL LETTER DB DIGRAPH
+<Multi_key> <braceleft> <d> <B> <braceright> : "㏈" U33C8   # SQUARE DB
+<Multi_key> <braceleft> <d> <e> <braceright> : "𞄇" U1E107   # NYIAKENG PUACHUE HMONG LETTER NKA (visually similar)
+<Multi_key> <braceleft> <D> <J> <braceright> : "🆐" U1F190   # SQUARE DJ
+<Multi_key> <braceleft> <D> <K> <braceright> : "Ԫ" U052A   # CYRILLIC CAPITAL LETTER DZZHE (visually similar)
+<Multi_key> <braceleft> <d> <l> <braceright> : "㎗" U3397   # SQUARE DL
+<Multi_key> <braceleft> <d> <m> <braceright> : "㍷" U3377   # SQUARE DM
+<Multi_key> <braceleft> <D> <o> <braceright> : "Ⰸ" U2C08   # GLAGOLITIC CAPITAL LETTER ZEMLJA (visually similar)
+<Multi_key> <braceleft> <D> <Z> <braceright> : "Ǳ" U01F1   # LATIN CAPITAL LETTER DZ
+<Multi_key> <braceleft> <D> <z> <braceright> : "ǲ" U01F2   # LATIN CAPITAL LETTER D WITH SMALL LETTER Z
+<Multi_key> <braceleft> <d> <z> <braceright> : "ʣ" U02A3   # LATIN SMALL LETTER DZ DIGRAPH
 
-<Multi_key> <parenleft> <e> <a> <parenright> : "ಣ" U0CA3   # KANNADA LETTER NNA (visually similar)
-<Multi_key> <parenleft> <E> <H> <parenright> : "태" UD0DC   # HANGUL SYLLABLE TAE (visually similar)
-<Multi_key> <parenleft> <e> <i> <parenright> : "𐬞" U10B1E   # AVESTAN LETTER PE (visually similar)
-<Multi_key> <parenleft> <e> <j> <parenright> : "ꤟ" UA91F   # KAYAH LI LETTER HA (visually similar)
-<Multi_key> <parenleft> <E> <l> <parenright> : "티" UD2F0   # HANGUL SYLLABLE TI (visually similar)
-<Multi_key> <parenleft> <e> <l> <parenright> : "𐬟" U10B1F   # AVESTAN LETTER FE (visually similar)
-<Multi_key> <parenleft> <E> <P> <parenright> : "印" U5370   # CJK UNIFIED IDEOGRAPH-5370 (visually similar)
-<Multi_key> <parenleft> <e> <r> <g> <parenright> : "㋍" U32CD   # SQUARE ERG
-<Multi_key> <parenleft> <e> <r> <parenright> : "೮" U0CEE   # KANNADA DIGIT EIGHT (visually similar)
-<Multi_key> <parenleft> <e> <t> <parenright> : "🙰" U1F670   # SCRIPT LIGATURE ET ORNAMENT
-<Multi_key> <parenleft> <e> <u> <parenright> : "𐬲" U10B32   # AVESTAN LETTER ZHE (visually similar)
-<Multi_key> <parenleft> <e> <V> <parenright> : "㋎" U32CE   # SQUARE EV
+<Multi_key> <braceleft> <e> <a> <braceright> : "ಣ" U0CA3   # KANNADA LETTER NNA (visually similar)
+<Multi_key> <braceleft> <E> <H> <braceright> : "태" UD0DC   # HANGUL SYLLABLE TAE (visually similar)
+<Multi_key> <braceleft> <e> <i> <braceright> : "𐬞" U10B1E   # AVESTAN LETTER PE (visually similar)
+<Multi_key> <braceleft> <e> <j> <braceright> : "ꤟ" UA91F   # KAYAH LI LETTER HA (visually similar)
+<Multi_key> <braceleft> <E> <l> <braceright> : "티" UD2F0   # HANGUL SYLLABLE TI (visually similar)
+<Multi_key> <braceleft> <e> <l> <braceright> : "𐬟" U10B1F   # AVESTAN LETTER FE (visually similar)
+<Multi_key> <braceleft> <E> <P> <braceright> : "印" U5370   # CJK UNIFIED IDEOGRAPH-5370 (visually similar)
+<Multi_key> <braceleft> <e> <r> <g> <braceright> : "㋍" U32CD   # SQUARE ERG
+<Multi_key> <braceleft> <e> <r> <braceright> : "೮" U0CEE   # KANNADA DIGIT EIGHT (visually similar)
+<Multi_key> <braceleft> <e> <t> <braceright> : "🙰" U1F670   # SCRIPT LIGATURE ET ORNAMENT
+<Multi_key> <braceleft> <e> <u> <braceright> : "𐬲" U10B32   # AVESTAN LETTER ZHE (visually similar)
+<Multi_key> <braceleft> <e> <V> <braceright> : "㋎" U32CE   # SQUARE EV
 
-<Multi_key> <parenleft> <F> <A> <X> <parenright> : "℻" U213B   # FACSIMILE SIGN
-<Multi_key> <parenleft> <F> <B> <parenright> : "邘" U9098   # CJK UNIFIED IDEOGRAPH-9098 (visually similar)
-<Multi_key> <parenleft> <f> <f> <i> <parenright> : "ﬃ" UFB03   # LATIN SMALL LIGATURE FFI
-<Multi_key> <parenleft> <f> <f> <l> <parenright> : "ﬄ" UFB04   # LATIN SMALL LIGATURE FFL
-<Multi_key> <parenleft> <f> <f> <parenright> : "ﬀ" UFB00   # LATIN SMALL LIGATURE FF
-<Multi_key> <parenleft> <f> <i> <parenright> : "ﬁ" UFB01   # LATIN SMALL LIGATURE FI
-<Multi_key> <parenleft> <F> <l> <parenright> : "ମ" U0B2E   # ORIYA LETTER MA (visually similar)
-<Multi_key> <parenleft> <f> <l> <parenright> : "ﬂ" UFB02   # LATIN SMALL LIGATURE FL
-<Multi_key> <parenleft> <f> <m> <parenright> : "㎙" U3399   # SQUARE FM
-<Multi_key> <parenleft> <f> <n> <parenright> : "ʩ" U02A9   # LATIN SMALL LETTER FENG DIGRAPH (visually similar)
-<Multi_key> <parenleft> <F> <r> <parenright> : "𖨩" U16A29   # BAMUM LETTER PHASE-F SHO (visually similar)
-<Multi_key> <parenleft> <f> <t> <parenright> : "ﬅ"  UFB05   # LATIN SMALL LIGATURE LONG S T (visually similar)
+<Multi_key> <braceleft> <F> <A> <X> <braceright> : "℻" U213B   # FACSIMILE SIGN
+<Multi_key> <braceleft> <F> <B> <braceright> : "邘" U9098   # CJK UNIFIED IDEOGRAPH-9098 (visually similar)
+<Multi_key> <braceleft> <f> <f> <i> <braceright> : "ﬃ" UFB03   # LATIN SMALL LIGATURE FFI
+<Multi_key> <braceleft> <f> <f> <l> <braceright> : "ﬄ" UFB04   # LATIN SMALL LIGATURE FFL
+<Multi_key> <braceleft> <f> <f> <braceright> : "ﬀ" UFB00   # LATIN SMALL LIGATURE FF
+<Multi_key> <braceleft> <f> <i> <braceright> : "ﬁ" UFB01   # LATIN SMALL LIGATURE FI
+<Multi_key> <braceleft> <F> <l> <braceright> : "ମ" U0B2E   # ORIYA LETTER MA (visually similar)
+<Multi_key> <braceleft> <f> <l> <braceright> : "ﬂ" UFB02   # LATIN SMALL LIGATURE FL
+<Multi_key> <braceleft> <f> <m> <braceright> : "㎙" U3399   # SQUARE FM
+<Multi_key> <braceleft> <f> <n> <braceright> : "ʩ" U02A9   # LATIN SMALL LETTER FENG DIGRAPH (visually similar)
+<Multi_key> <braceleft> <F> <r> <braceright> : "𖨩" U16A29   # BAMUM LETTER PHASE-F SHO (visually similar)
+<Multi_key> <braceleft> <f> <t> <braceright> : "ﬅ"  UFB05   # LATIN SMALL LIGATURE LONG S T (visually similar)
 
-<Multi_key> <parenleft> <g> <a> <l> <parenright> : "㏿" U33FF   # SQUARE GAL
-<Multi_key> <parenleft> <G> <B> <parenright> : "㎇" U3387   # SQUARE GB
-<Multi_key> <parenleft> <G> <H> <z> <parenright> : "㎓" U3393   # SQUARE GHZ
-<Multi_key> <parenleft> <G> <P> <parenright> : "卯" U536F   # CJK UNIFIED IDEOGRAPH-536F (visually similar)
-<Multi_key> <parenleft> <G> <P> <a> <parenright> : "㎬" U33AC   # SQUARE GPA
-<Multi_key> <parenleft> <G> <y> <parenright> : "㏉" U33C9   # SQUARE GY
+<Multi_key> <braceleft> <g> <a> <l> <braceright> : "㏿" U33FF   # SQUARE GAL
+<Multi_key> <braceleft> <G> <B> <braceright> : "㎇" U3387   # SQUARE GB
+<Multi_key> <braceleft> <G> <H> <z> <braceright> : "㎓" U3393   # SQUARE GHZ
+<Multi_key> <braceleft> <G> <P> <braceright> : "卯" U536F   # CJK UNIFIED IDEOGRAPH-536F (visually similar)
+<Multi_key> <braceleft> <G> <P> <a> <braceright> : "㎬" U33AC   # SQUARE GPA
+<Multi_key> <braceleft> <G> <y> <braceright> : "㏉" U33C9   # SQUARE GY
 
-<Multi_key> <parenleft> <h> <a> <parenright> : "㏊" U33CA   # SQUARE HA
-<Multi_key> <parenleft> <H> <g> <parenright> : "㋌" U32CC   # SQUARE HG
-<Multi_key> <parenleft> <H> <I> <parenright> : "𖨟" U16A1F   # BAMUM LETTER PHASE-F PEUX (visually similar)
-<Multi_key> <parenleft> <h> <P> <a> <parenright> : "㍱" U3371   # SQUARE HPA
-<Multi_key> <parenleft> <H> <P> <parenright> : "㏋" U33CB   # SQUARE HP
-<Multi_key> <parenleft> <H> <S> <parenright> : "𐆘" U10198   # ROMAN SESTERTIUS SIGN (visually similar)
-<Multi_key> <parenleft> <h> <u> <parenright> : "ƕ" U0195   # LATIN SMALL LETTER HV (visually similar)
-<Multi_key> <parenleft> <H> <u> <parenright> : "Ƕ" U01F6   # LATIN CAPITAL LETTER HWAIR (visually similar)
-<Multi_key> <parenleft> <H> <z> <parenright> : "㎐" U3390   # SQUARE HZ
+<Multi_key> <braceleft> <h> <a> <braceright> : "㏊" U33CA   # SQUARE HA
+<Multi_key> <braceleft> <H> <g> <braceright> : "㋌" U32CC   # SQUARE HG
+<Multi_key> <braceleft> <H> <I> <braceright> : "𖨟" U16A1F   # BAMUM LETTER PHASE-F PEUX (visually similar)
+<Multi_key> <braceleft> <h> <P> <a> <braceright> : "㍱" U3371   # SQUARE HPA
+<Multi_key> <braceleft> <H> <P> <braceright> : "㏋" U33CB   # SQUARE HP
+<Multi_key> <braceleft> <H> <S> <braceright> : "𐆘" U10198   # ROMAN SESTERTIUS SIGN (visually similar)
+<Multi_key> <braceleft> <h> <u> <braceright> : "ƕ" U0195   # LATIN SMALL LETTER HV (visually similar)
+<Multi_key> <braceleft> <H> <u> <braceright> : "Ƕ" U01F6   # LATIN CAPITAL LETTER HWAIR (visually similar)
+<Multi_key> <braceleft> <H> <z> <braceright> : "㎐" U3390   # SQUARE HZ
 
-<Multi_key> <parenleft> <I> <A> <parenright> : "Ꙗ" UA656   # CYRILLIC CAPITAL LETTER IOTIFIED A (visually similar)
-<Multi_key> <parenleft> <i> <a> <parenright> : "ꙗ" UA657   # CYRILLIC SMALL LETTER IOTIFIED A (visually similar)
-<Multi_key> <parenleft> <I> <B> <parenright> : "邛" U909B   # CJK UNIFIED IDEOGRAPH-909B (visually similar)
-<Multi_key> <parenleft> <i> <b> <parenright> : "ꪊ" UAA8A   # TAI VIET LETTER LOW CO (visually similar)
-<Multi_key> <parenleft> <I> <C> <parenright> : "ꗪ" UA5EA   # VAI SYLLABLE BE (visually similar)
-<Multi_key> <parenleft> <I> <E> <parenright> : "Ѥ" U0464   # CYRILLIC CAPITAL LETTER IOTIFIED E (visually similar)
-<Multi_key> <parenleft> <i> <e> <parenright> : "ꭡ" UAB61   # LATIN SMALL LETTER IOTIFIED E
-<Multi_key> <parenleft> <i> <h> <parenright> : "ⴐ" U2D10   # GEORGIAN SMALL LETTER RAE (visually similar)
-<Multi_key> <parenleft> <I> <I> <I> <parenright> : "Ⅲ" U2162   # ROMAN NUMERAL THREE
-<Multi_key> <parenleft> <i> <i> <i> <parenright> : "ⅲ" U2172   # SMALL ROMAN NUMERAL THREE
-<Multi_key> <parenleft> <I> <I> <parenright> : "Ⅱ" U2161   # ROMAN NUMERAL TWO
-<Multi_key> <parenleft> <i> <i> <parenright> : "ⅱ" U2171   # SMALL ROMAN NUMERAL TWO
-<Multi_key> <parenleft> <I> <J> <parenright> : "Ĳ" U0132   # LATIN CAPITAL LIGATURE IJ
-<Multi_key> <parenleft> <i> <j> <parenright> : "ĳ" U0133   # LATIN SMALL LIGATURE IJ
-<Multi_key> <parenleft> <I> <L> <parenright> : "Ỻ" U1EFA   # LATIN CAPITAL LETTER MIDDLE-WELSH LL (visually similar)
-<Multi_key> <parenleft> <i> <l> <parenright> : "𐔅" U10505   # ELBASAN LETTER NDE (visually similar)
-<Multi_key> <parenleft> <i> <n> <parenright> : "㏌" U33CC   # SQUARE IN
-<Multi_key> <parenleft> <I> <O> <parenright> : "Ю" U042E   # CYRILLIC CAPITAL LETTER YU (visually similar)
-<Multi_key> <parenleft> <I> <P> <parenright> : "卭" U536D   # CJK UNIFIED IDEOGRAPH-536D (visually similar)
-<Multi_key> <parenleft> <I> <S> <parenright> : "巧" U5DE7   # CJK UNIFIED IDEOGRAPH-5DE7 (visually similar)     
-<Multi_key> <parenleft> <i> <s> <parenright> : "ꪭ" UAAAD   # TAI VIET LETTER HIGH HO (visually similar)
-<Multi_key> <parenleft> <i> <t> <parenright> : "计" U8BA1   # CJK UNIFIED IDEOGRAPH-8BA1 (visually similar)
-<Multi_key> <parenleft> <I> <U> <parenright> : "㍺" U337A   # SQUARE IU
-<Multi_key> <parenleft> <i> <u> <parenright> : "𐬈" U10B08   # AVESTAN LETTER E (visually similar)
-<Multi_key> <parenleft> <I> <V> <parenright> : "Ⅳ" U2163   # ROMAN NUMERAL FOUR
-<Multi_key> <parenleft> <i> <v> <parenright> : "ⅳ" U2173   # SMALL ROMAN NUMERAL FOUR
-<Multi_key> <parenleft> <I> <X> <parenright> : "Ⅸ" U2168   # ROMAN NUMERAL NINE
-<Multi_key> <parenleft> <i> <x> <parenright> : "ⅸ" U2178   # SMALL ROMAN NUMERAL NINE
+<Multi_key> <braceleft> <I> <A> <braceright> : "Ꙗ" UA656   # CYRILLIC CAPITAL LETTER IOTIFIED A (visually similar)
+<Multi_key> <braceleft> <i> <a> <braceright> : "ꙗ" UA657   # CYRILLIC SMALL LETTER IOTIFIED A (visually similar)
+<Multi_key> <braceleft> <I> <B> <braceright> : "邛" U909B   # CJK UNIFIED IDEOGRAPH-909B (visually similar)
+<Multi_key> <braceleft> <i> <b> <braceright> : "ꪊ" UAA8A   # TAI VIET LETTER LOW CO (visually similar)
+<Multi_key> <braceleft> <I> <C> <braceright> : "ꗪ" UA5EA   # VAI SYLLABLE BE (visually similar)
+<Multi_key> <braceleft> <I> <E> <braceright> : "Ѥ" U0464   # CYRILLIC CAPITAL LETTER IOTIFIED E (visually similar)
+<Multi_key> <braceleft> <i> <e> <braceright> : "ꭡ" UAB61   # LATIN SMALL LETTER IOTIFIED E
+<Multi_key> <braceleft> <i> <h> <braceright> : "ⴐ" U2D10   # GEORGIAN SMALL LETTER RAE (visually similar)
+<Multi_key> <braceleft> <I> <I> <I> <braceright> : "Ⅲ" U2162   # ROMAN NUMERAL THREE
+<Multi_key> <braceleft> <i> <i> <i> <braceright> : "ⅲ" U2172   # SMALL ROMAN NUMERAL THREE
+<Multi_key> <braceleft> <I> <I> <braceright> : "Ⅱ" U2161   # ROMAN NUMERAL TWO
+<Multi_key> <braceleft> <i> <i> <braceright> : "ⅱ" U2171   # SMALL ROMAN NUMERAL TWO
+<Multi_key> <braceleft> <I> <J> <braceright> : "Ĳ" U0132   # LATIN CAPITAL LIGATURE IJ
+<Multi_key> <braceleft> <i> <j> <braceright> : "ĳ" U0133   # LATIN SMALL LIGATURE IJ
+<Multi_key> <braceleft> <I> <L> <braceright> : "Ỻ" U1EFA   # LATIN CAPITAL LETTER MIDDLE-WELSH LL (visually similar)
+<Multi_key> <braceleft> <i> <l> <braceright> : "𐔅" U10505   # ELBASAN LETTER NDE (visually similar)
+<Multi_key> <braceleft> <i> <n> <braceright> : "㏌" U33CC   # SQUARE IN
+<Multi_key> <braceleft> <I> <O> <braceright> : "Ю" U042E   # CYRILLIC CAPITAL LETTER YU (visually similar)
+<Multi_key> <braceleft> <I> <P> <braceright> : "卭" U536D   # CJK UNIFIED IDEOGRAPH-536D (visually similar)
+<Multi_key> <braceleft> <I> <S> <braceright> : "巧" U5DE7   # CJK UNIFIED IDEOGRAPH-5DE7 (visually similar)     
+<Multi_key> <braceleft> <i> <s> <braceright> : "ꪭ" UAAAD   # TAI VIET LETTER HIGH HO (visually similar)
+<Multi_key> <braceleft> <i> <t> <braceright> : "计" U8BA1   # CJK UNIFIED IDEOGRAPH-8BA1 (visually similar)
+<Multi_key> <braceleft> <I> <U> <braceright> : "㍺" U337A   # SQUARE IU
+<Multi_key> <braceleft> <i> <u> <braceright> : "𐬈" U10B08   # AVESTAN LETTER E (visually similar)
+<Multi_key> <braceleft> <I> <V> <braceright> : "Ⅳ" U2163   # ROMAN NUMERAL FOUR
+<Multi_key> <braceleft> <i> <v> <braceright> : "ⅳ" U2173   # SMALL ROMAN NUMERAL FOUR
+<Multi_key> <braceleft> <I> <X> <braceright> : "Ⅸ" U2168   # ROMAN NUMERAL NINE
+<Multi_key> <braceleft> <i> <x> <braceright> : "ⅸ" U2178   # SMALL ROMAN NUMERAL NINE
 
-<Multi_key> <parenleft> <J> <B> <parenright> : "邒" U9092   # CJK UNIFIED IDEOGRAPH-9092 (visually similar)
-<Multi_key> <parenleft> <j> <c> <parenright> : "𐿱" U10FF1   # ELYMAIC LETTER SADHE (visually similar)
+<Multi_key> <braceleft> <J> <B> <braceright> : "邒" U9092   # CJK UNIFIED IDEOGRAPH-9092 (visually similar)
+<Multi_key> <braceleft> <j> <c> <braceright> : "𐿱" U10FF1   # ELYMAIC LETTER SADHE (visually similar)
 
-<Multi_key> <parenleft> <k> <A> <parenright> : "㎄" U3384   # SQUARE KA
-<Multi_key> <parenleft> <K> <B> <parenright> : "㎅" U3385   # SQUARE KB
-<Multi_key> <parenleft> <k> <c> <a> <l> <parenright> : "㎉" U3389   # SQUARE KCAL
-<Multi_key> <parenleft> <k> <g> <parenright> : "㎏" U338F   # SQUARE KG
-<Multi_key> <parenleft> <k> <H> <z> <parenright> : "㎑" U3391   # SQUARE KHZ
-<Multi_key> <parenleft> <K> <K> <parenright> : "㏍" U33CD   # SQUARE KK
-<Multi_key> <parenleft> <k> <l> <parenright> : "㎘" U3398   # SQUARE KL
-<Multi_key> <parenleft> <k> <m> <parenright> : "㎞" U339E   # SQUARE KM
-<Multi_key> <parenleft> <K> <M> <parenright> : "㏎" U33CE   # SQUARE KM CAPITAL
-<Multi_key> <parenleft> <k> <P> <a> <parenright> : "㎪" U33AA   # SQUARE KPA
-<Multi_key> <parenleft> <k> <t> <parenright> : "㏏" U33CF   # SQUARE KT
-<Multi_key> <parenleft> <k> <V> <parenright> : "㎸" U33B8   # SQUARE KV
-<Multi_key> <parenleft> <k> <W> <parenright> : "㎾" U33BE   # SQUARE KW
+<Multi_key> <braceleft> <k> <A> <braceright> : "㎄" U3384   # SQUARE KA
+<Multi_key> <braceleft> <K> <B> <braceright> : "㎅" U3385   # SQUARE KB
+<Multi_key> <braceleft> <k> <c> <a> <l> <braceright> : "㎉" U3389   # SQUARE KCAL
+<Multi_key> <braceleft> <k> <g> <braceright> : "㎏" U338F   # SQUARE KG
+<Multi_key> <braceleft> <k> <H> <z> <braceright> : "㎑" U3391   # SQUARE KHZ
+<Multi_key> <braceleft> <K> <K> <braceright> : "㏍" U33CD   # SQUARE KK
+<Multi_key> <braceleft> <k> <l> <braceright> : "㎘" U3398   # SQUARE KL
+<Multi_key> <braceleft> <k> <m> <braceright> : "㎞" U339E   # SQUARE KM
+<Multi_key> <braceleft> <K> <M> <braceright> : "㏎" U33CE   # SQUARE KM CAPITAL
+<Multi_key> <braceleft> <k> <P> <a> <braceright> : "㎪" U33AA   # SQUARE KPA
+<Multi_key> <braceleft> <k> <t> <braceright> : "㏏" U33CF   # SQUARE KT
+<Multi_key> <braceleft> <k> <V> <braceright> : "㎸" U33B8   # SQUARE KV
+<Multi_key> <braceleft> <k> <W> <braceright> : "㎾" U33BE   # SQUARE KW
 
-<Multi_key> <parenleft> <l> <b> <parenright> : "℔" U2114   # L B BAR SYMBOL
-<Multi_key> <parenleft> <L> <C> <parenright> : "ㅦ" U3166   # HANGUL LETTER NIEUN-TIKEUT (visually similar)
-<Multi_key> <parenleft> <L> <D> <parenright> : "ம" U0BAE   # TAMIL LETTER MA (visually similar)
-<Multi_key> <parenleft> <L> <H> <parenright> : "내" UB0B4   # HANGUL SYLLABLE NAE (visually similar)
-<Multi_key> <parenleft> <l> <i> <parenright> : "և" U0587   # ARMENIAN SMALL LIGATURE ECH YIWN (visually similar)
-<Multi_key> <parenleft> <L> <J> <parenright> : "Ǉ" U01C7   # LATIN CAPITAL LETTER LJ
-<Multi_key> <parenleft> <L> <j> <parenright> : "ǈ" U01C8   # LATIN CAPITAL LETTER L WITH SMALL LETTER J
-<Multi_key> <parenleft> <l> <j> <parenright> : "ǉ" U01C9   # LATIN SMALL LETTER LJ
-<Multi_key> <parenleft> <L> <L> <parenright> : "ㅥ" U3165   # HANGUL LETTER SSANGNIEUN (visually similar)
-<Multi_key> <parenleft> <L> <l> <parenright> : "니" UB2C8   # HANGUL SYLLABLE NI (visually similar)
-<Multi_key> <parenleft> <l> <l> <parenright> : "ỻ" U1EFB   # LATIN SMALL LETTER MIDDLE-WELSH LL
-<Multi_key> <parenleft> <l> <m> <parenright> : "㏐" U33D0   # SQUARE LM
-<Multi_key> <parenleft> <l> <n> <parenright> : "㏑" U33D1   # SQUARE LN
-<Multi_key> <parenleft> <l> <o> <g> <parenright> : "㏒" U33D2   # SQUARE LOG
-<Multi_key> <parenleft> <l> <o> <parenright> : "𐴔" U10D14   # HANIFI ROHINGYA LETTER MA (visually similar)
-<Multi_key> <parenleft> <l> <s> <parenright> : "ʪ" U02AA   # LATIN SMALL LETTER LS DIGRAPH
-<Multi_key> <parenleft> <L> <T> <D> <parenright> : "㋏" U32CF   # LIMITED LIABILITY SIGN
-<Multi_key> <parenleft> <l> <t> <parenright> : "け" U3051   # HIRAGANA LETTER KE (visually similar)
-<Multi_key> <parenleft> <l> <x> <parenright> : "㏓" U33D3   # SQUARE LX
-<Multi_key> <parenleft> <l> <z> <parenright> : "ʫ" U02AB   # LATIN SMALL LETTER LZ DIGRAPH
+<Multi_key> <braceleft> <l> <b> <braceright> : "℔" U2114   # L B BAR SYMBOL
+<Multi_key> <braceleft> <L> <C> <braceright> : "ㅦ" U3166   # HANGUL LETTER NIEUN-TIKEUT (visually similar)
+<Multi_key> <braceleft> <L> <D> <braceright> : "ம" U0BAE   # TAMIL LETTER MA (visually similar)
+<Multi_key> <braceleft> <L> <H> <braceright> : "내" UB0B4   # HANGUL SYLLABLE NAE (visually similar)
+<Multi_key> <braceleft> <l> <i> <braceright> : "և" U0587   # ARMENIAN SMALL LIGATURE ECH YIWN (visually similar)
+<Multi_key> <braceleft> <L> <J> <braceright> : "Ǉ" U01C7   # LATIN CAPITAL LETTER LJ
+<Multi_key> <braceleft> <L> <j> <braceright> : "ǈ" U01C8   # LATIN CAPITAL LETTER L WITH SMALL LETTER J
+<Multi_key> <braceleft> <l> <j> <braceright> : "ǉ" U01C9   # LATIN SMALL LETTER LJ
+<Multi_key> <braceleft> <L> <L> <braceright> : "ㅥ" U3165   # HANGUL LETTER SSANGNIEUN (visually similar)
+<Multi_key> <braceleft> <L> <l> <braceright> : "니" UB2C8   # HANGUL SYLLABLE NI (visually similar)
+<Multi_key> <braceleft> <l> <l> <braceright> : "ỻ" U1EFB   # LATIN SMALL LETTER MIDDLE-WELSH LL
+<Multi_key> <braceleft> <l> <m> <braceright> : "㏐" U33D0   # SQUARE LM
+<Multi_key> <braceleft> <l> <n> <braceright> : "㏑" U33D1   # SQUARE LN
+<Multi_key> <braceleft> <l> <o> <g> <braceright> : "㏒" U33D2   # SQUARE LOG
+<Multi_key> <braceleft> <l> <o> <braceright> : "𐴔" U10D14   # HANIFI ROHINGYA LETTER MA (visually similar)
+<Multi_key> <braceleft> <l> <s> <braceright> : "ʪ" U02AA   # LATIN SMALL LETTER LS DIGRAPH
+<Multi_key> <braceleft> <L> <T> <D> <braceright> : "㋏" U32CF   # LIMITED LIABILITY SIGN
+<Multi_key> <braceleft> <l> <t> <braceright> : "け" U3051   # HIRAGANA LETTER KE (visually similar)
+<Multi_key> <braceleft> <l> <x> <braceright> : "㏓" U33D3   # SQUARE LX
+<Multi_key> <braceleft> <l> <z> <braceright> : "ʫ" U02AB   # LATIN SMALL LETTER LZ DIGRAPH
 
-<Multi_key> <parenleft> <m> <A> <parenright> : "㎃" U3383   # SQUARE MA
-<Multi_key> <parenleft> <M> <B> <parenright> : "㎆" U3386   # SQUARE MB
-<Multi_key> <parenleft> <m> <b> <parenright> : "㏔" U33D4   # SQUARE MB SMALL
-<Multi_key> <parenleft> <m> <g> <parenright> : "㎎" U338E   # SQUARE MG
-<Multi_key> <parenleft> <M> <H> <z> <parenright> : "㎒" U3392   # SQUARE MHZ
-<Multi_key> <parenleft> <m> <i> <l> <parenright> : "㏕" U33D5   # SQUARE MIL
-<Multi_key> <parenleft> <m> <i> <parenright> : "𑊱" U112B1   # KHUDAWADI LETTER AA (visually similar)
-<Multi_key> <parenleft> <m> <l> <parenright> : "㎖" U3396   # SQUARE ML
-<Multi_key> <parenleft> <m> <m> <parenright> : "㎜" U339C   # SQUARE MM
-<Multi_key> <parenleft> <m> <o> <l> <parenright> : "㏖" U33D6   # SQUARE MOL
-<Multi_key> <parenleft> <M> <P> <a> <parenright> : "㎫" U33AB   # SQUARE MPA
-<Multi_key> <parenleft> <m> <r> <parenright> : "ꙧ" UA667   # CYRILLIC SMALL LETTER SOFT EM (visually similar)
-<Multi_key> <parenleft> <m> <s> <parenright> : "㎳" U33B3   # SQUARE MS
-<Multi_key> <parenleft> <m> <V> <parenright> : "㎷" U33B7   # SQUARE MV
-<Multi_key> <parenleft> <M> <V> <parenright> : "㎹" U33B9   # SQUARE MV MEGA
-<Multi_key> <parenleft> <m> <W> <parenright> : "㎽" U33BD   # SQUARE MW
-<Multi_key> <parenleft> <M> <W> <parenright> : "㎿" U33BF   # SQUARE MW MEGA
+<Multi_key> <braceleft> <m> <A> <braceright> : "㎃" U3383   # SQUARE MA
+<Multi_key> <braceleft> <M> <B> <braceright> : "㎆" U3386   # SQUARE MB
+<Multi_key> <braceleft> <m> <b> <braceright> : "㏔" U33D4   # SQUARE MB SMALL
+<Multi_key> <braceleft> <m> <g> <braceright> : "㎎" U338E   # SQUARE MG
+<Multi_key> <braceleft> <M> <H> <z> <braceright> : "㎒" U3392   # SQUARE MHZ
+<Multi_key> <braceleft> <m> <i> <l> <braceright> : "㏕" U33D5   # SQUARE MIL
+<Multi_key> <braceleft> <m> <i> <braceright> : "𑊱" U112B1   # KHUDAWADI LETTER AA (visually similar)
+<Multi_key> <braceleft> <m> <l> <braceright> : "㎖" U3396   # SQUARE ML
+<Multi_key> <braceleft> <m> <m> <braceright> : "㎜" U339C   # SQUARE MM
+<Multi_key> <braceleft> <m> <o> <l> <braceright> : "㏖" U33D6   # SQUARE MOL
+<Multi_key> <braceleft> <M> <P> <a> <braceright> : "㎫" U33AB   # SQUARE MPA
+<Multi_key> <braceleft> <m> <r> <braceright> : "ꙧ" UA667   # CYRILLIC SMALL LETTER SOFT EM (visually similar)
+<Multi_key> <braceleft> <m> <s> <braceright> : "㎳" U33B3   # SQUARE MS
+<Multi_key> <braceleft> <m> <V> <braceright> : "㎷" U33B7   # SQUARE MV
+<Multi_key> <braceleft> <M> <V> <braceright> : "㎹" U33B9   # SQUARE MV MEGA
+<Multi_key> <braceleft> <m> <W> <braceright> : "㎽" U33BD   # SQUARE MW
+<Multi_key> <braceleft> <M> <W> <braceright> : "㎿" U33BF   # SQUARE MW MEGA
 
-<Multi_key> <parenleft> <n> <A> <parenright> : "㎁" U3381   # SQUARE NA
-<Multi_key> <parenleft> <n> <b> <parenright> : "ꪏ" UAA8F   # TAI VIET LETTER HIGH SO (visually similar)
-<Multi_key> <parenleft> <n> <F> <parenright> : "㎋" U338B   # SQUARE NF
-<Multi_key> <parenleft> <N> <H> <parenright> : "𖨒" U16A12   # BAMUM LETTER PHASE-F SUU (visually similar)
-<Multi_key> <parenleft> <N> <J> <parenright> : "Ǌ" U01CA   # LATIN CAPITAL LETTER NJ
-<Multi_key> <parenleft> <N> <j> <parenright> : "ǋ" U01CB   # LATIN CAPITAL LETTER N WITH SMALL LETTER J
-<Multi_key> <parenleft> <n> <j> <parenright> : "ǌ" U01CC   # LATIN SMALL LETTER NJ
-<Multi_key> <parenleft> <n> <m> <parenright> : "㎚" U339A   # SQUARE NM
-<Multi_key> <parenleft> <n> <r> <parenright> : "ꫜ" UAADC   # TAI VIET SYMBOL NUENG (visually similar)   
-<Multi_key> <parenleft> <n> <s> <parenright> : "㎱" U33B1   # SQUARE NS
-<Multi_key> <parenleft> <n> <V> <parenright> : "㎵" U33B5   # SQUARE NV
-<Multi_key> <parenleft> <N> <V> <parenright> : "ꟿ" UA7FF   # LATIN EPIGRAPHIC LETTER ARCHAIC M (visually similar)
-<Multi_key> <parenleft> <n> <W> <parenright> : "㎻" U33BB   # SQUARE NW
+<Multi_key> <braceleft> <n> <A> <braceright> : "㎁" U3381   # SQUARE NA
+<Multi_key> <braceleft> <n> <b> <braceright> : "ꪏ" UAA8F   # TAI VIET LETTER HIGH SO (visually similar)
+<Multi_key> <braceleft> <n> <F> <braceright> : "㎋" U338B   # SQUARE NF
+<Multi_key> <braceleft> <N> <H> <braceright> : "𖨒" U16A12   # BAMUM LETTER PHASE-F SUU (visually similar)
+<Multi_key> <braceleft> <N> <J> <braceright> : "Ǌ" U01CA   # LATIN CAPITAL LETTER NJ
+<Multi_key> <braceleft> <N> <j> <braceright> : "ǋ" U01CB   # LATIN CAPITAL LETTER N WITH SMALL LETTER J
+<Multi_key> <braceleft> <n> <j> <braceright> : "ǌ" U01CC   # LATIN SMALL LETTER NJ
+<Multi_key> <braceleft> <n> <m> <braceright> : "㎚" U339A   # SQUARE NM
+<Multi_key> <braceleft> <n> <r> <braceright> : "ꫜ" UAADC   # TAI VIET SYMBOL NUENG (visually similar)   
+<Multi_key> <braceleft> <n> <s> <braceright> : "㎱" U33B1   # SQUARE NS
+<Multi_key> <braceleft> <n> <V> <braceright> : "㎵" U33B5   # SQUARE NV
+<Multi_key> <braceleft> <N> <V> <braceright> : "ꟿ" UA7FF   # LATIN EPIGRAPHIC LETTER ARCHAIC M (visually similar)
+<Multi_key> <braceleft> <n> <W> <braceright> : "㎻" U33BB   # SQUARE NW
 
-<Multi_key> <parenleft> <O> <b> <parenright> : "Ⰴ" U2C04   # GLAGOLITIC CAPITAL LETTER DOBRO (visually similar)
-<Multi_key> <parenleft> <O> <E> <parenright> : "Œ" U0152   # LATIN CAPITAL LIGATURE OE
-<Multi_key> <parenleft> <o> <e> <parenright> : "œ" U0153   # LATIN SMALL LIGATURE OE
-<Multi_key> <parenleft> <O> <H> <parenright> : "애" UC560   # HANGUL SYLLABLE AE (visually similar)
-<Multi_key> <parenleft> <o> <h> <parenright> : "㕤" U3564   # CJK UNIFIED IDEOGRAPH-3564 (visually similar)
-<Multi_key> <parenleft> <O> <I> <parenright> : "Ꮊ" U13BA   # CHEROKEE LETTER ME (visually similar)
-<Multi_key> <parenleft> <o> <i> <parenright> : "ꮊ" UAB8A   # CHEROKEE SMALL LETTER ME (visually similar)
-<Multi_key> <parenleft> <O> <J> <parenright> : "叮" U53EE   # CJK UNIFIED IDEOGRAPH-53EE (visually similar)
-<Multi_key> <parenleft> <O> <l> <parenright> : "이" UC774   # HANGUL SYLLABLE I (visually similar)
-<Multi_key> <parenleft> <o> <o> <l> <parenright> : "𑈥" U11225   # KHOJKI LETTER YA (visually similar)
-<Multi_key> <parenleft> <O> <O> <parenright> : "Ꝏ" UA74E   # LATIN CAPITAL LETTER OO
-<Multi_key> <parenleft> <o> <o> <parenright> : "ꝏ" UA74F   # LATIN SMALL LETTER OO
-<Multi_key> <parenleft> <O> <P> <parenright> : "叩" U53E9   # CJK UNIFIED IDEOGRAPH-53E9 (visually similar)
-<Multi_key> <parenleft> <O> <R> <parenright> : "呎" U544E   # CJK UNIFIED IDEOGRAPH-544E (visually similar)
-<Multi_key> <parenleft> <o> <s> <parenright> : "𑄢" U11122   # CHAKMA LETTER RAA (visually similar)
-<Multi_key> <parenleft> <o> <t> <parenright> : "𠮟" U20B9F   # CJK UNIFIED IDEOGRAPH-20B9F (visually similar)
-<Multi_key> <parenleft> <o> <V> <parenright> : "㍵" U3375   # SQUARE OV
-<Multi_key> <parenleft> <O> <Y> <parenright> : "吖" U5416   # CJK UNIFIED IDEOGRAPH-5416 (visually similar)
-<Multi_key> <parenleft> <O> <y> <parenright> : "Ѹ" U0478   # CYRILLIC CAPITAL LETTER UK (visually similar)
-<Multi_key> <parenleft> <o> <y> <parenright> : "ѹ" U0479   # CYRILLIC SMALL LETTER UK (visually similar)
-<Multi_key> <parenleft> <o> <z> <parenright> : "𑄑" U11111   # CHAKMA LETTER TTAA (visually similar)
+<Multi_key> <braceleft> <O> <b> <braceright> : "Ⰴ" U2C04   # GLAGOLITIC CAPITAL LETTER DOBRO (visually similar)
+<Multi_key> <braceleft> <O> <E> <braceright> : "Œ" U0152   # LATIN CAPITAL LIGATURE OE
+<Multi_key> <braceleft> <o> <e> <braceright> : "œ" U0153   # LATIN SMALL LIGATURE OE
+<Multi_key> <braceleft> <O> <H> <braceright> : "애" UC560   # HANGUL SYLLABLE AE (visually similar)
+<Multi_key> <braceleft> <o> <h> <braceright> : "㕤" U3564   # CJK UNIFIED IDEOGRAPH-3564 (visually similar)
+<Multi_key> <braceleft> <O> <I> <braceright> : "Ꮊ" U13BA   # CHEROKEE LETTER ME (visually similar)
+<Multi_key> <braceleft> <o> <i> <braceright> : "ꮊ" UAB8A   # CHEROKEE SMALL LETTER ME (visually similar)
+<Multi_key> <braceleft> <O> <J> <braceright> : "叮" U53EE   # CJK UNIFIED IDEOGRAPH-53EE (visually similar)
+<Multi_key> <braceleft> <O> <l> <braceright> : "이" UC774   # HANGUL SYLLABLE I (visually similar)
+<Multi_key> <braceleft> <o> <o> <l> <braceright> : "𑈥" U11225   # KHOJKI LETTER YA (visually similar)
+<Multi_key> <braceleft> <O> <O> <braceright> : "Ꝏ" UA74E   # LATIN CAPITAL LETTER OO
+<Multi_key> <braceleft> <o> <o> <braceright> : "ꝏ" UA74F   # LATIN SMALL LETTER OO
+<Multi_key> <braceleft> <O> <P> <braceright> : "叩" U53E9   # CJK UNIFIED IDEOGRAPH-53E9 (visually similar)
+<Multi_key> <braceleft> <O> <R> <braceright> : "呎" U544E   # CJK UNIFIED IDEOGRAPH-544E (visually similar)
+<Multi_key> <braceleft> <o> <s> <braceright> : "𑄢" U11122   # CHAKMA LETTER RAA (visually similar)
+<Multi_key> <braceleft> <o> <t> <braceright> : "𠮟" U20B9F   # CJK UNIFIED IDEOGRAPH-20B9F (visually similar)
+<Multi_key> <braceleft> <o> <V> <braceright> : "㍵" U3375   # SQUARE OV
+<Multi_key> <braceleft> <O> <Y> <braceright> : "吖" U5416   # CJK UNIFIED IDEOGRAPH-5416 (visually similar)
+<Multi_key> <braceleft> <O> <y> <braceright> : "Ѹ" U0478   # CYRILLIC CAPITAL LETTER UK (visually similar)
+<Multi_key> <braceleft> <o> <y> <braceright> : "ѹ" U0479   # CYRILLIC SMALL LETTER UK (visually similar)
+<Multi_key> <braceleft> <o> <z> <braceright> : "𑄑" U11111   # CHAKMA LETTER TTAA (visually similar)
 
-<Multi_key> <parenleft> <p> <A> <parenright> : "㎀" U3380   # SQUARE PA AMPS
-<Multi_key> <parenleft> <P> <a> <parenright> : "㎩" U33A9   # SQUARE PA
-<Multi_key> <parenleft> <P> <C> <parenright> : "Ԗ" U0516   # CYRILLIC CAPITAL LETTER RHA (visually similar)
-<Multi_key> <parenleft> <p> <c> <parenright> : "㍶" U3376   # SQUARE PC
-<Multi_key> <parenleft> <p> <F> <parenright> : "㎊" U338A   # SQUARE PF
-<Multi_key> <parenleft> <P> <H> <parenright> : "㏗" U33D7   # SQUARE PH
-<Multi_key> <parenleft> <P> <I> <parenright> : "叿" U53FF   # CJK UNIFIED IDEOGRAPH-53FF (visually similar)
-<Multi_key> <parenleft> <P> <i> <parenright> : "ꛓ" UA6D3   # BAMUM LETTER NGKWAEN (visually similar)
-<Multi_key> <parenleft> <p> <m> <parenright> : "㏘" U33D8   # SQUARE PM
-<Multi_key> <parenleft> <P> <P> <M> <parenright> : "㏙" U33D9   # SQUARE PPM
-<Multi_key> <parenleft> <P> <R> <parenright> : "㏚" U33DA   # SQUARE PR
-<Multi_key> <parenleft> <p> <s> <parenright> : "㎰" U33B0   # SQUARE PS
-<Multi_key> <parenleft> <P> <T> <E> <parenright> : "㉐" U3250   # PARTNERSHIP SIGN
-<Multi_key> <parenleft> <p> <V> <parenright> : "㎴" U33B4   # SQUARE PV
-<Multi_key> <parenleft> <p> <W> <parenright> : "㎺" U33BA   # SQUARE PW
+<Multi_key> <braceleft> <p> <A> <braceright> : "㎀" U3380   # SQUARE PA AMPS
+<Multi_key> <braceleft> <P> <a> <braceright> : "㎩" U33A9   # SQUARE PA
+<Multi_key> <braceleft> <P> <C> <braceright> : "Ԗ" U0516   # CYRILLIC CAPITAL LETTER RHA (visually similar)
+<Multi_key> <braceleft> <p> <c> <braceright> : "㍶" U3376   # SQUARE PC
+<Multi_key> <braceleft> <p> <F> <braceright> : "㎊" U338A   # SQUARE PF
+<Multi_key> <braceleft> <P> <H> <braceright> : "㏗" U33D7   # SQUARE PH
+<Multi_key> <braceleft> <P> <I> <braceright> : "叿" U53FF   # CJK UNIFIED IDEOGRAPH-53FF (visually similar)
+<Multi_key> <braceleft> <P> <i> <braceright> : "ꛓ" UA6D3   # BAMUM LETTER NGKWAEN (visually similar)
+<Multi_key> <braceleft> <p> <m> <braceright> : "㏘" U33D8   # SQUARE PM
+<Multi_key> <braceleft> <P> <P> <M> <braceright> : "㏙" U33D9   # SQUARE PPM
+<Multi_key> <braceleft> <P> <R> <braceright> : "㏚" U33DA   # SQUARE PR
+<Multi_key> <braceleft> <p> <s> <braceright> : "㎰" U33B0   # SQUARE PS
+<Multi_key> <braceleft> <P> <T> <E> <braceright> : "㉐" U3250   # PARTNERSHIP SIGN
+<Multi_key> <braceleft> <p> <V> <braceright> : "㎴" U33B4   # SQUARE PV
+<Multi_key> <braceleft> <p> <W> <braceright> : "㎺" U33BA   # SQUARE PW
 
-<Multi_key> <parenleft> <q> <i> <parenright> : "ᦽ" U19BD   # NEW TAI LUE VOWEL SIGN OY (visually similar)
-<Multi_key> <parenleft> <q> <p> <parenright> : "ȹ" U0239   # LATIN SMALL LETTER QP DIGRAPH
+<Multi_key> <braceleft> <q> <i> <braceright> : "ᦽ" U19BD   # NEW TAI LUE VOWEL SIGN OY (visually similar)
+<Multi_key> <braceleft> <q> <p> <braceright> : "ȹ" U0239   # LATIN SMALL LETTER QP DIGRAPH
 
-<Multi_key> <parenleft> <r> <a> <d> <parenright> : "㎭" U33AD   # SQUARE RAD
-<Multi_key> <parenleft> <r> <b> <parenright> : "ꭠ" UAB60   # LATIN SMALL LETTER SAKHA YAT (visually similar)
-<Multi_key> <parenleft> <R> <E> <parenright> : "Ԙ" U0518   # CYRILLIC CAPITAL LETTER YAE (visually similar)
-<Multi_key> <parenleft> <r> <l> <parenright> : "𑀲" U11032   # BRAHMI LETTER SA (visually similar)
-<Multi_key> <parenleft> <r> <o> <parenright> : "ᘙ" U1619   # CANADIAN SYLLABICS CARRIER JI (visually similar)
-<Multi_key> <parenleft> <r> <o> <o> <parenright> : "ᰢ" U1C22   # LEPCHA LETTER WA (visually similar)
-<Multi_key> <parenleft> <R> <s> <parenright> : "₨" U20A8   # RUPEE SIGN
-<Multi_key> <parenleft> <r> <s> <parenright> : "𖹇" U16E47   # MEDEFAIDRIN CAPITAL LETTER P (visually similar)
-<Multi_key> <parenleft> <r> <u> <parenright> : "ⴠ" U2D20   # GEORGIAN SMALL LETTER HAE (visually similar)
+<Multi_key> <braceleft> <r> <a> <d> <braceright> : "㎭" U33AD   # SQUARE RAD
+<Multi_key> <braceleft> <r> <b> <braceright> : "ꭠ" UAB60   # LATIN SMALL LETTER SAKHA YAT (visually similar)
+<Multi_key> <braceleft> <R> <E> <braceright> : "Ԙ" U0518   # CYRILLIC CAPITAL LETTER YAE (visually similar)
+<Multi_key> <braceleft> <r> <l> <braceright> : "𑀲" U11032   # BRAHMI LETTER SA (visually similar)
+<Multi_key> <braceleft> <r> <o> <braceright> : "ᘙ" U1619   # CANADIAN SYLLABICS CARRIER JI (visually similar)
+<Multi_key> <braceleft> <r> <o> <o> <braceright> : "ᰢ" U1C22   # LEPCHA LETTER WA (visually similar)
+<Multi_key> <braceleft> <R> <s> <braceright> : "₨" U20A8   # RUPEE SIGN
+<Multi_key> <braceleft> <r> <s> <braceright> : "𖹇" U16E47   # MEDEFAIDRIN CAPITAL LETTER P (visually similar)
+<Multi_key> <braceleft> <r> <u> <braceright> : "ⴠ" U2D20   # GEORGIAN SMALL LETTER HAE (visually similar)
 
-<Multi_key> <parenleft> <S> <i> <parenright> : "𞤇" U1E907   # ADLAM CAPITAL LETTER BHE (visually similar)
-<Multi_key> <parenleft> <s> <j> <parenright> : "ឡ" U17A1   # KHMER LETTER LA (visually similar)
-<Multi_key> <parenleft> <s> <o> <parenright> : "𑅲" U11172   # MAHAJANI LETTER RRA (visually similar)
-<Multi_key> <parenleft> <s> <r> <parenright> : "㏛" U33DB   # SQUARE SR
-<Multi_key> <parenleft> <S> <S> <parenright> : "𐠿" U1083F   # CYPRIOT SYLLABLE ZO (visually similar)
-<Multi_key> <parenleft> <s> <t> <parenright> : "ﬆ" UFB06   # LATIN SMALL LIGATURE ST
-<Multi_key> <parenleft> <S> <v> <parenright> : "㏜" U33DC   # SQUARE SV
+<Multi_key> <braceleft> <S> <i> <braceright> : "𞤇" U1E907   # ADLAM CAPITAL LETTER BHE (visually similar)
+<Multi_key> <braceleft> <s> <j> <braceright> : "ឡ" U17A1   # KHMER LETTER LA (visually similar)
+<Multi_key> <braceleft> <s> <o> <braceright> : "𑅲" U11172   # MAHAJANI LETTER RRA (visually similar)
+<Multi_key> <braceleft> <s> <r> <braceright> : "㏛" U33DB   # SQUARE SR
+<Multi_key> <braceleft> <S> <S> <braceright> : "𐠿" U1083F   # CYPRIOT SYLLABLE ZO (visually similar)
+<Multi_key> <braceleft> <s> <t> <braceright> : "ﬆ" UFB06   # LATIN SMALL LIGATURE ST
+<Multi_key> <braceleft> <S> <v> <braceright> : "㏜" U33DC   # SQUARE SV
 
-<Multi_key> <parenleft> <t> <a> <parenright> : "な" U306A   # HIRAGANA LETTER NA (visually similar)
-<Multi_key> <parenleft> <T> <B> <parenright> : "邗" U9097   # CJK UNIFIED IDEOGRAPH-9097 (visually similar)
-<Multi_key> <parenleft> <t> <c> <parenright> : "ʨ" U02A8   # LATIN SMALL LETTER TC DIGRAPH WITH CURL
-<Multi_key> <parenleft> <T> <E> <parenright> : "𐅫" U1016B   # GREEK ACROPHONIC THESPIAN THREE HUNDRED (visually similar)
-<Multi_key> <parenleft> <t> <h> <parenright> : "ᵺ" U1D7A   # LATIN SMALL LETTER TH WITH STRIKETHROUGH
-<Multi_key> <parenleft> <T> <H> <z> <parenright> : "㎔" U3394   # SQUARE THZ
-<Multi_key> <parenleft> <T> <i> <parenright> : "Ԏ" U050E   # CYRILLIC CAPITAL LETTER KOMI TJE (visually similar)
-<Multi_key> <parenleft> <t> <i> <parenright> : "ե" U0565   # ARMENIAN SMALL LETTER ECH (visually similar)
-<Multi_key> <parenleft> <t> <r> <parenright> : "Ꮏ" U13BF   # CHEROKEE LETTER HNA (visually similar)
-<Multi_key> <parenleft> <t> <s> <parenright> : "ʦ" U02A6   # LATIN SMALL LETTER TS DIGRAPH
-<Multi_key> <parenleft> <t> <t> <parenright> : "ߚ" U07DA   # NKO LETTER RRA (visually similar)
-<Multi_key> <parenleft> <T> <z> <parenright> : "Ꜩ" UA728   # LATIN CAPITAL LETTER TZ
-<Multi_key> <parenleft> <t> <z> <parenright> : "ꜩ" UA729   # LATIN SMALL LETTER TZ
+<Multi_key> <braceleft> <t> <a> <braceright> : "な" U306A   # HIRAGANA LETTER NA (visually similar)
+<Multi_key> <braceleft> <T> <B> <braceright> : "邗" U9097   # CJK UNIFIED IDEOGRAPH-9097 (visually similar)
+<Multi_key> <braceleft> <t> <c> <braceright> : "ʨ" U02A8   # LATIN SMALL LETTER TC DIGRAPH WITH CURL
+<Multi_key> <braceleft> <T> <E> <braceright> : "𐅫" U1016B   # GREEK ACROPHONIC THESPIAN THREE HUNDRED (visually similar)
+<Multi_key> <braceleft> <t> <h> <braceright> : "ᵺ" U1D7A   # LATIN SMALL LETTER TH WITH STRIKETHROUGH
+<Multi_key> <braceleft> <T> <H> <z> <braceright> : "㎔" U3394   # SQUARE THZ
+<Multi_key> <braceleft> <T> <i> <braceright> : "Ԏ" U050E   # CYRILLIC CAPITAL LETTER KOMI TJE (visually similar)
+<Multi_key> <braceleft> <t> <i> <braceright> : "ե" U0565   # ARMENIAN SMALL LETTER ECH (visually similar)
+<Multi_key> <braceleft> <t> <r> <braceright> : "Ꮏ" U13BF   # CHEROKEE LETTER HNA (visually similar)
+<Multi_key> <braceleft> <t> <s> <braceright> : "ʦ" U02A6   # LATIN SMALL LETTER TS DIGRAPH
+<Multi_key> <braceleft> <t> <t> <braceright> : "ߚ" U07DA   # NKO LETTER RRA (visually similar)
+<Multi_key> <braceleft> <T> <z> <braceright> : "Ꜩ" UA728   # LATIN CAPITAL LETTER TZ
+<Multi_key> <braceleft> <t> <z> <braceright> : "ꜩ" UA729   # LATIN SMALL LETTER TZ
 
-<Multi_key> <parenleft> <u> <e> <parenright> : "ᵫ" U1D6B   # LATIN SMALL LETTER UE
-<Multi_key> <parenleft> <u> <g> <parenright> : "㎍" U338D   # SQUARE MU G (visually similar)
-<Multi_key> <parenleft> <U> <I> <parenright> : "𖬓" U16B13   # PAHAWH HMONG VOWEL KOV (visually similar)
-<Multi_key> <parenleft> <u> <l> <parenright> : "㎕" U3395   # SQUARE MU L (visually similar)
-<Multi_key> <parenleft> <u> <m> <parenright> : "㎛" U339B   # SQUARE MU M (visually similar)
-<Multi_key> <parenleft> <u> <o> <parenright> : "ꭣ" UAB63   # LATIN SMALL LETTER UO
-<Multi_key> <parenleft> <u> <p> <parenright> : "𑜘" U11718   # AHOM LETTER BHA (visually similar)
-<Multi_key> <parenleft> <u> <s> <parenright> : "㎲" U33B2   # SQUARE MU S (visually similar)
-<Multi_key> <parenleft> <u> <u> <parenright> : "ɯ" U026F   # LATIN SMALL LETTER TURNED M (visually similar)
-<Multi_key> <parenleft> <u> <y> <parenright> : "ꪐ" UAA90   # TAI VIET LETTER LOW NYO (visually similar)
+<Multi_key> <braceleft> <u> <e> <braceright> : "ᵫ" U1D6B   # LATIN SMALL LETTER UE
+<Multi_key> <braceleft> <u> <g> <braceright> : "㎍" U338D   # SQUARE MU G (visually similar)
+<Multi_key> <braceleft> <U> <I> <braceright> : "𖬓" U16B13   # PAHAWH HMONG VOWEL KOV (visually similar)
+<Multi_key> <braceleft> <u> <l> <braceright> : "㎕" U3395   # SQUARE MU L (visually similar)
+<Multi_key> <braceleft> <u> <m> <braceright> : "㎛" U339B   # SQUARE MU M (visually similar)
+<Multi_key> <braceleft> <u> <o> <braceright> : "ꭣ" UAB63   # LATIN SMALL LETTER UO
+<Multi_key> <braceleft> <u> <p> <braceright> : "𑜘" U11718   # AHOM LETTER BHA (visually similar)
+<Multi_key> <braceleft> <u> <s> <braceright> : "㎲" U33B2   # SQUARE MU S (visually similar)
+<Multi_key> <braceleft> <u> <u> <braceright> : "ɯ" U026F   # LATIN SMALL LETTER TURNED M (visually similar)
+<Multi_key> <braceleft> <u> <y> <braceright> : "ꪐ" UAA90   # TAI VIET LETTER LOW NYO (visually similar)
 
-<Multi_key> <parenleft> <V> <B> <parenright> : "Ꟃ" UA7C2   # LATIN CAPITAL LETTER ANGLICANA W (visually similar)
-<Multi_key> <parenleft> <V> <I> <I> <I> <parenright> : "Ⅷ" U2167   # ROMAN NUMERAL EIGHT
-<Multi_key> <parenleft> <v> <i> <i> <i> <parenright> : "ⅷ" U2177   # SMALL ROMAN NUMERAL EIGHT
-<Multi_key> <parenleft> <V> <I> <I> <parenright> : "Ⅶ" U2166   # ROMAN NUMERAL SEVEN
-<Multi_key> <parenleft> <v> <i> <i> <parenright> : "ⅶ" U2176   # SMALL ROMAN NUMERAL SEVEN
-<Multi_key> <parenleft> <V> <I> <parenright> : "Ⅵ" U2165   # ROMAN NUMERAL SIX
-<Multi_key> <parenleft> <v> <i> <parenright> : "ⅵ" U2175   # SMALL ROMAN NUMERAL SIX
-<Multi_key> <parenleft> <v> <o> <parenright> : "𑜋" U1170B   # AHOM LETTER CHA (visually similar)
-<Multi_key> <parenleft> <v> <u> <parenright> : "𑜎" U1170E   # AHOM LETTER LA (visually similar)
-<Multi_key> <parenleft> <V> <V> <parenright> : "W" U0057   # LATIN CAPITAL LETTER W
-<Multi_key> <parenleft> <v> <v> <parenright> : "ᴡ" U1D21   # LATIN LETTER SMALL CAPITAL W (visually similar)
-<Multi_key> <parenleft> <V> <Y> <parenright> : "Ꝡ" UA760   # LATIN CAPITAL LETTER VY
-<Multi_key> <parenleft> <v> <y> <parenright> : "ꝡ" UA761   # LATIN SMALL LETTER VY
+<Multi_key> <braceleft> <V> <B> <braceright> : "Ꟃ" UA7C2   # LATIN CAPITAL LETTER ANGLICANA W (visually similar)
+<Multi_key> <braceleft> <V> <I> <I> <I> <braceright> : "Ⅷ" U2167   # ROMAN NUMERAL EIGHT
+<Multi_key> <braceleft> <v> <i> <i> <i> <braceright> : "ⅷ" U2177   # SMALL ROMAN NUMERAL EIGHT
+<Multi_key> <braceleft> <V> <I> <I> <braceright> : "Ⅶ" U2166   # ROMAN NUMERAL SEVEN
+<Multi_key> <braceleft> <v> <i> <i> <braceright> : "ⅶ" U2176   # SMALL ROMAN NUMERAL SEVEN
+<Multi_key> <braceleft> <V> <I> <braceright> : "Ⅵ" U2165   # ROMAN NUMERAL SIX
+<Multi_key> <braceleft> <v> <i> <braceright> : "ⅵ" U2175   # SMALL ROMAN NUMERAL SIX
+<Multi_key> <braceleft> <v> <o> <braceright> : "𑜋" U1170B   # AHOM LETTER CHA (visually similar)
+<Multi_key> <braceleft> <v> <u> <braceright> : "𑜎" U1170E   # AHOM LETTER LA (visually similar)
+<Multi_key> <braceleft> <V> <V> <braceright> : "W" U0057   # LATIN CAPITAL LETTER W
+<Multi_key> <braceleft> <v> <v> <braceright> : "ᴡ" U1D21   # LATIN LETTER SMALL CAPITAL W (visually similar)
+<Multi_key> <braceleft> <V> <Y> <braceright> : "Ꝡ" UA760   # LATIN CAPITAL LETTER VY
+<Multi_key> <braceleft> <v> <y> <braceright> : "ꝡ" UA761   # LATIN SMALL LETTER VY
 
-<Multi_key> <parenleft> <W> <B> <parenright> : "邖" U9096   # CJK UNIFIED IDEOGRAPH-9096 (visually similar)
-<Multi_key> <parenleft> <W> <b> <parenright> : "㏝" U33DD   # SQUARE WB
-<Multi_key> <parenleft> <w> <b> <parenright> : "ꪟ" UAA9F   # TAI VIET LETTER HIGH PHO (visually similar)
-<Multi_key> <parenleft> <W> <I> <parenright> : "屸" U5C78   # CJK UNIFIED IDEOGRAPH-5C78 (visually similar)
-<Multi_key> <parenleft> <W> <T> <parenright> : "屽" U5C7D   # CJK UNIFIED IDEOGRAPH-5C7D (visually similar)
-<Multi_key> <parenleft> <W> <Z> <parenright> : "屺" U5C7A   # CJK UNIFIED IDEOGRAPH-5C7A (visually similar)
-<Multi_key> <parenleft> <w> <z> <parenright> : "ꪃ" UAA83   # TAI VIET LETTER HIGH KHO (visually similar)
+<Multi_key> <braceleft> <W> <B> <braceright> : "邖" U9096   # CJK UNIFIED IDEOGRAPH-9096 (visually similar)
+<Multi_key> <braceleft> <W> <b> <braceright> : "㏝" U33DD   # SQUARE WB
+<Multi_key> <braceleft> <w> <b> <braceright> : "ꪟ" UAA9F   # TAI VIET LETTER HIGH PHO (visually similar)
+<Multi_key> <braceleft> <W> <I> <braceright> : "屸" U5C78   # CJK UNIFIED IDEOGRAPH-5C78 (visually similar)
+<Multi_key> <braceleft> <W> <T> <braceright> : "屽" U5C7D   # CJK UNIFIED IDEOGRAPH-5C7D (visually similar)
+<Multi_key> <braceleft> <W> <Z> <braceright> : "屺" U5C7A   # CJK UNIFIED IDEOGRAPH-5C7A (visually similar)
+<Multi_key> <braceleft> <w> <z> <braceright> : "ꪃ" UAA83   # TAI VIET LETTER HIGH KHO (visually similar)
 
-<Multi_key> <parenleft> <X> <I> <I> <parenright> : "Ⅻ" U216B   # ROMAN NUMERAL TWELVE
-<Multi_key> <parenleft> <x> <i> <i> <parenright> : "ⅻ" U217B   # SMALL ROMAN NUMERAL TWELVE
-<Multi_key> <parenleft> <X> <I> <parenright> : "Ⅺ" U216A   # ROMAN NUMERAL ELEVEN
-<Multi_key> <parenleft> <x> <i> <parenright> : "ⅺ" U217A   # SMALL ROMAN NUMERAL ELEVEN
-<Multi_key> <parenleft> <X> <I> <J> <parenright> : "刈" U5208   # CJK UNIFIED IDEOGRAPH-5208 (visually similar)
+<Multi_key> <braceleft> <X> <I> <I> <braceright> : "Ⅻ" U216B   # ROMAN NUMERAL TWELVE
+<Multi_key> <braceleft> <x> <i> <i> <braceright> : "ⅻ" U217B   # SMALL ROMAN NUMERAL TWELVE
+<Multi_key> <braceleft> <X> <I> <braceright> : "Ⅺ" U216A   # ROMAN NUMERAL ELEVEN
+<Multi_key> <braceleft> <x> <i> <braceright> : "ⅺ" U217A   # SMALL ROMAN NUMERAL ELEVEN
+<Multi_key> <braceleft> <X> <I> <J> <braceright> : "刈" U5208   # CJK UNIFIED IDEOGRAPH-5208 (visually similar)
 
-<Multi_key> <parenleft> <Z> <B> <parenright> : "邔" U9094   # CJK UNIFIED IDEOGRAPH-9094 (visually similar)
-<Multi_key> <parenleft> <z> <e> <parenright> : "𑣰" U118F0   # WARANG CITI NUMBER SEVENTY (visually similar)
-<Multi_key> <parenleft> <Z> <H> <parenright> : "래" UB798   # HANGUL SYLLABLE RAE (visually similar)
-<Multi_key> <parenleft> <Z> <l> <parenright> : "리" UB9AC   # HANGUL SYLLABLE RI (visually similar)
+<Multi_key> <braceleft> <Z> <B> <braceright> : "邔" U9094   # CJK UNIFIED IDEOGRAPH-9094 (visually similar)
+<Multi_key> <braceleft> <z> <e> <braceright> : "𑣰" U118F0   # WARANG CITI NUMBER SEVENTY (visually similar)
+<Multi_key> <braceleft> <Z> <H> <braceright> : "래" UB798   # HANGUL SYLLABLE RAE (visually similar)
+<Multi_key> <braceleft> <Z> <l> <braceright> : "리" UB9AC   # HANGUL SYLLABLE RI (visually similar)
 
 ################
 # Letter games #
@@ -6519,6 +6531,7 @@ include "%L"
 <Multi_key> <parenleft> <backslash> <parenright>     : "⦸"  U29B8   # CIRCLED REVERSE SOLIDUS
 <Multi_key> <parenleft> <less> <parenright>          : "⧀"  U29C0   # CIRCLED LESS-THAN
 <Multi_key> <parenleft> <greater> <parenright>       : "⧁"  U29C1   # CIRCLED GREATER-THAN
+<Multi_key> <parenleft> <minus> <colon> <parenright> : "⨸"  U2A38   # CIRCLED DIVISION SIGN (conflicts with useless {)
 <Multi_key> <underscore> <Multi_key> <backslash> <slash> : "⊻"  U22BB   # XOR (alternatively xor)
 
 # LaTeX-inspired names
@@ -8448,6 +8461,8 @@ include "%L"
 <Multi_key> <parenleft> <parenright> <minus>       : "⊖" U2296   # CIRCLED MINUS (alternatively (-))
 <Multi_key> <parenleft> <parenright> <X>           : "⊗" U2297   # CIRCLED TIMES (alternatively (*))
 <Multi_key> <parenleft> <parenright> <slash>       : "⊘" U2298   # CIRCLED DIVISION SLASH (alternatively (/))
+<Multi_key> <parenleft> <parenright> <colon> <minus> : "⨸"  U2A38   # CIRCLED DIVISION SIGN (alternativey (-:))
+<Multi_key> <parenleft> <parenright> <bracketleft> <bracketright> : "🟗" U1F7D7   # CIRCLED SQUARE (alternatively ([]))
 <Multi_key> <parenleft> <parenright> <Multi_key> <asciicircum> <period> : "⊙" U2299    # CIRCLED DOT OPERATOR
 <Multi_key> <parenleft> <parenright> <Multi_key> <period> <minus> : "⊙" U2299    # CIRCLED DOT OPERATOR
 <Multi_key> <parenleft> <parenright> <o>           : "⊚" U229A    # CIRCLED RING OPERATOR
@@ -8455,6 +8470,15 @@ include "%L"
 <Multi_key> <parenleft> <parenright> <equal>       : "⊜" U229C    # CIRCLED EQUALS
 <Multi_key> <parenleft> <parenright> <2> <0>       : "◎" U25CE    # BULLSEYE
 <Multi_key> <parenleft> <parenright> <2> <1>       : "◉" U25C9    # FISHEYE
+
+<Multi_key> <parenleft> <slash> <backslash> <parenright> : "🟕" U1F7D5   # CIRCLED TRIANGLE
+<Multi_key> <parenleft> <bracketleft> <bracketright> <parenright> : "🟗" U1F7D7   # CIRCLED SQUARE
+<Multi_key> <exclam> <parenleft> <slash> <backslash> <parenright> : "🟖" U1F7D6   # NEGATIVE CIRCLED TRIANGLE
+<Multi_key> <exclam> <parenleft> <bracketleft> <bracketright> <parenright> : "🟘" U1F7D8   # NEGATIVE CIRCLED SQUARE
+<Multi_key> <exclam> <parenleft> <less> <minus> <parenright> : "⮈" U2B88   # LEFTWARDS BLACK CIRCLED WHITE ARROW
+<Multi_key> <exclam> <parenleft> <asciicircum> <bar> <parenright> : "⮉" U2B89   # UPWARDS BLACK CIRCLED WHITE ARROW
+<Multi_key> <exclam> <parenleft> <minus> <greater> <parenright> : "⮊" U2B8A   # RIGHTWARDS BLACK CIRCLED WHITE ARROW
+<Multi_key> <exclam> <parenleft> <v> <bar> <parenright> : "⮋" U2B8B   # DOWNWARDS BLACK CIRCLED WHITE ARROW
 
 # Rectangles [ ] and ellipses ( )
 
