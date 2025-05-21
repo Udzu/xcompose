@@ -2400,9 +2400,9 @@ include "%L"
 
 # default glyph types are (c = characters x = extra characters # = numbers ; = punctuation)
 
-###################################################
-# (a) Arabic (and Mandaic, Syriac & Neo-Tifinagh) #
-###################################################
+###########################################################
+# (a) Arabic (and Mandaic, Syriac, Neo-Tifinagh & Yezidi) #
+###########################################################
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -2641,6 +2641,57 @@ include "%L"
 <Multi_key> <a> <T> <d> <j> : "ⴵ" U2D35   # TIFINAGH LETTER BERBER ACADEMY YAJ
 <Multi_key> <a> <T> <h> : "ⵁ" U2D41   # TIFINAGH LETTER BERBER ACADEMY YAH
 <Multi_key> <a> <T> <c> <h> : "ⵞ" U2D5E   # TIFINAGH LETTER YACH
+
+# (y = Yezidi)
+
+<Multi_key> <a> <y> <a> : "𐺀" U10E80   # YEZIDI LETTER ELIF
+<Multi_key> <a> <y> <b> : "𐺁" U10E81   # YEZIDI LETTER BE
+<Multi_key> <a> <y> <p> : "𐺂" U10E82   # YEZIDI LETTER PE
+<Multi_key> <a> <y> <apostrophe> <p> : "𐺃" U10E83   # YEZIDI LETTER PHE
+<Multi_key> <a> <y> <apostrophe> <t> : "𐺄" U10E84   # YEZIDI LETTER THE
+<Multi_key> <a> <y> <S> : "𐺅" U10E85   # YEZIDI LETTER SE
+<Multi_key> <a> <y> <c> : "𐺆" U10E86   # YEZIDI LETTER CIM
+<Multi_key> <a> <y> <comma> <c> : "𐺇" U10E87   # YEZIDI LETTER CHIM
+<Multi_key> <a> <y> <apostrophe> <comma> <c> : "𐺈" U10E88   # YEZIDI LETTER CHHIM
+<Multi_key> <a> <y> <minus> <h> : "𐺉" U10E89   # YEZIDI LETTER HHA
+<Multi_key> <a> <y> <x> : "𐺊" U10E8A   # YEZIDI LETTER XA
+<Multi_key> <a> <y> <d> : "𐺋" U10E8B   # YEZIDI LETTER DAL
+<Multi_key> <a> <y> <period> <z> : "𐺌" U10E8C   # YEZIDI LETTER ZAL
+<Multi_key> <a> <y> <r> : "𐺍" U10E8D   # YEZIDI LETTER RA
+<Multi_key> <a> <y> <minus> <r> : "𐺎" U10E8E   # YEZIDI LETTER RHA
+<Multi_key> <a> <y> <z> : "𐺏" U10E8F   # YEZIDI LETTER ZA
+<Multi_key> <a> <y> <j> : "𐺐" U10E90   # YEZIDI LETTER JA
+<Multi_key> <a> <y> <s> : "𐺑" U10E91   # YEZIDI LETTER SIN
+<Multi_key> <a> <y> <comma> <s> : "𐺒" U10E92   # YEZIDI LETTER SHIN
+<Multi_key> <a> <y> <period> <s> : "𐺓" U10E93   # YEZIDI LETTER SAD
+<Multi_key> <a> <y> <period> <d> : "𐺔" U10E94   # YEZIDI LETTER DAD
+<Multi_key> <a> <y> <t> : "𐺕" U10E95   # YEZIDI LETTER TA
+<Multi_key> <a> <y> <apostrophe> <z> : "𐺖" U10E96   # YEZIDI LETTER ZE
+<Multi_key> <a> <y> <grave> : "𐺗" U10E97   # YEZIDI LETTER EYN
+<Multi_key> <a> <y> <apostrophe> <x> : "𐺘" U10E98   # YEZIDI LETTER XHEYN
+<Multi_key> <a> <y> <f> : "𐺙" U10E99   # YEZIDI LETTER FA
+<Multi_key> <a> <y> <v> : "𐺚" U10E9A   # YEZIDI LETTER VA
+<Multi_key> <a> <y> <V> : "𐺛" U10E9B   # YEZIDI LETTER VA ALTERNATE FORM
+<Multi_key> <a> <y> <q> : "𐺜" U10E9C   # YEZIDI LETTER QAF
+<Multi_key> <a> <y> <k> : "𐺝" U10E9D   # YEZIDI LETTER KAF
+<Multi_key> <a> <y> <apostrophe> <k> : "𐺞" U10E9E   # YEZIDI LETTER KHAF
+<Multi_key> <a> <y> <g> : "𐺟" U10E9F   # YEZIDI LETTER GAF
+<Multi_key> <a> <y> <l> : "𐺠" U10EA0   # YEZIDI LETTER LAM
+<Multi_key> <a> <y> <m> : "𐺡" U10EA1   # YEZIDI LETTER MIM
+<Multi_key> <a> <y> <n> : "𐺢" U10EA2   # YEZIDI LETTER NUN
+<Multi_key> <a> <y> <u> : "𐺣" U10EA3   # YEZIDI LETTER UM
+<Multi_key> <a> <y> <w> : "𐺤" U10EA4   # YEZIDI LETTER WAW
+<Multi_key> <a> <y> <o> : "𐺥" U10EA5   # YEZIDI LETTER OW
+<Multi_key> <a> <y> <e> : "𐺦" U10EA6   # YEZIDI LETTER EW
+<Multi_key> <a> <y> <h> : "𐺧" U10EA7   # YEZIDI LETTER HAY
+<Multi_key> <a> <y> <y> : "𐺨" U10EA8   # YEZIDI LETTER YOT
+<Multi_key> <a> <y> <asciicircum> <e> : "𐺩" U10EA9   # YEZIDI LETTER ET
+
+<Multi_key> <a> <y> <2> <Return> : "𐺫" U10EAB   # YEZIDI COMBINING HAMZA MARK
+<Multi_key> <a> <y> <minus> <Return> : "𐺬" U10EAC   # YEZIDI COMBINING MADDA MARK
+<Multi_key> <a> <y> <minus> <minus> : "𐺭" U10EAD   # YEZIDI HYPHENATION MARK
+<Multi_key> <a> <y> <period> <l> : "𐺰" U10EB0   # YEZIDI LETTER LAM WITH DOT ABOVE
+<Multi_key> <a> <y> <asciicircum> <y> : "𐺱" U10EB1   # YEZIDI LETTER YOT WITH CIRCUMFLEX ABOVE
 
 ################
 # (A) Armenian #
@@ -7122,7 +7173,7 @@ include "%L"
 <Multi_key> <w> <o> <r> <k> <e> <r> : "🧑‍🏭"  U1F9D1 U200D U1F3ED   # FACTORY WORKER
 <Multi_key> <z> <o> <m> <b> <i> <e> : "🧟"  U1F9DF        # ZOMBIE
 
-<Multi_key> <a> <y> <e>             : "🤚"  U1F91A        # RAISED BACK OF HAND (AYE)
+<Multi_key> <a> <g> <r> <e> <e> <d> : "🤚"  U1F91A        # RAISED BACK OF HAND (AGREED) (use metoo for 🙋 and yes for 🙂‍↕️)
 <Multi_key> <b> <l> <o> <o> <d>     : "🩸"  U1FA78        # DROP OF BLOOD
 <Multi_key> <b> <r> <a> <i> <n>     : "🧠"  U1F9E0        # BRAIN
 <Multi_key> <b> <o> <n> <e>         : "🦴"  U1F9B4        # BONE (conflicts with ŏ, use uo)

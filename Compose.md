@@ -26,8 +26,8 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (287): ʣ ㏈ etc
 * **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (3327)
-* **Arabic**, Mandaic, Syriac & Neo-Tifinagh (197): ⁧رِيدِيت⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ etc
+### Non-Latin script characters (3374)
+* **Arabic**, Mandaic, Syriac, Neo-Tifinagh & Yezidi (244): ⁧رِيدِيت⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդit etc
 * **Brahmic Scripts** (Bengali, Brahmi, Burmese, Devanagari, Gujarati, Gurmukhi, Kannada, Malayalam, Odia, Tamil, Telugu) (930): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆದಿತ, രെഡിട, ରେଡିଟ, ரெதிட, రెడిట etc
 * **Unified English Braille** (79): ⠗⠫⠙⠊⠞ etc
