@@ -2794,7 +2794,7 @@ include "%L"
 
 # (Brahmi, Devanagari, Bengali, Burmese, Gujarati, Gurmukhi, Kannada, Malayalam, Odia, Sinhala, Tamil, Telugu)
 
-# based on 7-bit ISO 15919
+# (based on 7-bit ISO 15919)
 
 # standalone vowels end with <space> (to contrast <Return> for dependent vowel modifiers)
 # as do non-aspirated consonants (to leave space for h)
@@ -4386,9 +4386,9 @@ include "%L"
 <Multi_key> <c> <G> <m>          : "ⱞ" U2C5E   # GLAGOLITIC SMALL LETTER LATINATE MYSLITE (conflicts)
 <Multi_key> <c> <G> <less> <c> <h> : "ⱟ" U2C5F   # GLAGOLITIC SMALL LETTER CAUDATE CHRIVI (conflicts)
 
-################################################
-# (C) ConScripts (Cherokee, Deseret & Shavian) #
-################################################
+##########################################################
+# (C) ConScripts (Cherokee, Deseret, Ol Chiki & Shavian) #
+##########################################################
 
 # (d/D = Deseret)
 
@@ -4649,6 +4649,60 @@ include "%L"
 <Multi_key> <C> <h> <w> <u> : "ꮽ" UABBD   # CHEROKEE SMALL LETTER WU
 <Multi_key> <C> <h> <w> <v> : "ꮾ" UABBE   # CHEROKEE SMALL LETTER WV
 <Multi_key> <C> <h> <y> <a> : "ꮿ" UABBF   # CHEROKEE SMALL LETTER YA
+
+# (o = Ol Chiki) based on ALA-LC
+
+<Multi_key> <C> <o> <a> : "ᱚ" U1C5A   # OL CHIKI LETTER LA
+<Multi_key> <C> <o> <t> : "ᱛ" U1C5B   # OL CHIKI LETTER AT
+<Multi_key> <C> <o> <g> : "ᱜ" U1C5C   # OL CHIKI LETTER AG
+<Multi_key> <C> <o> <period> <m> : "ᱝ" U1C5D   # OL CHIKI LETTER ANG
+<Multi_key> <C> <o> <Multi_key> <n> <g> : "ᱝ" U1C5D   # OL CHIKI LETTER ANG
+<Multi_key> <C> <o> <l> : "ᱞ" U1C5E   # OL CHIKI LETTER AL
+<Multi_key> <C> <o> <period> <a> : "ᱟ" U1C5F   # OL CHIKI LETTER LAA
+<Multi_key> <C> <o> <k> : "ᱠ" U1C60   # OL CHIKI LETTER AAK
+<Multi_key> <C> <o> <j> : "ᱡ" U1C61   # OL CHIKI LETTER AAJ
+<Multi_key> <C> <o> <m> : "ᱢ" U1C62   # OL CHIKI LETTER AAM
+<Multi_key> <C> <o> <w> : "ᱣ" U1C63   # OL CHIKI LETTER AAW
+<Multi_key> <C> <o> <i> : "ᱤ" U1C64   # OL CHIKI LETTER LI
+<Multi_key> <C> <o> <s> : "ᱥ" U1C65   # OL CHIKI LETTER IS
+<Multi_key> <C> <o> <underscore> <h> : "ᱦ" U1C66   # OL CHIKI LETTER IH
+<Multi_key> <C> <o> <asciitilde> <n> : "ᱧ" U1C67   # OL CHIKI LETTER INY
+<Multi_key> <C> <o> <r> : "ᱨ" U1C68   # OL CHIKI LETTER IR
+<Multi_key> <C> <o> <u> : "ᱩ" U1C69   # OL CHIKI LETTER LU
+<Multi_key> <C> <o> <c> : "ᱪ" U1C6A   # OL CHIKI LETTER UC
+<Multi_key> <C> <o> <d> : "ᱫ" U1C6B   # OL CHIKI LETTER UD
+<Multi_key> <C> <o> <period> <n> : "ᱬ" U1C6C   # OL CHIKI LETTER UNN
+<Multi_key> <C> <o> <y> : "ᱭ" U1C6D   # OL CHIKI LETTER UY
+<Multi_key> <C> <o> <e> : "ᱮ" U1C6E   # OL CHIKI LETTER LE
+<Multi_key> <C> <o> <p> : "ᱯ" U1C6F   # OL CHIKI LETTER EP
+<Multi_key> <C> <o> <period> <d> : "ᱰ" U1C70   # OL CHIKI LETTER EDD
+<Multi_key> <C> <o> <n> : "ᱱ" U1C71   # OL CHIKI LETTER EN
+<Multi_key> <C> <o> <period> <r> : "ᱲ" U1C72   # OL CHIKI LETTER ERR
+<Multi_key> <C> <o> <o> : "ᱳ" U1C73   # OL CHIKI LETTER LO
+<Multi_key> <C> <o> <period> <t> : "ᱴ" U1C74   # OL CHIKI LETTER OTT
+<Multi_key> <C> <o> <b> : "ᱵ" U1C75   # OL CHIKI LETTER OB
+<Multi_key> <C> <o> <v> : "ᱶ" U1C76   # OL CHIKI LETTER OV
+<Multi_key> <C> <o> <h> : "ᱷ" U1C77   # OL CHIKI LETTER OH
+
+<Multi_key> <C> <o> <asciicircum> <period> : "ᱸ" U1C78   # OL CHIKI MU TTUDDAG
+<Multi_key> <C> <o> <underscore> <period> : "ᱹ" U1C79   # OL CHIKI GAAHLAA TTUDDAAG
+<Multi_key> <C> <o> <colon> : "ᱺ" U1C7A   # OL CHIKI MU-GAAHLAA TTUDDAAG
+<Multi_key> <C> <o> <asciitilde> <asciitilde> : "ᱻ" U1C7B   # OL CHIKI RELAA
+<Multi_key> <C> <o> <minus> : "ᱼ" U1C7C   # OL CHIKI PHAARKAA
+<Multi_key> <C> <o> <9> : "ᱽ" U1C7D   # OL CHIKI AHAD
+<Multi_key> <C> <o> <comma> : "᱾" U1C7E   # OL CHIKI PUNCTUATION MUCAAD
+<Multi_key> <C> <o> <semicolon> : "᱿" U1C7F   # OL CHIKI PUNCTUATION DOUBLE MUCAAD
+
+<Multi_key> <C> <o> <numbersign> <0> : "᱐" U1C50   # OL CHIKI DIGIT ZERO
+<Multi_key> <C> <o> <numbersign> <1> : "᱑" U1C51   # OL CHIKI DIGIT ONE
+<Multi_key> <C> <o> <numbersign> <2> : "᱒" U1C52   # OL CHIKI DIGIT TWO
+<Multi_key> <C> <o> <numbersign> <3> : "᱓" U1C53   # OL CHIKI DIGIT THREE
+<Multi_key> <C> <o> <numbersign> <4> : "᱔" U1C54   # OL CHIKI DIGIT FOUR
+<Multi_key> <C> <o> <numbersign> <5> : "᱕" U1C55   # OL CHIKI DIGIT FIVE
+<Multi_key> <C> <o> <numbersign> <6> : "᱖" U1C56   # OL CHIKI DIGIT SIX
+<Multi_key> <C> <o> <numbersign> <7> : "᱗" U1C57   # OL CHIKI DIGIT SEVEN
+<Multi_key> <C> <o> <numbersign> <8> : "᱘" U1C58   # OL CHIKI DIGIT EIGHT
+<Multi_key> <C> <o> <numbersign> <9> : "᱙" U1C59   # OL CHIKI DIGIT NINE
 
 # (s/S = Shavian)
 
@@ -6357,6 +6411,112 @@ include "%L"
 <Multi_key> <o> <i> <r> <R> <N> : "ᛧ" U16E7   # RUNIC LETTER SHORT-TWIG-YR
 <Multi_key> <o> <i> <r> <quotedbl> <i> : "ᛇ" U16C7   # RUNIC LETTER IWAZ EOH
 
+
+############
+# (t) Thai #
+############
+
+# (based on ISO 11940)
+
+# Consonants
+
+<Multi_key> <t> <c> <k> <space> : "ก" U0E01   # THAI CHARACTER KO KAI
+<Multi_key> <t> <c> <minus> <k> <h> : "ข" U0E02   # THAI CHARACTER KHO KHAI
+<Multi_key> <t> <c> <minus> <period> <k> <h> : "ฃ" U0E03   # THAI CHARACTER KHO KHUAT
+<Multi_key> <t> <c> <k> <h> : "ค" U0E04   # THAI CHARACTER KHO KHWAI
+<Multi_key> <t> <c> <apostrophe> <k> <h> : "ฅ" U0E05   # THAI CHARACTER KHO KHON
+<Multi_key> <t> <c> <period> <k> <h> : "ฆ" U0E06   # THAI CHARACTER KHO RAKHANG
+<Multi_key> <t> <c> <n> <g> : "ง" U0E07   # THAI CHARACTER NGO NGU
+<Multi_key> <t> <c> <c> <space> : "จ" U0E08   # THAI CHARACTER CHO CHAN
+<Multi_key> <t> <c> <minus> <c> <h> : "ฉ" U0E09   # THAI CHARACTER CHO CHING
+<Multi_key> <t> <c> <c> <h> : "ช" U0E0A   # THAI CHARACTER CHO CHANG
+<Multi_key> <t> <c> <s> : "ซ" U0E0B   # THAI CHARACTER SO SO
+<Multi_key> <t> <c> <period> <c> <h> : "ฌ" U0E0C   # THAI CHARACTER CHO CHOE
+<Multi_key> <t> <c> <period> <y> : "ญ" U0E0D   # THAI CHARACTER YO YING
+<Multi_key> <t> <c> <period> <d> : "ฎ" U0E0E   # THAI CHARACTER DO CHADA
+<Multi_key> <t> <c> <period> <t> <space> : "ฏ" U0E0F   # THAI CHARACTER TO PATAK
+<Multi_key> <t> <c> <minus> <period> <t> <h> : "ฐ" U0E10   # THAI CHARACTER THO THAN
+<Multi_key> <t> <c> <underscore> <t> <h> : "ฑ" U0E11   # THAI CHARACTER THO NANGMONTHO
+<Multi_key> <t> <c> <apostrophe> <t> <h> : "ฒ" U0E12   # THAI CHARACTER THO PHUTHAO
+<Multi_key> <t> <c> <period> <n> : "ณ" U0E13   # THAI CHARACTER NO NEN
+<Multi_key> <t> <c> <d> : "ด" U0E14   # THAI CHARACTER DO DEK
+<Multi_key> <t> <c> <t> <space> : "ต" U0E15   # THAI CHARACTER TO TAO
+<Multi_key> <t> <c> <minus> <t> <h> : "ถ" U0E16   # THAI CHARACTER THO THUNG
+<Multi_key> <t> <c> <t> <h> : "ท" U0E17   # THAI CHARACTER THO THAHAN
+<Multi_key> <t> <c> <period> <t> <h> : "ธ" U0E18   # THAI CHARACTER THO THONG
+<Multi_key> <t> <c> <n> <space> : "น" U0E19   # THAI CHARACTER NO NU
+<Multi_key> <t> <c> <b> : "บ" U0E1A   # THAI CHARACTER BO BAIMAI
+<Multi_key> <t> <c> <p> <space> : "ป" U0E1B   # THAI CHARACTER PO PLA
+<Multi_key> <t> <c> <minus> <p> <h> : "ผ" U0E1C   # THAI CHARACTER PHO PHUNG
+<Multi_key> <t> <c> <minus> <f> : "ฝ" U0E1D   # THAI CHARACTER FO FA
+<Multi_key> <t> <c> <p> <h> : "พ" U0E1E   # THAI CHARACTER PHO PHAN
+<Multi_key> <t> <c> <f> : "ฟ" U0E1F   # THAI CHARACTER FO FAN
+<Multi_key> <t> <c> <period> <p> <h> : "ภ" U0E20   # THAI CHARACTER PHO SAMPHAO
+<Multi_key> <t> <c> <m> : "ม" U0E21   # THAI CHARACTER MO MA
+<Multi_key> <t> <c> <y> : "ย" U0E22   # THAI CHARACTER YO YAK
+<Multi_key> <t> <c> <r> : "ร" U0E23   # THAI CHARACTER RO RUA
+<Multi_key> <t> <c> <v> : "ฤ" U0E24   # THAI CHARACTER RU
+<Multi_key> <t> <c> <l> : "ล" U0E25   # THAI CHARACTER LO LING
+<Multi_key> <t> <c> <slash> <l> : "ฦ" U0E26   # THAI CHARACTER LU
+<Multi_key> <t> <c> <w> : "ว" U0E27   # THAI CHARACTER WO WAEN
+<Multi_key> <t> <c> <minus> <period> <s> : "ศ" U0E28   # THAI CHARACTER SO SALA
+<Multi_key> <t> <c> <minus> <apostrophe> <s> : "ษ" U0E29   # THAI CHARACTER SO RUSI
+<Multi_key> <t> <c> <minus> <s> : "ส" U0E2A   # THAI CHARACTER SO SUA
+<Multi_key> <t> <c> <minus> <h> : "ห" U0E2B   # THAI CHARACTER HO HIP
+<Multi_key> <t> <c> <period> <l> : "ฬ" U0E2C   # THAI CHARACTER LO CHULA
+<Multi_key> <t> <c> <x> : "อ" U0E2D   # THAI CHARACTER O ANG
+<Multi_key> <t> <c> <period> <h> : "ฮ" U0E2E   # THAI CHARACTER HO NOKHUK
+
+# Vowels
+
+<Multi_key> <t> <c> <a> <space> : "ะ" U0E30   # THAI CHARACTER SARA A
+<Multi_key> <t> <c> <period> <a> <Return> : "ั" U0E31   # EN DASH THAI CHARACTER MAI HAN-AKAT
+<Multi_key> <t> <c> <minus> <a> : "า" U0E32   # THAI CHARACTER SARA AA
+<Multi_key> <t> <c> <o> <a> : "ำ" U0E33   # THAI CHARACTER SARA AM
+<Multi_key> <t> <c> <i> <Return> : "ิ" U0E34   # THAI CHARACTER SARA I
+<Multi_key> <t> <c> <minus> <i> <Return> : "ี" U0E35   # THAI CHARACTER SARA II
+<Multi_key> <t> <c> <period> <u> <Return> : "ึ" U0E36   # THAI CHARACTER SARA UE
+<Multi_key> <t> <c> <minus> <period> <u> <Return> : "ื" U0E37   # THAI CHARACTER SARA UEE
+<Multi_key> <t> <c> <u> <Return> : "ุ" U0E38   # THAI CHARACTER SARA U
+<Multi_key> <t> <c> <minus> <u> <Return> : "ู" U0E39   # THAI CHARACTER SARA UU
+<Multi_key> <t> <c> <underscore> <o> <Return> : "ฺ" U0E3A   # THAI CHARACTER PHINTHU
+<Multi_key> <t> <c> <e> : "เ" U0E40   # THAI CHARACTER SARA E
+<Multi_key> <t> <c> <a> <e> : "แ" U0E41   # THAI CHARACTER SARA AE
+<Multi_key> <t> <c> <o> <space> : "โ" U0E42   # THAI CHARACTER SARA O
+<Multi_key> <t> <c> <i> <period> : "ใ" U0E43   # THAI CHARACTER SARA AI MAIMUAN
+<Multi_key> <t> <c> <period> <i> : "ไ" U0E44   # THAI CHARACTER SARA AI MAIMALAI
+<Multi_key> <t> <c> <slash> <i> : "ๅ" U0E45   # THAI CHARACTER LAKKHANGYAO
+<Multi_key> <t> <c> <asciicircum> <u> <Return> : "็" U0E47   # THAI CHARACTER MAITAIKHU
+
+# Punctuation (should really be t; but that's used for ț, not to be confused with ţ)
+
+<Multi_key> <t> <c> <grave> <Return> : "่" U0E48   # THAI CHARACTER MAI EK
+<Multi_key> <t> <c> <asciicircum> <Return> : "้" U0E49   # THAI CHARACTER MAI THO
+<Multi_key> <t> <c> <apostrophe> <Return> : "๊" U0E4A   # THAI CHARACTER MAI TRI
+<Multi_key> <t> <c> <asciicircum> <v> <Return> : "๋" U0E4B   # THAI CHARACTER MAI CHATTAWA
+<Multi_key> <t> <c> <comma> <Return> : "์" U0E4C   # THAI CHARACTER THANTHAKHAT
+<Multi_key> <t> <c> <o> <Return> : "ํ" U0E4D   # THAI CHARACTER NIKHAHIT
+<Multi_key> <t> <c> <asciitilde> <Return> : "๎" U0E4E   # THAI CHARACTER YAMAKKAN
+
+<Multi_key> <t> <c> <period> <period> : "ฯ" U0E2F   # THAI CHARACTER PAIYANNOI
+<Multi_key> <t> <c> <quotedbl> : "ๆ" U0E46   # THAI CHARACTER MAIYAMOK
+<Multi_key> <t> <c> <asterisk> : "๏" U0E4F   # THAI CHARACTER FONGMAN
+<Multi_key> <t> <c> <bar> <bar> : "๚" U0E5A   # THAI CHARACTER ANGKHANKHU
+<Multi_key> <t> <c> <greater> <greater> : "๛" U0E5B   # THAI CHARACTER KHOMUT
+
+# Numerals
+
+<Multi_key> <t> <numbersign> <0> : "๐" U0E50   # THAI DIGIT ZERO
+<Multi_key> <t> <numbersign> <1> : "๑" U0E51   # THAI DIGIT ONE
+<Multi_key> <t> <numbersign> <2> : "๒" U0E52   # THAI DIGIT TWO
+<Multi_key> <t> <numbersign> <3> : "๓" U0E53   # THAI DIGIT THREE
+<Multi_key> <t> <numbersign> <4> : "๔" U0E54   # THAI DIGIT FOUR
+<Multi_key> <t> <numbersign> <5> : "๕" U0E55   # THAI DIGIT FIVE
+<Multi_key> <t> <numbersign> <6> : "๖" U0E56   # THAI DIGIT SIX
+<Multi_key> <t> <numbersign> <7> : "๗" U0E57   # THAI DIGIT SEVEN
+<Multi_key> <t> <numbersign> <8> : "๘" U0E58   # THAI DIGIT EIGHT
+<Multi_key> <t> <numbersign> <9> : "๙" U0E59   # THAI DIGIT NINE
+
 #######################################
 # (z) Zhuyin/Bopomofo (and Mongolian) #
 #######################################
@@ -6537,16 +6697,16 @@ include "%L"
 <Multi_key> <z> <M> <z> <h> : "ᡁ" U1841   # MONGOLIAN LETTER ZHI
 <Multi_key> <z> <M> <t> <s> <h> : "ᡂ" U1842   # MONGOLIAN LETTER CHI
 
-<Multi_key> <z> <m> <0> : "᠐" U1810   # MONGOLIAN DIGIT ZERO
-<Multi_key> <z> <m> <1> : "᠑" U1811   # MONGOLIAN DIGIT ONE
-<Multi_key> <z> <m> <2> : "᠒" U1812   # MONGOLIAN DIGIT TWO
-<Multi_key> <z> <m> <3> : "᠓" U1813   # MONGOLIAN DIGIT THREE
-<Multi_key> <z> <m> <4> : "᠔" U1814   # MONGOLIAN DIGIT FOUR
-<Multi_key> <z> <m> <5> : "᠕" U1815   # MONGOLIAN DIGIT FIVE
-<Multi_key> <z> <m> <6> : "᠖" U1816   # MONGOLIAN DIGIT SIX
-<Multi_key> <z> <m> <7> : "᠗" U1817   # MONGOLIAN DIGIT SEVEN
-<Multi_key> <z> <m> <8> : "᠘" U1818   # MONGOLIAN DIGIT EIGHT
-<Multi_key> <z> <m> <9> : "᠙" U1819   # MONGOLIAN DIGIT NINE
+<Multi_key> <z> <m> <numbersign> <0> : "᠐" U1810   # MONGOLIAN DIGIT ZERO
+<Multi_key> <z> <m> <numbersign> <1> : "᠑" U1811   # MONGOLIAN DIGIT ONE
+<Multi_key> <z> <m> <numbersign> <2> : "᠒" U1812   # MONGOLIAN DIGIT TWO
+<Multi_key> <z> <m> <numbersign> <3> : "᠓" U1813   # MONGOLIAN DIGIT THREE
+<Multi_key> <z> <m> <numbersign> <4> : "᠔" U1814   # MONGOLIAN DIGIT FOUR
+<Multi_key> <z> <m> <numbersign> <5> : "᠕" U1815   # MONGOLIAN DIGIT FIVE
+<Multi_key> <z> <m> <numbersign> <6> : "᠖" U1816   # MONGOLIAN DIGIT SIX
+<Multi_key> <z> <m> <numbersign> <7> : "᠗" U1817   # MONGOLIAN DIGIT SEVEN
+<Multi_key> <z> <m> <numbersign> <8> : "᠘" U1818   # MONGOLIAN DIGIT EIGHT
+<Multi_key> <z> <m> <numbersign> <9> : "᠙" U1819   # MONGOLIAN DIGIT NINE
 
 <Multi_key> <z> <m> <Multi_key> <period> <period> : "᠁" U1801   # MONGOLIAN ELLIPSIS
 <Multi_key> <z> <m> <comma> : "᠂" U1802   # MONGOLIAN COMMA
