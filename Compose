@@ -1663,15 +1663,12 @@ include "%L"
 
 <Multi_key> <braceleft> <A> <A> <braceright> : "Ꜳ" UA732   # LATIN CAPITAL LETTER AA
 <Multi_key> <braceleft> <a> <a> <braceright> : "ꜳ" UA733   # LATIN SMALL LETTER AA
-<Multi_key> <braceleft> <a> <slash> <c> <braceright> : "℀" U2100   # ACCOUNT OF
 <Multi_key> <braceleft> <A> <E> <braceright> : "Æ" U00C6   # LATIN CAPITAL LETTER AE
 <Multi_key> <braceleft> <a> <e> <braceright> : "æ" U00E6   # LATIN SMALL LETTER AE
 <Multi_key> <braceleft> <A> <l> <m> <braceright> : "㏟" U33DF   # SQUARE A OVER M (visually similar)
 <Multi_key> <braceleft> <a> <m> <braceright> : "㏂" U33C2   # SQUARE AM
 <Multi_key> <braceleft> <A> <O> <braceright> : "Ꜵ" UA734   # LATIN CAPITAL LETTER AO
 <Multi_key> <braceleft> <a> <o> <braceright> : "ꜵ" UA735   # LATIN SMALL LETTER AO
-<Multi_key> <braceleft> <A> <slash> <S> <braceright> : "⅍" U214D   # AKTIESELSKAB
-<Multi_key> <braceleft> <a> <slash> <s> <braceright> : "℁" U2101   # ADDRESSED TO THE SUBJECT
 <Multi_key> <braceleft> <A> <U> <braceright> : "㍳" U3373   # SQUARE AU
 <Multi_key> <braceleft> <a> <u> <braceright> : "ꜷ" UA737   # LATIN SMALL LETTER AU
 <Multi_key> <braceleft> <A> <V> <braceright> : "Ꜹ" UA738   # LATIN CAPITAL LETTER AV
@@ -1696,10 +1693,8 @@ include "%L"
 <Multi_key> <braceleft> <c> <l> <braceright> : "𖩖" U16A56   # MRO LETTER EA (visually similar)
 <Multi_key> <braceleft> <c> <m> <braceright> : "㎝" U339D   # SQUARE CM
 <Multi_key> <braceleft> <c> <o> <braceright> : "ၸ" U1078   # MYANMAR LETTER SHAN CA (visually similar)
-<Multi_key> <braceleft> <c> <slash> <o> <braceright> : "℅" U2105   # CARE OF
 <Multi_key> <braceleft> <C> <o> <braceright> : "㏇" U33C7   # SQUARE CO
 <Multi_key> <braceleft> <C> <P> <braceright> : "卬" U536C   # CJK UNIFIED IDEOGRAPH-536C (visually similar)
-<Multi_key> <braceleft> <c> <slash> <u> <braceright> : "℆" U2106   # CADA UNA
 
 <Multi_key> <braceleft> <d> <a> <braceright> : "㍲" U3372   # SQUARE DA
 <Multi_key> <braceleft> <d> <b> <braceright> : "ȸ" U0238   # LATIN SMALL LETTER DB DIGRAPH
@@ -1972,6 +1967,41 @@ include "%L"
 <Multi_key> <braceleft> <z> <e> <braceright> : "𑣰" U118F0   # WARANG CITI NUMBER SEVENTY (visually similar)
 <Multi_key> <braceleft> <Z> <H> <braceright> : "래" UB798   # HANGUL SYLLABLE RAE (visually similar)
 <Multi_key> <braceleft> <Z> <l> <braceright> : "리" UB9AC   # HANGUL SYLLABLE RI (visually similar)
+
+# multigraphs with greek SI letters
+
+<Multi_key> <braceleft> <Multi_key> <m> <u> <A> <braceright> : "㎂" U3382   # SQUARE MU A
+<Multi_key> <braceleft> <Multi_key> <m> <u> <F> <braceright> : "㎌" U338C   # SQUARE MU F
+<Multi_key> <braceleft> <Multi_key> <m> <u> <V> <braceright> : "㎶" U33B6   # SQUARE MU V
+<Multi_key> <braceleft> <Multi_key> <m> <u> <W> <braceright> : "㎼" U33BC   # SQUARE MU W
+<Multi_key> <braceleft> <k> <Multi_key> <o> <h> <m> <braceright> : "㏀" U33C0   # SQUARE K OHM
+<Multi_key> <braceleft> <M> <Multi_key> <o> <h> <m> <braceright> : "㏁" U33C1   # SQUARE M OHM
+
+# multigraphs with punctuation or digits
+
+<Multi_key> <braceleft> <a> <slash> <c> <braceright> : "℀" U2100   # ACCOUNT OF
+<Multi_key> <braceleft> <A> <slash> <S> <braceright> : "⅍" U214D   # AKTIESELSKAB
+<Multi_key> <braceleft> <a> <slash> <s> <braceright> : "℁" U2101   # ADDRESSED TO THE SUBJECT
+<Multi_key> <braceleft> <c> <slash> <o> <braceright> : "℅" U2105   # CARE OF
+<Multi_key> <braceleft> <c> <slash> <u> <braceright> : "℆" U2106   # CADA UNA
+
+<Multi_key> <braceleft> <C> <slash> <k> <g> <braceright> : "㏆" U33C6   # SQUARE C OVER KG
+<Multi_key> <braceleft> <m> <slash> <s> <braceright> : "㎧" U33A7   # SQUARE M OVER S
+<Multi_key> <braceleft> <m> <slash> <s> <2> <braceright> : "㎨" U33A8   # SQUARE M OVER S SQUARED
+<Multi_key> <braceleft> <r> <a> <d> <slash> <s> <braceright> : "㎮" U33AE   # SQUARE RAD OVER S
+<Multi_key> <braceleft> <r> <a> <d> <slash> <s> <2> <braceright> : "㎯" U33AF   # SQUARE RAD OVER S SQUARED
+<Multi_key> <braceleft> <V> <slash> <m> <braceright> : "㏞" U33DE   # SQUARE V OVER M
+
+<Multi_key> <braceleft> <m> <2> <braceright> : "㎡" U33A1   # SQUARE M SQUARED
+<Multi_key> <braceleft> <m> <3> <braceright> : "㎥" U33A5   # SQUARE M CUBED
+<Multi_key> <braceleft> <c> <m> <2> <braceright> : "㎠" U33A0   # SQUARE CM SQUARED
+<Multi_key> <braceleft> <c> <m> <3> <braceright> : "㎤" U33A4   # SQUARE CM CUBED
+<Multi_key> <braceleft> <d> <m> <2> <braceright> : "㍸" U3378   # SQUARE DM SQUARED
+<Multi_key> <braceleft> <d> <m> <3> <braceright> : "㍹" U3379   # SQUARE DM CUBED
+<Multi_key> <braceleft> <k> <m> <2> <braceright> : "㎢" U33A2   # SQUARE KM SQUARED
+<Multi_key> <braceleft> <k> <m> <3> <braceright> : "㎦" U33A6   # SQUARE KM CUBED
+<Multi_key> <braceleft> <m> <m> <2> <braceright> : "㎟" U339F   # SQUARE MM SQUARED
+<Multi_key> <braceleft> <m> <m> <3> <braceright> : "㎣" U33A3   # SQUARE MM CUBED
 
 ################
 # Letter games #
@@ -8758,6 +8788,8 @@ include "%L"
 <Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <0>       : "⧈" U29C8    # SQUARED SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Return>      : "⃞" U20DE   # COMBINING ENCLOSING SQUARE (conflicts)
+
+<Multi_key> <bracketleft> <less> <greater> <bracketright> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE
 
 # Circles ()
 
