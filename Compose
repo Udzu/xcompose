@@ -150,7 +150,7 @@ include "%L"
 <Multi_key> <u> <underscore> <space> <Return>          : "᷋" U1DCB   # COMBINING BREVE-MACRON (conflicts with ū, use -u or u-)
 <Multi_key> <underscore> <u> <space> <Return>          : "᷌" U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
 <Multi_key> <asterisk> <Return>      : "⃰" U20F0   # COMBINING ASTERISK ABOVE
-<Multi_key> <parenleft> <parenright> <Return> : "᪻" U1ABB   # COMBINING PARENTHESES ABOVE
+<Multi_key> <parenleft> <space> <parenright> <Return> : "᪻" U1ABB   # COMBINING PARENTHESES ABOVE (conflicts with ˘, use ␣()
 
 <Multi_key> <underscore> <grave> <Return>            : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
 <Multi_key> <underscore> <apostrophe> <Return>       : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (conflicts with ⍘, use '_[Return] defined below)
@@ -8377,6 +8377,7 @@ include "%L"
 <Multi_key> <asterisk> <4>          : "❇️"  U2747 UFE0F   # SPARKLE EMOJI
 <Multi_key> <asterisk> <8>          : "✳️"  U2733 UFE0F   # EIGHT SPOKED ASTERISK EMOJI
 
+<Multi_key> <O> <Return> : "⃝" U20DD   # COMBINING ENCLOSING CIRCLE
 <Multi_key> <O> <backslash> <Return> : "⃠"  U20E0       # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
 <Multi_key> <backslash> <O> <Return> : "⃠"  U20E0       # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
 
@@ -8756,6 +8757,7 @@ include "%L"
 <Multi_key> <bracketleft> <bracketright> <o>           : "⧇" U29C7    # SQUARED SMALL CIRCLE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <0>       : "⧈" U29C8    # SQUARED SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Return>      : "⃞" U20DE   # COMBINING ENCLOSING SQUARE (conflicts)
 
 # Circles ()
 
@@ -8793,6 +8795,8 @@ include "%L"
 <Multi_key> <parenleft> <parenright> <equal>       : "⊜" U229C    # CIRCLED EQUALS
 <Multi_key> <parenleft> <parenright> <2> <0>       : "◎" U25CE    # BULLSEYE
 <Multi_key> <parenleft> <parenright> <2> <1>       : "◉" U25C9    # FISHEYE
+<Multi_key> <parenleft> <parenright> <Return>      : "⃝" U20DD   # COMBINING ENCLOSING CIRCLE
+<Multi_key> <parenleft> <parenright> <backslash> <Return> : "⃠" U20E0   # COMBINING ENCLOSING CIRCLE BACKSLASH
 
 <Multi_key> <parenleft> <slash> <backslash> <parenright> : "🟕" U1F7D5   # CIRCLED TRIANGLE
 <Multi_key> <parenleft> <bracketleft> <bracketright> <parenright> : "🟗" U1F7D7   # CIRCLED SQUARE
@@ -8812,6 +8816,7 @@ include "%L"
 <Multi_key> <bracketleft> <space> <bracketright> <v> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
 <Multi_key> <bracketleft> <space> <bracketright> <v> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
 <Multi_key> <bracketleft> <space> <bracketright> <X> : "⌧" U2327   # X IN A RECTANGLE BOX
+<Multi_key> <bracketleft> <space> <bracketright> <Return> : "⃢" U20E2   # COMBINING ENCLOSING SCREEN
 
 <Multi_key> <parenleft> <space> <parenright> <0> : "⬭" U2B2D    # WHITE HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <1> : "⬬" U2B2C    # BLACK HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
@@ -8834,6 +8839,7 @@ include "%L"
 <Multi_key> <Tab> <slash> <backslash> <minus> : "⨺" U2A3A   # MINUS SIGN IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <X> : "⨻" U2A3B   # MULTIPLICATION SIGN IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <period> : "⧊" U29CA   # TRIANGLE WITH DOT ABOVE
+<Multi_key> <Tab> <slash> <backslash> <Return> : "⃤" U20E4   # COMBINING ENCLOSING UPWARD POINTING TRIANGLE
 
 <Multi_key> <Tab> <bar> <greater> <0>   : "▷" U25B7    # WHITE RIGHT-POINTING TRIANGLE
 <Multi_key> <Tab> <bar> <greater> <1>   : "▶" U25B6    # BLACK RIGHT-POINTING TRIANGLE
@@ -8867,6 +8873,7 @@ include "%L"
 <Multi_key> <Tab> <less> <greater> <2> <1>       : "🞛" U1F79B   # WHITE DIAMOND CONTAINING BLACK MEDIUM DIAMOND
 <Multi_key> <Tab> <less> <greater> <period>      : "⟐" U27D0   # WHITE DIAMOND WITH CENTRED DOT
 <Multi_key> <Tab> <less> <greater> <question>    : "�" UFFFD   # REPLACEMENT CHARACTER
+<Multi_key> <Tab> <less> <greater> <Return>      : "⃟" U20DF   # COMBINING ENCLOSING DIAMOND
 
 <Multi_key> <Tab> <O> <5> <0>           : "⬠" U2B20    # WHITE PENTAGON
 <Multi_key> <Tab> <O> <5> <1>           : "⬟" U2B1F    # BLACK PENTAGON
