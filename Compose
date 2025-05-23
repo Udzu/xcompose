@@ -2430,9 +2430,9 @@ include "%L"
 
 # default glyph types are (c = characters x = extra characters # = numbers ; = punctuation)
 
-###########################################################
-# (a) Arabic (and Mandaic, Syriac, Neo-Tifinagh & Yezidi) #
-###########################################################
+###################################################################
+# (a) Arabic (and Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi) #
+###################################################################
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -2664,6 +2664,61 @@ include "%L"
 <Multi_key> <a> <t> <J> : "ⴵ" U2D35   # TIFINAGH LETTER BERBER ACADEMY YAJ
 <Multi_key> <a> <t> <H> : "ⵁ" U2D41   # TIFINAGH LETTER BERBER ACADEMY YAH
 <Multi_key> <a> <t> <C> : "ⵞ" U2D5E   # TIFINAGH LETTER YACH
+
+# (T = Thaana)
+
+<Multi_key> <a> <T> <h> : "ހ" U0780   # THAANA LETTER HAA
+<Multi_key> <a> <T> <exclam> <s> : "ށ" U0781   # THAANA LETTER SHAVIYANI (ṣ)
+<Multi_key> <a> <T> <n> : "ނ" U0782   # THAANA LETTER NOONU
+<Multi_key> <a> <T> <r> : "ރ" U0783   # THAANA LETTER RAA
+<Multi_key> <a> <T> <b> : "ބ" U0784   # THAANA LETTER BAA
+<Multi_key> <a> <T> <exclam> <l> : "ޅ" U0785   # THAANA LETTER LHAVIYANI
+<Multi_key> <a> <T> <k> : "ކ" U0786   # THAANA LETTER KAAFU
+<Multi_key> <a> <T> <apostrophe> : "އ" U0787   # THAANA LETTER ALIFU
+<Multi_key> <a> <T> <v> : "ވ" U0788   # THAANA LETTER VAAVU
+<Multi_key> <a> <T> <m> : "މ" U0789   # THAANA LETTER MEEMU
+<Multi_key> <a> <T> <f> : "ފ" U078A   # THAANA LETTER FAAFU
+<Multi_key> <a> <T> <d> : "ދ" U078B   # THAANA LETTER DHAALU
+<Multi_key> <a> <T> <t> : "ތ" U078C   # THAANA LETTER THAA
+<Multi_key> <a> <T> <l> : "ލ" U078D   # THAANA LETTER LAAMU
+<Multi_key> <a> <T> <g> : "ގ" U078E   # THAANA LETTER GAAFU
+<Multi_key> <a> <T> <asciitilde> <n> : "ޏ" U078F   # THAANA LETTER GNAVIYANI (ñ)
+<Multi_key> <a> <T> <s> : "ސ" U0790   # THAANA LETTER SEENU
+<Multi_key> <a> <T> <exclam> <d> : "ޑ" U0791   # THAANA LETTER DAVIYANI (ḍ)
+<Multi_key> <a> <T> <z> : "ޒ" U0792   # THAANA LETTER ZAVIYANI
+<Multi_key> <a> <T> <exclam> <t> : "ޓ" U0793   # THAANA LETTER TAVIYANI (ṭ)
+<Multi_key> <a> <T> <y> : "ޔ" U0794   # THAANA LETTER YAA
+<Multi_key> <a> <T> <p> : "ޕ" U0795   # THAANA LETTER PAVIYANI
+<Multi_key> <a> <T> <j> : "ޖ" U0796   # THAANA LETTER JAVIYANI
+<Multi_key> <a> <T> <c> : "ޗ" U0797   # THAANA LETTER CHAVIYANI
+<Multi_key> <a> <T> <exclam> <n> : "ޱ" U07B1   # THAANA LETTER NAA (ṇ)
+
+<Multi_key> <a> <T> <underscore> <s> : "ޘ" U0798   # THAANA LETTER TTAA (s̱)
+<Multi_key> <a> <T> <quotedbl> <h> : "ޙ" U0799   # THAANA LETTER HHAA (h̤)
+<Multi_key> <a> <T> <underscore> <k> <h> : "ޚ" U079A   # THAANA LETTER KHAA (k͟h)
+<Multi_key> <a> <T> <underscore> <z> : "ޛ" U079B   # THAANA LETTER THAALU (ẕ)
+<Multi_key> <a> <T> <less> <z> : "ޜ" U079C   # THAANA LETTER ZAA (ž)
+<Multi_key> <a> <T> <less> <s> : "ޝ" U079D   # THAANA LETTER SHEENU (š)
+<Multi_key> <a> <T> <quotedbl> <s> : "ޞ" U079E   # THAANA LETTER SAADHU (s̤)
+<Multi_key> <a> <T> <period> <z> : "ޟ" U079F   # THAANA LETTER DAADHU (ż)
+<Multi_key> <a> <T> <quotedbl> <t> : "ޠ" U07A0   # THAANA LETTER TO (t̤)
+<Multi_key> <a> <T> <underscore> <period> <z> : "ޡ" U07A1   # THAANA LETTER ZO (ẓ)
+<Multi_key> <a> <T> <grave> : "ޢ" U07A2   # THAANA LETTER AINU
+<Multi_key> <a> <T> <period> <g> : "ޣ" U07A3   # THAANA LETTER GHAINU (ġ)
+<Multi_key> <a> <T> <q> : "ޤ" U07A4   # THAANA LETTER QAAFU
+<Multi_key> <a> <T> <w> : "ޥ" U07A5   # THAANA LETTER WAAVU
+
+<Multi_key> <a> <T> <a> <Return> : "ަ" U07A6   # THAANA ABAFILI
+<Multi_key> <a> <T> <minus> <a> <Return> : "ާ" U07A7   # THAANA AABAAFILI (ā)
+<Multi_key> <a> <T> <i> <Return> : "ި" U07A8   # THAANA IBIFILI
+<Multi_key> <a> <T> <minus> <i> <Return> : "ީ" U07A9   # THAANA EEBEEFILI (ī)
+<Multi_key> <a> <T> <u> <Return> : "ު" U07AA   # THAANA UBUFILI
+<Multi_key> <a> <T> <minus> <u> <Return> : "ޫ" U07AB   # THAANA OOBOOFILI (ū)
+<Multi_key> <a> <T> <e> <Return> : "ެ" U07AC   # THAANA EBEFILI
+<Multi_key> <a> <T> <minus> <e> <Return> : "ޭ" U07AD   # THAANA EYBEYFILI (ē)
+<Multi_key> <a> <T> <o> <Return> : "ޮ" U07AE   # THAANA OBOFILI
+<Multi_key> <a> <T> <minus> <o> <Return> : "ޯ" U07AF   # THAANA OABOAFILI (ō)
+<Multi_key> <a> <T> <0> <Return> : "ް" U07B0   # THAANA SUKUN
 
 # (y = Yezidi)
 
