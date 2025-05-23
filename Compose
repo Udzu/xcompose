@@ -2870,7 +2870,8 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# (Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada, Malayalam, Meitei, Odia, Sinhala, Tamil, Telugu)
+# (Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada,
+# Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu)
 
 # (based on 7-bit ISO 15919)
 
@@ -4199,6 +4200,108 @@ include "%L"
 <Multi_key> <b> <s> <numbersign> <7> : "෭" U0DED   # SINHALA LITH DIGIT SEVEN
 <Multi_key> <b> <s> <numbersign> <8> : "෮" U0DEE   # SINHALA LITH DIGIT EIGHT
 <Multi_key> <b> <s> <numbersign> <9> : "෯" U0DEF   # SINHALA LITH DIGIT NINE
+
+# (S = Saurashtra)
+
+# Consonants
+
+<Multi_key> <b> <S> <k> <space> : "ꢒ" UA892   # SAURASHTRA LETTER KA
+<Multi_key> <b> <S> <k> <h> : "ꢓ" UA893   # SAURASHTRA LETTER KHA
+<Multi_key> <b> <S> <g> <space> : "ꢔ" UA894   # SAURASHTRA LETTER GA
+<Multi_key> <b> <S> <g> <h> : "ꢕ" UA895   # SAURASHTRA LETTER GHA
+<Multi_key> <b> <S> <semicolon> <n> : "ꢖ" UA896   # SAURASHTRA LETTER NGA
+<Multi_key> <b> <S> <c> <space> : "ꢗ" UA897   # SAURASHTRA LETTER CA
+<Multi_key> <b> <S> <c> <h> : "ꢘ" UA898   # SAURASHTRA LETTER CHA
+<Multi_key> <b> <S> <j> <space> : "ꢙ" UA899   # SAURASHTRA LETTER JA
+<Multi_key> <b> <S> <j> <h> : "ꢚ" UA89A   # SAURASHTRA LETTER JHA
+<Multi_key> <b> <S> <asciitilde> <n> : "ꢛ" UA89B   # SAURASHTRA LETTER NYA
+<Multi_key> <b> <S> <period> <t> <space> : "ꢜ" UA89C   # SAURASHTRA LETTER TTA
+<Multi_key> <b> <S> <period> <t> <h> : "ꢝ" UA89D   # SAURASHTRA LETTER TTHA
+<Multi_key> <b> <S> <period> <d> <space> : "ꢞ" UA89E   # SAURASHTRA LETTER DDA
+<Multi_key> <b> <S> <period> <d> <h> : "ꢟ" UA89F   # SAURASHTRA LETTER DDHA
+<Multi_key> <b> <S> <period> <n> : "ꢠ" UA8A0   # SAURASHTRA LETTER NNA
+<Multi_key> <b> <S> <t> <space> : "ꢡ" UA8A1   # SAURASHTRA LETTER TA
+<Multi_key> <b> <S> <t> <h> : "ꢢ" UA8A2   # SAURASHTRA LETTER THA
+<Multi_key> <b> <S> <d> <space> : "ꢣ" UA8A3   # SAURASHTRA LETTER DA
+<Multi_key> <b> <S> <d> <h> : "ꢤ" UA8A4   # SAURASHTRA LETTER DHA
+<Multi_key> <b> <S> <n> : "ꢥ" UA8A5   # SAURASHTRA LETTER NA
+<Multi_key> <b> <S> <p> <space> : "ꢦ" UA8A6   # SAURASHTRA LETTER PA
+<Multi_key> <b> <S> <p> <h> : "ꢧ" UA8A7   # SAURASHTRA LETTER PHA
+<Multi_key> <b> <S> <b> <space> : "ꢨ" UA8A8   # SAURASHTRA LETTER BA
+<Multi_key> <b> <S> <b> <h> : "ꢩ" UA8A9   # SAURASHTRA LETTER BHA
+<Multi_key> <b> <S> <m> : "ꢪ" UA8AA   # SAURASHTRA LETTER MA
+<Multi_key> <b> <S> <y> : "ꢫ" UA8AB   # SAURASHTRA LETTER YA
+<Multi_key> <b> <S> <r> : "ꢬ" UA8AC   # SAURASHTRA LETTER RA
+<Multi_key> <b> <S> <l> : "ꢭ" UA8AD   # SAURASHTRA LETTER LA
+<Multi_key> <b> <S> <v> : "ꢮ" UA8AE   # SAURASHTRA LETTER VA
+<Multi_key> <b> <S> <semicolon> <s> : "ꢯ" UA8AF   # SAURASHTRA LETTER SHA
+<Multi_key> <b> <S> <period> <s> : "ꢰ" UA8B0   # SAURASHTRA LETTER SSA
+<Multi_key> <b> <S> <s> : "ꢱ" UA8B1   # SAURASHTRA LETTER SA
+<Multi_key> <b> <S> <h> <space> : "ꢲ" UA8B2   # SAURASHTRA LETTER HA
+<Multi_key> <b> <S> <period> <l> : "ꢳ" UA8B3   # SAURASHTRA LETTER LLA
+<Multi_key> <b> <S> <h> <Return> : "ꢴ" UA8B4   # SAURASHTRA CONSONANT SIGN HAARU
+
+# Independent vowels
+
+<Multi_key> <b> <S> <a> <space> : "ꢂ" UA882   # SAURASHTRA LETTER A
+<Multi_key> <b> <S> <a> <a> <space> : "ꢃ" UA883   # SAURASHTRA LETTER AA
+<Multi_key> <b> <S> <i> <space> : "ꢄ" UA884   # SAURASHTRA LETTER I
+<Multi_key> <b> <S> <i> <i> <space> : "ꢅ" UA885   # SAURASHTRA LETTER II
+<Multi_key> <b> <S> <u> <space> : "ꢆ" UA886   # SAURASHTRA LETTER U
+<Multi_key> <b> <S> <u> <u> <space> : "ꢇ" UA887   # SAURASHTRA LETTER UU
+<Multi_key> <b> <S> <comma> <r> <space> : "ꢈ" UA888   # SAURASHTRA LETTER VOCALIC R
+<Multi_key> <b> <S> <comma> <r> <r> <space> : "ꢉ" UA889   # SAURASHTRA LETTER VOCALIC RR
+<Multi_key> <b> <S> <comma> <l> <space> : "ꢊ" UA88A   # SAURASHTRA LETTER VOCALIC L
+<Multi_key> <b> <S> <comma> <l> <l> <space> : "ꢋ" UA88B   # SAURASHTRA LETTER VOCALIC LL
+<Multi_key> <b> <S> <e> <space> : "ꢌ" UA88C   # SAURASHTRA LETTER E
+<Multi_key> <b> <S> <e> <e> <space> : "ꢍ" UA88D   # SAURASHTRA LETTER EE
+<Multi_key> <b> <S> <a> <i> <space> : "ꢎ" UA88E   # SAURASHTRA LETTER AI
+<Multi_key> <b> <S> <o> <space> : "ꢏ" UA88F   # SAURASHTRA LETTER O
+<Multi_key> <b> <S> <o> <o> <space> : "ꢐ" UA890   # SAURASHTRA LETTER OO
+<Multi_key> <b> <S> <a> <u> <space> : "ꢑ" UA891   # SAURASHTRA LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <S> <a> <a> <Return> : "ꢵ" UA8B5   # SAURASHTRA VOWEL SIGN AA
+<Multi_key> <b> <S> <i> <Return> : "ꢶ" UA8B6   # SAURASHTRA VOWEL SIGN I
+<Multi_key> <b> <S> <i> <i> <Return> : "ꢷ" UA8B7   # SAURASHTRA VOWEL SIGN II
+<Multi_key> <b> <S> <u> <Return> : "ꢸ" UA8B8   # SAURASHTRA VOWEL SIGN U
+<Multi_key> <b> <S> <u> <u> <Return> : "ꢹ" UA8B9   # SAURASHTRA VOWEL SIGN UU
+<Multi_key> <b> <S> <comma> <r> <Return> : "ꢺ" UA8BA   # SAURASHTRA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <S> <comma> <r> <r> <Return> : "ꢻ" UA8BB   # SAURASHTRA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <S> <comma> <l> <Return> : "ꢼ" UA8BC   # SAURASHTRA VOWEL SIGN VOCALIC L
+<Multi_key> <b> <S> <comma> <l> <l> <Return> : "ꢽ" UA8BD   # SAURASHTRA VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <S> <e> <Return> : "ꢾ" UA8BE   # SAURASHTRA VOWEL SIGN E
+<Multi_key> <b> <S> <e> <e> <Return> : "ꢿ" UA8BF   # SAURASHTRA VOWEL SIGN EE
+<Multi_key> <b> <S> <a> <i> <Return> : "ꣀ" UA8C0   # SAURASHTRA VOWEL SIGN AI
+<Multi_key> <b> <S> <o> <Return> : "ꣁ" UA8C1   # SAURASHTRA VOWEL SIGN O
+<Multi_key> <b> <S> <o> <o> <Return> : "ꣂ" UA8C2   # SAURASHTRA VOWEL SIGN OO
+<Multi_key> <b> <S> <a> <u> <Return> : "ꣃ" UA8C3   # SAURASHTRA VOWEL SIGN AU
+
+# Other signs
+
+<Multi_key> <b> <S> <period> <Return> : "ꢀ" UA880   # SAURASHTRA SIGN ANUSVARA
+<Multi_key> <b> <S> <colon> <Return> : "ꢁ" UA881   # SAURASHTRA SIGN VISARGA
+<Multi_key> <b> <S> <comma> <Return> : "꣄" UA8C4   # SAURASHTRA SIGN VIRAMA
+<Multi_key> <b> <S> <period> <parenright> <Return> : "ꣅ" UA8C5   # SAURASHTRA SIGN CANDRABINDU
+
+# Numerals
+
+<Multi_key> <b> <S> <numbersign> <0> : "꣐" UA8D0   # SAURASHTRA DIGIT ZERO
+<Multi_key> <b> <S> <numbersign> <1> : "꣑" UA8D1   # SAURASHTRA DIGIT ONE
+<Multi_key> <b> <S> <numbersign> <2> : "꣒" UA8D2   # SAURASHTRA DIGIT TWO
+<Multi_key> <b> <S> <numbersign> <3> : "꣓" UA8D3   # SAURASHTRA DIGIT THREE
+<Multi_key> <b> <S> <numbersign> <4> : "꣔" UA8D4   # SAURASHTRA DIGIT FOUR
+<Multi_key> <b> <S> <numbersign> <5> : "꣕" UA8D5   # SAURASHTRA DIGIT FIVE
+<Multi_key> <b> <S> <numbersign> <6> : "꣖" UA8D6   # SAURASHTRA DIGIT SIX
+<Multi_key> <b> <S> <numbersign> <7> : "꣗" UA8D7   # SAURASHTRA DIGIT SEVEN
+<Multi_key> <b> <S> <numbersign> <8> : "꣘" UA8D8   # SAURASHTRA DIGIT EIGHT
+<Multi_key> <b> <S> <numbersign> <9> : "꣙" UA8D9   # SAURASHTRA DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <S> <bar> : "꣎" UA8CE   # SAURASHTRA DANDA
+<Multi_key> <b> <S> <2> <bar> : "꣏" UA8CF   # SAURASHTRA DOUBLE DANDA
 
 # (t = Tamil)
 
@@ -5998,9 +6101,9 @@ include "%L"
 <Multi_key> <h> <s> <0> <Return> : "ࠬ" U082C   # SAMARITAN VOWEL SIGN SUKUN
 <Multi_key> <h> <s> <asterisk> <Return> : "࠙" U0819   # SAMARITAN MARK DAGESH
 
-################
-# (j) Japanese #
-################
+#####################
+# (j) Japanese/Kana #
+#####################
 
 # Hiragana (lower case)
 
