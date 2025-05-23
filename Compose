@@ -272,6 +272,7 @@ include "%L"
 
 <Multi_key> <period> <slash> <period> : "⁒" U2052   # COMMERCIAL MINUS SIGN
 
+
 ##############################
 # B. LATIN SCRIPT CHARACTERS #
 ##############################
@@ -5102,7 +5103,7 @@ include "%L"
 <Multi_key> <C> <h> <w> <v> : "ꮾ" UABBE   # CHEROKEE SMALL LETTER WV
 <Multi_key> <C> <h> <y> <a> : "ꮿ" UABBF   # CHEROKEE SMALL LETTER YA
 
-# (i = Inuktitut Syllabics)
+# (i = Inuktitut Syllabics) ALA-LC transliteration
 
 <Multi_key> <C> <i> <a> <i> : "ᐁ" U1401   # CANADIAN SYLLABICS E
 <Multi_key> <C> <i> <a> <a> <i> : "ᐂ" U1402   # CANADIAN SYLLABICS AAI
@@ -5262,7 +5263,7 @@ include "%L"
 <Multi_key> <C> <i> <minus> : "᐀" U1400   # CANADIAN SYLLABICS HYPHEN
 <Multi_key> <C> <i> <period> : "᙮" U166E   # CANADIAN SYLLABICS FULL STOP
 
-# (o = Ol Chiki) based on ALA-LC
+# (o = Ol Chiki) ALA-LC transliteration
 
 <Multi_key> <C> <o> <a> : "ᱚ" U1C5A   # OL CHIKI LETTER LA
 <Multi_key> <C> <o> <t> : "ᱛ" U1C5B   # OL CHIKI LETTER AT
@@ -7024,9 +7025,9 @@ include "%L"
 <Multi_key> <o> <i> <r> <quotedbl> <i> : "ᛇ" U16C7   # RUNIC LETTER IWAZ EOH
 
 
-############
-# (t) Thai #
-############
+########################
+# (t) Thai (and Khmer) #
+########################
 
 # (based on ISO 11940)
 
@@ -7128,6 +7129,110 @@ include "%L"
 <Multi_key> <t> <numbersign> <7> : "๗" U0E57   # THAI DIGIT SEVEN
 <Multi_key> <t> <numbersign> <8> : "๘" U0E58   # THAI DIGIT EIGHT
 <Multi_key> <t> <numbersign> <9> : "๙" U0E59   # THAI DIGIT NINE
+
+# (k = Khmer) ALA-LC transliteration
+
+<Multi_key> <t> <k> <k> <space> : "ក" U1780   # KHMER LETTER KA
+<Multi_key> <t> <k> <k> <h> : "ខ" U1781   # KHMER LETTER KHA
+<Multi_key> <t> <k> <g> <space> : "គ" U1782   # KHMER LETTER KO
+<Multi_key> <t> <k> <g> <h> : "ឃ" U1783   # KHMER LETTER KHO
+<Multi_key> <t> <k> <n> <g> : "ង" U1784   # KHMER LETTER NGO
+<Multi_key> <t> <k> <c> <space> : "ច" U1785   # KHMER LETTER CA
+<Multi_key> <t> <k> <c> <h> : "ឆ" U1786   # KHMER LETTER CHA
+<Multi_key> <t> <k> <j> <space> : "ជ" U1787   # KHMER LETTER CO
+<Multi_key> <t> <k> <j> <h> : "ឈ" U1788   # KHMER LETTER CHO
+<Multi_key> <t> <k> <asciitilde> <n> : "ញ" U1789   # KHMER LETTER NYO (ñ)
+<Multi_key> <t> <k> <exclam> <t> <space> : "ដ" U178A   # KHMER LETTER DA (ṭ)
+<Multi_key> <t> <k> <exclam> <t> <h> : "ឋ" U178B   # KHMER LETTER TTHA (ṭh)
+<Multi_key> <t> <k> <exclam> <d> <space> : "ឌ" U178C   # KHMER LETTER DO (ḍ)
+<Multi_key> <t> <k> <exclam> <d> <h> : "ឍ" U178D   # KHMER LETTER TTHO (ḍh)
+<Multi_key> <t> <k> <exclam> <n> : "ណ" U178E   # KHMER LETTER NNO (ṇ)
+<Multi_key> <t> <k> <t> <space> : "ត" U178F   # KHMER LETTER TA
+<Multi_key> <t> <k> <t> <h> : "ថ" U1790   # KHMER LETTER THA
+<Multi_key> <t> <k> <d> <space> : "ទ" U1791   # KHMER LETTER TO
+<Multi_key> <t> <k> <d> <h> : "ធ" U1792   # KHMER LETTER THO
+<Multi_key> <t> <k> <n> <space> : "ន" U1793   # KHMER LETTER NO
+<Multi_key> <t> <k> <p> <space> : "ប" U1794   # KHMER LETTER BA
+<Multi_key> <t> <k> <p> <h> : "ផ" U1795   # KHMER LETTER PHA
+<Multi_key> <t> <k> <b> <space> : "ព" U1796   # KHMER LETTER PO
+<Multi_key> <t> <k> <b> <h> : "ភ" U1797   # KHMER LETTER PHO
+<Multi_key> <t> <k> <m> : "ម" U1798   # KHMER LETTER MO
+<Multi_key> <t> <k> <y> : "យ" U1799   # KHMER LETTER YO
+<Multi_key> <t> <k> <r> : "រ" U179A   # KHMER LETTER RO
+<Multi_key> <t> <k> <l> : "ល" U179B   # KHMER LETTER LO
+<Multi_key> <t> <k> <v> : "វ" U179C   # KHMER LETTER VO
+<Multi_key> <t> <k> <apostrophe> <s> : "ឝ" U179D   # KHMER LETTER SHA (ś)
+<Multi_key> <t> <k> <exclam> <s> : "ឞ" U179E   # KHMER LETTER SSO (ṣ)
+<Multi_key> <t> <k> <s> : "ស" U179F   # KHMER LETTER SA
+<Multi_key> <t> <k> <h> : "ហ" U17A0   # KHMER LETTER HA
+<Multi_key> <t> <k> <exclam> <l> <l> : "ឡ" U17A1   # KHMER LETTER LA (ḷ) (not to be confused with ឭ)
+
+# Independent vowels
+
+<Multi_key> <t> <k> <a> <space> : "អ" U17A2   # KHMER LETTER QA
+<Multi_key> <t> <k> <i> <space> : "ឥ" U17A5   # KHMER INDEPENDENT VOWEL QI
+<Multi_key> <t> <k> <minus> <i> <space> : "ឦ" U17A6   # KHMER INDEPENDENT VOWEL QII (ī)
+<Multi_key> <t> <k> <u> <space> : "ឧ" U17A7   # KHMER INDEPENDENT VOWEL QU
+<Multi_key> <t> <k> <minus> <u> <space> : "ឩ" U17A9   # KHMER INDEPENDENT VOWEL QUU
+<Multi_key> <t> <k> <apostrophe> <y> <u> <space> : "ឪ" U17AA   # KHMER INDEPENDENT VOWEL QUUV (ýu)
+<Multi_key> <t> <k> <exclam> <r> <space> : "ឫ" U17AB   # KHMER INDEPENDENT VOWEL RY (ṛ)
+<Multi_key> <t> <k> <minus> <exclam> <r> <space> : "ឬ" U17AC   # KHMER INDEPENDENT VOWEL RYY (ṝ)
+<Multi_key> <t> <k> <exclam> <l> <space> : "ឭ" U17AD   # KHMER INDEPENDENT VOWEL LY (ḷ)
+<Multi_key> <t> <k> <minus> <exclam> <l> <space> : "ឮ" U17AE   # KHMER INDEPENDENT VOWEL LYY (ḹ)
+<Multi_key> <t> <k> <a> <e> <space> : "ឯ" U17AF   # KHMER INDEPENDENT VOWEL QE
+<Multi_key> <t> <k> <a> <i> <space> : "ឰ" U17B0   # KHMER INDEPENDENT VOWEL QAI
+<Multi_key> <t> <k> <o> <1> : "ឱ" U17B1   # KHMER INDEPENDENT VOWEL QOO TYPE ONE
+<Multi_key> <t> <k> <o> <2> : "ឲ" U17B2   # KHMER INDEPENDENT VOWEL QOO TYPE TWO
+<Multi_key> <t> <k> <a> <u> <space> : "ឳ" U17B3   # KHMER INDEPENDENT VOWEL QAU
+
+# Dependent vowels
+
+<Multi_key> <t> <k> <minus> <a> <Return> : "ា" U17B6   # KHMER VOWEL SIGN AA (ā)
+<Multi_key> <t> <k> <i> <Return> : "ិ" U17B7   # KHMER VOWEL SIGN I
+<Multi_key> <t> <k> <minus> <i> <Return> : "ី" U17B8   # KHMER VOWEL SIGN II (ī)
+<Multi_key> <t> <k> <period> <y> <Return> : "ឹ" U17B9   # KHMER VOWEL SIGN Y (ẏ)
+<Multi_key> <t> <k> <minus> <y> <Return> : "ឺ" U17BA   # KHMER VOWEL SIGN YY (ȳ)
+<Multi_key> <t> <k> <u> <Return> : "ុ" U17BB   # KHMER VOWEL SIGN U
+<Multi_key> <t> <k> <minus> <u> <Return> : "ូ" U17BC   # KHMER VOWEL SIGN UU
+<Multi_key> <t> <k> <u> <a> <Return> : "ួ" U17BD   # KHMER VOWEL SIGN UA
+<Multi_key> <t> <k> <o> <e> <Return> : "ើ" U17BE   # KHMER VOWEL SIGN OE
+<Multi_key> <t> <k> <period> <y> <a> <Return> : "ឿ" U17BF   # KHMER VOWEL SIGN YA (ẏa)
+<Multi_key> <t> <k> <i> <a> <Return> : "ៀ" U17C0   # KHMER VOWEL SIGN IE
+<Multi_key> <t> <k> <e> <Return> : "េ" U17C1   # KHMER VOWEL SIGN E
+<Multi_key> <t> <k> <a> <e> <Return> : "ែ" U17C2   # KHMER VOWEL SIGN AE
+<Multi_key> <t> <k> <a> <i> <Return> : "ៃ" U17C3   # KHMER VOWEL SIGN AI
+<Multi_key> <t> <k> <o> <Return> : "ោ" U17C4   # KHMER VOWEL SIGN OO
+<Multi_key> <t> <k> <a> <u> <Return> : "ៅ" U17C5   # KHMER VOWEL SIGN AU
+<Multi_key> <t> <k> <0> <Return> : "៑" U17D1   # KHMER SIGN VIRIAM (VIRAMA)
+
+# Other signs
+
+<Multi_key> <t> <k> <period> <Return> : "ំ" U17C6   # KHMER SIGN NIKAHIT (ANUSVARA)
+<Multi_key> <t> <k> <colon> <Return> : "ះ" U17C7   # KHMER SIGN REAHMUK (VISARGA)
+<Multi_key> <t> <k> <grave> <a> <Return> : "ៈ" U17C8   # KHMER SIGN YUUKALEAPINTU (à)
+<Multi_key> <t> <k> <quotedbl> <Return> : "៉" U17C9   # KHMER SIGN MUUSIKATOAN
+<Multi_key> <t> <k> <asciitilde> <Return> : "៊" U17CA   # KHMER SIGN TRIISAP
+<Multi_key> <t> <k> <bar> <Return> : "់" U17CB   # KHMER SIGN BANTOC
+<Multi_key> <t> <k> <plus> <Return> : "៎" U17CE   # KHMER SIGN KAKABAT
+<Multi_key> <t> <k> <minus> <Return> : "៑" U17D1   # KHMER SIGN VIRIAM
+<Multi_key> <t> <k> <underscore> <Return> : "្" U17D2   # KHMER SIGN COENG
+
+<Multi_key> <t> <k> <period> <space> : "។" U17D4   # KHMER SIGN KHAN
+<Multi_key> <t> <k> <colon> <space> : "៖" U17D6   # KHMER SIGN CAMNUC PII KUUH
+<Multi_key> <t> <k> <quotedbl> <space> : "ៗ" U17D7   # KHMER SIGN LEK TOO
+
+# Numerals
+
+<Multi_key> <t> <k> <numbersign> <0> : "០" U17E0   # KHMER DIGIT ZERO
+<Multi_key> <t> <k> <numbersign> <1> : "១" U17E1   # KHMER DIGIT ONE
+<Multi_key> <t> <k> <numbersign> <2> : "២" U17E2   # KHMER DIGIT TWO
+<Multi_key> <t> <k> <numbersign> <3> : "៣" U17E3   # KHMER DIGIT THREE
+<Multi_key> <t> <k> <numbersign> <4> : "៤" U17E4   # KHMER DIGIT FOUR
+<Multi_key> <t> <k> <numbersign> <5> : "៥" U17E5   # KHMER DIGIT FIVE
+<Multi_key> <t> <k> <numbersign> <6> : "៦" U17E6   # KHMER DIGIT SIX
+<Multi_key> <t> <k> <numbersign> <7> : "៧" U17E7   # KHMER DIGIT SEVEN
+<Multi_key> <t> <k> <numbersign> <8> : "៨" U17E8   # KHMER DIGIT EIGHT
+<Multi_key> <t> <k> <numbersign> <9> : "៩" U17E9   # KHMER DIGIT NINE
 
 #################################################
 # (z) Zhuyin/Bopomofo (and Mongolian & Tibetan) #
@@ -9775,6 +9880,7 @@ include "%L"
 <Multi_key> <at> <numbersign>        : "⌘" U2318          # PLACE OF INTEREST SIGN (COMMAND KEY)
 
 # Alphanumerics
+
 <Multi_key> <at> <bracketleft> <bracketright> <Return>     : "⃣" U20E3   # COMBINING ENCLOSING KEYCAP
 <Multi_key> <at> <bracketleft> <numbersign> <bracketright> : "#️⃣" U0023 UFE0F U20E3   # NUMBER SIGN EMOJI COMBINING ENCLOSING KEYCAP
 <Multi_key> <at> <bracketleft> <asterisk> <bracketright>   : "*️⃣" U002A UFE0F U20E3   # ASTERISK EMOJI COMBINING ENCLOSING KEYCAP
