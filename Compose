@@ -309,7 +309,6 @@ include "%L"
 <Multi_key> <e> <r>                 : "ɚ"  U025A   # LATIN SMALL LETTER SCHWA WITH HOOK
 <Multi_key> <r> <Return>            : "˞"  U02DE   # MODIFIER LETTER RHOTIC HOOK
 
-<Multi_key> <b> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
 <Multi_key> <B> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
 <Multi_key> <g> <G>                 : "ɢ"  U0262   # LATIN LETTER SMALL CAPITAL G
 <Multi_key> <G> <G>                 : "ɢ"  U0262   # LATIN LETTER SMALL CAPITAL G
@@ -3238,6 +3237,93 @@ include "%L"
 <Multi_key> <b> <b> <numbersign> <8> : "৮" U09EE   # BENGALI DIGIT EIGHT
 <Multi_key> <b> <b> <numbersign> <9> : "৯" U09EF   # BENGALI DIGIT NINE
 
+# (B = Burmese) - not covered by ISO 15919 but similar enough to fit
+
+# Consonants
+
+<Multi_key> <b> <M> <k> <space> : "က" U1000   # MYANMAR LETTER KA
+<Multi_key> <b> <M> <k> <h> : "ခ" U1001   # MYANMAR LETTER KHA
+<Multi_key> <b> <M> <g> <space> : "ဂ" U1002   # MYANMAR LETTER GA
+<Multi_key> <b> <M> <g> <h> : "ဃ" U1003   # MYANMAR LETTER GHA
+<Multi_key> <b> <M> <semicolon> <n> : "င" U1004   # MYANMAR LETTER NGA
+<Multi_key> <b> <M> <c> <space> : "စ" U1005   # MYANMAR LETTER CA
+<Multi_key> <b> <M> <c> <h> : "ဆ" U1006   # MYANMAR LETTER CHA
+<Multi_key> <b> <M> <j> <space> : "ဇ" U1007   # MYANMAR LETTER JA
+<Multi_key> <b> <M> <j> <h> : "ဈ" U1008   # MYANMAR LETTER JHA
+<Multi_key> <b> <M> <asciitilde> <n> : "ဉ" U1009   # MYANMAR LETTER NYA
+<Multi_key> <b> <M> <period> <asciitilde> <n> : "ည" U100A   # MYANMAR LETTER NNYA
+<Multi_key> <b> <M> <period> <t> <space> : "ဋ" U100B   # MYANMAR LETTER TTA
+<Multi_key> <b> <M> <period> <t> <h> : "ဌ" U100C   # MYANMAR LETTER TTHA
+<Multi_key> <b> <M> <period> <d> <space> : "ဍ" U100D   # MYANMAR LETTER DDA
+<Multi_key> <b> <M> <period> <d> <h> : "ဎ" U100E   # MYANMAR LETTER DDHA
+<Multi_key> <b> <M> <period> <n> : "ဏ" U100F   # MYANMAR LETTER NNA
+<Multi_key> <b> <M> <t> <space> : "တ" U1010   # MYANMAR LETTER TA
+<Multi_key> <b> <M> <t> <h> : "ထ" U1011   # MYANMAR LETTER THA
+<Multi_key> <b> <M> <d> <space> : "ဒ" U1012   # MYANMAR LETTER DA
+<Multi_key> <b> <M> <d> <h> : "ဓ" U1013   # MYANMAR LETTER DHA
+<Multi_key> <b> <M> <n> : "န" U1014   # MYANMAR LETTER NA
+<Multi_key> <b> <M> <p> <space> : "ပ" U1015   # MYANMAR LETTER PA
+<Multi_key> <b> <M> <p> <h> : "ဖ" U1016   # MYANMAR LETTER PHA
+<Multi_key> <b> <M> <b> <space> : "ဗ" U1017   # MYANMAR LETTER BA
+<Multi_key> <b> <M> <b> <h> : "ဘ" U1018   # MYANMAR LETTER BHA
+<Multi_key> <b> <M> <m> : "မ" U1019   # MYANMAR LETTER MA
+<Multi_key> <b> <M> <y> <space> : "ယ" U101A   # MYANMAR LETTER YA
+<Multi_key> <b> <M> <y> <Return> : "ျ" U103B   # MYANMAR CONSONANT SIGN MEDIAL YA
+<Multi_key> <b> <M> <r> <space> : "ရ" U101B   # MYANMAR LETTER RA
+<Multi_key> <b> <M> <r> <Return> : "ြ" U103C   # MYANMAR CONSONANT SIGN MEDIAL RA
+<Multi_key> <b> <M> <l> : "လ" U101C   # MYANMAR LETTER LA
+<Multi_key> <b> <M> <w> <space> : "ဝ" U101D   # MYANMAR LETTER WA
+<Multi_key> <b> <M> <w> <Return> : "ွ" U103D   # MYANMAR CONSONANT SIGN MEDIAL WA
+<Multi_key> <b> <M> <s> <space> : "သ" U101E   # MYANMAR LETTER SA
+<Multi_key> <b> <M> <s> <s> : "ဿ" U103F   # MYANMAR LETTER GREAT SA
+<Multi_key> <b> <M> <h> <space> : "ဟ" U101F   # MYANMAR LETTER HA
+<Multi_key> <b> <M> <h> <Return> : "ှ" U103E   # MYANMAR CONSONANT SIGN MEDIAL HA
+<Multi_key> <b> <M> <period> <l> : "ဠ" U1020   # MYANMAR LETTER LLA
+
+# Independent vowels
+
+<Multi_key> <b> <M> <a> <space> : "အ" U1021   # MYANMAR LETTER A
+<Multi_key> <b> <M> <i> <space> : "ဣ" U1023   # MYANMAR LETTER I
+<Multi_key> <b> <M> <i> <i> <space> : "ဤ" U1024   # MYANMAR LETTER II
+<Multi_key> <b> <M> <u> <space> : "ဥ" U1025   # MYANMAR LETTER U
+<Multi_key> <b> <M> <u> <u> <space> : "ဦ" U1026   # MYANMAR LETTER UU
+<Multi_key> <b> <M> <e> <e> <space> : "ဧ" U1027   # MYANMAR LETTER E
+<Multi_key> <b> <M> <o> <o> <space> : "ဩ" U1029   # MYANMAR LETTER O
+<Multi_key> <b> <M> <a> <u> <space> : "ဪ" U102A   # MYANMAR LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <M> <asciicircum> <a> <a> <Return> : "ါ" U102B   # MYANMAR VOWEL SIGN TALL AA
+<Multi_key> <b> <M> <a> <a> <Return> : "ာ" U102C   # MYANMAR VOWEL SIGN AA
+<Multi_key> <b> <M> <i> <Return> : "ိ" U102D   # MYANMAR VOWEL SIGN I
+<Multi_key> <b> <M> <i> <i> <Return> : "ီ" U102E   # MYANMAR VOWEL SIGN II
+<Multi_key> <b> <M> <u> <Return> : "ု" U102F   # MYANMAR VOWEL SIGN U
+<Multi_key> <b> <M> <u> <u> <Return> : "ူ" U1030   # MYANMAR VOWEL SIGN UU
+<Multi_key> <b> <M> <e> <e> <Return> : "ေ" U1031   # MYANMAR VOWEL SIGN E
+<Multi_key> <b> <M> <a> <i> <Return> : "ဲ" U1032   # MYANMAR VOWEL SIGN AI
+<Multi_key> <b> <M> <asciicircum> <e> <e> <Return> : "ဵ" U1035   # MYANMAR VOWEL SIGN E ABOVE
+
+# Other signs
+
+<Multi_key> <b> <M> <period> <Return> : "ံ" U1036   # MYANMAR SIGN ANUSVARA
+<Multi_key> <b> <M> <underscore> <period> <Return> : "့" U1037   # MYANMAR SIGN DOT BELOW
+<Multi_key> <b> <M> <colon> <Return> : "း" U1038   # MYANMAR SIGN VISARGA
+<Multi_key> <b> <M> <underscore> <plus> <Return> : "္" U1039   # MYANMAR SIGN VIRAMA
+<Multi_key> <b> <M> <c> <Return> : "်" U103A   # MYANMAR SIGN ASAT
+
+# Numerals
+
+<Multi_key> <b> <M> <numbersign> <0> : "၀" U1040   # MYANMAR DIGIT ZERO
+<Multi_key> <b> <M> <numbersign> <1> : "၁" U1041   # MYANMAR DIGIT ONE
+<Multi_key> <b> <M> <numbersign> <2> : "၂" U1042   # MYANMAR DIGIT TWO
+<Multi_key> <b> <M> <numbersign> <3> : "၃" U1043   # MYANMAR DIGIT THREE
+<Multi_key> <b> <M> <numbersign> <4> : "၄" U1044   # MYANMAR DIGIT FOUR
+<Multi_key> <b> <M> <numbersign> <5> : "၅" U1045   # MYANMAR DIGIT FIVE
+<Multi_key> <b> <M> <numbersign> <6> : "၆" U1046   # MYANMAR DIGIT SIX
+<Multi_key> <b> <M> <numbersign> <7> : "၇" U1047   # MYANMAR DIGIT SEVEN
+<Multi_key> <b> <M> <numbersign> <8> : "၈" U1048   # MYANMAR DIGIT EIGHT
+<Multi_key> <b> <M> <numbersign> <9> : "၉" U1049   # MYANMAR DIGIT NINE
+
 # (C = Chakma)
 
 # Consonants
@@ -3833,93 +3919,6 @@ include "%L"
 <Multi_key> <b> <m> <1> <0> <Return> : "൰" U0D70   # MALAYALAM NUMBER TEN
 <Multi_key> <b> <m> <1> <0> <0> <Return> : "൱" U0D71   # MALAYALAM NUMBER ONE HUNDRED
 <Multi_key> <b> <m> <1> <0> <0> <0>  : "൲" U0D72   # MALAYALAM NUMBER ONE THOUSAND
-
-# (M = Myanmar/Burmese) - not covered by ISO 15919 but similar enough to fit
-
-# Consonants
-
-<Multi_key> <b> <M> <k> <space> : "က" U1000   # MYANMAR LETTER KA
-<Multi_key> <b> <M> <k> <h> : "ခ" U1001   # MYANMAR LETTER KHA
-<Multi_key> <b> <M> <g> <space> : "ဂ" U1002   # MYANMAR LETTER GA
-<Multi_key> <b> <M> <g> <h> : "ဃ" U1003   # MYANMAR LETTER GHA
-<Multi_key> <b> <M> <semicolon> <n> : "င" U1004   # MYANMAR LETTER NGA
-<Multi_key> <b> <M> <c> <space> : "စ" U1005   # MYANMAR LETTER CA
-<Multi_key> <b> <M> <c> <h> : "ဆ" U1006   # MYANMAR LETTER CHA
-<Multi_key> <b> <M> <j> <space> : "ဇ" U1007   # MYANMAR LETTER JA
-<Multi_key> <b> <M> <j> <h> : "ဈ" U1008   # MYANMAR LETTER JHA
-<Multi_key> <b> <M> <asciitilde> <n> : "ဉ" U1009   # MYANMAR LETTER NYA
-<Multi_key> <b> <M> <period> <asciitilde> <n> : "ည" U100A   # MYANMAR LETTER NNYA
-<Multi_key> <b> <M> <period> <t> <space> : "ဋ" U100B   # MYANMAR LETTER TTA
-<Multi_key> <b> <M> <period> <t> <h> : "ဌ" U100C   # MYANMAR LETTER TTHA
-<Multi_key> <b> <M> <period> <d> <space> : "ဍ" U100D   # MYANMAR LETTER DDA
-<Multi_key> <b> <M> <period> <d> <h> : "ဎ" U100E   # MYANMAR LETTER DDHA
-<Multi_key> <b> <M> <period> <n> : "ဏ" U100F   # MYANMAR LETTER NNA
-<Multi_key> <b> <M> <t> <space> : "တ" U1010   # MYANMAR LETTER TA
-<Multi_key> <b> <M> <t> <h> : "ထ" U1011   # MYANMAR LETTER THA
-<Multi_key> <b> <M> <d> <space> : "ဒ" U1012   # MYANMAR LETTER DA
-<Multi_key> <b> <M> <d> <h> : "ဓ" U1013   # MYANMAR LETTER DHA
-<Multi_key> <b> <M> <n> : "န" U1014   # MYANMAR LETTER NA
-<Multi_key> <b> <M> <p> <space> : "ပ" U1015   # MYANMAR LETTER PA
-<Multi_key> <b> <M> <p> <h> : "ဖ" U1016   # MYANMAR LETTER PHA
-<Multi_key> <b> <M> <b> <space> : "ဗ" U1017   # MYANMAR LETTER BA
-<Multi_key> <b> <M> <b> <h> : "ဘ" U1018   # MYANMAR LETTER BHA
-<Multi_key> <b> <M> <m> : "မ" U1019   # MYANMAR LETTER MA
-<Multi_key> <b> <M> <y> <space> : "ယ" U101A   # MYANMAR LETTER YA
-<Multi_key> <b> <M> <y> <Return> : "ျ" U103B   # MYANMAR CONSONANT SIGN MEDIAL YA
-<Multi_key> <b> <M> <r> <space> : "ရ" U101B   # MYANMAR LETTER RA
-<Multi_key> <b> <M> <r> <Return> : "ြ" U103C   # MYANMAR CONSONANT SIGN MEDIAL RA
-<Multi_key> <b> <M> <l> : "လ" U101C   # MYANMAR LETTER LA
-<Multi_key> <b> <M> <w> <space> : "ဝ" U101D   # MYANMAR LETTER WA
-<Multi_key> <b> <M> <w> <Return> : "ွ" U103D   # MYANMAR CONSONANT SIGN MEDIAL WA
-<Multi_key> <b> <M> <s> <space> : "သ" U101E   # MYANMAR LETTER SA
-<Multi_key> <b> <M> <s> <s> : "ဿ" U103F   # MYANMAR LETTER GREAT SA
-<Multi_key> <b> <M> <h> <space> : "ဟ" U101F   # MYANMAR LETTER HA
-<Multi_key> <b> <M> <h> <Return> : "ှ" U103E   # MYANMAR CONSONANT SIGN MEDIAL HA
-<Multi_key> <b> <M> <period> <l> : "ဠ" U1020   # MYANMAR LETTER LLA
-
-# Independent vowels
-
-<Multi_key> <b> <M> <a> <space> : "အ" U1021   # MYANMAR LETTER A
-<Multi_key> <b> <M> <i> <space> : "ဣ" U1023   # MYANMAR LETTER I
-<Multi_key> <b> <M> <i> <i> <space> : "ဤ" U1024   # MYANMAR LETTER II
-<Multi_key> <b> <M> <u> <space> : "ဥ" U1025   # MYANMAR LETTER U
-<Multi_key> <b> <M> <u> <u> <space> : "ဦ" U1026   # MYANMAR LETTER UU
-<Multi_key> <b> <M> <e> <e> <space> : "ဧ" U1027   # MYANMAR LETTER E
-<Multi_key> <b> <M> <o> <o> <space> : "ဩ" U1029   # MYANMAR LETTER O
-<Multi_key> <b> <M> <a> <u> <space> : "ဪ" U102A   # MYANMAR LETTER AU
-
-# Dependent vowels
-
-<Multi_key> <b> <M> <asciicircum> <a> <a> <Return> : "ါ" U102B   # MYANMAR VOWEL SIGN TALL AA
-<Multi_key> <b> <M> <a> <a> <Return> : "ာ" U102C   # MYANMAR VOWEL SIGN AA
-<Multi_key> <b> <M> <i> <Return> : "ိ" U102D   # MYANMAR VOWEL SIGN I
-<Multi_key> <b> <M> <i> <i> <Return> : "ီ" U102E   # MYANMAR VOWEL SIGN II
-<Multi_key> <b> <M> <u> <Return> : "ု" U102F   # MYANMAR VOWEL SIGN U
-<Multi_key> <b> <M> <u> <u> <Return> : "ူ" U1030   # MYANMAR VOWEL SIGN UU
-<Multi_key> <b> <M> <e> <e> <Return> : "ေ" U1031   # MYANMAR VOWEL SIGN E
-<Multi_key> <b> <M> <a> <i> <Return> : "ဲ" U1032   # MYANMAR VOWEL SIGN AI
-<Multi_key> <b> <M> <asciicircum> <e> <e> <Return> : "ဵ" U1035   # MYANMAR VOWEL SIGN E ABOVE
-
-# Other signs
-
-<Multi_key> <b> <M> <period> <Return> : "ံ" U1036   # MYANMAR SIGN ANUSVARA
-<Multi_key> <b> <M> <underscore> <period> <Return> : "့" U1037   # MYANMAR SIGN DOT BELOW
-<Multi_key> <b> <M> <colon> <Return> : "း" U1038   # MYANMAR SIGN VISARGA
-<Multi_key> <b> <M> <underscore> <plus> <Return> : "္" U1039   # MYANMAR SIGN VIRAMA
-<Multi_key> <b> <M> <c> <Return> : "်" U103A   # MYANMAR SIGN ASAT
-
-# Numerals
-
-<Multi_key> <b> <M> <numbersign> <0> : "၀" U1040   # MYANMAR DIGIT ZERO
-<Multi_key> <b> <M> <numbersign> <1> : "၁" U1041   # MYANMAR DIGIT ONE
-<Multi_key> <b> <M> <numbersign> <2> : "၂" U1042   # MYANMAR DIGIT TWO
-<Multi_key> <b> <M> <numbersign> <3> : "၃" U1043   # MYANMAR DIGIT THREE
-<Multi_key> <b> <M> <numbersign> <4> : "၄" U1044   # MYANMAR DIGIT FOUR
-<Multi_key> <b> <M> <numbersign> <5> : "၅" U1045   # MYANMAR DIGIT FIVE
-<Multi_key> <b> <M> <numbersign> <6> : "၆" U1046   # MYANMAR DIGIT SIX
-<Multi_key> <b> <M> <numbersign> <7> : "၇" U1047   # MYANMAR DIGIT SEVEN
-<Multi_key> <b> <M> <numbersign> <8> : "၈" U1048   # MYANMAR DIGIT EIGHT
-<Multi_key> <b> <M> <numbersign> <9> : "၉" U1049   # MYANMAR DIGIT NINE
 
 # (O = Odia)
 
