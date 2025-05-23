@@ -2870,8 +2870,8 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# (Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada,
-# Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu)
+# covers Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada,
+# Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu. See Zhuyin section for Tibetan.
 
 # (based on 7-bit ISO 15919)
 
@@ -7129,9 +7129,9 @@ include "%L"
 <Multi_key> <t> <numbersign> <8> : "๘" U0E58   # THAI DIGIT EIGHT
 <Multi_key> <t> <numbersign> <9> : "๙" U0E59   # THAI DIGIT NINE
 
-#######################################
-# (z) Zhuyin/Bopomofo (and Mongolian) #
-#######################################
+#################################################
+# (z) Zhuyin/Bopomofo (and Mongolian & Tibetan) #
+#################################################
 
 <Multi_key> <z> <c> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
 <Multi_key> <z> <c> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
@@ -7321,6 +7321,138 @@ include "%L"
 <Multi_key> <z> <m> <V> <3> : "᠍" U180D   # MONGOLIAN FREE VARIATION SELECTOR THREE
 <Multi_key> <z> <m> <V> <S> : "᠎" U180E   # MONGOLIAN VOWEL SEPARATOR
 <Multi_key> <z> <m> <V> <4> : "᠏" U180F   # MONGOLIAN FREE VARIATION SELECTOR FOUR
+
+# (t = Tibetan) follows ISO 15919 like other Brahmic scripts, but code didn't fit there
+
+# Consonants
+
+<Multi_key> <z> <t> <k> <space> : "ཀ" U0F40   # TIBETAN LETTER KA
+<Multi_key> <z> <t> <k> <h> : "ཁ" U0F41   # TIBETAN LETTER KHA
+<Multi_key> <z> <t> <g> <space> : "ག" U0F42   # TIBETAN LETTER GA
+<Multi_key> <z> <t> <g> <h> : "གྷ" U0F43   # TIBETAN LETTER GHA
+<Multi_key> <z> <t> <semicolon> <n> : "ང" U0F44   # TIBETAN LETTER NGA
+<Multi_key> <z> <t> <c> <space> : "ཅ" U0F45   # TIBETAN LETTER CA
+<Multi_key> <z> <t> <c> <h> : "ཆ" U0F46   # TIBETAN LETTER CHA
+<Multi_key> <z> <t> <j> <space> : "ཇ" U0F47   # TIBETAN LETTER JA
+<Multi_key> <z> <t> <asciitilde> <n> : "ཉ" U0F49   # TIBETAN LETTER NYA
+<Multi_key> <z> <t> <period> <t> <space> : "ཊ" U0F4A   # TIBETAN LETTER TTA
+<Multi_key> <z> <t> <period> <t> <h> : "ཋ" U0F4B   # TIBETAN LETTER TTHA
+<Multi_key> <z> <t> <period> <d> <space> : "ཌ" U0F4C   # TIBETAN LETTER DDA
+<Multi_key> <z> <t> <period> <d> <h> : "ཌྷ" U0F4D   # TIBETAN LETTER DDHA
+<Multi_key> <z> <t> <period> <n> : "ཎ" U0F4E   # TIBETAN LETTER NNA
+<Multi_key> <z> <t> <t> <space> : "ཏ" U0F4F   # TIBETAN LETTER TA
+<Multi_key> <z> <t> <t> <h> : "ཐ" U0F50   # TIBETAN LETTER THA
+<Multi_key> <z> <t> <d> <space> : "ད" U0F51   # TIBETAN LETTER DA
+<Multi_key> <z> <t> <d> <h> : "དྷ" U0F52   # TIBETAN LETTER DHA
+<Multi_key> <z> <t> <n> : "ན" U0F53   # TIBETAN LETTER NA
+<Multi_key> <z> <t> <p> <space> : "པ" U0F54   # TIBETAN LETTER PA
+<Multi_key> <z> <t> <p> <h> : "ཕ" U0F55   # TIBETAN LETTER PHA
+<Multi_key> <z> <t> <b> <space> : "བ" U0F56   # TIBETAN LETTER BA
+<Multi_key> <z> <t> <b> <h> : "བྷ" U0F57   # TIBETAN LETTER BHA
+<Multi_key> <z> <t> <m> : "མ" U0F58   # TIBETAN LETTER MA
+<Multi_key> <z> <t> <t> <s> <space> : "ཙ" U0F59   # TIBETAN LETTER TSA
+<Multi_key> <z> <t> <t> <s> <h> : "ཚ" U0F5A   # TIBETAN LETTER TSHA
+<Multi_key> <z> <t> <d> <z> <space> : "ཛ" U0F5B   # TIBETAN LETTER DZA
+<Multi_key> <z> <t> <d> <z> <h> : "ཛྷ" U0F5C   # TIBETAN LETTER DZHA
+<Multi_key> <z> <t> <v> : "ཝ" U0F5D   # TIBETAN LETTER WA
+<Multi_key> <z> <t> <w> : "ཝ" U0F5D   # TIBETAN LETTER WA
+<Multi_key> <z> <t> <z> <h> : "ཞ" U0F5E   # TIBETAN LETTER ZHA
+<Multi_key> <z> <t> <z> <space> : "ཟ" U0F5F   # TIBETAN LETTER ZA
+<Multi_key> <z> <t> <apostrophe> : "འ" U0F60   # TIBETAN LETTER -A
+<Multi_key> <z> <t> <y> : "ཡ" U0F61   # TIBETAN LETTER YA
+<Multi_key> <z> <t> <r> : "ར" U0F62   # TIBETAN LETTER RA
+<Multi_key> <z> <t> <l> : "ལ" U0F63   # TIBETAN LETTER LA
+<Multi_key> <z> <t> <semicolon> <s> : "ཤ" U0F64   # TIBETAN LETTER SHA
+<Multi_key> <z> <t> <period> <s> : "ཥ" U0F65   # TIBETAN LETTER SSA
+<Multi_key> <z> <t> <s> : "ས" U0F66   # TIBETAN LETTER SA
+<Multi_key> <z> <t> <h> : "ཧ" U0F67   # TIBETAN LETTER HA
+<Multi_key> <z> <t> <a> <space> : "ཨ" U0F68   # TIBETAN LETTER A
+<Multi_key> <z> <t> <k> <s> <s> : "ཀྵ" U0F69   # TIBETAN LETTER KSSA
+
+# Subjoined consonants
+
+<Multi_key> <z> <t> <underscore> <k> <Return> : "ྐ" U0F90   # TIBETAN SUBJOINED LETTER KA
+<Multi_key> <z> <t> <underscore> <k> <h> <Return> : "ྑ" U0F91   # TIBETAN SUBJOINED LETTER KHA
+<Multi_key> <z> <t> <underscore> <g> <Return> : "ྒ" U0F92   # TIBETAN SUBJOINED LETTER GA
+<Multi_key> <z> <t> <underscore> <g> <h> <Return> : "ྒྷ" U0F93   # TIBETAN SUBJOINED LETTER GHA
+<Multi_key> <z> <t> <underscore> <semicolon> <n> <Return> : "ྔ" U0F94   # TIBETAN SUBJOINED LETTER NGA
+<Multi_key> <z> <t> <underscore> <c> <Return> : "ྕ" U0F95   # TIBETAN SUBJOINED LETTER CA
+<Multi_key> <z> <t> <underscore> <c> <h> <Return> : "ྖ" U0F96   # TIBETAN SUBJOINED LETTER CHA
+<Multi_key> <z> <t> <underscore> <j> <Return> : "ྗ" U0F97   # TIBETAN SUBJOINED LETTER JA
+<Multi_key> <z> <t> <underscore> <asciitilde> <n> <Return> : "ྙ" U0F99   # TIBETAN SUBJOINED LETTER NYA
+<Multi_key> <z> <t> <underscore> <period> <t> <Return> : "ྚ" U0F9A   # TIBETAN SUBJOINED LETTER TTA
+<Multi_key> <z> <t> <underscore> <period> <t> <h> <Return> : "ྛ" U0F9B   # TIBETAN SUBJOINED LETTER TTHA
+<Multi_key> <z> <t> <underscore> <period> <d> <Return> : "ྜ" U0F9C   # TIBETAN SUBJOINED LETTER DDA
+<Multi_key> <z> <t> <underscore> <period> <d> <h> <Return> : "ྜྷ" U0F9D   # TIBETAN SUBJOINED LETTER DDHA
+<Multi_key> <z> <t> <underscore> <period> <n> <Return> : "ྞ" U0F9E   # TIBETAN SUBJOINED LETTER NNA
+<Multi_key> <z> <t> <underscore> <t> <Return> : "ྟ" U0F9F   # TIBETAN SUBJOINED LETTER TA
+<Multi_key> <z> <t> <underscore> <t> <h> <Return> : "ྠ" U0FA0   # TIBETAN SUBJOINED LETTER THA
+<Multi_key> <z> <t> <underscore> <d> <Return> : "ྡ" U0FA1   # TIBETAN SUBJOINED LETTER DA
+<Multi_key> <z> <t> <underscore> <d> <h> <Return> : "ྡྷ" U0FA2   # TIBETAN SUBJOINED LETTER DHA
+<Multi_key> <z> <t> <underscore> <n> <Return> : "ྣ" U0FA3   # TIBETAN SUBJOINED LETTER NA
+<Multi_key> <z> <t> <underscore> <p> <Return> : "ྤ" U0FA4   # TIBETAN SUBJOINED LETTER PA
+<Multi_key> <z> <t> <underscore> <p> <h> <Return> : "ྥ" U0FA5   # TIBETAN SUBJOINED LETTER PHA
+<Multi_key> <z> <t> <underscore> <b> <Return> : "ྦ" U0FA6   # TIBETAN SUBJOINED LETTER BA
+<Multi_key> <z> <t> <underscore> <b> <h> <Return> : "ྦྷ" U0FA7   # TIBETAN SUBJOINED LETTER BHA
+<Multi_key> <z> <t> <underscore> <m> <Return> : "ྨ" U0FA8   # TIBETAN SUBJOINED LETTER MA
+<Multi_key> <z> <t> <underscore> <t> <s> <Return> : "ྩ" U0FA9   # TIBETAN SUBJOINED LETTER TSA
+<Multi_key> <z> <t> <underscore> <t> <s> <h> <Return> : "ྪ" U0FAA   # TIBETAN SUBJOINED LETTER TSHA
+<Multi_key> <z> <t> <underscore> <d> <z> <Return> : "ྫ" U0FAB   # TIBETAN SUBJOINED LETTER DZA
+<Multi_key> <z> <t> <underscore> <d> <z> <h> <Return> : "ྫྷ" U0FAC   # TIBETAN SUBJOINED LETTER DZHA
+<Multi_key> <z> <t> <underscore> <v> <Return> : "ྭ" U0FAD   # TIBETAN SUBJOINED LETTER WA
+<Multi_key> <z> <t> <underscore> <w> <Return> : "ྭ" U0FAD   # TIBETAN SUBJOINED LETTER WA
+<Multi_key> <z> <t> <underscore> <z> <h> <Return> : "ྮ" U0FAE   # TIBETAN SUBJOINED LETTER ZHA
+<Multi_key> <z> <t> <underscore> <z> <Return> : "ྯ" U0FAF   # TIBETAN SUBJOINED LETTER ZA
+<Multi_key> <z> <t> <underscore> <apostrophe> <Return> : "ྰ" U0FB0   # TIBETAN SUBJOINED LETTER -A
+<Multi_key> <z> <t> <underscore> <y> <Return> : "ྱ" U0FB1   # TIBETAN SUBJOINED LETTER YA
+<Multi_key> <z> <t> <underscore> <r> <Return> : "ྲ" U0FB2   # TIBETAN SUBJOINED LETTER RA
+<Multi_key> <z> <t> <underscore> <l> <Return> : "ླ" U0FB3   # TIBETAN SUBJOINED LETTER LA
+<Multi_key> <z> <t> <underscore> <semicolon> <s> <Return> : "ྴ" U0FB4   # TIBETAN SUBJOINED LETTER SHA
+<Multi_key> <z> <t> <underscore> <period> <s> <Return> : "ྵ" U0FB5   # TIBETAN SUBJOINED LETTER SSA
+<Multi_key> <z> <t> <underscore> <s> <Return> : "ྶ" U0FB6   # TIBETAN SUBJOINED LETTER SA
+<Multi_key> <z> <t> <underscore> <h> <Return> : "ྷ" U0FB7   # TIBETAN SUBJOINED LETTER HA
+<Multi_key> <z> <t> <underscore> <a> <Return> : "ྸ" U0FB8   # TIBETAN SUBJOINED LETTER A
+<Multi_key> <z> <t> <underscore> <k> <s> <s> <Return> : "ྐྵ" U0FB9   # TIBETAN SUBJOINED LETTER KSSA
+
+# Dependent vowels
+
+<Multi_key> <z> <t> <a> <a> <Return> : "ཱ" U0F71   # TIBETAN VOWEL SIGN AA
+<Multi_key> <z> <t> <i> <Return> : "ི" U0F72   # TIBETAN VOWEL SIGN I
+<Multi_key> <z> <t> <i> <i> <Return> : "ཱི" U0F73   # TIBETAN VOWEL SIGN II
+<Multi_key> <z> <t> <u> <Return> : "ུ" U0F74   # TIBETAN VOWEL SIGN U
+<Multi_key> <z> <t> <u> <u> <Return> : "ཱུ" U0F75   # TIBETAN VOWEL SIGN UU
+<Multi_key> <z> <t> <comma> <r> <Return> : "ྲྀ" U0F76   # TIBETAN VOWEL SIGN VOCALIC R
+<Multi_key> <z> <t> <comma> <r> <r> <Return> : "ཷ" U0F77   # TIBETAN VOWEL SIGN VOCALIC RR
+<Multi_key> <z> <t> <comma> <l> <Return> : "ླྀ" U0F78   # TIBETAN VOWEL SIGN VOCALIC L
+<Multi_key> <z> <t> <comma> <l> <l> <Return> : "ཹ" U0F79   # TIBETAN VOWEL SIGN VOCALIC LL
+<Multi_key> <z> <t> <e> <Return> : "ེ" U0F7A   # TIBETAN VOWEL SIGN E
+<Multi_key> <z> <t> <e> <e> <Return> : "ཻ" U0F7B   # TIBETAN VOWEL SIGN EE
+<Multi_key> <z> <t> <o> <Return> : "ོ" U0F7C   # TIBETAN VOWEL SIGN O
+<Multi_key> <z> <t> <o> <o> <Return> : "ཽ" U0F7D   # TIBETAN VOWEL SIGN OO
+<Multi_key> <z> <t> <0> <Return> : "྄" U0F84   # TIBETAN MARK HALANTA (VIRAMA)
+
+# Other signs
+
+<Multi_key> <z> <t> <period> <Return> : "ཾ" U0F7E   # TIBETAN SIGN RJES SU NGA RO (ANUSVARA)
+<Multi_key> <z> <t> <colon> <Return> : "ཿ" U0F7F   # TIBETAN SIGN RNAM BCAD (VISARGA)
+<Multi_key> <z> <t> <period> <parenright> <Return> : "ྃ" U0F83   # TIBETAN SIGN SNA LDAN (CANDRABINDU)
+<Multi_key> <z> <t> <comma> <Return> : "྄" U0F84   # TIBETAN MARK HALANTA (VIRAMA)
+
+<Multi_key> <z> <t> <2> : "྅" U0F85   # TIBETAN MARK PALUTA (AVAGRAHA)
+<Multi_key> <z> <t> <o> <m> : "ༀ" U0F00   # TIBETAN SYLLABLE OM
+
+# Numerals
+
+<Multi_key> <z> <t> <numbersign> <0> : "༠" U0F20   # TIBETAN DIGIT ZERO
+<Multi_key> <z> <t> <numbersign> <1> : "༡" U0F21   # TIBETAN DIGIT ONE
+<Multi_key> <z> <t> <numbersign> <2> : "༢" U0F22   # TIBETAN DIGIT TWO
+<Multi_key> <z> <t> <numbersign> <3> : "༣" U0F23   # TIBETAN DIGIT THREE
+<Multi_key> <z> <t> <numbersign> <4> : "༤" U0F24   # TIBETAN DIGIT FOUR
+<Multi_key> <z> <t> <numbersign> <5> : "༥" U0F25   # TIBETAN DIGIT FIVE
+<Multi_key> <z> <t> <numbersign> <6> : "༦" U0F26   # TIBETAN DIGIT SIX
+<Multi_key> <z> <t> <numbersign> <7> : "༧" U0F27   # TIBETAN DIGIT SEVEN
+<Multi_key> <z> <t> <numbersign> <8> : "༨" U0F28   # TIBETAN DIGIT EIGHT
+<Multi_key> <z> <t> <numbersign> <9> : "༩" U0F29   # TIBETAN DIGIT NINE
 
 #############
 # (Z) Ge'ez #
