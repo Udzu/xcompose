@@ -18,21 +18,22 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (96): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 
-### Latin script characters (1877)
-* **International Phonetic Alphabet** (134): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
+### Latin script characters (1878)
+* **International Phonetic Alphabet** (135): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (262): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (144): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (309): ʣ ㏈ etc
 * **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (3785)
+### Non-Latin script characters (4143)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِيت⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդit etc
 * **Brahmic Scripts** (Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Kannada, Limbu, Malayalam, Odia, Sinhala, Tamil, Telugu) (1157): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ, 𑄢𑄬𑄘𑄨𑄖, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆದಿತ, ᤖᤧᤍᤡᤳ, രെഡിട, ରେଡିଟ, රෙදිත, ரெதிட, రెడిట etc
 * **Unified English Braille** (79): ⠗⠫⠙⠊⠞ etc
 * **ConScripts** (Cherokee, Deseret, Ol Chiki, Shavian) (348): ᎴᏗᏛ, 𐐡𐐇𐐔𐐆𐐓, ᱨᱮᱫᱫᱤᱛ, 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** & Glagolitic (190): Ре́ддит, Ⱃⰵδδιτ etc
+* **Geʽez** (358): ርዲተ etc 
 * **Georgian** (Mtavruli, Nuskhuri, Mkhedruli) (154): რედდიტ, ႰႤႣႣႨႲ etc
 * **Greek** & Coptic (461): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ etc
 * **Hebrew**, Phoenician, & Samaritan (159): ⁧רֶדִיט⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc

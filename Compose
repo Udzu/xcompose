@@ -446,6 +446,7 @@ include "%L"
 <Multi_key> <w> <n>                 : "ƿ"  U01BF   # LATIN LETTER WYNN
 <Multi_key> <Y> <G>                 : "Ȝ"  U021C   # LATIN CAPITAL LETTER YOGH
 <Multi_key> <y> <g>                 : "ȝ"  U021D   # LATIN SMALL LETTER YOGH
+<Multi_key> <grave> <comma>         : "ʽ"  U02BD    # MODIFIER LETTER REVERSED COMMA
 
 # for consistency since we priorities using v for carons
 <Multi_key> <v> <l>                 : "ľ"  U013E   # LATIN SMALL LETTER L WITH CARON (conflicts with useless |)
@@ -6971,6 +6972,373 @@ include "%L"
 <Multi_key> <z> <m> <V> <S> : "᠎" U180E   # MONGOLIAN VOWEL SEPARATOR
 <Multi_key> <z> <m> <V> <4> : "᠏" U180F   # MONGOLIAN FREE VARIATION SELECTOR FOUR
 
+#############
+# (Z) Ge'ez #
+#############
+
+<Multi_key> <Z> <c> <h> <a> <space> : "ሀ" U1200   # ETHIOPIC SYLLABLE HA
+<Multi_key> <Z> <c> <h> <u> : "ሁ" U1201   # ETHIOPIC SYLLABLE HU
+<Multi_key> <Z> <c> <h> <i> : "ሂ" U1202   # ETHIOPIC SYLLABLE HI
+<Multi_key> <Z> <c> <h> <a> <a> : "ሃ" U1203   # ETHIOPIC SYLLABLE HAA
+<Multi_key> <Z> <c> <h> <e> <e> : "ሄ" U1204   # ETHIOPIC SYLLABLE HEE
+<Multi_key> <Z> <c> <h> <e> <space> : "ህ" U1205   # ETHIOPIC SYLLABLE HE
+<Multi_key> <Z> <c> <h> <o> <space> : "ሆ" U1206   # ETHIOPIC SYLLABLE HO
+<Multi_key> <Z> <c> <h> <o> <a> : "ሇ" U1207   # ETHIOPIC SYLLABLE HOA
+<Multi_key> <Z> <c> <l> <a> <space> : "ለ" U1208   # ETHIOPIC SYLLABLE LA
+<Multi_key> <Z> <c> <l> <u> : "ሉ" U1209   # ETHIOPIC SYLLABLE LU
+<Multi_key> <Z> <c> <l> <i> : "ሊ" U120A   # ETHIOPIC SYLLABLE LI
+<Multi_key> <Z> <c> <l> <a> <a> : "ላ" U120B   # ETHIOPIC SYLLABLE LAA
+<Multi_key> <Z> <c> <l> <e> <e> : "ሌ" U120C   # ETHIOPIC SYLLABLE LEE
+<Multi_key> <Z> <c> <l> <e> <space> : "ል" U120D   # ETHIOPIC SYLLABLE LE
+<Multi_key> <Z> <c> <l> <o> : "ሎ" U120E   # ETHIOPIC SYLLABLE LO
+<Multi_key> <Z> <c> <l> <w> <a> : "ሏ" U120F   # ETHIOPIC SYLLABLE LWA
+<Multi_key> <Z> <c> <h> <h> <a> <space> : "ሐ" U1210   # ETHIOPIC SYLLABLE HHA
+<Multi_key> <Z> <c> <h> <h> <u> : "ሑ" U1211   # ETHIOPIC SYLLABLE HHU
+<Multi_key> <Z> <c> <h> <h> <i> : "ሒ" U1212   # ETHIOPIC SYLLABLE HHI
+<Multi_key> <Z> <c> <h> <h> <a> <a> : "ሓ" U1213   # ETHIOPIC SYLLABLE HHAA
+<Multi_key> <Z> <c> <h> <h> <e> <e> : "ሔ" U1214   # ETHIOPIC SYLLABLE HHEE
+<Multi_key> <Z> <c> <h> <h> <e> <space> : "ሕ" U1215   # ETHIOPIC SYLLABLE HHE
+<Multi_key> <Z> <c> <h> <h> <o> : "ሖ" U1216   # ETHIOPIC SYLLABLE HHO
+<Multi_key> <Z> <c> <h> <h> <w> <a> : "ሗ" U1217   # ETHIOPIC SYLLABLE HHWA
+<Multi_key> <Z> <c> <m> <a> <space> : "መ" U1218   # ETHIOPIC SYLLABLE MA
+<Multi_key> <Z> <c> <m> <u> : "ሙ" U1219   # ETHIOPIC SYLLABLE MU
+<Multi_key> <Z> <c> <m> <i> : "ሚ" U121A   # ETHIOPIC SYLLABLE MI
+<Multi_key> <Z> <c> <m> <a> <a> : "ማ" U121B   # ETHIOPIC SYLLABLE MAA
+<Multi_key> <Z> <c> <m> <e> <e> : "ሜ" U121C   # ETHIOPIC SYLLABLE MEE
+<Multi_key> <Z> <c> <m> <e> <space> : "ም" U121D   # ETHIOPIC SYLLABLE ME
+<Multi_key> <Z> <c> <m> <o> : "ሞ" U121E   # ETHIOPIC SYLLABLE MO
+<Multi_key> <Z> <c> <m> <w> <a> : "ሟ" U121F   # ETHIOPIC SYLLABLE MWA
+<Multi_key> <Z> <c> <s> <z> <a> <space> : "ሠ" U1220   # ETHIOPIC SYLLABLE SZA
+<Multi_key> <Z> <c> <s> <z> <u> : "ሡ" U1221   # ETHIOPIC SYLLABLE SZU
+<Multi_key> <Z> <c> <s> <z> <i> : "ሢ" U1222   # ETHIOPIC SYLLABLE SZI
+<Multi_key> <Z> <c> <s> <z> <a> <a> : "ሣ" U1223   # ETHIOPIC SYLLABLE SZAA
+<Multi_key> <Z> <c> <s> <z> <e> <e> : "ሤ" U1224   # ETHIOPIC SYLLABLE SZEE
+<Multi_key> <Z> <c> <s> <z> <e> <space> : "ሥ" U1225   # ETHIOPIC SYLLABLE SZE
+<Multi_key> <Z> <c> <s> <z> <o> : "ሦ" U1226   # ETHIOPIC SYLLABLE SZO
+<Multi_key> <Z> <c> <s> <z> <w> <a> : "ሧ" U1227   # ETHIOPIC SYLLABLE SZWA
+<Multi_key> <Z> <c> <r> <a> <space> : "ረ" U1228   # ETHIOPIC SYLLABLE RA
+<Multi_key> <Z> <c> <r> <u> : "ሩ" U1229   # ETHIOPIC SYLLABLE RU
+<Multi_key> <Z> <c> <r> <i> : "ሪ" U122A   # ETHIOPIC SYLLABLE RI
+<Multi_key> <Z> <c> <r> <a> <a> : "ራ" U122B   # ETHIOPIC SYLLABLE RAA
+<Multi_key> <Z> <c> <r> <e> <e> : "ሬ" U122C   # ETHIOPIC SYLLABLE REE
+<Multi_key> <Z> <c> <r> <e> <space> : "ር" U122D   # ETHIOPIC SYLLABLE RE
+<Multi_key> <Z> <c> <r> <o> : "ሮ" U122E   # ETHIOPIC SYLLABLE RO
+<Multi_key> <Z> <c> <r> <w> <a> : "ሯ" U122F   # ETHIOPIC SYLLABLE RWA
+<Multi_key> <Z> <c> <s> <a> <space> : "ሰ" U1230   # ETHIOPIC SYLLABLE SA
+<Multi_key> <Z> <c> <s> <u> : "ሱ" U1231   # ETHIOPIC SYLLABLE SU
+<Multi_key> <Z> <c> <s> <i> : "ሲ" U1232   # ETHIOPIC SYLLABLE SI
+<Multi_key> <Z> <c> <s> <a> <a> : "ሳ" U1233   # ETHIOPIC SYLLABLE SAA
+<Multi_key> <Z> <c> <s> <e> <e> : "ሴ" U1234   # ETHIOPIC SYLLABLE SEE
+<Multi_key> <Z> <c> <s> <e> <space> : "ስ" U1235   # ETHIOPIC SYLLABLE SE
+<Multi_key> <Z> <c> <s> <o> : "ሶ" U1236   # ETHIOPIC SYLLABLE SO
+<Multi_key> <Z> <c> <s> <w> <a> : "ሷ" U1237   # ETHIOPIC SYLLABLE SWA
+<Multi_key> <Z> <c> <s> <h> <a> <space> : "ሸ" U1238   # ETHIOPIC SYLLABLE SHA
+<Multi_key> <Z> <c> <s> <h> <u> : "ሹ" U1239   # ETHIOPIC SYLLABLE SHU
+<Multi_key> <Z> <c> <s> <h> <i> : "ሺ" U123A   # ETHIOPIC SYLLABLE SHI
+<Multi_key> <Z> <c> <s> <h> <a> <a> : "ሻ" U123B   # ETHIOPIC SYLLABLE SHAA
+<Multi_key> <Z> <c> <s> <h> <e> <e> : "ሼ" U123C   # ETHIOPIC SYLLABLE SHEE
+<Multi_key> <Z> <c> <s> <h> <e> <space> : "ሽ" U123D   # ETHIOPIC SYLLABLE SHE
+<Multi_key> <Z> <c> <s> <h> <o> : "ሾ" U123E   # ETHIOPIC SYLLABLE SHO
+<Multi_key> <Z> <c> <s> <h> <w> <a> : "ሿ" U123F   # ETHIOPIC SYLLABLE SHWA
+<Multi_key> <Z> <c> <q> <a> <space> : "ቀ" U1240   # ETHIOPIC SYLLABLE QA
+<Multi_key> <Z> <c> <q> <u> : "ቁ" U1241   # ETHIOPIC SYLLABLE QU
+<Multi_key> <Z> <c> <q> <i> : "ቂ" U1242   # ETHIOPIC SYLLABLE QI
+<Multi_key> <Z> <c> <q> <a> <a> : "ቃ" U1243   # ETHIOPIC SYLLABLE QAA
+<Multi_key> <Z> <c> <q> <e> <e> : "ቄ" U1244   # ETHIOPIC SYLLABLE QEE
+<Multi_key> <Z> <c> <q> <e> <space> : "ቅ" U1245   # ETHIOPIC SYLLABLE QE
+<Multi_key> <Z> <c> <q> <o> <space> : "ቆ" U1246   # ETHIOPIC SYLLABLE QO
+<Multi_key> <Z> <c> <q> <o> <a> : "ቇ" U1247   # ETHIOPIC SYLLABLE QOA
+<Multi_key> <Z> <c> <q> <w> <a> <space> : "ቈ" U1248   # ETHIOPIC SYLLABLE QWA
+<Multi_key> <Z> <c> <q> <w> <i> : "ቊ" U124A   # ETHIOPIC SYLLABLE QWI
+<Multi_key> <Z> <c> <q> <w> <a> <a> : "ቋ" U124B   # ETHIOPIC SYLLABLE QWAA
+<Multi_key> <Z> <c> <q> <w> <e> <e> : "ቌ" U124C   # ETHIOPIC SYLLABLE QWEE
+<Multi_key> <Z> <c> <q> <w> <e> <space> : "ቍ" U124D   # ETHIOPIC SYLLABLE QWE
+<Multi_key> <Z> <c> <q> <h> <a> <space> : "ቐ" U1250   # ETHIOPIC SYLLABLE QHA
+<Multi_key> <Z> <c> <q> <h> <u> : "ቑ" U1251   # ETHIOPIC SYLLABLE QHU
+<Multi_key> <Z> <c> <q> <h> <i> : "ቒ" U1252   # ETHIOPIC SYLLABLE QHI
+<Multi_key> <Z> <c> <q> <h> <a> <a> : "ቓ" U1253   # ETHIOPIC SYLLABLE QHAA
+<Multi_key> <Z> <c> <q> <h> <e> <e> : "ቔ" U1254   # ETHIOPIC SYLLABLE QHEE
+<Multi_key> <Z> <c> <q> <h> <e> <space> : "ቕ" U1255   # ETHIOPIC SYLLABLE QHE
+<Multi_key> <Z> <c> <q> <h> <o> : "ቖ" U1256   # ETHIOPIC SYLLABLE QHO
+<Multi_key> <Z> <c> <q> <h> <w> <a> <space> : "ቘ" U1258   # ETHIOPIC SYLLABLE QHWA
+<Multi_key> <Z> <c> <q> <h> <w> <i> : "ቚ" U125A   # ETHIOPIC SYLLABLE QHWI
+<Multi_key> <Z> <c> <q> <h> <w> <a> <a> : "ቛ" U125B   # ETHIOPIC SYLLABLE QHWAA
+<Multi_key> <Z> <c> <q> <h> <w> <e> <e> : "ቜ" U125C   # ETHIOPIC SYLLABLE QHWEE
+<Multi_key> <Z> <c> <q> <h> <w> <e> <space> : "ቝ" U125D   # ETHIOPIC SYLLABLE QHWE
+<Multi_key> <Z> <c> <b> <a> <space> : "በ" U1260   # ETHIOPIC SYLLABLE BA
+<Multi_key> <Z> <c> <b> <u> : "ቡ" U1261   # ETHIOPIC SYLLABLE BU
+<Multi_key> <Z> <c> <b> <i> : "ቢ" U1262   # ETHIOPIC SYLLABLE BI
+<Multi_key> <Z> <c> <b> <a> <a> : "ባ" U1263   # ETHIOPIC SYLLABLE BAA
+<Multi_key> <Z> <c> <b> <e> <e> : "ቤ" U1264   # ETHIOPIC SYLLABLE BEE
+<Multi_key> <Z> <c> <b> <e> <space> : "ብ" U1265   # ETHIOPIC SYLLABLE BE
+<Multi_key> <Z> <c> <b> <o> : "ቦ" U1266   # ETHIOPIC SYLLABLE BO
+<Multi_key> <Z> <c> <b> <w> <a> : "ቧ" U1267   # ETHIOPIC SYLLABLE BWA
+<Multi_key> <Z> <c> <v> <a> <space> : "ቨ" U1268   # ETHIOPIC SYLLABLE VA
+<Multi_key> <Z> <c> <v> <u> : "ቩ" U1269   # ETHIOPIC SYLLABLE VU
+<Multi_key> <Z> <c> <v> <i> : "ቪ" U126A   # ETHIOPIC SYLLABLE VI
+<Multi_key> <Z> <c> <v> <a> <a> : "ቫ" U126B   # ETHIOPIC SYLLABLE VAA
+<Multi_key> <Z> <c> <v> <e> <e> : "ቬ" U126C   # ETHIOPIC SYLLABLE VEE
+<Multi_key> <Z> <c> <v> <e> <space> : "ቭ" U126D   # ETHIOPIC SYLLABLE VE
+<Multi_key> <Z> <c> <v> <o> : "ቮ" U126E   # ETHIOPIC SYLLABLE VO
+<Multi_key> <Z> <c> <v> <w> <a> : "ቯ" U126F   # ETHIOPIC SYLLABLE VWA
+<Multi_key> <Z> <c> <t> <a> <space> : "ተ" U1270   # ETHIOPIC SYLLABLE TA
+<Multi_key> <Z> <c> <t> <u> : "ቱ" U1271   # ETHIOPIC SYLLABLE TU
+<Multi_key> <Z> <c> <t> <i> : "ቲ" U1272   # ETHIOPIC SYLLABLE TI
+<Multi_key> <Z> <c> <t> <a> <a> : "ታ" U1273   # ETHIOPIC SYLLABLE TAA
+<Multi_key> <Z> <c> <t> <e> <e> : "ቴ" U1274   # ETHIOPIC SYLLABLE TEE
+<Multi_key> <Z> <c> <t> <e> <space> : "ት" U1275   # ETHIOPIC SYLLABLE TE
+<Multi_key> <Z> <c> <t> <o> : "ቶ" U1276   # ETHIOPIC SYLLABLE TO
+<Multi_key> <Z> <c> <t> <w> <a> : "ቷ" U1277   # ETHIOPIC SYLLABLE TWA
+<Multi_key> <Z> <c> <c> <a> <space> : "ቸ" U1278   # ETHIOPIC SYLLABLE CA
+<Multi_key> <Z> <c> <c> <u> : "ቹ" U1279   # ETHIOPIC SYLLABLE CU
+<Multi_key> <Z> <c> <c> <i> : "ቺ" U127A   # ETHIOPIC SYLLABLE CI
+<Multi_key> <Z> <c> <c> <a> <a> : "ቻ" U127B   # ETHIOPIC SYLLABLE CAA
+<Multi_key> <Z> <c> <c> <e> <e> : "ቼ" U127C   # ETHIOPIC SYLLABLE CEE
+<Multi_key> <Z> <c> <c> <e> <space> : "ች" U127D   # ETHIOPIC SYLLABLE CE
+<Multi_key> <Z> <c> <c> <o> : "ቾ" U127E   # ETHIOPIC SYLLABLE CO
+<Multi_key> <Z> <c> <c> <w> <a> : "ቿ" U127F   # ETHIOPIC SYLLABLE CWA
+<Multi_key> <Z> <c> <x> <a> <space> : "ኀ" U1280   # ETHIOPIC SYLLABLE XA
+<Multi_key> <Z> <c> <x> <u> : "ኁ" U1281   # ETHIOPIC SYLLABLE XU
+<Multi_key> <Z> <c> <x> <i> : "ኂ" U1282   # ETHIOPIC SYLLABLE XI
+<Multi_key> <Z> <c> <x> <a> <a> : "ኃ" U1283   # ETHIOPIC SYLLABLE XAA
+<Multi_key> <Z> <c> <x> <e> <e> : "ኄ" U1284   # ETHIOPIC SYLLABLE XEE
+<Multi_key> <Z> <c> <x> <e> <space> : "ኅ" U1285   # ETHIOPIC SYLLABLE XE
+<Multi_key> <Z> <c> <x> <o> <space> : "ኆ" U1286   # ETHIOPIC SYLLABLE XO
+<Multi_key> <Z> <c> <x> <o> <a> : "ኇ" U1287   # ETHIOPIC SYLLABLE XOA
+<Multi_key> <Z> <c> <x> <w> <a> <space> : "ኈ" U1288   # ETHIOPIC SYLLABLE XWA
+<Multi_key> <Z> <c> <x> <w> <i> : "ኊ" U128A   # ETHIOPIC SYLLABLE XWI
+<Multi_key> <Z> <c> <x> <w> <a> <a> : "ኋ" U128B   # ETHIOPIC SYLLABLE XWAA
+<Multi_key> <Z> <c> <x> <w> <e> <e> : "ኌ" U128C   # ETHIOPIC SYLLABLE XWEE
+<Multi_key> <Z> <c> <x> <w> <e> <space> : "ኍ" U128D   # ETHIOPIC SYLLABLE XWE
+<Multi_key> <Z> <c> <n> <a> <space> : "ነ" U1290   # ETHIOPIC SYLLABLE NA
+<Multi_key> <Z> <c> <n> <u> : "ኑ" U1291   # ETHIOPIC SYLLABLE NU
+<Multi_key> <Z> <c> <n> <i> : "ኒ" U1292   # ETHIOPIC SYLLABLE NI
+<Multi_key> <Z> <c> <n> <a> <a> : "ና" U1293   # ETHIOPIC SYLLABLE NAA
+<Multi_key> <Z> <c> <n> <e> <e> : "ኔ" U1294   # ETHIOPIC SYLLABLE NEE
+<Multi_key> <Z> <c> <n> <e> <space> : "ን" U1295   # ETHIOPIC SYLLABLE NE
+<Multi_key> <Z> <c> <n> <o> : "ኖ" U1296   # ETHIOPIC SYLLABLE NO
+<Multi_key> <Z> <c> <n> <w> <a> : "ኗ" U1297   # ETHIOPIC SYLLABLE NWA
+<Multi_key> <Z> <c> <n> <y> <a> <space> : "ኘ" U1298   # ETHIOPIC SYLLABLE NYA
+<Multi_key> <Z> <c> <n> <y> <u> : "ኙ" U1299   # ETHIOPIC SYLLABLE NYU
+<Multi_key> <Z> <c> <n> <y> <i> : "ኚ" U129A   # ETHIOPIC SYLLABLE NYI
+<Multi_key> <Z> <c> <n> <y> <a> <a> : "ኛ" U129B   # ETHIOPIC SYLLABLE NYAA
+<Multi_key> <Z> <c> <n> <y> <e> <e> : "ኜ" U129C   # ETHIOPIC SYLLABLE NYEE
+<Multi_key> <Z> <c> <n> <y> <e> <space> : "ኝ" U129D   # ETHIOPIC SYLLABLE NYE
+<Multi_key> <Z> <c> <n> <y> <o> : "ኞ" U129E   # ETHIOPIC SYLLABLE NYO
+<Multi_key> <Z> <c> <n> <y> <w> <a> : "ኟ" U129F   # ETHIOPIC SYLLABLE NYWA
+<Multi_key> <Z> <c> <apostrophe> <a> <space> : "አ" U12A0   # ETHIOPIC SYLLABLE GLOTTAL A
+<Multi_key> <Z> <c> <apostrophe> <u> : "ኡ" U12A1   # ETHIOPIC SYLLABLE GLOTTAL U
+<Multi_key> <Z> <c> <apostrophe> <i> : "ኢ" U12A2   # ETHIOPIC SYLLABLE GLOTTAL I
+<Multi_key> <Z> <c> <apostrophe> <a> <a> : "ኣ" U12A3   # ETHIOPIC SYLLABLE GLOTTAL AA
+<Multi_key> <Z> <c> <apostrophe> <e> <e> : "ኤ" U12A4   # ETHIOPIC SYLLABLE GLOTTAL EE
+<Multi_key> <Z> <c> <apostrophe> <e> <space> : "እ" U12A5   # ETHIOPIC SYLLABLE GLOTTAL E
+<Multi_key> <Z> <c> <apostrophe> <o> : "ኦ" U12A6   # ETHIOPIC SYLLABLE GLOTTAL O
+<Multi_key> <Z> <c> <apostrophe> <w> <a> : "ኧ" U12A7   # ETHIOPIC SYLLABLE GLOTTAL WA
+<Multi_key> <Z> <c> <k> <a> <space> : "ከ" U12A8   # ETHIOPIC SYLLABLE KA
+<Multi_key> <Z> <c> <k> <u> : "ኩ" U12A9   # ETHIOPIC SYLLABLE KU
+<Multi_key> <Z> <c> <k> <i> : "ኪ" U12AA   # ETHIOPIC SYLLABLE KI
+<Multi_key> <Z> <c> <k> <a> <a> : "ካ" U12AB   # ETHIOPIC SYLLABLE KAA
+<Multi_key> <Z> <c> <k> <e> <e> : "ኬ" U12AC   # ETHIOPIC SYLLABLE KEE
+<Multi_key> <Z> <c> <k> <e> <space> : "ክ" U12AD   # ETHIOPIC SYLLABLE KE
+<Multi_key> <Z> <c> <k> <o> <space> : "ኮ" U12AE   # ETHIOPIC SYLLABLE KO
+<Multi_key> <Z> <c> <k> <o> <a> : "ኯ" U12AF   # ETHIOPIC SYLLABLE KOA
+<Multi_key> <Z> <c> <k> <w> <a> <space> : "ኰ" U12B0   # ETHIOPIC SYLLABLE KWA
+<Multi_key> <Z> <c> <k> <w> <i> : "ኲ" U12B2   # ETHIOPIC SYLLABLE KWI
+<Multi_key> <Z> <c> <k> <w> <a> <a> : "ኳ" U12B3   # ETHIOPIC SYLLABLE KWAA
+<Multi_key> <Z> <c> <k> <w> <e> <e> : "ኴ" U12B4   # ETHIOPIC SYLLABLE KWEE
+<Multi_key> <Z> <c> <k> <w> <e> <space> : "ኵ" U12B5   # ETHIOPIC SYLLABLE KWE
+<Multi_key> <Z> <c> <k> <x> <a> <space> : "ኸ" U12B8   # ETHIOPIC SYLLABLE KXA
+<Multi_key> <Z> <c> <k> <x> <u> : "ኹ" U12B9   # ETHIOPIC SYLLABLE KXU
+<Multi_key> <Z> <c> <k> <x> <i> : "ኺ" U12BA   # ETHIOPIC SYLLABLE KXI
+<Multi_key> <Z> <c> <k> <x> <a> <a> : "ኻ" U12BB   # ETHIOPIC SYLLABLE KXAA
+<Multi_key> <Z> <c> <k> <x> <e> <e> : "ኼ" U12BC   # ETHIOPIC SYLLABLE KXEE
+<Multi_key> <Z> <c> <k> <x> <e> <space> : "ኽ" U12BD   # ETHIOPIC SYLLABLE KXE
+<Multi_key> <Z> <c> <k> <x> <o> : "ኾ" U12BE   # ETHIOPIC SYLLABLE KXO
+<Multi_key> <Z> <c> <k> <x> <w> <a> <space> : "ዀ" U12C0   # ETHIOPIC SYLLABLE KXWA
+<Multi_key> <Z> <c> <k> <x> <w> <i> : "ዂ" U12C2   # ETHIOPIC SYLLABLE KXWI
+<Multi_key> <Z> <c> <k> <x> <w> <a> <a> : "ዃ" U12C3   # ETHIOPIC SYLLABLE KXWAA
+<Multi_key> <Z> <c> <k> <x> <w> <e> <e> : "ዄ" U12C4   # ETHIOPIC SYLLABLE KXWEE
+<Multi_key> <Z> <c> <k> <x> <w> <e> <space> : "ዅ" U12C5   # ETHIOPIC SYLLABLE KXWE
+<Multi_key> <Z> <c> <w> <a> <space> : "ወ" U12C8   # ETHIOPIC SYLLABLE WA
+<Multi_key> <Z> <c> <w> <u> : "ዉ" U12C9   # ETHIOPIC SYLLABLE WU
+<Multi_key> <Z> <c> <w> <i> : "ዊ" U12CA   # ETHIOPIC SYLLABLE WI
+<Multi_key> <Z> <c> <w> <a> <a> : "ዋ" U12CB   # ETHIOPIC SYLLABLE WAA
+<Multi_key> <Z> <c> <w> <e> <e> : "ዌ" U12CC   # ETHIOPIC SYLLABLE WEE
+<Multi_key> <Z> <c> <w> <e> <space> : "ው" U12CD   # ETHIOPIC SYLLABLE WE
+<Multi_key> <Z> <c> <w> <o> <space> : "ዎ" U12CE   # ETHIOPIC SYLLABLE WO
+<Multi_key> <Z> <c> <w> <o> <a> : "ዏ" U12CF   # ETHIOPIC SYLLABLE WOA
+<Multi_key> <Z> <c> <grave> <a> <space> : "ዐ" U12D0   # ETHIOPIC SYLLABLE PHARYNGEAL A
+<Multi_key> <Z> <c> <grave> <u> : "ዑ" U12D1   # ETHIOPIC SYLLABLE PHARYNGEAL U
+<Multi_key> <Z> <c> <grave> <i> : "ዒ" U12D2   # ETHIOPIC SYLLABLE PHARYNGEAL I
+<Multi_key> <Z> <c> <grave> <a> <a> : "ዓ" U12D3   # ETHIOPIC SYLLABLE PHARYNGEAL AA
+<Multi_key> <Z> <c> <grave> <e> <e> : "ዔ" U12D4   # ETHIOPIC SYLLABLE PHARYNGEAL EE
+<Multi_key> <Z> <c> <grave> <e> <space> : "ዕ" U12D5   # ETHIOPIC SYLLABLE PHARYNGEAL E
+<Multi_key> <Z> <c> <grave> <o> : "ዖ" U12D6   # ETHIOPIC SYLLABLE PHARYNGEAL O
+<Multi_key> <Z> <c> <z> <a> <space> : "ዘ" U12D8   # ETHIOPIC SYLLABLE ZA
+<Multi_key> <Z> <c> <z> <u> : "ዙ" U12D9   # ETHIOPIC SYLLABLE ZU
+<Multi_key> <Z> <c> <z> <i> : "ዚ" U12DA   # ETHIOPIC SYLLABLE ZI
+<Multi_key> <Z> <c> <z> <a> <a> : "ዛ" U12DB   # ETHIOPIC SYLLABLE ZAA
+<Multi_key> <Z> <c> <z> <e> <e> : "ዜ" U12DC   # ETHIOPIC SYLLABLE ZEE
+<Multi_key> <Z> <c> <z> <e> <space> : "ዝ" U12DD   # ETHIOPIC SYLLABLE ZE
+<Multi_key> <Z> <c> <z> <o> : "ዞ" U12DE   # ETHIOPIC SYLLABLE ZO
+<Multi_key> <Z> <c> <z> <w> <a> : "ዟ" U12DF   # ETHIOPIC SYLLABLE ZWA
+<Multi_key> <Z> <c> <z> <h> <a> <space> : "ዠ" U12E0   # ETHIOPIC SYLLABLE ZHA
+<Multi_key> <Z> <c> <z> <h> <u> : "ዡ" U12E1   # ETHIOPIC SYLLABLE ZHU
+<Multi_key> <Z> <c> <z> <h> <i> : "ዢ" U12E2   # ETHIOPIC SYLLABLE ZHI
+<Multi_key> <Z> <c> <z> <h> <a> <a> : "ዣ" U12E3   # ETHIOPIC SYLLABLE ZHAA
+<Multi_key> <Z> <c> <z> <h> <e> <e> : "ዤ" U12E4   # ETHIOPIC SYLLABLE ZHEE
+<Multi_key> <Z> <c> <z> <h> <e> <space> : "ዥ" U12E5   # ETHIOPIC SYLLABLE ZHE
+<Multi_key> <Z> <c> <z> <h> <o> : "ዦ" U12E6   # ETHIOPIC SYLLABLE ZHO
+<Multi_key> <Z> <c> <z> <h> <w> <a> : "ዧ" U12E7   # ETHIOPIC SYLLABLE ZHWA
+<Multi_key> <Z> <c> <y> <a> <space> : "የ" U12E8   # ETHIOPIC SYLLABLE YA
+<Multi_key> <Z> <c> <y> <u> : "ዩ" U12E9   # ETHIOPIC SYLLABLE YU
+<Multi_key> <Z> <c> <y> <i> : "ዪ" U12EA   # ETHIOPIC SYLLABLE YI
+<Multi_key> <Z> <c> <y> <a> <a> : "ያ" U12EB   # ETHIOPIC SYLLABLE YAA
+<Multi_key> <Z> <c> <y> <e> <e> : "ዬ" U12EC   # ETHIOPIC SYLLABLE YEE
+<Multi_key> <Z> <c> <y> <e> <space> : "ይ" U12ED   # ETHIOPIC SYLLABLE YE
+<Multi_key> <Z> <c> <y> <o> <space> : "ዮ" U12EE   # ETHIOPIC SYLLABLE YO
+<Multi_key> <Z> <c> <y> <o> <a> : "ዯ" U12EF   # ETHIOPIC SYLLABLE YOA
+<Multi_key> <Z> <c> <d> <a> <space> : "ደ" U12F0   # ETHIOPIC SYLLABLE DA
+<Multi_key> <Z> <c> <d> <u> : "ዱ" U12F1   # ETHIOPIC SYLLABLE DU
+<Multi_key> <Z> <c> <d> <i> : "ዲ" U12F2   # ETHIOPIC SYLLABLE DI
+<Multi_key> <Z> <c> <d> <a> <a> : "ዳ" U12F3   # ETHIOPIC SYLLABLE DAA
+<Multi_key> <Z> <c> <d> <e> <e> : "ዴ" U12F4   # ETHIOPIC SYLLABLE DEE
+<Multi_key> <Z> <c> <d> <e> <space> : "ድ" U12F5   # ETHIOPIC SYLLABLE DE
+<Multi_key> <Z> <c> <d> <o> : "ዶ" U12F6   # ETHIOPIC SYLLABLE DO
+<Multi_key> <Z> <c> <d> <w> <a> : "ዷ" U12F7   # ETHIOPIC SYLLABLE DWA
+<Multi_key> <Z> <c> <d> <d> <a> <space> : "ዸ" U12F8   # ETHIOPIC SYLLABLE DDA
+<Multi_key> <Z> <c> <d> <d> <u> : "ዹ" U12F9   # ETHIOPIC SYLLABLE DDU
+<Multi_key> <Z> <c> <d> <d> <i> : "ዺ" U12FA   # ETHIOPIC SYLLABLE DDI
+<Multi_key> <Z> <c> <d> <d> <a> <a> : "ዻ" U12FB   # ETHIOPIC SYLLABLE DDAA
+<Multi_key> <Z> <c> <d> <d> <e> <e> : "ዼ" U12FC   # ETHIOPIC SYLLABLE DDEE
+<Multi_key> <Z> <c> <d> <d> <e> <space> : "ዽ" U12FD   # ETHIOPIC SYLLABLE DDE
+<Multi_key> <Z> <c> <d> <d> <o> : "ዾ" U12FE   # ETHIOPIC SYLLABLE DDO
+<Multi_key> <Z> <c> <d> <d> <w> <a> : "ዿ" U12FF   # ETHIOPIC SYLLABLE DDWA
+<Multi_key> <Z> <c> <j> <a> <space> : "ጀ" U1300   # ETHIOPIC SYLLABLE JA
+<Multi_key> <Z> <c> <j> <u> : "ጁ" U1301   # ETHIOPIC SYLLABLE JU
+<Multi_key> <Z> <c> <j> <i> : "ጂ" U1302   # ETHIOPIC SYLLABLE JI
+<Multi_key> <Z> <c> <j> <a> <a> : "ጃ" U1303   # ETHIOPIC SYLLABLE JAA
+<Multi_key> <Z> <c> <j> <e> <e> : "ጄ" U1304   # ETHIOPIC SYLLABLE JEE
+<Multi_key> <Z> <c> <j> <e> <space> : "ጅ" U1305   # ETHIOPIC SYLLABLE JE
+<Multi_key> <Z> <c> <j> <o> : "ጆ" U1306   # ETHIOPIC SYLLABLE JO
+<Multi_key> <Z> <c> <j> <w> <a> : "ጇ" U1307   # ETHIOPIC SYLLABLE JWA
+<Multi_key> <Z> <c> <g> <a> <space> : "ገ" U1308   # ETHIOPIC SYLLABLE GA
+<Multi_key> <Z> <c> <g> <u> : "ጉ" U1309   # ETHIOPIC SYLLABLE GU
+<Multi_key> <Z> <c> <g> <i> : "ጊ" U130A   # ETHIOPIC SYLLABLE GI
+<Multi_key> <Z> <c> <g> <a> <a> : "ጋ" U130B   # ETHIOPIC SYLLABLE GAA
+<Multi_key> <Z> <c> <g> <e> <e> : "ጌ" U130C   # ETHIOPIC SYLLABLE GEE
+<Multi_key> <Z> <c> <g> <e> <space> : "ግ" U130D   # ETHIOPIC SYLLABLE GE
+<Multi_key> <Z> <c> <g> <o> <space> : "ጎ" U130E   # ETHIOPIC SYLLABLE GO
+<Multi_key> <Z> <c> <g> <o> <a> : "ጏ" U130F   # ETHIOPIC SYLLABLE GOA
+<Multi_key> <Z> <c> <g> <w> <a> <space> : "ጐ" U1310   # ETHIOPIC SYLLABLE GWA
+<Multi_key> <Z> <c> <g> <w> <i> : "ጒ" U1312   # ETHIOPIC SYLLABLE GWI
+<Multi_key> <Z> <c> <g> <w> <a> <a> : "ጓ" U1313   # ETHIOPIC SYLLABLE GWAA
+<Multi_key> <Z> <c> <g> <w> <e> <e> : "ጔ" U1314   # ETHIOPIC SYLLABLE GWEE
+<Multi_key> <Z> <c> <g> <w> <e> <space> : "ጕ" U1315   # ETHIOPIC SYLLABLE GWE
+<Multi_key> <Z> <c> <g> <g> <a> <space> : "ጘ" U1318   # ETHIOPIC SYLLABLE GGA
+<Multi_key> <Z> <c> <g> <g> <u> : "ጙ" U1319   # ETHIOPIC SYLLABLE GGU
+<Multi_key> <Z> <c> <g> <g> <i> : "ጚ" U131A   # ETHIOPIC SYLLABLE GGI
+<Multi_key> <Z> <c> <g> <g> <a> <a> : "ጛ" U131B   # ETHIOPIC SYLLABLE GGAA
+<Multi_key> <Z> <c> <g> <g> <e> <e> : "ጜ" U131C   # ETHIOPIC SYLLABLE GGEE
+<Multi_key> <Z> <c> <g> <g> <e> <space> : "ጝ" U131D   # ETHIOPIC SYLLABLE GGE
+<Multi_key> <Z> <c> <g> <g> <o> : "ጞ" U131E   # ETHIOPIC SYLLABLE GGO
+<Multi_key> <Z> <c> <g> <g> <w> <a> <a> : "ጟ" U131F   # ETHIOPIC SYLLABLE GGWAA
+<Multi_key> <Z> <c> <t> <h> <a> <space> : "ጠ" U1320   # ETHIOPIC SYLLABLE THA
+<Multi_key> <Z> <c> <t> <h> <u> : "ጡ" U1321   # ETHIOPIC SYLLABLE THU
+<Multi_key> <Z> <c> <t> <h> <i> : "ጢ" U1322   # ETHIOPIC SYLLABLE THI
+<Multi_key> <Z> <c> <t> <h> <a> <a> : "ጣ" U1323   # ETHIOPIC SYLLABLE THAA
+<Multi_key> <Z> <c> <t> <h> <e> <e> : "ጤ" U1324   # ETHIOPIC SYLLABLE THEE
+<Multi_key> <Z> <c> <t> <h> <e> <space> : "ጥ" U1325   # ETHIOPIC SYLLABLE THE
+<Multi_key> <Z> <c> <t> <h> <o> : "ጦ" U1326   # ETHIOPIC SYLLABLE THO
+<Multi_key> <Z> <c> <t> <h> <w> <a> : "ጧ" U1327   # ETHIOPIC SYLLABLE THWA
+<Multi_key> <Z> <c> <c> <h> <a> <space> : "ጨ" U1328   # ETHIOPIC SYLLABLE CHA
+<Multi_key> <Z> <c> <c> <h> <u> : "ጩ" U1329   # ETHIOPIC SYLLABLE CHU
+<Multi_key> <Z> <c> <c> <h> <i> : "ጪ" U132A   # ETHIOPIC SYLLABLE CHI
+<Multi_key> <Z> <c> <c> <h> <a> <a> : "ጫ" U132B   # ETHIOPIC SYLLABLE CHAA
+<Multi_key> <Z> <c> <c> <h> <e> <e> : "ጬ" U132C   # ETHIOPIC SYLLABLE CHEE
+<Multi_key> <Z> <c> <c> <h> <e> <space> : "ጭ" U132D   # ETHIOPIC SYLLABLE CHE
+<Multi_key> <Z> <c> <c> <h> <o> : "ጮ" U132E   # ETHIOPIC SYLLABLE CHO
+<Multi_key> <Z> <c> <c> <h> <w> <a> : "ጯ" U132F   # ETHIOPIC SYLLABLE CHWA
+<Multi_key> <Z> <c> <p> <h> <a> <space> : "ጰ" U1330   # ETHIOPIC SYLLABLE PHA
+<Multi_key> <Z> <c> <p> <h> <u> : "ጱ" U1331   # ETHIOPIC SYLLABLE PHU
+<Multi_key> <Z> <c> <p> <h> <i> : "ጲ" U1332   # ETHIOPIC SYLLABLE PHI
+<Multi_key> <Z> <c> <p> <h> <a> <a> : "ጳ" U1333   # ETHIOPIC SYLLABLE PHAA
+<Multi_key> <Z> <c> <p> <h> <e> <e> : "ጴ" U1334   # ETHIOPIC SYLLABLE PHEE
+<Multi_key> <Z> <c> <p> <h> <e> <space> : "ጵ" U1335   # ETHIOPIC SYLLABLE PHE
+<Multi_key> <Z> <c> <p> <h> <o> : "ጶ" U1336   # ETHIOPIC SYLLABLE PHO
+<Multi_key> <Z> <c> <p> <h> <w> <a> : "ጷ" U1337   # ETHIOPIC SYLLABLE PHWA
+<Multi_key> <Z> <c> <t> <s> <a> <space> : "ጸ" U1338   # ETHIOPIC SYLLABLE TSA
+<Multi_key> <Z> <c> <t> <s> <u> : "ጹ" U1339   # ETHIOPIC SYLLABLE TSU
+<Multi_key> <Z> <c> <t> <s> <i> : "ጺ" U133A   # ETHIOPIC SYLLABLE TSI
+<Multi_key> <Z> <c> <t> <s> <a> <a> : "ጻ" U133B   # ETHIOPIC SYLLABLE TSAA
+<Multi_key> <Z> <c> <t> <s> <e> <e> : "ጼ" U133C   # ETHIOPIC SYLLABLE TSEE
+<Multi_key> <Z> <c> <t> <s> <e> <space> : "ጽ" U133D   # ETHIOPIC SYLLABLE TSE
+<Multi_key> <Z> <c> <t> <s> <o> : "ጾ" U133E   # ETHIOPIC SYLLABLE TSO
+<Multi_key> <Z> <c> <t> <s> <w> <a> : "ጿ" U133F   # ETHIOPIC SYLLABLE TSWA
+<Multi_key> <Z> <c> <t> <z> <a> <space> : "ፀ" U1340   # ETHIOPIC SYLLABLE TZA
+<Multi_key> <Z> <c> <t> <z> <u> : "ፁ" U1341   # ETHIOPIC SYLLABLE TZU
+<Multi_key> <Z> <c> <t> <z> <i> : "ፂ" U1342   # ETHIOPIC SYLLABLE TZI
+<Multi_key> <Z> <c> <t> <z> <a> <a> : "ፃ" U1343   # ETHIOPIC SYLLABLE TZAA
+<Multi_key> <Z> <c> <t> <z> <e> <e> : "ፄ" U1344   # ETHIOPIC SYLLABLE TZEE
+<Multi_key> <Z> <c> <t> <z> <e> <space> : "ፅ" U1345   # ETHIOPIC SYLLABLE TZE
+<Multi_key> <Z> <c> <t> <z> <o> <space> : "ፆ" U1346   # ETHIOPIC SYLLABLE TZO
+<Multi_key> <Z> <c> <t> <z> <o> <a> : "ፇ" U1347   # ETHIOPIC SYLLABLE TZOA
+<Multi_key> <Z> <c> <f> <a> <space> : "ፈ" U1348   # ETHIOPIC SYLLABLE FA
+<Multi_key> <Z> <c> <f> <u> : "ፉ" U1349   # ETHIOPIC SYLLABLE FU
+<Multi_key> <Z> <c> <f> <i> : "ፊ" U134A   # ETHIOPIC SYLLABLE FI
+<Multi_key> <Z> <c> <f> <a> <a> : "ፋ" U134B   # ETHIOPIC SYLLABLE FAA
+<Multi_key> <Z> <c> <f> <e> <e> : "ፌ" U134C   # ETHIOPIC SYLLABLE FEE
+<Multi_key> <Z> <c> <f> <e> <space> : "ፍ" U134D   # ETHIOPIC SYLLABLE FE
+<Multi_key> <Z> <c> <f> <o> : "ፎ" U134E   # ETHIOPIC SYLLABLE FO
+<Multi_key> <Z> <c> <f> <w> <a> : "ፏ" U134F   # ETHIOPIC SYLLABLE FWA
+<Multi_key> <Z> <c> <p> <a> <space> : "ፐ" U1350   # ETHIOPIC SYLLABLE PA
+<Multi_key> <Z> <c> <p> <u> : "ፑ" U1351   # ETHIOPIC SYLLABLE PU
+<Multi_key> <Z> <c> <p> <i> : "ፒ" U1352   # ETHIOPIC SYLLABLE PI
+<Multi_key> <Z> <c> <p> <a> <a> : "ፓ" U1353   # ETHIOPIC SYLLABLE PAA
+<Multi_key> <Z> <c> <p> <e> <e> : "ፔ" U1354   # ETHIOPIC SYLLABLE PEE
+<Multi_key> <Z> <c> <p> <e> <space> : "ፕ" U1355   # ETHIOPIC SYLLABLE PE
+<Multi_key> <Z> <c> <p> <o> : "ፖ" U1356   # ETHIOPIC SYLLABLE PO
+<Multi_key> <Z> <c> <p> <w> <a> : "ፗ" U1357   # ETHIOPIC SYLLABLE PWA
+<Multi_key> <Z> <c> <r> <y> <a> : "ፘ" U1358   # ETHIOPIC SYLLABLE RYA
+<Multi_key> <Z> <c> <m> <y> <a> : "ፙ" U1359   # ETHIOPIC SYLLABLE MYA
+<Multi_key> <Z> <c> <f> <y> <a> : "ፚ" U135A   # ETHIOPIC SYLLABLE FYA
+
+<Multi_key> <Z> <c> <colon> <period> <Return> : "፝" U135D   # ETHIOPIC COMBINING GEMINATION AND VOWEL LENGTH MARK
+<Multi_key> <Z> <c> <period> <Return> : "፞" U135E   # ETHIOPIC COMBINING VOWEL LENGTH MARK
+<Multi_key> <Z> <c> <colon> <Return> : "፟" U135F   # ETHIOPIC COMBINING GEMINATION MARK
+
+<Multi_key> <Z> <semicolon> <Multi_key> <S> <O> : "፠" U1360   # ETHIOPIC SECTION MARK
+<Multi_key> <Z> <semicolon> <space> : "፡" U1361   # ETHIOPIC WORDSPACE
+<Multi_key> <Z> <semicolon> <period> : "።" U1362   # ETHIOPIC FULL STOP
+<Multi_key> <Z> <semicolon> <comma> : "፣" U1363   # ETHIOPIC COMMA
+<Multi_key> <Z> <semicolon> <semicolon> : "፤" U1364   # ETHIOPIC SEMICOLON
+<Multi_key> <Z> <semicolon> <colon> : "፥" U1365   # ETHIOPIC COLON
+<Multi_key> <Z> <semicolon> <minus> <colon> : "፦" U1366   # ETHIOPIC PREFACE COLON
+<Multi_key> <Z> <semicolon> <question> : "፧" U1367   # ETHIOPIC QUESTION MARK
+<Multi_key> <Z> <semicolon> <Multi_key> <P> <P> : "፨" U1368   # ETHIOPIC PARAGRAPH SEPARATOR
+
+<Multi_key> <Z> <numbersign> <1> <Return> : "፩" U1369   # ETHIOPIC DIGIT ONE
+<Multi_key> <Z> <numbersign> <2> <Return> : "፪" U136A   # ETHIOPIC DIGIT TWO
+<Multi_key> <Z> <numbersign> <3> <Return> : "፫" U136B   # ETHIOPIC DIGIT THREE
+<Multi_key> <Z> <numbersign> <4> <Return> : "፬" U136C   # ETHIOPIC DIGIT FOUR
+<Multi_key> <Z> <numbersign> <5> <Return> : "፭" U136D   # ETHIOPIC DIGIT FIVE
+<Multi_key> <Z> <numbersign> <6> <Return> : "፮" U136E   # ETHIOPIC DIGIT SIX
+<Multi_key> <Z> <numbersign> <7> <Return> : "፯" U136F   # ETHIOPIC DIGIT SEVEN
+<Multi_key> <Z> <numbersign> <8> <Return> : "፰" U1370   # ETHIOPIC DIGIT EIGHT
+<Multi_key> <Z> <numbersign> <9> <Return> : "፱" U1371   # ETHIOPIC DIGIT NINE
+<Multi_key> <Z> <numbersign> <1> <0> <Return> : "፲" U1372   # ETHIOPIC NUMBER TEN
+<Multi_key> <Z> <numbersign> <2> <0> : "፳" U1373   # ETHIOPIC NUMBER TWENTY
+<Multi_key> <Z> <numbersign> <3> <0> : "፴" U1374   # ETHIOPIC NUMBER THIRTY
+<Multi_key> <Z> <numbersign> <4> <0> : "፵" U1375   # ETHIOPIC NUMBER FORTY
+<Multi_key> <Z> <numbersign> <5> <0> : "፶" U1376   # ETHIOPIC NUMBER FIFTY
+<Multi_key> <Z> <numbersign> <6> <0> : "፷" U1377   # ETHIOPIC NUMBER SIXTY
+<Multi_key> <Z> <numbersign> <7> <0> : "፸" U1378   # ETHIOPIC NUMBER SEVENTY
+<Multi_key> <Z> <numbersign> <8> <0> : "፹" U1379   # ETHIOPIC NUMBER EIGHTY
+<Multi_key> <Z> <numbersign> <9> <0> : "፺" U137A   # ETHIOPIC NUMBER NINETY
+<Multi_key> <Z> <numbersign> <1> <0> <0> <Return> : "፻" U137B   # ETHIOPIC NUMBER HUNDRED
+<Multi_key> <Z> <numbersign> <1> <0> <0> <0> <0> : "፼" U137C   # ETHIOPIC NUMBER TEN THOUSAND
+
+
 ##############
 # D. SYMBOLS #
 ##############
@@ -9862,8 +10230,7 @@ include "%L"
 
 # Convention: # + number + type suffix
 #
-# Also see Arabic (a0), Brahmic (b*), Coptic (gp), Japanese (j0), Chinese (z0)
-# and Mongolian (zm) numerals above
+# Also see various non-Latin script numerals above
 
 # (f) fence tally
 
