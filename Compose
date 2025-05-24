@@ -7025,9 +7025,9 @@ include "%L"
 <Multi_key> <o> <i> <r> <quotedbl> <i> : "ᛇ" U16C7   # RUNIC LETTER IWAZ EOH
 
 
-########################
-# (t) Thai (and Khmer) #
-########################
+##############################
+# (t) Thai (and Khmer & Lao) #
+##############################
 
 # (based on ISO 11940)
 
@@ -7233,6 +7233,93 @@ include "%L"
 <Multi_key> <t> <k> <numbersign> <7> : "៧" U17E7   # KHMER DIGIT SEVEN
 <Multi_key> <t> <k> <numbersign> <8> : "៨" U17E8   # KHMER DIGIT EIGHT
 <Multi_key> <t> <k> <numbersign> <9> : "៩" U17E9   # KHMER DIGIT NINE
+
+# (L = Lao) ALA-LC transliteration (unfortuntately tl prefix is taken by ʈ) 
+
+# Consonants
+
+<Multi_key> <t> <L> <k> : "ກ" U0E81   # LAO LETTER KO
+<Multi_key> <t> <L> <asciicircum> <k> <h> : "ຂ" U0E82   # LAO LETTER KHO SUNG
+<Multi_key> <t> <L> <v> <k> <h> : "ຄ" U0E84   # LAO LETTER KHO TAM
+<Multi_key> <t> <L> <n> <g> : "ງ" U0E87   # LAO LETTER NGO
+<Multi_key> <t> <L> <c> <h> : "ຈ" U0E88   # LAO LETTER CO
+<Multi_key> <t> <L> <v> <s> : "ຊ" U0E8A   # LAO LETTER SO TAM
+<Multi_key> <t> <L> <n> <y> : "ຍ" U0E8D   # LAO LETTER NYO
+<Multi_key> <t> <L> <d> : "ດ" U0E94   # LAO LETTER DO
+<Multi_key> <t> <L> <t> : "ຕ" U0E95   # LAO LETTER TO
+<Multi_key> <t> <L> <asciicircum> <t> <h> : "ຖ" U0E96   # LAO LETTER THO SUNG
+<Multi_key> <t> <L> <v> <t> <h> : "ທ" U0E97   # LAO LETTER THO TAM
+<Multi_key> <t> <L> <n> <space> : "ນ" U0E99   # LAO LETTER NO
+<Multi_key> <t> <L> <b> : "ບ" U0E9A   # LAO LETTER BO
+<Multi_key> <t> <L> <p> : "ປ" U0E9B   # LAO LETTER PO
+<Multi_key> <t> <L> <asciicircum> <p> <h> : "ຜ" U0E9C   # LAO LETTER PHO SUNG
+<Multi_key> <t> <L> <asciicircum> <f> : "ຝ" U0E9D   # LAO LETTER FO TAM
+<Multi_key> <t> <L> <v> <p> <h> : "ພ" U0E9E   # LAO LETTER PHO TAM
+<Multi_key> <t> <L> <v> <f> : "ຟ" U0E9F   # LAO LETTER FO SUNG
+<Multi_key> <t> <L> <m> : "ມ" U0EA1   # LAO LETTER MO
+<Multi_key> <t> <L> <y> : "ຢ" U0EA2   # LAO LETTER YO
+<Multi_key> <t> <L> <r> : "ຣ" U0EA3   # LAO LETTER LO LING
+<Multi_key> <t> <L> <l> : "ລ" U0EA5   # LAO LETTER LO LOOT
+<Multi_key> <t> <L> <w> : "ວ" U0EA7   # LAO LETTER WO
+<Multi_key> <t> <L> <asciicircum> <s> : "ສ" U0EAA   # LAO LETTER SO SUNG
+<Multi_key> <t> <L> <asciicircum> <h> : "ຫ" U0EAB   # LAO LETTER HO SUNG
+<Multi_key> <t> <L> <apostrophe> : "ອ" U0EAD   # LAO LETTER O
+<Multi_key> <t> <L> <v> <h> : "ຮ" U0EAE   # LAO LETTER HO TAM
+<Multi_key> <t> <L> <h> <n> : "ໜ" U0EDC   # LAO HO NO (digraph)
+<Multi_key> <t> <L> <h> <m> : "ໝ" U0EDD   # LAO HO MO (digraph)
+
+# Vowels
+
+<Multi_key> <t> <L> <a> <space> : "ະ" U0EB0   # LAO VOWEL SIGN A
+<Multi_key> <t> <L> <a> <Return> : "ັ" U0EB1   # LAO VOWEL SIGN MAI KAN
+<Multi_key> <t> <L> <minus> <a> <space> : "າ" U0EB2   # LAO VOWEL SIGN AA (ā)
+<Multi_key> <t> <L> <a> <m> : "ຳ" U0EB3   # LAO VOWEL SIGN AM
+<Multi_key> <t> <L> <i> <Return> : "ິ" U0EB4   # LAO VOWEL SIGN I
+<Multi_key> <t> <L> <minus> <i> <Return> : "ີ" U0EB5   # LAO VOWEL SIGN II (ī)
+<Multi_key> <t> <L> <u> <apostrophe> <Return> : "ຶ" U0EB6   # LAO VOWEL SIGN Y (ư)
+<Multi_key> <t> <L> <minus> <u> <apostrophe> <Return> : "ື" U0EB7   # LAO VOWEL SIGN YY (ư̄)
+<Multi_key> <t> <L> <u> <Return> : "ຸ" U0EB8   # LAO VOWEL SIGN U
+<Multi_key> <t> <L> <minus> <u> <Return> : "ູ" U0EB9   # LAO VOWEL SIGN UU (ū)
+<Multi_key> <t> <L> <0> <Return> : "຺" U0EBA   # LAO SIGN PALI VIRAMA
+<Multi_key> <t> <L> <o> <Return> : "ົ" U0EBB   # LAO VOWEL SIGN MAI KON
+<Multi_key> <t> <L> <i> <a> : "ຽ" U0EBD   # LAO SEMIVOWEL SIGN NYO
+<Multi_key> <t> <L> <minus> <comma> <o> <Return> : "ໍ" U0ECD   # LAO NIGGAHITA (ǭ)
+
+# Preceding vowels
+
+<Multi_key> <t> <L> <minus> <e> : "ເ" U0EC0   # LAO VOWEL SIGN E (ē)
+<Multi_key> <t> <L> <minus> <a> <e> : "ແ" U0EC1   # LAO VOWEL SIGN EI (ǣ)
+<Multi_key> <t> <L> <minus> <o> : "ໂ" U0EC2   # LAO VOWEL SIGN O (ō)
+<Multi_key> <t> <L> <a> <y> : "ໃ" U0EC3   # LAO VOWEL SIGN AY
+<Multi_key> <t> <L> <a> <i> : "ໄ" U0EC4   # LAO VOWEL SIGN AI
+
+# Tones and other signs
+
+<Multi_key> <t> <L> <underscore> <asciitilde> <Return> : "ຼ" U0EBC   # LAO SEMIVOWEL SIGN LO
+<Multi_key> <t> <L> <bar> <Return> : "່" U0EC8   # LAO TONE MAI EK
+<Multi_key> <t> <L> <2> <Return> : "້" U0EC9   # LAO TONE MAI THO
+<Multi_key> <t> <L> <6> <2> <Return> : "໊" U0ECA   # LAO TONE MAI TI
+<Multi_key> <t> <L> <plus> <Return> : "໋" U0ECB   # LAO TONE MAI CATAWA
+<Multi_key> <t> <L> <asciitilde> <Return> : "໌" U0ECC   # LAO CANCELLATION MARK
+<Multi_key> <t> <L> <asciicircum> <o> <Return> : "ໍ" U0ECD   # LAO NIGGAHITA
+
+# Punctuation
+
+<Multi_key> <t> <L> <period> <period> <period> : "ຯ" U0EAF   # LAO ELLIPSIS
+<Multi_key> <t> <L> <quotedbl> : "ໆ" U0EC6   # LAO KO LA
+
+# Numerals
+
+<Multi_key> <t> <L> <numbersign> <0> : "໐" U0ED0   # LAO DIGIT ZERO
+<Multi_key> <t> <L> <numbersign> <1> : "໑" U0ED1   # LAO DIGIT ONE
+<Multi_key> <t> <L> <numbersign> <2> : "໒" U0ED2   # LAO DIGIT TWO
+<Multi_key> <t> <L> <numbersign> <3> : "໓" U0ED3   # LAO DIGIT THREE
+<Multi_key> <t> <L> <numbersign> <4> : "໔" U0ED4   # LAO DIGIT FOUR
+<Multi_key> <t> <L> <numbersign> <5> : "໕" U0ED5   # LAO DIGIT FIVE
+<Multi_key> <t> <L> <numbersign> <6> : "໖" U0ED6   # LAO DIGIT SIX
+<Multi_key> <t> <L> <numbersign> <7> : "໗" U0ED7   # LAO DIGIT SEVEN
+<Multi_key> <t> <L> <numbersign> <8> : "໘" U0ED8   # LAO DIGIT EIGHT
+<Multi_key> <t> <L> <numbersign> <9> : "໙" U0ED9   # LAO DIGIT NINE
 
 #################################################
 # (z) Zhuyin/Bopomofo (and Mongolian & Tibetan) #

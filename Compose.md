@@ -26,7 +26,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (309): ʣ ㏈ etc
 * **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (4620)
+### Non-Latin script characters (4686)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِيت⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդit etc
 * **Brahmic Scripts** (Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Kannada, Limbu, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu) (1296): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ, 𑄢𑄬𑄘𑄨𑄖, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆದಿತ, ᤖᤧᤍᤡᤳ, രെഡിട, ꯔꯦꯗꯤꯠ, ରେଡିଟ, ꢬꢞꢶꢜ, රෙදිත, ரெதிட, రెడిట etc
@@ -41,7 +41,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Korean** (using jamo) (118): 레딧 etc
 * **International Morse Code** (76): ···---··· etc
 * **Old Italic** & Runic (117): 𐌓𐌄𐌃𐌃𐌉𐌕, ᚱᛖᛞᛞᛁᛏ etc
-* **Thai** & Khmer (173): เรดดิต, រេទិត etc
+* **Thai**, Khmer & Lao (239): เรดดิต, រេទិត, ເຣັດິຕ etc
 * **Zhuyin**, Mongolian & Tibetan (269): ㄏㄨㄥˊㄉㄧˊ, ᠷᠡᠳᠢᠲ, རེཌིཊ etc
 
 ### Symbols (2666)
