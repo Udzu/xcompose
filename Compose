@@ -7686,9 +7686,9 @@ include "%L"
 <Multi_key> <z> <T> <at> <period> : "ᥳ" U1973   # TAI LE LETTER TONE-5 (◌̇)
 <Multi_key> <z> <T> <at> <apostrophe> : "ᥴ" U1974   # TAI LE LETTER TONE-6 (◌́)
 
-#############
-# (Z) Ge'ez #
-#############
+#######################
+# (Z) Ge'ez (and NKo) #
+#######################
 
 <Multi_key> <Z> <c> <h> <a> <space> : "ሀ" U1200   # ETHIOPIC SYLLABLE HA
 <Multi_key> <Z> <c> <h> <u> : "ሁ" U1201   # ETHIOPIC SYLLABLE HU
@@ -8051,6 +8051,64 @@ include "%L"
 <Multi_key> <Z> <numbersign> <9> <0> : "፺" U137A   # ETHIOPIC NUMBER NINETY
 <Multi_key> <Z> <numbersign> <1> <0> <0> <Return> : "፻" U137B   # ETHIOPIC NUMBER HUNDRED
 <Multi_key> <Z> <numbersign> <1> <0> <0> <0> <0> : "፼" U137C   # ETHIOPIC NUMBER TEN THOUSAND
+
+# (n = NKo)
+
+<Multi_key> <Z> <n> <a> : "ߊ" U07CA   # NKO LETTER A
+<Multi_key> <Z> <n> <e> <e> : "ߋ" U07CB   # NKO LETTER EE
+<Multi_key> <Z> <n> <i> : "ߌ" U07CC   # NKO LETTER I
+<Multi_key> <Z> <n> <e> <space> : "ߍ" U07CD   # NKO LETTER E
+<Multi_key> <Z> <n> <u> : "ߎ" U07CE   # NKO LETTER U
+<Multi_key> <Z> <n> <o> <o> : "ߏ" U07CF   # NKO LETTER OO
+<Multi_key> <Z> <n> <o> <space> : "ߐ" U07D0   # NKO LETTER O
+<Multi_key> <Z> <n> <0> <Return> : "ߑ" U07D1   # NKO LETTER DAGBASINNA
+
+<Multi_key> <Z> <n> <n> <g> : "ߒ" U07D2   # NKO LETTER N
+<Multi_key> <Z> <n> <b> : "ߓ" U07D3   # NKO LETTER BA
+<Multi_key> <Z> <n> <p> : "ߔ" U07D4   # NKO LETTER PA
+<Multi_key> <Z> <n> <t> : "ߕ" U07D5   # NKO LETTER TA
+<Multi_key> <Z> <n> <j> : "ߖ" U07D6   # NKO LETTER JA
+<Multi_key> <Z> <n> <c> <h> : "ߗ" U07D7   # NKO LETTER CHA
+<Multi_key> <Z> <n> <d> : "ߘ" U07D8   # NKO LETTER DA
+<Multi_key> <Z> <n> <r> <space> : "ߙ" U07D9   # NKO LETTER RA
+<Multi_key> <Z> <n> <r> <r> : "ߚ" U07DA   # NKO LETTER RRA
+<Multi_key> <Z> <n> <s> : "ߛ" U07DB   # NKO LETTER SA
+<Multi_key> <Z> <n> <g> <b> : "ߜ" U07DC   # NKO LETTER GBA
+<Multi_key> <Z> <n> <f> : "ߝ" U07DD   # NKO LETTER FA
+<Multi_key> <Z> <n> <k> : "ߞ" U07DE   # NKO LETTER KA
+<Multi_key> <Z> <n> <l> : "ߟ" U07DF   # NKO LETTER LA
+<Multi_key> <Z> <n> <m> : "ߡ" U07E1   # NKO LETTER MA
+<Multi_key> <Z> <n> <n> <y> : "ߢ" U07E2   # NKO LETTER NYA
+<Multi_key> <Z> <n> <n> <space> : "ߣ" U07E3   # NKO LETTER NA
+<Multi_key> <Z> <n> <h> : "ߤ" U07E4   # NKO LETTER HA
+<Multi_key> <Z> <n> <w> : "ߥ" U07E5   # NKO LETTER WA
+<Multi_key> <Z> <n> <y> : "ߦ" U07E6   # NKO LETTER YA
+
+<Multi_key> <Z> <n> <minus> <Return> : "߫" U07EB   # NKO COMBINING SHORT HIGH TONE
+<Multi_key> <Z> <n> <asciitilde> <Return> : "߬" U07EC   # NKO COMBINING SHORT LOW TONE
+<Multi_key> <Z> <n> <period> <Return> : "߭" U07ED   # NKO COMBINING SHORT RISING TONE
+<Multi_key> <Z> <n> <asciicircum> <Return> : "߮" U07EE   # NKO COMBINING LONG DESCENDING TONE
+<Multi_key> <Z> <n> <greater> <Return> : "߯" U07EF   # NKO COMBINING LONG HIGH TONE
+<Multi_key> <Z> <n> <minus> <asciitilde> <Return> : "߰" U07F0   # NKO COMBINING LONG LOW TONE
+<Multi_key> <Z> <n> <less> <Return> : "߱" U07F1   # NKO COMBINING LONG RISING TONE
+<Multi_key> <Z> <n> <underscore> <period> <Return> : "߲" U07F2   # NKO COMBINING NASALIZATION MARK
+<Multi_key> <Z> <n> <quotedbl> <Return> : "߳" U07F3   # NKO COMBINING DOUBLE DOT ABOVE
+
+<Multi_key> <Z> <n> <apostrophe> : "ߴ" U07F4   # NKO HIGH TONE APOSTROPHE
+<Multi_key> <Z> <n> <grave> : "ߵ" U07F5   # NKO LOW TONE APOSTROPHE
+<Multi_key> <Z> <n> <comma> : "߸" U07F8   # NKO COMMA
+<Multi_key> <Z> <n> <exclam> : "߹" U07F9   # NKO EXCLAMATION MARK
+
+<Multi_key> <Z> <n> <numbersign> <0> : "߀" U07C0   # NKO DIGIT ZERO
+<Multi_key> <Z> <n> <numbersign> <1> : "߁" U07C1   # NKO DIGIT ONE
+<Multi_key> <Z> <n> <numbersign> <2> : "߂" U07C2   # NKO DIGIT TWO
+<Multi_key> <Z> <n> <numbersign> <3> : "߃" U07C3   # NKO DIGIT THREE
+<Multi_key> <Z> <n> <numbersign> <4> : "߄" U07C4   # NKO DIGIT FOUR
+<Multi_key> <Z> <n> <numbersign> <5> : "߅" U07C5   # NKO DIGIT FIVE
+<Multi_key> <Z> <n> <numbersign> <6> : "߆" U07C6   # NKO DIGIT SIX
+<Multi_key> <Z> <n> <numbersign> <7> : "߇" U07C7   # NKO DIGIT SEVEN
+<Multi_key> <Z> <n> <numbersign> <8> : "߈" U07C8   # NKO DIGIT EIGHT
+<Multi_key> <Z> <n> <numbersign> <9> : "߉" U07C9   # NKO DIGIT NINE
 
 
 ##############

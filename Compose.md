@@ -3,7 +3,7 @@
 
 > Link: https://github.com/Udzu/xcompose/blob/master/Compose
 
-This repo also hosts my personal .XCompose file, which contains over 9000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
+This repo also hosts my personal .XCompose file, which contains over 10 000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
 
 The file aims for memorability and consistency. As a result, a small number of the rules here conflict with the default system rules, with workarounds given wherever possible in the comments (e.g. \<underscore>'s usefulness for subscripting often interferes with its system use for macrons, for which \<minus> works equally well as an alternative).
 
@@ -26,14 +26,14 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (309): ʣ ㏈ etc
 * **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (4721)
+### Non-Latin script characters (4772)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِيت⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդit etc
 * **Brahmic Scripts** (Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Kannada, Limbu, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu) (1296): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ, 𑄢𑄬𑄘𑄨𑄖, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆದಿತ, ᤖᤧᤍᤡᤳ, രെഡിട, ꯔꯦꯗꯤꯠ, ରେଡିଟ, ꢬꢞꢶꢜ, රෙදිත, ரெதிட, రెడిట etc
 * **Unified English Braille** (79): ⠗⠫⠙⠊⠞ etc
 * **ConScripts** (Cherokee, Deseret, Inuktitut Syllabics, Ol Chiki, Shavian) (488): ᎴᏗᏛ, 𐐡𐐇𐐔𐐆𐐓, ᕃᑎᑦ, ᱨᱮᱫᱫᱤᱛ, 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** & Glagolitic (190): Ре́ддит, Ⱃⰵδδιτ etc
-* **Geʽez** (358): ርዲተ etc 
+* **Geʽez** & NKo (409): ርዲተ, ⁧ߙߍߘߘߌߕ⁩ etc 
 * **Georgian** (Mtavruli, Nuskhuri, Mkhedruli) (154): რედდიტ, ႰႤႣႣႨႲ etc
 * **Greek** & Coptic (461): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ etc
 * **Hebrew**, Phoenician, & Samaritan (159): ⁧רֶדִיט⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc
