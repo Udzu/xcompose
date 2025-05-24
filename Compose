@@ -125,6 +125,7 @@ include "%L"
 <Multi_key> <grave> <grave> <Return>                   : "̏"  U030F   # COMBINING DOUBLE GRAVE ACCENT
 <Multi_key> <period> <parenright> <Return>             : "̐"  U0310   # COMBINING CANDRABINDU
 <Multi_key> <u> <v> <Return>                           : "̑"  U0311   # COMBINING INVERTED BREVE
+<Multi_key> <asciicircum> <comma> <v> <Return>         : "̒"  U0312   # COMBINING TURNED COMMA ABOVE
 <Multi_key> <asciicircum> <comma> <Return>             : "̓"  U0313   # COMBINING COMMA ABOVE (less important than cedilla)
 <Multi_key> <comma> <less> <Return>                    : "̔"  U0314   # COMBINING REVERSED COMMA ABOVE
 <Multi_key> <comma> <greater> <Return>                 : "̕"  U0315   # COMBINING COMMA ABOVE RIGHT
@@ -162,9 +163,11 @@ include "%L"
 <Multi_key> <apostrophe> <grave> <apostrophe> <Return> : "᷉"  U1DC9   # COMBINING ACUTE-GRAVE-ACUTE
 <Multi_key> <u> <underscore> <space> <Return>          : "᷋"  U1DCB   # COMBINING BREVE-MACRON (conflicts with ū, use -u or u-)
 <Multi_key> <underscore> <u> <space> <Return>          : "᷌"  U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
+<Multi_key> <asciicircum> <semicolon> <Return>         : "᷎"  U1DCE   # COMBINING OGONEK ABOVE
 <Multi_key> <T> <v> <Return>                           : "᷵"  U1DF5   # COMBINING UP TACK ABOVE
 <Multi_key> <asciicircum> <less> <period> <Return>     : "᷸"  U1DF8   # COMBINING DOT ABOVE LEFT
 <Multi_key> <less> <Return>                            : "᷾"  U1DFE   # COMBINING LEFT ARROWHEAD ABOVE
+<Multi_key> <greater> <Return>                         : "⃗"  U20D7   # COMBINING RIGHT ARROW ABOVE (VECTOR) (use ^>[Return] for ͐)
 <Multi_key> <asterisk> <Return>                        : "⃰"  U20F0   # COMBINING ASTERISK ABOVE
 
 <Multi_key> <underscore> <grave> <Return>              : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
@@ -476,6 +479,7 @@ include "%L"
 <Multi_key> <w> <n>                 : "ƿ"  U01BF   # LATIN LETTER WYNN
 <Multi_key> <Y> <G>                 : "Ȝ"  U021C   # LATIN CAPITAL LETTER YOGH
 <Multi_key> <y> <g>                 : "ȝ"  U021D   # LATIN SMALL LETTER YOGH
+<Multi_key> <comma> <v>             : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA
 <Multi_key> <grave> <comma>         : "ʽ"  U02BD    # MODIFIER LETTER REVERSED COMMA
 
 # for consistency since we priorities using v for carons
@@ -8151,7 +8155,6 @@ include "%L"
 
 # Also see brackets, arrows and alphanumeric sections
 
-<Multi_key> <greater> <Return>        : "⃗"   U20D7   # COMBINING RIGHT ARROW ABOVE (VECTOR) (use ^>[Return] for ͐)
 <Multi_key> <slash> <slash> <percent> : "⁄"  U2044   # FRACTION SLASH (conflicts with useless \)
 <Multi_key> <slash> <slash> <period>  : "∕"  U2215   # DIVISION SLASH (conflicts with useless \)
 <Multi_key> <minus> <0>               : "−"  U2212   # MINUS SIGN (alternatively -_)
@@ -9799,7 +9802,7 @@ include "%L"
 <Multi_key> <asterisk> <4>          : "❇️"  U2747 UFE0F   # SPARKLE EMOJI
 <Multi_key> <asterisk> <8>          : "✳️"  U2733 UFE0F   # EIGHT SPOKED ASTERISK EMOJI
 
-<Multi_key> <O> <Return> : "⃝" U20DD   # COMBINING ENCLOSING CIRCLE
+<Multi_key> <O> <Return>             : "⃝"  U20DD        # COMBINING ENCLOSING CIRCLE
 <Multi_key> <O> <backslash> <Return> : "⃠"  U20E0       # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
 <Multi_key> <backslash> <O> <Return> : "⃠"  U20E0       # COMBINING ENCLOSING CIRCLE BACKSLASH (PROHIBITION)
 
