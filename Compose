@@ -272,6 +272,7 @@ include "%L"
 
 <Multi_key> <period> <slash> <period> : "⁒" U2052   # COMMERCIAL MINUS SIGN
 
+
 ##############################
 # B. LATIN SCRIPT CHARACTERS #
 ##############################
@@ -2870,8 +2871,8 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# (Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada,
-# Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu)
+# covers Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada,
+# Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu. See Zhuyin section for Tibetan.
 
 # (based on 7-bit ISO 15919)
 
@@ -2956,6 +2957,7 @@ include "%L"
 <Multi_key> <b> <c> <a> <u> <Return>        : "𑁅" U11045   # BRAHMI VOWEL SIGN AU
 <Multi_key> <b> <c> <e> <Return>            : "𑁳" U11073   # BRAHMI VOWEL SIGN OLD TAMIL SHORT E
 <Multi_key> <b> <c> <o> <Return>            : "𑁴" U11074   # BRAHMI VOWEL SIGN OLD TAMIL SHORT O
+<Multi_key> <b> <c> <0> <Return>            : "𑁆" U11046   # BRAHMI VIRAMA
 
 # Other signs
 
@@ -3106,6 +3108,7 @@ include "%L"
 <Multi_key> <b> <d> <u> <u> <e> <Return>       : "ॗ" U0957   # DEVANAGARI VOWEL SIGN UUE
 <Multi_key> <b> <d> <comma> <l> <Return>       : "ॢ" U0962   # DEVANAGARI VOWEL SIGN VOCALIC L
 <Multi_key> <b> <d> <comma> <l> <l> <Return>   : "ॣ" U0963   # DEVANAGARI VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <d> <0> <Return>                   : "्" U094D   # DEVANAGARI SIGN VIRAMA
 
 # Other signs
 
@@ -3213,6 +3216,7 @@ include "%L"
 <Multi_key> <b> <b> <a> <u> <Return> : "ৌ" U09CC   # BENGALI VOWEL SIGN AU
 <Multi_key> <b> <b> <comma> <l> <Return> : "ৢ" U09E2   # BENGALI VOWEL SIGN VOCALIC L
 <Multi_key> <b> <b> <comma> <l> <l> <Return> : "ৣ" U09E3   # BENGALI VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <b> <0> <Return> : "্" U09CD   # BENGALI SIGN VIRAMA
 
 # Other signs
 
@@ -3303,6 +3307,7 @@ include "%L"
 <Multi_key> <b> <B> <e> <e> <Return> : "ေ" U1031   # MYANMAR VOWEL SIGN E
 <Multi_key> <b> <B> <a> <i> <Return> : "ဲ" U1032   # MYANMAR VOWEL SIGN AI
 <Multi_key> <b> <B> <asciicircum> <e> <e> <Return> : "ဵ" U1035   # MYANMAR VOWEL SIGN E ABOVE
+<Multi_key> <b> <B> <0> <Return> : "္" U1039   # MYANMAR SIGN VIRAMA
 
 # Other signs
 
@@ -3387,6 +3392,7 @@ include "%L"
 <Multi_key> <b> <C> <a> <u> <Return> : "𑄲" U11132   # CHAKMA AU MARK (use aau[Return] for 𑄯)
 <Multi_key> <b> <C> <a> <a> <Return> : "𑅅" U11145   # CHAKMA VOWEL SIGN AA
 <Multi_key> <b> <C> <e> <i> <Return>  : "𑅆" U11146   # CHAKMA VOWEL SIGN EI
+<Multi_key> <b> <C> <0> <Return> : "𑄳" U11133   # CHAKMA VIRAMA
     
 # Other signs
 
@@ -3491,6 +3497,7 @@ include "%L"
 <Multi_key> <b> <g> <a> <u> <Return> : "ૌ" U0ACC   # GUJARATI VOWEL SIGN AU (conflicts)
 <Multi_key> <b> <g> <comma> <l> <Return> : "ૢ" U0AE2   # GUJARATI VOWEL SIGN VOCALIC L (conflicts)
 <Multi_key> <b> <g> <comma> <l> <l> <Return> : "ૣ" U0AE3   # GUJARATI VOWEL SIGN VOCALIC LL (conflicts)
+<Multi_key> <b> <g> <0> <Return> : "્" U0ACD   # GUJARATI SIGN VIRAMA (conflicts)
 
 # Other signs
 
@@ -3588,6 +3595,7 @@ include "%L"
 <Multi_key> <b> <G> <a> <i> <Return> : "ੈ" U0A48   # GURMUKHI VOWEL SIGN AI (conflicts)
 <Multi_key> <b> <G> <o> <o> <Return> : "ੋ" U0A4B   # GURMUKHI VOWEL SIGN OO (conflicts)
 <Multi_key> <b> <G> <a> <u> <Return> : "ੌ" U0A4C   # GURMUKHI VOWEL SIGN AU (conflicts)
+<Multi_key> <b> <G> <0> <Return> : "੍" U0A4D   # GURMUKHI SIGN VIRAMA (conflicts)
 
 # Other signs
 
@@ -3691,6 +3699,7 @@ include "%L"
 <Multi_key> <b> <k> <a> <u> <Return> : "ೌ" U0CCC   # KANNADA VOWEL SIGN AU
 <Multi_key> <b> <k> <comma> <l> <Return> : "ೢ" U0CE2   # KANNADA VOWEL SIGN VOCALIC L
 <Multi_key> <b> <k> <comma> <l> <l> <Return> : "ೣ" U0CE3   # KANNADA VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <k> <0> <Return> : "್" U0CCD   # KANNADA SIGN VIRAMA
 
 # Other signs
 
@@ -3699,6 +3708,7 @@ include "%L"
 <Multi_key> <b> <k> <period> <Return> : "ಂ" U0C82   # KANNADA SIGN ANUSVARA
 <Multi_key> <b> <k> <colon> <Return> : "ಃ" U0C83   # KANNADA SIGN VISARGA
 <Multi_key> <b> <k> <underscore> <period> <period> <Return> : "಼" U0CBC   # KANNADA SIGN NUKTA
+<Multi_key> <b> <k> <6> <Return> : "್" U0CCD   # KANNADA SIGN VIRAMA
 
 <Multi_key> <b> <k> <at> : "಄" U0C84   # KANNADA SIGN SIDDHAM
 <Multi_key> <b> <k> <S> : "ಽ" U0CBD   # KANNADA SIGN AVAGRAHA
@@ -3889,6 +3899,7 @@ include "%L"
 <Multi_key> <b> <m> <o> <o> <Return> : "ോ" U0D4B   # MALAYALAM VOWEL SIGN OO
 <Multi_key> <b> <m> <a> <u> <Return> : "ൌ" U0D4C   # MALAYALAM VOWEL SIGN AU
 <Multi_key> <b> <m> <comma> <Return> : "്" U0D4D   # MALAYALAM SIGN VIRAMA
+<Multi_key> <b> <m> <0> <Return> : "്" U0D4D   # MALAYALAM SIGN VIRAMA
 <Multi_key> <b> <m> <comma> <l> <Return> : "ൢ" U0D62   # MALAYALAM VOWEL SIGN VOCALIC L
 <Multi_key> <b> <m> <comma> <l> <l> <Return> : "ൣ" U0D63   # MALAYALAM VOWEL SIGN VOCALIC LL
 
@@ -3899,7 +3910,7 @@ include "%L"
 <Multi_key> <b> <m> <period> <Return> : "ം" U0D02   # MALAYALAM SIGN ANUSVARA
 <Multi_key> <b> <m> <colon> <Return> : "ഃ" U0D03   # MALAYALAM SIGN VISARGA
 <Multi_key> <b> <m> <bar> <Return> : "഻" U0D3B   # MALAYALAM SIGN VERTICAL BAR VIRAMA
-<Multi_key> <b> <m> <0> <Return> : "഼" U0D3C   # MALAYALAM SIGN CIRCULAR VIRAMA
+<Multi_key> <b> <m> <0> <0> <Return> : "഼" U0D3C   # MALAYALAM SIGN CIRCULAR VIRAMA
 
 <Multi_key> <b> <m> <period> <parenright> <space> : "ഄ" U0D04   # MALAYALAM LETTER VEDIC ANUSVARA
 <Multi_key> <b> <m> <S> : "ഽ" U0D3D   # MALAYALAM SIGN AVAGRAHA
@@ -4069,6 +4080,7 @@ include "%L"
 <Multi_key> <b> <O> <a> <u> <Return> : "ୌ" U0B4C   # ORIYA VOWEL SIGN AU (conflicts)
 <Multi_key> <b> <O> <comma> <l> <Return> : "ୢ" U0B62   # ORIYA VOWEL SIGN VOCALIC L (conflicts)
 <Multi_key> <b> <O> <comma> <l> <l> <Return> : "ୣ" U0B63   # ORIYA VOWEL SIGN VOCALIC LL (conflicts)
+<Multi_key> <b> <O> <0> <Return> : "୍" U0B4D   # ORIYA SIGN VIRAMA (conflicts)
 
 # Other signs
 
@@ -4180,6 +4192,7 @@ include "%L"
 <Multi_key> <b> <s> <comma> <l> <Return> : "ෟ" U0DDF   # SINHALA VOWEL SIGN GAYANUKITTA
 <Multi_key> <b> <s> <comma> <r> <r> <Return> : "ෲ" U0DF2   # SINHALA VOWEL SIGN DIGA GAETTA-PILLA
 <Multi_key> <b> <s> <comma> <l> <l> <Return> : "ෳ" U0DF3   # SINHALA VOWEL SIGN DIGA GAYANUKITTA
+<Multi_key> <b> <s> <0> <Return> : "්" U0DCA   # SINHALA SIGN AL-LAKUNA
 
 # Other signs
 
@@ -4277,6 +4290,7 @@ include "%L"
 <Multi_key> <b> <S> <o> <Return> : "ꣁ" UA8C1   # SAURASHTRA VOWEL SIGN O
 <Multi_key> <b> <S> <o> <o> <Return> : "ꣂ" UA8C2   # SAURASHTRA VOWEL SIGN OO
 <Multi_key> <b> <S> <a> <u> <Return> : "ꣃ" UA8C3   # SAURASHTRA VOWEL SIGN AU
+<Multi_key> <b> <S> <0> <Return> : "꣄" UA8C4   # SAURASHTRA SIGN VIRAMA
 
 # Other signs
 
@@ -4359,6 +4373,7 @@ include "%L"
 <Multi_key> <b> <t> <o> <Return> : "ொ" U0BCA   # TAMIL VOWEL SIGN O
 <Multi_key> <b> <t> <o> <o> <Return> : "ோ" U0BCB   # TAMIL VOWEL SIGN OO
 <Multi_key> <b> <t> <a> <u> <Return> : "ௌ" U0BCC   # TAMIL VOWEL SIGN AU
+<Multi_key> <b> <t> <0> <Return> : "்" U0BCD   # TAMIL SIGN VIRAMA
 
 # Other signs
 
@@ -4465,6 +4480,7 @@ include "%L"
 <Multi_key> <b> <T> <a> <u> <Return> : "ౌ" U0C4C   # TELUGU VOWEL SIGN AU
 <Multi_key> <b> <T> <comma> <l> <Return> : "ౢ" U0C62   # TELUGU VOWEL SIGN VOCALIC L
 <Multi_key> <b> <T> <comma> <l> <l> <Return> : "ౣ" U0C63   # TELUGU VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <T> <0> <Return> : "్" U0C4D   # TELUGU SIGN VIRAMA
 
 # Other signs
 
@@ -4823,9 +4839,9 @@ include "%L"
 <Multi_key> <c> <G> <m>          : "ⱞ" U2C5E   # GLAGOLITIC SMALL LETTER LATINATE MYSLITE (conflicts)
 <Multi_key> <c> <G> <less> <c> <h> : "ⱟ" U2C5F   # GLAGOLITIC SMALL LETTER CAUDATE CHRIVI (conflicts)
 
-##########################################################
-# (C) ConScripts (Cherokee, Deseret, Ol Chiki & Shavian) #
-##########################################################
+###############################################################################
+# (C) ConScripts (Cherokee, Deseret, Inuktitut Syllabics, Ol Chiki & Shavian) #
+###############################################################################
 
 # (d/D = Deseret)
 
@@ -5087,7 +5103,167 @@ include "%L"
 <Multi_key> <C> <h> <w> <v> : "ꮾ" UABBE   # CHEROKEE SMALL LETTER WV
 <Multi_key> <C> <h> <y> <a> : "ꮿ" UABBF   # CHEROKEE SMALL LETTER YA
 
-# (o = Ol Chiki) based on ALA-LC
+# (i = Inuktitut Syllabics) ALA-LC transliteration
+
+<Multi_key> <C> <i> <a> <i> : "ᐁ" U1401   # CANADIAN SYLLABICS E
+<Multi_key> <C> <i> <a> <a> <i> : "ᐂ" U1402   # CANADIAN SYLLABICS AAI
+<Multi_key> <C> <i> <i> : "ᐃ" U1403   # CANADIAN SYLLABICS I
+<Multi_key> <C> <i> <u> <space> : "ᐅ" U1405   # CANADIAN SYLLABICS O
+<Multi_key> <C> <i> <u> <u> : "ᐆ" U1406   # CANADIAN SYLLABICS OO
+<Multi_key> <C> <i> <a> <space> : "ᐊ" U140A   # CANADIAN SYLLABICS A
+<Multi_key> <C> <i> <a> <a> <space> : "ᐋ" U140B   # CANADIAN SYLLABICS AA
+
+<Multi_key> <C> <i> <p> <a> <i> : "ᐯ" U142F   # CANADIAN SYLLABICS PE
+<Multi_key> <C> <i> <p> <a> <a> <i> : "ᐰ" U1430   # CANADIAN SYLLABICS PAAI
+<Multi_key> <C> <i> <p> <i> <space> : "ᐱ" U1431   # CANADIAN SYLLABICS PI
+<Multi_key> <C> <i> <p> <i> <i> : "ᐲ" U1432   # CANADIAN SYLLABICS PII
+<Multi_key> <C> <i> <p> <u> <space> : "ᐳ" U1433   # CANADIAN SYLLABICS PO
+<Multi_key> <C> <i> <p> <u> <u> : "ᐴ" U1434   # CANADIAN SYLLABICS POO
+<Multi_key> <C> <i> <p> <a> <space> : "ᐸ" U1438   # CANADIAN SYLLABICS PA
+<Multi_key> <C> <i> <p> <a> <a> <space> : "ᐹ" U1439   # CANADIAN SYLLABICS PAA
+<Multi_key> <C> <i> <p> <space> : "ᑉ" U1449   # CANADIAN SYLLABICS P
+
+<Multi_key> <C> <i> <t> <a> <i> : "ᑌ" U144C   # CANADIAN SYLLABICS TE
+<Multi_key> <C> <i> <t> <a> <a> <i> : "ᑍ" U144D   # CANADIAN SYLLABICS TAAI
+<Multi_key> <C> <i> <t> <i> <space> : "ᑎ" U144E   # CANADIAN SYLLABICS TI
+<Multi_key> <C> <i> <t> <i> <i> : "ᑏ" U144F   # CANADIAN SYLLABICS TII
+<Multi_key> <C> <i> <t> <u> <space> : "ᑐ" U1450   # CANADIAN SYLLABICS TO
+<Multi_key> <C> <i> <t> <u> <u> : "ᑑ" U1451   # CANADIAN SYLLABICS TOO
+<Multi_key> <C> <i> <t> <a> <space> : "ᑕ" U1455   # CANADIAN SYLLABICS TA
+<Multi_key> <C> <i> <t> <a> <a> <space> : "ᑖ" U1456   # CANADIAN SYLLABICS TAA
+<Multi_key> <C> <i> <t> <space> : "ᑦ" U1466   # CANADIAN SYLLABICS T
+
+<Multi_key> <C> <i> <k> <a> <i> : "ᑫ" U146B   # CANADIAN SYLLABICS KE
+<Multi_key> <C> <i> <k> <a> <a> <i> : "ᑬ" U146C   # CANADIAN SYLLABICS KAAI
+<Multi_key> <C> <i> <k> <i> <space> : "ᑭ" U146D   # CANADIAN SYLLABICS KI
+<Multi_key> <C> <i> <k> <i> <i> : "ᑮ" U146E   # CANADIAN SYLLABICS KII
+<Multi_key> <C> <i> <k> <u> <space> : "ᑯ" U146F   # CANADIAN SYLLABICS KO
+<Multi_key> <C> <i> <k> <u> <u> : "ᑰ" U1470   # CANADIAN SYLLABICS KOO
+<Multi_key> <C> <i> <k> <a> <space> : "ᑲ" U1472   # CANADIAN SYLLABICS KA
+<Multi_key> <C> <i> <k> <a> <a> <space> : "ᑳ" U1473   # CANADIAN SYLLABICS KAA
+<Multi_key> <C> <i> <k> <space> : "ᒃ" U1483   # CANADIAN SYLLABICS K
+
+<Multi_key> <C> <i> <g> <a> <i> : "ᒉ" U1489   # CANADIAN SYLLABICS CE
+<Multi_key> <C> <i> <g> <a> <a> <i> : "ᒊ" U148A   # CANADIAN SYLLABICS CAAI
+<Multi_key> <C> <i> <g> <i> <space> : "ᒋ" U148B   # CANADIAN SYLLABICS CI
+<Multi_key> <C> <i> <g> <i> <i> : "ᒌ" U148C   # CANADIAN SYLLABICS CII
+<Multi_key> <C> <i> <g> <u> <space> : "ᒍ" U148D   # CANADIAN SYLLABICS CO
+<Multi_key> <C> <i> <g> <u> <u> : "ᒎ" U148E   # CANADIAN SYLLABICS COO
+<Multi_key> <C> <i> <g> <a> <space> : "ᒐ" U1490   # CANADIAN SYLLABICS CA
+<Multi_key> <C> <i> <g> <a> <a> <space> : "ᒑ" U1491   # CANADIAN SYLLABICS CAA
+<Multi_key> <C> <i> <g> <space> : "ᒡ" U14A1   # CANADIAN SYLLABICS C
+
+<Multi_key> <C> <i> <m> <a> <i> : "ᒣ" U14A3   # CANADIAN SYLLABICS ME
+<Multi_key> <C> <i> <m> <a> <a> <i> : "ᒤ" U14A4   # CANADIAN SYLLABICS MAAI
+<Multi_key> <C> <i> <m> <i> <space> : "ᒥ" U14A5   # CANADIAN SYLLABICS MI
+<Multi_key> <C> <i> <m> <i> <i> : "ᒦ" U14A6   # CANADIAN SYLLABICS MII
+<Multi_key> <C> <i> <m> <u> <space> : "ᒧ" U14A7   # CANADIAN SYLLABICS MO
+<Multi_key> <C> <i> <m> <u> <u> : "ᒨ" U14A8   # CANADIAN SYLLABICS MOO
+<Multi_key> <C> <i> <m> <a> <space> : "ᒪ" U14AA   # CANADIAN SYLLABICS MA
+<Multi_key> <C> <i> <m> <a> <a> <space> : "ᒫ" U14AB   # CANADIAN SYLLABICS MAA
+<Multi_key> <C> <i> <m> <space> : "ᒻ" U14BB   # CANADIAN SYLLABICS M
+
+<Multi_key> <C> <i> <n> <a> <i> : "ᓀ" U14C0   # CANADIAN SYLLABICS NE
+<Multi_key> <C> <i> <n> <a> <a> <i> : "ᓁ" U14C1   # CANADIAN SYLLABICS NAAI
+<Multi_key> <C> <i> <n> <i> <space> : "ᓂ" U14C2   # CANADIAN SYLLABICS NI
+<Multi_key> <C> <i> <n> <i> <i> : "ᓃ" U14C3   # CANADIAN SYLLABICS NII
+<Multi_key> <C> <i> <n> <u> <space> : "ᓄ" U14C4   # CANADIAN SYLLABICS NO
+<Multi_key> <C> <i> <n> <u> <u> : "ᓅ" U14C5   # CANADIAN SYLLABICS NOO
+<Multi_key> <C> <i> <n> <a> <space> : "ᓇ" U14C7   # CANADIAN SYLLABICS NA
+<Multi_key> <C> <i> <n> <a> <a> <space> : "ᓈ" U14C8   # CANADIAN SYLLABICS NAA
+<Multi_key> <C> <i> <n> <space> : "ᓐ" U14D0   # CANADIAN SYLLABICS N
+
+<Multi_key> <C> <i> <s> <a> <i> : "ᓭ" U14ED   # CANADIAN SYLLABICS SE
+<Multi_key> <C> <i> <s> <a> <a> <i> : "ᓮ" U14EE   # CANADIAN SYLLABICS SAAI
+<Multi_key> <C> <i> <s> <i> <space> : "ᓯ" U14EF   # CANADIAN SYLLABICS SI
+<Multi_key> <C> <i> <s> <i> <i> : "ᓰ" U14F0   # CANADIAN SYLLABICS SII
+<Multi_key> <C> <i> <s> <u> <space> : "ᓱ" U14F1   # CANADIAN SYLLABICS SO
+<Multi_key> <C> <i> <s> <u> <u> : "ᓲ" U14F2   # CANADIAN SYLLABICS SOO
+<Multi_key> <C> <i> <s> <a> <space> : "ᓴ" U14F4   # CANADIAN SYLLABICS SA
+<Multi_key> <C> <i> <s> <a> <a> <space> : "ᓵ" U14F5   # CANADIAN SYLLABICS SAA
+<Multi_key> <C> <i> <s> <space> : "ᔅ" U1505   # CANADIAN SYLLABICS S
+
+<Multi_key> <C> <i> <l> <a> <i> : "ᓓ" U14D3   # CANADIAN SYLLABICS LE
+<Multi_key> <C> <i> <l> <a> <a> <i> : "ᓔ" U14D4   # CANADIAN SYLLABICS LAAI
+<Multi_key> <C> <i> <l> <i> <space> : "ᓕ" U14D5   # CANADIAN SYLLABICS LI
+<Multi_key> <C> <i> <l> <i> <i> : "ᓖ" U14D6   # CANADIAN SYLLABICS LII
+<Multi_key> <C> <i> <l> <u> <space> : "ᓗ" U14D7   # CANADIAN SYLLABICS LO
+<Multi_key> <C> <i> <l> <u> <u> : "ᓘ" U14D8   # CANADIAN SYLLABICS LOO
+<Multi_key> <C> <i> <l> <a> <space> : "ᓚ" U14DA   # CANADIAN SYLLABICS LA
+<Multi_key> <C> <i> <l> <a> <a> <space> : "ᓛ" U14DB   # CANADIAN SYLLABICS LAA
+<Multi_key> <C> <i> <l> <space> : "ᓪ" U14EA   # CANADIAN SYLLABICS L
+
+<Multi_key> <C> <i> <j> <a> <i> : "ᔦ" U1526   # CANADIAN SYLLABICS YE
+<Multi_key> <C> <i> <j> <a> <a> <i> : "ᔧ" U1527   # CANADIAN SYLLABICS YAAI
+<Multi_key> <C> <i> <j> <i> <space> : "ᔨ" U1528   # CANADIAN SYLLABICS YI
+<Multi_key> <C> <i> <j> <i> <i> : "ᔩ" U1529   # CANADIAN SYLLABICS YII
+<Multi_key> <C> <i> <j> <u> <space> : "ᔪ" U152A   # CANADIAN SYLLABICS YO
+<Multi_key> <C> <i> <j> <u> <u> : "ᔫ" U152B   # CANADIAN SYLLABICS YOO
+<Multi_key> <C> <i> <j> <a> <space> : "ᔭ" U152D   # CANADIAN SYLLABICS YA
+<Multi_key> <C> <i> <j> <a> <a> <space> : "ᔮ" U152E   # CANADIAN SYLLABICS YAA
+<Multi_key> <C> <i> <j> <space> : "ᔾ" U153E   # CANADIAN SYLLABICS Y
+
+<Multi_key> <C> <i> <v> <a> <i> : "ᕓ" U1553   # CANADIAN SYLLABICS FE
+<Multi_key> <C> <i> <v> <a> <a> <i> : "ᕔ" U1554   # CANADIAN SYLLABICS FAAI
+<Multi_key> <C> <i> <v> <i> <space> : "ᕕ" U1555   # CANADIAN SYLLABICS FI
+<Multi_key> <C> <i> <v> <i> <i> : "ᕖ" U1556   # CANADIAN SYLLABICS FII
+<Multi_key> <C> <i> <v> <u> <space> : "ᕗ" U1557   # CANADIAN SYLLABICS FO
+<Multi_key> <C> <i> <v> <u> <u> : "ᕘ" U1558   # CANADIAN SYLLABICS FOO
+<Multi_key> <C> <i> <v> <a> <space> : "ᕙ" U1559   # CANADIAN SYLLABICS FA
+<Multi_key> <C> <i> <v> <a> <a> <space> : "ᕚ" U155A   # CANADIAN SYLLABICS FAA
+<Multi_key> <C> <i> <v> <space> : "ᕝ" U155D   # CANADIAN SYLLABICS F
+
+<Multi_key> <C> <i> <r> <a> <i> : "ᕃ" U1543   # CANADIAN SYLLABICS R-CREE RE
+<Multi_key> <C> <i> <r> <a> <a> <i> : "ᕅ" U1545   # CANADIAN SYLLABICS RAAI
+<Multi_key> <C> <i> <r> <i> <space> : "ᕆ" U1546   # CANADIAN SYLLABICS RI
+<Multi_key> <C> <i> <r> <i> <i> : "ᕇ" U1547   # CANADIAN SYLLABICS RII
+<Multi_key> <C> <i> <r> <u> <space> : "ᕈ" U1548   # CANADIAN SYLLABICS RO
+<Multi_key> <C> <i> <r> <u> <u> : "ᕉ" U1549   # CANADIAN SYLLABICS ROO
+<Multi_key> <C> <i> <r> <a> <space> : "ᕋ" U154B   # CANADIAN SYLLABICS RA
+<Multi_key> <C> <i> <r> <a> <a> <space> : "ᕌ" U154C   # CANADIAN SYLLABICS RAA
+<Multi_key> <C> <i> <r> <space> : "ᕐ" U1550   # CANADIAN SYLLABICS R
+
+<Multi_key> <C> <i> <q> <a> <i> : "ᙯ" U166F   # CANADIAN SYLLABICS QAI
+<Multi_key> <C> <i> <q> <a> <a> <i> : "ᕾ" U157E   # CANADIAN SYLLABICS QAAI
+<Multi_key> <C> <i> <q> <i> <space> : "ᕿ" U157F   # CANADIAN SYLLABICS QI
+<Multi_key> <C> <i> <q> <i> <i> : "ᖀ" U1580   # CANADIAN SYLLABICS QII
+<Multi_key> <C> <i> <q> <u> <space> : "ᖁ" U1581   # CANADIAN SYLLABICS QO
+<Multi_key> <C> <i> <q> <u> <u> : "ᖂ" U1582   # CANADIAN SYLLABICS QOO
+<Multi_key> <C> <i> <q> <a> <space> : "ᖃ" U1583   # CANADIAN SYLLABICS QA
+<Multi_key> <C> <i> <q> <a> <a> <space> : "ᖄ" U1584   # CANADIAN SYLLABICS QAA
+<Multi_key> <C> <i> <q> <space> : "ᖅ" U1585   # CANADIAN SYLLABICS Q
+
+<Multi_key> <C> <i> <n> <g> <a> <i> : "ᙰ" U1670   # CANADIAN SYLLABICS NGAI
+<Multi_key> <C> <i> <n> <g> <a> <a> <i> : "ᖎ" U158E   # CANADIAN SYLLABICS NGAAI
+<Multi_key> <C> <i> <n> <g> <i> <space> : "ᖏ" U158F   # CANADIAN SYLLABICS NGI
+<Multi_key> <C> <i> <n> <g> <i> <i> : "ᖐ" U1590   # CANADIAN SYLLABICS NGII
+<Multi_key> <C> <i> <n> <g> <u> <space> : "ᖑ" U1591   # CANADIAN SYLLABICS NGO
+<Multi_key> <C> <i> <n> <g> <u> <u> : "ᖒ" U1592   # CANADIAN SYLLABICS NGOO
+<Multi_key> <C> <i> <n> <g> <a> <space> : "ᖓ" U1593   # CANADIAN SYLLABICS NGA
+<Multi_key> <C> <i> <n> <g> <a> <a> <space> : "ᖔ" U1594   # CANADIAN SYLLABICS NGAA
+<Multi_key> <C> <i> <n> <g> <space> : "ᖕ" U1595   # CANADIAN SYLLABICS NG
+
+<Multi_key> <C> <i> <n> <n> <g> <i> : "ᙱ" U1671   # CANADIAN SYLLABICS NNGI
+<Multi_key> <C> <i> <n> <n> <g> <u> : "ᙳ" U1673   # CANADIAN SYLLABICS NNGO
+<Multi_key> <C> <i> <n> <n> <g> <a> : "ᙵ" U1675   # CANADIAN SYLLABICS NNGA
+<Multi_key> <C> <i> <n> <n> <g> <space> : "ᖖ" U1596   # CANADIAN SYLLABICS NNG
+
+<Multi_key> <C> <i> <ampersand> <i> : "ᖠ" U15A0   # CANADIAN SYLLABICS LHI
+<Multi_key> <C> <i> <ampersand> <u> : "ᖢ" U15A2   # CANADIAN SYLLABICS LHO
+<Multi_key> <C> <i> <ampersand> <a> : "ᖤ" U15A4   # CANADIAN SYLLABICS LHA
+<Multi_key> <C> <i> <ampersand> <space> : "ᖦ" U15A6   # CANADIAN SYLLABICS LH
+
+<Multi_key> <C> <i> <h> <a> <i> : "ᕴ" U1574   # CANADIAN SYLLABICS NUNAVIK HE
+<Multi_key> <C> <i> <h> <i> : "ᕵ" U1575   # CANADIAN SYLLABICS NUNAVIK HI
+<Multi_key> <C> <i> <h> <u> : "ᕷ" U1577   # CANADIAN SYLLABICS NUNAVIK HO
+<Multi_key> <C> <i> <h> <a> <space> : "ᕹ" U1579   # CANADIAN SYLLABICS NUNAVIK HA
+<Multi_key> <C> <i> <h> <space> : "ᕻ" U157B   # CANADIAN SYLLABICS NUNAVIK H
+<Multi_key> <C> <i> <H> : "ᕼ" U157C   # CANADIAN SYLLABICS NUNAVUT H
+
+<Multi_key> <C> <i> <minus> : "᐀" U1400   # CANADIAN SYLLABICS HYPHEN
+<Multi_key> <C> <i> <period> : "᙮" U166E   # CANADIAN SYLLABICS FULL STOP
+
+# (o = Ol Chiki) ALA-LC transliteration
 
 <Multi_key> <C> <o> <a> : "ᱚ" U1C5A   # OL CHIKI LETTER LA
 <Multi_key> <C> <o> <t> : "ᱛ" U1C5B   # OL CHIKI LETTER AT
@@ -6849,9 +7025,9 @@ include "%L"
 <Multi_key> <o> <i> <r> <quotedbl> <i> : "ᛇ" U16C7   # RUNIC LETTER IWAZ EOH
 
 
-############
-# (t) Thai #
-############
+##############################
+# (t) Thai (and Khmer & Lao) #
+##############################
 
 # (based on ISO 11940)
 
@@ -6954,9 +7130,200 @@ include "%L"
 <Multi_key> <t> <numbersign> <8> : "๘" U0E58   # THAI DIGIT EIGHT
 <Multi_key> <t> <numbersign> <9> : "๙" U0E59   # THAI DIGIT NINE
 
-#######################################
-# (z) Zhuyin/Bopomofo (and Mongolian) #
-#######################################
+# (k = Khmer) ALA-LC transliteration
+
+<Multi_key> <t> <k> <k> <space> : "ក" U1780   # KHMER LETTER KA
+<Multi_key> <t> <k> <k> <h> : "ខ" U1781   # KHMER LETTER KHA
+<Multi_key> <t> <k> <g> <space> : "គ" U1782   # KHMER LETTER KO
+<Multi_key> <t> <k> <g> <h> : "ឃ" U1783   # KHMER LETTER KHO
+<Multi_key> <t> <k> <n> <g> : "ង" U1784   # KHMER LETTER NGO
+<Multi_key> <t> <k> <c> <space> : "ច" U1785   # KHMER LETTER CA
+<Multi_key> <t> <k> <c> <h> : "ឆ" U1786   # KHMER LETTER CHA
+<Multi_key> <t> <k> <j> <space> : "ជ" U1787   # KHMER LETTER CO
+<Multi_key> <t> <k> <j> <h> : "ឈ" U1788   # KHMER LETTER CHO
+<Multi_key> <t> <k> <asciitilde> <n> : "ញ" U1789   # KHMER LETTER NYO (ñ)
+<Multi_key> <t> <k> <exclam> <t> <space> : "ដ" U178A   # KHMER LETTER DA (ṭ)
+<Multi_key> <t> <k> <exclam> <t> <h> : "ឋ" U178B   # KHMER LETTER TTHA (ṭh)
+<Multi_key> <t> <k> <exclam> <d> <space> : "ឌ" U178C   # KHMER LETTER DO (ḍ)
+<Multi_key> <t> <k> <exclam> <d> <h> : "ឍ" U178D   # KHMER LETTER TTHO (ḍh)
+<Multi_key> <t> <k> <exclam> <n> : "ណ" U178E   # KHMER LETTER NNO (ṇ)
+<Multi_key> <t> <k> <t> <space> : "ត" U178F   # KHMER LETTER TA
+<Multi_key> <t> <k> <t> <h> : "ថ" U1790   # KHMER LETTER THA
+<Multi_key> <t> <k> <d> <space> : "ទ" U1791   # KHMER LETTER TO
+<Multi_key> <t> <k> <d> <h> : "ធ" U1792   # KHMER LETTER THO
+<Multi_key> <t> <k> <n> <space> : "ន" U1793   # KHMER LETTER NO
+<Multi_key> <t> <k> <p> <space> : "ប" U1794   # KHMER LETTER BA
+<Multi_key> <t> <k> <p> <h> : "ផ" U1795   # KHMER LETTER PHA
+<Multi_key> <t> <k> <b> <space> : "ព" U1796   # KHMER LETTER PO
+<Multi_key> <t> <k> <b> <h> : "ភ" U1797   # KHMER LETTER PHO
+<Multi_key> <t> <k> <m> : "ម" U1798   # KHMER LETTER MO
+<Multi_key> <t> <k> <y> : "យ" U1799   # KHMER LETTER YO
+<Multi_key> <t> <k> <r> : "រ" U179A   # KHMER LETTER RO
+<Multi_key> <t> <k> <l> : "ល" U179B   # KHMER LETTER LO
+<Multi_key> <t> <k> <v> : "វ" U179C   # KHMER LETTER VO
+<Multi_key> <t> <k> <apostrophe> <s> : "ឝ" U179D   # KHMER LETTER SHA (ś)
+<Multi_key> <t> <k> <exclam> <s> : "ឞ" U179E   # KHMER LETTER SSO (ṣ)
+<Multi_key> <t> <k> <s> : "ស" U179F   # KHMER LETTER SA
+<Multi_key> <t> <k> <h> : "ហ" U17A0   # KHMER LETTER HA
+<Multi_key> <t> <k> <exclam> <l> <l> : "ឡ" U17A1   # KHMER LETTER LA (ḷ) (not to be confused with ឭ)
+
+# Independent vowels
+
+<Multi_key> <t> <k> <a> <space> : "អ" U17A2   # KHMER LETTER QA
+<Multi_key> <t> <k> <i> <space> : "ឥ" U17A5   # KHMER INDEPENDENT VOWEL QI
+<Multi_key> <t> <k> <minus> <i> <space> : "ឦ" U17A6   # KHMER INDEPENDENT VOWEL QII (ī)
+<Multi_key> <t> <k> <u> <space> : "ឧ" U17A7   # KHMER INDEPENDENT VOWEL QU
+<Multi_key> <t> <k> <minus> <u> <space> : "ឩ" U17A9   # KHMER INDEPENDENT VOWEL QUU
+<Multi_key> <t> <k> <apostrophe> <y> <u> <space> : "ឪ" U17AA   # KHMER INDEPENDENT VOWEL QUUV (ýu)
+<Multi_key> <t> <k> <exclam> <r> <space> : "ឫ" U17AB   # KHMER INDEPENDENT VOWEL RY (ṛ)
+<Multi_key> <t> <k> <minus> <exclam> <r> <space> : "ឬ" U17AC   # KHMER INDEPENDENT VOWEL RYY (ṝ)
+<Multi_key> <t> <k> <exclam> <l> <space> : "ឭ" U17AD   # KHMER INDEPENDENT VOWEL LY (ḷ)
+<Multi_key> <t> <k> <minus> <exclam> <l> <space> : "ឮ" U17AE   # KHMER INDEPENDENT VOWEL LYY (ḹ)
+<Multi_key> <t> <k> <a> <e> <space> : "ឯ" U17AF   # KHMER INDEPENDENT VOWEL QE
+<Multi_key> <t> <k> <a> <i> <space> : "ឰ" U17B0   # KHMER INDEPENDENT VOWEL QAI
+<Multi_key> <t> <k> <o> <1> : "ឱ" U17B1   # KHMER INDEPENDENT VOWEL QOO TYPE ONE
+<Multi_key> <t> <k> <o> <2> : "ឲ" U17B2   # KHMER INDEPENDENT VOWEL QOO TYPE TWO
+<Multi_key> <t> <k> <a> <u> <space> : "ឳ" U17B3   # KHMER INDEPENDENT VOWEL QAU
+
+# Dependent vowels
+
+<Multi_key> <t> <k> <minus> <a> <Return> : "ា" U17B6   # KHMER VOWEL SIGN AA (ā)
+<Multi_key> <t> <k> <i> <Return> : "ិ" U17B7   # KHMER VOWEL SIGN I
+<Multi_key> <t> <k> <minus> <i> <Return> : "ី" U17B8   # KHMER VOWEL SIGN II (ī)
+<Multi_key> <t> <k> <period> <y> <Return> : "ឹ" U17B9   # KHMER VOWEL SIGN Y (ẏ)
+<Multi_key> <t> <k> <minus> <y> <Return> : "ឺ" U17BA   # KHMER VOWEL SIGN YY (ȳ)
+<Multi_key> <t> <k> <u> <Return> : "ុ" U17BB   # KHMER VOWEL SIGN U
+<Multi_key> <t> <k> <minus> <u> <Return> : "ូ" U17BC   # KHMER VOWEL SIGN UU
+<Multi_key> <t> <k> <u> <a> <Return> : "ួ" U17BD   # KHMER VOWEL SIGN UA
+<Multi_key> <t> <k> <o> <e> <Return> : "ើ" U17BE   # KHMER VOWEL SIGN OE
+<Multi_key> <t> <k> <period> <y> <a> <Return> : "ឿ" U17BF   # KHMER VOWEL SIGN YA (ẏa)
+<Multi_key> <t> <k> <i> <a> <Return> : "ៀ" U17C0   # KHMER VOWEL SIGN IE
+<Multi_key> <t> <k> <e> <Return> : "េ" U17C1   # KHMER VOWEL SIGN E
+<Multi_key> <t> <k> <a> <e> <Return> : "ែ" U17C2   # KHMER VOWEL SIGN AE
+<Multi_key> <t> <k> <a> <i> <Return> : "ៃ" U17C3   # KHMER VOWEL SIGN AI
+<Multi_key> <t> <k> <o> <Return> : "ោ" U17C4   # KHMER VOWEL SIGN OO
+<Multi_key> <t> <k> <a> <u> <Return> : "ៅ" U17C5   # KHMER VOWEL SIGN AU
+<Multi_key> <t> <k> <0> <Return> : "៑" U17D1   # KHMER SIGN VIRIAM (VIRAMA)
+
+# Other signs
+
+<Multi_key> <t> <k> <period> <Return> : "ំ" U17C6   # KHMER SIGN NIKAHIT (ANUSVARA)
+<Multi_key> <t> <k> <colon> <Return> : "ះ" U17C7   # KHMER SIGN REAHMUK (VISARGA)
+<Multi_key> <t> <k> <grave> <a> <Return> : "ៈ" U17C8   # KHMER SIGN YUUKALEAPINTU (à)
+<Multi_key> <t> <k> <quotedbl> <Return> : "៉" U17C9   # KHMER SIGN MUUSIKATOAN
+<Multi_key> <t> <k> <asciitilde> <Return> : "៊" U17CA   # KHMER SIGN TRIISAP
+<Multi_key> <t> <k> <bar> <Return> : "់" U17CB   # KHMER SIGN BANTOC
+<Multi_key> <t> <k> <plus> <Return> : "៎" U17CE   # KHMER SIGN KAKABAT
+<Multi_key> <t> <k> <minus> <Return> : "៑" U17D1   # KHMER SIGN VIRIAM
+<Multi_key> <t> <k> <underscore> <Return> : "្" U17D2   # KHMER SIGN COENG
+
+<Multi_key> <t> <k> <period> <space> : "។" U17D4   # KHMER SIGN KHAN
+<Multi_key> <t> <k> <colon> <space> : "៖" U17D6   # KHMER SIGN CAMNUC PII KUUH
+<Multi_key> <t> <k> <quotedbl> <space> : "ៗ" U17D7   # KHMER SIGN LEK TOO
+
+# Numerals
+
+<Multi_key> <t> <k> <numbersign> <0> : "០" U17E0   # KHMER DIGIT ZERO
+<Multi_key> <t> <k> <numbersign> <1> : "១" U17E1   # KHMER DIGIT ONE
+<Multi_key> <t> <k> <numbersign> <2> : "២" U17E2   # KHMER DIGIT TWO
+<Multi_key> <t> <k> <numbersign> <3> : "៣" U17E3   # KHMER DIGIT THREE
+<Multi_key> <t> <k> <numbersign> <4> : "៤" U17E4   # KHMER DIGIT FOUR
+<Multi_key> <t> <k> <numbersign> <5> : "៥" U17E5   # KHMER DIGIT FIVE
+<Multi_key> <t> <k> <numbersign> <6> : "៦" U17E6   # KHMER DIGIT SIX
+<Multi_key> <t> <k> <numbersign> <7> : "៧" U17E7   # KHMER DIGIT SEVEN
+<Multi_key> <t> <k> <numbersign> <8> : "៨" U17E8   # KHMER DIGIT EIGHT
+<Multi_key> <t> <k> <numbersign> <9> : "៩" U17E9   # KHMER DIGIT NINE
+
+# (L = Lao) ALA-LC transliteration (unfortuntately tl prefix is taken by ʈ) 
+
+# Consonants
+
+<Multi_key> <t> <L> <k> : "ກ" U0E81   # LAO LETTER KO
+<Multi_key> <t> <L> <asciicircum> <k> <h> : "ຂ" U0E82   # LAO LETTER KHO SUNG
+<Multi_key> <t> <L> <v> <k> <h> : "ຄ" U0E84   # LAO LETTER KHO TAM
+<Multi_key> <t> <L> <n> <g> : "ງ" U0E87   # LAO LETTER NGO
+<Multi_key> <t> <L> <c> <h> : "ຈ" U0E88   # LAO LETTER CO
+<Multi_key> <t> <L> <v> <s> : "ຊ" U0E8A   # LAO LETTER SO TAM
+<Multi_key> <t> <L> <n> <y> : "ຍ" U0E8D   # LAO LETTER NYO
+<Multi_key> <t> <L> <d> : "ດ" U0E94   # LAO LETTER DO
+<Multi_key> <t> <L> <t> : "ຕ" U0E95   # LAO LETTER TO
+<Multi_key> <t> <L> <asciicircum> <t> <h> : "ຖ" U0E96   # LAO LETTER THO SUNG
+<Multi_key> <t> <L> <v> <t> <h> : "ທ" U0E97   # LAO LETTER THO TAM
+<Multi_key> <t> <L> <n> <space> : "ນ" U0E99   # LAO LETTER NO
+<Multi_key> <t> <L> <b> : "ບ" U0E9A   # LAO LETTER BO
+<Multi_key> <t> <L> <p> : "ປ" U0E9B   # LAO LETTER PO
+<Multi_key> <t> <L> <asciicircum> <p> <h> : "ຜ" U0E9C   # LAO LETTER PHO SUNG
+<Multi_key> <t> <L> <asciicircum> <f> : "ຝ" U0E9D   # LAO LETTER FO TAM
+<Multi_key> <t> <L> <v> <p> <h> : "ພ" U0E9E   # LAO LETTER PHO TAM
+<Multi_key> <t> <L> <v> <f> : "ຟ" U0E9F   # LAO LETTER FO SUNG
+<Multi_key> <t> <L> <m> : "ມ" U0EA1   # LAO LETTER MO
+<Multi_key> <t> <L> <y> : "ຢ" U0EA2   # LAO LETTER YO
+<Multi_key> <t> <L> <r> : "ຣ" U0EA3   # LAO LETTER LO LING
+<Multi_key> <t> <L> <l> : "ລ" U0EA5   # LAO LETTER LO LOOT
+<Multi_key> <t> <L> <w> : "ວ" U0EA7   # LAO LETTER WO
+<Multi_key> <t> <L> <asciicircum> <s> : "ສ" U0EAA   # LAO LETTER SO SUNG
+<Multi_key> <t> <L> <asciicircum> <h> : "ຫ" U0EAB   # LAO LETTER HO SUNG
+<Multi_key> <t> <L> <apostrophe> : "ອ" U0EAD   # LAO LETTER O
+<Multi_key> <t> <L> <v> <h> : "ຮ" U0EAE   # LAO LETTER HO TAM
+<Multi_key> <t> <L> <h> <n> : "ໜ" U0EDC   # LAO HO NO (digraph)
+<Multi_key> <t> <L> <h> <m> : "ໝ" U0EDD   # LAO HO MO (digraph)
+
+# Vowels
+
+<Multi_key> <t> <L> <a> <space> : "ະ" U0EB0   # LAO VOWEL SIGN A
+<Multi_key> <t> <L> <a> <Return> : "ັ" U0EB1   # LAO VOWEL SIGN MAI KAN
+<Multi_key> <t> <L> <minus> <a> <space> : "າ" U0EB2   # LAO VOWEL SIGN AA (ā)
+<Multi_key> <t> <L> <a> <m> : "ຳ" U0EB3   # LAO VOWEL SIGN AM
+<Multi_key> <t> <L> <i> <Return> : "ິ" U0EB4   # LAO VOWEL SIGN I
+<Multi_key> <t> <L> <minus> <i> <Return> : "ີ" U0EB5   # LAO VOWEL SIGN II (ī)
+<Multi_key> <t> <L> <u> <apostrophe> <Return> : "ຶ" U0EB6   # LAO VOWEL SIGN Y (ư)
+<Multi_key> <t> <L> <minus> <u> <apostrophe> <Return> : "ື" U0EB7   # LAO VOWEL SIGN YY (ư̄)
+<Multi_key> <t> <L> <u> <Return> : "ຸ" U0EB8   # LAO VOWEL SIGN U
+<Multi_key> <t> <L> <minus> <u> <Return> : "ູ" U0EB9   # LAO VOWEL SIGN UU (ū)
+<Multi_key> <t> <L> <0> <Return> : "຺" U0EBA   # LAO SIGN PALI VIRAMA
+<Multi_key> <t> <L> <o> <Return> : "ົ" U0EBB   # LAO VOWEL SIGN MAI KON
+<Multi_key> <t> <L> <i> <a> : "ຽ" U0EBD   # LAO SEMIVOWEL SIGN NYO
+<Multi_key> <t> <L> <minus> <comma> <o> <Return> : "ໍ" U0ECD   # LAO NIGGAHITA (ǭ)
+
+# Preceding vowels
+
+<Multi_key> <t> <L> <minus> <e> : "ເ" U0EC0   # LAO VOWEL SIGN E (ē)
+<Multi_key> <t> <L> <minus> <a> <e> : "ແ" U0EC1   # LAO VOWEL SIGN EI (ǣ)
+<Multi_key> <t> <L> <minus> <o> : "ໂ" U0EC2   # LAO VOWEL SIGN O (ō)
+<Multi_key> <t> <L> <a> <y> : "ໃ" U0EC3   # LAO VOWEL SIGN AY
+<Multi_key> <t> <L> <a> <i> : "ໄ" U0EC4   # LAO VOWEL SIGN AI
+
+# Tones and other signs
+
+<Multi_key> <t> <L> <underscore> <asciitilde> <Return> : "ຼ" U0EBC   # LAO SEMIVOWEL SIGN LO
+<Multi_key> <t> <L> <bar> <Return> : "່" U0EC8   # LAO TONE MAI EK
+<Multi_key> <t> <L> <2> <Return> : "້" U0EC9   # LAO TONE MAI THO
+<Multi_key> <t> <L> <6> <2> <Return> : "໊" U0ECA   # LAO TONE MAI TI
+<Multi_key> <t> <L> <plus> <Return> : "໋" U0ECB   # LAO TONE MAI CATAWA
+<Multi_key> <t> <L> <asciitilde> <Return> : "໌" U0ECC   # LAO CANCELLATION MARK
+<Multi_key> <t> <L> <asciicircum> <o> <Return> : "ໍ" U0ECD   # LAO NIGGAHITA
+
+# Punctuation
+
+<Multi_key> <t> <L> <period> <period> <period> : "ຯ" U0EAF   # LAO ELLIPSIS
+<Multi_key> <t> <L> <quotedbl> : "ໆ" U0EC6   # LAO KO LA
+
+# Numerals
+
+<Multi_key> <t> <L> <numbersign> <0> : "໐" U0ED0   # LAO DIGIT ZERO
+<Multi_key> <t> <L> <numbersign> <1> : "໑" U0ED1   # LAO DIGIT ONE
+<Multi_key> <t> <L> <numbersign> <2> : "໒" U0ED2   # LAO DIGIT TWO
+<Multi_key> <t> <L> <numbersign> <3> : "໓" U0ED3   # LAO DIGIT THREE
+<Multi_key> <t> <L> <numbersign> <4> : "໔" U0ED4   # LAO DIGIT FOUR
+<Multi_key> <t> <L> <numbersign> <5> : "໕" U0ED5   # LAO DIGIT FIVE
+<Multi_key> <t> <L> <numbersign> <6> : "໖" U0ED6   # LAO DIGIT SIX
+<Multi_key> <t> <L> <numbersign> <7> : "໗" U0ED7   # LAO DIGIT SEVEN
+<Multi_key> <t> <L> <numbersign> <8> : "໘" U0ED8   # LAO DIGIT EIGHT
+<Multi_key> <t> <L> <numbersign> <9> : "໙" U0ED9   # LAO DIGIT NINE
+
+#########################################################
+# (z) Zhuyin/Bopomofo (and Mongolian, Tai Le & Tibetan) #
+#########################################################
 
 <Multi_key> <z> <c> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
 <Multi_key> <z> <c> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
@@ -7147,9 +7514,181 @@ include "%L"
 <Multi_key> <z> <m> <V> <S> : "᠎" U180E   # MONGOLIAN VOWEL SEPARATOR
 <Multi_key> <z> <m> <V> <4> : "᠏" U180F   # MONGOLIAN FREE VARIATION SELECTOR FOUR
 
-#############
-# (Z) Ge'ez #
-#############
+# (t = Tibetan) follows ISO 15919 like other Brahmic scripts, but code didn't fit there
+
+# Consonants
+
+<Multi_key> <z> <t> <k> <space> : "ཀ" U0F40   # TIBETAN LETTER KA
+<Multi_key> <z> <t> <k> <h> : "ཁ" U0F41   # TIBETAN LETTER KHA
+<Multi_key> <z> <t> <g> <space> : "ག" U0F42   # TIBETAN LETTER GA
+<Multi_key> <z> <t> <g> <h> : "གྷ" U0F43   # TIBETAN LETTER GHA
+<Multi_key> <z> <t> <semicolon> <n> : "ང" U0F44   # TIBETAN LETTER NGA
+<Multi_key> <z> <t> <c> <space> : "ཅ" U0F45   # TIBETAN LETTER CA
+<Multi_key> <z> <t> <c> <h> : "ཆ" U0F46   # TIBETAN LETTER CHA
+<Multi_key> <z> <t> <j> <space> : "ཇ" U0F47   # TIBETAN LETTER JA
+<Multi_key> <z> <t> <asciitilde> <n> : "ཉ" U0F49   # TIBETAN LETTER NYA
+<Multi_key> <z> <t> <period> <t> <space> : "ཊ" U0F4A   # TIBETAN LETTER TTA
+<Multi_key> <z> <t> <period> <t> <h> : "ཋ" U0F4B   # TIBETAN LETTER TTHA
+<Multi_key> <z> <t> <period> <d> <space> : "ཌ" U0F4C   # TIBETAN LETTER DDA
+<Multi_key> <z> <t> <period> <d> <h> : "ཌྷ" U0F4D   # TIBETAN LETTER DDHA
+<Multi_key> <z> <t> <period> <n> : "ཎ" U0F4E   # TIBETAN LETTER NNA
+<Multi_key> <z> <t> <t> <space> : "ཏ" U0F4F   # TIBETAN LETTER TA
+<Multi_key> <z> <t> <t> <h> : "ཐ" U0F50   # TIBETAN LETTER THA
+<Multi_key> <z> <t> <d> <space> : "ད" U0F51   # TIBETAN LETTER DA
+<Multi_key> <z> <t> <d> <h> : "དྷ" U0F52   # TIBETAN LETTER DHA
+<Multi_key> <z> <t> <n> : "ན" U0F53   # TIBETAN LETTER NA
+<Multi_key> <z> <t> <p> <space> : "པ" U0F54   # TIBETAN LETTER PA
+<Multi_key> <z> <t> <p> <h> : "ཕ" U0F55   # TIBETAN LETTER PHA
+<Multi_key> <z> <t> <b> <space> : "བ" U0F56   # TIBETAN LETTER BA
+<Multi_key> <z> <t> <b> <h> : "བྷ" U0F57   # TIBETAN LETTER BHA
+<Multi_key> <z> <t> <m> : "མ" U0F58   # TIBETAN LETTER MA
+<Multi_key> <z> <t> <t> <s> <space> : "ཙ" U0F59   # TIBETAN LETTER TSA
+<Multi_key> <z> <t> <t> <s> <h> : "ཚ" U0F5A   # TIBETAN LETTER TSHA
+<Multi_key> <z> <t> <d> <z> <space> : "ཛ" U0F5B   # TIBETAN LETTER DZA
+<Multi_key> <z> <t> <d> <z> <h> : "ཛྷ" U0F5C   # TIBETAN LETTER DZHA
+<Multi_key> <z> <t> <v> : "ཝ" U0F5D   # TIBETAN LETTER WA
+<Multi_key> <z> <t> <w> : "ཝ" U0F5D   # TIBETAN LETTER WA
+<Multi_key> <z> <t> <z> <h> : "ཞ" U0F5E   # TIBETAN LETTER ZHA
+<Multi_key> <z> <t> <z> <space> : "ཟ" U0F5F   # TIBETAN LETTER ZA
+<Multi_key> <z> <t> <apostrophe> : "འ" U0F60   # TIBETAN LETTER -A
+<Multi_key> <z> <t> <y> : "ཡ" U0F61   # TIBETAN LETTER YA
+<Multi_key> <z> <t> <r> : "ར" U0F62   # TIBETAN LETTER RA
+<Multi_key> <z> <t> <l> : "ལ" U0F63   # TIBETAN LETTER LA
+<Multi_key> <z> <t> <semicolon> <s> : "ཤ" U0F64   # TIBETAN LETTER SHA
+<Multi_key> <z> <t> <period> <s> : "ཥ" U0F65   # TIBETAN LETTER SSA
+<Multi_key> <z> <t> <s> : "ས" U0F66   # TIBETAN LETTER SA
+<Multi_key> <z> <t> <h> : "ཧ" U0F67   # TIBETAN LETTER HA
+<Multi_key> <z> <t> <a> <space> : "ཨ" U0F68   # TIBETAN LETTER A
+<Multi_key> <z> <t> <k> <s> <s> : "ཀྵ" U0F69   # TIBETAN LETTER KSSA
+
+# Subjoined consonants
+
+<Multi_key> <z> <t> <underscore> <k> <Return> : "ྐ" U0F90   # TIBETAN SUBJOINED LETTER KA
+<Multi_key> <z> <t> <underscore> <k> <h> <Return> : "ྑ" U0F91   # TIBETAN SUBJOINED LETTER KHA
+<Multi_key> <z> <t> <underscore> <g> <Return> : "ྒ" U0F92   # TIBETAN SUBJOINED LETTER GA
+<Multi_key> <z> <t> <underscore> <g> <h> <Return> : "ྒྷ" U0F93   # TIBETAN SUBJOINED LETTER GHA
+<Multi_key> <z> <t> <underscore> <semicolon> <n> <Return> : "ྔ" U0F94   # TIBETAN SUBJOINED LETTER NGA
+<Multi_key> <z> <t> <underscore> <c> <Return> : "ྕ" U0F95   # TIBETAN SUBJOINED LETTER CA
+<Multi_key> <z> <t> <underscore> <c> <h> <Return> : "ྖ" U0F96   # TIBETAN SUBJOINED LETTER CHA
+<Multi_key> <z> <t> <underscore> <j> <Return> : "ྗ" U0F97   # TIBETAN SUBJOINED LETTER JA
+<Multi_key> <z> <t> <underscore> <asciitilde> <n> <Return> : "ྙ" U0F99   # TIBETAN SUBJOINED LETTER NYA
+<Multi_key> <z> <t> <underscore> <period> <t> <Return> : "ྚ" U0F9A   # TIBETAN SUBJOINED LETTER TTA
+<Multi_key> <z> <t> <underscore> <period> <t> <h> <Return> : "ྛ" U0F9B   # TIBETAN SUBJOINED LETTER TTHA
+<Multi_key> <z> <t> <underscore> <period> <d> <Return> : "ྜ" U0F9C   # TIBETAN SUBJOINED LETTER DDA
+<Multi_key> <z> <t> <underscore> <period> <d> <h> <Return> : "ྜྷ" U0F9D   # TIBETAN SUBJOINED LETTER DDHA
+<Multi_key> <z> <t> <underscore> <period> <n> <Return> : "ྞ" U0F9E   # TIBETAN SUBJOINED LETTER NNA
+<Multi_key> <z> <t> <underscore> <t> <Return> : "ྟ" U0F9F   # TIBETAN SUBJOINED LETTER TA
+<Multi_key> <z> <t> <underscore> <t> <h> <Return> : "ྠ" U0FA0   # TIBETAN SUBJOINED LETTER THA
+<Multi_key> <z> <t> <underscore> <d> <Return> : "ྡ" U0FA1   # TIBETAN SUBJOINED LETTER DA
+<Multi_key> <z> <t> <underscore> <d> <h> <Return> : "ྡྷ" U0FA2   # TIBETAN SUBJOINED LETTER DHA
+<Multi_key> <z> <t> <underscore> <n> <Return> : "ྣ" U0FA3   # TIBETAN SUBJOINED LETTER NA
+<Multi_key> <z> <t> <underscore> <p> <Return> : "ྤ" U0FA4   # TIBETAN SUBJOINED LETTER PA
+<Multi_key> <z> <t> <underscore> <p> <h> <Return> : "ྥ" U0FA5   # TIBETAN SUBJOINED LETTER PHA
+<Multi_key> <z> <t> <underscore> <b> <Return> : "ྦ" U0FA6   # TIBETAN SUBJOINED LETTER BA
+<Multi_key> <z> <t> <underscore> <b> <h> <Return> : "ྦྷ" U0FA7   # TIBETAN SUBJOINED LETTER BHA
+<Multi_key> <z> <t> <underscore> <m> <Return> : "ྨ" U0FA8   # TIBETAN SUBJOINED LETTER MA
+<Multi_key> <z> <t> <underscore> <t> <s> <Return> : "ྩ" U0FA9   # TIBETAN SUBJOINED LETTER TSA
+<Multi_key> <z> <t> <underscore> <t> <s> <h> <Return> : "ྪ" U0FAA   # TIBETAN SUBJOINED LETTER TSHA
+<Multi_key> <z> <t> <underscore> <d> <z> <Return> : "ྫ" U0FAB   # TIBETAN SUBJOINED LETTER DZA
+<Multi_key> <z> <t> <underscore> <d> <z> <h> <Return> : "ྫྷ" U0FAC   # TIBETAN SUBJOINED LETTER DZHA
+<Multi_key> <z> <t> <underscore> <v> <Return> : "ྭ" U0FAD   # TIBETAN SUBJOINED LETTER WA
+<Multi_key> <z> <t> <underscore> <w> <Return> : "ྭ" U0FAD   # TIBETAN SUBJOINED LETTER WA
+<Multi_key> <z> <t> <underscore> <z> <h> <Return> : "ྮ" U0FAE   # TIBETAN SUBJOINED LETTER ZHA
+<Multi_key> <z> <t> <underscore> <z> <Return> : "ྯ" U0FAF   # TIBETAN SUBJOINED LETTER ZA
+<Multi_key> <z> <t> <underscore> <apostrophe> <Return> : "ྰ" U0FB0   # TIBETAN SUBJOINED LETTER -A
+<Multi_key> <z> <t> <underscore> <y> <Return> : "ྱ" U0FB1   # TIBETAN SUBJOINED LETTER YA
+<Multi_key> <z> <t> <underscore> <r> <Return> : "ྲ" U0FB2   # TIBETAN SUBJOINED LETTER RA
+<Multi_key> <z> <t> <underscore> <l> <Return> : "ླ" U0FB3   # TIBETAN SUBJOINED LETTER LA
+<Multi_key> <z> <t> <underscore> <semicolon> <s> <Return> : "ྴ" U0FB4   # TIBETAN SUBJOINED LETTER SHA
+<Multi_key> <z> <t> <underscore> <period> <s> <Return> : "ྵ" U0FB5   # TIBETAN SUBJOINED LETTER SSA
+<Multi_key> <z> <t> <underscore> <s> <Return> : "ྶ" U0FB6   # TIBETAN SUBJOINED LETTER SA
+<Multi_key> <z> <t> <underscore> <h> <Return> : "ྷ" U0FB7   # TIBETAN SUBJOINED LETTER HA
+<Multi_key> <z> <t> <underscore> <a> <Return> : "ྸ" U0FB8   # TIBETAN SUBJOINED LETTER A
+<Multi_key> <z> <t> <underscore> <k> <s> <s> <Return> : "ྐྵ" U0FB9   # TIBETAN SUBJOINED LETTER KSSA
+
+# Dependent vowels
+
+<Multi_key> <z> <t> <a> <a> <Return> : "ཱ" U0F71   # TIBETAN VOWEL SIGN AA
+<Multi_key> <z> <t> <i> <Return> : "ི" U0F72   # TIBETAN VOWEL SIGN I
+<Multi_key> <z> <t> <i> <i> <Return> : "ཱི" U0F73   # TIBETAN VOWEL SIGN II
+<Multi_key> <z> <t> <u> <Return> : "ུ" U0F74   # TIBETAN VOWEL SIGN U
+<Multi_key> <z> <t> <u> <u> <Return> : "ཱུ" U0F75   # TIBETAN VOWEL SIGN UU
+<Multi_key> <z> <t> <comma> <r> <Return> : "ྲྀ" U0F76   # TIBETAN VOWEL SIGN VOCALIC R
+<Multi_key> <z> <t> <comma> <r> <r> <Return> : "ཷ" U0F77   # TIBETAN VOWEL SIGN VOCALIC RR
+<Multi_key> <z> <t> <comma> <l> <Return> : "ླྀ" U0F78   # TIBETAN VOWEL SIGN VOCALIC L
+<Multi_key> <z> <t> <comma> <l> <l> <Return> : "ཹ" U0F79   # TIBETAN VOWEL SIGN VOCALIC LL
+<Multi_key> <z> <t> <e> <Return> : "ེ" U0F7A   # TIBETAN VOWEL SIGN E
+<Multi_key> <z> <t> <e> <e> <Return> : "ཻ" U0F7B   # TIBETAN VOWEL SIGN EE
+<Multi_key> <z> <t> <o> <Return> : "ོ" U0F7C   # TIBETAN VOWEL SIGN O
+<Multi_key> <z> <t> <o> <o> <Return> : "ཽ" U0F7D   # TIBETAN VOWEL SIGN OO
+<Multi_key> <z> <t> <0> <Return> : "྄" U0F84   # TIBETAN MARK HALANTA (VIRAMA)
+
+# Other signs
+
+<Multi_key> <z> <t> <period> <Return> : "ཾ" U0F7E   # TIBETAN SIGN RJES SU NGA RO (ANUSVARA)
+<Multi_key> <z> <t> <colon> <Return> : "ཿ" U0F7F   # TIBETAN SIGN RNAM BCAD (VISARGA)
+<Multi_key> <z> <t> <period> <parenright> <Return> : "ྃ" U0F83   # TIBETAN SIGN SNA LDAN (CANDRABINDU)
+<Multi_key> <z> <t> <comma> <Return> : "྄" U0F84   # TIBETAN MARK HALANTA (VIRAMA)
+
+<Multi_key> <z> <t> <2> : "྅" U0F85   # TIBETAN MARK PALUTA (AVAGRAHA)
+<Multi_key> <z> <t> <o> <m> : "ༀ" U0F00   # TIBETAN SYLLABLE OM
+
+# Numerals
+
+<Multi_key> <z> <t> <numbersign> <0> : "༠" U0F20   # TIBETAN DIGIT ZERO
+<Multi_key> <z> <t> <numbersign> <1> : "༡" U0F21   # TIBETAN DIGIT ONE
+<Multi_key> <z> <t> <numbersign> <2> : "༢" U0F22   # TIBETAN DIGIT TWO
+<Multi_key> <z> <t> <numbersign> <3> : "༣" U0F23   # TIBETAN DIGIT THREE
+<Multi_key> <z> <t> <numbersign> <4> : "༤" U0F24   # TIBETAN DIGIT FOUR
+<Multi_key> <z> <t> <numbersign> <5> : "༥" U0F25   # TIBETAN DIGIT FIVE
+<Multi_key> <z> <t> <numbersign> <6> : "༦" U0F26   # TIBETAN DIGIT SIX
+<Multi_key> <z> <t> <numbersign> <7> : "༧" U0F27   # TIBETAN DIGIT SEVEN
+<Multi_key> <z> <t> <numbersign> <8> : "༨" U0F28   # TIBETAN DIGIT EIGHT
+<Multi_key> <z> <t> <numbersign> <9> : "༩" U0F29   # TIBETAN DIGIT NINE
+
+# (T = Tai Le)
+
+<Multi_key> <z> <T> <k> <space> : "ᥐ" U1950   # TAI LE LETTER KA
+<Multi_key> <z> <T> <x> : "ᥑ" U1951   # TAI LE LETTER XA
+<Multi_key> <z> <T> <n> <g> : "ᥒ" U1952   # TAI LE LETTER NGA
+<Multi_key> <z> <T> <t> <s> <space> : "ᥓ" U1953   # TAI LE LETTER TSA
+<Multi_key> <z> <T> <s> : "ᥔ" U1954   # TAI LE LETTER SA
+<Multi_key> <z> <T> <y> : "ᥕ" U1955   # TAI LE LETTER YA
+<Multi_key> <z> <T> <t> <space> : "ᥖ" U1956   # TAI LE LETTER TA
+<Multi_key> <z> <T> <t> <h> : "ᥗ" U1957   # TAI LE LETTER THA
+<Multi_key> <z> <T> <l> : "ᥘ" U1958   # TAI LE LETTER LA
+<Multi_key> <z> <T> <p> <space> : "ᥙ" U1959   # TAI LE LETTER PA
+<Multi_key> <z> <T> <p> <h> : "ᥚ" U195A   # TAI LE LETTER PHA
+<Multi_key> <z> <T> <m> : "ᥛ" U195B   # TAI LE LETTER MA
+<Multi_key> <z> <T> <f> : "ᥜ" U195C   # TAI LE LETTER FA
+<Multi_key> <z> <T> <v> : "ᥝ" U195D   # TAI LE LETTER VA
+<Multi_key> <z> <T> <h> : "ᥞ" U195E   # TAI LE LETTER HA
+<Multi_key> <z> <T> <q> : "ᥟ" U195F   # TAI LE LETTER QA
+<Multi_key> <z> <T> <k> <h> : "ᥠ" U1960   # TAI LE LETTER KHA
+<Multi_key> <z> <T> <t> <s> <h> : "ᥡ" U1961   # TAI LE LETTER TSHA
+<Multi_key> <z> <T> <n> <space> : "ᥢ" U1962   # TAI LE LETTER NA
+
+<Multi_key> <z> <T> <a> <space> : "ᥣ" U1963   # TAI LE LETTER A
+<Multi_key> <z> <T> <i> : "ᥤ" U1964   # TAI LE LETTER I
+<Multi_key> <z> <T> <e> <e> : "ᥥ" U1965   # TAI LE LETTER EE
+<Multi_key> <z> <T> <e> <h> : "ᥦ" U1966   # TAI LE LETTER EH
+<Multi_key> <z> <T> <u> <space> : "ᥧ" U1967   # TAI LE LETTER U
+<Multi_key> <z> <T> <o> <o> : "ᥨ" U1968   # TAI LE LETTER OO
+<Multi_key> <z> <T> <o> <space> : "ᥩ" U1969   # TAI LE LETTER O
+<Multi_key> <z> <T> <u> <e> : "ᥪ" U196A   # TAI LE LETTER UE
+<Multi_key> <z> <T> <e> <space> : "ᥫ" U196B   # TAI LE LETTER E
+<Multi_key> <z> <T> <a> <u> <e> : "ᥬ" U196C   # TAI LE LETTER AUE
+<Multi_key> <z> <T> <a> <i> : "ᥭ" U196D   # TAI LE LETTER AI
+
+<Multi_key> <z> <T> <at> <quotedbl> : "ᥰ" U1970   # TAI LE LETTER TONE-2 (◌̈)
+<Multi_key> <z> <T> <at> <v> : "ᥱ" U1971   # TAI LE LETTER TONE-3 (◌̌)
+<Multi_key> <z> <T> <at> <grave> : "ᥲ" U1972   # TAI LE LETTER TONE-4 (◌̀)
+<Multi_key> <z> <T> <at> <period> : "ᥳ" U1973   # TAI LE LETTER TONE-5 (◌̇)
+<Multi_key> <z> <T> <at> <apostrophe> : "ᥴ" U1974   # TAI LE LETTER TONE-6 (◌́)
+
+#######################
+# (Z) Ge'ez (and NKo) #
+#######################
 
 <Multi_key> <Z> <c> <h> <a> <space> : "ሀ" U1200   # ETHIOPIC SYLLABLE HA
 <Multi_key> <Z> <c> <h> <u> : "ሁ" U1201   # ETHIOPIC SYLLABLE HU
@@ -7512,6 +8051,64 @@ include "%L"
 <Multi_key> <Z> <numbersign> <9> <0> : "፺" U137A   # ETHIOPIC NUMBER NINETY
 <Multi_key> <Z> <numbersign> <1> <0> <0> <Return> : "፻" U137B   # ETHIOPIC NUMBER HUNDRED
 <Multi_key> <Z> <numbersign> <1> <0> <0> <0> <0> : "፼" U137C   # ETHIOPIC NUMBER TEN THOUSAND
+
+# (n = NKo)
+
+<Multi_key> <Z> <n> <a> : "ߊ" U07CA   # NKO LETTER A
+<Multi_key> <Z> <n> <e> <e> : "ߋ" U07CB   # NKO LETTER EE
+<Multi_key> <Z> <n> <i> : "ߌ" U07CC   # NKO LETTER I
+<Multi_key> <Z> <n> <e> <space> : "ߍ" U07CD   # NKO LETTER E
+<Multi_key> <Z> <n> <u> : "ߎ" U07CE   # NKO LETTER U
+<Multi_key> <Z> <n> <o> <o> : "ߏ" U07CF   # NKO LETTER OO
+<Multi_key> <Z> <n> <o> <space> : "ߐ" U07D0   # NKO LETTER O
+<Multi_key> <Z> <n> <0> <Return> : "ߑ" U07D1   # NKO LETTER DAGBASINNA
+
+<Multi_key> <Z> <n> <n> <g> : "ߒ" U07D2   # NKO LETTER N
+<Multi_key> <Z> <n> <b> : "ߓ" U07D3   # NKO LETTER BA
+<Multi_key> <Z> <n> <p> : "ߔ" U07D4   # NKO LETTER PA
+<Multi_key> <Z> <n> <t> : "ߕ" U07D5   # NKO LETTER TA
+<Multi_key> <Z> <n> <j> : "ߖ" U07D6   # NKO LETTER JA
+<Multi_key> <Z> <n> <c> <h> : "ߗ" U07D7   # NKO LETTER CHA
+<Multi_key> <Z> <n> <d> : "ߘ" U07D8   # NKO LETTER DA
+<Multi_key> <Z> <n> <r> <space> : "ߙ" U07D9   # NKO LETTER RA
+<Multi_key> <Z> <n> <r> <r> : "ߚ" U07DA   # NKO LETTER RRA
+<Multi_key> <Z> <n> <s> : "ߛ" U07DB   # NKO LETTER SA
+<Multi_key> <Z> <n> <g> <b> : "ߜ" U07DC   # NKO LETTER GBA
+<Multi_key> <Z> <n> <f> : "ߝ" U07DD   # NKO LETTER FA
+<Multi_key> <Z> <n> <k> : "ߞ" U07DE   # NKO LETTER KA
+<Multi_key> <Z> <n> <l> : "ߟ" U07DF   # NKO LETTER LA
+<Multi_key> <Z> <n> <m> : "ߡ" U07E1   # NKO LETTER MA
+<Multi_key> <Z> <n> <n> <y> : "ߢ" U07E2   # NKO LETTER NYA
+<Multi_key> <Z> <n> <n> <space> : "ߣ" U07E3   # NKO LETTER NA
+<Multi_key> <Z> <n> <h> : "ߤ" U07E4   # NKO LETTER HA
+<Multi_key> <Z> <n> <w> : "ߥ" U07E5   # NKO LETTER WA
+<Multi_key> <Z> <n> <y> : "ߦ" U07E6   # NKO LETTER YA
+
+<Multi_key> <Z> <n> <minus> <Return> : "߫" U07EB   # NKO COMBINING SHORT HIGH TONE
+<Multi_key> <Z> <n> <asciitilde> <Return> : "߬" U07EC   # NKO COMBINING SHORT LOW TONE
+<Multi_key> <Z> <n> <period> <Return> : "߭" U07ED   # NKO COMBINING SHORT RISING TONE
+<Multi_key> <Z> <n> <asciicircum> <Return> : "߮" U07EE   # NKO COMBINING LONG DESCENDING TONE
+<Multi_key> <Z> <n> <greater> <Return> : "߯" U07EF   # NKO COMBINING LONG HIGH TONE
+<Multi_key> <Z> <n> <minus> <asciitilde> <Return> : "߰" U07F0   # NKO COMBINING LONG LOW TONE
+<Multi_key> <Z> <n> <less> <Return> : "߱" U07F1   # NKO COMBINING LONG RISING TONE
+<Multi_key> <Z> <n> <underscore> <period> <Return> : "߲" U07F2   # NKO COMBINING NASALIZATION MARK
+<Multi_key> <Z> <n> <quotedbl> <Return> : "߳" U07F3   # NKO COMBINING DOUBLE DOT ABOVE
+
+<Multi_key> <Z> <n> <apostrophe> : "ߴ" U07F4   # NKO HIGH TONE APOSTROPHE
+<Multi_key> <Z> <n> <grave> : "ߵ" U07F5   # NKO LOW TONE APOSTROPHE
+<Multi_key> <Z> <n> <comma> : "߸" U07F8   # NKO COMMA
+<Multi_key> <Z> <n> <exclam> : "߹" U07F9   # NKO EXCLAMATION MARK
+
+<Multi_key> <Z> <n> <numbersign> <0> : "߀" U07C0   # NKO DIGIT ZERO
+<Multi_key> <Z> <n> <numbersign> <1> : "߁" U07C1   # NKO DIGIT ONE
+<Multi_key> <Z> <n> <numbersign> <2> : "߂" U07C2   # NKO DIGIT TWO
+<Multi_key> <Z> <n> <numbersign> <3> : "߃" U07C3   # NKO DIGIT THREE
+<Multi_key> <Z> <n> <numbersign> <4> : "߄" U07C4   # NKO DIGIT FOUR
+<Multi_key> <Z> <n> <numbersign> <5> : "߅" U07C5   # NKO DIGIT FIVE
+<Multi_key> <Z> <n> <numbersign> <6> : "߆" U07C6   # NKO DIGIT SIX
+<Multi_key> <Z> <n> <numbersign> <7> : "߇" U07C7   # NKO DIGIT SEVEN
+<Multi_key> <Z> <n> <numbersign> <8> : "߈" U07C8   # NKO DIGIT EIGHT
+<Multi_key> <Z> <n> <numbersign> <9> : "߉" U07C9   # NKO DIGIT NINE
 
 
 ##############
@@ -9468,6 +10065,7 @@ include "%L"
 <Multi_key> <at> <numbersign>        : "⌘" U2318          # PLACE OF INTEREST SIGN (COMMAND KEY)
 
 # Alphanumerics
+
 <Multi_key> <at> <bracketleft> <bracketright> <Return>     : "⃣" U20E3   # COMBINING ENCLOSING KEYCAP
 <Multi_key> <at> <bracketleft> <numbersign> <bracketright> : "#️⃣" U0023 UFE0F U20E3   # NUMBER SIGN EMOJI COMBINING ENCLOSING KEYCAP
 <Multi_key> <at> <bracketleft> <asterisk> <bracketright>   : "*️⃣" U002A UFE0F U20E3   # ASTERISK EMOJI COMBINING ENCLOSING KEYCAP
