@@ -9,13 +9,13 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (199)
+### Common script characters (200)
 * **Spaces** (15): NBSP MMSP ZWSP etc
 * **Dashes** (12): – — ⁓ ⸻ etc
 * **Brackets** (20): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
 * **Currency symbols** (20): ₱ ₿ ₪ etc
-* **Combining diacritics** (111): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
+* **Combining diacritics** (112): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 
 ### Latin script characters (1878)
