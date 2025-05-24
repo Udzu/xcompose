@@ -130,6 +130,7 @@ include "%L"
 <Multi_key> <comma> <greater> <Return>                 : "̕"  U0315   # COMBINING COMMA ABOVE RIGHT
 <Multi_key> <notsign> <Return>                         : "̚"  U031A   # COMBINING LEFT ANGLE ABOVE
 <Multi_key> <Multi_key> <minus> <comma> <Return>       : "̚"  U031A   # COMBINING LEFT ANGLE ABOVE
+<Multi_key> <plus> <Return>                            : "̛"  U031B   # COMBINING HORN
 <Multi_key> <exclam> <Return>                          : "̣"  U0323   # COMBINING DOT BELOW
 <Multi_key> <comma> <Return>                           : "̧"  U0327   # COMBINING CEDILLA
 <Multi_key> <semicolon> <Return>                       : "̨"  U0328   # COMBINING OGONEK
@@ -139,26 +140,31 @@ include "%L"
 <Multi_key> <asciitilde> <slash> <Return>              : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <slash> <asciitilde> <Return>              : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <asciicircum> <asciitilde> <asciitilde> <Return> : "͌" U034C   # COMBINING ALMOST EQUAL TO ABOVE
-<Multi_key> <asciicircum> <greater> <Return>           : "͐" U0350   # COMBINING RIGHT ARROWHEAD ABOVE
+<Multi_key> <asciicircum> <greater> <Return>           : "͐"  U0350   # COMBINING RIGHT ARROWHEAD ABOVE
 <Multi_key> <c> <Return>                               : "͑"  U0351   # COMBINING LEFT HALF RING ABOVE
 <Multi_key> <parenleft> <period> <Return>              : "͒" U0352   # COMBINING FERMATA
 <Multi_key> <c> <less> <Return>                        : "͗"  U0357   # COMBINING RIGHT HALF RING ABOVE (conflicts with č, use vc)
 <Multi_key> <asciicircum> <greater> <period> <Return>  : "͘"  U0358   # COMBINING DOT ABOVE RIGHT
 <Multi_key> <parenright> <Return>                      : "͝"  U035D   # COMBINING DOUBLE BREVE  
 <Multi_key> <parenleft> <Return>                       : "͡"  U0361   # COMBINING DOUBLE INVERTED BREVE
-<Multi_key> <asciicircum> <asciicircum> <Return>       : "᪰" U1AB0   # COMBINING DOUBLED CIRCUMFLEX ACCENT
-<Multi_key> <parenleft> <space> <parenright> <Return>  : "᪻" U1ABB   # COMBINING PARENTHESES ABOVE (conflicts with ˘, use ␣()
-<Multi_key> <period> <grave> <period> <Return>         : "᷀" U1DC0   # COMBINING DOTTED GRAVE ACCENT
-<Multi_key> <period> <apostrophe> <period> <Return>    : "᷁" U1DC1   # COMBINING DOTTED ACUTE ACCENT
-<Multi_key> <underscore> <apostrophe> <space> <Return> : "᷄" U1DC4   # COMBINING MACRON-ACUTE (conflicts with ⍘, use '_[Return] defined below)
-<Multi_key> <grave> <underscore> <space> <Return>      : "᷅" U1DC5   # COMBINING GRAVE-MACRON
-<Multi_key> <underscore> <grave> <space> <Return>      : "᷆" U1DC6   # COMBINING MACRON-GRAVE
-<Multi_key> <apostrophe> <underscore> <space> <Return> : "᷇" U1DC7   # COMBINING ACUTE-MACRON
-<Multi_key> <grave> <apostrophe> <grave> <Return>      : "᷈" U1DC8   # COMBINING GRAVE-ACUTE-GRAVE
-<Multi_key> <apostrophe> <grave> <apostrophe> <Return> : "᷉" U1DC9   # COMBINING ACUTE-GRAVE-ACUTE
-<Multi_key> <u> <underscore> <space> <Return>          : "᷋" U1DCB   # COMBINING BREVE-MACRON (conflicts with ū, use -u or u-)
-<Multi_key> <underscore> <u> <space> <Return>          : "᷌" U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
+<Multi_key> <asciicircum> <asciicircum> <Return>       : "᪰"  U1AB0   # COMBINING DOUBLED CIRCUMFLEX ACCENT
+<Multi_key> <asciicircum> <quotedbl> <o> <Return>      : "᪱"  U1AB1   # COMBINING DIAERESIS-RING
+<Multi_key> <Multi_key> <8> <8> <Return>               : "᪲"  U1AB2   # COMBINING INFINITY
+<Multi_key> <asciicircum> <v> <Return>                 : "᪳"  U1AB3   # COMBINING DOWNWARDS ARROW
+<Multi_key> <parenleft> <space> <parenright> <Return>  : "᪻"  U1ABB   # COMBINING PARENTHESES ABOVE (conflicts with ˘, use ␣()
+<Multi_key> <period> <grave> <period> <Return>         : "᷀"  U1DC0   # COMBINING DOTTED GRAVE ACCENT
+<Multi_key> <period> <apostrophe> <period> <Return>    : "᷁"  U1DC1   # COMBINING DOTTED ACUTE ACCENT
+<Multi_key> <underscore> <apostrophe> <space> <Return> : "᷄"  U1DC4   # COMBINING MACRON-ACUTE (conflicts with ⍘, use '_[Return] defined below)
+<Multi_key> <grave> <underscore> <space> <Return>      : "᷅"  U1DC5   # COMBINING GRAVE-MACRON
+<Multi_key> <underscore> <grave> <space> <Return>      : "᷆"  U1DC6   # COMBINING MACRON-GRAVE
+<Multi_key> <apostrophe> <underscore> <space> <Return> : "᷇"  U1DC7   # COMBINING ACUTE-MACRON
+<Multi_key> <grave> <apostrophe> <grave> <Return>      : "᷈"  U1DC8   # COMBINING GRAVE-ACUTE-GRAVE
+<Multi_key> <apostrophe> <grave> <apostrophe> <Return> : "᷉"  U1DC9   # COMBINING ACUTE-GRAVE-ACUTE
+<Multi_key> <u> <underscore> <space> <Return>          : "᷋"  U1DCB   # COMBINING BREVE-MACRON (conflicts with ū, use -u or u-)
+<Multi_key> <underscore> <u> <space> <Return>          : "᷌"  U1DCC   # COMBINING MACRON-BREVE (conflicts with ū, use -u or u-)
+<Multi_key> <T> <v> <Return>                           : "᷵"  U1DF5   # COMBINING UP TACK ABOVE
 <Multi_key> <asciicircum> <less> <period> <Return>     : "᷸"  U1DF8   # COMBINING DOT ABOVE LEFT
+<Multi_key> <less> <Return>                            : "᷾"  U1DFE   # COMBINING LEFT ARROWHEAD ABOVE
 <Multi_key> <asterisk> <Return>                        : "⃰"  U20F0   # COMBINING ASTERISK ABOVE
 
 <Multi_key> <underscore> <grave> <Return>              : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
@@ -206,10 +212,16 @@ include "%L"
 <Multi_key> <underscore> <asterisk> <Return>           : "͙"  U0359   # COMBINING ASTERISK BELOW
 <Multi_key> <underscore> <o> <o> <Return>              : "͚"  U035A   # COMBINING DOUBLE RING BELOW (conflicts with ō, use -o)
 <Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
-<Multi_key> <underscore> <underscore> <parenleft> <space> <parenright> <Return> : "᪽" U1ABD   # COMBINING PARENTHESES BELOW (conflicts with ¯, use -^)
-<Multi_key> <underscore> <underscore> <parenleft> <parenright> <Return> : "᪽" U1ABD   # COMBINING PARENTHESES BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <x> <x> <Return> : "᪵"  U1AB5   # COMBINING X-X BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <parenleft> <space> <parenright> <Return> : "᪽"  U1ABD   # COMBINING PARENTHESES BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <parenleft> <parenright> <Return> : "᪽"  U1ABD   # COMBINING PARENTHESES BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <W> <v> <Return>              : "ᫀ"  U1AC0   # COMBINING LATIN SMALL LETTER TURNED W BELOW
 <Multi_key> <asciicircum> <apostrophe> <apostrophe> <apostrophe> <Return> : "᷻" U1DFB   # COMBINING DELETION MARK
-<Multi_key> <underscore> <underscore> <parenleft> <Return> : "᷼" U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <asciitilde> <asciitilde> <Return> : "᷽"  U1DFD   # COMBINING ALMOST EQUAL TO BELOW
+<Multi_key> <underscore> <underscore> <parenleft> <Return> : "᷼"  U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <greater> <v> <Return> : "᷿"  U1DFF   # COMBINING RIGHT ARROWHEAD AND DOWN ARROWHEAD BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <less> <minus> <Return> : "⃮"  U20EE   # COMBINING LEFT ARROW BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <minus> <greater> <Return> : "⃯"  U20EF   # COMBINING RIGHT ARROW BELOW (conflicts with ¯, use -^)
 
 <Multi_key> <minus> <asciitilde> <Return>              : "̴"  U0334   # COMBINING TILDE OVERLAY
 <Multi_key> <minus> <minus> <Return>                   : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
