@@ -549,8 +549,10 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <underscore> <N> : "ᶰ " U1DB0   # MODIFIER LETTER SMALL CAPITAL N
 <Multi_key> <asciicircum> <underscore> <underscore> <U> : "ᶸ"  U1DB8   # MODIFIER LETTER SMALL CAPITAL U
 
-<Multi_key> <asciicircum> <underscore> <colon>  : "˸"  U02F8    # MODIFIER LETTER RAISED COLON
-<Multi_key> <asciicircum> <underscore> <exclam> : "ꜝ"  UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
+<Multi_key> <asciicircum> <underscore> <colon>   : "˸"  U02F8    # MODIFIER LETTER RAISED COLON
+<Multi_key> <asciicircum> <underscore> <exclam>  : "ꜝ"  UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
+<Multi_key> <asciicircum> <underscore> <less>    : "˂"  U02C2    # MODIFIER LETTER LEFT ARROWHEAD
+<Multi_key> <asciicircum> <underscore> <greater> : "˃"  U02C3    # MODIFIER LETTER RIGHT ARROWHEAD
 
 # subscripts: _x (or _x_ if there's a clash with a combining character)
 
@@ -7059,9 +7061,9 @@ include "%L"
 <Multi_key> <o> <i> <r> <quotedbl> <i> : "ᛇ" U16C7   # RUNIC LETTER IWAZ EOH
 
 
-##############################
-# (t) Thai (and Khmer & Lao) #
-##############################
+########################################
+# (t) Thai (and Baybayin, Khmer & Lao) #
+########################################
 
 # (based on ISO 11940)
 
@@ -7354,6 +7356,35 @@ include "%L"
 <Multi_key> <t> <L> <numbersign> <7> : "໗" U0ED7   # LAO DIGIT SEVEN
 <Multi_key> <t> <L> <numbersign> <8> : "໘" U0ED8   # LAO DIGIT EIGHT
 <Multi_key> <t> <L> <numbersign> <9> : "໙" U0ED9   # LAO DIGIT NINE
+
+# (t = Tagalog/Baybayin)
+
+<Multi_key> <t> <t> <k> : "ᜃ" U1703   # TAGALOG LETTER KA
+<Multi_key> <t> <t> <g> : "ᜄ" U1704   # TAGALOG LETTER GA
+<Multi_key> <t> <t> <semicolon> <n> : "ᜅ" U1705   # TAGALOG LETTER NGA
+<Multi_key> <t> <t> <t> : "ᜆ" U1706   # TAGALOG LETTER TA
+<Multi_key> <t> <t> <d> : "ᜇ" U1707   # TAGALOG LETTER DA
+<Multi_key> <t> <t> <n> : "ᜈ" U1708   # TAGALOG LETTER NA
+<Multi_key> <t> <t> <p> : "ᜉ" U1709   # TAGALOG LETTER PA
+<Multi_key> <t> <t> <b> : "ᜊ" U170A   # TAGALOG LETTER BA
+<Multi_key> <t> <t> <m> : "ᜋ" U170B   # TAGALOG LETTER MA
+<Multi_key> <t> <t> <y> : "ᜌ" U170C   # TAGALOG LETTER YA
+<Multi_key> <t> <t> <r> : "ᜍ" U170D   # TAGALOG LETTER RA
+<Multi_key> <t> <t> <l> : "ᜎ" U170E   # TAGALOG LETTER LA
+<Multi_key> <t> <t> <w> : "ᜏ" U170F   # TAGALOG LETTER WA
+<Multi_key> <t> <t> <s> : "ᜐ" U1710   # TAGALOG LETTER SA
+<Multi_key> <t> <t> <h> : "ᜑ" U1711   # TAGALOG LETTER HA
+
+<Multi_key> <t> <t> <a> <space> : "ᜀ" U1700   # TAGALOG LETTER A
+<Multi_key> <t> <t> <i> <space> : "ᜁ" U1701   # TAGALOG LETTER I
+<Multi_key> <t> <t> <u> <space> : "ᜂ" U1702   # TAGALOG LETTER U
+
+<Multi_key> <t> <t> <i> <Return> : "ᜒ" U1712   # TAGALOG VOWEL SIGN I
+<Multi_key> <t> <t> <u> <Return> : "ᜓ" U1713   # TAGALOG VOWEL SIGN U
+<Multi_key> <t> <t> <0> <Return> : "᜔" U1714   # TAGALOG SIGN VIRAMA
+
+<Multi_key> <t> <t> <underscore> <plus> <Return> : "᜔" U1714   # TAGALOG SIGN VIRAMA
+<Multi_key> <t> <t> <comma> <Return> : "᜕" U1715   # TAGALOG SIGN PAMUDPOD
 
 #########################################################
 # (z) Zhuyin/Bopomofo (and Mongolian, Tai Le & Tibetan) #
