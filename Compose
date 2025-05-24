@@ -34,7 +34,7 @@ include "%L"
 <Multi_key> <space> <bar>        : " "  U200A   # HAIR SPACE
 <Multi_key> <space> <0>          : "​"  U200B   # ZERO WIDTH SPACE
 <Multi_key> <space> <plus>       : " "  U205F   # MEDIUM MATHEMATICAL SPACE
-<Multi_key> <space> <i>          : "　" U3000   # IDEOGRAPHIC SPACE
+<Multi_key> <space> <i>          : "　"  U3000   # IDEOGRAPHIC SPACE
 <Multi_key> <backslash> <comma>  : " "  U202F   # NARROW NO-BREAK SPACE
 <Multi_key> <backslash> <space>  : "␣"  U2423   # OPEN BOX
 
@@ -87,16 +87,16 @@ include "%L"
 # Bullets #
 ###########
 
-<Multi_key> <asterisk> <asterisk>     : "•" U2022    # BULLET
-<Multi_key> <asterisk> <greater>      : "‣" U2023    # TRIANGULAR BULLET
-<Multi_key> <asterisk> <minus>        : "⁃" U2043    # HYPHEN BULLET
-<Multi_key> <asterisk> <parenleft>    : "⁌" U204C    # BLACK LEFTWARDS BULLET
-<Multi_key> <asterisk> <parenright>   : "⁍" U204D    # BLACK RIGHTWARDS BULLET
-<Multi_key> <asterisk> <at>           : "◉" U25C9    # FISHEYE (TAINOME)
-<Multi_key> <asterisk> <exclam>       : "◘" U25D8   # INVERSE BULLET
-<Multi_key> <asterisk> <o>            : "◦" U25E6    # WHITE BULLET
-<Multi_key> <asterisk> <O> <o>        : "⦾" U29BE   # CIRCLED WHITE BULLET
-<Multi_key> <asterisk> <O> <asterisk> : "⦿" U29BF   # CIRCLED BULLET
+<Multi_key> <asterisk> <asterisk>     : "•"  U2022    # BULLET
+<Multi_key> <asterisk> <greater>      : "‣"  U2023    # TRIANGULAR BULLET
+<Multi_key> <asterisk> <minus>        : "⁃"  U2043    # HYPHEN BULLET
+<Multi_key> <asterisk> <parenleft>    : "⁌"  U204C    # BLACK LEFTWARDS BULLET
+<Multi_key> <asterisk> <parenright>   : "⁍"  U204D    # BLACK RIGHTWARDS BULLET
+<Multi_key> <asterisk> <at>           : "◉"  U25C9    # FISHEYE (TAINOME)
+<Multi_key> <asterisk> <exclam>       : "◘"  U25D8   # INVERSE BULLET
+<Multi_key> <asterisk> <o>            : "◦"  U25E6    # WHITE BULLET
+<Multi_key> <asterisk> <O> <o>        : "⦾"  U29BE   # CIRCLED WHITE BULLET
+<Multi_key> <asterisk> <O> <asterisk> : "⦿"  U29BF   # CIRCLED BULLET
 <Multi_key> <asterisk> <less> <3>     : "❥"  U2765   # ROTATED HEAVY BLACK HEART BULLET
 
 ########################
@@ -121,9 +121,9 @@ include "%L"
 <Multi_key> <equal> <Return>                           : "̋"  U030B   # COMBINING DOUBLE ACUTE ACCENT
 <Multi_key> <v> <Return>                               : "̌"  U030C   # COMBINING CARON
 <Multi_key> <bar> <Return>                             : "̍"  U030D   # COMBINING VERTICAL LINE ABOVE
-<Multi_key> <asciicircum> <quotedbl> <Return>          : "̎" U030E   # COMBINING DOUBLE VERTICAL LINE ABOVE (less important than diaeresis)
+<Multi_key> <asciicircum> <quotedbl> <Return>          : "̎"  U030E   # COMBINING DOUBLE VERTICAL LINE ABOVE (less important than diaeresis)
 <Multi_key> <grave> <grave> <Return>                   : "̏"  U030F   # COMBINING DOUBLE GRAVE ACCENT
-<Multi_key> <period> <parenright> <Return>             : "̐" U0310   # COMBINING CANDRABINDU
+<Multi_key> <period> <parenright> <Return>             : "̐"  U0310   # COMBINING CANDRABINDU
 <Multi_key> <u> <v> <Return>                           : "̑"  U0311   # COMBINING INVERTED BREVE
 <Multi_key> <asciicircum> <comma> <Return>             : "̓"  U0313   # COMBINING COMMA ABOVE (less important than cedilla)
 <Multi_key> <comma> <less> <Return>                    : "̔"  U0314   # COMBINING REVERSED COMMA ABOVE
@@ -139,10 +139,10 @@ include "%L"
 <Multi_key> <bracketleft> <Return>                     : "͆"  U0346   # COMBINING BRIDGE ABOVE
 <Multi_key> <asciitilde> <slash> <Return>              : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <slash> <asciitilde> <Return>              : "͊"  U034A   # COMBINING NOT TILDE ABOVE
-<Multi_key> <asciicircum> <asciitilde> <asciitilde> <Return> : "͌" U034C   # COMBINING ALMOST EQUAL TO ABOVE
+<Multi_key> <asciicircum> <asciitilde> <asciitilde> <Return> : "͌"  U034C   # COMBINING ALMOST EQUAL TO ABOVE
 <Multi_key> <asciicircum> <greater> <Return>           : "͐"  U0350   # COMBINING RIGHT ARROWHEAD ABOVE
 <Multi_key> <c> <Return>                               : "͑"  U0351   # COMBINING LEFT HALF RING ABOVE
-<Multi_key> <parenleft> <period> <Return>              : "͒" U0352   # COMBINING FERMATA
+<Multi_key> <parenleft> <period> <Return>              : "͒"  U0352   # COMBINING FERMATA
 <Multi_key> <c> <less> <Return>                        : "͗"  U0357   # COMBINING RIGHT HALF RING ABOVE (conflicts with č, use vc)
 <Multi_key> <asciicircum> <greater> <period> <Return>  : "͘"  U0358   # COMBINING DOT ABOVE RIGHT
 <Multi_key> <parenright> <Return>                      : "͝"  U035D   # COMBINING DOUBLE BREVE  
@@ -208,7 +208,7 @@ include "%L"
 <Multi_key> <underscore> <underscore> <x> <Return>     : "͓"  U0353   # COMBINING X BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <less> <Return>  : "͔"  U0354   # COMBINING LEFT ARROWHEAD BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <greater> <Return> : "͕"  U0355   # COMBINING RIGHT ARROWHEAD BELOW (conflicts with ¯, use -^)
-<Multi_key> <underscore> <underscore> <greater> <asciicircum> <Return> : "͖" U0356   # COMBINING RIGHT ARROWHEAD AND UP ARROWHEAD BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <greater> <asciicircum> <Return> : "͖"  U0356   # COMBINING RIGHT ARROWHEAD AND UP ARROWHEAD BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <asterisk> <Return>           : "͙"  U0359   # COMBINING ASTERISK BELOW
 <Multi_key> <underscore> <o> <o> <Return>              : "͚"  U035A   # COMBINING DOUBLE RING BELOW (conflicts with ō, use -o)
 <Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
@@ -216,7 +216,7 @@ include "%L"
 <Multi_key> <underscore> <underscore> <parenleft> <space> <parenright> <Return> : "᪽"  U1ABD   # COMBINING PARENTHESES BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <parenleft> <parenright> <Return> : "᪽"  U1ABD   # COMBINING PARENTHESES BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <W> <v> <Return>              : "ᫀ"  U1AC0   # COMBINING LATIN SMALL LETTER TURNED W BELOW
-<Multi_key> <asciicircum> <apostrophe> <apostrophe> <apostrophe> <Return> : "᷻" U1DFB   # COMBINING DELETION MARK
+<Multi_key> <asciicircum> <apostrophe> <apostrophe> <apostrophe> <Return> : "᷻"  U1DFB   # COMBINING DELETION MARK
 <Multi_key> <underscore> <asciitilde> <asciitilde> <Return> : "᷽"  U1DFD   # COMBINING ALMOST EQUAL TO BELOW
 <Multi_key> <underscore> <underscore> <parenleft> <Return> : "᷼"  U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <greater> <v> <Return> : "᷿"  U1DFF   # COMBINING RIGHT ARROWHEAD AND DOWN ARROWHEAD BELOW (conflicts with ¯, use -^)
@@ -231,9 +231,9 @@ include "%L"
 <Multi_key> <minus> <bar> <bar> <Return>               : "⃦"  U20E6   # COMBINING DOUBLE VERTICAL STROKE OVERLAY
 <Multi_key> <minus> <less> <minus> <Return>            : "⃪"  U20EA   # COMBINING LEFTWARDS ARROW OVERLAY
 <Multi_key> <minus> <slash> <slash> <Return>           : "⃫"  U20EB   # COMBINING LONG DOUBLE SOLIDUS OVERLAY (conflicts with ⌿, use /-)
-<Multi_key> <minus> <parenleft> <space> <parenright> <Return> : "᪾" U1ABE   # COMBINING PARENTHESES OVERLAY (conflicts with useless {)
-<Multi_key> <minus> <parenleft> <parenright> <Return>  : "᪾" U1ABE   # COMBINING PARENTHESES OVERLAY (conflicts with useless {)
-<Multi_key> <minus> <Multi_key> <o> <Return>           : "⃘" U20D8   # COMBINING RING OVERLAY (not ideal)
+<Multi_key> <minus> <parenleft> <space> <parenright> <Return> : "᪾"  U1ABE   # COMBINING PARENTHESES OVERLAY (conflicts with useless {)
+<Multi_key> <minus> <parenleft> <parenright> <Return>  : "᪾"  U1ABE   # COMBINING PARENTHESES OVERLAY (conflicts with useless {)
+<Multi_key> <minus> <Multi_key> <o> <Return>           : "⃘"  U20D8   # COMBINING RING OVERLAY (not ideal)
 
 <Multi_key> <2> <underscore> <u> <Return>              : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (alternatively __)[Return])
 <Multi_key> <2> <u> <Return>                           : "͝"  U035D   # COMBINING DOUBLE BREVE (alternatively )[Return])
@@ -245,8 +245,8 @@ include "%L"
 <Multi_key> <2> <underscore> <u> <v> <Return>          : "᷼"  U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (alternatively __([Return])
 <Multi_key> <2> <asciicircum> <Return>                 : "᷍"  U1DCD   # COMBINING DOUBLE CIRCUMFLEX ABOVE (conflicts with ², use ^2)
 
-<Multi_key> <O> <period>                               : "◌" U25CC    # DOTTED CIRCLE (PLACEHOLDER GLYPH)
-<Multi_key> <apostrophe> <underscore> <Return>         : "⍘" U2358   # APL FUNCTIONAL SYMBOL QUOTE UNDERBAR (to free up _')
+<Multi_key> <O> <period>                               : "◌"  U25CC    # DOTTED CIRCLE (PLACEHOLDER GLYPH)
+<Multi_key> <apostrophe> <underscore> <Return>         : "⍘"  U2358   # APL FUNCTIONAL SYMBOL QUOTE UNDERBAR (to free up _')
 
 ####################################
 # Bidirectional control characters #
@@ -397,11 +397,11 @@ include "%L"
 <Multi_key> <v> <apostrophe>        : "ⱱ"  U2C71   # LATIN SMALL LETTER V WITH RIGHT HOOK
 
 <Multi_key> <apostrophe> <0>        : "ʘ"  U0298   # LATIN LETTER BILABIAL CLICK
-<Multi_key> <apostrophe> <bar>      : "ǀ" U01C0    # LATIN LETTER DENTAL CLICK
-<Multi_key> <apostrophe> <equal> <bar> : "ǂ" U01C2    # LATIN LETTER ALVEOLAR CLICK
-<Multi_key> <apostrophe> <exclam>   : "ǃ" U01C3    # LATIN LETTER RETROFLEX CLICK
-<Multi_key> <apostrophe> <Multi_key> <bar> <bar> : "ǁ" U01C1    # LATIN LETTER LATERAL CLICK
-<Multi_key> <apostrophe> <Multi_key> <exclam> <l> : "𝼊" U1DF0A    # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
+<Multi_key> <apostrophe> <bar>      : "ǀ"  U01C0    # LATIN LETTER DENTAL CLICK
+<Multi_key> <apostrophe> <equal> <bar> : "ǂ"  U01C2    # LATIN LETTER ALVEOLAR CLICK
+<Multi_key> <apostrophe> <exclam>   : "ǃ"  U01C3    # LATIN LETTER RETROFLEX CLICK
+<Multi_key> <apostrophe> <Multi_key> <bar> <bar> : "ǁ"  U01C1    # LATIN LETTER LATERAL CLICK
+<Multi_key> <apostrophe> <Multi_key> <exclam> <l> : "𝼊"  U1DF0A    # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 
 <Multi_key> <question> <period>     : "ʔ"  U0294   # LATIN LETTER GLOTTAL STOP
 <Multi_key> <question> <minus>      : "ʡ"  U02A1   # LATIN LETTER GLOTTAL STOP WITH STROKE
@@ -540,13 +540,13 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <V>  : "ⱽ"  U2C7D   # MODIFIER LETTER CAPITAL V
 <Multi_key> <asciicircum> <underscore> <W>  : "ᵂ"  U1D42   # MODIFIER LETTER CAPITAL W
 
-<Multi_key> <asciicircum> <underscore> <underscore> <I> : "ᶦ" U1DA6   # MODIFIER LETTER SMALL CAPITAL I
-<Multi_key> <asciicircum> <underscore> <underscore> <L> : "ᶫ" U1DAB   # MODIFIER LETTER SMALL CAPITAL L
-<Multi_key> <asciicircum> <underscore> <underscore> <N> : "ᶰ" U1DB0   # MODIFIER LETTER SMALL CAPITAL N
-<Multi_key> <asciicircum> <underscore> <underscore> <U> : "ᶸ" U1DB8   # MODIFIER LETTER SMALL CAPITAL U
+<Multi_key> <asciicircum> <underscore> <underscore> <I> : "ᶦ"  U1DA6   # MODIFIER LETTER SMALL CAPITAL I
+<Multi_key> <asciicircum> <underscore> <underscore> <L> : "ᶫ"  U1DAB   # MODIFIER LETTER SMALL CAPITAL L
+<Multi_key> <asciicircum> <underscore> <underscore> <N> : "ᶰ " U1DB0   # MODIFIER LETTER SMALL CAPITAL N
+<Multi_key> <asciicircum> <underscore> <underscore> <U> : "ᶸ"  U1DB8   # MODIFIER LETTER SMALL CAPITAL U
 
-<Multi_key> <asciicircum> <underscore> <colon>  : "˸" U02F8    # MODIFIER LETTER RAISED COLON
-<Multi_key> <asciicircum> <underscore> <exclam> : "ꜝ" UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
+<Multi_key> <asciicircum> <underscore> <colon>  : "˸"  U02F8    # MODIFIER LETTER RAISED COLON
+<Multi_key> <asciicircum> <underscore> <exclam> : "ꜝ"  UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
 
 # subscripts: _x (or _x_ if there's a clash with a combining character)
 
@@ -568,7 +568,7 @@ include "%L"
 <Multi_key> <underscore> <v> <underscore> : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
 <Multi_key> <underscore> <x>              : "ₓ"  U2093   # LATIN SUBSCRIPT SMALL LETTER X
 
-<Multi_key> <underscore> <Multi_key> <e> <e> : "ₔ" U2094   # LATIN SUBSCRIPT SMALL LETTER SCHWA
+<Multi_key> <underscore> <Multi_key> <e> <e> : "ₔ"  U2094   # LATIN SUBSCRIPT SMALL LETTER SCHWA
 
 # small capitals: _^x
 
