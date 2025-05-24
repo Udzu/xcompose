@@ -344,7 +344,6 @@ include "%L"
 <Multi_key> <r> <Return>            : "˞"  U02DE   # MODIFIER LETTER RHOTIC HOOK
 
 <Multi_key> <B> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
-<Multi_key> <g> <G>                 : "ɢ"  U0262   # LATIN LETTER SMALL CAPITAL G
 <Multi_key> <G> <G>                 : "ɢ"  U0262   # LATIN LETTER SMALL CAPITAL G
 <Multi_key> <i> <I>                 : "ɪ"  U026A   # LATIN LETTER SMALL CAPITAL I
 <Multi_key> <I> <I>                 : "ɪ"  U026A   # LATIN LETTER SMALL CAPITAL I
@@ -473,6 +472,8 @@ include "%L"
 <Multi_key> <V> <backslash>         : "Ʋ"  U01B2   # LATIN CAPITAL LETTER V WITH HOOK
 <Multi_key> <Z> <H>                 : "Ʒ"  U01B7   # LATIN CAPITAL LETTER EZH
 
+<Multi_key> <H> <w>                 : "Ƕ"  U01F6   # LATIN CAPITAL LETTER HWAIR
+<Multi_key> <h> <w>                 : "ƕ"  U0195   # LATIN SMALL LETTER HV
 <Multi_key> <l> <s>                 : "ſ"  U017F   # LATIN SMALL LETTER LONG S (alternatively fs)
 <Multi_key> <o> <k>                 : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA (OKINA) (use OK for 👌)
 <Multi_key> <W> <N>                 : "Ƿ"  U01F7   # LATIN CAPITAL LETTER WYNN
@@ -549,8 +550,10 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <underscore> <N> : "ᶰ " U1DB0   # MODIFIER LETTER SMALL CAPITAL N
 <Multi_key> <asciicircum> <underscore> <underscore> <U> : "ᶸ"  U1DB8   # MODIFIER LETTER SMALL CAPITAL U
 
-<Multi_key> <asciicircum> <underscore> <colon>  : "˸"  U02F8    # MODIFIER LETTER RAISED COLON
-<Multi_key> <asciicircum> <underscore> <exclam> : "ꜝ"  UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
+<Multi_key> <asciicircum> <underscore> <colon>   : "˸"  U02F8    # MODIFIER LETTER RAISED COLON
+<Multi_key> <asciicircum> <underscore> <exclam>  : "ꜝ"  UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
+<Multi_key> <asciicircum> <underscore> <less>    : "˂"  U02C2    # MODIFIER LETTER LEFT ARROWHEAD
+<Multi_key> <asciicircum> <underscore> <greater> : "˃"  U02C3    # MODIFIER LETTER RIGHT ARROWHEAD
 
 # subscripts: _x (or _x_ if there's a clash with a combining character)
 
@@ -5404,9 +5407,9 @@ include "%L"
 <Multi_key> <C> <S> <y> <u> <h> : "𐑾" U1047E   # SHAVIAN LETTER IAN
 <Multi_key> <C> <S> <y> <o> <o> : "𐑿" U1047F   # SHAVIAN LETTER YEW
 
-##########################
-# (g) Greek (and Coptic) #
-##########################
+###################################
+# (g) Greek (and Coptic & Gothic) #
+###################################
 
 <Multi_key> <g> <c> <A> : "Α"  U0391   # GREEK CAPITAL LETTER ALPHA
 <Multi_key> <g> <c> <B> : "Β"  U0392   # GREEK CAPITAL LETTER BETA
@@ -5578,6 +5581,36 @@ include "%L"
 <Multi_key> <g> <p> <8> <0> <0> : "𐋺" U102FA   # COPTIC EPACT NUMBER EIGHT HUNDRED
 <Multi_key> <g> <p> <9> <0> <0> : "𐋻" U102FB   # COPTIC EPACT NUMBER NINE HUNDRED
 <Multi_key> <g> <p> <1> <0> <0> <0> : "𐋠" U102E0   # COPTIC EPACT THOUSANDS MARK
+
+# (G = Gothic)
+
+<Multi_key> <g> <G> <a> : "𐌰" U10330   # GOTHIC LETTER AHSA
+<Multi_key> <g> <G> <b> : "𐌱" U10331   # GOTHIC LETTER BAIRKAN
+<Multi_key> <g> <G> <g> : "𐌲" U10332   # GOTHIC LETTER GIBA
+<Multi_key> <g> <G> <d> : "𐌳" U10333   # GOTHIC LETTER DAGS
+<Multi_key> <g> <G> <e> : "𐌴" U10334   # GOTHIC LETTER AIHVUS
+<Multi_key> <g> <G> <q> : "𐌵" U10335   # GOTHIC LETTER QAIRTHRA
+<Multi_key> <g> <G> <z> : "𐌶" U10336   # GOTHIC LETTER IUJA
+<Multi_key> <g> <G> <h> : "𐌷" U10337   # GOTHIC LETTER HAGL
+<Multi_key> <g> <G> <T> : "𐌸" U10338   # GOTHIC LETTER THIUTH
+<Multi_key> <g> <G> <i> : "𐌹" U10339   # GOTHIC LETTER EIS
+<Multi_key> <g> <G> <k> : "𐌺" U1033A   # GOTHIC LETTER KUSMA
+<Multi_key> <g> <G> <l> : "𐌻" U1033B   # GOTHIC LETTER LAGUS
+<Multi_key> <g> <G> <m> : "𐌼" U1033C   # GOTHIC LETTER MANNA
+<Multi_key> <g> <G> <n> : "𐌽" U1033D   # GOTHIC LETTER NAUTHS
+<Multi_key> <g> <G> <j> : "𐌾" U1033E   # GOTHIC LETTER JER
+<Multi_key> <g> <G> <u> : "𐌿" U1033F   # GOTHIC LETTER URUS
+<Multi_key> <g> <G> <p> : "𐍀" U10340   # GOTHIC LETTER PAIRTHRA
+<Multi_key> <g> <G> <9> <0> <Return> : "𐍁" U10341   # GOTHIC LETTER NINETY
+<Multi_key> <g> <G> <r> : "𐍂" U10342   # GOTHIC LETTER RAIDA
+<Multi_key> <g> <G> <s> : "𐍃" U10343   # GOTHIC LETTER SAUIL
+<Multi_key> <g> <G> <t> : "𐍄" U10344   # GOTHIC LETTER TEIWS
+<Multi_key> <g> <G> <w> : "𐍅" U10345   # GOTHIC LETTER WINJA
+<Multi_key> <g> <G> <f> : "𐍆" U10346   # GOTHIC LETTER FAIHU
+<Multi_key> <g> <G> <x> : "𐍇" U10347   # GOTHIC LETTER IGGWS
+<Multi_key> <g> <G> <Multi_key> <h> <w> : "𐍈" U10348   # GOTHIC LETTER HWAIR
+<Multi_key> <g> <G> <minus> <o> : "𐍉" U10349   # GOTHIC LETTER OTHAL
+<Multi_key> <g> <G> <9> <0> <0> : "𐍊" U1034A   # GOTHIC LETTER NINE HUNDRED
 
 # mathematical alphanumerics (same convention as Latin alphanumerics above)
 
@@ -7059,9 +7092,9 @@ include "%L"
 <Multi_key> <o> <i> <r> <quotedbl> <i> : "ᛇ" U16C7   # RUNIC LETTER IWAZ EOH
 
 
-##############################
-# (t) Thai (and Khmer & Lao) #
-##############################
+########################################
+# (t) Thai (and Baybayin, Khmer & Lao) #
+########################################
 
 # (based on ISO 11940)
 
@@ -7354,6 +7387,35 @@ include "%L"
 <Multi_key> <t> <L> <numbersign> <7> : "໗" U0ED7   # LAO DIGIT SEVEN
 <Multi_key> <t> <L> <numbersign> <8> : "໘" U0ED8   # LAO DIGIT EIGHT
 <Multi_key> <t> <L> <numbersign> <9> : "໙" U0ED9   # LAO DIGIT NINE
+
+# (t = Tagalog/Baybayin)
+
+<Multi_key> <t> <t> <k> : "ᜃ" U1703   # TAGALOG LETTER KA
+<Multi_key> <t> <t> <g> : "ᜄ" U1704   # TAGALOG LETTER GA
+<Multi_key> <t> <t> <semicolon> <n> : "ᜅ" U1705   # TAGALOG LETTER NGA
+<Multi_key> <t> <t> <t> : "ᜆ" U1706   # TAGALOG LETTER TA
+<Multi_key> <t> <t> <d> : "ᜇ" U1707   # TAGALOG LETTER DA
+<Multi_key> <t> <t> <n> : "ᜈ" U1708   # TAGALOG LETTER NA
+<Multi_key> <t> <t> <p> : "ᜉ" U1709   # TAGALOG LETTER PA
+<Multi_key> <t> <t> <b> : "ᜊ" U170A   # TAGALOG LETTER BA
+<Multi_key> <t> <t> <m> : "ᜋ" U170B   # TAGALOG LETTER MA
+<Multi_key> <t> <t> <y> : "ᜌ" U170C   # TAGALOG LETTER YA
+<Multi_key> <t> <t> <r> : "ᜍ" U170D   # TAGALOG LETTER RA
+<Multi_key> <t> <t> <l> : "ᜎ" U170E   # TAGALOG LETTER LA
+<Multi_key> <t> <t> <w> : "ᜏ" U170F   # TAGALOG LETTER WA
+<Multi_key> <t> <t> <s> : "ᜐ" U1710   # TAGALOG LETTER SA
+<Multi_key> <t> <t> <h> : "ᜑ" U1711   # TAGALOG LETTER HA
+
+<Multi_key> <t> <t> <a> <space> : "ᜀ" U1700   # TAGALOG LETTER A
+<Multi_key> <t> <t> <i> <space> : "ᜁ" U1701   # TAGALOG LETTER I
+<Multi_key> <t> <t> <u> <space> : "ᜂ" U1702   # TAGALOG LETTER U
+
+<Multi_key> <t> <t> <i> <Return> : "ᜒ" U1712   # TAGALOG VOWEL SIGN I
+<Multi_key> <t> <t> <u> <Return> : "ᜓ" U1713   # TAGALOG VOWEL SIGN U
+<Multi_key> <t> <t> <0> <Return> : "᜔" U1714   # TAGALOG SIGN VIRAMA
+
+<Multi_key> <t> <t> <underscore> <plus> <Return> : "᜔" U1714   # TAGALOG SIGN VIRAMA
+<Multi_key> <t> <t> <comma> <Return> : "᜕" U1715   # TAGALOG SIGN PAMUDPOD
 
 #########################################################
 # (z) Zhuyin/Bopomofo (and Mongolian, Tai Le & Tibetan) #
