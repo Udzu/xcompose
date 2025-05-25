@@ -99,13 +99,7 @@ $ xcompose -S validate  # by default, system config isn't validated (only parsed
 [/usr/share/X11/locale/en_US.UTF-8/Compose#121] Incorrect keysym: guillemotleft, expected guillemetleft (or U00AB)
 [/usr/share/X11/locale/en_US.UTF-8/Compose#122] Incorrect keysym: guillemotright, expected guillemetright (or U00BB)
 [/usr/share/X11/locale/en_US.UTF-8/Compose#198] Incorrect comment: ROUBLE SIGN, expected RUBLE SIGN
-[/usr/share/X11/locale/en_US.UTF-8/Compose#199] Incorrect comment: ROUBLE SIGN, expected RUBLE SIGN
-[/usr/share/X11/locale/en_US.UTF-8/Compose#200] Incorrect comment: ROUBLE SIGN, expected RUBLE SIGN
-[/usr/share/X11/locale/en_US.UTF-8/Compose#201] Incorrect comment: ROUBLE SIGN, expected RUBLE SIGN
-[/usr/share/X11/locale/en_US.UTF-8/Compose#202] Incorrect comment: ROUBLE SIGN, expected RUBLE SIGN
-[/usr/share/X11/locale/en_US.UTF-8/Compose#203] Incorrect comment: ROUBLE SIGN, expected RUBLE SIGN
-[/usr/share/X11/locale/en_US.UTF-8/Compose#204] Incorrect comment: ROUBLE SIGN, expected RUBLE SIGN
-[/usr/share/X11/locale/en_US.UTF-8/Compose#205] Incorrect comment: ROUBLE SIGN, expected RUBLE SIGN
+[...]
 [/usr/share/X11/locale/en_US.UTF-8/Compose#253] Incorrect keysym: masculine, expected ordmasculine (or U00BA)
 [/usr/share/X11/locale/en_US.UTF-8/Compose#4985] Incorrect comment: ○ \ APL FUNCTIONAL SYMBOL CIRCLE SLOPE, expected APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
 [/usr/share/X11/locale/en_US.UTF-8/Compose#4986] Incorrect comment: \ ○ APL FUNCTIONAL SYMBOL CIRCLE SLOPE, expected APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
