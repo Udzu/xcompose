@@ -1,7 +1,9 @@
 [project]
 name = "xcompose"
-version = "0.2.1"
-dependencies = []
+version = "0.3.0"
+dependencies = [
+    "pygtrie>=2.5.0",
+]
 requires-python = ">=3.10"
 authors = [{ name = "Uri Granta", email = "uri.granta+python@gmail.com" }]
 description = "Utility for managing X11 compose key sequences"
