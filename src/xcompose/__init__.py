@@ -132,20 +132,34 @@ def get_definitions(
                 print(f"[{file}#{i}] Invalid definition:\n{line}")
 
 
-# commands
+# Commands
 
 
 def add(args: argparse.Namespace) -> None:
     """Print line defining a new key sequence"""
-    # TODO: check for conflicts
-    keys = " ".join(f"<{CHAR_TO_KEYWORD.get(k, k)}>" for k in args.keys)
+    ks = tuple(CHAR_TO_KEYWORD.get(k, k) for k in args.keys)
     if args.modifier_key is not None:
-        keys = f"<{args.modifier_key}> {keys}"
+        ks = (args.modifier_key, *ks)
+
+    conflict = None
+    for defn in get_definitions(
+        args.file or get_xcompose_path(system=args.system),
+        ignore_includes=args.ignore_include,
+        modifier_key=args.modifier_key,
+    ):
+        n = min(len(ks), len(defn.keys))
+        if ks[:n] == defn.keys[:n] and args.value != defn.value:
+            conflict = defn.value
+            break
+
+    keys = " ".join(f"<{k}>" for k in ks)
     codes = " ".join(to_code_point(c) for c in args.value)
     names = " ".join(unicodedata.name(c, "???") for c in args.value)
     if len(args.value) > 1 and "VARIATION SELECTOR-16" in names:
         names = names.replace("VARIATION SELECTOR-16", "EMOJI")
-    print(f'{keys} : "{args.value}" {codes}   # {names}')
+    if conflict:
+        names = names + f" (conflicts with {conflict})"
+    print(f'{keys} : "{args.value}"  {codes}   # {names}')
 
 
 def find(args: argparse.Namespace) -> None:
@@ -238,9 +252,10 @@ def validate(args: argparse.Namespace) -> None:
                 expected_comment = None
 
             if any(not is_keysym(c) for c in defn.keys):
+                keysyms = {c for c in defn.keys if not is_keysym(c)}
                 print(
-                    f"[{defn.file}#{defn.line_no}] Unrecognised keysyms: "
-                    f"{', '.join({c for c in defn.keys if not is_keysym(c)})}"
+                    f"[{defn.file}#{defn.line_no}] Unrecognised keysym{'' if len(keysyms) == 1 else 's'}: "
+                    f"{', '.join(keysyms)}"
                 )
 
             if len(defn.value) == 1:
@@ -250,9 +265,15 @@ def validate(args: argparse.Namespace) -> None:
                         f"expected {expected_keysym}"
                     )
                 elif from_code_point(defn.keysym) != defn.value:
+                    keysym = CHAR_TO_KEYWORD.get(defn.value, None)
+                    expected = (
+                        f"{keysym} (or {expected_keysym})"
+                        if keysym
+                        else expected_keysym
+                    )
                     print(
                         f"[{defn.file}#{defn.line_no}] "
-                        f"Incorrect keysym: {defn.keysym}, expected {expected_keysym}"
+                        f"Incorrect keysym: {defn.keysym}, expected {expected}"
                     )
             elif defn.keysym and from_code_point(defn.keysym):
                 print(
