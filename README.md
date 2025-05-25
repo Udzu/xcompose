@@ -94,7 +94,7 @@ $ xcompose validate
   [/usr/share/X11/locale/en_US.UTF-8/Compose#428] Multi_key + c + comma for 'ç'
     to ignore this, include the string 'conflict' or 'override' in the comment
     
-$ xcompose -S validate  # by default, system config isn't validated (only parsed for conflicts)
+$ xcompose -S validate  # system config isn't validated by default (only parsed for conflicts)
 [/usr/share/X11/locale/en_US.UTF-8/Compose#73] Incorrect comment: LESS-THAN, expected LESS-THAN SIGN
 [/usr/share/X11/locale/en_US.UTF-8/Compose#74] Incorrect comment: LESS-THAN, expected LESS-THAN SIGN
 [/usr/share/X11/locale/en_US.UTF-8/Compose#75] Incorrect comment: GREATER-THAN, expected GREATER-THAN SIGN
