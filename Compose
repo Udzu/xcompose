@@ -2059,7 +2059,7 @@ include "%L"
 <Multi_key> <v> <asciicircum> <J> : "ꓩ" UA4E9    # LISU LETTER FA
 <Multi_key> <v> <asciicircum> <K> : "ꓘ" UA4D8    # LISU LETTER KHA
 <Multi_key> <v> <asciicircum> <L> : "ꓶ" UA4F6    # LISU LETTER UH
-<Multi_key> <v> <asciicircum> <M> : "ꟽ" UA7FD    # LATIN EPIGRAPHIC LETTER INVERTED M
+<Multi_key> <v> <asciicircum> <M> : "ꟽ" UA7FD    # LATIN EPIGRAPHIC LETTER INVERTED M (W is worse but better supported)
 <Multi_key> <v> <asciicircum> <N> : "N" U004E    # LATIN CAPITAL LETTER N
 <Multi_key> <v> <asciicircum> <O> : "O" U004F    # LATIN CAPITAL LETTER O
 <Multi_key> <v> <asciicircum> <P> : "Ԁ" U0500    # CYRILLIC CAPITAL LETTER KOMI DE
@@ -2071,8 +2071,7 @@ include "%L"
 <Multi_key> <v> <asciicircum> <V> : "ꓥ" UA4E5    # LISU LETTER NGA
 <Multi_key> <v> <asciicircum> <W> : "M" U004D    # LATIN CAPITAL LETTER M
 <Multi_key> <v> <asciicircum> <X> : "X" U0058    # LATIN CAPITAL LETTER X
-<Multi_key> <v> <asciicircum> <Y> : "⅄" U2144    # TURNED SANS-SERIF CAPITAL Y
-# ↳ 𑾰 U11FB0 is better but not yet widely supported
+<Multi_key> <v> <asciicircum> <Y> : "⅄" U2144    # TURNED SANS-SERIF CAPITAL Y (𑾰 U11FB0 is better but not yet widely supported)
 <Multi_key> <v> <asciicircum> <Z> : "Z" U005A    # LATIN CAPITAL LETTER Z
 
 <Multi_key> <v> <asciicircum> <a> : "ɐ" U0250    # LATIN SMALL LETTER TURNED A
@@ -2086,7 +2085,7 @@ include "%L"
 <Multi_key> <v> <asciicircum> <i> : "ᴉ" U1D09    # LATIN SMALL LETTER TURNED I
 <Multi_key> <v> <asciicircum> <j> : "ſ̣" U017F U0323   # LATIN SMALL LETTER LONG S + COMBINING DOT BELOW
 <Multi_key> <v> <asciicircum> <k> : "ʞ" U029E    # LATIN SMALL LETTER TURNED K
-<Multi_key> <v> <asciicircum> <l> : "ꞁ" UA781    # LATIN SMALL LETTER TURNED L
+<Multi_key> <v> <asciicircum> <l> : "ꞁ" UA781    # LATIN SMALL LETTER TURNED L (| is worse but better supported)
 <Multi_key> <v> <asciicircum> <m> : "ɯ" U026F    # LATIN SMALL LETTER TURNED M
 <Multi_key> <v> <asciicircum> <n> : "u" U0075    # LATIN SMALL LETTER U
 <Multi_key> <v> <asciicircum> <o> : "o" U006F    # LATIN SMALL LETTER O
@@ -2107,8 +2106,8 @@ include "%L"
 
 <Multi_key> <v> <asciicircum> <0> : "0" U0030    # DIGIT ZERO
 <Multi_key> <v> <asciicircum> <1> : "Ɩ" U0196    # LATIN CAPITAL LETTER IOTA
-<Multi_key> <v> <asciicircum> <2> : "↊" U218A    # TURNED DIGIT TWO
-<Multi_key> <v> <asciicircum> <3> : "↋" U218B    # TURNED DIGIT THREE
+<Multi_key> <v> <asciicircum> <2> : "↊" U218A    # TURNED DIGIT TWO (ح U062D is worse but better supported)
+<Multi_key> <v> <asciicircum> <3> : "↋" U218B    # TURNED DIGIT THREE (Ɛ U0190 is worse but better supported)
 <Multi_key> <v> <asciicircum> <4> : "ᔭ" U152D    # CANADIAN SYLLABICS YA
 <Multi_key> <v> <asciicircum> <5> : "5" U0035    # DIGIT FIVE
 <Multi_key> <v> <asciicircum> <6> : "9" U0039    # DIGIT NINE
@@ -2128,7 +2127,7 @@ include "%L"
 <Multi_key> <greater> <less> <C> : "ꓛ" UA4DB    # LISU LETTER CHA (conflicts)
 <Multi_key> <greater> <less> <D> : "ꓷ" UA4F7    # LISU LETTER OE (conflicts)
 <Multi_key> <greater> <less> <E> : "Ǝ" U018E    # LATIN CAPITAL LETTER REVERSED E (conflicts)
-<Multi_key> <greater> <less> <F> : "ꟻ" UA7FB    # LATIN EPIGRAPHIC LETTER REVERSED F (conflicts)
+<Multi_key> <greater> <less> <F> : "ᖷ"  U15B7   # CANADIAN SYLLABICS BLACKFOOT WA (conflicts)
 <Multi_key> <greater> <less> <G> : "ᘐ" U1610    # CANADIAN SYLLABICS CARRIER YE (conflicts)
 <Multi_key> <greater> <less> <H> : "H" U0048    # LATIN CAPITAL LETTER H (conflicts)
 <Multi_key> <greater> <less> <I> : "I" U0049    # LATIN CAPITAL LETTER I (conflicts)
@@ -2138,7 +2137,7 @@ include "%L"
 <Multi_key> <greater> <less> <M> : "M" U004D    # LATIN CAPITAL LETTER M (conflicts)
 <Multi_key> <greater> <less> <N> : "И" U0418    # CYRILLIC CAPITAL LETTER I (conflicts)
 <Multi_key> <greater> <less> <O> : "O" U004F    # LATIN CAPITAL LETTER O (conflicts)
-<Multi_key> <greater> <less> <P> : "ꟼ" UA7FC    # LATIN EPIGRAPHIC LETTER REVERSED P (conflicts)
+<Multi_key> <greater> <less> <P> : "ꟼ" UA7FC    # LATIN EPIGRAPHIC LETTER REVERSED P (conflicts) (ᑫ U146B is worse but better supported)
 <Multi_key> <greater> <less> <Q> : "⌕" U2315    # TELEPHONE RECORDER (conflicts)
 <Multi_key> <greater> <less> <R> : "Я" U042F    # CYRILLIC CAPITAL LETTER YA (conflicts)
 <Multi_key> <greater> <less> <S> : "Ƨ" U01A7    # LATIN CAPITAL LETTER TONE TWO (conflicts)
@@ -2156,13 +2155,11 @@ include "%L"
 <Multi_key> <greater> <less> <d> : "b" U0062    # LATIN SMALL LETTER B (conflicts)
 <Multi_key> <greater> <less> <e> : "ɘ" U0258    # LATIN SMALL LETTER REVERSED E (conflicts)
 <Multi_key> <greater> <less> <f> : "ʇ" U0287    # LATIN SMALL LETTER TURNED T (conflicts)
-<Multi_key> <greater> <less> <g> : "ϱ" U03F1    # GREEK RHO SYMBOL (conflicts)
-# ↳ 𝼁 U1DF01 is better but not yet widely supported
+<Multi_key> <greater> <less> <g> : "ϱ" U03F1    # GREEK RHO SYMBOL (conflicts) (𝼁 U1DF01 is better but not yet widely supported)
 <Multi_key> <greater> <less> <h> : "ᖹ" U15B9    # CANADIAN SYLLABICS BLACKFOOT NI (conflicts)
 <Multi_key> <greater> <less> <i> : "i" U0069    # LATIN SMALL LETTER I (conflicts)
 <Multi_key> <greater> <less> <j> : "ɩ̇" U0269 U0307    # LATIN SMALL LETTER IOTA COMBINING DOT ABOVE (conflicts)
-<Multi_key> <greater> <less> <k> : "ʞ" U029E    # LATIN SMALL LETTER TURNED K (conflicts)
-# ↳ 𝼃 U1DF03 is better but not yet widely supported
+<Multi_key> <greater> <less> <k> : "ʞ" U029E    # LATIN SMALL LETTER TURNED K (conflicts) (𝼃 U1DF03 is better but not yet widely supported)
 <Multi_key> <greater> <less> <l> : "l" U006C    # LATIN SMALL LETTER L (conflicts)
 <Multi_key> <greater> <less> <m> : "m" U006D    # LATIN SMALL LETTER M (conflicts)
 <Multi_key> <greater> <less> <n> : "n" U006E    # LATIN SMALL LETTER N (conflicts)
@@ -2183,8 +2180,7 @@ include "%L"
 <Multi_key> <greater> <less> <1> : "⨡" U2A21    # Z NOTATION SCHEMA PROJECTION (conflicts)
 <Multi_key> <greater> <less> <2> : "Ϛ̲" U03DA U0332    # GREEK LETTER STIGMA COMBINING LOW LINE (conflicts)
 <Multi_key> <greater> <less> <3> : "Ɛ" U0190    # LATIN CAPITAL LETTER OPEN E (conflicts)
-<Multi_key> <greater> <less> <4> : "𖺃" U16E83    # MEDEFAIDRIN DIGIT THREE (conflicts)
-# ↳ ⵤ̶ U2D64 U0336 is worse but more widely supported
+<Multi_key> <greater> <less> <4> : "𖺃" U16E83    # MEDEFAIDRIN DIGIT THREE (conflicts) (ⵤ̶ U2D64 U0336 is worse but better supported on some platforms)
 <Multi_key> <greater> <less> <5> : "ट" U091F    # DEVANAGARI LETTER TTA (conflicts)
 <Multi_key> <greater> <less> <6> : "∂" U2202    # PARTIAL DIFFERENTIAL (conflicts)
 <Multi_key> <greater> <less> <7> : "ߖ" U07D6    # NKO LETTER JA (conflicts)
@@ -2201,29 +2197,29 @@ include "%L"
 
 <Multi_key> <asciicircum> <less> <A> : "ᗉ" U15C9   # CANADIAN SYLLABICS CARRIER GHA
 <Multi_key> <asciicircum> <less> <B> : "ߘ" U07D8   # NKO LETTER DA
-<Multi_key> <asciicircum> <less> <C> : "𝈱" U1D231   # GREEK INSTRUMENTAL NOTATION SYMBOL-32
+<Multi_key> <asciicircum> <less> <C> : "𝈱" U1D231   # GREEK INSTRUMENTAL NOTATION SYMBOL-32 (U and ◡ U25E1 are worse but better supported)
 <Multi_key> <asciicircum> <less> <D> : "ᗝ" U15DD   # CANADIAN SYLLABICS CARRIER THO
-<Multi_key> <asciicircum> <less> <E> : "𝈧" U1D227   # GREEK INSTRUMENTAL NOTATION SYMBOL-17
+<Multi_key> <asciicircum> <less> <E> : "⧢"  U29E2   # SHUFFLE PRODUCT
 <Multi_key> <asciicircum> <less> <F> : "𝈯" U1D22F   # GREEK INSTRUMENTAL NOTATION SYMBOL-29
 <Multi_key> <asciicircum> <less> <G> : "ᘎ" U160E   # CANADIAN SYLLABICS CARRIER YU
 <Multi_key> <asciicircum> <less> <H> : "ェ" U30A7   # KATAKANA LETTER SMALL E
-<Multi_key> <asciicircum> <less> <I> : "ꟷ" UA7F7   # LATIN EPIGRAPHIC LETTER SIDEWAYS I
+<Multi_key> <asciicircum> <less> <I> : "ꟷ" UA7F7   # LATIN EPIGRAPHIC LETTER SIDEWAYS I (— U2014 is worse but better supported)
 <Multi_key> <asciicircum> <less> <J> : "ᓓ" U14D3   # CANADIAN SYLLABICS LE
-<Multi_key> <asciicircum> <less> <K> : "𝈎" U1D20E   # GREEK VOCAL NOTATION SYMBOL-15
+<Multi_key> <asciicircum> <less> <K> : "𝈎" U1D20E   # GREEK VOCAL NOTATION SYMBOL-15 (⚺ U26BA is worse but better supported)
 <Multi_key> <asciicircum> <less> <L> : "ᒧ" U14A7   # CANADIAN SYLLABICS MO
 <Multi_key> <asciicircum> <less> <M> : "ᓬ" U14EC   # CANADIAN SYLLABICS MEDIAL L
 <Multi_key> <asciicircum> <less> <N> : "Z" U005A   # LATIN CAPITAL LETTER Z
 <Multi_key> <asciicircum> <less> <O> : "⬭" U2B2D   # WHITE HORIZONTAL ELLIPSE
-<Multi_key> <asciicircum> <less> <P> : "𝈟" U1D21F   # GREEK INSTRUMENTAL NOTATION SYMBOL-4
+<Multi_key> <asciicircum> <less> <P> : "𝈟" U1D21F   # GREEK INSTRUMENTAL NOTATION SYMBOL-4 (ᓇ U14C7 is worse but better supported)
 <Multi_key> <asciicircum> <less> <Q> : "℺" U213A   # ROTATED CAPITAL Q
 <Multi_key> <asciicircum> <less> <R> : "∝" U221D   # PROPORTIONAL TO
 <Multi_key> <asciicircum> <less> <S> : "ഗ" U0D17   # MALAYALAM LETTER GA
 <Multi_key> <asciicircum> <less> <T> : "⊢" U22A2   # RIGHT TACK
 <Multi_key> <asciicircum> <less> <U> : "⊃" U2283   # SUPERSET OF
-<Multi_key> <asciicircum> <less> <V> : "𝈷" U1D237   # GREEK INSTRUMENTAL NOTATION SYMBOL-42
+<Multi_key> <asciicircum> <less> <V> : "𝈷" U1D237   # GREEK INSTRUMENTAL NOTATION SYMBOL-42 (ᐳ U1433 is worse but better supported)
 <Multi_key> <asciicircum> <less> <W> : "ᕒ" U1552   # CANADIAN SYLLABICS MEDIAL R
 <Multi_key> <asciicircum> <less> <X> : "⋊" U22CA   # RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT
-<Multi_key> <asciicircum> <less> <Y> : "𝈠" U1D220   # GREEK INSTRUMENTAL NOTATION SYMBOL-5
+<Multi_key> <asciicircum> <less> <Y> : "𝈠" U1D220   # GREEK INSTRUMENTAL NOTATION SYMBOL-5 (⤚ U291A is worse but better supported)
 <Multi_key> <asciicircum> <less> <Z> : "N" U004E   # LATIN CAPITAL LETTER N
 
 <Multi_key> <asciicircum> <less> <a> : "σ" U03C3   # GREEK SMALL LETTER SIGMA
@@ -2233,10 +2229,10 @@ include "%L"
 <Multi_key> <asciicircum> <less> <e> : "ω" U03C9   # GREEK SMALL LETTER OMEGA
 # f
 <Multi_key> <asciicircum> <less> <g> : "თ" U10D7   # GEORGIAN LETTER TAN
-<Multi_key> <asciicircum> <less> <h> : "𝈦" U1D226   # GREEK INSTRUMENTAL NOTATION SYMBOL-14
+<Multi_key> <asciicircum> <less> <h> : "𝈦" U1D226   # GREEK INSTRUMENTAL NOTATION SYMBOL-14 (ک U06A9 is worse but better supported)
 <Multi_key> <asciicircum> <less> <i> : "·–" U00B7 U2013   # MIDDLE DOT EN DASH
 <Multi_key> <asciicircum> <less> <j> : "·¬" U00B7 U00AC   # MIDDLE DOT ZERO WIDTH JOINER NOT SIGN
-# k
+<Multi_key> <asciicircum> <less> <k> : " ͟∨"  U0020 U035F U2228   # SPACE COMBINING DOUBLE MACRON BELOW LOGICAL OR
 <Multi_key> <asciicircum> <less> <l> : "ᓗ" U14D7   # CANADIAN SYLLABICS LO
 <Multi_key> <asciicircum> <less> <m> : "ε" U03B5   # GREEK SMALL LETTER EPSILON
 <Multi_key> <asciicircum> <less> <n> : "c" U0063   # LATIN SMALL LETTER C
@@ -2244,7 +2240,7 @@ include "%L"
 <Multi_key> <asciicircum> <less> <p> : "؎" U060E   # ARABIC POETIC VERSE SIGN
 <Multi_key> <asciicircum> <less> <q> : "ᓂ" U14C2   # CANADIAN SYLLABICS NI
 <Multi_key> <asciicircum> <less> <r> : "ட" U0B9F   # TAMIL LETTER TTA
-<Multi_key> <asciicircum> <less> <s> : "𝆘" U1D198   # MUSICAL SYMBOL INVERTED TURN
+<Multi_key> <asciicircum> <less> <s> : "𝆘" U1D198   # MUSICAL SYMBOL INVERTED TURN (ᔥ U1525 is worse but better supported)
 <Multi_key> <asciicircum> <less> <t> : "⟝" U27DD   # LONG RIGHT TACK
 <Multi_key> <asciicircum> <less> <u> : "ᴝ" U1D1D   # LATIN SMALL LETTER SIDEWAYS U
 <Multi_key> <asciicircum> <less> <v> : ">" U003E   # GREATER-THAN SIGN
@@ -2257,7 +2253,7 @@ include "%L"
 <Multi_key> <asciicircum> <less> <1> : "⥞" U295E   # LEFTWARDS HARPOON WITH BARB DOWN FROM BAR
 <Multi_key> <asciicircum> <less> <2> : "വ" U0D35   # MALAYALAM LETTER VA
 <Multi_key> <asciicircum> <less> <3> : "ന" U0D28   # MALAYALAM LETTER NA
-# 4
+<Multi_key> <asciicircum> <less> <4> : "⇃̶" U21C3 U0336   # DOWNWARDS HARPOON WITH BARB LEFTWARDS COMBINING LONG STROKE OVERLAY
 <Multi_key> <asciicircum> <less> <5> : "।ᕄ" U0964 U1544   # DEVANAGARI DANDA CANADIAN SYLLABICS WEST-CREE LE
 <Multi_key> <asciicircum> <less> <6> : "ᓄ" U14C4   # CANADIAN SYLLABICS NO
 <Multi_key> <asciicircum> <less> <7> : "⌐" U2310   # REVERSED NOT SIGN
@@ -2290,26 +2286,26 @@ include "%L"
 <Multi_key> <asciicircum> <greater> <F> : "╖" U2556   # BOX DRAWINGS DOWN DOUBLE AND LEFT SINGLE
 <Multi_key> <asciicircum> <greater> <G> : "ᘏ" U160F   # CANADIAN SYLLABICS CARRIER YO
 <Multi_key> <asciicircum> <greater> <H> : "ェ" U30A7   # KATAKANA LETTER SMALL E
-<Multi_key> <asciicircum> <greater> <I> : "ꟷ" UA7F7   # LATIN EPIGRAPHIC LETTER SIDEWAYS I
+<Multi_key> <asciicircum> <greater> <I> : "ꟷ" UA7F7   # LATIN EPIGRAPHIC LETTER SIDEWAYS I (— U2014 is worse but better supported)
 <Multi_key> <asciicircum> <greater> <J> : "ᓚ" U14DA   # CANADIAN SYLLABICS LA
-# K
+<Multi_key> <asciicircum> <greater> <K> : "⚻" U26BB   # QUINCUNX
 <Multi_key> <asciicircum> <greater> <L> : "⌐" U2310   # REVERSED NOT SIGN
 <Multi_key> <asciicircum> <greater> <M> : "ᕒ" U1552   # CANADIAN SYLLABICS MEDIAL R
 <Multi_key> <asciicircum> <greater> <N> : "Z" U005A   # LATIN CAPITAL LETTER Z
 <Multi_key> <asciicircum> <greater> <O> : "⬭" U2B2D   # WHITE HORIZONTAL ELLIPSE
 <Multi_key> <asciicircum> <greater> <P> : "ᓀ" U14C0   # CANADIAN SYLLABICS NE
-# Q
+<Multi_key> <asciicircum> <greater> <Q> : "Ю" U042E   # CYRILLIC CAPITAL LETTER YU
 # R
 <Multi_key> <asciicircum> <greater> <S> : "ഗ" U0D17   # MALAYALAM LETTER GA
 <Multi_key> <asciicircum> <greater> <T> : "⊣" U22A3   # LEFT TACK
 <Multi_key> <asciicircum> <greater> <U> : "⊂" U2282   # SUBSET OF
-<Multi_key> <asciicircum> <greater> <V> : "𝈶" U1D236   # GREEK INSTRUMENTAL NOTATION SYMBOL-40
+<Multi_key> <asciicircum> <greater> <V> : "𝈶" U1D236   # GREEK INSTRUMENTAL NOTATION SYMBOL-40 (ᐸ U1438 is worse but better supported)
 <Multi_key> <asciicircum> <greater> <W> : "ᓬ" U14EC   # CANADIAN SYLLABICS MEDIAL L
 <Multi_key> <asciicircum> <greater> <X> : "⋉" U22C9   # LEFT NORMAL FACTOR SEMIDIRECT PRODUCT
-<Multi_key> <asciicircum> <greater> <Y> : "𝈄" U1D204   # GREEK VOCAL NOTATION SYMBOL-5
+<Multi_key> <asciicircum> <greater> <Y> : "𝈄" U1D204   # GREEK VOCAL NOTATION SYMBOL-5 (🝑 U1F751 is worse but better supported)
 <Multi_key> <asciicircum> <greater> <Z> : "N" U004E   # LATIN CAPITAL LETTER N
 
-# a
+<Multi_key> <asciicircum> <greater> <a> : "o̗"  U006F U0317   # LATIN SMALL LETTER O COMBINING ACUTE ACCENT BELOW
 <Multi_key> <asciicircum> <greater> <b> : "ᓂ" U14C2   # CANADIAN SYLLABICS NI
 <Multi_key> <asciicircum> <greater> <c> : "ᴒ" U1D12   # LATIN SMALL LETTER SIDEWAYS OPEN O
 <Multi_key> <asciicircum> <greater> <d> : "ᓇ" U14C7   # CANADIAN SYLLABICS NA
@@ -2327,20 +2323,20 @@ include "%L"
 <Multi_key> <asciicircum> <greater> <p> : "ᓀ" U14C0   # CANADIAN SYLLABICS NE
 <Multi_key> <asciicircum> <greater> <q> : "ᓄ" U14C4   # CANADIAN SYLLABICS NO
 <Multi_key> <asciicircum> <greater> <r> : "ﬧ" UFB27   # HEBREW LETTER WIDE RESH
-<Multi_key> <asciicircum> <greater> <s> : "𝆘" U1D198   # MUSICAL SYMBOL INVERTED TURN
+<Multi_key> <asciicircum> <greater> <s> : "𝆘" U1D198   # MUSICAL SYMBOL INVERTED TURN (ᔥ U1525 is worse but better supported)
 <Multi_key> <asciicircum> <greater> <t> : "⟞" U27DE   # LONG LEFT TACK
 <Multi_key> <asciicircum> <greater> <u> : "c" U0063   # LATIN SMALL LETTER C
 <Multi_key> <asciicircum> <greater> <v> : "<" U003C   # LESS-THAN SIGN
 <Multi_key> <asciicircum> <greater> <w> : "ɛ" U025B   # LATIN SMALL LETTER OPEN E
 <Multi_key> <asciicircum> <greater> <x> : "×" U00D7   # MULTIPLICATION SIGN
-# y
+<Multi_key> <asciicircum> <greater> <y> : "ﻋـ" UFECB U0640   # ARABIC LETTER AIN INITIAL FORM ARABIC TATWEEL
 <Multi_key> <asciicircum> <greater> <z> : "ɴ" U0274   # LATIN LETTER SMALL CAPITAL N
 
 <Multi_key> <asciicircum> <greater> <0> : "⬭" U2B2D   # WHITE HORIZONTAL ELLIPSE
 <Multi_key> <asciicircum> <greater> <1> : "⥛" U295B   # RIGHTWARDS HARPOON WITH BARB UP FROM BAR
 <Multi_key> <asciicircum> <greater> <2> : "ᘚ" U161A   # CANADIAN SYLLABICS SAYISI JI
 <Multi_key> <asciicircum> <greater> <3> : "ω" U03C9   # GREEK SMALL LETTER OMEGA
-<Multi_key> <asciicircum> <greater> <4> : "𝈦" U1D226   # GREEK INSTRUMENTAL NOTATION SYMBOL-14
+<Multi_key> <asciicircum> <greater> <4> : "𝈦" U1D226   # GREEK INSTRUMENTAL NOTATION SYMBOL-14 (ⵤ̶ U2D64 U0336 is worse but better supported on some platforms)
 <Multi_key> <asciicircum> <greater> <5> : "Ⴐ" U10B0   # GEORGIAN CAPITAL LETTER RAE
 <Multi_key> <asciicircum> <greater> <6> : "თ" U10D7   # GEORGIAN LETTER TAN
 <Multi_key> <asciicircum> <greater> <7> : "⨼" U2A3C   # INTERIOR PRODUCT
@@ -2369,8 +2365,7 @@ include "%L"
 <Multi_key> <dollar> <exclam>      : "ǃ" U01C3    # LATIN LETTER RETROFLEX CLICK
 <Multi_key> <dollar> <quotedbl>    : "ˮ" U02EE    # MODIFIER LETTER DOUBLE APOSTROPHE
 <Multi_key> <dollar> <asciicircum> : "ˆ" U02C6    # MODIFIER LETTER CIRCUMFLEX ACCENT
-<Multi_key> <dollar> <dollar>      : "ֆ" U0586    # ARMENIAN SMALL LETTER FEH
-# ↳ S⃒ U0053 U20D2 is better on some platforms but not others
+<Multi_key> <dollar> <dollar>      : "ֆ" U0586    # ARMENIAN SMALL LETTER FEH (S⃒ U0053 U20D2 is better on some platforms but not others)
 <Multi_key> <dollar> <period>      : "ꓸ" UA4F8    # LISU LETTER TONE MYA TI
 <Multi_key> <dollar> <comma>       : "ꓹ" UA4F9    # LISU LETTER TONE NA PO
 <Multi_key> <dollar> <semicolon>   : "ꓼ" UA4FC    # LISU LETTER TONE MYA NA
@@ -2403,14 +2398,14 @@ include "%L"
 <Multi_key> <dollar> <6> : "Ꮾ" U13EE    # CHEROKEE LETTER WV
 <Multi_key> <dollar> <7> : "𐓒" U104D2   # OSAGE CAPITAL LETTER ZA
 <Multi_key> <dollar> <8> : "𐌚" U1031A   # OLD ITALIC LETTER EF
-<Multi_key> <dollar> <9> : "Ꝯ" UA76E    # LATIN CAPITAL LETTER CON
+<Multi_key> <dollar> <9> : "Ꝯ" UA76E    # LATIN CAPITAL LETTER CON (ᑫ U146B is worse but better supported)
 
 <Multi_key> <dollar> <a> : "а" U0430    # CYRILLIC SMALL LETTER A
 <Multi_key> <dollar> <b> : "ᖯ" U15AF    # CANADIAN SYLLABICS AIVILIK B
 <Multi_key> <dollar> <c> : "с" U0441    # CYRILLIC SMALL LETTER ES
 <Multi_key> <dollar> <d> : "ԁ" U0501    # CYRILLIC SMALL LETTER KOMI DE
 <Multi_key> <dollar> <e> : "е" U0435    # CYRILLIC SMALL LETTER IE
-<Multi_key> <dollar> <f> : "ꬵ" UAB35    # LATIN SMALL LETTER LENIS F
+<Multi_key> <dollar> <f> : "ꬵ" UAB35    # LATIN SMALL LETTER LENIS F (ſ̵  U017F 0335 is worse but better supported on some platforms)
 <Multi_key> <dollar> <g> : "ց" U0581    # ARMENIAN SMALL LETTER CO
 <Multi_key> <dollar> <h> : "һ" U04BB    # CYRILLIC SMALL LETTER SHHA
 <Multi_key> <dollar> <i> : "і" U0456    # CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
