@@ -78,13 +78,29 @@ $ xcompose --sort keys get /
 <Multi_key> <slash> <U2194>		: "↮"	U21AE # LEFT RIGHT ARROW WITH STROKE
 <Multi_key> <slash> <U2395>		: "⍁"	U2341 # / ⎕ APL FUNCTIONAL SYMBOL QUAD SLASH
 
-$ xcompose add ć / c | tee -a ~/.XCompose   # NB tee -a appends to .XCompose
-<Multi_key> <c> <slash> : "ć" U0107    # LATIN SMALL LETTER C WITH ACUTE
+$ xcompose add ć c /
+<Multi_key> <c> <slash> : "ć"  U0107   # LATIN SMALL LETTER C WITH ACUTE (conflicts with ¢)
 
-$ xcompose validate  # (assuming .XCompose contains an 'include "%L"' line)
-[/home/Udzu/.XCompose#35] Compose sequence Multi_key + c + slash for 'ć' conflicts with
-Multi_key + c + slash for '¢'
+$ echo '<Multi_key> <c> <comma> <quote> : "ḉ"' >> ~/.XCompose  # manually add a line to .XCompose
+
+$ xcompose validate
+[/home/Udzu/.XCompose#116] Unrecognised keysym: quote
+[/home/Udzu/.XCompose#116] Missing keysym: expected U1E09
+[/home/Udzu/.XCompose#116] Missing comment: expected LATIN SMALL LETTER C WITH CEDILLA AND ACUTE
+[/home/Udzu/.XCompose#116] Compose sequence Multi_key + c + comma + quote for 'ḉ' conflicts with 
+  [/usr/share/X11/locale/en_US.UTF-8/Compose#428] Multi_key + c + comma for 'ç'
     to ignore this, include the string 'conflict' or 'override' in the comment
-
-$ xcompose --ignore-include validate  # (no conflicts if we ignore the system file)
+    
+$ xcompose -S validate  # by default, system config isn't validated (only parsed for conflicts)
+[/usr/share/X11/locale/en_US.UTF-8/Compose#73] Incorrect comment: LESS-THAN, expected LESS-THAN SIGN
+[/usr/share/X11/locale/en_US.UTF-8/Compose#74] Incorrect comment: LESS-THAN, expected LESS-THAN SIGN
+[/usr/share/X11/locale/en_US.UTF-8/Compose#75] Incorrect comment: GREATER-THAN, expected GREATER-THAN SIGN
+[/usr/share/X11/locale/en_US.UTF-8/Compose#76] Incorrect comment: GREATER-THAN, expected GREATER-THAN SIGN
+[/usr/share/X11/locale/en_US.UTF-8/Compose#121] Incorrect keysym: guillemotleft, expected guillemetleft (or U00AB)
+[/usr/share/X11/locale/en_US.UTF-8/Compose#122] Incorrect keysym: guillemotright, expected guillemetright (or U00BB)
+[/usr/share/X11/locale/en_US.UTF-8/Compose#198] Incorrect comment: ROUBLE SIGN, expected RUBLE SIGN
+[...]
+[/usr/share/X11/locale/en_US.UTF-8/Compose#253] Incorrect keysym: masculine, expected ordmasculine (or U00BA)
+[/usr/share/X11/locale/en_US.UTF-8/Compose#4985] Incorrect comment: ○ \ APL FUNCTIONAL SYMBOL CIRCLE SLOPE, expected APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
+[/usr/share/X11/locale/en_US.UTF-8/Compose#4986] Incorrect comment: \ ○ APL FUNCTIONAL SYMBOL CIRCLE SLOPE, expected APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
 ```
