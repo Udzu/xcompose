@@ -254,7 +254,8 @@ def validate(args: argparse.Namespace) -> None:
             if any(not is_keysym(c) for c in defn.keys):
                 keysyms = {c for c in defn.keys if not is_keysym(c)}
                 print(
-                    f"[{defn.file}#{defn.line_no}] Unrecognised keysym{'' if len(keysyms) == 1 else 's'}: "
+                    f"[{defn.file}#{defn.line_no}] Unrecognised "
+                    f"keysym{'' if len(keysyms) == 1 else 's'}: "
                     f"{', '.join(keysyms)}"
                 )
 
@@ -278,7 +279,8 @@ def validate(args: argparse.Namespace) -> None:
             elif defn.keysym and from_code_point(defn.keysym):
                 print(
                     f"[{defn.file}#{defn.line_no}] "
-                    f"Keysym for just a single character: {defn.keysym}, actually {expected_keysym}"
+                    f"Keysym for just a single character: {defn.keysym}, "
+                    f"actually {expected_keysym}"
                 )
 
             if expected_comment:
