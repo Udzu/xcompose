@@ -27,13 +27,13 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Letter games** (297): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
 ### Non-Latin script characters (4821)
-* **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِيت⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܝܕܝܬ⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
-* **Armenian** (86): Րեդդit etc
-* **Brahmic Scripts**: Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Kannada, Limbu, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu (1296): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ, 𑄢𑄬𑄘𑄨𑄖, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆದಿತ, ᤖᤧᤍᤡᤳ, രെഡിട, ꯔꯦꯗꯤꯠ, ରେଡିଟ, ꢬꢞꢶꢜ, රෙදිත, ரெதிட, రెడిట etc
+* **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِيت⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܗܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
+* **Armenian** (86): Րեդդիտ etc
+* **Brahmic Scripts**: Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Kannada, Limbu, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu (1296): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ္, 𑄢𑄬𑄘𑄨𑄖𑄳, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆಡಿತ್, ᤖᤧᤍᤡᤳ, രെഡിട്, ꯔꯦꯗꯤꯠ, ରେଡିଟ, ꢬꢾꢞꢶꢜ, රෙඩිට්, ரெடிட், రెడిట్ etc
 * **Unified English Braille** (79): ⠗⠫⠙⠊⠞ etc
 * **ConScripts**: Cherokee, Deseret, Inuktitut Syllabics, Ol Chiki, Shavian (488): ᎴᏗᏛ, 𐐡𐐇𐐔𐐆𐐓, ᕃᑎᑦ, ᱨᱮᱫᱫᱤᱛ, 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** & Glagolitic (190): Ре́ддит, Ⱃⰵδδιτ etc
-* **Geʽez** & NKo (409): ርዲተ, ⁧ߙߍߘߘߌߕ⁩ etc 
+* **Geʽez** & NKo (409): ሬዲተ, ⁧ߙߍߘߘߌߕ⁩ etc
 * **Georgian**: Mtavruli, Nuskhuri, Mkhedruli (154): რედდიტ, ႰႤႣႣႨႲ etc
 * **Greek**, Coptic & Gothic (488): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, 𐍂𐌴𐌳𐌳𐌹𐍄 etc
 * **Hebrew**, Phoenician, & Samaritan (159): ⁧רֶדִיט⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc
@@ -42,7 +42,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **International Morse Code** (76): ···---··· etc
 * **Old Italic** & Runic (117): 𐌓𐌄𐌃𐌃𐌉𐌕, ᚱᛖᛞᛞᛁᛏ etc
 * **Thai**, Babayin, Khmer & Lao (261): เรดดิต, ᜍᜒᜇᜒᜆ᜔, រេទិត, ເຣັດິຕ etc
-* **Zhuyin**, Mongolian, Tai Le & Tibetan (304): ㄏㄨㄥˊㄉㄧˊ, ᠷᠡᠳᠢᠲ, ᥘᥦᥖᥤᥖ, རེཌིཊ etc
+* **Zhuyin**, Mongolian, Tai Le & Tibetan (304): ㄖㄜㄉㄧㄊ, ᠷᠡᠳᠢᠲ, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 
 ### Symbols (2670)
 * **Emoji** (1517): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
