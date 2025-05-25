@@ -74,14 +74,17 @@ $ xcompose --sort keys get /
 <Multi_key> <slash> <B>			: "Ƀ"	U0243 # LATIN CAPITAL LETTER B WITH STROKE
 <Multi_key> <slash> <C>			: "₡"	U20a1 # COLON SIGN
 <Multi_key> <slash> <D>			: "Đ"	Dstroke # LATIN CAPITAL LETTER D WITH STROKE
-[...]
+⋮
 <Multi_key> <slash> <U2194>		: "↮"	U21AE # LEFT RIGHT ARROW WITH STROKE
 <Multi_key> <slash> <U2395>		: "⍁"	U2341 # / ⎕ APL FUNCTIONAL SYMBOL QUAD SLASH
+
+$ xcompose add ɕ c @
+<Multi_key> <c> <at> : "ɕ"  U0255   # LATIN SMALL LETTER C WITH CURL
 
 $ xcompose add ć c /
 <Multi_key> <c> <slash> : "ć"  U0107   # LATIN SMALL LETTER C WITH ACUTE (conflicts with ¢)
 
-$ echo '<Multi_key> <c> <comma> <quote> : "ḉ"' >> ~/.XCompose  # manually add a line to .XCompose
+$ echo '<Multi_key> <c> <comma> <quote> : "ḉ"' >> ~/.XCompose  # add a line to .XCompose
 
 $ xcompose validate
 [/home/Udzu/.XCompose#116] Unrecognised keysym: quote
@@ -99,7 +102,7 @@ $ xcompose -S validate  # by default, system config isn't validated (only parsed
 [/usr/share/X11/locale/en_US.UTF-8/Compose#121] Incorrect keysym: guillemotleft, expected guillemetleft (or U00AB)
 [/usr/share/X11/locale/en_US.UTF-8/Compose#122] Incorrect keysym: guillemotright, expected guillemetright (or U00BB)
 [/usr/share/X11/locale/en_US.UTF-8/Compose#198] Incorrect comment: ROUBLE SIGN, expected RUBLE SIGN
-[...]
+⋮
 [/usr/share/X11/locale/en_US.UTF-8/Compose#253] Incorrect keysym: masculine, expected ordmasculine (or U00BA)
 [/usr/share/X11/locale/en_US.UTF-8/Compose#4985] Incorrect comment: ○ \ APL FUNCTIONAL SYMBOL CIRCLE SLOPE, expected APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
 [/usr/share/X11/locale/en_US.UTF-8/Compose#4986] Incorrect comment: \ ○ APL FUNCTIONAL SYMBOL CIRCLE SLOPE, expected APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
