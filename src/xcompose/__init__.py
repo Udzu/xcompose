@@ -254,6 +254,11 @@ def validate(args: argparse.Namespace) -> None:
                         f"[{defn.file}#{defn.line_no}] "
                         f"Incorrect keysym: {defn.keysym}, expected {expected_keysym}"
                     )
+            elif defn.keysym and from_code_point(defn.keysym):
+                print(
+                    f"[{defn.file}#{defn.line_no}] "
+                    f"Keysym for just a single character: {defn.keysym}, actually {expected_keysym}"
+                )
 
             if expected_comment:
                 if defn.comment is None:

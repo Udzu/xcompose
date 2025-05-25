@@ -78,12 +78,12 @@ $ xcompose --sort keys get /
 <Multi_key> <slash> <U2194>		: "↮"	U21AE # LEFT RIGHT ARROW WITH STROKE
 <Multi_key> <slash> <U2395>		: "⍁"	U2341 # / ⎕ APL FUNCTIONAL SYMBOL QUAD SLASH
 
-$ xcompose add ć / c | tee -a ~/.XCompose   # NB tee -a appends to .XCompose
+$ xcompose add ć c / | tee -a ~/.XCompose   # NB tee -a appends to .XCompose
 <Multi_key> <c> <slash> : "ć" U0107    # LATIN SMALL LETTER C WITH ACUTE
 
 $ xcompose validate  # (assuming .XCompose contains an 'include "%L"' line)
-[/home/Udzu/.XCompose#35] Compose sequence Multi_key + c + slash for 'ć' conflicts with
-Multi_key + c + slash for '¢'
+[/home/Udzu/.XCompose#16] Compose sequence Multi_key + c + slash for 'ć' conflicts with 
+  [/usr/share/X11/locale/en_US.UTF-8/Compose#142] Multi_key + c + slash for '¢'
     to ignore this, include the string 'conflict' or 'override' in the comment
 
 $ xcompose --ignore-include validate  # (no conflicts if we ignore the system file)
