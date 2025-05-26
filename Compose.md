@@ -18,13 +18,13 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (127): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 
-### Latin script characters (1888)
+### Latin script characters (1891)
 * **International Phonetic Alphabet** (137): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (262): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (146): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (309): ʣ ㏈ etc
-* **Letter games** (303): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
+* **Letter games** (306): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
 ### Non-Latin script characters (4821)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِيت⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܗܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
@@ -37,18 +37,18 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Georgian**: Mtavruli, Nuskhuri, Mkhedruli (154): რედდიტ, ႰႤႣႣႨႲ etc
 * **Greek**, Coptic & Gothic (488): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, 𐍂𐌴𐌳𐌳𐌹𐍄 etc
 * **Hebrew**, Phoenician, & Samaritan (159): ⁧רֶדִיט⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc
-* **Japanese** (mostly kana) (302): 「レヂィット」 etc
+* **Japanese** (mostly kana) (302): 「レディット」 etc
 * **Korean** (using positional jamo) (118): 레딧 etc
 * **International Morse Code** (76): ···---··· etc
 * **Old Italic** & Runic (117): 𐌓𐌄𐌃𐌃𐌉𐌕, ᚱᛖᛞᛞᛁᛏ etc
 * **Thai**, Babayin, Khmer & Lao (261): เรดดิต, ᜍᜒᜇᜒᜆ᜔, រេទិត, ເຣັດິຕ etc
 * **Zhuyin**, Mongolian, Tai Le & Tibetan (304): ㄏㄨㄥˊㄉㄧˊ, ᠷᠡᠳᠢᠲ, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 
-### Symbols (2670)
+### Symbols (2671)
 * **Emoji** (1517): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (266): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
-* **Music** (97): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
+* **Music** (98): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
 * **Arrows** (155): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc

@@ -1,6 +1,7 @@
 import argparse
 import os
 import re
+import sys
 import unicodedata
 from collections.abc import Iterable
 from dataclasses import dataclass
@@ -163,7 +164,7 @@ def add(args: argparse.Namespace) -> None:
         names = names.replace("VARIATION SELECTOR-16", "EMOJI")
     if conflict:
         names = names + f" (conflicts with {conflict})"
-    print(f'{keys} : "{args.value}"  {codes}   # {names}')
+    print(f'{keys} : "{args.value}"  {codes}  # {names}')
 
 
 def find(args: argparse.Namespace) -> None:
@@ -384,7 +385,6 @@ def main() -> None:
         "-s",
         "--sort",
         metavar="SORT",
-        # dest="modifier_key",
         choices=["keys", "keys_length", "value"],
         default=None,
         help="sort resulting sequences (options: 'keys', 'value')",
@@ -433,9 +433,11 @@ def main() -> None:
     args.func(args)
 
 
-def format(config: str, max_colon_indent=50, max_comment_indent=20) -> str:
+def format(args: argparse.Namespace) -> str:
     """Reformat xcompose config so that definitions and comments line up."""
-    lines = config.splitlines()
+
+    text = sys.stdin.read() if args.file in (None, Path("-")) else args.file.read_text()
+    lines = text.splitlines()
 
     colon_indent = 0
     comment_indent = 0
@@ -447,8 +449,10 @@ def format(config: str, max_colon_indent=50, max_comment_indent=20) -> str:
             s = f'"{string}"  {keysym or ""}'
             comment_indent = max(comment_indent, len(s))
 
-    colon_indent = min(max_colon_indent, colon_indent)
-    comment_indent = min(max_comment_indent, comment_indent)
+    if args.max_keys >= 0:
+        colon_indent = min(args.max_keys, colon_indent)
+    if args.max_val >= 0:
+        comment_indent = min(args.max_val, comment_indent)
 
     output = []
     for line in lines:
@@ -456,7 +460,7 @@ def format(config: str, max_colon_indent=50, max_comment_indent=20) -> str:
             events, string, keysym, comment = m.groups()
             e = re.sub(r">\s+<", "> <", events.strip()).ljust(colon_indent)
             s = f'"{string}"  {keysym or ""}'.ljust(comment_indent)
-            l = f"{e} : {s}   # {comment}"
+            l = f"{e} : {s}  # {comment}"
             output.append(l)
         else:
             output.append(line)
@@ -465,12 +469,35 @@ def format(config: str, max_colon_indent=50, max_comment_indent=20) -> str:
 
 
 def xcfmt() -> None:
-    # TODO: args (input, limits, ...?)
     parser = argparse.ArgumentParser(
         description=("""Xcompose config format utility."""),
         formatter_class=argparse.RawTextHelpFormatter,
     )
+    parser.add_argument(
+        'file',
+        nargs='?',
+        type=Path,
+        help="config file (or stdin, if unspecified or -)"
+    )
+    parser.add_argument(
+        "-k",
+        "--max-keys",
+        metavar="M",
+        type=int,
+        default=40,
+        help="maximum keys indent before the colon (default: 40)",
+    )
+    parser.add_argument(
+        "-v",
+        "--max-val",
+        metavar="N",
+        type=int,
+        default=10,
+        help="maximum value indent before the comment (default: 10)",
+    )
     args = parser.parse_args()
+    print(format(args))
+
 
 
 if __name__ == "__main__":
