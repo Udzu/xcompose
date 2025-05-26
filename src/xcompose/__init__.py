@@ -454,19 +454,19 @@ def format(args: argparse.Namespace) -> None:
     if args.max_value_indent >= 0:
         comment_indent = min(args.max_value_indent, comment_indent)
 
-    output = []
+    output_lines = []
     for line in lines:
         if m := re.match(DEFN_REGEXP, line):
             events, string, keysym, comment = m.groups()
             e = re.sub(r">\s+<", "> <", events.strip()).ljust(colon_indent)
             s = f'"{string}"  {keysym or ""}'.ljust(comment_indent)
-            l = f"{e} : {s}  # {comment}"
-            output.append(l)
+            output_line = f"{e} : {s}  # {comment}"
+            output_lines.append(output_line)
         else:
-            output.append(line)
+            output_lines.append(line)
 
-    # TODO: output file
-    print("\n".join(output))
+    output = "\n".join(output_lines)
+    print(output) if args.output is None else args.output.write_text(output)
 
 
 def xcfmt() -> None:
