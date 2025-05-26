@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/pypi/l/xcompose)](LICENSE)
 [![Ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 
-A simple utility to help configure X11 compose key sequences.
+Simple utilities to help configure X11 compose key sequences.
 
 > The repo also hosts an extensive [.XCompose file](Compose) with over 10 000 new sequences; [more details here](Compose.md).
 
@@ -26,7 +26,7 @@ Only tested on Ubuntu 24, but should work more widely (though still very much be
 $ xcompose -h
 usage: xcompose [-h] [-f FILE | -S] [-i] [-k KEY] [-s SORT] {add,find,get,validate} ...
 
-Xcompose sequence helper utility.
+XCompose sequence helper utility.
 
 positional arguments:
   {add,find,get,validate}
@@ -42,6 +42,23 @@ options:
   -i, --ignore-include  don't follow any include declarations in the config
   -k KEY, --key KEY     modifier key keysym (default is Multi_key; use ANY for all)
   -s SORT, --sort SORT  sort resulting sequences (options: 'keys', 'value')
+
+$ xcfmt -h
+usage: xcfmt [-h] [-o FILE] [-k N] [-v N] [FILE]
+
+XCompose config file format utility.
+
+positional arguments:
+  FILE                  file to format (uses stdin if unspecified)
+
+options:
+  -h, --help            show this help message and exit
+  -o FILE, --output FILE
+                        file to write output to (uses stdout if unspecified)
+  -k N, --max-key-indent N
+                        maximum indentation up to the colon (default: 40)
+  -v N, --max-value-indent N
+                        maximum indentation up to the comment (default: 10)
 ```
 
 ### Examples

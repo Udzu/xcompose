@@ -351,7 +351,7 @@ def validate(args: argparse.Namespace) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description=("""Xcompose sequence helper utility."""),
+        description=("""XCompose sequence helper utility."""),
         formatter_class=argparse.RawTextHelpFormatter,
     )
     group = parser.add_mutually_exclusive_group()
@@ -433,7 +433,7 @@ def main() -> None:
     args.func(args)
 
 
-def format(args: argparse.Namespace) -> str:
+def format(args: argparse.Namespace) -> None:
     """Reformat xcompose config so that definitions and comments line up."""
 
     text = sys.stdin.read() if args.file in (None, Path("-")) else args.file.read_text()
@@ -449,10 +449,10 @@ def format(args: argparse.Namespace) -> str:
             s = f'"{string}"  {keysym or ""}'
             comment_indent = max(comment_indent, len(s))
 
-    if args.max_keys >= 0:
-        colon_indent = min(args.max_keys, colon_indent)
-    if args.max_val >= 0:
-        comment_indent = min(args.max_val, comment_indent)
+    if args.max_key_indent >= 0:
+        colon_indent = min(args.max_key_indent, colon_indent)
+    if args.max_value_indent >= 0:
+        comment_indent = min(args.max_value_indent, comment_indent)
 
     output = []
     for line in lines:
@@ -465,39 +465,47 @@ def format(args: argparse.Namespace) -> str:
         else:
             output.append(line)
 
-    return "\n".join(output)
+    # TODO: output file
+    print("\n".join(output))
 
 
 def xcfmt() -> None:
     parser = argparse.ArgumentParser(
-        description=("""Xcompose config format utility."""),
+        description=("""XCompose config file format utility."""),
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument(
-        'file',
-        nargs='?',
+        "file",
+        metavar="FILE",
+        nargs="?",
         type=Path,
-        help="config file (or stdin, if unspecified or -)"
+        help="file to format (uses stdin if unspecified)",
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        metavar="FILE",
+        type=Path,
+        help="file to write output to (uses stdout if unspecified)",
     )
     parser.add_argument(
         "-k",
-        "--max-keys",
-        metavar="M",
+        "--max-key-indent",
+        metavar="N",
         type=int,
         default=40,
-        help="maximum keys indent before the colon (default: 40)",
+        help="maximum indentation up to the colon (default: 40)",
     )
     parser.add_argument(
         "-v",
-        "--max-val",
+        "--max-value-indent",
         metavar="N",
         type=int,
         default=10,
-        help="maximum value indent before the comment (default: 10)",
+        help="maximum indentation up to the comment (default: 10)",
     )
     args = parser.parse_args()
-    print(format(args))
-
+    format(args)
 
 
 if __name__ == "__main__":
