@@ -85,6 +85,12 @@ def is_keysym(code: str) -> bool:
 
 COMPOSE_KEY = "Multi_key"
 ANY_KEY = "ANY"
+DEFN_REGEXP = re.compile(
+    r"^\s*(?P<events>(?:<[^>]+>\s*)+):"
+    r'\s*"(?P<string>(?:\\"|[^"])+)"'
+    r"\s*(?P<keysym>[^#]*[^\s#])?"
+    r"\s*(?:#\s*(?P<comment>.+\S)?)?\s*$"
+)
 
 
 @dataclass
@@ -116,13 +122,7 @@ def get_definitions(
                     continue
                 include_path = get_include_path(line[8:].strip().strip('"'))
                 yield from get_definitions(include_path, modifier_key=modifier_key)
-            elif m := re.match(
-                r"^\s*(?P<events>(?:<[^>]+>\s*)+):"
-                r'\s*"(?P<string>(?:\\"|[^"])+)"'
-                r"\s*(?P<keysym>[^#]*[^\s#])?"
-                r"\s*(?:#\s*(?P<comment>.+\S)?)?\s*$",
-                line,
-            ):
+            elif m := re.match(DEFN_REGEXP, line):
                 events, string, keysym, comment = m.groups()
                 string = string.encode("raw_unicode_escape").decode("unicode_escape")
                 keys = tuple(re.findall(r"<([^>]+)>", events))
@@ -431,6 +431,46 @@ def main() -> None:
     if args.modifier_key == ANY_KEY:
         args.modifier_key = None
     args.func(args)
+
+
+def format(config: str, max_colon_indent=50, max_comment_indent=20) -> str:
+    """Reformat xcompose config so that definitions and comments line up."""
+    lines = config.splitlines()
+
+    colon_indent = 0
+    comment_indent = 0
+    for line in lines:
+        if m := re.match(DEFN_REGEXP, line):
+            events, string, keysym, comment = m.groups()
+            e = re.sub(r">\s+<", "> <", events.strip())
+            colon_indent = max(colon_indent, len(e))
+            s = f'"{string}"  {keysym or ""}'
+            comment_indent = max(comment_indent, len(s))
+
+    colon_indent = min(max_colon_indent, colon_indent)
+    comment_indent = min(max_comment_indent, comment_indent)
+
+    output = []
+    for line in lines:
+        if m := re.match(DEFN_REGEXP, line):
+            events, string, keysym, comment = m.groups()
+            e = re.sub(r">\s+<", "> <", events.strip()).ljust(colon_indent)
+            s = f'"{string}"  {keysym or ""}'.ljust(comment_indent)
+            l = f"{e} : {s}   # {comment}"
+            output.append(l)
+        else:
+            output.append(line)
+
+    return "\n".join(output)
+
+
+def xcfmt() -> None:
+    # TODO: args (input, limits, ...?)
+    parser = argparse.ArgumentParser(
+        description=("""Xcompose config format utility."""),
+        formatter_class=argparse.RawTextHelpFormatter,
+    )
+    args = parser.parse_args()
 
 
 if __name__ == "__main__":
