@@ -1,6 +1,7 @@
 import argparse
 import os
 import re
+import sys
 import unicodedata
 from collections.abc import Iterable
 from dataclasses import dataclass
@@ -85,6 +86,12 @@ def is_keysym(code: str) -> bool:
 
 COMPOSE_KEY = "Multi_key"
 ANY_KEY = "ANY"
+DEFN_REGEXP = re.compile(
+    r"^\s*(?P<events>(?:<[^>]+>\s*)+):"
+    r'\s*"(?P<string>(?:\\"|[^"])+)"'
+    r"\s*(?P<keysym>[^#]*[^\s#])?"
+    r"\s*(?:#\s*(?P<comment>.+\S)?)?\s*$"
+)
 
 
 @dataclass
@@ -116,13 +123,7 @@ def get_definitions(
                     continue
                 include_path = get_include_path(line[8:].strip().strip('"'))
                 yield from get_definitions(include_path, modifier_key=modifier_key)
-            elif m := re.match(
-                r"^\s*(?P<events>(?:<[^>]+>\s*)+):"
-                r'\s*"(?P<string>(?:\\"|[^"])+)"'
-                r"\s*(?P<keysym>[^#]*[^\s#])?"
-                r"\s*(?:#\s*(?P<comment>.+\S)?)?\s*$",
-                line,
-            ):
+            elif m := re.match(DEFN_REGEXP, line):
                 events, string, keysym, comment = m.groups()
                 string = string.encode("raw_unicode_escape").decode("unicode_escape")
                 keys = tuple(re.findall(r"<([^>]+)>", events))
@@ -163,7 +164,7 @@ def add(args: argparse.Namespace) -> None:
         names = names.replace("VARIATION SELECTOR-16", "EMOJI")
     if conflict:
         names = names + f" (conflicts with {conflict})"
-    print(f'{keys} : "{args.value}"  {codes}   # {names}')
+    print(f'{keys} : "{args.value}"  {codes}  # {names}')
 
 
 def find(args: argparse.Namespace) -> None:
@@ -350,7 +351,7 @@ def validate(args: argparse.Namespace) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description=("""Xcompose sequence helper utility."""),
+        description=("""XCompose sequence helper utility."""),
         formatter_class=argparse.RawTextHelpFormatter,
     )
     group = parser.add_mutually_exclusive_group()
@@ -384,7 +385,6 @@ def main() -> None:
         "-s",
         "--sort",
         metavar="SORT",
-        # dest="modifier_key",
         choices=["keys", "keys_length", "value"],
         default=None,
         help="sort resulting sequences (options: 'keys', 'value')",
@@ -431,6 +431,81 @@ def main() -> None:
     if args.modifier_key == ANY_KEY:
         args.modifier_key = None
     args.func(args)
+
+
+def format(args: argparse.Namespace) -> None:
+    """Reformat xcompose config so that definitions and comments line up."""
+
+    text = sys.stdin.read() if args.file in (None, Path("-")) else args.file.read_text()
+    lines = text.splitlines()
+
+    colon_indent = 0
+    comment_indent = 0
+    for line in lines:
+        if m := re.match(DEFN_REGEXP, line):
+            events, string, keysym, comment = m.groups()
+            e = re.sub(r">\s+<", "> <", events.strip())
+            colon_indent = max(colon_indent, len(e))
+            s = f'"{string}"  {keysym or ""}'
+            comment_indent = max(comment_indent, len(s))
+
+    if args.max_key_indent >= 0:
+        colon_indent = min(args.max_key_indent, colon_indent)
+    if args.max_value_indent >= 0:
+        comment_indent = min(args.max_value_indent, comment_indent)
+
+    output_lines = []
+    for line in lines:
+        if m := re.match(DEFN_REGEXP, line):
+            events, string, keysym, comment = m.groups()
+            e = re.sub(r">\s+<", "> <", events.strip()).ljust(colon_indent)
+            s = f'"{string}"  {keysym or ""}'.ljust(comment_indent)
+            output_line = f"{e} : {s}  # {comment}"
+            output_lines.append(output_line)
+        else:
+            output_lines.append(line)
+
+    output = "\n".join(output_lines)
+    print(output) if args.output is None else args.output.write_text(output)
+
+
+def xcfmt() -> None:
+    parser = argparse.ArgumentParser(
+        description=("""XCompose config file format utility."""),
+        formatter_class=argparse.RawTextHelpFormatter,
+    )
+    parser.add_argument(
+        "file",
+        metavar="FILE",
+        nargs="?",
+        type=Path,
+        help="file to format (uses stdin if unspecified)",
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        metavar="FILE",
+        type=Path,
+        help="file to write output to (uses stdout if unspecified)",
+    )
+    parser.add_argument(
+        "-k",
+        "--max-key-indent",
+        metavar="N",
+        type=int,
+        default=40,
+        help="maximum indentation up to the colon (default: 40)",
+    )
+    parser.add_argument(
+        "-v",
+        "--max-value-indent",
+        metavar="N",
+        type=int,
+        default=10,
+        help="maximum indentation up to the comment (default: 10)",
+    )
+    args = parser.parse_args()
+    format(args)
 
 
 if __name__ == "__main__":
