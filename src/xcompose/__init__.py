@@ -471,7 +471,7 @@ def format(args: argparse.Namespace) -> None:
 
 def xcfmt() -> None:
     parser = argparse.ArgumentParser(
-        description=("""XCompose config file format utility."""),
+        description=("""XCompose config formatting utility."""),
         formatter_class=argparse.RawTextHelpFormatter,
     )
     parser.add_argument(

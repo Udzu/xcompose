@@ -42,23 +42,6 @@ options:
   -i, --ignore-include  don't follow any include declarations in the config
   -k KEY, --key KEY     modifier key keysym (default is Multi_key; use ANY for all)
   -s SORT, --sort SORT  sort resulting sequences (options: 'keys', 'value')
-
-$ xcfmt -h
-usage: xcfmt [-h] [-o FILE] [-k N] [-v N] [FILE]
-
-XCompose config file format utility.
-
-positional arguments:
-  FILE                  file to format (uses stdin if unspecified)
-
-options:
-  -h, --help            show this help message and exit
-  -o FILE, --output FILE
-                        file to write output to (uses stdout if unspecified)
-  -k N, --max-key-indent N
-                        maximum indentation up to the colon (default: 40)
-  -v N, --max-value-indent N
-                        maximum indentation up to the comment (default: 10)
 ```
 
 ### Examples
@@ -123,4 +106,27 @@ $ xcompose -S validate  # system config isn't validated by default (only parsed 
 [/usr/share/X11/locale/en_US.UTF-8/Compose#253] Incorrect keysym: masculine, expected ordmasculine (or U00BA)
 [/usr/share/X11/locale/en_US.UTF-8/Compose#4985] Incorrect comment: ○ \ APL FUNCTIONAL SYMBOL CIRCLE SLOPE, expected APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
 [/usr/share/X11/locale/en_US.UTF-8/Compose#4986] Incorrect comment: \ ○ APL FUNCTIONAL SYMBOL CIRCLE SLOPE, expected APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
+```
+
+### Formatting
+
+There is also a separate utility for helping format configs so that definitions line up nicely.
+
+```
+$ xcfmt -h
+usage: xcfmt [-h] [-o FILE] [-k N] [-v N] [FILE]
+
+XCompose config formating utility.
+
+positional arguments:
+  FILE                  file to format (uses stdin if unspecified)
+
+options:
+  -h, --help            show this help message and exit
+  -o FILE, --output FILE
+                        file to write output to (uses stdout if unspecified)
+  -k N, --max-key-indent N
+                        maximum indentation up to the colon (default: 40)
+  -v N, --max-value-indent N
+                        maximum indentation up to the comment (default: 10)
 ```
