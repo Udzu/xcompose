@@ -483,8 +483,15 @@ include "%L"
 <Multi_key> <comma> <v>             : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA
 <Multi_key> <grave> <comma>         : "ʽ"  U02BD    # MODIFIER LETTER REVERSED COMMA
 
-# for consistency, since we priorities using v for carons
+# for consistency, since we priorities using v for carons and - for horiztonal strokes
+
 <Multi_key> <v> <l>                 : "ľ"  U013E   # LATIN SMALL LETTER L WITH CARON (conflicts with useless |)
+<Multi_key> <minus> <B>             : "Ƀ"  U0243   # LATIN CAPITAL LETTER B WITH STROKE
+<Multi_key> <minus> <b>             : "ƀ"  U0180   # LATIN SMALL LETTER B WITH STROKE
+<Multi_key> <slash> <b>             : "␢"  U2422   # BLANK SYMBOL (conflicts with ƀ, use -b)
+<Multi_key> <minus> <H>             : "Ħ"  U0126   # LATIN CAPITAL LETTER H WITH STROKE
+<Multi_key> <minus> <h>             : "ħ"  U0127   # LATIN SMALL LETTER H WITH STROKE
+<Multi_key> <minus> <z>             : "ƶ"  U01B6   # LATIN SMALL LETTER Z WITH STROKE
 
 ###############################################
 # Superscripts, subscripts and small capitals #
@@ -2040,6 +2047,44 @@ include "%L"
 <Multi_key> <braceleft> <k> <m> <3> <braceright> : "㎦" U33A6   # SQUARE KM CUBED
 <Multi_key> <braceleft> <m> <m> <2> <braceright> : "㎟" U339F   # SQUARE MM SQUARED
 <Multi_key> <braceleft> <m> <m> <3> <braceright> : "㎣" U33A3   # SQUARE MM CUBED
+
+# control symbols
+
+<Multi_key> <backslash> <N> <U> <L> <backslash> : "␀"  U2400  # SYMBOL FOR NULL
+<Multi_key> <backslash> <S> <O> <H> <backslash> : "␁"  U2401  # SYMBOL FOR START OF HEADING
+<Multi_key> <backslash> <S> <T> <X> <backslash> : "␂"  U2402  # SYMBOL FOR START OF TEXT
+<Multi_key> <backslash> <E> <T> <X> <backslash> : "␃"  U2403  # SYMBOL FOR END OF TEXT
+<Multi_key> <backslash> <E> <O> <T> <backslash> : "␄"  U2404  # SYMBOL FOR END OF TRANSMISSION
+<Multi_key> <backslash> <E> <N> <Q> <backslash> : "␅"  U2405  # SYMBOL FOR ENQUIRY
+<Multi_key> <backslash> <A> <C> <K> <backslash> : "␆"  U2406  # SYMBOL FOR ACKNOWLEDGE
+<Multi_key> <backslash> <B> <E> <L> <backslash> : "␇"  U2407  # SYMBOL FOR BELL
+<Multi_key> <backslash> <B> <S> <backslash> : "␈"  U2408  # SYMBOL FOR BACKSPACE
+<Multi_key> <backslash> <H> <T> <backslash> : "␉"  U2409  # SYMBOL FOR HORIZONTAL TABULATION
+<Multi_key> <backslash> <L> <F> <backslash> : "␊"  U240A  # SYMBOL FOR LINE FEED
+<Multi_key> <backslash> <V> <T> <backslash> : "␋"  U240B  # SYMBOL FOR VERTICAL TABULATION
+<Multi_key> <backslash> <F> <F> <backslash> : "␌"  U240C  # SYMBOL FOR FORM FEED
+<Multi_key> <backslash> <C> <R> <backslash> : "␍"  U240D  # SYMBOL FOR CARRIAGE RETURN
+<Multi_key> <backslash> <S> <O> <backslash> : "␎"  U240E  # SYMBOL FOR SHIFT OUT
+<Multi_key> <backslash> <S> <I> <backslash> : "␏"  U240F  # SYMBOL FOR SHIFT IN
+<Multi_key> <backslash> <D> <L> <E> <backslash> : "␐"  U2410  # SYMBOL FOR DATA LINK ESCAPE
+<Multi_key> <backslash> <D> <C> <1> <backslash> : "␑"  U2411  # SYMBOL FOR DEVICE CONTROL ONE
+<Multi_key> <backslash> <D> <C> <2> <backslash> : "␒"  U2412  # SYMBOL FOR DEVICE CONTROL TWO
+<Multi_key> <backslash> <D> <C> <3> <backslash> : "␓"  U2413  # SYMBOL FOR DEVICE CONTROL THREE
+<Multi_key> <backslash> <D> <C> <4> <backslash> : "␔"  U2414  # SYMBOL FOR DEVICE CONTROL FOUR
+<Multi_key> <backslash> <N> <A> <K> <backslash> : "␕"  U2415  # SYMBOL FOR NEGATIVE ACKNOWLEDGE
+<Multi_key> <backslash> <S> <Y> <N> <backslash> : "␖"  U2416  # SYMBOL FOR SYNCHRONOUS IDLE
+<Multi_key> <backslash> <E> <T> <B> <backslash> : "␗"  U2417  # SYMBOL FOR END OF TRANSMISSION BLOCK
+<Multi_key> <backslash> <C> <A> <N> <backslash> : "␘"  U2418  # SYMBOL FOR CANCEL
+<Multi_key> <backslash> <E> <M> <backslash> : "␙"  U2419  # SYMBOL FOR END OF MEDIUM
+<Multi_key> <backslash> <S> <U> <B> <backslash> : "␚"  U241A  # SYMBOL FOR SUBSTITUTE
+<Multi_key> <backslash> <E> <S> <C> <backslash> : "␛"  U241B  # SYMBOL FOR ESCAPE
+<Multi_key> <backslash> <F> <S> <backslash> : "␜"  U241C  # SYMBOL FOR FILE SEPARATOR
+<Multi_key> <backslash> <G> <S> <backslash> : "␝"  U241D  # SYMBOL FOR GROUP SEPARATOR
+<Multi_key> <backslash> <R> <S> <backslash> : "␞"  U241E  # SYMBOL FOR RECORD SEPARATOR
+<Multi_key> <backslash> <U> <S> <backslash> : "␟"  U241F  # SYMBOL FOR UNIT SEPARATOR
+<Multi_key> <backslash> <S> <P> <backslash> : "␠"  U2420  # SYMBOL FOR SPACE
+<Multi_key> <backslash> <D> <E> <L> <backslash> : "␡"  U2421  # SYMBOL FOR DELETE
+<Multi_key> <backslash> <N> <L> <backslash> : "␤"  U2424  # SYMBOL FOR NEWLINE
 
 ################
 # Letter games #
@@ -8228,8 +8273,6 @@ include "%L"
 <Multi_key> <less> <greater>          : "↔"  U2194   # LEFT RIGHT ARROW (conflicts with ⋄, use diamond)
 <Multi_key> <bar> <greater>           : "↦"  U21A6   # RIGHTWARDS ARROW FROM BAR (MAPS TO)
 <Multi_key> <o> <period>              : "∘"  U2218   # RING OPERATOR (COMPOSITION)
-<Multi_key> <backslash> <A>           : "∀"  U2200   # FOR ALL
-<Multi_key> <backslash> <E>           : "∃"  U2203   # THERE EXISTS
 <Multi_key> <slash> <E>               : "∄"  U2204   # THERE DOES NOT EXIST
 <Multi_key> <backslash> <backslash>   : "∖"  U2216   # SET MINUS
 <Multi_key> <slash> <0>               : "∅"  U2205   # EMPTY SET (alternatively {})
@@ -8393,6 +8436,8 @@ include "%L"
 <Multi_key> <C> <U> <P>                 : "⋃"  U22C3   # N-ARY UNION
 <Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN (overrides di)
 <Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter) (use gem for 💎)
+<Multi_key> <e> <x> <i> <s> <t> <s>     : "∃"  U2203   # THERE EXISTS
+<Multi_key> <f> <o> <r> <a> <l> <l>     : "∀"  U2200   # FOR ALL
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
 <Multi_key> <i> <i> <i> <i> <n> <t>     : "⨌"  U2A0C   # QUADRUPLE INTEGRAL OPERATOR
 <Multi_key> <i> <i> <i> <n> <t>         : "∭"  U222D   # TRIPLE INTEGRAL

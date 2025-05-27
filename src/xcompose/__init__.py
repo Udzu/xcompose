@@ -138,24 +138,25 @@ def get_definitions(
 # Commands
 
 
-def add(args: argparse.Namespace) -> None:
+def add(args: argparse.Namespace, validate: bool = True) -> None:
     """Print line defining a new key sequence"""
     ks = tuple(CHAR_TO_KEYWORD.get(k, k) for k in args.keys)
     if args.modifier_key is not None:
         ks = (args.modifier_key, *ks)
 
     conflict = None
-    for defn in get_definitions(
-        args.file or get_xcompose_path(system=args.system),
-        ignore_includes=args.ignore_include,
-        modifier_key=args.modifier_key,
-    ):
-        n = min(len(ks), len(defn.keys))
-        if ks[:n] == defn.keys[:n] and not (
-            ks == defn.keys and args.value == defn.value
+    if validate:
+        for defn in get_definitions(
+            args.file or get_xcompose_path(system=args.system),
+            ignore_includes=args.ignore_include,
+            modifier_key=args.modifier_key,
         ):
-            conflict = defn.value
-            break
+            n = min(len(ks), len(defn.keys))
+            if ks[:n] == defn.keys[:n] and not (
+                ks == defn.keys and args.value == defn.value
+            ):
+                conflict = defn.value
+                break
 
     keys = " ".join(f"<{k}>" for k in ks)
     codes = " ".join(to_code_point(c) for c in args.value)
