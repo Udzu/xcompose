@@ -139,7 +139,7 @@ def get_definitions(
 
 
 def add(args: argparse.Namespace, definitions: Trie | None = None) -> None:
-    """Print line defining a new key sequence (checking for conflicts)"""
+    """Print line defining a new key sequence (checking for any conflicts)"""
     ks = tuple(CHAR_TO_KEYWORD.get(k, k) for k in args.keys)
     if args.modifier_key is not None:
         ks = (args.modifier_key, *ks)
