@@ -18,16 +18,16 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (127): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 
-### Latin script characters (1980)
+### Latin script characters (1983)
 * **International Phonetic Alphabet** (142): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (262): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (189): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
+* **Superscripts and subscripts** (192): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (350): ʣ ㏈ etc
 * **Letter games** (306): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
 ### Non-Latin script characters (4821)
-* **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِيت⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܗܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
+* **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِتْ⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդիտ etc
 * **Brahmic Scripts**: Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Kannada, Limbu, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu (1296): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ္, 𑄢𑄬𑄘𑄨𑄖𑄳, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆಡಿತ್, ᤖᤧᤍᤡᤳ, രെഡിട്, ꯔꯦꯗꯤꯠ, ରେଡିଟ, ꢬꢾꢞꢶꢜ, රෙඩිට්, ரெடிட், రెడిట్ etc
 * **Unified English Braille** (79): ⠗⠫⠙⠊⠞ etc
