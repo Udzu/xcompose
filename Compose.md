@@ -18,11 +18,11 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (127): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 
-### Latin script characters (1983)
+### Latin script characters (1985)
 * **International Phonetic Alphabet** (142): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (262): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (192): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
+* **Superscripts and subscripts** (194): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (350): ʣ ㏈ etc
 * **Letter games** (306): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
@@ -44,11 +44,11 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Thai**, Babayin, Khmer & Lao (261): เรดดิต, ᜍᜒᜇᜒᜆ᜔, រេទិត, ເຣັດິຕ etc
 * **Zhuyin**, Mongolian, Tai Le & Tibetan (304): ㄏㄨㄥˊㄉㄧˊ, ᠷᠡᠳᠢᠲ, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 
-### Symbols (2671)
+### Symbols (2681)
 * **Emoji** (1517): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (266): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
-* **Music** (98): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
+* **Music** (108): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
 * **Arrows** (155): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc

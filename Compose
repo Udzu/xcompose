@@ -666,6 +666,7 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <Multi_key> <D> <H> : "ᴆ" U1D06   # LATIN LETTER SMALL CAPITAL ETH (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <slash> <I> : "ᵻ"  U1D7B  # LATIN SMALL CAPITAL LETTER I WITH STROKE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <L> <slash> : "ᴌ" U1D0C   # LATIN LETTER SMALL CAPITAL L WITH STROKE (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <O> <parenright> : "ᴐ"  U1D10  # LATIN LETTER SMALL CAPITAL OPEN O (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <Z> <H> : "ᴣ" U1D23   # LATIN LETTER SMALL CAPITAL EZH (conflicts)
 
 # combining letters above: ^^x
@@ -707,6 +708,8 @@ include "%L"
 <Multi_key> <asciicircum> <asciicircum> <c> <comma> <Return> : "ᷗ" U1DD7   # COMBINING LATIN SMALL LETTER C CEDILLA
 <Multi_key> <asciicircum> <asciicircum> <d> <h> <Return> : "ᷙ" U1DD9   # COMBINING LATIN SMALL LETTER ETH
 <Multi_key> <asciicircum> <asciicircum> <e> <e> <Return> : "ᷪ" U1DEA   # COMBINING LATIN SMALL LETTER SCHWA
+<Multi_key> <asciicircum> <asciicircum> <f> <s> <Return> : "ᷥ"  U1DE5  # COMBINING LATIN SMALL LETTER LONG S
+<Multi_key> <asciicircum> <asciicircum> <l> <s> <Return> : "ᷥ"  U1DE5  # COMBINING LATIN SMALL LETTER LONG S
 <Multi_key> <asciicircum> <asciicircum> <o> <quotedbl> <Return> : "ᷳ" U1DF3   # COMBINING LATIN SMALL LETTER O WITH DIAERESIS
 <Multi_key> <asciicircum> <asciicircum> <s> <h> <Return> : "ᷯ" U1DEF   # COMBINING LATIN SMALL LETTER ESH
 <Multi_key> <asciicircum> <asciicircum> <u> <quotedbl> <Return> : "ᷴ" U1DF4   # COMBINING LATIN SMALL LETTER U WITH DIAERESIS
@@ -2098,7 +2101,7 @@ include "%L"
 <Multi_key> <braceleft> <m> <m> <2> <braceright> : "㎟" U339F   # SQUARE MM SQUARED
 <Multi_key> <braceleft> <m> <m> <3> <braceright> : "㎣" U33A3   # SQUARE MM CUBED
 
-# superscripts
+# superscript multigraphs
 
 <Multi_key> <braceleft> <asciicircum> <M> <C> <braceright> : "🅪"  U1F16A  # RAISED MC SIGN
 <Multi_key> <braceleft> <asciicircum> <M> <D> <braceright> : "🅫"  U1F16B  # RAISED MD SIGN
@@ -10786,6 +10789,18 @@ include "%L"
 <Multi_key> <numbersign> <period> <parenright> : "𝄑" U1D111    # MUSICAL SYMBOL FERMATA BELOW
 <Multi_key> <numbersign> <apostrophe>        : "𝄒" U1D112    # MUSICAL SYMBOL BREATH MARK
 <Multi_key> <numbersign> <slash> <slash> <period> : "𝄓" U1D113    # MUSICAL SYMBOL CAESURA
+
+# staves
+<Multi_key> <numbersign> <braceleft>         : "𝄔"  U1D114  # MUSICAL SYMBOL BRACE
+<Multi_key> <numbersign> <bracketleft> <period> : "𝄕"  U1D115  # MUSICAL SYMBOL BRACKET
+<Multi_key> <numbersign> <1> <equal> : "𝄖"  U1D116  # MUSICAL SYMBOL ONE-LINE STAFF
+<Multi_key> <numbersign> <2> <equal> : "𝄗"  U1D117  # MUSICAL SYMBOL TWO-LINE STAFF
+<Multi_key> <numbersign> <3> <equal> : "𝄘"  U1D118  # MUSICAL SYMBOL THREE-LINE STAFF
+<Multi_key> <numbersign> <4> <equal> : "𝄙"  U1D119  # MUSICAL SYMBOL FOUR-LINE STAFF
+<Multi_key> <numbersign> <5> <equal> : "𝄚"  U1D11A  # MUSICAL SYMBOL FIVE-LINE STAFF
+<Multi_key> <numbersign> <6> <equal> : "𝄛"  U1D11B  # MUSICAL SYMBOL SIX-LINE STAFF
+<Multi_key> <numbersign> <6> <numbersign> : "𝄜"  U1D11C  # MUSICAL SYMBOL SIX-STRING FRETBOARD
+<Multi_key> <numbersign> <4> <numbersign> : "𝄝"  U1D11D  # MUSICAL SYMBOL FOUR-STRING FRETBOARD
 
 # notes
 <Multi_key> <numbersign> <n> <b>             : "𝅜" U1D15C    # MUSICAL SYMBOL BREVE
