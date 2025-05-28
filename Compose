@@ -10696,11 +10696,11 @@ include "%L"
 <Multi_key> <Tab> <less> <4> <minus>                      : "⭅"  U2B45  # LEFTWARDS QUADRUPLE ARROW
 <Multi_key> <Tab> <minus> <4> <greater>                   : "⭆"  U2B46  # RIGHTWARDS QUADRUPLE ARROW
 
-################################
-# CP437 Box drawing characters #
-################################
+##########################
+# Box drawing characters #
+##########################
 
-# Convention: | + horizontal line (l/r/h/ ) + vertical line (u/d/v/ ), with capitals for double lines
+# CP437: | + horizontal line (l/r/h/ ) + vertical line (u/d/v/ ), with capitals for double lines
 
 <Multi_key> <bar> <space> <v> : "│" U2502  # BOX DRAWINGS LIGHT VERTICAL
 <Multi_key> <bar> <l> <v>     : "┤" U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
@@ -10743,6 +10743,91 @@ include "%L"
 <Multi_key> <bar> <l> <u>     : "┘" U2518  # BOX DRAWINGS LIGHT UP AND LEFT
 <Multi_key> <bar> <r> <d>     : "┌" U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
 
+# light-heavy: | + u + r + l + d (with capital for heavy, space for none)
+
+<Multi_key> <bar> <space> <r> <space> <l> : "─"  U2500  # BOX DRAWINGS LIGHT HORIZONTAL
+<Multi_key> <bar> <space> <R> <space> <L> : "━"  U2501  # BOX DRAWINGS HEAVY HORIZONTAL
+<Multi_key> <bar> <u> <space> <d> <space> : "│"  U2502  # BOX DRAWINGS LIGHT VERTICAL
+<Multi_key> <bar> <U> <space> <D> <space> : "┃"  U2503  # BOX DRAWINGS HEAVY VERTICAL
+<Multi_key> <bar> <space> <r> <d> <space> : "┌"  U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
+<Multi_key> <bar> <space> <R> <d> <space> : "┍"  U250D  # BOX DRAWINGS DOWN LIGHT AND RIGHT HEAVY
+<Multi_key> <bar> <space> <r> <D> <space> : "┎"  U250E  # BOX DRAWINGS DOWN HEAVY AND RIGHT LIGHT
+<Multi_key> <bar> <space> <R> <D> <space> : "┏"  U250F  # BOX DRAWINGS HEAVY DOWN AND RIGHT
+<Multi_key> <bar> <space> <space> <d> <l> : "┐"  U2510  # BOX DRAWINGS LIGHT DOWN AND LEFT
+<Multi_key> <bar> <space> <space> <d> <L> : "┑"  U2511  # BOX DRAWINGS DOWN LIGHT AND LEFT HEAVY
+<Multi_key> <bar> <space> <space> <D> <l> : "┒"  U2512  # BOX DRAWINGS DOWN HEAVY AND LEFT LIGHT
+<Multi_key> <bar> <space> <space> <D> <L> : "┓"  U2513  # BOX DRAWINGS HEAVY DOWN AND LEFT
+<Multi_key> <bar> <u> <r> <space> <space> : "└"  U2514  # BOX DRAWINGS LIGHT UP AND RIGHT
+<Multi_key> <bar> <u> <R> <space> <space> : "┕"  U2515  # BOX DRAWINGS UP LIGHT AND RIGHT HEAVY
+<Multi_key> <bar> <U> <r> <space> <space> : "┖"  U2516  # BOX DRAWINGS UP HEAVY AND RIGHT LIGHT
+<Multi_key> <bar> <U> <R> <space> <space> : "┗"  U2517  # BOX DRAWINGS HEAVY UP AND RIGHT
+<Multi_key> <bar> <u> <space> <space> <l> : "┘"  U2518  # BOX DRAWINGS LIGHT UP AND LEFT
+<Multi_key> <bar> <u> <space> <space> <L> : "┙"  U2519  # BOX DRAWINGS UP LIGHT AND LEFT HEAVY
+<Multi_key> <bar> <U> <space> <space> <l> : "┚"  U251A  # BOX DRAWINGS UP HEAVY AND LEFT LIGHT
+<Multi_key> <bar> <U> <space> <space> <L> : "┛"  U251B  # BOX DRAWINGS HEAVY UP AND LEFT
+<Multi_key> <bar> <u> <r> <d> <space> : "├"  U251C  # BOX DRAWINGS LIGHT VERTICAL AND RIGHT
+<Multi_key> <bar> <u> <R> <d> <space> : "┝"  U251D  # BOX DRAWINGS VERTICAL LIGHT AND RIGHT HEAVY
+<Multi_key> <bar> <U> <r> <d> <space> : "┞"  U251E  # BOX DRAWINGS UP HEAVY AND RIGHT DOWN LIGHT
+<Multi_key> <bar> <u> <r> <D> <space> : "┟"  U251F  # BOX DRAWINGS DOWN HEAVY AND RIGHT UP LIGHT
+<Multi_key> <bar> <U> <r> <D> <space> : "┠"  U2520  # BOX DRAWINGS VERTICAL HEAVY AND RIGHT LIGHT
+<Multi_key> <bar> <U> <R> <d> <space> : "┡"  U2521  # BOX DRAWINGS DOWN LIGHT AND RIGHT UP HEAVY
+<Multi_key> <bar> <u> <R> <D> <space> : "┢"  U2522  # BOX DRAWINGS UP LIGHT AND RIGHT DOWN HEAVY
+<Multi_key> <bar> <U> <R> <D> <space> : "┣"  U2523  # BOX DRAWINGS HEAVY VERTICAL AND RIGHT
+<Multi_key> <bar> <u> <space> <d> <l> : "┤"  U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
+<Multi_key> <bar> <u> <space> <d> <L> : "┥"  U2525  # BOX DRAWINGS VERTICAL LIGHT AND LEFT HEAVY
+<Multi_key> <bar> <U> <space> <d> <l> : "┦"  U2526  # BOX DRAWINGS UP HEAVY AND LEFT DOWN LIGHT
+<Multi_key> <bar> <u> <space> <D> <l> : "┧"  U2527  # BOX DRAWINGS DOWN HEAVY AND LEFT UP LIGHT
+<Multi_key> <bar> <U> <space> <D> <l> : "┨"  U2528  # BOX DRAWINGS VERTICAL HEAVY AND LEFT LIGHT
+<Multi_key> <bar> <U> <space> <d> <L> : "┩"  U2529  # BOX DRAWINGS DOWN LIGHT AND LEFT UP HEAVY
+<Multi_key> <bar> <u> <space> <D> <L> : "┪"  U252A  # BOX DRAWINGS UP LIGHT AND LEFT DOWN HEAVY
+<Multi_key> <bar> <U> <space> <D> <L> : "┫"  U252B  # BOX DRAWINGS HEAVY VERTICAL AND LEFT
+<Multi_key> <bar> <space> <r> <d> <l> : "┬"  U252C  # BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
+<Multi_key> <bar> <space> <r> <d> <L> : "┭"  U252D  # BOX DRAWINGS LEFT HEAVY AND RIGHT DOWN LIGHT
+<Multi_key> <bar> <space> <R> <d> <l> : "┮"  U252E  # BOX DRAWINGS RIGHT HEAVY AND LEFT DOWN LIGHT
+<Multi_key> <bar> <space> <R> <d> <L> : "┯"  U252F  # BOX DRAWINGS DOWN LIGHT AND HORIZONTAL HEAVY
+<Multi_key> <bar> <space> <r> <D> <l> : "┰"  U2530  # BOX DRAWINGS DOWN HEAVY AND HORIZONTAL LIGHT
+<Multi_key> <bar> <space> <r> <D> <L> : "┱"  U2531  # BOX DRAWINGS RIGHT LIGHT AND LEFT DOWN HEAVY
+<Multi_key> <bar> <space> <R> <D> <l> : "┲"  U2532  # BOX DRAWINGS LEFT LIGHT AND RIGHT DOWN HEAVY
+<Multi_key> <bar> <space> <R> <D> <L> : "┳"  U2533  # BOX DRAWINGS HEAVY DOWN AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <space> <l> : "┴"  U2534  # BOX DRAWINGS LIGHT UP AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <space> <L> : "┵"  U2535  # BOX DRAWINGS LEFT HEAVY AND RIGHT UP LIGHT
+<Multi_key> <bar> <u> <R> <space> <l> : "┶"  U2536  # BOX DRAWINGS RIGHT HEAVY AND LEFT UP LIGHT
+<Multi_key> <bar> <u> <R> <space> <L> : "┷"  U2537  # BOX DRAWINGS UP LIGHT AND HORIZONTAL HEAVY
+<Multi_key> <bar> <U> <r> <space> <l> : "┸"  U2538  # BOX DRAWINGS UP HEAVY AND HORIZONTAL LIGHT
+<Multi_key> <bar> <U> <r> <space> <L> : "┹"  U2539  # BOX DRAWINGS RIGHT LIGHT AND LEFT UP HEAVY
+<Multi_key> <bar> <U> <R> <space> <l> : "┺"  U253A  # BOX DRAWINGS LEFT LIGHT AND RIGHT UP HEAVY
+<Multi_key> <bar> <U> <R> <space> <L> : "┻"  U253B  # BOX DRAWINGS HEAVY UP AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <d> <l> : "┼"  U253C  # BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <d> <L> : "┽"  U253D  # BOX DRAWINGS LEFT HEAVY AND RIGHT VERTICAL LIGHT
+<Multi_key> <bar> <u> <R> <d> <l> : "┾"  U253E  # BOX DRAWINGS RIGHT HEAVY AND LEFT VERTICAL LIGHT
+<Multi_key> <bar> <u> <R> <d> <L> : "┿"  U253F  # BOX DRAWINGS VERTICAL LIGHT AND HORIZONTAL HEAVY
+<Multi_key> <bar> <U> <r> <d> <l> : "╀"  U2540  # BOX DRAWINGS UP HEAVY AND DOWN HORIZONTAL LIGHT
+<Multi_key> <bar> <u> <r> <D> <l> : "╁"  U2541  # BOX DRAWINGS DOWN HEAVY AND UP HORIZONTAL LIGHT
+<Multi_key> <bar> <U> <r> <D> <l> : "╂"  U2542  # BOX DRAWINGS VERTICAL HEAVY AND HORIZONTAL LIGHT
+<Multi_key> <bar> <U> <r> <d> <L> : "╃"  U2543  # BOX DRAWINGS LEFT UP HEAVY AND RIGHT DOWN LIGHT
+<Multi_key> <bar> <U> <R> <d> <l> : "╄"  U2544  # BOX DRAWINGS RIGHT UP HEAVY AND LEFT DOWN LIGHT
+<Multi_key> <bar> <u> <r> <D> <L> : "╅"  U2545  # BOX DRAWINGS LEFT DOWN HEAVY AND RIGHT UP LIGHT
+<Multi_key> <bar> <u> <R> <D> <l> : "╆"  U2546  # BOX DRAWINGS RIGHT DOWN HEAVY AND LEFT UP LIGHT
+<Multi_key> <bar> <U> <R> <d> <L> : "╇"  U2547  # BOX DRAWINGS DOWN LIGHT AND UP HORIZONTAL HEAVY
+<Multi_key> <bar> <u> <R> <D> <L> : "╈"  U2548  # BOX DRAWINGS UP LIGHT AND DOWN HORIZONTAL HEAVY
+<Multi_key> <bar> <U> <r> <D> <L> : "╉"  U2549  # BOX DRAWINGS RIGHT LIGHT AND LEFT VERTICAL HEAVY
+<Multi_key> <bar> <U> <R> <D> <l> : "╊"  U254A  # BOX DRAWINGS LEFT LIGHT AND RIGHT VERTICAL HEAVY
+<Multi_key> <bar> <U> <R> <D> <L> : "╋"  U254B  # BOX DRAWINGS HEAVY VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <space> <space> <space> <l> : "╴"  U2574  # BOX DRAWINGS LIGHT LEFT
+<Multi_key> <bar> <u> <space> <space> <space> : "╵"  U2575  # BOX DRAWINGS LIGHT UP
+<Multi_key> <bar> <space> <r> <space> <space> : "╶"  U2576  # BOX DRAWINGS LIGHT RIGHT
+<Multi_key> <bar> <space> <space> <d> <space> : "╷"  U2577  # BOX DRAWINGS LIGHT DOWN
+<Multi_key> <bar> <space> <space> <space> <L> : "╸"  U2578  # BOX DRAWINGS HEAVY LEFT
+<Multi_key> <bar> <U> <space> <space> <space> : "╹"  U2579  # BOX DRAWINGS HEAVY UP
+<Multi_key> <bar> <space> <R> <space> <space> : "╺"  U257A  # BOX DRAWINGS HEAVY RIGHT
+<Multi_key> <bar> <space> <space> <D> <space> : "╻"  U257B  # BOX DRAWINGS HEAVY DOWN
+<Multi_key> <bar> <space> <R> <space> <l> : "╼"  U257C  # BOX DRAWINGS LIGHT LEFT AND HEAVY RIGHT
+<Multi_key> <bar> <u> <space> <D> <space> : "╽"  U257D  # BOX DRAWINGS LIGHT UP AND HEAVY DOWN
+<Multi_key> <bar> <space> <r> <space> <L> : "╾"  U257E  # BOX DRAWINGS HEAVY LEFT AND LIGHT RIGHT
+<Multi_key> <bar> <U> <space> <d> <space> : "╿"  U257F  # BOX DRAWINGS HEAVY UP AND LIGHT DOWN
+
+# blocks: | + b + #
+ 
 <Multi_key> <bar> <b> <1>     : "░" U2591  # LIGHT SHADE
 <Multi_key> <bar> <b> <2>     : "▒" U2592  # MEDIUM SHADE
 <Multi_key> <bar> <b> <3>     : "▓" U2593  # DARK SHADE
@@ -10904,6 +10989,10 @@ include "%L"
 <Multi_key> <numbersign> <o> <bar> <m>       : "𝆜𝆠𝆝" U1D19C U1D1A0 U1D19D    # LOWER MORDENT
 
 # other
+<Multi_key> <numbersign> <8> <v> <a>         : "𝄶"  U1D136  # MUSICAL SYMBOL OTTAVA ALTA
+<Multi_key> <numbersign> <8> <v> <b>         : "𝄷"  U1D137  # MUSICAL SYMBOL OTTAVA BASSA
+<Multi_key> <numbersign> <1> <5> <v> <a>     : "𝄸"  U1D138  # MUSICAL SYMBOL QUINDICESIMA ALTA
+<Multi_key> <numbersign> <1> <5> <v> <b>     : "𝄹"  U1D139  # MUSICAL SYMBOL QUINDICESIMA BASSA
 <Multi_key> <numbersign> <P> <e> <d>         : "𝆮" U1D1AE    # MUSICAL SYMBOL PEDAL MARK
 <Multi_key> <numbersign> <P> <u> <p>         : "𝆯" U1D1AF    # MUSICAL SYMBOL PEDAL UP MARK
 <Multi_key> <numbersign> <P> <asciicircum>   : "𝆰" U1D1B0    # MUSICAL SYMBOL HALF PEDAL MARK
