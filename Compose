@@ -605,8 +605,11 @@ include "%L"
 
 <Multi_key> <asciicircum> <underscore> <colon>   : "˸"  U02F8    # MODIFIER LETTER RAISED COLON
 <Multi_key> <asciicircum> <underscore> <exclam>  : "ꜝ"  UA71D    # MODIFIER LETTER RAISED EXCLAMATION MARK
+<Multi_key> <asciicircum> <underscore> <Multi_key> <exclam> <exclam> : "ꜞ"  UA71E  # MODIFIER LETTER RAISED INVERTED EXCLAMATION MARK
 <Multi_key> <asciicircum> <underscore> <less>    : "˂"  U02C2    # MODIFIER LETTER LEFT ARROWHEAD
 <Multi_key> <asciicircum> <underscore> <greater> : "˃"  U02C3    # MODIFIER LETTER RIGHT ARROWHEAD
+<Multi_key> <asciicircum> <underscore> <comma>   : "⸴"  U2E34    # RAISED COMMA
+<Multi_key> <asciicircum> <underscore> <period>  : "⸳"  U2E33    # RAISED DOT
 
 # subscripts: _x (or _x_ if there's a clash with a combining character)
 
@@ -663,6 +666,7 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <Multi_key> <D> <H> : "ᴆ" U1D06   # LATIN LETTER SMALL CAPITAL ETH (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <slash> <I> : "ᵻ"  U1D7B  # LATIN SMALL CAPITAL LETTER I WITH STROKE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <L> <slash> : "ᴌ" U1D0C   # LATIN LETTER SMALL CAPITAL L WITH STROKE (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <O> <parenright> : "ᴐ"  U1D10  # LATIN LETTER SMALL CAPITAL OPEN O (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <Z> <H> : "ᴣ" U1D23   # LATIN LETTER SMALL CAPITAL EZH (conflicts)
 
 # combining letters above: ^^x
@@ -704,6 +708,8 @@ include "%L"
 <Multi_key> <asciicircum> <asciicircum> <c> <comma> <Return> : "ᷗ" U1DD7   # COMBINING LATIN SMALL LETTER C CEDILLA
 <Multi_key> <asciicircum> <asciicircum> <d> <h> <Return> : "ᷙ" U1DD9   # COMBINING LATIN SMALL LETTER ETH
 <Multi_key> <asciicircum> <asciicircum> <e> <e> <Return> : "ᷪ" U1DEA   # COMBINING LATIN SMALL LETTER SCHWA
+<Multi_key> <asciicircum> <asciicircum> <f> <s> <Return> : "ᷥ"  U1DE5  # COMBINING LATIN SMALL LETTER LONG S
+<Multi_key> <asciicircum> <asciicircum> <l> <s> <Return> : "ᷥ"  U1DE5  # COMBINING LATIN SMALL LETTER LONG S
 <Multi_key> <asciicircum> <asciicircum> <o> <quotedbl> <Return> : "ᷳ" U1DF3   # COMBINING LATIN SMALL LETTER O WITH DIAERESIS
 <Multi_key> <asciicircum> <asciicircum> <s> <h> <Return> : "ᷯ" U1DEF   # COMBINING LATIN SMALL LETTER ESH
 <Multi_key> <asciicircum> <asciicircum> <u> <quotedbl> <Return> : "ᷴ" U1DF4   # COMBINING LATIN SMALL LETTER U WITH DIAERESIS
@@ -2095,12 +2101,13 @@ include "%L"
 <Multi_key> <braceleft> <m> <m> <2> <braceright> : "㎟" U339F   # SQUARE MM SQUARED
 <Multi_key> <braceleft> <m> <m> <3> <braceright> : "㎣" U33A3   # SQUARE MM CUBED
 
-# superscripts
+# superscript multigraphs
 
 <Multi_key> <braceleft> <asciicircum> <M> <C> <braceright> : "🅪"  U1F16A  # RAISED MC SIGN
 <Multi_key> <braceleft> <asciicircum> <M> <D> <braceright> : "🅫"  U1F16B  # RAISED MD SIGN
 <Multi_key> <braceleft> <asciicircum> <M> <R> <braceright> : "🅬"  U1F16C  # RAISED MR SIGN
 <Multi_key> <braceleft> <asciicircum> <S> <M> <braceright> : "℠"  U2120   # SERVICE MARK (alternatively SM)
+<Multi_key> <braceleft> <asciicircum> <T> <E> <L> <braceright> : "℡"  U2121  # TELEPHONE SIGN
 <Multi_key> <braceleft> <asciicircum> <T> <M> <braceright> : "™"  U2122   # TRADE MARK SIGN (alternatively TM)
 
 # control symbols
@@ -8880,6 +8887,7 @@ include "%L"
 <Multi_key> <d> <r> <o> <o> <l>     : "🤤"  U1F924        # DROOLING FACE
 <Multi_key> <d> <r> <u> <n> <k>     : "🥴"  U1F974        # FACE WITH UNEVEN EYES AND WAVY MOUTH (DRUNK)
 <Multi_key> <f> <e> <a> <r>         : "😨"  U1F628        # FEARFUL FACE (use argh for 😱)
+<Multi_key> <f> <g> <i> <r> <l>     : "(◕‿◕✿)"            # FLOWER GIRL
 <Multi_key> <f> <r> <o> <w> <n>     : "😦"  U1F626        # FROWNING FACE WITH OPEN MOUTH (use :( for ☹️ and upset for 🙍)
 <Multi_key> <f> <u> <c> <k>         : "🤬"  U1F92C        # SERIOUS FACE WITH SYMBOLS COVERING MOUTH (FUCK) (use FY for 🖕)
 <Multi_key> <g> <a> <s> <p>         : "😲"  U1F632        # ASTONISHED FACE (GASP)
@@ -10689,11 +10697,11 @@ include "%L"
 <Multi_key> <Tab> <less> <4> <minus>                      : "⭅"  U2B45  # LEFTWARDS QUADRUPLE ARROW
 <Multi_key> <Tab> <minus> <4> <greater>                   : "⭆"  U2B46  # RIGHTWARDS QUADRUPLE ARROW
 
-################################
-# CP437 Box drawing characters #
-################################
+##########################
+# Box drawing characters #
+##########################
 
-# Convention: | + horizontal line (l/r/h/ ) + vertical line (u/d/v/ ), with capitals for double lines
+# CP437: | + horizontal line (l/r/h/ ) + vertical line (u/d/v/ ), with capitals for double lines
 
 <Multi_key> <bar> <space> <v> : "│" U2502  # BOX DRAWINGS LIGHT VERTICAL
 <Multi_key> <bar> <l> <v>     : "┤" U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
@@ -10736,6 +10744,91 @@ include "%L"
 <Multi_key> <bar> <l> <u>     : "┘" U2518  # BOX DRAWINGS LIGHT UP AND LEFT
 <Multi_key> <bar> <r> <d>     : "┌" U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
 
+# light-heavy: | + u + r + l + d (with capital for heavy, space for none)
+
+<Multi_key> <bar> <space> <r> <space> <l> : "─"  U2500  # BOX DRAWINGS LIGHT HORIZONTAL
+<Multi_key> <bar> <space> <R> <space> <L> : "━"  U2501  # BOX DRAWINGS HEAVY HORIZONTAL
+<Multi_key> <bar> <u> <space> <d> <space> : "│"  U2502  # BOX DRAWINGS LIGHT VERTICAL
+<Multi_key> <bar> <U> <space> <D> <space> : "┃"  U2503  # BOX DRAWINGS HEAVY VERTICAL
+<Multi_key> <bar> <space> <r> <d> <space> : "┌"  U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
+<Multi_key> <bar> <space> <R> <d> <space> : "┍"  U250D  # BOX DRAWINGS DOWN LIGHT AND RIGHT HEAVY
+<Multi_key> <bar> <space> <r> <D> <space> : "┎"  U250E  # BOX DRAWINGS DOWN HEAVY AND RIGHT LIGHT
+<Multi_key> <bar> <space> <R> <D> <space> : "┏"  U250F  # BOX DRAWINGS HEAVY DOWN AND RIGHT
+<Multi_key> <bar> <space> <space> <d> <l> : "┐"  U2510  # BOX DRAWINGS LIGHT DOWN AND LEFT
+<Multi_key> <bar> <space> <space> <d> <L> : "┑"  U2511  # BOX DRAWINGS DOWN LIGHT AND LEFT HEAVY
+<Multi_key> <bar> <space> <space> <D> <l> : "┒"  U2512  # BOX DRAWINGS DOWN HEAVY AND LEFT LIGHT
+<Multi_key> <bar> <space> <space> <D> <L> : "┓"  U2513  # BOX DRAWINGS HEAVY DOWN AND LEFT
+<Multi_key> <bar> <u> <r> <space> <space> : "└"  U2514  # BOX DRAWINGS LIGHT UP AND RIGHT
+<Multi_key> <bar> <u> <R> <space> <space> : "┕"  U2515  # BOX DRAWINGS UP LIGHT AND RIGHT HEAVY
+<Multi_key> <bar> <U> <r> <space> <space> : "┖"  U2516  # BOX DRAWINGS UP HEAVY AND RIGHT LIGHT
+<Multi_key> <bar> <U> <R> <space> <space> : "┗"  U2517  # BOX DRAWINGS HEAVY UP AND RIGHT
+<Multi_key> <bar> <u> <space> <space> <l> : "┘"  U2518  # BOX DRAWINGS LIGHT UP AND LEFT
+<Multi_key> <bar> <u> <space> <space> <L> : "┙"  U2519  # BOX DRAWINGS UP LIGHT AND LEFT HEAVY
+<Multi_key> <bar> <U> <space> <space> <l> : "┚"  U251A  # BOX DRAWINGS UP HEAVY AND LEFT LIGHT
+<Multi_key> <bar> <U> <space> <space> <L> : "┛"  U251B  # BOX DRAWINGS HEAVY UP AND LEFT
+<Multi_key> <bar> <u> <r> <d> <space> : "├"  U251C  # BOX DRAWINGS LIGHT VERTICAL AND RIGHT
+<Multi_key> <bar> <u> <R> <d> <space> : "┝"  U251D  # BOX DRAWINGS VERTICAL LIGHT AND RIGHT HEAVY
+<Multi_key> <bar> <U> <r> <d> <space> : "┞"  U251E  # BOX DRAWINGS UP HEAVY AND RIGHT DOWN LIGHT
+<Multi_key> <bar> <u> <r> <D> <space> : "┟"  U251F  # BOX DRAWINGS DOWN HEAVY AND RIGHT UP LIGHT
+<Multi_key> <bar> <U> <r> <D> <space> : "┠"  U2520  # BOX DRAWINGS VERTICAL HEAVY AND RIGHT LIGHT
+<Multi_key> <bar> <U> <R> <d> <space> : "┡"  U2521  # BOX DRAWINGS DOWN LIGHT AND RIGHT UP HEAVY
+<Multi_key> <bar> <u> <R> <D> <space> : "┢"  U2522  # BOX DRAWINGS UP LIGHT AND RIGHT DOWN HEAVY
+<Multi_key> <bar> <U> <R> <D> <space> : "┣"  U2523  # BOX DRAWINGS HEAVY VERTICAL AND RIGHT
+<Multi_key> <bar> <u> <space> <d> <l> : "┤"  U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
+<Multi_key> <bar> <u> <space> <d> <L> : "┥"  U2525  # BOX DRAWINGS VERTICAL LIGHT AND LEFT HEAVY
+<Multi_key> <bar> <U> <space> <d> <l> : "┦"  U2526  # BOX DRAWINGS UP HEAVY AND LEFT DOWN LIGHT
+<Multi_key> <bar> <u> <space> <D> <l> : "┧"  U2527  # BOX DRAWINGS DOWN HEAVY AND LEFT UP LIGHT
+<Multi_key> <bar> <U> <space> <D> <l> : "┨"  U2528  # BOX DRAWINGS VERTICAL HEAVY AND LEFT LIGHT
+<Multi_key> <bar> <U> <space> <d> <L> : "┩"  U2529  # BOX DRAWINGS DOWN LIGHT AND LEFT UP HEAVY
+<Multi_key> <bar> <u> <space> <D> <L> : "┪"  U252A  # BOX DRAWINGS UP LIGHT AND LEFT DOWN HEAVY
+<Multi_key> <bar> <U> <space> <D> <L> : "┫"  U252B  # BOX DRAWINGS HEAVY VERTICAL AND LEFT
+<Multi_key> <bar> <space> <r> <d> <l> : "┬"  U252C  # BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
+<Multi_key> <bar> <space> <r> <d> <L> : "┭"  U252D  # BOX DRAWINGS LEFT HEAVY AND RIGHT DOWN LIGHT
+<Multi_key> <bar> <space> <R> <d> <l> : "┮"  U252E  # BOX DRAWINGS RIGHT HEAVY AND LEFT DOWN LIGHT
+<Multi_key> <bar> <space> <R> <d> <L> : "┯"  U252F  # BOX DRAWINGS DOWN LIGHT AND HORIZONTAL HEAVY
+<Multi_key> <bar> <space> <r> <D> <l> : "┰"  U2530  # BOX DRAWINGS DOWN HEAVY AND HORIZONTAL LIGHT
+<Multi_key> <bar> <space> <r> <D> <L> : "┱"  U2531  # BOX DRAWINGS RIGHT LIGHT AND LEFT DOWN HEAVY
+<Multi_key> <bar> <space> <R> <D> <l> : "┲"  U2532  # BOX DRAWINGS LEFT LIGHT AND RIGHT DOWN HEAVY
+<Multi_key> <bar> <space> <R> <D> <L> : "┳"  U2533  # BOX DRAWINGS HEAVY DOWN AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <space> <l> : "┴"  U2534  # BOX DRAWINGS LIGHT UP AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <space> <L> : "┵"  U2535  # BOX DRAWINGS LEFT HEAVY AND RIGHT UP LIGHT
+<Multi_key> <bar> <u> <R> <space> <l> : "┶"  U2536  # BOX DRAWINGS RIGHT HEAVY AND LEFT UP LIGHT
+<Multi_key> <bar> <u> <R> <space> <L> : "┷"  U2537  # BOX DRAWINGS UP LIGHT AND HORIZONTAL HEAVY
+<Multi_key> <bar> <U> <r> <space> <l> : "┸"  U2538  # BOX DRAWINGS UP HEAVY AND HORIZONTAL LIGHT
+<Multi_key> <bar> <U> <r> <space> <L> : "┹"  U2539  # BOX DRAWINGS RIGHT LIGHT AND LEFT UP HEAVY
+<Multi_key> <bar> <U> <R> <space> <l> : "┺"  U253A  # BOX DRAWINGS LEFT LIGHT AND RIGHT UP HEAVY
+<Multi_key> <bar> <U> <R> <space> <L> : "┻"  U253B  # BOX DRAWINGS HEAVY UP AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <d> <l> : "┼"  U253C  # BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <d> <L> : "┽"  U253D  # BOX DRAWINGS LEFT HEAVY AND RIGHT VERTICAL LIGHT
+<Multi_key> <bar> <u> <R> <d> <l> : "┾"  U253E  # BOX DRAWINGS RIGHT HEAVY AND LEFT VERTICAL LIGHT
+<Multi_key> <bar> <u> <R> <d> <L> : "┿"  U253F  # BOX DRAWINGS VERTICAL LIGHT AND HORIZONTAL HEAVY
+<Multi_key> <bar> <U> <r> <d> <l> : "╀"  U2540  # BOX DRAWINGS UP HEAVY AND DOWN HORIZONTAL LIGHT
+<Multi_key> <bar> <u> <r> <D> <l> : "╁"  U2541  # BOX DRAWINGS DOWN HEAVY AND UP HORIZONTAL LIGHT
+<Multi_key> <bar> <U> <r> <D> <l> : "╂"  U2542  # BOX DRAWINGS VERTICAL HEAVY AND HORIZONTAL LIGHT
+<Multi_key> <bar> <U> <r> <d> <L> : "╃"  U2543  # BOX DRAWINGS LEFT UP HEAVY AND RIGHT DOWN LIGHT
+<Multi_key> <bar> <U> <R> <d> <l> : "╄"  U2544  # BOX DRAWINGS RIGHT UP HEAVY AND LEFT DOWN LIGHT
+<Multi_key> <bar> <u> <r> <D> <L> : "╅"  U2545  # BOX DRAWINGS LEFT DOWN HEAVY AND RIGHT UP LIGHT
+<Multi_key> <bar> <u> <R> <D> <l> : "╆"  U2546  # BOX DRAWINGS RIGHT DOWN HEAVY AND LEFT UP LIGHT
+<Multi_key> <bar> <U> <R> <d> <L> : "╇"  U2547  # BOX DRAWINGS DOWN LIGHT AND UP HORIZONTAL HEAVY
+<Multi_key> <bar> <u> <R> <D> <L> : "╈"  U2548  # BOX DRAWINGS UP LIGHT AND DOWN HORIZONTAL HEAVY
+<Multi_key> <bar> <U> <r> <D> <L> : "╉"  U2549  # BOX DRAWINGS RIGHT LIGHT AND LEFT VERTICAL HEAVY
+<Multi_key> <bar> <U> <R> <D> <l> : "╊"  U254A  # BOX DRAWINGS LEFT LIGHT AND RIGHT VERTICAL HEAVY
+<Multi_key> <bar> <U> <R> <D> <L> : "╋"  U254B  # BOX DRAWINGS HEAVY VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <space> <space> <space> <l> : "╴"  U2574  # BOX DRAWINGS LIGHT LEFT
+<Multi_key> <bar> <u> <space> <space> <space> : "╵"  U2575  # BOX DRAWINGS LIGHT UP
+<Multi_key> <bar> <space> <r> <space> <space> : "╶"  U2576  # BOX DRAWINGS LIGHT RIGHT
+<Multi_key> <bar> <space> <space> <d> <space> : "╷"  U2577  # BOX DRAWINGS LIGHT DOWN
+<Multi_key> <bar> <space> <space> <space> <L> : "╸"  U2578  # BOX DRAWINGS HEAVY LEFT
+<Multi_key> <bar> <U> <space> <space> <space> : "╹"  U2579  # BOX DRAWINGS HEAVY UP
+<Multi_key> <bar> <space> <R> <space> <space> : "╺"  U257A  # BOX DRAWINGS HEAVY RIGHT
+<Multi_key> <bar> <space> <space> <D> <space> : "╻"  U257B  # BOX DRAWINGS HEAVY DOWN
+<Multi_key> <bar> <space> <R> <space> <l> : "╼"  U257C  # BOX DRAWINGS LIGHT LEFT AND HEAVY RIGHT
+<Multi_key> <bar> <u> <space> <D> <space> : "╽"  U257D  # BOX DRAWINGS LIGHT UP AND HEAVY DOWN
+<Multi_key> <bar> <space> <r> <space> <L> : "╾"  U257E  # BOX DRAWINGS HEAVY LEFT AND LIGHT RIGHT
+<Multi_key> <bar> <U> <space> <d> <space> : "╿"  U257F  # BOX DRAWINGS HEAVY UP AND LIGHT DOWN
+
+# blocks: | + b + #
+ 
 <Multi_key> <bar> <b> <1>     : "░" U2591  # LIGHT SHADE
 <Multi_key> <bar> <b> <2>     : "▒" U2592  # MEDIUM SHADE
 <Multi_key> <bar> <b> <3>     : "▓" U2593  # DARK SHADE
@@ -10782,6 +10875,18 @@ include "%L"
 <Multi_key> <numbersign> <period> <parenright> : "𝄑" U1D111    # MUSICAL SYMBOL FERMATA BELOW
 <Multi_key> <numbersign> <apostrophe>        : "𝄒" U1D112    # MUSICAL SYMBOL BREATH MARK
 <Multi_key> <numbersign> <slash> <slash> <period> : "𝄓" U1D113    # MUSICAL SYMBOL CAESURA
+
+# staves
+<Multi_key> <numbersign> <braceleft>         : "𝄔"  U1D114  # MUSICAL SYMBOL BRACE
+<Multi_key> <numbersign> <bracketleft> <period> : "𝄕"  U1D115  # MUSICAL SYMBOL BRACKET
+<Multi_key> <numbersign> <1> <equal> : "𝄖"  U1D116  # MUSICAL SYMBOL ONE-LINE STAFF
+<Multi_key> <numbersign> <2> <equal> : "𝄗"  U1D117  # MUSICAL SYMBOL TWO-LINE STAFF
+<Multi_key> <numbersign> <3> <equal> : "𝄘"  U1D118  # MUSICAL SYMBOL THREE-LINE STAFF
+<Multi_key> <numbersign> <4> <equal> : "𝄙"  U1D119  # MUSICAL SYMBOL FOUR-LINE STAFF
+<Multi_key> <numbersign> <5> <equal> : "𝄚"  U1D11A  # MUSICAL SYMBOL FIVE-LINE STAFF
+<Multi_key> <numbersign> <6> <equal> : "𝄛"  U1D11B  # MUSICAL SYMBOL SIX-LINE STAFF
+<Multi_key> <numbersign> <6> <numbersign> : "𝄜"  U1D11C  # MUSICAL SYMBOL SIX-STRING FRETBOARD
+<Multi_key> <numbersign> <4> <numbersign> : "𝄝"  U1D11D  # MUSICAL SYMBOL FOUR-STRING FRETBOARD
 
 # notes
 <Multi_key> <numbersign> <n> <b>             : "𝅜" U1D15C    # MUSICAL SYMBOL BREVE
@@ -10885,6 +10990,10 @@ include "%L"
 <Multi_key> <numbersign> <o> <bar> <m>       : "𝆜𝆠𝆝" U1D19C U1D1A0 U1D19D    # LOWER MORDENT
 
 # other
+<Multi_key> <numbersign> <8> <v> <a>         : "𝄶"  U1D136  # MUSICAL SYMBOL OTTAVA ALTA
+<Multi_key> <numbersign> <8> <v> <b>         : "𝄷"  U1D137  # MUSICAL SYMBOL OTTAVA BASSA
+<Multi_key> <numbersign> <1> <5> <v> <a>     : "𝄸"  U1D138  # MUSICAL SYMBOL QUINDICESIMA ALTA
+<Multi_key> <numbersign> <1> <5> <v> <b>     : "𝄹"  U1D139  # MUSICAL SYMBOL QUINDICESIMA BASSA
 <Multi_key> <numbersign> <P> <e> <d>         : "𝆮" U1D1AE    # MUSICAL SYMBOL PEDAL MARK
 <Multi_key> <numbersign> <P> <u> <p>         : "𝆯" U1D1AF    # MUSICAL SYMBOL PEDAL UP MARK
 <Multi_key> <numbersign> <P> <asciicircum>   : "𝆰" U1D1B0    # MUSICAL SYMBOL HALF PEDAL MARK
