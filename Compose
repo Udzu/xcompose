@@ -471,11 +471,13 @@ include "%L"
 <Multi_key> <N> <G>                 : "Ŋ"  U014A   # LATIN CAPITAL LETTER ENG
 <Multi_key> <O> <parenright>        : "Ɔ"  U0186   # LATIN CAPITAL LETTER OPEN O
 <Multi_key> <S> <H>                 : "Ʃ"  U01A9   # LATIN CAPITAL LETTER ESH
+<Multi_key> <U> <bar>               : "Ʉ"  U0244   # LATIN CAPITAL LETTER U BAR
 <Multi_key> <U> <H>                 : "Ʊ"  U01B1   # LATIN CAPITAL LETTER UPSILON
 <Multi_key> <V> <v>                 : "Ʌ"  U0245   # LATIN CAPITAL LETTER TURNED V
 <Multi_key> <V> <backslash>         : "Ʋ"  U01B2   # LATIN CAPITAL LETTER V WITH HOOK
 <Multi_key> <Z> <H>                 : "Ʒ"  U01B7   # LATIN CAPITAL LETTER EZH
 
+<Multi_key> <d> <z>                 : "ǳ"  U01F3   # LATIN SMALL LETTER DZ
 <Multi_key> <H> <w>                 : "Ƕ"  U01F6   # LATIN CAPITAL LETTER HWAIR
 <Multi_key> <h> <w>                 : "ƕ"  U0195   # LATIN SMALL LETTER HV
 <Multi_key> <l> <s>                 : "ſ"  U017F   # LATIN SMALL LETTER LONG S (alternatively fs)
@@ -487,28 +489,65 @@ include "%L"
 <Multi_key> <comma> <v>             : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA
 <Multi_key> <grave> <comma>         : "ʽ"  U02BD    # MODIFIER LETTER REVERSED COMMA
 
-# precomposed letters, prioritising using v for carons and - for horiztonal strokes
+# precomposed diacritics, prioritising using v for carons and - for horiztonal strokes
 
-<Multi_key> <v> <l>                 : "ľ"  U013E   # LATIN SMALL LETTER L WITH CARON (conflicts with useless |)
 <Multi_key> <minus> <B>             : "Ƀ"  U0243   # LATIN CAPITAL LETTER B WITH STROKE
 <Multi_key> <minus> <b>             : "ƀ"  U0180   # LATIN SMALL LETTER B WITH STROKE
-<Multi_key> <slash> <b>             : "␢"  U2422   # BLANK SYMBOL (conflicts with ƀ, use -b)
 <Multi_key> <minus> <H>             : "Ħ"  U0126   # LATIN CAPITAL LETTER H WITH STROKE
 <Multi_key> <minus> <h>             : "ħ"  U0127   # LATIN SMALL LETTER H WITH STROKE
+<Multi_key> <minus> <J>             : "Ɉ"  U0248  # LATIN CAPITAL LETTER J WITH STROKE
+<Multi_key> <minus> <j>             : "ɉ"  U0249  # LATIN SMALL LETTER J WITH STROKE
+<Multi_key> <minus> <R>             : "Ɍ"  U024C  # LATIN CAPITAL LETTER R WITH STROKE
+<Multi_key> <minus> <r>             : "ɍ"  U024D  # LATIN SMALL LETTER R WITH STROKE
+<Multi_key> <minus> <Y>             : "Ɏ"  U024E  # LATIN CAPITAL LETTER Y WITH STROKE
+<Multi_key> <minus> <y>             : "ɏ"  U024F  # LATIN SMALL LETTER Y WITH STROKE
 <Multi_key> <minus> <z>             : "ƶ"  U01B6   # LATIN SMALL LETTER Z WITH STROKE
 
-<Multi_key> <apostrophe> <semicolon> <C> : "Ḉ"  U1E08  # LATIN CAPITAL LETTER C WITH CEDILLA AND ACUTE
-<Multi_key> <apostrophe> <semicolon> <c> : "ḉ"  U1E09  # LATIN SMALL LETTER C WITH CEDILLA AND ACUTE
-<Multi_key> <period> <v> <S> : "Ṧ"  U1E66  # LATIN CAPITAL LETTER S WITH CARON AND DOT ABOVE
-<Multi_key> <period> <v> <s> : "ṧ"  U1E67  # LATIN SMALL LETTER S WITH CARON AND DOT ABOVE
-<Multi_key> <period> <l> <s> : "ẛ"  U1E9B  # LATIN SMALL LETTER LONG S WITH DOT ABOVE
+<Multi_key> <period> <L>            : "Ŀ"  U013F   # LATIN CAPITAL LETTER L WITH MIDDLE DOT
+<Multi_key> <period> <l>            : "ŀ"  U0140   # LATIN SMALL LETTER L WITH MIDDLE DOT
+<Multi_key> <slash> <b>             : "␢"  U2422   # BLANK SYMBOL (conflicts with ƀ, use -b)
+<Multi_key> <v> <l>                 : "ľ"  U013E   # LATIN SMALL LETTER L WITH CARON (conflicts with useless |)
 
 <Multi_key> <apostrophe> <Multi_key> <A> <E> : "Ǽ"  U01FC  # LATIN CAPITAL LETTER AE WITH ACUTE
 <Multi_key> <apostrophe> <Multi_key> <a> <e> : "ǽ"  U01FD  # LATIN SMALL LETTER AE WITH ACUTE
-<Multi_key> <minus> <Multi_key> <A> <E> : "Ǣ"  U01E2  # LATIN CAPITAL LETTER AE WITH MACRON
-<Multi_key> <minus> <Multi_key> <a> <e> : "ǣ"  U01E3  # LATIN SMALL LETTER AE WITH MACRON
-<Multi_key> <v> <Multi_key> <Z> <H> : "Ǯ"  U01EE  # LATIN CAPITAL LETTER EZH WITH CARON
-<Multi_key> <v> <Multi_key> <z> <h> : "ǯ"  U01EF  # LATIN SMALL LETTER EZH WITH CARON
+<Multi_key> <minus> <Multi_key> <A> <E>      : "Ǣ"  U01E2  # LATIN CAPITAL LETTER AE WITH MACRON
+<Multi_key> <minus> <Multi_key> <a> <e>      : "ǣ"  U01E3  # LATIN SMALL LETTER AE WITH MACRON
+<Multi_key> <period> <Multi_key> <f> <s>     : "ẛ"  U1E9B  # LATIN SMALL LETTER LONG S WITH DOT ABOVE
+<Multi_key> <period> <Multi_key> <l> <s>     : "ẛ"  U1E9B  # LATIN SMALL LETTER LONG S WITH DOT ABOVE
+<Multi_key> <v> <Multi_key> <Z> <H>          : "Ǯ"  U01EE  # LATIN CAPITAL LETTER EZH WITH CARON
+<Multi_key> <v> <Multi_key> <z> <h>          : "ǯ"  U01EF  # LATIN SMALL LETTER EZH WITH CARON
+
+<Multi_key> <asciicircum> <quotedbl> <A> : "Ȁ"  U0200  # LATIN CAPITAL LETTER A WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <a> : "ȁ"  U0201  # LATIN SMALL LETTER A WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <E> : "Ȅ"  U0204  # LATIN CAPITAL LETTER E WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <e> : "ȅ"  U0205  # LATIN SMALL LETTER E WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <I> : "Ȉ"  U0208  # LATIN CAPITAL LETTER I WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <i> : "ȉ"  U0209  # LATIN SMALL LETTER I WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <O> : "Ȍ"  U020C  # LATIN CAPITAL LETTER O WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <o> <space> : "ȍ"  U020D  # LATIN SMALL LETTER O WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <R> : "Ȑ"  U0210  # LATIN CAPITAL LETTER R WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <r> : "ȑ"  U0211  # LATIN SMALL LETTER R WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <U> : "Ȕ"  U0214  # LATIN CAPITAL LETTER U WITH DOUBLE GRAVE
+<Multi_key> <asciicircum> <quotedbl> <u> : "ȕ"  U0215  # LATIN SMALL LETTER U WITH DOUBLE GRAVE
+
+<Multi_key> <u> <v> <A> : "Ȃ"  U0202  # LATIN CAPITAL LETTER A WITH INVERTED BREVE
+<Multi_key> <u> <v> <a> : "ȃ"  U0203  # LATIN SMALL LETTER A WITH INVERTED BREVE
+<Multi_key> <u> <v> <E> : "Ȇ"  U0206  # LATIN CAPITAL LETTER E WITH INVERTED BREVE
+<Multi_key> <u> <v> <e> : "ȇ"  U0207  # LATIN SMALL LETTER E WITH INVERTED BREVE
+<Multi_key> <u> <v> <I> : "Ȋ"  U020A  # LATIN CAPITAL LETTER I WITH INVERTED BREVE
+<Multi_key> <u> <v> <i> : "ȋ"  U020B  # LATIN SMALL LETTER I WITH INVERTED BREVE
+<Multi_key> <u> <v> <O> : "Ȏ"  U020E  # LATIN CAPITAL LETTER O WITH INVERTED BREVE
+<Multi_key> <u> <v> <o> : "ȏ"  U020F  # LATIN SMALL LETTER O WITH INVERTED BREVE
+<Multi_key> <u> <v> <R> : "Ȓ"  U0212  # LATIN CAPITAL LETTER R WITH INVERTED BREVE
+<Multi_key> <u> <v> <r> : "ȓ"  U0213  # LATIN SMALL LETTER R WITH INVERTED BREVE
+<Multi_key> <u> <v> <U> : "Ȗ"  U0216  # LATIN CAPITAL LETTER U WITH INVERTED BREVE
+<Multi_key> <u> <v> <u> : "ȗ"  U0217  # LATIN SMALL LETTER U WITH INVERTED BREVE
+
+<Multi_key> <apostrophe> <semicolon> <C> : "Ḉ"  U1E08  # LATIN CAPITAL LETTER C WITH CEDILLA AND ACUTE
+<Multi_key> <apostrophe> <semicolon> <c> : "ḉ"  U1E09  # LATIN SMALL LETTER C WITH CEDILLA AND ACUTE
+
+<Multi_key> <period> <v> <S> : "Ṧ"  U1E66  # LATIN CAPITAL LETTER S WITH CARON AND DOT ABOVE
+<Multi_key> <period> <v> <s> : "ṧ"  U1E67  # LATIN SMALL LETTER S WITH CARON AND DOT ABOVE
 
 ###############################################
 # Superscripts, subscripts and small capitals #
@@ -2092,6 +2131,8 @@ include "%L"
 <Multi_key> <braceleft> <M> <Multi_key> <o> <h> <m> <braceright> : "㏁" U33C1   # SQUARE M OHM
 
 # multigraphs with punctuation or digits
+
+<Multi_key> <braceleft> <apostrophe> <n> <braceright> : "ŉ"  U0149  # LATIN SMALL LETTER N PRECEDED BY APOSTROPHE
 
 <Multi_key> <braceleft> <a> <slash> <c> <braceright> : "℀" U2100   # ACCOUNT OF
 <Multi_key> <braceleft> <A> <slash> <S> <braceright> : "⅍" U214D   # AKTIESELSKAB
