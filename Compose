@@ -310,9 +310,9 @@ include "%L"
 # B. LATIN SCRIPT CHARACTERS #
 ##############################
 
-###########################################################
-# International Phonetic Alphabet (and other linguistics) #
-###########################################################
+###################################
+# International Phonetic Alphabet #
+###################################
 
 # Also see brackets and combining diacritics sections
 
@@ -455,7 +455,11 @@ include "%L"
 <Multi_key> <bar> <2> : "꜕"  UA715  # MODIFIER LETTER LOW LEFT-STEM TONE BAR
 <Multi_key> <bar> <1> : "꜖"  UA716  # MODIFIER LETTER EXTRA-LOW LEFT-STEM TONE BAR
 
-# additional non-IPA letters
+###############################
+# Miscellaneous Latin letters #
+###############################
+
+# various non-IPA letters
 
 <Multi_key> <A> <H>                 : "Ɑ"  U2C6D   # LATIN CAPITAL LETTER ALPHA
 <Multi_key> <E> <E>                 : "Ə"  U018F   # LATIN CAPITAL LETTER SCHWA
@@ -483,7 +487,7 @@ include "%L"
 <Multi_key> <comma> <v>             : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA
 <Multi_key> <grave> <comma>         : "ʽ"  U02BD    # MODIFIER LETTER REVERSED COMMA
 
-# for consistency, since we priorities using v for carons and - for horiztonal strokes
+# precomposed letters, prioritising using v for carons and - for horiztonal strokes
 
 <Multi_key> <v> <l>                 : "ľ"  U013E   # LATIN SMALL LETTER L WITH CARON (conflicts with useless |)
 <Multi_key> <minus> <B>             : "Ƀ"  U0243   # LATIN CAPITAL LETTER B WITH STROKE
@@ -492,6 +496,19 @@ include "%L"
 <Multi_key> <minus> <H>             : "Ħ"  U0126   # LATIN CAPITAL LETTER H WITH STROKE
 <Multi_key> <minus> <h>             : "ħ"  U0127   # LATIN SMALL LETTER H WITH STROKE
 <Multi_key> <minus> <z>             : "ƶ"  U01B6   # LATIN SMALL LETTER Z WITH STROKE
+
+<Multi_key> <apostrophe> <semicolon> <C> : "Ḉ"  U1E08  # LATIN CAPITAL LETTER C WITH CEDILLA AND ACUTE
+<Multi_key> <apostrophe> <semicolon> <c> : "ḉ"  U1E09  # LATIN SMALL LETTER C WITH CEDILLA AND ACUTE
+<Multi_key> <period> <v> <S> : "Ṧ"  U1E66  # LATIN CAPITAL LETTER S WITH CARON AND DOT ABOVE
+<Multi_key> <period> <v> <s> : "ṧ"  U1E67  # LATIN SMALL LETTER S WITH CARON AND DOT ABOVE
+<Multi_key> <period> <l> <s> : "ẛ"  U1E9B  # LATIN SMALL LETTER LONG S WITH DOT ABOVE
+
+<Multi_key> <apostrophe> <Multi_key> <A> <E> : "Ǽ"  U01FC  # LATIN CAPITAL LETTER AE WITH ACUTE
+<Multi_key> <apostrophe> <Multi_key> <a> <e> : "ǽ"  U01FD  # LATIN SMALL LETTER AE WITH ACUTE
+<Multi_key> <minus> <Multi_key> <A> <E> : "Ǣ"  U01E2  # LATIN CAPITAL LETTER AE WITH MACRON
+<Multi_key> <minus> <Multi_key> <a> <e> : "ǣ"  U01E3  # LATIN SMALL LETTER AE WITH MACRON
+<Multi_key> <v> <Multi_key> <Z> <H> : "Ǯ"  U01EE  # LATIN CAPITAL LETTER EZH WITH CARON
+<Multi_key> <v> <Multi_key> <z> <h> : "ǯ"  U01EF  # LATIN SMALL LETTER EZH WITH CARON
 
 ###############################################
 # Superscripts, subscripts and small capitals #
@@ -3192,6 +3209,14 @@ include "%L"
 <Multi_key> <b> <d> <period> <s>         : "ष" U0937   # DEVANAGARI LETTER SSA
 <Multi_key> <b> <d> <s>                  : "स" U0938   # DEVANAGARI LETTER SA
 <Multi_key> <b> <d> <h>                  : "ह" U0939   # DEVANAGARI LETTER HA
+<Multi_key> <b> <d> <q>                  : "क़" U0958   # DEVANAGARI LETTER QA
+<Multi_key> <b> <d> <underscore> <k> <h> : "ख़" U0959   # DEVANAGARI LETTER KHHA
+<Multi_key> <b> <d> <period> <g>         : "ग़" U095A   # DEVANAGARI LETTER GHHA
+<Multi_key> <b> <d> <z>                  : "ज़" U095B   # DEVANAGARI LETTER ZA
+<Multi_key> <b> <d> <period> <r> <space> : "ड़" U095C   # DEVANAGARI LETTER DDDHA
+<Multi_key> <b> <d> <period> <r> <h>     : "ढ़" U095D   # DEVANAGARI LETTER RHA
+<Multi_key> <b> <d> <f>                  : "फ़" U095E   # DEVANAGARI LETTER FA
+<Multi_key> <b> <d> <semicolon> <y>      : "य़" U095F   # DEVANAGARI LETTER YYA
 
 # Independent vowels
 
@@ -6293,6 +6318,9 @@ include "%L"
 <Multi_key> <h> <c> <u>         : "וּ"  U05D5 U05BC   # HEBREW LETTER VAV WITH SHURUK
 <Multi_key> <h> <c> <w>         : "װ"  U05F0   # HEBREW LIGATURE YIDDISH DOUBLE VAV
 <Multi_key> <h> <c> <Y>         : "ײ"  U05F2   # HEBREW LIGATURE YIDDISH DOUBLE YOD
+<Multi_key> <h> <c> <underscore> <Y> : "ײַ"  UFB1F  # HEBREW LIGATURE YIDDISH YOD YOD PATAH
+<Multi_key> <h> <c> <underscore> <a> : "אַ"  UFB2E  # HEBREW LETTER ALEF WITH PATAH
+<Multi_key> <h> <c> <underscore> <T> <a> : "אָ"  UFB2F  # HEBREW LETTER ALEF WITH QAMATS
 
 <Multi_key> <h> <semicolon> <colon> <Return>                   : "ְ"  U05B0   # HEBREW POINT SHEVA
 <Multi_key> <h> <semicolon> <v> <period> <period> <Return>     : "ֱ"  U05B1   # HEBREW POINT HATAF SEGOL
