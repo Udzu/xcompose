@@ -454,9 +454,9 @@ include "%L"
 <Multi_key> <bar> <2> : "꜕"  UA715  # MODIFIER LETTER LOW LEFT-STEM TONE BAR
 <Multi_key> <bar> <1> : "꜖"  UA716  # MODIFIER LETTER EXTRA-LOW LEFT-STEM TONE BAR
 
-###############################
-# Miscellaneous Latin letters #
-###############################
+########################
+# Latin script letters #
+########################
 
 # capital versions of IPA letters
 
@@ -10809,6 +10809,10 @@ include "%L"
 <Multi_key> <Tab> <greater> <minus> <minus>               : "⤚"  U291A  # RIGHTWARDS ARROW-TAIL
 <Multi_key> <Tab> <minus> <less> <less>                   : "⤛"  U291B  # LEFTWARDS DOUBLE ARROW-TAIL
 <Multi_key> <Tab> <greater> <greater> <minus>             : "⤜"  U291C  # RIGHTWARDS DOUBLE ARROW-TAIL
+<Multi_key> <Tab> <Multi_key> <less> <greater> <less> <minus> : "⤝"  U291D  # LEFTWARDS ARROW TO BLACK DIAMOND
+<Multi_key> <Tab> <minus> <greater> <Multi_key> <less> <greater> : "⤞"  U291E  # RIGHTWARDS ARROW TO BLACK DIAMOND
+<Multi_key> <Tab> <Multi_key> <less> <greater> <less> <bar> : "⤟"  U291F  # LEFTWARDS ARROW FROM BAR TO BLACK DIAMOND
+<Multi_key> <Tab> <bar> <greater> <Multi_key> <less> <greater> : "⤠"  U2920  # RIGHTWARDS ARROW FROM BAR TO BLACK DIAMOND
 
 <Multi_key> <Tab> <less> <Multi_key> <backslash> <backslash> <greater> : "⤡"  U2921  # NORTH WEST AND SOUTH EAST ARROW
 <Multi_key> <Tab> <asciicircum> <Multi_key> <backslash> <backslash> <v> : "⤡"  U2921  # NORTH WEST AND SOUTH EAST ARROW
@@ -10846,11 +10850,22 @@ include "%L"
 <Multi_key> <Tab> <Multi_key> <less> <backslash> <asciicircum> <Multi_key> <slash> <greater> : "⤲"  U2932  # NORTH WEST ARROW CROSSING NORTH EAST ARROW
 <Multi_key> <Tab> <Multi_key> <asciicircum> <backslash> <asciicircum> <Multi_key> <asciicircum> <slash> : "⤲"  U2932  # NORTH WEST ARROW CROSSING NORTH EAST ARROW
 
+<Multi_key> <Tab> <asciitilde> <asciitilde> <Multi_key> <minus> <greater> : "⤳"  U2933  # WAVE ARROW POINTING DIRECTLY RIGHT
 <Multi_key> <Tab> <greater> <bar> <asciicircum>           : "⤴"  U2934  # ARROW POINTING RIGHTWARDS THEN CURVING UPWARDS
 <Multi_key> <Tab> <greater> <bar> <v>                     : "⤵"  U2935  # ARROW POINTING RIGHTWARDS THEN CURVING DOWNWARDS
+<Multi_key> <Tab> <v> <minus> <less>                      : "⤶"  U2936  # ARROW POINTING DOWNWARDS THEN CURVING LEFTWARDS
+<Multi_key> <Tab> <v> <minus> <greater>                   : "⤷"  U2937  # ARROW POINTING DOWNWARDS THEN CURVING RIGHTWARDS
 
 <Multi_key> <Tab> <O> <less>                              : "⥀"  U2940  # ANTICLOCKWISE CLOSED CIRCLE ARROW
 <Multi_key> <Tab> <O> <greater>                           : "⥁"  U2941  # CLOCKWISE CLOSED CIRCLE ARROW
+<Multi_key> <Tab> <2> <greater> <Multi_key> <less> <space> : "⥂"  U2942  # RIGHTWARDS ARROW ABOVE SHORT LEFTWARDS ARROW
+<Multi_key> <Tab> <2> <less> <Multi_key> <space> <greater> : "⥃"  U2943  # LEFTWARDS ARROW ABOVE SHORT RIGHTWARDS ARROW
+<Multi_key> <Tab> <2> <Multi_key> <space> <greater> <less> : "⥄"  U2944  # SHORT RIGHTWARDS ARROW ABOVE LEFTWARDS ARROW
+<Multi_key> <Tab> <minus> <plus> <greater>                : "⥅"  U2945  # RIGHTWARDS ARROW WITH PLUS BELOW
+<Multi_key> <Tab> <less> <plus> <minus>                   : "⥆"  U2946  # LEFTWARDS ARROW WITH PLUS BELOW
+<Multi_key> <Tab> <minus> <x> <greater>                   : "⥇"  U2947  # RIGHTWARDS ARROW THROUGH X
+<Multi_key> <Tab> <less> <o> <greater>                    : "⥈"  U2948  # LEFT RIGHT ARROW THROUGH SMALL CIRCLE
+<Multi_key> <Tab> <asciicircum> <asciicircum> <o>         : "⥉"  U2949  # UPWARDS TWO-HEADED ARROW FROM SMALL CIRCLE
 
 <Multi_key> <Tab> <slash> <minus> <slash>                 : "⥊"  U294A  # LEFT BARB UP RIGHT BARB DOWN HARPOON
 <Multi_key> <Tab> <backslash> <minus> <backslash>         : "⥋"  U294B  # LEFT BARB DOWN RIGHT BARB UP HARPOON
@@ -10860,8 +10875,46 @@ include "%L"
 <Multi_key> <Tab> <backslash> <bar> <slash>               : "⥏"  U294F  # UP BARB RIGHT DOWN BARB RIGHT HARPOON
 <Multi_key> <Tab> <backslash> <minus> <slash>             : "⥐"  U2950  # LEFT BARB DOWN RIGHT BARB DOWN HARPOON
 <Multi_key> <Tab> <slash> <bar> <backslash>               : "⥑"  U2951  # UP BARB LEFT DOWN BARB LEFT HARPOON
+<Multi_key> <Tab> <Multi_key> <bar> <slash> <minus> <minus> : "⥒"  U2952  # LEFTWARDS HARPOON WITH BARB UP TO BAR
+<Multi_key> <Tab> <minus> <minus> <Multi_key> <backslash> <bar> : "⥓"  U2953  # RIGHTWARDS HARPOON WITH BARB UP TO BAR
+<Multi_key> <Tab> <Multi_key> <minus> <backslash> <bar> <bar> : "⥔"  U2954  # UPWARDS HARPOON WITH BARB RIGHT TO BAR
+<Multi_key> <Tab> <bar> <bar> <Multi_key> <slash> <minus> : "⥕"  U2955  # DOWNWARDS HARPOON WITH BARB RIGHT TO BAR
+<Multi_key> <Tab> <Multi_key> <bar> <backslash> <minus> <minus> : "⥖"  U2956  # LEFTWARDS HARPOON WITH BARB DOWN TO BAR
+<Multi_key> <Tab> <minus> <minus> <Multi_key> <slash> <bar> : "⥗"  U2957  # RIGHTWARDS HARPOON WITH BARB DOWN TO BAR
+<Multi_key> <Tab> <Multi_key> <minus> <slash> <bar> <bar> : "⥘"  U2958  # UPWARDS HARPOON WITH BARB LEFT TO BAR
+<Multi_key> <Tab> <bar> <bar> <Multi_key> <minus> <backslash> : "⥙"  U2959  # DOWNWARDS HARPOON WITH BARB LEFT TO BAR
+<Multi_key> <Tab> <slash> <minus> <bar>                   : "⥚"  U295A  # LEFTWARDS HARPOON WITH BARB UP FROM BAR
+<Multi_key> <Tab> <backslash> <bar> <minus>               : "⥜"  U295C  # UPWARDS HARPOON WITH BARB RIGHT FROM BAR
+<Multi_key> <Tab> <minus> <bar> <slash>                   : "⥝"  U295D  # DOWNWARDS HARPOON WITH BARB RIGHT FROM BAR
+<Multi_key> <Tab> <bar> <minus> <slash>                   : "⥟"  U295F  # RIGHTWARDS HARPOON WITH BARB DOWN FROM BAR
+<Multi_key> <Tab> <slash> <bar> <minus>                   : "⥠"  U2960  # UPWARDS HARPOON WITH BARB LEFT FROM BAR
+<Multi_key> <Tab> <minus> <bar> <backslash>               : "⥡"  U2961  # DOWNWARDS HARPOON WITH BARB LEFT FROM BAR
+
+<Multi_key> <Tab> <2> <Multi_key> <slash> <Multi_key> <minus> <slash> : "⇋"  U21CB  # LEFTWARDS HARPOON OVER RIGHTWARDS HARPOON
+<Multi_key> <Tab> <2> <Multi_key> <minus> <backslash> <Multi_key> <backslash> <minus> : "⇌"  U21CC  # RIGHTWARDS HARPOON OVER LEFTWARDS HARPOON
+<Multi_key> <Tab> <2> <Multi_key> <slash> <minus> <Multi_key> <backslash> <minus> : "⥢"  U2962  # LEFTWARDS HARPOON WITH BARB UP ABOVE LEFTWARDS HARPOON WITH BARB DOWN
+<Multi_key> <Tab> <2> <Multi_key> <slash> <bar> <Multi_key> <backslash> <bar> : "⥣"  U2963  # UPWARDS HARPOON WITH BARB LEFT BESIDE UPWARDS HARPOON WITH BARB RIGHT
+<Multi_key> <Tab> <2> <Multi_key> <minus> <backslash> <Multi_key> <minus> <slash> : "⥤"  U2964  # RIGHTWARDS HARPOON WITH BARB UP ABOVE RIGHTWARDS HARPOON WITH BARB DOWN
+<Multi_key> <Tab> <2> <Multi_key> <bar> <backslash> <Multi_key> <bar> <slash> : "⥥"  U2965  # DOWNWARDS HARPOON WITH BARB LEFT BESIDE DOWNWARDS HARPOON WITH BARB RIGHT
+<Multi_key> <Tab> <2> <Multi_key> <slash> <minus> <Multi_key> <minus> <backslash> : "⥦"  U2966  # LEFTWARDS HARPOON WITH BARB UP ABOVE RIGHTWARDS HARPOON WITH BARB UP
+<Multi_key> <Tab> <2> <Multi_key> <backslash> <minus> <Multi_key> <minus> <slash> : "⥧"  U2967  # LEFTWARDS HARPOON WITH BARB DOWN ABOVE RIGHTWARDS HARPOON WITH BARB DOWN
+<Multi_key> <Tab> <2> <Multi_key> <minus> <backslash> <Multi_key> <slash> <minus> : "⥨"  U2968  # RIGHTWARDS HARPOON WITH BARB UP ABOVE LEFTWARDS HARPOON WITH BARB UP
+<Multi_key> <Tab> <2> <Multi_key> <minus> <slash> <Multi_key> <backslash> <minus> : "⥩"  U2969  # RIGHTWARDS HARPOON WITH BARB DOWN ABOVE LEFTWARDS HARPOON WITH BARB DOWN
+<Multi_key> <Tab> <2> <Multi_key> <slash> <minus> <minus> : "⥪"  U296A  # LEFTWARDS HARPOON WITH BARB UP ABOVE LONG DASH
+<Multi_key> <Tab> <2> <minus> <Multi_key> <backslash> <minus> : "⥫"  U296B  # LEFTWARDS HARPOON WITH BARB DOWN BELOW LONG DASH
+<Multi_key> <Tab> <2> <Multi_key> <minus> <backslash> <minus> : "⥬"  U296C  # RIGHTWARDS HARPOON WITH BARB UP ABOVE LONG DASH
+<Multi_key> <Tab> <2> <minus> <Multi_key> <minus> <slash> : "⥭"  U296D  # RIGHTWARDS HARPOON WITH BARB DOWN BELOW LONG DASH
+<Multi_key> <Tab> <2> <Multi_key> <slash> <bar> <Multi_key> <bar> <slash> : "⥮"  U296E  # UPWARDS HARPOON WITH BARB LEFT BESIDE DOWNWARDS HARPOON WITH BARB RIGHT
+<Multi_key> <Tab> <2> <Multi_key> <bar> <backslash> <Multi_key> <backslash> <bar> : "⥯"  U296F  # DOWNWARDS HARPOON WITH BARB LEFT BESIDE UPWARDS HARPOON WITH BARB RIGHT
 
 <Multi_key> <Tab> <equal> <equal> <parenright>            : "⥰"  U2970  # RIGHT DOUBLE ARROW WITH ROUNDED HEAD
+<Multi_key> <Tab> <minus> <equal> <greater>               : "⥱"  U2971  # EQUALS SIGN ABOVE RIGHTWARDS ARROW
+<Multi_key> <Tab> <less> <minus> <Multi_key> <less> <minus> : "⥷"  U2977  # LEFTWARDS ARROW THROUGH LESS-THAN
+<Multi_key> <Tab> <less> <minus> <E>                      : "⥺"  U297A  # LEFTWARDS ARROW THROUGH SUBSET
+<Multi_key> <Tab> <E> <minus> <minus>                     : "⥼"  U297C  # LEFT FISH TAIL
+<Multi_key> <Tab> <minus> <minus> <3>                     : "⥽"  U297D  # RIGHT FISH TAIL
+<Multi_key> <Tab> <E> <bar> <bar>                         : "⥾"  U297E  # UP FISH TAIL
+<Multi_key> <Tab> <bar> <bar> <3>                         : "⥿"  U297F  # DOWN FISH TAIL
 
 # Miscellaneous Symbols and Arrows
 
