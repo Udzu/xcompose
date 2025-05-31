@@ -522,6 +522,9 @@ include "%L"
 <Multi_key> <minus> <h>             : "ħ"  U0127  # LATIN SMALL LETTER H WITH STROKE
 <Multi_key> <minus> <J>             : "Ɉ"  U0248  # LATIN CAPITAL LETTER J WITH STROKE
 <Multi_key> <minus> <j>             : "ɉ"  U0249  # LATIN SMALL LETTER J WITH STROKE
+<Multi_key> <minus> <p>             : "ꝑ"  UA751  # LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER
+<Multi_key> <minus> <q>             : "ꝗ"  UA757  # LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER
+<Multi_key> <minus> <Q>             : "Ꝗ"  UA756  # LATIN CAPITAL LETTER Q WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <R>             : "Ɍ"  U024C  # LATIN CAPITAL LETTER R WITH STROKE
 <Multi_key> <minus> <r>             : "ɍ"  U024D  # LATIN SMALL LETTER R WITH STROKE
 <Multi_key> <minus> <T>             : "Ŧ"  U0166  # LATIN CAPITAL LETTER T WITH STROKE
@@ -530,6 +533,8 @@ include "%L"
 <Multi_key> <minus> <z>             : "ƶ"  U01B6  # LATIN SMALL LETTER Z WITH STROKE
 <Multi_key> <minus> <Multi_key> <A> <E> : "Ǣ"  U01E2  # LATIN CAPITAL LETTER AE WITH MACRON
 <Multi_key> <minus> <Multi_key> <a> <e> : "ǣ"  U01E3  # LATIN SMALL LETTER AE WITH MACRON
+<Multi_key> <minus> <Multi_key> <T> <H> : "ꝧ"  UA767  # LATIN SMALL LETTER THORN WITH STROKE THROUGH DESCENDER
+<Multi_key> <minus> <Multi_key> <t> <h> : "Ꝧ"  UA766  # LATIN CAPITAL LETTER THORN WITH STROKE THROUGH DESCENDER
 
 <Multi_key> <period> <j>            : "ȷ"  U0237  # LATIN SMALL LETTER DOTLESS J
 <Multi_key> <period> <L>            : "Ŀ"  U013F  # LATIN CAPITAL LETTER L WITH MIDDLE DOT
@@ -540,12 +545,30 @@ include "%L"
 <Multi_key> <apostrophe> <Multi_key> <A> <E> : "Ǽ"  U01FC  # LATIN CAPITAL LETTER AE WITH ACUTE
 <Multi_key> <apostrophe> <Multi_key> <a> <e> : "ǽ"  U01FD  # LATIN SMALL LETTER AE WITH ACUTE
 
+<Multi_key> <underscore> <comma> <E> : "Ȩ"  U0228  # LATIN CAPITAL LETTER E WITH CEDILLA
+<Multi_key> <underscore> <comma> <e> : "ȩ"  U0229  # LATIN SMALL LETTER E WITH CEDILLA
+
 <Multi_key> <slash> <A>             : "Ⱥ"  U023A  # LATIN CAPITAL LETTER A WITH STROKE
 <Multi_key> <slash> <a>             : "ⱥ"  U2C65  # LATIN SMALL LETTER A WITH STROKE
 <Multi_key> <slash> <b>             : "␢"  U2422  # BLANK SYMBOL (conflicts with ƀ, use -b)
 <Multi_key> <slash> <E>             : "Ɇ"  U0246  # LATIN CAPITAL LETTER E WITH STROKE
 <Multi_key> <slash> <e>             : "ɇ"  U0247  # LATIN SMALL LETTER E WITH STROKE
+<Multi_key> <slash> <K>             : "Ꞣ"  UA7A2  # LATIN CAPITAL LETTER K WITH OBLIQUE STROKE
+<Multi_key> <slash> <k>             : "ꞣ"  UA7A3  # LATIN SMALL LETTER K WITH OBLIQUE STROKE
+<Multi_key> <slash> <N>             : "Ꞥ"  UA7A4  # LATIN CAPITAL LETTER N WITH OBLIQUE STROKE
+<Multi_key> <slash> <n>             : "ꞥ"  UA7A5  # LATIN SMALL LETTER N WITH OBLIQUE STROKE
+<Multi_key> <slash> <Q>             : "Ꝙ"  UA758  # LATIN CAPITAL LETTER Q WITH DIAGONAL STROKE
+<Multi_key> <slash> <q>             : "ꝙ"  UA759  # LATIN SMALL LETTER Q WITH DIAGONAL STROKE
+<Multi_key> <slash> <R>             : "Ꞧ"  UA7A6  # LATIN CAPITAL LETTER R WITH OBLIQUE STROKE
+<Multi_key> <slash> <r>             : "ꞧ"  UA7A7  # LATIN SMALL LETTER R WITH OBLIQUE STROKE
+<Multi_key> <slash> <S>             : "Ꞩ"  UA7A8  # LATIN CAPITAL LETTER S WITH OBLIQUE STROKE
+<Multi_key> <slash> <s>             : "ꞩ"  UA7A9  # LATIN SMALL LETTER S WITH OBLIQUE STROKE
 <Multi_key> <slash> <T>             : "Ⱦ"  U023E  # LATIN CAPITAL LETTER T WITH DIAGONAL STROKE (conflicts with Ŧ, use -T)
+<Multi_key> <slash> <U>             : "Ꞹ"  UA7B8  # LATIN CAPITAL LETTER U WITH STROKE
+<Multi_key> <slash> <V>             : "Ꝟ"  UA75E  # LATIN CAPITAL LETTER V WITH DIAGONAL STROKE
+<Multi_key> <slash> <v>             : "ꝟ"  UA75F  # LATIN SMALL LETTER V WITH DIAGONAL STROKE (conflicts with √, use v/)
+<Multi_key> <slash> <Multi_key> <T> <H> : "ꝥ"  UA765  # LATIN SMALL LETTER THORN WITH STROKE
+<Multi_key> <slash> <Multi_key> <t> <h> : "Ꝥ"  UA764  # LATIN CAPITAL LETTER THORN WITH STROKE
 
 <Multi_key> <d> <at> : "ȡ"  U0221  # LATIN SMALL LETTER D WITH CURL
 <Multi_key> <l> <at> : "ȴ"  U0234  # LATIN SMALL LETTER L WITH CURL
@@ -10982,6 +11005,11 @@ include "%L"
 <Multi_key> <Tab> <2> <Multi_key> <asciicircum> <minus> <Multi_key> <asciicircum> <minus> : "⮅"  U2B85  # UPWARDS TRIANGLE-HEADED PAIRED ARROWS
 <Multi_key> <Tab> <2> <Multi_key> <bar> <greater> <Multi_key> <bar> <greater> : "⮆"  U2B86  # RIGHTWARDS TRIANGLE-HEADED PAIRED ARROWS
 <Multi_key> <Tab> <2> <Multi_key> <minus> <v> <Multi_key> <minus> <v> : "⮇"  U2B87  # DOWNWARDS TRIANGLE-HEADED PAIRED ARROWS
+
+<Multi_key> <Tab> <Multi_key> <less> <bar> <Multi_key> <less> <bar> <minus> : "⯬"  U2BEC  # LEFTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <Multi_key> <asciicircum> <minus> <bar> : "⯭"  U2BED  # UPWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
+<Multi_key> <Tab> <minus> <Multi_key> <bar> <greater> <Multi_key> <bar> <greater> : "⯮"  U2BEE  # RIGHTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
+<Multi_key> <Tab> <bar> <Multi_key> <minus> <v> <Multi_key> <minus> <v> : "⯯"  U2BEF  # DOWNWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
 
 ##########################
 # Box drawing characters #
