@@ -18,16 +18,16 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (127): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Bidirectional control** (10): LRI RLI PDI etc
 
-### Latin script characters (2094)
+### Latin script characters (2117)
 * **International Phonetic Alphabet** (113): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
-* **Latin script letters** (135): Ƿ Ȝ ␢ ȵ etc
+* **Latin script letters** (156): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (262): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (194): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (353): ʣ ㏈ etc
-* **Letter games** (306): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
+* **Letter games** (308): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (4832)
+### Non-Latin script characters (4861)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِتْ⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդիտ etc
 * **Brahmic Scripts**: Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Kannada, Limbu, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu (1304): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ္, 𑄢𑄬𑄘𑄨𑄖𑄳, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆಡಿತ್, ᤖᤧᤍᤡᤳ, രെഡിട്, ꯔꯦꯗꯤꯠ, ରେଡିଟ, ꢬꢾꢞꢶꢜ, රෙඩිට්, ரெடிட், రెడిట్ etc
@@ -41,17 +41,17 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Japanese** (mostly kana) (302): 「レディット」 etc
 * **Korean** (using positional jamo) (118): 레딧 etc
 * **International Morse Code** (76): ···---··· etc
-* **Old Italic** & Runic (117): 𐌓𐌄𐌃𐌃𐌉𐌕, ᚱᛖᛞᛞᛁᛏ etc
+* **Old Italic**, Ogham & Runic (117): 𐌓𐌄𐌃𐌃𐌉𐌕, ᚏᚓᚇᚔᚈ, ᚱᛖᛞᛞᛁᛏ etc
 * **Thai**, Babayin, Khmer & Lao (261): เรดดิต, ᜍᜒᜇᜒᜆ᜔, រេទិត, ເຣັດິຕ etc
 * **Zhuyin**, Mongolian, Tai Le & Tibetan (304): ㄏㄨㄥˊㄉㄧˊ, ᠷᠡᠳᠢᠲ, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 
-### Symbols (2896)
+### Symbols (2911)
 * **Emoji** (1518): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (266): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (112): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
-* **Arrows** (296): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
+* **Arrows** (311): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
 * **Geometric shapes** (159): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (117): ╞╦╕ etc

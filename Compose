@@ -463,6 +463,7 @@ include "%L"
 <Multi_key> <A> <H>                 : "Ɑ"  U2C6D   # LATIN CAPITAL LETTER ALPHA
 <Multi_key> <A> <v>                 : "Ɐ"  U2C6F   # LATIN CAPITAL LETTER TURNED A
 <Multi_key> <A> <less>              : "Ɒ"  U2C70   # LATIN CAPITAL LETTER TURNED ALPHA
+<Multi_key> <B> <H>                 : "Ꞵ"  UA7B4   # LATIN CAPITAL LETTER BETA
 <Multi_key> <B> <apostrophe>        : "Ɓ"  U0181   # LATIN CAPITAL LETTER B WITH HOOK
 <Multi_key> <D> <L>                 : "Ɖ"  U0189   # LATIN CAPITAL LETTER AFRICAN D
 <Multi_key> <D> <apostrophe>        : "Ɗ"  U018A   # LATIN CAPITAL LETTER D WITH HOOK
@@ -483,6 +484,7 @@ include "%L"
 <Multi_key> <N> <G>                 : "Ŋ"  U014A   # LATIN CAPITAL LETTER ENG
 <Multi_key> <O> <bar>               : "Ɵ"  U019F   # LATIN CAPITAL LETTER O WITH MIDDLE TILDE
 <Multi_key> <O> <parenright>        : "Ɔ"  U0186   # LATIN CAPITAL LETTER OPEN O
+<Multi_key> <Q> <H>                 : "Ꭓ"  UA7B3   # LATIN CAPITAL LETTER CHI
 <Multi_key> <R> <l>                 : "Ɽ"  U2C64   # LATIN CAPITAL LETTER R WITH TAIL
 <Multi_key> <S> <H>                 : "Ʃ"  U01A9   # LATIN CAPITAL LETTER ESH
 <Multi_key> <S> <l>                 : "Ʂ"  UA7C5   # LATIN CAPITAL LETTER S WITH HOOK
@@ -491,6 +493,7 @@ include "%L"
 <Multi_key> <U> <H>                 : "Ʊ"  U01B1   # LATIN CAPITAL LETTER UPSILON
 <Multi_key> <V> <v>                 : "Ʌ"  U0245   # LATIN CAPITAL LETTER TURNED V
 <Multi_key> <V> <backslash>         : "Ʋ"  U01B2   # LATIN CAPITAL LETTER V WITH HOOK
+<Multi_key> <X> <H>                 : "Ꭓ"  UA7B3   # LATIN CAPITAL LETTER CHI
 <Multi_key> <Z> <H>                 : "Ʒ"  U01B7   # LATIN CAPITAL LETTER EZH
 
 # various other letters
@@ -545,9 +548,6 @@ include "%L"
 <Multi_key> <apostrophe> <Multi_key> <A> <E> : "Ǽ"  U01FC  # LATIN CAPITAL LETTER AE WITH ACUTE
 <Multi_key> <apostrophe> <Multi_key> <a> <e> : "ǽ"  U01FD  # LATIN SMALL LETTER AE WITH ACUTE
 
-<Multi_key> <underscore> <comma> <E> : "Ȩ"  U0228  # LATIN CAPITAL LETTER E WITH CEDILLA
-<Multi_key> <underscore> <comma> <e> : "ȩ"  U0229  # LATIN SMALL LETTER E WITH CEDILLA
-
 <Multi_key> <slash> <A>             : "Ⱥ"  U023A  # LATIN CAPITAL LETTER A WITH STROKE
 <Multi_key> <slash> <a>             : "ⱥ"  U2C65  # LATIN SMALL LETTER A WITH STROKE
 <Multi_key> <slash> <b>             : "␢"  U2422  # BLANK SYMBOL (conflicts with ƀ, use -b)
@@ -587,6 +587,30 @@ include "%L"
 <Multi_key> <u> <v> <r> : "ȓ"  U0213  # LATIN SMALL LETTER R WITH INVERTED BREVE
 <Multi_key> <u> <v> <U> : "Ȗ"  U0216  # LATIN CAPITAL LETTER U WITH INVERTED BREVE
 <Multi_key> <u> <v> <u> : "ȗ"  U0217  # LATIN SMALL LETTER U WITH INVERTED BREVE
+
+<Multi_key> <underscore> <o> <A> : "Ḁ"  U1E00  # LATIN CAPITAL LETTER A WITH RING BELOW (conflicts with ō, use -o)
+<Multi_key> <underscore> <o> <a> : "ḁ"  U1E01  # LATIN SMALL LETTER A WITH RING BELOW (conflicts with ō, use -o)
+
+<Multi_key> <underscore> <underscore> <B> : "Ḇ"  U1E06  # LATIN CAPITAL LETTER B WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <b> : "ḇ"  U1E07  # LATIN SMALL LETTER B WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <D> : "Ḏ"  U1E0E  # LATIN CAPITAL LETTER D WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <d> : "ḏ"  U1E0F  # LATIN SMALL LETTER D WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <h> : "ẖ"  U1E96  # LATIN SMALL LETTER H WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <K> : "Ḵ"  U1E34  # LATIN CAPITAL LETTER K WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <k> : "ḵ"  U1E35  # LATIN SMALL LETTER K WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <L> : "Ḻ"  U1E3A  # LATIN CAPITAL LETTER L WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <l> : "ḻ"  U1E3B  # LATIN SMALL LETTER L WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <N> : "Ṉ"  U1E48  # LATIN CAPITAL LETTER N WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <n> : "ṉ"  U1E49  # LATIN SMALL LETTER N WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <R> : "Ṟ"  U1E5E  # LATIN CAPITAL LETTER R WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <r> : "ṟ"  U1E5F  # LATIN SMALL LETTER R WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <T> : "Ṯ"  U1E6E  # LATIN CAPITAL LETTER T WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <t> : "ṯ"  U1E6F  # LATIN SMALL LETTER T WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <Z> : "Ẕ"  U1E94  # LATIN CAPITAL LETTER Z WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <z> : "ẕ"  U1E95  # LATIN SMALL LETTER Z WITH LINE BELOW (conflicts with ⁻, use -^)
+
+<Multi_key> <underscore> <comma> <E> : "Ȩ"  U0228  # LATIN CAPITAL LETTER E WITH CEDILLA
+<Multi_key> <underscore> <comma> <e> : "ȩ"  U0229  # LATIN SMALL LETTER E WITH CEDILLA
 
 <Multi_key> <asciicircum> <quotedbl> <A> : "Ȁ"  U0200  # LATIN CAPITAL LETTER A WITH DOUBLE GRAVE
 <Multi_key> <asciicircum> <quotedbl> <a> : "ȁ"  U0201  # LATIN SMALL LETTER A WITH DOUBLE GRAVE
@@ -2485,6 +2509,11 @@ include "%L"
 <Multi_key> <asciicircum> <less> <x> : "×" U00D7   # MULTIPLICATION SIGN
 <Multi_key> <asciicircum> <less> <y> : "⋋" U22CB   # LEFT SEMIDIRECT PRODUCT
 <Multi_key> <asciicircum> <less> <z> : "ɴ" U0274   # LATIN LETTER SMALL CAPITAL N
+
+<Multi_key> <asciicircum> <less> <Multi_key> <o> <slash> : "ᴓ"  U1D13  # LATIN SMALL LETTER SIDEWAYS O WITH STROKE
+<Multi_key> <asciicircum> <less> <Multi_key> <slash> <o> : "ᴓ"  U1D13  # LATIN SMALL LETTER SIDEWAYS O WITH STROKE
+<Multi_key> <asciicircum> <less> <Multi_key> <u> <quotedbl> : "ᴞ"  U1D1E  # LATIN SMALL LETTER SIDEWAYS DIAERESIZED U
+<Multi_key> <asciicircum> <less> <Multi_key> <quotedbl> <u> : "ᴞ"  U1D1E  # LATIN SMALL LETTER SIDEWAYS DIAERESIZED U
 
 <Multi_key> <asciicircum> <less> <0> : "⬭" U2B2D   # WHITE HORIZONTAL ELLIPSE
 <Multi_key> <asciicircum> <less> <1> : "⥞" U295E   # LEFTWARDS HARPOON WITH BARB DOWN FROM BAR
@@ -7192,9 +7221,9 @@ include "%L"
 <Multi_key> <m> <p> <s> <o> <s> : "···---···"  # MORSE CODE PROSIGN SOS (DISTRESS SIGNAL)
 <Multi_key> <m> <p> <v> <e>     : "···-·"  # MORSE CODE PROSIGN VE (VERIFIED)
 
-###############################
-# (oi) Old Italic (and Runic) #
-###############################
+#######################################
+# (oi) Old Italic (and Ogham & Runic) #
+#######################################
 
 # Also see numerals sections for Roman Numerals
 
@@ -7248,7 +7277,77 @@ include "%L"
 <Multi_key> <o> <i> <numbersign> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
 <Multi_key> <o> <i> <numbersign> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
 
-# (r = Runic) (suffixes: G=germanic, E=english, N=norse, D=danish (=long branch), M=medieval)
+# (o = Ogham)
+
+<Multi_key> <o> <i> <o> <space>      : " "  U1680  # OGHAM SPACE MARK
+<Multi_key> <o> <i> <o> <b>          : "ᚁ"  U1681  # OGHAM LETTER BEITH
+<Multi_key> <o> <i> <o> <l>          : "ᚂ"  U1682  # OGHAM LETTER LUIS
+<Multi_key> <o> <i> <o> <w>          : "ᚃ"  U1683  # OGHAM LETTER FEARN
+<Multi_key> <o> <i> <o> <s>          : "ᚄ"  U1684  # OGHAM LETTER SAIL
+<Multi_key> <o> <i> <o> <n>          : "ᚅ"  U1685  # OGHAM LETTER NION
+<Multi_key> <o> <i> <o> <j>          : "ᚆ"  U1686  # OGHAM LETTER UATH
+<Multi_key> <o> <i> <o> <d>          : "ᚇ"  U1687  # OGHAM LETTER DAIR
+<Multi_key> <o> <i> <o> <t>          : "ᚈ"  U1688  # OGHAM LETTER TINNE
+<Multi_key> <o> <i> <o> <k> <space>  : "ᚉ"  U1689  # OGHAM LETTER COLL
+<Multi_key> <o> <i> <o> <k> <w>      : "ᚊ"  U168A  # OGHAM LETTER CEIRT
+<Multi_key> <o> <i> <o> <m>          : "ᚋ"  U168B  # OGHAM LETTER MUIN
+<Multi_key> <o> <i> <o> <g> <space>  : "ᚌ"  U168C  # OGHAM LETTER GORT
+<Multi_key> <o> <i> <o> <g> <w>      : "ᚍ"  U168D  # OGHAM LETTER NGEADAL
+<Multi_key> <o> <i> <o> <z>          : "ᚎ"  U168E  # OGHAM LETTER STRAIF
+<Multi_key> <o> <i> <o> <r>          : "ᚏ"  U168F  # OGHAM LETTER RUIS
+<Multi_key> <o> <i> <o> <a> <space>  : "ᚐ"  U1690  # OGHAM LETTER AILM
+<Multi_key> <o> <i> <o> <o> <space>  : "ᚑ"  U1691  # OGHAM LETTER ONN
+<Multi_key> <o> <i> <o> <u> <space>  : "ᚒ"  U1692  # OGHAM LETTER UR
+<Multi_key> <o> <i> <o> <e> <space>  : "ᚓ"  U1693  # OGHAM LETTER EADHADH
+<Multi_key> <o> <i> <o> <i> <space>  : "ᚔ"  U1694  # OGHAM LETTER IODHADH
+<Multi_key> <o> <i> <o> <e> <a>      : "ᚕ"  U1695  # OGHAM LETTER EABHADH
+<Multi_key> <o> <i> <o> <o> <i>      : "ᚖ"  U1696  # OGHAM LETTER OR
+<Multi_key> <o> <i> <o> <u> <i>      : "ᚗ"  U1697  # OGHAM LETTER UILLEANN
+<Multi_key> <o> <i> <o> <i> <a>      : "ᚘ"  U1698  # OGHAM LETTER IFIN
+<Multi_key> <o> <i> <o> <a> <i>      : "ᚙ"  U1699  # OGHAM LETTER EAMHANCHOLL
+<Multi_key> <o> <i> <o> <p>          : "ᚚ"  U169A  # OGHAM LETTER PEITH
+<Multi_key> <o> <i> <o> <parenleft>  : "᚛"  U169B  # OGHAM FEATHER MARK
+<Multi_key> <o> <i> <o> <parenright> : "᚜"  U169C  # OGHAM REVERSED FEATHER MARK
+
+# (visual notation)
+
+<Multi_key> <o> <i> <o> <1> <v>             : "ᚁ"  U1681  # OGHAM LETTER BEITH
+<Multi_key> <o> <i> <o> <2> <v>             : "ᚂ"  U1682  # OGHAM LETTER LUIS
+<Multi_key> <o> <i> <o> <3> <v>             : "ᚃ"  U1683  # OGHAM LETTER FEARN
+<Multi_key> <o> <i> <o> <4> <v>             : "ᚄ"  U1684  # OGHAM LETTER SAIL
+<Multi_key> <o> <i> <o> <5> <v>             : "ᚅ"  U1685  # OGHAM LETTER NION
+<Multi_key> <o> <i> <o> <1> <asciicircum>   : "ᚆ"  U1686  # OGHAM LETTER UATH
+<Multi_key> <o> <i> <o> <2> <asciicircum>   : "ᚇ"  U1687  # OGHAM LETTER DAIR
+<Multi_key> <o> <i> <o> <3> <asciicircum>   : "ᚈ"  U1688  # OGHAM LETTER TINNE
+<Multi_key> <o> <i> <o> <4> <asciicircum>   : "ᚉ"  U1689  # OGHAM LETTER COLL
+<Multi_key> <o> <i> <o> <5> <asciicircum>   : "ᚊ"  U168A  # OGHAM LETTER CEIRT
+<Multi_key> <o> <i> <o> <1> <slash>         : "ᚋ"  U168B  # OGHAM LETTER MUIN
+<Multi_key> <o> <i> <o> <2> <slash>         : "ᚌ"  U168C  # OGHAM LETTER GORT
+<Multi_key> <o> <i> <o> <3> <slash>         : "ᚍ"  U168D  # OGHAM LETTER NGEADAL
+<Multi_key> <o> <i> <o> <4> <slash>         : "ᚎ"  U168E  # OGHAM LETTER STRAIF
+<Multi_key> <o> <i> <o> <5> <slash>         : "ᚏ"  U168F  # OGHAM LETTER RUIS
+<Multi_key> <o> <i> <o> <1> <bar>           : "ᚐ"  U1690  # OGHAM LETTER AILM
+<Multi_key> <o> <i> <o> <2> <bar>           : "ᚑ"  U1691  # OGHAM LETTER ONN
+<Multi_key> <o> <i> <o> <3> <bar>           : "ᚒ"  U1692  # OGHAM LETTER UR
+<Multi_key> <o> <i> <o> <4> <bar>           : "ᚓ"  U1693  # OGHAM LETTER EADHADH
+<Multi_key> <o> <i> <o> <5> <bar>           : "ᚔ"  U1694  # OGHAM LETTER IODHADH
+<Multi_key> <o> <i> <o> <backslash> <slash> : "ᚕ"  U1695  # OGHAM LETTER EABHADH
+<Multi_key> <o> <i> <o> <slash> <backslash> : "ᚕ"  U1695  # OGHAM LETTER EABHADH
+<Multi_key> <o> <i> <o> <less> <greater>    : "ᚖ"  U1696  # OGHAM LETTER OR
+<Multi_key> <o> <i> <o> <G>                 : "ᚗ"  U1697  # OGHAM LETTER UILLEANN
+<Multi_key> <o> <i> <o> <X> <X>             : "ᚘ"  U1698  # OGHAM LETTER IFIN
+<Multi_key> <o> <i> <o> <numbersign>        : "ᚙ"  U1699  # OGHAM LETTER EAMHANCHOLL
+<Multi_key> <o> <i> <o> <underscore>        : "ᚚ"  U169A  # OGHAM LETTER PEITH
+
+# (r = Runic)
+
+# suffixes distinguish betwen conflicting forms:
+#  G = Germanic (= Elder Futhark)
+#  E = English (= Anglo-Frisian Futhorc)
+#  N = Norse (= Short Twig Younger Futhark)
+#  D = Danish (= Long Branch Younger Futhark)
+#  M = Medieval
+#  Return = majority form
 
 <Multi_key> <o> <i> <r> <a> <D> : "ᛅ" U16C5   # RUNIC LETTER LONG-BRANCH-AR AE
 <Multi_key> <o> <i> <r> <a> <E> : "ᚪ" U16AA   # RUNIC LETTER AC A
@@ -10800,7 +10899,7 @@ include "%L"
 <Multi_key> <Tab> <bar> <Multi_key> <equal> <equal> <greater> : "⟾"  U27FE  # LONG RIGHTWARDS DOUBLE ARROW FROM BAR
 <Multi_key> <Tab> <minus> <Multi_key> <asciitilde> <asciitilde> <greater> : "⟿"  U27FF  # LONG RIGHTWARDS SQUIGGLE ARROW
 
-# Supplemental Arrows B
+# Supplemental Arrows-B
 
 <Multi_key> <Tab> <minus> <bar> <Multi_key> <greater> <greater> : "⤀"  U2900  # RIGHTWARDS TWO-HEADED ARROW WITH VERTICAL STROKE
 <Multi_key> <Tab> <minus> <Multi_key> <bar> <bar> <Multi_key> <greater> <greater> : "⤁"  U2901  # RIGHTWARDS TWO-HEADED ARROW WITH DOUBLE VERTICAL STROKE
@@ -10878,7 +10977,14 @@ include "%L"
 <Multi_key> <Tab> <greater> <bar> <v>                     : "⤵"  U2935  # ARROW POINTING RIGHTWARDS THEN CURVING DOWNWARDS
 <Multi_key> <Tab> <v> <minus> <less>                      : "⤶"  U2936  # ARROW POINTING DOWNWARDS THEN CURVING LEFTWARDS
 <Multi_key> <Tab> <v> <minus> <greater>                   : "⤷"  U2937  # ARROW POINTING DOWNWARDS THEN CURVING RIGHTWARDS
-
+<Multi_key> <Tab> <backslash> <parenright> <v>            : "⤸"  U2938  # RIGHT-SIDE ARC CLOCKWISE ARROW
+<Multi_key> <Tab> <slash> <parenleft> <v>                 : "⤹"  U2939  # LEFT-SIDE ARC ANTICLOCKWISE ARROW
+<Multi_key> <Tab> <less> <parenleft> <backslash>          : "⤺"  U293A  # TOP ARC ANTICLOCKWISE ARROW
+<Multi_key> <Tab> <backslash> <parenright> <greater>      : "⤻"  U293B  # BOTTOM ARC ANTICLOCKWISE ARROW
+<Multi_key> <Tab> <slash> <Multi_key> <parenleft> <minus> <greater> : "⤼"  U293C  # TOP ARC CLOCKWISE ARROW WITH MINUS
+<Multi_key> <Tab> <less> <Multi_key> <parenleft> <plus> <backslash> : "⤽"  U293D  # TOP ARC ANTICLOCKWISE ARROW WITH PLUS
+<Multi_key> <Tab> <backslash> <parenright> <less>         : "⤾"  U293E  # LOWER RIGHT SEMICIRCULAR CLOCKWISE ARROW
+<Multi_key> <Tab> <slash> <parenleft> <greater>           : "⤿"  U293F  # LOWER LEFT SEMICIRCULAR ANTICLOCKWISE ARROW
 <Multi_key> <Tab> <O> <less>                              : "⥀"  U2940  # ANTICLOCKWISE CLOSED CIRCLE ARROW
 <Multi_key> <Tab> <O> <greater>                           : "⥁"  U2941  # CLOCKWISE CLOSED CIRCLE ARROW
 <Multi_key> <Tab> <2> <greater> <Multi_key> <less> <space> : "⥂"  U2942  # RIGHTWARDS ARROW ABOVE SHORT LEFTWARDS ARROW
@@ -10932,6 +11038,9 @@ include "%L"
 
 <Multi_key> <Tab> <equal> <equal> <parenright>            : "⥰"  U2970  # RIGHT DOUBLE ARROW WITH ROUNDED HEAD
 <Multi_key> <Tab> <minus> <equal> <greater>               : "⥱"  U2971  # EQUALS SIGN ABOVE RIGHTWARDS ARROW
+<Multi_key> <Tab> <minus> <Multi_key> <asciitilde> <minus> <greater> : "⥲"  U2972  # TILDE OPERATOR ABOVE RIGHTWARDS ARROW
+<Multi_key> <Tab> <less> <Multi_key> <minus> <asciitilde> <minus> : "⥳"  U2973  # LEFTWARDS ARROW ABOVE TILDE OPERATOR
+<Multi_key> <Tab> <minus> <Multi_key> <minus> <asciitilde> <greater> : "⥴"  U2974  # RIGHTWARDS ARROW ABOVE TILDE OPERATOR
 <Multi_key> <Tab> <less> <minus> <Multi_key> <less> <minus> : "⥷"  U2977  # LEFTWARDS ARROW THROUGH LESS-THAN
 <Multi_key> <Tab> <less> <minus> <E>                      : "⥺"  U297A  # LEFTWARDS ARROW THROUGH SUBSET
 <Multi_key> <Tab> <E> <minus> <minus>                     : "⥼"  U297C  # LEFT FISH TAIL
@@ -10996,7 +11105,6 @@ include "%L"
 <Multi_key> <Tab> <bar> <Multi_key> <minus> <minus> <Multi_key> <minus> <v> : "⭽"  U2B7D  # DOWNWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE
 <Multi_key> <Tab> <2> <Multi_key> <bar> <less> <Multi_key> <greater> <bar> : "⭾"  U2B7E  # HORIZONTAL TAB KEY
 <Multi_key> <Tab> <2> <Multi_key> <v> <minus> <Multi_key> <minus> <asciicircum> : "⭿"  U2B7F  # VERTICAL TAB KEY
-
 <Multi_key> <Tab> <2> <Multi_key> <less> <bar> <Multi_key> <bar> <greater> : "⮀"  U2B80  # LEFTWARDS TRIANGLE-HEADED ARROW OVER RIGHTWARDS TRIANGLE-HEADED ARROW
 <Multi_key> <Tab> <2> <Multi_key> <asciicircum> <minus> <Multi_key> <minus> <v> : "⮁"  U2B81  # UPWARDS TRIANGLE-HEADED ARROW LEFTWARDS OF DOWNWARDS TRIANGLE-HEADED ARROW
 <Multi_key> <Tab> <2> <Multi_key> <bar> <greater> <Multi_key> <less> <bar> : "⮂"  U2B82  # RIGHTWARDS TRIANGLE-HEADED ARROW OVER LEFTWARDS TRIANGLE-HEADED ARROW
@@ -11005,6 +11113,10 @@ include "%L"
 <Multi_key> <Tab> <2> <Multi_key> <asciicircum> <minus> <Multi_key> <asciicircum> <minus> : "⮅"  U2B85  # UPWARDS TRIANGLE-HEADED PAIRED ARROWS
 <Multi_key> <Tab> <2> <Multi_key> <bar> <greater> <Multi_key> <bar> <greater> : "⮆"  U2B86  # RIGHTWARDS TRIANGLE-HEADED PAIRED ARROWS
 <Multi_key> <Tab> <2> <Multi_key> <minus> <v> <Multi_key> <minus> <v> : "⮇"  U2B87  # DOWNWARDS TRIANGLE-HEADED PAIRED ARROWS
+<Multi_key> <Tab> <Multi_key> <less> <bar>  <parenright> <minus> : "⮌"  U2B8C  # ANTICLOCKWISE TRIANGLE-HEADED RIGHT U-SHAPED ARROW
+<Multi_key> <Tab> <bar> <parenright> <Multi_key> <minus> <asciicircum> : "⮍"  U2B8D  # ANTICLOCKWISE TRIANGLE-HEADED BOTTOM U-SHAPED ARROW
+<Multi_key> <Tab> <minus> <parenleft> <Multi_key> <bar> <greater> : "⮎"  U2B8E  # ANTICLOCKWISE TRIANGLE-HEADED LEFT U-SHAPED ARROW
+<Multi_key> <Tab> <Multi_key> <v> <minus> <parenleft> <bar> : "⮏"  U2B8F  # ANTICLOCKWISE TRIANGLE-HEADED TOP U-SHAPED ARROW
 
 <Multi_key> <Tab> <Multi_key> <less> <bar> <Multi_key> <less> <bar> <minus> : "⯬"  U2BEC  # LEFTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
 <Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <Multi_key> <asciicircum> <minus> <bar> : "⯭"  U2BED  # UPWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
