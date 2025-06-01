@@ -137,15 +137,19 @@ include "%L"
 <Multi_key> <semicolon> <Return>                       : "̨"  U0328   # COMBINING OGONEK
 <Multi_key> <x> <Return>                               : "̽"  U033D   # COMBINING X ABOVE
 <Multi_key> <S> <Return>                               : "̾"  U033E   # COMBINING VERTICAL TILDE
+<Multi_key> <asciicircum> <underscore> <underscore> <Return> : "̿"  U033F  # COMBINING DOUBLE OVERLINE
 <Multi_key> <bracketleft> <Return>                     : "͆"  U0346   # COMBINING BRIDGE ABOVE
 <Multi_key> <asciitilde> <slash> <Return>              : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <slash> <asciitilde> <Return>              : "͊"  U034A   # COMBINING NOT TILDE ABOVE
+<Multi_key> <asciicircum> <asciitilde> <colon> <Return> : "͋"  U034B  # COMBINING HOMOTHETIC ABOVE
+<Multi_key> <asciicircum> <colon> <asciitilde> <Return> : "͋"  U034B  # COMBINING HOMOTHETIC ABOVE
 <Multi_key> <asciicircum> <asciitilde> <asciitilde> <Return> : "͌"  U034C   # COMBINING ALMOST EQUAL TO ABOVE
 <Multi_key> <asciicircum> <greater> <Return>           : "͐"  U0350   # COMBINING RIGHT ARROWHEAD ABOVE
 <Multi_key> <c> <Return>                               : "͑"  U0351   # COMBINING LEFT HALF RING ABOVE
 <Multi_key> <parenleft> <period> <Return>              : "͒"  U0352   # COMBINING FERMATA
 <Multi_key> <c> <less> <Return>                        : "͗"  U0357   # COMBINING RIGHT HALF RING ABOVE (conflicts with č, use vc)
 <Multi_key> <asciicircum> <greater> <period> <Return>  : "͘"  U0358   # COMBINING DOT ABOVE RIGHT
+<Multi_key> <z> <Return>                               : "͛"  U035B   # COMBINING ZIGZAG ABOVE (use ^^z[Return] for ◌ᷦ)
 <Multi_key> <parenright> <Return>                      : "͝"  U035D   # COMBINING DOUBLE BREVE  
 <Multi_key> <parenleft> <Return>                       : "͡"  U0361   # COMBINING DOUBLE INVERTED BREVE
 <Multi_key> <asciicircum> <asciicircum> <Return>       : "᪰"  U1AB0   # COMBINING DOUBLED CIRCUMFLEX ACCENT
@@ -227,7 +231,9 @@ include "%L"
 <Multi_key> <underscore> <underscore> <minus> <greater> <Return> : "⃯"  U20EF   # COMBINING RIGHT ARROW BELOW (conflicts with ¯, use -^)
 
 <Multi_key> <minus> <asciitilde> <Return>              : "̴"  U0334   # COMBINING TILDE OVERLAY
+<Multi_key> <minus> <bar> <minus> <Return>             : "̵"  U0335   # COMBINING SHORT STROKE OVERLAY
 <Multi_key> <minus> <minus> <Return>                   : "̶"  U0336   # COMBINING LONG STROKE OVERLAY (STRIKETHROUGH)
+<Multi_key> <minus> <bar> <slash> <Return>             : "̷"  U0337   # COMBINING SHORT SOLIDUS OVERLAY
 <Multi_key> <minus> <slash> <Return>                   : "̸"  U0338   # COMBINING LONG SOLIDUS OVERLAY (conflicts with ⌿, use /-)
 <Multi_key> <minus> <bar> <Return>                     : "⃒"  U20D2   # COMBINING LONG VERTICAL LINE OVERLAY
 <Multi_key> <minus> <backslash> <Return>               : "⃥"  U20E5   # COMBINING REVERSE SOLIDUS OVERLAY (conflicts with ⍀, use \-)
@@ -251,9 +257,22 @@ include "%L"
 <Multi_key> <O> <period>                               : "◌"  U25CC    # DOTTED CIRCLE (PLACEHOLDER GLYPH)
 <Multi_key> <apostrophe> <underscore> <Return>         : "⍘"  U2358   # APL FUNCTIONAL SYMBOL QUOTE UNDERBAR (to free up _')
 
-####################################
-# Bidirectional control characters #
-####################################
+######################
+# Control characters #
+######################
+
+# Bidirectional control
+
+<Multi_key> <L> <R> <M> : "‎"  U200E   # LEFT-TO-RIGHT MARK
+<Multi_key> <R> <L> <M> : "‏"  U200F   # RIGHT-TO-LEFT MARK
+<Multi_key> <L> <R> <E> : "‪"  U202A   # LEFT-TO-RIGHT EMBEDDING
+<Multi_key> <R> <L> <E> : "‫"  U202B   # RIGHT-TO-LEFT EMBEDDING
+<Multi_key> <P> <D> <F> : "‬"  U202C   # POP DIRECTIONAL FORMATTING
+<Multi_key> <L> <R> <O> : "‭"  U202D   # LEFT-TO-RIGHT OVERRIDE
+<Multi_key> <R> <L> <O> : "‮"  U202E   # RIGHT-TO-LEFT OVERRIDE
+<Multi_key> <L> <R> <I> : "⁦"  U2066   # LEFT-TO-RIGHT ISOLATE
+<Multi_key> <R> <L> <I> : "⁧"  U2067   # RIGHT-TO-LEFT ISOLATE
+<Multi_key> <P> <D> <I> : "⁩"  U2069   # POP DIRECTIONAL ISOLATE
 
 <Multi_key> <l> <r> <m> : "‎"  U200E   # LEFT-TO-RIGHT MARK
 <Multi_key> <r> <l> <m> : "‏"  U200F   # RIGHT-TO-LEFT MARK
@@ -265,6 +284,274 @@ include "%L"
 <Multi_key> <l> <r> <i> : "⁦"  U2066   # LEFT-TO-RIGHT ISOLATE
 <Multi_key> <r> <l> <i> : "⁧"  U2067   # RIGHT-TO-LEFT ISOLATE
 <Multi_key> <p> <d> <i> : "⁩"  U2069   # POP DIRECTIONAL ISOLATE
+
+# Glyph joiners
+
+<Multi_key> <C> <G> <J>         : "͏"  U034F  # COMBINING GRAPHEME JOINER
+<Multi_key> <Z> <W> <J>         : "‍"  U200D   # ZERO WIDTH JOINER
+<Multi_key> <Z> <W> <N> <J>     : "‌"  U200C   # ZERO WIDTH NON-JOINER
+
+<Multi_key> <z> <w> <j>         : "‍"  U200D   # ZERO WIDTH JOINER
+<Multi_key> <z> <w> <n> <j>     : "‌"  U200C   # ZERO WIDTH NON-JOINER
+
+# Variation selectors
+
+<Multi_key> <V> <S> <1> <Return> : "︀"  UFE00  # VARIATION SELECTOR-1
+<Multi_key> <V> <S> <2> <Return> : "︁"  UFE01  # VARIATION SELECTOR-2
+<Multi_key> <V> <S> <3> <Return> : "︂"  UFE02  # VARIATION SELECTOR-3
+<Multi_key> <V> <S> <4> <Return> : "︃"  UFE03  # VARIATION SELECTOR-4
+<Multi_key> <V> <S> <5> <Return> : "︄"  UFE04  # VARIATION SELECTOR-5
+<Multi_key> <V> <S> <6> <Return> : "︅"  UFE05  # VARIATION SELECTOR-6
+<Multi_key> <V> <S> <7> <Return> : "︆"  UFE06  # VARIATION SELECTOR-7
+<Multi_key> <V> <S> <8> <Return> : "︇"  UFE07  # VARIATION SELECTOR-8
+<Multi_key> <V> <S> <9> <Return> : "︈"  UFE08  # VARIATION SELECTOR-9
+<Multi_key> <V> <S> <1> <0> <Return> : "︉"  UFE09  # VARIATION SELECTOR-10
+<Multi_key> <V> <S> <1> <1> <Return> : "︊"  UFE0A  # VARIATION SELECTOR-11
+<Multi_key> <V> <S> <1> <2> <Return> : "︋"  UFE0B  # VARIATION SELECTOR-12
+<Multi_key> <V> <S> <1> <3> <Return> : "︌"  UFE0C  # VARIATION SELECTOR-13
+<Multi_key> <V> <S> <1> <4> <Return> : "︍"  UFE0D  # VARIATION SELECTOR-14
+<Multi_key> <V> <S> <1> <5> <Return> : "︎"  UFE0E  # VARIATION SELECTOR-15 (alternatively @0)
+<Multi_key> <V> <S> <1> <6> <Return> : "️"  UFE0F  # VARIATION SELECTOR-16 (alternatively @[Return])
+<Multi_key> <V> <S> <1> <7> <Return> : "󠄀"  UE0100  # VARIATION SELECTOR-17
+<Multi_key> <V> <S> <1> <8> <Return> : "󠄁"  UE0101  # VARIATION SELECTOR-18
+<Multi_key> <V> <S> <1> <9> <Return> : "󠄂"  UE0102  # VARIATION SELECTOR-19
+<Multi_key> <V> <S> <2> <0> <Return> : "󠄃"  UE0103  # VARIATION SELECTOR-20
+<Multi_key> <V> <S> <2> <1> <Return> : "󠄄"  UE0104  # VARIATION SELECTOR-21
+<Multi_key> <V> <S> <2> <2> <Return> : "󠄅"  UE0105  # VARIATION SELECTOR-22
+<Multi_key> <V> <S> <2> <3> <Return> : "󠄆"  UE0106  # VARIATION SELECTOR-23
+<Multi_key> <V> <S> <2> <4> <Return> : "󠄇"  UE0107  # VARIATION SELECTOR-24
+<Multi_key> <V> <S> <2> <5> <Return> : "󠄈"  UE0108  # VARIATION SELECTOR-25
+<Multi_key> <V> <S> <2> <6> <Return> : "󠄉"  UE0109  # VARIATION SELECTOR-26
+<Multi_key> <V> <S> <2> <7> <Return> : "󠄊"  UE010A  # VARIATION SELECTOR-27
+<Multi_key> <V> <S> <2> <8> <Return> : "󠄋"  UE010B  # VARIATION SELECTOR-28
+<Multi_key> <V> <S> <2> <9> <Return> : "󠄌"  UE010C  # VARIATION SELECTOR-29
+<Multi_key> <V> <S> <3> <0> <Return> : "󠄍"  UE010D  # VARIATION SELECTOR-30
+<Multi_key> <V> <S> <3> <1> <Return> : "󠄎"  UE010E  # VARIATION SELECTOR-31
+<Multi_key> <V> <S> <3> <2> <Return> : "󠄏"  UE010F  # VARIATION SELECTOR-32
+<Multi_key> <V> <S> <3> <3> <Return> : "󠄐"  UE0110  # VARIATION SELECTOR-33
+<Multi_key> <V> <S> <3> <4> <Return> : "󠄑"  UE0111  # VARIATION SELECTOR-34
+<Multi_key> <V> <S> <3> <5> <Return> : "󠄒"  UE0112  # VARIATION SELECTOR-35
+<Multi_key> <V> <S> <3> <6> <Return> : "󠄓"  UE0113  # VARIATION SELECTOR-36
+<Multi_key> <V> <S> <3> <7> <Return> : "󠄔"  UE0114  # VARIATION SELECTOR-37
+<Multi_key> <V> <S> <3> <8> <Return> : "󠄕"  UE0115  # VARIATION SELECTOR-38
+<Multi_key> <V> <S> <3> <9> <Return> : "󠄖"  UE0116  # VARIATION SELECTOR-39
+<Multi_key> <V> <S> <4> <0> <Return> : "󠄗"  UE0117  # VARIATION SELECTOR-40
+<Multi_key> <V> <S> <4> <1> <Return> : "󠄘"  UE0118  # VARIATION SELECTOR-41
+<Multi_key> <V> <S> <4> <2> <Return> : "󠄙"  UE0119  # VARIATION SELECTOR-42
+<Multi_key> <V> <S> <4> <3> <Return> : "󠄚"  UE011A  # VARIATION SELECTOR-43
+<Multi_key> <V> <S> <4> <4> <Return> : "󠄛"  UE011B  # VARIATION SELECTOR-44
+<Multi_key> <V> <S> <4> <5> <Return> : "󠄜"  UE011C  # VARIATION SELECTOR-45
+<Multi_key> <V> <S> <4> <6> <Return> : "󠄝"  UE011D  # VARIATION SELECTOR-46
+<Multi_key> <V> <S> <4> <7> <Return> : "󠄞"  UE011E  # VARIATION SELECTOR-47
+<Multi_key> <V> <S> <4> <8> <Return> : "󠄟"  UE011F  # VARIATION SELECTOR-48
+<Multi_key> <V> <S> <4> <9> <Return> : "󠄠"  UE0120  # VARIATION SELECTOR-49
+<Multi_key> <V> <S> <5> <0> <Return> : "󠄡"  UE0121  # VARIATION SELECTOR-50
+<Multi_key> <V> <S> <5> <1> <Return> : "󠄢"  UE0122  # VARIATION SELECTOR-51
+<Multi_key> <V> <S> <5> <2> <Return> : "󠄣"  UE0123  # VARIATION SELECTOR-52
+<Multi_key> <V> <S> <5> <3> <Return> : "󠄤"  UE0124  # VARIATION SELECTOR-53
+<Multi_key> <V> <S> <5> <4> <Return> : "󠄥"  UE0125  # VARIATION SELECTOR-54
+<Multi_key> <V> <S> <5> <5> <Return> : "󠄦"  UE0126  # VARIATION SELECTOR-55
+<Multi_key> <V> <S> <5> <6> <Return> : "󠄧"  UE0127  # VARIATION SELECTOR-56
+<Multi_key> <V> <S> <5> <7> <Return> : "󠄨"  UE0128  # VARIATION SELECTOR-57
+<Multi_key> <V> <S> <5> <8> <Return> : "󠄩"  UE0129  # VARIATION SELECTOR-58
+<Multi_key> <V> <S> <5> <9> <Return> : "󠄪"  UE012A  # VARIATION SELECTOR-59
+<Multi_key> <V> <S> <6> <0> <Return> : "󠄫"  UE012B  # VARIATION SELECTOR-60
+<Multi_key> <V> <S> <6> <1> <Return> : "󠄬"  UE012C  # VARIATION SELECTOR-61
+<Multi_key> <V> <S> <6> <2> <Return> : "󠄭"  UE012D  # VARIATION SELECTOR-62
+<Multi_key> <V> <S> <6> <3> <Return> : "󠄮"  UE012E  # VARIATION SELECTOR-63
+<Multi_key> <V> <S> <6> <4> <Return> : "󠄯"  UE012F  # VARIATION SELECTOR-64
+<Multi_key> <V> <S> <6> <5> <Return> : "󠄰"  UE0130  # VARIATION SELECTOR-65
+<Multi_key> <V> <S> <6> <6> <Return> : "󠄱"  UE0131  # VARIATION SELECTOR-66
+<Multi_key> <V> <S> <6> <7> <Return> : "󠄲"  UE0132  # VARIATION SELECTOR-67
+<Multi_key> <V> <S> <6> <8> <Return> : "󠄳"  UE0133  # VARIATION SELECTOR-68
+<Multi_key> <V> <S> <6> <9> <Return> : "󠄴"  UE0134  # VARIATION SELECTOR-69
+<Multi_key> <V> <S> <7> <0> <Return> : "󠄵"  UE0135  # VARIATION SELECTOR-70
+<Multi_key> <V> <S> <7> <1> <Return> : "󠄶"  UE0136  # VARIATION SELECTOR-71
+<Multi_key> <V> <S> <7> <2> <Return> : "󠄷"  UE0137  # VARIATION SELECTOR-72
+<Multi_key> <V> <S> <7> <3> <Return> : "󠄸"  UE0138  # VARIATION SELECTOR-73
+<Multi_key> <V> <S> <7> <4> <Return> : "󠄹"  UE0139  # VARIATION SELECTOR-74
+<Multi_key> <V> <S> <7> <5> <Return> : "󠄺"  UE013A  # VARIATION SELECTOR-75
+<Multi_key> <V> <S> <7> <6> <Return> : "󠄻"  UE013B  # VARIATION SELECTOR-76
+<Multi_key> <V> <S> <7> <7> <Return> : "󠄼"  UE013C  # VARIATION SELECTOR-77
+<Multi_key> <V> <S> <7> <8> <Return> : "󠄽"  UE013D  # VARIATION SELECTOR-78
+<Multi_key> <V> <S> <7> <9> <Return> : "󠄾"  UE013E  # VARIATION SELECTOR-79
+<Multi_key> <V> <S> <8> <0> <Return> : "󠄿"  UE013F  # VARIATION SELECTOR-80
+<Multi_key> <V> <S> <8> <1> <Return> : "󠅀"  UE0140  # VARIATION SELECTOR-81
+<Multi_key> <V> <S> <8> <2> <Return> : "󠅁"  UE0141  # VARIATION SELECTOR-82
+<Multi_key> <V> <S> <8> <3> <Return> : "󠅂"  UE0142  # VARIATION SELECTOR-83
+<Multi_key> <V> <S> <8> <4> <Return> : "󠅃"  UE0143  # VARIATION SELECTOR-84
+<Multi_key> <V> <S> <8> <5> <Return> : "󠅄"  UE0144  # VARIATION SELECTOR-85
+<Multi_key> <V> <S> <8> <6> <Return> : "󠅅"  UE0145  # VARIATION SELECTOR-86
+<Multi_key> <V> <S> <8> <7> <Return> : "󠅆"  UE0146  # VARIATION SELECTOR-87
+<Multi_key> <V> <S> <8> <8> <Return> : "󠅇"  UE0147  # VARIATION SELECTOR-88
+<Multi_key> <V> <S> <8> <9> <Return> : "󠅈"  UE0148  # VARIATION SELECTOR-89
+<Multi_key> <V> <S> <9> <0> <Return> : "󠅉"  UE0149  # VARIATION SELECTOR-90
+<Multi_key> <V> <S> <9> <1> <Return> : "󠅊"  UE014A  # VARIATION SELECTOR-91
+<Multi_key> <V> <S> <9> <2> <Return> : "󠅋"  UE014B  # VARIATION SELECTOR-92
+<Multi_key> <V> <S> <9> <3> <Return> : "󠅌"  UE014C  # VARIATION SELECTOR-93
+<Multi_key> <V> <S> <9> <4> <Return> : "󠅍"  UE014D  # VARIATION SELECTOR-94
+<Multi_key> <V> <S> <9> <5> <Return> : "󠅎"  UE014E  # VARIATION SELECTOR-95
+<Multi_key> <V> <S> <9> <6> <Return> : "󠅏"  UE014F  # VARIATION SELECTOR-96
+<Multi_key> <V> <S> <9> <7> <Return> : "󠅐"  UE0150  # VARIATION SELECTOR-97
+<Multi_key> <V> <S> <9> <8> <Return> : "󠅑"  UE0151  # VARIATION SELECTOR-98
+<Multi_key> <V> <S> <9> <9> <Return> : "󠅒"  UE0152  # VARIATION SELECTOR-99
+<Multi_key> <V> <S> <1> <0> <0> <Return> : "󠅓"  UE0153  # VARIATION SELECTOR-100
+<Multi_key> <V> <S> <1> <0> <1> <Return> : "󠅔"  UE0154  # VARIATION SELECTOR-101
+<Multi_key> <V> <S> <1> <0> <2> <Return> : "󠅕"  UE0155  # VARIATION SELECTOR-102
+<Multi_key> <V> <S> <1> <0> <3> <Return> : "󠅖"  UE0156  # VARIATION SELECTOR-103
+<Multi_key> <V> <S> <1> <0> <4> <Return> : "󠅗"  UE0157  # VARIATION SELECTOR-104
+<Multi_key> <V> <S> <1> <0> <5> <Return> : "󠅘"  UE0158  # VARIATION SELECTOR-105
+<Multi_key> <V> <S> <1> <0> <6> <Return> : "󠅙"  UE0159  # VARIATION SELECTOR-106
+<Multi_key> <V> <S> <1> <0> <7> <Return> : "󠅚"  UE015A  # VARIATION SELECTOR-107
+<Multi_key> <V> <S> <1> <0> <8> <Return> : "󠅛"  UE015B  # VARIATION SELECTOR-108
+<Multi_key> <V> <S> <1> <0> <9> <Return> : "󠅜"  UE015C  # VARIATION SELECTOR-109
+<Multi_key> <V> <S> <1> <1> <0> <Return> : "󠅝"  UE015D  # VARIATION SELECTOR-110
+<Multi_key> <V> <S> <1> <1> <1> <Return> : "󠅞"  UE015E  # VARIATION SELECTOR-111
+<Multi_key> <V> <S> <1> <1> <2> <Return> : "󠅟"  UE015F  # VARIATION SELECTOR-112
+<Multi_key> <V> <S> <1> <1> <3> <Return> : "󠅠"  UE0160  # VARIATION SELECTOR-113
+<Multi_key> <V> <S> <1> <1> <4> <Return> : "󠅡"  UE0161  # VARIATION SELECTOR-114
+<Multi_key> <V> <S> <1> <1> <5> <Return> : "󠅢"  UE0162  # VARIATION SELECTOR-115
+<Multi_key> <V> <S> <1> <1> <6> <Return> : "󠅣"  UE0163  # VARIATION SELECTOR-116
+<Multi_key> <V> <S> <1> <1> <7> <Return> : "󠅤"  UE0164  # VARIATION SELECTOR-117
+<Multi_key> <V> <S> <1> <1> <8> <Return> : "󠅥"  UE0165  # VARIATION SELECTOR-118
+<Multi_key> <V> <S> <1> <1> <9> <Return> : "󠅦"  UE0166  # VARIATION SELECTOR-119
+<Multi_key> <V> <S> <1> <2> <0> <Return> : "󠅧"  UE0167  # VARIATION SELECTOR-120
+<Multi_key> <V> <S> <1> <2> <1> <Return> : "󠅨"  UE0168  # VARIATION SELECTOR-121
+<Multi_key> <V> <S> <1> <2> <2> <Return> : "󠅩"  UE0169  # VARIATION SELECTOR-122
+<Multi_key> <V> <S> <1> <2> <3> <Return> : "󠅪"  UE016A  # VARIATION SELECTOR-123
+<Multi_key> <V> <S> <1> <2> <4> <Return> : "󠅫"  UE016B  # VARIATION SELECTOR-124
+<Multi_key> <V> <S> <1> <2> <5> <Return> : "󠅬"  UE016C  # VARIATION SELECTOR-125
+<Multi_key> <V> <S> <1> <2> <6> <Return> : "󠅭"  UE016D  # VARIATION SELECTOR-126
+<Multi_key> <V> <S> <1> <2> <7> <Return> : "󠅮"  UE016E  # VARIATION SELECTOR-127
+<Multi_key> <V> <S> <1> <2> <8> <Return> : "󠅯"  UE016F  # VARIATION SELECTOR-128
+<Multi_key> <V> <S> <1> <2> <9> <Return> : "󠅰"  UE0170  # VARIATION SELECTOR-129
+<Multi_key> <V> <S> <1> <3> <0> <Return> : "󠅱"  UE0171  # VARIATION SELECTOR-130
+<Multi_key> <V> <S> <1> <3> <1> <Return> : "󠅲"  UE0172  # VARIATION SELECTOR-131
+<Multi_key> <V> <S> <1> <3> <2> <Return> : "󠅳"  UE0173  # VARIATION SELECTOR-132
+<Multi_key> <V> <S> <1> <3> <3> <Return> : "󠅴"  UE0174  # VARIATION SELECTOR-133
+<Multi_key> <V> <S> <1> <3> <4> <Return> : "󠅵"  UE0175  # VARIATION SELECTOR-134
+<Multi_key> <V> <S> <1> <3> <5> <Return> : "󠅶"  UE0176  # VARIATION SELECTOR-135
+<Multi_key> <V> <S> <1> <3> <6> <Return> : "󠅷"  UE0177  # VARIATION SELECTOR-136
+<Multi_key> <V> <S> <1> <3> <7> <Return> : "󠅸"  UE0178  # VARIATION SELECTOR-137
+<Multi_key> <V> <S> <1> <3> <8> <Return> : "󠅹"  UE0179  # VARIATION SELECTOR-138
+<Multi_key> <V> <S> <1> <3> <9> <Return> : "󠅺"  UE017A  # VARIATION SELECTOR-139
+<Multi_key> <V> <S> <1> <4> <0> <Return> : "󠅻"  UE017B  # VARIATION SELECTOR-140
+<Multi_key> <V> <S> <1> <4> <1> <Return> : "󠅼"  UE017C  # VARIATION SELECTOR-141
+<Multi_key> <V> <S> <1> <4> <2> <Return> : "󠅽"  UE017D  # VARIATION SELECTOR-142
+<Multi_key> <V> <S> <1> <4> <3> <Return> : "󠅾"  UE017E  # VARIATION SELECTOR-143
+<Multi_key> <V> <S> <1> <4> <4> <Return> : "󠅿"  UE017F  # VARIATION SELECTOR-144
+<Multi_key> <V> <S> <1> <4> <5> <Return> : "󠆀"  UE0180  # VARIATION SELECTOR-145
+<Multi_key> <V> <S> <1> <4> <6> <Return> : "󠆁"  UE0181  # VARIATION SELECTOR-146
+<Multi_key> <V> <S> <1> <4> <7> <Return> : "󠆂"  UE0182  # VARIATION SELECTOR-147
+<Multi_key> <V> <S> <1> <4> <8> <Return> : "󠆃"  UE0183  # VARIATION SELECTOR-148
+<Multi_key> <V> <S> <1> <4> <9> <Return> : "󠆄"  UE0184  # VARIATION SELECTOR-149
+<Multi_key> <V> <S> <1> <5> <0> <Return> : "󠆅"  UE0185  # VARIATION SELECTOR-150
+<Multi_key> <V> <S> <1> <5> <1> <Return> : "󠆆"  UE0186  # VARIATION SELECTOR-151
+<Multi_key> <V> <S> <1> <5> <2> <Return> : "󠆇"  UE0187  # VARIATION SELECTOR-152
+<Multi_key> <V> <S> <1> <5> <3> <Return> : "󠆈"  UE0188  # VARIATION SELECTOR-153
+<Multi_key> <V> <S> <1> <5> <4> <Return> : "󠆉"  UE0189  # VARIATION SELECTOR-154
+<Multi_key> <V> <S> <1> <5> <5> <Return> : "󠆊"  UE018A  # VARIATION SELECTOR-155
+<Multi_key> <V> <S> <1> <5> <6> <Return> : "󠆋"  UE018B  # VARIATION SELECTOR-156
+<Multi_key> <V> <S> <1> <5> <7> <Return> : "󠆌"  UE018C  # VARIATION SELECTOR-157
+<Multi_key> <V> <S> <1> <5> <8> <Return> : "󠆍"  UE018D  # VARIATION SELECTOR-158
+<Multi_key> <V> <S> <1> <5> <9> <Return> : "󠆎"  UE018E  # VARIATION SELECTOR-159
+<Multi_key> <V> <S> <1> <6> <0> <Return> : "󠆏"  UE018F  # VARIATION SELECTOR-160
+<Multi_key> <V> <S> <1> <6> <1> <Return> : "󠆐"  UE0190  # VARIATION SELECTOR-161
+<Multi_key> <V> <S> <1> <6> <2> <Return> : "󠆑"  UE0191  # VARIATION SELECTOR-162
+<Multi_key> <V> <S> <1> <6> <3> <Return> : "󠆒"  UE0192  # VARIATION SELECTOR-163
+<Multi_key> <V> <S> <1> <6> <4> <Return> : "󠆓"  UE0193  # VARIATION SELECTOR-164
+<Multi_key> <V> <S> <1> <6> <5> <Return> : "󠆔"  UE0194  # VARIATION SELECTOR-165
+<Multi_key> <V> <S> <1> <6> <6> <Return> : "󠆕"  UE0195  # VARIATION SELECTOR-166
+<Multi_key> <V> <S> <1> <6> <7> <Return> : "󠆖"  UE0196  # VARIATION SELECTOR-167
+<Multi_key> <V> <S> <1> <6> <8> <Return> : "󠆗"  UE0197  # VARIATION SELECTOR-168
+<Multi_key> <V> <S> <1> <6> <9> <Return> : "󠆘"  UE0198  # VARIATION SELECTOR-169
+<Multi_key> <V> <S> <1> <7> <0> <Return> : "󠆙"  UE0199  # VARIATION SELECTOR-170
+<Multi_key> <V> <S> <1> <7> <1> <Return> : "󠆚"  UE019A  # VARIATION SELECTOR-171
+<Multi_key> <V> <S> <1> <7> <2> <Return> : "󠆛"  UE019B  # VARIATION SELECTOR-172
+<Multi_key> <V> <S> <1> <7> <3> <Return> : "󠆜"  UE019C  # VARIATION SELECTOR-173
+<Multi_key> <V> <S> <1> <7> <4> <Return> : "󠆝"  UE019D  # VARIATION SELECTOR-174
+<Multi_key> <V> <S> <1> <7> <5> <Return> : "󠆞"  UE019E  # VARIATION SELECTOR-175
+<Multi_key> <V> <S> <1> <7> <6> <Return> : "󠆟"  UE019F  # VARIATION SELECTOR-176
+<Multi_key> <V> <S> <1> <7> <7> <Return> : "󠆠"  UE01A0  # VARIATION SELECTOR-177
+<Multi_key> <V> <S> <1> <7> <8> <Return> : "󠆡"  UE01A1  # VARIATION SELECTOR-178
+<Multi_key> <V> <S> <1> <7> <9> <Return> : "󠆢"  UE01A2  # VARIATION SELECTOR-179
+<Multi_key> <V> <S> <1> <8> <0> <Return> : "󠆣"  UE01A3  # VARIATION SELECTOR-180
+<Multi_key> <V> <S> <1> <8> <1> <Return> : "󠆤"  UE01A4  # VARIATION SELECTOR-181
+<Multi_key> <V> <S> <1> <8> <2> <Return> : "󠆥"  UE01A5  # VARIATION SELECTOR-182
+<Multi_key> <V> <S> <1> <8> <3> <Return> : "󠆦"  UE01A6  # VARIATION SELECTOR-183
+<Multi_key> <V> <S> <1> <8> <4> <Return> : "󠆧"  UE01A7  # VARIATION SELECTOR-184
+<Multi_key> <V> <S> <1> <8> <5> <Return> : "󠆨"  UE01A8  # VARIATION SELECTOR-185
+<Multi_key> <V> <S> <1> <8> <6> <Return> : "󠆩"  UE01A9  # VARIATION SELECTOR-186
+<Multi_key> <V> <S> <1> <8> <7> <Return> : "󠆪"  UE01AA  # VARIATION SELECTOR-187
+<Multi_key> <V> <S> <1> <8> <8> <Return> : "󠆫"  UE01AB  # VARIATION SELECTOR-188
+<Multi_key> <V> <S> <1> <8> <9> <Return> : "󠆬"  UE01AC  # VARIATION SELECTOR-189
+<Multi_key> <V> <S> <1> <9> <0> <Return> : "󠆭"  UE01AD  # VARIATION SELECTOR-190
+<Multi_key> <V> <S> <1> <9> <1> <Return> : "󠆮"  UE01AE  # VARIATION SELECTOR-191
+<Multi_key> <V> <S> <1> <9> <2> <Return> : "󠆯"  UE01AF  # VARIATION SELECTOR-192
+<Multi_key> <V> <S> <1> <9> <3> <Return> : "󠆰"  UE01B0  # VARIATION SELECTOR-193
+<Multi_key> <V> <S> <1> <9> <4> <Return> : "󠆱"  UE01B1  # VARIATION SELECTOR-194
+<Multi_key> <V> <S> <1> <9> <5> <Return> : "󠆲"  UE01B2  # VARIATION SELECTOR-195
+<Multi_key> <V> <S> <1> <9> <6> <Return> : "󠆳"  UE01B3  # VARIATION SELECTOR-196
+<Multi_key> <V> <S> <1> <9> <7> <Return> : "󠆴"  UE01B4  # VARIATION SELECTOR-197
+<Multi_key> <V> <S> <1> <9> <8> <Return> : "󠆵"  UE01B5  # VARIATION SELECTOR-198
+<Multi_key> <V> <S> <1> <9> <9> <Return> : "󠆶"  UE01B6  # VARIATION SELECTOR-199
+<Multi_key> <V> <S> <2> <0> <0> <Return> : "󠆷"  UE01B7  # VARIATION SELECTOR-200
+<Multi_key> <V> <S> <2> <0> <1> <Return> : "󠆸"  UE01B8  # VARIATION SELECTOR-201
+<Multi_key> <V> <S> <2> <0> <2> <Return> : "󠆹"  UE01B9  # VARIATION SELECTOR-202
+<Multi_key> <V> <S> <2> <0> <3> <Return> : "󠆺"  UE01BA  # VARIATION SELECTOR-203
+<Multi_key> <V> <S> <2> <0> <4> <Return> : "󠆻"  UE01BB  # VARIATION SELECTOR-204
+<Multi_key> <V> <S> <2> <0> <5> <Return> : "󠆼"  UE01BC  # VARIATION SELECTOR-205
+<Multi_key> <V> <S> <2> <0> <6> <Return> : "󠆽"  UE01BD  # VARIATION SELECTOR-206
+<Multi_key> <V> <S> <2> <0> <7> <Return> : "󠆾"  UE01BE  # VARIATION SELECTOR-207
+<Multi_key> <V> <S> <2> <0> <8> <Return> : "󠆿"  UE01BF  # VARIATION SELECTOR-208
+<Multi_key> <V> <S> <2> <0> <9> <Return> : "󠇀"  UE01C0  # VARIATION SELECTOR-209
+<Multi_key> <V> <S> <2> <1> <0> <Return> : "󠇁"  UE01C1  # VARIATION SELECTOR-210
+<Multi_key> <V> <S> <2> <1> <1> <Return> : "󠇂"  UE01C2  # VARIATION SELECTOR-211
+<Multi_key> <V> <S> <2> <1> <2> <Return> : "󠇃"  UE01C3  # VARIATION SELECTOR-212
+<Multi_key> <V> <S> <2> <1> <3> <Return> : "󠇄"  UE01C4  # VARIATION SELECTOR-213
+<Multi_key> <V> <S> <2> <1> <4> <Return> : "󠇅"  UE01C5  # VARIATION SELECTOR-214
+<Multi_key> <V> <S> <2> <1> <5> <Return> : "󠇆"  UE01C6  # VARIATION SELECTOR-215
+<Multi_key> <V> <S> <2> <1> <6> <Return> : "󠇇"  UE01C7  # VARIATION SELECTOR-216
+<Multi_key> <V> <S> <2> <1> <7> <Return> : "󠇈"  UE01C8  # VARIATION SELECTOR-217
+<Multi_key> <V> <S> <2> <1> <8> <Return> : "󠇉"  UE01C9  # VARIATION SELECTOR-218
+<Multi_key> <V> <S> <2> <1> <9> <Return> : "󠇊"  UE01CA  # VARIATION SELECTOR-219
+<Multi_key> <V> <S> <2> <2> <0> <Return> : "󠇋"  UE01CB  # VARIATION SELECTOR-220
+<Multi_key> <V> <S> <2> <2> <1> <Return> : "󠇌"  UE01CC  # VARIATION SELECTOR-221
+<Multi_key> <V> <S> <2> <2> <2> <Return> : "󠇍"  UE01CD  # VARIATION SELECTOR-222
+<Multi_key> <V> <S> <2> <2> <3> <Return> : "󠇎"  UE01CE  # VARIATION SELECTOR-223
+<Multi_key> <V> <S> <2> <2> <4> <Return> : "󠇏"  UE01CF  # VARIATION SELECTOR-224
+<Multi_key> <V> <S> <2> <2> <5> <Return> : "󠇐"  UE01D0  # VARIATION SELECTOR-225
+<Multi_key> <V> <S> <2> <2> <6> <Return> : "󠇑"  UE01D1  # VARIATION SELECTOR-226
+<Multi_key> <V> <S> <2> <2> <7> <Return> : "󠇒"  UE01D2  # VARIATION SELECTOR-227
+<Multi_key> <V> <S> <2> <2> <8> <Return> : "󠇓"  UE01D3  # VARIATION SELECTOR-228
+<Multi_key> <V> <S> <2> <2> <9> <Return> : "󠇔"  UE01D4  # VARIATION SELECTOR-229
+<Multi_key> <V> <S> <2> <3> <0> <Return> : "󠇕"  UE01D5  # VARIATION SELECTOR-230
+<Multi_key> <V> <S> <2> <3> <1> <Return> : "󠇖"  UE01D6  # VARIATION SELECTOR-231
+<Multi_key> <V> <S> <2> <3> <2> <Return> : "󠇗"  UE01D7  # VARIATION SELECTOR-232
+<Multi_key> <V> <S> <2> <3> <3> <Return> : "󠇘"  UE01D8  # VARIATION SELECTOR-233
+<Multi_key> <V> <S> <2> <3> <4> <Return> : "󠇙"  UE01D9  # VARIATION SELECTOR-234
+<Multi_key> <V> <S> <2> <3> <5> <Return> : "󠇚"  UE01DA  # VARIATION SELECTOR-235
+<Multi_key> <V> <S> <2> <3> <6> <Return> : "󠇛"  UE01DB  # VARIATION SELECTOR-236
+<Multi_key> <V> <S> <2> <3> <7> <Return> : "󠇜"  UE01DC  # VARIATION SELECTOR-237
+<Multi_key> <V> <S> <2> <3> <8> <Return> : "󠇝"  UE01DD  # VARIATION SELECTOR-238
+<Multi_key> <V> <S> <2> <3> <9> <Return> : "󠇞"  UE01DE  # VARIATION SELECTOR-239
+<Multi_key> <V> <S> <2> <4> <0> <Return> : "󠇟"  UE01DF  # VARIATION SELECTOR-240
+<Multi_key> <V> <S> <2> <4> <1> <Return> : "󠇠"  UE01E0  # VARIATION SELECTOR-241
+<Multi_key> <V> <S> <2> <4> <2> <Return> : "󠇡"  UE01E1  # VARIATION SELECTOR-242
+<Multi_key> <V> <S> <2> <4> <3> <Return> : "󠇢"  UE01E2  # VARIATION SELECTOR-243
+<Multi_key> <V> <S> <2> <4> <4> <Return> : "󠇣"  UE01E3  # VARIATION SELECTOR-244
+<Multi_key> <V> <S> <2> <4> <5> <Return> : "󠇤"  UE01E4  # VARIATION SELECTOR-245
+<Multi_key> <V> <S> <2> <4> <6> <Return> : "󠇥"  UE01E5  # VARIATION SELECTOR-246
+<Multi_key> <V> <S> <2> <4> <7> <Return> : "󠇦"  UE01E6  # VARIATION SELECTOR-247
+<Multi_key> <V> <S> <2> <4> <8> <Return> : "󠇧"  UE01E7  # VARIATION SELECTOR-248
+<Multi_key> <V> <S> <2> <4> <9> <Return> : "󠇨"  UE01E8  # VARIATION SELECTOR-249
+<Multi_key> <V> <S> <2> <5> <0> <Return> : "󠇩"  UE01E9  # VARIATION SELECTOR-250
+<Multi_key> <V> <S> <2> <5> <1> <Return> : "󠇪"  UE01EA  # VARIATION SELECTOR-251
+<Multi_key> <V> <S> <2> <5> <2> <Return> : "󠇫"  UE01EB  # VARIATION SELECTOR-252
+<Multi_key> <V> <S> <2> <5> <3> <Return> : "󠇬"  UE01EC  # VARIATION SELECTOR-253
+<Multi_key> <V> <S> <2> <5> <4> <Return> : "󠇭"  UE01ED  # VARIATION SELECTOR-254
+<Multi_key> <V> <S> <2> <5> <5> <Return> : "󠇮"  UE01EE  # VARIATION SELECTOR-255
+<Multi_key> <V> <S> <2> <5> <6> <Return> : "󠇯"  UE01EF  # VARIATION SELECTOR-256
 
 ####################
 # Currency symbols #
@@ -328,6 +615,8 @@ include "%L"
 <Multi_key> <z> <h>                 : "ʒ"  U0292   # LATIN SMALL LETTER EZH
 <Multi_key> <g> <n>                 : "ɲ"  U0272   # LATIN SMALL LETTER N WITH LEFT HOOK
 <Multi_key> <m> <f>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
+<Multi_key> <s> <j>                 : "ɧ"  U0267  # LATIN SMALL LETTER HENG WITH HOOK
+<Multi_key> <h> <g>                 : "ɧ"  U0267  # LATIN SMALL LETTER HENG WITH HOOK
 <Multi_key> <m> <g>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
 <Multi_key> <n> <g>                 : "ŋ"  U014B   # LATIN SMALL LETTER ENG
 <Multi_key> <r> <d>                 : "ɾ"  U027E   # LATIN SMALL LETTER R WITH FISHHOOK
@@ -341,6 +630,7 @@ include "%L"
 <Multi_key> <w> <h>                 : "ɯ"  U026F   # LATIN SMALL LETTER TURNED M
 <Multi_key> <y> <h>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
 <Multi_key> <e> <r>                 : "ɚ"  U025A   # LATIN SMALL LETTER SCHWA WITH HOOK
+<Multi_key> <3> <r>                 : "ɝ"  U025D  # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
 <Multi_key> <r> <Return>            : "˞"  U02DE   # MODIFIER LETTER RHOTIC HOOK
 
 <Multi_key> <B> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
@@ -356,6 +646,7 @@ include "%L"
 <Multi_key> <Y> <Y>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
 
 <Multi_key> <e> <e>                 : "ə"  U0259   # LATIN SMALL LETTER SCHWA
+<Multi_key> <g> <g> <Return>        : "ɡ"  U0261  # LATIN SMALL LETTER SCRIPT G
 <Multi_key> <r> <r>                 : "ɹ"  U0279   # LATIN SMALL LETTER TURNED R
 
 <Multi_key> <a> <v>                 : "ɐ"  U0250   # LATIN SMALL LETTER TURNED A
@@ -415,7 +706,6 @@ include "%L"
 <Multi_key> <l> <z>                 : "ɮ"  U026E   # LATIN SMALL LETTER LEZH
 <Multi_key> <o> <E>                 : "ɶ"  U0276   # LATIN LETTER SMALL CAPITAL OE
 
-<Multi_key> <g> <g>                 : "ˠ"  U02E0   # MODIFIER LETTER SMALL GAMMA
 <Multi_key> <h> <h>                 : "ʰ"  U02B0   # MODIFIER LETTER SMALL H
 <Multi_key> <j> <j>                 : "ʲ"  U02B2   # MODIFIER LETTER SMALL J
 <Multi_key> <n> <n>                 : "ⁿ"  U207F   # SUPERSCRIPT LATIN SMALL LETTER N
@@ -427,6 +717,7 @@ include "%L"
 <Multi_key> <T> <less> <T>          : "꭪"  UAB6A   # MODIFIER LETTER LEFT TACK (conflicts with Ť, use vT)
 <Multi_key> <T> <greater> <T>       : "꭫"  UAB6B   # MODIFIER LETTER RIGHT TACK
 <Multi_key> <e> <v> <e>             : "ᵊ"  U1D4A   # MODIFIER LETTER SMALL SCHWA
+<Multi_key> <g> <g> <h>             : "ˠ"  U02E0   # MODIFIER LETTER SMALL GAMMA
 <Multi_key> <0> <0> <minus>         : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
 <Multi_key> <O> <O> <bar>           : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
 <Multi_key> <l> <asciicircum> <l>   : "ˡ"  U02E1   # MODIFIER LETTER SMALL L
@@ -463,6 +754,7 @@ include "%L"
 <Multi_key> <A> <H>                 : "Ɑ"  U2C6D   # LATIN CAPITAL LETTER ALPHA
 <Multi_key> <A> <v>                 : "Ɐ"  U2C6F   # LATIN CAPITAL LETTER TURNED A
 <Multi_key> <A> <less>              : "Ɒ"  U2C70   # LATIN CAPITAL LETTER TURNED ALPHA
+<Multi_key> <B> <H>                 : "Ꞵ"  UA7B4   # LATIN CAPITAL LETTER BETA
 <Multi_key> <B> <apostrophe>        : "Ɓ"  U0181   # LATIN CAPITAL LETTER B WITH HOOK
 <Multi_key> <D> <L>                 : "Ɖ"  U0189   # LATIN CAPITAL LETTER AFRICAN D
 <Multi_key> <D> <apostrophe>        : "Ɗ"  U018A   # LATIN CAPITAL LETTER D WITH HOOK
@@ -483,6 +775,7 @@ include "%L"
 <Multi_key> <N> <G>                 : "Ŋ"  U014A   # LATIN CAPITAL LETTER ENG
 <Multi_key> <O> <bar>               : "Ɵ"  U019F   # LATIN CAPITAL LETTER O WITH MIDDLE TILDE
 <Multi_key> <O> <parenright>        : "Ɔ"  U0186   # LATIN CAPITAL LETTER OPEN O
+<Multi_key> <Q> <H>                 : "Ꭓ"  UA7B3   # LATIN CAPITAL LETTER CHI
 <Multi_key> <R> <l>                 : "Ɽ"  U2C64   # LATIN CAPITAL LETTER R WITH TAIL
 <Multi_key> <S> <H>                 : "Ʃ"  U01A9   # LATIN CAPITAL LETTER ESH
 <Multi_key> <S> <l>                 : "Ʂ"  UA7C5   # LATIN CAPITAL LETTER S WITH HOOK
@@ -491,6 +784,7 @@ include "%L"
 <Multi_key> <U> <H>                 : "Ʊ"  U01B1   # LATIN CAPITAL LETTER UPSILON
 <Multi_key> <V> <v>                 : "Ʌ"  U0245   # LATIN CAPITAL LETTER TURNED V
 <Multi_key> <V> <backslash>         : "Ʋ"  U01B2   # LATIN CAPITAL LETTER V WITH HOOK
+<Multi_key> <X> <H>                 : "Ꭓ"  UA7B3   # LATIN CAPITAL LETTER CHI
 <Multi_key> <Z> <H>                 : "Ʒ"  U01B7   # LATIN CAPITAL LETTER EZH
 
 # various other letters
@@ -522,6 +816,9 @@ include "%L"
 <Multi_key> <minus> <h>             : "ħ"  U0127  # LATIN SMALL LETTER H WITH STROKE
 <Multi_key> <minus> <J>             : "Ɉ"  U0248  # LATIN CAPITAL LETTER J WITH STROKE
 <Multi_key> <minus> <j>             : "ɉ"  U0249  # LATIN SMALL LETTER J WITH STROKE
+<Multi_key> <minus> <p>             : "ꝑ"  UA751  # LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER
+<Multi_key> <minus> <q>             : "ꝗ"  UA757  # LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER
+<Multi_key> <minus> <Q>             : "Ꝗ"  UA756  # LATIN CAPITAL LETTER Q WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <R>             : "Ɍ"  U024C  # LATIN CAPITAL LETTER R WITH STROKE
 <Multi_key> <minus> <r>             : "ɍ"  U024D  # LATIN SMALL LETTER R WITH STROKE
 <Multi_key> <minus> <T>             : "Ŧ"  U0166  # LATIN CAPITAL LETTER T WITH STROKE
@@ -530,6 +827,8 @@ include "%L"
 <Multi_key> <minus> <z>             : "ƶ"  U01B6  # LATIN SMALL LETTER Z WITH STROKE
 <Multi_key> <minus> <Multi_key> <A> <E> : "Ǣ"  U01E2  # LATIN CAPITAL LETTER AE WITH MACRON
 <Multi_key> <minus> <Multi_key> <a> <e> : "ǣ"  U01E3  # LATIN SMALL LETTER AE WITH MACRON
+<Multi_key> <minus> <Multi_key> <T> <H> : "ꝧ"  UA767  # LATIN SMALL LETTER THORN WITH STROKE THROUGH DESCENDER
+<Multi_key> <minus> <Multi_key> <t> <h> : "Ꝧ"  UA766  # LATIN CAPITAL LETTER THORN WITH STROKE THROUGH DESCENDER
 
 <Multi_key> <period> <j>            : "ȷ"  U0237  # LATIN SMALL LETTER DOTLESS J
 <Multi_key> <period> <L>            : "Ŀ"  U013F  # LATIN CAPITAL LETTER L WITH MIDDLE DOT
@@ -545,7 +844,22 @@ include "%L"
 <Multi_key> <slash> <b>             : "␢"  U2422  # BLANK SYMBOL (conflicts with ƀ, use -b)
 <Multi_key> <slash> <E>             : "Ɇ"  U0246  # LATIN CAPITAL LETTER E WITH STROKE
 <Multi_key> <slash> <e>             : "ɇ"  U0247  # LATIN SMALL LETTER E WITH STROKE
+<Multi_key> <slash> <K>             : "Ꞣ"  UA7A2  # LATIN CAPITAL LETTER K WITH OBLIQUE STROKE
+<Multi_key> <slash> <k>             : "ꞣ"  UA7A3  # LATIN SMALL LETTER K WITH OBLIQUE STROKE
+<Multi_key> <slash> <N>             : "Ꞥ"  UA7A4  # LATIN CAPITAL LETTER N WITH OBLIQUE STROKE
+<Multi_key> <slash> <n>             : "ꞥ"  UA7A5  # LATIN SMALL LETTER N WITH OBLIQUE STROKE
+<Multi_key> <slash> <Q>             : "Ꝙ"  UA758  # LATIN CAPITAL LETTER Q WITH DIAGONAL STROKE
+<Multi_key> <slash> <q>             : "ꝙ"  UA759  # LATIN SMALL LETTER Q WITH DIAGONAL STROKE
+<Multi_key> <slash> <R>             : "Ꞧ"  UA7A6  # LATIN CAPITAL LETTER R WITH OBLIQUE STROKE
+<Multi_key> <slash> <r>             : "ꞧ"  UA7A7  # LATIN SMALL LETTER R WITH OBLIQUE STROKE
+<Multi_key> <slash> <S>             : "Ꞩ"  UA7A8  # LATIN CAPITAL LETTER S WITH OBLIQUE STROKE
+<Multi_key> <slash> <s>             : "ꞩ"  UA7A9  # LATIN SMALL LETTER S WITH OBLIQUE STROKE
 <Multi_key> <slash> <T>             : "Ⱦ"  U023E  # LATIN CAPITAL LETTER T WITH DIAGONAL STROKE (conflicts with Ŧ, use -T)
+<Multi_key> <slash> <U>             : "Ꞹ"  UA7B8  # LATIN CAPITAL LETTER U WITH STROKE
+<Multi_key> <slash> <V>             : "Ꝟ"  UA75E  # LATIN CAPITAL LETTER V WITH DIAGONAL STROKE
+<Multi_key> <slash> <v>             : "ꝟ"  UA75F  # LATIN SMALL LETTER V WITH DIAGONAL STROKE (conflicts with √, use v/)
+<Multi_key> <slash> <Multi_key> <T> <H> : "ꝥ"  UA765  # LATIN SMALL LETTER THORN WITH STROKE
+<Multi_key> <slash> <Multi_key> <t> <h> : "Ꝥ"  UA764  # LATIN CAPITAL LETTER THORN WITH STROKE
 
 <Multi_key> <d> <at> : "ȡ"  U0221  # LATIN SMALL LETTER D WITH CURL
 <Multi_key> <l> <at> : "ȴ"  U0234  # LATIN SMALL LETTER L WITH CURL
@@ -564,6 +878,30 @@ include "%L"
 <Multi_key> <u> <v> <r> : "ȓ"  U0213  # LATIN SMALL LETTER R WITH INVERTED BREVE
 <Multi_key> <u> <v> <U> : "Ȗ"  U0216  # LATIN CAPITAL LETTER U WITH INVERTED BREVE
 <Multi_key> <u> <v> <u> : "ȗ"  U0217  # LATIN SMALL LETTER U WITH INVERTED BREVE
+
+<Multi_key> <underscore> <o> <A> : "Ḁ"  U1E00  # LATIN CAPITAL LETTER A WITH RING BELOW (conflicts with ō, use -o)
+<Multi_key> <underscore> <o> <a> : "ḁ"  U1E01  # LATIN SMALL LETTER A WITH RING BELOW (conflicts with ō, use -o)
+
+<Multi_key> <underscore> <underscore> <B> : "Ḇ"  U1E06  # LATIN CAPITAL LETTER B WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <b> : "ḇ"  U1E07  # LATIN SMALL LETTER B WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <D> : "Ḏ"  U1E0E  # LATIN CAPITAL LETTER D WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <d> : "ḏ"  U1E0F  # LATIN SMALL LETTER D WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <h> : "ẖ"  U1E96  # LATIN SMALL LETTER H WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <K> : "Ḵ"  U1E34  # LATIN CAPITAL LETTER K WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <k> : "ḵ"  U1E35  # LATIN SMALL LETTER K WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <L> : "Ḻ"  U1E3A  # LATIN CAPITAL LETTER L WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <l> : "ḻ"  U1E3B  # LATIN SMALL LETTER L WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <N> : "Ṉ"  U1E48  # LATIN CAPITAL LETTER N WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <n> : "ṉ"  U1E49  # LATIN SMALL LETTER N WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <R> : "Ṟ"  U1E5E  # LATIN CAPITAL LETTER R WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <r> : "ṟ"  U1E5F  # LATIN SMALL LETTER R WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <T> : "Ṯ"  U1E6E  # LATIN CAPITAL LETTER T WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <t> : "ṯ"  U1E6F  # LATIN SMALL LETTER T WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <Z> : "Ẕ"  U1E94  # LATIN CAPITAL LETTER Z WITH LINE BELOW (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <z> : "ẕ"  U1E95  # LATIN SMALL LETTER Z WITH LINE BELOW (conflicts with ⁻, use -^)
+
+<Multi_key> <underscore> <comma> <E> : "Ȩ"  U0228  # LATIN CAPITAL LETTER E WITH CEDILLA
+<Multi_key> <underscore> <comma> <e> : "ȩ"  U0229  # LATIN SMALL LETTER E WITH CEDILLA
 
 <Multi_key> <asciicircum> <quotedbl> <A> : "Ȁ"  U0200  # LATIN CAPITAL LETTER A WITH DOUBLE GRAVE
 <Multi_key> <asciicircum> <quotedbl> <a> : "ȁ"  U0201  # LATIN SMALL LETTER A WITH DOUBLE GRAVE
@@ -2170,14 +2508,17 @@ include "%L"
 <Multi_key> <braceleft> <Z> <H> <braceright> : "래" UB798   # HANGUL SYLLABLE RAE (visually similar)
 <Multi_key> <braceleft> <Z> <l> <braceright> : "리" UB9AC   # HANGUL SYLLABLE RI (visually similar)
 
-# multigraphs with greek SI letters
+# multigraphs with some non-Latin letters
 
+<Multi_key> <braceleft> <d> <Multi_key> <z> <h> <braceright> : "ʤ"  U02A4  # LATIN SMALL LETTER DEZH DIGRAPH
+<Multi_key> <braceleft> <d> <Multi_key> <z> <at> <braceright> : "ʥ"  U02A5  # LATIN SMALL LETTER DZ DIGRAPH WITH CURL
+<Multi_key> <braceleft> <k> <Multi_key> <o> <h> <m> <braceright> : "㏀" U33C0   # SQUARE K OHM
+<Multi_key> <braceleft> <M> <Multi_key> <o> <h> <m> <braceright> : "㏁" U33C1   # SQUARE M OHM
+<Multi_key> <braceleft> <t> <Multi_key> <s> <h> <braceright> : "ʧ"  U02A7  # LATIN SMALL LETTER TESH DIGRAPH
 <Multi_key> <braceleft> <Multi_key> <m> <u> <A> <braceright> : "㎂" U3382   # SQUARE MU A
 <Multi_key> <braceleft> <Multi_key> <m> <u> <F> <braceright> : "㎌" U338C   # SQUARE MU F
 <Multi_key> <braceleft> <Multi_key> <m> <u> <V> <braceright> : "㎶" U33B6   # SQUARE MU V
 <Multi_key> <braceleft> <Multi_key> <m> <u> <W> <braceright> : "㎼" U33BC   # SQUARE MU W
-<Multi_key> <braceleft> <k> <Multi_key> <o> <h> <m> <braceright> : "㏀" U33C0   # SQUARE K OHM
-<Multi_key> <braceleft> <M> <Multi_key> <o> <h> <m> <braceright> : "㏁" U33C1   # SQUARE M OHM
 
 # multigraphs with punctuation or digits
 
@@ -2462,6 +2803,11 @@ include "%L"
 <Multi_key> <asciicircum> <less> <x> : "×" U00D7   # MULTIPLICATION SIGN
 <Multi_key> <asciicircum> <less> <y> : "⋋" U22CB   # LEFT SEMIDIRECT PRODUCT
 <Multi_key> <asciicircum> <less> <z> : "ɴ" U0274   # LATIN LETTER SMALL CAPITAL N
+
+<Multi_key> <asciicircum> <less> <Multi_key> <o> <slash> : "ᴓ"  U1D13  # LATIN SMALL LETTER SIDEWAYS O WITH STROKE
+<Multi_key> <asciicircum> <less> <Multi_key> <slash> <o> : "ᴓ"  U1D13  # LATIN SMALL LETTER SIDEWAYS O WITH STROKE
+<Multi_key> <asciicircum> <less> <Multi_key> <u> <quotedbl> : "ᴞ"  U1D1E  # LATIN SMALL LETTER SIDEWAYS DIAERESIZED U
+<Multi_key> <asciicircum> <less> <Multi_key> <quotedbl> <u> : "ᴞ"  U1D1E  # LATIN SMALL LETTER SIDEWAYS DIAERESIZED U
 
 <Multi_key> <asciicircum> <less> <0> : "⬭" U2B2D   # WHITE HORIZONTAL ELLIPSE
 <Multi_key> <asciicircum> <less> <1> : "⥞" U295E   # LEFTWARDS HARPOON WITH BARB DOWN FROM BAR
@@ -7169,9 +7515,9 @@ include "%L"
 <Multi_key> <m> <p> <s> <o> <s> : "···---···"  # MORSE CODE PROSIGN SOS (DISTRESS SIGNAL)
 <Multi_key> <m> <p> <v> <e>     : "···-·"  # MORSE CODE PROSIGN VE (VERIFIED)
 
-###############################
-# (oi) Old Italic (and Runic) #
-###############################
+#######################################
+# (oi) Old Italic (and Ogham & Runic) #
+#######################################
 
 # Also see numerals sections for Roman Numerals
 
@@ -7225,7 +7571,77 @@ include "%L"
 <Multi_key> <o> <i> <numbersign> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
 <Multi_key> <o> <i> <numbersign> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
 
-# (r = Runic) (suffixes: G=germanic, E=english, N=norse, D=danish (=long branch), M=medieval)
+# (o = Ogham)
+
+<Multi_key> <o> <i> <o> <space>      : " "  U1680  # OGHAM SPACE MARK
+<Multi_key> <o> <i> <o> <b>          : "ᚁ"  U1681  # OGHAM LETTER BEITH
+<Multi_key> <o> <i> <o> <l>          : "ᚂ"  U1682  # OGHAM LETTER LUIS
+<Multi_key> <o> <i> <o> <w>          : "ᚃ"  U1683  # OGHAM LETTER FEARN
+<Multi_key> <o> <i> <o> <s>          : "ᚄ"  U1684  # OGHAM LETTER SAIL
+<Multi_key> <o> <i> <o> <n>          : "ᚅ"  U1685  # OGHAM LETTER NION
+<Multi_key> <o> <i> <o> <j>          : "ᚆ"  U1686  # OGHAM LETTER UATH
+<Multi_key> <o> <i> <o> <d>          : "ᚇ"  U1687  # OGHAM LETTER DAIR
+<Multi_key> <o> <i> <o> <t>          : "ᚈ"  U1688  # OGHAM LETTER TINNE
+<Multi_key> <o> <i> <o> <k> <space>  : "ᚉ"  U1689  # OGHAM LETTER COLL
+<Multi_key> <o> <i> <o> <k> <w>      : "ᚊ"  U168A  # OGHAM LETTER CEIRT
+<Multi_key> <o> <i> <o> <m>          : "ᚋ"  U168B  # OGHAM LETTER MUIN
+<Multi_key> <o> <i> <o> <g> <space>  : "ᚌ"  U168C  # OGHAM LETTER GORT
+<Multi_key> <o> <i> <o> <g> <w>      : "ᚍ"  U168D  # OGHAM LETTER NGEADAL
+<Multi_key> <o> <i> <o> <z>          : "ᚎ"  U168E  # OGHAM LETTER STRAIF
+<Multi_key> <o> <i> <o> <r>          : "ᚏ"  U168F  # OGHAM LETTER RUIS
+<Multi_key> <o> <i> <o> <a> <space>  : "ᚐ"  U1690  # OGHAM LETTER AILM
+<Multi_key> <o> <i> <o> <o> <space>  : "ᚑ"  U1691  # OGHAM LETTER ONN
+<Multi_key> <o> <i> <o> <u> <space>  : "ᚒ"  U1692  # OGHAM LETTER UR
+<Multi_key> <o> <i> <o> <e> <space>  : "ᚓ"  U1693  # OGHAM LETTER EADHADH
+<Multi_key> <o> <i> <o> <i> <space>  : "ᚔ"  U1694  # OGHAM LETTER IODHADH
+<Multi_key> <o> <i> <o> <e> <a>      : "ᚕ"  U1695  # OGHAM LETTER EABHADH
+<Multi_key> <o> <i> <o> <o> <i>      : "ᚖ"  U1696  # OGHAM LETTER OR
+<Multi_key> <o> <i> <o> <u> <i>      : "ᚗ"  U1697  # OGHAM LETTER UILLEANN
+<Multi_key> <o> <i> <o> <i> <a>      : "ᚘ"  U1698  # OGHAM LETTER IFIN
+<Multi_key> <o> <i> <o> <a> <i>      : "ᚙ"  U1699  # OGHAM LETTER EAMHANCHOLL
+<Multi_key> <o> <i> <o> <p>          : "ᚚ"  U169A  # OGHAM LETTER PEITH
+<Multi_key> <o> <i> <o> <parenleft>  : "᚛"  U169B  # OGHAM FEATHER MARK
+<Multi_key> <o> <i> <o> <parenright> : "᚜"  U169C  # OGHAM REVERSED FEATHER MARK
+
+# (visual notation)
+
+<Multi_key> <o> <i> <o> <1> <v>             : "ᚁ"  U1681  # OGHAM LETTER BEITH
+<Multi_key> <o> <i> <o> <2> <v>             : "ᚂ"  U1682  # OGHAM LETTER LUIS
+<Multi_key> <o> <i> <o> <3> <v>             : "ᚃ"  U1683  # OGHAM LETTER FEARN
+<Multi_key> <o> <i> <o> <4> <v>             : "ᚄ"  U1684  # OGHAM LETTER SAIL
+<Multi_key> <o> <i> <o> <5> <v>             : "ᚅ"  U1685  # OGHAM LETTER NION
+<Multi_key> <o> <i> <o> <1> <asciicircum>   : "ᚆ"  U1686  # OGHAM LETTER UATH
+<Multi_key> <o> <i> <o> <2> <asciicircum>   : "ᚇ"  U1687  # OGHAM LETTER DAIR
+<Multi_key> <o> <i> <o> <3> <asciicircum>   : "ᚈ"  U1688  # OGHAM LETTER TINNE
+<Multi_key> <o> <i> <o> <4> <asciicircum>   : "ᚉ"  U1689  # OGHAM LETTER COLL
+<Multi_key> <o> <i> <o> <5> <asciicircum>   : "ᚊ"  U168A  # OGHAM LETTER CEIRT
+<Multi_key> <o> <i> <o> <1> <slash>         : "ᚋ"  U168B  # OGHAM LETTER MUIN
+<Multi_key> <o> <i> <o> <2> <slash>         : "ᚌ"  U168C  # OGHAM LETTER GORT
+<Multi_key> <o> <i> <o> <3> <slash>         : "ᚍ"  U168D  # OGHAM LETTER NGEADAL
+<Multi_key> <o> <i> <o> <4> <slash>         : "ᚎ"  U168E  # OGHAM LETTER STRAIF
+<Multi_key> <o> <i> <o> <5> <slash>         : "ᚏ"  U168F  # OGHAM LETTER RUIS
+<Multi_key> <o> <i> <o> <1> <bar>           : "ᚐ"  U1690  # OGHAM LETTER AILM
+<Multi_key> <o> <i> <o> <2> <bar>           : "ᚑ"  U1691  # OGHAM LETTER ONN
+<Multi_key> <o> <i> <o> <3> <bar>           : "ᚒ"  U1692  # OGHAM LETTER UR
+<Multi_key> <o> <i> <o> <4> <bar>           : "ᚓ"  U1693  # OGHAM LETTER EADHADH
+<Multi_key> <o> <i> <o> <5> <bar>           : "ᚔ"  U1694  # OGHAM LETTER IODHADH
+<Multi_key> <o> <i> <o> <backslash> <slash> : "ᚕ"  U1695  # OGHAM LETTER EABHADH
+<Multi_key> <o> <i> <o> <slash> <backslash> : "ᚕ"  U1695  # OGHAM LETTER EABHADH
+<Multi_key> <o> <i> <o> <less> <greater>    : "ᚖ"  U1696  # OGHAM LETTER OR
+<Multi_key> <o> <i> <o> <G>                 : "ᚗ"  U1697  # OGHAM LETTER UILLEANN
+<Multi_key> <o> <i> <o> <X> <X>             : "ᚘ"  U1698  # OGHAM LETTER IFIN
+<Multi_key> <o> <i> <o> <numbersign>        : "ᚙ"  U1699  # OGHAM LETTER EAMHANCHOLL
+<Multi_key> <o> <i> <o> <underscore>        : "ᚚ"  U169A  # OGHAM LETTER PEITH
+
+# (r = Runic)
+
+# suffixes distinguish betwen conflicting forms:
+#  G = Germanic (= Elder Futhark)
+#  E = English (= Anglo-Frisian Futhorc)
+#  N = Norse (= Short Twig Younger Futhark)
+#  D = Danish (= Long Branch Younger Futhark)
+#  M = Medieval
+#  Return = majority form
 
 <Multi_key> <o> <i> <r> <a> <D> : "ᛅ" U16C5   # RUNIC LETTER LONG-BRANCH-AR AE
 <Multi_key> <o> <i> <r> <a> <E> : "ᚪ" U16AA   # RUNIC LETTER AC A
@@ -10154,12 +10570,10 @@ include "%L"
 <Multi_key> <B> <Return>        : "‍🦲"  U200D U1F9B2       # ZWJ + EMOJI COMPONENT BALD (🧑+‍🦲=🧑‍🦲)
 <Multi_key> <W> <Return>        : "‍🦳"  U200D U1F9B3       # ZWJ + EMOJI COMPONENT WHITE HAIR (🧑+‍🦳=🧑‍🦳)
 
-# Control characters
+# Variation selectors (also see control character section above for ZWJ)
 
 <Multi_key> <at> <Return>       : "️"  UFE0F   # VARIATION SELECTOR-16 (EMOJI-STYLE)
 <Multi_key> <at> <0>            : "︎"  UFE0E   # VARIATION SELECTOR-15 (TEXT-STYLE)
-<Multi_key> <z> <w> <n> <j>     : "‌"  U200C   # ZERO WIDTH NON-JOINER
-<Multi_key> <z> <w> <j>         : "‍"  U200D   # ZERO WIDTH JOINER
 
 # Flags
 
@@ -10758,7 +11172,7 @@ include "%L"
 
 <Multi_key> <Tab> <bar> <0> <less>                        : "⏎"  U23CE  # RETURN SYMBOL
 
-# Supplemental Arrows A
+# Supplemental Arrows-A
 
 <Multi_key> <Tab> <asciicircum> <4> <bar>                 : "⟰"  U27F0  # UPWARDS QUADRUPLE ARROW
 <Multi_key> <Tab> <bar> <4> <v>                           : "⟱"  U27F1  # DOWNWARDS QUADRUPLE ARROW
@@ -10777,7 +11191,7 @@ include "%L"
 <Multi_key> <Tab> <bar> <Multi_key> <equal> <equal> <greater> : "⟾"  U27FE  # LONG RIGHTWARDS DOUBLE ARROW FROM BAR
 <Multi_key> <Tab> <minus> <Multi_key> <asciitilde> <asciitilde> <greater> : "⟿"  U27FF  # LONG RIGHTWARDS SQUIGGLE ARROW
 
-# Supplemental Arrows B
+# Supplemental Arrows-B
 
 <Multi_key> <Tab> <minus> <bar> <Multi_key> <greater> <greater> : "⤀"  U2900  # RIGHTWARDS TWO-HEADED ARROW WITH VERTICAL STROKE
 <Multi_key> <Tab> <minus> <Multi_key> <bar> <bar> <Multi_key> <greater> <greater> : "⤁"  U2901  # RIGHTWARDS TWO-HEADED ARROW WITH DOUBLE VERTICAL STROKE
@@ -10855,7 +11269,14 @@ include "%L"
 <Multi_key> <Tab> <greater> <bar> <v>                     : "⤵"  U2935  # ARROW POINTING RIGHTWARDS THEN CURVING DOWNWARDS
 <Multi_key> <Tab> <v> <minus> <less>                      : "⤶"  U2936  # ARROW POINTING DOWNWARDS THEN CURVING LEFTWARDS
 <Multi_key> <Tab> <v> <minus> <greater>                   : "⤷"  U2937  # ARROW POINTING DOWNWARDS THEN CURVING RIGHTWARDS
-
+<Multi_key> <Tab> <backslash> <parenright> <v>            : "⤸"  U2938  # RIGHT-SIDE ARC CLOCKWISE ARROW
+<Multi_key> <Tab> <slash> <parenleft> <v>                 : "⤹"  U2939  # LEFT-SIDE ARC ANTICLOCKWISE ARROW
+<Multi_key> <Tab> <less> <parenleft> <backslash>          : "⤺"  U293A  # TOP ARC ANTICLOCKWISE ARROW
+<Multi_key> <Tab> <backslash> <parenright> <greater>      : "⤻"  U293B  # BOTTOM ARC ANTICLOCKWISE ARROW
+<Multi_key> <Tab> <slash> <Multi_key> <parenleft> <minus> <greater> : "⤼"  U293C  # TOP ARC CLOCKWISE ARROW WITH MINUS
+<Multi_key> <Tab> <less> <Multi_key> <parenleft> <plus> <backslash> : "⤽"  U293D  # TOP ARC ANTICLOCKWISE ARROW WITH PLUS
+<Multi_key> <Tab> <backslash> <parenright> <less>         : "⤾"  U293E  # LOWER RIGHT SEMICIRCULAR CLOCKWISE ARROW
+<Multi_key> <Tab> <slash> <parenleft> <greater>           : "⤿"  U293F  # LOWER LEFT SEMICIRCULAR ANTICLOCKWISE ARROW
 <Multi_key> <Tab> <O> <less>                              : "⥀"  U2940  # ANTICLOCKWISE CLOSED CIRCLE ARROW
 <Multi_key> <Tab> <O> <greater>                           : "⥁"  U2941  # CLOCKWISE CLOSED CIRCLE ARROW
 <Multi_key> <Tab> <2> <greater> <Multi_key> <less> <space> : "⥂"  U2942  # RIGHTWARDS ARROW ABOVE SHORT LEFTWARDS ARROW
@@ -10909,6 +11330,9 @@ include "%L"
 
 <Multi_key> <Tab> <equal> <equal> <parenright>            : "⥰"  U2970  # RIGHT DOUBLE ARROW WITH ROUNDED HEAD
 <Multi_key> <Tab> <minus> <equal> <greater>               : "⥱"  U2971  # EQUALS SIGN ABOVE RIGHTWARDS ARROW
+<Multi_key> <Tab> <minus> <Multi_key> <asciitilde> <minus> <greater> : "⥲"  U2972  # TILDE OPERATOR ABOVE RIGHTWARDS ARROW
+<Multi_key> <Tab> <less> <Multi_key> <minus> <asciitilde> <minus> : "⥳"  U2973  # LEFTWARDS ARROW ABOVE TILDE OPERATOR
+<Multi_key> <Tab> <minus> <Multi_key> <minus> <asciitilde> <greater> : "⥴"  U2974  # RIGHTWARDS ARROW ABOVE TILDE OPERATOR
 <Multi_key> <Tab> <less> <minus> <Multi_key> <less> <minus> : "⥷"  U2977  # LEFTWARDS ARROW THROUGH LESS-THAN
 <Multi_key> <Tab> <less> <minus> <E>                      : "⥺"  U297A  # LEFTWARDS ARROW THROUGH SUBSET
 <Multi_key> <Tab> <E> <minus> <minus>                     : "⥼"  U297C  # LEFT FISH TAIL
@@ -10973,7 +11397,6 @@ include "%L"
 <Multi_key> <Tab> <bar> <Multi_key> <minus> <minus> <Multi_key> <minus> <v> : "⭽"  U2B7D  # DOWNWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE
 <Multi_key> <Tab> <2> <Multi_key> <bar> <less> <Multi_key> <greater> <bar> : "⭾"  U2B7E  # HORIZONTAL TAB KEY
 <Multi_key> <Tab> <2> <Multi_key> <v> <minus> <Multi_key> <minus> <asciicircum> : "⭿"  U2B7F  # VERTICAL TAB KEY
-
 <Multi_key> <Tab> <2> <Multi_key> <less> <bar> <Multi_key> <bar> <greater> : "⮀"  U2B80  # LEFTWARDS TRIANGLE-HEADED ARROW OVER RIGHTWARDS TRIANGLE-HEADED ARROW
 <Multi_key> <Tab> <2> <Multi_key> <asciicircum> <minus> <Multi_key> <minus> <v> : "⮁"  U2B81  # UPWARDS TRIANGLE-HEADED ARROW LEFTWARDS OF DOWNWARDS TRIANGLE-HEADED ARROW
 <Multi_key> <Tab> <2> <Multi_key> <bar> <greater> <Multi_key> <less> <bar> : "⮂"  U2B82  # RIGHTWARDS TRIANGLE-HEADED ARROW OVER LEFTWARDS TRIANGLE-HEADED ARROW
@@ -10982,6 +11405,15 @@ include "%L"
 <Multi_key> <Tab> <2> <Multi_key> <asciicircum> <minus> <Multi_key> <asciicircum> <minus> : "⮅"  U2B85  # UPWARDS TRIANGLE-HEADED PAIRED ARROWS
 <Multi_key> <Tab> <2> <Multi_key> <bar> <greater> <Multi_key> <bar> <greater> : "⮆"  U2B86  # RIGHTWARDS TRIANGLE-HEADED PAIRED ARROWS
 <Multi_key> <Tab> <2> <Multi_key> <minus> <v> <Multi_key> <minus> <v> : "⮇"  U2B87  # DOWNWARDS TRIANGLE-HEADED PAIRED ARROWS
+<Multi_key> <Tab> <Multi_key> <less> <bar>  <parenright> <minus> : "⮌"  U2B8C  # ANTICLOCKWISE TRIANGLE-HEADED RIGHT U-SHAPED ARROW
+<Multi_key> <Tab> <bar> <parenright> <Multi_key> <minus> <asciicircum> : "⮍"  U2B8D  # ANTICLOCKWISE TRIANGLE-HEADED BOTTOM U-SHAPED ARROW
+<Multi_key> <Tab> <minus> <parenleft> <Multi_key> <bar> <greater> : "⮎"  U2B8E  # ANTICLOCKWISE TRIANGLE-HEADED LEFT U-SHAPED ARROW
+<Multi_key> <Tab> <Multi_key> <v> <minus> <parenleft> <bar> : "⮏"  U2B8F  # ANTICLOCKWISE TRIANGLE-HEADED TOP U-SHAPED ARROW
+
+<Multi_key> <Tab> <Multi_key> <less> <bar> <Multi_key> <less> <bar> <minus> : "⯬"  U2BEC  # LEFTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <Multi_key> <asciicircum> <minus> <bar> : "⯭"  U2BED  # UPWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
+<Multi_key> <Tab> <minus> <Multi_key> <bar> <greater> <Multi_key> <bar> <greater> : "⯮"  U2BEE  # RIGHTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
+<Multi_key> <Tab> <bar> <Multi_key> <minus> <v> <Multi_key> <minus> <v> : "⯯"  U2BEF  # DOWNWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
 
 ##########################
 # Box drawing characters #
