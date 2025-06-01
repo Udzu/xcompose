@@ -285,12 +285,15 @@ include "%L"
 <Multi_key> <r> <l> <i> : "⁧"  U2067   # RIGHT-TO-LEFT ISOLATE
 <Multi_key> <p> <d> <i> : "⁩"  U2069   # POP DIRECTIONAL ISOLATE
 
-# Glyph joiners
+# Glyph joiners etc
 
+<Multi_key> <B> <O> <M>         : "﻿"  UFEFF  # ZERO WIDTH NO-BREAK SPACE (BOM)
 <Multi_key> <C> <G> <J>         : "͏"  U034F  # COMBINING GRAPHEME JOINER
+<Multi_key> <W> <J>             : "⁠"  U2060   # WORD JOINER
 <Multi_key> <Z> <W> <J>         : "‍"  U200D   # ZERO WIDTH JOINER
 <Multi_key> <Z> <W> <N> <J>     : "‌"  U200C   # ZERO WIDTH NON-JOINER
 
+<Multi_key> <w> <j>             : "⁠"  U2060   # WORD JOINER
 <Multi_key> <z> <w> <j>         : "‍"  U200D   # ZERO WIDTH JOINER
 <Multi_key> <z> <w> <n> <j>     : "‌"  U200C   # ZERO WIDTH NON-JOINER
 
@@ -7173,7 +7176,6 @@ include "%L"
 <Multi_key> <j> <semicolon> <greater> <quotedbl>   : "』"  U300F   # RIGHT WHITE CORNER BRACKET
 <Multi_key> <j> <semicolon> <bar> <parenleft>      : "【"  U3010   # LEFT BLACK LENTICULAR BRACKET
 <Multi_key> <j> <semicolon> <bar> <parenright>     : "】"  U3011   # RIGHT BLACK LENTICULAR BRACKET
-<Multi_key> <j> <semicolon> <w> <j>      : "⁠"  U2060   # WORD JOINER
 
 # (f = fullwidth forms)
 
@@ -7727,9 +7729,9 @@ include "%L"
 <Multi_key> <o> <i> <r> <quotedbl> <i> : "ᛇ" U16C7   # RUNIC LETTER IWAZ EOH
 
 
-########################################
-# (t) Thai (and Baybayin, Khmer & Lao) #
-########################################
+##############################
+# (t) Thai (and Khmer & Lao) #
+##############################
 
 # (based on ISO 11940)
 
@@ -8023,34 +8025,118 @@ include "%L"
 <Multi_key> <t> <L> <numbersign> <8> : "໘" U0ED8   # LAO DIGIT EIGHT
 <Multi_key> <t> <L> <numbersign> <9> : "໙" U0ED9   # LAO DIGIT NINE
 
-# (t = Tagalog/Baybayin)
 
-<Multi_key> <t> <t> <k> : "ᜃ" U1703   # TAGALOG LETTER KA
-<Multi_key> <t> <t> <g> : "ᜄ" U1704   # TAGALOG LETTER GA
-<Multi_key> <t> <t> <semicolon> <n> : "ᜅ" U1705   # TAGALOG LETTER NGA
-<Multi_key> <t> <t> <t> : "ᜆ" U1706   # TAGALOG LETTER TA
-<Multi_key> <t> <t> <d> : "ᜇ" U1707   # TAGALOG LETTER DA
-<Multi_key> <t> <t> <n> : "ᜈ" U1708   # TAGALOG LETTER NA
-<Multi_key> <t> <t> <p> : "ᜉ" U1709   # TAGALOG LETTER PA
-<Multi_key> <t> <t> <b> : "ᜊ" U170A   # TAGALOG LETTER BA
-<Multi_key> <t> <t> <m> : "ᜋ" U170B   # TAGALOG LETTER MA
-<Multi_key> <t> <t> <y> : "ᜌ" U170C   # TAGALOG LETTER YA
-<Multi_key> <t> <t> <r> : "ᜍ" U170D   # TAGALOG LETTER RA
-<Multi_key> <t> <t> <l> : "ᜎ" U170E   # TAGALOG LETTER LA
-<Multi_key> <t> <t> <w> : "ᜏ" U170F   # TAGALOG LETTER WA
-<Multi_key> <t> <t> <s> : "ᜐ" U1710   # TAGALOG LETTER SA
-<Multi_key> <t> <t> <h> : "ᜑ" U1711   # TAGALOG LETTER HA
+########################################################
+# (T) Tagalog/Baybayin (and Buhid, Hanunoo & Tagbanwa) #
+########################################################
 
-<Multi_key> <t> <t> <a> <space> : "ᜀ" U1700   # TAGALOG LETTER A
-<Multi_key> <t> <t> <i> <space> : "ᜁ" U1701   # TAGALOG LETTER I
-<Multi_key> <t> <t> <u> <space> : "ᜂ" U1702   # TAGALOG LETTER U
+# (c = Babayin)
 
-<Multi_key> <t> <t> <i> <Return> : "ᜒ" U1712   # TAGALOG VOWEL SIGN I
-<Multi_key> <t> <t> <u> <Return> : "ᜓ" U1713   # TAGALOG VOWEL SIGN U
-<Multi_key> <t> <t> <0> <Return> : "᜔" U1714   # TAGALOG SIGN VIRAMA
+<Multi_key> <T> <c> <k> : "ᜃ" U1703   # TAGALOG LETTER KA
+<Multi_key> <T> <c> <g> : "ᜄ" U1704   # TAGALOG LETTER GA
+<Multi_key> <T> <c> <semicolon> <n> : "ᜅ" U1705   # TAGALOG LETTER NGA
+<Multi_key> <T> <c> <t> : "ᜆ" U1706   # TAGALOG LETTER TA
+<Multi_key> <T> <c> <d> : "ᜇ" U1707   # TAGALOG LETTER DA
+<Multi_key> <T> <c> <n> : "ᜈ" U1708   # TAGALOG LETTER NA
+<Multi_key> <T> <c> <p> : "ᜉ" U1709   # TAGALOG LETTER PA
+<Multi_key> <T> <c> <b> : "ᜊ" U170A   # TAGALOG LETTER BA
+<Multi_key> <T> <c> <m> : "ᜋ" U170B   # TAGALOG LETTER MA
+<Multi_key> <T> <c> <y> : "ᜌ" U170C   # TAGALOG LETTER YA
+<Multi_key> <T> <c> <r> : "ᜍ" U170D   # TAGALOG LETTER RA
+<Multi_key> <T> <c> <l> : "ᜎ" U170E   # TAGALOG LETTER LA
+<Multi_key> <T> <c> <w> : "ᜏ" U170F   # TAGALOG LETTER WA
+<Multi_key> <T> <c> <s> : "ᜐ" U1710   # TAGALOG LETTER SA
+<Multi_key> <T> <c> <h> : "ᜑ" U1711   # TAGALOG LETTER HA
 
-<Multi_key> <t> <t> <underscore> <plus> <Return> : "᜔" U1714   # TAGALOG SIGN VIRAMA
-<Multi_key> <t> <t> <comma> <Return> : "᜕" U1715   # TAGALOG SIGN PAMUDPOD
+<Multi_key> <T> <c> <a> <space> : "ᜀ" U1700   # TAGALOG LETTER A
+<Multi_key> <T> <c> <i> <space> : "ᜁ" U1701   # TAGALOG LETTER I
+<Multi_key> <T> <c> <u> <space> : "ᜂ" U1702   # TAGALOG LETTER U
+
+<Multi_key> <T> <c> <i> <Return> : "ᜒ" U1712   # TAGALOG VOWEL SIGN I
+<Multi_key> <T> <c> <u> <Return> : "ᜓ" U1713   # TAGALOG VOWEL SIGN U
+<Multi_key> <T> <c> <0> <Return> : "᜔" U1714   # TAGALOG SIGN VIRAMA
+
+<Multi_key> <T> <c> <underscore> <plus> <Return> : "᜔" U1714   # TAGALOG SIGN VIRAMA
+<Multi_key> <T> <c> <comma> <Return> : "᜕" U1715   # TAGALOG SIGN PAMUDPOD
+
+# (these would ideally be in T; but that's taken by Ț)
+<Multi_key> <T> <c> <bar> : "᜵"  U1735  # PHILIPPINE SINGLE PUNCTUATION (DANDA)
+<Multi_key> <T> <c> <2> <bar> : "᜶"  U1736  # PHILIPPINE DOUBLE PUNCTUATION (DOUBLE DANDA)
+
+# (b = Buhid)
+
+<Multi_key> <T> <b> <k> : "ᝃ"  U1743  # BUHID LETTER KA
+<Multi_key> <T> <b> <g> : "ᝄ"  U1744  # BUHID LETTER GA
+<Multi_key> <T> <b> <semicolon> <n> : "ᝅ"  U1745  # BUHID LETTER NGA
+<Multi_key> <T> <b> <t> : "ᝆ"  U1746  # BUHID LETTER TA
+<Multi_key> <T> <b> <d> : "ᝇ"  U1747  # BUHID LETTER DA
+<Multi_key> <T> <b> <n> : "ᝈ"  U1748  # BUHID LETTER NA
+<Multi_key> <T> <b> <p> : "ᝉ"  U1749  # BUHID LETTER PA
+<Multi_key> <T> <b> <b> : "ᝊ"  U174A  # BUHID LETTER BA
+<Multi_key> <T> <b> <m> : "ᝋ"  U174B  # BUHID LETTER MA
+<Multi_key> <T> <b> <y> : "ᝌ"  U174C  # BUHID LETTER YA
+<Multi_key> <T> <b> <r> : "ᝍ"  U174D  # BUHID LETTER RA
+<Multi_key> <T> <b> <l> : "ᝎ"  U174E  # BUHID LETTER LA
+<Multi_key> <T> <b> <w> : "ᝏ"  U174F  # BUHID LETTER WA
+<Multi_key> <T> <b> <s> : "ᝐ"  U1750  # BUHID LETTER SA
+<Multi_key> <T> <b> <h> : "ᝑ"  U1751  # BUHID LETTER HA
+
+<Multi_key> <T> <b> <a> <space> : "ᝀ"  U1740  # BUHID LETTER A
+<Multi_key> <T> <b> <i> <space> : "ᝁ"  U1741  # BUHID LETTER I
+<Multi_key> <T> <b> <u> <space> : "ᝂ"  U1742  # BUHID LETTER U
+
+<Multi_key> <T> <b> <i> <Return> : "ᝒ"  U1752  # BUHID VOWEL SIGN I
+<Multi_key> <T> <b> <u> <Return> : "ᝓ"  U1753  # BUHID VOWEL SIGN U
+
+# (h = Hanunoo)
+
+<Multi_key> <T> <h> <k> : "ᜣ"  U1723  # HANUNOO LETTER KA
+<Multi_key> <T> <h> <g> : "ᜤ"  U1724  # HANUNOO LETTER GA
+<Multi_key> <T> <h> <semicolon> <n> : "ᜥ"  U1725  # HANUNOO LETTER NGA
+<Multi_key> <T> <h> <t> : "ᜦ"  U1726  # HANUNOO LETTER TA
+<Multi_key> <T> <h> <d> : "ᜧ"  U1727  # HANUNOO LETTER DA
+<Multi_key> <T> <h> <n> : "ᜨ"  U1728  # HANUNOO LETTER NA
+<Multi_key> <T> <h> <p> : "ᜩ"  U1729  # HANUNOO LETTER PA
+<Multi_key> <T> <h> <b> : "ᜪ"  U172A  # HANUNOO LETTER BA
+<Multi_key> <T> <h> <m> : "ᜫ"  U172B  # HANUNOO LETTER MA
+<Multi_key> <T> <h> <y> : "ᜬ"  U172C  # HANUNOO LETTER YA
+<Multi_key> <T> <h> <r> : "ᜭ"  U172D  # HANUNOO LETTER RA
+<Multi_key> <T> <h> <l> : "ᜮ"  U172E  # HANUNOO LETTER LA
+<Multi_key> <T> <h> <w> : "ᜯ"  U172F  # HANUNOO LETTER WA
+<Multi_key> <T> <h> <s> : "ᜰ"  U1730  # HANUNOO LETTER SA
+<Multi_key> <T> <h> <h> : "ᜱ"  U1731  # HANUNOO LETTER HA
+
+<Multi_key> <T> <h> <a> <space> : "ᜠ"  U1720  # HANUNOO LETTER A
+<Multi_key> <T> <h> <i> <space> : "ᜡ"  U1721  # HANUNOO LETTER I
+<Multi_key> <T> <h> <u> <space>  : "ᜢ"  U1722  # HANUNOO LETTER U
+
+<Multi_key> <T> <h> <i> <Return> : "ᜲ"  U1732  # HANUNOO VOWEL SIGN I
+<Multi_key> <T> <h> <u> <Return> : "ᜳ"  U1733  # HANUNOO VOWEL SIGN U
+
+<Multi_key> <T> <h> <comma> <Return> : "᜴"  U1734  # HANUNOO SIGN PAMUDPOD
+
+# (t = Tagbanwa)
+
+<Multi_key> <T> <t> <k> : "ᝣ"  U1763  # TAGBANWA LETTER KA
+<Multi_key> <T> <t> <g> : "ᝤ"  U1764  # TAGBANWA LETTER GA
+<Multi_key> <T> <t> <semicolon> <n> : "ᝥ"  U1765  # TAGBANWA LETTER NGA
+<Multi_key> <T> <t> <t> : "ᝦ"  U1766  # TAGBANWA LETTER TA
+<Multi_key> <T> <t> <d> : "ᝧ"  U1767  # TAGBANWA LETTER DA
+<Multi_key> <T> <t> <n> : "ᝨ"  U1768  # TAGBANWA LETTER NA
+<Multi_key> <T> <t> <p> : "ᝩ"  U1769  # TAGBANWA LETTER PA
+<Multi_key> <T> <t> <b> : "ᝪ"  U176A  # TAGBANWA LETTER BA
+<Multi_key> <T> <t> <m> : "ᝫ"  U176B  # TAGBANWA LETTER MA
+<Multi_key> <T> <t> <y> : "ᝬ"  U176C  # TAGBANWA LETTER YA
+<Multi_key> <T> <t> <l> : "ᝮ"  U176E  # TAGBANWA LETTER LA
+<Multi_key> <T> <t> <w> : "ᝯ"  U176F  # TAGBANWA LETTER WA
+<Multi_key> <T> <t> <s> : "ᝰ"  U1770  # TAGBANWA LETTER SA
+
+<Multi_key> <T> <t> <a> <space> : "ᝠ"  U1760  # TAGBANWA LETTER A
+<Multi_key> <T> <t> <i> <space> : "ᝡ"  U1761  # TAGBANWA LETTER I
+<Multi_key> <T> <t> <u> <space> : "ᝢ"  U1762  # TAGBANWA LETTER U
+
+<Multi_key> <T> <t> <i> <Return> : "ᝲ"  U1772  # TAGBANWA VOWEL SIGN I
+<Multi_key> <T> <t> <u> <Return> : "ᝳ"  U1773  # TAGBANWA VOWEL SIGN U
 
 #########################################################
 # (z) Zhuyin/Bopomofo (and Mongolian, Tai Le & Tibetan) #
