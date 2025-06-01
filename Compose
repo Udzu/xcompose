@@ -328,6 +328,8 @@ include "%L"
 <Multi_key> <z> <h>                 : "ʒ"  U0292   # LATIN SMALL LETTER EZH
 <Multi_key> <g> <n>                 : "ɲ"  U0272   # LATIN SMALL LETTER N WITH LEFT HOOK
 <Multi_key> <m> <f>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
+<Multi_key> <s> <j>                 : "ɧ"  U0267  # LATIN SMALL LETTER HENG WITH HOOK
+<Multi_key> <h> <g>                 : "ɧ"  U0267  # LATIN SMALL LETTER HENG WITH HOOK
 <Multi_key> <m> <g>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
 <Multi_key> <n> <g>                 : "ŋ"  U014B   # LATIN SMALL LETTER ENG
 <Multi_key> <r> <d>                 : "ɾ"  U027E   # LATIN SMALL LETTER R WITH FISHHOOK
@@ -341,6 +343,7 @@ include "%L"
 <Multi_key> <w> <h>                 : "ɯ"  U026F   # LATIN SMALL LETTER TURNED M
 <Multi_key> <y> <h>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
 <Multi_key> <e> <r>                 : "ɚ"  U025A   # LATIN SMALL LETTER SCHWA WITH HOOK
+<Multi_key> <3> <r>                 : "ɝ"  U025D  # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
 <Multi_key> <r> <Return>            : "˞"  U02DE   # MODIFIER LETTER RHOTIC HOOK
 
 <Multi_key> <B> <B>                 : "ʙ"  U0299   # LATIN LETTER SMALL CAPITAL B
@@ -356,6 +359,7 @@ include "%L"
 <Multi_key> <Y> <Y>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
 
 <Multi_key> <e> <e>                 : "ə"  U0259   # LATIN SMALL LETTER SCHWA
+<Multi_key> <g> <g> <Return>        : "ɡ"  U0261  # LATIN SMALL LETTER SCRIPT G
 <Multi_key> <r> <r>                 : "ɹ"  U0279   # LATIN SMALL LETTER TURNED R
 
 <Multi_key> <a> <v>                 : "ɐ"  U0250   # LATIN SMALL LETTER TURNED A
@@ -415,7 +419,6 @@ include "%L"
 <Multi_key> <l> <z>                 : "ɮ"  U026E   # LATIN SMALL LETTER LEZH
 <Multi_key> <o> <E>                 : "ɶ"  U0276   # LATIN LETTER SMALL CAPITAL OE
 
-<Multi_key> <g> <g>                 : "ˠ"  U02E0   # MODIFIER LETTER SMALL GAMMA
 <Multi_key> <h> <h>                 : "ʰ"  U02B0   # MODIFIER LETTER SMALL H
 <Multi_key> <j> <j>                 : "ʲ"  U02B2   # MODIFIER LETTER SMALL J
 <Multi_key> <n> <n>                 : "ⁿ"  U207F   # SUPERSCRIPT LATIN SMALL LETTER N
@@ -427,6 +430,7 @@ include "%L"
 <Multi_key> <T> <less> <T>          : "꭪"  UAB6A   # MODIFIER LETTER LEFT TACK (conflicts with Ť, use vT)
 <Multi_key> <T> <greater> <T>       : "꭫"  UAB6B   # MODIFIER LETTER RIGHT TACK
 <Multi_key> <e> <v> <e>             : "ᵊ"  U1D4A   # MODIFIER LETTER SMALL SCHWA
+<Multi_key> <g> <g> <h>             : "ˠ"  U02E0   # MODIFIER LETTER SMALL GAMMA
 <Multi_key> <0> <0> <minus>         : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
 <Multi_key> <O> <O> <bar>           : "ᶿ"  U1DBF   # MODIFIER LETTER SMALL THETA
 <Multi_key> <l> <asciicircum> <l>   : "ˡ"  U02E1   # MODIFIER LETTER SMALL L
@@ -2217,14 +2221,17 @@ include "%L"
 <Multi_key> <braceleft> <Z> <H> <braceright> : "래" UB798   # HANGUL SYLLABLE RAE (visually similar)
 <Multi_key> <braceleft> <Z> <l> <braceright> : "리" UB9AC   # HANGUL SYLLABLE RI (visually similar)
 
-# multigraphs with greek SI letters
+# multigraphs with some non-Latin letters
 
+<Multi_key> <braceleft> <d> <Multi_key> <z> <h> <braceright> : "ʤ"  U02A4  # LATIN SMALL LETTER DEZH DIGRAPH
+<Multi_key> <braceleft> <d> <Multi_key> <z> <at> <braceright> : "ʥ"  U02A5  # LATIN SMALL LETTER DZ DIGRAPH WITH CURL
+<Multi_key> <braceleft> <k> <Multi_key> <o> <h> <m> <braceright> : "㏀" U33C0   # SQUARE K OHM
+<Multi_key> <braceleft> <M> <Multi_key> <o> <h> <m> <braceright> : "㏁" U33C1   # SQUARE M OHM
+<Multi_key> <braceleft> <t> <Multi_key> <s> <h> <braceright> : "ʧ"  U02A7  # LATIN SMALL LETTER TESH DIGRAPH
 <Multi_key> <braceleft> <Multi_key> <m> <u> <A> <braceright> : "㎂" U3382   # SQUARE MU A
 <Multi_key> <braceleft> <Multi_key> <m> <u> <F> <braceright> : "㎌" U338C   # SQUARE MU F
 <Multi_key> <braceleft> <Multi_key> <m> <u> <V> <braceright> : "㎶" U33B6   # SQUARE MU V
 <Multi_key> <braceleft> <Multi_key> <m> <u> <W> <braceright> : "㎼" U33BC   # SQUARE MU W
-<Multi_key> <braceleft> <k> <Multi_key> <o> <h> <m> <braceright> : "㏀" U33C0   # SQUARE K OHM
-<Multi_key> <braceleft> <M> <Multi_key> <o> <h> <m> <braceright> : "㏁" U33C1   # SQUARE M OHM
 
 # multigraphs with punctuation or digits
 
@@ -10880,7 +10887,7 @@ include "%L"
 
 <Multi_key> <Tab> <bar> <0> <less>                        : "⏎"  U23CE  # RETURN SYMBOL
 
-# Supplemental Arrows A
+# Supplemental Arrows-A
 
 <Multi_key> <Tab> <asciicircum> <4> <bar>                 : "⟰"  U27F0  # UPWARDS QUADRUPLE ARROW
 <Multi_key> <Tab> <bar> <4> <v>                           : "⟱"  U27F1  # DOWNWARDS QUADRUPLE ARROW
