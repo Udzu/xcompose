@@ -69,6 +69,8 @@ include "%L"
 <Multi_key> <bracketright> <underscore>      : "⌋"  U230B  # RIGHT FLOOR
 <Multi_key> <parenleft> <bar>                : "⎸"  U23B8  # LEFT VERTICAL BOX LINE
 <Multi_key> <parenright> <bar>               : "⎹"  U23B9  # RIGHT VERTICAL BOX LINE
+<Multi_key> <S> <parenleft>                  : "⟅"  U27C5  # LEFT S-SHAPED BAG DELIMITER
+<Multi_key> <S> <parenright>                 : "⟆"  U27C6  # RIGHT S-SHAPED BAG DELIMITER
 <Multi_key> <bracketleft> <bracketleft>      : "⟦"  U27E6  # MATHEMATICAL LEFT WHITE SQUARE BRACKET
 <Multi_key> <bracketright> <bracketright>    : "⟧"  U27E7  # MATHEMATICAL RIGHT WHITE SQUARE BRACKET
 <Multi_key> <less> <parenleft>               : "⟨"  U27E8  # MATHEMATICAL LEFT ANGLE BRACKET
@@ -77,6 +79,8 @@ include "%L"
 <Multi_key> <parenright> <greater> <greater> : "⟫"  U27EB  # MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
 <Multi_key> <less> <bracketleft>             : "⟬"  U27EC  # MATHEMATICAL LEFT WHITE TORTOISE SHELL BRACKET
 <Multi_key> <greater> <bracketright>         : "⟭"  U27ED  # MATHEMATICAL RIGHT WHITE TORTOISE SHELL BRACKET
+<Multi_key> <braceleft> <bar>                : "⦃"  U2983  # LEFT WHITE CURLY BRACKET
+<Multi_key> <bar> <braceright>               : "⦄"  U2984  # RIGHT WHITE CURLY BRACKET
 <Multi_key> <parenleft> <slash> <slash>      : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR
 <Multi_key> <parenright> <slash> <slash>     : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR
 <Multi_key> <slash> <slash> <slash>          : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
@@ -2525,8 +2529,6 @@ include "%L"
 
 # multigraphs with punctuation or digits
 
-<Multi_key> <braceleft> <apostrophe> <n> <braceright> : "ŉ"  U0149  # LATIN SMALL LETTER N PRECEDED BY APOSTROPHE
-
 <Multi_key> <braceleft> <a> <slash> <c> <braceright> : "℀" U2100   # ACCOUNT OF
 <Multi_key> <braceleft> <A> <slash> <S> <braceright> : "⅍" U214D   # AKTIESELSKAB
 <Multi_key> <braceleft> <a> <slash> <s> <braceright> : "℁" U2101   # ADDRESSED TO THE SUBJECT
@@ -2551,6 +2553,16 @@ include "%L"
 <Multi_key> <braceleft> <k> <m> <3> <braceright> : "㎦" U33A6   # SQUARE KM CUBED
 <Multi_key> <braceleft> <m> <m> <2> <braceright> : "㎟" U339F   # SQUARE MM SQUARED
 <Multi_key> <braceleft> <m> <m> <3> <braceright> : "㎣" U33A3   # SQUARE MM CUBED
+
+<Multi_key> <braceleft> <apostrophe> <n> <braceright> : "ŉ"  U0149  # LATIN SMALL LETTER N PRECEDED BY APOSTROPHE
+
+<Multi_key> <braceleft> <Multi_key> <o> <o> <C> <braceright> : "℃"  U2103  # DEGREE CELSIUS
+<Multi_key> <braceleft> <Multi_key> <o> <o> <F> <braceright> : "℉"  U2109  # DEGREE FAHRENHEIT
+
+<Multi_key> <braceleft> <exclam> <exclam> <braceright> : "‼"  U203C  # DOUBLE EXCLAMATION MARK
+<Multi_key> <braceleft> <question> <question> <braceright> : "⁇"  U2047  # DOUBLE QUESTION MARK
+<Multi_key> <braceleft> <question> <exclam> <braceright> : "⁈"  U2048  # QUESTION EXCLAMATION MARK
+<Multi_key> <braceleft> <exclam> <question> <braceright> : "⁉"  U2049  # EXCLAMATION QUESTION MARK
 
 # superscript multigraphs
 
@@ -9022,6 +9034,9 @@ include "%L"
 <Multi_key> <Z> <n> <grave> : "ߵ" U07F5   # NKO LOW TONE APOSTROPHE
 <Multi_key> <Z> <n> <comma> : "߸" U07F8   # NKO COMMA
 <Multi_key> <Z> <n> <exclam> : "߹" U07F9   # NKO EXCLAMATION MARK
+<Multi_key> <Z> <n> <Multi_key> <P> <P> : "߷"  U07F7  # NKO SYMBOL GBAKURUNEN
+<Multi_key> <Z> <n> <question> : "؟"  U061F  # ARABIC QUESTION MARK
+<Multi_key> <Z> <n> <semicolon> : "؛"  U061B  # ARABIC SEMICOLON
 
 <Multi_key> <Z> <n> <numbersign> <0> : "߀" U07C0   # NKO DIGIT ZERO
 <Multi_key> <Z> <n> <numbersign> <1> : "߁" U07C1   # NKO DIGIT ONE
