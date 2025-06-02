@@ -18,14 +18,14 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (131): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2123)
+### Latin script characters (2130)
 * **International Phonetic Alphabet** (116): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Latin script letters** (156): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (262): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (194): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (356): ʣ ㏈ etc
-* **Letter games** (308): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
+* **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
 ### Non-Latin script characters (5012)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِتْ⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc

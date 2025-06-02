@@ -2621,13 +2621,13 @@ include "%L"
 <Multi_key> <v> <asciicircum> <N> : "N" U004E    # LATIN CAPITAL LETTER N
 <Multi_key> <v> <asciicircum> <O> : "O" U004F    # LATIN CAPITAL LETTER O
 <Multi_key> <v> <asciicircum> <P> : "Ԁ" U0500    # CYRILLIC CAPITAL LETTER KOMI DE
-<Multi_key> <v> <asciicircum> <Q> : "Ό" U038C    # GREEK CAPITAL LETTER OMICRON WITH TONOS
+<Multi_key> <v> <asciicircum> <Q> : "Ꝺ" UA779    # LATIN CAPITAL LETTER INSULAR D
 <Multi_key> <v> <asciicircum> <R> : "ꓤ" UA4E4    # LISU LETTER ZA
 <Multi_key> <v> <asciicircum> <S> : "S" U0053    # LATIN CAPITAL LETTER S
 <Multi_key> <v> <asciicircum> <T> : "ꓕ" UA4D5    # LISU LETTER THA
 <Multi_key> <v> <asciicircum> <U> : "ꓵ" UA4F5    # LISU LETTER UE
 <Multi_key> <v> <asciicircum> <V> : "ꓥ" UA4E5    # LISU LETTER NGA
-<Multi_key> <v> <asciicircum> <W> : "M" U004D    # LATIN CAPITAL LETTER M
+<Multi_key> <v> <asciicircum> <W> : "𐤵" U10935   # LYDIAN LETTER AN
 <Multi_key> <v> <asciicircum> <X> : "X" U0058    # LATIN CAPITAL LETTER X
 <Multi_key> <v> <asciicircum> <Y> : "⅄" U2144    # TURNED SANS-SERIF CAPITAL Y (𑾰 U11FB0 is better but not yet widely supported)
 <Multi_key> <v> <asciicircum> <Z> : "Z" U005A    # LATIN CAPITAL LETTER Z
@@ -2663,20 +2663,25 @@ include "%L"
 <Multi_key> <v> <asciicircum> <Multi_key> <o> <e> : "ᴔ" U1D14    # LATIN SMALL LETTER TURNED OE
 
 <Multi_key> <v> <asciicircum> <0> : "0" U0030    # DIGIT ZERO
-<Multi_key> <v> <asciicircum> <1> : "Ɩ" U0196    # LATIN CAPITAL LETTER IOTA
+<Multi_key> <v> <asciicircum> <1> : "⇂" U21C2    # DOWNWARDS HARPOON WITH BARB RIGHTWARDS (alternatively Ɩ U0196)
 <Multi_key> <v> <asciicircum> <2> : "↊" U218A    # TURNED DIGIT TWO (ح U062D is worse but better supported)
 <Multi_key> <v> <asciicircum> <3> : "↋" U218B    # TURNED DIGIT THREE (Ɛ U0190 is worse but better supported)
-<Multi_key> <v> <asciicircum> <4> : "ᔭ" U152D    # CANADIAN SYLLABICS YA
-<Multi_key> <v> <asciicircum> <5> : "5" U0035    # DIGIT FIVE
+<Multi_key> <v> <asciicircum> <4> : "߈" U07C8    # NKO DIGIT EIGHT
+<Multi_key> <v> <asciicircum> <5> : "ဌ" U100C    # MYANMAR LETTER TTHA (alternatively just 5)
 <Multi_key> <v> <asciicircum> <6> : "9" U0039    # DIGIT NINE
-<Multi_key> <v> <asciicircum> <7> : "Ƚ" U023D    # LATIN CAPITAL LETTER L WITH BAR
+<Multi_key> <v> <asciicircum> <7> : "𝘓" U1D613   # MATHEMATICAL SANS-SERIF ITALIC CAPITAL L (alternatively Ƚ U023D)
 <Multi_key> <v> <asciicircum> <8> : "8" U0038    # DIGIT EIGHT
 <Multi_key> <v> <asciicircum> <9> : "6" U0036    # DIGIT SIX
 
-<Multi_key> <v> <asciicircum> <exclam>    : "¡" U00A1    # INVERTED EXCLAMATION MARK
-<Multi_key> <v> <asciicircum> <question>  : "¿" U00BF    # INVERTED QUESTION MARK
-<Multi_key> <v> <asciicircum> <quotedbl>  : "„" U201E    # DOUBLE LOW-9 QUOTATION MARK
-<Multi_key> <v> <asciicircum> <ampersand> : "⅋" U214B    # TURNED AMPERSAND
+<Multi_key> <v> <asciicircum> <period>     : "˙" U02D9   # DOT ABOVE
+<Multi_key> <v> <asciicircum> <comma>      : "‘" U2018   # LEFT SINGLE QUOTATION MARK
+<Multi_key> <v> <asciicircum> <exclam>     : "¡" U00A1   # INVERTED EXCLAMATION MARK
+<Multi_key> <v> <asciicircum> <question>   : "¿" U00BF   # INVERTED QUESTION MARK
+<Multi_key> <v> <asciicircum> <apostrophe> : "," U002C   # COMMA
+<Multi_key> <v> <asciicircum> <quotedbl>   : "„" U201E   # DOUBLE LOW-9 QUOTATION MARK
+<Multi_key> <v> <asciicircum> <ampersand>  : "⅋" U214B   # TURNED AMPERSAND
+<Multi_key> <v> <asciicircum> <underscore> : "‾" U203E   # OVERLINE
+<Multi_key> <v> <asciicircum> <semicolon>  : "؛" U061B   # ARABIC SEMICOLON
 
 # "Mirrored" text
 
