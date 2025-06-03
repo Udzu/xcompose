@@ -614,28 +614,31 @@ include "%L"
 <Multi_key> <g> <h>                 : "ɣ"  U0263   # LATIN SMALL LETTER GAMMA
 <Multi_key> <j> <h>                 : "ʝ"  U029D   # LATIN SMALL LETTER J WITH CROSSED-TAIL
 <Multi_key> <l> <h>                 : "ɬ"  U026C   # LATIN SMALL LETTER L WITH BELT
-<Multi_key> <L> <h>                 : "𝼄"  U1DF04   # LATIN LETTER SMALL CAPITAL L WITH BELT
+<Multi_key> <L> <h>                 : "𝼄"  U1DF04  # LATIN LETTER SMALL CAPITAL L WITH BELT
 <Multi_key> <p> <h>                 : "ɸ"  U0278   # LATIN SMALL LETTER PHI
 <Multi_key> <q> <h>                 : "χ"  U03C7   # GREEK SMALL LETTER CHI (alternatively xh)
 <Multi_key> <s> <h>                 : "ʃ"  U0283   # LATIN SMALL LETTER ESH
 <Multi_key> <x> <h>                 : "χ"  U03C7   # GREEK SMALL LETTER CHI
+<Multi_key> <y> <h>                 : "𝼆"  U1DF06  # LATIN SMALL LETTER TURNED Y WITH BELT
 <Multi_key> <z> <h>                 : "ʒ"  U0292   # LATIN SMALL LETTER EZH
 <Multi_key> <g> <n>                 : "ɲ"  U0272   # LATIN SMALL LETTER N WITH LEFT HOOK
 <Multi_key> <m> <f>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
-<Multi_key> <s> <j>                 : "ɧ"  U0267  # LATIN SMALL LETTER HENG WITH HOOK
-<Multi_key> <h> <g>                 : "ɧ"  U0267  # LATIN SMALL LETTER HENG WITH HOOK
+<Multi_key> <s> <j>                 : "ɧ"  U0267   # LATIN SMALL LETTER HENG WITH HOOK
+<Multi_key> <h> <g>                 : "ɧ"  U0267   # LATIN SMALL LETTER HENG WITH HOOK
 <Multi_key> <m> <g>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
 <Multi_key> <n> <g>                 : "ŋ"  U014B   # LATIN SMALL LETTER ENG
 <Multi_key> <r> <d>                 : "ɾ"  U027E   # LATIN SMALL LETTER R WITH FISHHOOK
 <Multi_key> <g> <w>                 : "ɰ"  U0270   # LATIN SMALL LETTER TURNED M WITH LONG LEG
 <Multi_key> <v> <w>                 : "ʋ"  U028B   # LATIN SMALL LETTER V WITH HOOK
+<Multi_key> <l> <r> <v>             : "ɺ"  U027A   # LATIN SMALL LETTER TURNED R WITH LONG LEG
+<Multi_key> <l> <r> <l>             : "𝼈" U1DF08  # LATIN SMALL LETTER TURNED R WITH LONG LEG AND RETROFLEX HOOK
 
 <Multi_key> <a> <h>                 : "ɑ"  U0251   # LATIN SMALL LETTER ALPHA
 <Multi_key> <e> <h>                 : "ɛ"  U025B   # LATIN SMALL LETTER OPEN E
 <Multi_key> <i> <h>                 : "ɪ"  U026A   # LATIN LETTER SMALL CAPITAL I
 <Multi_key> <u> <h>                 : "ʊ"  U028A   # LATIN SMALL LETTER UPSILON
 <Multi_key> <w> <h>                 : "ɯ"  U026F   # LATIN SMALL LETTER TURNED M
-<Multi_key> <y> <h>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
+<Multi_key> <y> <y>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
 <Multi_key> <e> <r>                 : "ɚ"  U025A   # LATIN SMALL LETTER SCHWA WITH HOOK
 <Multi_key> <3> <r>                 : "ɝ"  U025D  # LATIN SMALL LETTER REVERSED OPEN E WITH HOOK
 <Multi_key> <r> <Return>            : "˞"  U02DE   # MODIFIER LETTER RHOTIC HOOK
@@ -673,6 +676,7 @@ include "%L"
 <Multi_key> <d> <l>                 : "ɖ"  U0256   # LATIN SMALL LETTER D WITH TAIL
 <Multi_key> <l> <l> <Return>        : "ɭ"  U026D   # LATIN SMALL LETTER L WITH RETROFLEX HOOK (use l^l for ˡ)
 <Multi_key> <l> <l> <h>             : "ꞎ"  UA78E   # LATIN SMALL LETTER L WITH RETROFLEX HOOK AND BELT
+<Multi_key> <l> <l> <z>             : "𝼅" U1DF05  # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
 <Multi_key> <n> <l>                 : "ɳ"  U0273   # LATIN SMALL LETTER N WITH RETROFLEX HOOK
 <Multi_key> <s> <l>                 : "ʂ"  U0282   # LATIN SMALL LETTER S WITH HOOK
 <Multi_key> <t> <l>                 : "ʈ"  U0288   # LATIN SMALL LETTER T WITH RETROFLEX HOOK
@@ -683,6 +687,7 @@ include "%L"
 <Multi_key> <z> <at>                : "ʑ"  U0291   # LATIN SMALL LETTER Z WITH CURL
 <Multi_key> <h> <minus>             : "ħ"  U0127   # LATIN SMALL LETTER H WITH STROKE
 <Multi_key> <j> <minus>             : "ɟ"  U025F   # LATIN SMALL LETTER DOTLESS J WITH STROKE
+<Multi_key> <j> <s> <minus>         : "ʄ"  U0284   # LATIN SMALL LETTER DOTLESS J WITH STROKE AND HOOK
 <Multi_key> <0> <period>            : "ʘ"  U0298   # LATIN LETTER BILABIAL CLICK
 <Multi_key> <0> <minus>             : "θ"  U03B8   # GREEK SMALL LETTER THETA
 <Multi_key> <o> <bar>               : "ɵ"  U0275   # LATIN SMALL LETTER BARRED O
@@ -694,6 +699,8 @@ include "%L"
 <Multi_key> <G> <apostrophe>        : "ʛ"  U029B   # LATIN LETTER SMALL CAPITAL G WITH HOOK
 <Multi_key> <h> <apostrophe>        : "ɦ"  U0266   # LATIN SMALL LETTER H WITH HOOK
 <Multi_key> <v> <apostrophe>        : "ⱱ"  U2C71   # LATIN SMALL LETTER V WITH RIGHT HOOK
+<Multi_key> <d> <Multi_key> <apostrophe> <l> : "ᶑ"  U1D91  # LATIN SMALL LETTER D WITH HOOK AND TAIL
+<Multi_key> <d> <Multi_key> <l> <apostrophe> : "ᶑ"  U1D91  # LATIN SMALL LETTER D WITH HOOK AND TAIL
 
 <Multi_key> <apostrophe> <0>        : "ʘ"  U0298   # LATIN LETTER BILABIAL CLICK
 <Multi_key> <apostrophe> <bar>      : "ǀ"  U01C0    # LATIN LETTER DENTAL CLICK
@@ -701,6 +708,10 @@ include "%L"
 <Multi_key> <apostrophe> <exclam>   : "ǃ"  U01C3    # LATIN LETTER RETROFLEX CLICK
 <Multi_key> <apostrophe> <Multi_key> <bar> <bar> : "ǁ"  U01C1    # LATIN LETTER LATERAL CLICK
 <Multi_key> <apostrophe> <Multi_key> <exclam> <l> : "𝼊"  U1DF0A    # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
+
+<Multi_key> <w> <exclam>            : "ʬ"  U02AC  # LATIN LETTER BILABIAL PERCUSSIVE
+<Multi_key> <bracketleft> <exclam>  : "ʭ"  U02AD  # LATIN LETTER BIDENTAL PERCUSSIVE
+<Multi_key> <exclam> <exclam>       : "¡"  U00A1  # INVERTED EXCLAMATION MARK (SUBLINGUAL PERCUSSIVE)
 
 <Multi_key> <question> <period>     : "ʔ"  U0294   # LATIN LETTER GLOTTAL STOP
 <Multi_key> <question> <minus>      : "ʡ"  U02A1   # LATIN LETTER GLOTTAL STOP WITH STROKE
