@@ -47,7 +47,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Zhuyin**, Mongolian, Tai Le & Tibetan (304): ㄏㄨㄥˊㄉㄧˊ, ᠷᠡᠳᠢᠲ, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (3074)
+### Symbols (3342)
 * **Emoji** (1525): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (271): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Technical** (83): ⏻ ⎙ ⌘ etc
@@ -57,4 +57,4 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
 * **Arrows** (311): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
 * **Geometric shapes** (165): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
-* **Box drawing** (203): ╞╦╕ etc
+* **Box drawing** (447): ╞╦╕ etc

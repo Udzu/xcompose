@@ -11886,6 +11886,90 @@ include "%L"
 <Multi_key> <bar> <l> <u>     : "┘" U2518  # BOX DRAWINGS LIGHT UP AND LEFT
 <Multi_key> <bar> <r> <d>     : "┌" U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
 
+
+# light-heavy: | + u + r + l + d (with capital for heavy, space for none)
+
+<Multi_key> <bar> <space> <r> <space> <l> : "─"  U2500  # BOX DRAWINGS LIGHT HORIZONTAL
+<Multi_key> <bar> <space> <R> <space> <L> : "━"  U2501  # BOX DRAWINGS HEAVY HORIZONTAL
+<Multi_key> <bar> <u> <space> <d> <space> : "│"  U2502  # BOX DRAWINGS LIGHT VERTICAL
+<Multi_key> <bar> <U> <space> <D> <space> : "┃"  U2503  # BOX DRAWINGS HEAVY VERTICAL
+<Multi_key> <bar> <space> <r> <d> <space> : "┌"  U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
+<Multi_key> <bar> <space> <R> <d> <space> : "┍"  U250D  # BOX DRAWINGS DOWN LIGHT AND RIGHT HEAVY
+<Multi_key> <bar> <space> <r> <D> <space> : "┎"  U250E  # BOX DRAWINGS DOWN HEAVY AND RIGHT LIGHT
+<Multi_key> <bar> <space> <R> <D> <space> : "┏"  U250F  # BOX DRAWINGS HEAVY DOWN AND RIGHT
+<Multi_key> <bar> <space> <space> <d> <l> : "┐"  U2510  # BOX DRAWINGS LIGHT DOWN AND LEFT
+<Multi_key> <bar> <space> <space> <d> <L> : "┑"  U2511  # BOX DRAWINGS DOWN LIGHT AND LEFT HEAVY
+<Multi_key> <bar> <space> <space> <D> <l> : "┒"  U2512  # BOX DRAWINGS DOWN HEAVY AND LEFT LIGHT
+<Multi_key> <bar> <space> <space> <D> <L> : "┓"  U2513  # BOX DRAWINGS HEAVY DOWN AND LEFT
+<Multi_key> <bar> <u> <r> <space> <space> : "└"  U2514  # BOX DRAWINGS LIGHT UP AND RIGHT
+<Multi_key> <bar> <u> <R> <space> <space> : "┕"  U2515  # BOX DRAWINGS UP LIGHT AND RIGHT HEAVY
+<Multi_key> <bar> <U> <r> <space> <space> : "┖"  U2516  # BOX DRAWINGS UP HEAVY AND RIGHT LIGHT
+<Multi_key> <bar> <U> <R> <space> <space> : "┗"  U2517  # BOX DRAWINGS HEAVY UP AND RIGHT
+<Multi_key> <bar> <u> <space> <space> <l> : "┘"  U2518  # BOX DRAWINGS LIGHT UP AND LEFT
+<Multi_key> <bar> <u> <space> <space> <L> : "┙"  U2519  # BOX DRAWINGS UP LIGHT AND LEFT HEAVY
+<Multi_key> <bar> <U> <space> <space> <l> : "┚"  U251A  # BOX DRAWINGS UP HEAVY AND LEFT LIGHT
+<Multi_key> <bar> <U> <space> <space> <L> : "┛"  U251B  # BOX DRAWINGS HEAVY UP AND LEFT
+<Multi_key> <bar> <u> <r> <d> <space> : "├"  U251C  # BOX DRAWINGS LIGHT VERTICAL AND RIGHT
+<Multi_key> <bar> <u> <R> <d> <space> : "┝"  U251D  # BOX DRAWINGS VERTICAL LIGHT AND RIGHT HEAVY
+<Multi_key> <bar> <U> <r> <d> <space> : "┞"  U251E  # BOX DRAWINGS UP HEAVY AND RIGHT DOWN LIGHT
+<Multi_key> <bar> <u> <r> <D> <space> : "┟"  U251F  # BOX DRAWINGS DOWN HEAVY AND RIGHT UP LIGHT
+<Multi_key> <bar> <U> <r> <D> <space> : "┠"  U2520  # BOX DRAWINGS VERTICAL HEAVY AND RIGHT LIGHT
+<Multi_key> <bar> <U> <R> <d> <space> : "┡"  U2521  # BOX DRAWINGS DOWN LIGHT AND RIGHT UP HEAVY
+<Multi_key> <bar> <u> <R> <D> <space> : "┢"  U2522  # BOX DRAWINGS UP LIGHT AND RIGHT DOWN HEAVY
+<Multi_key> <bar> <U> <R> <D> <space> : "┣"  U2523  # BOX DRAWINGS HEAVY VERTICAL AND RIGHT
+<Multi_key> <bar> <u> <space> <d> <l> : "┤"  U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
+<Multi_key> <bar> <u> <space> <d> <L> : "┥"  U2525  # BOX DRAWINGS VERTICAL LIGHT AND LEFT HEAVY
+<Multi_key> <bar> <U> <space> <d> <l> : "┦"  U2526  # BOX DRAWINGS UP HEAVY AND LEFT DOWN LIGHT
+<Multi_key> <bar> <u> <space> <D> <l> : "┧"  U2527  # BOX DRAWINGS DOWN HEAVY AND LEFT UP LIGHT
+<Multi_key> <bar> <U> <space> <D> <l> : "┨"  U2528  # BOX DRAWINGS VERTICAL HEAVY AND LEFT LIGHT
+<Multi_key> <bar> <U> <space> <d> <L> : "┩"  U2529  # BOX DRAWINGS DOWN LIGHT AND LEFT UP HEAVY
+<Multi_key> <bar> <u> <space> <D> <L> : "┪"  U252A  # BOX DRAWINGS UP LIGHT AND LEFT DOWN HEAVY
+<Multi_key> <bar> <U> <space> <D> <L> : "┫"  U252B  # BOX DRAWINGS HEAVY VERTICAL AND LEFT
+<Multi_key> <bar> <space> <r> <d> <l> : "┬"  U252C  # BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
+<Multi_key> <bar> <space> <r> <d> <L> : "┭"  U252D  # BOX DRAWINGS LEFT HEAVY AND RIGHT DOWN LIGHT
+<Multi_key> <bar> <space> <R> <d> <l> : "┮"  U252E  # BOX DRAWINGS RIGHT HEAVY AND LEFT DOWN LIGHT
+<Multi_key> <bar> <space> <R> <d> <L> : "┯"  U252F  # BOX DRAWINGS DOWN LIGHT AND HORIZONTAL HEAVY
+<Multi_key> <bar> <space> <r> <D> <l> : "┰"  U2530  # BOX DRAWINGS DOWN HEAVY AND HORIZONTAL LIGHT
+<Multi_key> <bar> <space> <r> <D> <L> : "┱"  U2531  # BOX DRAWINGS RIGHT LIGHT AND LEFT DOWN HEAVY
+<Multi_key> <bar> <space> <R> <D> <l> : "┲"  U2532  # BOX DRAWINGS LEFT LIGHT AND RIGHT DOWN HEAVY
+<Multi_key> <bar> <space> <R> <D> <L> : "┳"  U2533  # BOX DRAWINGS HEAVY DOWN AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <space> <l> : "┴"  U2534  # BOX DRAWINGS LIGHT UP AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <space> <L> : "┵"  U2535  # BOX DRAWINGS LEFT HEAVY AND RIGHT UP LIGHT
+<Multi_key> <bar> <u> <R> <space> <l> : "┶"  U2536  # BOX DRAWINGS RIGHT HEAVY AND LEFT UP LIGHT
+<Multi_key> <bar> <u> <R> <space> <L> : "┷"  U2537  # BOX DRAWINGS UP LIGHT AND HORIZONTAL HEAVY
+<Multi_key> <bar> <U> <r> <space> <l> : "┸"  U2538  # BOX DRAWINGS UP HEAVY AND HORIZONTAL LIGHT
+<Multi_key> <bar> <U> <r> <space> <L> : "┹"  U2539  # BOX DRAWINGS RIGHT LIGHT AND LEFT UP HEAVY
+<Multi_key> <bar> <U> <R> <space> <l> : "┺"  U253A  # BOX DRAWINGS LEFT LIGHT AND RIGHT UP HEAVY
+<Multi_key> <bar> <U> <R> <space> <L> : "┻"  U253B  # BOX DRAWINGS HEAVY UP AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <d> <l> : "┼"  U253C  # BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <u> <r> <d> <L> : "┽"  U253D  # BOX DRAWINGS LEFT HEAVY AND RIGHT VERTICAL LIGHT
+<Multi_key> <bar> <u> <R> <d> <l> : "┾"  U253E  # BOX DRAWINGS RIGHT HEAVY AND LEFT VERTICAL LIGHT
+<Multi_key> <bar> <u> <R> <d> <L> : "┿"  U253F  # BOX DRAWINGS VERTICAL LIGHT AND HORIZONTAL HEAVY
+<Multi_key> <bar> <U> <r> <d> <l> : "╀"  U2540  # BOX DRAWINGS UP HEAVY AND DOWN HORIZONTAL LIGHT
+<Multi_key> <bar> <u> <r> <D> <l> : "╁"  U2541  # BOX DRAWINGS DOWN HEAVY AND UP HORIZONTAL LIGHT
+<Multi_key> <bar> <U> <r> <D> <l> : "╂"  U2542  # BOX DRAWINGS VERTICAL HEAVY AND HORIZONTAL LIGHT
+<Multi_key> <bar> <U> <r> <d> <L> : "╃"  U2543  # BOX DRAWINGS LEFT UP HEAVY AND RIGHT DOWN LIGHT
+<Multi_key> <bar> <U> <R> <d> <l> : "╄"  U2544  # BOX DRAWINGS RIGHT UP HEAVY AND LEFT DOWN LIGHT
+<Multi_key> <bar> <u> <r> <D> <L> : "╅"  U2545  # BOX DRAWINGS LEFT DOWN HEAVY AND RIGHT UP LIGHT
+<Multi_key> <bar> <u> <R> <D> <l> : "╆"  U2546  # BOX DRAWINGS RIGHT DOWN HEAVY AND LEFT UP LIGHT
+<Multi_key> <bar> <U> <R> <d> <L> : "╇"  U2547  # BOX DRAWINGS DOWN LIGHT AND UP HORIZONTAL HEAVY
+<Multi_key> <bar> <u> <R> <D> <L> : "╈"  U2548  # BOX DRAWINGS UP LIGHT AND DOWN HORIZONTAL HEAVY
+<Multi_key> <bar> <U> <r> <D> <L> : "╉"  U2549  # BOX DRAWINGS RIGHT LIGHT AND LEFT VERTICAL HEAVY
+<Multi_key> <bar> <U> <R> <D> <l> : "╊"  U254A  # BOX DRAWINGS LEFT LIGHT AND RIGHT VERTICAL HEAVY
+<Multi_key> <bar> <U> <R> <D> <L> : "╋"  U254B  # BOX DRAWINGS HEAVY VERTICAL AND HORIZONTAL
+<Multi_key> <bar> <space> <space> <space> <l> : "╴"  U2574  # BOX DRAWINGS LIGHT LEFT
+<Multi_key> <bar> <u> <space> <space> <space> : "╵"  U2575  # BOX DRAWINGS LIGHT UP
+<Multi_key> <bar> <space> <r> <space> <space> : "╶"  U2576  # BOX DRAWINGS LIGHT RIGHT
+<Multi_key> <bar> <space> <space> <d> <space> : "╷"  U2577  # BOX DRAWINGS LIGHT DOWN
+<Multi_key> <bar> <space> <space> <space> <L> : "╸"  U2578  # BOX DRAWINGS HEAVY LEFT
+<Multi_key> <bar> <U> <space> <space> <space> : "╹"  U2579  # BOX DRAWINGS HEAVY UP
+<Multi_key> <bar> <space> <R> <space> <space> : "╺"  U257A  # BOX DRAWINGS HEAVY RIGHT
+<Multi_key> <bar> <space> <space> <D> <space> : "╻"  U257B  # BOX DRAWINGS HEAVY DOWN
+<Multi_key> <bar> <space> <R> <space> <l> : "╼"  U257C  # BOX DRAWINGS LIGHT LEFT AND HEAVY RIGHT
+<Multi_key> <bar> <u> <space> <D> <space> : "╽"  U257D  # BOX DRAWINGS LIGHT UP AND HEAVY DOWN
+<Multi_key> <bar> <space> <r> <space> <L> : "╾"  U257E  # BOX DRAWINGS HEAVY LEFT AND LIGHT RIGHT
+<Multi_key> <bar> <U> <space> <d> <space> : "╿"  U257F  # BOX DRAWINGS HEAVY UP AND LIGHT DOWN
+
 # shades: | + # + n
 
 <Multi_key> <bar> <numbersign> <1> : "░" U2591  # LIGHT SHADE
@@ -11900,8 +11984,8 @@ include "%L"
 <Multi_key> <bar> <b> <less>            : "▌"  U258C  # LEFT HALF BLOCK
 <Multi_key> <bar> <b> <greater>         : "▐"  U2590  # RIGHT HALF BLOCK
 <Multi_key> <bar> <b> <asciicircum>     : "▀"  U2580  # UPPER HALF BLOCK
-<Multi_key> <bar> <b> <slash>           : "🙾"  U1F67E  # CHECKER BOARD
-<Multi_key> <bar> <b> <backslash>       : "🙿"  U1F67F  # REVERSE CHECKER BOARD
+<Multi_key> <bar> <b> <slash>           : "▞"  U259E  # QUADRANT UPPER RIGHT AND LOWER LEFT
+<Multi_key> <bar> <b> <backslash>       : "▚"  U259A  # QUADRANT UPPER LEFT AND LOWER RIGHT
 
 <Multi_key> <bar> <b> <1> <v>           : "▁"  U2581  # LOWER ONE EIGHTH BLOCK
 <Multi_key> <bar> <b> <2> <v>           : "▂"  U2582  # LOWER ONE QUARTER BLOCK
@@ -12001,88 +12085,263 @@ include "%L"
 <Multi_key> <bar> <6> <2> <3> <4> <5> <6>          : "🬻"  U1FB3B  # BLOCK SEXTANT-23456
 <Multi_key> <bar> <6> <1> <2> <3> <4> <5> <6>      : "█"  U2588  # FULL BLOCK
 
-# light-heavy: | + u + r + l + d (with capital for heavy, space for none)
+# octants: | + 8 + octant list
 
-<Multi_key> <bar> <space> <r> <space> <l> : "─"  U2500  # BOX DRAWINGS LIGHT HORIZONTAL
-<Multi_key> <bar> <space> <R> <space> <L> : "━"  U2501  # BOX DRAWINGS HEAVY HORIZONTAL
-<Multi_key> <bar> <u> <space> <d> <space> : "│"  U2502  # BOX DRAWINGS LIGHT VERTICAL
-<Multi_key> <bar> <U> <space> <D> <space> : "┃"  U2503  # BOX DRAWINGS HEAVY VERTICAL
-<Multi_key> <bar> <space> <r> <d> <space> : "┌"  U250C  # BOX DRAWINGS LIGHT DOWN AND RIGHT
-<Multi_key> <bar> <space> <R> <d> <space> : "┍"  U250D  # BOX DRAWINGS DOWN LIGHT AND RIGHT HEAVY
-<Multi_key> <bar> <space> <r> <D> <space> : "┎"  U250E  # BOX DRAWINGS DOWN HEAVY AND RIGHT LIGHT
-<Multi_key> <bar> <space> <R> <D> <space> : "┏"  U250F  # BOX DRAWINGS HEAVY DOWN AND RIGHT
-<Multi_key> <bar> <space> <space> <d> <l> : "┐"  U2510  # BOX DRAWINGS LIGHT DOWN AND LEFT
-<Multi_key> <bar> <space> <space> <d> <L> : "┑"  U2511  # BOX DRAWINGS DOWN LIGHT AND LEFT HEAVY
-<Multi_key> <bar> <space> <space> <D> <l> : "┒"  U2512  # BOX DRAWINGS DOWN HEAVY AND LEFT LIGHT
-<Multi_key> <bar> <space> <space> <D> <L> : "┓"  U2513  # BOX DRAWINGS HEAVY DOWN AND LEFT
-<Multi_key> <bar> <u> <r> <space> <space> : "└"  U2514  # BOX DRAWINGS LIGHT UP AND RIGHT
-<Multi_key> <bar> <u> <R> <space> <space> : "┕"  U2515  # BOX DRAWINGS UP LIGHT AND RIGHT HEAVY
-<Multi_key> <bar> <U> <r> <space> <space> : "┖"  U2516  # BOX DRAWINGS UP HEAVY AND RIGHT LIGHT
-<Multi_key> <bar> <U> <R> <space> <space> : "┗"  U2517  # BOX DRAWINGS HEAVY UP AND RIGHT
-<Multi_key> <bar> <u> <space> <space> <l> : "┘"  U2518  # BOX DRAWINGS LIGHT UP AND LEFT
-<Multi_key> <bar> <u> <space> <space> <L> : "┙"  U2519  # BOX DRAWINGS UP LIGHT AND LEFT HEAVY
-<Multi_key> <bar> <U> <space> <space> <l> : "┚"  U251A  # BOX DRAWINGS UP HEAVY AND LEFT LIGHT
-<Multi_key> <bar> <U> <space> <space> <L> : "┛"  U251B  # BOX DRAWINGS HEAVY UP AND LEFT
-<Multi_key> <bar> <u> <r> <d> <space> : "├"  U251C  # BOX DRAWINGS LIGHT VERTICAL AND RIGHT
-<Multi_key> <bar> <u> <R> <d> <space> : "┝"  U251D  # BOX DRAWINGS VERTICAL LIGHT AND RIGHT HEAVY
-<Multi_key> <bar> <U> <r> <d> <space> : "┞"  U251E  # BOX DRAWINGS UP HEAVY AND RIGHT DOWN LIGHT
-<Multi_key> <bar> <u> <r> <D> <space> : "┟"  U251F  # BOX DRAWINGS DOWN HEAVY AND RIGHT UP LIGHT
-<Multi_key> <bar> <U> <r> <D> <space> : "┠"  U2520  # BOX DRAWINGS VERTICAL HEAVY AND RIGHT LIGHT
-<Multi_key> <bar> <U> <R> <d> <space> : "┡"  U2521  # BOX DRAWINGS DOWN LIGHT AND RIGHT UP HEAVY
-<Multi_key> <bar> <u> <R> <D> <space> : "┢"  U2522  # BOX DRAWINGS UP LIGHT AND RIGHT DOWN HEAVY
-<Multi_key> <bar> <U> <R> <D> <space> : "┣"  U2523  # BOX DRAWINGS HEAVY VERTICAL AND RIGHT
-<Multi_key> <bar> <u> <space> <d> <l> : "┤"  U2524  # BOX DRAWINGS LIGHT VERTICAL AND LEFT
-<Multi_key> <bar> <u> <space> <d> <L> : "┥"  U2525  # BOX DRAWINGS VERTICAL LIGHT AND LEFT HEAVY
-<Multi_key> <bar> <U> <space> <d> <l> : "┦"  U2526  # BOX DRAWINGS UP HEAVY AND LEFT DOWN LIGHT
-<Multi_key> <bar> <u> <space> <D> <l> : "┧"  U2527  # BOX DRAWINGS DOWN HEAVY AND LEFT UP LIGHT
-<Multi_key> <bar> <U> <space> <D> <l> : "┨"  U2528  # BOX DRAWINGS VERTICAL HEAVY AND LEFT LIGHT
-<Multi_key> <bar> <U> <space> <d> <L> : "┩"  U2529  # BOX DRAWINGS DOWN LIGHT AND LEFT UP HEAVY
-<Multi_key> <bar> <u> <space> <D> <L> : "┪"  U252A  # BOX DRAWINGS UP LIGHT AND LEFT DOWN HEAVY
-<Multi_key> <bar> <U> <space> <D> <L> : "┫"  U252B  # BOX DRAWINGS HEAVY VERTICAL AND LEFT
-<Multi_key> <bar> <space> <r> <d> <l> : "┬"  U252C  # BOX DRAWINGS LIGHT DOWN AND HORIZONTAL
-<Multi_key> <bar> <space> <r> <d> <L> : "┭"  U252D  # BOX DRAWINGS LEFT HEAVY AND RIGHT DOWN LIGHT
-<Multi_key> <bar> <space> <R> <d> <l> : "┮"  U252E  # BOX DRAWINGS RIGHT HEAVY AND LEFT DOWN LIGHT
-<Multi_key> <bar> <space> <R> <d> <L> : "┯"  U252F  # BOX DRAWINGS DOWN LIGHT AND HORIZONTAL HEAVY
-<Multi_key> <bar> <space> <r> <D> <l> : "┰"  U2530  # BOX DRAWINGS DOWN HEAVY AND HORIZONTAL LIGHT
-<Multi_key> <bar> <space> <r> <D> <L> : "┱"  U2531  # BOX DRAWINGS RIGHT LIGHT AND LEFT DOWN HEAVY
-<Multi_key> <bar> <space> <R> <D> <l> : "┲"  U2532  # BOX DRAWINGS LEFT LIGHT AND RIGHT DOWN HEAVY
-<Multi_key> <bar> <space> <R> <D> <L> : "┳"  U2533  # BOX DRAWINGS HEAVY DOWN AND HORIZONTAL
-<Multi_key> <bar> <u> <r> <space> <l> : "┴"  U2534  # BOX DRAWINGS LIGHT UP AND HORIZONTAL
-<Multi_key> <bar> <u> <r> <space> <L> : "┵"  U2535  # BOX DRAWINGS LEFT HEAVY AND RIGHT UP LIGHT
-<Multi_key> <bar> <u> <R> <space> <l> : "┶"  U2536  # BOX DRAWINGS RIGHT HEAVY AND LEFT UP LIGHT
-<Multi_key> <bar> <u> <R> <space> <L> : "┷"  U2537  # BOX DRAWINGS UP LIGHT AND HORIZONTAL HEAVY
-<Multi_key> <bar> <U> <r> <space> <l> : "┸"  U2538  # BOX DRAWINGS UP HEAVY AND HORIZONTAL LIGHT
-<Multi_key> <bar> <U> <r> <space> <L> : "┹"  U2539  # BOX DRAWINGS RIGHT LIGHT AND LEFT UP HEAVY
-<Multi_key> <bar> <U> <R> <space> <l> : "┺"  U253A  # BOX DRAWINGS LEFT LIGHT AND RIGHT UP HEAVY
-<Multi_key> <bar> <U> <R> <space> <L> : "┻"  U253B  # BOX DRAWINGS HEAVY UP AND HORIZONTAL
-<Multi_key> <bar> <u> <r> <d> <l> : "┼"  U253C  # BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
-<Multi_key> <bar> <u> <r> <d> <L> : "┽"  U253D  # BOX DRAWINGS LEFT HEAVY AND RIGHT VERTICAL LIGHT
-<Multi_key> <bar> <u> <R> <d> <l> : "┾"  U253E  # BOX DRAWINGS RIGHT HEAVY AND LEFT VERTICAL LIGHT
-<Multi_key> <bar> <u> <R> <d> <L> : "┿"  U253F  # BOX DRAWINGS VERTICAL LIGHT AND HORIZONTAL HEAVY
-<Multi_key> <bar> <U> <r> <d> <l> : "╀"  U2540  # BOX DRAWINGS UP HEAVY AND DOWN HORIZONTAL LIGHT
-<Multi_key> <bar> <u> <r> <D> <l> : "╁"  U2541  # BOX DRAWINGS DOWN HEAVY AND UP HORIZONTAL LIGHT
-<Multi_key> <bar> <U> <r> <D> <l> : "╂"  U2542  # BOX DRAWINGS VERTICAL HEAVY AND HORIZONTAL LIGHT
-<Multi_key> <bar> <U> <r> <d> <L> : "╃"  U2543  # BOX DRAWINGS LEFT UP HEAVY AND RIGHT DOWN LIGHT
-<Multi_key> <bar> <U> <R> <d> <l> : "╄"  U2544  # BOX DRAWINGS RIGHT UP HEAVY AND LEFT DOWN LIGHT
-<Multi_key> <bar> <u> <r> <D> <L> : "╅"  U2545  # BOX DRAWINGS LEFT DOWN HEAVY AND RIGHT UP LIGHT
-<Multi_key> <bar> <u> <R> <D> <l> : "╆"  U2546  # BOX DRAWINGS RIGHT DOWN HEAVY AND LEFT UP LIGHT
-<Multi_key> <bar> <U> <R> <d> <L> : "╇"  U2547  # BOX DRAWINGS DOWN LIGHT AND UP HORIZONTAL HEAVY
-<Multi_key> <bar> <u> <R> <D> <L> : "╈"  U2548  # BOX DRAWINGS UP LIGHT AND DOWN HORIZONTAL HEAVY
-<Multi_key> <bar> <U> <r> <D> <L> : "╉"  U2549  # BOX DRAWINGS RIGHT LIGHT AND LEFT VERTICAL HEAVY
-<Multi_key> <bar> <U> <R> <D> <l> : "╊"  U254A  # BOX DRAWINGS LEFT LIGHT AND RIGHT VERTICAL HEAVY
-<Multi_key> <bar> <U> <R> <D> <L> : "╋"  U254B  # BOX DRAWINGS HEAVY VERTICAL AND HORIZONTAL
-<Multi_key> <bar> <space> <space> <space> <l> : "╴"  U2574  # BOX DRAWINGS LIGHT LEFT
-<Multi_key> <bar> <u> <space> <space> <space> : "╵"  U2575  # BOX DRAWINGS LIGHT UP
-<Multi_key> <bar> <space> <r> <space> <space> : "╶"  U2576  # BOX DRAWINGS LIGHT RIGHT
-<Multi_key> <bar> <space> <space> <d> <space> : "╷"  U2577  # BOX DRAWINGS LIGHT DOWN
-<Multi_key> <bar> <space> <space> <space> <L> : "╸"  U2578  # BOX DRAWINGS HEAVY LEFT
-<Multi_key> <bar> <U> <space> <space> <space> : "╹"  U2579  # BOX DRAWINGS HEAVY UP
-<Multi_key> <bar> <space> <R> <space> <space> : "╺"  U257A  # BOX DRAWINGS HEAVY RIGHT
-<Multi_key> <bar> <space> <space> <D> <space> : "╻"  U257B  # BOX DRAWINGS HEAVY DOWN
-<Multi_key> <bar> <space> <R> <space> <l> : "╼"  U257C  # BOX DRAWINGS LIGHT LEFT AND HEAVY RIGHT
-<Multi_key> <bar> <u> <space> <D> <space> : "╽"  U257D  # BOX DRAWINGS LIGHT UP AND HEAVY DOWN
-<Multi_key> <bar> <space> <r> <space> <L> : "╾"  U257E  # BOX DRAWINGS HEAVY LEFT AND LIGHT RIGHT
-<Multi_key> <bar> <U> <space> <d> <space> : "╿"  U257F  # BOX DRAWINGS HEAVY UP AND LIGHT DOWN
+<Multi_key> <bar> <8> <1> <Return>                         : "𜺨"  U1CEA8  # LEFT HALF UPPER ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <2> <Return>                         : "𜺫"  U1CEAB  # RIGHT HALF UPPER ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <1> <2> <Return>                     : "🮂"  U1FB82  # UPPER ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <3> <Return>                         : "𜴀"  U1CD00  # BLOCK OCTANT-3
+<Multi_key> <bar> <8> <1> <3> <Return>                     : "▘"  U2598  # QUADRANT UPPER LEFT
+<Multi_key> <bar> <8> <2> <3> <Return>                     : "𜴁"  U1CD01  # BLOCK OCTANT-23
+<Multi_key> <bar> <8> <1> <2> <3> <Return>                 : "𜴂"  U1CD02  # BLOCK OCTANT-123
+<Multi_key> <bar> <8> <4> <Return>                         : "𜴃"  U1CD03  # BLOCK OCTANT-4
+<Multi_key> <bar> <8> <1> <4> <Return>                     : "𜴄"  U1CD04  # BLOCK OCTANT-14
+<Multi_key> <bar> <8> <2> <4> <Return>                     : "▝"  U259D  # QUADRANT UPPER RIGHT
+<Multi_key> <bar> <8> <1> <2> <4> <Return>                 : "𜴅"  U1CD05  # BLOCK OCTANT-124
+<Multi_key> <bar> <8> <3> <4> <Return>                     : "𜴆"  U1CD06  # BLOCK OCTANT-34
+<Multi_key> <bar> <8> <1> <3> <4> <Return>                 : "𜴇"  U1CD07  # BLOCK OCTANT-134
+<Multi_key> <bar> <8> <2> <3> <4> <Return>                 : "𜴈"  U1CD08  # BLOCK OCTANT-234
+<Multi_key> <bar> <8> <1> <2> <3> <4> <Return>             : "▀"  U2580  # UPPER HALF BLOCK
+<Multi_key> <bar> <8> <5> <Return>                         : "𜴉"  U1CD09  # BLOCK OCTANT-5
+<Multi_key> <bar> <8> <1> <5> <Return>                     : "𜴊"  U1CD0A  # BLOCK OCTANT-15
+<Multi_key> <bar> <8> <2> <5> <Return>                     : "𜴋"  U1CD0B  # BLOCK OCTANT-25
+<Multi_key> <bar> <8> <1> <2> <5> <Return>                 : "𜴌"  U1CD0C  # BLOCK OCTANT-125
+<Multi_key> <bar> <8> <3> <5> <Return>                     : "🯦"  U1FBE6  # MIDDLE LEFT ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <1> <3> <5> <Return>                 : "𜴍"  U1CD0D  # BLOCK OCTANT-135
+<Multi_key> <bar> <8> <2> <3> <5> <Return>                 : "𜴎"  U1CD0E  # BLOCK OCTANT-235
+<Multi_key> <bar> <8> <1> <2> <3> <5> <Return>             : "𜴏"  U1CD0F  # BLOCK OCTANT-1235
+<Multi_key> <bar> <8> <4> <5> <Return>                     : "𜴐"  U1CD10  # BLOCK OCTANT-45
+<Multi_key> <bar> <8> <1> <4> <5> <Return>                 : "𜴑"  U1CD11  # BLOCK OCTANT-145
+<Multi_key> <bar> <8> <2> <4> <5> <Return>                 : "𜴒"  U1CD12  # BLOCK OCTANT-245
+<Multi_key> <bar> <8> <1> <2> <4> <5> <Return>             : "𜴓"  U1CD13  # BLOCK OCTANT-1245
+<Multi_key> <bar> <8> <3> <4> <5> <Return>                 : "𜴔"  U1CD14  # BLOCK OCTANT-345
+<Multi_key> <bar> <8> <1> <3> <4> <5> <Return>             : "𜴕"  U1CD15  # BLOCK OCTANT-1345
+<Multi_key> <bar> <8> <2> <3> <4> <5> <Return>             : "𜴖"  U1CD16  # BLOCK OCTANT-2345
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <Return>         : "𜴗"  U1CD17  # BLOCK OCTANT-12345
+<Multi_key> <bar> <8> <6> <Return>                         : "𜴘"  U1CD18  # BLOCK OCTANT-6
+<Multi_key> <bar> <8> <1> <6> <Return>                     : "𜴙"  U1CD19  # BLOCK OCTANT-16
+<Multi_key> <bar> <8> <2> <6> <Return>                     : "𜴚"  U1CD1A  # BLOCK OCTANT-26
+<Multi_key> <bar> <8> <1> <2> <6> <Return>                 : "𜴛"  U1CD1B  # BLOCK OCTANT-126
+<Multi_key> <bar> <8> <3> <6> <Return>                     : "𜴜"  U1CD1C  # BLOCK OCTANT-36
+<Multi_key> <bar> <8> <1> <3> <6> <Return>                 : "𜴝"  U1CD1D  # BLOCK OCTANT-136
+<Multi_key> <bar> <8> <2> <3> <6> <Return>                 : "𜴞"  U1CD1E  # BLOCK OCTANT-236
+<Multi_key> <bar> <8> <1> <2> <3> <6> <Return>             : "𜴟"  U1CD1F  # BLOCK OCTANT-1236
+<Multi_key> <bar> <8> <4> <6> <Return>                     : "🯧"  U1FBE7  # MIDDLE RIGHT ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <1> <4> <6> <Return>                 : "𜴠"  U1CD20  # BLOCK OCTANT-146
+<Multi_key> <bar> <8> <2> <4> <6> <Return>                 : "𜴡"  U1CD21  # BLOCK OCTANT-246
+<Multi_key> <bar> <8> <1> <2> <4> <6> <Return>             : "𜴢"  U1CD22  # BLOCK OCTANT-1246
+<Multi_key> <bar> <8> <3> <4> <6> <Return>                 : "𜴣"  U1CD23  # BLOCK OCTANT-346
+<Multi_key> <bar> <8> <1> <3> <4> <6> <Return>             : "𜴤"  U1CD24  # BLOCK OCTANT-1346
+<Multi_key> <bar> <8> <2> <3> <4> <6> <Return>             : "𜴥"  U1CD25  # BLOCK OCTANT-2346
+<Multi_key> <bar> <8> <1> <2> <3> <4> <6> <Return>         : "𜴦"  U1CD26  # BLOCK OCTANT-12346
+<Multi_key> <bar> <8> <5> <6> <Return>                     : "𜴧"  U1CD27  # BLOCK OCTANT-56
+<Multi_key> <bar> <8> <1> <5> <6> <Return>                 : "𜴨"  U1CD28  # BLOCK OCTANT-156
+<Multi_key> <bar> <8> <2> <5> <6> <Return>                 : "𜴩"  U1CD29  # BLOCK OCTANT-256
+<Multi_key> <bar> <8> <1> <2> <5> <6> <Return>             : "𜴪"  U1CD2A  # BLOCK OCTANT-1256
+<Multi_key> <bar> <8> <3> <5> <6> <Return>                 : "𜴫"  U1CD2B  # BLOCK OCTANT-356
+<Multi_key> <bar> <8> <1> <3> <5> <6> <Return>             : "𜴬"  U1CD2C  # BLOCK OCTANT-1356
+<Multi_key> <bar> <8> <2> <3> <5> <6> <Return>             : "𜴭"  U1CD2D  # BLOCK OCTANT-2356
+<Multi_key> <bar> <8> <1> <2> <3> <5> <6> <Return>         : "𜴮"  U1CD2E  # BLOCK OCTANT-12356
+<Multi_key> <bar> <8> <4> <5> <6> <Return>                 : "𜴯"  U1CD2F  # BLOCK OCTANT-456
+<Multi_key> <bar> <8> <1> <4> <5> <6> <Return>             : "𜴰"  U1CD30  # BLOCK OCTANT-1456
+<Multi_key> <bar> <8> <2> <4> <5> <6> <Return>             : "𜴱"  U1CD31  # BLOCK OCTANT-2456
+<Multi_key> <bar> <8> <1> <2> <4> <5> <6> <Return>         : "𜴲"  U1CD32  # BLOCK OCTANT-12456
+<Multi_key> <bar> <8> <3> <4> <5> <6> <Return>             : "𜴳"  U1CD33  # BLOCK OCTANT-3456
+<Multi_key> <bar> <8> <1> <3> <4> <5> <6> <Return>         : "𜴴"  U1CD34  # BLOCK OCTANT-13456
+<Multi_key> <bar> <8> <2> <3> <4> <5> <6> <Return>         : "𜴵"  U1CD35  # BLOCK OCTANT-23456
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <6> <Return>     : "🮅"  U1FB85  # UPPER THREE QUARTERS BLOCK
+<Multi_key> <bar> <8> <7> <Return>                         : "𜺣"  U1CEA3  # LEFT HALF LOWER ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <1> <7> <Return>                     : "𜴶"  U1CD36  # BLOCK OCTANT-17
+<Multi_key> <bar> <8> <2> <7> <Return>                     : "𜴷"  U1CD37  # BLOCK OCTANT-27
+<Multi_key> <bar> <8> <1> <2> <7> <Return>                 : "𜴸"  U1CD38  # BLOCK OCTANT-127
+<Multi_key> <bar> <8> <3> <7> <Return>                     : "𜴹"  U1CD39  # BLOCK OCTANT-37
+<Multi_key> <bar> <8> <1> <3> <7> <Return>                 : "𜴺"  U1CD3A  # BLOCK OCTANT-137
+<Multi_key> <bar> <8> <2> <3> <7> <Return>                 : "𜴻"  U1CD3B  # BLOCK OCTANT-237
+<Multi_key> <bar> <8> <1> <2> <3> <7> <Return>             : "𜴼"  U1CD3C  # BLOCK OCTANT-1237
+<Multi_key> <bar> <8> <4> <7> <Return>                     : "𜴽"  U1CD3D  # BLOCK OCTANT-47
+<Multi_key> <bar> <8> <1> <4> <7> <Return>                 : "𜴾"  U1CD3E  # BLOCK OCTANT-147
+<Multi_key> <bar> <8> <2> <4> <7> <Return>                 : "𜴿"  U1CD3F  # BLOCK OCTANT-247
+<Multi_key> <bar> <8> <1> <2> <4> <7> <Return>             : "𜵀"  U1CD40  # BLOCK OCTANT-1247
+<Multi_key> <bar> <8> <3> <4> <7> <Return>                 : "𜵁"  U1CD41  # BLOCK OCTANT-347
+<Multi_key> <bar> <8> <1> <3> <4> <7> <Return>             : "𜵂"  U1CD42  # BLOCK OCTANT-1347
+<Multi_key> <bar> <8> <2> <3> <4> <7> <Return>             : "𜵃"  U1CD43  # BLOCK OCTANT-2347
+<Multi_key> <bar> <8> <1> <2> <3> <4> <7> <Return>         : "𜵄"  U1CD44  # BLOCK OCTANT-12347
+<Multi_key> <bar> <8> <5> <7> <Return>                     : "▖"   U2596  # QUADRANT LOWER LEFT
+<Multi_key> <bar> <8> <1> <5> <7> <Return>                 : "𜵅"  U1CD45  # BLOCK OCTANT-157
+<Multi_key> <bar> <8> <2> <5> <7> <Return>                 : "𜵆"  U1CD46  # BLOCK OCTANT-257
+<Multi_key> <bar> <8> <1> <2> <5> <7> <Return>             : "𜵇"  U1CD47  # BLOCK OCTANT-1257
+<Multi_key> <bar> <8> <3> <5> <7> <Return>                 : "𜵈"  U1CD48  # BLOCK OCTANT-357
+<Multi_key> <bar> <8> <1> <3> <5> <7> <Return>             : "▌"  U258C  # LEFT HALF BLOCK
+<Multi_key> <bar> <8> <2> <3> <5> <7> <Return>             : "𜵉"  U1CD49  # BLOCK OCTANT-2357
+<Multi_key> <bar> <8> <1> <2> <3> <5> <7> <Return>         : "𜵊"  U1CD4A  # BLOCK OCTANT-12357
+<Multi_key> <bar> <8> <4> <5> <7> <Return>                 : "𜵋"  U1CD4B  # BLOCK OCTANT-457
+<Multi_key> <bar> <8> <1> <4> <5> <7> <Return>             : "𜵌"  U1CD4C  # BLOCK OCTANT-1457
+<Multi_key> <bar> <8> <2> <4> <5> <7> <Return>             : "▞"  U259E  # QUADRANT UPPER RIGHT AND LOWER LEFT
+<Multi_key> <bar> <8> <1> <2> <4> <5> <7> <Return>         : "𜵍"  U1CD4D  # BLOCK OCTANT-12457
+<Multi_key> <bar> <8> <3> <4> <5> <7> <Return>             : "𜵎"  U1CD4E  # BLOCK OCTANT-3457
+<Multi_key> <bar> <8> <1> <3> <4> <5> <7> <Return>         : "𜵏"  U1CD4F  # BLOCK OCTANT-13457
+<Multi_key> <bar> <8> <2> <3> <4> <5> <7> <Return>         : "𜵐"  U1CD50  # BLOCK OCTANT-23457
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <7> <Return>     : "▛"  U259B  # QUADRANT UPPER LEFT AND UPPER RIGHT AND LOWER LEFT
+<Multi_key> <bar> <8> <6> <7> <Return>                     : "𜵑"  U1CD51  # BLOCK OCTANT-67
+<Multi_key> <bar> <8> <1> <6> <7> <Return>                 : "𜵒"  U1CD52  # BLOCK OCTANT-167
+<Multi_key> <bar> <8> <2> <6> <7> <Return>                 : "𜵓"  U1CD53  # BLOCK OCTANT-267
+<Multi_key> <bar> <8> <1> <2> <6> <7> <Return>             : "𜵔"  U1CD54  # BLOCK OCTANT-1267
+<Multi_key> <bar> <8> <3> <6> <7> <Return>                 : "𜵕"  U1CD55  # BLOCK OCTANT-367
+<Multi_key> <bar> <8> <1> <3> <6> <7> <Return>             : "𜵖"  U1CD56  # BLOCK OCTANT-1367
+<Multi_key> <bar> <8> <2> <3> <6> <7> <Return>             : "𜵗"  U1CD57  # BLOCK OCTANT-2367
+<Multi_key> <bar> <8> <1> <2> <3> <6> <7> <Return>         : "𜵘"  U1CD58  # BLOCK OCTANT-12367
+<Multi_key> <bar> <8> <4> <6> <7> <Return>                 : "𜵙"  U1CD59  # BLOCK OCTANT-467
+<Multi_key> <bar> <8> <1> <4> <6> <7> <Return>             : "𜵚"  U1CD5A  # BLOCK OCTANT-1467
+<Multi_key> <bar> <8> <2> <4> <6> <7> <Return>             : "𜵛"  U1CD5B  # BLOCK OCTANT-2467
+<Multi_key> <bar> <8> <1> <2> <4> <6> <7> <Return>         : "𜵜"  U1CD5C  # BLOCK OCTANT-12467
+<Multi_key> <bar> <8> <3> <4> <6> <7> <Return>             : "𜵝"  U1CD5D  # BLOCK OCTANT-3467
+<Multi_key> <bar> <8> <1> <3> <4> <6> <7> <Return>         : "𜵞"  U1CD5E  # BLOCK OCTANT-13467
+<Multi_key> <bar> <8> <2> <3> <4> <6> <7> <Return>         : "𜵟"  U1CD5F  # BLOCK OCTANT-23467
+<Multi_key> <bar> <8> <1> <2> <3> <4> <6> <7> <Return>     : "𜵠"  U1CD60  # BLOCK OCTANT-123467
+<Multi_key> <bar> <8> <5> <6> <7> <Return>                 : "𜵡"  U1CD61  # BLOCK OCTANT-567
+<Multi_key> <bar> <8> <1> <5> <6> <7> <Return>             : "𜵢"  U1CD62  # BLOCK OCTANT-1567
+<Multi_key> <bar> <8> <2> <5> <6> <7> <Return>             : "𜵣"  U1CD63  # BLOCK OCTANT-2567
+<Multi_key> <bar> <8> <1> <2> <5> <6> <7> <Return>         : "𜵤"  U1CD64  # BLOCK OCTANT-12567
+<Multi_key> <bar> <8> <3> <5> <6> <7> <Return>             : "𜵥"  U1CD65  # BLOCK OCTANT-3567
+<Multi_key> <bar> <8> <1> <3> <5> <6> <7> <Return>         : "𜵦"  U1CD66  # BLOCK OCTANT-13567
+<Multi_key> <bar> <8> <2> <3> <5> <6> <7> <Return>         : "𜵧"  U1CD67  # BLOCK OCTANT-23567
+<Multi_key> <bar> <8> <1> <2> <3> <5> <6> <7> <Return>     : "𜵨"  U1CD68  # BLOCK OCTANT-123567
+<Multi_key> <bar> <8> <4> <5> <6> <7> <Return>             : "𜵩"  U1CD69  # BLOCK OCTANT-4567
+<Multi_key> <bar> <8> <1> <4> <5> <6> <7> <Return>         : "𜵪"  U1CD6A  # BLOCK OCTANT-14567
+<Multi_key> <bar> <8> <2> <4> <5> <6> <7> <Return>         : "𜵫"  U1CD6B  # BLOCK OCTANT-24567
+<Multi_key> <bar> <8> <1> <2> <4> <5> <6> <7> <Return>     : "𜵬"  U1CD6C  # BLOCK OCTANT-124567
+<Multi_key> <bar> <8> <3> <4> <5> <6> <7> <Return>         : "𜵭"  U1CD6D  # BLOCK OCTANT-34567
+<Multi_key> <bar> <8> <1> <3> <4> <5> <6> <7> <Return>     : "𜵮"  U1CD6E  # BLOCK OCTANT-134567
+<Multi_key> <bar> <8> <2> <3> <4> <5> <6> <7> <Return>     : "𜵯"  U1CD6F  # BLOCK OCTANT-234567
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <6> <7> <Return> : "𜵰"  U1CD70  # BLOCK OCTANT-1234567
+<Multi_key> <bar> <8> <8>                                  : "𜺠"  U1CEA0  # RIGHT HALF LOWER ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <1> <8>                              : "𜵱"  U1CD71  # BLOCK OCTANT-18
+<Multi_key> <bar> <8> <2> <8>                              : "𜵲"  U1CD72  # BLOCK OCTANT-28
+<Multi_key> <bar> <8> <1> <2> <8>                          : "𜵳"  U1CD73  # BLOCK OCTANT-128
+<Multi_key> <bar> <8> <3> <8>                              : "𜵴"  U1CD74  # BLOCK OCTANT-38
+<Multi_key> <bar> <8> <1> <3> <8>                          : "𜵵"  U1CD75  # BLOCK OCTANT-138
+<Multi_key> <bar> <8> <2> <3> <8>                          : "𜵶"  U1CD76  # BLOCK OCTANT-238
+<Multi_key> <bar> <8> <1> <2> <3> <8>                      : "𜵷"  U1CD77  # BLOCK OCTANT-1238
+<Multi_key> <bar> <8> <4> <8>                              : "𜵸"  U1CD78  # BLOCK OCTANT-48
+<Multi_key> <bar> <8> <1> <4> <8>                          : "𜵹"  U1CD79  # BLOCK OCTANT-148
+<Multi_key> <bar> <8> <2> <4> <8>                          : "𜵺"  U1CD7A  # BLOCK OCTANT-248
+<Multi_key> <bar> <8> <1> <2> <4> <8>                      : "𜵻"  U1CD7B  # BLOCK OCTANT-1248
+<Multi_key> <bar> <8> <3> <4> <8>                          : "𜵼"  U1CD7C  # BLOCK OCTANT-348
+<Multi_key> <bar> <8> <1> <3> <4> <8>                      : "𜵽"  U1CD7D  # BLOCK OCTANT-1348
+<Multi_key> <bar> <8> <2> <3> <4> <8>                      : "𜵾"  U1CD7E  # BLOCK OCTANT-2348
+<Multi_key> <bar> <8> <1> <2> <3> <4> <8>                  : "𜵿"  U1CD7F  # BLOCK OCTANT-12348
+<Multi_key> <bar> <8> <5> <8>                              : "𜶀"  U1CD80  # BLOCK OCTANT-58
+<Multi_key> <bar> <8> <1> <5> <8>                          : "𜶁"  U1CD81  # BLOCK OCTANT-158
+<Multi_key> <bar> <8> <2> <5> <8>                          : "𜶂"  U1CD82  # BLOCK OCTANT-258
+<Multi_key> <bar> <8> <1> <2> <5> <8>                      : "𜶃"  U1CD83  # BLOCK OCTANT-1258
+<Multi_key> <bar> <8> <3> <5> <8>                          : "𜶄"  U1CD84  # BLOCK OCTANT-358
+<Multi_key> <bar> <8> <1> <3> <5> <8>                      : "𜶅"  U1CD85  # BLOCK OCTANT-1358
+<Multi_key> <bar> <8> <2> <3> <5> <8>                      : "𜶆"  U1CD86  # BLOCK OCTANT-2358
+<Multi_key> <bar> <8> <1> <2> <3> <5> <8>                  : "𜶇"  U1CD87  # BLOCK OCTANT-12358
+<Multi_key> <bar> <8> <4> <5> <8>                          : "𜶈"  U1CD88  # BLOCK OCTANT-458
+<Multi_key> <bar> <8> <1> <4> <5> <8>                      : "𜶉"  U1CD89  # BLOCK OCTANT-1458
+<Multi_key> <bar> <8> <2> <4> <5> <8>                      : "𜶊"  U1CD8A  # BLOCK OCTANT-2458
+<Multi_key> <bar> <8> <1> <2> <4> <5> <8>                  : "𜶋"  U1CD8B  # BLOCK OCTANT-12458
+<Multi_key> <bar> <8> <3> <4> <5> <8>                      : "𜶌"  U1CD8C  # BLOCK OCTANT-3458
+<Multi_key> <bar> <8> <1> <3> <4> <5> <8>                  : "𜶍"  U1CD8D  # BLOCK OCTANT-13458
+<Multi_key> <bar> <8> <2> <3> <4> <5> <8>                  : "𜶎"  U1CD8E  # BLOCK OCTANT-23458
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <8>              : "𜶏"  U1CD8F  # BLOCK OCTANT-123458
+<Multi_key> <bar> <8> <6> <8>                              : "▗"  U2597  # QUADRANT LOWER RIGHT
+<Multi_key> <bar> <8> <1> <6> <8>                          : "𜶐"  U1CD90  # BLOCK OCTANT-168
+<Multi_key> <bar> <8> <2> <6> <8>                          : "𜶑"  U1CD91  # BLOCK OCTANT-268
+<Multi_key> <bar> <8> <1> <2> <6> <8>                      : "𜶒"  U1CD92  # BLOCK OCTANT-1268
+<Multi_key> <bar> <8> <3> <6> <8>                          : "𜶓"  U1CD93  # BLOCK OCTANT-368
+<Multi_key> <bar> <8> <1> <3> <6> <8>                      : "▚"  U259A  # QUADRANT UPPER LEFT AND LOWER RIGHT
+<Multi_key> <bar> <8> <2> <3> <6> <8>                      : "𜶔"  U1CD94  # BLOCK OCTANT-2368
+<Multi_key> <bar> <8> <1> <2> <3> <6> <8>                  : "𜶕"  U1CD95  # BLOCK OCTANT-12368
+<Multi_key> <bar> <8> <4> <6> <8>                          : "𜶖"  U1CD96  # BLOCK OCTANT-468
+<Multi_key> <bar> <8> <1> <4> <6> <8>                      : "𜶗"  U1CD97  # BLOCK OCTANT-1468
+<Multi_key> <bar> <8> <2> <4> <6> <8>                      : "▐"  U2590  # RIGHT HALF BLOCK
+<Multi_key> <bar> <8> <1> <2> <4> <6> <8>                  : "𜶘"  U1CD98  # BLOCK OCTANT-12468
+<Multi_key> <bar> <8> <3> <4> <6> <8>                      : "𜶙"  U1CD99  # BLOCK OCTANT-3468
+<Multi_key> <bar> <8> <1> <3> <4> <6> <8>                  : "𜶚"  U1CD9A  # BLOCK OCTANT-13468
+<Multi_key> <bar> <8> <2> <3> <4> <6> <8>                  : "𜶛"  U1CD9B  # BLOCK OCTANT-23468
+<Multi_key> <bar> <8> <1> <2> <3> <4> <6> <8>              : "▜"  U259C  # QUADRANT UPPER LEFT AND UPPER RIGHT AND LOWER RIGHT
+<Multi_key> <bar> <8> <5> <6> <8>                          : "𜶜"  U1CD9C  # BLOCK OCTANT-568
+<Multi_key> <bar> <8> <1> <5> <6> <8>                      : "𜶝"  U1CD9D  # BLOCK OCTANT-1568
+<Multi_key> <bar> <8> <2> <5> <6> <8>                      : "𜶞"  U1CD9E  # BLOCK OCTANT-2568
+<Multi_key> <bar> <8> <1> <2> <5> <6> <8>                  : "𜶟"  U1CD9F  # BLOCK OCTANT-12568
+<Multi_key> <bar> <8> <3> <5> <6> <8>                      : "𜶠"  U1CDA0  # BLOCK OCTANT-3568
+<Multi_key> <bar> <8> <1> <3> <5> <6> <8>                  : "𜶡"  U1CDA1  # BLOCK OCTANT-13568
+<Multi_key> <bar> <8> <2> <3> <5> <6> <8>                  : "𜶢"  U1CDA2  # BLOCK OCTANT-23568
+<Multi_key> <bar> <8> <1> <2> <3> <5> <6> <8>              : "𜶣"  U1CDA3  # BLOCK OCTANT-123568
+<Multi_key> <bar> <8> <4> <5> <6> <8>                      : "𜶤"  U1CDA4  # BLOCK OCTANT-4568
+<Multi_key> <bar> <8> <1> <4> <5> <6> <8>                  : "𜶥"  U1CDA5  # BLOCK OCTANT-14568
+<Multi_key> <bar> <8> <2> <4> <5> <6> <8>                  : "𜶦"  U1CDA6  # BLOCK OCTANT-24568
+<Multi_key> <bar> <8> <1> <2> <4> <5> <6> <8>              : "𜶧"  U1CDA7  # BLOCK OCTANT-124568
+<Multi_key> <bar> <8> <3> <4> <5> <6> <8>                  : "𜶨"  U1CDA8  # BLOCK OCTANT-34568
+<Multi_key> <bar> <8> <1> <3> <4> <5> <6> <8>              : "𜶩"  U1CDA9  # BLOCK OCTANT-134568
+<Multi_key> <bar> <8> <2> <3> <4> <5> <6> <8>              : "𜶪"  U1CDAA  # BLOCK OCTANT-234568
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <6> <8>          : "𜶫"  U1CDAB  # BLOCK OCTANT-1234568
+<Multi_key> <bar> <8> <7> <8>                              : "▂"  U2582  # LOWER ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <1> <7> <8>                          : "𜶬"  U1CDAC  # BLOCK OCTANT-178
+<Multi_key> <bar> <8> <2> <7> <8>                          : "𜶭"  U1CDAD  # BLOCK OCTANT-278
+<Multi_key> <bar> <8> <1> <2> <7> <8>                      : "𜶮"  U1CDAE  # BLOCK OCTANT-1278
+<Multi_key> <bar> <8> <3> <7> <8>                          : "𜶯"  U1CDAF  # BLOCK OCTANT-378
+<Multi_key> <bar> <8> <1> <3> <7> <8>                      : "𜶰"  U1CDB0  # BLOCK OCTANT-1378
+<Multi_key> <bar> <8> <2> <3> <7> <8>                      : "𜶱"  U1CDB1  # BLOCK OCTANT-2378
+<Multi_key> <bar> <8> <1> <2> <3> <7> <8>                  : "𜶲"  U1CDB2  # BLOCK OCTANT-12378
+<Multi_key> <bar> <8> <4> <7> <8>                          : "𜶳"  U1CDB3  # BLOCK OCTANT-478
+<Multi_key> <bar> <8> <1> <4> <7> <8>                      : "𜶴"  U1CDB4  # BLOCK OCTANT-1478
+<Multi_key> <bar> <8> <2> <4> <7> <8>                      : "𜶵"  U1CDB5  # BLOCK OCTANT-2478
+<Multi_key> <bar> <8> <1> <2> <4> <7> <8>                  : "𜶶"  U1CDB6  # BLOCK OCTANT-12478
+<Multi_key> <bar> <8> <3> <4> <7> <8>                      : "𜶷"  U1CDB7  # BLOCK OCTANT-3478
+<Multi_key> <bar> <8> <1> <3> <4> <7> <8>                  : "𜶸"  U1CDB8  # BLOCK OCTANT-13478
+<Multi_key> <bar> <8> <2> <3> <4> <7> <8>                  : "𜶹"  U1CDB9  # BLOCK OCTANT-23478
+<Multi_key> <bar> <8> <1> <2> <3> <4> <7> <8>              : "𜶺"  U1CDBA  # BLOCK OCTANT-123478
+<Multi_key> <bar> <8> <5> <7> <8>                          : "𜶻"  U1CDBB  # BLOCK OCTANT-578
+<Multi_key> <bar> <8> <1> <5> <7> <8>                      : "𜶼"  U1CDBC  # BLOCK OCTANT-1578
+<Multi_key> <bar> <8> <2> <5> <7> <8>                      : "𜶽"  U1CDBD  # BLOCK OCTANT-2578
+<Multi_key> <bar> <8> <1> <2> <5> <7> <8>                  : "𜶾"  U1CDBE  # BLOCK OCTANT-12578
+<Multi_key> <bar> <8> <3> <5> <7> <8>                      : "𜶿"  U1CDBF  # BLOCK OCTANT-3578
+<Multi_key> <bar> <8> <1> <3> <5> <7> <8>                  : "𜷀"  U1CDC0  # BLOCK OCTANT-13578
+<Multi_key> <bar> <8> <2> <3> <5> <7> <8>                  : "𜷁"  U1CDC1  # BLOCK OCTANT-23578
+<Multi_key> <bar> <8> <1> <2> <3> <5> <7> <8>              : "𜷂"  U1CDC2  # BLOCK OCTANT-123578
+<Multi_key> <bar> <8> <4> <5> <7> <8>                      : "𜷃"  U1CDC3  # BLOCK OCTANT-4578
+<Multi_key> <bar> <8> <1> <4> <5> <7> <8>                  : "𜷄"  U1CDC4  # BLOCK OCTANT-14578
+<Multi_key> <bar> <8> <2> <4> <5> <7> <8>                  : "𜷅"  U1CDC5  # BLOCK OCTANT-24578
+<Multi_key> <bar> <8> <1> <2> <4> <5> <7> <8>              : "𜷆"  U1CDC6  # BLOCK OCTANT-124578
+<Multi_key> <bar> <8> <3> <4> <5> <7> <8>                  : "𜷇"  U1CDC7  # BLOCK OCTANT-34578
+<Multi_key> <bar> <8> <1> <3> <4> <5> <7> <8>              : "𜷈"  U1CDC8  # BLOCK OCTANT-134578
+<Multi_key> <bar> <8> <2> <3> <4> <5> <7> <8>              : "𜷉"  U1CDC9  # BLOCK OCTANT-234578
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <7> <8>          : "𜷊"  U1CDCA  # BLOCK OCTANT-1234578
+<Multi_key> <bar> <8> <6> <7> <8>                          : "𜷋"  U1CDCB  # BLOCK OCTANT-678
+<Multi_key> <bar> <8> <1> <6> <7> <8>                      : "𜷌"  U1CDCC  # BLOCK OCTANT-1678
+<Multi_key> <bar> <8> <2> <6> <7> <8>                      : "𜷍"  U1CDCD  # BLOCK OCTANT-2678
+<Multi_key> <bar> <8> <1> <2> <6> <7> <8>                  : "𜷎"  U1CDCE  # BLOCK OCTANT-12678
+<Multi_key> <bar> <8> <3> <6> <7> <8>                      : "𜷏"  U1CDCF  # BLOCK OCTANT-3678
+<Multi_key> <bar> <8> <1> <3> <6> <7> <8>                  : "𜷐"  U1CDD0  # BLOCK OCTANT-13678
+<Multi_key> <bar> <8> <2> <3> <6> <7> <8>                  : "𜷑"  U1CDD1  # BLOCK OCTANT-23678
+<Multi_key> <bar> <8> <1> <2> <3> <6> <7> <8>              : "𜷒"  U1CDD2  # BLOCK OCTANT-123678
+<Multi_key> <bar> <8> <4> <6> <7> <8>                      : "𜷓"  U1CDD3  # BLOCK OCTANT-4678
+<Multi_key> <bar> <8> <1> <4> <6> <7> <8>                  : "𜷔"  U1CDD4  # BLOCK OCTANT-14678
+<Multi_key> <bar> <8> <2> <4> <6> <7> <8>                  : "𜷕"  U1CDD5  # BLOCK OCTANT-24678
+<Multi_key> <bar> <8> <1> <2> <4> <6> <7> <8>              : "𜷖"  U1CDD6  # BLOCK OCTANT-124678
+<Multi_key> <bar> <8> <3> <4> <6> <7> <8>                  : "𜷗"  U1CDD7  # BLOCK OCTANT-34678
+<Multi_key> <bar> <8> <1> <3> <4> <6> <7> <8>              : "𜷘"  U1CDD8  # BLOCK OCTANT-134678
+<Multi_key> <bar> <8> <2> <3> <4> <6> <7> <8>              : "𜷙"  U1CDD9  # BLOCK OCTANT-234678
+<Multi_key> <bar> <8> <1> <2> <3> <4> <6> <7> <8>          : "𜷚"  U1CDDA  # BLOCK OCTANT-1234678
+<Multi_key> <bar> <8> <5> <6> <7> <8>                      : "▄"  U2584  # LOWER HALF BLOCK
+<Multi_key> <bar> <8> <1> <5> <6> <7> <8>                  : "𜷛"  U1CDDB  # BLOCK OCTANT-15678
+<Multi_key> <bar> <8> <2> <5> <6> <7> <8>                  : "𜷜"  U1CDDC  # BLOCK OCTANT-25678
+<Multi_key> <bar> <8> <1> <2> <5> <6> <7> <8>              : "𜷝"  U1CDDD  # BLOCK OCTANT-125678
+<Multi_key> <bar> <8> <3> <5> <6> <7> <8>                  : "𜷞"  U1CDDE  # BLOCK OCTANT-35678
+<Multi_key> <bar> <8> <1> <3> <5> <6> <7> <8>              : "▙"  U2599  # QUADRANT UPPER LEFT AND LOWER LEFT AND LOWER RIGHT
+<Multi_key> <bar> <8> <2> <3> <5> <6> <7> <8>              : "𜷟"  U1CDDF  # BLOCK OCTANT-235678
+<Multi_key> <bar> <8> <1> <2> <3> <5> <6> <7> <8>          : "𜷠"  U1CDE0  # BLOCK OCTANT-1235678
+<Multi_key> <bar> <8> <4> <5> <6> <7> <8>                  : "𜷡"  U1CDE1  # BLOCK OCTANT-45678
+<Multi_key> <bar> <8> <1> <4> <5> <6> <7> <8>              : "𜷢"  U1CDE2  # BLOCK OCTANT-145678
+<Multi_key> <bar> <8> <2> <4> <5> <6> <7> <8>              : "▟"  U259F  # QUADRANT UPPER RIGHT AND LOWER LEFT AND LOWER RIGHT
+<Multi_key> <bar> <8> <1> <2> <4> <5> <6> <7> <8>          : "𜷣"  U1CDE3  # BLOCK OCTANT-1245678
+<Multi_key> <bar> <8> <3> <4> <5> <6> <7> <8>              : "▆"  U2586  # LOWER THREE QUARTERS BLOCK
+<Multi_key> <bar> <8> <1> <3> <4> <5> <6> <7> <8>          : "𜷤"  U1CDE4  # BLOCK OCTANT-1345678
+<Multi_key> <bar> <8> <2> <3> <4> <5> <6> <7> <8>          : "𜷥"  U1CDE5  # BLOCK OCTANT-2345678
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <6> <7> <8>      : "█"  U2588  # FULL BLOCK
 
 #########
 # Music #
