@@ -12716,9 +12716,7 @@ include "%L"
 # Technical symbols #
 #####################
 
-# Computer keys and icons
-
-# (by key)
+# computer keys (by key)
 
 <Multi_key> <backslash> <Up>                    : "↑"  U2191  # UPWARDS ARROW
 <Multi_key> <backslash> <Down>                  : "↓"  U2193  # DOWNWARDS ARROW
@@ -12737,14 +12735,14 @@ include "%L"
 <Multi_key> <backslash> <Break>                 : "⎊"  U238A  # CIRCLED TRIANGLE DOWN
 <Multi_key> <backslash> <Pause>                 : "⎉"  U2389  # CIRCLED HORIZONTAL BAR WITH NOTCH
 
-# (by name)
+# ... (by name)
 
 <Multi_key> <backslash> <c> <t> <r> <l>         : "⎈"  U2388  # HELM SYMBOL (CONTROL)
 <Multi_key> <backslash> <s> <h> <i> <f> <t>     : "⇧"  U21E7  # UPWARDS WHITE ARROW (SHIFT)
 <Multi_key> <backslash> <a> <l> <t>             : "⎇"  U2387  # ALTERNATIVE KEY SYMBOL
 <Multi_key> <backslash> <o> <p> <t>             : "⌥"  U2325  # OPTION KEY
 <Multi_key> <backslash> <c> <m> <d>             : "⌘"  U2318  # PLACE OF INTEREST SIGN (COMMAND)
-<Multi_key> <backslash> <w> <i> <n>             : "❖"  U2756  # BLACK DIAMOND MINUS WHITE X (WINDOWS)
+<Multi_key> <backslash> <w> <i> <n> <Return>    : "❖"  U2756  # BLACK DIAMOND MINUS WHITE X (WINDOWS)
 <Multi_key> <backslash> <m> <e> <t> <a>         : "◆"  U25C6  # BLACK DIAMOND (META)
 <Multi_key> <backslash> <h> <y> <p> <e> <r>     : "✦"  U2726  # BLACK FOUR POINTED STAR (HYPER)
 <Multi_key> <backslash> <c> <o> <m> <p>         : "⎄"  U2384  # COMPOSITION SYMBOL
@@ -12777,20 +12775,48 @@ include "%L"
 
 <Multi_key> <backslash> <p> <o> <w> <e> <r>     : "⏻"  U23FB  # POWER SYMBOL
 <Multi_key> <backslash> <o> <n> <o> <f> <f>     : "⏼"  U23FC  # POWER ON-OFF SYMBOL
+<Multi_key> <backslash> <o> <n> <Return>        : "⏽"  U23FD  # POWER ON SYMBOL
 <Multi_key> <backslash> <s> <l> <e> <e> <p>     : "⏾"  U23FE  # POWER SLEEP SYMBOL
+<Multi_key> <backslash> <l> <o> <u> <d>         : "🕪"  U1F56A  # RIGHT SPEAKER WITH THREE SOUND WAVES
+<Multi_key> <backslash> <q> <u> <i> <e> <t>     : "🕩"  U1F569  # RIGHT SPEAKER WITH ONE SOUND WAVE
 
 <Multi_key> <backslash> <p> <r> <t> <s> <c>     : "⎙"  U2399  # PRINT SCREEN SYMBOL
-<Multi_key> <backslash> <p> <r> <i> <n> <t>     : "⎙"  U2399  # PRINT SCREEN SYMBOL
 <Multi_key> <backslash> <c> <l> <e> <a> <r>     : "⎚"  U239A  # CLEAR SCREEN SYMBOL
 <Multi_key> <backslash> <p> <r> <e> <v>         : "⎗"  U2397  # PREVIOUS PAGE
 <Multi_key> <backslash> <n> <e> <x> <t>         : "⎘"  U2398  # NEXT PAGE
 
+# software
+
 <Multi_key> <backslash> <s> <w> <i> <t> <c> <h> : "⧉"  U29C9  # TWO JOINED SQUARES (TASK SWITCHER)
+<Multi_key> <backslash> <w> <i> <n> <d> <o> <w> : "🗔"  U1F5D4  # DESKTOP WINDOW
+<Multi_key> <backslash> <m> <i> <n>             : "🗕"  U1F5D5  # MINIMIZE
+<Multi_key> <backslash> <m> <a> <x>             : "🗖"  U1F5D6  # MAXIMIZE
+<Multi_key> <backslash> <r> <e> <s> <t> <o> <r> : "🗗"  U1F5D7  # OVERLAP (RESTORE)
+<Multi_key> <backslash> <c> <l> <o> <s> <e>     : "🗙"  U1F5D9  # CANCELLATION X
+<Multi_key> <backslash> <b> <i> <g>             : "🗚"  U1F5DA  # INCREASE FONT SIZE SYMBOL
+<Multi_key> <backslash> <s> <m> <a> <l> <l>     : "🗛"  U1F5DB  # DECREASE FONT SIZE SYMBOL
+
+<Multi_key> <backslash> <u> <n> <d> <o>         : "⎌"  U238C  # UNDO SYMBOL
+<Multi_key> <backslash> <f> <o> <l> <d> <e> <r> : "🗀"  U1F5C0  # FOLDER
+<Multi_key> <backslash> <o> <p> <e> <n>         : "🗁"  U1F5C1  # OPEN FOLDER
+<Multi_key> <backslash> <d> <o> <c>             : "🗎"  U1F5CE  # DOCUMENT
+<Multi_key> <backslash> <c> <u> <t>             : "✂"  U2702  # BLACK SCISSORS (CUT)
+<Multi_key> <backslash> <s> <a> <v> <e>         : "🖫"  U1F5AB  # WHITE HARD SHELL FLOPPY DISK (SAVE)
+<Multi_key> <backslash> <t> <r> <a> <s> <h>     : "🗑"  U1F5D1  # WASTEBASKET (TRASH)
+
+<Multi_key> <backslash> <c> <a> <n> <c> <e> <l> : "⌧"  U2327  # X IN A RECTANGLE BOX
 <Multi_key> <backslash> <r> <e> <l> <o> <a> <d> : "⟳"  U27F3  # CLOCKWISE GAPPED CIRCLE ARROW (RELOAD)
 <Multi_key> <backslash> <f> <i> <n> <d>         : "🔍︎"  U1F50D UFE0E  # LEFT-POINTING MAGNIFYING GLASS (FIND)
 <Multi_key> <backslash> <e> <m> <a> <i> <l>     : "✉"  U2709  # ENVELOPE (EMAIL)
 <Multi_key> <backslash> <m> <a> <i> <l>         : "✉"  U2709  # ENVELOPE (MAIL)
-<Multi_key> <backslash> <t> <r> <a> <s> <h>     : "🗑"  U1F5D1  # WASTEBASKET (TRASH)
-<Multi_key> <backslash> <u> <n> <d> <o>         : "⎌"  U238C  # UNDO SYMBOL
-<Multi_key> <backslash> <c> <u> <t>             : "✂"  U2702  # BLACK SCISSORS (CUT)
 
+# hardward
+
+<Multi_key> <backslash> <m> <o> <u> <s> <e> <1> : "🖯"  U1F5AF  # ONE BUTTON MOUSE
+<Multi_key> <backslash> <m> <o> <u> <s> <e> <2> : "🖰"  U1F5B0  # TWO BUTTON MOUSE
+<Multi_key> <backslash> <m> <o> <u> <s> <e> <3> : "🖱"  U1F5B1  # THREE BUTTON MOUSE
+<Multi_key> <backslash> <s> <c> <r> <e> <e> <n> : "🖵"  U1F5B5  # SCREEN
+<Multi_key> <backslash> <p> <r> <i> <n> <t>     : "🖶"  U1F5B6  # PRINTER ICON (use \prtsc for ⎙)
+<Multi_key> <backslash> <f> <a> <x>             : "🖷"  U1F5B7  # FAX ICON
+<Multi_key> <backslash> <d> <i> <s> <c>         : "🖸"  U1F5B8  # OPTICAL DISC ICON
+<Multi_key> <backslash> <n> <e> <t>             : "🖧"  U1F5A7  # THREE NETWORKED COMPUTERS
