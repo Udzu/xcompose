@@ -835,14 +835,20 @@ include "%L"
 <Multi_key> <minus> <b>             : "ƀ"  U0180  # LATIN SMALL LETTER B WITH STROKE
 <Multi_key> <minus> <C>             : "Ꞓ"  UA792  # LATIN CAPITAL LETTER C WITH BAR
 <Multi_key> <minus> <c>             : "ꞓ"  UA793  # LATIN SMALL LETTER C WITH BAR
+<Multi_key> <minus> <F>             : "Ꞙ"  UA798  # LATIN CAPITAL LETTER F WITH STROKE
+<Multi_key> <minus> <f>             : "ꞙ"  UA799  # LATIN SMALL LETTER F WITH STROKE
 <Multi_key> <minus> <H>             : "Ħ"  U0126  # LATIN CAPITAL LETTER H WITH STROKE
 <Multi_key> <minus> <h>             : "ħ"  U0127  # LATIN SMALL LETTER H WITH STROKE
 <Multi_key> <minus> <J>             : "Ɉ"  U0248  # LATIN CAPITAL LETTER J WITH STROKE
 <Multi_key> <minus> <j>             : "ɉ"  U0249  # LATIN SMALL LETTER J WITH STROKE
+<Multi_key> <minus> <K>             : "Ꝁ"  UA740  # LATIN CAPITAL LETTER K WITH STROKE (conflicts with ₭, use K-)
+<Multi_key> <minus> <k>             : "ꝁ"  UA741  # LATIN SMALL LETTER K WITH STROKE
 <Multi_key> <minus> <L>             : "Ƚ"  U023D  # LATIN CAPITAL LETTER L WITH BAR (conflicts with £, use L-)
 <Multi_key> <minus> <l>             : "ƚ"  U019A  # LATIN SMALL LETTER L WITH BAR (conflicts with £, use l-)
 <Multi_key> <minus> <p>             : "ꝑ"  UA751  # LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <P>             : "Ꝑ"  UA750  # LATIN CAPITAL LETTER P WITH STROKE THROUGH DESCENDER
+<Multi_key> <minus> <minus> <P>     : "Ᵽ"  U2C63  # LATIN CAPITAL LETTER P WITH STROKE
+<Multi_key> <minus> <minus> <p>     : "ᵽ"  U1D7D  # LATIN SMALL LETTER P WITH STROKE
 <Multi_key> <minus> <q>             : "ꝗ"  UA757  # LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <Q>             : "Ꝗ"  UA756  # LATIN CAPITAL LETTER Q WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <R>             : "Ɍ"  U024C  # LATIN CAPITAL LETTER R WITH STROKE
@@ -1004,6 +1010,9 @@ include "%L"
 <Multi_key> <underscore> <underscore> <asciicircum> <U> : "Ṷ"  U1E76  # LATIN CAPITAL LETTER U WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <asciicircum> <u> : "ṷ"  U1E77  # LATIN SMALL LETTER U WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
 
+<Multi_key> <underscore> <underscore> <quotedbl> <U> : "Ṳ"  U1E72  # LATIN CAPITAL LETTER U WITH DIAERESIS BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <quotedbl> <u> : "ṳ"  U1E73  # LATIN SMALL LETTER U WITH DIAERESIS BELOW (conflicts with ¯, use -^)
+
 <Multi_key> <asciicircum> <quotedbl> <A> : "Ȁ"  U0200  # LATIN CAPITAL LETTER A WITH DOUBLE GRAVE
 <Multi_key> <asciicircum> <quotedbl> <a> : "ȁ"  U0201  # LATIN SMALL LETTER A WITH DOUBLE GRAVE
 <Multi_key> <asciicircum> <quotedbl> <E> : "Ȅ"  U0204  # LATIN CAPITAL LETTER E WITH DOUBLE GRAVE
@@ -1125,6 +1134,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <g> <w> : "ᶭ"  U1DAD  # MODIFIER LETTER SMALL TURNED M WITH LONG LEG
 <Multi_key> <asciicircum> <underscore> <Multi_key> <minus> <H> : "ꟸ"  UA7F8  # MODIFIER LETTER CAPITAL H WITH STROKE
 <Multi_key> <asciicircum> <underscore> <Multi_key> <h> <v> : "ᶣ"  U1DA3  # MODIFIER LETTER SMALL TURNED H
+<Multi_key> <asciicircum> <underscore> <Multi_key> <h> <minus> : "𐞕"  U10795  # MODIFIER LETTER SMALL H WITH STROKE
 <Multi_key> <asciicircum> <underscore> <Multi_key> <h> <apostrophe> : "ʱ"  U02B1  # MODIFIER LETTER SMALL H WITH HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <slash> <I> : "ᶧ"  U1DA7  # MODIFIER LETTER SMALL CAPITAL I WITH STROKE
 <Multi_key> <asciicircum> <underscore> <Multi_key> <slash> <i> : "ᶤ"  U1DA4  # MODIFIER LETTER SMALL I WITH STROKE
@@ -1138,6 +1148,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <n> <l> : "ᶯ"  U1DAF  # MODIFIER LETTER SMALL N WITH RETROFLEX HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <o> <bar> : "ᶱ"  U1DB1  # MODIFIER LETTER SMALL BARRED O
 <Multi_key> <asciicircum> <underscore> <Multi_key> <o> <parenright> : "ᵓ"  U1D53  # MODIFIER LETTER SMALL OPEN O
+<Multi_key> <asciicircum> <underscore> <Multi_key> <o> <slash> : "𐞢"  U107A2  # MODIFIER LETTER SMALL O WITH STROKE
 <Multi_key> <asciicircum> <underscore> <Multi_key> <o> <e> : "ꟹ"  UA7F9  # MODIFIER LETTER SMALL LIGATURE OE
 <Multi_key> <asciicircum> <underscore> <Multi_key> <p> <h> : "ᶲ"  U1DB2  # MODIFIER LETTER SMALL PHI
 <Multi_key> <asciicircum> <underscore> <Multi_key> <r> <l> <v> : "ʵ"  U02B5  # MODIFIER LETTER SMALL TURNED R WITH HOOK

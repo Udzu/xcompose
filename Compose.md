@@ -3,7 +3,7 @@
 
 > Link: https://github.com/Udzu/xcompose/blob/master/Compose
 
-This repo also hosts my personal .XCompose file, which contains over 11 000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
+This repo also hosts my personal .XCompose file, which contains over 12 000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
 
 The file aims for memorability and consistency. As a result, a small number of the rules here conflict with the default system rules, with workarounds given in the comments (e.g. \<underscore>'s usefulness for subscripting often interferes with its system use for macrons, for which \<minus> works equally well as an alternative).
 
@@ -18,12 +18,12 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (131): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2221)
+### Latin script characters (2231)
 * **International Phonetic Alphabet** (125): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
-* **Latin script letters** (231): Ƿ Ȝ ␢ ȵ etc
+* **Latin script letters** (239): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (262): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (195): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
+* **Superscripts and subscripts** (197): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (362): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
