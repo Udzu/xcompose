@@ -574,7 +574,7 @@ include "%L"
 <Multi_key> <D> <p>          : "₯"  U20AF  # DRACHMA SIGN
 <Multi_key> <p> <f>          : "₰"  U20B0  # GERMAN PENNY SIGN
 <Multi_key> <P> <equal>      : "₱"  U20B1  # PESO SIGN (conflicts with ₽, use P- defined below)
-<Multi_key> <equal> <P>      : "₱"  U20B1  # PESO SIGN (conflicts with ₽, use -P defined below)
+<Multi_key> <equal> <P>      : "₱"  U20B1  # PESO SIGN (conflicts with ₽, use P- defined below)
 <Multi_key> <A> <equal>      : "₳"  U20B3  # AUSTRAL SIGN
 <Multi_key> <equal> <A>      : "₳"  U20B3  # AUSTRAL SIGN
 <Multi_key> <S> <equal>      : "₴"  U20B4  # HRYVNIA SIGN
@@ -584,7 +584,6 @@ include "%L"
 <Multi_key> <M> <bar>        : "₼"  U20BC  # MANAT SIGN
 <Multi_key> <bar> <M>        : "₼"  U20BC  # MANAT SIGN
 <Multi_key> <P> <minus>      : "₽"  U20BD  # RUBLE SIGN
-<Multi_key> <minus> <P>      : "₽"  U20BD  # RUBLE SIGN
 <Multi_key> <L> <quotedbl>   : "₾"  U20BE  # LARI SIGN
 <Multi_key> <quotedbl> <L>   : "₾"  U20BE  # LARI SIGN
 <Multi_key> <B> <quotedbl>   : "₿"  U20BF  # BITCOIN SIGN
@@ -821,6 +820,8 @@ include "%L"
 <Multi_key> <comma> <v>             : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA
 <Multi_key> <grave> <comma>         : "ʽ"  U02BD    # MODIFIER LETTER REVERSED COMMA
 
+<Multi_key> <a> <Multi_key> <less> <e> <e> : "ꬱ"  UAB31  # LATIN SMALL LETTER A REVERSED-SCHWA
+
 # letters with diacritics (prioritising using v for carons and - for horizontal strokes)
 
 <Multi_key> <v> <l>                 : "ľ"  U013E  # LATIN SMALL LETTER L WITH CARON (conflicts with useless |)
@@ -841,6 +842,7 @@ include "%L"
 <Multi_key> <minus> <L>             : "Ƚ"  U023D  # LATIN CAPITAL LETTER L WITH BAR (conflicts with £, use L-)
 <Multi_key> <minus> <l>             : "ƚ"  U019A  # LATIN SMALL LETTER L WITH BAR (conflicts with £, use l-)
 <Multi_key> <minus> <p>             : "ꝑ"  UA751  # LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER
+<Multi_key> <minus> <P>             : "Ꝑ"  UA750  # LATIN CAPITAL LETTER P WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <q>             : "ꝗ"  UA757  # LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <Q>             : "Ꝗ"  UA756  # LATIN CAPITAL LETTER Q WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <R>             : "Ɍ"  U024C  # LATIN CAPITAL LETTER R WITH STROKE
@@ -1020,6 +1022,20 @@ include "%L"
 <Multi_key> <asciicircum> <asciicircum> <minus> <D> : "Ƌ"  U018B  # LATIN CAPITAL LETTER D WITH TOPBAR
 <Multi_key> <asciicircum> <asciicircum> <minus> <d> : "ƌ"  U018C  # LATIN SMALL LETTER D WITH TOPBAR
 
+<Multi_key> <minus> <asciitilde> <b> : "ᵬ"  U1D6C  # LATIN SMALL LETTER B WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <d> : "ᵭ"  U1D6D  # LATIN SMALL LETTER D WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <f> : "ᵮ"  U1D6E  # LATIN SMALL LETTER F WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <l> : "ɫ"  U026B  # LATIN SMALL LETTER L WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <L> : "Ɫ"  U2C62  # LATIN CAPITAL LETTER L WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <m> : "ᵯ"  U1D6F  # LATIN SMALL LETTER M WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <n> : "ᵰ"  U1D70  # LATIN SMALL LETTER N WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <O> : "Ɵ"  U019F  # LATIN CAPITAL LETTER O WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <p> : "ᵱ"  U1D71  # LATIN SMALL LETTER P WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <r> : "ᵲ"  U1D72  # LATIN SMALL LETTER R WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <s> : "ᵴ"  U1D74  # LATIN SMALL LETTER S WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <t> : "ᵵ"  U1D75  # LATIN SMALL LETTER T WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <z> : "ᵶ"  U1D76  # LATIN SMALL LETTER Z WITH MIDDLE TILDE
+
 # letters with multiple diacritics
 
 <Multi_key> <apostrophe> <semicolon> <C> : "Ḉ"  U1E08  # LATIN CAPITAL LETTER C WITH CEDILLA AND ACUTE
@@ -1027,6 +1043,9 @@ include "%L"
 
 <Multi_key> <period> <v> <S> : "Ṧ"  U1E66  # LATIN CAPITAL LETTER S WITH CARON AND DOT ABOVE
 <Multi_key> <period> <v> <s> : "ṧ"  U1E67  # LATIN SMALL LETTER S WITH CARON AND DOT ABOVE
+
+<Multi_key> <minus> <slash> <K> : "Ꝅ"  UA744  # LATIN CAPITAL LETTER K WITH STROKE AND DIAGONAL STROKE (conflicts with ⌿, use /-)
+<Multi_key> <minus> <slash> <k> : "ꝅ"  UA745  # LATIN SMALL LETTER K WITH STROKE AND DIAGONAL STROKE (conflicts with ⌿, use /-)
 
 ###############################################
 # Superscripts, subscripts and small capitals #
