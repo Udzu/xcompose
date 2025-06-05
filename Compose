@@ -579,7 +579,7 @@ include "%L"
 <Multi_key> <equal> <A>      : "₳"  U20B3  # AUSTRAL SIGN
 <Multi_key> <S> <equal>      : "₴"  U20B4  # HRYVNIA SIGN
 <Multi_key> <equal> <S>      : "₴"  U20B4  # HRYVNIA SIGN
-<Multi_key> <T> <underscore> : "₸"  U20B8  # TENGE SIGN
+<Multi_key> <T> <asciicircum> <minus> : "₸"  U20B8  # TENGE SIGN
 <Multi_key> <T> <L>          : "₺"  U20BA  # TURKISH LIRA SIGN
 <Multi_key> <M> <bar>        : "₼"  U20BC  # MANAT SIGN
 <Multi_key> <bar> <M>        : "₼"  U20BC  # MANAT SIGN
@@ -781,6 +781,7 @@ include "%L"
 <Multi_key> <E> <v>                 : "Ǝ"  U018E   # LATIN CAPITAL LETTER REVERSED E
 <Multi_key> <E> <H>                 : "Ɛ"  U0190   # LATIN CAPITAL LETTER OPEN E
 <Multi_key> <F> <comma>             : "Ƒ"  U0191   # LATIN CAPITAL LETTER F WITH HOOK
+<Multi_key> <G> <g>                 : "Ɡ"  UA7AC  # LATIN CAPITAL LETTER SCRIPT G
 <Multi_key> <G> <H>                 : "Ɣ"  U0194   # LATIN CAPITAL LETTER GAMMA
 <Multi_key> <G> <N>                 : "Ɲ"  U019D   # LATIN CAPITAL LETTER N WITH LEFT HOOK
 <Multi_key> <H> <v>                 : "Ɥ"  UA78D   # LATIN CAPITAL LETTER TURNED H
@@ -830,10 +831,14 @@ include "%L"
 
 <Multi_key> <minus> <B>             : "Ƀ"  U0243  # LATIN CAPITAL LETTER B WITH STROKE
 <Multi_key> <minus> <b>             : "ƀ"  U0180  # LATIN SMALL LETTER B WITH STROKE
+<Multi_key> <minus> <C>             : "Ꞓ"  UA792  # LATIN CAPITAL LETTER C WITH BAR
+<Multi_key> <minus> <c>             : "ꞓ"  UA793  # LATIN SMALL LETTER C WITH BAR
 <Multi_key> <minus> <H>             : "Ħ"  U0126  # LATIN CAPITAL LETTER H WITH STROKE
 <Multi_key> <minus> <h>             : "ħ"  U0127  # LATIN SMALL LETTER H WITH STROKE
 <Multi_key> <minus> <J>             : "Ɉ"  U0248  # LATIN CAPITAL LETTER J WITH STROKE
 <Multi_key> <minus> <j>             : "ɉ"  U0249  # LATIN SMALL LETTER J WITH STROKE
+<Multi_key> <minus> <L>             : "Ƚ"  U023D  # LATIN CAPITAL LETTER L WITH BAR (conflicts with £, use L-)
+<Multi_key> <minus> <l>             : "ƚ"  U019A  # LATIN SMALL LETTER L WITH BAR (conflicts with £, use l-)
 <Multi_key> <minus> <p>             : "ꝑ"  UA751  # LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <q>             : "ꝗ"  UA757  # LATIN SMALL LETTER Q WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <Q>             : "Ꝗ"  UA756  # LATIN CAPITAL LETTER Q WITH STROKE THROUGH DESCENDER
@@ -847,6 +852,8 @@ include "%L"
 <Multi_key> <minus> <Multi_key> <a> <e> : "ǣ"  U01E3  # LATIN SMALL LETTER AE WITH MACRON
 <Multi_key> <minus> <Multi_key> <T> <H> : "ꝧ"  UA767  # LATIN SMALL LETTER THORN WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <Multi_key> <t> <h> : "Ꝧ"  UA766  # LATIN CAPITAL LETTER THORN WITH STROKE THROUGH DESCENDER
+<Multi_key> <equal> <L>             : "Ⱡ"  U2C60  # LATIN CAPITAL LETTER L WITH DOUBLE BAR (conflicts with ₤, use L=)
+<Multi_key> <equal> <l>             : "ⱡ"  U2C61  # LATIN SMALL LETTER L WITH DOUBLE BAR
 
 <Multi_key> <period> <j>            : "ȷ"  U0237  # LATIN SMALL LETTER DOTLESS J
 <Multi_key> <period> <L>            : "Ŀ"  U013F  # LATIN CAPITAL LETTER L WITH MIDDLE DOT
@@ -956,6 +963,29 @@ include "%L"
 <Multi_key> <underscore> <comma> <E> : "Ȩ"  U0228  # LATIN CAPITAL LETTER E WITH CEDILLA
 <Multi_key> <underscore> <comma> <e> : "ȩ"  U0229  # LATIN SMALL LETTER E WITH CEDILLA
 
+<Multi_key> <underscore> <asciitilde> <E> : "Ḛ"  U1E1A  # LATIN CAPITAL LETTER E WITH TILDE BELOW
+<Multi_key> <underscore> <asciitilde> <e> : "ḛ"  U1E1B  # LATIN SMALL LETTER E WITH TILDE BELOW
+<Multi_key> <underscore> <asciitilde> <I> : "Ḭ"  U1E2C  # LATIN CAPITAL LETTER I WITH TILDE BELOW
+<Multi_key> <underscore> <asciitilde> <i> : "ḭ"  U1E2D  # LATIN SMALL LETTER I WITH TILDE BELOW
+<Multi_key> <underscore> <asciitilde> <U> : "Ṵ"  U1E74  # LATIN CAPITAL LETTER U WITH TILDE BELOW
+<Multi_key> <underscore> <asciitilde> <u> : "ṵ"  U1E75  # LATIN SMALL LETTER U WITH TILDE BELOW
+
+<Multi_key> <underscore> <u> <H> : "Ḫ"  U1E2A  # LATIN CAPITAL LETTER H WITH BREVE BELOW (conflicts with ū, use -u)
+<Multi_key> <underscore> <u> <h> : "ḫ"  U1E2B  # LATIN SMALL LETTER H WITH BREVE BELOW (conflicts with ū, use -u)
+
+<Multi_key> <underscore> <underscore> <asciicircum> <D> : "Ḓ"  U1E12  # LATIN CAPITAL LETTER D WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <d> : "ḓ"  U1E13  # LATIN SMALL LETTER D WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <E> : "Ḙ"  U1E18  # LATIN CAPITAL LETTER E WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <e> : "ḙ"  U1E19  # LATIN SMALL LETTER E WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <L> : "Ḽ"  U1E3C  # LATIN CAPITAL LETTER L WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <l> : "ḽ"  U1E3D  # LATIN SMALL LETTER L WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <N> : "Ṋ"  U1E4A  # LATIN CAPITAL LETTER N WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <n> : "ṋ"  U1E4B  # LATIN SMALL LETTER N WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <T> : "Ṱ"  U1E70  # LATIN CAPITAL LETTER T WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <t> : "ṱ"  U1E71  # LATIN SMALL LETTER T WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <U> : "Ṷ"  U1E76  # LATIN CAPITAL LETTER U WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <asciicircum> <u> : "ṷ"  U1E77  # LATIN SMALL LETTER U WITH CIRCUMFLEX BELOW (conflicts with ¯, use -^)
+
 <Multi_key> <asciicircum> <quotedbl> <A> : "Ȁ"  U0200  # LATIN CAPITAL LETTER A WITH DOUBLE GRAVE
 <Multi_key> <asciicircum> <quotedbl> <a> : "ȁ"  U0201  # LATIN SMALL LETTER A WITH DOUBLE GRAVE
 <Multi_key> <asciicircum> <quotedbl> <E> : "Ȅ"  U0204  # LATIN CAPITAL LETTER E WITH DOUBLE GRAVE
@@ -969,20 +999,10 @@ include "%L"
 <Multi_key> <asciicircum> <quotedbl> <U> : "Ȕ"  U0214  # LATIN CAPITAL LETTER U WITH DOUBLE GRAVE
 <Multi_key> <asciicircum> <quotedbl> <u> : "ȕ"  U0215  # LATIN SMALL LETTER U WITH DOUBLE GRAVE
 
-<Multi_key> <underscore> <asciitilde> <E> : "Ḛ"  U1E1A  # LATIN CAPITAL LETTER E WITH TILDE BELOW
-<Multi_key> <underscore> <asciitilde> <e> : "ḛ"  U1E1B  # LATIN SMALL LETTER E WITH TILDE BELOW
-<Multi_key> <underscore> <asciitilde> <I> : "Ḭ"  U1E2C  # LATIN CAPITAL LETTER I WITH TILDE BELOW
-<Multi_key> <underscore> <asciitilde> <i> : "ḭ"  U1E2D  # LATIN SMALL LETTER I WITH TILDE BELOW
-<Multi_key> <underscore> <asciitilde> <U> : "Ṵ"  U1E74  # LATIN CAPITAL LETTER U WITH TILDE BELOW
-<Multi_key> <underscore> <asciitilde> <u> : "ṵ"  U1E75  # LATIN SMALL LETTER U WITH TILDE BELOW
-
-<Multi_key> <underscore> <u> <H> : "Ḫ"  U1E2A  # LATIN CAPITAL LETTER H WITH BREVE BELOW (conflicts with ū, use -u)
-<Multi_key> <underscore> <u> <h> : "ḫ"  U1E2B  # LATIN SMALL LETTER H WITH BREVE BELOW (conflicts with ū, use -u)
-
-<Multi_key> <B> <asciicircum> <minus> : "Ƃ"  U0182  # LATIN CAPITAL LETTER B WITH TOPBAR
-<Multi_key> <b> <asciicircum> <minus> : "ƃ"  U0183  # LATIN SMALL LETTER B WITH TOPBAR
-<Multi_key> <D> <asciicircum> <minus> : "Ƌ"  U018B  # LATIN CAPITAL LETTER D WITH TOPBAR
-<Multi_key> <d> <asciicircum> <minus> : "ƌ"  U018C  # LATIN SMALL LETTER D WITH TOPBAR
+<Multi_key> <asciicircum> <asciicircum> <minus> <B> : "Ƃ"  U0182  # LATIN CAPITAL LETTER B WITH TOPBAR
+<Multi_key> <asciicircum> <asciicircum> <minus> <b> : "ƃ"  U0183  # LATIN SMALL LETTER B WITH TOPBAR
+<Multi_key> <asciicircum> <asciicircum> <minus> <D> : "Ƌ"  U018B  # LATIN CAPITAL LETTER D WITH TOPBAR
+<Multi_key> <asciicircum> <asciicircum> <minus> <d> : "ƌ"  U018C  # LATIN SMALL LETTER D WITH TOPBAR
 
 # letters with multiple diacritics
 
