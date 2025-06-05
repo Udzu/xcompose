@@ -804,6 +804,7 @@ include "%L"
 <Multi_key> <V> <v>                 : "Ʌ"  U0245   # LATIN CAPITAL LETTER TURNED V
 <Multi_key> <V> <backslash>         : "Ʋ"  U01B2   # LATIN CAPITAL LETTER V WITH HOOK
 <Multi_key> <X> <H>                 : "Ꭓ"  UA7B3   # LATIN CAPITAL LETTER CHI
+<Multi_key> <Y> <R>                 : "Ʀ"  U01A6   # LATIN LETTER YR
 <Multi_key> <Z> <H>                 : "Ʒ"  U01B7   # LATIN CAPITAL LETTER EZH
 
 # various other letters
@@ -867,6 +868,8 @@ include "%L"
 <Multi_key> <slash> <A>             : "Ⱥ"  U023A  # LATIN CAPITAL LETTER A WITH STROKE
 <Multi_key> <slash> <a>             : "ⱥ"  U2C65  # LATIN SMALL LETTER A WITH STROKE
 <Multi_key> <slash> <b>             : "␢"  U2422  # BLANK SYMBOL (conflicts with ƀ, use -b)
+<Multi_key> <slash> <C>             : "Ȼ"  U023B  # LATIN CAPITAL LETTER C WITH STROKE (conflicts with ₡, use C/)
+<Multi_key> <slash> <c>             : "ȼ"  U023C  # LATIN SMALL LETTER C WITH STROKE (conflicts with ¢, use c/ or |c)
 <Multi_key> <slash> <E>             : "Ɇ"  U0246  # LATIN CAPITAL LETTER E WITH STROKE
 <Multi_key> <slash> <e>             : "ɇ"  U0247  # LATIN SMALL LETTER E WITH STROKE
 <Multi_key> <slash> <K>             : "Ꞣ"  UA7A2  # LATIN CAPITAL LETTER K WITH OBLIQUE STROKE
@@ -929,6 +932,15 @@ include "%L"
 <Multi_key> <w> <greater> <comma> : "ⱳ"  U2C73  # LATIN SMALL LETTER W WITH HOOK
 <Multi_key> <Y> <greater> <comma> : "Ƴ"  U01B3  # LATIN CAPITAL LETTER Y WITH HOOK
 <Multi_key> <y> <greater> <comma> : "ƴ"  U01B4  # LATIN SMALL LETTER Y WITH HOOK
+
+<Multi_key> <H> <bar> : "Ⱨ"  U2C67  # LATIN CAPITAL LETTER H WITH DESCENDER
+<Multi_key> <h> <bar> : "ⱨ"  U2C68  # LATIN SMALL LETTER H WITH DESCENDER
+<Multi_key> <K> <bar> : "Ⱪ"  U2C69  # LATIN CAPITAL LETTER K WITH DESCENDER
+<Multi_key> <k> <bar> : "ⱪ"  U2C6A  # LATIN SMALL LETTER K WITH DESCENDER
+<Multi_key> <Z> <bar> : "Ⱬ"  U2C6B  # LATIN CAPITAL LETTER Z WITH DESCENDER
+<Multi_key> <z> <bar> : "ⱬ"  U2C6C  # LATIN SMALL LETTER Z WITH DESCENDER
+<Multi_key> <N> <bar> : "Ꞑ"  UA790  # LATIN CAPITAL LETTER N WITH DESCENDER
+<Multi_key> <n> <bar> : "ꞑ"  UA791  # LATIN SMALL LETTER N WITH DESCENDER
 
 <Multi_key> <u> <v> <A> : "Ȃ"  U0202  # LATIN CAPITAL LETTER A WITH INVERTED BREVE
 <Multi_key> <u> <v> <a> : "ȃ"  U0203  # LATIN SMALL LETTER A WITH INVERTED BREVE
