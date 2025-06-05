@@ -11979,6 +11979,15 @@ include "%L"
 <Multi_key> <bar> <numbersign> <3> : "▓" U2593  # DARK SHADE
 <Multi_key> <bar> <numbersign> <4> : "█" U2588  # FULL BLOCK
 
+<Multi_key> <bar> <numbersign> <less>                 : "🮌"  U1FB8C  # LEFT HALF MEDIUM SHADE
+<Multi_key> <bar> <numbersign> <greater>              : "🮍"  U1FB8D  # RIGHT HALF MEDIUM SHADE
+<Multi_key> <bar> <numbersign> <asciicircum>          : "🮎"  U1FB8E  # UPPER HALF MEDIUM SHADE
+<Multi_key> <bar> <numbersign> <v>                    : "🮏"  U1FB8F  # LOWER HALF MEDIUM SHADE
+<Multi_key> <bar> <numbersign> <exclam> <asterisk>    : "🮐"  U1FB90  # INVERSE MEDIUM SHADE
+<Multi_key> <bar> <numbersign> <exclam> <v>           : "🮑"  U1FB91  # UPPER HALF BLOCK AND LOWER HALF INVERSE MEDIUM SHADE
+<Multi_key> <bar> <numbersign> <exclam> <asciicircum> : "🮒"  U1FB92  # UPPER HALF INVERSE MEDIUM SHADE AND LOWER HALF BLOCK
+<Multi_key> <bar> <numbersign> <exclam> <less>        : "🮔"  U1FB94  # LEFT HALF INVERSE MEDIUM SHADE AND RIGHT HALF BLOCK
+
 # basic blocks: | + b + direction
 
 <Multi_key> <bar> <b> <asterisk>        : "█"  U2588  # FULL BLOCK
@@ -12414,6 +12423,90 @@ include "%L"
 <Multi_key> <bar> <8> <1> <3> <4> <5> <6> <7> <8>          : "𜷤"  U1CDE4  # BLOCK OCTANT-1345678
 <Multi_key> <bar> <8> <2> <3> <4> <5> <6> <7> <8>          : "𜷥"  U1CDE5  # BLOCK OCTANT-2345678
 <Multi_key> <bar> <8> <1> <2> <3> <4> <5> <6> <7> <8>      : "█"  U2588  # FULL BLOCK
+
+# separated quadrants: | + ␣ + 4 + quadrant list
+
+<Multi_key> <bar> <space> <4> <1> <Return>         : "𜰡"  U1CC21  # SEPARATED BLOCK QUADRANT-1
+<Multi_key> <bar> <space> <4> <2> <Return>         : "𜰢"  U1CC22  # SEPARATED BLOCK QUADRANT-2
+<Multi_key> <bar> <space> <4> <1> <2> <Return>     : "𜰣"  U1CC23  # SEPARATED BLOCK QUADRANT-12
+<Multi_key> <bar> <space> <4> <3> <Return>         : "𜰤"  U1CC24  # SEPARATED BLOCK QUADRANT-3
+<Multi_key> <bar> <space> <4> <1> <3> <Return>     : "𜰥"  U1CC25  # SEPARATED BLOCK QUADRANT-13
+<Multi_key> <bar> <space> <4> <2> <3> <Return>     : "𜰦"  U1CC26  # SEPARATED BLOCK QUADRANT-23
+<Multi_key> <bar> <space> <4> <1> <2> <3> <Return> : "𜰧"  U1CC27  # SEPARATED BLOCK QUADRANT-123
+<Multi_key> <bar> <space> <4> <4>                  : "𜰨"  U1CC28  # SEPARATED BLOCK QUADRANT-4
+<Multi_key> <bar> <space> <4> <1> <4>              : "𜰩"  U1CC29  # SEPARATED BLOCK QUADRANT-14
+<Multi_key> <bar> <space> <4> <2> <4>              : "𜰪"  U1CC2A  # SEPARATED BLOCK QUADRANT-24
+<Multi_key> <bar> <space> <4> <1> <2> <4>          : "𜰫"  U1CC2B  # SEPARATED BLOCK QUADRANT-124
+<Multi_key> <bar> <space> <4> <3> <4>              : "𜰬"  U1CC2C  # SEPARATED BLOCK QUADRANT-34
+<Multi_key> <bar> <space> <4> <1> <3> <4>          : "𜰭"  U1CC2D  # SEPARATED BLOCK QUADRANT-134
+<Multi_key> <bar> <space> <4> <2> <3> <4>          : "𜰮"  U1CC2E  # SEPARATED BLOCK QUADRANT-234
+<Multi_key> <bar> <space> <4> <1> <2> <3> <4>      : "𜰯"  U1CC2F  # SEPARATED BLOCK QUADRANT-1234
+
+# separated sextants: | + ␣ + 6 + sextant list
+
+<Multi_key> <bar> <space> <6> <1> <Return>                 : "𜹑"  U1CE51  # SEPARATED BLOCK SEXTANT-1
+<Multi_key> <bar> <space> <6> <2> <Return>                 : "𜹒"  U1CE52  # SEPARATED BLOCK SEXTANT-2
+<Multi_key> <bar> <space> <6> <1> <2> <Return>             : "𜹓"  U1CE53  # SEPARATED BLOCK SEXTANT-12
+<Multi_key> <bar> <space> <6> <3> <Return>                 : "𜹔"  U1CE54  # SEPARATED BLOCK SEXTANT-3
+<Multi_key> <bar> <space> <6> <1> <3> <Return>             : "𜹕"  U1CE55  # SEPARATED BLOCK SEXTANT-13
+<Multi_key> <bar> <space> <6> <2> <3> <Return>             : "𜹖"  U1CE56  # SEPARATED BLOCK SEXTANT-23
+<Multi_key> <bar> <space> <6> <1> <2> <3> <Return>         : "𜹗"  U1CE57  # SEPARATED BLOCK SEXTANT-123
+<Multi_key> <bar> <space> <6> <4> <Return>                 : "𜹘"  U1CE58  # SEPARATED BLOCK SEXTANT-4
+<Multi_key> <bar> <space> <6> <1> <4> <Return>             : "𜹙"  U1CE59  # SEPARATED BLOCK SEXTANT-14
+<Multi_key> <bar> <space> <6> <2> <4> <Return>             : "𜹚"  U1CE5A  # SEPARATED BLOCK SEXTANT-24
+<Multi_key> <bar> <space> <6> <1> <2> <4> <Return>         : "𜹛"  U1CE5B  # SEPARATED BLOCK SEXTANT-124
+<Multi_key> <bar> <space> <6> <3> <4> <Return>             : "𜹜"  U1CE5C  # SEPARATED BLOCK SEXTANT-34
+<Multi_key> <bar> <space> <6> <1> <3> <4> <Return>         : "𜹝"  U1CE5D  # SEPARATED BLOCK SEXTANT-134
+<Multi_key> <bar> <space> <6> <2> <3> <4> <Return>         : "𜹞"  U1CE5E  # SEPARATED BLOCK SEXTANT-234
+<Multi_key> <bar> <space> <6> <1> <2> <3> <4> <Return>     : "𜹟"  U1CE5F  # SEPARATED BLOCK SEXTANT-1234
+<Multi_key> <bar> <space> <6> <5> <Return>                 : "𜹠"  U1CE60  # SEPARATED BLOCK SEXTANT-5
+<Multi_key> <bar> <space> <6> <1> <5> <Return>             : "𜹡"  U1CE61  # SEPARATED BLOCK SEXTANT-15
+<Multi_key> <bar> <space> <6> <2> <5> <Return>             : "𜹢"  U1CE62  # SEPARATED BLOCK SEXTANT-25
+<Multi_key> <bar> <space> <6> <1> <2> <5> <Return>         : "𜹣"  U1CE63  # SEPARATED BLOCK SEXTANT-125
+<Multi_key> <bar> <space> <6> <3> <5> <Return>             : "𜹤"  U1CE64  # SEPARATED BLOCK SEXTANT-35
+<Multi_key> <bar> <space> <6> <1> <3> <5> <Return>         : "𜹥"  U1CE65  # SEPARATED BLOCK SEXTANT-135
+<Multi_key> <bar> <space> <6> <2> <3> <5> <Return>         : "𜹦"  U1CE66  # SEPARATED BLOCK SEXTANT-235
+<Multi_key> <bar> <space> <6> <1> <2> <3> <5> <Return>     : "𜹧"  U1CE67  # SEPARATED BLOCK SEXTANT-1235
+<Multi_key> <bar> <space> <6> <4> <5> <Return>             : "𜹨"  U1CE68  # SEPARATED BLOCK SEXTANT-45
+<Multi_key> <bar> <space> <6> <1> <4> <5> <Return>         : "𜹩"  U1CE69  # SEPARATED BLOCK SEXTANT-145
+<Multi_key> <bar> <space> <6> <2> <4> <5> <Return>         : "𜹪"  U1CE6A  # SEPARATED BLOCK SEXTANT-245
+<Multi_key> <bar> <space> <6> <1> <2> <4> <5> <Return>     : "𜹫"  U1CE6B  # SEPARATED BLOCK SEXTANT-1245
+<Multi_key> <bar> <space> <6> <3> <4> <5> <Return>         : "𜹬"  U1CE6C  # SEPARATED BLOCK SEXTANT-345
+<Multi_key> <bar> <space> <6> <1> <3> <4> <5> <Return>     : "𜹭"  U1CE6D  # SEPARATED BLOCK SEXTANT-1345
+<Multi_key> <bar> <space> <6> <2> <3> <4> <5> <Return>     : "𜹮"  U1CE6E  # SEPARATED BLOCK SEXTANT-2345
+<Multi_key> <bar> <space> <6> <1> <2> <3> <4> <5> <Return> : "𜹯"  U1CE6F  # SEPARATED BLOCK SEXTANT-12345
+<Multi_key> <bar> <space> <6> <6>                          : "𜹰"  U1CE70  # SEPARATED BLOCK SEXTANT-6
+<Multi_key> <bar> <space> <6> <1> <6>                      : "𜹱"  U1CE71  # SEPARATED BLOCK SEXTANT-16
+<Multi_key> <bar> <space> <6> <2> <6>                      : "𜹲"  U1CE72  # SEPARATED BLOCK SEXTANT-26
+<Multi_key> <bar> <space> <6> <1> <2> <6>                  : "𜹳"  U1CE73  # SEPARATED BLOCK SEXTANT-126
+<Multi_key> <bar> <space> <6> <3> <6>                      : "𜹴"  U1CE74  # SEPARATED BLOCK SEXTANT-36
+<Multi_key> <bar> <space> <6> <1> <3> <6>                  : "𜹵"  U1CE75  # SEPARATED BLOCK SEXTANT-136
+<Multi_key> <bar> <space> <6> <2> <3> <6>                  : "𜹶"  U1CE76  # SEPARATED BLOCK SEXTANT-236
+<Multi_key> <bar> <space> <6> <1> <2> <3> <6>              : "𜹷"  U1CE77  # SEPARATED BLOCK SEXTANT-1236
+<Multi_key> <bar> <space> <6> <4> <6>                      : "𜹸"  U1CE78  # SEPARATED BLOCK SEXTANT-46
+<Multi_key> <bar> <space> <6> <1> <4> <6>                  : "𜹹"  U1CE79  # SEPARATED BLOCK SEXTANT-146
+<Multi_key> <bar> <space> <6> <2> <4> <6>                  : "𜹺"  U1CE7A  # SEPARATED BLOCK SEXTANT-246
+<Multi_key> <bar> <space> <6> <1> <2> <4> <6>              : "𜹻"  U1CE7B  # SEPARATED BLOCK SEXTANT-1246
+<Multi_key> <bar> <space> <6> <3> <4> <6>                  : "𜹼"  U1CE7C  # SEPARATED BLOCK SEXTANT-346
+<Multi_key> <bar> <space> <6> <1> <3> <4> <6>              : "𜹽"  U1CE7D  # SEPARATED BLOCK SEXTANT-1346
+<Multi_key> <bar> <space> <6> <2> <3> <4> <6>              : "𜹾"  U1CE7E  # SEPARATED BLOCK SEXTANT-2346
+<Multi_key> <bar> <space> <6> <1> <2> <3> <4> <6>          : "𜹿"  U1CE7F  # SEPARATED BLOCK SEXTANT-12346
+<Multi_key> <bar> <space> <6> <5> <6>                      : "𜺀"  U1CE80  # SEPARATED BLOCK SEXTANT-56
+<Multi_key> <bar> <space> <6> <1> <5> <6>                  : "𜺁"  U1CE81  # SEPARATED BLOCK SEXTANT-156
+<Multi_key> <bar> <space> <6> <2> <5> <6>                  : "𜺂"  U1CE82  # SEPARATED BLOCK SEXTANT-256
+<Multi_key> <bar> <space> <6> <1> <2> <5> <6>              : "𜺃"  U1CE83  # SEPARATED BLOCK SEXTANT-1256
+<Multi_key> <bar> <space> <6> <3> <5> <6>                  : "𜺄"  U1CE84  # SEPARATED BLOCK SEXTANT-356
+<Multi_key> <bar> <space> <6> <1> <3> <5> <6>              : "𜺅"  U1CE85  # SEPARATED BLOCK SEXTANT-1356
+<Multi_key> <bar> <space> <6> <2> <3> <5> <6>              : "𜺆"  U1CE86  # SEPARATED BLOCK SEXTANT-2356
+<Multi_key> <bar> <space> <6> <1> <2> <3> <5> <6>          : "𜺇"  U1CE87  # SEPARATED BLOCK SEXTANT-12356
+<Multi_key> <bar> <space> <6> <4> <5> <6>                  : "𜺈"  U1CE88  # SEPARATED BLOCK SEXTANT-456
+<Multi_key> <bar> <space> <6> <1> <4> <5> <6>              : "𜺉"  U1CE89  # SEPARATED BLOCK SEXTANT-1456
+<Multi_key> <bar> <space> <6> <2> <4> <5> <6>              : "𜺊"  U1CE8A  # SEPARATED BLOCK SEXTANT-2456
+<Multi_key> <bar> <space> <6> <1> <2> <4> <5> <6>          : "𜺋"  U1CE8B  # SEPARATED BLOCK SEXTANT-12456
+<Multi_key> <bar> <space> <6> <3> <4> <5> <6>              : "𜺌"  U1CE8C  # SEPARATED BLOCK SEXTANT-3456
+<Multi_key> <bar> <space> <6> <1> <3> <4> <5> <6>          : "𜺍"  U1CE8D  # SEPARATED BLOCK SEXTANT-13456
+<Multi_key> <bar> <space> <6> <2> <3> <4> <5> <6>          : "𜺎"  U1CE8E  # SEPARATED BLOCK SEXTANT-23456
+<Multi_key> <bar> <space> <6> <1> <2> <3> <4> <5> <6>      : "𜺏"  U1CE8F  # SEPARATED BLOCK SEXTANT-123456
 
 #########
 # Music #
