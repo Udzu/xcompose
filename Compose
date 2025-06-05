@@ -820,7 +820,7 @@ include "%L"
 <Multi_key> <comma> <v>             : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA
 <Multi_key> <grave> <comma>         : "ʽ"  U02BD    # MODIFIER LETTER REVERSED COMMA
 
-# letters with diacritics (prioritising using v for carons and - for horiztonal strokes)
+# letters with diacritics (prioritising using v for carons and - for horizontal strokes)
 
 <Multi_key> <v> <l>                 : "ľ"  U013E  # LATIN SMALL LETTER L WITH CARON (conflicts with useless |)
 <Multi_key> <v> <Multi_key> <Z> <H> : "Ǯ"  U01EE  # LATIN CAPITAL LETTER EZH WITH CARON
@@ -889,12 +889,26 @@ include "%L"
 <Multi_key> <d> <at> : "ȡ"  U0221  # LATIN SMALL LETTER D WITH CURL
 <Multi_key> <l> <at> : "ȴ"  U0234  # LATIN SMALL LETTER L WITH CURL
 <Multi_key> <n> <at> : "ȵ"  U0235  # LATIN SMALL LETTER N WITH CURL
+<Multi_key> <s> <at> : "𝼞"  U1DF1E  # LATIN SMALL LETTER S WITH CURL
 <Multi_key> <t> <at> : "ȶ"  U0236  # LATIN SMALL LETTER T WITH CURL
+<Multi_key> <v> <at> : "ⱴ"  U2C74  # LATIN SMALL LETTER V WITH CURL
+<Multi_key> <Multi_key> <s> <h> <at> : "ʆ"  U0286  # LATIN SMALL LETTER ESH WITH CURL
+<Multi_key> <Multi_key> <z> <h> <at> : "ʓ"  U0293  # LATIN SMALL LETTER EZH WITH CURL
 
 <Multi_key> <Q> <comma> : "Ɋ"  U024A  # LATIN CAPITAL LETTER SMALL Q WITH HOOK TAIL
 <Multi_key> <q> <comma> : "ɋ"  U024B  # LATIN SMALL LETTER Q WITH HOOK TAIL
 <Multi_key> <Z> <comma> : "Ȥ"  U0224  # LATIN CAPITAL LETTER Z WITH HOOK
 <Multi_key> <z> <comma> : "ȥ"  U0225  # LATIN SMALL LETTER Z WITH HOOK
+
+<Multi_key> <K> <apostrophe> : "Ƙ"  U0198  # LATIN CAPITAL LETTER K WITH HOOK
+<Multi_key> <k> <apostrophe> : "ƙ"  U0199  # LATIN SMALL LETTER K WITH HOOK
+<Multi_key> <P> <apostrophe> : "Ƥ"  U01A4  # LATIN CAPITAL LETTER P WITH HOOK
+<Multi_key> <p> <apostrophe> : "ƥ"  U01A5  # LATIN SMALL LETTER P WITH HOOK
+<Multi_key> <q> <apostrophe> : "ʠ"  U02A0  # LATIN SMALL LETTER Q WITH HOOK
+<Multi_key> <T> <apostrophe> : "Ƭ"  U01AC  # LATIN CAPITAL LETTER T WITH HOOK
+<Multi_key> <t> <apostrophe> : "ƭ"  U01AD  # LATIN SMALL LETTER T WITH HOOK
+<Multi_key> <W> <apostrophe> : "Ⱳ"  U2C72  # LATIN CAPITAL LETTER W WITH HOOK
+<Multi_key> <w> <apostrophe> : "ⱳ"  U2C73  # LATIN SMALL LETTER W WITH HOOK
 
 <Multi_key> <B> <greater> <comma> : "Ɓ"  U0181  # LATIN CAPITAL LETTER B WITH HOOK
 <Multi_key> <b> <greater> <comma> : "ɓ"  U0253  # LATIN SMALL LETTER B WITH HOOK
@@ -915,16 +929,6 @@ include "%L"
 <Multi_key> <w> <greater> <comma> : "ⱳ"  U2C73  # LATIN SMALL LETTER W WITH HOOK
 <Multi_key> <Y> <greater> <comma> : "Ƴ"  U01B3  # LATIN CAPITAL LETTER Y WITH HOOK
 <Multi_key> <y> <greater> <comma> : "ƴ"  U01B4  # LATIN SMALL LETTER Y WITH HOOK
-
-<Multi_key> <K> <apostrophe> : "Ƙ"  U0198  # LATIN CAPITAL LETTER K WITH HOOK
-<Multi_key> <k> <apostrophe> : "ƙ"  U0199  # LATIN SMALL LETTER K WITH HOOK
-<Multi_key> <P> <apostrophe> : "Ƥ"  U01A4  # LATIN CAPITAL LETTER P WITH HOOK
-<Multi_key> <p> <apostrophe> : "ƥ"  U01A5  # LATIN SMALL LETTER P WITH HOOK
-<Multi_key> <q> <apostrophe> : "ʠ"  U02A0  # LATIN SMALL LETTER Q WITH HOOK
-<Multi_key> <T> <apostrophe> : "Ƭ"  U01AC  # LATIN CAPITAL LETTER T WITH HOOK
-<Multi_key> <t> <apostrophe> : "ƭ"  U01AD  # LATIN SMALL LETTER T WITH HOOK
-<Multi_key> <W> <apostrophe> : "Ⱳ"  U2C72  # LATIN CAPITAL LETTER W WITH HOOK
-<Multi_key> <w> <apostrophe> : "ⱳ"  U2C73  # LATIN SMALL LETTER W WITH HOOK
 
 <Multi_key> <u> <v> <A> : "Ȃ"  U0202  # LATIN CAPITAL LETTER A WITH INVERTED BREVE
 <Multi_key> <u> <v> <a> : "ȃ"  U0203  # LATIN SMALL LETTER A WITH INVERTED BREVE
@@ -1109,6 +1113,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <r> <r> : "ʴ"  U02B4  # MODIFIER LETTER SMALL TURNED R
 <Multi_key> <asciicircum> <underscore> <Multi_key> <R> <v> : "ʶ"  U02B6  # MODIFIER LETTER SMALL CAPITAL INVERTED R
 <Multi_key> <asciicircum> <underscore> <Multi_key> <r> <v> : "ʴ"  U02B4  # MODIFIER LETTER SMALL TURNED R
+<Multi_key> <asciicircum> <underscore> <Multi_key> <s> <at> : "𐞺"  U107BA  # MODIFIER LETTER SMALL S WITH CURL
 <Multi_key> <asciicircum> <underscore> <Multi_key> <s> <h> : "ᶴ"  U1DB4  # MODIFIER LETTER SMALL ESH
 <Multi_key> <asciicircum> <underscore> <Multi_key> <s> <l> : "ᶳ"  U1DB3  # MODIFIER LETTER SMALL S WITH HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <u> <bar> : "ᶶ"  U1DB6  # MODIFIER LETTER SMALL U BAR
