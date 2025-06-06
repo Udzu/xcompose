@@ -8413,9 +8413,9 @@ include "%L"
 <Multi_key> <T> <t> <i> <Return> : "ᝲ"  U1772  # TAGBANWA VOWEL SIGN I
 <Multi_key> <T> <t> <u> <Return> : "ᝳ"  U1773  # TAGBANWA VOWEL SIGN U
 
-#########################################################
-# (z) Zhuyin/Bopomofo (and Mongolian, Tai Le & Tibetan) #
-#########################################################
+##########################################################################
+# (z) Zhuyin/Bopomofo (and Fraser, Mongolian, Pollard, Tai Le & Tibetan) #
+##########################################################################
 
 <Multi_key> <z> <c> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
 <Multi_key> <z> <c> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
@@ -8540,6 +8540,62 @@ include "%L"
 <Multi_key> <z> <c> <Y> <j>              : "角" U89D2    # CJK UNIFIED IDEOGRAPH-89D2 (Chinese jiao)
 <Multi_key> <z> <c> <Y> <f>              : "分" U5206    # CJK UNIFIED IDEOGRAPH-5206 (Chinese fen)
 
+# (f = Fraser/Lisu)
+
+<Multi_key> <z> <f> <apostrophe> : "ꓮ"  UA4EE  # LISU LETTER A
+<Multi_key> <z> <f> <b> : "ꓐ"  UA4D0  # LISU LETTER BA
+<Multi_key> <z> <f> <c> : "ꓚ"  UA4DA  # LISU LETTER CA
+<Multi_key> <z> <f> <d> : "ꓓ"  UA4D3  # LISU LETTER DA
+<Multi_key> <z> <f> <f> : "ꓩ"  UA4E9  # LISU LETTER FA
+<Multi_key> <z> <f> <g> : "ꓖ"  UA4D6  # LISU LETTER GA
+<Multi_key> <z> <f> <j> : "ꓙ"  UA4D9  # LISU LETTER JA
+<Multi_key> <z> <f> <k> : "ꓗ"  UA4D7  # LISU LETTER KA
+<Multi_key> <z> <f> <l> : "ꓡ"  UA4E1  # LISU LETTER LA
+<Multi_key> <z> <f> <m> : "ꓟ"  UA4DF  # LISU LETTER MA
+<Multi_key> <z> <f> <n> : "ꓠ"  UA4E0  # LISU LETTER NA
+<Multi_key> <z> <f> <p> : "ꓑ"  UA4D1  # LISU LETTER PA
+<Multi_key> <z> <f> <s> : "ꓢ"  UA4E2  # LISU LETTER SA
+<Multi_key> <z> <f> <t> : "ꓔ"  UA4D4  # LISU LETTER TA
+<Multi_key> <z> <f> <w> : "ꓪ"  UA4EA  # LISU LETTER WA
+<Multi_key> <z> <f> <x> : "ꓧ"  UA4E7  # LISU LETTER XA
+<Multi_key> <z> <f> <y> : "ꓬ"  UA4EC  # LISU LETTER YA
+<Multi_key> <z> <f> <z> : "ꓤ"  UA4E4  # LISU LETTER ZA
+<Multi_key> <z> <f> <N> : "ꓥ"  UA4E5  # LISU LETTER NGA
+<Multi_key> <z> <f> <Z> : "ꓜ"  UA4DC  # LISU LETTER DZA
+<Multi_key> <z> <f> <S> : "ꓝ"  UA4DD  # LISU LETTER TSA
+
+<Multi_key> <z> <f> <h> <c> : "ꓛ"  UA4DB  # LISU LETTER CHA
+<Multi_key> <z> <f> <h> <g> : "ꓭ"  UA4ED  # LISU LETTER GHA
+<Multi_key> <z> <f> <h> <h> : "ꓨ"  UA4E8  # LISU LETTER HHA
+<Multi_key> <z> <f> <h> <k> : "ꓘ"  UA4D8  # LISU LETTER KHA
+<Multi_key> <z> <f> <h> <p> : "ꓒ"  UA4D2  # LISU LETTER PHA
+<Multi_key> <z> <f> <h> <s> : "ꓫ"  UA4EB  # LISU LETTER SHA
+<Multi_key> <z> <f> <h> <t> : "ꓕ"  UA4D5  # LISU LETTER THA
+<Multi_key> <z> <f> <h> <z> : "ꓣ"  UA4E3  # LISU LETTER ZHA
+<Multi_key> <z> <f> <h> <N> : "ꓦ"  UA4E6  # LISU LETTER HA
+<Multi_key> <z> <f> <h> <S> : "ꓞ"  UA4DE  # LISU LETTER TSHA
+
+<Multi_key> <z> <f> <a> <space> : "ꓮ"  UA4EE  # LISU LETTER A
+<Multi_key> <z> <f> <a> <e> : "ꓯ"  UA4EF  # LISU LETTER AE
+<Multi_key> <z> <f> <e> <space> : "ꓰ"  UA4F0  # LISU LETTER E
+<Multi_key> <z> <f> <e> <u>: "ꓱ"  UA4F1  # LISU LETTER EU
+<Multi_key> <z> <f> <i> : "ꓲ"  UA4F2  # LISU LETTER I
+<Multi_key> <z> <f> <o> <space> : "ꓳ"  UA4F3  # LISU LETTER O
+<Multi_key> <z> <f> <o> <e> : "ꓷ"  UA4F7  # LISU LETTER OE
+<Multi_key> <z> <f> <u> <space> : "ꓴ"  UA4F4  # LISU LETTER U
+<Multi_key> <z> <f> <u> <e> : "ꓵ"  UA4F5  # LISU LETTER UE
+<Multi_key> <z> <f> <u> <h> : "ꓶ"  UA4F6  # LISU LETTER UH
+
+<Multi_key> <z> <f> <period> <space> : "ꓸ"  UA4F8  # LISU LETTER TONE MYA TI
+<Multi_key> <z> <f> <comma> <space> : "ꓹ"  UA4F9  # LISU LETTER TONE NA PO
+<Multi_key> <z> <f> <period> <period> : "ꓺ"  UA4FA  # LISU LETTER TONE MYA CYA
+<Multi_key> <z> <f> <period> <comma> : "ꓻ"  UA4FB  # LISU LETTER TONE MYA BO
+<Multi_key> <z> <f> <semicolon> : "ꓼ"  UA4FC  # LISU LETTER TONE MYA NA
+<Multi_key> <z> <f> <colon> : "ꓽ"  UA4FD  # LISU LETTER TONE MYA JEU
+
+<Multi_key> <z> <f> <minus> <period> : "꓾"  UA4FE  # LISU PUNCTUATION COMMA
+<Multi_key> <z> <f> <equal> : "꓿"  UA4FF  # LISU PUNCTUATION FULL STOP
+
 # (m = Mongolian)
 
 <Multi_key> <z> <m> <a> : "ᠠ" U1820   # MONGOLIAN LETTER A
@@ -8605,6 +8661,123 @@ include "%L"
 <Multi_key> <z> <m> <V> <3> : "᠍" U180D   # MONGOLIAN FREE VARIATION SELECTOR THREE
 <Multi_key> <z> <m> <V> <S> : "᠎" U180E   # MONGOLIAN VOWEL SEPARATOR
 <Multi_key> <z> <m> <V> <4> : "᠏" U180F   # MONGOLIAN FREE VARIATION SELECTOR FOUR
+
+# (p = Pollard/Miao)
+
+<Multi_key> <z> <p> <p> <space> : "𖼀"  U16F00  # MIAO LETTER PA
+<Multi_key> <z> <p> <b> <space> : "𖼁"  U16F01  # MIAO LETTER BA
+<Multi_key> <z> <p> <p> <l> <space> : "𖼃"  U16F03  # MIAO LETTER PLA
+<Multi_key> <z> <p> <m> <space> : "𖼄"  U16F04  # MIAO LETTER MA
+<Multi_key> <z> <p> <m> <h> <space> : "𖼅"  U16F05  # MIAO LETTER MHA
+<Multi_key> <z> <p> <f> <space> : "𖼇"  U16F07  # MIAO LETTER FA
+<Multi_key> <z> <p> <v> <space> : "𖼈"  U16F08  # MIAO LETTER VA
+<Multi_key> <z> <p> <v> <f> <space> : "𖼉"  U16F09  # MIAO LETTER VFA
+<Multi_key> <z> <p> <t> <space> : "𖼊"  U16F0A  # MIAO LETTER TA
+<Multi_key> <z> <p> <d> <space> : "𖼋"  U16F0B  # MIAO LETTER DA
+<Multi_key> <z> <p> <t> <t> <space> : "𖼎"  U16F0E  # MIAO LETTER TTA
+<Multi_key> <z> <p> <d> <d> <space> : "𖼏"  U16F0F  # MIAO LETTER DDA
+<Multi_key> <z> <p> <n> <space> : "𖼐"  U16F10  # MIAO LETTER NA
+<Multi_key> <z> <p> <n> <h> <space> : "𖼑"  U16F11  # MIAO LETTER NHA
+<Multi_key> <z> <p> <n> <n> <space> : "𖼔"  U16F14  # MIAO LETTER NNA
+<Multi_key> <z> <p> <n> <n> <h> <space> : "𖼕"  U16F15  # MIAO LETTER NNHA
+<Multi_key> <z> <p> <l> <space> : "𖼖"  U16F16  # MIAO LETTER LA
+<Multi_key> <z> <p> <l> <y> <space> : "𖼗"  U16F17  # MIAO LETTER LYA
+<Multi_key> <z> <p> <l> <h> <space> : "𖼘"  U16F18  # MIAO LETTER LHA
+<Multi_key> <z> <p> <l> <h> <y> <space> : "𖼙"  U16F19  # MIAO LETTER LHYA
+<Multi_key> <z> <p> <t> <l> <h> <space> : "𖼚"  U16F1A  # MIAO LETTER TLHA
+<Multi_key> <z> <p> <d> <l> <h> <space> : "𖼛"  U16F1B  # MIAO LETTER DLHA
+<Multi_key> <z> <p> <t> <l> <h> <y> <space> : "𖼜"  U16F1C  # MIAO LETTER TLHYA
+<Multi_key> <z> <p> <d> <l> <h> <y> <space> : "𖼝"  U16F1D  # MIAO LETTER DLHYA
+<Multi_key> <z> <p> <k> <space> : "𖼞"  U16F1E  # MIAO LETTER KA
+<Multi_key> <z> <p> <g> <space> : "𖼟"  U16F1F  # MIAO LETTER GA
+<Multi_key> <z> <p> <q> <space> : "𖼡"  U16F21  # MIAO LETTER QA
+<Multi_key> <z> <p> <q> <g> <space> : "𖼢"  U16F22  # MIAO LETTER QGA
+<Multi_key> <z> <p> <n> <g> <space> : "𖼣"  U16F23  # MIAO LETTER NGA
+<Multi_key> <z> <p> <n> <g> <h> <space> : "𖼤"  U16F24  # MIAO LETTER NGHA
+<Multi_key> <z> <p> <h> <space> : "𖼦"  U16F26  # MIAO LETTER HA
+<Multi_key> <z> <p> <x> <space> : "𖼧"  U16F27  # MIAO LETTER XA
+<Multi_key> <z> <p> <g> <h> <space> : "𖼨"  U16F28  # MIAO LETTER GHA
+<Multi_key> <z> <p> <g> <h> <h> <space> : "𖼩"  U16F29  # MIAO LETTER GHHA
+<Multi_key> <z> <p> <t> <s> <s> <space> : "𖼪"  U16F2A  # MIAO LETTER TSSA
+<Multi_key> <z> <p> <d> <z> <z> <space> : "𖼫"  U16F2B  # MIAO LETTER DZZA
+<Multi_key> <z> <p> <n> <y> <space> : "𖼬"  U16F2C  # MIAO LETTER NYA
+<Multi_key> <z> <p> <n> <y> <h> <space> : "𖼭"  U16F2D  # MIAO LETTER NYHA
+<Multi_key> <z> <p> <t> <s> <h> <space> : "𖼮"  U16F2E  # MIAO LETTER TSHA
+<Multi_key> <z> <p> <d> <z> <h> <space> : "𖼯"  U16F2F  # MIAO LETTER DZHA
+<Multi_key> <z> <p> <s> <h> <space> : "𖼳"  U16F33  # MIAO LETTER SHA
+<Multi_key> <z> <p> <s> <s> <space> : "𖼴"  U16F34  # MIAO LETTER SSA
+<Multi_key> <z> <p> <z> <h> <space> : "𖼵"  U16F35  # MIAO LETTER ZHA
+<Multi_key> <z> <p> <z> <s> <h> <space> : "𖼶"  U16F36  # MIAO LETTER ZSHA
+<Multi_key> <z> <p> <t> <s> <space> : "𖼷"  U16F37  # MIAO LETTER TSA
+<Multi_key> <z> <p> <d> <z> <space> : "𖼸"  U16F38  # MIAO LETTER DZA
+<Multi_key> <z> <p> <s> <space> : "𖼺"  U16F3A  # MIAO LETTER SA
+<Multi_key> <z> <p> <z> <space> : "𖼻"  U16F3B  # MIAO LETTER ZA
+<Multi_key> <z> <p> <z> <s> <space> : "𖼼"  U16F3C  # MIAO LETTER ZSA
+<Multi_key> <z> <p> <z> <z> <space> : "𖼽"  U16F3D  # MIAO LETTER ZZA
+<Multi_key> <z> <p> <z> <z> <s> <space> : "𖼾"  U16F3E  # MIAO LETTER ZZSA
+<Multi_key> <z> <p> <z> <z> <y> <space> : "𖽀"  U16F40  # MIAO LETTER ZZYA
+<Multi_key> <z> <p> <z> <z> <s> <y> <space> : "𖽁"  U16F41  # MIAO LETTER ZZSYA
+<Multi_key> <z> <p> <w> <space> : "𖽂"  U16F42  # MIAO LETTER WA
+
+<Multi_key> <z> <p> <underscore> <period> <Return> : "𖽏"  U16F4F  # MIAO SIGN CONSONANT MODIFIER BAR (NUKTA)
+<Multi_key> <z> <p> <C> : "𖽐"  U16F50  # MIAO LETTER NASALIZATION
+<Multi_key> <z> <p> <apostrophe> <Return> : "𖽑"  U16F51  # MIAO SIGN ASPIRATION
+
+<Multi_key> <z> <p> <a> <Return> : "𖽔"  U16F54  # MIAO VOWEL SIGN A
+<Multi_key> <z> <p> <a> <a> <Return> : "𖽕"  U16F55  # MIAO VOWEL SIGN AA
+<Multi_key> <z> <p> <a> <h> <h> <Return> : "𖽖"  U16F56  # MIAO VOWEL SIGN AHH
+<Multi_key> <z> <p> <a> <n> <Return> : "𖽗"  U16F57  # MIAO VOWEL SIGN AN
+<Multi_key> <z> <p> <a> <n> <g> <Return> : "𖽘"  U16F58  # MIAO VOWEL SIGN ANG
+<Multi_key> <z> <p> <o> <Return> : "𖽙"  U16F59  # MIAO VOWEL SIGN O
+<Multi_key> <z> <p> <o> <o> <Return> : "𖽚"  U16F5A  # MIAO VOWEL SIGN OO
+<Multi_key> <z> <p> <w> <o> <Return> : "𖽛"  U16F5B  # MIAO VOWEL SIGN WO
+<Multi_key> <z> <p> <w> <Return> : "𖽜"  U16F5C  # MIAO VOWEL SIGN W
+<Multi_key> <z> <p> <e> <Return> : "𖽝"  U16F5D  # MIAO VOWEL SIGN E
+<Multi_key> <z> <p> <e> <n> <Return> : "𖽞"  U16F5E  # MIAO VOWEL SIGN EN
+<Multi_key> <z> <p> <e> <n> <g> <Return> : "𖽟"  U16F5F  # MIAO VOWEL SIGN ENG
+<Multi_key> <z> <p> <o> <e> <y> <Return> : "𖽠"  U16F60  # MIAO VOWEL SIGN OEY
+<Multi_key> <z> <p> <i> <Return> : "𖽡"  U16F61  # MIAO VOWEL SIGN I
+<Multi_key> <z> <p> <i> <a> <Return> : "𖽢"  U16F62  # MIAO VOWEL SIGN IA
+<Multi_key> <z> <p> <i> <a> <n> <Return> : "𖽣"  U16F63  # MIAO VOWEL SIGN IAN
+<Multi_key> <z> <p> <i> <a> <n> <g> <Return> : "𖽤"  U16F64  # MIAO VOWEL SIGN IANG
+<Multi_key> <z> <p> <i> <o> <Return> : "𖽥"  U16F65  # MIAO VOWEL SIGN IO
+<Multi_key> <z> <p> <i> <e> <Return> : "𖽦"  U16F66  # MIAO VOWEL SIGN IE
+<Multi_key> <z> <p> <i> <i> <Return> : "𖽧"  U16F67  # MIAO VOWEL SIGN II
+<Multi_key> <z> <p> <i> <u> <Return> : "𖽨"  U16F68  # MIAO VOWEL SIGN IU
+<Multi_key> <z> <p> <i> <n> <g> <Return> : "𖽩"  U16F69  # MIAO VOWEL SIGN ING
+<Multi_key> <z> <p> <u> <Return> : "𖽪"  U16F6A  # MIAO VOWEL SIGN U
+<Multi_key> <z> <p> <u> <a> <Return> : "𖽫"  U16F6B  # MIAO VOWEL SIGN UA
+<Multi_key> <z> <p> <u> <a> <n> <Return> : "𖽬"  U16F6C  # MIAO VOWEL SIGN UAN
+<Multi_key> <z> <p> <u> <a> <n> <g> <Return> : "𖽭"  U16F6D  # MIAO VOWEL SIGN UANG
+<Multi_key> <z> <p> <u> <u> <Return> : "𖽮"  U16F6E  # MIAO VOWEL SIGN UU
+<Multi_key> <z> <p> <u> <e> <i> <Return> : "𖽯"  U16F6F  # MIAO VOWEL SIGN UEI
+<Multi_key> <z> <p> <u> <n> <g> <Return> : "𖽰"  U16F70  # MIAO VOWEL SIGN UNG
+<Multi_key> <z> <p> <y> <Return> : "𖽱"  U16F71  # MIAO VOWEL SIGN Y
+<Multi_key> <z> <p> <y> <i> <Return> : "𖽲"  U16F72  # MIAO VOWEL SIGN YI
+<Multi_key> <z> <p> <a> <e> <Return> : "𖽳"  U16F73  # MIAO VOWEL SIGN AE
+<Multi_key> <z> <p> <a> <e> <e> <Return> : "𖽴"  U16F74  # MIAO VOWEL SIGN AEE
+<Multi_key> <z> <p> <e> <r> <r> <Return> : "𖽵"  U16F75  # MIAO VOWEL SIGN ERR
+<Multi_key> <z> <p> <e> <r> <Return> : "𖽷"  U16F77  # MIAO VOWEL SIGN ER
+<Multi_key> <z> <p> <a> <i> <Return> : "𖽹"  U16F79  # MIAO VOWEL SIGN AI
+<Multi_key> <z> <p> <e> <i> <Return> : "𖽺"  U16F7A  # MIAO VOWEL SIGN EI
+<Multi_key> <z> <p> <a> <u> <Return> : "𖽻"  U16F7B  # MIAO VOWEL SIGN AU
+<Multi_key> <z> <p> <o> <u> <Return> : "𖽼"  U16F7C  # MIAO VOWEL SIGN OU
+<Multi_key> <z> <p> <n> <Return> : "𖽽"  U16F7D  # MIAO VOWEL SIGN N
+<Multi_key> <z> <p> <n> <g> <Return> : "𖽾"  U16F7E  # MIAO VOWEL SIGN NG
+<Multi_key> <z> <p> <u> <o> <g> <Return> : "𖽿"  U16F7F  # MIAO VOWEL SIGN UOG
+<Multi_key> <z> <p> <y> <u> <i> <Return> : "𖾀"  U16F80  # MIAO VOWEL SIGN YUI
+<Multi_key> <z> <p> <o> <g> <Return> : "𖾁"  U16F81  # MIAO VOWEL SIGN OG
+<Multi_key> <z> <p> <o> <e> <r> <Return> : "𖾂"  U16F82  # MIAO VOWEL SIGN OER
+<Multi_key> <z> <p> <v> <w> <Return> : "𖾃"  U16F83  # MIAO VOWEL SIGN VW
+<Multi_key> <z> <p> <i> <g> <Return> : "𖾄"  U16F84  # MIAO VOWEL SIGN IG
+<Multi_key> <z> <p> <e> <a> <Return> : "𖾅"  U16F85  # MIAO VOWEL SIGN EA
+<Multi_key> <z> <p> <i> <o> <n> <g> <Return> : "𖾆"  U16F86  # MIAO VOWEL SIGN IONG
+<Multi_key> <z> <p> <u> <i> <Return> : "𖾇"  U16F87  # MIAO VOWEL SIGN UI
+
+<Multi_key> <z> <p> <T> <greater> <Return> : "𖾏"  U16F8F  # MIAO TONE RIGHT
+<Multi_key> <z> <p> <T> <greater> <asciicircum> <Return> : "𖾐"  U16F90  # MIAO TONE TOP RIGHT
+<Multi_key> <z> <p> <T> <asciicircum> <Return> : "𖾑"  U16F91  # MIAO TONE ABOVE
+<Multi_key> <z> <p> <T> <v> <Return> : "𖾒"  U16F92  # MIAO TONE BELOW
 
 # (t = Tibetan) follows ISO 15919 like other Brahmic scripts, but code didn't fit there
 
