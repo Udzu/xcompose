@@ -3,7 +3,7 @@
 
 > Link: https://github.com/Udzu/xcompose/blob/master/Compose
 
-This repo also hosts my personal .XCompose file, which contains over 12 000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
+This repo also hosts my personal .XCompose file, which contains over 13 000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
 
 The file aims for memorability and consistency. As a result, a small number of the rules here conflict with the default system rules, with workarounds given in the comments (e.g. \<underscore>'s usefulness for subscripting often interferes with its system use for macrons, for which \<minus> works equally well as an alternative).
 
@@ -27,7 +27,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (362): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (6066)
+### Non-Latin script characters (6093)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِتْ⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (83): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
@@ -38,7 +38,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Geʽez**, Adlam, Bamum, Mende Kikakui, NKo & Vai (872): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧𞠺𞠾𞡊⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian**: Mtavruli, Nuskhuri, Mkhedruli (154): რედდიტ, ႰႤႣႣႨႲ etc
 * **Greek**, Coptic, Cypriot, Gothic & Linear B (617): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵 etc
-* **Hebrew**, Aramaic, Phoenician, & Samaritan (193): ⁧רֶדִיט⁩, ⁧𐡓𐡃𐡉𐡕⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc
+* **Hebrew**, Aramaic, Lydian, Phoenician, & Samaritan (193): ⁧רֶדִיט⁩, ⁧𐡓𐡃𐡉𐡕⁩, ⁧𐤭𐤤𐤣𐤣𐤦𐤯⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc
 * **Japanese** (mostly kana) (302): 「レディット」 etc
 * **Korean** (using positional jamo) (118): 레딧 etc
 * **International Morse Code** (76): ···---··· etc
