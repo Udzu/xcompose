@@ -27,7 +27,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (362): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (5446)
+### Non-Latin script characters (5534)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِتْ⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (83): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
@@ -35,7 +35,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Unified English Braille** (79): ⠗⠫⠙⠊⠞ etc
 * **ConScripts**: Cherokee, Deseret, Inuktitut Syllabics, Ol Chiki, Shavian (488): ᎴᏗᏛ, 𐐡𐐇𐐔𐐆𐐓, ᕃᑎᑦ, ᱨᱮᱫᱫᱤᱛ, 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** & Glagolitic (190): Ре́ддит, Ⱃⰵδδιτ etc
-* **Geʽez**, Adlam, NKo & Vai (502): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
+* **Geʽez**, Adlam, Bamum, NKo & Vai (872): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian**: Mtavruli, Nuskhuri, Mkhedruli (154): რედდიტ, ႰႤႣႣႨႲ etc
 * **Greek**, Coptic & Gothic (488): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, 𐍂𐌴𐌳𐌳𐌹𐍄 etc
 * **Hebrew**, Phoenician, & Samaritan (162): ⁧רֶדִיט⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc
