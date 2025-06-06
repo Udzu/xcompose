@@ -3609,7 +3609,7 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# covers Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada,
+# covers Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada, Mahajani,
 # Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu. See Zhuyin section for Tibetan.
 
 # (based on 7-bit ISO 15919)
@@ -4367,6 +4367,55 @@ include "%L"
 # Punctuation
 
 <Multi_key> <b> <G> <o> <period>         : "੶"  U0A76  # GURMUKHI ABBREVIATION SIGN (conflicts)
+
+# (j = Mahajani) (not the best abbreviation but not much choice)
+
+# Independent vowels
+
+<Multi_key> <b> <j> <a> <space>                    : "𑅐"  U11150  # MAHAJANI LETTER A
+<Multi_key> <b> <j> <i> <space>                    : "𑅑"  U11151  # MAHAJANI LETTER I
+<Multi_key> <b> <j> <u> <space>                    : "𑅒"  U11152  # MAHAJANI LETTER U
+<Multi_key> <b> <j> <e> <space>                    : "𑅓"  U11153  # MAHAJANI LETTER E
+<Multi_key> <b> <j> <o> <space>                    : "𑅔"  U11154  # MAHAJANI LETTER O
+
+# Consonants
+
+<Multi_key> <b> <j> <k> <space>                    : "𑅕"  U11155  # MAHAJANI LETTER KA
+<Multi_key> <b> <j> <k> <h>                        : "𑅖"  U11156  # MAHAJANI LETTER KHA
+<Multi_key> <b> <j> <g> <space>                    : "𑅗"  U11157  # MAHAJANI LETTER GA
+<Multi_key> <b> <j> <g> <h>                        : "𑅘"  U11158  # MAHAJANI LETTER GHA
+<Multi_key> <b> <j> <c> <space>                    : "𑅙"  U11159  # MAHAJANI LETTER CA
+<Multi_key> <b> <j> <c> <h>                        : "𑅚"  U1115A  # MAHAJANI LETTER CHA
+<Multi_key> <b> <j> <j> <space>                    : "𑅛"  U1115B  # MAHAJANI LETTER JA
+<Multi_key> <b> <j> <j> <h>                        : "𑅜"  U1115C  # MAHAJANI LETTER JHA
+<Multi_key> <b> <j> <asciitilde> <n>               : "𑅝"  U1115D  # MAHAJANI LETTER NYA
+<Multi_key> <b> <j> <period> <t> <space>           : "𑅞"  U1115E  # MAHAJANI LETTER TTA
+<Multi_key> <b> <j> <period> <t> <h>               : "𑅟"  U1115F  # MAHAJANI LETTER TTHA
+<Multi_key> <b> <j> <period> <d> <space>           : "𑅠"  U11160  # MAHAJANI LETTER DDA
+<Multi_key> <b> <j> <period> <d> <h>               : "𑅡"  U11161  # MAHAJANI LETTER DDHA
+<Multi_key> <b> <j> <period> <n>                   : "𑅢"  U11162  # MAHAJANI LETTER NNA
+<Multi_key> <b> <j> <t> <space>                    : "𑅣"  U11163  # MAHAJANI LETTER TA
+<Multi_key> <b> <j> <t> <h>                        : "𑅤"  U11164  # MAHAJANI LETTER THA
+<Multi_key> <b> <j> <d> <space>                    : "𑅥"  U11165  # MAHAJANI LETTER DA
+<Multi_key> <b> <j> <d> <h>                        : "𑅦"  U11166  # MAHAJANI LETTER DHA
+<Multi_key> <b> <j> <n>                            : "𑅧"  U11167  # MAHAJANI LETTER NA
+<Multi_key> <b> <j> <p> <space>                    : "𑅨"  U11168  # MAHAJANI LETTER PA
+<Multi_key> <b> <j> <p> <h>                        : "𑅩"  U11169  # MAHAJANI LETTER PHA
+<Multi_key> <b> <j> <b> <space>                    : "𑅪"  U1116A  # MAHAJANI LETTER BA
+<Multi_key> <b> <j> <b> <h>                        : "𑅫"  U1116B  # MAHAJANI LETTER BHA
+<Multi_key> <b> <j> <m>                            : "𑅬"  U1116C  # MAHAJANI LETTER MA
+<Multi_key> <b> <j> <r>                            : "𑅭"  U1116D  # MAHAJANI LETTER RA
+<Multi_key> <b> <j> <l>                            : "𑅮"  U1116E  # MAHAJANI LETTER LA
+<Multi_key> <b> <j> <v>                            : "𑅯"  U1116F  # MAHAJANI LETTER VA
+<Multi_key> <b> <j> <s>                            : "𑅰"  U11170  # MAHAJANI LETTER SA
+<Multi_key> <b> <j> <h>                            : "𑅱"  U11171  # MAHAJANI LETTER HA
+<Multi_key> <b> <j> <underscore> <r>               : "𑅲"  U11172  # MAHAJANI LETTER RRA
+
+# Other signs
+
+<Multi_key> <b> <j> <underscore> <period> <Return> : "𑅳"  U11173  # MAHAJANI SIGN NUKTA
+<Multi_key> <b> <j> <o> <period>                   : "𑅴"  U11174  # MAHAJANI ABBREVIATION SIGN
+<Multi_key> <b> <j> <Multi_key> <S> <O>            : "𑅵"  U11175  # MAHAJANI SECTION MARK
 
 # (k = Kannada)
 
