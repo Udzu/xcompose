@@ -18,16 +18,16 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (131): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2231)
+### Latin script characters (2234)
 * **International Phonetic Alphabet** (125): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
-* **Latin script letters** (239): Ƿ Ȝ ␢ ȵ etc
+* **Latin script letters** (242): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (262): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (197): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (362): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (5164)
+### Non-Latin script characters (5876)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِتْ⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (83): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
@@ -35,9 +35,9 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Unified English Braille** (79): ⠗⠫⠙⠊⠞ etc
 * **ConScripts**: Cherokee, Deseret, Inuktitut Syllabics, Ol Chiki, Shavian (488): ᎴᏗᏛ, 𐐡𐐇𐐔𐐆𐐓, ᕃᑎᑦ, ᱨᱮᱫᱫᱤᱛ, 𐑮𐑧𐑛𐑦𐑑 etc
 * **Cyrillic** & Glagolitic (190): Ре́ддит, Ⱃⰵδδιτ etc
-* **Geʽez**, Adlam & NKo (502): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ⁧ߙߍߘߘߌߕ⁩ etc
+* **Geʽez**, Adlam, Bamum, Mende Kikakui, NKo & Vai (872): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧𞠺𞠾𞡊⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian**: Mtavruli, Nuskhuri, Mkhedruli (154): რედდიტ, ႰႤႣႣႨႲ etc
-* **Greek**, Coptic & Gothic (488): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, 𐍂𐌴𐌳𐌳𐌹𐍄 etc
+* **Greek**, Coptic, Cypriot, Gothic & Linear B (617): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵 etc
 * **Hebrew**, Phoenician, & Samaritan (162): ⁧רֶדִיט⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc
 * **Japanese** (mostly kana) (302): 「レディット」 etc
 * **Korean** (using positional jamo) (118): 레딧 etc
@@ -47,11 +47,11 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Zhuyin**, Mongolian, Tai Le & Tibetan (304): ㄏㄨㄥˊㄉㄧˊ, ᠷᠡᠳᠢᠲ, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (3487)
-* **Emoji** (1526): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+### Symbols (3514)
+* **Emoji** (1552): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (271): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
-* **Technical** (83): ⏻ ⎙ ⌘ etc
-* **Numerals** (84): 𝍸𝍷 𝍵 Ⅻ ↁ etc
+* **Technical** (84): ⏻ ⎙ ⌘ etc
+* **Numerals** (129): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (112): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc

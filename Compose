@@ -854,6 +854,7 @@ include "%L"
 <Multi_key> <minus> <R>             : "Ɍ"  U024C  # LATIN CAPITAL LETTER R WITH STROKE
 <Multi_key> <minus> <r>             : "ɍ"  U024D  # LATIN SMALL LETTER R WITH STROKE
 <Multi_key> <minus> <T>             : "Ŧ"  U0166  # LATIN CAPITAL LETTER T WITH STROKE
+<Multi_key> <minus> <t>             : "ŧ"  U0167  # LATIN SMALL LETTER T WITH STROKE
 <Multi_key> <minus> <Y>             : "Ɏ"  U024E  # LATIN CAPITAL LETTER Y WITH STROKE
 <Multi_key> <minus> <y>             : "ɏ"  U024F  # LATIN SMALL LETTER Y WITH STROKE
 <Multi_key> <minus> <z>             : "ƶ"  U01B6  # LATIN SMALL LETTER Z WITH STROKE
@@ -891,11 +892,14 @@ include "%L"
 <Multi_key> <slash> <S>             : "Ꞩ"  UA7A8  # LATIN CAPITAL LETTER S WITH OBLIQUE STROKE
 <Multi_key> <slash> <s>             : "ꞩ"  UA7A9  # LATIN SMALL LETTER S WITH OBLIQUE STROKE
 <Multi_key> <slash> <T>             : "Ⱦ"  U023E  # LATIN CAPITAL LETTER T WITH DIAGONAL STROKE (conflicts with Ŧ, use -T)
+<Multi_key> <slash> <t>             : "ⱦ"  U2C66  # LATIN SMALL LETTER T WITH DIAGONAL STROKE (conflicts with ŧ, use -t)
 <Multi_key> <slash> <U>             : "Ꞹ"  UA7B8  # LATIN CAPITAL LETTER U WITH STROKE
 <Multi_key> <slash> <V>             : "Ꝟ"  UA75E  # LATIN CAPITAL LETTER V WITH DIAGONAL STROKE
 <Multi_key> <slash> <v>             : "ꝟ"  UA75F  # LATIN SMALL LETTER V WITH DIAGONAL STROKE (conflicts with √, use v/)
 <Multi_key> <slash> <Multi_key> <T> <H> : "ꝥ"  UA765  # LATIN SMALL LETTER THORN WITH STROKE
 <Multi_key> <slash> <Multi_key> <t> <h> : "Ꝥ"  UA764  # LATIN CAPITAL LETTER THORN WITH STROKE
+<Multi_key> <slash> <Multi_key> <f> <s> : "ẜ"  U1E9C  # LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
+<Multi_key> <slash> <Multi_key> <l> <s> : "ẜ"  U1E9C  # LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
 
 <Multi_key> <d> <at> : "ȡ"  U0221  # LATIN SMALL LETTER D WITH CURL
 <Multi_key> <l> <at> : "ȴ"  U0234  # LATIN SMALL LETTER L WITH CURL
@@ -6107,9 +6111,9 @@ include "%L"
 <Multi_key> <C> <S> <y> <u> <h> : "𐑾" U1047E   # SHAVIAN LETTER IAN
 <Multi_key> <C> <S> <y> <o> <o> : "𐑿" U1047F   # SHAVIAN LETTER YEW
 
-###################################
-# (g) Greek (and Coptic & Gothic) #
-###################################
+######################################################
+# (g) Greek (and Coptic, Cypriot, Gothic & Linear B) #
+######################################################
 
 <Multi_key> <g> <c> <A> : "Α"  U0391   # GREEK CAPITAL LETTER ALPHA
 <Multi_key> <g> <c> <B> : "Β"  U0392   # GREEK CAPITAL LETTER BETA
@@ -6183,6 +6187,64 @@ include "%L"
 <Multi_key> <g> <numbersign> <6> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
 <Multi_key> <g> <numbersign> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
 <Multi_key> <g> <numbersign> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
+
+# (C = Cypriot)
+
+<Multi_key> <g> <C> <a> : "𐠀"  U10800  # CYPRIOT SYLLABLE A
+<Multi_key> <g> <C> <e> : "𐠁"  U10801  # CYPRIOT SYLLABLE E
+<Multi_key> <g> <C> <i> : "𐠂"  U10802  # CYPRIOT SYLLABLE I
+<Multi_key> <g> <C> <o> : "𐠃"  U10803  # CYPRIOT SYLLABLE O
+<Multi_key> <g> <C> <u> : "𐠄"  U10804  # CYPRIOT SYLLABLE U
+<Multi_key> <g> <C> <j> <a> : "𐠅"  U10805  # CYPRIOT SYLLABLE JA
+<Multi_key> <g> <C> <j> <o> : "𐠈"  U10808  # CYPRIOT SYLLABLE JO
+<Multi_key> <g> <C> <k> <a> : "𐠊"  U1080A  # CYPRIOT SYLLABLE KA
+<Multi_key> <g> <C> <k> <e> : "𐠋"  U1080B  # CYPRIOT SYLLABLE KE
+<Multi_key> <g> <C> <k> <i> : "𐠌"  U1080C  # CYPRIOT SYLLABLE KI
+<Multi_key> <g> <C> <k> <o> : "𐠍"  U1080D  # CYPRIOT SYLLABLE KO
+<Multi_key> <g> <C> <k> <u> : "𐠎"  U1080E  # CYPRIOT SYLLABLE KU
+<Multi_key> <g> <C> <l> <a> : "𐠏"  U1080F  # CYPRIOT SYLLABLE LA
+<Multi_key> <g> <C> <l> <e> : "𐠐"  U10810  # CYPRIOT SYLLABLE LE
+<Multi_key> <g> <C> <l> <i> : "𐠑"  U10811  # CYPRIOT SYLLABLE LI
+<Multi_key> <g> <C> <l> <o> : "𐠒"  U10812  # CYPRIOT SYLLABLE LO
+<Multi_key> <g> <C> <l> <u> : "𐠓"  U10813  # CYPRIOT SYLLABLE LU
+<Multi_key> <g> <C> <m> <a> : "𐠔"  U10814  # CYPRIOT SYLLABLE MA
+<Multi_key> <g> <C> <m> <e> : "𐠕"  U10815  # CYPRIOT SYLLABLE ME
+<Multi_key> <g> <C> <m> <i> : "𐠖"  U10816  # CYPRIOT SYLLABLE MI
+<Multi_key> <g> <C> <m> <o> : "𐠗"  U10817  # CYPRIOT SYLLABLE MO
+<Multi_key> <g> <C> <m> <u> : "𐠘"  U10818  # CYPRIOT SYLLABLE MU
+<Multi_key> <g> <C> <n> <a> : "𐠙"  U10819  # CYPRIOT SYLLABLE NA
+<Multi_key> <g> <C> <n> <e> : "𐠚"  U1081A  # CYPRIOT SYLLABLE NE
+<Multi_key> <g> <C> <n> <i> : "𐠛"  U1081B  # CYPRIOT SYLLABLE NI
+<Multi_key> <g> <C> <n> <o> : "𐠜"  U1081C  # CYPRIOT SYLLABLE NO
+<Multi_key> <g> <C> <n> <u> : "𐠝"  U1081D  # CYPRIOT SYLLABLE NU
+<Multi_key> <g> <C> <p> <a> : "𐠞"  U1081E  # CYPRIOT SYLLABLE PA
+<Multi_key> <g> <C> <p> <e> : "𐠟"  U1081F  # CYPRIOT SYLLABLE PE
+<Multi_key> <g> <C> <p> <i> : "𐠠"  U10820  # CYPRIOT SYLLABLE PI
+<Multi_key> <g> <C> <p> <o> : "𐠡"  U10821  # CYPRIOT SYLLABLE PO
+<Multi_key> <g> <C> <p> <u> : "𐠢"  U10822  # CYPRIOT SYLLABLE PU
+<Multi_key> <g> <C> <r> <a> : "𐠣"  U10823  # CYPRIOT SYLLABLE RA
+<Multi_key> <g> <C> <r> <e> : "𐠤"  U10824  # CYPRIOT SYLLABLE RE
+<Multi_key> <g> <C> <r> <i> : "𐠥"  U10825  # CYPRIOT SYLLABLE RI
+<Multi_key> <g> <C> <r> <o> : "𐠦"  U10826  # CYPRIOT SYLLABLE RO
+<Multi_key> <g> <C> <r> <u> : "𐠧"  U10827  # CYPRIOT SYLLABLE RU
+<Multi_key> <g> <C> <s> <a> : "𐠨"  U10828  # CYPRIOT SYLLABLE SA
+<Multi_key> <g> <C> <s> <e> : "𐠩"  U10829  # CYPRIOT SYLLABLE SE
+<Multi_key> <g> <C> <s> <i> : "𐠪"  U1082A  # CYPRIOT SYLLABLE SI
+<Multi_key> <g> <C> <s> <o> : "𐠫"  U1082B  # CYPRIOT SYLLABLE SO
+<Multi_key> <g> <C> <s> <u> : "𐠬"  U1082C  # CYPRIOT SYLLABLE SU
+<Multi_key> <g> <C> <t> <a> : "𐠭"  U1082D  # CYPRIOT SYLLABLE TA
+<Multi_key> <g> <C> <t> <e> : "𐠮"  U1082E  # CYPRIOT SYLLABLE TE
+<Multi_key> <g> <C> <t> <i> : "𐠯"  U1082F  # CYPRIOT SYLLABLE TI
+<Multi_key> <g> <C> <t> <o> : "𐠰"  U10830  # CYPRIOT SYLLABLE TO
+<Multi_key> <g> <C> <t> <u> : "𐠱"  U10831  # CYPRIOT SYLLABLE TU
+<Multi_key> <g> <C> <w> <a> : "𐠲"  U10832  # CYPRIOT SYLLABLE WA
+<Multi_key> <g> <C> <w> <e> : "𐠳"  U10833  # CYPRIOT SYLLABLE WE
+<Multi_key> <g> <C> <w> <i> : "𐠴"  U10834  # CYPRIOT SYLLABLE WI
+<Multi_key> <g> <C> <w> <o> : "𐠵"  U10835  # CYPRIOT SYLLABLE WO
+<Multi_key> <g> <C> <x> <a> : "𐠷"  U10837  # CYPRIOT SYLLABLE XA
+<Multi_key> <g> <C> <x> <e> : "𐠸"  U10838  # CYPRIOT SYLLABLE XE
+<Multi_key> <g> <C> <z> <a> : "𐠼"  U1083C  # CYPRIOT SYLLABLE ZA
+<Multi_key> <g> <C> <z> <o> : "𐠿"  U1083F  # CYPRIOT SYLLABLE ZO
 
 # (p/P = Coptic) (not the best abbreviation, but think gp = egyptian)
 
@@ -6312,232 +6374,310 @@ include "%L"
 <Multi_key> <g> <G> <minus> <o> : "𐍉" U10349   # GOTHIC LETTER OTHAL
 <Multi_key> <g> <G> <9> <0> <0> : "𐍊" U1034A   # GOTHIC LETTER NINE HUNDRED
 
+# (L = Linear B)
+
+<Multi_key> <g> <L> <a> : "𐀀"  U10000  # LINEAR B SYLLABLE B008 A
+<Multi_key> <g> <L> <e> : "𐀁"  U10001  # LINEAR B SYLLABLE B038 E
+<Multi_key> <g> <L> <i> : "𐀂"  U10002  # LINEAR B SYLLABLE B028 I
+<Multi_key> <g> <L> <o> : "𐀃"  U10003  # LINEAR B SYLLABLE B061 O
+<Multi_key> <g> <L> <u> : "𐀄"  U10004  # LINEAR B SYLLABLE B010 U
+<Multi_key> <g> <L> <d> <a> : "𐀅"  U10005  # LINEAR B SYLLABLE B001 DA
+<Multi_key> <g> <L> <d> <e> : "𐀆"  U10006  # LINEAR B SYLLABLE B045 DE
+<Multi_key> <g> <L> <d> <i> : "𐀇"  U10007  # LINEAR B SYLLABLE B007 DI
+<Multi_key> <g> <L> <d> <o> : "𐀈"  U10008  # LINEAR B SYLLABLE B014 DO
+<Multi_key> <g> <L> <d> <u> : "𐀉"  U10009  # LINEAR B SYLLABLE B051 DU
+<Multi_key> <g> <L> <j> <a> : "𐀊"  U1000A  # LINEAR B SYLLABLE B057 JA
+<Multi_key> <g> <L> <j> <e> : "𐀋"  U1000B  # LINEAR B SYLLABLE B046 JE
+<Multi_key> <g> <L> <j> <o> : "𐀍"  U1000D  # LINEAR B SYLLABLE B036 JO
+<Multi_key> <g> <L> <j> <u> : "𐀎"  U1000E  # LINEAR B SYLLABLE B065 JU
+<Multi_key> <g> <L> <k> <a> : "𐀏"  U1000F  # LINEAR B SYLLABLE B077 KA
+<Multi_key> <g> <L> <k> <e> : "𐀐"  U10010  # LINEAR B SYLLABLE B044 KE
+<Multi_key> <g> <L> <k> <i> : "𐀑"  U10011  # LINEAR B SYLLABLE B067 KI
+<Multi_key> <g> <L> <k> <o> : "𐀒"  U10012  # LINEAR B SYLLABLE B070 KO
+<Multi_key> <g> <L> <k> <u> : "𐀓"  U10013  # LINEAR B SYLLABLE B081 KU
+<Multi_key> <g> <L> <m> <a> : "𐀔"  U10014  # LINEAR B SYLLABLE B080 MA
+<Multi_key> <g> <L> <m> <e> : "𐀕"  U10015  # LINEAR B SYLLABLE B013 ME
+<Multi_key> <g> <L> <m> <i> : "𐀖"  U10016  # LINEAR B SYLLABLE B073 MI
+<Multi_key> <g> <L> <m> <o> : "𐀗"  U10017  # LINEAR B SYLLABLE B015 MO
+<Multi_key> <g> <L> <m> <u> : "𐀘"  U10018  # LINEAR B SYLLABLE B023 MU
+<Multi_key> <g> <L> <n> <a> : "𐀙"  U10019  # LINEAR B SYLLABLE B006 NA
+<Multi_key> <g> <L> <n> <e> : "𐀚"  U1001A  # LINEAR B SYLLABLE B024 NE
+<Multi_key> <g> <L> <n> <i> : "𐀛"  U1001B  # LINEAR B SYLLABLE B030 NI
+<Multi_key> <g> <L> <n> <o> : "𐀜"  U1001C  # LINEAR B SYLLABLE B052 NO
+<Multi_key> <g> <L> <n> <u> : "𐀝"  U1001D  # LINEAR B SYLLABLE B055 NU
+<Multi_key> <g> <L> <p> <a> : "𐀞"  U1001E  # LINEAR B SYLLABLE B003 PA
+<Multi_key> <g> <L> <p> <e> : "𐀟"  U1001F  # LINEAR B SYLLABLE B072 PE
+<Multi_key> <g> <L> <p> <i> : "𐀠"  U10020  # LINEAR B SYLLABLE B039 PI
+<Multi_key> <g> <L> <p> <o> : "𐀡"  U10021  # LINEAR B SYLLABLE B011 PO
+<Multi_key> <g> <L> <p> <u> : "𐀢"  U10022  # LINEAR B SYLLABLE B050 PU
+<Multi_key> <g> <L> <q> <a> : "𐀣"  U10023  # LINEAR B SYLLABLE B016 QA
+<Multi_key> <g> <L> <q> <e> : "𐀤"  U10024  # LINEAR B SYLLABLE B078 QE
+<Multi_key> <g> <L> <q> <i> : "𐀥"  U10025  # LINEAR B SYLLABLE B021 QI
+<Multi_key> <g> <L> <q> <o> : "𐀦"  U10026  # LINEAR B SYLLABLE B032 QO
+<Multi_key> <g> <L> <r> <a> : "𐀨"  U10028  # LINEAR B SYLLABLE B060 RA
+<Multi_key> <g> <L> <r> <e> : "𐀩"  U10029  # LINEAR B SYLLABLE B027 RE
+<Multi_key> <g> <L> <r> <i> : "𐀪"  U1002A  # LINEAR B SYLLABLE B053 RI
+<Multi_key> <g> <L> <r> <o> : "𐀫"  U1002B  # LINEAR B SYLLABLE B002 RO
+<Multi_key> <g> <L> <r> <u> : "𐀬"  U1002C  # LINEAR B SYLLABLE B026 RU
+<Multi_key> <g> <L> <s> <a> : "𐀭"  U1002D  # LINEAR B SYLLABLE B031 SA
+<Multi_key> <g> <L> <s> <e> : "𐀮"  U1002E  # LINEAR B SYLLABLE B009 SE
+<Multi_key> <g> <L> <s> <i> : "𐀯"  U1002F  # LINEAR B SYLLABLE B041 SI
+<Multi_key> <g> <L> <s> <o> : "𐀰"  U10030  # LINEAR B SYLLABLE B012 SO
+<Multi_key> <g> <L> <s> <u> : "𐀱"  U10031  # LINEAR B SYLLABLE B058 SU
+<Multi_key> <g> <L> <t> <a> : "𐀲"  U10032  # LINEAR B SYLLABLE B059 TA
+<Multi_key> <g> <L> <t> <e> : "𐀳"  U10033  # LINEAR B SYLLABLE B004 TE
+<Multi_key> <g> <L> <t> <i> : "𐀴"  U10034  # LINEAR B SYLLABLE B037 TI
+<Multi_key> <g> <L> <t> <o> : "𐀵"  U10035  # LINEAR B SYLLABLE B005 TO
+<Multi_key> <g> <L> <t> <u> : "𐀶"  U10036  # LINEAR B SYLLABLE B069 TU
+<Multi_key> <g> <L> <w> <a> : "𐀷"  U10037  # LINEAR B SYLLABLE B054 WA
+<Multi_key> <g> <L> <w> <e> : "𐀸"  U10038  # LINEAR B SYLLABLE B075 WE
+<Multi_key> <g> <L> <w> <i> : "𐀹"  U10039  # LINEAR B SYLLABLE B040 WI
+<Multi_key> <g> <L> <w> <o> : "𐀺"  U1003A  # LINEAR B SYLLABLE B042 WO
+<Multi_key> <g> <L> <z> <a> : "𐀼"  U1003C  # LINEAR B SYLLABLE B017 ZA
+<Multi_key> <g> <L> <z> <e> : "𐀽"  U1003D  # LINEAR B SYLLABLE B074 ZE
+<Multi_key> <g> <L> <z> <o> : "𐀿"  U1003F  # LINEAR B SYLLABLE B020 ZO
+
+<Multi_key> <g> <L> <A> <2> : "𐁀"  U10040  # LINEAR B SYLLABLE B025 A2
+<Multi_key> <g> <L> <A> <3> : "𐁁"  U10041  # LINEAR B SYLLABLE B043 A3
+<Multi_key> <g> <L> <A> <U> : "𐁂"  U10042  # LINEAR B SYLLABLE B085 AU
+<Multi_key> <g> <L> <D> <W> <E> : "𐁃"  U10043  # LINEAR B SYLLABLE B071 DWE
+<Multi_key> <g> <L> <D> <W> <O> : "𐁄"  U10044  # LINEAR B SYLLABLE B090 DWO
+<Multi_key> <g> <L> <N> <W> <A> : "𐁅"  U10045  # LINEAR B SYLLABLE B048 NWA
+<Multi_key> <g> <L> <P> <U> <2> : "𐁆"  U10046  # LINEAR B SYLLABLE B029 PU2
+<Multi_key> <g> <L> <P> <T> <E> : "𐁇"  U10047  # LINEAR B SYLLABLE B062 PTE
+<Multi_key> <g> <L> <R> <A> <2> : "𐁈"  U10048  # LINEAR B SYLLABLE B076 RA2
+<Multi_key> <g> <L> <R> <A> <3> : "𐁉"  U10049  # LINEAR B SYLLABLE B033 RA3
+<Multi_key> <g> <L> <R> <O> <2> : "𐁊"  U1004A  # LINEAR B SYLLABLE B068 RO2
+<Multi_key> <g> <L> <T> <A> <2> : "𐁋"  U1004B  # LINEAR B SYLLABLE B066 TA2
+<Multi_key> <g> <L> <T> <W> <E> : "𐁌"  U1004C  # LINEAR B SYLLABLE B087 TWE
+<Multi_key> <g> <L> <T> <W> <O> : "𐁍"  U1004D  # LINEAR B SYLLABLE B091 TWO
+
 # mathematical alphanumerics (same convention as Latin alphanumerics above)
 
 # Convention: % + g/G + font + [weight] + character
 #   prefix: g corresponds to gc above, and G to gx
-#   font: n = normal, s = sans-serif, d = double-struck
+#   font: ∅ = normal, s = sans-serif, d = double-struck
 #   weight: ∅ = normal, * = bold, / = italic, */ = bold italic
 #   character: as above, with symbol variants preceded by @
 
-<Multi_key> <percent> <g> <n> <at> <D> : "∇" U2207   # NABLA
-<Multi_key> <percent> <G> <n> <at> <T> <H> : "ϴ" U03F4   # GREEK CAPITAL THETA SYMBOL
-<Multi_key> <percent> <g> <n> <at> <d> : "∂" U2202   # PARTIAL DIFFERENTIAL
-<Multi_key> <percent> <g> <n> <at> <e> : "ϵ" U03F5   # GREEK LUNATE EPSILON SYMBOL
-<Multi_key> <percent> <G> <n> <at> <t> <h> : "ϑ" U03D1   # GREEK THETA SYMBOL
-<Multi_key> <percent> <g> <n> <at> <k> : "ϰ" U03F0   # GREEK KAPPA SYMBOL
-<Multi_key> <percent> <g> <n> <at> <p> : "ϖ" U03D6   # GREEK PI SYMBOL
-<Multi_key> <percent> <g> <n> <at> <r> : "ϱ" U03F1   # GREEK RHO SYMBOL
-<Multi_key> <percent> <g> <n> <at> <f> : "ϕ" U03D5   # GREEK PHI SYMBOL
-<Multi_key> <percent> <G> <n> <at> <p> <h> : "ϕ" U03D5   # GREEK PHI SYMBOL
+<Multi_key> <percent> <g> <at> <D> : "∇" U2207   # NABLA
+<Multi_key> <percent> <G> <at> <T> <H> : "ϴ" U03F4   # GREEK CAPITAL THETA SYMBOL
+<Multi_key> <percent> <g> <at> <d> : "∂" U2202   # PARTIAL DIFFERENTIAL
+<Multi_key> <percent> <g> <at> <e> : "ϵ" U03F5   # GREEK LUNATE EPSILON SYMBOL
+<Multi_key> <percent> <G> <at> <t> <h> : "ϑ" U03D1   # GREEK THETA SYMBOL
+<Multi_key> <percent> <g> <at> <k> : "ϰ" U03F0   # GREEK KAPPA SYMBOL
+<Multi_key> <percent> <g> <at> <p> : "ϖ" U03D6   # GREEK PI SYMBOL
+<Multi_key> <percent> <g> <at> <r> : "ϱ" U03F1   # GREEK RHO SYMBOL
+<Multi_key> <percent> <g> <at> <f> : "ϕ" U03D5   # GREEK PHI SYMBOL
+<Multi_key> <percent> <G> <at> <p> <h> : "ϕ" U03D5   # GREEK PHI SYMBOL
 # additional Greek letter variants not represented in the alphanumerics block
-<Multi_key> <percent> <g> <n> <at> <U> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
-<Multi_key> <percent> <g> <n> <at> <Y> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
-<Multi_key> <percent> <g> <n> <at> <b> : "ϐ" U03D0   # GREEK BETA SYMBOL
-<Multi_key> <percent> <g> <n> <at> <s> : "ϲ" U03F2   # GREEK LUNATE SIGMA SYMBOL
+<Multi_key> <percent> <g> <at> <U> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
+<Multi_key> <percent> <g> <at> <Y> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
+<Multi_key> <percent> <g> <at> <b> : "ϐ" U03D0   # GREEK BETA SYMBOL
+<Multi_key> <percent> <g> <at> <s> : "ϲ" U03F2   # GREEK LUNATE SIGMA SYMBOL
 
-<Multi_key> <percent> <g> <n> <asterisk> <A> : "𝚨" U1D6A8    # MATHEMATICAL BOLD CAPITAL ALPHA
-<Multi_key> <percent> <g> <n> <asterisk> <B> : "𝚩" U1D6A9    # MATHEMATICAL BOLD CAPITAL BETA
-<Multi_key> <percent> <g> <n> <asterisk> <G> : "𝚪" U1D6AA    # MATHEMATICAL BOLD CAPITAL GAMMA
-<Multi_key> <percent> <g> <n> <asterisk> <D> : "𝚫" U1D6AB    # MATHEMATICAL BOLD CAPITAL DELTA
-<Multi_key> <percent> <g> <n> <asterisk> <E> : "𝚬" U1D6AC    # MATHEMATICAL BOLD CAPITAL EPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <Z> : "𝚭" U1D6AD    # MATHEMATICAL BOLD CAPITAL ZETA
-<Multi_key> <percent> <g> <n> <asterisk> <H> : "𝚮" U1D6AE    # MATHEMATICAL BOLD CAPITAL ETA
-<Multi_key> <percent> <G> <n> <asterisk> <T> <H> : "𝚯" U1D6AF    # MATHEMATICAL BOLD CAPITAL THETA
-<Multi_key> <percent> <g> <n> <asterisk> <I> : "𝚰" U1D6B0    # MATHEMATICAL BOLD CAPITAL IOTA
-<Multi_key> <percent> <g> <n> <asterisk> <K> : "𝚱" U1D6B1    # MATHEMATICAL BOLD CAPITAL KAPPA
-<Multi_key> <percent> <g> <n> <asterisk> <L> : "𝚲" U1D6B2    # MATHEMATICAL BOLD CAPITAL LAMDA
-<Multi_key> <percent> <g> <n> <asterisk> <M> : "𝚳" U1D6B3    # MATHEMATICAL BOLD CAPITAL MU
-<Multi_key> <percent> <g> <n> <asterisk> <N> : "𝚴" U1D6B4    # MATHEMATICAL BOLD CAPITAL NU
-<Multi_key> <percent> <g> <n> <asterisk> <X> : "𝚵" U1D6B5    # MATHEMATICAL BOLD CAPITAL XI
-<Multi_key> <percent> <g> <n> <asterisk> <O> : "𝚶" U1D6B6    # MATHEMATICAL BOLD CAPITAL OMICRON
-<Multi_key> <percent> <g> <n> <asterisk> <P> : "𝚷" U1D6B7    # MATHEMATICAL BOLD CAPITAL PI
-<Multi_key> <percent> <g> <n> <asterisk> <R> : "𝚸" U1D6B8    # MATHEMATICAL BOLD CAPITAL RHO
-<Multi_key> <percent> <G> <n> <asterisk> <at> <T> <H> : "𝚹" U1D6B9    # MATHEMATICAL BOLD CAPITAL THETA SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <S> : "𝚺" U1D6BA    # MATHEMATICAL BOLD CAPITAL SIGMA
-<Multi_key> <percent> <g> <n> <asterisk> <T> : "𝚻" U1D6BB    # MATHEMATICAL BOLD CAPITAL TAU
-<Multi_key> <percent> <g> <n> <asterisk> <Y> : "𝚼" U1D6BC    # MATHEMATICAL BOLD CAPITAL UPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <U> : "𝚼" U1D6BC    # MATHEMATICAL BOLD CAPITAL UPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <F> : "𝚽" U1D6BD    # MATHEMATICAL BOLD CAPITAL PHI
-<Multi_key> <percent> <G> <n> <asterisk> <P> <H> : "𝚽" U1D6BD    # MATHEMATICAL BOLD CAPITAL PHI
-<Multi_key> <percent> <g> <n> <asterisk> <C> : "𝚾" U1D6BE    # MATHEMATICAL BOLD CAPITAL CHI
-<Multi_key> <percent> <G> <n> <asterisk> <K> <H> : "𝚾" U1D6BE    # MATHEMATICAL BOLD CAPITAL CHI
-<Multi_key> <percent> <G> <n> <asterisk> <P> <S> : "𝚿" U1D6BF    # MATHEMATICAL BOLD CAPITAL PSI
-<Multi_key> <percent> <G> <n> <asterisk> <O> : "𝛀" U1D6C0    # MATHEMATICAL BOLD CAPITAL OMEGA
-<Multi_key> <percent> <g> <n> <asterisk> <at> <D> : "𝛁" U1D6C1    # MATHEMATICAL BOLD NABLA
-<Multi_key> <percent> <g> <n> <asterisk> <W> : "𝟊" U1D7CA   # MATHEMATICAL BOLD CAPITAL DIGAMMA
-<Multi_key> <percent> <g> <n> <asterisk> <a> : "𝛂" U1D6C2    # MATHEMATICAL BOLD SMALL ALPHA
-<Multi_key> <percent> <g> <n> <asterisk> <b> : "𝛃" U1D6C3    # MATHEMATICAL BOLD SMALL BETA
-<Multi_key> <percent> <g> <n> <asterisk> <g> : "𝛄" U1D6C4    # MATHEMATICAL BOLD SMALL GAMMA
-<Multi_key> <percent> <g> <n> <asterisk> <d> : "𝛅" U1D6C5    # MATHEMATICAL BOLD SMALL DELTA
-<Multi_key> <percent> <g> <n> <asterisk> <e> : "𝛆" U1D6C6    # MATHEMATICAL BOLD SMALL EPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <z> : "𝛇" U1D6C7    # MATHEMATICAL BOLD SMALL ZETA
-<Multi_key> <percent> <g> <n> <asterisk> <h> : "𝛈" U1D6C8    # MATHEMATICAL BOLD SMALL ETA
-<Multi_key> <percent> <G> <n> <asterisk> <t> <h> : "𝛉" U1D6C9    # MATHEMATICAL BOLD SMALL THETA
-<Multi_key> <percent> <g> <n> <asterisk> <i> : "𝛊" U1D6CA    # MATHEMATICAL BOLD SMALL IOTA
-<Multi_key> <percent> <g> <n> <asterisk> <k> : "𝛋" U1D6CB    # MATHEMATICAL BOLD SMALL KAPPA
-<Multi_key> <percent> <g> <n> <asterisk> <l> : "𝛌" U1D6CC    # MATHEMATICAL BOLD SMALL LAMDA
-<Multi_key> <percent> <g> <n> <asterisk> <m> : "𝛍" U1D6CD    # MATHEMATICAL BOLD SMALL MU
-<Multi_key> <percent> <g> <n> <asterisk> <n> : "𝛎" U1D6CE    # MATHEMATICAL BOLD SMALL NU
-<Multi_key> <percent> <g> <n> <asterisk> <x> : "𝛏" U1D6CF    # MATHEMATICAL BOLD SMALL XI
-<Multi_key> <percent> <g> <n> <asterisk> <o> : "𝛐" U1D6D0    # MATHEMATICAL BOLD SMALL OMICRON
-<Multi_key> <percent> <g> <n> <asterisk> <p> : "𝛑" U1D6D1    # MATHEMATICAL BOLD SMALL PI
-<Multi_key> <percent> <g> <n> <asterisk> <r> : "𝛒" U1D6D2    # MATHEMATICAL BOLD SMALL RHO
-<Multi_key> <percent> <g> <n> <asterisk> <greater> <s> : "𝛓" U1D6D3    # MATHEMATICAL BOLD SMALL FINAL SIGMA
-<Multi_key> <percent> <G> <n> <asterisk> <s> : "𝛓" U1D6D3    # MATHEMATICAL BOLD SMALL FINAL SIGMA
-<Multi_key> <percent> <g> <n> <asterisk> <s> : "𝛔" U1D6D4    # MATHEMATICAL BOLD SMALL SIGMA
-<Multi_key> <percent> <g> <n> <asterisk> <t> : "𝛕" U1D6D5    # MATHEMATICAL BOLD SMALL TAU
-<Multi_key> <percent> <g> <n> <asterisk> <y> : "𝛖" U1D6D6    # MATHEMATICAL BOLD SMALL UPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <u> : "𝛖" U1D6D6    # MATHEMATICAL BOLD SMALL UPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <f> : "𝛗" U1D6D7    # MATHEMATICAL BOLD SMALL PHI
-<Multi_key> <percent> <G> <n> <asterisk> <p> <h> : "𝛗" U1D6D7    # MATHEMATICAL BOLD SMALL PHI
-<Multi_key> <percent> <g> <n> <asterisk> <c> : "𝛘" U1D6D8    # MATHEMATICAL BOLD SMALL CHI
-<Multi_key> <percent> <G> <n> <asterisk> <k> <h> : "𝛘" U1D6D8    # MATHEMATICAL BOLD SMALL CHI
-<Multi_key> <percent> <G> <n> <asterisk> <p> <s> : "𝛙" U1D6D9    # MATHEMATICAL BOLD SMALL PSI
-<Multi_key> <percent> <G> <n> <asterisk> <o> : "𝛚" U1D6DA    # MATHEMATICAL BOLD SMALL OMEGA
-<Multi_key> <percent> <g> <n> <asterisk> <at> <d> : "𝛛" U1D6DB    # MATHEMATICAL BOLD PARTIAL DIFFERENTIAL
-<Multi_key> <percent> <g> <n> <asterisk> <at> <e> : "𝛜" U1D6DC    # MATHEMATICAL BOLD EPSILON SYMBOL
-<Multi_key> <percent> <G> <n> <asterisk> <at> <t> <h> : "𝛝" U1D6DD    # MATHEMATICAL BOLD THETA SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <at> <k> : "𝛞" U1D6DE    # MATHEMATICAL BOLD KAPPA SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <at> <f> : "𝛟" U1D6DF    # MATHEMATICAL BOLD PHI SYMBOL
-<Multi_key> <percent> <G> <n> <asterisk> <at> <p> <h> : "𝛟" U1D6DF    # MATHEMATICAL BOLD PHI SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <at> <r> : "𝛠" U1D6E0    # MATHEMATICAL BOLD RHO SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <at> <p> : "𝛡" U1D6E1    # MATHEMATICAL BOLD PI SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <w> : "𝟋" U1D7CB   # MATHEMATICAL BOLD SMALL DIGAMMA
+<Multi_key> <percent> <g> <asterisk> <A> : "𝚨" U1D6A8    # MATHEMATICAL BOLD CAPITAL ALPHA
+<Multi_key> <percent> <g> <asterisk> <B> : "𝚩" U1D6A9    # MATHEMATICAL BOLD CAPITAL BETA
+<Multi_key> <percent> <g> <asterisk> <G> : "𝚪" U1D6AA    # MATHEMATICAL BOLD CAPITAL GAMMA
+<Multi_key> <percent> <g> <asterisk> <D> : "𝚫" U1D6AB    # MATHEMATICAL BOLD CAPITAL DELTA
+<Multi_key> <percent> <g> <asterisk> <E> : "𝚬" U1D6AC    # MATHEMATICAL BOLD CAPITAL EPSILON
+<Multi_key> <percent> <g> <asterisk> <Z> : "𝚭" U1D6AD    # MATHEMATICAL BOLD CAPITAL ZETA
+<Multi_key> <percent> <g> <asterisk> <H> : "𝚮" U1D6AE    # MATHEMATICAL BOLD CAPITAL ETA
+<Multi_key> <percent> <G> <asterisk> <T> <H> : "𝚯" U1D6AF    # MATHEMATICAL BOLD CAPITAL THETA
+<Multi_key> <percent> <g> <asterisk> <I> : "𝚰" U1D6B0    # MATHEMATICAL BOLD CAPITAL IOTA
+<Multi_key> <percent> <g> <asterisk> <K> : "𝚱" U1D6B1    # MATHEMATICAL BOLD CAPITAL KAPPA
+<Multi_key> <percent> <g> <asterisk> <L> : "𝚲" U1D6B2    # MATHEMATICAL BOLD CAPITAL LAMDA
+<Multi_key> <percent> <g> <asterisk> <M> : "𝚳" U1D6B3    # MATHEMATICAL BOLD CAPITAL MU
+<Multi_key> <percent> <g> <asterisk> <N> : "𝚴" U1D6B4    # MATHEMATICAL BOLD CAPITAL NU
+<Multi_key> <percent> <g> <asterisk> <X> : "𝚵" U1D6B5    # MATHEMATICAL BOLD CAPITAL XI
+<Multi_key> <percent> <g> <asterisk> <O> : "𝚶" U1D6B6    # MATHEMATICAL BOLD CAPITAL OMICRON
+<Multi_key> <percent> <g> <asterisk> <P> : "𝚷" U1D6B7    # MATHEMATICAL BOLD CAPITAL PI
+<Multi_key> <percent> <g> <asterisk> <R> : "𝚸" U1D6B8    # MATHEMATICAL BOLD CAPITAL RHO
+<Multi_key> <percent> <G> <asterisk> <at> <T> <H> : "𝚹" U1D6B9    # MATHEMATICAL BOLD CAPITAL THETA SYMBOL
+<Multi_key> <percent> <g> <asterisk> <S> : "𝚺" U1D6BA    # MATHEMATICAL BOLD CAPITAL SIGMA
+<Multi_key> <percent> <g> <asterisk> <T> : "𝚻" U1D6BB    # MATHEMATICAL BOLD CAPITAL TAU
+<Multi_key> <percent> <g> <asterisk> <Y> : "𝚼" U1D6BC    # MATHEMATICAL BOLD CAPITAL UPSILON
+<Multi_key> <percent> <g> <asterisk> <U> : "𝚼" U1D6BC    # MATHEMATICAL BOLD CAPITAL UPSILON
+<Multi_key> <percent> <g> <asterisk> <F> : "𝚽" U1D6BD    # MATHEMATICAL BOLD CAPITAL PHI
+<Multi_key> <percent> <G> <asterisk> <P> <H> : "𝚽" U1D6BD    # MATHEMATICAL BOLD CAPITAL PHI
+<Multi_key> <percent> <g> <asterisk> <C> : "𝚾" U1D6BE    # MATHEMATICAL BOLD CAPITAL CHI
+<Multi_key> <percent> <G> <asterisk> <K> <H> : "𝚾" U1D6BE    # MATHEMATICAL BOLD CAPITAL CHI
+<Multi_key> <percent> <G> <asterisk> <P> <S> : "𝚿" U1D6BF    # MATHEMATICAL BOLD CAPITAL PSI
+<Multi_key> <percent> <G> <asterisk> <O> : "𝛀" U1D6C0    # MATHEMATICAL BOLD CAPITAL OMEGA
+<Multi_key> <percent> <g> <asterisk> <at> <D> : "𝛁" U1D6C1    # MATHEMATICAL BOLD NABLA
+<Multi_key> <percent> <g> <asterisk> <W> : "𝟊" U1D7CA   # MATHEMATICAL BOLD CAPITAL DIGAMMA
+<Multi_key> <percent> <g> <asterisk> <a> : "𝛂" U1D6C2    # MATHEMATICAL BOLD SMALL ALPHA
+<Multi_key> <percent> <g> <asterisk> <b> : "𝛃" U1D6C3    # MATHEMATICAL BOLD SMALL BETA
+<Multi_key> <percent> <g> <asterisk> <g> : "𝛄" U1D6C4    # MATHEMATICAL BOLD SMALL GAMMA
+<Multi_key> <percent> <g> <asterisk> <d> : "𝛅" U1D6C5    # MATHEMATICAL BOLD SMALL DELTA
+<Multi_key> <percent> <g> <asterisk> <e> : "𝛆" U1D6C6    # MATHEMATICAL BOLD SMALL EPSILON
+<Multi_key> <percent> <g> <asterisk> <z> : "𝛇" U1D6C7    # MATHEMATICAL BOLD SMALL ZETA
+<Multi_key> <percent> <g> <asterisk> <h> : "𝛈" U1D6C8    # MATHEMATICAL BOLD SMALL ETA
+<Multi_key> <percent> <G> <asterisk> <t> <h> : "𝛉" U1D6C9    # MATHEMATICAL BOLD SMALL THETA
+<Multi_key> <percent> <g> <asterisk> <i> : "𝛊" U1D6CA    # MATHEMATICAL BOLD SMALL IOTA
+<Multi_key> <percent> <g> <asterisk> <k> : "𝛋" U1D6CB    # MATHEMATICAL BOLD SMALL KAPPA
+<Multi_key> <percent> <g> <asterisk> <l> : "𝛌" U1D6CC    # MATHEMATICAL BOLD SMALL LAMDA
+<Multi_key> <percent> <g> <asterisk> <m> : "𝛍" U1D6CD    # MATHEMATICAL BOLD SMALL MU
+<Multi_key> <percent> <g> <asterisk> <n> : "𝛎" U1D6CE    # MATHEMATICAL BOLD SMALL NU
+<Multi_key> <percent> <g> <asterisk> <x> : "𝛏" U1D6CF    # MATHEMATICAL BOLD SMALL XI
+<Multi_key> <percent> <g> <asterisk> <o> : "𝛐" U1D6D0    # MATHEMATICAL BOLD SMALL OMICRON
+<Multi_key> <percent> <g> <asterisk> <p> : "𝛑" U1D6D1    # MATHEMATICAL BOLD SMALL PI
+<Multi_key> <percent> <g> <asterisk> <r> : "𝛒" U1D6D2    # MATHEMATICAL BOLD SMALL RHO
+<Multi_key> <percent> <g> <asterisk> <greater> <s> : "𝛓" U1D6D3    # MATHEMATICAL BOLD SMALL FINAL SIGMA
+<Multi_key> <percent> <G> <asterisk> <s> : "𝛓" U1D6D3    # MATHEMATICAL BOLD SMALL FINAL SIGMA
+<Multi_key> <percent> <g> <asterisk> <s> : "𝛔" U1D6D4    # MATHEMATICAL BOLD SMALL SIGMA
+<Multi_key> <percent> <g> <asterisk> <t> : "𝛕" U1D6D5    # MATHEMATICAL BOLD SMALL TAU
+<Multi_key> <percent> <g> <asterisk> <y> : "𝛖" U1D6D6    # MATHEMATICAL BOLD SMALL UPSILON
+<Multi_key> <percent> <g> <asterisk> <u> : "𝛖" U1D6D6    # MATHEMATICAL BOLD SMALL UPSILON
+<Multi_key> <percent> <g> <asterisk> <f> : "𝛗" U1D6D7    # MATHEMATICAL BOLD SMALL PHI
+<Multi_key> <percent> <G> <asterisk> <p> <h> : "𝛗" U1D6D7    # MATHEMATICAL BOLD SMALL PHI
+<Multi_key> <percent> <g> <asterisk> <c> : "𝛘" U1D6D8    # MATHEMATICAL BOLD SMALL CHI
+<Multi_key> <percent> <G> <asterisk> <k> <h> : "𝛘" U1D6D8    # MATHEMATICAL BOLD SMALL CHI
+<Multi_key> <percent> <G> <asterisk> <p> <s> : "𝛙" U1D6D9    # MATHEMATICAL BOLD SMALL PSI
+<Multi_key> <percent> <G> <asterisk> <o> : "𝛚" U1D6DA    # MATHEMATICAL BOLD SMALL OMEGA
+<Multi_key> <percent> <g> <asterisk> <at> <d> : "𝛛" U1D6DB    # MATHEMATICAL BOLD PARTIAL DIFFERENTIAL
+<Multi_key> <percent> <g> <asterisk> <at> <e> : "𝛜" U1D6DC    # MATHEMATICAL BOLD EPSILON SYMBOL
+<Multi_key> <percent> <G> <asterisk> <at> <t> <h> : "𝛝" U1D6DD    # MATHEMATICAL BOLD THETA SYMBOL
+<Multi_key> <percent> <g> <asterisk> <at> <k> : "𝛞" U1D6DE    # MATHEMATICAL BOLD KAPPA SYMBOL
+<Multi_key> <percent> <g> <asterisk> <at> <f> : "𝛟" U1D6DF    # MATHEMATICAL BOLD PHI SYMBOL
+<Multi_key> <percent> <G> <asterisk> <at> <p> <h> : "𝛟" U1D6DF    # MATHEMATICAL BOLD PHI SYMBOL
+<Multi_key> <percent> <g> <asterisk> <at> <r> : "𝛠" U1D6E0    # MATHEMATICAL BOLD RHO SYMBOL
+<Multi_key> <percent> <g> <asterisk> <at> <p> : "𝛡" U1D6E1    # MATHEMATICAL BOLD PI SYMBOL
+<Multi_key> <percent> <g> <asterisk> <w> : "𝟋" U1D7CB   # MATHEMATICAL BOLD SMALL DIGAMMA
 
-<Multi_key> <percent> <g> <n> <slash> <A> : "𝛢" U1D6E2    # MATHEMATICAL ITALIC CAPITAL ALPHA
-<Multi_key> <percent> <g> <n> <slash> <B> : "𝛣" U1D6E3    # MATHEMATICAL ITALIC CAPITAL BETA
-<Multi_key> <percent> <g> <n> <slash> <G> : "𝛤" U1D6E4    # MATHEMATICAL ITALIC CAPITAL GAMMA
-<Multi_key> <percent> <g> <n> <slash> <D> : "𝛥" U1D6E5    # MATHEMATICAL ITALIC CAPITAL DELTA
-<Multi_key> <percent> <g> <n> <slash> <E> : "𝛦" U1D6E6    # MATHEMATICAL ITALIC CAPITAL EPSILON
-<Multi_key> <percent> <g> <n> <slash> <Z> : "𝛧" U1D6E7    # MATHEMATICAL ITALIC CAPITAL ZETA
-<Multi_key> <percent> <g> <n> <slash> <H> : "𝛨" U1D6E8    # MATHEMATICAL ITALIC CAPITAL ETA
-<Multi_key> <percent> <G> <n> <slash> <T> <H> : "𝛩" U1D6E9    # MATHEMATICAL ITALIC CAPITAL THETA
-<Multi_key> <percent> <g> <n> <slash> <I> : "𝛪" U1D6EA    # MATHEMATICAL ITALIC CAPITAL IOTA
-<Multi_key> <percent> <g> <n> <slash> <K> : "𝛫" U1D6EB    # MATHEMATICAL ITALIC CAPITAL KAPPA
-<Multi_key> <percent> <g> <n> <slash> <L> : "𝛬" U1D6EC    # MATHEMATICAL ITALIC CAPITAL LAMDA
-<Multi_key> <percent> <g> <n> <slash> <M> : "𝛭" U1D6ED    # MATHEMATICAL ITALIC CAPITAL MU
-<Multi_key> <percent> <g> <n> <slash> <N> : "𝛮" U1D6EE    # MATHEMATICAL ITALIC CAPITAL NU
-<Multi_key> <percent> <g> <n> <slash> <X> : "𝛯" U1D6EF    # MATHEMATICAL ITALIC CAPITAL XI
-<Multi_key> <percent> <g> <n> <slash> <O> : "𝛰" U1D6F0    # MATHEMATICAL ITALIC CAPITAL OMICRON
-<Multi_key> <percent> <g> <n> <slash> <P> : "𝛱" U1D6F1    # MATHEMATICAL ITALIC CAPITAL PI
-<Multi_key> <percent> <g> <n> <slash> <R> : "𝛲" U1D6F2    # MATHEMATICAL ITALIC CAPITAL RHO
-<Multi_key> <percent> <G> <n> <slash> <at> <T> <H> : "𝛳" U1D6F3    # MATHEMATICAL ITALIC CAPITAL THETA SYMBOL
-<Multi_key> <percent> <g> <n> <slash> <S> : "𝛴" U1D6F4    # MATHEMATICAL ITALIC CAPITAL SIGMA
-<Multi_key> <percent> <g> <n> <slash> <T> : "𝛵" U1D6F5    # MATHEMATICAL ITALIC CAPITAL TAU
-<Multi_key> <percent> <g> <n> <slash> <Y> : "𝛶" U1D6F6    # MATHEMATICAL ITALIC CAPITAL UPSILON
-<Multi_key> <percent> <g> <n> <slash> <U> : "𝛶" U1D6F6    # MATHEMATICAL ITALIC CAPITAL UPSILON
-<Multi_key> <percent> <g> <n> <slash> <F> : "𝛷" U1D6F7    # MATHEMATICAL ITALIC CAPITAL PHI
-<Multi_key> <percent> <G> <n> <slash> <P> <H> : "𝛷" U1D6F7    # MATHEMATICAL ITALIC CAPITAL PHI
-<Multi_key> <percent> <g> <n> <slash> <C> : "𝛸" U1D6F8    # MATHEMATICAL ITALIC CAPITAL CHI
-<Multi_key> <percent> <G> <n> <slash> <K> <H> : "𝛸" U1D6F8    # MATHEMATICAL ITALIC CAPITAL CHI
-<Multi_key> <percent> <G> <n> <slash> <P> <S> : "𝛹" U1D6F9    # MATHEMATICAL ITALIC CAPITAL PSI
-<Multi_key> <percent> <G> <n> <slash> <O> : "𝛺" U1D6FA    # MATHEMATICAL ITALIC CAPITAL OMEGA
-<Multi_key> <percent> <g> <n> <slash> <at> <D> : "𝛻" U1D6FB    # MATHEMATICAL ITALIC NABLA
-<Multi_key> <percent> <g> <n> <slash> <a> : "𝛼" U1D6FC    # MATHEMATICAL ITALIC SMALL ALPHA
-<Multi_key> <percent> <g> <n> <slash> <b> : "𝛽" U1D6FD    # MATHEMATICAL ITALIC SMALL BETA
-<Multi_key> <percent> <g> <n> <slash> <g> : "𝛾" U1D6FE    # MATHEMATICAL ITALIC SMALL GAMMA
-<Multi_key> <percent> <g> <n> <slash> <d> : "𝛿" U1D6FF    # MATHEMATICAL ITALIC SMALL DELTA
-<Multi_key> <percent> <g> <n> <slash> <e> : "𝜀" U1D700    # MATHEMATICAL ITALIC SMALL EPSILON
-<Multi_key> <percent> <g> <n> <slash> <z> : "𝜁" U1D701    # MATHEMATICAL ITALIC SMALL ZETA
-<Multi_key> <percent> <g> <n> <slash> <h> : "𝜂" U1D702    # MATHEMATICAL ITALIC SMALL ETA
-<Multi_key> <percent> <G> <n> <slash> <t> <h> : "𝜃" U1D703    # MATHEMATICAL ITALIC SMALL THETA
-<Multi_key> <percent> <g> <n> <slash> <i> : "𝜄" U1D704    # MATHEMATICAL ITALIC SMALL IOTA
-<Multi_key> <percent> <g> <n> <slash> <k> : "𝜅" U1D705    # MATHEMATICAL ITALIC SMALL KAPPA
-<Multi_key> <percent> <g> <n> <slash> <l> : "𝜆" U1D706    # MATHEMATICAL ITALIC SMALL LAMDA
-<Multi_key> <percent> <g> <n> <slash> <m> : "𝜇" U1D707    # MATHEMATICAL ITALIC SMALL MU
-<Multi_key> <percent> <g> <n> <slash> <n> : "𝜈" U1D708    # MATHEMATICAL ITALIC SMALL NU
-<Multi_key> <percent> <g> <n> <slash> <x> : "𝜉" U1D709    # MATHEMATICAL ITALIC SMALL XI
-<Multi_key> <percent> <g> <n> <slash> <o> : "𝜊" U1D70A    # MATHEMATICAL ITALIC SMALL OMICRON
-<Multi_key> <percent> <g> <n> <slash> <p> : "𝜋" U1D70B    # MATHEMATICAL ITALIC SMALL PI
-<Multi_key> <percent> <g> <n> <slash> <r> : "𝜌" U1D70C    # MATHEMATICAL ITALIC SMALL RHO
-<Multi_key> <percent> <g> <n> <slash> <greater> <s> : "𝜍" U1D70D    # MATHEMATICAL ITALIC SMALL FINAL SIGMA
-<Multi_key> <percent> <G> <n> <slash> <s> : "𝜍" U1D70D    # MATHEMATICAL ITALIC SMALL FINAL SIGMA
-<Multi_key> <percent> <g> <n> <slash> <s> : "𝜎" U1D70E    # MATHEMATICAL ITALIC SMALL SIGMA
-<Multi_key> <percent> <g> <n> <slash> <t> : "𝜏" U1D70F    # MATHEMATICAL ITALIC SMALL TAU
-<Multi_key> <percent> <g> <n> <slash> <y> : "𝜐" U1D710    # MATHEMATICAL ITALIC SMALL UPSILON
-<Multi_key> <percent> <g> <n> <slash> <u> : "𝜐" U1D710    # MATHEMATICAL ITALIC SMALL UPSILON
-<Multi_key> <percent> <g> <n> <slash> <f> : "𝜑" U1D711    # MATHEMATICAL ITALIC SMALL PHI
-<Multi_key> <percent> <G> <n> <slash> <p> <h> : "𝜑" U1D711    # MATHEMATICAL ITALIC SMALL PHI
-<Multi_key> <percent> <g> <n> <slash> <c> : "𝜒" U1D712    # MATHEMATICAL ITALIC SMALL CHI
-<Multi_key> <percent> <G> <n> <slash> <k> <h> : "𝜒" U1D712    # MATHEMATICAL ITALIC SMALL CHI
-<Multi_key> <percent> <G> <n> <slash> <p> <s> : "𝜓" U1D713    # MATHEMATICAL ITALIC SMALL PSI
-<Multi_key> <percent> <G> <n> <slash> <o> : "𝜔" U1D714    # MATHEMATICAL ITALIC SMALL OMEGA
-<Multi_key> <percent> <g> <n> <slash> <at> <d> : "𝜕" U1D715    # MATHEMATICAL ITALIC PARTIAL DIFFERENTIAL
-<Multi_key> <percent> <g> <n> <slash> <at> <e> : "𝜖" U1D716    # MATHEMATICAL ITALIC EPSILON SYMBOL
-<Multi_key> <percent> <G> <n> <slash> <at> <t> <h> : "𝜗" U1D717    # MATHEMATICAL ITALIC THETA SYMBOL
-<Multi_key> <percent> <g> <n> <slash> <at> <k> : "𝜘" U1D718    # MATHEMATICAL ITALIC KAPPA SYMBOL
-<Multi_key> <percent> <g> <n> <slash> <at> <f> : "𝜙" U1D719    # MATHEMATICAL ITALIC PHI SYMBOL
-<Multi_key> <percent> <G> <n> <slash> <at> <p> <h> : "𝜙" U1D719    # MATHEMATICAL ITALIC PHI SYMBOL
-<Multi_key> <percent> <g> <n> <slash> <at> <r> : "𝜚" U1D71A    # MATHEMATICAL ITALIC RHO SYMBOL
-<Multi_key> <percent> <g> <n> <slash> <at> <p> : "𝜛" U1D71B    # MATHEMATICAL ITALIC PI SYMBOL
+<Multi_key> <percent> <g> <slash> <A> : "𝛢" U1D6E2    # MATHEMATICAL ITALIC CAPITAL ALPHA
+<Multi_key> <percent> <g> <slash> <B> : "𝛣" U1D6E3    # MATHEMATICAL ITALIC CAPITAL BETA
+<Multi_key> <percent> <g> <slash> <G> : "𝛤" U1D6E4    # MATHEMATICAL ITALIC CAPITAL GAMMA
+<Multi_key> <percent> <g> <slash> <D> : "𝛥" U1D6E5    # MATHEMATICAL ITALIC CAPITAL DELTA
+<Multi_key> <percent> <g> <slash> <E> : "𝛦" U1D6E6    # MATHEMATICAL ITALIC CAPITAL EPSILON
+<Multi_key> <percent> <g> <slash> <Z> : "𝛧" U1D6E7    # MATHEMATICAL ITALIC CAPITAL ZETA
+<Multi_key> <percent> <g> <slash> <H> : "𝛨" U1D6E8    # MATHEMATICAL ITALIC CAPITAL ETA
+<Multi_key> <percent> <G> <slash> <T> <H> : "𝛩" U1D6E9    # MATHEMATICAL ITALIC CAPITAL THETA
+<Multi_key> <percent> <g> <slash> <I> : "𝛪" U1D6EA    # MATHEMATICAL ITALIC CAPITAL IOTA
+<Multi_key> <percent> <g> <slash> <K> : "𝛫" U1D6EB    # MATHEMATICAL ITALIC CAPITAL KAPPA
+<Multi_key> <percent> <g> <slash> <L> : "𝛬" U1D6EC    # MATHEMATICAL ITALIC CAPITAL LAMDA
+<Multi_key> <percent> <g> <slash> <M> : "𝛭" U1D6ED    # MATHEMATICAL ITALIC CAPITAL MU
+<Multi_key> <percent> <g> <slash> <N> : "𝛮" U1D6EE    # MATHEMATICAL ITALIC CAPITAL NU
+<Multi_key> <percent> <g> <slash> <X> : "𝛯" U1D6EF    # MATHEMATICAL ITALIC CAPITAL XI
+<Multi_key> <percent> <g> <slash> <O> : "𝛰" U1D6F0    # MATHEMATICAL ITALIC CAPITAL OMICRON
+<Multi_key> <percent> <g> <slash> <P> : "𝛱" U1D6F1    # MATHEMATICAL ITALIC CAPITAL PI
+<Multi_key> <percent> <g> <slash> <R> : "𝛲" U1D6F2    # MATHEMATICAL ITALIC CAPITAL RHO
+<Multi_key> <percent> <G> <slash> <at> <T> <H> : "𝛳" U1D6F3    # MATHEMATICAL ITALIC CAPITAL THETA SYMBOL
+<Multi_key> <percent> <g> <slash> <S> : "𝛴" U1D6F4    # MATHEMATICAL ITALIC CAPITAL SIGMA
+<Multi_key> <percent> <g> <slash> <T> : "𝛵" U1D6F5    # MATHEMATICAL ITALIC CAPITAL TAU
+<Multi_key> <percent> <g> <slash> <Y> : "𝛶" U1D6F6    # MATHEMATICAL ITALIC CAPITAL UPSILON
+<Multi_key> <percent> <g> <slash> <U> : "𝛶" U1D6F6    # MATHEMATICAL ITALIC CAPITAL UPSILON
+<Multi_key> <percent> <g> <slash> <F> : "𝛷" U1D6F7    # MATHEMATICAL ITALIC CAPITAL PHI
+<Multi_key> <percent> <G> <slash> <P> <H> : "𝛷" U1D6F7    # MATHEMATICAL ITALIC CAPITAL PHI
+<Multi_key> <percent> <g> <slash> <C> : "𝛸" U1D6F8    # MATHEMATICAL ITALIC CAPITAL CHI
+<Multi_key> <percent> <G> <slash> <K> <H> : "𝛸" U1D6F8    # MATHEMATICAL ITALIC CAPITAL CHI
+<Multi_key> <percent> <G> <slash> <P> <S> : "𝛹" U1D6F9    # MATHEMATICAL ITALIC CAPITAL PSI
+<Multi_key> <percent> <G> <slash> <O> : "𝛺" U1D6FA    # MATHEMATICAL ITALIC CAPITAL OMEGA
+<Multi_key> <percent> <g> <slash> <at> <D> : "𝛻" U1D6FB    # MATHEMATICAL ITALIC NABLA
+<Multi_key> <percent> <g> <slash> <a> : "𝛼" U1D6FC    # MATHEMATICAL ITALIC SMALL ALPHA
+<Multi_key> <percent> <g> <slash> <b> : "𝛽" U1D6FD    # MATHEMATICAL ITALIC SMALL BETA
+<Multi_key> <percent> <g> <slash> <g> : "𝛾" U1D6FE    # MATHEMATICAL ITALIC SMALL GAMMA
+<Multi_key> <percent> <g> <slash> <d> : "𝛿" U1D6FF    # MATHEMATICAL ITALIC SMALL DELTA
+<Multi_key> <percent> <g> <slash> <e> : "𝜀" U1D700    # MATHEMATICAL ITALIC SMALL EPSILON
+<Multi_key> <percent> <g> <slash> <z> : "𝜁" U1D701    # MATHEMATICAL ITALIC SMALL ZETA
+<Multi_key> <percent> <g> <slash> <h> : "𝜂" U1D702    # MATHEMATICAL ITALIC SMALL ETA
+<Multi_key> <percent> <G> <slash> <t> <h> : "𝜃" U1D703    # MATHEMATICAL ITALIC SMALL THETA
+<Multi_key> <percent> <g> <slash> <i> : "𝜄" U1D704    # MATHEMATICAL ITALIC SMALL IOTA
+<Multi_key> <percent> <g> <slash> <k> : "𝜅" U1D705    # MATHEMATICAL ITALIC SMALL KAPPA
+<Multi_key> <percent> <g> <slash> <l> : "𝜆" U1D706    # MATHEMATICAL ITALIC SMALL LAMDA
+<Multi_key> <percent> <g> <slash> <m> : "𝜇" U1D707    # MATHEMATICAL ITALIC SMALL MU
+<Multi_key> <percent> <g> <slash> <n> : "𝜈" U1D708    # MATHEMATICAL ITALIC SMALL NU
+<Multi_key> <percent> <g> <slash> <x> : "𝜉" U1D709    # MATHEMATICAL ITALIC SMALL XI
+<Multi_key> <percent> <g> <slash> <o> : "𝜊" U1D70A    # MATHEMATICAL ITALIC SMALL OMICRON
+<Multi_key> <percent> <g> <slash> <p> : "𝜋" U1D70B    # MATHEMATICAL ITALIC SMALL PI
+<Multi_key> <percent> <g> <slash> <r> : "𝜌" U1D70C    # MATHEMATICAL ITALIC SMALL RHO
+<Multi_key> <percent> <g> <slash> <greater> <s> : "𝜍" U1D70D    # MATHEMATICAL ITALIC SMALL FINAL SIGMA
+<Multi_key> <percent> <G> <slash> <s> : "𝜍" U1D70D    # MATHEMATICAL ITALIC SMALL FINAL SIGMA
+<Multi_key> <percent> <g> <slash> <s> : "𝜎" U1D70E    # MATHEMATICAL ITALIC SMALL SIGMA
+<Multi_key> <percent> <g> <slash> <t> : "𝜏" U1D70F    # MATHEMATICAL ITALIC SMALL TAU
+<Multi_key> <percent> <g> <slash> <y> : "𝜐" U1D710    # MATHEMATICAL ITALIC SMALL UPSILON
+<Multi_key> <percent> <g> <slash> <u> : "𝜐" U1D710    # MATHEMATICAL ITALIC SMALL UPSILON
+<Multi_key> <percent> <g> <slash> <f> : "𝜑" U1D711    # MATHEMATICAL ITALIC SMALL PHI
+<Multi_key> <percent> <G> <slash> <p> <h> : "𝜑" U1D711    # MATHEMATICAL ITALIC SMALL PHI
+<Multi_key> <percent> <g> <slash> <c> : "𝜒" U1D712    # MATHEMATICAL ITALIC SMALL CHI
+<Multi_key> <percent> <G> <slash> <k> <h> : "𝜒" U1D712    # MATHEMATICAL ITALIC SMALL CHI
+<Multi_key> <percent> <G> <slash> <p> <s> : "𝜓" U1D713    # MATHEMATICAL ITALIC SMALL PSI
+<Multi_key> <percent> <G> <slash> <o> : "𝜔" U1D714    # MATHEMATICAL ITALIC SMALL OMEGA
+<Multi_key> <percent> <g> <slash> <at> <d> : "𝜕" U1D715    # MATHEMATICAL ITALIC PARTIAL DIFFERENTIAL
+<Multi_key> <percent> <g> <slash> <at> <e> : "𝜖" U1D716    # MATHEMATICAL ITALIC EPSILON SYMBOL
+<Multi_key> <percent> <G> <slash> <at> <t> <h> : "𝜗" U1D717    # MATHEMATICAL ITALIC THETA SYMBOL
+<Multi_key> <percent> <g> <slash> <at> <k> : "𝜘" U1D718    # MATHEMATICAL ITALIC KAPPA SYMBOL
+<Multi_key> <percent> <g> <slash> <at> <f> : "𝜙" U1D719    # MATHEMATICAL ITALIC PHI SYMBOL
+<Multi_key> <percent> <G> <slash> <at> <p> <h> : "𝜙" U1D719    # MATHEMATICAL ITALIC PHI SYMBOL
+<Multi_key> <percent> <g> <slash> <at> <r> : "𝜚" U1D71A    # MATHEMATICAL ITALIC RHO SYMBOL
+<Multi_key> <percent> <g> <slash> <at> <p> : "𝜛" U1D71B    # MATHEMATICAL ITALIC PI SYMBOL
 
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <A> : "𝜜" U1D71C    # MATHEMATICAL BOLD ITALIC CAPITAL ALPHA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <B> : "𝜝" U1D71D    # MATHEMATICAL BOLD ITALIC CAPITAL BETA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <G> : "𝜞" U1D71E    # MATHEMATICAL BOLD ITALIC CAPITAL GAMMA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <D> : "𝜟" U1D71F    # MATHEMATICAL BOLD ITALIC CAPITAL DELTA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <E> : "𝜠" U1D720    # MATHEMATICAL BOLD ITALIC CAPITAL EPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <Z> : "𝜡" U1D721    # MATHEMATICAL BOLD ITALIC CAPITAL ZETA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <H> : "𝜢" U1D722    # MATHEMATICAL BOLD ITALIC CAPITAL ETA
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <T> <H> : "𝜣" U1D723    # MATHEMATICAL BOLD ITALIC CAPITAL THETA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <I> : "𝜤" U1D724    # MATHEMATICAL BOLD ITALIC CAPITAL IOTA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <K> : "𝜥" U1D725    # MATHEMATICAL BOLD ITALIC CAPITAL KAPPA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <L> : "𝜦" U1D726    # MATHEMATICAL BOLD ITALIC CAPITAL LAMDA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <M> : "𝜧" U1D727    # MATHEMATICAL BOLD ITALIC CAPITAL MU
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <N> : "𝜨" U1D728    # MATHEMATICAL BOLD ITALIC CAPITAL NU
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <X> : "𝜩" U1D729    # MATHEMATICAL BOLD ITALIC CAPITAL XI
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <O> : "𝜪" U1D72A    # MATHEMATICAL BOLD ITALIC CAPITAL OMICRON
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <P> : "𝜫" U1D72B    # MATHEMATICAL BOLD ITALIC CAPITAL PI
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <R> : "𝜬" U1D72C    # MATHEMATICAL BOLD ITALIC CAPITAL RHO
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <at> <T> <H> : "𝜭" U1D72D    # MATHEMATICAL BOLD ITALIC CAPITAL THETA SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <S> : "𝜮" U1D72E    # MATHEMATICAL BOLD ITALIC CAPITAL SIGMA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <T> : "𝜯" U1D72F    # MATHEMATICAL BOLD ITALIC CAPITAL TAU
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <Y> : "𝜰" U1D730    # MATHEMATICAL BOLD ITALIC CAPITAL UPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <U> : "𝜰" U1D730    # MATHEMATICAL BOLD ITALIC CAPITAL UPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <F> : "𝜱" U1D731    # MATHEMATICAL BOLD ITALIC CAPITAL PHI
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <P> <H> : "𝜱" U1D731    # MATHEMATICAL BOLD ITALIC CAPITAL PHI
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <C> : "𝜲" U1D732    # MATHEMATICAL BOLD ITALIC CAPITAL CHI
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <K> <H> : "𝜲" U1D732    # MATHEMATICAL BOLD ITALIC CAPITAL CHI
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <P> <S> : "𝜳" U1D733    # MATHEMATICAL BOLD ITALIC CAPITAL PSI
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <O> : "𝜴" U1D734    # MATHEMATICAL BOLD ITALIC CAPITAL OMEGA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <D> : "𝜵" U1D735    # MATHEMATICAL BOLD ITALIC NABLA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <a> : "𝜶" U1D736    # MATHEMATICAL BOLD ITALIC SMALL ALPHA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <b> : "𝜷" U1D737    # MATHEMATICAL BOLD ITALIC SMALL BETA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <g> : "𝜸" U1D738    # MATHEMATICAL BOLD ITALIC SMALL GAMMA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <d> : "𝜹" U1D739    # MATHEMATICAL BOLD ITALIC SMALL DELTA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <e> : "𝜺" U1D73A    # MATHEMATICAL BOLD ITALIC SMALL EPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <z> : "𝜻" U1D73B    # MATHEMATICAL BOLD ITALIC SMALL ZETA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <h> : "𝜼" U1D73C    # MATHEMATICAL BOLD ITALIC SMALL ETA
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <t> <h> : "𝜽" U1D73D    # MATHEMATICAL BOLD ITALIC SMALL THETA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <i> : "𝜾" U1D73E    # MATHEMATICAL BOLD ITALIC SMALL IOTA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <k> : "𝜿" U1D73F    # MATHEMATICAL BOLD ITALIC SMALL KAPPA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <l> : "𝝀" U1D740    # MATHEMATICAL BOLD ITALIC SMALL LAMDA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <m> : "𝝁" U1D741    # MATHEMATICAL BOLD ITALIC SMALL MU
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <n> : "𝝂" U1D742    # MATHEMATICAL BOLD ITALIC SMALL NU
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <x> : "𝝃" U1D743    # MATHEMATICAL BOLD ITALIC SMALL XI
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <o> : "𝝄" U1D744    # MATHEMATICAL BOLD ITALIC SMALL OMICRON
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <p> : "𝝅" U1D745    # MATHEMATICAL BOLD ITALIC SMALL PI
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <r> : "𝝆" U1D746    # MATHEMATICAL BOLD ITALIC SMALL RHO
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <greater> <s> : "𝝇" U1D747    # MATHEMATICAL BOLD ITALIC SMALL FINAL SIGMA
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <s> : "𝝇" U1D747    # MATHEMATICAL BOLD ITALIC SMALL FINAL SIGMA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <s> : "𝝈" U1D748    # MATHEMATICAL BOLD ITALIC SMALL SIGMA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <t> : "𝝉" U1D749    # MATHEMATICAL BOLD ITALIC SMALL TAU
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <y> : "𝝊" U1D74A    # MATHEMATICAL BOLD ITALIC SMALL UPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <u> : "𝝊" U1D74A    # MATHEMATICAL BOLD ITALIC SMALL UPSILON
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <f> : "𝝋" U1D74B    # MATHEMATICAL BOLD ITALIC SMALL PHI
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <p> <h> : "𝝋" U1D74B    # MATHEMATICAL BOLD ITALIC SMALL PHI
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <c> : "𝝌" U1D74C    # MATHEMATICAL BOLD ITALIC SMALL CHI
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <k> <h> : "𝝌" U1D74C    # MATHEMATICAL BOLD ITALIC SMALL CHI
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <p> <s> : "𝝍" U1D74D    # MATHEMATICAL BOLD ITALIC SMALL PSI
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <o> : "𝝎" U1D74E    # MATHEMATICAL BOLD ITALIC SMALL OMEGA
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <d> : "𝝏" U1D74F    # MATHEMATICAL BOLD ITALIC PARTIAL DIFFERENTIAL
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <e> : "𝝐" U1D750    # MATHEMATICAL BOLD ITALIC EPSILON SYMBOL
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <at> <t> <h> : "𝝑" U1D751    # MATHEMATICAL BOLD ITALIC THETA SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <k> : "𝝒" U1D752    # MATHEMATICAL BOLD ITALIC KAPPA SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <f> : "𝝓" U1D753    # MATHEMATICAL BOLD ITALIC PHI SYMBOL
-<Multi_key> <percent> <G> <n> <asterisk> <slash> <at> <p> <h> : "𝝓" U1D753    # MATHEMATICAL BOLD ITALIC PHI SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <r> : "𝝔" U1D754    # MATHEMATICAL BOLD ITALIC RHO SYMBOL
-<Multi_key> <percent> <g> <n> <asterisk> <slash> <at> <p> : "𝝕" U1D755    # MATHEMATICAL BOLD ITALIC PI SYMBOL
+<Multi_key> <percent> <g> <asterisk> <slash> <A> : "𝜜" U1D71C    # MATHEMATICAL BOLD ITALIC CAPITAL ALPHA
+<Multi_key> <percent> <g> <asterisk> <slash> <B> : "𝜝" U1D71D    # MATHEMATICAL BOLD ITALIC CAPITAL BETA
+<Multi_key> <percent> <g> <asterisk> <slash> <G> : "𝜞" U1D71E    # MATHEMATICAL BOLD ITALIC CAPITAL GAMMA
+<Multi_key> <percent> <g> <asterisk> <slash> <D> : "𝜟" U1D71F    # MATHEMATICAL BOLD ITALIC CAPITAL DELTA
+<Multi_key> <percent> <g> <asterisk> <slash> <E> : "𝜠" U1D720    # MATHEMATICAL BOLD ITALIC CAPITAL EPSILON
+<Multi_key> <percent> <g> <asterisk> <slash> <Z> : "𝜡" U1D721    # MATHEMATICAL BOLD ITALIC CAPITAL ZETA
+<Multi_key> <percent> <g> <asterisk> <slash> <H> : "𝜢" U1D722    # MATHEMATICAL BOLD ITALIC CAPITAL ETA
+<Multi_key> <percent> <G> <asterisk> <slash> <T> <H> : "𝜣" U1D723    # MATHEMATICAL BOLD ITALIC CAPITAL THETA
+<Multi_key> <percent> <g> <asterisk> <slash> <I> : "𝜤" U1D724    # MATHEMATICAL BOLD ITALIC CAPITAL IOTA
+<Multi_key> <percent> <g> <asterisk> <slash> <K> : "𝜥" U1D725    # MATHEMATICAL BOLD ITALIC CAPITAL KAPPA
+<Multi_key> <percent> <g> <asterisk> <slash> <L> : "𝜦" U1D726    # MATHEMATICAL BOLD ITALIC CAPITAL LAMDA
+<Multi_key> <percent> <g> <asterisk> <slash> <M> : "𝜧" U1D727    # MATHEMATICAL BOLD ITALIC CAPITAL MU
+<Multi_key> <percent> <g> <asterisk> <slash> <N> : "𝜨" U1D728    # MATHEMATICAL BOLD ITALIC CAPITAL NU
+<Multi_key> <percent> <g> <asterisk> <slash> <X> : "𝜩" U1D729    # MATHEMATICAL BOLD ITALIC CAPITAL XI
+<Multi_key> <percent> <g> <asterisk> <slash> <O> : "𝜪" U1D72A    # MATHEMATICAL BOLD ITALIC CAPITAL OMICRON
+<Multi_key> <percent> <g> <asterisk> <slash> <P> : "𝜫" U1D72B    # MATHEMATICAL BOLD ITALIC CAPITAL PI
+<Multi_key> <percent> <g> <asterisk> <slash> <R> : "𝜬" U1D72C    # MATHEMATICAL BOLD ITALIC CAPITAL RHO
+<Multi_key> <percent> <G> <asterisk> <slash> <at> <T> <H> : "𝜭" U1D72D    # MATHEMATICAL BOLD ITALIC CAPITAL THETA SYMBOL
+<Multi_key> <percent> <g> <asterisk> <slash> <S> : "𝜮" U1D72E    # MATHEMATICAL BOLD ITALIC CAPITAL SIGMA
+<Multi_key> <percent> <g> <asterisk> <slash> <T> : "𝜯" U1D72F    # MATHEMATICAL BOLD ITALIC CAPITAL TAU
+<Multi_key> <percent> <g> <asterisk> <slash> <Y> : "𝜰" U1D730    # MATHEMATICAL BOLD ITALIC CAPITAL UPSILON
+<Multi_key> <percent> <g> <asterisk> <slash> <U> : "𝜰" U1D730    # MATHEMATICAL BOLD ITALIC CAPITAL UPSILON
+<Multi_key> <percent> <g> <asterisk> <slash> <F> : "𝜱" U1D731    # MATHEMATICAL BOLD ITALIC CAPITAL PHI
+<Multi_key> <percent> <G> <asterisk> <slash> <P> <H> : "𝜱" U1D731    # MATHEMATICAL BOLD ITALIC CAPITAL PHI
+<Multi_key> <percent> <g> <asterisk> <slash> <C> : "𝜲" U1D732    # MATHEMATICAL BOLD ITALIC CAPITAL CHI
+<Multi_key> <percent> <G> <asterisk> <slash> <K> <H> : "𝜲" U1D732    # MATHEMATICAL BOLD ITALIC CAPITAL CHI
+<Multi_key> <percent> <G> <asterisk> <slash> <P> <S> : "𝜳" U1D733    # MATHEMATICAL BOLD ITALIC CAPITAL PSI
+<Multi_key> <percent> <G> <asterisk> <slash> <O> : "𝜴" U1D734    # MATHEMATICAL BOLD ITALIC CAPITAL OMEGA
+<Multi_key> <percent> <g> <asterisk> <slash> <at> <D> : "𝜵" U1D735    # MATHEMATICAL BOLD ITALIC NABLA
+<Multi_key> <percent> <g> <asterisk> <slash> <a> : "𝜶" U1D736    # MATHEMATICAL BOLD ITALIC SMALL ALPHA
+<Multi_key> <percent> <g> <asterisk> <slash> <b> : "𝜷" U1D737    # MATHEMATICAL BOLD ITALIC SMALL BETA
+<Multi_key> <percent> <g> <asterisk> <slash> <g> : "𝜸" U1D738    # MATHEMATICAL BOLD ITALIC SMALL GAMMA
+<Multi_key> <percent> <g> <asterisk> <slash> <d> : "𝜹" U1D739    # MATHEMATICAL BOLD ITALIC SMALL DELTA
+<Multi_key> <percent> <g> <asterisk> <slash> <e> : "𝜺" U1D73A    # MATHEMATICAL BOLD ITALIC SMALL EPSILON
+<Multi_key> <percent> <g> <asterisk> <slash> <z> : "𝜻" U1D73B    # MATHEMATICAL BOLD ITALIC SMALL ZETA
+<Multi_key> <percent> <g> <asterisk> <slash> <h> : "𝜼" U1D73C    # MATHEMATICAL BOLD ITALIC SMALL ETA
+<Multi_key> <percent> <G> <asterisk> <slash> <t> <h> : "𝜽" U1D73D    # MATHEMATICAL BOLD ITALIC SMALL THETA
+<Multi_key> <percent> <g> <asterisk> <slash> <i> : "𝜾" U1D73E    # MATHEMATICAL BOLD ITALIC SMALL IOTA
+<Multi_key> <percent> <g> <asterisk> <slash> <k> : "𝜿" U1D73F    # MATHEMATICAL BOLD ITALIC SMALL KAPPA
+<Multi_key> <percent> <g> <asterisk> <slash> <l> : "𝝀" U1D740    # MATHEMATICAL BOLD ITALIC SMALL LAMDA
+<Multi_key> <percent> <g> <asterisk> <slash> <m> : "𝝁" U1D741    # MATHEMATICAL BOLD ITALIC SMALL MU
+<Multi_key> <percent> <g> <asterisk> <slash> <n> : "𝝂" U1D742    # MATHEMATICAL BOLD ITALIC SMALL NU
+<Multi_key> <percent> <g> <asterisk> <slash> <x> : "𝝃" U1D743    # MATHEMATICAL BOLD ITALIC SMALL XI
+<Multi_key> <percent> <g> <asterisk> <slash> <o> : "𝝄" U1D744    # MATHEMATICAL BOLD ITALIC SMALL OMICRON
+<Multi_key> <percent> <g> <asterisk> <slash> <p> : "𝝅" U1D745    # MATHEMATICAL BOLD ITALIC SMALL PI
+<Multi_key> <percent> <g> <asterisk> <slash> <r> : "𝝆" U1D746    # MATHEMATICAL BOLD ITALIC SMALL RHO
+<Multi_key> <percent> <g> <asterisk> <slash> <greater> <s> : "𝝇" U1D747    # MATHEMATICAL BOLD ITALIC SMALL FINAL SIGMA
+<Multi_key> <percent> <G> <asterisk> <slash> <s> : "𝝇" U1D747    # MATHEMATICAL BOLD ITALIC SMALL FINAL SIGMA
+<Multi_key> <percent> <g> <asterisk> <slash> <s> : "𝝈" U1D748    # MATHEMATICAL BOLD ITALIC SMALL SIGMA
+<Multi_key> <percent> <g> <asterisk> <slash> <t> : "𝝉" U1D749    # MATHEMATICAL BOLD ITALIC SMALL TAU
+<Multi_key> <percent> <g> <asterisk> <slash> <y> : "𝝊" U1D74A    # MATHEMATICAL BOLD ITALIC SMALL UPSILON
+<Multi_key> <percent> <g> <asterisk> <slash> <u> : "𝝊" U1D74A    # MATHEMATICAL BOLD ITALIC SMALL UPSILON
+<Multi_key> <percent> <g> <asterisk> <slash> <f> : "𝝋" U1D74B    # MATHEMATICAL BOLD ITALIC SMALL PHI
+<Multi_key> <percent> <G> <asterisk> <slash> <p> <h> : "𝝋" U1D74B    # MATHEMATICAL BOLD ITALIC SMALL PHI
+<Multi_key> <percent> <g> <asterisk> <slash> <c> : "𝝌" U1D74C    # MATHEMATICAL BOLD ITALIC SMALL CHI
+<Multi_key> <percent> <G> <asterisk> <slash> <k> <h> : "𝝌" U1D74C    # MATHEMATICAL BOLD ITALIC SMALL CHI
+<Multi_key> <percent> <G> <asterisk> <slash> <p> <s> : "𝝍" U1D74D    # MATHEMATICAL BOLD ITALIC SMALL PSI
+<Multi_key> <percent> <G> <asterisk> <slash> <o> : "𝝎" U1D74E    # MATHEMATICAL BOLD ITALIC SMALL OMEGA
+<Multi_key> <percent> <g> <asterisk> <slash> <at> <d> : "𝝏" U1D74F    # MATHEMATICAL BOLD ITALIC PARTIAL DIFFERENTIAL
+<Multi_key> <percent> <g> <asterisk> <slash> <at> <e> : "𝝐" U1D750    # MATHEMATICAL BOLD ITALIC EPSILON SYMBOL
+<Multi_key> <percent> <G> <asterisk> <slash> <at> <t> <h> : "𝝑" U1D751    # MATHEMATICAL BOLD ITALIC THETA SYMBOL
+<Multi_key> <percent> <g> <asterisk> <slash> <at> <k> : "𝝒" U1D752    # MATHEMATICAL BOLD ITALIC KAPPA SYMBOL
+<Multi_key> <percent> <g> <asterisk> <slash> <at> <f> : "𝝓" U1D753    # MATHEMATICAL BOLD ITALIC PHI SYMBOL
+<Multi_key> <percent> <G> <asterisk> <slash> <at> <p> <h> : "𝝓" U1D753    # MATHEMATICAL BOLD ITALIC PHI SYMBOL
+<Multi_key> <percent> <g> <asterisk> <slash> <at> <r> : "𝝔" U1D754    # MATHEMATICAL BOLD ITALIC RHO SYMBOL
+<Multi_key> <percent> <g> <asterisk> <slash> <at> <p> : "𝝕" U1D755    # MATHEMATICAL BOLD ITALIC PI SYMBOL
 
 <Multi_key> <percent> <g> <s> <asterisk> <A> : "𝝖" U1D756    # MATHEMATICAL SANS-SERIF BOLD CAPITAL ALPHA
 <Multi_key> <percent> <g> <s> <asterisk> <B> : "𝝗" U1D757    # MATHEMATICAL SANS-SERIF BOLD CAPITAL BETA
@@ -8638,9 +8778,9 @@ include "%L"
 <Multi_key> <z> <T> <at> <period> : "ᥳ" U1973   # TAI LE LETTER TONE-5 (◌̇)
 <Multi_key> <z> <T> <at> <apostrophe> : "ᥴ" U1974   # TAI LE LETTER TONE-6 (◌́)
 
-###############################
-# (Z) Ge'ez (and Adlam & NKo) #
-###############################
+##########################################################
+# (Z) Ge'ez (and Adlam, Bamum, Mende Kikakui, NKo & Vai) #
+##########################################################
 
 <Multi_key> <Z> <c> <h> <a> <space> : "ሀ" U1200   # ETHIOPIC SYLLABLE HA
 <Multi_key> <Z> <c> <h> <u> : "ሁ" U1201   # ETHIOPIC SYLLABLE HU
@@ -9106,6 +9246,328 @@ include "%L"
 <Multi_key> <Z> <a> <semicolon> : "⁏"  U204F  # REVERSED SEMICOLON
 <Multi_key> <Z> <a> <Multi_key> <question> <question> : "؟"  U061F  # ARABIC QUESTION MARK
 
+# (b = Bamum)
+
+<Multi_key> <Z> <b> <a> : "ꚠ"  UA6A0  # BAMUM LETTER A
+<Multi_key> <Z> <b> <k> <a> : "ꚡ"  UA6A1  # BAMUM LETTER KA
+<Multi_key> <Z> <b> <u> : "ꚢ"  UA6A2  # BAMUM LETTER U
+<Multi_key> <Z> <b> <k> <u> : "ꚣ"  UA6A3  # BAMUM LETTER KU
+<Multi_key> <Z> <b> <e> <e> : "ꚤ"  UA6A4  # BAMUM LETTER EE
+<Multi_key> <Z> <b> <r> <e> <e> : "ꚥ"  UA6A5  # BAMUM LETTER REE
+<Multi_key> <Z> <b> <t> <a> <e> : "ꚦ"  UA6A6  # BAMUM LETTER TAE
+<Multi_key> <Z> <b> <o> : "ꚧ"  UA6A7  # BAMUM LETTER O
+<Multi_key> <Z> <b> <n> <y> <i> : "ꚨ"  UA6A8  # BAMUM LETTER NYI
+<Multi_key> <Z> <b> <i> : "ꚩ"  UA6A9  # BAMUM LETTER I
+<Multi_key> <Z> <b> <l> <a> : "ꚪ"  UA6AA  # BAMUM LETTER LA
+<Multi_key> <Z> <b> <p> <a> : "ꚫ"  UA6AB  # BAMUM LETTER PA
+<Multi_key> <Z> <b> <r> <i> <i> : "ꚬ"  UA6AC  # BAMUM LETTER RII
+<Multi_key> <Z> <b> <r> <i> <e> <e> : "ꚭ"  UA6AD  # BAMUM LETTER RIEE
+<Multi_key> <Z> <b> <l> <e> <e> : "ꚮ"  UA6AE  # BAMUM LETTER LEEEE
+<Multi_key> <Z> <b> <m> <e> <e>   : "ꚯ"  UA6AF  # BAMUM LETTER MEEEE
+<Multi_key> <Z> <b> <t> <a> <a> : "ꚰ"  UA6B0  # BAMUM LETTER TAA
+<Multi_key> <Z> <b> <n> <d> <a> <a> : "ꚱ"  UA6B1  # BAMUM LETTER NDAA
+<Multi_key> <Z> <b> <n> <j> <a> <e> <m> : "ꚲ"  UA6B2  # BAMUM LETTER NJAEM
+<Multi_key> <Z> <b> <m> <space> : "ꚳ"  UA6B3  # BAMUM LETTER M
+<Multi_key> <Z> <b> <s> <u> <u> : "ꚴ"  UA6B4  # BAMUM LETTER SUU
+<Multi_key> <Z> <b> <m> <u> : "ꚵ"  UA6B5  # BAMUM LETTER MU
+<Multi_key> <Z> <b> <s> <h> <i> <i> : "ꚶ"  UA6B6  # BAMUM LETTER SHII
+<Multi_key> <Z> <b> <s> <i> : "ꚷ"  UA6B7  # BAMUM LETTER SI
+<Multi_key> <Z> <b> <s> <h> <e> <u> <x> : "ꚸ"  UA6B8  # BAMUM LETTER SHEUX
+<Multi_key> <Z> <b> <s> <e> <u> <x> : "ꚹ"  UA6B9  # BAMUM LETTER SEUX
+<Multi_key> <Z> <b> <k> <y> <e> <e> : "ꚺ"  UA6BA  # BAMUM LETTER KYEE
+<Multi_key> <Z> <b> <k> <e> <t> : "ꚻ"  UA6BB  # BAMUM LETTER KET
+<Multi_key> <Z> <b> <n> <u> <a> <e> : "ꚼ"  UA6BC  # BAMUM LETTER NUAE
+<Multi_key> <Z> <b> <n> <u> <space> : "ꚽ"  UA6BD  # BAMUM LETTER NU
+<Multi_key> <Z> <b> <n> <j> <u> <a> <e> : "ꚾ"  UA6BE  # BAMUM LETTER NJUAE
+<Multi_key> <Z> <b> <y> <o> <q> : "ꚿ"  UA6BF  # BAMUM LETTER YOQ
+<Multi_key> <Z> <b> <s> <h> <u> : "ꛀ"  UA6C0  # BAMUM LETTER SHU
+<Multi_key> <Z> <b> <y> <u> <q> : "ꛁ"  UA6C1  # BAMUM LETTER YUQ
+<Multi_key> <Z> <b> <y> <a> : "ꛂ"  UA6C2  # BAMUM LETTER YA
+<Multi_key> <Z> <b> <n> <s> <h> <a> : "ꛃ"  UA6C3  # BAMUM LETTER NSHA
+<Multi_key> <Z> <b> <k> <e> <u> <x> : "ꛄ"  UA6C4  # BAMUM LETTER KEUX
+<Multi_key> <Z> <b> <p> <e> <u> <x> : "ꛅ"  UA6C5  # BAMUM LETTER PEUX
+<Multi_key> <Z> <b> <n> <j> <e> <e> : "ꛆ"  UA6C6  # BAMUM LETTER NJEE
+<Multi_key> <Z> <b> <n> <t> <e> <e> : "ꛇ"  UA6C7  # BAMUM LETTER NTEE
+<Multi_key> <Z> <b> <p> <u> <e> : "ꛈ"  UA6C8  # BAMUM LETTER PUE
+<Multi_key> <Z> <b> <w> <u> <e> : "ꛉ"  UA6C9  # BAMUM LETTER WUE
+<Multi_key> <Z> <b> <p> <e> <e> : "ꛊ"  UA6CA  # BAMUM LETTER PEE
+<Multi_key> <Z> <b> <f> <e> <e> : "ꛋ"  UA6CB  # BAMUM LETTER FEE
+<Multi_key> <Z> <b> <r> <u> : "ꛌ"  UA6CC  # BAMUM LETTER RU
+<Multi_key> <Z> <b> <l> <u> : "ꛍ"  UA6CD  # BAMUM LETTER LU
+<Multi_key> <Z> <b> <m> <i> : "ꛎ"  UA6CE  # BAMUM LETTER MI
+<Multi_key> <Z> <b> <n> <i> : "ꛏ"  UA6CF  # BAMUM LETTER NI
+<Multi_key> <Z> <b> <r> <e> <u> <x> : "ꛐ"  UA6D0  # BAMUM LETTER REUX
+<Multi_key> <Z> <b> <r> <a> <e> : "ꛑ"  UA6D1  # BAMUM LETTER RAE
+<Multi_key> <Z> <b> <k> <e> <n> : "ꛒ"  UA6D2  # BAMUM LETTER KEN
+<Multi_key> <Z> <b> <n> <g> <k> <w> <a> <e> <n> : "ꛓ"  UA6D3  # BAMUM LETTER NGKWAEN
+<Multi_key> <Z> <b> <n> <g> <g> <a> : "ꛔ"  UA6D4  # BAMUM LETTER NGGA
+<Multi_key> <Z> <b> <n> <g> <a> : "ꛕ"  UA6D5  # BAMUM LETTER NGA
+<Multi_key> <Z> <b> <s> <h> <o> : "ꛖ"  UA6D6  # BAMUM LETTER SHO
+<Multi_key> <Z> <b> <p> <u> <a> <e> : "ꛗ"  UA6D7  # BAMUM LETTER PUAE
+<Multi_key> <Z> <b> <f> <u> : "ꛘ"  UA6D8  # BAMUM LETTER FU
+<Multi_key> <Z> <b> <f> <o> <m> : "ꛙ"  UA6D9  # BAMUM LETTER FOM
+<Multi_key> <Z> <b> <w> <a> : "ꛚ"  UA6DA  # BAMUM LETTER WA
+<Multi_key> <Z> <b> <n> <a> : "ꛛ"  UA6DB  # BAMUM LETTER NA
+<Multi_key> <Z> <b> <l> <i> : "ꛜ"  UA6DC  # BAMUM LETTER LI
+<Multi_key> <Z> <b> <p> <i> : "ꛝ"  UA6DD  # BAMUM LETTER PI
+<Multi_key> <Z> <b> <l> <o> <q> : "ꛞ"  UA6DE  # BAMUM LETTER LOQ
+<Multi_key> <Z> <b> <k> <o> : "ꛟ"  UA6DF  # BAMUM LETTER KO
+<Multi_key> <Z> <b> <m> <b> <e> <n> : "ꛠ"  UA6E0  # BAMUM LETTER MBEN
+<Multi_key> <Z> <b> <r> <e> <n> : "ꛡ"  UA6E1  # BAMUM LETTER REN
+<Multi_key> <Z> <b> <m> <e> <n> : "ꛢ"  UA6E2  # BAMUM LETTER MEN
+<Multi_key> <Z> <b> <m> <a> : "ꛣ"  UA6E3  # BAMUM LETTER MA
+<Multi_key> <Z> <b> <t> <i> : "ꛤ"  UA6E4  # BAMUM LETTER TI
+<Multi_key> <Z> <b> <k> <i> : "ꛥ"  UA6E5  # BAMUM LETTER KI
+<Multi_key> <Z> <b> <m> <o> : "ꛦ"  UA6E6  # BAMUM LETTER MO
+<Multi_key> <Z> <b> <m> <b> <a> <a> : "ꛧ"  UA6E7  # BAMUM LETTER MBAA
+<Multi_key> <Z> <b> <t> <e> <t> : "ꛨ"  UA6E8  # BAMUM LETTER TET
+<Multi_key> <Z> <b> <k> <p> <a> : "ꛩ"  UA6E9  # BAMUM LETTER KPA
+<Multi_key> <Z> <b> <t> <e> <n> : "ꛪ"  UA6EA  # BAMUM LETTER TEN
+<Multi_key> <Z> <b> <n> <t> <u> <u> : "ꛫ"  UA6EB  # BAMUM LETTER NTUU
+<Multi_key> <Z> <b> <s> <a> <m> <b> <a> : "ꛬ"  UA6EC  # BAMUM LETTER SAMBA
+<Multi_key> <Z> <b> <f> <a> <a> : "ꛭ"  UA6ED  # BAMUM LETTER FAAMAE
+<Multi_key> <Z> <b> <v> <u> <u> : "ꛮ"  UA6EE  # BAMUM LETTER KOVUU
+<Multi_key> <Z> <b> <g> <h> <o> <m> : "ꛯ"  UA6EF  # BAMUM LETTER KOGHOM
+
+<Multi_key> <Z> <b> <numbersign> <1> : "ꛦ"  UA6E6  # BAMUM LETTER MO
+<Multi_key> <Z> <b> <numbersign> <2> : "ꛧ"  UA6E7  # BAMUM LETTER MBAA
+<Multi_key> <Z> <b> <numbersign> <3> : "ꛨ"  UA6E8  # BAMUM LETTER TET
+<Multi_key> <Z> <b> <numbersign> <4> : "ꛩ"  UA6E9  # BAMUM LETTER KPA
+<Multi_key> <Z> <b> <numbersign> <5> : "ꛪ"  UA6EA  # BAMUM LETTER TEN
+<Multi_key> <Z> <b> <numbersign> <6> : "ꛫ"  UA6EB  # BAMUM LETTER NTUU
+<Multi_key> <Z> <b> <numbersign> <7> : "ꛬ"  UA6EC  # BAMUM LETTER SAMBA
+<Multi_key> <Z> <b> <numbersign> <8> : "ꛭ"  UA6ED  # BAMUM LETTER FAAMAE
+<Multi_key> <Z> <b> <numbersign> <9> : "ꛮ"  UA6EE  # BAMUM LETTER KOVUU
+<Multi_key> <Z> <b> <numbersign> <0> : "ꛯ"  UA6EF  # BAMUM LETTER KOGHOM
+
+<Multi_key> <Z> <b> <asciicircum> <Return> : "꛰"  UA6F0  # BAMUM COMBINING MARK KOQNDON
+<Multi_key> <Z> <b> <minus> <Return> : "꛱"  UA6F1  # BAMUM COMBINING MARK TUKWENTIS
+
+<Multi_key> <Z> <b> <at> : "꛲"  UA6F2  # BAMUM NJAEMLI
+<Multi_key> <Z> <b> <period> : "꛳"  UA6F3  # BAMUM FULL STOP
+<Multi_key> <Z> <b> <colon> : "꛴"  UA6F4  # BAMUM COLON
+<Multi_key> <Z> <b> <comma> : "꛵"  UA6F5  # BAMUM COMMA
+<Multi_key> <Z> <b> <semicolon> : "꛶"  UA6F6  # BAMUM SEMICOLON
+<Multi_key> <Z> <b> <question> : "꛷"  UA6F7  # BAMUM QUESTION MARK
+
+# (m = Mende Kikakui)
+
+<Multi_key> <Z> <m> <k> <i> : "𞠀"  U1E800  # MENDE KIKAKUI SYLLABLE M001 KI
+<Multi_key> <Z> <m> <k> <a> : "𞠁"  U1E801  # MENDE KIKAKUI SYLLABLE M002 KA
+<Multi_key> <Z> <m> <k> <u> <space> : "𞠂"  U1E802  # MENDE KIKAKUI SYLLABLE M003 KU
+<Multi_key> <Z> <m> <k> <minus> <e> : "𞠃"  U1E803  # MENDE KIKAKUI SYLLABLE M065 KEE
+<Multi_key> <Z> <m> <k> <e> : "𞠄"  U1E804  # MENDE KIKAKUI SYLLABLE M095 KE
+<Multi_key> <Z> <m> <k> <minus> <o> : "𞠅"  U1E805  # MENDE KIKAKUI SYLLABLE M076 KOO
+<Multi_key> <Z> <m> <k> <o> : "𞠆"  U1E806  # MENDE KIKAKUI SYLLABLE M048 KO
+<Multi_key> <Z> <m> <k> <u> <a> : "𞠇"  U1E807  # MENDE KIKAKUI SYLLABLE M179 KUA
+<Multi_key> <Z> <m> <w> <i> : "𞠈"  U1E808  # MENDE KIKAKUI SYLLABLE M004 WI
+<Multi_key> <Z> <m> <w> <a> : "𞠉"  U1E809  # MENDE KIKAKUI SYLLABLE M005 WA
+<Multi_key> <Z> <m> <w> <u> <space> : "𞠊"  U1E80A  # MENDE KIKAKUI SYLLABLE M006 WU
+<Multi_key> <Z> <m> <w> <minus> <e> : "𞠋"  U1E80B  # MENDE KIKAKUI SYLLABLE M126 WEE
+<Multi_key> <Z> <m> <w> <e> <space> : "𞠌"  U1E80C  # MENDE KIKAKUI SYLLABLE M118 WE
+<Multi_key> <Z> <m> <w> <minus> <o> : "𞠍"  U1E80D  # MENDE KIKAKUI SYLLABLE M114 WOO
+<Multi_key> <Z> <m> <w> <o> : "𞠎"  U1E80E  # MENDE KIKAKUI SYLLABLE M045 WO
+<Multi_key> <Z> <m> <w> <u> <i> : "𞠏"  U1E80F  # MENDE KIKAKUI SYLLABLE M194 WUI
+<Multi_key> <Z> <m> <w> <e> <i> : "𞠐"  U1E810  # MENDE KIKAKUI SYLLABLE M143 WEI
+<Multi_key> <Z> <m> <w> <v> <i> : "𞠑"  U1E811  # MENDE KIKAKUI SYLLABLE M061 WVI
+<Multi_key> <Z> <m> <w> <v> <a> : "𞠒"  U1E812  # MENDE KIKAKUI SYLLABLE M049 WVA
+<Multi_key> <Z> <m> <w> <v> <e> : "𞠓"  U1E813  # MENDE KIKAKUI SYLLABLE M139 WVE
+<Multi_key> <Z> <m> <m> <i> <n> : "𞠔"  U1E814  # MENDE KIKAKUI SYLLABLE M007 MIN
+<Multi_key> <Z> <m> <m> <a> <n> : "𞠕"  U1E815  # MENDE KIKAKUI SYLLABLE M008 MAN
+<Multi_key> <Z> <m> <m> <u> <n> : "𞠖"  U1E816  # MENDE KIKAKUI SYLLABLE M009 MUN
+<Multi_key> <Z> <m> <m> <e> <n> : "𞠗"  U1E817  # MENDE KIKAKUI SYLLABLE M059 MEN
+<Multi_key> <Z> <m> <m> <o> <n> : "𞠘"  U1E818  # MENDE KIKAKUI SYLLABLE M094 MON
+<Multi_key> <Z> <m> <m> <u> <a> <n> : "𞠙"  U1E819  # MENDE KIKAKUI SYLLABLE M154 MUAN
+<Multi_key> <Z> <m> <m> <u> <e> <n> : "𞠚"  U1E81A  # MENDE KIKAKUI SYLLABLE M189 MUEN
+<Multi_key> <Z> <m> <b> <i> : "𞠛"  U1E81B  # MENDE KIKAKUI SYLLABLE M010 BI
+<Multi_key> <Z> <m> <b> <a> : "𞠜"  U1E81C  # MENDE KIKAKUI SYLLABLE M011 BA
+<Multi_key> <Z> <m> <b> <u> : "𞠝"  U1E81D  # MENDE KIKAKUI SYLLABLE M012 BU
+<Multi_key> <Z> <m> <b> <minus> <e> : "𞠞"  U1E81E  # MENDE KIKAKUI SYLLABLE M150 BEE
+<Multi_key> <Z> <m> <b> <e> : "𞠟"  U1E81F  # MENDE KIKAKUI SYLLABLE M097 BE
+<Multi_key> <Z> <m> <b> <minus> <o> : "𞠠"  U1E820  # MENDE KIKAKUI SYLLABLE M103 BOO
+<Multi_key> <Z> <m> <b> <o> : "𞠡"  U1E821  # MENDE KIKAKUI SYLLABLE M138 BO
+<Multi_key> <Z> <m> <i> <space> : "𞠢"  U1E822  # MENDE KIKAKUI SYLLABLE M013 I
+<Multi_key> <Z> <m> <a> <space> : "𞠣"  U1E823  # MENDE KIKAKUI SYLLABLE M014 A
+<Multi_key> <Z> <m> <u> : "𞠤"  U1E824  # MENDE KIKAKUI SYLLABLE M015 U
+<Multi_key> <Z> <m> <minus> <e> : "𞠥"  U1E825  # MENDE KIKAKUI SYLLABLE M163 EE
+<Multi_key> <Z> <m> <e> <space> : "𞠦"  U1E826  # MENDE KIKAKUI SYLLABLE M100 E
+<Multi_key> <Z> <m> <minus> <o> : "𞠧"  U1E827  # MENDE KIKAKUI SYLLABLE M165 OO
+<Multi_key> <Z> <m> <o> : "𞠨"  U1E828  # MENDE KIKAKUI SYLLABLE M147 O
+<Multi_key> <Z> <m> <e> <i> : "𞠩"  U1E829  # MENDE KIKAKUI SYLLABLE M137 EI
+<Multi_key> <Z> <m> <i> <n> : "𞠪"  U1E82A  # MENDE KIKAKUI SYLLABLE M131 IN
+<Multi_key> <Z> <m> <i> <N> : "𞠫"  U1E82B  # MENDE KIKAKUI SYLLABLE M135 IN
+<Multi_key> <Z> <m> <a> <n> : "𞠬"  U1E82C  # MENDE KIKAKUI SYLLABLE M195 AN
+<Multi_key> <Z> <m> <e> <n> : "𞠭"  U1E82D  # MENDE KIKAKUI SYLLABLE M178 EN
+<Multi_key> <Z> <m> <s> <i> <space> : "𞠮"  U1E82E  # MENDE KIKAKUI SYLLABLE M019 SI
+<Multi_key> <Z> <m> <s> <a> : "𞠯"  U1E82F  # MENDE KIKAKUI SYLLABLE M020 SA
+<Multi_key> <Z> <m> <s> <u> : "𞠰"  U1E830  # MENDE KIKAKUI SYLLABLE M021 SU
+<Multi_key> <Z> <m> <s> <minus> <e> : "𞠱"  U1E831  # MENDE KIKAKUI SYLLABLE M162 SEE
+<Multi_key> <Z> <m> <s> <e> : "𞠲"  U1E832  # MENDE KIKAKUI SYLLABLE M116 SE
+<Multi_key> <Z> <m> <s> <minus> <o> : "𞠳"  U1E833  # MENDE KIKAKUI SYLLABLE M136 SOO
+<Multi_key> <Z> <m> <s> <o> : "𞠴"  U1E834  # MENDE KIKAKUI SYLLABLE M079 SO
+<Multi_key> <Z> <m> <s> <i> <a> : "𞠵"  U1E835  # MENDE KIKAKUI SYLLABLE M196 SIA
+<Multi_key> <Z> <m> <l> <i> : "𞠶"  U1E836  # MENDE KIKAKUI SYLLABLE M025 LI
+<Multi_key> <Z> <m> <l> <a> : "𞠷"  U1E837  # MENDE KIKAKUI SYLLABLE M026 LA
+<Multi_key> <Z> <m> <l> <u> : "𞠸"  U1E838  # MENDE KIKAKUI SYLLABLE M027 LU
+<Multi_key> <Z> <m> <l> <minus> <e> : "𞠹"  U1E839  # MENDE KIKAKUI SYLLABLE M084 LEE
+<Multi_key> <Z> <m> <l> <e> : "𞠺"  U1E83A  # MENDE KIKAKUI SYLLABLE M073 LE
+<Multi_key> <Z> <m> <l> <minus> <o> : "𞠻"  U1E83B  # MENDE KIKAKUI SYLLABLE M054 LOO
+<Multi_key> <Z> <m> <l> <o> : "𞠼"  U1E83C  # MENDE KIKAKUI SYLLABLE M153 LO
+<Multi_key> <Z> <m> <minus> <l> <e> : "𞠽"  U1E83D  # MENDE KIKAKUI SYLLABLE M110 LONG LE
+<Multi_key> <Z> <m> <d> <i> : "𞠾"  U1E83E  # MENDE KIKAKUI SYLLABLE M016 DI
+<Multi_key> <Z> <m> <d> <a> : "𞠿"  U1E83F  # MENDE KIKAKUI SYLLABLE M017 DA
+<Multi_key> <Z> <m> <d> <u> : "𞡀"  U1E840  # MENDE KIKAKUI SYLLABLE M018 DU
+<Multi_key> <Z> <m> <d> <minus> <e> : "𞡁"  U1E841  # MENDE KIKAKUI SYLLABLE M089 DEE
+<Multi_key> <Z> <m> <d> <minus> <o> : "𞡂"  U1E842  # MENDE KIKAKUI SYLLABLE M180 DOO
+<Multi_key> <Z> <m> <d> <o> : "𞡃"  U1E843  # MENDE KIKAKUI SYLLABLE M181 DO
+<Multi_key> <Z> <m> <t> <i> : "𞡄"  U1E844  # MENDE KIKAKUI SYLLABLE M022 TI
+<Multi_key> <Z> <m> <t> <a> : "𞡅"  U1E845  # MENDE KIKAKUI SYLLABLE M023 TA
+<Multi_key> <Z> <m> <t> <u> : "𞡆"  U1E846  # MENDE KIKAKUI SYLLABLE M024 TU
+<Multi_key> <Z> <m> <t> <minus> <e> : "𞡇"  U1E847  # MENDE KIKAKUI SYLLABLE M091 TEE
+<Multi_key> <Z> <m> <t> <e> : "𞡈"  U1E848  # MENDE KIKAKUI SYLLABLE M055 TE
+<Multi_key> <Z> <m> <t> <minus> <o> : "𞡉"  U1E849  # MENDE KIKAKUI SYLLABLE M104 TOO
+<Multi_key> <Z> <m> <t> <o> : "𞡊"  U1E84A  # MENDE KIKAKUI SYLLABLE M069 TO
+<Multi_key> <Z> <m> <j> <i> : "𞡋"  U1E84B  # MENDE KIKAKUI SYLLABLE M028 JI
+<Multi_key> <Z> <m> <j> <a> : "𞡌"  U1E84C  # MENDE KIKAKUI SYLLABLE M029 JA
+<Multi_key> <Z> <m> <j> <u> : "𞡍"  U1E84D  # MENDE KIKAKUI SYLLABLE M030 JU
+<Multi_key> <Z> <m> <j> <minus> <e> : "𞡎"  U1E84E  # MENDE KIKAKUI SYLLABLE M157 JEE
+<Multi_key> <Z> <m> <j> <e> : "𞡏"  U1E84F  # MENDE KIKAKUI SYLLABLE M113 JE
+<Multi_key> <Z> <m> <j> <minus> <o> : "𞡐"  U1E850  # MENDE KIKAKUI SYLLABLE M160 JOO
+<Multi_key> <Z> <m> <j> <o> : "𞡑"  U1E851  # MENDE KIKAKUI SYLLABLE M063 JO
+<Multi_key> <Z> <m> <minus> <j> <o> : "𞡒"  U1E852  # MENDE KIKAKUI SYLLABLE M175 LONG JO
+<Multi_key> <Z> <m> <y> <i> : "𞡓"  U1E853  # MENDE KIKAKUI SYLLABLE M031 YI
+<Multi_key> <Z> <m> <y> <a> : "𞡔"  U1E854  # MENDE KIKAKUI SYLLABLE M032 YA
+<Multi_key> <Z> <m> <y> <u> : "𞡕"  U1E855  # MENDE KIKAKUI SYLLABLE M033 YU
+<Multi_key> <Z> <m> <y> <minus> <e> : "𞡖"  U1E856  # MENDE KIKAKUI SYLLABLE M109 YEE
+<Multi_key> <Z> <m> <y> <e> : "𞡗"  U1E857  # MENDE KIKAKUI SYLLABLE M080 YE
+<Multi_key> <Z> <m> <y> <minus> <o> : "𞡘"  U1E858  # MENDE KIKAKUI SYLLABLE M141 YOO
+<Multi_key> <Z> <m> <y> <o> : "𞡙"  U1E859  # MENDE KIKAKUI SYLLABLE M121 YO
+<Multi_key> <Z> <m> <f> <i> : "𞡚"  U1E85A  # MENDE KIKAKUI SYLLABLE M034 FI
+<Multi_key> <Z> <m> <f> <a> <space> : "𞡛"  U1E85B  # MENDE KIKAKUI SYLLABLE M035 FA
+<Multi_key> <Z> <m> <f> <u> <space> : "𞡜"  U1E85C  # MENDE KIKAKUI SYLLABLE M036 FU
+<Multi_key> <Z> <m> <f> <minus> <e> : "𞡝"  U1E85D  # MENDE KIKAKUI SYLLABLE M078 FEE
+<Multi_key> <Z> <m> <f> <e> : "𞡞"  U1E85E  # MENDE KIKAKUI SYLLABLE M075 FE
+<Multi_key> <Z> <m> <f> <minus> <o> : "𞡟"  U1E85F  # MENDE KIKAKUI SYLLABLE M133 FOO
+<Multi_key> <Z> <m> <f> <o> : "𞡠"  U1E860  # MENDE KIKAKUI SYLLABLE M088 FO
+<Multi_key> <Z> <m> <f> <u> <a> : "𞡡"  U1E861  # MENDE KIKAKUI SYLLABLE M197 FUA
+<Multi_key> <Z> <m> <f> <a> <n> : "𞡢"  U1E862  # MENDE KIKAKUI SYLLABLE M101 FAN
+<Multi_key> <Z> <m> <n> <i> <n> : "𞡣"  U1E863  # MENDE KIKAKUI SYLLABLE M037 NIN
+<Multi_key> <Z> <m> <n> <a> <n> : "𞡤"  U1E864  # MENDE KIKAKUI SYLLABLE M038 NAN
+<Multi_key> <Z> <m> <n> <u> <n> : "𞡥"  U1E865  # MENDE KIKAKUI SYLLABLE M039 NUN
+<Multi_key> <Z> <m> <n> <e> <n> : "𞡦"  U1E866  # MENDE KIKAKUI SYLLABLE M117 NEN
+<Multi_key> <Z> <m> <n> <o> <n> : "𞡧"  U1E867  # MENDE KIKAKUI SYLLABLE M169 NON
+<Multi_key> <Z> <m> <h> <i> <space> : "𞡨"  U1E868  # MENDE KIKAKUI SYLLABLE M176 HI
+<Multi_key> <Z> <m> <h> <a> <space> : "𞡩"  U1E869  # MENDE KIKAKUI SYLLABLE M041 HA
+<Multi_key> <Z> <m> <h> <u> <space> : "𞡪"  U1E86A  # MENDE KIKAKUI SYLLABLE M186 HU
+<Multi_key> <Z> <m> <h> <minus> <e> <space> : "𞡫"  U1E86B  # MENDE KIKAKUI SYLLABLE M040 HEE
+<Multi_key> <Z> <m> <h> <e> <space> : "𞡬"  U1E86C  # MENDE KIKAKUI SYLLABLE M096 HE
+<Multi_key> <Z> <m> <h> <minus> <o> <space> : "𞡭"  U1E86D  # MENDE KIKAKUI SYLLABLE M042 HOO
+<Multi_key> <Z> <m> <h> <o> <space> : "𞡮"  U1E86E  # MENDE KIKAKUI SYLLABLE M140 HO
+<Multi_key> <Z> <m> <h> <minus> <e> <i> : "𞡯"  U1E86F  # MENDE KIKAKUI SYLLABLE M083 HEEI
+<Multi_key> <Z> <m> <h> <minus> <o> <u> : "𞡰"  U1E870  # MENDE KIKAKUI SYLLABLE M128 HOOU
+<Multi_key> <Z> <m> <h> <i> <n> : "𞡱"  U1E871  # MENDE KIKAKUI SYLLABLE M053 HIN
+<Multi_key> <Z> <m> <h> <a> <n> : "𞡲"  U1E872  # MENDE KIKAKUI SYLLABLE M130 HAN
+<Multi_key> <Z> <m> <h> <u> <n> : "𞡳"  U1E873  # MENDE KIKAKUI SYLLABLE M087 HUN
+<Multi_key> <Z> <m> <h> <e> <n> : "𞡴"  U1E874  # MENDE KIKAKUI SYLLABLE M052 HEN
+<Multi_key> <Z> <m> <h> <o> <n> : "𞡵"  U1E875  # MENDE KIKAKUI SYLLABLE M193 HON
+<Multi_key> <Z> <m> <h> <u> <a> <n> : "𞡶"  U1E876  # MENDE KIKAKUI SYLLABLE M046 HUAN
+<Multi_key> <Z> <m> <n> <g> <g> <i> : "𞡷"  U1E877  # MENDE KIKAKUI SYLLABLE M090 NGGI
+<Multi_key> <Z> <m> <n> <g> <g> <a> : "𞡸"  U1E878  # MENDE KIKAKUI SYLLABLE M043 NGGA
+<Multi_key> <Z> <m> <n> <g> <g> <u> <space> : "𞡹"  U1E879  # MENDE KIKAKUI SYLLABLE M082 NGGU
+<Multi_key> <Z> <m> <n> <g> <g> <minus> <e> : "𞡺"  U1E87A  # MENDE KIKAKUI SYLLABLE M115 NGGEE
+<Multi_key> <Z> <m> <n> <g> <g> <e> : "𞡻"  U1E87B  # MENDE KIKAKUI SYLLABLE M146 NGGE
+<Multi_key> <Z> <m> <n> <g> <g> <minus> <o> : "𞡼"  U1E87C  # MENDE KIKAKUI SYLLABLE M156 NGGOO
+<Multi_key> <Z> <m> <n> <g> <g> <o> : "𞡽"  U1E87D  # MENDE KIKAKUI SYLLABLE M120 NGGO
+<Multi_key> <Z> <m> <n> <g> <g> <minus> <a> : "𞡾"  U1E87E  # MENDE KIKAKUI SYLLABLE M159 NGGAA
+<Multi_key> <Z> <m> <n> <g> <g> <u> <a> : "𞡿"  U1E87F  # MENDE KIKAKUI SYLLABLE M127 NGGUA
+<Multi_key> <Z> <m> <minus> <n> <g> <g> <e> : "𞢀"  U1E880  # MENDE KIKAKUI SYLLABLE M086 LONG NGGE
+<Multi_key> <Z> <m> <minus> <n> <g> <g> <minus> <o> : "𞢁"  U1E881  # MENDE KIKAKUI SYLLABLE M106 LONG NGGOO
+<Multi_key> <Z> <m> <minus> <n> <g> <g> <o> : "𞢂"  U1E882  # MENDE KIKAKUI SYLLABLE M183 LONG NGGO
+<Multi_key> <Z> <m> <g> <i> : "𞢃"  U1E883  # MENDE KIKAKUI SYLLABLE M155 GI
+<Multi_key> <Z> <m> <g> <a> : "𞢄"  U1E884  # MENDE KIKAKUI SYLLABLE M111 GA
+<Multi_key> <Z> <m> <g> <u> <space> : "𞢅"  U1E885  # MENDE KIKAKUI SYLLABLE M168 GU
+<Multi_key> <Z> <m> <g> <minus> <e> : "𞢆"  U1E886  # MENDE KIKAKUI SYLLABLE M190 GEE
+<Multi_key> <Z> <m> <g> <u> <e> <i> : "𞢇"  U1E887  # MENDE KIKAKUI SYLLABLE M166 GUEI
+<Multi_key> <Z> <m> <g> <u> <a> <n> : "𞢈"  U1E888  # MENDE KIKAKUI SYLLABLE M167 GUAN
+<Multi_key> <Z> <m> <n> <g> <e> <n> : "𞢉"  U1E889  # MENDE KIKAKUI SYLLABLE M184 NGEN
+<Multi_key> <Z> <m> <n> <g> <o> <n> : "𞢊"  U1E88A  # MENDE KIKAKUI SYLLABLE M057 NGON
+<Multi_key> <Z> <m> <n> <g> <u> <a> <n> : "𞢋"  U1E88B  # MENDE KIKAKUI SYLLABLE M177 NGUAN
+<Multi_key> <Z> <m> <p> <i> : "𞢌"  U1E88C  # MENDE KIKAKUI SYLLABLE M068 PI
+<Multi_key> <Z> <m> <p> <a> : "𞢍"  U1E88D  # MENDE KIKAKUI SYLLABLE M099 PA
+<Multi_key> <Z> <m> <p> <u> : "𞢎"  U1E88E  # MENDE KIKAKUI SYLLABLE M050 PU
+<Multi_key> <Z> <m> <p> <minus> <e> : "𞢏"  U1E88F  # MENDE KIKAKUI SYLLABLE M081 PEE
+<Multi_key> <Z> <m> <p> <e> : "𞢐"  U1E890  # MENDE KIKAKUI SYLLABLE M051 PE
+<Multi_key> <Z> <m> <p> <minus> <o> : "𞢑"  U1E891  # MENDE KIKAKUI SYLLABLE M102 POO
+<Multi_key> <Z> <m> <p> <o> : "𞢒"  U1E892  # MENDE KIKAKUI SYLLABLE M066 PO
+<Multi_key> <Z> <m> <m> <b> <i> : "𞢓"  U1E893  # MENDE KIKAKUI SYLLABLE M145 MBI
+<Multi_key> <Z> <m> <m> <b> <a> : "𞢔"  U1E894  # MENDE KIKAKUI SYLLABLE M062 MBA
+<Multi_key> <Z> <m> <m> <b> <u> : "𞢕"  U1E895  # MENDE KIKAKUI SYLLABLE M122 MBU
+<Multi_key> <Z> <m> <m> <b> <minus> <e> : "𞢖"  U1E896  # MENDE KIKAKUI SYLLABLE M047 MBEE
+<Multi_key> <Z> <m> <m> <b> <minus> <E> : "𞢗"  U1E897  # MENDE KIKAKUI SYLLABLE M188 MBEE
+<Multi_key> <Z> <m> <m> <b> <e> : "𞢘"  U1E898  # MENDE KIKAKUI SYLLABLE M072 MBE
+<Multi_key> <Z> <m> <m> <b> <o> : "𞢙"  U1E899  # MENDE KIKAKUI SYLLABLE M172 MBOO (sic)
+<Multi_key> <Z> <m> <m> <b> <minus> <o> : "𞢚"  U1E89A  # MENDE KIKAKUI SYLLABLE M174 MBO (sic)
+<Multi_key> <Z> <m> <m> <b> <minus> <u> : "𞢛"  U1E89B  # MENDE KIKAKUI SYLLABLE M187 MBUU
+<Multi_key> <Z> <m> <minus> <m> <b> <e> : "𞢜"  U1E89C  # MENDE KIKAKUI SYLLABLE M161 LONG MBE
+<Multi_key> <Z> <m> <minus> <m> <b> <minus> <o> : "𞢝"  U1E89D  # MENDE KIKAKUI SYLLABLE M105 LONG MBOO
+<Multi_key> <Z> <m> <minus> <m> <b> <o> : "𞢞"  U1E89E  # MENDE KIKAKUI SYLLABLE M142 LONG MBO
+<Multi_key> <Z> <m> <k> <p> <i> : "𞢟"  U1E89F  # MENDE KIKAKUI SYLLABLE M132 KPI
+<Multi_key> <Z> <m> <k> <p> <a> : "𞢠"  U1E8A0  # MENDE KIKAKUI SYLLABLE M092 KPA
+<Multi_key> <Z> <m> <k> <p> <u> : "𞢡"  U1E8A1  # MENDE KIKAKUI SYLLABLE M074 KPU
+<Multi_key> <Z> <m> <k> <p> <minus> <e> : "𞢢"  U1E8A2  # MENDE KIKAKUI SYLLABLE M044 KPEE
+<Multi_key> <Z> <m> <k> <p> <e> : "𞢣"  U1E8A3  # MENDE KIKAKUI SYLLABLE M108 KPE
+<Multi_key> <Z> <m> <k> <p> <minus> <o> : "𞢤"  U1E8A4  # MENDE KIKAKUI SYLLABLE M112 KPOO
+<Multi_key> <Z> <m> <k> <p> <o> : "𞢥"  U1E8A5  # MENDE KIKAKUI SYLLABLE M158 KPO
+<Multi_key> <Z> <m> <g> <b> <i> : "𞢦"  U1E8A6  # MENDE KIKAKUI SYLLABLE M124 GBI
+<Multi_key> <Z> <m> <g> <b> <a> : "𞢧"  U1E8A7  # MENDE KIKAKUI SYLLABLE M056 GBA
+<Multi_key> <Z> <m> <g> <b> <u> : "𞢨"  U1E8A8  # MENDE KIKAKUI SYLLABLE M148 GBU
+<Multi_key> <Z> <m> <g> <b> <minus> <e> : "𞢩"  U1E8A9  # MENDE KIKAKUI SYLLABLE M093 GBEE
+<Multi_key> <Z> <m> <g> <b> <e> : "𞢪"  U1E8AA  # MENDE KIKAKUI SYLLABLE M107 GBE
+<Multi_key> <Z> <m> <g> <b> <minus> <o> : "𞢫"  U1E8AB  # MENDE KIKAKUI SYLLABLE M071 GBOO
+<Multi_key> <Z> <m> <g> <b> <o> : "𞢬"  U1E8AC  # MENDE KIKAKUI SYLLABLE M070 GBO
+<Multi_key> <Z> <m> <r> <a> : "𞢭"  U1E8AD  # MENDE KIKAKUI SYLLABLE M171 RA
+<Multi_key> <Z> <m> <n> <d> <i> : "𞢮"  U1E8AE  # MENDE KIKAKUI SYLLABLE M123 NDI
+<Multi_key> <Z> <m> <n> <d> <a> : "𞢯"  U1E8AF  # MENDE KIKAKUI SYLLABLE M129 NDA
+<Multi_key> <Z> <m> <n> <d> <u> : "𞢰"  U1E8B0  # MENDE KIKAKUI SYLLABLE M125 NDU
+<Multi_key> <Z> <m> <n> <d> <minus> <e> : "𞢱"  U1E8B1  # MENDE KIKAKUI SYLLABLE M191 NDEE
+<Multi_key> <Z> <m> <n> <d> <e> : "𞢲"  U1E8B2  # MENDE KIKAKUI SYLLABLE M119 NDE
+<Multi_key> <Z> <m> <n> <d> <minus> <o> : "𞢳"  U1E8B3  # MENDE KIKAKUI SYLLABLE M067 NDOO
+<Multi_key> <Z> <m> <n> <d> <o> : "𞢴"  U1E8B4  # MENDE KIKAKUI SYLLABLE M064 NDO
+<Multi_key> <Z> <m> <n> <j> <a> : "𞢵"  U1E8B5  # MENDE KIKAKUI SYLLABLE M152 NJA
+<Multi_key> <Z> <m> <n> <j> <u> : "𞢶"  U1E8B6  # MENDE KIKAKUI SYLLABLE M192 NJU
+<Multi_key> <Z> <m> <n> <j> <minus> <e> : "𞢷"  U1E8B7  # MENDE KIKAKUI SYLLABLE M149 NJEE
+<Multi_key> <Z> <m> <n> <j> <minus> <o> : "𞢸"  U1E8B8  # MENDE KIKAKUI SYLLABLE M134 NJOO
+<Multi_key> <Z> <m> <v> <i> : "𞢹"  U1E8B9  # MENDE KIKAKUI SYLLABLE M182 VI
+<Multi_key> <Z> <m> <v> <a> : "𞢺"  U1E8BA  # MENDE KIKAKUI SYLLABLE M185 VA
+<Multi_key> <Z> <m> <v> <u> : "𞢻"  U1E8BB  # MENDE KIKAKUI SYLLABLE M151 VU
+<Multi_key> <Z> <m> <v> <minus> <e> : "𞢼"  U1E8BC  # MENDE KIKAKUI SYLLABLE M173 VEE
+<Multi_key> <Z> <m> <v> <e> : "𞢽"  U1E8BD  # MENDE KIKAKUI SYLLABLE M085 VE
+<Multi_key> <Z> <m> <v> <minus> <o> : "𞢾"  U1E8BE  # MENDE KIKAKUI SYLLABLE M144 VOO
+<Multi_key> <Z> <m> <v> <o> : "𞢿"  U1E8BF  # MENDE KIKAKUI SYLLABLE M077 VO
+<Multi_key> <Z> <m> <n> <y> <i> <n> : "𞣀"  U1E8C0  # MENDE KIKAKUI SYLLABLE M164 NYIN
+<Multi_key> <Z> <m> <n> <y> <a> <n> : "𞣁"  U1E8C1  # MENDE KIKAKUI SYLLABLE M058 NYAN
+<Multi_key> <Z> <m> <n> <y> <u> <n> : "𞣂"  U1E8C2  # MENDE KIKAKUI SYLLABLE M170 NYUN
+<Multi_key> <Z> <m> <n> <y> <e> <n> : "𞣃"  U1E8C3  # MENDE KIKAKUI SYLLABLE M098 NYEN
+<Multi_key> <Z> <m> <n> <y> <o> <n> : "𞣄"  U1E8C4  # MENDE KIKAKUI SYLLABLE M060 NYON
+
+<Multi_key> <Z> <m> <numbersign> <1> : "𞣇"  U1E8C7  # MENDE KIKAKUI DIGIT ONE
+<Multi_key> <Z> <m> <numbersign> <2> : "𞣈"  U1E8C8  # MENDE KIKAKUI DIGIT TWO
+<Multi_key> <Z> <m> <numbersign> <3> : "𞣉"  U1E8C9  # MENDE KIKAKUI DIGIT THREE
+<Multi_key> <Z> <m> <numbersign> <4> : "𞣊"  U1E8CA  # MENDE KIKAKUI DIGIT FOUR
+<Multi_key> <Z> <m> <numbersign> <5> : "𞣋"  U1E8CB  # MENDE KIKAKUI DIGIT FIVE
+<Multi_key> <Z> <m> <numbersign> <6> : "𞣌"  U1E8CC  # MENDE KIKAKUI DIGIT SIX
+<Multi_key> <Z> <m> <numbersign> <7> : "𞣍"  U1E8CD  # MENDE KIKAKUI DIGIT SEVEN
+<Multi_key> <Z> <m> <numbersign> <8> : "𞣎"  U1E8CE  # MENDE KIKAKUI DIGIT EIGHT
+<Multi_key> <Z> <m> <numbersign> <9> : "𞣏"  U1E8CF  # MENDE KIKAKUI DIGIT NINE
+
+<Multi_key> <Z> <m> <1> <Return> : "𞣐"  U1E8D0  # MENDE KIKAKUI COMBINING NUMBER TEENS
+<Multi_key> <Z> <m> <1> <0> <Return> : "𞣑"  U1E8D1  # MENDE KIKAKUI COMBINING NUMBER TENS
+<Multi_key> <Z> <m> <1> <0> <0> <Return> : "𞣒"  U1E8D2  # MENDE KIKAKUI COMBINING NUMBER HUNDREDS
+<Multi_key> <Z> <m> <1> <0> <0> <0> <Return> : "𞣓"  U1E8D3  # MENDE KIKAKUI COMBINING NUMBER THOUSANDS
+<Multi_key> <Z> <m> <1> <0> <0> <0> <0> <Return> : "𞣔"  U1E8D4  # MENDE KIKAKUI COMBINING NUMBER TEN THOUSANDS
+<Multi_key> <Z> <m> <1> <0> <0> <0> <0> <0> <Return> : "𞣕"  U1E8D5  # MENDE KIKAKUI COMBINING NUMBER HUNDRED THOUSANDS
+<Multi_key> <Z> <m> <1> <0> <0> <0> <0> <0> <0> <Return> : "𞣖"  U1E8D6  # MENDE KIKAKUI COMBINING NUMBER MILLIONS
+
 # (n = NKo)
 
 <Multi_key> <Z> <n> <a> : "ߊ" U07CA   # NKO LETTER A
@@ -9166,6 +9628,293 @@ include "%L"
 <Multi_key> <Z> <n> <numbersign> <7> : "߇" U07C7   # NKO DIGIT SEVEN
 <Multi_key> <Z> <n> <numbersign> <8> : "߈" U07C8   # NKO DIGIT EIGHT
 <Multi_key> <Z> <n> <numbersign> <9> : "߉" U07C9   # NKO DIGIT NINE
+
+# (v = Vai)
+
+<Multi_key> <Z> <v> <minus> <e> : "ꔀ"  UA500  # VAI SYLLABLE EE
+<Multi_key> <Z> <v> <asciitilde> <minus> <e> : "ꔁ"  UA501  # VAI SYLLABLE EEN
+<Multi_key> <Z> <v> <h> <minus> <e> : "ꔂ"  UA502  # VAI SYLLABLE HEE
+<Multi_key> <Z> <v> <w> <minus> <e> : "ꔃ"  UA503  # VAI SYLLABLE WEE
+<Multi_key> <Z> <v> <w> <asciitilde> <minus> <e> : "ꔄ"  UA504  # VAI SYLLABLE WEEN
+<Multi_key> <Z> <v> <p> <minus> <e> : "ꔅ"  UA505  # VAI SYLLABLE PEE
+<Multi_key> <Z> <v> <b> <h> <minus> <e> : "ꔆ"  UA506  # VAI SYLLABLE BHEE
+<Multi_key> <Z> <v> <b> <minus> <e> : "ꔇ"  UA507  # VAI SYLLABLE BEE
+<Multi_key> <Z> <v> <m> <b> <minus> <e> : "ꔈ"  UA508  # VAI SYLLABLE MBEE
+<Multi_key> <Z> <v> <k> <p> <minus> <e> : "ꔉ"  UA509  # VAI SYLLABLE KPEE
+<Multi_key> <Z> <v> <m> <g> <b> <minus> <e> : "ꔊ"  UA50A  # VAI SYLLABLE MGBEE
+<Multi_key> <Z> <v> <g> <b> <minus> <e> : "ꔋ"  UA50B  # VAI SYLLABLE GBEE
+<Multi_key> <Z> <v> <f> <minus> <e> : "ꔌ"  UA50C  # VAI SYLLABLE FEE
+<Multi_key> <Z> <v> <v> <minus> <e> : "ꔍ"  UA50D  # VAI SYLLABLE VEE
+<Multi_key> <Z> <v> <t> <minus> <e> : "ꔎ"  UA50E  # VAI SYLLABLE TEE
+<Multi_key> <Z> <v> <t> <h> <minus> <e> : "ꔏ"  UA50F  # VAI SYLLABLE THEE
+<Multi_key> <Z> <v> <d> <h> <minus> <e> : "ꔐ"  UA510  # VAI SYLLABLE DHEE
+<Multi_key> <Z> <v> <d> <h> <h> <minus> <e> : "ꔑ"  UA511  # VAI SYLLABLE DHHEE
+<Multi_key> <Z> <v> <l> <minus> <e> : "ꔒ"  UA512  # VAI SYLLABLE LEE
+<Multi_key> <Z> <v> <r> <minus> <e> : "ꔓ"  UA513  # VAI SYLLABLE REE
+<Multi_key> <Z> <v> <d> <minus> <e> : "ꔔ"  UA514  # VAI SYLLABLE DEE
+<Multi_key> <Z> <v> <n> <d> <minus> <e> : "ꔕ"  UA515  # VAI SYLLABLE NDEE
+<Multi_key> <Z> <v> <s> <minus> <e> : "ꔖ"  UA516  # VAI SYLLABLE SEE
+<Multi_key> <Z> <v> <s> <h> <minus> <e> : "ꔗ"  UA517  # VAI SYLLABLE SHEE
+<Multi_key> <Z> <v> <z> <minus> <e> : "ꔘ"  UA518  # VAI SYLLABLE ZEE
+<Multi_key> <Z> <v> <z> <h> <minus> <e> : "ꔙ"  UA519  # VAI SYLLABLE ZHEE
+<Multi_key> <Z> <v> <c> <minus> <e> : "ꔚ"  UA51A  # VAI SYLLABLE CEE
+<Multi_key> <Z> <v> <j> <minus> <e> : "ꔛ"  UA51B  # VAI SYLLABLE JEE
+<Multi_key> <Z> <v> <n> <j> <minus> <e> : "ꔜ"  UA51C  # VAI SYLLABLE NJEE
+<Multi_key> <Z> <v> <y> <minus> <e> : "ꔝ"  UA51D  # VAI SYLLABLE YEE
+<Multi_key> <Z> <v> <k> <minus> <e> : "ꔞ"  UA51E  # VAI SYLLABLE KEE
+<Multi_key> <Z> <v> <n> <g> <g> <minus> <e> : "ꔟ"  UA51F  # VAI SYLLABLE NGGEE
+<Multi_key> <Z> <v> <g> <minus> <e> : "ꔠ"  UA520  # VAI SYLLABLE GEE
+<Multi_key> <Z> <v> <m> <minus> <e> : "ꔡ"  UA521  # VAI SYLLABLE MEE
+<Multi_key> <Z> <v> <n> <minus> <e> : "ꔢ"  UA522  # VAI SYLLABLE NEE
+<Multi_key> <Z> <v> <n> <y> <minus> <e> : "ꔣ"  UA523  # VAI SYLLABLE NYEE
+<Multi_key> <Z> <v> <i> : "ꔤ"  UA524  # VAI SYLLABLE I
+<Multi_key> <Z> <v> <asciitilde> <i> : "ꔥ"  UA525  # VAI SYLLABLE IN
+<Multi_key> <Z> <v> <h> <i> : "ꔦ"  UA526  # VAI SYLLABLE HI
+<Multi_key> <Z> <v> <h> <asciitilde> <i> : "ꔧ"  UA527  # VAI SYLLABLE HIN
+<Multi_key> <Z> <v> <w> <i> : "ꔨ"  UA528  # VAI SYLLABLE WI
+<Multi_key> <Z> <v> <w> <asciitilde> <i> : "ꔩ"  UA529  # VAI SYLLABLE WIN
+<Multi_key> <Z> <v> <p> <i> : "ꔪ"  UA52A  # VAI SYLLABLE PI
+<Multi_key> <Z> <v> <b> <h> <i> : "ꔫ"  UA52B  # VAI SYLLABLE BHI
+<Multi_key> <Z> <v> <b> <i> : "ꔬ"  UA52C  # VAI SYLLABLE BI
+<Multi_key> <Z> <v> <m> <b> <i> : "ꔭ"  UA52D  # VAI SYLLABLE MBI
+<Multi_key> <Z> <v> <k> <p> <i> : "ꔮ"  UA52E  # VAI SYLLABLE KPI
+<Multi_key> <Z> <v> <m> <g> <b> <i> : "ꔯ"  UA52F  # VAI SYLLABLE MGBI
+<Multi_key> <Z> <v> <g> <b> <i> : "ꔰ"  UA530  # VAI SYLLABLE GBI
+<Multi_key> <Z> <v> <f> <i> : "ꔱ"  UA531  # VAI SYLLABLE FI
+<Multi_key> <Z> <v> <v> <i> : "ꔲ"  UA532  # VAI SYLLABLE VI
+<Multi_key> <Z> <v> <t> <i> : "ꔳ"  UA533  # VAI SYLLABLE TI
+<Multi_key> <Z> <v> <t> <h> <i> : "ꔴ"  UA534  # VAI SYLLABLE THI
+<Multi_key> <Z> <v> <d> <h> <i> : "ꔵ"  UA535  # VAI SYLLABLE DHI
+<Multi_key> <Z> <v> <d> <h> <h> <i> : "ꔶ"  UA536  # VAI SYLLABLE DHHI
+<Multi_key> <Z> <v> <l> <i> : "ꔷ"  UA537  # VAI SYLLABLE LI
+<Multi_key> <Z> <v> <r> <i> : "ꔸ"  UA538  # VAI SYLLABLE RI
+<Multi_key> <Z> <v> <d> <i> : "ꔹ"  UA539  # VAI SYLLABLE DI
+<Multi_key> <Z> <v> <n> <d> <i> : "ꔺ"  UA53A  # VAI SYLLABLE NDI
+<Multi_key> <Z> <v> <s> <i> : "ꔻ"  UA53B  # VAI SYLLABLE SI
+<Multi_key> <Z> <v> <s> <h> <i> : "ꔼ"  UA53C  # VAI SYLLABLE SHI
+<Multi_key> <Z> <v> <z> <i> : "ꔽ"  UA53D  # VAI SYLLABLE ZI
+<Multi_key> <Z> <v> <z> <h> <i> : "ꔾ"  UA53E  # VAI SYLLABLE ZHI
+<Multi_key> <Z> <v> <c> <i> : "ꔿ"  UA53F  # VAI SYLLABLE CI
+<Multi_key> <Z> <v> <j> <i> : "ꕀ"  UA540  # VAI SYLLABLE JI
+<Multi_key> <Z> <v> <n> <j> <i> : "ꕁ"  UA541  # VAI SYLLABLE NJI
+<Multi_key> <Z> <v> <y> <i> : "ꕂ"  UA542  # VAI SYLLABLE YI
+<Multi_key> <Z> <v> <k> <i> : "ꕃ"  UA543  # VAI SYLLABLE KI
+<Multi_key> <Z> <v> <n> <g> <g> <i> : "ꕄ"  UA544  # VAI SYLLABLE NGGI
+<Multi_key> <Z> <v> <g> <i> : "ꕅ"  UA545  # VAI SYLLABLE GI
+<Multi_key> <Z> <v> <m> <i> : "ꕆ"  UA546  # VAI SYLLABLE MI
+<Multi_key> <Z> <v> <n> <i> : "ꕇ"  UA547  # VAI SYLLABLE NI
+<Multi_key> <Z> <v> <n> <y> <i> : "ꕈ"  UA548  # VAI SYLLABLE NYI
+<Multi_key> <Z> <v> <a> : "ꕉ"  UA549  # VAI SYLLABLE A
+<Multi_key> <Z> <v> <asciitilde> <a> : "ꕊ"  UA54A  # VAI SYLLABLE AN
+<Multi_key> <Z> <v> <n> <g> <asciitilde> <a> : "ꕋ"  UA54B  # VAI SYLLABLE NGAN
+<Multi_key> <Z> <v> <h> <a> : "ꕌ"  UA54C  # VAI SYLLABLE HA
+<Multi_key> <Z> <v> <h> <asciitilde> <a> : "ꕍ"  UA54D  # VAI SYLLABLE HAN
+<Multi_key> <Z> <v> <w> <a> : "ꕎ"  UA54E  # VAI SYLLABLE WA
+<Multi_key> <Z> <v> <w> <asciitilde> <a> : "ꕏ"  UA54F  # VAI SYLLABLE WAN
+<Multi_key> <Z> <v> <p> <a> : "ꕐ"  UA550  # VAI SYLLABLE PA
+<Multi_key> <Z> <v> <b> <h> <a> : "ꕑ"  UA551  # VAI SYLLABLE BHA
+<Multi_key> <Z> <v> <b> <a> : "ꕒ"  UA552  # VAI SYLLABLE BA
+<Multi_key> <Z> <v> <m> <b> <a> : "ꕓ"  UA553  # VAI SYLLABLE MBA
+<Multi_key> <Z> <v> <k> <p> <a> : "ꕔ"  UA554  # VAI SYLLABLE KPA
+<Multi_key> <Z> <v> <k> <p> <asciitilde> <a> : "ꕕ"  UA555  # VAI SYLLABLE KPAN
+<Multi_key> <Z> <v> <m> <g> <b> <a> : "ꕖ"  UA556  # VAI SYLLABLE MGBA
+<Multi_key> <Z> <v> <g> <b> <a> : "ꕗ"  UA557  # VAI SYLLABLE GBA
+<Multi_key> <Z> <v> <f> <a> : "ꕘ"  UA558  # VAI SYLLABLE FA
+<Multi_key> <Z> <v> <v> <a> : "ꕙ"  UA559  # VAI SYLLABLE VA
+<Multi_key> <Z> <v> <t> <a> : "ꕚ"  UA55A  # VAI SYLLABLE TA
+<Multi_key> <Z> <v> <t> <h> <a> : "ꕛ"  UA55B  # VAI SYLLABLE THA
+<Multi_key> <Z> <v> <d> <h> <a> : "ꕜ"  UA55C  # VAI SYLLABLE DHA
+<Multi_key> <Z> <v> <d> <h> <h> <a> : "ꕝ"  UA55D  # VAI SYLLABLE DHHA
+<Multi_key> <Z> <v> <l> <a> : "ꕞ"  UA55E  # VAI SYLLABLE LA
+<Multi_key> <Z> <v> <r> <a> : "ꕟ"  UA55F  # VAI SYLLABLE RA
+<Multi_key> <Z> <v> <d> <a> : "ꕠ"  UA560  # VAI SYLLABLE DA
+<Multi_key> <Z> <v> <n> <d> <a> : "ꕡ"  UA561  # VAI SYLLABLE NDA
+<Multi_key> <Z> <v> <s> <a> : "ꕢ"  UA562  # VAI SYLLABLE SA
+<Multi_key> <Z> <v> <s> <h> <a> : "ꕣ"  UA563  # VAI SYLLABLE SHA
+<Multi_key> <Z> <v> <z> <a> : "ꕤ"  UA564  # VAI SYLLABLE ZA
+<Multi_key> <Z> <v> <z> <h> <a> : "ꕥ"  UA565  # VAI SYLLABLE ZHA
+<Multi_key> <Z> <v> <c> <a> : "ꕦ"  UA566  # VAI SYLLABLE CA
+<Multi_key> <Z> <v> <j> <a> : "ꕧ"  UA567  # VAI SYLLABLE JA
+<Multi_key> <Z> <v> <n> <j> <a> : "ꕨ"  UA568  # VAI SYLLABLE NJA
+<Multi_key> <Z> <v> <y> <a> : "ꕩ"  UA569  # VAI SYLLABLE YA
+<Multi_key> <Z> <v> <k> <a> : "ꕪ"  UA56A  # VAI SYLLABLE KA
+<Multi_key> <Z> <v> <k> <asciitilde> <a> : "ꕫ"  UA56B  # VAI SYLLABLE KAN
+<Multi_key> <Z> <v> <n> <g> <g> <a> : "ꕬ"  UA56C  # VAI SYLLABLE NGGA
+<Multi_key> <Z> <v> <g> <a> : "ꕭ"  UA56D  # VAI SYLLABLE GA
+<Multi_key> <Z> <v> <m> <a> : "ꕮ"  UA56E  # VAI SYLLABLE MA
+<Multi_key> <Z> <v> <n> <a> : "ꕯ"  UA56F  # VAI SYLLABLE NA
+<Multi_key> <Z> <v> <n> <y> <a> : "ꕰ"  UA570  # VAI SYLLABLE NYA
+<Multi_key> <Z> <v> <minus> <o> : "ꕱ"  UA571  # VAI SYLLABLE OO
+<Multi_key> <Z> <v> <asciitilde> <minus> <o> : "ꕲ"  UA572  # VAI SYLLABLE OON
+<Multi_key> <Z> <v> <h> <minus> <o> : "ꕳ"  UA573  # VAI SYLLABLE HOO
+<Multi_key> <Z> <v> <w> <minus> <o> : "ꕴ"  UA574  # VAI SYLLABLE WOO
+<Multi_key> <Z> <v> <w> <asciitilde> <minus> <o> : "ꕵ"  UA575  # VAI SYLLABLE WOON
+<Multi_key> <Z> <v> <p> <minus> <o> : "ꕶ"  UA576  # VAI SYLLABLE POO
+<Multi_key> <Z> <v> <b> <h> <minus> <o> : "ꕷ"  UA577  # VAI SYLLABLE BHOO
+<Multi_key> <Z> <v> <b> <minus> <o> : "ꕸ"  UA578  # VAI SYLLABLE BOO
+<Multi_key> <Z> <v> <m> <b> <minus> <o> : "ꕹ"  UA579  # VAI SYLLABLE MBOO
+<Multi_key> <Z> <v> <k> <p> <minus> <o> : "ꕺ"  UA57A  # VAI SYLLABLE KPOO
+<Multi_key> <Z> <v> <m> <g> <b> <minus> <o> : "ꕻ"  UA57B  # VAI SYLLABLE MGBOO
+<Multi_key> <Z> <v> <g> <b> <minus> <o> : "ꕼ"  UA57C  # VAI SYLLABLE GBOO
+<Multi_key> <Z> <v> <f> <minus> <o> : "ꕽ"  UA57D  # VAI SYLLABLE FOO
+<Multi_key> <Z> <v> <v> <minus> <o> : "ꕾ"  UA57E  # VAI SYLLABLE VOO
+<Multi_key> <Z> <v> <t> <minus> <o> : "ꕿ"  UA57F  # VAI SYLLABLE TOO
+<Multi_key> <Z> <v> <t> <h> <minus> <o> : "ꖀ"  UA580  # VAI SYLLABLE THOO
+<Multi_key> <Z> <v> <d> <h> <minus> <o> : "ꖁ"  UA581  # VAI SYLLABLE DHOO
+<Multi_key> <Z> <v> <d> <h> <h> <minus> <o> : "ꖂ"  UA582  # VAI SYLLABLE DHHOO
+<Multi_key> <Z> <v> <l> <minus> <o> : "ꖃ"  UA583  # VAI SYLLABLE LOO
+<Multi_key> <Z> <v> <r> <minus> <o> : "ꖄ"  UA584  # VAI SYLLABLE ROO
+<Multi_key> <Z> <v> <d> <minus> <o> : "ꖅ"  UA585  # VAI SYLLABLE DOO
+<Multi_key> <Z> <v> <n> <d> <minus> <o> : "ꖆ"  UA586  # VAI SYLLABLE NDOO
+<Multi_key> <Z> <v> <s> <minus> <o> : "ꖇ"  UA587  # VAI SYLLABLE SOO
+<Multi_key> <Z> <v> <s> <h> <minus> <o> : "ꖈ"  UA588  # VAI SYLLABLE SHOO
+<Multi_key> <Z> <v> <z> <minus> <o> : "ꖉ"  UA589  # VAI SYLLABLE ZOO
+<Multi_key> <Z> <v> <z> <h> <minus> <o> : "ꖊ"  UA58A  # VAI SYLLABLE ZHOO
+<Multi_key> <Z> <v> <c> <minus> <o> : "ꖋ"  UA58B  # VAI SYLLABLE COO
+<Multi_key> <Z> <v> <j> <minus> <o> : "ꖌ"  UA58C  # VAI SYLLABLE JOO
+<Multi_key> <Z> <v> <n> <j> <minus> <o> : "ꖍ"  UA58D  # VAI SYLLABLE NJOO
+<Multi_key> <Z> <v> <y> <minus> <o> : "ꖎ"  UA58E  # VAI SYLLABLE YOO
+<Multi_key> <Z> <v> <k> <minus> <o> : "ꖏ"  UA58F  # VAI SYLLABLE KOO
+<Multi_key> <Z> <v> <n> <g> <g> <minus> <o> : "ꖐ"  UA590  # VAI SYLLABLE NGGOO
+<Multi_key> <Z> <v> <g> <minus> <o> : "ꖑ"  UA591  # VAI SYLLABLE GOO
+<Multi_key> <Z> <v> <m> <minus> <o> : "ꖒ"  UA592  # VAI SYLLABLE MOO
+<Multi_key> <Z> <v> <n> <minus> <o> : "ꖓ"  UA593  # VAI SYLLABLE NOO
+<Multi_key> <Z> <v> <n> <y> <minus> <o> : "ꖔ"  UA594  # VAI SYLLABLE NYOO
+<Multi_key> <Z> <v> <u> : "ꖕ"  UA595  # VAI SYLLABLE U
+<Multi_key> <Z> <v> <asciitilde> <u> : "ꖖ"  UA596  # VAI SYLLABLE UN
+<Multi_key> <Z> <v> <h> <u> : "ꖗ"  UA597  # VAI SYLLABLE HU
+<Multi_key> <Z> <v> <h> <asciitilde> <u> : "ꖘ"  UA598  # VAI SYLLABLE HUN
+<Multi_key> <Z> <v> <w> <u> : "ꖙ"  UA599  # VAI SYLLABLE WU
+<Multi_key> <Z> <v> <w> <asciitilde> <u> : "ꖚ"  UA59A  # VAI SYLLABLE WUN
+<Multi_key> <Z> <v> <p> <u> : "ꖛ"  UA59B  # VAI SYLLABLE PU
+<Multi_key> <Z> <v> <b> <h> <u> : "ꖜ"  UA59C  # VAI SYLLABLE BHU
+<Multi_key> <Z> <v> <b> <u> : "ꖝ"  UA59D  # VAI SYLLABLE BU
+<Multi_key> <Z> <v> <m> <b> <u> : "ꖞ"  UA59E  # VAI SYLLABLE MBU
+<Multi_key> <Z> <v> <k> <p> <u> : "ꖟ"  UA59F  # VAI SYLLABLE KPU
+<Multi_key> <Z> <v> <m> <g> <b> <u> : "ꖠ"  UA5A0  # VAI SYLLABLE MGBU
+<Multi_key> <Z> <v> <g> <b> <u> : "ꖡ"  UA5A1  # VAI SYLLABLE GBU
+<Multi_key> <Z> <v> <f> <u> : "ꖢ"  UA5A2  # VAI SYLLABLE FU
+<Multi_key> <Z> <v> <v> <u> : "ꖣ"  UA5A3  # VAI SYLLABLE VU
+<Multi_key> <Z> <v> <t> <u> : "ꖤ"  UA5A4  # VAI SYLLABLE TU
+<Multi_key> <Z> <v> <t> <h> <u> : "ꖥ"  UA5A5  # VAI SYLLABLE THU
+<Multi_key> <Z> <v> <d> <h> <u> : "ꖦ"  UA5A6  # VAI SYLLABLE DHU
+<Multi_key> <Z> <v> <d> <h> <h> <u> : "ꖧ"  UA5A7  # VAI SYLLABLE DHHU
+<Multi_key> <Z> <v> <l> <u> : "ꖨ"  UA5A8  # VAI SYLLABLE LU
+<Multi_key> <Z> <v> <r> <u> : "ꖩ"  UA5A9  # VAI SYLLABLE RU
+<Multi_key> <Z> <v> <d> <u> : "ꖪ"  UA5AA  # VAI SYLLABLE DU
+<Multi_key> <Z> <v> <n> <d> <u> : "ꖫ"  UA5AB  # VAI SYLLABLE NDU
+<Multi_key> <Z> <v> <s> <u> : "ꖬ"  UA5AC  # VAI SYLLABLE SU
+<Multi_key> <Z> <v> <s> <h> <u> : "ꖭ"  UA5AD  # VAI SYLLABLE SHU
+<Multi_key> <Z> <v> <z> <u> : "ꖮ"  UA5AE  # VAI SYLLABLE ZU
+<Multi_key> <Z> <v> <z> <h> <u> : "ꖯ"  UA5AF  # VAI SYLLABLE ZHU
+<Multi_key> <Z> <v> <c> <u> : "ꖰ"  UA5B0  # VAI SYLLABLE CU
+<Multi_key> <Z> <v> <j> <u> : "ꖱ"  UA5B1  # VAI SYLLABLE JU
+<Multi_key> <Z> <v> <n> <j> <u> : "ꖲ"  UA5B2  # VAI SYLLABLE NJU
+<Multi_key> <Z> <v> <y> <u> : "ꖳ"  UA5B3  # VAI SYLLABLE YU
+<Multi_key> <Z> <v> <k> <u> : "ꖴ"  UA5B4  # VAI SYLLABLE KU
+<Multi_key> <Z> <v> <n> <g> <g> <u> : "ꖵ"  UA5B5  # VAI SYLLABLE NGGU
+<Multi_key> <Z> <v> <g> <u> : "ꖶ"  UA5B6  # VAI SYLLABLE GU
+<Multi_key> <Z> <v> <m> <u> : "ꖷ"  UA5B7  # VAI SYLLABLE MU
+<Multi_key> <Z> <v> <n> <u> : "ꖸ"  UA5B8  # VAI SYLLABLE NU
+<Multi_key> <Z> <v> <n> <y> <u> : "ꖹ"  UA5B9  # VAI SYLLABLE NYU
+<Multi_key> <Z> <v> <o> : "ꖺ"  UA5BA  # VAI SYLLABLE O
+<Multi_key> <Z> <v> <asciitilde> <o> : "ꖻ"  UA5BB  # VAI SYLLABLE ON
+<Multi_key> <Z> <v> <n> <g> <asciitilde> <o> : "ꖼ"  UA5BC  # VAI SYLLABLE NGON
+<Multi_key> <Z> <v> <h> <o> : "ꖽ"  UA5BD  # VAI SYLLABLE HO
+<Multi_key> <Z> <v> <h> <asciitilde> <o> : "ꖾ"  UA5BE  # VAI SYLLABLE HON
+<Multi_key> <Z> <v> <w> <o> : "ꖿ"  UA5BF  # VAI SYLLABLE WO
+<Multi_key> <Z> <v> <w> <asciitilde> <o> : "ꗀ"  UA5C0  # VAI SYLLABLE WON
+<Multi_key> <Z> <v> <p> <o> : "ꗁ"  UA5C1  # VAI SYLLABLE PO
+<Multi_key> <Z> <v> <b> <h> <o> : "ꗂ"  UA5C2  # VAI SYLLABLE BHO
+<Multi_key> <Z> <v> <b> <o> : "ꗃ"  UA5C3  # VAI SYLLABLE BO
+<Multi_key> <Z> <v> <m> <b> <o> : "ꗄ"  UA5C4  # VAI SYLLABLE MBO
+<Multi_key> <Z> <v> <k> <p> <o> : "ꗅ"  UA5C5  # VAI SYLLABLE KPO
+<Multi_key> <Z> <v> <m> <g> <b> <o> : "ꗆ"  UA5C6  # VAI SYLLABLE MGBO
+<Multi_key> <Z> <v> <g> <b> <o> : "ꗇ"  UA5C7  # VAI SYLLABLE GBO
+<Multi_key> <Z> <v> <g> <b> <asciitilde> <o> : "ꗈ"  UA5C8  # VAI SYLLABLE GBON
+<Multi_key> <Z> <v> <f> <o> : "ꗉ"  UA5C9  # VAI SYLLABLE FO
+<Multi_key> <Z> <v> <v> <o> : "ꗊ"  UA5CA  # VAI SYLLABLE VO
+<Multi_key> <Z> <v> <t> <o> : "ꗋ"  UA5CB  # VAI SYLLABLE TO
+<Multi_key> <Z> <v> <t> <h> <o> : "ꗌ"  UA5CC  # VAI SYLLABLE THO
+<Multi_key> <Z> <v> <d> <h> <o> : "ꗍ"  UA5CD  # VAI SYLLABLE DHO
+<Multi_key> <Z> <v> <d> <h> <h> <o> : "ꗎ"  UA5CE  # VAI SYLLABLE DHHO
+<Multi_key> <Z> <v> <l> <o> : "ꗏ"  UA5CF  # VAI SYLLABLE LO
+<Multi_key> <Z> <v> <r> <o> : "ꗐ"  UA5D0  # VAI SYLLABLE RO
+<Multi_key> <Z> <v> <d> <o> : "ꗑ"  UA5D1  # VAI SYLLABLE DO
+<Multi_key> <Z> <v> <n> <d> <o> : "ꗒ"  UA5D2  # VAI SYLLABLE NDO
+<Multi_key> <Z> <v> <s> <o> : "ꗓ"  UA5D3  # VAI SYLLABLE SO
+<Multi_key> <Z> <v> <s> <h> <o> : "ꗔ"  UA5D4  # VAI SYLLABLE SHO
+<Multi_key> <Z> <v> <z> <o> : "ꗕ"  UA5D5  # VAI SYLLABLE ZO
+<Multi_key> <Z> <v> <z> <h> <o> : "ꗖ"  UA5D6  # VAI SYLLABLE ZHO
+<Multi_key> <Z> <v> <c> <o> : "ꗗ"  UA5D7  # VAI SYLLABLE CO
+<Multi_key> <Z> <v> <j> <o> : "ꗘ"  UA5D8  # VAI SYLLABLE JO
+<Multi_key> <Z> <v> <n> <j> <o> : "ꗙ"  UA5D9  # VAI SYLLABLE NJO
+<Multi_key> <Z> <v> <y> <o> : "ꗚ"  UA5DA  # VAI SYLLABLE YO
+<Multi_key> <Z> <v> <k> <o> : "ꗛ"  UA5DB  # VAI SYLLABLE KO
+<Multi_key> <Z> <v> <n> <g> <g> <o> : "ꗜ"  UA5DC  # VAI SYLLABLE NGGO
+<Multi_key> <Z> <v> <g> <o> : "ꗝ"  UA5DD  # VAI SYLLABLE GO
+<Multi_key> <Z> <v> <m> <o> : "ꗞ"  UA5DE  # VAI SYLLABLE MO
+<Multi_key> <Z> <v> <n> <o> : "ꗟ"  UA5DF  # VAI SYLLABLE NO
+<Multi_key> <Z> <v> <n> <y> <o> : "ꗠ"  UA5E0  # VAI SYLLABLE NYO
+<Multi_key> <Z> <v> <e> : "ꗡ"  UA5E1  # VAI SYLLABLE E
+<Multi_key> <Z> <v> <asciitilde> <e> : "ꗢ"  UA5E2  # VAI SYLLABLE EN
+<Multi_key> <Z> <v> <n> <g> <asciitilde> <e> : "ꗣ"  UA5E3  # VAI SYLLABLE NGEN
+<Multi_key> <Z> <v> <h> <e> : "ꗤ"  UA5E4  # VAI SYLLABLE HE
+<Multi_key> <Z> <v> <h> <asciitilde> <e> : "ꗥ"  UA5E5  # VAI SYLLABLE HEN
+<Multi_key> <Z> <v> <w> <e> : "ꗦ"  UA5E6  # VAI SYLLABLE WE
+<Multi_key> <Z> <v> <w> <asciitilde> <e> : "ꗧ"  UA5E7  # VAI SYLLABLE WEN
+<Multi_key> <Z> <v> <p> <e> : "ꗨ"  UA5E8  # VAI SYLLABLE PE
+<Multi_key> <Z> <v> <b> <h> <e> : "ꗩ"  UA5E9  # VAI SYLLABLE BHE
+<Multi_key> <Z> <v> <b> <e> : "ꗪ"  UA5EA  # VAI SYLLABLE BE
+<Multi_key> <Z> <v> <m> <b> <e> : "ꗫ"  UA5EB  # VAI SYLLABLE MBE
+<Multi_key> <Z> <v> <k> <p> <e> : "ꗬ"  UA5EC  # VAI SYLLABLE KPE
+<Multi_key> <Z> <v> <k> <p> <asciitilde> <e> : "ꗭ"  UA5ED  # VAI SYLLABLE KPEN
+<Multi_key> <Z> <v> <m> <g> <b> <e> : "ꗮ"  UA5EE  # VAI SYLLABLE MGBE
+<Multi_key> <Z> <v> <g> <b> <e> : "ꗯ"  UA5EF  # VAI SYLLABLE GBE
+<Multi_key> <Z> <v> <g> <b> <asciitilde> <e> : "ꗰ"  UA5F0  # VAI SYLLABLE GBEN
+<Multi_key> <Z> <v> <f> <e> : "ꗱ"  UA5F1  # VAI SYLLABLE FE
+<Multi_key> <Z> <v> <v> <e> : "ꗲ"  UA5F2  # VAI SYLLABLE VE
+<Multi_key> <Z> <v> <t> <e> : "ꗳ"  UA5F3  # VAI SYLLABLE TE
+<Multi_key> <Z> <v> <t> <h> <e> : "ꗴ"  UA5F4  # VAI SYLLABLE THE
+<Multi_key> <Z> <v> <d> <h> <e> : "ꗵ"  UA5F5  # VAI SYLLABLE DHE
+<Multi_key> <Z> <v> <d> <h> <h> <e> : "ꗶ"  UA5F6  # VAI SYLLABLE DHHE
+<Multi_key> <Z> <v> <l> <e> : "ꗷ"  UA5F7  # VAI SYLLABLE LE
+<Multi_key> <Z> <v> <r> <e> : "ꗸ"  UA5F8  # VAI SYLLABLE RE
+<Multi_key> <Z> <v> <d> <e> : "ꗹ"  UA5F9  # VAI SYLLABLE DE
+<Multi_key> <Z> <v> <n> <d> <e> : "ꗺ"  UA5FA  # VAI SYLLABLE NDE
+<Multi_key> <Z> <v> <s> <e> : "ꗻ"  UA5FB  # VAI SYLLABLE SE
+<Multi_key> <Z> <v> <s> <h> <e> : "ꗼ"  UA5FC  # VAI SYLLABLE SHE
+<Multi_key> <Z> <v> <z> <e> : "ꗽ"  UA5FD  # VAI SYLLABLE ZE
+<Multi_key> <Z> <v> <z> <h> <e> : "ꗾ"  UA5FE  # VAI SYLLABLE ZHE
+<Multi_key> <Z> <v> <c> <e> : "ꗿ"  UA5FF  # VAI SYLLABLE CE
+<Multi_key> <Z> <v> <j> <e> : "ꘀ"  UA600  # VAI SYLLABLE JE
+<Multi_key> <Z> <v> <n> <j> <e> : "ꘁ"  UA601  # VAI SYLLABLE NJE
+<Multi_key> <Z> <v> <y> <e> : "ꘂ"  UA602  # VAI SYLLABLE YE
+<Multi_key> <Z> <v> <k> <e> : "ꘃ"  UA603  # VAI SYLLABLE KE
+<Multi_key> <Z> <v> <n> <g> <g> <e> : "ꘄ"  UA604  # VAI SYLLABLE NGGE
+<Multi_key> <Z> <v> <n> <g> <g> <asciitilde> <e> : "ꘅ"  UA605  # VAI SYLLABLE NGGEN
+<Multi_key> <Z> <v> <g> <e> : "ꘆ"  UA606  # VAI SYLLABLE GE
+<Multi_key> <Z> <v> <g> <asciitilde> <e> : "ꘇ"  UA607  # VAI SYLLABLE GEN
+<Multi_key> <Z> <v> <m> <e> : "ꘈ"  UA608  # VAI SYLLABLE ME
+<Multi_key> <Z> <v> <n> <e> : "ꘉ"  UA609  # VAI SYLLABLE NE
+<Multi_key> <Z> <v> <n> <y> <e> : "ꘊ"  UA60A  # VAI SYLLABLE NYE
+<Multi_key> <Z> <v> <n> <g> <space> : "ꘋ"  UA60B  # VAI SYLLABLE NG
+
+<Multi_key> <Z> <v> <colon> : "ꘌ"  UA60C  # VAI SYLLABLE LENGTHENER
+<Multi_key> <Z> <v> <comma> : "꘍"  UA60D  # VAI COMMA
+<Multi_key> <Z> <v> <period> : "꘎"  UA60E  # VAI FULL STOP
+<Multi_key> <Z> <v> <question> : "꘏"  UA60F  # VAI QUESTION MARK
+
+<Multi_key> <Z> <v> <numbersign> <0> : "꘠"  UA620  # VAI DIGIT ZERO
+<Multi_key> <Z> <v> <numbersign> <1> : "꘡"  UA621  # VAI DIGIT ONE
+<Multi_key> <Z> <v> <numbersign> <2> : "꘢"  UA622  # VAI DIGIT TWO
+<Multi_key> <Z> <v> <numbersign> <3> : "꘣"  UA623  # VAI DIGIT THREE
+<Multi_key> <Z> <v> <numbersign> <4> : "꘤"  UA624  # VAI DIGIT FOUR
+<Multi_key> <Z> <v> <numbersign> <5> : "꘥"  UA625  # VAI DIGIT FIVE
+<Multi_key> <Z> <v> <numbersign> <6> : "꘦"  UA626  # VAI DIGIT SIX
+<Multi_key> <Z> <v> <numbersign> <7> : "꘧"  UA627  # VAI DIGIT SEVEN
+<Multi_key> <Z> <v> <numbersign> <8> : "꘨"  UA628  # VAI DIGIT EIGHT
+<Multi_key> <Z> <v> <numbersign> <9> : "꘩"  UA629  # VAI DIGIT NINE
 
 #######################
 # (@") Language names #
@@ -11365,6 +12114,37 @@ include "%L"
 
 <Multi_key> <x> <k> <c> <d>    : "🯅"  U1FBC5        # STICK FIGURE (XCKD)
 
+# Some smiley-like characters
+
+<Multi_key> <asciitilde> <Multi_key> <quotedbl>     : "⍨"  U2368  # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
+<Multi_key> <greater> <Multi_key> <quotedbl>        : "⍩"  U2369  # APL FUNCTIONAL SYMBOL GREATER-THAN DIAERESIS
+<Multi_key> <asterisk> <Multi_key> <quotedbl>       : "⍣"  U2363  # APL FUNCTIONAL SYMBOL STAR DIAERESIS
+<Multi_key> <minus> <Multi_key> <quotedbl>          : "⚍"  U268D  # DIGRAM FOR LESSER YIN
+<Multi_key> <slash> <Multi_key> <quotedbl>          : "ツ"  U30C4  # KATAKANA LETTER TU
+<Multi_key> <E> <Multi_key> <quotedbl>              : "Ӭ"  U04EC  # CYRILLIC CAPITAL LETTER E WITH DIAERESIS
+<Multi_key> <e> <Multi_key> <quotedbl>              : "ӭ"  U04ED  # CYRILLIC SMALL LETTER E WITH DIAERESIS
+<Multi_key> <e> <V> <Multi_key> <quotedbl>          : "Ӛ"  U04DA  # CYRILLIC CAPITAL LETTER SCHWA WITH DIAERESIS
+<Multi_key> <e> <v> <Multi_key> <quotedbl>          : "ӛ"  U04DB  # CYRILLIC SMALL LETTER SCHWA WITH DIAERESIS
+<Multi_key> <O> <Multi_key> <quotedbl>              : "⍥"  U2365  # APL FUNCTIONAL SYMBOL CIRCLE DIAERESIS
+<Multi_key> <o> <Multi_key> <quotedbl>              : "⍤"  U2364  # APL FUNCTIONAL SYMBOL JOT DIAERESIS
+<Multi_key> <T> <Multi_key> <quotedbl>              : "⍡"  U2361  # APL FUNCTIONAL SYMBOL UP TACK DIAERESIS
+<Multi_key> <V> <Multi_key> <quotedbl>              : "⍢"  U2362  # APL FUNCTIONAL SYMBOL DEL DIAERESIS
+<Multi_key> <u> <Multi_key> <quotedbl>              : "ﺕ"  UFE95  # ARABIC LETTER TEH ISOLATED FORM
+<Multi_key> <w> <Multi_key> <quotedbl>              : "ټ"  U067C  # ARABIC LETTER TEH WITH RING
+<Multi_key> <0> <Multi_key> <quotedbl>              : "ة"  U0629  # ARABIC LETTER TEH MARBUTA
+<Multi_key> <3> <Multi_key> <quotedbl>              : "ӟ"  U04DF  # CYRILLIC SMALL LETTER ZE WITH DIAERESIS
+<Multi_key> <4> <Multi_key> <quotedbl>              : "ӵ"  U04F5  # CYRILLIC SMALL LETTER CHE WITH DIAERESIS
+
+<Multi_key> <O> <Multi_key> <minus> <quotedbl>      : "Ӫ"  U04EA  # CYRILLIC CAPITAL LETTER BARRED O WITH DIAERESIS
+<Multi_key> <o> <Multi_key> <minus> <quotedbl>      : "ӫ"  U04EB  # CYRILLIC SMALL LETTER BARRED O WITH DIAERESIS
+<Multi_key> <V> <Multi_key> <apostrophe> <quotedbl> : "Ѷ"  U0476  # CYRILLIC CAPITAL LETTER IZHITSA WITH DOUBLE GRAVE ACCENT
+<Multi_key> <asciitilde> <Multi_key> <bar> <quotedbl> : "ꗸ"  UA5F8  # VAI SYLLABLE RE
+
+<Multi_key> <O> <Multi_key> <slash> <quotedbl>      : "㋡"  U32E1  # CIRCLED KATAKANA TU
+<Multi_key> <O> <Multi_key> <parenleft> <quotedbl>  : "☹"  U2639  # WHITE FROWNING FACE
+<Multi_key> <O> <Multi_key> <parenright> <quotedbl> : "☺"  U263A  # WHITE SMILING FACE
+<Multi_key> <O> <Multi_key> <T> <X>                 : "웃"  UC6C3  # HANGUL SYLLABLE US
+
 ####################
 # Geometric shapes #
 ####################
@@ -13088,6 +13868,54 @@ include "%L"
 #
 # Also see various non-Latin script numerals above
 
+# (a) Aegean numerals
+
+<Multi_key> <numbersign> <1> <a> : "𐄇"  U10107  # AEGEAN NUMBER ONE
+<Multi_key> <numbersign> <2> <a> : "𐄈"  U10108  # AEGEAN NUMBER TWO
+<Multi_key> <numbersign> <3> <a> : "𐄉"  U10109  # AEGEAN NUMBER THREE
+<Multi_key> <numbersign> <4> <a> : "𐄊"  U1010A  # AEGEAN NUMBER FOUR
+<Multi_key> <numbersign> <5> <a> : "𐄋"  U1010B  # AEGEAN NUMBER FIVE
+<Multi_key> <numbersign> <6> <a> : "𐄌"  U1010C  # AEGEAN NUMBER SIX
+<Multi_key> <numbersign> <7> <a> : "𐄍"  U1010D  # AEGEAN NUMBER SEVEN
+<Multi_key> <numbersign> <8> <a> : "𐄎"  U1010E  # AEGEAN NUMBER EIGHT
+<Multi_key> <numbersign> <9> <a> : "𐄏"  U1010F  # AEGEAN NUMBER NINE
+<Multi_key> <numbersign> <1> <0> <a> : "𐄐"  U10110  # AEGEAN NUMBER TEN
+<Multi_key> <numbersign> <2> <0> <a> : "𐄑"  U10111  # AEGEAN NUMBER TWENTY
+<Multi_key> <numbersign> <3> <0> <a> : "𐄒"  U10112  # AEGEAN NUMBER THIRTY
+<Multi_key> <numbersign> <4> <0> <a> : "𐄓"  U10113  # AEGEAN NUMBER FORTY
+<Multi_key> <numbersign> <5> <0> <a> : "𐄔"  U10114  # AEGEAN NUMBER FIFTY
+<Multi_key> <numbersign> <6> <0> <a> : "𐄕"  U10115  # AEGEAN NUMBER SIXTY
+<Multi_key> <numbersign> <7> <0> <a> : "𐄖"  U10116  # AEGEAN NUMBER SEVENTY
+<Multi_key> <numbersign> <8> <0> <a> : "𐄗"  U10117  # AEGEAN NUMBER EIGHTY
+<Multi_key> <numbersign> <9> <0> <a> : "𐄘"  U10118  # AEGEAN NUMBER NINETY
+<Multi_key> <numbersign> <1> <0> <0> <a> : "𐄙"  U10119  # AEGEAN NUMBER ONE HUNDRED
+<Multi_key> <numbersign> <2> <0> <0> <a> : "𐄚"  U1011A  # AEGEAN NUMBER TWO HUNDRED
+<Multi_key> <numbersign> <3> <0> <0> <a> : "𐄛"  U1011B  # AEGEAN NUMBER THREE HUNDRED
+<Multi_key> <numbersign> <4> <0> <0> <a> : "𐄜"  U1011C  # AEGEAN NUMBER FOUR HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <a> : "𐄝"  U1011D  # AEGEAN NUMBER FIVE HUNDRED
+<Multi_key> <numbersign> <6> <0> <0> <a> : "𐄞"  U1011E  # AEGEAN NUMBER SIX HUNDRED
+<Multi_key> <numbersign> <7> <0> <0> <a> : "𐄟"  U1011F  # AEGEAN NUMBER SEVEN HUNDRED
+<Multi_key> <numbersign> <8> <0> <0> <a> : "𐄠"  U10120  # AEGEAN NUMBER EIGHT HUNDRED
+<Multi_key> <numbersign> <9> <0> <0> <a> : "𐄡"  U10121  # AEGEAN NUMBER NINE HUNDRED
+<Multi_key> <numbersign> <1> <0> <0> <0> <a> : "𐄢"  U10122  # AEGEAN NUMBER ONE THOUSAND
+<Multi_key> <numbersign> <2> <0> <0> <0> <a> : "𐄣"  U10123  # AEGEAN NUMBER TWO THOUSAND
+<Multi_key> <numbersign> <3> <0> <0> <0> <a> : "𐄤"  U10124  # AEGEAN NUMBER THREE THOUSAND
+<Multi_key> <numbersign> <4> <0> <0> <0> <a> : "𐄥"  U10125  # AEGEAN NUMBER FOUR THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <a> : "𐄦"  U10126  # AEGEAN NUMBER FIVE THOUSAND
+<Multi_key> <numbersign> <6> <0> <0> <0> <a> : "𐄧"  U10127  # AEGEAN NUMBER SIX THOUSAND
+<Multi_key> <numbersign> <7> <0> <0> <0> <a> : "𐄨"  U10128  # AEGEAN NUMBER SEVEN THOUSAND
+<Multi_key> <numbersign> <8> <0> <0> <0> <a> : "𐄩"  U10129  # AEGEAN NUMBER EIGHT THOUSAND
+<Multi_key> <numbersign> <9> <0> <0> <0> <a> : "𐄪"  U1012A  # AEGEAN NUMBER NINE THOUSAND
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <a> : "𐄫"  U1012B  # AEGEAN NUMBER TEN THOUSAND
+<Multi_key> <numbersign> <2> <0> <0> <0> <0> <a> : "𐄬"  U1012C  # AEGEAN NUMBER TWENTY THOUSAND
+<Multi_key> <numbersign> <3> <0> <0> <0> <0> <a> : "𐄭"  U1012D  # AEGEAN NUMBER THIRTY THOUSAND
+<Multi_key> <numbersign> <4> <0> <0> <0> <0> <a> : "𐄮"  U1012E  # AEGEAN NUMBER FORTY THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <0> <a> : "𐄯"  U1012F  # AEGEAN NUMBER FIFTY THOUSAND
+<Multi_key> <numbersign> <6> <0> <0> <0> <0> <a> : "𐄰"  U10130  # AEGEAN NUMBER SIXTY THOUSAND
+<Multi_key> <numbersign> <7> <0> <0> <0> <0> <a> : "𐄱"  U10131  # AEGEAN NUMBER SEVENTY THOUSAND
+<Multi_key> <numbersign> <8> <0> <0> <0> <0> <a> : "𐄲"  U10132  # AEGEAN NUMBER EIGHTY THOUSAND
+<Multi_key> <numbersign> <9> <0> <0> <0> <0> <a> : "𐄳"  U10133  # AEGEAN NUMBER NINETY THOUSAND
+
 # (f) fence tally
 
 <Multi_key> <numbersign> <1> <f> : "𝍷" U1D377    # TALLY MARK ONE
@@ -13440,7 +14268,8 @@ include "%L"
 <Multi_key> <backslash> <f> <o> <l> <d> <e> <r> : "🗀"  U1F5C0  # FOLDER
 <Multi_key> <backslash> <o> <p> <e> <n>         : "🗁"  U1F5C1  # OPEN FOLDER
 <Multi_key> <backslash> <d> <o> <c>             : "🗎"  U1F5CE  # DOCUMENT
-<Multi_key> <backslash> <i> <m> <a> <g> <e>     : "🖻"  U1F5BB  # DOCUMENT WITH PICTURE
+<Multi_key> <backslash> <i> <m> <a> <g> <e>     : "🖻"  U1F5BB  # DOCUMENT WITH PICTURE (IMAGE)
+<Multi_key> <backslash> <n> <e> <w>             : "🗋"  U1F5CB  # EMPTY DOCUMENT (NEW)
 <Multi_key> <backslash> <c> <u> <t>             : "✂"  U2702  # BLACK SCISSORS (CUT)
 <Multi_key> <backslash> <s> <a> <v> <e>         : "🖫"  U1F5AB  # WHITE HARD SHELL FLOPPY DISK (SAVE)
 <Multi_key> <backslash> <t> <r> <a> <s> <h>     : "🗑"  U1F5D1  # WASTEBASKET (TRASH)
