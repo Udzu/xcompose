@@ -27,7 +27,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (362): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (5876)
+### Non-Latin script characters (5987)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِتْ⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (83): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
@@ -44,7 +44,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **International Morse Code** (76): ···---··· etc
 * **Old Italic**, Ogham & Runic (117): 𐌓𐌄𐌃𐌃𐌉𐌕, ᚏᚓᚇᚔᚈ, ᚱᛖᛞᛞᛁᛏ etc
 * **Thai**, Khmer & Lao (239): เรดดิต, រេទិត, ເຣັດິຕ etc
-* **Zhuyin**, Mongolian, Tai Le & Tibetan (304): ㄏㄨㄥˊㄉㄧˊ, ᠷᠡᠳᠢᠲ, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
+* **Zhuyin**, Mongolian, Pollard, Tai Le & Tibetan (415): ㄏㄨㄥˊㄉㄧˊ, ᠷᠡᠳᠢᠲ, 𖼖𖽝𖼋𖽡𖼊, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
 ### Symbols (3514)
