@@ -18,16 +18,16 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (131): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2234)
+### Latin script characters (2238)
 * **International Phonetic Alphabet** (125): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
-* **Latin script letters** (242): Ƿ Ȝ ␢ ȵ etc
+* **Latin script letters** (246): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (262): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (197): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (362): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (6035)
+### Non-Latin script characters (6066)
 * **Arabic**, Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi (294): ⁧رِيدِتْ⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (83): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
@@ -38,7 +38,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Geʽez**, Adlam, Bamum, Mende Kikakui, NKo & Vai (872): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧𞠺𞠾𞡊⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian**: Mtavruli, Nuskhuri, Mkhedruli (154): რედდიტ, ႰႤႣႣႨႲ etc
 * **Greek**, Coptic, Cypriot, Gothic & Linear B (617): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵 etc
-* **Hebrew**, Phoenician, & Samaritan (162): ⁧רֶדִיט⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc
+* **Hebrew**, Aramaic, Phoenician, & Samaritan (193): ⁧רֶדִיט⁩, ⁧𐡓𐡃𐡉𐡕⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩ etc
 * **Japanese** (mostly kana) (302): 「レディット」 etc
 * **Korean** (using positional jamo) (118): 레딧 etc
 * **International Morse Code** (76): ···---··· etc

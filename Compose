@@ -837,6 +837,8 @@ include "%L"
 <Multi_key> <minus> <c>             : "ꞓ"  UA793  # LATIN SMALL LETTER C WITH BAR
 <Multi_key> <minus> <F>             : "Ꞙ"  UA798  # LATIN CAPITAL LETTER F WITH STROKE
 <Multi_key> <minus> <f>             : "ꞙ"  UA799  # LATIN SMALL LETTER F WITH STROKE
+<Multi_key> <minus> <G>             : "Ḡ"  U1E20  # LATIN CAPITAL LETTER G WITH MACRON
+<Multi_key> <minus> <g>             : "ḡ"  U1E21  # LATIN SMALL LETTER G WITH MACRON
 <Multi_key> <minus> <H>             : "Ħ"  U0126  # LATIN CAPITAL LETTER H WITH STROKE
 <Multi_key> <minus> <h>             : "ħ"  U0127  # LATIN SMALL LETTER H WITH STROKE
 <Multi_key> <minus> <J>             : "Ɉ"  U0248  # LATIN CAPITAL LETTER J WITH STROKE
@@ -855,8 +857,10 @@ include "%L"
 <Multi_key> <minus> <r>             : "ɍ"  U024D  # LATIN SMALL LETTER R WITH STROKE
 <Multi_key> <minus> <T>             : "Ŧ"  U0166  # LATIN CAPITAL LETTER T WITH STROKE
 <Multi_key> <minus> <t>             : "ŧ"  U0167  # LATIN SMALL LETTER T WITH STROKE
-<Multi_key> <minus> <Y>             : "Ɏ"  U024E  # LATIN CAPITAL LETTER Y WITH STROKE
-<Multi_key> <minus> <y>             : "ɏ"  U024F  # LATIN SMALL LETTER Y WITH STROKE
+<Multi_key> <minus> <Y>             : "Ȳ"  U0232  # LATIN CAPITAL LETTER Y WITH MACRON
+<Multi_key> <minus> <y>             : "ȳ"  U0233  # LATIN SMALL LETTER Y WITH MACRON
+<Multi_key> <minus> <minus> <Y>     : "Ɏ"  U024E  # LATIN CAPITAL LETTER Y WITH STROKE
+<Multi_key> <minus> <minus> <y>     : "ɏ"  U024F  # LATIN SMALL LETTER Y WITH STROKE
 <Multi_key> <minus> <z>             : "ƶ"  U01B6  # LATIN SMALL LETTER Z WITH STROKE
 <Multi_key> <minus> <Multi_key> <A> <E> : "Ǣ"  U01E2  # LATIN CAPITAL LETTER AE WITH MACRON
 <Multi_key> <minus> <Multi_key> <a> <e> : "ǣ"  U01E3  # LATIN SMALL LETTER AE WITH MACRON
@@ -6987,9 +6991,9 @@ include "%L"
 <Multi_key> <G> <k> <underscore> <h> : "ⴤ" U2D24   # GEORGIAN SMALL LETTER HAR (ẖ)
 <Multi_key> <G> <k> <minus> <o> : "ⴥ" U2D25   # GEORGIAN SMALL LETTER HOE (ō)
 
-###########################################
-# (h) Hebrew (and Phoenician & Samaritan) #
-###########################################
+####################################################
+# (h) Hebrew (and Aramaic, Phoenician & Samaritan) #
+####################################################
 
 <Multi_key> <h> <c> <a>        : "א"  U05D0   # HEBREW LETTER ALEF
 <Multi_key> <h> <c> <apostrophe> : "א"  U05D0   # HEBREW LETTER ALEF
@@ -7099,6 +7103,44 @@ include "%L"
 <Multi_key> <h> <c> <asciicircum> <underscore> <k> : "כֿ" UFB4D   # HEBREW LETTER KAF WITH RAFE
 <Multi_key> <h> <c> <asciicircum> <underscore> <p> : "פֿ" UFB4E   # HEBREW LETTER PE WITH RAFE
 <Multi_key> <h> <c> <asciicircum> <underscore> <f> : "פֿ" UFB4E   # HEBREW LETTER PE WITH RAFE
+
+# (A = Imperial Aramaic)
+
+<Multi_key> <h> <A> <a> : "𐡀"  U10840  # IMPERIAL ARAMAIC LETTER ALEPH
+<Multi_key> <h> <A> <apostrophe> : "𐡀"  U10840  # IMPERIAL ARAMAIC LETTER ALEPH
+<Multi_key> <h> <A> <b> : "𐡁"  U10841  # IMPERIAL ARAMAIC LETTER BETH
+<Multi_key> <h> <A> <g> : "𐡂"  U10842  # IMPERIAL ARAMAIC LETTER GIMEL
+<Multi_key> <h> <A> <d> : "𐡃"  U10843  # IMPERIAL ARAMAIC LETTER DALETH
+<Multi_key> <h> <A> <h> : "𐡄"  U10844  # IMPERIAL ARAMAIC LETTER HE
+<Multi_key> <h> <A> <v> : "𐡅"  U10845  # IMPERIAL ARAMAIC LETTER WAW
+<Multi_key> <h> <A> <z> : "𐡆"  U10846  # IMPERIAL ARAMAIC LETTER ZAYIN
+<Multi_key> <h> <A> <H> : "𐡇"  U10847  # IMPERIAL ARAMAIC LETTER HETH
+<Multi_key> <h> <A> <T> : "𐡈"  U10848  # IMPERIAL ARAMAIC LETTER TETH
+<Multi_key> <h> <A> <y> : "𐡉"  U10849  # IMPERIAL ARAMAIC LETTER YODH
+<Multi_key> <h> <A> <i> : "𐡉"  U10849  # IMPERIAL ARAMAIC LETTER YODH
+<Multi_key> <h> <A> <k> : "𐡊"  U1084A  # IMPERIAL ARAMAIC LETTER KAPH
+<Multi_key> <h> <A> <l> : "𐡋"  U1084B  # IMPERIAL ARAMAIC LETTER LAMEDH
+<Multi_key> <h> <A> <m> : "𐡌"  U1084C  # IMPERIAL ARAMAIC LETTER MEM
+<Multi_key> <h> <A> <n> : "𐡍"  U1084D  # IMPERIAL ARAMAIC LETTER NUN
+<Multi_key> <h> <A> <s> : "𐡎"  U1084E  # IMPERIAL ARAMAIC LETTER SAMEKH
+<Multi_key> <h> <A> <grave> : "𐡏"  U1084F  # IMPERIAL ARAMAIC LETTER AYIN
+<Multi_key> <h> <A> <p> : "𐡐"  U10850  # IMPERIAL ARAMAIC LETTER PE
+<Multi_key> <h> <A> <Z> : "𐡑"  U10851  # IMPERIAL ARAMAIC LETTER SADHE
+<Multi_key> <h> <A> <q> : "𐡒"  U10852  # IMPERIAL ARAMAIC LETTER QOPH
+<Multi_key> <h> <A> <r> : "𐡓"  U10853  # IMPERIAL ARAMAIC LETTER RESH
+<Multi_key> <h> <A> <S> : "𐡔"  U10854  # IMPERIAL ARAMAIC LETTER SHIN
+<Multi_key> <h> <A> <t> : "𐡕"  U10855  # IMPERIAL ARAMAIC LETTER TAW
+
+<Multi_key> <h> <A> <Multi_key> <S> <O> : "𐡗"  U10857  # IMPERIAL ARAMAIC SECTION SIGN
+
+<Multi_key> <h> <A> <1> <Return> : "𐡘"  U10858  # IMPERIAL ARAMAIC NUMBER ONE
+<Multi_key> <h> <A> <2> <Return> : "𐡙"  U10859  # IMPERIAL ARAMAIC NUMBER TWO
+<Multi_key> <h> <A> <3> : "𐡚"  U1085A  # IMPERIAL ARAMAIC NUMBER THREE
+<Multi_key> <h> <A> <1> <0> <Return> : "𐡛"  U1085B  # IMPERIAL ARAMAIC NUMBER TEN
+<Multi_key> <h> <A> <2> <0> : "𐡜"  U1085C  # IMPERIAL ARAMAIC NUMBER TWENTY
+<Multi_key> <h> <A> <1> <0> <0> <Return> : "𐡝"  U1085D  # IMPERIAL ARAMAIC NUMBER ONE HUNDRED
+<Multi_key> <h> <A> <1> <0> <0> <0> <Return> : "𐡞"  U1085E  # IMPERIAL ARAMAIC NUMBER ONE THOUSAND
+<Multi_key> <h> <A> <1> <0> <0> <0> <0> : "𐡟"  U1085F  # IMPERIAL ARAMAIC NUMBER TEN THOUSAND
 
 # (p = Phoenician/Palaeo-Hebrew)
 
