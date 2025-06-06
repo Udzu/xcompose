@@ -854,6 +854,7 @@ include "%L"
 <Multi_key> <minus> <R>             : "Ɍ"  U024C  # LATIN CAPITAL LETTER R WITH STROKE
 <Multi_key> <minus> <r>             : "ɍ"  U024D  # LATIN SMALL LETTER R WITH STROKE
 <Multi_key> <minus> <T>             : "Ŧ"  U0166  # LATIN CAPITAL LETTER T WITH STROKE
+<Multi_key> <minus> <t>             : "ŧ"  U0167  # LATIN SMALL LETTER T WITH STROKE
 <Multi_key> <minus> <Y>             : "Ɏ"  U024E  # LATIN CAPITAL LETTER Y WITH STROKE
 <Multi_key> <minus> <y>             : "ɏ"  U024F  # LATIN SMALL LETTER Y WITH STROKE
 <Multi_key> <minus> <z>             : "ƶ"  U01B6  # LATIN SMALL LETTER Z WITH STROKE
@@ -891,11 +892,14 @@ include "%L"
 <Multi_key> <slash> <S>             : "Ꞩ"  UA7A8  # LATIN CAPITAL LETTER S WITH OBLIQUE STROKE
 <Multi_key> <slash> <s>             : "ꞩ"  UA7A9  # LATIN SMALL LETTER S WITH OBLIQUE STROKE
 <Multi_key> <slash> <T>             : "Ⱦ"  U023E  # LATIN CAPITAL LETTER T WITH DIAGONAL STROKE (conflicts with Ŧ, use -T)
+<Multi_key> <slash> <t>             : "ⱦ"  U2C66  # LATIN SMALL LETTER T WITH DIAGONAL STROKE (conflicts with ŧ, use -t)
 <Multi_key> <slash> <U>             : "Ꞹ"  UA7B8  # LATIN CAPITAL LETTER U WITH STROKE
 <Multi_key> <slash> <V>             : "Ꝟ"  UA75E  # LATIN CAPITAL LETTER V WITH DIAGONAL STROKE
 <Multi_key> <slash> <v>             : "ꝟ"  UA75F  # LATIN SMALL LETTER V WITH DIAGONAL STROKE (conflicts with √, use v/)
 <Multi_key> <slash> <Multi_key> <T> <H> : "ꝥ"  UA765  # LATIN SMALL LETTER THORN WITH STROKE
 <Multi_key> <slash> <Multi_key> <t> <h> : "Ꝥ"  UA764  # LATIN CAPITAL LETTER THORN WITH STROKE
+<Multi_key> <slash> <Multi_key> <f> <s> : "ẜ"  U1E9C  # LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
+<Multi_key> <slash> <Multi_key> <l> <s> : "ẜ"  U1E9C  # LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
 
 <Multi_key> <d> <at> : "ȡ"  U0221  # LATIN SMALL LETTER D WITH CURL
 <Multi_key> <l> <at> : "ȴ"  U0234  # LATIN SMALL LETTER L WITH CURL
@@ -8638,9 +8642,9 @@ include "%L"
 <Multi_key> <z> <T> <at> <period> : "ᥳ" U1973   # TAI LE LETTER TONE-5 (◌̇)
 <Multi_key> <z> <T> <at> <apostrophe> : "ᥴ" U1974   # TAI LE LETTER TONE-6 (◌́)
 
-###############################
-# (Z) Ge'ez (and Adlam & NKo) #
-###############################
+####################################
+# (Z) Ge'ez (and Adlam, NKo & Vai) #
+####################################
 
 <Multi_key> <Z> <c> <h> <a> <space> : "ሀ" U1200   # ETHIOPIC SYLLABLE HA
 <Multi_key> <Z> <c> <h> <u> : "ሁ" U1201   # ETHIOPIC SYLLABLE HU
@@ -9166,6 +9170,293 @@ include "%L"
 <Multi_key> <Z> <n> <numbersign> <7> : "߇" U07C7   # NKO DIGIT SEVEN
 <Multi_key> <Z> <n> <numbersign> <8> : "߈" U07C8   # NKO DIGIT EIGHT
 <Multi_key> <Z> <n> <numbersign> <9> : "߉" U07C9   # NKO DIGIT NINE
+
+# (v = Vai)
+
+<Multi_key> <Z> <v> <minus> <e> : "ꔀ"  UA500  # VAI SYLLABLE EE
+<Multi_key> <Z> <v> <asciitilde> <minus> <e> : "ꔁ"  UA501  # VAI SYLLABLE EEN
+<Multi_key> <Z> <v> <h> <minus> <e> : "ꔂ"  UA502  # VAI SYLLABLE HEE
+<Multi_key> <Z> <v> <w> <minus> <e> : "ꔃ"  UA503  # VAI SYLLABLE WEE
+<Multi_key> <Z> <v> <w> <asciitilde> <minus> <e> : "ꔄ"  UA504  # VAI SYLLABLE WEEN
+<Multi_key> <Z> <v> <p> <minus> <e> : "ꔅ"  UA505  # VAI SYLLABLE PEE
+<Multi_key> <Z> <v> <b> <h> <minus> <e> : "ꔆ"  UA506  # VAI SYLLABLE BHEE
+<Multi_key> <Z> <v> <b> <minus> <e> : "ꔇ"  UA507  # VAI SYLLABLE BEE
+<Multi_key> <Z> <v> <m> <b> <minus> <e> : "ꔈ"  UA508  # VAI SYLLABLE MBEE
+<Multi_key> <Z> <v> <k> <p> <minus> <e> : "ꔉ"  UA509  # VAI SYLLABLE KPEE
+<Multi_key> <Z> <v> <m> <g> <b> <minus> <e> : "ꔊ"  UA50A  # VAI SYLLABLE MGBEE
+<Multi_key> <Z> <v> <g> <b> <minus> <e> : "ꔋ"  UA50B  # VAI SYLLABLE GBEE
+<Multi_key> <Z> <v> <f> <minus> <e> : "ꔌ"  UA50C  # VAI SYLLABLE FEE
+<Multi_key> <Z> <v> <v> <minus> <e> : "ꔍ"  UA50D  # VAI SYLLABLE VEE
+<Multi_key> <Z> <v> <t> <minus> <e> : "ꔎ"  UA50E  # VAI SYLLABLE TEE
+<Multi_key> <Z> <v> <t> <h> <minus> <e> : "ꔏ"  UA50F  # VAI SYLLABLE THEE
+<Multi_key> <Z> <v> <d> <h> <minus> <e> : "ꔐ"  UA510  # VAI SYLLABLE DHEE
+<Multi_key> <Z> <v> <d> <h> <h> <minus> <e> : "ꔑ"  UA511  # VAI SYLLABLE DHHEE
+<Multi_key> <Z> <v> <l> <minus> <e> : "ꔒ"  UA512  # VAI SYLLABLE LEE
+<Multi_key> <Z> <v> <r> <minus> <e> : "ꔓ"  UA513  # VAI SYLLABLE REE
+<Multi_key> <Z> <v> <d> <minus> <e> : "ꔔ"  UA514  # VAI SYLLABLE DEE
+<Multi_key> <Z> <v> <n> <d> <minus> <e> : "ꔕ"  UA515  # VAI SYLLABLE NDEE
+<Multi_key> <Z> <v> <s> <minus> <e> : "ꔖ"  UA516  # VAI SYLLABLE SEE
+<Multi_key> <Z> <v> <s> <h> <minus> <e> : "ꔗ"  UA517  # VAI SYLLABLE SHEE
+<Multi_key> <Z> <v> <z> <minus> <e> : "ꔘ"  UA518  # VAI SYLLABLE ZEE
+<Multi_key> <Z> <v> <z> <h> <minus> <e> : "ꔙ"  UA519  # VAI SYLLABLE ZHEE
+<Multi_key> <Z> <v> <c> <minus> <e> : "ꔚ"  UA51A  # VAI SYLLABLE CEE
+<Multi_key> <Z> <v> <j> <minus> <e> : "ꔛ"  UA51B  # VAI SYLLABLE JEE
+<Multi_key> <Z> <v> <n> <j> <minus> <e> : "ꔜ"  UA51C  # VAI SYLLABLE NJEE
+<Multi_key> <Z> <v> <y> <minus> <e> : "ꔝ"  UA51D  # VAI SYLLABLE YEE
+<Multi_key> <Z> <v> <k> <minus> <e> : "ꔞ"  UA51E  # VAI SYLLABLE KEE
+<Multi_key> <Z> <v> <n> <g> <g> <minus> <e> : "ꔟ"  UA51F  # VAI SYLLABLE NGGEE
+<Multi_key> <Z> <v> <g> <minus> <e> : "ꔠ"  UA520  # VAI SYLLABLE GEE
+<Multi_key> <Z> <v> <m> <minus> <e> : "ꔡ"  UA521  # VAI SYLLABLE MEE
+<Multi_key> <Z> <v> <n> <minus> <e> : "ꔢ"  UA522  # VAI SYLLABLE NEE
+<Multi_key> <Z> <v> <n> <y> <minus> <e> : "ꔣ"  UA523  # VAI SYLLABLE NYEE
+<Multi_key> <Z> <v> <i> : "ꔤ"  UA524  # VAI SYLLABLE I
+<Multi_key> <Z> <v> <asciitilde> <i> : "ꔥ"  UA525  # VAI SYLLABLE IN
+<Multi_key> <Z> <v> <h> <i> : "ꔦ"  UA526  # VAI SYLLABLE HI
+<Multi_key> <Z> <v> <h> <asciitilde> <i> : "ꔧ"  UA527  # VAI SYLLABLE HIN
+<Multi_key> <Z> <v> <w> <i> : "ꔨ"  UA528  # VAI SYLLABLE WI
+<Multi_key> <Z> <v> <w> <asciitilde> <i> : "ꔩ"  UA529  # VAI SYLLABLE WIN
+<Multi_key> <Z> <v> <p> <i> : "ꔪ"  UA52A  # VAI SYLLABLE PI
+<Multi_key> <Z> <v> <b> <h> <i> : "ꔫ"  UA52B  # VAI SYLLABLE BHI
+<Multi_key> <Z> <v> <b> <i> : "ꔬ"  UA52C  # VAI SYLLABLE BI
+<Multi_key> <Z> <v> <m> <b> <i> : "ꔭ"  UA52D  # VAI SYLLABLE MBI
+<Multi_key> <Z> <v> <k> <p> <i> : "ꔮ"  UA52E  # VAI SYLLABLE KPI
+<Multi_key> <Z> <v> <m> <g> <b> <i> : "ꔯ"  UA52F  # VAI SYLLABLE MGBI
+<Multi_key> <Z> <v> <g> <b> <i> : "ꔰ"  UA530  # VAI SYLLABLE GBI
+<Multi_key> <Z> <v> <f> <i> : "ꔱ"  UA531  # VAI SYLLABLE FI
+<Multi_key> <Z> <v> <v> <i> : "ꔲ"  UA532  # VAI SYLLABLE VI
+<Multi_key> <Z> <v> <t> <i> : "ꔳ"  UA533  # VAI SYLLABLE TI
+<Multi_key> <Z> <v> <t> <h> <i> : "ꔴ"  UA534  # VAI SYLLABLE THI
+<Multi_key> <Z> <v> <d> <h> <i> : "ꔵ"  UA535  # VAI SYLLABLE DHI
+<Multi_key> <Z> <v> <d> <h> <h> <i> : "ꔶ"  UA536  # VAI SYLLABLE DHHI
+<Multi_key> <Z> <v> <l> <i> : "ꔷ"  UA537  # VAI SYLLABLE LI
+<Multi_key> <Z> <v> <r> <i> : "ꔸ"  UA538  # VAI SYLLABLE RI
+<Multi_key> <Z> <v> <d> <i> : "ꔹ"  UA539  # VAI SYLLABLE DI
+<Multi_key> <Z> <v> <n> <d> <i> : "ꔺ"  UA53A  # VAI SYLLABLE NDI
+<Multi_key> <Z> <v> <s> <i> : "ꔻ"  UA53B  # VAI SYLLABLE SI
+<Multi_key> <Z> <v> <s> <h> <i> : "ꔼ"  UA53C  # VAI SYLLABLE SHI
+<Multi_key> <Z> <v> <z> <i> : "ꔽ"  UA53D  # VAI SYLLABLE ZI
+<Multi_key> <Z> <v> <z> <h> <i> : "ꔾ"  UA53E  # VAI SYLLABLE ZHI
+<Multi_key> <Z> <v> <c> <i> : "ꔿ"  UA53F  # VAI SYLLABLE CI
+<Multi_key> <Z> <v> <j> <i> : "ꕀ"  UA540  # VAI SYLLABLE JI
+<Multi_key> <Z> <v> <n> <j> <i> : "ꕁ"  UA541  # VAI SYLLABLE NJI
+<Multi_key> <Z> <v> <y> <i> : "ꕂ"  UA542  # VAI SYLLABLE YI
+<Multi_key> <Z> <v> <k> <i> : "ꕃ"  UA543  # VAI SYLLABLE KI
+<Multi_key> <Z> <v> <n> <g> <g> <i> : "ꕄ"  UA544  # VAI SYLLABLE NGGI
+<Multi_key> <Z> <v> <g> <i> : "ꕅ"  UA545  # VAI SYLLABLE GI
+<Multi_key> <Z> <v> <m> <i> : "ꕆ"  UA546  # VAI SYLLABLE MI
+<Multi_key> <Z> <v> <n> <i> : "ꕇ"  UA547  # VAI SYLLABLE NI
+<Multi_key> <Z> <v> <n> <y> <i> : "ꕈ"  UA548  # VAI SYLLABLE NYI
+<Multi_key> <Z> <v> <a> : "ꕉ"  UA549  # VAI SYLLABLE A
+<Multi_key> <Z> <v> <asciitilde> <a> : "ꕊ"  UA54A  # VAI SYLLABLE AN
+<Multi_key> <Z> <v> <n> <g> <asciitilde> <a> : "ꕋ"  UA54B  # VAI SYLLABLE NGAN
+<Multi_key> <Z> <v> <h> <a> : "ꕌ"  UA54C  # VAI SYLLABLE HA
+<Multi_key> <Z> <v> <h> <asciitilde> <a> : "ꕍ"  UA54D  # VAI SYLLABLE HAN
+<Multi_key> <Z> <v> <w> <a> : "ꕎ"  UA54E  # VAI SYLLABLE WA
+<Multi_key> <Z> <v> <w> <asciitilde> <a> : "ꕏ"  UA54F  # VAI SYLLABLE WAN
+<Multi_key> <Z> <v> <p> <a> : "ꕐ"  UA550  # VAI SYLLABLE PA
+<Multi_key> <Z> <v> <b> <h> <a> : "ꕑ"  UA551  # VAI SYLLABLE BHA
+<Multi_key> <Z> <v> <b> <a> : "ꕒ"  UA552  # VAI SYLLABLE BA
+<Multi_key> <Z> <v> <m> <b> <a> : "ꕓ"  UA553  # VAI SYLLABLE MBA
+<Multi_key> <Z> <v> <k> <p> <a> : "ꕔ"  UA554  # VAI SYLLABLE KPA
+<Multi_key> <Z> <v> <k> <p> <asciitilde> <a> : "ꕕ"  UA555  # VAI SYLLABLE KPAN
+<Multi_key> <Z> <v> <m> <g> <b> <a> : "ꕖ"  UA556  # VAI SYLLABLE MGBA
+<Multi_key> <Z> <v> <g> <b> <a> : "ꕗ"  UA557  # VAI SYLLABLE GBA
+<Multi_key> <Z> <v> <f> <a> : "ꕘ"  UA558  # VAI SYLLABLE FA
+<Multi_key> <Z> <v> <v> <a> : "ꕙ"  UA559  # VAI SYLLABLE VA
+<Multi_key> <Z> <v> <t> <a> : "ꕚ"  UA55A  # VAI SYLLABLE TA
+<Multi_key> <Z> <v> <t> <h> <a> : "ꕛ"  UA55B  # VAI SYLLABLE THA
+<Multi_key> <Z> <v> <d> <h> <a> : "ꕜ"  UA55C  # VAI SYLLABLE DHA
+<Multi_key> <Z> <v> <d> <h> <h> <a> : "ꕝ"  UA55D  # VAI SYLLABLE DHHA
+<Multi_key> <Z> <v> <l> <a> : "ꕞ"  UA55E  # VAI SYLLABLE LA
+<Multi_key> <Z> <v> <r> <a> : "ꕟ"  UA55F  # VAI SYLLABLE RA
+<Multi_key> <Z> <v> <d> <a> : "ꕠ"  UA560  # VAI SYLLABLE DA
+<Multi_key> <Z> <v> <n> <d> <a> : "ꕡ"  UA561  # VAI SYLLABLE NDA
+<Multi_key> <Z> <v> <s> <a> : "ꕢ"  UA562  # VAI SYLLABLE SA
+<Multi_key> <Z> <v> <s> <h> <a> : "ꕣ"  UA563  # VAI SYLLABLE SHA
+<Multi_key> <Z> <v> <z> <a> : "ꕤ"  UA564  # VAI SYLLABLE ZA
+<Multi_key> <Z> <v> <z> <h> <a> : "ꕥ"  UA565  # VAI SYLLABLE ZHA
+<Multi_key> <Z> <v> <c> <a> : "ꕦ"  UA566  # VAI SYLLABLE CA
+<Multi_key> <Z> <v> <j> <a> : "ꕧ"  UA567  # VAI SYLLABLE JA
+<Multi_key> <Z> <v> <n> <j> <a> : "ꕨ"  UA568  # VAI SYLLABLE NJA
+<Multi_key> <Z> <v> <y> <a> : "ꕩ"  UA569  # VAI SYLLABLE YA
+<Multi_key> <Z> <v> <k> <a> : "ꕪ"  UA56A  # VAI SYLLABLE KA
+<Multi_key> <Z> <v> <k> <asciitilde> <a> : "ꕫ"  UA56B  # VAI SYLLABLE KAN
+<Multi_key> <Z> <v> <n> <g> <g> <a> : "ꕬ"  UA56C  # VAI SYLLABLE NGGA
+<Multi_key> <Z> <v> <g> <a> : "ꕭ"  UA56D  # VAI SYLLABLE GA
+<Multi_key> <Z> <v> <m> <a> : "ꕮ"  UA56E  # VAI SYLLABLE MA
+<Multi_key> <Z> <v> <n> <a> : "ꕯ"  UA56F  # VAI SYLLABLE NA
+<Multi_key> <Z> <v> <n> <y> <a> : "ꕰ"  UA570  # VAI SYLLABLE NYA
+<Multi_key> <Z> <v> <minus> <o> : "ꕱ"  UA571  # VAI SYLLABLE OO
+<Multi_key> <Z> <v> <asciitilde> <minus> <o> : "ꕲ"  UA572  # VAI SYLLABLE OON
+<Multi_key> <Z> <v> <h> <minus> <o> : "ꕳ"  UA573  # VAI SYLLABLE HOO
+<Multi_key> <Z> <v> <w> <minus> <o> : "ꕴ"  UA574  # VAI SYLLABLE WOO
+<Multi_key> <Z> <v> <w> <asciitilde> <minus> <o> : "ꕵ"  UA575  # VAI SYLLABLE WOON
+<Multi_key> <Z> <v> <p> <minus> <o> : "ꕶ"  UA576  # VAI SYLLABLE POO
+<Multi_key> <Z> <v> <b> <h> <minus> <o> : "ꕷ"  UA577  # VAI SYLLABLE BHOO
+<Multi_key> <Z> <v> <b> <minus> <o> : "ꕸ"  UA578  # VAI SYLLABLE BOO
+<Multi_key> <Z> <v> <m> <b> <minus> <o> : "ꕹ"  UA579  # VAI SYLLABLE MBOO
+<Multi_key> <Z> <v> <k> <p> <minus> <o> : "ꕺ"  UA57A  # VAI SYLLABLE KPOO
+<Multi_key> <Z> <v> <m> <g> <b> <minus> <o> : "ꕻ"  UA57B  # VAI SYLLABLE MGBOO
+<Multi_key> <Z> <v> <g> <b> <minus> <o> : "ꕼ"  UA57C  # VAI SYLLABLE GBOO
+<Multi_key> <Z> <v> <f> <minus> <o> : "ꕽ"  UA57D  # VAI SYLLABLE FOO
+<Multi_key> <Z> <v> <v> <minus> <o> : "ꕾ"  UA57E  # VAI SYLLABLE VOO
+<Multi_key> <Z> <v> <t> <minus> <o> : "ꕿ"  UA57F  # VAI SYLLABLE TOO
+<Multi_key> <Z> <v> <t> <h> <minus> <o> : "ꖀ"  UA580  # VAI SYLLABLE THOO
+<Multi_key> <Z> <v> <d> <h> <minus> <o> : "ꖁ"  UA581  # VAI SYLLABLE DHOO
+<Multi_key> <Z> <v> <d> <h> <h> <minus> <o> : "ꖂ"  UA582  # VAI SYLLABLE DHHOO
+<Multi_key> <Z> <v> <l> <minus> <o> : "ꖃ"  UA583  # VAI SYLLABLE LOO
+<Multi_key> <Z> <v> <r> <minus> <o> : "ꖄ"  UA584  # VAI SYLLABLE ROO
+<Multi_key> <Z> <v> <d> <minus> <o> : "ꖅ"  UA585  # VAI SYLLABLE DOO
+<Multi_key> <Z> <v> <n> <d> <minus> <o> : "ꖆ"  UA586  # VAI SYLLABLE NDOO
+<Multi_key> <Z> <v> <s> <minus> <o> : "ꖇ"  UA587  # VAI SYLLABLE SOO
+<Multi_key> <Z> <v> <s> <h> <minus> <o> : "ꖈ"  UA588  # VAI SYLLABLE SHOO
+<Multi_key> <Z> <v> <z> <minus> <o> : "ꖉ"  UA589  # VAI SYLLABLE ZOO
+<Multi_key> <Z> <v> <z> <h> <minus> <o> : "ꖊ"  UA58A  # VAI SYLLABLE ZHOO
+<Multi_key> <Z> <v> <c> <minus> <o> : "ꖋ"  UA58B  # VAI SYLLABLE COO
+<Multi_key> <Z> <v> <j> <minus> <o> : "ꖌ"  UA58C  # VAI SYLLABLE JOO
+<Multi_key> <Z> <v> <n> <j> <minus> <o> : "ꖍ"  UA58D  # VAI SYLLABLE NJOO
+<Multi_key> <Z> <v> <y> <minus> <o> : "ꖎ"  UA58E  # VAI SYLLABLE YOO
+<Multi_key> <Z> <v> <k> <minus> <o> : "ꖏ"  UA58F  # VAI SYLLABLE KOO
+<Multi_key> <Z> <v> <n> <g> <g> <minus> <o> : "ꖐ"  UA590  # VAI SYLLABLE NGGOO
+<Multi_key> <Z> <v> <g> <minus> <o> : "ꖑ"  UA591  # VAI SYLLABLE GOO
+<Multi_key> <Z> <v> <m> <minus> <o> : "ꖒ"  UA592  # VAI SYLLABLE MOO
+<Multi_key> <Z> <v> <n> <minus> <o> : "ꖓ"  UA593  # VAI SYLLABLE NOO
+<Multi_key> <Z> <v> <n> <y> <minus> <o> : "ꖔ"  UA594  # VAI SYLLABLE NYOO
+<Multi_key> <Z> <v> <u> : "ꖕ"  UA595  # VAI SYLLABLE U
+<Multi_key> <Z> <v> <asciitilde> <u> : "ꖖ"  UA596  # VAI SYLLABLE UN
+<Multi_key> <Z> <v> <h> <u> : "ꖗ"  UA597  # VAI SYLLABLE HU
+<Multi_key> <Z> <v> <h> <asciitilde> <u> : "ꖘ"  UA598  # VAI SYLLABLE HUN
+<Multi_key> <Z> <v> <w> <u> : "ꖙ"  UA599  # VAI SYLLABLE WU
+<Multi_key> <Z> <v> <w> <asciitilde> <u> : "ꖚ"  UA59A  # VAI SYLLABLE WUN
+<Multi_key> <Z> <v> <p> <u> : "ꖛ"  UA59B  # VAI SYLLABLE PU
+<Multi_key> <Z> <v> <b> <h> <u> : "ꖜ"  UA59C  # VAI SYLLABLE BHU
+<Multi_key> <Z> <v> <b> <u> : "ꖝ"  UA59D  # VAI SYLLABLE BU
+<Multi_key> <Z> <v> <m> <b> <u> : "ꖞ"  UA59E  # VAI SYLLABLE MBU
+<Multi_key> <Z> <v> <k> <p> <u> : "ꖟ"  UA59F  # VAI SYLLABLE KPU
+<Multi_key> <Z> <v> <m> <g> <b> <u> : "ꖠ"  UA5A0  # VAI SYLLABLE MGBU
+<Multi_key> <Z> <v> <g> <b> <u> : "ꖡ"  UA5A1  # VAI SYLLABLE GBU
+<Multi_key> <Z> <v> <f> <u> : "ꖢ"  UA5A2  # VAI SYLLABLE FU
+<Multi_key> <Z> <v> <v> <u> : "ꖣ"  UA5A3  # VAI SYLLABLE VU
+<Multi_key> <Z> <v> <t> <u> : "ꖤ"  UA5A4  # VAI SYLLABLE TU
+<Multi_key> <Z> <v> <t> <h> <u> : "ꖥ"  UA5A5  # VAI SYLLABLE THU
+<Multi_key> <Z> <v> <d> <h> <u> : "ꖦ"  UA5A6  # VAI SYLLABLE DHU
+<Multi_key> <Z> <v> <d> <h> <h> <u> : "ꖧ"  UA5A7  # VAI SYLLABLE DHHU
+<Multi_key> <Z> <v> <l> <u> : "ꖨ"  UA5A8  # VAI SYLLABLE LU
+<Multi_key> <Z> <v> <r> <u> : "ꖩ"  UA5A9  # VAI SYLLABLE RU
+<Multi_key> <Z> <v> <d> <u> : "ꖪ"  UA5AA  # VAI SYLLABLE DU
+<Multi_key> <Z> <v> <n> <d> <u> : "ꖫ"  UA5AB  # VAI SYLLABLE NDU
+<Multi_key> <Z> <v> <s> <u> : "ꖬ"  UA5AC  # VAI SYLLABLE SU
+<Multi_key> <Z> <v> <s> <h> <u> : "ꖭ"  UA5AD  # VAI SYLLABLE SHU
+<Multi_key> <Z> <v> <z> <u> : "ꖮ"  UA5AE  # VAI SYLLABLE ZU
+<Multi_key> <Z> <v> <z> <h> <u> : "ꖯ"  UA5AF  # VAI SYLLABLE ZHU
+<Multi_key> <Z> <v> <c> <u> : "ꖰ"  UA5B0  # VAI SYLLABLE CU
+<Multi_key> <Z> <v> <j> <u> : "ꖱ"  UA5B1  # VAI SYLLABLE JU
+<Multi_key> <Z> <v> <n> <j> <u> : "ꖲ"  UA5B2  # VAI SYLLABLE NJU
+<Multi_key> <Z> <v> <y> <u> : "ꖳ"  UA5B3  # VAI SYLLABLE YU
+<Multi_key> <Z> <v> <k> <u> : "ꖴ"  UA5B4  # VAI SYLLABLE KU
+<Multi_key> <Z> <v> <n> <g> <g> <u> : "ꖵ"  UA5B5  # VAI SYLLABLE NGGU
+<Multi_key> <Z> <v> <g> <u> : "ꖶ"  UA5B6  # VAI SYLLABLE GU
+<Multi_key> <Z> <v> <m> <u> : "ꖷ"  UA5B7  # VAI SYLLABLE MU
+<Multi_key> <Z> <v> <n> <u> : "ꖸ"  UA5B8  # VAI SYLLABLE NU
+<Multi_key> <Z> <v> <n> <y> <u> : "ꖹ"  UA5B9  # VAI SYLLABLE NYU
+<Multi_key> <Z> <v> <o> : "ꖺ"  UA5BA  # VAI SYLLABLE O
+<Multi_key> <Z> <v> <asciitilde> <o> : "ꖻ"  UA5BB  # VAI SYLLABLE ON
+<Multi_key> <Z> <v> <n> <g> <asciitilde> <o> : "ꖼ"  UA5BC  # VAI SYLLABLE NGON
+<Multi_key> <Z> <v> <h> <o> : "ꖽ"  UA5BD  # VAI SYLLABLE HO
+<Multi_key> <Z> <v> <h> <asciitilde> <o> : "ꖾ"  UA5BE  # VAI SYLLABLE HON
+<Multi_key> <Z> <v> <w> <o> : "ꖿ"  UA5BF  # VAI SYLLABLE WO
+<Multi_key> <Z> <v> <w> <asciitilde> <o> : "ꗀ"  UA5C0  # VAI SYLLABLE WON
+<Multi_key> <Z> <v> <p> <o> : "ꗁ"  UA5C1  # VAI SYLLABLE PO
+<Multi_key> <Z> <v> <b> <h> <o> : "ꗂ"  UA5C2  # VAI SYLLABLE BHO
+<Multi_key> <Z> <v> <b> <o> : "ꗃ"  UA5C3  # VAI SYLLABLE BO
+<Multi_key> <Z> <v> <m> <b> <o> : "ꗄ"  UA5C4  # VAI SYLLABLE MBO
+<Multi_key> <Z> <v> <k> <p> <o> : "ꗅ"  UA5C5  # VAI SYLLABLE KPO
+<Multi_key> <Z> <v> <m> <g> <b> <o> : "ꗆ"  UA5C6  # VAI SYLLABLE MGBO
+<Multi_key> <Z> <v> <g> <b> <o> : "ꗇ"  UA5C7  # VAI SYLLABLE GBO
+<Multi_key> <Z> <v> <g> <b> <asciitilde> <o> : "ꗈ"  UA5C8  # VAI SYLLABLE GBON
+<Multi_key> <Z> <v> <f> <o> : "ꗉ"  UA5C9  # VAI SYLLABLE FO
+<Multi_key> <Z> <v> <v> <o> : "ꗊ"  UA5CA  # VAI SYLLABLE VO
+<Multi_key> <Z> <v> <t> <o> : "ꗋ"  UA5CB  # VAI SYLLABLE TO
+<Multi_key> <Z> <v> <t> <h> <o> : "ꗌ"  UA5CC  # VAI SYLLABLE THO
+<Multi_key> <Z> <v> <d> <h> <o> : "ꗍ"  UA5CD  # VAI SYLLABLE DHO
+<Multi_key> <Z> <v> <d> <h> <h> <o> : "ꗎ"  UA5CE  # VAI SYLLABLE DHHO
+<Multi_key> <Z> <v> <l> <o> : "ꗏ"  UA5CF  # VAI SYLLABLE LO
+<Multi_key> <Z> <v> <r> <o> : "ꗐ"  UA5D0  # VAI SYLLABLE RO
+<Multi_key> <Z> <v> <d> <o> : "ꗑ"  UA5D1  # VAI SYLLABLE DO
+<Multi_key> <Z> <v> <n> <d> <o> : "ꗒ"  UA5D2  # VAI SYLLABLE NDO
+<Multi_key> <Z> <v> <s> <o> : "ꗓ"  UA5D3  # VAI SYLLABLE SO
+<Multi_key> <Z> <v> <s> <h> <o> : "ꗔ"  UA5D4  # VAI SYLLABLE SHO
+<Multi_key> <Z> <v> <z> <o> : "ꗕ"  UA5D5  # VAI SYLLABLE ZO
+<Multi_key> <Z> <v> <z> <h> <o> : "ꗖ"  UA5D6  # VAI SYLLABLE ZHO
+<Multi_key> <Z> <v> <c> <o> : "ꗗ"  UA5D7  # VAI SYLLABLE CO
+<Multi_key> <Z> <v> <j> <o> : "ꗘ"  UA5D8  # VAI SYLLABLE JO
+<Multi_key> <Z> <v> <n> <j> <o> : "ꗙ"  UA5D9  # VAI SYLLABLE NJO
+<Multi_key> <Z> <v> <y> <o> : "ꗚ"  UA5DA  # VAI SYLLABLE YO
+<Multi_key> <Z> <v> <k> <o> : "ꗛ"  UA5DB  # VAI SYLLABLE KO
+<Multi_key> <Z> <v> <n> <g> <g> <o> : "ꗜ"  UA5DC  # VAI SYLLABLE NGGO
+<Multi_key> <Z> <v> <g> <o> : "ꗝ"  UA5DD  # VAI SYLLABLE GO
+<Multi_key> <Z> <v> <m> <o> : "ꗞ"  UA5DE  # VAI SYLLABLE MO
+<Multi_key> <Z> <v> <n> <o> : "ꗟ"  UA5DF  # VAI SYLLABLE NO
+<Multi_key> <Z> <v> <n> <y> <o> : "ꗠ"  UA5E0  # VAI SYLLABLE NYO
+<Multi_key> <Z> <v> <e> : "ꗡ"  UA5E1  # VAI SYLLABLE E
+<Multi_key> <Z> <v> <asciitilde> <e> : "ꗢ"  UA5E2  # VAI SYLLABLE EN
+<Multi_key> <Z> <v> <n> <g> <asciitilde> <e> : "ꗣ"  UA5E3  # VAI SYLLABLE NGEN
+<Multi_key> <Z> <v> <h> <e> : "ꗤ"  UA5E4  # VAI SYLLABLE HE
+<Multi_key> <Z> <v> <h> <asciitilde> <e> : "ꗥ"  UA5E5  # VAI SYLLABLE HEN
+<Multi_key> <Z> <v> <w> <e> : "ꗦ"  UA5E6  # VAI SYLLABLE WE
+<Multi_key> <Z> <v> <w> <asciitilde> <e> : "ꗧ"  UA5E7  # VAI SYLLABLE WEN
+<Multi_key> <Z> <v> <p> <e> : "ꗨ"  UA5E8  # VAI SYLLABLE PE
+<Multi_key> <Z> <v> <b> <h> <e> : "ꗩ"  UA5E9  # VAI SYLLABLE BHE
+<Multi_key> <Z> <v> <b> <e> : "ꗪ"  UA5EA  # VAI SYLLABLE BE
+<Multi_key> <Z> <v> <m> <b> <e> : "ꗫ"  UA5EB  # VAI SYLLABLE MBE
+<Multi_key> <Z> <v> <k> <p> <e> : "ꗬ"  UA5EC  # VAI SYLLABLE KPE
+<Multi_key> <Z> <v> <k> <p> <asciitilde> <e> : "ꗭ"  UA5ED  # VAI SYLLABLE KPEN
+<Multi_key> <Z> <v> <m> <g> <b> <e> : "ꗮ"  UA5EE  # VAI SYLLABLE MGBE
+<Multi_key> <Z> <v> <g> <b> <e> : "ꗯ"  UA5EF  # VAI SYLLABLE GBE
+<Multi_key> <Z> <v> <g> <b> <asciitilde> <e> : "ꗰ"  UA5F0  # VAI SYLLABLE GBEN
+<Multi_key> <Z> <v> <f> <e> : "ꗱ"  UA5F1  # VAI SYLLABLE FE
+<Multi_key> <Z> <v> <v> <e> : "ꗲ"  UA5F2  # VAI SYLLABLE VE
+<Multi_key> <Z> <v> <t> <e> : "ꗳ"  UA5F3  # VAI SYLLABLE TE
+<Multi_key> <Z> <v> <t> <h> <e> : "ꗴ"  UA5F4  # VAI SYLLABLE THE
+<Multi_key> <Z> <v> <d> <h> <e> : "ꗵ"  UA5F5  # VAI SYLLABLE DHE
+<Multi_key> <Z> <v> <d> <h> <h> <e> : "ꗶ"  UA5F6  # VAI SYLLABLE DHHE
+<Multi_key> <Z> <v> <l> <e> : "ꗷ"  UA5F7  # VAI SYLLABLE LE
+<Multi_key> <Z> <v> <r> <e> : "ꗸ"  UA5F8  # VAI SYLLABLE RE
+<Multi_key> <Z> <v> <d> <e> : "ꗹ"  UA5F9  # VAI SYLLABLE DE
+<Multi_key> <Z> <v> <n> <d> <e> : "ꗺ"  UA5FA  # VAI SYLLABLE NDE
+<Multi_key> <Z> <v> <s> <e> : "ꗻ"  UA5FB  # VAI SYLLABLE SE
+<Multi_key> <Z> <v> <s> <h> <e> : "ꗼ"  UA5FC  # VAI SYLLABLE SHE
+<Multi_key> <Z> <v> <z> <e> : "ꗽ"  UA5FD  # VAI SYLLABLE ZE
+<Multi_key> <Z> <v> <z> <h> <e> : "ꗾ"  UA5FE  # VAI SYLLABLE ZHE
+<Multi_key> <Z> <v> <c> <e> : "ꗿ"  UA5FF  # VAI SYLLABLE CE
+<Multi_key> <Z> <v> <j> <e> : "ꘀ"  UA600  # VAI SYLLABLE JE
+<Multi_key> <Z> <v> <n> <j> <e> : "ꘁ"  UA601  # VAI SYLLABLE NJE
+<Multi_key> <Z> <v> <y> <e> : "ꘂ"  UA602  # VAI SYLLABLE YE
+<Multi_key> <Z> <v> <k> <e> : "ꘃ"  UA603  # VAI SYLLABLE KE
+<Multi_key> <Z> <v> <n> <g> <g> <e> : "ꘄ"  UA604  # VAI SYLLABLE NGGE
+<Multi_key> <Z> <v> <n> <g> <g> <asciitilde> <e> : "ꘅ"  UA605  # VAI SYLLABLE NGGEN
+<Multi_key> <Z> <v> <g> <e> : "ꘆ"  UA606  # VAI SYLLABLE GE
+<Multi_key> <Z> <v> <g> <asciitilde> <e> : "ꘇ"  UA607  # VAI SYLLABLE GEN
+<Multi_key> <Z> <v> <m> <e> : "ꘈ"  UA608  # VAI SYLLABLE ME
+<Multi_key> <Z> <v> <n> <e> : "ꘉ"  UA609  # VAI SYLLABLE NE
+<Multi_key> <Z> <v> <n> <y> <e> : "ꘊ"  UA60A  # VAI SYLLABLE NYE
+<Multi_key> <Z> <v> <n> <g> <space> : "ꘋ"  UA60B  # VAI SYLLABLE NG
+
+<Multi_key> <Z> <v> <colon> : "ꘌ"  UA60C  # VAI SYLLABLE LENGTHENER
+<Multi_key> <Z> <v> <comma> : "꘍"  UA60D  # VAI COMMA
+<Multi_key> <Z> <v> <period> : "꘎"  UA60E  # VAI FULL STOP
+<Multi_key> <Z> <v> <question> : "꘏"  UA60F  # VAI QUESTION MARK
+
+<Multi_key> <Z> <v> <numbersign> <0> : "꘠"  UA620  # VAI DIGIT ZERO
+<Multi_key> <Z> <v> <numbersign> <1> : "꘡"  UA621  # VAI DIGIT ONE
+<Multi_key> <Z> <v> <numbersign> <2> : "꘢"  UA622  # VAI DIGIT TWO
+<Multi_key> <Z> <v> <numbersign> <3> : "꘣"  UA623  # VAI DIGIT THREE
+<Multi_key> <Z> <v> <numbersign> <4> : "꘤"  UA624  # VAI DIGIT FOUR
+<Multi_key> <Z> <v> <numbersign> <5> : "꘥"  UA625  # VAI DIGIT FIVE
+<Multi_key> <Z> <v> <numbersign> <6> : "꘦"  UA626  # VAI DIGIT SIX
+<Multi_key> <Z> <v> <numbersign> <7> : "꘧"  UA627  # VAI DIGIT SEVEN
+<Multi_key> <Z> <v> <numbersign> <8> : "꘨"  UA628  # VAI DIGIT EIGHT
+<Multi_key> <Z> <v> <numbersign> <9> : "꘩"  UA629  # VAI DIGIT NINE
 
 #######################
 # (@") Language names #
@@ -11365,7 +11656,7 @@ include "%L"
 
 <Multi_key> <x> <k> <c> <d>    : "🯅"  U1FBC5        # STICK FIGURE (XCKD)
 
-# Emoticon-like characters
+# Some face-like characters
 
 <Multi_key> <asciitilde> <Multi_key> <quotedbl>     : "⍨"  U2368  # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
 <Multi_key> <greater> <Multi_key> <quotedbl>        : "⍩"  U2369  # APL FUNCTIONAL SYMBOL GREATER-THAN DIAERESIS
@@ -11379,8 +11670,8 @@ include "%L"
 <Multi_key> <O> <Multi_key> <quotedbl>              : "⍥"  U2365  # APL FUNCTIONAL SYMBOL CIRCLE DIAERESIS
 <Multi_key> <o> <Multi_key> <quotedbl>              : "⍤"  U2364  # APL FUNCTIONAL SYMBOL JOT DIAERESIS
 <Multi_key> <T> <Multi_key> <quotedbl>              : "⍡"  U2361  # APL FUNCTIONAL SYMBOL UP TACK DIAERESIS
-<Multi_key> <u> <Multi_key> <quotedbl>              : "ﺕ"  UFE95  # ARABIC LETTER TEH ISOLATED FORM
 <Multi_key> <V> <Multi_key> <quotedbl>              : "⍢"  U2362  # APL FUNCTIONAL SYMBOL DEL DIAERESIS
+<Multi_key> <u> <Multi_key> <quotedbl>              : "ﺕ"  UFE95  # ARABIC LETTER TEH ISOLATED FORM
 <Multi_key> <w> <Multi_key> <quotedbl>              : "ټ"  U067C  # ARABIC LETTER TEH WITH RING
 <Multi_key> <0> <Multi_key> <quotedbl>              : "ة"  U0629  # ARABIC LETTER TEH MARBUTA
 <Multi_key> <3> <Multi_key> <quotedbl>              : "ӟ"  U04DF  # CYRILLIC SMALL LETTER ZE WITH DIAERESIS
@@ -11389,6 +11680,7 @@ include "%L"
 <Multi_key> <O> <Multi_key> <minus> <quotedbl>      : "Ӫ"  U04EA  # CYRILLIC CAPITAL LETTER BARRED O WITH DIAERESIS
 <Multi_key> <o> <Multi_key> <minus> <quotedbl>      : "ӫ"  U04EB  # CYRILLIC SMALL LETTER BARRED O WITH DIAERESIS
 <Multi_key> <V> <Multi_key> <apostrophe> <quotedbl> : "Ѷ"  U0476  # CYRILLIC CAPITAL LETTER IZHITSA WITH DOUBLE GRAVE ACCENT
+<Multi_key> <asciitilde> <Multi_key> <bar> <quotedbl> : "ꗸ"  UA5F8  # VAI SYLLABLE RE
 
 <Multi_key> <O> <Multi_key> <slash> <quotedbl>      : "㋡"  U32E1  # CIRCLED KATAKANA TU
 <Multi_key> <O> <Multi_key> <parenleft> <quotedbl>  : "☹"  U2639  # WHITE FROWNING FACE
@@ -13470,7 +13762,8 @@ include "%L"
 <Multi_key> <backslash> <f> <o> <l> <d> <e> <r> : "🗀"  U1F5C0  # FOLDER
 <Multi_key> <backslash> <o> <p> <e> <n>         : "🗁"  U1F5C1  # OPEN FOLDER
 <Multi_key> <backslash> <d> <o> <c>             : "🗎"  U1F5CE  # DOCUMENT
-<Multi_key> <backslash> <i> <m> <a> <g> <e>     : "🖻"  U1F5BB  # DOCUMENT WITH PICTURE
+<Multi_key> <backslash> <i> <m> <a> <g> <e>     : "🖻"  U1F5BB  # DOCUMENT WITH PICTURE (IMAGE)
+<Multi_key> <backslash> <n> <e> <w>             : "🗋"  U1F5CB  # EMPTY DOCUMENT (NEW)
 <Multi_key> <backslash> <c> <u> <t>             : "✂"  U2702  # BLACK SCISSORS (CUT)
 <Multi_key> <backslash> <s> <a> <v> <e>         : "🖫"  U1F5AB  # WHITE HARD SHELL FLOPPY DISK (SAVE)
 <Multi_key> <backslash> <t> <r> <a> <s> <h>     : "🗑"  U1F5D1  # WASTEBASKET (TRASH)
