@@ -5411,9 +5411,9 @@ include "%L"
 <Multi_key> <B> <f> <l>     : "⠰" U2830   # BRAILLE PATTERN DOTS-56 (LETTER SIGN)
 <Multi_key> <B> <f> <t>     : "⠠⠄" U2820 U2804  # BRAILLE PATTERN DOTS-6 BRAILLE PATTERN DOTS-3 (TERMINATION SIGN)
 
-#################################
-# (c) Cyrillic (and Glagolitic) #
-#################################
+##############################################
+# (c) Cyrillic (and Glagolitic & Old Permic) #
+##############################################
 
 <Multi_key> <c> <c> <A>          : "А"  U0410   # CYRILLIC CAPITAL LETTER A (conflicts with č, use vc)
 <Multi_key> <c> <c> <B>          : "Б"  U0411   # CYRILLIC CAPITAL LETTER BE (conflicts)
@@ -5632,6 +5632,54 @@ include "%L"
 <Multi_key> <c> <G> <a>          : "ⱝ" U2C5D   # GLAGOLITIC SMALL LETTER TROKUTASTI A (conflicts)
 <Multi_key> <c> <G> <m>          : "ⱞ" U2C5E   # GLAGOLITIC SMALL LETTER LATINATE MYSLITE (conflicts)
 <Multi_key> <c> <G> <less> <c> <h> : "ⱟ" U2C5F   # GLAGOLITIC SMALL LETTER CAUDATE CHRIVI (conflicts)
+
+# (P = Old Permic)
+
+<Multi_key> <c> <P> <a>                 : "𐍐"  U10350  # OLD PERMIC LETTER AN
+<Multi_key> <c> <P> <b>                 : "𐍑"  U10351  # OLD PERMIC LETTER BUR
+<Multi_key> <c> <P> <g>                 : "𐍒"  U10352  # OLD PERMIC LETTER GAI
+<Multi_key> <c> <P> <d>                 : "𐍓"  U10353  # OLD PERMIC LETTER DOI
+<Multi_key> <c> <P> <e>                 : "𐍔"  U10354  # OLD PERMIC LETTER E (Q: how does this differ from 𐍱?
+<Multi_key> <c> <P> <Z> <H>             : "𐍕"  U10355  # OLD PERMIC LETTER ZHOI
+<Multi_key> <c> <P> <j>                 : "𐍖"  U10356  # OLD PERMIC LETTER DZHOI
+<Multi_key> <c> <P> <z>                 : "𐍗"  U10357  # OLD PERMIC LETTER ZATA
+<Multi_key> <c> <P> <D> <Z>             : "𐍘"  U10358  # OLD PERMIC LETTER DZITA
+<Multi_key> <c> <P> <i>                 : "𐍙"  U10359  # OLD PERMIC LETTER I
+<Multi_key> <c> <P> <k>                 : "𐍚"  U1035A  # OLD PERMIC LETTER KOKE
+<Multi_key> <c> <P> <l>                 : "𐍛"  U1035B  # OLD PERMIC LETTER LEI
+<Multi_key> <c> <P> <m>                 : "𐍜"  U1035C  # OLD PERMIC LETTER MENOE
+<Multi_key> <c> <P> <n>                 : "𐍝"  U1035D  # OLD PERMIC LETTER NENOE
+<Multi_key> <c> <P> <o>                 : "𐍞"  U1035E  # OLD PERMIC LETTER VOOI
+<Multi_key> <c> <P> <p>                 : "𐍟"  U1035F  # OLD PERMIC LETTER PEEI
+<Multi_key> <c> <P> <r>                 : "𐍠"  U10360  # OLD PERMIC LETTER REI
+<Multi_key> <c> <P> <s>                 : "𐍡"  U10361  # OLD PERMIC LETTER SII
+<Multi_key> <c> <P> <t>                 : "𐍢"  U10362  # OLD PERMIC LETTER TAI
+<Multi_key> <c> <P> <u>                 : "𐍣"  U10363  # OLD PERMIC LETTER U
+<Multi_key> <c> <P> <C> <H>             : "𐍤"  U10364  # OLD PERMIC LETTER CHERY
+<Multi_key> <c> <P> <S> <H>             : "𐍥"  U10365  # OLD PERMIC LETTER SHOOI
+<Multi_key> <c> <P> <S> <C> <H>         : "𐍦"  U10366  # OLD PERMIC LETTER SHCHOOI
+<Multi_key> <c> <P> <y> <Return>        : "𐍧"  U10367  # OLD PERMIC LETTER YRY (Q: how does this differ from 𐍨?
+<Multi_key> <c> <P> <Y> <Return>        : "𐍨"  U10368  # OLD PERMIC LETTER YERU
+<Multi_key> <c> <P> <quotedbl> <o>      : "𐍩"  U10369  # OLD PERMIC LETTER O
+<Multi_key> <c> <P> <O>                 : "𐍪"  U1036A  # OLD PERMIC LETTER OO
+<Multi_key> <c> <P> <f>                 : "𐍫"  U1036B  # OLD PERMIC LETTER EF
+<Multi_key> <c> <P> <x>                 : "𐍬"  U1036C  # OLD PERMIC LETTER HA
+<Multi_key> <c> <P> <c>                 : "𐍭"  U1036D  # OLD PERMIC LETTER TSIU
+<Multi_key> <c> <P> <T> <S>             : "𐍭"  U1036D  # OLD PERMIC LETTER TSIU
+<Multi_key> <c> <P> <v>                 : "𐍮"  U1036E  # OLD PERMIC LETTER VER
+<Multi_key> <c> <P> <quotedbl> <Return> : "𐍯"  U1036F  # OLD PERMIC LETTER YER
+<Multi_key> <c> <P> <apostrophe>        : "𐍰"  U10370  # OLD PERMIC LETTER YERI
+<Multi_key> <c> <P> <E>                 : "𐍱"  U10371  # OLD PERMIC LETTER YAT
+<Multi_key> <c> <P> <y> <e>             : "𐍲"  U10372  # OLD PERMIC LETTER IE
+<Multi_key> <c> <P> <y> <u>             : "𐍳"  U10373  # OLD PERMIC LETTER YU
+<Multi_key> <c> <P> <y> <a>             : "𐍴"  U10374  # OLD PERMIC LETTER YA (Q: how does this differ from 𐍵?)
+<Multi_key> <c> <P> <Y> <A>             : "𐍵"  U10375  # OLD PERMIC LETTER IA
+
+<Multi_key> <c> <P> <A> <Return>        : "𐍶"  U10376  # COMBINING OLD PERMIC LETTER AN
+<Multi_key> <c> <P> <D> <Return>        : "𐍷"  U10377  # COMBINING OLD PERMIC LETTER DOI
+<Multi_key> <c> <P> <Z> <Return>        : "𐍸"  U10378  # COMBINING OLD PERMIC LETTER ZATA
+<Multi_key> <c> <P> <N> <Return>        : "𐍹"  U10379  # COMBINING OLD PERMIC LETTER NENOE
+<Multi_key> <c> <P> <S> <Return>        : "𐍺"  U1037A  # COMBINING OLD PERMIC LETTER SII
 
 ############################################################################################################
 # (C) ConScripts (Cherokee, Deseret, Inuktitut Syllabics, Mru, Nyiakeng Puachue Hmong, Ol Chiki & Shavian) #
