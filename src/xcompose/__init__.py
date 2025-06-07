@@ -174,7 +174,7 @@ def add(
         names = names.replace("VARIATION SELECTOR-16", "EMOJI")
     if conflict:
         names = names + f" (conflicts with {conflict})"
-    comment = f" {comment}" if comment is not None else "2"
+    comment = f" {comment}" if comment is not None else ""
     print(f'{keys} : "{args.value}"  {codes}  # {names}{comment}')
 
 
