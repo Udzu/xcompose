@@ -6224,59 +6224,135 @@ include "%L"
 <Multi_key> <C> <n> <numbersign> <8>     : "𞅈"  U1E148  # NYIAKENG PUACHUE HMONG DIGIT EIGHT
 <Multi_key> <C> <n> <numbersign> <9>     : "𞅉"  U1E149  # NYIAKENG PUACHUE HMONG DIGIT NINE
 
-# (o = Ol Chiki) ALA-LC transliteration
+# (oc = Ol Chiki) ALA-LC transliteration
 
-<Multi_key> <C> <o> <a> : "ᱚ" U1C5A   # OL CHIKI LETTER LA
-<Multi_key> <C> <o> <t> : "ᱛ" U1C5B   # OL CHIKI LETTER AT
-<Multi_key> <C> <o> <g> : "ᱜ" U1C5C   # OL CHIKI LETTER AG
-<Multi_key> <C> <o> <period> <m> : "ᱝ" U1C5D   # OL CHIKI LETTER ANG
-<Multi_key> <C> <o> <Multi_key> <n> <g> : "ᱝ" U1C5D   # OL CHIKI LETTER ANG
-<Multi_key> <C> <o> <l> : "ᱞ" U1C5E   # OL CHIKI LETTER AL
-<Multi_key> <C> <o> <period> <a> : "ᱟ" U1C5F   # OL CHIKI LETTER LAA
-<Multi_key> <C> <o> <k> : "ᱠ" U1C60   # OL CHIKI LETTER AAK
-<Multi_key> <C> <o> <j> : "ᱡ" U1C61   # OL CHIKI LETTER AAJ
-<Multi_key> <C> <o> <m> : "ᱢ" U1C62   # OL CHIKI LETTER AAM
-<Multi_key> <C> <o> <w> : "ᱣ" U1C63   # OL CHIKI LETTER AAW
-<Multi_key> <C> <o> <i> : "ᱤ" U1C64   # OL CHIKI LETTER LI
-<Multi_key> <C> <o> <s> : "ᱥ" U1C65   # OL CHIKI LETTER IS
-<Multi_key> <C> <o> <underscore> <h> : "ᱦ" U1C66   # OL CHIKI LETTER IH
-<Multi_key> <C> <o> <asciitilde> <n> : "ᱧ" U1C67   # OL CHIKI LETTER INY
-<Multi_key> <C> <o> <r> : "ᱨ" U1C68   # OL CHIKI LETTER IR
-<Multi_key> <C> <o> <u> : "ᱩ" U1C69   # OL CHIKI LETTER LU
-<Multi_key> <C> <o> <c> : "ᱪ" U1C6A   # OL CHIKI LETTER UC
-<Multi_key> <C> <o> <d> : "ᱫ" U1C6B   # OL CHIKI LETTER UD
-<Multi_key> <C> <o> <period> <n> : "ᱬ" U1C6C   # OL CHIKI LETTER UNN
-<Multi_key> <C> <o> <y> : "ᱭ" U1C6D   # OL CHIKI LETTER UY
-<Multi_key> <C> <o> <e> : "ᱮ" U1C6E   # OL CHIKI LETTER LE
-<Multi_key> <C> <o> <p> : "ᱯ" U1C6F   # OL CHIKI LETTER EP
-<Multi_key> <C> <o> <period> <d> : "ᱰ" U1C70   # OL CHIKI LETTER EDD
-<Multi_key> <C> <o> <n> : "ᱱ" U1C71   # OL CHIKI LETTER EN
-<Multi_key> <C> <o> <period> <r> : "ᱲ" U1C72   # OL CHIKI LETTER ERR
-<Multi_key> <C> <o> <o> : "ᱳ" U1C73   # OL CHIKI LETTER LO
-<Multi_key> <C> <o> <period> <t> : "ᱴ" U1C74   # OL CHIKI LETTER OTT
-<Multi_key> <C> <o> <b> : "ᱵ" U1C75   # OL CHIKI LETTER OB
-<Multi_key> <C> <o> <v> : "ᱶ" U1C76   # OL CHIKI LETTER OV
-<Multi_key> <C> <o> <h> : "ᱷ" U1C77   # OL CHIKI LETTER OH
+<Multi_key> <C> <o> <c> <a> : "ᱚ" U1C5A   # OL CHIKI LETTER LA
+<Multi_key> <C> <o> <c> <t> : "ᱛ" U1C5B   # OL CHIKI LETTER AT
+<Multi_key> <C> <o> <c> <g> : "ᱜ" U1C5C   # OL CHIKI LETTER AG
+<Multi_key> <C> <o> <c> <period> <m> : "ᱝ" U1C5D   # OL CHIKI LETTER ANG
+<Multi_key> <C> <o> <c> <Multi_key> <n> <g> : "ᱝ" U1C5D   # OL CHIKI LETTER ANG
+<Multi_key> <C> <o> <c> <l> : "ᱞ" U1C5E   # OL CHIKI LETTER AL
+<Multi_key> <C> <o> <c> <period> <a> : "ᱟ" U1C5F   # OL CHIKI LETTER LAA
+<Multi_key> <C> <o> <c> <k> : "ᱠ" U1C60   # OL CHIKI LETTER AAK
+<Multi_key> <C> <o> <c> <j> : "ᱡ" U1C61   # OL CHIKI LETTER AAJ
+<Multi_key> <C> <o> <c> <m> : "ᱢ" U1C62   # OL CHIKI LETTER AAM
+<Multi_key> <C> <o> <c> <w> : "ᱣ" U1C63   # OL CHIKI LETTER AAW
+<Multi_key> <C> <o> <c> <i> : "ᱤ" U1C64   # OL CHIKI LETTER LI
+<Multi_key> <C> <o> <c> <s> : "ᱥ" U1C65   # OL CHIKI LETTER IS
+<Multi_key> <C> <o> <c> <underscore> <h> : "ᱦ" U1C66   # OL CHIKI LETTER IH
+<Multi_key> <C> <o> <c> <asciitilde> <n> : "ᱧ" U1C67   # OL CHIKI LETTER INY
+<Multi_key> <C> <o> <c> <r> : "ᱨ" U1C68   # OL CHIKI LETTER IR
+<Multi_key> <C> <o> <c> <u> : "ᱩ" U1C69   # OL CHIKI LETTER LU
+<Multi_key> <C> <o> <c> <c> : "ᱪ" U1C6A   # OL CHIKI LETTER UC
+<Multi_key> <C> <o> <c> <d> : "ᱫ" U1C6B   # OL CHIKI LETTER UD
+<Multi_key> <C> <o> <c> <period> <n> : "ᱬ" U1C6C   # OL CHIKI LETTER UNN
+<Multi_key> <C> <o> <c> <y> : "ᱭ" U1C6D   # OL CHIKI LETTER UY
+<Multi_key> <C> <o> <c> <e> : "ᱮ" U1C6E   # OL CHIKI LETTER LE
+<Multi_key> <C> <o> <c> <p> : "ᱯ" U1C6F   # OL CHIKI LETTER EP
+<Multi_key> <C> <o> <c> <period> <d> : "ᱰ" U1C70   # OL CHIKI LETTER EDD
+<Multi_key> <C> <o> <c> <n> : "ᱱ" U1C71   # OL CHIKI LETTER EN
+<Multi_key> <C> <o> <c> <period> <r> : "ᱲ" U1C72   # OL CHIKI LETTER ERR
+<Multi_key> <C> <o> <c> <o> : "ᱳ" U1C73   # OL CHIKI LETTER LO
+<Multi_key> <C> <o> <c> <period> <t> : "ᱴ" U1C74   # OL CHIKI LETTER OTT
+<Multi_key> <C> <o> <c> <b> : "ᱵ" U1C75   # OL CHIKI LETTER OB
+<Multi_key> <C> <o> <c> <v> : "ᱶ" U1C76   # OL CHIKI LETTER OV
+<Multi_key> <C> <o> <c> <h> : "ᱷ" U1C77   # OL CHIKI LETTER OH
 
-<Multi_key> <C> <o> <asciicircum> <period> : "ᱸ" U1C78   # OL CHIKI MU TTUDDAG
-<Multi_key> <C> <o> <underscore> <period> : "ᱹ" U1C79   # OL CHIKI GAAHLAA TTUDDAAG
-<Multi_key> <C> <o> <colon> : "ᱺ" U1C7A   # OL CHIKI MU-GAAHLAA TTUDDAAG
-<Multi_key> <C> <o> <asciitilde> <asciitilde> : "ᱻ" U1C7B   # OL CHIKI RELAA
-<Multi_key> <C> <o> <minus> : "ᱼ" U1C7C   # OL CHIKI PHAARKAA
-<Multi_key> <C> <o> <9> : "ᱽ" U1C7D   # OL CHIKI AHAD
-<Multi_key> <C> <o> <comma> : "᱾" U1C7E   # OL CHIKI PUNCTUATION MUCAAD
-<Multi_key> <C> <o> <semicolon> : "᱿" U1C7F   # OL CHIKI PUNCTUATION DOUBLE MUCAAD
+<Multi_key> <C> <o> <c> <asciicircum> <period> : "ᱸ" U1C78   # OL CHIKI MU TTUDDAG
+<Multi_key> <C> <o> <c> <underscore> <period> : "ᱹ" U1C79   # OL CHIKI GAAHLAA TTUDDAAG
+<Multi_key> <C> <o> <c> <colon> : "ᱺ" U1C7A   # OL CHIKI MU-GAAHLAA TTUDDAAG
+<Multi_key> <C> <o> <c> <asciitilde> <asciitilde> : "ᱻ" U1C7B   # OL CHIKI RELAA
+<Multi_key> <C> <o> <c> <minus> : "ᱼ" U1C7C   # OL CHIKI PHAARKAA
+<Multi_key> <C> <o> <c> <9> : "ᱽ" U1C7D   # OL CHIKI AHAD
+<Multi_key> <C> <o> <c> <comma> : "᱾" U1C7E   # OL CHIKI PUNCTUATION MUCAAD
+<Multi_key> <C> <o> <c> <semicolon> : "᱿" U1C7F   # OL CHIKI PUNCTUATION DOUBLE MUCAAD
 
-<Multi_key> <C> <o> <numbersign> <0> : "᱐" U1C50   # OL CHIKI DIGIT ZERO
-<Multi_key> <C> <o> <numbersign> <1> : "᱑" U1C51   # OL CHIKI DIGIT ONE
-<Multi_key> <C> <o> <numbersign> <2> : "᱒" U1C52   # OL CHIKI DIGIT TWO
-<Multi_key> <C> <o> <numbersign> <3> : "᱓" U1C53   # OL CHIKI DIGIT THREE
-<Multi_key> <C> <o> <numbersign> <4> : "᱔" U1C54   # OL CHIKI DIGIT FOUR
-<Multi_key> <C> <o> <numbersign> <5> : "᱕" U1C55   # OL CHIKI DIGIT FIVE
-<Multi_key> <C> <o> <numbersign> <6> : "᱖" U1C56   # OL CHIKI DIGIT SIX
-<Multi_key> <C> <o> <numbersign> <7> : "᱗" U1C57   # OL CHIKI DIGIT SEVEN
-<Multi_key> <C> <o> <numbersign> <8> : "᱘" U1C58   # OL CHIKI DIGIT EIGHT
-<Multi_key> <C> <o> <numbersign> <9> : "᱙" U1C59   # OL CHIKI DIGIT NINE
+<Multi_key> <C> <o> <c> <numbersign> <0> : "᱐" U1C50   # OL CHIKI DIGIT ZERO
+<Multi_key> <C> <o> <c> <numbersign> <1> : "᱑" U1C51   # OL CHIKI DIGIT ONE
+<Multi_key> <C> <o> <c> <numbersign> <2> : "᱒" U1C52   # OL CHIKI DIGIT TWO
+<Multi_key> <C> <o> <c> <numbersign> <3> : "᱓" U1C53   # OL CHIKI DIGIT THREE
+<Multi_key> <C> <o> <c> <numbersign> <4> : "᱔" U1C54   # OL CHIKI DIGIT FOUR
+<Multi_key> <C> <o> <c> <numbersign> <5> : "᱕" U1C55   # OL CHIKI DIGIT FIVE
+<Multi_key> <C> <o> <c> <numbersign> <6> : "᱖" U1C56   # OL CHIKI DIGIT SIX
+<Multi_key> <C> <o> <c> <numbersign> <7> : "᱗" U1C57   # OL CHIKI DIGIT SEVEN
+<Multi_key> <C> <o> <c> <numbersign> <8> : "᱘" U1C58   # OL CHIKI DIGIT EIGHT
+<Multi_key> <C> <o> <c> <numbersign> <9> : "᱙" U1C59   # OL CHIKI DIGIT NINE
+
+# (os/oS = Osage)
+
+<Multi_key> <C> <o> <s> <A>             : "𐒰"  U104B0  # OSAGE CAPITAL LETTER A
+<Multi_key> <C> <o> <S> <A> <I>         : "𐒱"  U104B1  # OSAGE CAPITAL LETTER AI
+<Multi_key> <C> <o> <S> <A> <comma> <I> : "𐒲"  U104B2  # OSAGE CAPITAL LETTER AIN (aį)
+<Multi_key> <C> <o> <S> <E> <E>         : "𐒳"  U104B3  # OSAGE CAPITAL LETTER AH (ə)
+<Multi_key> <C> <o> <s> <B> <R>         : "𐒴"  U104B4  # OSAGE CAPITAL LETTER BRA
+<Multi_key> <C> <o> <s> <v> <C>         : "𐒵"  U104B5  # OSAGE CAPITAL LETTER CHA (č)
+<Multi_key> <C> <o> <S> <H> <v> <C>     : "𐒶"  U104B6  # OSAGE CAPITAL LETTER EHCHA  (hč)
+<Multi_key> <C> <o> <s> <E>             : "𐒷"  U104B7  # OSAGE CAPITAL LETTER E
+<Multi_key> <C> <o> <S> <E> <comma> <I> : "𐒸"  U104B8  # OSAGE CAPITAL LETTER EIN (eį)
+<Multi_key> <C> <o> <s> <H>             : "𐒹"  U104B9  # OSAGE CAPITAL LETTER HA
+<Multi_key> <C> <o> <S> <H> <Y>         : "𐒺"  U104BA  # OSAGE CAPITAL LETTER HYA
+<Multi_key> <C> <o> <s> <I>             : "𐒻"  U104BB  # OSAGE CAPITAL LETTER I
+<Multi_key> <C> <o> <s> <K>             : "𐒼"  U104BC  # OSAGE CAPITAL LETTER KA
+<Multi_key> <C> <o> <S> <H> <K>         : "𐒽"  U104BD  # OSAGE CAPITAL LETTER EHKA
+<Multi_key> <C> <o> <S> <K> <Y>         : "𐒾"  U104BE  # OSAGE CAPITAL LETTER KYA
+<Multi_key> <C> <o> <s> <L>             : "𐒿"  U104BF  # OSAGE CAPITAL LETTER LA
+<Multi_key> <C> <o> <s> <M>             : "𐓀"  U104C0  # OSAGE CAPITAL LETTER MA
+<Multi_key> <C> <o> <s> <N>             : "𐓁"  U104C1  # OSAGE CAPITAL LETTER NA
+<Multi_key> <C> <o> <s> <O>             : "𐓂"  U104C2  # OSAGE CAPITAL LETTER O
+<Multi_key> <C> <o> <S> <O> <comma> <I> : "𐓃"  U104C3  # OSAGE CAPITAL LETTER OIN (oį)
+<Multi_key> <C> <o> <s> <P>             : "𐓄"  U104C4  # OSAGE CAPITAL LETTER PA
+<Multi_key> <C> <o> <S> <H> <P>         : "𐓅"  U104C5  # OSAGE CAPITAL LETTER EHPA
+<Multi_key> <C> <o> <s> <S>             : "𐓆"  U104C6  # OSAGE CAPITAL LETTER SA
+<Multi_key> <C> <o> <s> <v> <S>         : "𐓇"  U104C7  # OSAGE CAPITAL LETTER SHA (š)
+<Multi_key> <C> <o> <s> <T>             : "𐓈"  U104C8  # OSAGE CAPITAL LETTER TA
+<Multi_key> <C> <o> <S> <H> <T>         : "𐓉"  U104C9  # OSAGE CAPITAL LETTER EHTA
+<Multi_key> <C> <o> <s> <C>             : "𐓊"  U104CA  # OSAGE CAPITAL LETTER TSA
+<Multi_key> <C> <o> <S> <H> <C>         : "𐓋"  U104CB  # OSAGE CAPITAL LETTER EHTSA
+<Multi_key> <C> <o> <S> <C> <H>         : "𐓌"  U104CC  # OSAGE CAPITAL LETTER TSHA
+<Multi_key> <C> <o> <s> <minus> <D>     : "𐓍"  U104CD  # OSAGE CAPITAL LETTER DHA (đ)
+<Multi_key> <C> <o> <s> <U>             : "𐓎"  U104CE  # OSAGE CAPITAL LETTER U
+<Multi_key> <C> <o> <s> <W>             : "𐓏"  U104CF  # OSAGE CAPITAL LETTER WA
+<Multi_key> <C> <o> <s> <X>             : "𐓐"  U104D0  # OSAGE CAPITAL LETTER KHA
+<Multi_key> <C> <o> <S> <G> <H>         : "𐓑"  U104D1  # OSAGE CAPITAL LETTER GHA (ɣ)
+<Multi_key> <C> <o> <s> <Z>             : "𐓒"  U104D2  # OSAGE CAPITAL LETTER ZA
+<Multi_key> <C> <o> <s> <v> <Z>         : "𐓓"  U104D3  # OSAGE CAPITAL LETTER ZHA (ž)
+
+<Multi_key> <C> <o> <s> <a>             : "𐓘"  U104D8  # OSAGE SMALL LETTER A
+<Multi_key> <C> <o> <S> <a> <i>         : "𐓙"  U104D9  # OSAGE SMALL LETTER AI
+<Multi_key> <C> <o> <S> <a> <comma> <i> : "𐓚"  U104DA  # OSAGE SMALL LETTER AIN (aį)
+<Multi_key> <C> <o> <S> <e> <e>         : "𐓛"  U104DB  # OSAGE SMALL LETTER AH (ə)
+<Multi_key> <C> <o> <s> <b> <r>         : "𐓜"  U104DC  # OSAGE SMALL LETTER BRA
+<Multi_key> <C> <o> <s> <v> <c>         : "𐓝"  U104DD  # OSAGE SMALL LETTER CHA (č)
+<Multi_key> <C> <o> <S> <h> <v> <c>     : "𐓞"  U104DE  # OSAGE SMALL LETTER EHCHA (hč)
+<Multi_key> <C> <o> <s> <e>             : "𐓟"  U104DF  # OSAGE SMALL LETTER E
+<Multi_key> <C> <o> <S> <e> <comma> <i> : "𐓠"  U104E0  # OSAGE SMALL LETTER EIN (eį)
+<Multi_key> <C> <o> <s> <h>             : "𐓡"  U104E1  # OSAGE SMALL LETTER HA
+<Multi_key> <C> <o> <S> <h> <y>         : "𐓢"  U104E2  # OSAGE SMALL LETTER HYA
+<Multi_key> <C> <o> <s> <i>             : "𐓣"  U104E3  # OSAGE SMALL LETTER I
+<Multi_key> <C> <o> <s> <k>             : "𐓤"  U104E4  # OSAGE SMALL LETTER KA
+<Multi_key> <C> <o> <S> <h> <k>         : "𐓥"  U104E5  # OSAGE SMALL LETTER EHKA
+<Multi_key> <C> <o> <S> <k> <y>         : "𐓦"  U104E6  # OSAGE SMALL LETTER KYA
+<Multi_key> <C> <o> <s> <l>             : "𐓧"  U104E7  # OSAGE SMALL LETTER LA
+<Multi_key> <C> <o> <s> <m>             : "𐓨"  U104E8  # OSAGE SMALL LETTER MA
+<Multi_key> <C> <o> <s> <n>             : "𐓩"  U104E9  # OSAGE SMALL LETTER NA
+<Multi_key> <C> <o> <s> <o>             : "𐓪"  U104EA  # OSAGE SMALL LETTER O
+<Multi_key> <C> <o> <S> <o> <comma> <i> : "𐓫"  U104EB  # OSAGE SMALL LETTER OIN (oį)
+<Multi_key> <C> <o> <s> <p>             : "𐓬"  U104EC  # OSAGE SMALL LETTER PA
+<Multi_key> <C> <o> <S> <h> <p>         : "𐓭"  U104ED  # OSAGE SMALL LETTER EHPA
+<Multi_key> <C> <o> <s> <s>             : "𐓮"  U104EE  # OSAGE SMALL LETTER SA
+<Multi_key> <C> <o> <s> <v> <s>         : "𐓯"  U104EF  # OSAGE SMALL LETTER SHA (š)
+<Multi_key> <C> <o> <s> <t>             : "𐓰"  U104F0  # OSAGE SMALL LETTER TA
+<Multi_key> <C> <o> <S> <h> <t>         : "𐓱"  U104F1  # OSAGE SMALL LETTER EHTA
+<Multi_key> <C> <o> <s> <c>             : "𐓲"  U104F2  # OSAGE SMALL LETTER TSA
+<Multi_key> <C> <o> <S> <h> <c>         : "𐓳"  U104F3  # OSAGE SMALL LETTER EHTSA
+<Multi_key> <C> <o> <S> <c> <h>         : "𐓴"  U104F4  # OSAGE SMALL LETTER TSHA
+<Multi_key> <C> <o> <s> <minus> <d>     : "𐓵"  U104F5  # OSAGE SMALL LETTER DHA (đ)
+<Multi_key> <C> <o> <s> <u>             : "𐓶"  U104F6  # OSAGE SMALL LETTER U
+<Multi_key> <C> <o> <s> <w>             : "𐓷"  U104F7  # OSAGE SMALL LETTER WA
+<Multi_key> <C> <o> <s> <x>             : "𐓸"  U104F8  # OSAGE SMALL LETTER KHA
+<Multi_key> <C> <o> <S> <g> <h>         : "𐓹"  U104F9  # OSAGE SMALL LETTER GHA (ɣ)
+<Multi_key> <C> <o> <s> <z>             : "𐓺"  U104FA  # OSAGE SMALL LETTER ZA
+<Multi_key> <C> <o> <s> <v> <z>         : "𐓻"  U104FB  # OSAGE SMALL LETTER ZHA (ž)
 
 # (s/S = Shavian)
 
