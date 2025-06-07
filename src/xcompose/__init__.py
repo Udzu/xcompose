@@ -138,7 +138,7 @@ def get_definitions(
 # Commands
 
 
-def add(args: argparse.Namespace, definitions: Trie | None = None) -> None:
+def add(args: argparse.Namespace, definitions: Trie | None = None, comment: str | None = None) -> None:
     """Print line defining a new key sequence (checking for any conflicts)"""
     ks = tuple(CHAR_TO_KEYWORD.get(k, k) for k in args.keys)
     if args.modifier_key is not None:
@@ -170,7 +170,8 @@ def add(args: argparse.Namespace, definitions: Trie | None = None) -> None:
         names = names.replace("VARIATION SELECTOR-16", "EMOJI")
     if conflict:
         names = names + f" (conflicts with {conflict})"
-    print(f'{keys} : "{args.value}"  {codes}  # {names}')
+    comment = f" {comment}" if comment is not None else "2"
+    print(f'{keys} : "{args.value}"  {codes}  # {names}{comment}')
 
 
 def find(args: argparse.Namespace) -> None:
