@@ -837,6 +837,8 @@ include "%L"
 <Multi_key> <minus> <c>             : "ꞓ"  UA793  # LATIN SMALL LETTER C WITH BAR
 <Multi_key> <minus> <F>             : "Ꞙ"  UA798  # LATIN CAPITAL LETTER F WITH STROKE
 <Multi_key> <minus> <f>             : "ꞙ"  UA799  # LATIN SMALL LETTER F WITH STROKE
+<Multi_key> <minus> <G>             : "Ḡ"  U1E20  # LATIN CAPITAL LETTER G WITH MACRON
+<Multi_key> <minus> <g>             : "ḡ"  U1E21  # LATIN SMALL LETTER G WITH MACRON
 <Multi_key> <minus> <H>             : "Ħ"  U0126  # LATIN CAPITAL LETTER H WITH STROKE
 <Multi_key> <minus> <h>             : "ħ"  U0127  # LATIN SMALL LETTER H WITH STROKE
 <Multi_key> <minus> <J>             : "Ɉ"  U0248  # LATIN CAPITAL LETTER J WITH STROKE
@@ -855,8 +857,10 @@ include "%L"
 <Multi_key> <minus> <r>             : "ɍ"  U024D  # LATIN SMALL LETTER R WITH STROKE
 <Multi_key> <minus> <T>             : "Ŧ"  U0166  # LATIN CAPITAL LETTER T WITH STROKE
 <Multi_key> <minus> <t>             : "ŧ"  U0167  # LATIN SMALL LETTER T WITH STROKE
-<Multi_key> <minus> <Y>             : "Ɏ"  U024E  # LATIN CAPITAL LETTER Y WITH STROKE
-<Multi_key> <minus> <y>             : "ɏ"  U024F  # LATIN SMALL LETTER Y WITH STROKE
+<Multi_key> <minus> <Y>             : "Ȳ"  U0232  # LATIN CAPITAL LETTER Y WITH MACRON
+<Multi_key> <minus> <y>             : "ȳ"  U0233  # LATIN SMALL LETTER Y WITH MACRON
+<Multi_key> <minus> <minus> <Y>     : "Ɏ"  U024E  # LATIN CAPITAL LETTER Y WITH STROKE
+<Multi_key> <minus> <minus> <y>     : "ɏ"  U024F  # LATIN SMALL LETTER Y WITH STROKE
 <Multi_key> <minus> <z>             : "ƶ"  U01B6  # LATIN SMALL LETTER Z WITH STROKE
 <Multi_key> <minus> <Multi_key> <A> <E> : "Ǣ"  U01E2  # LATIN CAPITAL LETTER AE WITH MACRON
 <Multi_key> <minus> <Multi_key> <a> <e> : "ǣ"  U01E3  # LATIN SMALL LETTER AE WITH MACRON
@@ -3605,7 +3609,7 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# covers Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada,
+# covers Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada, Mahajani,
 # Malayalam, Meitei, Odia, Saurashtra, Sinhala, Tamil, Telugu. See Zhuyin section for Tibetan.
 
 # (based on 7-bit ISO 15919)
@@ -4363,6 +4367,55 @@ include "%L"
 # Punctuation
 
 <Multi_key> <b> <G> <o> <period>         : "੶"  U0A76  # GURMUKHI ABBREVIATION SIGN (conflicts)
+
+# (j = Mahajani) (not the best abbreviation but not much choice)
+
+# Independent vowels
+
+<Multi_key> <b> <j> <a> <space>                    : "𑅐"  U11150  # MAHAJANI LETTER A
+<Multi_key> <b> <j> <i> <space>                    : "𑅑"  U11151  # MAHAJANI LETTER I
+<Multi_key> <b> <j> <u> <space>                    : "𑅒"  U11152  # MAHAJANI LETTER U
+<Multi_key> <b> <j> <e> <space>                    : "𑅓"  U11153  # MAHAJANI LETTER E
+<Multi_key> <b> <j> <o> <space>                    : "𑅔"  U11154  # MAHAJANI LETTER O
+
+# Consonants
+
+<Multi_key> <b> <j> <k> <space>                    : "𑅕"  U11155  # MAHAJANI LETTER KA
+<Multi_key> <b> <j> <k> <h>                        : "𑅖"  U11156  # MAHAJANI LETTER KHA
+<Multi_key> <b> <j> <g> <space>                    : "𑅗"  U11157  # MAHAJANI LETTER GA
+<Multi_key> <b> <j> <g> <h>                        : "𑅘"  U11158  # MAHAJANI LETTER GHA
+<Multi_key> <b> <j> <c> <space>                    : "𑅙"  U11159  # MAHAJANI LETTER CA
+<Multi_key> <b> <j> <c> <h>                        : "𑅚"  U1115A  # MAHAJANI LETTER CHA
+<Multi_key> <b> <j> <j> <space>                    : "𑅛"  U1115B  # MAHAJANI LETTER JA
+<Multi_key> <b> <j> <j> <h>                        : "𑅜"  U1115C  # MAHAJANI LETTER JHA
+<Multi_key> <b> <j> <asciitilde> <n>               : "𑅝"  U1115D  # MAHAJANI LETTER NYA
+<Multi_key> <b> <j> <period> <t> <space>           : "𑅞"  U1115E  # MAHAJANI LETTER TTA
+<Multi_key> <b> <j> <period> <t> <h>               : "𑅟"  U1115F  # MAHAJANI LETTER TTHA
+<Multi_key> <b> <j> <period> <d> <space>           : "𑅠"  U11160  # MAHAJANI LETTER DDA
+<Multi_key> <b> <j> <period> <d> <h>               : "𑅡"  U11161  # MAHAJANI LETTER DDHA
+<Multi_key> <b> <j> <period> <n>                   : "𑅢"  U11162  # MAHAJANI LETTER NNA
+<Multi_key> <b> <j> <t> <space>                    : "𑅣"  U11163  # MAHAJANI LETTER TA
+<Multi_key> <b> <j> <t> <h>                        : "𑅤"  U11164  # MAHAJANI LETTER THA
+<Multi_key> <b> <j> <d> <space>                    : "𑅥"  U11165  # MAHAJANI LETTER DA
+<Multi_key> <b> <j> <d> <h>                        : "𑅦"  U11166  # MAHAJANI LETTER DHA
+<Multi_key> <b> <j> <n>                            : "𑅧"  U11167  # MAHAJANI LETTER NA
+<Multi_key> <b> <j> <p> <space>                    : "𑅨"  U11168  # MAHAJANI LETTER PA
+<Multi_key> <b> <j> <p> <h>                        : "𑅩"  U11169  # MAHAJANI LETTER PHA
+<Multi_key> <b> <j> <b> <space>                    : "𑅪"  U1116A  # MAHAJANI LETTER BA
+<Multi_key> <b> <j> <b> <h>                        : "𑅫"  U1116B  # MAHAJANI LETTER BHA
+<Multi_key> <b> <j> <m>                            : "𑅬"  U1116C  # MAHAJANI LETTER MA
+<Multi_key> <b> <j> <r>                            : "𑅭"  U1116D  # MAHAJANI LETTER RA
+<Multi_key> <b> <j> <l>                            : "𑅮"  U1116E  # MAHAJANI LETTER LA
+<Multi_key> <b> <j> <v>                            : "𑅯"  U1116F  # MAHAJANI LETTER VA
+<Multi_key> <b> <j> <s>                            : "𑅰"  U11170  # MAHAJANI LETTER SA
+<Multi_key> <b> <j> <h>                            : "𑅱"  U11171  # MAHAJANI LETTER HA
+<Multi_key> <b> <j> <underscore> <r>               : "𑅲"  U11172  # MAHAJANI LETTER RRA
+
+# Other signs
+
+<Multi_key> <b> <j> <underscore> <period> <Return> : "𑅳"  U11173  # MAHAJANI SIGN NUKTA
+<Multi_key> <b> <j> <o> <period>                   : "𑅴"  U11174  # MAHAJANI ABBREVIATION SIGN
+<Multi_key> <b> <j> <Multi_key> <S> <O>            : "𑅵"  U11175  # MAHAJANI SECTION MARK
 
 # (k = Kannada)
 
@@ -5580,9 +5633,9 @@ include "%L"
 <Multi_key> <c> <G> <m>          : "ⱞ" U2C5E   # GLAGOLITIC SMALL LETTER LATINATE MYSLITE (conflicts)
 <Multi_key> <c> <G> <less> <c> <h> : "ⱟ" U2C5F   # GLAGOLITIC SMALL LETTER CAUDATE CHRIVI (conflicts)
 
-###############################################################################
-# (C) ConScripts (Cherokee, Deseret, Inuktitut Syllabics, Ol Chiki & Shavian) #
-###############################################################################
+############################################################################################################
+# (C) ConScripts (Cherokee, Deseret, Inuktitut Syllabics, Mru, Nyiakeng Puachue Hmong, Ol Chiki & Shavian) #
+############################################################################################################
 
 # (d/D = Deseret)
 
@@ -5846,163 +5899,282 @@ include "%L"
 
 # (i = Inuktitut Syllabics) ALA-LC transliteration
 
-<Multi_key> <C> <i> <a> <i> : "ᐁ" U1401   # CANADIAN SYLLABICS E
-<Multi_key> <C> <i> <a> <a> <i> : "ᐂ" U1402   # CANADIAN SYLLABICS AAI
-<Multi_key> <C> <i> <i> : "ᐃ" U1403   # CANADIAN SYLLABICS I
-<Multi_key> <C> <i> <u> <space> : "ᐅ" U1405   # CANADIAN SYLLABICS O
-<Multi_key> <C> <i> <u> <u> : "ᐆ" U1406   # CANADIAN SYLLABICS OO
-<Multi_key> <C> <i> <a> <space> : "ᐊ" U140A   # CANADIAN SYLLABICS A
-<Multi_key> <C> <i> <a> <a> <space> : "ᐋ" U140B   # CANADIAN SYLLABICS AA
+<Multi_key> <C> <i> <a> <i>             : "ᐁ"  U1401  # CANADIAN SYLLABICS E
+<Multi_key> <C> <i> <a> <a> <i>         : "ᐂ"  U1402  # CANADIAN SYLLABICS AAI
+<Multi_key> <C> <i> <i>                 : "ᐃ"  U1403  # CANADIAN SYLLABICS I
+<Multi_key> <C> <i> <u> <space>         : "ᐅ"  U1405  # CANADIAN SYLLABICS O
+<Multi_key> <C> <i> <u> <u>             : "ᐆ"  U1406  # CANADIAN SYLLABICS OO
+<Multi_key> <C> <i> <a> <space>         : "ᐊ"  U140A  # CANADIAN SYLLABICS A
+<Multi_key> <C> <i> <a> <a> <space>     : "ᐋ"  U140B  # CANADIAN SYLLABICS AA
 
-<Multi_key> <C> <i> <p> <a> <i> : "ᐯ" U142F   # CANADIAN SYLLABICS PE
-<Multi_key> <C> <i> <p> <a> <a> <i> : "ᐰ" U1430   # CANADIAN SYLLABICS PAAI
-<Multi_key> <C> <i> <p> <i> <space> : "ᐱ" U1431   # CANADIAN SYLLABICS PI
-<Multi_key> <C> <i> <p> <i> <i> : "ᐲ" U1432   # CANADIAN SYLLABICS PII
-<Multi_key> <C> <i> <p> <u> <space> : "ᐳ" U1433   # CANADIAN SYLLABICS PO
-<Multi_key> <C> <i> <p> <u> <u> : "ᐴ" U1434   # CANADIAN SYLLABICS POO
-<Multi_key> <C> <i> <p> <a> <space> : "ᐸ" U1438   # CANADIAN SYLLABICS PA
-<Multi_key> <C> <i> <p> <a> <a> <space> : "ᐹ" U1439   # CANADIAN SYLLABICS PAA
-<Multi_key> <C> <i> <p> <space> : "ᑉ" U1449   # CANADIAN SYLLABICS P
+<Multi_key> <C> <i> <p> <a> <i>         : "ᐯ"  U142F  # CANADIAN SYLLABICS PE
+<Multi_key> <C> <i> <p> <a> <a> <i>     : "ᐰ"  U1430  # CANADIAN SYLLABICS PAAI
+<Multi_key> <C> <i> <p> <i> <space>     : "ᐱ"  U1431  # CANADIAN SYLLABICS PI
+<Multi_key> <C> <i> <p> <i> <i>         : "ᐲ"  U1432  # CANADIAN SYLLABICS PII
+<Multi_key> <C> <i> <p> <u> <space>     : "ᐳ"  U1433  # CANADIAN SYLLABICS PO
+<Multi_key> <C> <i> <p> <u> <u>         : "ᐴ"  U1434  # CANADIAN SYLLABICS POO
+<Multi_key> <C> <i> <p> <a> <space>     : "ᐸ"  U1438  # CANADIAN SYLLABICS PA
+<Multi_key> <C> <i> <p> <a> <a> <space> : "ᐹ"  U1439  # CANADIAN SYLLABICS PAA
+<Multi_key> <C> <i> <p> <space>         : "ᑉ"  U1449  # CANADIAN SYLLABICS P
 
-<Multi_key> <C> <i> <t> <a> <i> : "ᑌ" U144C   # CANADIAN SYLLABICS TE
-<Multi_key> <C> <i> <t> <a> <a> <i> : "ᑍ" U144D   # CANADIAN SYLLABICS TAAI
-<Multi_key> <C> <i> <t> <i> <space> : "ᑎ" U144E   # CANADIAN SYLLABICS TI
-<Multi_key> <C> <i> <t> <i> <i> : "ᑏ" U144F   # CANADIAN SYLLABICS TII
-<Multi_key> <C> <i> <t> <u> <space> : "ᑐ" U1450   # CANADIAN SYLLABICS TO
-<Multi_key> <C> <i> <t> <u> <u> : "ᑑ" U1451   # CANADIAN SYLLABICS TOO
-<Multi_key> <C> <i> <t> <a> <space> : "ᑕ" U1455   # CANADIAN SYLLABICS TA
-<Multi_key> <C> <i> <t> <a> <a> <space> : "ᑖ" U1456   # CANADIAN SYLLABICS TAA
-<Multi_key> <C> <i> <t> <space> : "ᑦ" U1466   # CANADIAN SYLLABICS T
+<Multi_key> <C> <i> <t> <a> <i>         : "ᑌ"  U144C  # CANADIAN SYLLABICS TE
+<Multi_key> <C> <i> <t> <a> <a> <i>     : "ᑍ"  U144D  # CANADIAN SYLLABICS TAAI
+<Multi_key> <C> <i> <t> <i> <space>     : "ᑎ"  U144E  # CANADIAN SYLLABICS TI
+<Multi_key> <C> <i> <t> <i> <i>         : "ᑏ"  U144F  # CANADIAN SYLLABICS TII
+<Multi_key> <C> <i> <t> <u> <space>     : "ᑐ"  U1450  # CANADIAN SYLLABICS TO
+<Multi_key> <C> <i> <t> <u> <u>         : "ᑑ"  U1451  # CANADIAN SYLLABICS TOO
+<Multi_key> <C> <i> <t> <a> <space>     : "ᑕ"  U1455  # CANADIAN SYLLABICS TA
+<Multi_key> <C> <i> <t> <a> <a> <space> : "ᑖ"  U1456  # CANADIAN SYLLABICS TAA
+<Multi_key> <C> <i> <t> <space>         : "ᑦ"  U1466  # CANADIAN SYLLABICS T
 
-<Multi_key> <C> <i> <k> <a> <i> : "ᑫ" U146B   # CANADIAN SYLLABICS KE
-<Multi_key> <C> <i> <k> <a> <a> <i> : "ᑬ" U146C   # CANADIAN SYLLABICS KAAI
-<Multi_key> <C> <i> <k> <i> <space> : "ᑭ" U146D   # CANADIAN SYLLABICS KI
-<Multi_key> <C> <i> <k> <i> <i> : "ᑮ" U146E   # CANADIAN SYLLABICS KII
-<Multi_key> <C> <i> <k> <u> <space> : "ᑯ" U146F   # CANADIAN SYLLABICS KO
-<Multi_key> <C> <i> <k> <u> <u> : "ᑰ" U1470   # CANADIAN SYLLABICS KOO
-<Multi_key> <C> <i> <k> <a> <space> : "ᑲ" U1472   # CANADIAN SYLLABICS KA
-<Multi_key> <C> <i> <k> <a> <a> <space> : "ᑳ" U1473   # CANADIAN SYLLABICS KAA
-<Multi_key> <C> <i> <k> <space> : "ᒃ" U1483   # CANADIAN SYLLABICS K
+<Multi_key> <C> <i> <k> <a> <i>         : "ᑫ"  U146B  # CANADIAN SYLLABICS KE
+<Multi_key> <C> <i> <k> <a> <a> <i>     : "ᑬ"  U146C  # CANADIAN SYLLABICS KAAI
+<Multi_key> <C> <i> <k> <i> <space>     : "ᑭ"  U146D  # CANADIAN SYLLABICS KI
+<Multi_key> <C> <i> <k> <i> <i>         : "ᑮ"  U146E  # CANADIAN SYLLABICS KII
+<Multi_key> <C> <i> <k> <u> <space>     : "ᑯ"  U146F  # CANADIAN SYLLABICS KO
+<Multi_key> <C> <i> <k> <u> <u>         : "ᑰ"  U1470  # CANADIAN SYLLABICS KOO
+<Multi_key> <C> <i> <k> <a> <space>     : "ᑲ"  U1472  # CANADIAN SYLLABICS KA
+<Multi_key> <C> <i> <k> <a> <a> <space> : "ᑳ"  U1473  # CANADIAN SYLLABICS KAA
+<Multi_key> <C> <i> <k> <space>         : "ᒃ"  U1483  # CANADIAN SYLLABICS K
 
-<Multi_key> <C> <i> <g> <a> <i> : "ᒉ" U1489   # CANADIAN SYLLABICS CE
-<Multi_key> <C> <i> <g> <a> <a> <i> : "ᒊ" U148A   # CANADIAN SYLLABICS CAAI
-<Multi_key> <C> <i> <g> <i> <space> : "ᒋ" U148B   # CANADIAN SYLLABICS CI
-<Multi_key> <C> <i> <g> <i> <i> : "ᒌ" U148C   # CANADIAN SYLLABICS CII
-<Multi_key> <C> <i> <g> <u> <space> : "ᒍ" U148D   # CANADIAN SYLLABICS CO
-<Multi_key> <C> <i> <g> <u> <u> : "ᒎ" U148E   # CANADIAN SYLLABICS COO
-<Multi_key> <C> <i> <g> <a> <space> : "ᒐ" U1490   # CANADIAN SYLLABICS CA
-<Multi_key> <C> <i> <g> <a> <a> <space> : "ᒑ" U1491   # CANADIAN SYLLABICS CAA
-<Multi_key> <C> <i> <g> <space> : "ᒡ" U14A1   # CANADIAN SYLLABICS C
+<Multi_key> <C> <i> <g> <a> <i>         : "ᒉ"  U1489  # CANADIAN SYLLABICS CE
+<Multi_key> <C> <i> <g> <a> <a> <i>     : "ᒊ"  U148A  # CANADIAN SYLLABICS CAAI
+<Multi_key> <C> <i> <g> <i> <space>     : "ᒋ"  U148B  # CANADIAN SYLLABICS CI
+<Multi_key> <C> <i> <g> <i> <i>         : "ᒌ"  U148C  # CANADIAN SYLLABICS CII
+<Multi_key> <C> <i> <g> <u> <space>     : "ᒍ"  U148D  # CANADIAN SYLLABICS CO
+<Multi_key> <C> <i> <g> <u> <u>         : "ᒎ"  U148E  # CANADIAN SYLLABICS COO
+<Multi_key> <C> <i> <g> <a> <space>     : "ᒐ"  U1490  # CANADIAN SYLLABICS CA
+<Multi_key> <C> <i> <g> <a> <a> <space> : "ᒑ"  U1491  # CANADIAN SYLLABICS CAA
+<Multi_key> <C> <i> <g> <space>         : "ᒡ"  U14A1  # CANADIAN SYLLABICS C
 
-<Multi_key> <C> <i> <m> <a> <i> : "ᒣ" U14A3   # CANADIAN SYLLABICS ME
-<Multi_key> <C> <i> <m> <a> <a> <i> : "ᒤ" U14A4   # CANADIAN SYLLABICS MAAI
-<Multi_key> <C> <i> <m> <i> <space> : "ᒥ" U14A5   # CANADIAN SYLLABICS MI
-<Multi_key> <C> <i> <m> <i> <i> : "ᒦ" U14A6   # CANADIAN SYLLABICS MII
-<Multi_key> <C> <i> <m> <u> <space> : "ᒧ" U14A7   # CANADIAN SYLLABICS MO
-<Multi_key> <C> <i> <m> <u> <u> : "ᒨ" U14A8   # CANADIAN SYLLABICS MOO
-<Multi_key> <C> <i> <m> <a> <space> : "ᒪ" U14AA   # CANADIAN SYLLABICS MA
-<Multi_key> <C> <i> <m> <a> <a> <space> : "ᒫ" U14AB   # CANADIAN SYLLABICS MAA
-<Multi_key> <C> <i> <m> <space> : "ᒻ" U14BB   # CANADIAN SYLLABICS M
+<Multi_key> <C> <i> <m> <a> <i>         : "ᒣ"  U14A3  # CANADIAN SYLLABICS ME
+<Multi_key> <C> <i> <m> <a> <a> <i>     : "ᒤ"  U14A4  # CANADIAN SYLLABICS MAAI
+<Multi_key> <C> <i> <m> <i> <space>     : "ᒥ"  U14A5  # CANADIAN SYLLABICS MI
+<Multi_key> <C> <i> <m> <i> <i>         : "ᒦ"  U14A6  # CANADIAN SYLLABICS MII
+<Multi_key> <C> <i> <m> <u> <space>     : "ᒧ"  U14A7  # CANADIAN SYLLABICS MO
+<Multi_key> <C> <i> <m> <u> <u>         : "ᒨ"  U14A8  # CANADIAN SYLLABICS MOO
+<Multi_key> <C> <i> <m> <a> <space>     : "ᒪ"  U14AA  # CANADIAN SYLLABICS MA
+<Multi_key> <C> <i> <m> <a> <a> <space> : "ᒫ"  U14AB  # CANADIAN SYLLABICS MAA
+<Multi_key> <C> <i> <m> <space>         : "ᒻ"  U14BB  # CANADIAN SYLLABICS M
 
-<Multi_key> <C> <i> <n> <a> <i> : "ᓀ" U14C0   # CANADIAN SYLLABICS NE
-<Multi_key> <C> <i> <n> <a> <a> <i> : "ᓁ" U14C1   # CANADIAN SYLLABICS NAAI
-<Multi_key> <C> <i> <n> <i> <space> : "ᓂ" U14C2   # CANADIAN SYLLABICS NI
-<Multi_key> <C> <i> <n> <i> <i> : "ᓃ" U14C3   # CANADIAN SYLLABICS NII
-<Multi_key> <C> <i> <n> <u> <space> : "ᓄ" U14C4   # CANADIAN SYLLABICS NO
-<Multi_key> <C> <i> <n> <u> <u> : "ᓅ" U14C5   # CANADIAN SYLLABICS NOO
-<Multi_key> <C> <i> <n> <a> <space> : "ᓇ" U14C7   # CANADIAN SYLLABICS NA
-<Multi_key> <C> <i> <n> <a> <a> <space> : "ᓈ" U14C8   # CANADIAN SYLLABICS NAA
-<Multi_key> <C> <i> <n> <space> : "ᓐ" U14D0   # CANADIAN SYLLABICS N
+<Multi_key> <C> <i> <n> <a> <i>         : "ᓀ"  U14C0  # CANADIAN SYLLABICS NE
+<Multi_key> <C> <i> <n> <a> <a> <i>     : "ᓁ"  U14C1  # CANADIAN SYLLABICS NAAI
+<Multi_key> <C> <i> <n> <i> <space>     : "ᓂ"  U14C2  # CANADIAN SYLLABICS NI
+<Multi_key> <C> <i> <n> <i> <i>         : "ᓃ"  U14C3  # CANADIAN SYLLABICS NII
+<Multi_key> <C> <i> <n> <u> <space>     : "ᓄ"  U14C4  # CANADIAN SYLLABICS NO
+<Multi_key> <C> <i> <n> <u> <u>         : "ᓅ"  U14C5  # CANADIAN SYLLABICS NOO
+<Multi_key> <C> <i> <n> <a> <space>     : "ᓇ"  U14C7  # CANADIAN SYLLABICS NA
+<Multi_key> <C> <i> <n> <a> <a> <space> : "ᓈ"  U14C8  # CANADIAN SYLLABICS NAA
+<Multi_key> <C> <i> <n> <space>         : "ᓐ"  U14D0  # CANADIAN SYLLABICS N
 
-<Multi_key> <C> <i> <s> <a> <i> : "ᓭ" U14ED   # CANADIAN SYLLABICS SE
-<Multi_key> <C> <i> <s> <a> <a> <i> : "ᓮ" U14EE   # CANADIAN SYLLABICS SAAI
-<Multi_key> <C> <i> <s> <i> <space> : "ᓯ" U14EF   # CANADIAN SYLLABICS SI
-<Multi_key> <C> <i> <s> <i> <i> : "ᓰ" U14F0   # CANADIAN SYLLABICS SII
-<Multi_key> <C> <i> <s> <u> <space> : "ᓱ" U14F1   # CANADIAN SYLLABICS SO
-<Multi_key> <C> <i> <s> <u> <u> : "ᓲ" U14F2   # CANADIAN SYLLABICS SOO
-<Multi_key> <C> <i> <s> <a> <space> : "ᓴ" U14F4   # CANADIAN SYLLABICS SA
-<Multi_key> <C> <i> <s> <a> <a> <space> : "ᓵ" U14F5   # CANADIAN SYLLABICS SAA
-<Multi_key> <C> <i> <s> <space> : "ᔅ" U1505   # CANADIAN SYLLABICS S
+<Multi_key> <C> <i> <s> <a> <i>         : "ᓭ"  U14ED  # CANADIAN SYLLABICS SE
+<Multi_key> <C> <i> <s> <a> <a> <i>     : "ᓮ"  U14EE  # CANADIAN SYLLABICS SAAI
+<Multi_key> <C> <i> <s> <i> <space>     : "ᓯ"  U14EF  # CANADIAN SYLLABICS SI
+<Multi_key> <C> <i> <s> <i> <i>         : "ᓰ"  U14F0  # CANADIAN SYLLABICS SII
+<Multi_key> <C> <i> <s> <u> <space>     : "ᓱ"  U14F1  # CANADIAN SYLLABICS SO
+<Multi_key> <C> <i> <s> <u> <u>         : "ᓲ"  U14F2  # CANADIAN SYLLABICS SOO
+<Multi_key> <C> <i> <s> <a> <space>     : "ᓴ"  U14F4  # CANADIAN SYLLABICS SA
+<Multi_key> <C> <i> <s> <a> <a> <space> : "ᓵ"  U14F5  # CANADIAN SYLLABICS SAA
+<Multi_key> <C> <i> <s> <space>         : "ᔅ"  U1505  # CANADIAN SYLLABICS S
 
-<Multi_key> <C> <i> <l> <a> <i> : "ᓓ" U14D3   # CANADIAN SYLLABICS LE
-<Multi_key> <C> <i> <l> <a> <a> <i> : "ᓔ" U14D4   # CANADIAN SYLLABICS LAAI
-<Multi_key> <C> <i> <l> <i> <space> : "ᓕ" U14D5   # CANADIAN SYLLABICS LI
-<Multi_key> <C> <i> <l> <i> <i> : "ᓖ" U14D6   # CANADIAN SYLLABICS LII
-<Multi_key> <C> <i> <l> <u> <space> : "ᓗ" U14D7   # CANADIAN SYLLABICS LO
-<Multi_key> <C> <i> <l> <u> <u> : "ᓘ" U14D8   # CANADIAN SYLLABICS LOO
-<Multi_key> <C> <i> <l> <a> <space> : "ᓚ" U14DA   # CANADIAN SYLLABICS LA
-<Multi_key> <C> <i> <l> <a> <a> <space> : "ᓛ" U14DB   # CANADIAN SYLLABICS LAA
-<Multi_key> <C> <i> <l> <space> : "ᓪ" U14EA   # CANADIAN SYLLABICS L
+<Multi_key> <C> <i> <l> <a> <i>         : "ᓓ"  U14D3  # CANADIAN SYLLABICS LE
+<Multi_key> <C> <i> <l> <a> <a> <i>     : "ᓔ"  U14D4  # CANADIAN SYLLABICS LAAI
+<Multi_key> <C> <i> <l> <i> <space>     : "ᓕ"  U14D5  # CANADIAN SYLLABICS LI
+<Multi_key> <C> <i> <l> <i> <i>         : "ᓖ"  U14D6  # CANADIAN SYLLABICS LII
+<Multi_key> <C> <i> <l> <u> <space>     : "ᓗ"  U14D7  # CANADIAN SYLLABICS LO
+<Multi_key> <C> <i> <l> <u> <u>         : "ᓘ"  U14D8  # CANADIAN SYLLABICS LOO
+<Multi_key> <C> <i> <l> <a> <space>     : "ᓚ"  U14DA  # CANADIAN SYLLABICS LA
+<Multi_key> <C> <i> <l> <a> <a> <space> : "ᓛ"  U14DB  # CANADIAN SYLLABICS LAA
+<Multi_key> <C> <i> <l> <space>         : "ᓪ"  U14EA  # CANADIAN SYLLABICS L
 
-<Multi_key> <C> <i> <j> <a> <i> : "ᔦ" U1526   # CANADIAN SYLLABICS YE
-<Multi_key> <C> <i> <j> <a> <a> <i> : "ᔧ" U1527   # CANADIAN SYLLABICS YAAI
-<Multi_key> <C> <i> <j> <i> <space> : "ᔨ" U1528   # CANADIAN SYLLABICS YI
-<Multi_key> <C> <i> <j> <i> <i> : "ᔩ" U1529   # CANADIAN SYLLABICS YII
-<Multi_key> <C> <i> <j> <u> <space> : "ᔪ" U152A   # CANADIAN SYLLABICS YO
-<Multi_key> <C> <i> <j> <u> <u> : "ᔫ" U152B   # CANADIAN SYLLABICS YOO
-<Multi_key> <C> <i> <j> <a> <space> : "ᔭ" U152D   # CANADIAN SYLLABICS YA
-<Multi_key> <C> <i> <j> <a> <a> <space> : "ᔮ" U152E   # CANADIAN SYLLABICS YAA
-<Multi_key> <C> <i> <j> <space> : "ᔾ" U153E   # CANADIAN SYLLABICS Y
+<Multi_key> <C> <i> <j> <a> <i>         : "ᔦ"  U1526  # CANADIAN SYLLABICS YE
+<Multi_key> <C> <i> <j> <a> <a> <i>     : "ᔧ"  U1527  # CANADIAN SYLLABICS YAAI
+<Multi_key> <C> <i> <j> <i> <space>     : "ᔨ"  U1528  # CANADIAN SYLLABICS YI
+<Multi_key> <C> <i> <j> <i> <i>         : "ᔩ"  U1529  # CANADIAN SYLLABICS YII
+<Multi_key> <C> <i> <j> <u> <space>     : "ᔪ"  U152A  # CANADIAN SYLLABICS YO
+<Multi_key> <C> <i> <j> <u> <u>         : "ᔫ"  U152B  # CANADIAN SYLLABICS YOO
+<Multi_key> <C> <i> <j> <a> <space>     : "ᔭ"  U152D  # CANADIAN SYLLABICS YA
+<Multi_key> <C> <i> <j> <a> <a> <space> : "ᔮ"  U152E  # CANADIAN SYLLABICS YAA
+<Multi_key> <C> <i> <j> <space>         : "ᔾ"  U153E  # CANADIAN SYLLABICS Y
 
-<Multi_key> <C> <i> <v> <a> <i> : "ᕓ" U1553   # CANADIAN SYLLABICS FE
-<Multi_key> <C> <i> <v> <a> <a> <i> : "ᕔ" U1554   # CANADIAN SYLLABICS FAAI
-<Multi_key> <C> <i> <v> <i> <space> : "ᕕ" U1555   # CANADIAN SYLLABICS FI
-<Multi_key> <C> <i> <v> <i> <i> : "ᕖ" U1556   # CANADIAN SYLLABICS FII
-<Multi_key> <C> <i> <v> <u> <space> : "ᕗ" U1557   # CANADIAN SYLLABICS FO
-<Multi_key> <C> <i> <v> <u> <u> : "ᕘ" U1558   # CANADIAN SYLLABICS FOO
-<Multi_key> <C> <i> <v> <a> <space> : "ᕙ" U1559   # CANADIAN SYLLABICS FA
-<Multi_key> <C> <i> <v> <a> <a> <space> : "ᕚ" U155A   # CANADIAN SYLLABICS FAA
-<Multi_key> <C> <i> <v> <space> : "ᕝ" U155D   # CANADIAN SYLLABICS F
+<Multi_key> <C> <i> <v> <a> <i>         : "ᕓ"  U1553  # CANADIAN SYLLABICS FE
+<Multi_key> <C> <i> <v> <a> <a> <i>     : "ᕔ"  U1554  # CANADIAN SYLLABICS FAAI
+<Multi_key> <C> <i> <v> <i> <space>     : "ᕕ"  U1555  # CANADIAN SYLLABICS FI
+<Multi_key> <C> <i> <v> <i> <i>         : "ᕖ"  U1556  # CANADIAN SYLLABICS FII
+<Multi_key> <C> <i> <v> <u> <space>     : "ᕗ"  U1557  # CANADIAN SYLLABICS FO
+<Multi_key> <C> <i> <v> <u> <u>         : "ᕘ"  U1558  # CANADIAN SYLLABICS FOO
+<Multi_key> <C> <i> <v> <a> <space>     : "ᕙ"  U1559  # CANADIAN SYLLABICS FA
+<Multi_key> <C> <i> <v> <a> <a> <space> : "ᕚ"  U155A  # CANADIAN SYLLABICS FAA
+<Multi_key> <C> <i> <v> <space>         : "ᕝ"  U155D  # CANADIAN SYLLABICS F
 
-<Multi_key> <C> <i> <r> <a> <i> : "ᕃ" U1543   # CANADIAN SYLLABICS R-CREE RE
-<Multi_key> <C> <i> <r> <a> <a> <i> : "ᕅ" U1545   # CANADIAN SYLLABICS RAAI
-<Multi_key> <C> <i> <r> <i> <space> : "ᕆ" U1546   # CANADIAN SYLLABICS RI
-<Multi_key> <C> <i> <r> <i> <i> : "ᕇ" U1547   # CANADIAN SYLLABICS RII
-<Multi_key> <C> <i> <r> <u> <space> : "ᕈ" U1548   # CANADIAN SYLLABICS RO
-<Multi_key> <C> <i> <r> <u> <u> : "ᕉ" U1549   # CANADIAN SYLLABICS ROO
-<Multi_key> <C> <i> <r> <a> <space> : "ᕋ" U154B   # CANADIAN SYLLABICS RA
-<Multi_key> <C> <i> <r> <a> <a> <space> : "ᕌ" U154C   # CANADIAN SYLLABICS RAA
-<Multi_key> <C> <i> <r> <space> : "ᕐ" U1550   # CANADIAN SYLLABICS R
+<Multi_key> <C> <i> <r> <a> <i>         : "ᕃ"  U1543  # CANADIAN SYLLABICS R-CREE RE
+<Multi_key> <C> <i> <r> <a> <a> <i>     : "ᕅ"  U1545  # CANADIAN SYLLABICS RAAI
+<Multi_key> <C> <i> <r> <i> <space>     : "ᕆ"  U1546  # CANADIAN SYLLABICS RI
+<Multi_key> <C> <i> <r> <i> <i>         : "ᕇ"  U1547  # CANADIAN SYLLABICS RII
+<Multi_key> <C> <i> <r> <u> <space>     : "ᕈ"  U1548  # CANADIAN SYLLABICS RO
+<Multi_key> <C> <i> <r> <u> <u>         : "ᕉ"  U1549  # CANADIAN SYLLABICS ROO
+<Multi_key> <C> <i> <r> <a> <space>     : "ᕋ"  U154B  # CANADIAN SYLLABICS RA
+<Multi_key> <C> <i> <r> <a> <a> <space> : "ᕌ"  U154C  # CANADIAN SYLLABICS RAA
+<Multi_key> <C> <i> <r> <space>         : "ᕐ"  U1550  # CANADIAN SYLLABICS R
 
-<Multi_key> <C> <i> <q> <a> <i> : "ᙯ" U166F   # CANADIAN SYLLABICS QAI
-<Multi_key> <C> <i> <q> <a> <a> <i> : "ᕾ" U157E   # CANADIAN SYLLABICS QAAI
-<Multi_key> <C> <i> <q> <i> <space> : "ᕿ" U157F   # CANADIAN SYLLABICS QI
-<Multi_key> <C> <i> <q> <i> <i> : "ᖀ" U1580   # CANADIAN SYLLABICS QII
-<Multi_key> <C> <i> <q> <u> <space> : "ᖁ" U1581   # CANADIAN SYLLABICS QO
-<Multi_key> <C> <i> <q> <u> <u> : "ᖂ" U1582   # CANADIAN SYLLABICS QOO
-<Multi_key> <C> <i> <q> <a> <space> : "ᖃ" U1583   # CANADIAN SYLLABICS QA
-<Multi_key> <C> <i> <q> <a> <a> <space> : "ᖄ" U1584   # CANADIAN SYLLABICS QAA
-<Multi_key> <C> <i> <q> <space> : "ᖅ" U1585   # CANADIAN SYLLABICS Q
+<Multi_key> <C> <i> <q> <a> <i>         : "ᙯ"  U166F  # CANADIAN SYLLABICS QAI
+<Multi_key> <C> <i> <q> <a> <a> <i>     : "ᕾ"  U157E  # CANADIAN SYLLABICS QAAI
+<Multi_key> <C> <i> <q> <i> <space>     : "ᕿ"  U157F  # CANADIAN SYLLABICS QI
+<Multi_key> <C> <i> <q> <i> <i>         : "ᖀ"  U1580  # CANADIAN SYLLABICS QII
+<Multi_key> <C> <i> <q> <u> <space>     : "ᖁ"  U1581  # CANADIAN SYLLABICS QO
+<Multi_key> <C> <i> <q> <u> <u>         : "ᖂ"  U1582  # CANADIAN SYLLABICS QOO
+<Multi_key> <C> <i> <q> <a> <space>     : "ᖃ"  U1583  # CANADIAN SYLLABICS QA
+<Multi_key> <C> <i> <q> <a> <a> <space> : "ᖄ"  U1584  # CANADIAN SYLLABICS QAA
+<Multi_key> <C> <i> <q> <space>         : "ᖅ"  U1585  # CANADIAN SYLLABICS Q
 
-<Multi_key> <C> <i> <n> <g> <a> <i> : "ᙰ" U1670   # CANADIAN SYLLABICS NGAI
-<Multi_key> <C> <i> <n> <g> <a> <a> <i> : "ᖎ" U158E   # CANADIAN SYLLABICS NGAAI
-<Multi_key> <C> <i> <n> <g> <i> <space> : "ᖏ" U158F   # CANADIAN SYLLABICS NGI
-<Multi_key> <C> <i> <n> <g> <i> <i> : "ᖐ" U1590   # CANADIAN SYLLABICS NGII
-<Multi_key> <C> <i> <n> <g> <u> <space> : "ᖑ" U1591   # CANADIAN SYLLABICS NGO
-<Multi_key> <C> <i> <n> <g> <u> <u> : "ᖒ" U1592   # CANADIAN SYLLABICS NGOO
-<Multi_key> <C> <i> <n> <g> <a> <space> : "ᖓ" U1593   # CANADIAN SYLLABICS NGA
-<Multi_key> <C> <i> <n> <g> <a> <a> <space> : "ᖔ" U1594   # CANADIAN SYLLABICS NGAA
-<Multi_key> <C> <i> <n> <g> <space> : "ᖕ" U1595   # CANADIAN SYLLABICS NG
+<Multi_key> <C> <i> <n> <g> <a> <i>     : "ᙰ"  U1670  # CANADIAN SYLLABICS NGAI
+<Multi_key> <C> <i> <n> <g> <a> <a> <i> : "ᖎ"  U158E  # CANADIAN SYLLABICS NGAAI
+<Multi_key> <C> <i> <n> <g> <i> <space> : "ᖏ"  U158F  # CANADIAN SYLLABICS NGI
+<Multi_key> <C> <i> <n> <g> <i> <i>     : "ᖐ"  U1590  # CANADIAN SYLLABICS NGII
+<Multi_key> <C> <i> <n> <g> <u> <space> : "ᖑ"  U1591  # CANADIAN SYLLABICS NGO
+<Multi_key> <C> <i> <n> <g> <u> <u>     : "ᖒ"  U1592  # CANADIAN SYLLABICS NGOO
+<Multi_key> <C> <i> <n> <g> <a> <space> : "ᖓ"  U1593  # CANADIAN SYLLABICS NGA
+<Multi_key> <C> <i> <n> <g> <a> <a> <space> : "ᖔ"  U1594  # CANADIAN SYLLABICS NGAA
+<Multi_key> <C> <i> <n> <g> <space>     : "ᖕ"  U1595  # CANADIAN SYLLABICS NG
 
-<Multi_key> <C> <i> <n> <n> <g> <i> : "ᙱ" U1671   # CANADIAN SYLLABICS NNGI
-<Multi_key> <C> <i> <n> <n> <g> <u> : "ᙳ" U1673   # CANADIAN SYLLABICS NNGO
-<Multi_key> <C> <i> <n> <n> <g> <a> : "ᙵ" U1675   # CANADIAN SYLLABICS NNGA
-<Multi_key> <C> <i> <n> <n> <g> <space> : "ᖖ" U1596   # CANADIAN SYLLABICS NNG
+<Multi_key> <C> <i> <n> <n> <g> <i>     : "ᙱ"  U1671  # CANADIAN SYLLABICS NNGI
+<Multi_key> <C> <i> <n> <n> <g> <u>     : "ᙳ"  U1673  # CANADIAN SYLLABICS NNGO
+<Multi_key> <C> <i> <n> <n> <g> <a>     : "ᙵ"  U1675  # CANADIAN SYLLABICS NNGA
+<Multi_key> <C> <i> <n> <n> <g> <space> : "ᖖ"  U1596  # CANADIAN SYLLABICS NNG
 
-<Multi_key> <C> <i> <ampersand> <i> : "ᖠ" U15A0   # CANADIAN SYLLABICS LHI
-<Multi_key> <C> <i> <ampersand> <u> : "ᖢ" U15A2   # CANADIAN SYLLABICS LHO
-<Multi_key> <C> <i> <ampersand> <a> : "ᖤ" U15A4   # CANADIAN SYLLABICS LHA
-<Multi_key> <C> <i> <ampersand> <space> : "ᖦ" U15A6   # CANADIAN SYLLABICS LH
+<Multi_key> <C> <i> <ampersand> <i>     : "ᖠ"  U15A0  # CANADIAN SYLLABICS LHI
+<Multi_key> <C> <i> <ampersand> <u>     : "ᖢ"  U15A2  # CANADIAN SYLLABICS LHO
+<Multi_key> <C> <i> <ampersand> <a>     : "ᖤ"  U15A4  # CANADIAN SYLLABICS LHA
+<Multi_key> <C> <i> <ampersand> <space> : "ᖦ"  U15A6  # CANADIAN SYLLABICS LH
 
-<Multi_key> <C> <i> <h> <a> <i> : "ᕴ" U1574   # CANADIAN SYLLABICS NUNAVIK HE
-<Multi_key> <C> <i> <h> <i> : "ᕵ" U1575   # CANADIAN SYLLABICS NUNAVIK HI
-<Multi_key> <C> <i> <h> <u> : "ᕷ" U1577   # CANADIAN SYLLABICS NUNAVIK HO
-<Multi_key> <C> <i> <h> <a> <space> : "ᕹ" U1579   # CANADIAN SYLLABICS NUNAVIK HA
-<Multi_key> <C> <i> <h> <space> : "ᕻ" U157B   # CANADIAN SYLLABICS NUNAVIK H
-<Multi_key> <C> <i> <H> : "ᕼ" U157C   # CANADIAN SYLLABICS NUNAVUT H
+<Multi_key> <C> <i> <h> <a> <i>         : "ᕴ"  U1574  # CANADIAN SYLLABICS NUNAVIK HE
+<Multi_key> <C> <i> <h> <i>             : "ᕵ"  U1575  # CANADIAN SYLLABICS NUNAVIK HI
+<Multi_key> <C> <i> <h> <u>             : "ᕷ"  U1577  # CANADIAN SYLLABICS NUNAVIK HO
+<Multi_key> <C> <i> <h> <a> <space>     : "ᕹ"  U1579  # CANADIAN SYLLABICS NUNAVIK HA
+<Multi_key> <C> <i> <h> <space>         : "ᕻ"  U157B  # CANADIAN SYLLABICS NUNAVIK H
+<Multi_key> <C> <i> <H>                 : "ᕼ"  U157C  # CANADIAN SYLLABICS NUNAVUT H
 
-<Multi_key> <C> <i> <minus> : "᐀" U1400   # CANADIAN SYLLABICS HYPHEN
-<Multi_key> <C> <i> <period> : "᙮" U166E   # CANADIAN SYLLABICS FULL STOP
+<Multi_key> <C> <i> <minus>             : "᐀"  U1400  # CANADIAN SYLLABICS HYPHEN
+<Multi_key> <C> <i> <period>            : "᙮"  U166E  # CANADIAN SYLLABICS FULL STOP
+
+# (m = Mru) homophonous letters use the first distinguishing character from the letter's name
+
+<Multi_key> <C> <m> <t> <a>          : "𖩀"  U16A40  # MRO LETTER TA
+<Multi_key> <C> <m> <N>              : "𖩁"  U16A41  # MRO LETTER NGI
+<Multi_key> <C> <m> <y>              : "𖩂"  U16A42  # MRO LETTER YO
+<Multi_key> <C> <m> <m> <i>          : "𖩃"  U16A43  # MRO LETTER MIM
+<Multi_key> <C> <m> <b>              : "𖩄"  U16A44  # MRO LETTER BA
+<Multi_key> <C> <m> <d>              : "𖩅"  U16A45  # MRO LETTER DA
+<Multi_key> <C> <m> <a>              : "𖩆"  U16A46  # MRO LETTER A
+<Multi_key> <C> <m> <P>              : "𖩇"  U16A47  # MRO LETTER PHI
+<Multi_key> <C> <m> <K>              : "𖩈"  U16A48  # MRO LETTER KHAI
+<Multi_key> <C> <m> <h> <o>          : "𖩉"  U16A49  # MRO LETTER HAO
+<Multi_key> <C> <m> <h> <u>          : "𖩉"  U16A49  # MRO LETTER HAO
+<Multi_key> <C> <m> <i>              : "𖩊"  U16A4A  # MRO LETTER DAI
+<Multi_key> <C> <m> <c>              : "𖩋"  U16A4B  # MRO LETTER CHU
+<Multi_key> <C> <m> <k> <e>          : "𖩌"  U16A4C  # MRO LETTER KEAAE
+<Multi_key> <C> <m> <k> <a>          : "𖩌"  U16A4C  # MRO LETTER KEAAE
+<Multi_key> <C> <m> <l> <o>          : "𖩍"  U16A4D  # MRO LETTER OL
+<Multi_key> <C> <m> <m> <a>          : "𖩎"  U16A4E  # MRO LETTER MAEM
+<Multi_key> <C> <m> <n>              : "𖩏"  U16A4F  # MRO LETTER NIN
+<Multi_key> <C> <m> <p>              : "𖩐"  U16A50  # MRO LETTER PA
+<Multi_key> <C> <m> <u>              : "𖩑"  U16A51  # MRO LETTER OO
+<Multi_key> <C> <m> <apostrophe>     : "𖩒"  U16A52  # MRO LETTER O
+<Multi_key> <C> <m> <r>              : "𖩓"  U16A53  # MRO LETTER RO
+<Multi_key> <C> <m> <S>              : "𖩔"  U16A54  # MRO LETTER SHI
+<Multi_key> <C> <m> <T>              : "𖩕"  U16A55  # MRO LETTER THEA
+<Multi_key> <C> <m> <E>              : "𖩖"  U16A56  # MRO LETTER EA
+<Multi_key> <C> <m> <U>              : "𖩗"  U16A57  # MRO LETTER WA
+<Multi_key> <C> <m> <w>              : "𖩗"  U16A57  # MRO LETTER WA
+<Multi_key> <C> <m> <e>              : "𖩘"  U16A58  # MRO LETTER E
+<Multi_key> <C> <m> <k> <o>          : "𖩙"  U16A59  # MRO LETTER KO
+<Multi_key> <C> <m> <l> <n>          : "𖩚"  U16A5A  # MRO LETTER LAN
+<Multi_key> <C> <m> <l> <a>          : "𖩛"  U16A5B  # MRO LETTER LA
+<Multi_key> <C> <m> <h> <i>          : "𖩜"  U16A5C  # MRO LETTER HAI
+<Multi_key> <C> <m> <o>              : "𖩝"  U16A5D  # MRO LETTER RI
+<Multi_key> <C> <m> <t> <e>          : "𖩞"  U16A5E  # MRO LETTER TEK
+
+<Multi_key> <C> <m> <numbersign> <0> : "𖩠"  U16A60  # MRO DIGIT ZERO
+<Multi_key> <C> <m> <numbersign> <1> : "𖩡"  U16A61  # MRO DIGIT ONE
+<Multi_key> <C> <m> <numbersign> <2> : "𖩢"  U16A62  # MRO DIGIT TWO
+<Multi_key> <C> <m> <numbersign> <3> : "𖩣"  U16A63  # MRO DIGIT THREE
+<Multi_key> <C> <m> <numbersign> <4> : "𖩤"  U16A64  # MRO DIGIT FOUR
+<Multi_key> <C> <m> <numbersign> <5> : "𖩥"  U16A65  # MRO DIGIT FIVE
+<Multi_key> <C> <m> <numbersign> <6> : "𖩦"  U16A66  # MRO DIGIT SIX
+<Multi_key> <C> <m> <numbersign> <7> : "𖩧"  U16A67  # MRO DIGIT SEVEN
+<Multi_key> <C> <m> <numbersign> <8> : "𖩨"  U16A68  # MRO DIGIT EIGHT
+<Multi_key> <C> <m> <numbersign> <9> : "𖩩"  U16A69  # MRO DIGIT NINE
+
+<Multi_key> <C> <m> <bar>            : "𖩮"  U16A6E  # MRO DANDA
+<Multi_key> <C> <m> <2> <bar>        : "𖩯"  U16A6F  # MRO DOUBLE DANDA
+
+# (n = Nyiakeng Puachue Hmong)
+
+<Multi_key> <C> <n> <m> <space>          : "𞄀"  U1E100  # NYIAKENG PUACHUE HMONG LETTER MA
+<Multi_key> <C> <n> <t> <s>              : "𞄁"  U1E101  # NYIAKENG PUACHUE HMONG LETTER TSA
+<Multi_key> <C> <n> <n> <t> <space>      : "𞄂"  U1E102  # NYIAKENG PUACHUE HMONG LETTER NTA
+<Multi_key> <C> <n> <t> <space>          : "𞄃"  U1E103  # NYIAKENG PUACHUE HMONG LETTER TA
+<Multi_key> <C> <n> <h>                  : "𞄄"  U1E104  # NYIAKENG PUACHUE HMONG LETTER HA
+<Multi_key> <C> <n> <n> <space>          : "𞄅"  U1E105  # NYIAKENG PUACHUE HMONG LETTER NA
+<Multi_key> <C> <n> <x> <space>          : "𞄆"  U1E106  # NYIAKENG PUACHUE HMONG LETTER XA
+<Multi_key> <C> <n> <n> <k>              : "𞄇"  U1E107  # NYIAKENG PUACHUE HMONG LETTER NKA
+<Multi_key> <C> <n> <c>                  : "𞄈"  U1E108  # NYIAKENG PUACHUE HMONG LETTER CA
+<Multi_key> <C> <n> <l>                  : "𞄉"  U1E109  # NYIAKENG PUACHUE HMONG LETTER LA
+<Multi_key> <C> <n> <s>                  : "𞄊"  U1E10A  # NYIAKENG PUACHUE HMONG LETTER SA
+<Multi_key> <C> <n> <z>                  : "𞄋"  U1E10B  # NYIAKENG PUACHUE HMONG LETTER ZA
+<Multi_key> <C> <n> <n> <c>              : "𞄌"  U1E10C  # NYIAKENG PUACHUE HMONG LETTER NCA
+<Multi_key> <C> <n> <n> <t> <s>          : "𞄍"  U1E10D  # NYIAKENG PUACHUE HMONG LETTER NTSA
+<Multi_key> <C> <n> <k>                  : "𞄎"  U1E10E  # NYIAKENG PUACHUE HMONG LETTER KA
+<Multi_key> <C> <n> <d> <space>          : "𞄏"  U1E10F  # NYIAKENG PUACHUE HMONG LETTER DA
+<Multi_key> <C> <n> <n> <y>              : "𞄐"  U1E110  # NYIAKENG PUACHUE HMONG LETTER NYA
+<Multi_key> <C> <n> <n> <r>              : "𞄑"  U1E111  # NYIAKENG PUACHUE HMONG LETTER NRA
+<Multi_key> <C> <n> <v>                  : "𞄒"  U1E112  # NYIAKENG PUACHUE HMONG LETTER VA
+<Multi_key> <C> <n> <n> <t> <x>          : "𞄓"  U1E113  # NYIAKENG PUACHUE HMONG LETTER NTXA
+<Multi_key> <C> <n> <t> <x>              : "𞄔"  U1E114  # NYIAKENG PUACHUE HMONG LETTER TXA
+<Multi_key> <C> <n> <f>                  : "𞄕"  U1E115  # NYIAKENG PUACHUE HMONG LETTER FA
+<Multi_key> <C> <n> <r> <space>          : "𞄖"  U1E116  # NYIAKENG PUACHUE HMONG LETTER RA
+<Multi_key> <C> <n> <q>                  : "𞄗"  U1E117  # NYIAKENG PUACHUE HMONG LETTER QA
+<Multi_key> <C> <n> <y>                  : "𞄘"  U1E118  # NYIAKENG PUACHUE HMONG LETTER YA
+<Multi_key> <C> <n> <n> <q>              : "𞄙"  U1E119  # NYIAKENG PUACHUE HMONG LETTER NQA
+<Multi_key> <C> <n> <p> <space>          : "𞄚"  U1E11A  # NYIAKENG PUACHUE HMONG LETTER PA
+<Multi_key> <C> <n> <x> <y>              : "𞄛"  U1E11B  # NYIAKENG PUACHUE HMONG LETTER XYA
+<Multi_key> <C> <n> <n> <p> <space>      : "𞄜"  U1E11C  # NYIAKENG PUACHUE HMONG LETTER NPA
+<Multi_key> <C> <n> <d> <l>              : "𞄝"  U1E11D  # NYIAKENG PUACHUE HMONG LETTER DLA
+<Multi_key> <C> <n> <n> <p> <l>          : "𞄞"  U1E11E  # NYIAKENG PUACHUE HMONG LETTER NPLA
+<Multi_key> <C> <n> <apostrophe>         : "𞄟"  U1E11F  # NYIAKENG PUACHUE HMONG LETTER HAH
+<Multi_key> <C> <n> <m> <l>              : "𞄠"  U1E120  # NYIAKENG PUACHUE HMONG LETTER MLA
+<Multi_key> <C> <n> <p> <l>              : "𞄡"  U1E121  # NYIAKENG PUACHUE HMONG LETTER PLA
+<Multi_key> <C> <n> <g>                  : "𞄢"  U1E122  # NYIAKENG PUACHUE HMONG LETTER GA
+<Multi_key> <C> <n> <r> <r>              : "𞄣"  U1E123  # NYIAKENG PUACHUE HMONG LETTER RRA
+
+<Multi_key> <C> <n> <a>                  : "𞄤"  U1E124  # NYIAKENG PUACHUE HMONG LETTER A
+<Multi_key> <C> <n> <minus> <a>          : "𞄥"  U1E125  # NYIAKENG PUACHUE HMONG LETTER AA
+<Multi_key> <C> <n> <i>                  : "𞄦"  U1E126  # NYIAKENG PUACHUE HMONG LETTER I
+<Multi_key> <C> <n> <u>                  : "𞄧"  U1E127  # NYIAKENG PUACHUE HMONG LETTER U
+<Multi_key> <C> <n> <o>                  : "𞄨"  U1E128  # NYIAKENG PUACHUE HMONG LETTER O
+<Multi_key> <C> <n> <minus> <o>          : "𞄩"  U1E129  # NYIAKENG PUACHUE HMONG LETTER OO
+<Multi_key> <C> <n> <e>                  : "𞄪"  U1E12A  # NYIAKENG PUACHUE HMONG LETTER E
+<Multi_key> <C> <n> <minus> <e>          : "𞄫"  U1E12B  # NYIAKENG PUACHUE HMONG LETTER EE
+<Multi_key> <C> <n> <w>                  : "𞄬"  U1E12C  # NYIAKENG PUACHUE HMONG LETTER W
+
+<Multi_key> <C> <n> <bar> <Return>       : "𞄰"  U1E130  # NYIAKENG PUACHUE HMONG TONE-B
+<Multi_key> <C> <n> <period> <minus> <Return> : "𞄱"  U1E131  # NYIAKENG PUACHUE HMONG TONE-M
+<Multi_key> <C> <n> <parenright> <Return> : "𞄲"  U1E132  # NYIAKENG PUACHUE HMONG TONE-J
+<Multi_key> <C> <n> <0> <Return>         : "𞄳"  U1E133  # NYIAKENG PUACHUE HMONG TONE-V
+<Multi_key> <C> <n> <minus> <Return>     : "𞄴"  U1E134  # NYIAKENG PUACHUE HMONG TONE-S
+<Multi_key> <C> <n> <parenleft> <Return> : "𞄵"  U1E135  # NYIAKENG PUACHUE HMONG TONE-G
+<Multi_key> <C> <n> <bar> <o> <Return>   : "𞄶"  U1E136  # NYIAKENG PUACHUE HMONG TONE-D
+
+<Multi_key> <C> <n> <numbersign> <0>     : "𞅀"  U1E140  # NYIAKENG PUACHUE HMONG DIGIT ZERO
+<Multi_key> <C> <n> <numbersign> <1>     : "𞅁"  U1E141  # NYIAKENG PUACHUE HMONG DIGIT ONE
+<Multi_key> <C> <n> <numbersign> <2>     : "𞅂"  U1E142  # NYIAKENG PUACHUE HMONG DIGIT TWO
+<Multi_key> <C> <n> <numbersign> <3>     : "𞅃"  U1E143  # NYIAKENG PUACHUE HMONG DIGIT THREE
+<Multi_key> <C> <n> <numbersign> <4>     : "𞅄"  U1E144  # NYIAKENG PUACHUE HMONG DIGIT FOUR
+<Multi_key> <C> <n> <numbersign> <5>     : "𞅅"  U1E145  # NYIAKENG PUACHUE HMONG DIGIT FIVE
+<Multi_key> <C> <n> <numbersign> <6>     : "𞅆"  U1E146  # NYIAKENG PUACHUE HMONG DIGIT SIX
+<Multi_key> <C> <n> <numbersign> <7>     : "𞅇"  U1E147  # NYIAKENG PUACHUE HMONG DIGIT SEVEN
+<Multi_key> <C> <n> <numbersign> <8>     : "𞅈"  U1E148  # NYIAKENG PUACHUE HMONG DIGIT EIGHT
+<Multi_key> <C> <n> <numbersign> <9>     : "𞅉"  U1E149  # NYIAKENG PUACHUE HMONG DIGIT NINE
 
 # (o = Ol Chiki) ALA-LC transliteration
 
@@ -6188,6 +6360,84 @@ include "%L"
 <Multi_key> <g> <numbersign> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
 <Multi_key> <g> <numbersign> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
 
+# (B = Linear B)
+
+<Multi_key> <g> <B> <a> : "𐀀"  U10000  # LINEAR B SYLLABLE B008 A
+<Multi_key> <g> <B> <e> : "𐀁"  U10001  # LINEAR B SYLLABLE B038 E
+<Multi_key> <g> <B> <i> : "𐀂"  U10002  # LINEAR B SYLLABLE B028 I
+<Multi_key> <g> <B> <o> : "𐀃"  U10003  # LINEAR B SYLLABLE B061 O
+<Multi_key> <g> <B> <u> : "𐀄"  U10004  # LINEAR B SYLLABLE B010 U
+<Multi_key> <g> <B> <d> <a> : "𐀅"  U10005  # LINEAR B SYLLABLE B001 DA
+<Multi_key> <g> <B> <d> <e> : "𐀆"  U10006  # LINEAR B SYLLABLE B045 DE
+<Multi_key> <g> <B> <d> <i> : "𐀇"  U10007  # LINEAR B SYLLABLE B007 DI
+<Multi_key> <g> <B> <d> <o> : "𐀈"  U10008  # LINEAR B SYLLABLE B014 DO
+<Multi_key> <g> <B> <d> <u> : "𐀉"  U10009  # LINEAR B SYLLABLE B051 DU
+<Multi_key> <g> <B> <j> <a> : "𐀊"  U1000A  # LINEAR B SYLLABLE B057 JA
+<Multi_key> <g> <B> <j> <e> : "𐀋"  U1000B  # LINEAR B SYLLABLE B046 JE
+<Multi_key> <g> <B> <j> <o> : "𐀍"  U1000D  # LINEAR B SYLLABLE B036 JO
+<Multi_key> <g> <B> <j> <u> : "𐀎"  U1000E  # LINEAR B SYLLABLE B065 JU
+<Multi_key> <g> <B> <k> <a> : "𐀏"  U1000F  # LINEAR B SYLLABLE B077 KA
+<Multi_key> <g> <B> <k> <e> : "𐀐"  U10010  # LINEAR B SYLLABLE B044 KE
+<Multi_key> <g> <B> <k> <i> : "𐀑"  U10011  # LINEAR B SYLLABLE B067 KI
+<Multi_key> <g> <B> <k> <o> : "𐀒"  U10012  # LINEAR B SYLLABLE B070 KO
+<Multi_key> <g> <B> <k> <u> : "𐀓"  U10013  # LINEAR B SYLLABLE B081 KU
+<Multi_key> <g> <B> <m> <a> : "𐀔"  U10014  # LINEAR B SYLLABLE B080 MA
+<Multi_key> <g> <B> <m> <e> : "𐀕"  U10015  # LINEAR B SYLLABLE B013 ME
+<Multi_key> <g> <B> <m> <i> : "𐀖"  U10016  # LINEAR B SYLLABLE B073 MI
+<Multi_key> <g> <B> <m> <o> : "𐀗"  U10017  # LINEAR B SYLLABLE B015 MO
+<Multi_key> <g> <B> <m> <u> : "𐀘"  U10018  # LINEAR B SYLLABLE B023 MU
+<Multi_key> <g> <B> <n> <a> : "𐀙"  U10019  # LINEAR B SYLLABLE B006 NA
+<Multi_key> <g> <B> <n> <e> : "𐀚"  U1001A  # LINEAR B SYLLABLE B024 NE
+<Multi_key> <g> <B> <n> <i> : "𐀛"  U1001B  # LINEAR B SYLLABLE B030 NI
+<Multi_key> <g> <B> <n> <o> : "𐀜"  U1001C  # LINEAR B SYLLABLE B052 NO
+<Multi_key> <g> <B> <n> <u> : "𐀝"  U1001D  # LINEAR B SYLLABLE B055 NU
+<Multi_key> <g> <B> <p> <a> : "𐀞"  U1001E  # LINEAR B SYLLABLE B003 PA
+<Multi_key> <g> <B> <p> <e> : "𐀟"  U1001F  # LINEAR B SYLLABLE B072 PE
+<Multi_key> <g> <B> <p> <i> : "𐀠"  U10020  # LINEAR B SYLLABLE B039 PI
+<Multi_key> <g> <B> <p> <o> : "𐀡"  U10021  # LINEAR B SYLLABLE B011 PO
+<Multi_key> <g> <B> <p> <u> : "𐀢"  U10022  # LINEAR B SYLLABLE B050 PU
+<Multi_key> <g> <B> <q> <a> : "𐀣"  U10023  # LINEAR B SYLLABLE B016 QA
+<Multi_key> <g> <B> <q> <e> : "𐀤"  U10024  # LINEAR B SYLLABLE B078 QE
+<Multi_key> <g> <B> <q> <i> : "𐀥"  U10025  # LINEAR B SYLLABLE B021 QI
+<Multi_key> <g> <B> <q> <o> : "𐀦"  U10026  # LINEAR B SYLLABLE B032 QO
+<Multi_key> <g> <B> <r> <a> : "𐀨"  U10028  # LINEAR B SYLLABLE B060 RA
+<Multi_key> <g> <B> <r> <e> : "𐀩"  U10029  # LINEAR B SYLLABLE B027 RE
+<Multi_key> <g> <B> <r> <i> : "𐀪"  U1002A  # LINEAR B SYLLABLE B053 RI
+<Multi_key> <g> <B> <r> <o> : "𐀫"  U1002B  # LINEAR B SYLLABLE B002 RO
+<Multi_key> <g> <B> <r> <u> : "𐀬"  U1002C  # LINEAR B SYLLABLE B026 RU
+<Multi_key> <g> <B> <s> <a> : "𐀭"  U1002D  # LINEAR B SYLLABLE B031 SA
+<Multi_key> <g> <B> <s> <e> : "𐀮"  U1002E  # LINEAR B SYLLABLE B009 SE
+<Multi_key> <g> <B> <s> <i> : "𐀯"  U1002F  # LINEAR B SYLLABLE B041 SI
+<Multi_key> <g> <B> <s> <o> : "𐀰"  U10030  # LINEAR B SYLLABLE B012 SO
+<Multi_key> <g> <B> <s> <u> : "𐀱"  U10031  # LINEAR B SYLLABLE B058 SU
+<Multi_key> <g> <B> <t> <a> : "𐀲"  U10032  # LINEAR B SYLLABLE B059 TA
+<Multi_key> <g> <B> <t> <e> : "𐀳"  U10033  # LINEAR B SYLLABLE B004 TE
+<Multi_key> <g> <B> <t> <i> : "𐀴"  U10034  # LINEAR B SYLLABLE B037 TI
+<Multi_key> <g> <B> <t> <o> : "𐀵"  U10035  # LINEAR B SYLLABLE B005 TO
+<Multi_key> <g> <B> <t> <u> : "𐀶"  U10036  # LINEAR B SYLLABLE B069 TU
+<Multi_key> <g> <B> <w> <a> : "𐀷"  U10037  # LINEAR B SYLLABLE B054 WA
+<Multi_key> <g> <B> <w> <e> : "𐀸"  U10038  # LINEAR B SYLLABLE B075 WE
+<Multi_key> <g> <B> <w> <i> : "𐀹"  U10039  # LINEAR B SYLLABLE B040 WI
+<Multi_key> <g> <B> <w> <o> : "𐀺"  U1003A  # LINEAR B SYLLABLE B042 WO
+<Multi_key> <g> <B> <z> <a> : "𐀼"  U1003C  # LINEAR B SYLLABLE B017 ZA
+<Multi_key> <g> <B> <z> <e> : "𐀽"  U1003D  # LINEAR B SYLLABLE B074 ZE
+<Multi_key> <g> <B> <z> <o> : "𐀿"  U1003F  # LINEAR B SYLLABLE B020 ZO
+
+<Multi_key> <g> <B> <A> <2> : "𐁀"  U10040  # LINEAR B SYLLABLE B025 A2
+<Multi_key> <g> <B> <A> <3> : "𐁁"  U10041  # LINEAR B SYLLABLE B043 A3
+<Multi_key> <g> <B> <A> <U> : "𐁂"  U10042  # LINEAR B SYLLABLE B085 AU
+<Multi_key> <g> <B> <D> <W> <E> : "𐁃"  U10043  # LINEAR B SYLLABLE B071 DWE
+<Multi_key> <g> <B> <D> <W> <O> : "𐁄"  U10044  # LINEAR B SYLLABLE B090 DWO
+<Multi_key> <g> <B> <N> <W> <A> : "𐁅"  U10045  # LINEAR B SYLLABLE B048 NWA
+<Multi_key> <g> <B> <P> <U> <2> : "𐁆"  U10046  # LINEAR B SYLLABLE B029 PU2
+<Multi_key> <g> <B> <P> <T> <E> : "𐁇"  U10047  # LINEAR B SYLLABLE B062 PTE
+<Multi_key> <g> <B> <R> <A> <2> : "𐁈"  U10048  # LINEAR B SYLLABLE B076 RA2
+<Multi_key> <g> <B> <R> <A> <3> : "𐁉"  U10049  # LINEAR B SYLLABLE B033 RA3
+<Multi_key> <g> <B> <R> <O> <2> : "𐁊"  U1004A  # LINEAR B SYLLABLE B068 RO2
+<Multi_key> <g> <B> <T> <A> <2> : "𐁋"  U1004B  # LINEAR B SYLLABLE B066 TA2
+<Multi_key> <g> <B> <T> <W> <E> : "𐁌"  U1004C  # LINEAR B SYLLABLE B087 TWE
+<Multi_key> <g> <B> <T> <W> <O> : "𐁍"  U1004D  # LINEAR B SYLLABLE B091 TWO
+
 # (C = Cypriot)
 
 <Multi_key> <g> <C> <a> : "𐠀"  U10800  # CYPRIOT SYLLABLE A
@@ -6245,6 +6495,39 @@ include "%L"
 <Multi_key> <g> <C> <x> <e> : "𐠸"  U10838  # CYPRIOT SYLLABLE XE
 <Multi_key> <g> <C> <z> <a> : "𐠼"  U1083C  # CYPRIOT SYLLABLE ZA
 <Multi_key> <g> <C> <z> <o> : "𐠿"  U1083F  # CYPRIOT SYLLABLE ZO
+
+# (L = Lycian) (not to be confused with hl for Lydian)
+
+<Multi_key> <g> <L> <a> : "𐊀"  U10280  # LYCIAN LETTER A
+<Multi_key> <g> <L> <e> : "𐊁"  U10281  # LYCIAN LETTER E
+<Multi_key> <g> <L> <b> : "𐊂"  U10282  # LYCIAN LETTER B
+<Multi_key> <g> <L> <B> : "𐊃"  U10283  # LYCIAN LETTER BH
+<Multi_key> <g> <L> <g> : "𐊄"  U10284  # LYCIAN LETTER G
+<Multi_key> <g> <L> <d> : "𐊅"  U10285  # LYCIAN LETTER D
+<Multi_key> <g> <L> <i> : "𐊆"  U10286  # LYCIAN LETTER I
+<Multi_key> <g> <L> <w> : "𐊇"  U10287  # LYCIAN LETTER W
+<Multi_key> <g> <L> <z> : "𐊈"  U10288  # LYCIAN LETTER Z
+<Multi_key> <g> <L> <8> : "𐊉"  U10289  # LYCIAN LETTER TH
+<Multi_key> <g> <L> <j> : "𐊊"  U1028A  # LYCIAN LETTER J
+<Multi_key> <g> <L> <y> : "𐊊"  U1028A  # LYCIAN LETTER J
+<Multi_key> <g> <L> <k> : "𐊋"  U1028B  # LYCIAN LETTER K
+<Multi_key> <g> <L> <q> : "𐊌"  U1028C  # LYCIAN LETTER Q
+<Multi_key> <g> <L> <l> : "𐊍"  U1028D  # LYCIAN LETTER L
+<Multi_key> <g> <L> <m> : "𐊎"  U1028E  # LYCIAN LETTER M
+<Multi_key> <g> <L> <n> : "𐊏"  U1028F  # LYCIAN LETTER N
+<Multi_key> <g> <L> <asciitilde> <m> : "𐊐"  U10290  # LYCIAN LETTER MM
+<Multi_key> <g> <L> <asciitilde> <n> : "𐊑"  U10291  # LYCIAN LETTER NN
+<Multi_key> <g> <L> <u> : "𐊒"  U10292  # LYCIAN LETTER U
+<Multi_key> <g> <L> <p> : "𐊓"  U10293  # LYCIAN LETTER P
+<Multi_key> <g> <L> <c> : "𐊔"  U10294  # LYCIAN LETTER KK
+<Multi_key> <g> <L> <r> : "𐊕"  U10295  # LYCIAN LETTER R
+<Multi_key> <g> <L> <s> : "𐊖"  U10296  # LYCIAN LETTER S
+<Multi_key> <g> <L> <t> : "𐊗"  U10297  # LYCIAN LETTER T
+<Multi_key> <g> <L> <T> : "𐊘"  U10298  # LYCIAN LETTER TT
+<Multi_key> <g> <L> <asciitilde> <a> : "𐊙"  U10299  # LYCIAN LETTER AN
+<Multi_key> <g> <L> <asciitilde> <e> : "𐊚"  U1029A  # LYCIAN LETTER EN
+<Multi_key> <g> <L> <h> : "𐊛"  U1029B  # LYCIAN LETTER H
+<Multi_key> <g> <L> <x> : "𐊜"  U1029C  # LYCIAN LETTER X
 
 # (p/P = Coptic) (not the best abbreviation, but think gp = egyptian)
 
@@ -6373,84 +6656,6 @@ include "%L"
 <Multi_key> <g> <G> <Multi_key> <h> <w> : "𐍈" U10348   # GOTHIC LETTER HWAIR
 <Multi_key> <g> <G> <minus> <o> : "𐍉" U10349   # GOTHIC LETTER OTHAL
 <Multi_key> <g> <G> <9> <0> <0> : "𐍊" U1034A   # GOTHIC LETTER NINE HUNDRED
-
-# (L = Linear B)
-
-<Multi_key> <g> <L> <a> : "𐀀"  U10000  # LINEAR B SYLLABLE B008 A
-<Multi_key> <g> <L> <e> : "𐀁"  U10001  # LINEAR B SYLLABLE B038 E
-<Multi_key> <g> <L> <i> : "𐀂"  U10002  # LINEAR B SYLLABLE B028 I
-<Multi_key> <g> <L> <o> : "𐀃"  U10003  # LINEAR B SYLLABLE B061 O
-<Multi_key> <g> <L> <u> : "𐀄"  U10004  # LINEAR B SYLLABLE B010 U
-<Multi_key> <g> <L> <d> <a> : "𐀅"  U10005  # LINEAR B SYLLABLE B001 DA
-<Multi_key> <g> <L> <d> <e> : "𐀆"  U10006  # LINEAR B SYLLABLE B045 DE
-<Multi_key> <g> <L> <d> <i> : "𐀇"  U10007  # LINEAR B SYLLABLE B007 DI
-<Multi_key> <g> <L> <d> <o> : "𐀈"  U10008  # LINEAR B SYLLABLE B014 DO
-<Multi_key> <g> <L> <d> <u> : "𐀉"  U10009  # LINEAR B SYLLABLE B051 DU
-<Multi_key> <g> <L> <j> <a> : "𐀊"  U1000A  # LINEAR B SYLLABLE B057 JA
-<Multi_key> <g> <L> <j> <e> : "𐀋"  U1000B  # LINEAR B SYLLABLE B046 JE
-<Multi_key> <g> <L> <j> <o> : "𐀍"  U1000D  # LINEAR B SYLLABLE B036 JO
-<Multi_key> <g> <L> <j> <u> : "𐀎"  U1000E  # LINEAR B SYLLABLE B065 JU
-<Multi_key> <g> <L> <k> <a> : "𐀏"  U1000F  # LINEAR B SYLLABLE B077 KA
-<Multi_key> <g> <L> <k> <e> : "𐀐"  U10010  # LINEAR B SYLLABLE B044 KE
-<Multi_key> <g> <L> <k> <i> : "𐀑"  U10011  # LINEAR B SYLLABLE B067 KI
-<Multi_key> <g> <L> <k> <o> : "𐀒"  U10012  # LINEAR B SYLLABLE B070 KO
-<Multi_key> <g> <L> <k> <u> : "𐀓"  U10013  # LINEAR B SYLLABLE B081 KU
-<Multi_key> <g> <L> <m> <a> : "𐀔"  U10014  # LINEAR B SYLLABLE B080 MA
-<Multi_key> <g> <L> <m> <e> : "𐀕"  U10015  # LINEAR B SYLLABLE B013 ME
-<Multi_key> <g> <L> <m> <i> : "𐀖"  U10016  # LINEAR B SYLLABLE B073 MI
-<Multi_key> <g> <L> <m> <o> : "𐀗"  U10017  # LINEAR B SYLLABLE B015 MO
-<Multi_key> <g> <L> <m> <u> : "𐀘"  U10018  # LINEAR B SYLLABLE B023 MU
-<Multi_key> <g> <L> <n> <a> : "𐀙"  U10019  # LINEAR B SYLLABLE B006 NA
-<Multi_key> <g> <L> <n> <e> : "𐀚"  U1001A  # LINEAR B SYLLABLE B024 NE
-<Multi_key> <g> <L> <n> <i> : "𐀛"  U1001B  # LINEAR B SYLLABLE B030 NI
-<Multi_key> <g> <L> <n> <o> : "𐀜"  U1001C  # LINEAR B SYLLABLE B052 NO
-<Multi_key> <g> <L> <n> <u> : "𐀝"  U1001D  # LINEAR B SYLLABLE B055 NU
-<Multi_key> <g> <L> <p> <a> : "𐀞"  U1001E  # LINEAR B SYLLABLE B003 PA
-<Multi_key> <g> <L> <p> <e> : "𐀟"  U1001F  # LINEAR B SYLLABLE B072 PE
-<Multi_key> <g> <L> <p> <i> : "𐀠"  U10020  # LINEAR B SYLLABLE B039 PI
-<Multi_key> <g> <L> <p> <o> : "𐀡"  U10021  # LINEAR B SYLLABLE B011 PO
-<Multi_key> <g> <L> <p> <u> : "𐀢"  U10022  # LINEAR B SYLLABLE B050 PU
-<Multi_key> <g> <L> <q> <a> : "𐀣"  U10023  # LINEAR B SYLLABLE B016 QA
-<Multi_key> <g> <L> <q> <e> : "𐀤"  U10024  # LINEAR B SYLLABLE B078 QE
-<Multi_key> <g> <L> <q> <i> : "𐀥"  U10025  # LINEAR B SYLLABLE B021 QI
-<Multi_key> <g> <L> <q> <o> : "𐀦"  U10026  # LINEAR B SYLLABLE B032 QO
-<Multi_key> <g> <L> <r> <a> : "𐀨"  U10028  # LINEAR B SYLLABLE B060 RA
-<Multi_key> <g> <L> <r> <e> : "𐀩"  U10029  # LINEAR B SYLLABLE B027 RE
-<Multi_key> <g> <L> <r> <i> : "𐀪"  U1002A  # LINEAR B SYLLABLE B053 RI
-<Multi_key> <g> <L> <r> <o> : "𐀫"  U1002B  # LINEAR B SYLLABLE B002 RO
-<Multi_key> <g> <L> <r> <u> : "𐀬"  U1002C  # LINEAR B SYLLABLE B026 RU
-<Multi_key> <g> <L> <s> <a> : "𐀭"  U1002D  # LINEAR B SYLLABLE B031 SA
-<Multi_key> <g> <L> <s> <e> : "𐀮"  U1002E  # LINEAR B SYLLABLE B009 SE
-<Multi_key> <g> <L> <s> <i> : "𐀯"  U1002F  # LINEAR B SYLLABLE B041 SI
-<Multi_key> <g> <L> <s> <o> : "𐀰"  U10030  # LINEAR B SYLLABLE B012 SO
-<Multi_key> <g> <L> <s> <u> : "𐀱"  U10031  # LINEAR B SYLLABLE B058 SU
-<Multi_key> <g> <L> <t> <a> : "𐀲"  U10032  # LINEAR B SYLLABLE B059 TA
-<Multi_key> <g> <L> <t> <e> : "𐀳"  U10033  # LINEAR B SYLLABLE B004 TE
-<Multi_key> <g> <L> <t> <i> : "𐀴"  U10034  # LINEAR B SYLLABLE B037 TI
-<Multi_key> <g> <L> <t> <o> : "𐀵"  U10035  # LINEAR B SYLLABLE B005 TO
-<Multi_key> <g> <L> <t> <u> : "𐀶"  U10036  # LINEAR B SYLLABLE B069 TU
-<Multi_key> <g> <L> <w> <a> : "𐀷"  U10037  # LINEAR B SYLLABLE B054 WA
-<Multi_key> <g> <L> <w> <e> : "𐀸"  U10038  # LINEAR B SYLLABLE B075 WE
-<Multi_key> <g> <L> <w> <i> : "𐀹"  U10039  # LINEAR B SYLLABLE B040 WI
-<Multi_key> <g> <L> <w> <o> : "𐀺"  U1003A  # LINEAR B SYLLABLE B042 WO
-<Multi_key> <g> <L> <z> <a> : "𐀼"  U1003C  # LINEAR B SYLLABLE B017 ZA
-<Multi_key> <g> <L> <z> <e> : "𐀽"  U1003D  # LINEAR B SYLLABLE B074 ZE
-<Multi_key> <g> <L> <z> <o> : "𐀿"  U1003F  # LINEAR B SYLLABLE B020 ZO
-
-<Multi_key> <g> <L> <A> <2> : "𐁀"  U10040  # LINEAR B SYLLABLE B025 A2
-<Multi_key> <g> <L> <A> <3> : "𐁁"  U10041  # LINEAR B SYLLABLE B043 A3
-<Multi_key> <g> <L> <A> <U> : "𐁂"  U10042  # LINEAR B SYLLABLE B085 AU
-<Multi_key> <g> <L> <D> <W> <E> : "𐁃"  U10043  # LINEAR B SYLLABLE B071 DWE
-<Multi_key> <g> <L> <D> <W> <O> : "𐁄"  U10044  # LINEAR B SYLLABLE B090 DWO
-<Multi_key> <g> <L> <N> <W> <A> : "𐁅"  U10045  # LINEAR B SYLLABLE B048 NWA
-<Multi_key> <g> <L> <P> <U> <2> : "𐁆"  U10046  # LINEAR B SYLLABLE B029 PU2
-<Multi_key> <g> <L> <P> <T> <E> : "𐁇"  U10047  # LINEAR B SYLLABLE B062 PTE
-<Multi_key> <g> <L> <R> <A> <2> : "𐁈"  U10048  # LINEAR B SYLLABLE B076 RA2
-<Multi_key> <g> <L> <R> <A> <3> : "𐁉"  U10049  # LINEAR B SYLLABLE B033 RA3
-<Multi_key> <g> <L> <R> <O> <2> : "𐁊"  U1004A  # LINEAR B SYLLABLE B068 RO2
-<Multi_key> <g> <L> <T> <A> <2> : "𐁋"  U1004B  # LINEAR B SYLLABLE B066 TA2
-<Multi_key> <g> <L> <T> <W> <E> : "𐁌"  U1004C  # LINEAR B SYLLABLE B087 TWE
-<Multi_key> <g> <L> <T> <W> <O> : "𐁍"  U1004D  # LINEAR B SYLLABLE B091 TWO
 
 # mathematical alphanumerics (same convention as Latin alphanumerics above)
 
@@ -6987,9 +7192,9 @@ include "%L"
 <Multi_key> <G> <k> <underscore> <h> : "ⴤ" U2D24   # GEORGIAN SMALL LETTER HAR (ẖ)
 <Multi_key> <G> <k> <minus> <o> : "ⴥ" U2D25   # GEORGIAN SMALL LETTER HOE (ō)
 
-###########################################
-# (h) Hebrew (and Phoenician & Samaritan) #
-###########################################
+############################################################
+# (h) Hebrew (and Aramaic, Lydian, Phoenician & Samaritan) #
+############################################################
 
 <Multi_key> <h> <c> <a>        : "א"  U05D0   # HEBREW LETTER ALEF
 <Multi_key> <h> <c> <apostrophe> : "א"  U05D0   # HEBREW LETTER ALEF
@@ -7099,6 +7304,77 @@ include "%L"
 <Multi_key> <h> <c> <asciicircum> <underscore> <k> : "כֿ" UFB4D   # HEBREW LETTER KAF WITH RAFE
 <Multi_key> <h> <c> <asciicircum> <underscore> <p> : "פֿ" UFB4E   # HEBREW LETTER PE WITH RAFE
 <Multi_key> <h> <c> <asciicircum> <underscore> <f> : "פֿ" UFB4E   # HEBREW LETTER PE WITH RAFE
+
+# (A = Imperial Aramaic)
+
+<Multi_key> <h> <A> <a> : "𐡀"  U10840  # IMPERIAL ARAMAIC LETTER ALEPH
+<Multi_key> <h> <A> <apostrophe> : "𐡀"  U10840  # IMPERIAL ARAMAIC LETTER ALEPH
+<Multi_key> <h> <A> <b> : "𐡁"  U10841  # IMPERIAL ARAMAIC LETTER BETH
+<Multi_key> <h> <A> <g> : "𐡂"  U10842  # IMPERIAL ARAMAIC LETTER GIMEL
+<Multi_key> <h> <A> <d> : "𐡃"  U10843  # IMPERIAL ARAMAIC LETTER DALETH
+<Multi_key> <h> <A> <h> : "𐡄"  U10844  # IMPERIAL ARAMAIC LETTER HE
+<Multi_key> <h> <A> <v> : "𐡅"  U10845  # IMPERIAL ARAMAIC LETTER WAW
+<Multi_key> <h> <A> <z> : "𐡆"  U10846  # IMPERIAL ARAMAIC LETTER ZAYIN
+<Multi_key> <h> <A> <H> : "𐡇"  U10847  # IMPERIAL ARAMAIC LETTER HETH
+<Multi_key> <h> <A> <T> : "𐡈"  U10848  # IMPERIAL ARAMAIC LETTER TETH
+<Multi_key> <h> <A> <y> : "𐡉"  U10849  # IMPERIAL ARAMAIC LETTER YODH
+<Multi_key> <h> <A> <i> : "𐡉"  U10849  # IMPERIAL ARAMAIC LETTER YODH
+<Multi_key> <h> <A> <k> : "𐡊"  U1084A  # IMPERIAL ARAMAIC LETTER KAPH
+<Multi_key> <h> <A> <l> : "𐡋"  U1084B  # IMPERIAL ARAMAIC LETTER LAMEDH
+<Multi_key> <h> <A> <m> : "𐡌"  U1084C  # IMPERIAL ARAMAIC LETTER MEM
+<Multi_key> <h> <A> <n> : "𐡍"  U1084D  # IMPERIAL ARAMAIC LETTER NUN
+<Multi_key> <h> <A> <s> : "𐡎"  U1084E  # IMPERIAL ARAMAIC LETTER SAMEKH
+<Multi_key> <h> <A> <grave> : "𐡏"  U1084F  # IMPERIAL ARAMAIC LETTER AYIN
+<Multi_key> <h> <A> <p> : "𐡐"  U10850  # IMPERIAL ARAMAIC LETTER PE
+<Multi_key> <h> <A> <Z> : "𐡑"  U10851  # IMPERIAL ARAMAIC LETTER SADHE
+<Multi_key> <h> <A> <q> : "𐡒"  U10852  # IMPERIAL ARAMAIC LETTER QOPH
+<Multi_key> <h> <A> <r> : "𐡓"  U10853  # IMPERIAL ARAMAIC LETTER RESH
+<Multi_key> <h> <A> <S> : "𐡔"  U10854  # IMPERIAL ARAMAIC LETTER SHIN
+<Multi_key> <h> <A> <t> : "𐡕"  U10855  # IMPERIAL ARAMAIC LETTER TAW
+
+<Multi_key> <h> <A> <Multi_key> <S> <O> : "𐡗"  U10857  # IMPERIAL ARAMAIC SECTION SIGN
+
+<Multi_key> <h> <A> <1> <Return> : "𐡘"  U10858  # IMPERIAL ARAMAIC NUMBER ONE
+<Multi_key> <h> <A> <2> <Return> : "𐡙"  U10859  # IMPERIAL ARAMAIC NUMBER TWO
+<Multi_key> <h> <A> <3> : "𐡚"  U1085A  # IMPERIAL ARAMAIC NUMBER THREE
+<Multi_key> <h> <A> <1> <0> <Return> : "𐡛"  U1085B  # IMPERIAL ARAMAIC NUMBER TEN
+<Multi_key> <h> <A> <2> <0> : "𐡜"  U1085C  # IMPERIAL ARAMAIC NUMBER TWENTY
+<Multi_key> <h> <A> <1> <0> <0> <Return> : "𐡝"  U1085D  # IMPERIAL ARAMAIC NUMBER ONE HUNDRED
+<Multi_key> <h> <A> <1> <0> <0> <0> <Return> : "𐡞"  U1085E  # IMPERIAL ARAMAIC NUMBER ONE THOUSAND
+<Multi_key> <h> <A> <1> <0> <0> <0> <0> : "𐡟"  U1085F  # IMPERIAL ARAMAIC NUMBER TEN THOUSAND
+
+# (l = Lydian)
+
+<Multi_key> <h> <l> <a> : "𐤠"  U10920  # LYDIAN LETTER A
+<Multi_key> <h> <l> <p> : "𐤡"  U10921  # LYDIAN LETTER B
+<Multi_key> <h> <l> <b> : "𐤡"  U10921  # LYDIAN LETTER B
+<Multi_key> <h> <l> <g> : "𐤢"  U10922  # LYDIAN LETTER G
+<Multi_key> <h> <l> <d> : "𐤣"  U10923  # LYDIAN LETTER D
+<Multi_key> <h> <l> <e> : "𐤤"  U10924  # LYDIAN LETTER E
+<Multi_key> <h> <l> <w> : "𐤥"  U10925  # LYDIAN LETTER V
+<Multi_key> <h> <l> <v> : "𐤥"  U10925  # LYDIAN LETTER V
+<Multi_key> <h> <l> <i> : "𐤦"  U10926  # LYDIAN LETTER I
+<Multi_key> <h> <l> <y> : "𐤧"  U10927  # LYDIAN LETTER Y
+<Multi_key> <h> <l> <k> : "𐤨"  U10928  # LYDIAN LETTER K
+<Multi_key> <h> <l> <l> : "𐤩"  U10929  # LYDIAN LETTER L
+<Multi_key> <h> <l> <m> : "𐤪"  U1092A  # LYDIAN LETTER M
+<Multi_key> <h> <l> <n> : "𐤫"  U1092B  # LYDIAN LETTER N
+<Multi_key> <h> <l> <o> : "𐤬"  U1092C  # LYDIAN LETTER O
+<Multi_key> <h> <l> <r> : "𐤭"  U1092D  # LYDIAN LETTER R
+<Multi_key> <h> <l> <s> : "𐤮"  U1092E  # LYDIAN LETTER SS
+<Multi_key> <h> <l> <t> : "𐤯"  U1092F  # LYDIAN LETTER T
+<Multi_key> <h> <l> <u> : "𐤰"  U10930  # LYDIAN LETTER U
+<Multi_key> <h> <l> <f> : "𐤱"  U10931  # LYDIAN LETTER F
+<Multi_key> <h> <l> <q> : "𐤲"  U10932  # LYDIAN LETTER Q
+<Multi_key> <h> <l> <S> : "𐤳"  U10933  # LYDIAN LETTER S
+<Multi_key> <h> <l> <T> : "𐤴"  U10934  # LYDIAN LETTER TT
+<Multi_key> <h> <l> <asciitilde> <a> : "𐤵"  U10935  # LYDIAN LETTER AN
+<Multi_key> <h> <l> <asciitilde> <e> : "𐤶"  U10936  # LYDIAN LETTER EN
+<Multi_key> <h> <l> <L> : "𐤷"  U10937  # LYDIAN LETTER LY
+<Multi_key> <h> <l> <N> : "𐤸"  U10938  # LYDIAN LETTER NN
+<Multi_key> <h> <l> <c> : "𐤹"  U10939  # LYDIAN LETTER C
+
+<Multi_key> <h> <l> <quotedbl> : "𐤿"  U1093F  # LYDIAN TRIANGULAR MARK
 
 # (p = Phoenician/Palaeo-Hebrew)
 
@@ -12318,6 +12594,320 @@ include "%L"
 <Multi_key> <O> <Multi_key> <parenright> <quotedbl> : "☺"  U263A  # WHITE SMILING FACE
 <Multi_key> <O> <Multi_key> <T> <X>                 : "웃"  UC6C3  # HANGUL SYLLABLE US
 
+########################
+# Egyptian Hieroglyphs #
+########################
+
+# (included as ideographic symbols not writing!)
+
+# Convention: ] + name
+
+<Multi_key> <bracketright> <a> <t> <t> <a> <c> <k> : "𓁍"  U1304D  # EGYPTIAN HIEROGLYPH A068 (ATTACK)
+<Multi_key> <bracketright> <b> <i> <r> <t> <h> : "𓁒"  U13052  # EGYPTIAN HIEROGLYPH B003 (BIRTH)
+<Multi_key> <bracketright> <b> <o> <w> : "𓀓"  U13013  # EGYPTIAN HIEROGLYPH A016 (BOW)
+<Multi_key> <bracketright> <b> <o> <x> : "𓀟"  U1301F  # EGYPTIAN HIEROGLYPH A027 (BOX) (actually hastening)
+<Multi_key> <bracketright> <b> <u> <i> <l> <d> : "𓀨"  U13028  # EGYPTIAN HIEROGLYPH A035 (BUILD)
+<Multi_key> <bracketright> <c> <a> <p> <t> <i> <v> : "𓀏"  U1300F  # EGYPTIAN HIEROGLYPH A013 (CAPTIVE)
+<Multi_key> <bracketright> <c> <h> <i> <l> <d> : "𓁖"  U13056  # EGYPTIAN HIEROGLYPH B006 (CHILD)
+<Multi_key> <bracketright> <d> <a> <n> <c> <e> : "𓀤"  U13024  # EGYPTIAN HIEROGLYPH A032 (DANCE)
+<Multi_key> <bracketright> <d> <i> <e> : "𓀐"  U13010  # EGYPTIAN HIEROGLYPH A014 (DIE)
+<Multi_key> <bracketright> <e> <a> <t> : "𓀁"  U13001  # EGYPTIAN HIEROGLYPH A002 (EAT)
+<Multi_key> <bracketright> <f> <a> <l> <l> : "𓀒"  U13012  # EGYPTIAN HIEROGLYPH A015 (FALL)
+<Multi_key> <bracketright> <f> <l> <i> <p> : "𓀡"  U13021  # EGYPTIAN HIEROGLYPH A029 (FLIP)
+<Multi_key> <bracketright> <g> <i> <f> <t> <f> : "𓁙"  U13059  # EGYPTIAN HIEROGLYPH B009 (FEMALE GIFT)
+<Multi_key> <bracketright> <g> <i> <f> <t> <m> : "𓁋"  U1304B  # EGYPTIAN HIEROGLYPH A066 (MALE GIFT)
+<Multi_key> <bracketright> <g> <r> <i> <n> <d> : "𓀧"  U13027  # EGYPTIAN HIEROGLYPH A034 (GRIND)
+<Multi_key> <bracketright> <h> <i> <d> <e> : "𓀄"  U13004  # EGYPTIAN HIEROGLYPH A005 (HIDE)
+<Multi_key> <bracketright> <h> <i> <t> : "𓀝"  U1301D  # EGYPTIAN HIEROGLYPH A025 (HIT)
+<Multi_key> <bracketright> <m> <a> <n> : "𓀀"  U13000  # EGYPTIAN HIEROGLYPH A001 (MAN)
+<Multi_key> <bracketright> <m> <o> <r> <e> : "𓁉"  U13049  # EGYPTIAN HIEROGLYPH A064 (MORE)
+<Multi_key> <bracketright> <m> <u> <m> <m> <y> : "𓀾"  U1303E  # EGYPTIAN HIEROGLYPH A053 (MUMMY)
+<Multi_key> <bracketright> <n> <o> <p> <e> : "𓀣"  U13023  # EGYPTIAN HIEROGLYPH A031 (NOPE)
+<Multi_key> <bracketright> <n> <u> <r> <s> <e> : "𓁔"  U13054  # EGYPTIAN HIEROGLYPH B005 (NURSE)
+<Multi_key> <bracketright> <o> <l> <d> : "𓀗"  U13017  # EGYPTIAN HIEROGLYPH A019 (OLD)
+<Multi_key> <bracketright> <p> <o> <i> <n> <t> : "𓀞"  U1301E  # EGYPTIAN HIEROGLYPH A026 (POINT)
+<Multi_key> <bracketright> <p> <r> <e> <g> <n> : "𓁑"  U13051  # EGYPTIAN HIEROGLYPH B002 (PREGNANT)
+<Multi_key> <bracketright> <q> <u> <o> <t> <e> : "𓁏"  U1304F  # EGYPTIAN HIEROGLYPH A070 ("QUOTE")
+<Multi_key> <bracketright> <s> <i> <t> : "𓀻"  U1303B  # EGYPTIAN HIEROGLYPH A050 (SIT) (actually noble)
+<Multi_key> <bracketright> <s> <k> <i> <p> : "𓀪"  U1302A  # EGYPTIAN HIEROGLYPH A037 (SKIP) (actually brew)
+<Multi_key> <bracketright> <s> <t> <a> <b> : "𓀑"  U13011  # EGYPTIAN HIEROGLYPH A014A (STAB)
+<Multi_key> <bracketright> <s> <w> <e> <a> <r> : "𓀊"  U1300A  # EGYPTIAN HIEROGLYPH A008 (SWEAR) (actually rejoicing)
+<Multi_key> <bracketright> <t> <r> <a> <v> <e> <l> : "𓀦"  U13026  # EGYPTIAN HIEROGLYPH A033 (TRAVEL)
+<Multi_key> <bracketright> <w> <a> <s> <h> : "𓀆"  U13006  # EGYPTIAN HIEROGLYPH A006 (WASH)
+<Multi_key> <bracketright> <w> <o> <m> <a> <n> : "𓁐"  U13050  # EGYPTIAN HIEROGLYPH B001 (WOMAN)
+<Multi_key> <bracketright> <backslash> <o> <slash> : "𓀠"  U13020  # EGYPTIAN HIEROGLYPH A028 (\o/)
+
+<Multi_key> <bracketright> <A> <m> <u> <n> : "𓁩"  U13069  # EGYPTIAN HIEROGLYPH C012 (AMUN)
+<Multi_key> <bracketright> <A> <n> <u> <b> <i> <s> : "𓁢"  U13062  # EGYPTIAN HIEROGLYPH C006 (ANUBIS)
+<Multi_key> <bracketright> <A> <t> <u> <m> : "𓁭"  U1306D  # EGYPTIAN HIEROGLYPH C016 (ATUM)
+<Multi_key> <bracketright> <B> <e> <s> : "𓁲"  U13072  # EGYPTIAN HIEROGLYPH C021 (BES)
+<Multi_key> <bracketright> <H> <a> <t> <h> <o> <r> : "𓁥"  U13065  # EGYPTIAN HIEROGLYPH C009 (HATHOR)
+<Multi_key> <bracketright> <H> <e> <h> : "𓁨"  U13068  # EGYPTIAN HIEROGLYPH C011 (HEH)
+<Multi_key> <bracketright> <K> <h> <n> <u> <m> : "𓁡"  U13061  # EGYPTIAN HIEROGLYPH C005 (KHNUM)
+<Multi_key> <bracketright> <K> <h> <o> <n> <s> <u> : "𓁳"  U13073  # EGYPTIAN HIEROGLYPH C022 (KHONSU)
+<Multi_key> <bracketright> <M> <a> <a> <t> : "𓁧"  U13067  # EGYPTIAN HIEROGLYPH C010A (MAAT)
+<Multi_key> <bracketright> <M> <i> <n> : "𓁤"  U13064  # EGYPTIAN HIEROGLYPH C008 (MIN)
+<Multi_key> <bracketright> <M> <o> <n> <t> <u> : "𓁮"  U1306E  # EGYPTIAN HIEROGLYPH C017 (MONTU)
+<Multi_key> <bracketright> <P> <t> <a> <h> : "𓁰"  U13070  # EGYPTIAN HIEROGLYPH C019 (PTAH)
+<Multi_key> <bracketright> <R> <a> : "𓁛"  U1305B  # EGYPTIAN HIEROGLYPH C002 (RA)
+<Multi_key> <bracketright> <S> <e> <t> <h> : "𓁣"  U13063  # EGYPTIAN HIEROGLYPH C007 (SETH)
+<Multi_key> <bracketright> <T> <a> <t> <e> <n> <e> <n> : "𓁯"  U1306F  # EGYPTIAN HIEROGLYPH C018 (TATENEN)
+<Multi_key> <bracketright> <T> <h> <o> <t> <h> : "𓁛"  U1305B  # EGYPTIAN HIEROGLYPH C002 (THOTH)
+
+<Multi_key> <bracketright> <a> <r> <m> : "𓂢"  U130A2  # EGYPTIAN HIEROGLYPH D041 (ARM)
+<Multi_key> <bracketright> <b> <o> <o> <b> : "𓂑"  U13091  # EGYPTIAN HIEROGLYPH D027 (BOOB)
+<Multi_key> <bracketright> <b> <r> <e> <a> <s> <t> : "𓂒"  U13092  # EGYPTIAN HIEROGLYPH D027A (BREAST)
+<Multi_key> <bracketright> <c> <r> <y> : "𓁿"  U1307F  # EGYPTIAN HIEROGLYPH D009 (CRY)
+<Multi_key> <bracketright> <e> <a> <r> : "𓂈"  U13088  # EGYPTIAN HIEROGLYPH D018 (EAR)
+<Multi_key> <bracketright> <e> <y> <e> : "𓁹"  U13079  # EGYPTIAN HIEROGLYPH D004 (EYE)
+<Multi_key> <bracketright> <f> <a> <c> <e> : "𓁷"  U13077  # EGYPTIAN HIEROGLYPH D002 (FACE)
+<Multi_key> <bracketright> <f> <i> <n> <g> <e> <r> : "𓂷"  U130B7  # EGYPTIAN HIEROGLYPH D051 (FINGER)
+<Multi_key> <bracketright> <f> <i> <s> <t> : "𓂬"  U130AC  # EGYPTIAN HIEROGLYPH D049 (FIST)
+<Multi_key> <bracketright> <f> <o> <o> <t> : "𓃀"  U130C0  # EGYPTIAN HIEROGLYPH D058 (FOOT)
+<Multi_key> <bracketright> <h> <a> <i> <r> : "𓁸"  U13078  # EGYPTIAN HIEROGLYPH D003 (HAIR)
+<Multi_key> <bracketright> <h> <a> <n> <d> : "𓂧"  U130A7  # EGYPTIAN HIEROGLYPH D046 (HAND)
+<Multi_key> <bracketright> <h> <e> <a> <d> : "𓁶"  U13076  # EGYPTIAN HIEROGLYPH D001 (HEAD)
+<Multi_key> <bracketright> <h> <o> <r> <u> <s> : "𓂀"  U13080  # EGYPTIAN HIEROGLYPH D010 (EYE OF HORUS)
+<Multi_key> <bracketright> <h> <u> <g> : "𓂘"  U13098  # EGYPTIAN HIEROGLYPH D032 (HUG)
+<Multi_key> <bracketright> <l> <e> <g> : "𓂾"  U130BE  # EGYPTIAN HIEROGLYPH D056 (LEG) (also see legs section below)
+<Multi_key> <bracketright> <l> <i> <n> <e> <r> : "𓁼"  U1307C  # EGYPTIAN HIEROGLYPH D007 (LINER)
+<Multi_key> <bracketright> <l> <i> <p> <s> : "𓂏"  U1308F  # EGYPTIAN HIEROGLYPH D025 (LIPS)
+<Multi_key> <bracketright> <m> <a> <s> <c> <a> <r> : "𓁻"  U1307B  # EGYPTIAN HIEROGLYPH D006 (MASCARA)
+<Multi_key> <bracketright> <m> <o> <u> <t> <h> : "𓂋"  U1308B  # EGYPTIAN HIEROGLYPH D021 (MOUTH)
+<Multi_key> <bracketright> <n> <o> <s> <e> : "𓂊"  U1308A  # EGYPTIAN HIEROGLYPH D020 (NOSE)
+<Multi_key> <bracketright> <p> <e> <n> <i> <s> : "𓂸"  U130B8  # EGYPTIAN HIEROGLYPH D052 (PENIS)
+<Multi_key> <bracketright> <p> <o> <o> : "𓄽"  U1313D  # EGYPTIAN HIEROGLYPH F052 (POO)
+<Multi_key> <bracketright> <p> <i> <s> <s> : "𓂺"  U130BA  # EGYPTIAN HIEROGLYPH D053 (PISS)
+<Multi_key> <bracketright> <s> <h> <r> <u> <g> : "𓂜"  U1309C  # EGYPTIAN HIEROGLYPH D035 (SHRUG)
+<Multi_key> <bracketright> <s> <p> <i> <t> : "𓂐"  U13090  # EGYPTIAN HIEROGLYPH D026 (SPIT)
+<Multi_key> <bracketright> <s> <w> <e> <a> <t> : "𓄺"  U1313A  # EGYPTIAN HIEROGLYPH F051A (SWEAT) (actually flesh)
+<Multi_key> <bracketright> <t> <e> <a> <r> : "𓄼"  U1313C  # EGYPTIAN HIEROGLYPH F051C (TEAR) (actually flesh)
+<Multi_key> <bracketright> <t> <e> <e> <t> <h> : "𓂏"  U1308F  # EGYPTIAN HIEROGLYPH D025 (TEETH)
+
+<Multi_key> <bracketright> <b> <a> <b> <o> <o> <n> : "𓃷"  U130F7  # EGYPTIAN HIEROGLYPH E032 (BABOON)
+<Multi_key> <bracketright> <b> <a> <r> <b> : "𓆜"  U1319C  # EGYPTIAN HIEROGLYPH K002 (BARB)
+<Multi_key> <bracketright> <b> <e> <e> : "𓆤"  U131A4  # EGYPTIAN HIEROGLYPH L002 (BEE)
+<Multi_key> <bracketright> <b> <u> <l> <l> : "𓃒"  U130D2  # EGYPTIAN HIEROGLYPH E001 (BULL)
+<Multi_key> <bracketright> <b> <u> <z> <z> <a> <r> : "𓅂"  U13142  # EGYPTIAN HIEROGLYPH G004 (BUZZARD)
+<Multi_key> <bracketright> <c> <a> <l> <f> : "𓃔"  U130D4  # EGYPTIAN HIEROGLYPH E003 (CALF)
+<Multi_key> <bracketright> <c> <a> <t> : "𓃠"  U130E0  # EGYPTIAN HIEROGLYPH E013 (CAT)
+<Multi_key> <bracketright> <c> <e> <n> <t> <i> <p> : "𓆨"  U131A8  # EGYPTIAN HIEROGLYPH L005 (CENTIPEDE)
+<Multi_key> <bracketright> <c> <f> <i> <s> <h> : "𓆢"  U131A2  # EGYPTIAN HIEROGLYPH K008 (CATFISH)
+<Multi_key> <bracketright> <c> <i> <r> <c> <u> <s> : "𓀬"  U1302C  # EGYPTIAN HIEROGLYPH A039 (CIRCUS)
+<Multi_key> <bracketright> <c> <o> <b> <r> <a> : "𓆘"  U13198  # EGYPTIAN HIEROGLYPH I013 (COBRA)
+<Multi_key> <bracketright> <c> <o> <w> : "𓃖"  U130D6  # EGYPTIAN HIEROGLYPH E005 (COW)
+<Multi_key> <bracketright> <c> <r> <o> <c> : "𓆊"  U1318A  # EGYPTIAN HIEROGLYPH I003 (CROCODILE)
+<Multi_key> <bracketright> <d> <o> <g> : "𓃡"  U130E1  # EGYPTIAN HIEROGLYPH E014 (DOG)
+<Multi_key> <bracketright> <d> <o> <n> <k> <e> <y> : "𓃘"  U130D8  # EGYPTIAN HIEROGLYPH E007 (DONKEY)
+<Multi_key> <bracketright> <d> <u> <c> <k> : "𓅭"  U1316D  # EGYPTIAN HIEROGLYPH G039 (DUCK)
+<Multi_key> <bracketright> <e> <g> <g> : "𓆇"  U13187  # EGYPTIAN HIEROGLYPH H008 (EGG)
+<Multi_key> <bracketright> <e> <g> <r> <e> <t> : "𓅥"  U13165  # EGYPTIAN HIEROGLYPH G033 (EGRET)
+<Multi_key> <bracketright> <e> <l> <e> <p> <h> : "𓃰"  U130F0  # EGYPTIAN HIEROGLYPH E026 (ELEPHANT)
+<Multi_key> <bracketright> <f> <a> <l> <c> <o> <n> : "𓅃"  U13143  # EGYPTIAN HIEROGLYPH G005 (FALCON)
+<Multi_key> <bracketright> <f> <e> <a> <t> <h> <e> : "𓆄"  U13184  # EGYPTIAN HIEROGLYPH H006 (FEATHER)
+<Multi_key> <bracketright> <f> <i> <s> <h> : "𓆟"  U1319F  # EGYPTIAN HIEROGLYPH K005 (FISH)
+<Multi_key> <bracketright> <f> <l> <a> <m> <i> <n> : "𓅟"  U1315F  # EGYPTIAN HIEROGLYPH G027 (FLAMINGO)
+<Multi_key> <bracketright> <f> <l> <y> : "𓆦"  U131A6  # EGYPTIAN HIEROGLYPH L003 (FLY)
+<Multi_key> <bracketright> <f> <r> <o> <g> : "𓆏"  U1318F  # EGYPTIAN HIEROGLYPH I007 (FROG)
+<Multi_key> <bracketright> <g> <a> <z> <e> <l> : "𓃴"  U130F4  # EGYPTIAN HIEROGLYPH E029 (GAZELLE)
+<Multi_key> <bracketright> <g> <e> <c> <k> <o> : "𓆈"  U13188  # EGYPTIAN HIEROGLYPH I001 (GECKO)
+<Multi_key> <bracketright> <g> <i> <r> <a> <f> : "𓃱"  U130F1  # EGYPTIAN HIEROGLYPH E027 (GIRAFFE) (use ]circus for 𓀬)
+<Multi_key> <bracketright> <g> <o> <o> <s> <e> : "𓅬"  U1316C  # EGYPTIAN HIEROGLYPH G038 (GOOSE)
+<Multi_key> <bracketright> <g> <u> <i> <n> <e> <a> : "𓅘"  U13158  # EGYPTIAN HIEROGLYPH G021 (GUINEAFOWL)
+<Multi_key> <bracketright> <h> <a> <r> <e> : "𓃹"  U130F9  # EGYPTIAN HIEROGLYPH E034 (HARE)
+<Multi_key> <bracketright> <h> <e> <r> <o> <n> : "𓅣"  U13163  # EGYPTIAN HIEROGLYPH G031 (HERON)
+<Multi_key> <bracketright> <h> <i> <p> <p> <o> : "𓃯"  U130EF  # EGYPTIAN HIEROGLYPH E025 (HIPPOPOTAMUS)
+<Multi_key> <bracketright> <h> <o> <o> <p> <o> <e> : "𓅙"  U13159  # EGYPTIAN HIEROGLYPH G022 (HOOPOE)
+<Multi_key> <bracketright> <h> <o> <r> <s> <e> : "𓃗"  U130D7  # EGYPTIAN HIEROGLYPH E006 (HORSE)
+<Multi_key> <bracketright> <i> <b> <e> <x> : "𓃵"  U130F5  # EGYPTIAN HIEROGLYPH E030 (IBEX)
+<Multi_key> <bracketright> <i> <b> <i> <s> : "𓅜"  U1315C  # EGYPTIAN HIEROGLYPH G025 (IBIS)
+<Multi_key> <bracketright> <j> <a> <c> <k> <a> <l> : "𓃥"  U130E5  # EGYPTIAN HIEROGLYPH E017 (JACKAL)
+<Multi_key> <bracketright> <k> <i> <d> : "𓃚"  U130DA  # EGYPTIAN HIEROGLYPH E008A (KID)
+<Multi_key> <bracketright> <l> <e> <o> <p> <a> <r> : "𓃮"  U130EE  # EGYPTIAN HIEROGLYPH E024 (LEOPARD)
+<Multi_key> <bracketright> <l> <i> <o> <n> : "𓃭"  U130ED  # EGYPTIAN HIEROGLYPH E023 (LION)
+<Multi_key> <bracketright> <l> <o> <c> <u> <s> <t> : "𓆧"  U131A7  # EGYPTIAN HIEROGLYPH L004 (LOCUST)
+<Multi_key> <bracketright> <m> <o> <n> <k> <e> <y> : "𓃸"  U130F8  # EGYPTIAN HIEROGLYPH E033 (MONKEY)
+<Multi_key> <bracketright> <m> <u> <l> <l> <e> <t> : "𓆝"  U1319D  # EGYPTIAN HIEROGLYPH K003 (MULLET)
+<Multi_key> <bracketright> <o> <r> <y> <x> : "𓃲"  U130F2  # EGYPTIAN HIEROGLYPH E028 (ORYX)
+<Multi_key> <bracketright> <o> <s> <t> <r> <i> <c> : "𓅦"  U13166  # EGYPTIAN HIEROGLYPH G034 (OSTRIC)
+<Multi_key> <bracketright> <o> <w> <l> <Return> : "𓅓"  U13153  # EGYPTIAN HIEROGLYPH G017 (OWL)
+<Multi_key> <bracketright> <o> <w> <l> <s> : "𓅔"  U13154  # EGYPTIAN HIEROGLYPH G018 (OWLS)
+<Multi_key> <bracketright> <p> <e> <c> <k> : "𓅻"  U1317B  # EGYPTIAN HIEROGLYPH G051 (PECK)
+<Multi_key> <bracketright> <p> <e> <e> <w> <i> <t> : "𓅚"  U1315A  # EGYPTIAN HIEROGLYPH G023 (PEEWIT)
+<Multi_key> <bracketright> <p> <i> <g> : "𓃟"  U130DF  # EGYPTIAN HIEROGLYPH E012 (PIG)
+<Multi_key> <bracketright> <p> <u> <f> <f> <e> <r> : "𓆡"  U131A1  # EGYPTIAN HIEROGLYPH K007 (PUFFER)
+<Multi_key> <bracketright> <q> <u> <a> <i> <l> <Return> : "𓅱"  U13171  # EGYPTIAN HIEROGLYPH G043 (QUAIL)
+<Multi_key> <bracketright> <q> <u> <a> <i> <l> <s> : "𓅳"  U13173  # EGYPTIAN HIEROGLYPH G044 (QUAILS)
+<Multi_key> <bracketright> <r> <a> <m> : "𓃝"  U130DD  # EGYPTIAN HIEROGLYPH E010 (RAM)
+<Multi_key> <bracketright> <s> <c> <a> <r> <a> <b> : "𓆤"  U131A4  # EGYPTIAN HIEROGLYPH L002 (SCARAB)
+<Multi_key> <bracketright> <s> <c> <o> <r> <p> : "𓆫"  U131AB  # EGYPTIAN HIEROGLYPH L007 (SCORPION)
+<Multi_key> <bracketright> <s> <h> <a> <g> : "𓅧"  U13167  # EGYPTIAN HIEROGLYPH G035 (SHAG)
+<Multi_key> <bracketright> <s> <n> <a> <k> <e> : "𓆙"  U13199  # EGYPTIAN HIEROGLYPH I014 (SNAKE)
+<Multi_key> <bracketright> <s> <p> <a> <r> <r> <o> : "𓅪"  U1316A  # EGYPTIAN HIEROGLYPH G037 (SPARROW)
+<Multi_key> <bracketright> <s> <t> <o> <r> <k> <Return> : "𓅡"  U13161  # EGYPTIAN HIEROGLYPH G029 (STORK)
+<Multi_key> <bracketright> <s> <t> <o> <r> <k> <s> : "𓅢"  U13162  # EGYPTIAN HIEROGLYPH G030 (STORKS)
+<Multi_key> <bracketright> <s> <w> <a> <l> <l> <o> : "𓅨"  U13168  # EGYPTIAN HIEROGLYPH G036 (SWALLOW)
+<Multi_key> <bracketright> <t> <u> <r> <t> <l> <e> : "𓆉"  U13189  # EGYPTIAN HIEROGLYPH I002 (TURTLE)
+<Multi_key> <bracketright> <v> <i> <p> <e> <r> : "𓆑"  U13191  # EGYPTIAN HIEROGLYPH I009 (VIPER)
+<Multi_key> <bracketright> <v> <u> <l> <t> <u> <r> : "𓅐"  U13150  # EGYPTIAN HIEROGLYPH G014 (VULTURE)
+<Multi_key> <bracketright> <w> <i> <g> <e> <o> <n> : "𓅰"  U13170  # EGYPTIAN HIEROGLYPH G042 (WIGEON)
+<Multi_key> <bracketright> <w> <i> <n> <g> : "𓆃"  U13183  # EGYPTIAN HIEROGLYPH H005 (WING)
+
+<Multi_key> <bracketright> <colon> <d> <u> <c> <k> : "𓅿"  U1317F  # EGYPTIAN HIEROGLYPH H001 (DUCK HEAD)
+<Multi_key> <bracketright> <colon> <h> <e> <r> <o> <n> : "𓆀"  U13180  # EGYPTIAN HIEROGLYPH H002 (HERON HEAD)
+<Multi_key> <bracketright> <colon> <h> <i> <p> <p> <o> : "𓄁"  U13101  # EGYPTIAN HIEROGLYPH F003 (HIPPOPOTAMUS HEAD)
+<Multi_key> <bracketright> <colon> <l> <e> <o> <p> <a> <r> : "𓄇"  U13107  # EGYPTIAN HIEROGLYPH F009 (LEOPARD HEAD)
+<Multi_key> <bracketright> <colon> <l> <i> <o> <n> : "𓄂"  U13102  # EGYPTIAN HIEROGLYPH F004 (LION HEAD)
+<Multi_key> <bracketright> <colon> <o> <x> : "𓃾"  U130FE  # EGYPTIAN HIEROGLYPH F001 (OX HEAD)
+<Multi_key> <bracketright> <colon> <r> <a> <m> : "𓄅"  U13105  # EGYPTIAN HIEROGLYPH F007 (RAM HEAD)
+<Multi_key> <bracketright> <colon> <v> <u> <l> <t> <u> <r> : "𓆂"  U13182  # EGYPTIAN HIEROGLYPH H004 (VULTURE HEAD)
+
+<Multi_key> <bracketright> <b> <r> <a> <n> <c> <h> : "𓆱"  U131B1  # EGYPTIAN HIEROGLYPH M003 (BRANCH)
+<Multi_key> <bracketright> <e> <d> <e> <n> : "𓆯"  U131AF  # EGYPTIAN HIEROGLYPH M001B (EDEN)
+<Multi_key> <bracketright> <f> <l> <a> <x> : "𓇦"  U131E6  # EGYPTIAN HIEROGLYPH M037 (FLAX)
+<Multi_key> <bracketright> <f> <l> <o> <w> <e> <r> : "𓇬"  U131EC  # EGYPTIAN HIEROGLYPH M042 (FLOWER)
+<Multi_key> <bracketright> <g> <r> <a> <i> <n> <s> : "𓇢"  U131E2  # EGYPTIAN HIEROGLYPH M033B (GRAINS)
+<Multi_key> <bracketright> <l> <i> <l> <y> : "𓇕"  U131D5  # EGYPTIAN HIEROGLYPH M024A (LILY)
+<Multi_key> <bracketright> <l> <o> <t> <u> <s> : "𓆸"  U131B8  # EGYPTIAN HIEROGLYPH M009 (LOTUS)
+<Multi_key> <bracketright> <p> <o> <d> : "𓇛"  U131DB  # EGYPTIAN HIEROGLYPH M029 (POD)
+<Multi_key> <bracketright> <r> <e> <e> <d> : "𓇋"  U131CB  # EGYPTIAN HIEROGLYPH M017 (REED)
+<Multi_key> <bracketright> <r> <o> <o> <t> : "𓇜"  U131DC  # EGYPTIAN HIEROGLYPH M030 (ROOT)
+<Multi_key> <bracketright> <r> <u> <s> <h> : "𓇑"  U131D1  # EGYPTIAN HIEROGLYPH M022 (RUSH)
+<Multi_key> <bracketright> <s> <e> <d> <g> <e> : "𓇓"  U131D3  # EGYPTIAN HIEROGLYPH M023 (SEDGE)
+<Multi_key> <bracketright> <t> <h> <o> <r> <n> : "𓇮"  U131EE  # EGYPTIAN HIEROGLYPH M044 (THORN)
+<Multi_key> <bracketright> <t> <r> <e> <e> : "𓆭"  U131AD  # EGYPTIAN HIEROGLYPH M001 (TREE)
+<Multi_key> <bracketright> <v> <i> <n> <e> : "𓇭"  U131ED  # EGYPTIAN HIEROGLYPH M043 (VINE)
+
+<Multi_key> <bracketright> <h> <i> <l> <l> <s> : "𓈉"  U13209  # EGYPTIAN HIEROGLYPH N025 (HILLS)
+<Multi_key> <bracketright> <h> <o> <e> : "𓌻"  U1333B  # EGYPTIAN HIEROGLYPH U007 (HOE)
+<Multi_key> <bracketright> <m> <o> <o> <n> : "𓇸"  U131F8  # EGYPTIAN HIEROGLYPH N010 (MOON)
+<Multi_key> <bracketright> <r> <a> <i> <n> : "𓇲"  U131F2  # EGYPTIAN HIEROGLYPH N004 (RAIN)
+<Multi_key> <bracketright> <s> <h> <i> <n> <e> : "𓇶"  U131F6  # EGYPTIAN HIEROGLYPH N008 (SHINE)
+<Multi_key> <bracketright> <s> <i> <c> <k> <l> <e> : "𓌴"  U13334  # EGYPTIAN HIEROGLYPH U002 (SICKLE)
+<Multi_key> <bracketright> <s> <k> <y> : "𓇯"  U131EF  # EGYPTIAN HIEROGLYPH N001 (SKY)
+<Multi_key> <bracketright> <s> <t> <a> <r> : "𓇼"  U131FC  # EGYPTIAN HIEROGLYPH N014 (STAR)
+<Multi_key> <bracketright> <s> <u> <n> : "𓇳"  U131F3  # EGYPTIAN HIEROGLYPH N005 (SUN)
+<Multi_key> <bracketright> <w> <a> <t> <e> <r> : "𓈖"  U13216  # EGYPTIAN HIEROGLYPH N035 (WATER)
+
+<Multi_key> <bracketright> <b> <o> <a> <t> : "𓊛"  U1329B  # EGYPTIAN HIEROGLYPH P001 (BOAT)
+<Multi_key> <bracketright> <c> <h> <a> <r> <i> <o> : "𓌝"  U1331D  # EGYPTIAN HIEROGLYPH T017 (CHARIO)
+<Multi_key> <bracketright> <s> <a> <i> <l> : "𓊝"  U1329D  # EGYPTIAN HIEROGLYPH P002 (SAILBOAT)
+<Multi_key> <bracketright> <s> <l> <e> <d> : "𓍃"  U13343  # EGYPTIAN HIEROGLYPH U015 (SLED)
+
+<Multi_key> <bracketright> <a> <n> <k> <h> : "𓋹"  U132F9  # EGYPTIAN HIEROGLYPH S034 (ANKH)
+<Multi_key> <bracketright> <a> <r> <r> <o> <w> <Return> : "𓌕"  U13315  # EGYPTIAN HIEROGLYPH T011 (ARROW)
+<Multi_key> <bracketright> <a> <r> <r> <o> <w> <s> : "𓌖"  U13316  # EGYPTIAN HIEROGLYPH T011A (ARROWS)
+<Multi_key> <bracketright> <a> <x> <e> : "𓌏"  U1330F  # EGYPTIAN HIEROGLYPH T007A (AXE)
+<Multi_key> <bracketright> <b> <a> <s> <k> <e> <t> : "𓎡"  U133A1  # EGYPTIAN HIEROGLYPH V031 (BASKET)
+<Multi_key> <bracketright> <c> <u> <p> : "𓎺"  U133BA  # EGYPTIAN HIEROGLYPH W010 (CUP)
+<Multi_key> <bracketright> <h> <a> <r> <p> : "𓏢"  U133E2  # EGYPTIAN HIEROGLYPH Y007 (HARP)
+<Multi_key> <bracketright> <j> <u> <g> : "𓎸"  U133B8  # EGYPTIAN HIEROGLYPH W009 (JUG)
+<Multi_key> <bracketright> <k> <n> <i> <f> <e> : "𓌪"  U1332A  # EGYPTIAN HIEROGLYPH T030 (KNIFE)
+<Multi_key> <bracketright> <l> <a> <s> <s> <o> : "𓍯"  U1336F  # EGYPTIAN HIEROGLYPH V004 (LASSO)
+<Multi_key> <bracketright> <p> <a> <w> <n> : "𓏡"  U133E1  # EGYPTIAN HIEROGLYPH Y006 (PAWN)
+<Multi_key> <bracketright> <p> <o> <t> : "𓎻"  U133BB  # EGYPTIAN HIEROGLYPH W010A (POT)
+<Multi_key> <bracketright> <r> <i> <b> <b> <o> <n> : "𓍲"  U13372  # EGYPTIAN HIEROGLYPH V007 (RIBBON)
+<Multi_key> <bracketright> <r> <i> <n> <g> : "𓋪"  U132EA  # EGYPTIAN HIEROGLYPH S021 (RING)
+<Multi_key> <bracketright> <r> <o> <p> <e> : "𓍱"  U13371  # EGYPTIAN HIEROGLYPH V006 (ROPE) (use ]ribbon for 𓍲)
+<Multi_key> <bracketright> <s> <a> <n> <d> <a> <l> : "𓋸"  U132F8  # EGYPTIAN HIEROGLYPH S033 (SANDAL)
+<Multi_key> <bracketright> <s> <c> <a> <l> <e> : "𓍝"  U1335D  # EGYPTIAN HIEROGLYPH U038 (SCALE)
+<Multi_key> <bracketright> <s> <h> <i> <e> <l> <d> : "𓌲"  U13332  # EGYPTIAN HIEROGLYPH T036 (SHIELD)
+
+# Legs (start with <)
+
+<Multi_key> <bracketright> <less> <less> : "𓂻"  U130BB  # EGYPTIAN HIEROGLYPH D054 (LEGS WALKING LEFT)
+<Multi_key> <bracketright> <less> <greater> : "𓂽"  U130BD  # EGYPTIAN HIEROGLYPH D055 (LEGS WALKING RIGHT)
+<Multi_key> <bracketright> <less> <b> <o> <l> <t> : "𓊄"  U13284  # EGYPTIAN HIEROGLYPH O035 (BOLT WITH LEGS)
+<Multi_key> <bracketright> <less> <c> <o> <l> <l> <a> <r> : "𓋟"  U132DF  # EGYPTIAN HIEROGLYPH S013 (COLLAR WITH FOOT)
+<Multi_key> <bracketright> <less> <k> <n> <i> <f> <e> : "𓌬"  U1332C  # EGYPTIAN HIEROGLYPH T032 (KNIFE WITH LEGS)
+<Multi_key> <bracketright> <less> <p> <o> <o> <l> : "𓈝"  U1321D  # EGYPTIAN HIEROGLYPH N040 (POOL WITH LEGS)
+<Multi_key> <bracketright> <less> <p> <o> <t> : "𓏎"  U133CE  # EGYPTIAN HIEROGLYPH W025 (POT WITH LEGS)
+<Multi_key> <bracketright> <less> <r> <e> <e> <d> : "𓇍"  U131CD  # EGYPTIAN HIEROGLYPH M018 (REED WITH LEGS)
+<Multi_key> <bracketright> <less> <r> <o> <p> <e> : "𓎁"  U13381  # EGYPTIAN HIEROGLYPH V015 (ROPE WITH LEGS)
+<Multi_key> <bracketright> <less> <w> <a> <s> <h> : "𓃂"  U130C2  # EGYPTIAN HIEROGLYPH D060 (FOOT WITH WASH)
+
+# Numerals
+
+<Multi_key> <bracketright> <1> <o> : "𓃉"  U130C9  # EGYPTIAN HIEROGLYPH D067 (1 DOT)
+<Multi_key> <bracketright> <2> <o> : "𓃊"  U130CA  # EGYPTIAN HIEROGLYPH D067A (2 DOTS)
+<Multi_key> <bracketright> <3> <o> : "𓃋"  U130CB  # EGYPTIAN HIEROGLYPH D067B (3 DOTS)
+<Multi_key> <bracketright> <4> <o> : "𓃌"  U130CC  # EGYPTIAN HIEROGLYPH D067C (4 DOTS)
+<Multi_key> <bracketright> <5> <o> : "𓃍"  U130CD  # EGYPTIAN HIEROGLYPH D067D (5 DOTS)
+<Multi_key> <bracketright> <6> <o> : "𓃎"  U130CE  # EGYPTIAN HIEROGLYPH D067E (6 DOTS)
+<Multi_key> <bracketright> <7> <o> : "𓃏"  U130CF  # EGYPTIAN HIEROGLYPH D067F (7 DOTS)
+<Multi_key> <bracketright> <8> <o> : "𓃐"  U130D0  # EGYPTIAN HIEROGLYPH D067G (8 DOTS)
+<Multi_key> <bracketright> <9> <o> : "𓃑"  U130D1  # EGYPTIAN HIEROGLYPH D067H (9 DOTS)
+
+<Multi_key> <bracketright> <1> <E> <0> : "𓏺"  U133FA  # EGYPTIAN HIEROGLYPH Z015 (1)
+<Multi_key> <bracketright> <2> <E> <0> : "𓏻"  U133FB  # EGYPTIAN HIEROGLYPH Z015A (2)
+<Multi_key> <bracketright> <3> <E> <0> : "𓏼"  U133FC  # EGYPTIAN HIEROGLYPH Z015B (3)
+<Multi_key> <bracketright> <4> <E> <0> : "𓏽"  U133FD  # EGYPTIAN HIEROGLYPH Z015C (4)
+<Multi_key> <bracketright> <5> <E> <0> : "𓏾"  U133FE  # EGYPTIAN HIEROGLYPH Z015D (5)
+<Multi_key> <bracketright> <5> <e> <0> : "𓐃"  U13403  # EGYPTIAN HIEROGLYPH Z015I (5)
+<Multi_key> <bracketright> <6> <E> <0> : "𓏿"  U133FF  # EGYPTIAN HIEROGLYPH Z015E (6)
+<Multi_key> <bracketright> <7> <E> <0> : "𓐀"  U13400  # EGYPTIAN HIEROGLYPH Z015F (7)
+<Multi_key> <bracketright> <8> <E> <0> : "𓐁"  U13401  # EGYPTIAN HIEROGLYPH Z015G (8)
+<Multi_key> <bracketright> <9> <E> <0> : "𓐂"  U13402  # EGYPTIAN HIEROGLYPH Z015H (9)
+
+<Multi_key> <bracketright> <1> <E> <1> : "𓎆"  U13386  # EGYPTIAN HIEROGLYPH V020 (10)
+<Multi_key> <bracketright> <2> <E> <1> : "𓎇"  U13387  # EGYPTIAN HIEROGLYPH V020A (20)
+<Multi_key> <bracketright> <2> <e> <1> : "𓎏"  U1338F  # EGYPTIAN HIEROGLYPH V020I (20)
+<Multi_key> <bracketright> <3> <E> <1> : "𓎈"  U13388  # EGYPTIAN HIEROGLYPH V020B (30)
+<Multi_key> <bracketright> <3> <e> <1> : "𓎐"  U13390  # EGYPTIAN HIEROGLYPH V020J (30)
+<Multi_key> <bracketright> <4> <E> <1> : "𓎉"  U13389  # EGYPTIAN HIEROGLYPH V020C (40)
+<Multi_key> <bracketright> <4> <e> <1> : "𓎑"  U13391  # EGYPTIAN HIEROGLYPH V020K (40)
+<Multi_key> <bracketright> <5> <E> <1> : "𓎊"  U1338A  # EGYPTIAN HIEROGLYPH V020D (50)
+<Multi_key> <bracketright> <5> <e> <1> : "𓎒"  U13392  # EGYPTIAN HIEROGLYPH V020L (50)
+<Multi_key> <bracketright> <6> <E> <1> : "𓎋"  U1338B  # EGYPTIAN HIEROGLYPH V020E (60)
+<Multi_key> <bracketright> <7> <E> <1> : "𓎌"  U1338C  # EGYPTIAN HIEROGLYPH V020F (70)
+<Multi_key> <bracketright> <8> <E> <1> : "𓎍"  U1338D  # EGYPTIAN HIEROGLYPH V020G (80)
+<Multi_key> <bracketright> <9> <E> <1> : "𓎎"  U1338E  # EGYPTIAN HIEROGLYPH V020H (90)
+
+<Multi_key> <bracketright> <1> <E> <2> : "𓍢"  U13362  # EGYPTIAN HIEROGLYPH V001 (100)
+<Multi_key> <bracketright> <2> <E> <2> : "𓍣"  U13363  # EGYPTIAN HIEROGLYPH V001A (200)
+<Multi_key> <bracketright> <3> <E> <2> : "𓍤"  U13364  # EGYPTIAN HIEROGLYPH V001B (300)
+<Multi_key> <bracketright> <4> <E> <2> : "𓍥"  U13365  # EGYPTIAN HIEROGLYPH V001C (400)
+<Multi_key> <bracketright> <5> <E> <2> : "𓍦"  U13366  # EGYPTIAN HIEROGLYPH V001D (500)
+<Multi_key> <bracketright> <5> <e> <2> : "𓍫"  U1336B  # EGYPTIAN HIEROGLYPH V001I (500)
+<Multi_key> <bracketright> <6> <E> <2> : "𓍧"  U13367  # EGYPTIAN HIEROGLYPH V001E (600)
+<Multi_key> <bracketright> <7> <E> <2> : "𓍨"  U13368  # EGYPTIAN HIEROGLYPH V001F (700)
+<Multi_key> <bracketright> <8> <E> <2> : "𓍩"  U13369  # EGYPTIAN HIEROGLYPH V001G (800)
+<Multi_key> <bracketright> <9> <E> <2> : "𓍪"  U1336A  # EGYPTIAN HIEROGLYPH V001H (900)
+
+<Multi_key> <bracketright> <1> <E> <3> : "𓆼"  U131BC  # EGYPTIAN HIEROGLYPH M012 (1,000)
+<Multi_key> <bracketright> <2> <E> <3> : "𓆽"  U131BD  # EGYPTIAN HIEROGLYPH M012A (2,000)
+<Multi_key> <bracketright> <3> <E> <3> : "𓆾"  U131BE  # EGYPTIAN HIEROGLYPH M012B (3,000)
+<Multi_key> <bracketright> <4> <E> <3> : "𓆿"  U131BF  # EGYPTIAN HIEROGLYPH M012C (4,000)
+<Multi_key> <bracketright> <5> <E> <3> : "𓇀"  U131C0  # EGYPTIAN HIEROGLYPH M012D (5,000)
+<Multi_key> <bracketright> <6> <E> <3> : "𓇁"  U131C1  # EGYPTIAN HIEROGLYPH M012E (6,000)
+<Multi_key> <bracketright> <7> <E> <3> : "𓇂"  U131C2  # EGYPTIAN HIEROGLYPH M012F (7,000)
+<Multi_key> <bracketright> <8> <E> <3> : "𓇃"  U131C3  # EGYPTIAN HIEROGLYPH M012G (8,000)
+<Multi_key> <bracketright> <9> <E> <3> : "𓇄"  U131C4  # EGYPTIAN HIEROGLYPH M012H (9,000)
+
+<Multi_key> <bracketright> <1> <E> <4> : "𓂭"  U130AD  # EGYPTIAN HIEROGLYPH D050 (10,000)
+<Multi_key> <bracketright> <2> <E> <4> : "𓂮"  U130AE  # EGYPTIAN HIEROGLYPH D050A (20,000)
+<Multi_key> <bracketright> <3> <E> <4> : "𓂯"  U130AF  # EGYPTIAN HIEROGLYPH D050B (30,000)
+<Multi_key> <bracketright> <4> <E> <4> : "𓂰"  U130B0  # EGYPTIAN HIEROGLYPH D050C (40,000)
+<Multi_key> <bracketright> <5> <E> <4> : "𓂱"  U130B1  # EGYPTIAN HIEROGLYPH D050D (50,000)
+<Multi_key> <bracketright> <5> <e> <4> : "𓂶"  U130B6  # EGYPTIAN HIEROGLYPH D050I (50,000)
+<Multi_key> <bracketright> <6> <E> <4> : "𓂲"  U130B2  # EGYPTIAN HIEROGLYPH D050E (60,000)
+<Multi_key> <bracketright> <7> <E> <4> : "𓂳"  U130B3  # EGYPTIAN HIEROGLYPH D050F (70,000)
+<Multi_key> <bracketright> <8> <E> <4> : "𓂴"  U130B4  # EGYPTIAN HIEROGLYPH D050G (80,000)
+<Multi_key> <bracketright> <9> <E> <4> : "𓂵"  U130B5  # EGYPTIAN HIEROGLYPH D050H (90,000)
+
+<Multi_key> <bracketright> <1> <E> <5> : "𓆐"  U13190  # EGYPTIAN HIEROGLYPH I008 (100,000)
+<Multi_key> <bracketright> <1> <E> <6> : "𓁨"  U13068  # EGYPTIAN HIEROGLYPH C011 (1,000,000)
+
+<Multi_key> <bracketright> <1> <slash> <Return> : "𓂋"  U1308B  # EGYPTIAN HIEROGLYPH D021 (1/)
+<Multi_key> <bracketright> <1> <slash> <2> : "𓂁"  U13081  # EGYPTIAN HIEROGLYPH D011 (1/2)
+<Multi_key> <bracketright> <1> <slash> <4> : "𓂂"  U13082  # EGYPTIAN HIEROGLYPH D012 (1/4)
+<Multi_key> <bracketright> <1> <slash> <8> : "𓂃"  U13083  # EGYPTIAN HIEROGLYPH D013 (1/8)
+<Multi_key> <bracketright> <1> <slash> <1> <6> : "𓂄"  U13084  # EGYPTIAN HIEROGLYPH D014 (1/16)
+<Multi_key> <bracketright> <1> <slash> <3> <2> : "𓂅"  U13085  # EGYPTIAN HIEROGLYPH D015 (1/32)
+<Multi_key> <bracketright> <1> <slash> <6> <4> : "𓂆"  U13086  # EGYPTIAN HIEROGLYPH D016 (1/64)
+<Multi_key> <bracketright> <2> <slash> <3> : "𓂌"  U1308C  # EGYPTIAN HIEROGLYPH D022 (2/3)
+<Multi_key> <bracketright> <3> <slash> <4> : "𓂍"  U1308D  # EGYPTIAN HIEROGLYPH D023 (3/4)
+
 ####################
 # Geometric shapes #
 ####################
@@ -14039,7 +14629,7 @@ include "%L"
 
 # Convention: # + number + type suffix
 #
-# Also see various non-Latin script numerals above
+# Also see Hieroglphs and various non-Latin script numerals above
 
 # (a) Aegean numerals
 
