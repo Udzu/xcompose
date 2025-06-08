@@ -3169,9 +3169,9 @@ include "%L"
 
 # default glyph types are (c = characters x = extra characters # = numbers ; = punctuation)
 
-###################################################################
-# (a) Arabic (and Mandaic, Syriac, Neo-Tifinagh, Thaana & Yezidi) #
-###################################################################
+############################################################################
+# (a) Arabic (and Mandaic, Osmanya, Syriac, Neo-Tifinagh, Thaana & Yezidi) #
+############################################################################
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -3287,6 +3287,52 @@ include "%L"
 <Multi_key> <a> <m> <period> <Return> : "࡛" U085B   # MANDAIC GEMINATION MARK
 
 <Multi_key> <a> <m> <period> <o> : "࡞" U085E   # MANDAIC PUNCTUATION
+
+# (o = Osmanya)
+
+<Multi_key> <a> <o> <apostrophe> : "𐒀"  U10480  # OSMANYA LETTER ALEF
+<Multi_key> <a> <o> <b> : "𐒁"  U10481  # OSMANYA LETTER BA
+<Multi_key> <a> <o> <t> : "𐒂"  U10482  # OSMANYA LETTER TA
+<Multi_key> <a> <o> <j> : "𐒃"  U10483  # OSMANYA LETTER JA
+<Multi_key> <a> <o> <x> : "𐒄"  U10484  # OSMANYA LETTER XA
+<Multi_key> <a> <o> <K> : "𐒅"  U10485  # OSMANYA LETTER KHA
+<Multi_key> <a> <o> <d> : "𐒆"  U10486  # OSMANYA LETTER DEEL
+<Multi_key> <a> <o> <r> : "𐒇"  U10487  # OSMANYA LETTER RA
+<Multi_key> <a> <o> <s> : "𐒈"  U10488  # OSMANYA LETTER SA
+<Multi_key> <a> <o> <S> : "𐒉"  U10489  # OSMANYA LETTER SHIIN
+<Multi_key> <a> <o> <D> : "𐒊"  U1048A  # OSMANYA LETTER DHA
+<Multi_key> <a> <o> <c> : "𐒋"  U1048B  # OSMANYA LETTER CAYN
+<Multi_key> <a> <o> <g> : "𐒌"  U1048C  # OSMANYA LETTER GA
+<Multi_key> <a> <o> <f> : "𐒍"  U1048D  # OSMANYA LETTER FA
+<Multi_key> <a> <o> <q> : "𐒎"  U1048E  # OSMANYA LETTER QAAF
+<Multi_key> <a> <o> <k> : "𐒏"  U1048F  # OSMANYA LETTER KAAF
+<Multi_key> <a> <o> <l> : "𐒐"  U10490  # OSMANYA LETTER LAAN
+<Multi_key> <a> <o> <m> : "𐒑"  U10491  # OSMANYA LETTER MIIN
+<Multi_key> <a> <o> <n> : "𐒒"  U10492  # OSMANYA LETTER NUUN
+<Multi_key> <a> <o> <w> : "𐒓"  U10493  # OSMANYA LETTER WAW
+<Multi_key> <a> <o> <h> : "𐒔"  U10494  # OSMANYA LETTER HA
+<Multi_key> <a> <o> <y> : "𐒕"  U10495  # OSMANYA LETTER YA
+<Multi_key> <a> <o> <a> : "𐒖"  U10496  # OSMANYA LETTER A
+<Multi_key> <a> <o> <e> : "𐒗"  U10497  # OSMANYA LETTER E
+<Multi_key> <a> <o> <i> : "𐒘"  U10498  # OSMANYA LETTER I
+<Multi_key> <a> <o> <o> : "𐒙"  U10499  # OSMANYA LETTER O
+<Multi_key> <a> <o> <u> : "𐒚"  U1049A  # OSMANYA LETTER U
+<Multi_key> <a> <o> <minus> <u> : "𐒓"  U10493  # OSMANYA LETTER WAW
+<Multi_key> <a> <o> <minus> <i> : "𐒕"  U10495  # OSMANYA LETTER YA
+<Multi_key> <a> <o> <minus> <a> : "𐒛"  U1049B  # OSMANYA LETTER AA
+<Multi_key> <a> <o> <minus> <e> : "𐒜"  U1049C  # OSMANYA LETTER EE
+<Multi_key> <a> <o> <minus> <o> : "𐒝"  U1049D  # OSMANYA LETTER OO
+
+<Multi_key> <a> <o> <numbersign> <0> : "𐒠"  U104A0  # OSMANYA DIGIT ZERO
+<Multi_key> <a> <o> <numbersign> <1> : "𐒡"  U104A1  # OSMANYA DIGIT ONE
+<Multi_key> <a> <o> <numbersign> <2> : "𐒢"  U104A2  # OSMANYA DIGIT TWO
+<Multi_key> <a> <o> <numbersign> <3> : "𐒣"  U104A3  # OSMANYA DIGIT THREE
+<Multi_key> <a> <o> <numbersign> <4> : "𐒤"  U104A4  # OSMANYA DIGIT FOUR
+<Multi_key> <a> <o> <numbersign> <5> : "𐒥"  U104A5  # OSMANYA DIGIT FIVE
+<Multi_key> <a> <o> <numbersign> <6> : "𐒦"  U104A6  # OSMANYA DIGIT SIX
+<Multi_key> <a> <o> <numbersign> <7> : "𐒧"  U104A7  # OSMANYA DIGIT SEVEN
+<Multi_key> <a> <o> <numbersign> <8> : "𐒨"  U104A8  # OSMANYA DIGIT EIGHT
+<Multi_key> <a> <o> <numbersign> <9> : "𐒩"  U104A9  # OSMANYA DIGIT NINE
 
 # (s = Syriac)
 
