@@ -744,6 +744,7 @@ include "%L"
 <Multi_key> <minus> <minus> <asciicircum> : "˗"  U02D7   # MODIFIER LETTER MINUS SIGN (annoyingly inconsistent)
 <Multi_key> <asciicircum> <asciicircum> <bar> : "ꜛ"  UA71B   # MODIFIER LETTER RAISED UP ARROW
 <Multi_key> <asciicircum> <v> <bar> : "ꜜ"  UA71C   # MODIFIER LETTER RAISED DOWN ARROW
+<Multi_key> <apostrophe> <space>    : "ʼ"  U02BC  # MODIFIER LETTER APOSTROPHE
 
 <Multi_key> <apostrophe> <1>        : "ˈ"  U02C8   # MODIFIER LETTER VERTICAL LINE
 <Multi_key> <apostrophe> <2>        : "ˌ"  U02CC   # MODIFIER LETTER LOW VERTICAL LINE
@@ -4851,59 +4852,59 @@ include "%L"
 
 # Consonants
 
-<Multi_key> <b> <n> <k> <space> : "ꠇ"  UA807  # SYLOTI NAGRI LETTER KO
-<Multi_key> <b> <n> <k> <h> : "ꠈ"  UA808  # SYLOTI NAGRI LETTER KHO
-<Multi_key> <b> <n> <g> <space> : "ꠉ"  UA809  # SYLOTI NAGRI LETTER GO
-<Multi_key> <b> <n> <g> <h> : "ꠊ"  UA80A  # SYLOTI NAGRI LETTER GHO
-<Multi_key> <b> <n> <period> <Return> : "ꠋ"  UA80B  # SYLOTI NAGRI SIGN ANUSVARA
-<Multi_key> <b> <n> <c> <space> : "ꠌ"  UA80C  # SYLOTI NAGRI LETTER CO
-<Multi_key> <b> <n> <c> <h> : "ꠍ"  UA80D  # SYLOTI NAGRI LETTER CHO
-<Multi_key> <b> <n> <j> <space> : "ꠎ"  UA80E  # SYLOTI NAGRI LETTER JO
-<Multi_key> <b> <n> <j> <h> : "ꠏ"  UA80F  # SYLOTI NAGRI LETTER JHO
+<Multi_key> <b> <n> <k> <space>          : "ꠇ"  UA807  # SYLOTI NAGRI LETTER KO
+<Multi_key> <b> <n> <k> <h>              : "ꠈ"  UA808  # SYLOTI NAGRI LETTER KHO
+<Multi_key> <b> <n> <g> <space>          : "ꠉ"  UA809  # SYLOTI NAGRI LETTER GO
+<Multi_key> <b> <n> <g> <h>              : "ꠊ"  UA80A  # SYLOTI NAGRI LETTER GHO
+<Multi_key> <b> <n> <period> <Return>    : "ꠋ"  UA80B  # SYLOTI NAGRI SIGN ANUSVARA
+<Multi_key> <b> <n> <c> <space>          : "ꠌ"  UA80C  # SYLOTI NAGRI LETTER CO
+<Multi_key> <b> <n> <c> <h>              : "ꠍ"  UA80D  # SYLOTI NAGRI LETTER CHO
+<Multi_key> <b> <n> <j> <space>          : "ꠎ"  UA80E  # SYLOTI NAGRI LETTER JO
+<Multi_key> <b> <n> <j> <h>              : "ꠏ"  UA80F  # SYLOTI NAGRI LETTER JHO
 <Multi_key> <b> <n> <period> <t> <space> : "ꠐ"  UA810  # SYLOTI NAGRI LETTER TTO
-<Multi_key> <b> <n> <period> <t> <h> : "ꠑ"  UA811  # SYLOTI NAGRI LETTER TTHO
+<Multi_key> <b> <n> <period> <t> <h>     : "ꠑ"  UA811  # SYLOTI NAGRI LETTER TTHO
 <Multi_key> <b> <n> <period> <d> <space> : "ꠒ"  UA812  # SYLOTI NAGRI LETTER DDO
-<Multi_key> <b> <n> <period> <d> <h> : "ꠓ"  UA813  # SYLOTI NAGRI LETTER DDHO
-<Multi_key> <b> <n> <t> <space> : "ꠔ"  UA814  # SYLOTI NAGRI LETTER TO
-<Multi_key> <b> <n> <t> <h> : "ꠕ"  UA815  # SYLOTI NAGRI LETTER THO
-<Multi_key> <b> <n> <d> <space> : "ꠖ"  UA816  # SYLOTI NAGRI LETTER DO
-<Multi_key> <b> <n> <d> <h> : "ꠗ"  UA817  # SYLOTI NAGRI LETTER DHO
-<Multi_key> <b> <n> <n> : "ꠘ"  UA818  # SYLOTI NAGRI LETTER NO
-<Multi_key> <b> <n> <p> <space> : "ꠙ"  UA819  # SYLOTI NAGRI LETTER PO
-<Multi_key> <b> <n> <p> <h> : "ꠚ"  UA81A  # SYLOTI NAGRI LETTER PHO
-<Multi_key> <b> <n> <b> <space> : "ꠛ"  UA81B  # SYLOTI NAGRI LETTER BO
-<Multi_key> <b> <n> <b> <h> : "ꠜ"  UA81C  # SYLOTI NAGRI LETTER BHO
-<Multi_key> <b> <n> <m> : "ꠝ"  UA81D  # SYLOTI NAGRI LETTER MO
-<Multi_key> <b> <n> <r> : "ꠞ"  UA81E  # SYLOTI NAGRI LETTER RO
-<Multi_key> <b> <n> <l> : "ꠟ"  UA81F  # SYLOTI NAGRI LETTER LO
-<Multi_key> <b> <n> <underscore> <r> : "ꠠ"  UA820  # SYLOTI NAGRI LETTER RRO
-<Multi_key> <b> <n> <s> : "ꠡ"  UA821  # SYLOTI NAGRI LETTER SO
-<Multi_key> <b> <n> <h> : "ꠢ"  UA822  # SYLOTI NAGRI LETTER HO
+<Multi_key> <b> <n> <period> <d> <h>     : "ꠓ"  UA813  # SYLOTI NAGRI LETTER DDHO
+<Multi_key> <b> <n> <t> <space>          : "ꠔ"  UA814  # SYLOTI NAGRI LETTER TO
+<Multi_key> <b> <n> <t> <h>              : "ꠕ"  UA815  # SYLOTI NAGRI LETTER THO
+<Multi_key> <b> <n> <d> <space>          : "ꠖ"  UA816  # SYLOTI NAGRI LETTER DO
+<Multi_key> <b> <n> <d> <h>              : "ꠗ"  UA817  # SYLOTI NAGRI LETTER DHO
+<Multi_key> <b> <n> <n>                  : "ꠘ"  UA818  # SYLOTI NAGRI LETTER NO
+<Multi_key> <b> <n> <p> <space>          : "ꠙ"  UA819  # SYLOTI NAGRI LETTER PO
+<Multi_key> <b> <n> <p> <h>              : "ꠚ"  UA81A  # SYLOTI NAGRI LETTER PHO
+<Multi_key> <b> <n> <b> <space>          : "ꠛ"  UA81B  # SYLOTI NAGRI LETTER BO
+<Multi_key> <b> <n> <b> <h>              : "ꠜ"  UA81C  # SYLOTI NAGRI LETTER BHO
+<Multi_key> <b> <n> <m>                  : "ꠝ"  UA81D  # SYLOTI NAGRI LETTER MO
+<Multi_key> <b> <n> <r>                  : "ꠞ"  UA81E  # SYLOTI NAGRI LETTER RO
+<Multi_key> <b> <n> <l>                  : "ꠟ"  UA81F  # SYLOTI NAGRI LETTER LO
+<Multi_key> <b> <n> <underscore> <r>     : "ꠠ"  UA820  # SYLOTI NAGRI LETTER RRO
+<Multi_key> <b> <n> <s>                  : "ꠡ"  UA821  # SYLOTI NAGRI LETTER SO
+<Multi_key> <b> <n> <h>                  : "ꠢ"  UA822  # SYLOTI NAGRI LETTER HO
 
 # Independent vowels
-<Multi_key> <b> <n> <a> <space> : "ꠀ"  UA800  # SYLOTI NAGRI LETTER A
-<Multi_key> <b> <n> <i> <space> : "ꠁ"  UA801  # SYLOTI NAGRI LETTER I
-<Multi_key> <b> <n> <u> <space> : "ꠃ"  UA803  # SYLOTI NAGRI LETTER U
-<Multi_key> <b> <n> <e> <e> <space> : "ꠄ"  UA804  # SYLOTI NAGRI LETTER E
-<Multi_key> <b> <n> <o> <o> <space> : "ꠅ"  UA805  # SYLOTI NAGRI LETTER O
+<Multi_key> <b> <n> <a> <space>          : "ꠀ"  UA800  # SYLOTI NAGRI LETTER A
+<Multi_key> <b> <n> <i> <space>          : "ꠁ"  UA801  # SYLOTI NAGRI LETTER I
+<Multi_key> <b> <n> <u> <space>          : "ꠃ"  UA803  # SYLOTI NAGRI LETTER U
+<Multi_key> <b> <n> <e> <e> <space>      : "ꠄ"  UA804  # SYLOTI NAGRI LETTER E
+<Multi_key> <b> <n> <o> <o> <space>      : "ꠅ"  UA805  # SYLOTI NAGRI LETTER O
 
 # Dependent vowels
-<Multi_key> <b> <n> <a> <Return>  : "ꠣ"  UA823  # SYLOTI NAGRI VOWEL SIGN A
-<Multi_key> <b> <n> <i> <Return> : "ꠤ"  UA824  # SYLOTI NAGRI VOWEL SIGN I
-<Multi_key> <b> <n> <u> <Return> : "ꠥ"  UA825  # SYLOTI NAGRI VOWEL SIGN U
-<Multi_key> <b> <n> <e> <e> <Return> : "ꠦ"  UA826  # SYLOTI NAGRI VOWEL SIGN E
-<Multi_key> <b> <n> <o> <o> <Return> : "ꠧ"  UA827  # SYLOTI NAGRI VOWEL SIGN OO
-<Multi_key> <b> <n> <o> <i> <Return> : "ꠂ"  UA802  # SYLOTI NAGRI SIGN DVISVARA
-<Multi_key> <b> <n> <0> <Return> : "꠆"  UA806  # SYLOTI NAGRI SIGN HASANTA (VIRAMA)
+<Multi_key> <b> <n> <a> <Return>         : "ꠣ"  UA823  # SYLOTI NAGRI VOWEL SIGN A
+<Multi_key> <b> <n> <i> <Return>         : "ꠤ"  UA824  # SYLOTI NAGRI VOWEL SIGN I
+<Multi_key> <b> <n> <u> <Return>         : "ꠥ"  UA825  # SYLOTI NAGRI VOWEL SIGN U
+<Multi_key> <b> <n> <e> <e> <Return>     : "ꠦ"  UA826  # SYLOTI NAGRI VOWEL SIGN E
+<Multi_key> <b> <n> <o> <o> <Return>     : "ꠧ"  UA827  # SYLOTI NAGRI VOWEL SIGN OO
+<Multi_key> <b> <n> <o> <i> <Return>     : "ꠂ"  UA802  # SYLOTI NAGRI SIGN DVISVARA
+<Multi_key> <b> <n> <0> <Return>         : "꠆"  UA806  # SYLOTI NAGRI SIGN HASANTA (VIRAMA)
 <Multi_key> <b> <n> <asciicircum> <Return> : "꠆"  UA806  # SYLOTI NAGRI SIGN HASANTA (VIRAMA)
-<Multi_key> <b> <n> <0> <0> <Return> : "꠬"  UA82C  # SYLOTI NAGRI SIGN ALTERNATE HASANTA
+<Multi_key> <b> <n> <0> <0> <Return>     : "꠬"  UA82C  # SYLOTI NAGRI SIGN ALTERNATE HASANTA
 <Multi_key> <b> <n> <backslash> <Return> : "꠬"  UA82C  # SYLOTI NAGRI SIGN ALTERNATE HASANTA
 
 # Other signs
-<Multi_key> <b> <n> <o> <1> : "꠨"  UA828  # SYLOTI NAGRI POETRY MARK-1
-<Multi_key> <b> <n> <o> <2> : "꠩"  UA829  # SYLOTI NAGRI POETRY MARK-2
-<Multi_key> <b> <n> <o> <3> : "꠪"  UA82A  # SYLOTI NAGRI POETRY MARK-3
-<Multi_key> <b> <n> <o> <4> : "꠫"  UA82B  # SYLOTI NAGRI POETRY MARK-4
+<Multi_key> <b> <n> <o> <1>              : "꠨"  UA828  # SYLOTI NAGRI POETRY MARK-1
+<Multi_key> <b> <n> <o> <2>              : "꠩"  UA829  # SYLOTI NAGRI POETRY MARK-2
+<Multi_key> <b> <n> <o> <3>              : "꠪"  UA82A  # SYLOTI NAGRI POETRY MARK-3
+<Multi_key> <b> <n> <o> <4>              : "꠫"  UA82B  # SYLOTI NAGRI POETRY MARK-4
 
 # (O = Odia)
 
