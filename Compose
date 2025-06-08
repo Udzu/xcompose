@@ -4416,13 +4416,13 @@ include "%L"
 
 # (j = Mahajani) (not the best abbreviation but not much choice)
 
-# Independent vowels
+# Vowels
 
-<Multi_key> <b> <j> <a> <space>                    : "𑅐"  U11150  # MAHAJANI LETTER A
-<Multi_key> <b> <j> <i> <space>                    : "𑅑"  U11151  # MAHAJANI LETTER I
-<Multi_key> <b> <j> <u> <space>                    : "𑅒"  U11152  # MAHAJANI LETTER U
-<Multi_key> <b> <j> <e> <space>                    : "𑅓"  U11153  # MAHAJANI LETTER E
-<Multi_key> <b> <j> <o> <space>                    : "𑅔"  U11154  # MAHAJANI LETTER O
+<Multi_key> <b> <j> <a>                            : "𑅐"  U11150  # MAHAJANI LETTER A
+<Multi_key> <b> <j> <i>                            : "𑅑"  U11151  # MAHAJANI LETTER I
+<Multi_key> <b> <j> <u>                            : "𑅒"  U11152  # MAHAJANI LETTER U
+<Multi_key> <b> <j> <e>                            : "𑅓"  U11153  # MAHAJANI LETTER E
+<Multi_key> <b> <j> <o>                            : "𑅔"  U11154  # MAHAJANI LETTER O
 
 # Consonants
 
@@ -4460,7 +4460,7 @@ include "%L"
 # Other signs
 
 <Multi_key> <b> <j> <underscore> <period> <Return> : "𑅳"  U11173  # MAHAJANI SIGN NUKTA
-<Multi_key> <b> <j> <o> <period>                   : "𑅴"  U11174  # MAHAJANI ABBREVIATION SIGN
+<Multi_key> <b> <j> <asciicircum> <period>         : "𑅴"  U11174  # MAHAJANI ABBREVIATION SIGN
 <Multi_key> <b> <j> <Multi_key> <S> <O>            : "𑅵"  U11175  # MAHAJANI SECTION MARK
 
 # (k = Kannada)
@@ -9064,9 +9064,9 @@ include "%L"
 <Multi_key> <T> <t> <i> <Return> : "ᝲ"  U1772  # TAGBANWA VOWEL SIGN I
 <Multi_key> <T> <t> <u> <Return> : "ᝳ"  U1773  # TAGBANWA VOWEL SIGN U
 
-##########################################################################
-# (z) Zhuyin/Bopomofo (and Fraser, Mongolian, Pollard, Tai Le & Tibetan) #
-##########################################################################
+#####################################################################################
+# (z) Zhuyin/Bopomofo (and Fraser, Mongolian, ʼPhags-Pa, Pollard, Tai Le & Tibetan) #
+#####################################################################################
 
 <Multi_key> <z> <c> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
 <Multi_key> <z> <c> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
@@ -9241,7 +9241,7 @@ include "%L"
 <Multi_key> <z> <f> <u> <h> : "ꓶ"  UA4F6  # LISU LETTER UH
 
 <Multi_key> <z> <f> <period> <space> : "ꓸ"  UA4F8  # LISU LETTER TONE MYA TI
-<Multi_key> <z> <f> <comma> <space> : "ꓹ"  UA4F9  # LISU LETTER TONE NA PO
+<Multi_key> <z> <f> <comma> : "ꓹ"  UA4F9  # LISU LETTER TONE NA PO
 <Multi_key> <z> <f> <period> <period> : "ꓺ"  UA4FA  # LISU LETTER TONE MYA CYA
 <Multi_key> <z> <f> <period> <comma> : "ꓻ"  UA4FB  # LISU LETTER TONE MYA BO
 <Multi_key> <z> <f> <semicolon> : "ꓼ"  UA4FC  # LISU LETTER TONE MYA NA
@@ -9433,7 +9433,60 @@ include "%L"
 <Multi_key> <z> <p> <T> <asciicircum> <Return> : "𖾑"  U16F91  # MIAO TONE ABOVE
 <Multi_key> <z> <p> <T> <v> <Return> : "𖾒"  U16F92  # MIAO TONE BELOW
 
-# (t = Tibetan) follows ISO 15919 like other Brahmic scripts, but code didn't fit there
+# (P = ʼPhags-Pa) follows ISO 15919 like other Brahmic scripts
+
+<Multi_key> <z> <P> <k> <space> : "ꡀ"  UA840  # PHAGS-PA LETTER KA
+<Multi_key> <z> <P> <k> <h> : "ꡁ"  UA841  # PHAGS-PA LETTER KHA
+<Multi_key> <z> <P> <g> <space> : "ꡂ"  UA842  # PHAGS-PA LETTER GA
+<Multi_key> <z> <P> <semicolon> <n> : "ꡃ"  UA843  # PHAGS-PA LETTER NGA
+<Multi_key> <z> <P> <c> <space> : "ꡄ"  UA844  # PHAGS-PA LETTER CA
+<Multi_key> <z> <P> <c> <h> : "ꡅ"  UA845  # PHAGS-PA LETTER CHA
+<Multi_key> <z> <P> <j> : "ꡆ"  UA846  # PHAGS-PA LETTER JA
+<Multi_key> <z> <P> <asciitilde> <n> : "ꡇ"  UA847  # PHAGS-PA LETTER NYA
+<Multi_key> <z> <P> <t> <space> : "ꡈ"  UA848  # PHAGS-PA LETTER TA
+<Multi_key> <z> <P> <t> <h> : "ꡉ"  UA849  # PHAGS-PA LETTER THA
+<Multi_key> <z> <P> <d> <space> : "ꡊ"  UA84A  # PHAGS-PA LETTER DA
+<Multi_key> <z> <P> <n> : "ꡋ"  UA84B  # PHAGS-PA LETTER NA
+<Multi_key> <z> <P> <p> <space> : "ꡌ"  UA84C  # PHAGS-PA LETTER PA
+<Multi_key> <z> <P> <p> <h> : "ꡍ"  UA84D  # PHAGS-PA LETTER PHA
+<Multi_key> <z> <P> <b> : "ꡎ"  UA84E  # PHAGS-PA LETTER BA
+<Multi_key> <z> <P> <m> : "ꡏ"  UA84F  # PHAGS-PA LETTER MA
+<Multi_key> <z> <P> <t> <s> <space> : "ꡐ"  UA850  # PHAGS-PA LETTER TSA
+<Multi_key> <z> <P> <t> <s> <h> : "ꡑ"  UA851  # PHAGS-PA LETTER TSHA
+<Multi_key> <z> <P> <d> <z> : "ꡒ"  UA852  # PHAGS-PA LETTER DZA
+<Multi_key> <z> <P> <w> : "ꡓ"  UA853  # PHAGS-PA LETTER WA
+<Multi_key> <z> <P> <z> <h> : "ꡔ"  UA854  # PHAGS-PA LETTER ZHA
+<Multi_key> <z> <P> <z> <space> : "ꡕ"  UA855  # PHAGS-PA LETTER ZA
+<Multi_key> <z> <P> <y> : "ꡗ"  UA857  # PHAGS-PA LETTER YA
+<Multi_key> <z> <P> <r> : "ꡘ"  UA858  # PHAGS-PA LETTER RA
+<Multi_key> <z> <P> <l> : "ꡙ"  UA859  # PHAGS-PA LETTER LA
+<Multi_key> <z> <P> <semicolon> <s> : "ꡚ"  UA85A  # PHAGS-PA LETTER SHA
+<Multi_key> <z> <P> <s> : "ꡛ"  UA85B  # PHAGS-PA LETTER SA
+<Multi_key> <z> <P> <h> : "ꡜ"  UA85C  # PHAGS-PA LETTER HA
+<Multi_key> <z> <P> <q> : "ꡢ"  UA862  # PHAGS-PA LETTER QA
+<Multi_key> <z> <P> <x> : "ꡣ"  UA863  # PHAGS-PA LETTER XA
+<Multi_key> <z> <P> <f> : "ꡤ"  UA864  # PHAGS-PA LETTER FA
+<Multi_key> <z> <P> <g> <g> : "ꡥ"  UA865  # PHAGS-PA LETTER GGA
+<Multi_key> <z> <P> <period> <t> <space> : "ꡩ"  UA869  # PHAGS-PA LETTER TTA
+<Multi_key> <z> <P> <period> <t> <h> : "ꡪ"  UA86A  # PHAGS-PA LETTER TTHA
+<Multi_key> <z> <P> <period> <d> : "ꡫ"  UA86B  # PHAGS-PA LETTER DDA
+<Multi_key> <z> <P> <period> <n> : "ꡬ"  UA86C  # PHAGS-PA LETTER NNA
+
+<Multi_key> <z> <P> <a> : "ꡝ"  UA85D  # PHAGS-PA LETTER A
+<Multi_key> <z> <P> <i> : "ꡞ"  UA85E  # PHAGS-PA LETTER I
+<Multi_key> <z> <P> <u> : "ꡟ"  UA85F  # PHAGS-PA LETTER U
+<Multi_key> <z> <P> <e> <space> : "ꡠ"  UA860  # PHAGS-PA LETTER E
+<Multi_key> <z> <P> <o> : "ꡡ"  UA861  # PHAGS-PA LETTER O
+<Multi_key> <z> <P> <e> <e> : "ꡦ"  UA866  # PHAGS-PA LETTER EE
+
+<Multi_key> <z> <P> <underscore> <a> : "ꡖ"  UA856  # PHAGS-PA LETTER SMALL A
+<Multi_key> <z> <P> <underscore> <w> : "ꡧ"  UA867  # PHAGS-PA SUBJOINED LETTER WA
+<Multi_key> <z> <P> <underscore> <y> : "ꡨ"  UA868  # PHAGS-PA SUBJOINED LETTER YA
+<Multi_key> <z> <P> <underscore> <r> : "ꡱ"  UA871  # PHAGS-PA SUBJOINED LETTER RA
+
+<Multi_key> <z> <P> <period> <parenright> : "ꡳ"  UA873  # PHAGS-PA LETTER CANDRABINDU
+
+# (t = Tibetan) follows ISO 15919 like other Brahmic scripts
 
 # Consonants
 
@@ -9444,7 +9497,7 @@ include "%L"
 <Multi_key> <z> <t> <semicolon> <n> : "ང" U0F44   # TIBETAN LETTER NGA
 <Multi_key> <z> <t> <c> <space> : "ཅ" U0F45   # TIBETAN LETTER CA
 <Multi_key> <z> <t> <c> <h> : "ཆ" U0F46   # TIBETAN LETTER CHA
-<Multi_key> <z> <t> <j> <space> : "ཇ" U0F47   # TIBETAN LETTER JA
+<Multi_key> <z> <t> <j> : "ཇ" U0F47   # TIBETAN LETTER JA
 <Multi_key> <z> <t> <asciitilde> <n> : "ཉ" U0F49   # TIBETAN LETTER NYA
 <Multi_key> <z> <t> <period> <t> <space> : "ཊ" U0F4A   # TIBETAN LETTER TTA
 <Multi_key> <z> <t> <period> <t> <h> : "ཋ" U0F4B   # TIBETAN LETTER TTHA
