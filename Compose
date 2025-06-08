@@ -7533,15 +7533,16 @@ include "%L"
 <Multi_key> <h> <c> <o>         : "וֹ"  UFB4B   # HEBREW LETTER VAV WITH HOLAM
 <Multi_key> <h> <c> <u>         : "וּ"  U05D5 U05BC   # HEBREW LETTER VAV WITH SHURUK
 <Multi_key> <h> <c> <w>         : "װ"  U05F0   # HEBREW LIGATURE YIDDISH DOUBLE VAV
+<Multi_key> <h> <c> <O> <Y>     : "ױ"  U05F1   # HEBREW LIGATURE YIDDISH VAV YOD
 <Multi_key> <h> <c> <Y>         : "ײ"  U05F2   # HEBREW LIGATURE YIDDISH DOUBLE YOD
 <Multi_key> <h> <c> <underscore> <Y> : "ײַ"  UFB1F  # HEBREW LIGATURE YIDDISH YOD YOD PATAH
 <Multi_key> <h> <c> <underscore> <a> : "אַ"  UFB2E  # HEBREW LETTER ALEF WITH PATAH
 <Multi_key> <h> <c> <underscore> <T> <a> : "אָ"  UFB2F  # HEBREW LETTER ALEF WITH QAMATS
 
 <Multi_key> <h> <semicolon> <colon> <Return>                   : "ְ"  U05B0   # HEBREW POINT SHEVA
-<Multi_key> <h> <semicolon> <v> <period> <period> <Return>     : "ֱ"  U05B1   # HEBREW POINT HATAF SEGOL
-<Multi_key> <h> <semicolon> <minus> <period> <period> <Return> : "ֲ"  U05B2   # HEBREW POINT HATAF PATAH
-<Multi_key> <h> <semicolon> <T> <period> <period> <Return>     : "ֳ"  U05B3   # HEBREW POINT HATAF QAMATS
+<Multi_key> <h> <semicolon> <v> <colon> <Return>               : "ֱ"  U05B1   # HEBREW POINT HATAF SEGOL
+<Multi_key> <h> <semicolon> <minus> <colon> <Return>           : "ֲ"  U05B2   # HEBREW POINT HATAF PATAH
+<Multi_key> <h> <semicolon> <T> <colon> <Return>               : "ֳ"  U05B3   # HEBREW POINT HATAF QAMATS
 <Multi_key> <h> <semicolon> <period> <Return>                  : "ִ"  U05B4   # HEBREW POINT HIRIQ
 <Multi_key> <h> <semicolon> <period> <period> <Return>         : "ֵ"  U05B5   # HEBREW POINT TSERE
 <Multi_key> <h> <semicolon> <v> <Return>                       : "ֶ"  U05B6   # HEBREW POINT SEGOL
@@ -7552,12 +7553,14 @@ include "%L"
 <Multi_key> <h> <semicolon> <asterisk> <Return>                : "ּ"  U05BC   # HEBREW POINT DAGESH OR MAPIQ
 <Multi_key> <h> <semicolon> <asciicircum> <minus> <Return>     : "ֿ"  U05BF   # HEBREW POINT RAFE
 <Multi_key> <h> <semicolon> <s> <h> <Return>                   : "ׁ"  U05C1   # HEBREW POINT SHIN DOT
+<Multi_key> <h> <semicolon> <S> <Return>                       : "ׁ"  U05C1   # HEBREW POINT SHIN DOT
 <Multi_key> <h> <semicolon> <s> <Return>                       : "ׂ"  U05C2   # HEBREW POINT SIN DOT
+<Multi_key> <h> <semicolon> <Multi_key> <S> <O>                : "׃"  U05C3   # HEBREW PUNCTUATION SOF PASUQ
 
 <Multi_key> <h> <semicolon> <minus> <minus> : "־"  U05BE   # HEBREW PUNCTUATION MAQAF
 <Multi_key> <h> <semicolon> <apostrophe>    : "׳"  U05F3   # HEBREW PUNCTUATION GERESH
 <Multi_key> <h> <semicolon> <quotedbl>      : "״"  U05F4   # HEBREW PUNCTUATION GERSHAYIM
-<Multi_key> <h> <semicolon> <plus>          : "﬩" UFB29    # HEBREW LETTER ALTERNATIVE PLUS SIGN
+<Multi_key> <h> <semicolon> <plus>          : "﬩"  UFB29   # HEBREW LETTER ALTERNATIVE PLUS SIGN
 
 <Multi_key> <h> <c> <minus> <a> : "ﬡ" UFB21   # HEBREW LETTER WIDE ALEF
 <Multi_key> <h> <c> <minus> <apostrophe> : "ﬡ" UFB21   # HEBREW LETTER WIDE ALEF
@@ -7601,6 +7604,38 @@ include "%L"
 <Multi_key> <h> <c> <asciicircum> <underscore> <k> : "כֿ" UFB4D   # HEBREW LETTER KAF WITH RAFE
 <Multi_key> <h> <c> <asciicircum> <underscore> <p> : "פֿ" UFB4E   # HEBREW LETTER PE WITH RAFE
 <Multi_key> <h> <c> <asciicircum> <underscore> <f> : "פֿ" UFB4E   # HEBREW LETTER PE WITH RAFE
+
+<Multi_key> <h> <semicolon> <underscore> <asciicircum> <Return>             : "֑"  U0591  # HEBREW ACCENT ETNAHTA
+<Multi_key> <h> <semicolon> <asciicircum> <asciicircum> <Return>            : "֒"  U0592  # HEBREW ACCENT SEGOL
+<Multi_key> <h> <semicolon> <asciicircum> <Z> <Return>                      : "֓"  U0593  # HEBREW ACCENT SHALSHELET
+<Multi_key> <h> <semicolon> <asciicircum> <colon> <Return>                  : "֔"  U0594  # HEBREW ACCENT ZAQEF QATAN
+<Multi_key> <h> <semicolon> <asciicircum> <bar> <colon> <Return>            : "֕"  U0595  # HEBREW ACCENT ZAQEF GADOL
+<Multi_key> <h> <semicolon> <underscore> <parenleft> <Return>               : "֖"  U0596  # HEBREW ACCENT TIPEHA
+<Multi_key> <h> <semicolon> <asciicircum> <asterisk> <Return>               : "֗"  U0597  # HEBREW ACCENT REVIA
+<Multi_key> <h> <semicolon> <asciicircum> <asciitilde> <Return>             : "֘"  U0598  # HEBREW ACCENT ZARQA
+<Multi_key> <h> <semicolon> <asciicircum> <less> <parenright> <Return>      : "֙"  U0599  # HEBREW ACCENT PASHTA
+<Multi_key> <h> <semicolon> <underscore> <greater> <less> <Return>          : "֚"  U059A  # HEBREW ACCENT YETIV
+<Multi_key> <h> <semicolon> <underscore> <period> <parenright> <Return>     : "֛"  U059B  # HEBREW ACCENT TEVIR
+<Multi_key> <h> <semicolon> <asciicircum> <parenleft> <Return>              : "֜"  U059C  # HEBREW ACCENT GERESH
+<Multi_key> <h> <semicolon> <asciicircum> <greater> <parenleft> <Return>    : "֝"  U059D  # HEBREW ACCENT GERESH MUQDAM
+<Multi_key> <h> <semicolon> <asciicircum> <parenleft> <parenleft> <Return>  : "֞"  U059E  # HEBREW ACCENT GERSHAYIM
+<Multi_key> <h> <semicolon> <asciicircum> <q> <p> <Return>                  : "֟"  U059F  # HEBREW ACCENT QARNEY PARA
+<Multi_key> <h> <semicolon> <asciicircum> <p> <Return>                      : "֠"  U05A0  # HEBREW ACCENT TELISHA GEDOLA
+<Multi_key> <h> <semicolon> <asciicircum> <r> <Return>                      : "֡"  U05A1  # HEBREW ACCENT PAZER
+<Multi_key> <h> <semicolon> <underscore> <Y> <Return>                       : "֢"  U05A2  # HEBREW ACCENT ATNAH HAFUKH
+<Multi_key> <h> <semicolon> <underscore> <L> <Return>                       : "֣"  U05A3  # HEBREW ACCENT MUNAH
+<Multi_key> <h> <semicolon> <underscore> <less> <Return>                    : "֤"  U05A4  # HEBREW ACCENT MAHAPAKH
+<Multi_key> <h> <semicolon> <underscore> <parenright> <Return>              : "֥"  U05A5  # HEBREW ACCENT MERKHA
+<Multi_key> <h> <semicolon> <underscore> <parenright> <parenright> <Return> : "֦"  U05A6  # HEBREW ACCENT MERKHA KEFULA
+<Multi_key> <h> <semicolon> <underscore> <s> <Return>                       : "֧"  U05A7  # HEBREW ACCENT DARGA
+<Multi_key> <h> <semicolon> <asciicircum> <parenright> <Return>             : "֨"  U05A8  # HEBREW ACCENT QADMA
+<Multi_key> <h> <semicolon> <asciicircum> <q> <Return>                      : "֩"  U05A9  # HEBREW ACCENT TELISHA QETANA
+<Multi_key> <h> <semicolon> <underscore> <u> <Return>                       : "֪"  U05AA  # HEBREW ACCENT YERAH BEN YOMO
+<Multi_key> <h> <semicolon> <asciicircum> <less> <Return>                   : "֫"  U05AB  # HEBREW ACCENT OLE
+<Multi_key> <h> <semicolon> <asciicircum> <L> <Return>                      : "֬"  U05AC  # HEBREW ACCENT ILUY
+<Multi_key> <h> <semicolon> <underscore> <greater> <parenleft> <Return>     : "֭"  U05AD  # HEBREW ACCENT DEHI
+<Multi_key> <h> <semicolon> <asciicircum> <less> <asciitilde> <Return>      : "֮"  U05AE  # HEBREW ACCENT ZINOR
+<Multi_key> <h> <semicolon> <asciicircum> <o> <Return>                      : "֯"  U05AF  # HEBREW MARK MASORA CIRCLE
 
 # (A = Imperial Aramaic)
 
