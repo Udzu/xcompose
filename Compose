@@ -7538,6 +7538,7 @@ include "%L"
 <Multi_key> <h> <c> <underscore> <Y> : "ײַ"  UFB1F  # HEBREW LIGATURE YIDDISH YOD YOD PATAH
 <Multi_key> <h> <c> <underscore> <a> : "אַ"  UFB2E  # HEBREW LETTER ALEF WITH PATAH
 <Multi_key> <h> <c> <underscore> <T> <a> : "אָ"  UFB2F  # HEBREW LETTER ALEF WITH QAMATS
+<Multi_key> <h> <c> <asciicircum> <Y> : "ׯ"  U05EF  # HEBREW YOD TRIANGLE
 
 <Multi_key> <h> <semicolon> <colon> <Return>                   : "ְ"  U05B0   # HEBREW POINT SHEVA
 <Multi_key> <h> <semicolon> <v> <colon> <Return>               : "ֱ"  U05B1   # HEBREW POINT HATAF SEGOL
@@ -7549,18 +7550,24 @@ include "%L"
 <Multi_key> <h> <semicolon> <minus> <Return>                   : "ַ"  U05B7   # HEBREW POINT PATAH
 <Multi_key> <h> <semicolon> <T> <Return>                       : "ָ"  U05B8   # HEBREW POINT QAMATS
 <Multi_key> <h> <semicolon> <asciicircum> <period> <Return>    : "ֹ"  U05B9   # HEBREW POINT HOLAM
+<Multi_key> <h> <semicolon> <asciicircum> <period> <v> <Return> : "ֺ"  U05BA  # HEBREW POINT HOLAM HASER FOR VAV
 <Multi_key> <h> <semicolon> <backslash> <Return>               : "ֻ"  U05BB   # HEBREW POINT QUBUTS
 <Multi_key> <h> <semicolon> <asterisk> <Return>                : "ּ"  U05BC   # HEBREW POINT DAGESH OR MAPIQ
+<Multi_key> <h> <semicolon> <bar> <Return>                     : "ֽ"  U05BD   # HEBREW POINT METEG
 <Multi_key> <h> <semicolon> <asciicircum> <minus> <Return>     : "ֿ"  U05BF   # HEBREW POINT RAFE
 <Multi_key> <h> <semicolon> <s> <h> <Return>                   : "ׁ"  U05C1   # HEBREW POINT SHIN DOT
 <Multi_key> <h> <semicolon> <S> <Return>                       : "ׁ"  U05C1   # HEBREW POINT SHIN DOT
 <Multi_key> <h> <semicolon> <s> <Return>                       : "ׂ"  U05C2   # HEBREW POINT SIN DOT
-<Multi_key> <h> <semicolon> <Multi_key> <S> <O>                : "׃"  U05C3   # HEBREW PUNCTUATION SOF PASUQ
+<Multi_key> <h> <semicolon> <T> <o> <Return>                   : "ׇ"  U05C7   # HEBREW POINT QAMATS QATAN
 
-<Multi_key> <h> <semicolon> <minus> <minus> : "־"  U05BE   # HEBREW PUNCTUATION MAQAF
-<Multi_key> <h> <semicolon> <apostrophe>    : "׳"  U05F3   # HEBREW PUNCTUATION GERESH
-<Multi_key> <h> <semicolon> <quotedbl>      : "״"  U05F4   # HEBREW PUNCTUATION GERSHAYIM
-<Multi_key> <h> <semicolon> <plus>          : "﬩"  UFB29   # HEBREW LETTER ALTERNATIVE PLUS SIGN
+<Multi_key> <h> <semicolon> <minus> <minus>  : "־"  U05BE   # HEBREW PUNCTUATION MAQAF
+<Multi_key> <h> <semicolon> <apostrophe>     : "׳"  U05F3   # HEBREW PUNCTUATION GERESH
+<Multi_key> <h> <semicolon> <quotedbl>       : "״"  U05F4   # HEBREW PUNCTUATION GERSHAYIM
+<Multi_key> <h> <semicolon> <bar> <space>    : "׀"  U05C0   # HEBREW PUNCTUATION PASEQ
+<Multi_key> <h> <semicolon> <period> <space> : "׃"  U05C3   # HEBREW PUNCTUATION SOF PASUQ
+<Multi_key> <h> <semicolon> <colon> <space>  : "׃"  U05C3   # HEBREW PUNCTUATION SOF PASUQ
+<Multi_key> <h> <semicolon> <n>              : "׆"  U05C6   # HEBREW PUNCTUATION NUN HAFUKHA
+<Multi_key> <h> <semicolon> <plus>           : "﬩"  UFB29   # HEBREW LETTER ALTERNATIVE PLUS SIGN
 
 <Multi_key> <h> <c> <minus> <a> : "ﬡ" UFB21   # HEBREW LETTER WIDE ALEF
 <Multi_key> <h> <c> <minus> <apostrophe> : "ﬡ" UFB21   # HEBREW LETTER WIDE ALEF
