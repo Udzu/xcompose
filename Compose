@@ -13573,18 +13573,18 @@ include "%L"
 <Multi_key> <O> <Multi_key> <parenright> <quotedbl> : "☺"  U263A  # WHITE SMILING FACE
 <Multi_key> <O> <Multi_key> <T> <X>                 : "웃"  UC6C3  # HANGUL SYLLABLE US
 
-########################
-# Egyptian Hieroglyphs #
-########################
+######################################
+# Egyptian and Anatolian Hieroglyphs #
+######################################
 
-# (included as ideographic symbols not writing!)
+# (included as ideographic symbols not as writing!)
 
-# Convention: ] + name
+# Egyptian hieroglyphs: ] + name
 
 <Multi_key> <bracketright> <a> <t> <t> <a> <c> <k> : "𓁍"  U1304D  # EGYPTIAN HIEROGLYPH A068 (ATTACK)
 <Multi_key> <bracketright> <b> <i> <r> <t> <h> : "𓁒"  U13052  # EGYPTIAN HIEROGLYPH B003 (BIRTH)
 <Multi_key> <bracketright> <b> <o> <w> : "𓀓"  U13013  # EGYPTIAN HIEROGLYPH A016 (BOW)
-<Multi_key> <bracketright> <b> <o> <x> : "𓀟"  U1301F  # EGYPTIAN HIEROGLYPH A027 (BOX) (actually hastening)
+<Multi_key> <bracketright> <b> <o> <x> <e> <r> : "𓀟"  U1301F  # EGYPTIAN HIEROGLYPH A027 (BOXER) (actually hastening)
 <Multi_key> <bracketright> <b> <u> <i> <l> <d> : "𓀨"  U13028  # EGYPTIAN HIEROGLYPH A035 (BUILD)
 <Multi_key> <bracketright> <c> <a> <p> <t> <i> <v> : "𓀏"  U1300F  # EGYPTIAN HIEROGLYPH A013 (CAPTIVE)
 <Multi_key> <bracketright> <c> <h> <i> <l> <d> : "𓁖"  U13056  # EGYPTIAN HIEROGLYPH B006 (CHILD)
@@ -13598,8 +13598,9 @@ include "%L"
 <Multi_key> <bracketright> <g> <r> <i> <n> <d> : "𓀧"  U13027  # EGYPTIAN HIEROGLYPH A034 (GRIND)
 <Multi_key> <bracketright> <h> <i> <d> <e> : "𓀄"  U13004  # EGYPTIAN HIEROGLYPH A005 (HIDE)
 <Multi_key> <bracketright> <h> <i> <t> : "𓀝"  U1301D  # EGYPTIAN HIEROGLYPH A025 (HIT)
+<Multi_key> <bracketright> <k> <i> <n> <g> : "𓀛"  U1301B  # EGYPTIAN HIEROGLYPH A023 (KING)
 <Multi_key> <bracketright> <m> <a> <n> : "𓀀"  U13000  # EGYPTIAN HIEROGLYPH A001 (MAN)
-<Multi_key> <bracketright> <m> <o> <r> <e> : "𓁉"  U13049  # EGYPTIAN HIEROGLYPH A064 (MORE)
+<Multi_key> <bracketright> <m> <o> <r> <e> : "𓁉"  U13049  # EGYPTIAN HIEROGLYPH A064 ("MORE?")
 <Multi_key> <bracketright> <m> <u> <m> <m> <y> : "𓀾"  U1303E  # EGYPTIAN HIEROGLYPH A053 (MUMMY)
 <Multi_key> <bracketright> <n> <o> <p> <e> : "𓀣"  U13023  # EGYPTIAN HIEROGLYPH A031 (NOPE)
 <Multi_key> <bracketright> <n> <u> <r> <s> <e> : "𓁔"  U13054  # EGYPTIAN HIEROGLYPH B005 (NURSE)
@@ -13770,8 +13771,11 @@ include "%L"
 
 <Multi_key> <bracketright> <b> <o> <a> <t> : "𓊛"  U1329B  # EGYPTIAN HIEROGLYPH P001 (BOAT)
 <Multi_key> <bracketright> <c> <h> <a> <r> <i> <o> : "𓌝"  U1331D  # EGYPTIAN HIEROGLYPH T017 (CHARIO)
+<Multi_key> <bracketright> <f> <e> <n> <c> <e> : "𓊐"  U13290  # EGYPTIAN HIEROGLYPH O043 (FENC)
+<Multi_key> <bracketright> <r> <u> <d> <o> <l> <p> : "𓍄"  U13344  # EGYPTIAN HIEROGLYPH U016 (RUDOLPH)
 <Multi_key> <bracketright> <s> <a> <i> <l> : "𓊝"  U1329D  # EGYPTIAN HIEROGLYPH P002 (SAILBOAT)
 <Multi_key> <bracketright> <s> <l> <e> <d> : "𓍃"  U13343  # EGYPTIAN HIEROGLYPH U015 (SLED)
+<Multi_key> <bracketright> <s> <t> <a> <i> <r> <s> : "𓊍"  U1328D  # EGYPTIAN HIEROGLYPH O040 (STAIRS)
 
 <Multi_key> <bracketright> <a> <n> <k> <h> : "𓋹"  U132F9  # EGYPTIAN HIEROGLYPH S034 (ANKH)
 <Multi_key> <bracketright> <a> <r> <r> <o> <w> <Return> : "𓌕"  U13315  # EGYPTIAN HIEROGLYPH T011 (ARROW)
@@ -13792,7 +13796,7 @@ include "%L"
 <Multi_key> <bracketright> <s> <c> <a> <l> <e> : "𓍝"  U1335D  # EGYPTIAN HIEROGLYPH U038 (SCALE)
 <Multi_key> <bracketright> <s> <h> <i> <e> <l> <d> : "𓌲"  U13332  # EGYPTIAN HIEROGLYPH T036 (SHIELD)
 
-# Legs (start with <)
+# Legged characters (start with <)
 
 <Multi_key> <bracketright> <less> <less> : "𓂻"  U130BB  # EGYPTIAN HIEROGLYPH D054 (LEGS WALKING LEFT)
 <Multi_key> <bracketright> <less> <greater> : "𓂽"  U130BD  # EGYPTIAN HIEROGLYPH D055 (LEGS WALKING RIGHT)
@@ -13886,6 +13890,43 @@ include "%L"
 <Multi_key> <bracketright> <1> <slash> <6> <4> : "𓂆"  U13086  # EGYPTIAN HIEROGLYPH D016 (1/64)
 <Multi_key> <bracketright> <2> <slash> <3> : "𓂌"  U1308C  # EGYPTIAN HIEROGLYPH D022 (2/3)
 <Multi_key> <bracketright> <3> <slash> <4> : "𓂍"  U1308D  # EGYPTIAN HIEROGLYPH D023 (3/4)
+
+# Anatolian hieroglyphs: } + name
+
+<Multi_key> <braceright> <a> <l> <i> <e> <n> : "𔐄"  U14404  # ANATOLIAN HIEROGLYPH A005 (ALIEN)
+<Multi_key> <braceright> <d> <r> <i> <n> <k> : "𔐇"  U14407  # ANATOLIAN HIEROGLYPH A008 (DRINK)
+<Multi_key> <braceright> <e> <a> <t> : "𔐆"  U14406  # ANATOLIAN HIEROGLYPH A007 (EAT)
+<Multi_key> <braceright> <e> <y> <e> : "𔐙"  U14419  # ANATOLIAN HIEROGLYPH A025 (EYE)
+<Multi_key> <braceright> <f> <e> <z> : "𔐋"  U1440B  # ANATOLIAN HIEROGLYPH A011 (FEZ)
+<Multi_key> <braceright> <h> <e> <a> <d> : "𔐉"  U14409  # ANATOLIAN HIEROGLYPH A010 (HEAD)
+<Multi_key> <braceright> <h> <u> <g> : "𔐈"  U14408  # ANATOLIAN HIEROGLYPH A009 (HUG)
+<Multi_key> <braceright> <r> <s> <k> <a> <t> <e> : "𔑥"  U14465  # ANATOLIAN HIEROGLYPH A092 (ROLLER SKATES)
+<Multi_key> <braceright> <t> <o> <n> <g> <u> <e> : "𔐖"  U14416  # ANATOLIAN HIEROGLYPH A022 (TONGUE)
+<Multi_key> <braceright> <w> <o> <m> <a> <n> : "𔐁"  U14401  # ANATOLIAN HIEROGLYPH A002 (WOMAN)
+
+<Multi_key> <braceright> <b> <i> <r> <d> : "𔒜"  U1449C  # ANATOLIAN HIEROGLYPH A130 (BIRD)
+<Multi_key> <braceright> <b> <o> <a> <r> : "𔙃"  U14643  # ANATOLIAN HIEROGLYPH A527 (BOAR)
+<Multi_key> <braceright> <b> <u> <l> <l> : "𔑼"  U1447C  # ANATOLIAN HIEROGLYPH A105B (BULL)
+<Multi_key> <braceright> <b> <u> <n> <n> <y> : "𔒌"  U1448C  # ANATOLIAN HIEROGLYPH A115A (BUNNY)
+<Multi_key> <braceright> <d> <o> <g> : "𔑭"  U1446D  # ANATOLIAN HIEROGLYPH A098A (DOG)
+<Multi_key> <braceright> <d> <o> <n> <k> <e> <y> : "𔑯"  U1446F  # ANATOLIAN HIEROGLYPH A100 (DONKEY)
+<Multi_key> <braceright> <f> <i> <s> <h> : "𔒥"  U144A5  # ANATOLIAN HIEROGLYPH A138 (FISH)
+<Multi_key> <braceright> <h> <o> <r> <s> <e> : "𔑮"  U1446E  # ANATOLIAN HIEROGLYPH A099 (HORSE)
+<Multi_key> <braceright> <s> <t> <a> <g> : "𔑴"  U14474  # ANATOLIAN HIEROGLYPH A102A (STAG)
+<Multi_key> <braceright> <w> <o> <r> <m> : "𔒧"  U144A7  # ANATOLIAN HIEROGLYPH A140 (WORM)
+
+<Multi_key> <braceright> <c> <r> <o> <s> <s> : "𔕛"  U1455B  # ANATOLIAN HIEROGLYPH A309 (CROSS)
+<Multi_key> <braceright> <d> <o> <c> : "𔔦"  U14526  # ANATOLIAN HIEROGLYPH A260 (DOCUMENT)
+<Multi_key> <braceright> <g> <a> <t> <e> : "𔔏"  U1450F  # ANATOLIAN HIEROGLYPH A237 (GATE)
+<Multi_key> <braceright> <l> <i> <g> <h> <t> : "𔔥"  U14525  # ANATOLIAN HIEROGLYPH A259 (TRAFFIC LIGHT)
+
+# (plus a few Phaistos disc signs too)
+
+<Multi_key> <braceright> <b> <a> <l> <d> : "𐇒"  U101D2  # PHAISTOS DISC SIGN TATTOOED HEAD (BALD)
+<Multi_key> <braceright> <c> <a> <t> : "𐇬"  U101EC  # PHAISTOS DISC SIGN CAT (CAT)
+<Multi_key> <braceright> <c> <o> <o> <k> <i> <e> : "𐇛"  U101DB  # PHAISTOS DISC SIGN SHIELD (COOKIE)
+<Multi_key> <braceright> <p> <u> <n> <k> : "𐇑"  U101D1  # PHAISTOS DISC SIGN PLUMED HEAD (PUNK)
+<Multi_key> <braceright> <w> <a> <l> <k> : "𐇐"  U101D0  # PHAISTOS DISC SIGN PEDESTRIAN (WALK)
 
 ####################
 # Geometric shapes #
