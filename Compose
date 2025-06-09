@@ -3644,6 +3644,7 @@ include "%L"
 <Multi_key> <A> <c> <grave> <o>          : "օ"  U0585  # ARMENIAN SMALL LETTER OH (ò)
 <Multi_key> <A> <c> <f>                  : "ֆ"  U0586  # ARMENIAN SMALL LETTER FEH
 <Multi_key> <A> <c> <e> <w>              : "և"  U0587  # ARMENIAN SMALL LIGATURE ECH YIWN
+<Multi_key> <A> <c> <minus> <y>          : "ֈ"  U0588  # ARMENIAN SMALL LETTER YI WITH STROKE
 
 <Multi_key> <A> <semicolon> <c>          : "ՙ"  U0559  # ARMENIAN MODIFIER LETTER LEFT HALF RING (conflicts with Ą, use A,)
 <Multi_key> <A> <semicolon> <apostrophe> : "՚"  U055A  # ARMENIAN APOSTROPHE (conflicts)
@@ -3651,8 +3652,17 @@ include "%L"
 <Multi_key> <A> <semicolon> <exclam>     : "՜"  U055C  # ARMENIAN EXCLAMATION MARK (conflicts)
 <Multi_key> <A> <semicolon> <comma>      : "՝"  U055D  # ARMENIAN COMMA (conflicts)
 <Multi_key> <A> <semicolon> <question>   : "՞"  U055E  # ARMENIAN QUESTION MARK (conflicts)
+<Multi_key> <A> <semicolon> <apostrophe> : "՟"  U055F  # ARMENIAN ABBREVIATION MARK (conflicts)
 <Multi_key> <A> <semicolon> <period>     : "։"  U0589  # ARMENIAN FULL STOP (conflicts)
 <Multi_key> <A> <semicolon> <minus>      : "֊"  U058A  # ARMENIAN HYPHEN (conflicts)
+<Multi_key> <A> <semicolon> <at> <greater> : "֍"  U058D  # RIGHT-FACING ARMENIAN ETERNITY SIGN (conflicts)
+<Multi_key> <A> <semicolon> <at> <less>  : "֎"  U058E  # LEFT-FACING ARMENIAN ETERNITY SIGN (conflicts)
+
+<Multi_key> <A> <x> <m> <n> : "ﬓ"  UFB13  # ARMENIAN SMALL LIGATURE MEN NOW
+<Multi_key> <A> <x> <m> <e> : "ﬔ"  UFB14  # ARMENIAN SMALL LIGATURE MEN ECH
+<Multi_key> <A> <x> <m> <i> : "ﬕ"  UFB15  # ARMENIAN SMALL LIGATURE MEN INI
+<Multi_key> <A> <x> <v> <n> : "ﬖ"  UFB16  # ARMENIAN SMALL LIGATURE VEW NOW
+<Multi_key> <A> <x> <m> <x> : "ﬗ"  UFB17  # ARMENIAN SMALL LIGATURE MEN XEH
 
 #######################
 # (b) Brahmic scripts #
@@ -4216,6 +4226,7 @@ include "%L"
 <Multi_key> <b> <C> <bar>                : "𑅁"  U11141  # CHAKMA DANDA
 <Multi_key> <b> <C> <2> <bar>            : "𑅂"  U11142  # CHAKMA DOUBLE DANDA
 <Multi_key> <b> <C> <question>           : "𑅃"  U11143  # CHAKMA QUESTION MARK
+<Multi_key> <b> <C> <Multi_key> <S> <O>  : "𑅀"  U11140  # CHAKMA SECTION MARK
 
 # (g = Gujarati)
 
@@ -4466,6 +4477,7 @@ include "%L"
 <Multi_key> <b> <j> <underscore> <period> <Return> : "𑅳"  U11173  # MAHAJANI SIGN NUKTA
 <Multi_key> <b> <j> <asciicircum> <period>         : "𑅴"  U11174  # MAHAJANI ABBREVIATION SIGN
 <Multi_key> <b> <j> <Multi_key> <S> <O>            : "𑅵"  U11175  # MAHAJANI SECTION MARK
+<Multi_key> <b> <j> <S> <H> <R> <I>                : "𑅶"  U11176  # MAHAJANI LIGATURE SHRI
 
 # (k = Kannada)
 
@@ -4647,6 +4659,7 @@ include "%L"
 <Multi_key> <b> <L> <comma> <Return>     : "᤹"  U1939  # LIMBU SIGN MUKPHRENG
 <Multi_key> <b> <L> <quotedbl> <Return>  : "᤺"  U193A  # LIMBU SIGN KEMPHRENG
 <Multi_key> <b> <L> <underscore> <Return> : "᤻"  U193B  # LIMBU SIGN SA-I
+<Multi_key> <b> <L> <L> <O>              : "᥀"  U1940  # LIMBU SIGN LOO
 
 # Numerals
 
@@ -6633,7 +6646,9 @@ include "%L"
 <Multi_key> <C> <p> <slash> <space> : "𑫳"  U11AF3  # PAU CIN HAU LOW-FALLING TONE LONG
 <Multi_key> <C> <p> <slash> <period> : "𑫴"  U11AF4  # PAU CIN HAU LOW-FALLING TONE
 <Multi_key> <C> <p> <slash> <colon> : "𑫵"  U11AF5  # PAU CIN HAU GLOTTAL STOP
-<Multi_key> <C> <p> <slash> <slash> : "𑫶"  U11AF6  # PAU CIN HAU LOW-FALLING TONE LONG FINAL
+<Multi_key> <C> <p> <slash> <slash> <space> : "𑫶"  U11AF6  # PAU CIN HAU LOW-FALLING TONE LONG FINAL
+<Multi_key> <C> <p> <slash> <slash> <period> : "𑫷"  U11AF7  # PAU CIN HAU LOW-FALLING TONE FINAL
+<Multi_key> <C> <p> <slash> <slash> <colon> : "𑫸"  U11AF8  # PAU CIN HAU GLOTTAL STOP FINAL
 
 # (s/S = Shavian)
 
@@ -6750,6 +6765,8 @@ include "%L"
 <Multi_key> <C> <w> <numbersign> <7> : "𞋷"  U1E2F7  # WANCHO DIGIT SEVEN
 <Multi_key> <C> <w> <numbersign> <8> : "𞋸"  U1E2F8  # WANCHO DIGIT EIGHT
 <Multi_key> <C> <w> <numbersign> <9> : "𞋹"  U1E2F9  # WANCHO DIGIT NINE
+
+<Multi_key> <C> <w> <R> <u> : "𞋿"  U1E2FF  # WANCHO NGUN SIGN (RUPEE)
 
 ######################################################
 # (g) Greek (and Coptic, Cypriot, Gothic & Linear B) #
@@ -8056,6 +8073,8 @@ include "%L"
 <Multi_key> <h> <c> <underscore> <a> : "אַ"  UFB2E  # HEBREW LETTER ALEF WITH PATAH
 <Multi_key> <h> <c> <underscore> <T> <a> : "אָ"  UFB2F  # HEBREW LETTER ALEF WITH QAMATS
 <Multi_key> <h> <c> <asciicircum> <Y> : "ׯ"  U05EF  # HEBREW YOD TRIANGLE
+<Multi_key> <h> <c> <E>         : "ﬠ"  UFB20  # HEBREW LETTER ALTERNATIVE AYIN
+<Multi_key> <h> <c> <A> <L>     : "ﭏ"  UFB4F  # HEBREW LIGATURE ALEF LAMED
 
 <Multi_key> <h> <semicolon> <colon> <Return>                   : "ְ"  U05B0   # HEBREW POINT SHEVA
 <Multi_key> <h> <semicolon> <v> <colon> <Return>               : "ֱ"  U05B1   # HEBREW POINT HATAF SEGOL
@@ -8076,6 +8095,10 @@ include "%L"
 <Multi_key> <h> <semicolon> <S> <Return>                       : "ׁ"  U05C1   # HEBREW POINT SHIN DOT
 <Multi_key> <h> <semicolon> <s> <Return>                       : "ׂ"  U05C2   # HEBREW POINT SIN DOT
 <Multi_key> <h> <semicolon> <T> <o> <Return>                   : "ׇ"  U05C7   # HEBREW POINT QAMATS QATAN
+<Multi_key> <h> <semicolon> <u> <Return>                       : "ﬞ"  UFB1E  # HEBREW POINT JUDEO-SPANISH VARIKA
+
+<Multi_key> <h> <semicolon> <asciicircum> <asciicircum> <period> <Return> : "ׄ"  U05C4  # HEBREW MARK UPPER DOT
+<Multi_key> <h> <semicolon> <underscore> <underscore> <period> <Return> : "ׅ"  U05C5  # HEBREW MARK LOWER DOT
 
 <Multi_key> <h> <semicolon> <minus> <minus>  : "־"  U05BE   # HEBREW PUNCTUATION MAQAF
 <Multi_key> <h> <semicolon> <apostrophe>     : "׳"  U05F3   # HEBREW PUNCTUATION GERESH
@@ -8998,6 +9021,12 @@ include "%L"
 <Multi_key> <o> <i> <x> <k> <h> : "𐌙" U10319    # OLD ITALIC LETTER KHE (alternatively icK)
 <Multi_key> <o> <i> <c> <f> : "𐌚" U1031A    # OLD ITALIC LETTER EF
 
+<Multi_key> <o> <i> <v> <r> : "𐌛"  U1031B  # OLD ITALIC LETTER ERS
+<Multi_key> <o> <i> <v> <c> : "𐌜"  U1031C  # OLD ITALIC LETTER CHE (č)
+<Multi_key> <o> <i> <apostrophe> <i> : "𐌝"  U1031D  # OLD ITALIC LETTER II (í)
+<Multi_key> <o> <i> <apostrophe> <u> : "𐌞"  U1031E  # OLD ITALIC LETTER UU (ú)
+<Multi_key> <o> <i> <asterisk> : "𐌟"  U1031F  # OLD ITALIC LETTER ESS (*)
+
 <Multi_key> <o> <i> <x> <v> <F> : "Ⅎ" U2132    # TURNED CAPITAL F (DIGAMMA INVERSUM)
 <Multi_key> <o> <i> <x> <less> <C> : "Ↄ" U2183    # ROMAN NUMERAL REVERSED ONE HUNDRED (ANTISIGMA)
 <Multi_key> <o> <i> <x> <bar> <minus> : "Ⱶ" U2C75    # LATIN CAPITAL LETTER HALF H
@@ -9490,6 +9519,7 @@ include "%L"
 <Multi_key> <T> <c> <w> : "ᜏ" U170F   # TAGALOG LETTER WA
 <Multi_key> <T> <c> <s> : "ᜐ" U1710   # TAGALOG LETTER SA
 <Multi_key> <T> <c> <h> : "ᜑ" U1711   # TAGALOG LETTER HA
+<Multi_key> <T> <c> <R> : "ᜟ"  U171F  # TAGALOG LETTER ARCHAIC RA
 
 <Multi_key> <T> <c> <a> <space> : "ᜀ" U1700   # TAGALOG LETTER A
 <Multi_key> <T> <c> <i> <space> : "ᜁ" U1701   # TAGALOG LETTER I
@@ -9745,6 +9775,7 @@ include "%L"
 <Multi_key> <z> <f> <h> <z> : "ꓣ"  UA4E3  # LISU LETTER ZHA
 <Multi_key> <z> <f> <h> <N> : "ꓦ"  UA4E6  # LISU LETTER HA
 <Multi_key> <z> <f> <h> <S> : "ꓞ"  UA4DE  # LISU LETTER TSHA
+<Multi_key> <z> <f> <h> <y> : "𑾰"  U11FB0  # LISU LETTER YHA
 
 <Multi_key> <z> <f> <a> <space> : "ꓮ"  UA4EE  # LISU LETTER A
 <Multi_key> <z> <f> <a> <e> : "ꓯ"  UA4EF  # LISU LETTER AE
