@@ -27,7 +27,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (364): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (7056)
+### Non-Latin script characters (7072)
 * **Arabic**, Mandaic, Osmanya, Syriac, Neo-Tifinagh, Thaana & Yezidi (334): ⁧رِيدِتْ⁩, 𐒇𐒗𐒆𐒘𐒂, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (86): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (83): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
@@ -37,7 +37,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Cyrillic**, Glagolitic & Old Permic (330): Ре́ддит, Ⱃⰵδδιτ, 𐍠𐍔𐍓𐍓𐍙𐍢 etc
 * **Geʽez**, Adlam, Bamum, Mende Kikakui, NKo & Vai (872): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧𞠺𞠾𞡊⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian**: Mtavruli, Nuskhuri, Mkhedruli (154): რედდიტ, ႰႤႣႣႨႲ etc
-* **Greek**, Coptic, Cypriot, Gothic, Linear B & Lycian (910): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗 etc
+* **Greek**, Coptic, Cypriot, Gothic, Linear B & Lycian (926): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗 etc
 * **Hebrew**, Aramaic, Lydian, Phoenician, Samaritan & Ugaritic (290): ⁧רֶדִיט⁩, ⁧𐡓𐡃𐡉𐡕⁩, ⁧𐤭𐤤𐤣𐤣𐤦𐤯⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩, 𐎗𐎄𐎚 etc
 * **Japanese** (mostly kana) (302): 「レディット」 etc
 * **Korean** (using positional jamo) (118): 레딧 etc

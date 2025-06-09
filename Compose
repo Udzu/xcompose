@@ -7148,6 +7148,30 @@ include "%L"
 <Multi_key> <g> <x> <asciicircum> <apostrophe> <O>              : "Ώ"  U1FFB  # GREEK CAPITAL LETTER OMEGA WITH OXIA
 <Multi_key> <g> <x> <comma> <O>                                 : "ῼ"  U1FFC  # GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI
 
+# superscripts and subscripts
+
+<Multi_key> <g> <c> <asciicircum> <underscore> <g> : "ᵞ"  U1D5E  # MODIFIER LETTER SMALL GREEK GAMMA
+<Multi_key> <g> <c> <asciicircum> <underscore> <d> : "ᵟ"  U1D5F  # MODIFIER LETTER SMALL DELTA
+<Multi_key> <g> <x> <asciicircum> <underscore> <p> <h> : "ᵠ"  U1D60  # MODIFIER LETTER SMALL GREEK PHI
+<Multi_key> <g> <c> <asciicircum> <underscore> <f> : "ᵠ"  U1D60  # MODIFIER LETTER SMALL GREEK PHI
+<Multi_key> <g> <c> <asciicircum> <underscore> <c> : "ᵡ"  U1D61  # MODIFIER LETTER SMALL CHI
+<Multi_key> <g> <x> <asciicircum> <underscore> <k> <h> : "ᵡ"  U1D61  # MODIFIER LETTER SMALL CHI
+
+<Multi_key> <g> <c> <underscore> <asciicircum> <G> : "ᴦ"  U1D26  # GREEK LETTER SMALL CAPITAL GAMMA
+<Multi_key> <g> <c> <underscore> <asciicircum> <L> : "ᴧ"  U1D27  # GREEK LETTER SMALL CAPITAL LAMDA
+<Multi_key> <g> <c> <underscore> <asciicircum> <P> : "ᴨ"  U1D28  # GREEK LETTER SMALL CAPITAL PI
+<Multi_key> <g> <c> <underscore> <asciicircum> <R> : "ᴩ"  U1D29  # GREEK LETTER SMALL CAPITAL RHO
+<Multi_key> <g> <x> <underscore> <asciicircum> <P> <S> : "ᴪ"  U1D2A  # GREEK LETTER SMALL CAPITAL PSI
+<Multi_key> <g> <x> <underscore> <asciicircum> <O> : "ꭥ"  UAB65  # GREEK LETTER SMALL CAPITAL OMEGA
+
+<Multi_key> <g> <c> <underscore> <b> : "ᵦ"  U1D66  # GREEK SUBSCRIPT SMALL LETTER BETA
+<Multi_key> <g> <c> <underscore> <g> : "ᵧ"  U1D67  # GREEK SUBSCRIPT SMALL LETTER GAMMA
+<Multi_key> <g> <c> <underscore> <r> : "ᵨ"  U1D68  # GREEK SUBSCRIPT SMALL LETTER RHO
+<Multi_key> <g> <x> <underscore> <p> <h> : "ᵩ"  U1D69  # GREEK SUBSCRIPT SMALL LETTER PHI
+<Multi_key> <g> <c> <underscore> <f> : "ᵩ"  U1D69  # GREEK SUBSCRIPT SMALL LETTER PHI
+<Multi_key> <g> <c> <underscore> <c> : "ᵪ"  U1D6A  # GREEK SUBSCRIPT SMALL LETTER CHI
+<Multi_key> <g> <x> <underscore> <k> <h> : "ᵪ"  U1D6A  # GREEK SUBSCRIPT SMALL LETTER CHI
+
 # (B = Linear B)
 
 <Multi_key> <g> <B> <a> : "𐀀"  U10000  # LINEAR B SYLLABLE B008 A
@@ -7466,6 +7490,8 @@ include "%L"
 # additional Greek letter variants not represented in the alphanumerics block
 <Multi_key> <percent> <g> <at> <U> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
 <Multi_key> <percent> <g> <at> <Y> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
+<Multi_key> <percent> <g> <at> <quotedbl> <U> : "ϔ"  U03D4  # GREEK UPSILON WITH DIAERESIS AND HOOK SYMBOL
+<Multi_key> <percent> <g> <at> <quotedbl> <Y> : "ϔ"  U03D4  # GREEK UPSILON WITH DIAERESIS AND HOOK SYMBOL
 <Multi_key> <percent> <g> <at> <b> : "ϐ" U03D0   # GREEK BETA SYMBOL
 <Multi_key> <percent> <g> <at> <s> : "ϲ" U03F2   # GREEK LUNATE SIGMA SYMBOL
 
