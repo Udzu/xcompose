@@ -9206,9 +9206,33 @@ include "%L"
 
 # [WIP]
 
+# Modifiers
+
+<Multi_key> <S> <asciicircum> <S> <Return> : "𝪛"  U1DA9B  # SIGNWRITING FILL MODIFIER-2 (VERTICAL SIDE VIEW)
+<Multi_key> <S> <asciicircum> <B> <Return> : "𝪜"  U1DA9C  # SIGNWRITING FILL MODIFIER-3 (VERTICAL BACK VIEW)
+<Multi_key> <S> <underscore> <P> <Return>  : "𝪝"  U1DA9D  # SIGNWRITING FILL MODIFIER-4 (HORIZONTAL PALM VIEW)
+<Multi_key> <S> <underscore> <S> <Return>  : "𝪞"  U1DA9E  # SIGNWRITING FILL MODIFIER-5 (HORIZTONAL SIDE VIEW)
+<Multi_key> <S> <underscore> <B> <Return>  : "𝪟"  U1DA9F  # SIGNWRITING FILL MODIFIER-6 (HORIZTONAL BACK VIEW)
+
+<Multi_key> <S> <greater> <1> <Return>     : "𝪡"  U1DAA1  # SIGNWRITING ROTATION MODIFIER-2 (RHS NW)
+<Multi_key> <S> <greater> <2> <Return>     : "𝪢"  U1DAA2  # SIGNWRITING ROTATION MODIFIER-3 (RHS W)
+<Multi_key> <S> <greater> <3> <Return>     : "𝪣"  U1DAA3  # SIGNWRITING ROTATION MODIFIER-4 (RHS SW)
+<Multi_key> <S> <greater> <4> <Return>     : "𝪤"  U1DAA4  # SIGNWRITING ROTATION MODIFIER-5 (RHS S)
+<Multi_key> <S> <greater> <5> <Return>     : "𝪥"  U1DAA5  # SIGNWRITING ROTATION MODIFIER-6 (RHS SE)
+<Multi_key> <S> <greater> <6> <Return>     : "𝪦"  U1DAA6  # SIGNWRITING ROTATION MODIFIER-7 (RHS E)
+<Multi_key> <S> <greater> <7> <Return>     : "𝪧"  U1DAA7  # SIGNWRITING ROTATION MODIFIER-8 (RHS NE)
+<Multi_key> <S> <less> <0> <Return>        : "𝪨"  U1DAA8  # SIGNWRITING ROTATION MODIFIER-9 (LHS N) (conflicts with Š, use vS)
+<Multi_key> <S> <less> <1> <Return>        : "𝪩"  U1DAA9  # SIGNWRITING ROTATION MODIFIER-10 (LHS NE) (conflicts with Š, use vS)
+<Multi_key> <S> <less> <2> <Return>        : "𝪪"  U1DAAA  # SIGNWRITING ROTATION MODIFIER-11 (LHS E) (conflicts with Š, use vS)
+<Multi_key> <S> <less> <3> <Return>        : "𝪫"  U1DAAB  # SIGNWRITING ROTATION MODIFIER-12 (LHS SE) (conflicts with Š, use vS)
+<Multi_key> <S> <less> <4> <Return>        : "𝪬"  U1DAAC  # SIGNWRITING ROTATION MODIFIER-13 (LHS S) (conflicts with Š, use vS)
+<Multi_key> <S> <less> <5> <Return>        : "𝪭"  U1DAAD  # SIGNWRITING ROTATION MODIFIER-14 (LHS SW) (conflicts with Š, use vS)
+<Multi_key> <S> <less> <6> <Return>        : "𝪮"  U1DAAE  # SIGNWRITING ROTATION MODIFIER-15 (LHS W) (conflicts with Š, use vS)
+<Multi_key> <S> <less> <7> <Return>        : "𝪯"  U1DAAF  # SIGNWRITING ROTATION MODIFIER-16 (LHS NW) (conflicts with Š, use vS)
+
 # Head shapes (visual representation)
 
-# (h = head) (shares namespace with hand shapes)
+# (h = head) (shares namespace with hand shapes below)
 
 <Multi_key> <S> <h> <O> : "𝧿"  U1D9FF  # SIGNWRITING HEAD
 <Multi_key> <S> <h> <space> : "𝧿"  U1D9FF  # SIGNWRITING HEAD
@@ -9338,16 +9362,16 @@ include "%L"
 
 # Hand shapes (semantic representation)
 
-# (h = hand) (shares namespace with head)
+# (h = hand) (shares namespace with head above)
 
 # convention: h + hand shape + (finger + finger shape) in increasing finger order
 #
 #    hand shape: a(=angle), c(=circle), C(=cup), f(=fist), F(=flat), h(=hinge), H(=hook), o(=oval), u=(curlicue), w(=claw)
 #        finger: 1(=thumb), 2(=index), 3(=middle), 4(=ring), 5(=little)
-#  finger shape: as above + b(=bent), f(=forward), r(=raised knuckles), _(=under), ^(=over), >(=between), v(=down)
-#   joint shape: j(=conjoined), x(=crossed)
+#  finger shape: as hand + ∅(=up), b(=bent), f(=forward), r(=raised knuckles), _(=under), ^(=over), >(=between), v(=down)
+#   joint shape: ∅(=spread), j(=conjoined), x(=crossed)
 
-# TODO: needs checking how practical and correct this is
+# TODO: needs checking for errors and to see how practical this actually is
 
 <Multi_key> <S> <h> <f> <2> <space> : "𝠀"  U1D800  # SIGNWRITING HAND-FIST INDEX
 <Multi_key> <S> <h> <c> <2> <space> : "𝠁"  U1D801  # SIGNWRITING HAND-CIRCLE INDEX
@@ -9562,6 +9586,17 @@ include "%L"
 #<Multi_key> <S> <h> <f> <1> : "𝤂"  U1D902  # SIGNWRITING HAND-FIST THUMB OVER FOUR RAISED KNUCKLES
 <Multi_key> <S> <h> <f> <space> : "𝤃"  U1D903  # SIGNWRITING HAND-FIST
 #<Multi_key> <S> <h> <f> <1> : "𝤄"  U1D904  # SIGNWRITING HAND-FIST HEEL
+
+# (␣ = punctuation) (S; is taken)
+
+<Multi_key> <S> <space> <comma> : "𝪇"  U1DA87  # SIGNWRITING COMMA
+<Multi_key> <S> <space> <period> : "𝪈"  U1DA88  # SIGNWRITING FULL STOP
+<Multi_key> <S> <space> <semicolon> : "𝪉"  U1DA89  # SIGNWRITING SEMICOLON
+<Multi_key> <S> <space> <colon> : "𝪊"  U1DA8A  # SIGNWRITING COLON
+<Multi_key> <S> <space> <parenleft> : "𝪋"  U1DA8B  # SIGNWRITING PARENTHESIS
+<Multi_key> <S> <space> <parenright> : "𝪋𝪤"  U1DA8B U1DA44 # SIGNWRITING CLOSE PARENTHESIS
+
+# TODO: movements
 
 ##############################
 # (t) Thai (and Khmer & Lao) #
