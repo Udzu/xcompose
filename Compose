@@ -9204,9 +9204,11 @@ include "%L"
 # (S) Sutton SignWriting #
 ##########################
 
-# Currently just head shapes, but may add hand signs and movement indicators in future
+# [WIP]
 
-# (h = head)
+# Head shapes (visual representation)
+
+# (h = head) (shares namespace with hand shapes)
 
 <Multi_key> <S> <h> <O> : "𝧿"  U1D9FF  # SIGNWRITING HEAD
 <Multi_key> <S> <h> <space> : "𝧿"  U1D9FF  # SIGNWRITING HEAD
@@ -9333,6 +9335,97 @@ include "%L"
 <Multi_key> <S> <m> <w> <Return> : "𝩥"  U1DA65  # SIGNWRITING TEETH ON LIPS
 <Multi_key> <S> <m> <numbersign> <w> <numbersign> <Return> : "𝩦"  U1DA66  # SIGNWRITING TEETH ON LIPS MOVEMENT
 <Multi_key> <S> <m> <minus> <numbersign> <minus> <Return> : "𝩧"  U1DA67  # SIGNWRITING TEETH BITE LIPS
+
+# Hand shapes (semantic representation)
+
+# (h = hand) (shares namespace with head)
+
+# convention: h + hand shape + (finger + finger shape) in increasing finger order
+#
+#    hand shape: a(=angle), c(=circle), C(=cup), f(=fist), F(=flat), h(=hinge), H(=hook), o(=oval), u=(curlicue), w(=claw)
+#        finger: 1(=thumb), 2(=index), 3(=middle), 4(=ring), 5(=pinky)
+#  finger shape: as for hand shape + A(=angled out), b(=bent), f(=forward), r(=raised knuckles), _(=under), ^(=over), >(=between)
+#   joint shape: j(=conjoined), x(=crossed)
+
+<Multi_key> <S> <h> <f> <2> <space> : "𝠀"  U1D800  # SIGNWRITING HAND-FIST INDEX
+<Multi_key> <S> <h> <c> <2> <space> : "𝠁"  U1D801  # SIGNWRITING HAND-CIRCLE INDEX
+<Multi_key> <S> <h> <C> <2> <space> : "𝠂"  U1D802  # SIGNWRITING HAND-CUP INDEX
+<Multi_key> <S> <h> <o> <2> <space> : "𝠃"  U1D803  # SIGNWRITING HAND-OVAL INDEX
+<Multi_key> <S> <h> <h> <2> <space> : "𝠄"  U1D804  # SIGNWRITING HAND-HINGE INDEX
+<Multi_key> <S> <h> <a> <2> <space> : "𝠅"  U1D805  # SIGNWRITING HAND-ANGLE INDEX
+<Multi_key> <S> <h> <f> <2> <b> <space> : "𝠆"  U1D806  # SIGNWRITING HAND-FIST INDEX BENT
+<Multi_key> <S> <h> <c> <2> <b> : "𝠇"  U1D807  # SIGNWRITING HAND-CIRCLE INDEX BENT
+<Multi_key> <S> <h> <f> <1> <underscore> <2> <b> : "𝠈"  U1D808  # SIGNWRITING HAND-FIST THUMB UNDER INDEX BENT
+<Multi_key> <S> <h> <f> <2> <r> <space> : "𝠉"  U1D809  # SIGNWRITING HAND-FIST INDEX RAISED KNUCKLE
+<Multi_key> <S> <h> <f> <2> <C> : "𝠊"  U1D80A  # SIGNWRITING HAND-FIST INDEX CUPPED
+<Multi_key> <S> <h> <f> <2> <h> <space> : "𝠋"  U1D80B  # SIGNWRITING HAND-FIST INDEX HINGED
+<Multi_key> <S> <h> <f> <2> <h> <underscore> : "𝠌"  U1D80C  # SIGNWRITING HAND-FIST INDEX HINGED LOW
+<Multi_key> <S> <h> <c> <2> <h> : "𝠍"  U1D80D  # SIGNWRITING HAND-CIRCLE INDEX HINGE
+
+<Multi_key> <S> <h> <f> <2> <3> <space> : "𝠎"  U1D80E  # SIGNWRITING HAND-FIST INDEX MIDDLE
+<Multi_key> <S> <h> <c> <2> <3> <space> : "𝠏"  U1D80F  # SIGNWRITING HAND-CIRCLE INDEX MIDDLE
+<Multi_key> <S> <h> <f> <2> <b> <3> <b> : "𝠐"  U1D810  # SIGNWRITING HAND-FIST INDEX MIDDLE BENT
+<Multi_key> <S> <h> <f> <2> <r> <3> <r> : "𝠑"  U1D811  # SIGNWRITING HAND-FIST INDEX MIDDLE RAISED KNUCKLES
+<Multi_key> <S> <h> <f> <2> <h> <3> <h> : "𝠒"  U1D812  # SIGNWRITING HAND-FIST INDEX MIDDLE HINGED
+<Multi_key> <S> <h> <f> <2> <3> <h> : "𝠓"  U1D813  # SIGNWRITING HAND-FIST INDEX UP MIDDLE HINGED
+<Multi_key> <S> <h> <f> <2> <h> <3> <space> : "𝠔"  U1D814  # SIGNWRITING HAND-FIST INDEX HINGED MIDDLE UP
+<Multi_key> <S> <h> <f> <2> <3> <j> <space> : "𝠕"  U1D815  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED
+<Multi_key> <S> <h> <f> <2> <b> <3> <j> : "𝠖"  U1D816  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED INDEX BENT
+<Multi_key> <S> <h> <f> <2> <3> <b> <j> : "𝠗"  U1D817  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED MIDDLE BENT
+<Multi_key> <S> <h> <f> <2> <3> <j> <C> : "𝠘"  U1D818  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED CUPPED
+<Multi_key> <S> <h> <f> <2> <3> <j> <h> : "𝠙"  U1D819  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED HINGED
+<Multi_key> <S> <h> <f> <2> <3> <x> : "𝠚"  U1D81A  # SIGNWRITING HAND-FIST INDEX MIDDLE CROSSED
+<Multi_key> <S> <h> <c> <2> <3> <x> : "𝠛"  U1D81B  # SIGNWRITING HAND-CIRCLE INDEX MIDDLE CROSSED
+<Multi_key> <S> <h> <f> <2> <underscore> <3> <b> : "𝠜"  U1D81C  # SIGNWRITING HAND-FIST MIDDLE BENT OVER INDEX
+<Multi_key> <S> <h> <f> <2> <b> <asciicircum> <3> : "𝠝"  U1D81D  # SIGNWRITING HAND-FIST INDEX BENT OVER MIDDLE
+
+<Multi_key> <S> <h> <f> <1> <2> <3> <space> : "𝠞"  U1D81E  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB
+<Multi_key> <S> <h> <c> <1> <2> <3> : "𝠟"  U1D81F  # SIGNWRITING HAND-CIRCLE INDEX MIDDLE THUMB
+<Multi_key> <S> <h> <f> <1> <b> <2> <3> <space> : "𝠠"  U1D820  # SIGNWRITING HAND-FIST INDEX MIDDLE STRAIGHT THUMB BENT
+<Multi_key> <S> <h> <f> <1> <2> <b> <3> <b> : "𝠡"  U1D821  # SIGNWRITING HAND-FIST INDEX MIDDLE BENT THUMB STRAIGHT
+<Multi_key> <S> <h> <f> <1> <b> <2> <b> <3> <b> : "𝠢"  U1D822  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB BENT
+<Multi_key> <S> <h> <f> <1> <2> <h> <3> <h> : "𝠣"  U1D823  # SIGNWRITING HAND-FIST INDEX MIDDLE HINGED SPREAD THUMB SIDE
+<Multi_key> <S> <h> <f> <1> <2> <3> <h> : "𝠤"  U1D824  # SIGNWRITING HAND-FIST INDEX UP MIDDLE HINGED THUMB SIDE
+<Multi_key> <S> <h> <f> <1> <2> <j> <3> <h> : "𝠥"  U1D825  # SIGNWRITING HAND-FIST INDEX UP MIDDLE HINGED THUMB CONJOINED
+<Multi_key> <S> <h> <f> <1> <2> <h> <3> <space> : "𝠦"  U1D826  # SIGNWRITING HAND-FIST INDEX HINGED MIDDLE UP THUMB SIDE
+<Multi_key> <S> <h> <f> <1> <f> <2> <3> <space> : "𝠧"  U1D827  # SIGNWRITING HAND-FIST INDEX MIDDLE UP SPREAD THUMB FORWARD
+<Multi_key> <S> <h> <f> <1> <C> <2> <C> <3> <C> : "𝠨"  U1D828  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB CUPPED
+<Multi_key> <S> <h> <f> <1> <c> <2> <c> <3> <c> : "𝠩"  U1D829  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB CIRCLED
+<Multi_key> <S> <h> <f> <1> <H> <2> <H> <3> <H> : "𝠪"  U1D82A  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB HOOKED
+<Multi_key> <S> <h> <f> <1> <h> <2> <h> <3> <h> : "𝠫"  U1D82B  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB HINGED
+<Multi_key> <S> <h> <f> <1> <greater> <2> <3> : "𝠬"  U1D82C  # SIGNWRITING HAND-FIST THUMB BETWEEN INDEX MIDDLE STRAIGHT
+<Multi_key> <S> <h> <f> <1> <2> <3> <j> <space> : "𝠭"  U1D82D  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED THUMB SIDE
+<Multi_key> <S> <h> <f> <1> <2> <j> <3> <j> : "𝠮"  U1D82E  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED THUMB SIDE CONJOINED
+<Multi_key> <S> <h> <f> <1> <b> <2> <3> <j> : "𝠯"  U1D82F  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED THUMB SIDE BENT
+<Multi_key> <S> <h> <f> <1> <H> <2> <3> <H> : "𝠰"  U1D830  # SIGNWRITING HAND-FIST MIDDLE THUMB HOOKED INDEX UP
+<Multi_key> <S> <h> <f> <1> <H> <2> <H> <3> <space> : "𝠱"  U1D831  # SIGNWRITING HAND-FIST INDEX THUMB HOOKED MIDDLE UP
+<Multi_key> <S> <h> <f> <1> <2> <3> <j> <h> : "𝠲"  U1D832  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED HINGED THUMB SIDE
+<Multi_key> <S> <h> <f> <1> <2> <3> <x> : "𝠳"  U1D833  # SIGNWRITING HAND-FIST INDEX MIDDLE CROSSED THUMB SIDE
+<Multi_key> <S> <h> <f> <1> <f> <2> <3> <j> <space> : "𝠴"  U1D834  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED THUMB FORWARD
+<Multi_key> <S> <h> <f> <1> <f> <2> <3> <j> <C>: "𝠵"  U1D835  # SIGNWRITING HAND-FIST INDEX MIDDLE CONJOINED CUPPED THUMB FORWARD
+<Multi_key> <S> <h> <f> <1> <C> <2> <3> <C> : "𝠶"  U1D836  # SIGNWRITING HAND-FIST MIDDLE THUMB CUPPED INDEX UP
+<Multi_key> <S> <h> <f> <1> <C> <2> <C> <3> <space> : "𝠷"  U1D837  # SIGNWRITING HAND-FIST INDEX THUMB CUPPED MIDDLE UP
+<Multi_key> <S> <h> <f> <1> <c> <2> <3> <c> : "𝠸"  U1D838  # SIGNWRITING HAND-FIST MIDDLE THUMB CIRCLED INDEX UP
+<Multi_key> <S> <h> <f> <1> <c> <2> <h> <3> <c> : "𝠹"  U1D839  # SIGNWRITING HAND-FIST MIDDLE THUMB CIRCLED INDEX HINGED
+<Multi_key> <S> <h> <f> <1> <A> <2> <A> <3> <space> : "𝠺"  U1D83A  # SIGNWRITING HAND-FIST INDEX THUMB ANGLED OUT MIDDLE UP
+<Multi_key> <S> <h> <f> <1> <a> <2> <a> <3> <space> : "𝠻"  U1D83B  # SIGNWRITING HAND-FIST INDEX THUMB ANGLED IN MIDDLE UP
+<Multi_key> <S> <h> <f> <1> <c> <2> <c> <3> <space> : "𝠼"  U1D83C  # SIGNWRITING HAND-FIST INDEX THUMB CIRCLED MIDDLE UP
+<Multi_key> <S> <h> <f> <1> <j> <h> <2> <3> : "𝠽"  U1D83D  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB CONJOINED HINGED
+<Multi_key> <S> <h> <f> <1> <A> <2> <A> <3> <A> : "𝠾"  U1D83E  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB ANGLED OUT
+<Multi_key> <S> <h> <f> <1> <a> <2> <a> <3> <a> : "𝠿"  U1D83F  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB ANGLED
+<Multi_key> <S> <h> <f> <1> <A> <2> <3> <A> : "𝡀"  U1D840  # SIGNWRITING HAND-FIST MIDDLE THUMB ANGLED OUT INDEX UP
+<Multi_key> <S> <h> <f> <1> <A> <2> <x> <3> <A> : "𝡁"  U1D841  # SIGNWRITING HAND-FIST MIDDLE THUMB ANGLED OUT INDEX CROSSED
+<Multi_key> <S> <h> <f> <1> <a> <2> <3> <a> : "𝡂"  U1D842  # SIGNWRITING HAND-FIST MIDDLE THUMB ANGLED INDEX UP
+<Multi_key> <S> <h> <f> <1> <H> <2> <3> <h> : "𝡃"  U1D843  # SIGNWRITING HAND-FIST INDEX THUMB HOOKED MIDDLE HINGED
+
+<Multi_key> <S> <h> <F> <2> <3> <4> <5> : "𝡄"  U1D844  # SIGNWRITING HAND-FLAT FOUR FINGERS
+<Multi_key> <S> <h> <F> <2> <b> <3> <b> <4> <b> <5> <b> : "𝡅"  U1D845  # SIGNWRITING HAND-FLAT FOUR FINGERS BENT
+<Multi_key> <S> <h> <F> <2> <h> <3> <h> <4> <h> <5> <h> : "𝡆"  U1D846  # SIGNWRITING HAND-FLAT FOUR FINGERS HINGED
+<Multi_key> <S> <h> <F> <2> <3> <j> <4> <j> <5> <j> : "𝡇"  U1D847  # SIGNWRITING HAND-FLAT FOUR FINGERS CONJOINED
+<Multi_key> <S> <h> <F> <2> <3> <j> <4> <5> <j> : "𝡈"  U1D848  # SIGNWRITING HAND-FLAT FOUR FINGERS CONJOINED SPLIT
+<Multi_key> <S> <h> <w> <2> <3> <j> <4> <j> <5> <j> : "𝡉"  U1D849  # SIGNWRITING HAND-CLAW FOUR FINGERS CONJOINED
+<Multi_key> <S> <h> <f> <2> <3> <j> <4> <j> <5> <j> <b> : "𝡊"  U1D84A  # SIGNWRITING HAND-FIST FOUR FINGERS CONJOINED BENT
+<Multi_key> <S> <h> <h> <2> <3> <j> <4> <j> <5> <j> : "𝡋"  U1D84B  # SIGNWRITING HAND-HINGE FOUR FINGERS CONJOINED
 
 ##############################
 # (t) Thai (and Khmer & Lao) #
