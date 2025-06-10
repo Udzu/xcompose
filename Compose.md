@@ -27,7 +27,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (364): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (7098)
+### Non-Latin script characters (7208)
 * **Arabic**, Mandaic, Osmanya, Syriac, Neo-Tifinagh, Thaana & Yezidi (334): ⁧رِيدِتْ⁩, 𐒇𐒗𐒆𐒘𐒂, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (95): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (84): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
@@ -43,14 +43,15 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Korean** (using positional jamo) (118): 레딧 etc
 * **International Morse Code** (76): ···---··· etc
 * **Old Italic**, Ogham & Runic (150): 𐌓𐌄𐌃𐌃𐌉𐌕, ᚏᚓᚇᚔᚈ, ᚱᛖᛞᛞᛁᛏ etc
+* **Sutton SignWriting** (faces only) (110): 𝧿𝨰𝩀𝩪𝨔 𝧿𝩜𝨘𝩫 etc
 * **Thai**, Khmer & Lao (239): เรดดิต, រេទិត, ເຣັດິຕ etc
 * **Zhuyin**, Fraser, Mongolian, ʼPhags-pa, Pollard, Tai Le & Tibetan (511): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (3895)
+### Symbols (3917)
 * **Emoji** (1552): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (271): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
-* **Technical** (84): ⏻ ⎙ ⌘ etc
+* **Technical** (106): ⏻ ⎙ ⌘ etc
 * **Numerals** (129): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (112): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (263): ♞c6 🩡 🂽 🁖 🀄︎ etc
