@@ -3644,6 +3644,7 @@ include "%L"
 <Multi_key> <A> <c> <grave> <o>          : "օ"  U0585  # ARMENIAN SMALL LETTER OH (ò)
 <Multi_key> <A> <c> <f>                  : "ֆ"  U0586  # ARMENIAN SMALL LETTER FEH
 <Multi_key> <A> <c> <e> <w>              : "և"  U0587  # ARMENIAN SMALL LIGATURE ECH YIWN
+<Multi_key> <A> <c> <minus> <y>          : "ֈ"  U0588  # ARMENIAN SMALL LETTER YI WITH STROKE
 
 <Multi_key> <A> <semicolon> <c>          : "ՙ"  U0559  # ARMENIAN MODIFIER LETTER LEFT HALF RING (conflicts with Ą, use A,)
 <Multi_key> <A> <semicolon> <apostrophe> : "՚"  U055A  # ARMENIAN APOSTROPHE (conflicts)
@@ -3651,8 +3652,17 @@ include "%L"
 <Multi_key> <A> <semicolon> <exclam>     : "՜"  U055C  # ARMENIAN EXCLAMATION MARK (conflicts)
 <Multi_key> <A> <semicolon> <comma>      : "՝"  U055D  # ARMENIAN COMMA (conflicts)
 <Multi_key> <A> <semicolon> <question>   : "՞"  U055E  # ARMENIAN QUESTION MARK (conflicts)
+<Multi_key> <A> <semicolon> <apostrophe> : "՟"  U055F  # ARMENIAN ABBREVIATION MARK (conflicts)
 <Multi_key> <A> <semicolon> <period>     : "։"  U0589  # ARMENIAN FULL STOP (conflicts)
 <Multi_key> <A> <semicolon> <minus>      : "֊"  U058A  # ARMENIAN HYPHEN (conflicts)
+<Multi_key> <A> <semicolon> <at> <greater> : "֍"  U058D  # RIGHT-FACING ARMENIAN ETERNITY SIGN (conflicts)
+<Multi_key> <A> <semicolon> <at> <less>  : "֎"  U058E  # LEFT-FACING ARMENIAN ETERNITY SIGN (conflicts)
+
+<Multi_key> <A> <x> <m> <n> : "ﬓ"  UFB13  # ARMENIAN SMALL LIGATURE MEN NOW
+<Multi_key> <A> <x> <m> <e> : "ﬔ"  UFB14  # ARMENIAN SMALL LIGATURE MEN ECH
+<Multi_key> <A> <x> <m> <i> : "ﬕ"  UFB15  # ARMENIAN SMALL LIGATURE MEN INI
+<Multi_key> <A> <x> <v> <n> : "ﬖ"  UFB16  # ARMENIAN SMALL LIGATURE VEW NOW
+<Multi_key> <A> <x> <m> <x> : "ﬗ"  UFB17  # ARMENIAN SMALL LIGATURE MEN XEH
 
 #######################
 # (b) Brahmic scripts #
@@ -4216,6 +4226,7 @@ include "%L"
 <Multi_key> <b> <C> <bar>                : "𑅁"  U11141  # CHAKMA DANDA
 <Multi_key> <b> <C> <2> <bar>            : "𑅂"  U11142  # CHAKMA DOUBLE DANDA
 <Multi_key> <b> <C> <question>           : "𑅃"  U11143  # CHAKMA QUESTION MARK
+<Multi_key> <b> <C> <Multi_key> <S> <O>  : "𑅀"  U11140  # CHAKMA SECTION MARK
 
 # (g = Gujarati)
 
@@ -4466,6 +4477,7 @@ include "%L"
 <Multi_key> <b> <j> <underscore> <period> <Return> : "𑅳"  U11173  # MAHAJANI SIGN NUKTA
 <Multi_key> <b> <j> <asciicircum> <period>         : "𑅴"  U11174  # MAHAJANI ABBREVIATION SIGN
 <Multi_key> <b> <j> <Multi_key> <S> <O>            : "𑅵"  U11175  # MAHAJANI SECTION MARK
+<Multi_key> <b> <j> <S> <H> <R> <I>                : "𑅶"  U11176  # MAHAJANI LIGATURE SHRI
 
 # (k = Kannada)
 
@@ -4647,6 +4659,7 @@ include "%L"
 <Multi_key> <b> <L> <comma> <Return>     : "᤹"  U1939  # LIMBU SIGN MUKPHRENG
 <Multi_key> <b> <L> <quotedbl> <Return>  : "᤺"  U193A  # LIMBU SIGN KEMPHRENG
 <Multi_key> <b> <L> <underscore> <Return> : "᤻"  U193B  # LIMBU SIGN SA-I
+<Multi_key> <b> <L> <L> <O>              : "᥀"  U1940  # LIMBU SIGN LOO
 
 # Numerals
 
@@ -6633,7 +6646,9 @@ include "%L"
 <Multi_key> <C> <p> <slash> <space> : "𑫳"  U11AF3  # PAU CIN HAU LOW-FALLING TONE LONG
 <Multi_key> <C> <p> <slash> <period> : "𑫴"  U11AF4  # PAU CIN HAU LOW-FALLING TONE
 <Multi_key> <C> <p> <slash> <colon> : "𑫵"  U11AF5  # PAU CIN HAU GLOTTAL STOP
-<Multi_key> <C> <p> <slash> <slash> : "𑫶"  U11AF6  # PAU CIN HAU LOW-FALLING TONE LONG FINAL
+<Multi_key> <C> <p> <slash> <slash> <space> : "𑫶"  U11AF6  # PAU CIN HAU LOW-FALLING TONE LONG FINAL
+<Multi_key> <C> <p> <slash> <slash> <period> : "𑫷"  U11AF7  # PAU CIN HAU LOW-FALLING TONE FINAL
+<Multi_key> <C> <p> <slash> <slash> <colon> : "𑫸"  U11AF8  # PAU CIN HAU GLOTTAL STOP FINAL
 
 # (s/S = Shavian)
 
@@ -6750,6 +6765,8 @@ include "%L"
 <Multi_key> <C> <w> <numbersign> <7> : "𞋷"  U1E2F7  # WANCHO DIGIT SEVEN
 <Multi_key> <C> <w> <numbersign> <8> : "𞋸"  U1E2F8  # WANCHO DIGIT EIGHT
 <Multi_key> <C> <w> <numbersign> <9> : "𞋹"  U1E2F9  # WANCHO DIGIT NINE
+
+<Multi_key> <C> <w> <R> <u> : "𞋿"  U1E2FF  # WANCHO NGUN SIGN (RUPEE)
 
 ######################################################
 # (g) Greek (and Coptic, Cypriot, Gothic & Linear B) #
@@ -7148,6 +7165,30 @@ include "%L"
 <Multi_key> <g> <x> <asciicircum> <apostrophe> <O>              : "Ώ"  U1FFB  # GREEK CAPITAL LETTER OMEGA WITH OXIA
 <Multi_key> <g> <x> <comma> <O>                                 : "ῼ"  U1FFC  # GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI
 
+# superscripts and subscripts
+
+<Multi_key> <g> <c> <asciicircum> <underscore> <g> : "ᵞ"  U1D5E  # MODIFIER LETTER SMALL GREEK GAMMA
+<Multi_key> <g> <c> <asciicircum> <underscore> <d> : "ᵟ"  U1D5F  # MODIFIER LETTER SMALL DELTA
+<Multi_key> <g> <x> <asciicircum> <underscore> <p> <h> : "ᵠ"  U1D60  # MODIFIER LETTER SMALL GREEK PHI
+<Multi_key> <g> <c> <asciicircum> <underscore> <f> : "ᵠ"  U1D60  # MODIFIER LETTER SMALL GREEK PHI
+<Multi_key> <g> <c> <asciicircum> <underscore> <c> : "ᵡ"  U1D61  # MODIFIER LETTER SMALL CHI
+<Multi_key> <g> <x> <asciicircum> <underscore> <k> <h> : "ᵡ"  U1D61  # MODIFIER LETTER SMALL CHI
+
+<Multi_key> <g> <c> <underscore> <asciicircum> <G> : "ᴦ"  U1D26  # GREEK LETTER SMALL CAPITAL GAMMA
+<Multi_key> <g> <c> <underscore> <asciicircum> <L> : "ᴧ"  U1D27  # GREEK LETTER SMALL CAPITAL LAMDA
+<Multi_key> <g> <c> <underscore> <asciicircum> <P> : "ᴨ"  U1D28  # GREEK LETTER SMALL CAPITAL PI
+<Multi_key> <g> <c> <underscore> <asciicircum> <R> : "ᴩ"  U1D29  # GREEK LETTER SMALL CAPITAL RHO
+<Multi_key> <g> <x> <underscore> <asciicircum> <P> <S> : "ᴪ"  U1D2A  # GREEK LETTER SMALL CAPITAL PSI
+<Multi_key> <g> <x> <underscore> <asciicircum> <O> : "ꭥ"  UAB65  # GREEK LETTER SMALL CAPITAL OMEGA
+
+<Multi_key> <g> <c> <underscore> <b> : "ᵦ"  U1D66  # GREEK SUBSCRIPT SMALL LETTER BETA
+<Multi_key> <g> <c> <underscore> <g> : "ᵧ"  U1D67  # GREEK SUBSCRIPT SMALL LETTER GAMMA
+<Multi_key> <g> <c> <underscore> <r> : "ᵨ"  U1D68  # GREEK SUBSCRIPT SMALL LETTER RHO
+<Multi_key> <g> <x> <underscore> <p> <h> : "ᵩ"  U1D69  # GREEK SUBSCRIPT SMALL LETTER PHI
+<Multi_key> <g> <c> <underscore> <f> : "ᵩ"  U1D69  # GREEK SUBSCRIPT SMALL LETTER PHI
+<Multi_key> <g> <c> <underscore> <c> : "ᵪ"  U1D6A  # GREEK SUBSCRIPT SMALL LETTER CHI
+<Multi_key> <g> <x> <underscore> <k> <h> : "ᵪ"  U1D6A  # GREEK SUBSCRIPT SMALL LETTER CHI
+
 # (B = Linear B)
 
 <Multi_key> <g> <B> <a> : "𐀀"  U10000  # LINEAR B SYLLABLE B008 A
@@ -7466,6 +7507,8 @@ include "%L"
 # additional Greek letter variants not represented in the alphanumerics block
 <Multi_key> <percent> <g> <at> <U> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
 <Multi_key> <percent> <g> <at> <Y> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
+<Multi_key> <percent> <g> <at> <quotedbl> <U> : "ϔ"  U03D4  # GREEK UPSILON WITH DIAERESIS AND HOOK SYMBOL
+<Multi_key> <percent> <g> <at> <quotedbl> <Y> : "ϔ"  U03D4  # GREEK UPSILON WITH DIAERESIS AND HOOK SYMBOL
 <Multi_key> <percent> <g> <at> <b> : "ϐ" U03D0   # GREEK BETA SYMBOL
 <Multi_key> <percent> <g> <at> <s> : "ϲ" U03F2   # GREEK LUNATE SIGMA SYMBOL
 
@@ -8030,6 +8073,8 @@ include "%L"
 <Multi_key> <h> <c> <underscore> <a> : "אַ"  UFB2E  # HEBREW LETTER ALEF WITH PATAH
 <Multi_key> <h> <c> <underscore> <T> <a> : "אָ"  UFB2F  # HEBREW LETTER ALEF WITH QAMATS
 <Multi_key> <h> <c> <asciicircum> <Y> : "ׯ"  U05EF  # HEBREW YOD TRIANGLE
+<Multi_key> <h> <c> <E>         : "ﬠ"  UFB20  # HEBREW LETTER ALTERNATIVE AYIN
+<Multi_key> <h> <c> <A> <L>     : "ﭏ"  UFB4F  # HEBREW LIGATURE ALEF LAMED
 
 <Multi_key> <h> <semicolon> <colon> <Return>                   : "ְ"  U05B0   # HEBREW POINT SHEVA
 <Multi_key> <h> <semicolon> <v> <colon> <Return>               : "ֱ"  U05B1   # HEBREW POINT HATAF SEGOL
@@ -8050,6 +8095,10 @@ include "%L"
 <Multi_key> <h> <semicolon> <S> <Return>                       : "ׁ"  U05C1   # HEBREW POINT SHIN DOT
 <Multi_key> <h> <semicolon> <s> <Return>                       : "ׂ"  U05C2   # HEBREW POINT SIN DOT
 <Multi_key> <h> <semicolon> <T> <o> <Return>                   : "ׇ"  U05C7   # HEBREW POINT QAMATS QATAN
+<Multi_key> <h> <semicolon> <u> <Return>                       : "ﬞ"  UFB1E  # HEBREW POINT JUDEO-SPANISH VARIKA
+
+<Multi_key> <h> <semicolon> <asciicircum> <asciicircum> <period> <Return> : "ׄ"  U05C4  # HEBREW MARK UPPER DOT
+<Multi_key> <h> <semicolon> <underscore> <underscore> <period> <Return> : "ׅ"  U05C5  # HEBREW MARK LOWER DOT
 
 <Multi_key> <h> <semicolon> <minus> <minus>  : "־"  U05BE   # HEBREW PUNCTUATION MAQAF
 <Multi_key> <h> <semicolon> <apostrophe>     : "׳"  U05F3   # HEBREW PUNCTUATION GERESH
@@ -8972,6 +9021,12 @@ include "%L"
 <Multi_key> <o> <i> <x> <k> <h> : "𐌙" U10319    # OLD ITALIC LETTER KHE (alternatively icK)
 <Multi_key> <o> <i> <c> <f> : "𐌚" U1031A    # OLD ITALIC LETTER EF
 
+<Multi_key> <o> <i> <v> <r> : "𐌛"  U1031B  # OLD ITALIC LETTER ERS
+<Multi_key> <o> <i> <v> <c> : "𐌜"  U1031C  # OLD ITALIC LETTER CHE (č)
+<Multi_key> <o> <i> <apostrophe> <i> : "𐌝"  U1031D  # OLD ITALIC LETTER II (í)
+<Multi_key> <o> <i> <apostrophe> <u> : "𐌞"  U1031E  # OLD ITALIC LETTER UU (ú)
+<Multi_key> <o> <i> <asterisk> : "𐌟"  U1031F  # OLD ITALIC LETTER ESS (*)
+
 <Multi_key> <o> <i> <x> <v> <F> : "Ⅎ" U2132    # TURNED CAPITAL F (DIGAMMA INVERSUM)
 <Multi_key> <o> <i> <x> <less> <C> : "Ↄ" U2183    # ROMAN NUMERAL REVERSED ONE HUNDRED (ANTISIGMA)
 <Multi_key> <o> <i> <x> <bar> <minus> : "Ⱶ" U2C75    # LATIN CAPITAL LETTER HALF H
@@ -9145,6 +9200,139 @@ include "%L"
 <Multi_key> <o> <i> <r> <R> <N> : "ᛧ" U16E7   # RUNIC LETTER SHORT-TWIG-YR
 <Multi_key> <o> <i> <r> <quotedbl> <i> : "ᛇ" U16C7   # RUNIC LETTER IWAZ EOH
 
+##########################
+# (S) Sutton SignWriting #
+##########################
+
+# Currently just head shapes, but may add hand signs and movement indicators in future
+
+# (h = head)
+
+<Multi_key> <S> <h> <O> : "𝧿"  U1D9FF  # SIGNWRITING HEAD
+<Multi_key> <S> <h> <space> : "𝧿"  U1D9FF  # SIGNWRITING HEAD
+<Multi_key> <S> <h> <u> <Return> : "𝨀"  U1DA00  # SIGNWRITING HEAD RIM
+<Multi_key> <S> <h> <asciicircum> <equal> <Return> : "𝨁"  U1DA01  # SIGNWRITING HEAD MOVEMENT-WALLPLANE STRAIGHT
+<Multi_key> <S> <h> <bar> <bar> <Return> : "𝨂"  U1DA02  # SIGNWRITING HEAD MOVEMENT-WALLPLANE TILT
+<Multi_key> <S> <h> <asciicircum> <bar> <Return> : "𝨃"  U1DA03  # SIGNWRITING HEAD MOVEMENT-FLOORPLANE STRAIGHT
+<Multi_key> <S> <h> <less> <equal> <Return> : "𝨄"  U1DA04  # SIGNWRITING HEAD MOVEMENT-WALLPLANE CURVE
+<Multi_key> <S> <h> <less> <minus> <Return> : "𝨅"  U1DA05  # SIGNWRITING HEAD MOVEMENT-FLOORPLANE CURVE
+<Multi_key> <S> <h> <o> <Return> : "𝨆"  U1DA06  # SIGNWRITING HEAD MOVEMENT CIRCLE
+<Multi_key> <S> <h> <backslash> <backslash> <Return> : "𝨇"  U1DA07  # SIGNWRITING FACE DIRECTION POSITION NOSE FORWARD TILTING
+<Multi_key> <S> <h> <bar> <minus> <Return> : "𝨈"  U1DA08  # SIGNWRITING FACE DIRECTION POSITION NOSE UP OR DOWN
+<Multi_key> <S> <h> <backslash> <minus> <Return> : "𝨉"  U1DA09  # SIGNWRITING FACE DIRECTION POSITION NOSE UP OR DOWN TILTING
+<Multi_key> <S> <h> <minus> <Return> : "𝨑"  U1DA11  # SIGNWRITING FOREHEAD NEUTRAL
+<Multi_key> <S> <h> <asterisk> <Return> : "𝨒"  U1DA12  # SIGNWRITING FOREHEAD CONTACT
+<Multi_key> <S> <h> <equal> <Return> : "𝨓"  U1DA13  # SIGNWRITING FOREHEAD WRINKLED
+<Multi_key> <S> <h> <C> <Return> : "𝨰"  U1DA30  # SIGNWRITING EARS
+<Multi_key> <S> <h> <less> <parenright> <Return> : "𝩞"  U1DA5E  # SIGNWRITING TONGUE MOVES AGAINST CHEEK
+<Multi_key> <S> <h> <asciicircum> <equal> <n> <asciicircum> <equal> <Return> : "𝩨"  U1DA68  # SIGNWRITING MOVEMENT-WALLPLANE JAW
+<Multi_key> <S> <h> <asciicircum> <bar> <n> <asciicircum> <bar> <Return> : "𝩩"  U1DA69  # SIGNWRITING MOVEMENT-FLOORPLANE JAW
+<Multi_key> <S> <h> <parenright> <parenleft> <Return> : "𝩪"  U1DA6A  # SIGNWRITING NECK
+<Multi_key> <S> <h> <n> <Return> : "𝩫"  U1DA6B  # SIGNWRITING HAIR
+<Multi_key> <S> <h> <exclam> <Return> : "𝩬"  U1DA6C  # SIGNWRITING EXCITEMENT
+
+# (e = eyes)
+
+<Multi_key> <S> <e> <slash> <slash> <Return> : "𝨊"  U1DA0A  # SIGNWRITING EYEBROWS STRAIGHT UP
+<Multi_key> <S> <e> <equal> <Return> : "𝨋"  U1DA0B  # SIGNWRITING EYEBROWS STRAIGHT NEUTRAL
+<Multi_key> <S> <e> <backslash> <backslash> <Return> : "𝨌"  U1DA0C  # SIGNWRITING EYEBROWS STRAIGHT DOWN
+<Multi_key> <S> <e> <slash> <minus> <Return> : "𝨍"  U1DA0D  # SIGNWRITING DREAMY EYEBROWS NEUTRAL DOWN
+<Multi_key> <S> <e> <minus> <backslash> <Return> : "𝨎"  U1DA0E  # SIGNWRITING DREAMY EYEBROWS DOWN NEUTRAL
+<Multi_key> <S> <e> <minus> <slash> <Return> : "𝨏"  U1DA0F  # SIGNWRITING DREAMY EYEBROWS UP NEUTRAL
+<Multi_key> <S> <e> <backslash> <minus> <Return> : "𝨐"  U1DA10  # SIGNWRITING DREAMY EYEBROWS NEUTRAL UP
+<Multi_key> <S> <e> <n> <Return> : "𝨔"  U1DA14  # SIGNWRITING EYES OPEN
+<Multi_key> <S> <e> <minus> <Return> : "𝨕"  U1DA15  # SIGNWRITING EYES SQUEEZED
+<Multi_key> <S> <e> <u> <Return> : "𝨖"  U1DA16  # SIGNWRITING EYES CLOSED
+<Multi_key> <S> <e> <n> <asciicircum> <v> <Return> : "𝨗"  U1DA17  # SIGNWRITING EYE BLINK SINGLE
+<Multi_key> <S> <e> <n> <v> <v> <Return> : "𝨘"  U1DA18  # SIGNWRITING EYE BLINK MULTIPLE
+<Multi_key> <S> <e> <n> <minus> <Return> : "𝨙"  U1DA19  # SIGNWRITING EYES HALF OPEN
+<Multi_key> <S> <e> <o> <Return> : "𝨚"  U1DA1A  # SIGNWRITING EYES WIDE OPEN
+<Multi_key> <S> <e> <minus> <u> <Return> : "𝨛"  U1DA1B  # SIGNWRITING EYES HALF CLOSED
+<Multi_key> <S> <e> <n> <u> <Return> : "𝨜"  U1DA1C  # SIGNWRITING EYES WIDENING MOVEMENT
+<Multi_key> <S> <e> <n> <minus> <u> <Return> : "𝨝"  U1DA1D  # SIGNWRITING EYE WINK
+<Multi_key> <S> <e> <bar> <n> <Return> : "𝨞"  U1DA1E  # SIGNWRITING EYELASHES UP
+<Multi_key> <S> <e> <u> <bar> <Return> : "𝨟"  U1DA1F  # SIGNWRITING EYELASHES DOWN
+<Multi_key> <S> <e> <u> <bar> <w> <Return> : "𝨠"  U1DA20  # SIGNWRITING EYELASHES FLUTTERING
+<Multi_key> <S> <e> <asciicircum> <equal> <Return> : "𝨡"  U1DA21  # SIGNWRITING EYEGAZE-WALLPLANE STRAIGHT
+<Multi_key> <S> <e> <asciicircum> <equal> <asciicircum> <equal> <Return> : "𝨢"  U1DA22  # SIGNWRITING EYEGAZE-WALLPLANE STRAIGHT DOUBLE
+<Multi_key> <S> <e> <v> <equal> <asciicircum> <equal> <Return> : "𝨣"  U1DA23  # SIGNWRITING EYEGAZE-WALLPLANE STRAIGHT ALTERNATING
+<Multi_key> <S> <e> <asciicircum> <bar> <Return> : "𝨤"  U1DA24  # SIGNWRITING EYEGAZE-FLOORPLANE STRAIGHT
+<Multi_key> <S> <e> <asciicircum> <bar> <asciicircum> <bar> <Return> : "𝨥"  U1DA25  # SIGNWRITING EYEGAZE-FLOORPLANE STRAIGHT DOUBLE
+<Multi_key> <S> <e> <less> <bar> <Return> : "𝨦"  U1DA26  # SIGNWRITING EYEGAZE-FLOORPLANE STRAIGHT ALTERNATING
+<Multi_key> <S> <e> <L> <equal> <Return> : "𝨧"  U1DA27  # SIGNWRITING EYEGAZE-WALLPLANE CURVED
+<Multi_key> <S> <e> <L> <minus> <Return> : "𝨨"  U1DA28  # SIGNWRITING EYEGAZE-FLOORPLANE CURVED
+<Multi_key> <S> <e> <L> <parenright> <parenright> <Return> : "𝨩"  U1DA29  # SIGNWRITING EYEGAZE-WALLPLANE CIRCLING
+
+# (c = cheeks)
+
+<Multi_key> <S> <c> <1> <Return> : "𝨪"  U1DA2A  # SIGNWRITING CHEEKS PUFFED
+<Multi_key> <S> <c> <0> <Return> : "𝨫"  U1DA2B  # SIGNWRITING CHEEKS NEUTRAL
+<Multi_key> <S> <c> <greater> <Return> : "𝨬"  U1DA2C  # SIGNWRITING CHEEKS SUCKED
+<Multi_key> <S> <c> <less> <Return> : "𝨬"  U1DA2C  # SIGNWRITING CHEEKS SUCKED
+<Multi_key> <S> <c> <asciicircum> <asciitilde> <Return> : "𝨭"  U1DA2D  # SIGNWRITING TENSE CHEEKS HIGH
+<Multi_key> <S> <c> <asciitilde> <Return> : "𝨮"  U1DA2E  # SIGNWRITING TENSE CHEEKS MIDDLE
+<Multi_key> <S> <c> <underscore> <asciitilde> <Return> : "𝨯"  U1DA2F  # SIGNWRITING TENSE CHEEKS LOW
+
+# (n = nose)
+
+<Multi_key> <S> <n> <bar> <Return> : "𝨱"  U1DA31  # SIGNWRITING NOSE NEUTRAL
+<Multi_key> <S> <n> <asterisk> <Return> : "𝨲"  U1DA32  # SIGNWRITING NOSE CONTACT
+<Multi_key> <S> <n> <bar> <equal> <Return> : "𝨳"  U1DA33  # SIGNWRITING NOSE WRINKLES
+<Multi_key> <S> <n> <braceleft> <bar> <braceright> <Return> : "𝨴"  U1DA34  # SIGNWRITING NOSE WIGGLES
+<Multi_key> <S> <n> <greater> <period> <less> <Return> : "𝨵"  U1DA35  # SIGNWRITING AIR BLOWING OUT
+<Multi_key> <S> <n> <greater> <minus> <less> <Return> : "𝨶"  U1DA36  # SIGNWRITING AIR SUCKING IN
+
+<Multi_key> <S> <n> <bar> <period> : "𝨷"  U1DA37  # SIGNWRITING AIR BLOW SMALL ROTATIONS
+<Multi_key> <S> <n> <bar> <bar> : "𝨸"  U1DA38  # SIGNWRITING AIR SUCK SMALL ROTATIONS
+<Multi_key> <S> <n> <less> <apostrophe> : "𝨹"  U1DA39  # SIGNWRITING BREATH INHALE
+<Multi_key> <S> <n> <greater> <apostrophe> : "𝨺"  U1DA3A  # SIGNWRITING BREATH EXHALE
+
+# (m = mouth)
+
+<Multi_key> <S> <m> <minus> <Return> : "𝨻"  U1DA3B  # SIGNWRITING MOUTH CLOSED NEUTRAL
+<Multi_key> <S> <m> <asciicircum> <minus> <asciicircum> <bar> <Return> : "𝨼"  U1DA3C  # SIGNWRITING MOUTH CLOSED FORWARD
+<Multi_key> <S> <m> <minus> <asterisk> <minus> <Return> : "𝨽"  U1DA3D  # SIGNWRITING MOUTH CLOSED CONTACT
+<Multi_key> <S> <m> <u> <Return> : "𝨾"  U1DA3E  # SIGNWRITING MOUTH SMILE
+<Multi_key> <S> <m> <parenleft> <u> <parenright> <Return> : "𝨿"  U1DA3F  # SIGNWRITING MOUTH SMILE WRINKLED
+<Multi_key> <S> <m> <minus> <u> <Return> : "𝩀"  U1DA40  # SIGNWRITING MOUTH SMILE OPEN
+<Multi_key> <S> <m> <n> <Return> : "𝩁"  U1DA41  # SIGNWRITING MOUTH FROWN
+<Multi_key> <S> <m> <parenleft> <n> <parenright> <Return> : "𝩂"  U1DA42  # SIGNWRITING MOUTH FROWN WRINKLED
+<Multi_key> <S> <m> <n> <minus> <Return> : "𝩃"  U1DA43  # SIGNWRITING MOUTH FROWN OPEN
+<Multi_key> <S> <m> <o> <Return> : "𝩄"  U1DA44  # SIGNWRITING MOUTH OPEN CIRCLE
+<Multi_key> <S> <m> <asciicircum> <o> <asciicircum> <Return> : "𝩅"  U1DA45  # SIGNWRITING MOUTH OPEN FORWARD
+<Multi_key> <S> <m> <parenleft> <o> <parenright> <Return> : "𝩆"  U1DA46  # SIGNWRITING MOUTH OPEN WRINKLED
+<Multi_key> <S> <m> <parenleft> <equal> <parenright> <Return> : "𝩇"  U1DA47  # SIGNWRITING MOUTH OPEN OVAL
+<Multi_key> <S> <m> <parenleft> <parenleft> <equal> <parenright> <parenright> <Return> : "𝩈"  U1DA48  # SIGNWRITING MOUTH OPEN OVAL WRINKLED
+<Multi_key> <S> <m> <parenleft> <parenright> <Return> : "𝩉"  U1DA49  # SIGNWRITING MOUTH OPEN OVAL YAWN
+<Multi_key> <S> <m> <bracketleft> <space> <bracketright> <Return> : "𝩊"  U1DA4A  # SIGNWRITING MOUTH OPEN RECTANGLE
+<Multi_key> <S> <m> <parenleft> <bracketleft> <space> <bracketright> <parenright> <Return> : "𝩋"  U1DA4B  # SIGNWRITING MOUTH OPEN RECTANGLE WRINKLED
+<Multi_key> <S> <m> <bracketleft> <bracketright> <Return> : "𝩌"  U1DA4C  # SIGNWRITING MOUTH OPEN RECTANGLE YAWN
+<Multi_key> <S> <m> <asterisk> <Return> : "𝩍"  U1DA4D  # SIGNWRITING MOUTH KISS
+<Multi_key> <S> <m> <asciicircum> <asterisk> <asciicircum> <Return> : "𝩎"  U1DA4E  # SIGNWRITING MOUTH KISS FORWARD
+<Multi_key> <S> <m> <parenleft> <asterisk> <parenright> <Return> : "𝩏"  U1DA4F  # SIGNWRITING MOUTH KISS WRINKLED
+<Multi_key> <S> <m> <asciitilde> <Return> : "𝩐"  U1DA50  # SIGNWRITING MOUTH TENSE
+<Multi_key> <S> <m> <asciicircum> <asciitilde> <asciicircum> <Return> : "𝩑"  U1DA51  # SIGNWRITING MOUTH TENSE FORWARD
+<Multi_key> <S> <m> <v> <asciitilde> <v> <Return> : "𝩒"  U1DA52  # SIGNWRITING MOUTH TENSE SUCKED
+<Multi_key> <S> <m> <greater> <minus> <less> <Return> : "𝩓"  U1DA53  # SIGNWRITING LIPS PRESSED TOGETHER
+<Multi_key> <S> <m> <underscore> <minus> <underscore> <Return> : "𝩔"  U1DA54  # SIGNWRITING LIP LOWER OVER UPPER
+<Multi_key> <S> <m> <minus> <underscore> <minus> <Return> : "𝩕"  U1DA55  # SIGNWRITING LIP UPPER OVER LOWER
+<Multi_key> <S> <m> <asciicircum> <underscore> <asciicircum> <Return> : "𝩖"  U1DA56  # SIGNWRITING MOUTH CORNERS
+<Multi_key> <S> <m> <parenleft> <space> <parenright> <Return> : "𝩗"  U1DA57  # SIGNWRITING MOUTH WRINKLES SINGLE
+<Multi_key> <S> <m> <parenleft> <parenleft> <space> <parenright> <parenright> <Return> : "𝩘"  U1DA58  # SIGNWRITING MOUTH WRINKLES DOUBLE
+<Multi_key> <S> <m> <bar> <o> <Return> : "𝩙"  U1DA59  # SIGNWRITING TONGUE STICKING OUT FAR
+<Multi_key> <S> <m> <minus> <at> <minus> <Return> : "𝩚"  U1DA5A  # SIGNWRITING TONGUE LICKING LIPS
+<Multi_key> <S> <m> <minus> <n> <minus> <Return> : "𝩛"  U1DA5B  # SIGNWRITING TONGUE TIP BETWEEN LIPS
+<Multi_key> <S> <m> <o> <v> <Return> : "𝩜"  U1DA5C  # SIGNWRITING TONGUE TIP TOUCHING INSIDE MOUTH
+<Multi_key> <S> <m> <o> <asciicircum> <Return> : "𝩝"  U1DA5D  # SIGNWRITING TONGUE INSIDE MOUTH RELAXED
+<Multi_key> <S> <m> <o> <minus> <Return> : "𝩟"  U1DA5F  # SIGNWRITING TONGUE CENTRE STICKING OUT
+<Multi_key> <S> <m> <o> <period> <Return> : "𝩠"  U1DA60  # SIGNWRITING TONGUE CENTRE INSIDE MOUTH
+<Multi_key> <S> <m> <numbersign> <Return> : "𝩡"  U1DA61  # SIGNWRITING TEETH
+<Multi_key> <S> <m> <numbersign> <numbersign> <numbersign> <Return> : "𝩢"  U1DA62  # SIGNWRITING TEETH MOVEMENT
+<Multi_key> <S> <m> <numbersign> <v> <Return> : "𝩣"  U1DA63  # SIGNWRITING TEETH ON TONGUE
+<Multi_key> <S> <m> <numbersign> <numbersign> <v> <numbersign> <Return> : "𝩤"  U1DA64  # SIGNWRITING TEETH ON TONGUE MOVEMENT
+<Multi_key> <S> <m> <w> <Return> : "𝩥"  U1DA65  # SIGNWRITING TEETH ON LIPS
+<Multi_key> <S> <m> <numbersign> <w> <numbersign> <Return> : "𝩦"  U1DA66  # SIGNWRITING TEETH ON LIPS MOVEMENT
+<Multi_key> <S> <m> <minus> <numbersign> <minus> <Return> : "𝩧"  U1DA67  # SIGNWRITING TEETH BITE LIPS
 
 ##############################
 # (t) Thai (and Khmer & Lao) #
@@ -9464,6 +9652,7 @@ include "%L"
 <Multi_key> <T> <c> <w> : "ᜏ" U170F   # TAGALOG LETTER WA
 <Multi_key> <T> <c> <s> : "ᜐ" U1710   # TAGALOG LETTER SA
 <Multi_key> <T> <c> <h> : "ᜑ" U1711   # TAGALOG LETTER HA
+<Multi_key> <T> <c> <R> : "ᜟ"  U171F  # TAGALOG LETTER ARCHAIC RA
 
 <Multi_key> <T> <c> <a> <space> : "ᜀ" U1700   # TAGALOG LETTER A
 <Multi_key> <T> <c> <i> <space> : "ᜁ" U1701   # TAGALOG LETTER I
@@ -9719,6 +9908,7 @@ include "%L"
 <Multi_key> <z> <f> <h> <z> : "ꓣ"  UA4E3  # LISU LETTER ZHA
 <Multi_key> <z> <f> <h> <N> : "ꓦ"  UA4E6  # LISU LETTER HA
 <Multi_key> <z> <f> <h> <S> : "ꓞ"  UA4DE  # LISU LETTER TSHA
+<Multi_key> <z> <f> <h> <y> : "𑾰"  U11FB0  # LISU LETTER YHA
 
 <Multi_key> <z> <f> <a> <space> : "ꓮ"  UA4EE  # LISU LETTER A
 <Multi_key> <z> <f> <a> <e> : "ꓯ"  UA4EF  # LISU LETTER AE
@@ -13516,18 +13706,18 @@ include "%L"
 <Multi_key> <O> <Multi_key> <parenright> <quotedbl> : "☺"  U263A  # WHITE SMILING FACE
 <Multi_key> <O> <Multi_key> <T> <X>                 : "웃"  UC6C3  # HANGUL SYLLABLE US
 
-########################
-# Egyptian Hieroglyphs #
-########################
+###############
+# Hieroglyphs #
+###############
 
-# (included as ideographic symbols not writing!)
+# (included as ideographic symbols not as writing!)
 
-# Convention: ] + name
+# Egyptian hieroglyphs: ] + name
 
 <Multi_key> <bracketright> <a> <t> <t> <a> <c> <k> : "𓁍"  U1304D  # EGYPTIAN HIEROGLYPH A068 (ATTACK)
 <Multi_key> <bracketright> <b> <i> <r> <t> <h> : "𓁒"  U13052  # EGYPTIAN HIEROGLYPH B003 (BIRTH)
 <Multi_key> <bracketright> <b> <o> <w> : "𓀓"  U13013  # EGYPTIAN HIEROGLYPH A016 (BOW)
-<Multi_key> <bracketright> <b> <o> <x> : "𓀟"  U1301F  # EGYPTIAN HIEROGLYPH A027 (BOX) (actually hastening)
+<Multi_key> <bracketright> <b> <o> <x> <e> <r> : "𓀟"  U1301F  # EGYPTIAN HIEROGLYPH A027 (BOXER) (actually hastening)
 <Multi_key> <bracketright> <b> <u> <i> <l> <d> : "𓀨"  U13028  # EGYPTIAN HIEROGLYPH A035 (BUILD)
 <Multi_key> <bracketright> <c> <a> <p> <t> <i> <v> : "𓀏"  U1300F  # EGYPTIAN HIEROGLYPH A013 (CAPTIVE)
 <Multi_key> <bracketright> <c> <h> <i> <l> <d> : "𓁖"  U13056  # EGYPTIAN HIEROGLYPH B006 (CHILD)
@@ -13541,8 +13731,9 @@ include "%L"
 <Multi_key> <bracketright> <g> <r> <i> <n> <d> : "𓀧"  U13027  # EGYPTIAN HIEROGLYPH A034 (GRIND)
 <Multi_key> <bracketright> <h> <i> <d> <e> : "𓀄"  U13004  # EGYPTIAN HIEROGLYPH A005 (HIDE)
 <Multi_key> <bracketright> <h> <i> <t> : "𓀝"  U1301D  # EGYPTIAN HIEROGLYPH A025 (HIT)
+<Multi_key> <bracketright> <k> <i> <n> <g> : "𓀛"  U1301B  # EGYPTIAN HIEROGLYPH A023 (KING)
 <Multi_key> <bracketright> <m> <a> <n> : "𓀀"  U13000  # EGYPTIAN HIEROGLYPH A001 (MAN)
-<Multi_key> <bracketright> <m> <o> <r> <e> : "𓁉"  U13049  # EGYPTIAN HIEROGLYPH A064 (MORE)
+<Multi_key> <bracketright> <m> <o> <r> <e> : "𓁉"  U13049  # EGYPTIAN HIEROGLYPH A064 ("MORE?")
 <Multi_key> <bracketright> <m> <u> <m> <m> <y> : "𓀾"  U1303E  # EGYPTIAN HIEROGLYPH A053 (MUMMY)
 <Multi_key> <bracketright> <n> <o> <p> <e> : "𓀣"  U13023  # EGYPTIAN HIEROGLYPH A031 (NOPE)
 <Multi_key> <bracketright> <n> <u> <r> <s> <e> : "𓁔"  U13054  # EGYPTIAN HIEROGLYPH B005 (NURSE)
@@ -13713,8 +13904,11 @@ include "%L"
 
 <Multi_key> <bracketright> <b> <o> <a> <t> : "𓊛"  U1329B  # EGYPTIAN HIEROGLYPH P001 (BOAT)
 <Multi_key> <bracketright> <c> <h> <a> <r> <i> <o> : "𓌝"  U1331D  # EGYPTIAN HIEROGLYPH T017 (CHARIO)
+<Multi_key> <bracketright> <f> <e> <n> <c> <e> : "𓊐"  U13290  # EGYPTIAN HIEROGLYPH O043 (FENC)
+<Multi_key> <bracketright> <r> <u> <d> <o> <l> <p> : "𓍄"  U13344  # EGYPTIAN HIEROGLYPH U016 (RUDOLPH)
 <Multi_key> <bracketright> <s> <a> <i> <l> : "𓊝"  U1329D  # EGYPTIAN HIEROGLYPH P002 (SAILBOAT)
 <Multi_key> <bracketright> <s> <l> <e> <d> : "𓍃"  U13343  # EGYPTIAN HIEROGLYPH U015 (SLED)
+<Multi_key> <bracketright> <s> <t> <a> <i> <r> <s> : "𓊍"  U1328D  # EGYPTIAN HIEROGLYPH O040 (STAIRS)
 
 <Multi_key> <bracketright> <a> <n> <k> <h> : "𓋹"  U132F9  # EGYPTIAN HIEROGLYPH S034 (ANKH)
 <Multi_key> <bracketright> <a> <r> <r> <o> <w> <Return> : "𓌕"  U13315  # EGYPTIAN HIEROGLYPH T011 (ARROW)
@@ -13735,7 +13929,7 @@ include "%L"
 <Multi_key> <bracketright> <s> <c> <a> <l> <e> : "𓍝"  U1335D  # EGYPTIAN HIEROGLYPH U038 (SCALE)
 <Multi_key> <bracketright> <s> <h> <i> <e> <l> <d> : "𓌲"  U13332  # EGYPTIAN HIEROGLYPH T036 (SHIELD)
 
-# Legs (start with <)
+# Legged characters (start with <)
 
 <Multi_key> <bracketright> <less> <less> : "𓂻"  U130BB  # EGYPTIAN HIEROGLYPH D054 (LEGS WALKING LEFT)
 <Multi_key> <bracketright> <less> <greater> : "𓂽"  U130BD  # EGYPTIAN HIEROGLYPH D055 (LEGS WALKING RIGHT)
@@ -13829,6 +14023,68 @@ include "%L"
 <Multi_key> <bracketright> <1> <slash> <6> <4> : "𓂆"  U13086  # EGYPTIAN HIEROGLYPH D016 (1/64)
 <Multi_key> <bracketright> <2> <slash> <3> : "𓂌"  U1308C  # EGYPTIAN HIEROGLYPH D022 (2/3)
 <Multi_key> <bracketright> <3> <slash> <4> : "𓂍"  U1308D  # EGYPTIAN HIEROGLYPH D023 (3/4)
+
+# Anatolian hieroglyphs: } + name
+
+<Multi_key> <braceright> <c> <a> <t> <c> <h> : "𔔷"  U14537  # ANATOLIAN HIEROGLYPH A276 (CATCH)
+<Multi_key> <braceright> <d> <r> <i> <n> <k> : "𔐇"  U14407  # ANATOLIAN HIEROGLYPH A008 (DRINK)
+<Multi_key> <braceright> <e> <a> <t> : "𔐆"  U14406  # ANATOLIAN HIEROGLYPH A007 (EAT)
+<Multi_key> <braceright> <e> <y> <e> : "𔐙"  U14419  # ANATOLIAN HIEROGLYPH A025 (EYE)
+<Multi_key> <braceright> <f> <e> <z> : "𔐋"  U1440B  # ANATOLIAN HIEROGLYPH A011 (FEZ)
+<Multi_key> <braceright> <f> <i> <g> <h> <t> : "𔐠"  U14420  # ANATOLIAN HIEROGLYPH A031 (FIGHT)
+<Multi_key> <braceright> <f> <i> <s> <t> : "𔐨"  U14428  # ANATOLIAN HIEROGLYPH A039 (FIST)
+<Multi_key> <braceright> <h> <a> <n> <d> : "𔑁"  U14441  # ANATOLIAN HIEROGLYPH A059 (HAND)
+<Multi_key> <braceright> <h> <e> <a> <d> : "𔐉"  U14409  # ANATOLIAN HIEROGLYPH A010 (HEAD)
+<Multi_key> <braceright> <h> <e> <a> <r> <t> : "𔘓"  U14613  # ANATOLIAN HIEROGLYPH A476 (HEART)
+<Multi_key> <braceright> <h> <u> <g> : "𔐈"  U14408  # ANATOLIAN HIEROGLYPH A009 (HUG)
+<Multi_key> <braceright> <l> <e> <g> : "𔑛"  U1445B  # ANATOLIAN HIEROGLYPH A082 (LEG)
+<Multi_key> <braceright> <l> <i> <c> <k> : "𔐖"  U14416  # ANATOLIAN HIEROGLYPH A022 (TONGUE)
+<Multi_key> <braceright> <r> <s> <k> <a> <t> <e> : "𔑥"  U14465  # ANATOLIAN HIEROGLYPH A092 (ROLLER SKATES)
+<Multi_key> <braceright> <s> <t> <a> <b> : "𔐝"  U1441D  # ANATOLIAN HIEROGLYPH A028 (STAB)
+<Multi_key> <braceright> <t> <a> <c> <h> <e> : "𔗯"  U145EF  # ANATOLIAN HIEROGLYPH A442 (TACHE)
+<Multi_key> <braceright> <t> <o> <n> <g> <u> <e> : "𔕸"  U14578  # ANATOLIAN HIEROGLYPH A334 (TONGUE)
+<Multi_key> <braceright> <w> <o> <m> <a> <n> : "𔐁"  U14401  # ANATOLIAN HIEROGLYPH A002 (WOMAN) (actually a man)
+<Multi_key> <braceright> <D> : "𔔲"  U14532  # ANATOLIAN HIEROGLYPH A271 (D)
+
+<Multi_key> <braceright> <a> <l> <i> <e> <n> : "𔐄"  U14404  # ANATOLIAN HIEROGLYPH A005 (ALIEN)
+<Multi_key> <braceright> <c> <t> <h> <u> <l> <u> : "𔗮"  U145EE  # ANATOLIAN HIEROGLYPH A441 (CTHULU)
+<Multi_key> <braceright> <p> <i> <g> <l> <e> <t> : "𔖄"  U14584  # ANATOLIAN HIEROGLYPH A343 (PIGLET)
+<Multi_key> <braceright> <s> <q> <u> <i> <d> : "𔓎"  U144CE  # ANATOLIAN HIEROGLYPH A179 (SQUID) (actually barley)
+<Multi_key> <braceright> <S> <q> <u> <i> <d> : "𔕙"  U14559  # ANATOLIAN HIEROGLYPH A307 (SQUIDWARD)
+
+<Multi_key> <braceright> <b> <i> <r> <d> : "𔒜"  U1449C  # ANATOLIAN HIEROGLYPH A130 (BIRD)
+<Multi_key> <braceright> <b> <o> <a> <r> : "𔙃"  U14643  # ANATOLIAN HIEROGLYPH A527 (BOAR)
+<Multi_key> <braceright> <b> <u> <l> <l> : "𔑼"  U1447C  # ANATOLIAN HIEROGLYPH A105B (BULL)
+<Multi_key> <braceright> <b> <u> <n> <n> <y> : "𔒌"  U1448C  # ANATOLIAN HIEROGLYPH A115A (BUNNY)
+<Multi_key> <braceright> <d> <o> <g> : "𔑭"  U1446D  # ANATOLIAN HIEROGLYPH A098A (DOG)
+<Multi_key> <braceright> <d> <o> <n> <k> <e> <y> : "𔑯"  U1446F  # ANATOLIAN HIEROGLYPH A100 (DONKEY)
+<Multi_key> <braceright> <f> <i> <s> <h> : "𔒥"  U144A5  # ANATOLIAN HIEROGLYPH A138 (FISH)
+<Multi_key> <braceright> <h> <o> <r> <s> <e> : "𔑮"  U1446E  # ANATOLIAN HIEROGLYPH A099 (HORSE)
+<Multi_key> <braceright> <s> <t> <a> <g> : "𔑴"  U14474  # ANATOLIAN HIEROGLYPH A102A (STAG)
+<Multi_key> <braceright> <w> <o> <r> <m> : "𔒧"  U144A7  # ANATOLIAN HIEROGLYPH A140 (WORM)
+
+<Multi_key> <braceright> <a> <r> <r> <o> <w> : "𔒩"  U144A9  # ANATOLIAN HIEROGLYPH A142 (ARROW)
+<Multi_key> <braceright> <b> <a> <t> <t> <e> <r> : "𔓨"  U144E8  # ANATOLIAN HIEROGLYPH A203 (BATTERY)
+<Multi_key> <braceright> <b> <b> <a> <l> <l> : "𔗑"  U145D1  # ANATOLIAN HIEROGLYPH A412 (BASEBALL)
+<Multi_key> <braceright> <b> <e> <l> <t> : "𔓩"  U144E9  # ANATOLIAN HIEROGLYPH A204 (SEAT BELT)
+<Multi_key> <braceright> <b> <r> <o> <l> <l> <y> : "𔕼"  U1457C  # ANATOLIAN HIEROGLYPH A336B (BROLLY)
+<Multi_key> <braceright> <c> <a> <s> <t> <l> <e> : "𔔍"  U1450D  # ANATOLIAN HIEROGLYPH A235 (CASTLE)
+<Multi_key> <braceright> <c> <h> <u> <r> <c> <h> : "𔔌"  U1450C  # ANATOLIAN HIEROGLYPH A234 (CHURCH)
+<Multi_key> <braceright> <c> <r> <o> <s> <s> : "𔕛"  U1455B  # ANATOLIAN HIEROGLYPH A309 (CROSS)
+<Multi_key> <braceright> <d> <o> <c> : "𔔦"  U14526  # ANATOLIAN HIEROGLYPH A260 (DOCUMENT)
+<Multi_key> <braceright> <g> <a> <t> <e> : "𔔏"  U1450F  # ANATOLIAN HIEROGLYPH A237 (GATE)
+<Multi_key> <braceright> <l> <i> <f> <t> : "𔓫"  U144EB  # ANATOLIAN HIEROGLYPH A206 (LIFT)
+<Multi_key> <braceright> <l> <i> <g> <h> <t> : "𔔥"  U14525  # ANATOLIAN HIEROGLYPH A259 (TRAFFIC LIGHT)
+<Multi_key> <braceright> <m> <a> <g> <n> <e> <t> : "𔗏"  U145CF  # ANATOLIAN HIEROGLYPH A410A END LOGOGRAM MARK (MAGNET)
+<Multi_key> <braceright> <m> <o> <b> <i> <l> <e> : "𔕀"  U14540  # ANATOLIAN HIEROGLYPH A285 (MOBILE)
+<Multi_key> <braceright> <p> <e> <n> : "𔕄"  U14544  # ANATOLIAN HIEROGLYPH A289 (PEN)
+
+# (plus a few Phaistos disc signs too)
+
+<Multi_key> <braceright> <b> <a> <l> <d> : "𐇒"  U101D2  # PHAISTOS DISC SIGN TATTOOED HEAD (BALD)
+<Multi_key> <braceright> <c> <o> <o> <k> <i> <e> : "𐇛"  U101DB  # PHAISTOS DISC SIGN SHIELD (COOKIE)
+<Multi_key> <braceright> <p> <u> <n> <k> : "𐇑"  U101D1  # PHAISTOS DISC SIGN PLUMED HEAD (PUNK)
+<Multi_key> <braceright> <w> <a> <l> <k> : "𐇐"  U101D0  # PHAISTOS DISC SIGN PEDESTRIAN (WALK)
 
 ####################
 # Geometric shapes #
@@ -15883,7 +16139,32 @@ include "%L"
 <Multi_key> <backslash> <Break>                 : "⎊"  U238A  # CIRCLED TRIANGLE DOWN
 <Multi_key> <backslash> <Pause>                 : "⎉"  U2389  # CIRCLED HORIZONTAL BAR WITH NOTCH
 
-# ... (by name)
+# keysyms (useful for editing this file, though other \ shortcuts take precedence)
+
+<Multi_key> <backslash> <ampersand>    : "ampersand"       # AMPERSAND
+<Multi_key> <backslash> <apostrophe>   : "apostrophe"      # APOSTROPHE
+<Multi_key> <backslash> <asciicircum>  : "asciicircum"     # CIRCUMFLEX ACCENT
+<Multi_key> <backslash> <asciitilde>   : "asciitilde"      # TILDE
+<Multi_key> <backslash> <asterisk>     : "asterisk"        # ASTERISK
+<Multi_key> <backslash> <at>           : "at"              # COMMERCIAL AT
+<Multi_key> <backslash> <braceleft>    : "braceleft"       # LEFT CURLY BRACKET
+<Multi_key> <backslash> <braceright>   : "braceright"      # RIGHT CURLY BRACKET
+<Multi_key> <backslash> <bracketleft>  : "bracketleft"     # LEFT SQUARE BRACKET
+<Multi_key> <backslash> <bracketright> : "bracketright"    # RIGHT SQUARE BRACKET
+<Multi_key> <backslash> <colon>        : "colon"           # COLON
+<Multi_key> <backslash> <dollar>       : "dollar"          # DOLLAR SIGN
+<Multi_key> <backslash> <equal>        : "equal"           # EQUALS SIGN
+<Multi_key> <backslash> <exclam>       : "exclam"          # EXCLAMATION MARK
+<Multi_key> <backslash> <grave>        : "grave"           # GRAVE ACCENT
+<Multi_key> <backslash> <numbersign>   : "numbersign"      # NUMBER SIGN
+<Multi_key> <backslash> <parenleft>    : "parenleft"       # LEFT PARENTHESIS
+<Multi_key> <backslash> <parenright>   : "parenright"      # RIGHT PARENTHESIS
+<Multi_key> <backslash> <percent>      : "percent"         # PERCENT SIGN
+<Multi_key> <backslash> <plus>         : "plus"            # PLUS SIGN
+<Multi_key> <backslash> <quotedbl>     : "quotedbl"        # QUOTATION MARK
+<Multi_key> <backslash> <semicolon>    : "semicolon"       # SEMICOLON
+
+# computer keys (by name)
 
 <Multi_key> <backslash> <c> <t> <r> <l>         : "⎈"  U2388  # HELM SYMBOL (CONTROL)
 <Multi_key> <backslash> <s> <h> <i> <f> <t>     : "⇧"  U21E7  # UPWARDS WHITE ARROW (SHIFT)
