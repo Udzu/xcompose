@@ -9232,7 +9232,7 @@ include "%L"
 
 # Head shapes (visual representation)
 
-# (h = head) (shares namespace with hand shapes below)
+# (h = head) (shares namespace with hand shapes below as SH is already taken)
 
 <Multi_key> <S> <h> <O> : "𝧿"  U1D9FF  # SIGNWRITING HEAD
 <Multi_key> <S> <h> <space> : "𝧿"  U1D9FF  # SIGNWRITING HEAD
@@ -9566,12 +9566,12 @@ include "%L"
 #<Multi_key> <S> <h> <h> <1> <2> : "𝣯"  U1D8EF  # SIGNWRITING HAND-HINGE INDEX THUMB LARGE
 <Multi_key> <S> <h> <h> <1> <2> <space> : "𝣰"  U1D8F0  # SIGNWRITING HAND-HINGE INDEX THUMB
 #<Multi_key> <S> <h> <h> <1> <2> : "𝣱"  U1D8F1  # SIGNWRITING HAND-HINGE INDEX THUMB SMALL
-#<Multi_key> <S> <h> <a> <1> <2> : "𝣲"  U1D8F2  # SIGNWRITING HAND-ANGLE INDEX THUMB OUT
-#<Multi_key> <S> <h> <a> <1> <2> : "𝣳"  U1D8F3  # SIGNWRITING HAND-ANGLE INDEX THUMB IN
+<Multi_key> <S> <h> <a> <v> <1> <2> <space> : "𝣲"  U1D8F2  # SIGNWRITING HAND-ANGLE INDEX THUMB OUT
+<Multi_key> <S> <h> <a> <asciicircum> <1> <2> : "𝣳"  U1D8F3  # SIGNWRITING HAND-ANGLE INDEX THUMB IN
 <Multi_key> <S> <h> <a> <1> <2> <space> : "𝣴"  U1D8F4  # SIGNWRITING HAND-ANGLE INDEX THUMB
 
 <Multi_key> <S> <h> <f> <1> <space> : "𝣵"  U1D8F5  # SIGNWRITING HAND-FIST THUMB
-#<Multi_key> <S> <h> <f> <1> : "𝣶"  U1D8F6  # SIGNWRITING HAND-FIST THUMB HEEL
+<Multi_key> <S> <h> <f> <h> <1> : "𝣶"  U1D8F6  # SIGNWRITING HAND-FIST THUMB HEEL
 #<Multi_key> <S> <h> <f> <1> : "𝣷"  U1D8F7  # SIGNWRITING HAND-FIST THUMB SIDE DIAGONAL
 #<Multi_key> <S> <h> <f> <1> : "𝣸"  U1D8F8  # SIGNWRITING HAND-FIST THUMB SIDE CONJOINED
 <Multi_key> <S> <h> <f> <1> <b> <space> : "𝣹"  U1D8F9  # SIGNWRITING HAND-FIST THUMB SIDE BENT
@@ -9583,9 +9583,54 @@ include "%L"
 <Multi_key> <S> <h> <f> <1> <asciicircum> <2> <3> <v> : "𝣿"  U1D8FF  # SIGNWRITING HAND-FIST THUMB OVER TWO FINGERS
 <Multi_key> <S> <h> <f> <1> <underscore> <2> <3> <4> <v> : "𝤀"  U1D900  # SIGNWRITING HAND-FIST THUMB UNDER THREE FINGERS
 <Multi_key> <S> <h> <f> <1> <underscore> <2> <3> <4> <5> <v> : "𝤁"  U1D901  # SIGNWRITING HAND-FIST THUMB UNDER FOUR FINGERS
-#<Multi_key> <S> <h> <f> <1> : "𝤂"  U1D902  # SIGNWRITING HAND-FIST THUMB OVER FOUR RAISED KNUCKLES
+<Multi_key> <S> <h> <f> <1> <asciicircum> <2> <3> <4> <5> <r> : "𝤂"  U1D902  # SIGNWRITING HAND-FIST THUMB OVER FOUR RAISED KNUCKLES
 <Multi_key> <S> <h> <f> <space> : "𝤃"  U1D903  # SIGNWRITING HAND-FIST
-#<Multi_key> <S> <h> <f> <1> : "𝤄"  U1D904  # SIGNWRITING HAND-FIST HEEL
+<Multi_key> <S> <h> <f> <h> <space> : "𝤄"  U1D904  # SIGNWRITING HAND-FIST HEEL
+
+# Movements (visual representation)
+
+# (c = contact movement)
+
+<Multi_key> <S> <c> <asterisk> <space> : "𝤅"  U1D905  # SIGNWRITING TOUCH SINGLE
+<Multi_key> <S> <c> <asterisk> <asterisk> : "𝤆"  U1D906  # SIGNWRITING TOUCH MULTIPLE
+<Multi_key> <S> <c> <bar> <asterisk> <bar> : "𝤇"  U1D907  # SIGNWRITING TOUCH BETWEEN
+<Multi_key> <S> <c> <plus> <space> : "𝤈"  U1D908  # SIGNWRITING GRASP SINGLE
+<Multi_key> <S> <c> <plus> <plus> : "𝤉"  U1D909  # SIGNWRITING GRASP MULTIPLE
+<Multi_key> <S> <c> <bar> <plus> <bar> : "𝤊"  U1D90A  # SIGNWRITING GRASP BETWEEN
+<Multi_key> <S> <c> <numbersign> <space> : "𝤋"  U1D90B  # SIGNWRITING STRIKE SINGLE
+<Multi_key> <S> <c> <numbersign> <numbersign> : "𝤌"  U1D90C  # SIGNWRITING STRIKE MULTIPLE
+<Multi_key> <S> <c> <bar> <numbersign> <bar> : "𝤍"  U1D90D  # SIGNWRITING STRIKE BETWEEN
+<Multi_key> <S> <c> <o> <space> : "𝤎"  U1D90E  # SIGNWRITING BRUSH SINGLE
+<Multi_key> <S> <c> <o> <o> : "𝤏"  U1D90F  # SIGNWRITING BRUSH MULTIPLE
+<Multi_key> <S> <c> <bar> <o> <bar> : "𝤐"  U1D910  # SIGNWRITING BRUSH BETWEEN
+<Multi_key> <S> <c> <at> <space> : "𝤑"  U1D911  # SIGNWRITING RUB SINGLE
+<Multi_key> <S> <c> <at> <at> : "𝤒"  U1D912  # SIGNWRITING RUB MULTIPLE
+<Multi_key> <S> <c> <bar> <at> <bar> : "𝤓"  U1D913  # SIGNWRITING RUB BETWEEN
+<Multi_key> <S> <c> <n> <minus> : "𝤔"  U1D914  # SIGNWRITING SURFACE SYMBOLS
+<Multi_key> <S> <c> <o> <minus> : "𝤕"  U1D915  # SIGNWRITING SURFACE BETWEEN
+
+# (f = finger movement)
+
+<Multi_key> <S> <f> <asterisk> <space>  : "𝤖"  U1D916  # SIGNWRITING SQUEEZE LARGE SINGLE
+<Multi_key> <S> <f> <period> <space> : "𝤗"  U1D917  # SIGNWRITING SQUEEZE SMALL SINGLE
+<Multi_key> <S> <f> <asterisk> <asterisk> : "𝤘"  U1D918  # SIGNWRITING SQUEEZE LARGE MULTIPLE
+<Multi_key> <S> <f> <period> <period> : "𝤙"  U1D919  # SIGNWRITING SQUEEZE SMALL MULTIPLE
+<Multi_key> <S> <f> <period> <colon> : "𝤚"  U1D91A  # SIGNWRITING SQUEEZE SEQUENTIAL
+<Multi_key> <S> <f> <O> <space> : "𝤛"  U1D91B  # SIGNWRITING FLICK LARGE SINGLE
+<Multi_key> <S> <f> <o> <space> : "𝤜"  U1D91C  # SIGNWRITING FLICK SMALL SINGLE
+<Multi_key> <S> <f> <O> <O> : "𝤝"  U1D91D  # SIGNWRITING FLICK LARGE MULTIPLE
+<Multi_key> <S> <f> <o> <o> : "𝤞"  U1D91E  # SIGNWRITING FLICK SMALL MULTIPLE
+<Multi_key> <S> <f> <o> <colon> : "𝤟"  U1D91F  # SIGNWRITING FLICK SEQUENTIAL
+<Multi_key> <S> <f> <o> <period> <o> <period> <o> : "𝤠"  U1D920  # SIGNWRITING SQUEEZE FLICK ALTERNATING
+<Multi_key> <S> <f> <asciicircum> <space> : "𝤡"  U1D921  # SIGNWRITING MOVEMENT-HINGE UP DOWN LARGE
+<Multi_key> <S> <f> <underscore> <asciicircum> <space> : "𝤢"  U1D922  # SIGNWRITING MOVEMENT-HINGE UP DOWN SMALL
+<Multi_key> <S> <f> <asciicircum> <colon> : "𝤣"  U1D923  # SIGNWRITING MOVEMENT-HINGE UP SEQUENTIAL
+<Multi_key> <S> <f> <v> <colon> : "𝤤"  U1D924  # SIGNWRITING MOVEMENT-HINGE DOWN SEQUENTIAL
+<Multi_key> <S> <f> <asciicircum> <asciicircum> : "𝤥"  U1D925  # SIGNWRITING MOVEMENT-HINGE UP DOWN ALTERNATING LARGE
+<Multi_key> <S> <f> <underscore> <asciicircum> <asciicircum>  : "𝤦"  U1D926  # SIGNWRITING MOVEMENT-HINGE UP DOWN ALTERNATING SMALL
+<Multi_key> <S> <f> <equal> <v> : "𝤧"  U1D927  # SIGNWRITING MOVEMENT-HINGE SIDE TO SIDE SCISSORS
+<Multi_key> <S> <f> <asciicircum> <equal> : "𝤨"  U1D928  # SIGNWRITING MOVEMENT-WALLPLANE FINGER CONTACT
+<Multi_key> <S> <f> <asciicircum> <bar> : "𝤩"  U1D929  # SIGNWRITING MOVEMENT-FLOORPLANE FINGER CONTACT
 
 # (␣ = punctuation) (S; is taken)
 
