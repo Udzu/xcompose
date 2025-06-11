@@ -9390,8 +9390,10 @@ include "%L"
 #
 #    hand shape: a(=angle), c(=circle), C(=cup), f(=fist), F(=flat), h(=hinge), H(=hook), o(=oval), u=(curlicue), w(=claw)
 #        finger: 1(=thumb), 2(=index), 3(=middle), 4(=ring), 5(=little)
-#  finger shape: as hand + ∅(=up), b(=bent), f(=forward), r(=raised knuckles), _(=under), ^(=over), >(=between), v(=down), x(=no)
+#  finger shape: as hand + ∅(=up), b(=bent), d(=diagonal), f(=forward), r(=raised knuckles),
+#                          _(=under), ^(=over), >(=between/touching), v(=down), x(=no)
 #   joint shape: ∅(=spread), j(=conjoined), x(=crossed)
+#      modifier: l(=large), o(=open), s=(small)
 
 <Multi_key> <S> <h> <f> <2> <space> : "𝠀"  U1D800  # SIGNWRITING HAND-FIST INDEX
 <Multi_key> <S> <h> <c> <2> <space> : "𝠁"  U1D801  # SIGNWRITING HAND-CIRCLE INDEX
@@ -9517,18 +9519,18 @@ include "%L"
 <Multi_key> <S> <h> <u> <space> : "𝡵"  U1D875  # SIGNWRITING HAND-CURLICUE
 <Multi_key> <S> <h> <c> <space> : "𝡶"  U1D876  # SIGNWRITING HAND-CIRCLE
 <Multi_key> <S> <h> <o> <space> : "𝡷"  U1D877  # SIGNWRITING HAND-OVAL
-# <Multi_key> <S> <h> <o> : "𝡸"  U1D878  # SIGNWRITING HAND-OVAL THUMB SIDE
+<Multi_key> <S> <h> <o> <1> <space> : "𝡸"  U1D878  # SIGNWRITING HAND-OVAL THUMB SIDE
 <Multi_key> <S> <h> <1> <x> <o> : "𝡹"  U1D879  # SIGNWRITING HAND-OVAL NO THUMB
 <Multi_key> <S> <h> <o> <1> <f> : "𝡺"  U1D87A  # SIGNWRITING HAND-OVAL THUMB FORWARD
 <Multi_key> <S> <h> <h> <o> <space> : "𝡻"  U1D87B  # SIGNWRITING HAND-HINGE OPEN
 <Multi_key> <S> <h> <h> <o> <1> <f> : "𝡼"  U1D87C  # SIGNWRITING HAND-HINGE OPEN THUMB FORWARD
 <Multi_key> <S> <h> <h> <space> : "𝡽"  U1D87D  # SIGNWRITING HAND-HINGE
-# <Multi_key> <S> <h> <h> : "𝡾"  U1D87E  # SIGNWRITING HAND-HINGE SMALL
+<Multi_key> <S> <h> <h> <s> : "𝡾"  U1D87E  # SIGNWRITING HAND-HINGE SMALL
 <Multi_key> <S> <h> <h> <o> <1> <space> : "𝡿"  U1D87F  # SIGNWRITING HAND-HINGE OPEN THUMB SIDE
 <Multi_key> <S> <h> <h> <1> <space> : "𝢀"  U1D880  # SIGNWRITING HAND-HINGE THUMB SIDE
 <Multi_key> <S> <h> <h> <o> <1> <x> : "𝢁"  U1D881  # SIGNWRITING HAND-HINGE OPEN NO THUMB
 <Multi_key> <S> <h> <h> <1> <x> : "𝢂"  U1D882  # SIGNWRITING HAND-HINGE NO THUMB
-# <Multi_key> <S> <h> <h> : "𝢃"  U1D883  # SIGNWRITING HAND-HINGE THUMB SIDE TOUCHING INDEX
+<Multi_key> <S> <h> <h> <1> <greater> <2> : "𝢃"  U1D883  # SIGNWRITING HAND-HINGE THUMB SIDE TOUCHING INDEX
 <Multi_key> <S> <h> <h> <1> <greater> <3> <4> : "𝢄"  U1D884  # SIGNWRITING HAND-HINGE THUMB BETWEEN MIDDLE RING
 <Multi_key> <S> <h> <a> <space> : "𝢅"  U1D885  # SIGNWRITING HAND-ANGLE
 
@@ -9623,7 +9625,7 @@ include "%L"
 <Multi_key> <S> <h> <h> <2> <h> : "𝣛"  U1D8DB  # SIGNWRITING HAND-HINGE INDEX HINGED
 <Multi_key> <S> <h> <f> <1> <2> <greater> : "𝣜"  U1D8DC  # SIGNWRITING HAND-FIST INDEX THUMB SIDE
 <Multi_key> <S> <h> <h> <1> <2> <greater> : "𝣝"  U1D8DD  # SIGNWRITING HAND-HINGE INDEX THUMB SIDE
-# <Multi_key> <S> <h> <f> <1> <2> : "𝣞"  U1D8DE  # SIGNWRITING HAND-FIST INDEX THUMB SIDE THUMB DIAGONAL
+<Multi_key> <S> <h> <f> <1> <d> <2> : "𝣞"  U1D8DE  # SIGNWRITING HAND-FIST INDEX THUMB SIDE THUMB DIAGONAL
 <Multi_key> <S> <h> <f> <1> <2> <j> <space> : "𝣟"  U1D8DF  # SIGNWRITING HAND-FIST INDEX THUMB SIDE THUMB CONJOINED
 <Multi_key> <S> <h> <f> <1> <b> <2> <space> : "𝣠"  U1D8E0  # SIGNWRITING HAND-FIST INDEX THUMB SIDE THUMB BENT
 <Multi_key> <S> <h> <f> <1> <2> <b> <space> : "𝣡"  U1D8E1  # SIGNWRITING HAND-FIST INDEX THUMB SIDE INDEX BENT
@@ -9638,18 +9640,18 @@ include "%L"
 # <Multi_key> <S> <h> <f> <1> <2> : "𝣪"  U1D8EA  # SIGNWRITING HAND-FIST INDEX THUMB CURVE THUMB UNDER
 <Multi_key> <S> <h> <f> <1> <2> <c>  : "𝣫"  U1D8EB  # SIGNWRITING HAND-FIST INDEX THUMB CIRCLE
 <Multi_key> <S> <h> <C> <1> <2> <space> : "𝣬"  U1D8EC  # SIGNWRITING HAND-CUP INDEX THUMB
-# <Multi_key> <S> <h> <C> <1> <2> : "𝣭"  U1D8ED  # SIGNWRITING HAND-CUP INDEX THUMB OPEN
+<Multi_key> <S> <h> <C> <o> <1> <2> <space> : "𝣭"  U1D8ED  # SIGNWRITING HAND-CUP INDEX THUMB OPEN
 <Multi_key> <S> <h> <h> <o> <1> <2> <space> : "𝣮"  U1D8EE  # SIGNWRITING HAND-HINGE INDEX THUMB OPEN
-# <Multi_key> <S> <h> <h> <1> <2> : "𝣯"  U1D8EF  # SIGNWRITING HAND-HINGE INDEX THUMB LARGE
+<Multi_key> <S> <h> <h> <1> <2> <l> : "𝣯"  U1D8EF  # SIGNWRITING HAND-HINGE INDEX THUMB LARGE
 <Multi_key> <S> <h> <h> <1> <2> <space> : "𝣰"  U1D8F0  # SIGNWRITING HAND-HINGE INDEX THUMB
-# <Multi_key> <S> <h> <h> <1> <2> : "𝣱"  U1D8F1  # SIGNWRITING HAND-HINGE INDEX THUMB SMALL
+<Multi_key> <S> <h> <h> <1> <2> <s> : "𝣱"  U1D8F1  # SIGNWRITING HAND-HINGE INDEX THUMB SMALL
 <Multi_key> <S> <h> <a> <v> <1> <2> <space> : "𝣲"  U1D8F2  # SIGNWRITING HAND-ANGLE INDEX THUMB OUT
 <Multi_key> <S> <h> <a> <asciicircum> <1> <2> : "𝣳"  U1D8F3  # SIGNWRITING HAND-ANGLE INDEX THUMB IN
 <Multi_key> <S> <h> <a> <1> <2> <space> : "𝣴"  U1D8F4  # SIGNWRITING HAND-ANGLE INDEX THUMB
 
 <Multi_key> <S> <h> <f> <1> <space> : "𝣵"  U1D8F5  # SIGNWRITING HAND-FIST THUMB
 <Multi_key> <S> <h> <f> <h> <1> : "𝣶"  U1D8F6  # SIGNWRITING HAND-FIST THUMB HEEL
-# <Multi_key> <S> <h> <f> <1> : "𝣷"  U1D8F7  # SIGNWRITING HAND-FIST THUMB SIDE DIAGONAL
+<Multi_key> <S> <h> <f> <1> <d> <space> : "𝣷"  U1D8F7  # SIGNWRITING HAND-FIST THUMB SIDE DIAGONAL
 <Multi_key> <S> <h> <f> <1> <j> <space> : "𝣸"  U1D8F8  # SIGNWRITING HAND-FIST THUMB SIDE CONJOINED
 <Multi_key> <S> <h> <f> <1> <b> <space> : "𝣹"  U1D8F9  # SIGNWRITING HAND-FIST THUMB SIDE BENT
 <Multi_key> <S> <h> <f> <1> <f> <space> : "𝣺"  U1D8FA  # SIGNWRITING HAND-FIST THUMB FORWARD
@@ -16061,7 +16063,7 @@ include "%L"
 # Games #
 #########
 
-# Convention: # + color (W/B/R) + (v for inverted) + piece
+# Convention: # + color (W/B/N/R) + (v for inverted) + piece
 
 # Chess
 <Multi_key> <numbersign> <W> <K> : "♔" U2654    # WHITE CHESS KING
@@ -16076,6 +16078,13 @@ include "%L"
 <Multi_key> <numbersign> <B> <B> : "♝" U265D    # BLACK CHESS BISHOP
 <Multi_key> <numbersign> <B> <N> : "♞" U265E    # BLACK CHESS KNIGHT
 <Multi_key> <numbersign> <B> <P> : "♟" U265F    # BLACK CHESS PAWN
+<Multi_key> <numbersign> <N> <K> : "🨀"  U1FA00  # NEUTRAL CHESS KING
+<Multi_key> <numbersign> <N> <Q> : "🨁"  U1FA01  # NEUTRAL CHESS QUEEN
+<Multi_key> <numbersign> <N> <R> : "🨂"  U1FA02  # NEUTRAL CHESS ROOK
+<Multi_key> <numbersign> <N> <B> : "🨃"  U1FA03  # NEUTRAL CHESS BISHOP
+<Multi_key> <numbersign> <N> <N> : "🨄"  U1FA04  # NEUTRAL CHESS KNIGHT
+<Multi_key> <numbersign> <N> <P> : "🨅"  U1FA05  # NEUTRAL CHESS PAWN
+
 <Multi_key> <numbersign> <W> <v> <K> : "🨞" U1FA1E    # WHITE CHESS TURNED KING
 <Multi_key> <numbersign> <W> <v> <Q> : "🨟" U1FA1F    # WHITE CHESS TURNED QUEEN
 <Multi_key> <numbersign> <W> <v> <R> : "🨠" U1FA20    # WHITE CHESS TURNED ROOK
@@ -16088,6 +16097,77 @@ include "%L"
 <Multi_key> <numbersign> <B> <v> <B> : "🨧" U1FA27    # BLACK CHESS TURNED BISHOP
 <Multi_key> <numbersign> <B> <v> <N> : "🨨" U1FA28    # BLACK CHESS TURNED KNIGHT
 <Multi_key> <numbersign> <B> <v> <P> : "🨩" U1FA29    # BLACK CHESS TURNED PAWN
+<Multi_key> <numbersign> <N> <v> <K> : "🨪"  U1FA2A  # NEUTRAL CHESS TURNED KING
+<Multi_key> <numbersign> <N> <v> <Q> : "🨫"  U1FA2B  # NEUTRAL CHESS TURNED QUEEN
+<Multi_key> <numbersign> <N> <v> <R> : "🨬"  U1FA2C  # NEUTRAL CHESS TURNED ROOK
+<Multi_key> <numbersign> <N> <v> <B> : "🨭"  U1FA2D  # NEUTRAL CHESS TURNED BISHOP
+<Multi_key> <numbersign> <N> <v> <N> : "🨮"  U1FA2E  # NEUTRAL CHESS TURNED KNIGHT
+<Multi_key> <numbersign> <N> <v> <P> : "🨯"  U1FA2F  # NEUTRAL CHESS TURNED PAWN
+
+<Multi_key> <numbersign> <W> <greater> <K> : "🨉"  U1FA09  # WHITE CHESS KING ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <W> <greater> <Q> : "🨊"  U1FA0A  # WHITE CHESS QUEEN ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <W> <greater> <R> : "🨋"  U1FA0B  # WHITE CHESS ROOK ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <W> <greater> <B> : "🨌"  U1FA0C  # WHITE CHESS BISHOP ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <W> <greater> <N> : "🨍"  U1FA0D  # WHITE CHESS KNIGHT ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <W> <greater> <P> : "🨎"  U1FA0E  # WHITE CHESS PAWN ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <B> <greater> <K> : "🨏"  U1FA0F  # BLACK CHESS KING ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <B> <greater> <Q> : "🨐"  U1FA10  # BLACK CHESS QUEEN ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <B> <greater> <R> : "🨑"  U1FA11  # BLACK CHESS ROOK ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <B> <greater> <B> : "🨒"  U1FA12  # BLACK CHESS BISHOP ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <B> <greater> <N> : "🨓"  U1FA13  # BLACK CHESS KNIGHT ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <B> <greater> <P> : "🨔"  U1FA14  # BLACK CHESS PAWN ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <N> <greater> <K> : "🨕"  U1FA15  # NEUTRAL CHESS KING ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <N> <greater> <Q> : "🨖"  U1FA16  # NEUTRAL CHESS QUEEN ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <N> <greater> <R> : "🨗"  U1FA17  # NEUTRAL CHESS ROOK ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <N> <greater> <B> : "🨘"  U1FA18  # NEUTRAL CHESS BISHOP ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <N> <greater> <N> : "🨙"  U1FA19  # NEUTRAL CHESS KNIGHT ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <N> <greater> <P> : "🨚"  U1FA1A  # NEUTRAL CHESS PAWN ROTATED NINETY DEGREES
+
+<Multi_key> <numbersign> <W> <less> <K> : "🨳"  U1FA33  # WHITE CHESS KING ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <W> <less> <Q> : "🨴"  U1FA34  # WHITE CHESS QUEEN ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <W> <less> <R> : "🨵"  U1FA35  # WHITE CHESS ROOK ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <W> <less> <B> : "🨶"  U1FA36  # WHITE CHESS BISHOP ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <W> <less> <N> : "🨷"  U1FA37  # WHITE CHESS KNIGHT ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <W> <less> <P> : "🨸"  U1FA38  # WHITE CHESS PAWN ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <B> <less> <K> : "🨹"  U1FA39  # BLACK CHESS KING ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <B> <less> <Q> : "🨺"  U1FA3A  # BLACK CHESS QUEEN ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <B> <less> <R> : "🨻"  U1FA3B  # BLACK CHESS ROOK ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <B> <less> <B> : "🨼"  U1FA3C  # BLACK CHESS BISHOP ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <B> <less> <N> : "🨽"  U1FA3D  # BLACK CHESS KNIGHT ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <B> <less> <P> : "🨾"  U1FA3E  # BLACK CHESS PAWN ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <N> <less> <K> : "🨿"  U1FA3F  # NEUTRAL CHESS KING ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <N> <less> <Q> : "🩀"  U1FA40  # NEUTRAL CHESS QUEEN ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <N> <less> <R> : "🩁"  U1FA41  # NEUTRAL CHESS ROOK ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <N> <less> <B> : "🩂"  U1FA42  # NEUTRAL CHESS BISHOP ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <N> <less> <N> : "🩃"  U1FA43  # NEUTRAL CHESS KNIGHT ROTATED TWO HUNDRED SEVENTY DEGREES
+<Multi_key> <numbersign> <N> <less> <P> : "🩄"  U1FA44  # NEUTRAL CHESS PAWN ROTATED TWO HUNDRED SEVENTY DEGREES
+
+<Multi_key> <numbersign> <W> <asciicircum> <greater> <N> : "🨆"  U1FA06  # WHITE CHESS KNIGHT ROTATED FORTY-FIVE DEGREES
+<Multi_key> <numbersign> <B> <asciicircum> <greater> <N> : "🨇"  U1FA07  # BLACK CHESS KNIGHT ROTATED FORTY-FIVE DEGREES
+<Multi_key> <numbersign> <N> <asciicircum> <greater> <N> : "🨈"  U1FA08  # NEUTRAL CHESS KNIGHT ROTATED FORTY-FIVE DEGREES
+<Multi_key> <numbersign> <W> <v> <greater> <N> : "🨛"  U1FA1B  # WHITE CHESS KNIGHT ROTATED ONE HUNDRED THIRTY-FIVE DEGREES
+<Multi_key> <numbersign> <B> <v> <greater> <N> : "🨜"  U1FA1C  # BLACK CHESS KNIGHT ROTATED ONE HUNDRED THIRTY-FIVE DEGREES
+<Multi_key> <numbersign> <N> <v> <greater> <N> : "🨝"  U1FA1D  # NEUTRAL CHESS KNIGHT ROTATED ONE HUNDRED THIRTY-FIVE DEGREES
+<Multi_key> <numbersign> <W> <v> <less> <N> : "🨰"  U1FA30  # WHITE CHESS KNIGHT ROTATED TWO HUNDRED TWENTY-FIVE DEGREES
+<Multi_key> <numbersign> <B> <v> <less> <N> : "🨱"  U1FA31  # BLACK CHESS KNIGHT ROTATED TWO HUNDRED TWENTY-FIVE DEGREES
+<Multi_key> <numbersign> <N> <v> <less> <N> : "🨲"  U1FA32  # NEUTRAL CHESS KNIGHT ROTATED TWO HUNDRED TWENTY-FIVE DEGREES
+<Multi_key> <numbersign> <W> <asciicircum> <less> <N> : "🩅"  U1FA45  # WHITE CHESS KNIGHT ROTATED THREE HUNDRED FIFTEEN DEGREES
+<Multi_key> <numbersign> <B> <asciicircum> <less> <N> : "🩆"  U1FA46  # BLACK CHESS KNIGHT ROTATED THREE HUNDRED FIFTEEN DEGREES
+<Multi_key> <numbersign> <N> <asciicircum> <less> <N> : "🩇"  U1FA47  # NEUTRAL CHESS KNIGHT ROTATED THREE HUNDRED FIFTEEN DEGREES
+
+<Multi_key> <numbersign> <W> <E> : "🩈"  U1FA48  # WHITE CHESS EQUIHOPPER
+<Multi_key> <numbersign> <B> <E> : "🩉"  U1FA49  # BLACK CHESS EQUIHOPPER
+<Multi_key> <numbersign> <N> <E> : "🩊"  U1FA4A  # NEUTRAL CHESS EQUIHOPPER
+<Multi_key> <numbersign> <W> <greater> <E> : "🩋"  U1FA4B  # WHITE CHESS EQUIHOPPER ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <B> <greater> <E> : "🩌"  U1FA4C  # BLACK CHESS EQUIHOPPER ROTATED NINETY DEGREES
+<Multi_key> <numbersign> <N> <greater> <E> : "🩍"  U1FA4D  # NEUTRAL CHESS EQUIHOPPER ROTATED NINETY DEGREES
+
+<Multi_key> <numbersign> <W> <plus> <N> <Q> : "🩎"  U1FA4E  # WHITE CHESS KNIGHT-QUEEN
+<Multi_key> <numbersign> <W> <plus> <N> <R> : "🩏"  U1FA4F  # WHITE CHESS KNIGHT-ROOK
+<Multi_key> <numbersign> <W> <plus> <N> <B> : "🩐"  U1FA50  # WHITE CHESS KNIGHT-BISHOP
+<Multi_key> <numbersign> <B> <plus> <N> <Q> : "🩑"  U1FA51  # BLACK CHESS KNIGHT-QUEEN
+<Multi_key> <numbersign> <B> <plus> <N> <R> : "🩒"  U1FA52  # BLACK CHESS KNIGHT-ROOK
+<Multi_key> <numbersign> <B> <plus> <N> <B> : "🩓"  U1FA53  # BLACK CHESS KNIGHT-BISHOP
 
 # Draughts
 <Multi_key> <numbersign> <W> <D> <M> : "⛀" U26C0    # WHITE DRAUGHTS MAN
