@@ -3,7 +3,7 @@
 
 > Link: https://github.com/Udzu/xcompose/blob/master/Compose
 
-This repo also hosts my personal .XCompose file, which contains over 14 000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
+This repo also hosts my personal .XCompose file, which contains over 15 000 memorable compose key sequences ʷᵉˡˡ ᵐᵉᵐᵒʳᵃᵇˡᵉ ᵗᵒ ᵐᵉ ᵃᵗ ˡᵉᵃˢᵗꜝ. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.
 
 The file aims for memorability and consistency. As a result, a small number of the rules here conflict with the default system rules, with workarounds given in the comments (e.g. \<underscore>'s usefulness for subscripting often interferes with its system use for macrons, for which \<minus> works equally well as an alternative).
 
@@ -43,7 +43,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Korean** (using positional jamo) (118): 레딧 etc
 * **International Morse Code** (76): ···---··· etc
 * **Old Italic**, Ogham & Runic (150): 𐌓𐌄𐌃𐌃𐌉𐌕, ᚏᚓᚇᚔᚈ, ᚱᛖᛞᛞᛁᛏ etc
-* **Sutton SignWriting** (541): 𝠀𝪛 𝧿𝨰𝩀𝩪𝨔 𝧿𝩜𝨘𝩫 etc
+* **Sutton SignWriting** [WIP] (541): 𝧿𝨾𝡇𝪜𝪡𝦈𝪪 etc
 * **Thai**, Khmer & Lao (239): เรดดิต, រេទិត, ເຣັດິຕ etc
 * **Zhuyin**, Fraser, Mongolian, ʼPhags-pa, Pollard, Tai Le & Tibetan (511): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
