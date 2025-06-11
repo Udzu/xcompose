@@ -9204,7 +9204,7 @@ include "%L"
 # (S) Sutton SignWriting #
 ##########################
 
-# [WIP]
+# TODO: needs checking for errors and to see how practical this actually is
 
 # Modifiers
 
@@ -9230,7 +9230,7 @@ include "%L"
 <Multi_key> <S> <less> <6> <Return>        : "𝪮"  U1DAAE  # SIGNWRITING ROTATION MODIFIER-15 (LHS W) (conflicts with Š, use vS)
 <Multi_key> <S> <less> <7> <Return>        : "𝪯"  U1DAAF  # SIGNWRITING ROTATION MODIFIER-16 (LHS NW) (conflicts with Š, use vS)
 
-# Head shapes (visual representation)
+# Head and body shapes (visual representation)
 
 # (h = head) (shares namespace with hand shapes below as SH is already taken)
 
@@ -9360,6 +9360,28 @@ include "%L"
 <Multi_key> <S> <m> <numbersign> <w> <numbersign> <Return> : "𝩦"  U1DA66  # SIGNWRITING TEETH ON LIPS MOVEMENT
 <Multi_key> <S> <m> <minus> <numbersign> <minus> <Return> : "𝩧"  U1DA67  # SIGNWRITING TEETH BITE LIPS
 
+# (b = body)
+
+<Multi_key> <S> <b> <minus> <minus> <minus> : "𝩭"  U1DA6D  # SIGNWRITING SHOULDER HIP SPINE
+<Multi_key> <S> <b> <minus> <underscore> <minus> : "𝩮"  U1DA6E  # SIGNWRITING SHOULDER HIP POSITIONS
+<Multi_key> <S> <b> <minus> <minus> <asciicircum> <equal> : "𝩯"  U1DA6F  # SIGNWRITING WALLPLANE SHOULDER HIP MOVE
+<Multi_key> <S> <b> <minus> <minus> <asciicircum> <bar> : "𝩰"  U1DA70  # SIGNWRITING FLOORPLANE SHOULDER HIP MOVE
+<Multi_key> <S> <b> <minus> <minus> <asterisk> <bar> : "𝩱"  U1DA71  # SIGNWRITING SHOULDER TILTING FROM WAIST
+<Multi_key> <S> <b> <minus> <asciicircum> <equal> <minus> : "𝩲"  U1DA72  # SIGNWRITING TORSO-WALLPLANE STRAIGHT STRETCH
+<Multi_key> <S> <b> <minus> <less> <equal> <minus> : "𝩳"  U1DA73  # SIGNWRITING TORSO-WALLPLANE CURVED BEND
+<Multi_key> <S> <b> <minus> <less> <minus> <minus> : "𝩴"  U1DA74  # SIGNWRITING TORSO-FLOORPLANE TWISTING
+<Multi_key> <S> <b> <asterisk> <bar> <Return> : "𝩵"  U1DA75  # SIGNWRITING UPPER BODY TILTING FROM HIP JOINTS
+
+<Multi_key> <S> <b> <X> : "𝩶"  U1DA76  # SIGNWRITING LIMB COMBINATION
+<Multi_key> <S> <b> <bar> <1> : "𝩷"  U1DA77  # SIGNWRITING LIMB LENGTH-1
+<Multi_key> <S> <b> <bar> <2> : "𝩸"  U1DA78  # SIGNWRITING LIMB LENGTH-2
+<Multi_key> <S> <b> <bar> <3> : "𝩹"  U1DA79  # SIGNWRITING LIMB LENGTH-3
+<Multi_key> <S> <b> <bar> <4> : "𝩺"  U1DA7A  # SIGNWRITING LIMB LENGTH-4
+<Multi_key> <S> <b> <bar> <5> : "𝩻"  U1DA7B  # SIGNWRITING LIMB LENGTH-5
+<Multi_key> <S> <b> <bar> <6> : "𝩼"  U1DA7C  # SIGNWRITING LIMB LENGTH-6
+<Multi_key> <S> <b> <bar> <7> : "𝩽"  U1DA7D  # SIGNWRITING LIMB LENGTH-7
+<Multi_key> <S> <b> <bar> <f> : "𝩾"  U1DA7E  # SIGNWRITING FINGER
+
 # Hand shapes (semantic representation)
 
 # (h = hand) (shares namespace with head above)
@@ -9370,8 +9392,6 @@ include "%L"
 #        finger: 1(=thumb), 2(=index), 3(=middle), 4(=ring), 5(=little)
 #  finger shape: as hand + ∅(=up), b(=bent), f(=forward), r(=raised knuckles), _(=under), ^(=over), >(=between), v(=down)
 #   joint shape: ∅(=spread), j(=conjoined), x(=crossed)
-
-# TODO: needs checking for errors and to see how practical this actually is
 
 <Multi_key> <S> <h> <f> <2> <space> : "𝠀"  U1D800  # SIGNWRITING HAND-FIST INDEX
 <Multi_key> <S> <h> <c> <2> <space> : "𝠁"  U1D801  # SIGNWRITING HAND-CIRCLE INDEX
@@ -9681,7 +9701,7 @@ include "%L"
 <Multi_key> <S> <m> <asciicircum> <minus> <2> <equal> : "𝥖"  U1D956  # SIGNWRITING MOVEMENT-DIAGONAL AWAY MEDIUM
 <Multi_key> <S> <m> <asciicircum> <minus> <3> <equal> : "𝥗"  U1D957  # SIGNWRITING MOVEMENT-DIAGONAL AWAY LARGE
 <Multi_key> <S> <m> <asciicircum> <minus> <4> <equal> : "𝥘"  U1D958  # SIGNWRITING MOVEMENT-DIAGONAL AWAY LARGEST
-<Multi_key> <S> <m> <asciicircum> <o> <equal> : "𝥙"  U1D959  # SIGNWRITING MOVEMENT-DIAGONAL TOWARDS SMALL
+<Multi_key> <S> <m> <asciicircum> <o> <equal> <space> : "𝥙"  U1D959  # SIGNWRITING MOVEMENT-DIAGONAL TOWARDS SMALL
 <Multi_key> <S> <m> <asciicircum> <o> <2> <equal> : "𝥚"  U1D95A  # SIGNWRITING MOVEMENT-DIAGONAL TOWARDS MEDIUM
 <Multi_key> <S> <m> <asciicircum> <o> <3> <equal> : "𝥛"  U1D95B  # SIGNWRITING MOVEMENT-DIAGONAL TOWARDS LARGE
 <Multi_key> <S> <m> <asciicircum> <o> <4> <equal> : "𝥜"  U1D95C  # SIGNWRITING MOVEMENT-DIAGONAL TOWARDS LARGEST
@@ -9757,6 +9777,54 @@ include "%L"
 <Multi_key> <S> <m> <asciicircum> <equal> <ampersand> : "𝦠"  U1D9A0  # SIGNWRITING MOVEMENT-WALLPLANE CURVED CROSS SMALL
 <Multi_key> <S> <m> <asciicircum> <2> <equal> <ampersand> : "𝦡"  U1D9A1  # SIGNWRITING MOVEMENT-WALLPLANE CURVED CROSS MEDIUM
 
+<Multi_key> <S> <m> <bar> <less> <equal> <space> : "𝦢"  U1D9A2  # SIGNWRITING ROTATION-WALLPLANE SINGLE
+<Multi_key> <S> <m> <bar> <2> <less> <equal> : "𝦣"  U1D9A3  # SIGNWRITING ROTATION-WALLPLANE DOUBLE
+<Multi_key> <S> <m> <bar> <less> <equal> <equal> <greater> : "𝦤"  U1D9A4  # SIGNWRITING ROTATION-WALLPLANE ALTERNATE
+<Multi_key> <S> <m> <bar> <less> <3> <minus> : "𝦥"  U1D9A5  # SIGNWRITING MOVEMENT-WALLPLANE SHAKING
+<Multi_key> <S> <m> <minus> <asciicircum> <equal> <greater> : "𝦦"  U1D9A6  # SIGNWRITING MOVEMENT-WALLPLANE CURVE HITTING FRONT WALL
+<Multi_key> <S> <m> <equal> <asciicircum> <equal> <Z> : "𝦧"  U1D9A7  # SIGNWRITING MOVEMENT-WALLPLANE HUMP HITTING FRONT WALL
+<Multi_key> <S> <m> <equal> <asciicircum> <equal> <9> : "𝦨"  U1D9A8  # SIGNWRITING MOVEMENT-WALLPLANE LOOP HITTING FRONT WALL
+<Multi_key> <S> <m> <minus> <asciicircum> <equal> <2> : "𝦩"  U1D9A9  # SIGNWRITING MOVEMENT-WALLPLANE WAVE HITTING FRONT WALL
+<Multi_key> <S> <m> <minus> <asciicircum> <equal> <space> : "𝦪"  U1D9AA  # SIGNWRITING ROTATION-WALLPLANE SINGLE HITTING FRONT WALL
+<Multi_key> <S> <m> <minus> <2> <asciicircum> <equal> : "𝦫"  U1D9AB  # SIGNWRITING ROTATION-WALLPLANE DOUBLE HITTING FRONT WALL
+<Multi_key> <S> <m> <minus> <asciicircum> <equal> <equal> <v> : "𝦬"  U1D9AC  # SIGNWRITING ROTATION-WALLPLANE ALTERNATING HITTING FRONT WALL
+<Multi_key> <S> <m> <asciicircum> <o> <equal> <greater> : "𝦭"  U1D9AD  # SIGNWRITING MOVEMENT-WALLPLANE CURVE HITTING CHEST
+<Multi_key> <S> <m> <asciicircum> <o> <equal> <Z> : "𝦮"  U1D9AE  # SIGNWRITING MOVEMENT-WALLPLANE HUMP HITTING CHEST
+<Multi_key> <S> <m> <asciicircum> <o> <equal> <9> : "𝦯"  U1D9AF  # SIGNWRITING MOVEMENT-WALLPLANE LOOP HITTING CHEST
+<Multi_key> <S> <m> <asciicircum> <o> <equal> <2> : "𝦰"  U1D9B0  # SIGNWRITING MOVEMENT-WALLPLANE WAVE HITTING CHEST
+<Multi_key> <S> <m> <minus> <asciicircum> <o> <equal> <space> : "𝦱"  U1D9B1  # SIGNWRITING ROTATION-WALLPLANE SINGLE HITTING CHEST
+<Multi_key> <S> <m> <minus> <2> <asciicircum> <o> <equal> : "𝦲"  U1D9B2  # SIGNWRITING ROTATION-WALLPLANE DOUBLE HITTING CHEST
+<Multi_key> <S> <m> <minus> <asciicircum> <o> <equal> <equal> <o> <v> : "𝦳"  U1D9B3  # SIGNWRITING ROTATION-WALLPLANE ALTERNATING HITTING CHEST
+<Multi_key> <S> <m> <equal> <less> <equal> <5> : "𝦴"  U1D9B4  # SIGNWRITING MOVEMENT-WALLPLANE WAVE DIAGONAL PATH SMALL
+<Multi_key> <S> <m> <equal> <less> <2> <equal> <5> : "𝦵"  U1D9B5  # SIGNWRITING MOVEMENT-WALLPLANE WAVE DIAGONAL PATH MEDIUM
+<Multi_key> <S> <m> <equal> <less> <3> <equal> <5> : "𝦶"  U1D9B6  # SIGNWRITING MOVEMENT-WALLPLANE WAVE DIAGONAL PATH LARGE
+
+# TODO: remaining movements
+
+# (d = dynamics)
+
+<Multi_key> <S> <d> <asciicircum> <space> : "𝧵"  U1D9F5  # SIGNWRITING DYNAMIC ARROWHEAD SMALL
+<Multi_key> <S> <d> <asciicircum> <asciicircum> : "𝧶"  U1D9F6  # SIGNWRITING DYNAMIC ARROWHEAD LARGE
+<Multi_key> <S> <d> <less> : "𝧷"  U1D9F7  # SIGNWRITING DYNAMIC FAST
+<Multi_key> <S> <d> <asciicircum> <parenleft> : "𝧸"  U1D9F8  # SIGNWRITING DYNAMIC SLOW
+<Multi_key> <S> <d> <asciitilde> <space> : "𝧹"  U1D9F9  # SIGNWRITING DYNAMIC TENSE
+<Multi_key> <S> <d> <asciitilde> <asciitilde> : "𝧺"  U1D9FA  # SIGNWRITING DYNAMIC RELAXED
+<Multi_key> <S> <d> <parenleft> <space> : "𝧻"  U1D9FB  # SIGNWRITING DYNAMIC SIMULTANEOUS
+<Multi_key> <S> <d> <parenleft> <parenleft> : "𝧼"  U1D9FC  # SIGNWRITING DYNAMIC SIMULTANEOUS ALTERNATING
+<Multi_key> <S> <d> <m> : "𝧽"  U1D9FD  # SIGNWRITING DYNAMIC EVERY OTHER TIME
+<Multi_key> <S> <d> <parenleft> <parenright> : "𝧾"  U1D9FE  # SIGNWRITING DYNAMIC GRADUAL
+
+# (l = location bases)
+
+<Multi_key> <S> <L> <W> <P> : "𝩿"  U1DA7F  # SIGNWRITING LOCATION-WALLPLANE SPACE
+<Multi_key> <S> <L> <F> <P> : "𝪀"  U1DA80  # SIGNWRITING LOCATION-FLOORPLANE SPACE
+<Multi_key> <S> <L> <h> : "𝪁"  U1DA81  # SIGNWRITING LOCATION HEIGHT
+<Multi_key> <S> <L> <w> : "𝪂"  U1DA82  # SIGNWRITING LOCATION WIDTH
+<Multi_key> <S> <L> <d> : "𝪃"  U1DA83  # SIGNWRITING LOCATION DEPTH
+<Multi_key> <S> <L> <n> <R> : "𝪄"  U1DA84  # SIGNWRITING LOCATION HEAD NECK
+<Multi_key> <S> <L> <t> : "𝪅"  U1DA85  # SIGNWRITING LOCATION TORSO
+<Multi_key> <S> <L> <l> <d> : "𝪆"  U1DA86  # SIGNWRITING LOCATION LIMBS DIGITS
+
 # (␣ = punctuation) (S; is taken)
 
 <Multi_key> <S> <space> <comma> : "𝪇"  U1DA87  # SIGNWRITING COMMA
@@ -9765,8 +9833,6 @@ include "%L"
 <Multi_key> <S> <space> <colon> : "𝪊"  U1DA8A  # SIGNWRITING COLON
 <Multi_key> <S> <space> <parenleft> : "𝪋"  U1DA8B  # SIGNWRITING PARENTHESIS
 <Multi_key> <S> <space> <parenright> : "𝪋𝪤"  U1DA8B U1DA44 # SIGNWRITING CLOSE PARENTHESIS
-
-# TODO: movements
 
 ##############################
 # (t) Thai (and Khmer & Lao) #
