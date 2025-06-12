@@ -103,6 +103,24 @@ include "%L"
 <Multi_key> <asterisk> <O> <asterisk> : "⦿"  U29BF  # CIRCLED BULLET
 <Multi_key> <asterisk> <less> <3>     : "❥"  U2765  # ROTATED HEAVY BLACK HEART BULLET
 
+#############################
+# Miscellaneous Punctuation #
+#############################
+
+<Multi_key> <1> <period>              : "․"  U2024  # ONE DOT LEADER
+<Multi_key> <2> <period>              : "‥"  U2025  # TWO DOT LEADER
+<Multi_key> <3> <period>              : "…"  U2026  # HORIZONTAL ELLIPSIS
+<Multi_key> <2> <asterisk>            : "⁑"  U2051  # TWO ASTERISKS ALIGNED VERTICALLY
+<Multi_key> <3> <asterisk>            : "⁂"  U2042  # ASTERISM
+<Multi_key> <3> <colon>               : "⁝"  U205D  # TRICOLON
+<Multi_key> <4> <colon>               : "⁞"  U205E  # VERTICAL FOUR DOTS
+<Multi_key> <asciicircum> <Insert>    : "‸"  U2038  # CARET
+<Multi_key> <slash> <Insert>          : "⁁"  U2041  # CARET INSERTION POINT
+<Multi_key> <greater> <P> <P>         : "⁋"  U204B  # REVERSED PILCROW SIGN
+<Multi_key> <equal> <period> <equal>  : "⸎"  U2E0E  # EDITORIAL CORONIS
+
+<Multi_key> <underscore> <underscore> <space> : "‗"  U2017  # DOUBLE LOW LINE (conflicts with ¯, use -^)
+
 ########################
 # Combining diacritics #
 ########################
@@ -1417,6 +1435,8 @@ include "%L"
 <Multi_key> <percent> <slash> <x> : "𝑥" U1D465    # MATHEMATICAL ITALIC SMALL X
 <Multi_key> <percent> <slash> <y> : "𝑦" U1D466    # MATHEMATICAL ITALIC SMALL Y
 <Multi_key> <percent> <slash> <z> : "𝑧" U1D467    # MATHEMATICAL ITALIC SMALL Z
+<Multi_key> <percent> <slash> <Multi_key> <period> <i> : "𝚤"  U1D6A4  # MATHEMATICAL ITALIC SMALL DOTLESS I
+<Multi_key> <percent> <slash> <Multi_key> <period> <j> : "𝚥"  U1D6A5  # MATHEMATICAL ITALIC SMALL DOTLESS J
 
 <Multi_key> <percent> <asterisk> <slash> <A> : "𝑨" U1D468    # MATHEMATICAL BOLD ITALIC CAPITAL A
 <Multi_key> <percent> <asterisk> <slash> <B> : "𝑩" U1D469    # MATHEMATICAL BOLD ITALIC CAPITAL B
@@ -2822,7 +2842,8 @@ include "%L"
 <Multi_key> <v> <asciicircum> <quotedbl>   : "„" U201E   # DOUBLE LOW-9 QUOTATION MARK
 <Multi_key> <v> <asciicircum> <ampersand>  : "⅋" U214B   # TURNED AMPERSAND
 <Multi_key> <v> <asciicircum> <underscore> : "‾" U203E   # OVERLINE
-<Multi_key> <v> <asciicircum> <semicolon>  : "؛" U061B   # ARABIC SEMICOLON
+<Multi_key> <v> <asciicircum> <semicolon>  : "⸵"  U2E35  # TURNED SEMICOLON
+<Multi_key> <v> <asciicircum> <Multi_key> <bar> <minus> : "⸸"  U2E38  # TURNED DAGGER
 
 # "Mirrored" text
 
@@ -12566,6 +12587,9 @@ include "%L"
 <Multi_key> <2> <apostrophe>          : "″"  U2033   # DOUBLE PRIME (not to be confused with '2)
 <Multi_key> <3> <apostrophe>          : "‴"  U2034   # TRIPLE PRIME
 <Multi_key> <4> <apostrophe>          : "⁗"  U2057   # QUADRUPLE PRIME
+<Multi_key> <1> <grave>               : "‵"  U2035   # REVERSED PRIME
+<Multi_key> <2> <grave>               : "‶"  U2036   # REVERSED DOUBLE PRIME
+<Multi_key> <3> <grave>               : "‷"  U2037   # REVERSED TRIPLE PRIME
 <Multi_key> <less> <greater>          : "↔"  U2194   # LEFT RIGHT ARROW (conflicts with ⋄, use diamond)
 <Multi_key> <bar> <greater>           : "↦"  U21A6   # RIGHTWARDS ARROW FROM BAR (MAPS TO)
 <Multi_key> <o> <period>              : "∘"  U2218   # RING OPERATOR (COMPOSITION)
