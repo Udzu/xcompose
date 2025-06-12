@@ -107,21 +107,36 @@ include "%L"
 # General punctuation #
 #######################
 
-<Multi_key> <1> <period>              : "․"  U2024  # ONE DOT LEADER
-<Multi_key> <2> <period>              : "‥"  U2025  # TWO DOT LEADER
-<Multi_key> <3> <period>              : "…"  U2026  # HORIZONTAL ELLIPSIS
-<Multi_key> <2> <asterisk>            : "⁑"  U2051  # TWO ASTERISKS ALIGNED VERTICALLY
-<Multi_key> <3> <asterisk>            : "⁂"  U2042  # ASTERISM
-<Multi_key> <3> <colon>               : "⁝"  U205D  # TRICOLON
-<Multi_key> <4> <colon>               : "⁞"  U205E  # VERTICAL FOUR DOTS
-<Multi_key> <6> <colon>               : "⸽"  U2E3D  # VERTICAL SIX DOTS
-<Multi_key> <plus> <colon>            : "⁜"  U205C  # DOTTED CROSS
-<Multi_key> <asciicircum> <Insert>    : "‸"  U2038  # CARET
-<Multi_key> <slash> <Insert>          : "⁁"  U2041  # CARET INSERTION POINT
-<Multi_key> <ampersand> <7>             : "⁊"  U204A  # TIRONIAN SIGN ET
-<Multi_key> <greater> <P> <P>         : "⁋"  U204B  # REVERSED PILCROW SIGN
-<Multi_key> <equal> <period> <equal>  : "⸎"  U2E0E  # EDITORIAL CORONIS
+<Multi_key> <1> <period>                 : "․"  U2024  # ONE DOT LEADER
+<Multi_key> <2> <period>                 : "‥"  U2025  # TWO DOT LEADER
+<Multi_key> <3> <period>                 : "…"  U2026  # HORIZONTAL ELLIPSIS
+<Multi_key> <2> <asterisk>               : "⁑"  U2051  # TWO ASTERISKS ALIGNED VERTICALLY
+<Multi_key> <3> <asterisk>               : "⁂"  U2042  # ASTERISM
+<Multi_key> <3> <colon>                  : "⁝"  U205D  # TRICOLON
+<Multi_key> <4> <colon>                  : "⁞"  U205E  # VERTICAL FOUR DOTS
+<Multi_key> <6> <colon>                  : "⸽"  U2E3D  # VERTICAL SIX DOTS
+<Multi_key> <plus> <period>              : "⸭"  U2E2D  # FIVE DOT MARK
+<Multi_key> <plus> <colon>               : "⁜"  U205C  # DOTTED CROSS
+<Multi_key> <asciicircum> <Insert>       : "‸"  U2038  # CARET
+<Multi_key> <slash> <Insert>             : "⁁"  U2041  # CARET INSERTION POINT
+<Multi_key> <ampersand> <7>              : "⁊"  U204A  # TIRONIAN SIGN ET
+<Multi_key> <greater> <P> <P>            : "⁋"  U204B  # REVERSED PILCROW SIGN
+<Multi_key> <equal> <period> <equal>     : "⸎"  U2E0E  # EDITORIAL CORONIS
 
+<Multi_key> <bar> <space> <period>       : "⁚"  U205A  # TWO DOT PUNCTUATION
+<Multi_key> <V> <space> <period>         : "⸪"  U2E2A  # TWO DOTS OVER ONE DOT PUNCTUATION
+<Multi_key> <asciicircum> <space> <period> : "⸫"  U2E2B  # ONE DOT OVER TWO DOTS PUNCTUATION
+<Multi_key> <less> <space> <period>      : "⁖"  U2056  # THREE DOT PUNCTUATION (conflicts with ˇ, use v␣ defined below)
+<Multi_key> <O> <space> <period>         : "⁘"  U2058  # FOUR DOT PUNCTUATION
+<Multi_key> <plus> <space> <period>      : "⸭"  U2E2D  # FIVE DOT MARK (alternatively +.)
+<Multi_key> <X> <space> <period>         : "⁙"  U2059  # FIVE DOT PUNCTUATION
+
+<Multi_key> <v> <space> <parenright>     : "‿"  U203F  # UNDERTIE (alternatively \_/)
+<Multi_key> <v> <space> <parenleft>      : "⁔"  U2054  # INVERTED UNDERTIE
+<Multi_key> <v> <parenleft> <space>      : "⁀"  U2040  # CHARACTER TIE
+<Multi_key> <v> <parenleft> <parenright> : "⁐"  U2050  # CLOSE UP
+
+<Multi_key> <space> <v>                  : "ˇ"  U02C7  # CARON
 <Multi_key> <underscore> <underscore> <space> : "‗"  U2017  # DOUBLE LOW LINE (conflicts with ¯, use -^)
 
 ########################
@@ -1228,6 +1243,8 @@ include "%L"
 <Multi_key> <underscore> <x>              : "ₓ"  U2093   # LATIN SUBSCRIPT SMALL LETTER X
 
 <Multi_key> <underscore> <Multi_key> <e> <e> : "ₔ"  U2094   # LATIN SUBSCRIPT SMALL LETTER SCHWA
+
+<Multi_key> <underscore> <asterisk> <underscore> : "⁎"  U204E  # LOW ASTERISK
 
 # small capitals: _^x
 
