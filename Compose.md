@@ -9,30 +9,31 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (485)
+### Common script characters (500)
 * **Spaces** (15): NBSP MMSP ZWSP etc
 * **Dashes** (12): – — ⁓ ⸻ etc
 * **Brackets** (24): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
+* **General punctuation** (15): ⁁ ⁂ ⸎ etc
 * **Currency symbols** (20): ₱ ₿ ₪ etc
 * **Combining diacritics** (132): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2241)
+### Latin script characters (2244)
 * **International Phonetic Alphabet** (126): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Latin script letters** (246): Ƿ Ȝ ␢ ȵ etc
-* **Mathematical alphanumerics** (731): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
+* **Mathematical alphanumerics** (733): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (262): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (197): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (364): ʣ ㏈ etc
-* **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
+* **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (7765)
+### Non-Latin script characters (7958)
 * **Arabic**, Mandaic, Osmanya, Syriac, Neo-Tifinagh, Thaana & Yezidi (334): ⁧رِيدِتْ⁩, 𐒇𐒗𐒆𐒘𐒂, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (95): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (84): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
 * **Brahmic Scripts**: Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Kannada, Limbu, Mahajani, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Sylheti Nagri, Tamil, Telugu (1390): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ္, 𑄢𑄬𑄘𑄨𑄖𑄳, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆಡಿತ್, ᤖᤧᤍᤡᤳ, 𑅭𑅓𑅦𑅑𑅟, രെഡിട്, ꯔꯦꯗꯤꯠ, ରେଡିଟ, ꢬꢾꢞꢶꢜ, රෙඩිට්, ꠞꠦꠗꠤꠕ, ரெடிட், రెడిట్ etc
-* **Unified English Braille** (79): ⠗⠫⠙⠊⠞ etc
+* **Braille**, UEB (272): ⠗⠫⠙⠊⠞ etc
 * **ConScripts**: Cherokee, Deseret, Inuktitut Syllabics, Mru, Nyiakeng Puachue Hmong, Ol Chiki, Osage, Pau Cin Hau, Shavian & Wancho (781): ᎴᏗᏛ, 𐐡𐐇𐐔𐐆𐐓, ᕃᑎᑦ, 𖩓𖩘𖩅𖩊𖩀, 𞄣𞄪𞄏𞄦𞄃, ᱨᱮᱫᱫᱤᱛ, 𐒴𐓟𐓵𐓣𐓰, 𑫒𑫖𑫄𑫗𑫎, 𐑮𐑧𐑛𐑦𐑑, 𞋗𞋛𞋄𞋜𞋋 etc
 * **Cyrillic**, Glagolitic & Old Permic (330): Ре́ддит, Ⱃⰵδδιτ, 𐍠𐍔𐍓𐍓𐍙𐍢 etc
 * **Geʽez**, Adlam, Bamum, Mende Kikakui, NKo & Vai (1085): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧𞠺𞠾𞡊⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
@@ -48,9 +49,9 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Zhuyin**, Fraser, Mongolian, ʼPhags-pa, Pollard, Tai Le & Tibetan (511): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4012)
+### Symbols (4015)
 * **Emoji** (1552): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Math and science** (271): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Math and science** (274): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **Technical** (106): ⏻ ⎙ ⌘ etc
 * **Numerals** (129): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (112): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
