@@ -9313,7 +9313,7 @@ include "%L"
 <Multi_key> <S> <n> <less> <apostrophe> : "𝨹"  U1DA39  # SIGNWRITING BREATH INHALE
 <Multi_key> <S> <n> <greater> <apostrophe> : "𝨺"  U1DA3A  # SIGNWRITING BREATH EXHALE
 
-# (m = mouth)
+# (m = mouth) (shares namespace with movements below as SM is already taken)
 
 <Multi_key> <S> <m> <minus> <Return> : "𝨻"  U1DA3B  # SIGNWRITING MOUTH CLOSED NEUTRAL
 <Multi_key> <S> <m> <asciicircum> <minus> <asciicircum> <bar> <Return> : "𝨼"  U1DA3C  # SIGNWRITING MOUTH CLOSED FORWARD
@@ -9711,7 +9711,7 @@ include "%L"
 <Multi_key> <S> <f> <asciicircum> <equal> : "𝤨"  U1D928  # SIGNWRITING MOVEMENT-WALLPLANE FINGER CONTACT
 <Multi_key> <S> <f> <asciicircum> <bar> : "𝤩"  U1D929  # SIGNWRITING MOVEMENT-FLOORPLANE FINGER CONTACT
 
-# (m = movement)
+# (m = movement) (shares namespace with mouth above)
 
 <Multi_key> <S> <m> <asciicircum> <equal> <space> : "𝤪"  U1D92A  # SIGNWRITING MOVEMENT-WALLPLANE SINGLE STRAIGHT SMALL
 <Multi_key> <S> <m> <asciicircum> <2> <equal> <space> : "𝤫"  U1D92B  # SIGNWRITING MOVEMENT-WALLPLANE SINGLE STRAIGHT MEDIUM
@@ -9889,7 +9889,39 @@ include "%L"
 <Multi_key> <S> <m> <minus> <2> <asciicircum> <u> : "𝧓"  U1D9D3  # SIGNWRITING ROTATION-FLOORPLANE DOUBLE HITTING FLOOR
 <Multi_key> <S> <m> <minus> <asciicircum> <u> <bar> <u> : "𝧔"  U1D9D4  # SIGNWRITING ROTATION-FLOORPLANE ALTERNATING HITTING FLOOR
 
-# TODO: remaining movements
+<Multi_key> <S> <m> <less> <minus> <space> : "𝧕"  U1D9D5  # SIGNWRITING MOVEMENT-FLOORPLANE CURVE SMALL
+<Multi_key> <S> <m> <less> <2> <minus> : "𝧖"  U1D9D6  # SIGNWRITING MOVEMENT-FLOORPLANE CURVE MEDIUM
+<Multi_key> <S> <m> <less> <3> <minus> : "𝧗"  U1D9D7  # SIGNWRITING MOVEMENT-FLOORPLANE CURVE LARGE
+<Multi_key> <S> <m> <less> <4> <minus> : "𝧘"  U1D9D8  # SIGNWRITING MOVEMENT-FLOORPLANE CURVE LARGEST
+<Multi_key> <S> <m> <greater> <c> <minus> : "𝧙"  U1D9D9  # SIGNWRITING MOVEMENT-FLOORPLANE CURVE COMBINED
+<Multi_key> <S> <m> <less> <minus> <m> : "𝧚"  U1D9DA  # SIGNWRITING MOVEMENT-FLOORPLANE HUMP SMALL
+<Multi_key> <S> <m> <less> <minus> <o> : "𝧛"  U1D9DB  # SIGNWRITING MOVEMENT-FLOORPLANE LOOP SMALL
+<Multi_key> <S> <m> <less> <minus> <asciitilde> : "𝧜"  U1D9DC  # SIGNWRITING MOVEMENT-FLOORPLANE WAVE SNAKE
+<Multi_key> <S> <m> <v> <minus> <asciitilde> : "𝧝"  U1D9DD  # SIGNWRITING MOVEMENT-FLOORPLANE WAVE SMALL
+<Multi_key> <S> <m> <v> <2> <minus> <asciitilde> : "𝧞"  U1D9DE  # SIGNWRITING MOVEMENT-FLOORPLANE WAVE LARGE
+<Multi_key> <S> <m> <equal> <less> <minus> <space> : "𝧟"  U1D9DF  # SIGNWRITING ROTATION-FLOORPLANE SINGLE
+<Multi_key> <S> <m> <equal> <2> <less> <minus> : "𝧠"  U1D9E0  # SIGNWRITING ROTATION-FLOORPLANE DOUBLE
+<Multi_key> <S> <m> <equal> <less> <minus> <minus> <greater> : "𝧡"  U1D9E1  # SIGNWRITING ROTATION-FLOORPLANE ALTERNATING
+<Multi_key> <S> <m> <equal> <less> <3> <minus> : "𝧢"  U1D9E2  # SIGNWRITING MOVEMENT-FLOORPLANE SHAKING PARALLEL
+<Multi_key> <S> <m> <less> <equal> <O> : "𝧣"  U1D9E3  # SIGNWRITING MOVEMENT-WALLPLANE ARM CIRCLE SMALL SINGLE
+<Multi_key> <S> <m> <less> <2> <equal> <O> : "𝧤"  U1D9E4  # SIGNWRITING MOVEMENT-WALLPLANE ARM CIRCLE MEDIUM SINGLE
+<Multi_key> <S> <m> <2> <less> <equal> <O> : "𝧥"  U1D9E5  # SIGNWRITING MOVEMENT-WALLPLANE ARM CIRCLE SMALL DOUBLE
+<Multi_key> <S> <m> <2> <less> <2> <equal> <O> : "𝧦"  U1D9E6  # SIGNWRITING MOVEMENT-WALLPLANE ARM CIRCLE MEDIUM DOUBLE
+
+<Multi_key> <S> <m> <asciicircum> <O> : "𝧧"  U1D9E7  # SIGNWRITING MOVEMENT-FLOORPLANE ARM CIRCLE HITTING WALL SMALL SINGLE
+<Multi_key> <S> <m> <asciicircum> <2> <O> : "𝧨"  U1D9E8  # SIGNWRITING MOVEMENT-FLOORPLANE ARM CIRCLE HITTING WALL MEDIUM SINGLE
+<Multi_key> <S> <m> <asciicircum> <3> <O> : "𝧩"  U1D9E9  # SIGNWRITING MOVEMENT-FLOORPLANE ARM CIRCLE HITTING WALL LARGE SINGLE
+<Multi_key> <S> <m> <2> <asciicircum> <O> : "𝧪"  U1D9EA  # SIGNWRITING MOVEMENT-FLOORPLANE ARM CIRCLE HITTING WALL SMALL DOUBLE
+<Multi_key> <S> <m> <2> <asciicircum> <2> <O> : "𝧫"  U1D9EB  # SIGNWRITING MOVEMENT-FLOORPLANE ARM CIRCLE HITTING WALL MEDIUM DOUBLE
+<Multi_key> <S> <m> <2> <asciicircum> <3> <O> : "𝧬"  U1D9EC  # SIGNWRITING MOVEMENT-FLOORPLANE ARM CIRCLE HITTING WALL LARGE DOUBLE
+<Multi_key> <S> <m> <less> <equal> <o> : "𝧭"  U1D9ED  # SIGNWRITING MOVEMENT-WALLPLANE WRIST CIRCLE FRONT SINGLE
+<Multi_key> <S> <m> <2> <less> <equal> <o> : "𝧮"  U1D9EE  # SIGNWRITING MOVEMENT-WALLPLANE WRIST CIRCLE FRONT DOUBLE
+<Multi_key> <S> <m> <less> <bar> <o> : "𝧯"  U1D9EF  # SIGNWRITING MOVEMENT-FLOORPLANE WRIST CIRCLE HITTING WALL SINGLE
+<Multi_key> <S> <m> <2> <less> <bar> <o> : "𝧰"  U1D9F0  # SIGNWRITING MOVEMENT-FLOORPLANE WRIST CIRCLE HITTING WALL DOUBLE
+<Multi_key> <S> <m> <less> <period> <O> : "𝧱"  U1D9F1  # SIGNWRITING MOVEMENT-WALLPLANE FINGER CIRCLES SINGLE
+<Multi_key> <S> <m> <2> <less> <period> <O> : "𝧲"  U1D9F2  # SIGNWRITING MOVEMENT-WALLPLANE FINGER CIRCLES DOUBLE
+<Multi_key> <S> <m> <asciicircum> <period> <O> : "𝧳"  U1D9F3  # SIGNWRITING MOVEMENT-FLOORPLANE FINGER CIRCLES HITTING WALL SINGLE
+<Multi_key> <S> <m> <2> <asciicircum> <period> <O> : "𝧴"  U1D9F4  # SIGNWRITING MOVEMENT-FLOORPLANE FINGER CIRCLES HITTING WALL DOUBLE
 
 # (d = dynamics)
 
