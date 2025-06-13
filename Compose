@@ -863,6 +863,10 @@ include "%L"
 <Multi_key> <grave> <comma>         : "ʽ"  U02BD    # MODIFIER LETTER REVERSED COMMA
 
 <Multi_key> <a> <Multi_key> <less> <e> <e> : "ꬱ"  UAB31  # LATIN SMALL LETTER A REVERSED-SCHWA
+<Multi_key> <less> <g>              : "𝼁"  U1DF01  # LATIN SMALL LETTER REVERSED SCRIPT G
+<Multi_key> <less> <k>              : "𝼃"  U1DF03  # LATIN SMALL LETTER REVERSED K
+<Multi_key> <less> <Multi_key> <Z> <H> : "Ƹ"  U01B8  # LATIN CAPITAL LETTER EZH REVERSED
+<Multi_key> <less> <Multi_key> <z> <h> : "ƹ"  U01B9  # LATIN SMALL LETTER EZH REVERSED
 
 # letters with diacritics (prioritising using v for carons and - for horizontal strokes)
 
@@ -1286,6 +1290,9 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <Multi_key> <L> <slash> : "ᴌ" U1D0C   # LATIN LETTER SMALL CAPITAL L WITH STROKE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <O> <parenright> : "ᴐ"  U1D10  # LATIN LETTER SMALL CAPITAL OPEN O (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <Z> <H> : "ᴣ" U1D23   # LATIN LETTER SMALL CAPITAL EZH (conflicts)
+
+<Multi_key> <underscore> <asciicircum> <less> <N> : "ᴎ"  U1D0E  # LATIN LETTER SMALL CAPITAL REVERSED N (conflicts)
+<Multi_key> <underscore> <asciicircum> <less> <R> : "ᴙ"  U1D19  # LATIN LETTER SMALL CAPITAL REVERSED R (conflicts)
 
 # combining letters above: ^^x
 
@@ -5865,6 +5872,7 @@ include "%L"
 <Multi_key> <c> <c> <U>          : "У"  U0423   # CYRILLIC CAPITAL LETTER U (conflicts)
 <Multi_key> <c> <c> <F>          : "Ф"  U0424   # CYRILLIC CAPITAL LETTER EF (conflicts)
 <Multi_key> <c> <c> <H>          : "Х"  U0425   # CYRILLIC CAPITAL LETTER HA (conflicts)
+<Multi_key> <c> <c> <X>          : "Х"  U0425   # CYRILLIC CAPITAL LETTER HA (conflicts)
 <Multi_key> <c> <c> <C>          : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE (conflicts)
 <Multi_key> <c> <x> <T> <S> <Return> : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE
 <Multi_key> <c> <x> <C> <H>      : "Ч"  U0427   # CYRILLIC CAPITAL LETTER CHE
@@ -5923,6 +5931,7 @@ include "%L"
 <Multi_key> <c> <c> <u>          : "у"  U0443   # CYRILLIC SMALL LETTER U (conflicts)
 <Multi_key> <c> <c> <f>          : "ф"  U0444   # CYRILLIC SMALL LETTER EF (conflicts)
 <Multi_key> <c> <c> <h>          : "х"  U0445   # CYRILLIC SMALL LETTER HA (conflicts)
+<Multi_key> <c> <c> <x>          : "х"  U0445   # CYRILLIC SMALL LETTER HA (conflicts)
 <Multi_key> <c> <c> <c>          : "ц"  U0446   # CYRILLIC SMALL LETTER TSE (conflicts)
 <Multi_key> <c> <x> <t> <s> <Return> : "ц"  U0446   # CYRILLIC SMALL LETTER TSE
 <Multi_key> <c> <x> <c> <h>      : "ч"  U0447   # CYRILLIC SMALL LETTER CHE
@@ -5957,6 +5966,35 @@ include "%L"
 <Multi_key> <c> <x> <k> <j>      : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 <Multi_key> <c> <x> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 
+# non-Slavic letters
+
+<Multi_key> <c> <c> <less> <C>     : "Ꙡ"  UA660  # CYRILLIC CAPITAL LETTER REVERSED TSE (conflicts)
+<Multi_key> <c> <c> <less> <c>     : "ꙡ"  UA661  # CYRILLIC SMALL LETTER REVERSED TSE (conflicts)
+<Multi_key> <c> <x> <C> <S>        : "Ꚑ"  UA690  # CYRILLIC CAPITAL LETTER TSSE
+<Multi_key> <c> <x> <c> <s>        : "ꚑ"  UA691  # CYRILLIC SMALL LETTER TSSE
+<Multi_key> <c> <x> <C> <W>        : "Ꚏ"  UA68E  # CYRILLIC CAPITAL LETTER TSWE
+<Multi_key> <c> <x> <c> <w>        : "ꚏ"  UA68F  # CYRILLIC SMALL LETTER TSWE
+<Multi_key> <c> <x> <D> <W>        : "Ꚁ"  UA680  # CYRILLIC CAPITAL LETTER DWE
+<Multi_key> <c> <x> <d> <w>        : "ꚁ"  UA681  # CYRILLIC SMALL LETTER DWE
+<Multi_key> <c> <x> <less> <D> <Z> : "Ꙅ"  UA644  # CYRILLIC CAPITAL LETTER REVERSED DZE
+<Multi_key> <c> <x> <less> <d> <z> : "ꙅ"  UA645  # CYRILLIC SMALL LETTER REVERSED DZE
+<Multi_key> <c> <x> <D> <Z> <W>    : "Ꚃ"  UA682  # CYRILLIC CAPITAL LETTER DZWE
+<Multi_key> <c> <x> <d> <z> <w>    : "ꚃ"  UA683  # CYRILLIC SMALL LETTER DZWE
+<Multi_key> <c> <x> <D> <Z> <Z>    : "Ꚉ"  UA688  # CYRILLIC CAPITAL LETTER DZZE
+<Multi_key> <c> <x> <d> <z> <z>    : "ꚉ"  UA689  # CYRILLIC SMALL LETTER DZZE
+<Multi_key> <c> <x> <H> <W>        : "Ꚕ"  UA694  # CYRILLIC CAPITAL LETTER HWE
+<Multi_key> <c> <x> <h> <w>        : "ꚕ"  UA695  # CYRILLIC SMALL LETTER HWE
+<Multi_key> <c> <x> <L> <H>        : "Ԕ"  U0514  # CYRILLIC CAPITAL LETTER LHA
+<Multi_key> <c> <x> <L> <X>        : "Ԕ"  U0514  # CYRILLIC CAPITAL LETTER LHA
+<Multi_key> <c> <x> <l> <h>        : "ԕ"  U0515  # CYRILLIC SMALL LETTER LHA
+<Multi_key> <c> <x> <l> <x>        : "ԕ"  U0515  # CYRILLIC SMALL LETTER LHA
+<Multi_key> <c> <x> <less> <T> <S> : "Ꙡ"  UA660  # CYRILLIC CAPITAL LETTER REVERSED TSE
+<Multi_key> <c> <x> <less> <t> <s> : "ꙡ"  UA661  # CYRILLIC SMALL LETTER REVERSED TSE
+<Multi_key> <c> <c> <less> <Y> <U> : "Ꙕ"  UA654  # CYRILLIC CAPITAL LETTER REVERSED YU (conflicts)
+<Multi_key> <c> <c> <less> <y> <u> : "ꙕ"  UA655  # CYRILLIC SMALL LETTER REVERSED YU (conflicts)
+<Multi_key> <c> <c> <less> <Z>     : "Ԑ"  U0510  # CYRILLIC CAPITAL LETTER REVERSED ZE (conflicts)
+<Multi_key> <c> <c> <less> <z>     : "ԑ"  U0511  # CYRILLIC SMALL LETTER REVERSED ZE (conflicts)
+
 # diacritics
 
 <Multi_key> <c> <c> <quotedbl> <a> : "Ӓ"  U04D2  # CYRILLIC CAPITAL LETTER A WITH DIAERESIS (conflicts)
@@ -5986,7 +6024,9 @@ include "%L"
 <Multi_key> <c> <c> <minus> <Y> <Y> : "Ұ"  U04B0  # CYRILLIC CAPITAL LETTER STRAIGHT U WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <y> <y> : "ұ"  U04B1  # CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <H> : "Ӿ"  U04FE  # CYRILLIC CAPITAL LETTER HA WITH STROKE (conflicts)
+<Multi_key> <c> <c> <minus> <X> : "Ӿ"  U04FE  # CYRILLIC CAPITAL LETTER HA WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <h> : "ӿ"  U04FF  # CYRILLIC SMALL LETTER HA WITH STROKE (conflicts)
+<Multi_key> <c> <c> <minus> <x> : "ӿ"  U04FF  # CYRILLIC SMALL LETTER HA WITH STROKE (conflicts)
 
 <Multi_key> <c> <c> <grave> <Y> <E> : "Ѐ"  U0400  # CYRILLIC CAPITAL LETTER IE WITH GRAVE (conflicts)
 <Multi_key> <c> <c> <grave> <I> : "Ѝ"  U040D  # CYRILLIC CAPITAL LETTER I WITH GRAVE (conflicts)
@@ -6013,7 +6053,9 @@ include "%L"
 <Multi_key> <c> <c> <comma> <T> : "Ҭ"  U04AC  # CYRILLIC CAPITAL LETTER TE WITH DESCENDER (conflicts)
 <Multi_key> <c> <c> <comma> <t> : "ҭ"  U04AD  # CYRILLIC SMALL LETTER TE WITH DESCENDER (conflicts)
 <Multi_key> <c> <c> <comma> <H> : "Ҳ"  U04B2  # CYRILLIC CAPITAL LETTER HA WITH DESCENDER (conflicts)
+<Multi_key> <c> <c> <comma> <X> : "Ҳ"  U04B2  # CYRILLIC CAPITAL LETTER HA WITH DESCENDER (conflicts)
 <Multi_key> <c> <c> <comma> <h> : "ҳ"  U04B3  # CYRILLIC SMALL LETTER HA WITH DESCENDER (conflicts)
+<Multi_key> <c> <c> <comma> <x> : "ҳ"  U04B3  # CYRILLIC SMALL LETTER HA WITH DESCENDER (conflicts)
 <Multi_key> <c> <x> <comma> <C> <H> : "Ҷ"  U04B6  # CYRILLIC CAPITAL LETTER CHE WITH DESCENDER
 <Multi_key> <c> <x> <comma> <c> <h> : "ҷ"  U04B7  # CYRILLIC SMALL LETTER CHE WITH DESCENDER
 <Multi_key> <c> <c> <comma> <G> : "Ӷ"  U04F6  # CYRILLIC CAPITAL LETTER GHE WITH DESCENDER (conflicts)
@@ -6028,7 +6070,9 @@ include "%L"
 <Multi_key> <c> <c> <greater> <comma> <N> : "Ӈ"  U04C7  # CYRILLIC CAPITAL LETTER EN WITH HOOK (conflicts)
 <Multi_key> <c> <c> <greater> <comma> <n> : "ӈ"  U04C8  # CYRILLIC SMALL LETTER EN WITH HOOK (conflicts)
 <Multi_key> <c> <c> <greater> <comma> <H> : "Ӽ"  U04FC  # CYRILLIC CAPITAL LETTER HA WITH HOOK (conflicts)
+<Multi_key> <c> <c> <greater> <comma> <X> : "Ӽ"  U04FC  # CYRILLIC CAPITAL LETTER HA WITH HOOK (conflicts)
 <Multi_key> <c> <c> <greater> <comma> <h> : "ӽ"  U04FD  # CYRILLIC SMALL LETTER HA WITH HOOK (conflicts)
+<Multi_key> <c> <c> <greater> <comma> <x> : "ӽ"  U04FD  # CYRILLIC SMALL LETTER HA WITH HOOK (conflicts)
 <Multi_key> <c> <c> <greater> <comma> <L> : "Ԓ"  U0512  # CYRILLIC CAPITAL LETTER EL WITH HOOK (conflicts)
 <Multi_key> <c> <c> <greater> <comma> <l> : "ԓ"  U0513  # CYRILLIC SMALL LETTER EL WITH HOOK (conflicts)
 <Multi_key> <c> <c> <less> <comma> <N>    : "Ԩ"  U0528  # CYRILLIC CAPITAL LETTER EN WITH LEFT HOOK (conflicts)
@@ -8794,6 +8838,8 @@ include "%L"
 
 <Multi_key> <j> <c> <quotedbl> <i>       : "ゝ"  U309D   # HIRAGANA ITERATION MARK
 <Multi_key> <j> <c> <quotedbl> <v>       : "ゞ"  U309E   # HIRAGANA VOICED ITERATION MARK
+<Multi_key> <j> <c> <quotedbl> <less>    : "〱"  U3031   # VERTICAL KANA REPEAT MARK
+<Multi_key> <j> <c> <quotedbl> <quotedbl> <less> : "〲"  U3032  # VERTICAL KANA REPEAT WITH VOICED SOUND MARK
 
 # Katakana (upper case)
 
@@ -12621,6 +12667,8 @@ include "%L"
 <Multi_key> <backslash> <backslash>   : "∖"  U2216   # SET MINUS
 <Multi_key> <slash> <0>               : "∅"  U2205   # EMPTY SET (alternatively {})
 <Multi_key> <0> <slash>               : "∅"  U2205   # EMPTY SET (alternatively {})
+<Multi_key> <0> <backslash>           : "⦰"  U29B0  # REVERSED EMPTY SET
+<Multi_key> <less> <braceleft> <braceright> : "⦰"  U29B0  # REVERSED EMPTY SET
 <Multi_key> <backslash> <bar>         : "∥"  U2225   # PARALLEL TO
 <Multi_key> <slash> <bar> <bar>       : "∦"  U2226   # NOT PARALLEL TO
 <Multi_key> <bar> <T>                 : "⊤"  U22A4   # DOWN TACK (TEE)
