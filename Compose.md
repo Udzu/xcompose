@@ -28,14 +28,14 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (364): ʣ ㏈ etc
 * **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (7982)
+### Non-Latin script characters (8025)
 * **Arabic**, Mandaic, Osmanya, Syriac, Neo-Tifinagh, Thaana & Yezidi (334): ⁧رِيدِتْ⁩, 𐒇𐒗𐒆𐒘𐒂, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (95): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (84): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
 * **Brahmic Scripts**: Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Kannada, Limbu, Mahajani, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Sylheti Nagri, Tamil, Telugu (1390): রেডিট, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ္, 𑄢𑄬𑄘𑄨𑄖𑄳, रेडिट, રેડિટ, ਰੇਡਿਟ, ರೆಡಿತ್, ᤖᤧᤍᤡᤳ, 𑅭𑅓𑅦𑅑𑅟, രെഡിട്, ꯔꯦꯗꯤꯠ, ରେଡିଟ, ꢬꢾꢞꢶꢜ, රෙඩිට්, ꠞꠦꠗꠤꠕ, ரெடிட், రెడిట్ etc
 * **Braille**, UEB (272): ⠗⠫⠙⠊⠞ etc
 * **ConScripts**: Cherokee, Deseret, Inuktitut Syllabics, Mru, Nyiakeng Puachue Hmong, Ol Chiki, Osage, Pau Cin Hau, Shavian & Wancho (781): ᎴᏗᏛ, 𐐡𐐇𐐔𐐆𐐓, ᕃᑎᑦ, 𖩓𖩘𖩅𖩊𖩀, 𞄣𞄪𞄏𞄦𞄃, ᱨᱮᱫᱫᱤᱛ, 𐒴𐓟𐓵𐓣𐓰, 𑫒𑫖𑫄𑫗𑫎, 𐑮𐑧𐑛𐑦𐑑, 𞋗𞋛𞋄𞋜𞋋 etc
-* **Cyrillic**, Glagolitic & Old Permic (352): Ре́ддит, Ⱃⰵδδιτ, 𐍠𐍔𐍓𐍓𐍙𐍢 etc
+* **Cyrillic**, Glagolitic & Old Permic (395): Ре́ддит, Ⱃⰵδδιτ, 𐍠𐍔𐍓𐍓𐍙𐍢 etc
 * **Geʽez**, Adlam, Bamum, Mende Kikakui, NKo & Vai (1085): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧𞠺𞠾𞡊⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian**: Mtavruli, Nuskhuri, Mkhedruli (154): რედდიტ, ႰႤႣႣႨႲ etc
 * **Greek**, Coptic, Cypriot, Gothic, Linear B & Lycian (926): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗 etc
