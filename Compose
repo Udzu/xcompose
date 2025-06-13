@@ -1004,6 +1004,9 @@ include "%L"
 <Multi_key> <N> <bar> : "Ꞑ"  UA790  # LATIN CAPITAL LETTER N WITH DESCENDER
 <Multi_key> <n> <bar> : "ꞑ"  UA791  # LATIN SMALL LETTER N WITH DESCENDER
 
+<Multi_key> <a> <bar> : "ꬰ"  UAB30  # LATIN SMALL LETTER BARRED ALPHA
+<Multi_key> <e> <bar> : "ꬳ"  UAB33  # LATIN SMALL LETTER BARRED E
+
 <Multi_key> <u> <v> <A> : "Ȃ"  U0202  # LATIN CAPITAL LETTER A WITH INVERTED BREVE
 <Multi_key> <u> <v> <a> : "ȃ"  U0203  # LATIN SMALL LETTER A WITH INVERTED BREVE
 <Multi_key> <u> <v> <E> : "Ȇ"  U0206  # LATIN CAPITAL LETTER E WITH INVERTED BREVE
@@ -1179,6 +1182,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <a> <h> : "ᵅ"  U1D45  # MODIFIER LETTER SMALL ALPHA
 <Multi_key> <asciicircum> <underscore> <Multi_key> <a> <v> : "ᵄ"  U1D44  # MODIFIER LETTER SMALL TURNED A
 <Multi_key> <asciicircum> <underscore> <Multi_key> <a> <less> : "ᶛ"  U1D9B  # MODIFIER LETTER SMALL TURNED ALPHA
+<Multi_key> <asciicircum> <underscore> <Multi_key> <B> <bar> : "ᴯ"  U1D2F  # MODIFIER LETTER CAPITAL BARRED B
 <Multi_key> <asciicircum> <underscore> <Multi_key> <b> <h> : "ᵝ"  U1D5D  # MODIFIER LETTER SMALL BETA
 <Multi_key> <asciicircum> <underscore> <Multi_key> <c> <at> : "ᶝ"  U1D9D  # MODIFIER LETTER SMALL C WITH CURL
 <Multi_key> <asciicircum> <underscore> <Multi_key> <d> <h> : "ᶞ"  U1D9E  # MODIFIER LETTER SMALL ETH
@@ -1285,6 +1289,7 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <Z> : "ᴢ" U1D22   # LATIN LETTER SMALL CAPITAL Z (conflicts)
 
 <Multi_key> <underscore> <asciicircum> <Multi_key> <A> <E> : "ᴁ" U1D01   # LATIN LETTER SMALL CAPITAL AE (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <B> <bar> : "ᴃ"  U1D03  # LATIN LETTER SMALL CAPITAL BARRED B (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <D> <H> : "ᴆ" U1D06   # LATIN LETTER SMALL CAPITAL ETH (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <slash> <I> : "ᵻ"  U1D7B  # LATIN SMALL CAPITAL LETTER I WITH STROKE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <L> <slash> : "ᴌ" U1D0C   # LATIN LETTER SMALL CAPITAL L WITH STROKE (conflicts)
@@ -6089,6 +6094,8 @@ include "%L"
 <Multi_key> <c> <c> <minus> <g> : "ғ"  U0493  # CYRILLIC SMALL LETTER GHE WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <K> : "Ҟ"  U049E  # CYRILLIC CAPITAL LETTER KA WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <k> : "ҟ"  U049F  # CYRILLIC SMALL LETTER KA WITH STROKE (conflicts)
+<Multi_key> <c> <c> <minus> <O> : "Ө"  U04E8  # CYRILLIC CAPITAL LETTER BARRED O (conflicts)
+<Multi_key> <c> <c> <minus> <o> : "ө"  U04E9  # CYRILLIC SMALL LETTER BARRED O (conflicts)
 <Multi_key> <c> <c> <minus> <Y> <Y> : "Ұ"  U04B0  # CYRILLIC CAPITAL LETTER STRAIGHT U WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <y> <y> : "ұ"  U04B1  # CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <H> : "Ӿ"  U04FE  # CYRILLIC CAPITAL LETTER HA WITH STROKE (conflicts)
@@ -6221,6 +6228,7 @@ include "%L"
 <Multi_key> <c> <c> <asciicircum> <underscore> <minus> <y> <y> : "𞁭"  U1E06D  # MODIFIER LETTER CYRILLIC SMALL STRAIGHT U WITH STROKE (conflict)
 <Multi_key> <c> <x> <asciicircum> <underscore> <d> <z> <z> : "𞁊"  U1E04A  # MODIFIER LETTER CYRILLIC SMALL DZZE
 <Multi_key> <c> <x> <asciicircum> <underscore> <e> <e> : "𞁋"  U1E04B  # MODIFIER LETTER CYRILLIC SMALL SCHWA
+<Multi_key> <c> <c> <asciicircum> <underscore> <minus> <o> : "𞁎"  U1E04E  # MODIFIER LETTER CYRILLIC SMALL BARRED O (conflicts)
 
 <Multi_key> <c> <c> <underscore> <a> : "𞁑"  U1E051  # CYRILLIC SUBSCRIPT SMALL LETTER A (conflicts)
 <Multi_key> <c> <c> <underscore> <b> : "𞁒"  U1E052  # CYRILLIC SUBSCRIPT SMALL LETTER BE (conflicts)
@@ -7354,7 +7362,6 @@ include "%L"
 <Multi_key> <g> <c> <p> : "π"  U03C0   # GREEK SMALL LETTER PI
 <Multi_key> <g> <c> <r> : "ρ"  U03C1   # GREEK SMALL LETTER RHO
 <Multi_key> <g> <c> <greater> <s> : "ς"  U03C2   # GREEK SMALL LETTER FINAL SIGMA
-<Multi_key> <g> <x> <s> : "ς"  U03C2   # GREEK SMALL LETTER FINAL SIGMA (alternatively gc>s)
 <Multi_key> <g> <c> <s> : "σ"  U03C3   # GREEK SMALL LETTER SIGMA
 <Multi_key> <g> <c> <t> : "τ"  U03C4   # GREEK SMALL LETTER TAU
 <Multi_key> <g> <c> <y> : "υ"  U03C5   # GREEK SMALL LETTER UPSILON
@@ -7368,16 +7375,29 @@ include "%L"
 
 <Multi_key> <g> <semicolon> <question>   : ";"  U037E   # GREEK QUESTION MARK
 
-<Multi_key> <g> <c> <W>     : "Ϝ"  U03DC   # GREEK LETTER DIGAMMA
+<Multi_key> <g> <x> <H>     : "Ͱ"  U0370  # GREEK CAPITAL LETTER HETA
+<Multi_key> <g> <x> <h>     : "ͱ"  U0371  # GREEK SMALL LETTER HETA
 <Multi_key> <g> <c> <Q>     : "Ϙ"  U03D8   # GREEK LETTER ARCHAIC KOPPA
-<Multi_key> <g> <x> <T> <S> : "Ͳ"  U0372   # GREEK CAPITAL LETTER ARCHAIC SAMPI
-<Multi_key> <g> <c> <w>     : "ϝ"  U03DD   # GREEK SMALL LETTER DIGAMMA
 <Multi_key> <g> <c> <q>     : "ϙ"  U03D9   # GREEK SMALL LETTER ARCHAIC KOPPA
+<Multi_key> <g> <x> <S> <M> : "Ϻ"  U03FA   # GREEK CAPITAL LETTER SAN
+<Multi_key> <g> <x> <s> <m> : "ϻ"  U03FB   # GREEK SMALL LETTER SAN
+<Multi_key> <g> <x> <T> <S> : "Ͳ"  U0372   # GREEK CAPITAL LETTER ARCHAIC SAMPI
 <Multi_key> <g> <x> <t> <s> : "ͳ"  U0373   # GREEK SMALL LETTER ARCHAIC SAMPI
+<Multi_key> <g> <c> <W>     : "Ϝ"  U03DC   # GREEK LETTER DIGAMMA
+<Multi_key> <g> <c> <w>     : "ϝ"  U03DD   # GREEK SMALL LETTER DIGAMMA
 
+<Multi_key> <g> <c> <J>     : "Ϳ"  U037F   # GREEK CAPITAL LETTER YOT
+<Multi_key> <g> <c> <j>     : "ϳ"  U03F3   # GREEK LETTER YOT
+<Multi_key> <g> <x> <S> <H> : "Ϸ"  U03F7   # GREEK CAPITAL LETTER SHO
+<Multi_key> <g> <x> <s> <h> : "ϸ"  U03F8   # GREEK SMALL LETTER SHO
+<Multi_key> <g> <x> <T> <R> : "𐆠"  U101A0  # GREEK SYMBOL TAU RHO
+
+<Multi_key> <g> <numbersign> <W> : "Ϛ"  U03DA  # GREEK LETTER STIGMA
 <Multi_key> <g> <numbersign> <w> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
 <Multi_key> <g> <numbersign> <6> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
+<Multi_key> <g> <numbersign> <Q> : "Ϟ"  U03DE   # GREEK LETTER KOPPA
 <Multi_key> <g> <numbersign> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
+<Multi_key> <g> <numbersign> <S> : "Ϡ"  U03E0  # GREEK LETTER SAMPI
 <Multi_key> <g> <numbersign> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
 
 # diacritics
@@ -17152,6 +17172,37 @@ include "%L"
 <Multi_key> <numbersign> <7> <0> <0> <0> <0> <a> : "𐄱"  U10131  # AEGEAN NUMBER SEVENTY THOUSAND
 <Multi_key> <numbersign> <8> <0> <0> <0> <0> <a> : "𐄲"  U10132  # AEGEAN NUMBER EIGHTY THOUSAND
 <Multi_key> <numbersign> <9> <0> <0> <0> <0> <a> : "𐄳"  U10133  # AEGEAN NUMBER NINETY THOUSAND
+
+# (A) Attic numerals
+
+<Multi_key> <numbersign> <1> <slash> <4> <A> : "𐅀"  U10140  # GREEK ACROPHONIC ATTIC ONE QUARTER
+<Multi_key> <numbersign> <1> <slash> <2> <A> : "𐅁"  U10141  # GREEK ACROPHONIC ATTIC ONE HALF
+<Multi_key> <numbersign> <1> <A> <space> : "Ι"  U0399  # GREEK CAPITAL LETTER IOTA (1)
+<Multi_key> <numbersign> <1> <A> <D> : "𐅂"  U10142  # GREEK ACROPHONIC ATTIC ONE DRACHMA
+<Multi_key> <numbersign> <5> <A> <space> : "𐅃"  U10143  # GREEK ACROPHONIC ATTIC FIVE
+<Multi_key> <numbersign> <5> <A> <S> : "𐅏"  U1014F  # GREEK ACROPHONIC ATTIC FIVE STATERS
+<Multi_key> <numbersign> <5> <A> <T> : "𐅈"  U10148  # GREEK ACROPHONIC ATTIC FIVE TALENTS
+<Multi_key> <numbersign> <1> <0> <A> <space> : "Δ"  U0394  # GREEK CAPITAL LETTER DELTA (10)
+<Multi_key> <numbersign> <1> <0> <A> <S> : "𐅐"  U10150  # GREEK ACROPHONIC ATTIC TEN STATERS
+<Multi_key> <numbersign> <1> <0> <A> <T> : "𐅉"  U10149  # GREEK ACROPHONIC ATTIC TEN TALENTS
+<Multi_key> <numbersign> <5> <0> <A> <space> : "𐅄"  U10144  # GREEK ACROPHONIC ATTIC FIFTY
+<Multi_key> <numbersign> <5> <0> <A> <S> : "𐅑"  U10151  # GREEK ACROPHONIC ATTIC FIFTY STATERS
+<Multi_key> <numbersign> <5> <0> <A> <T> : "𐅊"  U1014A  # GREEK ACROPHONIC ATTIC FIFTY TALENTS
+<Multi_key> <numbersign> <1> <0> <0> <A> <space> : "Η"  U0397  # GREEK CAPITAL LETTER ETA (100)
+<Multi_key> <numbersign> <1> <0> <0> <A> <S> : "𐅒"  U10152  # GREEK ACROPHONIC ATTIC ONE HUNDRED STATERS
+<Multi_key> <numbersign> <1> <0> <0> <A> <T> : "𐅋"  U1014B  # GREEK ACROPHONIC ATTIC ONE HUNDRED TALENTS
+<Multi_key> <numbersign> <5> <0> <0> <A> <space> : "𐅅"  U10145  # GREEK ACROPHONIC ATTIC FIVE HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <A> <S> : "𐅓"  U10153  # GREEK ACROPHONIC ATTIC FIVE HUNDRED STATERS
+<Multi_key> <numbersign> <5> <0> <0> <A> <T> : "𐅌"  U1014C  # GREEK ACROPHONIC ATTIC FIVE HUNDRED TALENTS
+<Multi_key> <numbersign> <1> <0> <0> <0> <A> <space> : "Χ"  U03A7  # GREEK CAPITAL LETTER CHI (1000)
+<Multi_key> <numbersign> <1> <0> <0> <0> <A> <S> : "𐅔"  U10154  # GREEK ACROPHONIC ATTIC ONE THOUSAND STATERS
+<Multi_key> <numbersign> <1> <0> <0> <0> <A> <T> : "𐅍"  U1014D  # GREEK ACROPHONIC ATTIC ONE THOUSAND TALENTS
+<Multi_key> <numbersign> <5> <0> <0> <0> <A> <space> : "𐅆"  U10146  # GREEK ACROPHONIC ATTIC FIVE THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <A> <T> : "𐅎"  U1014E  # GREEK ACROPHONIC ATTIC FIVE THOUSAND TALENTS
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <A> <space> : "Μ"  U039C  # GREEK CAPITAL LETTER MU (10000)
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <A> <S> : "𐅕"  U10155  # GREEK ACROPHONIC ATTIC TEN THOUSAND STATERS
+<Multi_key> <numbersign> <5> <0> <0> <0> <0> <A> <space> : "𐅇"  U10147  # GREEK ACROPHONIC ATTIC FIFTY THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <0> <A> <S> : "𐅖"  U10156  # GREEK ACROPHONIC ATTIC FIFTY THOUSAND STATERS
 
 # (f) fence tally
 
