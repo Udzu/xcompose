@@ -5978,26 +5978,36 @@ include "%L"
 <Multi_key> <c> <x> <c> <s>        : "ꚑ"  UA691  # CYRILLIC SMALL LETTER TSSE
 <Multi_key> <c> <x> <C> <W>        : "Ꚏ"  UA68E  # CYRILLIC CAPITAL LETTER TSWE
 <Multi_key> <c> <x> <c> <w>        : "ꚏ"  UA68F  # CYRILLIC SMALL LETTER TSWE
+<Multi_key> <c> <x> <D> <C> <H>    : "Ԭ"  U052C  # CYRILLIC CAPITAL LETTER DCHE
+<Multi_key> <c> <x> <d> <c> <h>    : "ԭ"  U052D  # CYRILLIC SMALL LETTER DCHE
 <Multi_key> <c> <x> <D> <W>        : "Ꚁ"  UA680  # CYRILLIC CAPITAL LETTER DWE
 <Multi_key> <c> <x> <d> <w>        : "ꚁ"  UA681  # CYRILLIC SMALL LETTER DWE
-<Multi_key> <c> <x> <E> <E>        : "Ә"  U04D8  # CYRILLIC CAPITAL LETTER SCHWA
-<Multi_key> <c> <x> <e> <e>        : "ә"  U04D9  # CYRILLIC SMALL LETTER SCHWA
 <Multi_key> <c> <x> <less> <D> <Z> : "Ꙅ"  UA644  # CYRILLIC CAPITAL LETTER REVERSED DZE
 <Multi_key> <c> <x> <less> <d> <z> : "ꙅ"  UA645  # CYRILLIC SMALL LETTER REVERSED DZE
 <Multi_key> <c> <x> <D> <Z> <W>    : "Ꚃ"  UA682  # CYRILLIC CAPITAL LETTER DZWE
 <Multi_key> <c> <x> <d> <z> <w>    : "ꚃ"  UA683  # CYRILLIC SMALL LETTER DZWE
 <Multi_key> <c> <x> <D> <Z> <Z>    : "Ꚉ"  UA688  # CYRILLIC CAPITAL LETTER DZZE
 <Multi_key> <c> <x> <d> <z> <z>    : "ꚉ"  UA689  # CYRILLIC SMALL LETTER DZZE
-<Multi_key> <c> <x> <period> <H>   : "Һ"  U04BA  # CYRILLIC CAPITAL LETTER SHHA
-<Multi_key> <c> <x> <period> <h>   : "һ"  U04BB  # CYRILLIC SMALL LETTER SHHA
+<Multi_key> <c> <x> <E> <E>        : "Ә"  U04D8  # CYRILLIC CAPITAL LETTER SCHWA
+<Multi_key> <c> <x> <e> <e>        : "ә"  U04D9  # CYRILLIC SMALL LETTER SCHWA
+<Multi_key> <c> <c> <period> <H>   : "Һ"  U04BA  # CYRILLIC CAPITAL LETTER SHHA (conflict)
+<Multi_key> <c> <c> <period> <h>   : "һ"  U04BB  # CYRILLIC SMALL LETTER SHHA (conflict)
 <Multi_key> <c> <x> <H> <W>        : "Ꚕ"  UA694  # CYRILLIC CAPITAL LETTER HWE
 <Multi_key> <c> <x> <h> <w>        : "ꚕ"  UA695  # CYRILLIC SMALL LETTER HWE
 <Multi_key> <c> <x> <L> <H>        : "Ԕ"  U0514  # CYRILLIC CAPITAL LETTER LHA
 <Multi_key> <c> <x> <L> <X>        : "Ԕ"  U0514  # CYRILLIC CAPITAL LETTER LHA
 <Multi_key> <c> <x> <l> <h>        : "ԕ"  U0515  # CYRILLIC SMALL LETTER LHA
 <Multi_key> <c> <x> <l> <x>        : "ԕ"  U0515  # CYRILLIC SMALL LETTER LHA
+<Multi_key> <c> <x> <R> <H>        : "Ԗ"  U0516  # CYRILLIC CAPITAL LETTER RHA
+<Multi_key> <c> <x> <R> <X>        : "Ԗ"  U0516  # CYRILLIC CAPITAL LETTER RHA
+<Multi_key> <c> <x> <r> <h>        : "ԗ"  U0517  # CYRILLIC SMALL LETTER RHA
+<Multi_key> <c> <x> <r> <x>        : "ԗ"  U0517  # CYRILLIC SMALL LETTER RHA
+<Multi_key> <c> <x> <T> <J>        : "Ᲊ"  U1C89  # CYRILLIC CAPITAL LETTER TJE
+<Multi_key> <c> <x> <t> <j>        : "ᲊ"  U1C8A  # CYRILLIC SMALL LETTER TJE
 <Multi_key> <c> <x> <less> <T> <S> : "Ꙡ"  UA660  # CYRILLIC CAPITAL LETTER REVERSED TSE
 <Multi_key> <c> <x> <less> <t> <s> : "ꙡ"  UA661  # CYRILLIC SMALL LETTER REVERSED TSE
+<Multi_key> <c> <x> <T> <W>        : "Ꚍ"  UA68C  # CYRILLIC CAPITAL LETTER TWE
+<Multi_key> <c> <x> <t> <w>        : "ꚍ"  UA68D  # CYRILLIC SMALL LETTER TWE
 <Multi_key> <c> <c> <less> <Y> <U> : "Ꙕ"  UA654  # CYRILLIC CAPITAL LETTER REVERSED YU (conflicts)
 <Multi_key> <c> <c> <less> <y> <u> : "ꙕ"  UA655  # CYRILLIC SMALL LETTER REVERSED YU (conflicts)
 <Multi_key> <c> <c> <less> <Z>     : "Ԑ"  U0510  # CYRILLIC CAPITAL LETTER REVERSED ZE (conflicts)
@@ -6007,6 +6017,8 @@ include "%L"
 
 <Multi_key> <c> <x> <v> <A>          : "Ѧ"  U0466  # CYRILLIC CAPITAL LETTER LITTLE YUS
 <Multi_key> <c> <x> <v> <a>          : "ѧ"  U0467  # CYRILLIC SMALL LETTER LITTLE YUS
+<Multi_key> <c> <x> <D> <Z> <l>      : "Ꙃ"  UA642  # CYRILLIC CAPITAL LETTER DZELO
+<Multi_key> <c> <x> <d> <z> <l>      : "ꙃ"  UA643  # CYRILLIC SMALL LETTER DZELO
 <Multi_key> <c> <x> <v> <E>          : "Ѣ"  U0462  # CYRILLIC CAPITAL LETTER YAT
 <Multi_key> <c> <x> <v> <e>          : "ѣ"  U0463  # CYRILLIC SMALL LETTER YAT
 <Multi_key> <c> <x> <grave> <F>      : "Ѳ"  U0472  # CYRILLIC CAPITAL LETTER FITA
@@ -6033,8 +6045,12 @@ include "%L"
 <Multi_key> <c> <x> <v> <Return>     : "ѵ"  U0475  # CYRILLIC SMALL LETTER IZHITSA
 <Multi_key> <c> <c> <W>              : "Ѡ"  U0460  # CYRILLIC CAPITAL LETTER OMEGA (conflicts)
 <Multi_key> <c> <c> <w>              : "ѡ"  U0461  # CYRILLIC SMALL LETTER OMEGA (conflicts)
+<Multi_key> <c> <x> <Y> <A> <E>      : "Ԙ"  U0518  # CYRILLIC CAPITAL LETTER YAE
+<Multi_key> <c> <x> <y> <a> <e>      : "ԙ"  U0519  # CYRILLIC SMALL LETTER YAE
 <Multi_key> <c> <x> <Y> <N>          : "Ꙟ"  UA65E  # CYRILLIC CAPITAL LETTER YN
 <Multi_key> <c> <x> <y> <n>          : "ꙟ"  UA65F  # CYRILLIC SMALL LETTER YN
+<Multi_key> <c> <x> <Z> <l>          : "Ꙁ"  UA640  # CYRILLIC CAPITAL LETTER ZEMLYA
+<Multi_key> <c> <x> <z> <l>          : "ꙁ"  UA641  # CYRILLIC SMALL LETTER ZEMLYA
 
 # diacritics
 
@@ -6061,6 +6077,13 @@ include "%L"
 <Multi_key> <c> <c> <minus> <u> : "ӯ"  U04EF  # CYRILLIC SMALL LETTER U WITH MACRON (conflicts)
 <Multi_key> <c> <c> <minus> <W> : "Ѿ"  U047E  # CYRILLIC CAPITAL LETTER OT (conflicts)
 <Multi_key> <c> <c> <minus> <w> : "ѿ"  U047F  # CYRILLIC SMALL LETTER OT (conflicts)
+
+<Multi_key> <c> <c> <minus> <D> : "Ꙣ"  UA662  # CYRILLIC CAPITAL LETTER SOFT DE (conflicts)
+<Multi_key> <c> <c> <minus> <d> : "ꙣ"  UA663  # CYRILLIC SMALL LETTER SOFT DE (conflicts)
+<Multi_key> <c> <c> <minus> <L> : "Ꙥ"  UA664  # CYRILLIC CAPITAL LETTER SOFT EL (conflicts)
+<Multi_key> <c> <c> <minus> <l> : "ꙥ"  UA665  # CYRILLIC SMALL LETTER SOFT EL (conflicts)
+<Multi_key> <c> <c> <minus> <M> : "Ꙧ"  UA666  # CYRILLIC CAPITAL LETTER SOFT EM (conflicts)
+<Multi_key> <c> <c> <minus> <m> : "ꙧ"  UA667  # CYRILLIC SMALL LETTER SOFT EM (conflicts)
 
 <Multi_key> <c> <c> <minus> <G> : "Ғ"  U0492  # CYRILLIC CAPITAL LETTER GHE WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <g> : "ғ"  U0493  # CYRILLIC SMALL LETTER GHE WITH STROKE (conflicts)
@@ -6109,6 +6132,8 @@ include "%L"
 <Multi_key> <c> <c> <comma> <p> : "ԥ"  U0525  # CYRILLIC SMALL LETTER PE WITH DESCENDER (conflicts)
 <Multi_key> <c> <c> <comma> <L> : "Ԯ"  U052E  # CYRILLIC CAPITAL LETTER EL WITH DESCENDER (conflicts)
 <Multi_key> <c> <c> <comma> <l> : "ԯ"  U052F  # CYRILLIC SMALL LETTER EL WITH DESCENDER (conflicts)
+<Multi_key> <c> <c> <comma> <period> <H> : "Ԧ"  U0526  # CYRILLIC CAPITAL LETTER SHHA WITH DESCENDER (conflicts)
+<Multi_key> <c> <c> <comma> <period> <h> : "ԧ"  U0527  # CYRILLIC SMALL LETTER SHHA WITH DESCENDER (conflicts)
 
 <Multi_key> <c> <c> <greater> <comma> <K> : "Ӄ"  U04C3  # CYRILLIC CAPITAL LETTER KA WITH HOOK (conflicts)
 <Multi_key> <c> <c> <greater> <comma> <k> : "ӄ"  U04C4  # CYRILLIC SMALL LETTER KA WITH HOOK (conflicts)
@@ -6155,6 +6180,122 @@ include "%L"
 <Multi_key> <c> <c> <bar> <k> : "ҝ"  U049D  # CYRILLIC SMALL LETTER KA WITH VERTICAL STROKE (conflicts)
 <Multi_key> <c> <x> <bar> <C> <H> : "Ҹ"  U04B8  # CYRILLIC CAPITAL LETTER CHE WITH VERTICAL STROKE
 <Multi_key> <c> <x> <bar> <c> <h> : "ҹ"  U04B9  # CYRILLIC SMALL LETTER CHE WITH VERTICAL STROKE
+
+# (superscripts and subscripts)
+
+<Multi_key> <c> <c> <asciicircum> <underscore> <a> : "𞀰"  U1E030  # MODIFIER LETTER CYRILLIC SMALL A (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <b> : "𞀱"  U1E031  # MODIFIER LETTER CYRILLIC SMALL BE (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <v> : "𞀲"  U1E032  # MODIFIER LETTER CYRILLIC SMALL VE (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <g> : "𞀳"  U1E033  # MODIFIER LETTER CYRILLIC SMALL GHE (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <d> : "𞀴"  U1E034  # MODIFIER LETTER CYRILLIC SMALL DE (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <y> <e> : "𞀵"  U1E035  # MODIFIER LETTER CYRILLIC SMALL IE (conflict)
+<Multi_key> <c> <x> <asciicircum> <underscore> <z> <h> : "𞀶"  U1E036  # MODIFIER LETTER CYRILLIC SMALL ZHE
+<Multi_key> <c> <c> <asciicircum> <underscore> <z> : "𞀷"  U1E037  # MODIFIER LETTER CYRILLIC SMALL ZE (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <i> : "𞀸"  U1E038  # MODIFIER LETTER CYRILLIC SMALL I (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <k> : "𞀹"  U1E039  # MODIFIER LETTER CYRILLIC SMALL KA (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <l> : "𞀺"  U1E03A  # MODIFIER LETTER CYRILLIC SMALL EL (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <m> : "𞀻"  U1E03B  # MODIFIER LETTER CYRILLIC SMALL EM (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <n> : "ᵸ"  U1D78  # MODIFIER LETTER CYRILLIC EN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <underscore> <o> : "𞀼"  U1E03C  # MODIFIER LETTER CYRILLIC SMALL O (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <p> : "𞀽"  U1E03D  # MODIFIER LETTER CYRILLIC SMALL PE (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <r> : "𞀾"  U1E03E  # MODIFIER LETTER CYRILLIC SMALL ER (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <s> : "𞀿"  U1E03F  # MODIFIER LETTER CYRILLIC SMALL ES (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <t> : "𞁀"  U1E040  # MODIFIER LETTER CYRILLIC SMALL TE (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <u> : "𞁁"  U1E041  # MODIFIER LETTER CYRILLIC SMALL U (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <f> : "𞁂"  U1E042  # MODIFIER LETTER CYRILLIC SMALL EF (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <h> : "𞁃"  U1E043  # MODIFIER LETTER CYRILLIC SMALL HA (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <x> : "𞁃"  U1E043  # MODIFIER LETTER CYRILLIC SMALL HA (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <c> : "𞁄"  U1E044  # MODIFIER LETTER CYRILLIC SMALL TSE (conflict)
+<Multi_key> <c> <x> <asciicircum> <underscore> <t> <s> : "𞁄"  U1E044  # MODIFIER LETTER CYRILLIC SMALL TSE
+<Multi_key> <c> <x> <asciicircum> <underscore> <c> <h> : "𞁅"  U1E045  # MODIFIER LETTER CYRILLIC SMALL CHE
+<Multi_key> <c> <x> <asciicircum> <underscore> <s> <h> : "𞁆"  U1E046  # MODIFIER LETTER CYRILLIC SMALL SHA
+<Multi_key> <c> <c> <asciicircum> <underscore> <quotedbl> <Return> : "ꚜ"  UA69C  # MODIFIER LETTER CYRILLIC HARD SIGN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <underscore> <y> <Return> : "𞁇"  U1E047  # MODIFIER LETTER CYRILLIC SMALL YERU (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <y> <Return> : "ꚝ"  UA69D  # MODIFIER LETTER CYRILLIC SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <underscore> <apostrophe> <Return> : "ꚝ"  UA69D  # MODIFIER LETTER CYRILLIC SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <underscore> <e> : "𞁈"  U1E048  # MODIFIER LETTER CYRILLIC SMALL E (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <y> <u> : "𞁉"  U1E049  # MODIFIER LETTER CYRILLIC SMALL YU (conflict)
+<Multi_key> <c> <x> <asciicircum> <underscore> <i> : "𞁌"  U1E04C  # MODIFIER LETTER CYRILLIC SMALL BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <asciicircum> <underscore> <j> : "𞁍"  U1E04D  # MODIFIER LETTER CYRILLIC SMALL JE
+<Multi_key> <c> <c> <asciicircum> <underscore> <comma> <s> : "𞁫"  U1E06B  # MODIFIER LETTER CYRILLIC SMALL ES WITH DESCENDER (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <minus> <y> <y> : "𞁭"  U1E06D  # MODIFIER LETTER CYRILLIC SMALL STRAIGHT U WITH STROKE (conflict)
+<Multi_key> <c> <x> <asciicircum> <underscore> <d> <z> <z> : "𞁊"  U1E04A  # MODIFIER LETTER CYRILLIC SMALL DZZE
+<Multi_key> <c> <x> <asciicircum> <underscore> <e> <e> : "𞁋"  U1E04B  # MODIFIER LETTER CYRILLIC SMALL SCHWA
+
+<Multi_key> <c> <c> <underscore> <a> : "𞁑"  U1E051  # CYRILLIC SUBSCRIPT SMALL LETTER A (conflicts)
+<Multi_key> <c> <c> <underscore> <b> : "𞁒"  U1E052  # CYRILLIC SUBSCRIPT SMALL LETTER BE (conflicts)
+<Multi_key> <c> <c> <underscore> <v> : "𞁓"  U1E053  # CYRILLIC SUBSCRIPT SMALL LETTER VE (conflicts)
+<Multi_key> <c> <c> <underscore> <g> : "𞁔"  U1E054  # CYRILLIC SUBSCRIPT SMALL LETTER GHE (conflicts)
+<Multi_key> <c> <c> <underscore> <d> : "𞁕"  U1E055  # CYRILLIC SUBSCRIPT SMALL LETTER DE (conflicts)
+<Multi_key> <c> <c> <underscore> <y> <e> : "𞁖"  U1E056  # CYRILLIC SUBSCRIPT SMALL LETTER IE (conflicts)
+<Multi_key> <c> <x> <underscore> <z> <h> : "𞁗"  U1E057  # CYRILLIC SUBSCRIPT SMALL LETTER ZHE
+<Multi_key> <c> <c> <underscore> <z> : "𞁘"  U1E058  # CYRILLIC SUBSCRIPT SMALL LETTER ZE (conflicts)
+<Multi_key> <c> <c> <underscore> <i> : "𞁙"  U1E059  # CYRILLIC SUBSCRIPT SMALL LETTER I (conflicts)
+<Multi_key> <c> <c> <underscore> <k> : "𞁚"  U1E05A  # CYRILLIC SUBSCRIPT SMALL LETTER KA (conflicts)
+<Multi_key> <c> <c> <underscore> <l> : "𞁛"  U1E05B  # CYRILLIC SUBSCRIPT SMALL LETTER EL (conflicts)
+<Multi_key> <c> <c> <underscore> <o> : "𞁜"  U1E05C  # CYRILLIC SUBSCRIPT SMALL LETTER O (conflicts)
+<Multi_key> <c> <c> <underscore> <p> : "𞁝"  U1E05D  # CYRILLIC SUBSCRIPT SMALL LETTER PE (conflicts)
+<Multi_key> <c> <c> <underscore> <s> : "𞁞"  U1E05E  # CYRILLIC SUBSCRIPT SMALL LETTER ES (conflicts)
+<Multi_key> <c> <c> <underscore> <u> : "𞁟"  U1E05F  # CYRILLIC SUBSCRIPT SMALL LETTER U (conflicts)
+<Multi_key> <c> <c> <underscore> <f> : "𞁠"  U1E060  # CYRILLIC SUBSCRIPT SMALL LETTER EF (conflicts)
+<Multi_key> <c> <c> <underscore> <h> : "𞁡"  U1E061  # CYRILLIC SUBSCRIPT SMALL LETTER HA (conflicts)
+<Multi_key> <c> <c> <underscore> <x> : "𞁡"  U1E061  # CYRILLIC SUBSCRIPT SMALL LETTER HA (conflicts)
+<Multi_key> <c> <c> <underscore> <c> : "𞁢"  U1E062  # CYRILLIC SUBSCRIPT SMALL LETTER TSE (conflicts)
+<Multi_key> <c> <x> <underscore> <t> <s> : "𞁢"  U1E062  # CYRILLIC SUBSCRIPT SMALL LETTER TSE
+<Multi_key> <c> <x> <underscore> <c> <h> : "𞁣"  U1E063  # CYRILLIC SUBSCRIPT SMALL LETTER CHE
+<Multi_key> <c> <x> <underscore> <s> <h> : "𞁤"  U1E064  # CYRILLIC SUBSCRIPT SMALL LETTER SHA
+<Multi_key> <c> <c> <underscore> <quotedbl> <Return> : "𞁥"  U1E065  # CYRILLIC SUBSCRIPT SMALL LETTER HARD SIGN (conflicts)
+<Multi_key> <c> <c> <underscore> <y> <Return> : "𞁦"  U1E066  # CYRILLIC SUBSCRIPT SMALL LETTER YERU (conflicts)
+<Multi_key> <c> <x> <underscore> <g> <g> : "𞁧"  U1E067  # CYRILLIC SUBSCRIPT SMALL LETTER GHE WITH UPTURN
+<Multi_key> <c> <x> <underscore> <i> : "𞁨"  U1E068  # CYRILLIC SUBSCRIPT SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <underscore> <d> <z> <Return> : "𞁩"  U1E069  # CYRILLIC SUBSCRIPT SMALL LETTER DZE
+<Multi_key> <c> <x> <underscore> <d> <z> <h> : "𞁪"  U1E06A  # CYRILLIC SUBSCRIPT SMALL LETTER DZHE
+
+<Multi_key> <c> <c> <underscore> <asciicircum> <L> : "ᴫ"  U1D2B  # CYRILLIC LETTER SMALL CAPITAL EL (conflicts)
+
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <b> <Return> : "ⷠ"  U2DE0  # COMBINING CYRILLIC LETTER BE (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <v> <Return> : "ⷡ"  U2DE1  # COMBINING CYRILLIC LETTER VE (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <g> <Return> : "ⷢ"  U2DE2  # COMBINING CYRILLIC LETTER GHE (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <d> <Return> : "ⷣ"  U2DE3  # COMBINING CYRILLIC LETTER DE (conflicts)
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <z> <h> <Return> : "ⷤ"  U2DE4  # COMBINING CYRILLIC LETTER ZHE
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <z> <Return> : "ⷥ"  U2DE5  # COMBINING CYRILLIC LETTER ZE (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <k> <Return> : "ⷦ"  U2DE6  # COMBINING CYRILLIC LETTER KA (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <l> <Return> : "ⷧ"  U2DE7  # COMBINING CYRILLIC LETTER EL (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <m> <Return> : "ⷨ"  U2DE8  # COMBINING CYRILLIC LETTER EM (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <n> <Return> : "ⷩ"  U2DE9  # COMBINING CYRILLIC LETTER EN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <o> <Return> : "ⷪ"  U2DEA  # COMBINING CYRILLIC LETTER O (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <p> <Return> : "ⷫ"  U2DEB  # COMBINING CYRILLIC LETTER PE (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <r> <Return> : "ⷬ"  U2DEC  # COMBINING CYRILLIC LETTER ER (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <s> <Return> : "ⷭ"  U2DED  # COMBINING CYRILLIC LETTER ES (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <t> <Return> : "ⷮ"  U2DEE  # COMBINING CYRILLIC LETTER TE (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <h> <Return> : "ⷯ"  U2DEF  # COMBINING CYRILLIC LETTER HA (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <x> <Return> : "ⷯ"  U2DEF  # COMBINING CYRILLIC LETTER HA (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <c> <Return> : "ⷰ"  U2DF0  # COMBINING CYRILLIC LETTER TSE (conflicts)
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <t> <s> <Return> : "ⷰ"  U2DF0  # COMBINING CYRILLIC LETTER TSE
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <c> <h> <Return> : "ⷱ"  U2DF1  # COMBINING CYRILLIC LETTER CHE
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <s> <h> <Return> : "ⷲ"  U2DF2  # COMBINING CYRILLIC LETTER SHA
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <s> <c> <h> <Return> : "ⷳ"  U2DF3  # COMBINING CYRILLIC LETTER SHCHA
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <grave> <f> <Return> : "ⷴ"  U2DF4  # COMBINING CYRILLIC LETTER FITA (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <s> <t> <Return> : "ⷵ"  U2DF5  # COMBINING CYRILLIC LETTER ES-TE (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <a> <Return> : "ⷶ"  U2DF6  # COMBINING CYRILLIC LETTER A (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <y> <e> <Return> : "ⷷ"  U2DF7  # COMBINING CYRILLIC LETTER IE (conflicts)
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <v> <e> <Return> : "ⷺ"  U2DFA  # COMBINING CYRILLIC LETTER YAT
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <y> <u> <Return> : "ⷻ"  U2DFB  # COMBINING CYRILLIC LETTER YU (conflicts)
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <i> <a> <Return> : "ⷼ"  U2DFC  # COMBINING CYRILLIC LETTER IOTIFIED A
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <v> <a> <Return> : "ⷽ"  U2DFD  # COMBINING CYRILLIC LETTER LITTLE YUS
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <v> <o> <Return> : "ⷾ"  U2DFE  # COMBINING CYRILLIC LETTER BIG YUS
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <i> <v> <o> <Return> : "ⷿ"  U2DFF  # COMBINING CYRILLIC LETTER IOTIFIED BIG YUS
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <i> <Return> : "𞂏"  U1E08F  # COMBINING CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <y> <e> <Return> : "ꙴ"  UA674  # COMBINING CYRILLIC LETTER UKRAINIAN IE
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <i> <Return> : "ꙵ"  UA675  # COMBINING CYRILLIC LETTER I (conflicts)
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <y> <i> <Return> : "ꙶ"  UA676  # COMBINING CYRILLIC LETTER YI
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <u> <Return> : "ꙷ"  UA677  # COMBINING CYRILLIC LETTER U (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <quotedbl> <Return> : "ꙸ"  UA678  # COMBINING CYRILLIC LETTER HARD SIGN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <y> <Return> : "ꙹ"  UA679  # COMBINING CYRILLIC LETTER YERU (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <apostrophe> <Return> : "ꙺ"  UA67A  # COMBINING CYRILLIC LETTER SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <w> <Return> : "ꙻ"  UA67B  # COMBINING CYRILLIC LETTER OMEGA (conflicts)
+<Multi_key> <c> <c> <asciicircum> <asciicircum> <f> <Return> : "ꚞ"  UA69E  # COMBINING CYRILLIC LETTER EF (conflicts)
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <i> <e> <Return> : "ꚟ"  UA69F  # COMBINING CYRILLIC LETTER IOTIFIED E
 
 # (g/G = Glagolitic)
 
