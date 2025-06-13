@@ -14894,6 +14894,7 @@ include "%L"
 <Multi_key> <asterisk> <Multi_key> <quotedbl>       : "⍣"  U2363  # APL FUNCTIONAL SYMBOL STAR DIAERESIS
 <Multi_key> <minus> <Multi_key> <quotedbl>          : "⚍"  U268D  # DIGRAM FOR LESSER YIN
 <Multi_key> <slash> <Multi_key> <quotedbl>          : "ツ"  U30C4  # KATAKANA LETTER TU
+<Multi_key> <C> <Multi_key> <quotedbl>              : "ᑥ"  U1465  # CANADIAN SYLLABICS NASKAPI TWAA
 <Multi_key> <E> <Multi_key> <quotedbl>              : "Ӭ"  U04EC  # CYRILLIC CAPITAL LETTER E WITH DIAERESIS
 <Multi_key> <e> <Multi_key> <quotedbl>              : "ӭ"  U04ED  # CYRILLIC SMALL LETTER E WITH DIAERESIS
 <Multi_key> <e> <V> <Multi_key> <quotedbl>          : "Ӛ"  U04DA  # CYRILLIC CAPITAL LETTER SCHWA WITH DIAERESIS
@@ -14909,6 +14910,7 @@ include "%L"
 <Multi_key> <4> <Multi_key> <quotedbl>              : "ӵ"  U04F5  # CYRILLIC SMALL LETTER CHE WITH DIAERESIS
 <Multi_key> <8> <Multi_key> <quotedbl>              : "ꙭ"  UA66D  # CYRILLIC SMALL LETTER DOUBLE MONOCULAR O
 <Multi_key> <O> <O> <Multi_key> <quotedbl>          : "Ꙭ"  UA66C  # CYRILLIC CAPITAL LETTER DOUBLE MONOCULAR O
+<Multi_key> <O> <plus> <Multi_key> <quotedbl>       : "ꙮ"  UA66E  # CYRILLIC LETTER MULTIOCULAR O
 
 <Multi_key> <O> <Multi_key> <minus> <quotedbl>      : "Ӫ"  U04EA  # CYRILLIC CAPITAL LETTER BARRED O WITH DIAERESIS
 <Multi_key> <o> <Multi_key> <minus> <quotedbl>      : "ӫ"  U04EB  # CYRILLIC SMALL LETTER BARRED O WITH DIAERESIS
@@ -14918,7 +14920,8 @@ include "%L"
 <Multi_key> <O> <Multi_key> <slash> <quotedbl>      : "㋡"  U32E1  # CIRCLED KATAKANA TU
 <Multi_key> <O> <Multi_key> <parenleft> <quotedbl>  : "☹"  U2639  # WHITE FROWNING FACE
 <Multi_key> <O> <Multi_key> <parenright> <quotedbl> : "☺"  U263A  # WHITE SMILING FACE
-<Multi_key> <O> <Multi_key> <T> <X>                 : "웃"  UC6C3  # HANGUL SYLLABLE US
+<Multi_key> <O> <Multi_key> <T> <X>                 : "𖨆"  U16A06  # BAMUM LETTER PHASE-F EE
+<Multi_key> <O> <Multi_key> <T> <Y>                 : "웃"  UC6C3  # HANGUL SYLLABLE US
 
 ###############
 # Hieroglyphs #
@@ -14957,6 +14960,7 @@ include "%L"
 <Multi_key> <bracketright> <q> <u> <o> <t> <e> : "𓁏"  U1304F  # EGYPTIAN HIEROGLYPH A070 ("QUOTE")
 <Multi_key> <bracketright> <s> <i> <t> : "𓀻"  U1303B  # EGYPTIAN HIEROGLYPH A050 (SIT) (actually noble)
 <Multi_key> <bracketright> <s> <k> <i> <p> : "𓀪"  U1302A  # EGYPTIAN HIEROGLYPH A037 (SKIP) (actually brew)
+<Multi_key> <bracketright> <s> <l> <e> <e> <p> : "𓀿"  U1303F  # EGYPTIAN HIEROGLYPH A054 (SLEEP)
 <Multi_key> <bracketright> <s> <t> <a> <b> : "𓀑"  U13011  # EGYPTIAN HIEROGLYPH A014A (STAB)
 <Multi_key> <bracketright> <s> <w> <e> <a> <r> : "𓀊"  U1300A  # EGYPTIAN HIEROGLYPH A008 (SWEAR) (actually rejoicing)
 <Multi_key> <bracketright> <t> <r> <a> <v> <e> <l> : "𓀦"  U13026  # EGYPTIAN HIEROGLYPH A033 (TRAVEL)
@@ -15066,7 +15070,7 @@ include "%L"
 <Multi_key> <bracketright> <q> <u> <a> <i> <l> <Return> : "𓅱"  U13171  # EGYPTIAN HIEROGLYPH G043 (QUAIL)
 <Multi_key> <bracketright> <q> <u> <a> <i> <l> <s> : "𓅳"  U13173  # EGYPTIAN HIEROGLYPH G044 (QUAILS)
 <Multi_key> <bracketright> <r> <a> <m> : "𓃝"  U130DD  # EGYPTIAN HIEROGLYPH E010 (RAM)
-<Multi_key> <bracketright> <s> <c> <a> <r> <a> <b> : "𓆤"  U131A4  # EGYPTIAN HIEROGLYPH L002 (SCARAB)
+<Multi_key> <bracketright> <s> <c> <a> <r> <a> <b> : "𓆣"  U131A3  # EGYPTIAN HIEROGLYPH L001 (SCARAB)
 <Multi_key> <bracketright> <s> <c> <o> <r> <p> : "𓆫"  U131AB  # EGYPTIAN HIEROGLYPH L007 (SCORPION)
 <Multi_key> <bracketright> <s> <h> <a> <g> : "𓅧"  U13167  # EGYPTIAN HIEROGLYPH G035 (SHAG)
 <Multi_key> <bracketright> <s> <n> <a> <k> <e> : "𓆙"  U13199  # EGYPTIAN HIEROGLYPH I014 (SNAKE)
@@ -15293,12 +15297,28 @@ include "%L"
 <Multi_key> <braceright> <m> <o> <b> <i> <l> <e> : "𔕀"  U14540  # ANATOLIAN HIEROGLYPH A285 (MOBILE)
 <Multi_key> <braceright> <p> <e> <n> : "𔕄"  U14544  # ANATOLIAN HIEROGLYPH A289 (PEN)
 
-# (plus a few Phaistos disc signs too)
+# (plus a few phaistos disc, cuneiform and bamum logograms in the same namespace)
 
 <Multi_key> <braceright> <b> <a> <l> <d> : "𐇒"  U101D2  # PHAISTOS DISC SIGN TATTOOED HEAD (BALD)
 <Multi_key> <braceright> <c> <o> <o> <k> <i> <e> : "𐇛"  U101DB  # PHAISTOS DISC SIGN SHIELD (COOKIE)
 <Multi_key> <braceright> <p> <u> <n> <k> : "𐇑"  U101D1  # PHAISTOS DISC SIGN PLUMED HEAD (PUNK)
 <Multi_key> <braceright> <w> <a> <l> <k> : "𐇐"  U101D0  # PHAISTOS DISC SIGN PEDESTRIAN (WALK)
+
+<Multi_key> <braceright> <j> <o> <u> <s> <t> : "𒈙"  U12219  # CUNEIFORM SIGN LUGAL OPPOSING LUGAL (JOUST)
+<Multi_key> <braceright> <w> <a> <f> <f> <l> <e> : "𒐫"  U1242B  # CUNEIFORM NUMERIC SIGN NINE SHAR2 (WAFFLE)
+<Multi_key> <braceright> <w> <m> <i> <l> <l> : "𒅄"  U12144  # CUNEIFORM SIGN IDIM OVER IDIM SQUARED (WINDMILL)
+<Multi_key> <braceright> <x> <m> <a> <s> : "𒀱"  U12031  # CUNEIFORM SIGN AN PLUS NAGA SQUARED (XMAS)
+
+<Multi_key> <braceright> <b> <o> <o> <b> <s> : "𖦴"  U169B4  # BAMUM LETTER PHASE-E FUE (BOOBS)
+<Multi_key> <braceright> <c> <u> <p> : "𖠚"  U1681A  # BAMUM LETTER PHASE-A MAEKEUP (CUP)
+<Multi_key> <braceright> <c> <y> <c> <l> <o> <p> : "𖨆"  U16A06  # BAMUM LETTER PHASE-F EE (CYCLOPS)
+<Multi_key> <braceright> <f> <a> <n> : "𖣘"  U168D8  # BAMUM LETTER PHASE-C MA NSIEE (FAN)
+<Multi_key> <braceright> <h> <p> <h> <o> <n> <e> : "𖧊"  U169CA  # BAMUM LETTER PHASE-E PUAQ (HEADPHONES)
+<Multi_key> <braceright> <j> <e> <w> <i> <s> <h> : "𖢹"  U168B9  # BAMUM LETTER PHASE-C NTEUNGBA (JEWISH)
+<Multi_key> <braceright> <m> <a> <n> : "𖠋"  U1680B  # BAMUM LETTER PHASE-A MAEMBGBIEE (MAN)
+<Multi_key> <braceright> <M> <a> <n> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (ISLE OF MAN)
+<Multi_key> <braceright> <w> <i> <r> <e> : "𖡎"  U1684E  # BAMUM LETTER PHASE-A MAEM (WIRE)
+
 
 ####################
 # Geometric shapes #
