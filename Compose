@@ -1004,6 +1004,9 @@ include "%L"
 <Multi_key> <N> <bar> : "Ꞑ"  UA790  # LATIN CAPITAL LETTER N WITH DESCENDER
 <Multi_key> <n> <bar> : "ꞑ"  UA791  # LATIN SMALL LETTER N WITH DESCENDER
 
+<Multi_key> <a> <bar> : "ꬰ"  UAB30  # LATIN SMALL LETTER BARRED ALPHA
+<Multi_key> <e> <bar> : "ꬳ"  UAB33  # LATIN SMALL LETTER BARRED E
+
 <Multi_key> <u> <v> <A> : "Ȃ"  U0202  # LATIN CAPITAL LETTER A WITH INVERTED BREVE
 <Multi_key> <u> <v> <a> : "ȃ"  U0203  # LATIN SMALL LETTER A WITH INVERTED BREVE
 <Multi_key> <u> <v> <E> : "Ȇ"  U0206  # LATIN CAPITAL LETTER E WITH INVERTED BREVE
@@ -1179,6 +1182,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <a> <h> : "ᵅ"  U1D45  # MODIFIER LETTER SMALL ALPHA
 <Multi_key> <asciicircum> <underscore> <Multi_key> <a> <v> : "ᵄ"  U1D44  # MODIFIER LETTER SMALL TURNED A
 <Multi_key> <asciicircum> <underscore> <Multi_key> <a> <less> : "ᶛ"  U1D9B  # MODIFIER LETTER SMALL TURNED ALPHA
+<Multi_key> <asciicircum> <underscore> <Multi_key> <B> <bar> : "ᴯ"  U1D2F  # MODIFIER LETTER CAPITAL BARRED B
 <Multi_key> <asciicircum> <underscore> <Multi_key> <b> <h> : "ᵝ"  U1D5D  # MODIFIER LETTER SMALL BETA
 <Multi_key> <asciicircum> <underscore> <Multi_key> <c> <at> : "ᶝ"  U1D9D  # MODIFIER LETTER SMALL C WITH CURL
 <Multi_key> <asciicircum> <underscore> <Multi_key> <d> <h> : "ᶞ"  U1D9E  # MODIFIER LETTER SMALL ETH
@@ -1285,6 +1289,7 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <Z> : "ᴢ" U1D22   # LATIN LETTER SMALL CAPITAL Z (conflicts)
 
 <Multi_key> <underscore> <asciicircum> <Multi_key> <A> <E> : "ᴁ" U1D01   # LATIN LETTER SMALL CAPITAL AE (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <B> <bar> : "ᴃ"  U1D03  # LATIN LETTER SMALL CAPITAL BARRED B (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <D> <H> : "ᴆ" U1D06   # LATIN LETTER SMALL CAPITAL ETH (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <slash> <I> : "ᵻ"  U1D7B  # LATIN SMALL CAPITAL LETTER I WITH STROKE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <L> <slash> : "ᴌ" U1D0C   # LATIN LETTER SMALL CAPITAL L WITH STROKE (conflicts)
@@ -3225,9 +3230,9 @@ include "%L"
 
 # default glyph types are (c = characters x = extra characters # = numbers ; = punctuation)
 
-############################################################################
-# (a) Arabic (and Mandaic, Osmanya, Syriac, Neo-Tifinagh, Thaana & Yezidi) #
-############################################################################
+##############################################################################################
+# (a) Arabic (and Hatran, Mandaic, Nabatean, Osmanya, Syriac, Neo-Tifinagh, Thaana & Yezidi) #
+##############################################################################################
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -3310,6 +3315,38 @@ include "%L"
 <Multi_key> <a> <numbersign> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <numbersign> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
 
+# (H = Hatran)
+
+<Multi_key> <a> <H> <a> : "𐣠"  U108E0  # HATRAN LETTER ALEPH
+<Multi_key> <a> <H> <apostrophe> : "𐣠"  U108E0  # HATRAN LETTER ALEPH
+<Multi_key> <a> <H> <b> : "𐣡"  U108E1  # HATRAN LETTER BETH
+<Multi_key> <a> <H> <g> : "𐣢"  U108E2  # HATRAN LETTER GIMEL
+<Multi_key> <a> <H> <d> : "𐣣"  U108E3  # HATRAN LETTER DALETH-RESH
+<Multi_key> <a> <H> <r> : "𐣣"  U108E3  # HATRAN LETTER DALETH-RESH
+<Multi_key> <a> <H> <h> : "𐣤"  U108E4  # HATRAN LETTER HE
+<Multi_key> <a> <H> <w> : "𐣥"  U108E5  # HATRAN LETTER WAW
+<Multi_key> <a> <H> <z> : "𐣦"  U108E6  # HATRAN LETTER ZAYN
+<Multi_key> <a> <H> <H> : "𐣧"  U108E7  # HATRAN LETTER HETH
+<Multi_key> <a> <H> <T> : "𐣨"  U108E8  # HATRAN LETTER TETH
+<Multi_key> <a> <H> <y> : "𐣩"  U108E9  # HATRAN LETTER YODH
+<Multi_key> <a> <H> <k> : "𐣪"  U108EA  # HATRAN LETTER KAPH
+<Multi_key> <a> <H> <l> : "𐣫"  U108EB  # HATRAN LETTER LAMEDH
+<Multi_key> <a> <H> <m> : "𐣬"  U108EC  # HATRAN LETTER MEM
+<Multi_key> <a> <H> <n> : "𐣭"  U108ED  # HATRAN LETTER NUN
+<Multi_key> <a> <H> <s> : "𐣮"  U108EE  # HATRAN LETTER SAMEKH
+<Multi_key> <a> <H> <grave> : "𐣯"  U108EF  # HATRAN LETTER AYN
+<Multi_key> <a> <H> <p> : "𐣰"  U108F0  # HATRAN LETTER PE
+<Multi_key> <a> <H> <Z> : "𐣱"  U108F1  # HATRAN LETTER SADHE
+<Multi_key> <a> <H> <q> : "𐣲"  U108F2  # HATRAN LETTER QOPH
+<Multi_key> <a> <H> <S> : "𐣴"  U108F4  # HATRAN LETTER SHIN
+<Multi_key> <a> <H> <t> : "𐣵"  U108F5  # HATRAN LETTER TAW
+
+<Multi_key> <a> <H> <numbersign> <1> <space> : "𐣻"  U108FB  # HATRAN NUMBER ONE
+<Multi_key> <a> <H> <numbersign> <5> : "𐣼"  U108FC  # HATRAN NUMBER FIVE
+<Multi_key> <a> <H> <numbersign> <1> <0> <space> : "𐣽"  U108FD  # HATRAN NUMBER TEN
+<Multi_key> <a> <H> <numbersign> <2> <0> : "𐣾"  U108FE  # HATRAN NUMBER TWENTY
+<Multi_key> <a> <H> <numbersign> <1> <0> <0> : "𐣿"  U108FF  # HATRAN NUMBER ONE HUNDRED
+
 # (m = Mandaic)
 
 <Multi_key> <a> <m> <a> : "ࡀ" U0840   # MANDAIC LETTER HALQA
@@ -3343,6 +3380,52 @@ include "%L"
 <Multi_key> <a> <m> <period> <Return> : "࡛" U085B   # MANDAIC GEMINATION MARK
 
 <Multi_key> <a> <m> <period> <o> : "࡞" U085E   # MANDAIC PUNCTUATION
+
+# (N = Nabatean)
+
+<Multi_key> <a> <N> <less> <a> : "𐢀"  U10880  # NABATAEAN LETTER FINAL ALEPH
+<Multi_key> <a> <N> <less> <apostrophe> : "𐢀"  U10880  # NABATAEAN LETTER FINAL ALEPH
+<Multi_key> <a> <N> <a> : "𐢁"  U10881  # NABATAEAN LETTER ALEPH
+<Multi_key> <a> <N> <apostrophe> : "𐢁"  U10881  # NABATAEAN LETTER ALEPH
+<Multi_key> <a> <N> <less> <b> : "𐢂"  U10882  # NABATAEAN LETTER FINAL BETH
+<Multi_key> <a> <N> <b> : "𐢃"  U10883  # NABATAEAN LETTER BETH
+<Multi_key> <a> <N> <g> : "𐢄"  U10884  # NABATAEAN LETTER GIMEL
+<Multi_key> <a> <N> <d> : "𐢅"  U10885  # NABATAEAN LETTER DALETH
+<Multi_key> <a> <N> <less> <h> : "𐢆"  U10886  # NABATAEAN LETTER FINAL HE
+<Multi_key> <a> <N> <h> : "𐢇"  U10887  # NABATAEAN LETTER HE
+<Multi_key> <a> <N> <w> : "𐢈"  U10888  # NABATAEAN LETTER WAW
+<Multi_key> <a> <N> <z> : "𐢉"  U10889  # NABATAEAN LETTER ZAYIN
+<Multi_key> <a> <N> <H> : "𐢊"  U1088A  # NABATAEAN LETTER HETH
+<Multi_key> <a> <N> <T> : "𐢋"  U1088B  # NABATAEAN LETTER TETH
+<Multi_key> <a> <N> <less> <y> : "𐢌"  U1088C  # NABATAEAN LETTER FINAL YODH
+<Multi_key> <a> <N> <y> : "𐢍"  U1088D  # NABATAEAN LETTER YODH
+<Multi_key> <a> <N> <less> <k> : "𐢎"  U1088E  # NABATAEAN LETTER FINAL KAPH
+<Multi_key> <a> <N> <k> : "𐢏"  U1088F  # NABATAEAN LETTER KAPH
+<Multi_key> <a> <N> <less> <l> : "𐢐"  U10890  # NABATAEAN LETTER FINAL LAMEDH
+<Multi_key> <a> <N> <l> : "𐢑"  U10891  # NABATAEAN LETTER LAMEDH
+<Multi_key> <a> <N> <less> <m> : "𐢒"  U10892  # NABATAEAN LETTER FINAL MEM
+<Multi_key> <a> <N> <m> : "𐢓"  U10893  # NABATAEAN LETTER MEM
+<Multi_key> <a> <N> <less> <n> : "𐢔"  U10894  # NABATAEAN LETTER FINAL NUN
+<Multi_key> <a> <N> <n> : "𐢕"  U10895  # NABATAEAN LETTER NUN
+<Multi_key> <a> <N> <s> : "𐢖"  U10896  # NABATAEAN LETTER SAMEKH
+<Multi_key> <a> <N> <grave> : "𐢗"  U10897  # NABATAEAN LETTER AYIN
+<Multi_key> <a> <N> <p> : "𐢘"  U10898  # NABATAEAN LETTER PE
+<Multi_key> <a> <N> <Z> : "𐢙"  U10899  # NABATAEAN LETTER SADHE
+<Multi_key> <a> <N> <q> : "𐢚"  U1089A  # NABATAEAN LETTER QOPH
+<Multi_key> <a> <N> <r> : "𐢛"  U1089B  # NABATAEAN LETTER RESH
+<Multi_key> <a> <N> <less> <S> : "𐢜"  U1089C  # NABATAEAN LETTER FINAL SHIN
+<Multi_key> <a> <N> <S> : "𐢝"  U1089D  # NABATAEAN LETTER SHIN
+<Multi_key> <a> <N> <t> : "𐢞"  U1089E  # NABATAEAN LETTER TAW
+
+<Multi_key> <a> <N> <numbersign> <1> <space> : "𐢧"  U108A7  # NABATAEAN NUMBER ONE
+<Multi_key> <a> <N> <numbersign> <2> <space> : "𐢨"  U108A8  # NABATAEAN NUMBER TWO
+<Multi_key> <a> <N> <numbersign> <3> : "𐢩"  U108A9  # NABATAEAN NUMBER THREE
+<Multi_key> <a> <N> <numbersign> <4> : "𐢪"  U108AA  # NABATAEAN NUMBER FOUR
+<Multi_key> <a> <N> <numbersign> <X> : "𐢫"  U108AB  # NABATAEAN CRUCIFORM NUMBER FOUR
+<Multi_key> <a> <N> <numbersign> <5> : "𐢬"  U108AC  # NABATAEAN NUMBER FIVE
+<Multi_key> <a> <N> <numbersign> <1> <0> <space> : "𐢭"  U108AD  # NABATAEAN NUMBER TEN
+<Multi_key> <a> <N> <numbersign> <2> <0> : "𐢮"  U108AE  # NABATAEAN NUMBER TWENTY
+<Multi_key> <a> <N> <numbersign> <1> <0> <0> : "𐢯"  U108AF  # NABATAEAN NUMBER ONE HUNDRED
 
 # (o = Osmanya)
 
@@ -6089,6 +6172,8 @@ include "%L"
 <Multi_key> <c> <c> <minus> <g> : "ғ"  U0493  # CYRILLIC SMALL LETTER GHE WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <K> : "Ҟ"  U049E  # CYRILLIC CAPITAL LETTER KA WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <k> : "ҟ"  U049F  # CYRILLIC SMALL LETTER KA WITH STROKE (conflicts)
+<Multi_key> <c> <c> <minus> <O> : "Ө"  U04E8  # CYRILLIC CAPITAL LETTER BARRED O (conflicts)
+<Multi_key> <c> <c> <minus> <o> : "ө"  U04E9  # CYRILLIC SMALL LETTER BARRED O (conflicts)
 <Multi_key> <c> <c> <minus> <Y> <Y> : "Ұ"  U04B0  # CYRILLIC CAPITAL LETTER STRAIGHT U WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <y> <y> : "ұ"  U04B1  # CYRILLIC SMALL LETTER STRAIGHT U WITH STROKE (conflicts)
 <Multi_key> <c> <c> <minus> <H> : "Ӿ"  U04FE  # CYRILLIC CAPITAL LETTER HA WITH STROKE (conflicts)
@@ -6221,6 +6306,7 @@ include "%L"
 <Multi_key> <c> <c> <asciicircum> <underscore> <minus> <y> <y> : "𞁭"  U1E06D  # MODIFIER LETTER CYRILLIC SMALL STRAIGHT U WITH STROKE (conflict)
 <Multi_key> <c> <x> <asciicircum> <underscore> <d> <z> <z> : "𞁊"  U1E04A  # MODIFIER LETTER CYRILLIC SMALL DZZE
 <Multi_key> <c> <x> <asciicircum> <underscore> <e> <e> : "𞁋"  U1E04B  # MODIFIER LETTER CYRILLIC SMALL SCHWA
+<Multi_key> <c> <c> <asciicircum> <underscore> <minus> <o> : "𞁎"  U1E04E  # MODIFIER LETTER CYRILLIC SMALL BARRED O (conflicts)
 
 <Multi_key> <c> <c> <underscore> <a> : "𞁑"  U1E051  # CYRILLIC SUBSCRIPT SMALL LETTER A (conflicts)
 <Multi_key> <c> <c> <underscore> <b> : "𞁒"  U1E052  # CYRILLIC SUBSCRIPT SMALL LETTER BE (conflicts)
@@ -7354,7 +7440,6 @@ include "%L"
 <Multi_key> <g> <c> <p> : "π"  U03C0   # GREEK SMALL LETTER PI
 <Multi_key> <g> <c> <r> : "ρ"  U03C1   # GREEK SMALL LETTER RHO
 <Multi_key> <g> <c> <greater> <s> : "ς"  U03C2   # GREEK SMALL LETTER FINAL SIGMA
-<Multi_key> <g> <x> <s> : "ς"  U03C2   # GREEK SMALL LETTER FINAL SIGMA (alternatively gc>s)
 <Multi_key> <g> <c> <s> : "σ"  U03C3   # GREEK SMALL LETTER SIGMA
 <Multi_key> <g> <c> <t> : "τ"  U03C4   # GREEK SMALL LETTER TAU
 <Multi_key> <g> <c> <y> : "υ"  U03C5   # GREEK SMALL LETTER UPSILON
@@ -7368,16 +7453,29 @@ include "%L"
 
 <Multi_key> <g> <semicolon> <question>   : ";"  U037E   # GREEK QUESTION MARK
 
-<Multi_key> <g> <c> <W>     : "Ϝ"  U03DC   # GREEK LETTER DIGAMMA
+<Multi_key> <g> <x> <H>     : "Ͱ"  U0370  # GREEK CAPITAL LETTER HETA
+<Multi_key> <g> <x> <h>     : "ͱ"  U0371  # GREEK SMALL LETTER HETA
 <Multi_key> <g> <c> <Q>     : "Ϙ"  U03D8   # GREEK LETTER ARCHAIC KOPPA
-<Multi_key> <g> <x> <T> <S> : "Ͳ"  U0372   # GREEK CAPITAL LETTER ARCHAIC SAMPI
-<Multi_key> <g> <c> <w>     : "ϝ"  U03DD   # GREEK SMALL LETTER DIGAMMA
 <Multi_key> <g> <c> <q>     : "ϙ"  U03D9   # GREEK SMALL LETTER ARCHAIC KOPPA
+<Multi_key> <g> <x> <S> <M> : "Ϻ"  U03FA   # GREEK CAPITAL LETTER SAN
+<Multi_key> <g> <x> <s> <m> : "ϻ"  U03FB   # GREEK SMALL LETTER SAN
+<Multi_key> <g> <x> <T> <S> : "Ͳ"  U0372   # GREEK CAPITAL LETTER ARCHAIC SAMPI
 <Multi_key> <g> <x> <t> <s> : "ͳ"  U0373   # GREEK SMALL LETTER ARCHAIC SAMPI
+<Multi_key> <g> <c> <W>     : "Ϝ"  U03DC   # GREEK LETTER DIGAMMA
+<Multi_key> <g> <c> <w>     : "ϝ"  U03DD   # GREEK SMALL LETTER DIGAMMA
 
+<Multi_key> <g> <c> <J>     : "Ϳ"  U037F   # GREEK CAPITAL LETTER YOT
+<Multi_key> <g> <c> <j>     : "ϳ"  U03F3   # GREEK LETTER YOT
+<Multi_key> <g> <x> <S> <H> : "Ϸ"  U03F7   # GREEK CAPITAL LETTER SHO
+<Multi_key> <g> <x> <s> <h> : "ϸ"  U03F8   # GREEK SMALL LETTER SHO
+<Multi_key> <g> <x> <T> <R> : "𐆠"  U101A0  # GREEK SYMBOL TAU RHO
+
+<Multi_key> <g> <numbersign> <W> : "Ϛ"  U03DA  # GREEK LETTER STIGMA
 <Multi_key> <g> <numbersign> <w> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
 <Multi_key> <g> <numbersign> <6> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
+<Multi_key> <g> <numbersign> <Q> : "Ϟ"  U03DE   # GREEK LETTER KOPPA
 <Multi_key> <g> <numbersign> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
+<Multi_key> <g> <numbersign> <S> : "Ϡ"  U03E0  # GREEK LETTER SAMPI
 <Multi_key> <g> <numbersign> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
 
 # diacritics
@@ -8559,9 +8657,9 @@ include "%L"
 <Multi_key> <G> <k> <underscore> <h> : "ⴤ" U2D24   # GEORGIAN SMALL LETTER HAR (ẖ)
 <Multi_key> <G> <k> <minus> <o> : "ⴥ" U2D25   # GEORGIAN SMALL LETTER HOE (ō)
 
-#######################################################################
-# (h) Hebrew (and Aramaic, Lydian, Phoenician, Samaritan & Ugaritic ) #
-#######################################################################
+###########################################################################################
+# (h) Hebrew (and Aramaic, Elymaic, Lydian, Palmyrene, Phoenician, Samaritan & Ugaritic ) #
+###########################################################################################
 
 <Multi_key> <h> <c> <a>        : "א"  U05D0   # HEBREW LETTER ALEF
 <Multi_key> <h> <c> <apostrophe> : "א"  U05D0   # HEBREW LETTER ALEF
@@ -8758,6 +8856,33 @@ include "%L"
 <Multi_key> <h> <A> <1> <0> <0> <0> <Return> : "𐡞"  U1085E  # IMPERIAL ARAMAIC NUMBER ONE THOUSAND
 <Multi_key> <h> <A> <1> <0> <0> <0> <0> : "𐡟"  U1085F  # IMPERIAL ARAMAIC NUMBER TEN THOUSAND
 
+# (E = Elymaic)
+
+<Multi_key> <h> <E> <a> : "𐿠"  U10FE0  # ELYMAIC LETTER ALEPH
+<Multi_key> <h> <E> <apostrophe> : "𐿠"  U10FE0  # ELYMAIC LETTER ALEPH
+<Multi_key> <h> <E> <b> : "𐿡"  U10FE1  # ELYMAIC LETTER BETH
+<Multi_key> <h> <E> <g> : "𐿢"  U10FE2  # ELYMAIC LETTER GIMEL
+<Multi_key> <h> <E> <d> : "𐿣"  U10FE3  # ELYMAIC LETTER DALETH
+<Multi_key> <h> <E> <h> : "𐿤"  U10FE4  # ELYMAIC LETTER HE
+<Multi_key> <h> <E> <w> : "𐿥"  U10FE5  # ELYMAIC LETTER WAW
+<Multi_key> <h> <E> <z> : "𐿦"  U10FE6  # ELYMAIC LETTER ZAYIN
+<Multi_key> <h> <E> <H> : "𐿧"  U10FE7  # ELYMAIC LETTER HETH
+<Multi_key> <h> <E> <T> : "𐿨"  U10FE8  # ELYMAIC LETTER TETH
+<Multi_key> <h> <E> <y> : "𐿩"  U10FE9  # ELYMAIC LETTER YODH
+<Multi_key> <h> <E> <k> : "𐿪"  U10FEA  # ELYMAIC LETTER KAPH
+<Multi_key> <h> <E> <l> : "𐿫"  U10FEB  # ELYMAIC LETTER LAMEDH
+<Multi_key> <h> <E> <m> : "𐿬"  U10FEC  # ELYMAIC LETTER MEM
+<Multi_key> <h> <E> <n> : "𐿭"  U10FED  # ELYMAIC LETTER NUN
+<Multi_key> <h> <E> <s> : "𐿮"  U10FEE  # ELYMAIC LETTER SAMEKH
+<Multi_key> <h> <E> <grave> : "𐿯"  U10FEF  # ELYMAIC LETTER AYIN
+<Multi_key> <h> <E> <p> : "𐿰"  U10FF0  # ELYMAIC LETTER PE
+<Multi_key> <h> <E> <Z> : "𐿱"  U10FF1  # ELYMAIC LETTER SADHE
+<Multi_key> <h> <E> <q> : "𐿲"  U10FF2  # ELYMAIC LETTER QOPH
+<Multi_key> <h> <E> <r> : "𐿳"  U10FF3  # ELYMAIC LETTER RESH
+<Multi_key> <h> <E> <S> : "𐿴"  U10FF4  # ELYMAIC LETTER SHIN
+<Multi_key> <h> <E> <t> : "𐿵"  U10FF5  # ELYMAIC LETTER TAW
+<Multi_key> <h> <E> <Multi_key> <z> <y> : "𐿶"  U10FF6  # ELYMAIC LIGATURE ZAYIN-YODH
+
 # (l = Lydian)
 
 <Multi_key> <h> <l> <a> : "𐤠"  U10920  # LYDIAN LETTER A
@@ -8827,6 +8952,41 @@ include "%L"
 <Multi_key> <h> <p> <1> <0> <Return> : "𐤗" U10917   # PHOENICIAN NUMBER TEN
 <Multi_key> <h> <p> <2> <0>      : "𐤘" U10918   # PHOENICIAN NUMBER TWENTY
 <Multi_key> <h> <p> <1> <0> <0>  : "𐤙" U10919   # PHOENICIAN NUMBER ONE HUNDRED
+
+# (P = Palmyrene)
+
+<Multi_key> <h> <P> <a> : "𐡠"  U10860  # PALMYRENE LETTER ALEPH
+<Multi_key> <h> <P> <apostrophe> : "𐡠"  U10860  # PALMYRENE LETTER ALEPH
+<Multi_key> <h> <P> <b> : "𐡡"  U10861  # PALMYRENE LETTER BETH
+<Multi_key> <h> <P> <g> : "𐡢"  U10862  # PALMYRENE LETTER GIMEL
+<Multi_key> <h> <P> <d> : "𐡣"  U10863  # PALMYRENE LETTER DALETH
+<Multi_key> <h> <P> <h> : "𐡤"  U10864  # PALMYRENE LETTER HE
+<Multi_key> <h> <P> <w> : "𐡥"  U10865  # PALMYRENE LETTER WAW
+<Multi_key> <h> <P> <z> : "𐡦"  U10866  # PALMYRENE LETTER ZAYIN
+<Multi_key> <h> <P> <H> : "𐡧"  U10867  # PALMYRENE LETTER HETH
+<Multi_key> <h> <P> <T> : "𐡨"  U10868  # PALMYRENE LETTER TETH
+<Multi_key> <h> <P> <y> : "𐡩"  U10869  # PALMYRENE LETTER YODH
+<Multi_key> <h> <P> <k> : "𐡪"  U1086A  # PALMYRENE LETTER KAPH
+<Multi_key> <h> <P> <l> : "𐡫"  U1086B  # PALMYRENE LETTER LAMEDH
+<Multi_key> <h> <P> <m> : "𐡬"  U1086C  # PALMYRENE LETTER MEM
+<Multi_key> <h> <P> <less> <n> : "𐡭"  U1086D  # PALMYRENE LETTER FINAL NUN
+<Multi_key> <h> <P> <n> : "𐡮"  U1086E  # PALMYRENE LETTER NUN
+<Multi_key> <h> <P> <s> : "𐡯"  U1086F  # PALMYRENE LETTER SAMEKH
+<Multi_key> <h> <P> <grave> : "𐡰"  U10870  # PALMYRENE LETTER AYIN
+<Multi_key> <h> <P> <p> : "𐡱"  U10871  # PALMYRENE LETTER PE
+<Multi_key> <h> <P> <Z> : "𐡲"  U10872  # PALMYRENE LETTER SADHE
+<Multi_key> <h> <P> <q> : "𐡳"  U10873  # PALMYRENE LETTER QOPH
+<Multi_key> <h> <P> <r> : "𐡴"  U10874  # PALMYRENE LETTER RESH
+<Multi_key> <h> <P> <S> : "𐡵"  U10875  # PALMYRENE LETTER SHIN
+<Multi_key> <h> <P> <t> : "𐡶"  U10876  # PALMYRENE LETTER TAW
+
+<Multi_key> <h> <P> <numbersign> <1> <space> : "𐡹"  U10879  # PALMYRENE NUMBER ONE
+<Multi_key> <h> <P> <numbersign> <2> <space> : "𐡺"  U1087A  # PALMYRENE NUMBER TWO
+<Multi_key> <h> <P> <numbersign> <3> : "𐡻"  U1087B  # PALMYRENE NUMBER THREE
+<Multi_key> <h> <P> <numbersign> <4> : "𐡼"  U1087C  # PALMYRENE NUMBER FOUR
+<Multi_key> <h> <P> <numbersign> <5> : "𐡽"  U1087D  # PALMYRENE NUMBER FIVE
+<Multi_key> <h> <P> <numbersign> <1> <0> : "𐡾"  U1087E  # PALMYRENE NUMBER TEN
+<Multi_key> <h> <P> <numbersign> <2> <0> : "𐡿"  U1087F  # PALMYRENE NUMBER TWENTY
 
 # (s = Samaritan)
 
@@ -14847,6 +15007,7 @@ include "%L"
 <Multi_key> <asterisk> <Multi_key> <quotedbl>       : "⍣"  U2363  # APL FUNCTIONAL SYMBOL STAR DIAERESIS
 <Multi_key> <minus> <Multi_key> <quotedbl>          : "⚍"  U268D  # DIGRAM FOR LESSER YIN
 <Multi_key> <slash> <Multi_key> <quotedbl>          : "ツ"  U30C4  # KATAKANA LETTER TU
+<Multi_key> <C> <Multi_key> <quotedbl>              : "ᑥ"  U1465  # CANADIAN SYLLABICS NASKAPI TWAA
 <Multi_key> <E> <Multi_key> <quotedbl>              : "Ӭ"  U04EC  # CYRILLIC CAPITAL LETTER E WITH DIAERESIS
 <Multi_key> <e> <Multi_key> <quotedbl>              : "ӭ"  U04ED  # CYRILLIC SMALL LETTER E WITH DIAERESIS
 <Multi_key> <e> <V> <Multi_key> <quotedbl>          : "Ӛ"  U04DA  # CYRILLIC CAPITAL LETTER SCHWA WITH DIAERESIS
@@ -14862,6 +15023,7 @@ include "%L"
 <Multi_key> <4> <Multi_key> <quotedbl>              : "ӵ"  U04F5  # CYRILLIC SMALL LETTER CHE WITH DIAERESIS
 <Multi_key> <8> <Multi_key> <quotedbl>              : "ꙭ"  UA66D  # CYRILLIC SMALL LETTER DOUBLE MONOCULAR O
 <Multi_key> <O> <O> <Multi_key> <quotedbl>          : "Ꙭ"  UA66C  # CYRILLIC CAPITAL LETTER DOUBLE MONOCULAR O
+<Multi_key> <O> <plus> <Multi_key> <quotedbl>       : "ꙮ"  UA66E  # CYRILLIC LETTER MULTIOCULAR O
 
 <Multi_key> <O> <Multi_key> <minus> <quotedbl>      : "Ӫ"  U04EA  # CYRILLIC CAPITAL LETTER BARRED O WITH DIAERESIS
 <Multi_key> <o> <Multi_key> <minus> <quotedbl>      : "ӫ"  U04EB  # CYRILLIC SMALL LETTER BARRED O WITH DIAERESIS
@@ -14871,7 +15033,8 @@ include "%L"
 <Multi_key> <O> <Multi_key> <slash> <quotedbl>      : "㋡"  U32E1  # CIRCLED KATAKANA TU
 <Multi_key> <O> <Multi_key> <parenleft> <quotedbl>  : "☹"  U2639  # WHITE FROWNING FACE
 <Multi_key> <O> <Multi_key> <parenright> <quotedbl> : "☺"  U263A  # WHITE SMILING FACE
-<Multi_key> <O> <Multi_key> <T> <X>                 : "웃"  UC6C3  # HANGUL SYLLABLE US
+<Multi_key> <O> <Multi_key> <T> <X>                 : "𖨆"  U16A06  # BAMUM LETTER PHASE-F EE
+<Multi_key> <O> <Multi_key> <T> <Y>                 : "웃"  UC6C3  # HANGUL SYLLABLE US
 
 ###############
 # Hieroglyphs #
@@ -14910,6 +15073,7 @@ include "%L"
 <Multi_key> <bracketright> <q> <u> <o> <t> <e> : "𓁏"  U1304F  # EGYPTIAN HIEROGLYPH A070 ("QUOTE")
 <Multi_key> <bracketright> <s> <i> <t> : "𓀻"  U1303B  # EGYPTIAN HIEROGLYPH A050 (SIT) (actually noble)
 <Multi_key> <bracketright> <s> <k> <i> <p> : "𓀪"  U1302A  # EGYPTIAN HIEROGLYPH A037 (SKIP) (actually brew)
+<Multi_key> <bracketright> <s> <l> <e> <e> <p> : "𓀿"  U1303F  # EGYPTIAN HIEROGLYPH A054 (SLEEP)
 <Multi_key> <bracketright> <s> <t> <a> <b> : "𓀑"  U13011  # EGYPTIAN HIEROGLYPH A014A (STAB)
 <Multi_key> <bracketright> <s> <w> <e> <a> <r> : "𓀊"  U1300A  # EGYPTIAN HIEROGLYPH A008 (SWEAR) (actually rejoicing)
 <Multi_key> <bracketright> <t> <r> <a> <v> <e> <l> : "𓀦"  U13026  # EGYPTIAN HIEROGLYPH A033 (TRAVEL)
@@ -15019,7 +15183,7 @@ include "%L"
 <Multi_key> <bracketright> <q> <u> <a> <i> <l> <Return> : "𓅱"  U13171  # EGYPTIAN HIEROGLYPH G043 (QUAIL)
 <Multi_key> <bracketright> <q> <u> <a> <i> <l> <s> : "𓅳"  U13173  # EGYPTIAN HIEROGLYPH G044 (QUAILS)
 <Multi_key> <bracketright> <r> <a> <m> : "𓃝"  U130DD  # EGYPTIAN HIEROGLYPH E010 (RAM)
-<Multi_key> <bracketright> <s> <c> <a> <r> <a> <b> : "𓆤"  U131A4  # EGYPTIAN HIEROGLYPH L002 (SCARAB)
+<Multi_key> <bracketright> <s> <c> <a> <r> <a> <b> : "𓆣"  U131A3  # EGYPTIAN HIEROGLYPH L001 (SCARAB)
 <Multi_key> <bracketright> <s> <c> <o> <r> <p> : "𓆫"  U131AB  # EGYPTIAN HIEROGLYPH L007 (SCORPION)
 <Multi_key> <bracketright> <s> <h> <a> <g> : "𓅧"  U13167  # EGYPTIAN HIEROGLYPH G035 (SHAG)
 <Multi_key> <bracketright> <s> <n> <a> <k> <e> : "𓆙"  U13199  # EGYPTIAN HIEROGLYPH I014 (SNAKE)
@@ -15246,12 +15410,28 @@ include "%L"
 <Multi_key> <braceright> <m> <o> <b> <i> <l> <e> : "𔕀"  U14540  # ANATOLIAN HIEROGLYPH A285 (MOBILE)
 <Multi_key> <braceright> <p> <e> <n> : "𔕄"  U14544  # ANATOLIAN HIEROGLYPH A289 (PEN)
 
-# (plus a few Phaistos disc signs too)
+# (plus a few phaistos disc, cuneiform and bamum logograms in the same namespace)
 
 <Multi_key> <braceright> <b> <a> <l> <d> : "𐇒"  U101D2  # PHAISTOS DISC SIGN TATTOOED HEAD (BALD)
 <Multi_key> <braceright> <c> <o> <o> <k> <i> <e> : "𐇛"  U101DB  # PHAISTOS DISC SIGN SHIELD (COOKIE)
 <Multi_key> <braceright> <p> <u> <n> <k> : "𐇑"  U101D1  # PHAISTOS DISC SIGN PLUMED HEAD (PUNK)
 <Multi_key> <braceright> <w> <a> <l> <k> : "𐇐"  U101D0  # PHAISTOS DISC SIGN PEDESTRIAN (WALK)
+
+<Multi_key> <braceright> <j> <o> <u> <s> <t> : "𒈙"  U12219  # CUNEIFORM SIGN LUGAL OPPOSING LUGAL (JOUST)
+<Multi_key> <braceright> <w> <a> <f> <f> <l> <e> : "𒐫"  U1242B  # CUNEIFORM NUMERIC SIGN NINE SHAR2 (WAFFLE)
+<Multi_key> <braceright> <w> <m> <i> <l> <l> : "𒅄"  U12144  # CUNEIFORM SIGN IDIM OVER IDIM SQUARED (WINDMILL)
+<Multi_key> <braceright> <x> <m> <a> <s> : "𒀱"  U12031  # CUNEIFORM SIGN AN PLUS NAGA SQUARED (XMAS)
+
+<Multi_key> <braceright> <b> <o> <o> <b> <s> : "𖦴"  U169B4  # BAMUM LETTER PHASE-E FUE (BOOBS)
+<Multi_key> <braceright> <c> <u> <p> : "𖠚"  U1681A  # BAMUM LETTER PHASE-A MAEKEUP (CUP)
+<Multi_key> <braceright> <c> <y> <c> <l> <o> <p> : "𖨆"  U16A06  # BAMUM LETTER PHASE-F EE (CYCLOPS)
+<Multi_key> <braceright> <f> <a> <n> : "𖣘"  U168D8  # BAMUM LETTER PHASE-C MA NSIEE (FAN)
+<Multi_key> <braceright> <h> <p> <h> <o> <n> <e> : "𖧊"  U169CA  # BAMUM LETTER PHASE-E PUAQ (HEADPHONES)
+<Multi_key> <braceright> <j> <e> <w> <i> <s> <h> : "𖢹"  U168B9  # BAMUM LETTER PHASE-C NTEUNGBA (JEWISH)
+<Multi_key> <braceright> <m> <a> <n> : "𖠋"  U1680B  # BAMUM LETTER PHASE-A MAEMBGBIEE (MAN)
+<Multi_key> <braceright> <M> <a> <n> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (ISLE OF MAN)
+<Multi_key> <braceright> <w> <i> <r> <e> : "𖡎"  U1684E  # BAMUM LETTER PHASE-A MAEM (WIRE)
+
 
 ####################
 # Geometric shapes #
@@ -17125,6 +17305,37 @@ include "%L"
 <Multi_key> <numbersign> <7> <0> <0> <0> <0> <a> : "𐄱"  U10131  # AEGEAN NUMBER SEVENTY THOUSAND
 <Multi_key> <numbersign> <8> <0> <0> <0> <0> <a> : "𐄲"  U10132  # AEGEAN NUMBER EIGHTY THOUSAND
 <Multi_key> <numbersign> <9> <0> <0> <0> <0> <a> : "𐄳"  U10133  # AEGEAN NUMBER NINETY THOUSAND
+
+# (A) Attic numerals
+
+<Multi_key> <numbersign> <1> <slash> <4> <A> : "𐅀"  U10140  # GREEK ACROPHONIC ATTIC ONE QUARTER
+<Multi_key> <numbersign> <1> <slash> <2> <A> : "𐅁"  U10141  # GREEK ACROPHONIC ATTIC ONE HALF
+<Multi_key> <numbersign> <1> <A> <space> : "Ι"  U0399  # GREEK CAPITAL LETTER IOTA (1)
+<Multi_key> <numbersign> <1> <A> <D> : "𐅂"  U10142  # GREEK ACROPHONIC ATTIC ONE DRACHMA
+<Multi_key> <numbersign> <5> <A> <space> : "𐅃"  U10143  # GREEK ACROPHONIC ATTIC FIVE
+<Multi_key> <numbersign> <5> <A> <S> : "𐅏"  U1014F  # GREEK ACROPHONIC ATTIC FIVE STATERS
+<Multi_key> <numbersign> <5> <A> <T> : "𐅈"  U10148  # GREEK ACROPHONIC ATTIC FIVE TALENTS
+<Multi_key> <numbersign> <1> <0> <A> <space> : "Δ"  U0394  # GREEK CAPITAL LETTER DELTA (10)
+<Multi_key> <numbersign> <1> <0> <A> <S> : "𐅐"  U10150  # GREEK ACROPHONIC ATTIC TEN STATERS
+<Multi_key> <numbersign> <1> <0> <A> <T> : "𐅉"  U10149  # GREEK ACROPHONIC ATTIC TEN TALENTS
+<Multi_key> <numbersign> <5> <0> <A> <space> : "𐅄"  U10144  # GREEK ACROPHONIC ATTIC FIFTY
+<Multi_key> <numbersign> <5> <0> <A> <S> : "𐅑"  U10151  # GREEK ACROPHONIC ATTIC FIFTY STATERS
+<Multi_key> <numbersign> <5> <0> <A> <T> : "𐅊"  U1014A  # GREEK ACROPHONIC ATTIC FIFTY TALENTS
+<Multi_key> <numbersign> <1> <0> <0> <A> <space> : "Η"  U0397  # GREEK CAPITAL LETTER ETA (100)
+<Multi_key> <numbersign> <1> <0> <0> <A> <S> : "𐅒"  U10152  # GREEK ACROPHONIC ATTIC ONE HUNDRED STATERS
+<Multi_key> <numbersign> <1> <0> <0> <A> <T> : "𐅋"  U1014B  # GREEK ACROPHONIC ATTIC ONE HUNDRED TALENTS
+<Multi_key> <numbersign> <5> <0> <0> <A> <space> : "𐅅"  U10145  # GREEK ACROPHONIC ATTIC FIVE HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <A> <S> : "𐅓"  U10153  # GREEK ACROPHONIC ATTIC FIVE HUNDRED STATERS
+<Multi_key> <numbersign> <5> <0> <0> <A> <T> : "𐅌"  U1014C  # GREEK ACROPHONIC ATTIC FIVE HUNDRED TALENTS
+<Multi_key> <numbersign> <1> <0> <0> <0> <A> <space> : "Χ"  U03A7  # GREEK CAPITAL LETTER CHI (1000)
+<Multi_key> <numbersign> <1> <0> <0> <0> <A> <S> : "𐅔"  U10154  # GREEK ACROPHONIC ATTIC ONE THOUSAND STATERS
+<Multi_key> <numbersign> <1> <0> <0> <0> <A> <T> : "𐅍"  U1014D  # GREEK ACROPHONIC ATTIC ONE THOUSAND TALENTS
+<Multi_key> <numbersign> <5> <0> <0> <0> <A> <space> : "𐅆"  U10146  # GREEK ACROPHONIC ATTIC FIVE THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <A> <T> : "𐅎"  U1014E  # GREEK ACROPHONIC ATTIC FIVE THOUSAND TALENTS
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <A> <space> : "Μ"  U039C  # GREEK CAPITAL LETTER MU (10000)
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <A> <S> : "𐅕"  U10155  # GREEK ACROPHONIC ATTIC TEN THOUSAND STATERS
+<Multi_key> <numbersign> <5> <0> <0> <0> <0> <A> <space> : "𐅇"  U10147  # GREEK ACROPHONIC ATTIC FIFTY THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <0> <A> <S> : "𐅖"  U10156  # GREEK ACROPHONIC ATTIC FIFTY THOUSAND STATERS
 
 # (f) fence tally
 
