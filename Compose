@@ -3230,9 +3230,12 @@ include "%L"
 
 # default glyph types are (c = characters x = extra characters # = numbers ; = punctuation)
 
-##############################################################################################
-# (a) Arabic (and Hatran, Mandaic, Nabatean, Osmanya, Syriac, Neo-Tifinagh, Thaana & Yezidi) #
-##############################################################################################
+#########################################
+# (a) Arabic (and other nearby scripts) #
+#########################################
+
+# also covers Hatran, Mandaic, Manichaean, Nabatean, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi,
+# Inscriptional Parthian, Syriac, Neo-Tifinagh, Thaana & Yezidi
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -3381,6 +3384,64 @@ include "%L"
 
 <Multi_key> <a> <m> <period> <o> : "࡞" U085E   # MANDAIC PUNCTUATION
 
+# (M = Manichaean) (use VS1 for alternate forms)
+
+<Multi_key> <a> <M> <a> : "𐫀"  U10AC0  # MANICHAEAN LETTER ALEPH
+<Multi_key> <a> <M> <b> : "𐫁"  U10AC1  # MANICHAEAN LETTER BETH
+<Multi_key> <a> <M> <quotedbl> <b> : "𐫂"  U10AC2  # MANICHAEAN LETTER BHETH
+<Multi_key> <a> <M> <g> : "𐫃"  U10AC3  # MANICHAEAN LETTER GIMEL
+<Multi_key> <a> <M> <quotedbl> <g> : "𐫄"  U10AC4  # MANICHAEAN LETTER GHIMEL
+<Multi_key> <a> <M> <d> : "𐫅"  U10AC5  # MANICHAEAN LETTER DALETH
+<Multi_key> <a> <M> <h> : "𐫆"  U10AC6  # MANICHAEAN LETTER HE
+<Multi_key> <a> <M> <w> : "𐫇"  U10AC7  # MANICHAEAN LETTER WAW
+<Multi_key> <a> <M> <z> : "𐫉"  U10AC9  # MANICHAEAN LETTER ZAYIN
+<Multi_key> <a> <M> <quotedbl> <z> : "𐫊"  U10ACA  # MANICHAEAN LETTER ZHAYIN
+<Multi_key> <a> <M> <j> : "𐫋"  U10ACB  # MANICHAEAN LETTER JAYIN
+<Multi_key> <a> <M> <quotedbl> <j> : "𐫌"  U10ACC  # MANICHAEAN LETTER JHAYIN
+<Multi_key> <a> <M> <H> : "𐫍"  U10ACD  # MANICHAEAN LETTER HETH
+<Multi_key> <a> <M> <T> : "𐫎"  U10ACE  # MANICHAEAN LETTER TETH
+<Multi_key> <a> <M> <y> : "𐫏"  U10ACF  # MANICHAEAN LETTER YODH
+<Multi_key> <a> <M> <k> : "𐫐"  U10AD0  # MANICHAEAN LETTER KAPH
+<Multi_key> <a> <M> <period> <k> : "𐫑"  U10AD1  # MANICHAEAN LETTER XAPH
+<Multi_key> <a> <M> <quotedbl> <k> : "𐫒"  U10AD2  # MANICHAEAN LETTER KHAPH
+<Multi_key> <a> <M> <l> : "𐫓"  U10AD3  # MANICHAEAN LETTER LAMEDH
+<Multi_key> <a> <M> <period> <l> : "𐫔"  U10AD4  # MANICHAEAN LETTER DHAMEDH
+<Multi_key> <a> <M> <quotedbl> <l> : "𐫕"  U10AD5  # MANICHAEAN LETTER THAMEDH
+<Multi_key> <a> <M> <m> : "𐫖"  U10AD6  # MANICHAEAN LETTER MEM
+<Multi_key> <a> <M> <n> : "𐫗"  U10AD7  # MANICHAEAN LETTER NUN
+<Multi_key> <a> <M> <s> : "𐫘"  U10AD8  # MANICHAEAN LETTER SAMEKH
+<Multi_key> <a> <M> <grave> : "𐫙"  U10AD9  # MANICHAEAN LETTER AYIN
+<Multi_key> <a> <M> <quotedbl> <grave> : "𐫚"  U10ADA  # MANICHAEAN LETTER AAYIN
+<Multi_key> <a> <M> <p> : "𐫛"  U10ADB  # MANICHAEAN LETTER PE
+<Multi_key> <a> <M> <period> <p> : "𐫜"  U10ADC  # MANICHAEAN LETTER FE
+<Multi_key> <a> <M> <f> : "𐫜"  U10ADC  # MANICHAEAN LETTER FE
+<Multi_key> <a> <M> <Z> : "𐫝"  U10ADD  # MANICHAEAN LETTER SADHE
+<Multi_key> <a> <M> <q> : "𐫞"  U10ADE  # MANICHAEAN LETTER QOPH
+<Multi_key> <a> <M> <period> <q> : "𐫟"  U10ADF  # MANICHAEAN LETTER XOPH
+<Multi_key> <a> <M> <quotedbl> <q> : "𐫠"  U10AE0  # MANICHAEAN LETTER QHOPH
+<Multi_key> <a> <M> <r> : "𐫡"  U10AE1  # MANICHAEAN LETTER RESH
+<Multi_key> <a> <M> <S> : "𐫢"  U10AE2  # MANICHAEAN LETTER SHIN
+<Multi_key> <a> <M> <quotedbl> <S> : "𐫣"  U10AE3  # MANICHAEAN LETTER SSHIN
+<Multi_key> <a> <M> <t> : "𐫤"  U10AE4  # MANICHAEAN LETTER TAW
+
+<Multi_key> <a> <M> <quotedbl> <Return> : "𐫥"  U10AE5  # MANICHAEAN ABBREVIATION MARK ABOVE
+<Multi_key> <a> <M> <underscore> <quotedbl> <Return> : "𐫦"  U10AE6  # MANICHAEAN ABBREVIATION MARK BELOW
+
+<Multi_key> <numbersign> <1> <space> <M> <numbersign> <1> <space> : "𐫫"  U10AEB  # MANICHAEAN NUMBER ONE
+<Multi_key> <numbersign> <1> <space> <M> <numbersign> <5> : "𐫬"  U10AEC  # MANICHAEAN NUMBER FIVE
+<Multi_key> <numbersign> <1> <space> <M> <numbersign> <1> <0> <space> : "𐫭"  U10AED  # MANICHAEAN NUMBER TEN
+<Multi_key> <numbersign> <1> <space> <M> <numbersign> <2> <0> : "𐫮"  U10AEE  # MANICHAEAN NUMBER TWENTY
+<Multi_key> <numbersign> <1> <space> <M> <numbersign> <1> <0> <0> : "𐫯"  U10AEF  # MANICHAEAN NUMBER ONE HUNDRED
+
+<Multi_key> <a> <M> <ampersand> : "𐫈"  U10AC8  # MANICHAEAN SIGN UD
+
+<Multi_key> <a> <M> <asterisk> : "𐫰"  U10AF0  # MANICHAEAN PUNCTUATION STAR
+<Multi_key> <a> <M> <2> <period> <o> : "𐫲"  U10AF2  # MANICHAEAN PUNCTUATION DOUBLE DOT WITHIN DOT
+<Multi_key> <a> <M> <period> <o> : "𐫳"  U10AF3  # MANICHAEAN PUNCTUATION DOT WITHIN DOT
+<Multi_key> <a> <M> <period> <space> : "𐫴"  U10AF4  # MANICHAEAN PUNCTUATION DOT
+<Multi_key> <a> <M> <colon> : "𐫵"  U10AF5  # MANICHAEAN PUNCTUATION TWO DOTS
+<Multi_key> <a> <M> <c> : "𐫶"  U10AF6  # MANICHAEAN PUNCTUATION LINE FILLER
+
 # (N = Nabatean)
 
 <Multi_key> <a> <N> <less> <a> : "𐢀"  U10880  # NABATAEAN LETTER FINAL ALEPH
@@ -3472,6 +3533,114 @@ include "%L"
 <Multi_key> <a> <o> <numbersign> <7> : "𐒧"  U104A7  # OSMANYA DIGIT SEVEN
 <Multi_key> <a> <o> <numbersign> <8> : "𐒨"  U104A8  # OSMANYA DIGIT EIGHT
 <Multi_key> <a> <o> <numbersign> <9> : "𐒩"  U104A9  # OSMANYA DIGIT NINE
+
+# (P = Inscriptional Parthian) (use IP for Inscriptional Pahlavi)
+
+<Multi_key> <a> <P> <a> : "𐭀"  U10B40  # INSCRIPTIONAL PARTHIAN LETTER ALEPH
+<Multi_key> <a> <P> <apostrophe> : "𐭀"  U10B40  # INSCRIPTIONAL PARTHIAN LETTER ALEPH
+<Multi_key> <a> <P> <b> : "𐭁"  U10B41  # INSCRIPTIONAL PARTHIAN LETTER BETH
+<Multi_key> <a> <P> <g> : "𐭂"  U10B42  # INSCRIPTIONAL PARTHIAN LETTER GIMEL
+<Multi_key> <a> <P> <d> : "𐭃"  U10B43  # INSCRIPTIONAL PARTHIAN LETTER DALETH
+<Multi_key> <a> <P> <h> : "𐭄"  U10B44  # INSCRIPTIONAL PARTHIAN LETTER HE
+<Multi_key> <a> <P> <w> : "𐭅"  U10B45  # INSCRIPTIONAL PARTHIAN LETTER WAW
+<Multi_key> <a> <P> <z> : "𐭆"  U10B46  # INSCRIPTIONAL PARTHIAN LETTER ZAYIN
+<Multi_key> <a> <P> <H> : "𐭇"  U10B47  # INSCRIPTIONAL PARTHIAN LETTER HETH
+<Multi_key> <a> <P> <T> : "𐭈"  U10B48  # INSCRIPTIONAL PARTHIAN LETTER TETH
+<Multi_key> <a> <P> <y> : "𐭉"  U10B49  # INSCRIPTIONAL PARTHIAN LETTER YODH
+<Multi_key> <a> <P> <k> : "𐭊"  U10B4A  # INSCRIPTIONAL PARTHIAN LETTER KAPH
+<Multi_key> <a> <P> <l> : "𐭋"  U10B4B  # INSCRIPTIONAL PARTHIAN LETTER LAMEDH
+<Multi_key> <a> <P> <m> : "𐭌"  U10B4C  # INSCRIPTIONAL PARTHIAN LETTER MEM
+<Multi_key> <a> <P> <n> : "𐭍"  U10B4D  # INSCRIPTIONAL PARTHIAN LETTER NUN
+<Multi_key> <a> <P> <s> : "𐭎"  U10B4E  # INSCRIPTIONAL PARTHIAN LETTER SAMEKH
+<Multi_key> <a> <P> <grave> : "𐭏"  U10B4F  # INSCRIPTIONAL PARTHIAN LETTER AYIN
+<Multi_key> <a> <P> <p> : "𐭐"  U10B50  # INSCRIPTIONAL PARTHIAN LETTER PE
+<Multi_key> <a> <P> <Z> : "𐭑"  U10B51  # INSCRIPTIONAL PARTHIAN LETTER SADHE
+<Multi_key> <a> <P> <q> : "𐭒"  U10B52  # INSCRIPTIONAL PARTHIAN LETTER QOPH
+<Multi_key> <a> <P> <r> : "𐭓"  U10B53  # INSCRIPTIONAL PARTHIAN LETTER RESH
+<Multi_key> <a> <P> <S> : "𐭔"  U10B54  # INSCRIPTIONAL PARTHIAN LETTER SHIN
+<Multi_key> <a> <P> <t> : "𐭕"  U10B55  # INSCRIPTIONAL PARTHIAN LETTER TAW
+
+<Multi_key> <a> <P> <numbersign> <1> <space> : "𐭘"  U10B58  # INSCRIPTIONAL PARTHIAN NUMBER ONE
+<Multi_key> <a> <P> <numbersign> <2> <space> : "𐭙"  U10B59  # INSCRIPTIONAL PARTHIAN NUMBER TWO
+<Multi_key> <a> <P> <numbersign> <3> : "𐭚"  U10B5A  # INSCRIPTIONAL PARTHIAN NUMBER THREE
+<Multi_key> <a> <P> <numbersign> <4> : "𐭛"  U10B5B  # INSCRIPTIONAL PARTHIAN NUMBER FOUR
+<Multi_key> <a> <P> <numbersign> <1> <0> <space> : "𐭜"  U10B5C  # INSCRIPTIONAL PARTHIAN NUMBER TEN
+<Multi_key> <a> <P> <numbersign> <2> <0> : "𐭝"  U10B5D  # INSCRIPTIONAL PARTHIAN NUMBER TWENTY
+<Multi_key> <a> <P> <numbersign> <1> <0> <0> <space> : "𐭞"  U10B5E  # INSCRIPTIONAL PARTHIAN NUMBER ONE HUNDRED
+<Multi_key> <a> <P> <numbersign> <1> <0> <0> <0> : "𐭟"  U10B5F  # INSCRIPTIONAL PARTHIAN NUMBER ONE THOUSAND
+
+# (IP = Inscriptional Pahlavi) (use P for Inscriptional Parthian)
+
+<Multi_key> <a> <I> <P> <a> : "𐭠"  U10B60  # INSCRIPTIONAL PAHLAVI LETTER ALEPH
+<Multi_key> <a> <I> <P> <apostrophe> : "𐭠"  U10B60  # INSCRIPTIONAL PAHLAVI LETTER ALEPH
+<Multi_key> <a> <I> <P> <b> : "𐭡"  U10B61  # INSCRIPTIONAL PAHLAVI LETTER BETH
+<Multi_key> <a> <I> <P> <g> : "𐭢"  U10B62  # INSCRIPTIONAL PAHLAVI LETTER GIMEL
+<Multi_key> <a> <I> <P> <d> : "𐭣"  U10B63  # INSCRIPTIONAL PAHLAVI LETTER DALETH
+<Multi_key> <a> <I> <P> <h> : "𐭤"  U10B64  # INSCRIPTIONAL PAHLAVI LETTER HE
+<Multi_key> <a> <I> <P> <w> : "𐭥"  U10B65  # INSCRIPTIONAL PAHLAVI LETTER WAW-AYIN-RESH
+<Multi_key> <a> <I> <P> <grave> : "𐭥"  U10B65  # INSCRIPTIONAL PAHLAVI LETTER WAW-AYIN-RESH
+<Multi_key> <a> <I> <P> <r> : "𐭥"  U10B65  # INSCRIPTIONAL PAHLAVI LETTER WAW-AYIN-RESH
+<Multi_key> <a> <I> <P> <z> : "𐭦"  U10B66  # INSCRIPTIONAL PAHLAVI LETTER ZAYIN
+<Multi_key> <a> <I> <P> <H> : "𐭧"  U10B67  # INSCRIPTIONAL PAHLAVI LETTER HETH
+<Multi_key> <a> <I> <P> <T> : "𐭨"  U10B68  # INSCRIPTIONAL PAHLAVI LETTER TETH
+<Multi_key> <a> <I> <P> <y> : "𐭩"  U10B69  # INSCRIPTIONAL PAHLAVI LETTER YODH
+<Multi_key> <a> <I> <P> <k> : "𐭪"  U10B6A  # INSCRIPTIONAL PAHLAVI LETTER KAPH
+<Multi_key> <a> <I> <P> <l> : "𐭫"  U10B6B  # INSCRIPTIONAL PAHLAVI LETTER LAMEDH
+<Multi_key> <a> <I> <P> <m> : "𐭬"  U10B6C  # INSCRIPTIONAL PAHLAVI LETTER MEM-QOPH
+<Multi_key> <a> <I> <P> <q> : "𐭬"  U10B6C  # INSCRIPTIONAL PAHLAVI LETTER MEM-QOPH
+<Multi_key> <a> <I> <P> <n> : "𐭭"  U10B6D  # INSCRIPTIONAL PAHLAVI LETTER NUN
+<Multi_key> <a> <I> <P> <s> : "𐭮"  U10B6E  # INSCRIPTIONAL PAHLAVI LETTER SAMEKH
+<Multi_key> <a> <I> <P> <p> : "𐭯"  U10B6F  # INSCRIPTIONAL PAHLAVI LETTER PE
+<Multi_key> <a> <I> <P> <Z> : "𐭰"  U10B70  # INSCRIPTIONAL PAHLAVI LETTER SADHE
+<Multi_key> <a> <I> <P> <S> : "𐭱"  U10B71  # INSCRIPTIONAL PAHLAVI LETTER SHIN
+<Multi_key> <a> <I> <P> <t> : "𐭲"  U10B72  # INSCRIPTIONAL PAHLAVI LETTER TAW
+
+<Multi_key> <a> <I> <P> <numbersign> <1> <space> : "𐭸"  U10B78  # INSCRIPTIONAL PAHLAVI NUMBER ONE
+<Multi_key> <a> <I> <P> <numbersign> <2> <space> : "𐭹"  U10B79  # INSCRIPTIONAL PAHLAVI NUMBER TWO
+<Multi_key> <a> <I> <P> <numbersign> <3> : "𐭺"  U10B7A  # INSCRIPTIONAL PAHLAVI NUMBER THREE
+<Multi_key> <a> <I> <P> <numbersign> <4> : "𐭻"  U10B7B  # INSCRIPTIONAL PAHLAVI NUMBER FOUR
+<Multi_key> <a> <I> <P> <numbersign> <1> <0> <space> : "𐭼"  U10B7C  # INSCRIPTIONAL PAHLAVI NUMBER TEN
+<Multi_key> <a> <I> <P> <numbersign> <2> <0> : "𐭽"  U10B7D  # INSCRIPTIONAL PAHLAVI NUMBER TWENTY
+<Multi_key> <a> <I> <P> <numbersign> <1> <0> <0> <space> : "𐭾"  U10B7E  # INSCRIPTIONAL PAHLAVI NUMBER ONE HUNDRED
+<Multi_key> <a> <I> <P> <numbersign> <1> <0> <0> <0> : "𐭿"  U10B7F  # INSCRIPTIONAL PAHLAVI NUMBER ONE THOUSAND
+
+# (PP = Psalter Pahlavi)
+
+<Multi_key> <a> <P> <P> <a> : "𐮀"  U10B80  # PSALTER PAHLAVI LETTER ALEPH
+<Multi_key> <a> <P> <P> <apostrophe> : "𐮀"  U10B80  # PSALTER PAHLAVI LETTER ALEPH
+<Multi_key> <a> <P> <P> <b> : "𐮁"  U10B81  # PSALTER PAHLAVI LETTER BETH
+<Multi_key> <a> <P> <P> <g> : "𐮂"  U10B82  # PSALTER PAHLAVI LETTER GIMEL
+<Multi_key> <a> <P> <P> <d> : "𐮃"  U10B83  # PSALTER PAHLAVI LETTER DALETH
+<Multi_key> <a> <P> <P> <h> : "𐮄"  U10B84  # PSALTER PAHLAVI LETTER HE
+<Multi_key> <a> <P> <P> <w> : "𐮅"  U10B85  # PSALTER PAHLAVI LETTER WAW-AYIN-RESH
+<Multi_key> <a> <P> <P> <grave> : "𐮅"  U10B85  # PSALTER PAHLAVI LETTER WAW-AYIN-RESH
+<Multi_key> <a> <P> <P> <r> : "𐮅"  U10B85  # PSALTER PAHLAVI LETTER WAW-AYIN-RESH
+<Multi_key> <a> <P> <P> <z> : "𐮆"  U10B86  # PSALTER PAHLAVI LETTER ZAYIN
+<Multi_key> <a> <P> <P> <H> : "𐮇"  U10B87  # PSALTER PAHLAVI LETTER HETH
+<Multi_key> <a> <P> <P> <y> : "𐮈"  U10B88  # PSALTER PAHLAVI LETTER YODH
+<Multi_key> <a> <P> <P> <k> : "𐮉"  U10B89  # PSALTER PAHLAVI LETTER KAPH
+<Multi_key> <a> <P> <P> <l> : "𐮊"  U10B8A  # PSALTER PAHLAVI LETTER LAMEDH
+<Multi_key> <a> <P> <P> <m> : "𐮋"  U10B8B  # PSALTER PAHLAVI LETTER MEM-QOPH
+<Multi_key> <a> <P> <P> <q> : "𐮋"  U10B8B  # PSALTER PAHLAVI LETTER MEM-QOPH
+<Multi_key> <a> <P> <P> <n> : "𐮌"  U10B8C  # PSALTER PAHLAVI LETTER NUN
+<Multi_key> <a> <P> <P> <s> : "𐮍"  U10B8D  # PSALTER PAHLAVI LETTER SAMEKH
+<Multi_key> <a> <P> <P> <p> : "𐮎"  U10B8E  # PSALTER PAHLAVI LETTER PE
+<Multi_key> <a> <P> <P> <Z> : "𐮏"  U10B8F  # PSALTER PAHLAVI LETTER SADHE
+<Multi_key> <a> <P> <P> <S> : "𐮐"  U10B90  # PSALTER PAHLAVI LETTER SHIN
+<Multi_key> <a> <P> <P> <t> : "𐮑"  U10B91  # PSALTER PAHLAVI LETTER TAW
+
+<Multi_key> <a> <P> <P> <Multi_key> <S> <O> : "𐮙"  U10B99  # PSALTER PAHLAVI SECTION MARK
+<Multi_key> <a> <P> <P> <less> <Multi_key> <S> <O> : "𐮚"  U10B9A  # PSALTER PAHLAVI TURNED SECTION MARK
+<Multi_key> <a> <P> <P> <X> <o> : "𐮛"  U10B9B  # PSALTER PAHLAVI FOUR DOTS WITH CROSS
+<Multi_key> <a> <P> <P> <plus> <o> : "𐮜"  U10B9C  # PSALTER PAHLAVI FOUR DOTS WITH DOT
+
+<Multi_key> <a> <P> <P> <numbersign> <1> <space> : "𐮩"  U10BA9  # PSALTER PAHLAVI NUMBER ONE
+<Multi_key> <a> <P> <P> <numbersign> <2> <space> : "𐮪"  U10BAA  # PSALTER PAHLAVI NUMBER TWO
+<Multi_key> <a> <P> <P> <numbersign> <3> : "𐮫"  U10BAB  # PSALTER PAHLAVI NUMBER THREE
+<Multi_key> <a> <P> <P> <numbersign> <4> : "𐮬"  U10BAC  # PSALTER PAHLAVI NUMBER FOUR
+<Multi_key> <a> <P> <P> <numbersign> <1> <0> <space> : "𐮭"  U10BAD  # PSALTER PAHLAVI NUMBER TEN
+<Multi_key> <a> <P> <P> <numbersign> <2> <0> : "𐮮"  U10BAE  # PSALTER PAHLAVI NUMBER TWENTY
+<Multi_key> <a> <P> <P> <numbersign> <1> <0> <0> : "𐮯"  U10BAF  # PSALTER PAHLAVI NUMBER ONE HUNDRED
 
 # (s = Syriac)
 
@@ -5559,9 +5728,9 @@ include "%L"
 <Multi_key> <b> <T> <numbersign> <8>     : "౮"  U0C6E  # TELUGU DIGIT EIGHT
 <Multi_key> <b> <T> <numbersign> <9>     : "౯"  U0C6F  # TELUGU DIGIT NINE
 
-###############################
-# (B) Unified English Braille #
-###############################
+#########################################
+# (B) Braille (Unified English Braille) #
+#########################################
 
 <Multi_key> <B> <c> <a> : "⠁" U2801    # BRAILLE PATTERN DOTS-1 (A)
 <Multi_key> <B> <c> <b> : "⠃" U2803    # BRAILLE PATTERN DOTS-12 (B)
@@ -8657,9 +8826,11 @@ include "%L"
 <Multi_key> <G> <k> <underscore> <h> : "ⴤ" U2D24   # GEORGIAN SMALL LETTER HAR (ẖ)
 <Multi_key> <G> <k> <minus> <o> : "ⴥ" U2D25   # GEORGIAN SMALL LETTER HOE (ō)
 
-###########################################################################################
-# (h) Hebrew (and Aramaic, Elymaic, Lydian, Palmyrene, Phoenician, Samaritan & Ugaritic ) #
-###########################################################################################
+#########################################
+# (h) Hebrew (and other nearby scripts) #
+#########################################
+
+# covers Aramaic, Elymaic, Lydian, Palmyrene, Phoenician, Samaritan & Ugaritic
 
 <Multi_key> <h> <c> <a>        : "א"  U05D0   # HEBREW LETTER ALEF
 <Multi_key> <h> <c> <apostrophe> : "א"  U05D0   # HEBREW LETTER ALEF
@@ -11064,9 +11235,11 @@ include "%L"
 <Multi_key> <T> <t> <i> <Return> : "ᝲ"  U1772  # TAGBANWA VOWEL SIGN I
 <Multi_key> <T> <t> <u> <Return> : "ᝳ"  U1773  # TAGBANWA VOWEL SIGN U
 
-#####################################################################################
-# (z) Zhuyin/Bopomofo (and Fraser, Mongolian, ʼPhags-Pa, Pollard, Tai Le & Tibetan) #
-#####################################################################################
+##################################################
+# (z) Zhuyin/Bopomofo (and other nearby scripts) #
+##################################################
+
+# covers Fraser, Mongolian, ʼPhags-Pa, Pollard, Tai Le & Tibetan
 
 <Multi_key> <z> <c> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
 <Multi_key> <z> <c> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
@@ -11659,9 +11832,11 @@ include "%L"
 <Multi_key> <z> <T> <at> <period> : "ᥳ" U1973   # TAI LE LETTER TONE-5 (◌̇)
 <Multi_key> <z> <T> <at> <apostrophe> : "ᥴ" U1974   # TAI LE LETTER TONE-6 (◌́)
 
-##########################################################
-# (Z) Ge'ez (and Adlam, Bamum, Mende Kikakui, NKo & Vai) #
-##########################################################
+########################################
+# (Z) Ge'ez (and other nearby scripts) #
+########################################
+
+# covers Adlam, Bamum, Mende Kikakui, NKo & Vai
 
 <Multi_key> <Z> <c> <h> <a> <space> : "ሀ" U1200   # ETHIOPIC SYLLABLE HA
 <Multi_key> <Z> <c> <h> <u> : "ሁ" U1201   # ETHIOPIC SYLLABLE HU
@@ -15000,7 +15175,7 @@ include "%L"
 
 <Multi_key> <x> <k> <c> <d>    : "🯅"  U1FBC5        # STICK FIGURE (XCKD)
 
-# Some smiley-like characters
+# Some emoji-like text characters (also see hieroglyph section below)
 
 <Multi_key> <asciitilde> <Multi_key> <quotedbl>     : "⍨"  U2368  # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
 <Multi_key> <greater> <Multi_key> <quotedbl>        : "⍩"  U2369  # APL FUNCTIONAL SYMBOL GREATER-THAN DIAERESIS
@@ -15024,6 +15199,7 @@ include "%L"
 <Multi_key> <8> <Multi_key> <quotedbl>              : "ꙭ"  UA66D  # CYRILLIC SMALL LETTER DOUBLE MONOCULAR O
 <Multi_key> <O> <O> <Multi_key> <quotedbl>          : "Ꙭ"  UA66C  # CYRILLIC CAPITAL LETTER DOUBLE MONOCULAR O
 <Multi_key> <O> <plus> <Multi_key> <quotedbl>       : "ꙮ"  UA66E  # CYRILLIC LETTER MULTIOCULAR O
+<Multi_key> <o> <2> <Multi_key> <quotedbl>          : "𐫲"  U10AF2  # MANICHAEAN PUNCTUATION DOUBLE DOT WITHIN DOT
 
 <Multi_key> <O> <Multi_key> <minus> <quotedbl>      : "Ӫ"  U04EA  # CYRILLIC CAPITAL LETTER BARRED O WITH DIAERESIS
 <Multi_key> <o> <Multi_key> <minus> <quotedbl>      : "ӫ"  U04EB  # CYRILLIC SMALL LETTER BARRED O WITH DIAERESIS
@@ -15410,13 +15586,14 @@ include "%L"
 <Multi_key> <braceright> <m> <o> <b> <i> <l> <e> : "𔕀"  U14540  # ANATOLIAN HIEROGLYPH A285 (MOBILE)
 <Multi_key> <braceright> <p> <e> <n> : "𔕄"  U14544  # ANATOLIAN HIEROGLYPH A289 (PEN)
 
-# (plus a few phaistos disc, cuneiform and bamum logograms in the same namespace)
+# (plus a few other logograms and symbols in the same namespace)
 
 <Multi_key> <braceright> <b> <a> <l> <d> : "𐇒"  U101D2  # PHAISTOS DISC SIGN TATTOOED HEAD (BALD)
 <Multi_key> <braceright> <c> <o> <o> <k> <i> <e> : "𐇛"  U101DB  # PHAISTOS DISC SIGN SHIELD (COOKIE)
 <Multi_key> <braceright> <p> <u> <n> <k> : "𐇑"  U101D1  # PHAISTOS DISC SIGN PLUMED HEAD (PUNK)
 <Multi_key> <braceright> <w> <a> <l> <k> : "𐇐"  U101D0  # PHAISTOS DISC SIGN PEDESTRIAN (WALK)
 
+<Multi_key> <braceright> <C> <P> <U> : "𒁈"  U12048  # CUNEIFORM SIGN BARA2 (CPU)
 <Multi_key> <braceright> <j> <o> <u> <s> <t> : "𒈙"  U12219  # CUNEIFORM SIGN LUGAL OPPOSING LUGAL (JOUST)
 <Multi_key> <braceright> <w> <a> <f> <f> <l> <e> : "𒐫"  U1242B  # CUNEIFORM NUMERIC SIGN NINE SHAR2 (WAFFLE)
 <Multi_key> <braceright> <w> <m> <i> <l> <l> : "𒅄"  U12144  # CUNEIFORM SIGN IDIM OVER IDIM SQUARED (WINDMILL)
@@ -15432,6 +15609,7 @@ include "%L"
 <Multi_key> <braceright> <M> <a> <n> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (ISLE OF MAN)
 <Multi_key> <braceright> <w> <i> <r> <e> : "𖡎"  U1684E  # BAMUM LETTER PHASE-A MAEM (WIRE)
 
+<Multi_key> <braceright> <f> <i> <n> <g> <e> <r> : "⍝"  U235D  # APL FUNCTIONAL SYMBOL UP SHOE JOT (FINGER)
 
 ####################
 # Geometric shapes #
