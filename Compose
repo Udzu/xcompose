@@ -3230,9 +3230,9 @@ include "%L"
 
 # default glyph types are (c = characters x = extra characters # = numbers ; = punctuation)
 
-############################################################################
-# (a) Arabic (and Mandaic, Osmanya, Syriac, Neo-Tifinagh, Thaana & Yezidi) #
-############################################################################
+##############################################################################################
+# (a) Arabic (and Hatran, Mandaic, Nabatean, Osmanya, Syriac, Neo-Tifinagh, Thaana & Yezidi) #
+##############################################################################################
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -3315,6 +3315,38 @@ include "%L"
 <Multi_key> <a> <numbersign> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <numbersign> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
 
+# (H = Hatran)
+
+<Multi_key> <a> <H> <a> : "𐣠"  U108E0  # HATRAN LETTER ALEPH
+<Multi_key> <a> <H> <apostrophe> : "𐣠"  U108E0  # HATRAN LETTER ALEPH
+<Multi_key> <a> <H> <b> : "𐣡"  U108E1  # HATRAN LETTER BETH
+<Multi_key> <a> <H> <g> : "𐣢"  U108E2  # HATRAN LETTER GIMEL
+<Multi_key> <a> <H> <d> : "𐣣"  U108E3  # HATRAN LETTER DALETH-RESH
+<Multi_key> <a> <H> <r> : "𐣣"  U108E3  # HATRAN LETTER DALETH-RESH
+<Multi_key> <a> <H> <h> : "𐣤"  U108E4  # HATRAN LETTER HE
+<Multi_key> <a> <H> <w> : "𐣥"  U108E5  # HATRAN LETTER WAW
+<Multi_key> <a> <H> <z> : "𐣦"  U108E6  # HATRAN LETTER ZAYN
+<Multi_key> <a> <H> <H> : "𐣧"  U108E7  # HATRAN LETTER HETH
+<Multi_key> <a> <H> <T> : "𐣨"  U108E8  # HATRAN LETTER TETH
+<Multi_key> <a> <H> <y> : "𐣩"  U108E9  # HATRAN LETTER YODH
+<Multi_key> <a> <H> <k> : "𐣪"  U108EA  # HATRAN LETTER KAPH
+<Multi_key> <a> <H> <l> : "𐣫"  U108EB  # HATRAN LETTER LAMEDH
+<Multi_key> <a> <H> <m> : "𐣬"  U108EC  # HATRAN LETTER MEM
+<Multi_key> <a> <H> <n> : "𐣭"  U108ED  # HATRAN LETTER NUN
+<Multi_key> <a> <H> <s> : "𐣮"  U108EE  # HATRAN LETTER SAMEKH
+<Multi_key> <a> <H> <grave> : "𐣯"  U108EF  # HATRAN LETTER AYN
+<Multi_key> <a> <H> <p> : "𐣰"  U108F0  # HATRAN LETTER PE
+<Multi_key> <a> <H> <Z> : "𐣱"  U108F1  # HATRAN LETTER SADHE
+<Multi_key> <a> <H> <q> : "𐣲"  U108F2  # HATRAN LETTER QOPH
+<Multi_key> <a> <H> <S> : "𐣴"  U108F4  # HATRAN LETTER SHIN
+<Multi_key> <a> <H> <t> : "𐣵"  U108F5  # HATRAN LETTER TAW
+
+<Multi_key> <a> <H> <numbersign> <1> <space> : "𐣻"  U108FB  # HATRAN NUMBER ONE
+<Multi_key> <a> <H> <numbersign> <5> : "𐣼"  U108FC  # HATRAN NUMBER FIVE
+<Multi_key> <a> <H> <numbersign> <1> <0> <space> : "𐣽"  U108FD  # HATRAN NUMBER TEN
+<Multi_key> <a> <H> <numbersign> <2> <0> : "𐣾"  U108FE  # HATRAN NUMBER TWENTY
+<Multi_key> <a> <H> <numbersign> <1> <0> <0> : "𐣿"  U108FF  # HATRAN NUMBER ONE HUNDRED
+
 # (m = Mandaic)
 
 <Multi_key> <a> <m> <a> : "ࡀ" U0840   # MANDAIC LETTER HALQA
@@ -3348,6 +3380,52 @@ include "%L"
 <Multi_key> <a> <m> <period> <Return> : "࡛" U085B   # MANDAIC GEMINATION MARK
 
 <Multi_key> <a> <m> <period> <o> : "࡞" U085E   # MANDAIC PUNCTUATION
+
+# (N = Nabatean)
+
+<Multi_key> <a> <N> <less> <a> : "𐢀"  U10880  # NABATAEAN LETTER FINAL ALEPH
+<Multi_key> <a> <N> <less> <apostrophe> : "𐢀"  U10880  # NABATAEAN LETTER FINAL ALEPH
+<Multi_key> <a> <N> <a> : "𐢁"  U10881  # NABATAEAN LETTER ALEPH
+<Multi_key> <a> <N> <apostrophe> : "𐢁"  U10881  # NABATAEAN LETTER ALEPH
+<Multi_key> <a> <N> <less> <b> : "𐢂"  U10882  # NABATAEAN LETTER FINAL BETH
+<Multi_key> <a> <N> <b> : "𐢃"  U10883  # NABATAEAN LETTER BETH
+<Multi_key> <a> <N> <g> : "𐢄"  U10884  # NABATAEAN LETTER GIMEL
+<Multi_key> <a> <N> <d> : "𐢅"  U10885  # NABATAEAN LETTER DALETH
+<Multi_key> <a> <N> <less> <h> : "𐢆"  U10886  # NABATAEAN LETTER FINAL HE
+<Multi_key> <a> <N> <h> : "𐢇"  U10887  # NABATAEAN LETTER HE
+<Multi_key> <a> <N> <w> : "𐢈"  U10888  # NABATAEAN LETTER WAW
+<Multi_key> <a> <N> <z> : "𐢉"  U10889  # NABATAEAN LETTER ZAYIN
+<Multi_key> <a> <N> <H> : "𐢊"  U1088A  # NABATAEAN LETTER HETH
+<Multi_key> <a> <N> <T> : "𐢋"  U1088B  # NABATAEAN LETTER TETH
+<Multi_key> <a> <N> <less> <y> : "𐢌"  U1088C  # NABATAEAN LETTER FINAL YODH
+<Multi_key> <a> <N> <y> : "𐢍"  U1088D  # NABATAEAN LETTER YODH
+<Multi_key> <a> <N> <less> <k> : "𐢎"  U1088E  # NABATAEAN LETTER FINAL KAPH
+<Multi_key> <a> <N> <k> : "𐢏"  U1088F  # NABATAEAN LETTER KAPH
+<Multi_key> <a> <N> <less> <l> : "𐢐"  U10890  # NABATAEAN LETTER FINAL LAMEDH
+<Multi_key> <a> <N> <l> : "𐢑"  U10891  # NABATAEAN LETTER LAMEDH
+<Multi_key> <a> <N> <less> <m> : "𐢒"  U10892  # NABATAEAN LETTER FINAL MEM
+<Multi_key> <a> <N> <m> : "𐢓"  U10893  # NABATAEAN LETTER MEM
+<Multi_key> <a> <N> <less> <n> : "𐢔"  U10894  # NABATAEAN LETTER FINAL NUN
+<Multi_key> <a> <N> <n> : "𐢕"  U10895  # NABATAEAN LETTER NUN
+<Multi_key> <a> <N> <s> : "𐢖"  U10896  # NABATAEAN LETTER SAMEKH
+<Multi_key> <a> <N> <grave> : "𐢗"  U10897  # NABATAEAN LETTER AYIN
+<Multi_key> <a> <N> <p> : "𐢘"  U10898  # NABATAEAN LETTER PE
+<Multi_key> <a> <N> <Z> : "𐢙"  U10899  # NABATAEAN LETTER SADHE
+<Multi_key> <a> <N> <q> : "𐢚"  U1089A  # NABATAEAN LETTER QOPH
+<Multi_key> <a> <N> <r> : "𐢛"  U1089B  # NABATAEAN LETTER RESH
+<Multi_key> <a> <N> <less> <S> : "𐢜"  U1089C  # NABATAEAN LETTER FINAL SHIN
+<Multi_key> <a> <N> <S> : "𐢝"  U1089D  # NABATAEAN LETTER SHIN
+<Multi_key> <a> <N> <t> : "𐢞"  U1089E  # NABATAEAN LETTER TAW
+
+<Multi_key> <a> <N> <numbersign> <1> <space> : "𐢧"  U108A7  # NABATAEAN NUMBER ONE
+<Multi_key> <a> <N> <numbersign> <2> <space> : "𐢨"  U108A8  # NABATAEAN NUMBER TWO
+<Multi_key> <a> <N> <numbersign> <3> : "𐢩"  U108A9  # NABATAEAN NUMBER THREE
+<Multi_key> <a> <N> <numbersign> <4> : "𐢪"  U108AA  # NABATAEAN NUMBER FOUR
+<Multi_key> <a> <N> <numbersign> <X> : "𐢫"  U108AB  # NABATAEAN CRUCIFORM NUMBER FOUR
+<Multi_key> <a> <N> <numbersign> <5> : "𐢬"  U108AC  # NABATAEAN NUMBER FIVE
+<Multi_key> <a> <N> <numbersign> <1> <0> <space> : "𐢭"  U108AD  # NABATAEAN NUMBER TEN
+<Multi_key> <a> <N> <numbersign> <2> <0> : "𐢮"  U108AE  # NABATAEAN NUMBER TWENTY
+<Multi_key> <a> <N> <numbersign> <1> <0> <0> : "𐢯"  U108AF  # NABATAEAN NUMBER ONE HUNDRED
 
 # (o = Osmanya)
 
@@ -8579,9 +8657,9 @@ include "%L"
 <Multi_key> <G> <k> <underscore> <h> : "ⴤ" U2D24   # GEORGIAN SMALL LETTER HAR (ẖ)
 <Multi_key> <G> <k> <minus> <o> : "ⴥ" U2D25   # GEORGIAN SMALL LETTER HOE (ō)
 
-################################################################################
-# (h) Hebrew (and Aramaic, Elymaic, Lydian, Phoenician, Samaritan & Ugaritic ) #
-################################################################################
+###########################################################################################
+# (h) Hebrew (and Aramaic, Elymaic, Lydian, Palmyrene, Phoenician, Samaritan & Ugaritic ) #
+###########################################################################################
 
 <Multi_key> <h> <c> <a>        : "א"  U05D0   # HEBREW LETTER ALEF
 <Multi_key> <h> <c> <apostrophe> : "א"  U05D0   # HEBREW LETTER ALEF
@@ -8778,7 +8856,7 @@ include "%L"
 <Multi_key> <h> <A> <1> <0> <0> <0> <Return> : "𐡞"  U1085E  # IMPERIAL ARAMAIC NUMBER ONE THOUSAND
 <Multi_key> <h> <A> <1> <0> <0> <0> <0> : "𐡟"  U1085F  # IMPERIAL ARAMAIC NUMBER TEN THOUSAND
 
-# (E = Elyamic)
+# (E = Elymaic)
 
 <Multi_key> <h> <E> <a> : "𐿠"  U10FE0  # ELYMAIC LETTER ALEPH
 <Multi_key> <h> <E> <apostrophe> : "𐿠"  U10FE0  # ELYMAIC LETTER ALEPH
@@ -8874,6 +8952,41 @@ include "%L"
 <Multi_key> <h> <p> <1> <0> <Return> : "𐤗" U10917   # PHOENICIAN NUMBER TEN
 <Multi_key> <h> <p> <2> <0>      : "𐤘" U10918   # PHOENICIAN NUMBER TWENTY
 <Multi_key> <h> <p> <1> <0> <0>  : "𐤙" U10919   # PHOENICIAN NUMBER ONE HUNDRED
+
+# (P = Palmyrene)
+
+<Multi_key> <h> <P> <a> : "𐡠"  U10860  # PALMYRENE LETTER ALEPH
+<Multi_key> <h> <P> <apostrophe> : "𐡠"  U10860  # PALMYRENE LETTER ALEPH
+<Multi_key> <h> <P> <b> : "𐡡"  U10861  # PALMYRENE LETTER BETH
+<Multi_key> <h> <P> <g> : "𐡢"  U10862  # PALMYRENE LETTER GIMEL
+<Multi_key> <h> <P> <d> : "𐡣"  U10863  # PALMYRENE LETTER DALETH
+<Multi_key> <h> <P> <h> : "𐡤"  U10864  # PALMYRENE LETTER HE
+<Multi_key> <h> <P> <w> : "𐡥"  U10865  # PALMYRENE LETTER WAW
+<Multi_key> <h> <P> <z> : "𐡦"  U10866  # PALMYRENE LETTER ZAYIN
+<Multi_key> <h> <P> <H> : "𐡧"  U10867  # PALMYRENE LETTER HETH
+<Multi_key> <h> <P> <T> : "𐡨"  U10868  # PALMYRENE LETTER TETH
+<Multi_key> <h> <P> <y> : "𐡩"  U10869  # PALMYRENE LETTER YODH
+<Multi_key> <h> <P> <k> : "𐡪"  U1086A  # PALMYRENE LETTER KAPH
+<Multi_key> <h> <P> <l> : "𐡫"  U1086B  # PALMYRENE LETTER LAMEDH
+<Multi_key> <h> <P> <m> : "𐡬"  U1086C  # PALMYRENE LETTER MEM
+<Multi_key> <h> <P> <less> <n> : "𐡭"  U1086D  # PALMYRENE LETTER FINAL NUN
+<Multi_key> <h> <P> <n> : "𐡮"  U1086E  # PALMYRENE LETTER NUN
+<Multi_key> <h> <P> <s> : "𐡯"  U1086F  # PALMYRENE LETTER SAMEKH
+<Multi_key> <h> <P> <grave> : "𐡰"  U10870  # PALMYRENE LETTER AYIN
+<Multi_key> <h> <P> <p> : "𐡱"  U10871  # PALMYRENE LETTER PE
+<Multi_key> <h> <P> <Z> : "𐡲"  U10872  # PALMYRENE LETTER SADHE
+<Multi_key> <h> <P> <q> : "𐡳"  U10873  # PALMYRENE LETTER QOPH
+<Multi_key> <h> <P> <r> : "𐡴"  U10874  # PALMYRENE LETTER RESH
+<Multi_key> <h> <P> <S> : "𐡵"  U10875  # PALMYRENE LETTER SHIN
+<Multi_key> <h> <P> <t> : "𐡶"  U10876  # PALMYRENE LETTER TAW
+
+<Multi_key> <h> <P> <numbersign> <1> <space> : "𐡹"  U10879  # PALMYRENE NUMBER ONE
+<Multi_key> <h> <P> <numbersign> <2> <space> : "𐡺"  U1087A  # PALMYRENE NUMBER TWO
+<Multi_key> <h> <P> <numbersign> <3> : "𐡻"  U1087B  # PALMYRENE NUMBER THREE
+<Multi_key> <h> <P> <numbersign> <4> : "𐡼"  U1087C  # PALMYRENE NUMBER FOUR
+<Multi_key> <h> <P> <numbersign> <5> : "𐡽"  U1087D  # PALMYRENE NUMBER FIVE
+<Multi_key> <h> <P> <numbersign> <1> <0> : "𐡾"  U1087E  # PALMYRENE NUMBER TEN
+<Multi_key> <h> <P> <numbersign> <2> <0> : "𐡿"  U1087F  # PALMYRENE NUMBER TWENTY
 
 # (s = Samaritan)
 
