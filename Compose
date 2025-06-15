@@ -3241,8 +3241,9 @@ include "%L"
 # (a) Arabic (and other nearby scripts) #
 #########################################
 
-# also covers Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi,
-# Inscriptional Parthian, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi
+# also covers Old North and South Arabian, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean,
+# Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Old Sogdian, Sogdian,
+# Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -3324,6 +3325,80 @@ include "%L"
 <Multi_key> <a> <numbersign> <7> : "٧"  U0667   # ARABIC-INDIC DIGIT SEVEN
 <Multi_key> <a> <numbersign> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <numbersign> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
+
+# (AN = Old North Arabian)
+
+<Multi_key> <a> <A> <N> <h> : "𐪀"  U10A80  # OLD NORTH ARABIAN LETTER HEH
+<Multi_key> <a> <A> <N> <l> : "𐪁"  U10A81  # OLD NORTH ARABIAN LETTER LAM
+<Multi_key> <a> <A> <N> <exclam> <h> : "𐪂"  U10A82  # OLD NORTH ARABIAN LETTER HAH (ḥ)
+<Multi_key> <a> <A> <N> <m> : "𐪃"  U10A83  # OLD NORTH ARABIAN LETTER MEEM
+<Multi_key> <a> <A> <N> <q> : "𐪄"  U10A84  # OLD NORTH ARABIAN LETTER QAF
+<Multi_key> <a> <A> <N> <w> : "𐪅"  U10A85  # OLD NORTH ARABIAN LETTER WAW
+<Multi_key> <a> <A> <N> <s> <2> : "𐪆"  U10A86  # OLD NORTH ARABIAN LETTER ES-2
+<Multi_key> <a> <A> <N> <r> : "𐪇"  U10A87  # OLD NORTH ARABIAN LETTER REH
+<Multi_key> <a> <A> <N> <b> : "𐪈"  U10A88  # OLD NORTH ARABIAN LETTER BEH
+<Multi_key> <a> <A> <N> <t> : "𐪉"  U10A89  # OLD NORTH ARABIAN LETTER TEH
+<Multi_key> <a> <A> <N> <s> <1> : "𐪊"  U10A8A  # OLD NORTH ARABIAN LETTER ES-1
+<Multi_key> <a> <A> <N> <k> : "𐪋"  U10A8B  # OLD NORTH ARABIAN LETTER KAF
+<Multi_key> <a> <A> <N> <n> : "𐪌"  U10A8C  # OLD NORTH ARABIAN LETTER NOON
+<Multi_key> <a> <A> <N> <u> <h> : "𐪍"  U10A8D  # OLD NORTH ARABIAN LETTER KHAH (ḫ)
+<Multi_key> <a> <A> <N> <exclam> <s> : "𐪎"  U10A8E  # OLD NORTH ARABIAN LETTER SAD (ṣ)
+<Multi_key> <a> <A> <N> <s> <3> : "𐪏"  U10A8F  # OLD NORTH ARABIAN LETTER ES-3
+<Multi_key> <a> <A> <N> <f> : "𐪐"  U10A90  # OLD NORTH ARABIAN LETTER FEH
+<Multi_key> <a> <A> <N> <a> : "𐪑"  U10A91  # OLD NORTH ARABIAN LETTER ALEF
+<Multi_key> <a> <A> <N> <apostrophe> : "𐪑"  U10A91  # OLD NORTH ARABIAN LETTER ALEF
+<Multi_key> <a> <A> <N> <grave> : "𐪒"  U10A92  # OLD NORTH ARABIAN LETTER AIN
+<Multi_key> <a> <A> <N> <exclam> <d> : "𐪓"  U10A93  # OLD NORTH ARABIAN LETTER DAD (ḍ)
+<Multi_key> <a> <A> <N> <g> : "𐪔"  U10A94  # OLD NORTH ARABIAN LETTER GEEM
+<Multi_key> <a> <A> <N> <d> : "𐪕"  U10A95  # OLD NORTH ARABIAN LETTER DAL
+<Multi_key> <a> <A> <N> <period> <g> : "𐪖"  U10A96  # OLD NORTH ARABIAN LETTER GHAIN (ġ)
+<Multi_key> <a> <A> <N> <exclam> <t> : "𐪗"  U10A97  # OLD NORTH ARABIAN LETTER TAH (ṭ)
+<Multi_key> <a> <A> <N> <z> : "𐪘"  U10A98  # OLD NORTH ARABIAN LETTER ZAIN
+<Multi_key> <a> <A> <N> <underscore> <d> : "𐪙"  U10A99  # OLD NORTH ARABIAN LETTER THAL (ḏ)
+<Multi_key> <a> <A> <N> <y> : "𐪚"  U10A9A  # OLD NORTH ARABIAN LETTER YEH
+<Multi_key> <a> <A> <N> <underscore> <t> : "𐪛"  U10A9B  # OLD NORTH ARABIAN LETTER THEH (ṯ)
+<Multi_key> <a> <A> <N> <exclam> <z> : "𐪜"  U10A9C  # OLD NORTH ARABIAN LETTER ZAH (ẓ)
+
+<Multi_key> <a> <A> <N> <numbersign> <1> <space> : "𐪝"  U10A9D  # OLD NORTH ARABIAN NUMBER ONE
+<Multi_key> <a> <A> <N> <numbersign> <1> <0> : "𐪞"  U10A9E  # OLD NORTH ARABIAN NUMBER TEN
+<Multi_key> <a> <A> <N> <numbersign> <2> <0> : "𐪟"  U10A9F  # OLD NORTH ARABIAN NUMBER TWENTY
+
+# (AS = Old South Arabian)
+
+<Multi_key> <a> <A> <S> <h> : "𐩠"  U10A60  # OLD SOUTH ARABIAN LETTER HE
+<Multi_key> <a> <A> <S> <l> : "𐩡"  U10A61  # OLD SOUTH ARABIAN LETTER LAMEDH
+<Multi_key> <a> <A> <S> <exclam> <h> : "𐩢"  U10A62  # OLD SOUTH ARABIAN LETTER HETH (ḥ)
+<Multi_key> <a> <A> <S> <m> : "𐩣"  U10A63  # OLD SOUTH ARABIAN LETTER MEM
+<Multi_key> <a> <A> <S> <q> : "𐩤"  U10A64  # OLD SOUTH ARABIAN LETTER QOPH
+<Multi_key> <a> <A> <S> <w> : "𐩥"  U10A65  # OLD SOUTH ARABIAN LETTER WAW
+<Multi_key> <a> <A> <S> <v> <s> : "𐩦"  U10A66  # OLD SOUTH ARABIAN LETTER SHIN (š)
+<Multi_key> <a> <A> <S> <r> : "𐩧"  U10A67  # OLD SOUTH ARABIAN LETTER RESH
+<Multi_key> <a> <A> <S> <b> : "𐩨"  U10A68  # OLD SOUTH ARABIAN LETTER BETH
+<Multi_key> <a> <A> <S> <t> : "𐩩"  U10A69  # OLD SOUTH ARABIAN LETTER TAW
+<Multi_key> <a> <A> <S> <s> : "𐩪"  U10A6A  # OLD SOUTH ARABIAN LETTER SAT
+<Multi_key> <a> <A> <S> <k> : "𐩫"  U10A6B  # OLD SOUTH ARABIAN LETTER KAPH
+<Multi_key> <a> <A> <S> <n> : "𐩬"  U10A6C  # OLD SOUTH ARABIAN LETTER NUN
+<Multi_key> <a> <A> <S> <u> <h> : "𐩭"  U10A6D  # OLD SOUTH ARABIAN LETTER KHETH
+<Multi_key> <a> <A> <S> <exclam> <s> : "𐩮"  U10A6E  # OLD SOUTH ARABIAN LETTER SADHE (ṣ)
+<Multi_key> <a> <A> <S> <apostrophe> <s> : "𐩯"  U10A6F  # OLD SOUTH ARABIAN LETTER SAMEKH (ś)
+<Multi_key> <a> <A> <S> <f> : "𐩰"  U10A70  # OLD SOUTH ARABIAN LETTER FE
+<Multi_key> <a> <A> <S> <a> : "𐩱"  U10A71  # OLD SOUTH ARABIAN LETTER ALEF
+<Multi_key> <a> <A> <S> <apostrophe> <space> : "𐩱"  U10A71  # OLD SOUTH ARABIAN LETTER ALEF
+<Multi_key> <a> <A> <S> <grave> : "𐩲"  U10A72  # OLD SOUTH ARABIAN LETTER AYN
+<Multi_key> <a> <A> <S> <exclam> <d> : "𐩳"  U10A73  # OLD SOUTH ARABIAN LETTER DHADHE (ḍ)
+<Multi_key> <a> <A> <S> <g> : "𐩴"  U10A74  # OLD SOUTH ARABIAN LETTER GIMEL
+<Multi_key> <a> <A> <S> <d> : "𐩵"  U10A75  # OLD SOUTH ARABIAN LETTER DALETH
+<Multi_key> <a> <A> <S> <period> <g> : "𐩶"  U10A76  # OLD SOUTH ARABIAN LETTER GHAYN (ġ)
+<Multi_key> <a> <A> <S> <exclam> <t> : "𐩷"  U10A77  # OLD SOUTH ARABIAN LETTER TETH (ṭ)
+<Multi_key> <a> <A> <S> <z> : "𐩸"  U10A78  # OLD SOUTH ARABIAN LETTER ZAYN
+<Multi_key> <a> <A> <S> <underscore> <d> : "𐩹"  U10A79  # OLD SOUTH ARABIAN LETTER DHALETH (ḏ)
+<Multi_key> <a> <A> <S> <y> : "𐩺"  U10A7A  # OLD SOUTH ARABIAN LETTER YODH
+<Multi_key> <a> <A> <S> <underscore> <t> : "𐩻"  U10A7B  # OLD SOUTH ARABIAN LETTER THAW (ṯ)
+<Multi_key> <a> <A> <S> <exclam> <z> : "𐩼"  U10A7C  # OLD SOUTH ARABIAN LETTER THETH (ẓ)
+
+<Multi_key> <a> <A> <S> <numbersign> <1> : "𐩽"  U10A7D  # OLD SOUTH ARABIAN NUMBER ONE
+<Multi_key> <a> <A> <S> <numbersign> <5> <0> : "𐩾"  U10A7E  # OLD SOUTH ARABIAN NUMBER FIFTY
+<Multi_key> <a> <A> <S> <numbersign> <Return> : "𐩿"  U10A7F  # OLD SOUTH ARABIAN NUMERIC INDICATOR
 
 # (C = Chorasmian)
 
