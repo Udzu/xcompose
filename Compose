@@ -696,7 +696,7 @@ include "%L"
 <Multi_key> <Y> <Y>                 : "ʏ"  U028F   # LATIN LETTER SMALL CAPITAL Y
 
 <Multi_key> <e> <e>                 : "ə"  U0259   # LATIN SMALL LETTER SCHWA
-<Multi_key> <g> <g> <Return>        : "ɡ"  U0261  # LATIN SMALL LETTER SCRIPT G
+<Multi_key> <g> <g> <space>        : "ɡ"  U0261  # LATIN SMALL LETTER SCRIPT G
 <Multi_key> <r> <r>                 : "ɹ"  U0279   # LATIN SMALL LETTER TURNED R
 
 <Multi_key> <a> <v>                 : "ɐ"  U0250   # LATIN SMALL LETTER TURNED A
@@ -714,14 +714,14 @@ include "%L"
 <Multi_key> <question> <less> <minus> : "ʢ"  U02A2   # LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE
 
 <Multi_key> <d> <l>                 : "ɖ"  U0256   # LATIN SMALL LETTER D WITH TAIL
-<Multi_key> <l> <l> <Return>        : "ɭ"  U026D   # LATIN SMALL LETTER L WITH RETROFLEX HOOK (use l^l for ˡ)
+<Multi_key> <l> <l> <space>         : "ɭ"  U026D   # LATIN SMALL LETTER L WITH RETROFLEX HOOK (use l^l for ˡ)
 <Multi_key> <l> <l> <h>             : "ꞎ"  UA78E   # LATIN SMALL LETTER L WITH RETROFLEX HOOK AND BELT
 <Multi_key> <l> <l> <z>             : "𝼅" U1DF05  # LATIN SMALL LETTER LEZH WITH RETROFLEX HOOK
 <Multi_key> <n> <l>                 : "ɳ"  U0273   # LATIN SMALL LETTER N WITH RETROFLEX HOOK
 <Multi_key> <s> <l>                 : "ʂ"  U0282   # LATIN SMALL LETTER S WITH HOOK
 <Multi_key> <t> <l>                 : "ʈ"  U0288   # LATIN SMALL LETTER T WITH RETROFLEX HOOK
 <Multi_key> <z> <l>                 : "ʐ"  U0290   # LATIN SMALL LETTER Z WITH RETROFLEX HOOK
-<Multi_key> <r> <l> <Return>        : "ɽ"  U027D   # LATIN SMALL LETTER R WITH TAIL
+<Multi_key> <r> <l> <space>         : "ɽ"  U027D   # LATIN SMALL LETTER R WITH TAIL
 <Multi_key> <r> <l> <v>             : "ɻ"  U027B   # LATIN SMALL LETTER TURNED R WITH HOOK
 <Multi_key> <c> <at>                : "ɕ"  U0255   # LATIN SMALL LETTER C WITH CURL
 <Multi_key> <z> <at>                : "ʑ"  U0291   # LATIN SMALL LETTER Z WITH CURL
@@ -2459,6 +2459,7 @@ include "%L"
 <Multi_key> <braceleft> <f> <f> <l> <braceright> : "ﬄ" UFB04   # LATIN SMALL LIGATURE FFL
 <Multi_key> <braceleft> <f> <f> <braceright> : "ﬀ" UFB00   # LATIN SMALL LIGATURE FF
 <Multi_key> <braceleft> <f> <i> <braceright> : "ﬁ" UFB01   # LATIN SMALL LIGATURE FI
+<Multi_key> <braceleft> <f> <j> <braceright> : "ꈓ"  UA213  # YI SYLLABLE KUR (visually similar)
 <Multi_key> <braceleft> <F> <l> <braceright> : "ମ" U0B2E   # ORIYA LETTER MA (visually similar)
 <Multi_key> <braceleft> <f> <l> <braceright> : "ﬂ" UFB02   # LATIN SMALL LIGATURE FL
 <Multi_key> <braceleft> <f> <m> <braceright> : "㎙" U3399   # SQUARE FM
@@ -2516,6 +2517,7 @@ include "%L"
 
 <Multi_key> <braceleft> <J> <B> <braceright> : "邒" U9092   # CJK UNIFIED IDEOGRAPH-9092 (visually similar)
 <Multi_key> <braceleft> <j> <c> <braceright> : "𐿱" U10FF1   # ELYMAIC LETTER SADHE (visually similar)
+<Multi_key> <braceleft> <J> <i> <braceright> : "ꀮ"  UA02E  # YI SYLLABLE BU (visually similar)
 
 <Multi_key> <braceleft> <k> <A> <braceright> : "㎄" U3384   # SQUARE KA
 <Multi_key> <braceleft> <K> <B> <braceright> : "㎅" U3385   # SQUARE KB
@@ -2535,6 +2537,7 @@ include "%L"
 <Multi_key> <braceleft> <L> <C> <braceright> : "ㅦ" U3166   # HANGUL LETTER NIEUN-TIKEUT (visually similar)
 <Multi_key> <braceleft> <L> <D> <braceright> : "ம" U0BAE   # TAMIL LETTER MA (visually similar)
 <Multi_key> <braceleft> <L> <H> <braceright> : "내" UB0B4   # HANGUL SYLLABLE NAE (visually similar)
+<Multi_key> <braceleft> <L> <I> <braceright> : "ꚳ"  UA6B3  # BAMUM LETTER M (visually similar)
 <Multi_key> <braceleft> <l> <i> <braceright> : "և" U0587   # ARMENIAN SMALL LIGATURE ECH YIWN (visually similar)
 <Multi_key> <braceleft> <L> <J> <braceright> : "Ǉ" U01C7   # LATIN CAPITAL LETTER LJ
 <Multi_key> <braceleft> <L> <j> <braceright> : "ǈ" U01C8   # LATIN CAPITAL LETTER L WITH SMALL LETTER J
@@ -2592,6 +2595,7 @@ include "%L"
 <Multi_key> <braceleft> <O> <I> <braceright> : "Ꮊ" U13BA   # CHEROKEE LETTER ME (visually similar)
 <Multi_key> <braceleft> <o> <i> <braceright> : "ꮊ" UAB8A   # CHEROKEE SMALL LETTER ME (visually similar)
 <Multi_key> <braceleft> <O> <J> <braceright> : "叮" U53EE   # CJK UNIFIED IDEOGRAPH-53EE (visually similar)
+<Multi_key> <braceleft> <o> <j> <braceright> : "ꆾ"  UA1BE  # YI SYLLABLE LIEP (visually similar)
 <Multi_key> <braceleft> <O> <l> <braceright> : "이" UC774   # HANGUL SYLLABLE I (visually similar)
 <Multi_key> <braceleft> <o> <o> <l> <braceright> : "𑈥" U11225   # KHOJKI LETTER YA (visually similar)
 <Multi_key> <braceleft> <O> <O> <braceright> : "Ꝏ" UA74E   # LATIN CAPITAL LETTER OO
@@ -2628,6 +2632,7 @@ include "%L"
 <Multi_key> <braceleft> <r> <a> <d> <braceright> : "㎭" U33AD   # SQUARE RAD
 <Multi_key> <braceleft> <r> <b> <braceright> : "ꭠ" UAB60   # LATIN SMALL LETTER SAKHA YAT (visually similar)
 <Multi_key> <braceleft> <R> <E> <braceright> : "Ԙ" U0518   # CYRILLIC CAPITAL LETTER YAE (visually similar)
+<Multi_key> <braceleft> <r> <i> <braceright> : "ꑍ"  UA44D  # YI SYLLABLE NYIP (visually similar)
 <Multi_key> <braceleft> <r> <l> <braceright> : "𑀲" U11032   # BRAHMI LETTER SA (visually similar)
 <Multi_key> <braceleft> <r> <o> <braceright> : "ᘙ" U1619   # CANADIAN SYLLABICS CARRIER JI (visually similar)
 <Multi_key> <braceleft> <r> <o> <o> <braceright> : "ᰢ" U1C22   # LEPCHA LETTER WA (visually similar)
@@ -2693,8 +2698,10 @@ include "%L"
 <Multi_key> <braceleft> <X> <I> <I> <braceright> : "Ⅻ" U216B   # ROMAN NUMERAL TWELVE
 <Multi_key> <braceleft> <x> <i> <i> <braceright> : "ⅻ" U217B   # SMALL ROMAN NUMERAL TWELVE
 <Multi_key> <braceleft> <X> <I> <braceright> : "Ⅺ" U216A   # ROMAN NUMERAL ELEVEN
+<Multi_key> <braceleft> <X> <i> <braceright> : "ꋌ"  UA2CC  # YI SYLLABLE CY (visually similar)
 <Multi_key> <braceleft> <x> <i> <braceright> : "ⅺ" U217A   # SMALL ROMAN NUMERAL ELEVEN
 <Multi_key> <braceleft> <X> <I> <J> <braceright> : "刈" U5208   # CJK UNIFIED IDEOGRAPH-5208 (visually similar)
+<Multi_key> <braceleft> <X> <o> <braceright> : "ꉼ"  UA27C  # YI SYLLABLE HOP (visually similar)
 
 <Multi_key> <braceleft> <Z> <B> <braceright> : "邔" U9094   # CJK UNIFIED IDEOGRAPH-9094 (visually similar)
 <Multi_key> <braceleft> <z> <e> <braceright> : "𑣰" U118F0   # WARANG CITI NUMBER SEVENTY (visually similar)
@@ -3049,7 +3056,7 @@ include "%L"
 <Multi_key> <asciicircum> <greater> <B> : "ϖ" U03D6   # GREEK PI SYMBOL
 <Multi_key> <asciicircum> <greater> <C> : "೧" U0CE7   # KANNADA DIGIT ONE
 <Multi_key> <asciicircum> <greater> <D> : "ᗜ" U15DC   # CANADIAN SYLLABICS CARRIER THU
-<Multi_key> <asciicircum> <greater> <E> : "ᗰ" U15F0   # CANADIAN SYLLABICS CARRIER GO
+<Multi_key> <asciicircum> <greater> <E> : "𐊿"  U102BF  # CARIAN LETTER UU
 <Multi_key> <asciicircum> <greater> <F> : "╖" U2556   # BOX DRAWINGS DOWN DOUBLE AND LEFT SINGLE
 <Multi_key> <asciicircum> <greater> <G> : "ᘏ" U160F   # CANADIAN SYLLABICS CARRIER YO
 <Multi_key> <asciicircum> <greater> <H> : "ェ" U30A7   # KATAKANA LETTER SMALL E
@@ -3234,8 +3241,9 @@ include "%L"
 # (a) Arabic (and other nearby scripts) #
 #########################################
 
-# also covers Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi,
-# Inscriptional Parthian, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi
+# also covers Old North and South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean,
+# Nabatean, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian,
+# Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -3317,6 +3325,137 @@ include "%L"
 <Multi_key> <a> <numbersign> <7> : "٧"  U0667   # ARABIC-INDIC DIGIT SEVEN
 <Multi_key> <a> <numbersign> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <numbersign> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
+
+# (A = Avestan) (Hoffmann transcription)
+
+<Multi_key> <a> <A> <a> <space> : "𐬀"  U10B00  # AVESTAN LETTER A
+<Multi_key> <a> <A> <minus> <a> <space> : "𐬁"  U10B01  # AVESTAN LETTER AA (ā)
+<Multi_key> <a> <A> <a> <o> <space> : "𐬂"  U10B02  # AVESTAN LETTER AO (å)
+<Multi_key> <a> <A> <minus> <a> <o> : "𐬃"  U10B03  # AVESTAN LETTER AAO (ā̊)
+<Multi_key> <a> <A> <semicolon> <a> : "𐬄"  U10B04  # AVESTAN LETTER AN (ą)
+<Multi_key> <a> <A> <period> <semicolon> <a> : "𐬅"  U10B05  # AVESTAN LETTER AAN (ą̇)
+<Multi_key> <a> <A> <e> <e> : "𐬆"  U10B06  # AVESTAN LETTER AE (ə)
+<Multi_key> <a> <A> <minus> <e> <e> : "𐬇"  U10B07  # AVESTAN LETTER AEE (ə‑)
+<Multi_key> <a> <A> <e> <space> : "𐬈"  U10B08  # AVESTAN LETTER E
+<Multi_key> <a> <A> <minus> <e> <space> : "𐬉"  U10B09  # AVESTAN LETTER EE (ē)
+<Multi_key> <a> <A> <o> : "𐬊"  U10B0A  # AVESTAN LETTER O
+<Multi_key> <a> <A> <minus> <o> : "𐬋"  U10B0B  # AVESTAN LETTER OO (ō)
+<Multi_key> <a> <A> <i> : "𐬌"  U10B0C  # AVESTAN LETTER I
+<Multi_key> <a> <A> <minus> <i> : "𐬍"  U10B0D  # AVESTAN LETTER II (ī)
+<Multi_key> <a> <A> <u> : "𐬎"  U10B0E  # AVESTAN LETTER U
+<Multi_key> <a> <A> <minus> <u> : "𐬏"  U10B0F  # AVESTAN LETTER UU (ū)
+<Multi_key> <a> <A> <k> : "𐬐"  U10B10  # AVESTAN LETTER KE
+<Multi_key> <a> <A> <x> <space> : "𐬑"  U10B11  # AVESTAN LETTER XE
+<Multi_key> <a> <A> <apostrophe> <x> : "𐬒"  U10B12  # AVESTAN LETTER XYE (x́)
+<Multi_key> <a> <A> <x> <v> : "𐬓"  U10B13  # AVESTAN LETTER XVE (xᵛ)
+<Multi_key> <a> <A> <g> <space> : "𐬔"  U10B14  # AVESTAN LETTER GE
+<Multi_key> <a> <A> <period> <g> : "𐬕"  U10B15  # AVESTAN LETTER GGE (ġ)
+<Multi_key> <a> <A> <g> <h> : "𐬖"  U10B16  # AVESTAN LETTER GHE (γ)
+<Multi_key> <a> <A> <c> : "𐬗"  U10B17  # AVESTAN LETTER CE
+<Multi_key> <a> <A> <j> : "𐬘"  U10B18  # AVESTAN LETTER JE
+<Multi_key> <a> <A> <t> <space> : "𐬙"  U10B19  # AVESTAN LETTER TE
+<Multi_key> <a> <A> <t> <h> : "𐬚"  U10B1A  # AVESTAN LETTER THE (θ)
+<Multi_key> <a> <A> <d> <space> : "𐬛"  U10B1B  # AVESTAN LETTER DE
+<Multi_key> <a> <A> <d> <h> : "𐬜"  U10B1C  # AVESTAN LETTER DHE (δ)
+<Multi_key> <a> <A> <asciitilde> <t> : "𐬝"  U10B1D  # AVESTAN LETTER TTE (t̰)
+<Multi_key> <a> <A> <p> : "𐬞"  U10B1E  # AVESTAN LETTER PE
+<Multi_key> <a> <A> <f> : "𐬟"  U10B1F  # AVESTAN LETTER FE
+<Multi_key> <a> <A> <b> <space> : "𐬠"  U10B20  # AVESTAN LETTER BE
+<Multi_key> <a> <A> <b> <h> : "𐬡"  U10B21  # AVESTAN LETTER BHE (β)
+<Multi_key> <a> <A> <n> <g> <space> : "𐬢"  U10B22  # AVESTAN LETTER NGE (ŋ)
+<Multi_key> <a> <A> <apostrophe> <n> <g> : "𐬣"  U10B23  # AVESTAN LETTER NGYE (ŋ́)
+<Multi_key> <a> <A> <n> <g> <v> : "𐬤"  U10B24  # AVESTAN LETTER NGVE (ŋᵛ)
+<Multi_key> <a> <A> <n> <space> : "𐬥"  U10B25  # AVESTAN LETTER NE
+<Multi_key> <a> <A> <apostrophe> <n> <space> : "𐬦"  U10B26  # AVESTAN LETTER NYE (ń)
+<Multi_key> <a> <A> <exclam> <n> : "𐬧"  U10B27  # AVESTAN LETTER NNE (ṇ)
+<Multi_key> <a> <A> <m> : "𐬨"  U10B28  # AVESTAN LETTER ME
+<Multi_key> <a> <A> <semicolon> <m> : "𐬩"  U10B29  # AVESTAN LETTER HME (m̨)
+<Multi_key> <a> <A> <period> <y> : "𐬪"  U10B2A  # AVESTAN LETTER YYE (ẏ)
+<Multi_key> <a> <A> <y> : "𐬫"  U10B2B  # AVESTAN LETTER YE
+<Multi_key> <a> <A> <v> <space> : "𐬬"  U10B2C  # AVESTAN LETTER VE
+<Multi_key> <a> <A> <r> : "𐬭"  U10B2D  # AVESTAN LETTER RE
+<Multi_key> <a> <A> <l> : "𐬮"  U10B2E  # AVESTAN LETTER LE
+<Multi_key> <a> <A> <s> : "𐬯"  U10B2F  # AVESTAN LETTER SE
+<Multi_key> <a> <A> <z> : "𐬰"  U10B30  # AVESTAN LETTER ZE
+<Multi_key> <a> <A> <v> <s> : "𐬱"  U10B31  # AVESTAN LETTER SHE (š)
+<Multi_key> <a> <A> <v> <z> : "𐬲"  U10B32  # AVESTAN LETTER ZHE (ž)
+<Multi_key> <a> <A> <apostrophe> <v> <s> : "𐬳"  U10B33  # AVESTAN LETTER SHYE (š́)
+<Multi_key> <a> <A> <exclam> <v> <s> : "𐬴"  U10B34  # AVESTAN LETTER SSHE (ṣ̌)
+<Multi_key> <a> <A> <h> : "𐬵"  U10B35  # AVESTAN LETTER HE
+
+# (AN = Old North Arabian)
+
+<Multi_key> <a> <A> <N> <h> : "𐪀"  U10A80  # OLD NORTH ARABIAN LETTER HEH
+<Multi_key> <a> <A> <N> <l> : "𐪁"  U10A81  # OLD NORTH ARABIAN LETTER LAM
+<Multi_key> <a> <A> <N> <exclam> <h> : "𐪂"  U10A82  # OLD NORTH ARABIAN LETTER HAH (ḥ)
+<Multi_key> <a> <A> <N> <m> : "𐪃"  U10A83  # OLD NORTH ARABIAN LETTER MEEM
+<Multi_key> <a> <A> <N> <q> : "𐪄"  U10A84  # OLD NORTH ARABIAN LETTER QAF
+<Multi_key> <a> <A> <N> <w> : "𐪅"  U10A85  # OLD NORTH ARABIAN LETTER WAW
+<Multi_key> <a> <A> <N> <s> <2> : "𐪆"  U10A86  # OLD NORTH ARABIAN LETTER ES-2
+<Multi_key> <a> <A> <N> <r> : "𐪇"  U10A87  # OLD NORTH ARABIAN LETTER REH
+<Multi_key> <a> <A> <N> <b> : "𐪈"  U10A88  # OLD NORTH ARABIAN LETTER BEH
+<Multi_key> <a> <A> <N> <t> : "𐪉"  U10A89  # OLD NORTH ARABIAN LETTER TEH
+<Multi_key> <a> <A> <N> <s> <1> : "𐪊"  U10A8A  # OLD NORTH ARABIAN LETTER ES-1
+<Multi_key> <a> <A> <N> <k> : "𐪋"  U10A8B  # OLD NORTH ARABIAN LETTER KAF
+<Multi_key> <a> <A> <N> <n> : "𐪌"  U10A8C  # OLD NORTH ARABIAN LETTER NOON
+<Multi_key> <a> <A> <N> <u> <h> : "𐪍"  U10A8D  # OLD NORTH ARABIAN LETTER KHAH (ḫ)
+<Multi_key> <a> <A> <N> <exclam> <s> : "𐪎"  U10A8E  # OLD NORTH ARABIAN LETTER SAD (ṣ)
+<Multi_key> <a> <A> <N> <s> <3> : "𐪏"  U10A8F  # OLD NORTH ARABIAN LETTER ES-3
+<Multi_key> <a> <A> <N> <f> : "𐪐"  U10A90  # OLD NORTH ARABIAN LETTER FEH
+<Multi_key> <a> <A> <N> <a> : "𐪑"  U10A91  # OLD NORTH ARABIAN LETTER ALEF
+<Multi_key> <a> <A> <N> <apostrophe> : "𐪑"  U10A91  # OLD NORTH ARABIAN LETTER ALEF
+<Multi_key> <a> <A> <N> <grave> : "𐪒"  U10A92  # OLD NORTH ARABIAN LETTER AIN
+<Multi_key> <a> <A> <N> <exclam> <d> : "𐪓"  U10A93  # OLD NORTH ARABIAN LETTER DAD (ḍ)
+<Multi_key> <a> <A> <N> <g> : "𐪔"  U10A94  # OLD NORTH ARABIAN LETTER GEEM
+<Multi_key> <a> <A> <N> <d> : "𐪕"  U10A95  # OLD NORTH ARABIAN LETTER DAL
+<Multi_key> <a> <A> <N> <period> <g> : "𐪖"  U10A96  # OLD NORTH ARABIAN LETTER GHAIN (ġ)
+<Multi_key> <a> <A> <N> <exclam> <t> : "𐪗"  U10A97  # OLD NORTH ARABIAN LETTER TAH (ṭ)
+<Multi_key> <a> <A> <N> <z> : "𐪘"  U10A98  # OLD NORTH ARABIAN LETTER ZAIN
+<Multi_key> <a> <A> <N> <underscore> <d> : "𐪙"  U10A99  # OLD NORTH ARABIAN LETTER THAL (ḏ)
+<Multi_key> <a> <A> <N> <y> : "𐪚"  U10A9A  # OLD NORTH ARABIAN LETTER YEH
+<Multi_key> <a> <A> <N> <underscore> <t> : "𐪛"  U10A9B  # OLD NORTH ARABIAN LETTER THEH (ṯ)
+<Multi_key> <a> <A> <N> <exclam> <z> : "𐪜"  U10A9C  # OLD NORTH ARABIAN LETTER ZAH (ẓ)
+
+<Multi_key> <a> <A> <N> <numbersign> <1> <space> : "𐪝"  U10A9D  # OLD NORTH ARABIAN NUMBER ONE
+<Multi_key> <a> <A> <N> <numbersign> <1> <0> : "𐪞"  U10A9E  # OLD NORTH ARABIAN NUMBER TEN
+<Multi_key> <a> <A> <N> <numbersign> <2> <0> : "𐪟"  U10A9F  # OLD NORTH ARABIAN NUMBER TWENTY
+
+# (AS = Old South Arabian)
+
+<Multi_key> <a> <A> <S> <h> : "𐩠"  U10A60  # OLD SOUTH ARABIAN LETTER HE
+<Multi_key> <a> <A> <S> <l> : "𐩡"  U10A61  # OLD SOUTH ARABIAN LETTER LAMEDH
+<Multi_key> <a> <A> <S> <exclam> <h> : "𐩢"  U10A62  # OLD SOUTH ARABIAN LETTER HETH (ḥ)
+<Multi_key> <a> <A> <S> <m> : "𐩣"  U10A63  # OLD SOUTH ARABIAN LETTER MEM
+<Multi_key> <a> <A> <S> <q> : "𐩤"  U10A64  # OLD SOUTH ARABIAN LETTER QOPH
+<Multi_key> <a> <A> <S> <w> : "𐩥"  U10A65  # OLD SOUTH ARABIAN LETTER WAW
+<Multi_key> <a> <A> <S> <v> <s> : "𐩦"  U10A66  # OLD SOUTH ARABIAN LETTER SHIN (š)
+<Multi_key> <a> <A> <S> <r> : "𐩧"  U10A67  # OLD SOUTH ARABIAN LETTER RESH
+<Multi_key> <a> <A> <S> <b> : "𐩨"  U10A68  # OLD SOUTH ARABIAN LETTER BETH
+<Multi_key> <a> <A> <S> <t> : "𐩩"  U10A69  # OLD SOUTH ARABIAN LETTER TAW
+<Multi_key> <a> <A> <S> <s> : "𐩪"  U10A6A  # OLD SOUTH ARABIAN LETTER SAT
+<Multi_key> <a> <A> <S> <k> : "𐩫"  U10A6B  # OLD SOUTH ARABIAN LETTER KAPH
+<Multi_key> <a> <A> <S> <n> : "𐩬"  U10A6C  # OLD SOUTH ARABIAN LETTER NUN
+<Multi_key> <a> <A> <S> <u> <h> : "𐩭"  U10A6D  # OLD SOUTH ARABIAN LETTER KHETH
+<Multi_key> <a> <A> <S> <exclam> <s> : "𐩮"  U10A6E  # OLD SOUTH ARABIAN LETTER SADHE (ṣ)
+<Multi_key> <a> <A> <S> <apostrophe> <s> : "𐩯"  U10A6F  # OLD SOUTH ARABIAN LETTER SAMEKH (ś)
+<Multi_key> <a> <A> <S> <f> : "𐩰"  U10A70  # OLD SOUTH ARABIAN LETTER FE
+<Multi_key> <a> <A> <S> <a> : "𐩱"  U10A71  # OLD SOUTH ARABIAN LETTER ALEF
+<Multi_key> <a> <A> <S> <apostrophe> <space> : "𐩱"  U10A71  # OLD SOUTH ARABIAN LETTER ALEF
+<Multi_key> <a> <A> <S> <grave> : "𐩲"  U10A72  # OLD SOUTH ARABIAN LETTER AYN
+<Multi_key> <a> <A> <S> <exclam> <d> : "𐩳"  U10A73  # OLD SOUTH ARABIAN LETTER DHADHE (ḍ)
+<Multi_key> <a> <A> <S> <g> : "𐩴"  U10A74  # OLD SOUTH ARABIAN LETTER GIMEL
+<Multi_key> <a> <A> <S> <d> : "𐩵"  U10A75  # OLD SOUTH ARABIAN LETTER DALETH
+<Multi_key> <a> <A> <S> <period> <g> : "𐩶"  U10A76  # OLD SOUTH ARABIAN LETTER GHAYN (ġ)
+<Multi_key> <a> <A> <S> <exclam> <t> : "𐩷"  U10A77  # OLD SOUTH ARABIAN LETTER TETH (ṭ)
+<Multi_key> <a> <A> <S> <z> : "𐩸"  U10A78  # OLD SOUTH ARABIAN LETTER ZAYN
+<Multi_key> <a> <A> <S> <underscore> <d> : "𐩹"  U10A79  # OLD SOUTH ARABIAN LETTER DHALETH (ḏ)
+<Multi_key> <a> <A> <S> <y> : "𐩺"  U10A7A  # OLD SOUTH ARABIAN LETTER YODH
+<Multi_key> <a> <A> <S> <underscore> <t> : "𐩻"  U10A7B  # OLD SOUTH ARABIAN LETTER THAW (ṯ)
+<Multi_key> <a> <A> <S> <exclam> <z> : "𐩼"  U10A7C  # OLD SOUTH ARABIAN LETTER THETH (ẓ)
+
+<Multi_key> <a> <A> <S> <numbersign> <1> : "𐩽"  U10A7D  # OLD SOUTH ARABIAN NUMBER ONE
+<Multi_key> <a> <A> <S> <numbersign> <5> <0> : "𐩾"  U10A7E  # OLD SOUTH ARABIAN NUMBER FIFTY
+<Multi_key> <a> <A> <S> <numbersign> <Return> : "𐩿"  U10A7F  # OLD SOUTH ARABIAN NUMERIC INDICATOR
 
 # (C = Chorasmian)
 
@@ -4134,8 +4273,8 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# covers Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada, Mahajani,
-# Malayalam, Meitei, Odia, Saurashtra, Sinhala, Sylheti Nagri, Tamil, Telugu.
+# covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu,
+# Kannada, Mahajani, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Sylheti Nagri, Tamil, Telugu.
 # see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -4255,25 +4394,25 @@ include "%L"
 <Multi_key> <b> <c> <numbersign> <8> : "𑁮" U1106E   # BRAHMI DIGIT EIGHT
 <Multi_key> <b> <c> <numbersign> <9> : "𑁯" U1106F   # BRAHMI DIGIT NINE
 
-<Multi_key> <b> <c> <1> <Return> : "𑁒" U11052   # BRAHMI NUMBER ONE
-<Multi_key> <b> <c> <2> <Return> : "𑁓" U11053   # BRAHMI NUMBER TWO
-<Multi_key> <b> <c> <3> <Return> : "𑁔" U11054   # BRAHMI NUMBER THREE
-<Multi_key> <b> <c> <4> <Return> : "𑁕" U11055   # BRAHMI NUMBER FOUR
-<Multi_key> <b> <c> <5> <Return> : "𑁖" U11056   # BRAHMI NUMBER FIVE
-<Multi_key> <b> <c> <6> <Return> : "𑁗" U11057   # BRAHMI NUMBER SIX
-<Multi_key> <b> <c> <7> <Return> : "𑁘" U11058   # BRAHMI NUMBER SEVEN
-<Multi_key> <b> <c> <8> <Return> : "𑁙" U11059   # BRAHMI NUMBER EIGHT
-<Multi_key> <b> <c> <9> <Return> : "𑁚" U1105A   # BRAHMI NUMBER NINE
-<Multi_key> <b> <c> <1> <0> <Return> : "𑁛" U1105B   # BRAHMI NUMBER TEN
-<Multi_key> <b> <c> <2> <0> <Return> : "𑁜" U1105C   # BRAHMI NUMBER TWENTY
-<Multi_key> <b> <c> <3> <0> <Return> : "𑁝" U1105D   # BRAHMI NUMBER THIRTY
-<Multi_key> <b> <c> <4> <0> <Return> : "𑁞" U1105E   # BRAHMI NUMBER FORTY
-<Multi_key> <b> <c> <5> <0> <Return> : "𑁟" U1105F   # BRAHMI NUMBER FIFTY
-<Multi_key> <b> <c> <6> <0> <Return> : "𑁠" U11060   # BRAHMI NUMBER SIXTY
-<Multi_key> <b> <c> <7> <0> <Return> : "𑁡" U11061   # BRAHMI NUMBER SEVENTY
-<Multi_key> <b> <c> <8> <0> <Return> : "𑁢" U11062   # BRAHMI NUMBER EIGHTY
-<Multi_key> <b> <c> <9> <0> <Return> : "𑁣" U11063   # BRAHMI NUMBER NINETY
-<Multi_key> <b> <c> <1> <0> <0> <Return> : "𑁤" U11064   # BRAHMI NUMBER ONE HUNDRED
+<Multi_key> <b> <c> <1> <space> : "𑁒" U11052   # BRAHMI NUMBER ONE
+<Multi_key> <b> <c> <2> <space> : "𑁓" U11053   # BRAHMI NUMBER TWO
+<Multi_key> <b> <c> <3> <space> : "𑁔" U11054   # BRAHMI NUMBER THREE
+<Multi_key> <b> <c> <4> <space> : "𑁕" U11055   # BRAHMI NUMBER FOUR
+<Multi_key> <b> <c> <5> <space> : "𑁖" U11056   # BRAHMI NUMBER FIVE
+<Multi_key> <b> <c> <6> <space> : "𑁗" U11057   # BRAHMI NUMBER SIX
+<Multi_key> <b> <c> <7> <space> : "𑁘" U11058   # BRAHMI NUMBER SEVEN
+<Multi_key> <b> <c> <8> <space> : "𑁙" U11059   # BRAHMI NUMBER EIGHT
+<Multi_key> <b> <c> <9> <space> : "𑁚" U1105A   # BRAHMI NUMBER NINE
+<Multi_key> <b> <c> <1> <0> <space> : "𑁛" U1105B   # BRAHMI NUMBER TEN
+<Multi_key> <b> <c> <2> <0> <space> : "𑁜" U1105C   # BRAHMI NUMBER TWENTY
+<Multi_key> <b> <c> <3> <0> <space> : "𑁝" U1105D   # BRAHMI NUMBER THIRTY
+<Multi_key> <b> <c> <4> <0> <space> : "𑁞" U1105E   # BRAHMI NUMBER FORTY
+<Multi_key> <b> <c> <5> <0> <space> : "𑁟" U1105F   # BRAHMI NUMBER FIFTY
+<Multi_key> <b> <c> <6> <0> <space> : "𑁠" U11060   # BRAHMI NUMBER SIXTY
+<Multi_key> <b> <c> <7> <0> <space> : "𑁡" U11061   # BRAHMI NUMBER SEVENTY
+<Multi_key> <b> <c> <8> <0> <space> : "𑁢" U11062   # BRAHMI NUMBER EIGHTY
+<Multi_key> <b> <c> <9> <0> <space> : "𑁣" U11063   # BRAHMI NUMBER NINETY
+<Multi_key> <b> <c> <1> <0> <0> <space> : "𑁤" U11064   # BRAHMI NUMBER ONE HUNDRED
 <Multi_key> <b> <c> <1> <0> <0> <0> : "𑁥" U11065   # BRAHMI NUMBER ONE THOUSAND
 
 # (d = Devanagari)
@@ -4415,6 +4554,89 @@ include "%L"
 <Multi_key> <b> <d> <bar>         : "।" U0964   # DEVANAGARI DANDA
 <Multi_key> <b> <d> <2> <bar>     : "॥" U0965   # DEVANAGARI DOUBLE DANDA
 <Multi_key> <b> <d> <o> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
+
+# (A = Ahom)
+
+# Consonants
+
+<Multi_key> <b> <A> <k> <space> : "𑜀"  U11700  # AHOM LETTER KA (conflicts with Ă, use uA)
+<Multi_key> <b> <A> <k> <h> : "𑜁"  U11701  # AHOM LETTER KHA (conflicts)
+<Multi_key> <b> <A> <semicolon> <n> : "𑜂"  U11702  # AHOM LETTER NGA (conflicts)
+<Multi_key> <b> <A> <n> : "𑜃"  U11703  # AHOM LETTER NA (conflicts)
+<Multi_key> <b> <A> <t> <space> : "𑜄"  U11704  # AHOM LETTER TA (conflicts)
+<Multi_key> <b> <A> <t> <2> : "𑜅"  U11705  # AHOM LETTER ALTERNATE TA (conflicts)
+<Multi_key> <b> <A> <p> <space> : "𑜆"  U11706  # AHOM LETTER PA (conflicts)
+<Multi_key> <b> <A> <p> <h> : "𑜇"  U11707  # AHOM LETTER PHA (conflicts)
+<Multi_key> <b> <A> <b> <space> : "𑜈"  U11708  # AHOM LETTER BA (conflicts)
+<Multi_key> <b> <A> <m> : "𑜉"  U11709  # AHOM LETTER MA (conflicts)
+<Multi_key> <b> <A> <j> <space> : "𑜊"  U1170A  # AHOM LETTER JA (conflicts)
+<Multi_key> <b> <A> <c> <h> : "𑜋"  U1170B  # AHOM LETTER CHA (conflicts)
+<Multi_key> <b> <A> <t> <h> : "𑜌"  U1170C  # AHOM LETTER THA (conflicts)
+<Multi_key> <b> <A> <r> <space> : "𑜍"  U1170D  # AHOM LETTER RA (conflicts)
+<Multi_key> <b> <A> <l> <space> : "𑜎"  U1170E  # AHOM LETTER LA (conflicts)
+<Multi_key> <b> <A> <s> : "𑜏"  U1170F  # AHOM LETTER SA (conflicts)
+<Multi_key> <b> <A> <asciitilde> <n> : "𑜐"  U11710  # AHOM LETTER NYA (conflicts)
+<Multi_key> <b> <A> <h> : "𑜑"  U11711  # AHOM LETTER HA (conflicts)
+<Multi_key> <b> <A> <a> <space> : "𑜒"  U11712  # AHOM LETTER A (conflicts)
+<Multi_key> <b> <A> <d> <space> : "𑜓"  U11713  # AHOM LETTER DA (conflicts)
+<Multi_key> <b> <A> <d> <h> : "𑜔"  U11714  # AHOM LETTER DHA (conflicts)
+<Multi_key> <b> <A> <g> <space> : "𑜕"  U11715  # AHOM LETTER GA (conflicts)
+<Multi_key> <b> <A> <g> <2> : "𑜖"  U11716  # AHOM LETTER ALTERNATE GA (conflicts)
+<Multi_key> <b> <A> <g> <h> : "𑜗"  U11717  # AHOM LETTER GHA (conflicts)
+<Multi_key> <b> <A> <b> <h> : "𑜘"  U11718  # AHOM LETTER BHA (conflicts)
+<Multi_key> <b> <A> <j> <h> : "𑜙"  U11719  # AHOM LETTER JHA (conflicts)
+<Multi_key> <b> <A> <b> <2> : "𑜚"  U1171A  # AHOM LETTER ALTERNATE BA (conflicts)
+<Multi_key> <b> <A> <c> <space> : "𑝀"  U11740  # AHOM LETTER CA (conflicts)
+<Multi_key> <b> <A> <period> <t> <space> : "𑝁"  U11741  # AHOM LETTER TTA (conflicts)
+<Multi_key> <b> <A> <period> <t> <h> : "𑝂"  U11742  # AHOM LETTER TTHA (conflicts)
+<Multi_key> <b> <A> <period> <d> <space> : "𑝃"  U11743  # AHOM LETTER DDA (conflicts)
+<Multi_key> <b> <A> <period> <d> <h> : "𑝄"  U11744  # AHOM LETTER DDHA (conflicts)
+<Multi_key> <b> <A> <period> <n> : "𑝅"  U11745  # AHOM LETTER NNA (conflicts)
+<Multi_key> <b> <A> <period> <l> : "𑝆"  U11746  # AHOM LETTER LLA (conflicts)
+
+# Medial consonants
+
+<Multi_key> <b> <A> <l> <Return> : "𑜝"  U1171D  # AHOM CONSONANT SIGN MEDIAL LA (conflicts)
+<Multi_key> <b> <A> <r> <Return> : "𑜞"  U1171E  # AHOM CONSONANT SIGN MEDIAL RA (conflicts)
+<Multi_key> <b> <A> <r> <l> <Return> : "𑜟"  U1171F  # AHOM CONSONANT SIGN MEDIAL LIGATING RA (conflicts)
+
+# Vowels
+
+<Multi_key> <b> <A> <a> <Return> : "𑜠"  U11720  # AHOM VOWEL SIGN A (conflicts)
+<Multi_key> <b> <A> <a> <a> <Return> : "𑜡"  U11721  # AHOM VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <A> <i> <Return> : "𑜢"  U11722  # AHOM VOWEL SIGN I (conflicts)
+<Multi_key> <b> <A> <i> <i> <Return> : "𑜣"  U11723  # AHOM VOWEL SIGN II (conflicts)
+<Multi_key> <b> <A> <u> <Return> : "𑜤"  U11724  # AHOM VOWEL SIGN U (conflicts)
+<Multi_key> <b> <A> <u> <u> <Return> : "𑜥"  U11725  # AHOM VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <A> <e> <e> <Return> : "𑜦"  U11726  # AHOM VOWEL SIGN E (conflicts)
+<Multi_key> <b> <A> <a> <w> <Return> : "𑜧"  U11727  # AHOM VOWEL SIGN AW (conflicts)
+<Multi_key> <b> <A> <o> <o> <Return> : "𑜨"  U11728  # AHOM VOWEL SIGN O (conflicts)
+<Multi_key> <b> <A> <a> <i> <Return> : "𑜩"  U11729  # AHOM VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <A> <a> <m> <Return> : "𑜪"  U1172A  # AHOM VOWEL SIGN AM (conflicts)
+<Multi_key> <b> <A> <0> <Return> : "𑜫"  U1172B  # AHOM SIGN KILLER (VIRAMA) (conflicts)
+<Multi_key> <b> <A> <comma> <Return> : "𑜫"  U1172B  # AHOM SIGN KILLER (VIRAMA) (conflicts)
+
+# Numbers
+
+<Multi_key> <b> <A> <numbersign> <0> : "𑜰"  U11730  # AHOM DIGIT ZERO (conflicts)
+<Multi_key> <b> <A> <numbersign> <1> : "𑜱"  U11731  # AHOM DIGIT ONE (conflicts)
+<Multi_key> <b> <A> <numbersign> <2> : "𑜲"  U11732  # AHOM DIGIT TWO (conflicts)
+<Multi_key> <b> <A> <numbersign> <3> : "𑜳"  U11733  # AHOM DIGIT THREE (conflicts)
+<Multi_key> <b> <A> <numbersign> <4> : "𑜴"  U11734  # AHOM DIGIT FOUR (conflicts)
+<Multi_key> <b> <A> <numbersign> <5> : "𑜵"  U11735  # AHOM DIGIT FIVE (conflicts)
+<Multi_key> <b> <A> <numbersign> <6> : "𑜶"  U11736  # AHOM DIGIT SIX (conflicts)
+<Multi_key> <b> <A> <numbersign> <7> : "𑜷"  U11737  # AHOM DIGIT SEVEN (conflicts)
+<Multi_key> <b> <A> <numbersign> <8> : "𑜸"  U11738  # AHOM DIGIT EIGHT (conflicts)
+<Multi_key> <b> <A> <numbersign> <9> : "𑜹"  U11739  # AHOM DIGIT NINE (conflicts)
+<Multi_key> <b> <A> <1> <0> : "𑜺"  U1173A  # AHOM NUMBER TEN (conflicts)
+<Multi_key> <b> <A> <2> <0> : "𑜻"  U1173B  # AHOM NUMBER TWENTY (conflicts)
+
+# Punctuation
+
+<Multi_key> <b> <A> <bar> : "𑜼"  U1173C  # AHOM SIGN SMALL SECTION (DANDA) (conflicts)
+<Multi_key> <b> <A> <2> <bar> : "𑜽"  U1173D  # AHOM SIGN SECTION (DOUBLE DANDA) (conflicts)
+<Multi_key> <b> <A> <at> : "𑜾"  U1173E  # AHOM SIGN RULAI (conflicts)
+<Multi_key> <b> <A> <exclam> : "𑜿"  U1173F  # AHOM SYMBOL VI (conflicts)
 
 # (b = Bengali)
 
@@ -4601,6 +4823,111 @@ include "%L"
 <Multi_key> <b> <B> <numbersign> <7>     : "၇"  U1047  # MYANMAR DIGIT SEVEN
 <Multi_key> <b> <B> <numbersign> <8>     : "၈"  U1048  # MYANMAR DIGIT EIGHT
 <Multi_key> <b> <B> <numbersign> <9>     : "၉"  U1049  # MYANMAR DIGIT NINE
+
+# (BH = Bhaiksuki)
+
+<Multi_key> <b> <B> <H> <k> <space> : "𑰎"  U11C0E  # BHAIKSUKI LETTER KA
+<Multi_key> <b> <B> <H> <k> <h> : "𑰏"  U11C0F  # BHAIKSUKI LETTER KHA
+<Multi_key> <b> <B> <H> <g> <space> : "𑰐"  U11C10  # BHAIKSUKI LETTER GA
+<Multi_key> <b> <B> <H> <g> <h> : "𑰑"  U11C11  # BHAIKSUKI LETTER GHA
+<Multi_key> <b> <B> <H> <semicolon> <n> : "𑰒"  U11C12  # BHAIKSUKI LETTER NGA
+<Multi_key> <b> <B> <H> <c> <space> : "𑰓"  U11C13  # BHAIKSUKI LETTER CA
+<Multi_key> <b> <B> <H> <c> <h> : "𑰔"  U11C14  # BHAIKSUKI LETTER CHA
+<Multi_key> <b> <B> <H> <j> <space> : "𑰕"  U11C15  # BHAIKSUKI LETTER JA
+<Multi_key> <b> <B> <H> <j> <h> : "𑰖"  U11C16  # BHAIKSUKI LETTER JHA
+<Multi_key> <b> <B> <H> <asciitilde> <n> : "𑰗"  U11C17  # BHAIKSUKI LETTER NYA
+<Multi_key> <b> <B> <H> <period> <t> <space> : "𑰘"  U11C18  # BHAIKSUKI LETTER TTA
+<Multi_key> <b> <B> <H> <period> <t> <h> : "𑰙"  U11C19  # BHAIKSUKI LETTER TTHA
+<Multi_key> <b> <B> <H> <period> <d> <space> : "𑰚"  U11C1A  # BHAIKSUKI LETTER DDA
+<Multi_key> <b> <B> <H> <period> <d> <h> : "𑰛"  U11C1B  # BHAIKSUKI LETTER DDHA
+<Multi_key> <b> <B> <H> <period> <n> : "𑰜"  U11C1C  # BHAIKSUKI LETTER NNA
+<Multi_key> <b> <B> <H> <t> <space> : "𑰝"  U11C1D  # BHAIKSUKI LETTER TA
+<Multi_key> <b> <B> <H> <t> <h> : "𑰞"  U11C1E  # BHAIKSUKI LETTER THA
+<Multi_key> <b> <B> <H> <d> <space> : "𑰟"  U11C1F  # BHAIKSUKI LETTER DA
+<Multi_key> <b> <B> <H> <d> <h> : "𑰠"  U11C20  # BHAIKSUKI LETTER DHA
+<Multi_key> <b> <B> <H> <n> : "𑰡"  U11C21  # BHAIKSUKI LETTER NA
+<Multi_key> <b> <B> <H> <p> <space> : "𑰢"  U11C22  # BHAIKSUKI LETTER PA
+<Multi_key> <b> <B> <H> <p> <h> : "𑰣"  U11C23  # BHAIKSUKI LETTER PHA
+<Multi_key> <b> <B> <H> <b> <space> : "𑰤"  U11C24  # BHAIKSUKI LETTER BA
+<Multi_key> <b> <B> <H> <b> <h> : "𑰥"  U11C25  # BHAIKSUKI LETTER BHA
+<Multi_key> <b> <B> <H> <m> : "𑰦"  U11C26  # BHAIKSUKI LETTER MA
+<Multi_key> <b> <B> <H> <y> : "𑰧"  U11C27  # BHAIKSUKI LETTER YA
+<Multi_key> <b> <B> <H> <r> : "𑰨"  U11C28  # BHAIKSUKI LETTER RA
+<Multi_key> <b> <B> <H> <l> : "𑰩"  U11C29  # BHAIKSUKI LETTER LA
+<Multi_key> <b> <B> <H> <v> : "𑰪"  U11C2A  # BHAIKSUKI LETTER VA
+<Multi_key> <b> <B> <H> <semicolon> <s> : "𑰫"  U11C2B  # BHAIKSUKI LETTER SHA
+<Multi_key> <b> <B> <H> <period> <s> : "𑰬"  U11C2C  # BHAIKSUKI LETTER SSA
+<Multi_key> <b> <B> <H> <s> : "𑰭"  U11C2D  # BHAIKSUKI LETTER SA
+<Multi_key> <b> <B> <H> <h> : "𑰮"  U11C2E  # BHAIKSUKI LETTER HA
+
+<Multi_key> <b> <B> <H> <a> <space> : "𑰀"  U11C00  # BHAIKSUKI LETTER A
+<Multi_key> <b> <B> <H> <a> <a> <space> : "𑰁"  U11C01  # BHAIKSUKI LETTER AA
+<Multi_key> <b> <B> <H> <i> <space> : "𑰂"  U11C02  # BHAIKSUKI LETTER I
+<Multi_key> <b> <B> <H> <i> <i> <space> : "𑰃"  U11C03  # BHAIKSUKI LETTER II
+<Multi_key> <b> <B> <H> <u> <space> : "𑰄"  U11C04  # BHAIKSUKI LETTER U
+<Multi_key> <b> <B> <H> <u> <u> <space> : "𑰅"  U11C05  # BHAIKSUKI LETTER UU
+<Multi_key> <b> <B> <H> <comma> <r> <space> : "𑰆"  U11C06  # BHAIKSUKI LETTER VOCALIC R
+<Multi_key> <b> <B> <H> <comma> <r> <r> <space> : "𑰇"  U11C07  # BHAIKSUKI LETTER VOCALIC RR
+<Multi_key> <b> <B> <H> <comma> <l> <space> : "𑰈"  U11C08  # BHAIKSUKI LETTER VOCALIC L
+<Multi_key> <b> <B> <H> <e> <e> <space> : "𑰊"  U11C0A  # BHAIKSUKI LETTER E
+<Multi_key> <b> <B> <H> <a> <i> <space> : "𑰋"  U11C0B  # BHAIKSUKI LETTER AI
+<Multi_key> <b> <B> <H> <o> <o> <space> : "𑰌"  U11C0C  # BHAIKSUKI LETTER O
+<Multi_key> <b> <B> <H> <a> <u> <space> : "𑰍"  U11C0D  # BHAIKSUKI LETTER AU
+
+<Multi_key> <b> <B> <H> <a> <a> <Return> : "𑰯"  U11C2F  # BHAIKSUKI VOWEL SIGN AA
+<Multi_key> <b> <B> <H> <i> <Return> : "𑰰"  U11C30  # BHAIKSUKI VOWEL SIGN I
+<Multi_key> <b> <B> <H> <i> <i> <Return> : "𑰱"  U11C31  # BHAIKSUKI VOWEL SIGN II
+<Multi_key> <b> <B> <H> <u> <Return> : "𑰲"  U11C32  # BHAIKSUKI VOWEL SIGN U
+<Multi_key> <b> <B> <H> <u> <u> <Return> : "𑰳"  U11C33  # BHAIKSUKI VOWEL SIGN UU
+<Multi_key> <b> <B> <H> <comma> <r> <Return> : "𑰴"  U11C34  # BHAIKSUKI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <B> <H> <comma> <r> <r> <Return> : "𑰵"  U11C35  # BHAIKSUKI VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <B> <H> <comma> <l> <Return> : "𑰶"  U11C36  # BHAIKSUKI VOWEL SIGN VOCALIC L
+<Multi_key> <b> <B> <H> <e> <e> <Return> : "𑰸"  U11C38  # BHAIKSUKI VOWEL SIGN E
+<Multi_key> <b> <B> <H> <a> <i> <Return> : "𑰹"  U11C39  # BHAIKSUKI VOWEL SIGN AI
+<Multi_key> <b> <B> <H> <o> <o> <Return> : "𑰺"  U11C3A  # BHAIKSUKI VOWEL SIGN O
+<Multi_key> <b> <B> <H> <a> <u> <Return> : "𑰻"  U11C3B  # BHAIKSUKI VOWEL SIGN AU
+<Multi_key> <b> <B> <H> <0> <Return> : "𑰿"  U11C3F  # BHAIKSUKI SIGN VIRAMA
+
+<Multi_key> <b> <B> <H> <period> <parenright> <Return> : "𑰼"  U11C3C  # BHAIKSUKI SIGN CANDRABINDU
+<Multi_key> <b> <B> <H> <period> <Return> : "𑰽"  U11C3D  # BHAIKSUKI SIGN ANUSVARA
+<Multi_key> <b> <B> <H> <colon> <Return> : "𑰾"  U11C3E  # BHAIKSUKI SIGN VISARGA
+<Multi_key> <b> <B> <H> <comma> <Return> : "𑰿"  U11C3F  # BHAIKSUKI SIGN VIRAMA
+
+<Multi_key> <b> <B> <H> <S> : "𑱀"  U11C40  # BHAIKSUKI SIGN AVAGRAHA
+<Multi_key> <b> <B> <H> <bar> : "𑱁"  U11C41  # BHAIKSUKI DANDA
+<Multi_key> <b> <B> <H> <2> <bar> : "𑱂"  U11C42  # BHAIKSUKI DOUBLE DANDA
+<Multi_key> <b> <B> <H> <space> : "𑱃"  U11C43  # BHAIKSUKI WORD SEPARATOR
+    
+<Multi_key> <b> <B> <H> <numbersign> <0> : "𑱐"  U11C50  # BHAIKSUKI DIGIT ZERO
+<Multi_key> <b> <B> <H> <numbersign> <1> : "𑱑"  U11C51  # BHAIKSUKI DIGIT ONE
+<Multi_key> <b> <B> <H> <numbersign> <2> : "𑱒"  U11C52  # BHAIKSUKI DIGIT TWO
+<Multi_key> <b> <B> <H> <numbersign> <3> : "𑱓"  U11C53  # BHAIKSUKI DIGIT THREE
+<Multi_key> <b> <B> <H> <numbersign> <4> : "𑱔"  U11C54  # BHAIKSUKI DIGIT FOUR
+<Multi_key> <b> <B> <H> <numbersign> <5> : "𑱕"  U11C55  # BHAIKSUKI DIGIT FIVE
+<Multi_key> <b> <B> <H> <numbersign> <6> : "𑱖"  U11C56  # BHAIKSUKI DIGIT SIX
+<Multi_key> <b> <B> <H> <numbersign> <7> : "𑱗"  U11C57  # BHAIKSUKI DIGIT SEVEN
+<Multi_key> <b> <B> <H> <numbersign> <8> : "𑱘"  U11C58  # BHAIKSUKI DIGIT EIGHT
+<Multi_key> <b> <B> <H> <numbersign> <9> : "𑱙"  U11C59  # BHAIKSUKI DIGIT NINE
+
+<Multi_key> <b> <B> <H> <1> <space> : "𑱚"  U11C5A  # BHAIKSUKI NUMBER ONE
+<Multi_key> <b> <B> <H> <2> <space> : "𑱛"  U11C5B  # BHAIKSUKI NUMBER TWO
+<Multi_key> <b> <B> <H> <3> <space> : "𑱜"  U11C5C  # BHAIKSUKI NUMBER THREE
+<Multi_key> <b> <B> <H> <4> <space> : "𑱝"  U11C5D  # BHAIKSUKI NUMBER FOUR
+<Multi_key> <b> <B> <H> <5> <space> : "𑱞"  U11C5E  # BHAIKSUKI NUMBER FIVE
+<Multi_key> <b> <B> <H> <6> <space> : "𑱟"  U11C5F  # BHAIKSUKI NUMBER SIX
+<Multi_key> <b> <B> <H> <7> <space> : "𑱠"  U11C60  # BHAIKSUKI NUMBER SEVEN
+<Multi_key> <b> <B> <H> <8> <space> : "𑱡"  U11C61  # BHAIKSUKI NUMBER EIGHT
+<Multi_key> <b> <B> <H> <9> <space> : "𑱢"  U11C62  # BHAIKSUKI NUMBER NINE
+<Multi_key> <b> <B> <H> <1> <0> : "𑱣"  U11C63  # BHAIKSUKI NUMBER TEN
+<Multi_key> <b> <B> <H> <2> <0> : "𑱤"  U11C64  # BHAIKSUKI NUMBER TWENTY
+<Multi_key> <b> <B> <H> <3> <0> : "𑱥"  U11C65  # BHAIKSUKI NUMBER THIRTY
+<Multi_key> <b> <B> <H> <4> <0> : "𑱦"  U11C66  # BHAIKSUKI NUMBER FORTY
+<Multi_key> <b> <B> <H> <5> <0> : "𑱧"  U11C67  # BHAIKSUKI NUMBER FIFTY
+<Multi_key> <b> <B> <H> <6> <0> : "𑱨"  U11C68  # BHAIKSUKI NUMBER SIXTY
+<Multi_key> <b> <B> <H> <7> <0> : "𑱩"  U11C69  # BHAIKSUKI NUMBER SEVENTY
+<Multi_key> <b> <B> <H> <8> <0> : "𑱪"  U11C6A  # BHAIKSUKI NUMBER EIGHTY
+<Multi_key> <b> <B> <H> <9> <0> : "𑱫"  U11C6B  # BHAIKSUKI NUMBER NINETY
+<Multi_key> <b> <B> <H> <numbersign> <comma> : "𑱬"  U11C6C  # BHAIKSUKI HUNDREDS UNIT MARK
 
 # (C = Chakma)
 
@@ -5252,8 +5579,8 @@ include "%L"
 <Multi_key> <b> <m> <numbersign> <8>     : "൮"  U0D6E  # MALAYALAM DIGIT EIGHT
 <Multi_key> <b> <m> <numbersign> <9>     : "൯"  U0D6F  # MALAYALAM DIGIT NINE
 
-<Multi_key> <b> <m> <1> <0> <Return>     : "൰"  U0D70  # MALAYALAM NUMBER TEN
-<Multi_key> <b> <m> <1> <0> <0> <Return> : "൱"  U0D71  # MALAYALAM NUMBER ONE HUNDRED
+<Multi_key> <b> <m> <1> <0> <space>     : "൰"  U0D70  # MALAYALAM NUMBER TEN
+<Multi_key> <b> <m> <1> <0> <0> <space> : "൱"  U0D71  # MALAYALAM NUMBER ONE HUNDRED
 <Multi_key> <b> <m> <1> <0> <0> <0>      : "൲"  U0D72  # MALAYALAM NUMBER ONE THOUSAND
 
 # (M = Meitei)
@@ -5779,8 +6106,8 @@ include "%L"
 <Multi_key> <b> <t> <numbersign> <8>     : "௮"  U0BEE  # TAMIL DIGIT EIGHT
 <Multi_key> <b> <t> <numbersign> <9>     : "௯"  U0BEF  # TAMIL DIGIT NINE
 
-<Multi_key> <b> <t> <1> <0> <Return>     : "௰"  U0BF0  # TAMIL NUMBER TEN
-<Multi_key> <b> <t> <1> <0> <0> <Return> : "௱"  U0BF1  # TAMIL NUMBER ONE HUNDRED
+<Multi_key> <b> <t> <1> <0> <space>     : "௰"  U0BF0  # TAMIL NUMBER TEN
+<Multi_key> <b> <t> <1> <0> <0> <space> : "௱"  U0BF1  # TAMIL NUMBER ONE HUNDRED
 <Multi_key> <b> <t> <1> <0> <0> <0>      : "௲"  U0BF2  # TAMIL NUMBER ONE THOUSAND
 
 # (T = Telugu)
@@ -8391,25 +8718,25 @@ include "%L"
 <Multi_key> <g> <P> <T> <I> : "Ϯ" U03EE   # COPTIC CAPITAL LETTER DEI
 <Multi_key> <g> <P> <t> <i> : "ϯ" U03EF   # COPTIC SMALL LETTER DEI
 
-<Multi_key> <g> <p> <1> <Return> : "𐋡" U102E1   # COPTIC EPACT DIGIT ONE
-<Multi_key> <g> <p> <2> <Return> : "𐋢" U102E2   # COPTIC EPACT DIGIT TWO
-<Multi_key> <g> <p> <3> <Return> : "𐋣" U102E3   # COPTIC EPACT DIGIT THREE
-<Multi_key> <g> <p> <4> <Return> : "𐋤" U102E4   # COPTIC EPACT DIGIT FOUR
-<Multi_key> <g> <p> <5> <Return> : "𐋥" U102E5   # COPTIC EPACT DIGIT FIVE
-<Multi_key> <g> <p> <6> <Return> : "𐋦" U102E6   # COPTIC EPACT DIGIT SIX
-<Multi_key> <g> <p> <7> <Return> : "𐋧" U102E7   # COPTIC EPACT DIGIT SEVEN
-<Multi_key> <g> <p> <8> <Return> : "𐋨" U102E8   # COPTIC EPACT DIGIT EIGHT
-<Multi_key> <g> <p> <9> <Return> : "𐋩" U102E9   # COPTIC EPACT DIGIT NINE
-<Multi_key> <g> <p> <1> <0> <Return> : "𐋪" U102EA   # COPTIC EPACT NUMBER TEN
-<Multi_key> <g> <p> <2> <0> <Return> : "𐋫" U102EB   # COPTIC EPACT NUMBER TWENTY
-<Multi_key> <g> <p> <3> <0> <Return> : "𐋬" U102EC   # COPTIC EPACT NUMBER THIRTY
-<Multi_key> <g> <p> <4> <0> <Return> : "𐋭" U102ED   # COPTIC EPACT NUMBER FORTY
-<Multi_key> <g> <p> <5> <0> <Return> : "𐋮" U102EE   # COPTIC EPACT NUMBER FIFTY
-<Multi_key> <g> <p> <6> <0> <Return> : "𐋯" U102EF   # COPTIC EPACT NUMBER SIXTY
-<Multi_key> <g> <p> <7> <0> <Return> : "𐋰" U102F0   # COPTIC EPACT NUMBER SEVENTY
-<Multi_key> <g> <p> <8> <0> <Return> : "𐋱" U102F1   # COPTIC EPACT NUMBER EIGHTY
-<Multi_key> <g> <p> <9> <0> <Return> : "𐋲" U102F2   # COPTIC EPACT NUMBER NINETY
-<Multi_key> <g> <p> <1> <0> <0> <Return> : "𐋳" U102F3   # COPTIC EPACT NUMBER ONE HUNDRED
+<Multi_key> <g> <p> <1> <space> : "𐋡" U102E1   # COPTIC EPACT DIGIT ONE
+<Multi_key> <g> <p> <2> <space> : "𐋢" U102E2   # COPTIC EPACT DIGIT TWO
+<Multi_key> <g> <p> <3> <space> : "𐋣" U102E3   # COPTIC EPACT DIGIT THREE
+<Multi_key> <g> <p> <4> <space> : "𐋤" U102E4   # COPTIC EPACT DIGIT FOUR
+<Multi_key> <g> <p> <5> <space> : "𐋥" U102E5   # COPTIC EPACT DIGIT FIVE
+<Multi_key> <g> <p> <6> <space> : "𐋦" U102E6   # COPTIC EPACT DIGIT SIX
+<Multi_key> <g> <p> <7> <space> : "𐋧" U102E7   # COPTIC EPACT DIGIT SEVEN
+<Multi_key> <g> <p> <8> <space> : "𐋨" U102E8   # COPTIC EPACT DIGIT EIGHT
+<Multi_key> <g> <p> <9> <space> : "𐋩" U102E9   # COPTIC EPACT DIGIT NINE
+<Multi_key> <g> <p> <1> <0> <space> : "𐋪" U102EA   # COPTIC EPACT NUMBER TEN
+<Multi_key> <g> <p> <2> <0> <space> : "𐋫" U102EB   # COPTIC EPACT NUMBER TWENTY
+<Multi_key> <g> <p> <3> <0> <space> : "𐋬" U102EC   # COPTIC EPACT NUMBER THIRTY
+<Multi_key> <g> <p> <4> <0> <space> : "𐋭" U102ED   # COPTIC EPACT NUMBER FORTY
+<Multi_key> <g> <p> <5> <0> <space> : "𐋮" U102EE   # COPTIC EPACT NUMBER FIFTY
+<Multi_key> <g> <p> <6> <0> <space> : "𐋯" U102EF   # COPTIC EPACT NUMBER SIXTY
+<Multi_key> <g> <p> <7> <0> <space> : "𐋰" U102F0   # COPTIC EPACT NUMBER SEVENTY
+<Multi_key> <g> <p> <8> <0> <space> : "𐋱" U102F1   # COPTIC EPACT NUMBER EIGHTY
+<Multi_key> <g> <p> <9> <0> <space> : "𐋲" U102F2   # COPTIC EPACT NUMBER NINETY
+<Multi_key> <g> <p> <1> <0> <0> <space> : "𐋳" U102F3   # COPTIC EPACT NUMBER ONE HUNDRED
 <Multi_key> <g> <p> <2> <0> <0> : "𐋴" U102F4   # COPTIC EPACT NUMBER TWO HUNDRED
 <Multi_key> <g> <p> <3> <0> <0> : "𐋵" U102F5   # COPTIC EPACT NUMBER THREE HUNDRED
 <Multi_key> <g> <p> <4> <0> <0> : "𐋶" U102F6   # COPTIC EPACT NUMBER FOUR HUNDRED
@@ -8819,9 +9146,9 @@ include "%L"
 <Multi_key> <percent> <g> <d> <g> : "ℽ" U213D   # DOUBLE-STRUCK SMALL GAMMA
 <Multi_key> <percent> <g> <d> <p> : "ℼ" U213C   # DOUBLE-STRUCK SMALL PI
 
-################
-# (G) Georgian #
-################
+#########################################
+# (G) Georgian (and Caucasian Albanian) #
+#########################################
 
 # (based on ISO 9984)
 
@@ -8986,6 +9313,61 @@ include "%L"
 <Multi_key> <G> <k> <w> : "ⴣ" U2D23   # GEORGIAN SMALL LETTER WE
 <Multi_key> <G> <k> <underscore> <h> : "ⴤ" U2D24   # GEORGIAN SMALL LETTER HAR (ẖ)
 <Multi_key> <G> <k> <minus> <o> : "ⴥ" U2D25   # GEORGIAN SMALL LETTER HOE (ō)
+
+# (a = Caucasian Albanian) https://aiearmeniennes.org/artsakh/Alb-script/
+
+<Multi_key> <G> <a> <a> <space> : "𐔰"  U10530  # CAUCASIAN ALBANIAN LETTER ALT
+<Multi_key> <G> <a> <b> : "𐔱"  U10531  # CAUCASIAN ALBANIAN LETTER BET
+<Multi_key> <G> <a> <g> : "𐔲"  U10532  # CAUCASIAN ALBANIAN LETTER GIM
+<Multi_key> <G> <a> <d> : "𐔳"  U10533  # CAUCASIAN ALBANIAN LETTER DAT
+<Multi_key> <G> <a> <e> : "𐔴"  U10534  # CAUCASIAN ALBANIAN LETTER EB
+<Multi_key> <G> <a> <z> : "𐔵"  U10535  # CAUCASIAN ALBANIAN LETTER ZARL
+<Multi_key> <G> <a> <minus> <e> : "𐔶"  U10536  # CAUCASIAN ALBANIAN LETTER EYN (ē)
+<Multi_key> <G> <a> <v> <z> : "𐔷"  U10537  # CAUCASIAN ALBANIAN LETTER ZHIL (ž)
+<Multi_key> <G> <a> <t> : "𐔸"  U10538  # CAUCASIAN ALBANIAN LETTER TAS
+<Multi_key> <G> <a> <exclam> <apostrophe> <c> : "𐔹"  U10539  # CAUCASIAN ALBANIAN LETTER CHA (ć̣)
+<Multi_key> <G> <a> <y> : "𐔺"  U1053A  # CAUCASIAN ALBANIAN LETTER YOWD
+<Multi_key> <G> <a> <apostrophe> <z> : "𐔻"  U1053B  # CAUCASIAN ALBANIAN LETTER ZHA (ź)
+<Multi_key> <G> <a> <i> : "𐔼"  U1053C  # CAUCASIAN ALBANIAN LETTER IRB
+<Multi_key> <G> <a> <grave> : "𐔽"  U1053D  # CAUCASIAN ALBANIAN LETTER SHA
+<Multi_key> <G> <a> <l> : "𐔾"  U1053E  # CAUCASIAN ALBANIAN LETTER LAN
+<Multi_key> <G> <a> <N> : "𐔿"  U1053F  # CAUCASIAN ALBANIAN LETTER INYA
+<Multi_key> <G> <a> <x> : "𐕀"  U10540  # CAUCASIAN ALBANIAN LETTER XEYN
+<Multi_key> <G> <a> <D> : "𐕁"  U10541  # CAUCASIAN ALBANIAN LETTER DYAN
+<Multi_key> <G> <a> <exclam> <c> : "𐕂"  U10542  # CAUCASIAN ALBANIAN LETTER CAR (c̣)
+<Multi_key> <G> <a> <apostrophe> <Multi_key> <z> <h> : "𐕃"  U10543  # CAUCASIAN ALBANIAN LETTER JHOX (ʒ́)
+<Multi_key> <G> <a> <exclam> <k> : "𐕄"  U10544  # CAUCASIAN ALBANIAN LETTER KAR (ḳ)
+<Multi_key> <G> <a> <L> : "𐕅"  U10545  # CAUCASIAN ALBANIAN LETTER LYIT
+<Multi_key> <G> <a> <h> : "𐕆"  U10546  # CAUCASIAN ALBANIAN LETTER HEYT
+<Multi_key> <G> <a> <exclam> <x> : "𐕇"  U10547  # CAUCASIAN ALBANIAN LETTER QAY (x̣)
+<Multi_key> <G> <a> <a> <o> : "𐕈"  U10548  # CAUCASIAN ALBANIAN LETTER AOR (å)
+<Multi_key> <G> <a> <apostrophe> <c> : "𐕉"  U10549  # CAUCASIAN ALBANIAN LETTER CHOY (ć)
+<Multi_key> <G> <a> <exclam> <v> <c> : "𐕊"  U1054A  # CAUCASIAN ALBANIAN LETTER CHI (č̣)
+<Multi_key> <G> <a> <C> : "𐕋"  U1054B  # CAUCASIAN ALBANIAN LETTER CYAY (č')
+<Multi_key> <G> <a> <m> : "𐕌"  U1054C  # CAUCASIAN ALBANIAN LETTER MAQ
+<Multi_key> <G> <a> <q> : "𐕍"  U1054D  # CAUCASIAN ALBANIAN LETTER QAR
+<Multi_key> <G> <a> <n> : "𐕎"  U1054E  # CAUCASIAN ALBANIAN LETTER NOWC
+<Multi_key> <G> <a> <Multi_key> <Z> <H> : "𐕏"  U1054F  # CAUCASIAN ALBANIAN LETTER DZYAY (ʒ')
+<Multi_key> <G> <a> <v> <s> : "𐕐"  U10550  # CAUCASIAN ALBANIAN LETTER SHAK (š)
+<Multi_key> <G> <a> <v> <Multi_key> <z> <h> : "𐕑"  U10551  # CAUCASIAN ALBANIAN LETTER JAYN (ǯ)
+<Multi_key> <G> <a> <o> : "𐕒"  U10552  # CAUCASIAN ALBANIAN LETTER ON
+<Multi_key> <G> <a> <exclam> <T> : "𐕓"  U10553  # CAUCASIAN ALBANIAN LETTER TYAY (ṭ')
+<Multi_key> <G> <a> <f> : "𐕔"  U10554  # CAUCASIAN ALBANIAN LETTER FAM
+<Multi_key> <G> <a> <Multi_key> <z> <h> : "𐕕"  U10555  # CAUCASIAN ALBANIAN LETTER DZAY
+<Multi_key> <G> <a> <v> <c> : "𐕖"  U10556  # CAUCASIAN ALBANIAN LETTER CHAT
+<Multi_key> <G> <a> <period> <p> : "𐕗"  U10557  # CAUCASIAN ALBANIAN LETTER PEN (ṗ)
+<Multi_key> <G> <a> <period> <g> : "𐕘"  U10558  # CAUCASIAN ALBANIAN LETTER GHEYS (ġ)
+<Multi_key> <G> <a> <r> : "𐕙"  U10559  # CAUCASIAN ALBANIAN LETTER RAT
+<Multi_key> <G> <a> <s> : "𐕚"  U1055A  # CAUCASIAN ALBANIAN LETTER SEYK
+<Multi_key> <G> <a> <v> <space> : "𐕛"  U1055B  # CAUCASIAN ALBANIAN LETTER VEYZ
+<Multi_key> <G> <a> <exclam> <t> : "𐕜"  U1055C  # CAUCASIAN ALBANIAN LETTER TIWR (ṭ)
+<Multi_key> <G> <a> <apostrophe> <s> : "𐕝"  U1055D  # CAUCASIAN ALBANIAN LETTER SHOY (ś)
+<Multi_key> <G> <a> <quotedbl> <u> : "𐕞"  U1055E  # CAUCASIAN ALBANIAN LETTER IWN (ü)
+<Multi_key> <G> <a> <exclam> <C> : "𐕟"  U1055F  # CAUCASIAN ALBANIAN LETTER CYAW (c̣')
+<Multi_key> <G> <a> <c> : "𐕠"  U10560  # CAUCASIAN ALBANIAN LETTER CAYN
+<Multi_key> <G> <a> <w> : "𐕡"  U10561  # CAUCASIAN ALBANIAN LETTER YAYD
+<Multi_key> <G> <a> <p> : "𐕢"  U10562  # CAUCASIAN ALBANIAN LETTER PIWR
+<Multi_key> <G> <a> <k> : "𐕣"  U10563  # CAUCASIAN ALBANIAN LETTER KIW
 
 #########################################
 # (h) Hebrew (and other nearby scripts) #
@@ -9179,13 +9561,13 @@ include "%L"
 
 <Multi_key> <h> <A> <Multi_key> <S> <O> : "𐡗"  U10857  # IMPERIAL ARAMAIC SECTION SIGN
 
-<Multi_key> <h> <A> <1> <Return> : "𐡘"  U10858  # IMPERIAL ARAMAIC NUMBER ONE
-<Multi_key> <h> <A> <2> <Return> : "𐡙"  U10859  # IMPERIAL ARAMAIC NUMBER TWO
+<Multi_key> <h> <A> <1> <space> : "𐡘"  U10858  # IMPERIAL ARAMAIC NUMBER ONE
+<Multi_key> <h> <A> <2> <space> : "𐡙"  U10859  # IMPERIAL ARAMAIC NUMBER TWO
 <Multi_key> <h> <A> <3> : "𐡚"  U1085A  # IMPERIAL ARAMAIC NUMBER THREE
-<Multi_key> <h> <A> <1> <0> <Return> : "𐡛"  U1085B  # IMPERIAL ARAMAIC NUMBER TEN
+<Multi_key> <h> <A> <1> <0> <space> : "𐡛"  U1085B  # IMPERIAL ARAMAIC NUMBER TEN
 <Multi_key> <h> <A> <2> <0> : "𐡜"  U1085C  # IMPERIAL ARAMAIC NUMBER TWENTY
-<Multi_key> <h> <A> <1> <0> <0> <Return> : "𐡝"  U1085D  # IMPERIAL ARAMAIC NUMBER ONE HUNDRED
-<Multi_key> <h> <A> <1> <0> <0> <0> <Return> : "𐡞"  U1085E  # IMPERIAL ARAMAIC NUMBER ONE THOUSAND
+<Multi_key> <h> <A> <1> <0> <0> <space> : "𐡝"  U1085D  # IMPERIAL ARAMAIC NUMBER ONE HUNDRED
+<Multi_key> <h> <A> <1> <0> <0> <0> <space> : "𐡞"  U1085E  # IMPERIAL ARAMAIC NUMBER ONE THOUSAND
 <Multi_key> <h> <A> <1> <0> <0> <0> <0> : "𐡟"  U1085F  # IMPERIAL ARAMAIC NUMBER TEN THOUSAND
 
 # (E = Elymaic)
@@ -9278,10 +9660,10 @@ include "%L"
 <Multi_key> <h> <p> <t>          : "𐤕"  U10915  # PHOENICIAN LETTER TAU
 
 <Multi_key> <h> <p> <space>      : "𐤟"  U1091F  # PHOENICIAN WORD SEPARATOR
-<Multi_key> <h> <p> <1> <Return> : "𐤖" U10916   # PHOENICIAN NUMBER ONE
-<Multi_key> <h> <p> <2> <Return> : "𐤚" U1091A   # PHOENICIAN NUMBER TWO
+<Multi_key> <h> <p> <1> <space> : "𐤖" U10916   # PHOENICIAN NUMBER ONE
+<Multi_key> <h> <p> <2> <space> : "𐤚" U1091A   # PHOENICIAN NUMBER TWO
 <Multi_key> <h> <p> <3>          : "𐤛" U1091B   # PHOENICIAN NUMBER THREE
-<Multi_key> <h> <p> <1> <0> <Return> : "𐤗" U10917   # PHOENICIAN NUMBER TEN
+<Multi_key> <h> <p> <1> <0> <space> : "𐤗" U10917   # PHOENICIAN NUMBER TEN
 <Multi_key> <h> <p> <2> <0>      : "𐤘" U10918   # PHOENICIAN NUMBER TWENTY
 <Multi_key> <h> <p> <1> <0> <0>  : "𐤙" U10919   # PHOENICIAN NUMBER ONE HUNDRED
 
@@ -12340,16 +12722,16 @@ include "%L"
 <Multi_key> <Z> <semicolon> <question> : "፧" U1367   # ETHIOPIC QUESTION MARK
 <Multi_key> <Z> <semicolon> <Multi_key> <P> <P> : "፨" U1368   # ETHIOPIC PARAGRAPH SEPARATOR
 
-<Multi_key> <Z> <numbersign> <1> <Return> : "፩" U1369   # ETHIOPIC DIGIT ONE
-<Multi_key> <Z> <numbersign> <2> <Return> : "፪" U136A   # ETHIOPIC DIGIT TWO
-<Multi_key> <Z> <numbersign> <3> <Return> : "፫" U136B   # ETHIOPIC DIGIT THREE
-<Multi_key> <Z> <numbersign> <4> <Return> : "፬" U136C   # ETHIOPIC DIGIT FOUR
-<Multi_key> <Z> <numbersign> <5> <Return> : "፭" U136D   # ETHIOPIC DIGIT FIVE
-<Multi_key> <Z> <numbersign> <6> <Return> : "፮" U136E   # ETHIOPIC DIGIT SIX
-<Multi_key> <Z> <numbersign> <7> <Return> : "፯" U136F   # ETHIOPIC DIGIT SEVEN
-<Multi_key> <Z> <numbersign> <8> <Return> : "፰" U1370   # ETHIOPIC DIGIT EIGHT
-<Multi_key> <Z> <numbersign> <9> <Return> : "፱" U1371   # ETHIOPIC DIGIT NINE
-<Multi_key> <Z> <numbersign> <1> <0> <Return> : "፲" U1372   # ETHIOPIC NUMBER TEN
+<Multi_key> <Z> <numbersign> <1> <space> : "፩" U1369   # ETHIOPIC DIGIT ONE
+<Multi_key> <Z> <numbersign> <2> <space> : "፪" U136A   # ETHIOPIC DIGIT TWO
+<Multi_key> <Z> <numbersign> <3> <space> : "፫" U136B   # ETHIOPIC DIGIT THREE
+<Multi_key> <Z> <numbersign> <4> <space> : "፬" U136C   # ETHIOPIC DIGIT FOUR
+<Multi_key> <Z> <numbersign> <5> <space> : "፭" U136D   # ETHIOPIC DIGIT FIVE
+<Multi_key> <Z> <numbersign> <6> <space> : "፮" U136E   # ETHIOPIC DIGIT SIX
+<Multi_key> <Z> <numbersign> <7> <space> : "፯" U136F   # ETHIOPIC DIGIT SEVEN
+<Multi_key> <Z> <numbersign> <8> <space> : "፰" U1370   # ETHIOPIC DIGIT EIGHT
+<Multi_key> <Z> <numbersign> <9> <space> : "፱" U1371   # ETHIOPIC DIGIT NINE
+<Multi_key> <Z> <numbersign> <1> <0> <space> : "፲" U1372   # ETHIOPIC NUMBER TEN
 <Multi_key> <Z> <numbersign> <2> <0> : "፳" U1373   # ETHIOPIC NUMBER TWENTY
 <Multi_key> <Z> <numbersign> <3> <0> : "፴" U1374   # ETHIOPIC NUMBER THIRTY
 <Multi_key> <Z> <numbersign> <4> <0> : "፵" U1375   # ETHIOPIC NUMBER FORTY
@@ -12358,7 +12740,7 @@ include "%L"
 <Multi_key> <Z> <numbersign> <7> <0> : "፸" U1378   # ETHIOPIC NUMBER SEVENTY
 <Multi_key> <Z> <numbersign> <8> <0> : "፹" U1379   # ETHIOPIC NUMBER EIGHTY
 <Multi_key> <Z> <numbersign> <9> <0> : "፺" U137A   # ETHIOPIC NUMBER NINETY
-<Multi_key> <Z> <numbersign> <1> <0> <0> <Return> : "፻" U137B   # ETHIOPIC NUMBER HUNDRED
+<Multi_key> <Z> <numbersign> <1> <0> <0> <space> : "፻" U137B   # ETHIOPIC NUMBER HUNDRED
 <Multi_key> <Z> <numbersign> <1> <0> <0> <0> <0> : "፼" U137C   # ETHIOPIC NUMBER TEN THOUSAND
 
 # (a = Adlam)
@@ -13464,7 +13846,7 @@ include "%L"
 <Multi_key> <a> <l> <p> <h> <a>         : "α"  U03B1   # GREEK SMALL LETTER ALPHA
 <Multi_key> <b> <e> <t> <a>             : "β"  U03B2   # GREEK SMALL LETTER BETA (conflicts with ĕ, use ue)
 <Multi_key> <b> <e> <t> <h>             : "ℶ"  U2136   # BET SYMBOL (conflicts with ĕ, use ue)
-<Multi_key> <d> <e> <l> <Return>        : "∇"  U2207   # NABLA (alternatively nabla)
+<Multi_key> <d> <e> <l> <space>         : "∇"  U2207   # NABLA (alternatively nabla)
 <Multi_key> <d> <e> <l> <t> <a>         : "δ"  U03B4   # GREEK SMALL LETTER DELTA
 <Multi_key> <e> <p> <s> <i> <l> <o> <n> : "ε"  U03B5   # GREEK SMALL LETTER EPSILON
 <Multi_key> <g> <i> <m> <e> <l>         : "ℷ"  U2137   # GIMEL SYMBOL
@@ -13493,7 +13875,7 @@ include "%L"
 <Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 
 <Multi_key> <a> <n> <g> <l> <e>         : "∠"  U2220   # ANGLE
-<Multi_key> <a> <s> <Return>            : "∶"  U2236   # RATIO (AS)
+<Multi_key> <a> <s> <space>             : "∶"  U2236   # RATIO (AS)
 <Multi_key> <b> <e> <t> <w> <e> <e> <n> : "≬"  U226C   # BETWEEN (conflicts with ĕ, use ue)
 <Multi_key> <b> <u> <m> <p> <e> <q>     : "≏"  U224F   # DIFFERENCE BETWEEN (conflicts with ŭ, use uu)
 <Multi_key> <B> <u> <m> <p> <e> <q>     : "≎"  U224E   # GEOMETRICALLY EQUIVALENT TO
@@ -13502,9 +13884,9 @@ include "%L"
 <Multi_key> <C> <A> <P>                 : "⋂"  U22C2   # N-ARY INTERSECTION
 <Multi_key> <c> <o> <m> <p> <l>         : "∁"  U2201   # COMPLEMENT (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
-<Multi_key> <c> <s> <u> <b> <Return>    : "⫏"  U2ACF   # CLOSED SUBSET (conflicts with š, use vs)
+<Multi_key> <c> <s> <u> <b> <space>     : "⫏"  U2ACF   # CLOSED SUBSET (conflicts with š, use vs)
 <Multi_key> <c> <s> <u> <b> <e> <q>     : "⫑"  U2AD1   # CLOSED SUBSET OR EQUAL TO (conflicts with š, use vs)
-<Multi_key> <c> <s> <u> <p> <Return>    : "⫐"  U2AD0   # CLOSED SUPERSET (conflicts with š, use vs)
+<Multi_key> <c> <s> <u> <p> <space>     : "⫐"  U2AD0   # CLOSED SUPERSET (conflicts with š, use vs)
 <Multi_key> <c> <s> <u> <p> <e> <q>     : "⫒"  U2AD2   # CLOSED SUPERSET OR EQUAL TO (conflicts with š, use vs)
 <Multi_key> <c> <u> <p>                 : "∪"  U222A   # SET UNION (conflicts with ǔ, use vu)
 <Multi_key> <C> <u> <p>                 : "⋓"  U22D3   # DOUBLE UNION
@@ -13518,7 +13900,7 @@ include "%L"
 <Multi_key> <i> <i> <i> <n> <t>         : "∭"  U222D   # TRIPLE INTEGRAL
 <Multi_key> <i> <i> <n> <t>             : "∬"  U222C   # DOUBLE INTEGRAL
 <Multi_key> <i> <n> <t>                 : "∫"  U222B   # INTEGRAL
-<Multi_key> <i> <n> <Return>            : "∈"  U2208   # ELEMENT OF (alternatively isin)
+<Multi_key> <i> <n> <space>             : "∈"  U2208   # ELEMENT OF (alternatively isin)
 <Multi_key> <i> <s> <i> <n>             : "∈"  U2208   # ELEMENT OF
 <Multi_key> <l> <a> <n> <d>             : "∧"  U2227   # LOGICAL AND (alternatively /\)
 <Multi_key> <L> <a> <n> <d>             : "⩓"  U2A53   # DOUBLE LOGICAL AND
@@ -13529,24 +13911,24 @@ include "%L"
 <Multi_key> <m> <e> <a> <n> <g> <l> <e> : "∡"  U2221   # MEASURED ANGLE (not ideal)
 <Multi_key> <n> <a> <n> <d>             : "⊼"  U22BC   # NAND
 <Multi_key> <n> <e> <x> <i> <s> <t> <s> : "∄"  U2204   # THERE DOES NOT EXIST
-<Multi_key> <n> <i> <Return>            : "∋"  U220B   # CONTAINS AS MEMBER
+<Multi_key> <n> <i> <space>             : "∋"  U220B   # CONTAINS AS MEMBER
 <Multi_key> <n> <o> <r>                 : "⊽"  U22BD   # NOR
 <Multi_key> <n> <o> <t> <i> <n>         : "∉"  U2209   # NOT AN ELEMENT OF
 <Multi_key> <n> <o> <t> <n> <i>         : "∌"  U220C   # DOES NOT CONTAIN AS MEMBER
-<Multi_key> <n> <p> <r> <e> <c> <Return> : "⊀"  U2280   # DOES NOT PRECEDE
+<Multi_key> <n> <p> <r> <e> <c> <space>  : "⊀"  U2280   # DOES NOT PRECEDE
 <Multi_key> <n> <p> <r> <e> <c> <e> <q> : "⋠"  U22E0   # DOES NOT PRECEDE OR EQUAL
 <Multi_key> <n> <s> <q> <s> <u> <b> <e> <q> : "⋢"  U22E2   # NOT SQUARE IMAGE OF OR EQUAL TO
 <Multi_key> <n> <s> <q> <s> <u> <p> <e> <q> : "⋣"  U22E3   # NOT SQUARE ORIGINAL OF OR EQUAL TO
-<Multi_key> <n> <s> <u> <b> <Return>    : "⊄"  U2284   # NOT A SUBSET OF
+<Multi_key> <n> <s> <u> <b> <space>     : "⊄"  U2284   # NOT A SUBSET OF
 <Multi_key> <n> <s> <u> <b> <e> <q>     : "⊈"  U2288   # NEITHER A SUBSET OF NOR EQUAL TO
-<Multi_key> <n> <s> <u> <c> <c> <Return> : "⊁"  U2281   # DOES NOT SUCCEED
+<Multi_key> <n> <s> <u> <c> <c> <space>  : "⊁"  U2281   # DOES NOT SUCCEED
 <Multi_key> <n> <s> <u> <c> <c> <e> <q> : "⋡"  U22E1   # DOES NOT SUCCEED OR EQUAL
-<Multi_key> <n> <s> <u> <p> <Return>    : "⊅"  U2285   # NOT A SUPERSET OF
+<Multi_key> <n> <s> <u> <p> <space>     : "⊅"  U2285   # NOT A SUPERSET OF
 <Multi_key> <n> <s> <u> <p> <e> <q>     : "⊉"  U2289   # NEITHER A SUPERSET OF NOR EQUAL TO
 <Multi_key> <o> <i> <i> <i> <n> <t>     : "∰"  U2230   # VOLUME INTEGRAL
 <Multi_key> <o> <i> <i> <n> <t>         : "∯"  U222F   # SURFACE INTEGRAL
 <Multi_key> <o> <i> <n> <t>             : "∮"  U222E   # CONTOUR INTEGRAL
-<Multi_key> <p> <r> <e> <c> <Return>    : "≺"  U227A   # PRECEDES
+<Multi_key> <p> <r> <e> <c> <space>     : "≺"  U227A   # PRECEDES
 <Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
 <Multi_key> <p> <r> <e> <c> <s> <i> <m> : "≾"  U227E   # PRECEDES OR EQUIVALENT TO
 <Multi_key> <p> <r> <o> <d>             : "∏"  U220F   # N-ARY PRODUCT
@@ -13561,13 +13943,13 @@ include "%L"
 <Multi_key> <s> <q> <c> <u> <p>         : "⊔"  U2294   # SQUARE CUP (COPRODUCT)
 <Multi_key> <S> <q> <c> <u> <p>         : "⩏"  U2A4F   # DOUBLE SQUARE UNION
 <Multi_key> <S> <Q> <C> <U> <P>         : "⨆"  U2A06   # N-ARY SQUARE UNION OPERATOR
-<Multi_key> <s> <q> <s> <u> <b> <Return> : "⊏" U228F    # SQUARE IMAGE OF
-<Multi_key> <s> <q> <s> <u> <p> <Return> : "⊐" U2290    # SQUARE ORIGINAL OF
+<Multi_key> <s> <q> <s> <u> <b> <space> : "⊏" U228F    # SQUARE IMAGE OF
+<Multi_key> <s> <q> <s> <u> <p> <space> : "⊐" U2290    # SQUARE ORIGINAL OF
 <Multi_key> <s> <q> <s> <u> <b> <e> <q> : "⊑" U2291    # SQUARE IMAGE OF OR EQUAL TO
 <Multi_key> <s> <q> <s> <u> <p> <e> <q> : "⊒" U2292    # SQUARE ORIGINAL OF OR EQUAL TO
 <Multi_key> <s> <q> <s> <u> <b> <n> <e> <q> : "⋤" U22E4   # SQUARE IMAGE OF OR NOT EQUAL TO
 <Multi_key> <s> <q> <s> <u> <p> <n> <e> <q> : "⋥" U22E5   # SQUARE ORIGINAL OF OR NOT EQUAL TO
-<Multi_key> <s> <u> <b> <Return>        : "⊂"  U2282   # SUBSET OF
+<Multi_key> <s> <u> <b> <space>         : "⊂"  U2282   # SUBSET OF
 <Multi_key> <S> <u> <b>                 : "⋐"  U22D0   # DOUBLE SUBSET
 <Multi_key> <s> <u> <b> <e> <q>         : "⊆"  U2286   # SUBSET OF OR EQUAL TO
 <Multi_key> <s> <u> <b> <n> <e> <q>     : "⊊"  U228A   # SUBSET OF WITH NOT EQUAL TO
@@ -13576,11 +13958,11 @@ include "%L"
 <Multi_key> <s> <u> <b> <period>        : "⪽"  U2ABD   # SUBSET WITH DOT
 <Multi_key> <s> <u> <b> <plus>          : "⪿"  U2ABF   # SUBSET WITH PLUS SIGN BELOW
 <Multi_key> <s> <u> <b> <asterisk>      : "⫁"  U2AC1   # SUBSET WITH MULTIPLICATION SIGN BELOW
-<Multi_key> <s> <u> <c> <c> <Return>    : "≻"  U227B   # SUCCEEDS
+<Multi_key> <s> <u> <c> <c> <space>     : "≻"  U227B   # SUCCEEDS
 <Multi_key> <s> <u> <c> <c> <e> <q>     : "≽"  U227D   # SUCCEEDS OR EQUAL TO
 <Multi_key> <s> <u> <c> <c> <s> <i> <m> : "≿"  U227F   # SUCCEEDS OR EQUIVALENT TO
 <Multi_key> <s> <u> <m>                 : "∑"  U2211   # N-ARY SUMMATION
-<Multi_key> <s> <u> <p> <Return>        : "⊃"  U2283   # SUPERSET OF
+<Multi_key> <s> <u> <p> <space>         : "⊃"  U2283   # SUPERSET OF
 <Multi_key> <S> <u> <p>                 : "⋑"  U22D1   # DOUBLE SUPERSET
 <Multi_key> <s> <u> <p> <e> <q>         : "⊇"  U2287   # SUPERSET OF OR EQUAL TO
 <Multi_key> <s> <u> <p> <n> <e> <q>     : "⊋"  U228B   # SUPERSET OF WITH NOT EQUAL TO
@@ -13611,13 +13993,13 @@ include "%L"
 <Multi_key> <ampersand> <less> <greater>             : "◇"  U25C7   # WHITE DIAMOND (POSSIBILITY)
 <Multi_key> <ampersand> <minus> <greater>            : "→"  U2192   # RIGHTWARDS ARROW
 <Multi_key> <ampersand> <minus> <slash> <greater>    : "↛"  U219B   # RIGHTWARDS ARROW WITH STROKE
-<Multi_key> <ampersand> <less> <minus> <Return>      : "←"  U2190   # LEFTWARDS ARROW
+<Multi_key> <ampersand> <less> <minus> <space>       : "←"  U2190   # LEFTWARDS ARROW
 <Multi_key> <ampersand> <less> <slash> <minus>       : "↚"  U219A   # LEFTWARDS ARROW WITH STROKE
 <Multi_key> <ampersand> <less> <minus> <greater>     : "↔"  U2194   # LEFT RIGHT ARROW
 <Multi_key> <ampersand> <less> <minus> <slash> <greater>  : "↮"  U21AE   # LEFT RIGHT ARROW WITH STROKE
 <Multi_key> <ampersand> <equal> <greater>            : "⇒"  U21D2   # RIGHTWARDS DOUBLE ARROW
 <Multi_key> <ampersand> <equal> <slash> <greater>    : "⇏"  U21CF   # RIGHTWARDS DOUBLE ARROW WITH STROKE
-<Multi_key> <ampersand> <less> <equal> <Return>      : "⇐"  U21D0   # LEFTWARDS DOUBLE ARROW
+<Multi_key> <ampersand> <less> <equal> <space>       : "⇐"  U21D0   # LEFTWARDS DOUBLE ARROW
 <Multi_key> <ampersand> <less> <slash> <equal>       : "⇍"  U21CD   # LEFTWARDS DOUBLE ARROW WITH STROKE
 <Multi_key> <ampersand> <less> <equal> <greater>     : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
 <Multi_key> <ampersand> <less> <equal> <slash> <greater>  : "⇎"  U21CE   # LEFT RIGHT DOUBLE ARROW WITH STROKE
@@ -13706,7 +14088,7 @@ include "%L"
 
 # Hearts (start with <3) - see geometric shapes section for other colored shapes 
 
-<Multi_key> <less> <3> <Return>     : "❤️"  U2764 UFE0F   # HEAVY BLACK HEART EMOJI
+<Multi_key> <less> <3> <space>      : "❤️"  U2764 UFE0F   # HEAVY BLACK HEART EMOJI
 <Multi_key> <less> <3> <equal>      : "❤️‍🩹"  U2764 UFE0F U200D U1FA79   # MENDING HEART EMOJI
 <Multi_key> <less> <3> <greater> <less> : "💝"  U1F49D    # HEART WITH RIBBON
 <Multi_key> <less> <3> <exclam>     : "❣️"  U2763 UFE0F   # HEAVY HEART EXCLAMATION MARK ORNAMENT EMOJI
@@ -13741,8 +14123,8 @@ include "%L"
 
 # Gender and sexuality (also start with <3)
 
-<Multi_key> <less> <3> <F> <Return> : "♀"  U2640    # FEMALE SIGN (use @[Return] for emoji form)
-<Multi_key> <less> <3> <M> <Return> : "♂"  U2642    # MALE SIGN (use @[Return] for emoji form)
+<Multi_key> <less> <3> <F> <space>  : "♀"  U2640    # FEMALE SIGN (use @[Return] for emoji form)
+<Multi_key> <less> <3> <M> <space>  : "♂"  U2642    # MALE SIGN (use @[Return] for emoji form)
 <Multi_key> <less> <3> <F> <F>      : "⚢"  U26A2    # DOUBLED FEMALE SIGN (FEMALE HOMOSEXUAL)
 <Multi_key> <less> <3> <M> <M>      : "⚣"  U26A3    # DOUBLED MALE SIGN (MALE HOMOSEXUAL)
 <Multi_key> <less> <3> <H> <S>      : "⚤"  U26A4    # INTERLOCKED FEMALE AND MALE SIGN (HETEROSEXUAL)
@@ -13977,7 +14359,7 @@ include "%L"
 <Multi_key> <c> <l> <i> <m> <b>     : "🧗"  U1F9D7        # PERSON CLIMBING (conflicts with ľ, use vl)
 <Multi_key> <c> <h> <e> <f>         : "🧑‍🍳"  U1F9D1 U200D U1F373    # COOK (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <n> <t> <a> <c> : "👥"  U1F465        # BUSTS IN SILHOUETTE (CONTACTS) (conflicts with ǒ, use vo)
-<Multi_key> <c> <o> <p> <Return>    : "👮"  U1F46E        # POLICE OFFICER (COP) (conflicts with ǒ, use vo) (use pman for 👮‍♂️ and pwoman for 👮‍♀️)
+<Multi_key> <c> <o> <p> <space>     : "👮"  U1F46E        # POLICE OFFICER (COP) (conflicts with ǒ, use vo) (use pman for 👮‍♂️ and pwoman for 👮‍♀️)
 <Multi_key> <c> <o> <u> <p> <l> <e> : "💑"  U1F491        # COUPLE WITH HEART (conflicts with ǒ, use vo) (use 👨+ZWJ+❤️+ZWJ+👨 for 👨‍❤️‍👨 etc)
 <Multi_key> <c> <y> <c> <l> <e>     : "🚴"  U1F6B4        # BICYCLIST (use bike for 🚲)
 <Multi_key> <d> <a> <n> <c> <e>     : "💃"  U1F483        # DANCER (use strut for 🕺)
@@ -14058,7 +14440,7 @@ include "%L"
 <Multi_key> <c> <a> <l> <l>         : "🤙"  U1F919        # CALL ME HAND (conflicts with ǎ, use va)
 <Multi_key> <c> <l> <a> <p>         : "👏"  U1F44F        # CLAPPING HANDS SIGN (conflicts with ľ, use vl)
 <Multi_key> <e> <a> <r>             : "👂"  U1F442        # EAR
-<Multi_key> <e> <y> <e> <Return>    : "👁️"  U1F441 UFE0F  # EYE EMOJI (👁️+ZWJ+🗨️=👁️‍🗨️)
+<Multi_key> <e> <y> <e> <space>     : "👁️"  U1F441 UFE0F  # EYE EMOJI (👁️+ZWJ+🗨️=👁️‍🗨️)
 <Multi_key> <e> <y> <e> <s>         : "👀"  U1F440        # EYES
 <Multi_key> <f> <e> <e> <t>         : "👣"  U1F463        # FOOTPRINTS (FEET)
 <Multi_key> <f> <o> <o> <t>         : "🦶"  U1F9B6        # FOOT
@@ -14127,7 +14509,7 @@ include "%L"
 <Multi_key> <c> <h> <o> <p>         : "🥢"  U1F962        # CHOPSTICKS (conflicts with ȟ, use vh)
 <Multi_key> <c> <l> <i> <n> <k>     : "🥂"  U1F942        # CLINKING GLASSES (conflicts with ľ, use vl)
 <Multi_key> <c> <o> <c> <k> <t>     : "🍸"  U1F378        # COCKTAIL GLASS (conflicts with ǒ, use vo)
-<Multi_key> <c> <o> <o> <k> <Return> : "🍳"  U1F373       # COOKING (conflicts with ǒ, use vo) (use chef for 🧑‍🍳)
+<Multi_key> <c> <o> <o> <k> <space>  : "🍳"  U1F373       # COOKING (conflicts with ǒ, use vo) (use chef for 🧑‍🍳)
 <Multi_key> <c> <o> <o> <k> <i> <e> : "🍪"  U1F36A        # COOKIE (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <r> <k>         : "🍾"  U1F37E        # BOTTLE WITH POPPING CORK (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <r> <n>         : "🌽"  U1F33D        # EAR OF MAIZE (CORN) (conflicts with ǒ, use vo)
@@ -14255,7 +14637,7 @@ include "%L"
 <Multi_key> <g> <l> <o> <b> <e> <less>        : "🌎"  U1F30E    # EARTH GLOBE AMERICAS
 <Multi_key> <g> <l> <o> <b> <e> <asciicircum> : "🌍"  U1F30D    # EARTH GLOBE EUROPE-AFRICA
 <Multi_key> <g> <l> <o> <b> <e> <greater>     : "🌏"  U1F30F    # EARTH GLOBE ASIA-AUSTRALIA
-<Multi_key> <g> <l> <o> <b> <e> <Return>      : "🌐"  U1F310    # GLOBE WITH MERIDIANS
+<Multi_key> <g> <l> <o> <b> <e> <space>       : "🌐"  U1F310    # GLOBE WITH MERIDIANS
 <Multi_key> <g> <r> <a> <i> <n>     : "🌾"  U1F33E        # EAR OF RICE (GRAIN)
 <Multi_key> <h> <i> <b> <i> <s> <c> : "🌺"  U1F33A        # HIBISCUS
 <Multi_key> <h> <o> <t>             : "🔥"  U1F525        # FIRE (HOT)
@@ -14296,7 +14678,7 @@ include "%L"
 <Multi_key> <s> <r> <o> <c> <k>     : "☘️"  U2618 UFE0F   # SHAMROCK EMOJI
 <Multi_key> <s> <t> <o> <n> <e>     : "🪨"  U1FAA8        # ROCK (STONE)
 <Multi_key> <s> <t> <o> <r> <m>     : "⛈️"  U26C8 UFE0F   # THUNDER CLOUD AND RAIN EMOJI (STORM) (use tstorm for 🌩️)
-<Multi_key> <s> <u> <n> <Return>    : "☀️"  U2600 UFE0F   # BLACK SUN WITH RAYS EMOJI
+<Multi_key> <s> <u> <n> <space>     : "☀️"  U2600 UFE0F   # BLACK SUN WITH RAYS EMOJI
 <Multi_key> <s> <u> <n> <colon> <parenright> : "🌞"  U1F31E    # SUN WITH FACE
 <Multi_key> <s> <u> <n> <B> <parenright> : "😎"  U1F60E   # SMILING FACE WITH SUNGLASSES
 <Multi_key> <s> <u> <n> <asciicircum> : "🌅"  U1F305      # SUNRISE
@@ -14768,12 +15150,12 @@ include "%L"
 <Multi_key> <n> <i> <b>             : "✒️"  U2712 UFE0F   # BLACK NIB EMOJI
 <Multi_key> <n> <o> <t> <e> <b>     : "📓"  U1F4D3        # NOTEBOOK (nose nbook for 📔)
 <Multi_key> <p> <a> <d>             : "🗒️"  U1F5D2 UFE0F  # SPIRAL NOTE PAD EMOJI
-<Multi_key> <p> <a> <g> <e> <Return> : "📄" U1F4C4        # PAGE FACING UP
+<Multi_key> <p> <a> <g> <e> <space> : "📄" U1F4C4        # PAGE FACING UP
 <Multi_key> <p> <a> <g> <e> <c> <u> : "📃"  U1F4C3        # PAGE WITH CURL
 <Multi_key> <p> <a> <g> <e> <r>     : "📟"  U1F4DF        # PAGER
 <Multi_key> <p> <a> <p> <e> <r>     : "🗞️"  U1F5DE UFE0F  # ROLLED-UP NEWSPAPER EMOJI (use news for 📰)
 <Multi_key> <p> <c> <l> <i> <p> <s> : "🖇️"  U1F587 UFE0F  # LINKED PAPERCLIPS EMOJI (use clip for 📎)
-<Multi_key> <p> <e> <n> <Return>    : "🖊️"  U1F58A UFE0F  # LOWER LEFT BALLPOINT PEN EMOJI
+<Multi_key> <p> <e> <n> <space>     : "🖊️"  U1F58A UFE0F  # LOWER LEFT BALLPOINT PEN EMOJI
 <Multi_key> <p> <e> <n> <c> <i> <l> : "✏️"  U270F UFE0F   # PENCIL EMOJI
 <Multi_key> <p> <l> <a> <c> <a> <r> : "🪧"  U1FAA7        # PLACARD
 <Multi_key> <p> <o> <u> <n> <d>     : "💷"  U1F4B7        # BANKNOTE WITH POUND SIGN (use L= for ₤)
@@ -14817,7 +15199,7 @@ include "%L"
 <Multi_key> <m> <e> <d> <i> <u> <m> : "🔉"  U1F509        # SPEAKER WITH ONE SOUND WAVE (MEDIUM)
 <Multi_key> <m> <i> <k> <e>         : "🎤"  U1F3A4        # MICROPHONE (MIKE) (🧑+ZWJ+🎤=🧑‍🎤)
 <Multi_key> <m> <p> <h> <o> <n> <e> : "📣"  U1F4E3        # CHEERING MEGAPHONE
-<Multi_key> <n> <o> <t> <e> <Return> : "🎵" U1F3B5        # MUSICAL NOTE
+<Multi_key> <n> <o> <t> <e> <space> : "🎵" U1F3B5        # MUSICAL NOTE
 <Multi_key> <n> <o> <t> <e> <s>     : "🎶"  U1F3B6        # MULTIPLE MUSICAL NOTES
 <Multi_key> <q> <u> <i> <e> <t>     : "🔈"  U1F508        # SPEAKER (QUIET)
 <Multi_key> <r> <a> <d> <i> <o>     : "📻"  U1F4FB        # RADIO
@@ -14836,7 +15218,7 @@ include "%L"
 <Multi_key> <b> <i> <n>             : "🗑️"  U1F5D1 UFE0F  # WASTEBASKET EMOJI (BIN) (conflicts with ĭ, use ui)
 <Multi_key> <b> <o> <l> <t>         : "🔩"  U1F529        # NUT AND BOLT (conflicts with ŏ, use uo)
 <Multi_key> <b> <o> <m> <b>         : "💣"  U1F4A3        # BOMB (conflicts with ŏ, use uo)
-<Multi_key> <b> <o> <n> <g> <Return> : "⚗️" U2697 UFE0F   # ALEMBIC EMOJI (BONG) (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <n> <g> <space> : "⚗️" U2697 UFE0F   # ALEMBIC EMOJI (BONG) (conflicts with ŏ, use uo)
 <Multi_key> <b> <r> <o> <o> <m>     : "🧹"  U1F9F9        # BROOM
 <Multi_key> <b> <u> <c> <k> <e> <t> : "🪣"  U1FAA3        # BUCKET (conflicts with ŭ, use uu)
 <Multi_key> <b> <u> <l> <b>         : "💡"  U1F4A1        # ELECTRIC LIGHT BULB (conflicts with ŭ, use uu)
@@ -15259,8 +15641,8 @@ include "%L"
 
 # Punctuation
 
-<Multi_key> <at> <o> <Return>        : "⭕" U2B55          # HEAVY LARGE CIRCLE
-<Multi_key> <at> <exclam> <Return>   : "❗" U2757          # HEAVY EXCLAMATION MARK SYMBOL
+<Multi_key> <at> <o> <space>         : "⭕" U2B55          # HEAVY LARGE CIRCLE
+<Multi_key> <at> <exclam> <space>    : "❗" U2757          # HEAVY EXCLAMATION MARK SYMBOL
 <Multi_key> <at> <exclam> <exclam>   : "‼️" U203C UFE0F    # DOUBLE EXCLAMATION MARK EMOJI
 <Multi_key> <at> <exclam> <question> : "⁉️" U2049 UFE0F    # EXCLAMATION QUESTION MARK EMOJI
 <Multi_key> <at> <question>          : "❓" U2753          # BLACK QUESTION MARK ORNAMENT
@@ -15269,7 +15651,7 @@ include "%L"
 <Multi_key> <at> <v>                 : "✔️" U2714 UFE0F    # HEAVY CHECK MARK EMOJI
 <Multi_key> <at> <x>                 : "✖️" U2716 UFE0F    # HEAVY MULTIPLICATION X EMOJI
 <Multi_key> <at> <plus>              : "➕" U2795          # HEAVY PLUS SIGN
-<Multi_key> <at> <minus> <Return>    : "➖" U2796          # HEAVY MINUS SIGN
+<Multi_key> <at> <minus> <space>     : "➖" U2796          # HEAVY MINUS SIGN
 <Multi_key> <at> <colon> <minus>     : "➗" U2797          # HEAVY DIVISION SIGN
 <Multi_key> <at> <equal>             : "🟰" U1F7F0         # HEAVY EQUALS SIGN
 <Multi_key> <at> <asciitilde>        : "〰️" U3030 UFE0F    # WAVY DASH EMOJI
@@ -15370,8 +15752,14 @@ include "%L"
 <Multi_key> <O> <Multi_key> <slash> <quotedbl>      : "㋡"  U32E1  # CIRCLED KATAKANA TU
 <Multi_key> <O> <Multi_key> <parenleft> <quotedbl>  : "☹"  U2639  # WHITE FROWNING FACE
 <Multi_key> <O> <Multi_key> <parenright> <quotedbl> : "☺"  U263A  # WHITE SMILING FACE
-<Multi_key> <O> <Multi_key> <T> <X>                 : "𖨆"  U16A06  # BAMUM LETTER PHASE-F EE
-<Multi_key> <O> <Multi_key> <T> <Y>                 : "웃"  UC6C3  # HANGUL SYLLABLE US
+<Multi_key> <O> <Multi_key> <period> <quotedbl>     : "ꇎ"  UA1CE  # YI SYLLABLE LUT
+<Multi_key> <O> <Multi_key> <minus> <period> <quotedbl> : "ꇩ"  UA1E9  # YI SYLLABLE GUOP
+<Multi_key> <O> <Multi_key> <minus> <minus> <quotedbl> : "ꂮ"  UA0AE  # YI SYLLABLE MIT
+
+<Multi_key> <O> <Multi_key> <T> <X>                 : "웃"  UC6C3  # HANGUL SYLLABLE US
+<Multi_key> <O> <Multi_key> <period> <T> <X>        : "𖨆"  U16A06  # BAMUM LETTER PHASE-F EE
+<Multi_key> <z> <O> <Multi_key> <T> <X>             : "𖦔"  U16994  # BAMUM LETTER PHASE-E YIEE
+<Multi_key> <O> <Multi_key> <Y>                     : "ꐕ"  UA415  # YI SYLLABLE QYP
 
 ###############
 # Hieroglyphs #
@@ -15511,13 +15899,13 @@ include "%L"
 <Multi_key> <bracketright> <m> <u> <l> <l> <e> <t> : "𓆝"  U1319D  # EGYPTIAN HIEROGLYPH K003 (MULLET)
 <Multi_key> <bracketright> <o> <r> <y> <x> : "𓃲"  U130F2  # EGYPTIAN HIEROGLYPH E028 (ORYX)
 <Multi_key> <bracketright> <o> <s> <t> <r> <i> <c> : "𓅦"  U13166  # EGYPTIAN HIEROGLYPH G034 (OSTRIC)
-<Multi_key> <bracketright> <o> <w> <l> <Return> : "𓅓"  U13153  # EGYPTIAN HIEROGLYPH G017 (OWL)
+<Multi_key> <bracketright> <o> <w> <l> <space> : "𓅓"  U13153  # EGYPTIAN HIEROGLYPH G017 (OWL)
 <Multi_key> <bracketright> <o> <w> <l> <s> : "𓅔"  U13154  # EGYPTIAN HIEROGLYPH G018 (OWLS)
 <Multi_key> <bracketright> <p> <e> <c> <k> : "𓅻"  U1317B  # EGYPTIAN HIEROGLYPH G051 (PECK)
 <Multi_key> <bracketright> <p> <e> <e> <w> <i> <t> : "𓅚"  U1315A  # EGYPTIAN HIEROGLYPH G023 (PEEWIT)
 <Multi_key> <bracketright> <p> <i> <g> : "𓃟"  U130DF  # EGYPTIAN HIEROGLYPH E012 (PIG)
 <Multi_key> <bracketright> <p> <u> <f> <f> <e> <r> : "𓆡"  U131A1  # EGYPTIAN HIEROGLYPH K007 (PUFFER)
-<Multi_key> <bracketright> <q> <u> <a> <i> <l> <Return> : "𓅱"  U13171  # EGYPTIAN HIEROGLYPH G043 (QUAIL)
+<Multi_key> <bracketright> <q> <u> <a> <i> <l> <space> : "𓅱"  U13171  # EGYPTIAN HIEROGLYPH G043 (QUAIL)
 <Multi_key> <bracketright> <q> <u> <a> <i> <l> <s> : "𓅳"  U13173  # EGYPTIAN HIEROGLYPH G044 (QUAILS)
 <Multi_key> <bracketright> <r> <a> <m> : "𓃝"  U130DD  # EGYPTIAN HIEROGLYPH E010 (RAM)
 <Multi_key> <bracketright> <s> <c> <a> <r> <a> <b> : "𓆣"  U131A3  # EGYPTIAN HIEROGLYPH L001 (SCARAB)
@@ -15525,7 +15913,7 @@ include "%L"
 <Multi_key> <bracketright> <s> <h> <a> <g> : "𓅧"  U13167  # EGYPTIAN HIEROGLYPH G035 (SHAG)
 <Multi_key> <bracketright> <s> <n> <a> <k> <e> : "𓆙"  U13199  # EGYPTIAN HIEROGLYPH I014 (SNAKE)
 <Multi_key> <bracketright> <s> <p> <a> <r> <r> <o> : "𓅪"  U1316A  # EGYPTIAN HIEROGLYPH G037 (SPARROW)
-<Multi_key> <bracketright> <s> <t> <o> <r> <k> <Return> : "𓅡"  U13161  # EGYPTIAN HIEROGLYPH G029 (STORK)
+<Multi_key> <bracketright> <s> <t> <o> <r> <k> <space> : "𓅡"  U13161  # EGYPTIAN HIEROGLYPH G029 (STORK)
 <Multi_key> <bracketright> <s> <t> <o> <r> <k> <s> : "𓅢"  U13162  # EGYPTIAN HIEROGLYPH G030 (STORKS)
 <Multi_key> <bracketright> <s> <w> <a> <l> <l> <o> : "𓅨"  U13168  # EGYPTIAN HIEROGLYPH G036 (SWALLOW)
 <Multi_key> <bracketright> <t> <u> <r> <t> <l> <e> : "𓆉"  U13189  # EGYPTIAN HIEROGLYPH I002 (TURTLE)
@@ -15579,7 +15967,7 @@ include "%L"
 <Multi_key> <bracketright> <s> <t> <a> <i> <r> <s> : "𓊍"  U1328D  # EGYPTIAN HIEROGLYPH O040 (STAIRS)
 
 <Multi_key> <bracketright> <a> <n> <k> <h> : "𓋹"  U132F9  # EGYPTIAN HIEROGLYPH S034 (ANKH)
-<Multi_key> <bracketright> <a> <r> <r> <o> <w> <Return> : "𓌕"  U13315  # EGYPTIAN HIEROGLYPH T011 (ARROW)
+<Multi_key> <bracketright> <a> <r> <r> <o> <w> <space> : "𓌕"  U13315  # EGYPTIAN HIEROGLYPH T011 (ARROW)
 <Multi_key> <bracketright> <a> <r> <r> <o> <w> <s> : "𓌖"  U13316  # EGYPTIAN HIEROGLYPH T011A (ARROWS)
 <Multi_key> <bracketright> <a> <x> <e> : "𓌏"  U1330F  # EGYPTIAN HIEROGLYPH T007A (AXE)
 <Multi_key> <bracketright> <b> <a> <s> <k> <e> <t> : "𓎡"  U133A1  # EGYPTIAN HIEROGLYPH V031 (BASKET)
@@ -15682,7 +16070,7 @@ include "%L"
 <Multi_key> <bracketright> <1> <E> <5> : "𓆐"  U13190  # EGYPTIAN HIEROGLYPH I008 (100,000)
 <Multi_key> <bracketright> <1> <E> <6> : "𓁨"  U13068  # EGYPTIAN HIEROGLYPH C011 (1,000,000)
 
-<Multi_key> <bracketright> <1> <slash> <Return> : "𓂋"  U1308B  # EGYPTIAN HIEROGLYPH D021 (1/)
+<Multi_key> <bracketright> <1> <slash> <space> : "𓂋"  U1308B  # EGYPTIAN HIEROGLYPH D021 (1/)
 <Multi_key> <bracketright> <1> <slash> <2> : "𓂁"  U13081  # EGYPTIAN HIEROGLYPH D011 (1/2)
 <Multi_key> <bracketright> <1> <slash> <4> : "𓂂"  U13082  # EGYPTIAN HIEROGLYPH D012 (1/4)
 <Multi_key> <bracketright> <1> <slash> <8> : "𓂃"  U13083  # EGYPTIAN HIEROGLYPH D013 (1/8)
@@ -15747,9 +16135,22 @@ include "%L"
 <Multi_key> <braceright> <m> <o> <b> <i> <l> <e> : "𔕀"  U14540  # ANATOLIAN HIEROGLYPH A285 (MOBILE)
 <Multi_key> <braceright> <p> <e> <n> : "𔕄"  U14544  # ANATOLIAN HIEROGLYPH A289 (PEN)
 
-# (plus a few other logograms and symbols in the same namespace)
+# (plus a few other ideographs in the same namespace)
 
-<Multi_key> <braceright> <b> <a> <l> <d> : "𐇒"  U101D2  # PHAISTOS DISC SIGN TATTOOED HEAD (BALD)
+<Multi_key> <braceright> <b> <o> <o> <b> <s> : "𖦴"  U169B4  # BAMUM LETTER PHASE-E FUE (BOOBS)
+<Multi_key> <braceright> <c> <y> <c> <l> <o> <p> : "𖨆"  U16A06  # BAMUM LETTER PHASE-F EE (CYCLOPS)
+<Multi_key> <braceright> <f> <a> <n> : "𖣘"  U168D8  # BAMUM LETTER PHASE-C MA NSIEE (FAN)
+<Multi_key> <braceright> <g> <e> <c> <k> <o> : "𖠊"  U1680A  # BAMUM LETTER PHASE-A PON PA NJI PIPAEMBA (GECKO)
+<Multi_key> <braceright> <h> <o> <o> <d> <i> <e> : "𖠦"  U16826  # BAMUM LETTER PHASE-A MOOMPUQ
+<Multi_key> <braceright> <j> <e> <w> <i> <s> <h> : "𖢹"  U168B9  # BAMUM LETTER PHASE-C NTEUNGBA (JEWISH)
+<Multi_key> <braceright> <m> <a> <n> : "𖠋"  U1680B  # BAMUM LETTER PHASE-A MAEMBGBIEE (PANTS)
+<Multi_key> <braceright> <M> <a> <n> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (ISLE OF MAN)
+<Multi_key> <braceright> <m> <u> <g> : "𖠚"  U1681A  # BAMUM LETTER PHASE-A MAEKEUP (MUG)
+<Multi_key> <braceright> <u> <t> <e> <r> <u> <s> : "𖣲"  U168F2  # BAMUM LETTER PHASE-D WAP (UTERUS)
+<Multi_key> <braceright> <w> <i> <r> <e> : "𖡎"  U1684E  # BAMUM LETTER PHASE-A MAEM (WIRE)
+<Multi_key> <braceright> <asciicircum> <equal> <v> : "𖣫"  U168EB  # BAMUM LETTER PHASE-C NGAQ (⇕)
+
+<Multi_key> <braceright> <b> <a> <l> <d> : "𐇒"  U101D2  # PHAISTOS DISC SIGN TATTOOED HEAD (BALD HEAD)
 <Multi_key> <braceright> <c> <o> <o> <k> <i> <e> : "𐇛"  U101DB  # PHAISTOS DISC SIGN SHIELD (COOKIE)
 <Multi_key> <braceright> <p> <u> <n> <k> : "𐇑"  U101D1  # PHAISTOS DISC SIGN PLUMED HEAD (PUNK)
 <Multi_key> <braceright> <w> <a> <l> <k> : "𐇐"  U101D0  # PHAISTOS DISC SIGN PEDESTRIAN (WALK)
@@ -15759,16 +16160,6 @@ include "%L"
 <Multi_key> <braceright> <w> <a> <f> <f> <l> <e> : "𒐫"  U1242B  # CUNEIFORM NUMERIC SIGN NINE SHAR2 (WAFFLE)
 <Multi_key> <braceright> <w> <m> <i> <l> <l> : "𒅄"  U12144  # CUNEIFORM SIGN IDIM OVER IDIM SQUARED (WINDMILL)
 <Multi_key> <braceright> <x> <m> <a> <s> : "𒀱"  U12031  # CUNEIFORM SIGN AN PLUS NAGA SQUARED (XMAS)
-
-<Multi_key> <braceright> <b> <o> <o> <b> <s> : "𖦴"  U169B4  # BAMUM LETTER PHASE-E FUE (BOOBS)
-<Multi_key> <braceright> <c> <u> <p> : "𖠚"  U1681A  # BAMUM LETTER PHASE-A MAEKEUP (CUP)
-<Multi_key> <braceright> <c> <y> <c> <l> <o> <p> : "𖨆"  U16A06  # BAMUM LETTER PHASE-F EE (CYCLOPS)
-<Multi_key> <braceright> <f> <a> <n> : "𖣘"  U168D8  # BAMUM LETTER PHASE-C MA NSIEE (FAN)
-<Multi_key> <braceright> <h> <p> <h> <o> <n> <e> : "𖧊"  U169CA  # BAMUM LETTER PHASE-E PUAQ (HEADPHONES)
-<Multi_key> <braceright> <j> <e> <w> <i> <s> <h> : "𖢹"  U168B9  # BAMUM LETTER PHASE-C NTEUNGBA (JEWISH)
-<Multi_key> <braceright> <m> <a> <n> : "𖠋"  U1680B  # BAMUM LETTER PHASE-A MAEMBGBIEE (MAN)
-<Multi_key> <braceright> <M> <a> <n> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (ISLE OF MAN)
-<Multi_key> <braceright> <w> <i> <r> <e> : "𖡎"  U1684E  # BAMUM LETTER PHASE-A MAEM (WIRE)
 
 <Multi_key> <braceright> <f> <i> <n> <g> <e> <r> : "⍝"  U235D  # APL FUNCTIONAL SYMBOL UP SHOE JOT (FINGER)
 
@@ -16065,7 +16456,7 @@ include "%L"
 <Multi_key> <Tab> <backslash> <equal> <v>                 : "⇘"  U21D8  # SOUTH EAST DOUBLE ARROW
 <Multi_key> <Tab> <backslash> <equal> <greater>           : "⇘"  U21D8  # SOUTH EAST DOUBLE ARROW
 <Multi_key> <Tab> <slash> <equal> <v>                     : "⇙"  U21D9  # SOUTH WEST DOUBLE ARROW
-<Multi_key> <Tab> <less> <equal> <slash> <Return>         : "⇙"  U21D9  # SOUTH WEST DOUBLE ARROW
+<Multi_key> <Tab> <less> <equal> <slash> <space>          : "⇙"  U21D9  # SOUTH WEST DOUBLE ARROW
 
 <Multi_key> <Tab> <less> <3> <equal>                      : "⇚"  U21DA  # LEFTWARDS TRIPLE ARROW
 <Multi_key> <Tab> <equal> <3> <greater>                   : "⇛"  U21DB  # RIGHTWARDS TRIPLE ARROW
@@ -16561,37 +16952,37 @@ include "%L"
 
 # sextants: | + 6 + sextant list
 
-<Multi_key> <bar> <6> <1> <Return>                 : "🬀"  U1FB00  # BLOCK SEXTANT-1
-<Multi_key> <bar> <6> <2> <Return>                 : "🬁"  U1FB01  # BLOCK SEXTANT-2
-<Multi_key> <bar> <6> <1> <2> <Return>             : "🬂"  U1FB02  # BLOCK SEXTANT-12
-<Multi_key> <bar> <6> <3> <Return>                 : "🬃"  U1FB03  # BLOCK SEXTANT-3
-<Multi_key> <bar> <6> <1> <3> <Return>             : "🬄"  U1FB04  # BLOCK SEXTANT-13
-<Multi_key> <bar> <6> <2> <3> <Return>             : "🬅"  U1FB05  # BLOCK SEXTANT-23
-<Multi_key> <bar> <6> <1> <2> <3> <Return>         : "🬆"  U1FB06  # BLOCK SEXTANT-123
-<Multi_key> <bar> <6> <4> <Return>                 : "🬇"  U1FB07  # BLOCK SEXTANT-4
-<Multi_key> <bar> <6> <1> <4> <Return>             : "🬈"  U1FB08  # BLOCK SEXTANT-14
-<Multi_key> <bar> <6> <2> <4> <Return>             : "🬉"  U1FB09  # BLOCK SEXTANT-24
-<Multi_key> <bar> <6> <1> <2> <4> <Return>         : "🬊"  U1FB0A  # BLOCK SEXTANT-124
-<Multi_key> <bar> <6> <3> <4> <Return>             : "🬋"  U1FB0B  # BLOCK SEXTANT-34
-<Multi_key> <bar> <6> <1> <3> <4> <Return>         : "🬌"  U1FB0C  # BLOCK SEXTANT-134
-<Multi_key> <bar> <6> <2> <3> <4> <Return>         : "🬍"  U1FB0D  # BLOCK SEXTANT-234
-<Multi_key> <bar> <6> <1> <2> <3> <4> <Return>     : "🬎"  U1FB0E  # BLOCK SEXTANT-1234
-<Multi_key> <bar> <6> <5> <Return>                 : "🬏"  U1FB0F  # BLOCK SEXTANT-5
-<Multi_key> <bar> <6> <1> <5> <Return>             : "🬐"  U1FB10  # BLOCK SEXTANT-15
-<Multi_key> <bar> <6> <2> <5> <Return>             : "🬑"  U1FB11  # BLOCK SEXTANT-25
-<Multi_key> <bar> <6> <1> <2> <5> <Return>         : "🬒"  U1FB12  # BLOCK SEXTANT-125
-<Multi_key> <bar> <6> <3> <5> <Return>             : "🬓"  U1FB13  # BLOCK SEXTANT-35
-<Multi_key> <bar> <6> <1> <3> <5> <Return>         : "▌"  U258C  # LEFT HALF BLOCK
-<Multi_key> <bar> <6> <2> <3> <5> <Return>         : "🬔"  U1FB14  # BLOCK SEXTANT-235
-<Multi_key> <bar> <6> <1> <2> <3> <5> <Return>     : "🬕"  U1FB15  # BLOCK SEXTANT-1235
-<Multi_key> <bar> <6> <4> <5> <Return>             : "🬖"  U1FB16  # BLOCK SEXTANT-45
-<Multi_key> <bar> <6> <1> <4> <5> <Return>         : "🬗"  U1FB17  # BLOCK SEXTANT-145
-<Multi_key> <bar> <6> <2> <4> <5> <Return>         : "🬘"  U1FB18  # BLOCK SEXTANT-245
-<Multi_key> <bar> <6> <1> <2> <4> <5> <Return>     : "🬙"  U1FB19  # BLOCK SEXTANT-1245
-<Multi_key> <bar> <6> <3> <4> <5> <Return>         : "🬚"  U1FB1A  # BLOCK SEXTANT-345
-<Multi_key> <bar> <6> <1> <3> <4> <5> <Return>     : "🬛"  U1FB1B  # BLOCK SEXTANT-1345
-<Multi_key> <bar> <6> <2> <3> <4> <5> <Return>     : "🬜"  U1FB1C  # BLOCK SEXTANT-2345
-<Multi_key> <bar> <6> <1> <2> <3> <4> <5> <Return> : "🬝"  U1FB1D  # BLOCK SEXTANT-12345
+<Multi_key> <bar> <6> <1> <space>                  : "🬀"  U1FB00  # BLOCK SEXTANT-1
+<Multi_key> <bar> <6> <2> <space>                  : "🬁"  U1FB01  # BLOCK SEXTANT-2
+<Multi_key> <bar> <6> <1> <2> <space>              : "🬂"  U1FB02  # BLOCK SEXTANT-12
+<Multi_key> <bar> <6> <3> <space>                  : "🬃"  U1FB03  # BLOCK SEXTANT-3
+<Multi_key> <bar> <6> <1> <3> <space>              : "🬄"  U1FB04  # BLOCK SEXTANT-13
+<Multi_key> <bar> <6> <2> <3> <space>              : "🬅"  U1FB05  # BLOCK SEXTANT-23
+<Multi_key> <bar> <6> <1> <2> <3> <space>          : "🬆"  U1FB06  # BLOCK SEXTANT-123
+<Multi_key> <bar> <6> <4> <space>                  : "🬇"  U1FB07  # BLOCK SEXTANT-4
+<Multi_key> <bar> <6> <1> <4> <space>              : "🬈"  U1FB08  # BLOCK SEXTANT-14
+<Multi_key> <bar> <6> <2> <4> <space>              : "🬉"  U1FB09  # BLOCK SEXTANT-24
+<Multi_key> <bar> <6> <1> <2> <4> <space>          : "🬊"  U1FB0A  # BLOCK SEXTANT-124
+<Multi_key> <bar> <6> <3> <4> <space>              : "🬋"  U1FB0B  # BLOCK SEXTANT-34
+<Multi_key> <bar> <6> <1> <3> <4> <space>          : "🬌"  U1FB0C  # BLOCK SEXTANT-134
+<Multi_key> <bar> <6> <2> <3> <4> <space>          : "🬍"  U1FB0D  # BLOCK SEXTANT-234
+<Multi_key> <bar> <6> <1> <2> <3> <4> <space>      : "🬎"  U1FB0E  # BLOCK SEXTANT-1234
+<Multi_key> <bar> <6> <5> <space>                  : "🬏"  U1FB0F  # BLOCK SEXTANT-5
+<Multi_key> <bar> <6> <1> <5> <space>              : "🬐"  U1FB10  # BLOCK SEXTANT-15
+<Multi_key> <bar> <6> <2> <5> <space>              : "🬑"  U1FB11  # BLOCK SEXTANT-25
+<Multi_key> <bar> <6> <1> <2> <5> <space>          : "🬒"  U1FB12  # BLOCK SEXTANT-125
+<Multi_key> <bar> <6> <3> <5> <space>              : "🬓"  U1FB13  # BLOCK SEXTANT-35
+<Multi_key> <bar> <6> <1> <3> <5> <space>          : "▌"  U258C  # LEFT HALF BLOCK
+<Multi_key> <bar> <6> <2> <3> <5> <space>          : "🬔"  U1FB14  # BLOCK SEXTANT-235
+<Multi_key> <bar> <6> <1> <2> <3> <5> <space>      : "🬕"  U1FB15  # BLOCK SEXTANT-1235
+<Multi_key> <bar> <6> <4> <5> <space>              : "🬖"  U1FB16  # BLOCK SEXTANT-45
+<Multi_key> <bar> <6> <1> <4> <5> <space>          : "🬗"  U1FB17  # BLOCK SEXTANT-145
+<Multi_key> <bar> <6> <2> <4> <5> <space>          : "🬘"  U1FB18  # BLOCK SEXTANT-245
+<Multi_key> <bar> <6> <1> <2> <4> <5> <space>      : "🬙"  U1FB19  # BLOCK SEXTANT-1245
+<Multi_key> <bar> <6> <3> <4> <5> <space>          : "🬚"  U1FB1A  # BLOCK SEXTANT-345
+<Multi_key> <bar> <6> <1> <3> <4> <5> <space>      : "🬛"  U1FB1B  # BLOCK SEXTANT-1345
+<Multi_key> <bar> <6> <2> <3> <4> <5> <space>      : "🬜"  U1FB1C  # BLOCK SEXTANT-2345
+<Multi_key> <bar> <6> <1> <2> <3> <4> <5> <space>  : "🬝"  U1FB1D  # BLOCK SEXTANT-12345
 <Multi_key> <bar> <6> <6>                          : "🬞"  U1FB1E  # BLOCK SEXTANT-6
 <Multi_key> <bar> <6> <1> <6>                      : "🬟"  U1FB1F  # BLOCK SEXTANT-16
 <Multi_key> <bar> <6> <2> <6>                      : "🬠"  U1FB20  # BLOCK SEXTANT-26
@@ -16682,133 +17073,133 @@ include "%L"
 
 # octants: | + 8 + octant list
 
-<Multi_key> <bar> <8> <1> <Return>                         : "𜺨"  U1CEA8  # LEFT HALF UPPER ONE QUARTER BLOCK
-<Multi_key> <bar> <8> <2> <Return>                         : "𜺫"  U1CEAB  # RIGHT HALF UPPER ONE QUARTER BLOCK
-<Multi_key> <bar> <8> <1> <2> <Return>                     : "🮂"  U1FB82  # UPPER ONE QUARTER BLOCK
-<Multi_key> <bar> <8> <3> <Return>                         : "𜴀"  U1CD00  # BLOCK OCTANT-3
-<Multi_key> <bar> <8> <1> <3> <Return>                     : "▘"  U2598  # QUADRANT UPPER LEFT
-<Multi_key> <bar> <8> <2> <3> <Return>                     : "𜴁"  U1CD01  # BLOCK OCTANT-23
-<Multi_key> <bar> <8> <1> <2> <3> <Return>                 : "𜴂"  U1CD02  # BLOCK OCTANT-123
-<Multi_key> <bar> <8> <4> <Return>                         : "𜴃"  U1CD03  # BLOCK OCTANT-4
-<Multi_key> <bar> <8> <1> <4> <Return>                     : "𜴄"  U1CD04  # BLOCK OCTANT-14
-<Multi_key> <bar> <8> <2> <4> <Return>                     : "▝"  U259D  # QUADRANT UPPER RIGHT
-<Multi_key> <bar> <8> <1> <2> <4> <Return>                 : "𜴅"  U1CD05  # BLOCK OCTANT-124
-<Multi_key> <bar> <8> <3> <4> <Return>                     : "𜴆"  U1CD06  # BLOCK OCTANT-34
-<Multi_key> <bar> <8> <1> <3> <4> <Return>                 : "𜴇"  U1CD07  # BLOCK OCTANT-134
-<Multi_key> <bar> <8> <2> <3> <4> <Return>                 : "𜴈"  U1CD08  # BLOCK OCTANT-234
-<Multi_key> <bar> <8> <1> <2> <3> <4> <Return>             : "▀"  U2580  # UPPER HALF BLOCK
-<Multi_key> <bar> <8> <5> <Return>                         : "𜴉"  U1CD09  # BLOCK OCTANT-5
-<Multi_key> <bar> <8> <1> <5> <Return>                     : "𜴊"  U1CD0A  # BLOCK OCTANT-15
-<Multi_key> <bar> <8> <2> <5> <Return>                     : "𜴋"  U1CD0B  # BLOCK OCTANT-25
-<Multi_key> <bar> <8> <1> <2> <5> <Return>                 : "𜴌"  U1CD0C  # BLOCK OCTANT-125
-<Multi_key> <bar> <8> <3> <5> <Return>                     : "🯦"  U1FBE6  # MIDDLE LEFT ONE QUARTER BLOCK
-<Multi_key> <bar> <8> <1> <3> <5> <Return>                 : "𜴍"  U1CD0D  # BLOCK OCTANT-135
-<Multi_key> <bar> <8> <2> <3> <5> <Return>                 : "𜴎"  U1CD0E  # BLOCK OCTANT-235
-<Multi_key> <bar> <8> <1> <2> <3> <5> <Return>             : "𜴏"  U1CD0F  # BLOCK OCTANT-1235
-<Multi_key> <bar> <8> <4> <5> <Return>                     : "𜴐"  U1CD10  # BLOCK OCTANT-45
-<Multi_key> <bar> <8> <1> <4> <5> <Return>                 : "𜴑"  U1CD11  # BLOCK OCTANT-145
-<Multi_key> <bar> <8> <2> <4> <5> <Return>                 : "𜴒"  U1CD12  # BLOCK OCTANT-245
-<Multi_key> <bar> <8> <1> <2> <4> <5> <Return>             : "𜴓"  U1CD13  # BLOCK OCTANT-1245
-<Multi_key> <bar> <8> <3> <4> <5> <Return>                 : "𜴔"  U1CD14  # BLOCK OCTANT-345
-<Multi_key> <bar> <8> <1> <3> <4> <5> <Return>             : "𜴕"  U1CD15  # BLOCK OCTANT-1345
-<Multi_key> <bar> <8> <2> <3> <4> <5> <Return>             : "𜴖"  U1CD16  # BLOCK OCTANT-2345
-<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <Return>         : "𜴗"  U1CD17  # BLOCK OCTANT-12345
-<Multi_key> <bar> <8> <6> <Return>                         : "𜴘"  U1CD18  # BLOCK OCTANT-6
-<Multi_key> <bar> <8> <1> <6> <Return>                     : "𜴙"  U1CD19  # BLOCK OCTANT-16
-<Multi_key> <bar> <8> <2> <6> <Return>                     : "𜴚"  U1CD1A  # BLOCK OCTANT-26
-<Multi_key> <bar> <8> <1> <2> <6> <Return>                 : "𜴛"  U1CD1B  # BLOCK OCTANT-126
-<Multi_key> <bar> <8> <3> <6> <Return>                     : "𜴜"  U1CD1C  # BLOCK OCTANT-36
-<Multi_key> <bar> <8> <1> <3> <6> <Return>                 : "𜴝"  U1CD1D  # BLOCK OCTANT-136
-<Multi_key> <bar> <8> <2> <3> <6> <Return>                 : "𜴞"  U1CD1E  # BLOCK OCTANT-236
-<Multi_key> <bar> <8> <1> <2> <3> <6> <Return>             : "𜴟"  U1CD1F  # BLOCK OCTANT-1236
-<Multi_key> <bar> <8> <4> <6> <Return>                     : "🯧"  U1FBE7  # MIDDLE RIGHT ONE QUARTER BLOCK
-<Multi_key> <bar> <8> <1> <4> <6> <Return>                 : "𜴠"  U1CD20  # BLOCK OCTANT-146
-<Multi_key> <bar> <8> <2> <4> <6> <Return>                 : "𜴡"  U1CD21  # BLOCK OCTANT-246
-<Multi_key> <bar> <8> <1> <2> <4> <6> <Return>             : "𜴢"  U1CD22  # BLOCK OCTANT-1246
-<Multi_key> <bar> <8> <3> <4> <6> <Return>                 : "𜴣"  U1CD23  # BLOCK OCTANT-346
-<Multi_key> <bar> <8> <1> <3> <4> <6> <Return>             : "𜴤"  U1CD24  # BLOCK OCTANT-1346
-<Multi_key> <bar> <8> <2> <3> <4> <6> <Return>             : "𜴥"  U1CD25  # BLOCK OCTANT-2346
-<Multi_key> <bar> <8> <1> <2> <3> <4> <6> <Return>         : "𜴦"  U1CD26  # BLOCK OCTANT-12346
-<Multi_key> <bar> <8> <5> <6> <Return>                     : "𜴧"  U1CD27  # BLOCK OCTANT-56
-<Multi_key> <bar> <8> <1> <5> <6> <Return>                 : "𜴨"  U1CD28  # BLOCK OCTANT-156
-<Multi_key> <bar> <8> <2> <5> <6> <Return>                 : "𜴩"  U1CD29  # BLOCK OCTANT-256
-<Multi_key> <bar> <8> <1> <2> <5> <6> <Return>             : "𜴪"  U1CD2A  # BLOCK OCTANT-1256
-<Multi_key> <bar> <8> <3> <5> <6> <Return>                 : "𜴫"  U1CD2B  # BLOCK OCTANT-356
-<Multi_key> <bar> <8> <1> <3> <5> <6> <Return>             : "𜴬"  U1CD2C  # BLOCK OCTANT-1356
-<Multi_key> <bar> <8> <2> <3> <5> <6> <Return>             : "𜴭"  U1CD2D  # BLOCK OCTANT-2356
-<Multi_key> <bar> <8> <1> <2> <3> <5> <6> <Return>         : "𜴮"  U1CD2E  # BLOCK OCTANT-12356
-<Multi_key> <bar> <8> <4> <5> <6> <Return>                 : "𜴯"  U1CD2F  # BLOCK OCTANT-456
-<Multi_key> <bar> <8> <1> <4> <5> <6> <Return>             : "𜴰"  U1CD30  # BLOCK OCTANT-1456
-<Multi_key> <bar> <8> <2> <4> <5> <6> <Return>             : "𜴱"  U1CD31  # BLOCK OCTANT-2456
-<Multi_key> <bar> <8> <1> <2> <4> <5> <6> <Return>         : "𜴲"  U1CD32  # BLOCK OCTANT-12456
-<Multi_key> <bar> <8> <3> <4> <5> <6> <Return>             : "𜴳"  U1CD33  # BLOCK OCTANT-3456
-<Multi_key> <bar> <8> <1> <3> <4> <5> <6> <Return>         : "𜴴"  U1CD34  # BLOCK OCTANT-13456
-<Multi_key> <bar> <8> <2> <3> <4> <5> <6> <Return>         : "𜴵"  U1CD35  # BLOCK OCTANT-23456
-<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <6> <Return>     : "🮅"  U1FB85  # UPPER THREE QUARTERS BLOCK
-<Multi_key> <bar> <8> <7> <Return>                         : "𜺣"  U1CEA3  # LEFT HALF LOWER ONE QUARTER BLOCK
-<Multi_key> <bar> <8> <1> <7> <Return>                     : "𜴶"  U1CD36  # BLOCK OCTANT-17
-<Multi_key> <bar> <8> <2> <7> <Return>                     : "𜴷"  U1CD37  # BLOCK OCTANT-27
-<Multi_key> <bar> <8> <1> <2> <7> <Return>                 : "𜴸"  U1CD38  # BLOCK OCTANT-127
-<Multi_key> <bar> <8> <3> <7> <Return>                     : "𜴹"  U1CD39  # BLOCK OCTANT-37
-<Multi_key> <bar> <8> <1> <3> <7> <Return>                 : "𜴺"  U1CD3A  # BLOCK OCTANT-137
-<Multi_key> <bar> <8> <2> <3> <7> <Return>                 : "𜴻"  U1CD3B  # BLOCK OCTANT-237
-<Multi_key> <bar> <8> <1> <2> <3> <7> <Return>             : "𜴼"  U1CD3C  # BLOCK OCTANT-1237
-<Multi_key> <bar> <8> <4> <7> <Return>                     : "𜴽"  U1CD3D  # BLOCK OCTANT-47
-<Multi_key> <bar> <8> <1> <4> <7> <Return>                 : "𜴾"  U1CD3E  # BLOCK OCTANT-147
-<Multi_key> <bar> <8> <2> <4> <7> <Return>                 : "𜴿"  U1CD3F  # BLOCK OCTANT-247
-<Multi_key> <bar> <8> <1> <2> <4> <7> <Return>             : "𜵀"  U1CD40  # BLOCK OCTANT-1247
-<Multi_key> <bar> <8> <3> <4> <7> <Return>                 : "𜵁"  U1CD41  # BLOCK OCTANT-347
-<Multi_key> <bar> <8> <1> <3> <4> <7> <Return>             : "𜵂"  U1CD42  # BLOCK OCTANT-1347
-<Multi_key> <bar> <8> <2> <3> <4> <7> <Return>             : "𜵃"  U1CD43  # BLOCK OCTANT-2347
-<Multi_key> <bar> <8> <1> <2> <3> <4> <7> <Return>         : "𜵄"  U1CD44  # BLOCK OCTANT-12347
-<Multi_key> <bar> <8> <5> <7> <Return>                     : "▖"   U2596  # QUADRANT LOWER LEFT
-<Multi_key> <bar> <8> <1> <5> <7> <Return>                 : "𜵅"  U1CD45  # BLOCK OCTANT-157
-<Multi_key> <bar> <8> <2> <5> <7> <Return>                 : "𜵆"  U1CD46  # BLOCK OCTANT-257
-<Multi_key> <bar> <8> <1> <2> <5> <7> <Return>             : "𜵇"  U1CD47  # BLOCK OCTANT-1257
-<Multi_key> <bar> <8> <3> <5> <7> <Return>                 : "𜵈"  U1CD48  # BLOCK OCTANT-357
-<Multi_key> <bar> <8> <1> <3> <5> <7> <Return>             : "▌"  U258C  # LEFT HALF BLOCK
-<Multi_key> <bar> <8> <2> <3> <5> <7> <Return>             : "𜵉"  U1CD49  # BLOCK OCTANT-2357
-<Multi_key> <bar> <8> <1> <2> <3> <5> <7> <Return>         : "𜵊"  U1CD4A  # BLOCK OCTANT-12357
-<Multi_key> <bar> <8> <4> <5> <7> <Return>                 : "𜵋"  U1CD4B  # BLOCK OCTANT-457
-<Multi_key> <bar> <8> <1> <4> <5> <7> <Return>             : "𜵌"  U1CD4C  # BLOCK OCTANT-1457
-<Multi_key> <bar> <8> <2> <4> <5> <7> <Return>             : "▞"  U259E  # QUADRANT UPPER RIGHT AND LOWER LEFT
-<Multi_key> <bar> <8> <1> <2> <4> <5> <7> <Return>         : "𜵍"  U1CD4D  # BLOCK OCTANT-12457
-<Multi_key> <bar> <8> <3> <4> <5> <7> <Return>             : "𜵎"  U1CD4E  # BLOCK OCTANT-3457
-<Multi_key> <bar> <8> <1> <3> <4> <5> <7> <Return>         : "𜵏"  U1CD4F  # BLOCK OCTANT-13457
-<Multi_key> <bar> <8> <2> <3> <4> <5> <7> <Return>         : "𜵐"  U1CD50  # BLOCK OCTANT-23457
-<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <7> <Return>     : "▛"  U259B  # QUADRANT UPPER LEFT AND UPPER RIGHT AND LOWER LEFT
-<Multi_key> <bar> <8> <6> <7> <Return>                     : "𜵑"  U1CD51  # BLOCK OCTANT-67
-<Multi_key> <bar> <8> <1> <6> <7> <Return>                 : "𜵒"  U1CD52  # BLOCK OCTANT-167
-<Multi_key> <bar> <8> <2> <6> <7> <Return>                 : "𜵓"  U1CD53  # BLOCK OCTANT-267
-<Multi_key> <bar> <8> <1> <2> <6> <7> <Return>             : "𜵔"  U1CD54  # BLOCK OCTANT-1267
-<Multi_key> <bar> <8> <3> <6> <7> <Return>                 : "𜵕"  U1CD55  # BLOCK OCTANT-367
-<Multi_key> <bar> <8> <1> <3> <6> <7> <Return>             : "𜵖"  U1CD56  # BLOCK OCTANT-1367
-<Multi_key> <bar> <8> <2> <3> <6> <7> <Return>             : "𜵗"  U1CD57  # BLOCK OCTANT-2367
-<Multi_key> <bar> <8> <1> <2> <3> <6> <7> <Return>         : "𜵘"  U1CD58  # BLOCK OCTANT-12367
-<Multi_key> <bar> <8> <4> <6> <7> <Return>                 : "𜵙"  U1CD59  # BLOCK OCTANT-467
-<Multi_key> <bar> <8> <1> <4> <6> <7> <Return>             : "𜵚"  U1CD5A  # BLOCK OCTANT-1467
-<Multi_key> <bar> <8> <2> <4> <6> <7> <Return>             : "𜵛"  U1CD5B  # BLOCK OCTANT-2467
-<Multi_key> <bar> <8> <1> <2> <4> <6> <7> <Return>         : "𜵜"  U1CD5C  # BLOCK OCTANT-12467
-<Multi_key> <bar> <8> <3> <4> <6> <7> <Return>             : "𜵝"  U1CD5D  # BLOCK OCTANT-3467
-<Multi_key> <bar> <8> <1> <3> <4> <6> <7> <Return>         : "𜵞"  U1CD5E  # BLOCK OCTANT-13467
-<Multi_key> <bar> <8> <2> <3> <4> <6> <7> <Return>         : "𜵟"  U1CD5F  # BLOCK OCTANT-23467
-<Multi_key> <bar> <8> <1> <2> <3> <4> <6> <7> <Return>     : "𜵠"  U1CD60  # BLOCK OCTANT-123467
-<Multi_key> <bar> <8> <5> <6> <7> <Return>                 : "𜵡"  U1CD61  # BLOCK OCTANT-567
-<Multi_key> <bar> <8> <1> <5> <6> <7> <Return>             : "𜵢"  U1CD62  # BLOCK OCTANT-1567
-<Multi_key> <bar> <8> <2> <5> <6> <7> <Return>             : "𜵣"  U1CD63  # BLOCK OCTANT-2567
-<Multi_key> <bar> <8> <1> <2> <5> <6> <7> <Return>         : "𜵤"  U1CD64  # BLOCK OCTANT-12567
-<Multi_key> <bar> <8> <3> <5> <6> <7> <Return>             : "𜵥"  U1CD65  # BLOCK OCTANT-3567
-<Multi_key> <bar> <8> <1> <3> <5> <6> <7> <Return>         : "𜵦"  U1CD66  # BLOCK OCTANT-13567
-<Multi_key> <bar> <8> <2> <3> <5> <6> <7> <Return>         : "𜵧"  U1CD67  # BLOCK OCTANT-23567
-<Multi_key> <bar> <8> <1> <2> <3> <5> <6> <7> <Return>     : "𜵨"  U1CD68  # BLOCK OCTANT-123567
-<Multi_key> <bar> <8> <4> <5> <6> <7> <Return>             : "𜵩"  U1CD69  # BLOCK OCTANT-4567
-<Multi_key> <bar> <8> <1> <4> <5> <6> <7> <Return>         : "𜵪"  U1CD6A  # BLOCK OCTANT-14567
-<Multi_key> <bar> <8> <2> <4> <5> <6> <7> <Return>         : "𜵫"  U1CD6B  # BLOCK OCTANT-24567
-<Multi_key> <bar> <8> <1> <2> <4> <5> <6> <7> <Return>     : "𜵬"  U1CD6C  # BLOCK OCTANT-124567
-<Multi_key> <bar> <8> <3> <4> <5> <6> <7> <Return>         : "𜵭"  U1CD6D  # BLOCK OCTANT-34567
-<Multi_key> <bar> <8> <1> <3> <4> <5> <6> <7> <Return>     : "𜵮"  U1CD6E  # BLOCK OCTANT-134567
-<Multi_key> <bar> <8> <2> <3> <4> <5> <6> <7> <Return>     : "𜵯"  U1CD6F  # BLOCK OCTANT-234567
-<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <6> <7> <Return> : "𜵰"  U1CD70  # BLOCK OCTANT-1234567
+<Multi_key> <bar> <8> <1> <space>                          : "𜺨"  U1CEA8  # LEFT HALF UPPER ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <2> <space>                          : "𜺫"  U1CEAB  # RIGHT HALF UPPER ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <1> <2> <space>                      : "🮂"  U1FB82  # UPPER ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <3> <space>                          : "𜴀"  U1CD00  # BLOCK OCTANT-3
+<Multi_key> <bar> <8> <1> <3> <space>                      : "▘"  U2598  # QUADRANT UPPER LEFT
+<Multi_key> <bar> <8> <2> <3> <space>                      : "𜴁"  U1CD01  # BLOCK OCTANT-23
+<Multi_key> <bar> <8> <1> <2> <3> <space>                  : "𜴂"  U1CD02  # BLOCK OCTANT-123
+<Multi_key> <bar> <8> <4> <space>                          : "𜴃"  U1CD03  # BLOCK OCTANT-4
+<Multi_key> <bar> <8> <1> <4> <space>                      : "𜴄"  U1CD04  # BLOCK OCTANT-14
+<Multi_key> <bar> <8> <2> <4> <space>                      : "▝"  U259D  # QUADRANT UPPER RIGHT
+<Multi_key> <bar> <8> <1> <2> <4> <space>                  : "𜴅"  U1CD05  # BLOCK OCTANT-124
+<Multi_key> <bar> <8> <3> <4> <space>                      : "𜴆"  U1CD06  # BLOCK OCTANT-34
+<Multi_key> <bar> <8> <1> <3> <4> <space>                  : "𜴇"  U1CD07  # BLOCK OCTANT-134
+<Multi_key> <bar> <8> <2> <3> <4> <space>                  : "𜴈"  U1CD08  # BLOCK OCTANT-234
+<Multi_key> <bar> <8> <1> <2> <3> <4> <space>              : "▀"  U2580  # UPPER HALF BLOCK
+<Multi_key> <bar> <8> <5> <space>                          : "𜴉"  U1CD09  # BLOCK OCTANT-5
+<Multi_key> <bar> <8> <1> <5> <space>                      : "𜴊"  U1CD0A  # BLOCK OCTANT-15
+<Multi_key> <bar> <8> <2> <5> <space>                      : "𜴋"  U1CD0B  # BLOCK OCTANT-25
+<Multi_key> <bar> <8> <1> <2> <5> <space>                  : "𜴌"  U1CD0C  # BLOCK OCTANT-125
+<Multi_key> <bar> <8> <3> <5> <space>                      : "🯦"  U1FBE6  # MIDDLE LEFT ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <1> <3> <5> <space>                  : "𜴍"  U1CD0D  # BLOCK OCTANT-135
+<Multi_key> <bar> <8> <2> <3> <5> <space>                  : "𜴎"  U1CD0E  # BLOCK OCTANT-235
+<Multi_key> <bar> <8> <1> <2> <3> <5> <space>              : "𜴏"  U1CD0F  # BLOCK OCTANT-1235
+<Multi_key> <bar> <8> <4> <5> <space>                      : "𜴐"  U1CD10  # BLOCK OCTANT-45
+<Multi_key> <bar> <8> <1> <4> <5> <space>                  : "𜴑"  U1CD11  # BLOCK OCTANT-145
+<Multi_key> <bar> <8> <2> <4> <5> <space>                  : "𜴒"  U1CD12  # BLOCK OCTANT-245
+<Multi_key> <bar> <8> <1> <2> <4> <5> <space>              : "𜴓"  U1CD13  # BLOCK OCTANT-1245
+<Multi_key> <bar> <8> <3> <4> <5> <space>                  : "𜴔"  U1CD14  # BLOCK OCTANT-345
+<Multi_key> <bar> <8> <1> <3> <4> <5> <space>              : "𜴕"  U1CD15  # BLOCK OCTANT-1345
+<Multi_key> <bar> <8> <2> <3> <4> <5> <space>              : "𜴖"  U1CD16  # BLOCK OCTANT-2345
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <space>          : "𜴗"  U1CD17  # BLOCK OCTANT-12345
+<Multi_key> <bar> <8> <6> <space>                          : "𜴘"  U1CD18  # BLOCK OCTANT-6
+<Multi_key> <bar> <8> <1> <6> <space>                      : "𜴙"  U1CD19  # BLOCK OCTANT-16
+<Multi_key> <bar> <8> <2> <6> <space>                      : "𜴚"  U1CD1A  # BLOCK OCTANT-26
+<Multi_key> <bar> <8> <1> <2> <6> <space>                  : "𜴛"  U1CD1B  # BLOCK OCTANT-126
+<Multi_key> <bar> <8> <3> <6> <space>                      : "𜴜"  U1CD1C  # BLOCK OCTANT-36
+<Multi_key> <bar> <8> <1> <3> <6> <space>                  : "𜴝"  U1CD1D  # BLOCK OCTANT-136
+<Multi_key> <bar> <8> <2> <3> <6> <space>                  : "𜴞"  U1CD1E  # BLOCK OCTANT-236
+<Multi_key> <bar> <8> <1> <2> <3> <6> <space>              : "𜴟"  U1CD1F  # BLOCK OCTANT-1236
+<Multi_key> <bar> <8> <4> <6> <space>                      : "🯧"  U1FBE7  # MIDDLE RIGHT ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <1> <4> <6> <space>                  : "𜴠"  U1CD20  # BLOCK OCTANT-146
+<Multi_key> <bar> <8> <2> <4> <6> <space>                  : "𜴡"  U1CD21  # BLOCK OCTANT-246
+<Multi_key> <bar> <8> <1> <2> <4> <6> <space>              : "𜴢"  U1CD22  # BLOCK OCTANT-1246
+<Multi_key> <bar> <8> <3> <4> <6> <space>                  : "𜴣"  U1CD23  # BLOCK OCTANT-346
+<Multi_key> <bar> <8> <1> <3> <4> <6> <space>              : "𜴤"  U1CD24  # BLOCK OCTANT-1346
+<Multi_key> <bar> <8> <2> <3> <4> <6> <space>              : "𜴥"  U1CD25  # BLOCK OCTANT-2346
+<Multi_key> <bar> <8> <1> <2> <3> <4> <6> <space>          : "𜴦"  U1CD26  # BLOCK OCTANT-12346
+<Multi_key> <bar> <8> <5> <6> <space>                      : "𜴧"  U1CD27  # BLOCK OCTANT-56
+<Multi_key> <bar> <8> <1> <5> <6> <space>                  : "𜴨"  U1CD28  # BLOCK OCTANT-156
+<Multi_key> <bar> <8> <2> <5> <6> <space>                  : "𜴩"  U1CD29  # BLOCK OCTANT-256
+<Multi_key> <bar> <8> <1> <2> <5> <6> <space>              : "𜴪"  U1CD2A  # BLOCK OCTANT-1256
+<Multi_key> <bar> <8> <3> <5> <6> <space>                  : "𜴫"  U1CD2B  # BLOCK OCTANT-356
+<Multi_key> <bar> <8> <1> <3> <5> <6> <space>              : "𜴬"  U1CD2C  # BLOCK OCTANT-1356
+<Multi_key> <bar> <8> <2> <3> <5> <6> <space>              : "𜴭"  U1CD2D  # BLOCK OCTANT-2356
+<Multi_key> <bar> <8> <1> <2> <3> <5> <6> <space>          : "𜴮"  U1CD2E  # BLOCK OCTANT-12356
+<Multi_key> <bar> <8> <4> <5> <6> <space>                  : "𜴯"  U1CD2F  # BLOCK OCTANT-456
+<Multi_key> <bar> <8> <1> <4> <5> <6> <space>              : "𜴰"  U1CD30  # BLOCK OCTANT-1456
+<Multi_key> <bar> <8> <2> <4> <5> <6> <space>              : "𜴱"  U1CD31  # BLOCK OCTANT-2456
+<Multi_key> <bar> <8> <1> <2> <4> <5> <6> <space>          : "𜴲"  U1CD32  # BLOCK OCTANT-12456
+<Multi_key> <bar> <8> <3> <4> <5> <6> <space>              : "𜴳"  U1CD33  # BLOCK OCTANT-3456
+<Multi_key> <bar> <8> <1> <3> <4> <5> <6> <space>          : "𜴴"  U1CD34  # BLOCK OCTANT-13456
+<Multi_key> <bar> <8> <2> <3> <4> <5> <6> <space>          : "𜴵"  U1CD35  # BLOCK OCTANT-23456
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <6> <space>      : "🮅"  U1FB85  # UPPER THREE QUARTERS BLOCK
+<Multi_key> <bar> <8> <7> <space>                          : "𜺣"  U1CEA3  # LEFT HALF LOWER ONE QUARTER BLOCK
+<Multi_key> <bar> <8> <1> <7> <space>                      : "𜴶"  U1CD36  # BLOCK OCTANT-17
+<Multi_key> <bar> <8> <2> <7> <space>                      : "𜴷"  U1CD37  # BLOCK OCTANT-27
+<Multi_key> <bar> <8> <1> <2> <7> <space>                  : "𜴸"  U1CD38  # BLOCK OCTANT-127
+<Multi_key> <bar> <8> <3> <7> <space>                      : "𜴹"  U1CD39  # BLOCK OCTANT-37
+<Multi_key> <bar> <8> <1> <3> <7> <space>                  : "𜴺"  U1CD3A  # BLOCK OCTANT-137
+<Multi_key> <bar> <8> <2> <3> <7> <space>                  : "𜴻"  U1CD3B  # BLOCK OCTANT-237
+<Multi_key> <bar> <8> <1> <2> <3> <7> <space>              : "𜴼"  U1CD3C  # BLOCK OCTANT-1237
+<Multi_key> <bar> <8> <4> <7> <space>                      : "𜴽"  U1CD3D  # BLOCK OCTANT-47
+<Multi_key> <bar> <8> <1> <4> <7> <space>                  : "𜴾"  U1CD3E  # BLOCK OCTANT-147
+<Multi_key> <bar> <8> <2> <4> <7> <space>                  : "𜴿"  U1CD3F  # BLOCK OCTANT-247
+<Multi_key> <bar> <8> <1> <2> <4> <7> <space>              : "𜵀"  U1CD40  # BLOCK OCTANT-1247
+<Multi_key> <bar> <8> <3> <4> <7> <space>                  : "𜵁"  U1CD41  # BLOCK OCTANT-347
+<Multi_key> <bar> <8> <1> <3> <4> <7> <space>              : "𜵂"  U1CD42  # BLOCK OCTANT-1347
+<Multi_key> <bar> <8> <2> <3> <4> <7> <space>              : "𜵃"  U1CD43  # BLOCK OCTANT-2347
+<Multi_key> <bar> <8> <1> <2> <3> <4> <7> <space>          : "𜵄"  U1CD44  # BLOCK OCTANT-12347
+<Multi_key> <bar> <8> <5> <7> <space>                      : "▖"   U2596  # QUADRANT LOWER LEFT
+<Multi_key> <bar> <8> <1> <5> <7> <space>                  : "𜵅"  U1CD45  # BLOCK OCTANT-157
+<Multi_key> <bar> <8> <2> <5> <7> <space>                  : "𜵆"  U1CD46  # BLOCK OCTANT-257
+<Multi_key> <bar> <8> <1> <2> <5> <7> <space>              : "𜵇"  U1CD47  # BLOCK OCTANT-1257
+<Multi_key> <bar> <8> <3> <5> <7> <space>                  : "𜵈"  U1CD48  # BLOCK OCTANT-357
+<Multi_key> <bar> <8> <1> <3> <5> <7> <space>              : "▌"  U258C  # LEFT HALF BLOCK
+<Multi_key> <bar> <8> <2> <3> <5> <7> <space>              : "𜵉"  U1CD49  # BLOCK OCTANT-2357
+<Multi_key> <bar> <8> <1> <2> <3> <5> <7> <space>          : "𜵊"  U1CD4A  # BLOCK OCTANT-12357
+<Multi_key> <bar> <8> <4> <5> <7> <space>                  : "𜵋"  U1CD4B  # BLOCK OCTANT-457
+<Multi_key> <bar> <8> <1> <4> <5> <7> <space>              : "𜵌"  U1CD4C  # BLOCK OCTANT-1457
+<Multi_key> <bar> <8> <2> <4> <5> <7> <space>              : "▞"  U259E  # QUADRANT UPPER RIGHT AND LOWER LEFT
+<Multi_key> <bar> <8> <1> <2> <4> <5> <7> <space>          : "𜵍"  U1CD4D  # BLOCK OCTANT-12457
+<Multi_key> <bar> <8> <3> <4> <5> <7> <space>              : "𜵎"  U1CD4E  # BLOCK OCTANT-3457
+<Multi_key> <bar> <8> <1> <3> <4> <5> <7> <space>          : "𜵏"  U1CD4F  # BLOCK OCTANT-13457
+<Multi_key> <bar> <8> <2> <3> <4> <5> <7> <space>          : "𜵐"  U1CD50  # BLOCK OCTANT-23457
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <7> <space>      : "▛"  U259B  # QUADRANT UPPER LEFT AND UPPER RIGHT AND LOWER LEFT
+<Multi_key> <bar> <8> <6> <7> <space>                      : "𜵑"  U1CD51  # BLOCK OCTANT-67
+<Multi_key> <bar> <8> <1> <6> <7> <space>                  : "𜵒"  U1CD52  # BLOCK OCTANT-167
+<Multi_key> <bar> <8> <2> <6> <7> <space>                  : "𜵓"  U1CD53  # BLOCK OCTANT-267
+<Multi_key> <bar> <8> <1> <2> <6> <7> <space>              : "𜵔"  U1CD54  # BLOCK OCTANT-1267
+<Multi_key> <bar> <8> <3> <6> <7> <space>                  : "𜵕"  U1CD55  # BLOCK OCTANT-367
+<Multi_key> <bar> <8> <1> <3> <6> <7> <space>              : "𜵖"  U1CD56  # BLOCK OCTANT-1367
+<Multi_key> <bar> <8> <2> <3> <6> <7> <space>              : "𜵗"  U1CD57  # BLOCK OCTANT-2367
+<Multi_key> <bar> <8> <1> <2> <3> <6> <7> <space>          : "𜵘"  U1CD58  # BLOCK OCTANT-12367
+<Multi_key> <bar> <8> <4> <6> <7> <space>                  : "𜵙"  U1CD59  # BLOCK OCTANT-467
+<Multi_key> <bar> <8> <1> <4> <6> <7> <space>              : "𜵚"  U1CD5A  # BLOCK OCTANT-1467
+<Multi_key> <bar> <8> <2> <4> <6> <7> <space>              : "𜵛"  U1CD5B  # BLOCK OCTANT-2467
+<Multi_key> <bar> <8> <1> <2> <4> <6> <7> <space>          : "𜵜"  U1CD5C  # BLOCK OCTANT-12467
+<Multi_key> <bar> <8> <3> <4> <6> <7> <space>              : "𜵝"  U1CD5D  # BLOCK OCTANT-3467
+<Multi_key> <bar> <8> <1> <3> <4> <6> <7> <space>          : "𜵞"  U1CD5E  # BLOCK OCTANT-13467
+<Multi_key> <bar> <8> <2> <3> <4> <6> <7> <space>          : "𜵟"  U1CD5F  # BLOCK OCTANT-23467
+<Multi_key> <bar> <8> <1> <2> <3> <4> <6> <7> <space>      : "𜵠"  U1CD60  # BLOCK OCTANT-123467
+<Multi_key> <bar> <8> <5> <6> <7> <space>                  : "𜵡"  U1CD61  # BLOCK OCTANT-567
+<Multi_key> <bar> <8> <1> <5> <6> <7> <space>              : "𜵢"  U1CD62  # BLOCK OCTANT-1567
+<Multi_key> <bar> <8> <2> <5> <6> <7> <space>              : "𜵣"  U1CD63  # BLOCK OCTANT-2567
+<Multi_key> <bar> <8> <1> <2> <5> <6> <7> <space>          : "𜵤"  U1CD64  # BLOCK OCTANT-12567
+<Multi_key> <bar> <8> <3> <5> <6> <7> <space>              : "𜵥"  U1CD65  # BLOCK OCTANT-3567
+<Multi_key> <bar> <8> <1> <3> <5> <6> <7> <space>          : "𜵦"  U1CD66  # BLOCK OCTANT-13567
+<Multi_key> <bar> <8> <2> <3> <5> <6> <7> <space>          : "𜵧"  U1CD67  # BLOCK OCTANT-23567
+<Multi_key> <bar> <8> <1> <2> <3> <5> <6> <7> <space>      : "𜵨"  U1CD68  # BLOCK OCTANT-123567
+<Multi_key> <bar> <8> <4> <5> <6> <7> <space>              : "𜵩"  U1CD69  # BLOCK OCTANT-4567
+<Multi_key> <bar> <8> <1> <4> <5> <6> <7> <space>          : "𜵪"  U1CD6A  # BLOCK OCTANT-14567
+<Multi_key> <bar> <8> <2> <4> <5> <6> <7> <space>          : "𜵫"  U1CD6B  # BLOCK OCTANT-24567
+<Multi_key> <bar> <8> <1> <2> <4> <5> <6> <7> <space>      : "𜵬"  U1CD6C  # BLOCK OCTANT-124567
+<Multi_key> <bar> <8> <3> <4> <5> <6> <7> <space>          : "𜵭"  U1CD6D  # BLOCK OCTANT-34567
+<Multi_key> <bar> <8> <1> <3> <4> <5> <6> <7> <space>      : "𜵮"  U1CD6E  # BLOCK OCTANT-134567
+<Multi_key> <bar> <8> <2> <3> <4> <5> <6> <7> <space>      : "𜵯"  U1CD6F  # BLOCK OCTANT-234567
+<Multi_key> <bar> <8> <1> <2> <3> <4> <5> <6> <7> <space>  : "𜵰"  U1CD70  # BLOCK OCTANT-1234567
 <Multi_key> <bar> <8> <8>                                  : "𜺠"  U1CEA0  # RIGHT HALF LOWER ONE QUARTER BLOCK
 <Multi_key> <bar> <8> <1> <8>                              : "𜵱"  U1CD71  # BLOCK OCTANT-18
 <Multi_key> <bar> <8> <2> <8>                              : "𜵲"  U1CD72  # BLOCK OCTANT-28
@@ -16940,13 +17331,13 @@ include "%L"
 
 # separated quadrants: | + ␣ + 4 + quadrant list
 
-<Multi_key> <bar> <space> <4> <1> <Return>         : "𜰡"  U1CC21  # SEPARATED BLOCK QUADRANT-1
-<Multi_key> <bar> <space> <4> <2> <Return>         : "𜰢"  U1CC22  # SEPARATED BLOCK QUADRANT-2
-<Multi_key> <bar> <space> <4> <1> <2> <Return>     : "𜰣"  U1CC23  # SEPARATED BLOCK QUADRANT-12
-<Multi_key> <bar> <space> <4> <3> <Return>         : "𜰤"  U1CC24  # SEPARATED BLOCK QUADRANT-3
-<Multi_key> <bar> <space> <4> <1> <3> <Return>     : "𜰥"  U1CC25  # SEPARATED BLOCK QUADRANT-13
-<Multi_key> <bar> <space> <4> <2> <3> <Return>     : "𜰦"  U1CC26  # SEPARATED BLOCK QUADRANT-23
-<Multi_key> <bar> <space> <4> <1> <2> <3> <Return> : "𜰧"  U1CC27  # SEPARATED BLOCK QUADRANT-123
+<Multi_key> <bar> <space> <4> <1> <space>          : "𜰡"  U1CC21  # SEPARATED BLOCK QUADRANT-1
+<Multi_key> <bar> <space> <4> <2> <space>          : "𜰢"  U1CC22  # SEPARATED BLOCK QUADRANT-2
+<Multi_key> <bar> <space> <4> <1> <2> <space>      : "𜰣"  U1CC23  # SEPARATED BLOCK QUADRANT-12
+<Multi_key> <bar> <space> <4> <3> <space>          : "𜰤"  U1CC24  # SEPARATED BLOCK QUADRANT-3
+<Multi_key> <bar> <space> <4> <1> <3> <space>      : "𜰥"  U1CC25  # SEPARATED BLOCK QUADRANT-13
+<Multi_key> <bar> <space> <4> <2> <3> <space>      : "𜰦"  U1CC26  # SEPARATED BLOCK QUADRANT-23
+<Multi_key> <bar> <space> <4> <1> <2> <3> <space>  : "𜰧"  U1CC27  # SEPARATED BLOCK QUADRANT-123
 <Multi_key> <bar> <space> <4> <4>                  : "𜰨"  U1CC28  # SEPARATED BLOCK QUADRANT-4
 <Multi_key> <bar> <space> <4> <1> <4>              : "𜰩"  U1CC29  # SEPARATED BLOCK QUADRANT-14
 <Multi_key> <bar> <space> <4> <2> <4>              : "𜰪"  U1CC2A  # SEPARATED BLOCK QUADRANT-24
@@ -16958,37 +17349,37 @@ include "%L"
 
 # separated sextants: | + ␣ + 6 + sextant list
 
-<Multi_key> <bar> <space> <6> <1> <Return>                 : "𜹑"  U1CE51  # SEPARATED BLOCK SEXTANT-1
-<Multi_key> <bar> <space> <6> <2> <Return>                 : "𜹒"  U1CE52  # SEPARATED BLOCK SEXTANT-2
-<Multi_key> <bar> <space> <6> <1> <2> <Return>             : "𜹓"  U1CE53  # SEPARATED BLOCK SEXTANT-12
-<Multi_key> <bar> <space> <6> <3> <Return>                 : "𜹔"  U1CE54  # SEPARATED BLOCK SEXTANT-3
-<Multi_key> <bar> <space> <6> <1> <3> <Return>             : "𜹕"  U1CE55  # SEPARATED BLOCK SEXTANT-13
-<Multi_key> <bar> <space> <6> <2> <3> <Return>             : "𜹖"  U1CE56  # SEPARATED BLOCK SEXTANT-23
-<Multi_key> <bar> <space> <6> <1> <2> <3> <Return>         : "𜹗"  U1CE57  # SEPARATED BLOCK SEXTANT-123
-<Multi_key> <bar> <space> <6> <4> <Return>                 : "𜹘"  U1CE58  # SEPARATED BLOCK SEXTANT-4
-<Multi_key> <bar> <space> <6> <1> <4> <Return>             : "𜹙"  U1CE59  # SEPARATED BLOCK SEXTANT-14
-<Multi_key> <bar> <space> <6> <2> <4> <Return>             : "𜹚"  U1CE5A  # SEPARATED BLOCK SEXTANT-24
-<Multi_key> <bar> <space> <6> <1> <2> <4> <Return>         : "𜹛"  U1CE5B  # SEPARATED BLOCK SEXTANT-124
-<Multi_key> <bar> <space> <6> <3> <4> <Return>             : "𜹜"  U1CE5C  # SEPARATED BLOCK SEXTANT-34
-<Multi_key> <bar> <space> <6> <1> <3> <4> <Return>         : "𜹝"  U1CE5D  # SEPARATED BLOCK SEXTANT-134
-<Multi_key> <bar> <space> <6> <2> <3> <4> <Return>         : "𜹞"  U1CE5E  # SEPARATED BLOCK SEXTANT-234
-<Multi_key> <bar> <space> <6> <1> <2> <3> <4> <Return>     : "𜹟"  U1CE5F  # SEPARATED BLOCK SEXTANT-1234
-<Multi_key> <bar> <space> <6> <5> <Return>                 : "𜹠"  U1CE60  # SEPARATED BLOCK SEXTANT-5
-<Multi_key> <bar> <space> <6> <1> <5> <Return>             : "𜹡"  U1CE61  # SEPARATED BLOCK SEXTANT-15
-<Multi_key> <bar> <space> <6> <2> <5> <Return>             : "𜹢"  U1CE62  # SEPARATED BLOCK SEXTANT-25
-<Multi_key> <bar> <space> <6> <1> <2> <5> <Return>         : "𜹣"  U1CE63  # SEPARATED BLOCK SEXTANT-125
-<Multi_key> <bar> <space> <6> <3> <5> <Return>             : "𜹤"  U1CE64  # SEPARATED BLOCK SEXTANT-35
-<Multi_key> <bar> <space> <6> <1> <3> <5> <Return>         : "𜹥"  U1CE65  # SEPARATED BLOCK SEXTANT-135
-<Multi_key> <bar> <space> <6> <2> <3> <5> <Return>         : "𜹦"  U1CE66  # SEPARATED BLOCK SEXTANT-235
-<Multi_key> <bar> <space> <6> <1> <2> <3> <5> <Return>     : "𜹧"  U1CE67  # SEPARATED BLOCK SEXTANT-1235
-<Multi_key> <bar> <space> <6> <4> <5> <Return>             : "𜹨"  U1CE68  # SEPARATED BLOCK SEXTANT-45
-<Multi_key> <bar> <space> <6> <1> <4> <5> <Return>         : "𜹩"  U1CE69  # SEPARATED BLOCK SEXTANT-145
-<Multi_key> <bar> <space> <6> <2> <4> <5> <Return>         : "𜹪"  U1CE6A  # SEPARATED BLOCK SEXTANT-245
-<Multi_key> <bar> <space> <6> <1> <2> <4> <5> <Return>     : "𜹫"  U1CE6B  # SEPARATED BLOCK SEXTANT-1245
-<Multi_key> <bar> <space> <6> <3> <4> <5> <Return>         : "𜹬"  U1CE6C  # SEPARATED BLOCK SEXTANT-345
-<Multi_key> <bar> <space> <6> <1> <3> <4> <5> <Return>     : "𜹭"  U1CE6D  # SEPARATED BLOCK SEXTANT-1345
-<Multi_key> <bar> <space> <6> <2> <3> <4> <5> <Return>     : "𜹮"  U1CE6E  # SEPARATED BLOCK SEXTANT-2345
-<Multi_key> <bar> <space> <6> <1> <2> <3> <4> <5> <Return> : "𜹯"  U1CE6F  # SEPARATED BLOCK SEXTANT-12345
+<Multi_key> <bar> <space> <6> <1> <space>                  : "𜹑"  U1CE51  # SEPARATED BLOCK SEXTANT-1
+<Multi_key> <bar> <space> <6> <2> <space>                  : "𜹒"  U1CE52  # SEPARATED BLOCK SEXTANT-2
+<Multi_key> <bar> <space> <6> <1> <2> <space>              : "𜹓"  U1CE53  # SEPARATED BLOCK SEXTANT-12
+<Multi_key> <bar> <space> <6> <3> <space>                  : "𜹔"  U1CE54  # SEPARATED BLOCK SEXTANT-3
+<Multi_key> <bar> <space> <6> <1> <3> <space>              : "𜹕"  U1CE55  # SEPARATED BLOCK SEXTANT-13
+<Multi_key> <bar> <space> <6> <2> <3> <space>              : "𜹖"  U1CE56  # SEPARATED BLOCK SEXTANT-23
+<Multi_key> <bar> <space> <6> <1> <2> <3> <space>          : "𜹗"  U1CE57  # SEPARATED BLOCK SEXTANT-123
+<Multi_key> <bar> <space> <6> <4> <space>                  : "𜹘"  U1CE58  # SEPARATED BLOCK SEXTANT-4
+<Multi_key> <bar> <space> <6> <1> <4> <space>              : "𜹙"  U1CE59  # SEPARATED BLOCK SEXTANT-14
+<Multi_key> <bar> <space> <6> <2> <4> <space>              : "𜹚"  U1CE5A  # SEPARATED BLOCK SEXTANT-24
+<Multi_key> <bar> <space> <6> <1> <2> <4> <space>          : "𜹛"  U1CE5B  # SEPARATED BLOCK SEXTANT-124
+<Multi_key> <bar> <space> <6> <3> <4> <space>              : "𜹜"  U1CE5C  # SEPARATED BLOCK SEXTANT-34
+<Multi_key> <bar> <space> <6> <1> <3> <4> <space>          : "𜹝"  U1CE5D  # SEPARATED BLOCK SEXTANT-134
+<Multi_key> <bar> <space> <6> <2> <3> <4> <space>          : "𜹞"  U1CE5E  # SEPARATED BLOCK SEXTANT-234
+<Multi_key> <bar> <space> <6> <1> <2> <3> <4> <space>      : "𜹟"  U1CE5F  # SEPARATED BLOCK SEXTANT-1234
+<Multi_key> <bar> <space> <6> <5> <space>                  : "𜹠"  U1CE60  # SEPARATED BLOCK SEXTANT-5
+<Multi_key> <bar> <space> <6> <1> <5> <space>              : "𜹡"  U1CE61  # SEPARATED BLOCK SEXTANT-15
+<Multi_key> <bar> <space> <6> <2> <5> <space>              : "𜹢"  U1CE62  # SEPARATED BLOCK SEXTANT-25
+<Multi_key> <bar> <space> <6> <1> <2> <5> <space>          : "𜹣"  U1CE63  # SEPARATED BLOCK SEXTANT-125
+<Multi_key> <bar> <space> <6> <3> <5> <space>              : "𜹤"  U1CE64  # SEPARATED BLOCK SEXTANT-35
+<Multi_key> <bar> <space> <6> <1> <3> <5> <space>          : "𜹥"  U1CE65  # SEPARATED BLOCK SEXTANT-135
+<Multi_key> <bar> <space> <6> <2> <3> <5> <space>          : "𜹦"  U1CE66  # SEPARATED BLOCK SEXTANT-235
+<Multi_key> <bar> <space> <6> <1> <2> <3> <5> <space>      : "𜹧"  U1CE67  # SEPARATED BLOCK SEXTANT-1235
+<Multi_key> <bar> <space> <6> <4> <5> <space>              : "𜹨"  U1CE68  # SEPARATED BLOCK SEXTANT-45
+<Multi_key> <bar> <space> <6> <1> <4> <5> <space>          : "𜹩"  U1CE69  # SEPARATED BLOCK SEXTANT-145
+<Multi_key> <bar> <space> <6> <2> <4> <5> <space>          : "𜹪"  U1CE6A  # SEPARATED BLOCK SEXTANT-245
+<Multi_key> <bar> <space> <6> <1> <2> <4> <5> <space>      : "𜹫"  U1CE6B  # SEPARATED BLOCK SEXTANT-1245
+<Multi_key> <bar> <space> <6> <3> <4> <5> <space>          : "𜹬"  U1CE6C  # SEPARATED BLOCK SEXTANT-345
+<Multi_key> <bar> <space> <6> <1> <3> <4> <5> <space>      : "𜹭"  U1CE6D  # SEPARATED BLOCK SEXTANT-1345
+<Multi_key> <bar> <space> <6> <2> <3> <4> <5> <space>      : "𜹮"  U1CE6E  # SEPARATED BLOCK SEXTANT-2345
+<Multi_key> <bar> <space> <6> <1> <2> <3> <4> <5> <space>  : "𜹯"  U1CE6F  # SEPARATED BLOCK SEXTANT-12345
 <Multi_key> <bar> <space> <6> <6>                          : "𜹰"  U1CE70  # SEPARATED BLOCK SEXTANT-6
 <Multi_key> <bar> <space> <6> <1> <6>                      : "𜹱"  U1CE71  # SEPARATED BLOCK SEXTANT-16
 <Multi_key> <bar> <space> <6> <2> <6>                      : "𜹲"  U1CE72  # SEPARATED BLOCK SEXTANT-26
@@ -17990,7 +18381,7 @@ include "%L"
 <Multi_key> <backslash> <a> <l> <t>             : "⎇"  U2387  # ALTERNATIVE KEY SYMBOL
 <Multi_key> <backslash> <o> <p> <t>             : "⌥"  U2325  # OPTION KEY
 <Multi_key> <backslash> <c> <m> <d>             : "⌘"  U2318  # PLACE OF INTEREST SIGN (COMMAND)
-<Multi_key> <backslash> <w> <i> <n> <Return>    : "❖"  U2756  # BLACK DIAMOND MINUS WHITE X (WINDOWS)
+<Multi_key> <backslash> <w> <i> <n> <space>     : "❖"  U2756  # BLACK DIAMOND MINUS WHITE X (WINDOWS)
 <Multi_key> <backslash> <m> <e> <t> <a>         : "◆"  U25C6  # BLACK DIAMOND (META)
 <Multi_key> <backslash> <h> <y> <p> <e> <r>     : "✦"  U2726  # BLACK FOUR POINTED STAR (HYPER)
 <Multi_key> <backslash> <c> <o> <m> <p>         : "⎄"  U2384  # COMPOSITION SYMBOL
@@ -18024,7 +18415,7 @@ include "%L"
 
 <Multi_key> <backslash> <p> <o> <w> <e> <r>     : "⏻"  U23FB  # POWER SYMBOL
 <Multi_key> <backslash> <o> <n> <o> <f> <f>     : "⏼"  U23FC  # POWER ON-OFF SYMBOL
-<Multi_key> <backslash> <o> <n> <Return>        : "⏽"  U23FD  # POWER ON SYMBOL
+<Multi_key> <backslash> <o> <n> <space>         : "⏽"  U23FD  # POWER ON SYMBOL
 <Multi_key> <backslash> <s> <l> <e> <e> <p>     : "⏾"  U23FE  # POWER SLEEP SYMBOL
 <Multi_key> <backslash> <l> <o> <u> <d>         : "🕪"  U1F56A  # RIGHT SPEAKER WITH THREE SOUND WAVES
 <Multi_key> <backslash> <q> <u> <i> <e> <t>     : "🕩"  U1F569  # RIGHT SPEAKER WITH ONE SOUND WAVE
