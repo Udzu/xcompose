@@ -3241,9 +3241,9 @@ include "%L"
 # (a) Arabic (and other nearby scripts) #
 #########################################
 
-# also covers Old North and South Arabian, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean,
-# Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Old Sogdian, Sogdian,
-# Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi
+# also covers Old North and South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean,
+# Nabatean, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian,
+# Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi
 
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
@@ -3325,6 +3325,63 @@ include "%L"
 <Multi_key> <a> <numbersign> <7> : "٧"  U0667   # ARABIC-INDIC DIGIT SEVEN
 <Multi_key> <a> <numbersign> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <numbersign> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
+
+# (A = Avestan) (Hoffmann transcription)
+
+<Multi_key> <a> <A> <a> <space> : "𐬀"  U10B00  # AVESTAN LETTER A
+<Multi_key> <a> <A> <minus> <a> <space> : "𐬁"  U10B01  # AVESTAN LETTER AA (ā)
+<Multi_key> <a> <A> <a> <o> <space> : "𐬂"  U10B02  # AVESTAN LETTER AO (å)
+<Multi_key> <a> <A> <minus> <a> <o> : "𐬃"  U10B03  # AVESTAN LETTER AAO (ā̊)
+<Multi_key> <a> <A> <semicolon> <a> : "𐬄"  U10B04  # AVESTAN LETTER AN (ą)
+<Multi_key> <a> <A> <period> <semicolon> <a> : "𐬅"  U10B05  # AVESTAN LETTER AAN (ą̇)
+<Multi_key> <a> <A> <e> <e> : "𐬆"  U10B06  # AVESTAN LETTER AE (ə)
+<Multi_key> <a> <A> <minus> <e> <e> : "𐬇"  U10B07  # AVESTAN LETTER AEE (ə‑)
+<Multi_key> <a> <A> <e> <space> : "𐬈"  U10B08  # AVESTAN LETTER E
+<Multi_key> <a> <A> <minus> <e> <space> : "𐬉"  U10B09  # AVESTAN LETTER EE (ē)
+<Multi_key> <a> <A> <o> : "𐬊"  U10B0A  # AVESTAN LETTER O
+<Multi_key> <a> <A> <minus> <o> : "𐬋"  U10B0B  # AVESTAN LETTER OO (ō)
+<Multi_key> <a> <A> <i> : "𐬌"  U10B0C  # AVESTAN LETTER I
+<Multi_key> <a> <A> <minus> <i> : "𐬍"  U10B0D  # AVESTAN LETTER II (ī)
+<Multi_key> <a> <A> <u> : "𐬎"  U10B0E  # AVESTAN LETTER U
+<Multi_key> <a> <A> <minus> <u> : "𐬏"  U10B0F  # AVESTAN LETTER UU (ū)
+<Multi_key> <a> <A> <k> : "𐬐"  U10B10  # AVESTAN LETTER KE
+<Multi_key> <a> <A> <x> <space> : "𐬑"  U10B11  # AVESTAN LETTER XE
+<Multi_key> <a> <A> <apostrophe> <x> : "𐬒"  U10B12  # AVESTAN LETTER XYE (x́)
+<Multi_key> <a> <A> <x> <v> : "𐬓"  U10B13  # AVESTAN LETTER XVE (xᵛ)
+<Multi_key> <a> <A> <g> <space> : "𐬔"  U10B14  # AVESTAN LETTER GE
+<Multi_key> <a> <A> <period> <g> : "𐬕"  U10B15  # AVESTAN LETTER GGE (ġ)
+<Multi_key> <a> <A> <g> <h> : "𐬖"  U10B16  # AVESTAN LETTER GHE (γ)
+<Multi_key> <a> <A> <c> : "𐬗"  U10B17  # AVESTAN LETTER CE
+<Multi_key> <a> <A> <j> : "𐬘"  U10B18  # AVESTAN LETTER JE
+<Multi_key> <a> <A> <t> <space> : "𐬙"  U10B19  # AVESTAN LETTER TE
+<Multi_key> <a> <A> <t> <h> : "𐬚"  U10B1A  # AVESTAN LETTER THE (θ)
+<Multi_key> <a> <A> <d> <space> : "𐬛"  U10B1B  # AVESTAN LETTER DE
+<Multi_key> <a> <A> <d> <h> : "𐬜"  U10B1C  # AVESTAN LETTER DHE (δ)
+<Multi_key> <a> <A> <asciitilde> <t> : "𐬝"  U10B1D  # AVESTAN LETTER TTE (t̰)
+<Multi_key> <a> <A> <p> : "𐬞"  U10B1E  # AVESTAN LETTER PE
+<Multi_key> <a> <A> <f> : "𐬟"  U10B1F  # AVESTAN LETTER FE
+<Multi_key> <a> <A> <b> <space> : "𐬠"  U10B20  # AVESTAN LETTER BE
+<Multi_key> <a> <A> <b> <h> : "𐬡"  U10B21  # AVESTAN LETTER BHE (β)
+<Multi_key> <a> <A> <n> <g> <space> : "𐬢"  U10B22  # AVESTAN LETTER NGE (ŋ)
+<Multi_key> <a> <A> <apostrophe> <n> <g> : "𐬣"  U10B23  # AVESTAN LETTER NGYE (ŋ́)
+<Multi_key> <a> <A> <n> <g> <v> : "𐬤"  U10B24  # AVESTAN LETTER NGVE (ŋᵛ)
+<Multi_key> <a> <A> <n> <space> : "𐬥"  U10B25  # AVESTAN LETTER NE
+<Multi_key> <a> <A> <apostrophe> <n> <space> : "𐬦"  U10B26  # AVESTAN LETTER NYE (ń)
+<Multi_key> <a> <A> <exclam> <n> : "𐬧"  U10B27  # AVESTAN LETTER NNE (ṇ)
+<Multi_key> <a> <A> <m> : "𐬨"  U10B28  # AVESTAN LETTER ME
+<Multi_key> <a> <A> <semicolon> <m> : "𐬩"  U10B29  # AVESTAN LETTER HME (m̨)
+<Multi_key> <a> <A> <period> <y> : "𐬪"  U10B2A  # AVESTAN LETTER YYE (ẏ)
+<Multi_key> <a> <A> <y> : "𐬫"  U10B2B  # AVESTAN LETTER YE
+<Multi_key> <a> <A> <v> <space> : "𐬬"  U10B2C  # AVESTAN LETTER VE
+<Multi_key> <a> <A> <r> : "𐬭"  U10B2D  # AVESTAN LETTER RE
+<Multi_key> <a> <A> <l> : "𐬮"  U10B2E  # AVESTAN LETTER LE
+<Multi_key> <a> <A> <s> : "𐬯"  U10B2F  # AVESTAN LETTER SE
+<Multi_key> <a> <A> <z> : "𐬰"  U10B30  # AVESTAN LETTER ZE
+<Multi_key> <a> <A> <v> <s> : "𐬱"  U10B31  # AVESTAN LETTER SHE (š)
+<Multi_key> <a> <A> <v> <z> : "𐬲"  U10B32  # AVESTAN LETTER ZHE (ž)
+<Multi_key> <a> <A> <apostrophe> <v> <s> : "𐬳"  U10B33  # AVESTAN LETTER SHYE (š́)
+<Multi_key> <a> <A> <exclam> <v> <s> : "𐬴"  U10B34  # AVESTAN LETTER SSHE (ṣ̌)
+<Multi_key> <a> <A> <h> : "𐬵"  U10B35  # AVESTAN LETTER HE
 
 # (AN = Old North Arabian)
 
