@@ -4273,8 +4273,8 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# covers Ahom, Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada,
-# Mahajani, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Sylheti Nagri, Tamil, Telugu.
+# covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu,
+# Kannada, Mahajani, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Sylheti Nagri, Tamil, Telugu.
 # see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -4394,25 +4394,25 @@ include "%L"
 <Multi_key> <b> <c> <numbersign> <8> : "𑁮" U1106E   # BRAHMI DIGIT EIGHT
 <Multi_key> <b> <c> <numbersign> <9> : "𑁯" U1106F   # BRAHMI DIGIT NINE
 
-<Multi_key> <b> <c> <1> <Return> : "𑁒" U11052   # BRAHMI NUMBER ONE
-<Multi_key> <b> <c> <2> <Return> : "𑁓" U11053   # BRAHMI NUMBER TWO
-<Multi_key> <b> <c> <3> <Return> : "𑁔" U11054   # BRAHMI NUMBER THREE
-<Multi_key> <b> <c> <4> <Return> : "𑁕" U11055   # BRAHMI NUMBER FOUR
-<Multi_key> <b> <c> <5> <Return> : "𑁖" U11056   # BRAHMI NUMBER FIVE
-<Multi_key> <b> <c> <6> <Return> : "𑁗" U11057   # BRAHMI NUMBER SIX
-<Multi_key> <b> <c> <7> <Return> : "𑁘" U11058   # BRAHMI NUMBER SEVEN
-<Multi_key> <b> <c> <8> <Return> : "𑁙" U11059   # BRAHMI NUMBER EIGHT
-<Multi_key> <b> <c> <9> <Return> : "𑁚" U1105A   # BRAHMI NUMBER NINE
-<Multi_key> <b> <c> <1> <0> <Return> : "𑁛" U1105B   # BRAHMI NUMBER TEN
-<Multi_key> <b> <c> <2> <0> <Return> : "𑁜" U1105C   # BRAHMI NUMBER TWENTY
-<Multi_key> <b> <c> <3> <0> <Return> : "𑁝" U1105D   # BRAHMI NUMBER THIRTY
-<Multi_key> <b> <c> <4> <0> <Return> : "𑁞" U1105E   # BRAHMI NUMBER FORTY
-<Multi_key> <b> <c> <5> <0> <Return> : "𑁟" U1105F   # BRAHMI NUMBER FIFTY
-<Multi_key> <b> <c> <6> <0> <Return> : "𑁠" U11060   # BRAHMI NUMBER SIXTY
-<Multi_key> <b> <c> <7> <0> <Return> : "𑁡" U11061   # BRAHMI NUMBER SEVENTY
-<Multi_key> <b> <c> <8> <0> <Return> : "𑁢" U11062   # BRAHMI NUMBER EIGHTY
-<Multi_key> <b> <c> <9> <0> <Return> : "𑁣" U11063   # BRAHMI NUMBER NINETY
-<Multi_key> <b> <c> <1> <0> <0> <Return> : "𑁤" U11064   # BRAHMI NUMBER ONE HUNDRED
+<Multi_key> <b> <c> <1> <space> : "𑁒" U11052   # BRAHMI NUMBER ONE
+<Multi_key> <b> <c> <2> <space> : "𑁓" U11053   # BRAHMI NUMBER TWO
+<Multi_key> <b> <c> <3> <space> : "𑁔" U11054   # BRAHMI NUMBER THREE
+<Multi_key> <b> <c> <4> <space> : "𑁕" U11055   # BRAHMI NUMBER FOUR
+<Multi_key> <b> <c> <5> <space> : "𑁖" U11056   # BRAHMI NUMBER FIVE
+<Multi_key> <b> <c> <6> <space> : "𑁗" U11057   # BRAHMI NUMBER SIX
+<Multi_key> <b> <c> <7> <space> : "𑁘" U11058   # BRAHMI NUMBER SEVEN
+<Multi_key> <b> <c> <8> <space> : "𑁙" U11059   # BRAHMI NUMBER EIGHT
+<Multi_key> <b> <c> <9> <space> : "𑁚" U1105A   # BRAHMI NUMBER NINE
+<Multi_key> <b> <c> <1> <0> <space> : "𑁛" U1105B   # BRAHMI NUMBER TEN
+<Multi_key> <b> <c> <2> <0> <space> : "𑁜" U1105C   # BRAHMI NUMBER TWENTY
+<Multi_key> <b> <c> <3> <0> <space> : "𑁝" U1105D   # BRAHMI NUMBER THIRTY
+<Multi_key> <b> <c> <4> <0> <space> : "𑁞" U1105E   # BRAHMI NUMBER FORTY
+<Multi_key> <b> <c> <5> <0> <space> : "𑁟" U1105F   # BRAHMI NUMBER FIFTY
+<Multi_key> <b> <c> <6> <0> <space> : "𑁠" U11060   # BRAHMI NUMBER SIXTY
+<Multi_key> <b> <c> <7> <0> <space> : "𑁡" U11061   # BRAHMI NUMBER SEVENTY
+<Multi_key> <b> <c> <8> <0> <space> : "𑁢" U11062   # BRAHMI NUMBER EIGHTY
+<Multi_key> <b> <c> <9> <0> <space> : "𑁣" U11063   # BRAHMI NUMBER NINETY
+<Multi_key> <b> <c> <1> <0> <0> <space> : "𑁤" U11064   # BRAHMI NUMBER ONE HUNDRED
 <Multi_key> <b> <c> <1> <0> <0> <0> : "𑁥" U11065   # BRAHMI NUMBER ONE THOUSAND
 
 # (d = Devanagari)
@@ -4619,8 +4619,8 @@ include "%L"
 # Numbers
 
 <Multi_key> <b> <A> <numbersign> <0> : "𑜰"  U11730  # AHOM DIGIT ZERO (conflicts)
-<Multi_key> <b> <A> <numbersign> <1> <space> : "𑜱"  U11731  # AHOM DIGIT ONE (conflicts)
-<Multi_key> <b> <A> <numbersign> <2> <space> : "𑜲"  U11732  # AHOM DIGIT TWO (conflicts)
+<Multi_key> <b> <A> <numbersign> <1> : "𑜱"  U11731  # AHOM DIGIT ONE (conflicts)
+<Multi_key> <b> <A> <numbersign> <2> : "𑜲"  U11732  # AHOM DIGIT TWO (conflicts)
 <Multi_key> <b> <A> <numbersign> <3> : "𑜳"  U11733  # AHOM DIGIT THREE (conflicts)
 <Multi_key> <b> <A> <numbersign> <4> : "𑜴"  U11734  # AHOM DIGIT FOUR (conflicts)
 <Multi_key> <b> <A> <numbersign> <5> : "𑜵"  U11735  # AHOM DIGIT FIVE (conflicts)
@@ -4628,8 +4628,8 @@ include "%L"
 <Multi_key> <b> <A> <numbersign> <7> : "𑜷"  U11737  # AHOM DIGIT SEVEN (conflicts)
 <Multi_key> <b> <A> <numbersign> <8> : "𑜸"  U11738  # AHOM DIGIT EIGHT (conflicts)
 <Multi_key> <b> <A> <numbersign> <9> : "𑜹"  U11739  # AHOM DIGIT NINE (conflicts)
-<Multi_key> <b> <A> <numbersign> <1> <0> : "𑜺"  U1173A  # AHOM NUMBER TEN (conflicts)
-<Multi_key> <b> <A> <numbersign> <2> <0> : "𑜻"  U1173B  # AHOM NUMBER TWENTY (conflicts)
+<Multi_key> <b> <A> <1> <0> : "𑜺"  U1173A  # AHOM NUMBER TEN (conflicts)
+<Multi_key> <b> <A> <2> <0> : "𑜻"  U1173B  # AHOM NUMBER TWENTY (conflicts)
 
 # Punctuation
 
@@ -4823,6 +4823,111 @@ include "%L"
 <Multi_key> <b> <B> <numbersign> <7>     : "၇"  U1047  # MYANMAR DIGIT SEVEN
 <Multi_key> <b> <B> <numbersign> <8>     : "၈"  U1048  # MYANMAR DIGIT EIGHT
 <Multi_key> <b> <B> <numbersign> <9>     : "၉"  U1049  # MYANMAR DIGIT NINE
+
+# (BH = Bhaiksuki)
+
+<Multi_key> <b> <B> <H> <a> <space> : "𑰀"  U11C00  # BHAIKSUKI LETTER A
+<Multi_key> <b> <B> <H> <a> <a> <space> : "𑰁"  U11C01  # BHAIKSUKI LETTER AA
+<Multi_key> <b> <B> <H> <i> <space> : "𑰂"  U11C02  # BHAIKSUKI LETTER I
+<Multi_key> <b> <B> <H> <i> <i> <space> : "𑰃"  U11C03  # BHAIKSUKI LETTER II
+<Multi_key> <b> <B> <H> <u> <space> : "𑰄"  U11C04  # BHAIKSUKI LETTER U
+<Multi_key> <b> <B> <H> <u> <u> <space> : "𑰅"  U11C05  # BHAIKSUKI LETTER UU
+<Multi_key> <b> <B> <H> <comma> <r> <space> : "𑰆"  U11C06  # BHAIKSUKI LETTER VOCALIC R
+<Multi_key> <b> <B> <H> <comma> <r> <r> <space> : "𑰇"  U11C07  # BHAIKSUKI LETTER VOCALIC RR
+<Multi_key> <b> <B> <H> <comma> <l> <space> : "𑰈"  U11C08  # BHAIKSUKI LETTER VOCALIC L
+<Multi_key> <b> <B> <H> <e> <e> <space> : "𑰊"  U11C0A  # BHAIKSUKI LETTER E
+<Multi_key> <b> <B> <H> <a> <i> <space> : "𑰋"  U11C0B  # BHAIKSUKI LETTER AI
+<Multi_key> <b> <B> <H> <o> <o> <space> : "𑰌"  U11C0C  # BHAIKSUKI LETTER O
+<Multi_key> <b> <B> <H> <a> <u> <space> : "𑰍"  U11C0D  # BHAIKSUKI LETTER AU
+
+<Multi_key> <b> <B> <H> <k> <space> : "𑰎"  U11C0E  # BHAIKSUKI LETTER KA
+<Multi_key> <b> <B> <H> <k> <h> : "𑰏"  U11C0F  # BHAIKSUKI LETTER KHA
+<Multi_key> <b> <B> <H> <g> <space> : "𑰐"  U11C10  # BHAIKSUKI LETTER GA
+<Multi_key> <b> <B> <H> <g> <h> : "𑰑"  U11C11  # BHAIKSUKI LETTER GHA
+<Multi_key> <b> <B> <H> <semicolon> <n> : "𑰒"  U11C12  # BHAIKSUKI LETTER NGA
+<Multi_key> <b> <B> <H> <c> <space> : "𑰓"  U11C13  # BHAIKSUKI LETTER CA
+<Multi_key> <b> <B> <H> <c> <h> : "𑰔"  U11C14  # BHAIKSUKI LETTER CHA
+<Multi_key> <b> <B> <H> <j> <space> : "𑰕"  U11C15  # BHAIKSUKI LETTER JA
+<Multi_key> <b> <B> <H> <j> <h> : "𑰖"  U11C16  # BHAIKSUKI LETTER JHA
+<Multi_key> <b> <B> <H> <asciitilde> <n> : "𑰗"  U11C17  # BHAIKSUKI LETTER NYA
+<Multi_key> <b> <B> <H> <period> <t> <space> : "𑰘"  U11C18  # BHAIKSUKI LETTER TTA
+<Multi_key> <b> <B> <H> <period> <t> <h> : "𑰙"  U11C19  # BHAIKSUKI LETTER TTHA
+<Multi_key> <b> <B> <H> <period> <d> <space> : "𑰚"  U11C1A  # BHAIKSUKI LETTER DDA
+<Multi_key> <b> <B> <H> <period> <d> <h> : "𑰛"  U11C1B  # BHAIKSUKI LETTER DDHA
+<Multi_key> <b> <B> <H> <period> <n> : "𑰜"  U11C1C  # BHAIKSUKI LETTER NNA
+<Multi_key> <b> <B> <H> <t> <space> : "𑰝"  U11C1D  # BHAIKSUKI LETTER TA
+<Multi_key> <b> <B> <H> <t> <h> : "𑰞"  U11C1E  # BHAIKSUKI LETTER THA
+<Multi_key> <b> <B> <H> <d> <space> : "𑰟"  U11C1F  # BHAIKSUKI LETTER DA
+<Multi_key> <b> <B> <H> <d> <h> : "𑰠"  U11C20  # BHAIKSUKI LETTER DHA
+<Multi_key> <b> <B> <H> <n> : "𑰡"  U11C21  # BHAIKSUKI LETTER NA
+<Multi_key> <b> <B> <H> <p> <space> : "𑰢"  U11C22  # BHAIKSUKI LETTER PA
+<Multi_key> <b> <B> <H> <p> <h> : "𑰣"  U11C23  # BHAIKSUKI LETTER PHA
+<Multi_key> <b> <B> <H> <b> <space> : "𑰤"  U11C24  # BHAIKSUKI LETTER BA
+<Multi_key> <b> <B> <H> <b> <h> : "𑰥"  U11C25  # BHAIKSUKI LETTER BHA
+<Multi_key> <b> <B> <H> <m> : "𑰦"  U11C26  # BHAIKSUKI LETTER MA
+<Multi_key> <b> <B> <H> <y> : "𑰧"  U11C27  # BHAIKSUKI LETTER YA
+<Multi_key> <b> <B> <H> <r> : "𑰨"  U11C28  # BHAIKSUKI LETTER RA
+<Multi_key> <b> <B> <H> <l> : "𑰩"  U11C29  # BHAIKSUKI LETTER LA
+<Multi_key> <b> <B> <H> <v> : "𑰪"  U11C2A  # BHAIKSUKI LETTER VA
+<Multi_key> <b> <B> <H> <semicolon> <s> : "𑰫"  U11C2B  # BHAIKSUKI LETTER SHA
+<Multi_key> <b> <B> <H> <period> <s> : "𑰬"  U11C2C  # BHAIKSUKI LETTER SSA
+<Multi_key> <b> <B> <H> <s> : "𑰭"  U11C2D  # BHAIKSUKI LETTER SA
+<Multi_key> <b> <B> <H> <h> : "𑰮"  U11C2E  # BHAIKSUKI LETTER HA
+
+<Multi_key> <b> <B> <H> <a> <a> <Return> : "𑰯"  U11C2F  # BHAIKSUKI VOWEL SIGN AA
+<Multi_key> <b> <B> <H> <i> <Return> : "𑰰"  U11C30  # BHAIKSUKI VOWEL SIGN I
+<Multi_key> <b> <B> <H> <i> <i> <Return> : "𑰱"  U11C31  # BHAIKSUKI VOWEL SIGN II
+<Multi_key> <b> <B> <H> <u> <Return> : "𑰲"  U11C32  # BHAIKSUKI VOWEL SIGN U
+<Multi_key> <b> <B> <H> <u> <u> <Return> : "𑰳"  U11C33  # BHAIKSUKI VOWEL SIGN UU
+<Multi_key> <b> <B> <H> <comma> <r> <Return> : "𑰴"  U11C34  # BHAIKSUKI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <B> <H> <comma> <r> <r> <Return> : "𑰵"  U11C35  # BHAIKSUKI VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <B> <H> <comma> <l> <Return> : "𑰶"  U11C36  # BHAIKSUKI VOWEL SIGN VOCALIC L
+<Multi_key> <b> <B> <H> <e> <e> <Return> : "𑰸"  U11C38  # BHAIKSUKI VOWEL SIGN E
+<Multi_key> <b> <B> <H> <a> <i> <Return> : "𑰹"  U11C39  # BHAIKSUKI VOWEL SIGN AI
+<Multi_key> <b> <B> <H> <o> <o> <Return> : "𑰺"  U11C3A  # BHAIKSUKI VOWEL SIGN O
+<Multi_key> <b> <B> <H> <a> <u> <Return> : "𑰻"  U11C3B  # BHAIKSUKI VOWEL SIGN AU
+<Multi_key> <b> <B> <H> <0> <Return> : "𑰿"  U11C3F  # BHAIKSUKI SIGN VIRAMA
+
+<Multi_key> <b> <B> <H> <period> <parenright> <Return> : "𑰼"  U11C3C  # BHAIKSUKI SIGN CANDRABINDU
+<Multi_key> <b> <B> <H> <period> <Return> : "𑰽"  U11C3D  # BHAIKSUKI SIGN ANUSVARA
+<Multi_key> <b> <B> <H> <colon> <Return> : "𑰾"  U11C3E  # BHAIKSUKI SIGN VISARGA
+<Multi_key> <b> <B> <H> <comma> <Return> : "𑰿"  U11C3F  # BHAIKSUKI SIGN VIRAMA
+
+<Multi_key> <b> <B> <H> <S> : "𑱀"  U11C40  # BHAIKSUKI SIGN AVAGRAHA
+<Multi_key> <b> <B> <H> <bar> : "𑱁"  U11C41  # BHAIKSUKI DANDA
+<Multi_key> <b> <B> <H> <2> <bar> : "𑱂"  U11C42  # BHAIKSUKI DOUBLE DANDA
+<Multi_key> <b> <B> <H> <space> : "𑱃"  U11C43  # BHAIKSUKI WORD SEPARATOR
+    
+<Multi_key> <b> <B> <H> <numbersign> <0> : "𑱐"  U11C50  # BHAIKSUKI DIGIT ZERO
+<Multi_key> <b> <B> <H> <numbersign> <1> : "𑱑"  U11C51  # BHAIKSUKI DIGIT ONE
+<Multi_key> <b> <B> <H> <numbersign> <2> : "𑱒"  U11C52  # BHAIKSUKI DIGIT TWO
+<Multi_key> <b> <B> <H> <numbersign> <3> : "𑱓"  U11C53  # BHAIKSUKI DIGIT THREE
+<Multi_key> <b> <B> <H> <numbersign> <4> : "𑱔"  U11C54  # BHAIKSUKI DIGIT FOUR
+<Multi_key> <b> <B> <H> <numbersign> <5> : "𑱕"  U11C55  # BHAIKSUKI DIGIT FIVE
+<Multi_key> <b> <B> <H> <numbersign> <6> : "𑱖"  U11C56  # BHAIKSUKI DIGIT SIX
+<Multi_key> <b> <B> <H> <numbersign> <7> : "𑱗"  U11C57  # BHAIKSUKI DIGIT SEVEN
+<Multi_key> <b> <B> <H> <numbersign> <8> : "𑱘"  U11C58  # BHAIKSUKI DIGIT EIGHT
+<Multi_key> <b> <B> <H> <numbersign> <9> : "𑱙"  U11C59  # BHAIKSUKI DIGIT NINE
+
+<Multi_key> <b> <B> <H> <1> <space> : "𑱚"  U11C5A  # BHAIKSUKI NUMBER ONE
+<Multi_key> <b> <B> <H> <2> <space> : "𑱛"  U11C5B  # BHAIKSUKI NUMBER TWO
+<Multi_key> <b> <B> <H> <3> <space> : "𑱜"  U11C5C  # BHAIKSUKI NUMBER THREE
+<Multi_key> <b> <B> <H> <4> <space> : "𑱝"  U11C5D  # BHAIKSUKI NUMBER FOUR
+<Multi_key> <b> <B> <H> <5> <space> : "𑱞"  U11C5E  # BHAIKSUKI NUMBER FIVE
+<Multi_key> <b> <B> <H> <6> <space> : "𑱟"  U11C5F  # BHAIKSUKI NUMBER SIX
+<Multi_key> <b> <B> <H> <7> <space> : "𑱠"  U11C60  # BHAIKSUKI NUMBER SEVEN
+<Multi_key> <b> <B> <H> <8> <space> : "𑱡"  U11C61  # BHAIKSUKI NUMBER EIGHT
+<Multi_key> <b> <B> <H> <9> <space> : "𑱢"  U11C62  # BHAIKSUKI NUMBER NINE
+<Multi_key> <b> <B> <H> <1> <0> : "𑱣"  U11C63  # BHAIKSUKI NUMBER TEN
+<Multi_key> <b> <B> <H> <2> <0> : "𑱤"  U11C64  # BHAIKSUKI NUMBER TWENTY
+<Multi_key> <b> <B> <H> <3> <0> : "𑱥"  U11C65  # BHAIKSUKI NUMBER THIRTY
+<Multi_key> <b> <B> <H> <4> <0> : "𑱦"  U11C66  # BHAIKSUKI NUMBER FORTY
+<Multi_key> <b> <B> <H> <5> <0> : "𑱧"  U11C67  # BHAIKSUKI NUMBER FIFTY
+<Multi_key> <b> <B> <H> <6> <0> : "𑱨"  U11C68  # BHAIKSUKI NUMBER SIXTY
+<Multi_key> <b> <B> <H> <7> <0> : "𑱩"  U11C69  # BHAIKSUKI NUMBER SEVENTY
+<Multi_key> <b> <B> <H> <8> <0> : "𑱪"  U11C6A  # BHAIKSUKI NUMBER EIGHTY
+<Multi_key> <b> <B> <H> <9> <0> : "𑱫"  U11C6B  # BHAIKSUKI NUMBER NINETY
+<Multi_key> <b> <B> <H> <numbersign> <comma> : "𑱬"  U11C6C  # BHAIKSUKI HUNDREDS UNIT MARK
 
 # (C = Chakma)
 
@@ -5474,8 +5579,8 @@ include "%L"
 <Multi_key> <b> <m> <numbersign> <8>     : "൮"  U0D6E  # MALAYALAM DIGIT EIGHT
 <Multi_key> <b> <m> <numbersign> <9>     : "൯"  U0D6F  # MALAYALAM DIGIT NINE
 
-<Multi_key> <b> <m> <1> <0> <Return>     : "൰"  U0D70  # MALAYALAM NUMBER TEN
-<Multi_key> <b> <m> <1> <0> <0> <Return> : "൱"  U0D71  # MALAYALAM NUMBER ONE HUNDRED
+<Multi_key> <b> <m> <1> <0> <space>     : "൰"  U0D70  # MALAYALAM NUMBER TEN
+<Multi_key> <b> <m> <1> <0> <0> <space> : "൱"  U0D71  # MALAYALAM NUMBER ONE HUNDRED
 <Multi_key> <b> <m> <1> <0> <0> <0>      : "൲"  U0D72  # MALAYALAM NUMBER ONE THOUSAND
 
 # (M = Meitei)
@@ -6001,8 +6106,8 @@ include "%L"
 <Multi_key> <b> <t> <numbersign> <8>     : "௮"  U0BEE  # TAMIL DIGIT EIGHT
 <Multi_key> <b> <t> <numbersign> <9>     : "௯"  U0BEF  # TAMIL DIGIT NINE
 
-<Multi_key> <b> <t> <1> <0> <Return>     : "௰"  U0BF0  # TAMIL NUMBER TEN
-<Multi_key> <b> <t> <1> <0> <0> <Return> : "௱"  U0BF1  # TAMIL NUMBER ONE HUNDRED
+<Multi_key> <b> <t> <1> <0> <space>     : "௰"  U0BF0  # TAMIL NUMBER TEN
+<Multi_key> <b> <t> <1> <0> <0> <space> : "௱"  U0BF1  # TAMIL NUMBER ONE HUNDRED
 <Multi_key> <b> <t> <1> <0> <0> <0>      : "௲"  U0BF2  # TAMIL NUMBER ONE THOUSAND
 
 # (T = Telugu)
@@ -8613,25 +8718,25 @@ include "%L"
 <Multi_key> <g> <P> <T> <I> : "Ϯ" U03EE   # COPTIC CAPITAL LETTER DEI
 <Multi_key> <g> <P> <t> <i> : "ϯ" U03EF   # COPTIC SMALL LETTER DEI
 
-<Multi_key> <g> <p> <1> <Return> : "𐋡" U102E1   # COPTIC EPACT DIGIT ONE
-<Multi_key> <g> <p> <2> <Return> : "𐋢" U102E2   # COPTIC EPACT DIGIT TWO
-<Multi_key> <g> <p> <3> <Return> : "𐋣" U102E3   # COPTIC EPACT DIGIT THREE
-<Multi_key> <g> <p> <4> <Return> : "𐋤" U102E4   # COPTIC EPACT DIGIT FOUR
-<Multi_key> <g> <p> <5> <Return> : "𐋥" U102E5   # COPTIC EPACT DIGIT FIVE
-<Multi_key> <g> <p> <6> <Return> : "𐋦" U102E6   # COPTIC EPACT DIGIT SIX
-<Multi_key> <g> <p> <7> <Return> : "𐋧" U102E7   # COPTIC EPACT DIGIT SEVEN
-<Multi_key> <g> <p> <8> <Return> : "𐋨" U102E8   # COPTIC EPACT DIGIT EIGHT
-<Multi_key> <g> <p> <9> <Return> : "𐋩" U102E9   # COPTIC EPACT DIGIT NINE
-<Multi_key> <g> <p> <1> <0> <Return> : "𐋪" U102EA   # COPTIC EPACT NUMBER TEN
-<Multi_key> <g> <p> <2> <0> <Return> : "𐋫" U102EB   # COPTIC EPACT NUMBER TWENTY
-<Multi_key> <g> <p> <3> <0> <Return> : "𐋬" U102EC   # COPTIC EPACT NUMBER THIRTY
-<Multi_key> <g> <p> <4> <0> <Return> : "𐋭" U102ED   # COPTIC EPACT NUMBER FORTY
-<Multi_key> <g> <p> <5> <0> <Return> : "𐋮" U102EE   # COPTIC EPACT NUMBER FIFTY
-<Multi_key> <g> <p> <6> <0> <Return> : "𐋯" U102EF   # COPTIC EPACT NUMBER SIXTY
-<Multi_key> <g> <p> <7> <0> <Return> : "𐋰" U102F0   # COPTIC EPACT NUMBER SEVENTY
-<Multi_key> <g> <p> <8> <0> <Return> : "𐋱" U102F1   # COPTIC EPACT NUMBER EIGHTY
-<Multi_key> <g> <p> <9> <0> <Return> : "𐋲" U102F2   # COPTIC EPACT NUMBER NINETY
-<Multi_key> <g> <p> <1> <0> <0> <Return> : "𐋳" U102F3   # COPTIC EPACT NUMBER ONE HUNDRED
+<Multi_key> <g> <p> <1> <space> : "𐋡" U102E1   # COPTIC EPACT DIGIT ONE
+<Multi_key> <g> <p> <2> <space> : "𐋢" U102E2   # COPTIC EPACT DIGIT TWO
+<Multi_key> <g> <p> <3> <space> : "𐋣" U102E3   # COPTIC EPACT DIGIT THREE
+<Multi_key> <g> <p> <4> <space> : "𐋤" U102E4   # COPTIC EPACT DIGIT FOUR
+<Multi_key> <g> <p> <5> <space> : "𐋥" U102E5   # COPTIC EPACT DIGIT FIVE
+<Multi_key> <g> <p> <6> <space> : "𐋦" U102E6   # COPTIC EPACT DIGIT SIX
+<Multi_key> <g> <p> <7> <space> : "𐋧" U102E7   # COPTIC EPACT DIGIT SEVEN
+<Multi_key> <g> <p> <8> <space> : "𐋨" U102E8   # COPTIC EPACT DIGIT EIGHT
+<Multi_key> <g> <p> <9> <space> : "𐋩" U102E9   # COPTIC EPACT DIGIT NINE
+<Multi_key> <g> <p> <1> <0> <space> : "𐋪" U102EA   # COPTIC EPACT NUMBER TEN
+<Multi_key> <g> <p> <2> <0> <space> : "𐋫" U102EB   # COPTIC EPACT NUMBER TWENTY
+<Multi_key> <g> <p> <3> <0> <space> : "𐋬" U102EC   # COPTIC EPACT NUMBER THIRTY
+<Multi_key> <g> <p> <4> <0> <space> : "𐋭" U102ED   # COPTIC EPACT NUMBER FORTY
+<Multi_key> <g> <p> <5> <0> <space> : "𐋮" U102EE   # COPTIC EPACT NUMBER FIFTY
+<Multi_key> <g> <p> <6> <0> <space> : "𐋯" U102EF   # COPTIC EPACT NUMBER SIXTY
+<Multi_key> <g> <p> <7> <0> <space> : "𐋰" U102F0   # COPTIC EPACT NUMBER SEVENTY
+<Multi_key> <g> <p> <8> <0> <space> : "𐋱" U102F1   # COPTIC EPACT NUMBER EIGHTY
+<Multi_key> <g> <p> <9> <0> <space> : "𐋲" U102F2   # COPTIC EPACT NUMBER NINETY
+<Multi_key> <g> <p> <1> <0> <0> <space> : "𐋳" U102F3   # COPTIC EPACT NUMBER ONE HUNDRED
 <Multi_key> <g> <p> <2> <0> <0> : "𐋴" U102F4   # COPTIC EPACT NUMBER TWO HUNDRED
 <Multi_key> <g> <p> <3> <0> <0> : "𐋵" U102F5   # COPTIC EPACT NUMBER THREE HUNDRED
 <Multi_key> <g> <p> <4> <0> <0> : "𐋶" U102F6   # COPTIC EPACT NUMBER FOUR HUNDRED
@@ -9456,13 +9561,13 @@ include "%L"
 
 <Multi_key> <h> <A> <Multi_key> <S> <O> : "𐡗"  U10857  # IMPERIAL ARAMAIC SECTION SIGN
 
-<Multi_key> <h> <A> <1> <Return> : "𐡘"  U10858  # IMPERIAL ARAMAIC NUMBER ONE
-<Multi_key> <h> <A> <2> <Return> : "𐡙"  U10859  # IMPERIAL ARAMAIC NUMBER TWO
+<Multi_key> <h> <A> <1> <space> : "𐡘"  U10858  # IMPERIAL ARAMAIC NUMBER ONE
+<Multi_key> <h> <A> <2> <space> : "𐡙"  U10859  # IMPERIAL ARAMAIC NUMBER TWO
 <Multi_key> <h> <A> <3> : "𐡚"  U1085A  # IMPERIAL ARAMAIC NUMBER THREE
-<Multi_key> <h> <A> <1> <0> <Return> : "𐡛"  U1085B  # IMPERIAL ARAMAIC NUMBER TEN
+<Multi_key> <h> <A> <1> <0> <space> : "𐡛"  U1085B  # IMPERIAL ARAMAIC NUMBER TEN
 <Multi_key> <h> <A> <2> <0> : "𐡜"  U1085C  # IMPERIAL ARAMAIC NUMBER TWENTY
-<Multi_key> <h> <A> <1> <0> <0> <Return> : "𐡝"  U1085D  # IMPERIAL ARAMAIC NUMBER ONE HUNDRED
-<Multi_key> <h> <A> <1> <0> <0> <0> <Return> : "𐡞"  U1085E  # IMPERIAL ARAMAIC NUMBER ONE THOUSAND
+<Multi_key> <h> <A> <1> <0> <0> <space> : "𐡝"  U1085D  # IMPERIAL ARAMAIC NUMBER ONE HUNDRED
+<Multi_key> <h> <A> <1> <0> <0> <0> <space> : "𐡞"  U1085E  # IMPERIAL ARAMAIC NUMBER ONE THOUSAND
 <Multi_key> <h> <A> <1> <0> <0> <0> <0> : "𐡟"  U1085F  # IMPERIAL ARAMAIC NUMBER TEN THOUSAND
 
 # (E = Elymaic)
@@ -9555,10 +9660,10 @@ include "%L"
 <Multi_key> <h> <p> <t>          : "𐤕"  U10915  # PHOENICIAN LETTER TAU
 
 <Multi_key> <h> <p> <space>      : "𐤟"  U1091F  # PHOENICIAN WORD SEPARATOR
-<Multi_key> <h> <p> <1> <Return> : "𐤖" U10916   # PHOENICIAN NUMBER ONE
-<Multi_key> <h> <p> <2> <Return> : "𐤚" U1091A   # PHOENICIAN NUMBER TWO
+<Multi_key> <h> <p> <1> <space> : "𐤖" U10916   # PHOENICIAN NUMBER ONE
+<Multi_key> <h> <p> <2> <space> : "𐤚" U1091A   # PHOENICIAN NUMBER TWO
 <Multi_key> <h> <p> <3>          : "𐤛" U1091B   # PHOENICIAN NUMBER THREE
-<Multi_key> <h> <p> <1> <0> <Return> : "𐤗" U10917   # PHOENICIAN NUMBER TEN
+<Multi_key> <h> <p> <1> <0> <space> : "𐤗" U10917   # PHOENICIAN NUMBER TEN
 <Multi_key> <h> <p> <2> <0>      : "𐤘" U10918   # PHOENICIAN NUMBER TWENTY
 <Multi_key> <h> <p> <1> <0> <0>  : "𐤙" U10919   # PHOENICIAN NUMBER ONE HUNDRED
 
@@ -12617,16 +12722,16 @@ include "%L"
 <Multi_key> <Z> <semicolon> <question> : "፧" U1367   # ETHIOPIC QUESTION MARK
 <Multi_key> <Z> <semicolon> <Multi_key> <P> <P> : "፨" U1368   # ETHIOPIC PARAGRAPH SEPARATOR
 
-<Multi_key> <Z> <numbersign> <1> <Return> : "፩" U1369   # ETHIOPIC DIGIT ONE
-<Multi_key> <Z> <numbersign> <2> <Return> : "፪" U136A   # ETHIOPIC DIGIT TWO
-<Multi_key> <Z> <numbersign> <3> <Return> : "፫" U136B   # ETHIOPIC DIGIT THREE
-<Multi_key> <Z> <numbersign> <4> <Return> : "፬" U136C   # ETHIOPIC DIGIT FOUR
-<Multi_key> <Z> <numbersign> <5> <Return> : "፭" U136D   # ETHIOPIC DIGIT FIVE
-<Multi_key> <Z> <numbersign> <6> <Return> : "፮" U136E   # ETHIOPIC DIGIT SIX
-<Multi_key> <Z> <numbersign> <7> <Return> : "፯" U136F   # ETHIOPIC DIGIT SEVEN
-<Multi_key> <Z> <numbersign> <8> <Return> : "፰" U1370   # ETHIOPIC DIGIT EIGHT
-<Multi_key> <Z> <numbersign> <9> <Return> : "፱" U1371   # ETHIOPIC DIGIT NINE
-<Multi_key> <Z> <numbersign> <1> <0> <Return> : "፲" U1372   # ETHIOPIC NUMBER TEN
+<Multi_key> <Z> <numbersign> <1> <space> : "፩" U1369   # ETHIOPIC DIGIT ONE
+<Multi_key> <Z> <numbersign> <2> <space> : "፪" U136A   # ETHIOPIC DIGIT TWO
+<Multi_key> <Z> <numbersign> <3> <space> : "፫" U136B   # ETHIOPIC DIGIT THREE
+<Multi_key> <Z> <numbersign> <4> <space> : "፬" U136C   # ETHIOPIC DIGIT FOUR
+<Multi_key> <Z> <numbersign> <5> <space> : "፭" U136D   # ETHIOPIC DIGIT FIVE
+<Multi_key> <Z> <numbersign> <6> <space> : "፮" U136E   # ETHIOPIC DIGIT SIX
+<Multi_key> <Z> <numbersign> <7> <space> : "፯" U136F   # ETHIOPIC DIGIT SEVEN
+<Multi_key> <Z> <numbersign> <8> <space> : "፰" U1370   # ETHIOPIC DIGIT EIGHT
+<Multi_key> <Z> <numbersign> <9> <space> : "፱" U1371   # ETHIOPIC DIGIT NINE
+<Multi_key> <Z> <numbersign> <1> <0> <space> : "፲" U1372   # ETHIOPIC NUMBER TEN
 <Multi_key> <Z> <numbersign> <2> <0> : "፳" U1373   # ETHIOPIC NUMBER TWENTY
 <Multi_key> <Z> <numbersign> <3> <0> : "፴" U1374   # ETHIOPIC NUMBER THIRTY
 <Multi_key> <Z> <numbersign> <4> <0> : "፵" U1375   # ETHIOPIC NUMBER FORTY
@@ -12635,7 +12740,7 @@ include "%L"
 <Multi_key> <Z> <numbersign> <7> <0> : "፸" U1378   # ETHIOPIC NUMBER SEVENTY
 <Multi_key> <Z> <numbersign> <8> <0> : "፹" U1379   # ETHIOPIC NUMBER EIGHTY
 <Multi_key> <Z> <numbersign> <9> <0> : "፺" U137A   # ETHIOPIC NUMBER NINETY
-<Multi_key> <Z> <numbersign> <1> <0> <0> <Return> : "፻" U137B   # ETHIOPIC NUMBER HUNDRED
+<Multi_key> <Z> <numbersign> <1> <0> <0> <space> : "፻" U137B   # ETHIOPIC NUMBER HUNDRED
 <Multi_key> <Z> <numbersign> <1> <0> <0> <0> <0> : "፼" U137C   # ETHIOPIC NUMBER TEN THOUSAND
 
 # (a = Adlam)
