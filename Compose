@@ -4216,8 +4216,8 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# covers Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada, Mahajani,
-# Malayalam, Meitei, Odia, Saurashtra, Sinhala, Sylheti Nagri, Tamil, Telugu.
+# covers Ahom, Bengali, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu, Kannada,
+# Mahajani, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Sylheti Nagri, Tamil, Telugu.
 # see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -4497,6 +4497,89 @@ include "%L"
 <Multi_key> <b> <d> <bar>         : "।" U0964   # DEVANAGARI DANDA
 <Multi_key> <b> <d> <2> <bar>     : "॥" U0965   # DEVANAGARI DOUBLE DANDA
 <Multi_key> <b> <d> <o> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
+
+# (A = Ahom)
+
+# Consonants
+
+<Multi_key> <b> <A> <k> <space> : "𑜀"  U11700  # AHOM LETTER KA (conflicts with Ă, use uA)
+<Multi_key> <b> <A> <k> <h> : "𑜁"  U11701  # AHOM LETTER KHA (conflicts)
+<Multi_key> <b> <A> <semicolon> <n> : "𑜂"  U11702  # AHOM LETTER NGA (conflicts)
+<Multi_key> <b> <A> <n> : "𑜃"  U11703  # AHOM LETTER NA (conflicts)
+<Multi_key> <b> <A> <t> <space> : "𑜄"  U11704  # AHOM LETTER TA (conflicts)
+<Multi_key> <b> <A> <t> <2> : "𑜅"  U11705  # AHOM LETTER ALTERNATE TA (conflicts)
+<Multi_key> <b> <A> <p> <space> : "𑜆"  U11706  # AHOM LETTER PA (conflicts)
+<Multi_key> <b> <A> <p> <h> : "𑜇"  U11707  # AHOM LETTER PHA (conflicts)
+<Multi_key> <b> <A> <b> <space> : "𑜈"  U11708  # AHOM LETTER BA (conflicts)
+<Multi_key> <b> <A> <m> : "𑜉"  U11709  # AHOM LETTER MA (conflicts)
+<Multi_key> <b> <A> <j> <space> : "𑜊"  U1170A  # AHOM LETTER JA (conflicts)
+<Multi_key> <b> <A> <c> <h> : "𑜋"  U1170B  # AHOM LETTER CHA (conflicts)
+<Multi_key> <b> <A> <t> <h> : "𑜌"  U1170C  # AHOM LETTER THA (conflicts)
+<Multi_key> <b> <A> <r> <space> : "𑜍"  U1170D  # AHOM LETTER RA (conflicts)
+<Multi_key> <b> <A> <l> <space> : "𑜎"  U1170E  # AHOM LETTER LA (conflicts)
+<Multi_key> <b> <A> <s> : "𑜏"  U1170F  # AHOM LETTER SA (conflicts)
+<Multi_key> <b> <A> <asciitilde> <n> : "𑜐"  U11710  # AHOM LETTER NYA (conflicts)
+<Multi_key> <b> <A> <h> : "𑜑"  U11711  # AHOM LETTER HA (conflicts)
+<Multi_key> <b> <A> <a> <space> : "𑜒"  U11712  # AHOM LETTER A (conflicts)
+<Multi_key> <b> <A> <d> <space> : "𑜓"  U11713  # AHOM LETTER DA (conflicts)
+<Multi_key> <b> <A> <d> <h> : "𑜔"  U11714  # AHOM LETTER DHA (conflicts)
+<Multi_key> <b> <A> <g> <space> : "𑜕"  U11715  # AHOM LETTER GA (conflicts)
+<Multi_key> <b> <A> <g> <2> : "𑜖"  U11716  # AHOM LETTER ALTERNATE GA (conflicts)
+<Multi_key> <b> <A> <g> <h> : "𑜗"  U11717  # AHOM LETTER GHA (conflicts)
+<Multi_key> <b> <A> <b> <h> : "𑜘"  U11718  # AHOM LETTER BHA (conflicts)
+<Multi_key> <b> <A> <j> <h> : "𑜙"  U11719  # AHOM LETTER JHA (conflicts)
+<Multi_key> <b> <A> <b> <2> : "𑜚"  U1171A  # AHOM LETTER ALTERNATE BA (conflicts)
+<Multi_key> <b> <A> <c> <space> : "𑝀"  U11740  # AHOM LETTER CA (conflicts)
+<Multi_key> <b> <A> <period> <t> <space> : "𑝁"  U11741  # AHOM LETTER TTA (conflicts)
+<Multi_key> <b> <A> <period> <t> <h> : "𑝂"  U11742  # AHOM LETTER TTHA (conflicts)
+<Multi_key> <b> <A> <period> <d> <space> : "𑝃"  U11743  # AHOM LETTER DDA (conflicts)
+<Multi_key> <b> <A> <period> <d> <h> : "𑝄"  U11744  # AHOM LETTER DDHA (conflicts)
+<Multi_key> <b> <A> <period> <n> : "𑝅"  U11745  # AHOM LETTER NNA (conflicts)
+<Multi_key> <b> <A> <period> <l> : "𑝆"  U11746  # AHOM LETTER LLA (conflicts)
+
+# Medial consonants
+
+<Multi_key> <b> <A> <l> <Return> : "𑜝"  U1171D  # AHOM CONSONANT SIGN MEDIAL LA (conflicts)
+<Multi_key> <b> <A> <r> <Return> : "𑜞"  U1171E  # AHOM CONSONANT SIGN MEDIAL RA (conflicts)
+<Multi_key> <b> <A> <r> <l> <Return> : "𑜟"  U1171F  # AHOM CONSONANT SIGN MEDIAL LIGATING RA (conflicts)
+
+# Vowels
+
+<Multi_key> <b> <A> <a> <Return> : "𑜠"  U11720  # AHOM VOWEL SIGN A (conflicts)
+<Multi_key> <b> <A> <a> <a> <Return> : "𑜡"  U11721  # AHOM VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <A> <i> <Return> : "𑜢"  U11722  # AHOM VOWEL SIGN I (conflicts)
+<Multi_key> <b> <A> <i> <i> <Return> : "𑜣"  U11723  # AHOM VOWEL SIGN II (conflicts)
+<Multi_key> <b> <A> <u> <Return> : "𑜤"  U11724  # AHOM VOWEL SIGN U (conflicts)
+<Multi_key> <b> <A> <u> <u> <Return> : "𑜥"  U11725  # AHOM VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <A> <e> <e> <Return> : "𑜦"  U11726  # AHOM VOWEL SIGN E (conflicts)
+<Multi_key> <b> <A> <a> <w> <Return> : "𑜧"  U11727  # AHOM VOWEL SIGN AW (conflicts)
+<Multi_key> <b> <A> <o> <o> <Return> : "𑜨"  U11728  # AHOM VOWEL SIGN O (conflicts)
+<Multi_key> <b> <A> <a> <i> <Return> : "𑜩"  U11729  # AHOM VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <A> <a> <m> <Return> : "𑜪"  U1172A  # AHOM VOWEL SIGN AM (conflicts)
+<Multi_key> <b> <A> <0> <Return> : "𑜫"  U1172B  # AHOM SIGN KILLER (VIRAMA) (conflicts)
+<Multi_key> <b> <A> <comma> <Return> : "𑜫"  U1172B  # AHOM SIGN KILLER (VIRAMA) (conflicts)
+
+# Numbers
+
+<Multi_key> <b> <A> <numbersign> <0> : "𑜰"  U11730  # AHOM DIGIT ZERO (conflicts)
+<Multi_key> <b> <A> <numbersign> <1> <space> : "𑜱"  U11731  # AHOM DIGIT ONE (conflicts)
+<Multi_key> <b> <A> <numbersign> <2> <space> : "𑜲"  U11732  # AHOM DIGIT TWO (conflicts)
+<Multi_key> <b> <A> <numbersign> <3> : "𑜳"  U11733  # AHOM DIGIT THREE (conflicts)
+<Multi_key> <b> <A> <numbersign> <4> : "𑜴"  U11734  # AHOM DIGIT FOUR (conflicts)
+<Multi_key> <b> <A> <numbersign> <5> : "𑜵"  U11735  # AHOM DIGIT FIVE (conflicts)
+<Multi_key> <b> <A> <numbersign> <6> : "𑜶"  U11736  # AHOM DIGIT SIX (conflicts)
+<Multi_key> <b> <A> <numbersign> <7> : "𑜷"  U11737  # AHOM DIGIT SEVEN (conflicts)
+<Multi_key> <b> <A> <numbersign> <8> : "𑜸"  U11738  # AHOM DIGIT EIGHT (conflicts)
+<Multi_key> <b> <A> <numbersign> <9> : "𑜹"  U11739  # AHOM DIGIT NINE (conflicts)
+<Multi_key> <b> <A> <numbersign> <1> <0> : "𑜺"  U1173A  # AHOM NUMBER TEN (conflicts)
+<Multi_key> <b> <A> <numbersign> <2> <0> : "𑜻"  U1173B  # AHOM NUMBER TWENTY (conflicts)
+
+# Punctuation
+
+<Multi_key> <b> <A> <bar> : "𑜼"  U1173C  # AHOM SIGN SMALL SECTION (DANDA) (conflicts)
+<Multi_key> <b> <A> <2> <bar> : "𑜽"  U1173D  # AHOM SIGN SECTION (DOUBLE DANDA) (conflicts)
+<Multi_key> <b> <A> <at> : "𑜾"  U1173E  # AHOM SIGN RULAI (conflicts)
+<Multi_key> <b> <A> <exclam> : "𑜿"  U1173F  # AHOM SYMBOL VI (conflicts)
 
 # (b = Bengali)
 
