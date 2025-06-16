@@ -4273,8 +4273,8 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu,
-# Kannada, Mahajani, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Sylheti Nagri, Tamil, Telugu.
+# covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Grantha, Gujarati, Gurmukhi, Kannada,
+# Limbu, Mahajani, Malayalam, Meitei, Odia, Saurashtra, Sharada, Sinhala, Sylheti Nagri, Tamil, Telugu.
 # see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -5314,7 +5314,7 @@ include "%L"
 <Multi_key> <b> <G> <T> <S> : "𑌽"  U1133D  # GRANTHA SIGN AVAGRAHA (conflicts)
 <Multi_key> <b> <G> <T> <comma> <Return> : "𑍍"  U1134D  # GRANTHA SIGN VIRAMA (conflicts)
 <Multi_key> <b> <G> <T> <o> <m> : "𑍐"  U11350  # GRANTHA OM (conflicts)
-    
+
 # Numerals
 
 <Multi_key> <b> <G> <T> <numbersign> <0> : "𑍦"  U11366  # COMBINING GRANTHA DIGIT ZERO (conflicts)
@@ -6070,6 +6070,110 @@ include "%L"
 
 <Multi_key> <b> <S> <bar>                : "꣎"  UA8CE  # SAURASHTRA DANDA
 <Multi_key> <b> <S> <2> <bar>            : "꣏"  UA8CF  # SAURASHTRA DOUBLE DANDA
+
+# (SH = Sharada)
+
+# Consonants
+
+<Multi_key> <b> <S> <H> <k> <space> : "𑆑"  U11191  # SHARADA LETTER KA
+<Multi_key> <b> <S> <H> <k> <h> : "𑆒"  U11192  # SHARADA LETTER KHA
+<Multi_key> <b> <S> <H> <g> <space> : "𑆓"  U11193  # SHARADA LETTER GA
+<Multi_key> <b> <S> <H> <g> <h> : "𑆔"  U11194  # SHARADA LETTER GHA
+<Multi_key> <b> <S> <H> <semicolon> <n> : "𑆕"  U11195  # SHARADA LETTER NGA
+<Multi_key> <b> <S> <H> <c> <space> : "𑆖"  U11196  # SHARADA LETTER CA
+<Multi_key> <b> <S> <H> <c> <h> : "𑆗"  U11197  # SHARADA LETTER CHA
+<Multi_key> <b> <S> <H> <j> <space> : "𑆘"  U11198  # SHARADA LETTER JA
+<Multi_key> <b> <S> <H> <j> <h> : "𑆙"  U11199  # SHARADA LETTER JHA
+<Multi_key> <b> <S> <H> <asciitilde> <n> : "𑆚"  U1119A  # SHARADA LETTER NYA
+<Multi_key> <b> <S> <H> <period> <t> <space> : "𑆛"  U1119B  # SHARADA LETTER TTA
+<Multi_key> <b> <S> <H> <period> <t> <h> : "𑆜"  U1119C  # SHARADA LETTER TTHA
+<Multi_key> <b> <S> <H> <period> <d> <space> : "𑆝"  U1119D  # SHARADA LETTER DDA
+<Multi_key> <b> <S> <H> <period> <d> <h> : "𑆞"  U1119E  # SHARADA LETTER DDHA
+<Multi_key> <b> <S> <H> <period> <n> : "𑆟"  U1119F  # SHARADA LETTER NNA
+<Multi_key> <b> <S> <H> <t> <space> : "𑆠"  U111A0  # SHARADA LETTER TA
+<Multi_key> <b> <S> <H> <t> <h> : "𑆡"  U111A1  # SHARADA LETTER THA
+<Multi_key> <b> <S> <H> <d> <space> : "𑆢"  U111A2  # SHARADA LETTER DA
+<Multi_key> <b> <S> <H> <d> <h> : "𑆣"  U111A3  # SHARADA LETTER DHA
+<Multi_key> <b> <S> <H> <n> : "𑆤"  U111A4  # SHARADA LETTER NA
+<Multi_key> <b> <S> <H> <p> <space> : "𑆥"  U111A5  # SHARADA LETTER PA
+<Multi_key> <b> <S> <H> <p> <h> : "𑆦"  U111A6  # SHARADA LETTER PHA
+<Multi_key> <b> <S> <H> <b> <space> : "𑆧"  U111A7  # SHARADA LETTER BA
+<Multi_key> <b> <S> <H> <b> <h> : "𑆨"  U111A8  # SHARADA LETTER BHA
+<Multi_key> <b> <S> <H> <m> : "𑆩"  U111A9  # SHARADA LETTER MA
+<Multi_key> <b> <S> <H> <y> : "𑆪"  U111AA  # SHARADA LETTER YA
+<Multi_key> <b> <S> <H> <r> : "𑆫"  U111AB  # SHARADA LETTER RA
+<Multi_key> <b> <S> <H> <l> : "𑆬"  U111AC  # SHARADA LETTER LA
+<Multi_key> <b> <S> <H> <period> <l> : "𑆭"  U111AD  # SHARADA LETTER LLA
+<Multi_key> <b> <S> <H> <v> : "𑆮"  U111AE  # SHARADA LETTER VA
+<Multi_key> <b> <S> <H> <semicolon> <s> : "𑆯"  U111AF  # SHARADA LETTER SHA
+<Multi_key> <b> <S> <H> <period> <s> : "𑆰"  U111B0  # SHARADA LETTER SSA
+<Multi_key> <b> <S> <H> <s> : "𑆱"  U111B1  # SHARADA LETTER SA
+<Multi_key> <b> <S> <H> <h> : "𑆲"  U111B2  # SHARADA LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <S> <H> <a> <space> : "𑆃"  U11183  # SHARADA LETTER A
+<Multi_key> <b> <S> <H> <a> <a> <space> : "𑆄"  U11184  # SHARADA LETTER AA
+<Multi_key> <b> <S> <H> <i> <space> : "𑆅"  U11185  # SHARADA LETTER I
+<Multi_key> <b> <S> <H> <i> <i> <space> : "𑆆"  U11186  # SHARADA LETTER II
+<Multi_key> <b> <S> <H> <u> <space> : "𑆇"  U11187  # SHARADA LETTER U
+<Multi_key> <b> <S> <H> <u> <u> <space> : "𑆈"  U11188  # SHARADA LETTER UU
+<Multi_key> <b> <S> <H> <comma> <r> <space> : "𑆉"  U11189  # SHARADA LETTER VOCALIC R
+<Multi_key> <b> <S> <H> <comma> <r> <r> <space> : "𑆊"  U1118A  # SHARADA LETTER VOCALIC RR
+<Multi_key> <b> <S> <H> <comma> <l> <space> : "𑆋"  U1118B  # SHARADA LETTER VOCALIC L
+<Multi_key> <b> <S> <H> <comma> <l> <l> <space> : "𑆌"  U1118C  # SHARADA LETTER VOCALIC LL
+<Multi_key> <b> <S> <H> <e> <e> <space> : "𑆍"  U1118D  # SHARADA LETTER E
+<Multi_key> <b> <S> <H> <a> <i> <space> : "𑆎"  U1118E  # SHARADA LETTER AI
+<Multi_key> <b> <S> <H> <o> <o> <space> : "𑆏"  U1118F  # SHARADA LETTER O
+<Multi_key> <b> <S> <H> <a> <u> <space> : "𑆐"  U11190  # SHARADA LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <S> <H> <a> <a> <Return> : "𑆳"  U111B3  # SHARADA VOWEL SIGN AA
+<Multi_key> <b> <S> <H> <i> <Return> : "𑆴"  U111B4  # SHARADA VOWEL SIGN I
+<Multi_key> <b> <S> <H> <i> <i> <Return> : "𑆵"  U111B5  # SHARADA VOWEL SIGN II
+<Multi_key> <b> <S> <H> <u> <Return> : "𑆶"  U111B6  # SHARADA VOWEL SIGN U
+<Multi_key> <b> <S> <H> <u> <u> <Return> : "𑆷"  U111B7  # SHARADA VOWEL SIGN UU
+<Multi_key> <b> <S> <H> <comma> <r> <Return> : "𑆸"  U111B8  # SHARADA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <S> <H> <comma> <r> <r> <Return> : "𑆹"  U111B9  # SHARADA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <S> <H> <comma> <l> <Return> : "𑆺"  U111BA  # SHARADA VOWEL SIGN VOCALIC L
+<Multi_key> <b> <S> <H> <comma> <l> <l> <Return> : "𑆻"  U111BB  # SHARADA VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <S> <H> <e> <e> <Return> : "𑆼"  U111BC  # SHARADA VOWEL SIGN E
+<Multi_key> <b> <S> <H> <a> <i> <Return> : "𑆽"  U111BD  # SHARADA VOWEL SIGN AI
+<Multi_key> <b> <S> <H> <o> <o> <Return> : "𑆾"  U111BE  # SHARADA VOWEL SIGN O
+<Multi_key> <b> <S> <H> <a> <u> <Return> : "𑆿"  U111BF  # SHARADA VOWEL SIGN AU
+<Multi_key> <b> <S> <H> <0> <Return> : "𑇀"  U111C0  # SHARADA SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <S> <H> <comma> <Return> : "𑇀"  U111C0  # SHARADA SIGN VIRAMA
+<Multi_key> <b> <S> <H> <parenleft> <period> <Return> : "𑆀"  U11180  # SHARADA SIGN CANDRABINDU
+<Multi_key> <b> <S> <H> <period> <Return> : "𑆁"  U11181  # SHARADA SIGN ANUSVARA
+<Multi_key> <b> <S> <H> <colon> <Return> : "𑆂"  U11182  # SHARADA SIGN VISARGA
+<Multi_key> <b> <S> <H> <S> : "𑇁"  U111C1  # SHARADA SIGN AVAGRAHA
+<Multi_key> <b> <S> <H> <o> <m> : "𑇄"  U111C4  # SHARADA OM
+<Multi_key> <b> <S> <H> <underscore> <period> <Return> : "𑇊"  U111CA  # SHARADA SIGN NUKTA
+<Multi_key> <b> <S> <H> <period> <parenright> <Return> : "𑇏"  U111CF  # SHARADA SIGN INVERTED CANDRABINDU
+
+# Numerals
+
+<Multi_key> <b> <S> <H> <numbersign> <0> : "𑇐"  U111D0  # SHARADA DIGIT ZERO
+<Multi_key> <b> <S> <H> <numbersign> <1> : "𑇑"  U111D1  # SHARADA DIGIT ONE
+<Multi_key> <b> <S> <H> <numbersign> <2> : "𑇒"  U111D2  # SHARADA DIGIT TWO
+<Multi_key> <b> <S> <H> <numbersign> <3> : "𑇓"  U111D3  # SHARADA DIGIT THREE
+<Multi_key> <b> <S> <H> <numbersign> <4> : "𑇔"  U111D4  # SHARADA DIGIT FOUR
+<Multi_key> <b> <S> <H> <numbersign> <5> : "𑇕"  U111D5  # SHARADA DIGIT FIVE
+<Multi_key> <b> <S> <H> <numbersign> <6> : "𑇖"  U111D6  # SHARADA DIGIT SIX
+<Multi_key> <b> <S> <H> <numbersign> <7> : "𑇗"  U111D7  # SHARADA DIGIT SEVEN
+<Multi_key> <b> <S> <H> <numbersign> <8> : "𑇘"  U111D8  # SHARADA DIGIT EIGHT
+<Multi_key> <b> <S> <H> <numbersign> <9> : "𑇙"  U111D9  # SHARADA DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <S> <H> <bar> : "𑇅"  U111C5  # SHARADA DANDA
+<Multi_key> <b> <S> <H> <2> <bar> : "𑇆"  U111C6  # SHARADA DOUBLE DANDA
+<Multi_key> <b> <S> <H> <o> <period> : "𑇇"  U111C7  # SHARADA ABBREVIATION SIGN
+<Multi_key> <b> <S> <H> <comma> <space> : "𑇈"  U111C8  # SHARADA SEPARATOR
 
 # (SN = Sylheti Nagri)
 
