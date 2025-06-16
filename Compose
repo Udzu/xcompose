@@ -4273,9 +4273,9 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Grantha, Gujala Gondi, Gujarati, Gurmukhi
-# Kannada, Limbu, Mahajani, Malayalam, Meitei, Newa, Odia, Saurashtra, Sharada, Sinhala, Sylheti Nagri, Tamil, Telugu.
-# see Zhuyin section for Tibetan and Phags-Pa.
+# covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
+# Gurung Khema, Kannada, Limbu, Mahajani, Malayalam, Meitei, Newa, Odia, Saurashtra, Sharada, Sinhala,
+# Sylheti Nagri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
 
@@ -5302,6 +5302,79 @@ include "%L"
 <Multi_key> <b> <G> <G> <numbersign> <7> : "𑶧"  U11DA7  # GUNJALA GONDI DIGIT SEVEN (conflicts)
 <Multi_key> <b> <G> <G> <numbersign> <8> : "𑶨"  U11DA8  # GUNJALA GONDI DIGIT EIGHT (conflicts)
 <Multi_key> <b> <G> <G> <numbersign> <9> : "𑶩"  U11DA9  # GUNJALA GONDI DIGIT NINE (conflicts)
+
+# (GK = Gurung Khema)
+
+# Consonants
+
+<Multi_key> <b> <G> <K> <a> <space> : "𖄀"  U16100  # GURUNG KHEMA LETTER A (conflicts)
+<Multi_key> <b> <G> <K> <k> <space> : "𖄁"  U16101  # GURUNG KHEMA LETTER KA (conflicts)
+<Multi_key> <b> <G> <K> <k> <h> : "𖄂"  U16102  # GURUNG KHEMA LETTER KHA (conflicts)
+<Multi_key> <b> <G> <K> <g> <space> : "𖄃"  U16103  # GURUNG KHEMA LETTER GA (conflicts)
+<Multi_key> <b> <G> <K> <g> <h> : "𖄄"  U16104  # GURUNG KHEMA LETTER GHA (conflicts)
+<Multi_key> <b> <G> <K> <semicolon> <n> : "𖄅"  U16105  # GURUNG KHEMA LETTER NGA (conflicts)
+<Multi_key> <b> <G> <K> <c> <space> : "𖄆"  U16106  # GURUNG KHEMA LETTER CA (conflicts)
+<Multi_key> <b> <G> <K> <c> <h> : "𖄇"  U16107  # GURUNG KHEMA LETTER CHA (conflicts)
+<Multi_key> <b> <G> <K> <j> <space> : "𖄈"  U16108  # GURUNG KHEMA LETTER JA (conflicts)
+<Multi_key> <b> <G> <K> <j> <h> : "𖄉"  U16109  # GURUNG KHEMA LETTER JHA (conflicts)
+<Multi_key> <b> <G> <K> <h> : "𖄊"  U1610A  # GURUNG KHEMA LETTER HA (conflicts)
+<Multi_key> <b> <G> <K> <period> <t> <space> : "𖄋"  U1610B  # GURUNG KHEMA LETTER TTA (conflicts)
+<Multi_key> <b> <G> <K> <period> <t> <h> : "𖄌"  U1610C  # GURUNG KHEMA LETTER TTHA (conflicts)
+<Multi_key> <b> <G> <K> <period> <d> <space> : "𖄍"  U1610D  # GURUNG KHEMA LETTER DDA (conflicts)
+<Multi_key> <b> <G> <K> <period> <d> <h> : "𖄎"  U1610E  # GURUNG KHEMA LETTER DDHA (conflicts)
+<Multi_key> <b> <G> <K> <v> : "𖄏"  U1610F  # GURUNG KHEMA LETTER VA (conflicts)
+<Multi_key> <b> <G> <K> <t> <space> : "𖄐"  U16110  # GURUNG KHEMA LETTER TA (conflicts)
+<Multi_key> <b> <G> <K> <t> <h> : "𖄑"  U16111  # GURUNG KHEMA LETTER THA (conflicts)
+<Multi_key> <b> <G> <K> <d> <space> : "𖄒"  U16112  # GURUNG KHEMA LETTER DA (conflicts)
+<Multi_key> <b> <G> <K> <d> <h> : "𖄓"  U16113  # GURUNG KHEMA LETTER DHA (conflicts)
+<Multi_key> <b> <G> <K> <n> : "𖄔"  U16114  # GURUNG KHEMA LETTER NA (conflicts)
+<Multi_key> <b> <G> <K> <p> <space> : "𖄕"  U16115  # GURUNG KHEMA LETTER PA (conflicts)
+<Multi_key> <b> <G> <K> <p> <h> : "𖄖"  U16116  # GURUNG KHEMA LETTER PHA (conflicts)
+<Multi_key> <b> <G> <K> <b> <space> : "𖄗"  U16117  # GURUNG KHEMA LETTER BA (conflicts)
+<Multi_key> <b> <G> <K> <b> <h> : "𖄘"  U16118  # GURUNG KHEMA LETTER BHA (conflicts)
+<Multi_key> <b> <G> <K> <m> : "𖄙"  U16119  # GURUNG KHEMA LETTER MA (conflicts)
+<Multi_key> <b> <G> <K> <y> : "𖄚"  U1611A  # GURUNG KHEMA LETTER YA (conflicts)
+<Multi_key> <b> <G> <K> <r> : "𖄛"  U1611B  # GURUNG KHEMA LETTER RA (conflicts)
+<Multi_key> <b> <G> <K> <l> : "𖄜"  U1611C  # GURUNG KHEMA LETTER LA (conflicts)
+<Multi_key> <b> <G> <K> <s> : "𖄝"  U1611D  # GURUNG KHEMA LETTER SA (conflicts)
+
+# Dependent vowels
+
+<Multi_key> <b> <G> <K> <a> <a> <Return> : "𖄞"  U1611E  # GURUNG KHEMA VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <G> <K> <i> <Return> : "𖄟"  U1611F  # GURUNG KHEMA VOWEL SIGN I (conflicts)
+<Multi_key> <b> <G> <K> <i> <i> <Return> : "𖄠"  U16120  # GURUNG KHEMA VOWEL SIGN II (conflicts)
+<Multi_key> <b> <G> <K> <u> <Return> : "𖄡"  U16121  # GURUNG KHEMA VOWEL SIGN U (conflicts)
+<Multi_key> <b> <G> <K> <u> <u> <Return> : "𖄢"  U16122  # GURUNG KHEMA VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <G> <K> <e> <Return> : "𖄣"  U16123  # GURUNG KHEMA VOWEL SIGN E (conflicts)
+<Multi_key> <b> <G> <K> <e> <e> <Return> : "𖄤"  U16124  # GURUNG KHEMA VOWEL SIGN EE (conflicts)
+<Multi_key> <b> <G> <K> <a> <i> <Return> : "𖄥"  U16125  # GURUNG KHEMA VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <G> <K> <o> <Return> : "𖄦"  U16126  # GURUNG KHEMA VOWEL SIGN O (conflicts)
+<Multi_key> <b> <G> <K> <o> <o> <Return> : "𖄧"  U16127  # GURUNG KHEMA VOWEL SIGN OO (conflicts)
+<Multi_key> <b> <G> <K> <a> <u> <Return> : "𖄨"  U16128  # GURUNG KHEMA VOWEL SIGN AU (conflicts)
+
+<Multi_key> <b> <G> <K> <minus> <Return> : "𖄩"  U16129  # GURUNG KHEMA VOWEL LENGTH MARK (conflicts)
+<Multi_key> <b> <G> <K> <y> <Return> : "𖄪"  U1612A  # GURUNG KHEMA CONSONANT SIGN MEDIAL YA (conflicts)
+<Multi_key> <b> <G> <K> <v> <Return> : "𖄫"  U1612B  # GURUNG KHEMA CONSONANT SIGN MEDIAL VA (conflicts)
+<Multi_key> <b> <G> <K> <h> <Return> : "𖄬"  U1612C  # GURUNG KHEMA CONSONANT SIGN MEDIAL HA (conflicts)
+<Multi_key> <b> <G> <K> <r> <Return> : "𖄮"  U1612E  # GURUNG KHEMA CONSONANT SIGN MEDIAL RA (conflicts)
+
+# Other signs
+
+<Multi_key> <b> <G> <K> <period> <Return> : "𖄭"  U1612D  # GURUNG KHEMA SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <G> <K> <underscore> <backslash> <Return> : "𖄯"  U1612F  # GURUNG KHEMA SIGN THOLHOMA (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <G> <K> <numbersign> <0> : "𖄰"  U16130  # GURUNG KHEMA DIGIT ZERO (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <1> : "𖄱"  U16131  # GURUNG KHEMA DIGIT ONE (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <2> : "𖄲"  U16132  # GURUNG KHEMA DIGIT TWO (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <3> : "𖄳"  U16133  # GURUNG KHEMA DIGIT THREE (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <4> : "𖄴"  U16134  # GURUNG KHEMA DIGIT FOUR (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <5> : "𖄵"  U16135  # GURUNG KHEMA DIGIT FIVE (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <6> : "𖄶"  U16136  # GURUNG KHEMA DIGIT SIX (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <7> : "𖄷"  U16137  # GURUNG KHEMA DIGIT SEVEN (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <8> : "𖄸"  U16138  # GURUNG KHEMA DIGIT EIGHT (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <9> : "𖄹"  U16139  # GURUNG KHEMA DIGIT NINE (conflicts)
 
 # (GT = Grantha)
 
