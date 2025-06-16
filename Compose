@@ -4274,7 +4274,7 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
-# Gurung Khema, Kannada, Kharoshthi, Limbu, Mahajani, Malayalam, Meitei, Newa, Odia, Saurashtra, Sharada, Sinhala,
+# Gurung Khema, Kannada, Kharoshthi, Limbu, Mahajani, Malayalam, Masaram Gondi, Meitei, Newa, Odia, Saurashtra, Sharada, Sinhala,
 # Sylheti Nagri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -5697,7 +5697,6 @@ include "%L"
 <Multi_key> <b> <K> <comma> <r> <Return> : "𐨃"  U10A03  # KHAROSHTHI VOWEL SIGN VOCALIC R
 <Multi_key> <b> <K> <e> <e> <Return> : "𐨅"  U10A05  # KHAROSHTHI VOWEL SIGN E
 <Multi_key> <b> <K> <o> <o> <Return> : "𐨆"  U10A06  # KHAROSHTHI VOWEL SIGN O
-<Multi_key> <b> <K> <0> <Return> : "𐨿"  U10A3F  # KHAROSHTHI VIRAMA
 
 # Other signs
 
@@ -5708,7 +5707,6 @@ include "%L"
 <Multi_key> <b> <K> <asciicircum> <minus> <Return> : "𐨸"  U10A38  # KHAROSHTHI SIGN BAR ABOVE
 <Multi_key> <b> <K> <underscore> <parenright> <Return> : "𐨹"  U10A39  # KHAROSHTHI SIGN CAUDA
 <Multi_key> <b> <K> <underscore> <period> <Return> : "𐨺"  U10A3A  # KHAROSHTHI SIGN DOT BELOW
-<Multi_key> <b> <K> <comma> <Return> : "𐨿"  U10A3F  # KHAROSHTHI VIRAMA
 <Multi_key> <b> <K> <underscore> <plus> <Return> : "𐨿"  U10A3F  # KHAROSHTHI VIRAMA
 
 # Numerals
@@ -6005,6 +6003,97 @@ include "%L"
 <Multi_key> <b> <M> <2> <bar>            : "꯫"  UABEB  # MEETEI MAYEK CHEIKHEI
 <Multi_key> <b> <M> <period> <Return>    : "꯬"  UABEC  # MEETEI MAYEK LUM IYEK
 <Multi_key> <b> <M> <underscore> <Return> : "꯭"  UABED  # MEETEI MAYEK APUN IYEK
+
+# (MG = Masaram Gondi)
+
+# Consonants
+
+<Multi_key> <b> <M> <G> <k> <space> : "𑴌"  U11D0C  # MASARAM GONDI LETTER KA
+<Multi_key> <b> <M> <G> <k> <h> : "𑴍"  U11D0D  # MASARAM GONDI LETTER KHA
+<Multi_key> <b> <M> <G> <g> <space> : "𑴎"  U11D0E  # MASARAM GONDI LETTER GA
+<Multi_key> <b> <M> <G> <g> <h> : "𑴏"  U11D0F  # MASARAM GONDI LETTER GHA
+<Multi_key> <b> <M> <G> <semicolon> <n> : "𑴐"  U11D10  # MASARAM GONDI LETTER NGA
+<Multi_key> <b> <M> <G> <c> <space> : "𑴑"  U11D11  # MASARAM GONDI LETTER CA
+<Multi_key> <b> <M> <G> <c> <h> : "𑴒"  U11D12  # MASARAM GONDI LETTER CHA
+<Multi_key> <b> <M> <G> <j> <space> : "𑴓"  U11D13  # MASARAM GONDI LETTER JA
+<Multi_key> <b> <M> <G> <j> <h> : "𑴔"  U11D14  # MASARAM GONDI LETTER JHA
+<Multi_key> <b> <M> <G> <asciitilde> <n> : "𑴕"  U11D15  # MASARAM GONDI LETTER NYA
+<Multi_key> <b> <M> <G> <period> <t> <space> : "𑴖"  U11D16  # MASARAM GONDI LETTER TTA
+<Multi_key> <b> <M> <G> <period> <t> <h> : "𑴗"  U11D17  # MASARAM GONDI LETTER TTHA
+<Multi_key> <b> <M> <G> <period> <d> <space> : "𑴘"  U11D18  # MASARAM GONDI LETTER DDA
+<Multi_key> <b> <M> <G> <period> <d> <h> : "𑴙"  U11D19  # MASARAM GONDI LETTER DDHA
+<Multi_key> <b> <M> <G> <period> <n> : "𑴚"  U11D1A  # MASARAM GONDI LETTER NNA
+<Multi_key> <b> <M> <G> <t> <space> : "𑴛"  U11D1B  # MASARAM GONDI LETTER TA
+<Multi_key> <b> <M> <G> <t> <h> : "𑴜"  U11D1C  # MASARAM GONDI LETTER THA
+<Multi_key> <b> <M> <G> <d> <space> : "𑴝"  U11D1D  # MASARAM GONDI LETTER DA
+<Multi_key> <b> <M> <G> <d> <h> : "𑴞"  U11D1E  # MASARAM GONDI LETTER DHA
+<Multi_key> <b> <M> <G> <n> : "𑴟"  U11D1F  # MASARAM GONDI LETTER NA
+<Multi_key> <b> <M> <G> <p> <space> : "𑴠"  U11D20  # MASARAM GONDI LETTER PA
+<Multi_key> <b> <M> <G> <p> <h> : "𑴡"  U11D21  # MASARAM GONDI LETTER PHA
+<Multi_key> <b> <M> <G> <b> <space> : "𑴢"  U11D22  # MASARAM GONDI LETTER BA
+<Multi_key> <b> <M> <G> <b> <h> : "𑴣"  U11D23  # MASARAM GONDI LETTER BHA
+<Multi_key> <b> <M> <G> <m> : "𑴤"  U11D24  # MASARAM GONDI LETTER MA
+<Multi_key> <b> <M> <G> <y> : "𑴥"  U11D25  # MASARAM GONDI LETTER YA
+<Multi_key> <b> <M> <G> <r> : "𑴦"  U11D26  # MASARAM GONDI LETTER RA
+<Multi_key> <b> <M> <G> <l> : "𑴧"  U11D27  # MASARAM GONDI LETTER LA
+<Multi_key> <b> <M> <G> <v> : "𑴨"  U11D28  # MASARAM GONDI LETTER VA
+<Multi_key> <b> <M> <G> <semicolon> <s> : "𑴩"  U11D29  # MASARAM GONDI LETTER SHA
+<Multi_key> <b> <M> <G> <period> <s> : "𑴪"  U11D2A  # MASARAM GONDI LETTER SSA
+<Multi_key> <b> <M> <G> <s> : "𑴫"  U11D2B  # MASARAM GONDI LETTER SA
+<Multi_key> <b> <M> <G> <h> : "𑴬"  U11D2C  # MASARAM GONDI LETTER HA
+<Multi_key> <b> <M> <G> <period> <l> : "𑴭"  U11D2D  # MASARAM GONDI LETTER LLA
+<Multi_key> <b> <M> <G> <k> <s> <s> : "𑴮"  U11D2E  # MASARAM GONDI LETTER KSSA
+<Multi_key> <b> <M> <G> <j> <n> <y> : "𑴯"  U11D2F  # MASARAM GONDI LETTER JNYA
+<Multi_key> <b> <M> <G> <t> <r> : "𑴰"  U11D30  # MASARAM GONDI LETTER TRA
+
+# Independent vowels
+
+<Multi_key> <b> <M> <G> <a> <space> : "𑴀"  U11D00  # MASARAM GONDI LETTER A
+<Multi_key> <b> <M> <G> <a> <a> <space> : "𑴁"  U11D01  # MASARAM GONDI LETTER AA
+<Multi_key> <b> <M> <G> <i> <space> : "𑴂"  U11D02  # MASARAM GONDI LETTER I
+<Multi_key> <b> <M> <G> <i> <i> <space> : "𑴃"  U11D03  # MASARAM GONDI LETTER II
+<Multi_key> <b> <M> <G> <u> <space> : "𑴄"  U11D04  # MASARAM GONDI LETTER U
+<Multi_key> <b> <M> <G> <u> <u> <space> : "𑴅"  U11D05  # MASARAM GONDI LETTER UU
+<Multi_key> <b> <M> <G> <e> <e> <space> : "𑴆"  U11D06  # MASARAM GONDI LETTER E
+<Multi_key> <b> <M> <G> <a> <i> <space> : "𑴈"  U11D08  # MASARAM GONDI LETTER AI
+<Multi_key> <b> <M> <G> <o> <o> <space> : "𑴉"  U11D09  # MASARAM GONDI LETTER O
+<Multi_key> <b> <M> <G> <a> <u> <space> : "𑴋"  U11D0B  # MASARAM GONDI LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <M> <G> <a> <a> <Return> : "𑴱"  U11D31  # MASARAM GONDI VOWEL SIGN AA
+<Multi_key> <b> <M> <G> <i> <Return> : "𑴲"  U11D32  # MASARAM GONDI VOWEL SIGN I
+<Multi_key> <b> <M> <G> <i> <i> <Return> : "𑴳"  U11D33  # MASARAM GONDI VOWEL SIGN II
+<Multi_key> <b> <M> <G> <u> <Return> : "𑴴"  U11D34  # MASARAM GONDI VOWEL SIGN U
+<Multi_key> <b> <M> <G> <u> <u> <Return> : "𑴵"  U11D35  # MASARAM GONDI VOWEL SIGN UU
+<Multi_key> <b> <M> <G> <comma> <r> <Return> : "𑴶"  U11D36  # MASARAM GONDI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <M> <G> <e> <e> <Return> : "𑴺"  U11D3A  # MASARAM GONDI VOWEL SIGN E
+<Multi_key> <b> <M> <G> <a> <i> <Return> : "𑴼"  U11D3C  # MASARAM GONDI VOWEL SIGN AI
+<Multi_key> <b> <M> <G> <o> <o> <Return> : "𑴽"  U11D3D  # MASARAM GONDI VOWEL SIGN O
+<Multi_key> <b> <M> <G> <a> <u> <Return> : "𑴿"  U11D3F  # MASARAM GONDI VOWEL SIGN AU
+<Multi_key> <b> <M> <G> <o> <Return> : "𑵄"  U11D44  # MASARAM GONDI SIGN HALANTA
+
+# Other signs
+
+<Multi_key> <b> <M> <G> <period> <Return> : "𑵀"  U11D40  # MASARAM GONDI SIGN ANUSVARA
+<Multi_key> <b> <M> <G> <colon> <Return> : "𑵁"  U11D41  # MASARAM GONDI SIGN VISARGA
+<Multi_key> <b> <M> <G> <underscore> <period> <Return> : "𑵂"  U11D42  # MASARAM GONDI SIGN NUKTA
+<Multi_key> <b> <M> <G> <parenright> <Return> : "𑵃"  U11D43  # MASARAM GONDI SIGN CANDRA
+<Multi_key> <b> <M> <G> <comma> <Return> : "𑵄"  U11D44  # MASARAM GONDI SIGN HALANTA
+<Multi_key> <b> <M> <G> <underscore> <plus> <Return>  : "𑵅"  U11D45  # MASARAM GONDI VIRAMA
+
+# Numerals
+
+<Multi_key> <b> <M> <G> <numbersign> <0> : "𑵐"  U11D50  # MASARAM GONDI DIGIT ZERO
+<Multi_key> <b> <M> <G> <numbersign> <1> : "𑵑"  U11D51  # MASARAM GONDI DIGIT ONE
+<Multi_key> <b> <M> <G> <numbersign> <2> : "𑵒"  U11D52  # MASARAM GONDI DIGIT TWO
+<Multi_key> <b> <M> <G> <numbersign> <3> : "𑵓"  U11D53  # MASARAM GONDI DIGIT THREE
+<Multi_key> <b> <M> <G> <numbersign> <4> : "𑵔"  U11D54  # MASARAM GONDI DIGIT FOUR
+<Multi_key> <b> <M> <G> <numbersign> <5> : "𑵕"  U11D55  # MASARAM GONDI DIGIT FIVE
+<Multi_key> <b> <M> <G> <numbersign> <6> : "𑵖"  U11D56  # MASARAM GONDI DIGIT SIX
+<Multi_key> <b> <M> <G> <numbersign> <7> : "𑵗"  U11D57  # MASARAM GONDI DIGIT SEVEN
+<Multi_key> <b> <M> <G> <numbersign> <8> : "𑵘"  U11D58  # MASARAM GONDI DIGIT EIGHT
+<Multi_key> <b> <M> <G> <numbersign> <9> : "𑵙"  U11D59  # MASARAM GONDI DIGIT NINE
 
 # (MJ = Mahajani)
 
