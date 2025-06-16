@@ -174,8 +174,8 @@ def add(
         name = " ".join(unicodedata.name(c, "???") for c in args.value)
         if len(args.value) > 1 and "VARIATION SELECTOR-16" in name:
             name = name.replace("VARIATION SELECTOR-16", "EMOJI")
-        if conflict:
-            name = name + f" (conflicts with {conflict})"
+    if conflict:
+        name = name + f" (conflicts with {conflict})"
     comment = f" {comment}" if comment is not None else ""
     print(f'{keys} : "{args.value}"  {codes}  # {name}{comment}')
 

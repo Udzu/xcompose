@@ -4274,7 +4274,7 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
-# Gurung Khema, Kannada, Limbu, Mahajani, Malayalam, Meitei, Newa, Odia, Saurashtra, Sharada, Sinhala,
+# Gurung Khema, Kannada, Kharoshthi, Limbu, Mahajani, Malayalam, Meitei, Newa, Odia, Saurashtra, Sharada, Sinhala,
 # Sylheti Nagri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -5584,6 +5584,86 @@ include "%L"
 <Multi_key> <b> <k> <numbersign> <7>     : "೭"  U0CED  # KANNADA DIGIT SEVEN
 <Multi_key> <b> <k> <numbersign> <8>     : "೮"  U0CEE  # KANNADA DIGIT EIGHT
 <Multi_key> <b> <k> <numbersign> <9>     : "೯"  U0CEF  # KANNADA DIGIT NINE
+
+# (K = Kharoshthi)
+
+# Consonants
+
+<Multi_key> <b> <K> <k> <space> : "𐨐"  U10A10  # KHAROSHTHI LETTER KA
+<Multi_key> <b> <K> <k> <h> : "𐨑"  U10A11  # KHAROSHTHI LETTER KHA
+<Multi_key> <b> <K> <g> <space> : "𐨒"  U10A12  # KHAROSHTHI LETTER GA
+<Multi_key> <b> <K> <g> <h> : "𐨓"  U10A13  # KHAROSHTHI LETTER GHA
+<Multi_key> <b> <K> <c> <space> : "𐨕"  U10A15  # KHAROSHTHI LETTER CA
+<Multi_key> <b> <K> <c> <h> : "𐨖"  U10A16  # KHAROSHTHI LETTER CHA
+<Multi_key> <b> <K> <j> <space> : "𐨗"  U10A17  # KHAROSHTHI LETTER JA
+<Multi_key> <b> <K> <asciitilde> <n> : "𐨙"  U10A19  # KHAROSHTHI LETTER NYA
+<Multi_key> <b> <K> <period> <t> <space> : "𐨚"  U10A1A  # KHAROSHTHI LETTER TTA
+<Multi_key> <b> <K> <period> <t> <h> : "𐨛"  U10A1B  # KHAROSHTHI LETTER TTHA
+<Multi_key> <b> <K> <period> <d> <space> : "𐨜"  U10A1C  # KHAROSHTHI LETTER DDA
+<Multi_key> <b> <K> <period> <d> <h> : "𐨝"  U10A1D  # KHAROSHTHI LETTER DDHA
+<Multi_key> <b> <K> <period> <n> : "𐨞"  U10A1E  # KHAROSHTHI LETTER NNA
+<Multi_key> <b> <K> <t> <space> : "𐨟"  U10A1F  # KHAROSHTHI LETTER TA
+<Multi_key> <b> <K> <t> <h> : "𐨠"  U10A20  # KHAROSHTHI LETTER THA
+<Multi_key> <b> <K> <d> <space> : "𐨡"  U10A21  # KHAROSHTHI LETTER DA
+<Multi_key> <b> <K> <d> <h> : "𐨢"  U10A22  # KHAROSHTHI LETTER DHA
+<Multi_key> <b> <K> <n> : "𐨣"  U10A23  # KHAROSHTHI LETTER NA
+<Multi_key> <b> <K> <p> <space> : "𐨤"  U10A24  # KHAROSHTHI LETTER PA
+<Multi_key> <b> <K> <p> <h> : "𐨥"  U10A25  # KHAROSHTHI LETTER PHA
+<Multi_key> <b> <K> <b> <space> : "𐨦"  U10A26  # KHAROSHTHI LETTER BA
+<Multi_key> <b> <K> <b> <h> : "𐨧"  U10A27  # KHAROSHTHI LETTER BHA
+<Multi_key> <b> <K> <m> : "𐨨"  U10A28  # KHAROSHTHI LETTER MA
+<Multi_key> <b> <K> <y> : "𐨩"  U10A29  # KHAROSHTHI LETTER YA
+<Multi_key> <b> <K> <r> : "𐨪"  U10A2A  # KHAROSHTHI LETTER RA
+<Multi_key> <b> <K> <l> : "𐨫"  U10A2B  # KHAROSHTHI LETTER LA
+<Multi_key> <b> <K> <v> <space> : "𐨬"  U10A2C  # KHAROSHTHI LETTER VA
+<Multi_key> <b> <K> <semicolon> <s> : "𐨭"  U10A2D  # KHAROSHTHI LETTER SHA
+<Multi_key> <b> <K> <period> <s> : "𐨮"  U10A2E  # KHAROSHTHI LETTER SSA
+<Multi_key> <b> <K> <s> : "𐨯"  U10A2F  # KHAROSHTHI LETTER SA
+<Multi_key> <b> <K> <z> : "𐨰"  U10A30  # KHAROSHTHI LETTER ZA
+<Multi_key> <b> <K> <h> : "𐨱"  U10A31  # KHAROSHTHI LETTER HA
+<Multi_key> <b> <K> <k> <k> : "𐨲"  U10A32  # KHAROSHTHI LETTER KKA
+<Multi_key> <b> <K> <underscore> <t> <h> : "𐨳"  U10A33  # KHAROSHTHI LETTER TTTHA
+<Multi_key> <b> <K> <underscore> <t> <space> : "𐨴"  U10A34  # KHAROSHTHI LETTER TTTA
+<Multi_key> <b> <K> <v> <h> : "𐨵"  U10A35  # KHAROSHTHI LETTER VHA
+
+# Vowels
+
+<Multi_key> <b> <K> <a> <space> : "𐨀"  U10A00  # KHAROSHTHI LETTER A
+<Multi_key> <b> <K> <i> <Return> : "𐨁"  U10A01  # KHAROSHTHI VOWEL SIGN I
+<Multi_key> <b> <K> <u> <Return> : "𐨂"  U10A02  # KHAROSHTHI VOWEL SIGN U
+<Multi_key> <b> <K> <comma> <r> <Return> : "𐨃"  U10A03  # KHAROSHTHI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <K> <e> <e> <Return> : "𐨅"  U10A05  # KHAROSHTHI VOWEL SIGN E
+<Multi_key> <b> <K> <o> <o> <Return> : "𐨆"  U10A06  # KHAROSHTHI VOWEL SIGN O
+<Multi_key> <b> <K> <0> <Return> : "𐨿"  U10A3F  # KHAROSHTHI VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <K> <minus> <Return> : "𐨌"  U10A0C  # KHAROSHTHI VOWEL LENGTH MARK
+<Multi_key> <b> <K> <underscore> <o> <o> <Return> : "𐨍"  U10A0D  # KHAROSHTHI SIGN DOUBLE RING BELOW
+<Multi_key> <b> <K> <period> <Return> : "𐨎"  U10A0E  # KHAROSHTHI SIGN ANUSVARA
+<Multi_key> <b> <K> <colon> <Return> : "𐨏"  U10A0F  # KHAROSHTHI SIGN VISARGA
+<Multi_key> <b> <K> <asciicircum> <minus> <Return> : "𐨸"  U10A38  # KHAROSHTHI SIGN BAR ABOVE
+<Multi_key> <b> <K> <underscore> <parenright> <Return> : "𐨹"  U10A39  # KHAROSHTHI SIGN CAUDA
+<Multi_key> <b> <K> <underscore> <period> <Return> : "𐨺"  U10A3A  # KHAROSHTHI SIGN DOT BELOW
+<Multi_key> <b> <K> <comma> <Return> : "𐨿"  U10A3F  # KHAROSHTHI VIRAMA
+<Multi_key> <b> <K> <underscore> <plus> <Return> : "𐨿"  U10A3F  # KHAROSHTHI VIRAMA
+
+# Numerals
+
+<Multi_key> <b> <K> <numbersign> <1> : "𐩀"  U10A40  # KHAROSHTHI DIGIT ONE
+<Multi_key> <b> <K> <numbersign> <2> : "𐩁"  U10A41  # KHAROSHTHI DIGIT TWO
+<Multi_key> <b> <K> <numbersign> <3> : "𐩂"  U10A42  # KHAROSHTHI DIGIT THREE
+<Multi_key> <b> <K> <numbersign> <4> : "𐩃"  U10A43  # KHAROSHTHI DIGIT FOUR
+<Multi_key> <b> <K> <1> <0> <space> : "𐩄"  U10A44  # KHAROSHTHI NUMBER TEN
+<Multi_key> <b> <K> <2> <0> : "𐩅"  U10A45  # KHAROSHTHI NUMBER TWENTY
+<Multi_key> <b> <K> <1> <0> <0> <space> : "𐩆"  U10A46  # KHAROSHTHI NUMBER ONE HUNDRED
+<Multi_key> <b> <K> <1> <0> <0> <0> : "𐩇"  U10A47  # KHAROSHTHI NUMBER ONE THOUSAND
+<Multi_key> <b> <K> <1> <slash> <2> : "𐩈"  U10A48  # KHAROSHTHI FRACTION ONE HALF
+
+# Punctuation
+
+<Multi_key> <b> <K> <bar> : "𐩖"  U10A56  # KHAROSHTHI PUNCTUATION DANDA
+<Multi_key> <b> <K> <2> <bar> : "𐩗"  U10A57  # KHAROSHTHI PUNCTUATION DOUBLE DANDA
 
 # (L = Limbu)
 
