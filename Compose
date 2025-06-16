@@ -4274,8 +4274,8 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
-# Gurung Khema, Kannada, Kharoshthi, Limbu, Mahajani, Malayalam, Masaram Gondi, Meitei Mayek, Modi, Newa, Odia, Saurashtra,
-# Sharada, Sinhala, Sylheti Nagri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
+# Gurung Khema, Kaithi, Kannada, Kharoshthi, Limbu, Mahajani, Malayalam, Masaram Gondi, Meitei Mayek, Modi, Newa, Odia, Saurashtra,
+# Sharada, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
 
@@ -7096,6 +7096,91 @@ include "%L"
 <Multi_key> <b> <T> <numbersign> <7>     : "౭"  U0C6D  # TELUGU DIGIT SEVEN
 <Multi_key> <b> <T> <numbersign> <8>     : "౮"  U0C6E  # TELUGU DIGIT EIGHT
 <Multi_key> <b> <T> <numbersign> <9>     : "౯"  U0C6F  # TELUGU DIGIT NINE
+
+# (TK = Takri)
+
+# Consonants
+
+<Multi_key> <b> <T> <K> <k> <space> : "𑚊"  U1168A  # TAKRI LETTER KA
+<Multi_key> <b> <T> <K> <k> <h> : "𑚋"  U1168B  # TAKRI LETTER KHA
+<Multi_key> <b> <T> <K> <g> <space> : "𑚌"  U1168C  # TAKRI LETTER GA
+<Multi_key> <b> <T> <K> <g> <h> : "𑚍"  U1168D  # TAKRI LETTER GHA
+<Multi_key> <b> <T> <K> <semicolon> <n> : "𑚎"  U1168E  # TAKRI LETTER NGA
+<Multi_key> <b> <T> <K> <c> <space> : "𑚏"  U1168F  # TAKRI LETTER CA
+<Multi_key> <b> <T> <K> <c> <h> : "𑚐"  U11690  # TAKRI LETTER CHA
+<Multi_key> <b> <T> <K> <j> <space> : "𑚑"  U11691  # TAKRI LETTER JA
+<Multi_key> <b> <T> <K> <j> <h> : "𑚒"  U11692  # TAKRI LETTER JHA
+<Multi_key> <b> <T> <K> <asciitilde> <n> : "𑚓"  U11693  # TAKRI LETTER NYA
+<Multi_key> <b> <T> <K> <period> <t> <space> : "𑚔"  U11694  # TAKRI LETTER TTA
+<Multi_key> <b> <T> <K> <period> <t> <h> : "𑚕"  U11695  # TAKRI LETTER TTHA
+<Multi_key> <b> <T> <K> <period> <d> <space> : "𑚖"  U11696  # TAKRI LETTER DDA
+<Multi_key> <b> <T> <K> <period> <d> <h> : "𑚗"  U11697  # TAKRI LETTER DDHA
+<Multi_key> <b> <T> <K> <period> <n> : "𑚘"  U11698  # TAKRI LETTER NNA
+<Multi_key> <b> <T> <K> <t> <space> : "𑚙"  U11699  # TAKRI LETTER TA
+<Multi_key> <b> <T> <K> <t> <h> : "𑚚"  U1169A  # TAKRI LETTER THA
+<Multi_key> <b> <T> <K> <d> <space> : "𑚛"  U1169B  # TAKRI LETTER DA
+<Multi_key> <b> <T> <K> <d> <h> : "𑚜"  U1169C  # TAKRI LETTER DHA
+<Multi_key> <b> <T> <K> <n> : "𑚝"  U1169D  # TAKRI LETTER NA
+<Multi_key> <b> <T> <K> <p> <space> : "𑚞"  U1169E  # TAKRI LETTER PA
+<Multi_key> <b> <T> <K> <p> <h> : "𑚟"  U1169F  # TAKRI LETTER PHA
+<Multi_key> <b> <T> <K> <b> <space> : "𑚠"  U116A0  # TAKRI LETTER BA
+<Multi_key> <b> <T> <K> <b> <h> : "𑚡"  U116A1  # TAKRI LETTER BHA
+<Multi_key> <b> <T> <K> <m> : "𑚢"  U116A2  # TAKRI LETTER MA
+<Multi_key> <b> <T> <K> <y> : "𑚣"  U116A3  # TAKRI LETTER YA
+<Multi_key> <b> <T> <K> <r> : "𑚤"  U116A4  # TAKRI LETTER RA
+<Multi_key> <b> <T> <K> <l> : "𑚥"  U116A5  # TAKRI LETTER LA
+<Multi_key> <b> <T> <K> <v> : "𑚦"  U116A6  # TAKRI LETTER VA
+<Multi_key> <b> <T> <K> <semicolon> <s> : "𑚧"  U116A7  # TAKRI LETTER SHA
+<Multi_key> <b> <T> <K> <s> : "𑚨"  U116A8  # TAKRI LETTER SA
+<Multi_key> <b> <T> <K> <h> : "𑚩"  U116A9  # TAKRI LETTER HA
+<Multi_key> <b> <T> <K> <underscore> <r> : "𑚪"  U116AA  # TAKRI LETTER RRA
+
+# Independent vowels
+
+<Multi_key> <b> <T> <K> <a> <space> : "𑚀"  U11680  # TAKRI LETTER A
+<Multi_key> <b> <T> <K> <a> <a> <space> : "𑚁"  U11681  # TAKRI LETTER AA
+<Multi_key> <b> <T> <K> <i> <space> : "𑚂"  U11682  # TAKRI LETTER I
+<Multi_key> <b> <T> <K> <i> <i> <space> : "𑚃"  U11683  # TAKRI LETTER II
+<Multi_key> <b> <T> <K> <u> <space> : "𑚄"  U11684  # TAKRI LETTER U
+<Multi_key> <b> <T> <K> <u> <u> <space> : "𑚅"  U11685  # TAKRI LETTER UU
+<Multi_key> <b> <T> <K> <e> <e> <space> : "𑚆"  U11686  # TAKRI LETTER E
+<Multi_key> <b> <T> <K> <a> <i> <space> : "𑚇"  U11687  # TAKRI LETTER AI
+<Multi_key> <b> <T> <K> <o> <o> <space> : "𑚈"  U11688  # TAKRI LETTER O
+<Multi_key> <b> <T> <K> <a> <u> <space> : "𑚉"  U11689  # TAKRI LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <T> <K> <a> <a> <Return> : "𑚭"  U116AD  # TAKRI VOWEL SIGN AA
+<Multi_key> <b> <T> <K> <i> <Return> : "𑚮"  U116AE  # TAKRI VOWEL SIGN I
+<Multi_key> <b> <T> <K> <i> <i> <Return> : "𑚯"  U116AF  # TAKRI VOWEL SIGN II
+<Multi_key> <b> <T> <K> <u> <Return> : "𑚰"  U116B0  # TAKRI VOWEL SIGN U
+<Multi_key> <b> <T> <K> <u> <u> <Return> : "𑚱"  U116B1  # TAKRI VOWEL SIGN UU
+<Multi_key> <b> <T> <K> <e> <e> <Return> : "𑚲"  U116B2  # TAKRI VOWEL SIGN E
+<Multi_key> <b> <T> <K> <a> <i> <Return> : "𑚳"  U116B3  # TAKRI VOWEL SIGN AI
+<Multi_key> <b> <T> <K> <o> <o> <Return> : "𑚴"  U116B4  # TAKRI VOWEL SIGN O
+<Multi_key> <b> <T> <K> <a> <u> <Return> : "𑚵"  U116B5  # TAKRI VOWEL SIGN AU
+<Multi_key> <b> <T> <K> <0> <Return> : "𑚶"  U116B6  # TAKRI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <T> <K> <comma> <Return> : "𑚶"  U116B6  # TAKRI SIGN VIRAMA
+<Multi_key> <b> <T> <K> <period> <Return> : "𑚫"  U116AB  # TAKRI SIGN ANUSVARA
+<Multi_key> <b> <T> <K> <colon> <Return> : "𑚬"  U116AC  # TAKRI SIGN VISARGA
+<Multi_key> <b> <T> <K> <underscore> <period> <Return> : "𑚷"  U116B7  # TAKRI SIGN NUKTA
+<Multi_key> <b> <T> <K> <o> <period> : "𑚹"  U116B9  # TAKRI ABBREVIATION SIGN
+
+# Numerals
+
+<Multi_key> <b> <T> <K> <numbersign> <0> : "𑛀"  U116C0  # TAKRI DIGIT ZERO
+<Multi_key> <b> <T> <K> <numbersign> <1> : "𑛁"  U116C1  # TAKRI DIGIT ONE
+<Multi_key> <b> <T> <K> <numbersign> <2> : "𑛂"  U116C2  # TAKRI DIGIT TWO
+<Multi_key> <b> <T> <K> <numbersign> <3> : "𑛃"  U116C3  # TAKRI DIGIT THREE
+<Multi_key> <b> <T> <K> <numbersign> <4> : "𑛄"  U116C4  # TAKRI DIGIT FOUR
+<Multi_key> <b> <T> <K> <numbersign> <5> : "𑛅"  U116C5  # TAKRI DIGIT FIVE
+<Multi_key> <b> <T> <K> <numbersign> <6> : "𑛆"  U116C6  # TAKRI DIGIT SIX
+<Multi_key> <b> <T> <K> <numbersign> <7> : "𑛇"  U116C7  # TAKRI DIGIT SEVEN
+<Multi_key> <b> <T> <K> <numbersign> <8> : "𑛈"  U116C8  # TAKRI DIGIT EIGHT
+<Multi_key> <b> <T> <K> <numbersign> <9> : "𑛉"  U116C9  # TAKRI DIGIT NINE
 
 #########################################
 # (B) Braille (Unified English Braille) #
