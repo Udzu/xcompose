@@ -4274,8 +4274,8 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
-# Gurung Khema, Kaithi, Kannada, Kharoshthi, Limbu, Mahajani, Malayalam, Masaram Gondi, Meitei Mayek, Modi, Newa, Odia, Saurashtra,
-# Sharada, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
+# Gurung Khema, Kaithi, Kannada, Kharoshthi, Limbu, Mahajani, Malayalam, Masaram Gondi, Meitei Mayek, Modi, Newa, Odia, Rejang,
+# Saurashtra, Sharada, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
 
@@ -6533,6 +6533,46 @@ include "%L"
 <Multi_key> <b> <O> <numbersign> <7>     : "୭"  U0B6D  # ORIYA DIGIT SEVEN (conflicts)
 <Multi_key> <b> <O> <numbersign> <8>     : "୮"  U0B6E  # ORIYA DIGIT EIGHT (conflicts)
 <Multi_key> <b> <O> <numbersign> <9>     : "୯"  U0B6F  # ORIYA DIGIT NINE (conflicts)
+
+# (R = Rejang)
+
+<Multi_key> <b> <R> <k> <space> : "ꤰ"  UA930  # REJANG LETTER KA
+<Multi_key> <b> <R> <g> <space> : "ꤱ"  UA931  # REJANG LETTER GA
+<Multi_key> <b> <R> <semicolon> <n> <space> : "ꤲ"  UA932  # REJANG LETTER NGA
+<Multi_key> <b> <R> <t> <space> : "ꤳ"  UA933  # REJANG LETTER TA
+<Multi_key> <b> <R> <d> <space> : "ꤴ"  UA934  # REJANG LETTER DA
+<Multi_key> <b> <R> <n> <space> : "ꤵ"  UA935  # REJANG LETTER NA
+<Multi_key> <b> <R> <p> <space> : "ꤶ"  UA936  # REJANG LETTER PA
+<Multi_key> <b> <R> <b> <space> : "ꤷ"  UA937  # REJANG LETTER BA
+<Multi_key> <b> <R> <m> <space> : "ꤸ"  UA938  # REJANG LETTER MA
+<Multi_key> <b> <R> <c> <space> : "ꤹ"  UA939  # REJANG LETTER CA
+<Multi_key> <b> <R> <j> <space> : "ꤺ"  UA93A  # REJANG LETTER JA
+<Multi_key> <b> <R> <asciitilde> <n> <space> : "ꤻ"  UA93B  # REJANG LETTER NYA
+<Multi_key> <b> <R> <s> : "ꤼ"  UA93C  # REJANG LETTER SA
+<Multi_key> <b> <R> <r> <space> : "ꤽ"  UA93D  # REJANG LETTER RA
+<Multi_key> <b> <R> <l> : "ꤾ"  UA93E  # REJANG LETTER LA
+<Multi_key> <b> <R> <y> : "ꤿ"  UA93F  # REJANG LETTER YA
+<Multi_key> <b> <R> <w> : "ꥀ"  UA940  # REJANG LETTER WA
+<Multi_key> <b> <R> <h> <space> : "ꥁ"  UA941  # REJANG LETTER HA
+<Multi_key> <b> <R> <m> <b> : "ꥂ"  UA942  # REJANG LETTER MBA
+<Multi_key> <b> <R> <semicolon> <n> <g> : "ꥃ"  UA943  # REJANG LETTER NGGA
+<Multi_key> <b> <R> <n> <d> : "ꥄ"  UA944  # REJANG LETTER NDA
+<Multi_key> <b> <R> <asciitilde> <n> <j> : "ꥅ"  UA945  # REJANG LETTER NYJA
+<Multi_key> <b> <R> <a> <space> : "ꥆ"  UA946  # REJANG LETTER A
+<Multi_key> <b> <R> <i> <Return> : "ꥇ"  UA947  # REJANG VOWEL SIGN I
+<Multi_key> <b> <R> <u> <Return> : "ꥈ"  UA948  # REJANG VOWEL SIGN U
+<Multi_key> <b> <R> <e> <e> <Return> : "ꥉ"  UA949  # REJANG VOWEL SIGN E
+<Multi_key> <b> <R> <a> <i> <Return> : "ꥊ"  UA94A  # REJANG VOWEL SIGN AI
+<Multi_key> <b> <R> <o> <o> <Return> : "ꥋ"  UA94B  # REJANG VOWEL SIGN O
+<Multi_key> <b> <R> <a> <u> <Return> : "ꥌ"  UA94C  # REJANG VOWEL SIGN AU
+<Multi_key> <b> <R> <e> <u> <Return> : "ꥍ"  UA94D  # REJANG VOWEL SIGN EU
+<Multi_key> <b> <R> <e> <a> <Return> : "ꥎ"  UA94E  # REJANG VOWEL SIGN EA
+<Multi_key> <b> <R> <semicolon> <n> <Return> : "ꥏ"  UA94F  # REJANG CONSONANT SIGN NG
+<Multi_key> <b> <R> <n> <Return> : "ꥐ"  UA950  # REJANG CONSONANT SIGN N
+<Multi_key> <b> <R> <r> <Return> : "ꥑ"  UA951  # REJANG CONSONANT SIGN R
+<Multi_key> <b> <R> <h> <Return> : "ꥒ"  UA952  # REJANG CONSONANT SIGN H
+<Multi_key> <b> <R> <0> <Return> : "꥓"  UA953  # REJANG VIRAMA
+<Multi_key> <b> <R> <Multi_key> <S> <O> : "꥟"  UA95F  # REJANG SECTION MARK
 
 # (s = Sinhala)
 
