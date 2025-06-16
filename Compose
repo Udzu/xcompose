@@ -4273,8 +4273,8 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Grantha, Gujarati, Gurmukhi, Kannada,
-# Limbu, Mahajani, Malayalam, Meitei, Newa, Odia, Saurashtra, Sharada, Sinhala, Sylheti Nagri, Tamil, Telugu.
+# covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Grantha, Gujala Gondi, Gujarati, Gurmukhi
+# Kannada, Limbu, Mahajani, Malayalam, Meitei, Newa, Odia, Saurashtra, Sharada, Sinhala, Sylheti Nagri, Tamil, Telugu.
 # see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -5221,6 +5221,87 @@ include "%L"
 # Punctuation
 
 <Multi_key> <b> <G> <o> <period>         : "੶"  U0A76  # GURMUKHI ABBREVIATION SIGN (conflicts)
+
+# (GG = Gujala Gondi)
+
+# Consonants
+
+<Multi_key> <b> <G> <G> <y> : "𑵬"  U11D6C  # GUNJALA GONDI LETTER YA (conflicts)
+<Multi_key> <b> <G> <G> <v> : "𑵭"  U11D6D  # GUNJALA GONDI LETTER VA (conflicts)
+<Multi_key> <b> <G> <G> <b> <space> : "𑵮"  U11D6E  # GUNJALA GONDI LETTER BA (conflicts)
+<Multi_key> <b> <G> <G> <b> <h> : "𑵯"  U11D6F  # GUNJALA GONDI LETTER BHA (conflicts)
+<Multi_key> <b> <G> <G> <m> : "𑵰"  U11D70  # GUNJALA GONDI LETTER MA (conflicts)
+<Multi_key> <b> <G> <G> <k> <space> : "𑵱"  U11D71  # GUNJALA GONDI LETTER KA (conflicts)
+<Multi_key> <b> <G> <G> <k> <h> : "𑵲"  U11D72  # GUNJALA GONDI LETTER KHA (conflicts)
+<Multi_key> <b> <G> <G> <t> <space> : "𑵳"  U11D73  # GUNJALA GONDI LETTER TA (conflicts)
+<Multi_key> <b> <G> <G> <t> <h> : "𑵴"  U11D74  # GUNJALA GONDI LETTER THA (conflicts)
+<Multi_key> <b> <G> <G> <l> : "𑵵"  U11D75  # GUNJALA GONDI LETTER LA (conflicts)
+<Multi_key> <b> <G> <G> <g> <space> : "𑵶"  U11D76  # GUNJALA GONDI LETTER GA (conflicts)
+<Multi_key> <b> <G> <G> <g> <h> : "𑵷"  U11D77  # GUNJALA GONDI LETTER GHA (conflicts)
+<Multi_key> <b> <G> <G> <d> <space> : "𑵸"  U11D78  # GUNJALA GONDI LETTER DA (conflicts)
+<Multi_key> <b> <G> <G> <d> <h> : "𑵹"  U11D79  # GUNJALA GONDI LETTER DHA (conflicts)
+<Multi_key> <b> <G> <G> <n> : "𑵺"  U11D7A  # GUNJALA GONDI LETTER NA (conflicts)
+<Multi_key> <b> <G> <G> <c> <space> : "𑵻"  U11D7B  # GUNJALA GONDI LETTER CA (conflicts)
+<Multi_key> <b> <G> <G> <c> <h> : "𑵼"  U11D7C  # GUNJALA GONDI LETTER CHA (conflicts)
+<Multi_key> <b> <G> <G> <period> <t> <space> : "𑵽"  U11D7D  # GUNJALA GONDI LETTER TTA (conflicts)
+<Multi_key> <b> <G> <G> <period> <t> <h> : "𑵾"  U11D7E  # GUNJALA GONDI LETTER TTHA (conflicts)
+<Multi_key> <b> <G> <G> <period> <l> : "𑵿"  U11D7F  # GUNJALA GONDI LETTER LLA (conflicts)
+<Multi_key> <b> <G> <G> <j> <space> : "𑶀"  U11D80  # GUNJALA GONDI LETTER JA (conflicts)
+<Multi_key> <b> <G> <G> <j> <h> : "𑶁"  U11D81  # GUNJALA GONDI LETTER JHA (conflicts)
+<Multi_key> <b> <G> <G> <period> <d> <space> : "𑶂"  U11D82  # GUNJALA GONDI LETTER DDA (conflicts)
+<Multi_key> <b> <G> <G> <period> <d> <h> : "𑶃"  U11D83  # GUNJALA GONDI LETTER DDHA (conflicts)
+<Multi_key> <b> <G> <G> <semicolon> <n> : "𑶄"  U11D84  # GUNJALA GONDI LETTER NGA (conflicts)
+<Multi_key> <b> <G> <G> <p> <space> : "𑶅"  U11D85  # GUNJALA GONDI LETTER PA (conflicts)
+<Multi_key> <b> <G> <G> <p> <h> : "𑶆"  U11D86  # GUNJALA GONDI LETTER PHA (conflicts)
+<Multi_key> <b> <G> <G> <h> : "𑶇"  U11D87  # GUNJALA GONDI LETTER HA (conflicts)
+<Multi_key> <b> <G> <G> <r> : "𑶈"  U11D88  # GUNJALA GONDI LETTER RA (conflicts)
+<Multi_key> <b> <G> <G> <s> : "𑶉"  U11D89  # GUNJALA GONDI LETTER SA (conflicts)
+
+# Independent vowels
+
+<Multi_key> <b> <G> <G> <a> <space> : "𑵠"  U11D60  # GUNJALA GONDI LETTER A (conflicts)
+<Multi_key> <b> <G> <G> <a> <a> <space> : "𑵡"  U11D61  # GUNJALA GONDI LETTER AA (conflicts)
+<Multi_key> <b> <G> <G> <i> <space> : "𑵢"  U11D62  # GUNJALA GONDI LETTER I (conflicts)
+<Multi_key> <b> <G> <G> <i> <i> <space> : "𑵣"  U11D63  # GUNJALA GONDI LETTER II (conflicts)
+<Multi_key> <b> <G> <G> <u> <space> : "𑵤"  U11D64  # GUNJALA GONDI LETTER U (conflicts)
+<Multi_key> <b> <G> <G> <u> <u> <space> : "𑵥"  U11D65  # GUNJALA GONDI LETTER UU (conflicts)
+<Multi_key> <b> <G> <G> <e> <e> <space> : "𑵧"  U11D67  # GUNJALA GONDI LETTER EE (conflicts)
+<Multi_key> <b> <G> <G> <a> <i> <space> : "𑵨"  U11D68  # GUNJALA GONDI LETTER AI (conflicts)
+<Multi_key> <b> <G> <G> <o> <o> <space> : "𑵪"  U11D6A  # GUNJALA GONDI LETTER OO (conflicts)
+<Multi_key> <b> <G> <G> <a> <u> <space> : "𑵫"  U11D6B  # GUNJALA GONDI LETTER AU (conflicts)
+
+# Dependent vowels
+
+<Multi_key> <b> <G> <G> <a> <a> <Return> : "𑶊"  U11D8A  # GUNJALA GONDI VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <G> <G> <i> <Return> : "𑶋"  U11D8B  # GUNJALA GONDI VOWEL SIGN I (conflicts)
+<Multi_key> <b> <G> <G> <i> <i> <Return> : "𑶌"  U11D8C  # GUNJALA GONDI VOWEL SIGN II (conflicts)
+<Multi_key> <b> <G> <G> <u> <Return> : "𑶍"  U11D8D  # GUNJALA GONDI VOWEL SIGN U (conflicts)
+<Multi_key> <b> <G> <G> <u> <u> <Return> : "𑶎"  U11D8E  # GUNJALA GONDI VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <G> <G> <e> <e> <Return> : "𑶐"  U11D90  # GUNJALA GONDI VOWEL SIGN EE (conflicts)
+<Multi_key> <b> <G> <G> <a> <i> <Return> : "𑶑"  U11D91  # GUNJALA GONDI VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <G> <G> <o> <o> <Return> : "𑶓"  U11D93  # GUNJALA GONDI VOWEL SIGN OO (conflicts)
+<Multi_key> <b> <G> <G> <a> <u> <Return> : "𑶔"  U11D94  # GUNJALA GONDI VOWEL SIGN AU (conflicts)
+<Multi_key> <b> <G> <G> <0> <Return> : "𑶗"  U11D97  # GUNJALA GONDI VIRAMA (conflicts)
+
+# Other signs
+
+<Multi_key> <b> <G> <G> <period> <Return> : "𑶕"  U11D95  # GUNJALA GONDI SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <G> <G> <colon> <Return> : "𑶖"  U11D96  # GUNJALA GONDI SIGN VISARGA (conflicts)
+<Multi_key> <b> <G> <G> <comma> <Return> : "𑶗"  U11D97  # GUNJALA GONDI VIRAMA (conflicts)
+<Multi_key> <b> <G> <G> <o> <m> : "𑶘"  U11D98  # GUNJALA GONDI OM (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <G> <G> <numbersign> <0> : "𑶠"  U11DA0  # GUNJALA GONDI DIGIT ZERO (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <1> : "𑶡"  U11DA1  # GUNJALA GONDI DIGIT ONE (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <2> : "𑶢"  U11DA2  # GUNJALA GONDI DIGIT TWO (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <3> : "𑶣"  U11DA3  # GUNJALA GONDI DIGIT THREE (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <4> : "𑶤"  U11DA4  # GUNJALA GONDI DIGIT FOUR (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <5> : "𑶥"  U11DA5  # GUNJALA GONDI DIGIT FIVE (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <6> : "𑶦"  U11DA6  # GUNJALA GONDI DIGIT SIX (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <7> : "𑶧"  U11DA7  # GUNJALA GONDI DIGIT SEVEN (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <8> : "𑶨"  U11DA8  # GUNJALA GONDI DIGIT EIGHT (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <9> : "𑶩"  U11DA9  # GUNJALA GONDI DIGIT NINE (conflicts)
 
 # (GT = Grantha)
 
