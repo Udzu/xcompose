@@ -4274,7 +4274,7 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Grantha, Gujarati, Gurmukhi, Kannada,
-# Limbu, Mahajani, Malayalam, Meitei, Odia, Saurashtra, Sharada, Sinhala, Sylheti Nagri, Tamil, Telugu.
+# Limbu, Mahajani, Malayalam, Meitei, Newa, Odia, Saurashtra, Sharada, Sinhala, Sylheti Nagri, Tamil, Telugu.
 # see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -5758,6 +5758,114 @@ include "%L"
 <Multi_key> <b> <M> <J> <asciicircum> <period> : "𑅴"  U11174  # MAHAJANI ABBREVIATION SIGN
 <Multi_key> <b> <M> <J> <Multi_key> <S> <O>  : "𑅵"  U11175  # MAHAJANI SECTION MARK
 <Multi_key> <b> <M> <J> <S> <H> <R> <I>      : "𑅶"  U11176  # MAHAJANI LIGATURE SHRI
+
+# (n = Newa/Pracalit)
+
+<Multi_key> <b> <n> <k> <space> : "𑐎"  U1140E  # NEWA LETTER KA
+<Multi_key> <b> <n> <k> <h> : "𑐏"  U1140F  # NEWA LETTER KHA
+<Multi_key> <b> <n> <g> <space> : "𑐐"  U11410  # NEWA LETTER GA
+<Multi_key> <b> <n> <g> <h> : "𑐑"  U11411  # NEWA LETTER GHA
+<Multi_key> <b> <n> <semicolon> <n> : "𑐒"  U11412  # NEWA LETTER NGA
+<Multi_key> <b> <n> <n> <g> <h> : "𑐓"  U11413  # NEWA LETTER NGHA
+<Multi_key> <b> <n> <c> <space> : "𑐔"  U11414  # NEWA LETTER CA
+<Multi_key> <b> <n> <c> <h> : "𑐕"  U11415  # NEWA LETTER CHA
+<Multi_key> <b> <n> <j> <space> : "𑐖"  U11416  # NEWA LETTER JA
+<Multi_key> <b> <n> <j> <h> : "𑐗"  U11417  # NEWA LETTER JHA
+<Multi_key> <b> <n> <asciitilde> <n> : "𑐘"  U11418  # NEWA LETTER NYA
+<Multi_key> <b> <n> <n> <y> <h> : "𑐙"  U11419  # NEWA LETTER NYHA
+<Multi_key> <b> <n> <period> <t> <space> : "𑐚"  U1141A  # NEWA LETTER TTA
+<Multi_key> <b> <n> <period> <t> <h> : "𑐛"  U1141B  # NEWA LETTER TTHA
+<Multi_key> <b> <n> <period> <d> <space> : "𑐜"  U1141C  # NEWA LETTER DDA
+<Multi_key> <b> <n> <period> <d> <h> : "𑐝"  U1141D  # NEWA LETTER DDHA
+<Multi_key> <b> <n> <period> <n> : "𑐞"  U1141E  # NEWA LETTER NNA
+<Multi_key> <b> <n> <t> <space> : "𑐟"  U1141F  # NEWA LETTER TA
+<Multi_key> <b> <n> <t> <h> : "𑐠"  U11420  # NEWA LETTER THA
+<Multi_key> <b> <n> <d> <space> : "𑐡"  U11421  # NEWA LETTER DA
+<Multi_key> <b> <n> <d> <h> : "𑐢"  U11422  # NEWA LETTER DHA
+<Multi_key> <b> <n> <n> <space> : "𑐣"  U11423  # NEWA LETTER NA
+<Multi_key> <b> <n> <n> <h> : "𑐤"  U11424  # NEWA LETTER NHA
+<Multi_key> <b> <n> <p> <space> : "𑐥"  U11425  # NEWA LETTER PA
+<Multi_key> <b> <n> <p> <h> : "𑐦"  U11426  # NEWA LETTER PHA
+<Multi_key> <b> <n> <b> <space> : "𑐧"  U11427  # NEWA LETTER BA
+<Multi_key> <b> <n> <b> <h> : "𑐨"  U11428  # NEWA LETTER BHA
+<Multi_key> <b> <n> <m> <space> : "𑐩"  U11429  # NEWA LETTER MA
+<Multi_key> <b> <n> <m> <h> : "𑐪"  U1142A  # NEWA LETTER MHA
+<Multi_key> <b> <n> <y> : "𑐫"  U1142B  # NEWA LETTER YA
+<Multi_key> <b> <n> <r> : "𑐬"  U1142C  # NEWA LETTER RA
+<Multi_key> <b> <n> <period> <r> <h> : "𑐭"  U1142D  # NEWA LETTER RHA
+<Multi_key> <b> <n> <l> <space> : "𑐮"  U1142E  # NEWA LETTER LA
+<Multi_key> <b> <n> <l> <h> : "𑐯"  U1142F  # NEWA LETTER LHA
+<Multi_key> <b> <n> <w> : "𑐰"  U11430  # NEWA LETTER WA
+<Multi_key> <b> <n> <semicolon> <s> : "𑐱"  U11431  # NEWA LETTER SHA
+<Multi_key> <b> <n> <period> <s> : "𑐲"  U11432  # NEWA LETTER SSA
+<Multi_key> <b> <n> <s> : "𑐳"  U11433  # NEWA LETTER SA
+<Multi_key> <b> <n> <h> : "𑐴"  U11434  # NEWA LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <n> <a> <space> : "𑐀"  U11400  # NEWA LETTER A
+<Multi_key> <b> <n> <a> <a> <space> : "𑐁"  U11401  # NEWA LETTER AA
+<Multi_key> <b> <n> <i> <space> : "𑐂"  U11402  # NEWA LETTER I
+<Multi_key> <b> <n> <i> <i> <space> : "𑐃"  U11403  # NEWA LETTER II
+<Multi_key> <b> <n> <u> <space> : "𑐄"  U11404  # NEWA LETTER U
+<Multi_key> <b> <n> <u> <u> <space> : "𑐅"  U11405  # NEWA LETTER UU
+<Multi_key> <b> <n> <comma> <r> <space> : "𑐆"  U11406  # NEWA LETTER VOCALIC R
+<Multi_key> <b> <n> <comma> <r> <r> <space> : "𑐇"  U11407  # NEWA LETTER VOCALIC RR
+<Multi_key> <b> <n> <comma> <l> <space> : "𑐈"  U11408  # NEWA LETTER VOCALIC L
+<Multi_key> <b> <n> <comma> <l> <l> <space> : "𑐉"  U11409  # NEWA LETTER VOCALIC LL
+<Multi_key> <b> <n> <e> <e> <space> : "𑐊"  U1140A  # NEWA LETTER E
+<Multi_key> <b> <n> <a> <i> <space> : "𑐋"  U1140B  # NEWA LETTER AI
+<Multi_key> <b> <n> <o> <o> <space> : "𑐌"  U1140C  # NEWA LETTER O
+<Multi_key> <b> <n> <a> <u> <space> : "𑐍"  U1140D  # NEWA LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <n> <a> <a> <Return> : "𑐵"  U11435  # NEWA VOWEL SIGN AA
+<Multi_key> <b> <n> <i> <Return> : "𑐶"  U11436  # NEWA VOWEL SIGN I
+<Multi_key> <b> <n> <i> <i> <Return> : "𑐷"  U11437  # NEWA VOWEL SIGN II
+<Multi_key> <b> <n> <u> <Return> : "𑐸"  U11438  # NEWA VOWEL SIGN U
+<Multi_key> <b> <n> <u> <u> <Return> : "𑐹"  U11439  # NEWA VOWEL SIGN UU
+<Multi_key> <b> <n> <comma> <r> <Return> : "𑐺"  U1143A  # NEWA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <n> <comma> <r> <r> <Return> : "𑐻"  U1143B  # NEWA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <n> <comma> <l> <Return> : "𑐼"  U1143C  # NEWA VOWEL SIGN VOCALIC L
+<Multi_key> <b> <n> <comma> <l> <l> <Return> : "𑐽"  U1143D  # NEWA VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <n> <e> <e> <Return> : "𑐾"  U1143E  # NEWA VOWEL SIGN E
+<Multi_key> <b> <n> <a> <i> <Return> : "𑐿"  U1143F  # NEWA VOWEL SIGN AI
+<Multi_key> <b> <n> <o> <o> <Return> : "𑑀"  U11440  # NEWA VOWEL SIGN O
+<Multi_key> <b> <n> <a> <u> <Return> : "𑑁"  U11441  # NEWA VOWEL SIGN AU
+<Multi_key> <b> <n> <0> <Return> : "𑑂"  U11442  # NEWA SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <n> <comma> <Return> : "𑑂"  U11442  # NEWA SIGN VIRAMA
+<Multi_key> <b> <n> <period> <parenright> <Return> : "𑑃"  U11443  # NEWA SIGN CANDRABINDU
+<Multi_key> <b> <n> <period> <Return> : "𑑄"  U11444  # NEWA SIGN ANUSVARA
+<Multi_key> <b> <n> <colon> <Return> : "𑑅"  U11445  # NEWA SIGN VISARGA
+<Multi_key> <b> <n> <underscore> <period> <Return> : "𑑆"  U11446  # NEWA SIGN NUKTA
+<Multi_key> <b> <n> <S> : "𑑇"  U11447  # NEWA SIGN AVAGRAHA
+<Multi_key> <b> <n> <greater> <S> : "𑑈"  U11448  # NEWA SIGN FINAL ANUSVARA
+<Multi_key> <b> <n> <o> <m> : "𑑉"  U11449  # NEWA OM
+
+# Numerals
+
+<Multi_key> <b> <n> <numbersign> <0> : "𑑐"  U11450  # NEWA DIGIT ZERO
+<Multi_key> <b> <n> <numbersign> <1> : "𑑑"  U11451  # NEWA DIGIT ONE
+<Multi_key> <b> <n> <numbersign> <2> : "𑑒"  U11452  # NEWA DIGIT TWO
+<Multi_key> <b> <n> <numbersign> <3> : "𑑓"  U11453  # NEWA DIGIT THREE
+<Multi_key> <b> <n> <numbersign> <4> : "𑑔"  U11454  # NEWA DIGIT FOUR
+<Multi_key> <b> <n> <numbersign> <5> : "𑑕"  U11455  # NEWA DIGIT FIVE
+<Multi_key> <b> <n> <numbersign> <6> : "𑑖"  U11456  # NEWA DIGIT SIX
+<Multi_key> <b> <n> <numbersign> <7> : "𑑗"  U11457  # NEWA DIGIT SEVEN
+<Multi_key> <b> <n> <numbersign> <8> : "𑑘"  U11458  # NEWA DIGIT EIGHT
+<Multi_key> <b> <n> <numbersign> <9> : "𑑙"  U11459  # NEWA DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <n> <bar> : "𑑋"  U1144B  # NEWA DANDA
+<Multi_key> <b> <n> <2> <bar> : "𑑌"  U1144C  # NEWA DOUBLE DANDA
+<Multi_key> <b> <n> <comma> <space> : "𑑍"  U1144D  # NEWA COMMA
+<Multi_key> <b> <n> <o> <period> : "𑑏"  U1144F  # NEWA ABBREVIATION SIGN
+<Multi_key> <b> <n> <comma> <comma> : "𑑚"  U1145A  # NEWA DOUBLE COMMA
 
 # (O = Odia)
 
