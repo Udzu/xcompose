@@ -4274,8 +4274,8 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
-# Gurung Khema, Kannada, Kharoshthi, Limbu, Mahajani, Malayalam, Masaram Gondi, Meitei, Newa, Odia, Saurashtra, Sharada, Sinhala,
-# Sylheti Nagri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
+# Gurung Khema, Kannada, Kharoshthi, Limbu, Mahajani, Malayalam, Masaram Gondi, Meitei Mayek, Modi, Newa, Odia, Saurashtra,
+# Sharada, Sinhala, Sylheti Nagri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
 
@@ -5931,78 +5931,102 @@ include "%L"
 <Multi_key> <b> <m> <1> <0> <0> <space> : "൱"  U0D71  # MALAYALAM NUMBER ONE HUNDRED
 <Multi_key> <b> <m> <1> <0> <0> <0>      : "൲"  U0D72  # MALAYALAM NUMBER ONE THOUSAND
 
-# (M = Meitei)
+# (M = Modi)
 
-# Independent letters
+# Consonants
 
-<Multi_key> <b> <M> <k> <space>          : "ꯀ"  UABC0  # MEETEI MAYEK LETTER KOK
-<Multi_key> <b> <M> <s>                  : "ꯁ"  UABC1  # MEETEI MAYEK LETTER SAM
-<Multi_key> <b> <M> <l>                  : "ꯂ"  UABC2  # MEETEI MAYEK LETTER LAI
-<Multi_key> <b> <M> <m>                  : "ꯃ"  UABC3  # MEETEI MAYEK LETTER MIT
-<Multi_key> <b> <M> <p> <space>          : "ꯄ"  UABC4  # MEETEI MAYEK LETTER PA
-<Multi_key> <b> <M> <n>                  : "ꯅ"  UABC5  # MEETEI MAYEK LETTER NA
-<Multi_key> <b> <M> <c>                  : "ꯆ"  UABC6  # MEETEI MAYEK LETTER CHIL
-<Multi_key> <b> <M> <t> <space>          : "ꯇ"  UABC7  # MEETEI MAYEK LETTER TIL
-<Multi_key> <b> <M> <k> <h>              : "ꯈ"  UABC8  # MEETEI MAYEK LETTER KHOU
-<Multi_key> <b> <M> <semicolon> <n>      : "ꯉ"  UABC9  # MEETEI MAYEK LETTER NGOU
-<Multi_key> <b> <M> <t> <h>              : "ꯊ"  UABCA  # MEETEI MAYEK LETTER THOU
-<Multi_key> <b> <M> <w>                  : "ꯋ"  UABCB  # MEETEI MAYEK LETTER WAI
-<Multi_key> <b> <M> <y>                  : "ꯌ"  UABCC  # MEETEI MAYEK LETTER YANG
-<Multi_key> <b> <M> <h>                  : "ꯍ"  UABCD  # MEETEI MAYEK LETTER HUK
-<Multi_key> <b> <M> <u> <space>          : "ꯎ"  UABCE  # MEETEI MAYEK LETTER UN
-<Multi_key> <b> <M> <i> <space>          : "ꯏ"  UABCF  # MEETEI MAYEK LETTER I
-<Multi_key> <b> <M> <p> <h>              : "ꯐ"  UABD0  # MEETEI MAYEK LETTER PHAM
-<Multi_key> <b> <M> <a> <space>          : "ꯑ"  UABD1  # MEETEI MAYEK LETTER ATIYA
-<Multi_key> <b> <M> <g> <space>          : "ꯒ"  UABD2  # MEETEI MAYEK LETTER GOK
-<Multi_key> <b> <M> <j> <h>              : "ꯓ"  UABD3  # MEETEI MAYEK LETTER JHAM
-<Multi_key> <b> <M> <r>                  : "ꯔ"  UABD4  # MEETEI MAYEK LETTER RAI
-<Multi_key> <b> <M> <b> <space>          : "ꯕ"  UABD5  # MEETEI MAYEK LETTER BA
-<Multi_key> <b> <M> <j> <space>          : "ꯖ"  UABD6  # MEETEI MAYEK LETTER JIL
-<Multi_key> <b> <M> <d> <space>          : "ꯗ"  UABD7  # MEETEI MAYEK LETTER DIL
-<Multi_key> <b> <M> <g> <h>              : "ꯘ"  UABD8  # MEETEI MAYEK LETTER GHOU
-<Multi_key> <b> <M> <d> <h>              : "ꯙ"  UABD9  # MEETEI MAYEK LETTER DHOU
-<Multi_key> <b> <M> <b> <h>              : "ꯚ"  UABDA  # MEETEI MAYEK LETTER BHAM
+<Multi_key> <b> <M> <k> <space> : "𑘎"  U1160E  # MODI LETTER KA
+<Multi_key> <b> <M> <k> <h> : "𑘏"  U1160F  # MODI LETTER KHA
+<Multi_key> <b> <M> <g> <space> : "𑘐"  U11610  # MODI LETTER GA
+<Multi_key> <b> <M> <g> <h> : "𑘑"  U11611  # MODI LETTER GHA
+<Multi_key> <b> <M> <semicolon> <n> : "𑘒"  U11612  # MODI LETTER NGA
+<Multi_key> <b> <M> <c> <space> : "𑘓"  U11613  # MODI LETTER CA
+<Multi_key> <b> <M> <c> <h> : "𑘔"  U11614  # MODI LETTER CHA
+<Multi_key> <b> <M> <j> <space> : "𑘕"  U11615  # MODI LETTER JA
+<Multi_key> <b> <M> <j> <h> : "𑘖"  U11616  # MODI LETTER JHA
+<Multi_key> <b> <M> <asciitilde> <n> : "𑘗"  U11617  # MODI LETTER NYA
+<Multi_key> <b> <M> <period> <t> <space> : "𑘘"  U11618  # MODI LETTER TTA
+<Multi_key> <b> <M> <period> <t> <h> : "𑘙"  U11619  # MODI LETTER TTHA
+<Multi_key> <b> <M> <period> <d> <space> : "𑘚"  U1161A  # MODI LETTER DDA
+<Multi_key> <b> <M> <period> <d> <h> : "𑘛"  U1161B  # MODI LETTER DDHA
+<Multi_key> <b> <M> <period> <n> : "𑘜"  U1161C  # MODI LETTER NNA
+<Multi_key> <b> <M> <t> <space> : "𑘝"  U1161D  # MODI LETTER TA
+<Multi_key> <b> <M> <t> <h> : "𑘞"  U1161E  # MODI LETTER THA
+<Multi_key> <b> <M> <d> <space> : "𑘟"  U1161F  # MODI LETTER DA
+<Multi_key> <b> <M> <d> <h> : "𑘠"  U11620  # MODI LETTER DHA
+<Multi_key> <b> <M> <n> : "𑘡"  U11621  # MODI LETTER NA
+<Multi_key> <b> <M> <p> <space> : "𑘢"  U11622  # MODI LETTER PA
+<Multi_key> <b> <M> <p> <h> : "𑘣"  U11623  # MODI LETTER PHA
+<Multi_key> <b> <M> <b> <space> : "𑘤"  U11624  # MODI LETTER BA
+<Multi_key> <b> <M> <b> <h> : "𑘥"  U11625  # MODI LETTER BHA
+<Multi_key> <b> <M> <m> : "𑘦"  U11626  # MODI LETTER MA
+<Multi_key> <b> <M> <y> : "𑘧"  U11627  # MODI LETTER YA
+<Multi_key> <b> <M> <r> : "𑘨"  U11628  # MODI LETTER RA
+<Multi_key> <b> <M> <l> : "𑘩"  U11629  # MODI LETTER LA
+<Multi_key> <b> <M> <v> : "𑘪"  U1162A  # MODI LETTER VA
+<Multi_key> <b> <M> <semicolon> <s> : "𑘫"  U1162B  # MODI LETTER SHA
+<Multi_key> <b> <M> <period> <s> : "𑘬"  U1162C  # MODI LETTER SSA
+<Multi_key> <b> <M> <s> : "𑘭"  U1162D  # MODI LETTER SA
+<Multi_key> <b> <M> <h> : "𑘮"  U1162E  # MODI LETTER HA
+<Multi_key> <b> <M> <period> <l> : "𑘯"  U1162F  # MODI LETTER LLA
 
-# Final letters
+# Independent vowels
 
-<Multi_key> <b> <M> <greater> <k>        : "ꯛ"  UABDB  # MEETEI MAYEK LETTER KOK LONSUM
-<Multi_key> <b> <M> <greater> <l>        : "ꯜ"  UABDC  # MEETEI MAYEK LETTER LAI LONSUM
-<Multi_key> <b> <M> <greater> <m>        : "ꯝ"  UABDD  # MEETEI MAYEK LETTER MIT LONSUM
-<Multi_key> <b> <M> <greater> <p>        : "ꯞ"  UABDE  # MEETEI MAYEK LETTER PA LONSUM
-<Multi_key> <b> <M> <greater> <n>        : "ꯟ"  UABDF  # MEETEI MAYEK LETTER NA LONSUM
-<Multi_key> <b> <M> <greater> <t>        : "ꯠ"  UABE0  # MEETEI MAYEK LETTER TIL LONSUM
-<Multi_key> <b> <M> <greater> <semicolon> <n> : "ꯡ"  UABE1  # MEETEI MAYEK LETTER NGOU LONSUM
-<Multi_key> <b> <M> <greater> <i>        : "ꯢ"  UABE2  # MEETEI MAYEK LETTER I LONSUM
+<Multi_key> <b> <M> <a> <space> : "𑘀"  U11600  # MODI LETTER A
+<Multi_key> <b> <M> <a> <a> <space> : "𑘁"  U11601  # MODI LETTER AA
+<Multi_key> <b> <M> <i> <space> : "𑘂"  U11602  # MODI LETTER I
+<Multi_key> <b> <M> <i> <i> <space> : "𑘃"  U11603  # MODI LETTER II
+<Multi_key> <b> <M> <u> <space> : "𑘄"  U11604  # MODI LETTER U
+<Multi_key> <b> <M> <u> <u> <space> : "𑘅"  U11605  # MODI LETTER UU
+<Multi_key> <b> <M> <comma> <r> <space> : "𑘆"  U11606  # MODI LETTER VOCALIC R
+<Multi_key> <b> <M> <comma> <r> <r> <space> : "𑘇"  U11607  # MODI LETTER VOCALIC RR
+<Multi_key> <b> <M> <comma> <l> <space> : "𑘈"  U11608  # MODI LETTER VOCALIC L
+<Multi_key> <b> <M> <comma> <l> <l> <space> : "𑘉"  U11609  # MODI LETTER VOCALIC LL
+<Multi_key> <b> <M> <e> <e> <space> : "𑘊"  U1160A  # MODI LETTER E
+<Multi_key> <b> <M> <a> <i> <space> : "𑘋"  U1160B  # MODI LETTER AI
+<Multi_key> <b> <M> <o> <o> <space> : "𑘌"  U1160C  # MODI LETTER O
+<Multi_key> <b> <M> <a> <u> <space> : "𑘍"  U1160D  # MODI LETTER AU
 
 # Dependent vowels
 
-<Multi_key> <b> <M> <o> <o> <Return>     : "ꯣ"  UABE3  # MEETEI MAYEK VOWEL SIGN ONAP
-<Multi_key> <b> <M> <i> <Return>         : "ꯤ"  UABE4  # MEETEI MAYEK VOWEL SIGN INAP
-<Multi_key> <b> <M> <a> <a> <Return>     : "ꯥ"  UABE5  # MEETEI MAYEK VOWEL SIGN ANAP
-<Multi_key> <b> <M> <e> <e> <Return>     : "ꯦ"  UABE6  # MEETEI MAYEK VOWEL SIGN YENAP
-<Multi_key> <b> <M> <o> <u> <Return>     : "ꯧ"  UABE7  # MEETEI MAYEK VOWEL SIGN SOUNAP
-<Multi_key> <b> <M> <u> <Return>         : "ꯨ"  UABE8  # MEETEI MAYEK VOWEL SIGN UNAP
-<Multi_key> <b> <M> <e> <i> <Return>     : "ꯩ"  UABE9  # MEETEI MAYEK VOWEL SIGN CHEINAP
-<Multi_key> <b> <M> <comma> <Return>     : "ꯪ"  UABEA  # MEETEI MAYEK VOWEL SIGN NUNG
+<Multi_key> <b> <M> <a> <a> <Return> : "𑘰"  U11630  # MODI VOWEL SIGN AA
+<Multi_key> <b> <M> <i> <Return> : "𑘱"  U11631  # MODI VOWEL SIGN I
+<Multi_key> <b> <M> <i> <i> <Return> : "𑘲"  U11632  # MODI VOWEL SIGN II
+<Multi_key> <b> <M> <u> <Return> : "𑘳"  U11633  # MODI VOWEL SIGN U
+<Multi_key> <b> <M> <u> <u> <Return> : "𑘴"  U11634  # MODI VOWEL SIGN UU
+<Multi_key> <b> <M> <comma> <r> <Return> : "𑘵"  U11635  # MODI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <M> <comma> <r> <r> <Return> : "𑘶"  U11636  # MODI VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <M> <comma> <l> <Return> : "𑘷"  U11637  # MODI VOWEL SIGN VOCALIC L
+<Multi_key> <b> <M> <comma> <l> <l> <Return> : "𑘸"  U11638  # MODI VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <M> <e> <e> <Return> : "𑘹"  U11639  # MODI VOWEL SIGN E
+<Multi_key> <b> <M> <a> <i> <Return> : "𑘺"  U1163A  # MODI VOWEL SIGN AI
+<Multi_key> <b> <M> <o> <o> <Return> : "𑘻"  U1163B  # MODI VOWEL SIGN O
+<Multi_key> <b> <M> <a> <u> <Return> : "𑘼"  U1163C  # MODI VOWEL SIGN AU
+<Multi_key> <b> <M> <0> <Return> : "𑘿"  U1163F  # MODI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <M> <period> <Return> : "𑘽"  U1163D  # MODI SIGN ANUSVARA
+<Multi_key> <b> <M> <colon> <Return> : "𑘾"  U1163E  # MODI SIGN VISARGA
+<Multi_key> <b> <M> <comma> <Return> : "𑘿"  U1163F  # MODI SIGN VIRAMA
+<Multi_key> <b> <M> <parenright> <Return> : "𑙀"  U11640  # MODI SIGN ARDHACANDRA
+<Multi_key> <b> <M> <bar> : "𑙁"  U11641  # MODI DANDA
+<Multi_key> <b> <M> <2> <bar> : "𑙂"  U11642  # MODI DOUBLE DANDA
+<Multi_key> <b> <M> <o> <period> : "𑙃"  U11643  # MODI ABBREVIATION SIGN
+<Multi_key> <b> <M> <exclam> <J> : "𑙄"  U11644  # MODI SIGN HUVA
 
 # Numerals
 
-<Multi_key> <b> <M> <numbersign> <0>     : "꯰"  UABF0  # MEETEI MAYEK DIGIT ZERO
-<Multi_key> <b> <M> <numbersign> <1>     : "꯱"  UABF1  # MEETEI MAYEK DIGIT ONE
-<Multi_key> <b> <M> <numbersign> <2>     : "꯲"  UABF2  # MEETEI MAYEK DIGIT TWO
-<Multi_key> <b> <M> <numbersign> <3>     : "꯳"  UABF3  # MEETEI MAYEK DIGIT THREE
-<Multi_key> <b> <M> <numbersign> <4>     : "꯴"  UABF4  # MEETEI MAYEK DIGIT FOUR
-<Multi_key> <b> <M> <numbersign> <5>     : "꯵"  UABF5  # MEETEI MAYEK DIGIT FIVE
-<Multi_key> <b> <M> <numbersign> <6>     : "꯶"  UABF6  # MEETEI MAYEK DIGIT SIX
-<Multi_key> <b> <M> <numbersign> <7>     : "꯷"  UABF7  # MEETEI MAYEK DIGIT SEVEN
-<Multi_key> <b> <M> <numbersign> <8>     : "꯸"  UABF8  # MEETEI MAYEK DIGIT EIGHT
-<Multi_key> <b> <M> <numbersign> <9>     : "꯹"  UABF9  # MEETEI MAYEK DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <b> <M> <2> <bar>            : "꯫"  UABEB  # MEETEI MAYEK CHEIKHEI
-<Multi_key> <b> <M> <period> <Return>    : "꯬"  UABEC  # MEETEI MAYEK LUM IYEK
-<Multi_key> <b> <M> <underscore> <Return> : "꯭"  UABED  # MEETEI MAYEK APUN IYEK
+<Multi_key> <b> <M> <numbersign> <0> : "𑙐"  U11650  # MODI DIGIT ZERO
+<Multi_key> <b> <M> <numbersign> <1> : "𑙑"  U11651  # MODI DIGIT ONE
+<Multi_key> <b> <M> <numbersign> <2> : "𑙒"  U11652  # MODI DIGIT TWO
+<Multi_key> <b> <M> <numbersign> <3> : "𑙓"  U11653  # MODI DIGIT THREE
+<Multi_key> <b> <M> <numbersign> <4> : "𑙔"  U11654  # MODI DIGIT FOUR
+<Multi_key> <b> <M> <numbersign> <5> : "𑙕"  U11655  # MODI DIGIT FIVE
+<Multi_key> <b> <M> <numbersign> <6> : "𑙖"  U11656  # MODI DIGIT SIX
+<Multi_key> <b> <M> <numbersign> <7> : "𑙗"  U11657  # MODI DIGIT SEVEN
+<Multi_key> <b> <M> <numbersign> <8> : "𑙘"  U11658  # MODI DIGIT EIGHT
+<Multi_key> <b> <M> <numbersign> <9> : "𑙙"  U11659  # MODI DIGIT NINE
 
 # (MG = Masaram Gondi)
 
@@ -6144,6 +6168,79 @@ include "%L"
 <Multi_key> <b> <M> <J> <asciicircum> <period> : "𑅴"  U11174  # MAHAJANI ABBREVIATION SIGN
 <Multi_key> <b> <M> <J> <Multi_key> <S> <O>  : "𑅵"  U11175  # MAHAJANI SECTION MARK
 <Multi_key> <b> <M> <J> <S> <H> <R> <I>      : "𑅶"  U11176  # MAHAJANI LIGATURE SHRI
+
+# (M = Meitei Mayek)
+
+# Independent letters
+
+<Multi_key> <b> <M> <M> <k> <space>          : "ꯀ"  UABC0  # MEETEI MAYEK LETTER KOK
+<Multi_key> <b> <M> <M> <s>                  : "ꯁ"  UABC1  # MEETEI MAYEK LETTER SAM
+<Multi_key> <b> <M> <M> <l>                  : "ꯂ"  UABC2  # MEETEI MAYEK LETTER LAI
+<Multi_key> <b> <M> <M> <m>                  : "ꯃ"  UABC3  # MEETEI MAYEK LETTER MIT
+<Multi_key> <b> <M> <M> <p> <space>          : "ꯄ"  UABC4  # MEETEI MAYEK LETTER PA
+<Multi_key> <b> <M> <M> <n>                  : "ꯅ"  UABC5  # MEETEI MAYEK LETTER NA
+<Multi_key> <b> <M> <M> <c>                  : "ꯆ"  UABC6  # MEETEI MAYEK LETTER CHIL
+<Multi_key> <b> <M> <M> <t> <space>          : "ꯇ"  UABC7  # MEETEI MAYEK LETTER TIL
+<Multi_key> <b> <M> <M> <k> <h>              : "ꯈ"  UABC8  # MEETEI MAYEK LETTER KHOU
+<Multi_key> <b> <M> <M> <semicolon> <n>      : "ꯉ"  UABC9  # MEETEI MAYEK LETTER NGOU
+<Multi_key> <b> <M> <M> <t> <h>              : "ꯊ"  UABCA  # MEETEI MAYEK LETTER THOU
+<Multi_key> <b> <M> <M> <w>                  : "ꯋ"  UABCB  # MEETEI MAYEK LETTER WAI
+<Multi_key> <b> <M> <M> <y>                  : "ꯌ"  UABCC  # MEETEI MAYEK LETTER YANG
+<Multi_key> <b> <M> <M> <h>                  : "ꯍ"  UABCD  # MEETEI MAYEK LETTER HUK
+<Multi_key> <b> <M> <M> <u> <space>          : "ꯎ"  UABCE  # MEETEI MAYEK LETTER UN
+<Multi_key> <b> <M> <M> <i> <space>          : "ꯏ"  UABCF  # MEETEI MAYEK LETTER I
+<Multi_key> <b> <M> <M> <p> <h>              : "ꯐ"  UABD0  # MEETEI MAYEK LETTER PHAM
+<Multi_key> <b> <M> <M> <a> <space>          : "ꯑ"  UABD1  # MEETEI MAYEK LETTER ATIYA
+<Multi_key> <b> <M> <M> <g> <space>          : "ꯒ"  UABD2  # MEETEI MAYEK LETTER GOK
+<Multi_key> <b> <M> <M> <j> <h>              : "ꯓ"  UABD3  # MEETEI MAYEK LETTER JHAM
+<Multi_key> <b> <M> <M> <r>                  : "ꯔ"  UABD4  # MEETEI MAYEK LETTER RAI
+<Multi_key> <b> <M> <M> <b> <space>          : "ꯕ"  UABD5  # MEETEI MAYEK LETTER BA
+<Multi_key> <b> <M> <M> <j> <space>          : "ꯖ"  UABD6  # MEETEI MAYEK LETTER JIL
+<Multi_key> <b> <M> <M> <d> <space>          : "ꯗ"  UABD7  # MEETEI MAYEK LETTER DIL
+<Multi_key> <b> <M> <M> <g> <h>              : "ꯘ"  UABD8  # MEETEI MAYEK LETTER GHOU
+<Multi_key> <b> <M> <M> <d> <h>              : "ꯙ"  UABD9  # MEETEI MAYEK LETTER DHOU
+<Multi_key> <b> <M> <M> <b> <h>              : "ꯚ"  UABDA  # MEETEI MAYEK LETTER BHAM
+
+# Final letters
+
+<Multi_key> <b> <M> <M> <greater> <k>        : "ꯛ"  UABDB  # MEETEI MAYEK LETTER KOK LONSUM
+<Multi_key> <b> <M> <M> <greater> <l>        : "ꯜ"  UABDC  # MEETEI MAYEK LETTER LAI LONSUM
+<Multi_key> <b> <M> <M> <greater> <m>        : "ꯝ"  UABDD  # MEETEI MAYEK LETTER MIT LONSUM
+<Multi_key> <b> <M> <M> <greater> <p>        : "ꯞ"  UABDE  # MEETEI MAYEK LETTER PA LONSUM
+<Multi_key> <b> <M> <M> <greater> <n>        : "ꯟ"  UABDF  # MEETEI MAYEK LETTER NA LONSUM
+<Multi_key> <b> <M> <M> <greater> <t>        : "ꯠ"  UABE0  # MEETEI MAYEK LETTER TIL LONSUM
+<Multi_key> <b> <M> <M> <greater> <semicolon> <n> : "ꯡ"  UABE1  # MEETEI MAYEK LETTER NGOU LONSUM
+<Multi_key> <b> <M> <M> <greater> <i>        : "ꯢ"  UABE2  # MEETEI MAYEK LETTER I LONSUM
+
+# Dependent vowels
+
+<Multi_key> <b> <M> <M> <o> <o> <Return>     : "ꯣ"  UABE3  # MEETEI MAYEK VOWEL SIGN ONAP
+<Multi_key> <b> <M> <M> <i> <Return>         : "ꯤ"  UABE4  # MEETEI MAYEK VOWEL SIGN INAP
+<Multi_key> <b> <M> <M> <a> <a> <Return>     : "ꯥ"  UABE5  # MEETEI MAYEK VOWEL SIGN ANAP
+<Multi_key> <b> <M> <M> <e> <e> <Return>     : "ꯦ"  UABE6  # MEETEI MAYEK VOWEL SIGN YENAP
+<Multi_key> <b> <M> <M> <o> <u> <Return>     : "ꯧ"  UABE7  # MEETEI MAYEK VOWEL SIGN SOUNAP
+<Multi_key> <b> <M> <M> <u> <Return>         : "ꯨ"  UABE8  # MEETEI MAYEK VOWEL SIGN UNAP
+<Multi_key> <b> <M> <M> <e> <i> <Return>     : "ꯩ"  UABE9  # MEETEI MAYEK VOWEL SIGN CHEINAP
+<Multi_key> <b> <M> <M> <comma> <Return>     : "ꯪ"  UABEA  # MEETEI MAYEK VOWEL SIGN NUNG
+
+# Numerals
+
+<Multi_key> <b> <M> <M> <numbersign> <0>     : "꯰"  UABF0  # MEETEI MAYEK DIGIT ZERO
+<Multi_key> <b> <M> <M> <numbersign> <1>     : "꯱"  UABF1  # MEETEI MAYEK DIGIT ONE
+<Multi_key> <b> <M> <M> <numbersign> <2>     : "꯲"  UABF2  # MEETEI MAYEK DIGIT TWO
+<Multi_key> <b> <M> <M> <numbersign> <3>     : "꯳"  UABF3  # MEETEI MAYEK DIGIT THREE
+<Multi_key> <b> <M> <M> <numbersign> <4>     : "꯴"  UABF4  # MEETEI MAYEK DIGIT FOUR
+<Multi_key> <b> <M> <M> <numbersign> <5>     : "꯵"  UABF5  # MEETEI MAYEK DIGIT FIVE
+<Multi_key> <b> <M> <M> <numbersign> <6>     : "꯶"  UABF6  # MEETEI MAYEK DIGIT SIX
+<Multi_key> <b> <M> <M> <numbersign> <7>     : "꯷"  UABF7  # MEETEI MAYEK DIGIT SEVEN
+<Multi_key> <b> <M> <M> <numbersign> <8>     : "꯸"  UABF8  # MEETEI MAYEK DIGIT EIGHT
+<Multi_key> <b> <M> <M> <numbersign> <9>     : "꯹"  UABF9  # MEETEI MAYEK DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <M> <M> <2> <bar>            : "꯫"  UABEB  # MEETEI MAYEK CHEIKHEI
+<Multi_key> <b> <M> <M> <period> <Return>    : "꯬"  UABEC  # MEETEI MAYEK LUM IYEK
+<Multi_key> <b> <M> <M> <underscore> <Return> : "꯭"  UABED  # MEETEI MAYEK APUN IYEK
 
 # (n = Newa/Pracalit)
 
