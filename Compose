@@ -4274,8 +4274,8 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
-# Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Kirat Rai, Limbu, Mahajani, Malayalam, Marchen, Masaram Gondi, Meitei Mayek, Modi,
-# Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu, Tirhuta, Tulu-Tigalari.
+# Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Khudawadi, Kirat Rai, Limbu, Mahajani, Malayalam, Marchen, Masaram Gondi, Meitei Mayek,
+# Modi, Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu, Tirhuta, Tulu-Tigalari.
 # Also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -4465,6 +4465,10 @@ include "%L"
 <Multi_key> <b> <d> <period> <r> <h>     : "ढ़" U095D   # DEVANAGARI LETTER RHA
 <Multi_key> <b> <d> <f>                  : "फ़" U095E   # DEVANAGARI LETTER FA
 <Multi_key> <b> <d> <semicolon> <y>      : "य़" U095F   # DEVANAGARI LETTER YYA
+<Multi_key> <b> <d> <g> <g>              : "ॻ"  U097B  # DEVANAGARI LETTER GGA
+<Multi_key> <b> <d> <j> <j>              : "ॼ"  U097C  # DEVANAGARI LETTER JJA
+<Multi_key> <b> <d> <period> <d> <period> <d> : "ॾ"  U097E  # DEVANAGARI LETTER DDDA
+<Multi_key> <b> <d> <b> <b>              : "ॿ"  U097F  # DEVANAGARI LETTER BBA
 
 # Independent vowels
 
@@ -5648,6 +5652,93 @@ include "%L"
 <Multi_key> <b> <k> <numbersign> <7>     : "೭"  U0CED  # KANNADA DIGIT SEVEN
 <Multi_key> <b> <k> <numbersign> <8>     : "೮"  U0CEE  # KANNADA DIGIT EIGHT
 <Multi_key> <b> <k> <numbersign> <9>     : "೯"  U0CEF  # KANNADA DIGIT NINE
+
+# (KD = Khudawadi)
+
+# Consonants
+
+<Multi_key> <b> <K> <D> <k> <space> : "𑊺"  U112BA  # KHUDAWADI LETTER KA
+<Multi_key> <b> <K> <D> <k> <h> : "𑊻"  U112BB  # KHUDAWADI LETTER KHA
+<Multi_key> <b> <K> <D> <g> <space> : "𑊼"  U112BC  # KHUDAWADI LETTER GA
+<Multi_key> <b> <K> <D> <g> <g> : "𑊽"  U112BD  # KHUDAWADI LETTER GGA
+<Multi_key> <b> <K> <D> <g> <h> : "𑊾"  U112BE  # KHUDAWADI LETTER GHA
+<Multi_key> <b> <K> <D> <semicolon> <n> : "𑊿"  U112BF  # KHUDAWADI LETTER NGA
+<Multi_key> <b> <K> <D> <c> <space> : "𑋀"  U112C0  # KHUDAWADI LETTER CA
+<Multi_key> <b> <K> <D> <c> <h> : "𑋁"  U112C1  # KHUDAWADI LETTER CHA
+<Multi_key> <b> <K> <D> <j> <space> : "𑋂"  U112C2  # KHUDAWADI LETTER JA
+<Multi_key> <b> <K> <D> <j> <j> : "𑋃"  U112C3  # KHUDAWADI LETTER JJA
+<Multi_key> <b> <K> <D> <j> <h> : "𑋄"  U112C4  # KHUDAWADI LETTER JHA
+<Multi_key> <b> <K> <D> <asciitilde> <n> : "𑋅"  U112C5  # KHUDAWADI LETTER NYA
+<Multi_key> <b> <K> <D> <period> <t> <space> : "𑋆"  U112C6  # KHUDAWADI LETTER TTA
+<Multi_key> <b> <K> <D> <period> <t> <h> : "𑋇"  U112C7  # KHUDAWADI LETTER TTHA
+<Multi_key> <b> <K> <D> <period> <d> <space> : "𑋈"  U112C8  # KHUDAWADI LETTER DDA
+<Multi_key> <b> <K> <D> <exclam> <d> <exclam> <d> : "𑋉"  U112C9  # KHUDAWADI LETTER DDDA
+<Multi_key> <b> <K> <D> <underscore> <r> : "𑋊"  U112CA  # KHUDAWADI LETTER RRA
+<Multi_key> <b> <K> <D> <period> <d> <h> : "𑋋"  U112CB  # KHUDAWADI LETTER DDHA
+<Multi_key> <b> <K> <D> <period> <n> : "𑋌"  U112CC  # KHUDAWADI LETTER NNA
+<Multi_key> <b> <K> <D> <t> <space> : "𑋍"  U112CD  # KHUDAWADI LETTER TA
+<Multi_key> <b> <K> <D> <t> <h> : "𑋎"  U112CE  # KHUDAWADI LETTER THA
+<Multi_key> <b> <K> <D> <d> <space> : "𑋏"  U112CF  # KHUDAWADI LETTER DA
+<Multi_key> <b> <K> <D> <d> <h> : "𑋐"  U112D0  # KHUDAWADI LETTER DHA
+<Multi_key> <b> <K> <D> <n> : "𑋑"  U112D1  # KHUDAWADI LETTER NA
+<Multi_key> <b> <K> <D> <p> <space> : "𑋒"  U112D2  # KHUDAWADI LETTER PA
+<Multi_key> <b> <K> <D> <p> <h> : "𑋓"  U112D3  # KHUDAWADI LETTER PHA
+<Multi_key> <b> <K> <D> <b> <space> : "𑋔"  U112D4  # KHUDAWADI LETTER BA
+<Multi_key> <b> <K> <D> <b> <b> : "𑋕"  U112D5  # KHUDAWADI LETTER BBA
+<Multi_key> <b> <K> <D> <b> <h> : "𑋖"  U112D6  # KHUDAWADI LETTER BHA
+<Multi_key> <b> <K> <D> <m> : "𑋗"  U112D7  # KHUDAWADI LETTER MA
+<Multi_key> <b> <K> <D> <y> : "𑋘"  U112D8  # KHUDAWADI LETTER YA
+<Multi_key> <b> <K> <D> <r> : "𑋙"  U112D9  # KHUDAWADI LETTER RA
+<Multi_key> <b> <K> <D> <l> : "𑋚"  U112DA  # KHUDAWADI LETTER LA
+<Multi_key> <b> <K> <D> <v> : "𑋛"  U112DB  # KHUDAWADI LETTER VA
+<Multi_key> <b> <K> <D> <semicolon> <s> : "𑋜"  U112DC  # KHUDAWADI LETTER SHA
+<Multi_key> <b> <K> <D> <s> : "𑋝"  U112DD  # KHUDAWADI LETTER SA
+<Multi_key> <b> <K> <D> <h> : "𑋞"  U112DE  # KHUDAWADI LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <K> <D> <a> <space> : "𑊰"  U112B0  # KHUDAWADI LETTER A
+<Multi_key> <b> <K> <D> <a> <a> <space> : "𑊱"  U112B1  # KHUDAWADI LETTER AA
+<Multi_key> <b> <K> <D> <i> <space> : "𑊲"  U112B2  # KHUDAWADI LETTER I
+<Multi_key> <b> <K> <D> <i> <i> <space> : "𑊳"  U112B3  # KHUDAWADI LETTER II
+<Multi_key> <b> <K> <D> <u> <space> : "𑊴"  U112B4  # KHUDAWADI LETTER U
+<Multi_key> <b> <K> <D> <u> <u> <space> : "𑊵"  U112B5  # KHUDAWADI LETTER UU
+<Multi_key> <b> <K> <D> <e> <e> <space> : "𑊶"  U112B6  # KHUDAWADI LETTER E
+<Multi_key> <b> <K> <D> <a> <i> <space> : "𑊷"  U112B7  # KHUDAWADI LETTER AI
+<Multi_key> <b> <K> <D> <o> <o> <space> : "𑊸"  U112B8  # KHUDAWADI LETTER O
+<Multi_key> <b> <K> <D> <a> <u> <space> : "𑊹"  U112B9  # KHUDAWADI LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <K> <D> <a> <a> <Return> : "𑋠"  U112E0  # KHUDAWADI VOWEL SIGN AA
+<Multi_key> <b> <K> <D> <i> <Return> : "𑋡"  U112E1  # KHUDAWADI VOWEL SIGN I
+<Multi_key> <b> <K> <D> <i> <i> <Return> : "𑋢"  U112E2  # KHUDAWADI VOWEL SIGN II
+<Multi_key> <b> <K> <D> <u> <Return> : "𑋣"  U112E3  # KHUDAWADI VOWEL SIGN U
+<Multi_key> <b> <K> <D> <u> <u> <Return> : "𑋤"  U112E4  # KHUDAWADI VOWEL SIGN UU
+<Multi_key> <b> <K> <D> <e> <e> <Return> : "𑋥"  U112E5  # KHUDAWADI VOWEL SIGN E
+<Multi_key> <b> <K> <D> <a> <i> <Return> : "𑋦"  U112E6  # KHUDAWADI VOWEL SIGN AI
+<Multi_key> <b> <K> <D> <o> <o> <Return> : "𑋧"  U112E7  # KHUDAWADI VOWEL SIGN O
+<Multi_key> <b> <K> <D> <a> <u> <Return> : "𑋨"  U112E8  # KHUDAWADI VOWEL SIGN AU
+<Multi_key> <b> <K> <D> <0> <Return> : "𑋪"  U112EA  # KHUDAWADI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <K> <D> <period> <Return> : "𑋟"  U112DF  # KHUDAWADI SIGN ANUSVARA
+<Multi_key> <b> <K> <D> <underscore> <period> <Return> : "𑋩"  U112E9  # KHUDAWADI SIGN NUKTA
+<Multi_key> <b> <K> <D> <comma> <Return> : "𑋪"  U112EA  # KHUDAWADI SIGN VIRAMA
+
+# Numerals
+
+<Multi_key> <b> <K> <D> <numbersign> <0> : "𑋰"  U112F0  # KHUDAWADI DIGIT ZERO
+<Multi_key> <b> <K> <D> <numbersign> <1> : "𑋱"  U112F1  # KHUDAWADI DIGIT ONE
+<Multi_key> <b> <K> <D> <numbersign> <2> : "𑋲"  U112F2  # KHUDAWADI DIGIT TWO
+<Multi_key> <b> <K> <D> <numbersign> <3> : "𑋳"  U112F3  # KHUDAWADI DIGIT THREE
+<Multi_key> <b> <K> <D> <numbersign> <4> : "𑋴"  U112F4  # KHUDAWADI DIGIT FOUR
+<Multi_key> <b> <K> <D> <numbersign> <5> : "𑋵"  U112F5  # KHUDAWADI DIGIT FIVE
+<Multi_key> <b> <K> <D> <numbersign> <6> : "𑋶"  U112F6  # KHUDAWADI DIGIT SIX
+<Multi_key> <b> <K> <D> <numbersign> <7> : "𑋷"  U112F7  # KHUDAWADI DIGIT SEVEN
+<Multi_key> <b> <K> <D> <numbersign> <8> : "𑋸"  U112F8  # KHUDAWADI DIGIT EIGHT
+<Multi_key> <b> <K> <D> <numbersign> <9> : "𑋹"  U112F9  # KHUDAWADI DIGIT NINE
 
 # (KH = Kharoshthi)
 
