@@ -4274,8 +4274,8 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
-# Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Kirat Rai, Limbu, Mahajani, Malayalam, Masaram Gondi, Meitei Mayek, Modi,
-# Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu.
+# Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Kirat Rai, Limbu, Mahajani, Malayalam, Marchen, Masaram Gondi, Meitei Mayek,
+# Modi, Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu.
 # Also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -6493,6 +6493,86 @@ include "%L"
 <Multi_key> <b> <M> <M> <2> <bar>            : "꯫"  UABEB  # MEETEI MAYEK CHEIKHEI
 <Multi_key> <b> <M> <M> <period> <Return>    : "꯬"  UABEC  # MEETEI MAYEK LUM IYEK
 <Multi_key> <b> <M> <M> <underscore> <Return> : "꯭"  UABED  # MEETEI MAYEK APUN IYEK
+
+# (MR = Marchen)
+
+# Consonants
+
+<Multi_key> <b> <M> <R> <k> <space> : "𑱲"  U11C72  # MARCHEN LETTER KA
+<Multi_key> <b> <M> <R> <k> <h> <space> : "𑱳"  U11C73  # MARCHEN LETTER KHA
+<Multi_key> <b> <M> <R> <g> <space> : "𑱴"  U11C74  # MARCHEN LETTER GA
+<Multi_key> <b> <M> <R> <semicolon> <n> <space> : "𑱵"  U11C75  # MARCHEN LETTER NGA
+<Multi_key> <b> <M> <R> <c> <space> : "𑱶"  U11C76  # MARCHEN LETTER CA
+<Multi_key> <b> <M> <R> <c> <h> <space> : "𑱷"  U11C77  # MARCHEN LETTER CHA
+<Multi_key> <b> <M> <R> <j> <space> : "𑱸"  U11C78  # MARCHEN LETTER JA
+<Multi_key> <b> <M> <R> <asciitilde> <n> <space> : "𑱹"  U11C79  # MARCHEN LETTER NYA
+<Multi_key> <b> <M> <R> <t> <space> : "𑱺"  U11C7A  # MARCHEN LETTER TA
+<Multi_key> <b> <M> <R> <t> <h> <space> : "𑱻"  U11C7B  # MARCHEN LETTER THA
+<Multi_key> <b> <M> <R> <d> <space> : "𑱼"  U11C7C  # MARCHEN LETTER DA
+<Multi_key> <b> <M> <R> <n> <space> : "𑱽"  U11C7D  # MARCHEN LETTER NA
+<Multi_key> <b> <M> <R> <p> <space> : "𑱾"  U11C7E  # MARCHEN LETTER PA
+<Multi_key> <b> <M> <R> <p> <h> <space> : "𑱿"  U11C7F  # MARCHEN LETTER PHA
+<Multi_key> <b> <M> <R> <b> <space> : "𑲀"  U11C80  # MARCHEN LETTER BA
+<Multi_key> <b> <M> <R> <m> <space> : "𑲁"  U11C81  # MARCHEN LETTER MA
+<Multi_key> <b> <M> <R> <asciicircum> <c> <space> : "𑲂"  U11C82  # MARCHEN LETTER TSA
+<Multi_key> <b> <M> <R> <t> <s> <h> <space> : "𑲃"  U11C83  # MARCHEN LETTER TSHA
+<Multi_key> <b> <M> <R> <d> <z> <space> : "𑲄"  U11C84  # MARCHEN LETTER DZA
+<Multi_key> <b> <M> <R> <w> <space> : "𑲅"  U11C85  # MARCHEN LETTER WA
+<Multi_key> <b> <M> <R> <z> <h> <space> : "𑲆"  U11C86  # MARCHEN LETTER ZHA
+<Multi_key> <b> <M> <R> <z> <space> : "𑲇"  U11C87  # MARCHEN LETTER ZA
+<Multi_key> <b> <M> <R> <y> <space> : "𑲉"  U11C89  # MARCHEN LETTER YA
+<Multi_key> <b> <M> <R> <r> <space> : "𑲊"  U11C8A  # MARCHEN LETTER RA
+<Multi_key> <b> <M> <R> <l> <space> : "𑲋"  U11C8B  # MARCHEN LETTER LA
+<Multi_key> <b> <M> <R> <semicolon> <s> <space> : "𑲌"  U11C8C  # MARCHEN LETTER SHA
+<Multi_key> <b> <M> <R> <s> <space> : "𑲍"  U11C8D  # MARCHEN LETTER SA
+<Multi_key> <b> <M> <R> <h> <space> : "𑲎"  U11C8E  # MARCHEN LETTER HA
+<Multi_key> <b> <M> <R> <a> <space> : "𑲏"  U11C8F  # MARCHEN LETTER A
+<Multi_key> <b> <M> <R> <a> <a> <space> : "𑲈"  U11C88  # MARCHEN LETTER -A
+
+# Subjoined consonants
+
+<Multi_key> <b> <M> <R> <k> <Return> : "𑲒"  U11C92  # MARCHEN SUBJOINED LETTER KA
+<Multi_key> <b> <M> <R> <k> <h> <Return> : "𑲓"  U11C93  # MARCHEN SUBJOINED LETTER KHA
+<Multi_key> <b> <M> <R> <g> <Return> : "𑲔"  U11C94  # MARCHEN SUBJOINED LETTER GA
+<Multi_key> <b> <M> <R> <semicolon> <n> <Return> : "𑲕"  U11C95  # MARCHEN SUBJOINED LETTER NGA
+<Multi_key> <b> <M> <R> <c> <Return> : "𑲖"  U11C96  # MARCHEN SUBJOINED LETTER CA
+<Multi_key> <b> <M> <R> <c> <h> <Return> : "𑲗"  U11C97  # MARCHEN SUBJOINED LETTER CHA
+<Multi_key> <b> <M> <R> <j> <Return> : "𑲘"  U11C98  # MARCHEN SUBJOINED LETTER JA
+<Multi_key> <b> <M> <R> <asciitilde> <n> <Return> : "𑲙"  U11C99  # MARCHEN SUBJOINED LETTER NYA
+<Multi_key> <b> <M> <R> <t> <Return> : "𑲚"  U11C9A  # MARCHEN SUBJOINED LETTER TA
+<Multi_key> <b> <M> <R> <t> <h> <Return> : "𑲛"  U11C9B  # MARCHEN SUBJOINED LETTER THA
+<Multi_key> <b> <M> <R> <d> <Return> : "𑲜"  U11C9C  # MARCHEN SUBJOINED LETTER DA
+<Multi_key> <b> <M> <R> <n> <Return> : "𑲝"  U11C9D  # MARCHEN SUBJOINED LETTER NA
+<Multi_key> <b> <M> <R> <p> <Return> : "𑲞"  U11C9E  # MARCHEN SUBJOINED LETTER PA
+<Multi_key> <b> <M> <R> <p> <h> <Return> : "𑲟"  U11C9F  # MARCHEN SUBJOINED LETTER PHA
+<Multi_key> <b> <M> <R> <b> <Return> : "𑲠"  U11CA0  # MARCHEN SUBJOINED LETTER BA
+<Multi_key> <b> <M> <R> <m> <Return> : "𑲡"  U11CA1  # MARCHEN SUBJOINED LETTER MA
+<Multi_key> <b> <M> <R> <asciicircum> <c> <Return> : "𑲢"  U11CA2  # MARCHEN SUBJOINED LETTER TSA
+<Multi_key> <b> <M> <R> <t> <s> <h> <Return> : "𑲣"  U11CA3  # MARCHEN SUBJOINED LETTER TSHA
+<Multi_key> <b> <M> <R> <d> <z> <Return> : "𑲤"  U11CA4  # MARCHEN SUBJOINED LETTER DZA
+<Multi_key> <b> <M> <R> <w> <Return> : "𑲥"  U11CA5  # MARCHEN SUBJOINED LETTER WA
+<Multi_key> <b> <M> <R> <z> <h> <Return> : "𑲦"  U11CA6  # MARCHEN SUBJOINED LETTER ZHA
+<Multi_key> <b> <M> <R> <z> <Return> : "𑲧"  U11CA7  # MARCHEN SUBJOINED LETTER ZA
+<Multi_key> <b> <M> <R> <y> <Return> : "𑲩"  U11CA9  # MARCHEN SUBJOINED LETTER YA
+<Multi_key> <b> <M> <R> <r> <Return> : "𑲪"  U11CAA  # MARCHEN SUBJOINED LETTER RA
+<Multi_key> <b> <M> <R> <l> <Return> : "𑲫"  U11CAB  # MARCHEN SUBJOINED LETTER LA
+<Multi_key> <b> <M> <R> <semicolon> <s> <Return> : "𑲬"  U11CAC  # MARCHEN SUBJOINED LETTER SHA
+<Multi_key> <b> <M> <R> <s> <Return> : "𑲭"  U11CAD  # MARCHEN SUBJOINED LETTER SA
+<Multi_key> <b> <M> <R> <h> <Return> : "𑲮"  U11CAE  # MARCHEN SUBJOINED LETTER HA
+<Multi_key> <b> <M> <R> <a> <Return> : "𑲯"  U11CAF  # MARCHEN SUBJOINED LETTER A
+
+# Dependent vowel signs
+
+<Multi_key> <b> <M> <R> <a> <a> <Return> : "𑲰"  U11CB0  # MARCHEN VOWEL SIGN AA
+<Multi_key> <b> <M> <R> <i> <Return> : "𑲱"  U11CB1  # MARCHEN VOWEL SIGN I
+<Multi_key> <b> <M> <R> <u> <Return> : "𑲲"  U11CB2  # MARCHEN VOWEL SIGN U
+<Multi_key> <b> <M> <R> <e> <e> <Return> : "𑲳"  U11CB3  # MARCHEN VOWEL SIGN E
+<Multi_key> <b> <M> <R> <o> <o> <Return> : "𑲴"  U11CB4  # MARCHEN VOWEL SIGN O
+
+# Other signs
+
+<Multi_key> <b> <M> <R> <period> <Return> : "𑲵"  U11CB5  # MARCHEN SIGN ANUSVARA
+<Multi_key> <b> <M> <R> <period> <parenright> <Return> : "𑲶"  U11CB6  # MARCHEN SIGN CANDRABINDU
 
 # (n = Newa/Pracalit)
 
