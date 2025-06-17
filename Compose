@@ -4274,8 +4274,8 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
-# Gurung Khema, Kaithi, Kannada, Kharoshthi, Limbu, Mahajani, Malayalam, Masaram Gondi, Meitei Mayek, Modi, Newa, Odia, Rejang,
-# Saurashtra, Sharada, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
+# Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Limbu, Mahajani, Malayalam, Masaram Gondi, Meitei Mayek, Modi, Newa, Odia,
+# Rejang, Saurashtra, Sharada, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu; also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
 
@@ -5725,6 +5725,79 @@ include "%L"
 
 <Multi_key> <b> <K> <H> <bar> : "𐩖"  U10A56  # KHAROSHTHI PUNCTUATION DANDA
 <Multi_key> <b> <K> <H> <2> <bar> : "𐩗"  U10A57  # KHAROSHTHI PUNCTUATION DOUBLE DANDA
+
+# (KR = Kirat Rai)
+
+# Consonants
+
+<Multi_key> <b> <K> <R> <a> <space> : "𖵃"  U16D43  # KIRAT RAI LETTER A
+<Multi_key> <b> <K> <R> <k> <space> : "𖵄"  U16D44  # KIRAT RAI LETTER KA
+<Multi_key> <b> <K> <R> <k> <h> : "𖵅"  U16D45  # KIRAT RAI LETTER KHA
+<Multi_key> <b> <K> <R> <g> <space> : "𖵆"  U16D46  # KIRAT RAI LETTER GA
+<Multi_key> <b> <K> <R> <g> <h> : "𖵇"  U16D47  # KIRAT RAI LETTER GHA
+<Multi_key> <b> <K> <R> <semicolon> <n> : "𖵈"  U16D48  # KIRAT RAI LETTER NGA
+<Multi_key> <b> <K> <R> <c> <space> : "𖵉"  U16D49  # KIRAT RAI LETTER CA
+<Multi_key> <b> <K> <R> <c> <h> : "𖵊"  U16D4A  # KIRAT RAI LETTER CHA
+<Multi_key> <b> <K> <R> <j> <space> : "𖵋"  U16D4B  # KIRAT RAI LETTER JA
+<Multi_key> <b> <K> <R> <j> <h> : "𖵌"  U16D4C  # KIRAT RAI LETTER JHA
+<Multi_key> <b> <K> <R> <asciitilde> <n> : "𖵍"  U16D4D  # KIRAT RAI LETTER NYA
+<Multi_key> <b> <K> <R> <period> <t> <space> : "𖵎"  U16D4E  # KIRAT RAI LETTER TTA
+<Multi_key> <b> <K> <R> <period> <t> <h> : "𖵏"  U16D4F  # KIRAT RAI LETTER TTHA
+<Multi_key> <b> <K> <R> <period> <d> <space> : "𖵐"  U16D50  # KIRAT RAI LETTER DDA
+<Multi_key> <b> <K> <R> <period> <d> <h> : "𖵑"  U16D51  # KIRAT RAI LETTER DDHA
+<Multi_key> <b> <K> <R> <t> <space> : "𖵒"  U16D52  # KIRAT RAI LETTER TA
+<Multi_key> <b> <K> <R> <t> <h> : "𖵓"  U16D53  # KIRAT RAI LETTER THA
+<Multi_key> <b> <K> <R> <d> <space> : "𖵔"  U16D54  # KIRAT RAI LETTER DA
+<Multi_key> <b> <K> <R> <d> <h> : "𖵕"  U16D55  # KIRAT RAI LETTER DHA
+<Multi_key> <b> <K> <R> <n> : "𖵖"  U16D56  # KIRAT RAI LETTER NA
+<Multi_key> <b> <K> <R> <p> <space> : "𖵗"  U16D57  # KIRAT RAI LETTER PA
+<Multi_key> <b> <K> <R> <p> <h> : "𖵘"  U16D58  # KIRAT RAI LETTER PHA
+<Multi_key> <b> <K> <R> <b> <space> : "𖵙"  U16D59  # KIRAT RAI LETTER BA
+<Multi_key> <b> <K> <R> <b> <h> : "𖵚"  U16D5A  # KIRAT RAI LETTER BHA
+<Multi_key> <b> <K> <R> <m> : "𖵛"  U16D5B  # KIRAT RAI LETTER MA
+<Multi_key> <b> <K> <R> <y> : "𖵜"  U16D5C  # KIRAT RAI LETTER YA
+<Multi_key> <b> <K> <R> <r> : "𖵝"  U16D5D  # KIRAT RAI LETTER RA
+<Multi_key> <b> <K> <R> <l> : "𖵞"  U16D5E  # KIRAT RAI LETTER LA
+<Multi_key> <b> <K> <R> <v> : "𖵟"  U16D5F  # KIRAT RAI LETTER VA
+<Multi_key> <b> <K> <R> <s> : "𖵠"  U16D60  # KIRAT RAI LETTER SA
+<Multi_key> <b> <K> <R> <semicolon> <s> : "𖵡"  U16D61  # KIRAT RAI LETTER SHA
+<Multi_key> <b> <K> <R> <h> : "𖵢"  U16D62  # KIRAT RAI LETTER HA
+
+# Dependent vowels
+
+<Multi_key> <b> <K> <R> <a> <a> <Return> : "𖵣"  U16D63  # KIRAT RAI VOWEL SIGN AA
+<Multi_key> <b> <K> <R> <i> <Return> : "𖵤"  U16D64  # KIRAT RAI VOWEL SIGN I
+<Multi_key> <b> <K> <R> <u> <Return> : "𖵥"  U16D65  # KIRAT RAI VOWEL SIGN U
+<Multi_key> <b> <K> <R> <u> <e> <Return> : "𖵦"  U16D66  # KIRAT RAI VOWEL SIGN UE
+<Multi_key> <b> <K> <R> <e> <e> <Return> : "𖵧"  U16D67  # KIRAT RAI VOWEL SIGN E
+<Multi_key> <b> <K> <R> <a> <i> <Return> : "𖵨"  U16D68  # KIRAT RAI VOWEL SIGN AI
+<Multi_key> <b> <K> <R> <o> <o> <Return> : "𖵩"  U16D69  # KIRAT RAI VOWEL SIGN O
+<Multi_key> <b> <K> <R> <a> <u> <Return> : "𖵪"  U16D6A  # KIRAT RAI VOWEL SIGN AU
+<Multi_key> <b> <K> <R> <0> <Return> : "𖵫"  U16D6B  # KIRAT RAI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <K> <R> <period> <Return> : "𖵀"  U16D40  # KIRAT RAI SIGN ANUSVARA
+<Multi_key> <b> <K> <R> <colon> <Return> : "𖵂"  U16D42  # KIRAT RAI SIGN VISARGA
+<Multi_key> <b> <K> <R> <comma> <Return> : "𖵫"  U16D6B  # KIRAT RAI SIGN VIRAMA
+
+# Numerals
+
+<Multi_key> <b> <K> <R> <numbersign> <0> : "𖵰"  U16D70  # KIRAT RAI DIGIT ZERO
+<Multi_key> <b> <K> <R> <numbersign> <1> : "𖵱"  U16D71  # KIRAT RAI DIGIT ONE
+<Multi_key> <b> <K> <R> <numbersign> <2> : "𖵲"  U16D72  # KIRAT RAI DIGIT TWO
+<Multi_key> <b> <K> <R> <numbersign> <3> : "𖵳"  U16D73  # KIRAT RAI DIGIT THREE
+<Multi_key> <b> <K> <R> <numbersign> <4> : "𖵴"  U16D74  # KIRAT RAI DIGIT FOUR
+<Multi_key> <b> <K> <R> <numbersign> <5> : "𖵵"  U16D75  # KIRAT RAI DIGIT FIVE
+<Multi_key> <b> <K> <R> <numbersign> <6> : "𖵶"  U16D76  # KIRAT RAI DIGIT SIX
+<Multi_key> <b> <K> <R> <numbersign> <7> : "𖵷"  U16D77  # KIRAT RAI DIGIT SEVEN
+<Multi_key> <b> <K> <R> <numbersign> <8> : "𖵸"  U16D78  # KIRAT RAI DIGIT EIGHT
+<Multi_key> <b> <K> <R> <numbersign> <9> : "𖵹"  U16D79  # KIRAT RAI DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <K> <R> <bar> : "𖵮"  U16D6E  # KIRAT RAI DANDA
+<Multi_key> <b> <K> <R> <2> <bar> : "𖵯"  U16D6F  # KIRAT RAI DOUBLE DANDA
 
 # (KT = Kaithi)
 
