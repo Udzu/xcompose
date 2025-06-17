@@ -4274,9 +4274,9 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
-# Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Khudawadi, Kirat Rai, Limbu, Mahajani, Malayalam, Marchen, Masaram Gondi, Meitei Mayek,
-# Modi, Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu, Tirhuta, Tulu-Tigalari.
-# Also see Zhuyin section for Tibetan and Phags-Pa.
+# Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Khojki, Khudawadi, Kirat Rai, Limbu, Mahajani, Malayalam, Marchen, 
+# Masaram Gondi, Meitei Mayek, Modi, Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, 
+# Takri, Tamil, Telugu, Tirhuta, Tulu-Tigalari; also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
 
@@ -5817,6 +5817,87 @@ include "%L"
 
 <Multi_key> <b> <K> <H> <bar> : "𐩖"  U10A56  # KHAROSHTHI PUNCTUATION DANDA
 <Multi_key> <b> <K> <H> <2> <bar> : "𐩗"  U10A57  # KHAROSHTHI PUNCTUATION DOUBLE DANDA
+
+# (KJ = Khojki)
+
+# Consonants
+
+<Multi_key> <b> <K> <J> <k> <space> : "𑈈"  U11208  # KHOJKI LETTER KA
+<Multi_key> <b> <K> <J> <k> <h> : "𑈉"  U11209  # KHOJKI LETTER KHA
+<Multi_key> <b> <K> <J> <g> <space> : "𑈊"  U1120A  # KHOJKI LETTER GA
+<Multi_key> <b> <K> <J> <g> <g> : "𑈋"  U1120B  # KHOJKI LETTER GGA
+<Multi_key> <b> <K> <J> <g> <h> : "𑈌"  U1120C  # KHOJKI LETTER GHA
+<Multi_key> <b> <K> <J> <semicolon> <n> : "𑈍"  U1120D  # KHOJKI LETTER NGA
+<Multi_key> <b> <K> <J> <c> <space> : "𑈎"  U1120E  # KHOJKI LETTER CA
+<Multi_key> <b> <K> <J> <c> <h> : "𑈏"  U1120F  # KHOJKI LETTER CHA
+<Multi_key> <b> <K> <J> <j> <space> : "𑈐"  U11210  # KHOJKI LETTER JA
+<Multi_key> <b> <K> <J> <j> <j> : "𑈑"  U11211  # KHOJKI LETTER JJA
+<Multi_key> <b> <K> <J> <asciitilde> <n> : "𑈓"  U11213  # KHOJKI LETTER NYA
+<Multi_key> <b> <K> <J> <period> <t> <space> : "𑈔"  U11214  # KHOJKI LETTER TTA
+<Multi_key> <b> <K> <J> <period> <t> <h> : "𑈕"  U11215  # KHOJKI LETTER TTHA
+<Multi_key> <b> <K> <J> <period> <d> <space> : "𑈖"  U11216  # KHOJKI LETTER DDA
+<Multi_key> <b> <K> <J> <period> <d> <h> : "𑈗"  U11217  # KHOJKI LETTER DDHA
+<Multi_key> <b> <K> <J> <period> <n> : "𑈘"  U11218  # KHOJKI LETTER NNA
+<Multi_key> <b> <K> <J> <t> <space> : "𑈙"  U11219  # KHOJKI LETTER TA
+<Multi_key> <b> <K> <J> <t> <h> : "𑈚"  U1121A  # KHOJKI LETTER THA
+<Multi_key> <b> <K> <J> <d> <space> : "𑈛"  U1121B  # KHOJKI LETTER DA
+<Multi_key> <b> <K> <J> <period> <d> <period> <d> : "𑈜"  U1121C  # KHOJKI LETTER DDDA
+<Multi_key> <b> <K> <J> <d> <h> : "𑈝"  U1121D  # KHOJKI LETTER DHA
+<Multi_key> <b> <K> <J> <n> : "𑈞"  U1121E  # KHOJKI LETTER NA
+<Multi_key> <b> <K> <J> <p> <space> : "𑈟"  U1121F  # KHOJKI LETTER PA
+<Multi_key> <b> <K> <J> <p> <h> : "𑈠"  U11220  # KHOJKI LETTER PHA
+<Multi_key> <b> <K> <J> <b> <space> : "𑈡"  U11221  # KHOJKI LETTER BA
+<Multi_key> <b> <K> <J> <b> <b> : "𑈢"  U11222  # KHOJKI LETTER BBA
+<Multi_key> <b> <K> <J> <b> <h> : "𑈣"  U11223  # KHOJKI LETTER BHA
+<Multi_key> <b> <K> <J> <m> : "𑈤"  U11224  # KHOJKI LETTER MA
+<Multi_key> <b> <K> <J> <y> : "𑈥"  U11225  # KHOJKI LETTER YA
+<Multi_key> <b> <K> <J> <r> : "𑈦"  U11226  # KHOJKI LETTER RA
+<Multi_key> <b> <K> <J> <l> : "𑈧"  U11227  # KHOJKI LETTER LA
+<Multi_key> <b> <K> <J> <v> : "𑈨"  U11228  # KHOJKI LETTER VA
+<Multi_key> <b> <K> <J> <s> : "𑈩"  U11229  # KHOJKI LETTER SA
+<Multi_key> <b> <K> <J> <h> : "𑈪"  U1122A  # KHOJKI LETTER HA
+<Multi_key> <b> <K> <J> <period> <l> : "𑈫"  U1122B  # KHOJKI LETTER LLA
+<Multi_key> <b> <K> <J> <q> : "𑈿"  U1123F  # KHOJKI LETTER QA
+
+# Independent vowels
+
+<Multi_key> <b> <K> <J> <a> <space> : "𑈀"  U11200  # KHOJKI LETTER A
+<Multi_key> <b> <K> <J> <a> <a> <space> : "𑈁"  U11201  # KHOJKI LETTER AA
+<Multi_key> <b> <K> <J> <i> <space> : "𑈂"  U11202  # KHOJKI LETTER I
+<Multi_key> <b> <K> <J> <u> <space> : "𑈃"  U11203  # KHOJKI LETTER U
+<Multi_key> <b> <K> <J> <e> <e> <space> : "𑈄"  U11204  # KHOJKI LETTER E
+<Multi_key> <b> <K> <J> <a> <i> <space> : "𑈅"  U11205  # KHOJKI LETTER AI
+<Multi_key> <b> <K> <J> <o> <o> <space> : "𑈆"  U11206  # KHOJKI LETTER O
+<Multi_key> <b> <K> <J> <a> <u> <space> : "𑈇"  U11207  # KHOJKI LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <K> <J> <a> <a> <Return> : "𑈬"  U1122C  # KHOJKI VOWEL SIGN AA
+<Multi_key> <b> <K> <J> <i> <Return> : "𑈭"  U1122D  # KHOJKI VOWEL SIGN I
+<Multi_key> <b> <K> <J> <i> <i> <Return> : "𑈮"  U1122E  # KHOJKI VOWEL SIGN II
+<Multi_key> <b> <K> <J> <u> <Return> : "𑈯"  U1122F  # KHOJKI VOWEL SIGN U
+<Multi_key> <b> <K> <J> <e> <e> <Return> : "𑈰"  U11230  # KHOJKI VOWEL SIGN E
+<Multi_key> <b> <K> <J> <a> <i> <Return> : "𑈱"  U11231  # KHOJKI VOWEL SIGN AI
+<Multi_key> <b> <K> <J> <o> <o> <Return> : "𑈲"  U11232  # KHOJKI VOWEL SIGN O
+<Multi_key> <b> <K> <J> <a> <u> <Return> : "𑈳"  U11233  # KHOJKI VOWEL SIGN AU
+<Multi_key> <b> <K> <J> <0> <Return> : "𑈵"  U11235  # KHOJKI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <K> <J> <period> <Return> : "𑈴"  U11234  # KHOJKI SIGN ANUSVARA
+<Multi_key> <b> <K> <J> <comma> <Return> : "𑈵"  U11235  # KHOJKI SIGN VIRAMA
+<Multi_key> <b> <K> <J> <underscore> <period> <Return> : "𑈶"  U11236  # KHOJKI SIGN NUKTA
+<Multi_key> <b> <K> <J> <w> <Return> : "𑈷"  U11237  # KHOJKI SIGN SHADDA
+
+# Punctuation
+
+<Multi_key> <b> <K> <J> <bar> : "𑈸"  U11238  # KHOJKI DANDA
+<Multi_key> <b> <K> <J> <2> <bar> : "𑈹"  U11239  # KHOJKI DOUBLE DANDA
+<Multi_key> <b> <K> <J> <space> : "𑈺"  U1123A  # KHOJKI WORD SEPARATOR
+<Multi_key> <b> <K> <J> <Multi_key> <S> <O> : "𑈻"  U1123B  # KHOJKI SECTION MARK
+<Multi_key> <b> <K> <J> <2> <Multi_key> <S> <O> : "𑈼"  U1123C  # KHOJKI DOUBLE SECTION MARK
+<Multi_key> <b> <K> <J> <o> <period> : "𑈽"  U1123D  # KHOJKI ABBREVIATION SIGN
+<Multi_key> <b> <K> <J> <comma> <r> <Return> : "𑉁"  U11241  # KHOJKI VOWEL SIGN VOCALIC R
 
 # (KR = Kirat Rai)
 
