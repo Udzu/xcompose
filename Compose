@@ -4275,7 +4275,7 @@ include "%L"
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
 # Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Kirat Rai, Limbu, Mahajani, Malayalam, Marchen, Masaram Gondi, Meitei Mayek,
-# Modi, Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu.
+# Modi, Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu, Tirhuta.
 # Also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -7674,6 +7674,104 @@ include "%L"
 <Multi_key> <b> <T> <K> <numbersign> <7> : "𑛇"  U116C7  # TAKRI DIGIT SEVEN
 <Multi_key> <b> <T> <K> <numbersign> <8> : "𑛈"  U116C8  # TAKRI DIGIT EIGHT
 <Multi_key> <b> <T> <K> <numbersign> <9> : "𑛉"  U116C9  # TAKRI DIGIT NINE
+
+# (TR = Tirhuta)
+
+# Consonants
+
+<Multi_key> <b> <T> <R> <k> <space> : "𑒏"  U1148F  # TIRHUTA LETTER KA
+<Multi_key> <b> <T> <R> <k> <h> : "𑒐"  U11490  # TIRHUTA LETTER KHA
+<Multi_key> <b> <T> <R> <g> <space> : "𑒑"  U11491  # TIRHUTA LETTER GA
+<Multi_key> <b> <T> <R> <g> <h> : "𑒒"  U11492  # TIRHUTA LETTER GHA
+<Multi_key> <b> <T> <R> <semicolon> <n> : "𑒓"  U11493  # TIRHUTA LETTER NGA
+<Multi_key> <b> <T> <R> <c> <space> : "𑒔"  U11494  # TIRHUTA LETTER CA
+<Multi_key> <b> <T> <R> <c> <h> : "𑒕"  U11495  # TIRHUTA LETTER CHA
+<Multi_key> <b> <T> <R> <j> <space> : "𑒖"  U11496  # TIRHUTA LETTER JA
+<Multi_key> <b> <T> <R> <j> <h> : "𑒗"  U11497  # TIRHUTA LETTER JHA
+<Multi_key> <b> <T> <R> <asciitilde> <n> : "𑒘"  U11498  # TIRHUTA LETTER NYA
+<Multi_key> <b> <T> <R> <period> <t> <space> : "𑒙"  U11499  # TIRHUTA LETTER TTA
+<Multi_key> <b> <T> <R> <period> <t> <h> : "𑒚"  U1149A  # TIRHUTA LETTER TTHA
+<Multi_key> <b> <T> <R> <period> <d> <space> : "𑒛"  U1149B  # TIRHUTA LETTER DDA
+<Multi_key> <b> <T> <R> <period> <d> <h> : "𑒜"  U1149C  # TIRHUTA LETTER DDHA
+<Multi_key> <b> <T> <R> <period> <n> : "𑒝"  U1149D  # TIRHUTA LETTER NNA
+<Multi_key> <b> <T> <R> <t> <space> : "𑒞"  U1149E  # TIRHUTA LETTER TA
+<Multi_key> <b> <T> <R> <t> <h> : "𑒟"  U1149F  # TIRHUTA LETTER THA
+<Multi_key> <b> <T> <R> <d> <space> : "𑒠"  U114A0  # TIRHUTA LETTER DA
+<Multi_key> <b> <T> <R> <d> <h> : "𑒡"  U114A1  # TIRHUTA LETTER DHA
+<Multi_key> <b> <T> <R> <n> : "𑒢"  U114A2  # TIRHUTA LETTER NA
+<Multi_key> <b> <T> <R> <p> <space> : "𑒣"  U114A3  # TIRHUTA LETTER PA
+<Multi_key> <b> <T> <R> <p> <h> : "𑒤"  U114A4  # TIRHUTA LETTER PHA
+<Multi_key> <b> <T> <R> <b> <space> : "𑒥"  U114A5  # TIRHUTA LETTER BA
+<Multi_key> <b> <T> <R> <b> <h> : "𑒦"  U114A6  # TIRHUTA LETTER BHA
+<Multi_key> <b> <T> <R> <m> : "𑒧"  U114A7  # TIRHUTA LETTER MA
+<Multi_key> <b> <T> <R> <y> : "𑒨"  U114A8  # TIRHUTA LETTER YA
+<Multi_key> <b> <T> <R> <r> : "𑒩"  U114A9  # TIRHUTA LETTER RA
+<Multi_key> <b> <T> <R> <l> : "𑒪"  U114AA  # TIRHUTA LETTER LA
+<Multi_key> <b> <T> <R> <v> : "𑒫"  U114AB  # TIRHUTA LETTER VA
+<Multi_key> <b> <T> <R> <semicolon> <s> : "𑒬"  U114AC  # TIRHUTA LETTER SHA
+<Multi_key> <b> <T> <R> <period> <s> : "𑒭"  U114AD  # TIRHUTA LETTER SSA
+<Multi_key> <b> <T> <R> <s> : "𑒮"  U114AE  # TIRHUTA LETTER SA
+<Multi_key> <b> <T> <R> <h> : "𑒯"  U114AF  # TIRHUTA LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <T> <R> <a> <space> : "𑒁"  U11481  # TIRHUTA LETTER A
+<Multi_key> <b> <T> <R> <a> <a> <space> : "𑒂"  U11482  # TIRHUTA LETTER AA
+<Multi_key> <b> <T> <R> <i> <space> : "𑒃"  U11483  # TIRHUTA LETTER I
+<Multi_key> <b> <T> <R> <i> <i> <space> : "𑒄"  U11484  # TIRHUTA LETTER II
+<Multi_key> <b> <T> <R> <u> <space> : "𑒅"  U11485  # TIRHUTA LETTER U
+<Multi_key> <b> <T> <R> <u> <u> <space> : "𑒆"  U11486  # TIRHUTA LETTER UU
+<Multi_key> <b> <T> <R> <comma> <r> <space> : "𑒇"  U11487  # TIRHUTA LETTER VOCALIC R
+<Multi_key> <b> <T> <R> <comma> <r> <r> <space> : "𑒈"  U11488  # TIRHUTA LETTER VOCALIC RR
+<Multi_key> <b> <T> <R> <comma> <l> <space> : "𑒉"  U11489  # TIRHUTA LETTER VOCALIC L
+<Multi_key> <b> <T> <R> <comma> <l> <l> <space> : "𑒊"  U1148A  # TIRHUTA LETTER VOCALIC LL
+<Multi_key> <b> <T> <R> <e> <e> <space> : "𑒋"  U1148B  # TIRHUTA LETTER E
+<Multi_key> <b> <T> <R> <a> <i> <space> : "𑒌"  U1148C  # TIRHUTA LETTER AI
+<Multi_key> <b> <T> <R> <o> <o> <space> : "𑒍"  U1148D  # TIRHUTA LETTER O
+<Multi_key> <b> <T> <R> <a> <u> <space> : "𑒎"  U1148E  # TIRHUTA LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <T> <R> <a> <a> <Return> : "𑒰"  U114B0  # TIRHUTA VOWEL SIGN AA
+<Multi_key> <b> <T> <R> <i> <Return> : "𑒱"  U114B1  # TIRHUTA VOWEL SIGN I
+<Multi_key> <b> <T> <R> <i> <i> <Return> : "𑒲"  U114B2  # TIRHUTA VOWEL SIGN II
+<Multi_key> <b> <T> <R> <u> <Return> : "𑒳"  U114B3  # TIRHUTA VOWEL SIGN U
+<Multi_key> <b> <T> <R> <u> <u> <Return> : "𑒴"  U114B4  # TIRHUTA VOWEL SIGN UU
+<Multi_key> <b> <T> <R> <comma> <r> <Return> : "𑒵"  U114B5  # TIRHUTA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <T> <R> <comma> <r> <r> <Return> : "𑒶"  U114B6  # TIRHUTA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <T> <R> <comma> <l> <Return> : "𑒷"  U114B7  # TIRHUTA VOWEL SIGN VOCALIC L
+<Multi_key> <b> <T> <R> <comma> <l> <l> <Return> : "𑒸"  U114B8  # TIRHUTA VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <T> <R> <e> <e> <Return> : "𑒹"  U114B9  # TIRHUTA VOWEL SIGN E
+<Multi_key> <b> <T> <R> <e> <Return> : "𑒺"  U114BA  # TIRHUTA VOWEL SIGN SHORT E
+<Multi_key> <b> <T> <R> <a> <i> <Return> : "𑒻"  U114BB  # TIRHUTA VOWEL SIGN AI
+<Multi_key> <b> <T> <R> <o> <o> <Return> : "𑒼"  U114BC  # TIRHUTA VOWEL SIGN O
+<Multi_key> <b> <T> <R> <period> <o> <Return> : "𑒽"  U114BD  # TIRHUTA VOWEL SIGN SHORT O
+<Multi_key> <b> <T> <R> <a> <u> <Return> : "𑒾"  U114BE  # TIRHUTA VOWEL SIGN AU
+<Multi_key> <b> <T> <R> <0> <Return> : "𑓂"  U114C2  # TIRHUTA SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <T> <R> <period> <parenright> <Return> : "𑒿"  U114BF  # TIRHUTA SIGN CANDRABINDU
+<Multi_key> <b> <T> <R> <period> <Return> : "𑓀"  U114C0  # TIRHUTA SIGN ANUSVARA
+<Multi_key> <b> <T> <R> <colon> <Return> : "𑓁"  U114C1  # TIRHUTA SIGN VISARGA
+<Multi_key> <b> <T> <R> <comma> <Return> : "𑓂"  U114C2  # TIRHUTA SIGN VIRAMA
+<Multi_key> <b> <T> <R> <underscore> <period> <Return> : "𑓃"  U114C3  # TIRHUTA SIGN NUKTA
+<Multi_key> <b> <T> <R> <S> : "𑓄"  U114C4  # TIRHUTA SIGN AVAGRAHA
+<Multi_key> <b> <T> <R> <o> <period> : "𑓆"  U114C6  # TIRHUTA ABBREVIATION SIGN
+<Multi_key> <b> <T> <R> <o> <m> : "𑓇"  U114C7  # TIRHUTA OM
+
+# Numerals
+
+<Multi_key> <b> <T> <R> <numbersign> <0> : "𑓐"  U114D0  # TIRHUTA DIGIT ZERO
+<Multi_key> <b> <T> <R> <numbersign> <1> : "𑓑"  U114D1  # TIRHUTA DIGIT ONE
+<Multi_key> <b> <T> <R> <numbersign> <2> : "𑓒"  U114D2  # TIRHUTA DIGIT TWO
+<Multi_key> <b> <T> <R> <numbersign> <3> : "𑓓"  U114D3  # TIRHUTA DIGIT THREE
+<Multi_key> <b> <T> <R> <numbersign> <4> : "𑓔"  U114D4  # TIRHUTA DIGIT FOUR
+<Multi_key> <b> <T> <R> <numbersign> <5> : "𑓕"  U114D5  # TIRHUTA DIGIT FIVE
+<Multi_key> <b> <T> <R> <numbersign> <6> : "𑓖"  U114D6  # TIRHUTA DIGIT SIX
+<Multi_key> <b> <T> <R> <numbersign> <7> : "𑓗"  U114D7  # TIRHUTA DIGIT SEVEN
+<Multi_key> <b> <T> <R> <numbersign> <8> : "𑓘"  U114D8  # TIRHUTA DIGIT EIGHT
+<Multi_key> <b> <T> <R> <numbersign> <9> : "𑓙"  U114D9  # TIRHUTA DIGIT NINE
 
 #########################################
 # (B) Braille (Unified English Braille) #
