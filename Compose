@@ -4275,7 +4275,7 @@ include "%L"
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
 # Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Kirat Rai, Limbu, Mahajani, Malayalam, Marchen, Masaram Gondi, Meitei Mayek,
-# Modi, Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu.
+# Modi, Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu.
 # Also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
@@ -7049,6 +7049,91 @@ include "%L"
 <Multi_key> <b> <s> <numbersign> <7>     : "෭"  U0DED  # SINHALA LITH DIGIT SEVEN
 <Multi_key> <b> <s> <numbersign> <8>     : "෮"  U0DEE  # SINHALA LITH DIGIT EIGHT
 <Multi_key> <b> <s> <numbersign> <9>     : "෯"  U0DEF  # SINHALA LITH DIGIT NINE
+
+# (SD = Siddham)
+
+# Consonants
+
+# Consonants
+
+<Multi_key> <b> <S> <D> <k> <space> : "𑖎"  U1158E  # SIDDHAM LETTER KA
+<Multi_key> <b> <S> <D> <k> <h> : "𑖏"  U1158F  # SIDDHAM LETTER KHA
+<Multi_key> <b> <S> <D> <g> <space> : "𑖐"  U11590  # SIDDHAM LETTER GA
+<Multi_key> <b> <S> <D> <g> <h> : "𑖑"  U11591  # SIDDHAM LETTER GHA
+<Multi_key> <b> <S> <D> <semicolon> <n> : "𑖒"  U11592  # SIDDHAM LETTER NGA
+<Multi_key> <b> <S> <D> <c> <space> : "𑖓"  U11593  # SIDDHAM LETTER CA
+<Multi_key> <b> <S> <D> <c> <h> : "𑖔"  U11594  # SIDDHAM LETTER CHA
+<Multi_key> <b> <S> <D> <j> <space> : "𑖕"  U11595  # SIDDHAM LETTER JA
+<Multi_key> <b> <S> <D> <j> <h> : "𑖖"  U11596  # SIDDHAM LETTER JHA
+<Multi_key> <b> <S> <D> <asciitilde> <n> : "𑖗"  U11597  # SIDDHAM LETTER NYA
+<Multi_key> <b> <S> <D> <period> <t> <space> : "𑖘"  U11598  # SIDDHAM LETTER TTA
+<Multi_key> <b> <S> <D> <period> <t> <h> : "𑖙"  U11599  # SIDDHAM LETTER TTHA
+<Multi_key> <b> <S> <D> <period> <d> <space> : "𑖚"  U1159A  # SIDDHAM LETTER DDA
+<Multi_key> <b> <S> <D> <period> <d> <h> : "𑖛"  U1159B  # SIDDHAM LETTER DDHA
+<Multi_key> <b> <S> <D> <period> <n> : "𑖜"  U1159C  # SIDDHAM LETTER NNA
+<Multi_key> <b> <S> <D> <t> <space> : "𑖝"  U1159D  # SIDDHAM LETTER TA
+<Multi_key> <b> <S> <D> <t> <h> : "𑖞"  U1159E  # SIDDHAM LETTER THA
+<Multi_key> <b> <S> <D> <d> <space> : "𑖟"  U1159F  # SIDDHAM LETTER DA
+<Multi_key> <b> <S> <D> <d> <h> : "𑖠"  U115A0  # SIDDHAM LETTER DHA
+<Multi_key> <b> <S> <D> <n> : "𑖡"  U115A1  # SIDDHAM LETTER NA
+<Multi_key> <b> <S> <D> <p> <space> : "𑖢"  U115A2  # SIDDHAM LETTER PA
+<Multi_key> <b> <S> <D> <p> <h> : "𑖣"  U115A3  # SIDDHAM LETTER PHA
+<Multi_key> <b> <S> <D> <b> <space> : "𑖤"  U115A4  # SIDDHAM LETTER BA
+<Multi_key> <b> <S> <D> <b> <h> : "𑖥"  U115A5  # SIDDHAM LETTER BHA
+<Multi_key> <b> <S> <D> <m> : "𑖦"  U115A6  # SIDDHAM LETTER MA
+<Multi_key> <b> <S> <D> <y> : "𑖧"  U115A7  # SIDDHAM LETTER YA
+<Multi_key> <b> <S> <D> <r> : "𑖨"  U115A8  # SIDDHAM LETTER RA
+<Multi_key> <b> <S> <D> <l> : "𑖩"  U115A9  # SIDDHAM LETTER LA
+<Multi_key> <b> <S> <D> <v> : "𑖪"  U115AA  # SIDDHAM LETTER VA
+<Multi_key> <b> <S> <D> <semicolon> <s> : "𑖫"  U115AB  # SIDDHAM LETTER SHA
+<Multi_key> <b> <S> <D> <period> <s> : "𑖬"  U115AC  # SIDDHAM LETTER SSA
+<Multi_key> <b> <S> <D> <s> : "𑖭"  U115AD  # SIDDHAM LETTER SA
+<Multi_key> <b> <S> <D> <h> : "𑖮"  U115AE  # SIDDHAM LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <S> <D> <a> <space> : "𑖀"  U11580  # SIDDHAM LETTER A
+<Multi_key> <b> <S> <D> <a> <a> <space> : "𑖁"  U11581  # SIDDHAM LETTER AA
+<Multi_key> <b> <S> <D> <i> <space> : "𑖂"  U11582  # SIDDHAM LETTER I
+<Multi_key> <b> <S> <D> <i> <i> <space> : "𑖃"  U11583  # SIDDHAM LETTER II
+<Multi_key> <b> <S> <D> <u> <space> : "𑖄"  U11584  # SIDDHAM LETTER U
+<Multi_key> <b> <S> <D> <u> <u> <space> : "𑖅"  U11585  # SIDDHAM LETTER UU
+<Multi_key> <b> <S> <D> <comma> <r> <space> : "𑖆"  U11586  # SIDDHAM LETTER VOCALIC R
+<Multi_key> <b> <S> <D> <comma> <r> <r> <space> : "𑖇"  U11587  # SIDDHAM LETTER VOCALIC RR
+<Multi_key> <b> <S> <D> <comma> <l> <space> : "𑖈"  U11588  # SIDDHAM LETTER VOCALIC L
+<Multi_key> <b> <S> <D> <comma> <l> <l> <space> : "𑖉"  U11589  # SIDDHAM LETTER VOCALIC LL
+<Multi_key> <b> <S> <D> <e> <e> <space> : "𑖊"  U1158A  # SIDDHAM LETTER E
+<Multi_key> <b> <S> <D> <a> <i> <space> : "𑖋"  U1158B  # SIDDHAM LETTER AI
+<Multi_key> <b> <S> <D> <o> <o> <space> : "𑖌"  U1158C  # SIDDHAM LETTER O
+<Multi_key> <b> <S> <D> <a> <u> <space> : "𑖍"  U1158D  # SIDDHAM LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <S> <D> <a> <a> <Return> : "𑖯"  U115AF  # SIDDHAM VOWEL SIGN AA
+<Multi_key> <b> <S> <D> <i> <Return> : "𑖰"  U115B0  # SIDDHAM VOWEL SIGN I
+<Multi_key> <b> <S> <D> <i> <i> <Return> : "𑖱"  U115B1  # SIDDHAM VOWEL SIGN II
+<Multi_key> <b> <S> <D> <u> <Return> : "𑖲"  U115B2  # SIDDHAM VOWEL SIGN U
+<Multi_key> <b> <S> <D> <u> <u> <Return> : "𑖳"  U115B3  # SIDDHAM VOWEL SIGN UU
+<Multi_key> <b> <S> <D> <comma> <r> <Return> : "𑖴"  U115B4  # SIDDHAM VOWEL SIGN VOCALIC R
+<Multi_key> <b> <S> <D> <comma> <r> <r> <Return> : "𑖵"  U115B5  # SIDDHAM VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <S> <D> <e> <e> <Return> : "𑖸"  U115B8  # SIDDHAM VOWEL SIGN E
+<Multi_key> <b> <S> <D> <a> <i> <Return> : "𑖹"  U115B9  # SIDDHAM VOWEL SIGN AI
+<Multi_key> <b> <S> <D> <o> <o> <Return> : "𑖺"  U115BA  # SIDDHAM VOWEL SIGN O
+<Multi_key> <b> <S> <D> <a> <u> <Return> : "𑖻"  U115BB  # SIDDHAM VOWEL SIGN AU
+<Multi_key> <b> <S> <D> <0> <Return> : "𑖿"  U115BF  # SIDDHAM SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <S> <D> <period> <parenright> <Return> : "𑖼"  U115BC  # SIDDHAM SIGN CANDRABINDU
+<Multi_key> <b> <S> <D> <period> <Return> : "𑖽"  U115BD  # SIDDHAM SIGN ANUSVARA
+<Multi_key> <b> <S> <D> <colon> <Return> : "𑖾"  U115BE  # SIDDHAM SIGN VISARGA
+<Multi_key> <b> <S> <D> <comma> <Return> : "𑖿"  U115BF  # SIDDHAM SIGN VIRAMA
+<Multi_key> <b> <S> <D> <underscore> <period> <Return> : "𑗀"  U115C0  # SIDDHAM SIGN NUKTA
+
+# Punctuation
+
+<Multi_key> <b> <S> <D> <bar> : "𑗂"  U115C2  # SIDDHAM DANDA
+<Multi_key> <b> <S> <D> <2> <bar> : "𑗃"  U115C3  # SIDDHAM DOUBLE DANDA
 
 # (SH = Sharada)
 
