@@ -141,6 +141,7 @@ def get_definitions(
 def add(
     args: argparse.Namespace,
     definitions: Trie | None = None,
+    name: str | None = None,
     comment: str | None = None,
 ) -> None:
     """Print line defining a new key sequence (checking for any conflicts)"""
@@ -169,13 +170,14 @@ def add(
 
     keys = " ".join(f"<{k}>" for k in ks)
     codes = " ".join(to_code_point(c) for c in args.value)
-    names = " ".join(unicodedata.name(c, "???") for c in args.value)
-    if len(args.value) > 1 and "VARIATION SELECTOR-16" in names:
-        names = names.replace("VARIATION SELECTOR-16", "EMOJI")
+    if name is None:
+        name = " ".join(unicodedata.name(c, "???") for c in args.value)
+        if len(args.value) > 1 and "VARIATION SELECTOR-16" in name:
+            name = name.replace("VARIATION SELECTOR-16", "EMOJI")
     if conflict:
-        names = names + f" (conflicts with {conflict})"
+        name = name + f" (conflicts with {conflict})"
     comment = f" {comment}" if comment is not None else ""
-    print(f'{keys} : "{args.value}"  {codes}  # {names}{comment}')
+    print(f'{keys} : "{args.value}"  {codes}  # {name}{comment}')
 
 
 def find(args: argparse.Namespace) -> None:

@@ -3330,7 +3330,7 @@ include "%L"
 
 <Multi_key> <a> <A> <a> <space> : "𐬀"  U10B00  # AVESTAN LETTER A
 <Multi_key> <a> <A> <minus> <a> <space> : "𐬁"  U10B01  # AVESTAN LETTER AA (ā)
-<Multi_key> <a> <A> <a> <o> <space> : "𐬂"  U10B02  # AVESTAN LETTER AO (å)
+<Multi_key> <a> <A> <a> <o> : "𐬂"  U10B02  # AVESTAN LETTER AO (å)
 <Multi_key> <a> <A> <minus> <a> <o> : "𐬃"  U10B03  # AVESTAN LETTER AAO (ā̊)
 <Multi_key> <a> <A> <semicolon> <a> : "𐬄"  U10B04  # AVESTAN LETTER AN (ą)
 <Multi_key> <a> <A> <period> <semicolon> <a> : "𐬅"  U10B05  # AVESTAN LETTER AAN (ą̇)
@@ -4273,9 +4273,10 @@ include "%L"
 # (b) Brahmic scripts #
 #######################
 
-# covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Gujarati, Gurmukhi, Limbu,
-# Kannada, Mahajani, Malayalam, Meitei, Odia, Saurashtra, Sinhala, Sylheti Nagri, Tamil, Telugu.
-# see Zhuyin section for Tibetan and Phags-Pa.
+# covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
+# Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Kirat Rai, Limbu, Mahajani, Malayalam, Marchen, Masaram Gondi, Meitei Mayek, Modi,
+# Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu, Tirhuta, Tulu-Tigalari.
+# Also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
 
@@ -4404,14 +4405,14 @@ include "%L"
 <Multi_key> <b> <c> <8> <space> : "𑁙" U11059   # BRAHMI NUMBER EIGHT
 <Multi_key> <b> <c> <9> <space> : "𑁚" U1105A   # BRAHMI NUMBER NINE
 <Multi_key> <b> <c> <1> <0> <space> : "𑁛" U1105B   # BRAHMI NUMBER TEN
-<Multi_key> <b> <c> <2> <0> <space> : "𑁜" U1105C   # BRAHMI NUMBER TWENTY
-<Multi_key> <b> <c> <3> <0> <space> : "𑁝" U1105D   # BRAHMI NUMBER THIRTY
-<Multi_key> <b> <c> <4> <0> <space> : "𑁞" U1105E   # BRAHMI NUMBER FORTY
-<Multi_key> <b> <c> <5> <0> <space> : "𑁟" U1105F   # BRAHMI NUMBER FIFTY
-<Multi_key> <b> <c> <6> <0> <space> : "𑁠" U11060   # BRAHMI NUMBER SIXTY
-<Multi_key> <b> <c> <7> <0> <space> : "𑁡" U11061   # BRAHMI NUMBER SEVENTY
-<Multi_key> <b> <c> <8> <0> <space> : "𑁢" U11062   # BRAHMI NUMBER EIGHTY
-<Multi_key> <b> <c> <9> <0> <space> : "𑁣" U11063   # BRAHMI NUMBER NINETY
+<Multi_key> <b> <c> <2> <0> : "𑁜" U1105C   # BRAHMI NUMBER TWENTY
+<Multi_key> <b> <c> <3> <0> : "𑁝" U1105D   # BRAHMI NUMBER THIRTY
+<Multi_key> <b> <c> <4> <0> : "𑁞" U1105E   # BRAHMI NUMBER FORTY
+<Multi_key> <b> <c> <5> <0> : "𑁟" U1105F   # BRAHMI NUMBER FIFTY
+<Multi_key> <b> <c> <6> <0> : "𑁠" U11060   # BRAHMI NUMBER SIXTY
+<Multi_key> <b> <c> <7> <0> : "𑁡" U11061   # BRAHMI NUMBER SEVENTY
+<Multi_key> <b> <c> <8> <0> : "𑁢" U11062   # BRAHMI NUMBER EIGHTY
+<Multi_key> <b> <c> <9> <0> : "𑁣" U11063   # BRAHMI NUMBER NINETY
 <Multi_key> <b> <c> <1> <0> <0> <space> : "𑁤" U11064   # BRAHMI NUMBER ONE HUNDRED
 <Multi_key> <b> <c> <1> <0> <0> <0> : "𑁥" U11065   # BRAHMI NUMBER ONE THOUSAND
 
@@ -4559,84 +4560,84 @@ include "%L"
 
 # Consonants
 
-<Multi_key> <b> <A> <k> <space> : "𑜀"  U11700  # AHOM LETTER KA (conflicts with Ă, use uA)
-<Multi_key> <b> <A> <k> <h> : "𑜁"  U11701  # AHOM LETTER KHA (conflicts)
-<Multi_key> <b> <A> <semicolon> <n> : "𑜂"  U11702  # AHOM LETTER NGA (conflicts)
-<Multi_key> <b> <A> <n> : "𑜃"  U11703  # AHOM LETTER NA (conflicts)
-<Multi_key> <b> <A> <t> <space> : "𑜄"  U11704  # AHOM LETTER TA (conflicts)
-<Multi_key> <b> <A> <t> <2> : "𑜅"  U11705  # AHOM LETTER ALTERNATE TA (conflicts)
-<Multi_key> <b> <A> <p> <space> : "𑜆"  U11706  # AHOM LETTER PA (conflicts)
-<Multi_key> <b> <A> <p> <h> : "𑜇"  U11707  # AHOM LETTER PHA (conflicts)
-<Multi_key> <b> <A> <b> <space> : "𑜈"  U11708  # AHOM LETTER BA (conflicts)
-<Multi_key> <b> <A> <m> : "𑜉"  U11709  # AHOM LETTER MA (conflicts)
-<Multi_key> <b> <A> <j> <space> : "𑜊"  U1170A  # AHOM LETTER JA (conflicts)
-<Multi_key> <b> <A> <c> <h> : "𑜋"  U1170B  # AHOM LETTER CHA (conflicts)
-<Multi_key> <b> <A> <t> <h> : "𑜌"  U1170C  # AHOM LETTER THA (conflicts)
-<Multi_key> <b> <A> <r> <space> : "𑜍"  U1170D  # AHOM LETTER RA (conflicts)
-<Multi_key> <b> <A> <l> <space> : "𑜎"  U1170E  # AHOM LETTER LA (conflicts)
-<Multi_key> <b> <A> <s> : "𑜏"  U1170F  # AHOM LETTER SA (conflicts)
-<Multi_key> <b> <A> <asciitilde> <n> : "𑜐"  U11710  # AHOM LETTER NYA (conflicts)
-<Multi_key> <b> <A> <h> : "𑜑"  U11711  # AHOM LETTER HA (conflicts)
-<Multi_key> <b> <A> <a> <space> : "𑜒"  U11712  # AHOM LETTER A (conflicts)
-<Multi_key> <b> <A> <d> <space> : "𑜓"  U11713  # AHOM LETTER DA (conflicts)
-<Multi_key> <b> <A> <d> <h> : "𑜔"  U11714  # AHOM LETTER DHA (conflicts)
-<Multi_key> <b> <A> <g> <space> : "𑜕"  U11715  # AHOM LETTER GA (conflicts)
-<Multi_key> <b> <A> <g> <2> : "𑜖"  U11716  # AHOM LETTER ALTERNATE GA (conflicts)
-<Multi_key> <b> <A> <g> <h> : "𑜗"  U11717  # AHOM LETTER GHA (conflicts)
-<Multi_key> <b> <A> <b> <h> : "𑜘"  U11718  # AHOM LETTER BHA (conflicts)
-<Multi_key> <b> <A> <j> <h> : "𑜙"  U11719  # AHOM LETTER JHA (conflicts)
-<Multi_key> <b> <A> <b> <2> : "𑜚"  U1171A  # AHOM LETTER ALTERNATE BA (conflicts)
-<Multi_key> <b> <A> <c> <space> : "𑝀"  U11740  # AHOM LETTER CA (conflicts)
+<Multi_key> <b> <A> <k> <space>          : "𑜀"  U11700  # AHOM LETTER KA (conflicts with Ă, use uA)
+<Multi_key> <b> <A> <k> <h>              : "𑜁"  U11701  # AHOM LETTER KHA (conflicts)
+<Multi_key> <b> <A> <semicolon> <n>      : "𑜂"  U11702  # AHOM LETTER NGA (conflicts)
+<Multi_key> <b> <A> <n>                  : "𑜃"  U11703  # AHOM LETTER NA (conflicts)
+<Multi_key> <b> <A> <t> <space>          : "𑜄"  U11704  # AHOM LETTER TA (conflicts)
+<Multi_key> <b> <A> <t> <2>              : "𑜅"  U11705  # AHOM LETTER ALTERNATE TA (conflicts)
+<Multi_key> <b> <A> <p> <space>          : "𑜆"  U11706  # AHOM LETTER PA (conflicts)
+<Multi_key> <b> <A> <p> <h>              : "𑜇"  U11707  # AHOM LETTER PHA (conflicts)
+<Multi_key> <b> <A> <b> <space>          : "𑜈"  U11708  # AHOM LETTER BA (conflicts)
+<Multi_key> <b> <A> <m>                  : "𑜉"  U11709  # AHOM LETTER MA (conflicts)
+<Multi_key> <b> <A> <j> <space>          : "𑜊"  U1170A  # AHOM LETTER JA (conflicts)
+<Multi_key> <b> <A> <c> <h>              : "𑜋"  U1170B  # AHOM LETTER CHA (conflicts)
+<Multi_key> <b> <A> <t> <h>              : "𑜌"  U1170C  # AHOM LETTER THA (conflicts)
+<Multi_key> <b> <A> <r> <space>          : "𑜍"  U1170D  # AHOM LETTER RA (conflicts)
+<Multi_key> <b> <A> <l> <space>          : "𑜎"  U1170E  # AHOM LETTER LA (conflicts)
+<Multi_key> <b> <A> <s>                  : "𑜏"  U1170F  # AHOM LETTER SA (conflicts)
+<Multi_key> <b> <A> <asciitilde> <n>     : "𑜐"  U11710  # AHOM LETTER NYA (conflicts)
+<Multi_key> <b> <A> <h>                  : "𑜑"  U11711  # AHOM LETTER HA (conflicts)
+<Multi_key> <b> <A> <a> <space>          : "𑜒"  U11712  # AHOM LETTER A (conflicts)
+<Multi_key> <b> <A> <d> <space>          : "𑜓"  U11713  # AHOM LETTER DA (conflicts)
+<Multi_key> <b> <A> <d> <h>              : "𑜔"  U11714  # AHOM LETTER DHA (conflicts)
+<Multi_key> <b> <A> <g> <space>          : "𑜕"  U11715  # AHOM LETTER GA (conflicts)
+<Multi_key> <b> <A> <g> <2>              : "𑜖"  U11716  # AHOM LETTER ALTERNATE GA (conflicts)
+<Multi_key> <b> <A> <g> <h>              : "𑜗"  U11717  # AHOM LETTER GHA (conflicts)
+<Multi_key> <b> <A> <b> <h>              : "𑜘"  U11718  # AHOM LETTER BHA (conflicts)
+<Multi_key> <b> <A> <j> <h>              : "𑜙"  U11719  # AHOM LETTER JHA (conflicts)
+<Multi_key> <b> <A> <b> <2>              : "𑜚"  U1171A  # AHOM LETTER ALTERNATE BA (conflicts)
+<Multi_key> <b> <A> <c> <space>          : "𑝀"  U11740  # AHOM LETTER CA (conflicts)
 <Multi_key> <b> <A> <period> <t> <space> : "𑝁"  U11741  # AHOM LETTER TTA (conflicts)
-<Multi_key> <b> <A> <period> <t> <h> : "𑝂"  U11742  # AHOM LETTER TTHA (conflicts)
+<Multi_key> <b> <A> <period> <t> <h>     : "𑝂"  U11742  # AHOM LETTER TTHA (conflicts)
 <Multi_key> <b> <A> <period> <d> <space> : "𑝃"  U11743  # AHOM LETTER DDA (conflicts)
-<Multi_key> <b> <A> <period> <d> <h> : "𑝄"  U11744  # AHOM LETTER DDHA (conflicts)
-<Multi_key> <b> <A> <period> <n> : "𑝅"  U11745  # AHOM LETTER NNA (conflicts)
-<Multi_key> <b> <A> <period> <l> : "𑝆"  U11746  # AHOM LETTER LLA (conflicts)
+<Multi_key> <b> <A> <period> <d> <h>     : "𑝄"  U11744  # AHOM LETTER DDHA (conflicts)
+<Multi_key> <b> <A> <period> <n>         : "𑝅"  U11745  # AHOM LETTER NNA (conflicts)
+<Multi_key> <b> <A> <period> <l>         : "𑝆"  U11746  # AHOM LETTER LLA (conflicts)
 
 # Medial consonants
 
-<Multi_key> <b> <A> <l> <Return> : "𑜝"  U1171D  # AHOM CONSONANT SIGN MEDIAL LA (conflicts)
-<Multi_key> <b> <A> <r> <Return> : "𑜞"  U1171E  # AHOM CONSONANT SIGN MEDIAL RA (conflicts)
-<Multi_key> <b> <A> <r> <l> <Return> : "𑜟"  U1171F  # AHOM CONSONANT SIGN MEDIAL LIGATING RA (conflicts)
+<Multi_key> <b> <A> <l> <Return>         : "𑜝"  U1171D  # AHOM CONSONANT SIGN MEDIAL LA (conflicts)
+<Multi_key> <b> <A> <r> <Return>         : "𑜞"  U1171E  # AHOM CONSONANT SIGN MEDIAL RA (conflicts)
+<Multi_key> <b> <A> <r> <l> <Return>     : "𑜟"  U1171F  # AHOM CONSONANT SIGN MEDIAL LIGATING RA (conflicts)
 
 # Vowels
 
-<Multi_key> <b> <A> <a> <Return> : "𑜠"  U11720  # AHOM VOWEL SIGN A (conflicts)
-<Multi_key> <b> <A> <a> <a> <Return> : "𑜡"  U11721  # AHOM VOWEL SIGN AA (conflicts)
-<Multi_key> <b> <A> <i> <Return> : "𑜢"  U11722  # AHOM VOWEL SIGN I (conflicts)
-<Multi_key> <b> <A> <i> <i> <Return> : "𑜣"  U11723  # AHOM VOWEL SIGN II (conflicts)
-<Multi_key> <b> <A> <u> <Return> : "𑜤"  U11724  # AHOM VOWEL SIGN U (conflicts)
-<Multi_key> <b> <A> <u> <u> <Return> : "𑜥"  U11725  # AHOM VOWEL SIGN UU (conflicts)
-<Multi_key> <b> <A> <e> <e> <Return> : "𑜦"  U11726  # AHOM VOWEL SIGN E (conflicts)
-<Multi_key> <b> <A> <a> <w> <Return> : "𑜧"  U11727  # AHOM VOWEL SIGN AW (conflicts)
-<Multi_key> <b> <A> <o> <o> <Return> : "𑜨"  U11728  # AHOM VOWEL SIGN O (conflicts)
-<Multi_key> <b> <A> <a> <i> <Return> : "𑜩"  U11729  # AHOM VOWEL SIGN AI (conflicts)
-<Multi_key> <b> <A> <a> <m> <Return> : "𑜪"  U1172A  # AHOM VOWEL SIGN AM (conflicts)
-<Multi_key> <b> <A> <0> <Return> : "𑜫"  U1172B  # AHOM SIGN KILLER (VIRAMA) (conflicts)
-<Multi_key> <b> <A> <comma> <Return> : "𑜫"  U1172B  # AHOM SIGN KILLER (VIRAMA) (conflicts)
+<Multi_key> <b> <A> <a> <Return>         : "𑜠"  U11720  # AHOM VOWEL SIGN A (conflicts)
+<Multi_key> <b> <A> <a> <a> <Return>     : "𑜡"  U11721  # AHOM VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <A> <i> <Return>         : "𑜢"  U11722  # AHOM VOWEL SIGN I (conflicts)
+<Multi_key> <b> <A> <i> <i> <Return>     : "𑜣"  U11723  # AHOM VOWEL SIGN II (conflicts)
+<Multi_key> <b> <A> <u> <Return>         : "𑜤"  U11724  # AHOM VOWEL SIGN U (conflicts)
+<Multi_key> <b> <A> <u> <u> <Return>     : "𑜥"  U11725  # AHOM VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <A> <e> <e> <Return>     : "𑜦"  U11726  # AHOM VOWEL SIGN E (conflicts)
+<Multi_key> <b> <A> <a> <w> <Return>     : "𑜧"  U11727  # AHOM VOWEL SIGN AW (conflicts)
+<Multi_key> <b> <A> <o> <o> <Return>     : "𑜨"  U11728  # AHOM VOWEL SIGN O (conflicts)
+<Multi_key> <b> <A> <a> <i> <Return>     : "𑜩"  U11729  # AHOM VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <A> <a> <m> <Return>     : "𑜪"  U1172A  # AHOM VOWEL SIGN AM (conflicts)
+<Multi_key> <b> <A> <0> <Return>         : "𑜫"  U1172B  # AHOM SIGN KILLER (VIRAMA) (conflicts)
+<Multi_key> <b> <A> <comma> <Return>     : "𑜫"  U1172B  # AHOM SIGN KILLER (VIRAMA) (conflicts)
 
 # Numbers
 
-<Multi_key> <b> <A> <numbersign> <0> : "𑜰"  U11730  # AHOM DIGIT ZERO (conflicts)
-<Multi_key> <b> <A> <numbersign> <1> : "𑜱"  U11731  # AHOM DIGIT ONE (conflicts)
-<Multi_key> <b> <A> <numbersign> <2> : "𑜲"  U11732  # AHOM DIGIT TWO (conflicts)
-<Multi_key> <b> <A> <numbersign> <3> : "𑜳"  U11733  # AHOM DIGIT THREE (conflicts)
-<Multi_key> <b> <A> <numbersign> <4> : "𑜴"  U11734  # AHOM DIGIT FOUR (conflicts)
-<Multi_key> <b> <A> <numbersign> <5> : "𑜵"  U11735  # AHOM DIGIT FIVE (conflicts)
-<Multi_key> <b> <A> <numbersign> <6> : "𑜶"  U11736  # AHOM DIGIT SIX (conflicts)
-<Multi_key> <b> <A> <numbersign> <7> : "𑜷"  U11737  # AHOM DIGIT SEVEN (conflicts)
-<Multi_key> <b> <A> <numbersign> <8> : "𑜸"  U11738  # AHOM DIGIT EIGHT (conflicts)
-<Multi_key> <b> <A> <numbersign> <9> : "𑜹"  U11739  # AHOM DIGIT NINE (conflicts)
-<Multi_key> <b> <A> <1> <0> : "𑜺"  U1173A  # AHOM NUMBER TEN (conflicts)
-<Multi_key> <b> <A> <2> <0> : "𑜻"  U1173B  # AHOM NUMBER TWENTY (conflicts)
+<Multi_key> <b> <A> <numbersign> <0>     : "𑜰"  U11730  # AHOM DIGIT ZERO (conflicts)
+<Multi_key> <b> <A> <numbersign> <1>     : "𑜱"  U11731  # AHOM DIGIT ONE (conflicts)
+<Multi_key> <b> <A> <numbersign> <2>     : "𑜲"  U11732  # AHOM DIGIT TWO (conflicts)
+<Multi_key> <b> <A> <numbersign> <3>     : "𑜳"  U11733  # AHOM DIGIT THREE (conflicts)
+<Multi_key> <b> <A> <numbersign> <4>     : "𑜴"  U11734  # AHOM DIGIT FOUR (conflicts)
+<Multi_key> <b> <A> <numbersign> <5>     : "𑜵"  U11735  # AHOM DIGIT FIVE (conflicts)
+<Multi_key> <b> <A> <numbersign> <6>     : "𑜶"  U11736  # AHOM DIGIT SIX (conflicts)
+<Multi_key> <b> <A> <numbersign> <7>     : "𑜷"  U11737  # AHOM DIGIT SEVEN (conflicts)
+<Multi_key> <b> <A> <numbersign> <8>     : "𑜸"  U11738  # AHOM DIGIT EIGHT (conflicts)
+<Multi_key> <b> <A> <numbersign> <9>     : "𑜹"  U11739  # AHOM DIGIT NINE (conflicts)
+<Multi_key> <b> <A> <1> <0>              : "𑜺"  U1173A  # AHOM NUMBER TEN (conflicts)
+<Multi_key> <b> <A> <2> <0>              : "𑜻"  U1173B  # AHOM NUMBER TWENTY (conflicts)
 
 # Punctuation
 
-<Multi_key> <b> <A> <bar> : "𑜼"  U1173C  # AHOM SIGN SMALL SECTION (DANDA) (conflicts)
-<Multi_key> <b> <A> <2> <bar> : "𑜽"  U1173D  # AHOM SIGN SECTION (DOUBLE DANDA) (conflicts)
-<Multi_key> <b> <A> <at> : "𑜾"  U1173E  # AHOM SIGN RULAI (conflicts)
-<Multi_key> <b> <A> <exclam> : "𑜿"  U1173F  # AHOM SYMBOL VI (conflicts)
+<Multi_key> <b> <A> <bar>                : "𑜼"  U1173C  # AHOM SIGN SMALL SECTION (DANDA) (conflicts)
+<Multi_key> <b> <A> <2> <bar>            : "𑜽"  U1173D  # AHOM SIGN SECTION (DOUBLE DANDA) (conflicts)
+<Multi_key> <b> <A> <at>                 : "𑜾"  U1173E  # AHOM SIGN RULAI (conflicts)
+<Multi_key> <b> <A> <exclam>             : "𑜿"  U1173F  # AHOM SYMBOL VI (conflicts)
 
 # (b = Bengali)
 
@@ -4826,58 +4827,58 @@ include "%L"
 
 # (BH = Bhaiksuki)
 
-<Multi_key> <b> <B> <H> <k> <space> : "𑰎"  U11C0E  # BHAIKSUKI LETTER KA
-<Multi_key> <b> <B> <H> <k> <h> : "𑰏"  U11C0F  # BHAIKSUKI LETTER KHA
-<Multi_key> <b> <B> <H> <g> <space> : "𑰐"  U11C10  # BHAIKSUKI LETTER GA
-<Multi_key> <b> <B> <H> <g> <h> : "𑰑"  U11C11  # BHAIKSUKI LETTER GHA
-<Multi_key> <b> <B> <H> <semicolon> <n> : "𑰒"  U11C12  # BHAIKSUKI LETTER NGA
-<Multi_key> <b> <B> <H> <c> <space> : "𑰓"  U11C13  # BHAIKSUKI LETTER CA
-<Multi_key> <b> <B> <H> <c> <h> : "𑰔"  U11C14  # BHAIKSUKI LETTER CHA
-<Multi_key> <b> <B> <H> <j> <space> : "𑰕"  U11C15  # BHAIKSUKI LETTER JA
-<Multi_key> <b> <B> <H> <j> <h> : "𑰖"  U11C16  # BHAIKSUKI LETTER JHA
+<Multi_key> <b> <B> <H> <k> <space>      : "𑰎"  U11C0E  # BHAIKSUKI LETTER KA
+<Multi_key> <b> <B> <H> <k> <h>          : "𑰏"  U11C0F  # BHAIKSUKI LETTER KHA
+<Multi_key> <b> <B> <H> <g> <space>      : "𑰐"  U11C10  # BHAIKSUKI LETTER GA
+<Multi_key> <b> <B> <H> <g> <h>          : "𑰑"  U11C11  # BHAIKSUKI LETTER GHA
+<Multi_key> <b> <B> <H> <semicolon> <n>  : "𑰒"  U11C12  # BHAIKSUKI LETTER NGA
+<Multi_key> <b> <B> <H> <c> <space>      : "𑰓"  U11C13  # BHAIKSUKI LETTER CA
+<Multi_key> <b> <B> <H> <c> <h>          : "𑰔"  U11C14  # BHAIKSUKI LETTER CHA
+<Multi_key> <b> <B> <H> <j> <space>      : "𑰕"  U11C15  # BHAIKSUKI LETTER JA
+<Multi_key> <b> <B> <H> <j> <h>          : "𑰖"  U11C16  # BHAIKSUKI LETTER JHA
 <Multi_key> <b> <B> <H> <asciitilde> <n> : "𑰗"  U11C17  # BHAIKSUKI LETTER NYA
 <Multi_key> <b> <B> <H> <period> <t> <space> : "𑰘"  U11C18  # BHAIKSUKI LETTER TTA
 <Multi_key> <b> <B> <H> <period> <t> <h> : "𑰙"  U11C19  # BHAIKSUKI LETTER TTHA
 <Multi_key> <b> <B> <H> <period> <d> <space> : "𑰚"  U11C1A  # BHAIKSUKI LETTER DDA
 <Multi_key> <b> <B> <H> <period> <d> <h> : "𑰛"  U11C1B  # BHAIKSUKI LETTER DDHA
-<Multi_key> <b> <B> <H> <period> <n> : "𑰜"  U11C1C  # BHAIKSUKI LETTER NNA
-<Multi_key> <b> <B> <H> <t> <space> : "𑰝"  U11C1D  # BHAIKSUKI LETTER TA
-<Multi_key> <b> <B> <H> <t> <h> : "𑰞"  U11C1E  # BHAIKSUKI LETTER THA
-<Multi_key> <b> <B> <H> <d> <space> : "𑰟"  U11C1F  # BHAIKSUKI LETTER DA
-<Multi_key> <b> <B> <H> <d> <h> : "𑰠"  U11C20  # BHAIKSUKI LETTER DHA
-<Multi_key> <b> <B> <H> <n> : "𑰡"  U11C21  # BHAIKSUKI LETTER NA
-<Multi_key> <b> <B> <H> <p> <space> : "𑰢"  U11C22  # BHAIKSUKI LETTER PA
-<Multi_key> <b> <B> <H> <p> <h> : "𑰣"  U11C23  # BHAIKSUKI LETTER PHA
-<Multi_key> <b> <B> <H> <b> <space> : "𑰤"  U11C24  # BHAIKSUKI LETTER BA
-<Multi_key> <b> <B> <H> <b> <h> : "𑰥"  U11C25  # BHAIKSUKI LETTER BHA
-<Multi_key> <b> <B> <H> <m> : "𑰦"  U11C26  # BHAIKSUKI LETTER MA
-<Multi_key> <b> <B> <H> <y> : "𑰧"  U11C27  # BHAIKSUKI LETTER YA
-<Multi_key> <b> <B> <H> <r> : "𑰨"  U11C28  # BHAIKSUKI LETTER RA
-<Multi_key> <b> <B> <H> <l> : "𑰩"  U11C29  # BHAIKSUKI LETTER LA
-<Multi_key> <b> <B> <H> <v> : "𑰪"  U11C2A  # BHAIKSUKI LETTER VA
-<Multi_key> <b> <B> <H> <semicolon> <s> : "𑰫"  U11C2B  # BHAIKSUKI LETTER SHA
-<Multi_key> <b> <B> <H> <period> <s> : "𑰬"  U11C2C  # BHAIKSUKI LETTER SSA
-<Multi_key> <b> <B> <H> <s> : "𑰭"  U11C2D  # BHAIKSUKI LETTER SA
-<Multi_key> <b> <B> <H> <h> : "𑰮"  U11C2E  # BHAIKSUKI LETTER HA
+<Multi_key> <b> <B> <H> <period> <n>     : "𑰜"  U11C1C  # BHAIKSUKI LETTER NNA
+<Multi_key> <b> <B> <H> <t> <space>      : "𑰝"  U11C1D  # BHAIKSUKI LETTER TA
+<Multi_key> <b> <B> <H> <t> <h>          : "𑰞"  U11C1E  # BHAIKSUKI LETTER THA
+<Multi_key> <b> <B> <H> <d> <space>      : "𑰟"  U11C1F  # BHAIKSUKI LETTER DA
+<Multi_key> <b> <B> <H> <d> <h>          : "𑰠"  U11C20  # BHAIKSUKI LETTER DHA
+<Multi_key> <b> <B> <H> <n>              : "𑰡"  U11C21  # BHAIKSUKI LETTER NA
+<Multi_key> <b> <B> <H> <p> <space>      : "𑰢"  U11C22  # BHAIKSUKI LETTER PA
+<Multi_key> <b> <B> <H> <p> <h>          : "𑰣"  U11C23  # BHAIKSUKI LETTER PHA
+<Multi_key> <b> <B> <H> <b> <space>      : "𑰤"  U11C24  # BHAIKSUKI LETTER BA
+<Multi_key> <b> <B> <H> <b> <h>          : "𑰥"  U11C25  # BHAIKSUKI LETTER BHA
+<Multi_key> <b> <B> <H> <m>              : "𑰦"  U11C26  # BHAIKSUKI LETTER MA
+<Multi_key> <b> <B> <H> <y>              : "𑰧"  U11C27  # BHAIKSUKI LETTER YA
+<Multi_key> <b> <B> <H> <r>              : "𑰨"  U11C28  # BHAIKSUKI LETTER RA
+<Multi_key> <b> <B> <H> <l>              : "𑰩"  U11C29  # BHAIKSUKI LETTER LA
+<Multi_key> <b> <B> <H> <v>              : "𑰪"  U11C2A  # BHAIKSUKI LETTER VA
+<Multi_key> <b> <B> <H> <semicolon> <s>  : "𑰫"  U11C2B  # BHAIKSUKI LETTER SHA
+<Multi_key> <b> <B> <H> <period> <s>     : "𑰬"  U11C2C  # BHAIKSUKI LETTER SSA
+<Multi_key> <b> <B> <H> <s>              : "𑰭"  U11C2D  # BHAIKSUKI LETTER SA
+<Multi_key> <b> <B> <H> <h>              : "𑰮"  U11C2E  # BHAIKSUKI LETTER HA
 
-<Multi_key> <b> <B> <H> <a> <space> : "𑰀"  U11C00  # BHAIKSUKI LETTER A
-<Multi_key> <b> <B> <H> <a> <a> <space> : "𑰁"  U11C01  # BHAIKSUKI LETTER AA
-<Multi_key> <b> <B> <H> <i> <space> : "𑰂"  U11C02  # BHAIKSUKI LETTER I
-<Multi_key> <b> <B> <H> <i> <i> <space> : "𑰃"  U11C03  # BHAIKSUKI LETTER II
-<Multi_key> <b> <B> <H> <u> <space> : "𑰄"  U11C04  # BHAIKSUKI LETTER U
-<Multi_key> <b> <B> <H> <u> <u> <space> : "𑰅"  U11C05  # BHAIKSUKI LETTER UU
+<Multi_key> <b> <B> <H> <a> <space>      : "𑰀"  U11C00  # BHAIKSUKI LETTER A
+<Multi_key> <b> <B> <H> <a> <a> <space>  : "𑰁"  U11C01  # BHAIKSUKI LETTER AA
+<Multi_key> <b> <B> <H> <i> <space>      : "𑰂"  U11C02  # BHAIKSUKI LETTER I
+<Multi_key> <b> <B> <H> <i> <i> <space>  : "𑰃"  U11C03  # BHAIKSUKI LETTER II
+<Multi_key> <b> <B> <H> <u> <space>      : "𑰄"  U11C04  # BHAIKSUKI LETTER U
+<Multi_key> <b> <B> <H> <u> <u> <space>  : "𑰅"  U11C05  # BHAIKSUKI LETTER UU
 <Multi_key> <b> <B> <H> <comma> <r> <space> : "𑰆"  U11C06  # BHAIKSUKI LETTER VOCALIC R
 <Multi_key> <b> <B> <H> <comma> <r> <r> <space> : "𑰇"  U11C07  # BHAIKSUKI LETTER VOCALIC RR
 <Multi_key> <b> <B> <H> <comma> <l> <space> : "𑰈"  U11C08  # BHAIKSUKI LETTER VOCALIC L
-<Multi_key> <b> <B> <H> <e> <e> <space> : "𑰊"  U11C0A  # BHAIKSUKI LETTER E
-<Multi_key> <b> <B> <H> <a> <i> <space> : "𑰋"  U11C0B  # BHAIKSUKI LETTER AI
-<Multi_key> <b> <B> <H> <o> <o> <space> : "𑰌"  U11C0C  # BHAIKSUKI LETTER O
-<Multi_key> <b> <B> <H> <a> <u> <space> : "𑰍"  U11C0D  # BHAIKSUKI LETTER AU
+<Multi_key> <b> <B> <H> <e> <e> <space>  : "𑰊"  U11C0A  # BHAIKSUKI LETTER E
+<Multi_key> <b> <B> <H> <a> <i> <space>  : "𑰋"  U11C0B  # BHAIKSUKI LETTER AI
+<Multi_key> <b> <B> <H> <o> <o> <space>  : "𑰌"  U11C0C  # BHAIKSUKI LETTER O
+<Multi_key> <b> <B> <H> <a> <u> <space>  : "𑰍"  U11C0D  # BHAIKSUKI LETTER AU
 
 <Multi_key> <b> <B> <H> <a> <a> <Return> : "𑰯"  U11C2F  # BHAIKSUKI VOWEL SIGN AA
-<Multi_key> <b> <B> <H> <i> <Return> : "𑰰"  U11C30  # BHAIKSUKI VOWEL SIGN I
+<Multi_key> <b> <B> <H> <i> <Return>     : "𑰰"  U11C30  # BHAIKSUKI VOWEL SIGN I
 <Multi_key> <b> <B> <H> <i> <i> <Return> : "𑰱"  U11C31  # BHAIKSUKI VOWEL SIGN II
-<Multi_key> <b> <B> <H> <u> <Return> : "𑰲"  U11C32  # BHAIKSUKI VOWEL SIGN U
+<Multi_key> <b> <B> <H> <u> <Return>     : "𑰲"  U11C32  # BHAIKSUKI VOWEL SIGN U
 <Multi_key> <b> <B> <H> <u> <u> <Return> : "𑰳"  U11C33  # BHAIKSUKI VOWEL SIGN UU
 <Multi_key> <b> <B> <H> <comma> <r> <Return> : "𑰴"  U11C34  # BHAIKSUKI VOWEL SIGN VOCALIC R
 <Multi_key> <b> <B> <H> <comma> <r> <r> <Return> : "𑰵"  U11C35  # BHAIKSUKI VOWEL SIGN VOCALIC RR
@@ -4886,17 +4887,17 @@ include "%L"
 <Multi_key> <b> <B> <H> <a> <i> <Return> : "𑰹"  U11C39  # BHAIKSUKI VOWEL SIGN AI
 <Multi_key> <b> <B> <H> <o> <o> <Return> : "𑰺"  U11C3A  # BHAIKSUKI VOWEL SIGN O
 <Multi_key> <b> <B> <H> <a> <u> <Return> : "𑰻"  U11C3B  # BHAIKSUKI VOWEL SIGN AU
-<Multi_key> <b> <B> <H> <0> <Return> : "𑰿"  U11C3F  # BHAIKSUKI SIGN VIRAMA
+<Multi_key> <b> <B> <H> <0> <Return>     : "𑰿"  U11C3F  # BHAIKSUKI SIGN VIRAMA
 
 <Multi_key> <b> <B> <H> <period> <parenright> <Return> : "𑰼"  U11C3C  # BHAIKSUKI SIGN CANDRABINDU
 <Multi_key> <b> <B> <H> <period> <Return> : "𑰽"  U11C3D  # BHAIKSUKI SIGN ANUSVARA
 <Multi_key> <b> <B> <H> <colon> <Return> : "𑰾"  U11C3E  # BHAIKSUKI SIGN VISARGA
 <Multi_key> <b> <B> <H> <comma> <Return> : "𑰿"  U11C3F  # BHAIKSUKI SIGN VIRAMA
 
-<Multi_key> <b> <B> <H> <S> : "𑱀"  U11C40  # BHAIKSUKI SIGN AVAGRAHA
-<Multi_key> <b> <B> <H> <bar> : "𑱁"  U11C41  # BHAIKSUKI DANDA
-<Multi_key> <b> <B> <H> <2> <bar> : "𑱂"  U11C42  # BHAIKSUKI DOUBLE DANDA
-<Multi_key> <b> <B> <H> <space> : "𑱃"  U11C43  # BHAIKSUKI WORD SEPARATOR
+<Multi_key> <b> <B> <H> <S>              : "𑱀"  U11C40  # BHAIKSUKI SIGN AVAGRAHA
+<Multi_key> <b> <B> <H> <bar>            : "𑱁"  U11C41  # BHAIKSUKI DANDA
+<Multi_key> <b> <B> <H> <2> <bar>        : "𑱂"  U11C42  # BHAIKSUKI DOUBLE DANDA
+<Multi_key> <b> <B> <H> <space>          : "𑱃"  U11C43  # BHAIKSUKI WORD SEPARATOR
     
 <Multi_key> <b> <B> <H> <numbersign> <0> : "𑱐"  U11C50  # BHAIKSUKI DIGIT ZERO
 <Multi_key> <b> <B> <H> <numbersign> <1> : "𑱑"  U11C51  # BHAIKSUKI DIGIT ONE
@@ -4909,24 +4910,24 @@ include "%L"
 <Multi_key> <b> <B> <H> <numbersign> <8> : "𑱘"  U11C58  # BHAIKSUKI DIGIT EIGHT
 <Multi_key> <b> <B> <H> <numbersign> <9> : "𑱙"  U11C59  # BHAIKSUKI DIGIT NINE
 
-<Multi_key> <b> <B> <H> <1> <space> : "𑱚"  U11C5A  # BHAIKSUKI NUMBER ONE
-<Multi_key> <b> <B> <H> <2> <space> : "𑱛"  U11C5B  # BHAIKSUKI NUMBER TWO
-<Multi_key> <b> <B> <H> <3> <space> : "𑱜"  U11C5C  # BHAIKSUKI NUMBER THREE
-<Multi_key> <b> <B> <H> <4> <space> : "𑱝"  U11C5D  # BHAIKSUKI NUMBER FOUR
-<Multi_key> <b> <B> <H> <5> <space> : "𑱞"  U11C5E  # BHAIKSUKI NUMBER FIVE
-<Multi_key> <b> <B> <H> <6> <space> : "𑱟"  U11C5F  # BHAIKSUKI NUMBER SIX
-<Multi_key> <b> <B> <H> <7> <space> : "𑱠"  U11C60  # BHAIKSUKI NUMBER SEVEN
-<Multi_key> <b> <B> <H> <8> <space> : "𑱡"  U11C61  # BHAIKSUKI NUMBER EIGHT
-<Multi_key> <b> <B> <H> <9> <space> : "𑱢"  U11C62  # BHAIKSUKI NUMBER NINE
-<Multi_key> <b> <B> <H> <1> <0> : "𑱣"  U11C63  # BHAIKSUKI NUMBER TEN
-<Multi_key> <b> <B> <H> <2> <0> : "𑱤"  U11C64  # BHAIKSUKI NUMBER TWENTY
-<Multi_key> <b> <B> <H> <3> <0> : "𑱥"  U11C65  # BHAIKSUKI NUMBER THIRTY
-<Multi_key> <b> <B> <H> <4> <0> : "𑱦"  U11C66  # BHAIKSUKI NUMBER FORTY
-<Multi_key> <b> <B> <H> <5> <0> : "𑱧"  U11C67  # BHAIKSUKI NUMBER FIFTY
-<Multi_key> <b> <B> <H> <6> <0> : "𑱨"  U11C68  # BHAIKSUKI NUMBER SIXTY
-<Multi_key> <b> <B> <H> <7> <0> : "𑱩"  U11C69  # BHAIKSUKI NUMBER SEVENTY
-<Multi_key> <b> <B> <H> <8> <0> : "𑱪"  U11C6A  # BHAIKSUKI NUMBER EIGHTY
-<Multi_key> <b> <B> <H> <9> <0> : "𑱫"  U11C6B  # BHAIKSUKI NUMBER NINETY
+<Multi_key> <b> <B> <H> <1> <space>      : "𑱚"  U11C5A  # BHAIKSUKI NUMBER ONE
+<Multi_key> <b> <B> <H> <2> <space>      : "𑱛"  U11C5B  # BHAIKSUKI NUMBER TWO
+<Multi_key> <b> <B> <H> <3> <space>      : "𑱜"  U11C5C  # BHAIKSUKI NUMBER THREE
+<Multi_key> <b> <B> <H> <4> <space>      : "𑱝"  U11C5D  # BHAIKSUKI NUMBER FOUR
+<Multi_key> <b> <B> <H> <5> <space>      : "𑱞"  U11C5E  # BHAIKSUKI NUMBER FIVE
+<Multi_key> <b> <B> <H> <6> <space>      : "𑱟"  U11C5F  # BHAIKSUKI NUMBER SIX
+<Multi_key> <b> <B> <H> <7> <space>      : "𑱠"  U11C60  # BHAIKSUKI NUMBER SEVEN
+<Multi_key> <b> <B> <H> <8> <space>      : "𑱡"  U11C61  # BHAIKSUKI NUMBER EIGHT
+<Multi_key> <b> <B> <H> <9> <space>      : "𑱢"  U11C62  # BHAIKSUKI NUMBER NINE
+<Multi_key> <b> <B> <H> <1> <0>          : "𑱣"  U11C63  # BHAIKSUKI NUMBER TEN
+<Multi_key> <b> <B> <H> <2> <0>          : "𑱤"  U11C64  # BHAIKSUKI NUMBER TWENTY
+<Multi_key> <b> <B> <H> <3> <0>          : "𑱥"  U11C65  # BHAIKSUKI NUMBER THIRTY
+<Multi_key> <b> <B> <H> <4> <0>          : "𑱦"  U11C66  # BHAIKSUKI NUMBER FORTY
+<Multi_key> <b> <B> <H> <5> <0>          : "𑱧"  U11C67  # BHAIKSUKI NUMBER FIFTY
+<Multi_key> <b> <B> <H> <6> <0>          : "𑱨"  U11C68  # BHAIKSUKI NUMBER SIXTY
+<Multi_key> <b> <B> <H> <7> <0>          : "𑱩"  U11C69  # BHAIKSUKI NUMBER SEVENTY
+<Multi_key> <b> <B> <H> <8> <0>          : "𑱪"  U11C6A  # BHAIKSUKI NUMBER EIGHTY
+<Multi_key> <b> <B> <H> <9> <0>          : "𑱫"  U11C6B  # BHAIKSUKI NUMBER NINETY
 <Multi_key> <b> <B> <H> <numbersign> <comma> : "𑱬"  U11C6C  # BHAIKSUKI HUNDREDS UNIT MARK
 
 # (C = Chakma)
@@ -5020,6 +5021,69 @@ include "%L"
 <Multi_key> <b> <C> <2> <bar>            : "𑅂"  U11142  # CHAKMA DOUBLE DANDA
 <Multi_key> <b> <C> <question>           : "𑅃"  U11143  # CHAKMA QUESTION MARK
 <Multi_key> <b> <C> <Multi_key> <S> <O>  : "𑅀"  U11140  # CHAKMA SECTION MARK
+
+# (D = Dogra)
+
+<Multi_key> <b> <D> <a> <space>          : "𑠀"  U11800  # DOGRA LETTER A
+<Multi_key> <b> <D> <a> <a> <space>      : "𑠁"  U11801  # DOGRA LETTER AA
+<Multi_key> <b> <D> <i> <space>          : "𑠂"  U11802  # DOGRA LETTER I
+<Multi_key> <b> <D> <i> <i> <space>      : "𑠃"  U11803  # DOGRA LETTER II
+<Multi_key> <b> <D> <u> <space>          : "𑠄"  U11804  # DOGRA LETTER U
+<Multi_key> <b> <D> <u> <u> <space>      : "𑠅"  U11805  # DOGRA LETTER UU
+<Multi_key> <b> <D> <e> <e> <space>      : "𑠆"  U11806  # DOGRA LETTER E
+<Multi_key> <b> <D> <a> <i> <space>      : "𑠇"  U11807  # DOGRA LETTER AI
+<Multi_key> <b> <D> <o> <o> <space>      : "𑠈"  U11808  # DOGRA LETTER O
+<Multi_key> <b> <D> <a> <u> <space>      : "𑠉"  U11809  # DOGRA LETTER AU
+<Multi_key> <b> <D> <k> <space>          : "𑠊"  U1180A  # DOGRA LETTER KA
+<Multi_key> <b> <D> <k> <h>              : "𑠋"  U1180B  # DOGRA LETTER KHA
+<Multi_key> <b> <D> <g> <space>          : "𑠌"  U1180C  # DOGRA LETTER GA
+<Multi_key> <b> <D> <g> <h>              : "𑠍"  U1180D  # DOGRA LETTER GHA
+<Multi_key> <b> <D> <semicolon> <n>      : "𑠎"  U1180E  # DOGRA LETTER NGA
+<Multi_key> <b> <D> <c> <space>          : "𑠏"  U1180F  # DOGRA LETTER CA
+<Multi_key> <b> <D> <c> <h>              : "𑠐"  U11810  # DOGRA LETTER CHA
+<Multi_key> <b> <D> <j> <space>          : "𑠑"  U11811  # DOGRA LETTER JA
+<Multi_key> <b> <D> <j> <h>              : "𑠒"  U11812  # DOGRA LETTER JHA
+<Multi_key> <b> <D> <asciitilde> <n>     : "𑠓"  U11813  # DOGRA LETTER NYA
+<Multi_key> <b> <D> <period> <t> <space> : "𑠔"  U11814  # DOGRA LETTER TTA
+<Multi_key> <b> <D> <period> <t> <h>     : "𑠕"  U11815  # DOGRA LETTER TTHA
+<Multi_key> <b> <D> <period> <d> <space> : "𑠖"  U11816  # DOGRA LETTER DDA
+<Multi_key> <b> <D> <period> <d> <h>     : "𑠗"  U11817  # DOGRA LETTER DDHA
+<Multi_key> <b> <D> <period> <n>         : "𑠘"  U11818  # DOGRA LETTER NNA
+<Multi_key> <b> <D> <t> <space>          : "𑠙"  U11819  # DOGRA LETTER TA
+<Multi_key> <b> <D> <t> <h>              : "𑠚"  U1181A  # DOGRA LETTER THA
+<Multi_key> <b> <D> <d> <space>          : "𑠛"  U1181B  # DOGRA LETTER DA
+<Multi_key> <b> <D> <d> <h>              : "𑠜"  U1181C  # DOGRA LETTER DHA
+<Multi_key> <b> <D> <n>                  : "𑠝"  U1181D  # DOGRA LETTER NA
+<Multi_key> <b> <D> <p> <space>          : "𑠞"  U1181E  # DOGRA LETTER PA
+<Multi_key> <b> <D> <p> <h>              : "𑠟"  U1181F  # DOGRA LETTER PHA
+<Multi_key> <b> <D> <b> <space>          : "𑠠"  U11820  # DOGRA LETTER BA
+<Multi_key> <b> <D> <b> <h>              : "𑠡"  U11821  # DOGRA LETTER BHA
+<Multi_key> <b> <D> <m>                  : "𑠢"  U11822  # DOGRA LETTER MA
+<Multi_key> <b> <D> <y>                  : "𑠣"  U11823  # DOGRA LETTER YA
+<Multi_key> <b> <D> <r>                  : "𑠤"  U11824  # DOGRA LETTER RA
+<Multi_key> <b> <D> <l>                  : "𑠥"  U11825  # DOGRA LETTER LA
+<Multi_key> <b> <D> <v>                  : "𑠦"  U11826  # DOGRA LETTER VA
+<Multi_key> <b> <D> <semicolon> <s>      : "𑠧"  U11827  # DOGRA LETTER SHA
+<Multi_key> <b> <D> <period> <s>         : "𑠨"  U11828  # DOGRA LETTER SSA
+<Multi_key> <b> <D> <s>                  : "𑠩"  U11829  # DOGRA LETTER SA
+<Multi_key> <b> <D> <h>                  : "𑠪"  U1182A  # DOGRA LETTER HA
+<Multi_key> <b> <D> <underscore> <r>     : "𑠫"  U1182B  # DOGRA LETTER RRA
+<Multi_key> <b> <D> <a> <a> <Return>     : "𑠬"  U1182C  # DOGRA VOWEL SIGN AA
+<Multi_key> <b> <D> <i> <Return>         : "𑠭"  U1182D  # DOGRA VOWEL SIGN I
+<Multi_key> <b> <D> <i> <i> <Return>     : "𑠮"  U1182E  # DOGRA VOWEL SIGN II
+<Multi_key> <b> <D> <u> <Return>         : "𑠯"  U1182F  # DOGRA VOWEL SIGN U
+<Multi_key> <b> <D> <u> <u> <Return>     : "𑠰"  U11830  # DOGRA VOWEL SIGN UU
+<Multi_key> <b> <D> <comma> <r> <Return> : "𑠱"  U11831  # DOGRA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <D> <comma> <r> <r> <Return> : "𑠲"  U11832  # DOGRA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <D> <e> <e> <Return>     : "𑠳"  U11833  # DOGRA VOWEL SIGN E
+<Multi_key> <b> <D> <a> <i> <Return>     : "𑠴"  U11834  # DOGRA VOWEL SIGN AI
+<Multi_key> <b> <D> <o> <o> <Return>     : "𑠵"  U11835  # DOGRA VOWEL SIGN O
+<Multi_key> <b> <D> <a> <u> <Return>     : "𑠶"  U11836  # DOGRA VOWEL SIGN AU
+<Multi_key> <b> <D> <period> <Return>    : "𑠷"  U11837  # DOGRA SIGN ANUSVARA
+<Multi_key> <b> <D> <colon> <Return>     : "𑠸"  U11838  # DOGRA SIGN VISARGA
+<Multi_key> <b> <D> <comma> <Return>     : "𑠹"  U11839  # DOGRA SIGN VIRAMA
+<Multi_key> <b> <D> <underscore> <period> <Return> : "𑠺"  U1183A  # DOGRA SIGN NUKTA
+<Multi_key> <b> <D> <o> <period>         : "𑠻"  U1183B  # DOGRA ABBREVIATION SIGN
 
 # (g = Gujarati)
 
@@ -5222,55 +5286,262 @@ include "%L"
 
 <Multi_key> <b> <G> <o> <period>         : "੶"  U0A76  # GURMUKHI ABBREVIATION SIGN (conflicts)
 
-# (j = Mahajani) (not the best abbreviation but not much choice)
-
-# Vowels
-
-<Multi_key> <b> <j> <a>                            : "𑅐"  U11150  # MAHAJANI LETTER A
-<Multi_key> <b> <j> <i>                            : "𑅑"  U11151  # MAHAJANI LETTER I
-<Multi_key> <b> <j> <u>                            : "𑅒"  U11152  # MAHAJANI LETTER U
-<Multi_key> <b> <j> <e>                            : "𑅓"  U11153  # MAHAJANI LETTER E
-<Multi_key> <b> <j> <o>                            : "𑅔"  U11154  # MAHAJANI LETTER O
+# (GG = Gujala Gondi)
 
 # Consonants
 
-<Multi_key> <b> <j> <k> <space>                    : "𑅕"  U11155  # MAHAJANI LETTER KA
-<Multi_key> <b> <j> <k> <h>                        : "𑅖"  U11156  # MAHAJANI LETTER KHA
-<Multi_key> <b> <j> <g> <space>                    : "𑅗"  U11157  # MAHAJANI LETTER GA
-<Multi_key> <b> <j> <g> <h>                        : "𑅘"  U11158  # MAHAJANI LETTER GHA
-<Multi_key> <b> <j> <c> <space>                    : "𑅙"  U11159  # MAHAJANI LETTER CA
-<Multi_key> <b> <j> <c> <h>                        : "𑅚"  U1115A  # MAHAJANI LETTER CHA
-<Multi_key> <b> <j> <j> <space>                    : "𑅛"  U1115B  # MAHAJANI LETTER JA
-<Multi_key> <b> <j> <j> <h>                        : "𑅜"  U1115C  # MAHAJANI LETTER JHA
-<Multi_key> <b> <j> <asciitilde> <n>               : "𑅝"  U1115D  # MAHAJANI LETTER NYA
-<Multi_key> <b> <j> <period> <t> <space>           : "𑅞"  U1115E  # MAHAJANI LETTER TTA
-<Multi_key> <b> <j> <period> <t> <h>               : "𑅟"  U1115F  # MAHAJANI LETTER TTHA
-<Multi_key> <b> <j> <period> <d> <space>           : "𑅠"  U11160  # MAHAJANI LETTER DDA
-<Multi_key> <b> <j> <period> <d> <h>               : "𑅡"  U11161  # MAHAJANI LETTER DDHA
-<Multi_key> <b> <j> <period> <n>                   : "𑅢"  U11162  # MAHAJANI LETTER NNA
-<Multi_key> <b> <j> <t> <space>                    : "𑅣"  U11163  # MAHAJANI LETTER TA
-<Multi_key> <b> <j> <t> <h>                        : "𑅤"  U11164  # MAHAJANI LETTER THA
-<Multi_key> <b> <j> <d> <space>                    : "𑅥"  U11165  # MAHAJANI LETTER DA
-<Multi_key> <b> <j> <d> <h>                        : "𑅦"  U11166  # MAHAJANI LETTER DHA
-<Multi_key> <b> <j> <n>                            : "𑅧"  U11167  # MAHAJANI LETTER NA
-<Multi_key> <b> <j> <p> <space>                    : "𑅨"  U11168  # MAHAJANI LETTER PA
-<Multi_key> <b> <j> <p> <h>                        : "𑅩"  U11169  # MAHAJANI LETTER PHA
-<Multi_key> <b> <j> <b> <space>                    : "𑅪"  U1116A  # MAHAJANI LETTER BA
-<Multi_key> <b> <j> <b> <h>                        : "𑅫"  U1116B  # MAHAJANI LETTER BHA
-<Multi_key> <b> <j> <m>                            : "𑅬"  U1116C  # MAHAJANI LETTER MA
-<Multi_key> <b> <j> <r>                            : "𑅭"  U1116D  # MAHAJANI LETTER RA
-<Multi_key> <b> <j> <l>                            : "𑅮"  U1116E  # MAHAJANI LETTER LA
-<Multi_key> <b> <j> <v>                            : "𑅯"  U1116F  # MAHAJANI LETTER VA
-<Multi_key> <b> <j> <s>                            : "𑅰"  U11170  # MAHAJANI LETTER SA
-<Multi_key> <b> <j> <h>                            : "𑅱"  U11171  # MAHAJANI LETTER HA
-<Multi_key> <b> <j> <underscore> <r>               : "𑅲"  U11172  # MAHAJANI LETTER RRA
+<Multi_key> <b> <G> <G> <y> : "𑵬"  U11D6C  # GUNJALA GONDI LETTER YA (conflicts)
+<Multi_key> <b> <G> <G> <v> : "𑵭"  U11D6D  # GUNJALA GONDI LETTER VA (conflicts)
+<Multi_key> <b> <G> <G> <b> <space> : "𑵮"  U11D6E  # GUNJALA GONDI LETTER BA (conflicts)
+<Multi_key> <b> <G> <G> <b> <h> : "𑵯"  U11D6F  # GUNJALA GONDI LETTER BHA (conflicts)
+<Multi_key> <b> <G> <G> <m> : "𑵰"  U11D70  # GUNJALA GONDI LETTER MA (conflicts)
+<Multi_key> <b> <G> <G> <k> <space> : "𑵱"  U11D71  # GUNJALA GONDI LETTER KA (conflicts)
+<Multi_key> <b> <G> <G> <k> <h> : "𑵲"  U11D72  # GUNJALA GONDI LETTER KHA (conflicts)
+<Multi_key> <b> <G> <G> <t> <space> : "𑵳"  U11D73  # GUNJALA GONDI LETTER TA (conflicts)
+<Multi_key> <b> <G> <G> <t> <h> : "𑵴"  U11D74  # GUNJALA GONDI LETTER THA (conflicts)
+<Multi_key> <b> <G> <G> <l> : "𑵵"  U11D75  # GUNJALA GONDI LETTER LA (conflicts)
+<Multi_key> <b> <G> <G> <g> <space> : "𑵶"  U11D76  # GUNJALA GONDI LETTER GA (conflicts)
+<Multi_key> <b> <G> <G> <g> <h> : "𑵷"  U11D77  # GUNJALA GONDI LETTER GHA (conflicts)
+<Multi_key> <b> <G> <G> <d> <space> : "𑵸"  U11D78  # GUNJALA GONDI LETTER DA (conflicts)
+<Multi_key> <b> <G> <G> <d> <h> : "𑵹"  U11D79  # GUNJALA GONDI LETTER DHA (conflicts)
+<Multi_key> <b> <G> <G> <n> : "𑵺"  U11D7A  # GUNJALA GONDI LETTER NA (conflicts)
+<Multi_key> <b> <G> <G> <c> <space> : "𑵻"  U11D7B  # GUNJALA GONDI LETTER CA (conflicts)
+<Multi_key> <b> <G> <G> <c> <h> : "𑵼"  U11D7C  # GUNJALA GONDI LETTER CHA (conflicts)
+<Multi_key> <b> <G> <G> <period> <t> <space> : "𑵽"  U11D7D  # GUNJALA GONDI LETTER TTA (conflicts)
+<Multi_key> <b> <G> <G> <period> <t> <h> : "𑵾"  U11D7E  # GUNJALA GONDI LETTER TTHA (conflicts)
+<Multi_key> <b> <G> <G> <period> <l> : "𑵿"  U11D7F  # GUNJALA GONDI LETTER LLA (conflicts)
+<Multi_key> <b> <G> <G> <j> <space> : "𑶀"  U11D80  # GUNJALA GONDI LETTER JA (conflicts)
+<Multi_key> <b> <G> <G> <j> <h> : "𑶁"  U11D81  # GUNJALA GONDI LETTER JHA (conflicts)
+<Multi_key> <b> <G> <G> <period> <d> <space> : "𑶂"  U11D82  # GUNJALA GONDI LETTER DDA (conflicts)
+<Multi_key> <b> <G> <G> <period> <d> <h> : "𑶃"  U11D83  # GUNJALA GONDI LETTER DDHA (conflicts)
+<Multi_key> <b> <G> <G> <semicolon> <n> : "𑶄"  U11D84  # GUNJALA GONDI LETTER NGA (conflicts)
+<Multi_key> <b> <G> <G> <p> <space> : "𑶅"  U11D85  # GUNJALA GONDI LETTER PA (conflicts)
+<Multi_key> <b> <G> <G> <p> <h> : "𑶆"  U11D86  # GUNJALA GONDI LETTER PHA (conflicts)
+<Multi_key> <b> <G> <G> <h> : "𑶇"  U11D87  # GUNJALA GONDI LETTER HA (conflicts)
+<Multi_key> <b> <G> <G> <r> : "𑶈"  U11D88  # GUNJALA GONDI LETTER RA (conflicts)
+<Multi_key> <b> <G> <G> <s> : "𑶉"  U11D89  # GUNJALA GONDI LETTER SA (conflicts)
+
+# Independent vowels
+
+<Multi_key> <b> <G> <G> <a> <space> : "𑵠"  U11D60  # GUNJALA GONDI LETTER A (conflicts)
+<Multi_key> <b> <G> <G> <a> <a> <space> : "𑵡"  U11D61  # GUNJALA GONDI LETTER AA (conflicts)
+<Multi_key> <b> <G> <G> <i> <space> : "𑵢"  U11D62  # GUNJALA GONDI LETTER I (conflicts)
+<Multi_key> <b> <G> <G> <i> <i> <space> : "𑵣"  U11D63  # GUNJALA GONDI LETTER II (conflicts)
+<Multi_key> <b> <G> <G> <u> <space> : "𑵤"  U11D64  # GUNJALA GONDI LETTER U (conflicts)
+<Multi_key> <b> <G> <G> <u> <u> <space> : "𑵥"  U11D65  # GUNJALA GONDI LETTER UU (conflicts)
+<Multi_key> <b> <G> <G> <e> <e> <space> : "𑵧"  U11D67  # GUNJALA GONDI LETTER EE (conflicts)
+<Multi_key> <b> <G> <G> <a> <i> <space> : "𑵨"  U11D68  # GUNJALA GONDI LETTER AI (conflicts)
+<Multi_key> <b> <G> <G> <o> <o> <space> : "𑵪"  U11D6A  # GUNJALA GONDI LETTER OO (conflicts)
+<Multi_key> <b> <G> <G> <a> <u> <space> : "𑵫"  U11D6B  # GUNJALA GONDI LETTER AU (conflicts)
+
+# Dependent vowels
+
+<Multi_key> <b> <G> <G> <a> <a> <Return> : "𑶊"  U11D8A  # GUNJALA GONDI VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <G> <G> <i> <Return> : "𑶋"  U11D8B  # GUNJALA GONDI VOWEL SIGN I (conflicts)
+<Multi_key> <b> <G> <G> <i> <i> <Return> : "𑶌"  U11D8C  # GUNJALA GONDI VOWEL SIGN II (conflicts)
+<Multi_key> <b> <G> <G> <u> <Return> : "𑶍"  U11D8D  # GUNJALA GONDI VOWEL SIGN U (conflicts)
+<Multi_key> <b> <G> <G> <u> <u> <Return> : "𑶎"  U11D8E  # GUNJALA GONDI VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <G> <G> <e> <e> <Return> : "𑶐"  U11D90  # GUNJALA GONDI VOWEL SIGN EE (conflicts)
+<Multi_key> <b> <G> <G> <a> <i> <Return> : "𑶑"  U11D91  # GUNJALA GONDI VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <G> <G> <o> <o> <Return> : "𑶓"  U11D93  # GUNJALA GONDI VOWEL SIGN OO (conflicts)
+<Multi_key> <b> <G> <G> <a> <u> <Return> : "𑶔"  U11D94  # GUNJALA GONDI VOWEL SIGN AU (conflicts)
+<Multi_key> <b> <G> <G> <0> <Return> : "𑶗"  U11D97  # GUNJALA GONDI VIRAMA (conflicts)
 
 # Other signs
 
-<Multi_key> <b> <j> <underscore> <period> <Return> : "𑅳"  U11173  # MAHAJANI SIGN NUKTA
-<Multi_key> <b> <j> <asciicircum> <period>         : "𑅴"  U11174  # MAHAJANI ABBREVIATION SIGN
-<Multi_key> <b> <j> <Multi_key> <S> <O>            : "𑅵"  U11175  # MAHAJANI SECTION MARK
-<Multi_key> <b> <j> <S> <H> <R> <I>                : "𑅶"  U11176  # MAHAJANI LIGATURE SHRI
+<Multi_key> <b> <G> <G> <period> <Return> : "𑶕"  U11D95  # GUNJALA GONDI SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <G> <G> <colon> <Return> : "𑶖"  U11D96  # GUNJALA GONDI SIGN VISARGA (conflicts)
+<Multi_key> <b> <G> <G> <comma> <Return> : "𑶗"  U11D97  # GUNJALA GONDI VIRAMA (conflicts)
+<Multi_key> <b> <G> <G> <o> <m> : "𑶘"  U11D98  # GUNJALA GONDI OM (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <G> <G> <numbersign> <0> : "𑶠"  U11DA0  # GUNJALA GONDI DIGIT ZERO (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <1> : "𑶡"  U11DA1  # GUNJALA GONDI DIGIT ONE (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <2> : "𑶢"  U11DA2  # GUNJALA GONDI DIGIT TWO (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <3> : "𑶣"  U11DA3  # GUNJALA GONDI DIGIT THREE (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <4> : "𑶤"  U11DA4  # GUNJALA GONDI DIGIT FOUR (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <5> : "𑶥"  U11DA5  # GUNJALA GONDI DIGIT FIVE (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <6> : "𑶦"  U11DA6  # GUNJALA GONDI DIGIT SIX (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <7> : "𑶧"  U11DA7  # GUNJALA GONDI DIGIT SEVEN (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <8> : "𑶨"  U11DA8  # GUNJALA GONDI DIGIT EIGHT (conflicts)
+<Multi_key> <b> <G> <G> <numbersign> <9> : "𑶩"  U11DA9  # GUNJALA GONDI DIGIT NINE (conflicts)
+
+# (GK = Gurung Khema)
+
+# Consonants
+
+<Multi_key> <b> <G> <K> <a> <space> : "𖄀"  U16100  # GURUNG KHEMA LETTER A (conflicts)
+<Multi_key> <b> <G> <K> <k> <space> : "𖄁"  U16101  # GURUNG KHEMA LETTER KA (conflicts)
+<Multi_key> <b> <G> <K> <k> <h> : "𖄂"  U16102  # GURUNG KHEMA LETTER KHA (conflicts)
+<Multi_key> <b> <G> <K> <g> <space> : "𖄃"  U16103  # GURUNG KHEMA LETTER GA (conflicts)
+<Multi_key> <b> <G> <K> <g> <h> : "𖄄"  U16104  # GURUNG KHEMA LETTER GHA (conflicts)
+<Multi_key> <b> <G> <K> <semicolon> <n> : "𖄅"  U16105  # GURUNG KHEMA LETTER NGA (conflicts)
+<Multi_key> <b> <G> <K> <c> <space> : "𖄆"  U16106  # GURUNG KHEMA LETTER CA (conflicts)
+<Multi_key> <b> <G> <K> <c> <h> : "𖄇"  U16107  # GURUNG KHEMA LETTER CHA (conflicts)
+<Multi_key> <b> <G> <K> <j> <space> : "𖄈"  U16108  # GURUNG KHEMA LETTER JA (conflicts)
+<Multi_key> <b> <G> <K> <j> <h> : "𖄉"  U16109  # GURUNG KHEMA LETTER JHA (conflicts)
+<Multi_key> <b> <G> <K> <h> : "𖄊"  U1610A  # GURUNG KHEMA LETTER HA (conflicts)
+<Multi_key> <b> <G> <K> <period> <t> <space> : "𖄋"  U1610B  # GURUNG KHEMA LETTER TTA (conflicts)
+<Multi_key> <b> <G> <K> <period> <t> <h> : "𖄌"  U1610C  # GURUNG KHEMA LETTER TTHA (conflicts)
+<Multi_key> <b> <G> <K> <period> <d> <space> : "𖄍"  U1610D  # GURUNG KHEMA LETTER DDA (conflicts)
+<Multi_key> <b> <G> <K> <period> <d> <h> : "𖄎"  U1610E  # GURUNG KHEMA LETTER DDHA (conflicts)
+<Multi_key> <b> <G> <K> <v> : "𖄏"  U1610F  # GURUNG KHEMA LETTER VA (conflicts)
+<Multi_key> <b> <G> <K> <t> <space> : "𖄐"  U16110  # GURUNG KHEMA LETTER TA (conflicts)
+<Multi_key> <b> <G> <K> <t> <h> : "𖄑"  U16111  # GURUNG KHEMA LETTER THA (conflicts)
+<Multi_key> <b> <G> <K> <d> <space> : "𖄒"  U16112  # GURUNG KHEMA LETTER DA (conflicts)
+<Multi_key> <b> <G> <K> <d> <h> : "𖄓"  U16113  # GURUNG KHEMA LETTER DHA (conflicts)
+<Multi_key> <b> <G> <K> <n> : "𖄔"  U16114  # GURUNG KHEMA LETTER NA (conflicts)
+<Multi_key> <b> <G> <K> <p> <space> : "𖄕"  U16115  # GURUNG KHEMA LETTER PA (conflicts)
+<Multi_key> <b> <G> <K> <p> <h> : "𖄖"  U16116  # GURUNG KHEMA LETTER PHA (conflicts)
+<Multi_key> <b> <G> <K> <b> <space> : "𖄗"  U16117  # GURUNG KHEMA LETTER BA (conflicts)
+<Multi_key> <b> <G> <K> <b> <h> : "𖄘"  U16118  # GURUNG KHEMA LETTER BHA (conflicts)
+<Multi_key> <b> <G> <K> <m> : "𖄙"  U16119  # GURUNG KHEMA LETTER MA (conflicts)
+<Multi_key> <b> <G> <K> <y> : "𖄚"  U1611A  # GURUNG KHEMA LETTER YA (conflicts)
+<Multi_key> <b> <G> <K> <r> : "𖄛"  U1611B  # GURUNG KHEMA LETTER RA (conflicts)
+<Multi_key> <b> <G> <K> <l> : "𖄜"  U1611C  # GURUNG KHEMA LETTER LA (conflicts)
+<Multi_key> <b> <G> <K> <s> : "𖄝"  U1611D  # GURUNG KHEMA LETTER SA (conflicts)
+
+# Dependent vowels
+
+<Multi_key> <b> <G> <K> <a> <a> <Return> : "𖄞"  U1611E  # GURUNG KHEMA VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <G> <K> <i> <Return> : "𖄟"  U1611F  # GURUNG KHEMA VOWEL SIGN I (conflicts)
+<Multi_key> <b> <G> <K> <i> <i> <Return> : "𖄠"  U16120  # GURUNG KHEMA VOWEL SIGN II (conflicts)
+<Multi_key> <b> <G> <K> <u> <Return> : "𖄡"  U16121  # GURUNG KHEMA VOWEL SIGN U (conflicts)
+<Multi_key> <b> <G> <K> <u> <u> <Return> : "𖄢"  U16122  # GURUNG KHEMA VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <G> <K> <e> <Return> : "𖄣"  U16123  # GURUNG KHEMA VOWEL SIGN E (conflicts)
+<Multi_key> <b> <G> <K> <e> <e> <Return> : "𖄤"  U16124  # GURUNG KHEMA VOWEL SIGN EE (conflicts)
+<Multi_key> <b> <G> <K> <a> <i> <Return> : "𖄥"  U16125  # GURUNG KHEMA VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <G> <K> <o> <Return> : "𖄦"  U16126  # GURUNG KHEMA VOWEL SIGN O (conflicts)
+<Multi_key> <b> <G> <K> <o> <o> <Return> : "𖄧"  U16127  # GURUNG KHEMA VOWEL SIGN OO (conflicts)
+<Multi_key> <b> <G> <K> <a> <u> <Return> : "𖄨"  U16128  # GURUNG KHEMA VOWEL SIGN AU (conflicts)
+
+<Multi_key> <b> <G> <K> <minus> <Return> : "𖄩"  U16129  # GURUNG KHEMA VOWEL LENGTH MARK (conflicts)
+<Multi_key> <b> <G> <K> <y> <Return> : "𖄪"  U1612A  # GURUNG KHEMA CONSONANT SIGN MEDIAL YA (conflicts)
+<Multi_key> <b> <G> <K> <v> <Return> : "𖄫"  U1612B  # GURUNG KHEMA CONSONANT SIGN MEDIAL VA (conflicts)
+<Multi_key> <b> <G> <K> <h> <Return> : "𖄬"  U1612C  # GURUNG KHEMA CONSONANT SIGN MEDIAL HA (conflicts)
+<Multi_key> <b> <G> <K> <r> <Return> : "𖄮"  U1612E  # GURUNG KHEMA CONSONANT SIGN MEDIAL RA (conflicts)
+
+# Other signs
+
+<Multi_key> <b> <G> <K> <period> <Return> : "𖄭"  U1612D  # GURUNG KHEMA SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <G> <K> <underscore> <backslash> <Return> : "𖄯"  U1612F  # GURUNG KHEMA SIGN THOLHOMA (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <G> <K> <numbersign> <0> : "𖄰"  U16130  # GURUNG KHEMA DIGIT ZERO (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <1> : "𖄱"  U16131  # GURUNG KHEMA DIGIT ONE (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <2> : "𖄲"  U16132  # GURUNG KHEMA DIGIT TWO (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <3> : "𖄳"  U16133  # GURUNG KHEMA DIGIT THREE (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <4> : "𖄴"  U16134  # GURUNG KHEMA DIGIT FOUR (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <5> : "𖄵"  U16135  # GURUNG KHEMA DIGIT FIVE (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <6> : "𖄶"  U16136  # GURUNG KHEMA DIGIT SIX (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <7> : "𖄷"  U16137  # GURUNG KHEMA DIGIT SEVEN (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <8> : "𖄸"  U16138  # GURUNG KHEMA DIGIT EIGHT (conflicts)
+<Multi_key> <b> <G> <K> <numbersign> <9> : "𖄹"  U16139  # GURUNG KHEMA DIGIT NINE (conflicts)
+
+# (GT = Grantha)
+
+# Consonants
+
+<Multi_key> <b> <G> <T> <k> <space> : "𑌕"  U11315  # GRANTHA LETTER KA (conflicts with Ğ, use uG)
+<Multi_key> <b> <G> <T> <k> <h> : "𑌖"  U11316  # GRANTHA LETTER KHA (conflicts)
+<Multi_key> <b> <G> <T> <g> <space> : "𑌗"  U11317  # GRANTHA LETTER GA (conflicts)
+<Multi_key> <b> <G> <T> <g> <h> : "𑌘"  U11318  # GRANTHA LETTER GHA (conflicts)
+<Multi_key> <b> <G> <T> <semicolon> <n> : "𑌙"  U11319  # GRANTHA LETTER NGA (conflicts)
+<Multi_key> <b> <G> <T> <c> <space> : "𑌚"  U1131A  # GRANTHA LETTER CA (conflicts)
+<Multi_key> <b> <G> <T> <c> <h> : "𑌛"  U1131B  # GRANTHA LETTER CHA (conflicts)
+<Multi_key> <b> <G> <T> <j> <space> : "𑌜"  U1131C  # GRANTHA LETTER JA (conflicts)
+<Multi_key> <b> <G> <T> <j> <h> : "𑌝"  U1131D  # GRANTHA LETTER JHA (conflicts)
+<Multi_key> <b> <G> <T> <asciitilde> <n> : "𑌞"  U1131E  # GRANTHA LETTER NYA (conflicts)
+<Multi_key> <b> <G> <T> <period> <t> <space> : "𑌟"  U1131F  # GRANTHA LETTER TTA (conflicts)
+<Multi_key> <b> <G> <T> <period> <t> <h> : "𑌠"  U11320  # GRANTHA LETTER TTHA (conflicts)
+<Multi_key> <b> <G> <T> <period> <d> <space> : "𑌡"  U11321  # GRANTHA LETTER DDA (conflicts)
+<Multi_key> <b> <G> <T> <period> <d> <h> : "𑌢"  U11322  # GRANTHA LETTER DDHA (conflicts)
+<Multi_key> <b> <G> <T> <period> <n> : "𑌣"  U11323  # GRANTHA LETTER NNA (conflicts)
+<Multi_key> <b> <G> <T> <t> <space> : "𑌤"  U11324  # GRANTHA LETTER TA (conflicts)
+<Multi_key> <b> <G> <T> <t> <h> : "𑌥"  U11325  # GRANTHA LETTER THA (conflicts)
+<Multi_key> <b> <G> <T> <d> <space> : "𑌦"  U11326  # GRANTHA LETTER DA (conflicts)
+<Multi_key> <b> <G> <T> <d> <h> : "𑌧"  U11327  # GRANTHA LETTER DHA (conflicts)
+<Multi_key> <b> <G> <T> <n> : "𑌨"  U11328  # GRANTHA LETTER NA (conflicts)
+<Multi_key> <b> <G> <T> <p> <space> : "𑌪"  U1132A  # GRANTHA LETTER PA (conflicts)
+<Multi_key> <b> <G> <T> <p> <h> : "𑌫"  U1132B  # GRANTHA LETTER PHA (conflicts)
+<Multi_key> <b> <G> <T> <b> <space> : "𑌬"  U1132C  # GRANTHA LETTER BA (conflicts)
+<Multi_key> <b> <G> <T> <b> <h> : "𑌭"  U1132D  # GRANTHA LETTER BHA (conflicts)
+<Multi_key> <b> <G> <T> <m> : "𑌮"  U1132E  # GRANTHA LETTER MA (conflicts)
+<Multi_key> <b> <G> <T> <y> : "𑌯"  U1132F  # GRANTHA LETTER YA (conflicts)
+<Multi_key> <b> <G> <T> <r> : "𑌰"  U11330  # GRANTHA LETTER RA (conflicts)
+<Multi_key> <b> <G> <T> <l> : "𑌲"  U11332  # GRANTHA LETTER LA (conflicts)
+<Multi_key> <b> <G> <T> <period> <l> : "𑌳"  U11333  # GRANTHA LETTER LLA (conflicts)
+<Multi_key> <b> <G> <T> <v> : "𑌵"  U11335  # GRANTHA LETTER VA (conflicts)
+<Multi_key> <b> <G> <T> <semicolon> <s> : "𑌶"  U11336  # GRANTHA LETTER SHA (conflicts)
+<Multi_key> <b> <G> <T> <period> <s> : "𑌷"  U11337  # GRANTHA LETTER SSA (conflicts)
+<Multi_key> <b> <G> <T> <s> : "𑌸"  U11338  # GRANTHA LETTER SA (conflicts)
+<Multi_key> <b> <G> <T> <h> : "𑌹"  U11339  # GRANTHA LETTER HA (conflicts)
+
+# Combining consonants
+
+<Multi_key> <b> <G> <T> <a> <Return> : "𑍰"  U11370  # COMBINING GRANTHA LETTER A (conflicts)
+<Multi_key> <b> <G> <T> <k> <Return> : "𑍱"  U11371  # COMBINING GRANTHA LETTER KA (conflicts)
+<Multi_key> <b> <G> <T> <n> <Return> : "𑍲"  U11372  # COMBINING GRANTHA LETTER NA (conflicts)
+<Multi_key> <b> <G> <T> <v> <Return> : "𑍳"  U11373  # COMBINING GRANTHA LETTER VI (conflicts)
+<Multi_key> <b> <G> <T> <p> <Return> : "𑍴"  U11374  # COMBINING GRANTHA LETTER PA (conflicts)
+
+# Independent vowels
+
+<Multi_key> <b> <G> <T> <a> <space> : "𑌅"  U11305  # GRANTHA LETTER A (conflicts)
+<Multi_key> <b> <G> <T> <a> <a> <space> : "𑌆"  U11306  # GRANTHA LETTER AA (conflicts)
+<Multi_key> <b> <G> <T> <i> <space> : "𑌇"  U11307  # GRANTHA LETTER I (conflicts)
+<Multi_key> <b> <G> <T> <i> <i> <space> : "𑌈"  U11308  # GRANTHA LETTER II (conflicts)
+<Multi_key> <b> <G> <T> <u> <space> : "𑌉"  U11309  # GRANTHA LETTER U (conflicts)
+<Multi_key> <b> <G> <T> <u> <u> <space> : "𑌊"  U1130A  # GRANTHA LETTER UU (conflicts)
+<Multi_key> <b> <G> <T> <comma> <r> <space> : "𑌋"  U1130B  # GRANTHA LETTER VOCALIC R (conflicts)
+<Multi_key> <b> <G> <T> <comma> <l> <space> : "𑌌"  U1130C  # GRANTHA LETTER VOCALIC L (conflicts)
+<Multi_key> <b> <G> <T> <e> <e> <space> : "𑌏"  U1130F  # GRANTHA LETTER EE (conflicts)
+<Multi_key> <b> <G> <T> <a> <i> <space> : "𑌐"  U11310  # GRANTHA LETTER AI (conflicts)
+<Multi_key> <b> <G> <T> <o> <o> <space> : "𑌓"  U11313  # GRANTHA LETTER OO (conflicts)
+<Multi_key> <b> <G> <T> <a> <u> <space> : "𑌔"  U11314  # GRANTHA LETTER AU (conflicts)
+<Multi_key> <b> <G> <T> <comma> <r> <r> <space> : "𑍠"  U11360  # GRANTHA LETTER VOCALIC RR (conflicts)
+<Multi_key> <b> <G> <T> <comma> <l> <l> <space> : "𑍡"  U11361  # GRANTHA LETTER VOCALIC LL (conflicts)
+
+# Dependent vowels
+
+<Multi_key> <b> <G> <T> <a> <a> <Return> : "𑌾"  U1133E  # GRANTHA VOWEL SIGN AA (conflicts)
+<Multi_key> <b> <G> <T> <i> <Return> : "𑌿"  U1133F  # GRANTHA VOWEL SIGN I (conflicts)
+<Multi_key> <b> <G> <T> <i> <i> <Return> : "𑍀"  U11340  # GRANTHA VOWEL SIGN II (conflicts)
+<Multi_key> <b> <G> <T> <u> <Return> : "𑍁"  U11341  # GRANTHA VOWEL SIGN U (conflicts)
+<Multi_key> <b> <G> <T> <u> <u> <Return> : "𑍂"  U11342  # GRANTHA VOWEL SIGN UU (conflicts)
+<Multi_key> <b> <G> <T> <comma> <r> <Return> : "𑍃"  U11343  # GRANTHA VOWEL SIGN VOCALIC R (conflicts)
+<Multi_key> <b> <G> <T> <comma> <r> <r> <Return> : "𑍄"  U11344  # GRANTHA VOWEL SIGN VOCALIC RR (conflicts)
+<Multi_key> <b> <G> <T> <e> <e> <Return> : "𑍇"  U11347  # GRANTHA VOWEL SIGN EE (conflicts)
+<Multi_key> <b> <G> <T> <a> <i> <Return> : "𑍈"  U11348  # GRANTHA VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <G> <T> <o> <o> <Return> : "𑍋"  U1134B  # GRANTHA VOWEL SIGN OO (conflicts)
+<Multi_key> <b> <G> <T> <a> <u> <Return> : "𑍌"  U1134C  # GRANTHA VOWEL SIGN AU (conflicts)
+<Multi_key> <b> <G> <T> <0> <Return> : "𑍍"  U1134D  # GRANTHA SIGN VIRAMA (conflicts)
+<Multi_key> <b> <G> <T> <comma> <l> <Return> : "𑍢"  U11362  # GRANTHA VOWEL SIGN VOCALIC L (conflicts)
+<Multi_key> <b> <G> <T> <comma> <l> <l> <Return> : "𑍣"  U11363  # GRANTHA VOWEL SIGN VOCALIC LL (conflicts)
+
+# Other signs
+
+<Multi_key> <b> <G> <T> <asciicircum> <period> <Return> : "𑌀"  U11300  # GRANTHA SIGN COMBINING ANUSVARA ABOVE (conflicts)
+<Multi_key> <b> <G> <T> <period> <parenright> <Return> : "𑌁"  U11301  # GRANTHA SIGN CANDRABINDU (conflicts)
+<Multi_key> <b> <G> <T> <period> <Return> : "𑌂"  U11302  # GRANTHA SIGN ANUSVARA (conflicts)
+<Multi_key> <b> <G> <T> <colon> <Return> : "𑌃"  U11303  # GRANTHA SIGN VISARGA (conflicts)
+<Multi_key> <b> <G> <T> <underscore> <period> <Return> : "𑌻"  U1133B  # COMBINING BINDU BELOW (conflicts)
+<Multi_key> <b> <G> <T> <underscore> <period> <period> <Return> : "𑌼"  U1133C  # GRANTHA SIGN NUKTA (conflicts)
+<Multi_key> <b> <G> <T> <S> : "𑌽"  U1133D  # GRANTHA SIGN AVAGRAHA (conflicts)
+<Multi_key> <b> <G> <T> <comma> <Return> : "𑍍"  U1134D  # GRANTHA SIGN VIRAMA (conflicts)
+<Multi_key> <b> <G> <T> <o> <m> : "𑍐"  U11350  # GRANTHA OM (conflicts)
+
+# Numerals
+
+<Multi_key> <b> <G> <T> <numbersign> <0> : "𑍦"  U11366  # COMBINING GRANTHA DIGIT ZERO (conflicts)
+<Multi_key> <b> <G> <T> <numbersign> <1> : "𑍧"  U11367  # COMBINING GRANTHA DIGIT ONE (conflicts)
+<Multi_key> <b> <G> <T> <numbersign> <2> : "𑍨"  U11368  # COMBINING GRANTHA DIGIT TWO (conflicts)
+<Multi_key> <b> <G> <T> <numbersign> <3> : "𑍩"  U11369  # COMBINING GRANTHA DIGIT THREE (conflicts)
+<Multi_key> <b> <G> <T> <numbersign> <4> : "𑍪"  U1136A  # COMBINING GRANTHA DIGIT FOUR (conflicts)
+<Multi_key> <b> <G> <T> <numbersign> <5> : "𑍫"  U1136B  # COMBINING GRANTHA DIGIT FIVE (conflicts)
+<Multi_key> <b> <G> <T> <numbersign> <6> : "𑍬"  U1136C  # COMBINING GRANTHA DIGIT SIX (conflicts)
 
 # (k = Kannada)
 
@@ -5377,6 +5648,335 @@ include "%L"
 <Multi_key> <b> <k> <numbersign> <7>     : "೭"  U0CED  # KANNADA DIGIT SEVEN
 <Multi_key> <b> <k> <numbersign> <8>     : "೮"  U0CEE  # KANNADA DIGIT EIGHT
 <Multi_key> <b> <k> <numbersign> <9>     : "೯"  U0CEF  # KANNADA DIGIT NINE
+
+# (KH = Kharoshthi)
+
+# Consonants
+
+<Multi_key> <b> <K> <H> <k> <space> : "𐨐"  U10A10  # KHAROSHTHI LETTER KA
+<Multi_key> <b> <K> <H> <k> <h> : "𐨑"  U10A11  # KHAROSHTHI LETTER KHA
+<Multi_key> <b> <K> <H> <g> <space> : "𐨒"  U10A12  # KHAROSHTHI LETTER GA
+<Multi_key> <b> <K> <H> <g> <h> : "𐨓"  U10A13  # KHAROSHTHI LETTER GHA
+<Multi_key> <b> <K> <H> <c> <space> : "𐨕"  U10A15  # KHAROSHTHI LETTER CA
+<Multi_key> <b> <K> <H> <c> <h> : "𐨖"  U10A16  # KHAROSHTHI LETTER CHA
+<Multi_key> <b> <K> <H> <j> : "𐨗"  U10A17  # KHAROSHTHI LETTER JA
+<Multi_key> <b> <K> <H> <asciitilde> <n> : "𐨙"  U10A19  # KHAROSHTHI LETTER NYA
+<Multi_key> <b> <K> <H> <period> <t> <space> : "𐨚"  U10A1A  # KHAROSHTHI LETTER TTA
+<Multi_key> <b> <K> <H> <period> <t> <h> : "𐨛"  U10A1B  # KHAROSHTHI LETTER TTHA
+<Multi_key> <b> <K> <H> <period> <d> <space> : "𐨜"  U10A1C  # KHAROSHTHI LETTER DDA
+<Multi_key> <b> <K> <H> <period> <d> <h> : "𐨝"  U10A1D  # KHAROSHTHI LETTER DDHA
+<Multi_key> <b> <K> <H> <period> <n> : "𐨞"  U10A1E  # KHAROSHTHI LETTER NNA
+<Multi_key> <b> <K> <H> <t> <space> : "𐨟"  U10A1F  # KHAROSHTHI LETTER TA
+<Multi_key> <b> <K> <H> <t> <h> : "𐨠"  U10A20  # KHAROSHTHI LETTER THA
+<Multi_key> <b> <K> <H> <d> <space> : "𐨡"  U10A21  # KHAROSHTHI LETTER DA
+<Multi_key> <b> <K> <H> <d> <h> : "𐨢"  U10A22  # KHAROSHTHI LETTER DHA
+<Multi_key> <b> <K> <H> <n> : "𐨣"  U10A23  # KHAROSHTHI LETTER NA
+<Multi_key> <b> <K> <H> <p> <space> : "𐨤"  U10A24  # KHAROSHTHI LETTER PA
+<Multi_key> <b> <K> <H> <p> <h> : "𐨥"  U10A25  # KHAROSHTHI LETTER PHA
+<Multi_key> <b> <K> <H> <b> <space> : "𐨦"  U10A26  # KHAROSHTHI LETTER BA
+<Multi_key> <b> <K> <H> <b> <h> : "𐨧"  U10A27  # KHAROSHTHI LETTER BHA
+<Multi_key> <b> <K> <H> <m> : "𐨨"  U10A28  # KHAROSHTHI LETTER MA
+<Multi_key> <b> <K> <H> <y> : "𐨩"  U10A29  # KHAROSHTHI LETTER YA
+<Multi_key> <b> <K> <H> <r> : "𐨪"  U10A2A  # KHAROSHTHI LETTER RA
+<Multi_key> <b> <K> <H> <l> : "𐨫"  U10A2B  # KHAROSHTHI LETTER LA
+<Multi_key> <b> <K> <H> <v> <space> : "𐨬"  U10A2C  # KHAROSHTHI LETTER VA
+<Multi_key> <b> <K> <H> <semicolon> <s> : "𐨭"  U10A2D  # KHAROSHTHI LETTER SHA
+<Multi_key> <b> <K> <H> <period> <s> : "𐨮"  U10A2E  # KHAROSHTHI LETTER SSA
+<Multi_key> <b> <K> <H> <s> : "𐨯"  U10A2F  # KHAROSHTHI LETTER SA
+<Multi_key> <b> <K> <H> <z> : "𐨰"  U10A30  # KHAROSHTHI LETTER ZA
+<Multi_key> <b> <K> <H> <h> : "𐨱"  U10A31  # KHAROSHTHI LETTER HA
+<Multi_key> <b> <K> <H> <k> <k> : "𐨲"  U10A32  # KHAROSHTHI LETTER KKA
+<Multi_key> <b> <K> <H> <underscore> <t> <h> : "𐨳"  U10A33  # KHAROSHTHI LETTER TTTHA
+<Multi_key> <b> <K> <H> <underscore> <t> <space> : "𐨴"  U10A34  # KHAROSHTHI LETTER TTTA
+<Multi_key> <b> <K> <H> <v> <h> : "𐨵"  U10A35  # KHAROSHTHI LETTER VHA
+
+# Vowels
+
+<Multi_key> <b> <K> <H> <a> : "𐨀"  U10A00  # KHAROSHTHI LETTER A
+<Multi_key> <b> <K> <H> <i> <Return> : "𐨁"  U10A01  # KHAROSHTHI VOWEL SIGN I
+<Multi_key> <b> <K> <H> <u> <Return> : "𐨂"  U10A02  # KHAROSHTHI VOWEL SIGN U
+<Multi_key> <b> <K> <H> <comma> <r> <Return> : "𐨃"  U10A03  # KHAROSHTHI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <K> <H> <e> <e> <Return> : "𐨅"  U10A05  # KHAROSHTHI VOWEL SIGN E
+<Multi_key> <b> <K> <H> <o> <o> <Return> : "𐨆"  U10A06  # KHAROSHTHI VOWEL SIGN O
+
+# Other signs
+
+<Multi_key> <b> <K> <H> <minus> <Return> : "𐨌"  U10A0C  # KHAROSHTHI VOWEL LENGTH MARK
+<Multi_key> <b> <K> <H> <underscore> <o> <o> <Return> : "𐨍"  U10A0D  # KHAROSHTHI SIGN DOUBLE RING BELOW
+<Multi_key> <b> <K> <H> <period> <Return> : "𐨎"  U10A0E  # KHAROSHTHI SIGN ANUSVARA
+<Multi_key> <b> <K> <H> <colon> <Return> : "𐨏"  U10A0F  # KHAROSHTHI SIGN VISARGA
+<Multi_key> <b> <K> <H> <asciicircum> <minus> <Return> : "𐨸"  U10A38  # KHAROSHTHI SIGN BAR ABOVE
+<Multi_key> <b> <K> <H> <underscore> <parenright> <Return> : "𐨹"  U10A39  # KHAROSHTHI SIGN CAUDA
+<Multi_key> <b> <K> <H> <underscore> <period> <Return> : "𐨺"  U10A3A  # KHAROSHTHI SIGN DOT BELOW
+<Multi_key> <b> <K> <H> <underscore> <plus> <Return> : "𐨿"  U10A3F  # KHAROSHTHI VIRAMA
+
+# Numerals
+
+<Multi_key> <b> <K> <H> <numbersign> <1> : "𐩀"  U10A40  # KHAROSHTHI DIGIT ONE
+<Multi_key> <b> <K> <H> <numbersign> <2> : "𐩁"  U10A41  # KHAROSHTHI DIGIT TWO
+<Multi_key> <b> <K> <H> <numbersign> <3> : "𐩂"  U10A42  # KHAROSHTHI DIGIT THREE
+<Multi_key> <b> <K> <H> <numbersign> <4> : "𐩃"  U10A43  # KHAROSHTHI DIGIT FOUR
+<Multi_key> <b> <K> <H> <1> <0> <space> : "𐩄"  U10A44  # KHAROSHTHI NUMBER TEN
+<Multi_key> <b> <K> <H> <2> <0> : "𐩅"  U10A45  # KHAROSHTHI NUMBER TWENTY
+<Multi_key> <b> <K> <H> <1> <0> <0> <space> : "𐩆"  U10A46  # KHAROSHTHI NUMBER ONE HUNDRED
+<Multi_key> <b> <K> <H> <1> <0> <0> <0> : "𐩇"  U10A47  # KHAROSHTHI NUMBER ONE THOUSAND
+<Multi_key> <b> <K> <H> <1> <slash> <2> : "𐩈"  U10A48  # KHAROSHTHI FRACTION ONE HALF
+
+# Punctuation
+
+<Multi_key> <b> <K> <H> <bar> : "𐩖"  U10A56  # KHAROSHTHI PUNCTUATION DANDA
+<Multi_key> <b> <K> <H> <2> <bar> : "𐩗"  U10A57  # KHAROSHTHI PUNCTUATION DOUBLE DANDA
+
+# (KR = Kirat Rai)
+
+# Consonants
+
+<Multi_key> <b> <K> <R> <a> <space> : "𖵃"  U16D43  # KIRAT RAI LETTER A
+<Multi_key> <b> <K> <R> <k> <space> : "𖵄"  U16D44  # KIRAT RAI LETTER KA
+<Multi_key> <b> <K> <R> <k> <h> : "𖵅"  U16D45  # KIRAT RAI LETTER KHA
+<Multi_key> <b> <K> <R> <g> <space> : "𖵆"  U16D46  # KIRAT RAI LETTER GA
+<Multi_key> <b> <K> <R> <g> <h> : "𖵇"  U16D47  # KIRAT RAI LETTER GHA
+<Multi_key> <b> <K> <R> <semicolon> <n> : "𖵈"  U16D48  # KIRAT RAI LETTER NGA
+<Multi_key> <b> <K> <R> <c> <space> : "𖵉"  U16D49  # KIRAT RAI LETTER CA
+<Multi_key> <b> <K> <R> <c> <h> : "𖵊"  U16D4A  # KIRAT RAI LETTER CHA
+<Multi_key> <b> <K> <R> <j> <space> : "𖵋"  U16D4B  # KIRAT RAI LETTER JA
+<Multi_key> <b> <K> <R> <j> <h> : "𖵌"  U16D4C  # KIRAT RAI LETTER JHA
+<Multi_key> <b> <K> <R> <asciitilde> <n> : "𖵍"  U16D4D  # KIRAT RAI LETTER NYA
+<Multi_key> <b> <K> <R> <period> <t> <space> : "𖵎"  U16D4E  # KIRAT RAI LETTER TTA
+<Multi_key> <b> <K> <R> <period> <t> <h> : "𖵏"  U16D4F  # KIRAT RAI LETTER TTHA
+<Multi_key> <b> <K> <R> <period> <d> <space> : "𖵐"  U16D50  # KIRAT RAI LETTER DDA
+<Multi_key> <b> <K> <R> <period> <d> <h> : "𖵑"  U16D51  # KIRAT RAI LETTER DDHA
+<Multi_key> <b> <K> <R> <t> <space> : "𖵒"  U16D52  # KIRAT RAI LETTER TA
+<Multi_key> <b> <K> <R> <t> <h> : "𖵓"  U16D53  # KIRAT RAI LETTER THA
+<Multi_key> <b> <K> <R> <d> <space> : "𖵔"  U16D54  # KIRAT RAI LETTER DA
+<Multi_key> <b> <K> <R> <d> <h> : "𖵕"  U16D55  # KIRAT RAI LETTER DHA
+<Multi_key> <b> <K> <R> <n> : "𖵖"  U16D56  # KIRAT RAI LETTER NA
+<Multi_key> <b> <K> <R> <p> <space> : "𖵗"  U16D57  # KIRAT RAI LETTER PA
+<Multi_key> <b> <K> <R> <p> <h> : "𖵘"  U16D58  # KIRAT RAI LETTER PHA
+<Multi_key> <b> <K> <R> <b> <space> : "𖵙"  U16D59  # KIRAT RAI LETTER BA
+<Multi_key> <b> <K> <R> <b> <h> : "𖵚"  U16D5A  # KIRAT RAI LETTER BHA
+<Multi_key> <b> <K> <R> <m> : "𖵛"  U16D5B  # KIRAT RAI LETTER MA
+<Multi_key> <b> <K> <R> <y> : "𖵜"  U16D5C  # KIRAT RAI LETTER YA
+<Multi_key> <b> <K> <R> <r> : "𖵝"  U16D5D  # KIRAT RAI LETTER RA
+<Multi_key> <b> <K> <R> <l> : "𖵞"  U16D5E  # KIRAT RAI LETTER LA
+<Multi_key> <b> <K> <R> <v> : "𖵟"  U16D5F  # KIRAT RAI LETTER VA
+<Multi_key> <b> <K> <R> <s> : "𖵠"  U16D60  # KIRAT RAI LETTER SA
+<Multi_key> <b> <K> <R> <semicolon> <s> : "𖵡"  U16D61  # KIRAT RAI LETTER SHA
+<Multi_key> <b> <K> <R> <h> : "𖵢"  U16D62  # KIRAT RAI LETTER HA
+
+# Dependent vowels
+
+<Multi_key> <b> <K> <R> <a> <a> <Return> : "𖵣"  U16D63  # KIRAT RAI VOWEL SIGN AA
+<Multi_key> <b> <K> <R> <i> <Return> : "𖵤"  U16D64  # KIRAT RAI VOWEL SIGN I
+<Multi_key> <b> <K> <R> <u> <Return> : "𖵥"  U16D65  # KIRAT RAI VOWEL SIGN U
+<Multi_key> <b> <K> <R> <u> <e> <Return> : "𖵦"  U16D66  # KIRAT RAI VOWEL SIGN UE
+<Multi_key> <b> <K> <R> <e> <e> <Return> : "𖵧"  U16D67  # KIRAT RAI VOWEL SIGN E
+<Multi_key> <b> <K> <R> <a> <i> <Return> : "𖵨"  U16D68  # KIRAT RAI VOWEL SIGN AI
+<Multi_key> <b> <K> <R> <o> <o> <Return> : "𖵩"  U16D69  # KIRAT RAI VOWEL SIGN O
+<Multi_key> <b> <K> <R> <a> <u> <Return> : "𖵪"  U16D6A  # KIRAT RAI VOWEL SIGN AU
+<Multi_key> <b> <K> <R> <0> <Return> : "𖵫"  U16D6B  # KIRAT RAI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <K> <R> <period> <Return> : "𖵀"  U16D40  # KIRAT RAI SIGN ANUSVARA
+<Multi_key> <b> <K> <R> <colon> <Return> : "𖵂"  U16D42  # KIRAT RAI SIGN VISARGA
+<Multi_key> <b> <K> <R> <comma> <Return> : "𖵫"  U16D6B  # KIRAT RAI SIGN VIRAMA
+
+# Numerals
+
+<Multi_key> <b> <K> <R> <numbersign> <0> : "𖵰"  U16D70  # KIRAT RAI DIGIT ZERO
+<Multi_key> <b> <K> <R> <numbersign> <1> : "𖵱"  U16D71  # KIRAT RAI DIGIT ONE
+<Multi_key> <b> <K> <R> <numbersign> <2> : "𖵲"  U16D72  # KIRAT RAI DIGIT TWO
+<Multi_key> <b> <K> <R> <numbersign> <3> : "𖵳"  U16D73  # KIRAT RAI DIGIT THREE
+<Multi_key> <b> <K> <R> <numbersign> <4> : "𖵴"  U16D74  # KIRAT RAI DIGIT FOUR
+<Multi_key> <b> <K> <R> <numbersign> <5> : "𖵵"  U16D75  # KIRAT RAI DIGIT FIVE
+<Multi_key> <b> <K> <R> <numbersign> <6> : "𖵶"  U16D76  # KIRAT RAI DIGIT SIX
+<Multi_key> <b> <K> <R> <numbersign> <7> : "𖵷"  U16D77  # KIRAT RAI DIGIT SEVEN
+<Multi_key> <b> <K> <R> <numbersign> <8> : "𖵸"  U16D78  # KIRAT RAI DIGIT EIGHT
+<Multi_key> <b> <K> <R> <numbersign> <9> : "𖵹"  U16D79  # KIRAT RAI DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <K> <R> <bar> : "𖵮"  U16D6E  # KIRAT RAI DANDA
+<Multi_key> <b> <K> <R> <2> <bar> : "𖵯"  U16D6F  # KIRAT RAI DOUBLE DANDA
+
+# (KT = Kaithi)
+
+# Consonants
+
+<Multi_key> <b> <K> <T> <k> <space> : "𑂍"  U1108D  # KAITHI LETTER KA
+<Multi_key> <b> <K> <T> <k> <h> : "𑂎"  U1108E  # KAITHI LETTER KHA
+<Multi_key> <b> <K> <T> <g> <space> : "𑂏"  U1108F  # KAITHI LETTER GA
+<Multi_key> <b> <K> <T> <g> <h> : "𑂐"  U11090  # KAITHI LETTER GHA
+<Multi_key> <b> <K> <T> <semicolon> <n> : "𑂑"  U11091  # KAITHI LETTER NGA
+<Multi_key> <b> <K> <T> <c> <space> : "𑂒"  U11092  # KAITHI LETTER CA
+<Multi_key> <b> <K> <T> <c> <h> : "𑂓"  U11093  # KAITHI LETTER CHA
+<Multi_key> <b> <K> <T> <j> <space> : "𑂔"  U11094  # KAITHI LETTER JA
+<Multi_key> <b> <K> <T> <j> <h> : "𑂕"  U11095  # KAITHI LETTER JHA
+<Multi_key> <b> <K> <T> <asciitilde> <n> : "𑂖"  U11096  # KAITHI LETTER NYA
+<Multi_key> <b> <K> <T> <period> <t> <space> : "𑂗"  U11097  # KAITHI LETTER TTA
+<Multi_key> <b> <K> <T> <period> <t> <h> : "𑂘"  U11098  # KAITHI LETTER TTHA
+<Multi_key> <b> <K> <T> <period> <d> <space> : "𑂙"  U11099  # KAITHI LETTER DDA
+<Multi_key> <b> <K> <T> <period> <r> <space> : "𑂚"  U1109A  # KAITHI LETTER DDDHA
+<Multi_key> <b> <K> <T> <period> <d> <h> : "𑂛"  U1109B  # KAITHI LETTER DDHA
+<Multi_key> <b> <K> <T> <period> <r> <h> : "𑂜"  U1109C  # KAITHI LETTER RHA
+<Multi_key> <b> <K> <T> <period> <n> : "𑂝"  U1109D  # KAITHI LETTER NNA
+<Multi_key> <b> <K> <T> <t> <space> : "𑂞"  U1109E  # KAITHI LETTER TA
+<Multi_key> <b> <K> <T> <t> <h> : "𑂟"  U1109F  # KAITHI LETTER THA
+<Multi_key> <b> <K> <T> <d> <space> : "𑂠"  U110A0  # KAITHI LETTER DA
+<Multi_key> <b> <K> <T> <d> <h> : "𑂡"  U110A1  # KAITHI LETTER DHA
+<Multi_key> <b> <K> <T> <n> : "𑂢"  U110A2  # KAITHI LETTER NA
+<Multi_key> <b> <K> <T> <p> <space> : "𑂣"  U110A3  # KAITHI LETTER PA
+<Multi_key> <b> <K> <T> <p> <h> : "𑂤"  U110A4  # KAITHI LETTER PHA
+<Multi_key> <b> <K> <T> <b> <space> : "𑂥"  U110A5  # KAITHI LETTER BA
+<Multi_key> <b> <K> <T> <b> <h> : "𑂦"  U110A6  # KAITHI LETTER BHA
+<Multi_key> <b> <K> <T> <m> : "𑂧"  U110A7  # KAITHI LETTER MA
+<Multi_key> <b> <K> <T> <y> : "𑂨"  U110A8  # KAITHI LETTER YA
+<Multi_key> <b> <K> <T> <r> : "𑂩"  U110A9  # KAITHI LETTER RA
+<Multi_key> <b> <K> <T> <l> : "𑂪"  U110AA  # KAITHI LETTER LA
+<Multi_key> <b> <K> <T> <v> : "𑂫"  U110AB  # KAITHI LETTER VA
+<Multi_key> <b> <K> <T> <semicolon> <s> : "𑂬"  U110AC  # KAITHI LETTER SHA
+<Multi_key> <b> <K> <T> <period> <s> : "𑂭"  U110AD  # KAITHI LETTER SSA
+<Multi_key> <b> <K> <T> <s> : "𑂮"  U110AE  # KAITHI LETTER SA
+<Multi_key> <b> <K> <T> <h> : "𑂯"  U110AF  # KAITHI LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <K> <T> <a> <space> : "𑂃"  U11083  # KAITHI LETTER A
+<Multi_key> <b> <K> <T> <a> <a> <space> : "𑂄"  U11084  # KAITHI LETTER AA
+<Multi_key> <b> <K> <T> <i> <space> : "𑂅"  U11085  # KAITHI LETTER I
+<Multi_key> <b> <K> <T> <i> <i> <space> : "𑂆"  U11086  # KAITHI LETTER II
+<Multi_key> <b> <K> <T> <u> <space> : "𑂇"  U11087  # KAITHI LETTER U
+<Multi_key> <b> <K> <T> <u> <u> <space> : "𑂈"  U11088  # KAITHI LETTER UU
+<Multi_key> <b> <K> <T> <e> <e> <space> : "𑂉"  U11089  # KAITHI LETTER E
+<Multi_key> <b> <K> <T> <a> <i> <space> : "𑂊"  U1108A  # KAITHI LETTER AI
+<Multi_key> <b> <K> <T> <o> <o> <space> : "𑂋"  U1108B  # KAITHI LETTER O
+<Multi_key> <b> <K> <T> <a> <u> <space> : "𑂌"  U1108C  # KAITHI LETTER AU
+
+# Dependent vowel signs
+
+<Multi_key> <b> <K> <T> <a> <a> <Return> : "𑂰"  U110B0  # KAITHI VOWEL SIGN AA
+<Multi_key> <b> <K> <T> <i> <Return> : "𑂱"  U110B1  # KAITHI VOWEL SIGN I
+<Multi_key> <b> <K> <T> <i> <i> <Return> : "𑂲"  U110B2  # KAITHI VOWEL SIGN II
+<Multi_key> <b> <K> <T> <u> <Return> : "𑂳"  U110B3  # KAITHI VOWEL SIGN U
+<Multi_key> <b> <K> <T> <u> <u> <Return> : "𑂴"  U110B4  # KAITHI VOWEL SIGN UU
+<Multi_key> <b> <K> <T> <e> <e> <Return> : "𑂵"  U110B5  # KAITHI VOWEL SIGN E
+<Multi_key> <b> <K> <T> <a> <i> <Return> : "𑂶"  U110B6  # KAITHI VOWEL SIGN AI
+<Multi_key> <b> <K> <T> <o> <o> <Return> : "𑂷"  U110B7  # KAITHI VOWEL SIGN O
+<Multi_key> <b> <K> <T> <a> <u> <Return> : "𑂸"  U110B8  # KAITHI VOWEL SIGN AU
+<Multi_key> <b> <K> <T> <0> <Return> : "𑂹"  U110B9  # KAITHI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <K> <T> <period> <parenright> <Return> : "𑂀"  U11080  # KAITHI SIGN CANDRABINDU
+<Multi_key> <b> <K> <T> <period> <Return> : "𑂁"  U11081  # KAITHI SIGN ANUSVARA
+<Multi_key> <b> <K> <T> <colon> <Return> : "𑂂"  U11082  # KAITHI SIGN VISARGA
+<Multi_key> <b> <K> <T> <comma> <Return> : "𑂹"  U110B9  # KAITHI SIGN VIRAMA
+<Multi_key> <b> <K> <T> <underscore> <period> <Return> : "𑂺"  U110BA  # KAITHI SIGN NUKTA
+<Multi_key> <b> <K> <T> <o> <period> : "𑂻"  U110BB  # KAITHI ABBREVIATION SIGN
+<Multi_key> <b> <K> <T> <1> : "𑂼"  U110BC  # KAITHI ENUMERATION SIGN
+<Multi_key> <b> <K> <T> <numbersign> : "𑂽"  U110BD  # KAITHI NUMBER SIGN
+<Multi_key> <b> <K> <T> <Multi_key> <S> <O> : "𑂾"  U110BE  # KAITHI SECTION MARK
+<Multi_key> <b> <K> <T> <2> <Multi_key> <S> <O> : "𑂿"  U110BF  # KAITHI DOUBLE SECTION MARK    
+<Multi_key> <b> <K> <T> <bar> : "𑃀"  U110C0  # KAITHI DANDA
+<Multi_key> <b> <K> <T> <2> <bar> : "𑃁"  U110C1  # KAITHI DOUBLE DANDA
+<Multi_key> <b> <K> <T> <comma> <r> <Return> : "𑃂"  U110C2  # KAITHI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <K> <T> <asciicircum> <numbersign> <Return> : "𑃍"  U110CD  # KAITHI NUMBER SIGN ABOVE
+
+# (KW = Kawi)
+
+# Consonants
+
+<Multi_key> <b> <K> <W> <k> <space> : "𑼒"  U11F12  # KAWI LETTER KA
+<Multi_key> <b> <K> <W> <k> <h> : "𑼓"  U11F13  # KAWI LETTER KHA
+<Multi_key> <b> <K> <W> <g> <space> : "𑼔"  U11F14  # KAWI LETTER GA
+<Multi_key> <b> <K> <W> <g> <h> : "𑼕"  U11F15  # KAWI LETTER GHA
+<Multi_key> <b> <K> <W> <semicolon> <n> : "𑼖"  U11F16  # KAWI LETTER NGA
+<Multi_key> <b> <K> <W> <c> <space> : "𑼗"  U11F17  # KAWI LETTER CA
+<Multi_key> <b> <K> <W> <c> <h> : "𑼘"  U11F18  # KAWI LETTER CHA
+<Multi_key> <b> <K> <W> <j> <space> : "𑼙"  U11F19  # KAWI LETTER JA
+<Multi_key> <b> <K> <W> <j> <h> : "𑼚"  U11F1A  # KAWI LETTER JHA
+<Multi_key> <b> <K> <W> <asciitilde> <n> : "𑼛"  U11F1B  # KAWI LETTER NYA
+<Multi_key> <b> <K> <W> <period> <t> <space> : "𑼜"  U11F1C  # KAWI LETTER TTA
+<Multi_key> <b> <K> <W> <period> <t> <h> : "𑼝"  U11F1D  # KAWI LETTER TTHA
+<Multi_key> <b> <K> <W> <period> <d> <space> : "𑼞"  U11F1E  # KAWI LETTER DDA
+<Multi_key> <b> <K> <W> <period> <d> <h> : "𑼟"  U11F1F  # KAWI LETTER DDHA
+<Multi_key> <b> <K> <W> <period> <n> : "𑼠"  U11F20  # KAWI LETTER NNA
+<Multi_key> <b> <K> <W> <t> <space> : "𑼡"  U11F21  # KAWI LETTER TA
+<Multi_key> <b> <K> <W> <t> <h> : "𑼢"  U11F22  # KAWI LETTER THA
+<Multi_key> <b> <K> <W> <d> <space> : "𑼣"  U11F23  # KAWI LETTER DA
+<Multi_key> <b> <K> <W> <d> <h> : "𑼤"  U11F24  # KAWI LETTER DHA
+<Multi_key> <b> <K> <W> <n> : "𑼥"  U11F25  # KAWI LETTER NA
+<Multi_key> <b> <K> <W> <p> <space> : "𑼦"  U11F26  # KAWI LETTER PA
+<Multi_key> <b> <K> <W> <p> <h> : "𑼧"  U11F27  # KAWI LETTER PHA
+<Multi_key> <b> <K> <W> <b> <space> : "𑼨"  U11F28  # KAWI LETTER BA
+<Multi_key> <b> <K> <W> <b> <h> : "𑼩"  U11F29  # KAWI LETTER BHA
+<Multi_key> <b> <K> <W> <m> : "𑼪"  U11F2A  # KAWI LETTER MA
+<Multi_key> <b> <K> <W> <y> : "𑼫"  U11F2B  # KAWI LETTER YA
+<Multi_key> <b> <K> <W> <r> : "𑼬"  U11F2C  # KAWI LETTER RA
+<Multi_key> <b> <K> <W> <l> : "𑼭"  U11F2D  # KAWI LETTER LA
+<Multi_key> <b> <K> <W> <w> : "𑼮"  U11F2E  # KAWI LETTER WA
+<Multi_key> <b> <K> <W> <semicolon> <s> : "𑼯"  U11F2F  # KAWI LETTER SHA
+<Multi_key> <b> <K> <W> <period> <s> : "𑼰"  U11F30  # KAWI LETTER SSA
+<Multi_key> <b> <K> <W> <s> : "𑼱"  U11F31  # KAWI LETTER SA
+<Multi_key> <b> <K> <W> <h> : "𑼲"  U11F32  # KAWI LETTER HA
+<Multi_key> <b> <K> <W> <j> <asciitilde> <n> : "𑼳"  U11F33  # KAWI LETTER JNYA
+
+# Independent vowels
+
+<Multi_key> <b> <K> <W> <a> <space> : "𑼄"  U11F04  # KAWI LETTER A
+<Multi_key> <b> <K> <W> <a> <a> <space> : "𑼅"  U11F05  # KAWI LETTER AA
+<Multi_key> <b> <K> <W> <i> <space> : "𑼆"  U11F06  # KAWI LETTER I
+<Multi_key> <b> <K> <W> <i> <i> <space> : "𑼇"  U11F07  # KAWI LETTER II
+<Multi_key> <b> <K> <W> <u> <space> : "𑼈"  U11F08  # KAWI LETTER U
+<Multi_key> <b> <K> <W> <u> <u> <space> : "𑼉"  U11F09  # KAWI LETTER UU
+<Multi_key> <b> <K> <W> <comma> <r> <space> : "𑼊"  U11F0A  # KAWI LETTER VOCALIC R
+<Multi_key> <b> <K> <W> <comma> <r> <r> <space> : "𑼋"  U11F0B  # KAWI LETTER VOCALIC RR
+<Multi_key> <b> <K> <W> <comma> <l> <space> : "𑼌"  U11F0C  # KAWI LETTER VOCALIC L
+<Multi_key> <b> <K> <W> <comma> <l> <l> <space> : "𑼍"  U11F0D  # KAWI LETTER VOCALIC LL
+<Multi_key> <b> <K> <W> <e> <e> <space> : "𑼎"  U11F0E  # KAWI LETTER E
+<Multi_key> <b> <K> <W> <a> <i> <space> : "𑼏"  U11F0F  # KAWI LETTER AI
+<Multi_key> <b> <K> <W> <o> <o> <space> : "𑼐"  U11F10  # KAWI LETTER O
+
+# Dependent vowels
+
+<Multi_key> <b> <K> <W> <a> <a> <Return> : "𑼴"  U11F34  # KAWI VOWEL SIGN AA
+<Multi_key> <b> <K> <W> <i> <Return> : "𑼶"  U11F36  # KAWI VOWEL SIGN I
+<Multi_key> <b> <K> <W> <i> <i> <Return> : "𑼷"  U11F37  # KAWI VOWEL SIGN II
+<Multi_key> <b> <K> <W> <u> <Return> : "𑼸"  U11F38  # KAWI VOWEL SIGN U
+<Multi_key> <b> <K> <W> <u> <u> <Return> : "𑼹"  U11F39  # KAWI VOWEL SIGN UU
+<Multi_key> <b> <K> <W> <comma> <r> <Return> : "𑼺"  U11F3A  # KAWI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <K> <W> <e> <e> <Return> : "𑼾"  U11F3E  # KAWI VOWEL SIGN E
+<Multi_key> <b> <K> <W> <a> <i> <Return> : "𑼿"  U11F3F  # KAWI VOWEL SIGN AI
+<Multi_key> <b> <K> <W> <e> <u> <Return> : "𑽀"  U11F40  # KAWI VOWEL SIGN EU
+
+# Other signs
+
+<Multi_key> <b> <K> <W> <period> <parenright> <Return> : "𑼀"  U11F00  # KAWI SIGN CANDRABINDU
+<Multi_key> <b> <K> <W> <period> <Return> : "𑼁"  U11F01  # KAWI SIGN ANUSVARA
+<Multi_key> <b> <K> <W> <colon> <Return> : "𑼃"  U11F03  # KAWI SIGN VISARGA
+<Multi_key> <b> <K> <W> <underscore> <period> <Return> : "𑽚"  U11F5A  # KAWI SIGN NUKTA
+<Multi_key> <b> <K> <W> <0> <Return> : "𑽁"  U11F41  # KAWI SIGN KILLER
+<Multi_key> <b> <K> <W> <underscore> <plus> <Return> : "𑽂"  U11F42  # KAWI CONJOINER
+
+# Numerals
+
+<Multi_key> <b> <K> <W> <numbersign> <0> : "𑽐"  U11F50  # KAWI DIGIT ZERO
+<Multi_key> <b> <K> <W> <numbersign> <1> : "𑽑"  U11F51  # KAWI DIGIT ONE
+<Multi_key> <b> <K> <W> <numbersign> <2> : "𑽒"  U11F52  # KAWI DIGIT TWO
+<Multi_key> <b> <K> <W> <numbersign> <3> : "𑽓"  U11F53  # KAWI DIGIT THREE
+<Multi_key> <b> <K> <W> <numbersign> <4> : "𑽔"  U11F54  # KAWI DIGIT FOUR
+<Multi_key> <b> <K> <W> <numbersign> <5> : "𑽕"  U11F55  # KAWI DIGIT FIVE
+<Multi_key> <b> <K> <W> <numbersign> <6> : "𑽖"  U11F56  # KAWI DIGIT SIX
+<Multi_key> <b> <K> <W> <numbersign> <7> : "𑽗"  U11F57  # KAWI DIGIT SEVEN
+<Multi_key> <b> <K> <W> <numbersign> <8> : "𑽘"  U11F58  # KAWI DIGIT EIGHT
+<Multi_key> <b> <K> <W> <numbersign> <9> : "𑽙"  U11F59  # KAWI DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <K> <W> <bar> : "𑽃"  U11F43  # KAWI DANDA
+<Multi_key> <b> <K> <W> <2> <bar> : "𑽄"  U11F44  # KAWI DOUBLE DANDA
+<Multi_key> <b> <K> <W> <Multi_key> <S> <O> : "𑽅"  U11F45  # KAWI PUNCTUATION SECTION MARKER
 
 # (L = Limbu)
 
@@ -5583,136 +6183,623 @@ include "%L"
 <Multi_key> <b> <m> <1> <0> <0> <space> : "൱"  U0D71  # MALAYALAM NUMBER ONE HUNDRED
 <Multi_key> <b> <m> <1> <0> <0> <0>      : "൲"  U0D72  # MALAYALAM NUMBER ONE THOUSAND
 
-# (M = Meitei)
-
-# Independent letters
-
-<Multi_key> <b> <M> <k> <space>          : "ꯀ"  UABC0  # MEETEI MAYEK LETTER KOK
-<Multi_key> <b> <M> <s>                  : "ꯁ"  UABC1  # MEETEI MAYEK LETTER SAM
-<Multi_key> <b> <M> <l>                  : "ꯂ"  UABC2  # MEETEI MAYEK LETTER LAI
-<Multi_key> <b> <M> <m>                  : "ꯃ"  UABC3  # MEETEI MAYEK LETTER MIT
-<Multi_key> <b> <M> <p> <space>          : "ꯄ"  UABC4  # MEETEI MAYEK LETTER PA
-<Multi_key> <b> <M> <n>                  : "ꯅ"  UABC5  # MEETEI MAYEK LETTER NA
-<Multi_key> <b> <M> <c>                  : "ꯆ"  UABC6  # MEETEI MAYEK LETTER CHIL
-<Multi_key> <b> <M> <t> <space>          : "ꯇ"  UABC7  # MEETEI MAYEK LETTER TIL
-<Multi_key> <b> <M> <k> <h>              : "ꯈ"  UABC8  # MEETEI MAYEK LETTER KHOU
-<Multi_key> <b> <M> <semicolon> <n>      : "ꯉ"  UABC9  # MEETEI MAYEK LETTER NGOU
-<Multi_key> <b> <M> <t> <h>              : "ꯊ"  UABCA  # MEETEI MAYEK LETTER THOU
-<Multi_key> <b> <M> <w>                  : "ꯋ"  UABCB  # MEETEI MAYEK LETTER WAI
-<Multi_key> <b> <M> <y>                  : "ꯌ"  UABCC  # MEETEI MAYEK LETTER YANG
-<Multi_key> <b> <M> <h>                  : "ꯍ"  UABCD  # MEETEI MAYEK LETTER HUK
-<Multi_key> <b> <M> <u> <space>          : "ꯎ"  UABCE  # MEETEI MAYEK LETTER UN
-<Multi_key> <b> <M> <i> <space>          : "ꯏ"  UABCF  # MEETEI MAYEK LETTER I
-<Multi_key> <b> <M> <p> <h>              : "ꯐ"  UABD0  # MEETEI MAYEK LETTER PHAM
-<Multi_key> <b> <M> <a> <space>          : "ꯑ"  UABD1  # MEETEI MAYEK LETTER ATIYA
-<Multi_key> <b> <M> <g> <space>          : "ꯒ"  UABD2  # MEETEI MAYEK LETTER GOK
-<Multi_key> <b> <M> <j> <h>              : "ꯓ"  UABD3  # MEETEI MAYEK LETTER JHAM
-<Multi_key> <b> <M> <r>                  : "ꯔ"  UABD4  # MEETEI MAYEK LETTER RAI
-<Multi_key> <b> <M> <b> <space>          : "ꯕ"  UABD5  # MEETEI MAYEK LETTER BA
-<Multi_key> <b> <M> <j> <space>          : "ꯖ"  UABD6  # MEETEI MAYEK LETTER JIL
-<Multi_key> <b> <M> <d> <space>          : "ꯗ"  UABD7  # MEETEI MAYEK LETTER DIL
-<Multi_key> <b> <M> <g> <h>              : "ꯘ"  UABD8  # MEETEI MAYEK LETTER GHOU
-<Multi_key> <b> <M> <d> <h>              : "ꯙ"  UABD9  # MEETEI MAYEK LETTER DHOU
-<Multi_key> <b> <M> <b> <h>              : "ꯚ"  UABDA  # MEETEI MAYEK LETTER BHAM
-
-# Final letters
-
-<Multi_key> <b> <M> <greater> <k>        : "ꯛ"  UABDB  # MEETEI MAYEK LETTER KOK LONSUM
-<Multi_key> <b> <M> <greater> <l>        : "ꯜ"  UABDC  # MEETEI MAYEK LETTER LAI LONSUM
-<Multi_key> <b> <M> <greater> <m>        : "ꯝ"  UABDD  # MEETEI MAYEK LETTER MIT LONSUM
-<Multi_key> <b> <M> <greater> <p>        : "ꯞ"  UABDE  # MEETEI MAYEK LETTER PA LONSUM
-<Multi_key> <b> <M> <greater> <n>        : "ꯟ"  UABDF  # MEETEI MAYEK LETTER NA LONSUM
-<Multi_key> <b> <M> <greater> <t>        : "ꯠ"  UABE0  # MEETEI MAYEK LETTER TIL LONSUM
-<Multi_key> <b> <M> <greater> <semicolon> <n> : "ꯡ"  UABE1  # MEETEI MAYEK LETTER NGOU LONSUM
-<Multi_key> <b> <M> <greater> <i>        : "ꯢ"  UABE2  # MEETEI MAYEK LETTER I LONSUM
-
-# Dependent vowels
-
-<Multi_key> <b> <M> <o> <o> <Return>     : "ꯣ"  UABE3  # MEETEI MAYEK VOWEL SIGN ONAP
-<Multi_key> <b> <M> <i> <Return>         : "ꯤ"  UABE4  # MEETEI MAYEK VOWEL SIGN INAP
-<Multi_key> <b> <M> <a> <a> <Return>     : "ꯥ"  UABE5  # MEETEI MAYEK VOWEL SIGN ANAP
-<Multi_key> <b> <M> <e> <e> <Return>     : "ꯦ"  UABE6  # MEETEI MAYEK VOWEL SIGN YENAP
-<Multi_key> <b> <M> <o> <u> <Return>     : "ꯧ"  UABE7  # MEETEI MAYEK VOWEL SIGN SOUNAP
-<Multi_key> <b> <M> <u> <Return>         : "ꯨ"  UABE8  # MEETEI MAYEK VOWEL SIGN UNAP
-<Multi_key> <b> <M> <e> <i> <Return>     : "ꯩ"  UABE9  # MEETEI MAYEK VOWEL SIGN CHEINAP
-<Multi_key> <b> <M> <comma> <Return>     : "ꯪ"  UABEA  # MEETEI MAYEK VOWEL SIGN NUNG
-
-# Numerals
-
-<Multi_key> <b> <M> <numbersign> <0>     : "꯰"  UABF0  # MEETEI MAYEK DIGIT ZERO
-<Multi_key> <b> <M> <numbersign> <1>     : "꯱"  UABF1  # MEETEI MAYEK DIGIT ONE
-<Multi_key> <b> <M> <numbersign> <2>     : "꯲"  UABF2  # MEETEI MAYEK DIGIT TWO
-<Multi_key> <b> <M> <numbersign> <3>     : "꯳"  UABF3  # MEETEI MAYEK DIGIT THREE
-<Multi_key> <b> <M> <numbersign> <4>     : "꯴"  UABF4  # MEETEI MAYEK DIGIT FOUR
-<Multi_key> <b> <M> <numbersign> <5>     : "꯵"  UABF5  # MEETEI MAYEK DIGIT FIVE
-<Multi_key> <b> <M> <numbersign> <6>     : "꯶"  UABF6  # MEETEI MAYEK DIGIT SIX
-<Multi_key> <b> <M> <numbersign> <7>     : "꯷"  UABF7  # MEETEI MAYEK DIGIT SEVEN
-<Multi_key> <b> <M> <numbersign> <8>     : "꯸"  UABF8  # MEETEI MAYEK DIGIT EIGHT
-<Multi_key> <b> <M> <numbersign> <9>     : "꯹"  UABF9  # MEETEI MAYEK DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <b> <M> <2> <bar>            : "꯫"  UABEB  # MEETEI MAYEK CHEIKHEI
-<Multi_key> <b> <M> <period> <Return>    : "꯬"  UABEC  # MEETEI MAYEK LUM IYEK
-<Multi_key> <b> <M> <underscore> <Return> : "꯭"  UABED  # MEETEI MAYEK APUN IYEK
-
-# (n = Sylheti Nagri) (not the best abbreviation but not much choice)
+# (MD = Modi)
 
 # Consonants
 
-<Multi_key> <b> <n> <k> <space>          : "ꠇ"  UA807  # SYLOTI NAGRI LETTER KO
-<Multi_key> <b> <n> <k> <h>              : "ꠈ"  UA808  # SYLOTI NAGRI LETTER KHO
-<Multi_key> <b> <n> <g> <space>          : "ꠉ"  UA809  # SYLOTI NAGRI LETTER GO
-<Multi_key> <b> <n> <g> <h>              : "ꠊ"  UA80A  # SYLOTI NAGRI LETTER GHO
-<Multi_key> <b> <n> <period> <Return>    : "ꠋ"  UA80B  # SYLOTI NAGRI SIGN ANUSVARA
-<Multi_key> <b> <n> <c> <space>          : "ꠌ"  UA80C  # SYLOTI NAGRI LETTER CO
-<Multi_key> <b> <n> <c> <h>              : "ꠍ"  UA80D  # SYLOTI NAGRI LETTER CHO
-<Multi_key> <b> <n> <j> <space>          : "ꠎ"  UA80E  # SYLOTI NAGRI LETTER JO
-<Multi_key> <b> <n> <j> <h>              : "ꠏ"  UA80F  # SYLOTI NAGRI LETTER JHO
-<Multi_key> <b> <n> <period> <t> <space> : "ꠐ"  UA810  # SYLOTI NAGRI LETTER TTO
-<Multi_key> <b> <n> <period> <t> <h>     : "ꠑ"  UA811  # SYLOTI NAGRI LETTER TTHO
-<Multi_key> <b> <n> <period> <d> <space> : "ꠒ"  UA812  # SYLOTI NAGRI LETTER DDO
-<Multi_key> <b> <n> <period> <d> <h>     : "ꠓ"  UA813  # SYLOTI NAGRI LETTER DDHO
-<Multi_key> <b> <n> <t> <space>          : "ꠔ"  UA814  # SYLOTI NAGRI LETTER TO
-<Multi_key> <b> <n> <t> <h>              : "ꠕ"  UA815  # SYLOTI NAGRI LETTER THO
-<Multi_key> <b> <n> <d> <space>          : "ꠖ"  UA816  # SYLOTI NAGRI LETTER DO
-<Multi_key> <b> <n> <d> <h>              : "ꠗ"  UA817  # SYLOTI NAGRI LETTER DHO
-<Multi_key> <b> <n> <n>                  : "ꠘ"  UA818  # SYLOTI NAGRI LETTER NO
-<Multi_key> <b> <n> <p> <space>          : "ꠙ"  UA819  # SYLOTI NAGRI LETTER PO
-<Multi_key> <b> <n> <p> <h>              : "ꠚ"  UA81A  # SYLOTI NAGRI LETTER PHO
-<Multi_key> <b> <n> <b> <space>          : "ꠛ"  UA81B  # SYLOTI NAGRI LETTER BO
-<Multi_key> <b> <n> <b> <h>              : "ꠜ"  UA81C  # SYLOTI NAGRI LETTER BHO
-<Multi_key> <b> <n> <m>                  : "ꠝ"  UA81D  # SYLOTI NAGRI LETTER MO
-<Multi_key> <b> <n> <r>                  : "ꠞ"  UA81E  # SYLOTI NAGRI LETTER RO
-<Multi_key> <b> <n> <l>                  : "ꠟ"  UA81F  # SYLOTI NAGRI LETTER LO
-<Multi_key> <b> <n> <underscore> <r>     : "ꠠ"  UA820  # SYLOTI NAGRI LETTER RRO
-<Multi_key> <b> <n> <s>                  : "ꠡ"  UA821  # SYLOTI NAGRI LETTER SO
-<Multi_key> <b> <n> <h>                  : "ꠢ"  UA822  # SYLOTI NAGRI LETTER HO
+<Multi_key> <b> <M> <D> <k> <space> : "𑘎"  U1160E  # MODI LETTER KA
+<Multi_key> <b> <M> <D> <k> <h> : "𑘏"  U1160F  # MODI LETTER KHA
+<Multi_key> <b> <M> <D> <g> <space> : "𑘐"  U11610  # MODI LETTER GA
+<Multi_key> <b> <M> <D> <g> <h> : "𑘑"  U11611  # MODI LETTER GHA
+<Multi_key> <b> <M> <D> <semicolon> <n> : "𑘒"  U11612  # MODI LETTER NGA
+<Multi_key> <b> <M> <D> <c> <space> : "𑘓"  U11613  # MODI LETTER CA
+<Multi_key> <b> <M> <D> <c> <h> : "𑘔"  U11614  # MODI LETTER CHA
+<Multi_key> <b> <M> <D> <j> <space> : "𑘕"  U11615  # MODI LETTER JA
+<Multi_key> <b> <M> <D> <j> <h> : "𑘖"  U11616  # MODI LETTER JHA
+<Multi_key> <b> <M> <D> <asciitilde> <n> : "𑘗"  U11617  # MODI LETTER NYA
+<Multi_key> <b> <M> <D> <period> <t> <space> : "𑘘"  U11618  # MODI LETTER TTA
+<Multi_key> <b> <M> <D> <period> <t> <h> : "𑘙"  U11619  # MODI LETTER TTHA
+<Multi_key> <b> <M> <D> <period> <d> <space> : "𑘚"  U1161A  # MODI LETTER DDA
+<Multi_key> <b> <M> <D> <period> <d> <h> : "𑘛"  U1161B  # MODI LETTER DDHA
+<Multi_key> <b> <M> <D> <period> <n> : "𑘜"  U1161C  # MODI LETTER NNA
+<Multi_key> <b> <M> <D> <t> <space> : "𑘝"  U1161D  # MODI LETTER TA
+<Multi_key> <b> <M> <D> <t> <h> : "𑘞"  U1161E  # MODI LETTER THA
+<Multi_key> <b> <M> <D> <d> <space> : "𑘟"  U1161F  # MODI LETTER DA
+<Multi_key> <b> <M> <D> <d> <h> : "𑘠"  U11620  # MODI LETTER DHA
+<Multi_key> <b> <M> <D> <n> : "𑘡"  U11621  # MODI LETTER NA
+<Multi_key> <b> <M> <D> <p> <space> : "𑘢"  U11622  # MODI LETTER PA
+<Multi_key> <b> <M> <D> <p> <h> : "𑘣"  U11623  # MODI LETTER PHA
+<Multi_key> <b> <M> <D> <b> <space> : "𑘤"  U11624  # MODI LETTER BA
+<Multi_key> <b> <M> <D> <b> <h> : "𑘥"  U11625  # MODI LETTER BHA
+<Multi_key> <b> <M> <D> <m> : "𑘦"  U11626  # MODI LETTER MA
+<Multi_key> <b> <M> <D> <y> : "𑘧"  U11627  # MODI LETTER YA
+<Multi_key> <b> <M> <D> <r> : "𑘨"  U11628  # MODI LETTER RA
+<Multi_key> <b> <M> <D> <l> : "𑘩"  U11629  # MODI LETTER LA
+<Multi_key> <b> <M> <D> <v> : "𑘪"  U1162A  # MODI LETTER VA
+<Multi_key> <b> <M> <D> <semicolon> <s> : "𑘫"  U1162B  # MODI LETTER SHA
+<Multi_key> <b> <M> <D> <period> <s> : "𑘬"  U1162C  # MODI LETTER SSA
+<Multi_key> <b> <M> <D> <s> : "𑘭"  U1162D  # MODI LETTER SA
+<Multi_key> <b> <M> <D> <h> : "𑘮"  U1162E  # MODI LETTER HA
+<Multi_key> <b> <M> <D> <period> <l> : "𑘯"  U1162F  # MODI LETTER LLA
 
 # Independent vowels
-<Multi_key> <b> <n> <a> <space>          : "ꠀ"  UA800  # SYLOTI NAGRI LETTER A
-<Multi_key> <b> <n> <i> <space>          : "ꠁ"  UA801  # SYLOTI NAGRI LETTER I
-<Multi_key> <b> <n> <u> <space>          : "ꠃ"  UA803  # SYLOTI NAGRI LETTER U
-<Multi_key> <b> <n> <e> <e> <space>      : "ꠄ"  UA804  # SYLOTI NAGRI LETTER E
-<Multi_key> <b> <n> <o> <o> <space>      : "ꠅ"  UA805  # SYLOTI NAGRI LETTER O
+
+<Multi_key> <b> <M> <D> <a> <space> : "𑘀"  U11600  # MODI LETTER A
+<Multi_key> <b> <M> <D> <a> <a> <space> : "𑘁"  U11601  # MODI LETTER AA
+<Multi_key> <b> <M> <D> <i> <space> : "𑘂"  U11602  # MODI LETTER I
+<Multi_key> <b> <M> <D> <i> <i> <space> : "𑘃"  U11603  # MODI LETTER II
+<Multi_key> <b> <M> <D> <u> <space> : "𑘄"  U11604  # MODI LETTER U
+<Multi_key> <b> <M> <D> <u> <u> <space> : "𑘅"  U11605  # MODI LETTER UU
+<Multi_key> <b> <M> <D> <comma> <r> <space> : "𑘆"  U11606  # MODI LETTER VOCALIC R
+<Multi_key> <b> <M> <D> <comma> <r> <r> <space> : "𑘇"  U11607  # MODI LETTER VOCALIC RR
+<Multi_key> <b> <M> <D> <comma> <l> <space> : "𑘈"  U11608  # MODI LETTER VOCALIC L
+<Multi_key> <b> <M> <D> <comma> <l> <l> <space> : "𑘉"  U11609  # MODI LETTER VOCALIC LL
+<Multi_key> <b> <M> <D> <e> <e> <space> : "𑘊"  U1160A  # MODI LETTER E
+<Multi_key> <b> <M> <D> <a> <i> <space> : "𑘋"  U1160B  # MODI LETTER AI
+<Multi_key> <b> <M> <D> <o> <o> <space> : "𑘌"  U1160C  # MODI LETTER O
+<Multi_key> <b> <M> <D> <a> <u> <space> : "𑘍"  U1160D  # MODI LETTER AU
 
 # Dependent vowels
-<Multi_key> <b> <n> <a> <Return>         : "ꠣ"  UA823  # SYLOTI NAGRI VOWEL SIGN A
-<Multi_key> <b> <n> <i> <Return>         : "ꠤ"  UA824  # SYLOTI NAGRI VOWEL SIGN I
-<Multi_key> <b> <n> <u> <Return>         : "ꠥ"  UA825  # SYLOTI NAGRI VOWEL SIGN U
-<Multi_key> <b> <n> <e> <e> <Return>     : "ꠦ"  UA826  # SYLOTI NAGRI VOWEL SIGN E
-<Multi_key> <b> <n> <o> <o> <Return>     : "ꠧ"  UA827  # SYLOTI NAGRI VOWEL SIGN OO
-<Multi_key> <b> <n> <o> <i> <Return>     : "ꠂ"  UA802  # SYLOTI NAGRI SIGN DVISVARA
-<Multi_key> <b> <n> <0> <Return>         : "꠆"  UA806  # SYLOTI NAGRI SIGN HASANTA (VIRAMA)
-<Multi_key> <b> <n> <asciicircum> <Return> : "꠆"  UA806  # SYLOTI NAGRI SIGN HASANTA (VIRAMA)
-<Multi_key> <b> <n> <0> <0> <Return>     : "꠬"  UA82C  # SYLOTI NAGRI SIGN ALTERNATE HASANTA
-<Multi_key> <b> <n> <backslash> <Return> : "꠬"  UA82C  # SYLOTI NAGRI SIGN ALTERNATE HASANTA
+
+<Multi_key> <b> <M> <D> <a> <a> <Return> : "𑘰"  U11630  # MODI VOWEL SIGN AA
+<Multi_key> <b> <M> <D> <i> <Return> : "𑘱"  U11631  # MODI VOWEL SIGN I
+<Multi_key> <b> <M> <D> <i> <i> <Return> : "𑘲"  U11632  # MODI VOWEL SIGN II
+<Multi_key> <b> <M> <D> <u> <Return> : "𑘳"  U11633  # MODI VOWEL SIGN U
+<Multi_key> <b> <M> <D> <u> <u> <Return> : "𑘴"  U11634  # MODI VOWEL SIGN UU
+<Multi_key> <b> <M> <D> <comma> <r> <Return> : "𑘵"  U11635  # MODI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <M> <D> <comma> <r> <r> <Return> : "𑘶"  U11636  # MODI VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <M> <D> <comma> <l> <Return> : "𑘷"  U11637  # MODI VOWEL SIGN VOCALIC L
+<Multi_key> <b> <M> <D> <comma> <l> <l> <Return> : "𑘸"  U11638  # MODI VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <M> <D> <e> <e> <Return> : "𑘹"  U11639  # MODI VOWEL SIGN E
+<Multi_key> <b> <M> <D> <a> <i> <Return> : "𑘺"  U1163A  # MODI VOWEL SIGN AI
+<Multi_key> <b> <M> <D> <o> <o> <Return> : "𑘻"  U1163B  # MODI VOWEL SIGN O
+<Multi_key> <b> <M> <D> <a> <u> <Return> : "𑘼"  U1163C  # MODI VOWEL SIGN AU
+<Multi_key> <b> <M> <D> <0> <Return> : "𑘿"  U1163F  # MODI SIGN VIRAMA
 
 # Other signs
-<Multi_key> <b> <n> <o> <1>              : "꠨"  UA828  # SYLOTI NAGRI POETRY MARK-1
-<Multi_key> <b> <n> <o> <2>              : "꠩"  UA829  # SYLOTI NAGRI POETRY MARK-2
-<Multi_key> <b> <n> <o> <3>              : "꠪"  UA82A  # SYLOTI NAGRI POETRY MARK-3
-<Multi_key> <b> <n> <o> <4>              : "꠫"  UA82B  # SYLOTI NAGRI POETRY MARK-4
+
+<Multi_key> <b> <M> <D> <period> <Return> : "𑘽"  U1163D  # MODI SIGN ANUSVARA
+<Multi_key> <b> <M> <D> <colon> <Return> : "𑘾"  U1163E  # MODI SIGN VISARGA
+<Multi_key> <b> <M> <D> <comma> <Return> : "𑘿"  U1163F  # MODI SIGN VIRAMA
+<Multi_key> <b> <M> <D> <parenright> <Return> : "𑙀"  U11640  # MODI SIGN ARDHACANDRA
+<Multi_key> <b> <M> <D> <bar> : "𑙁"  U11641  # MODI DANDA
+<Multi_key> <b> <M> <D> <2> <bar> : "𑙂"  U11642  # MODI DOUBLE DANDA
+<Multi_key> <b> <M> <D> <o> <period> : "𑙃"  U11643  # MODI ABBREVIATION SIGN
+<Multi_key> <b> <M> <D> <exclam> <J> : "𑙄"  U11644  # MODI SIGN HUVA
+
+# Numerals
+
+<Multi_key> <b> <M> <D> <numbersign> <0> : "𑙐"  U11650  # MODI DIGIT ZERO
+<Multi_key> <b> <M> <D> <numbersign> <1> : "𑙑"  U11651  # MODI DIGIT ONE
+<Multi_key> <b> <M> <D> <numbersign> <2> : "𑙒"  U11652  # MODI DIGIT TWO
+<Multi_key> <b> <M> <D> <numbersign> <3> : "𑙓"  U11653  # MODI DIGIT THREE
+<Multi_key> <b> <M> <D> <numbersign> <4> : "𑙔"  U11654  # MODI DIGIT FOUR
+<Multi_key> <b> <M> <D> <numbersign> <5> : "𑙕"  U11655  # MODI DIGIT FIVE
+<Multi_key> <b> <M> <D> <numbersign> <6> : "𑙖"  U11656  # MODI DIGIT SIX
+<Multi_key> <b> <M> <D> <numbersign> <7> : "𑙗"  U11657  # MODI DIGIT SEVEN
+<Multi_key> <b> <M> <D> <numbersign> <8> : "𑙘"  U11658  # MODI DIGIT EIGHT
+<Multi_key> <b> <M> <D> <numbersign> <9> : "𑙙"  U11659  # MODI DIGIT NINE
+
+# (MG = Masaram Gondi)
+
+# Consonants
+
+<Multi_key> <b> <M> <G> <k> <space> : "𑴌"  U11D0C  # MASARAM GONDI LETTER KA
+<Multi_key> <b> <M> <G> <k> <h> : "𑴍"  U11D0D  # MASARAM GONDI LETTER KHA
+<Multi_key> <b> <M> <G> <g> <space> : "𑴎"  U11D0E  # MASARAM GONDI LETTER GA
+<Multi_key> <b> <M> <G> <g> <h> : "𑴏"  U11D0F  # MASARAM GONDI LETTER GHA
+<Multi_key> <b> <M> <G> <semicolon> <n> : "𑴐"  U11D10  # MASARAM GONDI LETTER NGA
+<Multi_key> <b> <M> <G> <c> <space> : "𑴑"  U11D11  # MASARAM GONDI LETTER CA
+<Multi_key> <b> <M> <G> <c> <h> : "𑴒"  U11D12  # MASARAM GONDI LETTER CHA
+<Multi_key> <b> <M> <G> <j> <space> : "𑴓"  U11D13  # MASARAM GONDI LETTER JA
+<Multi_key> <b> <M> <G> <j> <h> : "𑴔"  U11D14  # MASARAM GONDI LETTER JHA
+<Multi_key> <b> <M> <G> <asciitilde> <n> : "𑴕"  U11D15  # MASARAM GONDI LETTER NYA
+<Multi_key> <b> <M> <G> <period> <t> <space> : "𑴖"  U11D16  # MASARAM GONDI LETTER TTA
+<Multi_key> <b> <M> <G> <period> <t> <h> : "𑴗"  U11D17  # MASARAM GONDI LETTER TTHA
+<Multi_key> <b> <M> <G> <period> <d> <space> : "𑴘"  U11D18  # MASARAM GONDI LETTER DDA
+<Multi_key> <b> <M> <G> <period> <d> <h> : "𑴙"  U11D19  # MASARAM GONDI LETTER DDHA
+<Multi_key> <b> <M> <G> <period> <n> : "𑴚"  U11D1A  # MASARAM GONDI LETTER NNA
+<Multi_key> <b> <M> <G> <t> <space> : "𑴛"  U11D1B  # MASARAM GONDI LETTER TA
+<Multi_key> <b> <M> <G> <t> <h> : "𑴜"  U11D1C  # MASARAM GONDI LETTER THA
+<Multi_key> <b> <M> <G> <d> <space> : "𑴝"  U11D1D  # MASARAM GONDI LETTER DA
+<Multi_key> <b> <M> <G> <d> <h> : "𑴞"  U11D1E  # MASARAM GONDI LETTER DHA
+<Multi_key> <b> <M> <G> <n> : "𑴟"  U11D1F  # MASARAM GONDI LETTER NA
+<Multi_key> <b> <M> <G> <p> <space> : "𑴠"  U11D20  # MASARAM GONDI LETTER PA
+<Multi_key> <b> <M> <G> <p> <h> : "𑴡"  U11D21  # MASARAM GONDI LETTER PHA
+<Multi_key> <b> <M> <G> <b> <space> : "𑴢"  U11D22  # MASARAM GONDI LETTER BA
+<Multi_key> <b> <M> <G> <b> <h> : "𑴣"  U11D23  # MASARAM GONDI LETTER BHA
+<Multi_key> <b> <M> <G> <m> : "𑴤"  U11D24  # MASARAM GONDI LETTER MA
+<Multi_key> <b> <M> <G> <y> : "𑴥"  U11D25  # MASARAM GONDI LETTER YA
+<Multi_key> <b> <M> <G> <r> : "𑴦"  U11D26  # MASARAM GONDI LETTER RA
+<Multi_key> <b> <M> <G> <l> : "𑴧"  U11D27  # MASARAM GONDI LETTER LA
+<Multi_key> <b> <M> <G> <v> : "𑴨"  U11D28  # MASARAM GONDI LETTER VA
+<Multi_key> <b> <M> <G> <semicolon> <s> : "𑴩"  U11D29  # MASARAM GONDI LETTER SHA
+<Multi_key> <b> <M> <G> <period> <s> : "𑴪"  U11D2A  # MASARAM GONDI LETTER SSA
+<Multi_key> <b> <M> <G> <s> : "𑴫"  U11D2B  # MASARAM GONDI LETTER SA
+<Multi_key> <b> <M> <G> <h> : "𑴬"  U11D2C  # MASARAM GONDI LETTER HA
+<Multi_key> <b> <M> <G> <period> <l> : "𑴭"  U11D2D  # MASARAM GONDI LETTER LLA
+<Multi_key> <b> <M> <G> <k> <s> <s> : "𑴮"  U11D2E  # MASARAM GONDI LETTER KSSA
+<Multi_key> <b> <M> <G> <j> <asciitilde> <n> : "𑴯"  U11D2F  # MASARAM GONDI LETTER JNYA
+<Multi_key> <b> <M> <G> <t> <r> : "𑴰"  U11D30  # MASARAM GONDI LETTER TRA
+
+# Independent vowels
+
+<Multi_key> <b> <M> <G> <a> <space> : "𑴀"  U11D00  # MASARAM GONDI LETTER A
+<Multi_key> <b> <M> <G> <a> <a> <space> : "𑴁"  U11D01  # MASARAM GONDI LETTER AA
+<Multi_key> <b> <M> <G> <i> <space> : "𑴂"  U11D02  # MASARAM GONDI LETTER I
+<Multi_key> <b> <M> <G> <i> <i> <space> : "𑴃"  U11D03  # MASARAM GONDI LETTER II
+<Multi_key> <b> <M> <G> <u> <space> : "𑴄"  U11D04  # MASARAM GONDI LETTER U
+<Multi_key> <b> <M> <G> <u> <u> <space> : "𑴅"  U11D05  # MASARAM GONDI LETTER UU
+<Multi_key> <b> <M> <G> <e> <e> <space> : "𑴆"  U11D06  # MASARAM GONDI LETTER E
+<Multi_key> <b> <M> <G> <a> <i> <space> : "𑴈"  U11D08  # MASARAM GONDI LETTER AI
+<Multi_key> <b> <M> <G> <o> <o> <space> : "𑴉"  U11D09  # MASARAM GONDI LETTER O
+<Multi_key> <b> <M> <G> <a> <u> <space> : "𑴋"  U11D0B  # MASARAM GONDI LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <M> <G> <a> <a> <Return> : "𑴱"  U11D31  # MASARAM GONDI VOWEL SIGN AA
+<Multi_key> <b> <M> <G> <i> <Return> : "𑴲"  U11D32  # MASARAM GONDI VOWEL SIGN I
+<Multi_key> <b> <M> <G> <i> <i> <Return> : "𑴳"  U11D33  # MASARAM GONDI VOWEL SIGN II
+<Multi_key> <b> <M> <G> <u> <Return> : "𑴴"  U11D34  # MASARAM GONDI VOWEL SIGN U
+<Multi_key> <b> <M> <G> <u> <u> <Return> : "𑴵"  U11D35  # MASARAM GONDI VOWEL SIGN UU
+<Multi_key> <b> <M> <G> <comma> <r> <Return> : "𑴶"  U11D36  # MASARAM GONDI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <M> <G> <e> <e> <Return> : "𑴺"  U11D3A  # MASARAM GONDI VOWEL SIGN E
+<Multi_key> <b> <M> <G> <a> <i> <Return> : "𑴼"  U11D3C  # MASARAM GONDI VOWEL SIGN AI
+<Multi_key> <b> <M> <G> <o> <o> <Return> : "𑴽"  U11D3D  # MASARAM GONDI VOWEL SIGN O
+<Multi_key> <b> <M> <G> <a> <u> <Return> : "𑴿"  U11D3F  # MASARAM GONDI VOWEL SIGN AU
+<Multi_key> <b> <M> <G> <o> <Return> : "𑵄"  U11D44  # MASARAM GONDI SIGN HALANTA
+
+# Other signs
+
+<Multi_key> <b> <M> <G> <period> <Return> : "𑵀"  U11D40  # MASARAM GONDI SIGN ANUSVARA
+<Multi_key> <b> <M> <G> <colon> <Return> : "𑵁"  U11D41  # MASARAM GONDI SIGN VISARGA
+<Multi_key> <b> <M> <G> <underscore> <period> <Return> : "𑵂"  U11D42  # MASARAM GONDI SIGN NUKTA
+<Multi_key> <b> <M> <G> <parenright> <Return> : "𑵃"  U11D43  # MASARAM GONDI SIGN CANDRA
+<Multi_key> <b> <M> <G> <comma> <Return> : "𑵄"  U11D44  # MASARAM GONDI SIGN HALANTA
+<Multi_key> <b> <M> <G> <underscore> <plus> <Return>  : "𑵅"  U11D45  # MASARAM GONDI VIRAMA
+
+# Numerals
+
+<Multi_key> <b> <M> <G> <numbersign> <0> : "𑵐"  U11D50  # MASARAM GONDI DIGIT ZERO
+<Multi_key> <b> <M> <G> <numbersign> <1> : "𑵑"  U11D51  # MASARAM GONDI DIGIT ONE
+<Multi_key> <b> <M> <G> <numbersign> <2> : "𑵒"  U11D52  # MASARAM GONDI DIGIT TWO
+<Multi_key> <b> <M> <G> <numbersign> <3> : "𑵓"  U11D53  # MASARAM GONDI DIGIT THREE
+<Multi_key> <b> <M> <G> <numbersign> <4> : "𑵔"  U11D54  # MASARAM GONDI DIGIT FOUR
+<Multi_key> <b> <M> <G> <numbersign> <5> : "𑵕"  U11D55  # MASARAM GONDI DIGIT FIVE
+<Multi_key> <b> <M> <G> <numbersign> <6> : "𑵖"  U11D56  # MASARAM GONDI DIGIT SIX
+<Multi_key> <b> <M> <G> <numbersign> <7> : "𑵗"  U11D57  # MASARAM GONDI DIGIT SEVEN
+<Multi_key> <b> <M> <G> <numbersign> <8> : "𑵘"  U11D58  # MASARAM GONDI DIGIT EIGHT
+<Multi_key> <b> <M> <G> <numbersign> <9> : "𑵙"  U11D59  # MASARAM GONDI DIGIT NINE
+
+# (MJ = Mahajani)
+
+# Vowels
+
+<Multi_key> <b> <M> <J> <a>                  : "𑅐"  U11150  # MAHAJANI LETTER A
+<Multi_key> <b> <M> <J> <i>                  : "𑅑"  U11151  # MAHAJANI LETTER I
+<Multi_key> <b> <M> <J> <u>                  : "𑅒"  U11152  # MAHAJANI LETTER U
+<Multi_key> <b> <M> <J> <e>                  : "𑅓"  U11153  # MAHAJANI LETTER E
+<Multi_key> <b> <M> <J> <o>                  : "𑅔"  U11154  # MAHAJANI LETTER O
+
+# Consonants
+
+<Multi_key> <b> <M> <J> <k> <space>          : "𑅕"  U11155  # MAHAJANI LETTER KA
+<Multi_key> <b> <M> <J> <k> <h>              : "𑅖"  U11156  # MAHAJANI LETTER KHA
+<Multi_key> <b> <M> <J> <g> <space>          : "𑅗"  U11157  # MAHAJANI LETTER GA
+<Multi_key> <b> <M> <J> <g> <h>              : "𑅘"  U11158  # MAHAJANI LETTER GHA
+<Multi_key> <b> <M> <J> <c> <space>          : "𑅙"  U11159  # MAHAJANI LETTER CA
+<Multi_key> <b> <M> <J> <c> <h>              : "𑅚"  U1115A  # MAHAJANI LETTER CHA
+<Multi_key> <b> <M> <J> <j> <space>          : "𑅛"  U1115B  # MAHAJANI LETTER JA
+<Multi_key> <b> <M> <J> <j> <h>              : "𑅜"  U1115C  # MAHAJANI LETTER JHA
+<Multi_key> <b> <M> <J> <asciitilde> <n>     : "𑅝"  U1115D  # MAHAJANI LETTER NYA
+<Multi_key> <b> <M> <J> <period> <t> <space> : "𑅞"  U1115E  # MAHAJANI LETTER TTA
+<Multi_key> <b> <M> <J> <period> <t> <h>     : "𑅟"  U1115F  # MAHAJANI LETTER TTHA
+<Multi_key> <b> <M> <J> <period> <d> <space> : "𑅠"  U11160  # MAHAJANI LETTER DDA
+<Multi_key> <b> <M> <J> <period> <d> <h>     : "𑅡"  U11161  # MAHAJANI LETTER DDHA
+<Multi_key> <b> <M> <J> <period> <n>         : "𑅢"  U11162  # MAHAJANI LETTER NNA
+<Multi_key> <b> <M> <J> <t> <space>          : "𑅣"  U11163  # MAHAJANI LETTER TA
+<Multi_key> <b> <M> <J> <t> <h>              : "𑅤"  U11164  # MAHAJANI LETTER THA
+<Multi_key> <b> <M> <J> <d> <space>          : "𑅥"  U11165  # MAHAJANI LETTER DA
+<Multi_key> <b> <M> <J> <d> <h>              : "𑅦"  U11166  # MAHAJANI LETTER DHA
+<Multi_key> <b> <M> <J> <n>                  : "𑅧"  U11167  # MAHAJANI LETTER NA
+<Multi_key> <b> <M> <J> <p> <space>          : "𑅨"  U11168  # MAHAJANI LETTER PA
+<Multi_key> <b> <M> <J> <p> <h>              : "𑅩"  U11169  # MAHAJANI LETTER PHA
+<Multi_key> <b> <M> <J> <b> <space>          : "𑅪"  U1116A  # MAHAJANI LETTER BA
+<Multi_key> <b> <M> <J> <b> <h>              : "𑅫"  U1116B  # MAHAJANI LETTER BHA
+<Multi_key> <b> <M> <J> <m>                  : "𑅬"  U1116C  # MAHAJANI LETTER MA
+<Multi_key> <b> <M> <J> <r>                  : "𑅭"  U1116D  # MAHAJANI LETTER RA
+<Multi_key> <b> <M> <J> <l>                  : "𑅮"  U1116E  # MAHAJANI LETTER LA
+<Multi_key> <b> <M> <J> <v>                  : "𑅯"  U1116F  # MAHAJANI LETTER VA
+<Multi_key> <b> <M> <J> <s>                  : "𑅰"  U11170  # MAHAJANI LETTER SA
+<Multi_key> <b> <M> <J> <h>                  : "𑅱"  U11171  # MAHAJANI LETTER HA
+<Multi_key> <b> <M> <J> <underscore> <r>     : "𑅲"  U11172  # MAHAJANI LETTER RRA
+
+# Other signs
+
+<Multi_key> <b> <M> <J> <underscore> <period> <Return> : "𑅳"  U11173  # MAHAJANI SIGN NUKTA
+<Multi_key> <b> <M> <J> <asciicircum> <period> : "𑅴"  U11174  # MAHAJANI ABBREVIATION SIGN
+<Multi_key> <b> <M> <J> <Multi_key> <S> <O>  : "𑅵"  U11175  # MAHAJANI SECTION MARK
+<Multi_key> <b> <M> <J> <S> <H> <R> <I>      : "𑅶"  U11176  # MAHAJANI LIGATURE SHRI
+
+# (ML = Multani)
+
+<Multi_key> <b> <M> <L> <a> : "𑊀"  U11280  # MULTANI LETTER A
+<Multi_key> <b> <M> <L> <i> : "𑊁"  U11281  # MULTANI LETTER I
+<Multi_key> <b> <M> <L> <u> : "𑊂"  U11282  # MULTANI LETTER U
+<Multi_key> <b> <M> <L> <e> <e> : "𑊃"  U11283  # MULTANI LETTER E
+<Multi_key> <b> <M> <L> <k> <space> : "𑊄"  U11284  # MULTANI LETTER KA
+<Multi_key> <b> <M> <L> <k> <h> : "𑊅"  U11285  # MULTANI LETTER KHA
+<Multi_key> <b> <M> <L> <g> <space> : "𑊆"  U11286  # MULTANI LETTER GA
+<Multi_key> <b> <M> <L> <g> <h> : "𑊈"  U11288  # MULTANI LETTER GHA
+<Multi_key> <b> <M> <L> <c> <space> : "𑊊"  U1128A  # MULTANI LETTER CA
+<Multi_key> <b> <M> <L> <c> <h> : "𑊋"  U1128B  # MULTANI LETTER CHA
+<Multi_key> <b> <M> <L> <j> <space> : "𑊌"  U1128C  # MULTANI LETTER JA
+<Multi_key> <b> <M> <L> <j> <j> : "𑊍"  U1128D  # MULTANI LETTER JJA
+<Multi_key> <b> <M> <L> <asciitilde> <n> : "𑊏"  U1128F  # MULTANI LETTER NYA
+<Multi_key> <b> <M> <L> <period> <t> <space> : "𑊐"  U11290  # MULTANI LETTER TTA
+<Multi_key> <b> <M> <L> <period> <t> <h> : "𑊑"  U11291  # MULTANI LETTER TTHA
+<Multi_key> <b> <M> <L> <period> <d> <space> : "𑊒"  U11292  # MULTANI LETTER DDA
+<Multi_key> <b> <M> <L> <d> <d> : "𑊓"  U11293  # MULTANI LETTER DDDA
+<Multi_key> <b> <M> <L> <period> <d> <h> : "𑊔"  U11294  # MULTANI LETTER DDHA
+<Multi_key> <b> <M> <L> <period> <n> : "𑊕"  U11295  # MULTANI LETTER NNA
+<Multi_key> <b> <M> <L> <t> <space> : "𑊖"  U11296  # MULTANI LETTER TA
+<Multi_key> <b> <M> <L> <t> <h> : "𑊗"  U11297  # MULTANI LETTER THA
+<Multi_key> <b> <M> <L> <d> <space> : "𑊘"  U11298  # MULTANI LETTER DA
+<Multi_key> <b> <M> <L> <d> <h> : "𑊙"  U11299  # MULTANI LETTER DHA
+<Multi_key> <b> <M> <L> <n> : "𑊚"  U1129A  # MULTANI LETTER NA
+<Multi_key> <b> <M> <L> <p> <space> : "𑊛"  U1129B  # MULTANI LETTER PA
+<Multi_key> <b> <M> <L> <p> <h> : "𑊜"  U1129C  # MULTANI LETTER PHA
+<Multi_key> <b> <M> <L> <b> <space> : "𑊝"  U1129D  # MULTANI LETTER BA
+<Multi_key> <b> <M> <L> <b> <h> : "𑊟"  U1129F  # MULTANI LETTER BHA
+<Multi_key> <b> <M> <L> <m> : "𑊠"  U112A0  # MULTANI LETTER MA
+<Multi_key> <b> <M> <L> <y> : "𑊡"  U112A1  # MULTANI LETTER YA
+<Multi_key> <b> <M> <L> <r> : "𑊢"  U112A2  # MULTANI LETTER RA
+<Multi_key> <b> <M> <L> <l> : "𑊣"  U112A3  # MULTANI LETTER LA
+<Multi_key> <b> <M> <L> <v> : "𑊤"  U112A4  # MULTANI LETTER VA
+<Multi_key> <b> <M> <L> <s> : "𑊥"  U112A5  # MULTANI LETTER SA
+<Multi_key> <b> <M> <L> <h> : "𑊦"  U112A6  # MULTANI LETTER HA
+<Multi_key> <b> <M> <L> <underscore> <r> : "𑊧"  U112A7  # MULTANI LETTER RRA
+<Multi_key> <b> <M> <L> <period> <r> <h> : "𑊨"  U112A8  # MULTANI LETTER RHA
+<Multi_key> <b> <M> <L> <Multi_key> <S> <O> : "𑊩"  U112A9  # MULTANI SECTION MARK
+
+# (MM = Meitei Mayek)
+
+# Independent letters
+
+<Multi_key> <b> <M> <M> <k> <space>          : "ꯀ"  UABC0  # MEETEI MAYEK LETTER KOK
+<Multi_key> <b> <M> <M> <s>                  : "ꯁ"  UABC1  # MEETEI MAYEK LETTER SAM
+<Multi_key> <b> <M> <M> <l>                  : "ꯂ"  UABC2  # MEETEI MAYEK LETTER LAI
+<Multi_key> <b> <M> <M> <m>                  : "ꯃ"  UABC3  # MEETEI MAYEK LETTER MIT
+<Multi_key> <b> <M> <M> <p> <space>          : "ꯄ"  UABC4  # MEETEI MAYEK LETTER PA
+<Multi_key> <b> <M> <M> <n>                  : "ꯅ"  UABC5  # MEETEI MAYEK LETTER NA
+<Multi_key> <b> <M> <M> <c>                  : "ꯆ"  UABC6  # MEETEI MAYEK LETTER CHIL
+<Multi_key> <b> <M> <M> <t> <space>          : "ꯇ"  UABC7  # MEETEI MAYEK LETTER TIL
+<Multi_key> <b> <M> <M> <k> <h>              : "ꯈ"  UABC8  # MEETEI MAYEK LETTER KHOU
+<Multi_key> <b> <M> <M> <semicolon> <n>      : "ꯉ"  UABC9  # MEETEI MAYEK LETTER NGOU
+<Multi_key> <b> <M> <M> <t> <h>              : "ꯊ"  UABCA  # MEETEI MAYEK LETTER THOU
+<Multi_key> <b> <M> <M> <w>                  : "ꯋ"  UABCB  # MEETEI MAYEK LETTER WAI
+<Multi_key> <b> <M> <M> <y>                  : "ꯌ"  UABCC  # MEETEI MAYEK LETTER YANG
+<Multi_key> <b> <M> <M> <h>                  : "ꯍ"  UABCD  # MEETEI MAYEK LETTER HUK
+<Multi_key> <b> <M> <M> <u> <space>          : "ꯎ"  UABCE  # MEETEI MAYEK LETTER UN
+<Multi_key> <b> <M> <M> <i> <space>          : "ꯏ"  UABCF  # MEETEI MAYEK LETTER I
+<Multi_key> <b> <M> <M> <p> <h>              : "ꯐ"  UABD0  # MEETEI MAYEK LETTER PHAM
+<Multi_key> <b> <M> <M> <a> <space>          : "ꯑ"  UABD1  # MEETEI MAYEK LETTER ATIYA
+<Multi_key> <b> <M> <M> <g> <space>          : "ꯒ"  UABD2  # MEETEI MAYEK LETTER GOK
+<Multi_key> <b> <M> <M> <j> <h>              : "ꯓ"  UABD3  # MEETEI MAYEK LETTER JHAM
+<Multi_key> <b> <M> <M> <r>                  : "ꯔ"  UABD4  # MEETEI MAYEK LETTER RAI
+<Multi_key> <b> <M> <M> <b> <space>          : "ꯕ"  UABD5  # MEETEI MAYEK LETTER BA
+<Multi_key> <b> <M> <M> <j> <space>          : "ꯖ"  UABD6  # MEETEI MAYEK LETTER JIL
+<Multi_key> <b> <M> <M> <d> <space>          : "ꯗ"  UABD7  # MEETEI MAYEK LETTER DIL
+<Multi_key> <b> <M> <M> <g> <h>              : "ꯘ"  UABD8  # MEETEI MAYEK LETTER GHOU
+<Multi_key> <b> <M> <M> <d> <h>              : "ꯙ"  UABD9  # MEETEI MAYEK LETTER DHOU
+<Multi_key> <b> <M> <M> <b> <h>              : "ꯚ"  UABDA  # MEETEI MAYEK LETTER BHAM
+
+# Final letters
+
+<Multi_key> <b> <M> <M> <greater> <k>        : "ꯛ"  UABDB  # MEETEI MAYEK LETTER KOK LONSUM
+<Multi_key> <b> <M> <M> <greater> <l>        : "ꯜ"  UABDC  # MEETEI MAYEK LETTER LAI LONSUM
+<Multi_key> <b> <M> <M> <greater> <m>        : "ꯝ"  UABDD  # MEETEI MAYEK LETTER MIT LONSUM
+<Multi_key> <b> <M> <M> <greater> <p>        : "ꯞ"  UABDE  # MEETEI MAYEK LETTER PA LONSUM
+<Multi_key> <b> <M> <M> <greater> <n>        : "ꯟ"  UABDF  # MEETEI MAYEK LETTER NA LONSUM
+<Multi_key> <b> <M> <M> <greater> <t>        : "ꯠ"  UABE0  # MEETEI MAYEK LETTER TIL LONSUM
+<Multi_key> <b> <M> <M> <greater> <semicolon> <n> : "ꯡ"  UABE1  # MEETEI MAYEK LETTER NGOU LONSUM
+<Multi_key> <b> <M> <M> <greater> <i>        : "ꯢ"  UABE2  # MEETEI MAYEK LETTER I LONSUM
+
+# Dependent vowels
+
+<Multi_key> <b> <M> <M> <o> <o> <Return>     : "ꯣ"  UABE3  # MEETEI MAYEK VOWEL SIGN ONAP
+<Multi_key> <b> <M> <M> <i> <Return>         : "ꯤ"  UABE4  # MEETEI MAYEK VOWEL SIGN INAP
+<Multi_key> <b> <M> <M> <a> <a> <Return>     : "ꯥ"  UABE5  # MEETEI MAYEK VOWEL SIGN ANAP
+<Multi_key> <b> <M> <M> <e> <e> <Return>     : "ꯦ"  UABE6  # MEETEI MAYEK VOWEL SIGN YENAP
+<Multi_key> <b> <M> <M> <o> <u> <Return>     : "ꯧ"  UABE7  # MEETEI MAYEK VOWEL SIGN SOUNAP
+<Multi_key> <b> <M> <M> <u> <Return>         : "ꯨ"  UABE8  # MEETEI MAYEK VOWEL SIGN UNAP
+<Multi_key> <b> <M> <M> <e> <i> <Return>     : "ꯩ"  UABE9  # MEETEI MAYEK VOWEL SIGN CHEINAP
+<Multi_key> <b> <M> <M> <comma> <Return>     : "ꯪ"  UABEA  # MEETEI MAYEK VOWEL SIGN NUNG
+
+# Numerals
+
+<Multi_key> <b> <M> <M> <numbersign> <0>     : "꯰"  UABF0  # MEETEI MAYEK DIGIT ZERO
+<Multi_key> <b> <M> <M> <numbersign> <1>     : "꯱"  UABF1  # MEETEI MAYEK DIGIT ONE
+<Multi_key> <b> <M> <M> <numbersign> <2>     : "꯲"  UABF2  # MEETEI MAYEK DIGIT TWO
+<Multi_key> <b> <M> <M> <numbersign> <3>     : "꯳"  UABF3  # MEETEI MAYEK DIGIT THREE
+<Multi_key> <b> <M> <M> <numbersign> <4>     : "꯴"  UABF4  # MEETEI MAYEK DIGIT FOUR
+<Multi_key> <b> <M> <M> <numbersign> <5>     : "꯵"  UABF5  # MEETEI MAYEK DIGIT FIVE
+<Multi_key> <b> <M> <M> <numbersign> <6>     : "꯶"  UABF6  # MEETEI MAYEK DIGIT SIX
+<Multi_key> <b> <M> <M> <numbersign> <7>     : "꯷"  UABF7  # MEETEI MAYEK DIGIT SEVEN
+<Multi_key> <b> <M> <M> <numbersign> <8>     : "꯸"  UABF8  # MEETEI MAYEK DIGIT EIGHT
+<Multi_key> <b> <M> <M> <numbersign> <9>     : "꯹"  UABF9  # MEETEI MAYEK DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <M> <M> <2> <bar>            : "꯫"  UABEB  # MEETEI MAYEK CHEIKHEI
+<Multi_key> <b> <M> <M> <period> <Return>    : "꯬"  UABEC  # MEETEI MAYEK LUM IYEK
+<Multi_key> <b> <M> <M> <underscore> <Return> : "꯭"  UABED  # MEETEI MAYEK APUN IYEK
+
+# (MR = Marchen)
+
+# Consonants
+
+<Multi_key> <b> <M> <R> <k> <space> : "𑱲"  U11C72  # MARCHEN LETTER KA
+<Multi_key> <b> <M> <R> <k> <h> <space> : "𑱳"  U11C73  # MARCHEN LETTER KHA
+<Multi_key> <b> <M> <R> <g> <space> : "𑱴"  U11C74  # MARCHEN LETTER GA
+<Multi_key> <b> <M> <R> <semicolon> <n> <space> : "𑱵"  U11C75  # MARCHEN LETTER NGA
+<Multi_key> <b> <M> <R> <c> <space> : "𑱶"  U11C76  # MARCHEN LETTER CA
+<Multi_key> <b> <M> <R> <c> <h> <space> : "𑱷"  U11C77  # MARCHEN LETTER CHA
+<Multi_key> <b> <M> <R> <j> <space> : "𑱸"  U11C78  # MARCHEN LETTER JA
+<Multi_key> <b> <M> <R> <asciitilde> <n> <space> : "𑱹"  U11C79  # MARCHEN LETTER NYA
+<Multi_key> <b> <M> <R> <t> <space> : "𑱺"  U11C7A  # MARCHEN LETTER TA
+<Multi_key> <b> <M> <R> <t> <h> <space> : "𑱻"  U11C7B  # MARCHEN LETTER THA
+<Multi_key> <b> <M> <R> <d> <space> : "𑱼"  U11C7C  # MARCHEN LETTER DA
+<Multi_key> <b> <M> <R> <n> <space> : "𑱽"  U11C7D  # MARCHEN LETTER NA
+<Multi_key> <b> <M> <R> <p> <space> : "𑱾"  U11C7E  # MARCHEN LETTER PA
+<Multi_key> <b> <M> <R> <p> <h> <space> : "𑱿"  U11C7F  # MARCHEN LETTER PHA
+<Multi_key> <b> <M> <R> <b> <space> : "𑲀"  U11C80  # MARCHEN LETTER BA
+<Multi_key> <b> <M> <R> <m> <space> : "𑲁"  U11C81  # MARCHEN LETTER MA
+<Multi_key> <b> <M> <R> <asciicircum> <c> <space> : "𑲂"  U11C82  # MARCHEN LETTER TSA
+<Multi_key> <b> <M> <R> <t> <s> <h> <space> : "𑲃"  U11C83  # MARCHEN LETTER TSHA
+<Multi_key> <b> <M> <R> <d> <z> <space> : "𑲄"  U11C84  # MARCHEN LETTER DZA
+<Multi_key> <b> <M> <R> <w> <space> : "𑲅"  U11C85  # MARCHEN LETTER WA
+<Multi_key> <b> <M> <R> <z> <h> <space> : "𑲆"  U11C86  # MARCHEN LETTER ZHA
+<Multi_key> <b> <M> <R> <z> <space> : "𑲇"  U11C87  # MARCHEN LETTER ZA
+<Multi_key> <b> <M> <R> <y> <space> : "𑲉"  U11C89  # MARCHEN LETTER YA
+<Multi_key> <b> <M> <R> <r> <space> : "𑲊"  U11C8A  # MARCHEN LETTER RA
+<Multi_key> <b> <M> <R> <l> <space> : "𑲋"  U11C8B  # MARCHEN LETTER LA
+<Multi_key> <b> <M> <R> <semicolon> <s> <space> : "𑲌"  U11C8C  # MARCHEN LETTER SHA
+<Multi_key> <b> <M> <R> <s> <space> : "𑲍"  U11C8D  # MARCHEN LETTER SA
+<Multi_key> <b> <M> <R> <h> <space> : "𑲎"  U11C8E  # MARCHEN LETTER HA
+<Multi_key> <b> <M> <R> <a> <space> : "𑲏"  U11C8F  # MARCHEN LETTER A
+<Multi_key> <b> <M> <R> <a> <a> <space> : "𑲈"  U11C88  # MARCHEN LETTER -A
+
+# Subjoined consonants
+
+<Multi_key> <b> <M> <R> <k> <Return> : "𑲒"  U11C92  # MARCHEN SUBJOINED LETTER KA
+<Multi_key> <b> <M> <R> <k> <h> <Return> : "𑲓"  U11C93  # MARCHEN SUBJOINED LETTER KHA
+<Multi_key> <b> <M> <R> <g> <Return> : "𑲔"  U11C94  # MARCHEN SUBJOINED LETTER GA
+<Multi_key> <b> <M> <R> <semicolon> <n> <Return> : "𑲕"  U11C95  # MARCHEN SUBJOINED LETTER NGA
+<Multi_key> <b> <M> <R> <c> <Return> : "𑲖"  U11C96  # MARCHEN SUBJOINED LETTER CA
+<Multi_key> <b> <M> <R> <c> <h> <Return> : "𑲗"  U11C97  # MARCHEN SUBJOINED LETTER CHA
+<Multi_key> <b> <M> <R> <j> <Return> : "𑲘"  U11C98  # MARCHEN SUBJOINED LETTER JA
+<Multi_key> <b> <M> <R> <asciitilde> <n> <Return> : "𑲙"  U11C99  # MARCHEN SUBJOINED LETTER NYA
+<Multi_key> <b> <M> <R> <t> <Return> : "𑲚"  U11C9A  # MARCHEN SUBJOINED LETTER TA
+<Multi_key> <b> <M> <R> <t> <h> <Return> : "𑲛"  U11C9B  # MARCHEN SUBJOINED LETTER THA
+<Multi_key> <b> <M> <R> <d> <Return> : "𑲜"  U11C9C  # MARCHEN SUBJOINED LETTER DA
+<Multi_key> <b> <M> <R> <n> <Return> : "𑲝"  U11C9D  # MARCHEN SUBJOINED LETTER NA
+<Multi_key> <b> <M> <R> <p> <Return> : "𑲞"  U11C9E  # MARCHEN SUBJOINED LETTER PA
+<Multi_key> <b> <M> <R> <p> <h> <Return> : "𑲟"  U11C9F  # MARCHEN SUBJOINED LETTER PHA
+<Multi_key> <b> <M> <R> <b> <Return> : "𑲠"  U11CA0  # MARCHEN SUBJOINED LETTER BA
+<Multi_key> <b> <M> <R> <m> <Return> : "𑲡"  U11CA1  # MARCHEN SUBJOINED LETTER MA
+<Multi_key> <b> <M> <R> <asciicircum> <c> <Return> : "𑲢"  U11CA2  # MARCHEN SUBJOINED LETTER TSA
+<Multi_key> <b> <M> <R> <t> <s> <h> <Return> : "𑲣"  U11CA3  # MARCHEN SUBJOINED LETTER TSHA
+<Multi_key> <b> <M> <R> <d> <z> <Return> : "𑲤"  U11CA4  # MARCHEN SUBJOINED LETTER DZA
+<Multi_key> <b> <M> <R> <w> <Return> : "𑲥"  U11CA5  # MARCHEN SUBJOINED LETTER WA
+<Multi_key> <b> <M> <R> <z> <h> <Return> : "𑲦"  U11CA6  # MARCHEN SUBJOINED LETTER ZHA
+<Multi_key> <b> <M> <R> <z> <Return> : "𑲧"  U11CA7  # MARCHEN SUBJOINED LETTER ZA
+<Multi_key> <b> <M> <R> <y> <Return> : "𑲩"  U11CA9  # MARCHEN SUBJOINED LETTER YA
+<Multi_key> <b> <M> <R> <r> <Return> : "𑲪"  U11CAA  # MARCHEN SUBJOINED LETTER RA
+<Multi_key> <b> <M> <R> <l> <Return> : "𑲫"  U11CAB  # MARCHEN SUBJOINED LETTER LA
+<Multi_key> <b> <M> <R> <semicolon> <s> <Return> : "𑲬"  U11CAC  # MARCHEN SUBJOINED LETTER SHA
+<Multi_key> <b> <M> <R> <s> <Return> : "𑲭"  U11CAD  # MARCHEN SUBJOINED LETTER SA
+<Multi_key> <b> <M> <R> <h> <Return> : "𑲮"  U11CAE  # MARCHEN SUBJOINED LETTER HA
+<Multi_key> <b> <M> <R> <a> <Return> : "𑲯"  U11CAF  # MARCHEN SUBJOINED LETTER A
+
+# Dependent vowel signs
+
+<Multi_key> <b> <M> <R> <a> <a> <Return> : "𑲰"  U11CB0  # MARCHEN VOWEL SIGN AA
+<Multi_key> <b> <M> <R> <i> <Return> : "𑲱"  U11CB1  # MARCHEN VOWEL SIGN I
+<Multi_key> <b> <M> <R> <u> <Return> : "𑲲"  U11CB2  # MARCHEN VOWEL SIGN U
+<Multi_key> <b> <M> <R> <e> <e> <Return> : "𑲳"  U11CB3  # MARCHEN VOWEL SIGN E
+<Multi_key> <b> <M> <R> <o> <o> <Return> : "𑲴"  U11CB4  # MARCHEN VOWEL SIGN O
+
+# Other signs
+
+<Multi_key> <b> <M> <R> <period> <Return> : "𑲵"  U11CB5  # MARCHEN SIGN ANUSVARA
+<Multi_key> <b> <M> <R> <period> <parenright> <Return> : "𑲶"  U11CB6  # MARCHEN SIGN CANDRABINDU
+
+# (n = Newa/Pracalit)
+
+<Multi_key> <b> <n> <k> <space> : "𑐎"  U1140E  # NEWA LETTER KA
+<Multi_key> <b> <n> <k> <h> : "𑐏"  U1140F  # NEWA LETTER KHA
+<Multi_key> <b> <n> <g> <space> : "𑐐"  U11410  # NEWA LETTER GA
+<Multi_key> <b> <n> <g> <h> : "𑐑"  U11411  # NEWA LETTER GHA
+<Multi_key> <b> <n> <semicolon> <n> : "𑐒"  U11412  # NEWA LETTER NGA
+<Multi_key> <b> <n> <n> <g> <h> : "𑐓"  U11413  # NEWA LETTER NGHA
+<Multi_key> <b> <n> <c> <space> : "𑐔"  U11414  # NEWA LETTER CA
+<Multi_key> <b> <n> <c> <h> : "𑐕"  U11415  # NEWA LETTER CHA
+<Multi_key> <b> <n> <j> <space> : "𑐖"  U11416  # NEWA LETTER JA
+<Multi_key> <b> <n> <j> <h> : "𑐗"  U11417  # NEWA LETTER JHA
+<Multi_key> <b> <n> <asciitilde> <n> : "𑐘"  U11418  # NEWA LETTER NYA
+<Multi_key> <b> <n> <n> <y> <h> : "𑐙"  U11419  # NEWA LETTER NYHA
+<Multi_key> <b> <n> <period> <t> <space> : "𑐚"  U1141A  # NEWA LETTER TTA
+<Multi_key> <b> <n> <period> <t> <h> : "𑐛"  U1141B  # NEWA LETTER TTHA
+<Multi_key> <b> <n> <period> <d> <space> : "𑐜"  U1141C  # NEWA LETTER DDA
+<Multi_key> <b> <n> <period> <d> <h> : "𑐝"  U1141D  # NEWA LETTER DDHA
+<Multi_key> <b> <n> <period> <n> : "𑐞"  U1141E  # NEWA LETTER NNA
+<Multi_key> <b> <n> <t> <space> : "𑐟"  U1141F  # NEWA LETTER TA
+<Multi_key> <b> <n> <t> <h> : "𑐠"  U11420  # NEWA LETTER THA
+<Multi_key> <b> <n> <d> <space> : "𑐡"  U11421  # NEWA LETTER DA
+<Multi_key> <b> <n> <d> <h> : "𑐢"  U11422  # NEWA LETTER DHA
+<Multi_key> <b> <n> <n> <space> : "𑐣"  U11423  # NEWA LETTER NA
+<Multi_key> <b> <n> <n> <h> : "𑐤"  U11424  # NEWA LETTER NHA
+<Multi_key> <b> <n> <p> <space> : "𑐥"  U11425  # NEWA LETTER PA
+<Multi_key> <b> <n> <p> <h> : "𑐦"  U11426  # NEWA LETTER PHA
+<Multi_key> <b> <n> <b> <space> : "𑐧"  U11427  # NEWA LETTER BA
+<Multi_key> <b> <n> <b> <h> : "𑐨"  U11428  # NEWA LETTER BHA
+<Multi_key> <b> <n> <m> <space> : "𑐩"  U11429  # NEWA LETTER MA
+<Multi_key> <b> <n> <m> <h> : "𑐪"  U1142A  # NEWA LETTER MHA
+<Multi_key> <b> <n> <y> : "𑐫"  U1142B  # NEWA LETTER YA
+<Multi_key> <b> <n> <r> : "𑐬"  U1142C  # NEWA LETTER RA
+<Multi_key> <b> <n> <period> <r> <h> : "𑐭"  U1142D  # NEWA LETTER RHA
+<Multi_key> <b> <n> <l> <space> : "𑐮"  U1142E  # NEWA LETTER LA
+<Multi_key> <b> <n> <l> <h> : "𑐯"  U1142F  # NEWA LETTER LHA
+<Multi_key> <b> <n> <w> : "𑐰"  U11430  # NEWA LETTER WA
+<Multi_key> <b> <n> <semicolon> <s> : "𑐱"  U11431  # NEWA LETTER SHA
+<Multi_key> <b> <n> <period> <s> : "𑐲"  U11432  # NEWA LETTER SSA
+<Multi_key> <b> <n> <s> : "𑐳"  U11433  # NEWA LETTER SA
+<Multi_key> <b> <n> <h> : "𑐴"  U11434  # NEWA LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <n> <a> <space> : "𑐀"  U11400  # NEWA LETTER A
+<Multi_key> <b> <n> <a> <a> <space> : "𑐁"  U11401  # NEWA LETTER AA
+<Multi_key> <b> <n> <i> <space> : "𑐂"  U11402  # NEWA LETTER I
+<Multi_key> <b> <n> <i> <i> <space> : "𑐃"  U11403  # NEWA LETTER II
+<Multi_key> <b> <n> <u> <space> : "𑐄"  U11404  # NEWA LETTER U
+<Multi_key> <b> <n> <u> <u> <space> : "𑐅"  U11405  # NEWA LETTER UU
+<Multi_key> <b> <n> <comma> <r> <space> : "𑐆"  U11406  # NEWA LETTER VOCALIC R
+<Multi_key> <b> <n> <comma> <r> <r> <space> : "𑐇"  U11407  # NEWA LETTER VOCALIC RR
+<Multi_key> <b> <n> <comma> <l> <space> : "𑐈"  U11408  # NEWA LETTER VOCALIC L
+<Multi_key> <b> <n> <comma> <l> <l> <space> : "𑐉"  U11409  # NEWA LETTER VOCALIC LL
+<Multi_key> <b> <n> <e> <e> <space> : "𑐊"  U1140A  # NEWA LETTER E
+<Multi_key> <b> <n> <a> <i> <space> : "𑐋"  U1140B  # NEWA LETTER AI
+<Multi_key> <b> <n> <o> <o> <space> : "𑐌"  U1140C  # NEWA LETTER O
+<Multi_key> <b> <n> <a> <u> <space> : "𑐍"  U1140D  # NEWA LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <n> <a> <a> <Return> : "𑐵"  U11435  # NEWA VOWEL SIGN AA
+<Multi_key> <b> <n> <i> <Return> : "𑐶"  U11436  # NEWA VOWEL SIGN I
+<Multi_key> <b> <n> <i> <i> <Return> : "𑐷"  U11437  # NEWA VOWEL SIGN II
+<Multi_key> <b> <n> <u> <Return> : "𑐸"  U11438  # NEWA VOWEL SIGN U
+<Multi_key> <b> <n> <u> <u> <Return> : "𑐹"  U11439  # NEWA VOWEL SIGN UU
+<Multi_key> <b> <n> <comma> <r> <Return> : "𑐺"  U1143A  # NEWA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <n> <comma> <r> <r> <Return> : "𑐻"  U1143B  # NEWA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <n> <comma> <l> <Return> : "𑐼"  U1143C  # NEWA VOWEL SIGN VOCALIC L
+<Multi_key> <b> <n> <comma> <l> <l> <Return> : "𑐽"  U1143D  # NEWA VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <n> <e> <e> <Return> : "𑐾"  U1143E  # NEWA VOWEL SIGN E
+<Multi_key> <b> <n> <a> <i> <Return> : "𑐿"  U1143F  # NEWA VOWEL SIGN AI
+<Multi_key> <b> <n> <o> <o> <Return> : "𑑀"  U11440  # NEWA VOWEL SIGN O
+<Multi_key> <b> <n> <a> <u> <Return> : "𑑁"  U11441  # NEWA VOWEL SIGN AU
+<Multi_key> <b> <n> <0> <Return> : "𑑂"  U11442  # NEWA SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <n> <comma> <Return> : "𑑂"  U11442  # NEWA SIGN VIRAMA
+<Multi_key> <b> <n> <period> <parenright> <Return> : "𑑃"  U11443  # NEWA SIGN CANDRABINDU
+<Multi_key> <b> <n> <period> <Return> : "𑑄"  U11444  # NEWA SIGN ANUSVARA
+<Multi_key> <b> <n> <colon> <Return> : "𑑅"  U11445  # NEWA SIGN VISARGA
+<Multi_key> <b> <n> <underscore> <period> <Return> : "𑑆"  U11446  # NEWA SIGN NUKTA
+<Multi_key> <b> <n> <S> : "𑑇"  U11447  # NEWA SIGN AVAGRAHA
+<Multi_key> <b> <n> <greater> <S> : "𑑈"  U11448  # NEWA SIGN FINAL ANUSVARA
+<Multi_key> <b> <n> <o> <m> : "𑑉"  U11449  # NEWA OM
+
+# Numerals
+
+<Multi_key> <b> <n> <numbersign> <0> : "𑑐"  U11450  # NEWA DIGIT ZERO
+<Multi_key> <b> <n> <numbersign> <1> : "𑑑"  U11451  # NEWA DIGIT ONE
+<Multi_key> <b> <n> <numbersign> <2> : "𑑒"  U11452  # NEWA DIGIT TWO
+<Multi_key> <b> <n> <numbersign> <3> : "𑑓"  U11453  # NEWA DIGIT THREE
+<Multi_key> <b> <n> <numbersign> <4> : "𑑔"  U11454  # NEWA DIGIT FOUR
+<Multi_key> <b> <n> <numbersign> <5> : "𑑕"  U11455  # NEWA DIGIT FIVE
+<Multi_key> <b> <n> <numbersign> <6> : "𑑖"  U11456  # NEWA DIGIT SIX
+<Multi_key> <b> <n> <numbersign> <7> : "𑑗"  U11457  # NEWA DIGIT SEVEN
+<Multi_key> <b> <n> <numbersign> <8> : "𑑘"  U11458  # NEWA DIGIT EIGHT
+<Multi_key> <b> <n> <numbersign> <9> : "𑑙"  U11459  # NEWA DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <n> <bar> : "𑑋"  U1144B  # NEWA DANDA
+<Multi_key> <b> <n> <2> <bar> : "𑑌"  U1144C  # NEWA DOUBLE DANDA
+<Multi_key> <b> <n> <comma> <space> : "𑑍"  U1144D  # NEWA COMMA
+<Multi_key> <b> <n> <o> <period> : "𑑏"  U1144F  # NEWA ABBREVIATION SIGN
+<Multi_key> <b> <n> <comma> <comma> : "𑑚"  U1145A  # NEWA DOUBLE COMMA
+
+# (N = Nandinagari)
+
+# Consonants
+
+<Multi_key> <b> <N> <k> <space> : "𑦮"  U119AE  # NANDINAGARI LETTER KA
+<Multi_key> <b> <N> <k> <h> : "𑦯"  U119AF  # NANDINAGARI LETTER KHA
+<Multi_key> <b> <N> <g> <space> : "𑦰"  U119B0  # NANDINAGARI LETTER GA
+<Multi_key> <b> <N> <g> <h> : "𑦱"  U119B1  # NANDINAGARI LETTER GHA
+<Multi_key> <b> <N> <semicolon> <n> : "𑦲"  U119B2  # NANDINAGARI LETTER NGA
+<Multi_key> <b> <N> <c> <space> : "𑦳"  U119B3  # NANDINAGARI LETTER CA
+<Multi_key> <b> <N> <c> <h> : "𑦴"  U119B4  # NANDINAGARI LETTER CHA
+<Multi_key> <b> <N> <j> <space> : "𑦵"  U119B5  # NANDINAGARI LETTER JA
+<Multi_key> <b> <N> <j> <h> : "𑦶"  U119B6  # NANDINAGARI LETTER JHA
+<Multi_key> <b> <N> <asciitilde> <n> : "𑦷"  U119B7  # NANDINAGARI LETTER NYA
+<Multi_key> <b> <N> <period> <t> <space> : "𑦸"  U119B8  # NANDINAGARI LETTER TTA
+<Multi_key> <b> <N> <period> <t> <h> : "𑦹"  U119B9  # NANDINAGARI LETTER TTHA
+<Multi_key> <b> <N> <period> <d> <space> : "𑦺"  U119BA  # NANDINAGARI LETTER DDA
+<Multi_key> <b> <N> <period> <d> <h> : "𑦻"  U119BB  # NANDINAGARI LETTER DDHA
+<Multi_key> <b> <N> <period> <n> : "𑦼"  U119BC  # NANDINAGARI LETTER NNA
+<Multi_key> <b> <N> <t> <space> : "𑦽"  U119BD  # NANDINAGARI LETTER TA
+<Multi_key> <b> <N> <t> <h> : "𑦾"  U119BE  # NANDINAGARI LETTER THA
+<Multi_key> <b> <N> <d> <space> : "𑦿"  U119BF  # NANDINAGARI LETTER DA
+<Multi_key> <b> <N> <d> <h> : "𑧀"  U119C0  # NANDINAGARI LETTER DHA
+<Multi_key> <b> <N> <n> : "𑧁"  U119C1  # NANDINAGARI LETTER NA
+<Multi_key> <b> <N> <p> <space> : "𑧂"  U119C2  # NANDINAGARI LETTER PA
+<Multi_key> <b> <N> <p> <h> : "𑧃"  U119C3  # NANDINAGARI LETTER PHA
+<Multi_key> <b> <N> <b> <space> : "𑧄"  U119C4  # NANDINAGARI LETTER BA
+<Multi_key> <b> <N> <b> <h> : "𑧅"  U119C5  # NANDINAGARI LETTER BHA
+<Multi_key> <b> <N> <m> : "𑧆"  U119C6  # NANDINAGARI LETTER MA
+<Multi_key> <b> <N> <y> : "𑧇"  U119C7  # NANDINAGARI LETTER YA
+<Multi_key> <b> <N> <r> : "𑧈"  U119C8  # NANDINAGARI LETTER RA
+<Multi_key> <b> <N> <l> : "𑧉"  U119C9  # NANDINAGARI LETTER LA
+<Multi_key> <b> <N> <v> : "𑧊"  U119CA  # NANDINAGARI LETTER VA
+<Multi_key> <b> <N> <semicolon> <s> : "𑧋"  U119CB  # NANDINAGARI LETTER SHA
+<Multi_key> <b> <N> <period> <s> : "𑧌"  U119CC  # NANDINAGARI LETTER SSA
+<Multi_key> <b> <N> <s> : "𑧍"  U119CD  # NANDINAGARI LETTER SA
+<Multi_key> <b> <N> <h> : "𑧎"  U119CE  # NANDINAGARI LETTER HA
+<Multi_key> <b> <N> <period> <l> : "𑧏"  U119CF  # NANDINAGARI LETTER LLA
+<Multi_key> <b> <N> <underscore> <r> : "𑧐"  U119D0  # NANDINAGARI LETTER RRA
+
+# Independent vowels
+
+<Multi_key> <b> <N> <a> <space> : "𑦠"  U119A0  # NANDINAGARI LETTER A
+<Multi_key> <b> <N> <a> <a> <space> : "𑦡"  U119A1  # NANDINAGARI LETTER AA
+<Multi_key> <b> <N> <i> <space> : "𑦢"  U119A2  # NANDINAGARI LETTER I
+<Multi_key> <b> <N> <i> <i> <space> : "𑦣"  U119A3  # NANDINAGARI LETTER II
+<Multi_key> <b> <N> <u> <space> : "𑦤"  U119A4  # NANDINAGARI LETTER U
+<Multi_key> <b> <N> <u> <u> <space> : "𑦥"  U119A5  # NANDINAGARI LETTER UU
+<Multi_key> <b> <N> <comma> <r> <space> : "𑦦"  U119A6  # NANDINAGARI LETTER VOCALIC R
+<Multi_key> <b> <N> <comma> <r> <r> <space> : "𑦧"  U119A7  # NANDINAGARI LETTER VOCALIC RR
+<Multi_key> <b> <N> <e> <e> <space> : "𑦪"  U119AA  # NANDINAGARI LETTER E
+<Multi_key> <b> <N> <a> <i> <space> : "𑦫"  U119AB  # NANDINAGARI LETTER AI
+<Multi_key> <b> <N> <o> <o> <space> : "𑦬"  U119AC  # NANDINAGARI LETTER O
+<Multi_key> <b> <N> <a> <u> <space> : "𑦭"  U119AD  # NANDINAGARI LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <N> <a> <a> <Return> : "𑧑"  U119D1  # NANDINAGARI VOWEL SIGN AA
+<Multi_key> <b> <N> <i> <Return> : "𑧒"  U119D2  # NANDINAGARI VOWEL SIGN I
+<Multi_key> <b> <N> <i> <i> <Return> : "𑧓"  U119D3  # NANDINAGARI VOWEL SIGN II
+<Multi_key> <b> <N> <u> <Return> : "𑧔"  U119D4  # NANDINAGARI VOWEL SIGN U
+<Multi_key> <b> <N> <u> <u> <Return> : "𑧕"  U119D5  # NANDINAGARI VOWEL SIGN UU
+<Multi_key> <b> <N> <comma> <r> <Return> : "𑧖"  U119D6  # NANDINAGARI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <N> <comma> <r> <r> <Return> : "𑧗"  U119D7  # NANDINAGARI VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <N> <e> <e> <Return> : "𑧚"  U119DA  # NANDINAGARI VOWEL SIGN E
+<Multi_key> <b> <N> <a> <i> <Return> : "𑧛"  U119DB  # NANDINAGARI VOWEL SIGN AI
+<Multi_key> <b> <N> <o> <o> <Return> : "𑧜"  U119DC  # NANDINAGARI VOWEL SIGN O
+<Multi_key> <b> <N> <a> <u> <Return> : "𑧝"  U119DD  # NANDINAGARI VOWEL SIGN AU
+<Multi_key> <b> <N> <0> <Return> : "𑧠"  U119E0  # NANDINAGARI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <N> <period> <Return> : "𑧞"  U119DE  # NANDINAGARI SIGN ANUSVARA
+<Multi_key> <b> <N> <colon> <Return> : "𑧟"  U119DF  # NANDINAGARI SIGN VISARGA
+<Multi_key> <b> <N> <comma> <Return> : "𑧠"  U119E0  # NANDINAGARI SIGN VIRAMA
+<Multi_key> <b> <N> <S> : "𑧡"  U119E1  # NANDINAGARI SIGN AVAGRAHA
+<Multi_key> <b> <N> <question> : "𑧢"  U119E2  # NANDINAGARI SIGN SIDDHAM
 
 # (O = Odia)
 
@@ -5814,6 +6901,46 @@ include "%L"
 <Multi_key> <b> <O> <numbersign> <7>     : "୭"  U0B6D  # ORIYA DIGIT SEVEN (conflicts)
 <Multi_key> <b> <O> <numbersign> <8>     : "୮"  U0B6E  # ORIYA DIGIT EIGHT (conflicts)
 <Multi_key> <b> <O> <numbersign> <9>     : "୯"  U0B6F  # ORIYA DIGIT NINE (conflicts)
+
+# (R = Rejang)
+
+<Multi_key> <b> <R> <k> : "ꤰ"  UA930  # REJANG LETTER KA
+<Multi_key> <b> <R> <g> : "ꤱ"  UA931  # REJANG LETTER GA
+<Multi_key> <b> <R> <semicolon> <n> <space> : "ꤲ"  UA932  # REJANG LETTER NGA
+<Multi_key> <b> <R> <t> : "ꤳ"  UA933  # REJANG LETTER TA
+<Multi_key> <b> <R> <d> : "ꤴ"  UA934  # REJANG LETTER DA
+<Multi_key> <b> <R> <n> <space> : "ꤵ"  UA935  # REJANG LETTER NA
+<Multi_key> <b> <R> <p> : "ꤶ"  UA936  # REJANG LETTER PA
+<Multi_key> <b> <R> <b> : "ꤷ"  UA937  # REJANG LETTER BA
+<Multi_key> <b> <R> <m> <space> : "ꤸ"  UA938  # REJANG LETTER MA
+<Multi_key> <b> <R> <c> : "ꤹ"  UA939  # REJANG LETTER CA
+<Multi_key> <b> <R> <j> : "ꤺ"  UA93A  # REJANG LETTER JA
+<Multi_key> <b> <R> <asciitilde> <n> <space> : "ꤻ"  UA93B  # REJANG LETTER NYA
+<Multi_key> <b> <R> <s> : "ꤼ"  UA93C  # REJANG LETTER SA
+<Multi_key> <b> <R> <r> <space> : "ꤽ"  UA93D  # REJANG LETTER RA
+<Multi_key> <b> <R> <l> : "ꤾ"  UA93E  # REJANG LETTER LA
+<Multi_key> <b> <R> <y> : "ꤿ"  UA93F  # REJANG LETTER YA
+<Multi_key> <b> <R> <w> : "ꥀ"  UA940  # REJANG LETTER WA
+<Multi_key> <b> <R> <h> <space> : "ꥁ"  UA941  # REJANG LETTER HA
+<Multi_key> <b> <R> <m> <b> : "ꥂ"  UA942  # REJANG LETTER MBA
+<Multi_key> <b> <R> <semicolon> <n> <g> : "ꥃ"  UA943  # REJANG LETTER NGGA
+<Multi_key> <b> <R> <n> <d> : "ꥄ"  UA944  # REJANG LETTER NDA
+<Multi_key> <b> <R> <asciitilde> <n> <j> : "ꥅ"  UA945  # REJANG LETTER NYJA
+<Multi_key> <b> <R> <a> <space> : "ꥆ"  UA946  # REJANG LETTER A
+<Multi_key> <b> <R> <i> <Return> : "ꥇ"  UA947  # REJANG VOWEL SIGN I
+<Multi_key> <b> <R> <u> <Return> : "ꥈ"  UA948  # REJANG VOWEL SIGN U
+<Multi_key> <b> <R> <e> <e> <Return> : "ꥉ"  UA949  # REJANG VOWEL SIGN E
+<Multi_key> <b> <R> <a> <i> <Return> : "ꥊ"  UA94A  # REJANG VOWEL SIGN AI
+<Multi_key> <b> <R> <o> <o> <Return> : "ꥋ"  UA94B  # REJANG VOWEL SIGN O
+<Multi_key> <b> <R> <a> <u> <Return> : "ꥌ"  UA94C  # REJANG VOWEL SIGN AU
+<Multi_key> <b> <R> <e> <u> <Return> : "ꥍ"  UA94D  # REJANG VOWEL SIGN EU
+<Multi_key> <b> <R> <e> <a> <Return> : "ꥎ"  UA94E  # REJANG VOWEL SIGN EA
+<Multi_key> <b> <R> <semicolon> <n> <Return> : "ꥏ"  UA94F  # REJANG CONSONANT SIGN NG
+<Multi_key> <b> <R> <n> <Return> : "ꥐ"  UA950  # REJANG CONSONANT SIGN N
+<Multi_key> <b> <R> <r> <Return> : "ꥑ"  UA951  # REJANG CONSONANT SIGN R
+<Multi_key> <b> <R> <h> <Return> : "ꥒ"  UA952  # REJANG CONSONANT SIGN H
+<Multi_key> <b> <R> <0> <Return> : "꥓"  UA953  # REJANG VIRAMA
+<Multi_key> <b> <R> <Multi_key> <S> <O> : "꥟"  UA95F  # REJANG SECTION MARK
 
 # (s = Sinhala)
 
@@ -5923,108 +7050,355 @@ include "%L"
 <Multi_key> <b> <s> <numbersign> <8>     : "෮"  U0DEE  # SINHALA LITH DIGIT EIGHT
 <Multi_key> <b> <s> <numbersign> <9>     : "෯"  U0DEF  # SINHALA LITH DIGIT NINE
 
-# (S = Saurashtra)
+# (SD = Siddham)
 
 # Consonants
 
-<Multi_key> <b> <S> <k> <space>          : "ꢒ"  UA892  # SAURASHTRA LETTER KA
-<Multi_key> <b> <S> <k> <h>              : "ꢓ"  UA893  # SAURASHTRA LETTER KHA
-<Multi_key> <b> <S> <g> <space>          : "ꢔ"  UA894  # SAURASHTRA LETTER GA
-<Multi_key> <b> <S> <g> <h>              : "ꢕ"  UA895  # SAURASHTRA LETTER GHA
-<Multi_key> <b> <S> <semicolon> <n>      : "ꢖ"  UA896  # SAURASHTRA LETTER NGA
-<Multi_key> <b> <S> <c> <space>          : "ꢗ"  UA897  # SAURASHTRA LETTER CA
-<Multi_key> <b> <S> <c> <h>              : "ꢘ"  UA898  # SAURASHTRA LETTER CHA
-<Multi_key> <b> <S> <j> <space>          : "ꢙ"  UA899  # SAURASHTRA LETTER JA
-<Multi_key> <b> <S> <j> <h>              : "ꢚ"  UA89A  # SAURASHTRA LETTER JHA
-<Multi_key> <b> <S> <asciitilde> <n>     : "ꢛ"  UA89B  # SAURASHTRA LETTER NYA
-<Multi_key> <b> <S> <period> <t> <space> : "ꢜ"  UA89C  # SAURASHTRA LETTER TTA
-<Multi_key> <b> <S> <period> <t> <h>     : "ꢝ"  UA89D  # SAURASHTRA LETTER TTHA
-<Multi_key> <b> <S> <period> <d> <space> : "ꢞ"  UA89E  # SAURASHTRA LETTER DDA
-<Multi_key> <b> <S> <period> <d> <h>     : "ꢟ"  UA89F  # SAURASHTRA LETTER DDHA
-<Multi_key> <b> <S> <period> <n>         : "ꢠ"  UA8A0  # SAURASHTRA LETTER NNA
-<Multi_key> <b> <S> <t> <space>          : "ꢡ"  UA8A1  # SAURASHTRA LETTER TA
-<Multi_key> <b> <S> <t> <h>              : "ꢢ"  UA8A2  # SAURASHTRA LETTER THA
-<Multi_key> <b> <S> <d> <space>          : "ꢣ"  UA8A3  # SAURASHTRA LETTER DA
-<Multi_key> <b> <S> <d> <h>              : "ꢤ"  UA8A4  # SAURASHTRA LETTER DHA
-<Multi_key> <b> <S> <n>                  : "ꢥ"  UA8A5  # SAURASHTRA LETTER NA
-<Multi_key> <b> <S> <p> <space>          : "ꢦ"  UA8A6  # SAURASHTRA LETTER PA
-<Multi_key> <b> <S> <p> <h>              : "ꢧ"  UA8A7  # SAURASHTRA LETTER PHA
-<Multi_key> <b> <S> <b> <space>          : "ꢨ"  UA8A8  # SAURASHTRA LETTER BA
-<Multi_key> <b> <S> <b> <h>              : "ꢩ"  UA8A9  # SAURASHTRA LETTER BHA
-<Multi_key> <b> <S> <m>                  : "ꢪ"  UA8AA  # SAURASHTRA LETTER MA
-<Multi_key> <b> <S> <y>                  : "ꢫ"  UA8AB  # SAURASHTRA LETTER YA
-<Multi_key> <b> <S> <r>                  : "ꢬ"  UA8AC  # SAURASHTRA LETTER RA
-<Multi_key> <b> <S> <l>                  : "ꢭ"  UA8AD  # SAURASHTRA LETTER LA
-<Multi_key> <b> <S> <v>                  : "ꢮ"  UA8AE  # SAURASHTRA LETTER VA
-<Multi_key> <b> <S> <semicolon> <s>      : "ꢯ"  UA8AF  # SAURASHTRA LETTER SHA
-<Multi_key> <b> <S> <period> <s>         : "ꢰ"  UA8B0  # SAURASHTRA LETTER SSA
-<Multi_key> <b> <S> <s>                  : "ꢱ"  UA8B1  # SAURASHTRA LETTER SA
-<Multi_key> <b> <S> <h> <space>          : "ꢲ"  UA8B2  # SAURASHTRA LETTER HA
-<Multi_key> <b> <S> <period> <l>         : "ꢳ"  UA8B3  # SAURASHTRA LETTER LLA
-<Multi_key> <b> <S> <h> <Return>         : "ꢴ"  UA8B4  # SAURASHTRA CONSONANT SIGN HAARU
+# Consonants
+
+<Multi_key> <b> <S> <D> <k> <space> : "𑖎"  U1158E  # SIDDHAM LETTER KA
+<Multi_key> <b> <S> <D> <k> <h> : "𑖏"  U1158F  # SIDDHAM LETTER KHA
+<Multi_key> <b> <S> <D> <g> <space> : "𑖐"  U11590  # SIDDHAM LETTER GA
+<Multi_key> <b> <S> <D> <g> <h> : "𑖑"  U11591  # SIDDHAM LETTER GHA
+<Multi_key> <b> <S> <D> <semicolon> <n> : "𑖒"  U11592  # SIDDHAM LETTER NGA
+<Multi_key> <b> <S> <D> <c> <space> : "𑖓"  U11593  # SIDDHAM LETTER CA
+<Multi_key> <b> <S> <D> <c> <h> : "𑖔"  U11594  # SIDDHAM LETTER CHA
+<Multi_key> <b> <S> <D> <j> <space> : "𑖕"  U11595  # SIDDHAM LETTER JA
+<Multi_key> <b> <S> <D> <j> <h> : "𑖖"  U11596  # SIDDHAM LETTER JHA
+<Multi_key> <b> <S> <D> <asciitilde> <n> : "𑖗"  U11597  # SIDDHAM LETTER NYA
+<Multi_key> <b> <S> <D> <period> <t> <space> : "𑖘"  U11598  # SIDDHAM LETTER TTA
+<Multi_key> <b> <S> <D> <period> <t> <h> : "𑖙"  U11599  # SIDDHAM LETTER TTHA
+<Multi_key> <b> <S> <D> <period> <d> <space> : "𑖚"  U1159A  # SIDDHAM LETTER DDA
+<Multi_key> <b> <S> <D> <period> <d> <h> : "𑖛"  U1159B  # SIDDHAM LETTER DDHA
+<Multi_key> <b> <S> <D> <period> <n> : "𑖜"  U1159C  # SIDDHAM LETTER NNA
+<Multi_key> <b> <S> <D> <t> <space> : "𑖝"  U1159D  # SIDDHAM LETTER TA
+<Multi_key> <b> <S> <D> <t> <h> : "𑖞"  U1159E  # SIDDHAM LETTER THA
+<Multi_key> <b> <S> <D> <d> <space> : "𑖟"  U1159F  # SIDDHAM LETTER DA
+<Multi_key> <b> <S> <D> <d> <h> : "𑖠"  U115A0  # SIDDHAM LETTER DHA
+<Multi_key> <b> <S> <D> <n> : "𑖡"  U115A1  # SIDDHAM LETTER NA
+<Multi_key> <b> <S> <D> <p> <space> : "𑖢"  U115A2  # SIDDHAM LETTER PA
+<Multi_key> <b> <S> <D> <p> <h> : "𑖣"  U115A3  # SIDDHAM LETTER PHA
+<Multi_key> <b> <S> <D> <b> <space> : "𑖤"  U115A4  # SIDDHAM LETTER BA
+<Multi_key> <b> <S> <D> <b> <h> : "𑖥"  U115A5  # SIDDHAM LETTER BHA
+<Multi_key> <b> <S> <D> <m> : "𑖦"  U115A6  # SIDDHAM LETTER MA
+<Multi_key> <b> <S> <D> <y> : "𑖧"  U115A7  # SIDDHAM LETTER YA
+<Multi_key> <b> <S> <D> <r> : "𑖨"  U115A8  # SIDDHAM LETTER RA
+<Multi_key> <b> <S> <D> <l> : "𑖩"  U115A9  # SIDDHAM LETTER LA
+<Multi_key> <b> <S> <D> <v> : "𑖪"  U115AA  # SIDDHAM LETTER VA
+<Multi_key> <b> <S> <D> <semicolon> <s> : "𑖫"  U115AB  # SIDDHAM LETTER SHA
+<Multi_key> <b> <S> <D> <period> <s> : "𑖬"  U115AC  # SIDDHAM LETTER SSA
+<Multi_key> <b> <S> <D> <s> : "𑖭"  U115AD  # SIDDHAM LETTER SA
+<Multi_key> <b> <S> <D> <h> : "𑖮"  U115AE  # SIDDHAM LETTER HA
 
 # Independent vowels
 
-<Multi_key> <b> <S> <a> <space>          : "ꢂ"  UA882  # SAURASHTRA LETTER A
-<Multi_key> <b> <S> <a> <a> <space>      : "ꢃ"  UA883  # SAURASHTRA LETTER AA
-<Multi_key> <b> <S> <i> <space>          : "ꢄ"  UA884  # SAURASHTRA LETTER I
-<Multi_key> <b> <S> <i> <i> <space>      : "ꢅ"  UA885  # SAURASHTRA LETTER II
-<Multi_key> <b> <S> <u> <space>          : "ꢆ"  UA886  # SAURASHTRA LETTER U
-<Multi_key> <b> <S> <u> <u> <space>      : "ꢇ"  UA887  # SAURASHTRA LETTER UU
-<Multi_key> <b> <S> <comma> <r> <space>  : "ꢈ"  UA888  # SAURASHTRA LETTER VOCALIC R
-<Multi_key> <b> <S> <comma> <r> <r> <space> : "ꢉ"  UA889  # SAURASHTRA LETTER VOCALIC RR
-<Multi_key> <b> <S> <comma> <l> <space>  : "ꢊ"  UA88A  # SAURASHTRA LETTER VOCALIC L
-<Multi_key> <b> <S> <comma> <l> <l> <space> : "ꢋ"  UA88B  # SAURASHTRA LETTER VOCALIC LL
-<Multi_key> <b> <S> <e> <space>          : "ꢌ"  UA88C  # SAURASHTRA LETTER E
-<Multi_key> <b> <S> <e> <e> <space>      : "ꢍ"  UA88D  # SAURASHTRA LETTER EE
-<Multi_key> <b> <S> <a> <i> <space>      : "ꢎ"  UA88E  # SAURASHTRA LETTER AI
-<Multi_key> <b> <S> <o> <space>          : "ꢏ"  UA88F  # SAURASHTRA LETTER O
-<Multi_key> <b> <S> <o> <o> <space>      : "ꢐ"  UA890  # SAURASHTRA LETTER OO
-<Multi_key> <b> <S> <a> <u> <space>      : "ꢑ"  UA891  # SAURASHTRA LETTER AU
+<Multi_key> <b> <S> <D> <a> <space> : "𑖀"  U11580  # SIDDHAM LETTER A
+<Multi_key> <b> <S> <D> <a> <a> <space> : "𑖁"  U11581  # SIDDHAM LETTER AA
+<Multi_key> <b> <S> <D> <i> <space> : "𑖂"  U11582  # SIDDHAM LETTER I
+<Multi_key> <b> <S> <D> <i> <i> <space> : "𑖃"  U11583  # SIDDHAM LETTER II
+<Multi_key> <b> <S> <D> <u> <space> : "𑖄"  U11584  # SIDDHAM LETTER U
+<Multi_key> <b> <S> <D> <u> <u> <space> : "𑖅"  U11585  # SIDDHAM LETTER UU
+<Multi_key> <b> <S> <D> <comma> <r> <space> : "𑖆"  U11586  # SIDDHAM LETTER VOCALIC R
+<Multi_key> <b> <S> <D> <comma> <r> <r> <space> : "𑖇"  U11587  # SIDDHAM LETTER VOCALIC RR
+<Multi_key> <b> <S> <D> <comma> <l> <space> : "𑖈"  U11588  # SIDDHAM LETTER VOCALIC L
+<Multi_key> <b> <S> <D> <comma> <l> <l> <space> : "𑖉"  U11589  # SIDDHAM LETTER VOCALIC LL
+<Multi_key> <b> <S> <D> <e> <e> <space> : "𑖊"  U1158A  # SIDDHAM LETTER E
+<Multi_key> <b> <S> <D> <a> <i> <space> : "𑖋"  U1158B  # SIDDHAM LETTER AI
+<Multi_key> <b> <S> <D> <o> <o> <space> : "𑖌"  U1158C  # SIDDHAM LETTER O
+<Multi_key> <b> <S> <D> <a> <u> <space> : "𑖍"  U1158D  # SIDDHAM LETTER AU
 
 # Dependent vowels
 
-<Multi_key> <b> <S> <a> <a> <Return>     : "ꢵ"  UA8B5  # SAURASHTRA VOWEL SIGN AA
-<Multi_key> <b> <S> <i> <Return>         : "ꢶ"  UA8B6  # SAURASHTRA VOWEL SIGN I
-<Multi_key> <b> <S> <i> <i> <Return>     : "ꢷ"  UA8B7  # SAURASHTRA VOWEL SIGN II
-<Multi_key> <b> <S> <u> <Return>         : "ꢸ"  UA8B8  # SAURASHTRA VOWEL SIGN U
-<Multi_key> <b> <S> <u> <u> <Return>     : "ꢹ"  UA8B9  # SAURASHTRA VOWEL SIGN UU
-<Multi_key> <b> <S> <comma> <r> <Return> : "ꢺ"  UA8BA  # SAURASHTRA VOWEL SIGN VOCALIC R
-<Multi_key> <b> <S> <comma> <r> <r> <Return> : "ꢻ"  UA8BB  # SAURASHTRA VOWEL SIGN VOCALIC RR
-<Multi_key> <b> <S> <comma> <l> <Return> : "ꢼ"  UA8BC  # SAURASHTRA VOWEL SIGN VOCALIC L
-<Multi_key> <b> <S> <comma> <l> <l> <Return> : "ꢽ"  UA8BD  # SAURASHTRA VOWEL SIGN VOCALIC LL
-<Multi_key> <b> <S> <e> <Return>         : "ꢾ"  UA8BE  # SAURASHTRA VOWEL SIGN E
-<Multi_key> <b> <S> <e> <e> <Return>     : "ꢿ"  UA8BF  # SAURASHTRA VOWEL SIGN EE
-<Multi_key> <b> <S> <a> <i> <Return>     : "ꣀ"  UA8C0  # SAURASHTRA VOWEL SIGN AI
-<Multi_key> <b> <S> <o> <Return>         : "ꣁ"  UA8C1  # SAURASHTRA VOWEL SIGN O
-<Multi_key> <b> <S> <o> <o> <Return>     : "ꣂ"  UA8C2  # SAURASHTRA VOWEL SIGN OO
-<Multi_key> <b> <S> <a> <u> <Return>     : "ꣃ"  UA8C3  # SAURASHTRA VOWEL SIGN AU
-<Multi_key> <b> <S> <0> <Return>         : "꣄"  UA8C4  # SAURASHTRA SIGN VIRAMA
+<Multi_key> <b> <S> <D> <a> <a> <Return> : "𑖯"  U115AF  # SIDDHAM VOWEL SIGN AA
+<Multi_key> <b> <S> <D> <i> <Return> : "𑖰"  U115B0  # SIDDHAM VOWEL SIGN I
+<Multi_key> <b> <S> <D> <i> <i> <Return> : "𑖱"  U115B1  # SIDDHAM VOWEL SIGN II
+<Multi_key> <b> <S> <D> <u> <Return> : "𑖲"  U115B2  # SIDDHAM VOWEL SIGN U
+<Multi_key> <b> <S> <D> <u> <u> <Return> : "𑖳"  U115B3  # SIDDHAM VOWEL SIGN UU
+<Multi_key> <b> <S> <D> <comma> <r> <Return> : "𑖴"  U115B4  # SIDDHAM VOWEL SIGN VOCALIC R
+<Multi_key> <b> <S> <D> <comma> <r> <r> <Return> : "𑖵"  U115B5  # SIDDHAM VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <S> <D> <e> <e> <Return> : "𑖸"  U115B8  # SIDDHAM VOWEL SIGN E
+<Multi_key> <b> <S> <D> <a> <i> <Return> : "𑖹"  U115B9  # SIDDHAM VOWEL SIGN AI
+<Multi_key> <b> <S> <D> <o> <o> <Return> : "𑖺"  U115BA  # SIDDHAM VOWEL SIGN O
+<Multi_key> <b> <S> <D> <a> <u> <Return> : "𑖻"  U115BB  # SIDDHAM VOWEL SIGN AU
+<Multi_key> <b> <S> <D> <0> <Return> : "𑖿"  U115BF  # SIDDHAM SIGN VIRAMA
 
 # Other signs
 
-<Multi_key> <b> <S> <period> <Return>    : "ꢀ"  UA880  # SAURASHTRA SIGN ANUSVARA
-<Multi_key> <b> <S> <colon> <Return>     : "ꢁ"  UA881  # SAURASHTRA SIGN VISARGA
-<Multi_key> <b> <S> <comma> <Return>     : "꣄"  UA8C4  # SAURASHTRA SIGN VIRAMA
-<Multi_key> <b> <S> <period> <parenright> <Return> : "ꣅ"  UA8C5  # SAURASHTRA SIGN CANDRABINDU
-
-# Numerals
-
-<Multi_key> <b> <S> <numbersign> <0>     : "꣐"  UA8D0  # SAURASHTRA DIGIT ZERO
-<Multi_key> <b> <S> <numbersign> <1>     : "꣑"  UA8D1  # SAURASHTRA DIGIT ONE
-<Multi_key> <b> <S> <numbersign> <2>     : "꣒"  UA8D2  # SAURASHTRA DIGIT TWO
-<Multi_key> <b> <S> <numbersign> <3>     : "꣓"  UA8D3  # SAURASHTRA DIGIT THREE
-<Multi_key> <b> <S> <numbersign> <4>     : "꣔"  UA8D4  # SAURASHTRA DIGIT FOUR
-<Multi_key> <b> <S> <numbersign> <5>     : "꣕"  UA8D5  # SAURASHTRA DIGIT FIVE
-<Multi_key> <b> <S> <numbersign> <6>     : "꣖"  UA8D6  # SAURASHTRA DIGIT SIX
-<Multi_key> <b> <S> <numbersign> <7>     : "꣗"  UA8D7  # SAURASHTRA DIGIT SEVEN
-<Multi_key> <b> <S> <numbersign> <8>     : "꣘"  UA8D8  # SAURASHTRA DIGIT EIGHT
-<Multi_key> <b> <S> <numbersign> <9>     : "꣙"  UA8D9  # SAURASHTRA DIGIT NINE
+<Multi_key> <b> <S> <D> <period> <parenright> <Return> : "𑖼"  U115BC  # SIDDHAM SIGN CANDRABINDU
+<Multi_key> <b> <S> <D> <period> <Return> : "𑖽"  U115BD  # SIDDHAM SIGN ANUSVARA
+<Multi_key> <b> <S> <D> <colon> <Return> : "𑖾"  U115BE  # SIDDHAM SIGN VISARGA
+<Multi_key> <b> <S> <D> <comma> <Return> : "𑖿"  U115BF  # SIDDHAM SIGN VIRAMA
+<Multi_key> <b> <S> <D> <underscore> <period> <Return> : "𑗀"  U115C0  # SIDDHAM SIGN NUKTA
 
 # Punctuation
 
-<Multi_key> <b> <S> <bar>                : "꣎"  UA8CE  # SAURASHTRA DANDA
-<Multi_key> <b> <S> <2> <bar>            : "꣏"  UA8CF  # SAURASHTRA DOUBLE DANDA
+<Multi_key> <b> <S> <D> <bar> : "𑗂"  U115C2  # SIDDHAM DANDA
+<Multi_key> <b> <S> <D> <2> <bar> : "𑗃"  U115C3  # SIDDHAM DOUBLE DANDA
+
+# (SH = Sharada)
+
+# Consonants
+
+<Multi_key> <b> <S> <H> <k> <space> : "𑆑"  U11191  # SHARADA LETTER KA
+<Multi_key> <b> <S> <H> <k> <h> : "𑆒"  U11192  # SHARADA LETTER KHA
+<Multi_key> <b> <S> <H> <g> <space> : "𑆓"  U11193  # SHARADA LETTER GA
+<Multi_key> <b> <S> <H> <g> <h> : "𑆔"  U11194  # SHARADA LETTER GHA
+<Multi_key> <b> <S> <H> <semicolon> <n> : "𑆕"  U11195  # SHARADA LETTER NGA
+<Multi_key> <b> <S> <H> <c> <space> : "𑆖"  U11196  # SHARADA LETTER CA
+<Multi_key> <b> <S> <H> <c> <h> : "𑆗"  U11197  # SHARADA LETTER CHA
+<Multi_key> <b> <S> <H> <j> <space> : "𑆘"  U11198  # SHARADA LETTER JA
+<Multi_key> <b> <S> <H> <j> <h> : "𑆙"  U11199  # SHARADA LETTER JHA
+<Multi_key> <b> <S> <H> <asciitilde> <n> : "𑆚"  U1119A  # SHARADA LETTER NYA
+<Multi_key> <b> <S> <H> <period> <t> <space> : "𑆛"  U1119B  # SHARADA LETTER TTA
+<Multi_key> <b> <S> <H> <period> <t> <h> : "𑆜"  U1119C  # SHARADA LETTER TTHA
+<Multi_key> <b> <S> <H> <period> <d> <space> : "𑆝"  U1119D  # SHARADA LETTER DDA
+<Multi_key> <b> <S> <H> <period> <d> <h> : "𑆞"  U1119E  # SHARADA LETTER DDHA
+<Multi_key> <b> <S> <H> <period> <n> : "𑆟"  U1119F  # SHARADA LETTER NNA
+<Multi_key> <b> <S> <H> <t> <space> : "𑆠"  U111A0  # SHARADA LETTER TA
+<Multi_key> <b> <S> <H> <t> <h> : "𑆡"  U111A1  # SHARADA LETTER THA
+<Multi_key> <b> <S> <H> <d> <space> : "𑆢"  U111A2  # SHARADA LETTER DA
+<Multi_key> <b> <S> <H> <d> <h> : "𑆣"  U111A3  # SHARADA LETTER DHA
+<Multi_key> <b> <S> <H> <n> : "𑆤"  U111A4  # SHARADA LETTER NA
+<Multi_key> <b> <S> <H> <p> <space> : "𑆥"  U111A5  # SHARADA LETTER PA
+<Multi_key> <b> <S> <H> <p> <h> : "𑆦"  U111A6  # SHARADA LETTER PHA
+<Multi_key> <b> <S> <H> <b> <space> : "𑆧"  U111A7  # SHARADA LETTER BA
+<Multi_key> <b> <S> <H> <b> <h> : "𑆨"  U111A8  # SHARADA LETTER BHA
+<Multi_key> <b> <S> <H> <m> : "𑆩"  U111A9  # SHARADA LETTER MA
+<Multi_key> <b> <S> <H> <y> : "𑆪"  U111AA  # SHARADA LETTER YA
+<Multi_key> <b> <S> <H> <r> : "𑆫"  U111AB  # SHARADA LETTER RA
+<Multi_key> <b> <S> <H> <l> : "𑆬"  U111AC  # SHARADA LETTER LA
+<Multi_key> <b> <S> <H> <period> <l> : "𑆭"  U111AD  # SHARADA LETTER LLA
+<Multi_key> <b> <S> <H> <v> : "𑆮"  U111AE  # SHARADA LETTER VA
+<Multi_key> <b> <S> <H> <semicolon> <s> : "𑆯"  U111AF  # SHARADA LETTER SHA
+<Multi_key> <b> <S> <H> <period> <s> : "𑆰"  U111B0  # SHARADA LETTER SSA
+<Multi_key> <b> <S> <H> <s> : "𑆱"  U111B1  # SHARADA LETTER SA
+<Multi_key> <b> <S> <H> <h> : "𑆲"  U111B2  # SHARADA LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <S> <H> <a> <space> : "𑆃"  U11183  # SHARADA LETTER A
+<Multi_key> <b> <S> <H> <a> <a> <space> : "𑆄"  U11184  # SHARADA LETTER AA
+<Multi_key> <b> <S> <H> <i> <space> : "𑆅"  U11185  # SHARADA LETTER I
+<Multi_key> <b> <S> <H> <i> <i> <space> : "𑆆"  U11186  # SHARADA LETTER II
+<Multi_key> <b> <S> <H> <u> <space> : "𑆇"  U11187  # SHARADA LETTER U
+<Multi_key> <b> <S> <H> <u> <u> <space> : "𑆈"  U11188  # SHARADA LETTER UU
+<Multi_key> <b> <S> <H> <comma> <r> <space> : "𑆉"  U11189  # SHARADA LETTER VOCALIC R
+<Multi_key> <b> <S> <H> <comma> <r> <r> <space> : "𑆊"  U1118A  # SHARADA LETTER VOCALIC RR
+<Multi_key> <b> <S> <H> <comma> <l> <space> : "𑆋"  U1118B  # SHARADA LETTER VOCALIC L
+<Multi_key> <b> <S> <H> <comma> <l> <l> <space> : "𑆌"  U1118C  # SHARADA LETTER VOCALIC LL
+<Multi_key> <b> <S> <H> <e> <e> <space> : "𑆍"  U1118D  # SHARADA LETTER E
+<Multi_key> <b> <S> <H> <a> <i> <space> : "𑆎"  U1118E  # SHARADA LETTER AI
+<Multi_key> <b> <S> <H> <o> <o> <space> : "𑆏"  U1118F  # SHARADA LETTER O
+<Multi_key> <b> <S> <H> <a> <u> <space> : "𑆐"  U11190  # SHARADA LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <S> <H> <a> <a> <Return> : "𑆳"  U111B3  # SHARADA VOWEL SIGN AA
+<Multi_key> <b> <S> <H> <i> <Return> : "𑆴"  U111B4  # SHARADA VOWEL SIGN I
+<Multi_key> <b> <S> <H> <i> <i> <Return> : "𑆵"  U111B5  # SHARADA VOWEL SIGN II
+<Multi_key> <b> <S> <H> <u> <Return> : "𑆶"  U111B6  # SHARADA VOWEL SIGN U
+<Multi_key> <b> <S> <H> <u> <u> <Return> : "𑆷"  U111B7  # SHARADA VOWEL SIGN UU
+<Multi_key> <b> <S> <H> <comma> <r> <Return> : "𑆸"  U111B8  # SHARADA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <S> <H> <comma> <r> <r> <Return> : "𑆹"  U111B9  # SHARADA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <S> <H> <comma> <l> <Return> : "𑆺"  U111BA  # SHARADA VOWEL SIGN VOCALIC L
+<Multi_key> <b> <S> <H> <comma> <l> <l> <Return> : "𑆻"  U111BB  # SHARADA VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <S> <H> <e> <e> <Return> : "𑆼"  U111BC  # SHARADA VOWEL SIGN E
+<Multi_key> <b> <S> <H> <a> <i> <Return> : "𑆽"  U111BD  # SHARADA VOWEL SIGN AI
+<Multi_key> <b> <S> <H> <o> <o> <Return> : "𑆾"  U111BE  # SHARADA VOWEL SIGN O
+<Multi_key> <b> <S> <H> <a> <u> <Return> : "𑆿"  U111BF  # SHARADA VOWEL SIGN AU
+<Multi_key> <b> <S> <H> <0> <Return> : "𑇀"  U111C0  # SHARADA SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <S> <H> <comma> <Return> : "𑇀"  U111C0  # SHARADA SIGN VIRAMA
+<Multi_key> <b> <S> <H> <parenleft> <period> <Return> : "𑆀"  U11180  # SHARADA SIGN CANDRABINDU
+<Multi_key> <b> <S> <H> <period> <Return> : "𑆁"  U11181  # SHARADA SIGN ANUSVARA
+<Multi_key> <b> <S> <H> <colon> <Return> : "𑆂"  U11182  # SHARADA SIGN VISARGA
+<Multi_key> <b> <S> <H> <S> : "𑇁"  U111C1  # SHARADA SIGN AVAGRAHA
+<Multi_key> <b> <S> <H> <o> <m> : "𑇄"  U111C4  # SHARADA OM
+<Multi_key> <b> <S> <H> <underscore> <period> <Return> : "𑇊"  U111CA  # SHARADA SIGN NUKTA
+<Multi_key> <b> <S> <H> <period> <parenright> <Return> : "𑇏"  U111CF  # SHARADA SIGN INVERTED CANDRABINDU
+
+# Numerals
+
+<Multi_key> <b> <S> <H> <numbersign> <0> : "𑇐"  U111D0  # SHARADA DIGIT ZERO
+<Multi_key> <b> <S> <H> <numbersign> <1> : "𑇑"  U111D1  # SHARADA DIGIT ONE
+<Multi_key> <b> <S> <H> <numbersign> <2> : "𑇒"  U111D2  # SHARADA DIGIT TWO
+<Multi_key> <b> <S> <H> <numbersign> <3> : "𑇓"  U111D3  # SHARADA DIGIT THREE
+<Multi_key> <b> <S> <H> <numbersign> <4> : "𑇔"  U111D4  # SHARADA DIGIT FOUR
+<Multi_key> <b> <S> <H> <numbersign> <5> : "𑇕"  U111D5  # SHARADA DIGIT FIVE
+<Multi_key> <b> <S> <H> <numbersign> <6> : "𑇖"  U111D6  # SHARADA DIGIT SIX
+<Multi_key> <b> <S> <H> <numbersign> <7> : "𑇗"  U111D7  # SHARADA DIGIT SEVEN
+<Multi_key> <b> <S> <H> <numbersign> <8> : "𑇘"  U111D8  # SHARADA DIGIT EIGHT
+<Multi_key> <b> <S> <H> <numbersign> <9> : "𑇙"  U111D9  # SHARADA DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <S> <H> <bar> : "𑇅"  U111C5  # SHARADA DANDA
+<Multi_key> <b> <S> <H> <2> <bar> : "𑇆"  U111C6  # SHARADA DOUBLE DANDA
+<Multi_key> <b> <S> <H> <o> <period> : "𑇇"  U111C7  # SHARADA ABBREVIATION SIGN
+<Multi_key> <b> <S> <H> <comma> <space> : "𑇈"  U111C8  # SHARADA SEPARATOR
+
+# (SN = Sylheti Nagri)
+
+# Consonants
+
+<Multi_key> <b> <S> <N> <k> <space>          : "ꠇ"  UA807  # SYLOTI NAGRI LETTER KO
+<Multi_key> <b> <S> <N> <k> <h>              : "ꠈ"  UA808  # SYLOTI NAGRI LETTER KHO
+<Multi_key> <b> <S> <N> <g> <space>          : "ꠉ"  UA809  # SYLOTI NAGRI LETTER GO
+<Multi_key> <b> <S> <N> <g> <h>              : "ꠊ"  UA80A  # SYLOTI NAGRI LETTER GHO
+<Multi_key> <b> <S> <N> <period> <Return>    : "ꠋ"  UA80B  # SYLOTI NAGRI SIGN ANUSVARA
+<Multi_key> <b> <S> <N> <c> <space>          : "ꠌ"  UA80C  # SYLOTI NAGRI LETTER CO
+<Multi_key> <b> <S> <N> <c> <h>              : "ꠍ"  UA80D  # SYLOTI NAGRI LETTER CHO
+<Multi_key> <b> <S> <N> <j> <space>          : "ꠎ"  UA80E  # SYLOTI NAGRI LETTER JO
+<Multi_key> <b> <S> <N> <j> <h>              : "ꠏ"  UA80F  # SYLOTI NAGRI LETTER JHO
+<Multi_key> <b> <S> <N> <period> <t> <space> : "ꠐ"  UA810  # SYLOTI NAGRI LETTER TTO
+<Multi_key> <b> <S> <N> <period> <t> <h>     : "ꠑ"  UA811  # SYLOTI NAGRI LETTER TTHO
+<Multi_key> <b> <S> <N> <period> <d> <space> : "ꠒ"  UA812  # SYLOTI NAGRI LETTER DDO
+<Multi_key> <b> <S> <N> <period> <d> <h>     : "ꠓ"  UA813  # SYLOTI NAGRI LETTER DDHO
+<Multi_key> <b> <S> <N> <t> <space>          : "ꠔ"  UA814  # SYLOTI NAGRI LETTER TO
+<Multi_key> <b> <S> <N> <t> <h>              : "ꠕ"  UA815  # SYLOTI NAGRI LETTER THO
+<Multi_key> <b> <S> <N> <d> <space>          : "ꠖ"  UA816  # SYLOTI NAGRI LETTER DO
+<Multi_key> <b> <S> <N> <d> <h>              : "ꠗ"  UA817  # SYLOTI NAGRI LETTER DHO
+<Multi_key> <b> <S> <N> <n>                  : "ꠘ"  UA818  # SYLOTI NAGRI LETTER NO
+<Multi_key> <b> <S> <N> <p> <space>          : "ꠙ"  UA819  # SYLOTI NAGRI LETTER PO
+<Multi_key> <b> <S> <N> <p> <h>              : "ꠚ"  UA81A  # SYLOTI NAGRI LETTER PHO
+<Multi_key> <b> <S> <N> <b> <space>          : "ꠛ"  UA81B  # SYLOTI NAGRI LETTER BO
+<Multi_key> <b> <S> <N> <b> <h>              : "ꠜ"  UA81C  # SYLOTI NAGRI LETTER BHO
+<Multi_key> <b> <S> <N> <m>                  : "ꠝ"  UA81D  # SYLOTI NAGRI LETTER MO
+<Multi_key> <b> <S> <N> <r>                  : "ꠞ"  UA81E  # SYLOTI NAGRI LETTER RO
+<Multi_key> <b> <S> <N> <l>                  : "ꠟ"  UA81F  # SYLOTI NAGRI LETTER LO
+<Multi_key> <b> <S> <N> <underscore> <r>     : "ꠠ"  UA820  # SYLOTI NAGRI LETTER RRO
+<Multi_key> <b> <S> <N> <s>                  : "ꠡ"  UA821  # SYLOTI NAGRI LETTER SO
+<Multi_key> <b> <S> <N> <h>                  : "ꠢ"  UA822  # SYLOTI NAGRI LETTER HO
+
+# Independent vowels
+<Multi_key> <b> <S> <N> <a> <space>          : "ꠀ"  UA800  # SYLOTI NAGRI LETTER A
+<Multi_key> <b> <S> <N> <i> <space>          : "ꠁ"  UA801  # SYLOTI NAGRI LETTER I
+<Multi_key> <b> <S> <N> <u> <space>          : "ꠃ"  UA803  # SYLOTI NAGRI LETTER U
+<Multi_key> <b> <S> <N> <e> <e> <space>      : "ꠄ"  UA804  # SYLOTI NAGRI LETTER E
+<Multi_key> <b> <S> <N> <o> <o> <space>      : "ꠅ"  UA805  # SYLOTI NAGRI LETTER O
+
+# Dependent vowels
+<Multi_key> <b> <S> <N> <a> <Return>         : "ꠣ"  UA823  # SYLOTI NAGRI VOWEL SIGN A
+<Multi_key> <b> <S> <N> <i> <Return>         : "ꠤ"  UA824  # SYLOTI NAGRI VOWEL SIGN I
+<Multi_key> <b> <S> <N> <u> <Return>         : "ꠥ"  UA825  # SYLOTI NAGRI VOWEL SIGN U
+<Multi_key> <b> <S> <N> <e> <e> <Return>     : "ꠦ"  UA826  # SYLOTI NAGRI VOWEL SIGN E
+<Multi_key> <b> <S> <N> <o> <o> <Return>     : "ꠧ"  UA827  # SYLOTI NAGRI VOWEL SIGN OO
+<Multi_key> <b> <S> <N> <o> <i> <Return>     : "ꠂ"  UA802  # SYLOTI NAGRI SIGN DVISVARA
+<Multi_key> <b> <S> <N> <0> <Return>         : "꠆"  UA806  # SYLOTI NAGRI SIGN HASANTA (VIRAMA)
+<Multi_key> <b> <S> <N> <asciicircum> <Return> : "꠆"  UA806  # SYLOTI NAGRI SIGN HASANTA (VIRAMA)
+<Multi_key> <b> <S> <N> <0> <0> <Return>     : "꠬"  UA82C  # SYLOTI NAGRI SIGN ALTERNATE HASANTA
+<Multi_key> <b> <S> <N> <backslash> <Return> : "꠬"  UA82C  # SYLOTI NAGRI SIGN ALTERNATE HASANTA
+
+# Other signs
+<Multi_key> <b> <S> <N> <o> <1>              : "꠨"  UA828  # SYLOTI NAGRI POETRY MARK-1
+<Multi_key> <b> <S> <N> <o> <2>              : "꠩"  UA829  # SYLOTI NAGRI POETRY MARK-2
+<Multi_key> <b> <S> <N> <o> <3>              : "꠪"  UA82A  # SYLOTI NAGRI POETRY MARK-3
+<Multi_key> <b> <S> <N> <o> <4>              : "꠫"  UA82B  # SYLOTI NAGRI POETRY MARK-4
+
+# (SR = Saurashtra)
+
+# Consonants
+
+<Multi_key> <b> <S> <R> <k> <space>          : "ꢒ"  UA892  # SAURASHTRA LETTER KA
+<Multi_key> <b> <S> <R> <k> <h>              : "ꢓ"  UA893  # SAURASHTRA LETTER KHA
+<Multi_key> <b> <S> <R> <g> <space>          : "ꢔ"  UA894  # SAURASHTRA LETTER GA
+<Multi_key> <b> <S> <R> <g> <h>              : "ꢕ"  UA895  # SAURASHTRA LETTER GHA
+<Multi_key> <b> <S> <R> <semicolon> <n>      : "ꢖ"  UA896  # SAURASHTRA LETTER NGA
+<Multi_key> <b> <S> <R> <c> <space>          : "ꢗ"  UA897  # SAURASHTRA LETTER CA
+<Multi_key> <b> <S> <R> <c> <h>              : "ꢘ"  UA898  # SAURASHTRA LETTER CHA
+<Multi_key> <b> <S> <R> <j> <space>          : "ꢙ"  UA899  # SAURASHTRA LETTER JA
+<Multi_key> <b> <S> <R> <j> <h>              : "ꢚ"  UA89A  # SAURASHTRA LETTER JHA
+<Multi_key> <b> <S> <R> <asciitilde> <n>     : "ꢛ"  UA89B  # SAURASHTRA LETTER NYA
+<Multi_key> <b> <S> <R> <period> <t> <space> : "ꢜ"  UA89C  # SAURASHTRA LETTER TTA
+<Multi_key> <b> <S> <R> <period> <t> <h>     : "ꢝ"  UA89D  # SAURASHTRA LETTER TTHA
+<Multi_key> <b> <S> <R> <period> <d> <space> : "ꢞ"  UA89E  # SAURASHTRA LETTER DDA
+<Multi_key> <b> <S> <R> <period> <d> <h>     : "ꢟ"  UA89F  # SAURASHTRA LETTER DDHA
+<Multi_key> <b> <S> <R> <period> <n>         : "ꢠ"  UA8A0  # SAURASHTRA LETTER NNA
+<Multi_key> <b> <S> <R> <t> <space>          : "ꢡ"  UA8A1  # SAURASHTRA LETTER TA
+<Multi_key> <b> <S> <R> <t> <h>              : "ꢢ"  UA8A2  # SAURASHTRA LETTER THA
+<Multi_key> <b> <S> <R> <d> <space>          : "ꢣ"  UA8A3  # SAURASHTRA LETTER DA
+<Multi_key> <b> <S> <R> <d> <h>              : "ꢤ"  UA8A4  # SAURASHTRA LETTER DHA
+<Multi_key> <b> <S> <R> <n>                  : "ꢥ"  UA8A5  # SAURASHTRA LETTER NA
+<Multi_key> <b> <S> <R> <p> <space>          : "ꢦ"  UA8A6  # SAURASHTRA LETTER PA
+<Multi_key> <b> <S> <R> <p> <h>              : "ꢧ"  UA8A7  # SAURASHTRA LETTER PHA
+<Multi_key> <b> <S> <R> <b> <space>          : "ꢨ"  UA8A8  # SAURASHTRA LETTER BA
+<Multi_key> <b> <S> <R> <b> <h>              : "ꢩ"  UA8A9  # SAURASHTRA LETTER BHA
+<Multi_key> <b> <S> <R> <m>                  : "ꢪ"  UA8AA  # SAURASHTRA LETTER MA
+<Multi_key> <b> <S> <R> <y>                  : "ꢫ"  UA8AB  # SAURASHTRA LETTER YA
+<Multi_key> <b> <S> <R> <r>                  : "ꢬ"  UA8AC  # SAURASHTRA LETTER RA
+<Multi_key> <b> <S> <R> <l>                  : "ꢭ"  UA8AD  # SAURASHTRA LETTER LA
+<Multi_key> <b> <S> <R> <v>                  : "ꢮ"  UA8AE  # SAURASHTRA LETTER VA
+<Multi_key> <b> <S> <R> <semicolon> <s>      : "ꢯ"  UA8AF  # SAURASHTRA LETTER SHA
+<Multi_key> <b> <S> <R> <period> <s>         : "ꢰ"  UA8B0  # SAURASHTRA LETTER SSA
+<Multi_key> <b> <S> <R> <s>                  : "ꢱ"  UA8B1  # SAURASHTRA LETTER SA
+<Multi_key> <b> <S> <R> <h> <space>          : "ꢲ"  UA8B2  # SAURASHTRA LETTER HA
+<Multi_key> <b> <S> <R> <period> <l>         : "ꢳ"  UA8B3  # SAURASHTRA LETTER LLA
+<Multi_key> <b> <S> <R> <h> <Return>         : "ꢴ"  UA8B4  # SAURASHTRA CONSONANT SIGN HAARU
+
+# Independent vowels
+
+<Multi_key> <b> <S> <R> <a> <space>          : "ꢂ"  UA882  # SAURASHTRA LETTER A
+<Multi_key> <b> <S> <R> <a> <a> <space>      : "ꢃ"  UA883  # SAURASHTRA LETTER AA
+<Multi_key> <b> <S> <R> <i> <space>          : "ꢄ"  UA884  # SAURASHTRA LETTER I
+<Multi_key> <b> <S> <R> <i> <i> <space>      : "ꢅ"  UA885  # SAURASHTRA LETTER II
+<Multi_key> <b> <S> <R> <u> <space>          : "ꢆ"  UA886  # SAURASHTRA LETTER U
+<Multi_key> <b> <S> <R> <u> <u> <space>      : "ꢇ"  UA887  # SAURASHTRA LETTER UU
+<Multi_key> <b> <S> <R> <comma> <r> <space>  : "ꢈ"  UA888  # SAURASHTRA LETTER VOCALIC R
+<Multi_key> <b> <S> <R> <comma> <r> <r> <space> : "ꢉ"  UA889  # SAURASHTRA LETTER VOCALIC RR
+<Multi_key> <b> <S> <R> <comma> <l> <space>  : "ꢊ"  UA88A  # SAURASHTRA LETTER VOCALIC L
+<Multi_key> <b> <S> <R> <comma> <l> <l> <space> : "ꢋ"  UA88B  # SAURASHTRA LETTER VOCALIC LL
+<Multi_key> <b> <S> <R> <e> <space>          : "ꢌ"  UA88C  # SAURASHTRA LETTER E
+<Multi_key> <b> <S> <R> <e> <e> <space>      : "ꢍ"  UA88D  # SAURASHTRA LETTER EE
+<Multi_key> <b> <S> <R> <a> <i> <space>      : "ꢎ"  UA88E  # SAURASHTRA LETTER AI
+<Multi_key> <b> <S> <R> <o> <space>          : "ꢏ"  UA88F  # SAURASHTRA LETTER O
+<Multi_key> <b> <S> <R> <o> <o> <space>      : "ꢐ"  UA890  # SAURASHTRA LETTER OO
+<Multi_key> <b> <S> <R> <a> <u> <space>      : "ꢑ"  UA891  # SAURASHTRA LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <S> <R> <a> <a> <Return>     : "ꢵ"  UA8B5  # SAURASHTRA VOWEL SIGN AA
+<Multi_key> <b> <S> <R> <i> <Return>         : "ꢶ"  UA8B6  # SAURASHTRA VOWEL SIGN I
+<Multi_key> <b> <S> <R> <i> <i> <Return>     : "ꢷ"  UA8B7  # SAURASHTRA VOWEL SIGN II
+<Multi_key> <b> <S> <R> <u> <Return>         : "ꢸ"  UA8B8  # SAURASHTRA VOWEL SIGN U
+<Multi_key> <b> <S> <R> <u> <u> <Return>     : "ꢹ"  UA8B9  # SAURASHTRA VOWEL SIGN UU
+<Multi_key> <b> <S> <R> <comma> <r> <Return> : "ꢺ"  UA8BA  # SAURASHTRA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <S> <R> <comma> <r> <r> <Return> : "ꢻ"  UA8BB  # SAURASHTRA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <S> <R> <comma> <l> <Return> : "ꢼ"  UA8BC  # SAURASHTRA VOWEL SIGN VOCALIC L
+<Multi_key> <b> <S> <R> <comma> <l> <l> <Return> : "ꢽ"  UA8BD  # SAURASHTRA VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <S> <R> <e> <Return>         : "ꢾ"  UA8BE  # SAURASHTRA VOWEL SIGN E
+<Multi_key> <b> <S> <R> <e> <e> <Return>     : "ꢿ"  UA8BF  # SAURASHTRA VOWEL SIGN EE
+<Multi_key> <b> <S> <R> <a> <i> <Return>     : "ꣀ"  UA8C0  # SAURASHTRA VOWEL SIGN AI
+<Multi_key> <b> <S> <R> <o> <Return>         : "ꣁ"  UA8C1  # SAURASHTRA VOWEL SIGN O
+<Multi_key> <b> <S> <R> <o> <o> <Return>     : "ꣂ"  UA8C2  # SAURASHTRA VOWEL SIGN OO
+<Multi_key> <b> <S> <R> <a> <u> <Return>     : "ꣃ"  UA8C3  # SAURASHTRA VOWEL SIGN AU
+<Multi_key> <b> <S> <R> <0> <Return>         : "꣄"  UA8C4  # SAURASHTRA SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <S> <R> <period> <Return>    : "ꢀ"  UA880  # SAURASHTRA SIGN ANUSVARA
+<Multi_key> <b> <S> <R> <colon> <Return>     : "ꢁ"  UA881  # SAURASHTRA SIGN VISARGA
+<Multi_key> <b> <S> <R> <comma> <Return>     : "꣄"  UA8C4  # SAURASHTRA SIGN VIRAMA
+<Multi_key> <b> <S> <R> <period> <parenright> <Return> : "ꣅ"  UA8C5  # SAURASHTRA SIGN CANDRABINDU
+
+# Numerals
+
+<Multi_key> <b> <S> <R> <numbersign> <0>     : "꣐"  UA8D0  # SAURASHTRA DIGIT ZERO
+<Multi_key> <b> <S> <R> <numbersign> <1>     : "꣑"  UA8D1  # SAURASHTRA DIGIT ONE
+<Multi_key> <b> <S> <R> <numbersign> <2>     : "꣒"  UA8D2  # SAURASHTRA DIGIT TWO
+<Multi_key> <b> <S> <R> <numbersign> <3>     : "꣓"  UA8D3  # SAURASHTRA DIGIT THREE
+<Multi_key> <b> <S> <R> <numbersign> <4>     : "꣔"  UA8D4  # SAURASHTRA DIGIT FOUR
+<Multi_key> <b> <S> <R> <numbersign> <5>     : "꣕"  UA8D5  # SAURASHTRA DIGIT FIVE
+<Multi_key> <b> <S> <R> <numbersign> <6>     : "꣖"  UA8D6  # SAURASHTRA DIGIT SIX
+<Multi_key> <b> <S> <R> <numbersign> <7>     : "꣗"  UA8D7  # SAURASHTRA DIGIT SEVEN
+<Multi_key> <b> <S> <R> <numbersign> <8>     : "꣘"  UA8D8  # SAURASHTRA DIGIT EIGHT
+<Multi_key> <b> <S> <R> <numbersign> <9>     : "꣙"  UA8D9  # SAURASHTRA DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <b> <S> <R> <bar>                : "꣎"  UA8CE  # SAURASHTRA DANDA
+<Multi_key> <b> <S> <R> <2> <bar>            : "꣏"  UA8CF  # SAURASHTRA DOUBLE DANDA
 
 # (t = Tamil)
 
@@ -6215,6 +7589,276 @@ include "%L"
 <Multi_key> <b> <T> <numbersign> <7>     : "౭"  U0C6D  # TELUGU DIGIT SEVEN
 <Multi_key> <b> <T> <numbersign> <8>     : "౮"  U0C6E  # TELUGU DIGIT EIGHT
 <Multi_key> <b> <T> <numbersign> <9>     : "౯"  U0C6F  # TELUGU DIGIT NINE
+
+# (TK = Takri)
+
+# Consonants
+
+<Multi_key> <b> <T> <K> <k> <space> : "𑚊"  U1168A  # TAKRI LETTER KA
+<Multi_key> <b> <T> <K> <k> <h> : "𑚋"  U1168B  # TAKRI LETTER KHA
+<Multi_key> <b> <T> <K> <g> <space> : "𑚌"  U1168C  # TAKRI LETTER GA
+<Multi_key> <b> <T> <K> <g> <h> : "𑚍"  U1168D  # TAKRI LETTER GHA
+<Multi_key> <b> <T> <K> <semicolon> <n> : "𑚎"  U1168E  # TAKRI LETTER NGA
+<Multi_key> <b> <T> <K> <c> <space> : "𑚏"  U1168F  # TAKRI LETTER CA
+<Multi_key> <b> <T> <K> <c> <h> : "𑚐"  U11690  # TAKRI LETTER CHA
+<Multi_key> <b> <T> <K> <j> <space> : "𑚑"  U11691  # TAKRI LETTER JA
+<Multi_key> <b> <T> <K> <j> <h> : "𑚒"  U11692  # TAKRI LETTER JHA
+<Multi_key> <b> <T> <K> <asciitilde> <n> : "𑚓"  U11693  # TAKRI LETTER NYA
+<Multi_key> <b> <T> <K> <period> <t> <space> : "𑚔"  U11694  # TAKRI LETTER TTA
+<Multi_key> <b> <T> <K> <period> <t> <h> : "𑚕"  U11695  # TAKRI LETTER TTHA
+<Multi_key> <b> <T> <K> <period> <d> <space> : "𑚖"  U11696  # TAKRI LETTER DDA
+<Multi_key> <b> <T> <K> <period> <d> <h> : "𑚗"  U11697  # TAKRI LETTER DDHA
+<Multi_key> <b> <T> <K> <period> <n> : "𑚘"  U11698  # TAKRI LETTER NNA
+<Multi_key> <b> <T> <K> <t> <space> : "𑚙"  U11699  # TAKRI LETTER TA
+<Multi_key> <b> <T> <K> <t> <h> : "𑚚"  U1169A  # TAKRI LETTER THA
+<Multi_key> <b> <T> <K> <d> <space> : "𑚛"  U1169B  # TAKRI LETTER DA
+<Multi_key> <b> <T> <K> <d> <h> : "𑚜"  U1169C  # TAKRI LETTER DHA
+<Multi_key> <b> <T> <K> <n> : "𑚝"  U1169D  # TAKRI LETTER NA
+<Multi_key> <b> <T> <K> <p> <space> : "𑚞"  U1169E  # TAKRI LETTER PA
+<Multi_key> <b> <T> <K> <p> <h> : "𑚟"  U1169F  # TAKRI LETTER PHA
+<Multi_key> <b> <T> <K> <b> <space> : "𑚠"  U116A0  # TAKRI LETTER BA
+<Multi_key> <b> <T> <K> <b> <h> : "𑚡"  U116A1  # TAKRI LETTER BHA
+<Multi_key> <b> <T> <K> <m> : "𑚢"  U116A2  # TAKRI LETTER MA
+<Multi_key> <b> <T> <K> <y> : "𑚣"  U116A3  # TAKRI LETTER YA
+<Multi_key> <b> <T> <K> <r> : "𑚤"  U116A4  # TAKRI LETTER RA
+<Multi_key> <b> <T> <K> <l> : "𑚥"  U116A5  # TAKRI LETTER LA
+<Multi_key> <b> <T> <K> <v> : "𑚦"  U116A6  # TAKRI LETTER VA
+<Multi_key> <b> <T> <K> <semicolon> <s> : "𑚧"  U116A7  # TAKRI LETTER SHA
+<Multi_key> <b> <T> <K> <s> : "𑚨"  U116A8  # TAKRI LETTER SA
+<Multi_key> <b> <T> <K> <h> : "𑚩"  U116A9  # TAKRI LETTER HA
+<Multi_key> <b> <T> <K> <underscore> <r> : "𑚪"  U116AA  # TAKRI LETTER RRA
+
+# Independent vowels
+
+<Multi_key> <b> <T> <K> <a> <space> : "𑚀"  U11680  # TAKRI LETTER A
+<Multi_key> <b> <T> <K> <a> <a> <space> : "𑚁"  U11681  # TAKRI LETTER AA
+<Multi_key> <b> <T> <K> <i> <space> : "𑚂"  U11682  # TAKRI LETTER I
+<Multi_key> <b> <T> <K> <i> <i> <space> : "𑚃"  U11683  # TAKRI LETTER II
+<Multi_key> <b> <T> <K> <u> <space> : "𑚄"  U11684  # TAKRI LETTER U
+<Multi_key> <b> <T> <K> <u> <u> <space> : "𑚅"  U11685  # TAKRI LETTER UU
+<Multi_key> <b> <T> <K> <e> <e> <space> : "𑚆"  U11686  # TAKRI LETTER E
+<Multi_key> <b> <T> <K> <a> <i> <space> : "𑚇"  U11687  # TAKRI LETTER AI
+<Multi_key> <b> <T> <K> <o> <o> <space> : "𑚈"  U11688  # TAKRI LETTER O
+<Multi_key> <b> <T> <K> <a> <u> <space> : "𑚉"  U11689  # TAKRI LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <T> <K> <a> <a> <Return> : "𑚭"  U116AD  # TAKRI VOWEL SIGN AA
+<Multi_key> <b> <T> <K> <i> <Return> : "𑚮"  U116AE  # TAKRI VOWEL SIGN I
+<Multi_key> <b> <T> <K> <i> <i> <Return> : "𑚯"  U116AF  # TAKRI VOWEL SIGN II
+<Multi_key> <b> <T> <K> <u> <Return> : "𑚰"  U116B0  # TAKRI VOWEL SIGN U
+<Multi_key> <b> <T> <K> <u> <u> <Return> : "𑚱"  U116B1  # TAKRI VOWEL SIGN UU
+<Multi_key> <b> <T> <K> <e> <e> <Return> : "𑚲"  U116B2  # TAKRI VOWEL SIGN E
+<Multi_key> <b> <T> <K> <a> <i> <Return> : "𑚳"  U116B3  # TAKRI VOWEL SIGN AI
+<Multi_key> <b> <T> <K> <o> <o> <Return> : "𑚴"  U116B4  # TAKRI VOWEL SIGN O
+<Multi_key> <b> <T> <K> <a> <u> <Return> : "𑚵"  U116B5  # TAKRI VOWEL SIGN AU
+<Multi_key> <b> <T> <K> <0> <Return> : "𑚶"  U116B6  # TAKRI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <T> <K> <comma> <Return> : "𑚶"  U116B6  # TAKRI SIGN VIRAMA
+<Multi_key> <b> <T> <K> <period> <Return> : "𑚫"  U116AB  # TAKRI SIGN ANUSVARA
+<Multi_key> <b> <T> <K> <colon> <Return> : "𑚬"  U116AC  # TAKRI SIGN VISARGA
+<Multi_key> <b> <T> <K> <underscore> <period> <Return> : "𑚷"  U116B7  # TAKRI SIGN NUKTA
+<Multi_key> <b> <T> <K> <o> <period> : "𑚹"  U116B9  # TAKRI ABBREVIATION SIGN
+
+# Numerals
+
+<Multi_key> <b> <T> <K> <numbersign> <0> : "𑛀"  U116C0  # TAKRI DIGIT ZERO
+<Multi_key> <b> <T> <K> <numbersign> <1> : "𑛁"  U116C1  # TAKRI DIGIT ONE
+<Multi_key> <b> <T> <K> <numbersign> <2> : "𑛂"  U116C2  # TAKRI DIGIT TWO
+<Multi_key> <b> <T> <K> <numbersign> <3> : "𑛃"  U116C3  # TAKRI DIGIT THREE
+<Multi_key> <b> <T> <K> <numbersign> <4> : "𑛄"  U116C4  # TAKRI DIGIT FOUR
+<Multi_key> <b> <T> <K> <numbersign> <5> : "𑛅"  U116C5  # TAKRI DIGIT FIVE
+<Multi_key> <b> <T> <K> <numbersign> <6> : "𑛆"  U116C6  # TAKRI DIGIT SIX
+<Multi_key> <b> <T> <K> <numbersign> <7> : "𑛇"  U116C7  # TAKRI DIGIT SEVEN
+<Multi_key> <b> <T> <K> <numbersign> <8> : "𑛈"  U116C8  # TAKRI DIGIT EIGHT
+<Multi_key> <b> <T> <K> <numbersign> <9> : "𑛉"  U116C9  # TAKRI DIGIT NINE
+
+# (TR = Tirhuta)
+
+# Consonants
+
+<Multi_key> <b> <T> <R> <k> <space> : "𑒏"  U1148F  # TIRHUTA LETTER KA
+<Multi_key> <b> <T> <R> <k> <h> : "𑒐"  U11490  # TIRHUTA LETTER KHA
+<Multi_key> <b> <T> <R> <g> <space> : "𑒑"  U11491  # TIRHUTA LETTER GA
+<Multi_key> <b> <T> <R> <g> <h> : "𑒒"  U11492  # TIRHUTA LETTER GHA
+<Multi_key> <b> <T> <R> <semicolon> <n> : "𑒓"  U11493  # TIRHUTA LETTER NGA
+<Multi_key> <b> <T> <R> <c> <space> : "𑒔"  U11494  # TIRHUTA LETTER CA
+<Multi_key> <b> <T> <R> <c> <h> : "𑒕"  U11495  # TIRHUTA LETTER CHA
+<Multi_key> <b> <T> <R> <j> <space> : "𑒖"  U11496  # TIRHUTA LETTER JA
+<Multi_key> <b> <T> <R> <j> <h> : "𑒗"  U11497  # TIRHUTA LETTER JHA
+<Multi_key> <b> <T> <R> <asciitilde> <n> : "𑒘"  U11498  # TIRHUTA LETTER NYA
+<Multi_key> <b> <T> <R> <period> <t> <space> : "𑒙"  U11499  # TIRHUTA LETTER TTA
+<Multi_key> <b> <T> <R> <period> <t> <h> : "𑒚"  U1149A  # TIRHUTA LETTER TTHA
+<Multi_key> <b> <T> <R> <period> <d> <space> : "𑒛"  U1149B  # TIRHUTA LETTER DDA
+<Multi_key> <b> <T> <R> <period> <d> <h> : "𑒜"  U1149C  # TIRHUTA LETTER DDHA
+<Multi_key> <b> <T> <R> <period> <n> : "𑒝"  U1149D  # TIRHUTA LETTER NNA
+<Multi_key> <b> <T> <R> <t> <space> : "𑒞"  U1149E  # TIRHUTA LETTER TA
+<Multi_key> <b> <T> <R> <t> <h> : "𑒟"  U1149F  # TIRHUTA LETTER THA
+<Multi_key> <b> <T> <R> <d> <space> : "𑒠"  U114A0  # TIRHUTA LETTER DA
+<Multi_key> <b> <T> <R> <d> <h> : "𑒡"  U114A1  # TIRHUTA LETTER DHA
+<Multi_key> <b> <T> <R> <n> : "𑒢"  U114A2  # TIRHUTA LETTER NA
+<Multi_key> <b> <T> <R> <p> <space> : "𑒣"  U114A3  # TIRHUTA LETTER PA
+<Multi_key> <b> <T> <R> <p> <h> : "𑒤"  U114A4  # TIRHUTA LETTER PHA
+<Multi_key> <b> <T> <R> <b> <space> : "𑒥"  U114A5  # TIRHUTA LETTER BA
+<Multi_key> <b> <T> <R> <b> <h> : "𑒦"  U114A6  # TIRHUTA LETTER BHA
+<Multi_key> <b> <T> <R> <m> : "𑒧"  U114A7  # TIRHUTA LETTER MA
+<Multi_key> <b> <T> <R> <y> : "𑒨"  U114A8  # TIRHUTA LETTER YA
+<Multi_key> <b> <T> <R> <r> : "𑒩"  U114A9  # TIRHUTA LETTER RA
+<Multi_key> <b> <T> <R> <l> : "𑒪"  U114AA  # TIRHUTA LETTER LA
+<Multi_key> <b> <T> <R> <v> : "𑒫"  U114AB  # TIRHUTA LETTER VA
+<Multi_key> <b> <T> <R> <semicolon> <s> : "𑒬"  U114AC  # TIRHUTA LETTER SHA
+<Multi_key> <b> <T> <R> <period> <s> : "𑒭"  U114AD  # TIRHUTA LETTER SSA
+<Multi_key> <b> <T> <R> <s> : "𑒮"  U114AE  # TIRHUTA LETTER SA
+<Multi_key> <b> <T> <R> <h> : "𑒯"  U114AF  # TIRHUTA LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <T> <R> <a> <space> : "𑒁"  U11481  # TIRHUTA LETTER A
+<Multi_key> <b> <T> <R> <a> <a> <space> : "𑒂"  U11482  # TIRHUTA LETTER AA
+<Multi_key> <b> <T> <R> <i> <space> : "𑒃"  U11483  # TIRHUTA LETTER I
+<Multi_key> <b> <T> <R> <i> <i> <space> : "𑒄"  U11484  # TIRHUTA LETTER II
+<Multi_key> <b> <T> <R> <u> <space> : "𑒅"  U11485  # TIRHUTA LETTER U
+<Multi_key> <b> <T> <R> <u> <u> <space> : "𑒆"  U11486  # TIRHUTA LETTER UU
+<Multi_key> <b> <T> <R> <comma> <r> <space> : "𑒇"  U11487  # TIRHUTA LETTER VOCALIC R
+<Multi_key> <b> <T> <R> <comma> <r> <r> <space> : "𑒈"  U11488  # TIRHUTA LETTER VOCALIC RR
+<Multi_key> <b> <T> <R> <comma> <l> <space> : "𑒉"  U11489  # TIRHUTA LETTER VOCALIC L
+<Multi_key> <b> <T> <R> <comma> <l> <l> <space> : "𑒊"  U1148A  # TIRHUTA LETTER VOCALIC LL
+<Multi_key> <b> <T> <R> <e> <e> <space> : "𑒋"  U1148B  # TIRHUTA LETTER E
+<Multi_key> <b> <T> <R> <a> <i> <space> : "𑒌"  U1148C  # TIRHUTA LETTER AI
+<Multi_key> <b> <T> <R> <o> <o> <space> : "𑒍"  U1148D  # TIRHUTA LETTER O
+<Multi_key> <b> <T> <R> <a> <u> <space> : "𑒎"  U1148E  # TIRHUTA LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <T> <R> <a> <a> <Return> : "𑒰"  U114B0  # TIRHUTA VOWEL SIGN AA
+<Multi_key> <b> <T> <R> <i> <Return> : "𑒱"  U114B1  # TIRHUTA VOWEL SIGN I
+<Multi_key> <b> <T> <R> <i> <i> <Return> : "𑒲"  U114B2  # TIRHUTA VOWEL SIGN II
+<Multi_key> <b> <T> <R> <u> <Return> : "𑒳"  U114B3  # TIRHUTA VOWEL SIGN U
+<Multi_key> <b> <T> <R> <u> <u> <Return> : "𑒴"  U114B4  # TIRHUTA VOWEL SIGN UU
+<Multi_key> <b> <T> <R> <comma> <r> <Return> : "𑒵"  U114B5  # TIRHUTA VOWEL SIGN VOCALIC R
+<Multi_key> <b> <T> <R> <comma> <r> <r> <Return> : "𑒶"  U114B6  # TIRHUTA VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <T> <R> <comma> <l> <Return> : "𑒷"  U114B7  # TIRHUTA VOWEL SIGN VOCALIC L
+<Multi_key> <b> <T> <R> <comma> <l> <l> <Return> : "𑒸"  U114B8  # TIRHUTA VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <T> <R> <e> <e> <Return> : "𑒹"  U114B9  # TIRHUTA VOWEL SIGN E
+<Multi_key> <b> <T> <R> <e> <Return> : "𑒺"  U114BA  # TIRHUTA VOWEL SIGN SHORT E
+<Multi_key> <b> <T> <R> <a> <i> <Return> : "𑒻"  U114BB  # TIRHUTA VOWEL SIGN AI
+<Multi_key> <b> <T> <R> <o> <o> <Return> : "𑒼"  U114BC  # TIRHUTA VOWEL SIGN O
+<Multi_key> <b> <T> <R> <period> <o> <Return> : "𑒽"  U114BD  # TIRHUTA VOWEL SIGN SHORT O
+<Multi_key> <b> <T> <R> <a> <u> <Return> : "𑒾"  U114BE  # TIRHUTA VOWEL SIGN AU
+<Multi_key> <b> <T> <R> <0> <Return> : "𑓂"  U114C2  # TIRHUTA SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <T> <R> <period> <parenright> <Return> : "𑒿"  U114BF  # TIRHUTA SIGN CANDRABINDU
+<Multi_key> <b> <T> <R> <period> <Return> : "𑓀"  U114C0  # TIRHUTA SIGN ANUSVARA
+<Multi_key> <b> <T> <R> <colon> <Return> : "𑓁"  U114C1  # TIRHUTA SIGN VISARGA
+<Multi_key> <b> <T> <R> <comma> <Return> : "𑓂"  U114C2  # TIRHUTA SIGN VIRAMA
+<Multi_key> <b> <T> <R> <underscore> <period> <Return> : "𑓃"  U114C3  # TIRHUTA SIGN NUKTA
+<Multi_key> <b> <T> <R> <S> : "𑓄"  U114C4  # TIRHUTA SIGN AVAGRAHA
+<Multi_key> <b> <T> <R> <o> <period> : "𑓆"  U114C6  # TIRHUTA ABBREVIATION SIGN
+<Multi_key> <b> <T> <R> <o> <m> : "𑓇"  U114C7  # TIRHUTA OM
+
+# Numerals
+
+<Multi_key> <b> <T> <R> <numbersign> <0> : "𑓐"  U114D0  # TIRHUTA DIGIT ZERO
+<Multi_key> <b> <T> <R> <numbersign> <1> : "𑓑"  U114D1  # TIRHUTA DIGIT ONE
+<Multi_key> <b> <T> <R> <numbersign> <2> : "𑓒"  U114D2  # TIRHUTA DIGIT TWO
+<Multi_key> <b> <T> <R> <numbersign> <3> : "𑓓"  U114D3  # TIRHUTA DIGIT THREE
+<Multi_key> <b> <T> <R> <numbersign> <4> : "𑓔"  U114D4  # TIRHUTA DIGIT FOUR
+<Multi_key> <b> <T> <R> <numbersign> <5> : "𑓕"  U114D5  # TIRHUTA DIGIT FIVE
+<Multi_key> <b> <T> <R> <numbersign> <6> : "𑓖"  U114D6  # TIRHUTA DIGIT SIX
+<Multi_key> <b> <T> <R> <numbersign> <7> : "𑓗"  U114D7  # TIRHUTA DIGIT SEVEN
+<Multi_key> <b> <T> <R> <numbersign> <8> : "𑓘"  U114D8  # TIRHUTA DIGIT EIGHT
+<Multi_key> <b> <T> <R> <numbersign> <9> : "𑓙"  U114D9  # TIRHUTA DIGIT NINE
+
+# (TT = Tulu-Tigalari)
+
+# Consonants
+
+<Multi_key> <b> <T> <T> <k> <space> : "𑎒"  U11392  # TULU-TIGALARI LETTER KA
+<Multi_key> <b> <T> <T> <k> <h> : "𑎓"  U11393  # TULU-TIGALARI LETTER KHA
+<Multi_key> <b> <T> <T> <g> <space> : "𑎔"  U11394  # TULU-TIGALARI LETTER GA
+<Multi_key> <b> <T> <T> <g> <h> : "𑎕"  U11395  # TULU-TIGALARI LETTER GHA
+<Multi_key> <b> <T> <T> <semicolon> <n> : "𑎖"  U11396  # TULU-TIGALARI LETTER NGA
+<Multi_key> <b> <T> <T> <c> <space> : "𑎗"  U11397  # TULU-TIGALARI LETTER CA
+<Multi_key> <b> <T> <T> <c> <h> : "𑎘"  U11398  # TULU-TIGALARI LETTER CHA
+<Multi_key> <b> <T> <T> <j> <space> : "𑎙"  U11399  # TULU-TIGALARI LETTER JA
+<Multi_key> <b> <T> <T> <j> <h> : "𑎚"  U1139A  # TULU-TIGALARI LETTER JHA
+<Multi_key> <b> <T> <T> <asciitilde> <n> : "𑎛"  U1139B  # TULU-TIGALARI LETTER NYA
+<Multi_key> <b> <T> <T> <period> <t> <space> : "𑎜"  U1139C  # TULU-TIGALARI LETTER TTA
+<Multi_key> <b> <T> <T> <period> <t> <h> : "𑎝"  U1139D  # TULU-TIGALARI LETTER TTHA
+<Multi_key> <b> <T> <T> <period> <d> <space> : "𑎞"  U1139E  # TULU-TIGALARI LETTER DDA
+<Multi_key> <b> <T> <T> <period> <d> <h> : "𑎟"  U1139F  # TULU-TIGALARI LETTER DDHA
+<Multi_key> <b> <T> <T> <period> <n> : "𑎠"  U113A0  # TULU-TIGALARI LETTER NNA
+<Multi_key> <b> <T> <T> <t> <space> : "𑎡"  U113A1  # TULU-TIGALARI LETTER TA
+<Multi_key> <b> <T> <T> <t> <h> : "𑎢"  U113A2  # TULU-TIGALARI LETTER THA
+<Multi_key> <b> <T> <T> <d> <space> : "𑎣"  U113A3  # TULU-TIGALARI LETTER DA
+<Multi_key> <b> <T> <T> <d> <h> : "𑎤"  U113A4  # TULU-TIGALARI LETTER DHA
+<Multi_key> <b> <T> <T> <n> : "𑎥"  U113A5  # TULU-TIGALARI LETTER NA
+<Multi_key> <b> <T> <T> <p> <space> : "𑎦"  U113A6  # TULU-TIGALARI LETTER PA
+<Multi_key> <b> <T> <T> <p> <h> : "𑎧"  U113A7  # TULU-TIGALARI LETTER PHA
+<Multi_key> <b> <T> <T> <b> <space> : "𑎨"  U113A8  # TULU-TIGALARI LETTER BA
+<Multi_key> <b> <T> <T> <b> <h> : "𑎩"  U113A9  # TULU-TIGALARI LETTER BHA
+<Multi_key> <b> <T> <T> <m> : "𑎪"  U113AA  # TULU-TIGALARI LETTER MA
+<Multi_key> <b> <T> <T> <y> : "𑎫"  U113AB  # TULU-TIGALARI LETTER YA
+<Multi_key> <b> <T> <T> <r> : "𑎬"  U113AC  # TULU-TIGALARI LETTER RA
+<Multi_key> <b> <T> <T> <l> : "𑎭"  U113AD  # TULU-TIGALARI LETTER LA
+<Multi_key> <b> <T> <T> <v> : "𑎮"  U113AE  # TULU-TIGALARI LETTER VA
+<Multi_key> <b> <T> <T> <semicolon> <s> : "𑎯"  U113AF  # TULU-TIGALARI LETTER SHA
+<Multi_key> <b> <T> <T> <period> <s> : "𑎰"  U113B0  # TULU-TIGALARI LETTER SSA
+<Multi_key> <b> <T> <T> <s> : "𑎱"  U113B1  # TULU-TIGALARI LETTER SA
+<Multi_key> <b> <T> <T> <h> : "𑎲"  U113B2  # TULU-TIGALARI LETTER HA
+<Multi_key> <b> <T> <T> <period> <l> : "𑎳"  U113B3  # TULU-TIGALARI LETTER LLA
+<Multi_key> <b> <T> <T> <underscore> <r> : "𑎴"  U113B4  # TULU-TIGALARI LETTER RRA
+<Multi_key> <b> <T> <T> <underscore> <l> : "𑎵"  U113B5  # TULU-TIGALARI LETTER LLLA
+
+# Independent vowels
+
+<Multi_key> <b> <T> <T> <a> <space> : "𑎀"  U11380  # TULU-TIGALARI LETTER A
+<Multi_key> <b> <T> <T> <a> <a> <space> : "𑎁"  U11381  # TULU-TIGALARI LETTER AA
+<Multi_key> <b> <T> <T> <i> <space> : "𑎂"  U11382  # TULU-TIGALARI LETTER I
+<Multi_key> <b> <T> <T> <i> <i> <space> : "𑎃"  U11383  # TULU-TIGALARI LETTER II
+<Multi_key> <b> <T> <T> <u> <space> : "𑎄"  U11384  # TULU-TIGALARI LETTER U
+<Multi_key> <b> <T> <T> <u> <u> <space> : "𑎅"  U11385  # TULU-TIGALARI LETTER UU
+<Multi_key> <b> <T> <T> <comma> <r> <space> : "𑎆"  U11386  # TULU-TIGALARI LETTER VOCALIC R
+<Multi_key> <b> <T> <T> <comma> <r> <r> <space> : "𑎇"  U11387  # TULU-TIGALARI LETTER VOCALIC RR
+<Multi_key> <b> <T> <T> <comma> <l> <space> : "𑎈"  U11388  # TULU-TIGALARI LETTER VOCALIC L
+<Multi_key> <b> <T> <T> <comma> <l> <l> <space> : "𑎉"  U11389  # TULU-TIGALARI LETTER VOCALIC LL
+<Multi_key> <b> <T> <T> <e> <e> <space> : "𑎋"  U1138B  # TULU-TIGALARI LETTER EE
+<Multi_key> <b> <T> <T> <a> <i> <space> : "𑎎"  U1138E  # TULU-TIGALARI LETTER AI
+<Multi_key> <b> <T> <T> <o> <o> <space> : "𑎐"  U11390  # TULU-TIGALARI LETTER OO
+<Multi_key> <b> <T> <T> <a> <u> <space> : "𑎑"  U11391  # TULU-TIGALARI LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <T> <T> <S> : "𑎷"  U113B7  # TULU-TIGALARI SIGN AVAGRAHA
+<Multi_key> <b> <T> <T> <a> <a> <Return> : "𑎸"  U113B8  # TULU-TIGALARI VOWEL SIGN AA
+<Multi_key> <b> <T> <T> <i> <Return> : "𑎹"  U113B9  # TULU-TIGALARI VOWEL SIGN I
+<Multi_key> <b> <T> <T> <i> <i> <Return> : "𑎺"  U113BA  # TULU-TIGALARI VOWEL SIGN II
+<Multi_key> <b> <T> <T> <u> <Return> : "𑎻"  U113BB  # TULU-TIGALARI VOWEL SIGN U
+<Multi_key> <b> <T> <T> <u> <u> <Return> : "𑎼"  U113BC  # TULU-TIGALARI VOWEL SIGN UU
+<Multi_key> <b> <T> <T> <comma> <r> <Return> : "𑎽"  U113BD  # TULU-TIGALARI VOWEL SIGN VOCALIC R
+<Multi_key> <b> <T> <T> <comma> <r> <r> <Return> : "𑎾"  U113BE  # TULU-TIGALARI VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <T> <T> <comma> <l> <Return> : "𑎿"  U113BF  # TULU-TIGALARI VOWEL SIGN VOCALIC L
+<Multi_key> <b> <T> <T> <comma> <l> <l> <Return> : "𑏀"  U113C0  # TULU-TIGALARI VOWEL SIGN VOCALIC LL
+<Multi_key> <b> <T> <T> <e> <e> <Return> : "𑏂"  U113C2  # TULU-TIGALARI VOWEL SIGN EE
+<Multi_key> <b> <T> <T> <a> <i> <Return> : "𑏅"  U113C5  # TULU-TIGALARI VOWEL SIGN AI
+<Multi_key> <b> <T> <T> <o> <o> <Return> : "𑏇"  U113C7  # TULU-TIGALARI VOWEL SIGN OO
+<Multi_key> <b> <T> <T> <a> <u> <Return> : "𑏈"  U113C8  # TULU-TIGALARI VOWEL SIGN AU
+
+# Other signs
+
+<Multi_key> <b> <T> <T> <period> <Return> : "𑏌"  U113CC  # TULU-TIGALARI SIGN ANUSVARA
+<Multi_key> <b> <T> <T> <colon> <Return> : "𑏍"  U113CD  # TULU-TIGALARI SIGN VISARGA
+<Multi_key> <b> <T> <T> <comma> <Return> : "𑏎"  U113CE  # TULU-TIGALARI SIGN VIRAMA
+<Multi_key> <b> <T> <T> <underscore> <plus> <Return> : "𑏐"  U113D0  # TULU-TIGALARI CONJOINER
+
+# Punctuation
+
+<Multi_key> <b> <T> <T> <bar> : "𑏔"  U113D4  # TULU-TIGALARI DANDA
+<Multi_key> <b> <T> <T> <2> <bar> : "𑏕"  U113D5  # TULU-TIGALARI DOUBLE DANDA
 
 #########################################
 # (B) Braille (Unified English Braille) #
@@ -10810,7 +12454,7 @@ include "%L"
 <Multi_key> <S> <h> <f> <2> <space> : "𝠀"  U1D800  # SIGNWRITING HAND-FIST INDEX
 <Multi_key> <S> <h> <c> <2> <space> : "𝠁"  U1D801  # SIGNWRITING HAND-CIRCLE INDEX
 <Multi_key> <S> <h> <C> <2> <space> : "𝠂"  U1D802  # SIGNWRITING HAND-CUP INDEX
-<Multi_key> <S> <h> <o> <2> <space> : "𝠃"  U1D803  # SIGNWRITING HAND-OVAL INDEX
+<Multi_key> <S> <h> <o> <2> : "𝠃"  U1D803  # SIGNWRITING HAND-OVAL INDEX
 <Multi_key> <S> <h> <h> <2> <space> : "𝠄"  U1D804  # SIGNWRITING HAND-HINGE INDEX
 <Multi_key> <S> <h> <a> <2> <space> : "𝠅"  U1D805  # SIGNWRITING HAND-ANGLE INDEX
 <Multi_key> <S> <h> <f> <2> <b> <space> : "𝠆"  U1D806  # SIGNWRITING HAND-FIST INDEX BENT
@@ -10868,7 +12512,7 @@ include "%L"
 <Multi_key> <S> <h> <f> <1> <c> <2> <3> <c> : "𝠸"  U1D838  # SIGNWRITING HAND-FIST MIDDLE THUMB CIRCLED INDEX UP
 <Multi_key> <S> <h> <f> <1> <c> <2> <h> <3> <c> : "𝠹"  U1D839  # SIGNWRITING HAND-FIST MIDDLE THUMB CIRCLED INDEX HINGED
 <Multi_key> <S> <h> <f> <1> <a> <v> <2> <a> <v> <3> <space> : "𝠺"  U1D83A  # SIGNWRITING HAND-FIST INDEX THUMB ANGLED OUT MIDDLE UP
-<Multi_key> <S> <h> <f> <1> <a> <asciicircum> <2> <a> <asciicircum> <3> <space> : "𝠻"  U1D83B  # SIGNWRITING HAND-FIST INDEX THUMB ANGLED IN MIDDLE UP
+<Multi_key> <S> <h> <f> <1> <a> <asciicircum> <2> <a> <asciicircum> <3> : "𝠻"  U1D83B  # SIGNWRITING HAND-FIST INDEX THUMB ANGLED IN MIDDLE UP
 <Multi_key> <S> <h> <f> <1> <c> <2> <c> <3> <space> : "𝠼"  U1D83C  # SIGNWRITING HAND-FIST INDEX THUMB CIRCLED MIDDLE UP
 <Multi_key> <S> <h> <f> <1> <j> <h> <2> <3> : "𝠽"  U1D83D  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB CONJOINED HINGED
 <Multi_key> <S> <h> <f> <1> <a> <v> <2> <a> <v> <3> <a> <v> : "𝠾"  U1D83E  # SIGNWRITING HAND-FIST INDEX MIDDLE THUMB ANGLED OUT
@@ -11688,7 +13332,7 @@ include "%L"
 <Multi_key> <T> <c> <h> : "ᜑ" U1711   # TAGALOG LETTER HA
 <Multi_key> <T> <c> <R> : "ᜟ"  U171F  # TAGALOG LETTER ARCHAIC RA
 
-<Multi_key> <T> <c> <a> <space> : "ᜀ" U1700   # TAGALOG LETTER A
+<Multi_key> <T> <c> <a> : "ᜀ" U1700   # TAGALOG LETTER A
 <Multi_key> <T> <c> <i> <space> : "ᜁ" U1701   # TAGALOG LETTER I
 <Multi_key> <T> <c> <u> <space> : "ᜂ" U1702   # TAGALOG LETTER U
 
@@ -11721,7 +13365,7 @@ include "%L"
 <Multi_key> <T> <b> <s> : "ᝐ"  U1750  # BUHID LETTER SA
 <Multi_key> <T> <b> <h> : "ᝑ"  U1751  # BUHID LETTER HA
 
-<Multi_key> <T> <b> <a> <space> : "ᝀ"  U1740  # BUHID LETTER A
+<Multi_key> <T> <b> <a> : "ᝀ"  U1740  # BUHID LETTER A
 <Multi_key> <T> <b> <i> <space> : "ᝁ"  U1741  # BUHID LETTER I
 <Multi_key> <T> <b> <u> <space> : "ᝂ"  U1742  # BUHID LETTER U
 
@@ -11746,7 +13390,7 @@ include "%L"
 <Multi_key> <T> <h> <s> : "ᜰ"  U1730  # HANUNOO LETTER SA
 <Multi_key> <T> <h> <h> : "ᜱ"  U1731  # HANUNOO LETTER HA
 
-<Multi_key> <T> <h> <a> <space> : "ᜠ"  U1720  # HANUNOO LETTER A
+<Multi_key> <T> <h> <a> : "ᜠ"  U1720  # HANUNOO LETTER A
 <Multi_key> <T> <h> <i> <space> : "ᜡ"  U1721  # HANUNOO LETTER I
 <Multi_key> <T> <h> <u> <space>  : "ᜢ"  U1722  # HANUNOO LETTER U
 
@@ -11771,7 +13415,7 @@ include "%L"
 <Multi_key> <T> <t> <w> : "ᝯ"  U176F  # TAGBANWA LETTER WA
 <Multi_key> <T> <t> <s> : "ᝰ"  U1770  # TAGBANWA LETTER SA
 
-<Multi_key> <T> <t> <a> <space> : "ᝠ"  U1760  # TAGBANWA LETTER A
+<Multi_key> <T> <t> <a> : "ᝠ"  U1760  # TAGBANWA LETTER A
 <Multi_key> <T> <t> <i> <space> : "ᝡ"  U1761  # TAGBANWA LETTER I
 <Multi_key> <T> <t> <u> <space> : "ᝢ"  U1762  # TAGBANWA LETTER U
 
