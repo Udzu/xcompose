@@ -2341,6 +2341,7 @@ include "%L"
 <Multi_key> <bracketleft> <S> <H> <V> <bracketright> : "🆪" U1F1AA   # SQUARED SHV
 <Multi_key> <bracketleft> <U> <H> <D> <bracketright> : "🆫" U1F1AB   # SQUARED UHD
 <Multi_key> <bracketleft> <V> <O> <D> <bracketright> : "🆬" U1F1AC   # SQUARED VOD
+<Multi_key> <bracketleft> <O> <B> <J> <bracketright> : "￼" UFFFC    # OBJECT REPLACEMENT CHARACTER
 
 <Multi_key> <exclam> <bracketleft> <A> <bracketright> : "🅰" U1F170   # NEGATIVE SQUARED LATIN CAPITAL LETTER A
 <Multi_key> <exclam> <bracketleft> <B> <bracketright> : "🅱" U1F171   # NEGATIVE SQUARED LATIN CAPITAL LETTER B
@@ -3279,11 +3280,6 @@ include "%L"
 <Multi_key> <a> <c> <i> : "ي" U064A    # ARABIC LETTER YEH
 <Multi_key> <a> <c> <apostrophe> : "ء" U0621    # ARABIC LETTER HAMZA
 <Multi_key> <a> <c> <2> : "ء" U0621    # ARABIC LETTER HAMZA
-# Persian
-<Multi_key> <a> <c> <g> : "گ" U06AF    # ARABIC LETTER GAF
-<Multi_key> <a> <c> <J> : "ژ" U0698    # ARABIC LETTER JEH
-<Multi_key> <a> <c> <C> : "چ" U0686    # ARABIC LETTER TCHEH
-<Multi_key> <a> <c> <p> : "پ" U067E    # ARABIC LETTER PEH
 
 <Multi_key> <a> <x> <a> <asciitilde> : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
 <Multi_key> <a> <x> <a> <2> : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
@@ -3292,12 +3288,57 @@ include "%L"
 <Multi_key> <a> <x> <y> <2> : "ئ"  U0626   # ARABIC LETTER YEH WITH HAMZA ABOVE
 <Multi_key> <a> <x> <a> <y> : "ى" U0649    # ARABIC LETTER ALEF MAKSURA
 
+# non-standard letters (also used in Persian)
+
+<Multi_key> <a> <c> <C> : "چ" U0686    # ARABIC LETTER TCHEH
+<Multi_key> <a> <c> <g> : "گ" U06AF    # ARABIC LETTER GAF
+<Multi_key> <a> <c> <J> : "ژ" U0698    # ARABIC LETTER JEH
+<Multi_key> <a> <c> <p> : "پ" U067E    # ARABIC LETTER PEH
+<Multi_key> <a> <c> <v> : "ڤ" U06A4    # ARABIC LETTER VEH
+
+# additional letters (represented visually)
+
+<Multi_key> <a> <x> <v> <b> : "پ" U067E    # ARABIC LETTER PEH (alternatively acp)
+<Multi_key> <a> <x> <period> <period> <period> <b> : "ݐ"  U0750  # ARABIC LETTER BEH WITH THREE DOTS HORIZONTALLY BELOW
+<Multi_key> <a> <x> <colon> <b> : "ٻ"  U067B  # ARABIC LETTER BEEH
+<Multi_key> <a> <x> <colon> <colon> <b> : "ڀ"  U0680  # ARABIC LETTER BEHEH
+
+<Multi_key> <a> <x> <colon> <t> : "ٺ"  U067A  # ARABIC LETTER TTEHEH
+<Multi_key> <a> <x> <o> <t> : "ټ"  U067C  # ARABIC LETTER TEH WITH RING
+<Multi_key> <a> <x> <v> <t> : "ٽ"  U067D  # ARABIC LETTER TEH WITH THREE DOTS ABOVE DOWNWARDS
+<Multi_key> <a> <x> <b> <t> : "ﭦ"  UFB66  # ARABIC LETTER TTEH ISOLATED FORM
+<Multi_key> <a> <x> <colon> <colon> <t> : "ٿ"  U067F  # ARABIC LETTER TEHEH
+
+<Multi_key> <a> <x> <colon> <j> : "ڄ"  U0684  # ARABIC LETTER DYEH
+<Multi_key> <a> <x> <period> <period> <j> : "ڃ"  U0683  # ARABIC LETTER NYEH
+<Multi_key> <a> <x> <v> <j> : "چ"  U0686  # ARABIC LETTER TCHEH (alternatively acC)
+
+<Multi_key> <a> <x> <asciicircum> <H> : "څ"  U0685  # ARABIC LETTER HAH WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <period> <period> <H> : "ݗ"  U0757  # ARABIC LETTER HAH WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <H> <2> : "ځ"  U0681  # ARABIC LETTER HAH WITH HAMZA ABOVE
+
+<Multi_key> <a> <x> <asciicircum> <d> : "ڎ"  U068E  # ARABIC LETTER DUL
+<Multi_key> <a> <x> <b> <colon> <d> : "ݙ"  U0759  # ARABIC LETTER DAL WITH TWO DOTS VERTICALLY BELOW AND SMALL TAH
+<Multi_key> <a> <x> <period> <d> : "ڊ"  U068A  # ARABIC LETTER DAL WITH DOT BELOW
+<Multi_key> <a> <x> <b> <d> : "ڈ"  U0688  # ARABIC LETTER DDAL
+<Multi_key> <a> <x> <period> <period> <d> : "ڌ"  U068C  # ARABIC LETTER DAHAL
+<Multi_key> <a> <x> <o> <d> : "ډ"  U0689  # ARABIC LETTER DAL WITH RING
+
+<Multi_key> <a> <x> <colon> <r> : "ݫ"  U076B  # ARABIC LETTER REH WITH TWO DOTS VERTICALLY ABOVE
+<Multi_key> <a> <x> <asciicircum> <r> : "ژ"  U0698  # ARABIC LETTER JEH (alternatively acJ)
+<Multi_key> <a> <x> <period> <period> <r> : "ږ"  U0696  # ARABIC LETTER REH WITH DOT BELOW AND DOT ABOVE
+<Multi_key> <a> <x> <v> <r> : "ڕ"  U0695  # ARABIC LETTER REH WITH SMALL V BELOW
+
+# ligatures
+
 <Multi_key> <a> <x> <b> <i> <s> <m> <i> <l> <l> <a> <h> : "﷽" UFDFD    # ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM
 <Multi_key> <a> <x> <A> <l> <l> <a> <h> : "ﷲ" UFDF2    # ARABIC LIGATURE ALLAH ISOLATED FORM
 <Multi_key> <a> <x> <A> <A> <S> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM
 <Multi_key> <a> <x> <A> <W> <J> : "﷿" UFDFF    # ARABIC LIGATURE AZZA WA JALL
 <Multi_key> <a> <x> <P> <B> <U> <H> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM (PEACE BE UPON HIM)
 <Multi_key> <a> <x> <S> <W> <T> : "﷾" UFDFE    # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
+
+# diacritics
 
 <Multi_key> <a> <semicolon> <a> <Return>              : "َ" U064E    # ARABIC FATHA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <u> <Return>              : "ُ" U064F    # ARABIC DAMMA (conflicts with ą, use ,a)
@@ -3309,11 +3350,15 @@ include "%L"
 <Multi_key> <a> <semicolon> <2> <Return>              : "ٔ" U0654    # ARABIC HAMZA ABOVE (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <underscore> <2> <Return> : "ٕ" U0655    # ARABIC HAMZA BELOW (conflicts with ą, use ,a)
 
+# punctuation
+
 <Multi_key> <a> <semicolon> <comma>     : "،" U060C    # ARABIC COMMA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <semicolon> : "؛" U061B    # ARABIC SEMICOLON (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <question>  : "؟" U061F    # ARABIC QUESTION MARK (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <minus>     : "ـ" U0640    # ARABIC TATWEEL (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <percent>   : "٪" U066A    # ARABIC PERCENT SIGN (conflicts with ą, use ,a)
+
+# numerals
 
 <Multi_key> <a> <numbersign> <0> : "٠"  U0660   # ARABIC-INDIC DIGIT ZERO
 <Multi_key> <a> <numbersign> <1> : "١"  U0661   # ARABIC-INDIC DIGIT ONE
