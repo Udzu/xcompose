@@ -3281,14 +3281,13 @@ include "%L"
 <Multi_key> <a> <c> <apostrophe> : "ء" U0621    # ARABIC LETTER HAMZA
 <Multi_key> <a> <c> <2> : "ء" U0621    # ARABIC LETTER HAMZA
 
-# common combined letters
+# common precomposed diacritics
 
-<Multi_key> <a> <x> <a> <asciitilde> : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
-<Multi_key> <a> <x> <a> <2> : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
-<Multi_key> <a> <x> <w> <2> : "ؤ"  U0624   # ARABIC LETTER WAW WITH HAMZA ABOVE
-<Multi_key> <a> <x> <a> <underscore> <2> : "إ"  U0625   # ARABIC LETTER ALEF WITH HAMZA BELOW
-<Multi_key> <a> <x> <y> <2> : "ئ"  U0626   # ARABIC LETTER YEH WITH HAMZA ABOVE
-<Multi_key> <a> <x> <a> <y> : "ى" U0649    # ARABIC LETTER ALEF MAKSURA
+<Multi_key> <a> <x> <asciitilde> <a>     : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
+<Multi_key> <a> <x> <2> <a>              : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
+<Multi_key> <a> <x> <2> <w>              : "ؤ"  U0624   # ARABIC LETTER WAW WITH HAMZA ABOVE
+<Multi_key> <a> <x> <underscore> <2> <a> : "إ"  U0625   # ARABIC LETTER ALEF WITH HAMZA BELOW
+<Multi_key> <a> <x> <2> <y>              : "ئ"  U0626   # ARABIC LETTER YEH WITH HAMZA ABOVE
 
 # non-standard letters
 
@@ -3300,10 +3299,12 @@ include "%L"
 
 # additional letters (represented semantically)
 
+<Multi_key> <a> <x> <a> <y> : "ى" U0649    # ARABIC LETTER ALEF MAKSURA
 <Multi_key> <a> <x> <k> <h> : "ک"  U06A9  # ARABIC LETTER KEHEH
 <Multi_key> <a> <x> <k> <space> : "ڪ"  U06AA  # ARABIC LETTER SWASH KAF
 <Multi_key> <a> <x> <Multi_key> <h> : "ھ"  U06BE  # ARABIC LETTER HEH DOACHASHMEE
-<Multi_key> <a> <x> <Multi_key> <a> <e> : "ە"  U06D5  # ARABIC LETTER AE
+<Multi_key> <a> <x> <y> : "ی"  U06CC  # ARABIC LETTER FARSI YEH
+<Multi_key> <a> <x> <a> <e> : "ە"  U06D5  # ARABIC LETTER AE
 
 # additional letters (represented visually)
 
@@ -3351,24 +3352,22 @@ include "%L"
 <Multi_key> <a> <x> <asciicircum> <asciicircum> <k> : "ݣ"  U0763  # ARABIC LETTER KEHEH WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <minus> <l>          : "ݪ"  U076A  # ARABIC LETTER LAM WITH BAR
 <Multi_key> <a> <x> <b> <l>              : "ࣇ"  U08C7  # ARABIC LETTER LAM WITH SMALL ARABIC LETTER TAH ABOVE
-<Multi_key> <a> <x> <v> <l>              : "ڵ‎"  U06B5 U200E  # ARABIC LETTER LAM WITH SMALL V LEFT-TO-RIGHT MARK
+<Multi_key> <a> <x> <v> <l>              : "ڵ"  U06B5  # ARABIC LETTER LAM WITH SMALL V
 <Multi_key> <a> <x> <period> <o> <n>     : "ڼ"  U06BC  # ARABIC LETTER NOON WITH RING
 <Multi_key> <a> <x> <b> <n>              : "ڻ"  U06BB  # ARABIC LETTER RNOON
 <Multi_key> <a> <x> <b> <period> <n>     : "ݨ"  U0768  # ARABIC LETTER NOON WITH SMALL TAH
 <Multi_key> <a> <x> <asciicircum> <n>    : "ڽ"  U06BD  # ARABIC LETTER NOON WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <v> <period> <n>     : "ݩ"  U0769  # ARABIC LETTER NOON WITH SMALL V
 <Multi_key> <a> <x> <minus> <u>          : "ۅ"  U06C5  # ARABIC LETTER KIRGHIZ OE
-<Multi_key> <a> <x> <asciitilde> <u>     : "ﻭٓ"  UFEED U0653  # ARABIC LETTER WAW ISOLATED FORM ARABIC MADDAH ABOVE
 <Multi_key> <a> <x> <period> <w>         : "ۏ"  U06CF  # ARABIC LETTER WAW WITH DOT ABOVE
 <Multi_key> <a> <x> <asciicircum> <w>    : "ۋ"  U06CB  # ARABIC LETTER VE
 <Multi_key> <a> <x> <v> <u>              : "ۆ"  U06C6  # ARABIC LETTER OE
 <Multi_key> <a> <x> <u> <u>              : "ۇ"  U06C7  # ARABIC LETTER U
 <Multi_key> <a> <x> <asciicircum> <u>    : "ۉ"  U06C9  # ARABIC LETTER KIRGHIZ YU
-<Multi_key> <a> <x> <asciitilde> <a>     : "ىٓ"  U0649 U0653  # ARABIC LETTER ALEF MAKSURA ARABIC MADDAH ABOVE
 <Multi_key> <a> <x> <colon> <a>          : "ې"  U06D0  # ARABIC LETTER E
-<Multi_key> <a> <x> <minus> <a>          : "ۍ"  U06CD  # ARABIC LETTER YEH WITH TAIL
-<Multi_key> <a> <x> <underscore> <v> <a> : "ۑ"  U06D1  # ARABIC LETTER YEH WITH THREE DOTS BELOW
-<Multi_key> <a> <x> <v> <a>              : "ێ"  U06CE  # ARABIC LETTER YEH WITH SMALL V
+<Multi_key> <a> <x> <minus> <y>          : "ۍ"  U06CD  # ARABIC LETTER YEH WITH TAIL
+<Multi_key> <a> <x> <underscore> <v> <y> : "ۑ"  U06D1  # ARABIC LETTER YEH WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <v> <y>              : "ێ"  U06CE  # ARABIC LETTER YEH WITH SMALL V
 
 # ligatures
 
