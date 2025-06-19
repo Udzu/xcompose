@@ -3545,11 +3545,14 @@ include "%L"
 
 # ligatures
 
+<Multi_key> <a> <x> <a> <k> <b> <a> <r> : "ﷳ"  UFDF3  # ARABIC LIGATURE AKBAR ISOLATED FORM
+<Multi_key> <a> <x> <a> <l> <l> <a> <h> : "ﷲ" UFDF2    # ARABIC LIGATURE ALLAH ISOLATED FORM
 <Multi_key> <a> <x> <b> <i> <s> <m> <i> <l> <l> <a> <h> : "﷽" UFDFD    # ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM
-<Multi_key> <a> <x> <A> <l> <l> <a> <h> : "ﷲ" UFDF2    # ARABIC LIGATURE ALLAH ISOLATED FORM
+
 <Multi_key> <a> <x> <A> <A> <S> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM
 <Multi_key> <a> <x> <A> <W> <J> : "﷿" UFDFF    # ARABIC LIGATURE AZZA WA JALL
-<Multi_key> <a> <x> <P> <B> <U> <H> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM (PEACE BE UPON HIM)
+<Multi_key> <a> <x> <P> <B> <U> <H> : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM (PBUH)
+<Multi_key> <a> <x> <S> <A> <W> : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM
 <Multi_key> <a> <x> <S> <W> <T> : "﷾" UFDFE    # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
 
 # punctuation
@@ -3562,6 +3565,9 @@ include "%L"
 <Multi_key> <a> <semicolon> <percent>   : "٪" U066A    # ARABIC PERCENT SIGN (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <Multi_key> <percent> <o> : "؉"  U0609  # ARABIC-INDIC PER MILLE SIGN (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <Multi_key> <percent> <percent> : "؊"  U060A  # ARABIC-INDIC PER TEN THOUSAND SIGN (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <ampersand> : "۽"  U06FD   # ARABIC SIGN SINDHI AMPERSAND LEFT-TO-RIGHT MARK (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <parenleft> : "﴾"  UFD3E  # ORNATE LEFT PARENTHESIS (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <parenright> : "﴿"  UFD3F  # ORNATE RIGHT PARENTHESIS (conflicts with ą, use ,a)
 
 # numerals
 
@@ -18436,6 +18442,7 @@ include "%L"
 <Multi_key> <Tab> <asterisk> <6> <minus> : "✡" U2721    # STAR OF DAVID (alternatively *6)
 <Multi_key> <Tab> <asterisk> <8> <1> : "✴" U2734    # EIGHT POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <8> <O> : "❂" U2742    # CIRCLED OPEN CENTRE EIGHT POINTED STAR
+<Multi_key> <Tab> <asterisk> <8> <minus> : "۞"  U06DE  # ARABIC START OF RUB EL HIZB
 <Multi_key> <Tab> <asterisk> <9> <0> : "🟙" U1F7D9    # NINE POINTED WHITE STAR
 <Multi_key> <Tab> <asterisk> <1> <2> <1> : "✹" U2739    # TWELVE POINTED BLACK STAR
 
