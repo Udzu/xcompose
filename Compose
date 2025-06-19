@@ -3308,13 +3308,18 @@ include "%L"
 <Multi_key> <a> <x> <k> <space> : "ڪ"  U06AA  # ARABIC LETTER SWASH KAF
 <Multi_key> <a> <x> <Multi_key> <h> : "ھ"  U06BE  # ARABIC LETTER HEH DOACHASHMEE
 <Multi_key> <a> <x> <y> : "ی"  U06CC  # ARABIC LETTER FARSI YEH
+<Multi_key> <a> <x> <less> <y> : "ے"  U06D2  # ARABIC LETTER YEH BARREE
 <Multi_key> <a> <x> <a> <e> : "ە"  U06D5  # ARABIC LETTER AE
+<Multi_key> <a> <x> <q> : "ࢼ"  U08BC  # ARABIC LETTER AFRICAN QAF
 
 # additional letters (represented visually)
 
 <Multi_key> <a> <x> <asciitilde> <a>     : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
 <Multi_key> <a> <x> <2> <a>              : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
 <Multi_key> <a> <x> <underscore> <2> <a> : "إ"  U0625   # ARABIC LETTER ALEF WITH HAMZA BELOW
+<Multi_key> <a> <x> <numbersign> <2> <a> : "ݳ"  U0773  # ARABIC LETTER ALEF WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <numbersign> <3> <a> : "ݴ"  U0774  # ARABIC LETTER ALEF WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
+<Multi_key> <a> <x> <period> <a>         : "ࡺ"  U087A  # ARABIC LETTER ALEF WITH DOT ABOVE
 
 <Multi_key> <a> <x> <space> <b>          : "ٮ"  U066E  # ARABIC LETTER DOTLESS BEH
 <Multi_key> <a> <x> <underscore> <colon> <b> : "ٻ"  U067B  # ARABIC LETTER BEEH
@@ -3329,19 +3334,24 @@ include "%L"
 <Multi_key> <a> <x> <v> <b>              : "ݖ"  U0756  # ARABIC LETTER BEH WITH SMALL V
 <Multi_key> <a> <x> <underscore> <v> <b> : "ࢠ"  U08A0  # ARABIC LETTER BEH WITH SMALL V BELOW
 <Multi_key> <a> <x> <2> <b>              : "ࢡ"  U08A1  # ARABIC LETTER BEH WITH HAMZA ABOVE
+<Multi_key> <a> <x> <m> <b>              : "ࢶ"  U08B6  # ARABIC LETTER BEH WITH SMALL MEEM ABOVE
 
 <Multi_key> <a> <x> <b> <t>              : "ٹ"  U0679  # ARABIC LETTER TTEH
 <Multi_key> <a> <x> <colon> <t>          : "ٺ"  U067A  # ARABIC LETTER TTEHEH
 <Multi_key> <a> <x> <underscore> <o> <t> : "ټ"  U067C  # ARABIC LETTER TEH WITH RING
 <Multi_key> <a> <x> <quotedbl> <period> <t> : "ٽ"  U067D  # ARABIC LETTER TEH WITH THREE DOTS ABOVE DOWNWARDS
 <Multi_key> <a> <x> <colon> <colon> <t>  : "ٿ"  U067F  # ARABIC LETTER TEHEH
+<Multi_key> <a> <x> <asciicircum> <t> <t> : "ࢸ"  U08B8  # ARABIC LETTER TEH WITH SMALL TEH ABOVE
+<Multi_key> <a> <x> <v> <t>              : "ࢿ"  U08BF  # ARABIC LETTER TEH WITH SMALL V
+<Multi_key> <a> <x> <v> <Multi_key> <b> <t> : "ࣀ"  U08C0  # ARABIC LETTER TTEH WITH SMALL V
 
 <Multi_key> <a> <x> <underscore> <quotedbl> <j> : "ڃ"  U0683  # ARABIC LETTER NYEH
 <Multi_key> <a> <x> <underscore> <colon> <j> : "ڄ"  U0684  # ARABIC LETTER DYEH
 <Multi_key> <a> <x> <underscore> <quotedbl> <period> <j> : "چ"  U0686  # ARABIC LETTER TCHEH (alternatively acC)
 <Multi_key> <a> <x> <underscore> <colon> <colon> <j>  : "ڇ"  U0687  # ARABIC LETTER TCHEHEH
-<Multi_key> <a> <x> <period> <C>         : "ڿ"  U06BF  # ARABIC LETTER TCHEH WITH DOT ABOVE
 <Multi_key> <a> <x> <quotedbl> <j>       : "ࢢ"  U08A2  # ARABIC LETTER JEEM WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <j> : "ࣅ"  U08C5  # ARABIC LETTER JEEM WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <x> <j> : "ࣆ"  U08C6  # ARABIC LETTER JEEM WITH THREE DOTS BELOW
 
 <Multi_key> <a> <x> <quotedbl> <H>       : "ݗ"  U0757  # ARABIC LETTER HAH WITH TWO DOTS ABOVE
 <Multi_key> <a> <x> <2> <H>              : "ځ"  U0681  # ARABIC LETTER HAH WITH HAMZA ABOVE
@@ -3350,6 +3360,9 @@ include "%L"
 <Multi_key> <a> <x> <underscore> <period> <quotedbl> <H> : "ݘ"  U0758  # ARABIC LETTER HAH WITH THREE DOTS POINTING UPWARDS BELOW
 <Multi_key> <a> <x> <underscore> <b> <H> : "ݮ"  U076E  # ARABIC LETTER HAH WITH SMALL ARABIC LETTER TAH BELOW
 <Multi_key> <a> <x> <underscore> <b> <quotedbl> <H> : "ݯ"  U076F  # ARABIC LETTER HAH WITH SMALL ARABIC LETTER TAH AND TWO DOTS
+<Multi_key> <a> <x> <b> <H>              : "ݲ"  U0772  # ARABIC LETTER HAH WITH SMALL ARABIC LETTER TAH ABOVE
+<Multi_key> <a> <x> <underscore> <numbersign> <4> <H> : "ݼ"  U077C  # ARABIC LETTER HAH WITH EXTENDED ARABIC-INDIC DIGIT FOUR BELOW
+<Multi_key> <a> <x> <underscore> <asciicircum> <H> : "ࢊ"  U088A  # ARABIC LETTER HAH WITH INVERTED SMALL V BELOW
 
 <Multi_key> <a> <x> <b> <d>              : "ڈ"  U0688  # ARABIC LETTER DDAL
 <Multi_key> <a> <x> <underscore> <o> <d> : "ډ"  U0689  # ARABIC LETTER DAL WITH RING
@@ -3364,6 +3377,7 @@ include "%L"
 <Multi_key> <a> <x> <b> <underscore> <colon> <d> : "ݙ"  U0759  # ARABIC LETTER DAL WITH TWO DOTS VERTICALLY BELOW AND SMALL TAH
 <Multi_key> <a> <x> <underscore> <asciicircum> <d> : "ݚ"  U075A  # ARABIC LETTER DAL WITH INVERTED SMALL V BELOW
 <Multi_key> <a> <x> <underscore> <quotedbl> <period> <d> : "ࢮ"  U08AE  # ARABIC LETTER DAL WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <underscore> <colon> <d> : "𐻂"  U10EC2  # ARABIC LETTER DAL WITH TWO DOTS VERTICALLY BELOW
 
 <Multi_key> <a> <x> <b> <r>              : "ڑ"  U0691  # ARABIC LETTER RREH
 <Multi_key> <a> <x> <v> <r>              : "ڒ"  U0692  # ARABIC LETTER REH WITH SMALL V
@@ -3375,9 +3389,11 @@ include "%L"
 <Multi_key> <a> <x> <period> <quotedbl> <r> : "ژ"  U0698  # ARABIC LETTER JEH (alternatively acJ)
 <Multi_key> <a> <x> <colon> <colon> <r>  : "ڙ"  U0699  # ARABIC LETTER REH WITH FOUR DOTS ABOVE
 <Multi_key> <a> <x> <asciicircum> <r>    : "ۯ"  U06EF  # ARABIC LETTER REH WITH INVERTED V
+<Multi_key> <a> <x> <minus> <r>          : "ݛ"  U075B  # ARABIC LETTER REH WITH STROKE
 <Multi_key> <a> <x> <colon> <r>          : "ݫ"  U076B  # ARABIC LETTER REH WITH TWO DOTS VERTICALLY ABOVE
 <Multi_key> <a> <x> <2> <r>              : "ݬ"  U076C  # ARABIC LETTER REH WITH HAMZA ABOVE
 <Multi_key> <a> <x> <b> <quotedbl> <r>   : "ݱ"  U0771  # ARABIC LETTER REH WITH SMALL ARABIC LETTER TAH AND TWO DOTS
+<Multi_key> <a> <x> <n> <r>              : "ࢹ"  U08B9  # ARABIC LETTER REH WITH SMALL NOON ABOVE
 
 <Multi_key> <a> <x> <asciicircum> <z>    : "ࢲ"  U08B2  # ARABIC LETTER ZAIN WITH INVERTED V ABOVE
 
@@ -3387,6 +3403,7 @@ include "%L"
 <Multi_key> <a> <x> <colon> <colon> <s>  : "ݜ"  U075C  # ARABIC LETTER SEEN WITH FOUR DOTS ABOVE
 <Multi_key> <a> <x> <colon> <s>          : "ݭ"  U076D  # ARABIC LETTER SEEN WITH TWO DOTS VERTICALLY ABOVE
 <Multi_key> <a> <x> <b> <quotedbl> <s>   : "ݰ"  U0770  # ARABIC LETTER SEEN WITH SMALL ARABIC LETTER TAH AND TWO DOTS
+<Multi_key> <a> <x> <numbersign> <4> <s> : "ݽ"  U077D  # ARABIC LETTER SEEN WITH EXTENDED ARABIC-INDIC DIGIT FOUR ABOVE
 <Multi_key> <a> <x> <asciicircum> <s>    : "ݾ"  U077E  # ARABIC LETTER SEEN WITH INVERTED V
 
 <Multi_key> <a> <x> <underscore> <period> <S> : "ۺ"  U06FA  # ARABIC LETTER SHEEN WITH DOT BELOW
@@ -3399,6 +3416,9 @@ include "%L"
 
 <Multi_key> <a> <x> <period> <quotedbl> <x> <t> : "ڟ"  U069F  # ARABIC LETTER TAH WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <quotedbl> <x> <t>   : "ࢣ"  U08A3  # ARABIC LETTER TAH WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <period> <x> <t> : "ࢋ"  U088B  # ARABIC LETTER TAH WITH DOT BELOW
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <x> <t> : "ࢌ"  U088C  # ARABIC LETTER TAH WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <underscore> <colon> <x> <t> : "𐻃"  U10EC3  # ARABIC LETTER TAH WITH TWO DOTS VERTICALLY BELOW
 
 <Multi_key> <a> <x> <period> <quotedbl> <grave> : "ڠ"  U06A0  # ARABIC LETTER AIN WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <quotedbl> <grave>   : "ݝ"  U075D  # ARABIC LETTER AIN WITH TWO DOTS ABOVE
@@ -3407,6 +3427,7 @@ include "%L"
 <Multi_key> <a> <x> <underscore> <quotedbl> <period> <grave> : "ࢳ"  U08B3  # ARABIC LETTER AIN WITH THREE DOTS BELOW
 
 <Multi_key> <a> <x> <underscore> <period> <G> : "ۼ"  U06FC  # ARABIC LETTER GHAIN WITH DOT BELOW
+<Multi_key> <a> <x> <period> <quotedbl> <G> : "ࣃ"  U08C3  # ARABIC LETTER GHAIN WITH THREE DOTS ABOVE
 
 <Multi_key> <a> <x> <underscore> <period> <f> : "ڢ"  U06A2  # ARABIC LETTER FEH WITH DOT MOVED BELOW
 <Multi_key> <a> <x> <period> <underscore> <period> <f> : "ڣ"  U06A3  # ARABIC LETTER FEH WITH DOT BELOW
@@ -3421,11 +3442,15 @@ include "%L"
 <Multi_key> <a> <x> <period> <q> : "ڧ"  U06A7  # ARABIC LETTER QAF WITH DOT ABOVE
 <Multi_key> <a> <x> <period> <quotedbl> <q> : "ڨ"  U06A8  # ARABIC LETTER QAF WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <underscore> <period> <q> : "ࢥ"  U08A5  # ARABIC LETTER QAF WITH DOT BELOW
+<Multi_key> <a> <x> <space> <underscore> <period> <q> : "ࢵ"  U08B5  # ARABIC LETTER QAF WITH DOT BELOW AND NO DOTS ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <x> <q> : "ࣄ"  U08C4  # ARABIC LETTER AFRICAN QAF WITH THREE DOTS ABOVE
 
 <Multi_key> <a> <x> <period> <k> <space> : "ڬ"  U06AC  # ARABIC LETTER KAF WITH DOT ABOVE
 <Multi_key> <a> <x> <period> <quotedbl> <k> <space> : "ڭ"  U06AD  # ARABIC LETTER NG
 <Multi_key> <a> <x> <underscore> <quotedbl> <period> <k> <space> : "ڮ"  U06AE  # ARABIC LETTER KAF WITH THREE DOTS BELOW
 <Multi_key> <a> <x> <quotedbl> <k> <space> : "ݿ"  U077F  # ARABIC LETTER KAF WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <period> <k> : "ࢴ"  U08B4  # ARABIC LETTER KAF WITH DOT BELOW
+<Multi_key> <a> <x> <underscore> <colon> <k> <space> : "𐻄"  U10EC4  # ARABIC LETTER KAF WITH TWO DOTS VERTICALLY BELOW
 
 <Multi_key> <a> <x> <quotedbl> <k> <h>  : "ػ"  U063B  # ARABIC LETTER KEHEH WITH TWO DOTS ABOVE
 <Multi_key> <a> <x> <underscore> <quotedbl> <period> <k> <h> : "ؼ"  U063C  # ARABIC LETTER KEHEH WITH THREE DOTS BELOW
@@ -3436,7 +3461,8 @@ include "%L"
 <Multi_key> <a> <x> <period> <k> <h>     : "ݢ"  U0762  # ARABIC LETTER KEHEH WITH DOT ABOVE
 <Multi_key> <a> <x> <period> <quotedbl> <k> <h> : "ݣ"  U0763  # ARABIC LETTER KEHEH WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <underscore> <period> <quotedbl> <k> <h> : "ݤ"  U0764  # ARABIC LETTER KEHEH WITH THREE DOTS POINTING UPWARDS BELOW
-<Multi_key> <a> <x> <underscore> <period> <k> : "ࢴ"  U08B4  # ARABIC LETTER KAF WITH DOT BELOW
+<Multi_key> <a> <x> <v> <k> <h>          : "ࣂ"  U08C2  # ARABIC LETTER KEHEH WITH SMALL V
+<Multi_key> <a> <x> <underscore> <colon> <k> <h> : "ࢍ"  U088D  # ARABIC LETTER KEHEH WITH TWO DOTS VERTICALLY BELOW
 
 <Multi_key> <a> <x> <v> <l>              : "ڵ"  U06B5  # ARABIC LETTER LAM WITH SMALL V
 <Multi_key> <a> <x> <period> <l>         : "ڶ"  U06B6  # ARABIC LETTER LAM WITH DOT ABOVE
@@ -3456,7 +3482,8 @@ include "%L"
 <Multi_key> <a> <x> <period> <quotedbl> <n> : "ڽ"  U06BD  # ARABIC LETTER NOON WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <underscore> <quotedbl> <n> : "ݧ"  U0767  # ARABIC LETTER NOON WITH TWO DOTS BELOW
 <Multi_key> <a> <x> <b> <period> <n>     : "ݨ"  U0768  # ARABIC LETTER NOON WITH SMALL TAH
-<Multi_key> <a> <x> <v> <period> <n>     : "ݩ"  U0769  # ARABIC LETTER NOON WITH SMALL V
+<Multi_key> <a> <x> <v> <n>              : "ݩ"  U0769  # ARABIC LETTER NOON WITH SMALL V
+<Multi_key> <a> <x> <asciicircum> <n>    : "ࢉ"  U0889  # ARABIC LETTER NOON WITH INVERTED SMALL V
 
 <Multi_key> <a> <x> <asciicircum> <h>    : "ۿ"  U06FF  # ARABIC LETTER HEH WITH INVERTED V
 
@@ -3480,6 +3507,10 @@ include "%L"
 <Multi_key> <a> <x> <period> <quotedbl> <u> : "ۋ"  U06CB  # ARABIC LETTER VE
 <Multi_key> <a> <x> <period> <w>         : "ۏ"  U06CF  # ARABIC LETTER WAW WITH DOT ABOVE
 <Multi_key> <a> <x> <period> <u>         : "ۏ"  U06CF  # ARABIC LETTER WAW WITH DOT ABOVE
+<Multi_key> <a> <x> <numbersign> <2> <w> : "ݸ"  U0778  # ARABIC LETTER WAW WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <numbersign> <2> <u> : "ݸ"  U0778  # ARABIC LETTER WAW WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <numbersign> <3> <w> : "ݹ"  U0779  # ARABIC LETTER WAW WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
+<Multi_key> <a> <x> <numbersign> <3> <u> : "ݹ"  U0779  # ARABIC LETTER WAW WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
 
 <Multi_key> <a> <x> <2> <y>              : "ئ"  U0626   # ARABIC LETTER YEH WITH HAMZA ABOVE
 <Multi_key> <a> <x> <underscore> <colon> <y> : "ې"  U06D0  # ARABIC LETTER E
@@ -3490,14 +3521,27 @@ include "%L"
 <Multi_key> <a> <x> <asciicircum> <y>    : "ؽ"  U063D  # ARABIC LETTER FARSI YEH WITH INVERTED V
 <Multi_key> <a> <x> <period> <quotedbl> <y> : "ؿ"  U063F  # ARABIC LETTER FARSI YEH WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <quotedbl> <y>       : "ؾ"  U063E  # ARABIC LETTER FARSI YEH WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <numbersign> <2> <y> : "ݵ"  U0775  # ARABIC LETTER FARSI YEH WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <numbersign> <3> <y> : "ݶ"  U0776  # ARABIC LETTER FARSI YEH WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
+<Multi_key> <a> <x> <underscore> <numbersign> <4> <y> : "ݷ"  U0777  # ARABIC LETTER FARSI YEH WITH EXTENDED ARABIC-INDIC DIGIT FOUR BELOW
 <Multi_key> <a> <x> <2> <underscore> <quotedbl> <y> : "ࢨ"  U08A8  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND HAMZA ABOVE
 <Multi_key> <a> <x> <period> <underscore> <quotedbl> <y> : "ࢩ"  U08A9  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND DOT ABOVE
+<Multi_key> <a> <x> <n> <underscore> <quotedbl> <y> : "ࢺ"  U08BA  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND SMALL NOON ABOVE
 
+<Multi_key> <a> <x> <m> <p>              : "ࢷ"  U08B7  # ARABIC LETTER PEH WITH SMALL MEEM ABOVE
 <Multi_key> <a> <x> <v> <p>              : "ࢾ"  U08BE  # ARABIC LETTER PEH WITH SMALL V
 
 <Multi_key> <a> <x> <o> <g>              : "ڰ"  U06B0  # ARABIC LETTER GAF WITH RING
 <Multi_key> <a> <x> <underscore> <quotedbl> <g> : "ڲ"  U06B2  # ARABIC LETTER GAF WITH TWO DOTS BELOW
 <Multi_key> <a> <x> <period> <quotedbl> <g> : "ڴ"  U06B4  # ARABIC LETTER GAF WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <slash> <g> : "ࢰ"  U08B0  # ARABIC LETTER GAF WITH INVERTED STROKE
+
+<Multi_key> <a> <x> <2> <less> <y>        : "ۓ"  U06D3  # ARABIC LETTER YEH BARREE WITH HAMZA ABOVE
+<Multi_key> <a> <x> <numbersign> <2> <less> <y> : "ݺ"  U077A  # ARABIC LETTER YEH BARREE WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <numbersign> <3> <less> <y> : "ݻ"  U077B  # ARABIC LETTER YEH BARREE WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
+
+<Multi_key> <a> <x> <period> <C>         : "ڿ"  U06BF  # ARABIC LETTER TCHEH WITH DOT ABOVE
+<Multi_key> <a> <x> <v> <C>              : "ࣁ"  U08C1  # ARABIC LETTER TCHEH WITH SMALL V
 
 # ligatures
 
