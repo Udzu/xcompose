@@ -2341,6 +2341,7 @@ include "%L"
 <Multi_key> <bracketleft> <S> <H> <V> <bracketright> : "🆪" U1F1AA   # SQUARED SHV
 <Multi_key> <bracketleft> <U> <H> <D> <bracketright> : "🆫" U1F1AB   # SQUARED UHD
 <Multi_key> <bracketleft> <V> <O> <D> <bracketright> : "🆬" U1F1AC   # SQUARED VOD
+<Multi_key> <bracketleft> <O> <B> <J> <bracketright> : "￼" UFFFC    # OBJECT REPLACEMENT CHARACTER
 
 <Multi_key> <exclam> <bracketleft> <A> <bracketright> : "🅰" U1F170   # NEGATIVE SQUARED LATIN CAPITAL LETTER A
 <Multi_key> <exclam> <bracketleft> <B> <bracketright> : "🅱" U1F171   # NEGATIVE SQUARED LATIN CAPITAL LETTER B
@@ -3279,25 +3280,16 @@ include "%L"
 <Multi_key> <a> <c> <i> : "ي" U064A    # ARABIC LETTER YEH
 <Multi_key> <a> <c> <apostrophe> : "ء" U0621    # ARABIC LETTER HAMZA
 <Multi_key> <a> <c> <2> : "ء" U0621    # ARABIC LETTER HAMZA
-# Persian
+
+# non-standard letters
+
+<Multi_key> <a> <c> <C> : "چ" U0686    # ARABIC LETTER TCHEH
 <Multi_key> <a> <c> <g> : "گ" U06AF    # ARABIC LETTER GAF
 <Multi_key> <a> <c> <J> : "ژ" U0698    # ARABIC LETTER JEH
-<Multi_key> <a> <c> <C> : "چ" U0686    # ARABIC LETTER TCHEH
 <Multi_key> <a> <c> <p> : "پ" U067E    # ARABIC LETTER PEH
+<Multi_key> <a> <c> <v> : "ڤ" U06A4    # ARABIC LETTER VEH
 
-<Multi_key> <a> <x> <a> <asciitilde> : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
-<Multi_key> <a> <x> <a> <2> : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
-<Multi_key> <a> <x> <w> <2> : "ؤ"  U0624   # ARABIC LETTER WAW WITH HAMZA ABOVE
-<Multi_key> <a> <x> <a> <underscore> <2> : "إ"  U0625   # ARABIC LETTER ALEF WITH HAMZA BELOW
-<Multi_key> <a> <x> <y> <2> : "ئ"  U0626   # ARABIC LETTER YEH WITH HAMZA ABOVE
-<Multi_key> <a> <x> <a> <y> : "ى" U0649    # ARABIC LETTER ALEF MAKSURA
-
-<Multi_key> <a> <x> <b> <i> <s> <m> <i> <l> <l> <a> <h> : "﷽" UFDFD    # ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM
-<Multi_key> <a> <x> <A> <l> <l> <a> <h> : "ﷲ" UFDF2    # ARABIC LIGATURE ALLAH ISOLATED FORM
-<Multi_key> <a> <x> <A> <A> <S> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM
-<Multi_key> <a> <x> <A> <W> <J> : "﷿" UFDFF    # ARABIC LIGATURE AZZA WA JALL
-<Multi_key> <a> <x> <P> <B> <U> <H> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM (PEACE BE UPON HIM)
-<Multi_key> <a> <x> <S> <W> <T> : "﷾" UFDFE    # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
+# diacritics
 
 <Multi_key> <a> <semicolon> <a> <Return>              : "َ" U064E    # ARABIC FATHA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <u> <Return>              : "ُ" U064F    # ARABIC DAMMA (conflicts with ą, use ,a)
@@ -3309,11 +3301,225 @@ include "%L"
 <Multi_key> <a> <semicolon> <2> <Return>              : "ٔ" U0654    # ARABIC HAMZA ABOVE (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <underscore> <2> <Return> : "ٕ" U0655    # ARABIC HAMZA BELOW (conflicts with ą, use ,a)
 
+# additional letters (represented semantically)
+
+<Multi_key> <a> <x> <a> <y> : "ى" U0649    # ARABIC LETTER ALEF MAKSURA
+<Multi_key> <a> <x> <k> <h> : "ک"  U06A9  # ARABIC LETTER KEHEH
+<Multi_key> <a> <x> <k> <space> : "ڪ"  U06AA  # ARABIC LETTER SWASH KAF
+<Multi_key> <a> <x> <Multi_key> <h> : "ھ"  U06BE  # ARABIC LETTER HEH DOACHASHMEE
+<Multi_key> <a> <x> <y> : "ی"  U06CC  # ARABIC LETTER FARSI YEH
+<Multi_key> <a> <x> <a> <e> : "ە"  U06D5  # ARABIC LETTER AE
+
+# additional letters (represented visually)
+
+<Multi_key> <a> <x> <asciitilde> <a>     : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
+<Multi_key> <a> <x> <2> <a>              : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
+<Multi_key> <a> <x> <underscore> <2> <a> : "إ"  U0625   # ARABIC LETTER ALEF WITH HAMZA BELOW
+
+<Multi_key> <a> <x> <space> <b>          : "ٮ"  U066E  # ARABIC LETTER DOTLESS BEH
+<Multi_key> <a> <x> <underscore> <colon> <b> : "ٻ"  U067B  # ARABIC LETTER BEEH
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <b> : "پ"  U067E  # ARABIC LETTER PEH (alternatively acp)
+<Multi_key> <a> <x> <underscore> <colon> <colon> <b> : "ڀ"  U0680  # ARABIC LETTER BEHEH
+<Multi_key> <a> <x> <underscore> <period> <period> <period> <b> : "ݐ"  U0750  # ARABIC LETTER BEH WITH THREE DOTS HORIZONTALLY BELOW
+<Multi_key> <a> <x> <period> <quotedbl> <underscore> <period> <b> : "ݑ"  U0751  # ARABIC LETTER BEH WITH DOT BELOW AND THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <period> <quotedbl> <b> : "ݒ"  U0752  # ARABIC LETTER BEH WITH THREE DOTS POINTING UPWARDS BELOW
+<Multi_key> <a> <x> <quotedbl> <underscore> <period> <quotedbl> <b> : "ݓ"  U0753  # ARABIC LETTER BEH WITH THREE DOTS POINTING UPWARDS BELOW AND TWO DOTS ABOVE
+<Multi_key> <a> <x> <period> <underscore> <quotedbl> <b> : "ݔ"  U0754  # ARABIC LETTER BEH WITH TWO DOTS BELOW AND DOT ABOVE
+<Multi_key> <a> <x> <underscore> <asciicircum> <b> : "ݕ"  U0755  # ARABIC LETTER BEH WITH INVERTED SMALL V BELOW
+<Multi_key> <a> <x> <v> <b>              : "ݖ"  U0756  # ARABIC LETTER BEH WITH SMALL V
+<Multi_key> <a> <x> <underscore> <v> <b> : "ࢠ"  U08A0  # ARABIC LETTER BEH WITH SMALL V BELOW
+<Multi_key> <a> <x> <2> <b>              : "ࢡ"  U08A1  # ARABIC LETTER BEH WITH HAMZA ABOVE
+
+<Multi_key> <a> <x> <b> <t>              : "ٹ"  U0679  # ARABIC LETTER TTEH
+<Multi_key> <a> <x> <colon> <t>          : "ٺ"  U067A  # ARABIC LETTER TTEHEH
+<Multi_key> <a> <x> <underscore> <o> <t> : "ټ"  U067C  # ARABIC LETTER TEH WITH RING
+<Multi_key> <a> <x> <quotedbl> <period> <t> : "ٽ"  U067D  # ARABIC LETTER TEH WITH THREE DOTS ABOVE DOWNWARDS
+<Multi_key> <a> <x> <colon> <colon> <t>  : "ٿ"  U067F  # ARABIC LETTER TEHEH
+
+<Multi_key> <a> <x> <underscore> <quotedbl> <j> : "ڃ"  U0683  # ARABIC LETTER NYEH
+<Multi_key> <a> <x> <underscore> <colon> <j> : "ڄ"  U0684  # ARABIC LETTER DYEH
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <j> : "چ"  U0686  # ARABIC LETTER TCHEH (alternatively acC)
+<Multi_key> <a> <x> <underscore> <colon> <colon> <j>  : "ڇ"  U0687  # ARABIC LETTER TCHEHEH
+<Multi_key> <a> <x> <period> <C>         : "ڿ"  U06BF  # ARABIC LETTER TCHEH WITH DOT ABOVE
+<Multi_key> <a> <x> <quotedbl> <j>       : "ࢢ"  U08A2  # ARABIC LETTER JEEM WITH TWO DOTS ABOVE
+
+<Multi_key> <a> <x> <quotedbl> <H>       : "ݗ"  U0757  # ARABIC LETTER HAH WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <2> <H>              : "ځ"  U0681  # ARABIC LETTER HAH WITH HAMZA ABOVE
+<Multi_key> <a> <x> <colon> <H>          : "ڂ"  U0682  # ARABIC LETTER HAH WITH TWO DOTS VERTICAL ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <H> : "څ"  U0685  # ARABIC LETTER HAH WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <period> <quotedbl> <H> : "ݘ"  U0758  # ARABIC LETTER HAH WITH THREE DOTS POINTING UPWARDS BELOW
+<Multi_key> <a> <x> <underscore> <b> <H> : "ݮ"  U076E  # ARABIC LETTER HAH WITH SMALL ARABIC LETTER TAH BELOW
+<Multi_key> <a> <x> <underscore> <b> <quotedbl> <H> : "ݯ"  U076F  # ARABIC LETTER HAH WITH SMALL ARABIC LETTER TAH AND TWO DOTS
+
+<Multi_key> <a> <x> <b> <d>              : "ڈ"  U0688  # ARABIC LETTER DDAL
+<Multi_key> <a> <x> <underscore> <o> <d> : "ډ"  U0689  # ARABIC LETTER DAL WITH RING
+<Multi_key> <a> <x> <underscore> <period> <d> : "ڊ"  U068A  # ARABIC LETTER DAL WITH DOT BELOW
+<Multi_key> <a> <x> <b> <underscore> <period> <d> : "ڋ"  U068B  # ARABIC LETTER DAL WITH DOT BELOW AND SMALL TAH
+<Multi_key> <a> <x> <quotedbl> <d>       : "ڌ"  U068C  # ARABIC LETTER DAHAL
+<Multi_key> <a> <x> <underscore> <quotedbl> <d> : "ڍ"  U068D  # ARABIC LETTER DDAHAL
+<Multi_key> <a> <x> <period> <quotedbl> <d> : "ڎ"  U068E  # ARABIC LETTER DUL
+<Multi_key> <a> <x> <quotedbl> <period> <d> : "ڏ"  U068F  # ARABIC LETTER DAL WITH THREE DOTS ABOVE DOWNWARDS
+<Multi_key> <a> <x> <colon> <colon> <d> : "ڐ"  U0690  # ARABIC LETTER DAL WITH FOUR DOTS ABOVE
+<Multi_key> <a> <x> <asciicircum> <d> : "ۮ"  U06EE  # ARABIC LETTER DAL WITH INVERTED V
+<Multi_key> <a> <x> <b> <underscore> <colon> <d> : "ݙ"  U0759  # ARABIC LETTER DAL WITH TWO DOTS VERTICALLY BELOW AND SMALL TAH
+<Multi_key> <a> <x> <underscore> <asciicircum> <d> : "ݚ"  U075A  # ARABIC LETTER DAL WITH INVERTED SMALL V BELOW
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <d> : "ࢮ"  U08AE  # ARABIC LETTER DAL WITH THREE DOTS BELOW
+
+<Multi_key> <a> <x> <b> <r>              : "ڑ"  U0691  # ARABIC LETTER RREH
+<Multi_key> <a> <x> <v> <r>              : "ڒ"  U0692  # ARABIC LETTER REH WITH SMALL V
+<Multi_key> <a> <x> <underscore> <o> <r> : "ړ"  U0693  # ARABIC LETTER REH WITH RING
+<Multi_key> <a> <x> <underscore> <period> <r> : "ڔ"  U0694  # ARABIC LETTER REH WITH DOT BELOW
+<Multi_key> <a> <x> <underscore> <v> <r> : "ڕ"  U0695  # ARABIC LETTER REH WITH SMALL V BELOW
+<Multi_key> <a> <x> <period> <underscore> <period> <r> : "ږ"  U0696  # ARABIC LETTER REH WITH DOT BELOW AND DOT ABOVE
+<Multi_key> <a> <x> <quotedbl> <r>       : "ڗ"  U0697  # ARABIC LETTER REH WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <r> : "ژ"  U0698  # ARABIC LETTER JEH (alternatively acJ)
+<Multi_key> <a> <x> <colon> <colon> <r>  : "ڙ"  U0699  # ARABIC LETTER REH WITH FOUR DOTS ABOVE
+<Multi_key> <a> <x> <asciicircum> <r>    : "ۯ"  U06EF  # ARABIC LETTER REH WITH INVERTED V
+<Multi_key> <a> <x> <colon> <r>          : "ݫ"  U076B  # ARABIC LETTER REH WITH TWO DOTS VERTICALLY ABOVE
+<Multi_key> <a> <x> <2> <r>              : "ݬ"  U076C  # ARABIC LETTER REH WITH HAMZA ABOVE
+<Multi_key> <a> <x> <b> <quotedbl> <r>   : "ݱ"  U0771  # ARABIC LETTER REH WITH SMALL ARABIC LETTER TAH AND TWO DOTS
+
+<Multi_key> <a> <x> <asciicircum> <z>    : "ࢲ"  U08B2  # ARABIC LETTER ZAIN WITH INVERTED V ABOVE
+
+<Multi_key> <a> <x> <period> <underscore> <period> <s> : "ښ"  U069A  # ARABIC LETTER SEEN WITH DOT BELOW AND DOT ABOVE
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <s> : "ڛ"  U069B  # ARABIC LETTER SEEN WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <period> <quotedbl> <underscore> <quotedbl> <period> <s> : "ڜ"  U069C  # ARABIC LETTER SEEN WITH THREE DOTS BELOW AND THREE DOTS ABOVE
+<Multi_key> <a> <x> <colon> <colon> <s>  : "ݜ"  U075C  # ARABIC LETTER SEEN WITH FOUR DOTS ABOVE
+<Multi_key> <a> <x> <colon> <s>          : "ݭ"  U076D  # ARABIC LETTER SEEN WITH TWO DOTS VERTICALLY ABOVE
+<Multi_key> <a> <x> <b> <quotedbl> <s>   : "ݰ"  U0770  # ARABIC LETTER SEEN WITH SMALL ARABIC LETTER TAH AND TWO DOTS
+<Multi_key> <a> <x> <asciicircum> <s>    : "ݾ"  U077E  # ARABIC LETTER SEEN WITH INVERTED V
+
+<Multi_key> <a> <x> <underscore> <period> <S> : "ۺ"  U06FA  # ARABIC LETTER SHEEN WITH DOT BELOW
+
+<Multi_key> <a> <x> <underscore> <quotedbl> <x> <s> : "ڝ"  U069D  # ARABIC LETTER SAD WITH TWO DOTS BELOW
+<Multi_key> <a> <x> <period> <quotedbl> <x> <s> : "ڞ"  U069E  # ARABIC LETTER SAD WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <x> <s> : "ࢯ"  U08AF  # ARABIC LETTER SAD WITH THREE DOTS BELOW
+
+<Multi_key> <a> <x> <underscore> <period> <x> <d> : "ۻ"  U06FB  # ARABIC LETTER DAD WITH DOT BELOW
+
+<Multi_key> <a> <x> <period> <quotedbl> <x> <t> : "ڟ"  U069F  # ARABIC LETTER TAH WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <quotedbl> <x> <t>   : "ࢣ"  U08A3  # ARABIC LETTER TAH WITH TWO DOTS ABOVE
+
+<Multi_key> <a> <x> <period> <quotedbl> <grave> : "ڠ"  U06A0  # ARABIC LETTER AIN WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <quotedbl> <grave>   : "ݝ"  U075D  # ARABIC LETTER AIN WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <quotedbl> <period> <grave> : "ݞ"  U075E  # ARABIC LETTER AIN WITH THREE DOTS POINTING DOWNWARDS ABOVE
+<Multi_key> <a> <x> <colon> <grave>      : "ݟ"  U075F  # ARABIC LETTER AIN WITH TWO DOTS VERTICALLY ABOVE
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <grave> : "ࢳ"  U08B3  # ARABIC LETTER AIN WITH THREE DOTS BELOW
+
+<Multi_key> <a> <x> <underscore> <period> <G> : "ۼ"  U06FC  # ARABIC LETTER GHAIN WITH DOT BELOW
+
+<Multi_key> <a> <x> <underscore> <period> <f> : "ڢ"  U06A2  # ARABIC LETTER FEH WITH DOT MOVED BELOW
+<Multi_key> <a> <x> <period> <underscore> <period> <f> : "ڣ"  U06A3  # ARABIC LETTER FEH WITH DOT BELOW
+<Multi_key> <a> <x> <period> <quotedbl> <f> : "ڤ"  U06A4  # ARABIC LETTER VEH (alternatively acv)
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <f> : "ڥ"  U06A5  # ARABIC LETTER FEH WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <colon> <colon> <x> <f> : "ڦ"  U06A6  # ARABIC LETTER PEHEH
+<Multi_key> <a> <x> <underscore> <quotedbl> <f> : "ݠ"  U0760  # ARABIC LETTER FEH WITH TWO DOTS BELOW
+<Multi_key> <a> <x> <underscore> <period> <quotedbl> <f> : "ݡ"  U0761  # ARABIC LETTER FEH WITH THREE DOTS POINTING UPWARDS BELOW
+<Multi_key> <a> <x> <period> <quotedbl> <underscore> <period> <f> : "ࢤ"  U08A4  # ARABIC LETTER FEH WITH DOT BELOW AND THREE DOTS ABOVE
+
+<Multi_key> <a> <x> <space> <q> : "ٯ"  U066F  # ARABIC LETTER DOTLESS QAF
+<Multi_key> <a> <x> <period> <q> : "ڧ"  U06A7  # ARABIC LETTER QAF WITH DOT ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <q> : "ڨ"  U06A8  # ARABIC LETTER QAF WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <period> <q> : "ࢥ"  U08A5  # ARABIC LETTER QAF WITH DOT BELOW
+
+<Multi_key> <a> <x> <period> <k> <space> : "ڬ"  U06AC  # ARABIC LETTER KAF WITH DOT ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <k> <space> : "ڭ"  U06AD  # ARABIC LETTER NG
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <k> <space> : "ڮ"  U06AE  # ARABIC LETTER KAF WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <quotedbl> <k> <space> : "ݿ"  U077F  # ARABIC LETTER KAF WITH TWO DOTS ABOVE
+
+<Multi_key> <a> <x> <quotedbl> <k> <h>  : "ػ"  U063B  # ARABIC LETTER KEHEH WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <k> <h> : "ؼ"  U063C  # ARABIC LETTER KEHEH WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <o> <k> <h>          : "ګ"  U06AB  # ARABIC LETTER KAF WITH RING
+<Multi_key> <a> <x> <slash> <k> <h>      : "گ"  U06AF  # ARABIC LETTER GAF (altenatively acg)
+<Multi_key> <a> <x> <quotedbl> <slash> <k> <h> : "ڱ"  U06B1  # ARABIC LETTER NGOEH
+<Multi_key> <a> <x> <slash> <underscore> <colon> <k> <h> : "ڳ"  U06B3  # ARABIC LETTER GUEH
+<Multi_key> <a> <x> <period> <k> <h>     : "ݢ"  U0762  # ARABIC LETTER KEHEH WITH DOT ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <k> <h> : "ݣ"  U0763  # ARABIC LETTER KEHEH WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <period> <quotedbl> <k> <h> : "ݤ"  U0764  # ARABIC LETTER KEHEH WITH THREE DOTS POINTING UPWARDS BELOW
+<Multi_key> <a> <x> <underscore> <period> <k> : "ࢴ"  U08B4  # ARABIC LETTER KAF WITH DOT BELOW
+
+<Multi_key> <a> <x> <v> <l>              : "ڵ"  U06B5  # ARABIC LETTER LAM WITH SMALL V
+<Multi_key> <a> <x> <period> <l>         : "ڶ"  U06B6  # ARABIC LETTER LAM WITH DOT ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <l> : "ڷ"  U06B7  # ARABIC LETTER LAM WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <l> : "ڸ"  U06B8  # ARABIC LETTER LAM WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <minus> <l>          : "ݪ"  U076A  # ARABIC LETTER LAM WITH BAR
+<Multi_key> <a> <x> <equal> <l>          : "ࢦ"  U08A6  # ARABIC LETTER LAM WITH DOUBLE BAR
+<Multi_key> <a> <x> <b> <l>              : "ࣇ"  U08C7  # ARABIC LETTER LAM WITH SMALL ARABIC LETTER TAH ABOVE
+
+<Multi_key> <a> <x> <period> <m>         : "ݥ"  U0765  # ARABIC LETTER MEEM WITH DOT ABOVE
+<Multi_key> <a> <x> <underscore> <period> <m> : "ݦ"  U0766  # ARABIC LETTER MEEM WITH DOT BELOW
+<Multi_key> <a> <x> <period> <quotedbl> <m> : "ࢧ"  U08A7  # ARABIC LETTER MEEM WITH THREE DOTS ABOVE
+
+<Multi_key> <a> <x> <underscore> <period> <n> : "ڹ"  U06B9  # ARABIC LETTER NOON WITH DOT BELOW
+<Multi_key> <a> <x> <b> <n>              : "ڻ"  U06BB  # ARABIC LETTER RNOON
+<Multi_key> <a> <x> <underscore> <o> <n> : "ڼ"  U06BC  # ARABIC LETTER NOON WITH RING
+<Multi_key> <a> <x> <period> <quotedbl> <n> : "ڽ"  U06BD  # ARABIC LETTER NOON WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <quotedbl> <n> : "ݧ"  U0767  # ARABIC LETTER NOON WITH TWO DOTS BELOW
+<Multi_key> <a> <x> <b> <period> <n>     : "ݨ"  U0768  # ARABIC LETTER NOON WITH SMALL TAH
+<Multi_key> <a> <x> <v> <period> <n>     : "ݩ"  U0769  # ARABIC LETTER NOON WITH SMALL V
+
+<Multi_key> <a> <x> <asciicircum> <h>    : "ۿ"  U06FF  # ARABIC LETTER HEH WITH INVERTED V
+
+<Multi_key> <a> <x> <2> <w>              : "ؤ"  U0624   # ARABIC LETTER WAW WITH HAMZA ABOVE
+<Multi_key> <a> <x> <2> <u>              : "ؤ"  U0624   # ARABIC LETTER WAW WITH HAMZA ABOVE
+<Multi_key> <a> <x> <underscore> <o> <w> : "ۄ"  U06C4  # ARABIC LETTER WAW WITH RING
+<Multi_key> <a> <x> <underscore> <o> <u> : "ۄ"  U06C4  # ARABIC LETTER WAW WITH RING
+<Multi_key> <a> <x> <minus> <w>          : "ۅ"  U06C5  # ARABIC LETTER KIRGHIZ OE
+<Multi_key> <a> <x> <minus> <u>          : "ۅ"  U06C5  # ARABIC LETTER KIRGHIZ OE
+<Multi_key> <a> <x> <v> <w>              : "ۆ"  U06C6  # ARABIC LETTER OE
+<Multi_key> <a> <x> <v> <u>              : "ۆ"  U06C6  # ARABIC LETTER OE
+<Multi_key> <a> <x> <u> <w>              : "ۇ"  U06C7  # ARABIC LETTER U
+<Multi_key> <a> <x> <u> <u>              : "ۇ"  U06C7  # ARABIC LETTER U
+<Multi_key> <a> <x> <bar> <w>            : "ۈ"  U06C8  # ARABIC LETTER YU
+<Multi_key> <a> <x> <bar> <u>            : "ۈ"  U06C8  # ARABIC LETTER YU
+<Multi_key> <a> <x> <asciicircum> <w>    : "ۉ"  U06C9  # ARABIC LETTER KIRGHIZ YU
+<Multi_key> <a> <x> <asciicircum> <u>    : "ۉ"  U06C9  # ARABIC LETTER KIRGHIZ YU
+<Multi_key> <a> <x> <quotedbl> <w>       : "ۊ"  U06CA  # ARABIC LETTER WAW WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <quotedbl> <u>       : "ۊ"  U06CA  # ARABIC LETTER WAW WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <w> : "ۋ"  U06CB  # ARABIC LETTER VE
+<Multi_key> <a> <x> <period> <quotedbl> <u> : "ۋ"  U06CB  # ARABIC LETTER VE
+<Multi_key> <a> <x> <period> <w>         : "ۏ"  U06CF  # ARABIC LETTER WAW WITH DOT ABOVE
+<Multi_key> <a> <x> <period> <u>         : "ۏ"  U06CF  # ARABIC LETTER WAW WITH DOT ABOVE
+
+<Multi_key> <a> <x> <2> <y>              : "ئ"  U0626   # ARABIC LETTER YEH WITH HAMZA ABOVE
+<Multi_key> <a> <x> <underscore> <colon> <y> : "ې"  U06D0  # ARABIC LETTER E
+<Multi_key> <a> <x> <minus> <y>          : "ۍ"  U06CD  # ARABIC LETTER YEH WITH TAIL
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <y> : "ۑ"  U06D1  # ARABIC LETTER YEH WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <v> <y>              : "ێ"  U06CE  # ARABIC LETTER YEH WITH SMALL V
+<Multi_key> <a> <x> <underscore> <o> <y> : "ؠ"  U0620  # ARABIC LETTER KASHMIRI YEH
+<Multi_key> <a> <x> <asciicircum> <y>    : "ؽ"  U063D  # ARABIC LETTER FARSI YEH WITH INVERTED V
+<Multi_key> <a> <x> <period> <quotedbl> <y> : "ؿ"  U063F  # ARABIC LETTER FARSI YEH WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <quotedbl> <y>       : "ؾ"  U063E  # ARABIC LETTER FARSI YEH WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <2> <underscore> <quotedbl> <y> : "ࢨ"  U08A8  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND HAMZA ABOVE
+<Multi_key> <a> <x> <period> <underscore> <quotedbl> <y> : "ࢩ"  U08A9  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND DOT ABOVE
+
+<Multi_key> <a> <x> <v> <p>              : "ࢾ"  U08BE  # ARABIC LETTER PEH WITH SMALL V
+
+<Multi_key> <a> <x> <o> <g>              : "ڰ"  U06B0  # ARABIC LETTER GAF WITH RING
+<Multi_key> <a> <x> <underscore> <quotedbl> <g> : "ڲ"  U06B2  # ARABIC LETTER GAF WITH TWO DOTS BELOW
+<Multi_key> <a> <x> <period> <quotedbl> <g> : "ڴ"  U06B4  # ARABIC LETTER GAF WITH THREE DOTS ABOVE
+
+# ligatures
+
+<Multi_key> <a> <x> <b> <i> <s> <m> <i> <l> <l> <a> <h> : "﷽" UFDFD    # ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM
+<Multi_key> <a> <x> <A> <l> <l> <a> <h> : "ﷲ" UFDF2    # ARABIC LIGATURE ALLAH ISOLATED FORM
+<Multi_key> <a> <x> <A> <A> <S> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM
+<Multi_key> <a> <x> <A> <W> <J> : "﷿" UFDFF    # ARABIC LIGATURE AZZA WA JALL
+<Multi_key> <a> <x> <P> <B> <U> <H> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM (PEACE BE UPON HIM)
+<Multi_key> <a> <x> <S> <W> <T> : "﷾" UFDFE    # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
+
+# punctuation
+
+<Multi_key> <a> <semicolon> <period>    : "۔" U06D4    # ARABIC FULL STOP (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <comma>     : "،" U060C    # ARABIC COMMA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <semicolon> : "؛" U061B    # ARABIC SEMICOLON (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <question>  : "؟" U061F    # ARABIC QUESTION MARK (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <minus>     : "ـ" U0640    # ARABIC TATWEEL (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <percent>   : "٪" U066A    # ARABIC PERCENT SIGN (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <Multi_key> <percent> <o> : "؉"  U0609  # ARABIC-INDIC PER MILLE SIGN (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <Multi_key> <percent> <percent> : "؊"  U060A  # ARABIC-INDIC PER TEN THOUSAND SIGN (conflicts with ą, use ,a)
+
+# numerals
 
 <Multi_key> <a> <numbersign> <0> : "٠"  U0660   # ARABIC-INDIC DIGIT ZERO
 <Multi_key> <a> <numbersign> <1> : "١"  U0661   # ARABIC-INDIC DIGIT ONE
@@ -3325,6 +3531,17 @@ include "%L"
 <Multi_key> <a> <numbersign> <7> : "٧"  U0667   # ARABIC-INDIC DIGIT SEVEN
 <Multi_key> <a> <numbersign> <8> : "٨"  U0668   # ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <numbersign> <9> : "٩"  U0669   # ARABIC-INDIC DIGIT NINE
+
+<Multi_key> <a> <numbersign> <e> <0> : "۰"  U06F0  # EXTENDED ARABIC-INDIC DIGIT ZERO
+<Multi_key> <a> <numbersign> <e> <1> : "۱"  U06F1  # EXTENDED ARABIC-INDIC DIGIT ONE
+<Multi_key> <a> <numbersign> <e> <2> : "۲"  U06F2  # EXTENDED ARABIC-INDIC DIGIT TWO
+<Multi_key> <a> <numbersign> <e> <3> : "۳"  U06F3  # EXTENDED ARABIC-INDIC DIGIT THREE
+<Multi_key> <a> <numbersign> <e> <4> : "۴"  U06F4  # EXTENDED ARABIC-INDIC DIGIT FOUR
+<Multi_key> <a> <numbersign> <e> <5> : "۵"  U06F5  # EXTENDED ARABIC-INDIC DIGIT FIVE
+<Multi_key> <a> <numbersign> <e> <6> : "۶"  U06F6  # EXTENDED ARABIC-INDIC DIGIT SIX
+<Multi_key> <a> <numbersign> <e> <7> : "۷"  U06F7  # EXTENDED ARABIC-INDIC DIGIT SEVEN
+<Multi_key> <a> <numbersign> <e> <8> : "۸"  U06F8  # EXTENDED ARABIC-INDIC DIGIT EIGHT
+<Multi_key> <a> <numbersign> <e> <9> : "۹"  U06F9  # EXTENDED ARABIC-INDIC DIGIT NINE
 
 # (A = Avestan) (Hoffmann transcription)
 
@@ -4274,9 +4491,9 @@ include "%L"
 #######################
 
 # covers Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi,
-# Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Kirat Rai, Limbu, Mahajani, Malayalam, Marchen, Masaram Gondi, Meitei Mayek, Modi,
-# Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu, Tirhuta, Tulu-Tigalari.
-# Also see Zhuyin section for Tibetan and Phags-Pa.
+# Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Khojki, Khudawadi, Kirat Rai, Limbu, Mahajani, Malayalam, Marchen, 
+# Masaram Gondi, Meitei Mayek, Modi, Nadinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, 
+# Takri, Tamil, Telugu, Tirhuta, Tulu-Tigalari; also see Zhuyin section for Tibetan and Phags-Pa.
 
 # (based on 7-bit ISO 15919)
 
@@ -4465,6 +4682,10 @@ include "%L"
 <Multi_key> <b> <d> <period> <r> <h>     : "ढ़" U095D   # DEVANAGARI LETTER RHA
 <Multi_key> <b> <d> <f>                  : "फ़" U095E   # DEVANAGARI LETTER FA
 <Multi_key> <b> <d> <semicolon> <y>      : "य़" U095F   # DEVANAGARI LETTER YYA
+<Multi_key> <b> <d> <g> <g>              : "ॻ"  U097B  # DEVANAGARI LETTER GGA
+<Multi_key> <b> <d> <j> <j>              : "ॼ"  U097C  # DEVANAGARI LETTER JJA
+<Multi_key> <b> <d> <period> <d> <period> <d> : "ॾ"  U097E  # DEVANAGARI LETTER DDDA
+<Multi_key> <b> <d> <b> <b>              : "ॿ"  U097F  # DEVANAGARI LETTER BBA
 
 # Independent vowels
 
@@ -5649,6 +5870,93 @@ include "%L"
 <Multi_key> <b> <k> <numbersign> <8>     : "೮"  U0CEE  # KANNADA DIGIT EIGHT
 <Multi_key> <b> <k> <numbersign> <9>     : "೯"  U0CEF  # KANNADA DIGIT NINE
 
+# (KD = Khudawadi)
+
+# Consonants
+
+<Multi_key> <b> <K> <D> <k> <space> : "𑊺"  U112BA  # KHUDAWADI LETTER KA
+<Multi_key> <b> <K> <D> <k> <h> : "𑊻"  U112BB  # KHUDAWADI LETTER KHA
+<Multi_key> <b> <K> <D> <g> <space> : "𑊼"  U112BC  # KHUDAWADI LETTER GA
+<Multi_key> <b> <K> <D> <g> <g> : "𑊽"  U112BD  # KHUDAWADI LETTER GGA
+<Multi_key> <b> <K> <D> <g> <h> : "𑊾"  U112BE  # KHUDAWADI LETTER GHA
+<Multi_key> <b> <K> <D> <semicolon> <n> : "𑊿"  U112BF  # KHUDAWADI LETTER NGA
+<Multi_key> <b> <K> <D> <c> <space> : "𑋀"  U112C0  # KHUDAWADI LETTER CA
+<Multi_key> <b> <K> <D> <c> <h> : "𑋁"  U112C1  # KHUDAWADI LETTER CHA
+<Multi_key> <b> <K> <D> <j> <space> : "𑋂"  U112C2  # KHUDAWADI LETTER JA
+<Multi_key> <b> <K> <D> <j> <j> : "𑋃"  U112C3  # KHUDAWADI LETTER JJA
+<Multi_key> <b> <K> <D> <j> <h> : "𑋄"  U112C4  # KHUDAWADI LETTER JHA
+<Multi_key> <b> <K> <D> <asciitilde> <n> : "𑋅"  U112C5  # KHUDAWADI LETTER NYA
+<Multi_key> <b> <K> <D> <period> <t> <space> : "𑋆"  U112C6  # KHUDAWADI LETTER TTA
+<Multi_key> <b> <K> <D> <period> <t> <h> : "𑋇"  U112C7  # KHUDAWADI LETTER TTHA
+<Multi_key> <b> <K> <D> <period> <d> <space> : "𑋈"  U112C8  # KHUDAWADI LETTER DDA
+<Multi_key> <b> <K> <D> <exclam> <d> <exclam> <d> : "𑋉"  U112C9  # KHUDAWADI LETTER DDDA
+<Multi_key> <b> <K> <D> <underscore> <r> : "𑋊"  U112CA  # KHUDAWADI LETTER RRA
+<Multi_key> <b> <K> <D> <period> <d> <h> : "𑋋"  U112CB  # KHUDAWADI LETTER DDHA
+<Multi_key> <b> <K> <D> <period> <n> : "𑋌"  U112CC  # KHUDAWADI LETTER NNA
+<Multi_key> <b> <K> <D> <t> <space> : "𑋍"  U112CD  # KHUDAWADI LETTER TA
+<Multi_key> <b> <K> <D> <t> <h> : "𑋎"  U112CE  # KHUDAWADI LETTER THA
+<Multi_key> <b> <K> <D> <d> <space> : "𑋏"  U112CF  # KHUDAWADI LETTER DA
+<Multi_key> <b> <K> <D> <d> <h> : "𑋐"  U112D0  # KHUDAWADI LETTER DHA
+<Multi_key> <b> <K> <D> <n> : "𑋑"  U112D1  # KHUDAWADI LETTER NA
+<Multi_key> <b> <K> <D> <p> <space> : "𑋒"  U112D2  # KHUDAWADI LETTER PA
+<Multi_key> <b> <K> <D> <p> <h> : "𑋓"  U112D3  # KHUDAWADI LETTER PHA
+<Multi_key> <b> <K> <D> <b> <space> : "𑋔"  U112D4  # KHUDAWADI LETTER BA
+<Multi_key> <b> <K> <D> <b> <b> : "𑋕"  U112D5  # KHUDAWADI LETTER BBA
+<Multi_key> <b> <K> <D> <b> <h> : "𑋖"  U112D6  # KHUDAWADI LETTER BHA
+<Multi_key> <b> <K> <D> <m> : "𑋗"  U112D7  # KHUDAWADI LETTER MA
+<Multi_key> <b> <K> <D> <y> : "𑋘"  U112D8  # KHUDAWADI LETTER YA
+<Multi_key> <b> <K> <D> <r> : "𑋙"  U112D9  # KHUDAWADI LETTER RA
+<Multi_key> <b> <K> <D> <l> : "𑋚"  U112DA  # KHUDAWADI LETTER LA
+<Multi_key> <b> <K> <D> <v> : "𑋛"  U112DB  # KHUDAWADI LETTER VA
+<Multi_key> <b> <K> <D> <semicolon> <s> : "𑋜"  U112DC  # KHUDAWADI LETTER SHA
+<Multi_key> <b> <K> <D> <s> : "𑋝"  U112DD  # KHUDAWADI LETTER SA
+<Multi_key> <b> <K> <D> <h> : "𑋞"  U112DE  # KHUDAWADI LETTER HA
+
+# Independent vowels
+
+<Multi_key> <b> <K> <D> <a> <space> : "𑊰"  U112B0  # KHUDAWADI LETTER A
+<Multi_key> <b> <K> <D> <a> <a> <space> : "𑊱"  U112B1  # KHUDAWADI LETTER AA
+<Multi_key> <b> <K> <D> <i> <space> : "𑊲"  U112B2  # KHUDAWADI LETTER I
+<Multi_key> <b> <K> <D> <i> <i> <space> : "𑊳"  U112B3  # KHUDAWADI LETTER II
+<Multi_key> <b> <K> <D> <u> <space> : "𑊴"  U112B4  # KHUDAWADI LETTER U
+<Multi_key> <b> <K> <D> <u> <u> <space> : "𑊵"  U112B5  # KHUDAWADI LETTER UU
+<Multi_key> <b> <K> <D> <e> <e> <space> : "𑊶"  U112B6  # KHUDAWADI LETTER E
+<Multi_key> <b> <K> <D> <a> <i> <space> : "𑊷"  U112B7  # KHUDAWADI LETTER AI
+<Multi_key> <b> <K> <D> <o> <o> <space> : "𑊸"  U112B8  # KHUDAWADI LETTER O
+<Multi_key> <b> <K> <D> <a> <u> <space> : "𑊹"  U112B9  # KHUDAWADI LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <K> <D> <a> <a> <Return> : "𑋠"  U112E0  # KHUDAWADI VOWEL SIGN AA
+<Multi_key> <b> <K> <D> <i> <Return> : "𑋡"  U112E1  # KHUDAWADI VOWEL SIGN I
+<Multi_key> <b> <K> <D> <i> <i> <Return> : "𑋢"  U112E2  # KHUDAWADI VOWEL SIGN II
+<Multi_key> <b> <K> <D> <u> <Return> : "𑋣"  U112E3  # KHUDAWADI VOWEL SIGN U
+<Multi_key> <b> <K> <D> <u> <u> <Return> : "𑋤"  U112E4  # KHUDAWADI VOWEL SIGN UU
+<Multi_key> <b> <K> <D> <e> <e> <Return> : "𑋥"  U112E5  # KHUDAWADI VOWEL SIGN E
+<Multi_key> <b> <K> <D> <a> <i> <Return> : "𑋦"  U112E6  # KHUDAWADI VOWEL SIGN AI
+<Multi_key> <b> <K> <D> <o> <o> <Return> : "𑋧"  U112E7  # KHUDAWADI VOWEL SIGN O
+<Multi_key> <b> <K> <D> <a> <u> <Return> : "𑋨"  U112E8  # KHUDAWADI VOWEL SIGN AU
+<Multi_key> <b> <K> <D> <0> <Return> : "𑋪"  U112EA  # KHUDAWADI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <K> <D> <period> <Return> : "𑋟"  U112DF  # KHUDAWADI SIGN ANUSVARA
+<Multi_key> <b> <K> <D> <underscore> <period> <Return> : "𑋩"  U112E9  # KHUDAWADI SIGN NUKTA
+<Multi_key> <b> <K> <D> <comma> <Return> : "𑋪"  U112EA  # KHUDAWADI SIGN VIRAMA
+
+# Numerals
+
+<Multi_key> <b> <K> <D> <numbersign> <0> : "𑋰"  U112F0  # KHUDAWADI DIGIT ZERO
+<Multi_key> <b> <K> <D> <numbersign> <1> : "𑋱"  U112F1  # KHUDAWADI DIGIT ONE
+<Multi_key> <b> <K> <D> <numbersign> <2> : "𑋲"  U112F2  # KHUDAWADI DIGIT TWO
+<Multi_key> <b> <K> <D> <numbersign> <3> : "𑋳"  U112F3  # KHUDAWADI DIGIT THREE
+<Multi_key> <b> <K> <D> <numbersign> <4> : "𑋴"  U112F4  # KHUDAWADI DIGIT FOUR
+<Multi_key> <b> <K> <D> <numbersign> <5> : "𑋵"  U112F5  # KHUDAWADI DIGIT FIVE
+<Multi_key> <b> <K> <D> <numbersign> <6> : "𑋶"  U112F6  # KHUDAWADI DIGIT SIX
+<Multi_key> <b> <K> <D> <numbersign> <7> : "𑋷"  U112F7  # KHUDAWADI DIGIT SEVEN
+<Multi_key> <b> <K> <D> <numbersign> <8> : "𑋸"  U112F8  # KHUDAWADI DIGIT EIGHT
+<Multi_key> <b> <K> <D> <numbersign> <9> : "𑋹"  U112F9  # KHUDAWADI DIGIT NINE
+
 # (KH = Kharoshthi)
 
 # Consonants
@@ -5726,6 +6034,87 @@ include "%L"
 
 <Multi_key> <b> <K> <H> <bar> : "𐩖"  U10A56  # KHAROSHTHI PUNCTUATION DANDA
 <Multi_key> <b> <K> <H> <2> <bar> : "𐩗"  U10A57  # KHAROSHTHI PUNCTUATION DOUBLE DANDA
+
+# (KJ = Khojki)
+
+# Consonants
+
+<Multi_key> <b> <K> <J> <k> <space> : "𑈈"  U11208  # KHOJKI LETTER KA
+<Multi_key> <b> <K> <J> <k> <h> : "𑈉"  U11209  # KHOJKI LETTER KHA
+<Multi_key> <b> <K> <J> <g> <space> : "𑈊"  U1120A  # KHOJKI LETTER GA
+<Multi_key> <b> <K> <J> <g> <g> : "𑈋"  U1120B  # KHOJKI LETTER GGA
+<Multi_key> <b> <K> <J> <g> <h> : "𑈌"  U1120C  # KHOJKI LETTER GHA
+<Multi_key> <b> <K> <J> <semicolon> <n> : "𑈍"  U1120D  # KHOJKI LETTER NGA
+<Multi_key> <b> <K> <J> <c> <space> : "𑈎"  U1120E  # KHOJKI LETTER CA
+<Multi_key> <b> <K> <J> <c> <h> : "𑈏"  U1120F  # KHOJKI LETTER CHA
+<Multi_key> <b> <K> <J> <j> <space> : "𑈐"  U11210  # KHOJKI LETTER JA
+<Multi_key> <b> <K> <J> <j> <j> : "𑈑"  U11211  # KHOJKI LETTER JJA
+<Multi_key> <b> <K> <J> <asciitilde> <n> : "𑈓"  U11213  # KHOJKI LETTER NYA
+<Multi_key> <b> <K> <J> <period> <t> <space> : "𑈔"  U11214  # KHOJKI LETTER TTA
+<Multi_key> <b> <K> <J> <period> <t> <h> : "𑈕"  U11215  # KHOJKI LETTER TTHA
+<Multi_key> <b> <K> <J> <period> <d> <space> : "𑈖"  U11216  # KHOJKI LETTER DDA
+<Multi_key> <b> <K> <J> <period> <d> <h> : "𑈗"  U11217  # KHOJKI LETTER DDHA
+<Multi_key> <b> <K> <J> <period> <n> : "𑈘"  U11218  # KHOJKI LETTER NNA
+<Multi_key> <b> <K> <J> <t> <space> : "𑈙"  U11219  # KHOJKI LETTER TA
+<Multi_key> <b> <K> <J> <t> <h> : "𑈚"  U1121A  # KHOJKI LETTER THA
+<Multi_key> <b> <K> <J> <d> <space> : "𑈛"  U1121B  # KHOJKI LETTER DA
+<Multi_key> <b> <K> <J> <period> <d> <period> <d> : "𑈜"  U1121C  # KHOJKI LETTER DDDA
+<Multi_key> <b> <K> <J> <d> <h> : "𑈝"  U1121D  # KHOJKI LETTER DHA
+<Multi_key> <b> <K> <J> <n> : "𑈞"  U1121E  # KHOJKI LETTER NA
+<Multi_key> <b> <K> <J> <p> <space> : "𑈟"  U1121F  # KHOJKI LETTER PA
+<Multi_key> <b> <K> <J> <p> <h> : "𑈠"  U11220  # KHOJKI LETTER PHA
+<Multi_key> <b> <K> <J> <b> <space> : "𑈡"  U11221  # KHOJKI LETTER BA
+<Multi_key> <b> <K> <J> <b> <b> : "𑈢"  U11222  # KHOJKI LETTER BBA
+<Multi_key> <b> <K> <J> <b> <h> : "𑈣"  U11223  # KHOJKI LETTER BHA
+<Multi_key> <b> <K> <J> <m> : "𑈤"  U11224  # KHOJKI LETTER MA
+<Multi_key> <b> <K> <J> <y> : "𑈥"  U11225  # KHOJKI LETTER YA
+<Multi_key> <b> <K> <J> <r> : "𑈦"  U11226  # KHOJKI LETTER RA
+<Multi_key> <b> <K> <J> <l> : "𑈧"  U11227  # KHOJKI LETTER LA
+<Multi_key> <b> <K> <J> <v> : "𑈨"  U11228  # KHOJKI LETTER VA
+<Multi_key> <b> <K> <J> <s> : "𑈩"  U11229  # KHOJKI LETTER SA
+<Multi_key> <b> <K> <J> <h> : "𑈪"  U1122A  # KHOJKI LETTER HA
+<Multi_key> <b> <K> <J> <period> <l> : "𑈫"  U1122B  # KHOJKI LETTER LLA
+<Multi_key> <b> <K> <J> <q> : "𑈿"  U1123F  # KHOJKI LETTER QA
+
+# Independent vowels
+
+<Multi_key> <b> <K> <J> <a> <space> : "𑈀"  U11200  # KHOJKI LETTER A
+<Multi_key> <b> <K> <J> <a> <a> <space> : "𑈁"  U11201  # KHOJKI LETTER AA
+<Multi_key> <b> <K> <J> <i> <space> : "𑈂"  U11202  # KHOJKI LETTER I
+<Multi_key> <b> <K> <J> <u> <space> : "𑈃"  U11203  # KHOJKI LETTER U
+<Multi_key> <b> <K> <J> <e> <e> <space> : "𑈄"  U11204  # KHOJKI LETTER E
+<Multi_key> <b> <K> <J> <a> <i> <space> : "𑈅"  U11205  # KHOJKI LETTER AI
+<Multi_key> <b> <K> <J> <o> <o> <space> : "𑈆"  U11206  # KHOJKI LETTER O
+<Multi_key> <b> <K> <J> <a> <u> <space> : "𑈇"  U11207  # KHOJKI LETTER AU
+
+# Dependent vowels
+
+<Multi_key> <b> <K> <J> <a> <a> <Return> : "𑈬"  U1122C  # KHOJKI VOWEL SIGN AA
+<Multi_key> <b> <K> <J> <i> <Return> : "𑈭"  U1122D  # KHOJKI VOWEL SIGN I
+<Multi_key> <b> <K> <J> <i> <i> <Return> : "𑈮"  U1122E  # KHOJKI VOWEL SIGN II
+<Multi_key> <b> <K> <J> <u> <Return> : "𑈯"  U1122F  # KHOJKI VOWEL SIGN U
+<Multi_key> <b> <K> <J> <e> <e> <Return> : "𑈰"  U11230  # KHOJKI VOWEL SIGN E
+<Multi_key> <b> <K> <J> <a> <i> <Return> : "𑈱"  U11231  # KHOJKI VOWEL SIGN AI
+<Multi_key> <b> <K> <J> <o> <o> <Return> : "𑈲"  U11232  # KHOJKI VOWEL SIGN O
+<Multi_key> <b> <K> <J> <a> <u> <Return> : "𑈳"  U11233  # KHOJKI VOWEL SIGN AU
+<Multi_key> <b> <K> <J> <0> <Return> : "𑈵"  U11235  # KHOJKI SIGN VIRAMA
+
+# Other signs
+
+<Multi_key> <b> <K> <J> <period> <Return> : "𑈴"  U11234  # KHOJKI SIGN ANUSVARA
+<Multi_key> <b> <K> <J> <comma> <Return> : "𑈵"  U11235  # KHOJKI SIGN VIRAMA
+<Multi_key> <b> <K> <J> <underscore> <period> <Return> : "𑈶"  U11236  # KHOJKI SIGN NUKTA
+<Multi_key> <b> <K> <J> <w> <Return> : "𑈷"  U11237  # KHOJKI SIGN SHADDA
+
+# Punctuation
+
+<Multi_key> <b> <K> <J> <bar> : "𑈸"  U11238  # KHOJKI DANDA
+<Multi_key> <b> <K> <J> <2> <bar> : "𑈹"  U11239  # KHOJKI DOUBLE DANDA
+<Multi_key> <b> <K> <J> <space> : "𑈺"  U1123A  # KHOJKI WORD SEPARATOR
+<Multi_key> <b> <K> <J> <Multi_key> <S> <O> : "𑈻"  U1123B  # KHOJKI SECTION MARK
+<Multi_key> <b> <K> <J> <2> <Multi_key> <S> <O> : "𑈼"  U1123C  # KHOJKI DOUBLE SECTION MARK
+<Multi_key> <b> <K> <J> <o> <period> : "𑈽"  U1123D  # KHOJKI ABBREVIATION SIGN
+<Multi_key> <b> <K> <J> <comma> <r> <Return> : "𑉁"  U11241  # KHOJKI VOWEL SIGN VOCALIC R
 
 # (KR = Kirat Rai)
 
