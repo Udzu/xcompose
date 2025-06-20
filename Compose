@@ -18292,6 +18292,13 @@ include "%L"
 <Multi_key> <bracketleft> <bracketright> <o>           : "⧇" U29C7    # SQUARED SMALL CIRCLE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <0>       : "⧈" U29C8    # SQUARED SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <c>           : "▢" U25A2    # WHITE SQUARE WITH ROUNDED CORNERS (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <minus>      : "▤" U25A4   # SQUARE WITH HORIZONTAL FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <bar>        : "▥" U25A5   # SQUARE WITH VERTICAL FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <numbersign> : "▦" U25A6   # SQUARE WITH ORTHOGONAL CROSSHATCH FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <backslash>  : "▧" U25A7   # SQUARE WITH UPPER LEFT TO LOWER RIGHT FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <slash>      : "▨" U25A8   # SQUARE WITH UPPER RIGHT TO LOWER LEFT FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <X>          : "▩" U25A9   # SQUARE WITH DIAGONAL CROSSHATCH FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Return>      : "⃞" U20DE   # COMBINING ENCLOSING SQUARE (conflicts)
 
 <Multi_key> <bracketleft> <less> <greater> <bracketright> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE
@@ -18319,6 +18326,12 @@ include "%L"
 <Multi_key> <parenleft> <parenright> <L> <L> <Q>   : "◵" U25F5    # WHITE CIRCLE WITH LOWER LEFT QUADRANT
 <Multi_key> <parenleft> <parenright> <L> <R> <Q>   : "◶" U25F6    # WHITE CIRCLE WITH LOWER RIGHT QUADRANT
 <Multi_key> <parenleft> <parenright> <U> <R> <Q>   : "◷" U25F7    # WHITE CIRCLE WITH UPPER RIGHT QUADRANT
+<Multi_key> <parenleft> <parenright> <U> <R> <1>   : "◔" U25D4    # CIRCLE WITH UPPER RIGHT QUADRANT BLACK
+<Multi_key> <parenleft> <parenright> <U> <L> <0>   : "◕" U25D5    # CIRCLE WITH ALL BUT UPPER LEFT QUADRANT BLACK
+<Multi_key> <parenleft> <parenright> <space> <period> <0> : "⚆" U2686  # WHITE CIRCLE WITH DOT RIGHT
+<Multi_key> <parenleft> <parenright> <space> <period> <1> : "⚈" U2688  # BLACK CIRCLE WITH WHITE DOT RIGHT
+<Multi_key> <parenleft> <parenright> <quotedbl> <0> : "⚇" U2687  # WHITE CIRCLE WITH TWO DOTS
+<Multi_key> <parenleft> <parenright> <quotedbl> <1> : "⚉" U2689  # BLACK CIRCLE WITH TWO WHITE DOTS
 <Multi_key> <parenleft> <parenright> <plus>        : "⊕" U2295   # CIRCLED PLUS (alternatively (+))
 <Multi_key> <parenleft> <parenright> <minus>       : "⊖" U2296   # CIRCLED MINUS (alternatively (-))
 <Multi_key> <parenleft> <parenright> <X>           : "⊗" U2297   # CIRCLED TIMES (alternatively (*))
@@ -18332,6 +18345,9 @@ include "%L"
 <Multi_key> <parenleft> <parenright> <equal>       : "⊜" U229C    # CIRCLED EQUALS
 <Multi_key> <parenleft> <parenright> <2> <0>       : "◎" U25CE    # BULLSEYE
 <Multi_key> <parenleft> <parenright> <2> <1>       : "◉" U25C9    # FISHEYE
+<Multi_key> <parenleft> <parenright> <Multi_key> <bar>   : "◍" U25CD    # CIRCLE WITH VERTICAL FILL
+<Multi_key> <parenleft> <parenright> <Multi_key> <minus> : "⦵"  U29B5  # CIRCLE WITH HORIZONTAL BAR
+<Multi_key> <parenleft> <parenright> <Multi_key> <X>     : "⦻"  U29BB  # CIRCLE WITH SUPERIMPOSED X
 <Multi_key> <parenleft> <parenright> <Return>      : "⃝" U20DD   # COMBINING ENCLOSING CIRCLE
 <Multi_key> <parenleft> <parenright> <backslash> <Return> : "⃠" U20E0   # COMBINING ENCLOSING CIRCLE BACKSLASH
 
