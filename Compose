@@ -18364,17 +18364,15 @@ include "%L"
 
 <Multi_key> <bracketleft> <space> <bracketright> <0> : "▭" U25AD    # WHITE RECTANGLE
 <Multi_key> <bracketleft> <space> <bracketright> <1> : "▬" U25AC    # BLACK RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
+<Multi_key> <bracketleft> <space> <bracketright> <X> : "⌧" U2327   # X IN A RECTANGLE BOX
+<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> : "⮹"  U2BB9  # UP ARROWHEAD IN A RECTANGLE BOX
+<Multi_key> <bracketleft> <space> <bracketright> <Return> : "⃢" U20E2   # COMBINING ENCLOSING SCREEN
 <Multi_key> <bracketleft> <space> <bracketright> <v> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
 <Multi_key> <bracketleft> <space> <bracketright> <v> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <X> : "⌧" U2327   # X IN A RECTANGLE BOX
-<Multi_key> <bracketleft> <space> <bracketright> <Return> : "⃢" U20E2   # COMBINING ENCLOSING SCREEN
+<Multi_key> <bracketleft> <space> <bracketright> <v> <minus> : "𜸆"  U1CE06  # WHITE VERTICAL RECTANGLE WITH HORIZONTAL BAR
 
 <Multi_key> <parenleft> <space> <parenright> <0> : "⬭" U2B2D    # WHITE HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <1> : "⬬" U2B2C    # BLACK HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
-<Multi_key> <parenleft> <space> <parenright> <asciicircum> <0> : "⬯" U2B2F    # WHITE VERTICAL ELLIPSE (conflicts with ˘, use ␣()
-<Multi_key> <parenleft> <space> <parenright> <asciicircum> <1> : "⬮" U2B2E    # BLACK VERTICAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <v> <0> : "⬯" U2B2F    # WHITE VERTICAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <v> <1> : "⬮" U2B2E    # BLACK VERTICAL ELLIPSE (conflicts with ˘, use ␣()
 
@@ -18391,7 +18389,9 @@ include "%L"
 <Multi_key> <Tab> <slash> <backslash> <plus> : "⨹" U2A39   # PLUS SIGN IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <minus> : "⨺" U2A3A   # MINUS SIGN IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <X> : "⨻" U2A3B   # MULTIPLICATION SIGN IN TRIANGLE
+<Multi_key> <Tab> <slash> <backslash> <s> : "⧌"  U29CC  # S IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <period> : "⧊" U29CA   # TRIANGLE WITH DOT ABOVE
+<Multi_key> <Tab> <slash> <backslash> <underscore> : "⧋"  U29CB  # TRIANGLE WITH UNDERBAR
 <Multi_key> <Tab> <slash> <backslash> <Return> : "⃤" U20E4   # COMBINING ENCLOSING UPWARD POINTING TRIANGLE
 
 <Multi_key> <Tab> <bar> <greater> <0>   : "▷" U25B7    # WHITE RIGHT-POINTING TRIANGLE
@@ -18401,6 +18401,12 @@ include "%L"
 <Multi_key> <Tab> <backslash> <slash> <1> : "▼" U25BC    # BLACK DOWN-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <0>      : "◁" U25C1    # WHITE LEFT-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <1>      : "◀" U25C0    # BLACK LEFT-POINTING TRIANGLE
+
+<Multi_key> <Tab> <slash> <backslash> <Multi_key> <asciicircum> <bar> : "🢕"  U1F895  # UPWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <bar> <greater> <Multi_key> <minus> <greater> : "🢖"  U1F896  # RIGHTWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <backslash> <slash> <Multi_key> <bar> <v> : "🢗"  U1F897  # DOWNWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <less> <bar> <Multi_key> <less> <minus> : "🢔"  U1F894  # LEFTWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
+
 <Multi_key> <Tab> <slash> <bar> <0>     : "◿" U25FF    # LOWER RIGHT TRIANGLE
 <Multi_key> <Tab> <slash> <bar> <1>     : "◢" U25E2    # BLACK LOWER RIGHT TRIANGLE
 <Multi_key> <Tab> <bar> <backslash> <0> : "◺" U25FA    # LOWER LEFT TRIANGLE
@@ -18426,10 +18432,12 @@ include "%L"
 <Multi_key> <Tab> <less> <greater> <2> <1>       : "🞛" U1F79B   # WHITE DIAMOND CONTAINING BLACK MEDIUM DIAMOND
 <Multi_key> <Tab> <less> <greater> <period>      : "⟐" U27D0   # WHITE DIAMOND WITH CENTRED DOT
 <Multi_key> <Tab> <less> <greater> <question>    : "�" UFFFD   # REPLACEMENT CHARACTER
+<Multi_key> <Tab> <less> <greater> <underscore>  : "⍚"  U235A  # APL FUNCTIONAL SYMBOL DIAMOND UNDERBAR
 <Multi_key> <Tab> <less> <greater> <Return>      : "⃟" U20DF   # COMBINING ENCLOSING DIAMOND
 
 <Multi_key> <Tab> <less> <asciicircum> <greater> <0>     : "◊"  U25CA  # LOZENGE
 <Multi_key> <Tab> <less> <asciicircum> <greater> <1>     : "⧫"  U29EB  # BLACK LOZENGE
+<Multi_key> <Tab> <less> <asciicircum> <greater> <2> <1> : "🞠"  U1F7A0  # WHITE LOZENGE CONTAINING BLACK SMALL LOZENGE
 <Multi_key> <Tab> <less> <asciicircum> <greater> <minus> : "⟠"  U27E0  # LOZENGE DIVIDED BY HORIZONTAL RULE
 <Multi_key> <Tab> <less> <asciicircum> <greater> <bracketleft> <bracketright> : "⌑"  U2311  # SQUARE LOZENGE
 
