@@ -16046,6 +16046,10 @@ include "%L"
 <Multi_key> <equal> <question>        : "≟"  U225F   # QUESTIONED EQUAL TO
 <Multi_key> <equal> <equal>           : "≣"  U2263   # STRICTLY EQUIVALENT TO
 <Multi_key> <equal> <bar> <bar>       : "⋕"  U22D5   # EQUAL AND PARALLEL TO
+<Multi_key> <plus> <equal>            : "⩲"  U2A72   # PLUS SIGN ABOVE EQUALS SIGN
+<Multi_key> <equal> <plus>            : "⩱"  U2A71   # EQUALS SIGN ABOVE PLUS SIGN
+<Multi_key> <equal> <Multi_key> <8> <8> : "⯹"  U2BF9  # EQUALS SIGN WITH INFINITY BELOW
+<Multi_key> <asciicircum> <asciitilde> <asciitilde> <space> : "⩯"  U2A6F  # ALMOST EQUAL TO WITH CIRCUMFLEX ACCENT
 <Multi_key> <2> <less>                : "≪"  U226A   # MUCH LESS-THAN
 <Multi_key> <3> <less>                : "⋘"  U22D8   # VERY MUCH LESS-THAN
 <Multi_key> <2> <greater>             : "≫"  U226B   # MUCH GREATER-THAN
@@ -16078,29 +16082,57 @@ include "%L"
 <Multi_key> <equal> <Multi_key> <greater>            : "≧"  U2267   # GREATER-THAN OVER EQUAL TO
 <Multi_key> <minus> <Multi_key> <period>             : "∸"  U2238   # DOT MINUS
 <Multi_key> <minus> <Multi_key> <colon>              : "∹"  U2239   # EXCESS (really should swap with ÷ but that's much more useful)
+<Multi_key> <asciitilde> <Multi_key> <period>        : "⩪"  U2A6A   # TILDE OPERATOR WITH DOT ABOVE
 
 <Multi_key> <slash> <Multi_key> <equal> <underscore> : "≢"  U2262   # NOT IDENTICAL TO
 <Multi_key> <less> <Multi_key> <slash> <equal>       : "≨"  U2268   # LESS-THAN BUT NOT EQUAL TO
 <Multi_key> <less> <Multi_key> <slash> <asciitilde>  : "⋦"  U22E6   # LESS-THAN BUT NOT EQUIVALENT TO
+<Multi_key> <less> <Multi_key> <slash> <minus>       : "⪇"  U2A87  # LESS-THAN AND SINGLE-LINE NOT EQUAL TO
 <Multi_key> <greater> <Multi_key> <slash> <equal>    : "≩"  U2269   # GREATER-THAN BUT NOT EQUAL TO
 <Multi_key> <greater> <Multi_key> <slash> <asciitilde> : "⋧"  U22E7   # GREATER-THAN BUT NOT EQUIVALENT TO
+<Multi_key> <greater> <Multi_key> <slash> <minus>    : "⪈"  U2A88  # GREATER-THAN AND SINGLE-LINE NOT EQUAL TO
 <Multi_key> <slash> <Multi_key> <less> <equal>       : "≰"  U2270   # NEITHER LESS-THAN NOR EQUAL TO
 <Multi_key> <slash> <Multi_key> <greater> <equal>    : "≱"  U2271   # NEITHER GREATER-THAN NOR EQUAL TO
 <Multi_key> <slash> <Multi_key> <greater> <asciitilde> : "≵"  U2275   # NEITHER GREATER-THAN NOR EQUIVALENT TO
 <Multi_key> <slash> <Multi_key> <less> <asciitilde>  : "≴"  U2274   # NEITHER LESS-THAN NOR EQUIVALENT TO
 <Multi_key> <slash> <Multi_key> <less> <greater>     : "≸"  U2278   # NEITHER LESS-THAN NOR GREATER-THAN
 <Multi_key> <slash> <Multi_key> <greater> <less>     : "≹"  U2279   # NEITHER GREATER-THAN NOR LESS-THAN
-<Multi_key> <Multi_key> <less> <greater>             : "≶"  U2276   # LESS-THAN OR GREATER-THAN
-<Multi_key> <Multi_key> <greater> <less>             : "≷"  U2277   # GREATER-THAN OR LESS-THAN
-<Multi_key> <Multi_key> <less> <equal> <greater>     : "⋚"  U22DA   # LESS-THAN EQUAL TO OR GREATER-THAN
-<Multi_key> <Multi_key> <greater> <equal> <less>     : "⋛"  U22DB   # GREATER-THAN EQUAL TO OR LESS-THAN
 <Multi_key> <Multi_key> <less> <bar> <equal>         : "⊴"  U22B4   # NORMAL SUBGROUP OF OR EQUAL TO
 <Multi_key> <Multi_key> <greater> <bar> <equal>      : "⊵"  U22B5   # CONTAINS AS NORMAL SUBGROUP OR EQUAL TO
 <Multi_key> <slash> <Multi_key> <less> <bar>         : "⋪"  U22EA   # NOT NORMAL SUBGROUP OF
-<Multi_key> <slash> <Multi_key> <greater> <bar>     : "⋫"  U22EB   # DOES NOT CONTAIN AS NORMAL SUBGROUP
+<Multi_key> <slash> <Multi_key> <greater> <bar>      : "⋫"  U22EB   # DOES NOT CONTAIN AS NORMAL SUBGROUP
 <Multi_key> <slash> <Multi_key> <Multi_key> <less> <bar> <equal> : "⋬" U22EC   # NOT NORMAL SUBGROUP OF OR EQUAL TO
 <Multi_key> <slash> <Multi_key> <Multi_key> <greater> <bar> <equal> : "⋭" U22ED   # DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL
-<Multi_key> <Multi_key> <asciitilde> <asciitilde> <equal> : "≊" U224A   # ALMOST EQUAL OR EQUAL TO
+
+<Multi_key> <Multi_key> <asciitilde> <asciitilde> <minus> : "≊" U224A   # ALMOST EQUAL OR EQUAL TO
+<Multi_key> <Multi_key> <asciitilde> <minus> <asciitilde> : "⩬"  U2A6C  # SIMILAR MINUS SIMILAR
+<Multi_key> <Multi_key> <asciitilde> <asciitilde> <equal> : "⩰"  U2A70  # APPROXIMATELY EQUAL OR EQUAL TO
+<Multi_key> <Multi_key> <equal> <asciitilde>         : "⩳"  U2A73  # EQUALS SIGN ABOVE TILDE OPERATOR
+<Multi_key> <Multi_key> <less> <greater> <space>     : "≶"  U2276  # LESS-THAN OR GREATER-THAN
+<Multi_key> <Multi_key> <greater> <less> <space>     : "≷"  U2277  # GREATER-THAN OR LESS-THAN
+<Multi_key> <Multi_key> <less> <minus> <greater>     : "⋚"  U22DA  # LESS-THAN EQUAL TO OR GREATER-THAN
+<Multi_key> <Multi_key> <greater> <minus> <less>     : "⋛"  U22DB  # GREATER-THAN EQUAL TO OR LESS-THAN
+<Multi_key> <Multi_key> <less> <asciitilde> <asciitilde> : "⪅"  U2A85  # LESS-THAN OR APPROXIMATE
+<Multi_key> <Multi_key> <greater> <asciitilde> <asciitilde> : "⪆"  U2A86  # GREATER-THAN OR APPROXIMATE
+<Multi_key> <Multi_key> <less> <equal> <greater>     : "⪋"  U2A8B  # LESS-THAN ABOVE DOUBLE-LINE EQUAL ABOVE GREATER-THAN
+<Multi_key> <Multi_key> <greater> <equal> <less>     : "⪌"  U2A8C  # GREATER-THAN ABOVE DOUBLE-LINE EQUAL ABOVE LESS-THAN
+<Multi_key> <Multi_key> <less> <asciitilde> <minus>  : "⪍"  U2A8D  # LESS-THAN ABOVE SIMILAR OR EQUAL
+<Multi_key> <Multi_key> <greater> <asciitilde> <minus> : "⪎"  U2A8E  # GREATER-THAN ABOVE SIMILAR OR EQUAL
+<Multi_key> <Multi_key> <less> <asciitilde> <greater> : "⪏"  U2A8F  # LESS-THAN ABOVE SIMILAR ABOVE GREATER-THAN
+<Multi_key> <Multi_key> <greater> <asciitilde> <less> : "⪐"  U2A90  # GREATER-THAN ABOVE SIMILAR ABOVE LESS-THAN
+<Multi_key> <Multi_key> <less> <greater> <equal>     : "⪑"  U2A91  # LESS-THAN ABOVE GREATER-THAN ABOVE DOUBLE-LINE EQUAL
+<Multi_key> <Multi_key> <greater> <less> <equal>     : "⪒"  U2A92  # GREATER-THAN ABOVE LESS-THAN ABOVE DOUBLE-LINE EQUAL
+<Multi_key> <Multi_key> <less> <backslash> <greater> <slash> : "⪓"  U2A93  # LESS-THAN ABOVE SLANTED EQUAL ABOVE GREATER-THAN ABOVE SLANTED EQUAL
+<Multi_key> <Multi_key> <greater> <slash> <less> <backslash> : "⪔"  U2A94  # GREATER-THAN ABOVE SLANTED EQUAL ABOVE LESS-THAN ABOVE SLANTED EQUAL
+<Multi_key> <Multi_key> <equal> <less>               : "⪙"  U2A99  # DOUBLE-LINE EQUAL TO OR LESS-THAN
+<Multi_key> <Multi_key> <equal> <greater>            : "⪚"  U2A9A  # DOUBLE-LINE EQUAL TO OR GREATER-THAN
+<Multi_key> <Multi_key> <slash> <slash> <less>       : "⪛"  U2A9B  # DOUBLE-LINE SLANTED EQUAL TO OR LESS-THAN
+<Multi_key> <Multi_key> <backslash> <backslash> <greater> : "⪜"  U2A9C  # DOUBLE-LINE SLANTED EQUAL TO OR GREATER-THAN
+<Multi_key> <Multi_key> <asciitilde> <less> <space>  : "⪝"  U2A9D  # SIMILAR OR LESS-THAN
+<Multi_key> <Multi_key> <asciitilde> <greater> <space> : "⪞"  U2A9E  # SIMILAR OR GREATER-THAN
+<Multi_key> <Multi_key> <asciitilde> <less> <equal>  : "⪟"  U2A9F  # SIMILAR ABOVE LESS-THAN ABOVE EQUALS SIGN
+<Multi_key> <Multi_key> <asciitilde> <greater> <equal> : "⪠"  U2AA0  # SIMILAR ABOVE GREATER-THAN ABOVE EQUALS SIGN
+
 <Multi_key> <parenleft> <plus> <parenright>          : "⊕"  U2295   # CIRCLED PLUS
 <Multi_key> <parenleft> <minus> <parenright>         : "⊖"  U2296   # CIRCLED MINUS (conflicts with useless {)
 <Multi_key> <parenleft> <asterisk> <parenright>      : "⊗"  U2297   # CIRCLED TIMES
@@ -16277,9 +16309,10 @@ include "%L"
 <Multi_key> <ampersand> <less> <slash> <equal>       : "⇍"  U21CD   # LEFTWARDS DOUBLE ARROW WITH STROKE
 <Multi_key> <ampersand> <less> <equal> <greater>     : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
 <Multi_key> <ampersand> <less> <equal> <slash> <greater>  : "⇎"  U21CE   # LEFT RIGHT DOUBLE ARROW WITH STROKE
+
 <Multi_key> <ampersand> <bar> <minus> <space>        : "⊦"  U22A6   # ASSERTION
 <Multi_key> <ampersand> <bar> <minus> <minus>        : "⊢"  U22A2   # RIGHT TACK (PROVES)
-<Multi_key> <ampersand> <minus> <bar>                : "⊣"  U22A3   # LEFT TACK
+<Multi_key> <ampersand> <minus> <minus> <bar>        : "⊣"  U22A3   # LEFT TACK
 <Multi_key> <ampersand> <bar> <equal> <space>        : "⊧"  U22A7   # MODELS
 <Multi_key> <ampersand> <bar> <equal> <equal>        : "⊨"  U22A8   # TRUE (MODELS)
 <Multi_key> <ampersand> <bar> <bar> <minus>          : "⊩"  U22A9   # FORCES
@@ -16289,6 +16322,8 @@ include "%L"
 <Multi_key> <ampersand> <bar> <slash> <equal>        : "⊭"  U22AD   # NOT TRUE (DOES NOT MODEL)
 <Multi_key> <ampersand> <bar> <bar> <slash> <minus>  : "⊮"  U22AE   # DOES NOT FORCES
 <Multi_key> <ampersand> <bar> <bar> <slash> <equal>  : "⊯"  U22AF   # NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
+<Multi_key> <ampersand> <equal> <bar> <bar> <equal>  : "⟚" U27DA   # LEFT AND RIGHT DOUBLE TURNSTILE
+<Multi_key> <ampersand> <minus> <bar> <bar> <minus>  : "⟛" U27DB   # LEFT AND RIGHT TACK
 
 #########
 # Emoji #
