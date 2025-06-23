@@ -1301,9 +1301,14 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <Multi_key> <A> <E> : "ᴁ" U1D01   # LATIN LETTER SMALL CAPITAL AE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <B> <bar> : "ᴃ"  U1D03  # LATIN LETTER SMALL CAPITAL BARRED B (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <D> <H> : "ᴆ" U1D06   # LATIN LETTER SMALL CAPITAL ETH (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <E> <v> : "ⱻ"  U2C7B  # LATIN LETTER SMALL CAPITAL TURNED E (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <G> <v> : "𝼂"  U1DF02  # LATIN LETTER SMALL CAPITAL TURNED G (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <slash> <I> : "ᵻ"  U1D7B  # LATIN SMALL CAPITAL LETTER I WITH STROKE (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <K> <v> : "𝼐"  U1DF10  # LATIN LETTER SMALL CAPITAL TURNED K (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <L> <slash> : "ᴌ" U1D0C   # LATIN LETTER SMALL CAPITAL L WITH STROKE (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <M> <v> : "ꟺ"  UA7FA  # LATIN LETTER SMALL CAPITAL TURNED M (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <O> <parenright> : "ᴐ"  U1D10  # LATIN LETTER SMALL CAPITAL OPEN O (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <R> <v> : "ᴚ"  U1D1A  # LATIN LETTER SMALL CAPITAL TURNED R (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <minus> <U> : "ᵾ"  U1D7E  # LATIN SMALL CAPITAL LETTER U WITH STROKE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <Z> <H> : "ᴣ" U1D23   # LATIN LETTER SMALL CAPITAL EZH (conflicts)
 
@@ -4441,6 +4446,181 @@ include "%L"
 <Multi_key> <a> <y> <minus> <minus>      : "𐺭"  U10EAD  # YEZIDI HYPHENATION MARK
 <Multi_key> <a> <y> <period> <l>         : "𐺰"  U10EB0  # YEZIDI LETTER LAM WITH DOT ABOVE
 <Multi_key> <a> <y> <asciicircum> <y>    : "𐺱"  U10EB1  # YEZIDI LETTER YOT WITH CIRCUMFLEX ABOVE
+
+# mathematical alphanumerics (same convention as Latin alphanumerics above)
+
+# Convention: % + a/A + form + character
+#   prefix: a corresponds to ac above, and A to ax
+#   form: i = isolated, > = initial, t = tailed, s = stretched, l = looped, d = double-struck
+#   character: as above
+
+<Multi_key> <percent> <a> <i> <a> : "𞸀"  U1EE00  # ARABIC MATHEMATICAL ALEF
+<Multi_key> <percent> <a> <i> <b> : "𞸁"  U1EE01  # ARABIC MATHEMATICAL BEH
+<Multi_key> <percent> <a> <i> <j> : "𞸂"  U1EE02  # ARABIC MATHEMATICAL JEEM
+<Multi_key> <percent> <a> <i> <d> : "𞸃"  U1EE03  # ARABIC MATHEMATICAL DAL
+<Multi_key> <percent> <a> <i> <w> : "𞸅"  U1EE05  # ARABIC MATHEMATICAL WAW
+<Multi_key> <percent> <a> <i> <u> : "𞸅"  U1EE05  # ARABIC MATHEMATICAL WAW
+<Multi_key> <percent> <a> <i> <z> : "𞸆"  U1EE06  # ARABIC MATHEMATICAL ZAIN
+<Multi_key> <percent> <a> <i> <H> : "𞸇"  U1EE07  # ARABIC MATHEMATICAL HAH
+<Multi_key> <percent> <A> <i> <h> : "𞸇"  U1EE07  # ARABIC MATHEMATICAL HAH
+<Multi_key> <percent> <A> <i> <t> : "𞸈"  U1EE08  # ARABIC MATHEMATICAL TAH
+<Multi_key> <percent> <a> <i> <y> : "𞸉"  U1EE09  # ARABIC MATHEMATICAL YEH
+<Multi_key> <percent> <a> <i> <i> : "𞸉"  U1EE09  # ARABIC MATHEMATICAL YEH
+<Multi_key> <percent> <a> <i> <k> : "𞸊"  U1EE0A  # ARABIC MATHEMATICAL KAF
+<Multi_key> <percent> <a> <i> <l> : "𞸋"  U1EE0B  # ARABIC MATHEMATICAL LAM
+<Multi_key> <percent> <a> <i> <m> : "𞸌"  U1EE0C  # ARABIC MATHEMATICAL MEEM
+<Multi_key> <percent> <a> <i> <n> : "𞸍"  U1EE0D  # ARABIC MATHEMATICAL NOON
+<Multi_key> <percent> <a> <i> <s> : "𞸎"  U1EE0E  # ARABIC MATHEMATICAL SEEN
+<Multi_key> <percent> <a> <i> <3> : "𞸏"  U1EE0F  # ARABIC MATHEMATICAL AIN
+<Multi_key> <percent> <a> <i> <grave> : "𞸏"  U1EE0F  # ARABIC MATHEMATICAL AIN
+<Multi_key> <percent> <a> <i> <f> : "𞸐"  U1EE10  # ARABIC MATHEMATICAL FEH
+<Multi_key> <percent> <A> <i> <s> : "𞸑"  U1EE11  # ARABIC MATHEMATICAL SAD
+<Multi_key> <percent> <a> <i> <q> : "𞸒"  U1EE12  # ARABIC MATHEMATICAL QAF
+<Multi_key> <percent> <a> <i> <r> : "𞸓"  U1EE13  # ARABIC MATHEMATICAL REH
+<Multi_key> <percent> <a> <i> <S> : "𞸔"  U1EE14  # ARABIC MATHEMATICAL SHEEN
+<Multi_key> <percent> <a> <i> <t> : "𞸕"  U1EE15  # ARABIC MATHEMATICAL TEH
+<Multi_key> <percent> <a> <i> <T> : "𞸖"  U1EE16  # ARABIC MATHEMATICAL THEH
+<Multi_key> <percent> <a> <i> <K> : "𞸗"  U1EE17  # ARABIC MATHEMATICAL KHAH
+<Multi_key> <percent> <a> <i> <D> : "𞸘"  U1EE18  # ARABIC MATHEMATICAL THAL
+<Multi_key> <percent> <A> <i> <d> : "𞸙"  U1EE19  # ARABIC MATHEMATICAL DAD
+<Multi_key> <percent> <A> <i> <z> : "𞸚"  U1EE1A  # ARABIC MATHEMATICAL ZAH
+<Multi_key> <percent> <a> <i> <G> : "𞸛"  U1EE1B  # ARABIC MATHEMATICAL GHAIN
+<Multi_key> <percent> <A> <i> <space> <b> : "𞸜"  U1EE1C  # ARABIC MATHEMATICAL DOTLESS BEH
+<Multi_key> <percent> <A> <i> <space> <n> : "𞸝"  U1EE1D  # ARABIC MATHEMATICAL DOTLESS NOON
+<Multi_key> <percent> <A> <i> <space> <f> : "𞸞"  U1EE1E  # ARABIC MATHEMATICAL DOTLESS FEH
+<Multi_key> <percent> <A> <i> <space> <q> : "𞸟"  U1EE1F  # ARABIC MATHEMATICAL DOTLESS QAF
+
+<Multi_key> <percent> <a> <greater> <b> : "𞸡"  U1EE21  # ARABIC MATHEMATICAL INITIAL BEH
+<Multi_key> <percent> <a> <greater> <j> : "𞸢"  U1EE22  # ARABIC MATHEMATICAL INITIAL JEEM
+<Multi_key> <percent> <a> <greater> <h> : "𞸤"  U1EE24  # ARABIC MATHEMATICAL INITIAL HEH
+<Multi_key> <percent> <a> <greater> <H> : "𞸧"  U1EE27  # ARABIC MATHEMATICAL INITIAL HAH
+<Multi_key> <percent> <A> <greater> <h> : "𞸧"  U1EE27  # ARABIC MATHEMATICAL INITIAL HAH
+<Multi_key> <percent> <a> <greater> <y> : "𞸩"  U1EE29  # ARABIC MATHEMATICAL INITIAL YEH
+<Multi_key> <percent> <a> <greater> <i> : "𞸩"  U1EE29  # ARABIC MATHEMATICAL INITIAL YEH
+<Multi_key> <percent> <a> <greater> <k> : "𞸪"  U1EE2A  # ARABIC MATHEMATICAL INITIAL KAF
+<Multi_key> <percent> <a> <greater> <l> : "𞸫"  U1EE2B  # ARABIC MATHEMATICAL INITIAL LAM
+<Multi_key> <percent> <a> <greater> <m> : "𞸬"  U1EE2C  # ARABIC MATHEMATICAL INITIAL MEEM
+<Multi_key> <percent> <a> <greater> <n> : "𞸭"  U1EE2D  # ARABIC MATHEMATICAL INITIAL NOON
+<Multi_key> <percent> <a> <greater> <s> : "𞸮"  U1EE2E  # ARABIC MATHEMATICAL INITIAL SEEN
+<Multi_key> <percent> <a> <greater> <3> : "𞸯"  U1EE2F  # ARABIC MATHEMATICAL INITIAL AIN
+<Multi_key> <percent> <a> <greater> <grave> : "𞸯"  U1EE2F  # ARABIC MATHEMATICAL INITIAL AIN
+<Multi_key> <percent> <a> <greater> <f> : "𞸰"  U1EE30  # ARABIC MATHEMATICAL INITIAL FEH
+<Multi_key> <percent> <A> <greater> <s> : "𞸱"  U1EE31  # ARABIC MATHEMATICAL INITIAL SAD
+<Multi_key> <percent> <a> <greater> <q> : "𞸲"  U1EE32  # ARABIC MATHEMATICAL INITIAL QAF
+<Multi_key> <percent> <a> <greater> <S> : "𞸴"  U1EE34  # ARABIC MATHEMATICAL INITIAL SHEEN
+<Multi_key> <percent> <a> <greater> <t> : "𞸵"  U1EE35  # ARABIC MATHEMATICAL INITIAL TEH
+<Multi_key> <percent> <a> <greater> <T> : "𞸶"  U1EE36  # ARABIC MATHEMATICAL INITIAL THEH
+<Multi_key> <percent> <a> <greater> <K> : "𞸷"  U1EE37  # ARABIC MATHEMATICAL INITIAL KHAH
+<Multi_key> <percent> <A> <greater> <d> : "𞸹"  U1EE39  # ARABIC MATHEMATICAL INITIAL DAD
+<Multi_key> <percent> <a> <greater> <G> : "𞸻"  U1EE3B  # ARABIC MATHEMATICAL INITIAL GHAIN
+
+<Multi_key> <percent> <a> <t> <j> : "𞹂"  U1EE42  # ARABIC MATHEMATICAL TAILED JEEM
+<Multi_key> <percent> <a> <t> <H> : "𞹇"  U1EE47  # ARABIC MATHEMATICAL TAILED HAH
+<Multi_key> <percent> <A> <t> <h> : "𞹇"  U1EE47  # ARABIC MATHEMATICAL TAILED HAH
+<Multi_key> <percent> <a> <t> <y> : "𞹉"  U1EE49  # ARABIC MATHEMATICAL TAILED YEH
+<Multi_key> <percent> <a> <t> <i> : "𞹉"  U1EE49  # ARABIC MATHEMATICAL TAILED YEH
+<Multi_key> <percent> <a> <t> <l> : "𞹋"  U1EE4B  # ARABIC MATHEMATICAL TAILED LAM
+<Multi_key> <percent> <a> <t> <n> : "𞹍"  U1EE4D  # ARABIC MATHEMATICAL TAILED NOON
+<Multi_key> <percent> <a> <t> <s> : "𞹎"  U1EE4E  # ARABIC MATHEMATICAL TAILED SEEN
+<Multi_key> <percent> <a> <t> <3> : "𞹏"  U1EE4F  # ARABIC MATHEMATICAL TAILED AIN
+<Multi_key> <percent> <a> <t> <grave> : "𞹏"  U1EE4F  # ARABIC MATHEMATICAL TAILED AIN
+<Multi_key> <percent> <A> <t> <s> : "𞹑"  U1EE51  # ARABIC MATHEMATICAL TAILED SAD
+<Multi_key> <percent> <a> <t> <q> : "𞹒"  U1EE52  # ARABIC MATHEMATICAL TAILED QAF
+<Multi_key> <percent> <a> <t> <S> : "𞹔"  U1EE54  # ARABIC MATHEMATICAL TAILED SHEEN
+<Multi_key> <percent> <a> <t> <K> : "𞹗"  U1EE57  # ARABIC MATHEMATICAL TAILED KHAH
+<Multi_key> <percent> <A> <t> <d> : "𞹙"  U1EE59  # ARABIC MATHEMATICAL TAILED DAD
+<Multi_key> <percent> <a> <t> <G> : "𞹛"  U1EE5B  # ARABIC MATHEMATICAL TAILED GHAIN
+<Multi_key> <percent> <A> <t> <space> <n> : "𞹝"  U1EE5D  # ARABIC MATHEMATICAL TAILED DOTLESS NOON
+<Multi_key> <percent> <A> <t> <space> <q> : "𞹟"  U1EE5F  # ARABIC MATHEMATICAL TAILED DOTLESS QAF
+
+<Multi_key> <percent> <a> <s> <b> : "𞹡"  U1EE61  # ARABIC MATHEMATICAL STRETCHED BEH
+<Multi_key> <percent> <a> <s> <j> : "𞹢"  U1EE62  # ARABIC MATHEMATICAL STRETCHED JEEM
+<Multi_key> <percent> <a> <s> <h> : "𞹤"  U1EE64  # ARABIC MATHEMATICAL STRETCHED HEH
+<Multi_key> <percent> <a> <s> <H> : "𞹧"  U1EE67  # ARABIC MATHEMATICAL STRETCHED HAH
+<Multi_key> <percent> <A> <s> <h> : "𞹧"  U1EE67  # ARABIC MATHEMATICAL STRETCHED HAH
+<Multi_key> <percent> <A> <s> <t> : "𞹨"  U1EE68  # ARABIC MATHEMATICAL STRETCHED TAH
+<Multi_key> <percent> <a> <s> <y> : "𞹩"  U1EE69  # ARABIC MATHEMATICAL STRETCHED YEH
+<Multi_key> <percent> <a> <s> <i> : "𞹩"  U1EE69  # ARABIC MATHEMATICAL STRETCHED YEH
+<Multi_key> <percent> <a> <s> <k> : "𞹪"  U1EE6A  # ARABIC MATHEMATICAL STRETCHED KAF
+<Multi_key> <percent> <a> <s> <m> : "𞹬"  U1EE6C  # ARABIC MATHEMATICAL STRETCHED MEEM
+<Multi_key> <percent> <a> <s> <n> : "𞹭"  U1EE6D  # ARABIC MATHEMATICAL STRETCHED NOON
+<Multi_key> <percent> <a> <s> <s> : "𞹮"  U1EE6E  # ARABIC MATHEMATICAL STRETCHED SEEN
+<Multi_key> <percent> <a> <s> <3> : "𞹯"  U1EE6F  # ARABIC MATHEMATICAL STRETCHED AIN
+<Multi_key> <percent> <a> <s> <grave> : "𞹯"  U1EE6F  # ARABIC MATHEMATICAL STRETCHED AIN
+<Multi_key> <percent> <a> <s> <f> : "𞹰"  U1EE70  # ARABIC MATHEMATICAL STRETCHED FEH
+<Multi_key> <percent> <A> <s> <s> : "𞹱"  U1EE71  # ARABIC MATHEMATICAL STRETCHED SAD
+<Multi_key> <percent> <a> <s> <q> : "𞹲"  U1EE72  # ARABIC MATHEMATICAL STRETCHED QAF
+<Multi_key> <percent> <a> <s> <S> : "𞹴"  U1EE74  # ARABIC MATHEMATICAL STRETCHED SHEEN
+<Multi_key> <percent> <a> <s> <t> : "𞹵"  U1EE75  # ARABIC MATHEMATICAL STRETCHED TEH
+<Multi_key> <percent> <a> <s> <T> : "𞹶"  U1EE76  # ARABIC MATHEMATICAL STRETCHED THEH
+<Multi_key> <percent> <a> <s> <K> : "𞹷"  U1EE77  # ARABIC MATHEMATICAL STRETCHED KHAH
+<Multi_key> <percent> <A> <s> <d> : "𞹹"  U1EE79  # ARABIC MATHEMATICAL STRETCHED DAD
+<Multi_key> <percent> <A> <s> <z> : "𞹺"  U1EE7A  # ARABIC MATHEMATICAL STRETCHED ZAH
+<Multi_key> <percent> <a> <s> <G> : "𞹻"  U1EE7B  # ARABIC MATHEMATICAL STRETCHED GHAIN
+<Multi_key> <percent> <A> <s> <space> <b> : "𞹼"  U1EE7C  # ARABIC MATHEMATICAL STRETCHED DOTLESS BEH
+<Multi_key> <percent> <A> <s> <space> <f> : "𞹾"  U1EE7E  # ARABIC MATHEMATICAL STRETCHED DOTLESS FEH
+
+<Multi_key> <percent> <a> <l> <a> : "𞺀"  U1EE80  # ARABIC MATHEMATICAL LOOPED ALEF
+<Multi_key> <percent> <a> <l> <b> : "𞺁"  U1EE81  # ARABIC MATHEMATICAL LOOPED BEH
+<Multi_key> <percent> <a> <l> <j> : "𞺂"  U1EE82  # ARABIC MATHEMATICAL LOOPED JEEM
+<Multi_key> <percent> <a> <l> <d> : "𞺃"  U1EE83  # ARABIC MATHEMATICAL LOOPED DAL
+<Multi_key> <percent> <a> <l> <h> : "𞺄"  U1EE84  # ARABIC MATHEMATICAL LOOPED HEH
+<Multi_key> <percent> <a> <l> <w> : "𞺅"  U1EE85  # ARABIC MATHEMATICAL LOOPED WAW
+<Multi_key> <percent> <a> <l> <u> : "𞺅"  U1EE85  # ARABIC MATHEMATICAL LOOPED WAW
+<Multi_key> <percent> <a> <l> <z> : "𞺆"  U1EE86  # ARABIC MATHEMATICAL LOOPED ZAIN
+<Multi_key> <percent> <a> <l> <H> : "𞺇"  U1EE87  # ARABIC MATHEMATICAL LOOPED HAH
+<Multi_key> <percent> <A> <l> <h> : "𞺇"  U1EE87  # ARABIC MATHEMATICAL LOOPED HAH
+<Multi_key> <percent> <A> <l> <t> : "𞺈"  U1EE88  # ARABIC MATHEMATICAL LOOPED TAH
+<Multi_key> <percent> <a> <l> <y> : "𞺉"  U1EE89  # ARABIC MATHEMATICAL LOOPED YEH
+<Multi_key> <percent> <a> <l> <i> : "𞺉"  U1EE89  # ARABIC MATHEMATICAL LOOPED YEH
+<Multi_key> <percent> <a> <l> <l> : "𞺋"  U1EE8B  # ARABIC MATHEMATICAL LOOPED LAM
+<Multi_key> <percent> <a> <l> <m> : "𞺌"  U1EE8C  # ARABIC MATHEMATICAL LOOPED MEEM
+<Multi_key> <percent> <a> <l> <n> : "𞺍"  U1EE8D  # ARABIC MATHEMATICAL LOOPED NOON
+<Multi_key> <percent> <a> <l> <s> : "𞺎"  U1EE8E  # ARABIC MATHEMATICAL LOOPED SEEN
+<Multi_key> <percent> <a> <l> <3> : "𞺏"  U1EE8F  # ARABIC MATHEMATICAL LOOPED AIN
+<Multi_key> <percent> <a> <l> <grave> : "𞺏"  U1EE8F  # ARABIC MATHEMATICAL LOOPED AIN
+<Multi_key> <percent> <a> <l> <f> : "𞺐"  U1EE90  # ARABIC MATHEMATICAL LOOPED FEH
+<Multi_key> <percent> <A> <l> <s> : "𞺑"  U1EE91  # ARABIC MATHEMATICAL LOOPED SAD
+<Multi_key> <percent> <a> <l> <q> : "𞺒"  U1EE92  # ARABIC MATHEMATICAL LOOPED QAF
+<Multi_key> <percent> <a> <l> <r> : "𞺓"  U1EE93  # ARABIC MATHEMATICAL LOOPED REH
+<Multi_key> <percent> <a> <l> <S> : "𞺔"  U1EE94  # ARABIC MATHEMATICAL LOOPED SHEEN
+<Multi_key> <percent> <a> <l> <t> : "𞺕"  U1EE95  # ARABIC MATHEMATICAL LOOPED TEH
+<Multi_key> <percent> <a> <l> <T> : "𞺖"  U1EE96  # ARABIC MATHEMATICAL LOOPED THEH
+<Multi_key> <percent> <a> <l> <K> : "𞺗"  U1EE97  # ARABIC MATHEMATICAL LOOPED KHAH
+<Multi_key> <percent> <a> <l> <D> : "𞺘"  U1EE98  # ARABIC MATHEMATICAL LOOPED THAL
+<Multi_key> <percent> <A> <l> <d> : "𞺙"  U1EE99  # ARABIC MATHEMATICAL LOOPED DAD
+<Multi_key> <percent> <A> <l> <z> : "𞺚"  U1EE9A  # ARABIC MATHEMATICAL LOOPED ZAH
+<Multi_key> <percent> <a> <l> <G> : "𞺛"  U1EE9B  # ARABIC MATHEMATICAL LOOPED GHAIN
+
+<Multi_key> <percent> <a> <d> <b> : "𞺡"  U1EEA1  # ARABIC MATHEMATICAL DOUBLE-STRUCK BEH
+<Multi_key> <percent> <a> <d> <j> : "𞺢"  U1EEA2  # ARABIC MATHEMATICAL DOUBLE-STRUCK JEEM
+<Multi_key> <percent> <a> <d> <d> : "𞺣"  U1EEA3  # ARABIC MATHEMATICAL DOUBLE-STRUCK DAL
+<Multi_key> <percent> <a> <d> <w> : "𞺥"  U1EEA5  # ARABIC MATHEMATICAL DOUBLE-STRUCK WAW
+<Multi_key> <percent> <a> <d> <u> : "𞺥"  U1EEA5  # ARABIC MATHEMATICAL DOUBLE-STRUCK WAW
+<Multi_key> <percent> <a> <d> <z> : "𞺦"  U1EEA6  # ARABIC MATHEMATICAL DOUBLE-STRUCK ZAIN
+<Multi_key> <percent> <a> <d> <H> : "𞺧"  U1EEA7  # ARABIC MATHEMATICAL DOUBLE-STRUCK HAH
+<Multi_key> <percent> <A> <d> <h> : "𞺧"  U1EEA7  # ARABIC MATHEMATICAL DOUBLE-STRUCK HAH
+<Multi_key> <percent> <A> <d> <t> : "𞺨"  U1EEA8  # ARABIC MATHEMATICAL DOUBLE-STRUCK TAH
+<Multi_key> <percent> <a> <d> <y> : "𞺩"  U1EEA9  # ARABIC MATHEMATICAL DOUBLE-STRUCK YEH
+<Multi_key> <percent> <a> <d> <i> : "𞺩"  U1EEA9  # ARABIC MATHEMATICAL DOUBLE-STRUCK YEH
+<Multi_key> <percent> <a> <d> <l> : "𞺫"  U1EEAB  # ARABIC MATHEMATICAL DOUBLE-STRUCK LAM
+<Multi_key> <percent> <a> <d> <m> : "𞺬"  U1EEAC  # ARABIC MATHEMATICAL DOUBLE-STRUCK MEEM
+<Multi_key> <percent> <a> <d> <n> : "𞺭"  U1EEAD  # ARABIC MATHEMATICAL DOUBLE-STRUCK NOON
+<Multi_key> <percent> <a> <d> <s> : "𞺮"  U1EEAE  # ARABIC MATHEMATICAL DOUBLE-STRUCK SEEN
+<Multi_key> <percent> <a> <d> <3> : "𞺯"  U1EEAF  # ARABIC MATHEMATICAL DOUBLE-STRUCK AIN
+<Multi_key> <percent> <a> <d> <grave> : "𞺯"  U1EEAF  # ARABIC MATHEMATICAL DOUBLE-STRUCK AIN
+<Multi_key> <percent> <a> <d> <f> : "𞺰"  U1EEB0  # ARABIC MATHEMATICAL DOUBLE-STRUCK FEH
+<Multi_key> <percent> <A> <d> <s> : "𞺱"  U1EEB1  # ARABIC MATHEMATICAL DOUBLE-STRUCK SAD
+<Multi_key> <percent> <a> <d> <q> : "𞺲"  U1EEB2  # ARABIC MATHEMATICAL DOUBLE-STRUCK QAF
+<Multi_key> <percent> <a> <d> <r> : "𞺳"  U1EEB3  # ARABIC MATHEMATICAL DOUBLE-STRUCK REH
+<Multi_key> <percent> <a> <d> <S> : "𞺴"  U1EEB4  # ARABIC MATHEMATICAL DOUBLE-STRUCK SHEEN
+<Multi_key> <percent> <a> <d> <t> : "𞺵"  U1EEB5  # ARABIC MATHEMATICAL DOUBLE-STRUCK TEH
+<Multi_key> <percent> <a> <d> <T> : "𞺶"  U1EEB6  # ARABIC MATHEMATICAL DOUBLE-STRUCK THEH
+<Multi_key> <percent> <a> <d> <K> : "𞺷"  U1EEB7  # ARABIC MATHEMATICAL DOUBLE-STRUCK KHAH
+<Multi_key> <percent> <a> <d> <D> : "𞺸"  U1EEB8  # ARABIC MATHEMATICAL DOUBLE-STRUCK THAL
+<Multi_key> <percent> <A> <d> <d> : "𞺹"  U1EEB9  # ARABIC MATHEMATICAL DOUBLE-STRUCK DAD
+<Multi_key> <percent> <A> <d> <z> : "𞺺"  U1EEBA  # ARABIC MATHEMATICAL DOUBLE-STRUCK ZAH
+<Multi_key> <percent> <a> <d> <G> : "𞺻"  U1EEBB  # ARABIC MATHEMATICAL DOUBLE-STRUCK GHAIN
 
 ################
 # (A) Armenian #
