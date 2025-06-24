@@ -16008,6 +16008,10 @@ include "%L"
 <Multi_key> <0> <slash>               : "∅"  U2205   # EMPTY SET (alternatively {})
 <Multi_key> <0> <backslash>           : "⦰"  U29B0  # REVERSED EMPTY SET
 <Multi_key> <less> <braceleft> <braceright> : "⦰"  U29B0  # REVERSED EMPTY SET
+<Multi_key> <minus> <Multi_key> <braceleft> <braceright>   : "⦱"  U29B1  # EMPTY SET WITH OVERBAR
+<Multi_key> <o> <Multi_key> <braceleft> <braceright>       : "⦲"  U29B2  # EMPTY SET WITH SMALL CIRCLE ABOVE
+<Multi_key> <greater> <Multi_key> <braceleft> <braceright> : "⦳"  U29B3  # EMPTY SET WITH RIGHT ARROW ABOVE
+<Multi_key> <less> <Multi_key> <braceleft> <braceright>    : "⦴"  U29B4  # EMPTY SET WITH LEFT ARROW ABOVE
 <Multi_key> <backslash> <bar>         : "∥"  U2225   # PARALLEL TO
 <Multi_key> <slash> <bar> <bar>       : "∦"  U2226   # NOT PARALLEL TO
 <Multi_key> <bar> <T>                 : "⊤"  U22A4   # DOWN TACK (TEE)
@@ -16072,6 +16076,7 @@ include "%L"
 <Multi_key> <backslash> <less>        : "⩽"  U2A7D   # LESS-THAN OR SLANTED EQUAL TO
 <Multi_key> <slash> <less>            : "⪕"  U2A95   # SLANTED EQUAL TO OR LESS-THAN (conflicts with useless \)
 <Multi_key> <backslash> <greater>     : "⪖"  U2A96   # SLANTED EQUAL TO OR GREATER-THAN
+<Multi_key> <greater> <less> <space>  : "⪥"  U2AA5  # GREATER-THAN BESIDE LESS-THAN (conflicts with ⋄, use diamond)
 
 <Multi_key> <equal> <Multi_key> <period>             : "≐"  U2250   # APPROACHES THE LIMIT
 <Multi_key> <equal> <Multi_key> <colon>              : "≑"  U2251   # GEOMETRICALLY EQUAL TO
@@ -16086,10 +16091,12 @@ include "%L"
 
 <Multi_key> <slash> <Multi_key> <equal> <underscore> : "≢"  U2262   # NOT IDENTICAL TO
 <Multi_key> <less> <Multi_key> <slash> <equal>       : "≨"  U2268   # LESS-THAN BUT NOT EQUAL TO
-<Multi_key> <less> <Multi_key> <slash> <asciitilde>  : "⋦"  U22E6   # LESS-THAN BUT NOT EQUIVALENT TO
+<Multi_key> <less> <Multi_key> <slash> <asciitilde> <space> : "⋦"  U22E6   # LESS-THAN BUT NOT EQUIVALENT TO
+<Multi_key> <less> <Multi_key> <slash> <asciitilde> <asciitilde> : "⪉"  U2A89  # LESS-THAN AND NOT APPROXIMATE
 <Multi_key> <less> <Multi_key> <slash> <minus>       : "⪇"  U2A87  # LESS-THAN AND SINGLE-LINE NOT EQUAL TO
 <Multi_key> <greater> <Multi_key> <slash> <equal>    : "≩"  U2269   # GREATER-THAN BUT NOT EQUAL TO
-<Multi_key> <greater> <Multi_key> <slash> <asciitilde> : "⋧"  U22E7   # GREATER-THAN BUT NOT EQUIVALENT TO
+<Multi_key> <greater> <Multi_key> <slash> <asciitilde> <space> : "⋧"  U22E7   # GREATER-THAN BUT NOT EQUIVALENT TO
+<Multi_key> <greater> <Multi_key> <slash> <asciitilde> <asciitilde> : "⪊"  U2A8A  # GREATER-THAN AND NOT APPROXIMATE
 <Multi_key> <greater> <Multi_key> <slash> <minus>    : "⪈"  U2A88  # GREATER-THAN AND SINGLE-LINE NOT EQUAL TO
 <Multi_key> <slash> <Multi_key> <less> <equal>       : "≰"  U2270   # NEITHER LESS-THAN NOR EQUAL TO
 <Multi_key> <slash> <Multi_key> <greater> <equal>    : "≱"  U2271   # NEITHER GREATER-THAN NOR EQUAL TO
@@ -16137,6 +16144,7 @@ include "%L"
 <Multi_key> <parenleft> <minus> <parenright>         : "⊖"  U2296   # CIRCLED MINUS (conflicts with useless {)
 <Multi_key> <parenleft> <asterisk> <parenright>      : "⊗"  U2297   # CIRCLED TIMES
 <Multi_key> <parenleft> <slash> <parenright>         : "⊘"  U2298   # CIRCLED DIVISION SLASH
+<Multi_key> <parenleft> <period> <parenright>        : "⊙"  U2299  # CIRCLED DOT OPERATOR
 <Multi_key> <parenleft> <backslash> <parenright>     : "⦸"  U29B8   # CIRCLED REVERSE SOLIDUS
 <Multi_key> <parenleft> <less> <parenright>          : "⧀"  U29C0   # CIRCLED LESS-THAN
 <Multi_key> <parenleft> <greater> <parenright>       : "⧁"  U29C1   # CIRCLED GREATER-THAN
@@ -16199,6 +16207,8 @@ include "%L"
 <Multi_key> <C> <U> <P>                 : "⋃"  U22C3   # N-ARY UNION
 <Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN (overrides di)
 <Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter) (use gem for 💎)
+<Multi_key> <d> <i> <j> <k>             : "⫾"  U2AFE  # WHITE VERTICAL BAR (conflicts with ⌀, use diameter) (DIJKSTRA'S CHOICE)
+<Multi_key> <D> <I> <J> <K>             : "⫿"  U2AFF  # N-ARY WHITE VERTICAL BAR (DIJKSTRA'S CHOICE)
 <Multi_key> <e> <x> <i> <s> <t> <s>     : "∃"  U2203   # THERE EXISTS
 <Multi_key> <f> <o> <r> <a> <l> <l>     : "∀"  U2200   # FOR ALL
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
@@ -16231,14 +16241,22 @@ include "%L"
 <Multi_key> <n> <s> <u> <c> <c> <e> <q> : "⋡"  U22E1   # DOES NOT SUCCEED OR EQUAL
 <Multi_key> <n> <s> <u> <p> <space>     : "⊅"  U2285   # NOT A SUPERSET OF
 <Multi_key> <n> <s> <u> <p> <e> <q>     : "⊉"  U2289   # NEITHER A SUPERSET OF NOR EQUAL TO
+<Multi_key> <o> <d> <o> <t>             : "⊙"  U2299  # CIRCLED DOT OPERATOR (alternatively (.))
+<Multi_key> <O> <D> <O> <T>             : "⨀"  U2A00   # N-ARY CIRCLED DOT OPERATOR
 <Multi_key> <o> <i> <i> <i> <n> <t>     : "∰"  U2230   # VOLUME INTEGRAL
 <Multi_key> <o> <i> <i> <n> <t>         : "∯"  U222F   # SURFACE INTEGRAL
 <Multi_key> <o> <i> <n> <t>             : "∮"  U222E   # CONTOUR INTEGRAL
+<Multi_key> <o> <m> <i> <n> <u> <s>     : "⊖"  U2296  # CIRCLED MINUS (alternatively (-))
+<Multi_key> <o> <p> <l> <u> <s>         : "⊕"  U2295  # CIRCLED PLUS (alternatively (+))
+<Multi_key> <O> <P> <L> <U> <S>         : "⨁"  U2A01  # N-ARY CIRCLED PLUS OPERATOR
+<Multi_key> <o> <t> <i> <m> <e> <s>     : "⊗"  U2297  # CIRCLED TIMES
+<Multi_key> <O> <T> <I> <M> <E> <S>     : "⨂"  U2A02  # N-ARY CIRCLED TIMES OPERATOR
 <Multi_key> <p> <r> <e> <c> <space>     : "≺"  U227A   # PRECEDES
 <Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
 <Multi_key> <p> <r> <e> <c> <s> <i> <m> : "≾"  U227E   # PRECEDES OR EQUIVALENT TO
 <Multi_key> <p> <r> <o> <d>             : "∏"  U220F   # N-ARY PRODUCT
 <Multi_key> <p> <r> <o> <p>             : "∝"  U221D   # PROPORTIONAL TO
+<Multi_key> <Q> <E> <D>                 : "∎"  U220E   # END OF PROOF
 <Multi_key> <r> <a> <n> <g> <l> <e>     : "∟"  U221F   # RIGHT ANGLE
 <Multi_key> <s> <i> <n> <e>             : "∿"  U223F   # SINE WAVE
 <Multi_key> <s> <i> <n> <t>             : "⨋"  U2A0B   # SUMMATION WITH INTEGRAL
@@ -16277,9 +16295,12 @@ include "%L"
 <Multi_key> <s> <u> <p> <period>        : "⪾"  U2ABE   # SUPERSET WITH DOT
 <Multi_key> <s> <u> <p> <plus>          : "⫀"  U2AC0   # SUPERSET WITH PLUS SIGN BELOW
 <Multi_key> <s> <u> <p> <asterisk>      : "⫂"  U2AC2   # SUPERSET WITH MULTIPLICATION SIGN BELOW
+<Multi_key> <t> <i> <m> <e> <s>         : "×"  U00D7   # MULTIPLICATION SIGN (alternatively xx)
+<Multi_key> <T> <I> <M> <E> <S>         : "⨉"  U2A09   # N-ARY TIMES OPERATOR
+<Multi_key> <U> <D> <O> <T>             : "⨃"  U2A03  # N-ARY UNION OPERATOR WITH DOT
+<Multi_key> <U> <P> <L> <U> <S>         : "⨄"  U2A04  # N-ARY UNION OPERATOR WITH PLUS
 <Multi_key> <w> <r> <e> <a> <t> <h>     : "≀"   U2240   # WREATH PRODUCT
 <Multi_key> <x> <o> <r>                 : "⊻"  U22BB   # XOR (conflicts with ¤, use ox)
-<Multi_key> <Q> <E> <D>                 : "∎"  U220E   # END OF PROOF
 
 # Logic symbols (start with &)
 
@@ -16322,8 +16343,12 @@ include "%L"
 <Multi_key> <ampersand> <bar> <slash> <equal>        : "⊭"  U22AD   # NOT TRUE (DOES NOT MODEL)
 <Multi_key> <ampersand> <bar> <bar> <slash> <minus>  : "⊮"  U22AE   # DOES NOT FORCES
 <Multi_key> <ampersand> <bar> <bar> <slash> <equal>  : "⊯"  U22AF   # NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
-<Multi_key> <ampersand> <equal> <bar> <bar> <equal>  : "⟚" U27DA   # LEFT AND RIGHT DOUBLE TURNSTILE
-<Multi_key> <ampersand> <minus> <bar> <bar> <minus>  : "⟛" U27DB   # LEFT AND RIGHT TACK
+<Multi_key> <ampersand> <equal> <bar> <equal>        : "⟚" U27DA   # LEFT AND RIGHT DOUBLE TURNSTILE
+<Multi_key> <ampersand> <minus> <bar> <minus>        : "⟛" U27DB   # LEFT AND RIGHT TACK
+<Multi_key> <ampersand> <bar> <3> <equal>            : "⫢"  U2AE2   # VERTICAL BAR TRIPLE RIGHT TURNSTILE
+<Multi_key> <ampersand> <minus> <bar> <bar>          : "⫣"  U2AE3   # DOUBLE VERTICAL BAR LEFT TURNSTILE
+<Multi_key> <ampersand> <equal> <equal> <bar>        : "⫤"  U2AE4   # VERTICAL BAR DOUBLE LEFT TURNSTILE
+<Multi_key> <ampersand> <equal> <bar> <bar>          : "⫥"  U2AE5   # DOUBLE VERTICAL BAR DOUBLE LEFT TURNSTILE
 
 #########
 # Emoji #
@@ -18514,6 +18539,8 @@ include "%L"
 <Multi_key> <bracketleft> <bracketright> <slash>       : "⧄" U29C4    # SQUARED RISING DIAGONAL SLASH (conflicts)
 <Multi_key> <bracketleft> <bracketright> <backslash>   : "⧅" U29C5    # SQUARED FALLING DIAGONAL SLASH (conflicts)
 <Multi_key> <bracketleft> <bracketright> <plus>        : "⊞" U229E    # SQUARED PLUS (conflicts)
+<Multi_key> <bracketleft> <bracketright> <minus>       : "⊟" U229F    # SQUARED MINUS (conflicts)
+<Multi_key> <bracketleft> <bracketright> <period>      : "⊡" U22A1    # SQUARED DOT OPERATOR (conflicts)
 <Multi_key> <bracketleft> <bracketright> <X>           : "⊠" U22A0    # SQUARED TIMES (conflicts)
 <Multi_key> <bracketleft> <bracketright> <o>           : "⧇" U29C7    # SQUARED SMALL CIRCLE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
@@ -18563,6 +18590,7 @@ include "%L"
 <Multi_key> <parenleft> <parenright> <X>           : "⊗" U2297   # CIRCLED TIMES (alternatively (*))
 <Multi_key> <parenleft> <parenright> <slash>       : "⊘" U2298   # CIRCLED DIVISION SLASH (alternatively (/))
 <Multi_key> <parenleft> <parenright> <colon> <minus> : "⨸"  U2A38   # CIRCLED DIVISION SIGN (alternativey (-:))
+<Multi_key> <parenleft> <parenright> <bar>         : "⦶"  U29B6  # CIRCLED VERTICAL BAR
 <Multi_key> <parenleft> <parenright> <bracketleft> <bracketright> : "🟗" U1F7D7   # CIRCLED SQUARE (alternatively ([]))
 <Multi_key> <parenleft> <parenright> <Multi_key> <asciicircum> <period> : "⊙" U2299    # CIRCLED DOT OPERATOR
 <Multi_key> <parenleft> <parenright> <Multi_key> <period> <minus> : "⊙" U2299    # CIRCLED DOT OPERATOR
