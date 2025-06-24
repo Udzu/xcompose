@@ -1245,7 +1245,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <comma>   : "⸴"  U2E34    # RAISED COMMA
 <Multi_key> <asciicircum> <underscore> <period>  : "⸳"  U2E33    # RAISED DOT
 
-# subscripts: _x (or _x_ if there's a clash with a combining character)
+# subscripts: _x (or _x␣ if there's a clash with a combining character)
 
 <Multi_key> <underscore> <a>              : "ₐ"  U2090   # LATIN SUBSCRIPT SMALL LETTER A (conflicts with ā, use -a)
 <Multi_key> <underscore> <e>              : "ₑ"  U2091   # LATIN SUBSCRIPT SMALL LETTER E (conflicts with ē, use -e)
@@ -1256,18 +1256,18 @@ include "%L"
 <Multi_key> <underscore> <l>              : "ₗ"  U2097   # LATIN SUBSCRIPT SMALL LETTER L
 <Multi_key> <underscore> <m>              : "ₘ"  U2098   # LATIN SUBSCRIPT SMALL LETTER M
 <Multi_key> <underscore> <n>              : "ₙ"  U2099   # LATIN SUBSCRIPT SMALL LETTER N
-<Multi_key> <underscore> <o> <underscore> : "ₒ"  U2092   # LATIN SUBSCRIPT SMALL LETTER O (conflicts with ō, use -o)
+<Multi_key> <underscore> <o> <space>      : "ₒ"  U2092   # LATIN SUBSCRIPT SMALL LETTER O (conflicts with ō, use -o)
 <Multi_key> <underscore> <p>              : "ₚ"  U209A   # LATIN SUBSCRIPT SMALL LETTER P
 <Multi_key> <underscore> <r>              : "ᵣ"  U1D63   # LATIN SUBSCRIPT SMALL LETTER R
 <Multi_key> <underscore> <s>              : "ₛ"  U209B   # LATIN SUBSCRIPT SMALL LETTER S
 <Multi_key> <underscore> <t>              : "ₜ"  U209C   # LATIN SUBSCRIPT SMALL LETTER T
-<Multi_key> <underscore> <u> <underscore> : "ᵤ"  U1D64   # LATIN SUBSCRIPT SMALL LETTER U (conflicts with ū, use -u)
-<Multi_key> <underscore> <v> <underscore> : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
+<Multi_key> <underscore> <u> <space>      : "ᵤ"  U1D64   # LATIN SUBSCRIPT SMALL LETTER U (conflicts with ū, use -u)
+<Multi_key> <underscore> <v> <space>      : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
 <Multi_key> <underscore> <x>              : "ₓ"  U2093   # LATIN SUBSCRIPT SMALL LETTER X
 
 <Multi_key> <underscore> <Multi_key> <e> <e> : "ₔ"  U2094   # LATIN SUBSCRIPT SMALL LETTER SCHWA
 
-<Multi_key> <underscore> <asterisk> <underscore> : "⁎"  U204E  # LOW ASTERISK
+<Multi_key> <underscore> <asterisk> <space> : "⁎"  U204E  # LOW ASTERISK
 
 # small capitals: _^x
 
@@ -1315,7 +1315,7 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <less> <N> : "ᴎ"  U1D0E  # LATIN LETTER SMALL CAPITAL REVERSED N (conflicts)
 <Multi_key> <underscore> <asciicircum> <less> <R> : "ᴙ"  U1D19  # LATIN LETTER SMALL CAPITAL REVERSED R (conflicts)
 
-# combining letters above: ^^x
+# combining letters above: ^^x[Return]
 
 <Multi_key> <asciicircum> <asciicircum> <a> <Return> : "ͣ" U0363   # COMBINING LATIN SMALL LETTER A
 <Multi_key> <asciicircum> <asciicircum> <b> <Return> : "ᷨ" U1DE8   # COMBINING LATIN SMALL LETTER B
@@ -1360,7 +1360,7 @@ include "%L"
 <Multi_key> <asciicircum> <asciicircum> <s> <h> <Return> : "ᷯ" U1DEF   # COMBINING LATIN SMALL LETTER ESH
 <Multi_key> <asciicircum> <asciicircum> <u> <quotedbl> <Return> : "ᷴ" U1DF4   # COMBINING LATIN SMALL LETTER U WITH DIAERESIS
 
-# combining letters below: __x
+# combining letters below: __x[Return]
 
 <Multi_key> <underscore> <underscore> <r> <Return> : "᷊" U1DCA   # COMBINING LATIN SMALL LETTER R BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <w> <Return> : "ᪿ" U1ABF   # COMBINING LATIN SMALL LETTER W BELOW (conflicts with ¯, use -^)
@@ -2126,7 +2126,7 @@ include "%L"
 
 # Convention: prefix + ( + character(s) + )
 
-# (normal circled alphanumerics are defined in the system config with no prefix)
+# (normal circled alphanumerics are defined as in the system config, with no prefix)
 
 <Multi_key> <parenleft> <C> <D> <parenright> : "🄭" U1F12D   # CIRCLED CD
 <Multi_key> <parenleft> <W> <z> <parenright> : "🄮" U1F12E   # CIRCLED WZ
@@ -2404,7 +2404,7 @@ include "%L"
 # Multigraphs and ligatures #
 #############################
 
-# Includes both real multigraphs and lookalikes
+# Includes both real multigraphs and vague lookalikes
 
 # Convention: { + letters + }
 
@@ -16054,6 +16054,8 @@ include "%L"
 <Multi_key> <equal> <plus>            : "⩱"  U2A71   # EQUALS SIGN ABOVE PLUS SIGN
 <Multi_key> <equal> <Multi_key> <8> <8> : "⯹"  U2BF9  # EQUALS SIGN WITH INFINITY BELOW
 <Multi_key> <asciicircum> <asciitilde> <asciitilde> <space> : "⩯"  U2A6F  # ALMOST EQUAL TO WITH CIRCUMFLEX ACCENT
+<Multi_key> <2> <equal>               : "⩵"  U2A75   # TWO CONSECUTIVE EQUALS SIGNS
+<Multi_key> <3> <equal>               : "⩶"  U2A76   # THREE CONSECUTIVE EQUALS SIGNS
 <Multi_key> <2> <less>                : "≪"  U226A   # MUCH LESS-THAN
 <Multi_key> <3> <less>                : "⋘"  U22D8   # VERY MUCH LESS-THAN
 <Multi_key> <2> <greater>             : "≫"  U226B   # MUCH GREATER-THAN
@@ -16115,6 +16117,8 @@ include "%L"
 <Multi_key> <Multi_key> <asciitilde> <minus> <asciitilde> : "⩬"  U2A6C  # SIMILAR MINUS SIMILAR
 <Multi_key> <Multi_key> <asciitilde> <asciitilde> <equal> : "⩰"  U2A70  # APPROXIMATELY EQUAL OR EQUAL TO
 <Multi_key> <Multi_key> <equal> <asciitilde>         : "⩳"  U2A73  # EQUALS SIGN ABOVE TILDE OPERATOR
+<Multi_key> <Multi_key> <minus> <less>               : "⋜"  U22DC  # EQUAL TO OR LESS-THAN
+<Multi_key> <Multi_key> <minus> <greater>            : "⋝"  U22DD  # EQUAL TO OR GREATER-THAN
 <Multi_key> <Multi_key> <less> <greater> <space>     : "≶"  U2276  # LESS-THAN OR GREATER-THAN
 <Multi_key> <Multi_key> <greater> <less> <space>     : "≷"  U2277  # GREATER-THAN OR LESS-THAN
 <Multi_key> <Multi_key> <less> <minus> <greater>     : "⋚"  U22DA  # LESS-THAN EQUAL TO OR GREATER-THAN
@@ -16139,6 +16143,8 @@ include "%L"
 <Multi_key> <Multi_key> <asciitilde> <greater> <space> : "⪞"  U2A9E  # SIMILAR OR GREATER-THAN
 <Multi_key> <Multi_key> <asciitilde> <less> <equal>  : "⪟"  U2A9F  # SIMILAR ABOVE LESS-THAN ABOVE EQUALS SIGN
 <Multi_key> <Multi_key> <asciitilde> <greater> <equal> : "⪠"  U2AA0  # SIMILAR ABOVE GREATER-THAN ABOVE EQUALS SIGN
+<Multi_key> <Multi_key> <less> <backslash> <backslash> : "⫹"  U2AF9  # DOUBLE-LINE SLANTED LESS-THAN OR EQUAL TO
+<Multi_key> <Multi_key> <greater> <slash> <slash>    : "⫺"  U2AFA  # DOUBLE-LINE SLANTED GREATER-THAN OR EQUAL TO
 
 <Multi_key> <parenleft> <plus> <parenright>          : "⊕"  U2295   # CIRCLED PLUS
 <Multi_key> <parenleft> <minus> <parenright>         : "⊖"  U2296   # CIRCLED MINUS (conflicts with useless {)
@@ -16304,9 +16310,9 @@ include "%L"
 
 # Logic symbols (start with &)
 
-<Multi_key> <ampersand> <asciitilde>  : "¬"  U00AC   # NOT SIGN
-<Multi_key> <ampersand> <asciicircum> : "∧"  U2227   # LOGICAL AND
-<Multi_key> <ampersand> <v>           : "∨"  U2228   # LOGICAL OR
+<Multi_key> <ampersand> <asciitilde>  : "¬"  U00AC   # NOT SIGN (alternatively -,)
+<Multi_key> <ampersand> <asciicircum> : "∧"  U2227   # LOGICAL AND (alternatively /\)
+<Multi_key> <ampersand> <V>           : "∨"  U2228   # LOGICAL OR (alternatively \/)
 <Multi_key> <ampersand> <T>           : "⊤"  U22A4   # DOWN TACK (TEE)
 <Multi_key> <ampersand> <F>           : "⊥"  U22A5   # UP TACK
 <Multi_key> <ampersand> <A>           : "∀"  U2200   # FOR ALL
@@ -16345,10 +16351,25 @@ include "%L"
 <Multi_key> <ampersand> <bar> <bar> <slash> <equal>  : "⊯"  U22AF   # NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
 <Multi_key> <ampersand> <equal> <bar> <equal>        : "⟚" U27DA   # LEFT AND RIGHT DOUBLE TURNSTILE
 <Multi_key> <ampersand> <minus> <bar> <minus>        : "⟛" U27DB   # LEFT AND RIGHT TACK
+<Multi_key> <ampersand> <space> <minus> <bar>        : "⫞"  U2ADE   # SHORT LEFT TACK
 <Multi_key> <ampersand> <bar> <3> <equal>            : "⫢"  U2AE2   # VERTICAL BAR TRIPLE RIGHT TURNSTILE
 <Multi_key> <ampersand> <minus> <bar> <bar>          : "⫣"  U2AE3   # DOUBLE VERTICAL BAR LEFT TURNSTILE
 <Multi_key> <ampersand> <equal> <equal> <bar>        : "⫤"  U2AE4   # VERTICAL BAR DOUBLE LEFT TURNSTILE
 <Multi_key> <ampersand> <equal> <bar> <bar>          : "⫥"  U2AE5   # DOUBLE VERTICAL BAR DOUBLE LEFT TURNSTILE
+
+<Multi_key> <ampersand> <v> <bar> <minus> <minus> : "⊤"  U22A4  # DOWN TACK
+<Multi_key> <ampersand> <v> <minus> <minus> <bar> : "⊥"  U22A5  # UP TACK
+<Multi_key> <ampersand> <v> <minus> <bar> <bar> : "⍊"  U234A  # APL FUNCTIONAL SYMBOL DOWN TACK UNDERBAR
+<Multi_key> <ampersand> <v> <bar> <bar> <minus> : "⍑"  U2351  # APL FUNCTIONAL SYMBOL UP TACK OVERBAR
+<Multi_key> <ampersand> <v> <minus> <o> <bar> : "⍎"  U234E  # APL FUNCTIONAL SYMBOL DOWN TACK JOT
+<Multi_key> <ampersand> <v> <bar> <o> <minus> : "⍕"  U2355  # APL FUNCTIONAL SYMBOL UP TACK JOT
+<Multi_key> <ampersand> <v> <o> <minus> <bar> : "⟟"  U27DF  # UP TACK WITH CIRCLE ABOVE
+<Multi_key> <ampersand> <v> <bar> <minus> <o> : "⫱"  U2AF1  # DOWN TACK WITH CIRCLE BELOW
+<Multi_key> <ampersand> <v> <bar> <minus> <space> : "⫟"  U2ADF  # SHORT DOWN TACK
+<Multi_key> <ampersand> <v> <space> <minus> <bar> : "⫠"  U2AE0  # SHORT UP TACK
+<Multi_key> <ampersand> <v> <minus> <bar> <minus> : "⫩"  U2AE9  # SHORT UP TACK ABOVE SHORT DOWN TACK
+<Multi_key> <ampersand> <v> <bar> <equal> <equal> : "⫪"  U2AEA  # DOUBLE DOWN TACK
+<Multi_key> <ampersand> <v> <equal> <equal> <bar> : "⫫"  U2AEB  # DOUBLE UP TACK
 
 #########
 # Emoji #
@@ -18475,7 +18496,7 @@ include "%L"
 <Multi_key> <braceright> <c> <y> <c> <l> <o> <p> : "𖨆"  U16A06  # BAMUM LETTER PHASE-F EE (CYCLOPS)
 <Multi_key> <braceright> <f> <a> <n> : "𖣘"  U168D8  # BAMUM LETTER PHASE-C MA NSIEE (FAN)
 <Multi_key> <braceright> <g> <e> <c> <k> <o> : "𖠊"  U1680A  # BAMUM LETTER PHASE-A PON PA NJI PIPAEMBA (GECKO)
-<Multi_key> <braceright> <h> <o> <o> <d> <i> <e> : "𖠦"  U16826  # BAMUM LETTER PHASE-A MOOMPUQ
+<Multi_key> <braceright> <h> <o> <o> <d> <i> <e> : "𖠦"  U16826  # BAMUM LETTER PHASE-A MOOMPUQ (HOODIE)
 <Multi_key> <braceright> <j> <e> <w> <i> <s> <h> : "𖢹"  U168B9  # BAMUM LETTER PHASE-C NTEUNGBA (JEWISH)
 <Multi_key> <braceright> <m> <a> <n> : "𖠋"  U1680B  # BAMUM LETTER PHASE-A MAEMBGBIEE (PANTS)
 <Multi_key> <braceright> <M> <a> <n> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (ISLE OF MAN)
