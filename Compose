@@ -893,6 +893,8 @@ include "%L"
 <Multi_key> <minus> <k>             : "ꝁ"  UA741  # LATIN SMALL LETTER K WITH STROKE
 <Multi_key> <minus> <L>             : "Ƚ"  U023D  # LATIN CAPITAL LETTER L WITH BAR (conflicts with £, use L-)
 <Multi_key> <minus> <l>             : "ƚ"  U019A  # LATIN SMALL LETTER L WITH BAR (conflicts with £, use l-)
+<Multi_key> <minus> <minus> <L>     : "Ꝉ"  UA748  # LATIN CAPITAL LETTER L WITH HIGH STROKE
+<Multi_key> <minus> <minus> <l>     : "ꝉ"  UA749  # LATIN SMALL LETTER L WITH HIGH STROKE
 <Multi_key> <minus> <p>             : "ꝑ"  UA751  # LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <P>             : "Ꝑ"  UA750  # LATIN CAPITAL LETTER P WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <minus> <P>     : "Ᵽ"  U2C63  # LATIN CAPITAL LETTER P WITH STROKE
@@ -908,6 +910,7 @@ include "%L"
 <Multi_key> <minus> <minus> <Y>     : "Ɏ"  U024E  # LATIN CAPITAL LETTER Y WITH STROKE
 <Multi_key> <minus> <minus> <y>     : "ɏ"  U024F  # LATIN SMALL LETTER Y WITH STROKE
 <Multi_key> <minus> <z>             : "ƶ"  U01B6  # LATIN SMALL LETTER Z WITH STROKE
+<Multi_key> <minus> <minus> <2>     : "ƻ"  U01BB  # LATIN LETTER TWO WITH STROKE
 <Multi_key> <minus> <Multi_key> <A> <E> : "Ǣ"  U01E2  # LATIN CAPITAL LETTER AE WITH MACRON
 <Multi_key> <minus> <Multi_key> <a> <e> : "ǣ"  U01E3  # LATIN SMALL LETTER AE WITH MACRON
 <Multi_key> <minus> <Multi_key> <T> <H> : "ꝧ"  UA767  # LATIN SMALL LETTER THORN WITH STROKE THROUGH DESCENDER
@@ -931,16 +934,22 @@ include "%L"
 <Multi_key> <slash> <c>             : "ȼ"  U023C  # LATIN SMALL LETTER C WITH STROKE (conflicts with ¢, use c/ or |c)
 <Multi_key> <slash> <E>             : "Ɇ"  U0246  # LATIN CAPITAL LETTER E WITH STROKE
 <Multi_key> <slash> <e>             : "ɇ"  U0247  # LATIN SMALL LETTER E WITH STROKE
-<Multi_key> <slash> <K>             : "Ꞣ"  UA7A2  # LATIN CAPITAL LETTER K WITH OBLIQUE STROKE
-<Multi_key> <slash> <k>             : "ꞣ"  UA7A3  # LATIN SMALL LETTER K WITH OBLIQUE STROKE
+<Multi_key> <minus> <slash> <G>     : "Ꞡ"  UA7A0  # LATIN CAPITAL LETTER G WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
+<Multi_key> <minus> <slash> <g>     : "ꞡ"  UA7A1  # LATIN SMALL LETTER G WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
+<Multi_key> <slash> <K>             : "Ꝃ"  UA742  # LATIN CAPITAL LETTER K WITH DIAGONAL STROKE
+<Multi_key> <slash> <k>             : "ꝃ"  UA743  # LATIN SMALL LETTER K WITH DIAGONAL STROKE
+<Multi_key> <minus> <slash> <K>     : "Ꞣ"  UA7A2  # LATIN CAPITAL LETTER K WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
+<Multi_key> <minus> <slash> <k>     : "ꞣ"  UA7A3  # LATIN SMALL LETTER K WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
 <Multi_key> <slash> <N>             : "Ꞥ"  UA7A4  # LATIN CAPITAL LETTER N WITH OBLIQUE STROKE
 <Multi_key> <slash> <n>             : "ꞥ"  UA7A5  # LATIN SMALL LETTER N WITH OBLIQUE STROKE
 <Multi_key> <slash> <Q>             : "Ꝙ"  UA758  # LATIN CAPITAL LETTER Q WITH DIAGONAL STROKE
 <Multi_key> <slash> <q>             : "ꝙ"  UA759  # LATIN SMALL LETTER Q WITH DIAGONAL STROKE
 <Multi_key> <slash> <R>             : "Ꞧ"  UA7A6  # LATIN CAPITAL LETTER R WITH OBLIQUE STROKE
 <Multi_key> <slash> <r>             : "ꞧ"  UA7A7  # LATIN SMALL LETTER R WITH OBLIQUE STROKE
-<Multi_key> <slash> <S>             : "Ꞩ"  UA7A8  # LATIN CAPITAL LETTER S WITH OBLIQUE STROKE
-<Multi_key> <slash> <s>             : "ꞩ"  UA7A9  # LATIN SMALL LETTER S WITH OBLIQUE STROKE
+<Multi_key> <slash> <S>             : "Ꟍ" UA7CC  # LATIN CAPITAL LETTER S WITH DIAGONAL STROKE
+<Multi_key> <slash> <s>             : "ꟍ" UA7CD  # LATIN SMALL LETTER S WITH DIAGONAL STROKE
+<Multi_key> <minus> <slash> <S>     : "Ꞩ"  UA7A8  # LATIN CAPITAL LETTER S WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
+<Multi_key> <minus> <slash> <s>     : "ꞩ"  UA7A9  # LATIN SMALL LETTER S WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
 <Multi_key> <slash> <T>             : "Ⱦ"  U023E  # LATIN CAPITAL LETTER T WITH DIAGONAL STROKE (conflicts with Ŧ, use -T)
 <Multi_key> <slash> <t>             : "ⱦ"  U2C66  # LATIN SMALL LETTER T WITH DIAGONAL STROKE (conflicts with ŧ, use -t)
 <Multi_key> <slash> <U>             : "Ꞹ"  UA7B8  # LATIN CAPITAL LETTER U WITH STROKE
@@ -950,6 +959,7 @@ include "%L"
 <Multi_key> <slash> <Multi_key> <t> <h> : "Ꝥ"  UA764  # LATIN CAPITAL LETTER THORN WITH STROKE
 <Multi_key> <slash> <Multi_key> <f> <s> : "ẜ"  U1E9C  # LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
 <Multi_key> <slash> <Multi_key> <l> <s> : "ẜ"  U1E9C  # LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
+<Multi_key> <slash> <Multi_key> <o> <parenright> : "ꬿ"  UAB3F  # LATIN SMALL LETTER OPEN O WITH STROKE
 
 <Multi_key> <d> <at> : "ȡ"  U0221  # LATIN SMALL LETTER D WITH CURL
 <Multi_key> <l> <at> : "ȴ"  U0234  # LATIN SMALL LETTER L WITH CURL
@@ -1235,7 +1245,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <comma>   : "⸴"  U2E34    # RAISED COMMA
 <Multi_key> <asciicircum> <underscore> <period>  : "⸳"  U2E33    # RAISED DOT
 
-# subscripts: _x (or _x_ if there's a clash with a combining character)
+# subscripts: _x (or _x␣ if there's a clash with a combining character)
 
 <Multi_key> <underscore> <a>              : "ₐ"  U2090   # LATIN SUBSCRIPT SMALL LETTER A (conflicts with ā, use -a)
 <Multi_key> <underscore> <e>              : "ₑ"  U2091   # LATIN SUBSCRIPT SMALL LETTER E (conflicts with ē, use -e)
@@ -1246,18 +1256,18 @@ include "%L"
 <Multi_key> <underscore> <l>              : "ₗ"  U2097   # LATIN SUBSCRIPT SMALL LETTER L
 <Multi_key> <underscore> <m>              : "ₘ"  U2098   # LATIN SUBSCRIPT SMALL LETTER M
 <Multi_key> <underscore> <n>              : "ₙ"  U2099   # LATIN SUBSCRIPT SMALL LETTER N
-<Multi_key> <underscore> <o> <underscore> : "ₒ"  U2092   # LATIN SUBSCRIPT SMALL LETTER O (conflicts with ō, use -o)
+<Multi_key> <underscore> <o> <space>      : "ₒ"  U2092   # LATIN SUBSCRIPT SMALL LETTER O (conflicts with ō, use -o)
 <Multi_key> <underscore> <p>              : "ₚ"  U209A   # LATIN SUBSCRIPT SMALL LETTER P
 <Multi_key> <underscore> <r>              : "ᵣ"  U1D63   # LATIN SUBSCRIPT SMALL LETTER R
 <Multi_key> <underscore> <s>              : "ₛ"  U209B   # LATIN SUBSCRIPT SMALL LETTER S
 <Multi_key> <underscore> <t>              : "ₜ"  U209C   # LATIN SUBSCRIPT SMALL LETTER T
-<Multi_key> <underscore> <u> <underscore> : "ᵤ"  U1D64   # LATIN SUBSCRIPT SMALL LETTER U (conflicts with ū, use -u)
-<Multi_key> <underscore> <v> <underscore> : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
+<Multi_key> <underscore> <u> <space>      : "ᵤ"  U1D64   # LATIN SUBSCRIPT SMALL LETTER U (conflicts with ū, use -u)
+<Multi_key> <underscore> <v> <space>      : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
 <Multi_key> <underscore> <x>              : "ₓ"  U2093   # LATIN SUBSCRIPT SMALL LETTER X
 
 <Multi_key> <underscore> <Multi_key> <e> <e> : "ₔ"  U2094   # LATIN SUBSCRIPT SMALL LETTER SCHWA
 
-<Multi_key> <underscore> <asterisk> <underscore> : "⁎"  U204E  # LOW ASTERISK
+<Multi_key> <underscore> <asterisk> <space> : "⁎"  U204E  # LOW ASTERISK
 
 # small capitals: _^x
 
@@ -1291,15 +1301,21 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <Multi_key> <A> <E> : "ᴁ" U1D01   # LATIN LETTER SMALL CAPITAL AE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <B> <bar> : "ᴃ"  U1D03  # LATIN LETTER SMALL CAPITAL BARRED B (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <D> <H> : "ᴆ" U1D06   # LATIN LETTER SMALL CAPITAL ETH (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <E> <v> : "ⱻ"  U2C7B  # LATIN LETTER SMALL CAPITAL TURNED E (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <G> <v> : "𝼂"  U1DF02  # LATIN LETTER SMALL CAPITAL TURNED G (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <slash> <I> : "ᵻ"  U1D7B  # LATIN SMALL CAPITAL LETTER I WITH STROKE (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <K> <v> : "𝼐"  U1DF10  # LATIN LETTER SMALL CAPITAL TURNED K (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <L> <slash> : "ᴌ" U1D0C   # LATIN LETTER SMALL CAPITAL L WITH STROKE (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <M> <v> : "ꟺ"  UA7FA  # LATIN LETTER SMALL CAPITAL TURNED M (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <O> <parenright> : "ᴐ"  U1D10  # LATIN LETTER SMALL CAPITAL OPEN O (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <R> <v> : "ᴚ"  U1D1A  # LATIN LETTER SMALL CAPITAL TURNED R (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <minus> <U> : "ᵾ"  U1D7E  # LATIN SMALL CAPITAL LETTER U WITH STROKE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <Z> <H> : "ᴣ" U1D23   # LATIN LETTER SMALL CAPITAL EZH (conflicts)
 
 <Multi_key> <underscore> <asciicircum> <less> <N> : "ᴎ"  U1D0E  # LATIN LETTER SMALL CAPITAL REVERSED N (conflicts)
 <Multi_key> <underscore> <asciicircum> <less> <R> : "ᴙ"  U1D19  # LATIN LETTER SMALL CAPITAL REVERSED R (conflicts)
 
-# combining letters above: ^^x
+# combining letters above: ^^x[Return]
 
 <Multi_key> <asciicircum> <asciicircum> <a> <Return> : "ͣ" U0363   # COMBINING LATIN SMALL LETTER A
 <Multi_key> <asciicircum> <asciicircum> <b> <Return> : "ᷨ" U1DE8   # COMBINING LATIN SMALL LETTER B
@@ -1344,7 +1360,7 @@ include "%L"
 <Multi_key> <asciicircum> <asciicircum> <s> <h> <Return> : "ᷯ" U1DEF   # COMBINING LATIN SMALL LETTER ESH
 <Multi_key> <asciicircum> <asciicircum> <u> <quotedbl> <Return> : "ᷴ" U1DF4   # COMBINING LATIN SMALL LETTER U WITH DIAERESIS
 
-# combining letters below: __x
+# combining letters below: __x[Return]
 
 <Multi_key> <underscore> <underscore> <r> <Return> : "᷊" U1DCA   # COMBINING LATIN SMALL LETTER R BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <w> <Return> : "ᪿ" U1ABF   # COMBINING LATIN SMALL LETTER W BELOW (conflicts with ¯, use -^)
@@ -2110,7 +2126,7 @@ include "%L"
 
 # Convention: prefix + ( + character(s) + )
 
-# (normal circled alphanumerics are defined in the system config with no prefix)
+# (normal circled alphanumerics are defined as in the system config, with no prefix)
 
 <Multi_key> <parenleft> <C> <D> <parenright> : "🄭" U1F12D   # CIRCLED CD
 <Multi_key> <parenleft> <W> <z> <parenright> : "🄮" U1F12E   # CIRCLED WZ
@@ -2388,7 +2404,7 @@ include "%L"
 # Multigraphs and ligatures #
 #############################
 
-# Includes both real multigraphs and lookalikes
+# Includes both real multigraphs and vague lookalikes
 
 # Convention: { + letters + }
 
@@ -3308,13 +3324,18 @@ include "%L"
 <Multi_key> <a> <x> <k> <space> : "ڪ"  U06AA  # ARABIC LETTER SWASH KAF
 <Multi_key> <a> <x> <Multi_key> <h> : "ھ"  U06BE  # ARABIC LETTER HEH DOACHASHMEE
 <Multi_key> <a> <x> <y> : "ی"  U06CC  # ARABIC LETTER FARSI YEH
+<Multi_key> <a> <x> <less> <y> : "ے"  U06D2  # ARABIC LETTER YEH BARREE
 <Multi_key> <a> <x> <a> <e> : "ە"  U06D5  # ARABIC LETTER AE
+<Multi_key> <a> <x> <q> : "ࢼ"  U08BC  # ARABIC LETTER AFRICAN QAF
 
 # additional letters (represented visually)
 
 <Multi_key> <a> <x> <asciitilde> <a>     : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
 <Multi_key> <a> <x> <2> <a>              : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
 <Multi_key> <a> <x> <underscore> <2> <a> : "إ"  U0625   # ARABIC LETTER ALEF WITH HAMZA BELOW
+<Multi_key> <a> <x> <numbersign> <2> <a> : "ݳ"  U0773  # ARABIC LETTER ALEF WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <numbersign> <3> <a> : "ݴ"  U0774  # ARABIC LETTER ALEF WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
+<Multi_key> <a> <x> <period> <a>         : "ࡺ"  U087A  # ARABIC LETTER ALEF WITH DOT ABOVE
 
 <Multi_key> <a> <x> <space> <b>          : "ٮ"  U066E  # ARABIC LETTER DOTLESS BEH
 <Multi_key> <a> <x> <underscore> <colon> <b> : "ٻ"  U067B  # ARABIC LETTER BEEH
@@ -3329,19 +3350,24 @@ include "%L"
 <Multi_key> <a> <x> <v> <b>              : "ݖ"  U0756  # ARABIC LETTER BEH WITH SMALL V
 <Multi_key> <a> <x> <underscore> <v> <b> : "ࢠ"  U08A0  # ARABIC LETTER BEH WITH SMALL V BELOW
 <Multi_key> <a> <x> <2> <b>              : "ࢡ"  U08A1  # ARABIC LETTER BEH WITH HAMZA ABOVE
+<Multi_key> <a> <x> <m> <b>              : "ࢶ"  U08B6  # ARABIC LETTER BEH WITH SMALL MEEM ABOVE
 
 <Multi_key> <a> <x> <b> <t>              : "ٹ"  U0679  # ARABIC LETTER TTEH
 <Multi_key> <a> <x> <colon> <t>          : "ٺ"  U067A  # ARABIC LETTER TTEHEH
 <Multi_key> <a> <x> <underscore> <o> <t> : "ټ"  U067C  # ARABIC LETTER TEH WITH RING
 <Multi_key> <a> <x> <quotedbl> <period> <t> : "ٽ"  U067D  # ARABIC LETTER TEH WITH THREE DOTS ABOVE DOWNWARDS
 <Multi_key> <a> <x> <colon> <colon> <t>  : "ٿ"  U067F  # ARABIC LETTER TEHEH
+<Multi_key> <a> <x> <asciicircum> <t> <t> : "ࢸ"  U08B8  # ARABIC LETTER TEH WITH SMALL TEH ABOVE
+<Multi_key> <a> <x> <v> <t>              : "ࢿ"  U08BF  # ARABIC LETTER TEH WITH SMALL V
+<Multi_key> <a> <x> <v> <Multi_key> <b> <t> : "ࣀ"  U08C0  # ARABIC LETTER TTEH WITH SMALL V
 
 <Multi_key> <a> <x> <underscore> <quotedbl> <j> : "ڃ"  U0683  # ARABIC LETTER NYEH
 <Multi_key> <a> <x> <underscore> <colon> <j> : "ڄ"  U0684  # ARABIC LETTER DYEH
 <Multi_key> <a> <x> <underscore> <quotedbl> <period> <j> : "چ"  U0686  # ARABIC LETTER TCHEH (alternatively acC)
 <Multi_key> <a> <x> <underscore> <colon> <colon> <j>  : "ڇ"  U0687  # ARABIC LETTER TCHEHEH
-<Multi_key> <a> <x> <period> <C>         : "ڿ"  U06BF  # ARABIC LETTER TCHEH WITH DOT ABOVE
 <Multi_key> <a> <x> <quotedbl> <j>       : "ࢢ"  U08A2  # ARABIC LETTER JEEM WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <j> : "ࣅ"  U08C5  # ARABIC LETTER JEEM WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <x> <j> : "ࣆ"  U08C6  # ARABIC LETTER JEEM WITH THREE DOTS BELOW
 
 <Multi_key> <a> <x> <quotedbl> <H>       : "ݗ"  U0757  # ARABIC LETTER HAH WITH TWO DOTS ABOVE
 <Multi_key> <a> <x> <2> <H>              : "ځ"  U0681  # ARABIC LETTER HAH WITH HAMZA ABOVE
@@ -3350,6 +3376,9 @@ include "%L"
 <Multi_key> <a> <x> <underscore> <period> <quotedbl> <H> : "ݘ"  U0758  # ARABIC LETTER HAH WITH THREE DOTS POINTING UPWARDS BELOW
 <Multi_key> <a> <x> <underscore> <b> <H> : "ݮ"  U076E  # ARABIC LETTER HAH WITH SMALL ARABIC LETTER TAH BELOW
 <Multi_key> <a> <x> <underscore> <b> <quotedbl> <H> : "ݯ"  U076F  # ARABIC LETTER HAH WITH SMALL ARABIC LETTER TAH AND TWO DOTS
+<Multi_key> <a> <x> <b> <H>              : "ݲ"  U0772  # ARABIC LETTER HAH WITH SMALL ARABIC LETTER TAH ABOVE
+<Multi_key> <a> <x> <underscore> <numbersign> <4> <H> : "ݼ"  U077C  # ARABIC LETTER HAH WITH EXTENDED ARABIC-INDIC DIGIT FOUR BELOW
+<Multi_key> <a> <x> <underscore> <asciicircum> <H> : "ࢊ"  U088A  # ARABIC LETTER HAH WITH INVERTED SMALL V BELOW
 
 <Multi_key> <a> <x> <b> <d>              : "ڈ"  U0688  # ARABIC LETTER DDAL
 <Multi_key> <a> <x> <underscore> <o> <d> : "ډ"  U0689  # ARABIC LETTER DAL WITH RING
@@ -3364,6 +3393,7 @@ include "%L"
 <Multi_key> <a> <x> <b> <underscore> <colon> <d> : "ݙ"  U0759  # ARABIC LETTER DAL WITH TWO DOTS VERTICALLY BELOW AND SMALL TAH
 <Multi_key> <a> <x> <underscore> <asciicircum> <d> : "ݚ"  U075A  # ARABIC LETTER DAL WITH INVERTED SMALL V BELOW
 <Multi_key> <a> <x> <underscore> <quotedbl> <period> <d> : "ࢮ"  U08AE  # ARABIC LETTER DAL WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <underscore> <colon> <d> : "𐻂"  U10EC2  # ARABIC LETTER DAL WITH TWO DOTS VERTICALLY BELOW
 
 <Multi_key> <a> <x> <b> <r>              : "ڑ"  U0691  # ARABIC LETTER RREH
 <Multi_key> <a> <x> <v> <r>              : "ڒ"  U0692  # ARABIC LETTER REH WITH SMALL V
@@ -3375,9 +3405,11 @@ include "%L"
 <Multi_key> <a> <x> <period> <quotedbl> <r> : "ژ"  U0698  # ARABIC LETTER JEH (alternatively acJ)
 <Multi_key> <a> <x> <colon> <colon> <r>  : "ڙ"  U0699  # ARABIC LETTER REH WITH FOUR DOTS ABOVE
 <Multi_key> <a> <x> <asciicircum> <r>    : "ۯ"  U06EF  # ARABIC LETTER REH WITH INVERTED V
+<Multi_key> <a> <x> <minus> <r>          : "ݛ"  U075B  # ARABIC LETTER REH WITH STROKE
 <Multi_key> <a> <x> <colon> <r>          : "ݫ"  U076B  # ARABIC LETTER REH WITH TWO DOTS VERTICALLY ABOVE
 <Multi_key> <a> <x> <2> <r>              : "ݬ"  U076C  # ARABIC LETTER REH WITH HAMZA ABOVE
 <Multi_key> <a> <x> <b> <quotedbl> <r>   : "ݱ"  U0771  # ARABIC LETTER REH WITH SMALL ARABIC LETTER TAH AND TWO DOTS
+<Multi_key> <a> <x> <n> <r>              : "ࢹ"  U08B9  # ARABIC LETTER REH WITH SMALL NOON ABOVE
 
 <Multi_key> <a> <x> <asciicircum> <z>    : "ࢲ"  U08B2  # ARABIC LETTER ZAIN WITH INVERTED V ABOVE
 
@@ -3387,6 +3419,7 @@ include "%L"
 <Multi_key> <a> <x> <colon> <colon> <s>  : "ݜ"  U075C  # ARABIC LETTER SEEN WITH FOUR DOTS ABOVE
 <Multi_key> <a> <x> <colon> <s>          : "ݭ"  U076D  # ARABIC LETTER SEEN WITH TWO DOTS VERTICALLY ABOVE
 <Multi_key> <a> <x> <b> <quotedbl> <s>   : "ݰ"  U0770  # ARABIC LETTER SEEN WITH SMALL ARABIC LETTER TAH AND TWO DOTS
+<Multi_key> <a> <x> <numbersign> <4> <s> : "ݽ"  U077D  # ARABIC LETTER SEEN WITH EXTENDED ARABIC-INDIC DIGIT FOUR ABOVE
 <Multi_key> <a> <x> <asciicircum> <s>    : "ݾ"  U077E  # ARABIC LETTER SEEN WITH INVERTED V
 
 <Multi_key> <a> <x> <underscore> <period> <S> : "ۺ"  U06FA  # ARABIC LETTER SHEEN WITH DOT BELOW
@@ -3399,6 +3432,9 @@ include "%L"
 
 <Multi_key> <a> <x> <period> <quotedbl> <x> <t> : "ڟ"  U069F  # ARABIC LETTER TAH WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <quotedbl> <x> <t>   : "ࢣ"  U08A3  # ARABIC LETTER TAH WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <period> <x> <t> : "ࢋ"  U088B  # ARABIC LETTER TAH WITH DOT BELOW
+<Multi_key> <a> <x> <underscore> <quotedbl> <period> <x> <t> : "ࢌ"  U088C  # ARABIC LETTER TAH WITH THREE DOTS BELOW
+<Multi_key> <a> <x> <underscore> <colon> <x> <t> : "𐻃"  U10EC3  # ARABIC LETTER TAH WITH TWO DOTS VERTICALLY BELOW
 
 <Multi_key> <a> <x> <period> <quotedbl> <grave> : "ڠ"  U06A0  # ARABIC LETTER AIN WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <quotedbl> <grave>   : "ݝ"  U075D  # ARABIC LETTER AIN WITH TWO DOTS ABOVE
@@ -3407,6 +3443,7 @@ include "%L"
 <Multi_key> <a> <x> <underscore> <quotedbl> <period> <grave> : "ࢳ"  U08B3  # ARABIC LETTER AIN WITH THREE DOTS BELOW
 
 <Multi_key> <a> <x> <underscore> <period> <G> : "ۼ"  U06FC  # ARABIC LETTER GHAIN WITH DOT BELOW
+<Multi_key> <a> <x> <period> <quotedbl> <G> : "ࣃ"  U08C3  # ARABIC LETTER GHAIN WITH THREE DOTS ABOVE
 
 <Multi_key> <a> <x> <underscore> <period> <f> : "ڢ"  U06A2  # ARABIC LETTER FEH WITH DOT MOVED BELOW
 <Multi_key> <a> <x> <period> <underscore> <period> <f> : "ڣ"  U06A3  # ARABIC LETTER FEH WITH DOT BELOW
@@ -3421,11 +3458,15 @@ include "%L"
 <Multi_key> <a> <x> <period> <q> : "ڧ"  U06A7  # ARABIC LETTER QAF WITH DOT ABOVE
 <Multi_key> <a> <x> <period> <quotedbl> <q> : "ڨ"  U06A8  # ARABIC LETTER QAF WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <underscore> <period> <q> : "ࢥ"  U08A5  # ARABIC LETTER QAF WITH DOT BELOW
+<Multi_key> <a> <x> <space> <underscore> <period> <q> : "ࢵ"  U08B5  # ARABIC LETTER QAF WITH DOT BELOW AND NO DOTS ABOVE
+<Multi_key> <a> <x> <period> <quotedbl> <x> <q> : "ࣄ"  U08C4  # ARABIC LETTER AFRICAN QAF WITH THREE DOTS ABOVE
 
 <Multi_key> <a> <x> <period> <k> <space> : "ڬ"  U06AC  # ARABIC LETTER KAF WITH DOT ABOVE
 <Multi_key> <a> <x> <period> <quotedbl> <k> <space> : "ڭ"  U06AD  # ARABIC LETTER NG
 <Multi_key> <a> <x> <underscore> <quotedbl> <period> <k> <space> : "ڮ"  U06AE  # ARABIC LETTER KAF WITH THREE DOTS BELOW
 <Multi_key> <a> <x> <quotedbl> <k> <space> : "ݿ"  U077F  # ARABIC LETTER KAF WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <period> <k> : "ࢴ"  U08B4  # ARABIC LETTER KAF WITH DOT BELOW
+<Multi_key> <a> <x> <underscore> <colon> <k> <space> : "𐻄"  U10EC4  # ARABIC LETTER KAF WITH TWO DOTS VERTICALLY BELOW
 
 <Multi_key> <a> <x> <quotedbl> <k> <h>  : "ػ"  U063B  # ARABIC LETTER KEHEH WITH TWO DOTS ABOVE
 <Multi_key> <a> <x> <underscore> <quotedbl> <period> <k> <h> : "ؼ"  U063C  # ARABIC LETTER KEHEH WITH THREE DOTS BELOW
@@ -3436,7 +3477,8 @@ include "%L"
 <Multi_key> <a> <x> <period> <k> <h>     : "ݢ"  U0762  # ARABIC LETTER KEHEH WITH DOT ABOVE
 <Multi_key> <a> <x> <period> <quotedbl> <k> <h> : "ݣ"  U0763  # ARABIC LETTER KEHEH WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <underscore> <period> <quotedbl> <k> <h> : "ݤ"  U0764  # ARABIC LETTER KEHEH WITH THREE DOTS POINTING UPWARDS BELOW
-<Multi_key> <a> <x> <underscore> <period> <k> : "ࢴ"  U08B4  # ARABIC LETTER KAF WITH DOT BELOW
+<Multi_key> <a> <x> <v> <k> <h>          : "ࣂ"  U08C2  # ARABIC LETTER KEHEH WITH SMALL V
+<Multi_key> <a> <x> <underscore> <colon> <k> <h> : "ࢍ"  U088D  # ARABIC LETTER KEHEH WITH TWO DOTS VERTICALLY BELOW
 
 <Multi_key> <a> <x> <v> <l>              : "ڵ"  U06B5  # ARABIC LETTER LAM WITH SMALL V
 <Multi_key> <a> <x> <period> <l>         : "ڶ"  U06B6  # ARABIC LETTER LAM WITH DOT ABOVE
@@ -3456,7 +3498,8 @@ include "%L"
 <Multi_key> <a> <x> <period> <quotedbl> <n> : "ڽ"  U06BD  # ARABIC LETTER NOON WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <underscore> <quotedbl> <n> : "ݧ"  U0767  # ARABIC LETTER NOON WITH TWO DOTS BELOW
 <Multi_key> <a> <x> <b> <period> <n>     : "ݨ"  U0768  # ARABIC LETTER NOON WITH SMALL TAH
-<Multi_key> <a> <x> <v> <period> <n>     : "ݩ"  U0769  # ARABIC LETTER NOON WITH SMALL V
+<Multi_key> <a> <x> <v> <n>              : "ݩ"  U0769  # ARABIC LETTER NOON WITH SMALL V
+<Multi_key> <a> <x> <asciicircum> <n>    : "ࢉ"  U0889  # ARABIC LETTER NOON WITH INVERTED SMALL V
 
 <Multi_key> <a> <x> <asciicircum> <h>    : "ۿ"  U06FF  # ARABIC LETTER HEH WITH INVERTED V
 
@@ -3480,6 +3523,10 @@ include "%L"
 <Multi_key> <a> <x> <period> <quotedbl> <u> : "ۋ"  U06CB  # ARABIC LETTER VE
 <Multi_key> <a> <x> <period> <w>         : "ۏ"  U06CF  # ARABIC LETTER WAW WITH DOT ABOVE
 <Multi_key> <a> <x> <period> <u>         : "ۏ"  U06CF  # ARABIC LETTER WAW WITH DOT ABOVE
+<Multi_key> <a> <x> <numbersign> <2> <w> : "ݸ"  U0778  # ARABIC LETTER WAW WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <numbersign> <2> <u> : "ݸ"  U0778  # ARABIC LETTER WAW WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <numbersign> <3> <w> : "ݹ"  U0779  # ARABIC LETTER WAW WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
+<Multi_key> <a> <x> <numbersign> <3> <u> : "ݹ"  U0779  # ARABIC LETTER WAW WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
 
 <Multi_key> <a> <x> <2> <y>              : "ئ"  U0626   # ARABIC LETTER YEH WITH HAMZA ABOVE
 <Multi_key> <a> <x> <underscore> <colon> <y> : "ې"  U06D0  # ARABIC LETTER E
@@ -3490,22 +3537,38 @@ include "%L"
 <Multi_key> <a> <x> <asciicircum> <y>    : "ؽ"  U063D  # ARABIC LETTER FARSI YEH WITH INVERTED V
 <Multi_key> <a> <x> <period> <quotedbl> <y> : "ؿ"  U063F  # ARABIC LETTER FARSI YEH WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <quotedbl> <y>       : "ؾ"  U063E  # ARABIC LETTER FARSI YEH WITH TWO DOTS ABOVE
+<Multi_key> <a> <x> <numbersign> <2> <y> : "ݵ"  U0775  # ARABIC LETTER FARSI YEH WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <numbersign> <3> <y> : "ݶ"  U0776  # ARABIC LETTER FARSI YEH WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
+<Multi_key> <a> <x> <underscore> <numbersign> <4> <y> : "ݷ"  U0777  # ARABIC LETTER FARSI YEH WITH EXTENDED ARABIC-INDIC DIGIT FOUR BELOW
 <Multi_key> <a> <x> <2> <underscore> <quotedbl> <y> : "ࢨ"  U08A8  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND HAMZA ABOVE
 <Multi_key> <a> <x> <period> <underscore> <quotedbl> <y> : "ࢩ"  U08A9  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND DOT ABOVE
+<Multi_key> <a> <x> <n> <underscore> <quotedbl> <y> : "ࢺ"  U08BA  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND SMALL NOON ABOVE
 
+<Multi_key> <a> <x> <m> <p>              : "ࢷ"  U08B7  # ARABIC LETTER PEH WITH SMALL MEEM ABOVE
 <Multi_key> <a> <x> <v> <p>              : "ࢾ"  U08BE  # ARABIC LETTER PEH WITH SMALL V
 
 <Multi_key> <a> <x> <o> <g>              : "ڰ"  U06B0  # ARABIC LETTER GAF WITH RING
 <Multi_key> <a> <x> <underscore> <quotedbl> <g> : "ڲ"  U06B2  # ARABIC LETTER GAF WITH TWO DOTS BELOW
 <Multi_key> <a> <x> <period> <quotedbl> <g> : "ڴ"  U06B4  # ARABIC LETTER GAF WITH THREE DOTS ABOVE
+<Multi_key> <a> <x> <underscore> <slash> <g> : "ࢰ"  U08B0  # ARABIC LETTER GAF WITH INVERTED STROKE
+
+<Multi_key> <a> <x> <2> <less> <y>        : "ۓ"  U06D3  # ARABIC LETTER YEH BARREE WITH HAMZA ABOVE
+<Multi_key> <a> <x> <numbersign> <2> <less> <y> : "ݺ"  U077A  # ARABIC LETTER YEH BARREE WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <numbersign> <3> <less> <y> : "ݻ"  U077B  # ARABIC LETTER YEH BARREE WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
+
+<Multi_key> <a> <x> <period> <C>         : "ڿ"  U06BF  # ARABIC LETTER TCHEH WITH DOT ABOVE
+<Multi_key> <a> <x> <v> <C>              : "ࣁ"  U08C1  # ARABIC LETTER TCHEH WITH SMALL V
 
 # ligatures
 
+<Multi_key> <a> <x> <a> <k> <b> <a> <r> : "ﷳ"  UFDF3  # ARABIC LIGATURE AKBAR ISOLATED FORM
+<Multi_key> <a> <x> <a> <l> <l> <a> <h> : "ﷲ" UFDF2    # ARABIC LIGATURE ALLAH ISOLATED FORM
 <Multi_key> <a> <x> <b> <i> <s> <m> <i> <l> <l> <a> <h> : "﷽" UFDFD    # ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM
-<Multi_key> <a> <x> <A> <l> <l> <a> <h> : "ﷲ" UFDF2    # ARABIC LIGATURE ALLAH ISOLATED FORM
+
 <Multi_key> <a> <x> <A> <A> <S> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM
 <Multi_key> <a> <x> <A> <W> <J> : "﷿" UFDFF    # ARABIC LIGATURE AZZA WA JALL
-<Multi_key> <a> <x> <P> <B> <U> <H> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM (PEACE BE UPON HIM)
+<Multi_key> <a> <x> <P> <B> <U> <H> : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM (PBUH)
+<Multi_key> <a> <x> <S> <A> <W> : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM
 <Multi_key> <a> <x> <S> <W> <T> : "﷾" UFDFE    # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
 
 # punctuation
@@ -3518,6 +3581,9 @@ include "%L"
 <Multi_key> <a> <semicolon> <percent>   : "٪" U066A    # ARABIC PERCENT SIGN (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <Multi_key> <percent> <o> : "؉"  U0609  # ARABIC-INDIC PER MILLE SIGN (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <Multi_key> <percent> <percent> : "؊"  U060A  # ARABIC-INDIC PER TEN THOUSAND SIGN (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <ampersand> : "۽"  U06FD   # ARABIC SIGN SINDHI AMPERSAND LEFT-TO-RIGHT MARK (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <parenleft> : "﴾"  UFD3E  # ORNATE LEFT PARENTHESIS (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <parenright> : "﴿"  UFD3F  # ORNATE RIGHT PARENTHESIS (conflicts with ą, use ,a)
 
 # numerals
 
@@ -4380,6 +4446,181 @@ include "%L"
 <Multi_key> <a> <y> <minus> <minus>      : "𐺭"  U10EAD  # YEZIDI HYPHENATION MARK
 <Multi_key> <a> <y> <period> <l>         : "𐺰"  U10EB0  # YEZIDI LETTER LAM WITH DOT ABOVE
 <Multi_key> <a> <y> <asciicircum> <y>    : "𐺱"  U10EB1  # YEZIDI LETTER YOT WITH CIRCUMFLEX ABOVE
+
+# mathematical alphanumerics (same convention as Latin alphanumerics above)
+
+# Convention: % + a/A + form + character
+#   prefix: a corresponds to ac above, and A to ax
+#   form: i = isolated, > = initial, t = tailed, s = stretched, l = looped, d = double-struck
+#   character: as above
+
+<Multi_key> <percent> <a> <i> <a> : "𞸀"  U1EE00  # ARABIC MATHEMATICAL ALEF
+<Multi_key> <percent> <a> <i> <b> : "𞸁"  U1EE01  # ARABIC MATHEMATICAL BEH
+<Multi_key> <percent> <a> <i> <j> : "𞸂"  U1EE02  # ARABIC MATHEMATICAL JEEM
+<Multi_key> <percent> <a> <i> <d> : "𞸃"  U1EE03  # ARABIC MATHEMATICAL DAL
+<Multi_key> <percent> <a> <i> <w> : "𞸅"  U1EE05  # ARABIC MATHEMATICAL WAW
+<Multi_key> <percent> <a> <i> <u> : "𞸅"  U1EE05  # ARABIC MATHEMATICAL WAW
+<Multi_key> <percent> <a> <i> <z> : "𞸆"  U1EE06  # ARABIC MATHEMATICAL ZAIN
+<Multi_key> <percent> <a> <i> <H> : "𞸇"  U1EE07  # ARABIC MATHEMATICAL HAH
+<Multi_key> <percent> <A> <i> <h> : "𞸇"  U1EE07  # ARABIC MATHEMATICAL HAH
+<Multi_key> <percent> <A> <i> <t> : "𞸈"  U1EE08  # ARABIC MATHEMATICAL TAH
+<Multi_key> <percent> <a> <i> <y> : "𞸉"  U1EE09  # ARABIC MATHEMATICAL YEH
+<Multi_key> <percent> <a> <i> <i> : "𞸉"  U1EE09  # ARABIC MATHEMATICAL YEH
+<Multi_key> <percent> <a> <i> <k> : "𞸊"  U1EE0A  # ARABIC MATHEMATICAL KAF
+<Multi_key> <percent> <a> <i> <l> : "𞸋"  U1EE0B  # ARABIC MATHEMATICAL LAM
+<Multi_key> <percent> <a> <i> <m> : "𞸌"  U1EE0C  # ARABIC MATHEMATICAL MEEM
+<Multi_key> <percent> <a> <i> <n> : "𞸍"  U1EE0D  # ARABIC MATHEMATICAL NOON
+<Multi_key> <percent> <a> <i> <s> : "𞸎"  U1EE0E  # ARABIC MATHEMATICAL SEEN
+<Multi_key> <percent> <a> <i> <3> : "𞸏"  U1EE0F  # ARABIC MATHEMATICAL AIN
+<Multi_key> <percent> <a> <i> <grave> : "𞸏"  U1EE0F  # ARABIC MATHEMATICAL AIN
+<Multi_key> <percent> <a> <i> <f> : "𞸐"  U1EE10  # ARABIC MATHEMATICAL FEH
+<Multi_key> <percent> <A> <i> <s> : "𞸑"  U1EE11  # ARABIC MATHEMATICAL SAD
+<Multi_key> <percent> <a> <i> <q> : "𞸒"  U1EE12  # ARABIC MATHEMATICAL QAF
+<Multi_key> <percent> <a> <i> <r> : "𞸓"  U1EE13  # ARABIC MATHEMATICAL REH
+<Multi_key> <percent> <a> <i> <S> : "𞸔"  U1EE14  # ARABIC MATHEMATICAL SHEEN
+<Multi_key> <percent> <a> <i> <t> : "𞸕"  U1EE15  # ARABIC MATHEMATICAL TEH
+<Multi_key> <percent> <a> <i> <T> : "𞸖"  U1EE16  # ARABIC MATHEMATICAL THEH
+<Multi_key> <percent> <a> <i> <K> : "𞸗"  U1EE17  # ARABIC MATHEMATICAL KHAH
+<Multi_key> <percent> <a> <i> <D> : "𞸘"  U1EE18  # ARABIC MATHEMATICAL THAL
+<Multi_key> <percent> <A> <i> <d> : "𞸙"  U1EE19  # ARABIC MATHEMATICAL DAD
+<Multi_key> <percent> <A> <i> <z> : "𞸚"  U1EE1A  # ARABIC MATHEMATICAL ZAH
+<Multi_key> <percent> <a> <i> <G> : "𞸛"  U1EE1B  # ARABIC MATHEMATICAL GHAIN
+<Multi_key> <percent> <A> <i> <space> <b> : "𞸜"  U1EE1C  # ARABIC MATHEMATICAL DOTLESS BEH
+<Multi_key> <percent> <A> <i> <space> <n> : "𞸝"  U1EE1D  # ARABIC MATHEMATICAL DOTLESS NOON
+<Multi_key> <percent> <A> <i> <space> <f> : "𞸞"  U1EE1E  # ARABIC MATHEMATICAL DOTLESS FEH
+<Multi_key> <percent> <A> <i> <space> <q> : "𞸟"  U1EE1F  # ARABIC MATHEMATICAL DOTLESS QAF
+
+<Multi_key> <percent> <a> <greater> <b> : "𞸡"  U1EE21  # ARABIC MATHEMATICAL INITIAL BEH
+<Multi_key> <percent> <a> <greater> <j> : "𞸢"  U1EE22  # ARABIC MATHEMATICAL INITIAL JEEM
+<Multi_key> <percent> <a> <greater> <h> : "𞸤"  U1EE24  # ARABIC MATHEMATICAL INITIAL HEH
+<Multi_key> <percent> <a> <greater> <H> : "𞸧"  U1EE27  # ARABIC MATHEMATICAL INITIAL HAH
+<Multi_key> <percent> <A> <greater> <h> : "𞸧"  U1EE27  # ARABIC MATHEMATICAL INITIAL HAH
+<Multi_key> <percent> <a> <greater> <y> : "𞸩"  U1EE29  # ARABIC MATHEMATICAL INITIAL YEH
+<Multi_key> <percent> <a> <greater> <i> : "𞸩"  U1EE29  # ARABIC MATHEMATICAL INITIAL YEH
+<Multi_key> <percent> <a> <greater> <k> : "𞸪"  U1EE2A  # ARABIC MATHEMATICAL INITIAL KAF
+<Multi_key> <percent> <a> <greater> <l> : "𞸫"  U1EE2B  # ARABIC MATHEMATICAL INITIAL LAM
+<Multi_key> <percent> <a> <greater> <m> : "𞸬"  U1EE2C  # ARABIC MATHEMATICAL INITIAL MEEM
+<Multi_key> <percent> <a> <greater> <n> : "𞸭"  U1EE2D  # ARABIC MATHEMATICAL INITIAL NOON
+<Multi_key> <percent> <a> <greater> <s> : "𞸮"  U1EE2E  # ARABIC MATHEMATICAL INITIAL SEEN
+<Multi_key> <percent> <a> <greater> <3> : "𞸯"  U1EE2F  # ARABIC MATHEMATICAL INITIAL AIN
+<Multi_key> <percent> <a> <greater> <grave> : "𞸯"  U1EE2F  # ARABIC MATHEMATICAL INITIAL AIN
+<Multi_key> <percent> <a> <greater> <f> : "𞸰"  U1EE30  # ARABIC MATHEMATICAL INITIAL FEH
+<Multi_key> <percent> <A> <greater> <s> : "𞸱"  U1EE31  # ARABIC MATHEMATICAL INITIAL SAD
+<Multi_key> <percent> <a> <greater> <q> : "𞸲"  U1EE32  # ARABIC MATHEMATICAL INITIAL QAF
+<Multi_key> <percent> <a> <greater> <S> : "𞸴"  U1EE34  # ARABIC MATHEMATICAL INITIAL SHEEN
+<Multi_key> <percent> <a> <greater> <t> : "𞸵"  U1EE35  # ARABIC MATHEMATICAL INITIAL TEH
+<Multi_key> <percent> <a> <greater> <T> : "𞸶"  U1EE36  # ARABIC MATHEMATICAL INITIAL THEH
+<Multi_key> <percent> <a> <greater> <K> : "𞸷"  U1EE37  # ARABIC MATHEMATICAL INITIAL KHAH
+<Multi_key> <percent> <A> <greater> <d> : "𞸹"  U1EE39  # ARABIC MATHEMATICAL INITIAL DAD
+<Multi_key> <percent> <a> <greater> <G> : "𞸻"  U1EE3B  # ARABIC MATHEMATICAL INITIAL GHAIN
+
+<Multi_key> <percent> <a> <t> <j> : "𞹂"  U1EE42  # ARABIC MATHEMATICAL TAILED JEEM
+<Multi_key> <percent> <a> <t> <H> : "𞹇"  U1EE47  # ARABIC MATHEMATICAL TAILED HAH
+<Multi_key> <percent> <A> <t> <h> : "𞹇"  U1EE47  # ARABIC MATHEMATICAL TAILED HAH
+<Multi_key> <percent> <a> <t> <y> : "𞹉"  U1EE49  # ARABIC MATHEMATICAL TAILED YEH
+<Multi_key> <percent> <a> <t> <i> : "𞹉"  U1EE49  # ARABIC MATHEMATICAL TAILED YEH
+<Multi_key> <percent> <a> <t> <l> : "𞹋"  U1EE4B  # ARABIC MATHEMATICAL TAILED LAM
+<Multi_key> <percent> <a> <t> <n> : "𞹍"  U1EE4D  # ARABIC MATHEMATICAL TAILED NOON
+<Multi_key> <percent> <a> <t> <s> : "𞹎"  U1EE4E  # ARABIC MATHEMATICAL TAILED SEEN
+<Multi_key> <percent> <a> <t> <3> : "𞹏"  U1EE4F  # ARABIC MATHEMATICAL TAILED AIN
+<Multi_key> <percent> <a> <t> <grave> : "𞹏"  U1EE4F  # ARABIC MATHEMATICAL TAILED AIN
+<Multi_key> <percent> <A> <t> <s> : "𞹑"  U1EE51  # ARABIC MATHEMATICAL TAILED SAD
+<Multi_key> <percent> <a> <t> <q> : "𞹒"  U1EE52  # ARABIC MATHEMATICAL TAILED QAF
+<Multi_key> <percent> <a> <t> <S> : "𞹔"  U1EE54  # ARABIC MATHEMATICAL TAILED SHEEN
+<Multi_key> <percent> <a> <t> <K> : "𞹗"  U1EE57  # ARABIC MATHEMATICAL TAILED KHAH
+<Multi_key> <percent> <A> <t> <d> : "𞹙"  U1EE59  # ARABIC MATHEMATICAL TAILED DAD
+<Multi_key> <percent> <a> <t> <G> : "𞹛"  U1EE5B  # ARABIC MATHEMATICAL TAILED GHAIN
+<Multi_key> <percent> <A> <t> <space> <n> : "𞹝"  U1EE5D  # ARABIC MATHEMATICAL TAILED DOTLESS NOON
+<Multi_key> <percent> <A> <t> <space> <q> : "𞹟"  U1EE5F  # ARABIC MATHEMATICAL TAILED DOTLESS QAF
+
+<Multi_key> <percent> <a> <s> <b> : "𞹡"  U1EE61  # ARABIC MATHEMATICAL STRETCHED BEH
+<Multi_key> <percent> <a> <s> <j> : "𞹢"  U1EE62  # ARABIC MATHEMATICAL STRETCHED JEEM
+<Multi_key> <percent> <a> <s> <h> : "𞹤"  U1EE64  # ARABIC MATHEMATICAL STRETCHED HEH
+<Multi_key> <percent> <a> <s> <H> : "𞹧"  U1EE67  # ARABIC MATHEMATICAL STRETCHED HAH
+<Multi_key> <percent> <A> <s> <h> : "𞹧"  U1EE67  # ARABIC MATHEMATICAL STRETCHED HAH
+<Multi_key> <percent> <A> <s> <t> : "𞹨"  U1EE68  # ARABIC MATHEMATICAL STRETCHED TAH
+<Multi_key> <percent> <a> <s> <y> : "𞹩"  U1EE69  # ARABIC MATHEMATICAL STRETCHED YEH
+<Multi_key> <percent> <a> <s> <i> : "𞹩"  U1EE69  # ARABIC MATHEMATICAL STRETCHED YEH
+<Multi_key> <percent> <a> <s> <k> : "𞹪"  U1EE6A  # ARABIC MATHEMATICAL STRETCHED KAF
+<Multi_key> <percent> <a> <s> <m> : "𞹬"  U1EE6C  # ARABIC MATHEMATICAL STRETCHED MEEM
+<Multi_key> <percent> <a> <s> <n> : "𞹭"  U1EE6D  # ARABIC MATHEMATICAL STRETCHED NOON
+<Multi_key> <percent> <a> <s> <s> : "𞹮"  U1EE6E  # ARABIC MATHEMATICAL STRETCHED SEEN
+<Multi_key> <percent> <a> <s> <3> : "𞹯"  U1EE6F  # ARABIC MATHEMATICAL STRETCHED AIN
+<Multi_key> <percent> <a> <s> <grave> : "𞹯"  U1EE6F  # ARABIC MATHEMATICAL STRETCHED AIN
+<Multi_key> <percent> <a> <s> <f> : "𞹰"  U1EE70  # ARABIC MATHEMATICAL STRETCHED FEH
+<Multi_key> <percent> <A> <s> <s> : "𞹱"  U1EE71  # ARABIC MATHEMATICAL STRETCHED SAD
+<Multi_key> <percent> <a> <s> <q> : "𞹲"  U1EE72  # ARABIC MATHEMATICAL STRETCHED QAF
+<Multi_key> <percent> <a> <s> <S> : "𞹴"  U1EE74  # ARABIC MATHEMATICAL STRETCHED SHEEN
+<Multi_key> <percent> <a> <s> <t> : "𞹵"  U1EE75  # ARABIC MATHEMATICAL STRETCHED TEH
+<Multi_key> <percent> <a> <s> <T> : "𞹶"  U1EE76  # ARABIC MATHEMATICAL STRETCHED THEH
+<Multi_key> <percent> <a> <s> <K> : "𞹷"  U1EE77  # ARABIC MATHEMATICAL STRETCHED KHAH
+<Multi_key> <percent> <A> <s> <d> : "𞹹"  U1EE79  # ARABIC MATHEMATICAL STRETCHED DAD
+<Multi_key> <percent> <A> <s> <z> : "𞹺"  U1EE7A  # ARABIC MATHEMATICAL STRETCHED ZAH
+<Multi_key> <percent> <a> <s> <G> : "𞹻"  U1EE7B  # ARABIC MATHEMATICAL STRETCHED GHAIN
+<Multi_key> <percent> <A> <s> <space> <b> : "𞹼"  U1EE7C  # ARABIC MATHEMATICAL STRETCHED DOTLESS BEH
+<Multi_key> <percent> <A> <s> <space> <f> : "𞹾"  U1EE7E  # ARABIC MATHEMATICAL STRETCHED DOTLESS FEH
+
+<Multi_key> <percent> <a> <l> <a> : "𞺀"  U1EE80  # ARABIC MATHEMATICAL LOOPED ALEF
+<Multi_key> <percent> <a> <l> <b> : "𞺁"  U1EE81  # ARABIC MATHEMATICAL LOOPED BEH
+<Multi_key> <percent> <a> <l> <j> : "𞺂"  U1EE82  # ARABIC MATHEMATICAL LOOPED JEEM
+<Multi_key> <percent> <a> <l> <d> : "𞺃"  U1EE83  # ARABIC MATHEMATICAL LOOPED DAL
+<Multi_key> <percent> <a> <l> <h> : "𞺄"  U1EE84  # ARABIC MATHEMATICAL LOOPED HEH
+<Multi_key> <percent> <a> <l> <w> : "𞺅"  U1EE85  # ARABIC MATHEMATICAL LOOPED WAW
+<Multi_key> <percent> <a> <l> <u> : "𞺅"  U1EE85  # ARABIC MATHEMATICAL LOOPED WAW
+<Multi_key> <percent> <a> <l> <z> : "𞺆"  U1EE86  # ARABIC MATHEMATICAL LOOPED ZAIN
+<Multi_key> <percent> <a> <l> <H> : "𞺇"  U1EE87  # ARABIC MATHEMATICAL LOOPED HAH
+<Multi_key> <percent> <A> <l> <h> : "𞺇"  U1EE87  # ARABIC MATHEMATICAL LOOPED HAH
+<Multi_key> <percent> <A> <l> <t> : "𞺈"  U1EE88  # ARABIC MATHEMATICAL LOOPED TAH
+<Multi_key> <percent> <a> <l> <y> : "𞺉"  U1EE89  # ARABIC MATHEMATICAL LOOPED YEH
+<Multi_key> <percent> <a> <l> <i> : "𞺉"  U1EE89  # ARABIC MATHEMATICAL LOOPED YEH
+<Multi_key> <percent> <a> <l> <l> : "𞺋"  U1EE8B  # ARABIC MATHEMATICAL LOOPED LAM
+<Multi_key> <percent> <a> <l> <m> : "𞺌"  U1EE8C  # ARABIC MATHEMATICAL LOOPED MEEM
+<Multi_key> <percent> <a> <l> <n> : "𞺍"  U1EE8D  # ARABIC MATHEMATICAL LOOPED NOON
+<Multi_key> <percent> <a> <l> <s> : "𞺎"  U1EE8E  # ARABIC MATHEMATICAL LOOPED SEEN
+<Multi_key> <percent> <a> <l> <3> : "𞺏"  U1EE8F  # ARABIC MATHEMATICAL LOOPED AIN
+<Multi_key> <percent> <a> <l> <grave> : "𞺏"  U1EE8F  # ARABIC MATHEMATICAL LOOPED AIN
+<Multi_key> <percent> <a> <l> <f> : "𞺐"  U1EE90  # ARABIC MATHEMATICAL LOOPED FEH
+<Multi_key> <percent> <A> <l> <s> : "𞺑"  U1EE91  # ARABIC MATHEMATICAL LOOPED SAD
+<Multi_key> <percent> <a> <l> <q> : "𞺒"  U1EE92  # ARABIC MATHEMATICAL LOOPED QAF
+<Multi_key> <percent> <a> <l> <r> : "𞺓"  U1EE93  # ARABIC MATHEMATICAL LOOPED REH
+<Multi_key> <percent> <a> <l> <S> : "𞺔"  U1EE94  # ARABIC MATHEMATICAL LOOPED SHEEN
+<Multi_key> <percent> <a> <l> <t> : "𞺕"  U1EE95  # ARABIC MATHEMATICAL LOOPED TEH
+<Multi_key> <percent> <a> <l> <T> : "𞺖"  U1EE96  # ARABIC MATHEMATICAL LOOPED THEH
+<Multi_key> <percent> <a> <l> <K> : "𞺗"  U1EE97  # ARABIC MATHEMATICAL LOOPED KHAH
+<Multi_key> <percent> <a> <l> <D> : "𞺘"  U1EE98  # ARABIC MATHEMATICAL LOOPED THAL
+<Multi_key> <percent> <A> <l> <d> : "𞺙"  U1EE99  # ARABIC MATHEMATICAL LOOPED DAD
+<Multi_key> <percent> <A> <l> <z> : "𞺚"  U1EE9A  # ARABIC MATHEMATICAL LOOPED ZAH
+<Multi_key> <percent> <a> <l> <G> : "𞺛"  U1EE9B  # ARABIC MATHEMATICAL LOOPED GHAIN
+
+<Multi_key> <percent> <a> <d> <b> : "𞺡"  U1EEA1  # ARABIC MATHEMATICAL DOUBLE-STRUCK BEH
+<Multi_key> <percent> <a> <d> <j> : "𞺢"  U1EEA2  # ARABIC MATHEMATICAL DOUBLE-STRUCK JEEM
+<Multi_key> <percent> <a> <d> <d> : "𞺣"  U1EEA3  # ARABIC MATHEMATICAL DOUBLE-STRUCK DAL
+<Multi_key> <percent> <a> <d> <w> : "𞺥"  U1EEA5  # ARABIC MATHEMATICAL DOUBLE-STRUCK WAW
+<Multi_key> <percent> <a> <d> <u> : "𞺥"  U1EEA5  # ARABIC MATHEMATICAL DOUBLE-STRUCK WAW
+<Multi_key> <percent> <a> <d> <z> : "𞺦"  U1EEA6  # ARABIC MATHEMATICAL DOUBLE-STRUCK ZAIN
+<Multi_key> <percent> <a> <d> <H> : "𞺧"  U1EEA7  # ARABIC MATHEMATICAL DOUBLE-STRUCK HAH
+<Multi_key> <percent> <A> <d> <h> : "𞺧"  U1EEA7  # ARABIC MATHEMATICAL DOUBLE-STRUCK HAH
+<Multi_key> <percent> <A> <d> <t> : "𞺨"  U1EEA8  # ARABIC MATHEMATICAL DOUBLE-STRUCK TAH
+<Multi_key> <percent> <a> <d> <y> : "𞺩"  U1EEA9  # ARABIC MATHEMATICAL DOUBLE-STRUCK YEH
+<Multi_key> <percent> <a> <d> <i> : "𞺩"  U1EEA9  # ARABIC MATHEMATICAL DOUBLE-STRUCK YEH
+<Multi_key> <percent> <a> <d> <l> : "𞺫"  U1EEAB  # ARABIC MATHEMATICAL DOUBLE-STRUCK LAM
+<Multi_key> <percent> <a> <d> <m> : "𞺬"  U1EEAC  # ARABIC MATHEMATICAL DOUBLE-STRUCK MEEM
+<Multi_key> <percent> <a> <d> <n> : "𞺭"  U1EEAD  # ARABIC MATHEMATICAL DOUBLE-STRUCK NOON
+<Multi_key> <percent> <a> <d> <s> : "𞺮"  U1EEAE  # ARABIC MATHEMATICAL DOUBLE-STRUCK SEEN
+<Multi_key> <percent> <a> <d> <3> : "𞺯"  U1EEAF  # ARABIC MATHEMATICAL DOUBLE-STRUCK AIN
+<Multi_key> <percent> <a> <d> <grave> : "𞺯"  U1EEAF  # ARABIC MATHEMATICAL DOUBLE-STRUCK AIN
+<Multi_key> <percent> <a> <d> <f> : "𞺰"  U1EEB0  # ARABIC MATHEMATICAL DOUBLE-STRUCK FEH
+<Multi_key> <percent> <A> <d> <s> : "𞺱"  U1EEB1  # ARABIC MATHEMATICAL DOUBLE-STRUCK SAD
+<Multi_key> <percent> <a> <d> <q> : "𞺲"  U1EEB2  # ARABIC MATHEMATICAL DOUBLE-STRUCK QAF
+<Multi_key> <percent> <a> <d> <r> : "𞺳"  U1EEB3  # ARABIC MATHEMATICAL DOUBLE-STRUCK REH
+<Multi_key> <percent> <a> <d> <S> : "𞺴"  U1EEB4  # ARABIC MATHEMATICAL DOUBLE-STRUCK SHEEN
+<Multi_key> <percent> <a> <d> <t> : "𞺵"  U1EEB5  # ARABIC MATHEMATICAL DOUBLE-STRUCK TEH
+<Multi_key> <percent> <a> <d> <T> : "𞺶"  U1EEB6  # ARABIC MATHEMATICAL DOUBLE-STRUCK THEH
+<Multi_key> <percent> <a> <d> <K> : "𞺷"  U1EEB7  # ARABIC MATHEMATICAL DOUBLE-STRUCK KHAH
+<Multi_key> <percent> <a> <d> <D> : "𞺸"  U1EEB8  # ARABIC MATHEMATICAL DOUBLE-STRUCK THAL
+<Multi_key> <percent> <A> <d> <d> : "𞺹"  U1EEB9  # ARABIC MATHEMATICAL DOUBLE-STRUCK DAD
+<Multi_key> <percent> <A> <d> <z> : "𞺺"  U1EEBA  # ARABIC MATHEMATICAL DOUBLE-STRUCK ZAH
+<Multi_key> <percent> <a> <d> <G> : "𞺻"  U1EEBB  # ARABIC MATHEMATICAL DOUBLE-STRUCK GHAIN
 
 ################
 # (A) Armenian #
@@ -15767,6 +16008,10 @@ include "%L"
 <Multi_key> <0> <slash>               : "∅"  U2205   # EMPTY SET (alternatively {})
 <Multi_key> <0> <backslash>           : "⦰"  U29B0  # REVERSED EMPTY SET
 <Multi_key> <less> <braceleft> <braceright> : "⦰"  U29B0  # REVERSED EMPTY SET
+<Multi_key> <minus> <Multi_key> <braceleft> <braceright>   : "⦱"  U29B1  # EMPTY SET WITH OVERBAR
+<Multi_key> <o> <Multi_key> <braceleft> <braceright>       : "⦲"  U29B2  # EMPTY SET WITH SMALL CIRCLE ABOVE
+<Multi_key> <greater> <Multi_key> <braceleft> <braceright> : "⦳"  U29B3  # EMPTY SET WITH RIGHT ARROW ABOVE
+<Multi_key> <less> <Multi_key> <braceleft> <braceright>    : "⦴"  U29B4  # EMPTY SET WITH LEFT ARROW ABOVE
 <Multi_key> <backslash> <bar>         : "∥"  U2225   # PARALLEL TO
 <Multi_key> <slash> <bar> <bar>       : "∦"  U2226   # NOT PARALLEL TO
 <Multi_key> <bar> <T>                 : "⊤"  U22A4   # DOWN TACK (TEE)
@@ -15805,6 +16050,12 @@ include "%L"
 <Multi_key> <equal> <question>        : "≟"  U225F   # QUESTIONED EQUAL TO
 <Multi_key> <equal> <equal>           : "≣"  U2263   # STRICTLY EQUIVALENT TO
 <Multi_key> <equal> <bar> <bar>       : "⋕"  U22D5   # EQUAL AND PARALLEL TO
+<Multi_key> <plus> <equal>            : "⩲"  U2A72   # PLUS SIGN ABOVE EQUALS SIGN
+<Multi_key> <equal> <plus>            : "⩱"  U2A71   # EQUALS SIGN ABOVE PLUS SIGN
+<Multi_key> <equal> <Multi_key> <8> <8> : "⯹"  U2BF9  # EQUALS SIGN WITH INFINITY BELOW
+<Multi_key> <asciicircum> <asciitilde> <asciitilde> <space> : "⩯"  U2A6F  # ALMOST EQUAL TO WITH CIRCUMFLEX ACCENT
+<Multi_key> <2> <equal>               : "⩵"  U2A75   # TWO CONSECUTIVE EQUALS SIGNS
+<Multi_key> <3> <equal>               : "⩶"  U2A76   # THREE CONSECUTIVE EQUALS SIGNS
 <Multi_key> <2> <less>                : "≪"  U226A   # MUCH LESS-THAN
 <Multi_key> <3> <less>                : "⋘"  U22D8   # VERY MUCH LESS-THAN
 <Multi_key> <2> <greater>             : "≫"  U226B   # MUCH GREATER-THAN
@@ -15827,6 +16078,7 @@ include "%L"
 <Multi_key> <backslash> <less>        : "⩽"  U2A7D   # LESS-THAN OR SLANTED EQUAL TO
 <Multi_key> <slash> <less>            : "⪕"  U2A95   # SLANTED EQUAL TO OR LESS-THAN (conflicts with useless \)
 <Multi_key> <backslash> <greater>     : "⪖"  U2A96   # SLANTED EQUAL TO OR GREATER-THAN
+<Multi_key> <greater> <less> <space>  : "⪥"  U2AA5  # GREATER-THAN BESIDE LESS-THAN (conflicts with ⋄, use diamond)
 
 <Multi_key> <equal> <Multi_key> <period>             : "≐"  U2250   # APPROACHES THE LIMIT
 <Multi_key> <equal> <Multi_key> <colon>              : "≑"  U2251   # GEOMETRICALLY EQUAL TO
@@ -15837,33 +16089,68 @@ include "%L"
 <Multi_key> <equal> <Multi_key> <greater>            : "≧"  U2267   # GREATER-THAN OVER EQUAL TO
 <Multi_key> <minus> <Multi_key> <period>             : "∸"  U2238   # DOT MINUS
 <Multi_key> <minus> <Multi_key> <colon>              : "∹"  U2239   # EXCESS (really should swap with ÷ but that's much more useful)
+<Multi_key> <asciitilde> <Multi_key> <period>        : "⩪"  U2A6A   # TILDE OPERATOR WITH DOT ABOVE
 
 <Multi_key> <slash> <Multi_key> <equal> <underscore> : "≢"  U2262   # NOT IDENTICAL TO
 <Multi_key> <less> <Multi_key> <slash> <equal>       : "≨"  U2268   # LESS-THAN BUT NOT EQUAL TO
-<Multi_key> <less> <Multi_key> <slash> <asciitilde>  : "⋦"  U22E6   # LESS-THAN BUT NOT EQUIVALENT TO
+<Multi_key> <less> <Multi_key> <slash> <asciitilde> <space> : "⋦"  U22E6   # LESS-THAN BUT NOT EQUIVALENT TO
+<Multi_key> <less> <Multi_key> <slash> <asciitilde> <asciitilde> : "⪉"  U2A89  # LESS-THAN AND NOT APPROXIMATE
+<Multi_key> <less> <Multi_key> <slash> <minus>       : "⪇"  U2A87  # LESS-THAN AND SINGLE-LINE NOT EQUAL TO
 <Multi_key> <greater> <Multi_key> <slash> <equal>    : "≩"  U2269   # GREATER-THAN BUT NOT EQUAL TO
-<Multi_key> <greater> <Multi_key> <slash> <asciitilde> : "⋧"  U22E7   # GREATER-THAN BUT NOT EQUIVALENT TO
+<Multi_key> <greater> <Multi_key> <slash> <asciitilde> <space> : "⋧"  U22E7   # GREATER-THAN BUT NOT EQUIVALENT TO
+<Multi_key> <greater> <Multi_key> <slash> <asciitilde> <asciitilde> : "⪊"  U2A8A  # GREATER-THAN AND NOT APPROXIMATE
+<Multi_key> <greater> <Multi_key> <slash> <minus>    : "⪈"  U2A88  # GREATER-THAN AND SINGLE-LINE NOT EQUAL TO
 <Multi_key> <slash> <Multi_key> <less> <equal>       : "≰"  U2270   # NEITHER LESS-THAN NOR EQUAL TO
 <Multi_key> <slash> <Multi_key> <greater> <equal>    : "≱"  U2271   # NEITHER GREATER-THAN NOR EQUAL TO
 <Multi_key> <slash> <Multi_key> <greater> <asciitilde> : "≵"  U2275   # NEITHER GREATER-THAN NOR EQUIVALENT TO
 <Multi_key> <slash> <Multi_key> <less> <asciitilde>  : "≴"  U2274   # NEITHER LESS-THAN NOR EQUIVALENT TO
 <Multi_key> <slash> <Multi_key> <less> <greater>     : "≸"  U2278   # NEITHER LESS-THAN NOR GREATER-THAN
 <Multi_key> <slash> <Multi_key> <greater> <less>     : "≹"  U2279   # NEITHER GREATER-THAN NOR LESS-THAN
-<Multi_key> <Multi_key> <less> <greater>             : "≶"  U2276   # LESS-THAN OR GREATER-THAN
-<Multi_key> <Multi_key> <greater> <less>             : "≷"  U2277   # GREATER-THAN OR LESS-THAN
-<Multi_key> <Multi_key> <less> <equal> <greater>     : "⋚"  U22DA   # LESS-THAN EQUAL TO OR GREATER-THAN
-<Multi_key> <Multi_key> <greater> <equal> <less>     : "⋛"  U22DB   # GREATER-THAN EQUAL TO OR LESS-THAN
 <Multi_key> <Multi_key> <less> <bar> <equal>         : "⊴"  U22B4   # NORMAL SUBGROUP OF OR EQUAL TO
 <Multi_key> <Multi_key> <greater> <bar> <equal>      : "⊵"  U22B5   # CONTAINS AS NORMAL SUBGROUP OR EQUAL TO
 <Multi_key> <slash> <Multi_key> <less> <bar>         : "⋪"  U22EA   # NOT NORMAL SUBGROUP OF
-<Multi_key> <slash> <Multi_key> <greater> <bar>     : "⋫"  U22EB   # DOES NOT CONTAIN AS NORMAL SUBGROUP
+<Multi_key> <slash> <Multi_key> <greater> <bar>      : "⋫"  U22EB   # DOES NOT CONTAIN AS NORMAL SUBGROUP
 <Multi_key> <slash> <Multi_key> <Multi_key> <less> <bar> <equal> : "⋬" U22EC   # NOT NORMAL SUBGROUP OF OR EQUAL TO
 <Multi_key> <slash> <Multi_key> <Multi_key> <greater> <bar> <equal> : "⋭" U22ED   # DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL
-<Multi_key> <Multi_key> <asciitilde> <asciitilde> <equal> : "≊" U224A   # ALMOST EQUAL OR EQUAL TO
+
+<Multi_key> <Multi_key> <asciitilde> <asciitilde> <minus> : "≊" U224A   # ALMOST EQUAL OR EQUAL TO
+<Multi_key> <Multi_key> <asciitilde> <minus> <asciitilde> : "⩬"  U2A6C  # SIMILAR MINUS SIMILAR
+<Multi_key> <Multi_key> <asciitilde> <asciitilde> <equal> : "⩰"  U2A70  # APPROXIMATELY EQUAL OR EQUAL TO
+<Multi_key> <Multi_key> <equal> <asciitilde>         : "⩳"  U2A73  # EQUALS SIGN ABOVE TILDE OPERATOR
+<Multi_key> <Multi_key> <minus> <less>               : "⋜"  U22DC  # EQUAL TO OR LESS-THAN
+<Multi_key> <Multi_key> <minus> <greater>            : "⋝"  U22DD  # EQUAL TO OR GREATER-THAN
+<Multi_key> <Multi_key> <less> <greater> <space>     : "≶"  U2276  # LESS-THAN OR GREATER-THAN
+<Multi_key> <Multi_key> <greater> <less> <space>     : "≷"  U2277  # GREATER-THAN OR LESS-THAN
+<Multi_key> <Multi_key> <less> <minus> <greater>     : "⋚"  U22DA  # LESS-THAN EQUAL TO OR GREATER-THAN
+<Multi_key> <Multi_key> <greater> <minus> <less>     : "⋛"  U22DB  # GREATER-THAN EQUAL TO OR LESS-THAN
+<Multi_key> <Multi_key> <less> <asciitilde> <asciitilde> : "⪅"  U2A85  # LESS-THAN OR APPROXIMATE
+<Multi_key> <Multi_key> <greater> <asciitilde> <asciitilde> : "⪆"  U2A86  # GREATER-THAN OR APPROXIMATE
+<Multi_key> <Multi_key> <less> <equal> <greater>     : "⪋"  U2A8B  # LESS-THAN ABOVE DOUBLE-LINE EQUAL ABOVE GREATER-THAN
+<Multi_key> <Multi_key> <greater> <equal> <less>     : "⪌"  U2A8C  # GREATER-THAN ABOVE DOUBLE-LINE EQUAL ABOVE LESS-THAN
+<Multi_key> <Multi_key> <less> <asciitilde> <minus>  : "⪍"  U2A8D  # LESS-THAN ABOVE SIMILAR OR EQUAL
+<Multi_key> <Multi_key> <greater> <asciitilde> <minus> : "⪎"  U2A8E  # GREATER-THAN ABOVE SIMILAR OR EQUAL
+<Multi_key> <Multi_key> <less> <asciitilde> <greater> : "⪏"  U2A8F  # LESS-THAN ABOVE SIMILAR ABOVE GREATER-THAN
+<Multi_key> <Multi_key> <greater> <asciitilde> <less> : "⪐"  U2A90  # GREATER-THAN ABOVE SIMILAR ABOVE LESS-THAN
+<Multi_key> <Multi_key> <less> <greater> <equal>     : "⪑"  U2A91  # LESS-THAN ABOVE GREATER-THAN ABOVE DOUBLE-LINE EQUAL
+<Multi_key> <Multi_key> <greater> <less> <equal>     : "⪒"  U2A92  # GREATER-THAN ABOVE LESS-THAN ABOVE DOUBLE-LINE EQUAL
+<Multi_key> <Multi_key> <less> <backslash> <greater> <slash> : "⪓"  U2A93  # LESS-THAN ABOVE SLANTED EQUAL ABOVE GREATER-THAN ABOVE SLANTED EQUAL
+<Multi_key> <Multi_key> <greater> <slash> <less> <backslash> : "⪔"  U2A94  # GREATER-THAN ABOVE SLANTED EQUAL ABOVE LESS-THAN ABOVE SLANTED EQUAL
+<Multi_key> <Multi_key> <equal> <less>               : "⪙"  U2A99  # DOUBLE-LINE EQUAL TO OR LESS-THAN
+<Multi_key> <Multi_key> <equal> <greater>            : "⪚"  U2A9A  # DOUBLE-LINE EQUAL TO OR GREATER-THAN
+<Multi_key> <Multi_key> <slash> <slash> <less>       : "⪛"  U2A9B  # DOUBLE-LINE SLANTED EQUAL TO OR LESS-THAN
+<Multi_key> <Multi_key> <backslash> <backslash> <greater> : "⪜"  U2A9C  # DOUBLE-LINE SLANTED EQUAL TO OR GREATER-THAN
+<Multi_key> <Multi_key> <asciitilde> <less> <space>  : "⪝"  U2A9D  # SIMILAR OR LESS-THAN
+<Multi_key> <Multi_key> <asciitilde> <greater> <space> : "⪞"  U2A9E  # SIMILAR OR GREATER-THAN
+<Multi_key> <Multi_key> <asciitilde> <less> <equal>  : "⪟"  U2A9F  # SIMILAR ABOVE LESS-THAN ABOVE EQUALS SIGN
+<Multi_key> <Multi_key> <asciitilde> <greater> <equal> : "⪠"  U2AA0  # SIMILAR ABOVE GREATER-THAN ABOVE EQUALS SIGN
+<Multi_key> <Multi_key> <less> <backslash> <backslash> : "⫹"  U2AF9  # DOUBLE-LINE SLANTED LESS-THAN OR EQUAL TO
+<Multi_key> <Multi_key> <greater> <slash> <slash>    : "⫺"  U2AFA  # DOUBLE-LINE SLANTED GREATER-THAN OR EQUAL TO
+
 <Multi_key> <parenleft> <plus> <parenright>          : "⊕"  U2295   # CIRCLED PLUS
 <Multi_key> <parenleft> <minus> <parenright>         : "⊖"  U2296   # CIRCLED MINUS (conflicts with useless {)
 <Multi_key> <parenleft> <asterisk> <parenright>      : "⊗"  U2297   # CIRCLED TIMES
 <Multi_key> <parenleft> <slash> <parenright>         : "⊘"  U2298   # CIRCLED DIVISION SLASH
+<Multi_key> <parenleft> <period> <parenright>        : "⊙"  U2299  # CIRCLED DOT OPERATOR
 <Multi_key> <parenleft> <backslash> <parenright>     : "⦸"  U29B8   # CIRCLED REVERSE SOLIDUS
 <Multi_key> <parenleft> <less> <parenright>          : "⧀"  U29C0   # CIRCLED LESS-THAN
 <Multi_key> <parenleft> <greater> <parenright>       : "⧁"  U29C1   # CIRCLED GREATER-THAN
@@ -15926,6 +16213,8 @@ include "%L"
 <Multi_key> <C> <U> <P>                 : "⋃"  U22C3   # N-ARY UNION
 <Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN (overrides di)
 <Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter) (use gem for 💎)
+<Multi_key> <d> <i> <j> <k>             : "⫾"  U2AFE  # WHITE VERTICAL BAR (conflicts with ⌀, use diameter) (DIJKSTRA'S CHOICE)
+<Multi_key> <D> <I> <J> <K>             : "⫿"  U2AFF  # N-ARY WHITE VERTICAL BAR (DIJKSTRA'S CHOICE)
 <Multi_key> <e> <x> <i> <s> <t> <s>     : "∃"  U2203   # THERE EXISTS
 <Multi_key> <f> <o> <r> <a> <l> <l>     : "∀"  U2200   # FOR ALL
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
@@ -15958,14 +16247,22 @@ include "%L"
 <Multi_key> <n> <s> <u> <c> <c> <e> <q> : "⋡"  U22E1   # DOES NOT SUCCEED OR EQUAL
 <Multi_key> <n> <s> <u> <p> <space>     : "⊅"  U2285   # NOT A SUPERSET OF
 <Multi_key> <n> <s> <u> <p> <e> <q>     : "⊉"  U2289   # NEITHER A SUPERSET OF NOR EQUAL TO
+<Multi_key> <o> <d> <o> <t>             : "⊙"  U2299  # CIRCLED DOT OPERATOR (alternatively (.))
+<Multi_key> <O> <D> <O> <T>             : "⨀"  U2A00   # N-ARY CIRCLED DOT OPERATOR
 <Multi_key> <o> <i> <i> <i> <n> <t>     : "∰"  U2230   # VOLUME INTEGRAL
 <Multi_key> <o> <i> <i> <n> <t>         : "∯"  U222F   # SURFACE INTEGRAL
 <Multi_key> <o> <i> <n> <t>             : "∮"  U222E   # CONTOUR INTEGRAL
+<Multi_key> <o> <m> <i> <n> <u> <s>     : "⊖"  U2296  # CIRCLED MINUS (alternatively (-))
+<Multi_key> <o> <p> <l> <u> <s>         : "⊕"  U2295  # CIRCLED PLUS (alternatively (+))
+<Multi_key> <O> <P> <L> <U> <S>         : "⨁"  U2A01  # N-ARY CIRCLED PLUS OPERATOR
+<Multi_key> <o> <t> <i> <m> <e> <s>     : "⊗"  U2297  # CIRCLED TIMES
+<Multi_key> <O> <T> <I> <M> <E> <S>     : "⨂"  U2A02  # N-ARY CIRCLED TIMES OPERATOR
 <Multi_key> <p> <r> <e> <c> <space>     : "≺"  U227A   # PRECEDES
 <Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
 <Multi_key> <p> <r> <e> <c> <s> <i> <m> : "≾"  U227E   # PRECEDES OR EQUIVALENT TO
 <Multi_key> <p> <r> <o> <d>             : "∏"  U220F   # N-ARY PRODUCT
 <Multi_key> <p> <r> <o> <p>             : "∝"  U221D   # PROPORTIONAL TO
+<Multi_key> <Q> <E> <D>                 : "∎"  U220E   # END OF PROOF
 <Multi_key> <r> <a> <n> <g> <l> <e>     : "∟"  U221F   # RIGHT ANGLE
 <Multi_key> <s> <i> <n> <e>             : "∿"  U223F   # SINE WAVE
 <Multi_key> <s> <i> <n> <t>             : "⨋"  U2A0B   # SUMMATION WITH INTEGRAL
@@ -16004,15 +16301,18 @@ include "%L"
 <Multi_key> <s> <u> <p> <period>        : "⪾"  U2ABE   # SUPERSET WITH DOT
 <Multi_key> <s> <u> <p> <plus>          : "⫀"  U2AC0   # SUPERSET WITH PLUS SIGN BELOW
 <Multi_key> <s> <u> <p> <asterisk>      : "⫂"  U2AC2   # SUPERSET WITH MULTIPLICATION SIGN BELOW
+<Multi_key> <t> <i> <m> <e> <s>         : "×"  U00D7   # MULTIPLICATION SIGN (alternatively xx)
+<Multi_key> <T> <I> <M> <E> <S>         : "⨉"  U2A09   # N-ARY TIMES OPERATOR
+<Multi_key> <U> <D> <O> <T>             : "⨃"  U2A03  # N-ARY UNION OPERATOR WITH DOT
+<Multi_key> <U> <P> <L> <U> <S>         : "⨄"  U2A04  # N-ARY UNION OPERATOR WITH PLUS
 <Multi_key> <w> <r> <e> <a> <t> <h>     : "≀"   U2240   # WREATH PRODUCT
 <Multi_key> <x> <o> <r>                 : "⊻"  U22BB   # XOR (conflicts with ¤, use ox)
-<Multi_key> <Q> <E> <D>                 : "∎"  U220E   # END OF PROOF
 
 # Logic symbols (start with &)
 
-<Multi_key> <ampersand> <asciitilde>  : "¬"  U00AC   # NOT SIGN
-<Multi_key> <ampersand> <asciicircum> : "∧"  U2227   # LOGICAL AND
-<Multi_key> <ampersand> <v>           : "∨"  U2228   # LOGICAL OR
+<Multi_key> <ampersand> <asciitilde>  : "¬"  U00AC   # NOT SIGN (alternatively -,)
+<Multi_key> <ampersand> <asciicircum> : "∧"  U2227   # LOGICAL AND (alternatively /\)
+<Multi_key> <ampersand> <V>           : "∨"  U2228   # LOGICAL OR (alternatively \/)
 <Multi_key> <ampersand> <T>           : "⊤"  U22A4   # DOWN TACK (TEE)
 <Multi_key> <ampersand> <F>           : "⊥"  U22A5   # UP TACK
 <Multi_key> <ampersand> <A>           : "∀"  U2200   # FOR ALL
@@ -16036,9 +16336,10 @@ include "%L"
 <Multi_key> <ampersand> <less> <slash> <equal>       : "⇍"  U21CD   # LEFTWARDS DOUBLE ARROW WITH STROKE
 <Multi_key> <ampersand> <less> <equal> <greater>     : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
 <Multi_key> <ampersand> <less> <equal> <slash> <greater>  : "⇎"  U21CE   # LEFT RIGHT DOUBLE ARROW WITH STROKE
+
 <Multi_key> <ampersand> <bar> <minus> <space>        : "⊦"  U22A6   # ASSERTION
 <Multi_key> <ampersand> <bar> <minus> <minus>        : "⊢"  U22A2   # RIGHT TACK (PROVES)
-<Multi_key> <ampersand> <minus> <bar>                : "⊣"  U22A3   # LEFT TACK
+<Multi_key> <ampersand> <minus> <minus> <bar>        : "⊣"  U22A3   # LEFT TACK
 <Multi_key> <ampersand> <bar> <equal> <space>        : "⊧"  U22A7   # MODELS
 <Multi_key> <ampersand> <bar> <equal> <equal>        : "⊨"  U22A8   # TRUE (MODELS)
 <Multi_key> <ampersand> <bar> <bar> <minus>          : "⊩"  U22A9   # FORCES
@@ -16048,6 +16349,27 @@ include "%L"
 <Multi_key> <ampersand> <bar> <slash> <equal>        : "⊭"  U22AD   # NOT TRUE (DOES NOT MODEL)
 <Multi_key> <ampersand> <bar> <bar> <slash> <minus>  : "⊮"  U22AE   # DOES NOT FORCES
 <Multi_key> <ampersand> <bar> <bar> <slash> <equal>  : "⊯"  U22AF   # NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE
+<Multi_key> <ampersand> <equal> <bar> <equal>        : "⟚" U27DA   # LEFT AND RIGHT DOUBLE TURNSTILE
+<Multi_key> <ampersand> <minus> <bar> <minus>        : "⟛" U27DB   # LEFT AND RIGHT TACK
+<Multi_key> <ampersand> <space> <minus> <bar>        : "⫞"  U2ADE   # SHORT LEFT TACK
+<Multi_key> <ampersand> <bar> <3> <equal>            : "⫢"  U2AE2   # VERTICAL BAR TRIPLE RIGHT TURNSTILE
+<Multi_key> <ampersand> <minus> <bar> <bar>          : "⫣"  U2AE3   # DOUBLE VERTICAL BAR LEFT TURNSTILE
+<Multi_key> <ampersand> <equal> <equal> <bar>        : "⫤"  U2AE4   # VERTICAL BAR DOUBLE LEFT TURNSTILE
+<Multi_key> <ampersand> <equal> <bar> <bar>          : "⫥"  U2AE5   # DOUBLE VERTICAL BAR DOUBLE LEFT TURNSTILE
+
+<Multi_key> <ampersand> <v> <bar> <minus> <minus> : "⊤"  U22A4  # DOWN TACK
+<Multi_key> <ampersand> <v> <minus> <minus> <bar> : "⊥"  U22A5  # UP TACK
+<Multi_key> <ampersand> <v> <minus> <bar> <bar> : "⍊"  U234A  # APL FUNCTIONAL SYMBOL DOWN TACK UNDERBAR
+<Multi_key> <ampersand> <v> <bar> <bar> <minus> : "⍑"  U2351  # APL FUNCTIONAL SYMBOL UP TACK OVERBAR
+<Multi_key> <ampersand> <v> <minus> <o> <bar> : "⍎"  U234E  # APL FUNCTIONAL SYMBOL DOWN TACK JOT
+<Multi_key> <ampersand> <v> <bar> <o> <minus> : "⍕"  U2355  # APL FUNCTIONAL SYMBOL UP TACK JOT
+<Multi_key> <ampersand> <v> <o> <minus> <bar> : "⟟"  U27DF  # UP TACK WITH CIRCLE ABOVE
+<Multi_key> <ampersand> <v> <bar> <minus> <o> : "⫱"  U2AF1  # DOWN TACK WITH CIRCLE BELOW
+<Multi_key> <ampersand> <v> <bar> <minus> <space> : "⫟"  U2ADF  # SHORT DOWN TACK
+<Multi_key> <ampersand> <v> <space> <minus> <bar> : "⫠"  U2AE0  # SHORT UP TACK
+<Multi_key> <ampersand> <v> <minus> <bar> <minus> : "⫩"  U2AE9  # SHORT UP TACK ABOVE SHORT DOWN TACK
+<Multi_key> <ampersand> <v> <bar> <equal> <equal> : "⫪"  U2AEA  # DOUBLE DOWN TACK
+<Multi_key> <ampersand> <v> <equal> <equal> <bar> : "⫫"  U2AEB  # DOUBLE UP TACK
 
 #########
 # Emoji #
@@ -18174,7 +18496,7 @@ include "%L"
 <Multi_key> <braceright> <c> <y> <c> <l> <o> <p> : "𖨆"  U16A06  # BAMUM LETTER PHASE-F EE (CYCLOPS)
 <Multi_key> <braceright> <f> <a> <n> : "𖣘"  U168D8  # BAMUM LETTER PHASE-C MA NSIEE (FAN)
 <Multi_key> <braceright> <g> <e> <c> <k> <o> : "𖠊"  U1680A  # BAMUM LETTER PHASE-A PON PA NJI PIPAEMBA (GECKO)
-<Multi_key> <braceright> <h> <o> <o> <d> <i> <e> : "𖠦"  U16826  # BAMUM LETTER PHASE-A MOOMPUQ
+<Multi_key> <braceright> <h> <o> <o> <d> <i> <e> : "𖠦"  U16826  # BAMUM LETTER PHASE-A MOOMPUQ (HOODIE)
 <Multi_key> <braceright> <j> <e> <w> <i> <s> <h> : "𖢹"  U168B9  # BAMUM LETTER PHASE-C NTEUNGBA (JEWISH)
 <Multi_key> <braceright> <m> <a> <n> : "𖠋"  U1680B  # BAMUM LETTER PHASE-A MAEMBGBIEE (PANTS)
 <Multi_key> <braceright> <M> <a> <n> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (ISLE OF MAN)
@@ -18238,10 +18560,19 @@ include "%L"
 <Multi_key> <bracketleft> <bracketright> <slash>       : "⧄" U29C4    # SQUARED RISING DIAGONAL SLASH (conflicts)
 <Multi_key> <bracketleft> <bracketright> <backslash>   : "⧅" U29C5    # SQUARED FALLING DIAGONAL SLASH (conflicts)
 <Multi_key> <bracketleft> <bracketright> <plus>        : "⊞" U229E    # SQUARED PLUS (conflicts)
+<Multi_key> <bracketleft> <bracketright> <minus>       : "⊟" U229F    # SQUARED MINUS (conflicts)
+<Multi_key> <bracketleft> <bracketright> <period>      : "⊡" U22A1    # SQUARED DOT OPERATOR (conflicts)
 <Multi_key> <bracketleft> <bracketright> <X>           : "⊠" U22A0    # SQUARED TIMES (conflicts)
 <Multi_key> <bracketleft> <bracketright> <o>           : "⧇" U29C7    # SQUARED SMALL CIRCLE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <0>       : "⧈" U29C8    # SQUARED SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <c>           : "▢" U25A2    # WHITE SQUARE WITH ROUNDED CORNERS (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <minus>      : "▤" U25A4   # SQUARE WITH HORIZONTAL FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <bar>        : "▥" U25A5   # SQUARE WITH VERTICAL FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <numbersign> : "▦" U25A6   # SQUARE WITH ORTHOGONAL CROSSHATCH FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <backslash>  : "▧" U25A7   # SQUARE WITH UPPER LEFT TO LOWER RIGHT FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <slash>      : "▨" U25A8   # SQUARE WITH UPPER RIGHT TO LOWER LEFT FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <X>          : "▩" U25A9   # SQUARE WITH DIAGONAL CROSSHATCH FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Return>      : "⃞" U20DE   # COMBINING ENCLOSING SQUARE (conflicts)
 
 <Multi_key> <bracketleft> <less> <greater> <bracketright> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE
@@ -18269,11 +18600,18 @@ include "%L"
 <Multi_key> <parenleft> <parenright> <L> <L> <Q>   : "◵" U25F5    # WHITE CIRCLE WITH LOWER LEFT QUADRANT
 <Multi_key> <parenleft> <parenright> <L> <R> <Q>   : "◶" U25F6    # WHITE CIRCLE WITH LOWER RIGHT QUADRANT
 <Multi_key> <parenleft> <parenright> <U> <R> <Q>   : "◷" U25F7    # WHITE CIRCLE WITH UPPER RIGHT QUADRANT
+<Multi_key> <parenleft> <parenright> <U> <R> <1>   : "◔" U25D4    # CIRCLE WITH UPPER RIGHT QUADRANT BLACK
+<Multi_key> <parenleft> <parenright> <U> <L> <0>   : "◕" U25D5    # CIRCLE WITH ALL BUT UPPER LEFT QUADRANT BLACK
+<Multi_key> <parenleft> <parenright> <space> <period> <0> : "⚆" U2686  # WHITE CIRCLE WITH DOT RIGHT
+<Multi_key> <parenleft> <parenright> <space> <period> <1> : "⚈" U2688  # BLACK CIRCLE WITH WHITE DOT RIGHT
+<Multi_key> <parenleft> <parenright> <quotedbl> <0> : "⚇" U2687  # WHITE CIRCLE WITH TWO DOTS
+<Multi_key> <parenleft> <parenright> <quotedbl> <1> : "⚉" U2689  # BLACK CIRCLE WITH TWO WHITE DOTS
 <Multi_key> <parenleft> <parenright> <plus>        : "⊕" U2295   # CIRCLED PLUS (alternatively (+))
 <Multi_key> <parenleft> <parenright> <minus>       : "⊖" U2296   # CIRCLED MINUS (alternatively (-))
 <Multi_key> <parenleft> <parenright> <X>           : "⊗" U2297   # CIRCLED TIMES (alternatively (*))
 <Multi_key> <parenleft> <parenright> <slash>       : "⊘" U2298   # CIRCLED DIVISION SLASH (alternatively (/))
 <Multi_key> <parenleft> <parenright> <colon> <minus> : "⨸"  U2A38   # CIRCLED DIVISION SIGN (alternativey (-:))
+<Multi_key> <parenleft> <parenright> <bar>         : "⦶"  U29B6  # CIRCLED VERTICAL BAR
 <Multi_key> <parenleft> <parenright> <bracketleft> <bracketright> : "🟗" U1F7D7   # CIRCLED SQUARE (alternatively ([]))
 <Multi_key> <parenleft> <parenright> <Multi_key> <asciicircum> <period> : "⊙" U2299    # CIRCLED DOT OPERATOR
 <Multi_key> <parenleft> <parenright> <Multi_key> <period> <minus> : "⊙" U2299    # CIRCLED DOT OPERATOR
@@ -18282,6 +18620,9 @@ include "%L"
 <Multi_key> <parenleft> <parenright> <equal>       : "⊜" U229C    # CIRCLED EQUALS
 <Multi_key> <parenleft> <parenright> <2> <0>       : "◎" U25CE    # BULLSEYE
 <Multi_key> <parenleft> <parenright> <2> <1>       : "◉" U25C9    # FISHEYE
+<Multi_key> <parenleft> <parenright> <Multi_key> <bar>   : "◍" U25CD    # CIRCLE WITH VERTICAL FILL
+<Multi_key> <parenleft> <parenright> <Multi_key> <minus> : "⦵"  U29B5  # CIRCLE WITH HORIZONTAL BAR
+<Multi_key> <parenleft> <parenright> <Multi_key> <X>     : "⦻"  U29BB  # CIRCLE WITH SUPERIMPOSED X
 <Multi_key> <parenleft> <parenright> <Return>      : "⃝" U20DD   # COMBINING ENCLOSING CIRCLE
 <Multi_key> <parenleft> <parenright> <backslash> <Return> : "⃠" U20E0   # COMBINING ENCLOSING CIRCLE BACKSLASH
 
@@ -18298,17 +18639,15 @@ include "%L"
 
 <Multi_key> <bracketleft> <space> <bracketright> <0> : "▭" U25AD    # WHITE RECTANGLE
 <Multi_key> <bracketleft> <space> <bracketright> <1> : "▬" U25AC    # BLACK RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
+<Multi_key> <bracketleft> <space> <bracketright> <X> : "⌧" U2327   # X IN A RECTANGLE BOX
+<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> : "⮹"  U2BB9  # UP ARROWHEAD IN A RECTANGLE BOX
+<Multi_key> <bracketleft> <space> <bracketright> <Return> : "⃢" U20E2   # COMBINING ENCLOSING SCREEN
 <Multi_key> <bracketleft> <space> <bracketright> <v> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
 <Multi_key> <bracketleft> <space> <bracketright> <v> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <X> : "⌧" U2327   # X IN A RECTANGLE BOX
-<Multi_key> <bracketleft> <space> <bracketright> <Return> : "⃢" U20E2   # COMBINING ENCLOSING SCREEN
+<Multi_key> <bracketleft> <space> <bracketright> <v> <minus> : "𜸆"  U1CE06  # WHITE VERTICAL RECTANGLE WITH HORIZONTAL BAR
 
 <Multi_key> <parenleft> <space> <parenright> <0> : "⬭" U2B2D    # WHITE HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <1> : "⬬" U2B2C    # BLACK HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
-<Multi_key> <parenleft> <space> <parenright> <asciicircum> <0> : "⬯" U2B2F    # WHITE VERTICAL ELLIPSE (conflicts with ˘, use ␣()
-<Multi_key> <parenleft> <space> <parenright> <asciicircum> <1> : "⬮" U2B2E    # BLACK VERTICAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <v> <0> : "⬯" U2B2F    # WHITE VERTICAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <v> <1> : "⬮" U2B2E    # BLACK VERTICAL ELLIPSE (conflicts with ˘, use ␣()
 
@@ -18325,7 +18664,9 @@ include "%L"
 <Multi_key> <Tab> <slash> <backslash> <plus> : "⨹" U2A39   # PLUS SIGN IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <minus> : "⨺" U2A3A   # MINUS SIGN IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <X> : "⨻" U2A3B   # MULTIPLICATION SIGN IN TRIANGLE
+<Multi_key> <Tab> <slash> <backslash> <s> : "⧌"  U29CC  # S IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <period> : "⧊" U29CA   # TRIANGLE WITH DOT ABOVE
+<Multi_key> <Tab> <slash> <backslash> <underscore> : "⧋"  U29CB  # TRIANGLE WITH UNDERBAR
 <Multi_key> <Tab> <slash> <backslash> <Return> : "⃤" U20E4   # COMBINING ENCLOSING UPWARD POINTING TRIANGLE
 
 <Multi_key> <Tab> <bar> <greater> <0>   : "▷" U25B7    # WHITE RIGHT-POINTING TRIANGLE
@@ -18335,6 +18676,12 @@ include "%L"
 <Multi_key> <Tab> <backslash> <slash> <1> : "▼" U25BC    # BLACK DOWN-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <0>      : "◁" U25C1    # WHITE LEFT-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <1>      : "◀" U25C0    # BLACK LEFT-POINTING TRIANGLE
+
+<Multi_key> <Tab> <slash> <backslash> <Multi_key> <asciicircum> <bar> : "🢕"  U1F895  # UPWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <bar> <greater> <Multi_key> <minus> <greater> : "🢖"  U1F896  # RIGHTWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <backslash> <slash> <Multi_key> <bar> <v> : "🢗"  U1F897  # DOWNWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <less> <bar> <Multi_key> <less> <minus> : "🢔"  U1F894  # LEFTWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
+
 <Multi_key> <Tab> <slash> <bar> <0>     : "◿" U25FF    # LOWER RIGHT TRIANGLE
 <Multi_key> <Tab> <slash> <bar> <1>     : "◢" U25E2    # BLACK LOWER RIGHT TRIANGLE
 <Multi_key> <Tab> <bar> <backslash> <0> : "◺" U25FA    # LOWER LEFT TRIANGLE
@@ -18360,10 +18707,12 @@ include "%L"
 <Multi_key> <Tab> <less> <greater> <2> <1>       : "🞛" U1F79B   # WHITE DIAMOND CONTAINING BLACK MEDIUM DIAMOND
 <Multi_key> <Tab> <less> <greater> <period>      : "⟐" U27D0   # WHITE DIAMOND WITH CENTRED DOT
 <Multi_key> <Tab> <less> <greater> <question>    : "�" UFFFD   # REPLACEMENT CHARACTER
+<Multi_key> <Tab> <less> <greater> <underscore>  : "⍚"  U235A  # APL FUNCTIONAL SYMBOL DIAMOND UNDERBAR
 <Multi_key> <Tab> <less> <greater> <Return>      : "⃟" U20DF   # COMBINING ENCLOSING DIAMOND
 
 <Multi_key> <Tab> <less> <asciicircum> <greater> <0>     : "◊"  U25CA  # LOZENGE
 <Multi_key> <Tab> <less> <asciicircum> <greater> <1>     : "⧫"  U29EB  # BLACK LOZENGE
+<Multi_key> <Tab> <less> <asciicircum> <greater> <2> <1> : "🞠"  U1F7A0  # WHITE LOZENGE CONTAINING BLACK SMALL LOZENGE
 <Multi_key> <Tab> <less> <asciicircum> <greater> <minus> : "⟠"  U27E0  # LOZENGE DIVIDED BY HORIZONTAL RULE
 <Multi_key> <Tab> <less> <asciicircum> <greater> <bracketleft> <bracketright> : "⌑"  U2311  # SQUARE LOZENGE
 
@@ -18392,6 +18741,7 @@ include "%L"
 <Multi_key> <Tab> <asterisk> <6> <minus> : "✡" U2721    # STAR OF DAVID (alternatively *6)
 <Multi_key> <Tab> <asterisk> <8> <1> : "✴" U2734    # EIGHT POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <8> <O> : "❂" U2742    # CIRCLED OPEN CENTRE EIGHT POINTED STAR
+<Multi_key> <Tab> <asterisk> <8> <minus> : "۞"  U06DE  # ARABIC START OF RUB EL HIZB
 <Multi_key> <Tab> <asterisk> <9> <0> : "🟙" U1F7D9    # NINE POINTED WHITE STAR
 <Multi_key> <Tab> <asterisk> <1> <2> <1> : "✹" U2739    # TWELVE POINTED BLACK STAR
 
