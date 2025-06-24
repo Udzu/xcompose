@@ -57,6 +57,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Music** (112): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (358): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
+* **I Ching** (79): ䷇ ☰☷☲☵ etc
 * **Hieroglyphs** (356): 𓁖 𓁹 𓃠 etc
 * **Arrows** (311): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
 * **Geometric shapes** (201): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
