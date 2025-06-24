@@ -1315,6 +1315,32 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <less> <N> : "ᴎ"  U1D0E  # LATIN LETTER SMALL CAPITAL REVERSED N (conflicts)
 <Multi_key> <underscore> <asciicircum> <less> <R> : "ᴙ"  U1D19  # LATIN LETTER SMALL CAPITAL REVERSED R (conflicts)
 
+# (small form variants: not actually small capitals, but fit nicely here)
+
+<Multi_key> <underscore> <asciicircum> <comma>      : "﹐"  UFE50  # SMALL COMMA (conflicts)
+<Multi_key> <underscore> <asciicircum> <period>     : "﹒"  UFE52  # SMALL FULL STOP (conflicts)
+<Multi_key> <underscore> <asciicircum> <semicolon>  : "﹔"  UFE54  # SMALL SEMICOLON (conflicts)
+<Multi_key> <underscore> <asciicircum> <colon>      : "﹕"  UFE55  # SMALL COLON (conflicts)
+<Multi_key> <underscore> <asciicircum> <question>   : "﹖"  UFE56  # SMALL QUESTION MARK (conflicts)
+<Multi_key> <underscore> <asciicircum> <exclam>     : "﹗"  UFE57  # SMALL EXCLAMATION MARK (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <minus> <minus> <minus> : "﹘"  UFE58  # SMALL EM DASH (conflicts)
+<Multi_key> <underscore> <asciicircum> <parenleft>  : "﹙"  UFE59  # SMALL LEFT PARENTHESIS (conflicts)
+<Multi_key> <underscore> <asciicircum> <parenright> : "﹚"  UFE5A  # SMALL RIGHT PARENTHESIS (conflicts)
+<Multi_key> <underscore> <asciicircum> <braceleft>  : "﹛"  UFE5B  # SMALL LEFT CURLY BRACKET (conflicts)
+<Multi_key> <underscore> <asciicircum> <braceright> : "﹜"  UFE5C  # SMALL RIGHT CURLY BRACKET (conflicts)
+<Multi_key> <underscore> <asciicircum> <numbersign> : "﹟"  UFE5F  # SMALL NUMBER SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <ampersand>  : "﹠"  UFE60  # SMALL AMPERSAND (conflicts)
+<Multi_key> <underscore> <asciicircum> <asterisk>   : "﹡"  UFE61  # SMALL ASTERISK (conflicts)
+<Multi_key> <underscore> <asciicircum> <plus>       : "﹢"  UFE62  # SMALL PLUS SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <minus>      : "﹣"  UFE63  # SMALL HYPHEN-MINUS (conflicts)
+<Multi_key> <underscore> <asciicircum> <less>       : "﹤"  UFE64  # SMALL LESS-THAN SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <greater>    : "﹥"  UFE65  # SMALL GREATER-THAN SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <equal>      : "﹦"  UFE66  # SMALL EQUALS SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <backslash>  : "﹨"  UFE68  # SMALL REVERSE SOLIDUS (conflicts)
+<Multi_key> <underscore> <asciicircum> <dollar>     : "﹩"  UFE69  # SMALL DOLLAR SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <percent>    : "﹪"  UFE6A  # SMALL PERCENT SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <at>         : "﹫"  UFE6B  # SMALL COMMERCIAL AT (conflicts)
+
 # combining letters above: ^^x[Return]
 
 <Multi_key> <asciicircum> <asciicircum> <a> <Return> : "ͣ" U0363   # COMBINING LATIN SMALL LETTER A
@@ -16090,6 +16116,10 @@ include "%L"
 <Multi_key> <minus> <Multi_key> <period>             : "∸"  U2238   # DOT MINUS
 <Multi_key> <minus> <Multi_key> <colon>              : "∹"  U2239   # EXCESS (really should swap with ÷ but that's much more useful)
 <Multi_key> <asciitilde> <Multi_key> <period>        : "⩪"  U2A6A   # TILDE OPERATOR WITH DOT ABOVE
+<Multi_key> <less> <Multi_key> <minus>               : "⪪"  U2AAA  # SMALLER THAN
+<Multi_key> <less> <Multi_key> <equal>               : "⪬"  U2AAC  # SMALLER THAN OR EQUAL TO
+<Multi_key> <greater> <Multi_key> <minus>            : "⪫"  U2AAB  # LARGER THAN
+<Multi_key> <greater> <Multi_key> <equal>            : "⪭"  U2AAD  # LARGER THAN OR EQUAL TO
 
 <Multi_key> <slash> <Multi_key> <equal> <underscore> : "≢"  U2262   # NOT IDENTICAL TO
 <Multi_key> <less> <Multi_key> <slash> <equal>       : "≨"  U2268   # LESS-THAN BUT NOT EQUAL TO
@@ -16288,6 +16318,12 @@ include "%L"
 <Multi_key> <s> <u> <b> <period>        : "⪽"  U2ABD   # SUBSET WITH DOT
 <Multi_key> <s> <u> <b> <plus>          : "⪿"  U2ABF   # SUBSET WITH PLUS SIGN BELOW
 <Multi_key> <s> <u> <b> <asterisk>      : "⫁"  U2AC1   # SUBSET WITH MULTIPLICATION SIGN BELOW
+<Multi_key> <s> <u> <b> <greater>       : "⥹"  U2979   # SUBSET ABOVE RIGHTWARDS ARROW
+<Multi_key> <s> <u> <b> <minus> <period> : "⫃"  U2AC3  # SUBSET OF OR EQUAL TO WITH DOT ABOVE
+<Multi_key> <s> <u> <b> <equal>         : "⫅"  U2AC5  # SUBSET OF ABOVE EQUALS SIGN
+<Multi_key> <s> <u> <b> <asciitilde> <asciitilde> : "⫉"  U2AC9  # SUBSET OF ABOVE ALMOST EQUAL TO
+<Multi_key> <s> <u> <b> <slash> <equal> : "⫋"  U2ACB  # SUBSET OF ABOVE NOT EQUAL TO
+<Multi_key> <backslash> <s> <u> <b>     : "⟈"  U27C8  # REVERSE SOLIDUS PRECEDING SUBSET
 <Multi_key> <s> <u> <c> <c> <space>     : "≻"  U227B   # SUCCEEDS
 <Multi_key> <s> <u> <c> <c> <e> <q>     : "≽"  U227D   # SUCCEEDS OR EQUAL TO
 <Multi_key> <s> <u> <c> <c> <s> <i> <m> : "≿"  U227F   # SUCCEEDS OR EQUIVALENT TO
@@ -16297,16 +16333,29 @@ include "%L"
 <Multi_key> <s> <u> <p> <e> <q>         : "⊇"  U2287   # SUPERSET OF OR EQUAL TO
 <Multi_key> <s> <u> <p> <n> <e> <q>     : "⊋"  U228B   # SUPERSET OF WITH NOT EQUAL TO
 <Multi_key> <s> <u> <p> <s> <i> <m>     : "⫈"  U2AC8   # SUPERSET OF ABOVE TILDE OPERATOR
+<Multi_key> <s> <u> <p> <s> <u> <b>     : "⫗" U2AD7   # SUPERSET BESIDE SUBSET
+<Multi_key> <s> <u> <p> <minus> <s> <u> <b> : "⫘"  U2AD8  # SUPERSET BESIDE AND JOINED BY DASH WITH SUBSET
 <Multi_key> <s> <u> <p> <o>             : "⟄"  U27C4   # OPEN SUPERSET
 <Multi_key> <s> <u> <p> <period>        : "⪾"  U2ABE   # SUPERSET WITH DOT
 <Multi_key> <s> <u> <p> <plus>          : "⫀"  U2AC0   # SUPERSET WITH PLUS SIGN BELOW
 <Multi_key> <s> <u> <p> <asterisk>      : "⫂"  U2AC2   # SUPERSET WITH MULTIPLICATION SIGN BELOW
+<Multi_key> <s> <u> <p> <less>          : "⥻"  U297B   # SUPERSET ABOVE LEFTWARDS ARROW
+<Multi_key> <s> <u> <p> <minus> <period> : "⫄"  U2AC4  # SUPERSET OF OR EQUAL TO WITH DOT ABOVE
+<Multi_key> <s> <u> <p> <equal>         : "⫆"  U2AC6   # SUPERSET OF ABOVE EQUALS SIGN
+<Multi_key> <s> <u> <p> <asciitilde> <asciitilde> : "⫊"  U2ACA   # SUPERSET OF ABOVE ALMOST EQUAL TO
+<Multi_key> <s> <u> <p> <slash> <equal> : "⫌"  U2ACC   # SUPERSET OF ABOVE NOT EQUAL TO
+<Multi_key> <s> <u> <p> <slash> <space> : "⟉"  U27C9   # SUPERSET PRECEDING SOLIDUS
 <Multi_key> <t> <i> <m> <e> <s>         : "×"  U00D7   # MULTIPLICATION SIGN (alternatively xx)
 <Multi_key> <T> <I> <M> <E> <S>         : "⨉"  U2A09   # N-ARY TIMES OPERATOR
 <Multi_key> <U> <D> <O> <T>             : "⨃"  U2A03  # N-ARY UNION OPERATOR WITH DOT
 <Multi_key> <U> <P> <L> <U> <S>         : "⨄"  U2A04  # N-ARY UNION OPERATOR WITH PLUS
 <Multi_key> <w> <r> <e> <a> <t> <h>     : "≀"   U2240   # WREATH PRODUCT
 <Multi_key> <x> <o> <r>                 : "⊻"  U22BB   # XOR (conflicts with ¤, use ox)
+
+<Multi_key> <Multi_key> <s> <u> <b> <Multi_key> <s> <u> <p> : "⫓"  U2AD3  # SUBSET ABOVE SUPERSET
+<Multi_key> <Multi_key> <s> <u> <p> <Multi_key> <s> <u> <b> : "⫔"  U2AD4  # SUPERSET ABOVE SUBSET (use supsub for ⫗)
+<Multi_key> <Multi_key> <s> <u> <b> <Multi_key> <s> <u> <b> : "⫕"  U2AD5  # SUBSET ABOVE SUBSET
+<Multi_key> <Multi_key> <s> <u> <p> <Multi_key> <s> <u> <p> : "⫖"  U2AD6  # SUPERSET ABOVE SUPERSET
 
 # Logic symbols (start with &)
 
@@ -18660,6 +18709,7 @@ include "%L"
 <Multi_key> <Tab> <slash> <backslash> <Multi_key> <period> <minus> : "◬" U25EC    # WHITE UP-POINTING TRIANGLE WITH DOT
 <Multi_key> <Tab> <slash> <backslash> <less> : "◭" U25ED    # UP-POINTING TRIANGLE WITH LEFT HALF BLACK
 <Multi_key> <Tab> <slash> <backslash> <greater> : "◮" U25EE    # UP-POINTING TRIANGLE WITH RIGHT HALF BLACK
+<Multi_key> <Tab> <slash> <backslash> <equal> : "𜲁"  U1CC81  # STRIPED UP-POINTING TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <2> <0> : "⟁" U27C1   # WHITE TRIANGLE CONTAINING SMALL WHITE TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <plus> : "⨹" U2A39   # PLUS SIGN IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <minus> : "⨺" U2A3A   # MINUS SIGN IN TRIANGLE
@@ -18671,11 +18721,16 @@ include "%L"
 
 <Multi_key> <Tab> <bar> <greater> <0>   : "▷" U25B7    # WHITE RIGHT-POINTING TRIANGLE
 <Multi_key> <Tab> <bar> <greater> <1>   : "▶" U25B6    # BLACK RIGHT-POINTING TRIANGLE
+<Multi_key> <Tab> <bar> <greater> <bar> : "𜲂"  U1CC82  # STRIPED RIGHT-POINTING TRIANGLE
 <Multi_key> <Tab> <backslash> <slash> <R> : "🔻" U1F53B   # DOWN-POINTING RED TRIANGLE
 <Multi_key> <Tab> <backslash> <slash> <0> : "▽" U25BD    # WHITE DOWN-POINTING TRIANGLE
 <Multi_key> <Tab> <backslash> <slash> <1> : "▼" U25BC    # BLACK DOWN-POINTING TRIANGLE
+<Multi_key> <Tab> <backslash> <slash> <less> : "⧨"  U29E8  # DOWN-POINTING TRIANGLE WITH LEFT HALF BLACK
+<Multi_key> <Tab> <backslash> <slash> <greater> : "⧩"  U29E9  # DOWN-POINTING TRIANGLE WITH RIGHT HALF BLACK
+<Multi_key> <Tab> <backslash> <slash> <equal> : "𜲃"  U1CC83  # STRIPED DOWN-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <0>      : "◁" U25C1    # WHITE LEFT-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <1>      : "◀" U25C0    # BLACK LEFT-POINTING TRIANGLE
+<Multi_key> <Tab> <less> <bar> <Multi_key> <bar> : "𜲀"  U1CC80  # STRIPED LEFT-POINTING TRIANGLE
 
 <Multi_key> <Tab> <slash> <backslash> <Multi_key> <asciicircum> <bar> : "🢕"  U1F895  # UPWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
 <Multi_key> <Tab> <bar> <greater> <Multi_key> <minus> <greater> : "🢖"  U1F896  # RIGHTWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
@@ -18790,7 +18845,7 @@ include "%L"
 <Multi_key> <Tab> <L> <bar> <v>                           : "↯"  U21AF  # DOWNWARDS ZIGZAG ARROW
 <Multi_key> <Tab> <L> <slash> <v>                         : "↯"  U21AF  # DOWNWARDS ZIGZAG ARROW
 
-<Multi_key> <Tab> <less> <bar> <bar>                      : "↰"  U21B0  # UPWARDS ARROW WITH TIP LEFTWARDS
+<Multi_key> <Tab> <less> <bar> <bar>                      : "↰"  U21B0  # UPWARDS ARROW WITH TIP LEFTWARDS (use [Tab]<|[Multi_key]| for 𜲀)
 <Multi_key> <Tab> <greater> <bar> <bar>                   : "↱"  U21B1  # UPWARDS ARROW WITH TIP RIGHTWARDS
 <Multi_key> <Tab> <bar> <bar> <less>                      : "↲"  U21B2  # DOWNWARDS ARROW WITH TIP LEFTWARDS
 <Multi_key> <Tab> <bar> <bar> <greater>                   : "↳"  U21B3  # DOWNWARDS ARROW WITH TIP RIGHTWARDS
