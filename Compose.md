@@ -19,13 +19,13 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (132): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2309)
+### Latin script characters (2312)
 * **International Phonetic Alphabet** (126): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Latin script letters** (268): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (733): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 etc
 * **Enclosed alphanumerics** (264): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (231): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
-* **Multigraphs and ligatures** (371): ʣ ㏈ etc
+* **Multigraphs and ligatures** (374): ʣ ㏈ etc
 * **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
 ### Non-Latin script characters (10694)
