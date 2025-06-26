@@ -115,13 +115,13 @@ include "%L"
 <Multi_key> <3> <colon>                  : "⁝"  U205D  # TRICOLON
 <Multi_key> <4> <colon>                  : "⁞"  U205E  # VERTICAL FOUR DOTS
 <Multi_key> <6> <colon>                  : "⸽"  U2E3D  # VERTICAL SIX DOTS
-<Multi_key> <plus> <period>              : "⸭"  U2E2D  # FIVE DOT MARK
+<Multi_key> <plus> <period>              : "⸭"  U2E2D  # FIVE DOT MARK (use _.+ for ⨥)
 <Multi_key> <plus> <colon>               : "⁜"  U205C  # DOTTED CROSS
 <Multi_key> <asciicircum> <Insert>       : "‸"  U2038  # CARET
 <Multi_key> <slash> <Insert>             : "⁁"  U2041  # CARET INSERTION POINT
 <Multi_key> <ampersand> <7>              : "⁊"  U204A  # TIRONIAN SIGN ET
 <Multi_key> <greater> <P> <P>            : "⁋"  U204B  # REVERSED PILCROW SIGN
-<Multi_key> <equal> <period> <equal>     : "⸎"  U2E0E  # EDITORIAL CORONIS
+<Multi_key> <equal> <minus> <equal>      : "⸎"  U2E0E  # EDITORIAL CORONIS
 
 <Multi_key> <bar> <space> <period>       : "⁚"  U205A  # TWO DOT PUNCTUATION
 <Multi_key> <V> <space> <period>         : "⸪"  U2E2A  # TWO DOTS OVER ONE DOT PUNCTUATION
@@ -7507,6 +7507,9 @@ include "%L"
 <Multi_key> <b> <O> <s>                  : "ସ"  U0B38  # ORIYA LETTER SA (conflicts)
 <Multi_key> <b> <O> <h>                  : "ହ"  U0B39  # ORIYA LETTER HA (conflicts)
 <Multi_key> <b> <O> <underscore> <r>     : "ଡ଼"  U0B5C  # ORIYA LETTER RRA (conflicts)
+<Multi_key> <b> <O> <period> <r> <h>     : "ଢ଼"  U0B5D  # ORIYA LETTER RHA (conflicts)
+<Multi_key> <b> <O> <semicolon> <y>      : "ୟ"  U0B5F  # ORIYA LETTER YYA (conflicts)
+<Multi_key> <b> <O> <w>                  : "ୱ"  U0B71  # ORIYA LETTER WA (conflicts)
 
 # Independent vowels
 
@@ -12326,6 +12329,58 @@ include "%L"
 <Multi_key> <j> <c> <quotedbl> <I>       : "ヽ"  U30FD   # KATAKANA ITERATION MARK
 <Multi_key> <j> <c> <quotedbl> <V>       : "ヾ"  U30FE   # KATAKANA VOICED ITERATION MARK
 
+<Multi_key> <j> <c> <parenleft> <A> <parenright> : "㋐"  U32D0  # CIRCLED KATAKANA A
+<Multi_key> <j> <c> <parenleft> <I> <parenright> : "㋑"  U32D1  # CIRCLED KATAKANA I
+<Multi_key> <j> <c> <parenleft> <U> <parenright> : "㋒"  U32D2  # CIRCLED KATAKANA U
+<Multi_key> <j> <c> <parenleft> <E> <parenright> : "㋓"  U32D3  # CIRCLED KATAKANA E
+<Multi_key> <j> <c> <parenleft> <O> <parenright> : "㋔"  U32D4  # CIRCLED KATAKANA O
+<Multi_key> <j> <c> <parenleft> <K> <A> <parenright> : "㋕"  U32D5  # CIRCLED KATAKANA KA
+<Multi_key> <j> <c> <parenleft> <K> <I> <parenright> : "㋖"  U32D6  # CIRCLED KATAKANA KI
+<Multi_key> <j> <c> <parenleft> <K> <U> <parenright> : "㋗"  U32D7  # CIRCLED KATAKANA KU
+<Multi_key> <j> <c> <parenleft> <K> <E> <parenright> : "㋘"  U32D8  # CIRCLED KATAKANA KE
+<Multi_key> <j> <c> <parenleft> <K> <O> <parenright> : "㋙"  U32D9  # CIRCLED KATAKANA KO
+<Multi_key> <j> <c> <parenleft> <S> <A> <parenright> : "㋚"  U32DA  # CIRCLED KATAKANA SA
+<Multi_key> <j> <c> <parenleft> <S> <H> <I> <parenright> : "㋛"  U32DB  # CIRCLED KATAKANA SI
+<Multi_key> <j> <c> <parenleft> <S> <I> <parenright> : "㋛"  U32DB  # CIRCLED KATAKANA SI
+<Multi_key> <j> <c> <parenleft> <S> <U> <parenright> : "㋜"  U32DC  # CIRCLED KATAKANA SU
+<Multi_key> <j> <c> <parenleft> <S> <E> <parenright> : "㋝"  U32DD  # CIRCLED KATAKANA SE
+<Multi_key> <j> <c> <parenleft> <S> <O> <parenright> : "㋞"  U32DE  # CIRCLED KATAKANA SO
+<Multi_key> <j> <c> <parenleft> <T> <A> <parenright> : "㋟"  U32DF  # CIRCLED KATAKANA TA
+<Multi_key> <j> <c> <parenleft> <C> <H> <I> <parenright> : "㋠"  U32E0  # CIRCLED KATAKANA TI
+<Multi_key> <j> <c> <parenleft> <T> <I> <parenright> : "㋠"  U32E0  # CIRCLED KATAKANA TI
+<Multi_key> <j> <c> <parenleft> <T> <S> <U> <parenright> : "㋡"  U32E1  # CIRCLED KATAKANA TU
+<Multi_key> <j> <c> <parenleft> <T> <U> <parenright> : "㋡"  U32E1  # CIRCLED KATAKANA TU
+<Multi_key> <j> <c> <parenleft> <T> <E> <parenright> : "㋢"  U32E2  # CIRCLED KATAKANA TE
+<Multi_key> <j> <c> <parenleft> <T> <O> <parenright> : "㋣"  U32E3  # CIRCLED KATAKANA TO
+<Multi_key> <j> <c> <parenleft> <N> <A> <parenright> : "㋤"  U32E4  # CIRCLED KATAKANA NA
+<Multi_key> <j> <c> <parenleft> <N> <I> <parenright> : "㋥"  U32E5  # CIRCLED KATAKANA NI
+<Multi_key> <j> <c> <parenleft> <N> <U> <parenright> : "㋦"  U32E6  # CIRCLED KATAKANA NU
+<Multi_key> <j> <c> <parenleft> <N> <E> <parenright> : "㋧"  U32E7  # CIRCLED KATAKANA NE
+<Multi_key> <j> <c> <parenleft> <N> <O> <parenright> : "㋨"  U32E8  # CIRCLED KATAKANA NO
+<Multi_key> <j> <c> <parenleft> <H> <A> <parenright> : "㋩"  U32E9  # CIRCLED KATAKANA HA
+<Multi_key> <j> <c> <parenleft> <H> <I> <parenright> : "㋪"  U32EA  # CIRCLED KATAKANA HI
+<Multi_key> <j> <c> <parenleft> <F> <U> <parenright> : "㋫"  U32EB  # CIRCLED KATAKANA HU
+<Multi_key> <j> <c> <parenleft> <H> <U> <parenright> : "㋫"  U32EB  # CIRCLED KATAKANA HU
+<Multi_key> <j> <c> <parenleft> <H> <E> <parenright> : "㋬"  U32EC  # CIRCLED KATAKANA HE
+<Multi_key> <j> <c> <parenleft> <H> <O> <parenright> : "㋭"  U32ED  # CIRCLED KATAKANA HO
+<Multi_key> <j> <c> <parenleft> <M> <A> <parenright> : "㋮"  U32EE  # CIRCLED KATAKANA MA
+<Multi_key> <j> <c> <parenleft> <M> <I> <parenright> : "㋯"  U32EF  # CIRCLED KATAKANA MI
+<Multi_key> <j> <c> <parenleft> <M> <U> <parenright> : "㋰"  U32F0  # CIRCLED KATAKANA MU
+<Multi_key> <j> <c> <parenleft> <M> <E> <parenright> : "㋱"  U32F1  # CIRCLED KATAKANA ME
+<Multi_key> <j> <c> <parenleft> <M> <O> <parenright> : "㋲"  U32F2  # CIRCLED KATAKANA MO
+<Multi_key> <j> <c> <parenleft> <Y> <A> <parenright> : "㋳"  U32F3  # CIRCLED KATAKANA YA
+<Multi_key> <j> <c> <parenleft> <Y> <U> <parenright> : "㋴"  U32F4  # CIRCLED KATAKANA YU
+<Multi_key> <j> <c> <parenleft> <Y> <O> <parenright> : "㋵"  U32F5  # CIRCLED KATAKANA YO
+<Multi_key> <j> <c> <parenleft> <R> <A> <parenright> : "㋶"  U32F6  # CIRCLED KATAKANA RA
+<Multi_key> <j> <c> <parenleft> <R> <I> <parenright> : "㋷"  U32F7  # CIRCLED KATAKANA RI
+<Multi_key> <j> <c> <parenleft> <R> <U> <parenright> : "㋸"  U32F8  # CIRCLED KATAKANA RU
+<Multi_key> <j> <c> <parenleft> <R> <E> <parenright> : "㋹"  U32F9  # CIRCLED KATAKANA RE
+<Multi_key> <j> <c> <parenleft> <R> <O> <parenright> : "㋺"  U32FA  # CIRCLED KATAKANA RO
+<Multi_key> <j> <c> <parenleft> <W> <A> <parenright> : "㋻"  U32FB  # CIRCLED KATAKANA WA
+<Multi_key> <j> <c> <parenleft> <W> <I> <parenright> : "㋼"  U32FC  # CIRCLED KATAKANA WI
+<Multi_key> <j> <c> <parenleft> <W> <E> <parenright> : "㋽"  U32FD  # CIRCLED KATAKANA WE
+<Multi_key> <j> <c> <parenleft> <W> <O> <parenright> : "㋾"  U32FE  # CIRCLED KATAKANA WO
+
 # Kanji
 
 <Multi_key> <j> <c> <Y> <equal>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
@@ -12346,6 +12401,17 @@ include "%L"
 <Multi_key> <j> <numbersign> <E> <3>     : "千"  U5343   # CJK UNIFIED IDEOGRAPH-5343 (1_000)
 <Multi_key> <j> <numbersign> <E> <4>     : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000)
 <Multi_key> <j> <numbersign> <E> <8>     : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
+
+<Multi_key> <j> <numbersign> <parenleft> <1> <parenright> : "㊀"  U3280  # CIRCLED IDEOGRAPH ONE
+<Multi_key> <j> <numbersign> <parenleft> <2> <parenright> : "㊁"  U3281  # CIRCLED IDEOGRAPH TWO
+<Multi_key> <j> <numbersign> <parenleft> <3> <parenright> : "㊂"  U3282  # CIRCLED IDEOGRAPH THREE
+<Multi_key> <j> <numbersign> <parenleft> <4> <parenright> : "㊃"  U3283  # CIRCLED IDEOGRAPH FOUR
+<Multi_key> <j> <numbersign> <parenleft> <5> <parenright> : "㊄"  U3284  # CIRCLED IDEOGRAPH FIVE
+<Multi_key> <j> <numbersign> <parenleft> <6> <parenright> : "㊅"  U3285  # CIRCLED IDEOGRAPH SIX
+<Multi_key> <j> <numbersign> <parenleft> <7> <parenright> : "㊆"  U3286  # CIRCLED IDEOGRAPH SEVEN
+<Multi_key> <j> <numbersign> <parenleft> <8> <parenright> : "㊇"  U3287  # CIRCLED IDEOGRAPH EIGHT
+<Multi_key> <j> <numbersign> <parenleft> <9> <parenright> : "㊈"  U3288  # CIRCLED IDEOGRAPH NINE
+<Multi_key> <j> <numbersign> <parenleft> <1> <0> <parenright> : "㊉"  U3289  # CIRCLED IDEOGRAPH TEN
 
 # Punctuation
 
@@ -12490,37 +12556,37 @@ include "%L"
 <Multi_key> <k> <1> <p> : "ᄑ"  U1111   # HANGUL CHOSEONG PHIEUPH
 <Multi_key> <k> <1> <h> : "ᄒ"  U1112   # HANGUL CHOSEONG HIEUH
 
-<Multi_key> <k> <2> <a> <period>     : "ᅡ"  U1161   # HANGUL JUNGSEONG A
+<Multi_key> <k> <2> <a> <space>      : "ᅡ"  U1161   # HANGUL JUNGSEONG A
 <Multi_key> <k> <2> <a> <e>          : "ᅢ"  U1162   # HANGUL JUNGSEONG AE
-<Multi_key> <k> <2> <y> <a> <period> : "ᅣ"  U1163   # HANGUL JUNGSEONG YA
+<Multi_key> <k> <2> <y> <a> <space>  : "ᅣ"  U1163   # HANGUL JUNGSEONG YA
 <Multi_key> <k> <2> <y> <a> <e>      : "ᅤ"  U1164   # HANGUL JUNGSEONG YAE
 <Multi_key> <k> <2> <e> <o>          : "ᅥ"  U1165   # HANGUL JUNGSEONG EO
-<Multi_key> <k> <2> <e> <period>     : "ᅦ"  U1166   # HANGUL JUNGSEONG E
+<Multi_key> <k> <2> <e> <space>      : "ᅦ"  U1166   # HANGUL JUNGSEONG E
 <Multi_key> <k> <2> <y> <e> <o>      : "ᅧ"  U1167   # HANGUL JUNGSEONG YEO
-<Multi_key> <k> <2> <y> <e> <period> : "ᅨ"  U1168   # HANGUL JUNGSEONG YE
-<Multi_key> <k> <2> <o> <period>     : "ᅩ"  U1169   # HANGUL JUNGSEONG O
-<Multi_key> <k> <2> <w> <a> <period> : "ᅪ"  U116A   # HANGUL JUNGSEONG WA
+<Multi_key> <k> <2> <y> <e> <space>  : "ᅨ"  U1168   # HANGUL JUNGSEONG YE
+<Multi_key> <k> <2> <o> <space>      : "ᅩ"  U1169   # HANGUL JUNGSEONG O
+<Multi_key> <k> <2> <w> <a> <space>  : "ᅪ"  U116A   # HANGUL JUNGSEONG WA
 <Multi_key> <k> <2> <w> <a> <e>      : "ᅫ"  U116B   # HANGUL JUNGSEONG WAE
 <Multi_key> <k> <2> <o> <e>          : "ᅬ"  U116C   # HANGUL JUNGSEONG OE
 <Multi_key> <k> <2> <y> <o>          : "ᅭ"  U116D   # HANGUL JUNGSEONG YO
 <Multi_key> <k> <2> <u>              : "ᅮ"  U116E   # HANGUL JUNGSEONG U
 <Multi_key> <k> <2> <w> <e> <o>      : "ᅯ"  U116F   # HANGUL JUNGSEONG WEO
-<Multi_key> <k> <2> <w> <e> <period> : "ᅰ"  U1170   # HANGUL JUNGSEONG WE
+<Multi_key> <k> <2> <w> <e> <space>  : "ᅰ"  U1170   # HANGUL JUNGSEONG WE
 <Multi_key> <k> <2> <w> <i>          : "ᅱ"  U1171   # HANGUL JUNGSEONG WI
 <Multi_key> <k> <2> <y> <u>          : "ᅲ"  U1172   # HANGUL JUNGSEONG YU
 <Multi_key> <k> <2> <e> <u>          : "ᅳ"  U1173   # HANGUL JUNGSEONG EU
 <Multi_key> <k> <2> <y> <i>          : "ᅴ"  U1174   # HANGUL JUNGSEONG YI
 <Multi_key> <k> <2> <i>              : "ᅵ"  U1175   # HANGUL JUNGSEONG I
 
-<Multi_key> <k> <3> <g> <period> : "ᆨ"  U11A8   # HANGUL JONGSEONG KIYEOK
+<Multi_key> <k> <3> <g> <space>  : "ᆨ"  U11A8   # HANGUL JONGSEONG KIYEOK
 <Multi_key> <k> <3> <g> <g>      : "ᆩ"  U11A9   # HANGUL JONGSEONG SSANGKIYEOK
 <Multi_key> <k> <3> <G>          : "ᆩ"  U11A9   # HANGUL JONGSEONG SSANGKIYEOK
 <Multi_key> <k> <3> <g> <s>      : "ᆪ"  U11AA   # HANGUL JONGSEONG KIYEOK-SIOS
-<Multi_key> <k> <3> <n> <period> : "ᆫ"  U11AB   # HANGUL JONGSEONG NIEUN
+<Multi_key> <k> <3> <n> <space>  : "ᆫ"  U11AB   # HANGUL JONGSEONG NIEUN
 <Multi_key> <k> <3> <n> <j>      : "ᆬ"  U11AC   # HANGUL JONGSEONG NIEUN-CIEUC
 <Multi_key> <k> <3> <n> <h>      : "ᆭ"  U11AD   # HANGUL JONGSEONG NIEUN-HIEUH
 <Multi_key> <k> <3> <d>          : "ᆮ"  U11AE   # HANGUL JONGSEONG TIKEUT
-<Multi_key> <k> <3> <l> <period> : "ᆯ"  U11AF   # HANGUL JONGSEONG RIEUL
+<Multi_key> <k> <3> <l> <space>  : "ᆯ"  U11AF   # HANGUL JONGSEONG RIEUL
 <Multi_key> <k> <3> <l> <g>      : "ᆰ"  U11B0   # HANGUL JONGSEONG RIEUL-KIYEOK
 <Multi_key> <k> <3> <l> <m>      : "ᆱ"  U11B1   # HANGUL JONGSEONG RIEUL-MIEUM
 <Multi_key> <k> <3> <l> <b>      : "ᆲ"  U11B2   # HANGUL JONGSEONG RIEUL-PIEUP
@@ -12529,7 +12595,7 @@ include "%L"
 <Multi_key> <k> <3> <l> <p>      : "ᆵ"  U11B5   # HANGUL JONGSEONG RIEUL-PHIEUPH
 <Multi_key> <k> <3> <l> <h>      : "ᆶ"  U11B6   # HANGUL JONGSEONG RIEUL-HIEUH
 <Multi_key> <k> <3> <m>          : "ᆷ"  U11B7   # HANGUL JONGSEONG MIEUM
-<Multi_key> <k> <3> <b> <period> : "ᆸ"  U11B8   # HANGUL JONGSEONG PIEUP
+<Multi_key> <k> <3> <b> <space>  : "ᆸ"  U11B8   # HANGUL JONGSEONG PIEUP
 <Multi_key> <k> <3> <b> <s>      : "ᆹ"  U11B9   # HANGUL JONGSEONG PIEUP-SIOS
 <Multi_key> <k> <3> <s>          : "ᆺ"  U11BA   # HANGUL JONGSEONG SIOS
 <Multi_key> <k> <3> <S>          : "ᆻ"  U11BB   # HANGUL JONGSEONG SSANGSIOS
@@ -12542,16 +12608,16 @@ include "%L"
 <Multi_key> <k> <3> <p>          : "ᇁ"  U11C1   # HANGUL JONGSEONG PHIEUPH
 <Multi_key> <k> <3> <h>          : "ᇂ"  U11C2   # HANGUL JONGSEONG HIEUH
 
-<Multi_key> <k> <c> <g> <period> : "ㄱ"  U3131   # HANGUL LETTER KIYEOK
+<Multi_key> <k> <c> <g> <space>  : "ㄱ"  U3131   # HANGUL LETTER KIYEOK
 <Multi_key> <k> <c> <g> <g>      : "ㄲ"  U3132   # HANGUL LETTER SSANGKIYEOK
 <Multi_key> <k> <c> <G>          : "ㄲ"  U3132   # HANGUL LETTER SSANGKIYEOK
 <Multi_key> <k> <c> <g> <s>      : "ㄳ"  U3133   # HANGUL LETTER KIYEOK-SIOS
-<Multi_key> <k> <c> <n> <period> : "ㄴ"  U3134   # HANGUL LETTER NIEUN
+<Multi_key> <k> <c> <n> <space>  : "ㄴ"  U3134   # HANGUL LETTER NIEUN
 <Multi_key> <k> <c> <n> <j>      : "ㄵ"  U3135   # HANGUL LETTER NIEUN-CIEUC
 <Multi_key> <k> <c> <n> <h>      : "ㄶ"  U3136   # HANGUL LETTER NIEUN-HIEUH
 <Multi_key> <k> <c> <d>          : "ㄷ"  U3137   # HANGUL LETTER TIKEUT
 <Multi_key> <k> <c> <D>          : "ㄸ"  U3138   # HANGUL LETTER SSANGTIKEUT
-<Multi_key> <k> <c> <l> <period> : "ㄹ"  U3139   # HANGUL LETTER RIEUL
+<Multi_key> <k> <c> <l> <space>  : "ㄹ"  U3139   # HANGUL LETTER RIEUL
 <Multi_key> <k> <c> <l> <g>      : "ㄺ"  U313A   # HANGUL LETTER RIEUL-KIYEOK
 <Multi_key> <k> <c> <l> <m>      : "ㄻ"  U313B   # HANGUL LETTER RIEUL-MIEUM
 <Multi_key> <k> <c> <l> <b>      : "ㄼ"  U313C   # HANGUL LETTER RIEUL-PIEUP
@@ -12560,7 +12626,7 @@ include "%L"
 <Multi_key> <k> <c> <l> <p>      : "ㄿ"  U313F   # HANGUL LETTER RIEUL-PHIEUPH
 <Multi_key> <k> <c> <l> <h>      : "ㅀ"  U3140   # HANGUL LETTER RIEUL-HIEUH
 <Multi_key> <k> <c> <m>          : "ㅁ"  U3141   # HANGUL LETTER MIEUM
-<Multi_key> <k> <c> <b> <period> : "ㅂ"  U3142   # HANGUL LETTER PIEUP
+<Multi_key> <k> <c> <b> <space>  : "ㅂ"  U3142   # HANGUL LETTER PIEUP
 <Multi_key> <k> <c> <b> <b>      : "ㅃ"  U3143   # HANGUL LETTER SSANGPIEUP
 <Multi_key> <k> <c> <B>          : "ㅃ"  U3143   # HANGUL LETTER SSANGPIEUP
 <Multi_key> <k> <c> <b> <s>      : "ㅄ"  U3144   # HANGUL LETTER PIEUP-SIOS
@@ -12576,27 +12642,62 @@ include "%L"
 <Multi_key> <k> <c> <p>          : "ㅍ"  U314D   # HANGUL LETTER PHIEUPH
 <Multi_key> <k> <c> <h>          : "ㅎ"  U314E   # HANGUL LETTER HIEUH
 
-<Multi_key> <k> <c> <a> <period>     : "ㅏ"  U314F   # HANGUL LETTER A
+<Multi_key> <k> <c> <a> <space>      : "ㅏ"  U314F   # HANGUL LETTER A
 <Multi_key> <k> <c> <a> <e>          : "ㅐ"  U3150   # HANGUL LETTER AE
-<Multi_key> <k> <c> <y> <a> <period> : "ㅑ"  U3151   # HANGUL LETTER YA
+<Multi_key> <k> <c> <y> <a> <space>  : "ㅑ"  U3151   # HANGUL LETTER YA
 <Multi_key> <k> <c> <y> <a> <e>      : "ㅒ"  U3152   # HANGUL LETTER YAE
 <Multi_key> <k> <c> <e> <o>          : "ㅓ"  U3153   # HANGUL LETTER EO
-<Multi_key> <k> <c> <e> <period>     : "ㅔ"  U3154   # HANGUL LETTER E
+<Multi_key> <k> <c> <e> <space>      : "ㅔ"  U3154   # HANGUL LETTER E
 <Multi_key> <k> <c> <y> <e> <o>      : "ㅕ"  U3155   # HANGUL LETTER YEO
-<Multi_key> <k> <c> <y> <e> <period> : "ㅖ"  U3156   # HANGUL LETTER YE
-<Multi_key> <k> <c> <o> <period>     : "ㅗ"  U3157   # HANGUL LETTER O
-<Multi_key> <k> <c> <w> <a> <period> : "ㅘ"  U3158   # HANGUL LETTER WA
+<Multi_key> <k> <c> <y> <e> <space>  : "ㅖ"  U3156   # HANGUL LETTER YE
+<Multi_key> <k> <c> <o> <space>      : "ㅗ"  U3157   # HANGUL LETTER O
+<Multi_key> <k> <c> <w> <a> <space>  : "ㅘ"  U3158   # HANGUL LETTER WA
 <Multi_key> <k> <c> <w> <a> <e>      : "ㅙ"  U3159   # HANGUL LETTER WAE
 <Multi_key> <k> <c> <o> <e>          : "ㅚ"  U315A   # HANGUL LETTER OE
 <Multi_key> <k> <c> <y> <o>          : "ㅛ"  U315B   # HANGUL LETTER YO
 <Multi_key> <k> <c> <u>              : "ㅜ"  U315C   # HANGUL LETTER U
 <Multi_key> <k> <c> <w> <e> <o>      : "ㅝ"  U315D   # HANGUL LETTER WEO
-<Multi_key> <k> <c> <w> <e> <period> : "ㅞ"  U315E   # HANGUL LETTER WE
+<Multi_key> <k> <c> <w> <e> <space>  : "ㅞ"  U315E   # HANGUL LETTER WE
 <Multi_key> <k> <c> <w> <i>          : "ㅟ"  U315F   # HANGUL LETTER WI
 <Multi_key> <k> <c> <y> <u>          : "ㅠ"  U3160   # HANGUL LETTER YU
 <Multi_key> <k> <c> <e> <u>          : "ㅡ"  U3161   # HANGUL LETTER EU
 <Multi_key> <k> <c> <y> <i>          : "ㅢ"  U3162   # HANGUL LETTER YI
 <Multi_key> <k> <c> <i>              : "ㅣ"  U3163   # HANGUL LETTER I
+
+<Multi_key> <k> <c> <parenleft> <g> <parenright> : "㉠"  U3260  # CIRCLED HANGUL KIYEOK
+<Multi_key> <k> <c> <parenleft> <n> <parenright> : "㉡"  U3261  # CIRCLED HANGUL NIEUN
+<Multi_key> <k> <c> <parenleft> <d> <parenright> : "㉢"  U3262  # CIRCLED HANGUL TIKEUT
+<Multi_key> <k> <c> <parenleft> <l> <parenright> : "㉣"  U3263  # CIRCLED HANGUL RIEUL
+<Multi_key> <k> <c> <parenleft> <m> <parenright> : "㉤"  U3264  # CIRCLED HANGUL MIEUM
+<Multi_key> <k> <c> <parenleft> <b> <parenright> : "㉥"  U3265  # CIRCLED HANGUL PIEUP
+<Multi_key> <k> <c> <parenleft> <s> <parenright> : "㉦"  U3266  # CIRCLED HANGUL SIOS
+<Multi_key> <k> <c> <parenleft> <0> <parenright> : "㉧"  U3267  # CIRCLED HANGUL IEUNG
+<Multi_key> <k> <c> <parenleft> <n> <g> <parenright> : "㉧"  U3267  # CIRCLED HANGUL IEUNG
+<Multi_key> <k> <c> <parenleft> <j> <parenright> : "㉨"  U3268  # CIRCLED HANGUL CIEUC
+<Multi_key> <k> <c> <parenleft> <c> <parenright> : "㉩"  U3269  # CIRCLED HANGUL CHIEUCH
+<Multi_key> <k> <c> <parenleft> <k> <parenright> : "㉪"  U326A  # CIRCLED HANGUL KHIEUKH
+<Multi_key> <k> <c> <parenleft> <t> <parenright> : "㉫"  U326B  # CIRCLED HANGUL THIEUTH
+<Multi_key> <k> <c> <parenleft> <p> <parenright> : "㉬"  U326C  # CIRCLED HANGUL PHIEUPH
+<Multi_key> <k> <c> <parenleft> <h> <parenright> : "㉭"  U326D  # CIRCLED HANGUL HIEUH
+<Multi_key> <k> <c> <parenleft> <g> <a> <parenright> : "㉮"  U326E  # CIRCLED HANGUL KIYEOK A
+<Multi_key> <k> <c> <parenleft> <n> <a> <parenright> : "㉯"  U326F  # CIRCLED HANGUL NIEUN A
+<Multi_key> <k> <c> <parenleft> <d> <a> <parenright> : "㉰"  U3270  # CIRCLED HANGUL TIKEUT A
+<Multi_key> <k> <c> <parenleft> <l> <a> <parenright> : "㉱"  U3271  # CIRCLED HANGUL RIEUL A
+<Multi_key> <k> <c> <parenleft> <m> <a> <parenright> : "㉲"  U3272  # CIRCLED HANGUL MIEUM A
+<Multi_key> <k> <c> <parenleft> <b> <a> <parenright> : "㉳"  U3273  # CIRCLED HANGUL PIEUP A
+<Multi_key> <k> <c> <parenleft> <s> <a> <parenright> : "㉴"  U3274  # CIRCLED HANGUL SIOS A
+<Multi_key> <k> <c> <parenleft> <0> <a> <parenright> : "㉵"  U3275  # CIRCLED HANGUL IEUNG A
+<Multi_key> <k> <c> <parenleft> <n> <g> <a> <parenright> : "㉵"  U3275  # CIRCLED HANGUL IEUNG A
+<Multi_key> <k> <c> <parenleft> <j> <a> <parenright> : "㉶"  U3276  # CIRCLED HANGUL CIEUC A
+<Multi_key> <k> <c> <parenleft> <c> <a> <parenright> : "㉷"  U3277  # CIRCLED HANGUL CHIEUCH A
+<Multi_key> <k> <c> <parenleft> <k> <a> <parenright> : "㉸"  U3278  # CIRCLED HANGUL KHIEUKH A
+<Multi_key> <k> <c> <parenleft> <t> <a> <parenright> : "㉹"  U3279  # CIRCLED HANGUL THIEUTH A
+<Multi_key> <k> <c> <parenleft> <p> <a> <parenright> : "㉺"  U327A  # CIRCLED HANGUL PHIEUPH A
+<Multi_key> <k> <c> <parenleft> <h> <a> <parenright> : "㉻"  U327B  # CIRCLED HANGUL HIEUH A
+<Multi_key> <k> <c> <parenleft> <c> <h> <a> <m> <g> <o> <parenright> : "㉼"  U327C  # CIRCLED KOREAN CHARACTER CHAMKO
+<Multi_key> <k> <c> <parenleft> <j> <u> <u> <i> <parenright> : "㉽"  U327D  # CIRCLED KOREAN CHARACTER JUEUI
+<Multi_key> <k> <c> <parenleft> <0> <u> <parenright> : "㉾"  U327E  # CIRCLED HANGUL IEUNG U
+<Multi_key> <k> <c> <parenleft> <n> <g> <u> <parenright> : "㉾"  U327E  # CIRCLED HANGUL IEUNG U
 
 ################################
 # (m) International Morse Code #
@@ -14215,6 +14316,17 @@ include "%L"
 <Multi_key> <z> <numbersign> <e> <4>     : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000 simplified)
 <Multi_key> <z> <numbersign> <E> <8>     : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
 <Multi_key> <z> <numbersign> <e> <8>     : "亿"  U4EBF   # CJK UNIFIED IDEOGRAPH-4EBF (100_000_000 simplified)
+
+<Multi_key> <z> <numbersign> <parenleft> <1> <parenright> : "㊀"  U3280  # CIRCLED IDEOGRAPH ONE
+<Multi_key> <z> <numbersign> <parenleft> <2> <parenright> : "㊁"  U3281  # CIRCLED IDEOGRAPH TWO
+<Multi_key> <z> <numbersign> <parenleft> <3> <parenright> : "㊂"  U3282  # CIRCLED IDEOGRAPH THREE
+<Multi_key> <z> <numbersign> <parenleft> <4> <parenright> : "㊃"  U3283  # CIRCLED IDEOGRAPH FOUR
+<Multi_key> <z> <numbersign> <parenleft> <5> <parenright> : "㊄"  U3284  # CIRCLED IDEOGRAPH FIVE
+<Multi_key> <z> <numbersign> <parenleft> <6> <parenright> : "㊅"  U3285  # CIRCLED IDEOGRAPH SIX
+<Multi_key> <z> <numbersign> <parenleft> <7> <parenright> : "㊆"  U3286  # CIRCLED IDEOGRAPH SEVEN
+<Multi_key> <z> <numbersign> <parenleft> <8> <parenright> : "㊇"  U3287  # CIRCLED IDEOGRAPH EIGHT
+<Multi_key> <z> <numbersign> <parenleft> <9> <parenright> : "㊈"  U3288  # CIRCLED IDEOGRAPH NINE
+<Multi_key> <z> <numbersign> <parenleft> <1> <0> <parenright> : "㊉"  U3289  # CIRCLED IDEOGRAPH TEN
 
 <Multi_key> <z> <c> <Y> <equal>          : "元" U5143    # CJK UNIFIED IDEOGRAPH-5143 (Chinese yuan) (use Y= for ¥)
 <Multi_key> <z> <c> <Y> <dollar>         : "圓" U5713    # CJK UNIFIED IDEOGRAPH-5713 (New Taiwan $)
@@ -16017,17 +16129,24 @@ include "%L"
 
 # Also see brackets, arrows and alphanumeric sections
 
-<Multi_key> <slash> <slash> <percent> : "⁄"  U2044   # FRACTION SLASH (conflicts with useless \)
-<Multi_key> <slash> <slash> <period>  : "∕"  U2215   # DIVISION SLASH (conflicts with useless \)
+<Multi_key> <slash> <percent>         : "⁄"  U2044   # FRACTION SLASH
+<Multi_key> <slash> <colon>           : "∕"  U2215   # DIVISION SLASH
 <Multi_key> <minus> <0>               : "−"  U2212   # MINUS SIGN (alternatively -_)
 <Multi_key> <minus> <plus>            : "∓"  U2213   # MINUS-OR-PLUS SIGN (conflicts with ±, use +-)
+<Multi_key> <plus> <2>                : "⨧"  U2A27   # PLUS SIGN WITH SUBSCRIPT TWO
+<Multi_key> <o> <plus>                : "⨢"  U2A22   # PLUS SIGN WITH SMALL CIRCLE ABOVE
 <Multi_key> <period> <plus>           : "∔"  U2214   # DOT PLUS
+<Multi_key> <plus> <underscore> <period>      : "⨥"  U2A25   # PLUS SIGN WITH DOT BELOW
+<Multi_key> <asciitilde> <plus> <space>       : "⨤"  U2A24   # PLUS SIGN WITH TILDE ABOVE
+<Multi_key> <plus> <underscore> <asciitilde>  : "⨦"  U2A26   # PLUS SIGN WITH TILDE BELOW
+<Multi_key> <period> <Multi_key> <x> <x>      : "⨰"  U2A30   # MULTIPLICATION SIGN WITH DOT ABOVE
+<Multi_key> <underscore> <Multi_key> <x> <x>  : "⨱"  U2A31   # MULTIPLICATION SIGN WITH UNDERBAR
 <Multi_key> <period> <asterisk>       : "⋅"  U22C5   # DOT OPERATOR
 <Multi_key> <x> <asterisk>            : "⨯"  U2A2F   # VECTOR OR CROSS PRODUCT
 <Multi_key> <x> <minus> <colon>       : "⋇"  U22C7   # DIVISION TIMES
 <Multi_key> <3> <v> <slash>           : "∛"  U221B   # CUBE ROOT
 <Multi_key> <4> <v> <slash>           : "∜"  U221C   # FOURTH ROOT
-<Multi_key> <8> <greater>             : "∞"  U221E   # INFINITY
+<Multi_key> <8> <greater>             : "∞"  U221E   # INFINITY (alternatively 88)
 <Multi_key> <percent> <percent>       : "‱"  U2031   # PER TEN THOUSAND SIGN
 <Multi_key> <6> <less>                : "∂"  U2202   # PARTIAL DIFFERENTIAL
 <Multi_key> <1> <apostrophe>          : "′"  U2032   # PRIME (not to be confused with '1)
@@ -16085,6 +16204,7 @@ include "%L"
 <Multi_key> <equal> <d>               : "≝"  U225D   # EQUAL TO BY DEFINITION (conflicts with ₫, use d=)
 <Multi_key> <equal> <m>               : "≞"  U225E   # MEASURED BY
 <Multi_key> <equal> <question>        : "≟"  U225F   # QUESTIONED EQUAL TO
+<Multi_key> <equal> <period>          : "⩦"  U2A66   # EQUALS SIGN WITH DOT BELOW
 <Multi_key> <equal> <equal>           : "≣"  U2263   # STRICTLY EQUIVALENT TO
 <Multi_key> <equal> <bar> <bar>       : "⋕"  U22D5   # EQUAL AND PARALLEL TO
 <Multi_key> <plus> <equal>            : "⩲"  U2A72   # PLUS SIGN ABOVE EQUALS SIGN
@@ -16256,6 +16376,7 @@ include "%L"
 <Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter) (use gem for 💎)
 <Multi_key> <d> <i> <j> <k>             : "⫾"  U2AFE  # WHITE VERTICAL BAR (conflicts with ⌀, use diameter) (DIJKSTRA'S CHOICE)
 <Multi_key> <D> <I> <J> <K>             : "⫿"  U2AFF  # N-ARY WHITE VERTICAL BAR (DIJKSTRA'S CHOICE)
+<Multi_key> <e> <q> <u> <i> <v>         : "≍"  U224D  # EQUIVALENT TO (use =_ for ≡)
 <Multi_key> <e> <x> <i> <s> <t> <s>     : "∃"  U2203   # THERE EXISTS
 <Multi_key> <f> <o> <r> <a> <l> <l>     : "∀"  U2200   # FOR ALL
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
@@ -16273,6 +16394,7 @@ include "%L"
 <Multi_key> <L> <O> <R>                 : "⋁"  U22C1   # N-ARY LOGICAL OR
 <Multi_key> <m> <e> <a> <n> <g> <l> <e> : "∡"  U2221   # MEASURED ANGLE (not ideal)
 <Multi_key> <n> <a> <n> <d>             : "⊼"  U22BC   # NAND
+<Multi_key> <n> <e> <q> <u> <i> <v>     : "≭"  U226D   # NOT EQUIVALENT TO (use /⎄=_ for ≢)
 <Multi_key> <n> <e> <x> <i> <s> <t> <s> : "∄"  U2204   # THERE DOES NOT EXIST
 <Multi_key> <n> <i> <space>             : "∋"  U220B   # CONTAINS AS MEMBER
 <Multi_key> <n> <o> <r>                 : "⊽"  U22BD   # NOR
