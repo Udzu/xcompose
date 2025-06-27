@@ -115,13 +115,13 @@ include "%L"
 <Multi_key> <3> <colon>                  : "⁝"  U205D  # TRICOLON
 <Multi_key> <4> <colon>                  : "⁞"  U205E  # VERTICAL FOUR DOTS
 <Multi_key> <6> <colon>                  : "⸽"  U2E3D  # VERTICAL SIX DOTS
-<Multi_key> <plus> <period>              : "⸭"  U2E2D  # FIVE DOT MARK
+<Multi_key> <plus> <period>              : "⸭"  U2E2D  # FIVE DOT MARK (use _.+ for ⨥)
 <Multi_key> <plus> <colon>               : "⁜"  U205C  # DOTTED CROSS
 <Multi_key> <asciicircum> <Insert>       : "‸"  U2038  # CARET
 <Multi_key> <slash> <Insert>             : "⁁"  U2041  # CARET INSERTION POINT
 <Multi_key> <ampersand> <7>              : "⁊"  U204A  # TIRONIAN SIGN ET
 <Multi_key> <greater> <P> <P>            : "⁋"  U204B  # REVERSED PILCROW SIGN
-<Multi_key> <equal> <period> <equal>     : "⸎"  U2E0E  # EDITORIAL CORONIS
+<Multi_key> <equal> <minus> <equal>      : "⸎"  U2E0E  # EDITORIAL CORONIS
 
 <Multi_key> <bar> <space> <period>       : "⁚"  U205A  # TWO DOT PUNCTUATION
 <Multi_key> <V> <space> <period>         : "⸪"  U2E2A  # TWO DOTS OVER ONE DOT PUNCTUATION
@@ -961,6 +961,13 @@ include "%L"
 <Multi_key> <slash> <Multi_key> <l> <s> : "ẜ"  U1E9C  # LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
 <Multi_key> <slash> <Multi_key> <o> <parenright> : "ꬿ"  UAB3F  # LATIN SMALL LETTER OPEN O WITH STROKE
 
+<Multi_key> <parenright> <A> : "Ꞻ"  UA7BA  # LATIN CAPITAL LETTER GLOTTAL A
+<Multi_key> <parenright> <a> : "ꞻ"  UA7BB  # LATIN SMALL LETTER GLOTTAL A
+<Multi_key> <parenright> <I> : "Ꞽ"  UA7BC  # LATIN CAPITAL LETTER GLOTTAL I
+<Multi_key> <parenright> <i> : "ꞽ"  UA7BD  # LATIN SMALL LETTER GLOTTAL I
+<Multi_key> <parenright> <U> : "Ꞿ"  UA7BE  # LATIN CAPITAL LETTER GLOTTAL U
+<Multi_key> <parenright> <u> : "ꞿ"  UA7BF  # LATIN SMALL LETTER GLOTTAL U
+
 <Multi_key> <d> <at> : "ȡ"  U0221  # LATIN SMALL LETTER D WITH CURL
 <Multi_key> <l> <at> : "ȴ"  U0234  # LATIN SMALL LETTER L WITH CURL
 <Multi_key> <n> <at> : "ȵ"  U0235  # LATIN SMALL LETTER N WITH CURL
@@ -1314,6 +1321,32 @@ include "%L"
 
 <Multi_key> <underscore> <asciicircum> <less> <N> : "ᴎ"  U1D0E  # LATIN LETTER SMALL CAPITAL REVERSED N (conflicts)
 <Multi_key> <underscore> <asciicircum> <less> <R> : "ᴙ"  U1D19  # LATIN LETTER SMALL CAPITAL REVERSED R (conflicts)
+
+# (small form variants: not actually small capitals, but fit nicely here)
+
+<Multi_key> <underscore> <asciicircum> <comma>      : "﹐"  UFE50  # SMALL COMMA (conflicts)
+<Multi_key> <underscore> <asciicircum> <period>     : "﹒"  UFE52  # SMALL FULL STOP (conflicts)
+<Multi_key> <underscore> <asciicircum> <semicolon>  : "﹔"  UFE54  # SMALL SEMICOLON (conflicts)
+<Multi_key> <underscore> <asciicircum> <colon>      : "﹕"  UFE55  # SMALL COLON (conflicts)
+<Multi_key> <underscore> <asciicircum> <question>   : "﹖"  UFE56  # SMALL QUESTION MARK (conflicts)
+<Multi_key> <underscore> <asciicircum> <exclam>     : "﹗"  UFE57  # SMALL EXCLAMATION MARK (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <minus> <minus> <minus> : "﹘"  UFE58  # SMALL EM DASH (conflicts)
+<Multi_key> <underscore> <asciicircum> <parenleft>  : "﹙"  UFE59  # SMALL LEFT PARENTHESIS (conflicts)
+<Multi_key> <underscore> <asciicircum> <parenright> : "﹚"  UFE5A  # SMALL RIGHT PARENTHESIS (conflicts)
+<Multi_key> <underscore> <asciicircum> <braceleft>  : "﹛"  UFE5B  # SMALL LEFT CURLY BRACKET (conflicts)
+<Multi_key> <underscore> <asciicircum> <braceright> : "﹜"  UFE5C  # SMALL RIGHT CURLY BRACKET (conflicts)
+<Multi_key> <underscore> <asciicircum> <numbersign> : "﹟"  UFE5F  # SMALL NUMBER SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <ampersand>  : "﹠"  UFE60  # SMALL AMPERSAND (conflicts)
+<Multi_key> <underscore> <asciicircum> <asterisk>   : "﹡"  UFE61  # SMALL ASTERISK (conflicts)
+<Multi_key> <underscore> <asciicircum> <plus>       : "﹢"  UFE62  # SMALL PLUS SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <minus>      : "﹣"  UFE63  # SMALL HYPHEN-MINUS (conflicts)
+<Multi_key> <underscore> <asciicircum> <less>       : "﹤"  UFE64  # SMALL LESS-THAN SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <greater>    : "﹥"  UFE65  # SMALL GREATER-THAN SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <equal>      : "﹦"  UFE66  # SMALL EQUALS SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <backslash>  : "﹨"  UFE68  # SMALL REVERSE SOLIDUS (conflicts)
+<Multi_key> <underscore> <asciicircum> <dollar>     : "﹩"  UFE69  # SMALL DOLLAR SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <percent>    : "﹪"  UFE6A  # SMALL PERCENT SIGN (conflicts)
+<Multi_key> <underscore> <asciicircum> <at>         : "﹫"  UFE6B  # SMALL COMMERCIAL AT (conflicts)
 
 # combining letters above: ^^x[Return]
 
@@ -2390,6 +2423,7 @@ include "%L"
 <Multi_key> <exclam> <bracketleft> <S> <A> <bracketright> : "🆍" U1F18D   # NEGATIVE SQUARED SA
 <Multi_key> <exclam> <bracketleft> <A> <B> <bracketright> : "🆎︎" U1F18E UFE0E  # NEGATIVE SQUARED AB (prefix with @ for emoji variant)
 <Multi_key> <exclam> <bracketleft> <W> <C> <bracketright> : "🆏" U1F18F   # NEGATIVE SQUARED WC
+<Multi_key> <exclam> <bracketleft> <question> <bracketright> : "🯄"  U1FBC4  # NEGATIVE SQUARED QUESTION MARK
 
 <Multi_key> <bracketleft> <parenleft> <1> <0> <parenright> <bracketright> : "㉈" U3248   # CIRCLED NUMBER TEN ON BLACK SQUARE
 <Multi_key> <bracketleft> <parenleft> <2> <0> <parenright> <bracketright> : "㉉" U3249   # CIRCLED NUMBER TWENTY ON BLACK SQUARE
@@ -2417,6 +2451,7 @@ include "%L"
 <Multi_key> <braceleft> <a> <m> <braceright> : "㏂" U33C2   # SQUARE AM
 <Multi_key> <braceleft> <A> <O> <braceright> : "Ꜵ" UA734   # LATIN CAPITAL LETTER AO
 <Multi_key> <braceleft> <a> <o> <braceright> : "ꜵ" UA735   # LATIN SMALL LETTER AO
+<Multi_key> <braceleft> <A> <R> <braceright> : "🜇"  U1F707  # ALCHEMICAL SYMBOL FOR AQUA REGIA-2
 <Multi_key> <braceleft> <A> <U> <braceright> : "㍳" U3373   # SQUARE AU
 <Multi_key> <braceleft> <a> <u> <braceright> : "ꜷ" UA737   # LATIN SMALL LETTER AU
 <Multi_key> <braceleft> <A> <V> <braceright> : "Ꜹ" UA738   # LATIN CAPITAL LETTER AV
@@ -2643,6 +2678,7 @@ include "%L"
 <Multi_key> <braceleft> <p> <V> <braceright> : "㎴" U33B4   # SQUARE PV
 <Multi_key> <braceleft> <p> <W> <braceright> : "㎺" U33BA   # SQUARE PW
 
+<Multi_key> <braceleft> <Q> <E> <braceright> : "🜀"  U1F700  # ALCHEMICAL SYMBOL FOR QUINTESSENCE
 <Multi_key> <braceleft> <q> <i> <braceright> : "ᦽ" U19BD   # NEW TAI LUE VOWEL SIGN OY (visually similar)
 <Multi_key> <braceleft> <q> <p> <braceright> : "ȹ" U0239   # LATIN SMALL LETTER QP DIGRAPH
 
@@ -2662,6 +2698,7 @@ include "%L"
 <Multi_key> <braceleft> <s> <o> <braceright> : "𑅲" U11172   # MAHAJANI LETTER RRA (visually similar)
 <Multi_key> <braceleft> <s> <r> <braceright> : "㏛" U33DB   # SQUARE SR
 <Multi_key> <braceleft> <S> <S> <braceright> : "𐠿" U1083F   # CYPRIOT SYLLABLE ZO (visually similar)
+<Multi_key> <braceleft> <s> <s> <s> <braceright> : "🝜"  U1F75C  # ALCHEMICAL SYMBOL FOR STRATUM SUPER STRATUM
 <Multi_key> <braceleft> <s> <t> <braceright> : "ﬆ" UFB06   # LATIN SMALL LIGATURE ST
 <Multi_key> <braceleft> <S> <v> <braceright> : "㏜" U33DC   # SQUARE SV
 
@@ -2690,7 +2727,7 @@ include "%L"
 <Multi_key> <braceleft> <u> <u> <braceright> : "ɯ" U026F   # LATIN SMALL LETTER TURNED M (visually similar)
 <Multi_key> <braceleft> <u> <y> <braceright> : "ꪐ" UAA90   # TAI VIET LETTER LOW NYO (visually similar)
 
-<Multi_key> <braceleft> <V> <B> <braceright> : "Ꟃ" UA7C2   # LATIN CAPITAL LETTER ANGLICANA W (visually similar)
+<Multi_key> <braceleft> <V> <B> <braceright> : "🝬"  U1F76C  # ALCHEMICAL SYMBOL FOR BATH OF VAPOURS
 <Multi_key> <braceleft> <V> <I> <I> <I> <braceright> : "Ⅷ" U2167   # ROMAN NUMERAL EIGHT
 <Multi_key> <braceleft> <v> <i> <i> <i> <braceright> : "ⅷ" U2177   # SMALL ROMAN NUMERAL EIGHT
 <Multi_key> <braceleft> <V> <I> <I> <braceright> : "Ⅶ" U2166   # ROMAN NUMERAL SEVEN
@@ -3018,7 +3055,7 @@ include "%L"
 <Multi_key> <asciicircum> <less> <h> : "𝈦" U1D226   # GREEK INSTRUMENTAL NOTATION SYMBOL-14 (ک U06A9 is worse but better supported)
 <Multi_key> <asciicircum> <less> <i> : "·–" U00B7 U2013   # MIDDLE DOT EN DASH
 <Multi_key> <asciicircum> <less> <j> : "·¬" U00B7 U00AC   # MIDDLE DOT ZERO WIDTH JOINER NOT SIGN
-<Multi_key> <asciicircum> <less> <k> : " ͟∨"  U0020 U035F U2228   # SPACE COMBINING DOUBLE MACRON BELOW LOGICAL OR
+<Multi_key> <asciicircum> <less> <k> : " ͟⌵͟"  U00A0 U035F U2335 U035F  # NO-BREAK SPACE COMBINING DOUBLE MACRON BELOW COUNTERSINK COMBINING DOUBLE MACRON BELOW
 <Multi_key> <asciicircum> <less> <l> : "ᓗ" U14D7   # CANADIAN SYLLABICS LO
 <Multi_key> <asciicircum> <less> <m> : "ε" U03B5   # GREEK SMALL LETTER EPSILON
 <Multi_key> <asciicircum> <less> <n> : "c" U0063   # LATIN SMALL LETTER C
@@ -7470,6 +7507,9 @@ include "%L"
 <Multi_key> <b> <O> <s>                  : "ସ"  U0B38  # ORIYA LETTER SA (conflicts)
 <Multi_key> <b> <O> <h>                  : "ହ"  U0B39  # ORIYA LETTER HA (conflicts)
 <Multi_key> <b> <O> <underscore> <r>     : "ଡ଼"  U0B5C  # ORIYA LETTER RRA (conflicts)
+<Multi_key> <b> <O> <period> <r> <h>     : "ଢ଼"  U0B5D  # ORIYA LETTER RHA (conflicts)
+<Multi_key> <b> <O> <semicolon> <y>      : "ୟ"  U0B5F  # ORIYA LETTER YYA (conflicts)
+<Multi_key> <b> <O> <w>                  : "ୱ"  U0B71  # ORIYA LETTER WA (conflicts)
 
 # Independent vowels
 
@@ -12289,6 +12329,58 @@ include "%L"
 <Multi_key> <j> <c> <quotedbl> <I>       : "ヽ"  U30FD   # KATAKANA ITERATION MARK
 <Multi_key> <j> <c> <quotedbl> <V>       : "ヾ"  U30FE   # KATAKANA VOICED ITERATION MARK
 
+<Multi_key> <j> <c> <parenleft> <A> <parenright> : "㋐"  U32D0  # CIRCLED KATAKANA A
+<Multi_key> <j> <c> <parenleft> <I> <parenright> : "㋑"  U32D1  # CIRCLED KATAKANA I
+<Multi_key> <j> <c> <parenleft> <U> <parenright> : "㋒"  U32D2  # CIRCLED KATAKANA U
+<Multi_key> <j> <c> <parenleft> <E> <parenright> : "㋓"  U32D3  # CIRCLED KATAKANA E
+<Multi_key> <j> <c> <parenleft> <O> <parenright> : "㋔"  U32D4  # CIRCLED KATAKANA O
+<Multi_key> <j> <c> <parenleft> <K> <A> <parenright> : "㋕"  U32D5  # CIRCLED KATAKANA KA
+<Multi_key> <j> <c> <parenleft> <K> <I> <parenright> : "㋖"  U32D6  # CIRCLED KATAKANA KI
+<Multi_key> <j> <c> <parenleft> <K> <U> <parenright> : "㋗"  U32D7  # CIRCLED KATAKANA KU
+<Multi_key> <j> <c> <parenleft> <K> <E> <parenright> : "㋘"  U32D8  # CIRCLED KATAKANA KE
+<Multi_key> <j> <c> <parenleft> <K> <O> <parenright> : "㋙"  U32D9  # CIRCLED KATAKANA KO
+<Multi_key> <j> <c> <parenleft> <S> <A> <parenright> : "㋚"  U32DA  # CIRCLED KATAKANA SA
+<Multi_key> <j> <c> <parenleft> <S> <H> <I> <parenright> : "㋛"  U32DB  # CIRCLED KATAKANA SI
+<Multi_key> <j> <c> <parenleft> <S> <I> <parenright> : "㋛"  U32DB  # CIRCLED KATAKANA SI
+<Multi_key> <j> <c> <parenleft> <S> <U> <parenright> : "㋜"  U32DC  # CIRCLED KATAKANA SU
+<Multi_key> <j> <c> <parenleft> <S> <E> <parenright> : "㋝"  U32DD  # CIRCLED KATAKANA SE
+<Multi_key> <j> <c> <parenleft> <S> <O> <parenright> : "㋞"  U32DE  # CIRCLED KATAKANA SO
+<Multi_key> <j> <c> <parenleft> <T> <A> <parenright> : "㋟"  U32DF  # CIRCLED KATAKANA TA
+<Multi_key> <j> <c> <parenleft> <C> <H> <I> <parenright> : "㋠"  U32E0  # CIRCLED KATAKANA TI
+<Multi_key> <j> <c> <parenleft> <T> <I> <parenright> : "㋠"  U32E0  # CIRCLED KATAKANA TI
+<Multi_key> <j> <c> <parenleft> <T> <S> <U> <parenright> : "㋡"  U32E1  # CIRCLED KATAKANA TU
+<Multi_key> <j> <c> <parenleft> <T> <U> <parenright> : "㋡"  U32E1  # CIRCLED KATAKANA TU
+<Multi_key> <j> <c> <parenleft> <T> <E> <parenright> : "㋢"  U32E2  # CIRCLED KATAKANA TE
+<Multi_key> <j> <c> <parenleft> <T> <O> <parenright> : "㋣"  U32E3  # CIRCLED KATAKANA TO
+<Multi_key> <j> <c> <parenleft> <N> <A> <parenright> : "㋤"  U32E4  # CIRCLED KATAKANA NA
+<Multi_key> <j> <c> <parenleft> <N> <I> <parenright> : "㋥"  U32E5  # CIRCLED KATAKANA NI
+<Multi_key> <j> <c> <parenleft> <N> <U> <parenright> : "㋦"  U32E6  # CIRCLED KATAKANA NU
+<Multi_key> <j> <c> <parenleft> <N> <E> <parenright> : "㋧"  U32E7  # CIRCLED KATAKANA NE
+<Multi_key> <j> <c> <parenleft> <N> <O> <parenright> : "㋨"  U32E8  # CIRCLED KATAKANA NO
+<Multi_key> <j> <c> <parenleft> <H> <A> <parenright> : "㋩"  U32E9  # CIRCLED KATAKANA HA
+<Multi_key> <j> <c> <parenleft> <H> <I> <parenright> : "㋪"  U32EA  # CIRCLED KATAKANA HI
+<Multi_key> <j> <c> <parenleft> <F> <U> <parenright> : "㋫"  U32EB  # CIRCLED KATAKANA HU
+<Multi_key> <j> <c> <parenleft> <H> <U> <parenright> : "㋫"  U32EB  # CIRCLED KATAKANA HU
+<Multi_key> <j> <c> <parenleft> <H> <E> <parenright> : "㋬"  U32EC  # CIRCLED KATAKANA HE
+<Multi_key> <j> <c> <parenleft> <H> <O> <parenright> : "㋭"  U32ED  # CIRCLED KATAKANA HO
+<Multi_key> <j> <c> <parenleft> <M> <A> <parenright> : "㋮"  U32EE  # CIRCLED KATAKANA MA
+<Multi_key> <j> <c> <parenleft> <M> <I> <parenright> : "㋯"  U32EF  # CIRCLED KATAKANA MI
+<Multi_key> <j> <c> <parenleft> <M> <U> <parenright> : "㋰"  U32F0  # CIRCLED KATAKANA MU
+<Multi_key> <j> <c> <parenleft> <M> <E> <parenright> : "㋱"  U32F1  # CIRCLED KATAKANA ME
+<Multi_key> <j> <c> <parenleft> <M> <O> <parenright> : "㋲"  U32F2  # CIRCLED KATAKANA MO
+<Multi_key> <j> <c> <parenleft> <Y> <A> <parenright> : "㋳"  U32F3  # CIRCLED KATAKANA YA
+<Multi_key> <j> <c> <parenleft> <Y> <U> <parenright> : "㋴"  U32F4  # CIRCLED KATAKANA YU
+<Multi_key> <j> <c> <parenleft> <Y> <O> <parenright> : "㋵"  U32F5  # CIRCLED KATAKANA YO
+<Multi_key> <j> <c> <parenleft> <R> <A> <parenright> : "㋶"  U32F6  # CIRCLED KATAKANA RA
+<Multi_key> <j> <c> <parenleft> <R> <I> <parenright> : "㋷"  U32F7  # CIRCLED KATAKANA RI
+<Multi_key> <j> <c> <parenleft> <R> <U> <parenright> : "㋸"  U32F8  # CIRCLED KATAKANA RU
+<Multi_key> <j> <c> <parenleft> <R> <E> <parenright> : "㋹"  U32F9  # CIRCLED KATAKANA RE
+<Multi_key> <j> <c> <parenleft> <R> <O> <parenright> : "㋺"  U32FA  # CIRCLED KATAKANA RO
+<Multi_key> <j> <c> <parenleft> <W> <A> <parenright> : "㋻"  U32FB  # CIRCLED KATAKANA WA
+<Multi_key> <j> <c> <parenleft> <W> <I> <parenright> : "㋼"  U32FC  # CIRCLED KATAKANA WI
+<Multi_key> <j> <c> <parenleft> <W> <E> <parenright> : "㋽"  U32FD  # CIRCLED KATAKANA WE
+<Multi_key> <j> <c> <parenleft> <W> <O> <parenright> : "㋾"  U32FE  # CIRCLED KATAKANA WO
+
 # Kanji
 
 <Multi_key> <j> <c> <Y> <equal>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
@@ -12309,6 +12401,17 @@ include "%L"
 <Multi_key> <j> <numbersign> <E> <3>     : "千"  U5343   # CJK UNIFIED IDEOGRAPH-5343 (1_000)
 <Multi_key> <j> <numbersign> <E> <4>     : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000)
 <Multi_key> <j> <numbersign> <E> <8>     : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
+
+<Multi_key> <j> <numbersign> <parenleft> <1> <parenright> : "㊀"  U3280  # CIRCLED IDEOGRAPH ONE
+<Multi_key> <j> <numbersign> <parenleft> <2> <parenright> : "㊁"  U3281  # CIRCLED IDEOGRAPH TWO
+<Multi_key> <j> <numbersign> <parenleft> <3> <parenright> : "㊂"  U3282  # CIRCLED IDEOGRAPH THREE
+<Multi_key> <j> <numbersign> <parenleft> <4> <parenright> : "㊃"  U3283  # CIRCLED IDEOGRAPH FOUR
+<Multi_key> <j> <numbersign> <parenleft> <5> <parenright> : "㊄"  U3284  # CIRCLED IDEOGRAPH FIVE
+<Multi_key> <j> <numbersign> <parenleft> <6> <parenright> : "㊅"  U3285  # CIRCLED IDEOGRAPH SIX
+<Multi_key> <j> <numbersign> <parenleft> <7> <parenright> : "㊆"  U3286  # CIRCLED IDEOGRAPH SEVEN
+<Multi_key> <j> <numbersign> <parenleft> <8> <parenright> : "㊇"  U3287  # CIRCLED IDEOGRAPH EIGHT
+<Multi_key> <j> <numbersign> <parenleft> <9> <parenright> : "㊈"  U3288  # CIRCLED IDEOGRAPH NINE
+<Multi_key> <j> <numbersign> <parenleft> <1> <0> <parenright> : "㊉"  U3289  # CIRCLED IDEOGRAPH TEN
 
 # Punctuation
 
@@ -12453,37 +12556,37 @@ include "%L"
 <Multi_key> <k> <1> <p> : "ᄑ"  U1111   # HANGUL CHOSEONG PHIEUPH
 <Multi_key> <k> <1> <h> : "ᄒ"  U1112   # HANGUL CHOSEONG HIEUH
 
-<Multi_key> <k> <2> <a> <period>     : "ᅡ"  U1161   # HANGUL JUNGSEONG A
+<Multi_key> <k> <2> <a> <space>      : "ᅡ"  U1161   # HANGUL JUNGSEONG A
 <Multi_key> <k> <2> <a> <e>          : "ᅢ"  U1162   # HANGUL JUNGSEONG AE
-<Multi_key> <k> <2> <y> <a> <period> : "ᅣ"  U1163   # HANGUL JUNGSEONG YA
+<Multi_key> <k> <2> <y> <a> <space>  : "ᅣ"  U1163   # HANGUL JUNGSEONG YA
 <Multi_key> <k> <2> <y> <a> <e>      : "ᅤ"  U1164   # HANGUL JUNGSEONG YAE
 <Multi_key> <k> <2> <e> <o>          : "ᅥ"  U1165   # HANGUL JUNGSEONG EO
-<Multi_key> <k> <2> <e> <period>     : "ᅦ"  U1166   # HANGUL JUNGSEONG E
+<Multi_key> <k> <2> <e> <space>      : "ᅦ"  U1166   # HANGUL JUNGSEONG E
 <Multi_key> <k> <2> <y> <e> <o>      : "ᅧ"  U1167   # HANGUL JUNGSEONG YEO
-<Multi_key> <k> <2> <y> <e> <period> : "ᅨ"  U1168   # HANGUL JUNGSEONG YE
-<Multi_key> <k> <2> <o> <period>     : "ᅩ"  U1169   # HANGUL JUNGSEONG O
-<Multi_key> <k> <2> <w> <a> <period> : "ᅪ"  U116A   # HANGUL JUNGSEONG WA
+<Multi_key> <k> <2> <y> <e> <space>  : "ᅨ"  U1168   # HANGUL JUNGSEONG YE
+<Multi_key> <k> <2> <o> <space>      : "ᅩ"  U1169   # HANGUL JUNGSEONG O
+<Multi_key> <k> <2> <w> <a> <space>  : "ᅪ"  U116A   # HANGUL JUNGSEONG WA
 <Multi_key> <k> <2> <w> <a> <e>      : "ᅫ"  U116B   # HANGUL JUNGSEONG WAE
 <Multi_key> <k> <2> <o> <e>          : "ᅬ"  U116C   # HANGUL JUNGSEONG OE
 <Multi_key> <k> <2> <y> <o>          : "ᅭ"  U116D   # HANGUL JUNGSEONG YO
 <Multi_key> <k> <2> <u>              : "ᅮ"  U116E   # HANGUL JUNGSEONG U
 <Multi_key> <k> <2> <w> <e> <o>      : "ᅯ"  U116F   # HANGUL JUNGSEONG WEO
-<Multi_key> <k> <2> <w> <e> <period> : "ᅰ"  U1170   # HANGUL JUNGSEONG WE
+<Multi_key> <k> <2> <w> <e> <space>  : "ᅰ"  U1170   # HANGUL JUNGSEONG WE
 <Multi_key> <k> <2> <w> <i>          : "ᅱ"  U1171   # HANGUL JUNGSEONG WI
 <Multi_key> <k> <2> <y> <u>          : "ᅲ"  U1172   # HANGUL JUNGSEONG YU
 <Multi_key> <k> <2> <e> <u>          : "ᅳ"  U1173   # HANGUL JUNGSEONG EU
 <Multi_key> <k> <2> <y> <i>          : "ᅴ"  U1174   # HANGUL JUNGSEONG YI
 <Multi_key> <k> <2> <i>              : "ᅵ"  U1175   # HANGUL JUNGSEONG I
 
-<Multi_key> <k> <3> <g> <period> : "ᆨ"  U11A8   # HANGUL JONGSEONG KIYEOK
+<Multi_key> <k> <3> <g> <space>  : "ᆨ"  U11A8   # HANGUL JONGSEONG KIYEOK
 <Multi_key> <k> <3> <g> <g>      : "ᆩ"  U11A9   # HANGUL JONGSEONG SSANGKIYEOK
 <Multi_key> <k> <3> <G>          : "ᆩ"  U11A9   # HANGUL JONGSEONG SSANGKIYEOK
 <Multi_key> <k> <3> <g> <s>      : "ᆪ"  U11AA   # HANGUL JONGSEONG KIYEOK-SIOS
-<Multi_key> <k> <3> <n> <period> : "ᆫ"  U11AB   # HANGUL JONGSEONG NIEUN
+<Multi_key> <k> <3> <n> <space>  : "ᆫ"  U11AB   # HANGUL JONGSEONG NIEUN
 <Multi_key> <k> <3> <n> <j>      : "ᆬ"  U11AC   # HANGUL JONGSEONG NIEUN-CIEUC
 <Multi_key> <k> <3> <n> <h>      : "ᆭ"  U11AD   # HANGUL JONGSEONG NIEUN-HIEUH
 <Multi_key> <k> <3> <d>          : "ᆮ"  U11AE   # HANGUL JONGSEONG TIKEUT
-<Multi_key> <k> <3> <l> <period> : "ᆯ"  U11AF   # HANGUL JONGSEONG RIEUL
+<Multi_key> <k> <3> <l> <space>  : "ᆯ"  U11AF   # HANGUL JONGSEONG RIEUL
 <Multi_key> <k> <3> <l> <g>      : "ᆰ"  U11B0   # HANGUL JONGSEONG RIEUL-KIYEOK
 <Multi_key> <k> <3> <l> <m>      : "ᆱ"  U11B1   # HANGUL JONGSEONG RIEUL-MIEUM
 <Multi_key> <k> <3> <l> <b>      : "ᆲ"  U11B2   # HANGUL JONGSEONG RIEUL-PIEUP
@@ -12492,7 +12595,7 @@ include "%L"
 <Multi_key> <k> <3> <l> <p>      : "ᆵ"  U11B5   # HANGUL JONGSEONG RIEUL-PHIEUPH
 <Multi_key> <k> <3> <l> <h>      : "ᆶ"  U11B6   # HANGUL JONGSEONG RIEUL-HIEUH
 <Multi_key> <k> <3> <m>          : "ᆷ"  U11B7   # HANGUL JONGSEONG MIEUM
-<Multi_key> <k> <3> <b> <period> : "ᆸ"  U11B8   # HANGUL JONGSEONG PIEUP
+<Multi_key> <k> <3> <b> <space>  : "ᆸ"  U11B8   # HANGUL JONGSEONG PIEUP
 <Multi_key> <k> <3> <b> <s>      : "ᆹ"  U11B9   # HANGUL JONGSEONG PIEUP-SIOS
 <Multi_key> <k> <3> <s>          : "ᆺ"  U11BA   # HANGUL JONGSEONG SIOS
 <Multi_key> <k> <3> <S>          : "ᆻ"  U11BB   # HANGUL JONGSEONG SSANGSIOS
@@ -12505,16 +12608,16 @@ include "%L"
 <Multi_key> <k> <3> <p>          : "ᇁ"  U11C1   # HANGUL JONGSEONG PHIEUPH
 <Multi_key> <k> <3> <h>          : "ᇂ"  U11C2   # HANGUL JONGSEONG HIEUH
 
-<Multi_key> <k> <c> <g> <period> : "ㄱ"  U3131   # HANGUL LETTER KIYEOK
+<Multi_key> <k> <c> <g> <space>  : "ㄱ"  U3131   # HANGUL LETTER KIYEOK
 <Multi_key> <k> <c> <g> <g>      : "ㄲ"  U3132   # HANGUL LETTER SSANGKIYEOK
 <Multi_key> <k> <c> <G>          : "ㄲ"  U3132   # HANGUL LETTER SSANGKIYEOK
 <Multi_key> <k> <c> <g> <s>      : "ㄳ"  U3133   # HANGUL LETTER KIYEOK-SIOS
-<Multi_key> <k> <c> <n> <period> : "ㄴ"  U3134   # HANGUL LETTER NIEUN
+<Multi_key> <k> <c> <n> <space>  : "ㄴ"  U3134   # HANGUL LETTER NIEUN
 <Multi_key> <k> <c> <n> <j>      : "ㄵ"  U3135   # HANGUL LETTER NIEUN-CIEUC
 <Multi_key> <k> <c> <n> <h>      : "ㄶ"  U3136   # HANGUL LETTER NIEUN-HIEUH
 <Multi_key> <k> <c> <d>          : "ㄷ"  U3137   # HANGUL LETTER TIKEUT
 <Multi_key> <k> <c> <D>          : "ㄸ"  U3138   # HANGUL LETTER SSANGTIKEUT
-<Multi_key> <k> <c> <l> <period> : "ㄹ"  U3139   # HANGUL LETTER RIEUL
+<Multi_key> <k> <c> <l> <space>  : "ㄹ"  U3139   # HANGUL LETTER RIEUL
 <Multi_key> <k> <c> <l> <g>      : "ㄺ"  U313A   # HANGUL LETTER RIEUL-KIYEOK
 <Multi_key> <k> <c> <l> <m>      : "ㄻ"  U313B   # HANGUL LETTER RIEUL-MIEUM
 <Multi_key> <k> <c> <l> <b>      : "ㄼ"  U313C   # HANGUL LETTER RIEUL-PIEUP
@@ -12523,7 +12626,7 @@ include "%L"
 <Multi_key> <k> <c> <l> <p>      : "ㄿ"  U313F   # HANGUL LETTER RIEUL-PHIEUPH
 <Multi_key> <k> <c> <l> <h>      : "ㅀ"  U3140   # HANGUL LETTER RIEUL-HIEUH
 <Multi_key> <k> <c> <m>          : "ㅁ"  U3141   # HANGUL LETTER MIEUM
-<Multi_key> <k> <c> <b> <period> : "ㅂ"  U3142   # HANGUL LETTER PIEUP
+<Multi_key> <k> <c> <b> <space>  : "ㅂ"  U3142   # HANGUL LETTER PIEUP
 <Multi_key> <k> <c> <b> <b>      : "ㅃ"  U3143   # HANGUL LETTER SSANGPIEUP
 <Multi_key> <k> <c> <B>          : "ㅃ"  U3143   # HANGUL LETTER SSANGPIEUP
 <Multi_key> <k> <c> <b> <s>      : "ㅄ"  U3144   # HANGUL LETTER PIEUP-SIOS
@@ -12539,27 +12642,350 @@ include "%L"
 <Multi_key> <k> <c> <p>          : "ㅍ"  U314D   # HANGUL LETTER PHIEUPH
 <Multi_key> <k> <c> <h>          : "ㅎ"  U314E   # HANGUL LETTER HIEUH
 
-<Multi_key> <k> <c> <a> <period>     : "ㅏ"  U314F   # HANGUL LETTER A
+<Multi_key> <k> <c> <a> <space>      : "ㅏ"  U314F   # HANGUL LETTER A
 <Multi_key> <k> <c> <a> <e>          : "ㅐ"  U3150   # HANGUL LETTER AE
-<Multi_key> <k> <c> <y> <a> <period> : "ㅑ"  U3151   # HANGUL LETTER YA
+<Multi_key> <k> <c> <y> <a> <space>  : "ㅑ"  U3151   # HANGUL LETTER YA
 <Multi_key> <k> <c> <y> <a> <e>      : "ㅒ"  U3152   # HANGUL LETTER YAE
 <Multi_key> <k> <c> <e> <o>          : "ㅓ"  U3153   # HANGUL LETTER EO
-<Multi_key> <k> <c> <e> <period>     : "ㅔ"  U3154   # HANGUL LETTER E
+<Multi_key> <k> <c> <e> <space>      : "ㅔ"  U3154   # HANGUL LETTER E
 <Multi_key> <k> <c> <y> <e> <o>      : "ㅕ"  U3155   # HANGUL LETTER YEO
-<Multi_key> <k> <c> <y> <e> <period> : "ㅖ"  U3156   # HANGUL LETTER YE
-<Multi_key> <k> <c> <o> <period>     : "ㅗ"  U3157   # HANGUL LETTER O
-<Multi_key> <k> <c> <w> <a> <period> : "ㅘ"  U3158   # HANGUL LETTER WA
+<Multi_key> <k> <c> <y> <e> <space>  : "ㅖ"  U3156   # HANGUL LETTER YE
+<Multi_key> <k> <c> <o> <space>      : "ㅗ"  U3157   # HANGUL LETTER O
+<Multi_key> <k> <c> <w> <a> <space>  : "ㅘ"  U3158   # HANGUL LETTER WA
 <Multi_key> <k> <c> <w> <a> <e>      : "ㅙ"  U3159   # HANGUL LETTER WAE
 <Multi_key> <k> <c> <o> <e>          : "ㅚ"  U315A   # HANGUL LETTER OE
 <Multi_key> <k> <c> <y> <o>          : "ㅛ"  U315B   # HANGUL LETTER YO
 <Multi_key> <k> <c> <u>              : "ㅜ"  U315C   # HANGUL LETTER U
 <Multi_key> <k> <c> <w> <e> <o>      : "ㅝ"  U315D   # HANGUL LETTER WEO
-<Multi_key> <k> <c> <w> <e> <period> : "ㅞ"  U315E   # HANGUL LETTER WE
+<Multi_key> <k> <c> <w> <e> <space>  : "ㅞ"  U315E   # HANGUL LETTER WE
 <Multi_key> <k> <c> <w> <i>          : "ㅟ"  U315F   # HANGUL LETTER WI
 <Multi_key> <k> <c> <y> <u>          : "ㅠ"  U3160   # HANGUL LETTER YU
 <Multi_key> <k> <c> <e> <u>          : "ㅡ"  U3161   # HANGUL LETTER EU
 <Multi_key> <k> <c> <y> <i>          : "ㅢ"  U3162   # HANGUL LETTER YI
 <Multi_key> <k> <c> <i>              : "ㅣ"  U3163   # HANGUL LETTER I
+
+# circled letters
+
+<Multi_key> <k> <c> <parenleft> <g> <parenright> : "㉠"  U3260  # CIRCLED HANGUL KIYEOK
+<Multi_key> <k> <c> <parenleft> <n> <parenright> : "㉡"  U3261  # CIRCLED HANGUL NIEUN
+<Multi_key> <k> <c> <parenleft> <d> <parenright> : "㉢"  U3262  # CIRCLED HANGUL TIKEUT
+<Multi_key> <k> <c> <parenleft> <l> <parenright> : "㉣"  U3263  # CIRCLED HANGUL RIEUL
+<Multi_key> <k> <c> <parenleft> <m> <parenright> : "㉤"  U3264  # CIRCLED HANGUL MIEUM
+<Multi_key> <k> <c> <parenleft> <b> <parenright> : "㉥"  U3265  # CIRCLED HANGUL PIEUP
+<Multi_key> <k> <c> <parenleft> <s> <parenright> : "㉦"  U3266  # CIRCLED HANGUL SIOS
+<Multi_key> <k> <c> <parenleft> <0> <parenright> : "㉧"  U3267  # CIRCLED HANGUL IEUNG
+<Multi_key> <k> <c> <parenleft> <n> <g> <parenright> : "㉧"  U3267  # CIRCLED HANGUL IEUNG
+<Multi_key> <k> <c> <parenleft> <j> <parenright> : "㉨"  U3268  # CIRCLED HANGUL CIEUC
+<Multi_key> <k> <c> <parenleft> <c> <parenright> : "㉩"  U3269  # CIRCLED HANGUL CHIEUCH
+<Multi_key> <k> <c> <parenleft> <k> <parenright> : "㉪"  U326A  # CIRCLED HANGUL KHIEUKH
+<Multi_key> <k> <c> <parenleft> <t> <parenright> : "㉫"  U326B  # CIRCLED HANGUL THIEUTH
+<Multi_key> <k> <c> <parenleft> <p> <parenright> : "㉬"  U326C  # CIRCLED HANGUL PHIEUPH
+<Multi_key> <k> <c> <parenleft> <h> <parenright> : "㉭"  U326D  # CIRCLED HANGUL HIEUH
+<Multi_key> <k> <c> <parenleft> <g> <a> <parenright> : "㉮"  U326E  # CIRCLED HANGUL KIYEOK A
+<Multi_key> <k> <c> <parenleft> <n> <a> <parenright> : "㉯"  U326F  # CIRCLED HANGUL NIEUN A
+<Multi_key> <k> <c> <parenleft> <d> <a> <parenright> : "㉰"  U3270  # CIRCLED HANGUL TIKEUT A
+<Multi_key> <k> <c> <parenleft> <l> <a> <parenright> : "㉱"  U3271  # CIRCLED HANGUL RIEUL A
+<Multi_key> <k> <c> <parenleft> <m> <a> <parenright> : "㉲"  U3272  # CIRCLED HANGUL MIEUM A
+<Multi_key> <k> <c> <parenleft> <b> <a> <parenright> : "㉳"  U3273  # CIRCLED HANGUL PIEUP A
+<Multi_key> <k> <c> <parenleft> <s> <a> <parenright> : "㉴"  U3274  # CIRCLED HANGUL SIOS A
+<Multi_key> <k> <c> <parenleft> <0> <a> <parenright> : "㉵"  U3275  # CIRCLED HANGUL IEUNG A
+<Multi_key> <k> <c> <parenleft> <n> <g> <a> <parenright> : "㉵"  U3275  # CIRCLED HANGUL IEUNG A
+<Multi_key> <k> <c> <parenleft> <j> <a> <parenright> : "㉶"  U3276  # CIRCLED HANGUL CIEUC A
+<Multi_key> <k> <c> <parenleft> <c> <a> <parenright> : "㉷"  U3277  # CIRCLED HANGUL CHIEUCH A
+<Multi_key> <k> <c> <parenleft> <k> <a> <parenright> : "㉸"  U3278  # CIRCLED HANGUL KHIEUKH A
+<Multi_key> <k> <c> <parenleft> <t> <a> <parenright> : "㉹"  U3279  # CIRCLED HANGUL THIEUTH A
+<Multi_key> <k> <c> <parenleft> <p> <a> <parenright> : "㉺"  U327A  # CIRCLED HANGUL PHIEUPH A
+<Multi_key> <k> <c> <parenleft> <h> <a> <parenright> : "㉻"  U327B  # CIRCLED HANGUL HIEUH A
+<Multi_key> <k> <c> <parenleft> <c> <h> <a> <m> <g> <o> <parenright> : "㉼"  U327C  # CIRCLED KOREAN CHARACTER CHAMKO
+<Multi_key> <k> <c> <parenleft> <j> <u> <u> <i> <parenright> : "㉽"  U327D  # CIRCLED KOREAN CHARACTER JUEUI
+<Multi_key> <k> <c> <parenleft> <0> <u> <parenright> : "㉾"  U327E  # CIRCLED HANGUL IEUNG U
+<Multi_key> <k> <c> <parenleft> <n> <g> <u> <parenright> : "㉾"  U327E  # CIRCLED HANGUL IEUNG U
+
+# obsolete ligatures
+
+<Multi_key> <k> <1> <braceleft> <n> <g> <braceright> : "ᄓ"  U1113  # HANGUL CHOSEONG NIEUN-KIYEOK
+<Multi_key> <k> <1> <braceleft> <n> <n> <braceright> : "ᄔ"  U1114  # HANGUL CHOSEONG SSANGNIEUN
+<Multi_key> <k> <1> <braceleft> <n> <d> <braceright> : "ᄕ"  U1115  # HANGUL CHOSEONG NIEUN-TIKEUT
+<Multi_key> <k> <1> <braceleft> <n> <b> <braceright> : "ᄖ"  U1116  # HANGUL CHOSEONG NIEUN-PIEUP
+<Multi_key> <k> <1> <braceleft> <d> <g> <braceright> : "ᄗ"  U1117  # HANGUL CHOSEONG TIKEUT-KIYEOK
+<Multi_key> <k> <1> <braceleft> <r> <n> <braceright> : "ᄘ"  U1118  # HANGUL CHOSEONG RIEUL-NIEUN
+<Multi_key> <k> <1> <braceleft> <r> <r> <braceright> : "ᄙ"  U1119  # HANGUL CHOSEONG SSANGRIEUL
+<Multi_key> <k> <1> <braceleft> <r> <h> <braceright> : "ᄚ"  U111A  # HANGUL CHOSEONG RIEUL-HIEUH
+<Multi_key> <k> <1> <braceleft> <r> <0> <braceright> : "ᄛ"  U111B  # HANGUL CHOSEONG KAPYEOUNRIEUL
+<Multi_key> <k> <1> <braceleft> <r> <o> <braceright> : "ᄛ"  U111B  # HANGUL CHOSEONG KAPYEOUNRIEUL
+<Multi_key> <k> <1> <braceleft> <m> <b> <braceright> : "ᄜ"  U111C  # HANGUL CHOSEONG MIEUM-PIEUP
+<Multi_key> <k> <1> <braceleft> <m> <0> <braceright> : "ᄝ"  U111D  # HANGUL CHOSEONG KAPYEOUNMIEUM
+<Multi_key> <k> <1> <braceleft> <m> <o> <braceright> : "ᄝ"  U111D  # HANGUL CHOSEONG KAPYEOUNMIEUM
+<Multi_key> <k> <1> <braceleft> <b> <g> <braceright> : "ᄞ"  U111E  # HANGUL CHOSEONG PIEUP-KIYEOK
+<Multi_key> <k> <1> <braceleft> <b> <n> <braceright> : "ᄟ"  U111F  # HANGUL CHOSEONG PIEUP-NIEUN
+<Multi_key> <k> <1> <braceleft> <b> <d> <braceright> : "ᄠ"  U1120  # HANGUL CHOSEONG PIEUP-TIKEUT
+<Multi_key> <k> <1> <braceleft> <b> <s> <braceright> : "ᄡ"  U1121  # HANGUL CHOSEONG PIEUP-SIOS
+<Multi_key> <k> <1> <braceleft> <b> <s> <g> <braceright> : "ᄢ"  U1122  # HANGUL CHOSEONG PIEUP-SIOS-KIYEOK
+<Multi_key> <k> <1> <braceleft> <b> <s> <d> <braceright> : "ᄣ"  U1123  # HANGUL CHOSEONG PIEUP-SIOS-TIKEUT
+<Multi_key> <k> <1> <braceleft> <b> <s> <b> <braceright> : "ᄤ"  U1124  # HANGUL CHOSEONG PIEUP-SIOS-PIEUP
+<Multi_key> <k> <1> <braceleft> <b> <S> <braceright> : "ᄥ"  U1125  # HANGUL CHOSEONG PIEUP-SSANGSIOS
+<Multi_key> <k> <1> <braceleft> <b> <s> <j> <braceright> : "ᄦ"  U1126  # HANGUL CHOSEONG PIEUP-SIOS-CIEUC
+<Multi_key> <k> <1> <braceleft> <b> <j> <braceright> : "ᄧ"  U1127  # HANGUL CHOSEONG PIEUP-CIEUC
+<Multi_key> <k> <1> <braceleft> <b> <c> <braceright> : "ᄨ"  U1128  # HANGUL CHOSEONG PIEUP-CHIEUCH
+<Multi_key> <k> <1> <braceleft> <b> <t> <braceright> : "ᄩ"  U1129  # HANGUL CHOSEONG PIEUP-THIEUTH
+<Multi_key> <k> <1> <braceleft> <b> <p> <braceright> : "ᄪ"  U112A  # HANGUL CHOSEONG PIEUP-PHIEUPH
+<Multi_key> <k> <1> <braceleft> <b> <0> <braceright> : "ᄫ"  U112B  # HANGUL CHOSEONG KAPYEOUNPIEUP
+<Multi_key> <k> <1> <braceleft> <b> <o> <braceright> : "ᄫ"  U112B  # HANGUL CHOSEONG KAPYEOUNPIEUP
+<Multi_key> <k> <1> <braceleft> <B> <0> <braceright> : "ᄬ"  U112C  # HANGUL CHOSEONG KAPYEOUNSSANGPIEUP
+<Multi_key> <k> <1> <braceleft> <B> <o> <braceright> : "ᄬ"  U112C  # HANGUL CHOSEONG KAPYEOUNSSANGPIEUP
+<Multi_key> <k> <1> <braceleft> <s> <g> <braceright> : "ᄭ"  U112D  # HANGUL CHOSEONG SIOS-KIYEOK
+<Multi_key> <k> <1> <braceleft> <s> <n> <braceright> : "ᄮ"  U112E  # HANGUL CHOSEONG SIOS-NIEUN
+<Multi_key> <k> <1> <braceleft> <s> <d> <braceright> : "ᄯ"  U112F  # HANGUL CHOSEONG SIOS-TIKEUT
+<Multi_key> <k> <1> <braceleft> <s> <r> <braceright> : "ᄰ"  U1130  # HANGUL CHOSEONG SIOS-RIEUL
+<Multi_key> <k> <1> <braceleft> <s> <m> <braceright> : "ᄱ"  U1131  # HANGUL CHOSEONG SIOS-MIEUM
+<Multi_key> <k> <1> <braceleft> <s> <b> <braceright> : "ᄲ"  U1132  # HANGUL CHOSEONG SIOS-PIEUP
+<Multi_key> <k> <1> <braceleft> <s> <b> <g> <braceright> : "ᄳ"  U1133  # HANGUL CHOSEONG SIOS-PIEUP-KIYEOK
+<Multi_key> <k> <1> <braceleft> <s> <S> <braceright> : "ᄴ"  U1134  # HANGUL CHOSEONG SIOS-SSANGSIOS
+<Multi_key> <k> <1> <braceleft> <s> <0> <braceright> : "ᄵ"  U1135  # HANGUL CHOSEONG SIOS-IEUNG
+<Multi_key> <k> <1> <braceleft> <s> <o> <braceright> : "ᄵ"  U1135  # HANGUL CHOSEONG SIOS-IEUNG
+<Multi_key> <k> <1> <braceleft> <s> <j> <braceright> : "ᄶ"  U1136  # HANGUL CHOSEONG SIOS-CIEUC
+<Multi_key> <k> <1> <braceleft> <s> <c> <braceright> : "ᄷ"  U1137  # HANGUL CHOSEONG SIOS-CHIEUCH
+<Multi_key> <k> <1> <braceleft> <s> <k> <braceright> : "ᄸ"  U1138  # HANGUL CHOSEONG SIOS-KHIEUKH
+<Multi_key> <k> <1> <braceleft> <s> <t> <braceright> : "ᄹ"  U1139  # HANGUL CHOSEONG SIOS-THIEUTH
+<Multi_key> <k> <1> <braceleft> <s> <p> <braceright> : "ᄺ"  U113A  # HANGUL CHOSEONG SIOS-PHIEUPH
+<Multi_key> <k> <1> <braceleft> <s> <h> <braceright> : "ᄻ"  U113B  # HANGUL CHOSEONG SIOS-HIEUH
+<Multi_key> <k> <1> <braceleft> <0> <g> <braceright> : "ᅁ"  U1141  # HANGUL CHOSEONG IEUNG-KIYEOK
+<Multi_key> <k> <1> <braceleft> <o> <g> <braceright> : "ᅁ"  U1141  # HANGUL CHOSEONG IEUNG-KIYEOK
+<Multi_key> <k> <1> <braceleft> <0> <d> <braceright> : "ᅂ"  U1142  # HANGUL CHOSEONG IEUNG-TIKEUT
+<Multi_key> <k> <1> <braceleft> <o> <d> <braceright> : "ᅂ"  U1142  # HANGUL CHOSEONG IEUNG-TIKEUT
+<Multi_key> <k> <1> <braceleft> <0> <m> <braceright> : "ᅃ"  U1143  # HANGUL CHOSEONG IEUNG-MIEUM
+<Multi_key> <k> <1> <braceleft> <o> <m> <braceright> : "ᅃ"  U1143  # HANGUL CHOSEONG IEUNG-MIEUM
+<Multi_key> <k> <1> <braceleft> <0> <b> <braceright> : "ᅄ"  U1144  # HANGUL CHOSEONG IEUNG-PIEUP
+<Multi_key> <k> <1> <braceleft> <o> <b> <braceright> : "ᅄ"  U1144  # HANGUL CHOSEONG IEUNG-PIEUP
+<Multi_key> <k> <1> <braceleft> <0> <s> <braceright> : "ᅅ"  U1145  # HANGUL CHOSEONG IEUNG-SIOS
+<Multi_key> <k> <1> <braceleft> <o> <s> <braceright> : "ᅅ"  U1145  # HANGUL CHOSEONG IEUNG-SIOS
+<Multi_key> <k> <1> <braceleft> <0> <0> <braceright> : "ᅇ"  U1147  # HANGUL CHOSEONG SSANGIEUNG
+<Multi_key> <k> <1> <braceleft> <o> <o> <braceright> : "ᅇ"  U1147  # HANGUL CHOSEONG SSANGIEUNG
+<Multi_key> <k> <1> <braceleft> <0> <j> <braceright> : "ᅈ"  U1148  # HANGUL CHOSEONG IEUNG-CIEUC
+<Multi_key> <k> <1> <braceleft> <o> <j> <braceright> : "ᅈ"  U1148  # HANGUL CHOSEONG IEUNG-CIEUC
+<Multi_key> <k> <1> <braceleft> <0> <c> <braceright> : "ᅉ"  U1149  # HANGUL CHOSEONG IEUNG-CHIEUCH
+<Multi_key> <k> <1> <braceleft> <o> <c> <braceright> : "ᅉ"  U1149  # HANGUL CHOSEONG IEUNG-CHIEUCH
+<Multi_key> <k> <1> <braceleft> <0> <t> <braceright> : "ᅊ"  U114A  # HANGUL CHOSEONG IEUNG-THIEUTH
+<Multi_key> <k> <1> <braceleft> <o> <t> <braceright> : "ᅊ"  U114A  # HANGUL CHOSEONG IEUNG-THIEUTH
+<Multi_key> <k> <1> <braceleft> <0> <p> <braceright> : "ᅋ"  U114B  # HANGUL CHOSEONG IEUNG-PHIEUPH
+<Multi_key> <k> <1> <braceleft> <o> <p> <braceright> : "ᅋ"  U114B  # HANGUL CHOSEONG IEUNG-PHIEUPH
+<Multi_key> <k> <1> <braceleft> <j> <0> <braceright> : "ᅍ"  U114D  # HANGUL CHOSEONG CIEUC-IEUNG
+<Multi_key> <k> <1> <braceleft> <j> <o> <braceright> : "ᅍ"  U114D  # HANGUL CHOSEONG CIEUC-IEUNG
+<Multi_key> <k> <1> <braceleft> <c> <k> <braceright> : "ᅒ"  U1152  # HANGUL CHOSEONG CHIEUCH-KHIEUKH
+<Multi_key> <k> <1> <braceleft> <c> <h> <braceright> : "ᅓ"  U1153  # HANGUL CHOSEONG CHIEUCH-HIEUH
+<Multi_key> <k> <1> <braceleft> <p> <b> <braceright> : "ᅖ"  U1156  # HANGUL CHOSEONG PHIEUPH-PIEUP
+<Multi_key> <k> <1> <braceleft> <p> <0> <braceright> : "ᅗ"  U1157  # HANGUL CHOSEONG KAPYEOUNPHIEUPH
+<Multi_key> <k> <1> <braceleft> <p> <o> <braceright> : "ᅗ"  U1157  # HANGUL CHOSEONG KAPYEOUNPHIEUPH
+<Multi_key> <k> <1> <braceleft> <h> <h> <braceright> : "ᅘ"  U1158  # HANGUL CHOSEONG SSANGHIEUH
+<Multi_key> <k> <1> <braceleft> <g> <d> <braceright> : "ᅚ"  U115A  # HANGUL CHOSEONG KIYEOK-TIKEUT
+<Multi_key> <k> <1> <braceleft> <n> <s> <braceright> : "ᅛ"  U115B  # HANGUL CHOSEONG NIEUN-SIOS
+<Multi_key> <k> <1> <braceleft> <n> <j> <braceright> : "ᅜ"  U115C  # HANGUL CHOSEONG NIEUN-CIEUC
+<Multi_key> <k> <1> <braceleft> <n> <h> <braceright> : "ᅝ"  U115D  # HANGUL CHOSEONG NIEUN-HIEUH
+<Multi_key> <k> <1> <braceleft> <d> <r> <braceright> : "ᅞ"  U115E  # HANGUL CHOSEONG TIKEUT-RIEUL
+<Multi_key> <k> <1> <braceleft> <d> <m> <braceright> : "ꥠ"  UA960  # HANGUL CHOSEONG TIKEUT-MIEUM
+<Multi_key> <k> <1> <braceleft> <d> <b> <braceright> : "ꥡ"  UA961  # HANGUL CHOSEONG TIKEUT-PIEUP
+<Multi_key> <k> <1> <braceleft> <d> <s> <braceright> : "ꥢ"  UA962  # HANGUL CHOSEONG TIKEUT-SIOS
+<Multi_key> <k> <1> <braceleft> <d> <j> <braceright> : "ꥣ"  UA963  # HANGUL CHOSEONG TIKEUT-CIEUC
+<Multi_key> <k> <1> <braceleft> <r> <g> <braceright> : "ꥤ"  UA964  # HANGUL CHOSEONG RIEUL-KIYEOK
+<Multi_key> <k> <1> <braceleft> <r> <g> <g> <braceright> : "ꥥ"  UA965  # HANGUL CHOSEONG RIEUL-SSANGKIYEOK
+<Multi_key> <k> <1> <braceleft> <r> <d> <braceright> : "ꥦ"  UA966  # HANGUL CHOSEONG RIEUL-TIKEUT
+<Multi_key> <k> <1> <braceleft> <r> <d> <d> <braceright> : "ꥧ"  UA967  # HANGUL CHOSEONG RIEUL-SSANGTIKEUT
+<Multi_key> <k> <1> <braceleft> <r> <m> <braceright> : "ꥨ"  UA968  # HANGUL CHOSEONG RIEUL-MIEUM
+<Multi_key> <k> <1> <braceleft> <r> <b> <braceright> : "ꥩ"  UA969  # HANGUL CHOSEONG RIEUL-PIEUP
+<Multi_key> <k> <1> <braceleft> <r> <b> <b> <braceright> : "ꥪ"  UA96A  # HANGUL CHOSEONG RIEUL-SSANGPIEUP
+<Multi_key> <k> <1> <braceleft> <r> <b> <0> <braceright> : "ꥫ"  UA96B  # HANGUL CHOSEONG RIEUL-KAPYEOUNPIEUP
+<Multi_key> <k> <1> <braceleft> <r> <b> <o> <braceright> : "ꥫ"  UA96B  # HANGUL CHOSEONG RIEUL-KAPYEOUNPIEUP
+<Multi_key> <k> <1> <braceleft> <r> <s> <braceright> : "ꥬ"  UA96C  # HANGUL CHOSEONG RIEUL-SIOS
+<Multi_key> <k> <1> <braceleft> <r> <j> <braceright> : "ꥭ"  UA96D  # HANGUL CHOSEONG RIEUL-CIEUC
+<Multi_key> <k> <1> <braceleft> <r> <k> <braceright> : "ꥮ"  UA96E  # HANGUL CHOSEONG RIEUL-KHIEUKH
+<Multi_key> <k> <1> <braceleft> <m> <g> <braceright> : "ꥯ"  UA96F  # HANGUL CHOSEONG MIEUM-KIYEOK
+<Multi_key> <k> <1> <braceleft> <m> <d> <braceright> : "ꥰ"  UA970  # HANGUL CHOSEONG MIEUM-TIKEUT
+<Multi_key> <k> <1> <braceleft> <m> <s> <braceright> : "ꥱ"  UA971  # HANGUL CHOSEONG MIEUM-SIOS
+<Multi_key> <k> <1> <braceleft> <b> <s> <t> <braceright> : "ꥲ"  UA972  # HANGUL CHOSEONG PIEUP-SIOS-THIEUTH
+<Multi_key> <k> <1> <braceleft> <b> <k> <braceright> : "ꥳ"  UA973  # HANGUL CHOSEONG PIEUP-KHIEUKH
+<Multi_key> <k> <1> <braceleft> <b> <h> <braceright> : "ꥴ"  UA974  # HANGUL CHOSEONG PIEUP-HIEUH
+<Multi_key> <k> <1> <braceleft> <s> <s> <b> <braceright> : "ꥵ"  UA975  # HANGUL CHOSEONG SSANGSIOS-PIEUP
+<Multi_key> <k> <1> <braceleft> <0> <r> <braceright> : "ꥶ"  UA976  # HANGUL CHOSEONG IEUNG-RIEUL
+<Multi_key> <k> <1> <braceleft> <o> <r> <braceright> : "ꥶ"  UA976  # HANGUL CHOSEONG IEUNG-RIEUL
+<Multi_key> <k> <1> <braceleft> <0> <h> <braceright> : "ꥷ"  UA977  # HANGUL CHOSEONG IEUNG-HIEUH
+<Multi_key> <k> <1> <braceleft> <o> <h> <braceright> : "ꥷ"  UA977  # HANGUL CHOSEONG IEUNG-HIEUH
+<Multi_key> <k> <1> <braceleft> <j> <j> <h> <braceright> : "ꥸ"  UA978  # HANGUL CHOSEONG SSANGCIEUC-HIEUH
+<Multi_key> <k> <1> <braceleft> <t> <t> <braceright> : "ꥹ"  UA979  # HANGUL CHOSEONG SSANGTHIEUTH
+<Multi_key> <k> <1> <braceleft> <p> <h> <braceright> : "ꥺ"  UA97A  # HANGUL CHOSEONG PHIEUPH-HIEUH
+<Multi_key> <k> <1> <braceleft> <h> <s> <braceright> : "ꥻ"  UA97B  # HANGUL CHOSEONG HIEUH-SIOS
+
+<Multi_key> <k> <2> <braceleft> <a> <o> <braceright> : "ᅶ"  U1176  # HANGUL JUNGSEONG A-O
+<Multi_key> <k> <2> <braceleft> <a> <u> <braceright> : "ᅷ"  U1177  # HANGUL JUNGSEONG A-U
+<Multi_key> <k> <2> <braceleft> <y> <a> <o> <braceright> : "ᅸ"  U1178  # HANGUL JUNGSEONG YA-O
+<Multi_key> <k> <2> <braceleft> <y> <a> <y> <o> <braceright> : "ᅹ"  U1179  # HANGUL JUNGSEONG YA-YO
+<Multi_key> <k> <2> <braceleft> <e> <o> <o> <braceright> : "ᅺ"  U117A  # HANGUL JUNGSEONG EO-O
+<Multi_key> <k> <2> <braceleft> <e> <o> <u> <braceright> : "ᅻ"  U117B  # HANGUL JUNGSEONG EO-U
+<Multi_key> <k> <2> <braceleft> <e> <o> <e> <u> <braceright> : "ᅼ"  U117C  # HANGUL JUNGSEONG EO-EU
+<Multi_key> <k> <2> <braceleft> <y> <e> <o> <o> <braceright> : "ᅽ"  U117D  # HANGUL JUNGSEONG YEO-O
+<Multi_key> <k> <2> <braceleft> <y> <e> <o> <u> <braceright> : "ᅾ"  U117E  # HANGUL JUNGSEONG YEO-U
+<Multi_key> <k> <2> <braceleft> <o> <e> <o> <braceright> : "ᅿ"  U117F  # HANGUL JUNGSEONG O-EO
+<Multi_key> <k> <2> <braceleft> <o> <e> <braceright> : "ᆀ"  U1180  # HANGUL JUNGSEONG O-E
+<Multi_key> <k> <2> <braceleft> <o> <y> <e> <braceright> : "ᆁ"  U1181  # HANGUL JUNGSEONG O-YE
+<Multi_key> <k> <2> <braceleft> <o> <o> <braceright> : "ᆂ"  U1182  # HANGUL JUNGSEONG O-O
+<Multi_key> <k> <2> <braceleft> <o> <u> <braceright> : "ᆃ"  U1183  # HANGUL JUNGSEONG O-U
+<Multi_key> <k> <2> <braceleft> <y> <o> <y> <a> <braceright> : "ᆄ"  U1184  # HANGUL JUNGSEONG YO-YA
+<Multi_key> <k> <2> <braceleft> <y> <o> <y> <a> <e> <braceright> : "ᆅ"  U1185  # HANGUL JUNGSEONG YO-YAE
+<Multi_key> <k> <2> <braceleft> <y> <o> <y> <e> <o> <braceright> : "ᆆ"  U1186  # HANGUL JUNGSEONG YO-YEO
+<Multi_key> <k> <2> <braceleft> <y> <o> <o> <braceright> : "ᆇ"  U1187  # HANGUL JUNGSEONG YO-O
+<Multi_key> <k> <2> <braceleft> <y> <o> <i> <braceright> : "ᆈ"  U1188  # HANGUL JUNGSEONG YO-I
+<Multi_key> <k> <2> <braceleft> <u> <a> <braceright> : "ᆉ"  U1189  # HANGUL JUNGSEONG U-A
+<Multi_key> <k> <2> <braceleft> <u> <a> <e> <braceright> : "ᆊ"  U118A  # HANGUL JUNGSEONG U-AE
+<Multi_key> <k> <2> <braceleft> <u> <e> <o> <e> <u> <braceright> : "ᆋ"  U118B  # HANGUL JUNGSEONG U-EO-EU
+<Multi_key> <k> <2> <braceleft> <u> <y> <e> <braceright> : "ᆌ"  U118C  # HANGUL JUNGSEONG U-YE
+<Multi_key> <k> <2> <braceleft> <u> <u> <braceright> : "ᆍ"  U118D  # HANGUL JUNGSEONG U-U
+<Multi_key> <k> <2> <braceleft> <y> <u> <a> <braceright> : "ᆎ"  U118E  # HANGUL JUNGSEONG YU-A
+<Multi_key> <k> <2> <braceleft> <y> <u> <e> <o> <braceright> : "ᆏ"  U118F  # HANGUL JUNGSEONG YU-EO
+<Multi_key> <k> <2> <braceleft> <y> <u> <e> <braceright> : "ᆐ"  U1190  # HANGUL JUNGSEONG YU-E
+<Multi_key> <k> <2> <braceleft> <y> <u> <y> <e> <o> <braceright> : "ᆑ"  U1191  # HANGUL JUNGSEONG YU-YEO
+<Multi_key> <k> <2> <braceleft> <y> <u> <y> <e> <braceright> : "ᆒ"  U1192  # HANGUL JUNGSEONG YU-YE
+<Multi_key> <k> <2> <braceleft> <y> <u> <u> <braceright> : "ᆓ"  U1193  # HANGUL JUNGSEONG YU-U
+<Multi_key> <k> <2> <braceleft> <y> <u> <i> <braceright> : "ᆔ"  U1194  # HANGUL JUNGSEONG YU-I
+<Multi_key> <k> <2> <braceleft> <e> <u> <u> <braceright> : "ᆕ"  U1195  # HANGUL JUNGSEONG EU-U
+<Multi_key> <k> <2> <braceleft> <e> <u> <e> <u> <braceright> : "ᆖ"  U1196  # HANGUL JUNGSEONG EU-EU
+<Multi_key> <k> <2> <braceleft> <y> <i> <u> <braceright> : "ᆗ"  U1197  # HANGUL JUNGSEONG YI-U
+<Multi_key> <k> <2> <braceleft> <i> <a> <braceright> : "ᆘ"  U1198  # HANGUL JUNGSEONG I-A
+<Multi_key> <k> <2> <braceleft> <i> <y> <a> <braceright> : "ᆙ"  U1199  # HANGUL JUNGSEONG I-YA
+<Multi_key> <k> <2> <braceleft> <i> <o> <braceright> : "ᆚ"  U119A  # HANGUL JUNGSEONG I-O
+<Multi_key> <k> <2> <braceleft> <i> <u> <braceright> : "ᆛ"  U119B  # HANGUL JUNGSEONG I-U
+<Multi_key> <k> <2> <braceleft> <i> <e> <u> <braceright> : "ᆜ"  U119C  # HANGUL JUNGSEONG I-EU
+<Multi_key> <k> <2> <braceleft> <a> <e> <u> <braceright> : "ᆣ"  U11A3  # HANGUL JUNGSEONG A-EU
+<Multi_key> <k> <2> <braceleft> <y> <a> <u> <braceright> : "ᆤ"  U11A4  # HANGUL JUNGSEONG YA-U
+<Multi_key> <k> <2> <braceleft> <y> <e> <o> <y> <a> <braceright> : "ᆥ"  U11A5  # HANGUL JUNGSEONG YEO-YA
+<Multi_key> <k> <2> <braceleft> <o> <y> <a> <braceright> : "ᆦ"  U11A6  # HANGUL JUNGSEONG O-YA
+<Multi_key> <k> <2> <braceleft> <o> <y> <a> <e> <braceright> : "ᆧ"  U11A7  # HANGUL JUNGSEONG O-YAE
+<Multi_key> <k> <2> <braceleft> <o> <y> <e> <o> <braceright> : "ힰ"  UD7B0  # HANGUL JUNGSEONG O-YEO
+<Multi_key> <k> <2> <braceleft> <o> <o> <i> <braceright> : "ힱ"  UD7B1  # HANGUL JUNGSEONG O-O-I
+<Multi_key> <k> <2> <braceleft> <y> <o> <a> <braceright> : "ힲ"  UD7B2  # HANGUL JUNGSEONG YO-A
+<Multi_key> <k> <2> <braceleft> <y> <o> <a> <e> <braceright> : "ힳ"  UD7B3  # HANGUL JUNGSEONG YO-AE
+<Multi_key> <k> <2> <braceleft> <y> <o> <e> <o> <braceright> : "ힴ"  UD7B4  # HANGUL JUNGSEONG YO-EO
+<Multi_key> <k> <2> <braceleft> <u> <y> <e> <o> <braceright> : "ힵ"  UD7B5  # HANGUL JUNGSEONG U-YEO
+<Multi_key> <k> <2> <braceleft> <u> <i> <i> <braceright> : "ힶ"  UD7B6  # HANGUL JUNGSEONG U-I-I
+<Multi_key> <k> <2> <braceleft> <y> <u> <a> <e> <braceright> : "ힷ"  UD7B7  # HANGUL JUNGSEONG YU-AE
+<Multi_key> <k> <2> <braceleft> <y> <u> <o> <braceright> : "ힸ"  UD7B8  # HANGUL JUNGSEONG YU-O
+<Multi_key> <k> <2> <braceleft> <e> <u> <a> <braceright> : "ힹ"  UD7B9  # HANGUL JUNGSEONG EU-A
+<Multi_key> <k> <2> <braceleft> <e> <u> <e> <o> <braceright> : "ힺ"  UD7BA  # HANGUL JUNGSEONG EU-EO
+<Multi_key> <k> <2> <braceleft> <e> <u> <e> <braceright> : "ힻ"  UD7BB  # HANGUL JUNGSEONG EU-E
+<Multi_key> <k> <2> <braceleft> <e> <u> <o> <braceright> : "ힼ"  UD7BC  # HANGUL JUNGSEONG EU-O
+<Multi_key> <k> <2> <braceleft> <i> <y> <a> <o> <braceright> : "ힽ"  UD7BD  # HANGUL JUNGSEONG I-YA-O
+<Multi_key> <k> <2> <braceleft> <i> <y> <a> <e> <braceright> : "ힾ"  UD7BE  # HANGUL JUNGSEONG I-YAE
+<Multi_key> <k> <2> <braceleft> <i> <y> <e> <o> <braceright> : "ힿ"  UD7BF  # HANGUL JUNGSEONG I-YEO
+<Multi_key> <k> <2> <braceleft> <i> <y> <e> <braceright> : "ퟀ"  UD7C0  # HANGUL JUNGSEONG I-YE
+<Multi_key> <k> <2> <braceleft> <i> <o> <i> <braceright> : "ퟁ"  UD7C1  # HANGUL JUNGSEONG I-O-I
+<Multi_key> <k> <2> <braceleft> <i> <y> <o> <braceright> : "ퟂ"  UD7C2  # HANGUL JUNGSEONG I-YO
+<Multi_key> <k> <2> <braceleft> <i> <y> <u> <braceright> : "ퟃ"  UD7C3  # HANGUL JUNGSEONG I-YU
+<Multi_key> <k> <2> <braceleft> <i> <i> <braceright> : "ퟄ"  UD7C4  # HANGUL JUNGSEONG I-I
+
+<Multi_key> <k> <3> <braceleft> <g> <l> <braceright> : "ᇃ"  U11C3  # HANGUL JONGSEONG KIYEOK-RIEUL
+<Multi_key> <k> <3> <braceleft> <g> <s> <g> <braceright> : "ᇄ"  U11C4  # HANGUL JONGSEONG KIYEOK-SIOS-KIYEOK
+<Multi_key> <k> <3> <braceleft> <n> <g> <braceright> : "ᇅ"  U11C5  # HANGUL JONGSEONG NIEUN-KIYEOK
+<Multi_key> <k> <3> <braceleft> <n> <d> <braceright> : "ᇆ"  U11C6  # HANGUL JONGSEONG NIEUN-TIKEUT
+<Multi_key> <k> <3> <braceleft> <n> <s> <braceright> : "ᇇ"  U11C7  # HANGUL JONGSEONG NIEUN-SIOS
+<Multi_key> <k> <3> <braceleft> <n> <t> <braceright> : "ᇉ"  U11C9  # HANGUL JONGSEONG NIEUN-THIEUTH
+<Multi_key> <k> <3> <braceleft> <d> <g> <braceright> : "ᇊ"  U11CA  # HANGUL JONGSEONG TIKEUT-KIYEOK
+<Multi_key> <k> <3> <braceleft> <d> <l> <braceright> : "ᇋ"  U11CB  # HANGUL JONGSEONG TIKEUT-RIEUL
+<Multi_key> <k> <3> <braceleft> <l> <g> <s> <braceright> : "ᇌ"  U11CC  # HANGUL JONGSEONG RIEUL-KIYEOK-SIOS
+<Multi_key> <k> <3> <braceleft> <l> <n> <braceright> : "ᇍ"  U11CD  # HANGUL JONGSEONG RIEUL-NIEUN
+<Multi_key> <k> <3> <braceleft> <l> <d> <braceright> : "ᇎ"  U11CE  # HANGUL JONGSEONG RIEUL-TIKEUT
+<Multi_key> <k> <3> <braceleft> <l> <d> <h> <braceright> : "ᇏ"  U11CF  # HANGUL JONGSEONG RIEUL-TIKEUT-HIEUH
+<Multi_key> <k> <3> <braceleft> <l> <l> <braceright> : "ᇐ"  U11D0  # HANGUL JONGSEONG SSANGRIEUL
+<Multi_key> <k> <3> <braceleft> <l> <m> <g> <braceright> : "ᇑ"  U11D1  # HANGUL JONGSEONG RIEUL-MIEUM-KIYEOK
+<Multi_key> <k> <3> <braceleft> <l> <m> <s> <braceright> : "ᇒ"  U11D2  # HANGUL JONGSEONG RIEUL-MIEUM-SIOS
+<Multi_key> <k> <3> <braceleft> <l> <b> <s> <braceright> : "ᇓ"  U11D3  # HANGUL JONGSEONG RIEUL-PIEUP-SIOS
+<Multi_key> <k> <3> <braceleft> <l> <b> <h> <braceright> : "ᇔ"  U11D4  # HANGUL JONGSEONG RIEUL-PIEUP-HIEUH
+<Multi_key> <k> <3> <braceleft> <l> <b> <o> <braceright> : "ᇕ"  U11D5  # HANGUL JONGSEONG RIEUL-KAPYEOUNPIEUP
+<Multi_key> <k> <3> <braceleft> <l> <b> <n> <g> <braceright> : "ᇕ"  U11D5  # HANGUL JONGSEONG RIEUL-KAPYEOUNPIEUP
+<Multi_key> <k> <3> <braceleft> <l> <S> <braceright> : "ᇖ"  U11D6  # HANGUL JONGSEONG RIEUL-SSANGSIOS
+<Multi_key> <k> <3> <braceleft> <l> <k> <braceright> : "ᇘ"  U11D8  # HANGUL JONGSEONG RIEUL-KHIEUKH
+<Multi_key> <k> <3> <braceleft> <m> <g> <braceright> : "ᇚ"  U11DA  # HANGUL JONGSEONG MIEUM-KIYEOK
+<Multi_key> <k> <3> <braceleft> <m> <l> <braceright> : "ᇛ"  U11DB  # HANGUL JONGSEONG MIEUM-RIEUL
+<Multi_key> <k> <3> <braceleft> <m> <b> <braceright> : "ᇜ"  U11DC  # HANGUL JONGSEONG MIEUM-PIEUP
+<Multi_key> <k> <3> <braceleft> <m> <s> <braceright> : "ᇝ"  U11DD  # HANGUL JONGSEONG MIEUM-SIOS
+<Multi_key> <k> <3> <braceleft> <m> <S> <braceright> : "ᇞ"  U11DE  # HANGUL JONGSEONG MIEUM-SSANGSIOS
+<Multi_key> <k> <3> <braceleft> <m> <c> <braceright> : "ᇠ"  U11E0  # HANGUL JONGSEONG MIEUM-CHIEUCH
+<Multi_key> <k> <3> <braceleft> <m> <h> <braceright> : "ᇡ"  U11E1  # HANGUL JONGSEONG MIEUM-HIEUH
+<Multi_key> <k> <3> <braceleft> <m> <o> <braceright> : "ᇢ"  U11E2  # HANGUL JONGSEONG KAPYEOUNMIEUM
+<Multi_key> <k> <3> <braceleft> <m> <n> <g> <braceright> : "ᇢ"  U11E2  # HANGUL JONGSEONG KAPYEOUNMIEUM
+<Multi_key> <k> <3> <braceleft> <b> <l> <braceright> : "ᇣ"  U11E3  # HANGUL JONGSEONG PIEUP-RIEUL
+<Multi_key> <k> <3> <braceleft> <b> <p> <braceright> : "ᇤ"  U11E4  # HANGUL JONGSEONG PIEUP-PHIEUPH
+<Multi_key> <k> <3> <braceleft> <b> <h> <braceright> : "ᇥ"  U11E5  # HANGUL JONGSEONG PIEUP-HIEUH
+<Multi_key> <k> <3> <braceleft> <b> <o> <braceright> : "ᇦ"  U11E6  # HANGUL JONGSEONG KAPYEOUNPIEUP
+<Multi_key> <k> <3> <braceleft> <b> <n> <g> <braceright> : "ᇦ"  U11E6  # HANGUL JONGSEONG KAPYEOUNPIEUP
+<Multi_key> <k> <3> <braceleft> <s> <g> <braceright> : "ᇧ"  U11E7  # HANGUL JONGSEONG SIOS-KIYEOK
+<Multi_key> <k> <3> <braceleft> <s> <d> <braceright> : "ᇨ"  U11E8  # HANGUL JONGSEONG SIOS-TIKEUT
+<Multi_key> <k> <3> <braceleft> <s> <l> <braceright> : "ᇩ"  U11E9  # HANGUL JONGSEONG SIOS-RIEUL
+<Multi_key> <k> <3> <braceleft> <s> <b> <braceright> : "ᇪ"  U11EA  # HANGUL JONGSEONG SIOS-PIEUP
+<Multi_key> <k> <3> <braceleft> <o> <g> <braceright> : "ᇬ"  U11EC  # HANGUL JONGSEONG IEUNG-KIYEOK
+<Multi_key> <k> <3> <braceleft> <n> <g> <g> <braceright> : "ᇬ"  U11EC  # HANGUL JONGSEONG IEUNG-KIYEOK
+<Multi_key> <k> <3> <braceleft> <o> <g> <g> <braceright> : "ᇭ"  U11ED  # HANGUL JONGSEONG IEUNG-SSANGKIYEOK
+<Multi_key> <k> <3> <braceleft> <o> <G> <braceright> : "ᇭ"  U11ED  # HANGUL JONGSEONG IEUNG-SSANGKIYEOK
+<Multi_key> <k> <3> <braceleft> <n> <g> <g> <g> <braceright> : "ᇭ"  U11ED  # HANGUL JONGSEONG IEUNG-SSANGKIYEOK
+<Multi_key> <k> <3> <braceleft> <n> <g> <G> <braceright> : "ᇭ"  U11ED  # HANGUL JONGSEONG IEUNG-SSANGKIYEOK
+<Multi_key> <k> <3> <braceleft> <o> <o> <braceright> : "ᇮ"  U11EE  # HANGUL JONGSEONG SSANGIEUNG
+<Multi_key> <k> <3> <braceleft> <n> <g> <n> <g> <braceright> : "ᇮ"  U11EE  # HANGUL JONGSEONG SSANGIEUNG
+<Multi_key> <k> <3> <braceleft> <o> <k> <braceright> : "ᇯ"  U11EF  # HANGUL JONGSEONG IEUNG-KHIEUKH
+<Multi_key> <k> <3> <braceleft> <n> <g> <k> <braceright> : "ᇯ"  U11EF  # HANGUL JONGSEONG IEUNG-KHIEUKH
+<Multi_key> <k> <3> <braceleft> <p> <b> <braceright> : "ᇳ"  U11F3  # HANGUL JONGSEONG PHIEUPH-PIEUP
+<Multi_key> <k> <3> <braceleft> <p> <o> <braceright> : "ᇴ"  U11F4  # HANGUL JONGSEONG KAPYEOUNPHIEUPH
+<Multi_key> <k> <3> <braceleft> <p> <n> <g> <braceright> : "ᇴ"  U11F4  # HANGUL JONGSEONG KAPYEOUNPHIEUPH
+<Multi_key> <k> <3> <braceleft> <h> <n> <braceright> : "ᇵ"  U11F5  # HANGUL JONGSEONG HIEUH-NIEUN
+<Multi_key> <k> <3> <braceleft> <h> <l> <braceright> : "ᇶ"  U11F6  # HANGUL JONGSEONG HIEUH-RIEUL
+<Multi_key> <k> <3> <braceleft> <h> <m> <braceright> : "ᇷ"  U11F7  # HANGUL JONGSEONG HIEUH-MIEUM
+<Multi_key> <k> <3> <braceleft> <h> <b> <braceright> : "ᇸ"  U11F8  # HANGUL JONGSEONG HIEUH-PIEUP
+<Multi_key> <k> <3> <braceleft> <g> <n> <braceright> : "ᇺ"  U11FA  # HANGUL JONGSEONG KIYEOK-NIEUN
+<Multi_key> <k> <3> <braceleft> <g> <b> <braceright> : "ᇻ"  U11FB  # HANGUL JONGSEONG KIYEOK-PIEUP
+<Multi_key> <k> <3> <braceleft> <g> <c> <braceright> : "ᇼ"  U11FC  # HANGUL JONGSEONG KIYEOK-CHIEUCH
+<Multi_key> <k> <3> <braceleft> <g> <k> <braceright> : "ᇽ"  U11FD  # HANGUL JONGSEONG KIYEOK-KHIEUKH
+<Multi_key> <k> <3> <braceleft> <g> <h> <braceright> : "ᇾ"  U11FE  # HANGUL JONGSEONG KIYEOK-HIEUH
+<Multi_key> <k> <3> <braceleft> <n> <n> <braceright> : "ᇿ"  U11FF  # HANGUL JONGSEONG SSANGNIEUN
+<Multi_key> <k> <3> <braceleft> <n> <l> <braceright> : "ퟋ"  UD7CB  # HANGUL JONGSEONG NIEUN-RIEUL
+<Multi_key> <k> <3> <braceleft> <n> <c> <braceright> : "ퟌ"  UD7CC  # HANGUL JONGSEONG NIEUN-CHIEUCH
+<Multi_key> <k> <3> <braceleft> <d> <d> <braceright> : "ퟍ"  UD7CD  # HANGUL JONGSEONG SSANGTIKEUT
+<Multi_key> <k> <3> <braceleft> <d> <d> <b> <braceright> : "ퟎ"  UD7CE  # HANGUL JONGSEONG SSANGTIKEUT-PIEUP
+<Multi_key> <k> <3> <braceleft> <d> <b> <braceright> : "ퟏ"  UD7CF  # HANGUL JONGSEONG TIKEUT-PIEUP
+<Multi_key> <k> <3> <braceleft> <d> <s> <braceright> : "ퟐ"  UD7D0  # HANGUL JONGSEONG TIKEUT-SIOS
+<Multi_key> <k> <3> <braceleft> <d> <s> <g> <braceright> : "ퟑ"  UD7D1  # HANGUL JONGSEONG TIKEUT-SIOS-KIYEOK
+<Multi_key> <k> <3> <braceleft> <d> <j> <braceright> : "ퟒ"  UD7D2  # HANGUL JONGSEONG TIKEUT-CIEUC
+<Multi_key> <k> <3> <braceleft> <d> <c> <braceright> : "ퟓ"  UD7D3  # HANGUL JONGSEONG TIKEUT-CHIEUCH
+<Multi_key> <k> <3> <braceleft> <d> <t> <braceright> : "ퟔ"  UD7D4  # HANGUL JONGSEONG TIKEUT-THIEUTH
+<Multi_key> <k> <3> <braceleft> <l> <g> <g> <braceright> : "ퟕ"  UD7D5  # HANGUL JONGSEONG RIEUL-SSANGKIYEOK
+<Multi_key> <k> <3> <braceleft> <l> <g> <h> <braceright> : "ퟖ"  UD7D6  # HANGUL JONGSEONG RIEUL-KIYEOK-HIEUH
+<Multi_key> <k> <3> <braceleft> <l> <l> <k> <braceright> : "ퟗ"  UD7D7  # HANGUL JONGSEONG SSANGRIEUL-KHIEUKH
+<Multi_key> <k> <3> <braceleft> <l> <m> <h> <braceright> : "ퟘ"  UD7D8  # HANGUL JONGSEONG RIEUL-MIEUM-HIEUH
+<Multi_key> <k> <3> <braceleft> <l> <b> <d> <braceright> : "ퟙ"  UD7D9  # HANGUL JONGSEONG RIEUL-PIEUP-TIKEUT
+<Multi_key> <k> <3> <braceleft> <l> <b> <p> <braceright> : "ퟚ"  UD7DA  # HANGUL JONGSEONG RIEUL-PIEUP-PHIEUPH
+<Multi_key> <k> <3> <braceleft> <l> <o> <braceright> : "ퟝ"  UD7DD  # HANGUL JONGSEONG KAPYEOUNRIEUL
+<Multi_key> <k> <3> <braceleft> <l> <n> <g> <braceright> : "ퟝ"  UD7DD  # HANGUL JONGSEONG KAPYEOUNRIEUL
+<Multi_key> <k> <3> <braceleft> <m> <n> <braceright> : "ퟞ"  UD7DE  # HANGUL JONGSEONG MIEUM-NIEUN
+<Multi_key> <k> <3> <braceleft> <m> <n> <n> <braceright> : "ퟟ"  UD7DF  # HANGUL JONGSEONG MIEUM-SSANGNIEUN
+<Multi_key> <k> <3> <braceleft> <m> <m> <braceright> : "ퟠ"  UD7E0  # HANGUL JONGSEONG SSANGMIEUM
+<Multi_key> <k> <3> <braceleft> <m> <b> <s> <braceright> : "ퟡ"  UD7E1  # HANGUL JONGSEONG MIEUM-PIEUP-SIOS
+<Multi_key> <k> <3> <braceleft> <m> <j> <braceright> : "ퟢ"  UD7E2  # HANGUL JONGSEONG MIEUM-CIEUC
+<Multi_key> <k> <3> <braceleft> <b> <d> <braceright> : "ퟣ"  UD7E3  # HANGUL JONGSEONG PIEUP-TIKEUT
+<Multi_key> <k> <3> <braceleft> <b> <l> <p> <braceright> : "ퟤ"  UD7E4  # HANGUL JONGSEONG PIEUP-RIEUL-PHIEUPH
+<Multi_key> <k> <3> <braceleft> <b> <m> <braceright> : "ퟥ"  UD7E5  # HANGUL JONGSEONG PIEUP-MIEUM
+<Multi_key> <k> <3> <braceleft> <b> <b> <braceright> : "ퟦ"  UD7E6  # HANGUL JONGSEONG SSANGPIEUP
+<Multi_key> <k> <3> <braceleft> <b> <s> <d> <braceright> : "ퟧ"  UD7E7  # HANGUL JONGSEONG PIEUP-SIOS-TIKEUT
+<Multi_key> <k> <3> <braceleft> <b> <j> <braceright> : "ퟨ"  UD7E8  # HANGUL JONGSEONG PIEUP-CIEUC
+<Multi_key> <k> <3> <braceleft> <b> <c> <braceright> : "ퟩ"  UD7E9  # HANGUL JONGSEONG PIEUP-CHIEUCH
+<Multi_key> <k> <3> <braceleft> <s> <m> <braceright> : "ퟪ"  UD7EA  # HANGUL JONGSEONG SIOS-MIEUM
+<Multi_key> <k> <3> <braceleft> <s> <b> <o> <braceright> : "ퟫ"  UD7EB  # HANGUL JONGSEONG SIOS-KAPYEOUNPIEUP
+<Multi_key> <k> <3> <braceleft> <s> <b> <n> <g> <braceright> : "ퟫ"  UD7EB  # HANGUL JONGSEONG SIOS-KAPYEOUNPIEUP
+<Multi_key> <k> <3> <braceleft> <s> <s> <g> <braceright> : "ퟬ"  UD7EC  # HANGUL JONGSEONG SSANGSIOS-KIYEOK
+<Multi_key> <k> <3> <braceleft> <s> <s> <d> <braceright> : "ퟭ"  UD7ED  # HANGUL JONGSEONG SSANGSIOS-TIKEUT
+<Multi_key> <k> <3> <braceleft> <s> <j> <braceright> : "ퟯ"  UD7EF  # HANGUL JONGSEONG SIOS-CIEUC
+<Multi_key> <k> <3> <braceleft> <s> <c> <braceright> : "ퟰ"  UD7F0  # HANGUL JONGSEONG SIOS-CHIEUCH
+<Multi_key> <k> <3> <braceleft> <s> <t> <braceright> : "ퟱ"  UD7F1  # HANGUL JONGSEONG SIOS-THIEUTH
+<Multi_key> <k> <3> <braceleft> <s> <h> <braceright> : "ퟲ"  UD7F2  # HANGUL JONGSEONG SIOS-HIEUH
+<Multi_key> <k> <3> <braceleft> <j> <b> <braceright> : "ퟷ"  UD7F7  # HANGUL JONGSEONG CIEUC-PIEUP
+<Multi_key> <k> <3> <braceleft> <j> <b> <b> <braceright> : "ퟸ"  UD7F8  # HANGUL JONGSEONG CIEUC-SSANGPIEUP
+<Multi_key> <k> <3> <braceleft> <j> <j> <braceright> : "ퟹ"  UD7F9  # HANGUL JONGSEONG SSANGCIEUC
+<Multi_key> <k> <3> <braceleft> <p> <s> <braceright> : "ퟺ"  UD7FA  # HANGUL JONGSEONG PHIEUPH-SIOS
+<Multi_key> <k> <3> <braceleft> <p> <t> <braceright> : "ퟻ"  UD7FB  # HANGUL JONGSEONG PHIEUPH-THIEUTH
 
 ################################
 # (m) International Morse Code #
@@ -14178,6 +14604,17 @@ include "%L"
 <Multi_key> <z> <numbersign> <e> <4>     : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000 simplified)
 <Multi_key> <z> <numbersign> <E> <8>     : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
 <Multi_key> <z> <numbersign> <e> <8>     : "亿"  U4EBF   # CJK UNIFIED IDEOGRAPH-4EBF (100_000_000 simplified)
+
+<Multi_key> <z> <numbersign> <parenleft> <1> <parenright> : "㊀"  U3280  # CIRCLED IDEOGRAPH ONE
+<Multi_key> <z> <numbersign> <parenleft> <2> <parenright> : "㊁"  U3281  # CIRCLED IDEOGRAPH TWO
+<Multi_key> <z> <numbersign> <parenleft> <3> <parenright> : "㊂"  U3282  # CIRCLED IDEOGRAPH THREE
+<Multi_key> <z> <numbersign> <parenleft> <4> <parenright> : "㊃"  U3283  # CIRCLED IDEOGRAPH FOUR
+<Multi_key> <z> <numbersign> <parenleft> <5> <parenright> : "㊄"  U3284  # CIRCLED IDEOGRAPH FIVE
+<Multi_key> <z> <numbersign> <parenleft> <6> <parenright> : "㊅"  U3285  # CIRCLED IDEOGRAPH SIX
+<Multi_key> <z> <numbersign> <parenleft> <7> <parenright> : "㊆"  U3286  # CIRCLED IDEOGRAPH SEVEN
+<Multi_key> <z> <numbersign> <parenleft> <8> <parenright> : "㊇"  U3287  # CIRCLED IDEOGRAPH EIGHT
+<Multi_key> <z> <numbersign> <parenleft> <9> <parenright> : "㊈"  U3288  # CIRCLED IDEOGRAPH NINE
+<Multi_key> <z> <numbersign> <parenleft> <1> <0> <parenright> : "㊉"  U3289  # CIRCLED IDEOGRAPH TEN
 
 <Multi_key> <z> <c> <Y> <equal>          : "元" U5143    # CJK UNIFIED IDEOGRAPH-5143 (Chinese yuan) (use Y= for ¥)
 <Multi_key> <z> <c> <Y> <dollar>         : "圓" U5713    # CJK UNIFIED IDEOGRAPH-5713 (New Taiwan $)
@@ -15980,17 +16417,24 @@ include "%L"
 
 # Also see brackets, arrows and alphanumeric sections
 
-<Multi_key> <slash> <slash> <percent> : "⁄"  U2044   # FRACTION SLASH (conflicts with useless \)
-<Multi_key> <slash> <slash> <period>  : "∕"  U2215   # DIVISION SLASH (conflicts with useless \)
+<Multi_key> <slash> <percent>         : "⁄"  U2044   # FRACTION SLASH
+<Multi_key> <slash> <colon>           : "∕"  U2215   # DIVISION SLASH
 <Multi_key> <minus> <0>               : "−"  U2212   # MINUS SIGN (alternatively -_)
 <Multi_key> <minus> <plus>            : "∓"  U2213   # MINUS-OR-PLUS SIGN (conflicts with ±, use +-)
+<Multi_key> <plus> <2>                : "⨧"  U2A27   # PLUS SIGN WITH SUBSCRIPT TWO
+<Multi_key> <o> <plus>                : "⨢"  U2A22   # PLUS SIGN WITH SMALL CIRCLE ABOVE
 <Multi_key> <period> <plus>           : "∔"  U2214   # DOT PLUS
+<Multi_key> <plus> <underscore> <period>      : "⨥"  U2A25   # PLUS SIGN WITH DOT BELOW
+<Multi_key> <asciitilde> <plus> <space>       : "⨤"  U2A24   # PLUS SIGN WITH TILDE ABOVE
+<Multi_key> <plus> <underscore> <asciitilde>  : "⨦"  U2A26   # PLUS SIGN WITH TILDE BELOW
+<Multi_key> <period> <Multi_key> <x> <x>      : "⨰"  U2A30   # MULTIPLICATION SIGN WITH DOT ABOVE
+<Multi_key> <underscore> <Multi_key> <x> <x>  : "⨱"  U2A31   # MULTIPLICATION SIGN WITH UNDERBAR
 <Multi_key> <period> <asterisk>       : "⋅"  U22C5   # DOT OPERATOR
 <Multi_key> <x> <asterisk>            : "⨯"  U2A2F   # VECTOR OR CROSS PRODUCT
 <Multi_key> <x> <minus> <colon>       : "⋇"  U22C7   # DIVISION TIMES
 <Multi_key> <3> <v> <slash>           : "∛"  U221B   # CUBE ROOT
 <Multi_key> <4> <v> <slash>           : "∜"  U221C   # FOURTH ROOT
-<Multi_key> <8> <greater>             : "∞"  U221E   # INFINITY
+<Multi_key> <8> <greater>             : "∞"  U221E   # INFINITY (alternatively 88)
 <Multi_key> <percent> <percent>       : "‱"  U2031   # PER TEN THOUSAND SIGN
 <Multi_key> <6> <less>                : "∂"  U2202   # PARTIAL DIFFERENTIAL
 <Multi_key> <1> <apostrophe>          : "′"  U2032   # PRIME (not to be confused with '1)
@@ -16048,6 +16492,7 @@ include "%L"
 <Multi_key> <equal> <d>               : "≝"  U225D   # EQUAL TO BY DEFINITION (conflicts with ₫, use d=)
 <Multi_key> <equal> <m>               : "≞"  U225E   # MEASURED BY
 <Multi_key> <equal> <question>        : "≟"  U225F   # QUESTIONED EQUAL TO
+<Multi_key> <equal> <period>          : "⩦"  U2A66   # EQUALS SIGN WITH DOT BELOW
 <Multi_key> <equal> <equal>           : "≣"  U2263   # STRICTLY EQUIVALENT TO
 <Multi_key> <equal> <bar> <bar>       : "⋕"  U22D5   # EQUAL AND PARALLEL TO
 <Multi_key> <plus> <equal>            : "⩲"  U2A72   # PLUS SIGN ABOVE EQUALS SIGN
@@ -16090,6 +16535,10 @@ include "%L"
 <Multi_key> <minus> <Multi_key> <period>             : "∸"  U2238   # DOT MINUS
 <Multi_key> <minus> <Multi_key> <colon>              : "∹"  U2239   # EXCESS (really should swap with ÷ but that's much more useful)
 <Multi_key> <asciitilde> <Multi_key> <period>        : "⩪"  U2A6A   # TILDE OPERATOR WITH DOT ABOVE
+<Multi_key> <less> <Multi_key> <minus>               : "⪪"  U2AAA  # SMALLER THAN
+<Multi_key> <less> <Multi_key> <equal>               : "⪬"  U2AAC  # SMALLER THAN OR EQUAL TO
+<Multi_key> <greater> <Multi_key> <minus>            : "⪫"  U2AAB  # LARGER THAN
+<Multi_key> <greater> <Multi_key> <equal>            : "⪭"  U2AAD  # LARGER THAN OR EQUAL TO
 
 <Multi_key> <slash> <Multi_key> <equal> <underscore> : "≢"  U2262   # NOT IDENTICAL TO
 <Multi_key> <less> <Multi_key> <slash> <equal>       : "≨"  U2268   # LESS-THAN BUT NOT EQUAL TO
@@ -16215,6 +16664,7 @@ include "%L"
 <Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter) (use gem for 💎)
 <Multi_key> <d> <i> <j> <k>             : "⫾"  U2AFE  # WHITE VERTICAL BAR (conflicts with ⌀, use diameter) (DIJKSTRA'S CHOICE)
 <Multi_key> <D> <I> <J> <K>             : "⫿"  U2AFF  # N-ARY WHITE VERTICAL BAR (DIJKSTRA'S CHOICE)
+<Multi_key> <e> <q> <u> <i> <v>         : "≍"  U224D  # EQUIVALENT TO (use =_ for ≡)
 <Multi_key> <e> <x> <i> <s> <t> <s>     : "∃"  U2203   # THERE EXISTS
 <Multi_key> <f> <o> <r> <a> <l> <l>     : "∀"  U2200   # FOR ALL
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
@@ -16232,6 +16682,7 @@ include "%L"
 <Multi_key> <L> <O> <R>                 : "⋁"  U22C1   # N-ARY LOGICAL OR
 <Multi_key> <m> <e> <a> <n> <g> <l> <e> : "∡"  U2221   # MEASURED ANGLE (not ideal)
 <Multi_key> <n> <a> <n> <d>             : "⊼"  U22BC   # NAND
+<Multi_key> <n> <e> <q> <u> <i> <v>     : "≭"  U226D   # NOT EQUIVALENT TO (use /⎄=_ for ≢)
 <Multi_key> <n> <e> <x> <i> <s> <t> <s> : "∄"  U2204   # THERE DOES NOT EXIST
 <Multi_key> <n> <i> <space>             : "∋"  U220B   # CONTAINS AS MEMBER
 <Multi_key> <n> <o> <r>                 : "⊽"  U22BD   # NOR
@@ -16288,6 +16739,12 @@ include "%L"
 <Multi_key> <s> <u> <b> <period>        : "⪽"  U2ABD   # SUBSET WITH DOT
 <Multi_key> <s> <u> <b> <plus>          : "⪿"  U2ABF   # SUBSET WITH PLUS SIGN BELOW
 <Multi_key> <s> <u> <b> <asterisk>      : "⫁"  U2AC1   # SUBSET WITH MULTIPLICATION SIGN BELOW
+<Multi_key> <s> <u> <b> <greater>       : "⥹"  U2979   # SUBSET ABOVE RIGHTWARDS ARROW
+<Multi_key> <s> <u> <b> <minus> <period> : "⫃"  U2AC3  # SUBSET OF OR EQUAL TO WITH DOT ABOVE
+<Multi_key> <s> <u> <b> <equal>         : "⫅"  U2AC5  # SUBSET OF ABOVE EQUALS SIGN
+<Multi_key> <s> <u> <b> <asciitilde> <asciitilde> : "⫉"  U2AC9  # SUBSET OF ABOVE ALMOST EQUAL TO
+<Multi_key> <s> <u> <b> <slash> <equal> : "⫋"  U2ACB  # SUBSET OF ABOVE NOT EQUAL TO
+<Multi_key> <backslash> <s> <u> <b>     : "⟈"  U27C8  # REVERSE SOLIDUS PRECEDING SUBSET
 <Multi_key> <s> <u> <c> <c> <space>     : "≻"  U227B   # SUCCEEDS
 <Multi_key> <s> <u> <c> <c> <e> <q>     : "≽"  U227D   # SUCCEEDS OR EQUAL TO
 <Multi_key> <s> <u> <c> <c> <s> <i> <m> : "≿"  U227F   # SUCCEEDS OR EQUIVALENT TO
@@ -16297,16 +16754,29 @@ include "%L"
 <Multi_key> <s> <u> <p> <e> <q>         : "⊇"  U2287   # SUPERSET OF OR EQUAL TO
 <Multi_key> <s> <u> <p> <n> <e> <q>     : "⊋"  U228B   # SUPERSET OF WITH NOT EQUAL TO
 <Multi_key> <s> <u> <p> <s> <i> <m>     : "⫈"  U2AC8   # SUPERSET OF ABOVE TILDE OPERATOR
+<Multi_key> <s> <u> <p> <s> <u> <b>     : "⫗" U2AD7   # SUPERSET BESIDE SUBSET
+<Multi_key> <s> <u> <p> <minus> <s> <u> <b> : "⫘"  U2AD8  # SUPERSET BESIDE AND JOINED BY DASH WITH SUBSET
 <Multi_key> <s> <u> <p> <o>             : "⟄"  U27C4   # OPEN SUPERSET
 <Multi_key> <s> <u> <p> <period>        : "⪾"  U2ABE   # SUPERSET WITH DOT
 <Multi_key> <s> <u> <p> <plus>          : "⫀"  U2AC0   # SUPERSET WITH PLUS SIGN BELOW
 <Multi_key> <s> <u> <p> <asterisk>      : "⫂"  U2AC2   # SUPERSET WITH MULTIPLICATION SIGN BELOW
+<Multi_key> <s> <u> <p> <less>          : "⥻"  U297B   # SUPERSET ABOVE LEFTWARDS ARROW
+<Multi_key> <s> <u> <p> <minus> <period> : "⫄"  U2AC4  # SUPERSET OF OR EQUAL TO WITH DOT ABOVE
+<Multi_key> <s> <u> <p> <equal>         : "⫆"  U2AC6   # SUPERSET OF ABOVE EQUALS SIGN
+<Multi_key> <s> <u> <p> <asciitilde> <asciitilde> : "⫊"  U2ACA   # SUPERSET OF ABOVE ALMOST EQUAL TO
+<Multi_key> <s> <u> <p> <slash> <equal> : "⫌"  U2ACC   # SUPERSET OF ABOVE NOT EQUAL TO
+<Multi_key> <s> <u> <p> <slash> <space> : "⟉"  U27C9   # SUPERSET PRECEDING SOLIDUS
 <Multi_key> <t> <i> <m> <e> <s>         : "×"  U00D7   # MULTIPLICATION SIGN (alternatively xx)
 <Multi_key> <T> <I> <M> <E> <S>         : "⨉"  U2A09   # N-ARY TIMES OPERATOR
 <Multi_key> <U> <D> <O> <T>             : "⨃"  U2A03  # N-ARY UNION OPERATOR WITH DOT
 <Multi_key> <U> <P> <L> <U> <S>         : "⨄"  U2A04  # N-ARY UNION OPERATOR WITH PLUS
 <Multi_key> <w> <r> <e> <a> <t> <h>     : "≀"   U2240   # WREATH PRODUCT
 <Multi_key> <x> <o> <r>                 : "⊻"  U22BB   # XOR (conflicts with ¤, use ox)
+
+<Multi_key> <Multi_key> <s> <u> <b> <Multi_key> <s> <u> <p> : "⫓"  U2AD3  # SUBSET ABOVE SUPERSET
+<Multi_key> <Multi_key> <s> <u> <p> <Multi_key> <s> <u> <b> : "⫔"  U2AD4  # SUPERSET ABOVE SUBSET (use supsub for ⫗)
+<Multi_key> <Multi_key> <s> <u> <b> <Multi_key> <s> <u> <b> : "⫕"  U2AD5  # SUBSET ABOVE SUBSET
+<Multi_key> <Multi_key> <s> <u> <p> <Multi_key> <s> <u> <p> : "⫖"  U2AD6  # SUPERSET ABOVE SUPERSET
 
 # Logic symbols (start with &)
 
@@ -16370,6 +16840,118 @@ include "%L"
 <Multi_key> <ampersand> <v> <minus> <bar> <minus> : "⫩"  U2AE9  # SHORT UP TACK ABOVE SHORT DOWN TACK
 <Multi_key> <ampersand> <v> <bar> <equal> <equal> : "⫪"  U2AEA  # DOUBLE DOWN TACK
 <Multi_key> <ampersand> <v> <equal> <equal> <bar> : "⫫"  U2AEB  # DOUBLE UP TACK
+
+###############
+# APL Symbols #
+###############
+
+# Convention: [Return] + visual notation
+
+# (many of these symbols have additional shortcuts defined elsewhere)
+
+<Multi_key> <Return> <asciicircum> <bracketleft>                      : "⌈"  U2308  # LEFT CEILING
+<Multi_key> <Return> <underscore> <bracketleft>                       : "⌊"  U230A  # LEFT FLOOR
+<Multi_key> <Return> <V>                                              : "∇"  U2207  # NABLA
+<Multi_key> <Return> <asciitilde> <V>                                 : "⍫"  U236B  # APL FUNCTIONAL SYMBOL DEL TILDE
+<Multi_key> <Return> <bar> <V>                                        : "⍒"  U2352  # APL FUNCTIONAL SYMBOL DEL STILE
+<Multi_key> <Return> <D>                                              : "∆"  U2206  # INCREMENT
+<Multi_key> <Return> <bar> <D>                                        : "⍋"  U234B  # APL FUNCTIONAL SYMBOL DELTA STILE
+<Multi_key> <Return> <parenleft> <parenright>                         : "○"  U25CB  # WHITE CIRCLE
+<Multi_key> <Return> <O>                                              : "○"  U25CB  # WHITE CIRCLE
+<Multi_key> <Return> <bar> <O>                                        : "⌽"  U233D  # APL FUNCTIONAL SYMBOL CIRCLE STILE
+<Multi_key> <Return> <parenleft> <bar> <parenright>                   : "⌽"  U233D  # APL FUNCTIONAL SYMBOL CIRCLE STILE
+<Multi_key> <Return> <backslash> <O>                                  : "⍉"  U2349  # APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
+<Multi_key> <Return> <parenleft> <backslash> <parenright>             : "⍉"  U2349  # APL FUNCTIONAL SYMBOL CIRCLE BACKSLASH
+<Multi_key> <Return> <asterisk> <O>                                   : "⍟"  U235F  # APL FUNCTIONAL SYMBOL CIRCLE STAR
+<Multi_key> <Return> <parenleft> <asterisk> <parenright>              : "⍟"  U235F  # APL FUNCTIONAL SYMBOL CIRCLE STAR
+<Multi_key> <Return> <parenleft> <minus> <parenright>                 : "⊖"  U2296  # CIRCLED MINUS
+<Multi_key> <Return> <minus> <O>                                      : "⊖"  U2296  # CIRCLED MINUS
+<Multi_key> <Return> <bracketleft> <apostrophe> <bracketright>        : "⍞"  U235E  # APL FUNCTIONAL SYMBOL QUOTE QUAD
+<Multi_key> <Return> <bracketleft> <minus> <colon> <bracketright>     : "⌹"  U2339  # APL FUNCTIONAL SYMBOL QUAD DIVIDE
+<Multi_key> <Return> <slash> <minus>                                  : "⌿"  U233F  # APL FUNCTIONAL SYMBOL SLASH BAR
+<Multi_key> <Return> <backslash> <minus>                              : "⍀"  U2340  # APL FUNCTIONAL SYMBOL BACKSLASH BAR
+<Multi_key> <Return> <asciitilde> <asciicircum>                       : "⍲"  U2372  # APL FUNCTIONAL SYMBOL UP CARET TILDE
+<Multi_key> <Return> <asciitilde> <v>                                 : "⍱"  U2371  # APL FUNCTIONAL SYMBOL DOWN CARET TILDE
+<Multi_key> <Return> <o> <F>                                          : "⍎"  U234E  # APL FUNCTIONAL SYMBOL DOWN TACK JOT
+<Multi_key> <Return> <o> <T>                                          : "⍕"  U2355  # APL FUNCTIONAL SYMBOL UP TACK JOT
+<Multi_key> <Return> <o> <N>                                          : "⍝"  U235D  # APL FUNCTIONAL SYMBOL UP SHOE JOT
+<Multi_key> <Return> <T>                                              : "⊤"  U22A4  # DOWN TACK
+<Multi_key> <Return> <F>                                              : "⊥"  U22A5  # UP TACK
+<Multi_key> <Return> <I>                                              : "⌶"  U2336  # APL FUNCTIONAL SYMBOL I-BEAM
+<Multi_key> <Return> <o> <o>                                          : "∘"  U2218  # RING OPERATOR
+<Multi_key> <Return> <bracketleft> <bracketright>                     : "⌷"  U2337  # APL FUNCTIONAL SYMBOL SQUISH QUAD
+<Multi_key> <Return> <bracketleft> <o> <bracketright>                 : "⌻"  U233B  # APL FUNCTIONAL SYMBOL QUAD JOT
+<Multi_key> <Return> <bracketleft> <backslash> <bracketright>         : "⍂"  U2342  # APL FUNCTIONAL SYMBOL QUAD BACKSLASH
+<Multi_key> <Return> <underscore> <equal>                             : "≡"  U2261  # IDENTICAL TO
+<Multi_key> <Return> <minus> <equal>                                  : "≡"  U2261  # IDENTICAL TO
+<Multi_key> <Return> <quotedbl> <period>                              : "∵"  U2235  # BECAUSE
+<Multi_key> <Return> <underscore> <D>                                 : "⍙"  U2359  # APL FUNCTIONAL SYMBOL DELTA UNDERBAR
+<Multi_key> <Return> <bar> <minus>                                    : "⊢"  U22A2  # RIGHT TACK
+<Multi_key> <Return> <minus> <bar>                                    : "⊣"  U22A3  # LEFT TACK
+<Multi_key> <Return> <bracketleft> <space> <bracketright>             : "⎕"  U2395  # APL FUNCTIONAL SYMBOL QUAD
+<Multi_key> <Return> <less> <greater>                                 : "⋄"  U22C4  # DIAMOND OPERATOR
+<Multi_key> <Return> <bar> <space>                                    : "∣"  U2223  # DIVIDES
+<Multi_key> <Return> <A>                                              : "∩"  U2229  # INTERSECTION
+<Multi_key> <Return> <U>                                              : "∪"  U222A  # UNION
+<Multi_key> <Return> <C>                                              : "⊂"  U2282  # SUBSET OF
+<Multi_key> <Return> <P>                                              : "⊃"  U2283  # SUPERSET OF
+<Multi_key> <Return> <quotedbl> <space>                               : "¨"  U00A8  # DIAERESIS
+<Multi_key> <Return> <asciitilde> <space>                             : "∼"  U223C  # TILDE OPERATOR
+<Multi_key> <Return> <parenleft> <plus> <parenright>                  : "⊕"  U2295  # CIRCLED PLUS
+<Multi_key> <Return> <plus> <O>                                       : "⊕"  U2295  # CIRCLED PLUS
+<Multi_key> <Return> <parenleft> <X> <parenright>                     : "⊗"  U2297  # CIRCLED TIMES
+<Multi_key> <Return> <X> <O>                                          : "⊗"  U2297  # CIRCLED TIMES
+<Multi_key> <Return> <v>                                              : "∨"  U2228  # LOGICAL OR
+<Multi_key> <Return> <asciicircum> <space>                            : "∧"  U2227  # LOGICAL AND
+<Multi_key> <Return> <minus> <colon>                                  : "÷"  U00F7  # DIVISION SIGN
+<Multi_key> <Return> <x>                                              : "×"  U00D7  # MULTIPLICATION SIGN
+<Multi_key> <Return> <less> <equal>                                   : "≤"  U2264  # LESS-THAN OR EQUAL TO
+<Multi_key> <Return> <greater> <equal>                                : "≥"  U2265  # GREATER-THAN OR EQUAL TO
+<Multi_key> <Return> <less> <minus>                                   : "←"  U2190  # LEFTWARDS ARROW
+<Multi_key> <Return> <minus> <greater>                                : "→"  U2192  # RIGHTWARDS ARROW
+<Multi_key> <Return> <asciicircum> <bar>                              : "↑"  U2191  # UPWARDS ARROW
+<Multi_key> <Return> <bar> <v>                                        : "↓"  U2193  # DOWNWARDS ARROW
+<Multi_key> <Return> <minus> <space>                                  : "‾"  U203E  # OVERLINE
+<Multi_key> <Return> <minus> <asciicircum>                            : "‾"  U203E  # OVERLINE
+<Multi_key> <Return> <asterisk> <space>                               : "⋆"  U22C6  # STAR OPERATOR
+<Multi_key> <Return> <a>                                              : "⍺"  U237A  # APL FUNCTIONAL SYMBOL ALPHA
+<Multi_key> <Return> <e>                                              : "∊"  U220A  # SMALL ELEMENT OF
+<Multi_key> <Return> <i>                                              : "⍳"  U2373  # APL FUNCTIONAL SYMBOL IOTA
+<Multi_key> <Return> <p>                                              : "⍴"  U2374  # APL FUNCTIONAL SYMBOL RHO
+<Multi_key> <Return> <w>                                              : "⍵"  U2375  # APL FUNCTIONAL SYMBOL OMEGA
+<Multi_key> <Return> <slash> <equal>                                  : "≠"  U2260  # NOT EQUAL TO
+<Multi_key> <Return> <underscore> <i>                                 : "⍸"  U2378  # APL FUNCTIONAL SYMBOL IOTA UNDERBAR
+<Multi_key> <Return> <underscore> <e>                                 : "⍷"  U2377  # APL FUNCTIONAL SYMBOL EPSILON UNDERBAR
+
+<Multi_key> <Return> <bracketleft> <equal> <bracketright>             : "⌸"  U2338  # APL FUNCTIONAL SYMBOL QUAD EQUAL
+<Multi_key> <Return> <bracketleft> <less> <greater> <bracketright>    : "⌺"  U233A  # APL FUNCTIONAL SYMBOL QUAD DIAMOND
+<Multi_key> <Return> <bracketleft> <O> <bracketright>                 : "⌼"  U233C  # APL FUNCTIONAL SYMBOL QUAD CIRCLE
+<Multi_key> <Return> <o> <O>                                          : "⌾"  U233E  # APL FUNCTIONAL SYMBOL CIRCLE JOT
+<Multi_key> <Return> <bracketleft> <slash> <bracketright>             : "⍁"  U2341  # APL FUNCTIONAL SYMBOL QUAD SLASH
+<Multi_key> <Return> <bracketleft> <less> <bracketright>              : "⍃"  U2343  # APL FUNCTIONAL SYMBOL QUAD LESS-THAN
+<Multi_key> <Return> <bracketleft> <greater> <bracketright>           : "⍄"  U2344  # APL FUNCTIONAL SYMBOL QUAD GREATER-THAN
+<Multi_key> <Return> <bar> <Multi_key> <less> <minus>                 : "⍅"  U2345  # APL FUNCTIONAL SYMBOL LEFTWARDS VANE
+<Multi_key> <Return> <bar> <Multi_key> <minus> <greater>              : "⍆"  U2346  # APL FUNCTIONAL SYMBOL RIGHTWARDS VANE
+<Multi_key> <Return> <bracketleft> <less> <minus> <bracketright>      : "⍇"  U2347  # APL FUNCTIONAL SYMBOL QUAD LEFTWARDS ARROW
+<Multi_key> <Return> <bracketleft> <minus> <greater> <bracketright>   : "⍈"  U2348  # APL FUNCTIONAL SYMBOL QUAD RIGHTWARDS ARROW
+<Multi_key> <Return> <bracketleft> <v> <bracketright>                 : "⍌"  U234C  # APL FUNCTIONAL SYMBOL QUAD DOWN CARET
+<Multi_key> <Return> <bracketleft> <D> <bracketright>                 : "⍍"  U234D  # APL FUNCTIONAL SYMBOL QUAD DELTA
+<Multi_key> <Return> <minus> <Multi_key> <asciicircum> <bar>          : "⍏"  U234F  # APL FUNCTIONAL SYMBOL UPWARDS VANE
+<Multi_key> <Return> <bracketleft> <asciicircum> <bar> <bracketright> : "⍐"  U2350  # APL FUNCTIONAL SYMBOL QUAD UPWARDS ARROW
+<Multi_key> <Return> <bracketleft> <asciicircum> <bracketright>       : "⍓"  U2353  # APL FUNCTIONAL SYMBOL QUAD UP CARET
+<Multi_key> <Return> <bracketleft> <V> <bracketright>                 : "⍔"  U2354  # APL FUNCTIONAL SYMBOL QUAD DEL
+<Multi_key> <Return> <minus> <Multi_key> <bar> <v>                    : "⍖"  U2356  # APL FUNCTIONAL SYMBOL DOWNWARDS VANE
+<Multi_key> <Return> <bracketleft> <bar> <v> <bracketright>           : "⍗"  U2357  # APL FUNCTIONAL SYMBOL QUAD DOWNWARDS ARROW
+<Multi_key> <Return> <underscore> <o>                                 : "⍛"  U235B  # APL FUNCTIONAL SYMBOL JOT UNDERBAR
+<Multi_key> <Return> <underscore> <O>                                 : "⍜"  U235C  # APL FUNCTIONAL SYMBOL CIRCLE UNDERBAR
+<Multi_key> <Return> <bracketleft> <colon> <bracketright>             : "⍠"  U2360  # APL FUNCTIONAL SYMBOL QUAD COLON
+<Multi_key> <Return> <bar> <U>                                        : "⍦"  U2366  # APL FUNCTIONAL SYMBOL DOWN SHOE STILE
+<Multi_key> <Return> <bar> <C>                                        : "⍧"  U2367  # APL FUNCTIONAL SYMBOL LEFT SHOE STILE
+<Multi_key> <Return> <comma> <minus>                                  : "⍪"  U236A  # APL FUNCTIONAL SYMBOL COMMA BAR
+<Multi_key> <Return> <bracketleft> <slash> <equal> <bracketright>     : "⍯"  U236F  # APL FUNCTIONAL SYMBOL QUAD NOT EQUAL
+<Multi_key> <Return> <bracketleft> <question> <bracketright>          : "⍰"  U2370  # APL FUNCTIONAL SYMBOL QUAD QUESTION
+<Multi_key> <Return> <underscore> <a>                                 : "⍶"  U2376  # APL FUNCTIONAL SYMBOL ALPHA UNDERBAR
+<Multi_key> <Return> <underscore> <w>                                 : "⍹"  U2379  # APL FUNCTIONAL SYMBOL OMEGA UNDERBAR
 
 #########
 # Emoji #
@@ -18132,6 +18714,7 @@ include "%L"
 <Multi_key> <bracketright> <c> <a> <p> <t> <i> <v> : "𓀏"  U1300F  # EGYPTIAN HIEROGLYPH A013 (CAPTIVE)
 <Multi_key> <bracketright> <c> <h> <i> <l> <d> : "𓁖"  U13056  # EGYPTIAN HIEROGLYPH B006 (CHILD)
 <Multi_key> <bracketright> <d> <a> <n> <c> <e> : "𓀤"  U13024  # EGYPTIAN HIEROGLYPH A032 (DANCE)
+<Multi_key> <bracketright> <d> <e> <a> <d> : "𓀐"  U13010  # EGYPTIAN HIEROGLYPH A014 (DEAD)
 <Multi_key> <bracketright> <d> <i> <e> : "𓀐"  U13010  # EGYPTIAN HIEROGLYPH A014 (DIE)
 <Multi_key> <bracketright> <e> <a> <t> : "𓀁"  U13001  # EGYPTIAN HIEROGLYPH A002 (EAT)
 <Multi_key> <bracketright> <f> <a> <l> <l> : "𓀒"  U13012  # EGYPTIAN HIEROGLYPH A015 (FALL)
@@ -18660,6 +19243,7 @@ include "%L"
 <Multi_key> <Tab> <slash> <backslash> <Multi_key> <period> <minus> : "◬" U25EC    # WHITE UP-POINTING TRIANGLE WITH DOT
 <Multi_key> <Tab> <slash> <backslash> <less> : "◭" U25ED    # UP-POINTING TRIANGLE WITH LEFT HALF BLACK
 <Multi_key> <Tab> <slash> <backslash> <greater> : "◮" U25EE    # UP-POINTING TRIANGLE WITH RIGHT HALF BLACK
+<Multi_key> <Tab> <slash> <backslash> <equal> : "𜲁"  U1CC81  # STRIPED UP-POINTING TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <2> <0> : "⟁" U27C1   # WHITE TRIANGLE CONTAINING SMALL WHITE TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <plus> : "⨹" U2A39   # PLUS SIGN IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <minus> : "⨺" U2A3A   # MINUS SIGN IN TRIANGLE
@@ -18671,11 +19255,16 @@ include "%L"
 
 <Multi_key> <Tab> <bar> <greater> <0>   : "▷" U25B7    # WHITE RIGHT-POINTING TRIANGLE
 <Multi_key> <Tab> <bar> <greater> <1>   : "▶" U25B6    # BLACK RIGHT-POINTING TRIANGLE
+<Multi_key> <Tab> <bar> <greater> <bar> : "𜲂"  U1CC82  # STRIPED RIGHT-POINTING TRIANGLE
 <Multi_key> <Tab> <backslash> <slash> <R> : "🔻" U1F53B   # DOWN-POINTING RED TRIANGLE
 <Multi_key> <Tab> <backslash> <slash> <0> : "▽" U25BD    # WHITE DOWN-POINTING TRIANGLE
 <Multi_key> <Tab> <backslash> <slash> <1> : "▼" U25BC    # BLACK DOWN-POINTING TRIANGLE
+<Multi_key> <Tab> <backslash> <slash> <less> : "⧨"  U29E8  # DOWN-POINTING TRIANGLE WITH LEFT HALF BLACK
+<Multi_key> <Tab> <backslash> <slash> <greater> : "⧩"  U29E9  # DOWN-POINTING TRIANGLE WITH RIGHT HALF BLACK
+<Multi_key> <Tab> <backslash> <slash> <equal> : "𜲃"  U1CC83  # STRIPED DOWN-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <0>      : "◁" U25C1    # WHITE LEFT-POINTING TRIANGLE
 <Multi_key> <Tab> <less> <bar> <1>      : "◀" U25C0    # BLACK LEFT-POINTING TRIANGLE
+<Multi_key> <Tab> <less> <bar> <Multi_key> <bar> : "𜲀"  U1CC80  # STRIPED LEFT-POINTING TRIANGLE
 
 <Multi_key> <Tab> <slash> <backslash> <Multi_key> <asciicircum> <bar> : "🢕"  U1F895  # UPWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
 <Multi_key> <Tab> <bar> <greater> <Multi_key> <minus> <greater> : "🢖"  U1F896  # RIGHTWARDS WHITE ARROW WITHIN TRIANGLE ARROWHEAD
@@ -18790,7 +19379,7 @@ include "%L"
 <Multi_key> <Tab> <L> <bar> <v>                           : "↯"  U21AF  # DOWNWARDS ZIGZAG ARROW
 <Multi_key> <Tab> <L> <slash> <v>                         : "↯"  U21AF  # DOWNWARDS ZIGZAG ARROW
 
-<Multi_key> <Tab> <less> <bar> <bar>                      : "↰"  U21B0  # UPWARDS ARROW WITH TIP LEFTWARDS
+<Multi_key> <Tab> <less> <bar> <bar>                      : "↰"  U21B0  # UPWARDS ARROW WITH TIP LEFTWARDS (use [Tab]<|[Multi_key]| for 𜲀)
 <Multi_key> <Tab> <greater> <bar> <bar>                   : "↱"  U21B1  # UPWARDS ARROW WITH TIP RIGHTWARDS
 <Multi_key> <Tab> <bar> <bar> <less>                      : "↲"  U21B2  # DOWNWARDS ARROW WITH TIP LEFTWARDS
 <Multi_key> <Tab> <bar> <bar> <greater>                   : "↳"  U21B3  # DOWNWARDS ARROW WITH TIP RIGHTWARDS
@@ -19960,6 +20549,36 @@ include "%L"
 <Multi_key> <numbersign> <g> <asciicircum>   : "𝆱" U1D1B1    # MUSICAL SYMBOL GLISSANDO UP
 <Multi_key> <numbersign> <g> <v>             : "𝆲" U1D1B2    # MUSICAL SYMBOL GLISSANDO DOWN
 
+# mensural notation
+
+<Multi_key> <numbersign> <n> <M> <m> <x> : "𝆶"  U1D1B6  # MUSICAL SYMBOL MAXIMA
+<Multi_key> <numbersign> <n> <M> <l> : "𝆷"  U1D1B7  # MUSICAL SYMBOL LONGA
+<Multi_key> <numbersign> <n> <M> <b> : "𝆸"  U1D1B8  # MUSICAL SYMBOL BREVIS
+<Multi_key> <numbersign> <n> <M> <s> <b> <0> : "𝆹"  U1D1B9  # MUSICAL SYMBOL SEMIBREVIS WHITE
+<Multi_key> <numbersign> <n> <M> <s> <b> <1> : "𝆺"  U1D1BA  # MUSICAL SYMBOL SEMIBREVIS BLACK
+<Multi_key> <numbersign> <n> <M> <m> <n> <0>: "𝆹𝅥"  U1D1BB  # MUSICAL SYMBOL MINIMA
+<Multi_key> <numbersign> <n> <M> <m> <n> <1> : "𝆺𝅥"  U1D1BC  # MUSICAL SYMBOL MINIMA BLACK
+<Multi_key> <numbersign> <n> <M> <s> <m> <0> : "𝆹𝅥𝅮"  U1D1BD  # MUSICAL SYMBOL SEMIMINIMA WHITE
+<Multi_key> <numbersign> <n> <M> <s> <m> <1> : "𝆺𝅥𝅮"  U1D1BE  # MUSICAL SYMBOL SEMIMINIMA BLACK
+<Multi_key> <numbersign> <n> <M> <f> <0> : "𝆹𝅥𝅯"  U1D1BF  # MUSICAL SYMBOL FUSA WHITE
+<Multi_key> <numbersign> <n> <M> <f> <1> : "𝆺𝅥𝅯"  U1D1C0  # MUSICAL SYMBOL FUSA BLACK
+
+<Multi_key> <numbersign> <r> <M> <l> <3> : "𝇁"  U1D1C1  # MUSICAL SYMBOL LONGA PERFECTA REST
+<Multi_key> <numbersign> <r> <M> <l> <2> : "𝇂"  U1D1C2  # MUSICAL SYMBOL LONGA IMPERFECTA REST
+<Multi_key> <numbersign> <r> <M> <b> : "𝇃"  U1D1C3  # MUSICAL SYMBOL BREVIS REST
+<Multi_key> <numbersign> <r> <M> <s> <b> : "𝇄"  U1D1C4  # MUSICAL SYMBOL SEMIBREVIS REST
+<Multi_key> <numbersign> <r> <M> <m> <n> : "𝇅"  U1D1C5  # MUSICAL SYMBOL MINIMA REST
+<Multi_key> <numbersign> <r> <M> <s> <m> : "𝇆"  U1D1C6  # MUSICAL SYMBOL SEMIMINIMA REST
+
+<Multi_key> <numbersign> <M> <9> <4> : "𝇇"  U1D1C7  # MUSICAL SYMBOL TEMPUS PERFECTUM CUM PROLATIONE PERFECTA
+<Multi_key> <numbersign> <M> <3> <2> : "𝇈"  U1D1C8  # MUSICAL SYMBOL TEMPUS PERFECTUM CUM PROLATIONE IMPERFECTA
+<Multi_key> <numbersign> <M> <9> <8> : "𝇉"  U1D1C9  # MUSICAL SYMBOL TEMPUS PERFECTUM CUM PROLATIONE PERFECTA DIMINUTION-1
+<Multi_key> <numbersign> <M> <6> <4> : "𝇊"  U1D1CA  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE PERFECTA
+<Multi_key> <numbersign> <M> <4> <4> : "𝇋"  U1D1CB  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA
+<Multi_key> <numbersign> <M> <2> <2> : "𝇍"  U1D1CD  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-2
+<Multi_key> <numbersign> <M> <4> <8> : "𝇌"  U1D1CC  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-1
+<Multi_key> <numbersign> <M> <2> <4> : "𝇎"  U1D1CE  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-3
+
 #########
 # Games #
 #########
@@ -20710,6 +21329,180 @@ include "%L"
 <Multi_key> <asterisk> <E> <C> : "🝶" U1F776    # LUNAR ECLIPSE
 
 #####################
+# I Ching hexagrams #
+#####################
+
+# Convention: IC + 1 (=Yang) / 2 (=Yin) from top to bottom
+
+<Multi_key> <I> <C> <1> <space> : "⚊"  U268A  # MONOGRAM FOR YANG
+<Multi_key> <I> <C> <2> <space> : "⚋"  U268B  # MONOGRAM FOR YIN
+
+<Multi_key> <I> <C> <1> <1> <space> : "⚌"  U268C  # DIGRAM FOR GREATER YANG
+<Multi_key> <I> <C> <2> <1> <space> : "⚍"  U268D  # DIGRAM FOR LESSER YIN
+<Multi_key> <I> <C> <1> <2> <space> : "⚎"  U268E  # DIGRAM FOR LESSER YANG
+<Multi_key> <I> <C> <2> <2> <space> : "⚏"  U268F  # DIGRAM FOR GREATER YIN
+
+<Multi_key> <I> <C> <1> <1> <1> <space> : "☰"  U2630  # TRIGRAM FOR HEAVEN
+<Multi_key> <I> <C> <2> <1> <1> <space> : "☱"  U2631  # TRIGRAM FOR LAKE
+<Multi_key> <I> <C> <1> <2> <1> <space> : "☲"  U2632  # TRIGRAM FOR FIRE
+<Multi_key> <I> <C> <2> <2> <1> <space> : "☳"  U2633  # TRIGRAM FOR THUNDER
+<Multi_key> <I> <C> <1> <1> <2> <space> : "☴"  U2634  # TRIGRAM FOR WIND
+<Multi_key> <I> <C> <2> <1> <2> <space> : "☵"  U2635  # TRIGRAM FOR WATER
+<Multi_key> <I> <C> <1> <2> <2> <space> : "☶"  U2636  # TRIGRAM FOR MOUNTAIN
+<Multi_key> <I> <C> <2> <2> <2> <space> : "☷"  U2637  # TRIGRAM FOR EARTH
+
+<Multi_key> <I> <C> <1> <1> <1> <1> <1> <1> : "䷀"  U4DC0  # HEXAGRAM FOR THE CREATIVE HEAVEN
+<Multi_key> <I> <C> <2> <2> <2> <2> <2> <2> : "䷁"  U4DC1  # HEXAGRAM FOR THE RECEPTIVE EARTH
+<Multi_key> <I> <C> <2> <1> <2> <2> <2> <1> : "䷂"  U4DC2  # HEXAGRAM FOR DIFFICULTY AT THE BEGINNING
+<Multi_key> <I> <C> <1> <2> <2> <2> <1> <2> : "䷃"  U4DC3  # HEXAGRAM FOR YOUTHFUL FOLLY
+<Multi_key> <I> <C> <2> <1> <2> <1> <1> <1> : "䷄"  U4DC4  # HEXAGRAM FOR WAITING
+<Multi_key> <I> <C> <1> <1> <1> <2> <1> <2> : "䷅"  U4DC5  # HEXAGRAM FOR CONFLICT
+<Multi_key> <I> <C> <2> <2> <2> <2> <1> <2> : "䷆"  U4DC6  # HEXAGRAM FOR THE ARMY
+<Multi_key> <I> <C> <2> <1> <2> <2> <2> <2> : "䷇"  U4DC7  # HEXAGRAM FOR HOLDING TOGETHER
+<Multi_key> <I> <C> <1> <1> <2> <1> <1> <1> : "䷈"  U4DC8  # HEXAGRAM FOR SMALL TAMING
+<Multi_key> <I> <C> <1> <1> <1> <2> <1> <1> : "䷉"  U4DC9  # HEXAGRAM FOR TREADING
+<Multi_key> <I> <C> <2> <2> <2> <1> <1> <1> : "䷊"  U4DCA  # HEXAGRAM FOR PEACE
+<Multi_key> <I> <C> <1> <1> <1> <2> <2> <2> : "䷋"  U4DCB  # HEXAGRAM FOR STANDSTILL
+<Multi_key> <I> <C> <1> <1> <1> <1> <2> <1> : "䷌"  U4DCC  # HEXAGRAM FOR FELLOWSHIP
+<Multi_key> <I> <C> <1> <2> <1> <1> <1> <1> : "䷍"  U4DCD  # HEXAGRAM FOR GREAT POSSESSION
+<Multi_key> <I> <C> <2> <2> <2> <1> <2> <2> : "䷎"  U4DCE  # HEXAGRAM FOR MODESTY
+<Multi_key> <I> <C> <2> <2> <1> <2> <2> <2> : "䷏"  U4DCF  # HEXAGRAM FOR ENTHUSIASM
+<Multi_key> <I> <C> <2> <1> <1> <2> <2> <1> : "䷐"  U4DD0  # HEXAGRAM FOR FOLLOWING
+<Multi_key> <I> <C> <1> <2> <2> <1> <1> <2> : "䷑"  U4DD1  # HEXAGRAM FOR WORK ON THE DECAYED
+<Multi_key> <I> <C> <2> <2> <2> <2> <1> <1> : "䷒"  U4DD2  # HEXAGRAM FOR APPROACH
+<Multi_key> <I> <C> <1> <1> <2> <2> <2> <2> : "䷓"  U4DD3  # HEXAGRAM FOR CONTEMPLATION
+<Multi_key> <I> <C> <1> <2> <1> <2> <2> <1> : "䷔"  U4DD4  # HEXAGRAM FOR BITING THROUGH
+<Multi_key> <I> <C> <1> <2> <2> <1> <2> <1> : "䷕"  U4DD5  # HEXAGRAM FOR GRACE
+<Multi_key> <I> <C> <1> <2> <2> <2> <2> <2> : "䷖"  U4DD6  # HEXAGRAM FOR SPLITTING APART
+<Multi_key> <I> <C> <2> <2> <2> <2> <2> <1> : "䷗"  U4DD7  # HEXAGRAM FOR RETURN
+<Multi_key> <I> <C> <1> <1> <1> <2> <2> <1> : "䷘"  U4DD8  # HEXAGRAM FOR INNOCENCE
+<Multi_key> <I> <C> <1> <2> <2> <1> <1> <1> : "䷙"  U4DD9  # HEXAGRAM FOR GREAT TAMING
+<Multi_key> <I> <C> <1> <2> <2> <2> <2> <1> : "䷚"  U4DDA  # HEXAGRAM FOR MOUTH CORNERS
+<Multi_key> <I> <C> <2> <1> <1> <1> <1> <2> : "䷛"  U4DDB  # HEXAGRAM FOR GREAT PREPONDERANCE
+<Multi_key> <I> <C> <2> <1> <2> <2> <1> <2> : "䷜"  U4DDC  # HEXAGRAM FOR THE ABYSMAL WATER
+<Multi_key> <I> <C> <1> <2> <1> <1> <2> <1> : "䷝"  U4DDD  # HEXAGRAM FOR THE CLINGING FIRE
+<Multi_key> <I> <C> <2> <1> <1> <1> <2> <2> : "䷞"  U4DDE  # HEXAGRAM FOR INFLUENCE
+<Multi_key> <I> <C> <2> <2> <1> <1> <1> <2> : "䷟"  U4DDF  # HEXAGRAM FOR DURATION
+<Multi_key> <I> <C> <1> <1> <1> <1> <2> <2> : "䷠"  U4DE0  # HEXAGRAM FOR RETREAT
+<Multi_key> <I> <C> <2> <2> <1> <1> <1> <1> : "䷡"  U4DE1  # HEXAGRAM FOR GREAT POWER
+<Multi_key> <I> <C> <1> <2> <1> <2> <2> <2> : "䷢"  U4DE2  # HEXAGRAM FOR PROGRESS
+<Multi_key> <I> <C> <2> <2> <2> <1> <2> <1> : "䷣"  U4DE3  # HEXAGRAM FOR DARKENING OF THE LIGHT
+<Multi_key> <I> <C> <1> <1> <2> <1> <2> <1> : "䷤"  U4DE4  # HEXAGRAM FOR THE FAMILY
+<Multi_key> <I> <C> <1> <2> <1> <2> <1> <1> : "䷥"  U4DE5  # HEXAGRAM FOR OPPOSITION
+<Multi_key> <I> <C> <2> <1> <2> <1> <2> <2> : "䷦"  U4DE6  # HEXAGRAM FOR OBSTRUCTION
+<Multi_key> <I> <C> <2> <2> <1> <2> <1> <2> : "䷧"  U4DE7  # HEXAGRAM FOR DELIVERANCE
+<Multi_key> <I> <C> <1> <2> <2> <2> <1> <1> : "䷨"  U4DE8  # HEXAGRAM FOR DECREASE
+<Multi_key> <I> <C> <1> <1> <2> <2> <2> <1> : "䷩"  U4DE9  # HEXAGRAM FOR INCREASE
+<Multi_key> <I> <C> <2> <1> <1> <1> <1> <1> : "䷪"  U4DEA  # HEXAGRAM FOR BREAKTHROUGH
+<Multi_key> <I> <C> <1> <1> <1> <1> <1> <2> : "䷫"  U4DEB  # HEXAGRAM FOR COMING TO MEET
+<Multi_key> <I> <C> <2> <1> <1> <2> <2> <2> : "䷬"  U4DEC  # HEXAGRAM FOR GATHERING TOGETHER
+<Multi_key> <I> <C> <2> <2> <2> <1> <1> <2> : "䷭"  U4DED  # HEXAGRAM FOR PUSHING UPWARD
+<Multi_key> <I> <C> <2> <1> <1> <2> <1> <2> : "䷮"  U4DEE  # HEXAGRAM FOR OPPRESSION
+<Multi_key> <I> <C> <2> <1> <2> <1> <1> <2> : "䷯"  U4DEF  # HEXAGRAM FOR THE WELL
+<Multi_key> <I> <C> <2> <1> <1> <1> <2> <1> : "䷰"  U4DF0  # HEXAGRAM FOR REVOLUTION
+<Multi_key> <I> <C> <1> <2> <1> <1> <1> <2> : "䷱"  U4DF1  # HEXAGRAM FOR THE CAULDRON
+<Multi_key> <I> <C> <2> <2> <1> <2> <2> <1> : "䷲"  U4DF2  # HEXAGRAM FOR THE AROUSING THUNDER
+<Multi_key> <I> <C> <1> <2> <2> <1> <2> <2> : "䷳"  U4DF3  # HEXAGRAM FOR THE KEEPING STILL MOUNTAIN
+<Multi_key> <I> <C> <1> <1> <2> <1> <2> <2> : "䷴"  U4DF4  # HEXAGRAM FOR DEVELOPMENT
+<Multi_key> <I> <C> <2> <2> <1> <2> <1> <1> : "䷵"  U4DF5  # HEXAGRAM FOR THE MARRYING MAIDEN
+<Multi_key> <I> <C> <2> <2> <1> <1> <2> <1> : "䷶"  U4DF6  # HEXAGRAM FOR ABUNDANCE
+<Multi_key> <I> <C> <1> <2> <1> <1> <2> <2> : "䷷"  U4DF7  # HEXAGRAM FOR THE WANDERER
+<Multi_key> <I> <C> <1> <1> <2> <1> <1> <2> : "䷸"  U4DF8  # HEXAGRAM FOR THE GENTLE WIND
+<Multi_key> <I> <C> <2> <1> <1> <2> <1> <1> : "䷹"  U4DF9  # HEXAGRAM FOR THE JOYOUS LAKE
+<Multi_key> <I> <C> <1> <1> <2> <2> <1> <2> : "䷺"  U4DFA  # HEXAGRAM FOR DISPERSION
+<Multi_key> <I> <C> <2> <1> <2> <2> <1> <1> : "䷻"  U4DFB  # HEXAGRAM FOR LIMITATION
+<Multi_key> <I> <C> <1> <1> <2> <2> <1> <1> : "䷼"  U4DFC  # HEXAGRAM FOR INNER TRUTH
+<Multi_key> <I> <C> <2> <2> <1> <1> <2> <2> : "䷽"  U4DFD  # HEXAGRAM FOR SMALL PREPONDERANCE
+<Multi_key> <I> <C> <2> <1> <2> <1> <2> <1> : "䷾"  U4DFE  # HEXAGRAM FOR AFTER COMPLETION
+<Multi_key> <I> <C> <1> <2> <1> <2> <1> <2> : "䷿"  U4DFF  # HEXAGRAM FOR BEFORE COMPLETION
+
+# Taixuanjing tetragrams: IC + 1 (=tiān) / 2 (=dì) / 3 (=rén) from top to bottom
+
+<Multi_key> <I> <C> <1> <1> <1> <1> <space> : "𝌆"  U1D306  # TETRAGRAM FOR CENTRE
+<Multi_key> <I> <C> <1> <1> <1> <2> <space> : "𝌇"  U1D307  # TETRAGRAM FOR FULL CIRCLE
+<Multi_key> <I> <C> <1> <1> <1> <3> <space> : "𝌈"  U1D308  # TETRAGRAM FOR MIRED
+<Multi_key> <I> <C> <1> <1> <2> <1> <space> : "𝌉"  U1D309  # TETRAGRAM FOR BARRIER
+<Multi_key> <I> <C> <1> <1> <2> <2> <space> : "𝌊"  U1D30A  # TETRAGRAM FOR KEEPING SMALL
+<Multi_key> <I> <C> <1> <1> <2> <3> <space> : "𝌋"  U1D30B  # TETRAGRAM FOR CONTRARIETY
+<Multi_key> <I> <C> <1> <1> <3> <1> <space> : "𝌌"  U1D30C  # TETRAGRAM FOR ASCENT
+<Multi_key> <I> <C> <1> <1> <3> <2> <space> : "𝌍"  U1D30D  # TETRAGRAM FOR OPPOSITION
+<Multi_key> <I> <C> <1> <1> <3> <3> <space> : "𝌎"  U1D30E  # TETRAGRAM FOR BRANCHING OUT
+<Multi_key> <I> <C> <1> <2> <1> <1> <space> : "𝌏"  U1D30F  # TETRAGRAM FOR DEFECTIVENESS OR DISTORTION
+<Multi_key> <I> <C> <1> <2> <1> <2> <space> : "𝌐"  U1D310  # TETRAGRAM FOR DIVERGENCE
+<Multi_key> <I> <C> <1> <2> <1> <3> <space> : "𝌑"  U1D311  # TETRAGRAM FOR YOUTHFULNESS
+<Multi_key> <I> <C> <1> <2> <2> <1> <space> : "𝌒"  U1D312  # TETRAGRAM FOR INCREASE
+<Multi_key> <I> <C> <1> <2> <2> <2> <space> : "𝌓"  U1D313  # TETRAGRAM FOR PENETRATION
+<Multi_key> <I> <C> <1> <2> <2> <3> <space> : "𝌔"  U1D314  # TETRAGRAM FOR REACH
+<Multi_key> <I> <C> <1> <2> <3> <1> <space> : "𝌕"  U1D315  # TETRAGRAM FOR CONTACT
+<Multi_key> <I> <C> <1> <2> <3> <2> <space> : "𝌖"  U1D316  # TETRAGRAM FOR HOLDING BACK
+<Multi_key> <I> <C> <1> <2> <3> <3> <space> : "𝌗"  U1D317  # TETRAGRAM FOR WAITING
+<Multi_key> <I> <C> <1> <3> <1> <1> <space> : "𝌘"  U1D318  # TETRAGRAM FOR FOLLOWING
+<Multi_key> <I> <C> <1> <3> <1> <2> <space> : "𝌙"  U1D319  # TETRAGRAM FOR ADVANCE
+<Multi_key> <I> <C> <1> <3> <1> <3> <space> : "𝌚"  U1D31A  # TETRAGRAM FOR RELEASE
+<Multi_key> <I> <C> <1> <3> <2> <1> <space> : "𝌛"  U1D31B  # TETRAGRAM FOR RESISTANCE
+<Multi_key> <I> <C> <1> <3> <2> <2> <space> : "𝌜"  U1D31C  # TETRAGRAM FOR EASE
+<Multi_key> <I> <C> <1> <3> <2> <3> <space> : "𝌝"  U1D31D  # TETRAGRAM FOR JOY
+<Multi_key> <I> <C> <1> <3> <3> <1> <space> : "𝌞"  U1D31E  # TETRAGRAM FOR CONTENTION
+<Multi_key> <I> <C> <1> <3> <3> <2> <space> : "𝌟"  U1D31F  # TETRAGRAM FOR ENDEAVOUR
+<Multi_key> <I> <C> <1> <3> <3> <3> <space> : "𝌠"  U1D320  # TETRAGRAM FOR DUTIES
+<Multi_key> <I> <C> <2> <1> <1> <1> <space> : "𝌡"  U1D321  # TETRAGRAM FOR CHANGE
+<Multi_key> <I> <C> <2> <1> <1> <2> <space> : "𝌢"  U1D322  # TETRAGRAM FOR DECISIVENESS
+<Multi_key> <I> <C> <2> <1> <1> <3> <space> : "𝌣"  U1D323  # TETRAGRAM FOR BOLD RESOLUTION
+<Multi_key> <I> <C> <2> <1> <2> <1> <space> : "𝌤"  U1D324  # TETRAGRAM FOR PACKING
+<Multi_key> <I> <C> <2> <1> <2> <2> <space> : "𝌥"  U1D325  # TETRAGRAM FOR LEGION
+<Multi_key> <I> <C> <2> <1> <2> <3> <space> : "𝌦"  U1D326  # TETRAGRAM FOR CLOSENESS
+<Multi_key> <I> <C> <2> <1> <3> <1> <space> : "𝌧"  U1D327  # TETRAGRAM FOR KINSHIP
+<Multi_key> <I> <C> <2> <1> <3> <2> <space> : "𝌨"  U1D328  # TETRAGRAM FOR GATHERING
+<Multi_key> <I> <C> <2> <1> <3> <3> <space> : "𝌩"  U1D329  # TETRAGRAM FOR STRENGTH
+<Multi_key> <I> <C> <2> <2> <1> <1> <space> : "𝌪"  U1D32A  # TETRAGRAM FOR PURITY
+<Multi_key> <I> <C> <2> <2> <1> <2> <space> : "𝌫"  U1D32B  # TETRAGRAM FOR FULLNESS
+<Multi_key> <I> <C> <2> <2> <1> <3> <space> : "𝌬"  U1D32C  # TETRAGRAM FOR RESIDENCE
+<Multi_key> <I> <C> <2> <2> <2> <1> <space> : "𝌭"  U1D32D  # TETRAGRAM FOR LAW OR MODEL
+<Multi_key> <I> <C> <2> <2> <2> <2> <space> : "𝌮"  U1D32E  # TETRAGRAM FOR RESPONSE
+<Multi_key> <I> <C> <2> <2> <2> <3> <space> : "𝌯"  U1D32F  # TETRAGRAM FOR GOING TO MEET
+<Multi_key> <I> <C> <2> <2> <3> <1> <space> : "𝌰"  U1D330  # TETRAGRAM FOR ENCOUNTERS
+<Multi_key> <I> <C> <2> <2> <3> <2> <space> : "𝌱"  U1D331  # TETRAGRAM FOR STOVE
+<Multi_key> <I> <C> <2> <2> <3> <3> <space> : "𝌲"  U1D332  # TETRAGRAM FOR GREATNESS
+<Multi_key> <I> <C> <2> <3> <1> <1> <space> : "𝌳"  U1D333  # TETRAGRAM FOR ENLARGEMENT
+<Multi_key> <I> <C> <2> <3> <1> <2> <space> : "𝌴"  U1D334  # TETRAGRAM FOR PATTERN
+<Multi_key> <I> <C> <2> <3> <1> <3> <space> : "𝌵"  U1D335  # TETRAGRAM FOR RITUAL
+<Multi_key> <I> <C> <2> <3> <2> <1> <space> : "𝌶"  U1D336  # TETRAGRAM FOR FLIGHT
+<Multi_key> <I> <C> <2> <3> <2> <2> <space> : "𝌷"  U1D337  # TETRAGRAM FOR VASTNESS OR WASTING
+<Multi_key> <I> <C> <2> <3> <2> <3> <space> : "𝌸"  U1D338  # TETRAGRAM FOR CONSTANCY
+<Multi_key> <I> <C> <2> <3> <3> <1> <space> : "𝌹"  U1D339  # TETRAGRAM FOR MEASURE
+<Multi_key> <I> <C> <2> <3> <3> <2> <space> : "𝌺"  U1D33A  # TETRAGRAM FOR ETERNITY
+<Multi_key> <I> <C> <2> <3> <3> <3> <space> : "𝌻"  U1D33B  # TETRAGRAM FOR UNITY
+<Multi_key> <I> <C> <3> <1> <1> <1> <space> : "𝌼"  U1D33C  # TETRAGRAM FOR DIMINISHMENT
+<Multi_key> <I> <C> <3> <1> <1> <2> <space> : "𝌽"  U1D33D  # TETRAGRAM FOR CLOSED MOUTH
+<Multi_key> <I> <C> <3> <1> <1> <3> <space> : "𝌾"  U1D33E  # TETRAGRAM FOR GUARDEDNESS
+<Multi_key> <I> <C> <3> <1> <2> <1> <space> : "𝌿"  U1D33F  # TETRAGRAM FOR GATHERING IN
+<Multi_key> <I> <C> <3> <1> <2> <2> <space> : "𝍀"  U1D340  # TETRAGRAM FOR MASSING
+<Multi_key> <I> <C> <3> <1> <2> <3> <space> : "𝍁"  U1D341  # TETRAGRAM FOR ACCUMULATION
+<Multi_key> <I> <C> <3> <1> <3> <1> <space> : "𝍂"  U1D342  # TETRAGRAM FOR EMBELLISHMENT
+<Multi_key> <I> <C> <3> <1> <3> <2> <space> : "𝍃"  U1D343  # TETRAGRAM FOR DOUBT
+<Multi_key> <I> <C> <3> <1> <3> <3> <space> : "𝍄"  U1D344  # TETRAGRAM FOR WATCH
+<Multi_key> <I> <C> <3> <2> <1> <1> <space> : "𝍅"  U1D345  # TETRAGRAM FOR SINKING
+<Multi_key> <I> <C> <3> <2> <1> <2> <space> : "𝍆"  U1D346  # TETRAGRAM FOR INNER
+<Multi_key> <I> <C> <3> <2> <1> <3> <space> : "𝍇"  U1D347  # TETRAGRAM FOR DEPARTURE
+<Multi_key> <I> <C> <3> <2> <2> <1> <space> : "𝍈"  U1D348  # TETRAGRAM FOR DARKENING
+<Multi_key> <I> <C> <3> <2> <2> <2> <space> : "𝍉"  U1D349  # TETRAGRAM FOR DIMMING
+<Multi_key> <I> <C> <3> <2> <2> <3> <space> : "𝍊"  U1D34A  # TETRAGRAM FOR EXHAUSTION
+<Multi_key> <I> <C> <3> <2> <3> <1> <space> : "𝍋"  U1D34B  # TETRAGRAM FOR SEVERANCE
+<Multi_key> <I> <C> <3> <2> <3> <2> <space> : "𝍌"  U1D34C  # TETRAGRAM FOR STOPPAGE
+<Multi_key> <I> <C> <3> <2> <3> <3> <space> : "𝍍"  U1D34D  # TETRAGRAM FOR HARDNESS
+<Multi_key> <I> <C> <3> <3> <1> <1> <space> : "𝍎"  U1D34E  # TETRAGRAM FOR COMPLETION
+<Multi_key> <I> <C> <3> <3> <1> <2> <space> : "𝍏"  U1D34F  # TETRAGRAM FOR CLOSURE
+<Multi_key> <I> <C> <3> <3> <1> <3> <space> : "𝍐"  U1D350  # TETRAGRAM FOR FAILURE
+<Multi_key> <I> <C> <3> <3> <2> <1> <space> : "𝍑"  U1D351  # TETRAGRAM FOR AGGRAVATION
+<Multi_key> <I> <C> <3> <3> <2> <2> <space> : "𝍒"  U1D352  # TETRAGRAM FOR COMPLIANCE
+<Multi_key> <I> <C> <3> <3> <2> <3> <space> : "𝍓"  U1D353  # TETRAGRAM FOR ON THE VERGE
+<Multi_key> <I> <C> <3> <3> <3> <1> <space> : "𝍔"  U1D354  # TETRAGRAM FOR DIFFICULTIES
+<Multi_key> <I> <C> <3> <3> <3> <2> <space> : "𝍕"  U1D355  # TETRAGRAM FOR LABOURING
+<Multi_key> <I> <C> <3> <3> <3> <3> <space> : "𝍖"  U1D356  # TETRAGRAM FOR FOSTERING
+
+<Multi_key> <I> <C> <Y> <Y> : "☯"  U262F  # YIN YANG (use yin for ☯️)
+
+#####################
 # Technical symbols #
 #####################
 
@@ -20731,6 +21524,7 @@ include "%L"
 <Multi_key> <backslash> <KP_Enter>              : "⌅"  U2305  # PROJECTIVE
 <Multi_key> <backslash> <Break>                 : "⎊"  U238A  # CIRCLED TRIANGLE DOWN
 <Multi_key> <backslash> <Pause>                 : "⎉"  U2389  # CIRCLED HORIZONTAL BAR WITH NOTCH
+<Multi_key> <backslash> <Multi_key>             : "⎄"  U2384  # COMPOSITION SYMBOL
 
 # keysyms (useful for editing this file, though other \ shortcuts take precedence)
 
