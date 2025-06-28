@@ -126,7 +126,7 @@ include "%L"
 <Multi_key> <bar> <space> <period>       : "⁚"  U205A  # TWO DOT PUNCTUATION
 <Multi_key> <V> <space> <period>         : "⸪"  U2E2A  # TWO DOTS OVER ONE DOT PUNCTUATION
 <Multi_key> <asciicircum> <space> <period> : "⸫"  U2E2B  # ONE DOT OVER TWO DOTS PUNCTUATION
-<Multi_key> <less> <space> <period>      : "⁖"  U2056  # THREE DOT PUNCTUATION (conflicts with ˇ, use v␣ defined below)
+<Multi_key> <less> <space> <period>      : "⁖"  U2056  # THREE DOT PUNCTUATION (conflicts with ˇ, use ␣v defined below)
 <Multi_key> <O> <space> <period>         : "⁘"  U2058  # FOUR DOT PUNCTUATION
 <Multi_key> <plus> <space> <period>      : "⸭"  U2E2D  # FIVE DOT MARK (alternatively +.)
 <Multi_key> <X> <space> <period>         : "⁙"  U2059  # FIVE DOT PUNCTUATION
@@ -204,7 +204,7 @@ include "%L"
 <Multi_key> <parenleft> <space> <parenright> <Return>  : "᪻"  U1ABB   # COMBINING PARENTHESES ABOVE (conflicts with ˘, use ␣()
 <Multi_key> <period> <grave> <period> <Return>         : "᷀"  U1DC0   # COMBINING DOTTED GRAVE ACCENT
 <Multi_key> <period> <apostrophe> <period> <Return>    : "᷁"  U1DC1   # COMBINING DOTTED ACUTE ACCENT
-<Multi_key> <underscore> <apostrophe> <space> <Return> : "᷄"  U1DC4   # COMBINING MACRON-ACUTE (conflicts with ⍘, use '_[Return] defined below)
+<Multi_key> <underscore> <apostrophe> <space> <Return> : "᷄"  U1DC4   # COMBINING MACRON-ACUTE (conflicts with ⍘, use [Return]_' defined below)
 <Multi_key> <grave> <underscore> <space> <Return>      : "᷅"  U1DC5   # COMBINING GRAVE-MACRON
 <Multi_key> <underscore> <grave> <space> <Return>      : "᷆"  U1DC6   # COMBINING MACRON-GRAVE
 <Multi_key> <apostrophe> <underscore> <space> <Return> : "᷇"  U1DC7   # COMBINING ACUTE-MACRON
@@ -220,7 +220,7 @@ include "%L"
 <Multi_key> <asterisk> <Return>                        : "⃰"  U20F0   # COMBINING ASTERISK ABOVE
 
 <Multi_key> <underscore> <grave> <Return>              : "̖"  U0316   # COMBINING GRAVE ACCENT BELOW
-<Multi_key> <underscore> <apostrophe> <Return>         : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (conflicts with ⍘, use '_[Return] defined below)
+<Multi_key> <underscore> <apostrophe> <Return>         : "̗"  U0317   # COMBINING ACUTE ACCENT BELOW (conflicts with ⍘, use [Return]_' defined below)
 <Multi_key> <underscore> <T> <less> <Return>           : "̘"  U0318   # COMBINING LEFT TACK BELOW
 <Multi_key> <underscore> <T> <greater> <Return>        : "̙"  U0319   # COMBINING RIGHT TACK BELOW
 <Multi_key> <underscore> <c> <Return>                  : "̜"  U031C   # COMBINING LEFT HALF RING BELOW
@@ -300,7 +300,6 @@ include "%L"
 <Multi_key> <2> <asciicircum> <Return>                 : "᷍"  U1DCD   # COMBINING DOUBLE CIRCUMFLEX ABOVE (conflicts with ², use ^2)
 
 <Multi_key> <O> <period>                               : "◌"  U25CC    # DOTTED CIRCLE (PLACEHOLDER GLYPH)
-<Multi_key> <apostrophe> <underscore> <Return>         : "⍘"  U2358   # APL FUNCTIONAL SYMBOL QUOTE UNDERBAR (to free up _')
 
 ######################
 # Control characters #
@@ -17314,20 +17313,34 @@ include "%L"
 <Multi_key> <Return> <bar> <Multi_key> <minus> <greater>              : "⍆"  U2346  # APL FUNCTIONAL SYMBOL RIGHTWARDS VANE
 <Multi_key> <Return> <bracketleft> <less> <minus> <bracketright>      : "⍇"  U2347  # APL FUNCTIONAL SYMBOL QUAD LEFTWARDS ARROW
 <Multi_key> <Return> <bracketleft> <minus> <greater> <bracketright>   : "⍈"  U2348  # APL FUNCTIONAL SYMBOL QUAD RIGHTWARDS ARROW
+<Multi_key> <Return> <underscore> <F>                                 : "⍊"  U234A  # APL FUNCTIONAL SYMBOL DOWN TACK UNDERBAR
 <Multi_key> <Return> <bracketleft> <v> <bracketright>                 : "⍌"  U234C  # APL FUNCTIONAL SYMBOL QUAD DOWN CARET
 <Multi_key> <Return> <bracketleft> <D> <bracketright>                 : "⍍"  U234D  # APL FUNCTIONAL SYMBOL QUAD DELTA
 <Multi_key> <Return> <minus> <Multi_key> <asciicircum> <bar>          : "⍏"  U234F  # APL FUNCTIONAL SYMBOL UPWARDS VANE
 <Multi_key> <Return> <bracketleft> <asciicircum> <bar> <bracketright> : "⍐"  U2350  # APL FUNCTIONAL SYMBOL QUAD UPWARDS ARROW
+<Multi_key> <Return> <underscore> <T>                                 : "⍑"  U2351  # APL FUNCTIONAL SYMBOL UP TACK OVERBAR
 <Multi_key> <Return> <bracketleft> <asciicircum> <bracketright>       : "⍓"  U2353  # APL FUNCTIONAL SYMBOL QUAD UP CARET
 <Multi_key> <Return> <bracketleft> <V> <bracketright>                 : "⍔"  U2354  # APL FUNCTIONAL SYMBOL QUAD DEL
 <Multi_key> <Return> <minus> <Multi_key> <bar> <v>                    : "⍖"  U2356  # APL FUNCTIONAL SYMBOL DOWNWARDS VANE
 <Multi_key> <Return> <bracketleft> <bar> <v> <bracketright>           : "⍗"  U2357  # APL FUNCTIONAL SYMBOL QUAD DOWNWARDS ARROW
+<Multi_key> <Return> <underscore> <apostrophe>                        : "⍘"  U2358   # APL FUNCTIONAL SYMBOL QUOTE UNDERBAR
 <Multi_key> <Return> <underscore> <o>                                 : "⍛"  U235B  # APL FUNCTIONAL SYMBOL JOT UNDERBAR
+<Multi_key> <Return> <underscore> <less> <greater>                    : "⍚"  U235A  # APL FUNCTIONAL SYMBOL DIAMOND UNDERBAR
 <Multi_key> <Return> <underscore> <O>                                 : "⍜"  U235C  # APL FUNCTIONAL SYMBOL CIRCLE UNDERBAR
 <Multi_key> <Return> <bracketleft> <colon> <bracketright>             : "⍠"  U2360  # APL FUNCTIONAL SYMBOL QUAD COLON
+<Multi_key> <Return> <quotedbl> <T>                                   : "⍡"  U2361  # APL FUNCTIONAL SYMBOL UP TACK DIAERESIS
+<Multi_key> <Return> <quotedbl> <V>                                   : "⍢"  U2362  # APL FUNCTIONAL SYMBOL DEL DIAERESIS
+<Multi_key> <Return> <quotedbl> <asterisk>                            : "⍣"  U2363  # APL FUNCTIONAL SYMBOL STAR DIAERESIS
+<Multi_key> <Return> <quotedbl> <o>                                   : "⍤"  U2364  # APL FUNCTIONAL SYMBOL JOT DIAERESIS
+<Multi_key> <Return> <quotedbl> <O>                                   : "⍥"  U2365  # APL FUNCTIONAL SYMBOL CIRCLE DIAERESIS
 <Multi_key> <Return> <bar> <U>                                        : "⍦"  U2366  # APL FUNCTIONAL SYMBOL DOWN SHOE STILE
 <Multi_key> <Return> <bar> <C>                                        : "⍧"  U2367  # APL FUNCTIONAL SYMBOL LEFT SHOE STILE
+<Multi_key> <Return> <quotedbl> <asciitilde>                          : "⍨"  U2368  # APL FUNCTIONAL SYMBOL TILDE DIAERESIS
+<Multi_key> <Return> <quotedbl> <greater>                             : "⍩"  U2369  # APL FUNCTIONAL SYMBOL GREATER-THAN DIAERESIS
 <Multi_key> <Return> <comma> <minus>                                  : "⍪"  U236A  # APL FUNCTIONAL SYMBOL COMMA BAR
+<Multi_key> <Return> <asciitilde> <0>                                 : "⍬"  U236C  # APL FUNCTIONAL SYMBOL ZILDE
+<Multi_key> <Return> <asciitilde> <bar>                               : "⍭"  U236D  # APL FUNCTIONAL SYMBOL STILE TILDE
+<Multi_key> <Return> <underscore> <semicolon>                         : "⍮"  U236E  # APL FUNCTIONAL SYMBOL SEMICOLON UNDERBAR
 <Multi_key> <Return> <bracketleft> <slash> <equal> <bracketright>     : "⍯"  U236F  # APL FUNCTIONAL SYMBOL QUAD NOT EQUAL
 <Multi_key> <Return> <bracketleft> <question> <bracketright>          : "⍰"  U2370  # APL FUNCTIONAL SYMBOL QUAD QUESTION
 <Multi_key> <Return> <underscore> <a>                                 : "⍶"  U2376  # APL FUNCTIONAL SYMBOL ALPHA UNDERBAR

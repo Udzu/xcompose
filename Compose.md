@@ -9,14 +9,14 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (516)
+### Common script characters (515)
 * **Spaces** (15): NBSP MMSP ZWSP etc
 * **Dashes** (12): – — ⁓ ⸻ etc
 * **Brackets** (24): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
 * **General punctuation** (31): ⁁ ⁂ ⸎ etc
 * **Currency symbols** (20): ₱ ₿ ₪ etc
-* **Combining diacritics** (132): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
+* **Combining diacritics** (131): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
 ### Latin script characters (2313)
@@ -49,10 +49,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Zhuyin**, Fraser, Mongolian, ʼPhags-pa, Pollard, Tai Le & Tibetan (589): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, ᥘᥦᥖᥤᥖ, རེཌིཊ྄ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4492)
+### Symbols (4506)
 * **Emoji** (1563): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Math and science** (378): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
-* **APL** (93): ⍟ ⍫ ⍉ etc
+* **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (106): ⏻ ⎙ ⌘ etc
 * **Numerals** (157): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (137): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
