@@ -12660,6 +12660,71 @@ include "%L"
 <Multi_key> <j> <f> <braceright>   : "｝" UFF5D    # FULLWIDTH RIGHT CURLY BRACKET
 <Multi_key> <j> <f> <asciitilde>   : "～" UFF5E    # FULLWIDTH TILDE
 
+# (H = halfwidth forms) (not ideal, but jh=ʝ is taken; fortunately these are all katakana)
+
+<Multi_key> <j> <H> <underscore> <A> : "ｧ"  UFF67  # HALFWIDTH KATAKANA LETTER SMALL A
+<Multi_key> <j> <H> <underscore> <I> : "ｨ"  UFF68  # HALFWIDTH KATAKANA LETTER SMALL I
+<Multi_key> <j> <H> <underscore> <U> : "ｩ"  UFF69  # HALFWIDTH KATAKANA LETTER SMALL U
+<Multi_key> <j> <H> <underscore> <E> : "ｪ"  UFF6A  # HALFWIDTH KATAKANA LETTER SMALL E
+<Multi_key> <j> <H> <underscore> <O> : "ｫ"  UFF6B  # HALFWIDTH KATAKANA LETTER SMALL O
+<Multi_key> <j> <H> <underscore> <Y> <A> : "ｬ"  UFF6C  # HALFWIDTH KATAKANA LETTER SMALL YA
+<Multi_key> <j> <H> <underscore> <Y> <U> : "ｭ"  UFF6D  # HALFWIDTH KATAKANA LETTER SMALL YU
+<Multi_key> <j> <H> <underscore> <Y> <O> : "ｮ"  UFF6E  # HALFWIDTH KATAKANA LETTER SMALL YO
+<Multi_key> <j> <H> <underscore> <T> <S> <U> : "ｯ"  UFF6F  # HALFWIDTH KATAKANA LETTER SMALL TU
+<Multi_key> <j> <H> <underscore> <T> <U> : "ｯ"  UFF6F  # HALFWIDTH KATAKANA LETTER SMALL TU
+<Multi_key> <j> <H> <minus> : "ｰ"  UFF70  # HALFWIDTH KATAKANA-HIRAGANA PROLONGED SOUND MARK
+<Multi_key> <j> <H> <A> : "ｱ"  UFF71  # HALFWIDTH KATAKANA LETTER A
+<Multi_key> <j> <H> <I> : "ｲ"  UFF72  # HALFWIDTH KATAKANA LETTER I
+<Multi_key> <j> <H> <U> : "ｳ"  UFF73  # HALFWIDTH KATAKANA LETTER U
+<Multi_key> <j> <H> <E> : "ｴ"  UFF74  # HALFWIDTH KATAKANA LETTER E
+<Multi_key> <j> <H> <O> : "ｵ"  UFF75  # HALFWIDTH KATAKANA LETTER O
+<Multi_key> <j> <H> <K> <A> : "ｶ"  UFF76  # HALFWIDTH KATAKANA LETTER KA
+<Multi_key> <j> <H> <K> <I> : "ｷ"  UFF77  # HALFWIDTH KATAKANA LETTER KI
+<Multi_key> <j> <H> <K> <U> : "ｸ"  UFF78  # HALFWIDTH KATAKANA LETTER KU
+<Multi_key> <j> <H> <K> <E> : "ｹ"  UFF79  # HALFWIDTH KATAKANA LETTER KE
+<Multi_key> <j> <H> <K> <O> : "ｺ"  UFF7A  # HALFWIDTH KATAKANA LETTER KO
+<Multi_key> <j> <H> <S> <A> : "ｻ"  UFF7B  # HALFWIDTH KATAKANA LETTER SA
+<Multi_key> <j> <H> <S> <H> <I> : "ｼ"  UFF7C  # HALFWIDTH KATAKANA LETTER SI
+<Multi_key> <j> <H> <S> <I> : "ｼ"  UFF7C  # HALFWIDTH KATAKANA LETTER SI
+<Multi_key> <j> <H> <S> <U> : "ｽ"  UFF7D  # HALFWIDTH KATAKANA LETTER SU
+<Multi_key> <j> <H> <S> <E> : "ｾ"  UFF7E  # HALFWIDTH KATAKANA LETTER SE
+<Multi_key> <j> <H> <S> <O> : "ｿ"  UFF7F  # HALFWIDTH KATAKANA LETTER SO
+<Multi_key> <j> <H> <T> <A> : "ﾀ"  UFF80  # HALFWIDTH KATAKANA LETTER TA
+<Multi_key> <j> <H> <C> <H> <I> : "ﾁ"  UFF81  # HALFWIDTH KATAKANA LETTER TI
+<Multi_key> <j> <H> <T> <I> : "ﾁ"  UFF81  # HALFWIDTH KATAKANA LETTER TI
+<Multi_key> <j> <H> <T> <S> <U> : "ﾂ"  UFF82  # HALFWIDTH KATAKANA LETTER TU
+<Multi_key> <j> <H> <T> <U> : "ﾂ"  UFF82  # HALFWIDTH KATAKANA LETTER TU
+<Multi_key> <j> <H> <T> <E> : "ﾃ"  UFF83  # HALFWIDTH KATAKANA LETTER TE
+<Multi_key> <j> <H> <T> <O> : "ﾄ"  UFF84  # HALFWIDTH KATAKANA LETTER TO
+<Multi_key> <j> <H> <N> <A> : "ﾅ"  UFF85  # HALFWIDTH KATAKANA LETTER NA
+<Multi_key> <j> <H> <N> <I> : "ﾆ"  UFF86  # HALFWIDTH KATAKANA LETTER NI
+<Multi_key> <j> <H> <N> <U> : "ﾇ"  UFF87  # HALFWIDTH KATAKANA LETTER NU
+<Multi_key> <j> <H> <N> <E> : "ﾈ"  UFF88  # HALFWIDTH KATAKANA LETTER NE
+<Multi_key> <j> <H> <N> <O> : "ﾉ"  UFF89  # HALFWIDTH KATAKANA LETTER NO
+<Multi_key> <j> <H> <H> <A> : "ﾊ"  UFF8A  # HALFWIDTH KATAKANA LETTER HA
+<Multi_key> <j> <H> <H> <I> : "ﾋ"  UFF8B  # HALFWIDTH KATAKANA LETTER HI
+<Multi_key> <j> <H> <F> <U> : "ﾌ"  UFF8C  # HALFWIDTH KATAKANA LETTER HU
+<Multi_key> <j> <H> <H> <U> : "ﾌ"  UFF8C  # HALFWIDTH KATAKANA LETTER HU
+<Multi_key> <j> <H> <H> <E> : "ﾍ"  UFF8D  # HALFWIDTH KATAKANA LETTER HE
+<Multi_key> <j> <H> <H> <O> : "ﾎ"  UFF8E  # HALFWIDTH KATAKANA LETTER HO
+<Multi_key> <j> <H> <M> <A> : "ﾏ"  UFF8F  # HALFWIDTH KATAKANA LETTER MA
+<Multi_key> <j> <H> <M> <I> : "ﾐ"  UFF90  # HALFWIDTH KATAKANA LETTER MI
+<Multi_key> <j> <H> <M> <U> : "ﾑ"  UFF91  # HALFWIDTH KATAKANA LETTER MU
+<Multi_key> <j> <H> <M> <E> : "ﾒ"  UFF92  # HALFWIDTH KATAKANA LETTER ME
+<Multi_key> <j> <H> <M> <O> : "ﾓ"  UFF93  # HALFWIDTH KATAKANA LETTER MO
+<Multi_key> <j> <H> <Y> <A> : "ﾔ"  UFF94  # HALFWIDTH KATAKANA LETTER YA
+<Multi_key> <j> <H> <Y> <U> : "ﾕ"  UFF95  # HALFWIDTH KATAKANA LETTER YU
+<Multi_key> <j> <H> <Y> <O> : "ﾖ"  UFF96  # HALFWIDTH KATAKANA LETTER YO
+<Multi_key> <j> <H> <R> <A> : "ﾗ"  UFF97  # HALFWIDTH KATAKANA LETTER RA
+<Multi_key> <j> <H> <R> <I> : "ﾘ"  UFF98  # HALFWIDTH KATAKANA LETTER RI
+<Multi_key> <j> <H> <R> <U> : "ﾙ"  UFF99  # HALFWIDTH KATAKANA LETTER RU
+<Multi_key> <j> <H> <R> <E> : "ﾚ"  UFF9A  # HALFWIDTH KATAKANA LETTER RE
+<Multi_key> <j> <H> <R> <O> : "ﾛ"  UFF9B  # HALFWIDTH KATAKANA LETTER RO
+<Multi_key> <j> <H> <W> <A> : "ﾜ"  UFF9C  # HALFWIDTH KATAKANA LETTER WA
+<Multi_key> <j> <H> <N> <N> : "ﾝ"  UFF9D  # HALFWIDTH KATAKANA LETTER N
+<Multi_key> <j> <H> <quotedbl> : "ﾞ"  UFF9E  # HALFWIDTH KATAKANA VOICED SOUND MARK
+<Multi_key> <j> <H> <o>     : "ﾟ"  UFF9F  # HALFWIDTH KATAKANA SEMI-VOICED SOUND MARK
+
 #####################
 # (k) Korean/Hangul #
 #####################
