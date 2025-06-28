@@ -12754,9 +12754,9 @@ include "%L"
 
 # 1 = initial, 2 = medial, 3 = final, j = jamo, c = precomposed syllables
 
-# TODO: include hangul syllables
+include "HangulSyllables"
 
-# (double letters represented by capitalisation)
+# jamo (double letters represented by capitalisation)
 
 <Multi_key> <k> <1> <g> : "ᄀ"  U1100   # HANGUL CHOSEONG KIYEOK
 <Multi_key> <k> <1> <G> : "ᄁ"  U1101   # HANGUL CHOSEONG SSANGKIYEOK
@@ -12896,74 +12896,74 @@ include "%L"
 
 # circled letters
 
-<Multi_key> <k> <c> <parenleft> <g> <parenright> : "㉠"  U3260  # CIRCLED HANGUL KIYEOK
-<Multi_key> <k> <c> <parenleft> <n> <parenright> : "㉡"  U3261  # CIRCLED HANGUL NIEUN
-<Multi_key> <k> <c> <parenleft> <d> <parenright> : "㉢"  U3262  # CIRCLED HANGUL TIKEUT
-<Multi_key> <k> <c> <parenleft> <l> <parenright> : "㉣"  U3263  # CIRCLED HANGUL RIEUL
-<Multi_key> <k> <c> <parenleft> <m> <parenright> : "㉤"  U3264  # CIRCLED HANGUL MIEUM
-<Multi_key> <k> <c> <parenleft> <b> <parenright> : "㉥"  U3265  # CIRCLED HANGUL PIEUP
-<Multi_key> <k> <c> <parenleft> <s> <parenright> : "㉦"  U3266  # CIRCLED HANGUL SIOS
-<Multi_key> <k> <c> <parenleft> <0> <parenright> : "㉧"  U3267  # CIRCLED HANGUL IEUNG
-<Multi_key> <k> <c> <parenleft> <n> <g> <parenright> : "㉧"  U3267  # CIRCLED HANGUL IEUNG
-<Multi_key> <k> <c> <parenleft> <j> <parenright> : "㉨"  U3268  # CIRCLED HANGUL CIEUC
-<Multi_key> <k> <c> <parenleft> <c> <parenright> : "㉩"  U3269  # CIRCLED HANGUL CHIEUCH
-<Multi_key> <k> <c> <parenleft> <k> <parenright> : "㉪"  U326A  # CIRCLED HANGUL KHIEUKH
-<Multi_key> <k> <c> <parenleft> <t> <parenright> : "㉫"  U326B  # CIRCLED HANGUL THIEUTH
-<Multi_key> <k> <c> <parenleft> <p> <parenright> : "㉬"  U326C  # CIRCLED HANGUL PHIEUPH
-<Multi_key> <k> <c> <parenleft> <h> <parenright> : "㉭"  U326D  # CIRCLED HANGUL HIEUH
-<Multi_key> <k> <c> <parenleft> <g> <a> <parenright> : "㉮"  U326E  # CIRCLED HANGUL KIYEOK A
-<Multi_key> <k> <c> <parenleft> <n> <a> <parenright> : "㉯"  U326F  # CIRCLED HANGUL NIEUN A
-<Multi_key> <k> <c> <parenleft> <d> <a> <parenright> : "㉰"  U3270  # CIRCLED HANGUL TIKEUT A
-<Multi_key> <k> <c> <parenleft> <l> <a> <parenright> : "㉱"  U3271  # CIRCLED HANGUL RIEUL A
-<Multi_key> <k> <c> <parenleft> <m> <a> <parenright> : "㉲"  U3272  # CIRCLED HANGUL MIEUM A
-<Multi_key> <k> <c> <parenleft> <b> <a> <parenright> : "㉳"  U3273  # CIRCLED HANGUL PIEUP A
-<Multi_key> <k> <c> <parenleft> <s> <a> <parenright> : "㉴"  U3274  # CIRCLED HANGUL SIOS A
-<Multi_key> <k> <c> <parenleft> <0> <a> <parenright> : "㉵"  U3275  # CIRCLED HANGUL IEUNG A
-<Multi_key> <k> <c> <parenleft> <n> <g> <a> <parenright> : "㉵"  U3275  # CIRCLED HANGUL IEUNG A
-<Multi_key> <k> <c> <parenleft> <j> <a> <parenright> : "㉶"  U3276  # CIRCLED HANGUL CIEUC A
-<Multi_key> <k> <c> <parenleft> <c> <a> <parenright> : "㉷"  U3277  # CIRCLED HANGUL CHIEUCH A
-<Multi_key> <k> <c> <parenleft> <k> <a> <parenright> : "㉸"  U3278  # CIRCLED HANGUL KHIEUKH A
-<Multi_key> <k> <c> <parenleft> <t> <a> <parenright> : "㉹"  U3279  # CIRCLED HANGUL THIEUTH A
-<Multi_key> <k> <c> <parenleft> <p> <a> <parenright> : "㉺"  U327A  # CIRCLED HANGUL PHIEUPH A
-<Multi_key> <k> <c> <parenleft> <h> <a> <parenright> : "㉻"  U327B  # CIRCLED HANGUL HIEUH A
-<Multi_key> <k> <c> <parenleft> <c> <h> <a> <m> <g> <o> <parenright> : "㉼"  U327C  # CIRCLED KOREAN CHARACTER CHAMKO
-<Multi_key> <k> <c> <parenleft> <j> <u> <u> <i> <parenright> : "㉽"  U327D  # CIRCLED KOREAN CHARACTER JUEUI
-<Multi_key> <k> <c> <parenleft> <0> <u> <parenright> : "㉾"  U327E  # CIRCLED HANGUL IEUNG U
-<Multi_key> <k> <c> <parenleft> <n> <g> <u> <parenright> : "㉾"  U327E  # CIRCLED HANGUL IEUNG U
+<Multi_key> <k> <j> <parenleft> <g> <parenright> : "㉠"  U3260  # CIRCLED HANGUL KIYEOK
+<Multi_key> <k> <j> <parenleft> <n> <parenright> : "㉡"  U3261  # CIRCLED HANGUL NIEUN
+<Multi_key> <k> <j> <parenleft> <d> <parenright> : "㉢"  U3262  # CIRCLED HANGUL TIKEUT
+<Multi_key> <k> <j> <parenleft> <l> <parenright> : "㉣"  U3263  # CIRCLED HANGUL RIEUL
+<Multi_key> <k> <j> <parenleft> <m> <parenright> : "㉤"  U3264  # CIRCLED HANGUL MIEUM
+<Multi_key> <k> <j> <parenleft> <b> <parenright> : "㉥"  U3265  # CIRCLED HANGUL PIEUP
+<Multi_key> <k> <j> <parenleft> <s> <parenright> : "㉦"  U3266  # CIRCLED HANGUL SIOS
+<Multi_key> <k> <j> <parenleft> <0> <parenright> : "㉧"  U3267  # CIRCLED HANGUL IEUNG
+<Multi_key> <k> <j> <parenleft> <n> <g> <parenright> : "㉧"  U3267  # CIRCLED HANGUL IEUNG
+<Multi_key> <k> <j> <parenleft> <j> <parenright> : "㉨"  U3268  # CIRCLED HANGUL CIEUC
+<Multi_key> <k> <j> <parenleft> <c> <parenright> : "㉩"  U3269  # CIRCLED HANGUL CHIEUCH
+<Multi_key> <k> <j> <parenleft> <k> <parenright> : "㉪"  U326A  # CIRCLED HANGUL KHIEUKH
+<Multi_key> <k> <j> <parenleft> <t> <parenright> : "㉫"  U326B  # CIRCLED HANGUL THIEUTH
+<Multi_key> <k> <j> <parenleft> <p> <parenright> : "㉬"  U326C  # CIRCLED HANGUL PHIEUPH
+<Multi_key> <k> <j> <parenleft> <h> <parenright> : "㉭"  U326D  # CIRCLED HANGUL HIEUH
+<Multi_key> <k> <j> <parenleft> <g> <a> <parenright> : "㉮"  U326E  # CIRCLED HANGUL KIYEOK A
+<Multi_key> <k> <j> <parenleft> <n> <a> <parenright> : "㉯"  U326F  # CIRCLED HANGUL NIEUN A
+<Multi_key> <k> <j> <parenleft> <d> <a> <parenright> : "㉰"  U3270  # CIRCLED HANGUL TIKEUT A
+<Multi_key> <k> <j> <parenleft> <l> <a> <parenright> : "㉱"  U3271  # CIRCLED HANGUL RIEUL A
+<Multi_key> <k> <j> <parenleft> <m> <a> <parenright> : "㉲"  U3272  # CIRCLED HANGUL MIEUM A
+<Multi_key> <k> <j> <parenleft> <b> <a> <parenright> : "㉳"  U3273  # CIRCLED HANGUL PIEUP A
+<Multi_key> <k> <j> <parenleft> <s> <a> <parenright> : "㉴"  U3274  # CIRCLED HANGUL SIOS A
+<Multi_key> <k> <j> <parenleft> <0> <a> <parenright> : "㉵"  U3275  # CIRCLED HANGUL IEUNG A
+<Multi_key> <k> <j> <parenleft> <n> <g> <a> <parenright> : "㉵"  U3275  # CIRCLED HANGUL IEUNG A
+<Multi_key> <k> <j> <parenleft> <j> <a> <parenright> : "㉶"  U3276  # CIRCLED HANGUL CIEUC A
+<Multi_key> <k> <j> <parenleft> <c> <a> <parenright> : "㉷"  U3277  # CIRCLED HANGUL CHIEUCH A
+<Multi_key> <k> <j> <parenleft> <k> <a> <parenright> : "㉸"  U3278  # CIRCLED HANGUL KHIEUKH A
+<Multi_key> <k> <j> <parenleft> <t> <a> <parenright> : "㉹"  U3279  # CIRCLED HANGUL THIEUTH A
+<Multi_key> <k> <j> <parenleft> <p> <a> <parenright> : "㉺"  U327A  # CIRCLED HANGUL PHIEUPH A
+<Multi_key> <k> <j> <parenleft> <h> <a> <parenright> : "㉻"  U327B  # CIRCLED HANGUL HIEUH A
+<Multi_key> <k> <j> <parenleft> <c> <h> <a> <m> <g> <o> <parenright> : "㉼"  U327C  # CIRCLED KOREAN CHARACTER CHAMKO
+<Multi_key> <k> <j> <parenleft> <j> <u> <u> <i> <parenright> : "㉽"  U327D  # CIRCLED KOREAN CHARACTER JUEUI
+<Multi_key> <k> <j> <parenleft> <0> <u> <parenright> : "㉾"  U327E  # CIRCLED HANGUL IEUNG U
+<Multi_key> <k> <j> <parenleft> <n> <g> <u> <parenright> : "㉾"  U327E  # CIRCLED HANGUL IEUNG U
 
-<Multi_key> <k> <c> <asciitilde> <parenleft> <g> <parenright> : "㈀"  U3200  # PARENTHESIZED HANGUL KIYEOK
-<Multi_key> <k> <c> <asciitilde> <parenleft> <n> <parenright> : "㈁"  U3201  # PARENTHESIZED HANGUL NIEUN
-<Multi_key> <k> <c> <asciitilde> <parenleft> <d> <parenright> : "㈂"  U3202  # PARENTHESIZED HANGUL TIKEUT
-<Multi_key> <k> <c> <asciitilde> <parenleft> <l> <parenright> : "㈃"  U3203  # PARENTHESIZED HANGUL RIEUL
-<Multi_key> <k> <c> <asciitilde> <parenleft> <m> <parenright> : "㈄"  U3204  # PARENTHESIZED HANGUL MIEUM
-<Multi_key> <k> <c> <asciitilde> <parenleft> <b> <parenright> : "㈅"  U3205  # PARENTHESIZED HANGUL PIEUP
-<Multi_key> <k> <c> <asciitilde> <parenleft> <s> <parenright> : "㈆"  U3206  # PARENTHESIZED HANGUL SIOS
-<Multi_key> <k> <c> <asciitilde> <parenleft> <0> <parenright> : "㈇"  U3207  # PARENTHESIZED HANGUL IEUNG
-<Multi_key> <k> <c> <asciitilde> <parenleft> <n> <g> <parenright> : "㈇"  U3207  # PARENTHESIZED HANGUL IEUNG
-<Multi_key> <k> <c> <asciitilde> <parenleft> <j> <parenright> : "㈈"  U3208  # PARENTHESIZED HANGUL CIEUC
-<Multi_key> <k> <c> <asciitilde> <parenleft> <c> <parenright> : "㈉"  U3209  # PARENTHESIZED HANGUL CHIEUCH
-<Multi_key> <k> <c> <asciitilde> <parenleft> <k> <parenright> : "㈊"  U320A  # PARENTHESIZED HANGUL KHIEUKH
-<Multi_key> <k> <c> <asciitilde> <parenleft> <t> <parenright> : "㈋"  U320B  # PARENTHESIZED HANGUL THIEUTH
-<Multi_key> <k> <c> <asciitilde> <parenleft> <p> <parenright> : "㈌"  U320C  # PARENTHESIZED HANGUL PHIEUPH
-<Multi_key> <k> <c> <asciitilde> <parenleft> <h> <parenright> : "㈍"  U320D  # PARENTHESIZED HANGUL HIEUH
-<Multi_key> <k> <c> <asciitilde> <parenleft> <g> <a> <parenright> : "㈎"  U320E  # PARENTHESIZED HANGUL KIYEOK A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <n> <a> <parenright> : "㈏"  U320F  # PARENTHESIZED HANGUL NIEUN A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <d> <a> <parenright> : "㈐"  U3210  # PARENTHESIZED HANGUL TIKEUT A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <l> <a> <parenright> : "㈑"  U3211  # PARENTHESIZED HANGUL RIEUL A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <m> <a> <parenright> : "㈒"  U3212  # PARENTHESIZED HANGUL MIEUM A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <b> <a> <parenright> : "㈓"  U3213  # PARENTHESIZED HANGUL PIEUP A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <s> <a> <parenright> : "㈔"  U3214  # PARENTHESIZED HANGUL SIOS A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <0> <a> <parenright> : "㈕"  U3215  # PARENTHESIZED HANGUL IEUNG A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <n> <g> <a> <parenright> : "㈕"  U3215  # PARENTHESIZED HANGUL IEUNG A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <j> <a> <parenright> : "㈖"  U3216  # PARENTHESIZED HANGUL CIEUC A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <c> <a> <parenright> : "㈗"  U3217  # PARENTHESIZED HANGUL CHIEUCH A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <k> <a> <parenright> : "㈘"  U3218  # PARENTHESIZED HANGUL KHIEUKH A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <t> <a> <parenright> : "㈙"  U3219  # PARENTHESIZED HANGUL THIEUTH A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <p> <a> <parenright> : "㈚"  U321A  # PARENTHESIZED HANGUL PHIEUPH A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <h> <a> <parenright> : "㈛"  U321B  # PARENTHESIZED HANGUL HIEUH A
-<Multi_key> <k> <c> <asciitilde> <parenleft> <j> <u> <parenright> : "㈜"  U321C  # PARENTHESIZED HANGUL CIEUC U
-<Multi_key> <k> <c> <asciitilde> <parenleft> <A> <M> <parenright> : "㈝"  U321D  # PARENTHESIZED KOREAN CHARACTER OJEON (AM)
-<Multi_key> <k> <c> <asciitilde> <parenleft> <P> <M> <parenright> : "㈞"  U321E  # PARENTHESIZED KOREAN CHARACTER O HU (PM)
+<Multi_key> <k> <j> <asciitilde> <parenleft> <g> <parenright> : "㈀"  U3200  # PARENTHESIZED HANGUL KIYEOK
+<Multi_key> <k> <j> <asciitilde> <parenleft> <n> <parenright> : "㈁"  U3201  # PARENTHESIZED HANGUL NIEUN
+<Multi_key> <k> <j> <asciitilde> <parenleft> <d> <parenright> : "㈂"  U3202  # PARENTHESIZED HANGUL TIKEUT
+<Multi_key> <k> <j> <asciitilde> <parenleft> <l> <parenright> : "㈃"  U3203  # PARENTHESIZED HANGUL RIEUL
+<Multi_key> <k> <j> <asciitilde> <parenleft> <m> <parenright> : "㈄"  U3204  # PARENTHESIZED HANGUL MIEUM
+<Multi_key> <k> <j> <asciitilde> <parenleft> <b> <parenright> : "㈅"  U3205  # PARENTHESIZED HANGUL PIEUP
+<Multi_key> <k> <j> <asciitilde> <parenleft> <s> <parenright> : "㈆"  U3206  # PARENTHESIZED HANGUL SIOS
+<Multi_key> <k> <j> <asciitilde> <parenleft> <0> <parenright> : "㈇"  U3207  # PARENTHESIZED HANGUL IEUNG
+<Multi_key> <k> <j> <asciitilde> <parenleft> <n> <g> <parenright> : "㈇"  U3207  # PARENTHESIZED HANGUL IEUNG
+<Multi_key> <k> <j> <asciitilde> <parenleft> <j> <parenright> : "㈈"  U3208  # PARENTHESIZED HANGUL CIEUC
+<Multi_key> <k> <j> <asciitilde> <parenleft> <c> <parenright> : "㈉"  U3209  # PARENTHESIZED HANGUL CHIEUCH
+<Multi_key> <k> <j> <asciitilde> <parenleft> <k> <parenright> : "㈊"  U320A  # PARENTHESIZED HANGUL KHIEUKH
+<Multi_key> <k> <j> <asciitilde> <parenleft> <t> <parenright> : "㈋"  U320B  # PARENTHESIZED HANGUL THIEUTH
+<Multi_key> <k> <j> <asciitilde> <parenleft> <p> <parenright> : "㈌"  U320C  # PARENTHESIZED HANGUL PHIEUPH
+<Multi_key> <k> <j> <asciitilde> <parenleft> <h> <parenright> : "㈍"  U320D  # PARENTHESIZED HANGUL HIEUH
+<Multi_key> <k> <j> <asciitilde> <parenleft> <g> <a> <parenright> : "㈎"  U320E  # PARENTHESIZED HANGUL KIYEOK A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <n> <a> <parenright> : "㈏"  U320F  # PARENTHESIZED HANGUL NIEUN A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <d> <a> <parenright> : "㈐"  U3210  # PARENTHESIZED HANGUL TIKEUT A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <l> <a> <parenright> : "㈑"  U3211  # PARENTHESIZED HANGUL RIEUL A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <m> <a> <parenright> : "㈒"  U3212  # PARENTHESIZED HANGUL MIEUM A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <b> <a> <parenright> : "㈓"  U3213  # PARENTHESIZED HANGUL PIEUP A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <s> <a> <parenright> : "㈔"  U3214  # PARENTHESIZED HANGUL SIOS A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <0> <a> <parenright> : "㈕"  U3215  # PARENTHESIZED HANGUL IEUNG A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <n> <g> <a> <parenright> : "㈕"  U3215  # PARENTHESIZED HANGUL IEUNG A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <j> <a> <parenright> : "㈖"  U3216  # PARENTHESIZED HANGUL CIEUC A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <c> <a> <parenright> : "㈗"  U3217  # PARENTHESIZED HANGUL CHIEUCH A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <k> <a> <parenright> : "㈘"  U3218  # PARENTHESIZED HANGUL KHIEUKH A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <t> <a> <parenright> : "㈙"  U3219  # PARENTHESIZED HANGUL THIEUTH A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <p> <a> <parenright> : "㈚"  U321A  # PARENTHESIZED HANGUL PHIEUPH A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <h> <a> <parenright> : "㈛"  U321B  # PARENTHESIZED HANGUL HIEUH A
+<Multi_key> <k> <j> <asciitilde> <parenleft> <j> <u> <parenright> : "㈜"  U321C  # PARENTHESIZED HANGUL CIEUC U
+<Multi_key> <k> <j> <asciitilde> <parenleft> <A> <M> <parenright> : "㈝"  U321D  # PARENTHESIZED KOREAN CHARACTER OJEON (AM)
+<Multi_key> <k> <j> <asciitilde> <parenleft> <P> <M> <parenright> : "㈞"  U321E  # PARENTHESIZED KOREAN CHARACTER O HU (PM)
 
 # obsolete ligatures (double letters spelled out explicitly)
 
