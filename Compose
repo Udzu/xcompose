@@ -12754,6 +12754,8 @@ include "%L"
 
 # 1 = initial, 2 = medial, 3 = final, c = standalone
 
+# (double letters represented by capitalisation)
+
 <Multi_key> <k> <1> <g> : "ᄀ"  U1100   # HANGUL CHOSEONG KIYEOK
 <Multi_key> <k> <1> <G> : "ᄁ"  U1101   # HANGUL CHOSEONG SSANGKIYEOK
 <Multi_key> <k> <1> <n> : "ᄂ"  U1102   # HANGUL CHOSEONG NIEUN
@@ -12774,6 +12776,7 @@ include "%L"
 <Multi_key> <k> <1> <t> : "ᄐ"  U1110   # HANGUL CHOSEONG THIEUTH
 <Multi_key> <k> <1> <p> : "ᄑ"  U1111   # HANGUL CHOSEONG PHIEUPH
 <Multi_key> <k> <1> <h> : "ᄒ"  U1112   # HANGUL CHOSEONG HIEUH
+<Multi_key> <k> <1> <space> : "ᅟ"  U115F  # HANGUL CHOSEONG FILLER
 
 <Multi_key> <k> <2> <a> <space>      : "ᅡ"  U1161   # HANGUL JUNGSEONG A
 <Multi_key> <k> <2> <a> <e>          : "ᅢ"  U1162   # HANGUL JUNGSEONG AE
@@ -12796,10 +12799,11 @@ include "%L"
 <Multi_key> <k> <2> <e> <u>          : "ᅳ"  U1173   # HANGUL JUNGSEONG EU
 <Multi_key> <k> <2> <y> <i>          : "ᅴ"  U1174   # HANGUL JUNGSEONG YI
 <Multi_key> <k> <2> <i>              : "ᅵ"  U1175   # HANGUL JUNGSEONG I
+<Multi_key> <k> <2> <space>          : "ᅠ"  U1160   # HANGUL JUNGSEONG FILLER
 
 <Multi_key> <k> <3> <g> <space>  : "ᆨ"  U11A8   # HANGUL JONGSEONG KIYEOK
-<Multi_key> <k> <3> <g> <g>      : "ᆩ"  U11A9   # HANGUL JONGSEONG SSANGKIYEOK
 <Multi_key> <k> <3> <G>          : "ᆩ"  U11A9   # HANGUL JONGSEONG SSANGKIYEOK
+<Multi_key> <k> <3> <g> <g>      : "ᆩ"  U11A9   # HANGUL JONGSEONG SSANGKIYEOK
 <Multi_key> <k> <3> <g> <s>      : "ᆪ"  U11AA   # HANGUL JONGSEONG KIYEOK-SIOS
 <Multi_key> <k> <3> <n> <space>  : "ᆫ"  U11AB   # HANGUL JONGSEONG NIEUN
 <Multi_key> <k> <3> <n> <j>      : "ᆬ"  U11AC   # HANGUL JONGSEONG NIEUN-CIEUC
@@ -12828,8 +12832,8 @@ include "%L"
 <Multi_key> <k> <3> <h>          : "ᇂ"  U11C2   # HANGUL JONGSEONG HIEUH
 
 <Multi_key> <k> <c> <g> <space>  : "ㄱ"  U3131   # HANGUL LETTER KIYEOK
-<Multi_key> <k> <c> <g> <g>      : "ㄲ"  U3132   # HANGUL LETTER SSANGKIYEOK
 <Multi_key> <k> <c> <G>          : "ㄲ"  U3132   # HANGUL LETTER SSANGKIYEOK
+<Multi_key> <k> <c> <g> <g>      : "ㄲ"  U3132   # HANGUL LETTER SSANGKIYEOK
 <Multi_key> <k> <c> <g> <s>      : "ㄳ"  U3133   # HANGUL LETTER KIYEOK-SIOS
 <Multi_key> <k> <c> <n> <space>  : "ㄴ"  U3134   # HANGUL LETTER NIEUN
 <Multi_key> <k> <c> <n> <j>      : "ㄵ"  U3135   # HANGUL LETTER NIEUN-CIEUC
@@ -12846,8 +12850,8 @@ include "%L"
 <Multi_key> <k> <c> <l> <h>      : "ㅀ"  U3140   # HANGUL LETTER RIEUL-HIEUH
 <Multi_key> <k> <c> <m>          : "ㅁ"  U3141   # HANGUL LETTER MIEUM
 <Multi_key> <k> <c> <b> <space>  : "ㅂ"  U3142   # HANGUL LETTER PIEUP
-<Multi_key> <k> <c> <b> <b>      : "ㅃ"  U3143   # HANGUL LETTER SSANGPIEUP
 <Multi_key> <k> <c> <B>          : "ㅃ"  U3143   # HANGUL LETTER SSANGPIEUP
+<Multi_key> <k> <c> <b> <b>      : "ㅃ"  U3143   # HANGUL LETTER SSANGPIEUP
 <Multi_key> <k> <c> <b> <s>      : "ㅄ"  U3144   # HANGUL LETTER PIEUP-SIOS
 <Multi_key> <k> <c> <s>          : "ㅅ"  U3145   # HANGUL LETTER SIOS
 <Multi_key> <k> <c> <S>          : "ㅆ"  U3146   # HANGUL LETTER SSANGSIOS
@@ -12882,6 +12886,11 @@ include "%L"
 <Multi_key> <k> <c> <e> <u>          : "ㅡ"  U3161   # HANGUL LETTER EU
 <Multi_key> <k> <c> <y> <i>          : "ㅢ"  U3162   # HANGUL LETTER YI
 <Multi_key> <k> <c> <i>              : "ㅣ"  U3163   # HANGUL LETTER I
+
+# punctuation
+
+<Multi_key> <k> <semicolon> <period> <Return> : "〮"  U302E  # HANGUL SINGLE DOT TONE MARK
+<Multi_key> <k> <semicolon> <colon> <Return> : "〯"  U302F  # HANGUL DOUBLE DOT TONE MARK
 
 # circled letters
 
@@ -12951,8 +12960,10 @@ include "%L"
 <Multi_key> <k> <c> <asciitilde> <parenleft> <p> <a> <parenright> : "㈚"  U321A  # PARENTHESIZED HANGUL PHIEUPH A
 <Multi_key> <k> <c> <asciitilde> <parenleft> <h> <a> <parenright> : "㈛"  U321B  # PARENTHESIZED HANGUL HIEUH A
 <Multi_key> <k> <c> <asciitilde> <parenleft> <j> <u> <parenright> : "㈜"  U321C  # PARENTHESIZED HANGUL CIEUC U
+<Multi_key> <k> <c> <asciitilde> <parenleft> <A> <M> <parenright> : "㈝"  U321D  # PARENTHESIZED KOREAN CHARACTER OJEON (AM)
+<Multi_key> <k> <c> <asciitilde> <parenleft> <P> <M> <parenright> : "㈞"  U321E  # PARENTHESIZED KOREAN CHARACTER O HU (PM)
 
-# obsolete ligatures
+# obsolete ligatures (double letters spelled out explicitly)
 
 <Multi_key> <k> <1> <braceleft> <n> <g> <braceright> : "ᄓ"  U1113  # HANGUL CHOSEONG NIEUN-KIYEOK
 <Multi_key> <k> <1> <braceleft> <n> <n> <braceright> : "ᄔ"  U1114  # HANGUL CHOSEONG SSANGNIEUN
@@ -13264,8 +13275,6 @@ include "%L"
 <Multi_key> <k> <c> <braceleft> <s> <b> <braceright> : "ㅽ"  U317D  # HANGUL LETTER SIOS-PIEUP
 <Multi_key> <k> <c> <braceleft> <s> <j> <braceright> : "ㅾ"  U317E  # HANGUL LETTER SIOS-CIEUC
 <Multi_key> <k> <c> <braceleft> <0> <0> <braceright> : "ㆀ"  U3180  # HANGUL LETTER SSANGIEUNG
-<Multi_key> <k> <c> <braceleft> <0> <n> <g> <braceright> : "ㆀ"  U3180  # HANGUL LETTER SSANGIEUNG
-<Multi_key> <k> <c> <braceleft> <n> <g> <0> <braceright> : "ㆀ"  U3180  # HANGUL LETTER SSANGIEUNG
 <Multi_key> <k> <c> <braceleft> <n> <g> <n> <g> <braceright> : "ㆀ"  U3180  # HANGUL LETTER SSANGIEUNG
 <Multi_key> <k> <c> <braceleft> <p> <0> <braceright> : "ㆄ"  U3184  # HANGUL LETTER KAPYEOUNPHIEUPH
 <Multi_key> <k> <c> <braceleft> <p> <n> <g> <braceright> : "ㆄ"  U3184  # HANGUL LETTER KAPYEOUNPHIEUPH
@@ -13277,8 +13286,71 @@ include "%L"
 <Multi_key> <k> <c> <braceleft> <y> <u> <y> <e> <braceright> : "ㆋ"  U318B  # HANGUL LETTER YU-YE
 <Multi_key> <k> <c> <braceleft> <y> <u> <i> <braceright> : "ㆌ"  U318C  # HANGUL LETTER YU-I
 
+# obsolete letterforms
+
+<Multi_key> <k> <1> <less> <s> : "ᄼ"  U113C  # HANGUL CHOSEONG CHITUEUMSIOS
+<Multi_key> <k> <1> <greater> <s> : "ᄾ"  U113E  # HANGUL CHOSEONG CEONGCHIEUMSIOS
+<Multi_key> <k> <1> <less> <j> : "ᅎ"  U114E  # HANGUL CHOSEONG CHITUEUMCIEUC
+<Multi_key> <k> <1> <greater> <j> : "ᅐ"  U1150  # HANGUL CHOSEONG CEONGCHIEUMCIEUC
+<Multi_key> <k> <1> <less> <c> : "ᅔ"  U1154  # HANGUL CHOSEONG CHITUEUMCHIEUCH
+<Multi_key> <k> <1> <greater> <c> : "ᅕ"  U1155  # HANGUL CHOSEONG CEONGCHIEUMCHIEUCH
+<Multi_key> <k> <1> <z> : "ᅀ"  U1140  # HANGUL CHOSEONG PANSIOS
+<Multi_key> <k> <1> <apostrophe> <o> : "ᅌ"  U114C  # HANGUL CHOSEONG YESIEUNG
+<Multi_key> <k> <1> <minus> <o> : "ᅙ"  U1159  # HANGUL CHOSEONG YEORINHIEUH
+
+<Multi_key> <k> <2> <e> <e> : "ᆞ"  U119E  # HANGUL JUNGSEONG ARAEA
+
+<Multi_key> <k> <3> <z> : "ᇫ"  U11EB  # HANGUL JONGSEONG PANSIOS
+<Multi_key> <k> <3> <apostrophe> <o> : "ᇰ"  U11F0  # HANGUL JONGSEONG YESIEUNG
+<Multi_key> <k> <3> <minus> <o> : "ᇹ"  U11F9  # HANGUL JONGSEONG YEORINHIEUH
+
+<Multi_key> <k> <c> <z> : "ㅿ"  U317F  # HANGUL LETTER PANSIOS
+<Multi_key> <k> <c> <apostrophe> <o> : "ㆁ"  U3181  # HANGUL LETTER YESIEUNG
+<Multi_key> <k> <c> <minus> <o> : "ㆆ"  U3186  # HANGUL LETTER YEORINHIEUH
+<Multi_key> <k> <c> <e> <e> : "ㆍ"  U318D  # HANGUL LETTER ARAEA
+
+<Multi_key> <k> <1> <braceleft> <less> <s> <less> <s> <braceright> : "ᄽ"  U113D  # HANGUL CHOSEONG CHITUEUMSSANGSIOS
+<Multi_key> <k> <1> <braceleft> <greater> <s> <greater> <s> <braceright> : "ᄿ"  U113F  # HANGUL CHOSEONG CEONGCHIEUMSSANGSIOS
+<Multi_key> <k> <1> <braceleft> <0> <z> <braceright> : "ᅆ"  U1146  # HANGUL CHOSEONG IEUNG-PANSIOS
+<Multi_key> <k> <1> <braceleft> <o> <z> <braceright> : "ᅆ"  U1146  # HANGUL CHOSEONG IEUNG-PANSIOS
+<Multi_key> <k> <1> <braceleft> <less> <j> <less> <j> <braceright> : "ᅏ"  U114F  # HANGUL CHOSEONG CHITUEUMSSANGCIEUC
+<Multi_key> <k> <1> <braceleft> <greater> <j> <greater> <j> <braceright> : "ᅑ"  U1151  # HANGUL CHOSEONG CEONGCHIEUMSSANGCIEUC
+<Multi_key> <k> <1> <braceleft> <minus> <o> <minus> <o> <braceright> : "ꥼ"  UA97C  # HANGUL CHOSEONG SSANGYEORINHIEUH
+
+<Multi_key> <k> <2> <braceleft> <i> <e> <e> <braceright> : "ᆝ"  U119D  # HANGUL JUNGSEONG I-ARAEA
+<Multi_key> <k> <2> <braceleft> <e> <e> <e> <o> <braceright> : "ᆟ"  U119F  # HANGUL JUNGSEONG ARAEA-EO
+<Multi_key> <k> <2> <braceleft> <e> <e> <u> <braceright> : "ᆠ"  U11A0  # HANGUL JUNGSEONG ARAEA-U
+<Multi_key> <k> <2> <braceleft> <e> <e> <i> <braceright> : "ᆡ"  U11A1  # HANGUL JUNGSEONG ARAEA-I
+<Multi_key> <k> <2> <braceleft> <e> <e> <e> <e> <braceright> : "ᆢ"  U11A2  # HANGUL JUNGSEONG SSANGARAEA
+<Multi_key> <k> <c> <braceleft> <e> <e> <i> <braceright> : "ㆎ"  U318E  # HANGUL LETTER ARAEAE
+<Multi_key> <k> <2> <braceleft> <e> <e> <a> <braceright> : "ퟅ"  UD7C5  # HANGUL JUNGSEONG ARAEA-A
+<Multi_key> <k> <2> <braceleft> <e> <e> <e> <braceright> : "ퟆ"  UD7C6  # HANGUL JUNGSEONG ARAEA-E
+
+<Multi_key> <k> <3> <braceleft> <n> <z> <braceright> : "ᇈ"  U11C8  # HANGUL JONGSEONG NIEUN-PANSIOS
+<Multi_key> <k> <3> <braceleft> <l> <z> <braceright> : "ᇗ"  U11D7  # HANGUL JONGSEONG RIEUL-PANSIOS
+<Multi_key> <k> <3> <braceleft> <l> <minus> <o> <braceright> : "ᇙ"  U11D9  # HANGUL JONGSEONG RIEUL-YEORINHIEUH
+<Multi_key> <k> <3> <braceleft> <m> <z> <braceright> : "ᇟ"  U11DF  # HANGUL JONGSEONG MIEUM-PANSIOS
+<Multi_key> <k> <3> <braceleft> <apostrophe> <o> <s> <braceright> : "ᇱ"  U11F1  # HANGUL JONGSEONG YESIEUNG-SIOS
+<Multi_key> <k> <3> <braceleft> <apostrophe> <o> <z> <braceright> : "ᇲ"  U11F2  # HANGUL JONGSEONG YESIEUNG-PANSIOS
+<Multi_key> <k> <3> <braceleft> <l> <apostrophe> <o> <braceright> : "ퟛ"  UD7DB  # HANGUL JONGSEONG RIEUL-YESIEUNG
+<Multi_key> <k> <3> <braceleft> <l> <minus> <o> <h> <braceright> : "ퟜ"  UD7DC  # HANGUL JONGSEONG RIEUL-YEORINHIEUH-HIEUH
+<Multi_key> <k> <3> <braceleft> <apostrophe> <o> <m> <braceright> : "ퟵ"  UD7F5  # HANGUL JONGSEONG YESIEUNG-MIEUM
+<Multi_key> <k> <3> <braceleft> <apostrophe> <o> <h> <braceright> : "ퟶ"  UD7F6  # HANGUL JONGSEONG YESIEUNG-HIEUH
+
+<Multi_key> <k> <c> <braceleft> <n> <z> <braceright> : "ㅨ"  U3168  # HANGUL LETTER NIEUN-PANSIOS
+<Multi_key> <k> <c> <braceleft> <l> <z> <braceright> : "ㅬ"  U316C  # HANGUL LETTER RIEUL-PANSIOS
+<Multi_key> <k> <c> <braceleft> <l> <minus> <o> <braceright> : "ㅭ"  U316D  # HANGUL LETTER RIEUL-YEORINHIEUH
+<Multi_key> <k> <c> <braceleft> <m> <z> <braceright> : "ㅰ"  U3170  # HANGUL LETTER MIEUM-PANSIOS
+<Multi_key> <k> <c> <braceleft> <apostrophe> <o> <s> <braceright> : "ㆂ"  U3182  # HANGUL LETTER YESIEUNG-SIOS
+<Multi_key> <k> <c> <braceleft> <apostrophe> <o> <z> <braceright> : "ㆃ"  U3183  # HANGUL LETTER YESIEUNG-PANSIOS
+<Multi_key> <k> <3> <braceleft> <s> <z> <braceright> : "ퟮ"  UD7EE  # HANGUL JONGSEONG SIOS-PANSIOS
+<Multi_key> <k> <3> <braceleft> <z> <b> <braceright> : "ퟳ"  UD7F3  # HANGUL JONGSEONG PANSIOS-PIEUP
+<Multi_key> <k> <3> <braceleft> <z> <b> <o> <braceright> : "ퟴ"  UD7F4  # HANGUL JONGSEONG PANSIOS-KAPYEOUNPIEUP
+<Multi_key> <k> <3> <braceleft> <z> <b> <n> <g> <braceright> : "ퟴ"  UD7F4  # HANGUL JONGSEONG PANSIOS-KAPYEOUNPIEUP
+
 # (h = halfwidth)
 
+<Multi_key> <k> <h> <space>         : "ﾠ"  UFFA0  # HALFWIDTH HANGUL FILLER
 <Multi_key> <k> <h> <g> <space>     : "ﾡ"  UFFA1  # HALFWIDTH HANGUL LETTER KIYEOK
 <Multi_key> <k> <h> <g> <g>         : "ﾢ"  UFFA2  # HALFWIDTH HANGUL LETTER SSANGKIYEOK
 <Multi_key> <k> <h> <G>             : "ﾢ"  UFFA2  # HALFWIDTH HANGUL LETTER SSANGKIYEOK
