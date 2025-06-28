@@ -12659,9 +12659,33 @@ include "%L"
 <Multi_key> <j> <f> <bar>          : "｜" UFF5C    # FULLWIDTH VERTICAL LINE
 <Multi_key> <j> <f> <braceright>   : "｝" UFF5D    # FULLWIDTH RIGHT CURLY BRACKET
 <Multi_key> <j> <f> <asciitilde>   : "～" UFF5E    # FULLWIDTH TILDE
+<Multi_key> <j> <f> <Multi_key> <c> <bar> : "￠"  UFFE0  # FULLWIDTH CENT SIGN
+<Multi_key> <j> <f> <Multi_key> <bar> <c> : "￠"  UFFE0  # FULLWIDTH CENT SIGN
+<Multi_key> <j> <f> <sterling> : "￡"  UFFE1  # FULLWIDTH POUND SIGN
+<Multi_key> <j> <f> <Multi_key> <L> <minus> : "￡"  UFFE1  # FULLWIDTH POUND SIGN
+<Multi_key> <j> <f> <Multi_key> <minus> <L> : "￡"  UFFE1  # FULLWIDTH POUND SIGN
+<Multi_key> <j> <f> <notsign> : "￢"  UFFE2  # FULLWIDTH NOT SIGN
+<Multi_key> <j> <f> <Multi_key> <minus> <comma> : "￢"  UFFE2  # FULLWIDTH NOT SIGN
+<Multi_key> <j> <f> <Multi_key> <underscore> <space> : "￣"  UFFE3  # FULLWIDTH MACRON
+<Multi_key> <j> <f> <Multi_key> <minus> <asciicircum> : "￣"  UFFE3  # FULLWIDTH MACRON
+<Multi_key> <j> <f> <Multi_key> <exclam> <asciicircum> : "￤"  UFFE4  # FULLWIDTH BROKEN BAR
+<Multi_key> <j> <f> <Multi_key> <Y> <equal> : "￥"  UFFE5  # FULLWIDTH YEN SIGN
+<Multi_key> <j> <f> <Multi_key> <equal> <Y> : "￥"  UFFE5  # FULLWIDTH YEN SIGN
+<Multi_key> <j> <f> <Multi_key> <W> <minus> : "￦"  UFFE6  # FULLWIDTH WON SIGN
+<Multi_key> <j> <f> <Multi_key> <minus> <W> : "￦"  UFFE6  # FULLWIDTH WON SIGN
+<Multi_key> <j> <H> <Multi_key> <less> <minus> : "￩"  UFFE9  # HALFWIDTH LEFTWARDS ARROW
+<Multi_key> <j> <H> <Multi_key> <asciicircum> <bar> : "￪"  UFFEA  # HALFWIDTH UPWARDS ARROW
+<Multi_key> <j> <H> <Multi_key> <minus> <greater> : "￫"  UFFEB  # HALFWIDTH RIGHTWARDS ARROW
+<Multi_key> <j> <H> <Multi_key> <bar> <v> : "￬"  UFFEC  # HALFWIDTH DOWNWARDS ARROW
 
 # (H = halfwidth forms) (not ideal, but jh=ʝ is taken; fortunately these are all katakana)
 
+<Multi_key> <j> <H> <period> : "｡"  UFF61  # HALFWIDTH IDEOGRAPHIC FULL STOP
+<Multi_key> <j> <H> <less> <apostrophe> : "｢"  UFF62  # HALFWIDTH LEFT CORNER BRACKET
+<Multi_key> <j> <H> <greater> <apostrophe> : "｣"  UFF63  # HALFWIDTH RIGHT CORNER BRACKET
+<Multi_key> <j> <H> <comma> : "､"  UFF64  # HALFWIDTH IDEOGRAPHIC COMMA
+<Multi_key> <j> <H> <asciicircum> <period> : "･"  UFF65  # HALFWIDTH KATAKANA MIDDLE DOT
+<Multi_key> <j> <H> <W> <O> : "ｦ"  UFF66  # HALFWIDTH KATAKANA LETTER WO
 <Multi_key> <j> <H> <underscore> <A> : "ｧ"  UFF67  # HALFWIDTH KATAKANA LETTER SMALL A
 <Multi_key> <j> <H> <underscore> <I> : "ｨ"  UFF68  # HALFWIDTH KATAKANA LETTER SMALL I
 <Multi_key> <j> <H> <underscore> <U> : "ｩ"  UFF69  # HALFWIDTH KATAKANA LETTER SMALL U
@@ -13214,6 +13238,63 @@ include "%L"
 <Multi_key> <k> <3> <braceleft> <j> <j> <braceright> : "ퟹ"  UD7F9  # HANGUL JONGSEONG SSANGCIEUC
 <Multi_key> <k> <3> <braceleft> <p> <s> <braceright> : "ퟺ"  UD7FA  # HANGUL JONGSEONG PHIEUPH-SIOS
 <Multi_key> <k> <3> <braceleft> <p> <t> <braceright> : "ퟻ"  UD7FB  # HANGUL JONGSEONG PHIEUPH-THIEUTH
+
+# (h = halfwidth)
+
+<Multi_key> <k> <h> <g> <space>     : "ﾡ"  UFFA1  # HALFWIDTH HANGUL LETTER KIYEOK
+<Multi_key> <k> <h> <g> <g>         : "ﾢ"  UFFA2  # HALFWIDTH HANGUL LETTER SSANGKIYEOK
+<Multi_key> <k> <h> <G>             : "ﾢ"  UFFA2  # HALFWIDTH HANGUL LETTER SSANGKIYEOK
+<Multi_key> <k> <h> <g> <s>         : "ﾣ"  UFFA3  # HALFWIDTH HANGUL LETTER KIYEOK-SIOS
+<Multi_key> <k> <h> <n> <space>     : "ﾤ"  UFFA4  # HALFWIDTH HANGUL LETTER NIEUN
+<Multi_key> <k> <h> <n> <j>         : "ﾥ"  UFFA5  # HALFWIDTH HANGUL LETTER NIEUN-CIEUC
+<Multi_key> <k> <h> <n> <h>         : "ﾦ"  UFFA6  # HALFWIDTH HANGUL LETTER NIEUN-HIEUH
+<Multi_key> <k> <h> <d>             : "ﾧ"  UFFA7  # HALFWIDTH HANGUL LETTER TIKEUT
+<Multi_key> <k> <h> <D>             : "ﾨ"  UFFA8  # HALFWIDTH HANGUL LETTER SSANGTIKEUT
+<Multi_key> <k> <h> <l> <space>     : "ﾩ"  UFFA9  # HALFWIDTH HANGUL LETTER RIEUL
+<Multi_key> <k> <h> <l> <g>         : "ﾪ"  UFFAA  # HALFWIDTH HANGUL LETTER RIEUL-KIYEOK
+<Multi_key> <k> <h> <l> <m>         : "ﾫ"  UFFAB  # HALFWIDTH HANGUL LETTER RIEUL-MIEUM
+<Multi_key> <k> <h> <l> <b>         : "ﾬ"  UFFAC  # HALFWIDTH HANGUL LETTER RIEUL-PIEUP
+<Multi_key> <k> <h> <l> <s>         : "ﾭ"  UFFAD  # HALFWIDTH HANGUL LETTER RIEUL-SIOS
+<Multi_key> <k> <h> <l> <t>         : "ﾮ"  UFFAE  # HALFWIDTH HANGUL LETTER RIEUL-THIEUTH
+<Multi_key> <k> <h> <l> <p>         : "ﾯ"  UFFAF  # HALFWIDTH HANGUL LETTER RIEUL-PHIEUPH
+<Multi_key> <k> <h> <l> <h>         : "ﾰ"  UFFB0  # HALFWIDTH HANGUL LETTER RIEUL-HIEUH
+<Multi_key> <k> <h> <m>             : "ﾱ"  UFFB1  # HALFWIDTH HANGUL LETTER MIEUM
+<Multi_key> <k> <h> <b> <space>     : "ﾲ"  UFFB2  # HALFWIDTH HANGUL LETTER PIEUP
+<Multi_key> <k> <h> <b> <b>         : "ﾳ"  UFFB3  # HALFWIDTH HANGUL LETTER SSANGPIEUP
+<Multi_key> <k> <h> <B>             : "ﾳ"  UFFB3  # HALFWIDTH HANGUL LETTER SSANGPIEUP
+<Multi_key> <k> <h> <b> <s>         : "ﾴ"  UFFB4  # HALFWIDTH HANGUL LETTER PIEUP-SIOS
+<Multi_key> <k> <h> <s>             : "ﾵ"  UFFB5  # HALFWIDTH HANGUL LETTER SIOS
+<Multi_key> <k> <h> <S>             : "ﾶ"  UFFB6  # HALFWIDTH HANGUL LETTER SSANGSIOS
+<Multi_key> <k> <h> <0>             : "ﾷ"  UFFB7  # HALFWIDTH HANGUL LETTER IEUNG
+<Multi_key> <k> <h> <n> <g>         : "ﾷ"  UFFB7  # HALFWIDTH HANGUL LETTER IEUNG
+<Multi_key> <k> <h> <j>             : "ﾸ"  UFFB8  # HALFWIDTH HANGUL LETTER CIEUC
+<Multi_key> <k> <h> <J>             : "ﾹ"  UFFB9  # HALFWIDTH HANGUL LETTER SSANGCIEUC
+<Multi_key> <k> <h> <c>             : "ﾺ"  UFFBA  # HALFWIDTH HANGUL LETTER CHIEUCH
+<Multi_key> <k> <h> <k>             : "ﾻ"  UFFBB  # HALFWIDTH HANGUL LETTER KHIEUKH
+<Multi_key> <k> <h> <t>             : "ﾼ"  UFFBC  # HALFWIDTH HANGUL LETTER THIEUTH
+<Multi_key> <k> <h> <p>             : "ﾽ"  UFFBD  # HALFWIDTH HANGUL LETTER PHIEUPH
+<Multi_key> <k> <h> <h>             : "ﾾ"  UFFBE  # HALFWIDTH HANGUL LETTER HIEUH
+<Multi_key> <k> <h> <a> <space>     : "ￂ"  UFFC2  # HALFWIDTH HANGUL LETTER A
+<Multi_key> <k> <h> <a> <e>         : "ￃ"  UFFC3  # HALFWIDTH HANGUL LETTER AE
+<Multi_key> <k> <h> <y> <a> <space> : "ￄ"  UFFC4  # HALFWIDTH HANGUL LETTER YA
+<Multi_key> <k> <h> <y> <a> <e>     : "ￅ"  UFFC5  # HALFWIDTH HANGUL LETTER YAE
+<Multi_key> <k> <h> <e> <o>         : "ￆ"  UFFC6  # HALFWIDTH HANGUL LETTER EO
+<Multi_key> <k> <h> <e> <space>     : "ￇ"  UFFC7  # HALFWIDTH HANGUL LETTER E
+<Multi_key> <k> <h> <y> <e> <o>     : "ￊ"  UFFCA  # HALFWIDTH HANGUL LETTER YEO
+<Multi_key> <k> <h> <y> <e> <space> : "ￋ"  UFFCB  # HALFWIDTH HANGUL LETTER YE
+<Multi_key> <k> <h> <o> <space>     : "ￌ"  UFFCC  # HALFWIDTH HANGUL LETTER O
+<Multi_key> <k> <h> <w> <a> <space> : "ￍ"  UFFCD  # HALFWIDTH HANGUL LETTER WA
+<Multi_key> <k> <h> <w> <a> <e>     : "ￎ"  UFFCE  # HALFWIDTH HANGUL LETTER WAE
+<Multi_key> <k> <h> <o> <e>         : "ￏ"  UFFCF  # HALFWIDTH HANGUL LETTER OE
+<Multi_key> <k> <h> <y> <o>         : "ￒ"  UFFD2  # HALFWIDTH HANGUL LETTER YO
+<Multi_key> <k> <h> <u>             : "ￓ"  UFFD3  # HALFWIDTH HANGUL LETTER U
+<Multi_key> <k> <h> <w> <e> <o>     : "ￔ"  UFFD4  # HALFWIDTH HANGUL LETTER WEO
+<Multi_key> <k> <h> <w> <e> <space> : "ￕ"  UFFD5  # HALFWIDTH HANGUL LETTER WE
+<Multi_key> <k> <h> <w> <i>         : "ￖ"  UFFD6  # HALFWIDTH HANGUL LETTER WI
+<Multi_key> <k> <h> <y> <u>         : "ￗ"  UFFD7  # HALFWIDTH HANGUL LETTER YU
+<Multi_key> <k> <h> <e> <u>         : "ￚ"  UFFDA  # HALFWIDTH HANGUL LETTER EU
+<Multi_key> <k> <h> <y> <i>         : "ￛ"  UFFDB  # HALFWIDTH HANGUL LETTER YI
+<Multi_key> <k> <h> <i>             : "ￜ"  UFFDC  # HALFWIDTH HANGUL LETTER I
 
 ################################
 # (m) International Morse Code #
