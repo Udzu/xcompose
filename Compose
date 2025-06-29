@@ -3355,6 +3355,10 @@ include "%L"
 <Multi_key> <a> <semicolon> <asciitilde> <Return>     : "ٓ"  U0653  # ARABIC MADDAH ABOVE (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <2> <Return>              : "ٔ"  U0654  # ARABIC HAMZA ABOVE (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <underscore> <2> <Return> : "ٕ"  U0655  # ARABIC HAMZA BELOW (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <a> <n> <Return>          : "ً"  U064B  # ARABIC FATHATAN (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <i> <n> <Return>          : "ٍ"  U064D  # ARABIC KASRATAN (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <underscore> <i> <n> <Return> : "ٍ"  U064D  # ARABIC KASRATAN (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <u> <n> <Return>          : "ٌ"  U064C  # ARABIC DAMMATAN (conflicts with ą, use ,a)
 
 <Multi_key> <a> <semicolon> <a> <space>               : "ﹶ"  UFE76  # ARABIC FATHA ISOLATED FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <a> <period>              : "ﹷ"  UFE77  # ARABIC FATHA MEDIAL FORM (conflicts with ą)
@@ -3368,6 +3372,10 @@ include "%L"
 <Multi_key> <a> <semicolon> <w> <period>              : "ﹽ"  UFE7D  # ARABIC SHADDA MEDIAL FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <o> <space>               : "ﹾ"  UFE7E  # ARABIC SUKUN ISOLATED FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <o> <period>              : "ﹿ"  UFE7F  # ARABIC SUKUN MEDIAL FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <a> <n> <space>           : "ﹰ"  UFE70  # ARABIC FATHATAN ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <u> <n> <space>           : "ﹲ"  UFE72  # ARABIC DAMMATAN ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <i> <n> <space>           : "ﹴ"  UFE74  # ARABIC KASRATAN ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <i> <n> <space> : "ﹴ"  UFE74  # ARABIC KASRATAN ISOLATED FORM (conflicts with ą)
 
 # additional letters (represented semantically)
 
@@ -3614,15 +3622,16 @@ include "%L"
 
 # ligatures
 
-<Multi_key> <a> <x> <a> <k> <b> <a> <r> : "ﷳ"  UFDF3  # ARABIC LIGATURE AKBAR ISOLATED FORM
-<Multi_key> <a> <x> <a> <l> <l> <a> <h> : "ﷲ" UFDF2    # ARABIC LIGATURE ALLAH ISOLATED FORM
-<Multi_key> <a> <x> <b> <i> <s> <m> <i> <l> <l> <a> <h> : "﷽" UFDFD    # ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM
+<Multi_key> <a> <x> <a> <k> <b> <a> <r>  : "ﷳ"  UFDF3  # ARABIC LIGATURE AKBAR ISOLATED FORM
+<Multi_key> <a> <x> <a> <l> <l> <a> <h>  : "ﷲ"  UFDF2  # ARABIC LIGATURE ALLAH ISOLATED FORM
+<Multi_key> <a> <x> <b> <i> <s> <m> <i> <l> <l> <a> <h> : "﷽"  UFDFD  # ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM
 
-<Multi_key> <a> <x> <A> <A> <S> : "﵇" UFD47    # ARABIC LIGATURE ALAYHI AS-SALAAM
-<Multi_key> <a> <x> <A> <W> <J> : "﷿" UFDFF    # ARABIC LIGATURE AZZA WA JALL
-<Multi_key> <a> <x> <P> <B> <U> <H> : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM (PBUH)
-<Multi_key> <a> <x> <S> <A> <W> : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM
-<Multi_key> <a> <x> <S> <W> <T> : "﷾" UFDFE    # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
+<Multi_key> <a> <x> <A> <A> <S>          : "﵇"  UFD47  # ARABIC LIGATURE ALAYHI AS-SALAAM
+<Multi_key> <a> <x> <A> <W> <J>          : "﷿"  UFDFF  # ARABIC LIGATURE AZZA WA JALL
+<Multi_key> <x> <J> <J>                  : "ﷻ"  UFDFB  # ARABIC LIGATURE JALLAJALALOUHOU
+<Multi_key> <a> <x> <P> <B> <U> <H>      : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM (PBUH)
+<Multi_key> <a> <x> <S> <A> <W>          : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM
+<Multi_key> <a> <x> <S> <W> <T>          : "﷾"  UFDFE  # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
 
 # punctuation
 
