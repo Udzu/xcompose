@@ -3299,6 +3299,8 @@ include "%L"
 # Nabatean, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian,
 # Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi
 
+# basic letters
+
 <Multi_key> <a> <c> <a> : "ا" U0627    # ARABIC LETTER ALEF
 <Multi_key> <a> <c> <b> : "ب" U0628    # ARABIC LETTER BEH
 <Multi_key> <a> <c> <t> : "ت" U062A    # ARABIC LETTER TEH
@@ -3356,6 +3358,7 @@ include "%L"
 
 # additional letters (represented semantically)
 
+<Multi_key> <a> <x> <less> <t> : "ة"  U0629  # ARABIC LETTER TEH MARBUTA
 <Multi_key> <a> <x> <a> <y> : "ى" U0649    # ARABIC LETTER ALEF MAKSURA
 <Multi_key> <a> <x> <k> <h> : "ک"  U06A9  # ARABIC LETTER KEHEH
 <Multi_key> <a> <x> <k> <space> : "ڪ"  U06AA  # ARABIC LETTER SWASH KAF
@@ -3645,6 +3648,148 @@ include "%L"
 <Multi_key> <a> <numbersign> <e> <7> : "۷"  U06F7  # EXTENDED ARABIC-INDIC DIGIT SEVEN
 <Multi_key> <a> <numbersign> <e> <8> : "۸"  U06F8  # EXTENDED ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <numbersign> <e> <9> : "۹"  U06F9  # EXTENDED ARABIC-INDIC DIGIT NINE
+
+# (f/F = presentation forms)
+
+# Convention: a + f/F + form + character
+#   prefix: f corresponds to ac above, and F to ax
+#   form: i = isolated, > = initial, < = final, m = medial
+#   character: as above
+
+<Multi_key> <a> <f> <i> <apostrophe> : "ﺀ"  UFE80  # ARABIC LETTER HAMZA ISOLATED FORM
+<Multi_key> <a> <f> <i> <2> : "ﺀ"  UFE80  # ARABIC LETTER HAMZA ISOLATED FORM
+<Multi_key> <a> <F> <i> <asciitilde> <a> : "ﺁ"  UFE81  # ARABIC LETTER ALEF WITH MADDA ABOVE ISOLATED FORM
+<Multi_key> <a> <F> <less> <asciitilde> <a> : "ﺂ"  UFE82  # ARABIC LETTER ALEF WITH MADDA ABOVE FINAL FORM
+<Multi_key> <a> <F> <i> <2> <a> : "ﺃ"  UFE83  # ARABIC LETTER ALEF WITH HAMZA ABOVE ISOLATED FORM
+<Multi_key> <a> <F> <less> <2> <a> : "ﺄ"  UFE84  # ARABIC LETTER ALEF WITH HAMZA ABOVE FINAL FORM
+<Multi_key> <a> <F> <i> <2> <w> : "ﺅ"  UFE85  # ARABIC LETTER WAW WITH HAMZA ABOVE ISOLATED FORM
+<Multi_key> <a> <F> <i> <2> <u> : "ﺅ"  UFE85  # ARABIC LETTER WAW WITH HAMZA ABOVE ISOLATED FORM
+<Multi_key> <a> <F> <less> <2> <w> : "ﺆ"  UFE86  # ARABIC LETTER WAW WITH HAMZA ABOVE FINAL FORM
+<Multi_key> <a> <F> <less> <2> <u> : "ﺆ"  UFE86  # ARABIC LETTER WAW WITH HAMZA ABOVE FINAL FORM
+<Multi_key> <a> <F> <i> <underscore> <2> <a> : "ﺇ"  UFE87  # ARABIC LETTER ALEF WITH HAMZA BELOW ISOLATED FORM
+<Multi_key> <a> <F> <less> <underscore> <2> <a> : "ﺈ"  UFE88  # ARABIC LETTER ALEF WITH HAMZA BELOW FINAL FORM
+<Multi_key> <a> <F> <i> <2> <y> : "ﺉ"  UFE89  # ARABIC LETTER YEH WITH HAMZA ABOVE ISOLATED FORM
+<Multi_key> <a> <F> <less> <2> <y> : "ﺊ"  UFE8A  # ARABIC LETTER YEH WITH HAMZA ABOVE FINAL FORM
+<Multi_key> <a> <F> <greater> <2> <y> : "ﺋ"  UFE8B  # ARABIC LETTER YEH WITH HAMZA ABOVE INITIAL FORM
+<Multi_key> <a> <F> <m> <2> <y> : "ﺌ"  UFE8C  # ARABIC LETTER YEH WITH HAMZA ABOVE MEDIAL FORM
+<Multi_key> <a> <f> <i> <a> : "ﺍ"  UFE8D  # ARABIC LETTER ALEF ISOLATED FORM
+<Multi_key> <a> <f> <less> <a> : "ﺎ"  UFE8E  # ARABIC LETTER ALEF FINAL FORM
+<Multi_key> <a> <f> <i> <b> : "ﺏ"  UFE8F  # ARABIC LETTER BEH ISOLATED FORM
+<Multi_key> <a> <f> <less> <b> : "ﺐ"  UFE90  # ARABIC LETTER BEH FINAL FORM
+<Multi_key> <a> <f> <greater> <b> : "ﺑ"  UFE91  # ARABIC LETTER BEH INITIAL FORM
+<Multi_key> <a> <f> <m> <b> : "ﺒ"  UFE92  # ARABIC LETTER BEH MEDIAL FORM
+<Multi_key> <a> <F> <i> <less> <t> : "ﺓ"  UFE93  # ARABIC LETTER TEH MARBUTA ISOLATED FORM
+<Multi_key> <a> <F> <less> <less> <t> : "ﺔ"  UFE94  # ARABIC LETTER TEH MARBUTA FINAL FORM
+<Multi_key> <a> <f> <i> <t> : "ﺕ"  UFE95  # ARABIC LETTER TEH ISOLATED FORM
+<Multi_key> <a> <f> <less> <t> : "ﺖ"  UFE96  # ARABIC LETTER TEH FINAL FORM
+<Multi_key> <a> <f> <greater> <t> : "ﺗ"  UFE97  # ARABIC LETTER TEH INITIAL FORM
+<Multi_key> <a> <f> <m> <t> : "ﺘ"  UFE98  # ARABIC LETTER TEH MEDIAL FORM
+<Multi_key> <a> <f> <i> <T> : "ﺙ"  UFE99  # ARABIC LETTER THEH ISOLATED FORM
+<Multi_key> <a> <f> <less> <T> : "ﺚ"  UFE9A  # ARABIC LETTER THEH FINAL FORM
+<Multi_key> <a> <f> <greater> <T> : "ﺛ"  UFE9B  # ARABIC LETTER THEH INITIAL FORM
+<Multi_key> <a> <f> <m> <T> : "ﺜ"  UFE9C  # ARABIC LETTER THEH MEDIAL FORM
+<Multi_key> <a> <f> <i> <j> : "ﺝ"  UFE9D  # ARABIC LETTER JEEM ISOLATED FORM
+<Multi_key> <a> <f> <less> <j> : "ﺞ"  UFE9E  # ARABIC LETTER JEEM FINAL FORM
+<Multi_key> <a> <f> <greater> <j> : "ﺟ"  UFE9F  # ARABIC LETTER JEEM INITIAL FORM
+<Multi_key> <a> <f> <m> <j> : "ﺠ"  UFEA0  # ARABIC LETTER JEEM MEDIAL FORM
+<Multi_key> <a> <f> <i> <H> : "ﺡ"  UFEA1  # ARABIC LETTER HAH ISOLATED FORM
+<Multi_key> <a> <F> <i> <h> : "ﺡ"  UFEA1  # ARABIC LETTER HAH ISOLATED FORM
+<Multi_key> <a> <f> <less> <H> : "ﺢ"  UFEA2  # ARABIC LETTER HAH FINAL FORM
+<Multi_key> <a> <F> <less> <h> : "ﺢ"  UFEA2  # ARABIC LETTER HAH FINAL FORM
+<Multi_key> <a> <f> <greater> <H> : "ﺣ"  UFEA3  # ARABIC LETTER HAH INITIAL FORM
+<Multi_key> <a> <F> <greater> <h> : "ﺣ"  UFEA3  # ARABIC LETTER HAH INITIAL FORM
+<Multi_key> <a> <f> <m> <H> : "ﺤ"  UFEA4  # ARABIC LETTER HAH MEDIAL FORM
+<Multi_key> <a> <F> <m> <h> : "ﺤ"  UFEA4  # ARABIC LETTER HAH MEDIAL FORM
+<Multi_key> <a> <f> <i> <K> : "ﺥ"  UFEA5  # ARABIC LETTER KHAH ISOLATED FORM
+<Multi_key> <a> <f> <less> <K> : "ﺦ"  UFEA6  # ARABIC LETTER KHAH FINAL FORM
+<Multi_key> <a> <f> <greater> <K> : "ﺧ"  UFEA7  # ARABIC LETTER KHAH INITIAL FORM
+<Multi_key> <a> <f> <m> <K> : "ﺨ"  UFEA8  # ARABIC LETTER KHAH MEDIAL FORM
+<Multi_key> <a> <f> <i> <d> : "ﺩ"  UFEA9  # ARABIC LETTER DAL ISOLATED FORM
+<Multi_key> <a> <f> <less> <d> : "ﺪ"  UFEAA  # ARABIC LETTER DAL FINAL FORM
+<Multi_key> <a> <f> <i> <D> : "ﺫ"  UFEAB  # ARABIC LETTER THAL ISOLATED FORM
+<Multi_key> <a> <f> <less> <D> : "ﺬ"  UFEAC  # ARABIC LETTER THAL FINAL FORM
+<Multi_key> <a> <f> <i> <r> : "ﺭ"  UFEAD  # ARABIC LETTER REH ISOLATED FORM
+<Multi_key> <a> <f> <less> <r> : "ﺮ"  UFEAE  # ARABIC LETTER REH FINAL FORM
+<Multi_key> <a> <f> <i> <z> : "ﺯ"  UFEAF  # ARABIC LETTER ZAIN ISOLATED FORM
+<Multi_key> <a> <f> <less> <z> : "ﺰ"  UFEB0  # ARABIC LETTER ZAIN FINAL FORM
+<Multi_key> <a> <f> <i> <s> : "ﺱ"  UFEB1  # ARABIC LETTER SEEN ISOLATED FORM
+<Multi_key> <a> <f> <less> <s> : "ﺲ"  UFEB2  # ARABIC LETTER SEEN FINAL FORM
+<Multi_key> <a> <f> <greater> <s> : "ﺳ"  UFEB3  # ARABIC LETTER SEEN INITIAL FORM
+<Multi_key> <a> <f> <m> <s> : "ﺴ"  UFEB4  # ARABIC LETTER SEEN MEDIAL FORM
+<Multi_key> <a> <f> <i> <S> : "ﺵ"  UFEB5  # ARABIC LETTER SHEEN ISOLATED FORM
+<Multi_key> <a> <f> <less> <S> : "ﺶ"  UFEB6  # ARABIC LETTER SHEEN FINAL FORM
+<Multi_key> <a> <f> <greater> <S> : "ﺷ"  UFEB7  # ARABIC LETTER SHEEN INITIAL FORM
+<Multi_key> <a> <f> <m> <S> : "ﺸ"  UFEB8  # ARABIC LETTER SHEEN MEDIAL FORM
+<Multi_key> <a> <F> <i> <s> : "ﺹ"  UFEB9  # ARABIC LETTER SAD ISOLATED FORM
+<Multi_key> <a> <F> <less> <s> : "ﺺ"  UFEBA  # ARABIC LETTER SAD FINAL FORM
+<Multi_key> <a> <F> <greater> <s> : "ﺻ"  UFEBB  # ARABIC LETTER SAD INITIAL FORM
+<Multi_key> <a> <F> <m> <s> : "ﺼ"  UFEBC  # ARABIC LETTER SAD MEDIAL FORM
+<Multi_key> <a> <F> <i> <d> : "ﺽ"  UFEBD  # ARABIC LETTER DAD ISOLATED FORM
+<Multi_key> <a> <F> <less> <d> : "ﺾ"  UFEBE  # ARABIC LETTER DAD FINAL FORM
+<Multi_key> <a> <F> <greater> <d> : "ﺿ"  UFEBF  # ARABIC LETTER DAD INITIAL FORM
+<Multi_key> <a> <F> <m> <d> : "ﻀ"  UFEC0  # ARABIC LETTER DAD MEDIAL FORM
+<Multi_key> <a> <F> <i> <t> : "ﻁ"  UFEC1  # ARABIC LETTER TAH ISOLATED FORM
+<Multi_key> <a> <F> <less> <t> : "ﻂ"  UFEC2  # ARABIC LETTER TAH FINAL FORM
+<Multi_key> <a> <F> <greater> <t> : "ﻃ"  UFEC3  # ARABIC LETTER TAH INITIAL FORM
+<Multi_key> <a> <F> <m> <t> : "ﻄ"  UFEC4  # ARABIC LETTER TAH MEDIAL FORM
+<Multi_key> <a> <F> <i> <z> : "ﻅ"  UFEC5  # ARABIC LETTER ZAH ISOLATED FORM
+<Multi_key> <a> <F> <less> <z> : "ﻆ"  UFEC6  # ARABIC LETTER ZAH FINAL FORM
+<Multi_key> <a> <F> <greater> <z> : "ﻇ"  UFEC7  # ARABIC LETTER ZAH INITIAL FORM
+<Multi_key> <a> <F> <m> <z> : "ﻈ"  UFEC8  # ARABIC LETTER ZAH MEDIAL FORM
+<Multi_key> <a> <f> <i> <3> : "ﻉ"  UFEC9  # ARABIC LETTER AIN ISOLATED FORM
+<Multi_key> <a> <f> <i> <grave> : "ﻉ"  UFEC9  # ARABIC LETTER AIN ISOLATED FORM
+<Multi_key> <a> <f> <less> <3> : "ﻊ"  UFECA  # ARABIC LETTER AIN FINAL FORM
+<Multi_key> <a> <f> <less> <grave> : "ﻊ"  UFECA  # ARABIC LETTER AIN FINAL FORM
+<Multi_key> <a> <f> <greater> <3> : "ﻋ"  UFECB  # ARABIC LETTER AIN INITIAL FORM
+<Multi_key> <a> <f> <greater> <grave> : "ﻋ"  UFECB  # ARABIC LETTER AIN INITIAL FORM
+<Multi_key> <a> <f> <m> <3> : "ﻌ"  UFECC  # ARABIC LETTER AIN MEDIAL FORM
+<Multi_key> <a> <f> <m> <grave> : "ﻌ"  UFECC  # ARABIC LETTER AIN MEDIAL FORM
+<Multi_key> <a> <f> <i> <G> : "ﻍ"  UFECD  # ARABIC LETTER GHAIN ISOLATED FORM
+<Multi_key> <a> <f> <less> <G> : "ﻎ"  UFECE  # ARABIC LETTER GHAIN FINAL FORM
+<Multi_key> <a> <f> <greater> <G> : "ﻏ"  UFECF  # ARABIC LETTER GHAIN INITIAL FORM
+<Multi_key> <a> <f> <m> <G> : "ﻐ"  UFED0  # ARABIC LETTER GHAIN MEDIAL FORM
+<Multi_key> <a> <f> <i> <f> : "ﻑ"  UFED1  # ARABIC LETTER FEH ISOLATED FORM
+<Multi_key> <a> <f> <less> <f> : "ﻒ"  UFED2  # ARABIC LETTER FEH FINAL FORM
+<Multi_key> <a> <f> <greater> <f> : "ﻓ"  UFED3  # ARABIC LETTER FEH INITIAL FORM
+<Multi_key> <a> <f> <m> <f> : "ﻔ"  UFED4  # ARABIC LETTER FEH MEDIAL FORM
+<Multi_key> <a> <f> <i> <q> : "ﻕ"  UFED5  # ARABIC LETTER QAF ISOLATED FORM
+<Multi_key> <a> <f> <less> <q> : "ﻖ"  UFED6  # ARABIC LETTER QAF FINAL FORM
+<Multi_key> <a> <f> <greater> <q> : "ﻗ"  UFED7  # ARABIC LETTER QAF INITIAL FORM
+<Multi_key> <a> <f> <m> <q> : "ﻘ"  UFED8  # ARABIC LETTER QAF MEDIAL FORM
+<Multi_key> <a> <f> <i> <k> : "ﻙ"  UFED9  # ARABIC LETTER KAF ISOLATED FORM
+<Multi_key> <a> <f> <less> <k> : "ﻚ"  UFEDA  # ARABIC LETTER KAF FINAL FORM
+<Multi_key> <a> <f> <greater> <k> : "ﻛ"  UFEDB  # ARABIC LETTER KAF INITIAL FORM
+<Multi_key> <a> <f> <m> <k> : "ﻜ"  UFEDC  # ARABIC LETTER KAF MEDIAL FORM
+<Multi_key> <a> <f> <i> <l> : "ﻝ"  UFEDD  # ARABIC LETTER LAM ISOLATED FORM
+<Multi_key> <a> <f> <less> <l> : "ﻞ"  UFEDE  # ARABIC LETTER LAM FINAL FORM
+<Multi_key> <a> <f> <greater> <l> : "ﻟ"  UFEDF  # ARABIC LETTER LAM INITIAL FORM
+<Multi_key> <a> <f> <m> <l> : "ﻠ"  UFEE0  # ARABIC LETTER LAM MEDIAL FORM
+<Multi_key> <a> <f> <i> <m> : "ﻡ"  UFEE1  # ARABIC LETTER MEEM ISOLATED FORM
+<Multi_key> <a> <f> <less> <m> : "ﻢ"  UFEE2  # ARABIC LETTER MEEM FINAL FORM
+<Multi_key> <a> <f> <greater> <m> : "ﻣ"  UFEE3  # ARABIC LETTER MEEM INITIAL FORM
+<Multi_key> <a> <f> <m> <m> : "ﻤ"  UFEE4  # ARABIC LETTER MEEM MEDIAL FORM
+<Multi_key> <a> <f> <i> <n> : "ﻥ"  UFEE5  # ARABIC LETTER NOON ISOLATED FORM
+<Multi_key> <a> <f> <less> <n> : "ﻦ"  UFEE6  # ARABIC LETTER NOON FINAL FORM
+<Multi_key> <a> <f> <greater> <n> : "ﻧ"  UFEE7  # ARABIC LETTER NOON INITIAL FORM
+<Multi_key> <a> <f> <m> <n> : "ﻨ"  UFEE8  # ARABIC LETTER NOON MEDIAL FORM
+<Multi_key> <a> <f> <i> <h> : "ﻩ"  UFEE9  # ARABIC LETTER HEH ISOLATED FORM
+<Multi_key> <a> <f> <less> <h> : "ﻪ"  UFEEA  # ARABIC LETTER HEH FINAL FORM
+<Multi_key> <a> <f> <greater> <h> : "ﻫ"  UFEEB  # ARABIC LETTER HEH INITIAL FORM
+<Multi_key> <a> <f> <m> <h> : "ﻬ"  UFEEC  # ARABIC LETTER HEH MEDIAL FORM
+<Multi_key> <a> <f> <i> <w> : "ﻭ"  UFEED  # ARABIC LETTER WAW ISOLATED FORM
+<Multi_key> <a> <f> <i> <u> : "ﻭ"  UFEED  # ARABIC LETTER WAW ISOLATED FORM
+<Multi_key> <a> <f> <less> <w> : "ﻮ"  UFEEE  # ARABIC LETTER WAW FINAL FORM
+<Multi_key> <a> <f> <less> <u> : "ﻮ"  UFEEE  # ARABIC LETTER WAW FINAL FORM
+<Multi_key> <a> <F> <i> <a> <y> : "ﻯ"  UFEEF  # ARABIC LETTER ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <F> <less> <a> <y> : "ﻰ"  UFEF0  # ARABIC LETTER ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <f> <i> <y> : "ﻱ"  UFEF1  # ARABIC LETTER YEH ISOLATED FORM
+<Multi_key> <a> <f> <i> <i> : "ﻱ"  UFEF1  # ARABIC LETTER YEH ISOLATED FORM
+<Multi_key> <a> <f> <less> <y> : "ﻲ"  UFEF2  # ARABIC LETTER YEH FINAL FORM
+<Multi_key> <a> <f> <less> <i> : "ﻲ"  UFEF2  # ARABIC LETTER YEH FINAL FORM
+<Multi_key> <a> <f> <greater> <y> : "ﻳ"  UFEF3  # ARABIC LETTER YEH INITIAL FORM
+<Multi_key> <a> <f> <greater> <i> : "ﻳ"  UFEF3  # ARABIC LETTER YEH INITIAL FORM
+<Multi_key> <a> <f> <m> <y> : "ﻴ"  UFEF4  # ARABIC LETTER YEH MEDIAL FORM
+<Multi_key> <a> <f> <m> <i> : "ﻴ"  UFEF4  # ARABIC LETTER YEH MEDIAL FORM
 
 # (A = Avestan) (Hoffmann transcription)
 
