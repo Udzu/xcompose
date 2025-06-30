@@ -20907,6 +20907,7 @@ include "HangulSyllables"
 <Multi_key> <c> <r> <a> <greater>             : "𜱐"  U1CC50  # ALIEN CRAB STEPPING RIGHT (conflicts with ř, use vr)
 <Multi_key> <c> <r> <a> <less>                : "𜱑"  U1CC51  # ALIEN CRAB STEPPING LEFT (conflicts with ř, use vr)
 <Multi_key> <f> <b> <i> <r> <d>               : "𜲖"  U1CC96  # FLAPPING BIRD
+<Multi_key> <f> <o> <l> <d> <e> <2>           : "🮹🮺"  U1FBB9 U1FBBA  # FOLDER (TWO CHARACTERS)
 <Multi_key> <f> <r> <o> <asciicircum>         : "𜷻"  U1CDFB  # UP-POINTING FROG
 <Multi_key> <f> <r> <o> <v>                   : "𜷼"  U1CDFC  # DOWN-POINTING FROG
 <Multi_key> <less> <f> <i> <s> <h>            : "𜲒"  U1CC92  # LEFT-FACING FISH (not ideal but fi=ﬁ is taken)
@@ -20920,7 +20921,7 @@ include "HangulSyllables"
 <Multi_key> <l> <a> <u> <n> <c> <asciicircum> : "𜱗"  U1CC57  # UP-POINTING ROCKET SHIP
 <Multi_key> <l> <a> <u> <n> <c> <greater>     : "𜱘"  U1CC58  # RIGHT-POINTING ROCKET SHIP
 <Multi_key> <l> <a> <u> <n> <c> <v>           : "𜱙"  U1CC59  # DOWN-POINTING ROCKET SHIP
-<Multi_key> <m> <e> <g> <a> <n>               : "🯉"  U1FBC9  # STICK FIGURE WITH DRESS (MEGAN)
+<Multi_key> <m> <e> <g> <a> <n>               : "🯉"  U1FBC9  # STICK FIGURE WITH DRESS (MEGAN) (alternatively stickf)
 <Multi_key> <m> <l> <a> <n> <d>               : "𜷵"  U1CDF5  # MOON LANDER
 <Multi_key> <o> <f> <i> <s> <h> <less>        : "𜲔"  U1CC94  # LEFT-FACING FISH WITH OPEN MOUTH
 <Multi_key> <o> <f> <i> <s> <h> <greater>     : "𜲕"  U1CC95  # RIGHT-FACING FISH WITH OPEN MOUTH
@@ -20936,6 +20937,7 @@ include "HangulSyllables"
 <Multi_key> <r> <i> <f> <l> <e> <greater>     : "𜱧"  U1CC67  # RIGHT-POINTING RIFLE
 <Multi_key> <r> <i> <f> <l> <e> <v>           : "𜱨"  U1CC68  # DOWN-POINTING RIFLE
 <Multi_key> <r> <i> <f> <l> <e> <space>       : "🥆"  U1F946  # RIFLE
+<Multi_key> <r> <u> <2>                       : "🮲🮳"  U1FBB2 U1FBB3  # RUNNING MAN (TWO CHARACTERS)
 <Multi_key> <s> <t> <i> <c> <k> <m>           : "🯅"  U1FBC5  # STICK FIGURE
 <Multi_key> <s> <t> <i> <c> <k> <asciicircum> : "🯆"  U1FBC6  # STICK FIGURE WITH ARMS RAISED
 <Multi_key> <s> <t> <i> <c> <k> <less>        : "🯇"  U1FBC7  # STICK FIGURE LEANING LEFT
@@ -20948,7 +20950,8 @@ include "HangulSyllables"
 <Multi_key> <t> <a> <n> <k> <greater>         : "𜲟"  U1CC9F  # RIGHT-POINTING TANK
 <Multi_key> <U> <F> <v>                       : "𜱊"  U1CC4A  # FLYING SAUCER WITH BEAMS (UFO)
 <Multi_key> <U> <F> <asciicircum>             : "𜱋"  U1CC4B  # FLYING SAUCER WITHOUT BEAMS (UFO)
-<Multi_key> <x> <k> <c> <d>                   : "🯅"  U1FBC5  # STICK FIGURE (XKCD)
+<Multi_key> <U> <F> <2>                       : "𜲤𜲥"  U1CCA4 U1CCA5  # FLYING SAUCER (TWO CHARACTERS)
+<Multi_key> <x> <k> <c> <d>                   : "🯅"  U1FBC5  # STICK FIGURE (XKCD) (alternatively stickm)
 
 # Split glyphs: @^ for top half, @_ for bottom half
 
@@ -21510,10 +21513,20 @@ include "HangulSyllables"
 <Multi_key> <parenleft> <parenright> <U> <R> <Q>   : "◷" U25F7    # WHITE CIRCLE WITH UPPER RIGHT QUADRANT
 <Multi_key> <parenleft> <parenright> <U> <R> <1>   : "◔" U25D4    # CIRCLE WITH UPPER RIGHT QUADRANT BLACK
 <Multi_key> <parenleft> <parenright> <U> <L> <0>   : "◕" U25D5    # CIRCLE WITH ALL BUT UPPER LEFT QUADRANT BLACK
-<Multi_key> <parenleft> <parenright> <exclam> <less>        : "𜱫"  U1CC6B  # BLACK LARGE CIRCLE MINUS LEFT QUARTER SECTION
-<Multi_key> <parenleft> <parenright> <exclam> <asciicircum> : "𜱬"  U1CC6C  # BLACK LARGE CIRCLE MINUS UPPER QUARTER SECTION
-<Multi_key> <parenleft> <parenright> <exclam> <greater>     : "𜱭"  U1CC6D  # BLACK LARGE CIRCLE MINUS RIGHT QUARTER SECTION
-<Multi_key> <parenleft> <parenright> <exclam> <v>           : "𜱮"  U1CC6E  # BLACK LARGE CIRCLE MINUS LOWER QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <less>           : "𜱫"  U1CC6B  # BLACK LARGE CIRCLE MINUS LEFT QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <asciicircum>    : "𜱬"  U1CC6C  # BLACK LARGE CIRCLE MINUS UPPER QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <greater>        : "𜱭"  U1CC6D  # BLACK LARGE CIRCLE MINUS RIGHT QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <v>              : "𜱮"  U1CC6E  # BLACK LARGE CIRCLE MINUS LOWER QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <space> <asciicircum>     : "🯠"  U1FBE0  # TOP JUSTIFIED LOWER HALF WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <greater>         : "🯡"  U1FBE1  # RIGHT JUSTIFIED LEFT HALF WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <v>               : "🯢"  U1FBE2  # BOTTOM JUSTIFIED UPPER HALF WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <less>            : "🯣"  U1FBE3  # LEFT JUSTIFIED RIGHT HALF WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <1> <asciicircum> : "🯨"  U1FBE8  # TOP JUSTIFIED LOWER HALF BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <1> <greater>     : "🯩"  U1FBE9  # RIGHT JUSTIFIED LEFT HALF BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <1> <v>           : "🯪"  U1FBEA  # BOTTOM JUSTIFIED UPPER HALF BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <1> <less>        : "🯫"  U1FBEB  # LEFT JUSTIFIED RIGHT HALF BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <2> <asciicircum> : "🯬🯯"  U1FBEC U1FBEF  # TOP LEFT JUSTIFIED LOWER RIGHT QUARTER BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <2> <v>           : "🯮🯭"  U1FBEE U1FBED  # BOTTOM LEFT JUSTIFIED UPPER RIGHT QUARTER BLACK CIRCLE
 <Multi_key> <parenleft> <parenright> <space> <period> <0> : "⚆" U2686  # WHITE CIRCLE WITH DOT RIGHT
 <Multi_key> <parenleft> <parenright> <space> <period> <1> : "⚈" U2688  # BLACK CIRCLE WITH WHITE DOT RIGHT
 <Multi_key> <parenleft> <parenright> <quotedbl> <0> : "⚇" U2687  # WHITE CIRCLE WITH TWO DOTS
@@ -21560,6 +21573,7 @@ include "HangulSyllables"
 
 <Multi_key> <parenleft> <space> <parenright> <0> : "⬭" U2B2D    # WHITE HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <1> : "⬬" U2B2C    # BLACK HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
+<Multi_key> <parenleft> <space> <parenright> <2> : "𜸋𜸌"  U1CE0B U1CE0C  # WHITE ELLIPSE (TWO CHARACTERS) (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <v> <0> : "⬯" U2B2F    # WHITE VERTICAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <v> <1> : "⬮" U2B2E    # BLACK VERTICAL ELLIPSE (conflicts with ˘, use ␣()
 
