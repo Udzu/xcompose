@@ -1403,7 +1403,7 @@ include "%L"
 ##############################
 
 # Convention: % + [font] + [weight] + character
-#   font: ∅ = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace, d = double-struck
+#   font: ∅ = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace, d = double-struck, O = outlined
 #   weight: ∅ = normal, * = bold, / = italic, */ = bold italic
 
 <Multi_key> <percent> <asterisk> <A> : "𝐀" U1D400    # MATHEMATICAL BOLD CAPITAL A
@@ -2152,6 +2152,35 @@ include "%L"
 <Multi_key> <percent> <d> <slash> <e> : "ⅇ" U2147   # DOUBLE-STRUCK ITALIC SMALL E
 <Multi_key> <percent> <d> <slash> <i> : "ⅈ" U2148   # DOUBLE-STRUCK ITALIC SMALL I
 <Multi_key> <percent> <d> <slash> <j> : "ⅉ" U2149   # DOUBLE-STRUCK ITALIC SMALL J
+
+# (not mathematical but fits in nicely, though %o is already taken by ‰)
+
+<Multi_key> <percent> <O> <A> : "𜳖"  U1CCD6  # OUTLINED LATIN CAPITAL LETTER A
+<Multi_key> <percent> <O> <B> : "𜳗"  U1CCD7  # OUTLINED LATIN CAPITAL LETTER B
+<Multi_key> <percent> <O> <C> : "𜳘"  U1CCD8  # OUTLINED LATIN CAPITAL LETTER C
+<Multi_key> <percent> <O> <D> : "𜳙"  U1CCD9  # OUTLINED LATIN CAPITAL LETTER D
+<Multi_key> <percent> <O> <E> : "𜳚"  U1CCDA  # OUTLINED LATIN CAPITAL LETTER E
+<Multi_key> <percent> <O> <F> : "𜳛"  U1CCDB  # OUTLINED LATIN CAPITAL LETTER F
+<Multi_key> <percent> <O> <G> : "𜳜"  U1CCDC  # OUTLINED LATIN CAPITAL LETTER G
+<Multi_key> <percent> <O> <H> : "𜳝"  U1CCDD  # OUTLINED LATIN CAPITAL LETTER H
+<Multi_key> <percent> <O> <I> : "𜳞"  U1CCDE  # OUTLINED LATIN CAPITAL LETTER I
+<Multi_key> <percent> <O> <J> : "𜳟"  U1CCDF  # OUTLINED LATIN CAPITAL LETTER J
+<Multi_key> <percent> <O> <K> : "𜳠"  U1CCE0  # OUTLINED LATIN CAPITAL LETTER K
+<Multi_key> <percent> <O> <L> : "𜳡"  U1CCE1  # OUTLINED LATIN CAPITAL LETTER L
+<Multi_key> <percent> <O> <M> : "𜳢"  U1CCE2  # OUTLINED LATIN CAPITAL LETTER M
+<Multi_key> <percent> <O> <N> : "𜳣"  U1CCE3  # OUTLINED LATIN CAPITAL LETTER N
+<Multi_key> <percent> <O> <O> : "𜳤"  U1CCE4  # OUTLINED LATIN CAPITAL LETTER O
+<Multi_key> <percent> <O> <P> : "𜳥"  U1CCE5  # OUTLINED LATIN CAPITAL LETTER P
+<Multi_key> <percent> <O> <Q> : "𜳦"  U1CCE6  # OUTLINED LATIN CAPITAL LETTER Q
+<Multi_key> <percent> <O> <R> : "𜳧"  U1CCE7  # OUTLINED LATIN CAPITAL LETTER R
+<Multi_key> <percent> <O> <S> : "𜳨"  U1CCE8  # OUTLINED LATIN CAPITAL LETTER S
+<Multi_key> <percent> <O> <T> : "𜳩"  U1CCE9  # OUTLINED LATIN CAPITAL LETTER T
+<Multi_key> <percent> <O> <U> : "𜳪"  U1CCEA  # OUTLINED LATIN CAPITAL LETTER U
+<Multi_key> <percent> <O> <V> : "𜳫"  U1CCEB  # OUTLINED LATIN CAPITAL LETTER V
+<Multi_key> <percent> <O> <W> : "𜳬"  U1CCEC  # OUTLINED LATIN CAPITAL LETTER W
+<Multi_key> <percent> <O> <X> : "𜳭"  U1CCED  # OUTLINED LATIN CAPITAL LETTER X
+<Multi_key> <percent> <O> <Y> : "𜳮"  U1CCEE  # OUTLINED LATIN CAPITAL LETTER Y
+<Multi_key> <percent> <O> <Z> : "𜳯"  U1CCEF  # OUTLINED LATIN CAPITAL LETTER Z
 
 ##########################
 # Enclosed alphanumerics #
