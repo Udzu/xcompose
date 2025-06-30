@@ -49,7 +49,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Zhuyin**, Fraser, Mongolian, ʼPhags-pa, Pollard, Tai Le, Tibetan & Yi (1754): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, ᥘᥦᥖᥤᥖ, རེཌིཊ྄, ꏒꄶ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4644)
+### Symbols (4657)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (132): 🗫 🯅 ㋡ etc
 * **Math and science** (380): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
@@ -62,5 +62,5 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **I Ching** (160): ䷇ ☰☷☲☵ etc
 * **Hieroglyphs** (356): 𓁖 𓁹 𓃠 etc
 * **Arrows** (311): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
-* **Geometric shapes** (217): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
-* **Box drawing** (627): ╞╦╕ etc
+* **Geometric shapes** (226): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
+* **Box drawing** (631): ╞╦╕ etc

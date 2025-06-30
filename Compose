@@ -21485,8 +21485,17 @@ include "HangulSyllables"
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <slash>      : "▨" U25A8   # SQUARE WITH UPPER RIGHT TO LOWER LEFT FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <X>          : "▩" U25A9   # SQUARE WITH DIAGONAL CROSSHATCH FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Return>      : "⃞" U20DE   # COMBINING ENCLOSING SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <less> <greater> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE (conflicts)
 
-<Multi_key> <bracketleft> <less> <greater> <bracketright> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE
+<Multi_key> <exclam> <bracketleft> <bracketright> <V>             : "🮱"  U1FBB1  # INVERSE CHECK MARK
+<Multi_key> <exclam> <bracketleft> <bracketright> <X>             : "🮽"  U1FBBD  # NEGATIVE DIAGONAL CROSS
+<Multi_key> <exclam> <bracketleft> <bracketright> <slash>         : "🮾"  U1FBBE  # NEGATIVE DIAGONAL MIDDLE RIGHT TO LOWER CENTRE
+<Multi_key> <exclam> <bracketleft> <bracketright> <Return>        : "🮴"  U1FBB4  # INVERSE DOWNWARDS ARROW WITH TIP LEFTWARDS
+<Multi_key> <exclam> <bracketleft> <bracketright> <less> <greater> : "🮿"  U1FBBF  # NEGATIVE DIAGONAL DIAMOND
+<Multi_key> <exclam> <bracketleft> <bracketright> <less> <minus>  : "🢴"  U1F8B4  # NEGATIVE SQUARED LEFTWARDS ARROW
+<Multi_key> <exclam> <bracketleft> <bracketright> <asciicircum> <bar> : "🢵"  U1F8B5  # NEGATIVE SQUARED UPWARDS ARROW
+<Multi_key> <exclam> <bracketleft> <bracketright> <minus> <greater> : "🢶"  U1F8B6  # NEGATIVE SQUARED RIGHTWARDS ARROW
+<Multi_key> <exclam> <bracketleft> <bracketright> <bar> <v>       : "🢷"  U1F8B7  # NEGATIVE SQUARED DOWNWARDS ARROW
 
 # Circles ()
 
@@ -21551,8 +21560,16 @@ include "HangulSyllables"
 <Multi_key> <parenleft> <parenright> <Return>      : "⃝" U20DD   # COMBINING ENCLOSING CIRCLE
 <Multi_key> <parenleft> <parenright> <backslash> <Return> : "⃠" U20E0   # COMBINING ENCLOSING CIRCLE BACKSLASH
 
+<Multi_key> <exclam> <parenleft> <parenright> <slash> <backslash> : "🟖" U1F7D6   # NEGATIVE CIRCLED TRIANGLE (alternatively !(/\))
+<Multi_key> <exclam> <parenleft> <parenright> <bracketleft> <bracketright> : "🟘" U1F7D8   # NEGATIVE CIRCLED SQUARE (alternatively !([]))
+<Multi_key> <exclam> <parenleft> <parenright> <less> <minus> : "⮈" U2B88   # LEFTWARDS BLACK CIRCLED WHITE ARROW (alternatively !(<-))
+<Multi_key> <exclam> <parenleft> <parenright> <asciicircum> <bar> : "⮉" U2B89   # UPWARDS BLACK CIRCLED WHITE ARROW (alternatively !(^|))
+<Multi_key> <exclam> <parenleft> <parenright> <minus> <greater> : "⮊" U2B8A   # RIGHTWARDS BLACK CIRCLED WHITE ARROW (alternatively !(->))
+<Multi_key> <exclam> <parenleft> <parenright> <v> <bar> : "⮋" U2B8B   # DOWNWARDS BLACK CIRCLED WHITE ARROW (alternatively !(|v))
+
 <Multi_key> <parenleft> <slash> <backslash> <parenright> : "🟕" U1F7D5   # CIRCLED TRIANGLE
 <Multi_key> <parenleft> <bracketleft> <bracketright> <parenright> : "🟗" U1F7D7   # CIRCLED SQUARE
+
 <Multi_key> <exclam> <parenleft> <slash> <backslash> <parenright> : "🟖" U1F7D6   # NEGATIVE CIRCLED TRIANGLE
 <Multi_key> <exclam> <parenleft> <bracketleft> <bracketright> <parenright> : "🟘" U1F7D8   # NEGATIVE CIRCLED SQUARE
 <Multi_key> <exclam> <parenleft> <less> <minus> <parenright> : "⮈" U2B88   # LEFTWARDS BLACK CIRCLED WHITE ARROW
@@ -22255,6 +22272,11 @@ include "HangulSyllables"
 <Multi_key> <bar> <b> <slash> <less>        : "◤"  U25E4  # BLACK UPPER LEFT TRIANGLE
 <Multi_key> <bar> <b> <backslash> <less>    : "◣"  U25E3  # BLACK LOWER LEFT TRIANGLE
 <Multi_key> <bar> <b> <backslash> <greater> : "◥"  U25E5  # BLACK UPPER RIGHT TRIANGLE
+
+<Multi_key> <bar> <b> <slash> <numbersign> <greater>     : "🮜"  U1FB9C  # UPPER LEFT TRIANGULAR MEDIUM SHADE
+<Multi_key> <bar> <b> <slash> <numbersign> <less>        : "🮝"  U1FB9D  # UPPER RIGHT TRIANGULAR MEDIUM SHADE
+<Multi_key> <bar> <b> <backslash> <numbersign> <less>    : "🮞"  U1FB9E  # LOWER RIGHT TRIANGULAR MEDIUM SHADE
+<Multi_key> <bar> <b> <backslash> <numbersign> <greater> : "🮟"  U1FB9F  # LOWER LEFT TRIANGULAR MEDIUM SHADE
 
 <Multi_key> <bar> <b> <X> <less>        : "🭬"  U1FB6C  # LEFT TRIANGULAR ONE QUARTER BLOCK
 <Multi_key> <bar> <b> <X> <asciicircum> : "🭭"  U1FB6D  # UPPER TRIANGULAR ONE QUARTER BLOCK
