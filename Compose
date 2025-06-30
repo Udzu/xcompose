@@ -20164,6 +20164,7 @@ include "HangulSyllables"
 <Multi_key> <b> <u> <s>             : "🚍"  U1F68D        # ONCOMING BUS (conflicts with ŭ, use uu) (use <bus for 🚌)
 <Multi_key> <less> <b> <u> <s>      : "🚌"  U1F68C        # BUS
 <Multi_key> <c> <a> <b> <l> <e>     : "🚠"  U1F6A0        # MOUNTAIN CABLEWAY (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <space>     : "🚗"  U1F697        # AUTOMOBILE (CAR) (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <s> <t> <l> <e> : "🏰"  U1F3F0        # EUROPEAN CASTLE (conflicts with ǎ, use va)
 <Multi_key> <c> <e> <s> <s> <n> <a> : "🛩️"  U1F6E9 UFE0F  # SMALL AIRPLANE EMOJI (CESNA) (conflicts with ě, use ve)
 <Multi_key> <c> <h> <i> <c> <r> <o> : "🚸"  U1F6B8        # CHILDREN CROSSING (conflicts with ȟ, use vh)
@@ -20869,6 +20870,10 @@ include "HangulSyllables"
 <Multi_key> <at> <bracketleft> <V> <S> <bracketright>          : "🆚" U1F19A   # SQUARED VS
 <Multi_key> <at> <bracketleft> <W> <C> <bracketright>          : "🚾" U1F6BE   # WATER CLOSET
 
+########################
+# Dingbats and sprites #
+########################
+
 # Text-presentation dingbats
 
 <Multi_key> <s> <b> <less>     : "🗨"  U1F5E8        # LEFT SPEECH BUBBLE
@@ -20882,8 +20887,68 @@ include "HangulSyllables"
 <Multi_key> <a> <b> <0>        : "🗰"  U1F5F0        # MOOD BUBBLE
 <Multi_key> <a> <b> <z>        : "🗱"  U1F5F1        # LIGHTNING MOOD BUBBLE
 
-<Multi_key> <m> <e> <g> <a> <n> : "🯉"  U1FBC9        # STICK FIGURE WITH DRESS (MEGAN)
-<Multi_key> <x> <k> <c> <d>     : "🯅"  U1FBC5        # STICK FIGURE (XCKD)
+# Legacy computing sprites and related pictographs
+
+# Pseudo-convention: directed sprites often replace the last letter with a direction to avoid conflict
+
+<Multi_key> <exclam> <colon> <parenright>     : "☻"  U263B   # BLACK SMILING FACE
+<Multi_key> <exclam> <colon> <bar>            : "𜱯"  U1CC6F  # BLACK NEUTRAL FACE
+
+<Multi_key> <b> <o> <m> <less>                : "𜱠"  U1CC60  # LEFT-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <m> <asciicircum>         : "𜱡"  U1CC61  # UP-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <m> <greater>             : "𜱢"  U1CC62  # RIGHT-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <m> <v>                   : "𜱣"  U1CC63  # DOWN-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
+<Multi_key> <c> <a> <r> <less>                : "𜲗"  U1CC97  # LEFT-POINTING RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <asciicircum>         : "𜲘"  U1CC98  # UP-POINTING RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <greater>             : "𜲙"  U1CC99  # RIGHT-POINTING RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <v>                   : "𜲚"  U1CC9A  # DOWN-POINTING RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <h>                   : "𜲛"  U1CC9B  # HORIZONTAL RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <v>                   : "𜲜"  U1CC9C  # VERTICAL RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <r> <a> <greater>             : "𜱐"  U1CC50  # ALIEN CRAB STEPPING RIGHT (conflicts with ř, use vr)
+<Multi_key> <c> <r> <a> <less>                : "𜱑"  U1CC51  # ALIEN CRAB STEPPING LEFT (conflicts with ř, use vr)
+<Multi_key> <f> <b> <i> <r> <d>               : "𜲖"  U1CC96  # FLAPPING BIRD
+<Multi_key> <f> <r> <o> <asciicircum>         : "𜷻"  U1CDFB  # UP-POINTING FROG
+<Multi_key> <f> <r> <o> <v>                   : "𜷼"  U1CDFC  # DOWN-POINTING FROG
+<Multi_key> <less> <f> <i> <s> <h>            : "𜲒"  U1CC92  # LEFT-FACING FISH (not ideal but fi=ﬁ is taken)
+<Multi_key> <greater> <f> <i> <s> <h>         : "𜲓"  U1CC93  # RIGHT-FACING FISH (not ideal but fi=ﬁ is taken)
+<Multi_key> <g> <o> <k> <a> <r> <asciicircum> : "𜰀"  U1CC00  # UP-POINTING GO-KART
+<Multi_key> <g> <o> <k> <a> <r> <greater>     : "𜰁"  U1CC01  # RIGHT-POINTING GO-KART
+<Multi_key> <g> <o> <k> <a> <r> <v>           : "𜲝"  U1CC9D  # VERTICAL GO-KART
+<Multi_key> <l> <a> <d> <d> <e> <v>           : "𜲄"  U1CC84  # VERTICAL LADDER
+<Multi_key> <l> <a> <d> <d> <e> <h>           : "𜲅"  U1CC85  # HORIZONTAL LADDER
+<Multi_key> <l> <a> <u> <n> <c> <less>        : "𜱖"  U1CC56  # LEFT-POINTING ROCKET SHIP
+<Multi_key> <l> <a> <u> <n> <c> <asciicircum> : "𜱗"  U1CC57  # UP-POINTING ROCKET SHIP
+<Multi_key> <l> <a> <u> <n> <c> <greater>     : "𜱘"  U1CC58  # RIGHT-POINTING ROCKET SHIP
+<Multi_key> <l> <a> <u> <n> <c> <v>           : "𜱙"  U1CC59  # DOWN-POINTING ROCKET SHIP
+<Multi_key> <m> <e> <g> <a> <n>               : "🯉"  U1FBC9  # STICK FIGURE WITH DRESS (MEGAN)
+<Multi_key> <m> <l> <a> <n> <d>               : "𜷵"  U1CDF5  # MOON LANDER
+<Multi_key> <o> <f> <i> <s> <h> <less>        : "𜲔"  U1CC94  # LEFT-FACING FISH WITH OPEN MOUTH
+<Multi_key> <o> <f> <i> <s> <h> <greater>     : "𜲕"  U1CC95  # RIGHT-FACING FISH WITH OPEN MOUTH
+<Multi_key> <p> <a> <c> <less>                : "𜱫"  U1CC6B  # BLACK LARGE CIRCLE MINUS LEFT QUARTER SECTION (PACMAN)
+<Multi_key> <p> <a> <c> <asciicircum>         : "𜱬"  U1CC6C  # BLACK LARGE CIRCLE MINUS UPPER QUARTER SECTION (PACMAN)
+<Multi_key> <p> <a> <c> <greater>             : "𜱭"  U1CC6D  # BLACK LARGE CIRCLE MINUS RIGHT QUARTER SECTION (PACMAN)
+<Multi_key> <p> <a> <c> <v>                   : "𜱮"  U1CC6E  # BLACK LARGE CIRCLE MINUS LOWER QUARTER SECTION (PACMAN)
+<Multi_key> <p> <l> <a> <n> <v>               : "𜷸"  U1CDF8  # DOWN-POINTING AIRPLANE
+<Multi_key> <p> <l> <a> <n> <less>            : "𜷹"  U1CDF9  # LEFT-POINTING AIRPLANE
+<Multi_key> <p> <l> <a> <n> <asciicircum>     : "𜷺"  U1CDFA  # SMALL UP-POINTING AIRPLANE
+<Multi_key> <r> <i> <f> <l> <e> <less>        : "𜱥"  U1CC65  # LEFT-POINTING RIFLE
+<Multi_key> <r> <i> <f> <l> <e> <asciicircum> : "𜱦"  U1CC66  # UP-POINTING RIFLE
+<Multi_key> <r> <i> <f> <l> <e> <greater>     : "𜱧"  U1CC67  # RIGHT-POINTING RIFLE
+<Multi_key> <r> <i> <f> <l> <e> <v>           : "𜱨"  U1CC68  # DOWN-POINTING RIFLE
+<Multi_key> <r> <i> <f> <l> <e> <space>       : "🥆"  U1F946  # RIFLE
+<Multi_key> <s> <t> <i> <c> <k> <m>           : "🯅"  U1FBC5  # STICK FIGURE
+<Multi_key> <s> <t> <i> <c> <k> <asciicircum> : "🯆"  U1FBC6  # STICK FIGURE WITH ARMS RAISED
+<Multi_key> <s> <t> <i> <c> <k> <less>        : "🯇"  U1FBC7  # STICK FIGURE LEANING LEFT
+<Multi_key> <s> <t> <i> <c> <k> <greater>     : "🯈"  U1FBC8  # STICK FIGURE LEANING RIGHT
+<Multi_key> <s> <t> <i> <c> <k> <f>           : "🯉"  U1FBC9  # STICK FIGURE WITH DRESS
+<Multi_key> <s> <t> <i> <c> <less>            : "𜰂"  U1CC02  # LEFT-POINTING STICK FIGURE
+<Multi_key> <s> <t> <i> <c> <greater>         : "𜰃"  U1CC03  # RIGHT-POINTING STICK FIGURE
+<Multi_key> <s> <t> <i> <c> <v>               : "𜰄"  U1CC04  # DOWN-POINTING STICK FIGURE
+<Multi_key> <t> <a> <n> <k> <less>            : "𜲞"  U1CC9E  # LEFT-POINTING TANK
+<Multi_key> <t> <a> <n> <k> <greater>         : "𜲟"  U1CC9F  # RIGHT-POINTING TANK
+<Multi_key> <U> <F> <v>                       : "𜱊"  U1CC4A  # FLYING SAUCER WITH BEAMS (UFO)
+<Multi_key> <U> <F> <asciicircum>             : "𜱋"  U1CC4B  # FLYING SAUCER WITHOUT BEAMS (UFO)
+<Multi_key> <x> <k> <c> <d>                   : "🯅"  U1FBC5  # STICK FIGURE (XKCD)
 
 # Some emoji-like text characters (also see hieroglyph section below)
 
@@ -21415,6 +21480,10 @@ include "HangulSyllables"
 <Multi_key> <parenleft> <parenright> <U> <R> <Q>   : "◷" U25F7    # WHITE CIRCLE WITH UPPER RIGHT QUADRANT
 <Multi_key> <parenleft> <parenright> <U> <R> <1>   : "◔" U25D4    # CIRCLE WITH UPPER RIGHT QUADRANT BLACK
 <Multi_key> <parenleft> <parenright> <U> <L> <0>   : "◕" U25D5    # CIRCLE WITH ALL BUT UPPER LEFT QUADRANT BLACK
+<Multi_key> <parenleft> <parenright> <exclam> <less>        : "𜱫"  U1CC6B  # BLACK LARGE CIRCLE MINUS LEFT QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <asciicircum> : "𜱬"  U1CC6C  # BLACK LARGE CIRCLE MINUS UPPER QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <greater>     : "𜱭"  U1CC6D  # BLACK LARGE CIRCLE MINUS RIGHT QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <v>           : "𜱮"  U1CC6E  # BLACK LARGE CIRCLE MINUS LOWER QUARTER SECTION
 <Multi_key> <parenleft> <parenright> <space> <period> <0> : "⚆" U2686  # WHITE CIRCLE WITH DOT RIGHT
 <Multi_key> <parenleft> <parenright> <space> <period> <1> : "⚈" U2688  # BLACK CIRCLE WITH WHITE DOT RIGHT
 <Multi_key> <parenleft> <parenright> <quotedbl> <0> : "⚇" U2687  # WHITE CIRCLE WITH TWO DOTS
@@ -21527,6 +21596,7 @@ include "HangulSyllables"
 <Multi_key> <Tab> <less> <greater> <period>      : "⟐" U27D0   # WHITE DIAMOND WITH CENTRED DOT
 <Multi_key> <Tab> <less> <greater> <question>    : "�" UFFFD   # REPLACEMENT CHARACTER
 <Multi_key> <Tab> <less> <greater> <underscore>  : "⍚"  U235A  # APL FUNCTIONAL SYMBOL DIAMOND UNDERBAR
+<Multi_key> <Tab> <less> <greater> <exclam>      : "𜲍"  U1CC8D  # INVERSE BLACK DIAMOND
 <Multi_key> <Tab> <less> <greater> <Return>      : "⃟" U20DF   # COMBINING ENCLOSING DIAMOND
 
 <Multi_key> <Tab> <less> <asciicircum> <greater> <0>     : "◊"  U25CA  # LOZENGE
