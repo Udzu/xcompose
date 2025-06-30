@@ -18825,6 +18825,7 @@ include "HangulSyllables"
 <Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va) (use hat for 🧢)
 <Multi_key> <C> <a> <p>                 : "⋒"  U22D2   # DOUBLE INTERSECTION
 <Multi_key> <C> <A> <P>                 : "⋂"  U22C2   # N-ARY INTERSECTION
+<Multi_key> <C> <L>                     : "℄"  U2104   # CENTRE LINE SYMBOL
 <Multi_key> <c> <o> <m> <p> <l>         : "∁"  U2201   # COMPLEMENT (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
 <Multi_key> <c> <s> <u> <b> <space>     : "⫏"  U2ACF   # CLOSED SUBSET (conflicts with š, use vs)
@@ -18882,6 +18883,7 @@ include "HangulSyllables"
 <Multi_key> <O> <P> <L> <U> <S>         : "⨁"  U2A01  # N-ARY CIRCLED PLUS OPERATOR
 <Multi_key> <o> <t> <i> <m> <e> <s>     : "⊗"  U2297  # CIRCLED TIMES
 <Multi_key> <O> <T> <I> <M> <E> <S>     : "⨂"  U2A02  # N-ARY CIRCLED TIMES OPERATOR
+<Multi_key> <P> <L>                     : "⅊"  U214A   # PROPERTY LINE
 <Multi_key> <p> <r> <e> <c> <space>     : "≺"  U227A   # PRECEDES
 <Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
 <Multi_key> <p> <r> <e> <c> <s> <i> <m> : "≾"  U227E   # PRECEDES OR EQUIVALENT TO
@@ -20841,7 +20843,8 @@ include "HangulSyllables"
 <Multi_key> <a> <b> <0>        : "🗰"  U1F5F0        # MOOD BUBBLE
 <Multi_key> <a> <b> <z>        : "🗱"  U1F5F1        # LIGHTNING MOOD BUBBLE
 
-<Multi_key> <x> <k> <c> <d>    : "🯅"  U1FBC5        # STICK FIGURE (XCKD)
+<Multi_key> <m> <e> <g> <a> <n> : "🯉"  U1FBC9        # STICK FIGURE WITH DRESS (MEGAN)
+<Multi_key> <x> <k> <c> <d>     : "🯅"  U1FBC5        # STICK FIGURE (XCKD)
 
 # Some emoji-like text characters (also see hieroglyph section below)
 
@@ -22076,6 +22079,8 @@ include "HangulSyllables"
 <Multi_key> <bar> <b> <5> <less>        : "▋"  U258B  # LEFT FIVE EIGHTHS BLOCK
 <Multi_key> <bar> <b> <6> <less>        : "▊"  U258A  # LEFT THREE QUARTERS BLOCK
 <Multi_key> <bar> <b> <7> <less>        : "▉"  U2589  # LEFT SEVEN EIGHTHS BLOCK
+<Multi_key> <bar> <b> <Multi_key> <2> <3> <less> : "🯏"  U1FBCF  # LEFT ONE THIRDS BLOCK
+<Multi_key> <bar> <b> <Multi_key> <1> <3> <less> : "🯎"  U1FBCE  # LEFT TWO THIRDS BLOCK
 
 <Multi_key> <bar> <b> <1> <asciicircum> : "▔"  U2594  # UPPER ONE EIGHTH BLOCK
 <Multi_key> <bar> <b> <2> <asciicircum> : "🮂"  U1FB82  # UPPER ONE QUARTER BLOCK
@@ -22109,6 +22114,32 @@ include "HangulSyllables"
 <Multi_key> <bar> <b> <X> <exclam> <asciicircum> : "🭩"  U1FB69  # LEFT AND LOWER AND RIGHT TRIANGULAR THREE QUARTERS BLOCK
 <Multi_key> <bar> <b> <X> <exclam> <greater>     : "🭪"  U1FB6A  # UPPER AND LEFT AND LOWER TRIANGULAR THREE QUARTERS BLOCK
 <Multi_key> <bar> <b> <X> <exclam> <v>           : "🭫"  U1FB6B  # LEFT AND UPPER AND RIGHT TRIANGULAR THREE QUARTERS BLOCK
+
+<Multi_key> <bar> <b> <bar> <1> : "▏"  U258F  # LEFT ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <bar> <2> : "🭰"  U1FB70  # VERTICAL ONE EIGHTH BLOCK-2
+<Multi_key> <bar> <b> <bar> <3> : "🭱"  U1FB71  # VERTICAL ONE EIGHTH BLOCK-3
+<Multi_key> <bar> <b> <bar> <4> : "🭲"  U1FB72  # VERTICAL ONE EIGHTH BLOCK-4
+<Multi_key> <bar> <b> <bar> <5> : "🭳"  U1FB73  # VERTICAL ONE EIGHTH BLOCK-5
+<Multi_key> <bar> <b> <bar> <6> : "🭴"  U1FB74  # VERTICAL ONE EIGHTH BLOCK-6
+<Multi_key> <bar> <b> <bar> <7> : "🭵"  U1FB75  # VERTICAL ONE EIGHTH BLOCK-7
+<Multi_key> <bar> <b> <bar> <8> : "▕"  U2595  # RIGHT ONE EIGHTH BLOCK
+
+<Multi_key> <bar> <b> <minus> <1> : "▔"  U2594  # UPPER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <minus> <2> : "🭶"  U1FB76  # HORIZONTAL ONE EIGHTH BLOCK-2
+<Multi_key> <bar> <b> <minus> <3> : "🭷"  U1FB77  # HORIZONTAL ONE EIGHTH BLOCK-3
+<Multi_key> <bar> <b> <minus> <4> : "🭸"  U1FB78  # HORIZONTAL ONE EIGHTH BLOCK-4
+<Multi_key> <bar> <b> <minus> <5> : "🭹"  U1FB79  # HORIZONTAL ONE EIGHTH BLOCK-5
+<Multi_key> <bar> <b> <minus> <6> : "🭺"  U1FB7A  # HORIZONTAL ONE EIGHTH BLOCK-6
+<Multi_key> <bar> <b> <minus> <7> : "🭻"  U1FB7B  # HORIZONTAL ONE EIGHTH BLOCK-7
+<Multi_key> <bar> <b> <minus> <8> : "▁"  U2581  # LOWER ONE EIGHTH BLOCK
+
+<Multi_key> <bar> <b> <equal> <1> <8> : "🮀"  U1FB80  # UPPER AND LOWER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <equal> <1> <3> <5> <8> : "🮁"  U1FB81  # HORIZONTAL ONE EIGHTH BLOCK-1358
+
+<Multi_key> <bar> <b> <L> <space> : "🭼"  U1FB7C  # LEFT AND LOWER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <L> <asciicircum> : "🭽"  U1FB7D  # LEFT AND UPPER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <L> <less> <asciicircum> : "🭾"  U1FB7E  # RIGHT AND UPPER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <L> <greater> : "🭿"  U1FB7F  # RIGHT AND LOWER ONE EIGHTH BLOCK
 
 # sextants: | + 6 + sextant list
 
