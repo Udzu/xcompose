@@ -20870,9 +20870,11 @@ include "HangulSyllables"
 <Multi_key> <at> <bracketleft> <V> <S> <bracketright>          : "🆚" U1F19A   # SQUARED VS
 <Multi_key> <at> <bracketleft> <W> <C> <bracketright>          : "🚾" U1F6BE   # WATER CLOSET
 
-########################
-# Dingbats and sprites #
-########################
+################
+# Text sprites #
+################
+
+# Pseudo-convention: directed sprites often replace the last letter with a direction to avoid conflict
 
 # Text-presentation dingbats
 
@@ -20888,8 +20890,6 @@ include "HangulSyllables"
 <Multi_key> <a> <b> <z>        : "🗱"  U1F5F1        # LIGHTNING MOOD BUBBLE
 
 # Legacy computing sprites and related pictographs
-
-# Pseudo-convention: directed sprites often replace the last letter with a direction to avoid conflict
 
 <Multi_key> <exclam> <colon> <parenright>     : "☻"  U263B   # BLACK SMILING FACE
 <Multi_key> <exclam> <colon> <bar>            : "𜱯"  U1CC6F  # BLACK NEUTRAL FACE
