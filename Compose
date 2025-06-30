@@ -1403,7 +1403,7 @@ include "%L"
 ##############################
 
 # Convention: % + [font] + [weight] + character
-#   font: ∅ = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace, d = double-struck
+#   font: ∅ = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace, d = double-struck, O = outlined
 #   weight: ∅ = normal, * = bold, / = italic, */ = bold italic
 
 <Multi_key> <percent> <asterisk> <A> : "𝐀" U1D400    # MATHEMATICAL BOLD CAPITAL A
@@ -2152,6 +2152,45 @@ include "%L"
 <Multi_key> <percent> <d> <slash> <e> : "ⅇ" U2147   # DOUBLE-STRUCK ITALIC SMALL E
 <Multi_key> <percent> <d> <slash> <i> : "ⅈ" U2148   # DOUBLE-STRUCK ITALIC SMALL I
 <Multi_key> <percent> <d> <slash> <j> : "ⅉ" U2149   # DOUBLE-STRUCK ITALIC SMALL J
+
+# (not mathematical but fits in nicely, though %o is already taken by ‰)
+
+<Multi_key> <percent> <O> <A> : "𜳖"  U1CCD6  # OUTLINED LATIN CAPITAL LETTER A
+<Multi_key> <percent> <O> <B> : "𜳗"  U1CCD7  # OUTLINED LATIN CAPITAL LETTER B
+<Multi_key> <percent> <O> <C> : "𜳘"  U1CCD8  # OUTLINED LATIN CAPITAL LETTER C
+<Multi_key> <percent> <O> <D> : "𜳙"  U1CCD9  # OUTLINED LATIN CAPITAL LETTER D
+<Multi_key> <percent> <O> <E> : "𜳚"  U1CCDA  # OUTLINED LATIN CAPITAL LETTER E
+<Multi_key> <percent> <O> <F> : "𜳛"  U1CCDB  # OUTLINED LATIN CAPITAL LETTER F
+<Multi_key> <percent> <O> <G> : "𜳜"  U1CCDC  # OUTLINED LATIN CAPITAL LETTER G
+<Multi_key> <percent> <O> <H> : "𜳝"  U1CCDD  # OUTLINED LATIN CAPITAL LETTER H
+<Multi_key> <percent> <O> <I> : "𜳞"  U1CCDE  # OUTLINED LATIN CAPITAL LETTER I
+<Multi_key> <percent> <O> <J> : "𜳟"  U1CCDF  # OUTLINED LATIN CAPITAL LETTER J
+<Multi_key> <percent> <O> <K> : "𜳠"  U1CCE0  # OUTLINED LATIN CAPITAL LETTER K
+<Multi_key> <percent> <O> <L> : "𜳡"  U1CCE1  # OUTLINED LATIN CAPITAL LETTER L
+<Multi_key> <percent> <O> <M> : "𜳢"  U1CCE2  # OUTLINED LATIN CAPITAL LETTER M
+<Multi_key> <percent> <O> <N> : "𜳣"  U1CCE3  # OUTLINED LATIN CAPITAL LETTER N
+<Multi_key> <percent> <O> <O> : "𜳤"  U1CCE4  # OUTLINED LATIN CAPITAL LETTER O
+<Multi_key> <percent> <O> <P> : "𜳥"  U1CCE5  # OUTLINED LATIN CAPITAL LETTER P
+<Multi_key> <percent> <O> <Q> : "𜳦"  U1CCE6  # OUTLINED LATIN CAPITAL LETTER Q
+<Multi_key> <percent> <O> <R> : "𜳧"  U1CCE7  # OUTLINED LATIN CAPITAL LETTER R
+<Multi_key> <percent> <O> <S> : "𜳨"  U1CCE8  # OUTLINED LATIN CAPITAL LETTER S
+<Multi_key> <percent> <O> <T> : "𜳩"  U1CCE9  # OUTLINED LATIN CAPITAL LETTER T
+<Multi_key> <percent> <O> <U> : "𜳪"  U1CCEA  # OUTLINED LATIN CAPITAL LETTER U
+<Multi_key> <percent> <O> <V> : "𜳫"  U1CCEB  # OUTLINED LATIN CAPITAL LETTER V
+<Multi_key> <percent> <O> <W> : "𜳬"  U1CCEC  # OUTLINED LATIN CAPITAL LETTER W
+<Multi_key> <percent> <O> <X> : "𜳭"  U1CCED  # OUTLINED LATIN CAPITAL LETTER X
+<Multi_key> <percent> <O> <Y> : "𜳮"  U1CCEE  # OUTLINED LATIN CAPITAL LETTER Y
+<Multi_key> <percent> <O> <Z> : "𜳯"  U1CCEF  # OUTLINED LATIN CAPITAL LETTER Z
+<Multi_key> <percent> <O> <0> : "𜳰"  U1CCF0  # OUTLINED DIGIT ZERO
+<Multi_key> <percent> <O> <1> : "𜳱"  U1CCF1  # OUTLINED DIGIT ONE
+<Multi_key> <percent> <O> <2> : "𜳲"  U1CCF2  # OUTLINED DIGIT TWO
+<Multi_key> <percent> <O> <3> : "𜳳"  U1CCF3  # OUTLINED DIGIT THREE
+<Multi_key> <percent> <O> <4> : "𜳴"  U1CCF4  # OUTLINED DIGIT FOUR
+<Multi_key> <percent> <O> <5> : "𜳵"  U1CCF5  # OUTLINED DIGIT FIVE
+<Multi_key> <percent> <O> <6> : "𜳶"  U1CCF6  # OUTLINED DIGIT SIX
+<Multi_key> <percent> <O> <7> : "𜳷"  U1CCF7  # OUTLINED DIGIT SEVEN
+<Multi_key> <percent> <O> <8> : "𜳸"  U1CCF8  # OUTLINED DIGIT EIGHT
+<Multi_key> <percent> <O> <9> : "𜳹"  U1CCF9  # OUTLINED DIGIT NINE
 
 ##########################
 # Enclosed alphanumerics #
@@ -10411,6 +10450,351 @@ include "%L"
 <Multi_key> <C> <p> <slash> <slash> <period> : "𑫷"  U11AF7  # PAU CIN HAU LOW-FALLING TONE FINAL
 <Multi_key> <C> <p> <slash> <slash> <colon> : "𑫸"  U11AF8  # PAU CIN HAU GLOTTAL STOP FINAL
 
+# (R = Cree Syllabics) (not the best abbreviation, but think CR = CREE)
+
+# differences between East and West Cree orthographies are signified by a E/W suffix
+
+<Multi_key> <C> <R> <e> : "ᐁ"  U1401  # CANADIAN SYLLABICS E
+<Multi_key> <C> <R> <i> : "ᐃ"  U1403  # CANADIAN SYLLABICS I
+<Multi_key> <C> <R> <o> : "ᐅ"  U1405  # CANADIAN SYLLABICS O
+<Multi_key> <C> <R> <a> : "ᐊ"  U140A  # CANADIAN SYLLABICS A
+<Multi_key> <C> <R> <asciicircum> <i> : "ᐄ"  U1404  # CANADIAN SYLLABICS II
+<Multi_key> <C> <R> <asciicircum> <o> : "ᐆ"  U1406  # CANADIAN SYLLABICS OO
+<Multi_key> <C> <R> <asciicircum> <a> : "ᐋ"  U140B  # CANADIAN SYLLABICS AA
+
+<Multi_key> <C> <R> <p> <e> : "ᐯ"  U142F  # CANADIAN SYLLABICS PE
+<Multi_key> <C> <R> <p> <i> : "ᐱ"  U1431  # CANADIAN SYLLABICS PI
+<Multi_key> <C> <R> <p> <o> : "ᐳ"  U1433  # CANADIAN SYLLABICS PO
+<Multi_key> <C> <R> <p> <a> : "ᐸ"  U1438  # CANADIAN SYLLABICS PA
+<Multi_key> <C> <R> <p> <asciicircum> <i> : "ᐲ"  U1432  # CANADIAN SYLLABICS PII
+<Multi_key> <C> <R> <p> <asciicircum> <o> : "ᐴ"  U1434  # CANADIAN SYLLABICS POO
+<Multi_key> <C> <R> <p> <asciicircum> <a> : "ᐹ"  U1439  # CANADIAN SYLLABICS PAA
+<Multi_key> <C> <R> <p> <E> : "ᑉ"  U1449  # CANADIAN SYLLABICS P
+<Multi_key> <C> <R> <p> <W> : "ᑊ"  U144A  # CANADIAN SYLLABICS WEST-CREE P
+
+<Multi_key> <C> <R> <t> <e> : "ᑌ"  U144C  # CANADIAN SYLLABICS TE
+<Multi_key> <C> <R> <t> <i> : "ᑎ"  U144E  # CANADIAN SYLLABICS TI
+<Multi_key> <C> <R> <t> <o> : "ᑐ"  U1450  # CANADIAN SYLLABICS TO
+<Multi_key> <C> <R> <t> <a> : "ᑕ"  U1455  # CANADIAN SYLLABICS TA
+<Multi_key> <C> <R> <t> <asciicircum> <i> : "ᑏ"  U144F  # CANADIAN SYLLABICS TII
+<Multi_key> <C> <R> <t> <asciicircum> <o> : "ᑑ"  U1451  # CANADIAN SYLLABICS TOO
+<Multi_key> <C> <R> <t> <asciicircum> <a> : "ᑖ"  U1456  # CANADIAN SYLLABICS TAA
+<Multi_key> <C> <R> <t> <E> : "ᑦ"  U1466  # CANADIAN SYLLABICS T
+<Multi_key> <C> <R> <t> <W> : "ᐟ"  U141F  # CANADIAN SYLLABICS FINAL ACUTE
+
+<Multi_key> <C> <R> <k> <e> : "ᑫ"  U146B  # CANADIAN SYLLABICS KE
+<Multi_key> <C> <R> <k> <i> : "ᑭ"  U146D  # CANADIAN SYLLABICS KI
+<Multi_key> <C> <R> <k> <o> : "ᑯ"  U146F  # CANADIAN SYLLABICS KO
+<Multi_key> <C> <R> <k> <a> : "ᑲ"  U1472  # CANADIAN SYLLABICS KA
+<Multi_key> <C> <R> <k> <asciicircum> <i> : "ᑮ"  U146E  # CANADIAN SYLLABICS KII
+<Multi_key> <C> <R> <k> <asciicircum> <o> : "ᑰ"  U1470  # CANADIAN SYLLABICS KOO
+<Multi_key> <C> <R> <k> <asciicircum> <a> : "ᑳ"  U1473  # CANADIAN SYLLABICS KAA
+<Multi_key> <C> <R> <k> <E> : "ᒃ"  U1483  # CANADIAN SYLLABICS K
+<Multi_key> <C> <R> <k> <W> : "ᐠ"  U1420  # CANADIAN SYLLABICS FINAL GRAVE
+
+<Multi_key> <C> <R> <c> <e> : "ᒉ"  U1489  # CANADIAN SYLLABICS CE
+<Multi_key> <C> <R> <c> <i> : "ᒋ"  U148B  # CANADIAN SYLLABICS CI
+<Multi_key> <C> <R> <c> <o> : "ᒍ"  U148D  # CANADIAN SYLLABICS CO
+<Multi_key> <C> <R> <c> <a> : "ᒐ"  U1490  # CANADIAN SYLLABICS CA
+<Multi_key> <C> <R> <c> <asciicircum> <i> : "ᒌ"  U148C  # CANADIAN SYLLABICS CII
+<Multi_key> <C> <R> <c> <asciicircum> <o> : "ᒎ"  U148E  # CANADIAN SYLLABICS COO
+<Multi_key> <C> <R> <c> <asciicircum> <a> : "ᒑ"  U1491  # CANADIAN SYLLABICS CAA
+<Multi_key> <C> <R> <c> <E> : "ᒡ"  U14A1  # CANADIAN SYLLABICS C
+<Multi_key> <C> <R> <c> <W> : "ᐨ"  U1428  # CANADIAN SYLLABICS FINAL SHORT HORIZONTAL STROKE
+
+<Multi_key> <C> <R> <m> <e> : "ᒣ"  U14A3  # CANADIAN SYLLABICS ME
+<Multi_key> <C> <R> <m> <i> : "ᒥ"  U14A5  # CANADIAN SYLLABICS MI
+<Multi_key> <C> <R> <m> <o> : "ᒧ"  U14A7  # CANADIAN SYLLABICS MO
+<Multi_key> <C> <R> <m> <a> : "ᒪ"  U14AA  # CANADIAN SYLLABICS MA
+<Multi_key> <C> <R> <m> <asciicircum> <i> : "ᒦ"  U14A6  # CANADIAN SYLLABICS MII
+<Multi_key> <C> <R> <m> <asciicircum> <o> : "ᒨ"  U14A8  # CANADIAN SYLLABICS MOO
+<Multi_key> <C> <R> <m> <asciicircum> <a> : "ᒫ"  U14AB  # CANADIAN SYLLABICS MAA
+<Multi_key> <C> <R> <m> <E> : "ᒻ"  U14BB  # CANADIAN SYLLABICS M
+<Multi_key> <C> <R> <m> <W> : "ᒼ"  U14BC  # CANADIAN SYLLABICS WEST-CREE M
+
+<Multi_key> <C> <R> <n> <e> : "ᓀ"  U14C0  # CANADIAN SYLLABICS NE
+<Multi_key> <C> <R> <n> <i> : "ᓂ"  U14C2  # CANADIAN SYLLABICS NI
+<Multi_key> <C> <R> <n> <o> : "ᓄ"  U14C4  # CANADIAN SYLLABICS NO
+<Multi_key> <C> <R> <n> <a> : "ᓇ"  U14C7  # CANADIAN SYLLABICS NA
+<Multi_key> <C> <R> <n> <asciicircum> <i> : "ᓃ"  U14C3  # CANADIAN SYLLABICS NII
+<Multi_key> <C> <R> <n> <asciicircum> <o> : "ᓅ"  U14C5  # CANADIAN SYLLABICS NOO
+<Multi_key> <C> <R> <n> <asciicircum> <a> : "ᓈ"  U14C8  # CANADIAN SYLLABICS NAA
+<Multi_key> <C> <R> <n> <E> : "ᓐ"  U14D0  # CANADIAN SYLLABICS N
+<Multi_key> <C> <R> <n> <W> : "ᐣ"  U1423  # CANADIAN SYLLABICS FINAL RIGHT HALF RING
+
+<Multi_key> <C> <R> <s> <e> : "ᓭ"  U14ED  # CANADIAN SYLLABICS SE
+<Multi_key> <C> <R> <s> <i> : "ᓯ"  U14EF  # CANADIAN SYLLABICS SI
+<Multi_key> <C> <R> <s> <o> : "ᓱ"  U14F1  # CANADIAN SYLLABICS SO
+<Multi_key> <C> <R> <s> <a> : "ᓴ"  U14F4  # CANADIAN SYLLABICS SA
+<Multi_key> <C> <R> <s> <asciicircum> <i> : "ᓰ"  U14F0  # CANADIAN SYLLABICS SII
+<Multi_key> <C> <R> <s> <asciicircum> <o> : "ᓲ"  U14F2  # CANADIAN SYLLABICS SOO
+<Multi_key> <C> <R> <s> <asciicircum> <a> : "ᓵ"  U14F5  # CANADIAN SYLLABICS SAA
+<Multi_key> <C> <R> <s> <E> : "ᔅ"  U1505  # CANADIAN SYLLABICS S
+<Multi_key> <C> <R> <s> <W> : "ᐢ"  U1422  # CANADIAN SYLLABICS FINAL TOP HALF RING
+
+<Multi_key> <C> <R> <s> <h> <e> : "ᔐ"  U1510  # CANADIAN SYLLABICS SHE
+<Multi_key> <C> <R> <s> <h> <i> : "ᔑ"  U1511  # CANADIAN SYLLABICS SHI
+<Multi_key> <C> <R> <s> <h> <o> : "ᔓ"  U1513  # CANADIAN SYLLABICS SHO
+<Multi_key> <C> <R> <s> <h> <a> : "ᔕ"  U1515  # CANADIAN SYLLABICS SHA
+<Multi_key> <C> <R> <s> <h> <asciicircum> <i> : "ᔒ"  U1512  # CANADIAN SYLLABICS SHII
+<Multi_key> <C> <R> <s> <h> <asciicircum> <o> : "ᔔ"  U1514  # CANADIAN SYLLABICS SHOO
+<Multi_key> <C> <R> <s> <h> <asciicircum> <a> : "ᔖ"  U1516  # CANADIAN SYLLABICS SHAA
+<Multi_key> <C> <R> <s> <h> <E> : "ᔥ"  U1525  # CANADIAN SYLLABICS SH
+
+<Multi_key> <C> <R> <y> <e> : "ᔦ"  U1526  # CANADIAN SYLLABICS YE
+<Multi_key> <C> <R> <y> <i> : "ᔨ"  U1528  # CANADIAN SYLLABICS YI
+<Multi_key> <C> <R> <y> <o> : "ᔪ"  U152A  # CANADIAN SYLLABICS YO
+<Multi_key> <C> <R> <y> <a> : "ᔭ"  U152D  # CANADIAN SYLLABICS YA
+<Multi_key> <C> <R> <y> <asciicircum> <i> : "ᔩ"  U1529  # CANADIAN SYLLABICS YII
+<Multi_key> <C> <R> <y> <asciicircum> <o> : "ᔫ"  U152B  # CANADIAN SYLLABICS YOO
+<Multi_key> <C> <R> <y> <asciicircum> <a> : "ᔮ"  U152E  # CANADIAN SYLLABICS YAA
+<Multi_key> <C> <R> <y> <E> : "ᔾ"  U153E  # CANADIAN SYLLABICS Y
+<Multi_key> <C> <R> <y> <W> : "ᕀ"  U1540  # CANADIAN SYLLABICS WEST-CREE Y
+
+<Multi_key> <C> <R> <r> <e> <E> : "ᕃ"  U1543  # CANADIAN SYLLABICS R-CREE RE
+<Multi_key> <C> <R> <r> <e> <W> : "ᖊ"  U158A  # CANADIAN SYLLABICS WEST-CREE RE
+<Multi_key> <C> <R> <r> <i> <E> : "ᕆ"  U1546  # CANADIAN SYLLABICS RI
+<Multi_key> <C> <R> <r> <i> <W> : "ᖋ"  U158B  # CANADIAN SYLLABICS WEST-CREE RI
+<Multi_key> <C> <R> <r> <o> <E> : "ᕈ"  U1548  # CANADIAN SYLLABICS RO
+<Multi_key> <C> <R> <r> <o> <W> : "ᖌ"  U158C  # CANADIAN SYLLABICS WEST-CREE RO
+<Multi_key> <C> <R> <r> <a> <E> : "ᕋ"  U154B  # CANADIAN SYLLABICS RA
+<Multi_key> <C> <R> <r> <a> <W> : "ᖍ"  U158D  # CANADIAN SYLLABICS WEST-CREE RA
+<Multi_key> <C> <R> <r> <asciicircum> <i> : "ᕇ"  U1547  # CANADIAN SYLLABICS RII
+<Multi_key> <C> <R> <r> <asciicircum> <o> : "ᕉ"  U1549  # CANADIAN SYLLABICS ROO
+<Multi_key> <C> <R> <r> <asciicircum> <a> : "ᕌ"  U154C  # CANADIAN SYLLABICS RAA
+<Multi_key> <C> <R> <r> <E> : "ᕐ"  U1550  # CANADIAN SYLLABICS R
+<Multi_key> <C> <R> <r> <W> : "ᕑ"  U1551  # CANADIAN SYLLABICS WEST-CREE R
+
+<Multi_key> <C> <R> <l> <e> <E> : "ᓓ"  U14D3  # CANADIAN SYLLABICS LE
+<Multi_key> <C> <R> <l> <e> <W> : "ᕄ"  U1544  # CANADIAN SYLLABICS WEST-CREE LE
+<Multi_key> <C> <R> <l> <i> : "ᓕ"  U14D5  # CANADIAN SYLLABICS LI
+<Multi_key> <C> <R> <l> <o> <E> : "ᓗ"  U14D7  # CANADIAN SYLLABICS LO
+<Multi_key> <C> <R> <l> <o> <W> : "ᕊ"  U154A  # CANADIAN SYLLABICS WEST-CREE LO
+<Multi_key> <C> <R> <l> <a> <E> : "ᓚ"  U14DA  # CANADIAN SYLLABICS LA
+<Multi_key> <C> <R> <l> <a> <W> : "ᕍ"  U154D  # CANADIAN SYLLABICS WEST-CREE LA
+<Multi_key> <C> <R> <l> <asciicircum> <i> : "ᓖ"  U14D6  # CANADIAN SYLLABICS LII
+<Multi_key> <C> <R> <l> <asciicircum> <o> <E> : "ᓘ"  U14D8  # CANADIAN SYLLABICS LOO
+<Multi_key> <C> <R> <l> <asciicircum> <o> <W> : "ᣡ"  U18E1  # CANADIAN SYLLABICS WEST-CREE LOO
+<Multi_key> <C> <R> <l> <asciicircum> <a> <E> : "ᓛ"  U14DB  # CANADIAN SYLLABICS LAA
+<Multi_key> <C> <R> <l> <asciicircum> <a> <W> : "ᣢ"  U18E2  # CANADIAN SYLLABICS WEST-CREE LAA
+<Multi_key> <C> <R> <l> <E> : "ᓪ"  U14EA  # CANADIAN SYLLABICS L
+<Multi_key> <C> <R> <l> <W> : "ᓫ"  U14EB  # CANADIAN SYLLABICS WEST-CREE L
+
+<Multi_key> <C> <R> <f> <e> : "ᕓ"  U1553  # CANADIAN SYLLABICS FE
+<Multi_key> <C> <R> <f> <i> : "ᕕ"  U1555  # CANADIAN SYLLABICS FI
+<Multi_key> <C> <R> <f> <o> : "ᕗ"  U1557  # CANADIAN SYLLABICS FO
+<Multi_key> <C> <R> <f> <a> : "ᕙ"  U1559  # CANADIAN SYLLABICS FA
+<Multi_key> <C> <R> <f> <asciicircum> <i> : "ᕖ"  U1556  # CANADIAN SYLLABICS FII
+<Multi_key> <C> <R> <f> <asciicircum> <o> : "ᕘ"  U1558  # CANADIAN SYLLABICS FOO
+<Multi_key> <C> <R> <f> <asciicircum> <a> : "ᕚ"  U155A  # CANADIAN SYLLABICS FAA
+<Multi_key> <C> <R> <f> <E> : "ᕝ"  U155D  # CANADIAN SYLLABICS F
+
+<Multi_key> <C> <R> <t> <h> <e> <E> : "ᕞ"  U155E  # CANADIAN SYLLABICS THE
+<Multi_key> <C> <R> <t> <h> <e> <W> : "ᖧ"  U15A7  # CANADIAN SYLLABICS TH-CREE THE
+<Multi_key> <C> <R> <t> <h> <i> <E> : "ᕠ"  U1560  # CANADIAN SYLLABICS THI
+<Multi_key> <C> <R> <t> <h> <i> <W> : "ᖨ"  U15A8  # CANADIAN SYLLABICS TH-CREE THI
+<Multi_key> <C> <R> <t> <h> <o> <E> : "ᕤ"  U1564  # CANADIAN SYLLABICS THO
+<Multi_key> <C> <R> <t> <h> <o> <W> : "ᖪ"  U15AA  # CANADIAN SYLLABICS TH-CREE THO
+<Multi_key> <C> <R> <t> <h> <a> <E> : "ᕦ"  U1566  # CANADIAN SYLLABICS THA
+<Multi_key> <C> <R> <t> <h> <a> <W> : "ᖬ"  U15AC  # CANADIAN SYLLABICS TH-CREE THA
+<Multi_key> <C> <R> <t> <h> <asciicircum> <i> <E> : "ᕢ"  U1562  # CANADIAN SYLLABICS THII
+<Multi_key> <C> <R> <t> <h> <asciicircum> <i> <W> : "ᖩ"  U15A9  # CANADIAN SYLLABICS TH-CREE THII
+<Multi_key> <C> <R> <t> <h> <asciicircum> <o> <E> : "ᕥ"  U1565  # CANADIAN SYLLABICS THOO
+<Multi_key> <C> <R> <t> <h> <asciicircum> <o> <W> : "ᖫ"  U15AB  # CANADIAN SYLLABICS TH-CREE THOO
+<Multi_key> <C> <R> <t> <h> <asciicircum> <a> <E> : "ᕧ"  U1567  # CANADIAN SYLLABICS THAA
+<Multi_key> <C> <R> <t> <h> <asciicircum> <a> <W> : "ᖭ"  U15AD  # CANADIAN SYLLABICS TH-CREE THAA
+<Multi_key> <C> <R> <t> <h> <E> : "ᕪ"  U156A  # CANADIAN SYLLABICS TH
+<Multi_key> <C> <R> <t> <h> <W> : "ᙾ"  U167E  # CANADIAN SYLLABICS WOODS-CREE FINAL TH
+
+<Multi_key> <C> <R> <h> <space> : "ᐦ"  U1426  # CANADIAN SYLLABICS FINAL DOUBLE SHORT VERTICAL STROKES
+<Multi_key> <C> <R> <h> <k> : "ᕽ"  U157D  # CANADIAN SYLLABICS HK
+
+<Multi_key> <C> <R> <w> <e> <E> : "ᐌ"  U140C  # CANADIAN SYLLABICS WE
+<Multi_key> <C> <R> <w> <e> <W> : "ᐍ"  U140D  # CANADIAN SYLLABICS WEST-CREE WE
+<Multi_key> <C> <R> <w> <i> <E> : "ᐎ"  U140E  # CANADIAN SYLLABICS WI
+<Multi_key> <C> <R> <w> <i> <W> : "ᐏ"  U140F  # CANADIAN SYLLABICS WEST-CREE WI
+<Multi_key> <C> <R> <w> <o> <E> : "ᐒ"  U1412  # CANADIAN SYLLABICS WO
+<Multi_key> <C> <R> <w> <o> <W> : "ᐓ"  U1413  # CANADIAN SYLLABICS WEST-CREE WO
+<Multi_key> <C> <R> <w> <a> <E> : "ᐗ"  U1417  # CANADIAN SYLLABICS WA
+<Multi_key> <C> <R> <w> <a> <W> : "ᐘ"  U1418  # CANADIAN SYLLABICS WEST-CREE WA
+<Multi_key> <C> <R> <w> <asciicircum> <i> <E> : "ᐐ"  U1410  # CANADIAN SYLLABICS WII
+<Multi_key> <C> <R> <w> <asciicircum> <i> <W> : "ᐑ"  U1411  # CANADIAN SYLLABICS WEST-CREE WII
+<Multi_key> <C> <R> <w> <asciicircum> <o> <E> : "ᐔ"  U1414  # CANADIAN SYLLABICS WOO
+<Multi_key> <C> <R> <w> <asciicircum> <o> <W> : "ᐕ"  U1415  # CANADIAN SYLLABICS WEST-CREE WOO
+<Multi_key> <C> <R> <w> <asciicircum> <a> <E> : "ᐙ"  U1419  # CANADIAN SYLLABICS WAA
+<Multi_key> <C> <R> <w> <asciicircum> <a> <W> : "ᐚ"  U141A  # CANADIAN SYLLABICS WEST-CREE WAA
+<Multi_key> <C> <R> <w> <E> : "ᐤ"  U1424  # CANADIAN SYLLABICS FINAL RING
+<Multi_key> <C> <R> <w> <W> : "ᐤ"  U1424  # CANADIAN SYLLABICS FINAL RING
+
+<Multi_key> <C> <R> <p> <w> <e> <E> : "ᐺ"  U143A  # CANADIAN SYLLABICS PWE
+<Multi_key> <C> <R> <p> <w> <e> <W> : "ᐻ"  U143B  # CANADIAN SYLLABICS WEST-CREE PWE
+<Multi_key> <C> <R> <p> <w> <i> <E> : "ᐼ"  U143C  # CANADIAN SYLLABICS PWI
+<Multi_key> <C> <R> <p> <w> <i> <W> : "ᐽ"  U143D  # CANADIAN SYLLABICS WEST-CREE PWI
+<Multi_key> <C> <R> <p> <w> <o> <E> : "ᑀ"  U1440  # CANADIAN SYLLABICS PWO
+<Multi_key> <C> <R> <p> <w> <o> <W> : "ᑁ"  U1441  # CANADIAN SYLLABICS WEST-CREE PWO
+<Multi_key> <C> <R> <p> <w> <a> <E> : "ᑄ"  U1444  # CANADIAN SYLLABICS PWA
+<Multi_key> <C> <R> <p> <w> <a> <W> : "ᑅ"  U1445  # CANADIAN SYLLABICS WEST-CREE PWA
+<Multi_key> <C> <R> <p> <w> <asciicircum> <i> <E> : "ᐾ"  U143E  # CANADIAN SYLLABICS PWII
+<Multi_key> <C> <R> <p> <w> <asciicircum> <i> <W> : "ᐿ"  U143F  # CANADIAN SYLLABICS WEST-CREE PWII
+<Multi_key> <C> <R> <p> <w> <asciicircum> <o> <E> : "ᑂ"  U1442  # CANADIAN SYLLABICS PWOO
+<Multi_key> <C> <R> <p> <w> <asciicircum> <o> <W> : "ᑃ"  U1443  # CANADIAN SYLLABICS WEST-CREE PWOO
+<Multi_key> <C> <R> <p> <w> <asciicircum> <a> <E> : "ᑆ"  U1446  # CANADIAN SYLLABICS PWAA
+<Multi_key> <C> <R> <p> <w> <asciicircum> <a> <W> : "ᑇ"  U1447  # CANADIAN SYLLABICS WEST-CREE PWAA
+
+<Multi_key> <C> <R> <t> <w> <e> <E> : "ᑗ"  U1457  # CANADIAN SYLLABICS TWE
+<Multi_key> <C> <R> <t> <w> <e> <W> : "ᑘ"  U1458  # CANADIAN SYLLABICS WEST-CREE TWE
+<Multi_key> <C> <R> <t> <w> <i> <E> : "ᑙ"  U1459  # CANADIAN SYLLABICS TWI
+<Multi_key> <C> <R> <t> <w> <i> <W> : "ᑚ"  U145A  # CANADIAN SYLLABICS WEST-CREE TWI
+<Multi_key> <C> <R> <t> <w> <o> <E> : "ᑝ"  U145D  # CANADIAN SYLLABICS TWO
+<Multi_key> <C> <R> <t> <w> <o> <W> : "ᑞ"  U145E  # CANADIAN SYLLABICS WEST-CREE TWO
+<Multi_key> <C> <R> <t> <w> <a> <E> : "ᑡ"  U1461  # CANADIAN SYLLABICS TWA
+<Multi_key> <C> <R> <t> <w> <a> <W> : "ᑢ"  U1462  # CANADIAN SYLLABICS WEST-CREE TWA
+<Multi_key> <C> <R> <t> <w> <asciicircum> <i> <E> : "ᑛ"  U145B  # CANADIAN SYLLABICS TWII
+<Multi_key> <C> <R> <t> <w> <asciicircum> <i> <W> : "ᑜ"  U145C  # CANADIAN SYLLABICS WEST-CREE TWII
+<Multi_key> <C> <R> <t> <w> <asciicircum> <o> <E> : "ᑟ"  U145F  # CANADIAN SYLLABICS TWOO
+<Multi_key> <C> <R> <t> <w> <asciicircum> <o> <W> : "ᑠ"  U1460  # CANADIAN SYLLABICS WEST-CREE TWOO
+<Multi_key> <C> <R> <t> <w> <asciicircum> <a> <E> : "ᑣ"  U1463  # CANADIAN SYLLABICS TWAA
+<Multi_key> <C> <R> <t> <w> <asciicircum> <a> <W> : "ᑤ"  U1464  # CANADIAN SYLLABICS WEST-CREE TWAA
+
+<Multi_key> <C> <R> <k> <w> <e> <E> : "ᑴ"  U1474  # CANADIAN SYLLABICS KWE
+<Multi_key> <C> <R> <k> <w> <e> <W> : "ᑵ"  U1475  # CANADIAN SYLLABICS WEST-CREE KWE
+<Multi_key> <C> <R> <k> <w> <i> <E> : "ᑶ"  U1476  # CANADIAN SYLLABICS KWI
+<Multi_key> <C> <R> <k> <w> <i> <W> : "ᑷ"  U1477  # CANADIAN SYLLABICS WEST-CREE KWI
+<Multi_key> <C> <R> <k> <w> <o> <E> : "ᑺ"  U147A  # CANADIAN SYLLABICS KWO
+<Multi_key> <C> <R> <k> <w> <o> <W> : "ᑻ"  U147B  # CANADIAN SYLLABICS WEST-CREE KWO
+<Multi_key> <C> <R> <k> <w> <a> <E> : "ᑾ"  U147E  # CANADIAN SYLLABICS KWA
+<Multi_key> <C> <R> <k> <w> <a> <W> : "ᑿ"  U147F  # CANADIAN SYLLABICS WEST-CREE KWA
+<Multi_key> <C> <R> <k> <w> <asciicircum> <i> <E> : "ᑸ"  U1478  # CANADIAN SYLLABICS KWII
+<Multi_key> <C> <R> <k> <w> <asciicircum> <i> <W> : "ᑹ"  U1479  # CANADIAN SYLLABICS WEST-CREE KWII
+<Multi_key> <C> <R> <k> <w> <asciicircum> <o> <E> : "ᑼ"  U147C  # CANADIAN SYLLABICS KWOO
+<Multi_key> <C> <R> <k> <w> <asciicircum> <o> <W> : "ᑽ"  U147D  # CANADIAN SYLLABICS WEST-CREE KWOO
+<Multi_key> <C> <R> <k> <w> <asciicircum> <a> <E> : "ᒀ"  U1480  # CANADIAN SYLLABICS KWAA
+<Multi_key> <C> <R> <k> <w> <asciicircum> <a> <W> : "ᒁ"  U1481  # CANADIAN SYLLABICS WEST-CREE KWAA
+<Multi_key> <C> <R> <k> <w> <E> : "ᒄ"  U1484  # CANADIAN SYLLABICS KW
+
+<Multi_key> <C> <R> <c> <w> <e> <E> : "ᒒ"  U1492  # CANADIAN SYLLABICS CWE
+<Multi_key> <C> <R> <c> <w> <e> <W> : "ᒓ"  U1493  # CANADIAN SYLLABICS WEST-CREE CWE
+<Multi_key> <C> <R> <c> <w> <i> <E> : "ᒔ"  U1494  # CANADIAN SYLLABICS CWI
+<Multi_key> <C> <R> <c> <w> <i> <W> : "ᒕ"  U1495  # CANADIAN SYLLABICS WEST-CREE CWI
+<Multi_key> <C> <R> <c> <w> <o> <E> : "ᒘ"  U1498  # CANADIAN SYLLABICS CWO
+<Multi_key> <C> <R> <c> <w> <o> <W> : "ᒙ"  U1499  # CANADIAN SYLLABICS WEST-CREE CWO
+<Multi_key> <C> <R> <c> <w> <a> <E> : "ᒜ"  U149C  # CANADIAN SYLLABICS CWA
+<Multi_key> <C> <R> <c> <w> <a> <W> : "ᒝ"  U149D  # CANADIAN SYLLABICS WEST-CREE CWA
+<Multi_key> <C> <R> <c> <w> <asciicircum> <i> <E> : "ᒖ"  U1496  # CANADIAN SYLLABICS CWII
+<Multi_key> <C> <R> <c> <w> <asciicircum> <i> <W> : "ᒗ"  U1497  # CANADIAN SYLLABICS WEST-CREE CWII
+<Multi_key> <C> <R> <c> <w> <asciicircum> <o> <E> : "ᒚ"  U149A  # CANADIAN SYLLABICS CWOO
+<Multi_key> <C> <R> <c> <w> <asciicircum> <o> <W> : "ᒛ"  U149B  # CANADIAN SYLLABICS WEST-CREE CWOO
+<Multi_key> <C> <R> <c> <w> <asciicircum> <a> <E> : "ᒞ"  U149E  # CANADIAN SYLLABICS CWAA
+<Multi_key> <C> <R> <c> <w> <asciicircum> <a> <W> : "ᒟ"  U149F  # CANADIAN SYLLABICS WEST-CREE CWAA
+
+<Multi_key> <C> <R> <m> <w> <e> <E> : "ᒬ"  U14AC  # CANADIAN SYLLABICS MWE
+<Multi_key> <C> <R> <m> <w> <e> <W> : "ᒭ"  U14AD  # CANADIAN SYLLABICS WEST-CREE MWE
+<Multi_key> <C> <R> <m> <w> <i> <E> : "ᒮ"  U14AE  # CANADIAN SYLLABICS MWI
+<Multi_key> <C> <R> <m> <w> <i> <W> : "ᒯ"  U14AF  # CANADIAN SYLLABICS WEST-CREE MWI
+<Multi_key> <C> <R> <m> <w> <o> <E> : "ᒲ"  U14B2  # CANADIAN SYLLABICS MWO
+<Multi_key> <C> <R> <m> <w> <o> <W> : "ᒳ"  U14B3  # CANADIAN SYLLABICS WEST-CREE MWO
+<Multi_key> <C> <R> <m> <w> <a> <E> : "ᒶ"  U14B6  # CANADIAN SYLLABICS MWA
+<Multi_key> <C> <R> <m> <w> <a> <W> : "ᒷ"  U14B7  # CANADIAN SYLLABICS WEST-CREE MWA
+<Multi_key> <C> <R> <m> <w> <asciicircum> <i> <E> : "ᒰ"  U14B0  # CANADIAN SYLLABICS MWII
+<Multi_key> <C> <R> <m> <w> <asciicircum> <i> <W> : "ᒱ"  U14B1  # CANADIAN SYLLABICS WEST-CREE MWII
+<Multi_key> <C> <R> <m> <w> <asciicircum> <o> <E> : "ᒴ"  U14B4  # CANADIAN SYLLABICS MWOO
+<Multi_key> <C> <R> <m> <w> <asciicircum> <o> <W> : "ᒵ"  U14B5  # CANADIAN SYLLABICS WEST-CREE MWOO
+<Multi_key> <C> <R> <m> <w> <asciicircum> <a> <E> : "ᒸ"  U14B8  # CANADIAN SYLLABICS MWAA
+<Multi_key> <C> <R> <m> <w> <asciicircum> <a> <W> : "ᒹ"  U14B9  # CANADIAN SYLLABICS WEST-CREE MWAA
+<Multi_key> <C> <R> <m> <w> <E> : "ᒽ"  U14BD  # CANADIAN SYLLABICS MH
+
+<Multi_key> <C> <R> <n> <w> <i> <E> : "ᣆ"  U18C6  # CANADIAN SYLLABICS NWI
+<Multi_key> <C> <R> <n> <w> <o> <E> : "ᣊ"  U18CA  # CANADIAN SYLLABICS NWO
+<Multi_key> <C> <R> <n> <w> <e> <E> : "ᓉ"  U14C9  # CANADIAN SYLLABICS NWE
+<Multi_key> <C> <R> <n> <w> <e> <W> : "ᓊ"  U14CA  # CANADIAN SYLLABICS WEST-CREE NWE
+<Multi_key> <C> <R> <n> <w> <a> <E> : "ᓋ"  U14CB  # CANADIAN SYLLABICS NWA
+<Multi_key> <C> <R> <n> <w> <a> <W> : "ᓌ"  U14CC  # CANADIAN SYLLABICS WEST-CREE NWA
+<Multi_key> <C> <R> <n> <w> <asciicircum> <i> <E> : "ᣈ"  U18C8  # CANADIAN SYLLABICS NWII
+<Multi_key> <C> <R> <n> <w> <asciicircum> <o> <E> : "ᣌ"  U18CC  # CANADIAN SYLLABICS NWOO
+<Multi_key> <C> <R> <n> <w> <asciicircum> <a> <E> : "ᓍ"  U14CD  # CANADIAN SYLLABICS NWAA
+<Multi_key> <C> <R> <n> <w> <asciicircum> <a> <W> : "ᓎ"  U14CE  # CANADIAN SYLLABICS WEST-CREE NWAA
+
+<Multi_key> <C> <R> <s> <w> <e> <E> : "ᓶ"  U14F6  # CANADIAN SYLLABICS SWE
+<Multi_key> <C> <R> <s> <w> <e> <W> : "ᓷ"  U14F7  # CANADIAN SYLLABICS WEST-CREE SWE
+<Multi_key> <C> <R> <s> <w> <i> <E> : "ᓸ"  U14F8  # CANADIAN SYLLABICS SWI
+<Multi_key> <C> <R> <s> <w> <i> <W> : "ᓹ"  U14F9  # CANADIAN SYLLABICS WEST-CREE SWI
+<Multi_key> <C> <R> <s> <w> <o> <E> : "ᓼ"  U14FC  # CANADIAN SYLLABICS SWO
+<Multi_key> <C> <R> <s> <w> <o> <W> : "ᓽ"  U14FD  # CANADIAN SYLLABICS WEST-CREE SWO
+<Multi_key> <C> <R> <s> <w> <a> <E> : "ᔀ"  U1500  # CANADIAN SYLLABICS SWA
+<Multi_key> <C> <R> <s> <w> <a> <W> : "ᔁ"  U1501  # CANADIAN SYLLABICS WEST-CREE SWA
+<Multi_key> <C> <R> <s> <w> <asciicircum> <i> <E> : "ᓺ"  U14FA  # CANADIAN SYLLABICS SWII
+<Multi_key> <C> <R> <s> <w> <asciicircum> <i> <W> : "ᓻ"  U14FB  # CANADIAN SYLLABICS WEST-CREE SWII
+<Multi_key> <C> <R> <s> <w> <asciicircum> <o> <E> : "ᓾ"  U14FE  # CANADIAN SYLLABICS SWOO
+<Multi_key> <C> <R> <s> <w> <asciicircum> <o> <W> : "ᓿ"  U14FF  # CANADIAN SYLLABICS WEST-CREE SWOO
+<Multi_key> <C> <R> <s> <w> <asciicircum> <a> <E> : "ᔂ"  U1502  # CANADIAN SYLLABICS SWAA
+<Multi_key> <C> <R> <s> <w> <asciicircum> <a> <W> : "ᔃ"  U1503  # CANADIAN SYLLABICS WEST-CREE SWAA
+
+<Multi_key> <C> <R> <s> <h> <w> <e> <E> : "ᔗ"  U1517  # CANADIAN SYLLABICS SHWE
+<Multi_key> <C> <R> <s> <h> <w> <e> <W> : "ᔘ"  U1518  # CANADIAN SYLLABICS WEST-CREE SHWE
+<Multi_key> <C> <R> <s> <h> <w> <i> <E> : "ᔙ"  U1519  # CANADIAN SYLLABICS SHWI
+<Multi_key> <C> <R> <s> <h> <w> <i> <W> : "ᔚ"  U151A  # CANADIAN SYLLABICS WEST-CREE SHWI
+<Multi_key> <C> <R> <s> <h> <w> <o> <E> : "ᔝ"  U151D  # CANADIAN SYLLABICS SHWO
+<Multi_key> <C> <R> <s> <h> <w> <o> <W> : "ᔞ"  U151E  # CANADIAN SYLLABICS WEST-CREE SHWO
+<Multi_key> <C> <R> <s> <h> <w> <a> <E> : "ᔡ"  U1521  # CANADIAN SYLLABICS SHWA
+<Multi_key> <C> <R> <s> <h> <w> <a> <W> : "ᔢ"  U1522  # CANADIAN SYLLABICS WEST-CREE SHWA
+<Multi_key> <C> <R> <s> <h> <w> <asciicircum> <i> <E> : "ᔛ"  U151B  # CANADIAN SYLLABICS SHWII
+<Multi_key> <C> <R> <s> <h> <w> <asciicircum> <i> <W> : "ᔜ"  U151C  # CANADIAN SYLLABICS WEST-CREE SHWII
+<Multi_key> <C> <R> <s> <h> <w> <asciicircum> <o> <E> : "ᔟ"  U151F  # CANADIAN SYLLABICS SHWOO
+<Multi_key> <C> <R> <s> <h> <w> <asciicircum> <o> <W> : "ᔠ"  U1520  # CANADIAN SYLLABICS WEST-CREE SHWOO
+<Multi_key> <C> <R> <s> <h> <w> <asciicircum> <a> <E> : "ᔣ"  U1523  # CANADIAN SYLLABICS SHWAA
+<Multi_key> <C> <R> <s> <h> <w> <asciicircum> <a> <W> : "ᔤ"  U1524  # CANADIAN SYLLABICS WEST-CREE SHWAA
+
+<Multi_key> <C> <R> <y> <w> <e> <E> : "ᔯ"  U152F  # CANADIAN SYLLABICS YWE
+<Multi_key> <C> <R> <y> <w> <e> <W> : "ᔰ"  U1530  # CANADIAN SYLLABICS WEST-CREE YWE
+<Multi_key> <C> <R> <y> <w> <i> <E> : "ᔱ"  U1531  # CANADIAN SYLLABICS YWI
+<Multi_key> <C> <R> <y> <w> <i> <W> : "ᔲ"  U1532  # CANADIAN SYLLABICS WEST-CREE YWI
+<Multi_key> <C> <R> <y> <w> <o> <E> : "ᔵ"  U1535  # CANADIAN SYLLABICS YWO
+<Multi_key> <C> <R> <y> <w> <o> <W> : "ᔶ"  U1536  # CANADIAN SYLLABICS WEST-CREE YWO
+<Multi_key> <C> <R> <y> <w> <a> <E> : "ᔹ"  U1539  # CANADIAN SYLLABICS YWA
+<Multi_key> <C> <R> <y> <w> <a> <W> : "ᔺ"  U153A  # CANADIAN SYLLABICS WEST-CREE YWA
+<Multi_key> <C> <R> <y> <w> <asciicircum> <i> <E> : "ᔳ"  U1533  # CANADIAN SYLLABICS YWII
+<Multi_key> <C> <R> <y> <w> <asciicircum> <i> <W> : "ᔴ"  U1534  # CANADIAN SYLLABICS WEST-CREE YWII
+<Multi_key> <C> <R> <y> <w> <asciicircum> <o> <E> : "ᔷ"  U1537  # CANADIAN SYLLABICS YWOO
+<Multi_key> <C> <R> <y> <w> <asciicircum> <o> <W> : "ᔸ"  U1538  # CANADIAN SYLLABICS WEST-CREE YWOO
+<Multi_key> <C> <R> <y> <w> <asciicircum> <a> <E> : "ᔻ"  U153B  # CANADIAN SYLLABICS YWAA
+<Multi_key> <C> <R> <y> <w> <asciicircum> <a> <W> : "ᔼ"  U153C  # CANADIAN SYLLABICS WEST-CREE YWAA
+
+<Multi_key> <C> <R> <r> <w> <i> <E> : "ᣏ"  U18CF  # CANADIAN SYLLABICS RWI
+<Multi_key> <C> <R> <r> <w> <o> <E> : "ᣑ"  U18D1  # CANADIAN SYLLABICS RWO
+<Multi_key> <C> <R> <r> <w> <a> <E> : "ᣓ"  U18D3  # CANADIAN SYLLABICS RWA
+<Multi_key> <C> <R> <r> <w> <asciicircum> <i> <E> : "ᣐ"  U18D0  # CANADIAN SYLLABICS RWII
+<Multi_key> <C> <R> <r> <w> <asciicircum> <o> <E> : "ᣒ"  U18D2  # CANADIAN SYLLABICS RWOO
+<Multi_key> <C> <R> <r> <w> <asciicircum> <a> <E> : "ᕎ"  U154E  # CANADIAN SYLLABICS RWAA
+<Multi_key> <C> <R> <r> <w> <asciicircum> <a> <W> : "ᕏ"  U154F  # CANADIAN SYLLABICS WEST-CREE RWAA
+
+<Multi_key> <C> <R> <l> <w> <e> <E> : "ᓜ"  U14DC  # CANADIAN SYLLABICS LWE
+<Multi_key> <C> <R> <l> <w> <e> <W> : "ᓝ"  U14DD  # CANADIAN SYLLABICS WEST-CREE LWE
+<Multi_key> <C> <R> <l> <w> <i> <E> : "ᓞ"  U14DE  # CANADIAN SYLLABICS LWI
+<Multi_key> <C> <R> <l> <w> <i> <W> : "ᓟ"  U14DF  # CANADIAN SYLLABICS WEST-CREE LWI
+<Multi_key> <C> <R> <l> <w> <o> <E> : "ᓢ"  U14E2  # CANADIAN SYLLABICS LWO
+<Multi_key> <C> <R> <l> <w> <o> <W> : "ᓣ"  U14E3  # CANADIAN SYLLABICS WEST-CREE LWO
+<Multi_key> <C> <R> <l> <w> <a> <E> : "ᓦ"  U14E6  # CANADIAN SYLLABICS LWA
+<Multi_key> <C> <R> <l> <w> <a> <W> : "ᓧ"  U14E7  # CANADIAN SYLLABICS WEST-CREE LWA
+<Multi_key> <C> <R> <l> <w> <asciicircum> <i> <E> : "ᓠ"  U14E0  # CANADIAN SYLLABICS LWII
+<Multi_key> <C> <R> <l> <w> <asciicircum> <i> <W> : "ᓡ"  U14E1  # CANADIAN SYLLABICS WEST-CREE LWII
+<Multi_key> <C> <R> <l> <w> <asciicircum> <o> <E> : "ᓤ"  U14E4  # CANADIAN SYLLABICS LWOO
+<Multi_key> <C> <R> <l> <w> <asciicircum> <o> <W> : "ᓥ"  U14E5  # CANADIAN SYLLABICS WEST-CREE LWOO
+<Multi_key> <C> <R> <l> <w> <asciicircum> <a> <E> : "ᓨ"  U14E8  # CANADIAN SYLLABICS LWAA
+<Multi_key> <C> <R> <l> <w> <asciicircum> <a> <W> : "ᓩ"  U14E9  # CANADIAN SYLLABICS WEST-CREE LWAA
+
+<Multi_key> <C> <R> <f> <w> <asciicircum> <a> <E> : "ᕛ"  U155B  # CANADIAN SYLLABICS FWAA
+<Multi_key> <C> <R> <f> <w> <asciicircum> <a> <W> : "ᕜ"  U155C  # CANADIAN SYLLABICS WEST-CREE FWAA
+
+<Multi_key> <C> <R> <t> <h> <w> <e> <E> : "ᣣ"  U18E3  # CANADIAN SYLLABICS THWE
+<Multi_key> <C> <R> <t> <h> <w> <i> <W> : "ᙸ"  U1678  # CANADIAN SYLLABICS WOODS-CREE THWI
+<Multi_key> <C> <R> <t> <h> <w> <o> <W> : "ᙺ"  U167A  # CANADIAN SYLLABICS WOODS-CREE THWO
+<Multi_key> <C> <R> <t> <h> <w> <a> <E> : "ᣤ"  U18E4  # CANADIAN SYLLABICS THWA
+<Multi_key> <C> <R> <t> <h> <w> <a> <W> : "ᙼ"  U167C  # CANADIAN SYLLABICS WOODS-CREE THWA
+<Multi_key> <C> <R> <t> <h> <w> <asciicircum> <i> <W> : "ᙹ"  U1679  # CANADIAN SYLLABICS WOODS-CREE THWII
+<Multi_key> <C> <R> <t> <h> <w> <asciicircum> <o> <W> : "ᙻ"  U167B  # CANADIAN SYLLABICS WOODS-CREE THWOO
+<Multi_key> <C> <R> <t> <h> <w> <asciicircum> <a> <E> : "ᕨ"  U1568  # CANADIAN SYLLABICS THWAA
+<Multi_key> <C> <R> <t> <h> <w> <asciicircum> <a> <W> : "ᙽ"  U167D  # CANADIAN SYLLABICS WOODS-CREE THWAA
+
 # (s/S = Shavian)
 
 <Multi_key> <C> <s> <p> : "𐑐" U10450   # SHAVIAN LETTER PEEP
@@ -15071,7 +15455,7 @@ include "HangulSyllables"
 # (z) Zhuyin/Bopomofo (and other nearby scripts) #
 ##################################################
 
-# covers Fraser, Mongolian, ʼPhags-Pa, Pollard, Tai Le & Tibetan
+# covers Fraser, Mongolian, ʼPhags-Pa, Pollard, Tai Le, Tibetan & Yi
 
 <Multi_key> <z> <c> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
 <Multi_key> <z> <c> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
@@ -15745,6 +16129,1175 @@ include "HangulSyllables"
 <Multi_key> <z> <T> <at> <grave> : "ᥲ" U1972   # TAI LE LETTER TONE-4 (◌̀)
 <Multi_key> <z> <T> <at> <period> : "ᥳ" U1973   # TAI LE LETTER TONE-5 (◌̇)
 <Multi_key> <z> <T> <at> <apostrophe> : "ᥴ" U1974   # TAI LE LETTER TONE-6 (◌́)
+
+# (y = Yi)
+
+<Multi_key> <z> <y> <i> <t>                 : "ꀀ"  UA000  # YI SYLLABLE IT
+<Multi_key> <z> <y> <i> <x>                 : "ꀁ"  UA001  # YI SYLLABLE IX
+<Multi_key> <z> <y> <i> <space>             : "ꀂ"  UA002  # YI SYLLABLE I
+<Multi_key> <z> <y> <i> <p>                 : "ꀃ"  UA003  # YI SYLLABLE IP
+<Multi_key> <z> <y> <i> <e> <t>             : "ꀄ"  UA004  # YI SYLLABLE IET
+<Multi_key> <z> <y> <i> <e> <x>             : "ꀅ"  UA005  # YI SYLLABLE IEX
+<Multi_key> <z> <y> <i> <e> <space>         : "ꀆ"  UA006  # YI SYLLABLE IE
+<Multi_key> <z> <y> <i> <e> <p>             : "ꀇ"  UA007  # YI SYLLABLE IEP
+<Multi_key> <z> <y> <a> <t>                 : "ꀈ"  UA008  # YI SYLLABLE AT
+<Multi_key> <z> <y> <a> <x>                 : "ꀉ"  UA009  # YI SYLLABLE AX
+<Multi_key> <z> <y> <a> <space>             : "ꀊ"  UA00A  # YI SYLLABLE A
+<Multi_key> <z> <y> <a> <p>                 : "ꀋ"  UA00B  # YI SYLLABLE AP
+<Multi_key> <z> <y> <u> <o> <x>             : "ꀌ"  UA00C  # YI SYLLABLE UOX
+<Multi_key> <z> <y> <u> <o> <space>         : "ꀍ"  UA00D  # YI SYLLABLE UO
+<Multi_key> <z> <y> <u> <o> <p>             : "ꀎ"  UA00E  # YI SYLLABLE UOP
+<Multi_key> <z> <y> <o> <t>                 : "ꀏ"  UA00F  # YI SYLLABLE OT
+<Multi_key> <z> <y> <o> <x>                 : "ꀐ"  UA010  # YI SYLLABLE OX
+<Multi_key> <z> <y> <o> <space>             : "ꀑ"  UA011  # YI SYLLABLE O
+<Multi_key> <z> <y> <o> <p>                 : "ꀒ"  UA012  # YI SYLLABLE OP
+<Multi_key> <z> <y> <e> <x>                 : "ꀓ"  UA013  # YI SYLLABLE EX
+<Multi_key> <z> <y> <e> <space>             : "ꀔ"  UA014  # YI SYLLABLE E
+<Multi_key> <z> <y> <w> <space>             : "ꀕ"  UA015  # YI SYLLABLE WU
+<Multi_key> <z> <y> <quotedbl>              : "ꀕ"  UA015  # YI SYLLABLE WU (ITERATION MARK)
+<Multi_key> <z> <y> <b> <i> <t>             : "ꀖ"  UA016  # YI SYLLABLE BIT
+<Multi_key> <z> <y> <b> <i> <x>             : "ꀗ"  UA017  # YI SYLLABLE BIX
+<Multi_key> <z> <y> <b> <i> <space>         : "ꀘ"  UA018  # YI SYLLABLE BI
+<Multi_key> <z> <y> <b> <i> <p>             : "ꀙ"  UA019  # YI SYLLABLE BIP
+<Multi_key> <z> <y> <b> <i> <e> <t>         : "ꀚ"  UA01A  # YI SYLLABLE BIET
+<Multi_key> <z> <y> <b> <i> <e> <x>         : "ꀛ"  UA01B  # YI SYLLABLE BIEX
+<Multi_key> <z> <y> <b> <i> <e> <space>     : "ꀜ"  UA01C  # YI SYLLABLE BIE
+<Multi_key> <z> <y> <b> <i> <e> <p>         : "ꀝ"  UA01D  # YI SYLLABLE BIEP
+<Multi_key> <z> <y> <b> <a> <t>             : "ꀞ"  UA01E  # YI SYLLABLE BAT
+<Multi_key> <z> <y> <b> <a> <x>             : "ꀟ"  UA01F  # YI SYLLABLE BAX
+<Multi_key> <z> <y> <b> <a> <space>         : "ꀠ"  UA020  # YI SYLLABLE BA
+<Multi_key> <z> <y> <b> <a> <p>             : "ꀡ"  UA021  # YI SYLLABLE BAP
+<Multi_key> <z> <y> <b> <u> <o> <x>         : "ꀢ"  UA022  # YI SYLLABLE BUOX
+<Multi_key> <z> <y> <b> <u> <o> <space>     : "ꀣ"  UA023  # YI SYLLABLE BUO
+<Multi_key> <z> <y> <b> <u> <o> <p>         : "ꀤ"  UA024  # YI SYLLABLE BUOP
+<Multi_key> <z> <y> <b> <o> <t>             : "ꀥ"  UA025  # YI SYLLABLE BOT
+<Multi_key> <z> <y> <b> <o> <x>             : "ꀦ"  UA026  # YI SYLLABLE BOX
+<Multi_key> <z> <y> <b> <o> <space>         : "ꀧ"  UA027  # YI SYLLABLE BO
+<Multi_key> <z> <y> <b> <o> <p>             : "ꀨ"  UA028  # YI SYLLABLE BOP
+<Multi_key> <z> <y> <b> <e> <x>             : "ꀩ"  UA029  # YI SYLLABLE BEX
+<Multi_key> <z> <y> <b> <e> <space>         : "ꀪ"  UA02A  # YI SYLLABLE BE
+<Multi_key> <z> <y> <b> <e> <p>             : "ꀫ"  UA02B  # YI SYLLABLE BEP
+<Multi_key> <z> <y> <b> <u> <t>             : "ꀬ"  UA02C  # YI SYLLABLE BUT
+<Multi_key> <z> <y> <b> <u> <x>             : "ꀭ"  UA02D  # YI SYLLABLE BUX
+<Multi_key> <z> <y> <b> <u> <space>         : "ꀮ"  UA02E  # YI SYLLABLE BU
+<Multi_key> <z> <y> <b> <u> <p>             : "ꀯ"  UA02F  # YI SYLLABLE BUP
+<Multi_key> <z> <y> <b> <u> <r> <x>         : "ꀰ"  UA030  # YI SYLLABLE BURX
+<Multi_key> <z> <y> <b> <u> <r> <space>     : "ꀱ"  UA031  # YI SYLLABLE BUR
+<Multi_key> <z> <y> <b> <y> <t>             : "ꀲ"  UA032  # YI SYLLABLE BYT
+<Multi_key> <z> <y> <b> <y> <x>             : "ꀳ"  UA033  # YI SYLLABLE BYX
+<Multi_key> <z> <y> <b> <y> <space>         : "ꀴ"  UA034  # YI SYLLABLE BY
+<Multi_key> <z> <y> <b> <y> <p>             : "ꀵ"  UA035  # YI SYLLABLE BYP
+<Multi_key> <z> <y> <b> <y> <r> <x>         : "ꀶ"  UA036  # YI SYLLABLE BYRX
+<Multi_key> <z> <y> <b> <y> <r> <space>     : "ꀷ"  UA037  # YI SYLLABLE BYR
+<Multi_key> <z> <y> <p> <i> <t>             : "ꀸ"  UA038  # YI SYLLABLE PIT
+<Multi_key> <z> <y> <p> <i> <x>             : "ꀹ"  UA039  # YI SYLLABLE PIX
+<Multi_key> <z> <y> <p> <i> <space>         : "ꀺ"  UA03A  # YI SYLLABLE PI
+<Multi_key> <z> <y> <p> <i> <p>             : "ꀻ"  UA03B  # YI SYLLABLE PIP
+<Multi_key> <z> <y> <p> <i> <e> <x>         : "ꀼ"  UA03C  # YI SYLLABLE PIEX
+<Multi_key> <z> <y> <p> <i> <e> <space>     : "ꀽ"  UA03D  # YI SYLLABLE PIE
+<Multi_key> <z> <y> <p> <i> <e> <p>         : "ꀾ"  UA03E  # YI SYLLABLE PIEP
+<Multi_key> <z> <y> <p> <a> <t>             : "ꀿ"  UA03F  # YI SYLLABLE PAT
+<Multi_key> <z> <y> <p> <a> <x>             : "ꁀ"  UA040  # YI SYLLABLE PAX
+<Multi_key> <z> <y> <p> <a> <space>         : "ꁁ"  UA041  # YI SYLLABLE PA
+<Multi_key> <z> <y> <p> <a> <p>             : "ꁂ"  UA042  # YI SYLLABLE PAP
+<Multi_key> <z> <y> <p> <u> <o> <x>         : "ꁃ"  UA043  # YI SYLLABLE PUOX
+<Multi_key> <z> <y> <p> <u> <o> <space>     : "ꁄ"  UA044  # YI SYLLABLE PUO
+<Multi_key> <z> <y> <p> <u> <o> <p>         : "ꁅ"  UA045  # YI SYLLABLE PUOP
+<Multi_key> <z> <y> <p> <o> <t>             : "ꁆ"  UA046  # YI SYLLABLE POT
+<Multi_key> <z> <y> <p> <o> <x>             : "ꁇ"  UA047  # YI SYLLABLE POX
+<Multi_key> <z> <y> <p> <o> <space>         : "ꁈ"  UA048  # YI SYLLABLE PO
+<Multi_key> <z> <y> <p> <o> <p>             : "ꁉ"  UA049  # YI SYLLABLE POP
+<Multi_key> <z> <y> <p> <u> <t>             : "ꁊ"  UA04A  # YI SYLLABLE PUT
+<Multi_key> <z> <y> <p> <u> <x>             : "ꁋ"  UA04B  # YI SYLLABLE PUX
+<Multi_key> <z> <y> <p> <u> <space>         : "ꁌ"  UA04C  # YI SYLLABLE PU
+<Multi_key> <z> <y> <p> <u> <p>             : "ꁍ"  UA04D  # YI SYLLABLE PUP
+<Multi_key> <z> <y> <p> <u> <r> <x>         : "ꁎ"  UA04E  # YI SYLLABLE PURX
+<Multi_key> <z> <y> <p> <u> <r> <space>     : "ꁏ"  UA04F  # YI SYLLABLE PUR
+<Multi_key> <z> <y> <p> <y> <t>             : "ꁐ"  UA050  # YI SYLLABLE PYT
+<Multi_key> <z> <y> <p> <y> <x>             : "ꁑ"  UA051  # YI SYLLABLE PYX
+<Multi_key> <z> <y> <p> <y> <space>         : "ꁒ"  UA052  # YI SYLLABLE PY
+<Multi_key> <z> <y> <p> <y> <p>             : "ꁓ"  UA053  # YI SYLLABLE PYP
+<Multi_key> <z> <y> <p> <y> <r> <x>         : "ꁔ"  UA054  # YI SYLLABLE PYRX
+<Multi_key> <z> <y> <p> <y> <r> <space>     : "ꁕ"  UA055  # YI SYLLABLE PYR
+<Multi_key> <z> <y> <b> <b> <i> <t>         : "ꁖ"  UA056  # YI SYLLABLE BBIT
+<Multi_key> <z> <y> <b> <b> <i> <x>         : "ꁗ"  UA057  # YI SYLLABLE BBIX
+<Multi_key> <z> <y> <b> <b> <i> <space>     : "ꁘ"  UA058  # YI SYLLABLE BBI
+<Multi_key> <z> <y> <b> <b> <i> <p>         : "ꁙ"  UA059  # YI SYLLABLE BBIP
+<Multi_key> <z> <y> <b> <b> <i> <e> <t>     : "ꁚ"  UA05A  # YI SYLLABLE BBIET
+<Multi_key> <z> <y> <b> <b> <i> <e> <x>     : "ꁛ"  UA05B  # YI SYLLABLE BBIEX
+<Multi_key> <z> <y> <b> <b> <i> <e> <space> : "ꁜ"  UA05C  # YI SYLLABLE BBIE
+<Multi_key> <z> <y> <b> <b> <i> <e> <p>     : "ꁝ"  UA05D  # YI SYLLABLE BBIEP
+<Multi_key> <z> <y> <b> <b> <a> <t>         : "ꁞ"  UA05E  # YI SYLLABLE BBAT
+<Multi_key> <z> <y> <b> <b> <a> <x>         : "ꁟ"  UA05F  # YI SYLLABLE BBAX
+<Multi_key> <z> <y> <b> <b> <a> <space>     : "ꁠ"  UA060  # YI SYLLABLE BBA
+<Multi_key> <z> <y> <b> <b> <a> <p>         : "ꁡ"  UA061  # YI SYLLABLE BBAP
+<Multi_key> <z> <y> <b> <b> <u> <o> <x>     : "ꁢ"  UA062  # YI SYLLABLE BBUOX
+<Multi_key> <z> <y> <b> <b> <u> <o> <space> : "ꁣ"  UA063  # YI SYLLABLE BBUO
+<Multi_key> <z> <y> <b> <b> <u> <o> <p>     : "ꁤ"  UA064  # YI SYLLABLE BBUOP
+<Multi_key> <z> <y> <b> <b> <o> <t>         : "ꁥ"  UA065  # YI SYLLABLE BBOT
+<Multi_key> <z> <y> <b> <b> <o> <x>         : "ꁦ"  UA066  # YI SYLLABLE BBOX
+<Multi_key> <z> <y> <b> <b> <o> <space>     : "ꁧ"  UA067  # YI SYLLABLE BBO
+<Multi_key> <z> <y> <b> <b> <o> <p>         : "ꁨ"  UA068  # YI SYLLABLE BBOP
+<Multi_key> <z> <y> <b> <b> <e> <x>         : "ꁩ"  UA069  # YI SYLLABLE BBEX
+<Multi_key> <z> <y> <b> <b> <e> <space>     : "ꁪ"  UA06A  # YI SYLLABLE BBE
+<Multi_key> <z> <y> <b> <b> <e> <p>         : "ꁫ"  UA06B  # YI SYLLABLE BBEP
+<Multi_key> <z> <y> <b> <b> <u> <t>         : "ꁬ"  UA06C  # YI SYLLABLE BBUT
+<Multi_key> <z> <y> <b> <b> <u> <x>         : "ꁭ"  UA06D  # YI SYLLABLE BBUX
+<Multi_key> <z> <y> <b> <b> <u> <space>     : "ꁮ"  UA06E  # YI SYLLABLE BBU
+<Multi_key> <z> <y> <b> <b> <u> <p>         : "ꁯ"  UA06F  # YI SYLLABLE BBUP
+<Multi_key> <z> <y> <b> <b> <u> <r> <x>     : "ꁰ"  UA070  # YI SYLLABLE BBURX
+<Multi_key> <z> <y> <b> <b> <u> <r> <space> : "ꁱ"  UA071  # YI SYLLABLE BBUR
+<Multi_key> <z> <y> <b> <b> <y> <t>         : "ꁲ"  UA072  # YI SYLLABLE BBYT
+<Multi_key> <z> <y> <b> <b> <y> <x>         : "ꁳ"  UA073  # YI SYLLABLE BBYX
+<Multi_key> <z> <y> <b> <b> <y> <space>     : "ꁴ"  UA074  # YI SYLLABLE BBY
+<Multi_key> <z> <y> <b> <b> <y> <p>         : "ꁵ"  UA075  # YI SYLLABLE BBYP
+<Multi_key> <z> <y> <n> <b> <i> <t>         : "ꁶ"  UA076  # YI SYLLABLE NBIT
+<Multi_key> <z> <y> <n> <b> <i> <x>         : "ꁷ"  UA077  # YI SYLLABLE NBIX
+<Multi_key> <z> <y> <n> <b> <i> <space>     : "ꁸ"  UA078  # YI SYLLABLE NBI
+<Multi_key> <z> <y> <n> <b> <i> <p>         : "ꁹ"  UA079  # YI SYLLABLE NBIP
+<Multi_key> <z> <y> <n> <b> <i> <e> <x>     : "ꁺ"  UA07A  # YI SYLLABLE NBIEX
+<Multi_key> <z> <y> <n> <b> <i> <e> <space> : "ꁻ"  UA07B  # YI SYLLABLE NBIE
+<Multi_key> <z> <y> <n> <b> <i> <e> <p>     : "ꁼ"  UA07C  # YI SYLLABLE NBIEP
+<Multi_key> <z> <y> <n> <b> <a> <t>         : "ꁽ"  UA07D  # YI SYLLABLE NBAT
+<Multi_key> <z> <y> <n> <b> <a> <x>         : "ꁾ"  UA07E  # YI SYLLABLE NBAX
+<Multi_key> <z> <y> <n> <b> <a> <space>     : "ꁿ"  UA07F  # YI SYLLABLE NBA
+<Multi_key> <z> <y> <n> <b> <a> <p>         : "ꂀ"  UA080  # YI SYLLABLE NBAP
+<Multi_key> <z> <y> <n> <b> <o> <t>         : "ꂁ"  UA081  # YI SYLLABLE NBOT
+<Multi_key> <z> <y> <n> <b> <o> <x>         : "ꂂ"  UA082  # YI SYLLABLE NBOX
+<Multi_key> <z> <y> <n> <b> <o> <space>     : "ꂃ"  UA083  # YI SYLLABLE NBO
+<Multi_key> <z> <y> <n> <b> <o> <p>         : "ꂄ"  UA084  # YI SYLLABLE NBOP
+<Multi_key> <z> <y> <n> <b> <u> <t>         : "ꂅ"  UA085  # YI SYLLABLE NBUT
+<Multi_key> <z> <y> <n> <b> <u> <x>         : "ꂆ"  UA086  # YI SYLLABLE NBUX
+<Multi_key> <z> <y> <n> <b> <u> <space>     : "ꂇ"  UA087  # YI SYLLABLE NBU
+<Multi_key> <z> <y> <n> <b> <u> <p>         : "ꂈ"  UA088  # YI SYLLABLE NBUP
+<Multi_key> <z> <y> <n> <b> <u> <r> <x>     : "ꂉ"  UA089  # YI SYLLABLE NBURX
+<Multi_key> <z> <y> <n> <b> <u> <r> <space> : "ꂊ"  UA08A  # YI SYLLABLE NBUR
+<Multi_key> <z> <y> <n> <b> <y> <t>         : "ꂋ"  UA08B  # YI SYLLABLE NBYT
+<Multi_key> <z> <y> <n> <b> <y> <x>         : "ꂌ"  UA08C  # YI SYLLABLE NBYX
+<Multi_key> <z> <y> <n> <b> <y> <space>     : "ꂍ"  UA08D  # YI SYLLABLE NBY
+<Multi_key> <z> <y> <n> <b> <y> <p>         : "ꂎ"  UA08E  # YI SYLLABLE NBYP
+<Multi_key> <z> <y> <n> <b> <y> <r> <x>     : "ꂏ"  UA08F  # YI SYLLABLE NBYRX
+<Multi_key> <z> <y> <n> <b> <y> <r> <space> : "ꂐ"  UA090  # YI SYLLABLE NBYR
+<Multi_key> <z> <y> <h> <m> <i> <t>         : "ꂑ"  UA091  # YI SYLLABLE HMIT
+<Multi_key> <z> <y> <h> <m> <i> <x>         : "ꂒ"  UA092  # YI SYLLABLE HMIX
+<Multi_key> <z> <y> <h> <m> <i> <space>     : "ꂓ"  UA093  # YI SYLLABLE HMI
+<Multi_key> <z> <y> <h> <m> <i> <p>         : "ꂔ"  UA094  # YI SYLLABLE HMIP
+<Multi_key> <z> <y> <h> <m> <i> <e> <x>     : "ꂕ"  UA095  # YI SYLLABLE HMIEX
+<Multi_key> <z> <y> <h> <m> <i> <e> <space> : "ꂖ"  UA096  # YI SYLLABLE HMIE
+<Multi_key> <z> <y> <h> <m> <i> <e> <p>     : "ꂗ"  UA097  # YI SYLLABLE HMIEP
+<Multi_key> <z> <y> <h> <m> <a> <t>         : "ꂘ"  UA098  # YI SYLLABLE HMAT
+<Multi_key> <z> <y> <h> <m> <a> <x>         : "ꂙ"  UA099  # YI SYLLABLE HMAX
+<Multi_key> <z> <y> <h> <m> <a> <space>     : "ꂚ"  UA09A  # YI SYLLABLE HMA
+<Multi_key> <z> <y> <h> <m> <a> <p>         : "ꂛ"  UA09B  # YI SYLLABLE HMAP
+<Multi_key> <z> <y> <h> <m> <u> <o> <x>     : "ꂜ"  UA09C  # YI SYLLABLE HMUOX
+<Multi_key> <z> <y> <h> <m> <u> <o> <space> : "ꂝ"  UA09D  # YI SYLLABLE HMUO
+<Multi_key> <z> <y> <h> <m> <u> <o> <p>     : "ꂞ"  UA09E  # YI SYLLABLE HMUOP
+<Multi_key> <z> <y> <h> <m> <o> <t>         : "ꂟ"  UA09F  # YI SYLLABLE HMOT
+<Multi_key> <z> <y> <h> <m> <o> <x>         : "ꂠ"  UA0A0  # YI SYLLABLE HMOX
+<Multi_key> <z> <y> <h> <m> <o> <space>     : "ꂡ"  UA0A1  # YI SYLLABLE HMO
+<Multi_key> <z> <y> <h> <m> <o> <p>         : "ꂢ"  UA0A2  # YI SYLLABLE HMOP
+<Multi_key> <z> <y> <h> <m> <u> <t>         : "ꂣ"  UA0A3  # YI SYLLABLE HMUT
+<Multi_key> <z> <y> <h> <m> <u> <x>         : "ꂤ"  UA0A4  # YI SYLLABLE HMUX
+<Multi_key> <z> <y> <h> <m> <u> <space>     : "ꂥ"  UA0A5  # YI SYLLABLE HMU
+<Multi_key> <z> <y> <h> <m> <u> <p>         : "ꂦ"  UA0A6  # YI SYLLABLE HMUP
+<Multi_key> <z> <y> <h> <m> <u> <r> <x>     : "ꂧ"  UA0A7  # YI SYLLABLE HMURX
+<Multi_key> <z> <y> <h> <m> <u> <r> <space> : "ꂨ"  UA0A8  # YI SYLLABLE HMUR
+<Multi_key> <z> <y> <h> <m> <y> <x>         : "ꂩ"  UA0A9  # YI SYLLABLE HMYX
+<Multi_key> <z> <y> <h> <m> <y> <space>     : "ꂪ"  UA0AA  # YI SYLLABLE HMY
+<Multi_key> <z> <y> <h> <m> <y> <p>         : "ꂫ"  UA0AB  # YI SYLLABLE HMYP
+<Multi_key> <z> <y> <h> <m> <y> <r> <x>     : "ꂬ"  UA0AC  # YI SYLLABLE HMYRX
+<Multi_key> <z> <y> <h> <m> <y> <r> <space> : "ꂭ"  UA0AD  # YI SYLLABLE HMYR
+<Multi_key> <z> <y> <m> <i> <t>             : "ꂮ"  UA0AE  # YI SYLLABLE MIT
+<Multi_key> <z> <y> <m> <i> <x>             : "ꂯ"  UA0AF  # YI SYLLABLE MIX
+<Multi_key> <z> <y> <m> <i> <space>         : "ꂰ"  UA0B0  # YI SYLLABLE MI
+<Multi_key> <z> <y> <m> <i> <p>             : "ꂱ"  UA0B1  # YI SYLLABLE MIP
+<Multi_key> <z> <y> <m> <i> <e> <x>         : "ꂲ"  UA0B2  # YI SYLLABLE MIEX
+<Multi_key> <z> <y> <m> <i> <e> <space>     : "ꂳ"  UA0B3  # YI SYLLABLE MIE
+<Multi_key> <z> <y> <m> <i> <e> <p>         : "ꂴ"  UA0B4  # YI SYLLABLE MIEP
+<Multi_key> <z> <y> <m> <a> <t>             : "ꂵ"  UA0B5  # YI SYLLABLE MAT
+<Multi_key> <z> <y> <m> <a> <x>             : "ꂶ"  UA0B6  # YI SYLLABLE MAX
+<Multi_key> <z> <y> <m> <a> <space>         : "ꂷ"  UA0B7  # YI SYLLABLE MA
+<Multi_key> <z> <y> <m> <a> <p>             : "ꂸ"  UA0B8  # YI SYLLABLE MAP
+<Multi_key> <z> <y> <m> <u> <o> <t>         : "ꂹ"  UA0B9  # YI SYLLABLE MUOT
+<Multi_key> <z> <y> <m> <u> <o> <x>         : "ꂺ"  UA0BA  # YI SYLLABLE MUOX
+<Multi_key> <z> <y> <m> <u> <o> <space>     : "ꂻ"  UA0BB  # YI SYLLABLE MUO
+<Multi_key> <z> <y> <m> <u> <o> <p>         : "ꂼ"  UA0BC  # YI SYLLABLE MUOP
+<Multi_key> <z> <y> <m> <o> <t>             : "ꂽ"  UA0BD  # YI SYLLABLE MOT
+<Multi_key> <z> <y> <m> <o> <x>             : "ꂾ"  UA0BE  # YI SYLLABLE MOX
+<Multi_key> <z> <y> <m> <o> <space>         : "ꂿ"  UA0BF  # YI SYLLABLE MO
+<Multi_key> <z> <y> <m> <o> <p>             : "ꃀ"  UA0C0  # YI SYLLABLE MOP
+<Multi_key> <z> <y> <m> <e> <x>             : "ꃁ"  UA0C1  # YI SYLLABLE MEX
+<Multi_key> <z> <y> <m> <e> <space>         : "ꃂ"  UA0C2  # YI SYLLABLE ME
+<Multi_key> <z> <y> <m> <u> <t>             : "ꃃ"  UA0C3  # YI SYLLABLE MUT
+<Multi_key> <z> <y> <m> <u> <x>             : "ꃄ"  UA0C4  # YI SYLLABLE MUX
+<Multi_key> <z> <y> <m> <u> <space>         : "ꃅ"  UA0C5  # YI SYLLABLE MU
+<Multi_key> <z> <y> <m> <u> <p>             : "ꃆ"  UA0C6  # YI SYLLABLE MUP
+<Multi_key> <z> <y> <m> <u> <r> <x>         : "ꃇ"  UA0C7  # YI SYLLABLE MURX
+<Multi_key> <z> <y> <m> <u> <r> <space>     : "ꃈ"  UA0C8  # YI SYLLABLE MUR
+<Multi_key> <z> <y> <m> <y> <t>             : "ꃉ"  UA0C9  # YI SYLLABLE MYT
+<Multi_key> <z> <y> <m> <y> <x>             : "ꃊ"  UA0CA  # YI SYLLABLE MYX
+<Multi_key> <z> <y> <m> <y> <space>         : "ꃋ"  UA0CB  # YI SYLLABLE MY
+<Multi_key> <z> <y> <m> <y> <p>             : "ꃌ"  UA0CC  # YI SYLLABLE MYP
+<Multi_key> <z> <y> <f> <i> <t>             : "ꃍ"  UA0CD  # YI SYLLABLE FIT
+<Multi_key> <z> <y> <f> <i> <x>             : "ꃎ"  UA0CE  # YI SYLLABLE FIX
+<Multi_key> <z> <y> <f> <i> <space>         : "ꃏ"  UA0CF  # YI SYLLABLE FI
+<Multi_key> <z> <y> <f> <i> <p>             : "ꃐ"  UA0D0  # YI SYLLABLE FIP
+<Multi_key> <z> <y> <f> <a> <t>             : "ꃑ"  UA0D1  # YI SYLLABLE FAT
+<Multi_key> <z> <y> <f> <a> <x>             : "ꃒ"  UA0D2  # YI SYLLABLE FAX
+<Multi_key> <z> <y> <f> <a> <space>         : "ꃓ"  UA0D3  # YI SYLLABLE FA
+<Multi_key> <z> <y> <f> <a> <p>             : "ꃔ"  UA0D4  # YI SYLLABLE FAP
+<Multi_key> <z> <y> <f> <o> <x>             : "ꃕ"  UA0D5  # YI SYLLABLE FOX
+<Multi_key> <z> <y> <f> <o> <space>         : "ꃖ"  UA0D6  # YI SYLLABLE FO
+<Multi_key> <z> <y> <f> <o> <p>             : "ꃗ"  UA0D7  # YI SYLLABLE FOP
+<Multi_key> <z> <y> <f> <u> <t>             : "ꃘ"  UA0D8  # YI SYLLABLE FUT
+<Multi_key> <z> <y> <f> <u> <x>             : "ꃙ"  UA0D9  # YI SYLLABLE FUX
+<Multi_key> <z> <y> <f> <u> <space>         : "ꃚ"  UA0DA  # YI SYLLABLE FU
+<Multi_key> <z> <y> <f> <u> <p>             : "ꃛ"  UA0DB  # YI SYLLABLE FUP
+<Multi_key> <z> <y> <f> <u> <r> <x>         : "ꃜ"  UA0DC  # YI SYLLABLE FURX
+<Multi_key> <z> <y> <f> <u> <r> <space>     : "ꃝ"  UA0DD  # YI SYLLABLE FUR
+<Multi_key> <z> <y> <f> <y> <t>             : "ꃞ"  UA0DE  # YI SYLLABLE FYT
+<Multi_key> <z> <y> <f> <y> <x>             : "ꃟ"  UA0DF  # YI SYLLABLE FYX
+<Multi_key> <z> <y> <f> <y> <space>         : "ꃠ"  UA0E0  # YI SYLLABLE FY
+<Multi_key> <z> <y> <f> <y> <p>             : "ꃡ"  UA0E1  # YI SYLLABLE FYP
+<Multi_key> <z> <y> <v> <i> <t>             : "ꃢ"  UA0E2  # YI SYLLABLE VIT
+<Multi_key> <z> <y> <v> <i> <x>             : "ꃣ"  UA0E3  # YI SYLLABLE VIX
+<Multi_key> <z> <y> <v> <i> <space>         : "ꃤ"  UA0E4  # YI SYLLABLE VI
+<Multi_key> <z> <y> <v> <i> <p>             : "ꃥ"  UA0E5  # YI SYLLABLE VIP
+<Multi_key> <z> <y> <v> <i> <e> <t>         : "ꃦ"  UA0E6  # YI SYLLABLE VIET
+<Multi_key> <z> <y> <v> <i> <e> <x>         : "ꃧ"  UA0E7  # YI SYLLABLE VIEX
+<Multi_key> <z> <y> <v> <i> <e> <space>     : "ꃨ"  UA0E8  # YI SYLLABLE VIE
+<Multi_key> <z> <y> <v> <i> <e> <p>         : "ꃩ"  UA0E9  # YI SYLLABLE VIEP
+<Multi_key> <z> <y> <v> <a> <t>             : "ꃪ"  UA0EA  # YI SYLLABLE VAT
+<Multi_key> <z> <y> <v> <a> <x>             : "ꃫ"  UA0EB  # YI SYLLABLE VAX
+<Multi_key> <z> <y> <v> <a> <space>         : "ꃬ"  UA0EC  # YI SYLLABLE VA
+<Multi_key> <z> <y> <v> <a> <p>             : "ꃭ"  UA0ED  # YI SYLLABLE VAP
+<Multi_key> <z> <y> <v> <o> <t>             : "ꃮ"  UA0EE  # YI SYLLABLE VOT
+<Multi_key> <z> <y> <v> <o> <x>             : "ꃯ"  UA0EF  # YI SYLLABLE VOX
+<Multi_key> <z> <y> <v> <o> <space>         : "ꃰ"  UA0F0  # YI SYLLABLE VO
+<Multi_key> <z> <y> <v> <o> <p>             : "ꃱ"  UA0F1  # YI SYLLABLE VOP
+<Multi_key> <z> <y> <v> <e> <x>             : "ꃲ"  UA0F2  # YI SYLLABLE VEX
+<Multi_key> <z> <y> <v> <e> <p>             : "ꃳ"  UA0F3  # YI SYLLABLE VEP
+<Multi_key> <z> <y> <v> <u> <t>             : "ꃴ"  UA0F4  # YI SYLLABLE VUT
+<Multi_key> <z> <y> <v> <u> <x>             : "ꃵ"  UA0F5  # YI SYLLABLE VUX
+<Multi_key> <z> <y> <v> <u> <space>         : "ꃶ"  UA0F6  # YI SYLLABLE VU
+<Multi_key> <z> <y> <v> <u> <p>             : "ꃷ"  UA0F7  # YI SYLLABLE VUP
+<Multi_key> <z> <y> <v> <u> <r> <x>         : "ꃸ"  UA0F8  # YI SYLLABLE VURX
+<Multi_key> <z> <y> <v> <u> <r> <space>     : "ꃹ"  UA0F9  # YI SYLLABLE VUR
+<Multi_key> <z> <y> <v> <y> <t>             : "ꃺ"  UA0FA  # YI SYLLABLE VYT
+<Multi_key> <z> <y> <v> <y> <x>             : "ꃻ"  UA0FB  # YI SYLLABLE VYX
+<Multi_key> <z> <y> <v> <y> <space>         : "ꃼ"  UA0FC  # YI SYLLABLE VY
+<Multi_key> <z> <y> <v> <y> <p>             : "ꃽ"  UA0FD  # YI SYLLABLE VYP
+<Multi_key> <z> <y> <v> <y> <r> <x>         : "ꃾ"  UA0FE  # YI SYLLABLE VYRX
+<Multi_key> <z> <y> <v> <y> <r> <space>     : "ꃿ"  UA0FF  # YI SYLLABLE VYR
+<Multi_key> <z> <y> <d> <i> <t>             : "ꄀ"  UA100  # YI SYLLABLE DIT
+<Multi_key> <z> <y> <d> <i> <x>             : "ꄁ"  UA101  # YI SYLLABLE DIX
+<Multi_key> <z> <y> <d> <i> <space>         : "ꄂ"  UA102  # YI SYLLABLE DI
+<Multi_key> <z> <y> <d> <i> <p>             : "ꄃ"  UA103  # YI SYLLABLE DIP
+<Multi_key> <z> <y> <d> <i> <e> <x>         : "ꄄ"  UA104  # YI SYLLABLE DIEX
+<Multi_key> <z> <y> <d> <i> <e> <space>     : "ꄅ"  UA105  # YI SYLLABLE DIE
+<Multi_key> <z> <y> <d> <i> <e> <p>         : "ꄆ"  UA106  # YI SYLLABLE DIEP
+<Multi_key> <z> <y> <d> <a> <t>             : "ꄇ"  UA107  # YI SYLLABLE DAT
+<Multi_key> <z> <y> <d> <a> <x>             : "ꄈ"  UA108  # YI SYLLABLE DAX
+<Multi_key> <z> <y> <d> <a> <space>         : "ꄉ"  UA109  # YI SYLLABLE DA
+<Multi_key> <z> <y> <d> <a> <p>             : "ꄊ"  UA10A  # YI SYLLABLE DAP
+<Multi_key> <z> <y> <d> <u> <o> <x>         : "ꄋ"  UA10B  # YI SYLLABLE DUOX
+<Multi_key> <z> <y> <d> <u> <o> <space>     : "ꄌ"  UA10C  # YI SYLLABLE DUO
+<Multi_key> <z> <y> <d> <o> <t>             : "ꄍ"  UA10D  # YI SYLLABLE DOT
+<Multi_key> <z> <y> <d> <o> <x>             : "ꄎ"  UA10E  # YI SYLLABLE DOX
+<Multi_key> <z> <y> <d> <o> <space>         : "ꄏ"  UA10F  # YI SYLLABLE DO
+<Multi_key> <z> <y> <d> <o> <p>             : "ꄐ"  UA110  # YI SYLLABLE DOP
+<Multi_key> <z> <y> <d> <e> <x>             : "ꄑ"  UA111  # YI SYLLABLE DEX
+<Multi_key> <z> <y> <d> <e> <space>         : "ꄒ"  UA112  # YI SYLLABLE DE
+<Multi_key> <z> <y> <d> <e> <p>             : "ꄓ"  UA113  # YI SYLLABLE DEP
+<Multi_key> <z> <y> <d> <u> <t>             : "ꄔ"  UA114  # YI SYLLABLE DUT
+<Multi_key> <z> <y> <d> <u> <x>             : "ꄕ"  UA115  # YI SYLLABLE DUX
+<Multi_key> <z> <y> <d> <u> <space>         : "ꄖ"  UA116  # YI SYLLABLE DU
+<Multi_key> <z> <y> <d> <u> <p>             : "ꄗ"  UA117  # YI SYLLABLE DUP
+<Multi_key> <z> <y> <d> <u> <r> <x>         : "ꄘ"  UA118  # YI SYLLABLE DURX
+<Multi_key> <z> <y> <d> <u> <r> <space>     : "ꄙ"  UA119  # YI SYLLABLE DUR
+<Multi_key> <z> <y> <t> <i> <t>             : "ꄚ"  UA11A  # YI SYLLABLE TIT
+<Multi_key> <z> <y> <t> <i> <x>             : "ꄛ"  UA11B  # YI SYLLABLE TIX
+<Multi_key> <z> <y> <t> <i> <space>         : "ꄜ"  UA11C  # YI SYLLABLE TI
+<Multi_key> <z> <y> <t> <i> <p>             : "ꄝ"  UA11D  # YI SYLLABLE TIP
+<Multi_key> <z> <y> <t> <i> <e> <x>         : "ꄞ"  UA11E  # YI SYLLABLE TIEX
+<Multi_key> <z> <y> <t> <i> <e> <space>     : "ꄟ"  UA11F  # YI SYLLABLE TIE
+<Multi_key> <z> <y> <t> <i> <e> <p>         : "ꄠ"  UA120  # YI SYLLABLE TIEP
+<Multi_key> <z> <y> <t> <a> <t>             : "ꄡ"  UA121  # YI SYLLABLE TAT
+<Multi_key> <z> <y> <t> <a> <x>             : "ꄢ"  UA122  # YI SYLLABLE TAX
+<Multi_key> <z> <y> <t> <a> <space>         : "ꄣ"  UA123  # YI SYLLABLE TA
+<Multi_key> <z> <y> <t> <a> <p>             : "ꄤ"  UA124  # YI SYLLABLE TAP
+<Multi_key> <z> <y> <t> <u> <o> <t>         : "ꄥ"  UA125  # YI SYLLABLE TUOT
+<Multi_key> <z> <y> <t> <u> <o> <x>         : "ꄦ"  UA126  # YI SYLLABLE TUOX
+<Multi_key> <z> <y> <t> <u> <o> <space>     : "ꄧ"  UA127  # YI SYLLABLE TUO
+<Multi_key> <z> <y> <t> <u> <o> <p>         : "ꄨ"  UA128  # YI SYLLABLE TUOP
+<Multi_key> <z> <y> <t> <o> <t>             : "ꄩ"  UA129  # YI SYLLABLE TOT
+<Multi_key> <z> <y> <t> <o> <x>             : "ꄪ"  UA12A  # YI SYLLABLE TOX
+<Multi_key> <z> <y> <t> <o> <space>         : "ꄫ"  UA12B  # YI SYLLABLE TO
+<Multi_key> <z> <y> <t> <o> <p>             : "ꄬ"  UA12C  # YI SYLLABLE TOP
+<Multi_key> <z> <y> <t> <e> <x>             : "ꄭ"  UA12D  # YI SYLLABLE TEX
+<Multi_key> <z> <y> <t> <e> <space>         : "ꄮ"  UA12E  # YI SYLLABLE TE
+<Multi_key> <z> <y> <t> <e> <p>             : "ꄯ"  UA12F  # YI SYLLABLE TEP
+<Multi_key> <z> <y> <t> <u> <t>             : "ꄰ"  UA130  # YI SYLLABLE TUT
+<Multi_key> <z> <y> <t> <u> <x>             : "ꄱ"  UA131  # YI SYLLABLE TUX
+<Multi_key> <z> <y> <t> <u> <space>         : "ꄲ"  UA132  # YI SYLLABLE TU
+<Multi_key> <z> <y> <t> <u> <p>             : "ꄳ"  UA133  # YI SYLLABLE TUP
+<Multi_key> <z> <y> <t> <u> <r> <x>         : "ꄴ"  UA134  # YI SYLLABLE TURX
+<Multi_key> <z> <y> <t> <u> <r> <space>     : "ꄵ"  UA135  # YI SYLLABLE TUR
+<Multi_key> <z> <y> <d> <d> <i> <t>         : "ꄶ"  UA136  # YI SYLLABLE DDIT
+<Multi_key> <z> <y> <d> <d> <i> <x>         : "ꄷ"  UA137  # YI SYLLABLE DDIX
+<Multi_key> <z> <y> <d> <d> <i> <space>     : "ꄸ"  UA138  # YI SYLLABLE DDI
+<Multi_key> <z> <y> <d> <d> <i> <p>         : "ꄹ"  UA139  # YI SYLLABLE DDIP
+<Multi_key> <z> <y> <d> <d> <i> <e> <x>     : "ꄺ"  UA13A  # YI SYLLABLE DDIEX
+<Multi_key> <z> <y> <d> <d> <i> <e> <space> : "ꄻ"  UA13B  # YI SYLLABLE DDIE
+<Multi_key> <z> <y> <d> <d> <i> <e> <p>     : "ꄼ"  UA13C  # YI SYLLABLE DDIEP
+<Multi_key> <z> <y> <d> <d> <a> <t>         : "ꄽ"  UA13D  # YI SYLLABLE DDAT
+<Multi_key> <z> <y> <d> <d> <a> <x>         : "ꄾ"  UA13E  # YI SYLLABLE DDAX
+<Multi_key> <z> <y> <d> <d> <a> <space>     : "ꄿ"  UA13F  # YI SYLLABLE DDA
+<Multi_key> <z> <y> <d> <d> <a> <p>         : "ꅀ"  UA140  # YI SYLLABLE DDAP
+<Multi_key> <z> <y> <d> <d> <u> <o> <x>     : "ꅁ"  UA141  # YI SYLLABLE DDUOX
+<Multi_key> <z> <y> <d> <d> <u> <o> <space> : "ꅂ"  UA142  # YI SYLLABLE DDUO
+<Multi_key> <z> <y> <d> <d> <u> <o> <p>     : "ꅃ"  UA143  # YI SYLLABLE DDUOP
+<Multi_key> <z> <y> <d> <d> <o> <t>         : "ꅄ"  UA144  # YI SYLLABLE DDOT
+<Multi_key> <z> <y> <d> <d> <o> <x>         : "ꅅ"  UA145  # YI SYLLABLE DDOX
+<Multi_key> <z> <y> <d> <d> <o> <space>     : "ꅆ"  UA146  # YI SYLLABLE DDO
+<Multi_key> <z> <y> <d> <d> <o> <p>         : "ꅇ"  UA147  # YI SYLLABLE DDOP
+<Multi_key> <z> <y> <d> <d> <e> <x>         : "ꅈ"  UA148  # YI SYLLABLE DDEX
+<Multi_key> <z> <y> <d> <d> <e> <space>     : "ꅉ"  UA149  # YI SYLLABLE DDE
+<Multi_key> <z> <y> <d> <d> <e> <p>         : "ꅊ"  UA14A  # YI SYLLABLE DDEP
+<Multi_key> <z> <y> <d> <d> <u> <t>         : "ꅋ"  UA14B  # YI SYLLABLE DDUT
+<Multi_key> <z> <y> <d> <d> <u> <x>         : "ꅌ"  UA14C  # YI SYLLABLE DDUX
+<Multi_key> <z> <y> <d> <d> <u> <space>     : "ꅍ"  UA14D  # YI SYLLABLE DDU
+<Multi_key> <z> <y> <d> <d> <u> <p>         : "ꅎ"  UA14E  # YI SYLLABLE DDUP
+<Multi_key> <z> <y> <d> <d> <u> <r> <x>     : "ꅏ"  UA14F  # YI SYLLABLE DDURX
+<Multi_key> <z> <y> <d> <d> <u> <r> <space> : "ꅐ"  UA150  # YI SYLLABLE DDUR
+<Multi_key> <z> <y> <n> <d> <i> <t>         : "ꅑ"  UA151  # YI SYLLABLE NDIT
+<Multi_key> <z> <y> <n> <d> <i> <x>         : "ꅒ"  UA152  # YI SYLLABLE NDIX
+<Multi_key> <z> <y> <n> <d> <i> <space>     : "ꅓ"  UA153  # YI SYLLABLE NDI
+<Multi_key> <z> <y> <n> <d> <i> <p>         : "ꅔ"  UA154  # YI SYLLABLE NDIP
+<Multi_key> <z> <y> <n> <d> <i> <e> <x>     : "ꅕ"  UA155  # YI SYLLABLE NDIEX
+<Multi_key> <z> <y> <n> <d> <i> <e> <space> : "ꅖ"  UA156  # YI SYLLABLE NDIE
+<Multi_key> <z> <y> <n> <d> <a> <t>         : "ꅗ"  UA157  # YI SYLLABLE NDAT
+<Multi_key> <z> <y> <n> <d> <a> <x>         : "ꅘ"  UA158  # YI SYLLABLE NDAX
+<Multi_key> <z> <y> <n> <d> <a> <space>     : "ꅙ"  UA159  # YI SYLLABLE NDA
+<Multi_key> <z> <y> <n> <d> <a> <p>         : "ꅚ"  UA15A  # YI SYLLABLE NDAP
+<Multi_key> <z> <y> <n> <d> <o> <t>         : "ꅛ"  UA15B  # YI SYLLABLE NDOT
+<Multi_key> <z> <y> <n> <d> <o> <x>         : "ꅜ"  UA15C  # YI SYLLABLE NDOX
+<Multi_key> <z> <y> <n> <d> <o> <space>     : "ꅝ"  UA15D  # YI SYLLABLE NDO
+<Multi_key> <z> <y> <n> <d> <o> <p>         : "ꅞ"  UA15E  # YI SYLLABLE NDOP
+<Multi_key> <z> <y> <n> <d> <e> <x>         : "ꅟ"  UA15F  # YI SYLLABLE NDEX
+<Multi_key> <z> <y> <n> <d> <e> <space>     : "ꅠ"  UA160  # YI SYLLABLE NDE
+<Multi_key> <z> <y> <n> <d> <e> <p>         : "ꅡ"  UA161  # YI SYLLABLE NDEP
+<Multi_key> <z> <y> <n> <d> <u> <t>         : "ꅢ"  UA162  # YI SYLLABLE NDUT
+<Multi_key> <z> <y> <n> <d> <u> <x>         : "ꅣ"  UA163  # YI SYLLABLE NDUX
+<Multi_key> <z> <y> <n> <d> <u> <space>     : "ꅤ"  UA164  # YI SYLLABLE NDU
+<Multi_key> <z> <y> <n> <d> <u> <p>         : "ꅥ"  UA165  # YI SYLLABLE NDUP
+<Multi_key> <z> <y> <n> <d> <u> <r> <x>     : "ꅦ"  UA166  # YI SYLLABLE NDURX
+<Multi_key> <z> <y> <n> <d> <u> <r> <space> : "ꅧ"  UA167  # YI SYLLABLE NDUR
+<Multi_key> <z> <y> <h> <n> <i> <t>         : "ꅨ"  UA168  # YI SYLLABLE HNIT
+<Multi_key> <z> <y> <h> <n> <i> <x>         : "ꅩ"  UA169  # YI SYLLABLE HNIX
+<Multi_key> <z> <y> <h> <n> <i> <space>     : "ꅪ"  UA16A  # YI SYLLABLE HNI
+<Multi_key> <z> <y> <h> <n> <i> <p>         : "ꅫ"  UA16B  # YI SYLLABLE HNIP
+<Multi_key> <z> <y> <h> <n> <i> <e> <t>     : "ꅬ"  UA16C  # YI SYLLABLE HNIET
+<Multi_key> <z> <y> <h> <n> <i> <e> <x>     : "ꅭ"  UA16D  # YI SYLLABLE HNIEX
+<Multi_key> <z> <y> <h> <n> <i> <e> <space> : "ꅮ"  UA16E  # YI SYLLABLE HNIE
+<Multi_key> <z> <y> <h> <n> <i> <e> <p>     : "ꅯ"  UA16F  # YI SYLLABLE HNIEP
+<Multi_key> <z> <y> <h> <n> <a> <t>         : "ꅰ"  UA170  # YI SYLLABLE HNAT
+<Multi_key> <z> <y> <h> <n> <a> <x>         : "ꅱ"  UA171  # YI SYLLABLE HNAX
+<Multi_key> <z> <y> <h> <n> <a> <space>     : "ꅲ"  UA172  # YI SYLLABLE HNA
+<Multi_key> <z> <y> <h> <n> <a> <p>         : "ꅳ"  UA173  # YI SYLLABLE HNAP
+<Multi_key> <z> <y> <h> <n> <u> <o> <x>     : "ꅴ"  UA174  # YI SYLLABLE HNUOX
+<Multi_key> <z> <y> <h> <n> <u> <o> <space> : "ꅵ"  UA175  # YI SYLLABLE HNUO
+<Multi_key> <z> <y> <h> <n> <o> <t>         : "ꅶ"  UA176  # YI SYLLABLE HNOT
+<Multi_key> <z> <y> <h> <n> <o> <x>         : "ꅷ"  UA177  # YI SYLLABLE HNOX
+<Multi_key> <z> <y> <h> <n> <o> <p>         : "ꅸ"  UA178  # YI SYLLABLE HNOP
+<Multi_key> <z> <y> <h> <n> <e> <x>         : "ꅹ"  UA179  # YI SYLLABLE HNEX
+<Multi_key> <z> <y> <h> <n> <e> <space>     : "ꅺ"  UA17A  # YI SYLLABLE HNE
+<Multi_key> <z> <y> <h> <n> <e> <p>         : "ꅻ"  UA17B  # YI SYLLABLE HNEP
+<Multi_key> <z> <y> <h> <n> <u> <t>         : "ꅼ"  UA17C  # YI SYLLABLE HNUT
+<Multi_key> <z> <y> <n> <i> <t>             : "ꅽ"  UA17D  # YI SYLLABLE NIT
+<Multi_key> <z> <y> <n> <i> <x>             : "ꅾ"  UA17E  # YI SYLLABLE NIX
+<Multi_key> <z> <y> <n> <i> <space>         : "ꅿ"  UA17F  # YI SYLLABLE NI
+<Multi_key> <z> <y> <n> <i> <p>             : "ꆀ"  UA180  # YI SYLLABLE NIP
+<Multi_key> <z> <y> <n> <i> <e> <x>         : "ꆁ"  UA181  # YI SYLLABLE NIEX
+<Multi_key> <z> <y> <n> <i> <e> <space>     : "ꆂ"  UA182  # YI SYLLABLE NIE
+<Multi_key> <z> <y> <n> <i> <e> <p>         : "ꆃ"  UA183  # YI SYLLABLE NIEP
+<Multi_key> <z> <y> <n> <a> <x>             : "ꆄ"  UA184  # YI SYLLABLE NAX
+<Multi_key> <z> <y> <n> <a> <space>         : "ꆅ"  UA185  # YI SYLLABLE NA
+<Multi_key> <z> <y> <n> <a> <p>             : "ꆆ"  UA186  # YI SYLLABLE NAP
+<Multi_key> <z> <y> <n> <u> <o> <x>         : "ꆇ"  UA187  # YI SYLLABLE NUOX
+<Multi_key> <z> <y> <n> <u> <o> <space>     : "ꆈ"  UA188  # YI SYLLABLE NUO
+<Multi_key> <z> <y> <n> <u> <o> <p>         : "ꆉ"  UA189  # YI SYLLABLE NUOP
+<Multi_key> <z> <y> <n> <o> <t>             : "ꆊ"  UA18A  # YI SYLLABLE NOT
+<Multi_key> <z> <y> <n> <o> <x>             : "ꆋ"  UA18B  # YI SYLLABLE NOX
+<Multi_key> <z> <y> <n> <o> <space>         : "ꆌ"  UA18C  # YI SYLLABLE NO
+<Multi_key> <z> <y> <n> <o> <p>             : "ꆍ"  UA18D  # YI SYLLABLE NOP
+<Multi_key> <z> <y> <n> <e> <x>             : "ꆎ"  UA18E  # YI SYLLABLE NEX
+<Multi_key> <z> <y> <n> <e> <space>         : "ꆏ"  UA18F  # YI SYLLABLE NE
+<Multi_key> <z> <y> <n> <e> <p>             : "ꆐ"  UA190  # YI SYLLABLE NEP
+<Multi_key> <z> <y> <n> <u> <t>             : "ꆑ"  UA191  # YI SYLLABLE NUT
+<Multi_key> <z> <y> <n> <u> <x>             : "ꆒ"  UA192  # YI SYLLABLE NUX
+<Multi_key> <z> <y> <n> <u> <space>         : "ꆓ"  UA193  # YI SYLLABLE NU
+<Multi_key> <z> <y> <n> <u> <p>             : "ꆔ"  UA194  # YI SYLLABLE NUP
+<Multi_key> <z> <y> <n> <u> <r> <x>         : "ꆕ"  UA195  # YI SYLLABLE NURX
+<Multi_key> <z> <y> <n> <u> <r> <space>     : "ꆖ"  UA196  # YI SYLLABLE NUR
+<Multi_key> <z> <y> <h> <l> <i> <t>         : "ꆗ"  UA197  # YI SYLLABLE HLIT
+<Multi_key> <z> <y> <h> <l> <i> <x>         : "ꆘ"  UA198  # YI SYLLABLE HLIX
+<Multi_key> <z> <y> <h> <l> <i> <space>     : "ꆙ"  UA199  # YI SYLLABLE HLI
+<Multi_key> <z> <y> <h> <l> <i> <p>         : "ꆚ"  UA19A  # YI SYLLABLE HLIP
+<Multi_key> <z> <y> <h> <l> <i> <e> <x>     : "ꆛ"  UA19B  # YI SYLLABLE HLIEX
+<Multi_key> <z> <y> <h> <l> <i> <e> <space> : "ꆜ"  UA19C  # YI SYLLABLE HLIE
+<Multi_key> <z> <y> <h> <l> <i> <e> <p>     : "ꆝ"  UA19D  # YI SYLLABLE HLIEP
+<Multi_key> <z> <y> <h> <l> <a> <t>         : "ꆞ"  UA19E  # YI SYLLABLE HLAT
+<Multi_key> <z> <y> <h> <l> <a> <x>         : "ꆟ"  UA19F  # YI SYLLABLE HLAX
+<Multi_key> <z> <y> <h> <l> <a> <space>     : "ꆠ"  UA1A0  # YI SYLLABLE HLA
+<Multi_key> <z> <y> <h> <l> <a> <p>         : "ꆡ"  UA1A1  # YI SYLLABLE HLAP
+<Multi_key> <z> <y> <h> <l> <u> <o> <x>     : "ꆢ"  UA1A2  # YI SYLLABLE HLUOX
+<Multi_key> <z> <y> <h> <l> <u> <o> <space> : "ꆣ"  UA1A3  # YI SYLLABLE HLUO
+<Multi_key> <z> <y> <h> <l> <u> <o> <p>     : "ꆤ"  UA1A4  # YI SYLLABLE HLUOP
+<Multi_key> <z> <y> <h> <l> <o> <x>         : "ꆥ"  UA1A5  # YI SYLLABLE HLOX
+<Multi_key> <z> <y> <h> <l> <o> <space>     : "ꆦ"  UA1A6  # YI SYLLABLE HLO
+<Multi_key> <z> <y> <h> <l> <o> <p>         : "ꆧ"  UA1A7  # YI SYLLABLE HLOP
+<Multi_key> <z> <y> <h> <l> <e> <x>         : "ꆨ"  UA1A8  # YI SYLLABLE HLEX
+<Multi_key> <z> <y> <h> <l> <e> <space>     : "ꆩ"  UA1A9  # YI SYLLABLE HLE
+<Multi_key> <z> <y> <h> <l> <e> <p>         : "ꆪ"  UA1AA  # YI SYLLABLE HLEP
+<Multi_key> <z> <y> <h> <l> <u> <t>         : "ꆫ"  UA1AB  # YI SYLLABLE HLUT
+<Multi_key> <z> <y> <h> <l> <u> <x>         : "ꆬ"  UA1AC  # YI SYLLABLE HLUX
+<Multi_key> <z> <y> <h> <l> <u> <space>     : "ꆭ"  UA1AD  # YI SYLLABLE HLU
+<Multi_key> <z> <y> <h> <l> <u> <p>         : "ꆮ"  UA1AE  # YI SYLLABLE HLUP
+<Multi_key> <z> <y> <h> <l> <u> <r> <x>     : "ꆯ"  UA1AF  # YI SYLLABLE HLURX
+<Multi_key> <z> <y> <h> <l> <u> <r> <space> : "ꆰ"  UA1B0  # YI SYLLABLE HLUR
+<Multi_key> <z> <y> <h> <l> <y> <t>         : "ꆱ"  UA1B1  # YI SYLLABLE HLYT
+<Multi_key> <z> <y> <h> <l> <y> <x>         : "ꆲ"  UA1B2  # YI SYLLABLE HLYX
+<Multi_key> <z> <y> <h> <l> <y> <space>     : "ꆳ"  UA1B3  # YI SYLLABLE HLY
+<Multi_key> <z> <y> <h> <l> <y> <p>         : "ꆴ"  UA1B4  # YI SYLLABLE HLYP
+<Multi_key> <z> <y> <h> <l> <y> <r> <x>     : "ꆵ"  UA1B5  # YI SYLLABLE HLYRX
+<Multi_key> <z> <y> <h> <l> <y> <r> <space> : "ꆶ"  UA1B6  # YI SYLLABLE HLYR
+<Multi_key> <z> <y> <l> <i> <t>             : "ꆷ"  UA1B7  # YI SYLLABLE LIT
+<Multi_key> <z> <y> <l> <i> <x>             : "ꆸ"  UA1B8  # YI SYLLABLE LIX
+<Multi_key> <z> <y> <l> <i> <space>         : "ꆹ"  UA1B9  # YI SYLLABLE LI
+<Multi_key> <z> <y> <l> <i> <p>             : "ꆺ"  UA1BA  # YI SYLLABLE LIP
+<Multi_key> <z> <y> <l> <i> <e> <t>         : "ꆻ"  UA1BB  # YI SYLLABLE LIET
+<Multi_key> <z> <y> <l> <i> <e> <x>         : "ꆼ"  UA1BC  # YI SYLLABLE LIEX
+<Multi_key> <z> <y> <l> <i> <e> <space>     : "ꆽ"  UA1BD  # YI SYLLABLE LIE
+<Multi_key> <z> <y> <l> <i> <e> <p>         : "ꆾ"  UA1BE  # YI SYLLABLE LIEP
+<Multi_key> <z> <y> <l> <a> <t>             : "ꆿ"  UA1BF  # YI SYLLABLE LAT
+<Multi_key> <z> <y> <l> <a> <x>             : "ꇀ"  UA1C0  # YI SYLLABLE LAX
+<Multi_key> <z> <y> <l> <a> <space>         : "ꇁ"  UA1C1  # YI SYLLABLE LA
+<Multi_key> <z> <y> <l> <a> <p>             : "ꇂ"  UA1C2  # YI SYLLABLE LAP
+<Multi_key> <z> <y> <l> <u> <o> <t>         : "ꇃ"  UA1C3  # YI SYLLABLE LUOT
+<Multi_key> <z> <y> <l> <u> <o> <x>         : "ꇄ"  UA1C4  # YI SYLLABLE LUOX
+<Multi_key> <z> <y> <l> <u> <o> <space>     : "ꇅ"  UA1C5  # YI SYLLABLE LUO
+<Multi_key> <z> <y> <l> <u> <o> <p>         : "ꇆ"  UA1C6  # YI SYLLABLE LUOP
+<Multi_key> <z> <y> <l> <o> <t>             : "ꇇ"  UA1C7  # YI SYLLABLE LOT
+<Multi_key> <z> <y> <l> <o> <x>             : "ꇈ"  UA1C8  # YI SYLLABLE LOX
+<Multi_key> <z> <y> <l> <o> <space>         : "ꇉ"  UA1C9  # YI SYLLABLE LO
+<Multi_key> <z> <y> <l> <o> <p>             : "ꇊ"  UA1CA  # YI SYLLABLE LOP
+<Multi_key> <z> <y> <l> <e> <x>             : "ꇋ"  UA1CB  # YI SYLLABLE LEX
+<Multi_key> <z> <y> <l> <e> <space>         : "ꇌ"  UA1CC  # YI SYLLABLE LE
+<Multi_key> <z> <y> <l> <e> <p>             : "ꇍ"  UA1CD  # YI SYLLABLE LEP
+<Multi_key> <z> <y> <l> <u> <t>             : "ꇎ"  UA1CE  # YI SYLLABLE LUT
+<Multi_key> <z> <y> <l> <u> <x>             : "ꇏ"  UA1CF  # YI SYLLABLE LUX
+<Multi_key> <z> <y> <l> <u> <space>         : "ꇐ"  UA1D0  # YI SYLLABLE LU
+<Multi_key> <z> <y> <l> <u> <p>             : "ꇑ"  UA1D1  # YI SYLLABLE LUP
+<Multi_key> <z> <y> <l> <u> <r> <x>         : "ꇒ"  UA1D2  # YI SYLLABLE LURX
+<Multi_key> <z> <y> <l> <u> <r> <space>     : "ꇓ"  UA1D3  # YI SYLLABLE LUR
+<Multi_key> <z> <y> <l> <y> <t>             : "ꇔ"  UA1D4  # YI SYLLABLE LYT
+<Multi_key> <z> <y> <l> <y> <x>             : "ꇕ"  UA1D5  # YI SYLLABLE LYX
+<Multi_key> <z> <y> <l> <y> <space>         : "ꇖ"  UA1D6  # YI SYLLABLE LY
+<Multi_key> <z> <y> <l> <y> <p>             : "ꇗ"  UA1D7  # YI SYLLABLE LYP
+<Multi_key> <z> <y> <l> <y> <r> <x>         : "ꇘ"  UA1D8  # YI SYLLABLE LYRX
+<Multi_key> <z> <y> <l> <y> <r> <space>     : "ꇙ"  UA1D9  # YI SYLLABLE LYR
+<Multi_key> <z> <y> <g> <i> <t>             : "ꇚ"  UA1DA  # YI SYLLABLE GIT
+<Multi_key> <z> <y> <g> <i> <x>             : "ꇛ"  UA1DB  # YI SYLLABLE GIX
+<Multi_key> <z> <y> <g> <i> <space>         : "ꇜ"  UA1DC  # YI SYLLABLE GI
+<Multi_key> <z> <y> <g> <i> <p>             : "ꇝ"  UA1DD  # YI SYLLABLE GIP
+<Multi_key> <z> <y> <g> <i> <e> <t>         : "ꇞ"  UA1DE  # YI SYLLABLE GIET
+<Multi_key> <z> <y> <g> <i> <e> <x>         : "ꇟ"  UA1DF  # YI SYLLABLE GIEX
+<Multi_key> <z> <y> <g> <i> <e> <space>     : "ꇠ"  UA1E0  # YI SYLLABLE GIE
+<Multi_key> <z> <y> <g> <i> <e> <p>         : "ꇡ"  UA1E1  # YI SYLLABLE GIEP
+<Multi_key> <z> <y> <g> <a> <t>             : "ꇢ"  UA1E2  # YI SYLLABLE GAT
+<Multi_key> <z> <y> <g> <a> <x>             : "ꇣ"  UA1E3  # YI SYLLABLE GAX
+<Multi_key> <z> <y> <g> <a> <space>         : "ꇤ"  UA1E4  # YI SYLLABLE GA
+<Multi_key> <z> <y> <g> <a> <p>             : "ꇥ"  UA1E5  # YI SYLLABLE GAP
+<Multi_key> <z> <y> <g> <u> <o> <t>         : "ꇦ"  UA1E6  # YI SYLLABLE GUOT
+<Multi_key> <z> <y> <g> <u> <o> <x>         : "ꇧ"  UA1E7  # YI SYLLABLE GUOX
+<Multi_key> <z> <y> <g> <u> <o> <space>     : "ꇨ"  UA1E8  # YI SYLLABLE GUO
+<Multi_key> <z> <y> <g> <u> <o> <p>         : "ꇩ"  UA1E9  # YI SYLLABLE GUOP
+<Multi_key> <z> <y> <g> <o> <t>             : "ꇪ"  UA1EA  # YI SYLLABLE GOT
+<Multi_key> <z> <y> <g> <o> <x>             : "ꇫ"  UA1EB  # YI SYLLABLE GOX
+<Multi_key> <z> <y> <g> <o> <space>         : "ꇬ"  UA1EC  # YI SYLLABLE GO
+<Multi_key> <z> <y> <g> <o> <p>             : "ꇭ"  UA1ED  # YI SYLLABLE GOP
+<Multi_key> <z> <y> <g> <e> <t>             : "ꇮ"  UA1EE  # YI SYLLABLE GET
+<Multi_key> <z> <y> <g> <e> <x>             : "ꇯ"  UA1EF  # YI SYLLABLE GEX
+<Multi_key> <z> <y> <g> <e> <space>         : "ꇰ"  UA1F0  # YI SYLLABLE GE
+<Multi_key> <z> <y> <g> <e> <p>             : "ꇱ"  UA1F1  # YI SYLLABLE GEP
+<Multi_key> <z> <y> <g> <u> <t>             : "ꇲ"  UA1F2  # YI SYLLABLE GUT
+<Multi_key> <z> <y> <g> <u> <x>             : "ꇳ"  UA1F3  # YI SYLLABLE GUX
+<Multi_key> <z> <y> <g> <u> <space>         : "ꇴ"  UA1F4  # YI SYLLABLE GU
+<Multi_key> <z> <y> <g> <u> <p>             : "ꇵ"  UA1F5  # YI SYLLABLE GUP
+<Multi_key> <z> <y> <g> <u> <r> <x>         : "ꇶ"  UA1F6  # YI SYLLABLE GURX
+<Multi_key> <z> <y> <g> <u> <r> <space>     : "ꇷ"  UA1F7  # YI SYLLABLE GUR
+<Multi_key> <z> <y> <k> <i> <t>             : "ꇸ"  UA1F8  # YI SYLLABLE KIT
+<Multi_key> <z> <y> <k> <i> <x>             : "ꇹ"  UA1F9  # YI SYLLABLE KIX
+<Multi_key> <z> <y> <k> <i> <space>         : "ꇺ"  UA1FA  # YI SYLLABLE KI
+<Multi_key> <z> <y> <k> <i> <p>             : "ꇻ"  UA1FB  # YI SYLLABLE KIP
+<Multi_key> <z> <y> <k> <i> <e> <x>         : "ꇼ"  UA1FC  # YI SYLLABLE KIEX
+<Multi_key> <z> <y> <k> <i> <e> <space>     : "ꇽ"  UA1FD  # YI SYLLABLE KIE
+<Multi_key> <z> <y> <k> <i> <e> <p>         : "ꇾ"  UA1FE  # YI SYLLABLE KIEP
+<Multi_key> <z> <y> <k> <a> <t>             : "ꇿ"  UA1FF  # YI SYLLABLE KAT
+<Multi_key> <z> <y> <k> <a> <x>             : "ꈀ"  UA200  # YI SYLLABLE KAX
+<Multi_key> <z> <y> <k> <a> <space>         : "ꈁ"  UA201  # YI SYLLABLE KA
+<Multi_key> <z> <y> <k> <a> <p>             : "ꈂ"  UA202  # YI SYLLABLE KAP
+<Multi_key> <z> <y> <k> <u> <o> <x>         : "ꈃ"  UA203  # YI SYLLABLE KUOX
+<Multi_key> <z> <y> <k> <u> <o> <space>     : "ꈄ"  UA204  # YI SYLLABLE KUO
+<Multi_key> <z> <y> <k> <u> <o> <p>         : "ꈅ"  UA205  # YI SYLLABLE KUOP
+<Multi_key> <z> <y> <k> <o> <t>             : "ꈆ"  UA206  # YI SYLLABLE KOT
+<Multi_key> <z> <y> <k> <o> <x>             : "ꈇ"  UA207  # YI SYLLABLE KOX
+<Multi_key> <z> <y> <k> <o> <space>         : "ꈈ"  UA208  # YI SYLLABLE KO
+<Multi_key> <z> <y> <k> <o> <p>             : "ꈉ"  UA209  # YI SYLLABLE KOP
+<Multi_key> <z> <y> <k> <e> <t>             : "ꈊ"  UA20A  # YI SYLLABLE KET
+<Multi_key> <z> <y> <k> <e> <x>             : "ꈋ"  UA20B  # YI SYLLABLE KEX
+<Multi_key> <z> <y> <k> <e> <space>         : "ꈌ"  UA20C  # YI SYLLABLE KE
+<Multi_key> <z> <y> <k> <e> <p>             : "ꈍ"  UA20D  # YI SYLLABLE KEP
+<Multi_key> <z> <y> <k> <u> <t>             : "ꈎ"  UA20E  # YI SYLLABLE KUT
+<Multi_key> <z> <y> <k> <u> <x>             : "ꈏ"  UA20F  # YI SYLLABLE KUX
+<Multi_key> <z> <y> <k> <u> <space>         : "ꈐ"  UA210  # YI SYLLABLE KU
+<Multi_key> <z> <y> <k> <u> <p>             : "ꈑ"  UA211  # YI SYLLABLE KUP
+<Multi_key> <z> <y> <k> <u> <r> <x>         : "ꈒ"  UA212  # YI SYLLABLE KURX
+<Multi_key> <z> <y> <k> <u> <r> <space>     : "ꈓ"  UA213  # YI SYLLABLE KUR
+<Multi_key> <z> <y> <g> <g> <i> <t>         : "ꈔ"  UA214  # YI SYLLABLE GGIT
+<Multi_key> <z> <y> <g> <g> <i> <x>         : "ꈕ"  UA215  # YI SYLLABLE GGIX
+<Multi_key> <z> <y> <g> <g> <i> <space>     : "ꈖ"  UA216  # YI SYLLABLE GGI
+<Multi_key> <z> <y> <g> <g> <i> <e> <x>     : "ꈗ"  UA217  # YI SYLLABLE GGIEX
+<Multi_key> <z> <y> <g> <g> <i> <e> <space> : "ꈘ"  UA218  # YI SYLLABLE GGIE
+<Multi_key> <z> <y> <g> <g> <i> <e> <p>     : "ꈙ"  UA219  # YI SYLLABLE GGIEP
+<Multi_key> <z> <y> <g> <g> <a> <t>         : "ꈚ"  UA21A  # YI SYLLABLE GGAT
+<Multi_key> <z> <y> <g> <g> <a> <x>         : "ꈛ"  UA21B  # YI SYLLABLE GGAX
+<Multi_key> <z> <y> <g> <g> <a> <space>     : "ꈜ"  UA21C  # YI SYLLABLE GGA
+<Multi_key> <z> <y> <g> <g> <a> <p>         : "ꈝ"  UA21D  # YI SYLLABLE GGAP
+<Multi_key> <z> <y> <g> <g> <u> <o> <t>     : "ꈞ"  UA21E  # YI SYLLABLE GGUOT
+<Multi_key> <z> <y> <g> <g> <u> <o> <x>     : "ꈟ"  UA21F  # YI SYLLABLE GGUOX
+<Multi_key> <z> <y> <g> <g> <u> <o> <space> : "ꈠ"  UA220  # YI SYLLABLE GGUO
+<Multi_key> <z> <y> <g> <g> <u> <o> <p>     : "ꈡ"  UA221  # YI SYLLABLE GGUOP
+<Multi_key> <z> <y> <g> <g> <o> <t>         : "ꈢ"  UA222  # YI SYLLABLE GGOT
+<Multi_key> <z> <y> <g> <g> <o> <x>         : "ꈣ"  UA223  # YI SYLLABLE GGOX
+<Multi_key> <z> <y> <g> <g> <o> <space>     : "ꈤ"  UA224  # YI SYLLABLE GGO
+<Multi_key> <z> <y> <g> <g> <o> <p>         : "ꈥ"  UA225  # YI SYLLABLE GGOP
+<Multi_key> <z> <y> <g> <g> <e> <t>         : "ꈦ"  UA226  # YI SYLLABLE GGET
+<Multi_key> <z> <y> <g> <g> <e> <x>         : "ꈧ"  UA227  # YI SYLLABLE GGEX
+<Multi_key> <z> <y> <g> <g> <e> <space>     : "ꈨ"  UA228  # YI SYLLABLE GGE
+<Multi_key> <z> <y> <g> <g> <e> <p>         : "ꈩ"  UA229  # YI SYLLABLE GGEP
+<Multi_key> <z> <y> <g> <g> <u> <t>         : "ꈪ"  UA22A  # YI SYLLABLE GGUT
+<Multi_key> <z> <y> <g> <g> <u> <x>         : "ꈫ"  UA22B  # YI SYLLABLE GGUX
+<Multi_key> <z> <y> <g> <g> <u> <space>     : "ꈬ"  UA22C  # YI SYLLABLE GGU
+<Multi_key> <z> <y> <g> <g> <u> <p>         : "ꈭ"  UA22D  # YI SYLLABLE GGUP
+<Multi_key> <z> <y> <g> <g> <u> <r> <x>     : "ꈮ"  UA22E  # YI SYLLABLE GGURX
+<Multi_key> <z> <y> <g> <g> <u> <r> <space> : "ꈯ"  UA22F  # YI SYLLABLE GGUR
+<Multi_key> <z> <y> <m> <g> <i> <e> <x>     : "ꈰ"  UA230  # YI SYLLABLE MGIEX
+<Multi_key> <z> <y> <m> <g> <i> <e> <space> : "ꈱ"  UA231  # YI SYLLABLE MGIE
+<Multi_key> <z> <y> <m> <g> <a> <t>         : "ꈲ"  UA232  # YI SYLLABLE MGAT
+<Multi_key> <z> <y> <m> <g> <a> <x>         : "ꈳ"  UA233  # YI SYLLABLE MGAX
+<Multi_key> <z> <y> <m> <g> <a> <space>     : "ꈴ"  UA234  # YI SYLLABLE MGA
+<Multi_key> <z> <y> <m> <g> <a> <p>         : "ꈵ"  UA235  # YI SYLLABLE MGAP
+<Multi_key> <z> <y> <m> <g> <u> <o> <x>     : "ꈶ"  UA236  # YI SYLLABLE MGUOX
+<Multi_key> <z> <y> <m> <g> <u> <o> <space> : "ꈷ"  UA237  # YI SYLLABLE MGUO
+<Multi_key> <z> <y> <m> <g> <u> <o> <p>     : "ꈸ"  UA238  # YI SYLLABLE MGUOP
+<Multi_key> <z> <y> <m> <g> <o> <t>         : "ꈹ"  UA239  # YI SYLLABLE MGOT
+<Multi_key> <z> <y> <m> <g> <o> <x>         : "ꈺ"  UA23A  # YI SYLLABLE MGOX
+<Multi_key> <z> <y> <m> <g> <o> <space>     : "ꈻ"  UA23B  # YI SYLLABLE MGO
+<Multi_key> <z> <y> <m> <g> <o> <p>         : "ꈼ"  UA23C  # YI SYLLABLE MGOP
+<Multi_key> <z> <y> <m> <g> <e> <x>         : "ꈽ"  UA23D  # YI SYLLABLE MGEX
+<Multi_key> <z> <y> <m> <g> <e> <space>     : "ꈾ"  UA23E  # YI SYLLABLE MGE
+<Multi_key> <z> <y> <m> <g> <e> <p>         : "ꈿ"  UA23F  # YI SYLLABLE MGEP
+<Multi_key> <z> <y> <m> <g> <u> <t>         : "ꉀ"  UA240  # YI SYLLABLE MGUT
+<Multi_key> <z> <y> <m> <g> <u> <x>         : "ꉁ"  UA241  # YI SYLLABLE MGUX
+<Multi_key> <z> <y> <m> <g> <u> <space>     : "ꉂ"  UA242  # YI SYLLABLE MGU
+<Multi_key> <z> <y> <m> <g> <u> <p>         : "ꉃ"  UA243  # YI SYLLABLE MGUP
+<Multi_key> <z> <y> <m> <g> <u> <r> <x>     : "ꉄ"  UA244  # YI SYLLABLE MGURX
+<Multi_key> <z> <y> <m> <g> <u> <r> <space> : "ꉅ"  UA245  # YI SYLLABLE MGUR
+<Multi_key> <z> <y> <h> <x> <i> <t>         : "ꉆ"  UA246  # YI SYLLABLE HXIT
+<Multi_key> <z> <y> <h> <x> <i> <x>         : "ꉇ"  UA247  # YI SYLLABLE HXIX
+<Multi_key> <z> <y> <h> <x> <i> <space>     : "ꉈ"  UA248  # YI SYLLABLE HXI
+<Multi_key> <z> <y> <h> <x> <i> <p>         : "ꉉ"  UA249  # YI SYLLABLE HXIP
+<Multi_key> <z> <y> <h> <x> <i> <e> <t>     : "ꉊ"  UA24A  # YI SYLLABLE HXIET
+<Multi_key> <z> <y> <h> <x> <i> <e> <x>     : "ꉋ"  UA24B  # YI SYLLABLE HXIEX
+<Multi_key> <z> <y> <h> <x> <i> <e> <space> : "ꉌ"  UA24C  # YI SYLLABLE HXIE
+<Multi_key> <z> <y> <h> <x> <i> <e> <p>     : "ꉍ"  UA24D  # YI SYLLABLE HXIEP
+<Multi_key> <z> <y> <h> <x> <a> <t>         : "ꉎ"  UA24E  # YI SYLLABLE HXAT
+<Multi_key> <z> <y> <h> <x> <a> <x>         : "ꉏ"  UA24F  # YI SYLLABLE HXAX
+<Multi_key> <z> <y> <h> <x> <a> <space>     : "ꉐ"  UA250  # YI SYLLABLE HXA
+<Multi_key> <z> <y> <h> <x> <a> <p>         : "ꉑ"  UA251  # YI SYLLABLE HXAP
+<Multi_key> <z> <y> <h> <x> <u> <o> <t>     : "ꉒ"  UA252  # YI SYLLABLE HXUOT
+<Multi_key> <z> <y> <h> <x> <u> <o> <x>     : "ꉓ"  UA253  # YI SYLLABLE HXUOX
+<Multi_key> <z> <y> <h> <x> <u> <o> <space> : "ꉔ"  UA254  # YI SYLLABLE HXUO
+<Multi_key> <z> <y> <h> <x> <u> <o> <p>     : "ꉕ"  UA255  # YI SYLLABLE HXUOP
+<Multi_key> <z> <y> <h> <x> <o> <t>         : "ꉖ"  UA256  # YI SYLLABLE HXOT
+<Multi_key> <z> <y> <h> <x> <o> <x>         : "ꉗ"  UA257  # YI SYLLABLE HXOX
+<Multi_key> <z> <y> <h> <x> <o> <space>     : "ꉘ"  UA258  # YI SYLLABLE HXO
+<Multi_key> <z> <y> <h> <x> <o> <p>         : "ꉙ"  UA259  # YI SYLLABLE HXOP
+<Multi_key> <z> <y> <h> <x> <e> <x>         : "ꉚ"  UA25A  # YI SYLLABLE HXEX
+<Multi_key> <z> <y> <h> <x> <e> <space>     : "ꉛ"  UA25B  # YI SYLLABLE HXE
+<Multi_key> <z> <y> <h> <x> <e> <p>         : "ꉜ"  UA25C  # YI SYLLABLE HXEP
+<Multi_key> <z> <y> <n> <g> <i> <e> <x>     : "ꉝ"  UA25D  # YI SYLLABLE NGIEX
+<Multi_key> <z> <y> <n> <g> <i> <e> <space> : "ꉞ"  UA25E  # YI SYLLABLE NGIE
+<Multi_key> <z> <y> <n> <g> <i> <e> <p>     : "ꉟ"  UA25F  # YI SYLLABLE NGIEP
+<Multi_key> <z> <y> <n> <g> <a> <t>         : "ꉠ"  UA260  # YI SYLLABLE NGAT
+<Multi_key> <z> <y> <n> <g> <a> <x>         : "ꉡ"  UA261  # YI SYLLABLE NGAX
+<Multi_key> <z> <y> <n> <g> <a> <space>     : "ꉢ"  UA262  # YI SYLLABLE NGA
+<Multi_key> <z> <y> <n> <g> <a> <p>         : "ꉣ"  UA263  # YI SYLLABLE NGAP
+<Multi_key> <z> <y> <n> <g> <u> <o> <t>     : "ꉤ"  UA264  # YI SYLLABLE NGUOT
+<Multi_key> <z> <y> <n> <g> <u> <o> <x>     : "ꉥ"  UA265  # YI SYLLABLE NGUOX
+<Multi_key> <z> <y> <n> <g> <u> <o> <space> : "ꉦ"  UA266  # YI SYLLABLE NGUO
+<Multi_key> <z> <y> <n> <g> <o> <t>         : "ꉧ"  UA267  # YI SYLLABLE NGOT
+<Multi_key> <z> <y> <n> <g> <o> <x>         : "ꉨ"  UA268  # YI SYLLABLE NGOX
+<Multi_key> <z> <y> <n> <g> <o> <space>     : "ꉩ"  UA269  # YI SYLLABLE NGO
+<Multi_key> <z> <y> <n> <g> <o> <p>         : "ꉪ"  UA26A  # YI SYLLABLE NGOP
+<Multi_key> <z> <y> <n> <g> <e> <x>         : "ꉫ"  UA26B  # YI SYLLABLE NGEX
+<Multi_key> <z> <y> <n> <g> <e> <space>     : "ꉬ"  UA26C  # YI SYLLABLE NGE
+<Multi_key> <z> <y> <n> <g> <e> <p>         : "ꉭ"  UA26D  # YI SYLLABLE NGEP
+<Multi_key> <z> <y> <h> <i> <t>             : "ꉮ"  UA26E  # YI SYLLABLE HIT
+<Multi_key> <z> <y> <h> <i> <e> <x>         : "ꉯ"  UA26F  # YI SYLLABLE HIEX
+<Multi_key> <z> <y> <h> <i> <e> <space>     : "ꉰ"  UA270  # YI SYLLABLE HIE
+<Multi_key> <z> <y> <h> <a> <t>             : "ꉱ"  UA271  # YI SYLLABLE HAT
+<Multi_key> <z> <y> <h> <a> <x>             : "ꉲ"  UA272  # YI SYLLABLE HAX
+<Multi_key> <z> <y> <h> <a> <space>         : "ꉳ"  UA273  # YI SYLLABLE HA
+<Multi_key> <z> <y> <h> <a> <p>             : "ꉴ"  UA274  # YI SYLLABLE HAP
+<Multi_key> <z> <y> <h> <u> <o> <t>         : "ꉵ"  UA275  # YI SYLLABLE HUOT
+<Multi_key> <z> <y> <h> <u> <o> <x>         : "ꉶ"  UA276  # YI SYLLABLE HUOX
+<Multi_key> <z> <y> <h> <u> <o> <space>     : "ꉷ"  UA277  # YI SYLLABLE HUO
+<Multi_key> <z> <y> <h> <u> <o> <p>         : "ꉸ"  UA278  # YI SYLLABLE HUOP
+<Multi_key> <z> <y> <h> <o> <t>             : "ꉹ"  UA279  # YI SYLLABLE HOT
+<Multi_key> <z> <y> <h> <o> <x>             : "ꉺ"  UA27A  # YI SYLLABLE HOX
+<Multi_key> <z> <y> <h> <o> <space>         : "ꉻ"  UA27B  # YI SYLLABLE HO
+<Multi_key> <z> <y> <h> <o> <p>             : "ꉼ"  UA27C  # YI SYLLABLE HOP
+<Multi_key> <z> <y> <h> <e> <x>             : "ꉽ"  UA27D  # YI SYLLABLE HEX
+<Multi_key> <z> <y> <h> <e> <space>         : "ꉾ"  UA27E  # YI SYLLABLE HE
+<Multi_key> <z> <y> <h> <e> <p>             : "ꉿ"  UA27F  # YI SYLLABLE HEP
+<Multi_key> <z> <y> <w> <a> <t>             : "ꊀ"  UA280  # YI SYLLABLE WAT
+<Multi_key> <z> <y> <w> <a> <x>             : "ꊁ"  UA281  # YI SYLLABLE WAX
+<Multi_key> <z> <y> <w> <a> <space>         : "ꊂ"  UA282  # YI SYLLABLE WA
+<Multi_key> <z> <y> <w> <a> <p>             : "ꊃ"  UA283  # YI SYLLABLE WAP
+<Multi_key> <z> <y> <w> <u> <o> <x>         : "ꊄ"  UA284  # YI SYLLABLE WUOX
+<Multi_key> <z> <y> <w> <u> <o> <space>     : "ꊅ"  UA285  # YI SYLLABLE WUO
+<Multi_key> <z> <y> <w> <u> <o> <p>         : "ꊆ"  UA286  # YI SYLLABLE WUOP
+<Multi_key> <z> <y> <w> <o> <x>             : "ꊇ"  UA287  # YI SYLLABLE WOX
+<Multi_key> <z> <y> <w> <o> <space>         : "ꊈ"  UA288  # YI SYLLABLE WO
+<Multi_key> <z> <y> <w> <o> <p>             : "ꊉ"  UA289  # YI SYLLABLE WOP
+<Multi_key> <z> <y> <w> <e> <x>             : "ꊊ"  UA28A  # YI SYLLABLE WEX
+<Multi_key> <z> <y> <w> <e> <space>         : "ꊋ"  UA28B  # YI SYLLABLE WE
+<Multi_key> <z> <y> <w> <e> <p>             : "ꊌ"  UA28C  # YI SYLLABLE WEP
+<Multi_key> <z> <y> <z> <i> <t>             : "ꊍ"  UA28D  # YI SYLLABLE ZIT
+<Multi_key> <z> <y> <z> <i> <x>             : "ꊎ"  UA28E  # YI SYLLABLE ZIX
+<Multi_key> <z> <y> <z> <i> <space>         : "ꊏ"  UA28F  # YI SYLLABLE ZI
+<Multi_key> <z> <y> <z> <i> <p>             : "ꊐ"  UA290  # YI SYLLABLE ZIP
+<Multi_key> <z> <y> <z> <i> <e> <x>         : "ꊑ"  UA291  # YI SYLLABLE ZIEX
+<Multi_key> <z> <y> <z> <i> <e> <space>     : "ꊒ"  UA292  # YI SYLLABLE ZIE
+<Multi_key> <z> <y> <z> <i> <e> <p>         : "ꊓ"  UA293  # YI SYLLABLE ZIEP
+<Multi_key> <z> <y> <z> <a> <t>             : "ꊔ"  UA294  # YI SYLLABLE ZAT
+<Multi_key> <z> <y> <z> <a> <x>             : "ꊕ"  UA295  # YI SYLLABLE ZAX
+<Multi_key> <z> <y> <z> <a> <space>         : "ꊖ"  UA296  # YI SYLLABLE ZA
+<Multi_key> <z> <y> <z> <a> <p>             : "ꊗ"  UA297  # YI SYLLABLE ZAP
+<Multi_key> <z> <y> <z> <u> <o> <x>         : "ꊘ"  UA298  # YI SYLLABLE ZUOX
+<Multi_key> <z> <y> <z> <u> <o> <space>     : "ꊙ"  UA299  # YI SYLLABLE ZUO
+<Multi_key> <z> <y> <z> <u> <o> <p>         : "ꊚ"  UA29A  # YI SYLLABLE ZUOP
+<Multi_key> <z> <y> <z> <o> <t>             : "ꊛ"  UA29B  # YI SYLLABLE ZOT
+<Multi_key> <z> <y> <z> <o> <x>             : "ꊜ"  UA29C  # YI SYLLABLE ZOX
+<Multi_key> <z> <y> <z> <o> <space>         : "ꊝ"  UA29D  # YI SYLLABLE ZO
+<Multi_key> <z> <y> <z> <o> <p>             : "ꊞ"  UA29E  # YI SYLLABLE ZOP
+<Multi_key> <z> <y> <z> <e> <x>             : "ꊟ"  UA29F  # YI SYLLABLE ZEX
+<Multi_key> <z> <y> <z> <e> <space>         : "ꊠ"  UA2A0  # YI SYLLABLE ZE
+<Multi_key> <z> <y> <z> <e> <p>             : "ꊡ"  UA2A1  # YI SYLLABLE ZEP
+<Multi_key> <z> <y> <z> <u> <t>             : "ꊢ"  UA2A2  # YI SYLLABLE ZUT
+<Multi_key> <z> <y> <z> <u> <x>             : "ꊣ"  UA2A3  # YI SYLLABLE ZUX
+<Multi_key> <z> <y> <z> <u> <space>         : "ꊤ"  UA2A4  # YI SYLLABLE ZU
+<Multi_key> <z> <y> <z> <u> <p>             : "ꊥ"  UA2A5  # YI SYLLABLE ZUP
+<Multi_key> <z> <y> <z> <u> <r> <x>         : "ꊦ"  UA2A6  # YI SYLLABLE ZURX
+<Multi_key> <z> <y> <z> <u> <r> <space>     : "ꊧ"  UA2A7  # YI SYLLABLE ZUR
+<Multi_key> <z> <y> <z> <y> <t>             : "ꊨ"  UA2A8  # YI SYLLABLE ZYT
+<Multi_key> <z> <y> <z> <y> <x>             : "ꊩ"  UA2A9  # YI SYLLABLE ZYX
+<Multi_key> <z> <y> <z> <y> <space>         : "ꊪ"  UA2AA  # YI SYLLABLE ZY
+<Multi_key> <z> <y> <z> <y> <p>             : "ꊫ"  UA2AB  # YI SYLLABLE ZYP
+<Multi_key> <z> <y> <z> <y> <r> <x>         : "ꊬ"  UA2AC  # YI SYLLABLE ZYRX
+<Multi_key> <z> <y> <z> <y> <r> <space>     : "ꊭ"  UA2AD  # YI SYLLABLE ZYR
+<Multi_key> <z> <y> <c> <i> <t>             : "ꊮ"  UA2AE  # YI SYLLABLE CIT
+<Multi_key> <z> <y> <c> <i> <x>             : "ꊯ"  UA2AF  # YI SYLLABLE CIX
+<Multi_key> <z> <y> <c> <i> <space>         : "ꊰ"  UA2B0  # YI SYLLABLE CI
+<Multi_key> <z> <y> <c> <i> <p>             : "ꊱ"  UA2B1  # YI SYLLABLE CIP
+<Multi_key> <z> <y> <c> <i> <e> <t>         : "ꊲ"  UA2B2  # YI SYLLABLE CIET
+<Multi_key> <z> <y> <c> <i> <e> <x>         : "ꊳ"  UA2B3  # YI SYLLABLE CIEX
+<Multi_key> <z> <y> <c> <i> <e> <space>     : "ꊴ"  UA2B4  # YI SYLLABLE CIE
+<Multi_key> <z> <y> <c> <i> <e> <p>         : "ꊵ"  UA2B5  # YI SYLLABLE CIEP
+<Multi_key> <z> <y> <c> <a> <t>             : "ꊶ"  UA2B6  # YI SYLLABLE CAT
+<Multi_key> <z> <y> <c> <a> <x>             : "ꊷ"  UA2B7  # YI SYLLABLE CAX
+<Multi_key> <z> <y> <c> <a> <space>         : "ꊸ"  UA2B8  # YI SYLLABLE CA
+<Multi_key> <z> <y> <c> <a> <p>             : "ꊹ"  UA2B9  # YI SYLLABLE CAP
+<Multi_key> <z> <y> <c> <u> <o> <x>         : "ꊺ"  UA2BA  # YI SYLLABLE CUOX
+<Multi_key> <z> <y> <c> <u> <o> <space>     : "ꊻ"  UA2BB  # YI SYLLABLE CUO
+<Multi_key> <z> <y> <c> <u> <o> <p>         : "ꊼ"  UA2BC  # YI SYLLABLE CUOP
+<Multi_key> <z> <y> <c> <o> <t>             : "ꊽ"  UA2BD  # YI SYLLABLE COT
+<Multi_key> <z> <y> <c> <o> <x>             : "ꊾ"  UA2BE  # YI SYLLABLE COX
+<Multi_key> <z> <y> <c> <o> <space>         : "ꊿ"  UA2BF  # YI SYLLABLE CO
+<Multi_key> <z> <y> <c> <o> <p>             : "ꋀ"  UA2C0  # YI SYLLABLE COP
+<Multi_key> <z> <y> <c> <e> <x>             : "ꋁ"  UA2C1  # YI SYLLABLE CEX
+<Multi_key> <z> <y> <c> <e> <space>         : "ꋂ"  UA2C2  # YI SYLLABLE CE
+<Multi_key> <z> <y> <c> <e> <p>             : "ꋃ"  UA2C3  # YI SYLLABLE CEP
+<Multi_key> <z> <y> <c> <u> <t>             : "ꋄ"  UA2C4  # YI SYLLABLE CUT
+<Multi_key> <z> <y> <c> <u> <x>             : "ꋅ"  UA2C5  # YI SYLLABLE CUX
+<Multi_key> <z> <y> <c> <u> <space>         : "ꋆ"  UA2C6  # YI SYLLABLE CU
+<Multi_key> <z> <y> <c> <u> <p>             : "ꋇ"  UA2C7  # YI SYLLABLE CUP
+<Multi_key> <z> <y> <c> <u> <r> <x>         : "ꋈ"  UA2C8  # YI SYLLABLE CURX
+<Multi_key> <z> <y> <c> <u> <r> <space>     : "ꋉ"  UA2C9  # YI SYLLABLE CUR
+<Multi_key> <z> <y> <c> <y> <t>             : "ꋊ"  UA2CA  # YI SYLLABLE CYT
+<Multi_key> <z> <y> <c> <y> <x>             : "ꋋ"  UA2CB  # YI SYLLABLE CYX
+<Multi_key> <z> <y> <c> <y> <space>         : "ꋌ"  UA2CC  # YI SYLLABLE CY
+<Multi_key> <z> <y> <c> <y> <p>             : "ꋍ"  UA2CD  # YI SYLLABLE CYP
+<Multi_key> <z> <y> <c> <y> <r> <x>         : "ꋎ"  UA2CE  # YI SYLLABLE CYRX
+<Multi_key> <z> <y> <c> <y> <r> <space>     : "ꋏ"  UA2CF  # YI SYLLABLE CYR
+<Multi_key> <z> <y> <z> <z> <i> <t>         : "ꋐ"  UA2D0  # YI SYLLABLE ZZIT
+<Multi_key> <z> <y> <z> <z> <i> <x>         : "ꋑ"  UA2D1  # YI SYLLABLE ZZIX
+<Multi_key> <z> <y> <z> <z> <i> <space>     : "ꋒ"  UA2D2  # YI SYLLABLE ZZI
+<Multi_key> <z> <y> <z> <z> <i> <p>         : "ꋓ"  UA2D3  # YI SYLLABLE ZZIP
+<Multi_key> <z> <y> <z> <z> <i> <e> <t>     : "ꋔ"  UA2D4  # YI SYLLABLE ZZIET
+<Multi_key> <z> <y> <z> <z> <i> <e> <x>     : "ꋕ"  UA2D5  # YI SYLLABLE ZZIEX
+<Multi_key> <z> <y> <z> <z> <i> <e> <space> : "ꋖ"  UA2D6  # YI SYLLABLE ZZIE
+<Multi_key> <z> <y> <z> <z> <i> <e> <p>     : "ꋗ"  UA2D7  # YI SYLLABLE ZZIEP
+<Multi_key> <z> <y> <z> <z> <a> <t>         : "ꋘ"  UA2D8  # YI SYLLABLE ZZAT
+<Multi_key> <z> <y> <z> <z> <a> <x>         : "ꋙ"  UA2D9  # YI SYLLABLE ZZAX
+<Multi_key> <z> <y> <z> <z> <a> <space>     : "ꋚ"  UA2DA  # YI SYLLABLE ZZA
+<Multi_key> <z> <y> <z> <z> <a> <p>         : "ꋛ"  UA2DB  # YI SYLLABLE ZZAP
+<Multi_key> <z> <y> <z> <z> <o> <x>         : "ꋜ"  UA2DC  # YI SYLLABLE ZZOX
+<Multi_key> <z> <y> <z> <z> <o> <space>     : "ꋝ"  UA2DD  # YI SYLLABLE ZZO
+<Multi_key> <z> <y> <z> <z> <o> <p>         : "ꋞ"  UA2DE  # YI SYLLABLE ZZOP
+<Multi_key> <z> <y> <z> <z> <e> <x>         : "ꋟ"  UA2DF  # YI SYLLABLE ZZEX
+<Multi_key> <z> <y> <z> <z> <e> <space>     : "ꋠ"  UA2E0  # YI SYLLABLE ZZE
+<Multi_key> <z> <y> <z> <z> <e> <p>         : "ꋡ"  UA2E1  # YI SYLLABLE ZZEP
+<Multi_key> <z> <y> <z> <z> <u> <x>         : "ꋢ"  UA2E2  # YI SYLLABLE ZZUX
+<Multi_key> <z> <y> <z> <z> <u> <space>     : "ꋣ"  UA2E3  # YI SYLLABLE ZZU
+<Multi_key> <z> <y> <z> <z> <u> <p>         : "ꋤ"  UA2E4  # YI SYLLABLE ZZUP
+<Multi_key> <z> <y> <z> <z> <u> <r> <x>     : "ꋥ"  UA2E5  # YI SYLLABLE ZZURX
+<Multi_key> <z> <y> <z> <z> <u> <r> <space> : "ꋦ"  UA2E6  # YI SYLLABLE ZZUR
+<Multi_key> <z> <y> <z> <z> <y> <t>         : "ꋧ"  UA2E7  # YI SYLLABLE ZZYT
+<Multi_key> <z> <y> <z> <z> <y> <x>         : "ꋨ"  UA2E8  # YI SYLLABLE ZZYX
+<Multi_key> <z> <y> <z> <z> <y> <space>     : "ꋩ"  UA2E9  # YI SYLLABLE ZZY
+<Multi_key> <z> <y> <z> <z> <y> <p>         : "ꋪ"  UA2EA  # YI SYLLABLE ZZYP
+<Multi_key> <z> <y> <z> <z> <y> <r> <x>     : "ꋫ"  UA2EB  # YI SYLLABLE ZZYRX
+<Multi_key> <z> <y> <z> <z> <y> <r> <space> : "ꋬ"  UA2EC  # YI SYLLABLE ZZYR
+<Multi_key> <z> <y> <n> <z> <i> <t>         : "ꋭ"  UA2ED  # YI SYLLABLE NZIT
+<Multi_key> <z> <y> <n> <z> <i> <x>         : "ꋮ"  UA2EE  # YI SYLLABLE NZIX
+<Multi_key> <z> <y> <n> <z> <i> <space>     : "ꋯ"  UA2EF  # YI SYLLABLE NZI
+<Multi_key> <z> <y> <n> <z> <i> <p>         : "ꋰ"  UA2F0  # YI SYLLABLE NZIP
+<Multi_key> <z> <y> <n> <z> <i> <e> <x>     : "ꋱ"  UA2F1  # YI SYLLABLE NZIEX
+<Multi_key> <z> <y> <n> <z> <i> <e> <space> : "ꋲ"  UA2F2  # YI SYLLABLE NZIE
+<Multi_key> <z> <y> <n> <z> <i> <e> <p>     : "ꋳ"  UA2F3  # YI SYLLABLE NZIEP
+<Multi_key> <z> <y> <n> <z> <a> <t>         : "ꋴ"  UA2F4  # YI SYLLABLE NZAT
+<Multi_key> <z> <y> <n> <z> <a> <x>         : "ꋵ"  UA2F5  # YI SYLLABLE NZAX
+<Multi_key> <z> <y> <n> <z> <a> <space>     : "ꋶ"  UA2F6  # YI SYLLABLE NZA
+<Multi_key> <z> <y> <n> <z> <a> <p>         : "ꋷ"  UA2F7  # YI SYLLABLE NZAP
+<Multi_key> <z> <y> <n> <z> <u> <o> <x>     : "ꋸ"  UA2F8  # YI SYLLABLE NZUOX
+<Multi_key> <z> <y> <n> <z> <u> <o> <space> : "ꋹ"  UA2F9  # YI SYLLABLE NZUO
+<Multi_key> <z> <y> <n> <z> <o> <x>         : "ꋺ"  UA2FA  # YI SYLLABLE NZOX
+<Multi_key> <z> <y> <n> <z> <o> <p>         : "ꋻ"  UA2FB  # YI SYLLABLE NZOP
+<Multi_key> <z> <y> <n> <z> <e> <x>         : "ꋼ"  UA2FC  # YI SYLLABLE NZEX
+<Multi_key> <z> <y> <n> <z> <e> <space>     : "ꋽ"  UA2FD  # YI SYLLABLE NZE
+<Multi_key> <z> <y> <n> <z> <u> <x>         : "ꋾ"  UA2FE  # YI SYLLABLE NZUX
+<Multi_key> <z> <y> <n> <z> <u> <space>     : "ꋿ"  UA2FF  # YI SYLLABLE NZU
+<Multi_key> <z> <y> <n> <z> <u> <p>         : "ꌀ"  UA300  # YI SYLLABLE NZUP
+<Multi_key> <z> <y> <n> <z> <u> <r> <x>     : "ꌁ"  UA301  # YI SYLLABLE NZURX
+<Multi_key> <z> <y> <n> <z> <u> <r> <space> : "ꌂ"  UA302  # YI SYLLABLE NZUR
+<Multi_key> <z> <y> <n> <z> <y> <t>         : "ꌃ"  UA303  # YI SYLLABLE NZYT
+<Multi_key> <z> <y> <n> <z> <y> <x>         : "ꌄ"  UA304  # YI SYLLABLE NZYX
+<Multi_key> <z> <y> <n> <z> <y> <space>     : "ꌅ"  UA305  # YI SYLLABLE NZY
+<Multi_key> <z> <y> <n> <z> <y> <p>         : "ꌆ"  UA306  # YI SYLLABLE NZYP
+<Multi_key> <z> <y> <n> <z> <y> <r> <x>     : "ꌇ"  UA307  # YI SYLLABLE NZYRX
+<Multi_key> <z> <y> <n> <z> <y> <r> <space> : "ꌈ"  UA308  # YI SYLLABLE NZYR
+<Multi_key> <z> <y> <s> <i> <t>             : "ꌉ"  UA309  # YI SYLLABLE SIT
+<Multi_key> <z> <y> <s> <i> <x>             : "ꌊ"  UA30A  # YI SYLLABLE SIX
+<Multi_key> <z> <y> <s> <i> <space>         : "ꌋ"  UA30B  # YI SYLLABLE SI
+<Multi_key> <z> <y> <s> <i> <p>             : "ꌌ"  UA30C  # YI SYLLABLE SIP
+<Multi_key> <z> <y> <s> <i> <e> <x>         : "ꌍ"  UA30D  # YI SYLLABLE SIEX
+<Multi_key> <z> <y> <s> <i> <e> <space>     : "ꌎ"  UA30E  # YI SYLLABLE SIE
+<Multi_key> <z> <y> <s> <i> <e> <p>         : "ꌏ"  UA30F  # YI SYLLABLE SIEP
+<Multi_key> <z> <y> <s> <a> <t>             : "ꌐ"  UA310  # YI SYLLABLE SAT
+<Multi_key> <z> <y> <s> <a> <x>             : "ꌑ"  UA311  # YI SYLLABLE SAX
+<Multi_key> <z> <y> <s> <a> <space>         : "ꌒ"  UA312  # YI SYLLABLE SA
+<Multi_key> <z> <y> <s> <a> <p>             : "ꌓ"  UA313  # YI SYLLABLE SAP
+<Multi_key> <z> <y> <s> <u> <o> <x>         : "ꌔ"  UA314  # YI SYLLABLE SUOX
+<Multi_key> <z> <y> <s> <u> <o> <space>     : "ꌕ"  UA315  # YI SYLLABLE SUO
+<Multi_key> <z> <y> <s> <u> <o> <p>         : "ꌖ"  UA316  # YI SYLLABLE SUOP
+<Multi_key> <z> <y> <s> <o> <t>             : "ꌗ"  UA317  # YI SYLLABLE SOT
+<Multi_key> <z> <y> <s> <o> <x>             : "ꌘ"  UA318  # YI SYLLABLE SOX
+<Multi_key> <z> <y> <s> <o> <space>         : "ꌙ"  UA319  # YI SYLLABLE SO
+<Multi_key> <z> <y> <s> <o> <p>             : "ꌚ"  UA31A  # YI SYLLABLE SOP
+<Multi_key> <z> <y> <s> <e> <x>             : "ꌛ"  UA31B  # YI SYLLABLE SEX
+<Multi_key> <z> <y> <s> <e> <space>         : "ꌜ"  UA31C  # YI SYLLABLE SE
+<Multi_key> <z> <y> <s> <e> <p>             : "ꌝ"  UA31D  # YI SYLLABLE SEP
+<Multi_key> <z> <y> <s> <u> <t>             : "ꌞ"  UA31E  # YI SYLLABLE SUT
+<Multi_key> <z> <y> <s> <u> <x>             : "ꌟ"  UA31F  # YI SYLLABLE SUX
+<Multi_key> <z> <y> <s> <u> <space>         : "ꌠ"  UA320  # YI SYLLABLE SU
+<Multi_key> <z> <y> <s> <u> <p>             : "ꌡ"  UA321  # YI SYLLABLE SUP
+<Multi_key> <z> <y> <s> <u> <r> <x>         : "ꌢ"  UA322  # YI SYLLABLE SURX
+<Multi_key> <z> <y> <s> <u> <r> <space>     : "ꌣ"  UA323  # YI SYLLABLE SUR
+<Multi_key> <z> <y> <s> <y> <t>             : "ꌤ"  UA324  # YI SYLLABLE SYT
+<Multi_key> <z> <y> <s> <y> <x>             : "ꌥ"  UA325  # YI SYLLABLE SYX
+<Multi_key> <z> <y> <s> <y> <space>         : "ꌦ"  UA326  # YI SYLLABLE SY
+<Multi_key> <z> <y> <s> <y> <p>             : "ꌧ"  UA327  # YI SYLLABLE SYP
+<Multi_key> <z> <y> <s> <y> <r> <x>         : "ꌨ"  UA328  # YI SYLLABLE SYRX
+<Multi_key> <z> <y> <s> <y> <r> <space>     : "ꌩ"  UA329  # YI SYLLABLE SYR
+<Multi_key> <z> <y> <s> <s> <i> <t>         : "ꌪ"  UA32A  # YI SYLLABLE SSIT
+<Multi_key> <z> <y> <s> <s> <i> <x>         : "ꌫ"  UA32B  # YI SYLLABLE SSIX
+<Multi_key> <z> <y> <s> <s> <i> <space>     : "ꌬ"  UA32C  # YI SYLLABLE SSI
+<Multi_key> <z> <y> <s> <s> <i> <p>         : "ꌭ"  UA32D  # YI SYLLABLE SSIP
+<Multi_key> <z> <y> <s> <s> <i> <e> <x>     : "ꌮ"  UA32E  # YI SYLLABLE SSIEX
+<Multi_key> <z> <y> <s> <s> <i> <e> <space> : "ꌯ"  UA32F  # YI SYLLABLE SSIE
+<Multi_key> <z> <y> <s> <s> <i> <e> <p>     : "ꌰ"  UA330  # YI SYLLABLE SSIEP
+<Multi_key> <z> <y> <s> <s> <a> <t>         : "ꌱ"  UA331  # YI SYLLABLE SSAT
+<Multi_key> <z> <y> <s> <s> <a> <x>         : "ꌲ"  UA332  # YI SYLLABLE SSAX
+<Multi_key> <z> <y> <s> <s> <a> <space>     : "ꌳ"  UA333  # YI SYLLABLE SSA
+<Multi_key> <z> <y> <s> <s> <a> <p>         : "ꌴ"  UA334  # YI SYLLABLE SSAP
+<Multi_key> <z> <y> <s> <s> <o> <t>         : "ꌵ"  UA335  # YI SYLLABLE SSOT
+<Multi_key> <z> <y> <s> <s> <o> <x>         : "ꌶ"  UA336  # YI SYLLABLE SSOX
+<Multi_key> <z> <y> <s> <s> <o> <space>     : "ꌷ"  UA337  # YI SYLLABLE SSO
+<Multi_key> <z> <y> <s> <s> <o> <p>         : "ꌸ"  UA338  # YI SYLLABLE SSOP
+<Multi_key> <z> <y> <s> <s> <e> <x>         : "ꌹ"  UA339  # YI SYLLABLE SSEX
+<Multi_key> <z> <y> <s> <s> <e> <space>     : "ꌺ"  UA33A  # YI SYLLABLE SSE
+<Multi_key> <z> <y> <s> <s> <e> <p>         : "ꌻ"  UA33B  # YI SYLLABLE SSEP
+<Multi_key> <z> <y> <s> <s> <u> <t>         : "ꌼ"  UA33C  # YI SYLLABLE SSUT
+<Multi_key> <z> <y> <s> <s> <u> <x>         : "ꌽ"  UA33D  # YI SYLLABLE SSUX
+<Multi_key> <z> <y> <s> <s> <u> <space>     : "ꌾ"  UA33E  # YI SYLLABLE SSU
+<Multi_key> <z> <y> <s> <s> <u> <p>         : "ꌿ"  UA33F  # YI SYLLABLE SSUP
+<Multi_key> <z> <y> <s> <s> <y> <t>         : "ꍀ"  UA340  # YI SYLLABLE SSYT
+<Multi_key> <z> <y> <s> <s> <y> <x>         : "ꍁ"  UA341  # YI SYLLABLE SSYX
+<Multi_key> <z> <y> <s> <s> <y> <space>     : "ꍂ"  UA342  # YI SYLLABLE SSY
+<Multi_key> <z> <y> <s> <s> <y> <p>         : "ꍃ"  UA343  # YI SYLLABLE SSYP
+<Multi_key> <z> <y> <s> <s> <y> <r> <x>     : "ꍄ"  UA344  # YI SYLLABLE SSYRX
+<Multi_key> <z> <y> <s> <s> <y> <r> <space> : "ꍅ"  UA345  # YI SYLLABLE SSYR
+<Multi_key> <z> <y> <z> <h> <a> <t>         : "ꍆ"  UA346  # YI SYLLABLE ZHAT
+<Multi_key> <z> <y> <z> <h> <a> <x>         : "ꍇ"  UA347  # YI SYLLABLE ZHAX
+<Multi_key> <z> <y> <z> <h> <a> <space>     : "ꍈ"  UA348  # YI SYLLABLE ZHA
+<Multi_key> <z> <y> <z> <h> <a> <p>         : "ꍉ"  UA349  # YI SYLLABLE ZHAP
+<Multi_key> <z> <y> <z> <h> <u> <o> <x>     : "ꍊ"  UA34A  # YI SYLLABLE ZHUOX
+<Multi_key> <z> <y> <z> <h> <u> <o> <space> : "ꍋ"  UA34B  # YI SYLLABLE ZHUO
+<Multi_key> <z> <y> <z> <h> <u> <o> <p>     : "ꍌ"  UA34C  # YI SYLLABLE ZHUOP
+<Multi_key> <z> <y> <z> <h> <o> <t>         : "ꍍ"  UA34D  # YI SYLLABLE ZHOT
+<Multi_key> <z> <y> <z> <h> <o> <x>         : "ꍎ"  UA34E  # YI SYLLABLE ZHOX
+<Multi_key> <z> <y> <z> <h> <o> <space>     : "ꍏ"  UA34F  # YI SYLLABLE ZHO
+<Multi_key> <z> <y> <z> <h> <o> <p>         : "ꍐ"  UA350  # YI SYLLABLE ZHOP
+<Multi_key> <z> <y> <z> <h> <e> <t>         : "ꍑ"  UA351  # YI SYLLABLE ZHET
+<Multi_key> <z> <y> <z> <h> <e> <x>         : "ꍒ"  UA352  # YI SYLLABLE ZHEX
+<Multi_key> <z> <y> <z> <h> <e> <space>     : "ꍓ"  UA353  # YI SYLLABLE ZHE
+<Multi_key> <z> <y> <z> <h> <e> <p>         : "ꍔ"  UA354  # YI SYLLABLE ZHEP
+<Multi_key> <z> <y> <z> <h> <u> <t>         : "ꍕ"  UA355  # YI SYLLABLE ZHUT
+<Multi_key> <z> <y> <z> <h> <u> <x>         : "ꍖ"  UA356  # YI SYLLABLE ZHUX
+<Multi_key> <z> <y> <z> <h> <u> <space>     : "ꍗ"  UA357  # YI SYLLABLE ZHU
+<Multi_key> <z> <y> <z> <h> <u> <p>         : "ꍘ"  UA358  # YI SYLLABLE ZHUP
+<Multi_key> <z> <y> <z> <h> <u> <r> <x>     : "ꍙ"  UA359  # YI SYLLABLE ZHURX
+<Multi_key> <z> <y> <z> <h> <u> <r> <space> : "ꍚ"  UA35A  # YI SYLLABLE ZHUR
+<Multi_key> <z> <y> <z> <h> <y> <t>         : "ꍛ"  UA35B  # YI SYLLABLE ZHYT
+<Multi_key> <z> <y> <z> <h> <y> <x>         : "ꍜ"  UA35C  # YI SYLLABLE ZHYX
+<Multi_key> <z> <y> <z> <h> <y> <space>     : "ꍝ"  UA35D  # YI SYLLABLE ZHY
+<Multi_key> <z> <y> <z> <h> <y> <p>         : "ꍞ"  UA35E  # YI SYLLABLE ZHYP
+<Multi_key> <z> <y> <z> <h> <y> <r> <x>     : "ꍟ"  UA35F  # YI SYLLABLE ZHYRX
+<Multi_key> <z> <y> <z> <h> <y> <r> <space> : "ꍠ"  UA360  # YI SYLLABLE ZHYR
+<Multi_key> <z> <y> <c> <h> <a> <t>         : "ꍡ"  UA361  # YI SYLLABLE CHAT
+<Multi_key> <z> <y> <c> <h> <a> <x>         : "ꍢ"  UA362  # YI SYLLABLE CHAX
+<Multi_key> <z> <y> <c> <h> <a> <space>     : "ꍣ"  UA363  # YI SYLLABLE CHA
+<Multi_key> <z> <y> <c> <h> <a> <p>         : "ꍤ"  UA364  # YI SYLLABLE CHAP
+<Multi_key> <z> <y> <c> <h> <u> <o> <t>     : "ꍥ"  UA365  # YI SYLLABLE CHUOT
+<Multi_key> <z> <y> <c> <h> <u> <o> <x>     : "ꍦ"  UA366  # YI SYLLABLE CHUOX
+<Multi_key> <z> <y> <c> <h> <u> <o> <space> : "ꍧ"  UA367  # YI SYLLABLE CHUO
+<Multi_key> <z> <y> <c> <h> <u> <o> <p>     : "ꍨ"  UA368  # YI SYLLABLE CHUOP
+<Multi_key> <z> <y> <c> <h> <o> <t>         : "ꍩ"  UA369  # YI SYLLABLE CHOT
+<Multi_key> <z> <y> <c> <h> <o> <x>         : "ꍪ"  UA36A  # YI SYLLABLE CHOX
+<Multi_key> <z> <y> <c> <h> <o> <space>     : "ꍫ"  UA36B  # YI SYLLABLE CHO
+<Multi_key> <z> <y> <c> <h> <o> <p>         : "ꍬ"  UA36C  # YI SYLLABLE CHOP
+<Multi_key> <z> <y> <c> <h> <e> <t>         : "ꍭ"  UA36D  # YI SYLLABLE CHET
+<Multi_key> <z> <y> <c> <h> <e> <x>         : "ꍮ"  UA36E  # YI SYLLABLE CHEX
+<Multi_key> <z> <y> <c> <h> <e> <space>     : "ꍯ"  UA36F  # YI SYLLABLE CHE
+<Multi_key> <z> <y> <c> <h> <e> <p>         : "ꍰ"  UA370  # YI SYLLABLE CHEP
+<Multi_key> <z> <y> <c> <h> <u> <x>         : "ꍱ"  UA371  # YI SYLLABLE CHUX
+<Multi_key> <z> <y> <c> <h> <u> <space>     : "ꍲ"  UA372  # YI SYLLABLE CHU
+<Multi_key> <z> <y> <c> <h> <u> <p>         : "ꍳ"  UA373  # YI SYLLABLE CHUP
+<Multi_key> <z> <y> <c> <h> <u> <r> <x>     : "ꍴ"  UA374  # YI SYLLABLE CHURX
+<Multi_key> <z> <y> <c> <h> <u> <r> <space> : "ꍵ"  UA375  # YI SYLLABLE CHUR
+<Multi_key> <z> <y> <c> <h> <y> <t>         : "ꍶ"  UA376  # YI SYLLABLE CHYT
+<Multi_key> <z> <y> <c> <h> <y> <x>         : "ꍷ"  UA377  # YI SYLLABLE CHYX
+<Multi_key> <z> <y> <c> <h> <y> <space>     : "ꍸ"  UA378  # YI SYLLABLE CHY
+<Multi_key> <z> <y> <c> <h> <y> <p>         : "ꍹ"  UA379  # YI SYLLABLE CHYP
+<Multi_key> <z> <y> <c> <h> <y> <r> <x>     : "ꍺ"  UA37A  # YI SYLLABLE CHYRX
+<Multi_key> <z> <y> <c> <h> <y> <r> <space> : "ꍻ"  UA37B  # YI SYLLABLE CHYR
+<Multi_key> <z> <y> <r> <r> <a> <x>         : "ꍼ"  UA37C  # YI SYLLABLE RRAX
+<Multi_key> <z> <y> <r> <r> <a> <space>     : "ꍽ"  UA37D  # YI SYLLABLE RRA
+<Multi_key> <z> <y> <r> <r> <u> <o> <x>     : "ꍾ"  UA37E  # YI SYLLABLE RRUOX
+<Multi_key> <z> <y> <r> <r> <u> <o> <space> : "ꍿ"  UA37F  # YI SYLLABLE RRUO
+<Multi_key> <z> <y> <r> <r> <o> <t>         : "ꎀ"  UA380  # YI SYLLABLE RROT
+<Multi_key> <z> <y> <r> <r> <o> <x>         : "ꎁ"  UA381  # YI SYLLABLE RROX
+<Multi_key> <z> <y> <r> <r> <o> <space>     : "ꎂ"  UA382  # YI SYLLABLE RRO
+<Multi_key> <z> <y> <r> <r> <o> <p>         : "ꎃ"  UA383  # YI SYLLABLE RROP
+<Multi_key> <z> <y> <r> <r> <e> <t>         : "ꎄ"  UA384  # YI SYLLABLE RRET
+<Multi_key> <z> <y> <r> <r> <e> <x>         : "ꎅ"  UA385  # YI SYLLABLE RREX
+<Multi_key> <z> <y> <r> <r> <e> <space>     : "ꎆ"  UA386  # YI SYLLABLE RRE
+<Multi_key> <z> <y> <r> <r> <e> <p>         : "ꎇ"  UA387  # YI SYLLABLE RREP
+<Multi_key> <z> <y> <r> <r> <u> <t>         : "ꎈ"  UA388  # YI SYLLABLE RRUT
+<Multi_key> <z> <y> <r> <r> <u> <x>         : "ꎉ"  UA389  # YI SYLLABLE RRUX
+<Multi_key> <z> <y> <r> <r> <u> <space>     : "ꎊ"  UA38A  # YI SYLLABLE RRU
+<Multi_key> <z> <y> <r> <r> <u> <p>         : "ꎋ"  UA38B  # YI SYLLABLE RRUP
+<Multi_key> <z> <y> <r> <r> <u> <r> <x>     : "ꎌ"  UA38C  # YI SYLLABLE RRURX
+<Multi_key> <z> <y> <r> <r> <u> <r> <space> : "ꎍ"  UA38D  # YI SYLLABLE RRUR
+<Multi_key> <z> <y> <r> <r> <y> <t>         : "ꎎ"  UA38E  # YI SYLLABLE RRYT
+<Multi_key> <z> <y> <r> <r> <y> <x>         : "ꎏ"  UA38F  # YI SYLLABLE RRYX
+<Multi_key> <z> <y> <r> <r> <y> <space>     : "ꎐ"  UA390  # YI SYLLABLE RRY
+<Multi_key> <z> <y> <r> <r> <y> <p>         : "ꎑ"  UA391  # YI SYLLABLE RRYP
+<Multi_key> <z> <y> <r> <r> <y> <r> <x>     : "ꎒ"  UA392  # YI SYLLABLE RRYRX
+<Multi_key> <z> <y> <r> <r> <y> <r> <space> : "ꎓ"  UA393  # YI SYLLABLE RRYR
+<Multi_key> <z> <y> <n> <r> <a> <t>         : "ꎔ"  UA394  # YI SYLLABLE NRAT
+<Multi_key> <z> <y> <n> <r> <a> <x>         : "ꎕ"  UA395  # YI SYLLABLE NRAX
+<Multi_key> <z> <y> <n> <r> <a> <space>     : "ꎖ"  UA396  # YI SYLLABLE NRA
+<Multi_key> <z> <y> <n> <r> <a> <p>         : "ꎗ"  UA397  # YI SYLLABLE NRAP
+<Multi_key> <z> <y> <n> <r> <o> <x>         : "ꎘ"  UA398  # YI SYLLABLE NROX
+<Multi_key> <z> <y> <n> <r> <o> <space>     : "ꎙ"  UA399  # YI SYLLABLE NRO
+<Multi_key> <z> <y> <n> <r> <o> <p>         : "ꎚ"  UA39A  # YI SYLLABLE NROP
+<Multi_key> <z> <y> <n> <r> <e> <t>         : "ꎛ"  UA39B  # YI SYLLABLE NRET
+<Multi_key> <z> <y> <n> <r> <e> <x>         : "ꎜ"  UA39C  # YI SYLLABLE NREX
+<Multi_key> <z> <y> <n> <r> <e> <space>     : "ꎝ"  UA39D  # YI SYLLABLE NRE
+<Multi_key> <z> <y> <n> <r> <e> <p>         : "ꎞ"  UA39E  # YI SYLLABLE NREP
+<Multi_key> <z> <y> <n> <r> <u> <t>         : "ꎟ"  UA39F  # YI SYLLABLE NRUT
+<Multi_key> <z> <y> <n> <r> <u> <x>         : "ꎠ"  UA3A0  # YI SYLLABLE NRUX
+<Multi_key> <z> <y> <n> <r> <u> <space>     : "ꎡ"  UA3A1  # YI SYLLABLE NRU
+<Multi_key> <z> <y> <n> <r> <u> <p>         : "ꎢ"  UA3A2  # YI SYLLABLE NRUP
+<Multi_key> <z> <y> <n> <r> <u> <r> <x>     : "ꎣ"  UA3A3  # YI SYLLABLE NRURX
+<Multi_key> <z> <y> <n> <r> <u> <r> <space> : "ꎤ"  UA3A4  # YI SYLLABLE NRUR
+<Multi_key> <z> <y> <n> <r> <y> <t>         : "ꎥ"  UA3A5  # YI SYLLABLE NRYT
+<Multi_key> <z> <y> <n> <r> <y> <x>         : "ꎦ"  UA3A6  # YI SYLLABLE NRYX
+<Multi_key> <z> <y> <n> <r> <y> <space>     : "ꎧ"  UA3A7  # YI SYLLABLE NRY
+<Multi_key> <z> <y> <n> <r> <y> <p>         : "ꎨ"  UA3A8  # YI SYLLABLE NRYP
+<Multi_key> <z> <y> <n> <r> <y> <r> <x>     : "ꎩ"  UA3A9  # YI SYLLABLE NRYRX
+<Multi_key> <z> <y> <n> <r> <y> <r> <space> : "ꎪ"  UA3AA  # YI SYLLABLE NRYR
+<Multi_key> <z> <y> <s> <h> <a> <t>         : "ꎫ"  UA3AB  # YI SYLLABLE SHAT
+<Multi_key> <z> <y> <s> <h> <a> <x>         : "ꎬ"  UA3AC  # YI SYLLABLE SHAX
+<Multi_key> <z> <y> <s> <h> <a> <space>     : "ꎭ"  UA3AD  # YI SYLLABLE SHA
+<Multi_key> <z> <y> <s> <h> <a> <p>         : "ꎮ"  UA3AE  # YI SYLLABLE SHAP
+<Multi_key> <z> <y> <s> <h> <u> <o> <x>     : "ꎯ"  UA3AF  # YI SYLLABLE SHUOX
+<Multi_key> <z> <y> <s> <h> <u> <o> <space> : "ꎰ"  UA3B0  # YI SYLLABLE SHUO
+<Multi_key> <z> <y> <s> <h> <u> <o> <p>     : "ꎱ"  UA3B1  # YI SYLLABLE SHUOP
+<Multi_key> <z> <y> <s> <h> <o> <t>         : "ꎲ"  UA3B2  # YI SYLLABLE SHOT
+<Multi_key> <z> <y> <s> <h> <o> <x>         : "ꎳ"  UA3B3  # YI SYLLABLE SHOX
+<Multi_key> <z> <y> <s> <h> <o> <space>     : "ꎴ"  UA3B4  # YI SYLLABLE SHO
+<Multi_key> <z> <y> <s> <h> <o> <p>         : "ꎵ"  UA3B5  # YI SYLLABLE SHOP
+<Multi_key> <z> <y> <s> <h> <e> <t>         : "ꎶ"  UA3B6  # YI SYLLABLE SHET
+<Multi_key> <z> <y> <s> <h> <e> <x>         : "ꎷ"  UA3B7  # YI SYLLABLE SHEX
+<Multi_key> <z> <y> <s> <h> <e> <space>     : "ꎸ"  UA3B8  # YI SYLLABLE SHE
+<Multi_key> <z> <y> <s> <h> <e> <p>         : "ꎹ"  UA3B9  # YI SYLLABLE SHEP
+<Multi_key> <z> <y> <s> <h> <u> <t>         : "ꎺ"  UA3BA  # YI SYLLABLE SHUT
+<Multi_key> <z> <y> <s> <h> <u> <x>         : "ꎻ"  UA3BB  # YI SYLLABLE SHUX
+<Multi_key> <z> <y> <s> <h> <u> <space>     : "ꎼ"  UA3BC  # YI SYLLABLE SHU
+<Multi_key> <z> <y> <s> <h> <u> <p>         : "ꎽ"  UA3BD  # YI SYLLABLE SHUP
+<Multi_key> <z> <y> <s> <h> <u> <r> <x>     : "ꎾ"  UA3BE  # YI SYLLABLE SHURX
+<Multi_key> <z> <y> <s> <h> <u> <r> <space> : "ꎿ"  UA3BF  # YI SYLLABLE SHUR
+<Multi_key> <z> <y> <s> <h> <y> <t>         : "ꏀ"  UA3C0  # YI SYLLABLE SHYT
+<Multi_key> <z> <y> <s> <h> <y> <x>         : "ꏁ"  UA3C1  # YI SYLLABLE SHYX
+<Multi_key> <z> <y> <s> <h> <y> <space>     : "ꏂ"  UA3C2  # YI SYLLABLE SHY
+<Multi_key> <z> <y> <s> <h> <y> <p>         : "ꏃ"  UA3C3  # YI SYLLABLE SHYP
+<Multi_key> <z> <y> <s> <h> <y> <r> <x>     : "ꏄ"  UA3C4  # YI SYLLABLE SHYRX
+<Multi_key> <z> <y> <s> <h> <y> <r> <space> : "ꏅ"  UA3C5  # YI SYLLABLE SHYR
+<Multi_key> <z> <y> <r> <a> <t>             : "ꏆ"  UA3C6  # YI SYLLABLE RAT
+<Multi_key> <z> <y> <r> <a> <x>             : "ꏇ"  UA3C7  # YI SYLLABLE RAX
+<Multi_key> <z> <y> <r> <a> <space>         : "ꏈ"  UA3C8  # YI SYLLABLE RA
+<Multi_key> <z> <y> <r> <a> <p>             : "ꏉ"  UA3C9  # YI SYLLABLE RAP
+<Multi_key> <z> <y> <r> <u> <o> <x>         : "ꏊ"  UA3CA  # YI SYLLABLE RUOX
+<Multi_key> <z> <y> <r> <u> <o> <space>     : "ꏋ"  UA3CB  # YI SYLLABLE RUO
+<Multi_key> <z> <y> <r> <u> <o> <p>         : "ꏌ"  UA3CC  # YI SYLLABLE RUOP
+<Multi_key> <z> <y> <r> <o> <t>             : "ꏍ"  UA3CD  # YI SYLLABLE ROT
+<Multi_key> <z> <y> <r> <o> <x>             : "ꏎ"  UA3CE  # YI SYLLABLE ROX
+<Multi_key> <z> <y> <r> <o> <space>         : "ꏏ"  UA3CF  # YI SYLLABLE RO
+<Multi_key> <z> <y> <r> <o> <p>             : "ꏐ"  UA3D0  # YI SYLLABLE ROP
+<Multi_key> <z> <y> <r> <e> <x>             : "ꏑ"  UA3D1  # YI SYLLABLE REX
+<Multi_key> <z> <y> <r> <e> <space>         : "ꏒ"  UA3D2  # YI SYLLABLE RE
+<Multi_key> <z> <y> <r> <e> <p>             : "ꏓ"  UA3D3  # YI SYLLABLE REP
+<Multi_key> <z> <y> <r> <u> <t>             : "ꏔ"  UA3D4  # YI SYLLABLE RUT
+<Multi_key> <z> <y> <r> <u> <x>             : "ꏕ"  UA3D5  # YI SYLLABLE RUX
+<Multi_key> <z> <y> <r> <u> <space>         : "ꏖ"  UA3D6  # YI SYLLABLE RU
+<Multi_key> <z> <y> <r> <u> <p>             : "ꏗ"  UA3D7  # YI SYLLABLE RUP
+<Multi_key> <z> <y> <r> <u> <r> <x>         : "ꏘ"  UA3D8  # YI SYLLABLE RURX
+<Multi_key> <z> <y> <r> <u> <r> <space>     : "ꏙ"  UA3D9  # YI SYLLABLE RUR
+<Multi_key> <z> <y> <r> <y> <t>             : "ꏚ"  UA3DA  # YI SYLLABLE RYT
+<Multi_key> <z> <y> <r> <y> <x>             : "ꏛ"  UA3DB  # YI SYLLABLE RYX
+<Multi_key> <z> <y> <r> <y> <space>         : "ꏜ"  UA3DC  # YI SYLLABLE RY
+<Multi_key> <z> <y> <r> <y> <p>             : "ꏝ"  UA3DD  # YI SYLLABLE RYP
+<Multi_key> <z> <y> <r> <y> <r> <x>         : "ꏞ"  UA3DE  # YI SYLLABLE RYRX
+<Multi_key> <z> <y> <r> <y> <r> <space>     : "ꏟ"  UA3DF  # YI SYLLABLE RYR
+<Multi_key> <z> <y> <j> <i> <t>             : "ꏠ"  UA3E0  # YI SYLLABLE JIT
+<Multi_key> <z> <y> <j> <i> <x>             : "ꏡ"  UA3E1  # YI SYLLABLE JIX
+<Multi_key> <z> <y> <j> <i> <space>         : "ꏢ"  UA3E2  # YI SYLLABLE JI
+<Multi_key> <z> <y> <j> <i> <p>             : "ꏣ"  UA3E3  # YI SYLLABLE JIP
+<Multi_key> <z> <y> <j> <i> <e> <t>         : "ꏤ"  UA3E4  # YI SYLLABLE JIET
+<Multi_key> <z> <y> <j> <i> <e> <x>         : "ꏥ"  UA3E5  # YI SYLLABLE JIEX
+<Multi_key> <z> <y> <j> <i> <e> <space>     : "ꏦ"  UA3E6  # YI SYLLABLE JIE
+<Multi_key> <z> <y> <j> <i> <e> <p>         : "ꏧ"  UA3E7  # YI SYLLABLE JIEP
+<Multi_key> <z> <y> <j> <u> <o> <t>         : "ꏨ"  UA3E8  # YI SYLLABLE JUOT
+<Multi_key> <z> <y> <j> <u> <o> <x>         : "ꏩ"  UA3E9  # YI SYLLABLE JUOX
+<Multi_key> <z> <y> <j> <u> <o> <space>     : "ꏪ"  UA3EA  # YI SYLLABLE JUO
+<Multi_key> <z> <y> <j> <u> <o> <p>         : "ꏫ"  UA3EB  # YI SYLLABLE JUOP
+<Multi_key> <z> <y> <j> <o> <t>             : "ꏬ"  UA3EC  # YI SYLLABLE JOT
+<Multi_key> <z> <y> <j> <o> <x>             : "ꏭ"  UA3ED  # YI SYLLABLE JOX
+<Multi_key> <z> <y> <j> <o> <space>         : "ꏮ"  UA3EE  # YI SYLLABLE JO
+<Multi_key> <z> <y> <j> <o> <p>             : "ꏯ"  UA3EF  # YI SYLLABLE JOP
+<Multi_key> <z> <y> <j> <u> <t>             : "ꏰ"  UA3F0  # YI SYLLABLE JUT
+<Multi_key> <z> <y> <j> <u> <x>             : "ꏱ"  UA3F1  # YI SYLLABLE JUX
+<Multi_key> <z> <y> <j> <u> <space>         : "ꏲ"  UA3F2  # YI SYLLABLE JU
+<Multi_key> <z> <y> <j> <u> <p>             : "ꏳ"  UA3F3  # YI SYLLABLE JUP
+<Multi_key> <z> <y> <j> <u> <r> <x>         : "ꏴ"  UA3F4  # YI SYLLABLE JURX
+<Multi_key> <z> <y> <j> <u> <r> <space>     : "ꏵ"  UA3F5  # YI SYLLABLE JUR
+<Multi_key> <z> <y> <j> <y> <t>             : "ꏶ"  UA3F6  # YI SYLLABLE JYT
+<Multi_key> <z> <y> <j> <y> <x>             : "ꏷ"  UA3F7  # YI SYLLABLE JYX
+<Multi_key> <z> <y> <j> <y> <space>         : "ꏸ"  UA3F8  # YI SYLLABLE JY
+<Multi_key> <z> <y> <j> <y> <p>             : "ꏹ"  UA3F9  # YI SYLLABLE JYP
+<Multi_key> <z> <y> <j> <y> <r> <x>         : "ꏺ"  UA3FA  # YI SYLLABLE JYRX
+<Multi_key> <z> <y> <j> <y> <r> <space>     : "ꏻ"  UA3FB  # YI SYLLABLE JYR
+<Multi_key> <z> <y> <q> <i> <t>             : "ꏼ"  UA3FC  # YI SYLLABLE QIT
+<Multi_key> <z> <y> <q> <i> <x>             : "ꏽ"  UA3FD  # YI SYLLABLE QIX
+<Multi_key> <z> <y> <q> <i> <space>         : "ꏾ"  UA3FE  # YI SYLLABLE QI
+<Multi_key> <z> <y> <q> <i> <p>             : "ꏿ"  UA3FF  # YI SYLLABLE QIP
+<Multi_key> <z> <y> <q> <i> <e> <t>         : "ꐀ"  UA400  # YI SYLLABLE QIET
+<Multi_key> <z> <y> <q> <i> <e> <x>         : "ꐁ"  UA401  # YI SYLLABLE QIEX
+<Multi_key> <z> <y> <q> <i> <e> <space>     : "ꐂ"  UA402  # YI SYLLABLE QIE
+<Multi_key> <z> <y> <q> <i> <e> <p>         : "ꐃ"  UA403  # YI SYLLABLE QIEP
+<Multi_key> <z> <y> <q> <u> <o> <t>         : "ꐄ"  UA404  # YI SYLLABLE QUOT
+<Multi_key> <z> <y> <q> <u> <o> <x>         : "ꐅ"  UA405  # YI SYLLABLE QUOX
+<Multi_key> <z> <y> <q> <u> <o> <space>     : "ꐆ"  UA406  # YI SYLLABLE QUO
+<Multi_key> <z> <y> <q> <u> <o> <p>         : "ꐇ"  UA407  # YI SYLLABLE QUOP
+<Multi_key> <z> <y> <q> <o> <t>             : "ꐈ"  UA408  # YI SYLLABLE QOT
+<Multi_key> <z> <y> <q> <o> <x>             : "ꐉ"  UA409  # YI SYLLABLE QOX
+<Multi_key> <z> <y> <q> <o> <space>         : "ꐊ"  UA40A  # YI SYLLABLE QO
+<Multi_key> <z> <y> <q> <o> <p>             : "ꐋ"  UA40B  # YI SYLLABLE QOP
+<Multi_key> <z> <y> <q> <u> <t>             : "ꐌ"  UA40C  # YI SYLLABLE QUT
+<Multi_key> <z> <y> <q> <u> <x>             : "ꐍ"  UA40D  # YI SYLLABLE QUX
+<Multi_key> <z> <y> <q> <u> <space>         : "ꐎ"  UA40E  # YI SYLLABLE QU
+<Multi_key> <z> <y> <q> <u> <p>             : "ꐏ"  UA40F  # YI SYLLABLE QUP
+<Multi_key> <z> <y> <q> <u> <r> <x>         : "ꐐ"  UA410  # YI SYLLABLE QURX
+<Multi_key> <z> <y> <q> <u> <r> <space>     : "ꐑ"  UA411  # YI SYLLABLE QUR
+<Multi_key> <z> <y> <q> <y> <t>             : "ꐒ"  UA412  # YI SYLLABLE QYT
+<Multi_key> <z> <y> <q> <y> <x>             : "ꐓ"  UA413  # YI SYLLABLE QYX
+<Multi_key> <z> <y> <q> <y> <space>         : "ꐔ"  UA414  # YI SYLLABLE QY
+<Multi_key> <z> <y> <q> <y> <p>             : "ꐕ"  UA415  # YI SYLLABLE QYP
+<Multi_key> <z> <y> <q> <y> <r> <x>         : "ꐖ"  UA416  # YI SYLLABLE QYRX
+<Multi_key> <z> <y> <q> <y> <r> <space>     : "ꐗ"  UA417  # YI SYLLABLE QYR
+<Multi_key> <z> <y> <j> <j> <i> <t>         : "ꐘ"  UA418  # YI SYLLABLE JJIT
+<Multi_key> <z> <y> <j> <j> <i> <x>         : "ꐙ"  UA419  # YI SYLLABLE JJIX
+<Multi_key> <z> <y> <j> <j> <i> <space>     : "ꐚ"  UA41A  # YI SYLLABLE JJI
+<Multi_key> <z> <y> <j> <j> <i> <p>         : "ꐛ"  UA41B  # YI SYLLABLE JJIP
+<Multi_key> <z> <y> <j> <j> <i> <e> <t>     : "ꐜ"  UA41C  # YI SYLLABLE JJIET
+<Multi_key> <z> <y> <j> <j> <i> <e> <x>     : "ꐝ"  UA41D  # YI SYLLABLE JJIEX
+<Multi_key> <z> <y> <j> <j> <i> <e> <space> : "ꐞ"  UA41E  # YI SYLLABLE JJIE
+<Multi_key> <z> <y> <j> <j> <i> <e> <p>     : "ꐟ"  UA41F  # YI SYLLABLE JJIEP
+<Multi_key> <z> <y> <j> <j> <u> <o> <x>     : "ꐠ"  UA420  # YI SYLLABLE JJUOX
+<Multi_key> <z> <y> <j> <j> <u> <o> <space> : "ꐡ"  UA421  # YI SYLLABLE JJUO
+<Multi_key> <z> <y> <j> <j> <u> <o> <p>     : "ꐢ"  UA422  # YI SYLLABLE JJUOP
+<Multi_key> <z> <y> <j> <j> <o> <t>         : "ꐣ"  UA423  # YI SYLLABLE JJOT
+<Multi_key> <z> <y> <j> <j> <o> <x>         : "ꐤ"  UA424  # YI SYLLABLE JJOX
+<Multi_key> <z> <y> <j> <j> <o> <space>     : "ꐥ"  UA425  # YI SYLLABLE JJO
+<Multi_key> <z> <y> <j> <j> <o> <p>         : "ꐦ"  UA426  # YI SYLLABLE JJOP
+<Multi_key> <z> <y> <j> <j> <u> <t>         : "ꐧ"  UA427  # YI SYLLABLE JJUT
+<Multi_key> <z> <y> <j> <j> <u> <x>         : "ꐨ"  UA428  # YI SYLLABLE JJUX
+<Multi_key> <z> <y> <j> <j> <u> <space>     : "ꐩ"  UA429  # YI SYLLABLE JJU
+<Multi_key> <z> <y> <j> <j> <u> <p>         : "ꐪ"  UA42A  # YI SYLLABLE JJUP
+<Multi_key> <z> <y> <j> <j> <u> <r> <x>     : "ꐫ"  UA42B  # YI SYLLABLE JJURX
+<Multi_key> <z> <y> <j> <j> <u> <r> <space> : "ꐬ"  UA42C  # YI SYLLABLE JJUR
+<Multi_key> <z> <y> <j> <j> <y> <t>         : "ꐭ"  UA42D  # YI SYLLABLE JJYT
+<Multi_key> <z> <y> <j> <j> <y> <x>         : "ꐮ"  UA42E  # YI SYLLABLE JJYX
+<Multi_key> <z> <y> <j> <j> <y> <space>     : "ꐯ"  UA42F  # YI SYLLABLE JJY
+<Multi_key> <z> <y> <j> <j> <y> <p>         : "ꐰ"  UA430  # YI SYLLABLE JJYP
+<Multi_key> <z> <y> <n> <j> <i> <t>         : "ꐱ"  UA431  # YI SYLLABLE NJIT
+<Multi_key> <z> <y> <n> <j> <i> <x>         : "ꐲ"  UA432  # YI SYLLABLE NJIX
+<Multi_key> <z> <y> <n> <j> <i> <space>     : "ꐳ"  UA433  # YI SYLLABLE NJI
+<Multi_key> <z> <y> <n> <j> <i> <p>         : "ꐴ"  UA434  # YI SYLLABLE NJIP
+<Multi_key> <z> <y> <n> <j> <i> <e> <t>     : "ꐵ"  UA435  # YI SYLLABLE NJIET
+<Multi_key> <z> <y> <n> <j> <i> <e> <x>     : "ꐶ"  UA436  # YI SYLLABLE NJIEX
+<Multi_key> <z> <y> <n> <j> <i> <e> <space> : "ꐷ"  UA437  # YI SYLLABLE NJIE
+<Multi_key> <z> <y> <n> <j> <i> <e> <p>     : "ꐸ"  UA438  # YI SYLLABLE NJIEP
+<Multi_key> <z> <y> <n> <j> <u> <o> <x>     : "ꐹ"  UA439  # YI SYLLABLE NJUOX
+<Multi_key> <z> <y> <n> <j> <u> <o> <space> : "ꐺ"  UA43A  # YI SYLLABLE NJUO
+<Multi_key> <z> <y> <n> <j> <o> <t>         : "ꐻ"  UA43B  # YI SYLLABLE NJOT
+<Multi_key> <z> <y> <n> <j> <o> <x>         : "ꐼ"  UA43C  # YI SYLLABLE NJOX
+<Multi_key> <z> <y> <n> <j> <o> <space>     : "ꐽ"  UA43D  # YI SYLLABLE NJO
+<Multi_key> <z> <y> <n> <j> <o> <p>         : "ꐾ"  UA43E  # YI SYLLABLE NJOP
+<Multi_key> <z> <y> <n> <j> <u> <x>         : "ꐿ"  UA43F  # YI SYLLABLE NJUX
+<Multi_key> <z> <y> <n> <j> <u> <space>     : "ꑀ"  UA440  # YI SYLLABLE NJU
+<Multi_key> <z> <y> <n> <j> <u> <p>         : "ꑁ"  UA441  # YI SYLLABLE NJUP
+<Multi_key> <z> <y> <n> <j> <u> <r> <x>     : "ꑂ"  UA442  # YI SYLLABLE NJURX
+<Multi_key> <z> <y> <n> <j> <u> <r> <space> : "ꑃ"  UA443  # YI SYLLABLE NJUR
+<Multi_key> <z> <y> <n> <j> <y> <t>         : "ꑄ"  UA444  # YI SYLLABLE NJYT
+<Multi_key> <z> <y> <n> <j> <y> <x>         : "ꑅ"  UA445  # YI SYLLABLE NJYX
+<Multi_key> <z> <y> <n> <j> <y> <space>     : "ꑆ"  UA446  # YI SYLLABLE NJY
+<Multi_key> <z> <y> <n> <j> <y> <p>         : "ꑇ"  UA447  # YI SYLLABLE NJYP
+<Multi_key> <z> <y> <n> <j> <y> <r> <x>     : "ꑈ"  UA448  # YI SYLLABLE NJYRX
+<Multi_key> <z> <y> <n> <j> <y> <r> <space> : "ꑉ"  UA449  # YI SYLLABLE NJYR
+<Multi_key> <z> <y> <n> <y> <i> <t>         : "ꑊ"  UA44A  # YI SYLLABLE NYIT
+<Multi_key> <z> <y> <n> <y> <i> <x>         : "ꑋ"  UA44B  # YI SYLLABLE NYIX
+<Multi_key> <z> <y> <n> <y> <i> <space>     : "ꑌ"  UA44C  # YI SYLLABLE NYI
+<Multi_key> <z> <y> <n> <y> <i> <p>         : "ꑍ"  UA44D  # YI SYLLABLE NYIP
+<Multi_key> <z> <y> <n> <y> <i> <e> <t>     : "ꑎ"  UA44E  # YI SYLLABLE NYIET
+<Multi_key> <z> <y> <n> <y> <i> <e> <x>     : "ꑏ"  UA44F  # YI SYLLABLE NYIEX
+<Multi_key> <z> <y> <n> <y> <i> <e> <space> : "ꑐ"  UA450  # YI SYLLABLE NYIE
+<Multi_key> <z> <y> <n> <y> <i> <e> <p>     : "ꑑ"  UA451  # YI SYLLABLE NYIEP
+<Multi_key> <z> <y> <n> <y> <u> <o> <x>     : "ꑒ"  UA452  # YI SYLLABLE NYUOX
+<Multi_key> <z> <y> <n> <y> <u> <o> <space> : "ꑓ"  UA453  # YI SYLLABLE NYUO
+<Multi_key> <z> <y> <n> <y> <u> <o> <p>     : "ꑔ"  UA454  # YI SYLLABLE NYUOP
+<Multi_key> <z> <y> <n> <y> <o> <t>         : "ꑕ"  UA455  # YI SYLLABLE NYOT
+<Multi_key> <z> <y> <n> <y> <o> <x>         : "ꑖ"  UA456  # YI SYLLABLE NYOX
+<Multi_key> <z> <y> <n> <y> <o> <space>     : "ꑗ"  UA457  # YI SYLLABLE NYO
+<Multi_key> <z> <y> <n> <y> <o> <p>         : "ꑘ"  UA458  # YI SYLLABLE NYOP
+<Multi_key> <z> <y> <n> <y> <u> <t>         : "ꑙ"  UA459  # YI SYLLABLE NYUT
+<Multi_key> <z> <y> <n> <y> <u> <x>         : "ꑚ"  UA45A  # YI SYLLABLE NYUX
+<Multi_key> <z> <y> <n> <y> <u> <space>     : "ꑛ"  UA45B  # YI SYLLABLE NYU
+<Multi_key> <z> <y> <n> <y> <u> <p>         : "ꑜ"  UA45C  # YI SYLLABLE NYUP
+<Multi_key> <z> <y> <x> <i> <t>             : "ꑝ"  UA45D  # YI SYLLABLE XIT
+<Multi_key> <z> <y> <x> <i> <x>             : "ꑞ"  UA45E  # YI SYLLABLE XIX
+<Multi_key> <z> <y> <x> <i> <space>         : "ꑟ"  UA45F  # YI SYLLABLE XI
+<Multi_key> <z> <y> <x> <i> <p>             : "ꑠ"  UA460  # YI SYLLABLE XIP
+<Multi_key> <z> <y> <x> <i> <e> <t>         : "ꑡ"  UA461  # YI SYLLABLE XIET
+<Multi_key> <z> <y> <x> <i> <e> <x>         : "ꑢ"  UA462  # YI SYLLABLE XIEX
+<Multi_key> <z> <y> <x> <i> <e> <space>     : "ꑣ"  UA463  # YI SYLLABLE XIE
+<Multi_key> <z> <y> <x> <i> <e> <p>         : "ꑤ"  UA464  # YI SYLLABLE XIEP
+<Multi_key> <z> <y> <x> <u> <o> <x>         : "ꑥ"  UA465  # YI SYLLABLE XUOX
+<Multi_key> <z> <y> <x> <u> <o> <space>     : "ꑦ"  UA466  # YI SYLLABLE XUO
+<Multi_key> <z> <y> <x> <o> <t>             : "ꑧ"  UA467  # YI SYLLABLE XOT
+<Multi_key> <z> <y> <x> <o> <x>             : "ꑨ"  UA468  # YI SYLLABLE XOX
+<Multi_key> <z> <y> <x> <o> <space>         : "ꑩ"  UA469  # YI SYLLABLE XO
+<Multi_key> <z> <y> <x> <o> <p>             : "ꑪ"  UA46A  # YI SYLLABLE XOP
+<Multi_key> <z> <y> <x> <y> <t>             : "ꑫ"  UA46B  # YI SYLLABLE XYT
+<Multi_key> <z> <y> <x> <y> <x>             : "ꑬ"  UA46C  # YI SYLLABLE XYX
+<Multi_key> <z> <y> <x> <y> <space>         : "ꑭ"  UA46D  # YI SYLLABLE XY
+<Multi_key> <z> <y> <x> <y> <p>             : "ꑮ"  UA46E  # YI SYLLABLE XYP
+<Multi_key> <z> <y> <x> <y> <r> <x>         : "ꑯ"  UA46F  # YI SYLLABLE XYRX
+<Multi_key> <z> <y> <x> <y> <r> <space>     : "ꑰ"  UA470  # YI SYLLABLE XYR
+<Multi_key> <z> <y> <y> <i> <t>             : "ꑱ"  UA471  # YI SYLLABLE YIT
+<Multi_key> <z> <y> <y> <i> <x>             : "ꑲ"  UA472  # YI SYLLABLE YIX
+<Multi_key> <z> <y> <y> <i> <space>         : "ꑳ"  UA473  # YI SYLLABLE YI
+<Multi_key> <z> <y> <y> <i> <p>             : "ꑴ"  UA474  # YI SYLLABLE YIP
+<Multi_key> <z> <y> <y> <i> <e> <t>         : "ꑵ"  UA475  # YI SYLLABLE YIET
+<Multi_key> <z> <y> <y> <i> <e> <x>         : "ꑶ"  UA476  # YI SYLLABLE YIEX
+<Multi_key> <z> <y> <y> <i> <e> <space>     : "ꑷ"  UA477  # YI SYLLABLE YIE
+<Multi_key> <z> <y> <y> <i> <e> <p>         : "ꑸ"  UA478  # YI SYLLABLE YIEP
+<Multi_key> <z> <y> <y> <u> <o> <t>         : "ꑹ"  UA479  # YI SYLLABLE YUOT
+<Multi_key> <z> <y> <y> <u> <o> <x>         : "ꑺ"  UA47A  # YI SYLLABLE YUOX
+<Multi_key> <z> <y> <y> <u> <o> <space>     : "ꑻ"  UA47B  # YI SYLLABLE YUO
+<Multi_key> <z> <y> <y> <u> <o> <p>         : "ꑼ"  UA47C  # YI SYLLABLE YUOP
+<Multi_key> <z> <y> <y> <o> <t>             : "ꑽ"  UA47D  # YI SYLLABLE YOT
+<Multi_key> <z> <y> <y> <o> <x>             : "ꑾ"  UA47E  # YI SYLLABLE YOX
+<Multi_key> <z> <y> <y> <o> <space>         : "ꑿ"  UA47F  # YI SYLLABLE YO
+<Multi_key> <z> <y> <y> <o> <p>             : "ꒀ"  UA480  # YI SYLLABLE YOP
+<Multi_key> <z> <y> <y> <u> <t>             : "ꒁ"  UA481  # YI SYLLABLE YUT
+<Multi_key> <z> <y> <y> <u> <x>             : "ꒂ"  UA482  # YI SYLLABLE YUX
+<Multi_key> <z> <y> <y> <u> <space>         : "ꒃ"  UA483  # YI SYLLABLE YU
+<Multi_key> <z> <y> <y> <u> <p>             : "ꒄ"  UA484  # YI SYLLABLE YUP
+<Multi_key> <z> <y> <y> <u> <r> <x>         : "ꒅ"  UA485  # YI SYLLABLE YURX
+<Multi_key> <z> <y> <y> <u> <r> <space>     : "ꒆ"  UA486  # YI SYLLABLE YUR
+<Multi_key> <z> <y> <y> <y> <t>             : "ꒇ"  UA487  # YI SYLLABLE YYT
+<Multi_key> <z> <y> <y> <y> <x>             : "ꒈ"  UA488  # YI SYLLABLE YYX
+<Multi_key> <z> <y> <y> <y> <space>         : "ꒉ"  UA489  # YI SYLLABLE YY
+<Multi_key> <z> <y> <y> <y> <p>             : "ꒊ"  UA48A  # YI SYLLABLE YYP
+<Multi_key> <z> <y> <y> <y> <r> <x>         : "ꒋ"  UA48B  # YI SYLLABLE YYRX
+<Multi_key> <z> <y> <y> <y> <r> <space>     : "ꒌ"  UA48C  # YI SYLLABLE YYR
 
 ########################################
 # (Z) Ge'ez (and other nearby scripts) #
@@ -17311,6 +18864,7 @@ include "HangulSyllables"
 <Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va) (use hat for 🧢)
 <Multi_key> <C> <a> <p>                 : "⋒"  U22D2   # DOUBLE INTERSECTION
 <Multi_key> <C> <A> <P>                 : "⋂"  U22C2   # N-ARY INTERSECTION
+<Multi_key> <C> <L>                     : "℄"  U2104   # CENTRE LINE SYMBOL
 <Multi_key> <c> <o> <m> <p> <l>         : "∁"  U2201   # COMPLEMENT (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <p> <r> <o> <d>     : "∐"  U2210   # N-ARY COPRODUCT (conflicts with ǒ, use vo)
 <Multi_key> <c> <s> <u> <b> <space>     : "⫏"  U2ACF   # CLOSED SUBSET (conflicts with š, use vs)
@@ -17368,6 +18922,7 @@ include "HangulSyllables"
 <Multi_key> <O> <P> <L> <U> <S>         : "⨁"  U2A01  # N-ARY CIRCLED PLUS OPERATOR
 <Multi_key> <o> <t> <i> <m> <e> <s>     : "⊗"  U2297  # CIRCLED TIMES
 <Multi_key> <O> <T> <I> <M> <E> <S>     : "⨂"  U2A02  # N-ARY CIRCLED TIMES OPERATOR
+<Multi_key> <P> <L>                     : "⅊"  U214A   # PROPERTY LINE
 <Multi_key> <p> <r> <e> <c> <space>     : "≺"  U227A   # PRECEDES
 <Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
 <Multi_key> <p> <r> <e> <c> <s> <i> <m> : "≾"  U227E   # PRECEDES OR EQUIVALENT TO
@@ -18609,6 +20164,7 @@ include "HangulSyllables"
 <Multi_key> <b> <u> <s>             : "🚍"  U1F68D        # ONCOMING BUS (conflicts with ŭ, use uu) (use <bus for 🚌)
 <Multi_key> <less> <b> <u> <s>      : "🚌"  U1F68C        # BUS
 <Multi_key> <c> <a> <b> <l> <e>     : "🚠"  U1F6A0        # MOUNTAIN CABLEWAY (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <space>     : "🚗"  U1F697        # AUTOMOBILE (CAR) (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <s> <t> <l> <e> : "🏰"  U1F3F0        # EUROPEAN CASTLE (conflicts with ǎ, use va)
 <Multi_key> <c> <e> <s> <s> <n> <a> : "🛩️"  U1F6E9 UFE0F  # SMALL AIRPLANE EMOJI (CESNA) (conflicts with ě, use ve)
 <Multi_key> <c> <h> <i> <c> <r> <o> : "🚸"  U1F6B8        # CHILDREN CROSSING (conflicts with ȟ, use vh)
@@ -19314,6 +20870,12 @@ include "HangulSyllables"
 <Multi_key> <at> <bracketleft> <V> <S> <bracketright>          : "🆚" U1F19A   # SQUARED VS
 <Multi_key> <at> <bracketleft> <W> <C> <bracketright>          : "🚾" U1F6BE   # WATER CLOSET
 
+################
+# Text sprites #
+################
+
+# Pseudo-convention: directed sprites often replace the last letter with a direction to avoid conflict
+
 # Text-presentation dingbats
 
 <Multi_key> <s> <b> <less>     : "🗨"  U1F5E8        # LEFT SPEECH BUBBLE
@@ -19327,7 +20889,96 @@ include "HangulSyllables"
 <Multi_key> <a> <b> <0>        : "🗰"  U1F5F0        # MOOD BUBBLE
 <Multi_key> <a> <b> <z>        : "🗱"  U1F5F1        # LIGHTNING MOOD BUBBLE
 
-<Multi_key> <x> <k> <c> <d>    : "🯅"  U1FBC5        # STICK FIGURE (XCKD)
+# Legacy computing sprites and related pictographs
+
+<Multi_key> <exclam> <colon> <parenright>     : "☻"  U263B   # BLACK SMILING FACE
+<Multi_key> <exclam> <colon> <bar>            : "𜱯"  U1CC6F  # BLACK NEUTRAL FACE
+
+<Multi_key> <b> <o> <m> <less>                : "𜱠"  U1CC60  # LEFT-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <m> <asciicircum>         : "𜱡"  U1CC61  # UP-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <m> <greater>             : "𜱢"  U1CC62  # RIGHT-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
+<Multi_key> <b> <o> <m> <v>                   : "𜱣"  U1CC63  # DOWN-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
+<Multi_key> <c> <a> <r> <less>                : "𜲗"  U1CC97  # LEFT-POINTING RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <asciicircum>         : "𜲘"  U1CC98  # UP-POINTING RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <greater>             : "𜲙"  U1CC99  # RIGHT-POINTING RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <v>                   : "𜲚"  U1CC9A  # DOWN-POINTING RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <h>                   : "𜲛"  U1CC9B  # HORIZONTAL RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <v>                   : "𜲜"  U1CC9C  # VERTICAL RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <r> <a> <greater>             : "𜱐"  U1CC50  # ALIEN CRAB STEPPING RIGHT (conflicts with ř, use vr)
+<Multi_key> <c> <r> <a> <less>                : "𜱑"  U1CC51  # ALIEN CRAB STEPPING LEFT (conflicts with ř, use vr)
+<Multi_key> <f> <b> <i> <r> <d>               : "𜲖"  U1CC96  # FLAPPING BIRD
+<Multi_key> <f> <r> <o> <asciicircum>         : "𜷻"  U1CDFB  # UP-POINTING FROG
+<Multi_key> <f> <r> <o> <v>                   : "𜷼"  U1CDFC  # DOWN-POINTING FROG
+<Multi_key> <less> <f> <i> <s> <h>            : "𜲒"  U1CC92  # LEFT-FACING FISH (not ideal but fi=ﬁ is taken)
+<Multi_key> <greater> <f> <i> <s> <h>         : "𜲓"  U1CC93  # RIGHT-FACING FISH (not ideal but fi=ﬁ is taken)
+<Multi_key> <g> <o> <k> <a> <r> <asciicircum> : "𜰀"  U1CC00  # UP-POINTING GO-KART
+<Multi_key> <g> <o> <k> <a> <r> <greater>     : "𜰁"  U1CC01  # RIGHT-POINTING GO-KART
+<Multi_key> <g> <o> <k> <a> <r> <v>           : "𜲝"  U1CC9D  # VERTICAL GO-KART
+<Multi_key> <l> <a> <d> <d> <e> <v>           : "𜲄"  U1CC84  # VERTICAL LADDER
+<Multi_key> <l> <a> <d> <d> <e> <h>           : "𜲅"  U1CC85  # HORIZONTAL LADDER
+<Multi_key> <l> <a> <u> <n> <c> <less>        : "𜱖"  U1CC56  # LEFT-POINTING ROCKET SHIP
+<Multi_key> <l> <a> <u> <n> <c> <asciicircum> : "𜱗"  U1CC57  # UP-POINTING ROCKET SHIP
+<Multi_key> <l> <a> <u> <n> <c> <greater>     : "𜱘"  U1CC58  # RIGHT-POINTING ROCKET SHIP
+<Multi_key> <l> <a> <u> <n> <c> <v>           : "𜱙"  U1CC59  # DOWN-POINTING ROCKET SHIP
+<Multi_key> <m> <e> <g> <a> <n>               : "🯉"  U1FBC9  # STICK FIGURE WITH DRESS (MEGAN)
+<Multi_key> <m> <l> <a> <n> <d>               : "𜷵"  U1CDF5  # MOON LANDER
+<Multi_key> <o> <f> <i> <s> <h> <less>        : "𜲔"  U1CC94  # LEFT-FACING FISH WITH OPEN MOUTH
+<Multi_key> <o> <f> <i> <s> <h> <greater>     : "𜲕"  U1CC95  # RIGHT-FACING FISH WITH OPEN MOUTH
+<Multi_key> <p> <a> <c> <less>                : "𜱫"  U1CC6B  # BLACK LARGE CIRCLE MINUS LEFT QUARTER SECTION (PACMAN)
+<Multi_key> <p> <a> <c> <asciicircum>         : "𜱬"  U1CC6C  # BLACK LARGE CIRCLE MINUS UPPER QUARTER SECTION (PACMAN)
+<Multi_key> <p> <a> <c> <greater>             : "𜱭"  U1CC6D  # BLACK LARGE CIRCLE MINUS RIGHT QUARTER SECTION (PACMAN)
+<Multi_key> <p> <a> <c> <v>                   : "𜱮"  U1CC6E  # BLACK LARGE CIRCLE MINUS LOWER QUARTER SECTION (PACMAN)
+<Multi_key> <p> <l> <a> <n> <v>               : "𜷸"  U1CDF8  # DOWN-POINTING AIRPLANE
+<Multi_key> <p> <l> <a> <n> <less>            : "𜷹"  U1CDF9  # LEFT-POINTING AIRPLANE
+<Multi_key> <p> <l> <a> <n> <asciicircum>     : "𜷺"  U1CDFA  # SMALL UP-POINTING AIRPLANE
+<Multi_key> <r> <i> <f> <l> <e> <less>        : "𜱥"  U1CC65  # LEFT-POINTING RIFLE
+<Multi_key> <r> <i> <f> <l> <e> <asciicircum> : "𜱦"  U1CC66  # UP-POINTING RIFLE
+<Multi_key> <r> <i> <f> <l> <e> <greater>     : "𜱧"  U1CC67  # RIGHT-POINTING RIFLE
+<Multi_key> <r> <i> <f> <l> <e> <v>           : "𜱨"  U1CC68  # DOWN-POINTING RIFLE
+<Multi_key> <r> <i> <f> <l> <e> <space>       : "🥆"  U1F946  # RIFLE
+<Multi_key> <s> <t> <i> <c> <k> <m>           : "🯅"  U1FBC5  # STICK FIGURE
+<Multi_key> <s> <t> <i> <c> <k> <asciicircum> : "🯆"  U1FBC6  # STICK FIGURE WITH ARMS RAISED
+<Multi_key> <s> <t> <i> <c> <k> <less>        : "🯇"  U1FBC7  # STICK FIGURE LEANING LEFT
+<Multi_key> <s> <t> <i> <c> <k> <greater>     : "🯈"  U1FBC8  # STICK FIGURE LEANING RIGHT
+<Multi_key> <s> <t> <i> <c> <k> <f>           : "🯉"  U1FBC9  # STICK FIGURE WITH DRESS
+<Multi_key> <s> <t> <i> <c> <less>            : "𜰂"  U1CC02  # LEFT-POINTING STICK FIGURE
+<Multi_key> <s> <t> <i> <c> <greater>         : "𜰃"  U1CC03  # RIGHT-POINTING STICK FIGURE
+<Multi_key> <s> <t> <i> <c> <v>               : "𜰄"  U1CC04  # DOWN-POINTING STICK FIGURE
+<Multi_key> <t> <a> <n> <k> <less>            : "𜲞"  U1CC9E  # LEFT-POINTING TANK
+<Multi_key> <t> <a> <n> <k> <greater>         : "𜲟"  U1CC9F  # RIGHT-POINTING TANK
+<Multi_key> <U> <F> <v>                       : "𜱊"  U1CC4A  # FLYING SAUCER WITH BEAMS (UFO)
+<Multi_key> <U> <F> <asciicircum>             : "𜱋"  U1CC4B  # FLYING SAUCER WITHOUT BEAMS (UFO)
+<Multi_key> <x> <k> <c> <d>                   : "🯅"  U1FBC5  # STICK FIGURE (XKCD)
+
+# Split glyphs: @^ for top half, @_ for bottom half
+
+<Multi_key> <at> <asciicircum> <parenleft> <o> <o> <parenright> : "𜲦𜲧"  U1CCA6 U1CCA7  # FACE WITH OPEN EYES (TOP)
+<Multi_key> <at> <asciicircum> <parenleft> <minus> <minus> <parenright> : "𜲨𜲩"  U1CCA8 U1CCA9  # FACE WITH CLOSED EYES (TOP)
+<Multi_key> <at> <underscore> <parenleft> <u> <parenright> : "𜲪𜲫"  U1CCAA U1CCAB  # SMILING FACE (BOTTOM)
+<Multi_key> <at> <underscore> <parenleft> <minus> <parenright> : "𜲬𜲭"  U1CCAC U1CCAD  # NEUTRAL FACE (BOTTOM)
+<Multi_key> <at> <underscore> <parenleft> <n> <parenright> : "𜲰𜲱"  U1CCB0 U1CCB1  # FROWNING FACE (BOTTOM)
+<Multi_key> <at> <asciicircum> <b> <i> <s> <h> <o> <p> : "𜳆𜳇"  U1CCC6 U1CCC7  # CHESS BISHOP (TOP)
+<Multi_key> <at> <underscore> <b> <i> <s> <h> <o> <p>  : "𜳈𜳉"  U1CCC8 U1CCC9  # CHESS BISHOP (BOTTOM)
+<Multi_key> <at> <asciicircum> <k> <i> <n> <g>         : "𜲺𜲻"  U1CCBA U1CCBB  # CHESS KING (TOP)
+<Multi_key> <at> <underscore> <k> <i> <n> <g>          : "𜲼𜲽"  U1CCBC U1CCBD  # CHESS KING (BOTTOM)
+<Multi_key> <at> <asciicircum> <k> <n> <i> <g> <h> <t> : "𜳊𜳋"  U1CCCA U1CCCB  # CHESS KNIGHT (TOP)
+<Multi_key> <at> <underscore> <k> <n> <i> <g> <h> <t>  : "𜳌𜳍"  U1CCCC U1CCCD  # CHESS KNIGHT (BOTTOM)
+<Multi_key> <at> <asciicircum> <p> <a> <w> <n>         : "𜳎𜳏"  U1CCCE U1CCCF  # CHESS PAWN (TOP)
+<Multi_key> <at> <underscore> <p> <a> <w> <n>          : "𜳐𜳑"  U1CCD0 U1CCD1  # CHESS PAWN (BOTTOM)
+<Multi_key> <at> <asciicircum> <P> <C>                 : "𜲶𜲷"  U1CCB6 U1CCB7  # MICROCOMPUTER (PC) (TOP)
+<Multi_key> <at> <underscore> <P> <C>                  : "𜲸𜲹"  U1CCB8 U1CCB9  # MICROCOMPUTER (PC) (BOTTOM)
+<Multi_key> <at> <asciicircum> <q> <u> <e> <e> <n>     : "𜲾𜲿"  U1CCBE U1CCBF  # CHESS QUEEN (TOP)
+<Multi_key> <at> <underscore> <q> <u> <e> <e> <n>      : "𜳀𜳁"  U1CCC0 U1CCC1  # CHESS QUEEN (BOTTOM)
+<Multi_key> <at> <asciicircum> <r> <o> <b> <o> <t>     : "𜱛"  U1CC5B  # TOP HALF FORWARD-FACING ROBOT
+<Multi_key> <at> <underscore> <r> <o> <b> <o> <t>      : "𜱞"  U1CC5E  # BOTTOM HALF FORWARD-FACING ROBOT
+<Multi_key> <at> <asciicircum> <r> <o> <b> <o> <less>  : "𜱚"  U1CC5A  # TOP HALF LEFT-FACING ROBOT
+<Multi_key> <at> <underscore> <r> <o> <b> <o> <less>   : "𜱝"  U1CC5D  # BOTTOM HALF LEFT-FACING ROBOT
+<Multi_key> <at> <asciicircum> <r> <o> <b> <o> <greater> : "𜱜"  U1CC5C  # TOP HALF RIGHT-FACING ROBOT
+<Multi_key> <at> <underscore> <r> <o> <b> <o> <greater> : "𜱟"  U1CC5F  # BOTTOM HALF RIGHT-FACING ROBOT
+<Multi_key> <at> <asciicircum> <r> <o> <o> <k>         : "𜳂𜳃"  U1CCC2 U1CCC3  # CHESS ROOK (TOP)
+<Multi_key> <at> <underscore> <r> <o> <o> <k>          : "𜳄𜳅"  U1CCC4 U1CCC5  # CHESS ROOK (BOTTOM)
+<Multi_key> <at> <asciicircum> <T> <V>                 : "𜲲𜲳"  U1CCB2 U1CCB3  # TELEVISION (TOP)
+<Multi_key> <at> <underscore> <T> <V>                  : "𜲴𜲵"  U1CCB4 U1CCB5  # TELEVISION (BOTTOM)
 
 # Some emoji-like text characters (also see hieroglyph section below)
 
@@ -19859,6 +21510,10 @@ include "HangulSyllables"
 <Multi_key> <parenleft> <parenright> <U> <R> <Q>   : "◷" U25F7    # WHITE CIRCLE WITH UPPER RIGHT QUADRANT
 <Multi_key> <parenleft> <parenright> <U> <R> <1>   : "◔" U25D4    # CIRCLE WITH UPPER RIGHT QUADRANT BLACK
 <Multi_key> <parenleft> <parenright> <U> <L> <0>   : "◕" U25D5    # CIRCLE WITH ALL BUT UPPER LEFT QUADRANT BLACK
+<Multi_key> <parenleft> <parenright> <exclam> <less>        : "𜱫"  U1CC6B  # BLACK LARGE CIRCLE MINUS LEFT QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <asciicircum> : "𜱬"  U1CC6C  # BLACK LARGE CIRCLE MINUS UPPER QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <greater>     : "𜱭"  U1CC6D  # BLACK LARGE CIRCLE MINUS RIGHT QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <v>           : "𜱮"  U1CC6E  # BLACK LARGE CIRCLE MINUS LOWER QUARTER SECTION
 <Multi_key> <parenleft> <parenright> <space> <period> <0> : "⚆" U2686  # WHITE CIRCLE WITH DOT RIGHT
 <Multi_key> <parenleft> <parenright> <space> <period> <1> : "⚈" U2688  # BLACK CIRCLE WITH WHITE DOT RIGHT
 <Multi_key> <parenleft> <parenright> <quotedbl> <0> : "⚇" U2687  # WHITE CIRCLE WITH TWO DOTS
@@ -19971,6 +21626,7 @@ include "HangulSyllables"
 <Multi_key> <Tab> <less> <greater> <period>      : "⟐" U27D0   # WHITE DIAMOND WITH CENTRED DOT
 <Multi_key> <Tab> <less> <greater> <question>    : "�" UFFFD   # REPLACEMENT CHARACTER
 <Multi_key> <Tab> <less> <greater> <underscore>  : "⍚"  U235A  # APL FUNCTIONAL SYMBOL DIAMOND UNDERBAR
+<Multi_key> <Tab> <less> <greater> <exclam>      : "𜲍"  U1CC8D  # INVERSE BLACK DIAMOND
 <Multi_key> <Tab> <less> <greater> <Return>      : "⃟" U20DF   # COMBINING ENCLOSING DIAMOND
 
 <Multi_key> <Tab> <less> <asciicircum> <greater> <0>     : "◊"  U25CA  # LOZENGE
@@ -20562,6 +22218,8 @@ include "HangulSyllables"
 <Multi_key> <bar> <b> <5> <less>        : "▋"  U258B  # LEFT FIVE EIGHTHS BLOCK
 <Multi_key> <bar> <b> <6> <less>        : "▊"  U258A  # LEFT THREE QUARTERS BLOCK
 <Multi_key> <bar> <b> <7> <less>        : "▉"  U2589  # LEFT SEVEN EIGHTHS BLOCK
+<Multi_key> <bar> <b> <Multi_key> <2> <3> <less> : "🯏"  U1FBCF  # LEFT ONE THIRDS BLOCK
+<Multi_key> <bar> <b> <Multi_key> <1> <3> <less> : "🯎"  U1FBCE  # LEFT TWO THIRDS BLOCK
 
 <Multi_key> <bar> <b> <1> <asciicircum> : "▔"  U2594  # UPPER ONE EIGHTH BLOCK
 <Multi_key> <bar> <b> <2> <asciicircum> : "🮂"  U1FB82  # UPPER ONE QUARTER BLOCK
@@ -20595,6 +22253,49 @@ include "HangulSyllables"
 <Multi_key> <bar> <b> <X> <exclam> <asciicircum> : "🭩"  U1FB69  # LEFT AND LOWER AND RIGHT TRIANGULAR THREE QUARTERS BLOCK
 <Multi_key> <bar> <b> <X> <exclam> <greater>     : "🭪"  U1FB6A  # UPPER AND LEFT AND LOWER TRIANGULAR THREE QUARTERS BLOCK
 <Multi_key> <bar> <b> <X> <exclam> <v>           : "🭫"  U1FB6B  # LEFT AND UPPER AND RIGHT TRIANGULAR THREE QUARTERS BLOCK
+
+<Multi_key> <bar> <b> <bar> <1> : "▏"  U258F  # LEFT ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <bar> <2> : "🭰"  U1FB70  # VERTICAL ONE EIGHTH BLOCK-2
+<Multi_key> <bar> <b> <bar> <3> : "🭱"  U1FB71  # VERTICAL ONE EIGHTH BLOCK-3
+<Multi_key> <bar> <b> <bar> <4> : "🭲"  U1FB72  # VERTICAL ONE EIGHTH BLOCK-4
+<Multi_key> <bar> <b> <bar> <5> : "🭳"  U1FB73  # VERTICAL ONE EIGHTH BLOCK-5
+<Multi_key> <bar> <b> <bar> <6> : "🭴"  U1FB74  # VERTICAL ONE EIGHTH BLOCK-6
+<Multi_key> <bar> <b> <bar> <7> : "🭵"  U1FB75  # VERTICAL ONE EIGHTH BLOCK-7
+<Multi_key> <bar> <b> <bar> <8> : "▕"  U2595  # RIGHT ONE EIGHTH BLOCK
+
+<Multi_key> <bar> <b> <minus> <1> : "▔"  U2594  # UPPER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <minus> <2> : "🭶"  U1FB76  # HORIZONTAL ONE EIGHTH BLOCK-2
+<Multi_key> <bar> <b> <minus> <3> : "🭷"  U1FB77  # HORIZONTAL ONE EIGHTH BLOCK-3
+<Multi_key> <bar> <b> <minus> <4> : "🭸"  U1FB78  # HORIZONTAL ONE EIGHTH BLOCK-4
+<Multi_key> <bar> <b> <minus> <5> : "🭹"  U1FB79  # HORIZONTAL ONE EIGHTH BLOCK-5
+<Multi_key> <bar> <b> <minus> <6> : "🭺"  U1FB7A  # HORIZONTAL ONE EIGHTH BLOCK-6
+<Multi_key> <bar> <b> <minus> <7> : "🭻"  U1FB7B  # HORIZONTAL ONE EIGHTH BLOCK-7
+<Multi_key> <bar> <b> <minus> <8> : "▁"  U2581  # LOWER ONE EIGHTH BLOCK
+
+<Multi_key> <bar> <b> <equal> <1> <8> : "🮀"  U1FB80  # UPPER AND LOWER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <equal> <1> <3> <5> <8> : "🮁"  U1FB81  # HORIZONTAL ONE EIGHTH BLOCK-1358
+
+<Multi_key> <bar> <b> <L> <space> : "🭼"  U1FB7C  # LEFT AND LOWER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <L> <asciicircum> : "🭽"  U1FB7D  # LEFT AND UPPER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <L> <less> <asciicircum> : "🭾"  U1FB7E  # RIGHT AND UPPER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <L> <greater> : "🭿"  U1FB7F  # RIGHT AND LOWER ONE EIGHTH BLOCK
+
+<Multi_key> <bar> <b> <e> <1> <1> : "𜺐"  U1CE90  # UPPER LEFT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <2> <1> : "𜺑"  U1CE91  # UPPER CENTRE LEFT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <3> <1> : "𜺒"  U1CE92  # UPPER CENTRE RIGHT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <4> <1> : "𜺓"  U1CE93  # UPPER RIGHT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <1> <2> : "𜺔"  U1CE94  # UPPER MIDDLE LEFT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <2> <2> : "𜺕"  U1CE95  # UPPER MIDDLE CENTRE LEFT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <3> <2> : "𜺖"  U1CE96  # UPPER MIDDLE CENTRE RIGHT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <4> <2> : "𜺗"  U1CE97  # UPPER MIDDLE RIGHT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <1> <3> : "𜺘"  U1CE98  # LOWER MIDDLE LEFT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <2> <3> : "𜺙"  U1CE99  # LOWER MIDDLE CENTRE LEFT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <3> <3> : "𜺚"  U1CE9A  # LOWER MIDDLE CENTRE RIGHT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <4> <3> : "𜺛"  U1CE9B  # LOWER MIDDLE RIGHT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <1> <4> : "𜺜"  U1CE9C  # LOWER LEFT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <2> <4> : "𜺝"  U1CE9D  # LOWER CENTRE LEFT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <3> <4> : "𜺞"  U1CE9E  # LOWER CENTRE RIGHT ONE SIXTEENTH BLOCK
+<Multi_key> <bar> <b> <e> <4> <4> : "𜺟"  U1CE9F  # LOWER RIGHT ONE SIXTEENTH BLOCK
 
 # sextants: | + 6 + sextant list
 
