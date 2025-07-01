@@ -9940,20 +9940,18 @@ include "%L"
 <Multi_key> <C> <D> <o> <y> : "𐑎" U1044E   # DESERET SMALL LETTER OI
 <Multi_key> <C> <D> <y> <o> <o> : "𐑏" U1044F   # DESERET SMALL LETTER EW
 
-# (Du/DU = Sloan-Duployan)
+# (Du/DU = Sloan-Duployan) - based on 1934 edition
 
-# TODO: figure out why there seem to be glyphs missing (at least according to the
-# 1913 Sloan-Duployan Phonographic Instructor)
+# TODO: check that this is correct, especially forms with combining diacritics
 
 # consonants
 
-# (Q: what about y?)
 <Multi_key> <C> <D> <u> <b> : "𛰇"  U1BC07  # DUPLOYAN LETTER B
 <Multi_key> <C> <D> <u> <d> : "𛰈"  U1BC08  # DUPLOYAN LETTER D
 <Multi_key> <C> <D> <u> <f> : "𛰄"  U1BC04  # DUPLOYAN LETTER F
 <Multi_key> <C> <D> <u> <g> : "𛰊"  U1BC0A  # DUPLOYAN LETTER G
 <Multi_key> <C> <D> <u> <h> : "𛰀"  U1BC00  # DUPLOYAN LETTER H
-<Multi_key> <C> <D> <u> <j> : "𛰕"  U1BC15  # DUPLOYAN LETTER SLOAN J
+<Multi_key> <C> <D> <U> <j> : "𛰏"  U1BC0F  # DUPLOYAN LETTER K M
 <Multi_key> <C> <D> <u> <k> : "𛰅"  U1BC05  # DUPLOYAN LETTER K
 <Multi_key> <C> <D> <u> <l> : "𛰆"  U1BC06  # DUPLOYAN LETTER L
 <Multi_key> <C> <D> <u> <m> : "𛰙"  U1BC19  # DUPLOYAN LETTER M
@@ -9964,6 +9962,7 @@ include "%L"
 <Multi_key> <C> <D> <u> <t> : "𛰃"  U1BC03  # DUPLOYAN LETTER T
 <Multi_key> <C> <D> <u> <v> : "𛰉"  U1BC09  # DUPLOYAN LETTER V
 <Multi_key> <C> <D> <u> <w> : "𛰸"  U1BC38  # DUPLOYAN LETTER W
+<Multi_key> <C> <D> <u> <y> : "𛰺"  U1BC3A  # DUPLOYAN LETTER W R
 <Multi_key> <C> <D> <u> <z> : "𛰥"  U1BC25  # DUPLOYAN LETTER S WITH DOT
 
 <Multi_key> <C> <D> <U> <c> <h> : "𛰩"  U1BC29  # DUPLOYAN LETTER J S
@@ -9982,36 +9981,30 @@ include "%L"
 <Multi_key> <C> <D> <U> <s> <s> <space> : "𛰪"  U1BC2A  # DUPLOYAN LETTER S S
 <Multi_key> <C> <D> <U> <s> <s> <t> : "𛰷"  U1BC37  # DUPLOYAN LETTER T R S
 <Multi_key> <C> <D> <U> <s> <t> : "𛰶"  U1BC36  # DUPLOYAN LETTER T S
-<Multi_key> <C> <D> <U> <s> <w> : "𛰺"  U1BC3A  # DUPLOYAN LETTER W R
-# (Q: what about sz?)
+<Multi_key> <C> <D> <U> <s> <z> : "𛰪̇"  U1BC2A U0307  # DUPLOYAN LETTER S S COMBINING DOT ABOVE
 <Multi_key> <C> <D> <U> <t> <h> : "𛰑"  U1BC11  # DUPLOYAN LETTER TH
 <Multi_key> <C> <D> <U> <t> <s> : "𛰿"  U1BC3F  # DUPLOYAN LETTER S K
 <Multi_key> <C> <D> <U> <v> <v> : "𛰎"  U1BC0E  # DUPLOYAN LETTER F N
 <Multi_key> <C> <D> <U> <w> <h> : "𛰹"  U1BC39  # DUPLOYAN LETTER WH
 <Multi_key> <C> <D> <U> <z> <h> : "𛰣"  U1BC23  # DUPLOYAN LETTER J WITH DOT
 
-<Multi_key> <C> <D> <U> <b> <b> : "𛰌"  U1BC0C  # DUPLOYAN LETTER P N
-<Multi_key> <C> <D> <U> <d> <d> : "𛰍"  U1BC0D  # DUPLOYAN LETTER D S
-<Multi_key> <C> <D> <U> <g> <g> : "𛰏"  U1BC0F  # DUPLOYAN LETTER K M
-<Multi_key> <C> <D> <U> <r> <r> : "𛰐"  U1BC10  # DUPLOYAN LETTER R S
-
 # vowels
 
-# (Q: what about u?)
 <Multi_key> <C> <D> <u> <a> : "𛱁"  U1BC41  # DUPLOYAN LETTER A
 <Multi_key> <C> <D> <u> <e> : "𛱌"  U1BC4C  # DUPLOYAN LETTER SLOAN EH
 <Multi_key> <C> <D> <u> <i> : "𛱇"  U1BC47  # DUPLOYAN LETTER E
-<Multi_key> <C> <D> <u> <o> : "𛱄"  U1BC44  # DUPLOYAN LETTER O
+<Multi_key> <C> <D> <u> <o> : "𛱄̇"  U1BC44 U0307  # DUPLOYAN LETTER O COMBINING DOT ABOVE
+<Multi_key> <C> <D> <u> <u> : "𛱄̱"  U1BC44 U0331  # DUPLOYAN LETTER O COMBINING MACRON BELOW
 
-# (Q: what about a:, ay, o:, ow, oy?)
+<Multi_key> <C> <D> <U> <a> <colon> : "𛱁̇"  U1BC41 U0307  # DUPLOYAN LETTER A COMBINING DOT ABOVE
 <Multi_key> <C> <D> <U> <a> <w> : "𛱂"  U1BC42  # DUPLOYAN LETTER SLOAN OW
 <Multi_key> <C> <D> <U> <e> <y> : "𛱍"  U1BC4D  # DUPLOYAN LETTER ROMANIAN I
 <Multi_key> <C> <D> <U> <i> <colon> : "𛱎"  U1BC4E  # DUPLOYAN LETTER SLOAN EE
-<Multi_key> <C> <D> <U> <o> <colon> : "𛱅"  U1BC45  # DUPLOYAN LETTER AOU
+<Multi_key> <C> <D> <U> <o> <colon> : "𛱄"  U1BC44  # DUPLOYAN LETTER O
 <Multi_key> <C> <D> <U> <o> <o> <colon> : "𛱙"  U1BC59  # DUPLOYAN LETTER OOH
+<Multi_key> <C> <D> <U> <o> <w> : "𛱄̣"  U1BC44 U0323  # DUPLOYAN LETTER O COMBINING DOT BELOW
 <Multi_key> <C> <D> <U> <y> <u> : "𛱘"  U1BC58  # DUPLOYAN LETTER SLOAN U
 
-# (Q: what about awn, ayn, oyn?)
 <Multi_key> <C> <D> <U> <e> <n> : "𛱧"  U1BC67  # DUPLOYAN LETTER SLOAN EN
 <Multi_key> <C> <D> <U> <a> <n> : "𛱨"  U1BC68  # DUPLOYAN LETTER SLOAN AN
 <Multi_key> <C> <D> <U> <i> <n> : "𛱡"  U1BC61  # DUPLOYAN LETTER NASAL U
