@@ -28,7 +28,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (375): ʣ ㏈ etc
 * **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (24461)
+### Non-Latin script characters (24596)
 * **Arabic**, Old North Arabian, Old South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi (1266): ⁧رِيدِتْ⁩, ⁧𐪇𐪕𐪉⁩, ⁧𐬭𐬈𐬛𐬌𐬙⁩, ⁧𐩧𐩵𐩩⁩, ⁧𐿂𐾴𐾺𐿄⁩, ⁧𐣣𐣣𐣩𐣵⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧𐫡𐫅𐫏𐫤⁩, ⁧𐢛𐢅𐢍𐢞⁩, 𐒇𐒗𐒆𐒘𐒂, ⁧𐭥𐭣𐭩𐭲⁩, ⁧𐮅𐮃𐮈𐮑⁩, ⁧𐭓𐭃𐭉𐭕⁩, ⁧𐼘𐼘𐼊𐼚⁩, ⁧𐽀𐼲𐼷𐽂⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐽾𐽲𐽶𐾀⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (95): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (84): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
@@ -36,9 +36,9 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Braille**, UEB (272): ⠗⠫⠙⠊⠞ etc
 * **ConScripts**: Cherokee, Cree, Deseret, Inuktitut Syllabics, Mru, Nyiakeng Puachue Hmong, Ol Chiki, Osage, Pau Cin Hau, Shavian, Sloan-Duployan, Sora Sompeng, Toto & Wancho (1126): ᎴᏗᏛ, ᕃᑎᑦ, 𐐡𐐇𐐔𐐆𐐓, ᕃᑎᑦ, 𖩓𖩘𖩅𖩊𖩀, 𞄣𞄪𞄏𞄦𞄃, ᱨᱮᱫᱫᱤᱛ, 𐒴𐓟𐓵𐓣𐓰, 𑫒𑫖𑫄𑫗𑫎, 𐑮𐑧𐑛𐑦𐑑, 𛰋𛱌𛰍, 𑃝𑃣𑃔𑃤𑃑, 𞊟𞊦𞊓𞊡𞊒, 𞋗𞋛𞋄𞋜𞋋 etc
 * **Cyrillic**, Glagolitic & Old Permic (523): Ре́ддит, Ⱃⰵδδιτ, 𐍠𐍔𐍓𐍓𐍙𐍢 etc
-* **Geʽez**, Adlam, Bamum, Mende Kikakui, NKo & Vai (1085): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧𞠺𞠾𞡊⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
+* **Geʽez**, Adlam, Bamum, Garay, Mende Kikakui, NKo & Vai (1150): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧𐵞𐵩𐵺𐵋𐵽⁩, ⁧𞠺𞠾𞡊⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian** (Mtavruli, Nuskhuri, Mkhedruli) & Caucasian Albanian (206): რედდიტ, ႰႤႣႣႨႲ, 𐕙𐔴𐔳𐔳𐔼𐔸 etc
-* **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B & Lycian (978): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗 etc
+* **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian & Vithkuqi (1048): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗, 𐖊𐖞𐖜𐖜𐖥𐖵 etc
 * **Hebrew**, Aramaic, Elymaic, Lydian, Palmyrene, Phoenician, Samaritan & Ugaritic (350): ⁧רֶדִיט⁩, ⁧𐡓𐡃𐡉𐡕⁩, ⁧𐿳𐿣𐿵⁩, ⁧𐤭𐤤𐤣𐤣𐤦𐤯⁩, ⁧𐡴𐡣𐡩𐡶⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩, 𐎗𐎄𐎚 etc
 * **Japanese** (mostly kana) (559): 「レディット」 etc
 * **Korean** (11736): 레딧 etc
