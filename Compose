@@ -3982,7 +3982,7 @@ include "%L"
 
 <Multi_key> <a> <A> <S> <numbersign> <1> : "𐩽"  U10A7D  # OLD SOUTH ARABIAN NUMBER ONE
 <Multi_key> <a> <A> <S> <numbersign> <5> <0> : "𐩾"  U10A7E  # OLD SOUTH ARABIAN NUMBER FIFTY
-<Multi_key> <a> <A> <S> <numbersign> <Return> : "𐩿"  U10A7F  # OLD SOUTH ARABIAN NUMERIC INDICATOR
+<Multi_key> <a> <A> <S> <numbersign> <space> : "𐩿"  U10A7F  # OLD SOUTH ARABIAN NUMERIC INDICATOR
 
 # (C = Chorasmian)
 
@@ -4916,7 +4916,7 @@ include "%L"
 <Multi_key> <A> <c> <b>                  : "բ"  U0562  # ARMENIAN SMALL LETTER BEN
 <Multi_key> <A> <c> <g>                  : "գ"  U0563  # ARMENIAN SMALL LETTER GIM
 <Multi_key> <A> <c> <d>                  : "դ"  U0564  # ARMENIAN SMALL LETTER DA
-<Multi_key> <A> <c> <e> <Return>         : "ե"  U0565  # ARMENIAN SMALL LETTER ECH
+<Multi_key> <A> <c> <e> <space>          : "ե"  U0565  # ARMENIAN SMALL LETTER ECH
 <Multi_key> <A> <c> <z>                  : "զ"  U0566  # ARMENIAN SMALL LETTER ZA
 <Multi_key> <A> <c> <minus> <e>          : "է"  U0567  # ARMENIAN SMALL LETTER EH (ē)
 <Multi_key> <A> <c> <quotedbl> <e>       : "ը"  U0568  # ARMENIAN SMALL LETTER ET (ë)
@@ -4941,7 +4941,7 @@ include "%L"
 <Multi_key> <A> <c> <v> <j>              : "ջ"  U057B  # ARMENIAN SMALL LETTER JHEH (ǰ)
 <Multi_key> <A> <c> <period> <r>         : "ռ"  U057C  # ARMENIAN SMALL LETTER RA (ṙ)
 <Multi_key> <A> <c> <s>                  : "ս"  U057D  # ARMENIAN SMALL LETTER SEH
-<Multi_key> <A> <c> <v> <Return>         : "վ"  U057E  # ARMENIAN SMALL LETTER VEW
+<Multi_key> <A> <c> <v> <space>          : "վ"  U057E  # ARMENIAN SMALL LETTER VEW
 <Multi_key> <A> <c> <t>                  : "տ"  U057F  # ARMENIAN SMALL LETTER TIWN
 <Multi_key> <A> <c> <r>                  : "ր"  U0580  # ARMENIAN SMALL LETTER REH
 <Multi_key> <A> <c> <apostrophe> <c>     : "ց"  U0581  # ARMENIAN SMALL LETTER CO (c')
@@ -5531,6 +5531,39 @@ include "%L"
 <Multi_key> <b> <B> <numbersign> <8>     : "၈"  U1048  # MYANMAR DIGIT EIGHT
 <Multi_key> <b> <B> <numbersign> <9>     : "၉"  U1049  # MYANMAR DIGIT NINE
 
+# (BG = Buginese)
+
+<Multi_key> <b> <B> <G> <k> : "ᨀ"  U1A00  # BUGINESE LETTER KA
+<Multi_key> <b> <B> <G> <g> : "ᨁ"  U1A01  # BUGINESE LETTER GA
+<Multi_key> <b> <B> <G> <semicolon> <n> <space> : "ᨂ"  U1A02  # BUGINESE LETTER NGA
+<Multi_key> <b> <B> <G> <semicolon> <n> <k> : "ᨃ"  U1A03  # BUGINESE LETTER NGKA
+<Multi_key> <b> <B> <G> <p> : "ᨄ"  U1A04  # BUGINESE LETTER PA
+<Multi_key> <b> <B> <G> <b> : "ᨅ"  U1A05  # BUGINESE LETTER BA
+<Multi_key> <b> <B> <G> <m> <space> : "ᨆ"  U1A06  # BUGINESE LETTER MA
+<Multi_key> <b> <B> <G> <m> <p> : "ᨇ"  U1A07  # BUGINESE LETTER MPA
+<Multi_key> <b> <B> <G> <t> : "ᨈ"  U1A08  # BUGINESE LETTER TA
+<Multi_key> <b> <B> <G> <d> : "ᨉ"  U1A09  # BUGINESE LETTER DA
+<Multi_key> <b> <B> <G> <n> <space> : "ᨊ"  U1A0A  # BUGINESE LETTER NA
+<Multi_key> <b> <B> <G> <n> <r> : "ᨋ"  U1A0B  # BUGINESE LETTER NRA
+<Multi_key> <b> <B> <G> <c> : "ᨌ"  U1A0C  # BUGINESE LETTER CA
+<Multi_key> <b> <B> <G> <j> : "ᨍ"  U1A0D  # BUGINESE LETTER JA
+<Multi_key> <b> <B> <G> <asciitilde> <n> <space> : "ᨎ"  U1A0E  # BUGINESE LETTER NYA
+<Multi_key> <b> <B> <G> <asciitilde> <n> <c> : "ᨏ"  U1A0F  # BUGINESE LETTER NYCA
+<Multi_key> <b> <B> <G> <y> : "ᨐ"  U1A10  # BUGINESE LETTER YA
+<Multi_key> <b> <B> <G> <r> : "ᨑ"  U1A11  # BUGINESE LETTER RA
+<Multi_key> <b> <B> <G> <l> : "ᨒ"  U1A12  # BUGINESE LETTER LA
+<Multi_key> <b> <B> <G> <v> : "ᨓ"  U1A13  # BUGINESE LETTER VA
+<Multi_key> <b> <B> <G> <s> : "ᨔ"  U1A14  # BUGINESE LETTER SA
+<Multi_key> <b> <B> <G> <a> <space> : "ᨕ"  U1A15  # BUGINESE LETTER A
+<Multi_key> <b> <B> <G> <h> : "ᨖ"  U1A16  # BUGINESE LETTER HA
+<Multi_key> <b> <B> <G> <i> <Return> : "ᨗ"  U1A17  # BUGINESE VOWEL SIGN I
+<Multi_key> <b> <B> <G> <u> <Return> : "ᨘ"  U1A18  # BUGINESE VOWEL SIGN U
+<Multi_key> <b> <B> <G> <e> <e> <Return> : "ᨙ"  U1A19  # BUGINESE VOWEL SIGN E
+<Multi_key> <b> <B> <G> <o> <o> <Return> : "ᨚ"  U1A1A  # BUGINESE VOWEL SIGN O
+<Multi_key> <b> <B> <G> <a> <e> <Return> : "ᨛ"  U1A1B  # BUGINESE VOWEL SIGN AE
+<Multi_key> <b> <B> <G> <period> : "᨞"  U1A1E  # BUGINESE PALLAWA
+<Multi_key> <b> <B> <G> <Multi_key> <S> <O> : "᨟"  U1A1F  # BUGINESE END OF SECTION
+
 # (BH = Bhaiksuki)
 
 <Multi_key> <b> <B> <H> <k> <space>      : "𑰎"  U11C0E  # BHAIKSUKI LETTER KA
@@ -5790,6 +5823,83 @@ include "%L"
 <Multi_key> <b> <D> <comma> <Return>     : "𑠹"  U11839  # DOGRA SIGN VIRAMA
 <Multi_key> <b> <D> <underscore> <period> <Return> : "𑠺"  U1183A  # DOGRA SIGN NUKTA
 <Multi_key> <b> <D> <o> <period>         : "𑠻"  U1183B  # DOGRA ABBREVIATION SIGN
+
+# (DA = Dives Akuru)
+
+<Multi_key> <b> <D> <A> <a> <space> : "𑤀"  U11900  # DIVES AKURU LETTER A
+<Multi_key> <b> <D> <A> <a> <a> <space> : "𑤁"  U11901  # DIVES AKURU LETTER AA
+<Multi_key> <b> <D> <A> <i> <space> : "𑤂"  U11902  # DIVES AKURU LETTER I
+<Multi_key> <b> <D> <A> <i> <i> <space> : "𑤃"  U11903  # DIVES AKURU LETTER II
+<Multi_key> <b> <D> <A> <u> <space> : "𑤄"  U11904  # DIVES AKURU LETTER U
+<Multi_key> <b> <D> <A> <u> <u> <space> : "𑤅"  U11905  # DIVES AKURU LETTER UU
+<Multi_key> <b> <D> <A> <e> <e> <space> : "𑤆"  U11906  # DIVES AKURU LETTER E
+<Multi_key> <b> <D> <A> <o> <o> <space> : "𑤉"  U11909  # DIVES AKURU LETTER O
+
+<Multi_key> <b> <D> <A> <k> <space> : "𑤌"  U1190C  # DIVES AKURU LETTER KA
+<Multi_key> <b> <D> <A> <k> <h> : "𑤍"  U1190D  # DIVES AKURU LETTER KHA
+<Multi_key> <b> <D> <A> <g> <space> : "𑤎"  U1190E  # DIVES AKURU LETTER GA
+<Multi_key> <b> <D> <A> <g> <h> : "𑤏"  U1190F  # DIVES AKURU LETTER GHA
+<Multi_key> <b> <D> <A> <semicolon> <n> : "𑤐"  U11910  # DIVES AKURU LETTER NGA
+<Multi_key> <b> <D> <A> <c> <space> : "𑤑"  U11911  # DIVES AKURU LETTER CA
+<Multi_key> <b> <D> <A> <c> <h> : "𑤒"  U11912  # DIVES AKURU LETTER CHA
+<Multi_key> <b> <D> <A> <j> <space> : "𑤓"  U11913  # DIVES AKURU LETTER JA
+<Multi_key> <b> <D> <A> <asciitilde> <n> : "𑤕"  U11915  # DIVES AKURU LETTER NYA
+<Multi_key> <b> <D> <A> <period> <t> <space> : "𑤖"  U11916  # DIVES AKURU LETTER TTA
+<Multi_key> <b> <D> <A> <period> <d> <space> : "𑤘"  U11918  # DIVES AKURU LETTER DDA
+<Multi_key> <b> <D> <A> <period> <d> <h> : "𑤙"  U11919  # DIVES AKURU LETTER DDHA
+<Multi_key> <b> <D> <A> <period> <n> : "𑤚"  U1191A  # DIVES AKURU LETTER NNA
+<Multi_key> <b> <D> <A> <t> <space> : "𑤛"  U1191B  # DIVES AKURU LETTER TA
+<Multi_key> <b> <D> <A> <t> <h> : "𑤜"  U1191C  # DIVES AKURU LETTER THA
+<Multi_key> <b> <D> <A> <d> <space> : "𑤝"  U1191D  # DIVES AKURU LETTER DA
+<Multi_key> <b> <D> <A> <d> <h> : "𑤞"  U1191E  # DIVES AKURU LETTER DHA
+<Multi_key> <b> <D> <A> <n> : "𑤟"  U1191F  # DIVES AKURU LETTER NA
+<Multi_key> <b> <D> <A> <p> <space> : "𑤠"  U11920  # DIVES AKURU LETTER PA
+<Multi_key> <b> <D> <A> <p> <h> : "𑤡"  U11921  # DIVES AKURU LETTER PHA
+<Multi_key> <b> <D> <A> <b> <space> : "𑤢"  U11922  # DIVES AKURU LETTER BA
+<Multi_key> <b> <D> <A> <b> <h> : "𑤣"  U11923  # DIVES AKURU LETTER BHA
+<Multi_key> <b> <D> <A> <m> : "𑤤"  U11924  # DIVES AKURU LETTER MA
+<Multi_key> <b> <D> <A> <y> <space> : "𑤥"  U11925  # DIVES AKURU LETTER YA
+<Multi_key> <b> <D> <A> <semicolon> <y> : "𑤦"  U11926  # DIVES AKURU LETTER YYA
+<Multi_key> <b> <D> <A> <r> <space> : "𑤧"  U11927  # DIVES AKURU LETTER RA
+<Multi_key> <b> <D> <A> <l> : "𑤨"  U11928  # DIVES AKURU LETTER LA
+<Multi_key> <b> <D> <A> <v> : "𑤩"  U11929  # DIVES AKURU LETTER VA
+<Multi_key> <b> <D> <A> <semicolon> <s> : "𑤪"  U1192A  # DIVES AKURU LETTER SHA
+<Multi_key> <b> <D> <A> <period> <s> : "𑤫"  U1192B  # DIVES AKURU LETTER SSA
+<Multi_key> <b> <D> <A> <s> : "𑤬"  U1192C  # DIVES AKURU LETTER SA
+<Multi_key> <b> <D> <A> <h> : "𑤭"  U1192D  # DIVES AKURU LETTER HA
+<Multi_key> <b> <D> <A> <period> <l> : "𑤮"  U1192E  # DIVES AKURU LETTER LLA
+<Multi_key> <b> <D> <A> <z> : "𑤯"  U1192F  # DIVES AKURU LETTER ZA
+
+<Multi_key> <b> <D> <A> <a> <a> <Return> : "𑤰"  U11930  # DIVES AKURU VOWEL SIGN AA
+<Multi_key> <b> <D> <A> <i> <Return> : "𑤱"  U11931  # DIVES AKURU VOWEL SIGN I
+<Multi_key> <b> <D> <A> <i> <i> <Return> : "𑤲"  U11932  # DIVES AKURU VOWEL SIGN II
+<Multi_key> <b> <D> <A> <u> <Return> : "𑤳"  U11933  # DIVES AKURU VOWEL SIGN U
+<Multi_key> <b> <D> <A> <u> <u> <Return> : "𑤴"  U11934  # DIVES AKURU VOWEL SIGN UU
+<Multi_key> <b> <D> <A> <e> <e> <Return> : "𑤵"  U11935  # DIVES AKURU VOWEL SIGN E
+<Multi_key> <b> <D> <A> <a> <i> <Return> : "𑤷"  U11937  # DIVES AKURU VOWEL SIGN AI
+<Multi_key> <b> <D> <A> <o> <o> <Return> : "𑤸"  U11938  # DIVES AKURU VOWEL SIGN O
+
+<Multi_key> <b> <D> <A> <period> <Return> : "𑤻"  U1193B  # DIVES AKURU SIGN ANUSVARA
+<Multi_key> <b> <D> <A> <period> <parenright> <Return> : "𑤼"  U1193C  # DIVES AKURU SIGN CANDRABINDU
+<Multi_key> <b> <D> <0> <Return> : "𑤽"  U1193D  # DIVES AKURU SIGN HALANTA (SUKUN)
+<Multi_key> <b> <D> <A> <underscore> <plus> : "𑤾"  U1193E  # DIVES AKURU VIRAMA
+<Multi_key> <b> <D> <A> <3> : "𑤿"  U1193F  # DIVES AKURU PREFIXED NASAL SIGN
+
+<Multi_key> <b> <D> <A> <y> <Return> : "𑥀"  U11940  # DIVES AKURU MEDIAL YA
+<Multi_key> <b> <D> <A> <r> <Return> : "𑥂"  U11942  # DIVES AKURU MEDIAL RA
+<Multi_key> <b> <D> <A> <underscore> <period> <Return> : "𑥃"  U11943  # DIVES AKURU SIGN NUKTA
+<Multi_key> <b> <D> <A> <2> <bar> : "𑥄"  U11944  # DIVES AKURU DOUBLE DANDA
+
+<Multi_key> <b> <D> <A> <numbersign> <0> : "𑥐"  U11950  # DIVES AKURU DIGIT ZERO
+<Multi_key> <b> <D> <A> <numbersign> <1> : "𑥑"  U11951  # DIVES AKURU DIGIT ONE
+<Multi_key> <b> <D> <A> <numbersign> <2> : "𑥒"  U11952  # DIVES AKURU DIGIT TWO
+<Multi_key> <b> <D> <A> <numbersign> <3> : "𑥓"  U11953  # DIVES AKURU DIGIT THREE
+<Multi_key> <b> <D> <A> <numbersign> <4> : "𑥔"  U11954  # DIVES AKURU DIGIT FOUR
+<Multi_key> <b> <D> <A> <numbersign> <5> : "𑥕"  U11955  # DIVES AKURU DIGIT FIVE
+<Multi_key> <b> <D> <A> <numbersign> <6> : "𑥖"  U11956  # DIVES AKURU DIGIT SIX
+<Multi_key> <b> <D> <A> <numbersign> <7> : "𑥗"  U11957  # DIVES AKURU DIGIT SEVEN
+<Multi_key> <b> <D> <A> <numbersign> <8> : "𑥘"  U11958  # DIVES AKURU DIGIT EIGHT
+<Multi_key> <b> <D> <A> <numbersign> <9> : "𑥙"  U11959  # DIVES AKURU DIGIT NINE
 
 # (g = Gujarati)
 
@@ -7295,6 +7405,34 @@ include "%L"
 <Multi_key> <b> <M> <J> <Multi_key> <S> <O>  : "𑅵"  U11175  # MAHAJANI SECTION MARK
 <Multi_key> <b> <M> <J> <S> <H> <R> <I>      : "𑅶"  U11176  # MAHAJANI LIGATURE SHRI
 
+# (MK = Makasar)
+
+<Multi_key> <b> <M> <K> <k> : "𑻠"  U11EE0  # MAKASAR LETTER KA
+<Multi_key> <b> <M> <K> <g> : "𑻡"  U11EE1  # MAKASAR LETTER GA
+<Multi_key> <b> <M> <K> <semicolon> <n> : "𑻢"  U11EE2  # MAKASAR LETTER NGA
+<Multi_key> <b> <M> <K> <p> : "𑻣"  U11EE3  # MAKASAR LETTER PA
+<Multi_key> <b> <M> <K> <b> : "𑻤"  U11EE4  # MAKASAR LETTER BA
+<Multi_key> <b> <M> <K> <m> : "𑻥"  U11EE5  # MAKASAR LETTER MA
+<Multi_key> <b> <M> <K> <t> : "𑻦"  U11EE6  # MAKASAR LETTER TA
+<Multi_key> <b> <M> <K> <d> : "𑻧"  U11EE7  # MAKASAR LETTER DA
+<Multi_key> <b> <M> <K> <n> : "𑻨"  U11EE8  # MAKASAR LETTER NA
+<Multi_key> <b> <M> <K> <c> : "𑻩"  U11EE9  # MAKASAR LETTER CA
+<Multi_key> <b> <M> <K> <j> : "𑻪"  U11EEA  # MAKASAR LETTER JA
+<Multi_key> <b> <M> <K> <asciitilde> <n> : "𑻫"  U11EEB  # MAKASAR LETTER NYA
+<Multi_key> <b> <M> <K> <y> : "𑻬"  U11EEC  # MAKASAR LETTER YA
+<Multi_key> <b> <M> <K> <r> : "𑻭"  U11EED  # MAKASAR LETTER RA
+<Multi_key> <b> <M> <K> <l> : "𑻮"  U11EEE  # MAKASAR LETTER LA
+<Multi_key> <b> <M> <K> <v> : "𑻯"  U11EEF  # MAKASAR LETTER VA
+<Multi_key> <b> <M> <K> <s> : "𑻰"  U11EF0  # MAKASAR LETTER SA
+<Multi_key> <b> <M> <K> <a> : "𑻱"  U11EF1  # MAKASAR LETTER A
+<Multi_key> <b> <M> <K> <quotedbl> : "𑻲"  U11EF2  # MAKASAR ANGKA
+<Multi_key> <b> <M> <K> <i> <Return> : "𑻳"  U11EF3  # MAKASAR VOWEL SIGN I
+<Multi_key> <b> <M> <K> <u> <Return> : "𑻴"  U11EF4  # MAKASAR VOWEL SIGN U
+<Multi_key> <b> <M> <K> <e> <e> <Return> : "𑻵"  U11EF5  # MAKASAR VOWEL SIGN E
+<Multi_key> <b> <M> <K> <o> <o> <Return> : "𑻶"  U11EF6  # MAKASAR VOWEL SIGN O
+<Multi_key> <b> <M> <K> <period> : "𑻷"  U11EF7  # MAKASAR PASSIMBANG
+<Multi_key> <b> <M> <K> <Multi_key> <S> <O> : "𑻸"  U11EF8  # MAKASAR END OF SECTION
+
 # (ML = Multani)
 
 <Multi_key> <b> <M> <L> <a> : "𑊀"  U11280  # MULTANI LETTER A
@@ -8780,13 +8918,13 @@ include "%L"
 <Multi_key> <B> <x> <f> <f>          : "⠖" U2816   # BRAILLE PATTERN DOTS-235 (-FF-)
 <Multi_key> <B> <x> <g> <g>          : "⠶" U2836   # BRAILLE PATTERN DOTS-2356 (-GG-)
 <Multi_key> <B> <x> <g> <h>          : "⠣" U2823   # BRAILLE PATTERN DOTS-126 (GH)
-<Multi_key> <B> <x> <i> <n> <Return> : "⠔" U2814   # BRAILLE PATTERN DOTS-35 (IN)
+<Multi_key> <B> <x> <i> <n> <space>  : "⠔" U2814   # BRAILLE PATTERN DOTS-35 (IN)
 <Multi_key> <B> <x> <i> <n> <g>      : "⠬" U282C   # BRAILLE PATTERN DOTS-346 (-ING)
 <Multi_key> <B> <x> <o> <u>          : "⠳" U2833   # BRAILLE PATTERN DOTS-1256 (OU)
 <Multi_key> <B> <x> <o> <w>          : "⠪" U282A   # BRAILLE PATTERN DOTS-246 (OW)
 <Multi_key> <B> <x> <s> <h>          : "⠩" U2829   # BRAILLE PATTERN DOTS-146 (SH)
 <Multi_key> <B> <x> <s> <t>          : "⠆" U2806   # BRAILLE PATTERN DOTS-23 (ST)
-<Multi_key> <B> <x> <t> <h> <Return> : "⠹" U2839   # BRAILLE PATTERN DOTS-1456 (TH)
+<Multi_key> <B> <x> <t> <h> <space>  : "⠹" U2839   # BRAILLE PATTERN DOTS-1456 (TH)
 <Multi_key> <B> <x> <w> <h>          : "⠱" U2831   # BRAILLE PATTERN DOTS-156 (WH)
 <Multi_key> <B> <x> <a> <n> <d>      : "⠯" U282F   # BRAILLE PATTERN DOTS-12346 (AND)
 <Multi_key> <B> <x> <f> <o> <r>      : "⠿" U283F   # BRAILLE PATTERN DOTS-123456 (FOR)
@@ -9135,12 +9273,12 @@ include "%L"
 <Multi_key> <c> <c> <H>          : "Х"  U0425   # CYRILLIC CAPITAL LETTER HA (conflicts)
 <Multi_key> <c> <c> <X>          : "Х"  U0425   # CYRILLIC CAPITAL LETTER HA (conflicts)
 <Multi_key> <c> <c> <C>          : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE (conflicts)
-<Multi_key> <c> <x> <T> <S> <Return> : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE
+<Multi_key> <c> <x> <T> <S> <space> : "Ц"  U0426   # CYRILLIC CAPITAL LETTER TSE
 <Multi_key> <c> <x> <C> <H>      : "Ч"  U0427   # CYRILLIC CAPITAL LETTER CHE
 <Multi_key> <c> <x> <S> <H>      : "Ш"  U0428   # CYRILLIC CAPITAL LETTER SHA
 <Multi_key> <c> <x> <S> <C> <H>  : "Щ"  U0429   # CYRILLIC CAPITAL LETTER SHCHA
 <Multi_key> <c> <c> <quotedbl> <quotedbl> : "Ъ"  U042A   # CYRILLIC CAPITAL LETTER HARD SIGN (conflicts)
-<Multi_key> <c> <c> <Y> <Return> : "Ы"  U042B   # CYRILLIC CAPITAL LETTER YERU (conflicts)
+<Multi_key> <c> <c> <Y> <space>  : "Ы"  U042B   # CYRILLIC CAPITAL LETTER YERU (conflicts)
 <Multi_key> <c> <c> <apostrophe> <apostrophe> : "Ь"  U042C   # CYRILLIC CAPITAL LETTER SOFT SIGN (conflicts)
 <Multi_key> <c> <c> <E>          : "Э"  U042D   # CYRILLIC CAPITAL LETTER E (conflicts)
 <Multi_key> <c> <c> <Y> <U>      : "Ю"  U042E   # CYRILLIC CAPITAL LETTER YU (conflicts)
@@ -9148,7 +9286,7 @@ include "%L"
 # Ukrainian
 <Multi_key> <c> <x> <G> <G>      : "Ґ"  U0490   # CYRILLIC CAPITAL LETTER GHE WITH UPTURN
 <Multi_key> <c> <x> <Y> <E>      : "Є"  U0404   # CYRILLIC CAPITAL LETTER UKRAINIAN IE
-<Multi_key> <c> <x> <I> <Return> : "І"  U0406   # CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <I> <space>  : "І"  U0406   # CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
 <Multi_key> <c> <x> <Y> <I>      : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
 <Multi_key> <c> <x> <quotedbl> <I> : "Ї"  U0407   # CYRILLIC CAPITAL LETTER YI
 # Belarussian
@@ -9163,7 +9301,7 @@ include "%L"
 # Macedonian
 <Multi_key> <c> <x> <G> <J>      : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
 <Multi_key> <c> <x> <apostrophe> <G> : "Ѓ"  U0403   # CYRILLIC CAPITAL LETTER GJE
-<Multi_key> <c> <x> <D> <Z> <Return> : "Ѕ"  U0405   # CYRILLIC CAPITAL LETTER DZE
+<Multi_key> <c> <x> <D> <Z> <space> : "Ѕ"  U0405   # CYRILLIC CAPITAL LETTER DZE
 <Multi_key> <c> <x> <J>          : "Ј"  U0408   # CYRILLIC CAPITAL LETTER JE
 <Multi_key> <c> <x> <K> <J>      : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
 <Multi_key> <c> <x> <apostrophe> <K> : "Ќ"  U040C   # CYRILLIC CAPITAL LETTER KJE
@@ -9194,20 +9332,20 @@ include "%L"
 <Multi_key> <c> <c> <h>          : "х"  U0445   # CYRILLIC SMALL LETTER HA (conflicts)
 <Multi_key> <c> <c> <x>          : "х"  U0445   # CYRILLIC SMALL LETTER HA (conflicts)
 <Multi_key> <c> <c> <c>          : "ц"  U0446   # CYRILLIC SMALL LETTER TSE (conflicts)
-<Multi_key> <c> <x> <t> <s> <Return> : "ц"  U0446   # CYRILLIC SMALL LETTER TSE
+<Multi_key> <c> <x> <t> <s> <space> : "ц"  U0446   # CYRILLIC SMALL LETTER TSE
 <Multi_key> <c> <x> <c> <h>      : "ч"  U0447   # CYRILLIC SMALL LETTER CHE
 <Multi_key> <c> <x> <s> <h>      : "ш"  U0448   # CYRILLIC SMALL LETTER SHA
 <Multi_key> <c> <x> <s> <c> <h>  : "щ"  U0449   # CYRILLIC SMALL LETTER SHCHA
-<Multi_key> <c> <c> <quotedbl> <Return> : "ъ"  U044A   # CYRILLIC SMALL LETTER HARD SIGN (conflicts)
-<Multi_key> <c> <c> <y> <Return> : "ы"  U044B   # CYRILLIC SMALL LETTER YERU (conflicts)
-<Multi_key> <c> <c> <apostrophe> <Return> : "ь"  U044C   # CYRILLIC SMALL LETTER SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <quotedbl> <space>  : "ъ"  U044A   # CYRILLIC SMALL LETTER HARD SIGN (conflicts)
+<Multi_key> <c> <c> <y> <space>  : "ы"  U044B   # CYRILLIC SMALL LETTER YERU (conflicts)
+<Multi_key> <c> <c> <apostrophe> <space> : "ь"  U044C   # CYRILLIC SMALL LETTER SOFT SIGN (conflicts)
 <Multi_key> <c> <c> <e>          : "э"  U044D   # CYRILLIC SMALL LETTER E (conflicts)
 <Multi_key> <c> <c> <y> <u>      : "ю"  U044E   # CYRILLIC SMALL LETTER YU (conflicts)
 <Multi_key> <c> <c> <y> <a>      : "я"  U044F   # CYRILLIC SMALL LETTER YA (conflicts)
 # Ukrainian
 <Multi_key> <c> <x> <g> <g>      : "ґ"  U0491   # CYRILLIC SMALL LETTER GHE WITH UPTURN
 <Multi_key> <c> <x> <y> <e>      : "є"  U0454   # CYRILLIC SMALL LETTER UKRAINIAN IE
-<Multi_key> <c> <x> <i> <Return> : "і"  U0456   # CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <i> <space>  : "і"  U0456   # CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
 <Multi_key> <c> <x> <y> <i>      : "ї"  U0457   # CYRILLIC SMALL LETTER YI
 <Multi_key> <c> <x> <quotedbl> <i> : "ї"  U0457   # CYRILLIC SMALL LETTER YI
 # Belarussian
@@ -9222,7 +9360,7 @@ include "%L"
 # Macedonian
 <Multi_key> <c> <x> <g> <j>      : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
 <Multi_key> <c> <x> <apostrophe> <g> : "ѓ"  U0453   # CYRILLIC SMALL LETTER GJE
-<Multi_key> <c> <x> <d> <z> <Return> : "ѕ"  U0455   # CYRILLIC SMALL LETTER DZE
+<Multi_key> <c> <x> <d> <z> <space> : "ѕ"  U0455   # CYRILLIC SMALL LETTER DZE
 <Multi_key> <c> <x> <j>          : "ј"  U0458   # CYRILLIC SMALL LETTER JE
 <Multi_key> <c> <x> <k> <j>      : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
 <Multi_key> <c> <x> <apostrophe> <k> : "ќ"  U045C   # CYRILLIC SMALL LETTER KJE
@@ -9303,7 +9441,7 @@ include "%L"
 <Multi_key> <c> <c> <Q>              : "Ҁ"  U0480  # CYRILLIC CAPITAL LETTER KOPPA (conflicts)
 <Multi_key> <c> <c> <q>              : "ҁ"  U0481  # CYRILLIC SMALL LETTER KOPPA (conflicts)
 <Multi_key> <c> <x> <V>              : "Ѵ"  U0474  # CYRILLIC CAPITAL LETTER IZHITSA
-<Multi_key> <c> <x> <v> <Return>     : "ѵ"  U0475  # CYRILLIC SMALL LETTER IZHITSA
+<Multi_key> <c> <x> <v> <space>      : "ѵ"  U0475  # CYRILLIC SMALL LETTER IZHITSA
 <Multi_key> <c> <c> <W>              : "Ѡ"  U0460  # CYRILLIC CAPITAL LETTER OMEGA (conflicts)
 <Multi_key> <c> <c> <w>              : "ѡ"  U0461  # CYRILLIC SMALL LETTER OMEGA (conflicts)
 <Multi_key> <c> <x> <Y> <A> <E>      : "Ԙ"  U0518  # CYRILLIC CAPITAL LETTER YAE
@@ -9472,10 +9610,10 @@ include "%L"
 <Multi_key> <c> <x> <asciicircum> <underscore> <t> <s> : "𞁄"  U1E044  # MODIFIER LETTER CYRILLIC SMALL TSE
 <Multi_key> <c> <x> <asciicircum> <underscore> <c> <h> : "𞁅"  U1E045  # MODIFIER LETTER CYRILLIC SMALL CHE
 <Multi_key> <c> <x> <asciicircum> <underscore> <s> <h> : "𞁆"  U1E046  # MODIFIER LETTER CYRILLIC SMALL SHA
-<Multi_key> <c> <c> <asciicircum> <underscore> <quotedbl> <Return> : "ꚜ"  UA69C  # MODIFIER LETTER CYRILLIC HARD SIGN (conflicts)
-<Multi_key> <c> <c> <asciicircum> <underscore> <y> <Return> : "𞁇"  U1E047  # MODIFIER LETTER CYRILLIC SMALL YERU (conflict)
-<Multi_key> <c> <c> <asciicircum> <underscore> <y> <Return> : "ꚝ"  UA69D  # MODIFIER LETTER CYRILLIC SOFT SIGN (conflicts)
-<Multi_key> <c> <c> <asciicircum> <underscore> <apostrophe> <Return> : "ꚝ"  UA69D  # MODIFIER LETTER CYRILLIC SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <underscore> <quotedbl> <space> : "ꚜ"  UA69C  # MODIFIER LETTER CYRILLIC HARD SIGN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <underscore> <y> <space> : "𞁇"  U1E047  # MODIFIER LETTER CYRILLIC SMALL YERU (conflict)
+<Multi_key> <c> <c> <asciicircum> <underscore> <y> <space> : "ꚝ"  UA69D  # MODIFIER LETTER CYRILLIC SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <underscore> <apostrophe> <space> : "ꚝ"  UA69D  # MODIFIER LETTER CYRILLIC SOFT SIGN (conflicts)
 <Multi_key> <c> <c> <asciicircum> <underscore> <e> : "𞁈"  U1E048  # MODIFIER LETTER CYRILLIC SMALL E (conflict)
 <Multi_key> <c> <c> <asciicircum> <underscore> <y> <u> : "𞁉"  U1E049  # MODIFIER LETTER CYRILLIC SMALL YU (conflict)
 <Multi_key> <c> <x> <asciicircum> <underscore> <i> : "𞁌"  U1E04C  # MODIFIER LETTER CYRILLIC SMALL BYELORUSSIAN-UKRAINIAN I
@@ -9508,11 +9646,11 @@ include "%L"
 <Multi_key> <c> <x> <underscore> <t> <s> : "𞁢"  U1E062  # CYRILLIC SUBSCRIPT SMALL LETTER TSE
 <Multi_key> <c> <x> <underscore> <c> <h> : "𞁣"  U1E063  # CYRILLIC SUBSCRIPT SMALL LETTER CHE
 <Multi_key> <c> <x> <underscore> <s> <h> : "𞁤"  U1E064  # CYRILLIC SUBSCRIPT SMALL LETTER SHA
-<Multi_key> <c> <c> <underscore> <quotedbl> <Return> : "𞁥"  U1E065  # CYRILLIC SUBSCRIPT SMALL LETTER HARD SIGN (conflicts)
-<Multi_key> <c> <c> <underscore> <y> <Return> : "𞁦"  U1E066  # CYRILLIC SUBSCRIPT SMALL LETTER YERU (conflicts)
+<Multi_key> <c> <c> <underscore> <quotedbl> <space> : "𞁥"  U1E065  # CYRILLIC SUBSCRIPT SMALL LETTER HARD SIGN (conflicts)
+<Multi_key> <c> <c> <underscore> <y> <space> : "𞁦"  U1E066  # CYRILLIC SUBSCRIPT SMALL LETTER YERU (conflicts)
 <Multi_key> <c> <x> <underscore> <g> <g> : "𞁧"  U1E067  # CYRILLIC SUBSCRIPT SMALL LETTER GHE WITH UPTURN
 <Multi_key> <c> <x> <underscore> <i> : "𞁨"  U1E068  # CYRILLIC SUBSCRIPT SMALL LETTER BYELORUSSIAN-UKRAINIAN I
-<Multi_key> <c> <x> <underscore> <d> <z> <Return> : "𞁩"  U1E069  # CYRILLIC SUBSCRIPT SMALL LETTER DZE
+<Multi_key> <c> <x> <underscore> <d> <z> <space> : "𞁩"  U1E069  # CYRILLIC SUBSCRIPT SMALL LETTER DZE
 <Multi_key> <c> <x> <underscore> <d> <z> <h> : "𞁪"  U1E06A  # CYRILLIC SUBSCRIPT SMALL LETTER DZHE
 
 <Multi_key> <c> <c> <underscore> <asciicircum> <L> : "ᴫ"  U1D2B  # CYRILLIC LETTER SMALL CAPITAL EL (conflicts)
@@ -9596,7 +9734,7 @@ include "%L"
 <Multi_key> <c> <G> <C> <H>      : "Ⱍ" U2C1D   # GLAGOLITIC CAPITAL LETTER CHRIVI (conflicts)
 <Multi_key> <c> <G> <S> <H>      : "Ⱎ" U2C1E   # GLAGOLITIC CAPITAL LETTER SHA (conflicts)
 <Multi_key> <c> <g> <quotedbl> <quotedbl> : "Ⱏ" U2C1F   # GLAGOLITIC CAPITAL LETTER YERU (conflicts)
-<Multi_key> <c> <g> <Y> <Return> : "Ⱐ" U2C20   # GLAGOLITIC CAPITAL LETTER YERI (conflicts)
+<Multi_key> <c> <g> <Y> <space>  : "Ⱐ" U2C20   # GLAGOLITIC CAPITAL LETTER YERI (conflicts)
 <Multi_key> <c> <g> <Y> <E>      : "Ⱑ" U2C21   # GLAGOLITIC CAPITAL LETTER YATI (conflicts)
 <Multi_key> <c> <g> <H>          : "Ⱒ" U2C22   # GLAGOLITIC CAPITAL LETTER SPIDERY HA (conflicts)
 <Multi_key> <c> <g> <Y> <U>      : "Ⱓ" U2C23   # GLAGOLITIC CAPITAL LETTER YU (conflicts)
@@ -9645,8 +9783,8 @@ include "%L"
 <Multi_key> <c> <G> <t> <s>      : "ⱌ" U2C4C   # GLAGOLITIC SMALL LETTER TSI (conflicts)
 <Multi_key> <c> <G> <c> <h>      : "ⱍ" U2C4D   # GLAGOLITIC SMALL LETTER CHRIVI (conflicts)
 <Multi_key> <c> <G> <s> <h>      : "ⱎ" U2C4E   # GLAGOLITIC SMALL LETTER SHA (conflicts)
-<Multi_key> <c> <g> <quotedbl> <Return>   : "ⱏ" U2C4F   # GLAGOLITIC SMALL LETTER YERU (conflicts)
-<Multi_key> <c> <g> <y> <Return> : "ⱐ" U2C50   # GLAGOLITIC SMALL LETTER YERI (conflicts)
+<Multi_key> <c> <g> <quotedbl> <space>    : "ⱏ" U2C4F   # GLAGOLITIC SMALL LETTER YERU (conflicts)
+<Multi_key> <c> <g> <y> <space>  : "ⱐ" U2C50   # GLAGOLITIC SMALL LETTER YERI (conflicts)
 <Multi_key> <c> <g> <y> <e>      : "ⱑ" U2C51   # GLAGOLITIC SMALL LETTER YATI (conflicts)
 <Multi_key> <c> <g> <h>          : "ⱒ" U2C52   # GLAGOLITIC SMALL LETTER SPIDERY HA (conflicts)
 <Multi_key> <c> <g> <y> <u>      : "ⱓ" U2C53   # GLAGOLITIC SMALL LETTER YU (conflicts)
@@ -9658,7 +9796,7 @@ include "%L"
 <Multi_key> <c> <g> <comma> <y> <o> : "ⱙ" U2C59   # GLAGOLITIC SMALL LETTER IOTATED BIG YUS (conflicts)
 <Multi_key> <c> <G> <t> <h>      : "ⱚ" U2C5A   # GLAGOLITIC SMALL LETTER FITA (conflicts)
 <Multi_key> <c> <g> <w>          : "ⱛ" U2C5B   # GLAGOLITIC SMALL LETTER IZHITSA (conflicts)
-<Multi_key> <c> <G> <quotedbl> <Return> : "ⱜ" U2C5C   # GLAGOLITIC SMALL LETTER SHTAPIC (conflicts)
+<Multi_key> <c> <G> <quotedbl> <space>  : "ⱜ" U2C5C   # GLAGOLITIC SMALL LETTER SHTAPIC (conflicts)
 <Multi_key> <c> <G> <a>          : "ⱝ" U2C5D   # GLAGOLITIC SMALL LETTER TROKUTASTI A (conflicts)
 <Multi_key> <c> <G> <m>          : "ⱞ" U2C5E   # GLAGOLITIC SMALL LETTER LATINATE MYSLITE (conflicts)
 <Multi_key> <c> <G> <less> <c> <h> : "ⱟ" U2C5F   # GLAGOLITIC SMALL LETTER CAUDATE CHRIVI (conflicts)
@@ -9688,8 +9826,8 @@ include "%L"
 <Multi_key> <c> <P> <C> <H>             : "𐍤"  U10364  # OLD PERMIC LETTER CHERY
 <Multi_key> <c> <P> <S> <H>             : "𐍥"  U10365  # OLD PERMIC LETTER SHOOI
 <Multi_key> <c> <P> <S> <C> <H>         : "𐍦"  U10366  # OLD PERMIC LETTER SHCHOOI
-<Multi_key> <c> <P> <y> <Return>        : "𐍧"  U10367  # OLD PERMIC LETTER YRY (Q: how does this differ from 𐍨?
-<Multi_key> <c> <P> <Y> <Return>        : "𐍨"  U10368  # OLD PERMIC LETTER YERU
+<Multi_key> <c> <P> <y> <space>         : "𐍧"  U10367  # OLD PERMIC LETTER YRY (Q: how does this differ from 𐍨?
+<Multi_key> <c> <P> <Y> <space>         : "𐍨"  U10368  # OLD PERMIC LETTER YERU
 <Multi_key> <c> <P> <quotedbl> <o>      : "𐍩"  U10369  # OLD PERMIC LETTER O
 <Multi_key> <c> <P> <O>                 : "𐍪"  U1036A  # OLD PERMIC LETTER OO
 <Multi_key> <c> <P> <f>                 : "𐍫"  U1036B  # OLD PERMIC LETTER EF
@@ -9697,7 +9835,7 @@ include "%L"
 <Multi_key> <c> <P> <c>                 : "𐍭"  U1036D  # OLD PERMIC LETTER TSIU
 <Multi_key> <c> <P> <T> <S>             : "𐍭"  U1036D  # OLD PERMIC LETTER TSIU
 <Multi_key> <c> <P> <v>                 : "𐍮"  U1036E  # OLD PERMIC LETTER VER
-<Multi_key> <c> <P> <quotedbl> <Return> : "𐍯"  U1036F  # OLD PERMIC LETTER YER
+<Multi_key> <c> <P> <quotedbl> <space>  : "𐍯"  U1036F  # OLD PERMIC LETTER YER
 <Multi_key> <c> <P> <apostrophe>        : "𐍰"  U10370  # OLD PERMIC LETTER YERI
 <Multi_key> <c> <P> <E>                 : "𐍱"  U10371  # OLD PERMIC LETTER YAT
 <Multi_key> <c> <P> <y> <e>             : "𐍲"  U10372  # OLD PERMIC LETTER IE
@@ -9731,7 +9869,7 @@ include "%L"
 <Multi_key> <C> <d> <A> : "𐐈" U10408   # DESERET CAPITAL LETTER SHORT A
 <Multi_key> <C> <d> <O> : "𐐉" U10409   # DESERET CAPITAL LETTER SHORT AH
 <Multi_key> <C> <d> <U> : "𐐊" U1040A   # DESERET CAPITAL LETTER SHORT O
-<Multi_key> <C> <D> <O> <O> <Return> : "𐐋" U1040B   # DESERET CAPITAL LETTER SHORT OO
+<Multi_key> <C> <D> <O> <O> <space> : "𐐋" U1040B   # DESERET CAPITAL LETTER SHORT OO
 <Multi_key> <C> <D> <A> <Y> : "𐐌" U1040C   # DESERET CAPITAL LETTER AY
 <Multi_key> <C> <D> <A> <W> : "𐐍" U1040D   # DESERET CAPITAL LETTER OW
 <Multi_key> <C> <d> <W> : "𐐎" U1040E   # DESERET CAPITAL LETTER WU
@@ -9772,7 +9910,7 @@ include "%L"
 <Multi_key> <C> <d> <a> : "𐐰" U10430   # DESERET SMALL LETTER SHORT A
 <Multi_key> <C> <d> <o> : "𐐱" U10431   # DESERET SMALL LETTER SHORT AH
 <Multi_key> <C> <d> <u> : "𐐲" U10432   # DESERET SMALL LETTER SHORT O
-<Multi_key> <C> <D> <o> <o> <Return> : "𐐳" U10433   # DESERET SMALL LETTER SHORT OO
+<Multi_key> <C> <D> <o> <o> <space> : "𐐳" U10433   # DESERET SMALL LETTER SHORT OO
 <Multi_key> <C> <D> <a> <y> : "𐐴" U10434   # DESERET SMALL LETTER AY
 <Multi_key> <C> <D> <a> <w> : "𐐵" U10435   # DESERET SMALL LETTER OW
 <Multi_key> <C> <d> <w> : "𐐶" U10436   # DESERET SMALL LETTER WU
@@ -9801,6 +9939,90 @@ include "%L"
 <Multi_key> <C> <D> <n> <g> : "𐑍" U1044D   # DESERET SMALL LETTER ENG
 <Multi_key> <C> <D> <o> <y> : "𐑎" U1044E   # DESERET SMALL LETTER OI
 <Multi_key> <C> <D> <y> <o> <o> : "𐑏" U1044F   # DESERET SMALL LETTER EW
+
+# (Du/DU = Sloan-Duployan) - based on 1934 edition
+
+# TODO: check that this is correct, especially forms with combining diacritics
+# and add affixes and layout characters
+
+# consonants
+
+<Multi_key> <C> <D> <u> <b> : "𛰇"  U1BC07  # DUPLOYAN LETTER B
+<Multi_key> <C> <D> <u> <d> : "𛰈"  U1BC08  # DUPLOYAN LETTER D
+<Multi_key> <C> <D> <u> <f> : "𛰄"  U1BC04  # DUPLOYAN LETTER F
+<Multi_key> <C> <D> <u> <g> : "𛰊"  U1BC0A  # DUPLOYAN LETTER G
+<Multi_key> <C> <D> <u> <h> : "𛰀"  U1BC00  # DUPLOYAN LETTER H
+<Multi_key> <C> <D> <U> <j> : "𛰏"  U1BC0F  # DUPLOYAN LETTER K M
+<Multi_key> <C> <D> <u> <k> : "𛰅"  U1BC05  # DUPLOYAN LETTER K
+<Multi_key> <C> <D> <u> <l> : "𛰆"  U1BC06  # DUPLOYAN LETTER L
+<Multi_key> <C> <D> <u> <m> : "𛰙"  U1BC19  # DUPLOYAN LETTER M
+<Multi_key> <C> <D> <u> <n> : "𛰚"  U1BC1A  # DUPLOYAN LETTER N
+<Multi_key> <C> <D> <u> <p> : "𛰂"  U1BC02  # DUPLOYAN LETTER P
+<Multi_key> <C> <D> <u> <r> : "𛰋"  U1BC0B  # DUPLOYAN LETTER R
+<Multi_key> <C> <D> <u> <s> : "𛰜"  U1BC1C  # DUPLOYAN LETTER S
+<Multi_key> <C> <D> <u> <t> : "𛰃"  U1BC03  # DUPLOYAN LETTER T
+<Multi_key> <C> <D> <u> <v> : "𛰉"  U1BC09  # DUPLOYAN LETTER V
+<Multi_key> <C> <D> <u> <w> : "𛰸"  U1BC38  # DUPLOYAN LETTER W
+<Multi_key> <C> <D> <u> <y> : "𛰺"  U1BC3A  # DUPLOYAN LETTER W R
+<Multi_key> <C> <D> <u> <z> : "𛰥"  U1BC25  # DUPLOYAN LETTER S WITH DOT
+
+<Multi_key> <C> <D> <U> <c> <h> : "𛰩"  U1BC29  # DUPLOYAN LETTER J S
+<Multi_key> <C> <D> <U> <d> <h> : "𛰒"  U1BC12  # DUPLOYAN LETTER SLOAN DH
+<Multi_key> <C> <D> <U> <d> <s> : "𛱀"  U1BC40  # DUPLOYAN LETTER S K R
+<Multi_key> <C> <D> <U> <k> <h> : "𛰯"  U1BC2F  # DUPLOYAN LETTER J S WITH DOT
+<Multi_key> <C> <D> <U> <k> <w> : "𛰴"  U1BC34  # DUPLOYAN LETTER S P
+<Multi_key> <C> <D> <U> <m> <m> : "𛰧"  U1BC27  # DUPLOYAN LETTER M S
+<Multi_key> <C> <D> <U> <n> <g> : "𛰨"  U1BC28  # DUPLOYAN LETTER N S
+<Multi_key> <C> <D> <U> <s> <h> : "𛰛"  U1BC1B  # DUPLOYAN LETTER J
+<Multi_key> <C> <D> <U> <s> <k> <w> : "𛰵"  U1BC35  # DUPLOYAN LETTER S P R
+<Multi_key> <C> <D> <U> <s> <l> : "𛰼"  U1BC3C  # DUPLOYAN LETTER S M
+<Multi_key> <C> <D> <U> <s> <m> : "𛰲"  U1BC32  # DUPLOYAN LETTER S T
+<Multi_key> <C> <D> <U> <s> <n> : "𛰳"  U1BC33  # DUPLOYAN LETTER S T R
+<Multi_key> <C> <D> <U> <s> <p> : "𛰻"  U1BC3B  # DUPLOYAN LETTER S N
+<Multi_key> <C> <D> <U> <s> <s> <space> : "𛰪"  U1BC2A  # DUPLOYAN LETTER S S
+<Multi_key> <C> <D> <U> <s> <s> <t> : "𛰷"  U1BC37  # DUPLOYAN LETTER T R S
+<Multi_key> <C> <D> <U> <s> <t> : "𛰶"  U1BC36  # DUPLOYAN LETTER T S
+<Multi_key> <C> <D> <U> <s> <z> : "𛰪̇"  U1BC2A U0307  # DUPLOYAN LETTER S S COMBINING DOT ABOVE
+<Multi_key> <C> <D> <U> <t> <h> : "𛰑"  U1BC11  # DUPLOYAN LETTER TH
+<Multi_key> <C> <D> <U> <t> <s> : "𛰿"  U1BC3F  # DUPLOYAN LETTER S K
+<Multi_key> <C> <D> <U> <v> <v> : "𛰎"  U1BC0E  # DUPLOYAN LETTER F N
+<Multi_key> <C> <D> <U> <w> <h> : "𛰹"  U1BC39  # DUPLOYAN LETTER WH
+<Multi_key> <C> <D> <U> <z> <h> : "𛰣"  U1BC23  # DUPLOYAN LETTER J WITH DOT
+
+<Multi_key> <C> <D> <U> <b> <b> : "𛰌"  U1BC0C  # DUPLOYAN LETTER P N
+<Multi_key> <C> <D> <U> <d> <d> : "𛰍"  U1BC0D  # DUPLOYAN LETTER D S
+<Multi_key> <C> <D> <U> <g> <g> : "𛰏"  U1BC0F  # DUPLOYAN LETTER K M
+<Multi_key> <C> <D> <U> <v> <v> : "𛰎"  U1BC0E  # DUPLOYAN LETTER F N
+<Multi_key> <C> <D> <U> <r> <r> : "𛰐"  U1BC10  # DUPLOYAN LETTER R S
+
+# vowels
+
+<Multi_key> <C> <D> <u> <a> : "𛱁"  U1BC41  # DUPLOYAN LETTER A
+<Multi_key> <C> <D> <u> <e> : "𛱌"  U1BC4C  # DUPLOYAN LETTER SLOAN EH
+<Multi_key> <C> <D> <u> <i> : "𛱇"  U1BC47  # DUPLOYAN LETTER E
+<Multi_key> <C> <D> <u> <o> : "𛱄̇"  U1BC44 U0307  # DUPLOYAN LETTER O COMBINING DOT ABOVE
+<Multi_key> <C> <D> <u> <u> : "𛱄̱"  U1BC44 U0331  # DUPLOYAN LETTER O COMBINING MACRON BELOW
+
+<Multi_key> <C> <D> <U> <a> <colon> : "𛱁̇"  U1BC41 U0307  # DUPLOYAN LETTER A COMBINING DOT ABOVE
+<Multi_key> <C> <D> <U> <a> <w> : "𛱂"  U1BC42  # DUPLOYAN LETTER SLOAN OW
+<Multi_key> <C> <D> <U> <e> <y> : "𛱍"  U1BC4D  # DUPLOYAN LETTER ROMANIAN I
+<Multi_key> <C> <D> <U> <i> <colon> : "𛱎"  U1BC4E  # DUPLOYAN LETTER SLOAN EE
+<Multi_key> <C> <D> <U> <o> <colon> : "𛱄"  U1BC44  # DUPLOYAN LETTER O
+<Multi_key> <C> <D> <U> <o> <o> <colon> : "𛱙"  U1BC59  # DUPLOYAN LETTER OOH
+<Multi_key> <C> <D> <U> <o> <w> : "𛱄̣"  U1BC44 U0323  # DUPLOYAN LETTER O COMBINING DOT BELOW
+<Multi_key> <C> <D> <U> <y> <u> : "𛱘"  U1BC58  # DUPLOYAN LETTER SLOAN U
+
+<Multi_key> <C> <D> <U> <e> <n> : "𛱧"  U1BC67  # DUPLOYAN LETTER SLOAN EN
+<Multi_key> <C> <D> <U> <a> <n> : "𛱨"  U1BC68  # DUPLOYAN LETTER SLOAN AN
+<Multi_key> <C> <D> <U> <i> <n> : "𛱡"  U1BC61  # DUPLOYAN LETTER NASAL U
+<Multi_key> <C> <D> <U> <o> <n> : "𛱩"  U1BC69  # DUPLOYAN LETTER SLOAN ON
+<Multi_key> <C> <D> <U> <u> <n> : "𛱤"  U1BC64  # DUPLOYAN LETTER NASAL A
+
+# r-form selector
+
+<Multi_key> <C> <D> <U> <r> <Return> : "𛲝"  U1BC9D  # DUPLOYAN THICK LETTER SELECTOR
+
+# TODO: affixes
 
 # (h = Cherokee) (not the best abbreviation, but think Ch = Cherokee)
 
@@ -9834,7 +10056,7 @@ include "%L"
 <Multi_key> <C> <h> <M> <I> : "Ꮋ" U13BB   # CHEROKEE LETTER MI
 <Multi_key> <C> <h> <M> <O> : "Ꮌ" U13BC   # CHEROKEE LETTER MO
 <Multi_key> <C> <h> <M> <U> : "Ꮍ" U13BD   # CHEROKEE LETTER MU
-<Multi_key> <C> <h> <N> <A> <Return> : "Ꮎ" U13BE   # CHEROKEE LETTER NA
+<Multi_key> <C> <h> <N> <A> <space> : "Ꮎ" U13BE   # CHEROKEE LETTER NA
 <Multi_key> <C> <h> <H> <N> <A> : "Ꮏ" U13BF   # CHEROKEE LETTER HNA
 <Multi_key> <C> <h> <N> <A> <H> : "Ꮐ" U13C0   # CHEROKEE LETTER NAH
 <Multi_key> <C> <h> <N> <E> : "Ꮑ" U13C1   # CHEROKEE LETTER NE
@@ -9849,7 +10071,7 @@ include "%L"
 <Multi_key> <C> <h> <Q> <U> <U> : "Ꮚ" U13CA   # CHEROKEE LETTER QUU
 <Multi_key> <C> <h> <Q> <U> <V> : "Ꮛ" U13CB   # CHEROKEE LETTER QUV
 <Multi_key> <C> <h> <S> <A> : "Ꮜ" U13CC   # CHEROKEE LETTER SA
-<Multi_key> <C> <h> <S> <Return> : "Ꮝ" U13CD   # CHEROKEE LETTER S
+<Multi_key> <C> <h> <S> <space> : "Ꮝ" U13CD   # CHEROKEE LETTER S
 <Multi_key> <C> <h> <S> <E> : "Ꮞ" U13CE   # CHEROKEE LETTER SE
 <Multi_key> <C> <h> <S> <I> : "Ꮟ" U13CF   # CHEROKEE LETTER SI
 <Multi_key> <C> <h> <S> <O> : "Ꮠ" U13D0   # CHEROKEE LETTER SO
@@ -9927,7 +10149,7 @@ include "%L"
 <Multi_key> <C> <h> <m> <i> : "ꮋ" UAB8B   # CHEROKEE SMALL LETTER MI
 <Multi_key> <C> <h> <m> <o> : "ꮌ" UAB8C   # CHEROKEE SMALL LETTER MO
 <Multi_key> <C> <h> <m> <u> : "ꮍ" UAB8D   # CHEROKEE SMALL LETTER MU
-<Multi_key> <C> <h> <n> <a> <Return> : "ꮎ" UAB8E   # CHEROKEE SMALL LETTER NA
+<Multi_key> <C> <h> <n> <a> <space> : "ꮎ" UAB8E   # CHEROKEE SMALL LETTER NA
 <Multi_key> <C> <h> <h> <n> <a> : "ꮏ" UAB8F   # CHEROKEE SMALL LETTER HNA
 <Multi_key> <C> <h> <n> <a> <h> : "ꮐ" UAB90   # CHEROKEE SMALL LETTER NAH
 <Multi_key> <C> <h> <n> <e> : "ꮑ" UAB91   # CHEROKEE SMALL LETTER NE
@@ -9942,7 +10164,7 @@ include "%L"
 <Multi_key> <C> <h> <q> <u> <u> : "ꮚ" UAB9A   # CHEROKEE SMALL LETTER QUU
 <Multi_key> <C> <h> <q> <u> <v> : "ꮛ" UAB9B   # CHEROKEE SMALL LETTER QUV
 <Multi_key> <C> <h> <s> <a> : "ꮜ" UAB9C   # CHEROKEE SMALL LETTER SA
-<Multi_key> <C> <h> <s> <Return> : "ꮝ" UAB9D   # CHEROKEE SMALL LETTER S
+<Multi_key> <C> <h> <s> <space> : "ꮝ" UAB9D   # CHEROKEE SMALL LETTER S
 <Multi_key> <C> <h> <s> <e> : "ꮞ" UAB9E   # CHEROKEE SMALL LETTER SE
 <Multi_key> <C> <h> <s> <i> : "ꮟ" UAB9F   # CHEROKEE SMALL LETTER SI
 <Multi_key> <C> <h> <s> <o> : "ꮠ" UABA0   # CHEROKEE SMALL LETTER SO
@@ -10825,9 +11047,9 @@ include "%L"
 <Multi_key> <C> <s> <i> : "𐑦" U10466   # SHAVIAN LETTER IF
 <Multi_key> <C> <s> <e> : "𐑧" U10467   # SHAVIAN LETTER EGG
 <Multi_key> <C> <s> <a> : "𐑨" U10468   # SHAVIAN LETTER ASH
-<Multi_key> <C> <S> <u> <h> <Return> : "𐑩" U10469   # SHAVIAN LETTER ADO
+<Multi_key> <C> <S> <u> <h> <space> : "𐑩" U10469   # SHAVIAN LETTER ADO
 <Multi_key> <C> <s> <o> : "𐑪" U1046A   # SHAVIAN LETTER ON
-<Multi_key> <C> <S> <o> <o> <Return> : "𐑫" U1046B   # SHAVIAN LETTER WOOL
+<Multi_key> <C> <S> <o> <o> <space> : "𐑫" U1046B   # SHAVIAN LETTER WOOL
 <Multi_key> <C> <S> <a> <w> : "𐑬" U1046C   # SHAVIAN LETTER OUT
 <Multi_key> <C> <S> <a> <colon> : "𐑭" U1046D   # SHAVIAN LETTER AH
 <Multi_key> <C> <S> <i> <colon> : "𐑰" U10470   # SHAVIAN LETTER EAT
@@ -11632,7 +11854,7 @@ include "%L"
 <Multi_key> <g> <G> <j> : "𐌾" U1033E   # GOTHIC LETTER JER
 <Multi_key> <g> <G> <u> : "𐌿" U1033F   # GOTHIC LETTER URUS
 <Multi_key> <g> <G> <p> : "𐍀" U10340   # GOTHIC LETTER PAIRTHRA
-<Multi_key> <g> <G> <9> <0> <Return> : "𐍁" U10341   # GOTHIC LETTER NINETY
+<Multi_key> <g> <G> <9> <0> <space> : "𐍁" U10341   # GOTHIC LETTER NINETY
 <Multi_key> <g> <G> <r> : "𐍂" U10342   # GOTHIC LETTER RAIDA
 <Multi_key> <g> <G> <s> : "𐍃" U10343   # GOTHIC LETTER SAUIL
 <Multi_key> <g> <G> <t> : "𐍄" U10344   # GOTHIC LETTER TEIWS
@@ -12025,7 +12247,7 @@ include "%L"
 <Multi_key> <G> <c> <g> : "გ" U10D2   # GEORGIAN LETTER GAN
 <Multi_key> <G> <c> <d> : "დ" U10D3   # GEORGIAN LETTER DON
 <Multi_key> <G> <c> <e> : "ე" U10D4   # GEORGIAN LETTER EN
-<Multi_key> <G> <c> <v> <Return> : "ვ" U10D5   # GEORGIAN LETTER VIN
+<Multi_key> <G> <c> <v> <space> : "ვ" U10D5   # GEORGIAN LETTER VIN
 <Multi_key> <G> <c> <z> : "ზ" U10D6   # GEORGIAN LETTER ZEN
 <Multi_key> <G> <c> <apostrophe> <t> : "თ" U10D7   # GEORGIAN LETTER TAN (t')
 <Multi_key> <G> <c> <i> : "ი" U10D8   # GEORGIAN LETTER IN
@@ -12146,7 +12368,7 @@ include "%L"
 <Multi_key> <G> <k> <g> : "ⴂ" U2D02   # GEORGIAN SMALL LETTER GAN
 <Multi_key> <G> <k> <d> : "ⴃ" U2D03   # GEORGIAN SMALL LETTER DON
 <Multi_key> <G> <k> <e> : "ⴄ" U2D04   # GEORGIAN SMALL LETTER EN
-<Multi_key> <G> <k> <v> <Return> : "ⴅ" U2D05   # GEORGIAN SMALL LETTER VIN
+<Multi_key> <G> <k> <v> <space> : "ⴅ" U2D05   # GEORGIAN SMALL LETTER VIN
 <Multi_key> <G> <k> <z> : "ⴆ" U2D06   # GEORGIAN SMALL LETTER ZEN
 <Multi_key> <G> <k> <apostrophe> <t> : "ⴇ" U2D07   # GEORGIAN SMALL LETTER TAN (t')
 <Multi_key> <G> <k> <i> : "ⴈ" U2D08   # GEORGIAN SMALL LETTER IN
@@ -14124,9 +14346,9 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <x> <M> <N> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
 <Multi_key> <o> <i> <x> <M> <apostrophe> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
 
-<Multi_key> <o> <i> <numbersign> <1> <Return> : "𐌠" U10320    # OLD ITALIC NUMERAL ONE
-<Multi_key> <o> <i> <numbersign> <5> <Return> : "𐌡" U10321    # OLD ITALIC NUMERAL FIVE
-<Multi_key> <o> <i> <numbersign> <1> <0> <Return> : "𐌢" U10322    # OLD ITALIC NUMERAL TEN
+<Multi_key> <o> <i> <numbersign> <1> <space> : "𐌠" U10320    # OLD ITALIC NUMERAL ONE
+<Multi_key> <o> <i> <numbersign> <5> <space> : "𐌡" U10321    # OLD ITALIC NUMERAL FIVE
+<Multi_key> <o> <i> <numbersign> <1> <0> <space> : "𐌢" U10322    # OLD ITALIC NUMERAL TEN
 <Multi_key> <o> <i> <numbersign> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
 <Multi_key> <o> <i> <numbersign> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
 
@@ -14200,7 +14422,7 @@ include "HangulSyllables"
 #  N = Norse (= Short Twig Younger Futhark)
 #  D = Danish (= Long Branch Younger Futhark)
 #  M = Medieval
-#  Return = majority form
+#  ␣ = majority form
 
 <Multi_key> <o> <i> <r> <a> <D> : "ᛅ" U16C5   # RUNIC LETTER LONG-BRANCH-AR AE
 <Multi_key> <o> <i> <r> <a> <E> : "ᚪ" U16AA   # RUNIC LETTER AC A
@@ -14208,7 +14430,7 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <r> <a> <N> : "ᛆ" U16C6   # RUNIC LETTER SHORT-TWIG-AR A
 <Multi_key> <o> <i> <r> <a> <e> : "ᚫ" U16AB   # RUNIC LETTER AESC
 <Multi_key> <o> <i> <r> <b> <N> : "ᛓ" U16D3   # RUNIC LETTER SHORT-TWIG-BJARKAN B
-<Multi_key> <o> <i> <r> <b> <Return> : "ᛒ" U16D2   # RUNIC LETTER BERKANAN BEORC BJARKAN B
+<Multi_key> <o> <i> <r> <b> <space> : "ᛒ" U16D2   # RUNIC LETTER BERKANAN BEORC BJARKAN B
 <Multi_key> <o> <i> <r> <c> <E> : "ᚳ" U16B3   # RUNIC LETTER CEN
 <Multi_key> <o> <i> <r> <c> <M> : "ᛍ" U16CD   # RUNIC LETTER C
 <Multi_key> <o> <i> <r> <c> <k> : "ᛤ" U16E4   # RUNIC LETTER CEALC
@@ -14241,10 +14463,10 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <r> <m> <G> : "ᛗ" U16D7   # RUNIC LETTER MANNAZ MAN M
 <Multi_key> <o> <i> <r> <m> <N> : "ᛙ" U16D9   # RUNIC LETTER SHORT-TWIG-MADR M
 <Multi_key> <o> <i> <r> <n> <N> : "ᚿ" U16BF   # RUNIC LETTER SHORT-TWIG-NAUD N
-<Multi_key> <o> <i> <r> <n> <Return> : "ᚾ" U16BE   # RUNIC LETTER NAUDIZ NYD NAUD N
+<Multi_key> <o> <i> <r> <n> <space> : "ᚾ" U16BE   # RUNIC LETTER NAUDIZ NYD NAUD N
 <Multi_key> <o> <i> <r> <n> <g> <0> : "ᛜ" U16DC   # RUNIC LETTER INGWAZ
 <Multi_key> <o> <i> <r> <n> <g> <M> : "ᚶ" U16B6   # RUNIC LETTER ENG
-<Multi_key> <o> <i> <r> <n> <g> <Return> : "ᛝ" U16DD   # RUNIC LETTER ING
+<Multi_key> <o> <i> <r> <n> <g> <space> : "ᛝ" U16DD   # RUNIC LETTER ING
 <Multi_key> <o> <i> <r> <o> <D> : "ᚬ" U16AC   # RUNIC LETTER LONG-BRANCH-OSS O
 <Multi_key> <o> <i> <r> <o> <E> : "ᚩ" U16A9   # RUNIC LETTER OS O
 <Multi_key> <o> <i> <r> <o> <G> : "ᛟ" U16DF   # RUNIC LETTER OTHALAN ETHEL O
@@ -14266,7 +14488,7 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <r> <s> <N> : "ᛌ" U16CC   # RUNIC LETTER SHORT-TWIG-SOL S
 <Multi_key> <o> <i> <r> <s> <t> : "ᛥ" U16E5   # RUNIC LETTER STAN
 <Multi_key> <o> <i> <r> <t> <N> : "ᛐ" U16D0   # RUNIC LETTER SHORT-TWIG-TYR T
-<Multi_key> <o> <i> <r> <t> <Return> : "ᛏ" U16CF   # RUNIC LETTER TIWAZ TIR TYR T
+<Multi_key> <o> <i> <r> <t> <space> : "ᛏ" U16CF   # RUNIC LETTER TIWAZ TIR TYR T
 <Multi_key> <o> <i> <r> <t> <h> : "ᚦ" U16A6   # RUNIC LETTER THURISAZ THURS THORN
 <Multi_key> <o> <i> <r> <u> : "ᚢ" U16A2   # RUNIC LETTER URUZ UR U
 <Multi_key> <o> <i> <r> <v> : "ᚡ" U16A1   # RUNIC LETTER V
@@ -18100,7 +18322,7 @@ include "HangulSyllables"
 <Multi_key> <Z> <n> <u> : "ߎ" U07CE   # NKO LETTER U
 <Multi_key> <Z> <n> <o> <o> : "ߏ" U07CF   # NKO LETTER OO
 <Multi_key> <Z> <n> <o> <space> : "ߐ" U07D0   # NKO LETTER O
-<Multi_key> <Z> <n> <0> <Return> : "ߑ" U07D1   # NKO LETTER DAGBASINNA
+<Multi_key> <Z> <n> <0> : "ߑ" U07D1   # NKO LETTER DAGBASINNA
 
 <Multi_key> <Z> <n> <n> <g> : "ߒ" U07D2   # NKO LETTER N
 <Multi_key> <Z> <n> <b> : "ߓ" U07D3   # NKO LETTER BA
@@ -20894,6 +21116,8 @@ include "HangulSyllables"
 <Multi_key> <exclam> <colon> <parenright>     : "☻"  U263B   # BLACK SMILING FACE
 <Multi_key> <exclam> <colon> <bar>            : "𜱯"  U1CC6F  # BLACK NEUTRAL FACE
 
+<Multi_key> <f> <3>                           : "🯁🯂🯃"  U1FBC1 U1FBC2 U1FBC3  # WHITE RIGHT POINTING INDEX (THREE CHARACTERS)
+
 <Multi_key> <b> <o> <m> <less>                : "𜱠"  U1CC60  # LEFT-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
 <Multi_key> <b> <o> <m> <asciicircum>         : "𜱡"  U1CC61  # UP-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
 <Multi_key> <b> <o> <m> <greater>             : "𜱢"  U1CC62  # RIGHT-POINTING ATOMIC BOMB (conflicts with ŏ, use uo)
@@ -20906,7 +21130,12 @@ include "HangulSyllables"
 <Multi_key> <c> <a> <r> <v>                   : "𜲜"  U1CC9C  # VERTICAL RACING CAR (conflicts with ǎ, use va)
 <Multi_key> <c> <r> <a> <greater>             : "𜱐"  U1CC50  # ALIEN CRAB STEPPING RIGHT (conflicts with ř, use vr)
 <Multi_key> <c> <r> <a> <less>                : "𜱑"  U1CC51  # ALIEN CRAB STEPPING LEFT (conflicts with ř, use vr)
+<Multi_key> <e> <n> <e> <r> <g> <y> <less>    : "𜱸"  U1CC78  # LEFT-POINTING ENERGY WAVE
+<Multi_key> <e> <n> <e> <r> <g> <y> <asciicircum> : "𜱹"  U1CC79  # UP-POINTING ENERGY WAVE
+<Multi_key> <e> <n> <e> <r> <g> <y> <greater> : "𜱺"  U1CC7A  # RIGHT-POINTING ENERGY WAVE
+<Multi_key> <e> <n> <e> <r> <g> <y> <v>       : "𜱻"  U1CC7B  # DOWN-POINTING ENERGY WAVE
 <Multi_key> <f> <b> <i> <r> <d>               : "𜲖"  U1CC96  # FLAPPING BIRD
+<Multi_key> <f> <o> <l> <d> <e> <2>           : "🮹🮺"  U1FBB9 U1FBBA  # FOLDER (TWO CHARACTERS)
 <Multi_key> <f> <r> <o> <asciicircum>         : "𜷻"  U1CDFB  # UP-POINTING FROG
 <Multi_key> <f> <r> <o> <v>                   : "𜷼"  U1CDFC  # DOWN-POINTING FROG
 <Multi_key> <less> <f> <i> <s> <h>            : "𜲒"  U1CC92  # LEFT-FACING FISH (not ideal but fi=ﬁ is taken)
@@ -20920,10 +21149,10 @@ include "HangulSyllables"
 <Multi_key> <l> <a> <u> <n> <c> <asciicircum> : "𜱗"  U1CC57  # UP-POINTING ROCKET SHIP
 <Multi_key> <l> <a> <u> <n> <c> <greater>     : "𜱘"  U1CC58  # RIGHT-POINTING ROCKET SHIP
 <Multi_key> <l> <a> <u> <n> <c> <v>           : "𜱙"  U1CC59  # DOWN-POINTING ROCKET SHIP
-<Multi_key> <m> <e> <g> <a> <n>               : "🯉"  U1FBC9  # STICK FIGURE WITH DRESS (MEGAN)
+<Multi_key> <m> <e> <g> <a> <n>               : "🯉"  U1FBC9  # STICK FIGURE WITH DRESS (MEGAN) (alternatively stickf)
 <Multi_key> <m> <l> <a> <n> <d>               : "𜷵"  U1CDF5  # MOON LANDER
-<Multi_key> <o> <f> <i> <s> <h> <less>        : "𜲔"  U1CC94  # LEFT-FACING FISH WITH OPEN MOUTH
-<Multi_key> <o> <f> <i> <s> <h> <greater>     : "𜲕"  U1CC95  # RIGHT-FACING FISH WITH OPEN MOUTH
+<Multi_key> <o> <f> <i> <s> <h> <less>        : "𜲔"  U1CC94  # LEFT-FACING FISH WITH OPEN MOUTH (not ideal but fi=ﬁ is taken)
+<Multi_key> <o> <f> <i> <s> <h> <greater>     : "𜲕"  U1CC95  # RIGHT-FACING FISH WITH OPEN MOUTH (not ideal but fi=ﬁ is taken)
 <Multi_key> <p> <a> <c> <less>                : "𜱫"  U1CC6B  # BLACK LARGE CIRCLE MINUS LEFT QUARTER SECTION (PACMAN)
 <Multi_key> <p> <a> <c> <asciicircum>         : "𜱬"  U1CC6C  # BLACK LARGE CIRCLE MINUS UPPER QUARTER SECTION (PACMAN)
 <Multi_key> <p> <a> <c> <greater>             : "𜱭"  U1CC6D  # BLACK LARGE CIRCLE MINUS RIGHT QUARTER SECTION (PACMAN)
@@ -20936,6 +21165,15 @@ include "HangulSyllables"
 <Multi_key> <r> <i> <f> <l> <e> <greater>     : "𜱧"  U1CC67  # RIGHT-POINTING RIFLE
 <Multi_key> <r> <i> <f> <l> <e> <v>           : "𜱨"  U1CC68  # DOWN-POINTING RIFLE
 <Multi_key> <r> <i> <f> <l> <e> <space>       : "🥆"  U1F946  # RIFLE
+<Multi_key> <r> <u> <2>                       : "🮲🮳"  U1FBB2 U1FBB3  # RUNNING MAN (TWO CHARACTERS)
+<Multi_key> <s> <n> <a> <k> <less> <c>        : "𜱴"  U1CC74  # LEFT-FACING SNAKE HEAD WITH CLOSED MOUTH
+<Multi_key> <s> <n> <a> <k> <asciicircum> <c> : "𜱵"  U1CC75  # UP-FACING SNAKE HEAD WITH CLOSED MOUTH
+<Multi_key> <s> <n> <a> <k> <greater> <c>     : "𜱶"  U1CC76  # RIGHT-FACING SNAKE HEAD WITH CLOSED MOUTH
+<Multi_key> <s> <n> <a> <k> <v> <c>           : "𜱷"  U1CC77  # DOWN-FACING SNAKE HEAD WITH CLOSED MOUTH
+<Multi_key> <s> <n> <a> <k> <less> <o>        : "𜱰"  U1CC70  # LEFT-FACING SNAKE HEAD WITH OPEN MOUTH
+<Multi_key> <s> <n> <a> <k> <asciicircum> <o> : "𜱱"  U1CC71  # UP-FACING SNAKE HEAD WITH OPEN MOUTH
+<Multi_key> <s> <n> <a> <k> <greater> <o>     : "𜱲"  U1CC72  # RIGHT-FACING SNAKE HEAD WITH OPEN MOUTH
+<Multi_key> <s> <n> <a> <k> <v> <o>           : "𜱳"  U1CC73  # DOWN-FACING SNAKE HEAD WITH OPEN MOUTH
 <Multi_key> <s> <t> <i> <c> <k> <m>           : "🯅"  U1FBC5  # STICK FIGURE
 <Multi_key> <s> <t> <i> <c> <k> <asciicircum> : "🯆"  U1FBC6  # STICK FIGURE WITH ARMS RAISED
 <Multi_key> <s> <t> <i> <c> <k> <less>        : "🯇"  U1FBC7  # STICK FIGURE LEANING LEFT
@@ -20948,7 +21186,8 @@ include "HangulSyllables"
 <Multi_key> <t> <a> <n> <k> <greater>         : "𜲟"  U1CC9F  # RIGHT-POINTING TANK
 <Multi_key> <U> <F> <v>                       : "𜱊"  U1CC4A  # FLYING SAUCER WITH BEAMS (UFO)
 <Multi_key> <U> <F> <asciicircum>             : "𜱋"  U1CC4B  # FLYING SAUCER WITHOUT BEAMS (UFO)
-<Multi_key> <x> <k> <c> <d>                   : "🯅"  U1FBC5  # STICK FIGURE (XKCD)
+<Multi_key> <U> <F> <2>                       : "𜲤𜲥"  U1CCA4 U1CCA5  # FLYING SAUCER (TWO CHARACTERS)
+<Multi_key> <x> <k> <c> <d>                   : "🯅"  U1FBC5  # STICK FIGURE (XKCD) (alternatively stickm)
 
 # Split glyphs: @^ for top half, @_ for bottom half
 
@@ -21482,8 +21721,17 @@ include "HangulSyllables"
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <slash>      : "▨" U25A8   # SQUARE WITH UPPER RIGHT TO LOWER LEFT FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <X>          : "▩" U25A9   # SQUARE WITH DIAGONAL CROSSHATCH FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Return>      : "⃞" U20DE   # COMBINING ENCLOSING SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <less> <greater> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE (conflicts)
 
-<Multi_key> <bracketleft> <less> <greater> <bracketright> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE
+<Multi_key> <exclam> <bracketleft> <bracketright> <V>             : "🮱"  U1FBB1  # INVERSE CHECK MARK
+<Multi_key> <exclam> <bracketleft> <bracketright> <X>             : "🮽"  U1FBBD  # NEGATIVE DIAGONAL CROSS
+<Multi_key> <exclam> <bracketleft> <bracketright> <slash>         : "🮾"  U1FBBE  # NEGATIVE DIAGONAL MIDDLE RIGHT TO LOWER CENTRE
+<Multi_key> <exclam> <bracketleft> <bracketright> <Return>        : "🮴"  U1FBB4  # INVERSE DOWNWARDS ARROW WITH TIP LEFTWARDS
+<Multi_key> <exclam> <bracketleft> <bracketright> <less> <greater> : "🮿"  U1FBBF  # NEGATIVE DIAGONAL DIAMOND
+<Multi_key> <exclam> <bracketleft> <bracketright> <less> <minus>  : "🢴"  U1F8B4  # NEGATIVE SQUARED LEFTWARDS ARROW
+<Multi_key> <exclam> <bracketleft> <bracketright> <asciicircum> <bar> : "🢵"  U1F8B5  # NEGATIVE SQUARED UPWARDS ARROW
+<Multi_key> <exclam> <bracketleft> <bracketright> <minus> <greater> : "🢶"  U1F8B6  # NEGATIVE SQUARED RIGHTWARDS ARROW
+<Multi_key> <exclam> <bracketleft> <bracketright> <bar> <v>       : "🢷"  U1F8B7  # NEGATIVE SQUARED DOWNWARDS ARROW
 
 # Circles ()
 
@@ -21510,10 +21758,20 @@ include "HangulSyllables"
 <Multi_key> <parenleft> <parenright> <U> <R> <Q>   : "◷" U25F7    # WHITE CIRCLE WITH UPPER RIGHT QUADRANT
 <Multi_key> <parenleft> <parenright> <U> <R> <1>   : "◔" U25D4    # CIRCLE WITH UPPER RIGHT QUADRANT BLACK
 <Multi_key> <parenleft> <parenright> <U> <L> <0>   : "◕" U25D5    # CIRCLE WITH ALL BUT UPPER LEFT QUADRANT BLACK
-<Multi_key> <parenleft> <parenright> <exclam> <less>        : "𜱫"  U1CC6B  # BLACK LARGE CIRCLE MINUS LEFT QUARTER SECTION
-<Multi_key> <parenleft> <parenright> <exclam> <asciicircum> : "𜱬"  U1CC6C  # BLACK LARGE CIRCLE MINUS UPPER QUARTER SECTION
-<Multi_key> <parenleft> <parenright> <exclam> <greater>     : "𜱭"  U1CC6D  # BLACK LARGE CIRCLE MINUS RIGHT QUARTER SECTION
-<Multi_key> <parenleft> <parenright> <exclam> <v>           : "𜱮"  U1CC6E  # BLACK LARGE CIRCLE MINUS LOWER QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <less>           : "𜱫"  U1CC6B  # BLACK LARGE CIRCLE MINUS LEFT QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <asciicircum>    : "𜱬"  U1CC6C  # BLACK LARGE CIRCLE MINUS UPPER QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <greater>        : "𜱭"  U1CC6D  # BLACK LARGE CIRCLE MINUS RIGHT QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <exclam> <v>              : "𜱮"  U1CC6E  # BLACK LARGE CIRCLE MINUS LOWER QUARTER SECTION
+<Multi_key> <parenleft> <parenright> <space> <asciicircum>     : "🯠"  U1FBE0  # TOP JUSTIFIED LOWER HALF WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <greater>         : "🯡"  U1FBE1  # RIGHT JUSTIFIED LEFT HALF WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <v>               : "🯢"  U1FBE2  # BOTTOM JUSTIFIED UPPER HALF WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <less>            : "🯣"  U1FBE3  # LEFT JUSTIFIED RIGHT HALF WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <1> <asciicircum> : "🯨"  U1FBE8  # TOP JUSTIFIED LOWER HALF BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <1> <greater>     : "🯩"  U1FBE9  # RIGHT JUSTIFIED LEFT HALF BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <1> <v>           : "🯪"  U1FBEA  # BOTTOM JUSTIFIED UPPER HALF BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <1> <less>        : "🯫"  U1FBEB  # LEFT JUSTIFIED RIGHT HALF BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <2> <asciicircum> : "🯬🯯"  U1FBEC U1FBEF  # TOP LEFT JUSTIFIED LOWER RIGHT QUARTER BLACK CIRCLE
+<Multi_key> <parenleft> <parenright> <space> <2> <v>           : "🯮🯭"  U1FBEE U1FBED  # BOTTOM LEFT JUSTIFIED UPPER RIGHT QUARTER BLACK CIRCLE
 <Multi_key> <parenleft> <parenright> <space> <period> <0> : "⚆" U2686  # WHITE CIRCLE WITH DOT RIGHT
 <Multi_key> <parenleft> <parenright> <space> <period> <1> : "⚈" U2688  # BLACK CIRCLE WITH WHITE DOT RIGHT
 <Multi_key> <parenleft> <parenright> <quotedbl> <0> : "⚇" U2687  # WHITE CIRCLE WITH TWO DOTS
@@ -21538,8 +21796,16 @@ include "HangulSyllables"
 <Multi_key> <parenleft> <parenright> <Return>      : "⃝" U20DD   # COMBINING ENCLOSING CIRCLE
 <Multi_key> <parenleft> <parenright> <backslash> <Return> : "⃠" U20E0   # COMBINING ENCLOSING CIRCLE BACKSLASH
 
+<Multi_key> <exclam> <parenleft> <parenright> <slash> <backslash> : "🟖" U1F7D6   # NEGATIVE CIRCLED TRIANGLE (alternatively !(/\))
+<Multi_key> <exclam> <parenleft> <parenright> <bracketleft> <bracketright> : "🟘" U1F7D8   # NEGATIVE CIRCLED SQUARE (alternatively !([]))
+<Multi_key> <exclam> <parenleft> <parenright> <less> <minus> : "⮈" U2B88   # LEFTWARDS BLACK CIRCLED WHITE ARROW (alternatively !(<-))
+<Multi_key> <exclam> <parenleft> <parenright> <asciicircum> <bar> : "⮉" U2B89   # UPWARDS BLACK CIRCLED WHITE ARROW (alternatively !(^|))
+<Multi_key> <exclam> <parenleft> <parenright> <minus> <greater> : "⮊" U2B8A   # RIGHTWARDS BLACK CIRCLED WHITE ARROW (alternatively !(->))
+<Multi_key> <exclam> <parenleft> <parenright> <v> <bar> : "⮋" U2B8B   # DOWNWARDS BLACK CIRCLED WHITE ARROW (alternatively !(|v))
+
 <Multi_key> <parenleft> <slash> <backslash> <parenright> : "🟕" U1F7D5   # CIRCLED TRIANGLE
 <Multi_key> <parenleft> <bracketleft> <bracketright> <parenright> : "🟗" U1F7D7   # CIRCLED SQUARE
+
 <Multi_key> <exclam> <parenleft> <slash> <backslash> <parenright> : "🟖" U1F7D6   # NEGATIVE CIRCLED TRIANGLE
 <Multi_key> <exclam> <parenleft> <bracketleft> <bracketright> <parenright> : "🟘" U1F7D8   # NEGATIVE CIRCLED SQUARE
 <Multi_key> <exclam> <parenleft> <less> <minus> <parenright> : "⮈" U2B88   # LEFTWARDS BLACK CIRCLED WHITE ARROW
@@ -21560,6 +21826,7 @@ include "HangulSyllables"
 
 <Multi_key> <parenleft> <space> <parenright> <0> : "⬭" U2B2D    # WHITE HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <1> : "⬬" U2B2C    # BLACK HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
+<Multi_key> <parenleft> <space> <parenright> <2> : "𜸋𜸌"  U1CE0B U1CE0C  # WHITE ELLIPSE (TWO CHARACTERS) (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <v> <0> : "⬯" U2B2F    # WHITE VERTICAL ELLIPSE (conflicts with ˘, use ␣()
 <Multi_key> <parenleft> <space> <parenright> <v> <1> : "⬮" U2B2E    # BLACK VERTICAL ELLIPSE (conflicts with ˘, use ␣()
 
@@ -22242,6 +22509,11 @@ include "HangulSyllables"
 <Multi_key> <bar> <b> <backslash> <less>    : "◣"  U25E3  # BLACK LOWER LEFT TRIANGLE
 <Multi_key> <bar> <b> <backslash> <greater> : "◥"  U25E5  # BLACK UPPER RIGHT TRIANGLE
 
+<Multi_key> <bar> <b> <slash> <numbersign> <greater>     : "🮜"  U1FB9C  # UPPER LEFT TRIANGULAR MEDIUM SHADE
+<Multi_key> <bar> <b> <slash> <numbersign> <less>        : "🮝"  U1FB9D  # UPPER RIGHT TRIANGULAR MEDIUM SHADE
+<Multi_key> <bar> <b> <backslash> <numbersign> <less>    : "🮞"  U1FB9E  # LOWER RIGHT TRIANGULAR MEDIUM SHADE
+<Multi_key> <bar> <b> <backslash> <numbersign> <greater> : "🮟"  U1FB9F  # LOWER LEFT TRIANGULAR MEDIUM SHADE
+
 <Multi_key> <bar> <b> <X> <less>        : "🭬"  U1FB6C  # LEFT TRIANGULAR ONE QUARTER BLOCK
 <Multi_key> <bar> <b> <X> <asciicircum> : "🭭"  U1FB6D  # UPPER TRIANGULAR ONE QUARTER BLOCK
 <Multi_key> <bar> <b> <X> <greater>     : "🭮"  U1FB6E  # RIGHT TRIANGULAR ONE QUARTER BLOCK
@@ -22760,6 +23032,47 @@ include "HangulSyllables"
 <Multi_key> <bar> <space> <6> <2> <3> <4> <5> <6>          : "𜺎"  U1CE8E  # SEPARATED BLOCK SEXTANT-23456
 <Multi_key> <bar> <space> <6> <1> <2> <3> <4> <5> <6>      : "𜺏"  U1CE8F  # SEPARATED BLOCK SEXTANT-123456
 
+# diamond cell diagonals: | + \ + diagonal list (1-4, left-to-right, top-to-bottom)
+
+<Multi_key> <bar> <backslash> <1> <space>         : "🮠"  U1FBA0  # BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT
+<Multi_key> <bar> <backslash> <2> <space>         : "🮡"  U1FBA1  # BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT
+<Multi_key> <bar> <backslash> <3> <space>         : "🮢"  U1FBA2  # BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO LOWER CENTRE
+<Multi_key> <bar> <backslash> <4>                 : "🮣"  U1FBA3  # BOX DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO LOWER CENTRE
+<Multi_key> <bar> <backslash> <1> <3> <space>     : "🮤"  U1FBA4  # BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT TO LOWER CENTRE
+<Multi_key> <bar> <backslash> <2> <4>             : "🮥"  U1FBA5  # BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT TO LOWER CENTRE
+<Multi_key> <bar> <backslash> <3> <4>             : "🮦"  U1FBA6  # BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO LOWER CENTRE TO MIDDLE RIGHT
+<Multi_key> <bar> <backslash> <1> <2> <space>     : "🮧"  U1FBA7  # BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO UPPER CENTRE TO MIDDLE RIGHT
+<Multi_key> <bar> <backslash> <1> <4>             : "🮨"  U1FBA8  # BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT AND MIDDLE RIGHT TO LOWER CENTRE
+<Multi_key> <bar> <backslash> <2> <3> <space>     : "🮩"  U1FBA9  # BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT AND MIDDLE LEFT TO LOWER CENTRE
+<Multi_key> <bar> <backslash> <2> <3> <4>         : "🮪"  U1FBAA  # BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE RIGHT TO LOWER CENTRE TO MIDDLE LEFT
+<Multi_key> <bar> <backslash> <1> <3> <4>         : "🮫"  U1FBAB  # BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO MIDDLE LEFT TO LOWER CENTRE TO MIDDLE RIGHT
+<Multi_key> <bar> <backslash> <1> <2> <4>         : "🮬"  U1FBAC  # BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO UPPER CENTRE TO MIDDLE RIGHT TO LOWER CENTRE
+<Multi_key> <bar> <backslash> <1> <2> <3> <space> : "🮭"  U1FBAD  # BOX DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO UPPER CENTRE TO MIDDLE LEFT TO LOWER CENTRE
+<Multi_key> <bar> <backslash> <1> <2> <3> <4>     : "🮮"  U1FBAE  # BOX DRAWINGS LIGHT DIAGONAL DIAMOND
+
+<Multi_key> <bar> <backslash> <X>                 : "╳"  U2573  # BOX DRAWINGS LIGHT DIAGONAL CROSS
+
+# other character cell diagonals: | + coordinate sequence (uml + lcr) from left-to-right, top-to-bottom
+
+<Multi_key> <bar> <backslash> <l> <l> <u> <r> : "╱"  U2571  # BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT
+<Multi_key> <bar> <backslash> <u> <l> <l> <r> : "╲"  U2572  # BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT
+<Multi_key> <bar> <backslash> <l> <l> <m> <r> : "🯐"  U1FBD0  # BOX DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO LOWER LEFT
+<Multi_key> <bar> <backslash> <m> <l> <u> <r> : "🯑"  U1FBD1  # BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO MIDDLE LEFT
+<Multi_key> <bar> <backslash> <u> <l> <m> <r> <space> : "🯒"  U1FBD2  # BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE RIGHT
+<Multi_key> <bar> <backslash> <m> <l> <l> <r> : "🯓"  U1FBD3  # BOX DRAWINGS LIGHT DIAGONAL MIDDLE LEFT TO LOWER RIGHT
+<Multi_key> <bar> <backslash> <u> <l> <l> <c> <space> : "🯔"  U1FBD4  # BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER CENTRE
+<Multi_key> <bar> <backslash> <u> <c> <l> <r> : "🯕"  U1FBD5  # BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO LOWER RIGHT
+<Multi_key> <bar> <backslash> <l> <c> <u> <r> : "🯖"  U1FBD6  # BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER CENTRE
+<Multi_key> <bar> <backslash> <l> <l> <u> <c> <space> : "🯗"  U1FBD7  # BOX DRAWINGS LIGHT DIAGONAL UPPER CENTRE TO LOWER LEFT
+<Multi_key> <bar> <backslash> <u> <l> <m> <c> <u> <r> : "🯘"  U1FBD8  # BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE CENTRE TO UPPER RIGHT
+<Multi_key> <bar> <backslash> <u> <r> <m> <c> <l> <r> : "🯙"  U1FBD9  # BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO MIDDLE CENTRE TO LOWER RIGHT
+<Multi_key> <bar> <backslash> <l> <l> <m> <c> <l> <r> : "🯚"  U1FBDA  # BOX DRAWINGS LIGHT DIAGONAL LOWER LEFT TO MIDDLE CENTRE TO LOWER RIGHT
+<Multi_key> <bar> <backslash> <u> <l> <m> <c> <l> <l> : "🯛"  U1FBDB  # BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE CENTRE TO LOWER LEFT
+<Multi_key> <bar> <backslash> <u> <l> <l> <c> <u> <r> : "🯜"  U1FBDC  # BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER CENTRE TO UPPER RIGHT
+<Multi_key> <bar> <backslash> <u> <r> <m> <l> <l> <r> : "🯝"  U1FBDD  # BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO MIDDLE LEFT TO LOWER RIGHT
+<Multi_key> <bar> <backslash> <l> <l> <u> <c> <l> <r> : "🯞"  U1FBDE  # BOX DRAWINGS LIGHT DIAGONAL LOWER LEFT TO UPPER CENTRE TO LOWER RIGHT
+<Multi_key> <bar> <backslash> <u> <l> <m> <r> <l> <l> : "🯟"  U1FBDF  # BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE RIGHT TO LOWER LEFT
+
 #########
 # Music #
 #########
@@ -22780,8 +23093,8 @@ include "HangulSyllables"
 <Multi_key> <numbersign> <at> <d> <2>        : "𝄦" U1D126    # MUSICAL SYMBOL DRUM CLEF-2
 
 # bars, codas, repetitions and pauses
-<Multi_key> <numbersign> <bar> <period>      : "𝄀" U1D100    # MUSICAL SYMBOL SINGLE BARLINE
-<Multi_key> <numbersign> <bar> <bar> <period> : "𝄁" U1D101    # MUSICAL SYMBOL DOUBLE BARLINE
+<Multi_key> <numbersign> <bar> <space>       : "𝄀" U1D100    # MUSICAL SYMBOL SINGLE BARLINE
+<Multi_key> <numbersign> <bar> <bar> <space> : "𝄁" U1D101    # MUSICAL SYMBOL DOUBLE BARLINE
 <Multi_key> <numbersign> <bar> <bar> <bar>   : "𝄂" U1D102    # MUSICAL SYMBOL FINAL BARLINE
 <Multi_key> <numbersign> <period> <bar>      : "𝄄" U1D104    # MUSICAL SYMBOL DASHED BARLINE
 <Multi_key> <numbersign> <bar> <bar> <colon> : "𝄆" U1D106    # MUSICAL SYMBOL LEFT REPEAT SIGN
@@ -22790,17 +23103,17 @@ include "HangulSyllables"
 <Multi_key> <numbersign> <d> <c>             : "𝄊" U1D10A    # MUSICAL SYMBOL DA CAPO
 <Multi_key> <numbersign> <s> <e> <g> <n> <o> : "𝄋" U1D10B    # MUSICAL SYMBOL SEGNO
 <Multi_key> <numbersign> <c> <o> <d> <a>     : "𝄌" U1D10C    # MUSICAL SYMBOL CODA
-<Multi_key> <numbersign> <slash> <period>    : "𝄍" U1D10D    # MUSICAL SYMBOL REPEATED FIGURE-1
+<Multi_key> <numbersign> <slash> <space>     : "𝄍" U1D10D    # MUSICAL SYMBOL REPEATED FIGURE-1
 <Multi_key> <numbersign> <percent>           : "𝄎" U1D10E    # MUSICAL SYMBOL REPEATED FIGURE-2
 <Multi_key> <numbersign> <slash> <percent>   : "𝄏" U1D10F    # MUSICAL SYMBOL REPEATED FIGURE-3
 <Multi_key> <numbersign> <parenleft> <period> : "𝄐" U1D110    # MUSICAL SYMBOL FERMATA
 <Multi_key> <numbersign> <period> <parenright> : "𝄑" U1D111    # MUSICAL SYMBOL FERMATA BELOW
 <Multi_key> <numbersign> <apostrophe>        : "𝄒" U1D112    # MUSICAL SYMBOL BREATH MARK
-<Multi_key> <numbersign> <slash> <slash> <period> : "𝄓" U1D113    # MUSICAL SYMBOL CAESURA
+<Multi_key> <numbersign> <slash> <slash> <space> : "𝄓" U1D113    # MUSICAL SYMBOL CAESURA
 
 # staves
 <Multi_key> <numbersign> <braceleft>         : "𝄔"  U1D114  # MUSICAL SYMBOL BRACE
-<Multi_key> <numbersign> <bracketleft> <period> : "𝄕"  U1D115  # MUSICAL SYMBOL BRACKET
+<Multi_key> <numbersign> <bracketleft> <space> : "𝄕"  U1D115  # MUSICAL SYMBOL BRACKET
 <Multi_key> <numbersign> <1> <equal> : "𝄖"  U1D116  # MUSICAL SYMBOL ONE-LINE STAFF
 <Multi_key> <numbersign> <2> <equal> : "𝄗"  U1D117  # MUSICAL SYMBOL TWO-LINE STAFF
 <Multi_key> <numbersign> <3> <equal> : "𝄘"  U1D118  # MUSICAL SYMBOL THREE-LINE STAFF
@@ -23979,7 +24292,6 @@ include "HangulSyllables"
 <Multi_key> <backslash> <p> <r> <e> <v>         : "⎗"  U2397  # PREVIOUS PAGE
 <Multi_key> <backslash> <n> <e> <x> <t>         : "⎘"  U2398  # NEXT PAGE
 <Multi_key> <backslash> <c> <e> <n> <t> <e> <r> : "⎅"  U2385  # WHITE SQUARE WITH CENTRE VERTICAL LINE
-
 
 # software icons
 
