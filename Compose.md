@@ -19,16 +19,16 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (131): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2402)
+### Latin script characters (2403)
 * **International Phonetic Alphabet** (126): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Latin script letters** (268): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (769): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 𜳖 etc
 * **Enclosed alphanumerics** (264): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (282): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
-* **Multigraphs and ligatures** (377): ʣ ㏈ etc
+* **Multigraphs and ligatures** (378): ʣ ㏈ etc
 * **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (24788)
+### Non-Latin script characters (24878)
 * **Arabic**, Old North Arabian, Old South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi (1266): ⁧رِيدِتْ⁩, ⁧𐪇𐪕𐪉⁩, ⁧𐬭𐬈𐬛𐬌𐬙⁩, ⁧𐩧𐩵𐩩⁩, ⁧𐿂𐾴𐾺𐿄⁩, ⁧𐣣𐣣𐣩𐣵⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧𐫡𐫅𐫏𐫤⁩, ⁧𐢛𐢅𐢍𐢞⁩, 𐒇𐒗𐒆𐒘𐒂, ⁧𐭥𐭣𐭩𐭲⁩, ⁧𐮅𐮃𐮈𐮑⁩, ⁧𐭓𐭃𐭉𐭕⁩, ⁧𐼘𐼘𐼊𐼚⁩, ⁧𐽀𐼲𐼷𐽂⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐽾𐽲𐽶𐾀⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (95): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (84): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
@@ -36,11 +36,11 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Braille**, UEB (272): ⠗⠫⠙⠊⠞ etc
 * **ConScripts**: Cherokee, Cree, Deseret, Inuktitut, Mefeidrin, Mru, Nyiakeng Puachue Hmong, Ol Chiki, Osage, Pau Cin Hau, Shavian, Sloan-Duployan, Sora Sompeng, Toto & Wancho (1217): ᎴᏗᏛ, ᕃᑎᑦ, 𐐡𐐇𐐔𐐆𐐓, ᕃᑎᑦ, 𖹜𖹯𖹹𖹹𖹫𖹨, 𖩓𖩘𖩅𖩊𖩀, 𞄣𞄪𞄏𞄦𞄃, ᱨᱮᱫᱫᱤᱛ, 𐒴𐓟𐓵𐓣𐓰, 𑫒𑫖𑫄𑫗𑫎, 𐑮𐑧𐑛𐑦𐑑, 𛰋𛱌𛰍, 𑃝𑃣𑃔𑃤𑃑, 𞊟𞊦𞊓𞊡𞊒, 𞋗𞋛𞋄𞋜𞋋 etc
 * **Cyrillic**, Glagolitic & Old Permic (526): Ре́ддит, Ⱃⰵδδιτ, 𐍠𐍔𐍓𐍓𐍙𐍢 etc
-* **Geʽez**, Adlam, Bamum, Garay, Mende Kikakui, NKo & Vai (1150): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧𐵞𐵩𐵺𐵋𐵽⁩, ⁧𞠺𞠾𞡊⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
+* **Geʽez**, Adlam, Bamum, Garay, Mende Kikakui, Meroitic Cursive, NKo & Vai (1237): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, ⁧𐵞𐵩𐵺𐵋𐵽⁩, ⁧𞠺𞠾𞡊⁩, ⁧𐦫𐦪𐦷𐦢𐦴⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian** (Mtavruli, Nuskhuri, Mkhedruli) & Caucasian Albanian (206): რედდიტ, ႰႤႣႣႨႲ, 𐕙𐔴𐔳𐔳𐔼𐔸 etc
 * **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian & Vithkuqi (1050): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗, 𐖊𐖞𐖜𐖜𐖥𐖵 etc
 * **Hebrew**, Aramaic, Elymaic, Lydian, Palmyrene, Phoenician, Samaritan & Ugaritic (350): ⁧רֶדִיט⁩, ⁧𐡓𐡃𐡉𐡕⁩, ⁧𐿳𐿣𐿵⁩, ⁧𐤭𐤤𐤣𐤣𐤦𐤯⁩, ⁧𐡴𐡣𐡩𐡶⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩, 𐎗𐎄𐎚 etc
-* **Japanese** (mostly kana) (569): 「レディット」 etc
+* **Japanese** (mostly kana) (572): 「レディット」 etc
 * **Korean** (11736): 레딧 etc
 * **International Morse Code** (76): ···---··· etc
 * **Old Italic**, Ogham, Old Hungarian & Runic (236): 𐌓𐌄𐌃𐌃𐌉𐌕, ᚏᚓᚇᚔᚈ, ⁧𐲢𐳉𐳇𐳇𐳐𐳦⁩, ᚱᛖᛞᛞᛁᛏ etc
@@ -49,10 +49,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Zhuyin**, Fraser, Mongolian, ʼPhags-pa, Pollard, Tai Le, Tibetan & Yi (1754): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, ᥘᥦᥖᥤᥖ, རེཌིཊ྄, ꏒꄶ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4707)
+### Symbols (4712)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (147): 🗫 🯅 ㋡ etc
-* **Math and science** (381): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Math and science** (382): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (106): ⏻ ⎙ ⌘ etc
 * **Numerals** (157): 𝍸𝍷 𝍵 Ⅻ ↁ etc
@@ -60,7 +60,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Games** (358): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
 * **I Ching** (160): ䷇ ☰☷☲☵ etc
-* **Hieroglyphs** (356): 𓁖 𓁹 𓃠 etc
+* **Hieroglyphs** (360): 𓁖 𓁹 𓃠 etc
 * **Arrows** (311): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
 * **Geometric shapes** (226): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (665): ╞╦╕ etc

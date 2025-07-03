@@ -2863,6 +2863,7 @@ include "%L"
 <Multi_key> <braceleft> <Multi_key> <o> <A> <braceright> : "Å"  U212B  # ANGSTROM SIGN
 <Multi_key> <braceleft> <d> <Multi_key> <z> <h> <braceright> : "ʤ"  U02A4  # LATIN SMALL LETTER DEZH DIGRAPH
 <Multi_key> <braceleft> <d> <Multi_key> <z> <at> <braceright> : "ʥ"  U02A5  # LATIN SMALL LETTER DZ DIGRAPH WITH CURL
+<Multi_key> <braceleft> <Multi_key> <E> <H> <braceright> : "ℇ"  U2107  # EULER CONSTANT
 <Multi_key> <braceleft> <k> <Multi_key> <o> <h> <m> <braceright> : "㏀" U33C0   # SQUARE K OHM
 <Multi_key> <braceleft> <M> <Multi_key> <o> <h> <m> <braceright> : "㏁" U33C1   # SQUARE M OHM
 <Multi_key> <braceleft> <t> <Multi_key> <s> <h> <braceright> : "ʧ"  U02A7  # LATIN SMALL LETTER TESH DIGRAPH
@@ -13686,6 +13687,10 @@ include "%L"
 <Multi_key> <j> <numbersign> <asciitilde> <parenleft> <9> <parenright> : "㈨"  U3228  # PARENTHESIZED IDEOGRAPH NINE
 <Multi_key> <j> <numbersign> <asciitilde> <parenleft> <1> <0> <parenright> : "㈩"  U3229  # PARENTHESIZED IDEOGRAPH TEN
 
+<Multi_key> <j> <numbersign> <bracketleft> <1> <bracketright> : "🈩"  U1F229  # SQUARED CJK UNIFIED IDEOGRAPH-4E00
+<Multi_key> <j> <numbersign> <bracketleft> <2> <bracketright> : "🈔"  U1F214  # SQUARED CJK UNIFIED IDEOGRAPH-4E8C
+<Multi_key> <j> <numbersign> <bracketleft> <3> <bracketright> : "🈪"  U1F22A  # SQUARED CJK UNIFIED IDEOGRAPH-4E09
+
 # Punctuation
 
 <Multi_key> <j> <semicolon> <quotedbl> <Return> : "゙"  U3099  # COMBINING KATAKANA-HIRAGANA VOICED SOUND MARK
@@ -18849,6 +18854,100 @@ include "HangulSyllables"
 <Multi_key> <Z> <m> <1> <0> <0> <0> <0> <0> <Return> : "𞣕"  U1E8D5  # MENDE KIKAKUI COMBINING NUMBER HUNDRED THOUSANDS
 <Multi_key> <Z> <m> <1> <0> <0> <0> <0> <0> <0> <Return> : "𞣖"  U1E8D6  # MENDE KIKAKUI COMBINING NUMBER MILLIONS
 
+# (M = Meroitic Cursive)
+
+<Multi_key> <Z> <M> <a> : "𐦠"  U109A0  # MEROITIC CURSIVE LETTER A (ONLY AT START OF WORD)
+<Multi_key> <Z> <M> <e> : "𐦡"  U109A1  # MEROITIC CURSIVE LETTER E
+<Multi_key> <Z> <M> <i> : "𐦢"  U109A2  # MEROITIC CURSIVE LETTER I
+<Multi_key> <Z> <M> <o> : "𐦣"  U109A3  # MEROITIC CURSIVE LETTER O
+
+<Multi_key> <Z> <M> <y> : "𐦤"  U109A4  # MEROITIC CURSIVE LETTER YA
+<Multi_key> <Z> <M> <w> : "𐦥"  U109A5  # MEROITIC CURSIVE LETTER WA
+<Multi_key> <Z> <M> <b> : "𐦦"  U109A6  # MEROITIC CURSIVE LETTER BA
+<Multi_key> <Z> <M> <p> : "𐦧"  U109A7  # MEROITIC CURSIVE LETTER PA
+<Multi_key> <Z> <M> <m> : "𐦨"  U109A8  # MEROITIC CURSIVE LETTER MA
+<Multi_key> <Z> <M> <n> <space> : "𐦩"  U109A9  # MEROITIC CURSIVE LETTER NA
+<Multi_key> <Z> <M> <r> : "𐦫"  U109AB  # MEROITIC CURSIVE LETTER RA
+<Multi_key> <Z> <M> <l> : "𐦬"  U109AC  # MEROITIC CURSIVE LETTER LA
+<Multi_key> <Z> <M> <K> : "𐦭"  U109AD  # MEROITIC CURSIVE LETTER KHA
+<Multi_key> <Z> <M> <H> : "𐦮"  U109AE  # MEROITIC CURSIVE LETTER HHA
+<Multi_key> <Z> <M> <s> <space> : "𐦯"  U109AF  # MEROITIC CURSIVE LETTER SA
+<Multi_key> <Z> <M> <k> : "𐦲"  U109B2  # MEROITIC CURSIVE LETTER KA
+<Multi_key> <Z> <M> <q> : "𐦳"  U109B3  # MEROITIC CURSIVE LETTER QA
+<Multi_key> <Z> <M> <t> <space> : "𐦴"  U109B4  # MEROITIC CURSIVE LETTER TA
+<Multi_key> <Z> <M> <d> : "𐦷"  U109B7  # MEROITIC CURSIVE LETTER DA
+
+<Multi_key> <Z> <M> <n> <e> : "𐦪"  U109AA  # MEROITIC CURSIVE LETTER NE
+<Multi_key> <Z> <M> <s> <e> : "𐦱"  U109B1  # MEROITIC CURSIVE LETTER SE
+<Multi_key> <Z> <M> <t> <e> : "𐦵"  U109B5  # MEROITIC CURSIVE LETTER TE
+<Multi_key> <Z> <M> <t> <o> : "𐦶"  U109B6  # MEROITIC CURSIVE LETTER TO
+
+<Multi_key> <Z> <M> <1> <space> : "𐧀"  U109C0  # MEROITIC CURSIVE NUMBER ONE
+<Multi_key> <Z> <M> <2> <space> : "𐧁"  U109C1  # MEROITIC CURSIVE NUMBER TWO
+<Multi_key> <Z> <M> <3> <space> : "𐧂"  U109C2  # MEROITIC CURSIVE NUMBER THREE
+<Multi_key> <Z> <M> <4> <space> : "𐧃"  U109C3  # MEROITIC CURSIVE NUMBER FOUR
+<Multi_key> <Z> <M> <5> <space> : "𐧄"  U109C4  # MEROITIC CURSIVE NUMBER FIVE
+<Multi_key> <Z> <M> <6> <space> : "𐧅"  U109C5  # MEROITIC CURSIVE NUMBER SIX
+<Multi_key> <Z> <M> <7> <space> : "𐧆"  U109C6  # MEROITIC CURSIVE NUMBER SEVEN
+<Multi_key> <Z> <M> <8> <space> : "𐧇"  U109C7  # MEROITIC CURSIVE NUMBER EIGHT
+<Multi_key> <Z> <M> <9> <space> : "𐧈"  U109C8  # MEROITIC CURSIVE NUMBER NINE
+<Multi_key> <Z> <M> <1> <0> <space> : "𐧉"  U109C9  # MEROITIC CURSIVE NUMBER TEN
+<Multi_key> <Z> <M> <2> <0> <space> : "𐧊"  U109CA  # MEROITIC CURSIVE NUMBER TWENTY
+<Multi_key> <Z> <M> <3> <0> <space> : "𐧋"  U109CB  # MEROITIC CURSIVE NUMBER THIRTY
+<Multi_key> <Z> <M> <4> <0> <space> : "𐧌"  U109CC  # MEROITIC CURSIVE NUMBER FORTY
+<Multi_key> <Z> <M> <5> <0> <space> : "𐧍"  U109CD  # MEROITIC CURSIVE NUMBER FIFTY
+<Multi_key> <Z> <M> <6> <0> <space> : "𐧎"  U109CE  # MEROITIC CURSIVE NUMBER SIXTY
+<Multi_key> <Z> <M> <7> <0> <space> : "𐧏"  U109CF  # MEROITIC CURSIVE NUMBER SEVENTY
+<Multi_key> <Z> <M> <1> <0> <0> <space> : "𐧒"  U109D2  # MEROITIC CURSIVE NUMBER ONE HUNDRED
+<Multi_key> <Z> <M> <2> <0> <0> <space> : "𐧓"  U109D3  # MEROITIC CURSIVE NUMBER TWO HUNDRED
+<Multi_key> <Z> <M> <3> <0> <0> <space> : "𐧔"  U109D4  # MEROITIC CURSIVE NUMBER THREE HUNDRED
+<Multi_key> <Z> <M> <4> <0> <0> <space> : "𐧕"  U109D5  # MEROITIC CURSIVE NUMBER FOUR HUNDRED
+<Multi_key> <Z> <M> <5> <0> <0> <space> : "𐧖"  U109D6  # MEROITIC CURSIVE NUMBER FIVE HUNDRED
+<Multi_key> <Z> <M> <6> <0> <0> <space> : "𐧗"  U109D7  # MEROITIC CURSIVE NUMBER SIX HUNDRED
+<Multi_key> <Z> <M> <7> <0> <0> <space> : "𐧘"  U109D8  # MEROITIC CURSIVE NUMBER SEVEN HUNDRED
+<Multi_key> <Z> <M> <8> <0> <0> <space> : "𐧙"  U109D9  # MEROITIC CURSIVE NUMBER EIGHT HUNDRED
+<Multi_key> <Z> <M> <9> <0> <0> <space> : "𐧚"  U109DA  # MEROITIC CURSIVE NUMBER NINE HUNDRED
+<Multi_key> <Z> <M> <1> <0> <0> <0> <space> : "𐧛"  U109DB  # MEROITIC CURSIVE NUMBER ONE THOUSAND
+<Multi_key> <Z> <M> <2> <0> <0> <0> <space> : "𐧜"  U109DC  # MEROITIC CURSIVE NUMBER TWO THOUSAND
+<Multi_key> <Z> <M> <3> <0> <0> <0> <space> : "𐧝"  U109DD  # MEROITIC CURSIVE NUMBER THREE THOUSAND
+<Multi_key> <Z> <M> <4> <0> <0> <0> <space> : "𐧞"  U109DE  # MEROITIC CURSIVE NUMBER FOUR THOUSAND
+<Multi_key> <Z> <M> <5> <0> <0> <0> <space> : "𐧟"  U109DF  # MEROITIC CURSIVE NUMBER FIVE THOUSAND
+<Multi_key> <Z> <M> <6> <0> <0> <0> <space> : "𐧠"  U109E0  # MEROITIC CURSIVE NUMBER SIX THOUSAND
+<Multi_key> <Z> <M> <7> <0> <0> <0> <space> : "𐧡"  U109E1  # MEROITIC CURSIVE NUMBER SEVEN THOUSAND
+<Multi_key> <Z> <M> <8> <0> <0> <0> <space> : "𐧢"  U109E2  # MEROITIC CURSIVE NUMBER EIGHT THOUSAND
+<Multi_key> <Z> <M> <9> <0> <0> <0> <space> : "𐧣"  U109E3  # MEROITIC CURSIVE NUMBER NINE THOUSAND
+<Multi_key> <Z> <M> <1> <0> <0> <0> <0> <space> : "𐧤"  U109E4  # MEROITIC CURSIVE NUMBER TEN THOUSAND
+<Multi_key> <Z> <M> <2> <0> <0> <0> <0> <space> : "𐧥"  U109E5  # MEROITIC CURSIVE NUMBER TWENTY THOUSAND
+<Multi_key> <Z> <M> <3> <0> <0> <0> <0> <space> : "𐧦"  U109E6  # MEROITIC CURSIVE NUMBER THIRTY THOUSAND
+<Multi_key> <Z> <M> <4> <0> <0> <0> <0> <space> : "𐧧"  U109E7  # MEROITIC CURSIVE NUMBER FORTY THOUSAND
+<Multi_key> <Z> <M> <5> <0> <0> <0> <0> <space> : "𐧨"  U109E8  # MEROITIC CURSIVE NUMBER FIFTY THOUSAND
+<Multi_key> <Z> <M> <6> <0> <0> <0> <0> <space> : "𐧩"  U109E9  # MEROITIC CURSIVE NUMBER SIXTY THOUSAND
+<Multi_key> <Z> <M> <7> <0> <0> <0> <0> <space> : "𐧪"  U109EA  # MEROITIC CURSIVE NUMBER SEVENTY THOUSAND
+<Multi_key> <Z> <M> <8> <0> <0> <0> <0> <space> : "𐧫"  U109EB  # MEROITIC CURSIVE NUMBER EIGHTY THOUSAND
+<Multi_key> <Z> <M> <9> <0> <0> <0> <0> <space> : "𐧬"  U109EC  # MEROITIC CURSIVE NUMBER NINETY THOUSAND
+<Multi_key> <Z> <M> <1> <0> <0> <0> <0> <0> : "𐧭"  U109ED  # MEROITIC CURSIVE NUMBER ONE HUNDRED THOUSAND
+<Multi_key> <Z> <M> <2> <0> <0> <0> <0> <0> : "𐧮"  U109EE  # MEROITIC CURSIVE NUMBER TWO HUNDRED THOUSAND
+<Multi_key> <Z> <M> <3> <0> <0> <0> <0> <0> : "𐧯"  U109EF  # MEROITIC CURSIVE NUMBER THREE HUNDRED THOUSAND
+<Multi_key> <Z> <M> <4> <0> <0> <0> <0> <0> : "𐧰"  U109F0  # MEROITIC CURSIVE NUMBER FOUR HUNDRED THOUSAND
+<Multi_key> <Z> <M> <5> <0> <0> <0> <0> <0> : "𐧱"  U109F1  # MEROITIC CURSIVE NUMBER FIVE HUNDRED THOUSAND
+<Multi_key> <Z> <M> <6> <0> <0> <0> <0> <0> : "𐧲"  U109F2  # MEROITIC CURSIVE NUMBER SIX HUNDRED THOUSAND
+<Multi_key> <Z> <M> <7> <0> <0> <0> <0> <0> : "𐧳"  U109F3  # MEROITIC CURSIVE NUMBER SEVEN HUNDRED THOUSAND
+<Multi_key> <Z> <M> <8> <0> <0> <0> <0> <0> : "𐧴"  U109F4  # MEROITIC CURSIVE NUMBER EIGHT HUNDRED THOUSAND
+<Multi_key> <Z> <M> <9> <0> <0> <0> <0> <0> : "𐧵"  U109F5  # MEROITIC CURSIVE NUMBER NINE HUNDRED THOUSAND
+
+<Multi_key> <Z> <M> <1> <slash> <2> : "𐦽"  U109BD  # MEROITIC CURSIVE FRACTION ONE HALF
+<Multi_key> <Z> <M> <1> <slash> <1> <2> : "𐧶"  U109F6  # MEROITIC CURSIVE FRACTION ONE TWELFTH
+<Multi_key> <Z> <M> <2> <slash> <1> <2> : "𐧷"  U109F7  # MEROITIC CURSIVE FRACTION TWO TWELFTHS
+<Multi_key> <Z> <M> <3> <slash> <1> <2> : "𐧸"  U109F8  # MEROITIC CURSIVE FRACTION THREE TWELFTHS
+<Multi_key> <Z> <M> <4> <slash> <1> <2> : "𐧹"  U109F9  # MEROITIC CURSIVE FRACTION FOUR TWELFTHS
+<Multi_key> <Z> <M> <5> <slash> <1> <2> : "𐧺"  U109FA  # MEROITIC CURSIVE FRACTION FIVE TWELFTHS
+<Multi_key> <Z> <M> <6> <slash> <1> <2> : "𐧻"  U109FB  # MEROITIC CURSIVE FRACTION SIX TWELFTHS
+<Multi_key> <Z> <M> <7> <slash> <1> <2> : "𐧼"  U109FC  # MEROITIC CURSIVE FRACTION SEVEN TWELFTHS
+<Multi_key> <Z> <M> <8> <slash> <1> <2> : "𐧽"  U109FD  # MEROITIC CURSIVE FRACTION EIGHT TWELFTHS
+<Multi_key> <Z> <M> <9> <slash> <1> <2> : "𐧾"  U109FE  # MEROITIC CURSIVE FRACTION NINE TWELFTHS
+<Multi_key> <Z> <M> <1> <0> <slash> <1> <2> : "𐧿"  U109FF  # MEROITIC CURSIVE FRACTION TEN TWELFTHS
+<Multi_key> <Z> <M> <1> <1> <slash> <1> <2> : "𐦼"  U109BC  # MEROITIC CURSIVE FRACTION ELEVEN TWELFTHS
+
 # (n = NKo)
 
 <Multi_key> <Z> <n> <a> : "ߊ" U07CA   # NKO LETTER A
@@ -19390,6 +19489,7 @@ include "HangulSyllables"
 
 <Multi_key> <slash> <percent>         : "⁄"  U2044   # FRACTION SLASH
 <Multi_key> <slash> <colon>           : "∕"  U2215   # DIVISION SLASH
+<Multi_key> <1> <slash> <space>       : "⅟"  U215F  # FRACTION NUMERATOR ONE
 <Multi_key> <minus> <0>               : "−"  U2212   # MINUS SIGN (alternatively -_)
 <Multi_key> <minus> <plus>            : "∓"  U2213   # MINUS-OR-PLUS SIGN (conflicts with ±, use +-)
 <Multi_key> <plus> <2>                : "⨧"  U2A27   # PLUS SIGN WITH SUBSCRIPT TWO
@@ -20174,7 +20274,7 @@ include "HangulSyllables"
 <Multi_key> <V> <G>            : "🎮"  U1F3AE        # VIDEO GAME
 <Multi_key> <V> <H> <S>        : "📼"  U1F4FC        # VIDEOCASSETTE (VHS)
 <Multi_key> <V> <M>            : "➿"  U27BF         # DOUBLE CURLY LOOP (VOICE MAIL)
-<Multi_key> <1> <slash>        : "🧵"  U1F9F5        # SPOOL OF THREAD
+<Multi_key> <1> <slash> <N>    : "🧵"  U1F9F5        # SPOOL OF THREAD (1/N)
 <Multi_key> <5> <M>            : "🪅"  U1FA85        # PINATA (CINCO DE MAYO)
 
 <Multi_key> <A> <B>            : "🗯️"  U1F5EF UFE0F  # RIGHT ANGER BUBBLE EMOJI
@@ -22201,6 +22301,11 @@ include "HangulSyllables"
 <Multi_key> <braceright> <w> <a> <f> <f> <l> <e> : "𒐫"  U1242B  # CUNEIFORM NUMERIC SIGN NINE SHAR2 (WAFFLE)
 <Multi_key> <braceright> <w> <m> <i> <l> <l> : "𒅄"  U12144  # CUNEIFORM SIGN IDIM OVER IDIM SQUARED (WINDMILL)
 <Multi_key> <braceright> <x> <m> <a> <s> : "𒀱"  U12031  # CUNEIFORM SIGN AN PLUS NAGA SQUARED (XMAS)
+
+<Multi_key> <braceright> <g> <l> <a> <s> <s> : "𐚤"  U106A4  # LINEAR A SIGN A404-VAS (GLASS)
+<Multi_key> <braceright> <m> <o> <u> <s> <e> : "𐙼"  U1067C  # LINEAR A SIGN A336 (MOUSE)
+<Multi_key> <braceright> <s> <h> <o> <t> : "𐚣"  U106A3  # LINEAR A SIGN A403-VAS (SHOT)
+<Multi_key> <braceright> <t> <r> <a> <s> <h> : "𐚱"  U106B1  # LINEAR A SIGN A417-VAS (TRASH)
 
 <Multi_key> <braceright> <f> <i> <n> <g> <e> <r> : "⍝"  U235D  # APL FUNCTIONAL SYMBOL UP SHOE JOT (FINGER)
 
