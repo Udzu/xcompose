@@ -49,13 +49,13 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Zhuyin**, Fraser, Mongolian, ʼPhags-pa, Pollard, Tai Le, Tibetan & Yi (1754): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, ᥘᥦᥖᥤᥖ, རེཌིཊ྄, ꏒꄶ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4713)
+### Symbols (4779)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (147): 🗫 🯅 ㋡ etc
 * **Math and science** (382): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (106): ⏻ ⎙ ⌘ etc
-* **Numerals** (157): 𝍸𝍷 𝍵 Ⅻ ↁ etc
+* **Numerals** (223): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (137): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (358): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
