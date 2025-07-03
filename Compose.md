@@ -28,8 +28,8 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (378): ʣ ㏈ etc
 * **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (24878)
-* **Arabic**, Old North Arabian, Old South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi (1266): ⁧رِيدِتْ⁩, ⁧𐪇𐪕𐪉⁩, ⁧𐬭𐬈𐬛𐬌𐬙⁩, ⁧𐩧𐩵𐩩⁩, ⁧𐿂𐾴𐾺𐿄⁩, ⁧𐣣𐣣𐣩𐣵⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧𐫡𐫅𐫏𐫤⁩, ⁧𐢛𐢅𐢍𐢞⁩, 𐒇𐒗𐒆𐒘𐒂, ⁧𐭥𐭣𐭩𐭲⁩, ⁧𐮅𐮃𐮈𐮑⁩, ⁧𐭓𐭃𐭉𐭕⁩, ⁧𐼘𐼘𐼊𐼚⁩, ⁧𐽀𐼲𐼷𐽂⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐽾𐽲𐽶𐾀⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
+### Non-Latin script characters (24992)
+* **Arabic**, Old North Arabian, Old South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi (1380): ⁧رِيدِتْ⁩, ⁧𐪇𐪕𐪉⁩, ⁧𐬭𐬈𐬛𐬌𐬙⁩, ⁧𐩧𐩵𐩩⁩, ⁧𐿂𐾴𐾺𐿄⁩, ⁧𐣣𐣣𐣩𐣵⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧𐫡𐫅𐫏𐫤⁩, ⁧𐢛𐢅𐢍𐢞⁩, 𐒇𐒗𐒆𐒘𐒂, ⁧𐭥𐭣𐭩𐭲⁩, ⁧𐮅𐮃𐮈𐮑⁩, ⁧𐭓𐭃𐭉𐭕⁩, ⁧𐼘𐼘𐼊𐼚⁩, ⁧𐽀𐼲𐼷𐽂⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐽾𐽲𐽶𐾀⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (95): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (84): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
 * **Brahmic Scripts**: Ahom, Bengali, Bhaiksuki, Brahmi, Buginese, Burmese, Chakma, Devanagari, Dives Akuru, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi, Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Khojki, Khudawadi, Kirat Rai, Limbu, Mahajani, Makasar, Malayalam, Marchen, Masaram Gondi, Meitei, Modi, Multani, Nandinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu, Tigalari, Tirhuta (3145): 𑜍𑜦𑜔𑜢𑜌𑜫, রেডিট, 𑰨𑰸𑰠𑰰𑰞, 𑀭𑁂𑀟𑀺𑀝, ᨑᨙᨉᨗ, ရေဍိဋ္, 𑄢𑄬𑄘𑄨𑄖𑄳, रेडिट, 𑤧𑤵𑤞𑤱𑤜𑤽, 𑠤𑠳𑠜𑠭𑠚, 𑌰𑍇𑌧𑌿𑌥, 𑶈𑶐𑵹𑶋𑵴𑶗, રેડિટ, ਰੇਡਿਟ, 𖄛𖄣𖄓𖄟𖄑, 𑂩𑂵𑂡𑂱𑂟, ರೆಡಿತ್, 𑼬𑼾𑼤𑼶𑼢, ⁧𐨪𐨅𐨢𐨁𐨠⁩, 𑈦𑈰𑈝𑈭𑈚, 𑋙𑋥𑋐𑋡𑋎, 𖵝𖵧𖵕𖵤𖵓, ᤖᤧᤍᤡᤳ, 𑅭𑅓𑅦𑅑𑅟, 𑻭𑻵𑻧𑻳, രെഡിട്, 𑲊𑲳𑱼𑲱𑱻, 𑴦𑴺𑴞𑴲𑴜, ꯔꯦꯗꯤꯠ, 𑘨𑘹𑘠𑘱𑘞, 𑊢𑊃𑊙𑊁𑊗, 𑧈𑧚𑧀𑧒𑦾, 𑐬𑐾𑐢𑐶𑐠, ରେଡିଟ, ꤽꥉꤴꥇꤳ, ꢬꢾꢞꢶꢜ, 𑆫𑆼𑆣𑆴𑆡, 𑖨𑖸𑖠𑖰𑖞, රෙඩිට්, ꠞꠦꠗꠤꠕ, 𑚤𑚲𑚜𑚮𑚚, ரெடிட், రెడిట్, 𑎬𑏂𑎤𑎹𑎢, 𑒩𑒺𑒡𑒱𑒟 etc
@@ -49,7 +49,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Zhuyin**, Fraser, Mongolian, ʼPhags-pa, Pollard, Tai Le, Tibetan & Yi (1754): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, ᥘᥦᥖᥤᥖ, རེཌིཊ྄, ꏒꄶ etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4712)
+### Symbols (4713)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (147): 🗫 🯅 ㋡ etc
 * **Math and science** (382): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
@@ -60,7 +60,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Games** (358): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
 * **I Ching** (160): ䷇ ☰☷☲☵ etc
-* **Hieroglyphs** (360): 𓁖 𓁹 𓃠 etc
+* **Hieroglyphs** (361): 𓁖 𓁹 𓃠 etc
 * **Arrows** (311): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
 * **Geometric shapes** (226): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (665): ╞╦╕ etc
