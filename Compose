@@ -3769,6 +3769,38 @@ include "%L"
 <Multi_key> <a> <numbersign> <e> <8> : "۸"  U06F8  # EXTENDED ARABIC-INDIC DIGIT EIGHT
 <Multi_key> <a> <numbersign> <e> <9> : "۹"  U06F9  # EXTENDED ARABIC-INDIC DIGIT NINE
 
+<Multi_key> <a> <numbersign> <r> <1> <space> : "𐹠"  U10E60  # RUMI DIGIT ONE
+<Multi_key> <a> <numbersign> <r> <2> <space> : "𐹡"  U10E61  # RUMI DIGIT TWO
+<Multi_key> <a> <numbersign> <r> <3> <space> : "𐹢"  U10E62  # RUMI DIGIT THREE
+<Multi_key> <a> <numbersign> <r> <4> <space> : "𐹣"  U10E63  # RUMI DIGIT FOUR
+<Multi_key> <a> <numbersign> <r> <5> <space> : "𐹤"  U10E64  # RUMI DIGIT FIVE
+<Multi_key> <a> <numbersign> <r> <6> <space> : "𐹥"  U10E65  # RUMI DIGIT SIX
+<Multi_key> <a> <numbersign> <r> <7> <space> : "𐹦"  U10E66  # RUMI DIGIT SEVEN
+<Multi_key> <a> <numbersign> <r> <8> <space> : "𐹧"  U10E67  # RUMI DIGIT EIGHT
+<Multi_key> <a> <numbersign> <r> <9> <space> : "𐹨"  U10E68  # RUMI DIGIT NINE
+<Multi_key> <a> <numbersign> <r> <1> <0> <space> : "𐹩"  U10E69  # RUMI NUMBER TEN
+<Multi_key> <a> <numbersign> <r> <2> <0> <space> : "𐹪"  U10E6A  # RUMI NUMBER TWENTY
+<Multi_key> <a> <numbersign> <r> <3> <0> <space> : "𐹫"  U10E6B  # RUMI NUMBER THIRTY
+<Multi_key> <a> <numbersign> <r> <4> <0> <space> : "𐹬"  U10E6C  # RUMI NUMBER FORTY
+<Multi_key> <a> <numbersign> <r> <5> <0> <space> : "𐹭"  U10E6D  # RUMI NUMBER FIFTY
+<Multi_key> <a> <numbersign> <r> <6> <0> <space> : "𐹮"  U10E6E  # RUMI NUMBER SIXTY
+<Multi_key> <a> <numbersign> <r> <7> <0> <space> : "𐹯"  U10E6F  # RUMI NUMBER SEVENTY
+<Multi_key> <a> <numbersign> <r> <8> <0> <space> : "𐹰"  U10E70  # RUMI NUMBER EIGHTY
+<Multi_key> <a> <numbersign> <r> <9> <0> <space> : "𐹱"  U10E71  # RUMI NUMBER NINETY
+<Multi_key> <a> <numbersign> <r> <1> <0> <0> : "𐹲"  U10E72  # RUMI NUMBER ONE HUNDRED
+<Multi_key> <a> <numbersign> <r> <2> <0> <0> : "𐹳"  U10E73  # RUMI NUMBER TWO HUNDRED
+<Multi_key> <a> <numbersign> <r> <3> <0> <0> : "𐹴"  U10E74  # RUMI NUMBER THREE HUNDRED
+<Multi_key> <a> <numbersign> <r> <4> <0> <0> : "𐹵"  U10E75  # RUMI NUMBER FOUR HUNDRED
+<Multi_key> <a> <numbersign> <r> <5> <0> <0> : "𐹶"  U10E76  # RUMI NUMBER FIVE HUNDRED
+<Multi_key> <a> <numbersign> <r> <6> <0> <0> : "𐹷"  U10E77  # RUMI NUMBER SIX HUNDRED
+<Multi_key> <a> <numbersign> <r> <7> <0> <0> : "𐹸"  U10E78  # RUMI NUMBER SEVEN HUNDRED
+<Multi_key> <a> <numbersign> <r> <8> <0> <0> : "𐹹"  U10E79  # RUMI NUMBER EIGHT HUNDRED
+<Multi_key> <a> <numbersign> <r> <9> <0> <0> : "𐹺"  U10E7A  # RUMI NUMBER NINE HUNDRED
+<Multi_key> <a> <numbersign> <r> <1> <slash> <2> : "𐹻"  U10E7B  # RUMI FRACTION ONE HALF
+<Multi_key> <a> <numbersign> <r> <1> <slash> <4> : "𐹼"  U10E7C  # RUMI FRACTION ONE QUARTER
+<Multi_key> <a> <numbersign> <r> <1> <slash> <3> : "𐹽"  U10E7D  # RUMI FRACTION ONE THIRD
+<Multi_key> <a> <numbersign> <r> <2> <slash> <3> : "𐹾"  U10E7E  # RUMI FRACTION TWO THIRDS
+
 # (f/F = presentation forms)
 
 # Convention: a + f/F + form + character
@@ -18999,7 +19031,7 @@ include "HangulSyllables"
 <Multi_key> <Z> <m> <1> <0> <0> <0> <0> <0> <Return> : "𞣕"  U1E8D5  # MENDE KIKAKUI COMBINING NUMBER HUNDRED THOUSANDS
 <Multi_key> <Z> <m> <1> <0> <0> <0> <0> <0> <0> <Return> : "𞣖"  U1E8D6  # MENDE KIKAKUI COMBINING NUMBER MILLIONS
 
-# (M = Meroitic Cursive)
+# (M = Meroitic) lower case for cursive, upper case for hieroglyphic
 
 <Multi_key> <Z> <M> <a> : "𐦠"  U109A0  # MEROITIC CURSIVE LETTER A (ONLY AT START OF WORD)
 <Multi_key> <Z> <M> <e> : "𐦡"  U109A1  # MEROITIC CURSIVE LETTER E
@@ -19014,10 +19046,10 @@ include "HangulSyllables"
 <Multi_key> <Z> <M> <n> <space> : "𐦩"  U109A9  # MEROITIC CURSIVE LETTER NA
 <Multi_key> <Z> <M> <r> : "𐦫"  U109AB  # MEROITIC CURSIVE LETTER RA
 <Multi_key> <Z> <M> <l> : "𐦬"  U109AC  # MEROITIC CURSIVE LETTER LA
-<Multi_key> <Z> <M> <K> : "𐦭"  U109AD  # MEROITIC CURSIVE LETTER KHA
-<Multi_key> <Z> <M> <H> : "𐦮"  U109AE  # MEROITIC CURSIVE LETTER HHA
+<Multi_key> <Z> <M> <k> <h> : "𐦭"  U109AD  # MEROITIC CURSIVE LETTER KHA
+<Multi_key> <Z> <M> <h> : "𐦮"  U109AE  # MEROITIC CURSIVE LETTER HHA
 <Multi_key> <Z> <M> <s> <space> : "𐦯"  U109AF  # MEROITIC CURSIVE LETTER SA
-<Multi_key> <Z> <M> <k> : "𐦲"  U109B2  # MEROITIC CURSIVE LETTER KA
+<Multi_key> <Z> <M> <k> <space> : "𐦲"  U109B2  # MEROITIC CURSIVE LETTER KA
 <Multi_key> <Z> <M> <q> : "𐦳"  U109B3  # MEROITIC CURSIVE LETTER QA
 <Multi_key> <Z> <M> <t> <space> : "𐦴"  U109B4  # MEROITIC CURSIVE LETTER TA
 <Multi_key> <Z> <M> <d> : "𐦷"  U109B7  # MEROITIC CURSIVE LETTER DA
@@ -19026,6 +19058,39 @@ include "HangulSyllables"
 <Multi_key> <Z> <M> <s> <e> : "𐦱"  U109B1  # MEROITIC CURSIVE LETTER SE
 <Multi_key> <Z> <M> <t> <e> : "𐦵"  U109B5  # MEROITIC CURSIVE LETTER TE
 <Multi_key> <Z> <M> <t> <o> : "𐦶"  U109B6  # MEROITIC CURSIVE LETTER TO
+
+<Multi_key> <Z> <M> <A> : "𐦀"  U10980  # MEROITIC HIEROGLYPHIC LETTER A (ONLY AT START OF WORD)
+<Multi_key> <Z> <M> <E> : "𐦁"  U10981  # MEROITIC HIEROGLYPHIC LETTER E
+<Multi_key> <Z> <M> <I> : "𐦂"  U10982  # MEROITIC HIEROGLYPHIC LETTER I
+<Multi_key> <Z> <M> <O> : "𐦃"  U10983  # MEROITIC HIEROGLYPHIC LETTER O
+
+<Multi_key> <Z> <M> <Y> : "𐦄"  U10984  # MEROITIC HIEROGLYPHIC LETTER YA
+<Multi_key> <Z> <M> <W> : "𐦅"  U10985  # MEROITIC HIEROGLYPHIC LETTER WA
+<Multi_key> <Z> <M> <B> : "𐦆"  U10986  # MEROITIC HIEROGLYPHIC LETTER BA
+<Multi_key> <Z> <M> <2> <B> : "𐦇"  U10987  # MEROITIC HIEROGLYPHIC LETTER BA-2
+<Multi_key> <Z> <M> <P> : "𐦈"  U10988  # MEROITIC HIEROGLYPHIC LETTER PA
+<Multi_key> <Z> <M> <M> : "𐦉"  U10989  # MEROITIC HIEROGLYPHIC LETTER MA
+<Multi_key> <Z> <M> <N> <space> : "𐦊"  U1098A  # MEROITIC HIEROGLYPHIC LETTER NA
+<Multi_key> <Z> <M> <2> <N> <space> : "𐦋"  U1098B  # MEROITIC HIEROGLYPHIC LETTER NA-2
+<Multi_key> <Z> <M> <R> : "𐦎"  U1098E  # MEROITIC HIEROGLYPHIC LETTER RA
+<Multi_key> <Z> <M> <2> <R> : "𐦏"  U1098F  # MEROITIC HIEROGLYPHIC LETTER RA-2
+<Multi_key> <Z> <M> <L> : "𐦐"  U10990  # MEROITIC HIEROGLYPHIC LETTER LA
+<Multi_key> <Z> <M> <K> <H> : "𐦑"  U10991  # MEROITIC HIEROGLYPHIC LETTER KHA
+<Multi_key> <Z> <M> <H> : "𐦒"  U10992  # MEROITIC HIEROGLYPHIC LETTER HHA
+<Multi_key> <Z> <M> <S> <space> : "𐦓"  U10993  # MEROITIC HIEROGLYPHIC LETTER SA
+<Multi_key> <Z> <M> <2> <S> : "𐦔"  U10994  # MEROITIC HIEROGLYPHIC LETTER SA-2
+<Multi_key> <Z> <M> <K> <space> : "𐦖"  U10996  # MEROITIC HIEROGLYPHIC LETTER KA
+<Multi_key> <Z> <M> <Q> : "𐦗"  U10997  # MEROITIC HIEROGLYPHIC LETTER QA
+<Multi_key> <Z> <M> <T> <space> : "𐦘"  U10998  # MEROITIC HIEROGLYPHIC LETTER TA
+<Multi_key> <Z> <M> <2> <T> <space> : "𐦙"  U10999  # MEROITIC HIEROGLYPHIC LETTER TA-2
+<Multi_key> <Z> <M> <D> : "𐦝"  U1099D  # MEROITIC HIEROGLYPHIC LETTER DA
+
+<Multi_key> <Z> <M> <N> <E> : "𐦌"  U1098C  # MEROITIC HIEROGLYPHIC LETTER NE
+<Multi_key> <Z> <M> <2> <N> <E> : "𐦍"  U1098D  # MEROITIC HIEROGLYPHIC LETTER NE-2
+<Multi_key> <Z> <M> <S> <E> : "𐦕"  U10995  # MEROITIC HIEROGLYPHIC LETTER SE
+<Multi_key> <Z> <M> <T> <E> : "𐦚"  U1099A  # MEROITIC HIEROGLYPHIC LETTER TE
+<Multi_key> <Z> <M> <2> <T> <E> : "𐦛"  U1099B  # MEROITIC HIEROGLYPHIC LETTER TE-2
+<Multi_key> <Z> <M> <T> <O> : "𐦜"  U1099C  # MEROITIC HIEROGLYPHIC LETTER TO
 
 <Multi_key> <Z> <M> <1> <space> : "𐧀"  U109C0  # MEROITIC CURSIVE NUMBER ONE
 <Multi_key> <Z> <M> <2> <space> : "𐧁"  U109C1  # MEROITIC CURSIVE NUMBER TWO
