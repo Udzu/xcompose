@@ -10154,7 +10154,7 @@ include "%L"
 
 # covers Cherokee, Deseret, Inuktitut Syllabics, Kayah Li, Medefeidrin, Mru, Nag Mundari,
 # Nyiakeng Puachue Hmong, Ol Chiki, Old Onal, Osage, Pau Cin Hau, Shavian, Sora Sompeng,
-# Sunuwar, Toto & Wancho
+# Sunuwar, Tangsa, Toto & Wancho
 
 # (d/D = Deseret)
 
@@ -15208,9 +15208,9 @@ include "HangulSyllables"
 <Multi_key> <m> <p> <s> <o> <s> : "···---···"  # MORSE CODE PROSIGN SOS (DISTRESS SIGNAL)
 <Multi_key> <m> <p> <v> <e>     : "···-·"  # MORSE CODE PROSIGN VE (VERIFIED)
 
-######################################################
-# (oi) Old Italic (and Ogham, Old Hungarian & Runic) #
-######################################################
+##############################################################
+# (oi) Old Italic (and Carian, Ogham, Old Hungarian & Runic) #
+##############################################################
 
 # Also see numerals sections for Roman Numerals
 
@@ -15269,6 +15269,60 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <numbersign> <1> <0> <space> : "𐌢" U10322    # OLD ITALIC NUMERAL TEN
 <Multi_key> <o> <i> <numbersign> <5> <0> : "𐌣" U10323    # OLD ITALIC NUMERAL FIFTY
 <Multi_key> <o> <i> <numbersign> <1> <0> <0> : "𐌟" U1031F    # OLD ITALIC LETTER ESS
+
+# (C = Carian) (capital letters correspond to Greek characters)
+
+<Multi_key> <o> <i> <C> <a>              : "𐊠"  U102A0  # CARIAN LETTER A
+<Multi_key> <o> <i> <C> <2> <p>          : "𐊡"  U102A1  # CARIAN LETTER P2
+<Multi_key> <o> <i> <C> <d>              : "𐊢"  U102A2  # CARIAN LETTER D
+<Multi_key> <o> <i> <C> <l>              : "𐊣"  U102A3  # CARIAN LETTER L
+<Multi_key> <o> <i> <C> <y>              : "𐊤"  U102A4  # CARIAN LETTER UUU
+<Multi_key> <o> <i> <C> <r>              : "𐊥"  U102A5  # CARIAN LETTER R
+<Multi_key> <o> <i> <C> <L>              : "𐊦"  U102A6  # CARIAN LETTER LD (λ)
+<Multi_key> <o> <i> <C> <2> <a>          : "𐊧"  U102A7  # CARIAN LETTER A2
+<Multi_key> <o> <i> <C> <q>              : "𐊨"  U102A8  # CARIAN LETTER Q
+<Multi_key> <o> <i> <C> <b>              : "𐊩"  U102A9  # CARIAN LETTER B
+<Multi_key> <o> <i> <C> <m>              : "𐊪"  U102AA  # CARIAN LETTER M
+<Multi_key> <o> <i> <C> <o>              : "𐊫"  U102AB  # CARIAN LETTER O
+<Multi_key> <o> <i> <C> <2> <d>          : "𐊬"  U102AC  # CARIAN LETTER D2
+<Multi_key> <o> <i> <C> <t>              : "𐊭"  U102AD  # CARIAN LETTER T
+<Multi_key> <o> <i> <C> <v> <s>          : "𐊮"  U102AE  # CARIAN LETTER SH (š)
+<Multi_key> <o> <i> <C> <2> <v> <s>      : "𐊯"  U102AF  # CARIAN LETTER SH2 (š)
+<Multi_key> <o> <i> <C> <s>              : "𐊰"  U102B0  # CARIAN LETTER S
+<Multi_key> <o> <i> <C> <u>              : "𐊲"  U102B2  # CARIAN LETTER U
+<Multi_key> <o> <i> <C> <asciitilde> <n> : "𐊳"  U102B3  # CARIAN LETTER NN (ñ)
+<Multi_key> <o> <i> <C> <asciicircum> <k> : "𐊴"  U102B4  # CARIAN LETTER X (k̂)
+<Multi_key> <o> <i> <C> <x>              : "𐊴"  U102B4  # CARIAN LETTER X
+<Multi_key> <o> <i> <C> <n> <space>      : "𐊵"  U102B5  # CARIAN LETTER N
+<Multi_key> <o> <i> <C> <2> <T>          : "𐊶"  U102B6  # CARIAN LETTER TT2 (τ)
+<Multi_key> <o> <i> <C> <p>              : "𐊷"  U102B7  # CARIAN LETTER P
+<Multi_key> <o> <i> <C> <apostrophe> <s> : "𐊸"  U102B8  # CARIAN LETTER SS (ś)
+<Multi_key> <o> <i> <C> <i>              : "𐊹"  U102B9  # CARIAN LETTER I
+<Multi_key> <o> <i> <C> <e>              : "𐊺"  U102BA  # CARIAN LETTER E
+<Multi_key> <o> <i> <C> <apostrophe> <y> : "𐊻"  U102BB  # CARIAN LETTER UUUU (ý)
+<Multi_key> <o> <i> <C> <k>              : "𐊼"  U102BC  # CARIAN LETTER K
+<Multi_key> <o> <i> <C> <2> <k>          : "𐊽"  U102BD  # CARIAN LETTER K2
+<Multi_key> <o> <i> <C> <D>              : "𐊾"  U102BE  # CARIAN LETTER ND (δ)
+<Multi_key> <o> <i> <C> <w>              : "𐊿"  U102BF  # CARIAN LETTER UU
+<Multi_key> <o> <i> <C> <G>              : "𐋀"  U102C0  # CARIAN LETTER G (γ)
+<Multi_key> <o> <i> <C> <2> <G>          : "𐋁"  U102C1  # CARIAN LETTER G2 (γ)
+<Multi_key> <o> <i> <C> <z>              : "𐋂"  U102C2  # CARIAN LETTER ST
+<Multi_key> <o> <i> <C> <2> <z>          : "𐋃"  U102C3  # CARIAN LETTER ST2
+<Multi_key> <o> <i> <C> <n> <g>          : "𐋄"  U102C4  # CARIAN LETTER NG (ŋ)
+<Multi_key> <o> <i> <C> <j>              : "𐋅"  U102C5  # CARIAN LETTER II
+<Multi_key> <o> <i> <C> <T>              : "𐋇"  U102C7  # CARIAN LETTER TT
+<Multi_key> <o> <i> <C> <2> <y>          : "𐋈"  U102C8  # CARIAN LETTER UUU2
+<Multi_key> <o> <i> <C> <apostrophe> <r> : "𐋉"  U102C9  # CARIAN LETTER RR (ŕ)
+<Multi_key> <o> <i> <C> <B>              : "𐋊"  U102CA  # CARIAN LETTER MB (β)
+<Multi_key> <o> <i> <C> <2> <B>          : "𐋋"  U102CB  # CARIAN LETTER MB2 (β)
+<Multi_key> <o> <i> <C> <3> <B>          : "𐋌"  U102CC  # CARIAN LETTER MB3 (β)
+<Multi_key> <o> <i> <C> <4> <B>          : "𐋍"  U102CD  # CARIAN LETTER MB4 (β)
+<Multi_key> <o> <i> <C> <2> <L>          : "𐋎"  U102CE  # CARIAN LETTER LD2 (λ)
+<Multi_key> <o> <i> <C> <2> <e>          : "𐋏"  U102CF  # CARIAN LETTER E2
+<Multi_key> <o> <i> <C> <3> <y>          : "𐋐"  U102D0  # CARIAN LETTER UUU3
+
+<Multi_key> <o> <i> <C> <question> <T>   : "𐊱"  U102B1  # CARIAN LETTER C-18
+<Multi_key> <o> <i> <C> <question> <v> <c> : "𐋆"  U102C6  # CARIAN LETTER C-39
 
 # (h = Old Hungarian)
 
