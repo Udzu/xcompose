@@ -28,7 +28,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (378): ʣ ㏈ etc
 * **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (25662)
+### Non-Latin script characters (25714)
 * **Arabic**, Old North Arabian, Old South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Old Persian, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi (1461): ⁧رِيدِتْ⁩, ⁧𐪇𐪕𐪉⁩, ⁧𐬭𐬈𐬛𐬌𐬙⁩, ⁧𐩧𐩵𐩩⁩, ⁧𐿂𐾴𐾺𐿄⁩, ⁧𐣣𐣣𐣩𐣵⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧𐫡𐫅𐫏𐫤⁩, ⁧𐢛𐢅𐢍𐢞⁩, 𐎼𐎡𐎮𐎡𐎫, 𐒇𐒗𐒆𐒘𐒂, ⁧𐭥𐭣𐭩𐭲⁩, ⁧𐮅𐮃𐮈𐮑⁩, ⁧𐭓𐭃𐭉𐭕⁩, ⁧𐼘𐼘𐼊𐼚⁩, ⁧𐽀𐼲𐼷𐽂⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐽾𐽲𐽶𐾀⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (95): Րեդդիտ etc
 * **Baybayin**, Buhid, Hanunoo & Tagbanwa (84): ᜍᜒᜇᜒᜆ᜔, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ᝮᝲᝧᝲ
@@ -38,7 +38,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Cyrillic**, Glagolitic & Old Permic (526): Ре́ддит, Ⱃⰵδδιτ, 𐍠𐍔𐍓𐍓𐍙𐍢 etc
 * **Geʽez**, Adlam, Bamum, Bassa Vah, Garay, Mende Kikakui, Meroitic Cursive & Hieroglyphic, NKo & Vai (1303): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, 𖫦𖫬𖫗𖫭𖫡, ⁧𐵞𐵩𐵺𐵋𐵽⁩, ⁧𞠺𞠾𞡊⁩, ⁧𐦫𐦪𐦷𐦢𐦴⁩, ⁧𐦎𐦁𐦝𐦂𐦘⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian** (Mtavruli, Nuskhuri, Mkhedruli) & Caucasian Albanian (206): რედდიტ, ႰႤႣႣႨႲ, 𐕙𐔴𐔳𐔳𐔼𐔸 etc
-* **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian & Vithkuqi (1050): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗, 𐖊𐖞𐖜𐖜𐖥𐖵 etc
+* **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian, Todhri & Vithkuqi (1102): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗, 𐗝𐗉𐗆𐗒𐗢, 𐖊𐖞𐖜𐖜𐖥𐖵 etc
 * **Hebrew**, Aramaic, Elymaic, Lydian, Palmyrene, Phoenician, Samaritan & Ugaritic (350): ⁧רֶדִיט⁩, ⁧𐡓𐡃𐡉𐡕⁩, ⁧𐿳𐿣𐿵⁩, ⁧𐤭𐤤𐤣𐤣𐤦𐤯⁩, ⁧𐡴𐡣𐡩𐡶⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩, 𐎗𐎄𐎚 etc
 * **Japanese** (mostly kana) (572): 「レディット」 etc
 * **Korean** (11736): 레딧 etc
