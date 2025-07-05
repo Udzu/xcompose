@@ -4088,6 +4088,694 @@ include "%L"
 <Multi_key> <a> <F> <greater> <y> : "ﯾ"  UFBFE  # ARABIC LETTER FARSI YEH INITIAL FORM
 <Multi_key> <a> <F> <period> <y> : "ﯿ"  UFBFF  # ARABIC LETTER FARSI YEH MEDIAL FORM
 
+# ({ = ligatures)
+
+# Convention: a + { + characters + } + form
+#   characters: as above including c or x prefix
+#   form: ␣ = isolated, > = initial, < = final, . = medial as above
+
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <a> <braceright> <space> : "ﯪ"  UFBEA  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH ALEF ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <a> <braceright> <less> : "ﯫ"  UFBEB  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH ALEF FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <a> <e> <braceright> <space> : "ﯬ"  UFBEC  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH AE ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <a> <e> <braceright> <less> : "ﯭ"  UFBED  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH AE FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <w> <braceright> <space> : "ﯮ"  UFBEE  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH WAW ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <u> <braceright> <space> : "ﯮ"  UFBEE  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH WAW ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <w> <braceright> <less> : "ﯯ"  UFBEF  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH WAW FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <u> <braceright> <less> : "ﯯ"  UFBEF  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH WAW FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <u> <w> <braceright> <space> : "ﯰ"  UFBF0  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH U ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <u> <u> <braceright> <space> : "ﯰ"  UFBF0  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH U ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <u> <w> <braceright> <less> : "ﯱ"  UFBF1  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH U FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <u> <u> <braceright> <less> : "ﯱ"  UFBF1  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH U FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <v> <w> <braceright> <space> : "ﯲ"  UFBF2  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH OE ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <v> <u> <braceright> <space> : "ﯲ"  UFBF2  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH OE ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <v> <w> <braceright> <less> : "ﯳ"  UFBF3  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH OE FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <v> <u> <braceright> <less> : "ﯳ"  UFBF3  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH OE FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <bar> <w> <braceright> <space> : "ﯴ"  UFBF4  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YU ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <bar> <u> <braceright> <space> : "ﯴ"  UFBF4  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YU ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <bar> <w> <braceright> <less> : "ﯵ"  UFBF5  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YU FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <bar> <u> <braceright> <less> : "ﯵ"  UFBF5  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YU FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <underscore> <colon> <y> <braceright> <space> : "ﯶ"  UFBF6  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH E ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <underscore> <colon> <y> <braceright> <less> : "ﯷ"  UFBF7  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH E FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <underscore> <colon> <y> <braceright> <greater> : "ﯸ"  UFBF8  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH E INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <j> <braceright> <space> : "ﰀ"  UFC00  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <H> <braceright> <space> : "ﰁ"  UFC01  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <h> <braceright> <space> : "ﰁ"  UFC01  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <m> <braceright> <space> : "ﰂ"  UFC02  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <a> <y> <braceright> <space> : "ﰃ"  UFC03  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <y> <braceright> <space> : "ﰄ"  UFC04  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <i> <braceright> <space> : "ﰄ"  UFC04  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <j> <braceright> <space> : "ﰅ"  UFC05  # ARABIC LIGATURE BEH WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <H> <braceright> <space> : "ﰆ"  UFC06  # ARABIC LIGATURE BEH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <b> <x> <h> <braceright> <space> : "ﰆ"  UFC06  # ARABIC LIGATURE BEH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <K> <braceright> <space> : "ﰇ"  UFC07  # ARABIC LIGATURE BEH WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <m> <braceright> <space> : "ﰈ"  UFC08  # ARABIC LIGATURE BEH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <b> <x> <a> <y> <braceright> <space> : "ﰉ"  UFC09  # ARABIC LIGATURE BEH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <y> <braceright> <space> : "ﰊ"  UFC0A  # ARABIC LIGATURE BEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <i> <braceright> <space> : "ﰊ"  UFC0A  # ARABIC LIGATURE BEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <j> <braceright> <space> : "ﰋ"  UFC0B  # ARABIC LIGATURE TEH WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <H> <braceright> <space> : "ﰌ"  UFC0C  # ARABIC LIGATURE TEH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <t> <x> <h> <braceright> <space> : "ﰌ"  UFC0C  # ARABIC LIGATURE TEH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <K> <braceright> <space> : "ﰍ"  UFC0D  # ARABIC LIGATURE TEH WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <braceright> <space> : "ﰎ"  UFC0E  # ARABIC LIGATURE TEH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <t> <x> <a> <y> <braceright> <space> : "ﰏ"  UFC0F  # ARABIC LIGATURE TEH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <y> <braceright> <space> : "ﰐ"  UFC10  # ARABIC LIGATURE TEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <i> <braceright> <space> : "ﰐ"  UFC10  # ARABIC LIGATURE TEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <j> <braceright> <space> : "ﰑ"  UFC11  # ARABIC LIGATURE THEH WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <m> <braceright> <space> : "ﰒ"  UFC12  # ARABIC LIGATURE THEH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <T> <x> <a> <y> <braceright> <space> : "ﰓ"  UFC13  # ARABIC LIGATURE THEH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <y> <braceright> <space> : "ﰔ"  UFC14  # ARABIC LIGATURE THEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <i> <braceright> <space> : "ﰔ"  UFC14  # ARABIC LIGATURE THEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <H> <braceright> <space> : "ﰕ"  UFC15  # ARABIC LIGATURE JEEM WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <j> <x> <h> <braceright> <space> : "ﰕ"  UFC15  # ARABIC LIGATURE JEEM WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <m> <braceright> <space> : "ﰖ"  UFC16  # ARABIC LIGATURE JEEM WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <j> <braceright> <space> : "ﰗ"  UFC17  # ARABIC LIGATURE HAH WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <j> <braceright> <space> : "ﰗ"  UFC17  # ARABIC LIGATURE HAH WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <m> <braceright> <space> : "ﰘ"  UFC18  # ARABIC LIGATURE HAH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <m> <braceright> <space> : "ﰘ"  UFC18  # ARABIC LIGATURE HAH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <K> <c> <j> <braceright> <space> : "ﰙ"  UFC19  # ARABIC LIGATURE KHAH WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <K> <c> <H> <braceright> <space> : "ﰚ"  UFC1A  # ARABIC LIGATURE KHAH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <K> <x> <h> <braceright> <space> : "ﰚ"  UFC1A  # ARABIC LIGATURE KHAH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <K> <c> <m> <braceright> <space> : "ﰛ"  UFC1B  # ARABIC LIGATURE KHAH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <j> <braceright> <space> : "ﰜ"  UFC1C  # ARABIC LIGATURE SEEN WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <H> <braceright> <space> : "ﰝ"  UFC1D  # ARABIC LIGATURE SEEN WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <s> <x> <h> <braceright> <space> : "ﰝ"  UFC1D  # ARABIC LIGATURE SEEN WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <K> <braceright> <space> : "ﰞ"  UFC1E  # ARABIC LIGATURE SEEN WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <m> <braceright> <space> : "ﰟ"  UFC1F  # ARABIC LIGATURE SEEN WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <H> <braceright> <space> : "ﰠ"  UFC20  # ARABIC LIGATURE SAD WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <x> <h> <braceright> <space> : "ﰠ"  UFC20  # ARABIC LIGATURE SAD WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <m> <braceright> <space> : "ﰡ"  UFC21  # ARABIC LIGATURE SAD WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <j> <braceright> <space> : "ﰢ"  UFC22  # ARABIC LIGATURE DAD WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <H> <braceright> <space> : "ﰣ"  UFC23  # ARABIC LIGATURE DAD WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <d> <x> <h> <braceright> <space> : "ﰣ"  UFC23  # ARABIC LIGATURE DAD WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <K> <braceright> <space> : "ﰤ"  UFC24  # ARABIC LIGATURE DAD WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <m> <braceright> <space> : "ﰥ"  UFC25  # ARABIC LIGATURE DAD WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <H> <braceright> <space> : "ﰦ"  UFC26  # ARABIC LIGATURE TAH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <t> <x> <h> <braceright> <space> : "ﰦ"  UFC26  # ARABIC LIGATURE TAH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <m> <braceright> <space> : "ﰧ"  UFC27  # ARABIC LIGATURE TAH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <z> <c> <m> <braceright> <space> : "ﰨ"  UFC28  # ARABIC LIGATURE ZAH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <j> <braceright> <space> : "ﰩ"  UFC29  # ARABIC LIGATURE AIN WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <j> <braceright> <space> : "ﰩ"  UFC29  # ARABIC LIGATURE AIN WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <m> <braceright> <space> : "ﰪ"  UFC2A  # ARABIC LIGATURE AIN WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <m> <braceright> <space> : "ﰪ"  UFC2A  # ARABIC LIGATURE AIN WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <j> <braceright> <space> : "ﰫ"  UFC2B  # ARABIC LIGATURE GHAIN WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <m> <braceright> <space> : "ﰬ"  UFC2C  # ARABIC LIGATURE GHAIN WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <j> <braceright> <space> : "ﰭ"  UFC2D  # ARABIC LIGATURE FEH WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <H> <braceright> <space> : "ﰮ"  UFC2E  # ARABIC LIGATURE FEH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <f> <x> <h> <braceright> <space> : "ﰮ"  UFC2E  # ARABIC LIGATURE FEH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <K> <braceright> <space> : "ﰯ"  UFC2F  # ARABIC LIGATURE FEH WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <m> <braceright> <space> : "ﰰ"  UFC30  # ARABIC LIGATURE FEH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <f> <x> <a> <y> <braceright> <space> : "ﰱ"  UFC31  # ARABIC LIGATURE FEH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <y> <braceright> <space> : "ﰲ"  UFC32  # ARABIC LIGATURE FEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <i> <braceright> <space> : "ﰲ"  UFC32  # ARABIC LIGATURE FEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <H> <braceright> <space> : "ﰳ"  UFC33  # ARABIC LIGATURE QAF WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <q> <x> <h> <braceright> <space> : "ﰳ"  UFC33  # ARABIC LIGATURE QAF WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <m> <braceright> <space> : "ﰴ"  UFC34  # ARABIC LIGATURE QAF WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <q> <x> <a> <y> <braceright> <space> : "ﰵ"  UFC35  # ARABIC LIGATURE QAF WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <y> <braceright> <space> : "ﰶ"  UFC36  # ARABIC LIGATURE QAF WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <i> <braceright> <space> : "ﰶ"  UFC36  # ARABIC LIGATURE QAF WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <a> <braceright> <space> : "ﰷ"  UFC37  # ARABIC LIGATURE KAF WITH ALEF ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <j> <braceright> <space> : "ﰸ"  UFC38  # ARABIC LIGATURE KAF WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <H> <braceright> <space> : "ﰹ"  UFC39  # ARABIC LIGATURE KAF WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <k> <x> <h> <braceright> <space> : "ﰹ"  UFC39  # ARABIC LIGATURE KAF WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <K> <braceright> <space> : "ﰺ"  UFC3A  # ARABIC LIGATURE KAF WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <l> <braceright> <space> : "ﰻ"  UFC3B  # ARABIC LIGATURE KAF WITH LAM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <m> <braceright> <space> : "ﰼ"  UFC3C  # ARABIC LIGATURE KAF WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <k> <x> <a> <y> <braceright> <space> : "ﰽ"  UFC3D  # ARABIC LIGATURE KAF WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <y> <braceright> <space> : "ﰾ"  UFC3E  # ARABIC LIGATURE KAF WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <i> <braceright> <space> : "ﰾ"  UFC3E  # ARABIC LIGATURE KAF WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <j> <braceright> <space> : "ﰿ"  UFC3F  # ARABIC LIGATURE LAM WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <H> <braceright> <space> : "ﱀ"  UFC40  # ARABIC LIGATURE LAM WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <h> <braceright> <space> : "ﱀ"  UFC40  # ARABIC LIGATURE LAM WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <K> <braceright> <space> : "ﱁ"  UFC41  # ARABIC LIGATURE LAM WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <m> <braceright> <space> : "ﱂ"  UFC42  # ARABIC LIGATURE LAM WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <a> <y> <braceright> <space> : "ﱃ"  UFC43  # ARABIC LIGATURE LAM WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <y> <braceright> <space> : "ﱄ"  UFC44  # ARABIC LIGATURE LAM WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <i> <braceright> <space> : "ﱄ"  UFC44  # ARABIC LIGATURE LAM WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <j> <braceright> <space> : "ﱅ"  UFC45  # ARABIC LIGATURE MEEM WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <H> <braceright> <space> : "ﱆ"  UFC46  # ARABIC LIGATURE MEEM WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <m> <x> <h> <braceright> <space> : "ﱆ"  UFC46  # ARABIC LIGATURE MEEM WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <K> <braceright> <space> : "ﱇ"  UFC47  # ARABIC LIGATURE MEEM WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <m> <braceright> <space> : "ﱈ"  UFC48  # ARABIC LIGATURE MEEM WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <m> <x> <a> <y> <braceright> <space> : "ﱉ"  UFC49  # ARABIC LIGATURE MEEM WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <y> <braceright> <space> : "ﱊ"  UFC4A  # ARABIC LIGATURE MEEM WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <i> <braceright> <space> : "ﱊ"  UFC4A  # ARABIC LIGATURE MEEM WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <braceright> <space> : "ﱋ"  UFC4B  # ARABIC LIGATURE NOON WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <H> <braceright> <space> : "ﱌ"  UFC4C  # ARABIC LIGATURE NOON WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <n> <x> <h> <braceright> <space> : "ﱌ"  UFC4C  # ARABIC LIGATURE NOON WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <K> <braceright> <space> : "ﱍ"  UFC4D  # ARABIC LIGATURE NOON WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <m> <braceright> <space> : "ﱎ"  UFC4E  # ARABIC LIGATURE NOON WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <n> <x> <a> <y> <braceright> <space> : "ﱏ"  UFC4F  # ARABIC LIGATURE NOON WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <y> <braceright> <space> : "ﱐ"  UFC50  # ARABIC LIGATURE NOON WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <i> <braceright> <space> : "ﱐ"  UFC50  # ARABIC LIGATURE NOON WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <h> <c> <j> <braceright> <space> : "ﱑ"  UFC51  # ARABIC LIGATURE HEH WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <h> <c> <m> <braceright> <space> : "ﱒ"  UFC52  # ARABIC LIGATURE HEH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <h> <x> <a> <y> <braceright> <space> : "ﱓ"  UFC53  # ARABIC LIGATURE HEH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <h> <c> <y> <braceright> <space> : "ﱔ"  UFC54  # ARABIC LIGATURE HEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <h> <c> <i> <braceright> <space> : "ﱔ"  UFC54  # ARABIC LIGATURE HEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <j> <braceright> <space> : "ﱕ"  UFC55  # ARABIC LIGATURE YEH WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <j> <braceright> <space> : "ﱕ"  UFC55  # ARABIC LIGATURE YEH WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <H> <braceright> <space> : "ﱖ"  UFC56  # ARABIC LIGATURE YEH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <y> <x> <h> <braceright> <space> : "ﱖ"  UFC56  # ARABIC LIGATURE YEH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <H> <braceright> <space> : "ﱖ"  UFC56  # ARABIC LIGATURE YEH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <i> <x> <h> <braceright> <space> : "ﱖ"  UFC56  # ARABIC LIGATURE YEH WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <K> <braceright> <space> : "ﱗ"  UFC57  # ARABIC LIGATURE YEH WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <K> <braceright> <space> : "ﱗ"  UFC57  # ARABIC LIGATURE YEH WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <m> <braceright> <space> : "ﱘ"  UFC58  # ARABIC LIGATURE YEH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <m> <braceright> <space> : "ﱘ"  UFC58  # ARABIC LIGATURE YEH WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <y> <x> <a> <y> <braceright> <space> : "ﱙ"  UFC59  # ARABIC LIGATURE YEH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <i> <x> <a> <y> <braceright> <space> : "ﱙ"  UFC59  # ARABIC LIGATURE YEH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <y> <braceright> <space> : "ﱚ"  UFC5A  # ARABIC LIGATURE YEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <i> <braceright> <space> : "ﱚ"  UFC5A  # ARABIC LIGATURE YEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <y> <braceright> <space> : "ﱚ"  UFC5A  # ARABIC LIGATURE YEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <i> <braceright> <space> : "ﱚ"  UFC5A  # ARABIC LIGATURE YEH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <r> <braceright> <less> : "ﱤ"  UFC64  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <z> <braceright> <less> : "ﱥ"  UFC65  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH ZAIN FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <m> <braceright> <less> : "ﱦ"  UFC66  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <n> <braceright> <less> : "ﱧ"  UFC67  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH NOON FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <a> <y> <braceright> <less> : "ﱨ"  UFC68  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <y> <braceright> <less> : "ﱩ"  UFC69  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <i> <braceright> <less> : "ﱩ"  UFC69  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <r> <braceright> <less> : "ﱪ"  UFC6A  # ARABIC LIGATURE BEH WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <z> <braceright> <less> : "ﱫ"  UFC6B  # ARABIC LIGATURE BEH WITH ZAIN FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <m> <braceright> <less> : "ﱬ"  UFC6C  # ARABIC LIGATURE BEH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <n> <braceright> <less> : "ﱭ"  UFC6D  # ARABIC LIGATURE BEH WITH NOON FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <x> <a> <y> <braceright> <less> : "ﱮ"  UFC6E  # ARABIC LIGATURE BEH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <y> <braceright> <less> : "ﱯ"  UFC6F  # ARABIC LIGATURE BEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <i> <braceright> <less> : "ﱯ"  UFC6F  # ARABIC LIGATURE BEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <r> <braceright> <less> : "ﱰ"  UFC70  # ARABIC LIGATURE TEH WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <z> <braceright> <less> : "ﱱ"  UFC71  # ARABIC LIGATURE TEH WITH ZAIN FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <braceright> <less> : "ﱲ"  UFC72  # ARABIC LIGATURE TEH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <n> <braceright> <less> : "ﱳ"  UFC73  # ARABIC LIGATURE TEH WITH NOON FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <x> <a> <y> <braceright> <less> : "ﱴ"  UFC74  # ARABIC LIGATURE TEH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <y> <braceright> <less> : "ﱵ"  UFC75  # ARABIC LIGATURE TEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <i> <braceright> <less> : "ﱵ"  UFC75  # ARABIC LIGATURE TEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <r> <braceright> <less> : "ﱶ"  UFC76  # ARABIC LIGATURE THEH WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <z> <braceright> <less> : "ﱷ"  UFC77  # ARABIC LIGATURE THEH WITH ZAIN FINAL FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <m> <braceright> <less> : "ﱸ"  UFC78  # ARABIC LIGATURE THEH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <n> <braceright> <less> : "ﱹ"  UFC79  # ARABIC LIGATURE THEH WITH NOON FINAL FORM
+<Multi_key> <a> <braceleft> <c> <T> <x> <a> <y> <braceright> <less> : "ﱺ"  UFC7A  # ARABIC LIGATURE THEH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <y> <braceright> <less> : "ﱻ"  UFC7B  # ARABIC LIGATURE THEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <i> <braceright> <less> : "ﱻ"  UFC7B  # ARABIC LIGATURE THEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <x> <a> <y> <braceright> <less> : "ﱼ"  UFC7C  # ARABIC LIGATURE FEH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <y> <braceright> <less> : "ﱽ"  UFC7D  # ARABIC LIGATURE FEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <i> <braceright> <less> : "ﱽ"  UFC7D  # ARABIC LIGATURE FEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <x> <a> <y> <braceright> <less> : "ﱾ"  UFC7E  # ARABIC LIGATURE QAF WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <y> <braceright> <less> : "ﱿ"  UFC7F  # ARABIC LIGATURE QAF WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <i> <braceright> <less> : "ﱿ"  UFC7F  # ARABIC LIGATURE QAF WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <a> <braceright> <less> : "ﲀ"  UFC80  # ARABIC LIGATURE KAF WITH ALEF FINAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <l> <braceright> <less> : "ﲁ"  UFC81  # ARABIC LIGATURE KAF WITH LAM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <m> <braceright> <less> : "ﲂ"  UFC82  # ARABIC LIGATURE KAF WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <x> <a> <y> <braceright> <less> : "ﲃ"  UFC83  # ARABIC LIGATURE KAF WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <y> <braceright> <less> : "ﲄ"  UFC84  # ARABIC LIGATURE KAF WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <i> <braceright> <less> : "ﲄ"  UFC84  # ARABIC LIGATURE KAF WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <m> <braceright> <less> : "ﲅ"  UFC85  # ARABIC LIGATURE LAM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <a> <y> <braceright> <less> : "ﲆ"  UFC86  # ARABIC LIGATURE LAM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <y> <braceright> <less> : "ﲇ"  UFC87  # ARABIC LIGATURE LAM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <i> <braceright> <less> : "ﲇ"  UFC87  # ARABIC LIGATURE LAM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <a> <braceright> <less> : "ﲈ"  UFC88  # ARABIC LIGATURE MEEM WITH ALEF FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <m> <braceright> <less> : "ﲉ"  UFC89  # ARABIC LIGATURE MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <r> <braceright> <less> : "ﲊ"  UFC8A  # ARABIC LIGATURE NOON WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <z> <braceright> <less> : "ﲋ"  UFC8B  # ARABIC LIGATURE NOON WITH ZAIN FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <m> <braceright> <less> : "ﲌ"  UFC8C  # ARABIC LIGATURE NOON WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <n> <braceright> <less> : "ﲍ"  UFC8D  # ARABIC LIGATURE NOON WITH NOON FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <x> <a> <y> <braceright> <less> : "ﲎ"  UFC8E  # ARABIC LIGATURE NOON WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <y> <braceright> <less> : "ﲏ"  UFC8F  # ARABIC LIGATURE NOON WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <i> <braceright> <less> : "ﲏ"  UFC8F  # ARABIC LIGATURE NOON WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <r> <braceright> <less> : "ﲑ"  UFC91  # ARABIC LIGATURE YEH WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <r> <braceright> <less> : "ﲑ"  UFC91  # ARABIC LIGATURE YEH WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <z> <braceright> <less> : "ﲒ"  UFC92  # ARABIC LIGATURE YEH WITH ZAIN FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <z> <braceright> <less> : "ﲒ"  UFC92  # ARABIC LIGATURE YEH WITH ZAIN FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <m> <braceright> <less> : "ﲓ"  UFC93  # ARABIC LIGATURE YEH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <m> <braceright> <less> : "ﲓ"  UFC93  # ARABIC LIGATURE YEH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <n> <braceright> <less> : "ﲔ"  UFC94  # ARABIC LIGATURE YEH WITH NOON FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <n> <braceright> <less> : "ﲔ"  UFC94  # ARABIC LIGATURE YEH WITH NOON FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <x> <a> <y> <braceright> <less> : "ﲕ"  UFC95  # ARABIC LIGATURE YEH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <x> <a> <y> <braceright> <less> : "ﲕ"  UFC95  # ARABIC LIGATURE YEH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <y> <braceright> <less> : "ﲖ"  UFC96  # ARABIC LIGATURE YEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <i> <braceright> <less> : "ﲖ"  UFC96  # ARABIC LIGATURE YEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <y> <braceright> <less> : "ﲖ"  UFC96  # ARABIC LIGATURE YEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <i> <braceright> <less> : "ﲖ"  UFC96  # ARABIC LIGATURE YEH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <j> <braceright> <greater> : "ﲗ"  UFC97  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <H> <braceright> <greater> : "ﲘ"  UFC98  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <h> <braceright> <greater> : "ﲘ"  UFC98  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <K> <braceright> <greater> : "ﲙ"  UFC99  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <m> <braceright> <greater> : "ﲚ"  UFC9A  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <h> <braceright> <greater> : "ﲛ"  UFC9B  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH HEH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <j> <braceright> <greater> : "ﲜ"  UFC9C  # ARABIC LIGATURE BEH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <H> <braceright> <greater> : "ﲝ"  UFC9D  # ARABIC LIGATURE BEH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <x> <h> <braceright> <greater> : "ﲝ"  UFC9D  # ARABIC LIGATURE BEH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <K> <braceright> <greater> : "ﲞ"  UFC9E  # ARABIC LIGATURE BEH WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <m> <braceright> <greater> : "ﲟ"  UFC9F  # ARABIC LIGATURE BEH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <h> <braceright> <greater> : "ﲠ"  UFCA0  # ARABIC LIGATURE BEH WITH HEH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <j> <braceright> <greater> : "ﲡ"  UFCA1  # ARABIC LIGATURE TEH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <H> <braceright> <greater> : "ﲢ"  UFCA2  # ARABIC LIGATURE TEH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <x> <h> <braceright> <greater> : "ﲢ"  UFCA2  # ARABIC LIGATURE TEH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <K> <braceright> <greater> : "ﲣ"  UFCA3  # ARABIC LIGATURE TEH WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <braceright> <greater> : "ﲤ"  UFCA4  # ARABIC LIGATURE TEH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <h> <braceright> <greater> : "ﲥ"  UFCA5  # ARABIC LIGATURE TEH WITH HEH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <m> <braceright> <greater> : "ﲦ"  UFCA6  # ARABIC LIGATURE THEH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <H> <braceright> <greater> : "ﲧ"  UFCA7  # ARABIC LIGATURE JEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <x> <h> <braceright> <greater> : "ﲧ"  UFCA7  # ARABIC LIGATURE JEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <m> <braceright> <greater> : "ﲨ"  UFCA8  # ARABIC LIGATURE JEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <j> <braceright> <greater> : "ﲩ"  UFCA9  # ARABIC LIGATURE HAH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <j> <braceright> <greater> : "ﲩ"  UFCA9  # ARABIC LIGATURE HAH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <m> <braceright> <greater> : "ﲪ"  UFCAA  # ARABIC LIGATURE HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <m> <braceright> <greater> : "ﲪ"  UFCAA  # ARABIC LIGATURE HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <K> <c> <j> <braceright> <greater> : "ﲫ"  UFCAB  # ARABIC LIGATURE KHAH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <K> <c> <m> <braceright> <greater> : "ﲬ"  UFCAC  # ARABIC LIGATURE KHAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <j> <braceright> <greater> : "ﲭ"  UFCAD  # ARABIC LIGATURE SEEN WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <H> <braceright> <greater> : "ﲮ"  UFCAE  # ARABIC LIGATURE SEEN WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <x> <h> <braceright> <greater> : "ﲮ"  UFCAE  # ARABIC LIGATURE SEEN WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <K> <braceright> <greater> : "ﲯ"  UFCAF  # ARABIC LIGATURE SEEN WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <m> <braceright> <greater> : "ﲰ"  UFCB0  # ARABIC LIGATURE SEEN WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <H> <braceright> <greater> : "ﲱ"  UFCB1  # ARABIC LIGATURE SAD WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <x> <h> <braceright> <greater> : "ﲱ"  UFCB1  # ARABIC LIGATURE SAD WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <K> <braceright> <greater> : "ﲲ"  UFCB2  # ARABIC LIGATURE SAD WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <m> <braceright> <greater> : "ﲳ"  UFCB3  # ARABIC LIGATURE SAD WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <j> <braceright> <greater> : "ﲴ"  UFCB4  # ARABIC LIGATURE DAD WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <H> <braceright> <greater> : "ﲵ"  UFCB5  # ARABIC LIGATURE DAD WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <x> <h> <braceright> <greater> : "ﲵ"  UFCB5  # ARABIC LIGATURE DAD WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <K> <braceright> <greater> : "ﲶ"  UFCB6  # ARABIC LIGATURE DAD WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <m> <braceright> <greater> : "ﲷ"  UFCB7  # ARABIC LIGATURE DAD WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <H> <braceright> <greater> : "ﲸ"  UFCB8  # ARABIC LIGATURE TAH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <x> <h> <braceright> <greater> : "ﲸ"  UFCB8  # ARABIC LIGATURE TAH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <z> <c> <m> <braceright> <greater> : "ﲹ"  UFCB9  # ARABIC LIGATURE ZAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <j> <braceright> <greater> : "ﲺ"  UFCBA  # ARABIC LIGATURE AIN WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <j> <braceright> <greater> : "ﲺ"  UFCBA  # ARABIC LIGATURE AIN WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <m> <braceright> <greater> : "ﲻ"  UFCBB  # ARABIC LIGATURE AIN WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <m> <braceright> <greater> : "ﲻ"  UFCBB  # ARABIC LIGATURE AIN WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <j> <braceright> <greater> : "ﲼ"  UFCBC  # ARABIC LIGATURE GHAIN WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <m> <braceright> <greater> : "ﲽ"  UFCBD  # ARABIC LIGATURE GHAIN WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <j> <braceright> <greater> : "ﲾ"  UFCBE  # ARABIC LIGATURE FEH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <H> <braceright> <greater> : "ﲿ"  UFCBF  # ARABIC LIGATURE FEH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <x> <h> <braceright> <greater> : "ﲿ"  UFCBF  # ARABIC LIGATURE FEH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <K> <braceright> <greater> : "ﳀ"  UFCC0  # ARABIC LIGATURE FEH WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <m> <braceright> <greater> : "ﳁ"  UFCC1  # ARABIC LIGATURE FEH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <H> <braceright> <greater> : "ﳂ"  UFCC2  # ARABIC LIGATURE QAF WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <x> <h> <braceright> <greater> : "ﳂ"  UFCC2  # ARABIC LIGATURE QAF WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <m> <braceright> <greater> : "ﳃ"  UFCC3  # ARABIC LIGATURE QAF WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <j> <braceright> <greater> : "ﳄ"  UFCC4  # ARABIC LIGATURE KAF WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <H> <braceright> <greater> : "ﳅ"  UFCC5  # ARABIC LIGATURE KAF WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <x> <h> <braceright> <greater> : "ﳅ"  UFCC5  # ARABIC LIGATURE KAF WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <K> <braceright> <greater> : "ﳆ"  UFCC6  # ARABIC LIGATURE KAF WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <l> <braceright> <greater> : "ﳇ"  UFCC7  # ARABIC LIGATURE KAF WITH LAM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <m> <braceright> <greater> : "ﳈ"  UFCC8  # ARABIC LIGATURE KAF WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <j> <braceright> <greater> : "ﳉ"  UFCC9  # ARABIC LIGATURE LAM WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <H> <braceright> <greater> : "ﳊ"  UFCCA  # ARABIC LIGATURE LAM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <h> <braceright> <greater> : "ﳊ"  UFCCA  # ARABIC LIGATURE LAM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <K> <braceright> <greater> : "ﳋ"  UFCCB  # ARABIC LIGATURE LAM WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <m> <braceright> <greater> : "ﳌ"  UFCCC  # ARABIC LIGATURE LAM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <h> <braceright> <greater> : "ﳍ"  UFCCD  # ARABIC LIGATURE LAM WITH HEH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <j> <braceright> <greater> : "ﳎ"  UFCCE  # ARABIC LIGATURE MEEM WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <H> <braceright> <greater> : "ﳏ"  UFCCF  # ARABIC LIGATURE MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <x> <h> <braceright> <greater> : "ﳏ"  UFCCF  # ARABIC LIGATURE MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <K> <braceright> <greater> : "ﳐ"  UFCD0  # ARABIC LIGATURE MEEM WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <m> <braceright> <greater> : "ﳑ"  UFCD1  # ARABIC LIGATURE MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <braceright> <greater> : "ﳒ"  UFCD2  # ARABIC LIGATURE NOON WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <H> <braceright> <greater> : "ﳓ"  UFCD3  # ARABIC LIGATURE NOON WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <x> <h> <braceright> <greater> : "ﳓ"  UFCD3  # ARABIC LIGATURE NOON WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <K> <braceright> <greater> : "ﳔ"  UFCD4  # ARABIC LIGATURE NOON WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <m> <braceright> <greater> : "ﳕ"  UFCD5  # ARABIC LIGATURE NOON WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <h> <braceright> <greater> : "ﳖ"  UFCD6  # ARABIC LIGATURE NOON WITH HEH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <h> <c> <j> <braceright> <greater> : "ﳗ"  UFCD7  # ARABIC LIGATURE HEH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <h> <c> <m> <braceright> <greater> : "ﳘ"  UFCD8  # ARABIC LIGATURE HEH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <j> <braceright> <greater> : "ﳚ"  UFCDA  # ARABIC LIGATURE YEH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <j> <braceright> <greater> : "ﳚ"  UFCDA  # ARABIC LIGATURE YEH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <H> <braceright> <greater> : "ﳛ"  UFCDB  # ARABIC LIGATURE YEH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <x> <h> <braceright> <greater> : "ﳛ"  UFCDB  # ARABIC LIGATURE YEH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <H> <braceright> <greater> : "ﳛ"  UFCDB  # ARABIC LIGATURE YEH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <x> <h> <braceright> <greater> : "ﳛ"  UFCDB  # ARABIC LIGATURE YEH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <K> <braceright> <greater> : "ﳜ"  UFCDC  # ARABIC LIGATURE YEH WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <K> <braceright> <greater> : "ﳜ"  UFCDC  # ARABIC LIGATURE YEH WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <m> <braceright> <greater> : "ﳝ"  UFCDD  # ARABIC LIGATURE YEH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <m> <braceright> <greater> : "ﳝ"  UFCDD  # ARABIC LIGATURE YEH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <h> <braceright> <greater> : "ﳞ"  UFCDE  # ARABIC LIGATURE YEH WITH HEH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <h> <braceright> <greater> : "ﳞ"  UFCDE  # ARABIC LIGATURE YEH WITH HEH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <m> <braceright> <period> : "ﳟ"  UFCDF  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <c> <h> <braceright> <period> : "ﳠ"  UFCE0  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH HEH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <m> <braceright> <period> : "ﳡ"  UFCE1  # ARABIC LIGATURE BEH WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <h> <braceright> <period> : "ﳢ"  UFCE2  # ARABIC LIGATURE BEH WITH HEH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <braceright> <period> : "ﳣ"  UFCE3  # ARABIC LIGATURE TEH WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <h> <braceright> <period> : "ﳤ"  UFCE4  # ARABIC LIGATURE TEH WITH HEH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <m> <braceright> <period> : "ﳥ"  UFCE5  # ARABIC LIGATURE THEH WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <T> <c> <h> <braceright> <period> : "ﳦ"  UFCE6  # ARABIC LIGATURE THEH WITH HEH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <m> <braceright> <period> : "ﳧ"  UFCE7  # ARABIC LIGATURE SEEN WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <h> <braceright> <period> : "ﳨ"  UFCE8  # ARABIC LIGATURE SEEN WITH HEH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <m> <braceright> <period> : "ﳩ"  UFCE9  # ARABIC LIGATURE SHEEN WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <h> <braceright> <period> : "ﳪ"  UFCEA  # ARABIC LIGATURE SHEEN WITH HEH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <l> <braceright> <period> : "ﳫ"  UFCEB  # ARABIC LIGATURE KAF WITH LAM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <m> <braceright> <period> : "ﳬ"  UFCEC  # ARABIC LIGATURE KAF WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <m> <braceright> <period> : "ﳭ"  UFCED  # ARABIC LIGATURE LAM WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <m> <braceright> <period> : "ﳮ"  UFCEE  # ARABIC LIGATURE NOON WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <h> <braceright> <period> : "ﳯ"  UFCEF  # ARABIC LIGATURE NOON WITH HEH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <m> <braceright> <period> : "ﳰ"  UFCF0  # ARABIC LIGATURE YEH WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <m> <braceright> <period> : "ﳰ"  UFCF0  # ARABIC LIGATURE YEH WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <h> <braceright> <period> : "ﳱ"  UFCF1  # ARABIC LIGATURE YEH WITH HEH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <h> <braceright> <period> : "ﳱ"  UFCF1  # ARABIC LIGATURE YEH WITH HEH MEDIAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <x> <a> <y> <braceright> <space> : "ﳵ"  UFCF5  # ARABIC LIGATURE TAH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <y> <braceright> <space> : "ﳶ"  UFCF6  # ARABIC LIGATURE TAH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <i> <braceright> <space> : "ﳶ"  UFCF6  # ARABIC LIGATURE TAH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <3> <x> <a> <y> <braceright> <space> : "ﳷ"  UFCF7  # ARABIC LIGATURE AIN WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <grave> <x> <a> <y> <braceright> <space> : "ﳷ"  UFCF7  # ARABIC LIGATURE AIN WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <y> <braceright> <space> : "ﳸ"  UFCF8  # ARABIC LIGATURE AIN WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <i> <braceright> <space> : "ﳸ"  UFCF8  # ARABIC LIGATURE AIN WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <y> <braceright> <space> : "ﳸ"  UFCF8  # ARABIC LIGATURE AIN WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <i> <braceright> <space> : "ﳸ"  UFCF8  # ARABIC LIGATURE AIN WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <G> <x> <a> <y> <braceright> <space> : "ﳹ"  UFCF9  # ARABIC LIGATURE GHAIN WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <y> <braceright> <space> : "ﳺ"  UFCFA  # ARABIC LIGATURE GHAIN WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <i> <braceright> <space> : "ﳺ"  UFCFA  # ARABIC LIGATURE GHAIN WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <s> <x> <a> <y> <braceright> <space> : "ﳻ"  UFCFB  # ARABIC LIGATURE SEEN WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <y> <braceright> <space> : "ﳼ"  UFCFC  # ARABIC LIGATURE SEEN WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <i> <braceright> <space> : "ﳼ"  UFCFC  # ARABIC LIGATURE SEEN WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <S> <x> <a> <y> <braceright> <space> : "ﳽ"  UFCFD  # ARABIC LIGATURE SHEEN WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <y> <braceright> <space> : "ﳾ"  UFCFE  # ARABIC LIGATURE SHEEN WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <i> <braceright> <space> : "ﳾ"  UFCFE  # ARABIC LIGATURE SHEEN WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <H> <x> <a> <y> <braceright> <space> : "ﳿ"  UFCFF  # ARABIC LIGATURE HAH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <h> <x> <a> <y> <braceright> <space> : "ﳿ"  UFCFF  # ARABIC LIGATURE HAH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <y> <braceright> <space> : "ﴀ"  UFD00  # ARABIC LIGATURE HAH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <i> <braceright> <space> : "ﴀ"  UFD00  # ARABIC LIGATURE HAH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <y> <braceright> <space> : "ﴀ"  UFD00  # ARABIC LIGATURE HAH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <i> <braceright> <space> : "ﴀ"  UFD00  # ARABIC LIGATURE HAH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <j> <x> <a> <y> <braceright> <space> : "ﴁ"  UFD01  # ARABIC LIGATURE JEEM WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <y> <braceright> <space> : "ﴂ"  UFD02  # ARABIC LIGATURE JEEM WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <i> <braceright> <space> : "ﴂ"  UFD02  # ARABIC LIGATURE JEEM WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <K> <x> <a> <y> <braceright> <space> : "ﴃ"  UFD03  # ARABIC LIGATURE KHAH WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <K> <c> <y> <braceright> <space> : "ﴄ"  UFD04  # ARABIC LIGATURE KHAH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <K> <c> <i> <braceright> <space> : "ﴄ"  UFD04  # ARABIC LIGATURE KHAH WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <x> <a> <y> <braceright> <space> : "ﴅ"  UFD05  # ARABIC LIGATURE SAD WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <y> <braceright> <space> : "ﴆ"  UFD06  # ARABIC LIGATURE SAD WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <i> <braceright> <space> : "ﴆ"  UFD06  # ARABIC LIGATURE SAD WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <d> <x> <a> <y> <braceright> <space> : "ﴇ"  UFD07  # ARABIC LIGATURE DAD WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <y> <braceright> <space> : "ﴈ"  UFD08  # ARABIC LIGATURE DAD WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <i> <braceright> <space> : "ﴈ"  UFD08  # ARABIC LIGATURE DAD WITH YEH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <j> <braceright> <space> : "ﴉ"  UFD09  # ARABIC LIGATURE SHEEN WITH JEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <H> <braceright> <space> : "ﴊ"  UFD0A  # ARABIC LIGATURE SHEEN WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <S> <x> <h> <braceright> <space> : "ﴊ"  UFD0A  # ARABIC LIGATURE SHEEN WITH HAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <K> <braceright> <space> : "ﴋ"  UFD0B  # ARABIC LIGATURE SHEEN WITH KHAH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <m> <braceright> <space> : "ﴌ"  UFD0C  # ARABIC LIGATURE SHEEN WITH MEEM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <r> <braceright> <space> : "ﴍ"  UFD0D  # ARABIC LIGATURE SHEEN WITH REH ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <r> <braceright> <space> : "ﴎ"  UFD0E  # ARABIC LIGATURE SEEN WITH REH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <r> <braceright> <space> : "ﴏ"  UFD0F  # ARABIC LIGATURE SAD WITH REH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <r> <braceright> <space> : "ﴐ"  UFD10  # ARABIC LIGATURE DAD WITH REH ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <t> <x> <a> <y> <braceright> <less> : "ﴑ"  UFD11  # ARABIC LIGATURE TAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <y> <braceright> <less> : "ﴒ"  UFD12  # ARABIC LIGATURE TAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <i> <braceright> <less> : "ﴒ"  UFD12  # ARABIC LIGATURE TAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <x> <a> <y> <braceright> <less> : "ﴓ"  UFD13  # ARABIC LIGATURE AIN WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <x> <a> <y> <braceright> <less> : "ﴓ"  UFD13  # ARABIC LIGATURE AIN WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <y> <braceright> <less> : "ﴔ"  UFD14  # ARABIC LIGATURE AIN WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <i> <braceright> <less> : "ﴔ"  UFD14  # ARABIC LIGATURE AIN WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <y> <braceright> <less> : "ﴔ"  UFD14  # ARABIC LIGATURE AIN WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <i> <braceright> <less> : "ﴔ"  UFD14  # ARABIC LIGATURE AIN WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <G> <x> <a> <y> <braceright> <less> : "ﴕ"  UFD15  # ARABIC LIGATURE GHAIN WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <y> <braceright> <less> : "ﴖ"  UFD16  # ARABIC LIGATURE GHAIN WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <i> <braceright> <less> : "ﴖ"  UFD16  # ARABIC LIGATURE GHAIN WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <x> <a> <y> <braceright> <less> : "ﴗ"  UFD17  # ARABIC LIGATURE SEEN WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <y> <braceright> <less> : "ﴘ"  UFD18  # ARABIC LIGATURE SEEN WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <i> <braceright> <less> : "ﴘ"  UFD18  # ARABIC LIGATURE SEEN WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <x> <a> <y> <braceright> <less> : "ﴙ"  UFD19  # ARABIC LIGATURE SHEEN WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <y> <braceright> <less> : "ﴚ"  UFD1A  # ARABIC LIGATURE SHEEN WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <i> <braceright> <less> : "ﴚ"  UFD1A  # ARABIC LIGATURE SHEEN WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <H> <x> <a> <y> <braceright> <less> : "ﴛ"  UFD1B  # ARABIC LIGATURE HAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <x> <h> <x> <a> <y> <braceright> <less> : "ﴛ"  UFD1B  # ARABIC LIGATURE HAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <y> <braceright> <less> : "ﴜ"  UFD1C  # ARABIC LIGATURE HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <i> <braceright> <less> : "ﴜ"  UFD1C  # ARABIC LIGATURE HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <y> <braceright> <less> : "ﴜ"  UFD1C  # ARABIC LIGATURE HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <i> <braceright> <less> : "ﴜ"  UFD1C  # ARABIC LIGATURE HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <x> <a> <y> <braceright> <less> : "ﴝ"  UFD1D  # ARABIC LIGATURE JEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <y> <braceright> <less> : "ﴞ"  UFD1E  # ARABIC LIGATURE JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <i> <braceright> <less> : "ﴞ"  UFD1E  # ARABIC LIGATURE JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <K> <x> <a> <y> <braceright> <less> : "ﴟ"  UFD1F  # ARABIC LIGATURE KHAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <K> <c> <y> <braceright> <less> : "ﴠ"  UFD20  # ARABIC LIGATURE KHAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <K> <c> <i> <braceright> <less> : "ﴠ"  UFD20  # ARABIC LIGATURE KHAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <x> <a> <y> <braceright> <less> : "ﴡ"  UFD21  # ARABIC LIGATURE SAD WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <y> <braceright> <less> : "ﴢ"  UFD22  # ARABIC LIGATURE SAD WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <i> <braceright> <less> : "ﴢ"  UFD22  # ARABIC LIGATURE SAD WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <x> <a> <y> <braceright> <less> : "ﴣ"  UFD23  # ARABIC LIGATURE DAD WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <y> <braceright> <less> : "ﴤ"  UFD24  # ARABIC LIGATURE DAD WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <i> <braceright> <less> : "ﴤ"  UFD24  # ARABIC LIGATURE DAD WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <j> <braceright> <less> : "ﴥ"  UFD25  # ARABIC LIGATURE SHEEN WITH JEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <H> <braceright> <less> : "ﴦ"  UFD26  # ARABIC LIGATURE SHEEN WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <x> <h> <braceright> <less> : "ﴦ"  UFD26  # ARABIC LIGATURE SHEEN WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <K> <braceright> <less> : "ﴧ"  UFD27  # ARABIC LIGATURE SHEEN WITH KHAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <m> <braceright> <less> : "ﴨ"  UFD28  # ARABIC LIGATURE SHEEN WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <r> <braceright> <less> : "ﴩ"  UFD29  # ARABIC LIGATURE SHEEN WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <r> <braceright> <less> : "ﴪ"  UFD2A  # ARABIC LIGATURE SEEN WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <r> <braceright> <less> : "ﴫ"  UFD2B  # ARABIC LIGATURE SAD WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <r> <braceright> <less> : "ﴬ"  UFD2C  # ARABIC LIGATURE DAD WITH REH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <j> <braceright> <greater> : "ﴭ"  UFD2D  # ARABIC LIGATURE SHEEN WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <H> <braceright> <greater> : "ﴮ"  UFD2E  # ARABIC LIGATURE SHEEN WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <x> <h> <braceright> <greater> : "ﴮ"  UFD2E  # ARABIC LIGATURE SHEEN WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <K> <braceright> <greater> : "ﴯ"  UFD2F  # ARABIC LIGATURE SHEEN WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <m> <braceright> <greater> : "ﴰ"  UFD30  # ARABIC LIGATURE SHEEN WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <h> <braceright> <greater> : "ﴱ"  UFD31  # ARABIC LIGATURE SEEN WITH HEH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <h> <braceright> <greater> : "ﴲ"  UFD32  # ARABIC LIGATURE SHEEN WITH HEH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <m> <braceright> <greater> : "ﴳ"  UFD33  # ARABIC LIGATURE TAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <j> <braceright> <period> : "ﴴ"  UFD34  # ARABIC LIGATURE SEEN WITH JEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <H> <braceright> <period> : "ﴵ"  UFD35  # ARABIC LIGATURE SEEN WITH HAH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <x> <h> <braceright> <period> : "ﴵ"  UFD35  # ARABIC LIGATURE SEEN WITH HAH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <K> <braceright> <period> : "ﴶ"  UFD36  # ARABIC LIGATURE SEEN WITH KHAH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <j> <braceright> <period> : "ﴷ"  UFD37  # ARABIC LIGATURE SHEEN WITH JEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <H> <braceright> <period> : "ﴸ"  UFD38  # ARABIC LIGATURE SHEEN WITH HAH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <x> <h> <braceright> <period> : "ﴸ"  UFD38  # ARABIC LIGATURE SHEEN WITH HAH MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <K> <braceright> <period> : "ﴹ"  UFD39  # ARABIC LIGATURE SHEEN WITH KHAH MEDIAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <m> <braceright> <period> : "ﴺ"  UFD3A  # ARABIC LIGATURE TAH WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <x> <z> <c> <m> <braceright> <period> : "ﴻ"  UFD3B  # ARABIC LIGATURE ZAH WITH MEEM MEDIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <j> <c> <m> <braceright> <greater> : "ﵐ"  UFD50  # ARABIC LIGATURE TEH WITH JEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <H> <c> <j> <braceright> <less> : "ﵑ"  UFD51  # ARABIC LIGATURE TEH WITH HAH WITH JEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <x> <h> <c> <j> <braceright> <less> : "ﵑ"  UFD51  # ARABIC LIGATURE TEH WITH HAH WITH JEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <H> <c> <j> <braceright> <greater> : "ﵒ"  UFD52  # ARABIC LIGATURE TEH WITH HAH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <x> <h> <c> <j> <braceright> <greater> : "ﵒ"  UFD52  # ARABIC LIGATURE TEH WITH HAH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <H> <c> <m> <braceright> <greater> : "ﵓ"  UFD53  # ARABIC LIGATURE TEH WITH HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <x> <h> <c> <m> <braceright> <greater> : "ﵓ"  UFD53  # ARABIC LIGATURE TEH WITH HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <K> <c> <m> <braceright> <greater> : "ﵔ"  UFD54  # ARABIC LIGATURE TEH WITH KHAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <c> <j> <braceright> <greater> : "ﵕ"  UFD55  # ARABIC LIGATURE TEH WITH MEEM WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <c> <H> <braceright> <greater> : "ﵖ"  UFD56  # ARABIC LIGATURE TEH WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <x> <h> <braceright> <greater> : "ﵖ"  UFD56  # ARABIC LIGATURE TEH WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <c> <K> <braceright> <greater> : "ﵗ"  UFD57  # ARABIC LIGATURE TEH WITH MEEM WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <m> <c> <H> <braceright> <less> : "ﵘ"  UFD58  # ARABIC LIGATURE JEEM WITH MEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <m> <x> <h> <braceright> <less> : "ﵘ"  UFD58  # ARABIC LIGATURE JEEM WITH MEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <m> <c> <H> <braceright> <greater> : "ﵙ"  UFD59  # ARABIC LIGATURE JEEM WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <m> <x> <h> <braceright> <greater> : "ﵙ"  UFD59  # ARABIC LIGATURE JEEM WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <m> <c> <y> <braceright> <less> : "ﵚ"  UFD5A  # ARABIC LIGATURE HAH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <m> <c> <i> <braceright> <less> : "ﵚ"  UFD5A  # ARABIC LIGATURE HAH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <m> <c> <y> <braceright> <less> : "ﵚ"  UFD5A  # ARABIC LIGATURE HAH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <m> <c> <i> <braceright> <less> : "ﵚ"  UFD5A  # ARABIC LIGATURE HAH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <m> <x> <a> <y> <braceright> <less> : "ﵛ"  UFD5B  # ARABIC LIGATURE HAH WITH MEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <m> <x> <a> <y> <braceright> <less> : "ﵛ"  UFD5B  # ARABIC LIGATURE HAH WITH MEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <H> <c> <j> <braceright> <greater> : "ﵜ"  UFD5C  # ARABIC LIGATURE SEEN WITH HAH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <x> <h> <c> <j> <braceright> <greater> : "ﵜ"  UFD5C  # ARABIC LIGATURE SEEN WITH HAH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <j> <c> <H> <braceright> <greater> : "ﵝ"  UFD5D  # ARABIC LIGATURE SEEN WITH JEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <j> <x> <h> <braceright> <greater> : "ﵝ"  UFD5D  # ARABIC LIGATURE SEEN WITH JEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <j> <x> <a> <y> <braceright> <less> : "ﵞ"  UFD5E  # ARABIC LIGATURE SEEN WITH JEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <m> <c> <H> <braceright> <less> : "ﵟ"  UFD5F  # ARABIC LIGATURE SEEN WITH MEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <m> <x> <h> <braceright> <less> : "ﵟ"  UFD5F  # ARABIC LIGATURE SEEN WITH MEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <m> <c> <H> <braceright> <greater> : "ﵠ"  UFD60  # ARABIC LIGATURE SEEN WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <m> <x> <h> <braceright> <greater> : "ﵠ"  UFD60  # ARABIC LIGATURE SEEN WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <m> <c> <j> <braceright> <greater> : "ﵡ"  UFD61  # ARABIC LIGATURE SEEN WITH MEEM WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <m> <c> <m> <braceright> <less> : "ﵢ"  UFD62  # ARABIC LIGATURE SEEN WITH MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <m> <c> <m> <braceright> <greater> : "ﵣ"  UFD63  # ARABIC LIGATURE SEEN WITH MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <H> <c> <H> <braceright> <less> : "ﵤ"  UFD64  # ARABIC LIGATURE SAD WITH HAH WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <H> <x> <h> <braceright> <less> : "ﵤ"  UFD64  # ARABIC LIGATURE SAD WITH HAH WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <x> <h> <c> <H> <braceright> <less> : "ﵤ"  UFD64  # ARABIC LIGATURE SAD WITH HAH WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <x> <h> <x> <h> <braceright> <less> : "ﵤ"  UFD64  # ARABIC LIGATURE SAD WITH HAH WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <H> <c> <H> <braceright> <greater> : "ﵥ"  UFD65  # ARABIC LIGATURE SAD WITH HAH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <H> <x> <h> <braceright> <greater> : "ﵥ"  UFD65  # ARABIC LIGATURE SAD WITH HAH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <x> <h> <c> <H> <braceright> <greater> : "ﵥ"  UFD65  # ARABIC LIGATURE SAD WITH HAH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <x> <h> <x> <h> <braceright> <greater> : "ﵥ"  UFD65  # ARABIC LIGATURE SAD WITH HAH WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <m> <c> <m> <braceright> <less> : "ﵦ"  UFD66  # ARABIC LIGATURE SAD WITH MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <H> <c> <m> <braceright> <less> : "ﵧ"  UFD67  # ARABIC LIGATURE SHEEN WITH HAH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <x> <h> <c> <m> <braceright> <less> : "ﵧ"  UFD67  # ARABIC LIGATURE SHEEN WITH HAH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <H> <c> <m> <braceright> <greater> : "ﵨ"  UFD68  # ARABIC LIGATURE SHEEN WITH HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <x> <h> <c> <m> <braceright> <greater> : "ﵨ"  UFD68  # ARABIC LIGATURE SHEEN WITH HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <j> <c> <y> <braceright> <less> : "ﵩ"  UFD69  # ARABIC LIGATURE SHEEN WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <j> <c> <i> <braceright> <less> : "ﵩ"  UFD69  # ARABIC LIGATURE SHEEN WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <m> <c> <K> <braceright> <less> : "ﵪ"  UFD6A  # ARABIC LIGATURE SHEEN WITH MEEM WITH KHAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <m> <c> <K> <braceright> <greater> : "ﵫ"  UFD6B  # ARABIC LIGATURE SHEEN WITH MEEM WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <m> <c> <m> <braceright> <less> : "ﵬ"  UFD6C  # ARABIC LIGATURE SHEEN WITH MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <m> <c> <m> <braceright> <greater> : "ﵭ"  UFD6D  # ARABIC LIGATURE SHEEN WITH MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <H> <x> <a> <y> <braceright> <less> : "ﵮ"  UFD6E  # ARABIC LIGATURE DAD WITH HAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <x> <h> <x> <a> <y> <braceright> <less> : "ﵮ"  UFD6E  # ARABIC LIGATURE DAD WITH HAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <K> <c> <m> <braceright> <less> : "ﵯ"  UFD6F  # ARABIC LIGATURE DAD WITH KHAH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <K> <c> <m> <braceright> <greater> : "ﵰ"  UFD70  # ARABIC LIGATURE DAD WITH KHAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <m> <c> <H> <braceright> <less> : "ﵱ"  UFD71  # ARABIC LIGATURE TAH WITH MEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <m> <x> <h> <braceright> <less> : "ﵱ"  UFD71  # ARABIC LIGATURE TAH WITH MEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <m> <c> <H> <braceright> <greater> : "ﵲ"  UFD72  # ARABIC LIGATURE TAH WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <m> <x> <h> <braceright> <greater> : "ﵲ"  UFD72  # ARABIC LIGATURE TAH WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <m> <c> <m> <braceright> <greater> : "ﵳ"  UFD73  # ARABIC LIGATURE TAH WITH MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <m> <c> <y> <braceright> <less> : "ﵴ"  UFD74  # ARABIC LIGATURE TAH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <t> <c> <m> <c> <i> <braceright> <less> : "ﵴ"  UFD74  # ARABIC LIGATURE TAH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <j> <c> <m> <braceright> <less> : "ﵵ"  UFD75  # ARABIC LIGATURE AIN WITH JEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <j> <c> <m> <braceright> <less> : "ﵵ"  UFD75  # ARABIC LIGATURE AIN WITH JEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <m> <c> <m> <braceright> <less> : "ﵶ"  UFD76  # ARABIC LIGATURE AIN WITH MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <m> <c> <m> <braceright> <less> : "ﵶ"  UFD76  # ARABIC LIGATURE AIN WITH MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <m> <c> <m> <braceright> <greater> : "ﵷ"  UFD77  # ARABIC LIGATURE AIN WITH MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <m> <c> <m> <braceright> <greater> : "ﵷ"  UFD77  # ARABIC LIGATURE AIN WITH MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <m> <x> <a> <y> <braceright> <less> : "ﵸ"  UFD78  # ARABIC LIGATURE AIN WITH MEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <m> <x> <a> <y> <braceright> <less> : "ﵸ"  UFD78  # ARABIC LIGATURE AIN WITH MEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <m> <c> <m> <braceright> <less> : "ﵹ"  UFD79  # ARABIC LIGATURE GHAIN WITH MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <m> <c> <y> <braceright> <less> : "ﵺ"  UFD7A  # ARABIC LIGATURE GHAIN WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <m> <c> <i> <braceright> <less> : "ﵺ"  UFD7A  # ARABIC LIGATURE GHAIN WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <G> <c> <m> <x> <a> <y> <braceright> <less> : "ﵻ"  UFD7B  # ARABIC LIGATURE GHAIN WITH MEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <K> <c> <m> <braceright> <less> : "ﵼ"  UFD7C  # ARABIC LIGATURE FEH WITH KHAH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <K> <c> <m> <braceright> <greater> : "ﵽ"  UFD7D  # ARABIC LIGATURE FEH WITH KHAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <m> <c> <H> <braceright> <less> : "ﵾ"  UFD7E  # ARABIC LIGATURE QAF WITH MEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <m> <x> <h> <braceright> <less> : "ﵾ"  UFD7E  # ARABIC LIGATURE QAF WITH MEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <m> <c> <m> <braceright> <less> : "ﵿ"  UFD7F  # ARABIC LIGATURE QAF WITH MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <H> <c> <m> <braceright> <less> : "ﶀ"  UFD80  # ARABIC LIGATURE LAM WITH HAH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <h> <c> <m> <braceright> <less> : "ﶀ"  UFD80  # ARABIC LIGATURE LAM WITH HAH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <H> <c> <y> <braceright> <less> : "ﶁ"  UFD81  # ARABIC LIGATURE LAM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <H> <c> <i> <braceright> <less> : "ﶁ"  UFD81  # ARABIC LIGATURE LAM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <h> <c> <y> <braceright> <less> : "ﶁ"  UFD81  # ARABIC LIGATURE LAM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <h> <c> <i> <braceright> <less> : "ﶁ"  UFD81  # ARABIC LIGATURE LAM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <H> <x> <a> <y> <braceright> <less> : "ﶂ"  UFD82  # ARABIC LIGATURE LAM WITH HAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <h> <x> <a> <y> <braceright> <less> : "ﶂ"  UFD82  # ARABIC LIGATURE LAM WITH HAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <j> <c> <j> <braceright> <greater> : "ﶃ"  UFD83  # ARABIC LIGATURE LAM WITH JEEM WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <j> <c> <j> <braceright> <less> : "ﶄ"  UFD84  # ARABIC LIGATURE LAM WITH JEEM WITH JEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <K> <c> <m> <braceright> <less> : "ﶅ"  UFD85  # ARABIC LIGATURE LAM WITH KHAH WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <K> <c> <m> <braceright> <greater> : "ﶆ"  UFD86  # ARABIC LIGATURE LAM WITH KHAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <m> <c> <H> <braceright> <less> : "ﶇ"  UFD87  # ARABIC LIGATURE LAM WITH MEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <m> <x> <h> <braceright> <less> : "ﶇ"  UFD87  # ARABIC LIGATURE LAM WITH MEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <m> <c> <H> <braceright> <greater> : "ﶈ"  UFD88  # ARABIC LIGATURE LAM WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <m> <x> <h> <braceright> <greater> : "ﶈ"  UFD88  # ARABIC LIGATURE LAM WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <H> <c> <j> <braceright> <greater> : "ﶉ"  UFD89  # ARABIC LIGATURE MEEM WITH HAH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <x> <h> <c> <j> <braceright> <greater> : "ﶉ"  UFD89  # ARABIC LIGATURE MEEM WITH HAH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <H> <c> <m> <braceright> <greater> : "ﶊ"  UFD8A  # ARABIC LIGATURE MEEM WITH HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <x> <h> <c> <m> <braceright> <greater> : "ﶊ"  UFD8A  # ARABIC LIGATURE MEEM WITH HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <H> <c> <y> <braceright> <less> : "ﶋ"  UFD8B  # ARABIC LIGATURE MEEM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <H> <c> <i> <braceright> <less> : "ﶋ"  UFD8B  # ARABIC LIGATURE MEEM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <x> <h> <c> <y> <braceright> <less> : "ﶋ"  UFD8B  # ARABIC LIGATURE MEEM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <x> <h> <c> <i> <braceright> <less> : "ﶋ"  UFD8B  # ARABIC LIGATURE MEEM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <j> <c> <H> <braceright> <greater> : "ﶌ"  UFD8C  # ARABIC LIGATURE MEEM WITH JEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <j> <x> <h> <braceright> <greater> : "ﶌ"  UFD8C  # ARABIC LIGATURE MEEM WITH JEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <j> <c> <m> <braceright> <greater> : "ﶍ"  UFD8D  # ARABIC LIGATURE MEEM WITH JEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <K> <c> <j> <braceright> <greater> : "ﶎ"  UFD8E  # ARABIC LIGATURE MEEM WITH KHAH WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <K> <c> <m> <braceright> <greater> : "ﶏ"  UFD8F  # ARABIC LIGATURE MEEM WITH KHAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <j> <c> <K> <braceright> <greater> : "ﶒ"  UFD92  # ARABIC LIGATURE MEEM WITH JEEM WITH KHAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <h> <c> <m> <c> <j> <braceright> <greater> : "ﶓ"  UFD93  # ARABIC LIGATURE HEH WITH MEEM WITH JEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <h> <c> <m> <c> <m> <braceright> <greater> : "ﶔ"  UFD94  # ARABIC LIGATURE HEH WITH MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <H> <c> <m> <braceright> <greater> : "ﶕ"  UFD95  # ARABIC LIGATURE NOON WITH HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <x> <h> <c> <m> <braceright> <greater> : "ﶕ"  UFD95  # ARABIC LIGATURE NOON WITH HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <H> <x> <a> <y> <braceright> <less> : "ﶖ"  UFD96  # ARABIC LIGATURE NOON WITH HAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <x> <h> <x> <a> <y> <braceright> <less> : "ﶖ"  UFD96  # ARABIC LIGATURE NOON WITH HAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <c> <m> <braceright> <less> : "ﶗ"  UFD97  # ARABIC LIGATURE NOON WITH JEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <c> <m> <braceright> <greater> : "ﶘ"  UFD98  # ARABIC LIGATURE NOON WITH JEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <x> <a> <y> <braceright> <less> : "ﶙ"  UFD99  # ARABIC LIGATURE NOON WITH JEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <m> <c> <y> <braceright> <less> : "ﶚ"  UFD9A  # ARABIC LIGATURE NOON WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <m> <c> <i> <braceright> <less> : "ﶚ"  UFD9A  # ARABIC LIGATURE NOON WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <m> <x> <a> <y> <braceright> <less> : "ﶛ"  UFD9B  # ARABIC LIGATURE NOON WITH MEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <m> <c> <m> <braceright> <less> : "ﶜ"  UFD9C  # ARABIC LIGATURE YEH WITH MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <m> <c> <m> <braceright> <less> : "ﶜ"  UFD9C  # ARABIC LIGATURE YEH WITH MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <m> <c> <m> <braceright> <greater> : "ﶝ"  UFD9D  # ARABIC LIGATURE YEH WITH MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <m> <c> <m> <braceright> <greater> : "ﶝ"  UFD9D  # ARABIC LIGATURE YEH WITH MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <K> <c> <y> <braceright> <less> : "ﶞ"  UFD9E  # ARABIC LIGATURE BEH WITH KHAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <K> <c> <i> <braceright> <less> : "ﶞ"  UFD9E  # ARABIC LIGATURE BEH WITH KHAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <j> <c> <y> <braceright> <less> : "ﶟ"  UFD9F  # ARABIC LIGATURE TEH WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <j> <c> <i> <braceright> <less> : "ﶟ"  UFD9F  # ARABIC LIGATURE TEH WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <j> <x> <a> <y> <braceright> <less> : "ﶠ"  UFDA0  # ARABIC LIGATURE TEH WITH JEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <K> <c> <y> <braceright> <less> : "ﶡ"  UFDA1  # ARABIC LIGATURE TEH WITH KHAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <K> <c> <i> <braceright> <less> : "ﶡ"  UFDA1  # ARABIC LIGATURE TEH WITH KHAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <K> <x> <a> <y> <braceright> <less> : "ﶢ"  UFDA2  # ARABIC LIGATURE TEH WITH KHAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <c> <y> <braceright> <less> : "ﶣ"  UFDA3  # ARABIC LIGATURE TEH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <c> <i> <braceright> <less> : "ﶣ"  UFDA3  # ARABIC LIGATURE TEH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <t> <c> <m> <x> <a> <y> <braceright> <less> : "ﶤ"  UFDA4  # ARABIC LIGATURE TEH WITH MEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <m> <c> <y> <braceright> <less> : "ﶥ"  UFDA5  # ARABIC LIGATURE JEEM WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <m> <c> <i> <braceright> <less> : "ﶥ"  UFDA5  # ARABIC LIGATURE JEEM WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <H> <x> <a> <y> <braceright> <less> : "ﶦ"  UFDA6  # ARABIC LIGATURE JEEM WITH HAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <x> <h> <x> <a> <y> <braceright> <less> : "ﶦ"  UFDA6  # ARABIC LIGATURE JEEM WITH HAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <m> <x> <a> <y> <braceright> <less> : "ﶧ"  UFDA7  # ARABIC LIGATURE JEEM WITH MEEM WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <K> <x> <a> <y> <braceright> <less> : "ﶨ"  UFDA8  # ARABIC LIGATURE SEEN WITH KHAH WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <H> <c> <y> <braceright> <less> : "ﶩ"  UFDA9  # ARABIC LIGATURE SAD WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <H> <c> <i> <braceright> <less> : "ﶩ"  UFDA9  # ARABIC LIGATURE SAD WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <x> <h> <c> <y> <braceright> <less> : "ﶩ"  UFDA9  # ARABIC LIGATURE SAD WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <x> <h> <c> <i> <braceright> <less> : "ﶩ"  UFDA9  # ARABIC LIGATURE SAD WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <H> <c> <y> <braceright> <less> : "ﶪ"  UFDAA  # ARABIC LIGATURE SHEEN WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <c> <H> <c> <i> <braceright> <less> : "ﶪ"  UFDAA  # ARABIC LIGATURE SHEEN WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <x> <h> <c> <y> <braceright> <less> : "ﶪ"  UFDAA  # ARABIC LIGATURE SHEEN WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <S> <x> <h> <c> <i> <braceright> <less> : "ﶪ"  UFDAA  # ARABIC LIGATURE SHEEN WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <H> <c> <y> <braceright> <less> : "ﶫ"  UFDAB  # ARABIC LIGATURE DAD WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <c> <H> <c> <i> <braceright> <less> : "ﶫ"  UFDAB  # ARABIC LIGATURE DAD WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <x> <h> <c> <y> <braceright> <less> : "ﶫ"  UFDAB  # ARABIC LIGATURE DAD WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <d> <x> <h> <c> <i> <braceright> <less> : "ﶫ"  UFDAB  # ARABIC LIGATURE DAD WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <j> <c> <y> <braceright> <less> : "ﶬ"  UFDAC  # ARABIC LIGATURE LAM WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <j> <c> <i> <braceright> <less> : "ﶬ"  UFDAC  # ARABIC LIGATURE LAM WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <m> <c> <y> <braceright> <less> : "ﶭ"  UFDAD  # ARABIC LIGATURE LAM WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <m> <c> <i> <braceright> <less> : "ﶭ"  UFDAD  # ARABIC LIGATURE LAM WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <H> <c> <y> <braceright> <less> : "ﶮ"  UFDAE  # ARABIC LIGATURE YEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <H> <c> <i> <braceright> <less> : "ﶮ"  UFDAE  # ARABIC LIGATURE YEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <x> <h> <c> <y> <braceright> <less> : "ﶮ"  UFDAE  # ARABIC LIGATURE YEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <x> <h> <c> <i> <braceright> <less> : "ﶮ"  UFDAE  # ARABIC LIGATURE YEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <H> <c> <y> <braceright> <less> : "ﶮ"  UFDAE  # ARABIC LIGATURE YEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <H> <c> <i> <braceright> <less> : "ﶮ"  UFDAE  # ARABIC LIGATURE YEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <x> <h> <c> <y> <braceright> <less> : "ﶮ"  UFDAE  # ARABIC LIGATURE YEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <x> <h> <c> <i> <braceright> <less> : "ﶮ"  UFDAE  # ARABIC LIGATURE YEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <j> <c> <y> <braceright> <less> : "ﶯ"  UFDAF  # ARABIC LIGATURE YEH WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <j> <c> <i> <braceright> <less> : "ﶯ"  UFDAF  # ARABIC LIGATURE YEH WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <j> <c> <y> <braceright> <less> : "ﶯ"  UFDAF  # ARABIC LIGATURE YEH WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <j> <c> <i> <braceright> <less> : "ﶯ"  UFDAF  # ARABIC LIGATURE YEH WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <m> <c> <y> <braceright> <less> : "ﶰ"  UFDB0  # ARABIC LIGATURE YEH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <y> <c> <m> <c> <i> <braceright> <less> : "ﶰ"  UFDB0  # ARABIC LIGATURE YEH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <m> <c> <y> <braceright> <less> : "ﶰ"  UFDB0  # ARABIC LIGATURE YEH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <i> <c> <m> <c> <i> <braceright> <less> : "ﶰ"  UFDB0  # ARABIC LIGATURE YEH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <m> <c> <y> <braceright> <less> : "ﶱ"  UFDB1  # ARABIC LIGATURE MEEM WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <m> <c> <i> <braceright> <less> : "ﶱ"  UFDB1  # ARABIC LIGATURE MEEM WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <m> <c> <y> <braceright> <less> : "ﶲ"  UFDB2  # ARABIC LIGATURE QAF WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <m> <c> <i> <braceright> <less> : "ﶲ"  UFDB2  # ARABIC LIGATURE QAF WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <H> <c> <y> <braceright> <less> : "ﶳ"  UFDB3  # ARABIC LIGATURE NOON WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <H> <c> <i> <braceright> <less> : "ﶳ"  UFDB3  # ARABIC LIGATURE NOON WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <x> <h> <c> <y> <braceright> <less> : "ﶳ"  UFDB3  # ARABIC LIGATURE NOON WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <x> <h> <c> <i> <braceright> <less> : "ﶳ"  UFDB3  # ARABIC LIGATURE NOON WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <m> <c> <H> <braceright> <greater> : "ﶴ"  UFDB4  # ARABIC LIGATURE QAF WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <m> <x> <h> <braceright> <greater> : "ﶴ"  UFDB4  # ARABIC LIGATURE QAF WITH MEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <H> <c> <m> <braceright> <greater> : "ﶵ"  UFDB5  # ARABIC LIGATURE LAM WITH HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <h> <c> <m> <braceright> <greater> : "ﶵ"  UFDB5  # ARABIC LIGATURE LAM WITH HAH WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <m> <c> <y> <braceright> <less> : "ﶶ"  UFDB6  # ARABIC LIGATURE AIN WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <m> <c> <i> <braceright> <less> : "ﶶ"  UFDB6  # ARABIC LIGATURE AIN WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <m> <c> <y> <braceright> <less> : "ﶶ"  UFDB6  # ARABIC LIGATURE AIN WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <m> <c> <i> <braceright> <less> : "ﶶ"  UFDB6  # ARABIC LIGATURE AIN WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <m> <c> <y> <braceright> <less> : "ﶷ"  UFDB7  # ARABIC LIGATURE KAF WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <m> <c> <i> <braceright> <less> : "ﶷ"  UFDB7  # ARABIC LIGATURE KAF WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <c> <H> <braceright> <greater> : "ﶸ"  UFDB8  # ARABIC LIGATURE NOON WITH JEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <x> <h> <braceright> <greater> : "ﶸ"  UFDB8  # ARABIC LIGATURE NOON WITH JEEM WITH HAH INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <K> <c> <y> <braceright> <less> : "ﶹ"  UFDB9  # ARABIC LIGATURE MEEM WITH KHAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <K> <c> <i> <braceright> <less> : "ﶹ"  UFDB9  # ARABIC LIGATURE MEEM WITH KHAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <j> <c> <m> <braceright> <greater> : "ﶺ"  UFDBA  # ARABIC LIGATURE LAM WITH JEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <m> <c> <m> <braceright> <less> : "ﶻ"  UFDBB  # ARABIC LIGATURE KAF WITH MEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <j> <c> <m> <braceright> <less> : "ﶼ"  UFDBC  # ARABIC LIGATURE LAM WITH JEEM WITH MEEM FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <c> <H> <braceright> <less> : "ﶽ"  UFDBD  # ARABIC LIGATURE NOON WITH JEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <x> <h> <braceright> <less> : "ﶽ"  UFDBD  # ARABIC LIGATURE NOON WITH JEEM WITH HAH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <H> <c> <y> <braceright> <less> : "ﶾ"  UFDBE  # ARABIC LIGATURE JEEM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <c> <H> <c> <i> <braceright> <less> : "ﶾ"  UFDBE  # ARABIC LIGATURE JEEM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <x> <h> <c> <y> <braceright> <less> : "ﶾ"  UFDBE  # ARABIC LIGATURE JEEM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <j> <x> <h> <c> <i> <braceright> <less> : "ﶾ"  UFDBE  # ARABIC LIGATURE JEEM WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <j> <c> <y> <braceright> <less> : "ﶿ"  UFDBF  # ARABIC LIGATURE HAH WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <H> <c> <j> <c> <i> <braceright> <less> : "ﶿ"  UFDBF  # ARABIC LIGATURE HAH WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <j> <c> <y> <braceright> <less> : "ﶿ"  UFDBF  # ARABIC LIGATURE HAH WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <x> <h> <c> <j> <c> <i> <braceright> <less> : "ﶿ"  UFDBF  # ARABIC LIGATURE HAH WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <j> <c> <y> <braceright> <less> : "ﷀ"  UFDC0  # ARABIC LIGATURE MEEM WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <m> <c> <j> <c> <i> <braceright> <less> : "ﷀ"  UFDC0  # ARABIC LIGATURE MEEM WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <m> <c> <y> <braceright> <less> : "ﷁ"  UFDC1  # ARABIC LIGATURE FEH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <f> <c> <m> <c> <i> <braceright> <less> : "ﷁ"  UFDC1  # ARABIC LIGATURE FEH WITH MEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <H> <c> <y> <braceright> <less> : "ﷂ"  UFDC2  # ARABIC LIGATURE BEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <c> <H> <c> <i> <braceright> <less> : "ﷂ"  UFDC2  # ARABIC LIGATURE BEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <x> <h> <c> <y> <braceright> <less> : "ﷂ"  UFDC2  # ARABIC LIGATURE BEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <b> <x> <h> <c> <i> <braceright> <less> : "ﷂ"  UFDC2  # ARABIC LIGATURE BEH WITH HAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <k> <c> <m> <c> <m> <braceright> <greater> : "ﷃ"  UFDC3  # ARABIC LIGATURE KAF WITH MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <j> <c> <m> <braceright> <greater> : "ﷄ"  UFDC4  # ARABIC LIGATURE AIN WITH JEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <j> <c> <m> <braceright> <greater> : "ﷄ"  UFDC4  # ARABIC LIGATURE AIN WITH JEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <m> <c> <m> <braceright> <greater> : "ﷅ"  UFDC5  # ARABIC LIGATURE SAD WITH MEEM WITH MEEM INITIAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <K> <c> <y> <braceright> <less> : "ﷆ"  UFDC6  # ARABIC LIGATURE SEEN WITH KHAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <s> <c> <K> <c> <i> <braceright> <less> : "ﷆ"  UFDC6  # ARABIC LIGATURE SEEN WITH KHAH WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <c> <y> <braceright> <less> : "ﷇ"  UFDC7  # ARABIC LIGATURE NOON WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <n> <c> <j> <c> <i> <braceright> <less> : "ﷇ"  UFDC7  # ARABIC LIGATURE NOON WITH JEEM WITH YEH FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <asciitilde> <a> <braceright> <space> : "ﻵ"  UFEF5  # ARABIC LIGATURE LAM WITH ALEF WITH MADDA ABOVE ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <asciitilde> <a> <braceright> <less> : "ﻶ"  UFEF6  # ARABIC LIGATURE LAM WITH ALEF WITH MADDA ABOVE FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <2> <a> <braceright> <space> : "ﻷ"  UFEF7  # ARABIC LIGATURE LAM WITH ALEF WITH HAMZA ABOVE ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <2> <a> <braceright> <less> : "ﻸ"  UFEF8  # ARABIC LIGATURE LAM WITH ALEF WITH HAMZA ABOVE FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <underscore> <2> <a> <braceright> <space> : "ﻹ"  UFEF9  # ARABIC LIGATURE LAM WITH ALEF WITH HAMZA BELOW ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <x> <underscore> <2> <a> <braceright> <less> : "ﻺ"  UFEFA  # ARABIC LIGATURE LAM WITH ALEF WITH HAMZA BELOW FINAL FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <a> <braceright> <space> : "ﻻ"  UFEFB  # ARABIC LIGATURE LAM WITH ALEF ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <l> <c> <a> <braceright> <less> : "ﻼ"  UFEFC  # ARABIC LIGATURE LAM WITH ALEF FINAL FORM
+
 # (A = Avestan) (Hoffmann transcription)
 
 <Multi_key> <a> <A> <a> <space> : "𐬀"  U10B00  # AVESTAN LETTER A
