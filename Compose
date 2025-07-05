@@ -5577,7 +5577,8 @@ include "%L"
 <Multi_key> <b> <d> <u> <u> <e> <Return>       : "ॗ" U0957   # DEVANAGARI VOWEL SIGN UUE
 <Multi_key> <b> <d> <comma> <l> <Return>       : "ॢ" U0962   # DEVANAGARI VOWEL SIGN VOCALIC L
 <Multi_key> <b> <d> <comma> <l> <l> <Return>   : "ॣ" U0963   # DEVANAGARI VOWEL SIGN VOCALIC LL
-<Multi_key> <b> <d> <0> <Return>                   : "्" U094D   # DEVANAGARI SIGN VIRAMA
+<Multi_key> <b> <d> <0> <Return>               : "्" U094D   # DEVANAGARI SIGN VIRAMA
+<Multi_key> <b> <d> <p> <e> <Return>           : "ॎ"  U094E  # DEVANAGARI VOWEL SIGN PRISHTHAMATRA E
 
 # Other signs
 
@@ -7026,12 +7027,13 @@ include "%L"
 
 <Multi_key> <b> <K> <J> <a> <space> : "𑈀"  U11200  # KHOJKI LETTER A
 <Multi_key> <b> <K> <J> <a> <a> <space> : "𑈁"  U11201  # KHOJKI LETTER AA
-<Multi_key> <b> <K> <J> <i> <space> : "𑈂"  U11202  # KHOJKI LETTER I
+<Multi_key> <b> <K> <J> <i> <i> <space> : "𑈂"  U11202  # KHOJKI LETTER I
 <Multi_key> <b> <K> <J> <u> <space> : "𑈃"  U11203  # KHOJKI LETTER U
 <Multi_key> <b> <K> <J> <e> <e> <space> : "𑈄"  U11204  # KHOJKI LETTER E
 <Multi_key> <b> <K> <J> <a> <i> <space> : "𑈅"  U11205  # KHOJKI LETTER AI
 <Multi_key> <b> <K> <J> <o> <o> <space> : "𑈆"  U11206  # KHOJKI LETTER O
 <Multi_key> <b> <K> <J> <a> <u> <space> : "𑈇"  U11207  # KHOJKI LETTER AU
+<Multi_key> <b> <K> <J> <i> <space> : "𑉀"  U11240  # KHOJKI LETTER SHORT I
 
 # Dependent vowels
 
@@ -7044,6 +7046,7 @@ include "%L"
 <Multi_key> <b> <K> <J> <o> <o> <Return> : "𑈲"  U11232  # KHOJKI VOWEL SIGN O
 <Multi_key> <b> <K> <J> <a> <u> <Return> : "𑈳"  U11233  # KHOJKI VOWEL SIGN AU
 <Multi_key> <b> <K> <J> <0> <Return> : "𑈵"  U11235  # KHOJKI SIGN VIRAMA
+<Multi_key> <b> <K> <J> <asciicircum> <0> <Return> : "𑈾"  U1123E  # KHOJKI SIGN SUKUN
 
 # Other signs
 
@@ -8058,6 +8061,7 @@ include "%L"
 
 # Other signs
 
+<Multi_key> <b> <M> <R> <bar> : "𑱱"  U11C71  # MARCHEN MARK SHAD
 <Multi_key> <b> <M> <R> <period> <Return> : "𑲵"  U11CB5  # MARCHEN SIGN ANUSVARA
 <Multi_key> <b> <M> <R> <period> <parenright> <Return> : "𑲶"  U11CB6  # MARCHEN SIGN CANDRABINDU
 
@@ -8238,6 +8242,7 @@ include "%L"
 <Multi_key> <b> <N> <o> <o> <Return> : "𑧜"  U119DC  # NANDINAGARI VOWEL SIGN O
 <Multi_key> <b> <N> <a> <u> <Return> : "𑧝"  U119DD  # NANDINAGARI VOWEL SIGN AU
 <Multi_key> <b> <N> <0> <Return> : "𑧠"  U119E0  # NANDINAGARI SIGN VIRAMA
+<Multi_key> <b> <N> <p> <e> <Return> : "𑧤"  U119E4  # NANDINAGARI VOWEL SIGN PRISHTHAMATRA E
 
 # Other signs
 
@@ -8246,6 +8251,8 @@ include "%L"
 <Multi_key> <b> <N> <comma> <Return> : "𑧠"  U119E0  # NANDINAGARI SIGN VIRAMA
 <Multi_key> <b> <N> <S> : "𑧡"  U119E1  # NANDINAGARI SIGN AVAGRAHA
 <Multi_key> <b> <N> <question> : "𑧢"  U119E2  # NANDINAGARI SIGN SIDDHAM
+<Multi_key> <b> <N> <space> : "𑧣"  U119E3  # NANDINAGARI HEADSTROKE
+<Multi_key> <b> <N> <period> <period> : "𑧣"  U119E3  # NANDINAGARI HEADSTROKE
 
 # (O = Odia)
 
@@ -8656,6 +8663,7 @@ include "%L"
 <Multi_key> <b> <S> <H> <o> <o> <Return> : "𑆾"  U111BE  # SHARADA VOWEL SIGN O
 <Multi_key> <b> <S> <H> <a> <u> <Return> : "𑆿"  U111BF  # SHARADA VOWEL SIGN AU
 <Multi_key> <b> <S> <H> <0> <Return> : "𑇀"  U111C0  # SHARADA SIGN VIRAMA
+<Multi_key> <b> <S> <H> <p> <e> <Return> : "𑇎"  U111CE  # SHARADA VOWEL SIGN PRISHTHAMATRA E
 
 # Other signs
 
@@ -9045,6 +9053,7 @@ include "%L"
 
 <Multi_key> <b> <T> <K> <k> <space> : "𑚊"  U1168A  # TAKRI LETTER KA
 <Multi_key> <b> <T> <K> <k> <h> : "𑚋"  U1168B  # TAKRI LETTER KHA
+<Multi_key> <b> <T> <K> <K> <H> : "𑚸"  U116B8  # TAKRI LETTER ARCHAIC KHA
 <Multi_key> <b> <T> <K> <g> <space> : "𑚌"  U1168C  # TAKRI LETTER GA
 <Multi_key> <b> <T> <K> <g> <h> : "𑚍"  U1168D  # TAKRI LETTER GHA
 <Multi_key> <b> <T> <K> <semicolon> <n> : "𑚎"  U1168E  # TAKRI LETTER NGA
@@ -12856,7 +12865,13 @@ include "%L"
 <Multi_key> <g> <P> <c> <h> : "ϭ" U03ED   # COPTIC SMALL LETTER SHIMA
 <Multi_key> <g> <P> <T> <I> : "Ϯ" U03EE   # COPTIC CAPITAL LETTER DEI
 <Multi_key> <g> <P> <t> <i> : "ϯ" U03EF   # COPTIC SMALL LETTER DEI
+<Multi_key> <g> <P> <T> <S> : "Ⳁ"  U2CC0  # COPTIC CAPITAL LETTER SAMPI
+<Multi_key> <g> <P> <t> <s> : "ⳁ"  U2CC1  # COPTIC SMALL LETTER SAMPI
 
+<Multi_key> <g> <p> <ampersand> : "ⳤ"  U2CE4  # COPTIC SYMBOL KAI
+<Multi_key> <g> <p> <period> : "⳾"  U2CFE  # COPTIC FULL STOP
+
+<Multi_key> <g> <p> <1> <slash> <2> : "⳽"  U2CFD  # COPTIC FRACTION ONE HALF
 <Multi_key> <g> <p> <1> <space> : "𐋡" U102E1   # COPTIC EPACT DIGIT ONE
 <Multi_key> <g> <p> <2> <space> : "𐋢" U102E2   # COPTIC EPACT DIGIT TWO
 <Multi_key> <g> <p> <3> <space> : "𐋣" U102E3   # COPTIC EPACT DIGIT THREE
@@ -13587,58 +13602,59 @@ include "%L"
 
 # (a = Caucasian Albanian) https://aiearmeniennes.org/artsakh/Alb-script/
 
-<Multi_key> <G> <a> <a> <space> : "𐔰"  U10530  # CAUCASIAN ALBANIAN LETTER ALT
-<Multi_key> <G> <a> <b> : "𐔱"  U10531  # CAUCASIAN ALBANIAN LETTER BET
-<Multi_key> <G> <a> <g> : "𐔲"  U10532  # CAUCASIAN ALBANIAN LETTER GIM
-<Multi_key> <G> <a> <d> : "𐔳"  U10533  # CAUCASIAN ALBANIAN LETTER DAT
-<Multi_key> <G> <a> <e> : "𐔴"  U10534  # CAUCASIAN ALBANIAN LETTER EB
-<Multi_key> <G> <a> <z> : "𐔵"  U10535  # CAUCASIAN ALBANIAN LETTER ZARL
-<Multi_key> <G> <a> <minus> <e> : "𐔶"  U10536  # CAUCASIAN ALBANIAN LETTER EYN (ē)
-<Multi_key> <G> <a> <v> <z> : "𐔷"  U10537  # CAUCASIAN ALBANIAN LETTER ZHIL (ž)
-<Multi_key> <G> <a> <t> : "𐔸"  U10538  # CAUCASIAN ALBANIAN LETTER TAS
+<Multi_key> <G> <a> <a> <space>          : "𐔰"  U10530  # CAUCASIAN ALBANIAN LETTER ALT
+<Multi_key> <G> <a> <b>                  : "𐔱"  U10531  # CAUCASIAN ALBANIAN LETTER BET
+<Multi_key> <G> <a> <g>                  : "𐔲"  U10532  # CAUCASIAN ALBANIAN LETTER GIM
+<Multi_key> <G> <a> <d>                  : "𐔳"  U10533  # CAUCASIAN ALBANIAN LETTER DAT
+<Multi_key> <G> <a> <e>                  : "𐔴"  U10534  # CAUCASIAN ALBANIAN LETTER EB
+<Multi_key> <G> <a> <z>                  : "𐔵"  U10535  # CAUCASIAN ALBANIAN LETTER ZARL
+<Multi_key> <G> <a> <minus> <e>          : "𐔶"  U10536  # CAUCASIAN ALBANIAN LETTER EYN (ē)
+<Multi_key> <G> <a> <v> <z>              : "𐔷"  U10537  # CAUCASIAN ALBANIAN LETTER ZHIL (ž)
+<Multi_key> <G> <a> <t>                  : "𐔸"  U10538  # CAUCASIAN ALBANIAN LETTER TAS
 <Multi_key> <G> <a> <exclam> <apostrophe> <c> : "𐔹"  U10539  # CAUCASIAN ALBANIAN LETTER CHA (ć̣)
-<Multi_key> <G> <a> <y> : "𐔺"  U1053A  # CAUCASIAN ALBANIAN LETTER YOWD
-<Multi_key> <G> <a> <apostrophe> <z> : "𐔻"  U1053B  # CAUCASIAN ALBANIAN LETTER ZHA (ź)
-<Multi_key> <G> <a> <i> : "𐔼"  U1053C  # CAUCASIAN ALBANIAN LETTER IRB
-<Multi_key> <G> <a> <grave> : "𐔽"  U1053D  # CAUCASIAN ALBANIAN LETTER SHA
-<Multi_key> <G> <a> <l> : "𐔾"  U1053E  # CAUCASIAN ALBANIAN LETTER LAN
-<Multi_key> <G> <a> <N> : "𐔿"  U1053F  # CAUCASIAN ALBANIAN LETTER INYA
-<Multi_key> <G> <a> <x> : "𐕀"  U10540  # CAUCASIAN ALBANIAN LETTER XEYN
-<Multi_key> <G> <a> <D> : "𐕁"  U10541  # CAUCASIAN ALBANIAN LETTER DYAN
-<Multi_key> <G> <a> <exclam> <c> : "𐕂"  U10542  # CAUCASIAN ALBANIAN LETTER CAR (c̣)
+<Multi_key> <G> <a> <y>                  : "𐔺"  U1053A  # CAUCASIAN ALBANIAN LETTER YOWD
+<Multi_key> <G> <a> <apostrophe> <z>     : "𐔻"  U1053B  # CAUCASIAN ALBANIAN LETTER ZHA (ź)
+<Multi_key> <G> <a> <i>                  : "𐔼"  U1053C  # CAUCASIAN ALBANIAN LETTER IRB
+<Multi_key> <G> <a> <grave>              : "𐔽"  U1053D  # CAUCASIAN ALBANIAN LETTER SHA
+<Multi_key> <G> <a> <l>                  : "𐔾"  U1053E  # CAUCASIAN ALBANIAN LETTER LAN
+<Multi_key> <G> <a> <N>                  : "𐔿"  U1053F  # CAUCASIAN ALBANIAN LETTER INYA
+<Multi_key> <G> <a> <x>                  : "𐕀"  U10540  # CAUCASIAN ALBANIAN LETTER XEYN
+<Multi_key> <G> <a> <D>                  : "𐕁"  U10541  # CAUCASIAN ALBANIAN LETTER DYAN
+<Multi_key> <G> <a> <exclam> <c>         : "𐕂"  U10542  # CAUCASIAN ALBANIAN LETTER CAR (c̣)
 <Multi_key> <G> <a> <apostrophe> <Multi_key> <z> <h> : "𐕃"  U10543  # CAUCASIAN ALBANIAN LETTER JHOX (ʒ́)
-<Multi_key> <G> <a> <exclam> <k> : "𐕄"  U10544  # CAUCASIAN ALBANIAN LETTER KAR (ḳ)
-<Multi_key> <G> <a> <L> : "𐕅"  U10545  # CAUCASIAN ALBANIAN LETTER LYIT
-<Multi_key> <G> <a> <h> : "𐕆"  U10546  # CAUCASIAN ALBANIAN LETTER HEYT
-<Multi_key> <G> <a> <exclam> <x> : "𐕇"  U10547  # CAUCASIAN ALBANIAN LETTER QAY (x̣)
-<Multi_key> <G> <a> <a> <o> : "𐕈"  U10548  # CAUCASIAN ALBANIAN LETTER AOR (å)
-<Multi_key> <G> <a> <apostrophe> <c> : "𐕉"  U10549  # CAUCASIAN ALBANIAN LETTER CHOY (ć)
-<Multi_key> <G> <a> <exclam> <v> <c> : "𐕊"  U1054A  # CAUCASIAN ALBANIAN LETTER CHI (č̣)
-<Multi_key> <G> <a> <C> : "𐕋"  U1054B  # CAUCASIAN ALBANIAN LETTER CYAY (č')
-<Multi_key> <G> <a> <m> : "𐕌"  U1054C  # CAUCASIAN ALBANIAN LETTER MAQ
-<Multi_key> <G> <a> <q> : "𐕍"  U1054D  # CAUCASIAN ALBANIAN LETTER QAR
-<Multi_key> <G> <a> <n> : "𐕎"  U1054E  # CAUCASIAN ALBANIAN LETTER NOWC
-<Multi_key> <G> <a> <Multi_key> <Z> <H> : "𐕏"  U1054F  # CAUCASIAN ALBANIAN LETTER DZYAY (ʒ')
-<Multi_key> <G> <a> <v> <s> : "𐕐"  U10550  # CAUCASIAN ALBANIAN LETTER SHAK (š)
+<Multi_key> <G> <a> <exclam> <k>         : "𐕄"  U10544  # CAUCASIAN ALBANIAN LETTER KAR (ḳ)
+<Multi_key> <G> <a> <L>                  : "𐕅"  U10545  # CAUCASIAN ALBANIAN LETTER LYIT
+<Multi_key> <G> <a> <h>                  : "𐕆"  U10546  # CAUCASIAN ALBANIAN LETTER HEYT
+<Multi_key> <G> <a> <exclam> <x>         : "𐕇"  U10547  # CAUCASIAN ALBANIAN LETTER QAY (x̣)
+<Multi_key> <G> <a> <a> <o>              : "𐕈"  U10548  # CAUCASIAN ALBANIAN LETTER AOR (å)
+<Multi_key> <G> <a> <apostrophe> <c>     : "𐕉"  U10549  # CAUCASIAN ALBANIAN LETTER CHOY (ć)
+<Multi_key> <G> <a> <exclam> <v> <c>     : "𐕊"  U1054A  # CAUCASIAN ALBANIAN LETTER CHI (č̣)
+<Multi_key> <G> <a> <C>                  : "𐕋"  U1054B  # CAUCASIAN ALBANIAN LETTER CYAY (č')
+<Multi_key> <G> <a> <m>                  : "𐕌"  U1054C  # CAUCASIAN ALBANIAN LETTER MAQ
+<Multi_key> <G> <a> <q>                  : "𐕍"  U1054D  # CAUCASIAN ALBANIAN LETTER QAR
+<Multi_key> <G> <a> <n>                  : "𐕎"  U1054E  # CAUCASIAN ALBANIAN LETTER NOWC
+<Multi_key> <G> <a> <Multi_key> <Z> <H>  : "𐕏"  U1054F  # CAUCASIAN ALBANIAN LETTER DZYAY (ʒ')
+<Multi_key> <G> <a> <v> <s>              : "𐕐"  U10550  # CAUCASIAN ALBANIAN LETTER SHAK (š)
 <Multi_key> <G> <a> <v> <Multi_key> <z> <h> : "𐕑"  U10551  # CAUCASIAN ALBANIAN LETTER JAYN (ǯ)
-<Multi_key> <G> <a> <o> : "𐕒"  U10552  # CAUCASIAN ALBANIAN LETTER ON
-<Multi_key> <G> <a> <exclam> <T> : "𐕓"  U10553  # CAUCASIAN ALBANIAN LETTER TYAY (ṭ')
-<Multi_key> <G> <a> <f> : "𐕔"  U10554  # CAUCASIAN ALBANIAN LETTER FAM
-<Multi_key> <G> <a> <Multi_key> <z> <h> : "𐕕"  U10555  # CAUCASIAN ALBANIAN LETTER DZAY
-<Multi_key> <G> <a> <v> <c> : "𐕖"  U10556  # CAUCASIAN ALBANIAN LETTER CHAT
-<Multi_key> <G> <a> <period> <p> : "𐕗"  U10557  # CAUCASIAN ALBANIAN LETTER PEN (ṗ)
-<Multi_key> <G> <a> <period> <g> : "𐕘"  U10558  # CAUCASIAN ALBANIAN LETTER GHEYS (ġ)
-<Multi_key> <G> <a> <r> : "𐕙"  U10559  # CAUCASIAN ALBANIAN LETTER RAT
-<Multi_key> <G> <a> <s> : "𐕚"  U1055A  # CAUCASIAN ALBANIAN LETTER SEYK
-<Multi_key> <G> <a> <v> <space> : "𐕛"  U1055B  # CAUCASIAN ALBANIAN LETTER VEYZ
-<Multi_key> <G> <a> <exclam> <t> : "𐕜"  U1055C  # CAUCASIAN ALBANIAN LETTER TIWR (ṭ)
-<Multi_key> <G> <a> <apostrophe> <s> : "𐕝"  U1055D  # CAUCASIAN ALBANIAN LETTER SHOY (ś)
-<Multi_key> <G> <a> <quotedbl> <u> : "𐕞"  U1055E  # CAUCASIAN ALBANIAN LETTER IWN (ü)
-<Multi_key> <G> <a> <exclam> <C> : "𐕟"  U1055F  # CAUCASIAN ALBANIAN LETTER CYAW (c̣')
-<Multi_key> <G> <a> <c> : "𐕠"  U10560  # CAUCASIAN ALBANIAN LETTER CAYN
-<Multi_key> <G> <a> <w> : "𐕡"  U10561  # CAUCASIAN ALBANIAN LETTER YAYD
-<Multi_key> <G> <a> <p> : "𐕢"  U10562  # CAUCASIAN ALBANIAN LETTER PIWR
-<Multi_key> <G> <a> <k> : "𐕣"  U10563  # CAUCASIAN ALBANIAN LETTER KIW
+<Multi_key> <G> <a> <o>                  : "𐕒"  U10552  # CAUCASIAN ALBANIAN LETTER ON
+<Multi_key> <G> <a> <exclam> <T>         : "𐕓"  U10553  # CAUCASIAN ALBANIAN LETTER TYAY (ṭ')
+<Multi_key> <G> <a> <f>                  : "𐕔"  U10554  # CAUCASIAN ALBANIAN LETTER FAM
+<Multi_key> <G> <a> <Multi_key> <z> <h>  : "𐕕"  U10555  # CAUCASIAN ALBANIAN LETTER DZAY
+<Multi_key> <G> <a> <v> <c>              : "𐕖"  U10556  # CAUCASIAN ALBANIAN LETTER CHAT
+<Multi_key> <G> <a> <period> <p>         : "𐕗"  U10557  # CAUCASIAN ALBANIAN LETTER PEN (ṗ)
+<Multi_key> <G> <a> <period> <g>         : "𐕘"  U10558  # CAUCASIAN ALBANIAN LETTER GHEYS (ġ)
+<Multi_key> <G> <a> <r>                  : "𐕙"  U10559  # CAUCASIAN ALBANIAN LETTER RAT
+<Multi_key> <G> <a> <s>                  : "𐕚"  U1055A  # CAUCASIAN ALBANIAN LETTER SEYK
+<Multi_key> <G> <a> <v> <space>          : "𐕛"  U1055B  # CAUCASIAN ALBANIAN LETTER VEYZ
+<Multi_key> <G> <a> <exclam> <t>         : "𐕜"  U1055C  # CAUCASIAN ALBANIAN LETTER TIWR (ṭ)
+<Multi_key> <G> <a> <apostrophe> <s>     : "𐕝"  U1055D  # CAUCASIAN ALBANIAN LETTER SHOY (ś)
+<Multi_key> <G> <a> <quotedbl> <u>       : "𐕞"  U1055E  # CAUCASIAN ALBANIAN LETTER IWN (ü)
+<Multi_key> <G> <a> <exclam> <C>         : "𐕟"  U1055F  # CAUCASIAN ALBANIAN LETTER CYAW (c̣')
+<Multi_key> <G> <a> <c>                  : "𐕠"  U10560  # CAUCASIAN ALBANIAN LETTER CAYN
+<Multi_key> <G> <a> <w>                  : "𐕡"  U10561  # CAUCASIAN ALBANIAN LETTER YAYD
+<Multi_key> <G> <a> <p>                  : "𐕢"  U10562  # CAUCASIAN ALBANIAN LETTER PIWR
+<Multi_key> <G> <a> <k>                  : "𐕣"  U10563  # CAUCASIAN ALBANIAN LETTER KIW
+<Multi_key> <G> <a> <quotedbl> <quotedbl> : "𐕯"  U1056F  # CAUCASIAN ALBANIAN CITATION MARK
 
 #########################################
 # (h) Hebrew (and other nearby scripts) #
@@ -20118,6 +20134,9 @@ include "HangulSyllables"
 <Multi_key> <Z> <M> <9> <slash> <1> <2> : "𐧾"  U109FE  # MEROITIC CURSIVE FRACTION NINE TWELFTHS
 <Multi_key> <Z> <M> <1> <0> <slash> <1> <2> : "𐧿"  U109FF  # MEROITIC CURSIVE FRACTION TEN TWELFTHS
 <Multi_key> <Z> <M> <1> <1> <slash> <1> <2> : "𐦼"  U109BC  # MEROITIC CURSIVE FRACTION ELEVEN TWELFTHS
+
+<Multi_key> <Z> <M> <braceright> <a> <n> <k> <h> : "𐦞"  U1099E  # MEROITIC HIEROGLYPHIC SYMBOL VIDJ
+<Multi_key> <Z> <M> <braceright> <2> <a> <n> <k> <h> : "𐦟"  U1099F  # MEROITIC HIEROGLYPHIC SYMBOL VIDJ-2
 
 # (n = NKo)
 
