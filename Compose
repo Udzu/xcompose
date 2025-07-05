@@ -1048,11 +1048,11 @@ include "%L"
 <Multi_key> <underscore> <underscore> <K> : "Ḵ"  U1E34  # LATIN CAPITAL LETTER K WITH LINE BELOW (conflicts with ⁻, use -^)
 <Multi_key> <underscore> <underscore> <k> : "ḵ"  U1E35  # LATIN SMALL LETTER K WITH LINE BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <L> : "Ḻ"  U1E3A  # LATIN CAPITAL LETTER L WITH LINE BELOW (conflicts with ⁻, use -^)
-<Multi_key> <underscore> <underscore> <l> : "ḻ"  U1E3B  # LATIN SMALL LETTER L WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <l> <space> : "ḻ"  U1E3B  # LATIN SMALL LETTER L WITH LINE BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <N> : "Ṉ"  U1E48  # LATIN CAPITAL LETTER N WITH LINE BELOW (conflicts with ⁻, use -^)
 <Multi_key> <underscore> <underscore> <n> : "ṉ"  U1E49  # LATIN SMALL LETTER N WITH LINE BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <R> : "Ṟ"  U1E5E  # LATIN CAPITAL LETTER R WITH LINE BELOW (conflicts with ⁻, use -^)
-<Multi_key> <underscore> <underscore> <r> : "ṟ"  U1E5F  # LATIN SMALL LETTER R WITH LINE BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <r> <space> : "ṟ"  U1E5F  # LATIN SMALL LETTER R WITH LINE BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <T> : "Ṯ"  U1E6E  # LATIN CAPITAL LETTER T WITH LINE BELOW (conflicts with ⁻, use -^)
 <Multi_key> <underscore> <underscore> <t> : "ṯ"  U1E6F  # LATIN SMALL LETTER T WITH LINE BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <Z> : "Ẕ"  U1E94  # LATIN CAPITAL LETTER Z WITH LINE BELOW (conflicts with ⁻, use -^)
@@ -1306,7 +1306,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <colon> <colon> : "𐞁"  U10781  # MODIFIER LETTER SUPERSCRIPT TRIANGULAR COLON
 <Multi_key> <asciicircum> <underscore> <Multi_key> <colon> <asciicircum> : "𐞂"  U10782  # MODIFIER LETTER SUPERSCRIPT HALF TRIANGULAR COLON
 
-# subscripts: _x (or _x␣ if there's a clash with a combining character)
+# subscripts: _x (or _x_ if there's a clash with a combining character)
 
 <Multi_key> <underscore> <a>              : "ₐ"  U2090   # LATIN SUBSCRIPT SMALL LETTER A (conflicts with ā, use -a)
 <Multi_key> <underscore> <e>              : "ₑ"  U2091   # LATIN SUBSCRIPT SMALL LETTER E (conflicts with ē, use -e)
@@ -1317,13 +1317,13 @@ include "%L"
 <Multi_key> <underscore> <l>              : "ₗ"  U2097   # LATIN SUBSCRIPT SMALL LETTER L
 <Multi_key> <underscore> <m>              : "ₘ"  U2098   # LATIN SUBSCRIPT SMALL LETTER M
 <Multi_key> <underscore> <n>              : "ₙ"  U2099   # LATIN SUBSCRIPT SMALL LETTER N
-<Multi_key> <underscore> <o> <space>      : "ₒ"  U2092   # LATIN SUBSCRIPT SMALL LETTER O (conflicts with ō, use -o)
+<Multi_key> <underscore> <o> <underscore> : "ₒ"  U2092   # LATIN SUBSCRIPT SMALL LETTER O (conflicts with ō, use -o)
 <Multi_key> <underscore> <p>              : "ₚ"  U209A   # LATIN SUBSCRIPT SMALL LETTER P
 <Multi_key> <underscore> <r>              : "ᵣ"  U1D63   # LATIN SUBSCRIPT SMALL LETTER R
 <Multi_key> <underscore> <s>              : "ₛ"  U209B   # LATIN SUBSCRIPT SMALL LETTER S
 <Multi_key> <underscore> <t>              : "ₜ"  U209C   # LATIN SUBSCRIPT SMALL LETTER T
-<Multi_key> <underscore> <u> <space>      : "ᵤ"  U1D64   # LATIN SUBSCRIPT SMALL LETTER U (conflicts with ū, use -u)
-<Multi_key> <underscore> <v> <space>      : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
+<Multi_key> <underscore> <u> <underscore> : "ᵤ"  U1D64   # LATIN SUBSCRIPT SMALL LETTER U (conflicts with ū, use -u)
+<Multi_key> <underscore> <v> <underscore> : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
 <Multi_key> <underscore> <x>              : "ₓ"  U2093   # LATIN SUBSCRIPT SMALL LETTER X
 
 <Multi_key> <underscore> <Multi_key> <e> <e> : "ₔ"  U2094   # LATIN SUBSCRIPT SMALL LETTER SCHWA
@@ -1368,14 +1368,13 @@ include "%L"
 <Multi_key> <underscore> <asciicircum> <Multi_key> <K> <v> : "𝼐"  U1DF10  # LATIN LETTER SMALL CAPITAL TURNED K (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <L> <slash> : "ᴌ" U1D0C   # LATIN LETTER SMALL CAPITAL L WITH STROKE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <M> <v> : "ꟺ"  UA7FA  # LATIN LETTER SMALL CAPITAL TURNED M (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <less> <N> : "ᴎ"  U1D0E  # LATIN LETTER SMALL CAPITAL REVERSED N (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <O> <E> : "ɶ"  U0276  # LATIN LETTER SMALL CAPITAL OE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <O> <parenright> : "ᴐ"  U1D10  # LATIN LETTER SMALL CAPITAL OPEN O (conflicts)
+<Multi_key> <underscore> <asciicircum> <Multi_key> <less> <R> : "ᴙ"  U1D19  # LATIN LETTER SMALL CAPITAL REVERSED R (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <R> <v> : "ᴚ"  U1D1A  # LATIN LETTER SMALL CAPITAL TURNED R (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <minus> <U> : "ᵾ"  U1D7E  # LATIN SMALL CAPITAL LETTER U WITH STROKE (conflicts)
 <Multi_key> <underscore> <asciicircum> <Multi_key> <Z> <H> : "ᴣ" U1D23   # LATIN LETTER SMALL CAPITAL EZH (conflicts)
-
-<Multi_key> <underscore> <asciicircum> <less> <N> : "ᴎ"  U1D0E  # LATIN LETTER SMALL CAPITAL REVERSED N (conflicts)
-<Multi_key> <underscore> <asciicircum> <less> <R> : "ᴙ"  U1D19  # LATIN LETTER SMALL CAPITAL REVERSED R (conflicts)
 
 # (small form variants: not actually small capitals, but fit nicely here)
 
@@ -7251,12 +7250,12 @@ include "%L"
 <Multi_key> <b> <G> <K> <c> <h> : "𖄇"  U16107  # GURUNG KHEMA LETTER CHA (conflicts)
 <Multi_key> <b> <G> <K> <j> <space> : "𖄈"  U16108  # GURUNG KHEMA LETTER JA (conflicts)
 <Multi_key> <b> <G> <K> <j> <h> : "𖄉"  U16109  # GURUNG KHEMA LETTER JHA (conflicts)
-<Multi_key> <b> <G> <K> <h> : "𖄊"  U1610A  # GURUNG KHEMA LETTER HA (conflicts)
+<Multi_key> <b> <G> <K> <h> <space> : "𖄊"  U1610A  # GURUNG KHEMA LETTER HA (conflicts)
 <Multi_key> <b> <G> <K> <period> <t> <space> : "𖄋"  U1610B  # GURUNG KHEMA LETTER TTA (conflicts)
 <Multi_key> <b> <G> <K> <period> <t> <h> : "𖄌"  U1610C  # GURUNG KHEMA LETTER TTHA (conflicts)
 <Multi_key> <b> <G> <K> <period> <d> <space> : "𖄍"  U1610D  # GURUNG KHEMA LETTER DDA (conflicts)
 <Multi_key> <b> <G> <K> <period> <d> <h> : "𖄎"  U1610E  # GURUNG KHEMA LETTER DDHA (conflicts)
-<Multi_key> <b> <G> <K> <v> : "𖄏"  U1610F  # GURUNG KHEMA LETTER VA (conflicts)
+<Multi_key> <b> <G> <K> <v> <space> : "𖄏"  U1610F  # GURUNG KHEMA LETTER VA (conflicts)
 <Multi_key> <b> <G> <K> <t> <space> : "𖄐"  U16110  # GURUNG KHEMA LETTER TA (conflicts)
 <Multi_key> <b> <G> <K> <t> <h> : "𖄑"  U16111  # GURUNG KHEMA LETTER THA (conflicts)
 <Multi_key> <b> <G> <K> <d> <space> : "𖄒"  U16112  # GURUNG KHEMA LETTER DA (conflicts)
@@ -7267,8 +7266,8 @@ include "%L"
 <Multi_key> <b> <G> <K> <b> <space> : "𖄗"  U16117  # GURUNG KHEMA LETTER BA (conflicts)
 <Multi_key> <b> <G> <K> <b> <h> : "𖄘"  U16118  # GURUNG KHEMA LETTER BHA (conflicts)
 <Multi_key> <b> <G> <K> <m> : "𖄙"  U16119  # GURUNG KHEMA LETTER MA (conflicts)
-<Multi_key> <b> <G> <K> <y> : "𖄚"  U1611A  # GURUNG KHEMA LETTER YA (conflicts)
-<Multi_key> <b> <G> <K> <r> : "𖄛"  U1611B  # GURUNG KHEMA LETTER RA (conflicts)
+<Multi_key> <b> <G> <K> <y> <space> : "𖄚"  U1611A  # GURUNG KHEMA LETTER YA (conflicts)
+<Multi_key> <b> <G> <K> <r> <space> : "𖄛"  U1611B  # GURUNG KHEMA LETTER RA (conflicts)
 <Multi_key> <b> <G> <K> <l> : "𖄜"  U1611C  # GURUNG KHEMA LETTER LA (conflicts)
 <Multi_key> <b> <G> <K> <s> : "𖄝"  U1611D  # GURUNG KHEMA LETTER SA (conflicts)
 
@@ -7333,7 +7332,7 @@ include "%L"
 <Multi_key> <b> <G> <T> <t> <h> : "𑌥"  U11325  # GRANTHA LETTER THA (conflicts)
 <Multi_key> <b> <G> <T> <d> <space> : "𑌦"  U11326  # GRANTHA LETTER DA (conflicts)
 <Multi_key> <b> <G> <T> <d> <h> : "𑌧"  U11327  # GRANTHA LETTER DHA (conflicts)
-<Multi_key> <b> <G> <T> <n> : "𑌨"  U11328  # GRANTHA LETTER NA (conflicts)
+<Multi_key> <b> <G> <T> <n> <space> : "𑌨"  U11328  # GRANTHA LETTER NA (conflicts)
 <Multi_key> <b> <G> <T> <p> <space> : "𑌪"  U1132A  # GRANTHA LETTER PA (conflicts)
 <Multi_key> <b> <G> <T> <p> <h> : "𑌫"  U1132B  # GRANTHA LETTER PHA (conflicts)
 <Multi_key> <b> <G> <T> <b> <space> : "𑌬"  U1132C  # GRANTHA LETTER BA (conflicts)
@@ -7343,7 +7342,7 @@ include "%L"
 <Multi_key> <b> <G> <T> <r> : "𑌰"  U11330  # GRANTHA LETTER RA (conflicts)
 <Multi_key> <b> <G> <T> <l> : "𑌲"  U11332  # GRANTHA LETTER LA (conflicts)
 <Multi_key> <b> <G> <T> <period> <l> : "𑌳"  U11333  # GRANTHA LETTER LLA (conflicts)
-<Multi_key> <b> <G> <T> <v> : "𑌵"  U11335  # GRANTHA LETTER VA (conflicts)
+<Multi_key> <b> <G> <T> <v> <space> : "𑌵"  U11335  # GRANTHA LETTER VA (conflicts)
 <Multi_key> <b> <G> <T> <semicolon> <s> : "𑌶"  U11336  # GRANTHA LETTER SHA (conflicts)
 <Multi_key> <b> <G> <T> <period> <s> : "𑌷"  U11337  # GRANTHA LETTER SSA (conflicts)
 <Multi_key> <b> <G> <T> <s> : "𑌸"  U11338  # GRANTHA LETTER SA (conflicts)
@@ -24258,7 +24257,7 @@ include "HangulSyllables"
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <slash>      : "▨" U25A8   # SQUARE WITH UPPER RIGHT TO LOWER LEFT FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <X>          : "▩" U25A9   # SQUARE WITH DIAGONAL CROSSHATCH FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Return>      : "⃞" U20DE   # COMBINING ENCLOSING SQUARE (conflicts)
-<Multi_key> <bracketleft> <bracketright> <less> <greater> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <less> <greater> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE (conflicts)
 
 <Multi_key> <exclam> <bracketleft> <bracketright> <V>             : "🮱"  U1FBB1  # INVERSE CHECK MARK
 <Multi_key> <exclam> <bracketleft> <bracketright> <X>             : "🮽"  U1FBBD  # NEGATIVE DIAGONAL CROSS
