@@ -350,6 +350,37 @@ def validate(args: argparse.Namespace) -> None:
                         "    to ignore this, include the string "
                         "'conflict' or 'override' in the comment"
                     )
+                else:
+                    # check again in case an in-file conflict was obscured by
+                    # an out-of-file one
+                    kv = (
+                        next(
+                            (
+                                kv
+                                for kv in trie.prefixes(defn.keys)
+                                if kv[1].file == defn.file
+                            ),
+                            None,
+                        )
+                        or trie.has_subtrie(defn.keys)
+                        and next(
+                            (
+                                kv
+                                for kv in trie.iteritems(defn.keys)
+                                if kv[1].file == defn.file
+                            ),
+                            None,
+                        )
+                    )
+                    if kv and not (kv[0] == defn.keys and kv[1].value == defn.value):
+                        k, v = kv
+                        print(
+                            f"[{file}#{defn.line_no}] Compose sequence "
+                            f"{' + '.join(defn.keys)} for {defn.value!r} "
+                            "conflicts with\n  "
+                            f"[...#{v.line_no}] {' + '.join(k)} for {v.value!r}"
+                        )
+
             elif not args.ignore_include and any(
                 defn.comment is not None and x in defn.comment for x in CONFLICT_MARKERS
             ):
