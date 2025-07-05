@@ -934,12 +934,12 @@ include "%L"
 <Multi_key> <slash> <c>             : "ȼ"  U023C  # LATIN SMALL LETTER C WITH STROKE (conflicts with ¢, use c/ or |c)
 <Multi_key> <slash> <E>             : "Ɇ"  U0246  # LATIN CAPITAL LETTER E WITH STROKE
 <Multi_key> <slash> <e>             : "ɇ"  U0247  # LATIN SMALL LETTER E WITH STROKE
-<Multi_key> <minus> <slash> <G>     : "Ꞡ"  UA7A0  # LATIN CAPITAL LETTER G WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
-<Multi_key> <minus> <slash> <g>     : "ꞡ"  UA7A1  # LATIN SMALL LETTER G WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
+<Multi_key> <underscore> <slash> <G> : "Ꞡ"  UA7A0  # LATIN CAPITAL LETTER G WITH OBLIQUE STROKE
+<Multi_key> <underscore> <slash> <g> : "ꞡ"  UA7A1  # LATIN SMALL LETTER G WITH OBLIQUE STROKE
 <Multi_key> <slash> <K>             : "Ꝃ"  UA742  # LATIN CAPITAL LETTER K WITH DIAGONAL STROKE
 <Multi_key> <slash> <k>             : "ꝃ"  UA743  # LATIN SMALL LETTER K WITH DIAGONAL STROKE
-<Multi_key> <minus> <slash> <K>     : "Ꞣ"  UA7A2  # LATIN CAPITAL LETTER K WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
-<Multi_key> <minus> <slash> <k>     : "ꞣ"  UA7A3  # LATIN SMALL LETTER K WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
+<Multi_key> <underscore> <slash> <K> : "Ꞣ"  UA7A2  # LATIN CAPITAL LETTER K WITH OBLIQUE STROKE
+<Multi_key> <underscore> <slash> <k> : "ꞣ"  UA7A3  # LATIN SMALL LETTER K WITH OBLIQUE STROKE
 <Multi_key> <slash> <N>             : "Ꞥ"  UA7A4  # LATIN CAPITAL LETTER N WITH OBLIQUE STROKE
 <Multi_key> <slash> <n>             : "ꞥ"  UA7A5  # LATIN SMALL LETTER N WITH OBLIQUE STROKE
 <Multi_key> <slash> <Q>             : "Ꝙ"  UA758  # LATIN CAPITAL LETTER Q WITH DIAGONAL STROKE
@@ -948,8 +948,8 @@ include "%L"
 <Multi_key> <slash> <r>             : "ꞧ"  UA7A7  # LATIN SMALL LETTER R WITH OBLIQUE STROKE
 <Multi_key> <slash> <S>             : "Ꟍ" UA7CC  # LATIN CAPITAL LETTER S WITH DIAGONAL STROKE
 <Multi_key> <slash> <s>             : "ꟍ" UA7CD  # LATIN SMALL LETTER S WITH DIAGONAL STROKE
-<Multi_key> <minus> <slash> <S>     : "Ꞩ"  UA7A8  # LATIN CAPITAL LETTER S WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
-<Multi_key> <minus> <slash> <s>     : "ꞩ"  UA7A9  # LATIN SMALL LETTER S WITH OBLIQUE STROKE (conflicts with ⌿, use /-)
+<Multi_key> <underscore> <slash> <S> : "Ꞩ"  UA7A8  # LATIN CAPITAL LETTER S WITH OBLIQUE STROKE
+<Multi_key> <underscore> <slash> <s> : "ꞩ"  UA7A9  # LATIN SMALL LETTER S WITH OBLIQUE STROKE
 <Multi_key> <slash> <T>             : "Ⱦ"  U023E  # LATIN CAPITAL LETTER T WITH DIAGONAL STROKE (conflicts with Ŧ, use -T)
 <Multi_key> <slash> <t>             : "ⱦ"  U2C66  # LATIN SMALL LETTER T WITH DIAGONAL STROKE (conflicts with ŧ, use -t)
 <Multi_key> <slash> <U>             : "Ꞹ"  UA7B8  # LATIN CAPITAL LETTER U WITH STROKE
@@ -4776,6 +4776,20 @@ include "%L"
 <Multi_key> <a> <braceleft> <c> <l> <c> <a> <braceright> <space> : "ﻻ"  UFEFB  # ARABIC LIGATURE LAM WITH ALEF ISOLATED FORM
 <Multi_key> <a> <braceleft> <c> <l> <c> <a> <braceright> <less> : "ﻼ"  UFEFC  # ARABIC LIGATURE LAM WITH ALEF FINAL FORM
 
+<Multi_key> <a> <braceleft> <c> <m> <c> <H> <c> <m> <c> <d> <braceright> : "ﷴ"  UFDF4  # ARABIC LIGATURE MOHAMMAD ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <m> <x> <h> <c> <m> <c> <d> <braceright> : "ﷴ"  UFDF4  # ARABIC LIGATURE MOHAMMAD ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <l> <c> <3> <c> <m> <braceright> : "ﷵ"  UFDF5  # ARABIC LIGATURE SALAM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <l> <c> <grave> <c> <m> <braceright> : "ﷵ"  UFDF5  # ARABIC LIGATURE SALAM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <r> <c> <s> <c> <w> <c> <l> <braceright> : "ﷶ"  UFDF6  # ARABIC LIGATURE RASOUL ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <r> <c> <s> <c> <u> <c> <l> <braceright> : "ﷶ"  UFDF6  # ARABIC LIGATURE RASOUL ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <l> <c> <y> <c> <h> <braceright> : "ﷷ"  UFDF7  # ARABIC LIGATURE ALAYHE ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <3> <c> <l> <c> <i> <c> <h> <braceright> : "ﷷ"  UFDF7  # ARABIC LIGATURE ALAYHE ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <l> <c> <y> <c> <h> <braceright> : "ﷷ"  UFDF7  # ARABIC LIGATURE ALAYHE ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <grave> <c> <l> <c> <i> <c> <h> <braceright> : "ﷷ"  UFDF7  # ARABIC LIGATURE ALAYHE ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <w> <c> <s> <c> <l> <c> <m> <braceright> : "ﷸ"  UFDF8  # ARABIC LIGATURE WASALLAM ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <u> <c> <s> <c> <l> <c> <m> <braceright> : "ﷸ"  UFDF8  # ARABIC LIGATURE WASALLAM ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <l> <x> <a> <y> <braceright> : "ﷹ"  UFDF9  # ARABIC LIGATURE SALLA ISOLATED FORM
+
 # (A = Avestan) (Hoffmann transcription)
 
 <Multi_key> <a> <A> <a> <space> : "𐬀"  U10B00  # AVESTAN LETTER A
@@ -5998,7 +6012,7 @@ include "%L"
 <Multi_key> <A> <semicolon> <exclam>     : "՜"  U055C  # ARMENIAN EXCLAMATION MARK (conflicts)
 <Multi_key> <A> <semicolon> <comma>      : "՝"  U055D  # ARMENIAN COMMA (conflicts)
 <Multi_key> <A> <semicolon> <question>   : "՞"  U055E  # ARMENIAN QUESTION MARK (conflicts)
-<Multi_key> <A> <semicolon> <apostrophe> : "՟"  U055F  # ARMENIAN ABBREVIATION MARK (conflicts)
+<Multi_key> <A> <semicolon> <less>       : "՟"  U055F  # ARMENIAN ABBREVIATION MARK (conflicts)
 <Multi_key> <A> <semicolon> <period>     : "։"  U0589  # ARMENIAN FULL STOP (conflicts)
 <Multi_key> <A> <semicolon> <minus>      : "֊"  U058A  # ARMENIAN HYPHEN (conflicts)
 <Multi_key> <A> <semicolon> <at> <greater> : "֍"  U058D  # RIGHT-FACING ARMENIAN ETERNITY SIGN (conflicts)
@@ -10680,9 +10694,9 @@ include "%L"
 <Multi_key> <c> <c> <greater> <comma> <L> : "Ԓ"  U0512  # CYRILLIC CAPITAL LETTER EL WITH HOOK (conflicts)
 <Multi_key> <c> <c> <greater> <comma> <l> : "ԓ"  U0513  # CYRILLIC SMALL LETTER EL WITH HOOK (conflicts)
 <Multi_key> <c> <c> <less> <comma> <N>    : "Ԩ"  U0528  # CYRILLIC CAPITAL LETTER EN WITH LEFT HOOK (conflicts)
-<Multi_key> <c> <c> <less> <comma> <N>    : "ԩ"  U0529  # CYRILLIC SMALL LETTER EN WITH LEFT HOOK (conflicts)
+<Multi_key> <c> <c> <less> <comma> <n>    : "ԩ"  U0529  # CYRILLIC SMALL LETTER EN WITH LEFT HOOK (conflicts)
 <Multi_key> <c> <c> <minus> <comma> <G>   : "Ӻ"  U04FA  # CYRILLIC CAPITAL LETTER GHE WITH STROKE AND HOOK (conflicts)
-<Multi_key> <c> <c> <minus> <comma> <G>   : "ӻ"  U04FB  # CYRILLIC SMALL LETTER GHE WITH STROKE AND HOOK (conflicts)
+<Multi_key> <c> <c> <minus> <comma> <g>   : "ӻ"  U04FB  # CYRILLIC SMALL LETTER GHE WITH STROKE AND HOOK (conflicts)
 
 <Multi_key> <c> <c> <greater> <l> <I> : "Ҋ"  U048A  # CYRILLIC CAPITAL LETTER SHORT I WITH TAIL (conflicts)
 <Multi_key> <c> <c> <greater> <l> <i> : "ҋ"  U048B  # CYRILLIC SMALL LETTER SHORT I WITH TAIL (conflicts)
@@ -10706,7 +10720,7 @@ include "%L"
 
 <Multi_key> <c> <x> <asciicircum> <quotedbl> <V> : "Ѷ"  U0476  # CYRILLIC CAPITAL LETTER IZHITSA WITH DOUBLE GRAVE ACCENT
 <Multi_key> <c> <x> <asciicircum> <quotedbl> <v> : "ѷ"  U0477  # CYRILLIC SMALL LETTER IZHITSA WITH DOUBLE GRAVE ACCENT
-<Multi_key> <c> <c> <equal> <u> : "Ӳ"  U04F2  # CYRILLIC CAPITAL LETTER U WITH DOUBLE ACUTE (conflicts)
+<Multi_key> <c> <c> <equal> <U> : "Ӳ"  U04F2  # CYRILLIC CAPITAL LETTER U WITH DOUBLE ACUTE (conflicts)
 <Multi_key> <c> <c> <equal> <u> : "ӳ"  U04F3  # CYRILLIC SMALL LETTER U WITH DOUBLE ACUTE (conflicts)
 <Multi_key> <c> <c> <backslash> <R> : "Ҏ"  U048E  # CYRILLIC CAPITAL LETTER ER WITH TICK (conflicts)
 <Multi_key> <c> <c> <backslash> <r> : "ҏ"  U048F  # CYRILLIC SMALL LETTER ER WITH TICK (conflicts)
@@ -10743,10 +10757,9 @@ include "%L"
 <Multi_key> <c> <x> <asciicircum> <underscore> <t> <s> : "𞁄"  U1E044  # MODIFIER LETTER CYRILLIC SMALL TSE
 <Multi_key> <c> <x> <asciicircum> <underscore> <c> <h> : "𞁅"  U1E045  # MODIFIER LETTER CYRILLIC SMALL CHE
 <Multi_key> <c> <x> <asciicircum> <underscore> <s> <h> : "𞁆"  U1E046  # MODIFIER LETTER CYRILLIC SMALL SHA
-<Multi_key> <c> <c> <asciicircum> <underscore> <quotedbl> <space> : "ꚜ"  UA69C  # MODIFIER LETTER CYRILLIC HARD SIGN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <underscore> <quotedbl> : "ꚜ"  UA69C  # MODIFIER LETTER CYRILLIC HARD SIGN (conflicts)
 <Multi_key> <c> <c> <asciicircum> <underscore> <y> <space> : "𞁇"  U1E047  # MODIFIER LETTER CYRILLIC SMALL YERU (conflict)
-<Multi_key> <c> <c> <asciicircum> <underscore> <y> <space> : "ꚝ"  UA69D  # MODIFIER LETTER CYRILLIC SOFT SIGN (conflicts)
-<Multi_key> <c> <c> <asciicircum> <underscore> <apostrophe> <space> : "ꚝ"  UA69D  # MODIFIER LETTER CYRILLIC SOFT SIGN (conflicts)
+<Multi_key> <c> <c> <asciicircum> <underscore> <apostrophe> : "ꚝ"  UA69D  # MODIFIER LETTER CYRILLIC SOFT SIGN (conflicts)
 <Multi_key> <c> <c> <asciicircum> <underscore> <e> : "𞁈"  U1E048  # MODIFIER LETTER CYRILLIC SMALL E (conflict)
 <Multi_key> <c> <c> <asciicircum> <underscore> <y> <u> : "𞁉"  U1E049  # MODIFIER LETTER CYRILLIC SMALL YU (conflict)
 <Multi_key> <c> <x> <asciicircum> <underscore> <i> : "𞁌"  U1E04C  # MODIFIER LETTER CYRILLIC SMALL BYELORUSSIAN-UKRAINIAN I
@@ -10780,7 +10793,7 @@ include "%L"
 <Multi_key> <c> <x> <underscore> <t> <s> : "𞁢"  U1E062  # CYRILLIC SUBSCRIPT SMALL LETTER TSE
 <Multi_key> <c> <x> <underscore> <c> <h> : "𞁣"  U1E063  # CYRILLIC SUBSCRIPT SMALL LETTER CHE
 <Multi_key> <c> <x> <underscore> <s> <h> : "𞁤"  U1E064  # CYRILLIC SUBSCRIPT SMALL LETTER SHA
-<Multi_key> <c> <c> <underscore> <quotedbl> <space> : "𞁥"  U1E065  # CYRILLIC SUBSCRIPT SMALL LETTER HARD SIGN (conflicts)
+<Multi_key> <c> <c> <underscore> <quotedbl> : "𞁥"  U1E065  # CYRILLIC SUBSCRIPT SMALL LETTER HARD SIGN (conflicts)
 <Multi_key> <c> <c> <underscore> <y> <space> : "𞁦"  U1E066  # CYRILLIC SUBSCRIPT SMALL LETTER YERU (conflicts)
 <Multi_key> <c> <x> <underscore> <g> <g> : "𞁧"  U1E067  # CYRILLIC SUBSCRIPT SMALL LETTER GHE WITH UPTURN
 <Multi_key> <c> <x> <underscore> <i> : "𞁨"  U1E068  # CYRILLIC SUBSCRIPT SMALL LETTER BYELORUSSIAN-UKRAINIAN I
@@ -12516,7 +12529,7 @@ include "%L"
 <Multi_key> <C> <S> <U> <a> <space>      : "𑯈"  U11BC8  # SUNUWAR LETTER APPHO
 <Multi_key> <C> <S> <U> <p> <space>      : "𑯉"  U11BC9  # SUNUWAR LETTER PIP
 <Multi_key> <C> <S> <U> <g>              : "𑯊"  U11BCA  # SUNUWAR LETTER GIL
-<Multi_key> <C> <S> <U> <h> <space>      : "𑯋"  U11BCB  # SUNUWAR LETTER HAMSO
+<Multi_key> <C> <S> <U> <h>              : "𑯋"  U11BCB  # SUNUWAR LETTER HAMSO
 <Multi_key> <C> <S> <U> <c> <space>      : "𑯌"  U11BCC  # SUNUWAR LETTER CARMI
 <Multi_key> <C> <S> <U> <n> <space>      : "𑯍"  U11BCD  # SUNUWAR LETTER NAH
 <Multi_key> <C> <S> <U> <b> <space>      : "𑯎"  U11BCE  # SUNUWAR LETTER BUR
@@ -18063,49 +18076,49 @@ include "HangulSyllables"
 # (p = Pollard/Miao)
 
 <Multi_key> <z> <p> <p> <space> : "𖼀"  U16F00  # MIAO LETTER PA
-<Multi_key> <z> <p> <b> <space> : "𖼁"  U16F01  # MIAO LETTER BA
-<Multi_key> <z> <p> <p> <l> <space> : "𖼃"  U16F03  # MIAO LETTER PLA
+<Multi_key> <z> <p> <b> : "𖼁"  U16F01  # MIAO LETTER BA
+<Multi_key> <z> <p> <p> <l> : "𖼃"  U16F03  # MIAO LETTER PLA
 <Multi_key> <z> <p> <m> <space> : "𖼄"  U16F04  # MIAO LETTER MA
-<Multi_key> <z> <p> <m> <h> <space> : "𖼅"  U16F05  # MIAO LETTER MHA
-<Multi_key> <z> <p> <f> <space> : "𖼇"  U16F07  # MIAO LETTER FA
+<Multi_key> <z> <p> <m> <h> : "𖼅"  U16F05  # MIAO LETTER MHA
+<Multi_key> <z> <p> <f> : "𖼇"  U16F07  # MIAO LETTER FA
 <Multi_key> <z> <p> <v> <space> : "𖼈"  U16F08  # MIAO LETTER VA
-<Multi_key> <z> <p> <v> <f> <space> : "𖼉"  U16F09  # MIAO LETTER VFA
+<Multi_key> <z> <p> <v> <f> : "𖼉"  U16F09  # MIAO LETTER VFA
 <Multi_key> <z> <p> <t> <space> : "𖼊"  U16F0A  # MIAO LETTER TA
 <Multi_key> <z> <p> <d> <space> : "𖼋"  U16F0B  # MIAO LETTER DA
-<Multi_key> <z> <p> <t> <t> <space> : "𖼎"  U16F0E  # MIAO LETTER TTA
-<Multi_key> <z> <p> <d> <d> <space> : "𖼏"  U16F0F  # MIAO LETTER DDA
+<Multi_key> <z> <p> <t> <t> : "𖼎"  U16F0E  # MIAO LETTER TTA
+<Multi_key> <z> <p> <d> <d> : "𖼏"  U16F0F  # MIAO LETTER DDA
 <Multi_key> <z> <p> <n> <space> : "𖼐"  U16F10  # MIAO LETTER NA
-<Multi_key> <z> <p> <n> <h> <space> : "𖼑"  U16F11  # MIAO LETTER NHA
+<Multi_key> <z> <p> <n> <h> : "𖼑"  U16F11  # MIAO LETTER NHA
 <Multi_key> <z> <p> <n> <n> <space> : "𖼔"  U16F14  # MIAO LETTER NNA
-<Multi_key> <z> <p> <n> <n> <h> <space> : "𖼕"  U16F15  # MIAO LETTER NNHA
+<Multi_key> <z> <p> <n> <n> <h> : "𖼕"  U16F15  # MIAO LETTER NNHA
 <Multi_key> <z> <p> <l> <space> : "𖼖"  U16F16  # MIAO LETTER LA
-<Multi_key> <z> <p> <l> <y> <space> : "𖼗"  U16F17  # MIAO LETTER LYA
+<Multi_key> <z> <p> <l> <y> : "𖼗"  U16F17  # MIAO LETTER LYA
 <Multi_key> <z> <p> <l> <h> <space> : "𖼘"  U16F18  # MIAO LETTER LHA
-<Multi_key> <z> <p> <l> <h> <y> <space> : "𖼙"  U16F19  # MIAO LETTER LHYA
+<Multi_key> <z> <p> <l> <h> <y> : "𖼙"  U16F19  # MIAO LETTER LHYA
 <Multi_key> <z> <p> <t> <l> <h> <space> : "𖼚"  U16F1A  # MIAO LETTER TLHA
 <Multi_key> <z> <p> <d> <l> <h> <space> : "𖼛"  U16F1B  # MIAO LETTER DLHA
-<Multi_key> <z> <p> <t> <l> <h> <y> <space> : "𖼜"  U16F1C  # MIAO LETTER TLHYA
-<Multi_key> <z> <p> <d> <l> <h> <y> <space> : "𖼝"  U16F1D  # MIAO LETTER DLHYA
-<Multi_key> <z> <p> <k> <space> : "𖼞"  U16F1E  # MIAO LETTER KA
+<Multi_key> <z> <p> <t> <l> <h> <y> : "𖼜"  U16F1C  # MIAO LETTER TLHYA
+<Multi_key> <z> <p> <d> <l> <h> <y> : "𖼝"  U16F1D  # MIAO LETTER DLHYA
+<Multi_key> <z> <p> <k> : "𖼞"  U16F1E  # MIAO LETTER KA
 <Multi_key> <z> <p> <g> <space> : "𖼟"  U16F1F  # MIAO LETTER GA
 <Multi_key> <z> <p> <q> <space> : "𖼡"  U16F21  # MIAO LETTER QA
-<Multi_key> <z> <p> <q> <g> <space> : "𖼢"  U16F22  # MIAO LETTER QGA
+<Multi_key> <z> <p> <q> <g> : "𖼢"  U16F22  # MIAO LETTER QGA
 <Multi_key> <z> <p> <n> <g> <space> : "𖼣"  U16F23  # MIAO LETTER NGA
-<Multi_key> <z> <p> <n> <g> <h> <space> : "𖼤"  U16F24  # MIAO LETTER NGHA
-<Multi_key> <z> <p> <h> <space> : "𖼦"  U16F26  # MIAO LETTER HA
-<Multi_key> <z> <p> <x> <space> : "𖼧"  U16F27  # MIAO LETTER XA
+<Multi_key> <z> <p> <n> <g> <h> : "𖼤"  U16F24  # MIAO LETTER NGHA
+<Multi_key> <z> <p> <h> : "𖼦"  U16F26  # MIAO LETTER HA
+<Multi_key> <z> <p> <x> : "𖼧"  U16F27  # MIAO LETTER XA
 <Multi_key> <z> <p> <g> <h> <space> : "𖼨"  U16F28  # MIAO LETTER GHA
-<Multi_key> <z> <p> <g> <h> <h> <space> : "𖼩"  U16F29  # MIAO LETTER GHHA
-<Multi_key> <z> <p> <t> <s> <s> <space> : "𖼪"  U16F2A  # MIAO LETTER TSSA
-<Multi_key> <z> <p> <d> <z> <z> <space> : "𖼫"  U16F2B  # MIAO LETTER DZZA
+<Multi_key> <z> <p> <g> <h> <h> : "𖼩"  U16F29  # MIAO LETTER GHHA
+<Multi_key> <z> <p> <t> <s> <s> : "𖼪"  U16F2A  # MIAO LETTER TSSA
+<Multi_key> <z> <p> <d> <z> <z> : "𖼫"  U16F2B  # MIAO LETTER DZZA
 <Multi_key> <z> <p> <n> <y> <space> : "𖼬"  U16F2C  # MIAO LETTER NYA
-<Multi_key> <z> <p> <n> <y> <h> <space> : "𖼭"  U16F2D  # MIAO LETTER NYHA
-<Multi_key> <z> <p> <t> <s> <h> <space> : "𖼮"  U16F2E  # MIAO LETTER TSHA
-<Multi_key> <z> <p> <d> <z> <h> <space> : "𖼯"  U16F2F  # MIAO LETTER DZHA
-<Multi_key> <z> <p> <s> <h> <space> : "𖼳"  U16F33  # MIAO LETTER SHA
-<Multi_key> <z> <p> <s> <s> <space> : "𖼴"  U16F34  # MIAO LETTER SSA
-<Multi_key> <z> <p> <z> <h> <space> : "𖼵"  U16F35  # MIAO LETTER ZHA
-<Multi_key> <z> <p> <z> <s> <h> <space> : "𖼶"  U16F36  # MIAO LETTER ZSHA
+<Multi_key> <z> <p> <n> <y> <h> : "𖼭"  U16F2D  # MIAO LETTER NYHA
+<Multi_key> <z> <p> <t> <s> <h> : "𖼮"  U16F2E  # MIAO LETTER TSHA
+<Multi_key> <z> <p> <d> <z> <h> : "𖼯"  U16F2F  # MIAO LETTER DZHA
+<Multi_key> <z> <p> <s> <h> : "𖼳"  U16F33  # MIAO LETTER SHA
+<Multi_key> <z> <p> <s> <s> : "𖼴"  U16F34  # MIAO LETTER SSA
+<Multi_key> <z> <p> <z> <h> : "𖼵"  U16F35  # MIAO LETTER ZHA
+<Multi_key> <z> <p> <z> <s> <h> : "𖼶"  U16F36  # MIAO LETTER ZSHA
 <Multi_key> <z> <p> <t> <s> <space> : "𖼷"  U16F37  # MIAO LETTER TSA
 <Multi_key> <z> <p> <d> <z> <space> : "𖼸"  U16F38  # MIAO LETTER DZA
 <Multi_key> <z> <p> <s> <space> : "𖼺"  U16F3A  # MIAO LETTER SA
@@ -18113,8 +18126,8 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <z> <s> <space> : "𖼼"  U16F3C  # MIAO LETTER ZSA
 <Multi_key> <z> <p> <z> <z> <space> : "𖼽"  U16F3D  # MIAO LETTER ZZA
 <Multi_key> <z> <p> <z> <z> <s> <space> : "𖼾"  U16F3E  # MIAO LETTER ZZSA
-<Multi_key> <z> <p> <z> <z> <y> <space> : "𖽀"  U16F40  # MIAO LETTER ZZYA
-<Multi_key> <z> <p> <z> <z> <s> <y> <space> : "𖽁"  U16F41  # MIAO LETTER ZZSYA
+<Multi_key> <z> <p> <z> <z> <y> : "𖽀"  U16F40  # MIAO LETTER ZZYA
+<Multi_key> <z> <p> <z> <z> <s> <y> : "𖽁"  U16F41  # MIAO LETTER ZZSYA
 <Multi_key> <z> <p> <w> <space> : "𖽂"  U16F42  # MIAO LETTER WA
 
 <Multi_key> <z> <p> <underscore> <period> <Return> : "𖽏"  U16F4F  # MIAO SIGN CONSONANT MODIFIER BAR (NUKTA)
@@ -19738,7 +19751,7 @@ include "HangulSyllables"
 <Multi_key> <z> <Z> <semicolon> <n>      : "𑨏"  U11A0F  # ZANABAZAR SQUARE LETTER NGA
 <Multi_key> <z> <Z> <c> <space>          : "𑨐"  U11A10  # ZANABAZAR SQUARE LETTER CA
 <Multi_key> <z> <Z> <c> <h>              : "𑨑"  U11A11  # ZANABAZAR SQUARE LETTER CHA
-<Multi_key> <z> <Z> <j> <space>          : "𑨒"  U11A12  # ZANABAZAR SQUARE LETTER JA
+<Multi_key> <z> <Z> <j>                  : "𑨒"  U11A12  # ZANABAZAR SQUARE LETTER JA
 <Multi_key> <z> <Z> <asciitilde> <n>     : "𑨓"  U11A13  # ZANABAZAR SQUARE LETTER NYA
 <Multi_key> <z> <Z> <period> <t> <space> : "𑨔"  U11A14  # ZANABAZAR SQUARE LETTER TTA
 <Multi_key> <z> <Z> <period> <t> <h>     : "𑨕"  U11A15  # ZANABAZAR SQUARE LETTER TTHA
@@ -23641,8 +23654,8 @@ include "HangulSyllables"
 <Multi_key> <c> <a> <r> <asciicircum>         : "𜲘"  U1CC98  # UP-POINTING RACING CAR (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <r> <greater>             : "𜲙"  U1CC99  # RIGHT-POINTING RACING CAR (conflicts with ǎ, use va)
 <Multi_key> <c> <a> <r> <v>                   : "𜲚"  U1CC9A  # DOWN-POINTING RACING CAR (conflicts with ǎ, use va)
-<Multi_key> <c> <a> <r> <h>                   : "𜲛"  U1CC9B  # HORIZONTAL RACING CAR (conflicts with ǎ, use va)
-<Multi_key> <c> <a> <r> <v>                   : "𜲜"  U1CC9C  # VERTICAL RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <minus>               : "𜲛"  U1CC9B  # HORIZONTAL RACING CAR (conflicts with ǎ, use va)
+<Multi_key> <c> <a> <r> <bar>                 : "𜲜"  U1CC9C  # VERTICAL RACING CAR (conflicts with ǎ, use va)
 <Multi_key> <c> <r> <a> <greater>             : "𜱐"  U1CC50  # ALIEN CRAB STEPPING RIGHT (conflicts with ř, use vr)
 <Multi_key> <c> <r> <a> <less>                : "𜱑"  U1CC51  # ALIEN CRAB STEPPING LEFT (conflicts with ř, use vr)
 <Multi_key> <c> <r> <a> <d> <l> <less>        : "𜱈"  U1CC48  # LEFT-FACING BASSINET (conflicts with ř, use vr)
@@ -23659,9 +23672,9 @@ include "HangulSyllables"
 <Multi_key> <greater> <f> <i> <s> <h>         : "𜲓"  U1CC93  # RIGHT-FACING FISH (not ideal but fi=ﬁ is taken)
 <Multi_key> <g> <o> <k> <a> <r> <asciicircum> : "𜰀"  U1CC00  # UP-POINTING GO-KART
 <Multi_key> <g> <o> <k> <a> <r> <greater>     : "𜰁"  U1CC01  # RIGHT-POINTING GO-KART
-<Multi_key> <g> <o> <k> <a> <r> <v>           : "𜲝"  U1CC9D  # VERTICAL GO-KART
-<Multi_key> <l> <a> <d> <d> <e> <v>           : "𜲄"  U1CC84  # VERTICAL LADDER
-<Multi_key> <l> <a> <d> <d> <e> <h>           : "𜲅"  U1CC85  # HORIZONTAL LADDER
+<Multi_key> <g> <o> <k> <a> <r> <bar>         : "𜲝"  U1CC9D  # VERTICAL GO-KART
+<Multi_key> <l> <a> <d> <d> <e> <bar>         : "𜲄"  U1CC84  # VERTICAL LADDER
+<Multi_key> <l> <a> <d> <d> <e> <minus>       : "𜲅"  U1CC85  # HORIZONTAL LADDER
 <Multi_key> <l> <a> <u> <n> <c> <less>        : "𜱖"  U1CC56  # LEFT-POINTING ROCKET SHIP
 <Multi_key> <l> <a> <u> <n> <c> <asciicircum> : "𜱗"  U1CC57  # UP-POINTING ROCKET SHIP
 <Multi_key> <l> <a> <u> <n> <c> <greater>     : "𜱘"  U1CC58  # RIGHT-POINTING ROCKET SHIP
@@ -24232,7 +24245,7 @@ include "HangulSyllables"
 <Multi_key> <bracketleft> <bracketright> <backslash>   : "⧅" U29C5    # SQUARED FALLING DIAGONAL SLASH (conflicts)
 <Multi_key> <bracketleft> <bracketright> <plus>        : "⊞" U229E    # SQUARED PLUS (conflicts)
 <Multi_key> <bracketleft> <bracketright> <minus>       : "⊟" U229F    # SQUARED MINUS (conflicts)
-<Multi_key> <bracketleft> <bracketright> <period>      : "⊡" U22A1    # SQUARED DOT OPERATOR (conflicts)
+<Multi_key> <bracketleft> <bracketright> <Multi_key> <period>      : "⊡" U22A1    # SQUARED DOT OPERATOR (conflicts) (not ideal but ⬚ is taken)
 <Multi_key> <bracketleft> <bracketright> <X>           : "⊠" U22A0    # SQUARED TIMES (conflicts)
 <Multi_key> <bracketleft> <bracketright> <o>           : "⧇" U29C7    # SQUARED SMALL CIRCLE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
@@ -26636,6 +26649,8 @@ include "HangulSyllables"
 
 # Convention: IC + 1 (=Yang) / 2 (=Yin) from top to bottom
 
+<Multi_key> <I> <C> <Y> <Y> : "☯"  U262F  # YIN YANG (use yin for ☯️)
+
 <Multi_key> <I> <C> <1> <space> : "⚊"  U268A  # MONOGRAM FOR YANG
 <Multi_key> <I> <C> <2> <space> : "⚋"  U268B  # MONOGRAM FOR YIN
 
@@ -26718,91 +26733,89 @@ include "HangulSyllables"
 <Multi_key> <I> <C> <2> <1> <2> <1> <2> <1> : "䷾"  U4DFE  # HEXAGRAM FOR AFTER COMPLETION
 <Multi_key> <I> <C> <1> <2> <1> <2> <1> <2> : "䷿"  U4DFF  # HEXAGRAM FOR BEFORE COMPLETION
 
-# Taixuanjing tetragrams: IC + 1 (=tiān) / 2 (=dì) / 3 (=rén) from top to bottom
+# Taixuanjing tetragrams: TJ + 1 (=tiān) / 2 (=dì) / 3 (=rén) from top to bottom
 
-<Multi_key> <I> <C> <1> <1> <1> <1> <space> : "𝌆"  U1D306  # TETRAGRAM FOR CENTRE
-<Multi_key> <I> <C> <1> <1> <1> <2> <space> : "𝌇"  U1D307  # TETRAGRAM FOR FULL CIRCLE
-<Multi_key> <I> <C> <1> <1> <1> <3> <space> : "𝌈"  U1D308  # TETRAGRAM FOR MIRED
-<Multi_key> <I> <C> <1> <1> <2> <1> <space> : "𝌉"  U1D309  # TETRAGRAM FOR BARRIER
-<Multi_key> <I> <C> <1> <1> <2> <2> <space> : "𝌊"  U1D30A  # TETRAGRAM FOR KEEPING SMALL
-<Multi_key> <I> <C> <1> <1> <2> <3> <space> : "𝌋"  U1D30B  # TETRAGRAM FOR CONTRARIETY
-<Multi_key> <I> <C> <1> <1> <3> <1> <space> : "𝌌"  U1D30C  # TETRAGRAM FOR ASCENT
-<Multi_key> <I> <C> <1> <1> <3> <2> <space> : "𝌍"  U1D30D  # TETRAGRAM FOR OPPOSITION
-<Multi_key> <I> <C> <1> <1> <3> <3> <space> : "𝌎"  U1D30E  # TETRAGRAM FOR BRANCHING OUT
-<Multi_key> <I> <C> <1> <2> <1> <1> <space> : "𝌏"  U1D30F  # TETRAGRAM FOR DEFECTIVENESS OR DISTORTION
-<Multi_key> <I> <C> <1> <2> <1> <2> <space> : "𝌐"  U1D310  # TETRAGRAM FOR DIVERGENCE
-<Multi_key> <I> <C> <1> <2> <1> <3> <space> : "𝌑"  U1D311  # TETRAGRAM FOR YOUTHFULNESS
-<Multi_key> <I> <C> <1> <2> <2> <1> <space> : "𝌒"  U1D312  # TETRAGRAM FOR INCREASE
-<Multi_key> <I> <C> <1> <2> <2> <2> <space> : "𝌓"  U1D313  # TETRAGRAM FOR PENETRATION
-<Multi_key> <I> <C> <1> <2> <2> <3> <space> : "𝌔"  U1D314  # TETRAGRAM FOR REACH
-<Multi_key> <I> <C> <1> <2> <3> <1> <space> : "𝌕"  U1D315  # TETRAGRAM FOR CONTACT
-<Multi_key> <I> <C> <1> <2> <3> <2> <space> : "𝌖"  U1D316  # TETRAGRAM FOR HOLDING BACK
-<Multi_key> <I> <C> <1> <2> <3> <3> <space> : "𝌗"  U1D317  # TETRAGRAM FOR WAITING
-<Multi_key> <I> <C> <1> <3> <1> <1> <space> : "𝌘"  U1D318  # TETRAGRAM FOR FOLLOWING
-<Multi_key> <I> <C> <1> <3> <1> <2> <space> : "𝌙"  U1D319  # TETRAGRAM FOR ADVANCE
-<Multi_key> <I> <C> <1> <3> <1> <3> <space> : "𝌚"  U1D31A  # TETRAGRAM FOR RELEASE
-<Multi_key> <I> <C> <1> <3> <2> <1> <space> : "𝌛"  U1D31B  # TETRAGRAM FOR RESISTANCE
-<Multi_key> <I> <C> <1> <3> <2> <2> <space> : "𝌜"  U1D31C  # TETRAGRAM FOR EASE
-<Multi_key> <I> <C> <1> <3> <2> <3> <space> : "𝌝"  U1D31D  # TETRAGRAM FOR JOY
-<Multi_key> <I> <C> <1> <3> <3> <1> <space> : "𝌞"  U1D31E  # TETRAGRAM FOR CONTENTION
-<Multi_key> <I> <C> <1> <3> <3> <2> <space> : "𝌟"  U1D31F  # TETRAGRAM FOR ENDEAVOUR
-<Multi_key> <I> <C> <1> <3> <3> <3> <space> : "𝌠"  U1D320  # TETRAGRAM FOR DUTIES
-<Multi_key> <I> <C> <2> <1> <1> <1> <space> : "𝌡"  U1D321  # TETRAGRAM FOR CHANGE
-<Multi_key> <I> <C> <2> <1> <1> <2> <space> : "𝌢"  U1D322  # TETRAGRAM FOR DECISIVENESS
-<Multi_key> <I> <C> <2> <1> <1> <3> <space> : "𝌣"  U1D323  # TETRAGRAM FOR BOLD RESOLUTION
-<Multi_key> <I> <C> <2> <1> <2> <1> <space> : "𝌤"  U1D324  # TETRAGRAM FOR PACKING
-<Multi_key> <I> <C> <2> <1> <2> <2> <space> : "𝌥"  U1D325  # TETRAGRAM FOR LEGION
-<Multi_key> <I> <C> <2> <1> <2> <3> <space> : "𝌦"  U1D326  # TETRAGRAM FOR CLOSENESS
-<Multi_key> <I> <C> <2> <1> <3> <1> <space> : "𝌧"  U1D327  # TETRAGRAM FOR KINSHIP
-<Multi_key> <I> <C> <2> <1> <3> <2> <space> : "𝌨"  U1D328  # TETRAGRAM FOR GATHERING
-<Multi_key> <I> <C> <2> <1> <3> <3> <space> : "𝌩"  U1D329  # TETRAGRAM FOR STRENGTH
-<Multi_key> <I> <C> <2> <2> <1> <1> <space> : "𝌪"  U1D32A  # TETRAGRAM FOR PURITY
-<Multi_key> <I> <C> <2> <2> <1> <2> <space> : "𝌫"  U1D32B  # TETRAGRAM FOR FULLNESS
-<Multi_key> <I> <C> <2> <2> <1> <3> <space> : "𝌬"  U1D32C  # TETRAGRAM FOR RESIDENCE
-<Multi_key> <I> <C> <2> <2> <2> <1> <space> : "𝌭"  U1D32D  # TETRAGRAM FOR LAW OR MODEL
-<Multi_key> <I> <C> <2> <2> <2> <2> <space> : "𝌮"  U1D32E  # TETRAGRAM FOR RESPONSE
-<Multi_key> <I> <C> <2> <2> <2> <3> <space> : "𝌯"  U1D32F  # TETRAGRAM FOR GOING TO MEET
-<Multi_key> <I> <C> <2> <2> <3> <1> <space> : "𝌰"  U1D330  # TETRAGRAM FOR ENCOUNTERS
-<Multi_key> <I> <C> <2> <2> <3> <2> <space> : "𝌱"  U1D331  # TETRAGRAM FOR STOVE
-<Multi_key> <I> <C> <2> <2> <3> <3> <space> : "𝌲"  U1D332  # TETRAGRAM FOR GREATNESS
-<Multi_key> <I> <C> <2> <3> <1> <1> <space> : "𝌳"  U1D333  # TETRAGRAM FOR ENLARGEMENT
-<Multi_key> <I> <C> <2> <3> <1> <2> <space> : "𝌴"  U1D334  # TETRAGRAM FOR PATTERN
-<Multi_key> <I> <C> <2> <3> <1> <3> <space> : "𝌵"  U1D335  # TETRAGRAM FOR RITUAL
-<Multi_key> <I> <C> <2> <3> <2> <1> <space> : "𝌶"  U1D336  # TETRAGRAM FOR FLIGHT
-<Multi_key> <I> <C> <2> <3> <2> <2> <space> : "𝌷"  U1D337  # TETRAGRAM FOR VASTNESS OR WASTING
-<Multi_key> <I> <C> <2> <3> <2> <3> <space> : "𝌸"  U1D338  # TETRAGRAM FOR CONSTANCY
-<Multi_key> <I> <C> <2> <3> <3> <1> <space> : "𝌹"  U1D339  # TETRAGRAM FOR MEASURE
-<Multi_key> <I> <C> <2> <3> <3> <2> <space> : "𝌺"  U1D33A  # TETRAGRAM FOR ETERNITY
-<Multi_key> <I> <C> <2> <3> <3> <3> <space> : "𝌻"  U1D33B  # TETRAGRAM FOR UNITY
-<Multi_key> <I> <C> <3> <1> <1> <1> <space> : "𝌼"  U1D33C  # TETRAGRAM FOR DIMINISHMENT
-<Multi_key> <I> <C> <3> <1> <1> <2> <space> : "𝌽"  U1D33D  # TETRAGRAM FOR CLOSED MOUTH
-<Multi_key> <I> <C> <3> <1> <1> <3> <space> : "𝌾"  U1D33E  # TETRAGRAM FOR GUARDEDNESS
-<Multi_key> <I> <C> <3> <1> <2> <1> <space> : "𝌿"  U1D33F  # TETRAGRAM FOR GATHERING IN
-<Multi_key> <I> <C> <3> <1> <2> <2> <space> : "𝍀"  U1D340  # TETRAGRAM FOR MASSING
-<Multi_key> <I> <C> <3> <1> <2> <3> <space> : "𝍁"  U1D341  # TETRAGRAM FOR ACCUMULATION
-<Multi_key> <I> <C> <3> <1> <3> <1> <space> : "𝍂"  U1D342  # TETRAGRAM FOR EMBELLISHMENT
-<Multi_key> <I> <C> <3> <1> <3> <2> <space> : "𝍃"  U1D343  # TETRAGRAM FOR DOUBT
-<Multi_key> <I> <C> <3> <1> <3> <3> <space> : "𝍄"  U1D344  # TETRAGRAM FOR WATCH
-<Multi_key> <I> <C> <3> <2> <1> <1> <space> : "𝍅"  U1D345  # TETRAGRAM FOR SINKING
-<Multi_key> <I> <C> <3> <2> <1> <2> <space> : "𝍆"  U1D346  # TETRAGRAM FOR INNER
-<Multi_key> <I> <C> <3> <2> <1> <3> <space> : "𝍇"  U1D347  # TETRAGRAM FOR DEPARTURE
-<Multi_key> <I> <C> <3> <2> <2> <1> <space> : "𝍈"  U1D348  # TETRAGRAM FOR DARKENING
-<Multi_key> <I> <C> <3> <2> <2> <2> <space> : "𝍉"  U1D349  # TETRAGRAM FOR DIMMING
-<Multi_key> <I> <C> <3> <2> <2> <3> <space> : "𝍊"  U1D34A  # TETRAGRAM FOR EXHAUSTION
-<Multi_key> <I> <C> <3> <2> <3> <1> <space> : "𝍋"  U1D34B  # TETRAGRAM FOR SEVERANCE
-<Multi_key> <I> <C> <3> <2> <3> <2> <space> : "𝍌"  U1D34C  # TETRAGRAM FOR STOPPAGE
-<Multi_key> <I> <C> <3> <2> <3> <3> <space> : "𝍍"  U1D34D  # TETRAGRAM FOR HARDNESS
-<Multi_key> <I> <C> <3> <3> <1> <1> <space> : "𝍎"  U1D34E  # TETRAGRAM FOR COMPLETION
-<Multi_key> <I> <C> <3> <3> <1> <2> <space> : "𝍏"  U1D34F  # TETRAGRAM FOR CLOSURE
-<Multi_key> <I> <C> <3> <3> <1> <3> <space> : "𝍐"  U1D350  # TETRAGRAM FOR FAILURE
-<Multi_key> <I> <C> <3> <3> <2> <1> <space> : "𝍑"  U1D351  # TETRAGRAM FOR AGGRAVATION
-<Multi_key> <I> <C> <3> <3> <2> <2> <space> : "𝍒"  U1D352  # TETRAGRAM FOR COMPLIANCE
-<Multi_key> <I> <C> <3> <3> <2> <3> <space> : "𝍓"  U1D353  # TETRAGRAM FOR ON THE VERGE
-<Multi_key> <I> <C> <3> <3> <3> <1> <space> : "𝍔"  U1D354  # TETRAGRAM FOR DIFFICULTIES
-<Multi_key> <I> <C> <3> <3> <3> <2> <space> : "𝍕"  U1D355  # TETRAGRAM FOR LABOURING
-<Multi_key> <I> <C> <3> <3> <3> <3> <space> : "𝍖"  U1D356  # TETRAGRAM FOR FOSTERING
-
-<Multi_key> <I> <C> <Y> <Y> : "☯"  U262F  # YIN YANG (use yin for ☯️)
+<Multi_key> <T> <J> <1> <1> <1> <1> : "𝌆"  U1D306  # TETRAGRAM FOR CENTRE
+<Multi_key> <T> <J> <1> <1> <1> <2> : "𝌇"  U1D307  # TETRAGRAM FOR FULL CIRCLE
+<Multi_key> <T> <J> <1> <1> <1> <3> : "𝌈"  U1D308  # TETRAGRAM FOR MIRED
+<Multi_key> <T> <J> <1> <1> <2> <1> : "𝌉"  U1D309  # TETRAGRAM FOR BARRIER
+<Multi_key> <T> <J> <1> <1> <2> <2> : "𝌊"  U1D30A  # TETRAGRAM FOR KEEPING SMALL
+<Multi_key> <T> <J> <1> <1> <2> <3> : "𝌋"  U1D30B  # TETRAGRAM FOR CONTRARIETY
+<Multi_key> <T> <J> <1> <1> <3> <1> : "𝌌"  U1D30C  # TETRAGRAM FOR ASCENT
+<Multi_key> <T> <J> <1> <1> <3> <2> : "𝌍"  U1D30D  # TETRAGRAM FOR OPPOSITION
+<Multi_key> <T> <J> <1> <1> <3> <3> : "𝌎"  U1D30E  # TETRAGRAM FOR BRANCHING OUT
+<Multi_key> <T> <J> <1> <2> <1> <1> : "𝌏"  U1D30F  # TETRAGRAM FOR DEFECTIVENESS OR DISTORTION
+<Multi_key> <T> <J> <1> <2> <1> <2> : "𝌐"  U1D310  # TETRAGRAM FOR DIVERGENCE
+<Multi_key> <T> <J> <1> <2> <1> <3> : "𝌑"  U1D311  # TETRAGRAM FOR YOUTHFULNESS
+<Multi_key> <T> <J> <1> <2> <2> <1> : "𝌒"  U1D312  # TETRAGRAM FOR INCREASE
+<Multi_key> <T> <J> <1> <2> <2> <2> : "𝌓"  U1D313  # TETRAGRAM FOR PENETRATION
+<Multi_key> <T> <J> <1> <2> <2> <3> : "𝌔"  U1D314  # TETRAGRAM FOR REACH
+<Multi_key> <T> <J> <1> <2> <3> <1> : "𝌕"  U1D315  # TETRAGRAM FOR CONTACT
+<Multi_key> <T> <J> <1> <2> <3> <2> : "𝌖"  U1D316  # TETRAGRAM FOR HOLDING BACK
+<Multi_key> <T> <J> <1> <2> <3> <3> : "𝌗"  U1D317  # TETRAGRAM FOR WAITING
+<Multi_key> <T> <J> <1> <3> <1> <1> : "𝌘"  U1D318  # TETRAGRAM FOR FOLLOWING
+<Multi_key> <T> <J> <1> <3> <1> <2> : "𝌙"  U1D319  # TETRAGRAM FOR ADVANCE
+<Multi_key> <T> <J> <1> <3> <1> <3> : "𝌚"  U1D31A  # TETRAGRAM FOR RELEASE
+<Multi_key> <T> <J> <1> <3> <2> <1> : "𝌛"  U1D31B  # TETRAGRAM FOR RESISTANCE
+<Multi_key> <T> <J> <1> <3> <2> <2> : "𝌜"  U1D31C  # TETRAGRAM FOR EASE
+<Multi_key> <T> <J> <1> <3> <2> <3> : "𝌝"  U1D31D  # TETRAGRAM FOR JOY
+<Multi_key> <T> <J> <1> <3> <3> <1> : "𝌞"  U1D31E  # TETRAGRAM FOR CONTENTION
+<Multi_key> <T> <J> <1> <3> <3> <2> : "𝌟"  U1D31F  # TETRAGRAM FOR ENDEAVOUR
+<Multi_key> <T> <J> <1> <3> <3> <3> : "𝌠"  U1D320  # TETRAGRAM FOR DUTIES
+<Multi_key> <T> <J> <2> <1> <1> <1> : "𝌡"  U1D321  # TETRAGRAM FOR CHANGE
+<Multi_key> <T> <J> <2> <1> <1> <2> : "𝌢"  U1D322  # TETRAGRAM FOR DECISIVENESS
+<Multi_key> <T> <J> <2> <1> <1> <3> : "𝌣"  U1D323  # TETRAGRAM FOR BOLD RESOLUTION
+<Multi_key> <T> <J> <2> <1> <2> <1> : "𝌤"  U1D324  # TETRAGRAM FOR PACKING
+<Multi_key> <T> <J> <2> <1> <2> <2> : "𝌥"  U1D325  # TETRAGRAM FOR LEGION
+<Multi_key> <T> <J> <2> <1> <2> <3> : "𝌦"  U1D326  # TETRAGRAM FOR CLOSENESS
+<Multi_key> <T> <J> <2> <1> <3> <1> : "𝌧"  U1D327  # TETRAGRAM FOR KINSHIP
+<Multi_key> <T> <J> <2> <1> <3> <2> : "𝌨"  U1D328  # TETRAGRAM FOR GATHERING
+<Multi_key> <T> <J> <2> <1> <3> <3> : "𝌩"  U1D329  # TETRAGRAM FOR STRENGTH
+<Multi_key> <T> <J> <2> <2> <1> <1> : "𝌪"  U1D32A  # TETRAGRAM FOR PURITY
+<Multi_key> <T> <J> <2> <2> <1> <2> : "𝌫"  U1D32B  # TETRAGRAM FOR FULLNESS
+<Multi_key> <T> <J> <2> <2> <1> <3> : "𝌬"  U1D32C  # TETRAGRAM FOR RESIDENCE
+<Multi_key> <T> <J> <2> <2> <2> <1> : "𝌭"  U1D32D  # TETRAGRAM FOR LAW OR MODEL
+<Multi_key> <T> <J> <2> <2> <2> <2> : "𝌮"  U1D32E  # TETRAGRAM FOR RESPONSE
+<Multi_key> <T> <J> <2> <2> <2> <3> : "𝌯"  U1D32F  # TETRAGRAM FOR GOING TO MEET
+<Multi_key> <T> <J> <2> <2> <3> <1> : "𝌰"  U1D330  # TETRAGRAM FOR ENCOUNTERS
+<Multi_key> <T> <J> <2> <2> <3> <2> : "𝌱"  U1D331  # TETRAGRAM FOR STOVE
+<Multi_key> <T> <J> <2> <2> <3> <3> : "𝌲"  U1D332  # TETRAGRAM FOR GREATNESS
+<Multi_key> <T> <J> <2> <3> <1> <1> : "𝌳"  U1D333  # TETRAGRAM FOR ENLARGEMENT
+<Multi_key> <T> <J> <2> <3> <1> <2> : "𝌴"  U1D334  # TETRAGRAM FOR PATTERN
+<Multi_key> <T> <J> <2> <3> <1> <3> : "𝌵"  U1D335  # TETRAGRAM FOR RITUAL
+<Multi_key> <T> <J> <2> <3> <2> <1> : "𝌶"  U1D336  # TETRAGRAM FOR FLIGHT
+<Multi_key> <T> <J> <2> <3> <2> <2> : "𝌷"  U1D337  # TETRAGRAM FOR VASTNESS OR WASTING
+<Multi_key> <T> <J> <2> <3> <2> <3> : "𝌸"  U1D338  # TETRAGRAM FOR CONSTANCY
+<Multi_key> <T> <J> <2> <3> <3> <1> : "𝌹"  U1D339  # TETRAGRAM FOR MEASURE
+<Multi_key> <T> <J> <2> <3> <3> <2> : "𝌺"  U1D33A  # TETRAGRAM FOR ETERNITY
+<Multi_key> <T> <J> <2> <3> <3> <3> : "𝌻"  U1D33B  # TETRAGRAM FOR UNITY
+<Multi_key> <T> <J> <3> <1> <1> <1> : "𝌼"  U1D33C  # TETRAGRAM FOR DIMINISHMENT
+<Multi_key> <T> <J> <3> <1> <1> <2> : "𝌽"  U1D33D  # TETRAGRAM FOR CLOSED MOUTH
+<Multi_key> <T> <J> <3> <1> <1> <3> : "𝌾"  U1D33E  # TETRAGRAM FOR GUARDEDNESS
+<Multi_key> <T> <J> <3> <1> <2> <1> : "𝌿"  U1D33F  # TETRAGRAM FOR GATHERING IN
+<Multi_key> <T> <J> <3> <1> <2> <2> : "𝍀"  U1D340  # TETRAGRAM FOR MASSING
+<Multi_key> <T> <J> <3> <1> <2> <3> : "𝍁"  U1D341  # TETRAGRAM FOR ACCUMULATION
+<Multi_key> <T> <J> <3> <1> <3> <1> : "𝍂"  U1D342  # TETRAGRAM FOR EMBELLISHMENT
+<Multi_key> <T> <J> <3> <1> <3> <2> : "𝍃"  U1D343  # TETRAGRAM FOR DOUBT
+<Multi_key> <T> <J> <3> <1> <3> <3> : "𝍄"  U1D344  # TETRAGRAM FOR WATCH
+<Multi_key> <T> <J> <3> <2> <1> <1> : "𝍅"  U1D345  # TETRAGRAM FOR SINKING
+<Multi_key> <T> <J> <3> <2> <1> <2> : "𝍆"  U1D346  # TETRAGRAM FOR INNER
+<Multi_key> <T> <J> <3> <2> <1> <3> : "𝍇"  U1D347  # TETRAGRAM FOR DEPARTURE
+<Multi_key> <T> <J> <3> <2> <2> <1> : "𝍈"  U1D348  # TETRAGRAM FOR DARKENING
+<Multi_key> <T> <J> <3> <2> <2> <2> : "𝍉"  U1D349  # TETRAGRAM FOR DIMMING
+<Multi_key> <T> <J> <3> <2> <2> <3> : "𝍊"  U1D34A  # TETRAGRAM FOR EXHAUSTION
+<Multi_key> <T> <J> <3> <2> <3> <1> : "𝍋"  U1D34B  # TETRAGRAM FOR SEVERANCE
+<Multi_key> <T> <J> <3> <2> <3> <2> : "𝍌"  U1D34C  # TETRAGRAM FOR STOPPAGE
+<Multi_key> <T> <J> <3> <2> <3> <3> : "𝍍"  U1D34D  # TETRAGRAM FOR HARDNESS
+<Multi_key> <T> <J> <3> <3> <1> <1> : "𝍎"  U1D34E  # TETRAGRAM FOR COMPLETION
+<Multi_key> <T> <J> <3> <3> <1> <2> : "𝍏"  U1D34F  # TETRAGRAM FOR CLOSURE
+<Multi_key> <T> <J> <3> <3> <1> <3> : "𝍐"  U1D350  # TETRAGRAM FOR FAILURE
+<Multi_key> <T> <J> <3> <3> <2> <1> : "𝍑"  U1D351  # TETRAGRAM FOR AGGRAVATION
+<Multi_key> <T> <J> <3> <3> <2> <2> : "𝍒"  U1D352  # TETRAGRAM FOR COMPLIANCE
+<Multi_key> <T> <J> <3> <3> <2> <3> : "𝍓"  U1D353  # TETRAGRAM FOR ON THE VERGE
+<Multi_key> <T> <J> <3> <3> <3> <1> : "𝍔"  U1D354  # TETRAGRAM FOR DIFFICULTIES
+<Multi_key> <T> <J> <3> <3> <3> <2> : "𝍕"  U1D355  # TETRAGRAM FOR LABOURING
+<Multi_key> <T> <J> <3> <3> <3> <3> : "𝍖"  U1D356  # TETRAGRAM FOR FOSTERING
 
 #####################
 # Technical symbols #
