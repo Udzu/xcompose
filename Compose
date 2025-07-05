@@ -7473,8 +7473,8 @@ include "%L"
 <Multi_key> <b> <L> <P> <asciitilde> <Return> : "ᰶ"  U1C36  # LEPCHA SIGN RAN
 <Multi_key> <b> <L> <P> <underscore> <period> <Return> : "᰷"  U1C37  # LEPCHA SIGN NUKTA
 
-<Multi_key> <b> <L> <P> <bar> <space>    : "᰻"  U1C3B  # LEPCHA PUNCTUATION TA-ROL
-<Multi_key> <b> <L> <P> <bar> <bar>      : "᰼"  U1C3C  # LEPCHA PUNCTUATION NYET THYOOM TA-ROL
+<Multi_key> <b> <L> <P> <bar>            : "᰻"  U1C3B  # LEPCHA PUNCTUATION TA-ROL
+<Multi_key> <b> <L> <P> <2> <bar>        : "᰼"  U1C3C  # LEPCHA PUNCTUATION NYET THYOOM TA-ROL
 <Multi_key> <b> <L> <P> <x>              : "᰽"  U1C3D  # LEPCHA PUNCTUATION CER-WA
 <Multi_key> <b> <L> <P> <asterisk>       : "᰾"  U1C3E  # LEPCHA PUNCTUATION TSHOOK CER-WA
 <Multi_key> <b> <L> <P> <exclam>         : "᰿"  U1C3F  # LEPCHA PUNCTUATION TSHOOK
@@ -17023,7 +17023,7 @@ include "HangulSyllables"
 # (z) Zhuyin/Bopomofo (and other nearby scripts) #
 ##################################################
 
-# covers Fraser, Mongolian, ʼPhags-Pa, Pollard, Tai Le, Tibetan, Yi & Zanabazar Square
+# covers Fraser, Mongolian, ʼPhags-Pa, Pollard, Soyombo, Tai Le, Tibetan, Yi & Zanabazar Square
 
 <Multi_key> <z> <c> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
 <Multi_key> <z> <c> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
@@ -17526,6 +17526,91 @@ include "HangulSyllables"
 
 <Multi_key> <z> <P> <period> <parenright> : "ꡳ"  UA873  # PHAGS-PA LETTER CANDRABINDU
 
+# (s = Soyombo)
+
+<Multi_key> <z> <s> <a> <space>          : "𑩐"  U11A50  # SOYOMBO LETTER A
+<Multi_key> <z> <s> <i> <Return>         : "𑩑"  U11A51  # SOYOMBO VOWEL SIGN I
+<Multi_key> <z> <s> <u> <e> <Return>     : "𑩒"  U11A52  # SOYOMBO VOWEL SIGN UE
+<Multi_key> <z> <s> <u> <Return>         : "𑩓"  U11A53  # SOYOMBO VOWEL SIGN U
+<Multi_key> <z> <s> <e> <e> <Return>     : "𑩔"  U11A54  # SOYOMBO VOWEL SIGN E
+<Multi_key> <z> <s> <o> <o> <Return>     : "𑩕"  U11A55  # SOYOMBO VOWEL SIGN O
+<Multi_key> <z> <s> <o> <e> <Return>     : "𑩖"  U11A56  # SOYOMBO VOWEL SIGN OE
+<Multi_key> <z> <s> <a> <i> <Return>     : "𑩗"  U11A57  # SOYOMBO VOWEL SIGN AI
+<Multi_key> <z> <s> <a> <u> <Return>     : "𑩘"  U11A58  # SOYOMBO VOWEL SIGN AU
+<Multi_key> <z> <s> <comma> <r> <Return> : "𑩙"  U11A59  # SOYOMBO VOWEL SIGN VOCALIC R
+<Multi_key> <z> <s> <comma> <l> <Return> : "𑩚"  U11A5A  # SOYOMBO VOWEL SIGN VOCALIC L
+<Multi_key> <z> <s> <minus> <Return>     : "𑩛"  U11A5B  # SOYOMBO VOWEL LENGTH MARK
+
+<Multi_key> <z> <s> <k> <space>          : "𑩜"  U11A5C  # SOYOMBO LETTER KA
+<Multi_key> <z> <s> <k> <h>              : "𑩝"  U11A5D  # SOYOMBO LETTER KHA
+<Multi_key> <z> <s> <g> <space>          : "𑩞"  U11A5E  # SOYOMBO LETTER GA
+<Multi_key> <z> <s> <g> <h>              : "𑩟"  U11A5F  # SOYOMBO LETTER GHA
+<Multi_key> <z> <s> <semicolon> <n>      : "𑩠"  U11A60  # SOYOMBO LETTER NGA
+<Multi_key> <z> <s> <c> <space>          : "𑩡"  U11A61  # SOYOMBO LETTER CA
+<Multi_key> <z> <s> <c> <h>              : "𑩢"  U11A62  # SOYOMBO LETTER CHA
+<Multi_key> <z> <s> <j> <space>          : "𑩣"  U11A63  # SOYOMBO LETTER JA
+<Multi_key> <z> <s> <j> <h>              : "𑩤"  U11A64  # SOYOMBO LETTER JHA
+<Multi_key> <z> <s> <asciitilde> <n>     : "𑩥"  U11A65  # SOYOMBO LETTER NYA
+<Multi_key> <z> <s> <period> <t> <space> : "𑩦"  U11A66  # SOYOMBO LETTER TTA
+<Multi_key> <z> <s> <period> <t> <h>     : "𑩧"  U11A67  # SOYOMBO LETTER TTHA
+<Multi_key> <z> <s> <period> <d> <space> : "𑩨"  U11A68  # SOYOMBO LETTER DDA
+<Multi_key> <z> <s> <period> <d> <h>     : "𑩩"  U11A69  # SOYOMBO LETTER DDHA
+<Multi_key> <z> <s> <period> <n>         : "𑩪"  U11A6A  # SOYOMBO LETTER NNA
+<Multi_key> <z> <s> <t> <space>          : "𑩫"  U11A6B  # SOYOMBO LETTER TA
+<Multi_key> <z> <s> <t> <h>              : "𑩬"  U11A6C  # SOYOMBO LETTER THA
+<Multi_key> <z> <s> <d> <space>          : "𑩭"  U11A6D  # SOYOMBO LETTER DA
+<Multi_key> <z> <s> <d> <h>              : "𑩮"  U11A6E  # SOYOMBO LETTER DHA
+<Multi_key> <z> <s> <n>                  : "𑩯"  U11A6F  # SOYOMBO LETTER NA
+<Multi_key> <z> <s> <p> <space>          : "𑩰"  U11A70  # SOYOMBO LETTER PA
+<Multi_key> <z> <s> <p> <h>              : "𑩱"  U11A71  # SOYOMBO LETTER PHA
+<Multi_key> <z> <s> <b> <space>          : "𑩲"  U11A72  # SOYOMBO LETTER BA
+<Multi_key> <z> <s> <b> <h>              : "𑩳"  U11A73  # SOYOMBO LETTER BHA
+<Multi_key> <z> <s> <m>                  : "𑩴"  U11A74  # SOYOMBO LETTER MA
+<Multi_key> <z> <s> <t> <s> <space>      : "𑩵"  U11A75  # SOYOMBO LETTER TSA
+<Multi_key> <z> <s> <t> <s> <h>          : "𑩶"  U11A76  # SOYOMBO LETTER TSHA
+<Multi_key> <z> <s> <d> <z>              : "𑩷"  U11A77  # SOYOMBO LETTER DZA
+<Multi_key> <z> <s> <z> <h>              : "𑩸"  U11A78  # SOYOMBO LETTER ZHA
+<Multi_key> <z> <s> <z> <space>          : "𑩹"  U11A79  # SOYOMBO LETTER ZA
+<Multi_key> <z> <s> <apostrophe>         : "𑩺"  U11A7A  # SOYOMBO LETTER -A
+<Multi_key> <z> <s> <y>                  : "𑩻"  U11A7B  # SOYOMBO LETTER YA
+<Multi_key> <z> <s> <r>                  : "𑩼"  U11A7C  # SOYOMBO LETTER RA
+<Multi_key> <z> <s> <l>                  : "𑩽"  U11A7D  # SOYOMBO LETTER LA
+<Multi_key> <z> <s> <v>                  : "𑩾"  U11A7E  # SOYOMBO LETTER VA
+<Multi_key> <z> <s> <semicolon> <s>      : "𑩿"  U11A7F  # SOYOMBO LETTER SHA
+<Multi_key> <z> <s> <period> <s>         : "𑪀"  U11A80  # SOYOMBO LETTER SSA
+<Multi_key> <z> <s> <s>                  : "𑪁"  U11A81  # SOYOMBO LETTER SA
+<Multi_key> <z> <s> <h>                  : "𑪂"  U11A82  # SOYOMBO LETTER HA
+<Multi_key> <z> <s> <k> <s> <s>          : "𑪃"  U11A83  # SOYOMBO LETTER KSSA
+
+<Multi_key> <z> <s> <x>                  : "𑪄"  U11A84  # SOYOMBO SIGN JIHVAMULIYA
+<Multi_key> <z> <s> <o> <x>              : "𑪅"  U11A85  # SOYOMBO SIGN UPADHMANIYA
+
+<Multi_key> <z> <s> <less> <r> <Return>  : "𑪆"  U11A86  # SOYOMBO CLUSTER-INITIAL LETTER RA
+<Multi_key> <z> <s> <less> <l> <Return>  : "𑪇"  U11A87  # SOYOMBO CLUSTER-INITIAL LETTER LA
+<Multi_key> <z> <s> <less> <semicolon> <s> <Return> : "𑪈"  U11A88  # SOYOMBO CLUSTER-INITIAL LETTER SHA
+<Multi_key> <z> <s> <less> <s> <Return>  : "𑪉"  U11A89  # SOYOMBO CLUSTER-INITIAL LETTER SA
+
+<Multi_key> <z> <s> <greater> <g> <Return> : "𑪊"  U11A8A  # SOYOMBO FINAL CONSONANT SIGN G
+<Multi_key> <z> <s> <greater> <k> <Return> : "𑪋"  U11A8B  # SOYOMBO FINAL CONSONANT SIGN K
+<Multi_key> <z> <s> <greater> <semicolon> <n> <Return> : "𑪌"  U11A8C  # SOYOMBO FINAL CONSONANT SIGN NG
+<Multi_key> <z> <s> <greater> <d> <Return> : "𑪍"  U11A8D  # SOYOMBO FINAL CONSONANT SIGN D
+<Multi_key> <z> <s> <greater> <n> <Return> : "𑪎"  U11A8E  # SOYOMBO FINAL CONSONANT SIGN N
+<Multi_key> <z> <s> <greater> <b> <Return> : "𑪏"  U11A8F  # SOYOMBO FINAL CONSONANT SIGN B
+<Multi_key> <z> <s> <greater> <m> <Return> : "𑪐"  U11A90  # SOYOMBO FINAL CONSONANT SIGN M
+<Multi_key> <z> <s> <greater> <r> <Return> : "𑪑"  U11A91  # SOYOMBO FINAL CONSONANT SIGN R
+<Multi_key> <z> <s> <greater> <l> <Return> : "𑪒"  U11A92  # SOYOMBO FINAL CONSONANT SIGN L
+<Multi_key> <z> <s> <greater> <semicolon> <s> <Return> : "𑪓"  U11A93  # SOYOMBO FINAL CONSONANT SIGN SH
+<Multi_key> <z> <s> <greater> <s> <Return> : "𑪔"  U11A94  # SOYOMBO FINAL CONSONANT SIGN S
+<Multi_key> <z> <s> <greater> <apostrophe> <Return> : "𑪕"  U11A95  # SOYOMBO FINAL CONSONANT SIGN -A
+
+<Multi_key> <z> <s> <period> <Return>    : "𑪖"  U11A96  # SOYOMBO SIGN ANUSVARA
+<Multi_key> <z> <s> <colon> <Return>     : "𑪗"  U11A97  # SOYOMBO SIGN VISARGA
+<Multi_key> <z> <s> <quotedbl>           : "𑪘"  U11A98  # SOYOMBO GEMINATION MARK
+<Multi_key> <z> <s> <underscore> <plus> <Return> : "𑪙"  U11A99  # SOYOMBO SUBJOINER
+<Multi_key> <z> <s> <period> <space>     : "𑪚"  U11A9A  # SOYOMBO MARK TSHEG
+<Multi_key> <z> <s> <bar>                : "𑪛"  U11A9B  # SOYOMBO MARK SHAD
+<Multi_key> <z> <s> <2> <bar>            : "𑪜"  U11A9C  # SOYOMBO MARK DOUBLE SHAD
+
 # (t = Tibetan) follows ISO 15919 like other Brahmic scripts
 
 # Consonants
@@ -17637,12 +17722,17 @@ include "HangulSyllables"
 
 # Other signs
 
+<Multi_key> <z> <t> <bar> : "།"  U0F0D  # TIBETAN MARK SHAD
+<Multi_key> <z> <t> <2> <bar> : "༎"  U0F0E  # TIBETAN MARK NYIS SHAD
+<Multi_key> <z> <t> <period> <bar> : "༏"  U0F0F  # TIBETAN MARK TSHEG SHAD
+<Multi_key> <z> <t> <colon> <bar> : "༐"  U0F10  # TIBETAN MARK NYIS TSHEG SHAD
+<Multi_key> <z> <t> <quotedbl> <period> <bar> : "༑"  U0F11  # TIBETAN MARK RIN CHEN SPUNGS SHAD
 <Multi_key> <z> <t> <period> <Return> : "ཾ" U0F7E   # TIBETAN SIGN RJES SU NGA RO (ANUSVARA)
 <Multi_key> <z> <t> <colon> <Return> : "ཿ" U0F7F   # TIBETAN SIGN RNAM BCAD (VISARGA)
 <Multi_key> <z> <t> <period> <parenright> <Return> : "ྃ" U0F83   # TIBETAN SIGN SNA LDAN (CANDRABINDU)
 <Multi_key> <z> <t> <comma> <Return> : "྄" U0F84   # TIBETAN MARK HALANTA (VIRAMA)
 
-<Multi_key> <z> <t> <2> : "྅" U0F85   # TIBETAN MARK PALUTA (AVAGRAHA)
+<Multi_key> <z> <t> <S> : "྅" U0F85   # TIBETAN MARK PALUTA (AVAGRAHA)
 <Multi_key> <z> <t> <o> <m> : "ༀ" U0F00   # TIBETAN SYLLABLE OM
 
 # Numerals
@@ -18990,8 +19080,8 @@ include "HangulSyllables"
 <Multi_key> <z> <Z> <underscore> <l> <Return> : "𑨽"  U11A3D  # ZANABAZAR SQUARE CLUSTER-FINAL LETTER LA
 <Multi_key> <z> <Z> <underscore> <v> <Return> : "𑨾"  U11A3E  # ZANABAZAR SQUARE CLUSTER-FINAL LETTER VA
 
-<Multi_key> <z> <Z> <bar> <space>        : "𑩂"  U11A42  # ZANABAZAR SQUARE MARK SHAD
-<Multi_key> <z> <Z> <bar> <bar>          : "𑩃"  U11A43  # ZANABAZAR SQUARE MARK DOUBLE SHAD
+<Multi_key> <z> <Z> <bar>                : "𑩂"  U11A42  # ZANABAZAR SQUARE MARK SHAD
+<Multi_key> <z> <Z> <2> <bar>            : "𑩃"  U11A43  # ZANABAZAR SQUARE MARK DOUBLE SHAD
 <Multi_key> <z> <Z> <underscore> <plus> <Return> : "𑩇"  U11A47  # ZANABAZAR SQUARE SUBJOINER
 
 ########################################
