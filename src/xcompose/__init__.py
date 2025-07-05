@@ -351,7 +351,8 @@ def validate(args: argparse.Namespace) -> None:
                         "'conflict' or 'override' in the comment"
                     )
                 else:
-                    # check again in case an in-file conflict was obscured by an out-of-file one
+                    # check again in case an in-file conflict was obscured by
+                    # an out-of-file one
                     kv = (
                         next(
                             (
