@@ -17730,9 +17730,9 @@ include "HangulSyllables"
 <Multi_key> <S> <space> <parenleft> : "𝪋"  U1DA8B  # SIGNWRITING PARENTHESIS
 <Multi_key> <S> <space> <parenright> : "𝪋𝪤"  U1DA8B U1DA44 # SIGNWRITING CLOSE PARENTHESIS
 
-####################################
-# (t) Thai (and Cham, Khmer & Lao) #
-####################################
+##############################################
+# (t) Thai (and Cham, Khmer, Lao & Tai Viet) #
+##############################################
 
 # (based on ISO 11940)
 
@@ -18118,6 +18118,83 @@ include "HangulSyllables"
 <Multi_key> <t> <L> <numbersign> <7> : "໗" U0ED7   # LAO DIGIT SEVEN
 <Multi_key> <t> <L> <numbersign> <8> : "໘" U0ED8   # LAO DIGIT EIGHT
 <Multi_key> <t> <L> <numbersign> <9> : "໙" U0ED9   # LAO DIGIT NINE
+
+# (t = Tai Viet)
+
+<Multi_key> <t> <t> <k> <underscore>     : "ꪀ"  UAA80  # TAI VIET LETTER LOW KO
+<Multi_key> <t> <t> <k> <asciicircum>    : "ꪁ"  UAA81  # TAI VIET LETTER HIGH KO
+<Multi_key> <t> <t> <k> <h> <underscore> : "ꪂ"  UAA82  # TAI VIET LETTER LOW KHO
+<Multi_key> <t> <t> <k> <h> <asciicircum> : "ꪃ"  UAA83  # TAI VIET LETTER HIGH KHO
+<Multi_key> <t> <t> <k> <h> <h> <underscore> : "ꪄ"  UAA84  # TAI VIET LETTER LOW KHHO
+<Multi_key> <t> <t> <k> <h> <h> <asciicircum> : "ꪅ"  UAA85  # TAI VIET LETTER HIGH KHHO
+<Multi_key> <t> <t> <g> <underscore>     : "ꪆ"  UAA86  # TAI VIET LETTER LOW GO
+<Multi_key> <t> <t> <g> <asciicircum>    : "ꪇ"  UAA87  # TAI VIET LETTER HIGH GO
+<Multi_key> <t> <t> <n> <g> <underscore> : "ꪈ"  UAA88  # TAI VIET LETTER LOW NGO
+<Multi_key> <t> <t> <n> <g> <asciicircum> : "ꪉ"  UAA89  # TAI VIET LETTER HIGH NGO
+<Multi_key> <t> <t> <c> <underscore>     : "ꪊ"  UAA8A  # TAI VIET LETTER LOW CO
+<Multi_key> <t> <t> <c> <asciicircum>    : "ꪋ"  UAA8B  # TAI VIET LETTER HIGH CO
+<Multi_key> <t> <t> <c> <h> <underscore> : "ꪌ"  UAA8C  # TAI VIET LETTER LOW CHO
+<Multi_key> <t> <t> <c> <h> <asciicircum> : "ꪍ"  UAA8D  # TAI VIET LETTER HIGH CHO
+<Multi_key> <t> <t> <s> <underscore>     : "ꪎ"  UAA8E  # TAI VIET LETTER LOW SO
+<Multi_key> <t> <t> <s> <asciicircum>    : "ꪏ"  UAA8F  # TAI VIET LETTER HIGH SO
+<Multi_key> <t> <t> <n> <y> <underscore> : "ꪐ"  UAA90  # TAI VIET LETTER LOW NYO
+<Multi_key> <t> <t> <n> <y> <asciicircum> : "ꪑ"  UAA91  # TAI VIET LETTER HIGH NYO
+<Multi_key> <t> <t> <d> <underscore>     : "ꪒ"  UAA92  # TAI VIET LETTER LOW DO
+<Multi_key> <t> <t> <d> <asciicircum>    : "ꪓ"  UAA93  # TAI VIET LETTER HIGH DO
+<Multi_key> <t> <t> <t> <underscore>     : "ꪔ"  UAA94  # TAI VIET LETTER LOW TO
+<Multi_key> <t> <t> <t> <asciicircum>    : "ꪕ"  UAA95  # TAI VIET LETTER HIGH TO
+<Multi_key> <t> <t> <t> <h> <underscore> : "ꪖ"  UAA96  # TAI VIET LETTER LOW THO
+<Multi_key> <t> <t> <t> <h> <asciicircum> : "ꪗ"  UAA97  # TAI VIET LETTER HIGH THO
+<Multi_key> <t> <t> <n> <underscore>     : "ꪘ"  UAA98  # TAI VIET LETTER LOW NO
+<Multi_key> <t> <t> <n> <asciicircum>    : "ꪙ"  UAA99  # TAI VIET LETTER HIGH NO
+<Multi_key> <t> <t> <b> <underscore>     : "ꪚ"  UAA9A  # TAI VIET LETTER LOW BO
+<Multi_key> <t> <t> <b> <asciicircum>    : "ꪛ"  UAA9B  # TAI VIET LETTER HIGH BO
+<Multi_key> <t> <t> <p> <underscore>     : "ꪜ"  UAA9C  # TAI VIET LETTER LOW PO
+<Multi_key> <t> <t> <p> <asciicircum>    : "ꪝ"  UAA9D  # TAI VIET LETTER HIGH PO
+<Multi_key> <t> <t> <p> <h> <underscore> : "ꪞ"  UAA9E  # TAI VIET LETTER LOW PHO
+<Multi_key> <t> <t> <p> <h> <asciicircum> : "ꪟ"  UAA9F  # TAI VIET LETTER HIGH PHO
+<Multi_key> <t> <t> <f> <underscore>     : "ꪠ"  UAAA0  # TAI VIET LETTER LOW FO
+<Multi_key> <t> <t> <f> <asciicircum>    : "ꪡ"  UAAA1  # TAI VIET LETTER HIGH FO
+<Multi_key> <t> <t> <m> <underscore>     : "ꪢ"  UAAA2  # TAI VIET LETTER LOW MO
+<Multi_key> <t> <t> <m> <asciicircum>    : "ꪣ"  UAAA3  # TAI VIET LETTER HIGH MO
+<Multi_key> <t> <t> <y> <underscore>     : "ꪤ"  UAAA4  # TAI VIET LETTER LOW YO
+<Multi_key> <t> <t> <y> <asciicircum>    : "ꪥ"  UAAA5  # TAI VIET LETTER HIGH YO
+<Multi_key> <t> <t> <r> <underscore>     : "ꪦ"  UAAA6  # TAI VIET LETTER LOW RO
+<Multi_key> <t> <t> <r> <asciicircum>    : "ꪧ"  UAAA7  # TAI VIET LETTER HIGH RO
+<Multi_key> <t> <t> <l> <underscore>     : "ꪨ"  UAAA8  # TAI VIET LETTER LOW LO
+<Multi_key> <t> <t> <l> <asciicircum>    : "ꪩ"  UAAA9  # TAI VIET LETTER HIGH LO
+<Multi_key> <t> <t> <v> <underscore>     : "ꪪ"  UAAAA  # TAI VIET LETTER LOW VO
+<Multi_key> <t> <t> <v> <asciicircum>    : "ꪫ"  UAAAB  # TAI VIET LETTER HIGH VO
+<Multi_key> <t> <t> <h> <underscore>     : "ꪬ"  UAAAC  # TAI VIET LETTER LOW HO
+<Multi_key> <t> <t> <h> <asciicircum>    : "ꪭ"  UAAAD  # TAI VIET LETTER HIGH HO
+<Multi_key> <t> <t> <apostrophe> <underscore> : "ꪮ"  UAAAE  # TAI VIET LETTER LOW O
+<Multi_key> <t> <t> <apostrophe> <asciicircum> : "ꪯ"  UAAAF  # TAI VIET LETTER HIGH O
+
+<Multi_key> <t> <t> <a> <Return>         : "ꪰ"  UAAB0  # TAI VIET MAI KANG
+<Multi_key> <t> <t> <a> <a> <Return>     : "ꪱ"  UAAB1  # TAI VIET VOWEL AA
+<Multi_key> <t> <t> <i> <Return>         : "ꪲ"  UAAB2  # TAI VIET VOWEL I
+<Multi_key> <t> <t> <u> <e> <Return>     : "ꪳ"  UAAB3  # TAI VIET VOWEL UE
+<Multi_key> <t> <t> <u> <Return>         : "ꪴ"  UAAB4  # TAI VIET VOWEL U
+<Multi_key> <t> <t> <e> <Return>         : "ꪵ"  UAAB5  # TAI VIET VOWEL E
+<Multi_key> <t> <t> <o> <o> <Return>     : "ꪶ"  UAAB6  # TAI VIET VOWEL O
+<Multi_key> <t> <t> <o> <Return>         : "ꪷ"  UAAB7  # TAI VIET MAI KHIT
+<Multi_key> <t> <t> <i> <a> <Return>     : "ꪸ"  UAAB8  # TAI VIET VOWEL IA
+<Multi_key> <t> <t> <u> <e> <a> <Return> : "ꪹ"  UAAB9  # TAI VIET VOWEL UEA
+<Multi_key> <t> <t> <u> <a> <Return>     : "ꪺ"  UAABA  # TAI VIET VOWEL UA
+<Multi_key> <t> <t> <a> <u> <e> <Return> : "ꪻ"  UAABB  # TAI VIET VOWEL AUE
+<Multi_key> <t> <t> <a> <y> <Return>     : "ꪼ"  UAABC  # TAI VIET VOWEL AY
+<Multi_key> <t> <t> <a> <n> <Return>     : "ꪽ"  UAABD  # TAI VIET VOWEL AN
+<Multi_key> <t> <t> <a> <m> <Return>     : "ꪾ"  UAABE  # TAI VIET VOWEL AM
+
+<Multi_key> <t> <t> <bar> <2> <Return>   : "ꫀ"  UAAC0  # TAI VIET TONE MAI NUENG
+<Multi_key> <t> <t> <bar> <5> <Return>   : "ꫀ"  UAAC0  # TAI VIET TONE MAI NUENG
+<Multi_key> <t> <t> <bar> <3> <Return>   : "ꫂ"  UAAC2  # TAI VIET TONE MAI SONG
+<Multi_key> <t> <t> <bar> <6> <Return>   : "ꫂ"  UAAC2  # TAI VIET TONE MAI SONG
+<Multi_key> <t> <t> <apostrophe> <Return> : "꪿"  UAABF  # TAI VIET TONE MAI EK
+<Multi_key> <t> <t> <2> <Return>         : "꫁"  UAAC1  # TAI VIET TONE MAI THO
+
+<Multi_key> <t> <t> <braceright> <m> <a> <n> : "ꫛ"  UAADB  # TAI VIET SYMBOL KON
+<Multi_key> <t> <t> <braceright> <o> <n> <e> : "ꫜ"  UAADC  # TAI VIET SYMBOL NUENG
 
 ##################################################
 # (z) Zhuyin/Bopomofo (and other nearby scripts) #
