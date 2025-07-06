@@ -17730,9 +17730,9 @@ include "HangulSyllables"
 <Multi_key> <S> <space> <parenleft> : "𝪋"  U1DA8B  # SIGNWRITING PARENTHESIS
 <Multi_key> <S> <space> <parenright> : "𝪋𝪤"  U1DA8B U1DA44 # SIGNWRITING CLOSE PARENTHESIS
 
-##############################
-# (t) Thai (and Khmer & Lao) #
-##############################
+####################################
+# (t) Thai (and Cham, Khmer & Lao) #
+####################################
 
 # (based on ISO 11940)
 
@@ -17834,6 +17834,99 @@ include "HangulSyllables"
 <Multi_key> <t> <numbersign> <7> : "๗" U0E57   # THAI DIGIT SEVEN
 <Multi_key> <t> <numbersign> <8> : "๘" U0E58   # THAI DIGIT EIGHT
 <Multi_key> <t> <numbersign> <9> : "๙" U0E59   # THAI DIGIT NINE
+
+# (c = Cham)
+
+<Multi_key> <t> <C> <a> <space> : "ꨀ"  UAA00  # CHAM LETTER A
+<Multi_key> <t> <C> <i> <space> : "ꨁ"  UAA01  # CHAM LETTER I
+<Multi_key> <t> <C> <u> <space> : "ꨂ"  UAA02  # CHAM LETTER U
+<Multi_key> <t> <C> <e> <space> : "ꨃ"  UAA03  # CHAM LETTER E
+<Multi_key> <t> <C> <a> <i> <space> : "ꨄ"  UAA04  # CHAM LETTER AI
+<Multi_key> <t> <C> <o> <space> : "ꨅ"  UAA05  # CHAM LETTER O
+
+<Multi_key> <t> <C> <k> <space> : "ꨆ"  UAA06  # CHAM LETTER KA
+<Multi_key> <t> <C> <k> <h> : "ꨇ"  UAA07  # CHAM LETTER KHA
+<Multi_key> <t> <C> <g> <space> : "ꨈ"  UAA08  # CHAM LETTER GA
+<Multi_key> <t> <C> <g> <h> : "ꨉ"  UAA09  # CHAM LETTER GHA
+<Multi_key> <t> <C> <asciicircum> <n> <g> : "ꨊ"  UAA0A  # CHAM LETTER NGUE (ngâ)
+<Multi_key> <t> <C> <n> <g> : "ꨋ"  UAA0B  # CHAM LETTER NGA
+<Multi_key> <t> <C> <c> <space> : "ꨌ"  UAA0C  # CHAM LETTER CHA
+<Multi_key> <t> <C> <c> <h> : "ꨍ"  UAA0D  # CHAM LETTER CHHA
+<Multi_key> <t> <C> <j> <space> : "ꨎ"  UAA0E  # CHAM LETTER JA
+<Multi_key> <t> <C> <j> <h> : "ꨏ"  UAA0F  # CHAM LETTER JHA
+<Multi_key> <t> <C> <asciicircum> <n> <y> : "ꨐ"  UAA10  # CHAM LETTER NHUE (nyâ)
+<Multi_key> <t> <C> <n> <y> : "ꨑ"  UAA11  # CHAM LETTER NHA
+<Multi_key> <t> <C> <n> <j> : "ꨒ"  UAA12  # CHAM LETTER NHJA
+<Multi_key> <t> <C> <t> <space> : "ꨓ"  UAA13  # CHAM LETTER TA
+<Multi_key> <t> <C> <t> <h> : "ꨔ"  UAA14  # CHAM LETTER THA
+<Multi_key> <t> <C> <d> <space> : "ꨕ"  UAA15  # CHAM LETTER DA
+<Multi_key> <t> <C> <d> <h> : "ꨖ"  UAA16  # CHAM LETTER DHA
+<Multi_key> <t> <C> <asciicircum> <n> <space> : "ꨗ"  UAA17  # CHAM LETTER NUE (nâ)
+<Multi_key> <t> <C> <n> <space> : "ꨘ"  UAA18  # CHAM LETTER NA
+<Multi_key> <t> <C> <n> <d> : "ꨙ"  UAA19  # CHAM LETTER DDA
+<Multi_key> <t> <C> <p> <space> : "ꨚ"  UAA1A  # CHAM LETTER PA
+<Multi_key> <t> <C> <p> <p> : "ꨛ"  UAA1B  # CHAM LETTER PPA
+<Multi_key> <t> <C> <p> <h> : "ꨜ"  UAA1C  # CHAM LETTER PHA
+<Multi_key> <t> <C> <b> <space> : "ꨝ"  UAA1D  # CHAM LETTER BA
+<Multi_key> <t> <C> <b> <h> : "ꨞ"  UAA1E  # CHAM LETTER BHA
+<Multi_key> <t> <C> <asciicircum> <m> : "ꨟ"  UAA1F  # CHAM LETTER MUE (mâ)
+<Multi_key> <t> <C> <m> <space> : "ꨠ"  UAA20  # CHAM LETTER MA
+<Multi_key> <t> <C> <m> <b> : "ꨡ"  UAA21  # CHAM LETTER BBA
+<Multi_key> <t> <C> <y> <space> : "ꨢ"  UAA22  # CHAM LETTER YA
+<Multi_key> <t> <C> <r> <space> : "ꨣ"  UAA23  # CHAM LETTER RA
+<Multi_key> <t> <C> <l> <space> : "ꨤ"  UAA24  # CHAM LETTER LA
+<Multi_key> <t> <C> <w> <space> : "ꨥ"  UAA25  # CHAM LETTER VA
+<Multi_key> <t> <C> <exclam> <s> : "ꨦ"  UAA26  # CHAM LETTER SSA (ṣ)
+<Multi_key> <t> <C> <s> : "ꨧ"  UAA27  # CHAM LETTER SA
+<Multi_key> <t> <C> <h> : "ꨨ"  UAA28  # CHAM LETTER HA
+
+<Multi_key> <t> <C> <a> <a> <Return> : "ꨩ"  UAA29  # CHAM VOWEL SIGN AA
+<Multi_key> <t> <C> <i> <Return> : "ꨪ"  UAA2A  # CHAM VOWEL SIGN I
+<Multi_key> <t> <C> <i> <i> <Return> : "ꨫ"  UAA2B  # CHAM VOWEL SIGN II
+<Multi_key> <t> <C> <e> <i> <Return> : "ꨬ"  UAA2C  # CHAM VOWEL SIGN EI
+<Multi_key> <t> <C> <u> <Return> : "ꨭ"  UAA2D  # CHAM VOWEL SIGN U
+<Multi_key> <t> <C> <o> <e> <Return> : "ꨮ"  UAA2E  # CHAM VOWEL SIGN OE
+<Multi_key> <t> <C> <o> <Return> : "ꨯ"  UAA2F  # CHAM VOWEL SIGN O
+<Multi_key> <t> <C> <a> <i> <Return> : "ꨰ"  UAA30  # CHAM VOWEL SIGN AI
+<Multi_key> <t> <C> <a> <u> <Return> : "ꨱ"  UAA31  # CHAM VOWEL SIGN AU
+<Multi_key> <t> <C> <u> <e> <Return> : "ꨲ"  UAA32  # CHAM VOWEL SIGN UE
+
+<Multi_key> <t> <C> <y> <Return> : "ꨳ"  UAA33  # CHAM CONSONANT SIGN YA
+<Multi_key> <t> <C> <r> <Return> : "ꨴ"  UAA34  # CHAM CONSONANT SIGN RA
+<Multi_key> <t> <C> <l> <Return> : "ꨵ"  UAA35  # CHAM CONSONANT SIGN LA
+<Multi_key> <t> <C> <w> <Return> : "ꨶ"  UAA36  # CHAM CONSONANT SIGN WA
+
+<Multi_key> <t> <C> <greater> <k> : "ꩀ"  UAA40  # CHAM LETTER FINAL K
+<Multi_key> <t> <C> <greater> <g> : "ꩁ"  UAA41  # CHAM LETTER FINAL G
+<Multi_key> <t> <C> <greater> <n> <g> <space> : "ꩂ"  UAA42  # CHAM LETTER FINAL NG
+<Multi_key> <t> <C> <greater> <c> : "ꩄ"  UAA44  # CHAM LETTER FINAL CH
+<Multi_key> <t> <C> <greater> <t> : "ꩅ"  UAA45  # CHAM LETTER FINAL T
+<Multi_key> <t> <C> <greater> <n> <space> : "ꩆ"  UAA46  # CHAM LETTER FINAL N
+<Multi_key> <t> <C> <greater> <p> : "ꩇ"  UAA47  # CHAM LETTER FINAL P
+<Multi_key> <t> <C> <greater> <y> : "ꩈ"  UAA48  # CHAM LETTER FINAL Y
+<Multi_key> <t> <C> <greater> <r> : "ꩉ"  UAA49  # CHAM LETTER FINAL R
+<Multi_key> <t> <C> <greater> <l> : "ꩊ"  UAA4A  # CHAM LETTER FINAL L
+<Multi_key> <t> <C> <greater> <exclam> <s> : "ꩋ"  UAA4B  # CHAM LETTER FINAL SS
+
+<Multi_key> <t> <C> <greater> <n> <g> <Return> : "ꩃ"  UAA43  # CHAM CONSONANT SIGN FINAL NG
+<Multi_key> <t> <C> <greater> <m> <Return> : "ꩌ"  UAA4C  # CHAM CONSONANT SIGN FINAL M
+<Multi_key> <t> <C> <greater> <h> <Return> : "ꩍ"  UAA4D  # CHAM CONSONANT SIGN FINAL H
+
+<Multi_key> <t> <C> <numbersign> <0> : "꩐"  UAA50  # CHAM DIGIT ZERO
+<Multi_key> <t> <C> <numbersign> <1> : "꩑"  UAA51  # CHAM DIGIT ONE
+<Multi_key> <t> <C> <numbersign> <2> : "꩒"  UAA52  # CHAM DIGIT TWO
+<Multi_key> <t> <C> <numbersign> <3> : "꩓"  UAA53  # CHAM DIGIT THREE
+<Multi_key> <t> <C> <numbersign> <4> : "꩔"  UAA54  # CHAM DIGIT FOUR
+<Multi_key> <t> <C> <numbersign> <5> : "꩕"  UAA55  # CHAM DIGIT FIVE
+<Multi_key> <t> <C> <numbersign> <6> : "꩖"  UAA56  # CHAM DIGIT SIX
+<Multi_key> <t> <C> <numbersign> <7> : "꩗"  UAA57  # CHAM DIGIT SEVEN
+<Multi_key> <t> <C> <numbersign> <8> : "꩘"  UAA58  # CHAM DIGIT EIGHT
+<Multi_key> <t> <C> <numbersign> <9> : "꩙"  UAA59  # CHAM DIGIT NINE
+
+<Multi_key> <t> <C> <Multi_key> <S> <O> : "꩜"  UAA5C  # CHAM PUNCTUATION SPIRAL
+<Multi_key> <t> <C> <bar> : "꩝"  UAA5D  # CHAM PUNCTUATION DANDA
+<Multi_key> <t> <C> <2> <bar> : "꩞"  UAA5E  # CHAM PUNCTUATION DOUBLE DANDA
+<Multi_key> <t> <C> <3> <bar> : "꩟"  UAA5F  # CHAM PUNCTUATION TRIPLE DANDA
 
 # (k = Khmer) ALA-LC transliteration
 
