@@ -14197,11 +14197,13 @@ include "%L"
 <Multi_key> <h> <c> <d>        : "ד"  U05D3   # HEBREW LETTER DALET
 <Multi_key> <h> <c> <h>        : "ה"  U05D4   # HEBREW LETTER HE
 <Multi_key> <h> <c> <v>        : "ו"  U05D5   # HEBREW LETTER VAV
+<Multi_key> <h> <c> <o>        : "ו"  U05D5   # HEBREW LETTER VAV
+<Multi_key> <h> <c> <u>        : "ו"  U05D5   # HEBREW LETTER VAV
 <Multi_key> <h> <c> <z>        : "ז"  U05D6   # HEBREW LETTER ZAYIN
 <Multi_key> <h> <c> <H>        : "ח"  U05D7   # HEBREW LETTER HET
 <Multi_key> <h> <c> <T>        : "ט"  U05D8   # HEBREW LETTER TET
 <Multi_key> <h> <c> <y>        : "י"  U05D9   # HEBREW LETTER YOD
-<Multi_key> <h> <c> <i>        : "יִ"  UFB1D   # HEBREW LETTER YOD WITH HIRIQ
+<Multi_key> <h> <c> <i>        : "י"  U05D9   # HEBREW LETTER YOD
 <Multi_key> <h> <c> <less> <k> : "ך"  U05DA   # HEBREW LETTER FINAL KAF
 <Multi_key> <h> <c> <k>        : "כ"  U05DB   # HEBREW LETTER KAF
 <Multi_key> <h> <c> <l>        : "ל"  U05DC   # HEBREW LETTER LAMED
@@ -14227,10 +14229,11 @@ include "%L"
 
 <Multi_key> <h> <c> <c> <h>     : "צ׳"  U05E6 U05F3   # HEBREW LETTER CHADI
 <Multi_key> <h> <c> <j>         : "ג׳"  U05D2 U05F3   # HEBREW LETTER JIMEL
-<Multi_key> <h> <c> <o>         : "וֹ"  UFB4B   # HEBREW LETTER VAV WITH HOLAM
-<Multi_key> <h> <c> <u>         : "וּ"  U05D5 U05BC   # HEBREW LETTER VAV WITH SHURUK
 <Multi_key> <h> <c> <w>         : "װ"  U05F0   # HEBREW LIGATURE YIDDISH DOUBLE VAV
-<Multi_key> <h> <c> <O> <Y>     : "ױ"  U05F1   # HEBREW LIGATURE YIDDISH VAV YOD
+<Multi_key> <h> <c> <I>         : "יִ"  UFB1D   # HEBREW LETTER YOD WITH HIRIQ
+<Multi_key> <h> <c> <O>         : "וֹ"  UFB4B   # HEBREW LETTER VAV WITH HOLAM
+<Multi_key> <h> <c> <U>         : "וּ"  U05D5 U05BC   # HEBREW LETTER VAV WITH SHURUK
+<Multi_key> <h> <c> <V> <Y>     : "ױ"  U05F1   # HEBREW LIGATURE YIDDISH VAV YOD
 <Multi_key> <h> <c> <Y>         : "ײ"  U05F2   # HEBREW LIGATURE YIDDISH DOUBLE YOD
 <Multi_key> <h> <c> <underscore> <Y> : "ײַ"  UFB1F  # HEBREW LIGATURE YIDDISH YOD YOD PATAH
 <Multi_key> <h> <c> <underscore> <a> : "אַ"  UFB2E  # HEBREW LETTER ALEF WITH PATAH
@@ -14308,8 +14311,8 @@ include "%L"
 <Multi_key> <h> <c> <asterisk> <greater> <S> : "שּׁ" UFB2C   # HEBREW LETTER SHIN WITH DAGESH AND SHIN DOT
 <Multi_key> <h> <c> <asterisk> <less> <S> : "שּׂ" UFB2D   # HEBREW LETTER SHIN WITH DAGESH AND SIN DOT
 
-<Multi_key> <h> <c> <period> <y> : "יִ" UFB1D   # HEBREW LETTER YOD WITH HIRIQ (alternatively hci)
-<Multi_key> <h> <c> <period> <v> : "וֹ"  UFB4B   # HEBREW LETTER VAV WITH HOLAM (alternatively hco)
+<Multi_key> <h> <c> <period> <y> : "יִ" UFB1D   # HEBREW LETTER YOD WITH HIRIQ (alternatively hcI)
+<Multi_key> <h> <c> <period> <v> : "וֹ"  UFB4B   # HEBREW LETTER VAV WITH HOLAM (alternatively hcO)
 <Multi_key> <h> <c> <asciicircum> <underscore> <b> : "בֿ" UFB4C   # HEBREW LETTER BET WITH RAFE
 <Multi_key> <h> <c> <asciicircum> <underscore> <k> : "כֿ" UFB4D   # HEBREW LETTER KAF WITH RAFE
 <Multi_key> <h> <c> <asciicircum> <underscore> <p> : "פֿ" UFB4E   # HEBREW LETTER PE WITH RAFE
