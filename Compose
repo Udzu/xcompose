@@ -10826,8 +10826,8 @@ include "%L"
 ##################
 
 # covers Cherokee, Deseret, Inuktitut Syllabics, Kayah Li, Medefeidrin, Mru, Nag Mundari,
-# Nyiakeng Puachue Hmong, Ol Chiki, Old Onal, Osage, Pau Cin Hau, Shavian, Sora Sompeng,
-# Sunuwar, Tangsa, Toto, Wancho & Warang Citi
+# Nyiakeng Puachue Hmong, Ol Chiki, Old Onal, Osage, Pahawh Hmong, Pau Cin Hau, Shavian, 
+# Sora Sompeng, Sunuwar, Tangsa, Toto, Wancho & Warang Citi
 
 # (d/D = Deseret)
 
@@ -11901,6 +11901,248 @@ include "%L"
 <Multi_key> <C> <p> <slash> <slash> <space> : "𑫶"  U11AF6  # PAU CIN HAU LOW-FALLING TONE LONG FINAL
 <Multi_key> <C> <p> <slash> <slash> <period> : "𑫷"  U11AF7  # PAU CIN HAU LOW-FALLING TONE FINAL
 <Multi_key> <C> <p> <slash> <slash> <colon> : "𑫸"  U11AF8  # PAU CIN HAU GLOTTAL STOP FINAL
+
+# (P = Pahawh Hmong) Third Stage orthography using RPA for transliteration
+
+# vowels (default onset is k)
+
+<Multi_key> <C> <P> <e> <e> <b> : "𖬀"  U16B00  # PAHAWH HMONG VOWEL KEEB
+<Multi_key> <C> <P> <e> <e> <m> : "𖬀𖬰"  U16B00 U16B30  # PAHAWH HMONG VOWEL KEEB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <e> <e> <j> : "𖬀𖬲"  U16B00 U16B32  # PAHAWH HMONG VOWEL KEEB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <e> <e> <v> : "𖬁"  U16B01  # PAHAWH HMONG VOWEL KEEV
+<Multi_key> <C> <P> <e> <e> <space> : "𖬁𖬰"  U16B01 U16B30  # PAHAWH HMONG VOWEL KEEV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <e> <e> <s> : "𖬁𖬲"  U16B01 U16B32  # PAHAWH HMONG VOWEL KEEV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <e> <e> <g> : "𖬁𖬶"  U16B01 U16B36  # PAHAWH HMONG VOWEL KEEV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <i> <b> : "𖬂"  U16B02  # PAHAWH HMONG VOWEL KIB
+<Multi_key> <C> <P> <i> <m> : "𖬂𖬰"  U16B02 U16B30  # PAHAWH HMONG VOWEL KIB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <i> <j> : "𖬂𖬲"  U16B02 U16B32  # PAHAWH HMONG VOWEL KIB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <i> <v> : "𖬃"  U16B03  # PAHAWH HMONG VOWEL KIV
+<Multi_key> <C> <P> <i> <space> : "𖬃𖬰"  U16B03 U16B30  # PAHAWH HMONG VOWEL KIV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <i> <s> : "𖬃𖬲"  U16B03 U16B32  # PAHAWH HMONG VOWEL KIV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <i> <g> : "𖬃𖬶"  U16B03 U16B36  # PAHAWH HMONG VOWEL KIV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <a> <u> <b> : "𖬄"  U16B04  # PAHAWH HMONG VOWEL KAUB
+<Multi_key> <C> <P> <a> <u> <m> : "𖬄𖬰"  U16B04 U16B30  # PAHAWH HMONG VOWEL KAUB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <a> <u> <j> : "𖬄𖬲"  U16B04 U16B32  # PAHAWH HMONG VOWEL KAUB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <a> <u> <v> : "𖬅"  U16B05  # PAHAWH HMONG VOWEL KAUV
+<Multi_key> <C> <P> <a> <u> <space> : "𖬅𖬰"  U16B05 U16B30  # PAHAWH HMONG VOWEL KAUV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <a> <u> <s> : "𖬅𖬲"  U16B05 U16B32  # PAHAWH HMONG VOWEL KAUV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <a> <u> <g> : "𖬅𖬶"  U16B05 U16B36  # PAHAWH HMONG VOWEL KAUV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <u> <b> : "𖬆"  U16B06  # PAHAWH HMONG VOWEL KUB
+<Multi_key> <C> <P> <u> <m> : "𖬆𖬰"  U16B06 U16B30  # PAHAWH HMONG VOWEL KUB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <u> <j> : "𖬆𖬲"  U16B06 U16B32  # PAHAWH HMONG VOWEL KUB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <u> <v> : "𖬇"  U16B07  # PAHAWH HMONG VOWEL KUV
+<Multi_key> <C> <P> <u> <space> : "𖬇𖬰"  U16B07 U16B30  # PAHAWH HMONG VOWEL KUV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <u> <s> : "𖬇𖬲"  U16B07 U16B32  # PAHAWH HMONG VOWEL KUV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <u> <g> : "𖬇𖬶"  U16B07 U16B36  # PAHAWH HMONG VOWEL KUV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <e> <b> : "𖬈"  U16B08  # PAHAWH HMONG VOWEL KEB
+<Multi_key> <C> <P> <e> <m> : "𖬈𖬰"  U16B08 U16B30  # PAHAWH HMONG VOWEL KEB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <e> <j> : "𖬈𖬲"  U16B08 U16B32  # PAHAWH HMONG VOWEL KEB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <e> <v> : "𖬉"  U16B09  # PAHAWH HMONG VOWEL KEV
+<Multi_key> <C> <P> <e> <space> : "𖬉𖬰"  U16B09 U16B30  # PAHAWH HMONG VOWEL KEV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <e> <s> : "𖬉𖬲"  U16B09 U16B32  # PAHAWH HMONG VOWEL KEV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <e> <g> : "𖬉𖬶"  U16B09 U16B36  # PAHAWH HMONG VOWEL KEV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <a> <i> <b> : "𖬊"  U16B0A  # PAHAWH HMONG VOWEL KAIB
+<Multi_key> <C> <P> <a> <i> <m> : "𖬊𖬰"  U16B0A U16B30  # PAHAWH HMONG VOWEL KAIB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <a> <i> <j> : "𖬊𖬲"  U16B0A U16B32  # PAHAWH HMONG VOWEL KAIB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <a> <i> <v> : "𖬋"  U16B0B  # PAHAWH HMONG VOWEL KAIV
+<Multi_key> <C> <P> <a> <i> <space> : "𖬋𖬰"  U16B0B U16B30  # PAHAWH HMONG VOWEL KAIV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <a> <i> <s> : "𖬋𖬲"  U16B0B U16B32  # PAHAWH HMONG VOWEL KAIV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <a> <i> <g> : "𖬋𖬶"  U16B0B U16B36  # PAHAWH HMONG VOWEL KAIV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <o> <o> <b> : "𖬌"  U16B0C  # PAHAWH HMONG VOWEL KOOB
+<Multi_key> <C> <P> <o> <o> <m> : "𖬌𖬰"  U16B0C U16B30  # PAHAWH HMONG VOWEL KOOB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <o> <o> <j> : "𖬌𖬲"  U16B0C U16B32  # PAHAWH HMONG VOWEL KOOB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <o> <o> <v> : "𖬍"  U16B0D  # PAHAWH HMONG VOWEL KOOV
+<Multi_key> <C> <P> <o> <o> <space> : "𖬍𖬰"  U16B0D U16B30  # PAHAWH HMONG VOWEL KOOV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <o> <o> <s> : "𖬍𖬲"  U16B0D U16B32  # PAHAWH HMONG VOWEL KOOV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <o> <o> <g> : "𖬍𖬶"  U16B0D U16B36  # PAHAWH HMONG VOWEL KOOV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <a> <w> <b> : "𖬎"  U16B0E  # PAHAWH HMONG VOWEL KAWB
+<Multi_key> <C> <P> <a> <w> <m> : "𖬎𖬰"  U16B0E U16B30  # PAHAWH HMONG VOWEL KAWB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <a> <w> <j> : "𖬎𖬲"  U16B0E U16B32  # PAHAWH HMONG VOWEL KAWB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <a> <w> <v> : "𖬏"  U16B0F  # PAHAWH HMONG VOWEL KAWV
+<Multi_key> <C> <P> <a> <w> <space> : "𖬏𖬰"  U16B0F U16B30  # PAHAWH HMONG VOWEL KAWV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <a> <w> <s> : "𖬏𖬲"  U16B0F U16B32  # PAHAWH HMONG VOWEL KAWV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <a> <w> <g> : "𖬏𖬶"  U16B0F U16B36  # PAHAWH HMONG VOWEL KAWV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <u> <a> <b> : "𖬐"  U16B10  # PAHAWH HMONG VOWEL KUAB
+<Multi_key> <C> <P> <u> <a> <m> : "𖬐𖬰"  U16B10 U16B30  # PAHAWH HMONG VOWEL KUAB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <u> <a> <j> : "𖬐𖬲"  U16B10 U16B32  # PAHAWH HMONG VOWEL KUAB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <u> <a> <v> : "𖬑"  U16B11  # PAHAWH HMONG VOWEL KUAV
+<Multi_key> <C> <P> <u> <a> <space> : "𖬑𖬰"  U16B11 U16B30  # PAHAWH HMONG VOWEL KUAV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <u> <a> <s> : "𖬑𖬲"  U16B11 U16B32  # PAHAWH HMONG VOWEL KUAV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <u> <a> <g> : "𖬑𖬶"  U16B11 U16B36  # PAHAWH HMONG VOWEL KUAV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <o> <b> : "𖬒"  U16B12  # PAHAWH HMONG VOWEL KOB
+<Multi_key> <C> <P> <o> <m> : "𖬒𖬰"  U16B12 U16B30  # PAHAWH HMONG VOWEL KOB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <o> <j> : "𖬒𖬲"  U16B12 U16B32  # PAHAWH HMONG VOWEL KOB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <o> <v> : "𖬓"  U16B13  # PAHAWH HMONG VOWEL KOV
+<Multi_key> <C> <P> <o> <space> : "𖬓𖬰"  U16B13 U16B30  # PAHAWH HMONG VOWEL KOV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <o> <s> : "𖬓𖬲"  U16B13 U16B32  # PAHAWH HMONG VOWEL KOV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <o> <g> : "𖬓𖬶"  U16B13 U16B36  # PAHAWH HMONG VOWEL KOV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <i> <a> <b> : "𖬔"  U16B14  # PAHAWH HMONG VOWEL KIAB
+<Multi_key> <C> <P> <i> <a> <m> : "𖬔𖬰"  U16B14 U16B30  # PAHAWH HMONG VOWEL KIAB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <i> <a> <j> : "𖬔𖬲"  U16B14 U16B32  # PAHAWH HMONG VOWEL KIAB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <i> <a> <v> : "𖬕"  U16B15  # PAHAWH HMONG VOWEL KIAV
+<Multi_key> <C> <P> <i> <a> <space> : "𖬕𖬰"  U16B15 U16B30  # PAHAWH HMONG VOWEL KIAV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <i> <a> <s> : "𖬕𖬲"  U16B15 U16B32  # PAHAWH HMONG VOWEL KIAV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <i> <a> <g> : "𖬕𖬶"  U16B15 U16B36  # PAHAWH HMONG VOWEL KIAV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <a> <b> : "𖬖"  U16B16  # PAHAWH HMONG VOWEL KAB
+<Multi_key> <C> <P> <a> <m> : "𖬖𖬰"  U16B16 U16B30  # PAHAWH HMONG VOWEL KAB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <a> <j> : "𖬖𖬲"  U16B16 U16B32  # PAHAWH HMONG VOWEL KAB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <a> <v> : "𖬗"  U16B17  # PAHAWH HMONG VOWEL KAV
+<Multi_key> <C> <P> <a> <space> : "𖬗𖬰"  U16B17 U16B30  # PAHAWH HMONG VOWEL KAV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <a> <s> : "𖬗𖬲"  U16B17 U16B32  # PAHAWH HMONG VOWEL KAV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <a> <g> : "𖬗𖬶"  U16B17 U16B36  # PAHAWH HMONG VOWEL KAV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <w> <b> : "𖬘"  U16B18  # PAHAWH HMONG VOWEL KWB
+<Multi_key> <C> <P> <w> <m> : "𖬘𖬰"  U16B18 U16B30  # PAHAWH HMONG VOWEL KWB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <w> <j> : "𖬘𖬲"  U16B18 U16B32  # PAHAWH HMONG VOWEL KWB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <w> <v> : "𖬙"  U16B19  # PAHAWH HMONG VOWEL KWV
+<Multi_key> <C> <P> <w> <space> : "𖬙𖬰"  U16B19 U16B30  # PAHAWH HMONG VOWEL KWV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <w> <s> : "𖬙𖬲"  U16B19 U16B32  # PAHAWH HMONG VOWEL KWV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <w> <g> : "𖬙𖬶"  U16B19 U16B36  # PAHAWH HMONG VOWEL KWV PAHAWH HMONG MARK CIM TAUM
+<Multi_key> <C> <P> <a> <a> <b> : "𖬚"  U16B1A  # PAHAWH HMONG VOWEL KAAB
+<Multi_key> <C> <P> <a> <a> <m> : "𖬚𖬰"  U16B1A U16B30  # PAHAWH HMONG VOWEL KAAB PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <a> <a> <j> : "𖬚𖬲"  U16B1A U16B32  # PAHAWH HMONG VOWEL KAAB PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <a> <a> <v> : "𖬛"  U16B1B  # PAHAWH HMONG VOWEL KAAV
+<Multi_key> <C> <P> <a> <a> <space> : "𖬛𖬰"  U16B1B U16B30  # PAHAWH HMONG VOWEL KAAV PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <a> <a> <s> : "𖬛𖬲"  U16B1B U16B32  # PAHAWH HMONG VOWEL KAAV PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <a> <a> <g> : "𖬛𖬶"  U16B1B U16B36  # PAHAWH HMONG VOWEL KAAV PAHAWH HMONG MARK CIM TAUM
+
+# consonants (default rime is au)
+
+<Multi_key> <C> <P> <v> : "𖬜"  U16B1C  # PAHAWH HMONG CONSONANT VAU
+<Multi_key> <C> <P> <n> <r> <space> : "𖬜𖬰"  U16B1C U16B30  # PAHAWH HMONG CONSONANT VAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <f> : "𖬜𖬵"  U16B1C U16B35  # PAHAWH HMONG CONSONANT VAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <n> <t> <s> <space> : "𖬝"  U16B1D  # PAHAWH HMONG CONSONANT NTSAU
+<Multi_key> <C> <P> <t> <s> <space> : "𖬝𖬰"  U16B1D U16B30  # PAHAWH HMONG CONSONANT NTSAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <p> <h> : "𖬝𖬵"  U16B1D U16B35  # PAHAWH HMONG CONSONANT NTSAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <l> : "𖬞"  U16B1E  # PAHAWH HMONG CONSONANT LAU
+<Multi_key> <C> <P> <d> <space> : "𖬞𖬰"  U16B1E U16B30  # PAHAWH HMONG CONSONANT LAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <d> <h> : "𖬞𖬵"  U16B1E U16B35  # PAHAWH HMONG CONSONANT LAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <h> <space> : "𖬟"  U16B1F  # PAHAWH HMONG CONSONANT HAU
+<Multi_key> <C> <P> <t> <h> : "𖬟𖬰"  U16B1F U16B30  # PAHAWH HMONG CONSONANT HAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <p> <l> <space> : "𖬟𖬵"  U16B1F U16B35  # PAHAWH HMONG CONSONANT HAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <n> <l> : "𖬠"  U16B20  # PAHAWH HMONG CONSONANT NLAU
+<Multi_key> <C> <P> <h> <n> <l> : "𖬠𖬰"  U16B20 U16B30  # PAHAWH HMONG CONSONANT NLAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <g> : "𖬠𖬵"  U16B20 U16B35  # PAHAWH HMONG CONSONANT NLAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <r> <space> : "𖬡"  U16B21  # PAHAWH HMONG CONSONANT RAU
+<Multi_key> <C> <P> <n> <p> <h> <space> : "𖬡𖬰"  U16B21 U16B30  # PAHAWH HMONG CONSONANT RAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <n> <p> <h> <l> : "𖬡𖬵"  U16B21 U16B35  # PAHAWH HMONG CONSONANT RAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <n> <k> <space> : "𖬢"  U16B22  # PAHAWH HMONG CONSONANT NKAU
+<Multi_key> <C> <P> <n> <t> <x> <space> : "𖬢𖬰"  U16B22 U16B30  # PAHAWH HMONG CONSONANT NKAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <r> <h> : "𖬢𖬵"  U16B22 U16B35  # PAHAWH HMONG CONSONANT NKAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <q> <h> : "𖬣"  U16B23  # PAHAWH HMONG CONSONANT QHAU
+<Multi_key> <C> <P> <n> <y> <h> : "𖬣𖬰"  U16B23 U16B30  # PAHAWH HMONG CONSONANT QHAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <h> <m> : "𖬣𖬵"  U16B23 U16B35  # PAHAWH HMONG CONSONANT QHAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <y> : "𖬤"  U16B24  # PAHAWH HMONG CONSONANT YAU
+<Multi_key> <C> <P> <n> <c> <space> : "𖬤𖬰"  U16B24 U16B30  # PAHAWH HMONG CONSONANT YAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <s> : "𖬤𖬵"  U16B24 U16B35  # PAHAWH HMONG CONSONANT YAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <h> <l> : "𖬥"  U16B25  # PAHAWH HMONG CONSONANT HLAU
+<Multi_key> <C> <P> <z> : "𖬥𖬰"  U16B25 U16B30  # PAHAWH HMONG CONSONANT HLAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <n> <t> <x> <h> : "𖬥𖬵"  U16B25 U16B35  # PAHAWH HMONG CONSONANT HLAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <m> : "𖬦"  U16B26  # PAHAWH HMONG CONSONANT MAU
+<Multi_key> <C> <P> <t> <x> <h> : "𖬦𖬰"  U16B26 U16B30  # PAHAWH HMONG CONSONANT MAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <q> <space> : "𖬦𖬵"  U16B26 U16B35  # PAHAWH HMONG CONSONANT MAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <c> <h> : "𖬧"  U16B27  # PAHAWH HMONG CONSONANT CHAU
+<Multi_key> <C> <P> <x> <y> : "𖬧𖬰"  U16B27 U16B30  # PAHAWH HMONG CONSONANT CHAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <t> <space> : "𖬧𖬵"  U16B27 U16B35  # PAHAWH HMONG CONSONANT CHAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <n> <c> <h> : "𖬨"  U16B28  # PAHAWH HMONG CONSONANT NCHAU
+<Multi_key> <C> <P> <n> <r> <h> : "𖬨𖬰"  U16B28 U16B30  # PAHAWH HMONG CONSONANT NCHAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <n> <p> <space> : "𖬨𖬵"  U16B28 U16B35  # PAHAWH HMONG CONSONANT NCHAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <h> <n> <space> : "𖬩"  U16B29  # PAHAWH HMONG CONSONANT HNAU
+<Multi_key> <C> <P> <k> <h> : "𖬩𖬰"  U16B29 U16B30  # PAHAWH HMONG CONSONANT HNAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <n> <t> <space> : "𖬩𖬵"  U16B29 U16B35  # PAHAWH HMONG CONSONANT HNAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <p> <l> <h> : "𖬪"  U16B2A  # PAHAWH HMONG CONSONANT PLHAU
+<Multi_key> <C> <P> <t> <s> <h> : "𖬪𖬰"  U16B2A U16B30  # PAHAWH HMONG CONSONANT PLHAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <p> <space> : "𖬪𖬵"  U16B2A U16B35  # PAHAWH HMONG CONSONANT PLHAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <n> <t> <h> : "𖬫"  U16B2B  # PAHAWH HMONG CONSONANT NTHAU
+<Multi_key> <C> <P> <n> <p> <l> : "𖬫𖬰"  U16B2B U16B30  # PAHAWH HMONG CONSONANT NTHAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <n> <k> <h> : "𖬫𖬵"  U16B2B U16B35  # PAHAWH HMONG CONSONANT NTHAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <n> <space> : "𖬬"  U16B2C  # PAHAWH HMONG CONSONANT NAU
+<Multi_key> <C> <P> <n> <q> <space> : "𖬬𖬰"  U16B2C U16B30  # PAHAWH HMONG CONSONANT NAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <n> <q> <h> : "𖬬𖬵"  U16B2C U16B35  # PAHAWH HMONG CONSONANT NAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <n> <d> <l> <space> : "𖬭"  U16B2D  # PAHAWH HMONG CONSONANT AU
+<Multi_key> <C> <P> <d> <l> <space> : "𖬭𖬰"  U16B2D U16B30  # PAHAWH HMONG CONSONANT AU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <d> <l> <h> : "𖬭𖬵"  U16B2D U16B35  # PAHAWH HMONG CONSONANT AU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <n> <d> <l> <h> : "𖬭𖬴"  U16B2D U16B34  # PAHAWH HMONG CONSONANT AU PAHAWH HMONG MARK CIM SUAM
+<Multi_key> <C> <P> <x> <space> : "𖬮"  U16B2E  # PAHAWH HMONG CONSONANT XAU
+<Multi_key> <C> <P> <apostrophe> : "𖬮𖬰"  U16B2E U16B30  # PAHAWH HMONG CONSONANT XAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <n> <y> <space> : "𖬮𖬵"  U16B2E U16B35  # PAHAWH HMONG CONSONANT XAU PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <c> <space> : "𖬯"  U16B2F  # PAHAWH HMONG CONSONANT CAU
+<Multi_key> <C> <P> <n> <t> <s> <h> : "𖬯𖬰"  U16B2F U16B30  # PAHAWH HMONG CONSONANT CAU PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <t> <x> <space> : "𖬯𖬵"  U16B2F U16B35  # PAHAWH HMONG CONSONANT CAU PAHAWH HMONG MARK CIM HOM
+
+# diacritics (by shape)
+
+<Multi_key> <C> <P> <asciicircum> <period> <Return> : "𖬰"  U16B30  # PAHAWH HMONG MARK CIM TUB
+<Multi_key> <C> <P> <asciicircum> <v> <Return> : "𖬱"  U16B31  # PAHAWH HMONG MARK CIM SO
+<Multi_key> <C> <P> <asciicircum> <minus> <Return> : "𖬲"  U16B32  # PAHAWH HMONG MARK CIM KES
+<Multi_key> <C> <P> <asciicircum> <asciicircum> <Return> : "𖬳"  U16B33  # PAHAWH HMONG MARK CIM KHAV
+<Multi_key> <C> <P> <asciicircum> <period> <minus> <Return> : "𖬴"  U16B34  # PAHAWH HMONG MARK CIM SUAM
+<Multi_key> <C> <P> <asciicircum> <T> <Return> : "𖬵"  U16B35  # PAHAWH HMONG MARK CIM HOM
+<Multi_key> <C> <P> <asciicircum> <quotedbl> <Return> : "𖬶"  U16B36  # PAHAWH HMONG MARK CIM TAUM
+
+# (by tone)
+
+<Multi_key> <C> <P> <asciicircum> <m> <Return> : "𖬰"  U16B30  # PAHAWH HMONG MARK CIM TUB (with -b form)
+<Multi_key> <C> <P> <asciicircum> <j> <Return> : "𖬲"  U16B32  # PAHAWH HMONG MARK CIM KES (with -b form)
+<Multi_key> <C> <P> <asciicircum> <Return> : "𖬰"  U16B30  # PAHAWH HMONG MARK CIM TUB (with -v form)
+<Multi_key> <C> <P> <asciicircum> <s> <Return> : "𖬲"  U16B32  # PAHAWH HMONG MARK CIM KES (with -v form)
+<Multi_key> <C> <P> <asciicircum> <g> <Return> : "𖬶"  U16B36  # PAHAWH HMONG MARK CIM TAUM (with -v form)
+
+# punctuation
+
+<Multi_key> <C> <P> <question> : "𖬷"  U16B37  # PAHAWH HMONG SIGN VOS THOM
+<Multi_key> <C> <P> <exclam> : "𖬸"  U16B38  # PAHAWH HMONG SIGN VOS TSHAB CEEB
+<Multi_key> <C> <P> <comma> : "𖬹"  U16B39  # PAHAWH HMONG SIGN CIM CHEEM
+<Multi_key> <C> <P> <ampersand> : "𖬺"  U16B3A  # PAHAWH HMONG SIGN VOS THIAB
+<Multi_key> <C> <P> <percent> : "𖬻"  U16B3B  # PAHAWH HMONG SIGN VOS FEEM
+<Multi_key> <C> <P> <plus> : "𖬼"  U16B3C  # PAHAWH HMONG SIGN XYEEM NTXIV
+<Multi_key> <C> <P> <minus> : "𖬽"  U16B3D  # PAHAWH HMONG SIGN XYEEM RHO
+<Multi_key> <C> <P> <asterisk> : "𖬾"  U16B3E  # PAHAWH HMONG SIGN XYEEM TOV
+<Multi_key> <C> <P> <slash> : "𖬿"  U16B3F  # PAHAWH HMONG SIGN XYEEM FAIB
+<Multi_key> <C> <P> <quotedbl> <quotedbl> : "𖭂"  U16B42  # PAHAWH HMONG SIGN VOS NRUA
+<Multi_key> <C> <P> <quotedbl> <space> : "𖭃"  U16B43  # PAHAWH HMONG SIGN IB YAM
+<Multi_key> <C> <P> <Multi_key> <S> <O> : "𖭄"  U16B44  # PAHAWH HMONG SIGN XAUS
+
+# numerals
+
+<Multi_key> <C> <P> <numbersign> <0> : "𖭐"  U16B50  # PAHAWH HMONG DIGIT ZERO
+<Multi_key> <C> <P> <numbersign> <1> : "𖭑"  U16B51  # PAHAWH HMONG DIGIT ONE
+<Multi_key> <C> <P> <numbersign> <2> : "𖭒"  U16B52  # PAHAWH HMONG DIGIT TWO
+<Multi_key> <C> <P> <numbersign> <3> : "𖭓"  U16B53  # PAHAWH HMONG DIGIT THREE
+<Multi_key> <C> <P> <numbersign> <4> : "𖭔"  U16B54  # PAHAWH HMONG DIGIT FOUR
+<Multi_key> <C> <P> <numbersign> <5> : "𖭕"  U16B55  # PAHAWH HMONG DIGIT FIVE
+<Multi_key> <C> <P> <numbersign> <6> : "𖭖"  U16B56  # PAHAWH HMONG DIGIT SIX
+<Multi_key> <C> <P> <numbersign> <7> : "𖭗"  U16B57  # PAHAWH HMONG DIGIT SEVEN
+<Multi_key> <C> <P> <numbersign> <8> : "𖭘"  U16B58  # PAHAWH HMONG DIGIT EIGHT
+<Multi_key> <C> <P> <numbersign> <9> : "𖭙"  U16B59  # PAHAWH HMONG DIGIT NINE
+<Multi_key> <C> <P> <numbersign> <E> <1> <space> : "𖭛"  U16B5B  # PAHAWH HMONG NUMBER TENS
+<Multi_key> <C> <P> <numbersign> <E> <2> : "𖭜"  U16B5C  # PAHAWH HMONG NUMBER HUNDREDS
+<Multi_key> <C> <P> <numbersign> <E> <4> : "𖭝"  U16B5D  # PAHAWH HMONG NUMBER TEN THOUSANDS
+<Multi_key> <C> <P> <numbersign> <E> <6> : "𖭞"  U16B5E  # PAHAWH HMONG NUMBER MILLIONS
+<Multi_key> <C> <P> <numbersign> <E> <8> : "𖭟"  U16B5F  # PAHAWH HMONG NUMBER HUNDRED MILLIONS
+<Multi_key> <C> <P> <numbersign> <E> <1> <0> : "𖭠"  U16B60  # PAHAWH HMONG NUMBER TEN BILLIONS
+<Multi_key> <C> <P> <numbersign> <E> <1> <2> : "𖭡"  U16B61  # PAHAWH HMONG NUMBER TRILLIONS
+
+# logographs
+
+<Multi_key> <C> <P> <braceright> <y> <e> <a> <r> : "𖭤"  U16B64  # PAHAWH HMONG SIGN XYOO
+<Multi_key> <C> <P> <braceright> <m> <o> <n> <t> <h> : "𖭦"  U16B66  # PAHAWH HMONG SIGN THIRD-STAGE HLI
+<Multi_key> <C> <P> <braceright> <d> <a> <t> <e> : "𖭧"  U16B67  # PAHAWH HMONG SIGN ZWJ THAJ
+<Multi_key> <C> <P> <braceright> <d> <a> <y> : "𖭨"  U16B68  # PAHAWH HMONG SIGN HNUB
+<Multi_key> <C> <P> <braceright> <m> <o> <o> <n> <minus> : "𖭩"  U16B69  # PAHAWH HMONG SIGN NQIG
+<Multi_key> <C> <P> <braceright> <m> <o> <o> <n> <plus> : "𖭪"  U16B6A  # PAHAWH HMONG SIGN XIAB
+<Multi_key> <C> <P> <braceright> <s> <e> <a> <s> <o> <n> : "𖭫"  U16B6B  # PAHAWH HMONG SIGN NTUJ
+<Multi_key> <C> <P> <braceright> <e> <a> <r> <t> <h> : "𖭬"  U16B6C  # PAHAWH HMONG SIGN AV
+<Multi_key> <C> <P> <braceright> <u> <r> <g> <e> <n> <t> : "𖭭"  U16B6D  # PAHAWH HMONG SIGN TXHEEJ CEEV
+<Multi_key> <C> <P> <braceright> <f> <a> <c> <t> <s> : "𖭮"  U16B6E  # PAHAWH HMONG SIGN MEEJ TSEEB
+<Multi_key> <C> <P> <braceright> <r> <e> <c> <e> <i> <v> : "𖭯"  U16B6F  # PAHAWH HMONG SIGN TAU
+<Multi_key> <C> <P> <braceright> <c> <o> <m> <e> : "𖭰"  U16B70  # PAHAWH HMONG SIGN LOS
+<Multi_key> <C> <P> <braceright> <g> <o> : "𖭱"  U16B71  # PAHAWH HMONG SIGN MUS
+<Multi_key> <C> <P> <braceright> <s> <m> <o> <o> <t> <h> : "𖭲"  U16B72  # PAHAWH HMONG SIGN CIM HAIS LUS NTOG NTOG
+<Multi_key> <C> <P> <braceright> <f> <r> <a> <c> <t> : "𖭳"  U16B73  # PAHAWH HMONG SIGN CIM CUAM TSHOOJ
+<Multi_key> <C> <P> <braceright> <exclam> <o> <p> <e> <n> : "𖭴"  U16B74  # PAHAWH HMONG SIGN CIM TXWV
+<Multi_key> <C> <P> <braceright> <exclam> <t> <o> <u> <c> <h> : "𖭵"  U16B75  # PAHAWH HMONG SIGN CIM TXWV CHWV
+<Multi_key> <C> <P> <braceright> <g> <i> <v> <e> : "𖭶"  U16B76  # PAHAWH HMONG SIGN CIM PUB DAWB
+<Multi_key> <C> <P> <braceright> <s> <t> <o> <p> : "𖭷"  U16B77  # PAHAWH HMONG SIGN CIM NRES TOS
 
 # (R = Cree Syllabics) (not the best abbreviation, but think CR = CREE)
 
