@@ -19,13 +19,13 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (131): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2403)
+### Latin script characters (2430)
 * **International Phonetic Alphabet** (126): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
-* **Latin script letters** (268): Ƿ Ȝ ␢ ȵ etc
+* **Latin script letters** (287): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (769): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 𜳖 etc
 * **Enclosed alphanumerics** (264): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (282): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
-* **Multigraphs and ligatures** (378): ʣ ㏈ etc
+* **Superscripts and subscripts** (286): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
+* **Multigraphs and ligatures** (382): ʣ ㏈ etc
 * **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
 ### Non-Latin script characters (27165)
@@ -49,10 +49,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Zhuyin**, Fraser, Mongolian, New Tai Lue, ʼPhags-pa, Pollard, Soyombo, Tai LeTibetan, Yi, Zanabazar Square (2036): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ᦜᦵᦡᦲᧆ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, 𑩼𑩔𑩩𑩑𑪍, ᥘᥦᥖᥤᥖ, རེཌིཊ྄, ꏒꄶ, 𑨫𑨄𑨜𑨁𑨚𑨴 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4779)
+### Symbols (4796)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (147): 🗫 🯅 ㋡ etc
-* **Math and science** (382): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Math and science** (384): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (106): ⏻ ⎙ ⌘ etc
 * **Numerals** (223): 𝍸𝍷 𝍵 Ⅻ ↁ etc
@@ -61,6 +61,6 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
 * **I Ching** (160): ䷇ ☰☷☲☵ etc
 * **Hieroglyphs** (361): 𓁖 𓁹 𓃠 etc
-* **Arrows** (311): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
-* **Geometric shapes** (226): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
+* **Arrows** (312): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
+* **Geometric shapes** (240): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (665): ╞╦╕ etc
