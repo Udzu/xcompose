@@ -3,6 +3,7 @@
 # Some additional Compose key sequences, focusing on maths, linguistics, emoji and general
 # text input. To use them, copy all or parts of this config into your ~/.XCompose file.
 # For full Hangul support also copy the HangulSyllables file, which is included from here.
+# Similarly, copy the Logogram file for logographic and undeciphered scripts.
 #
 # For consistency and simplicity, a few of the rules here conflict with the system files, with
 # workarounds given in the comments (e.g. <underscore>'s usefulness for subscripting often
@@ -2060,6 +2061,7 @@ include "%L"
 <Multi_key> <percent> <f> <m> : "𝔪" U1D52A    # MATHEMATICAL FRAKTUR SMALL M
 <Multi_key> <percent> <f> <n> : "𝔫" U1D52B    # MATHEMATICAL FRAKTUR SMALL N
 <Multi_key> <percent> <f> <o> : "𝔬" U1D52C    # MATHEMATICAL FRAKTUR SMALL O
+<Multi_key> <percent> <f> <slash> <o> : "ꬾ"  UAB3E  # LATIN SMALL LETTER BLACKLETTER O WITH STROKE
 <Multi_key> <percent> <f> <p> : "𝔭" U1D52D    # MATHEMATICAL FRAKTUR SMALL P
 <Multi_key> <percent> <f> <q> : "𝔮" U1D52E    # MATHEMATICAL FRAKTUR SMALL Q
 <Multi_key> <percent> <f> <r> : "𝔯" U1D52F    # MATHEMATICAL FRAKTUR SMALL R
@@ -13406,7 +13408,7 @@ include "%L"
 <Multi_key> <g> <c> <underscore> <c> : "ᵪ"  U1D6A  # GREEK SUBSCRIPT SMALL LETTER CHI
 <Multi_key> <g> <x> <underscore> <k> <h> : "ᵪ"  U1D6A  # GREEK SUBSCRIPT SMALL LETTER CHI
 
-# (B = Linear B)
+# (B = Linear B) for full catalog of Linear A and B, see logogram section
 
 <Multi_key> <g> <B> <a> : "𐀀"  U10000  # LINEAR B SYLLABLE B008 A
 <Multi_key> <g> <B> <e> : "𐀁"  U10001  # LINEAR B SYLLABLE B038 E
@@ -22126,6 +22128,14 @@ include "HangulSyllables"
 <Multi_key> <Z> <v> <numbersign> <8> : "꘨"  UA628  # VAI DIGIT EIGHT
 <Multi_key> <Z> <v> <numbersign> <9> : "꘩"  UA629  # VAI DIGIT NINE
 
+#################
+# (}) Logograms #
+#################
+
+# covers Anatolian Hieroglyphs, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B
+
+include "Logograms"
+
 #######################
 # (@") Language names #
 #######################
@@ -24737,7 +24747,7 @@ include "HangulSyllables"
 # Hieroglyphs #
 ###############
 
-# (included as ideographic symbols not as writing!)
+# included as ideographic symbols not as writing; see logogram section above for catalog-based shortcuts
 
 # Egyptian hieroglyphs: ] + name
 
@@ -25053,9 +25063,10 @@ include "HangulSyllables"
 <Multi_key> <bracketright> <2> <slash> <3> : "𓂌"  U1308C  # EGYPTIAN HIEROGLYPH D022 (2/3)
 <Multi_key> <bracketright> <3> <slash> <4> : "𓂍"  U1308D  # EGYPTIAN HIEROGLYPH D023 (3/4)
 
-# Anatolian hieroglyphs: } + name
+# Anatolian hieroglyphs: } + name (shares a namespace with logograms)
 
 <Multi_key> <braceright> <c> <a> <t> <c> <h> : "𔔷"  U14537  # ANATOLIAN HIEROGLYPH A276 (CATCH)
+<Multi_key> <braceright> <d> <i> <c> <k> : "𔔲"  U14532  # ANATOLIAN HIEROGLYPH A271 (DICK)
 <Multi_key> <braceright> <d> <r> <i> <n> <k> : "𔐇"  U14407  # ANATOLIAN HIEROGLYPH A008 (DRINK)
 <Multi_key> <braceright> <e> <a> <t> : "𔐆"  U14406  # ANATOLIAN HIEROGLYPH A007 (EAT)
 <Multi_key> <braceright> <e> <y> <e> : "𔐙"  U14419  # ANATOLIAN HIEROGLYPH A025 (EYE)
@@ -25073,13 +25084,12 @@ include "HangulSyllables"
 <Multi_key> <braceright> <t> <a> <c> <h> <e> : "𔗯"  U145EF  # ANATOLIAN HIEROGLYPH A442 (TACHE)
 <Multi_key> <braceright> <t> <o> <n> <g> <u> <e> : "𔕸"  U14578  # ANATOLIAN HIEROGLYPH A334 (TONGUE)
 <Multi_key> <braceright> <w> <o> <m> <a> <n> : "𔐁"  U14401  # ANATOLIAN HIEROGLYPH A002 (WOMAN) (actually a man)
-<Multi_key> <braceright> <D> : "𔔲"  U14532  # ANATOLIAN HIEROGLYPH A271 (D)
 
 <Multi_key> <braceright> <a> <l> <i> <e> <n> : "𔐄"  U14404  # ANATOLIAN HIEROGLYPH A005 (ALIEN)
 <Multi_key> <braceright> <c> <t> <h> <u> <l> <u> : "𔗮"  U145EE  # ANATOLIAN HIEROGLYPH A441 (CTHULU)
+<Multi_key> <braceright> <g> <h> <o> <s> <t> : "𔓎"  U144CE  # ANATOLIAN HIEROGLYPH A179 (SQUID) (actually barley)
 <Multi_key> <braceright> <p> <i> <g> <l> <e> <t> : "𔖄"  U14584  # ANATOLIAN HIEROGLYPH A343 (PIGLET)
-<Multi_key> <braceright> <s> <q> <u> <i> <d> : "𔓎"  U144CE  # ANATOLIAN HIEROGLYPH A179 (SQUID) (actually barley)
-<Multi_key> <braceright> <S> <q> <u> <i> <d> : "𔕙"  U14559  # ANATOLIAN HIEROGLYPH A307 (SQUIDWARD)
+<Multi_key> <braceright> <s> <q> <u> <i> <d> : "𔕙"  U14559  # ANATOLIAN HIEROGLYPH A307 (SQUIDWARD)
 
 <Multi_key> <braceright> <b> <i> <r> <d> : "𔒜"  U1449C  # ANATOLIAN HIEROGLYPH A130 (BIRD)
 <Multi_key> <braceright> <b> <o> <a> <r> : "𔙃"  U14643  # ANATOLIAN HIEROGLYPH A527 (BOAR)
@@ -25117,13 +25127,13 @@ include "HangulSyllables"
 <Multi_key> <braceright> <h> <o> <o> <d> <i> <e> : "𖠦"  U16826  # BAMUM LETTER PHASE-A MOOMPUQ (HOODIE)
 <Multi_key> <braceright> <j> <e> <w> <i> <s> <h> : "𖢹"  U168B9  # BAMUM LETTER PHASE-C NTEUNGBA (JEWISH)
 <Multi_key> <braceright> <m> <a> <n> : "𖠋"  U1680B  # BAMUM LETTER PHASE-A MAEMBGBIEE (PANTS)
-<Multi_key> <braceright> <M> <a> <n> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (ISLE OF MAN)
 <Multi_key> <braceright> <m> <u> <g> : "𖠚"  U1681A  # BAMUM LETTER PHASE-A MAEKEUP (MUG)
 <Multi_key> <braceright> <u> <t> <e> <r> <u> <s> : "𖣲"  U168F2  # BAMUM LETTER PHASE-D WAP (UTERUS)
+<Multi_key> <braceright> <t> <r> <i> <s> <k> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (TRISKELION)
 <Multi_key> <braceright> <w> <i> <r> <e> : "𖡎"  U1684E  # BAMUM LETTER PHASE-A MAEM (WIRE)
 <Multi_key> <braceright> <asciicircum> <equal> <v> : "𖣫"  U168EB  # BAMUM LETTER PHASE-C NGAQ (⇕)
 
-<Multi_key> <braceright> <C> <P> <U> : "𒁈"  U12048  # CUNEIFORM SIGN BARA2 (CPU)
+<Multi_key> <braceright> <c> <p> <u> : "𒁈"  U12048  # CUNEIFORM SIGN BARA2 (CPU)
 <Multi_key> <braceright> <j> <o> <u> <s> <t> : "𒈙"  U12219  # CUNEIFORM SIGN LUGAL OPPOSING LUGAL (JOUST)
 <Multi_key> <braceright> <w> <a> <f> <f> <l> <e> : "𒐫"  U1242B  # CUNEIFORM NUMERIC SIGN NINE SHAR2 (WAFFLE)
 <Multi_key> <braceright> <w> <m> <i> <l> <l> : "𒅄"  U12144  # CUNEIFORM SIGN IDIM OVER IDIM SQUARED (WINDMILL)
