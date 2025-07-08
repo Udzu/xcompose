@@ -3,6 +3,7 @@
 # Some additional Compose key sequences, focusing on maths, linguistics, emoji and general
 # text input. To use them, copy all or parts of this config into your ~/.XCompose file.
 # For full Hangul support also copy the HangulSyllables file, which is included from here.
+# Similarly, copy the Logogram file for logographic and undeciphered scripts.
 #
 # For consistency and simplicity, a few of the rules here conflict with the system files, with
 # workarounds given in the comments (e.g. <underscore>'s usefulness for subscripting often
@@ -664,7 +665,7 @@ include "%L"
 <Multi_key> <g> <n>                 : "ɲ"  U0272   # LATIN SMALL LETTER N WITH LEFT HOOK
 <Multi_key> <m> <f>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
 <Multi_key> <s> <j>                 : "ɧ"  U0267   # LATIN SMALL LETTER HENG WITH HOOK
-<Multi_key> <h> <g>                 : "ɧ"  U0267   # LATIN SMALL LETTER HENG WITH HOOK
+<Multi_key> <apostrophe> <h> <g>    : "ɧ"  U0267   # LATIN SMALL LETTER HENG WITH HOOK
 <Multi_key> <m> <g>                 : "ɱ"  U0271   # LATIN SMALL LETTER M WITH HOOK
 <Multi_key> <n> <g>                 : "ŋ"  U014B   # LATIN SMALL LETTER ENG
 <Multi_key> <r> <d>                 : "ɾ"  U027E   # LATIN SMALL LETTER R WITH FISHHOOK
@@ -851,10 +852,15 @@ include "%L"
 # various other letters
 
 <Multi_key> <d> <z>                 : "ǳ"  U01F3   # LATIN SMALL LETTER DZ
-<Multi_key> <H> <w>                 : "Ƕ"  U01F6   # LATIN CAPITAL LETTER HWAIR
+<Multi_key> <H> <G>                 : "Ꜧ"  UA726  # LATIN CAPITAL LETTER HENG
+<Multi_key> <h> <g>                 : "ꜧ"  UA727  # LATIN SMALL LETTER HENG
+<Multi_key> <H> <W>                 : "Ƕ"  U01F6   # LATIN CAPITAL LETTER HWAIR
 <Multi_key> <h> <w>                 : "ƕ"  U0195   # LATIN SMALL LETTER HV
+<Multi_key> <K> <v>                 : "Ʞ"  UA7B0  # LATIN CAPITAL LETTER TURNED K
+<Multi_key> <L> <v>                 : "Ꞁ"  UA780  # LATIN CAPITAL LETTER TURNED L
 <Multi_key> <l> <s>                 : "ſ"  U017F   # LATIN SMALL LETTER LONG S (alternatively fs)
 <Multi_key> <o> <k>                 : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA (OKINA) (use OK for 👌)
+<Multi_key> <T> <v> <space>         : "Ʇ"  UA7B1  # LATIN CAPITAL LETTER TURNED T
 <Multi_key> <W> <N>                 : "Ƿ"  U01F7   # LATIN CAPITAL LETTER WYNN
 <Multi_key> <w> <n>                 : "ƿ"  U01BF   # LATIN LETTER WYNN
 <Multi_key> <Y> <G>                 : "Ȝ"  U021C   # LATIN CAPITAL LETTER YOGH
@@ -977,10 +983,42 @@ include "%L"
 <Multi_key> <Multi_key> <s> <h> <at> : "ʆ"  U0286  # LATIN SMALL LETTER ESH WITH CURL
 <Multi_key> <Multi_key> <z> <h> <at> : "ʓ"  U0293  # LATIN SMALL LETTER EZH WITH CURL
 
+<Multi_key> <O> <0> : "Ꝍ"  UA74C  # LATIN CAPITAL LETTER O WITH LOOP LATIN CAPITAL LETTER O WITH LOOP
+<Multi_key> <o> <0> : "ꝍ"  UA74D  # LATIN SMALL LETTER O WITH LOOP LATIN SMALL LETTER O WITH LOOP
+<Multi_key> <Y> <0> : "Ỿ"  U1EFE  # LATIN CAPITAL LETTER Y WITH LOOP LATIN CAPITAL LETTER Y WITH LOOP
+<Multi_key> <y> <0> : "ỿ"  U1EFF  # LATIN SMALL LETTER Y WITH LOOP LATIN SMALL LETTER Y WITH LOOP
+
+<Multi_key> <B> <at> : "Ꞗ"  UA796  # LATIN CAPITAL LETTER B WITH FLOURISH
+<Multi_key> <b> <at> : "ꞗ"  UA797  # LATIN SMALL LETTER B WITH FLOURISH
+<Multi_key> <e> <at> : "ꬴ"  UAB34  # LATIN SMALL LETTER E WITH FLOURISH
+<Multi_key> <P> <at> : "Ꝓ"  UA752  # LATIN CAPITAL LETTER P WITH FLOURISH
+<Multi_key> <p> <at> : "ꝓ"  UA753  # LATIN SMALL LETTER P WITH FLOURISH
+
 <Multi_key> <Q> <comma> : "Ɋ"  U024A  # LATIN CAPITAL LETTER SMALL Q WITH HOOK TAIL
 <Multi_key> <q> <comma> : "ɋ"  U024B  # LATIN SMALL LETTER Q WITH HOOK TAIL
 <Multi_key> <Z> <comma> : "Ȥ"  U0224  # LATIN CAPITAL LETTER Z WITH HOOK
 <Multi_key> <z> <comma> : "ȥ"  U0225  # LATIN SMALL LETTER Z WITH HOOK
+
+<Multi_key> <S> <underscore> <comma> : "Ș"  U0218  # LATIN CAPITAL LETTER S WITH COMMA BELOW
+<Multi_key> <s> <underscore> <comma> : "ș"  U0219  # LATIN SMALL LETTER S WITH COMMA BELOW
+<Multi_key> <T> <underscore> <comma> : "Ț"  U021A  # LATIN CAPITAL LETTER T WITH COMMA BELOW
+<Multi_key> <t> <underscore> <comma> : "ț"  U021B  # LATIN SMALL LETTER T WITH COMMA BELOW
+
+<Multi_key> <semicolon> <C> : "Ꞔ"  UA7C4  # LATIN CAPITAL LETTER C WITH PALATAL HOOK
+<Multi_key> <semicolon> <c> : "ꞔ"  UA794  # LATIN SMALL LETTER C WITH PALATAL HOOK
+<Multi_key> <semicolon> <h> : "ꞕ"  UA795  # LATIN SMALL LETTER H WITH PALATAL HOOK
+<Multi_key> <semicolon> <t> : "ƫ"  U01AB  # LATIN SMALL LETTER T WITH PALATAL HOOK (conflicts with ț, use t_,)
+<Multi_key> <semicolon> <Z> : "Ᶎ"  UA7C6  # LATIN CAPITAL LETTER Z WITH PALATAL HOOK
+<Multi_key> <semicolon> <Multi_key> <l> <h> : "𝼓"  U1DF13  # LATIN SMALL LETTER L WITH BELT AND PALATAL HOOK
+<Multi_key> <semicolon> <Multi_key> <n> <g> : "𝼔"  U1DF14  # LATIN SMALL LETTER ENG WITH PALATAL HOOK
+<Multi_key> <semicolon> <Multi_key> <r> <d> : "𝼖"  U1DF16  # LATIN SMALL LETTER R WITH FISHHOOK AND PALATAL HOOK
+<Multi_key> <semicolon> <Multi_key> <r> <v> : "𝼕"  U1DF15  # LATIN SMALL LETTER TURNED R WITH PALATAL HOOK
+<Multi_key> <semicolon> <Multi_key> <z> <h> : "𝼘"  U1DF18  # LATIN SMALL LETTER EZH WITH PALATAL HOOK
+
+<Multi_key> <asciitilde> <S> : "Ȿ"  U2C7E  # LATIN CAPITAL LETTER S WITH SWASH TAIL LATIN CAPITAL LETTER S WITH SWASH TAIL
+<Multi_key> <asciitilde> <s> : "ȿ"  U023F  # LATIN SMALL LETTER S WITH SWASH TAIL LATIN SMALL LETTER S WITH SWASH TAIL
+<Multi_key> <asciitilde> <Z> : "Ɀ"  U2C7F  # LATIN CAPITAL LETTER Z WITH SWASH TAIL LATIN CAPITAL LETTER Z WITH SWASH TAIL
+<Multi_key> <asciitilde> <z> : "ɀ"  U0240  # LATIN SMALL LETTER Z WITH SWASH TAIL LATIN SMALL LETTER Z WITH SWASH TAIL
 
 <Multi_key> <K> <apostrophe> : "Ƙ"  U0198  # LATIN CAPITAL LETTER K WITH HOOK
 <Multi_key> <k> <apostrophe> : "ƙ"  U0199  # LATIN SMALL LETTER K WITH HOOK
@@ -1011,6 +1049,14 @@ include "%L"
 <Multi_key> <w> <greater> <comma> : "ⱳ"  U2C73  # LATIN SMALL LETTER W WITH HOOK
 <Multi_key> <Y> <greater> <comma> : "Ƴ"  U01B3  # LATIN CAPITAL LETTER Y WITH HOOK
 <Multi_key> <y> <greater> <comma> : "ƴ"  U01B4  # LATIN SMALL LETTER Y WITH HOOK
+
+<Multi_key> <less> <comma> <d> : "𝼥"  U1DF25  # LATIN SMALL LETTER D WITH MID-HEIGHT LEFT HOOK
+<Multi_key> <less> <comma> <l> : "𝼦"  U1DF26  # LATIN SMALL LETTER L WITH MID-HEIGHT LEFT HOOK
+<Multi_key> <less> <comma> <n> : "𝼧"  U1DF27  # LATIN SMALL LETTER N WITH MID-HEIGHT LEFT HOOK
+<Multi_key> <less> <comma> <r> : "𝼨"  U1DF28  # LATIN SMALL LETTER R WITH MID-HEIGHT LEFT HOOK
+<Multi_key> <less> <comma> <s> : "𝼩"  U1DF29  # LATIN SMALL LETTER S WITH MID-HEIGHT LEFT HOOK
+<Multi_key> <less> <comma> <t> : "𝼪"  U1DF2A  # LATIN SMALL LETTER T WITH MID-HEIGHT LEFT HOOK
+<Multi_key> <less> <comma> <u> : "ꭒ"  UAB52   # LATIN SMALL LETTER U WITH LEFT HOOK
 
 <Multi_key> <H> <bar> : "Ⱨ"  U2C67  # LATIN CAPITAL LETTER H WITH DESCENDER
 <Multi_key> <h> <bar> : "ⱨ"  U2C68  # LATIN SMALL LETTER H WITH DESCENDER
@@ -1194,6 +1240,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <underscore> <N> : "ᶰ"  U1DB0   # MODIFIER LETTER SMALL CAPITAL N
 <Multi_key> <asciicircum> <underscore> <underscore> <U> : "ᶸ"  U1DB8   # MODIFIER LETTER SMALL CAPITAL U
 
+<Multi_key> <asciicircum> <underscore> <Multi_key> <A> <A> : "𐞀"  U10780  # MODIFIER LETTER SMALL CAPITAL AA
 <Multi_key> <asciicircum> <underscore> <Multi_key> <A> <E> : "ᴭ"  U1D2D  # MODIFIER LETTER CAPITAL AE
 <Multi_key> <asciicircum> <underscore> <Multi_key> <a> <e> : "𐞃"  U10783  # MODIFIER LETTER SMALL AE
 <Multi_key> <asciicircum> <underscore> <Multi_key> <a> <h> : "ᵅ"  U1D45  # MODIFIER LETTER SMALL ALPHA
@@ -1211,6 +1258,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <d> <z> : "𐞇"  U10787  # MODIFIER LETTER SMALL DZ DIGRAPH
 <Multi_key> <asciicircum> <underscore> <Multi_key> <d> <Multi_key> <z> <at> : "𐞉"  U10789  # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
 <Multi_key> <asciicircum> <underscore> <Multi_key> <d> <Multi_key> <z> <h> : "𐞊"  U1078A  # MODIFIER LETTER SMALL DEZH DIGRAPH
+<Multi_key> <asciicircum> <underscore> <Multi_key> <d> <Multi_key> <z> <l> : "𐞈"  U10788  # MODIFIER LETTER SMALL DZ DIGRAPH WITH RETROFLEX HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <d> <Multi_key> <apostrophe> <l> : "𐞍"  U1078D  # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
 <Multi_key> <asciicircum> <underscore> <Multi_key> <d> <Multi_key> <l> <apostrophe> : "𐞍"  U1078D  # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
 <Multi_key> <asciicircum> <underscore> <Multi_key> <e> <less> : "𐞎"  U1078E  # MODIFIER LETTER SMALL REVERSED E
@@ -1227,7 +1275,8 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <minus> <H> : "ꟸ"  UA7F8  # MODIFIER LETTER CAPITAL H WITH STROKE
 <Multi_key> <asciicircum> <underscore> <Multi_key> <h> <minus> : "𐞕"  U10795  # MODIFIER LETTER SMALL H WITH STROKE
 <Multi_key> <asciicircum> <underscore> <Multi_key> <h> <apostrophe> : "ʱ"  U02B1  # MODIFIER LETTER SMALL H WITH HOOK
-<Multi_key> <asciicircum> <underscore> <Multi_key> <h> <g> : "𐞗"  U10797  # MODIFIER LETTER SMALL HENG WITH HOOK
+<Multi_key> <asciicircum> <underscore> <Multi_key> <h> <g> : "ꭜ"  UAB5C  # MODIFIER LETTER SMALL HENG
+<Multi_key> <asciicircum> <underscore> <Multi_key> <apostrophe> <h> <g> : "𐞗"  U10797  # MODIFIER LETTER SMALL HENG WITH HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <H> <H> : "𐞖"  U10796  # MODIFIER LETTER SMALL CAPITAL H
 <Multi_key> <asciicircum> <underscore> <Multi_key> <h> <v> : "ᶣ"  U1DA3  # MODIFIER LETTER SMALL TURNED H
 <Multi_key> <asciicircum> <underscore> <Multi_key> <slash> <I> : "ᶧ"  U1DA7  # MODIFIER LETTER SMALL CAPITAL I WITH STROKE
@@ -1272,6 +1321,8 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <t> <l> : "𐞯"  U107AF  # MODIFIER LETTER SMALL T WITH RETROFLEX HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <t> <s> : "𐞬"  U107AC  # MODIFIER LETTER SMALL TS DIGRAPH
 <Multi_key> <asciicircum> <underscore> <Multi_key> <t> <Multi_key> <s> <h> : "𐞮"  U107AE  # MODIFIER LETTER SMALL TESH DIGRAPH
+<Multi_key> <asciicircum> <underscore> <Multi_key> <t> <Multi_key> <s> <l> : "𐞭"  U107AD  # MODIFIER LETTER SMALL TS DIGRAPH WITH RETROFLEX HOOK
+<Multi_key> <asciicircum> <underscore> <Multi_key> <less> <comma> <u> : "ꭟ"  UAB5F  # MODIFIER LETTER SMALL U WITH LEFT HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <u> <bar> : "ᶶ"  U1DB6  # MODIFIER LETTER SMALL U BAR
 <Multi_key> <asciicircum> <underscore> <Multi_key> <u> <h> : "ᶷ"  U1DB7  # MODIFIER LETTER SMALL UPSILON
 <Multi_key> <asciicircum> <underscore> <Multi_key> <v> <apostrophe> : "𐞰"  U107B0  # MODIFIER LETTER SMALL V WITH RIGHT HOOK
@@ -2010,6 +2061,7 @@ include "%L"
 <Multi_key> <percent> <f> <m> : "𝔪" U1D52A    # MATHEMATICAL FRAKTUR SMALL M
 <Multi_key> <percent> <f> <n> : "𝔫" U1D52B    # MATHEMATICAL FRAKTUR SMALL N
 <Multi_key> <percent> <f> <o> : "𝔬" U1D52C    # MATHEMATICAL FRAKTUR SMALL O
+<Multi_key> <percent> <f> <slash> <o> : "ꬾ"  UAB3E  # LATIN SMALL LETTER BLACKLETTER O WITH STROKE
 <Multi_key> <percent> <f> <p> : "𝔭" U1D52D    # MATHEMATICAL FRAKTUR SMALL P
 <Multi_key> <percent> <f> <q> : "𝔮" U1D52E    # MATHEMATICAL FRAKTUR SMALL Q
 <Multi_key> <percent> <f> <r> : "𝔯" U1D52F    # MATHEMATICAL FRAKTUR SMALL R
@@ -2861,6 +2913,8 @@ include "%L"
 
 <Multi_key> <braceleft> <Multi_key> <o> <A> <braceright> : "Å"  U212B  # ANGSTROM SIGN
 <Multi_key> <braceleft> <d> <Multi_key> <z> <h> <braceright> : "ʤ"  U02A4  # LATIN SMALL LETTER DEZH DIGRAPH
+<Multi_key> <braceleft> <d> <Multi_key> <semicolon> <z> <h> <braceright> : "𝼒"  U1DF12  # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
+<Multi_key> <braceleft> <d> <Multi_key> <z> <l> <braceright> : "ꭦ"  UAB66  # LATIN SMALL LETTER DZ DIGRAPH WITH RETROFLEX HOOK
 <Multi_key> <braceleft> <d> <Multi_key> <z> <at> <braceright> : "ʥ"  U02A5  # LATIN SMALL LETTER DZ DIGRAPH WITH CURL
 <Multi_key> <braceleft> <Multi_key> <E> <H> <braceright> : "ℇ"  U2107  # EULER CONSTANT
 <Multi_key> <braceleft> <k> <Multi_key> <o> <h> <m> <braceright> : "㏀" U33C0   # SQUARE K OHM
@@ -2870,6 +2924,8 @@ include "%L"
 <Multi_key> <braceleft> <Multi_key> <m> <u> <F> <braceright> : "㎌" U338C   # SQUARE MU F
 <Multi_key> <braceleft> <Multi_key> <m> <u> <V> <braceright> : "㎶" U33B6   # SQUARE MU V
 <Multi_key> <braceleft> <Multi_key> <m> <u> <W> <braceright> : "㎼" U33BC   # SQUARE MU W
+<Multi_key> <braceleft> <t> <Multi_key> <s> <l> <braceright> : "ꭧ"  UAB67  # LATIN SMALL LETTER TS DIGRAPH WITH RETROFLEX HOOK
+<Multi_key> <braceleft> <t> <Multi_key> <semicolon> <s> <h> <braceright> : "𝼗"  U1DF17  # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
 
 # multigraphs with punctuation or digits
 
@@ -13352,7 +13408,7 @@ include "%L"
 <Multi_key> <g> <c> <underscore> <c> : "ᵪ"  U1D6A  # GREEK SUBSCRIPT SMALL LETTER CHI
 <Multi_key> <g> <x> <underscore> <k> <h> : "ᵪ"  U1D6A  # GREEK SUBSCRIPT SMALL LETTER CHI
 
-# (B = Linear B)
+# (B = Linear B) for full catalog of Linear A and B, see logogram section
 
 <Multi_key> <g> <B> <a> : "𐀀"  U10000  # LINEAR B SYLLABLE B008 A
 <Multi_key> <g> <B> <e> : "𐀁"  U10001  # LINEAR B SYLLABLE B038 E
@@ -22072,6 +22128,14 @@ include "HangulSyllables"
 <Multi_key> <Z> <v> <numbersign> <8> : "꘨"  UA628  # VAI DIGIT EIGHT
 <Multi_key> <Z> <v> <numbersign> <9> : "꘩"  UA629  # VAI DIGIT NINE
 
+#################
+# (}) Logograms #
+#################
+
+# covers Anatolian Hieroglyphs, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B
+
+include "Logograms"
+
 #######################
 # (@") Language names #
 #######################
@@ -22420,6 +22484,8 @@ include "HangulSyllables"
 <Multi_key> <Multi_key> <greater> <less> <space>     : "≷"  U2277  # GREATER-THAN OR LESS-THAN
 <Multi_key> <Multi_key> <less> <minus> <greater>     : "⋚"  U22DA  # LESS-THAN EQUAL TO OR GREATER-THAN
 <Multi_key> <Multi_key> <greater> <minus> <less>     : "⋛"  U22DB  # GREATER-THAN EQUAL TO OR LESS-THAN
+<Multi_key> <Multi_key> <less> <less> <minus>        : "⥶"  U2976  # LESS-THAN ABOVE LEFTWARDS ARROW
+<Multi_key> <Multi_key> <greater> <minus> <greater>  : "⥸"  U2978  # GREATER-THAN ABOVE RIGHTWARDS ARROW
 <Multi_key> <Multi_key> <less> <asciitilde> <asciitilde> : "⪅"  U2A85  # LESS-THAN OR APPROXIMATE
 <Multi_key> <Multi_key> <greater> <asciitilde> <asciitilde> : "⪆"  U2A86  # GREATER-THAN OR APPROXIMATE
 <Multi_key> <Multi_key> <less> <equal> <greater>     : "⪋"  U2A8B  # LESS-THAN ABOVE DOUBLE-LINE EQUAL ABOVE GREATER-THAN
@@ -24681,7 +24747,7 @@ include "HangulSyllables"
 # Hieroglyphs #
 ###############
 
-# (included as ideographic symbols not as writing!)
+# included as ideographic symbols not as writing; see logogram section above for catalog-based shortcuts
 
 # Egyptian hieroglyphs: ] + name
 
@@ -24997,9 +25063,10 @@ include "HangulSyllables"
 <Multi_key> <bracketright> <2> <slash> <3> : "𓂌"  U1308C  # EGYPTIAN HIEROGLYPH D022 (2/3)
 <Multi_key> <bracketright> <3> <slash> <4> : "𓂍"  U1308D  # EGYPTIAN HIEROGLYPH D023 (3/4)
 
-# Anatolian hieroglyphs: } + name
+# Anatolian hieroglyphs: } + name (shares a namespace with logograms)
 
 <Multi_key> <braceright> <c> <a> <t> <c> <h> : "𔔷"  U14537  # ANATOLIAN HIEROGLYPH A276 (CATCH)
+<Multi_key> <braceright> <d> <i> <c> <k> : "𔔲"  U14532  # ANATOLIAN HIEROGLYPH A271 (DICK)
 <Multi_key> <braceright> <d> <r> <i> <n> <k> : "𔐇"  U14407  # ANATOLIAN HIEROGLYPH A008 (DRINK)
 <Multi_key> <braceright> <e> <a> <t> : "𔐆"  U14406  # ANATOLIAN HIEROGLYPH A007 (EAT)
 <Multi_key> <braceright> <e> <y> <e> : "𔐙"  U14419  # ANATOLIAN HIEROGLYPH A025 (EYE)
@@ -25017,13 +25084,12 @@ include "HangulSyllables"
 <Multi_key> <braceright> <t> <a> <c> <h> <e> : "𔗯"  U145EF  # ANATOLIAN HIEROGLYPH A442 (TACHE)
 <Multi_key> <braceright> <t> <o> <n> <g> <u> <e> : "𔕸"  U14578  # ANATOLIAN HIEROGLYPH A334 (TONGUE)
 <Multi_key> <braceright> <w> <o> <m> <a> <n> : "𔐁"  U14401  # ANATOLIAN HIEROGLYPH A002 (WOMAN) (actually a man)
-<Multi_key> <braceright> <D> : "𔔲"  U14532  # ANATOLIAN HIEROGLYPH A271 (D)
 
 <Multi_key> <braceright> <a> <l> <i> <e> <n> : "𔐄"  U14404  # ANATOLIAN HIEROGLYPH A005 (ALIEN)
 <Multi_key> <braceright> <c> <t> <h> <u> <l> <u> : "𔗮"  U145EE  # ANATOLIAN HIEROGLYPH A441 (CTHULU)
+<Multi_key> <braceright> <g> <h> <o> <s> <t> : "𔓎"  U144CE  # ANATOLIAN HIEROGLYPH A179 (SQUID) (actually barley)
 <Multi_key> <braceright> <p> <i> <g> <l> <e> <t> : "𔖄"  U14584  # ANATOLIAN HIEROGLYPH A343 (PIGLET)
-<Multi_key> <braceright> <s> <q> <u> <i> <d> : "𔓎"  U144CE  # ANATOLIAN HIEROGLYPH A179 (SQUID) (actually barley)
-<Multi_key> <braceright> <S> <q> <u> <i> <d> : "𔕙"  U14559  # ANATOLIAN HIEROGLYPH A307 (SQUIDWARD)
+<Multi_key> <braceright> <s> <q> <u> <i> <d> : "𔕙"  U14559  # ANATOLIAN HIEROGLYPH A307 (SQUIDWARD)
 
 <Multi_key> <braceright> <b> <i> <r> <d> : "𔒜"  U1449C  # ANATOLIAN HIEROGLYPH A130 (BIRD)
 <Multi_key> <braceright> <b> <o> <a> <r> : "𔙃"  U14643  # ANATOLIAN HIEROGLYPH A527 (BOAR)
@@ -25061,13 +25127,13 @@ include "HangulSyllables"
 <Multi_key> <braceright> <h> <o> <o> <d> <i> <e> : "𖠦"  U16826  # BAMUM LETTER PHASE-A MOOMPUQ (HOODIE)
 <Multi_key> <braceright> <j> <e> <w> <i> <s> <h> : "𖢹"  U168B9  # BAMUM LETTER PHASE-C NTEUNGBA (JEWISH)
 <Multi_key> <braceright> <m> <a> <n> : "𖠋"  U1680B  # BAMUM LETTER PHASE-A MAEMBGBIEE (PANTS)
-<Multi_key> <braceright> <M> <a> <n> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (ISLE OF MAN)
 <Multi_key> <braceright> <m> <u> <g> : "𖠚"  U1681A  # BAMUM LETTER PHASE-A MAEKEUP (MUG)
 <Multi_key> <braceright> <u> <t> <e> <r> <u> <s> : "𖣲"  U168F2  # BAMUM LETTER PHASE-D WAP (UTERUS)
+<Multi_key> <braceright> <t> <r> <i> <s> <k> : "𖥂"  U16942  # BAMUM LETTER PHASE-D MAENJET (TRISKELION)
 <Multi_key> <braceright> <w> <i> <r> <e> : "𖡎"  U1684E  # BAMUM LETTER PHASE-A MAEM (WIRE)
 <Multi_key> <braceright> <asciicircum> <equal> <v> : "𖣫"  U168EB  # BAMUM LETTER PHASE-C NGAQ (⇕)
 
-<Multi_key> <braceright> <C> <P> <U> : "𒁈"  U12048  # CUNEIFORM SIGN BARA2 (CPU)
+<Multi_key> <braceright> <c> <p> <u> : "𒁈"  U12048  # CUNEIFORM SIGN BARA2 (CPU)
 <Multi_key> <braceright> <j> <o> <u> <s> <t> : "𒈙"  U12219  # CUNEIFORM SIGN LUGAL OPPOSING LUGAL (JOUST)
 <Multi_key> <braceright> <w> <a> <f> <f> <l> <e> : "𒐫"  U1242B  # CUNEIFORM NUMERIC SIGN NINE SHAR2 (WAFFLE)
 <Multi_key> <braceright> <w> <m> <i> <l> <l> : "𒅄"  U12144  # CUNEIFORM SIGN IDIM OVER IDIM SQUARED (WINDMILL)
@@ -25142,11 +25208,20 @@ include "HangulSyllables"
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <backslash>  : "▧" U25A7   # SQUARE WITH UPPER LEFT TO LOWER RIGHT FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <slash>      : "▨" U25A8   # SQUARE WITH UPPER RIGHT TO LOWER LEFT FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <X>          : "▩" U25A9   # SQUARE WITH DIAGONAL CROSSHATCH FILL (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <0> : "🞎"  U1F78E  # LIGHT WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <1> : "🞏"  U1F78F  # MEDIUM WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <2> : "🞐"  U1F790  # BOLD WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <3> : "🞑"  U1F791  # HEAVY WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <4> : "🞒"  U1F792  # VERY HEAVY WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <5> : "🞓"  U1F793  # EXTREMELY HEAVY WHITE SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Return>      : "⃞" U20DE   # COMBINING ENCLOSING SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <less> <greater> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE (conflicts)
 
 <Multi_key> <exclam> <bracketleft> <bracketright> <V>             : "🮱"  U1FBB1  # INVERSE CHECK MARK
 <Multi_key> <exclam> <bracketleft> <bracketright> <X>             : "🮽"  U1FBBD  # NEGATIVE DIAGONAL CROSS
+<Multi_key> <exclam> <bracketleft> <bracketright> <O>             : "◙"  U25D9   # INVERSE WHITE CIRCLE
+<Multi_key> <exclam> <bracketleft> <bracketright> <parenleft>     : "◚"  U25DA   # UPPER HALF INVERSE WHITE CIRCLE
+<Multi_key> <exclam> <bracketleft> <bracketright> <parenright>    : "◛"  U25DB   # LOWER HALF INVERSE WHITE CIRCLE
 <Multi_key> <exclam> <bracketleft> <bracketright> <slash>         : "🮾"  U1FBBE  # NEGATIVE DIAGONAL MIDDLE RIGHT TO LOWER CENTRE
 <Multi_key> <exclam> <bracketleft> <bracketright> <Return>        : "🮴"  U1FBB4  # INVERSE DOWNWARDS ARROW WITH TIP LEFTWARDS
 <Multi_key> <exclam> <bracketleft> <bracketright> <less> <greater> : "🮿"  U1FBBF  # NEGATIVE DIAGONAL DIAMOND
@@ -25215,6 +25290,11 @@ include "HangulSyllables"
 <Multi_key> <parenleft> <parenright> <Multi_key> <bar>   : "◍" U25CD    # CIRCLE WITH VERTICAL FILL
 <Multi_key> <parenleft> <parenright> <Multi_key> <minus> : "⦵"  U29B5  # CIRCLE WITH HORIZONTAL BAR
 <Multi_key> <parenleft> <parenright> <Multi_key> <X>     : "⦻"  U29BB  # CIRCLE WITH SUPERIMPOSED X
+<Multi_key> <parenleft> <parenright> <numbersign> <1>    : "🞅"  U1F785  # MEDIUM BOLD WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <numbersign> <2>    : "🞆"  U1F786  # BOLD WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <numbersign> <3>    : "🞇"  U1F787  # HEAVY WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <numbersign> <4>    : "🞈"  U1F788  # VERY HEAVY WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <numbersign> <5>    : "🞉"  U1F789  # EXTREMELY HEAVY WHITE CIRCLE
 <Multi_key> <parenleft> <parenright> <Return>      : "⃝" U20DD   # COMBINING ENCLOSING CIRCLE
 <Multi_key> <parenleft> <parenright> <backslash> <Return> : "⃠" U20E0   # COMBINING ENCLOSING CIRCLE BACKSLASH
 
@@ -25655,6 +25735,7 @@ include "HangulSyllables"
 <Multi_key> <Tab> <minus> <Multi_key> <asciitilde> <minus> <greater> : "⥲"  U2972  # TILDE OPERATOR ABOVE RIGHTWARDS ARROW
 <Multi_key> <Tab> <less> <Multi_key> <minus> <asciitilde> <minus> : "⥳"  U2973  # LEFTWARDS ARROW ABOVE TILDE OPERATOR
 <Multi_key> <Tab> <minus> <Multi_key> <minus> <asciitilde> <greater> : "⥴"  U2974  # RIGHTWARDS ARROW ABOVE TILDE OPERATOR
+<Multi_key> <Tab> <minus> <Multi_key> <minus> <Multi_key> <asciitilde> <asciitilde> <greater> : "⥵"  U2975  # RIGHTWARDS ARROW ABOVE ALMOST EQUAL TO
 <Multi_key> <Tab> <less> <minus> <Multi_key> <less> <minus> : "⥷"  U2977  # LEFTWARDS ARROW THROUGH LESS-THAN
 <Multi_key> <Tab> <less> <minus> <E>                      : "⥺"  U297A  # LEFTWARDS ARROW THROUGH SUBSET
 <Multi_key> <Tab> <E> <minus> <minus>                     : "⥼"  U297C  # LEFT FISH TAIL
