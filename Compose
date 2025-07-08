@@ -18114,9 +18114,9 @@ include "HangulSyllables"
 <Multi_key> <S> <space> <parenleft> : "𝪋"  U1DA8B  # SIGNWRITING PARENTHESIS
 <Multi_key> <S> <space> <parenright> : "𝪋𝪤"  U1DA8B U1DA44 # SIGNWRITING CLOSE PARENTHESIS
 
-##############################################
-# (t) Thai (and Cham, Khmer, Lao & Tai Viet) #
-##############################################
+########################################################
+# (t) Thai (and Cham, Khmer, Lao, Tai Tham & Tai Viet) #
+########################################################
 
 # (based on ISO 11940)
 
@@ -18502,6 +18502,146 @@ include "HangulSyllables"
 <Multi_key> <t> <L> <numbersign> <7> : "໗" U0ED7   # LAO DIGIT SEVEN
 <Multi_key> <t> <L> <numbersign> <8> : "໘" U0ED8   # LAO DIGIT EIGHT
 <Multi_key> <t> <L> <numbersign> <9> : "໙" U0ED9   # LAO DIGIT NINE
+
+# (t = Tai Tham)
+
+# Consonants (based on corresponding Thai transliteration)
+
+<Multi_key> <t> <t> <k> <space> : "ᨠ"  U1A20  # TAI THAM LETTER HIGH KA
+<Multi_key> <t> <t> <minus> <k> <h> : "ᨡ"  U1A21  # TAI THAM LETTER HIGH KHA
+<Multi_key> <t> <t> <minus> <period> <k> <h> : "ᨢ"  U1A22  # TAI THAM LETTER HIGH KXA
+<Multi_key> <t> <t> <k> <h> : "ᨣ"  U1A23  # TAI THAM LETTER LOW KA
+<Multi_key> <t> <t> <apostrophe> <k> <h> : "ᨤ"  U1A24  # TAI THAM LETTER LOW KXA
+<Multi_key> <t> <t> <period> <k> <h> : "ᨥ"  U1A25  # TAI THAM LETTER LOW KHA
+<Multi_key> <t> <t> <n> <g> <space> : "ᨦ"  U1A26  # TAI THAM LETTER NGA
+<Multi_key> <t> <t> <c> <space> : "ᨧ"  U1A27  # TAI THAM LETTER HIGH CA
+<Multi_key> <t> <t> <minus> <c> <h> : "ᨨ"  U1A28  # TAI THAM LETTER HIGH CHA
+<Multi_key> <t> <t> <c> <h> : "ᨩ"  U1A29  # TAI THAM LETTER LOW CA
+<Multi_key> <t> <t> <s> <space> : "ᨪ"  U1A2A  # TAI THAM LETTER LOW SA
+<Multi_key> <t> <t> <period> <c> <h> : "ᨫ"  U1A2B  # TAI THAM LETTER LOW CHA
+<Multi_key> <t> <t> <period> <y> : "ᨬ"  U1A2C  # TAI THAM LETTER NYA
+<Multi_key> <t> <t> <period> <t> <space> : "ᨭ"  U1A2D  # TAI THAM LETTER RATA
+<Multi_key> <t> <t> <minus> <period> <t> <h> <space> : "ᨮ"  U1A2E  # TAI THAM LETTER HIGH RATHA
+<Multi_key> <t> <t> <underscore> <t> <h> : "ᨯ"  U1A2F  # TAI THAM LETTER DA
+<Multi_key> <t> <t> <period> <d> : "ᨯ"  U1A2F  # TAI THAM LETTER DA
+<Multi_key> <t> <t> <d> : "ᨯ"  U1A2F  # TAI THAM LETTER DA
+<Multi_key> <t> <t> <apostrophe> <t> <h> : "ᨰ"  U1A30  # TAI THAM LETTER LOW RATHA
+<Multi_key> <t> <t> <period> <n> : "ᨱ"  U1A31  # TAI THAM LETTER RANA
+<Multi_key> <t> <t> <t> <space> : "ᨲ"  U1A32  # TAI THAM LETTER HIGH TA
+<Multi_key> <t> <t> <minus> <t> <h> : "ᨳ"  U1A33  # TAI THAM LETTER HIGH THA
+<Multi_key> <t> <t> <t> <h> : "ᨴ"  U1A34  # TAI THAM LETTER LOW TA
+<Multi_key> <t> <t> <period> <t> <h> : "ᨵ"  U1A35  # TAI THAM LETTER LOW THA
+<Multi_key> <t> <t> <n> <space> : "ᨶ"  U1A36  # TAI THAM LETTER NA
+<Multi_key> <t> <t> <b> <space> : "ᨷ"  U1A37  # TAI THAM LETTER BA
+<Multi_key> <t> <t> <p> <space> : "ᨸ"  U1A38  # TAI THAM LETTER HIGH PA
+<Multi_key> <t> <t> <minus> <p> <h> : "ᨹ"  U1A39  # TAI THAM LETTER HIGH PHA
+<Multi_key> <t> <t> <minus> <f> : "ᨺ"  U1A3A  # TAI THAM LETTER HIGH FA
+<Multi_key> <t> <t> <p> <h> <space> : "ᨻ"  U1A3B  # TAI THAM LETTER LOW PA
+<Multi_key> <t> <t> <f> : "ᨼ"  U1A3C  # TAI THAM LETTER LOW FA
+<Multi_key> <t> <t> <period> <p> <h> : "ᨽ"  U1A3D  # TAI THAM LETTER LOW PHA
+<Multi_key> <t> <t> <m> <space> : "ᨾ"  U1A3E  # TAI THAM LETTER MA
+<Multi_key> <t> <t> <y> : "ᨿ"  U1A3F  # TAI THAM LETTER LOW YA
+<Multi_key> <t> <t> <x> <y> : "ᩀ"  U1A40  # TAI THAM LETTER HIGH YA
+<Multi_key> <t> <t> <r> <space> : "ᩁ"  U1A41  # TAI THAM LETTER RA
+<Multi_key> <t> <t> <l> <space> : "ᩃ"  U1A43  # TAI THAM LETTER LA
+<Multi_key> <t> <t> <w> <space> : "ᩅ"  U1A45  # TAI THAM LETTER WA
+<Multi_key> <t> <t> <minus> <period> <s> : "ᩆ"  U1A46  # TAI THAM LETTER HIGH SHA
+<Multi_key> <t> <t> <minus> <apostrophe> <s> : "ᩇ"  U1A47  # TAI THAM LETTER HIGH SSA
+<Multi_key> <t> <t> <minus> <s> : "ᩈ"  U1A48  # TAI THAM LETTER HIGH SA
+<Multi_key> <t> <t> <minus> <h> : "ᩉ"  U1A49  # TAI THAM LETTER HIGH HA
+<Multi_key> <t> <t> <period> <l> : "ᩊ"  U1A4A  # TAI THAM LETTER LLA
+<Multi_key> <t> <t> <x> <space> : "ᩋ"  U1A4B  # TAI THAM LETTER A
+<Multi_key> <t> <t> <period> <h> : "ᩌ"  U1A4C  # TAI THAM LETTER LOW HA
+<Multi_key> <t> <t> <v> : "ᩂ"  U1A42  # TAI THAM LETTER RUE
+<Multi_key> <t> <t> <slash> <l> : "ᩄ"  U1A44  # TAI THAM LETTER LUE
+<Multi_key> <t> <t> <l> <e> : "ᩓ"  U1A53  # TAI THAM LETTER LAE
+<Multi_key> <t> <t> <s> <s> : "ᩔ"  U1A54  # TAI THAM LETTER GREAT SA
+
+# Dependent consonants
+
+<Multi_key> <t> <t> <r> <Return> : "ᩕ"  U1A55  # TAI THAM CONSONANT SIGN MEDIAL RA
+<Multi_key> <t> <t> <l> <Return> : "ᩖ"  U1A56  # TAI THAM CONSONANT SIGN MEDIAL LA
+<Multi_key> <t> <t> <n> <g> <l> <Return> : "ᩗ"  U1A57  # TAI THAM CONSONANT SIGN LA TANG LAI
+<Multi_key> <t> <t> <n> <g> <Return> : "ᩘ"  U1A58  # TAI THAM SIGN MAI KANG LAI
+<Multi_key> <t> <t> <greater> <n> <g> <Return> : "ᩙ"  U1A59  # TAI THAM CONSONANT SIGN FINAL NGA
+<Multi_key> <t> <t> <p> <h> <Return> : "ᩚ"  U1A5A  # TAI THAM CONSONANT SIGN LOW PA
+<Multi_key> <t> <t> <minus> <period> <t> <h> <Return> : "ᩛ"  U1A5B  # TAI THAM CONSONANT SIGN HIGH RATHA OR LOW PA
+<Multi_key> <t> <t> <m> <Return> : "ᩜ"  U1A5C  # TAI THAM CONSONANT SIGN MA
+<Multi_key> <t> <t> <b> <Return> : "ᩝ"  U1A5D  # TAI THAM CONSONANT SIGN BA
+<Multi_key> <t> <t> <s> <Return> : "ᩞ"  U1A5E  # TAI THAM CONSONANT SIGN SA
+<Multi_key> <t> <t> <asciicircum> <r> <Return> : "᩺"  U1A7A  # TAI THAM SIGN RA HAAM
+
+<Multi_key> <t> <t> <underscore> <plus> <Return> : "᩠"  U1A60  # TAI THAM SIGN SAKOT
+
+# Independent vowels
+
+<Multi_key> <t> <t> <i> <space> : "ᩍ"  U1A4D  # TAI THAM LETTER I
+<Multi_key> <t> <t> <i> <i> <space> : "ᩎ"  U1A4E  # TAI THAM LETTER II
+<Multi_key> <t> <t> <u> <space> : "ᩏ"  U1A4F  # TAI THAM LETTER U
+<Multi_key> <t> <t> <u> <u> <space> : "ᩐ"  U1A50  # TAI THAM LETTER UU
+<Multi_key> <t> <t> <e> <e> <space> : "ᩑ"  U1A51  # TAI THAM LETTER EE
+<Multi_key> <t> <t> <o> <o> <space> : "ᩒ"  U1A52  # TAI THAM LETTER OO
+
+# Dependent vowels
+
+<Multi_key> <t> <t> <a> <Return> : "ᩡ"  U1A61  # TAI THAM VOWEL SIGN A
+<Multi_key> <t> <t> <less> <Return> : "ᩢ"  U1A62  # TAI THAM VOWEL SIGN MAI SAT
+<Multi_key> <t> <t> <a> <a> <Return> : "ᩣ"  U1A63  # TAI THAM VOWEL SIGN AA
+<Multi_key> <t> <t> <asciicircum> <a> <a> <Return> : "ᩤ"  U1A64  # TAI THAM VOWEL SIGN TALL AA
+<Multi_key> <t> <t> <i> <Return> : "ᩥ"  U1A65  # TAI THAM VOWEL SIGN I
+<Multi_key> <t> <t> <i> <i> <Return> : "ᩦ"  U1A66  # TAI THAM VOWEL SIGN II
+<Multi_key> <t> <t> <u> <e> <Return> : "ᩧ"  U1A67  # TAI THAM VOWEL SIGN UE
+<Multi_key> <t> <t> <u> <u> <e> <Return> : "ᩨ"  U1A68  # TAI THAM VOWEL SIGN UUE
+<Multi_key> <t> <t> <u> <Return> : "ᩩ"  U1A69  # TAI THAM VOWEL SIGN U
+<Multi_key> <t> <t> <u> <u> <Return> : "ᩪ"  U1A6A  # TAI THAM VOWEL SIGN UU
+<Multi_key> <t> <t> <o> <Return> : "ᩫ"  U1A6B  # TAI THAM VOWEL SIGN O
+<Multi_key> <t> <t> <o> <a> <Return> : "ᩬ"  U1A6C  # TAI THAM VOWEL SIGN OA BELOW
+<Multi_key> <t> <t> <o> <y> <Return> : "ᩭ"  U1A6D  # TAI THAM VOWEL SIGN OY
+<Multi_key> <t> <t> <e> <Return> : "ᩮ"  U1A6E  # TAI THAM VOWEL SIGN E
+<Multi_key> <t> <t> <a> <e> <Return> : "ᩯ"  U1A6F  # TAI THAM VOWEL SIGN AE
+<Multi_key> <t> <t> <o> <o> <Return> : "ᩰ"  U1A70  # TAI THAM VOWEL SIGN OO
+<Multi_key> <t> <t> <a> <i> <Return> : "ᩱ"  U1A71  # TAI THAM VOWEL SIGN AI
+<Multi_key> <t> <t> <asciicircum> <o> <a> <Return> : "ᩳ"  U1A73  # TAI THAM VOWEL SIGN OA ABOVE
+<Multi_key> <t> <t> <period> <Return> : "ᩴ"  U1A74  # TAI THAM SIGN MAI KANG (ANUSVARA)
+<Multi_key> <t> <t> <w> <Return> : "ᩴ"  U1A74  # TAI THAM SIGN MAI KANG (ANUSVARA)
+<Multi_key> <t> <t> <0> <Return> : "᩺"  U1A7A  # TAI THAM SIGN RA HAAM
+
+# Tones
+
+<Multi_key> <t> <t> <bar> <1> <Return> : "᩵"  U1A75  # TAI THAM SIGN TONE-1
+<Multi_key> <t> <t> <bar> <2> <Return> : "᩶"  U1A76  # TAI THAM SIGN TONE-2
+<Multi_key> <t> <t> <bar> <3> <Return> : "᩷"  U1A77  # TAI THAM SIGN KHUEN TONE-3
+<Multi_key> <t> <t> <bar> <4> <Return> : "᩸"  U1A78  # TAI THAM SIGN KHUEN TONE-4
+<Multi_key> <t> <t> <bar> <5> <Return> : "᩹"  U1A79  # TAI THAM SIGN KHUEN TONE-5
+
+# Numerals
+
+<Multi_key> <t> <t> <numbersign> <0> <H> : "᪀"  U1A80  # TAI THAM HORA DIGIT ZERO
+<Multi_key> <t> <t> <numbersign> <1> <H> : "᪁"  U1A81  # TAI THAM HORA DIGIT ONE
+<Multi_key> <t> <t> <numbersign> <2> <H> : "᪂"  U1A82  # TAI THAM HORA DIGIT TWO
+<Multi_key> <t> <t> <numbersign> <3> <H> : "᪃"  U1A83  # TAI THAM HORA DIGIT THREE
+<Multi_key> <t> <t> <numbersign> <4> <H> : "᪄"  U1A84  # TAI THAM HORA DIGIT FOUR
+<Multi_key> <t> <t> <numbersign> <5> <H> : "᪅"  U1A85  # TAI THAM HORA DIGIT FIVE
+<Multi_key> <t> <t> <numbersign> <6> <H> : "᪆"  U1A86  # TAI THAM HORA DIGIT SIX
+<Multi_key> <t> <t> <numbersign> <7> <H> : "᪇"  U1A87  # TAI THAM HORA DIGIT SEVEN
+<Multi_key> <t> <t> <numbersign> <8> <H> : "᪈"  U1A88  # TAI THAM HORA DIGIT EIGHT
+<Multi_key> <t> <t> <numbersign> <9> <H> : "᪉"  U1A89  # TAI THAM HORA DIGIT NINE
+
+<Multi_key> <t> <t> <numbersign> <0> <T> : "᪐"  U1A90  # TAI THAM THAM DIGIT ZERO
+<Multi_key> <t> <t> <numbersign> <1> <T> : "᪑"  U1A91  # TAI THAM THAM DIGIT ONE
+<Multi_key> <t> <t> <numbersign> <2> <T> : "᪒"  U1A92  # TAI THAM THAM DIGIT TWO
+<Multi_key> <t> <t> <numbersign> <3> <T> : "᪓"  U1A93  # TAI THAM THAM DIGIT THREE
+<Multi_key> <t> <t> <numbersign> <4> <T> : "᪔"  U1A94  # TAI THAM THAM DIGIT FOUR
+<Multi_key> <t> <t> <numbersign> <5> <T> : "᪕"  U1A95  # TAI THAM THAM DIGIT FIVE
+<Multi_key> <t> <t> <numbersign> <6> <T> : "᪖"  U1A96  # TAI THAM THAM DIGIT SIX
+<Multi_key> <t> <t> <numbersign> <7> <T> : "᪗"  U1A97  # TAI THAM THAM DIGIT SEVEN
+<Multi_key> <t> <t> <numbersign> <8> <T> : "᪘"  U1A98  # TAI THAM THAM DIGIT EIGHT
+<Multi_key> <t> <t> <numbersign> <9> <T> : "᪙"  U1A99  # TAI THAM THAM DIGIT NINE
+
+# Punctuation
+
+<Multi_key> <t> <t> <bar> <space> : "᪨"  U1AA8  # TAI THAM SIGN KAAN
+<Multi_key> <t> <t> <2> <bar> : "᪩"  U1AA9  # TAI THAM SIGN KAANKUU
 
 # (v = Tai Viet)
 
@@ -22128,11 +22268,11 @@ include "HangulSyllables"
 <Multi_key> <Z> <v> <numbersign> <8> : "꘨"  UA628  # VAI DIGIT EIGHT
 <Multi_key> <Z> <v> <numbersign> <9> : "꘩"  UA629  # VAI DIGIT NINE
 
-#################
-# (}) Logograms #
-#################
+##########################################
+# (}) Logograms and undeciphered scripts #
+##########################################
 
-# covers Anatolian Hieroglyphs, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B
+# covers Anatolian Hieroglyphs, Cypro-Minoan, Egyptian Hieroglyphs & Linear A/B
 
 include "Logograms"
 
