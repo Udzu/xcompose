@@ -137,6 +137,7 @@ def get_definitions(
 
 # Commands
 
+
 def add_fn(
     args: argparse.Namespace,
     definitions: Trie | None = None,
@@ -177,6 +178,7 @@ def add_fn(
         name = name + f" (conflicts with {conflict})"
     comment = f" {comment}" if comment is not None else ""
     print(f'{keys} : "{args.value}"  {codes}  # {name}{comment}')
+
 
 def add(
     value: str,
