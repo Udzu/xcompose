@@ -137,8 +137,7 @@ def get_definitions(
 
 # Commands
 
-
-def add(
+def add_fn(
     args: argparse.Namespace,
     definitions: Trie | None = None,
     name: str | None = None,
@@ -179,8 +178,34 @@ def add(
     comment = f" {comment}" if comment is not None else ""
     print(f'{keys} : "{args.value}"  {codes}  # {name}{comment}')
 
+def add(
+    value: str,
+    keys: Sequence[str],
+    file: Path | None = None,
+    system: bool = False,
+    ignore_include: bool = False,
+    modifier_key: str = "Multi_key",
+    definitions: Trie | None = None,
+    name: str | None = None,
+    comment: str | None = None,
+):
+    """Utility function to simplify calling add independently."""
+    add_fn(
+        args=argparse.Namespace(
+            value=value,
+            keys=keys,
+            file=file,
+            system=system,
+            ignore_include=ignore_include,
+            modifier_key=modifier_key,
+        ),
+        definitions=definitions,
+        name=name,
+        comment=comment,
+    )
 
-def find(args: argparse.Namespace) -> None:
+
+def find_fn(args: argparse.Namespace) -> None:
     """Print lines matching given output (either string, keysym or part
     of the comment)"""
     definitions: list[Definition] = []
@@ -206,7 +231,7 @@ def find(args: argparse.Namespace) -> None:
         _print_sorted(definitions, args.sort)
 
 
-def get(args: argparse.Namespace) -> None:
+def get_fn(args: argparse.Namespace) -> None:
     """Print lines matching given key sequence prefix."""
     keys = tuple(CHAR_TO_KEYWORD.get(c, c) for c in args.keys)
     definitions: list[Definition] = []
@@ -250,7 +275,7 @@ def _print_sorted(
     print("\n".join(d.line for d in definitions))
 
 
-def validate(args: argparse.Namespace) -> None:
+def validate_fn(args: argparse.Namespace) -> None:
     """Validate compose file, looking for syntax errors, inconsistencies
     and conflicts."""
     trie = Trie()
@@ -443,7 +468,7 @@ def main() -> None:
     )
     parser_add.add_argument("value", help="string value")
     parser_add.add_argument("keys", nargs="*", help="key sequence")
-    parser_add.set_defaults(func=add)
+    parser_add.set_defaults(func=add_fn)
 
     parser_find = subparsers.add_parser(
         "find",
@@ -453,7 +478,7 @@ def main() -> None:
     parser_find.add_argument(
         "value", help="output string, keysym, code point or description"
     )
-    parser_find.set_defaults(func=find)
+    parser_find.set_defaults(func=find_fn)
 
     parser_get = subparsers.add_parser(
         "get",
@@ -461,7 +486,7 @@ def main() -> None:
         help="get sequences matching given key inputs",
     )
     parser_get.add_argument("keys", nargs="*", help="key sequence")
-    parser_get.set_defaults(func=get)
+    parser_get.set_defaults(func=get_fn)
 
     parser_validate = subparsers.add_parser(
         "validate",
@@ -469,7 +494,7 @@ def main() -> None:
         "errors and conflicts.",
         help="validate compose config file",
     )
-    parser_validate.set_defaults(func=validate)
+    parser_validate.set_defaults(func=validate_fn)
 
     args = parser.parse_args()
     if args.modifier_key == ANY_KEY:
