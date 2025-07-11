@@ -1006,6 +1006,17 @@ include "%L"
 <Multi_key> <i> <l> <space> : "ᶖ"  U1D96  # LATIN SMALL LETTER I WITH RETROFLEX HOOK
 <Multi_key> <u> <l>         : "ᶙ"  U1D99  # LATIN SMALL LETTER U WITH RETROFLEX HOOK
 <Multi_key> <o> <l> <space> : "𝼛"  U1DF1B  # LATIN SMALL LETTER O WITH RETROFLEX HOOK
+<Multi_key> <Multi_key> <a> <h> <l> : "ᶐ"  U1D90  # LATIN SMALL LETTER ALPHA WITH RETROFLEX HOOK
+<Multi_key> <Multi_key> <e> <3> <l> : "ᶔ"  U1D94  # LATIN SMALL LETTER REVERSED OPEN E WITH RETROFLEX HOOK
+<Multi_key> <Multi_key> <e> <h> <l> : "ᶓ"  U1D93  # LATIN SMALL LETTER OPEN E WITH RETROFLEX HOOK
+<Multi_key> <Multi_key> <e> <e> <l> : "ᶕ"  U1D95  # LATIN SMALL LETTER SCHWA WITH RETROFLEX HOOK
+<Multi_key> <Multi_key> <o> <parenright> <l> : "ᶗ"  U1D97  # LATIN SMALL LETTER OPEN O WITH RETROFLEX HOOK
+<Multi_key> <Multi_key> <s> <h> <l> : "ᶘ"  U1D98  # LATIN SMALL LETTER ESH WITH RETROFLEX HOOK
+<Multi_key> <Multi_key> <slash> <i> <l> : "𝼚"  U1DF1A  # LATIN SMALL LETTER I WITH STROKE AND RETROFLEX HOOK
+<Multi_key> <Multi_key> <t> <apostrophe> <l> : "𝼉"  U1DF09  # LATIN SMALL LETTER T WITH HOOK AND RETROFLEX HOOK
+<Multi_key> <Multi_key> <z> <h> <l> : "ᶚ"  U1D9A  # LATIN SMALL LETTER EZH WITH RETROFLEX HOOK
+
+<Multi_key> <l> <d> : "𝼑"  U1DF11  # LATIN SMALL LETTER L WITH FISHHOOK (by analogy to rd)
 
 <Multi_key> <S> <underscore> <comma> : "Ș"  U0218  # LATIN CAPITAL LETTER S WITH COMMA BELOW
 <Multi_key> <s> <underscore> <comma> : "ș"  U0219  # LATIN SMALL LETTER S WITH COMMA BELOW
@@ -1177,8 +1188,9 @@ include "%L"
 <Multi_key> <minus> <asciitilde> <b> : "ᵬ"  U1D6C  # LATIN SMALL LETTER B WITH MIDDLE TILDE
 <Multi_key> <minus> <asciitilde> <d> : "ᵭ"  U1D6D  # LATIN SMALL LETTER D WITH MIDDLE TILDE
 <Multi_key> <minus> <asciitilde> <f> : "ᵮ"  U1D6E  # LATIN SMALL LETTER F WITH MIDDLE TILDE
-<Multi_key> <minus> <asciitilde> <l> : "ɫ"  U026B  # LATIN SMALL LETTER L WITH MIDDLE TILDE
 <Multi_key> <minus> <asciitilde> <L> : "Ɫ"  U2C62  # LATIN CAPITAL LETTER L WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <l> : "ɫ"  U026B  # LATIN SMALL LETTER L WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <asciitilde> <l> : "ꬸ"  UAB38  # LATIN SMALL LETTER L WITH DOUBLE MIDDLE TILDE
 <Multi_key> <minus> <asciitilde> <m> : "ᵯ"  U1D6F  # LATIN SMALL LETTER M WITH MIDDLE TILDE
 <Multi_key> <minus> <asciitilde> <n> : "ᵰ"  U1D70  # LATIN SMALL LETTER N WITH MIDDLE TILDE
 <Multi_key> <minus> <asciitilde> <O> : "Ɵ"  U019F  # LATIN CAPITAL LETTER O WITH MIDDLE TILDE
@@ -1187,6 +1199,8 @@ include "%L"
 <Multi_key> <minus> <asciitilde> <s> : "ᵴ"  U1D74  # LATIN SMALL LETTER S WITH MIDDLE TILDE
 <Multi_key> <minus> <asciitilde> <t> : "ᵵ"  U1D75  # LATIN SMALL LETTER T WITH MIDDLE TILDE
 <Multi_key> <minus> <asciitilde> <z> : "ᵶ"  U1D76  # LATIN SMALL LETTER Z WITH MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <Multi_key> <r> <d> : "ᵳ"  U1D73  # LATIN SMALL LETTER R WITH FISHHOOK AND MIDDLE TILDE
+<Multi_key> <minus> <asciitilde> <Multi_key> <r> <v> : "ꭨ"  UAB68  # LATIN SMALL LETTER TURNED R WITH MIDDLE TILDE
 
 # letters with multiple diacritics
 
@@ -2962,6 +2976,7 @@ include "%L"
 <Multi_key> <braceleft> <Multi_key> <o> <A> <braceright> : "Å"  U212B  # ANGSTROM SIGN
 <Multi_key> <braceleft> <d> <Multi_key> <z> <h> <braceright> : "ʤ"  U02A4  # LATIN SMALL LETTER DEZH DIGRAPH
 <Multi_key> <braceleft> <d> <Multi_key> <semicolon> <z> <h> <braceright> : "𝼒"  U1DF12  # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
+<Multi_key> <braceleft> <d> <Multi_key> <z> <h> <l> <braceright> : "𝼙"  U1DF19  # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
 <Multi_key> <braceleft> <d> <Multi_key> <z> <l> <braceright> : "ꭦ"  UAB66  # LATIN SMALL LETTER DZ DIGRAPH WITH RETROFLEX HOOK
 <Multi_key> <braceleft> <d> <Multi_key> <z> <at> <braceright> : "ʥ"  U02A5  # LATIN SMALL LETTER DZ DIGRAPH WITH CURL
 <Multi_key> <braceleft> <Multi_key> <E> <H> <braceright> : "ℇ"  U2107  # EULER CONSTANT
@@ -2974,6 +2989,7 @@ include "%L"
 <Multi_key> <braceleft> <Multi_key> <m> <u> <W> <braceright> : "㎼" U33BC   # SQUARE MU W
 <Multi_key> <braceleft> <t> <Multi_key> <s> <l> <braceright> : "ꭧ"  UAB67  # LATIN SMALL LETTER TS DIGRAPH WITH RETROFLEX HOOK
 <Multi_key> <braceleft> <t> <Multi_key> <semicolon> <s> <h> <braceright> : "𝼗"  U1DF17  # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
+<Multi_key> <braceleft> <t> <Multi_key> <s> <h> <l> <braceright> : "𝼜"  U1DF1C  # LATIN SMALL LETTER TESH DIGRAPH WITH RETROFLEX HOOK
 
 # multigraphs with punctuation or digits
 
