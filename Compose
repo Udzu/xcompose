@@ -6394,6 +6394,15 @@ include "%L"
 <Multi_key> <b> <d> <period> <d> <period> <d> : "ॾ"  U097E  # DEVANAGARI LETTER DDDA
 <Multi_key> <b> <d> <b> <b>              : "ॿ"  U097F  # DEVANAGARI LETTER BBA
 
+# Combining consonants
+
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <a> <Return> : "꣪"  UA8EA  # COMBINING DEVANAGARI LETTER A
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <u> <Return> : "꣫"  UA8EB  # COMBINING DEVANAGARI LETTER U
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <k> <Return> : "꣬"  UA8EC  # COMBINING DEVANAGARI LETTER KA
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <n> <Return> : "꣭"  UA8ED  # COMBINING DEVANAGARI LETTER NA
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <p> <Return> : "꣮"  UA8EE  # COMBINING DEVANAGARI LETTER PA
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <r> <Return> : "꣯"  UA8EF  # COMBINING DEVANAGARI LETTER RA
+
 # Independent vowels
 
 <Multi_key> <b> <d> <period> <a> <space>      : "ऄ" U0904   # DEVANAGARI LETTER SHORT A
@@ -6463,6 +6472,7 @@ include "%L"
 <Multi_key> <b> <d> <underscore> <Return>          : "॒" U0952   # DEVANAGARI STRESS SIGN ANUDATTA
 
 <Multi_key> <b> <d> <S>                            : "ऽ" U093D   # DEVANAGARI SIGN AVAGRAHA
+<Multi_key> <b> <d> <asciicircum> <S> <Return>     : "꣱"  UA8F1  # COMBINING DEVANAGARI SIGN AVAGRAHA
 <Multi_key> <b> <d> <o> <m>                        : "ॐ" U0950   # DEVANAGARI OM
 <Multi_key> <b> <d> <R> <u>                        : "௹" U0BF9   # TAMIL RUPEE SIGN
 
@@ -6478,6 +6488,17 @@ include "%L"
 <Multi_key> <b> <d> <numbersign> <7> : "७" U096D   # DEVANAGARI DIGIT SEVEN
 <Multi_key> <b> <d> <numbersign> <8> : "८" U096E   # DEVANAGARI DIGIT EIGHT
 <Multi_key> <b> <d> <numbersign> <9> : "९" U096F   # DEVANAGARI DIGIT NINE
+
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <0> <Return> : "꣠"  UA8E0  # COMBINING DEVANAGARI DIGIT ZERO
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <1> <Return> : "꣡"  UA8E1  # COMBINING DEVANAGARI DIGIT ONE
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <2> <Return> : "꣢"  UA8E2  # COMBINING DEVANAGARI DIGIT TWO
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <3> <Return> : "꣣"  UA8E3  # COMBINING DEVANAGARI DIGIT THREE
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <4> <Return> : "꣤"  UA8E4  # COMBINING DEVANAGARI DIGIT FOUR
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <5> <Return> : "꣥"  UA8E5  # COMBINING DEVANAGARI DIGIT FIVE
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <6> <Return> : "꣦"  UA8E6  # COMBINING DEVANAGARI DIGIT SIX
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <7> <Return> : "꣧"  UA8E7  # COMBINING DEVANAGARI DIGIT SEVEN
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <8> <Return> : "꣨"  UA8E8  # COMBINING DEVANAGARI DIGIT EIGHT
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <9> <Return> : "꣩"  UA8E9  # COMBINING DEVANAGARI DIGIT NINE
 
 # Punctuation
 
@@ -7474,7 +7495,7 @@ include "%L"
 <Multi_key> <b> <G> <T> <t> <h> : "𑌥"  U11325  # GRANTHA LETTER THA (conflicts)
 <Multi_key> <b> <G> <T> <d> <space> : "𑌦"  U11326  # GRANTHA LETTER DA (conflicts)
 <Multi_key> <b> <G> <T> <d> <h> : "𑌧"  U11327  # GRANTHA LETTER DHA (conflicts)
-<Multi_key> <b> <G> <T> <n> <space> : "𑌨"  U11328  # GRANTHA LETTER NA (conflicts)
+<Multi_key> <b> <G> <T> <n> : "𑌨"  U11328  # GRANTHA LETTER NA (conflicts)
 <Multi_key> <b> <G> <T> <p> <space> : "𑌪"  U1132A  # GRANTHA LETTER PA (conflicts)
 <Multi_key> <b> <G> <T> <p> <h> : "𑌫"  U1132B  # GRANTHA LETTER PHA (conflicts)
 <Multi_key> <b> <G> <T> <b> <space> : "𑌬"  U1132C  # GRANTHA LETTER BA (conflicts)
@@ -7484,7 +7505,7 @@ include "%L"
 <Multi_key> <b> <G> <T> <r> : "𑌰"  U11330  # GRANTHA LETTER RA (conflicts)
 <Multi_key> <b> <G> <T> <l> : "𑌲"  U11332  # GRANTHA LETTER LA (conflicts)
 <Multi_key> <b> <G> <T> <period> <l> : "𑌳"  U11333  # GRANTHA LETTER LLA (conflicts)
-<Multi_key> <b> <G> <T> <v> <space> : "𑌵"  U11335  # GRANTHA LETTER VA (conflicts)
+<Multi_key> <b> <G> <T> <v> : "𑌵"  U11335  # GRANTHA LETTER VA (conflicts)
 <Multi_key> <b> <G> <T> <semicolon> <s> : "𑌶"  U11336  # GRANTHA LETTER SHA (conflicts)
 <Multi_key> <b> <G> <T> <period> <s> : "𑌷"  U11337  # GRANTHA LETTER SSA (conflicts)
 <Multi_key> <b> <G> <T> <s> : "𑌸"  U11338  # GRANTHA LETTER SA (conflicts)
@@ -7492,11 +7513,11 @@ include "%L"
 
 # Combining consonants
 
-<Multi_key> <b> <G> <T> <a> <Return> : "𑍰"  U11370  # COMBINING GRANTHA LETTER A (conflicts)
-<Multi_key> <b> <G> <T> <k> <Return> : "𑍱"  U11371  # COMBINING GRANTHA LETTER KA (conflicts)
-<Multi_key> <b> <G> <T> <n> <Return> : "𑍲"  U11372  # COMBINING GRANTHA LETTER NA (conflicts)
-<Multi_key> <b> <G> <T> <v> <Return> : "𑍳"  U11373  # COMBINING GRANTHA LETTER VI (conflicts)
-<Multi_key> <b> <G> <T> <p> <Return> : "𑍴"  U11374  # COMBINING GRANTHA LETTER PA (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <a> <Return> : "𑍰"  U11370  # COMBINING GRANTHA LETTER A (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <k> <Return> : "𑍱"  U11371  # COMBINING GRANTHA LETTER KA (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <n> <Return> : "𑍲"  U11372  # COMBINING GRANTHA LETTER NA (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <v> <Return> : "𑍳"  U11373  # COMBINING GRANTHA LETTER VI (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <p> <Return> : "𑍴"  U11374  # COMBINING GRANTHA LETTER PA (conflicts)
 
 # Independent vowels
 
@@ -7549,15 +7570,15 @@ include "%L"
 <Multi_key> <b> <G> <T> <period> <parenright> <parenright> : "𑍟"  U1135F  # GRANTHA LETTER VEDIC DOUBLE ANUSVARA (conflicts)
 <Multi_key> <b> <G> <T> <o> <m> : "𑍐"  U11350  # GRANTHA OM (conflicts)
 
-# Numerals
+# Combining numerals
 
-<Multi_key> <b> <G> <T> <numbersign> <0> : "𑍦"  U11366  # COMBINING GRANTHA DIGIT ZERO (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <1> : "𑍧"  U11367  # COMBINING GRANTHA DIGIT ONE (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <2> : "𑍨"  U11368  # COMBINING GRANTHA DIGIT TWO (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <3> : "𑍩"  U11369  # COMBINING GRANTHA DIGIT THREE (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <4> : "𑍪"  U1136A  # COMBINING GRANTHA DIGIT FOUR (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <5> : "𑍫"  U1136B  # COMBINING GRANTHA DIGIT FIVE (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <6> : "𑍬"  U1136C  # COMBINING GRANTHA DIGIT SIX (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <0> <Return> : "𑍦"  U11366  # COMBINING GRANTHA DIGIT ZERO (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <1> <Return> : "𑍧"  U11367  # COMBINING GRANTHA DIGIT ONE (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <2> <Return> : "𑍨"  U11368  # COMBINING GRANTHA DIGIT TWO (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <3> <Return> : "𑍩"  U11369  # COMBINING GRANTHA DIGIT THREE (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <4> <Return> : "𑍪"  U1136A  # COMBINING GRANTHA DIGIT FOUR (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <5> <Return> : "𑍫"  U1136B  # COMBINING GRANTHA DIGIT FIVE (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <6> <Return> : "𑍬"  U1136C  # COMBINING GRANTHA DIGIT SIX (conflicts)
 
 # (k = Kannada)
 
@@ -10936,6 +10957,46 @@ include "%L"
 <Multi_key> <c> <G> <a>          : "ⱝ" U2C5D   # GLAGOLITIC SMALL LETTER TROKUTASTI A (conflicts)
 <Multi_key> <c> <G> <m>          : "ⱞ" U2C5E   # GLAGOLITIC SMALL LETTER LATINATE MYSLITE (conflicts)
 <Multi_key> <c> <G> <less> <c> <h> : "ⱟ" U2C5F   # GLAGOLITIC SMALL LETTER CAUDATE CHRIVI (conflicts)
+
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <a> <Return> : "𞀀"  U1E000  # COMBINING GLAGOLITIC LETTER AZU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <b> <Return> : "𞀁"  U1E001  # COMBINING GLAGOLITIC LETTER BUKY (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <v> <Return> : "𞀂"  U1E002  # COMBINING GLAGOLITIC LETTER VEDE (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <g> <Return> : "𞀃"  U1E003  # COMBINING GLAGOLITIC LETTER GLAGOLI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <d> <Return> : "𞀄"  U1E004  # COMBINING GLAGOLITIC LETTER DOBRO (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <e> <Return> : "𞀅"  U1E005  # COMBINING GLAGOLITIC LETTER YESTU (conflicts with ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <z> <h> <Return> : "𞀆"  U1E006  # COMBINING GLAGOLITIC LETTER ZHIVETE (conflicts with Ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <z> <Return> : "𞀈"  U1E008  # COMBINING GLAGOLITIC LETTER ZEMLJA (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <j> <Return> : "𞀉"  U1E009  # COMBINING GLAGOLITIC LETTER IZHE (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <less> <j> <Return> : "𞀊"  U1E00A  # COMBINING GLAGOLITIC LETTER INITIAL IZHE (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <i> <Return> : "𞀋"  U1E00B  # COMBINING GLAGOLITIC LETTER I (conflicts with ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <d> <j> <Return> : "𞀌"  U1E00C  # COMBINING GLAGOLITIC LETTER DJERVI (conflicts with Ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <k> <Return> : "𞀍"  U1E00D  # COMBINING GLAGOLITIC LETTER KAKO (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <l> <Return> : "𞀎"  U1E00E  # COMBINING GLAGOLITIC LETTER LJUDIJE (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <m> <Return> : "𞀏"  U1E00F  # COMBINING GLAGOLITIC LETTER MYSLITE (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <n> <Return> : "𞀐"  U1E010  # COMBINING GLAGOLITIC LETTER NASHI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <o> <Return> : "𞀑"  U1E011  # COMBINING GLAGOLITIC LETTER ONU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <p> <Return> : "𞀒"  U1E012  # COMBINING GLAGOLITIC LETTER POKOJI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <r> <Return> : "𞀓"  U1E013  # COMBINING GLAGOLITIC LETTER RITSI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <s> <Return> : "𞀔"  U1E014  # COMBINING GLAGOLITIC LETTER SLOVO (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <t> <Return> : "𞀕"  U1E015  # COMBINING GLAGOLITIC LETTER TVRIDO (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <u> <Return> : "𞀖"  U1E016  # COMBINING GLAGOLITIC LETTER UKU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <f> <Return> : "𞀗"  U1E017  # COMBINING GLAGOLITIC LETTER FRITU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <x> <Return> : "𞀘"  U1E018  # COMBINING GLAGOLITIC LETTER HERU (conflicts with ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <s> <c> <h> <Return> : "𞀛"  U1E01B  # COMBINING GLAGOLITIC LETTER SHTA (conflicts with Ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <c> <Return> : "𞀜"  U1E01C  # COMBINING GLAGOLITIC LETTER TSI (conflicts with ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <t> <s> <Return> : "𞀜"  U1E01C  # COMBINING GLAGOLITIC LETTER TSI (conflicts with Ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <c> <h> <Return> : "𞀝"  U1E01D  # COMBINING GLAGOLITIC LETTER CHRIVI (conflicts with Ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <s> <h> <Return> : "𞀞"  U1E01E  # COMBINING GLAGOLITIC LETTER SHA (conflicts with Ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <quotedbl> <space> <Return> : "𞀟"  U1E01F  # COMBINING GLAGOLITIC LETTER YERU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <y> <space> <Return> : "𞀠"  U1E020  # COMBINING GLAGOLITIC LETTER YERI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <y> <e> <Return> : "𞀡"  U1E021  # COMBINING GLAGOLITIC LETTER YATI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <y> <u> <Return> : "𞀣"  U1E023  # COMBINING GLAGOLITIC LETTER YU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <comma> <e> <Return> : "𞀤"  U1E024  # COMBINING GLAGOLITIC LETTER SMALL YUS (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <y> <o> <Return> : "𞀦"  U1E026  # COMBINING GLAGOLITIC LETTER YO (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <comma> <y> <e> <Return> : "𞀧"  U1E027  # COMBINING GLAGOLITIC LETTER IOTATED SMALL YUS (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <comma> <o> <Return> : "𞀨"  U1E028  # COMBINING GLAGOLITIC LETTER BIG YUS (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <comma> <y> <o> <Return> : "𞀩"  U1E029  # COMBINING GLAGOLITIC LETTER IOTATED BIG YUS (conflicts with ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <t> <h> <Return> : "𞀪"  U1E02A  # COMBINING GLAGOLITIC LETTER FITA (conflicts with Ǧ)
 
 # (P = Old Permic)
 
