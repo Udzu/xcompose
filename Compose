@@ -975,6 +975,13 @@ include "%L"
 <Multi_key> <slash> <Multi_key> <l> <s> : "ẜ"  U1E9C  # LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
 <Multi_key> <slash> <Multi_key> <o> <parenright> : "ꬿ"  UAB3F  # LATIN SMALL LETTER OPEN O WITH STROKE
 
+<Multi_key> <d> <underscore> <slash> : "ꝱ"  UA771  # LATIN SMALL LETTER DUM
+<Multi_key> <l> <underscore> <slash> : "ꝲ"  UA772  # LATIN SMALL LETTER LUM
+<Multi_key> <m> <underscore> <slash> : "ꝳ"  UA773  # LATIN SMALL LETTER MUM
+<Multi_key> <n> <underscore> <slash> : "ꝴ"  UA774  # LATIN SMALL LETTER NUM
+<Multi_key> <R> <underscore> <slash> : "ꝶ"  UA776  # LATIN LETTER SMALL CAPITAL RUM
+<Multi_key> <r> <underscore> <slash> : "ꝵ"  UA775  # LATIN SMALL LETTER RUM
+
 <Multi_key> <parenright> <A> : "Ꞻ"  UA7BA  # LATIN CAPITAL LETTER GLOTTAL A
 <Multi_key> <parenright> <a> : "ꞻ"  UA7BB  # LATIN SMALL LETTER GLOTTAL A
 <Multi_key> <parenright> <I> : "Ꞽ"  UA7BC  # LATIN CAPITAL LETTER GLOTTAL I
@@ -1534,6 +1541,7 @@ include "%L"
 <Multi_key> <asciicircum> <asciicircum> <a> <o> <Return> : "ᷕ" U1DD5   # COMBINING LATIN SMALL LETTER AO
 <Multi_key> <asciicircum> <asciicircum> <a> <v> <Return> : "ᷖ" U1DD6   # COMBINING LATIN SMALL LETTER AV
 <Multi_key> <asciicircum> <asciicircum> <a> <quotedbl> <Return> : "ᷲ" U1DF2   # COMBINING LATIN SMALL LETTER A WITH DIAERESIS
+<Multi_key> <asciicircum> <asciicircum> <b> <h> <Return> : "ᷩ"  U1DE9  # COMBINING LATIN SMALL LETTER BETA
 <Multi_key> <asciicircum> <asciicircum> <c> <comma> <Return> : "ᷗ" U1DD7   # COMBINING LATIN SMALL LETTER C CEDILLA
 <Multi_key> <asciicircum> <asciicircum> <d> <h> <Return> : "ᷙ" U1DD9   # COMBINING LATIN SMALL LETTER ETH
 <Multi_key> <asciicircum> <asciicircum> <e> <e> <Return> : "ᷪ" U1DEA   # COMBINING LATIN SMALL LETTER SCHWA
@@ -2343,19 +2351,17 @@ include "%L"
 <Multi_key> <percent> <O> <8> : "𜳸"  U1CCF8  # OUTLINED DIGIT EIGHT
 <Multi_key> <percent> <O> <9> : "𜳹"  U1CCF9  # OUTLINED DIGIT NINE
 
-# (ditto)
-
 <Multi_key> <percent> <i> <D> : "Ꝺ"  UA779  # LATIN CAPITAL LETTER INSULAR D
-<Multi_key> <percent> <i> <d> : "ꝺ"  UA77A  # LATIN SMALL LETTER INSULAR D
 <Multi_key> <percent> <i> <F> : "Ꝼ"  UA77B  # LATIN CAPITAL LETTER INSULAR F
-<Multi_key> <percent> <i> <f> : "ꝼ"  UA77C  # LATIN SMALL LETTER INSULAR F
 <Multi_key> <percent> <i> <G> : "Ᵹ"  UA77D  # LATIN CAPITAL LETTER INSULAR G
-<Multi_key> <percent> <i> <g> : "ᵹ"  U1D79  # LATIN SMALL LETTER INSULAR G
 <Multi_key> <percent> <i> <R> : "Ꞃ"  UA782  # LATIN CAPITAL LETTER INSULAR R
-<Multi_key> <percent> <i> <r> : "ꞃ"  UA783  # LATIN SMALL LETTER INSULAR R
 <Multi_key> <percent> <i> <S> : "Ꞅ"  UA784  # LATIN CAPITAL LETTER INSULAR S
-<Multi_key> <percent> <i> <s> : "ꞅ"  UA785  # LATIN SMALL LETTER INSULAR S
 <Multi_key> <percent> <i> <T> : "Ꞇ"  UA786  # LATIN CAPITAL LETTER INSULAR T
+<Multi_key> <percent> <i> <d> : "ꝺ"  UA77A  # LATIN SMALL LETTER INSULAR D
+<Multi_key> <percent> <i> <f> : "ꝼ"  UA77C  # LATIN SMALL LETTER INSULAR F
+<Multi_key> <percent> <i> <g> : "ᵹ"  U1D79  # LATIN SMALL LETTER INSULAR G
+<Multi_key> <percent> <i> <r> : "ꞃ"  UA783  # LATIN SMALL LETTER INSULAR R
+<Multi_key> <percent> <i> <s> : "ꞅ"  UA785  # LATIN SMALL LETTER INSULAR S
 <Multi_key> <percent> <i> <t> : "ꞇ"  UA787  # LATIN SMALL LETTER INSULAR T
 <Multi_key> <percent> <i> <Multi_key> <G> <v> : "Ꝿ"  UA77E  # LATIN CAPITAL LETTER TURNED INSULAR G
 <Multi_key> <percent> <i> <Multi_key> <g> <v> : "ꝿ"  UA77F  # LATIN SMALL LETTER TURNED INSULAR G
@@ -13980,7 +13986,7 @@ include "%L"
 
 # Convention: % + g/G + font + [weight] + character
 #   prefix: g corresponds to gc above, and G to gx
-#   font: ∅ = normal, s = sans-serif, d = double-struck
+#   font: ∅ = normal, s = sans-serif, d = double-struck, l = latin
 #   weight: ∅ = normal, * = bold, / = italic, */ = bold italic
 #   character: as above, with symbol variants preceded by @
 
@@ -14347,6 +14353,36 @@ include "%L"
 <Multi_key> <percent> <g> <d> <S> : "⅀" U2140   # DOUBLE-STRUCK N-ARY SUMMATION
 <Multi_key> <percent> <g> <d> <g> : "ℽ" U213D   # DOUBLE-STRUCK SMALL GAMMA
 <Multi_key> <percent> <g> <d> <p> : "ℼ" U213C   # DOUBLE-STRUCK SMALL PI
+
+# (not mathematical but fits in nicely)
+
+<Multi_key> <percent> <g> <l> <A> : "Ɑ"  U2C6D  # LATIN CAPITAL LETTER ALPHA (alternatively AH)
+<Multi_key> <percent> <g> <l> <B> : "Ꞵ"  UA7B4  # LATIN CAPITAL LETTER BETA (alternatively BH)
+<Multi_key> <percent> <g> <l> <G> : "Ɣ"  U0194  # LATIN CAPITAL LETTER GAMMA (alternatively GH)
+<Multi_key> <percent> <g> <l> <I> : "Ɩ"  U0196  # LATIN CAPITAL LETTER IOTA
+<Multi_key> <percent> <g> <l> <L> : "Ꟛ"  UA7DA  # LATIN CAPITAL LETTER LAMBDA
+<Multi_key> <percent> <g> <l> <U> : "Ʊ"  U01B1  # LATIN CAPITAL LETTER UPSILON (alternatively UH)
+<Multi_key> <percent> <g> <l> <Y> : "Ʊ"  U01B1  # LATIN CAPITAL LETTER UPSILON (alternatively UH)
+<Multi_key> <percent> <g> <l> <C> : "Ꭓ"  UA7B3  # LATIN CAPITAL LETTER CHI (alternatively XH)
+<Multi_key> <percent> <G> <l> <K> <H> : "Ꭓ"  UA7B3  # LATIN CAPITAL LETTER CHI (alternatively XH)
+<Multi_key> <percent> <G> <l> <O> : "Ꞷ"  UA7B6  # LATIN CAPITAL LETTER OMEGA
+<Multi_key> <percent> <g> <l> <a> : "ɑ"  U0251  # LATIN SMALL LETTER ALPHA (alternatively ah)
+<Multi_key> <percent> <g> <l> <b> : "β"  U03B2  # GREEK SMALL LETTER BETA (alternatively bh)
+<Multi_key> <percent> <g> <l> <g> : "ɣ"  U0263  # LATIN SMALL LETTER GAMMA (alternatively gh)
+<Multi_key> <percent> <g> <l> <d> : "ẟ"  U1E9F  # LATIN SMALL LETTER DELTA
+<Multi_key> <percent> <g> <l> <i> : "ɩ"  U0269  # LATIN SMALL LETTER IOTA
+<Multi_key> <percent> <g> <l> <l> : "ꟛ"  UA7DB  # LATIN SMALL LETTER LAMBDA
+<Multi_key> <percent> <g> <l> <u> : "ʊ"  U028A  # LATIN SMALL LETTER UPSILON (alternatively uh)
+<Multi_key> <percent> <g> <l> <y> : "ʊ"  U028A  # LATIN SMALL LETTER UPSILON (alternatively uh)
+<Multi_key> <percent> <g> <l> <f> : "ɸ"  U0278  # LATIN SMALL LETTER PHI (alternatively ph)
+<Multi_key> <percent> <G> <l> <p> <h> : "ɸ"  U0278  # LATIN SMALL LETTER PHI (alternatively ph)
+<Multi_key> <percent> <g> <l> <c> : "ꭓ"  UAB53  # LATIN SMALL LETTER CHI (alternatively xh)
+<Multi_key> <percent> <G> <l> <k> <h> : "ꭓ"  UAB53  # LATIN SMALL LETTER CHI (alternatively xh)
+<Multi_key> <percent> <G> <l> <o> : "ꞷ"  UA7B7  # LATIN SMALL LETTER OMEGA
+<Multi_key> <percent> <g> <l> <Multi_key> <slash> <i> : "ᵼ"  U1D7C  # LATIN SMALL LETTER IOTA WITH STROKE
+<Multi_key> <percent> <g> <l> <Multi_key> <slash> <L> : "Ƛ"  UA7DC  # LATIN CAPITAL LETTER LAMBDA WITH STROKE
+<Multi_key> <percent> <g> <l> <Multi_key> <slash> <l> : "ƛ"  U019B  # LATIN SMALL LETTER LAMBDA WITH STROKE
+<Multi_key> <percent> <g> <l> <Multi_key> <c> <o> : "ꭔ"  UAB54  # LATIN SMALL LETTER CHI WITH LOW RIGHT RING
 
 #########################################
 # (G) Georgian (and Caucasian Albanian) #

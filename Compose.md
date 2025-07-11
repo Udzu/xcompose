@@ -19,12 +19,12 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (131): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2534)
+### Latin script characters (2541)
 * **International Phonetic Alphabet** (126): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
-* **Latin script letters** (348): Ƿ Ȝ ␢ ȵ etc
+* **Latin script letters** (354): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (786): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 𜳖 etc
 * **Enclosed alphanumerics** (286): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (288): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
+* **Superscripts and subscripts** (289): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (384): ʣ ㏈ etc
 * **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
@@ -37,7 +37,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Cyrillic**, Glagolitic & Old Permic (526): Ре́ддит, Ⱃⰵδδιτ, 𐍠𐍔𐍓𐍓𐍙𐍢 etc
 * **Geʽez**, Adlam, Bamum, Bassa Vah, Garay, Mende Kikakui, Meroitic Cursive & Hieroglyphic, NKo & Vai (1308): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, 𖫦𖫬𖫗𖫭𖫡, ⁧𐵞𐵩𐵺𐵋𐵽⁩, ⁧𞠺𞠾𞡊⁩, ⁧𐦫𐦪𐦷𐦢𐦴⁩, ⁧𐦎𐦁𐦝𐦂𐦘⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian** & Caucasian Albanian (207): რედდიტ, ႰႤႣႣႨႲ, 𐕙𐔴𐔳𐔳𐔼𐔸 etc
-* **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian, Todhri & Vithkuqi (1107): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗, 𐗝𐗉𐗆𐗒𐗢, 𐖊𐖞𐖜𐖜𐖥𐖵 etc
+* **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian, Todhri & Vithkuqi (1128): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗, 𐗝𐗉𐗆𐗒𐗢, 𐖊𐖞𐖜𐖜𐖥𐖵 etc
 * **Hebrew**, Aramaic, Elymaic, Lydian, Palmyrene, Phoenician, Samaritan & Ugaritic (350): ⁧רֶדִיט⁩, ⁧𐡓𐡃𐡉𐡕⁩, ⁧𐿳𐿣𐿵⁩, ⁧𐤭𐤤𐤣𐤣𐤦𐤯⁩, ⁧𐡴𐡣𐡩𐡶⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩, 𐎗𐎄𐎚 etc
 * **Japanese** (mostly kana) (572): 「レディット」 etc
 * **Kawi Scripts**: Balinese, Batak, Baybayin, Buginese, Buhid, Hanunoo, Javanese, Old Kawi, Makasar, Rejang, Sundanese & Tagbanwa (485): ᬭᬾᬤᬶᬢ᭄, ᯒᯧᯑᯪᯖ᯲, ᜍᜒᜇᜒᜆ᜔, ᨑᨙᨉᨗ, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ꦫꦺꦢꦶꦠ, 𑼬𑼾𑼤𑼶𑼢, 𑻭𑻵𑻧𑻳, ꤽꥉꤴꥇꤳ, ᮛᮨᮓᮤᮒ᮪, ᝮᝲᝧᝲ, etc
