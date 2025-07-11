@@ -19057,6 +19057,11 @@ include "HangulSyllables"
 <Multi_key> <z> <numbersign> <parenleft> <9> <parenright> : "㊈"  U3288  # CIRCLED IDEOGRAPH NINE
 <Multi_key> <z> <numbersign> <parenleft> <1> <0> <parenright> : "㊉"  U3289  # CIRCLED IDEOGRAPH TEN
 
+<Multi_key> <z> <c> <Y> <equal>          : "元" U5143    # CJK UNIFIED IDEOGRAPH-5143 (Chinese yuan) (use Y= for ¥)
+<Multi_key> <z> <c> <Y> <dollar>         : "圓" U5713    # CJK UNIFIED IDEOGRAPH-5713 (New Taiwan $)
+<Multi_key> <z> <c> <Y> <j>              : "角" U89D2    # CJK UNIFIED IDEOGRAPH-89D2 (Chinese jiao)
+<Multi_key> <z> <c> <Y> <f>              : "分" U5206    # CJK UNIFIED IDEOGRAPH-5206 (Chinese fen)
+
 <Multi_key> <z> <c> <braceleft> <1> <m> <braceright> : "㋀"  U32C0  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR JANUARY
 <Multi_key> <z> <c> <braceleft> <2> <m> <braceright> : "㋁"  U32C1  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR FEBRUARY
 <Multi_key> <z> <c> <braceleft> <3> <m> <braceright> : "㋂"  U32C2  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR MARCH
@@ -19128,10 +19133,46 @@ include "HangulSyllables"
 <Multi_key> <z> <c> <braceleft> <2> <3> <h> <braceright> : "㍯"  U336F  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR HOUR TWENTY-THREE
 <Multi_key> <z> <c> <braceleft> <2> <4> <h> <braceright> : "㍰"  U3370  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR HOUR TWENTY-FOUR
 
-<Multi_key> <z> <c> <Y> <equal>          : "元" U5143    # CJK UNIFIED IDEOGRAPH-5143 (Chinese yuan) (use Y= for ¥)
-<Multi_key> <z> <c> <Y> <dollar>         : "圓" U5713    # CJK UNIFIED IDEOGRAPH-5713 (New Taiwan $)
-<Multi_key> <z> <c> <Y> <j>              : "角" U89D2    # CJK UNIFIED IDEOGRAPH-89D2 (Chinese jiao)
-<Multi_key> <z> <c> <Y> <f>              : "分" U5206    # CJK UNIFIED IDEOGRAPH-5206 (Chinese fen)
+# character strokes (using English naming convention)
+
+<Multi_key> <z> <c> <braceleft> <H> <braceright> : "㇐"  U31D0  # CJK STROKE H
+<Multi_key> <z> <c> <braceleft> <U> <braceright> : "㇀"  U31C0  # CJK STROKE T
+<Multi_key> <z> <c> <braceleft> <V> <braceright> : "㇑"  U31D1  # CJK STROKE S
+<Multi_key> <z> <c> <braceleft> <T> <braceright> : "㇒"  U31D2  # CJK STROKE P
+<Multi_key> <z> <c> <braceleft> <W> <T> <braceright> : "㇓"  U31D3  # CJK STROKE SP
+<Multi_key> <z> <c> <braceleft> <D> <braceright> : "㇔"  U31D4  # CJK STROKE D
+<Multi_key> <z> <c> <braceleft> <P> <braceright> : "㇏"  U31CF  # CJK STROKE N
+<Multi_key> <z> <c> <braceleft> <U> <P> <braceright> : "㇝"  U31DD  # CJK STROKE TN
+<Multi_key> <z> <c> <braceleft> <O> <braceright> : "㇣"  U31E3  # CJK STROKE Q
+<Multi_key> <z> <c> <braceleft> <H> <J> <braceright> : "㇖"  U31D6  # CJK STROKE HG
+<Multi_key> <z> <c> <braceleft> <H> <T> <braceright> : "㇇"  U31C7  # CJK STROKE HP
+<Multi_key> <z> <c> <braceleft> <H> <V> <braceright> : "㇕"  U31D5  # CJK STROKE HZ
+<Multi_key> <z> <c> <braceleft> <H> <V> <J> <braceright> : "㇆"  U31C6  # CJK STROKE HZG
+<Multi_key> <z> <c> <braceleft> <H> <V> <H> <braceright> : "㇅"  U31C5  # CJK STROKE HZZ
+<Multi_key> <z> <c> <braceleft> <H> <V> <U> <braceright> : "㇊"  U31CA  # CJK STROKE HZT
+<Multi_key> <z> <c> <braceleft> <H> <A> <braceright> : "㇍"  U31CD  # CJK STROKE HZW
+<Multi_key> <z> <c> <braceleft> <H> <A> <J> <braceright> : "㇈"  U31C8  # CJK STROKE HZWG
+<Multi_key> <z> <c> <braceleft> <H> <P> <G> <braceright> : "㇤"  U31E4  # CJK STROKE HXG
+<Multi_key> <z> <c> <braceleft> <H> <T> <A> <J> <braceright> : "㇠"  U31E0  # CJK STROKE HXWG
+<Multi_key> <z> <c> <braceleft> <H> <T> <H> <T> <braceright> : "㇋"  U31CB  # CJK STROKE HZZP
+<Multi_key> <z> <c> <braceleft> <H> <T> <C> <J> <braceright> : "㇌"  U31CC  # CJK STROKE HPWG
+<Multi_key> <z> <c> <braceleft> <H> <V> <H> <V> <braceright> : "㇎"  U31CE  # CJK STROKE HZZZ
+<Multi_key> <z> <c> <braceleft> <H> <T> <H> <T> <J> <braceright> : "㇡"  U31E1  # CJK STROKE HZZZG
+<Multi_key> <z> <c> <braceleft> <V> <U> <braceright> : "㇙"  U31D9  # CJK STROKE ST
+<Multi_key> <z> <c> <braceleft> <V> <H> <braceright> : "㇗"  U31D7  # CJK STROKE SZ
+<Multi_key> <z> <c> <braceleft> <V> <A> <braceright> : "㇄"  U31C4  # CJK STROKE SW
+<Multi_key> <z> <c> <braceleft> <V> <A> <J> <braceright> : "㇟"  U31DF  # CJK STROKE SWG
+<Multi_key> <z> <c> <braceleft> <V> <H> <V> <braceright> : "㇞"  U31DE  # CJK STROKE SZZ
+<Multi_key> <z> <c> <braceleft> <V> <H> <T> <braceright> : "㇥"  U31E5  # CJK STROKE SZP
+<Multi_key> <z> <c> <braceleft> <V> <H> <T> <J> <braceright> : "㇉"  U31C9  # CJK STROKE SZWG
+<Multi_key> <z> <c> <braceleft> <V> <J> <braceright> : "㇚"  U31DA  # CJK STROKE SG
+<Multi_key> <z> <c> <braceleft> <V> <C> <braceright> : "㇘"  U31D8  # CJK STROKE SWZ
+<Multi_key> <z> <c> <braceleft> <T> <U> <braceright> : "㇜"  U31DC  # CJK STROKE PZ
+<Multi_key> <z> <c> <braceleft> <T> <D> <braceright> : "㇛"  U31DB  # CJK STROKE PD
+<Multi_key> <z> <c> <braceleft> <T> <J> <braceright> : "㇢"  U31E2  # CJK STROKE PG
+<Multi_key> <z> <c> <braceleft> <C> <J> <braceright> : "㇁"  U31C1  # CJK STROKE WG
+<Multi_key> <z> <c> <braceleft> <F> <P> <J> <braceright> : "㇃"  U31C3  # CJK STROKE BXG
+<Multi_key> <z> <c> <braceleft> <P> <J> <braceright> : "㇂"  U31C2  # CJK STROKE XG
 
 # (f = Fraser/Lisu)
 
