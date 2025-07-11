@@ -857,9 +857,13 @@ include "%L"
 <Multi_key> <H> <W>                 : "Ƕ"  U01F6   # LATIN CAPITAL LETTER HWAIR
 <Multi_key> <h> <w>                 : "ƕ"  U0195   # LATIN SMALL LETTER HV
 <Multi_key> <K> <v>                 : "Ʞ"  UA7B0  # LATIN CAPITAL LETTER TURNED K
+<Multi_key> <K> <4>                 : "Ꜭ"  UA72C  # LATIN CAPITAL LETTER CUATRILLO
+<Multi_key> <k> <4>                 : "ꜭ"  UA72D  # LATIN SMALL LETTER CUATRILLO
 <Multi_key> <L> <v>                 : "Ꞁ"  UA780  # LATIN CAPITAL LETTER TURNED L
 <Multi_key> <l> <s>                 : "ſ"  U017F   # LATIN SMALL LETTER LONG S (alternatively fs)
 <Multi_key> <o> <k>                 : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA (OKINA) (use OK for 👌)
+<Multi_key> <Q> <3>                 : "Ꜫ"  UA72A  # LATIN CAPITAL LETTER TRESILLO
+<Multi_key> <q> <3>                 : "ꜫ"  UA72B  # LATIN SMALL LETTER TRESILLO
 <Multi_key> <T> <v> <space>         : "Ʇ"  UA7B1  # LATIN CAPITAL LETTER TURNED T
 <Multi_key> <W> <N>                 : "Ƿ"  U01F7   # LATIN CAPITAL LETTER WYNN
 <Multi_key> <w> <n>                 : "ƿ"  U01BF   # LATIN LETTER WYNN
@@ -981,6 +985,7 @@ include "%L"
 <Multi_key> <n> <underscore> <slash> : "ꝴ"  UA774  # LATIN SMALL LETTER NUM
 <Multi_key> <R> <underscore> <slash> : "ꝶ"  UA776  # LATIN LETTER SMALL CAPITAL RUM
 <Multi_key> <r> <underscore> <slash> : "ꝵ"  UA775  # LATIN SMALL LETTER RUM
+<Multi_key> <t> <underscore> <slash> : "ꝷ"  UA777  # LATIN SMALL LETTER TUM
 
 <Multi_key> <parenright> <A> : "Ꞻ"  UA7BA  # LATIN CAPITAL LETTER GLOTTAL A
 <Multi_key> <parenright> <a> : "ꞻ"  UA7BB  # LATIN SMALL LETTER GLOTTAL A
@@ -1036,6 +1041,9 @@ include "%L"
 <Multi_key> <s> <underscore> <comma> : "ș"  U0219  # LATIN SMALL LETTER S WITH COMMA BELOW
 <Multi_key> <T> <underscore> <comma> : "Ț"  U021A  # LATIN CAPITAL LETTER T WITH COMMA BELOW
 <Multi_key> <t> <underscore> <comma> : "ț"  U021B  # LATIN SMALL LETTER T WITH COMMA BELOW
+
+<Multi_key> <comma> <Multi_key> <K> <4> : "Ꜯ"  UA72E  # LATIN CAPITAL LETTER CUATRILLO WITH COMMA
+<Multi_key> <comma> <Multi_key> <k> <4> : "ꜯ"  UA72F  # LATIN SMALL LETTER CUATRILLO WITH COMMA
 
 <Multi_key> <semicolon> <b> : "ᶀ"  U1D80  # LATIN SMALL LETTER B WITH PALATAL HOOK
 <Multi_key> <semicolon> <C> : "Ꞔ"  UA7C4  # LATIN CAPITAL LETTER C WITH PALATAL HOOK
@@ -1538,6 +1546,7 @@ include "%L"
 <Multi_key> <asciicircum> <asciicircum> <R> <Return> : "ᷢ" U1DE2   # COMBINING LATIN LETTER SMALL CAPITAL R
 
 <Multi_key> <asciicircum> <asciicircum> <a> <e> <Return> : "ᷔ" U1DD4   # COMBINING LATIN SMALL LETTER AE
+<Multi_key> <asciicircum> <asciicircum> <a> <h> <Return> : "ᷧ"  U1DE7  # COMBINING LATIN SMALL LETTER ALPHA
 <Multi_key> <asciicircum> <asciicircum> <a> <o> <Return> : "ᷕ" U1DD5   # COMBINING LATIN SMALL LETTER AO
 <Multi_key> <asciicircum> <asciicircum> <a> <v> <Return> : "ᷖ" U1DD6   # COMBINING LATIN SMALL LETTER AV
 <Multi_key> <asciicircum> <asciicircum> <a> <quotedbl> <Return> : "ᷲ" U1DF2   # COMBINING LATIN SMALL LETTER A WITH DIAERESIS
@@ -2379,17 +2388,19 @@ include "%L"
 <Multi_key> <parenleft> <C> <D> <parenright> : "🄭" U1F12D   # CIRCLED CD
 <Multi_key> <parenleft> <W> <z> <parenright> : "🄮" U1F12E   # CIRCLED WZ
 
-<Multi_key> <parenleft> <S> <0> <parenright> : "🄋"  U1F10B  # DINGBAT CIRCLED SANS-SERIF DIGIT ZERO
-<Multi_key> <parenleft> <S> <1> <parenright> : "➀"  U2780  # DINGBAT CIRCLED SANS-SERIF DIGIT ONE
-<Multi_key> <parenleft> <S> <2> <parenright> : "➁"  U2781  # DINGBAT CIRCLED SANS-SERIF DIGIT TWO
-<Multi_key> <parenleft> <S> <3> <parenright> : "➂"  U2782  # DINGBAT CIRCLED SANS-SERIF DIGIT THREE
-<Multi_key> <parenleft> <S> <4> <parenright> : "➃"  U2783  # DINGBAT CIRCLED SANS-SERIF DIGIT FOUR
-<Multi_key> <parenleft> <S> <5> <parenright> : "➄"  U2784  # DINGBAT CIRCLED SANS-SERIF DIGIT FIVE
-<Multi_key> <parenleft> <S> <6> <parenright> : "➅"  U2785  # DINGBAT CIRCLED SANS-SERIF DIGIT SIX
-<Multi_key> <parenleft> <S> <7> <parenright> : "➆"  U2786  # DINGBAT CIRCLED SANS-SERIF DIGIT SEVEN
-<Multi_key> <parenleft> <S> <8> <parenright> : "➇"  U2787  # DINGBAT CIRCLED SANS-SERIF DIGIT EIGHT
-<Multi_key> <parenleft> <S> <9> <parenright> : "➈"  U2788  # DINGBAT CIRCLED SANS-SERIF DIGIT NINE
-<Multi_key> <parenleft> <S> <1> <0> <parenright> : "➉"  U2789  # DINGBAT CIRCLED SANS-SERIF NUMBER TEN
+<Multi_key> <parenleft> <i> <C> <parenright> : "🄫"  U1F12B  # CIRCLED ITALIC LATIN CAPITAL LETTER C
+<Multi_key> <parenleft> <i> <R> <parenright> : "🄬"  U1F12C  # CIRCLED ITALIC LATIN CAPITAL LETTER R
+<Multi_key> <parenleft> <s> <0> <parenright> : "🄋"  U1F10B  # DINGBAT CIRCLED SANS-SERIF DIGIT ZERO
+<Multi_key> <parenleft> <s> <1> <parenright> : "➀"  U2780  # DINGBAT CIRCLED SANS-SERIF DIGIT ONE
+<Multi_key> <parenleft> <s> <2> <parenright> : "➁"  U2781  # DINGBAT CIRCLED SANS-SERIF DIGIT TWO
+<Multi_key> <parenleft> <s> <3> <parenright> : "➂"  U2782  # DINGBAT CIRCLED SANS-SERIF DIGIT THREE
+<Multi_key> <parenleft> <s> <4> <parenright> : "➃"  U2783  # DINGBAT CIRCLED SANS-SERIF DIGIT FOUR
+<Multi_key> <parenleft> <s> <5> <parenright> : "➄"  U2784  # DINGBAT CIRCLED SANS-SERIF DIGIT FIVE
+<Multi_key> <parenleft> <s> <6> <parenright> : "➅"  U2785  # DINGBAT CIRCLED SANS-SERIF DIGIT SIX
+<Multi_key> <parenleft> <s> <7> <parenright> : "➆"  U2786  # DINGBAT CIRCLED SANS-SERIF DIGIT SEVEN
+<Multi_key> <parenleft> <s> <8> <parenright> : "➇"  U2787  # DINGBAT CIRCLED SANS-SERIF DIGIT EIGHT
+<Multi_key> <parenleft> <s> <9> <parenright> : "➈"  U2788  # DINGBAT CIRCLED SANS-SERIF DIGIT NINE
+<Multi_key> <parenleft> <s> <1> <0> <parenright> : "➉"  U2789  # DINGBAT CIRCLED SANS-SERIF NUMBER TEN
 
 <Multi_key> <2> <parenleft> <1> <parenright> : "⓵" U24F5   # DOUBLE CIRCLED DIGIT ONE
 <Multi_key> <2> <parenleft> <2> <parenright> : "⓶" U24F6   # DOUBLE CIRCLED DIGIT TWO
@@ -14367,7 +14378,7 @@ include "%L"
 <Multi_key> <percent> <G> <l> <K> <H> : "Ꭓ"  UA7B3  # LATIN CAPITAL LETTER CHI (alternatively XH)
 <Multi_key> <percent> <G> <l> <O> : "Ꞷ"  UA7B6  # LATIN CAPITAL LETTER OMEGA
 <Multi_key> <percent> <g> <l> <a> : "ɑ"  U0251  # LATIN SMALL LETTER ALPHA (alternatively ah)
-<Multi_key> <percent> <g> <l> <b> : "β"  U03B2  # GREEK SMALL LETTER BETA (alternatively bh)
+<Multi_key> <percent> <g> <l> <b> : "ꞵ"  UA7B5  # LATIN SMALL LETTER BETA
 <Multi_key> <percent> <g> <l> <g> : "ɣ"  U0263  # LATIN SMALL LETTER GAMMA (alternatively gh)
 <Multi_key> <percent> <g> <l> <d> : "ẟ"  U1E9F  # LATIN SMALL LETTER DELTA
 <Multi_key> <percent> <g> <l> <i> : "ɩ"  U0269  # LATIN SMALL LETTER IOTA
