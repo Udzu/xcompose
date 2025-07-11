@@ -19025,7 +19025,7 @@ include "HangulSyllables"
 <Multi_key> <z> <semicolon> <L>          : "˪" U02EA    # MODIFIER LETTER YIN DEPARTING TONE MARK
 <Multi_key> <z> <semicolon> <T>          : "˫" U02EB    # MODIFIER LETTER YANG DEPARTING TONE MARK
 
-# Hanzi
+# Numerals
 
 <Multi_key> <z> <numbersign> <0>         : "零"  U96F6   # CJK UNIFIED IDEOGRAPH-96F6 (0)
 <Multi_key> <z> <numbersign> <O>         : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
@@ -19056,6 +19056,8 @@ include "HangulSyllables"
 <Multi_key> <z> <numbersign> <parenleft> <8> <parenright> : "㊇"  U3287  # CIRCLED IDEOGRAPH EIGHT
 <Multi_key> <z> <numbersign> <parenleft> <9> <parenright> : "㊈"  U3288  # CIRCLED IDEOGRAPH NINE
 <Multi_key> <z> <numbersign> <parenleft> <1> <0> <parenright> : "㊉"  U3289  # CIRCLED IDEOGRAPH TEN
+
+# Hanzi
 
 <Multi_key> <z> <c> <Y> <equal>          : "元" U5143    # CJK UNIFIED IDEOGRAPH-5143 (Chinese yuan) (use Y= for ¥)
 <Multi_key> <z> <c> <Y> <dollar>         : "圓" U5713    # CJK UNIFIED IDEOGRAPH-5713 (New Taiwan $)
@@ -19133,46 +19135,403 @@ include "HangulSyllables"
 <Multi_key> <z> <c> <braceleft> <2> <3> <h> <braceright> : "㍯"  U336F  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR HOUR TWENTY-THREE
 <Multi_key> <z> <c> <braceleft> <2> <4> <h> <braceright> : "㍰"  U3370  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR HOUR TWENTY-FOUR
 
-# character strokes (using English naming convention)
+# ({...} = strokes, radicals and ideographic description)
 
-<Multi_key> <z> <c> <braceleft> <H> <braceright> : "㇐"  U31D0  # CJK STROKE H
-<Multi_key> <z> <c> <braceleft> <U> <braceright> : "㇀"  U31C0  # CJK STROKE T
-<Multi_key> <z> <c> <braceleft> <V> <braceright> : "㇑"  U31D1  # CJK STROKE S
-<Multi_key> <z> <c> <braceleft> <T> <braceright> : "㇒"  U31D2  # CJK STROKE P
-<Multi_key> <z> <c> <braceleft> <W> <T> <braceright> : "㇓"  U31D3  # CJK STROKE SP
-<Multi_key> <z> <c> <braceleft> <D> <braceright> : "㇔"  U31D4  # CJK STROKE D
-<Multi_key> <z> <c> <braceleft> <P> <braceright> : "㇏"  U31CF  # CJK STROKE N
-<Multi_key> <z> <c> <braceleft> <U> <P> <braceright> : "㇝"  U31DD  # CJK STROKE TN
-<Multi_key> <z> <c> <braceleft> <O> <braceright> : "㇣"  U31E3  # CJK STROKE Q
-<Multi_key> <z> <c> <braceleft> <H> <J> <braceright> : "㇖"  U31D6  # CJK STROKE HG
-<Multi_key> <z> <c> <braceleft> <H> <T> <braceright> : "㇇"  U31C7  # CJK STROKE HP
-<Multi_key> <z> <c> <braceleft> <H> <V> <braceright> : "㇕"  U31D5  # CJK STROKE HZ
-<Multi_key> <z> <c> <braceleft> <H> <V> <J> <braceright> : "㇆"  U31C6  # CJK STROKE HZG
-<Multi_key> <z> <c> <braceleft> <H> <V> <H> <braceright> : "㇅"  U31C5  # CJK STROKE HZZ
-<Multi_key> <z> <c> <braceleft> <H> <V> <U> <braceright> : "㇊"  U31CA  # CJK STROKE HZT
-<Multi_key> <z> <c> <braceleft> <H> <A> <braceright> : "㇍"  U31CD  # CJK STROKE HZW
-<Multi_key> <z> <c> <braceleft> <H> <A> <J> <braceright> : "㇈"  U31C8  # CJK STROKE HZWG
-<Multi_key> <z> <c> <braceleft> <H> <P> <G> <braceright> : "㇤"  U31E4  # CJK STROKE HXG
-<Multi_key> <z> <c> <braceleft> <H> <T> <A> <J> <braceright> : "㇠"  U31E0  # CJK STROKE HXWG
-<Multi_key> <z> <c> <braceleft> <H> <T> <H> <T> <braceright> : "㇋"  U31CB  # CJK STROKE HZZP
-<Multi_key> <z> <c> <braceleft> <H> <T> <C> <J> <braceright> : "㇌"  U31CC  # CJK STROKE HPWG
-<Multi_key> <z> <c> <braceleft> <H> <V> <H> <V> <braceright> : "㇎"  U31CE  # CJK STROKE HZZZ
-<Multi_key> <z> <c> <braceleft> <H> <T> <H> <T> <J> <braceright> : "㇡"  U31E1  # CJK STROKE HZZZG
-<Multi_key> <z> <c> <braceleft> <V> <U> <braceright> : "㇙"  U31D9  # CJK STROKE ST
-<Multi_key> <z> <c> <braceleft> <V> <H> <braceright> : "㇗"  U31D7  # CJK STROKE SZ
-<Multi_key> <z> <c> <braceleft> <V> <A> <braceright> : "㇄"  U31C4  # CJK STROKE SW
-<Multi_key> <z> <c> <braceleft> <V> <A> <J> <braceright> : "㇟"  U31DF  # CJK STROKE SWG
-<Multi_key> <z> <c> <braceleft> <V> <H> <V> <braceright> : "㇞"  U31DE  # CJK STROKE SZZ
-<Multi_key> <z> <c> <braceleft> <V> <H> <T> <braceright> : "㇥"  U31E5  # CJK STROKE SZP
-<Multi_key> <z> <c> <braceleft> <V> <H> <T> <J> <braceright> : "㇉"  U31C9  # CJK STROKE SZWG
-<Multi_key> <z> <c> <braceleft> <V> <J> <braceright> : "㇚"  U31DA  # CJK STROKE SG
-<Multi_key> <z> <c> <braceleft> <V> <C> <braceright> : "㇘"  U31D8  # CJK STROKE SWZ
-<Multi_key> <z> <c> <braceleft> <T> <U> <braceright> : "㇜"  U31DC  # CJK STROKE PZ
-<Multi_key> <z> <c> <braceleft> <T> <D> <braceright> : "㇛"  U31DB  # CJK STROKE PD
-<Multi_key> <z> <c> <braceleft> <T> <J> <braceright> : "㇢"  U31E2  # CJK STROKE PG
-<Multi_key> <z> <c> <braceleft> <C> <J> <braceright> : "㇁"  U31C1  # CJK STROKE WG
-<Multi_key> <z> <c> <braceleft> <F> <P> <J> <braceright> : "㇃"  U31C3  # CJK STROKE BXG
-<Multi_key> <z> <c> <braceleft> <P> <J> <braceright> : "㇂"  U31C2  # CJK STROKE XG
+# strokes listed by English name
+
+<Multi_key> <z> <braceleft> <H> <braceright> : "㇐"  U31D0  # CJK STROKE H
+<Multi_key> <z> <braceleft> <U> <braceright> : "㇀"  U31C0  # CJK STROKE T
+<Multi_key> <z> <braceleft> <V> <braceright> : "㇑"  U31D1  # CJK STROKE S
+<Multi_key> <z> <braceleft> <T> <braceright> : "㇒"  U31D2  # CJK STROKE P
+<Multi_key> <z> <braceleft> <W> <T> <braceright> : "㇓"  U31D3  # CJK STROKE SP
+<Multi_key> <z> <braceleft> <D> <braceright> : "㇔"  U31D4  # CJK STROKE D
+<Multi_key> <z> <braceleft> <P> <braceright> : "㇏"  U31CF  # CJK STROKE N
+<Multi_key> <z> <braceleft> <U> <P> <braceright> : "㇝"  U31DD  # CJK STROKE TN
+<Multi_key> <z> <braceleft> <O> <braceright> : "㇣"  U31E3  # CJK STROKE Q
+<Multi_key> <z> <braceleft> <H> <J> <braceright> : "㇖"  U31D6  # CJK STROKE HG
+<Multi_key> <z> <braceleft> <H> <T> <braceright> : "㇇"  U31C7  # CJK STROKE HP
+<Multi_key> <z> <braceleft> <H> <V> <braceright> : "㇕"  U31D5  # CJK STROKE HZ
+<Multi_key> <z> <braceleft> <H> <V> <J> <braceright> : "㇆"  U31C6  # CJK STROKE HZG
+<Multi_key> <z> <braceleft> <H> <V> <H> <braceright> : "㇅"  U31C5  # CJK STROKE HZZ
+<Multi_key> <z> <braceleft> <H> <V> <U> <braceright> : "㇊"  U31CA  # CJK STROKE HZT
+<Multi_key> <z> <braceleft> <H> <A> <braceright> : "㇍"  U31CD  # CJK STROKE HZW
+<Multi_key> <z> <braceleft> <H> <A> <J> <braceright> : "㇈"  U31C8  # CJK STROKE HZWG
+<Multi_key> <z> <braceleft> <H> <P> <G> <braceright> : "㇤"  U31E4  # CJK STROKE HXG
+<Multi_key> <z> <braceleft> <H> <T> <A> <J> <braceright> : "㇠"  U31E0  # CJK STROKE HXWG
+<Multi_key> <z> <braceleft> <H> <T> <H> <T> <braceright> : "㇋"  U31CB  # CJK STROKE HZZP
+<Multi_key> <z> <braceleft> <H> <T> <C> <J> <braceright> : "㇌"  U31CC  # CJK STROKE HPWG
+<Multi_key> <z> <braceleft> <H> <V> <H> <V> <braceright> : "㇎"  U31CE  # CJK STROKE HZZZ
+<Multi_key> <z> <braceleft> <H> <T> <H> <T> <J> <braceright> : "㇡"  U31E1  # CJK STROKE HZZZG
+<Multi_key> <z> <braceleft> <V> <U> <braceright> : "㇙"  U31D9  # CJK STROKE ST
+<Multi_key> <z> <braceleft> <V> <H> <braceright> : "㇗"  U31D7  # CJK STROKE SZ
+<Multi_key> <z> <braceleft> <V> <A> <braceright> : "㇄"  U31C4  # CJK STROKE SW
+<Multi_key> <z> <braceleft> <V> <A> <J> <braceright> : "㇟"  U31DF  # CJK STROKE SWG
+<Multi_key> <z> <braceleft> <V> <H> <V> <braceright> : "㇞"  U31DE  # CJK STROKE SZZ
+<Multi_key> <z> <braceleft> <V> <H> <T> <braceright> : "㇥"  U31E5  # CJK STROKE SZP
+<Multi_key> <z> <braceleft> <V> <H> <T> <J> <braceright> : "㇉"  U31C9  # CJK STROKE SZWG
+<Multi_key> <z> <braceleft> <V> <J> <braceright> : "㇚"  U31DA  # CJK STROKE SG
+<Multi_key> <z> <braceleft> <V> <C> <braceright> : "㇘"  U31D8  # CJK STROKE SWZ
+<Multi_key> <z> <braceleft> <T> <U> <braceright> : "㇜"  U31DC  # CJK STROKE PZ
+<Multi_key> <z> <braceleft> <T> <D> <braceright> : "㇛"  U31DB  # CJK STROKE PD
+<Multi_key> <z> <braceleft> <T> <J> <braceright> : "㇢"  U31E2  # CJK STROKE PG
+<Multi_key> <z> <braceleft> <C> <J> <braceright> : "㇁"  U31C1  # CJK STROKE WG
+<Multi_key> <z> <braceleft> <F> <P> <J> <braceright> : "㇃"  U31C3  # CJK STROKE BXG
+<Multi_key> <z> <braceleft> <P> <J> <braceright> : "㇂"  U31C2  # CJK STROKE XG
+
+# radicals listed by Kangxi order; extended radicals distinguished by position then by letter
+
+<Multi_key> <z> <braceleft> <1> <braceright> : "⼀"  U2F00  # KANGXI RADICAL ONE
+<Multi_key> <z> <braceleft> <2> <braceright> : "⼁"  U2F01  # KANGXI RADICAL LINE
+<Multi_key> <z> <braceleft> <3> <braceright> : "⼂"  U2F02  # KANGXI RADICAL DOT
+<Multi_key> <z> <braceleft> <4> <braceright> : "⼃"  U2F03  # KANGXI RADICAL SLASH
+<Multi_key> <z> <braceleft> <5> <braceright> : "⼄"  U2F04  # KANGXI RADICAL SECOND
+<Multi_key> <z> <braceleft> <6> <braceright> : "⼅"  U2F05  # KANGXI RADICAL HOOK
+<Multi_key> <z> <braceleft> <7> <braceright> : "⼆"  U2F06  # KANGXI RADICAL TWO
+<Multi_key> <z> <braceleft> <8> <braceright> : "⼇"  U2F07  # KANGXI RADICAL LID
+<Multi_key> <z> <braceleft> <9> <braceright> : "⼈"  U2F08  # KANGXI RADICAL MAN
+<Multi_key> <z> <braceleft> <1> <0> <braceright> : "⼉"  U2F09  # KANGXI RADICAL LEGS
+<Multi_key> <z> <braceleft> <1> <1> <braceright> : "⼊"  U2F0A  # KANGXI RADICAL ENTER
+<Multi_key> <z> <braceleft> <1> <2> <braceright> : "⼋"  U2F0B  # KANGXI RADICAL EIGHT
+<Multi_key> <z> <braceleft> <1> <3> <braceright> : "⼌"  U2F0C  # KANGXI RADICAL DOWN BOX
+<Multi_key> <z> <braceleft> <1> <4> <braceright> : "⼍"  U2F0D  # KANGXI RADICAL COVER
+<Multi_key> <z> <braceleft> <1> <5> <braceright> : "⼎"  U2F0E  # KANGXI RADICAL ICE
+<Multi_key> <z> <braceleft> <1> <6> <braceright> : "⼏"  U2F0F  # KANGXI RADICAL TABLE
+<Multi_key> <z> <braceleft> <1> <7> <braceright> : "⼐"  U2F10  # KANGXI RADICAL OPEN BOX
+<Multi_key> <z> <braceleft> <1> <8> <braceright> : "⼑"  U2F11  # KANGXI RADICAL KNIFE
+<Multi_key> <z> <braceleft> <1> <9> <braceright> : "⼒"  U2F12  # KANGXI RADICAL POWER
+<Multi_key> <z> <braceleft> <2> <0> <braceright> : "⼓"  U2F13  # KANGXI RADICAL WRAP
+<Multi_key> <z> <braceleft> <2> <1> <braceright> : "⼔"  U2F14  # KANGXI RADICAL SPOON
+<Multi_key> <z> <braceleft> <2> <2> <braceright> : "⼕"  U2F15  # KANGXI RADICAL RIGHT OPEN BOX
+<Multi_key> <z> <braceleft> <2> <3> <braceright> : "⼖"  U2F16  # KANGXI RADICAL HIDING ENCLOSURE
+<Multi_key> <z> <braceleft> <2> <4> <braceright> : "⼗"  U2F17  # KANGXI RADICAL TEN
+<Multi_key> <z> <braceleft> <2> <5> <braceright> : "⼘"  U2F18  # KANGXI RADICAL DIVINATION
+<Multi_key> <z> <braceleft> <2> <6> <braceright> : "⼙"  U2F19  # KANGXI RADICAL SEAL
+<Multi_key> <z> <braceleft> <2> <7> <braceright> : "⼚"  U2F1A  # KANGXI RADICAL CLIFF
+<Multi_key> <z> <braceleft> <2> <8> <braceright> : "⼛"  U2F1B  # KANGXI RADICAL PRIVATE
+<Multi_key> <z> <braceleft> <2> <9> <braceright> : "⼜"  U2F1C  # KANGXI RADICAL AGAIN
+<Multi_key> <z> <braceleft> <3> <0> <braceright> : "⼝"  U2F1D  # KANGXI RADICAL MOUTH
+<Multi_key> <z> <braceleft> <3> <1> <braceright> : "⼞"  U2F1E  # KANGXI RADICAL ENCLOSURE
+<Multi_key> <z> <braceleft> <3> <2> <braceright> : "⼟"  U2F1F  # KANGXI RADICAL EARTH
+<Multi_key> <z> <braceleft> <3> <3> <braceright> : "⼠"  U2F20  # KANGXI RADICAL SCHOLAR
+<Multi_key> <z> <braceleft> <3> <4> <braceright> : "⼡"  U2F21  # KANGXI RADICAL GO
+<Multi_key> <z> <braceleft> <3> <5> <braceright> : "⼢"  U2F22  # KANGXI RADICAL GO SLOWLY
+<Multi_key> <z> <braceleft> <3> <6> <braceright> : "⼣"  U2F23  # KANGXI RADICAL EVENING
+<Multi_key> <z> <braceleft> <3> <7> <braceright> : "⼤"  U2F24  # KANGXI RADICAL BIG
+<Multi_key> <z> <braceleft> <3> <8> <braceright> : "⼥"  U2F25  # KANGXI RADICAL WOMAN
+<Multi_key> <z> <braceleft> <3> <9> <braceright> : "⼦"  U2F26  # KANGXI RADICAL CHILD
+<Multi_key> <z> <braceleft> <4> <0> <braceright> : "⼧"  U2F27  # KANGXI RADICAL ROOF
+<Multi_key> <z> <braceleft> <4> <1> <braceright> : "⼨"  U2F28  # KANGXI RADICAL INCH
+<Multi_key> <z> <braceleft> <4> <2> <braceright> : "⼩"  U2F29  # KANGXI RADICAL SMALL
+<Multi_key> <z> <braceleft> <4> <3> <braceright> : "⼪"  U2F2A  # KANGXI RADICAL LAME
+<Multi_key> <z> <braceleft> <4> <4> <braceright> : "⼫"  U2F2B  # KANGXI RADICAL CORPSE
+<Multi_key> <z> <braceleft> <4> <5> <braceright> : "⼬"  U2F2C  # KANGXI RADICAL SPROUT
+<Multi_key> <z> <braceleft> <4> <6> <braceright> : "⼭"  U2F2D  # KANGXI RADICAL MOUNTAIN
+<Multi_key> <z> <braceleft> <4> <7> <braceright> : "⼮"  U2F2E  # KANGXI RADICAL RIVER
+<Multi_key> <z> <braceleft> <4> <8> <braceright> : "⼯"  U2F2F  # KANGXI RADICAL WORK
+<Multi_key> <z> <braceleft> <4> <9> <braceright> : "⼰"  U2F30  # KANGXI RADICAL ONESELF
+<Multi_key> <z> <braceleft> <5> <0> <braceright> : "⼱"  U2F31  # KANGXI RADICAL TURBAN
+<Multi_key> <z> <braceleft> <5> <1> <braceright> : "⼲"  U2F32  # KANGXI RADICAL DRY
+<Multi_key> <z> <braceleft> <5> <2> <braceright> : "⼳"  U2F33  # KANGXI RADICAL SHORT THREAD
+<Multi_key> <z> <braceleft> <5> <3> <braceright> : "⼴"  U2F34  # KANGXI RADICAL DOTTED CLIFF
+<Multi_key> <z> <braceleft> <5> <4> <braceright> : "⼵"  U2F35  # KANGXI RADICAL LONG STRIDE
+<Multi_key> <z> <braceleft> <5> <5> <braceright> : "⼶"  U2F36  # KANGXI RADICAL TWO HANDS
+<Multi_key> <z> <braceleft> <5> <6> <braceright> : "⼷"  U2F37  # KANGXI RADICAL SHOOT
+<Multi_key> <z> <braceleft> <5> <7> <braceright> : "⼸"  U2F38  # KANGXI RADICAL BOW
+<Multi_key> <z> <braceleft> <5> <8> <braceright> : "⼹"  U2F39  # KANGXI RADICAL SNOUT
+<Multi_key> <z> <braceleft> <5> <9> <braceright> : "⼺"  U2F3A  # KANGXI RADICAL BRISTLE
+<Multi_key> <z> <braceleft> <6> <0> <braceright> : "⼻"  U2F3B  # KANGXI RADICAL STEP
+<Multi_key> <z> <braceleft> <6> <1> <braceright> : "⼼"  U2F3C  # KANGXI RADICAL HEART
+<Multi_key> <z> <braceleft> <6> <2> <braceright> : "⼽"  U2F3D  # KANGXI RADICAL HALBERD
+<Multi_key> <z> <braceleft> <6> <3> <braceright> : "⼾"  U2F3E  # KANGXI RADICAL DOOR
+<Multi_key> <z> <braceleft> <6> <4> <braceright> : "⼿"  U2F3F  # KANGXI RADICAL HAND
+<Multi_key> <z> <braceleft> <6> <5> <braceright> : "⽀"  U2F40  # KANGXI RADICAL BRANCH
+<Multi_key> <z> <braceleft> <6> <6> <braceright> : "⽁"  U2F41  # KANGXI RADICAL RAP
+<Multi_key> <z> <braceleft> <6> <7> <braceright> : "⽂"  U2F42  # KANGXI RADICAL SCRIPT
+<Multi_key> <z> <braceleft> <6> <8> <braceright> : "⽃"  U2F43  # KANGXI RADICAL DIPPER
+<Multi_key> <z> <braceleft> <6> <9> <braceright> : "⽄"  U2F44  # KANGXI RADICAL AXE
+<Multi_key> <z> <braceleft> <7> <0> <braceright> : "⽅"  U2F45  # KANGXI RADICAL SQUARE
+<Multi_key> <z> <braceleft> <7> <1> <braceright> : "⽆"  U2F46  # KANGXI RADICAL NOT
+<Multi_key> <z> <braceleft> <7> <2> <braceright> : "⽇"  U2F47  # KANGXI RADICAL SUN
+<Multi_key> <z> <braceleft> <7> <3> <braceright> : "⽈"  U2F48  # KANGXI RADICAL SAY
+<Multi_key> <z> <braceleft> <7> <4> <braceright> : "⽉"  U2F49  # KANGXI RADICAL MOON
+<Multi_key> <z> <braceleft> <7> <5> <braceright> : "⽊"  U2F4A  # KANGXI RADICAL TREE
+<Multi_key> <z> <braceleft> <7> <6> <braceright> : "⽋"  U2F4B  # KANGXI RADICAL LACK
+<Multi_key> <z> <braceleft> <7> <7> <braceright> : "⽌"  U2F4C  # KANGXI RADICAL STOP
+<Multi_key> <z> <braceleft> <7> <8> <braceright> : "⽍"  U2F4D  # KANGXI RADICAL DEATH
+<Multi_key> <z> <braceleft> <7> <9> <braceright> : "⽎"  U2F4E  # KANGXI RADICAL WEAPON
+<Multi_key> <z> <braceleft> <8> <0> <braceright> : "⽏"  U2F4F  # KANGXI RADICAL DO NOT
+<Multi_key> <z> <braceleft> <8> <1> <braceright> : "⽐"  U2F50  # KANGXI RADICAL COMPARE
+<Multi_key> <z> <braceleft> <8> <2> <braceright> : "⽑"  U2F51  # KANGXI RADICAL FUR
+<Multi_key> <z> <braceleft> <8> <3> <braceright> : "⽒"  U2F52  # KANGXI RADICAL CLAN
+<Multi_key> <z> <braceleft> <8> <4> <braceright> : "⽓"  U2F53  # KANGXI RADICAL STEAM
+<Multi_key> <z> <braceleft> <8> <5> <braceright> : "⽔"  U2F54  # KANGXI RADICAL WATER
+<Multi_key> <z> <braceleft> <8> <6> <braceright> : "⽕"  U2F55  # KANGXI RADICAL FIRE
+<Multi_key> <z> <braceleft> <8> <7> <braceright> : "⽖"  U2F56  # KANGXI RADICAL CLAW
+<Multi_key> <z> <braceleft> <8> <8> <braceright> : "⽗"  U2F57  # KANGXI RADICAL FATHER
+<Multi_key> <z> <braceleft> <8> <9> <braceright> : "⽘"  U2F58  # KANGXI RADICAL DOUBLE X
+<Multi_key> <z> <braceleft> <9> <0> <braceright> : "⽙"  U2F59  # KANGXI RADICAL HALF TREE TRUNK
+<Multi_key> <z> <braceleft> <9> <1> <braceright> : "⽚"  U2F5A  # KANGXI RADICAL SLICE
+<Multi_key> <z> <braceleft> <9> <2> <braceright> : "⽛"  U2F5B  # KANGXI RADICAL FANG
+<Multi_key> <z> <braceleft> <9> <3> <braceright> : "⽜"  U2F5C  # KANGXI RADICAL COW
+<Multi_key> <z> <braceleft> <9> <4> <braceright> : "⽝"  U2F5D  # KANGXI RADICAL DOG
+<Multi_key> <z> <braceleft> <9> <5> <braceright> : "⽞"  U2F5E  # KANGXI RADICAL PROFOUND
+<Multi_key> <z> <braceleft> <9> <6> <braceright> : "⽟"  U2F5F  # KANGXI RADICAL JADE
+<Multi_key> <z> <braceleft> <9> <7> <braceright> : "⽠"  U2F60  # KANGXI RADICAL MELON
+<Multi_key> <z> <braceleft> <9> <8> <braceright> : "⽡"  U2F61  # KANGXI RADICAL TILE
+<Multi_key> <z> <braceleft> <9> <9> <braceright> : "⽢"  U2F62  # KANGXI RADICAL SWEET
+<Multi_key> <z> <braceleft> <1> <0> <0> <braceright> : "⽣"  U2F63  # KANGXI RADICAL LIFE
+<Multi_key> <z> <braceleft> <1> <0> <1> <braceright> : "⽤"  U2F64  # KANGXI RADICAL USE
+<Multi_key> <z> <braceleft> <1> <0> <2> <braceright> : "⽥"  U2F65  # KANGXI RADICAL FIELD
+<Multi_key> <z> <braceleft> <1> <0> <3> <braceright> : "⽦"  U2F66  # KANGXI RADICAL BOLT OF CLOTH
+<Multi_key> <z> <braceleft> <1> <0> <4> <braceright> : "⽧"  U2F67  # KANGXI RADICAL SICKNESS
+<Multi_key> <z> <braceleft> <1> <0> <5> <braceright> : "⽨"  U2F68  # KANGXI RADICAL DOTTED TENT
+<Multi_key> <z> <braceleft> <1> <0> <6> <braceright> : "⽩"  U2F69  # KANGXI RADICAL WHITE
+<Multi_key> <z> <braceleft> <1> <0> <7> <braceright> : "⽪"  U2F6A  # KANGXI RADICAL SKIN
+<Multi_key> <z> <braceleft> <1> <0> <8> <braceright> : "⽫"  U2F6B  # KANGXI RADICAL DISH
+<Multi_key> <z> <braceleft> <1> <0> <9> <braceright> : "⽬"  U2F6C  # KANGXI RADICAL EYE
+<Multi_key> <z> <braceleft> <1> <1> <0> <braceright> : "⽭"  U2F6D  # KANGXI RADICAL SPEAR
+<Multi_key> <z> <braceleft> <1> <1> <1> <braceright> : "⽮"  U2F6E  # KANGXI RADICAL ARROW
+<Multi_key> <z> <braceleft> <1> <1> <2> <braceright> : "⽯"  U2F6F  # KANGXI RADICAL STONE
+<Multi_key> <z> <braceleft> <1> <1> <3> <braceright> : "⽰"  U2F70  # KANGXI RADICAL SPIRIT
+<Multi_key> <z> <braceleft> <1> <1> <4> <braceright> : "⽱"  U2F71  # KANGXI RADICAL TRACK
+<Multi_key> <z> <braceleft> <1> <1> <5> <braceright> : "⽲"  U2F72  # KANGXI RADICAL GRAIN
+<Multi_key> <z> <braceleft> <1> <1> <6> <braceright> : "⽳"  U2F73  # KANGXI RADICAL CAVE
+<Multi_key> <z> <braceleft> <1> <1> <7> <braceright> : "⽴"  U2F74  # KANGXI RADICAL STAND
+<Multi_key> <z> <braceleft> <1> <1> <8> <braceright> : "⽵"  U2F75  # KANGXI RADICAL BAMBOO
+<Multi_key> <z> <braceleft> <1> <1> <9> <braceright> : "⽶"  U2F76  # KANGXI RADICAL RICE
+<Multi_key> <z> <braceleft> <1> <2> <0> <braceright> : "⽷"  U2F77  # KANGXI RADICAL SILK
+<Multi_key> <z> <braceleft> <1> <2> <1> <braceright> : "⽸"  U2F78  # KANGXI RADICAL JAR
+<Multi_key> <z> <braceleft> <1> <2> <2> <braceright> : "⽹"  U2F79  # KANGXI RADICAL NET
+<Multi_key> <z> <braceleft> <1> <2> <3> <braceright> : "⽺"  U2F7A  # KANGXI RADICAL SHEEP
+<Multi_key> <z> <braceleft> <1> <2> <4> <braceright> : "⽻"  U2F7B  # KANGXI RADICAL FEATHER
+<Multi_key> <z> <braceleft> <1> <2> <5> <braceright> : "⽼"  U2F7C  # KANGXI RADICAL OLD
+<Multi_key> <z> <braceleft> <1> <2> <6> <braceright> : "⽽"  U2F7D  # KANGXI RADICAL AND
+<Multi_key> <z> <braceleft> <1> <2> <7> <braceright> : "⽾"  U2F7E  # KANGXI RADICAL PLOW
+<Multi_key> <z> <braceleft> <1> <2> <8> <braceright> : "⽿"  U2F7F  # KANGXI RADICAL EAR
+<Multi_key> <z> <braceleft> <1> <2> <9> <braceright> : "⾀"  U2F80  # KANGXI RADICAL BRUSH
+<Multi_key> <z> <braceleft> <1> <3> <0> <braceright> : "⾁"  U2F81  # KANGXI RADICAL MEAT
+<Multi_key> <z> <braceleft> <1> <3> <1> <braceright> : "⾂"  U2F82  # KANGXI RADICAL MINISTER
+<Multi_key> <z> <braceleft> <1> <3> <2> <braceright> : "⾃"  U2F83  # KANGXI RADICAL SELF
+<Multi_key> <z> <braceleft> <1> <3> <3> <braceright> : "⾄"  U2F84  # KANGXI RADICAL ARRIVE
+<Multi_key> <z> <braceleft> <1> <3> <4> <braceright> : "⾅"  U2F85  # KANGXI RADICAL MORTAR
+<Multi_key> <z> <braceleft> <1> <3> <5> <braceright> : "⾆"  U2F86  # KANGXI RADICAL TONGUE
+<Multi_key> <z> <braceleft> <1> <3> <6> <braceright> : "⾇"  U2F87  # KANGXI RADICAL OPPOSE
+<Multi_key> <z> <braceleft> <1> <3> <7> <braceright> : "⾈"  U2F88  # KANGXI RADICAL BOAT
+<Multi_key> <z> <braceleft> <1> <3> <8> <braceright> : "⾉"  U2F89  # KANGXI RADICAL STOPPING
+<Multi_key> <z> <braceleft> <1> <3> <9> <braceright> : "⾊"  U2F8A  # KANGXI RADICAL COLOR
+<Multi_key> <z> <braceleft> <1> <4> <0> <braceright> : "⾋"  U2F8B  # KANGXI RADICAL GRASS
+<Multi_key> <z> <braceleft> <1> <4> <1> <braceright> : "⾌"  U2F8C  # KANGXI RADICAL TIGER
+<Multi_key> <z> <braceleft> <1> <4> <2> <braceright> : "⾍"  U2F8D  # KANGXI RADICAL INSECT
+<Multi_key> <z> <braceleft> <1> <4> <3> <braceright> : "⾎"  U2F8E  # KANGXI RADICAL BLOOD
+<Multi_key> <z> <braceleft> <1> <4> <4> <braceright> : "⾏"  U2F8F  # KANGXI RADICAL WALK ENCLOSURE
+<Multi_key> <z> <braceleft> <1> <4> <5> <braceright> : "⾐"  U2F90  # KANGXI RADICAL CLOTHES
+<Multi_key> <z> <braceleft> <1> <4> <6> <braceright> : "⾑"  U2F91  # KANGXI RADICAL WEST
+<Multi_key> <z> <braceleft> <1> <4> <7> <braceright> : "⾒"  U2F92  # KANGXI RADICAL SEE
+<Multi_key> <z> <braceleft> <1> <4> <8> <braceright> : "⾓"  U2F93  # KANGXI RADICAL HORN
+<Multi_key> <z> <braceleft> <1> <4> <9> <braceright> : "⾔"  U2F94  # KANGXI RADICAL SPEECH
+<Multi_key> <z> <braceleft> <1> <5> <0> <braceright> : "⾕"  U2F95  # KANGXI RADICAL VALLEY
+<Multi_key> <z> <braceleft> <1> <5> <1> <braceright> : "⾖"  U2F96  # KANGXI RADICAL BEAN
+<Multi_key> <z> <braceleft> <1> <5> <2> <braceright> : "⾗"  U2F97  # KANGXI RADICAL PIG
+<Multi_key> <z> <braceleft> <1> <5> <3> <braceright> : "⾘"  U2F98  # KANGXI RADICAL BADGER
+<Multi_key> <z> <braceleft> <1> <5> <4> <braceright> : "⾙"  U2F99  # KANGXI RADICAL SHELL
+<Multi_key> <z> <braceleft> <1> <5> <5> <braceright> : "⾚"  U2F9A  # KANGXI RADICAL RED
+<Multi_key> <z> <braceleft> <1> <5> <6> <braceright> : "⾛"  U2F9B  # KANGXI RADICAL RUN
+<Multi_key> <z> <braceleft> <1> <5> <7> <braceright> : "⾜"  U2F9C  # KANGXI RADICAL FOOT
+<Multi_key> <z> <braceleft> <1> <5> <8> <braceright> : "⾝"  U2F9D  # KANGXI RADICAL BODY
+<Multi_key> <z> <braceleft> <1> <5> <9> <braceright> : "⾞"  U2F9E  # KANGXI RADICAL CART
+<Multi_key> <z> <braceleft> <1> <6> <0> <braceright> : "⾟"  U2F9F  # KANGXI RADICAL BITTER
+<Multi_key> <z> <braceleft> <1> <6> <1> <braceright> : "⾠"  U2FA0  # KANGXI RADICAL MORNING
+<Multi_key> <z> <braceleft> <1> <6> <2> <braceright> : "⾡"  U2FA1  # KANGXI RADICAL WALK
+<Multi_key> <z> <braceleft> <1> <6> <3> <braceright> : "⾢"  U2FA2  # KANGXI RADICAL CITY
+<Multi_key> <z> <braceleft> <1> <6> <4> <braceright> : "⾣"  U2FA3  # KANGXI RADICAL WINE
+<Multi_key> <z> <braceleft> <1> <6> <5> <braceright> : "⾤"  U2FA4  # KANGXI RADICAL DISTINGUISH
+<Multi_key> <z> <braceleft> <1> <6> <6> <braceright> : "⾥"  U2FA5  # KANGXI RADICAL VILLAGE
+<Multi_key> <z> <braceleft> <1> <6> <7> <braceright> : "⾦"  U2FA6  # KANGXI RADICAL GOLD
+<Multi_key> <z> <braceleft> <1> <6> <8> <braceright> : "⾧"  U2FA7  # KANGXI RADICAL LONG
+<Multi_key> <z> <braceleft> <1> <6> <9> <braceright> : "⾨"  U2FA8  # KANGXI RADICAL GATE
+<Multi_key> <z> <braceleft> <1> <7> <0> <braceright> : "⾩"  U2FA9  # KANGXI RADICAL MOUND
+<Multi_key> <z> <braceleft> <1> <7> <1> <braceright> : "⾪"  U2FAA  # KANGXI RADICAL SLAVE
+<Multi_key> <z> <braceleft> <1> <7> <2> <braceright> : "⾫"  U2FAB  # KANGXI RADICAL SHORT TAILED BIRD
+<Multi_key> <z> <braceleft> <1> <7> <3> <braceright> : "⾬"  U2FAC  # KANGXI RADICAL RAIN
+<Multi_key> <z> <braceleft> <1> <7> <4> <braceright> : "⾭"  U2FAD  # KANGXI RADICAL BLUE
+<Multi_key> <z> <braceleft> <1> <7> <5> <braceright> : "⾮"  U2FAE  # KANGXI RADICAL WRONG
+<Multi_key> <z> <braceleft> <1> <7> <6> <braceright> : "⾯"  U2FAF  # KANGXI RADICAL FACE
+<Multi_key> <z> <braceleft> <1> <7> <7> <braceright> : "⾰"  U2FB0  # KANGXI RADICAL LEATHER
+<Multi_key> <z> <braceleft> <1> <7> <8> <braceright> : "⾱"  U2FB1  # KANGXI RADICAL TANNED LEATHER
+<Multi_key> <z> <braceleft> <1> <7> <9> <braceright> : "⾲"  U2FB2  # KANGXI RADICAL LEEK
+<Multi_key> <z> <braceleft> <1> <8> <0> <braceright> : "⾳"  U2FB3  # KANGXI RADICAL SOUND
+<Multi_key> <z> <braceleft> <1> <8> <1> <braceright> : "⾴"  U2FB4  # KANGXI RADICAL LEAF
+<Multi_key> <z> <braceleft> <1> <8> <2> <braceright> : "⾵"  U2FB5  # KANGXI RADICAL WIND
+<Multi_key> <z> <braceleft> <1> <8> <3> <braceright> : "⾶"  U2FB6  # KANGXI RADICAL FLY
+<Multi_key> <z> <braceleft> <1> <8> <4> <braceright> : "⾷"  U2FB7  # KANGXI RADICAL EAT
+<Multi_key> <z> <braceleft> <1> <8> <5> <braceright> : "⾸"  U2FB8  # KANGXI RADICAL HEAD
+<Multi_key> <z> <braceleft> <1> <8> <6> <braceright> : "⾹"  U2FB9  # KANGXI RADICAL FRAGRANT
+<Multi_key> <z> <braceleft> <1> <8> <7> <braceright> : "⾺"  U2FBA  # KANGXI RADICAL HORSE
+<Multi_key> <z> <braceleft> <1> <8> <8> <braceright> : "⾻"  U2FBB  # KANGXI RADICAL BONE
+<Multi_key> <z> <braceleft> <1> <8> <9> <braceright> : "⾼"  U2FBC  # KANGXI RADICAL TALL
+<Multi_key> <z> <braceleft> <1> <9> <0> <braceright> : "⾽"  U2FBD  # KANGXI RADICAL HAIR
+<Multi_key> <z> <braceleft> <1> <9> <1> <braceright> : "⾾"  U2FBE  # KANGXI RADICAL FIGHT
+<Multi_key> <z> <braceleft> <1> <9> <2> <braceright> : "⾿"  U2FBF  # KANGXI RADICAL SACRIFICIAL WINE
+<Multi_key> <z> <braceleft> <1> <9> <3> <braceright> : "⿀"  U2FC0  # KANGXI RADICAL CAULDRON
+<Multi_key> <z> <braceleft> <1> <9> <4> <braceright> : "⿁"  U2FC1  # KANGXI RADICAL GHOST
+<Multi_key> <z> <braceleft> <1> <9> <5> <braceright> : "⿂"  U2FC2  # KANGXI RADICAL FISH
+<Multi_key> <z> <braceleft> <1> <9> <6> <braceright> : "⿃"  U2FC3  # KANGXI RADICAL BIRD
+<Multi_key> <z> <braceleft> <1> <9> <7> <braceright> : "⿄"  U2FC4  # KANGXI RADICAL SALT
+<Multi_key> <z> <braceleft> <1> <9> <8> <braceright> : "⿅"  U2FC5  # KANGXI RADICAL DEER
+<Multi_key> <z> <braceleft> <1> <9> <9> <braceright> : "⿆"  U2FC6  # KANGXI RADICAL WHEAT
+<Multi_key> <z> <braceleft> <2> <0> <0> <braceright> : "⿇"  U2FC7  # KANGXI RADICAL HEMP
+<Multi_key> <z> <braceleft> <2> <0> <1> <braceright> : "⿈"  U2FC8  # KANGXI RADICAL YELLOW
+<Multi_key> <z> <braceleft> <2> <0> <2> <braceright> : "⿉"  U2FC9  # KANGXI RADICAL MILLET
+<Multi_key> <z> <braceleft> <2> <0> <3> <braceright> : "⿊"  U2FCA  # KANGXI RADICAL BLACK
+<Multi_key> <z> <braceleft> <2> <0> <4> <braceright> : "⿋"  U2FCB  # KANGXI RADICAL EMBROIDERY
+<Multi_key> <z> <braceleft> <2> <0> <5> <braceright> : "⿌"  U2FCC  # KANGXI RADICAL FROG
+<Multi_key> <z> <braceleft> <2> <0> <6> <braceright> : "⿍"  U2FCD  # KANGXI RADICAL TRIPOD
+<Multi_key> <z> <braceleft> <2> <0> <7> <braceright> : "⿎"  U2FCE  # KANGXI RADICAL DRUM
+<Multi_key> <z> <braceleft> <2> <0> <8> <braceright> : "⿏"  U2FCF  # KANGXI RADICAL RAT
+<Multi_key> <z> <braceleft> <2> <0> <9> <braceright> : "⿐"  U2FD0  # KANGXI RADICAL NOSE
+<Multi_key> <z> <braceleft> <2> <1> <0> <braceright> : "⿑"  U2FD1  # KANGXI RADICAL EVEN
+<Multi_key> <z> <braceleft> <2> <1> <1> <braceright> : "⿒"  U2FD2  # KANGXI RADICAL TOOTH
+<Multi_key> <z> <braceleft> <2> <1> <2> <braceright> : "⿓"  U2FD3  # KANGXI RADICAL DRAGON
+<Multi_key> <z> <braceleft> <2> <1> <3> <braceright> : "⿔"  U2FD4  # KANGXI RADICAL TURTLE
+<Multi_key> <z> <braceleft> <2> <1> <4> <braceright> : "⿕"  U2FD5  # KANGXI RADICAL FLUTE
+
+<Multi_key> <z> <braceleft> <3> <A> <braceright> : "⺀"  U2E80  # CJK RADICAL REPEAT
+<Multi_key> <z> <braceleft> <2> <7> <A> <braceright> : "⺁"  U2E81  # CJK RADICAL CLIFF
+<Multi_key> <z> <braceleft> <5> <A> <braceright> : "⺂"  U2E82  # CJK RADICAL SECOND ONE
+<Multi_key> <z> <braceleft> <5> <B> <braceright> : "⺃"  U2E83  # CJK RADICAL SECOND TWO
+<Multi_key> <z> <braceleft> <5> <C> <braceright> : "⺄"  U2E84  # CJK RADICAL SECOND THREE
+<Multi_key> <z> <braceleft> <9> <less> <braceright> : "⺅"  U2E85  # CJK RADICAL PERSON
+<Multi_key> <z> <braceleft> <1> <3> <A> <braceright> : "⺆"  U2E86  # CJK RADICAL BOX
+<Multi_key> <z> <braceleft> <1> <6> <A> <braceright> : "⺇"  U2E87  # CJK RADICAL TABLE
+<Multi_key> <z> <braceleft> <1> <8> <asciicircum> <braceright> : "⺈"  U2E88  # CJK RADICAL KNIFE ONE
+<Multi_key> <z> <braceleft> <1> <8> <greater> <braceright> : "⺉"  U2E89  # CJK RADICAL KNIFE TWO
+<Multi_key> <z> <braceleft> <2> <5> <asciicircum> <braceright> : "⺊"  U2E8A  # CJK RADICAL DIVINATION
+<Multi_key> <z> <braceleft> <2> <6> <underscore> <braceright> : "⺋"  U2E8B  # CJK RADICAL SEAL
+<Multi_key> <z> <braceleft> <4> <2> <asciicircum> <braceright> : "⺌"  U2E8C  # CJK RADICAL SMALL ONE
+<Multi_key> <z> <braceleft> <4> <2> <asciicircum> <A> <braceright> : "⺍"  U2E8D  # CJK RADICAL SMALL TWO
+<Multi_key> <z> <braceleft> <4> <3> <A> <braceright> : "⺎"  U2E8E  # CJK RADICAL LAME ONE
+<Multi_key> <z> <braceleft> <4> <3> <B> <braceright> : "⺏"  U2E8F  # CJK RADICAL LAME TWO
+<Multi_key> <z> <braceleft> <4> <3> <C> <braceright> : "⺐"  U2E90  # CJK RADICAL LAME THREE
+<Multi_key> <z> <braceleft> <4> <3> <D> <braceright> : "⺑"  U2E91  # CJK RADICAL LAME FOUR
+<Multi_key> <z> <braceleft> <4> <9> <A> <braceright> : "⺒"  U2E92  # CJK RADICAL SNAKE
+<Multi_key> <z> <braceleft> <5> <2> <A> <braceright> : "⺓"  U2E93  # CJK RADICAL THREAD
+<Multi_key> <z> <braceleft> <5> <8> <A> <braceright> : "⺔"  U2E94  # CJK RADICAL SNOUT ONE
+<Multi_key> <z> <braceleft> <5> <8> <B> <braceright> : "⺕"  U2E95  # CJK RADICAL SNOUT TWO
+<Multi_key> <z> <braceleft> <6> <1> <less> <braceright> : "⺖"  U2E96  # CJK RADICAL HEART ONE
+<Multi_key> <z> <braceleft> <6> <1> <underscore> <braceright> : "⺗"  U2E97  # CJK RADICAL HEART TWO
+<Multi_key> <z> <braceleft> <6> <4> <less> <braceright> : "⺘"  U2E98  # CJK RADICAL HAND
+<Multi_key> <z> <braceleft> <6> <6> <greater> <braceright> : "⺙"  U2E99  # CJK RADICAL RAP
+<Multi_key> <z> <braceleft> <7> <1> <A> <braceright> : "⺛"  U2E9B  # CJK RADICAL CHOKE
+<Multi_key> <z> <braceleft> <7> <2> <A> <braceright> : "⺜"  U2E9C  # CJK RADICAL SUN
+<Multi_key> <z> <braceleft> <7> <4> <A> <braceright> : "⺝"  U2E9D  # CJK RADICAL MOON
+<Multi_key> <z> <braceleft> <7> <8> <A> <braceright> : "⺞"  U2E9E  # CJK RADICAL DEATH
+<Multi_key> <z> <braceleft> <8> <0> <A> <braceright> : "⺟"  U2E9F  # CJK RADICAL MOTHER
+<Multi_key> <z> <braceleft> <8> <3> <A> <braceright> : "⺠"  U2EA0  # CJK RADICAL CIVILIAN
+<Multi_key> <z> <braceleft> <8> <5> <less> <braceright> : "⺡"  U2EA1  # CJK RADICAL WATER ONE
+<Multi_key> <z> <braceleft> <8> <5> <underscore> <braceright> : "⺢"  U2EA2  # CJK RADICAL WATER TWO
+<Multi_key> <z> <braceleft> <8> <6> <underscore> <braceright> : "⺣"  U2EA3  # CJK RADICAL FIRE
+<Multi_key> <z> <braceleft> <8> <7> <asciicircum> <braceright> : "⺤"  U2EA4  # CJK RADICAL PAW ONE
+<Multi_key> <z> <braceleft> <8> <7> <asciicircum> <A> <braceright> : "⺥"  U2EA5  # CJK RADICAL PAW TWO
+<Multi_key> <z> <braceleft> <9> <0> <A> <braceright> : "⺦"  U2EA6  # CJK RADICAL SIMPLIFIED HALF TREE TRUNK
+<Multi_key> <z> <braceleft> <9> <3> <A> <braceright> : "⺧"  U2EA7  # CJK RADICAL COW
+<Multi_key> <z> <braceleft> <9> <4> <less> <braceright> : "⺨"  U2EA8  # CJK RADICAL DOG
+<Multi_key> <z> <braceleft> <9> <6> <less> <braceright> : "⺩"  U2EA9  # CJK RADICAL JADE
+<Multi_key> <z> <braceleft> <1> <0> <3> <less> <braceright> : "⺪"  U2EAA  # CJK RADICAL BOLT OF CLOTH
+<Multi_key> <z> <braceleft> <1> <0> <9> <asciicircum> <braceright> : "⺫"  U2EAB  # CJK RADICAL EYE
+<Multi_key> <z> <braceleft> <1> <2> <2> <asciicircum> <braceright> : "⺫"  U2EAB  # CJK RADICAL EYE
+<Multi_key> <z> <braceleft> <1> <1> <3> <A> <braceright> : "⺬"  U2EAC  # CJK RADICAL SPIRIT ONE
+<Multi_key> <z> <braceleft> <1> <1> <3> <B> <braceright> : "⺭"  U2EAD  # CJK RADICAL SPIRIT TWO
+<Multi_key> <z> <braceleft> <1> <1> <8> <A> <braceright> : "⺮"  U2EAE  # CJK RADICAL BAMBOO
+<Multi_key> <z> <braceleft> <1> <2> <0> <less> <braceright> : "⺯"  U2EAF  # CJK RADICAL SILK
+<Multi_key> <z> <braceleft> <1> <2> <0> <less> <A> <braceright> : "⺰"  U2EB0  # CJK RADICAL C-SIMPLIFIED SILK
+<Multi_key> <z> <braceleft> <1> <2> <2> <A> <braceright> : "⺱"  U2EB1  # CJK RADICAL NET ONE
+<Multi_key> <z> <braceleft> <1> <0> <9> <A> <braceright> : "⺲"  U2EB2  # CJK RADICAL NET TWO
+<Multi_key> <z> <braceleft> <1> <2> <2> <B> <braceright> : "⺲"  U2EB2  # CJK RADICAL NET TWO
+<Multi_key> <z> <braceleft> <1> <2> <2> <C> <braceright> : "⺳"  U2EB3  # CJK RADICAL NET THREE
+<Multi_key> <z> <braceleft> <1> <2> <2> <D> <braceright> : "⺴"  U2EB4  # CJK RADICAL NET FOUR
+<Multi_key> <z> <braceleft> <1> <2> <2> <E> <braceright> : "⺵"  U2EB5  # CJK RADICAL MESH
+<Multi_key> <z> <braceleft> <1> <2> <3> <less> <braceright> : "⺶"  U2EB6  # CJK RADICAL SHEEP
+<Multi_key> <z> <braceleft> <1> <2> <3> <asciicircum> <braceright> : "⺷"  U2EB7  # CJK RADICAL RAM
+<Multi_key> <z> <braceleft> <1> <2> <3> <A> <braceright> : "⺸"  U2EB8  # CJK RADICAL EWE
+<Multi_key> <z> <braceleft> <1> <2> <5> <A> <braceright> : "⺹"  U2EB9  # CJK RADICAL OLD
+<Multi_key> <z> <braceleft> <1> <2> <9> <A> <braceright> : "⺺"  U2EBA  # CJK RADICAL BRUSH ONE
+<Multi_key> <z> <braceleft> <1> <2> <9> <B> <braceright> : "⺻"  U2EBB  # CJK RADICAL BRUSH TWO
+<Multi_key> <z> <braceleft> <1> <3> <0> <A> <braceright> : "⺼"  U2EBC  # CJK RADICAL MEAT
+<Multi_key> <z> <braceleft> <1> <3> <4> <A> <braceright> : "⺽"  U2EBD  # CJK RADICAL MORTAR
+<Multi_key> <z> <braceleft> <1> <4> <0> <A> <braceright> : "⺾"  U2EBE  # CJK RADICAL GRASS ONE
+<Multi_key> <z> <braceleft> <1> <4> <0> <B> <braceright> : "⺿"  U2EBF  # CJK RADICAL GRASS TWO
+<Multi_key> <z> <braceleft> <1> <4> <0> <C> <braceright> : "⻀"  U2EC0  # CJK RADICAL GRASS THREE
+<Multi_key> <z> <braceleft> <1> <4> <1> <A> <braceright> : "⻁"  U2EC1  # CJK RADICAL TIGER
+<Multi_key> <z> <braceleft> <1> <4> <5> <less> <braceright> : "⻂"  U2EC2  # CJK RADICAL CLOTHES
+<Multi_key> <z> <braceleft> <1> <4> <6> <asciicircum> <braceright> : "⻃"  U2EC3  # CJK RADICAL WEST ONE
+<Multi_key> <z> <braceleft> <1> <4> <6> <less> <braceright> : "⻄"  U2EC4  # CJK RADICAL WEST TWO
+<Multi_key> <z> <braceleft> <1> <4> <7> <A> <braceright> : "⻅"  U2EC5  # CJK RADICAL C-SIMPLIFIED SEE
+<Multi_key> <z> <braceleft> <1> <4> <8> <A> <braceright> : "⻆"  U2EC6  # CJK RADICAL SIMPLIFIED HORN
+<Multi_key> <z> <braceleft> <1> <4> <8> <B> <braceright> : "⻇"  U2EC7  # CJK RADICAL HORN
+<Multi_key> <z> <braceleft> <1> <4> <9> <A> <braceright> : "⻈"  U2EC8  # CJK RADICAL C-SIMPLIFIED SPEECH
+<Multi_key> <z> <braceleft> <1> <5> <4> <A> <braceright> : "⻉"  U2EC9  # CJK RADICAL C-SIMPLIFIED SHELL
+<Multi_key> <z> <braceleft> <1> <5> <7> <less> <braceright> : "⻊"  U2ECA  # CJK RADICAL FOOT
+<Multi_key> <z> <braceleft> <1> <5> <9> <A> <braceright> : "⻋"  U2ECB  # CJK RADICAL C-SIMPLIFIED CART
+<Multi_key> <z> <braceleft> <1> <6> <2> <A> <braceright> : "⻌"  U2ECC  # CJK RADICAL SIMPLIFIED WALK
+<Multi_key> <z> <braceleft> <1> <6> <2> <B> <braceright> : "⻍"  U2ECD  # CJK RADICAL WALK ONE
+<Multi_key> <z> <braceleft> <1> <6> <2> <C> <braceright> : "⻎"  U2ECE  # CJK RADICAL WALK TWO
+<Multi_key> <z> <braceleft> <1> <6> <3> <greater> <braceright> : "⻏"  U2ECF  # CJK RADICAL CITY
+<Multi_key> <z> <braceleft> <1> <6> <7> <A> <braceright> : "⻐"  U2ED0  # CJK RADICAL C-SIMPLIFIED GOLD
+<Multi_key> <z> <braceleft> <1> <6> <8> <A> <braceright> : "⻑"  U2ED1  # CJK RADICAL LONG ONE
+<Multi_key> <z> <braceleft> <1> <6> <8> <less> <braceright> : "⻒"  U2ED2  # CJK RADICAL LONG TWO
+<Multi_key> <z> <braceleft> <1> <6> <8> <B> <braceright> : "⻓"  U2ED3  # CJK RADICAL C-SIMPLIFIED LONG
+<Multi_key> <z> <braceleft> <1> <6> <9> <A> <braceright> : "⻔"  U2ED4  # CJK RADICAL C-SIMPLIFIED GATE
+<Multi_key> <z> <braceleft> <1> <7> <0> <A> <braceright> : "⻕"  U2ED5  # CJK RADICAL MOUND ONE
+<Multi_key> <z> <braceleft> <1> <7> <0> <less> <braceright> : "⻖"  U2ED6  # CJK RADICAL MOUND TWO
+<Multi_key> <z> <braceleft> <1> <7> <3> <A> <braceright> : "⻗"  U2ED7  # CJK RADICAL RAIN
+<Multi_key> <z> <braceleft> <1> <7> <4> <A> <braceright> : "⻘"  U2ED8  # CJK RADICAL BLUE
+<Multi_key> <z> <braceleft> <1> <7> <8> <A> <braceright> : "⻙"  U2ED9  # CJK RADICAL C-SIMPLIFIED TANNED LEATHER
+<Multi_key> <z> <braceleft> <1> <8> <1> <A> <braceright> : "⻚"  U2EDA  # CJK RADICAL C-SIMPLIFIED LEAF
+<Multi_key> <z> <braceleft> <1> <8> <2> <A> <braceright> : "⻛"  U2EDB  # CJK RADICAL C-SIMPLIFIED WIND
+<Multi_key> <z> <braceleft> <1> <8> <3> <A> <braceright> : "⻜"  U2EDC  # CJK RADICAL C-SIMPLIFIED FLY
+<Multi_key> <z> <braceleft> <1> <8> <4> <underscore> <braceright> : "⻝"  U2EDD  # CJK RADICAL EAT ONE
+<Multi_key> <z> <braceleft> <1> <8> <4> <less> <braceright> : "⻞"  U2EDE  # CJK RADICAL EAT TWO
+<Multi_key> <z> <braceleft> <1> <8> <4> <less> <A> <braceright> : "⻟"  U2EDF  # CJK RADICAL EAT THREE
+<Multi_key> <z> <braceleft> <1> <8> <4> <less> <B> <braceright> : "⻠"  U2EE0  # CJK RADICAL C-SIMPLIFIED EAT
+<Multi_key> <z> <braceleft> <1> <8> <5> <A> <braceright> : "⻡"  U2EE1  # CJK RADICAL HEAD
+<Multi_key> <z> <braceleft> <1> <8> <7> <A> <braceright> : "⻢"  U2EE2  # CJK RADICAL C-SIMPLIFIED HORSE
+<Multi_key> <z> <braceleft> <1> <8> <8> <A> <braceright> : "⻣"  U2EE3  # CJK RADICAL BONE
+<Multi_key> <z> <braceleft> <1> <9> <4> <A> <braceright> : "⻤"  U2EE4  # CJK RADICAL GHOST
+<Multi_key> <z> <braceleft> <1> <9> <5> <A> <braceright> : "⻥"  U2EE5  # CJK RADICAL C-SIMPLIFIED FISH
+<Multi_key> <z> <braceleft> <1> <9> <6> <A> <braceright> : "⻦"  U2EE6  # CJK RADICAL C-SIMPLIFIED BIRD
+<Multi_key> <z> <braceleft> <1> <9> <7> <A> <braceright> : "⻧"  U2EE7  # CJK RADICAL C-SIMPLIFIED SALT
+<Multi_key> <z> <braceleft> <1> <9> <9> <A> <braceright> : "⻨"  U2EE8  # CJK RADICAL SIMPLIFIED WHEAT
+<Multi_key> <z> <braceleft> <2> <0> <1> <A> <braceright> : "⻩"  U2EE9  # CJK RADICAL SIMPLIFIED YELLOW
+<Multi_key> <z> <braceleft> <2> <0> <5> <A> <braceright> : "⻪"  U2EEA  # CJK RADICAL C-SIMPLIFIED FROG
+<Multi_key> <z> <braceleft> <2> <1> <0> <A> <braceright> : "⻫"  U2EEB  # CJK RADICAL J-SIMPLIFIED EVEN
+<Multi_key> <z> <braceleft> <2> <1> <0> <B> <braceright> : "⻬"  U2EEC  # CJK RADICAL C-SIMPLIFIED EVEN
+<Multi_key> <z> <braceleft> <2> <1> <1> <A> <braceright> : "⻭"  U2EED  # CJK RADICAL J-SIMPLIFIED TOOTH
+<Multi_key> <z> <braceleft> <2> <1> <1> <B> <braceright> : "⻮"  U2EEE  # CJK RADICAL C-SIMPLIFIED TOOTH
+<Multi_key> <z> <braceleft> <2> <1> <2> <A> <braceright> : "⻯"  U2EEF  # CJK RADICAL J-SIMPLIFIED DRAGON
+<Multi_key> <z> <braceleft> <2> <1> <2> <B> <braceright> : "⻰"  U2EF0  # CJK RADICAL C-SIMPLIFIED DRAGON
+<Multi_key> <z> <braceleft> <2> <1> <3> <A> <braceright> : "⻱"  U2EF1  # CJK RADICAL TURTLE
+<Multi_key> <z> <braceleft> <2> <1> <3> <B> <braceright> : "⻲"  U2EF2  # CJK RADICAL J-SIMPLIFIED TURTLE
+<Multi_key> <z> <braceleft> <2> <1> <3> <C> <braceright> : "⻳"  U2EF3  # CJK RADICAL C-SIMPLIFIED TURTLE
+
+# ideographic description characters
+
+<Multi_key> <z> <braceleft> <greater> <braceright> : "⿰"  U2FF0  # IDEOGRAPHIC DESCRIPTION CHARACTER LEFT TO RIGHT
+<Multi_key> <z> <braceleft> <v> <braceright> : "⿱"  U2FF1  # IDEOGRAPHIC DESCRIPTION CHARACTER ABOVE TO BELOW
+<Multi_key> <z> <braceleft> <greater> <greater> <braceright> : "⿲"  U2FF2  # IDEOGRAPHIC DESCRIPTION CHARACTER LEFT TO MIDDLE AND RIGHT
+<Multi_key> <z> <braceleft> <v> <v> <braceright> : "⿳"  U2FF3  # IDEOGRAPHIC DESCRIPTION CHARACTER ABOVE TO MIDDLE AND BELOW
+<Multi_key> <z> <braceleft> <0> <braceright> : "⿴"  U2FF4  # IDEOGRAPHIC DESCRIPTION CHARACTER FULL SURROUND
+<Multi_key> <z> <braceleft> <N> <braceright> : "⿵"  U2FF5  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM ABOVE
+<Multi_key> <z> <braceleft> <S> <braceright> : "⿶"  U2FF6  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM BELOW
+<Multi_key> <z> <braceleft> <W> <braceright> : "⿷"  U2FF7  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM LEFT
+<Multi_key> <z> <braceleft> <N> <W> <braceright> : "⿸"  U2FF8  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM UPPER LEFT
+<Multi_key> <z> <braceleft> <N> <E> <braceright> : "⿹"  U2FF9  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM UPPER RIGHT
+<Multi_key> <z> <braceleft> <S> <W> <braceright> : "⿺"  U2FFA  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM LOWER LEFT
+<Multi_key> <z> <braceleft> <bracketleft> <bracketright> <braceright> : "⿻"  U2FFB  # IDEOGRAPHIC DESCRIPTION CHARACTER OVERLAID
+<Multi_key> <z> <braceleft> <E> <braceright> : "⿼"  U2FFC  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM RIGHT
+<Multi_key> <z> <braceleft> <S> <E> <braceright> : "⿽"  U2FFD  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM LOWER RIGHT
+<Multi_key> <z> <braceleft> <less> <greater> <braceright> : "⿾"  U2FFE  # IDEOGRAPHIC DESCRIPTION CHARACTER HORIZONTAL REFLECTION
+<Multi_key> <z> <braceleft> <less> <parenright> <braceright> : "⿿"  U2FFF  # IDEOGRAPHIC DESCRIPTION CHARACTER ROTATION
+<Multi_key> <z> <braceleft> <minus> <braceright> : "㇯"  U31EF  # IDEOGRAPHIC DESCRIPTION CHARACTER SUBTRACTION
 
 # (f = Fraser/Lisu)
 
