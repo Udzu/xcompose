@@ -924,6 +924,13 @@ include "%L"
 <Multi_key> <equal> <L>             : "Ⱡ"  U2C60  # LATIN CAPITAL LETTER L WITH DOUBLE BAR (conflicts with ₤, use L=)
 <Multi_key> <equal> <l>             : "ⱡ"  U2C61  # LATIN SMALL LETTER L WITH DOUBLE BAR
 
+<Multi_key> <minus> <bar> <D>       : "Ꟈ"  UA7C7  # LATIN CAPITAL LETTER D WITH SHORT STROKE OVERLAY
+<Multi_key> <minus> <bar> <d>       : "ꟈ"  UA7C8  # LATIN SMALL LETTER D WITH SHORT STROKE OVERLAY
+<Multi_key> <minus> <bar> <S>       : "Ꟊ"  UA7C9  # LATIN CAPITAL LETTER S WITH SHORT STROKE OVERLAY
+<Multi_key> <minus> <bar> <s>       : "ꟊ"  UA7CA  # LATIN SMALL LETTER S WITH SHORT STROKE OVERLAY
+<Multi_key> <minus> <minus> <O>     : "Ꝋ"  UA74A  # LATIN CAPITAL LETTER O WITH LONG STROKE OVERLAY
+<Multi_key> <minus> <minus> <Multi_key> <o> : "ꝋ"  UA74B  # LATIN SMALL LETTER O WITH LONG STROKE OVERLAY (not ideal, but --o=⊸ is taken)
+
 <Multi_key> <period> <j>            : "ȷ"  U0237  # LATIN SMALL LETTER DOTLESS J
 <Multi_key> <period> <L>            : "Ŀ"  U013F  # LATIN CAPITAL LETTER L WITH MIDDLE DOT
 <Multi_key> <period> <l>            : "ŀ"  U0140  # LATIN SMALL LETTER L WITH MIDDLE DOT
@@ -1546,7 +1553,7 @@ include "%L"
 ##############################
 
 # Convention: % + [font] + [weight] + character
-#   font: ∅ = normal, s = sans-serif, c = calligraphy, f = fraktur, m = monospace, d = double-struck, O = outlined
+#   font: ∅ = normal, s = sans-serif, c = calligraphy, f = fraktur, i = insular, m = monospace, d = double-struck, O = outlined
 #   weight: ∅ = normal, * = bold, / = italic, */ = bold italic
 
 <Multi_key> <percent> <asterisk> <A> : "𝐀" U1D400    # MATHEMATICAL BOLD CAPITAL A
@@ -2335,6 +2342,25 @@ include "%L"
 <Multi_key> <percent> <O> <7> : "𜳷"  U1CCF7  # OUTLINED DIGIT SEVEN
 <Multi_key> <percent> <O> <8> : "𜳸"  U1CCF8  # OUTLINED DIGIT EIGHT
 <Multi_key> <percent> <O> <9> : "𜳹"  U1CCF9  # OUTLINED DIGIT NINE
+
+# (ditto)
+
+<Multi_key> <percent> <i> <D> : "Ꝺ"  UA779  # LATIN CAPITAL LETTER INSULAR D
+<Multi_key> <percent> <i> <d> : "ꝺ"  UA77A  # LATIN SMALL LETTER INSULAR D
+<Multi_key> <percent> <i> <F> : "Ꝼ"  UA77B  # LATIN CAPITAL LETTER INSULAR F
+<Multi_key> <percent> <i> <f> : "ꝼ"  UA77C  # LATIN SMALL LETTER INSULAR F
+<Multi_key> <percent> <i> <G> : "Ᵹ"  UA77D  # LATIN CAPITAL LETTER INSULAR G
+<Multi_key> <percent> <i> <g> : "ᵹ"  U1D79  # LATIN SMALL LETTER INSULAR G
+<Multi_key> <percent> <i> <R> : "Ꞃ"  UA782  # LATIN CAPITAL LETTER INSULAR R
+<Multi_key> <percent> <i> <r> : "ꞃ"  UA783  # LATIN SMALL LETTER INSULAR R
+<Multi_key> <percent> <i> <S> : "Ꞅ"  UA784  # LATIN CAPITAL LETTER INSULAR S
+<Multi_key> <percent> <i> <s> : "ꞅ"  UA785  # LATIN SMALL LETTER INSULAR S
+<Multi_key> <percent> <i> <T> : "Ꞇ"  UA786  # LATIN CAPITAL LETTER INSULAR T
+<Multi_key> <percent> <i> <t> : "ꞇ"  UA787  # LATIN SMALL LETTER INSULAR T
+<Multi_key> <percent> <i> <Multi_key> <G> <v> : "Ꝿ"  UA77E  # LATIN CAPITAL LETTER TURNED INSULAR G
+<Multi_key> <percent> <i> <Multi_key> <g> <v> : "ꝿ"  UA77F  # LATIN SMALL LETTER TURNED INSULAR G
+<Multi_key> <percent> <i> <Multi_key> <G> <parenright> : "Ꟑ"  UA7D0  # LATIN CAPITAL LETTER CLOSED INSULAR G
+<Multi_key> <percent> <i> <Multi_key> <g> <parenright> : "ꟑ"  UA7D1  # LATIN SMALL LETTER CLOSED INSULAR G
 
 ##########################
 # Enclosed alphanumerics #
