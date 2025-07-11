@@ -959,6 +959,7 @@ include "%L"
 <Multi_key> <slash> <T>             : "Ⱦ"  U023E  # LATIN CAPITAL LETTER T WITH DIAGONAL STROKE (conflicts with Ŧ, use -T)
 <Multi_key> <slash> <t>             : "ⱦ"  U2C66  # LATIN SMALL LETTER T WITH DIAGONAL STROKE (conflicts with ŧ, use -t)
 <Multi_key> <slash> <U>             : "Ꞹ"  UA7B8  # LATIN CAPITAL LETTER U WITH STROKE
+<Multi_key> <slash> <Multi_key> <u> : "ꞹ"  UA7B9  # LATIN SMALL LETTER U WITH STROKE (not ideal, but /u=µ is taken)
 <Multi_key> <slash> <V>             : "Ꝟ"  UA75E  # LATIN CAPITAL LETTER V WITH DIAGONAL STROKE
 <Multi_key> <slash> <v>             : "ꝟ"  UA75F  # LATIN SMALL LETTER V WITH DIAGONAL STROKE (conflicts with √, use v/)
 <Multi_key> <slash> <Multi_key> <T> <H> : "ꝥ"  UA765  # LATIN SMALL LETTER THORN WITH STROKE
@@ -999,20 +1000,42 @@ include "%L"
 <Multi_key> <Z> <comma> : "Ȥ"  U0224  # LATIN CAPITAL LETTER Z WITH HOOK
 <Multi_key> <z> <comma> : "ȥ"  U0225  # LATIN SMALL LETTER Z WITH HOOK
 
+<Multi_key> <a> <l> <space> : "ᶏ"  U1D8F  # LATIN SMALL LETTER A WITH RETROFLEX HOOK
+<Multi_key> <c> <l> <space> : "𝼝"  U1DF1D  # LATIN SMALL LETTER C WITH RETROFLEX HOOK (conflicts with ľ, use vl)
+<Multi_key> <e> <l> <space> : "ᶒ"  U1D92  # LATIN SMALL LETTER E WITH RETROFLEX HOOK
+<Multi_key> <i> <l> <space> : "ᶖ"  U1D96  # LATIN SMALL LETTER I WITH RETROFLEX HOOK
+<Multi_key> <u> <l>         : "ᶙ"  U1D99  # LATIN SMALL LETTER U WITH RETROFLEX HOOK
+<Multi_key> <o> <l> <space> : "𝼛"  U1DF1B  # LATIN SMALL LETTER O WITH RETROFLEX HOOK
+
 <Multi_key> <S> <underscore> <comma> : "Ș"  U0218  # LATIN CAPITAL LETTER S WITH COMMA BELOW
 <Multi_key> <s> <underscore> <comma> : "ș"  U0219  # LATIN SMALL LETTER S WITH COMMA BELOW
 <Multi_key> <T> <underscore> <comma> : "Ț"  U021A  # LATIN CAPITAL LETTER T WITH COMMA BELOW
 <Multi_key> <t> <underscore> <comma> : "ț"  U021B  # LATIN SMALL LETTER T WITH COMMA BELOW
 
+<Multi_key> <semicolon> <b> : "ᶀ"  U1D80  # LATIN SMALL LETTER B WITH PALATAL HOOK
 <Multi_key> <semicolon> <C> : "Ꞔ"  UA7C4  # LATIN CAPITAL LETTER C WITH PALATAL HOOK
 <Multi_key> <semicolon> <c> : "ꞔ"  UA794  # LATIN SMALL LETTER C WITH PALATAL HOOK
+<Multi_key> <semicolon> <d> : "ᶁ"  U1D81  # LATIN SMALL LETTER D WITH PALATAL HOOK
+<Multi_key> <semicolon> <f> : "ᶂ"  U1D82  # LATIN SMALL LETTER F WITH PALATAL HOOK
+<Multi_key> <semicolon> <g> : "ᶃ"  U1D83  # LATIN SMALL LETTER G WITH PALATAL HOOK
 <Multi_key> <semicolon> <h> : "ꞕ"  UA795  # LATIN SMALL LETTER H WITH PALATAL HOOK
+<Multi_key> <semicolon> <k> : "ᶄ"  U1D84  # LATIN SMALL LETTER K WITH PALATAL HOOK
+<Multi_key> <semicolon> <l> : "ᶅ"  U1D85  # LATIN SMALL LETTER L WITH PALATAL HOOK
+<Multi_key> <semicolon> <m> : "ᶆ"  U1D86  # LATIN SMALL LETTER M WITH PALATAL HOOK
+<Multi_key> <semicolon> <n> : "ᶇ"  U1D87  # LATIN SMALL LETTER N WITH PALATAL HOOK
+<Multi_key> <semicolon> <p> : "ᶈ"  U1D88  # LATIN SMALL LETTER P WITH PALATAL HOOK
+<Multi_key> <semicolon> <r> : "ᶉ"  U1D89  # LATIN SMALL LETTER R WITH PALATAL HOOK
+<Multi_key> <semicolon> <s> : "ᶊ"  U1D8A  # LATIN SMALL LETTER S WITH PALATAL HOOK (conflicts with ș, use s_,)
 <Multi_key> <semicolon> <t> : "ƫ"  U01AB  # LATIN SMALL LETTER T WITH PALATAL HOOK (conflicts with ț, use t_,)
+<Multi_key> <semicolon> <v> : "ᶌ"  U1D8C  # LATIN SMALL LETTER V WITH PALATAL HOOK
+<Multi_key> <semicolon> <x> : "ᶍ"  U1D8D  # LATIN SMALL LETTER X WITH PALATAL HOOK
+<Multi_key> <semicolon> <z> : "ᶎ"  U1D8E  # LATIN SMALL LETTER Z WITH PALATAL HOOK
 <Multi_key> <semicolon> <Z> : "Ᶎ"  UA7C6  # LATIN CAPITAL LETTER Z WITH PALATAL HOOK
 <Multi_key> <semicolon> <Multi_key> <l> <h> : "𝼓"  U1DF13  # LATIN SMALL LETTER L WITH BELT AND PALATAL HOOK
 <Multi_key> <semicolon> <Multi_key> <n> <g> : "𝼔"  U1DF14  # LATIN SMALL LETTER ENG WITH PALATAL HOOK
 <Multi_key> <semicolon> <Multi_key> <r> <d> : "𝼖"  U1DF16  # LATIN SMALL LETTER R WITH FISHHOOK AND PALATAL HOOK
 <Multi_key> <semicolon> <Multi_key> <r> <v> : "𝼕"  U1DF15  # LATIN SMALL LETTER TURNED R WITH PALATAL HOOK
+<Multi_key> <semicolon> <Multi_key> <s> <h> : "ᶋ"  U1D8B  # LATIN SMALL LETTER ESH WITH PALATAL HOOK
 <Multi_key> <semicolon> <Multi_key> <z> <h> : "𝼘"  U1DF18  # LATIN SMALL LETTER EZH WITH PALATAL HOOK
 
 <Multi_key> <asciitilde> <S> : "Ȿ"  U2C7E  # LATIN CAPITAL LETTER S WITH SWASH TAIL LATIN CAPITAL LETTER S WITH SWASH TAIL
@@ -1285,6 +1308,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <j> <h> : "ᶨ"  U1DA8  # MODIFIER LETTER SMALL J WITH CROSSED-TAIL
 <Multi_key> <asciicircum> <underscore> <Multi_key> <j> <s> <minus> : "𐞘"  U10798  # MODIFIER LETTER SMALL DOTLESS J WITH STROKE AND HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <l> <asciitilde> : "ꭞ"  UAB5E  # MODIFIER LETTER SMALL L WITH MIDDLE TILDE
+<Multi_key> <asciicircum> <underscore> <Multi_key> <semicolon> <l> : "ᶪ"  U1DAA  # MODIFIER LETTER SMALL L WITH PALATAL HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <L> <h> : "𐞜"  U1079C  # MODIFIER LETTER SMALL CAPITAL L WITH BELT
 <Multi_key> <asciicircum> <underscore> <Multi_key> <l> <h> : "𐞛"  U1079B  # MODIFIER LETTER SMALL L WITH BELT
 <Multi_key> <asciicircum> <underscore> <Multi_key> <l> <l> <space> : "ᶩ"  U1DA9  # MODIFIER LETTER SMALL L WITH RETROFLEX HOOK
