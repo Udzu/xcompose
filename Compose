@@ -5010,6 +5010,14 @@ include "%L"
 <Multi_key> <a> <A> <exclam> <v> <s> : "𐬴"  U10B34  # AVESTAN LETTER SSHE (ṣ̌)
 <Multi_key> <a> <A> <h> : "𐬵"  U10B35  # AVESTAN LETTER HE
 
+<Multi_key> <a> <A> <quotedbl> : "𐬹"  U10B39  # AVESTAN ABBREVIATION MARK
+<Multi_key> <a> <A> <colon> : "𐬺"  U10B3A  # TINY TWO DOTS OVER ONE DOT PUNCTUATION
+<Multi_key> <a> <A> <semicolon> <space> : "𐬻"  U10B3B  # SMALL TWO DOTS OVER ONE DOT PUNCTUATION
+<Multi_key> <a> <A> <period> <space> : "𐬼"  U10B3C  # LARGE TWO DOTS OVER ONE DOT PUNCTUATION
+<Multi_key> <a> <A> <Multi_key> <S> <O> : "𐬾"  U10B3E  # LARGE TWO RINGS OVER ONE RING PUNCTUATION
+<Multi_key> <a> <A> <v> <period> : "𐬽"  U10B3D  # LARGE ONE DOT OVER TWO DOTS PUNCTUATION
+<Multi_key> <a> <A> <v> <Multi_key> <S> <O> : "𐬿"  U10B3F  # LARGE ONE RING OVER TWO RINGS PUNCTUATION
+
 # (AN = Old North Arabian)
 
 <Multi_key> <a> <A> <N> <h> : "𐪀"  U10A80  # OLD NORTH ARABIAN LETTER HEH
@@ -5725,6 +5733,22 @@ include "%L"
 <Multi_key> <a> <s> <underscore> <backslash> <Return> : "݈" U0748   # SYRIAC OBLIQUE LINE BELOW
 <Multi_key> <a> <s> <backslash> <Return>           : "݉" U0749   # SYRIAC MUSIC
 <Multi_key> <a> <s> <plus> <Return>                : "݊" U074A   # SYRIAC BARREKH
+
+<Multi_key> <a> <s> <Multi_key> <P> <P> : "܀"  U0700  # SYRIAC END OF PARAGRAPH
+<Multi_key> <a> <s> <period> <asciicircum> : "܁"  U0701  # SYRIAC SUPRALINEAR FULL STOP
+<Multi_key> <a> <s> <period> <underscore> : "܂"  U0702  # SYRIAC SUBLINEAR FULL STOP
+<Multi_key> <a> <s> <colon> <asciicircum> : "܃"  U0703  # SYRIAC SUPRALINEAR COLON
+<Multi_key> <a> <s> <colon> <underscore> : "܄"  U0704  # SYRIAC SUBLINEAR COLON
+<Multi_key> <a> <s> <colon> <minus> : "܅"  U0705  # SYRIAC HORIZONTAL COLON
+<Multi_key> <a> <s> <colon> <backslash> : "܆"  U0706  # SYRIAC COLON SKEWED LEFT
+<Multi_key> <a> <s> <colon> <slash> : "܇"  U0707  # SYRIAC COLON SKEWED RIGHT
+<Multi_key> <a> <s> <backslash> <asciicircum> : "܈"  U0708  # SYRIAC SUPRALINEAR COLON SKEWED LEFT
+<Multi_key> <a> <s> <backslash> <underscore>: "܉"  U0709  # SYRIAC SUBLINEAR COLON SKEWED RIGHT
+<Multi_key> <a> <s> <minus> <colon> : "܊"  U070A  # SYRIAC CONTRACTION
+<Multi_key> <a> <s> <minus> <period> : "܋"  U070B  # SYRIAC HARKLEAN OBELUS
+<Multi_key> <a> <s> <backslash> <greater> : "܌"  U070C  # SYRIAC HARKLEAN METOBELUS
+<Multi_key> <a> <s> <plus> <colon> : "܍"  U070D  # SYRIAC HARKLEAN ASTERISCUS
+<Multi_key> <a> <s> <quotedbl> <Return> : "܏"  U070F  # SYRIAC ABBREVIATION MARK
 
 # (t = Neo-Tifinagh)
 
@@ -17859,7 +17883,7 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <t> <n> <g> <O> : "𐰭"  U10C2D  # OLD TURKIC LETTER ORKHON ENG
 <Multi_key> <o> <i> <t> <quotedbl> <n> <g> : "𐰮"  U10C2E  # OLD TURKIC LETTER YENISEI AENG
 <Multi_key> <o> <i> <t> <p> <O> : "𐰯"  U10C2F  # OLD TURKIC LETTER ORKHON EP
-#<Multi_key> <o> <i> <t> <p> <O> : "𐰰"  U10C30  # OLD TURKIC LETTER ORKHON OP
+<Multi_key> <o> <i> <t> <o> <p> : "𐰰"  U10C30  # OLD TURKIC LETTER ORKHON OP
 <Multi_key> <o> <i> <t> <i> <c> : "𐰱"  U10C31  # OLD TURKIC LETTER ORKHON IC
 <Multi_key> <o> <i> <t> <c> <O> : "𐰲"  U10C32  # OLD TURKIC LETTER ORKHON EC
 <Multi_key> <o> <i> <t> <c> <Y> : "𐰳"  U10C33  # OLD TURKIC LETTER YENISEI EC
