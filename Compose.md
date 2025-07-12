@@ -50,17 +50,17 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Logograms/undeciphered**: Anatolian Hieroglyphs, Cuneiform, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B (4635): 𔐅 𒆛 𒿌 𓀁 𐙞 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4796)
+### Symbols (4931)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (147): 🗫 🯅 ㋡ etc
 * **Math and science** (384): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (106): ⏻ ⎙ ⌘ etc
-* **Numerals** (223): 𝍸𝍷 𝍵 Ⅻ ↁ etc
+* **Numerals** (352): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (137): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (358): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
-* **I Ching** (160): ䷇ ☰☷☲☵ etc
+* **I Ching** (166): ䷇ ☰☷☲☵ etc
 * **Hieroglyphs** (361): 𓁖 𓁹 𓃠 etc
 * **Arrows** (312): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
 * **Geometric shapes** (240): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
