@@ -6394,6 +6394,15 @@ include "%L"
 <Multi_key> <b> <d> <period> <d> <period> <d> : "ॾ"  U097E  # DEVANAGARI LETTER DDDA
 <Multi_key> <b> <d> <b> <b>              : "ॿ"  U097F  # DEVANAGARI LETTER BBA
 
+# Combining consonants
+
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <a> <Return> : "꣪"  UA8EA  # COMBINING DEVANAGARI LETTER A
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <u> <Return> : "꣫"  UA8EB  # COMBINING DEVANAGARI LETTER U
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <k> <Return> : "꣬"  UA8EC  # COMBINING DEVANAGARI LETTER KA
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <n> <Return> : "꣭"  UA8ED  # COMBINING DEVANAGARI LETTER NA
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <p> <Return> : "꣮"  UA8EE  # COMBINING DEVANAGARI LETTER PA
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <r> <Return> : "꣯"  UA8EF  # COMBINING DEVANAGARI LETTER RA
+
 # Independent vowels
 
 <Multi_key> <b> <d> <period> <a> <space>      : "ऄ" U0904   # DEVANAGARI LETTER SHORT A
@@ -6463,6 +6472,7 @@ include "%L"
 <Multi_key> <b> <d> <underscore> <Return>          : "॒" U0952   # DEVANAGARI STRESS SIGN ANUDATTA
 
 <Multi_key> <b> <d> <S>                            : "ऽ" U093D   # DEVANAGARI SIGN AVAGRAHA
+<Multi_key> <b> <d> <asciicircum> <S> <Return>     : "꣱"  UA8F1  # COMBINING DEVANAGARI SIGN AVAGRAHA
 <Multi_key> <b> <d> <o> <m>                        : "ॐ" U0950   # DEVANAGARI OM
 <Multi_key> <b> <d> <R> <u>                        : "௹" U0BF9   # TAMIL RUPEE SIGN
 
@@ -6478,6 +6488,17 @@ include "%L"
 <Multi_key> <b> <d> <numbersign> <7> : "७" U096D   # DEVANAGARI DIGIT SEVEN
 <Multi_key> <b> <d> <numbersign> <8> : "८" U096E   # DEVANAGARI DIGIT EIGHT
 <Multi_key> <b> <d> <numbersign> <9> : "९" U096F   # DEVANAGARI DIGIT NINE
+
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <0> <Return> : "꣠"  UA8E0  # COMBINING DEVANAGARI DIGIT ZERO
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <1> <Return> : "꣡"  UA8E1  # COMBINING DEVANAGARI DIGIT ONE
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <2> <Return> : "꣢"  UA8E2  # COMBINING DEVANAGARI DIGIT TWO
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <3> <Return> : "꣣"  UA8E3  # COMBINING DEVANAGARI DIGIT THREE
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <4> <Return> : "꣤"  UA8E4  # COMBINING DEVANAGARI DIGIT FOUR
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <5> <Return> : "꣥"  UA8E5  # COMBINING DEVANAGARI DIGIT FIVE
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <6> <Return> : "꣦"  UA8E6  # COMBINING DEVANAGARI DIGIT SIX
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <7> <Return> : "꣧"  UA8E7  # COMBINING DEVANAGARI DIGIT SEVEN
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <8> <Return> : "꣨"  UA8E8  # COMBINING DEVANAGARI DIGIT EIGHT
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <9> <Return> : "꣩"  UA8E9  # COMBINING DEVANAGARI DIGIT NINE
 
 # Punctuation
 
@@ -7474,7 +7495,7 @@ include "%L"
 <Multi_key> <b> <G> <T> <t> <h> : "𑌥"  U11325  # GRANTHA LETTER THA (conflicts)
 <Multi_key> <b> <G> <T> <d> <space> : "𑌦"  U11326  # GRANTHA LETTER DA (conflicts)
 <Multi_key> <b> <G> <T> <d> <h> : "𑌧"  U11327  # GRANTHA LETTER DHA (conflicts)
-<Multi_key> <b> <G> <T> <n> <space> : "𑌨"  U11328  # GRANTHA LETTER NA (conflicts)
+<Multi_key> <b> <G> <T> <n> : "𑌨"  U11328  # GRANTHA LETTER NA (conflicts)
 <Multi_key> <b> <G> <T> <p> <space> : "𑌪"  U1132A  # GRANTHA LETTER PA (conflicts)
 <Multi_key> <b> <G> <T> <p> <h> : "𑌫"  U1132B  # GRANTHA LETTER PHA (conflicts)
 <Multi_key> <b> <G> <T> <b> <space> : "𑌬"  U1132C  # GRANTHA LETTER BA (conflicts)
@@ -7484,7 +7505,7 @@ include "%L"
 <Multi_key> <b> <G> <T> <r> : "𑌰"  U11330  # GRANTHA LETTER RA (conflicts)
 <Multi_key> <b> <G> <T> <l> : "𑌲"  U11332  # GRANTHA LETTER LA (conflicts)
 <Multi_key> <b> <G> <T> <period> <l> : "𑌳"  U11333  # GRANTHA LETTER LLA (conflicts)
-<Multi_key> <b> <G> <T> <v> <space> : "𑌵"  U11335  # GRANTHA LETTER VA (conflicts)
+<Multi_key> <b> <G> <T> <v> : "𑌵"  U11335  # GRANTHA LETTER VA (conflicts)
 <Multi_key> <b> <G> <T> <semicolon> <s> : "𑌶"  U11336  # GRANTHA LETTER SHA (conflicts)
 <Multi_key> <b> <G> <T> <period> <s> : "𑌷"  U11337  # GRANTHA LETTER SSA (conflicts)
 <Multi_key> <b> <G> <T> <s> : "𑌸"  U11338  # GRANTHA LETTER SA (conflicts)
@@ -7492,11 +7513,11 @@ include "%L"
 
 # Combining consonants
 
-<Multi_key> <b> <G> <T> <a> <Return> : "𑍰"  U11370  # COMBINING GRANTHA LETTER A (conflicts)
-<Multi_key> <b> <G> <T> <k> <Return> : "𑍱"  U11371  # COMBINING GRANTHA LETTER KA (conflicts)
-<Multi_key> <b> <G> <T> <n> <Return> : "𑍲"  U11372  # COMBINING GRANTHA LETTER NA (conflicts)
-<Multi_key> <b> <G> <T> <v> <Return> : "𑍳"  U11373  # COMBINING GRANTHA LETTER VI (conflicts)
-<Multi_key> <b> <G> <T> <p> <Return> : "𑍴"  U11374  # COMBINING GRANTHA LETTER PA (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <a> <Return> : "𑍰"  U11370  # COMBINING GRANTHA LETTER A (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <k> <Return> : "𑍱"  U11371  # COMBINING GRANTHA LETTER KA (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <n> <Return> : "𑍲"  U11372  # COMBINING GRANTHA LETTER NA (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <v> <Return> : "𑍳"  U11373  # COMBINING GRANTHA LETTER VI (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <p> <Return> : "𑍴"  U11374  # COMBINING GRANTHA LETTER PA (conflicts)
 
 # Independent vowels
 
@@ -7549,15 +7570,15 @@ include "%L"
 <Multi_key> <b> <G> <T> <period> <parenright> <parenright> : "𑍟"  U1135F  # GRANTHA LETTER VEDIC DOUBLE ANUSVARA (conflicts)
 <Multi_key> <b> <G> <T> <o> <m> : "𑍐"  U11350  # GRANTHA OM (conflicts)
 
-# Numerals
+# Combining numerals
 
-<Multi_key> <b> <G> <T> <numbersign> <0> : "𑍦"  U11366  # COMBINING GRANTHA DIGIT ZERO (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <1> : "𑍧"  U11367  # COMBINING GRANTHA DIGIT ONE (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <2> : "𑍨"  U11368  # COMBINING GRANTHA DIGIT TWO (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <3> : "𑍩"  U11369  # COMBINING GRANTHA DIGIT THREE (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <4> : "𑍪"  U1136A  # COMBINING GRANTHA DIGIT FOUR (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <5> : "𑍫"  U1136B  # COMBINING GRANTHA DIGIT FIVE (conflicts)
-<Multi_key> <b> <G> <T> <numbersign> <6> : "𑍬"  U1136C  # COMBINING GRANTHA DIGIT SIX (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <0> <Return> : "𑍦"  U11366  # COMBINING GRANTHA DIGIT ZERO (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <1> <Return> : "𑍧"  U11367  # COMBINING GRANTHA DIGIT ONE (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <2> <Return> : "𑍨"  U11368  # COMBINING GRANTHA DIGIT TWO (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <3> <Return> : "𑍩"  U11369  # COMBINING GRANTHA DIGIT THREE (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <4> <Return> : "𑍪"  U1136A  # COMBINING GRANTHA DIGIT FOUR (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <5> <Return> : "𑍫"  U1136B  # COMBINING GRANTHA DIGIT FIVE (conflicts)
+<Multi_key> <b> <G> <T> <asciicircum> <asciicircum> <6> <Return> : "𑍬"  U1136C  # COMBINING GRANTHA DIGIT SIX (conflicts)
 
 # (k = Kannada)
 
@@ -10936,6 +10957,46 @@ include "%L"
 <Multi_key> <c> <G> <a>          : "ⱝ" U2C5D   # GLAGOLITIC SMALL LETTER TROKUTASTI A (conflicts)
 <Multi_key> <c> <G> <m>          : "ⱞ" U2C5E   # GLAGOLITIC SMALL LETTER LATINATE MYSLITE (conflicts)
 <Multi_key> <c> <G> <less> <c> <h> : "ⱟ" U2C5F   # GLAGOLITIC SMALL LETTER CAUDATE CHRIVI (conflicts)
+
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <a> <Return> : "𞀀"  U1E000  # COMBINING GLAGOLITIC LETTER AZU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <b> <Return> : "𞀁"  U1E001  # COMBINING GLAGOLITIC LETTER BUKY (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <v> <Return> : "𞀂"  U1E002  # COMBINING GLAGOLITIC LETTER VEDE (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <g> <Return> : "𞀃"  U1E003  # COMBINING GLAGOLITIC LETTER GLAGOLI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <d> <Return> : "𞀄"  U1E004  # COMBINING GLAGOLITIC LETTER DOBRO (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <e> <Return> : "𞀅"  U1E005  # COMBINING GLAGOLITIC LETTER YESTU (conflicts with ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <z> <h> <Return> : "𞀆"  U1E006  # COMBINING GLAGOLITIC LETTER ZHIVETE (conflicts with Ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <z> <Return> : "𞀈"  U1E008  # COMBINING GLAGOLITIC LETTER ZEMLJA (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <j> <Return> : "𞀉"  U1E009  # COMBINING GLAGOLITIC LETTER IZHE (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <less> <j> <Return> : "𞀊"  U1E00A  # COMBINING GLAGOLITIC LETTER INITIAL IZHE (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <i> <Return> : "𞀋"  U1E00B  # COMBINING GLAGOLITIC LETTER I (conflicts with ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <d> <j> <Return> : "𞀌"  U1E00C  # COMBINING GLAGOLITIC LETTER DJERVI (conflicts with Ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <k> <Return> : "𞀍"  U1E00D  # COMBINING GLAGOLITIC LETTER KAKO (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <l> <Return> : "𞀎"  U1E00E  # COMBINING GLAGOLITIC LETTER LJUDIJE (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <m> <Return> : "𞀏"  U1E00F  # COMBINING GLAGOLITIC LETTER MYSLITE (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <n> <Return> : "𞀐"  U1E010  # COMBINING GLAGOLITIC LETTER NASHI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <o> <Return> : "𞀑"  U1E011  # COMBINING GLAGOLITIC LETTER ONU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <p> <Return> : "𞀒"  U1E012  # COMBINING GLAGOLITIC LETTER POKOJI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <r> <Return> : "𞀓"  U1E013  # COMBINING GLAGOLITIC LETTER RITSI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <s> <Return> : "𞀔"  U1E014  # COMBINING GLAGOLITIC LETTER SLOVO (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <t> <Return> : "𞀕"  U1E015  # COMBINING GLAGOLITIC LETTER TVRIDO (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <u> <Return> : "𞀖"  U1E016  # COMBINING GLAGOLITIC LETTER UKU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <f> <Return> : "𞀗"  U1E017  # COMBINING GLAGOLITIC LETTER FRITU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <x> <Return> : "𞀘"  U1E018  # COMBINING GLAGOLITIC LETTER HERU (conflicts with ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <s> <c> <h> <Return> : "𞀛"  U1E01B  # COMBINING GLAGOLITIC LETTER SHTA (conflicts with Ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <c> <Return> : "𞀜"  U1E01C  # COMBINING GLAGOLITIC LETTER TSI (conflicts with ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <t> <s> <Return> : "𞀜"  U1E01C  # COMBINING GLAGOLITIC LETTER TSI (conflicts with Ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <c> <h> <Return> : "𞀝"  U1E01D  # COMBINING GLAGOLITIC LETTER CHRIVI (conflicts with Ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <s> <h> <Return> : "𞀞"  U1E01E  # COMBINING GLAGOLITIC LETTER SHA (conflicts with Ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <quotedbl> <space> <Return> : "𞀟"  U1E01F  # COMBINING GLAGOLITIC LETTER YERU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <y> <space> <Return> : "𞀠"  U1E020  # COMBINING GLAGOLITIC LETTER YERI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <y> <e> <Return> : "𞀡"  U1E021  # COMBINING GLAGOLITIC LETTER YATI (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <y> <u> <Return> : "𞀣"  U1E023  # COMBINING GLAGOLITIC LETTER YU (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <comma> <e> <Return> : "𞀤"  U1E024  # COMBINING GLAGOLITIC LETTER SMALL YUS (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <y> <o> <Return> : "𞀦"  U1E026  # COMBINING GLAGOLITIC LETTER YO (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <comma> <y> <e> <Return> : "𞀧"  U1E027  # COMBINING GLAGOLITIC LETTER IOTATED SMALL YUS (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <comma> <o> <Return> : "𞀨"  U1E028  # COMBINING GLAGOLITIC LETTER BIG YUS (conflicts with ǧ)
+<Multi_key> <c> <g> <asciicircum> <asciicircum> <comma> <y> <o> <Return> : "𞀩"  U1E029  # COMBINING GLAGOLITIC LETTER IOTATED BIG YUS (conflicts with ǧ)
+<Multi_key> <c> <G> <asciicircum> <asciicircum> <t> <h> <Return> : "𞀪"  U1E02A  # COMBINING GLAGOLITIC LETTER FITA (conflicts with Ǧ)
 
 # (P = Old Permic)
 
@@ -15152,6 +15213,7 @@ include "%L"
 <Multi_key> <j> <c> <underscore> <w> <a> : "ゎ"  U308E  # HIRAGANA LETTER SMALL WA
 <Multi_key> <j> <c> <w> <i>              : "ゐ"  U3090  # HIRAGANA LETTER WI
 <Multi_key> <j> <c> <underscore> <w> <i> : "𛅐"  U1B150  # HIRAGANA LETTER SMALL WI
+<Multi_key> <j> <c> <w> <u>              : "𛄟"  U1B11F  # HIRAGANA LETTER ARCHAIC WU
 <Multi_key> <j> <c> <w> <e>              : "ゑ"  U3091  # HIRAGANA LETTER WE
 <Multi_key> <j> <c> <underscore> <w> <e> : "𛅑"  U1B151  # HIRAGANA LETTER SMALL WE
 <Multi_key> <j> <c> <w> <o>              : "を"  U3092  # HIRAGANA LETTER WO
@@ -15167,6 +15229,7 @@ include "%L"
 
 <Multi_key> <j> <c> <bracketleft> <h> <o> <k> <a> <bracketright> : "🈀"  U1F200  # SQUARE HIRAGANA HOKA
 <Multi_key> <j> <c> <braceleft> <y> <o> <r> <i> <braceright> : "ゟ"  U309F  # HIRAGANA DIGRAPH YORI
+<Multi_key> <j> <c> <braceleft> <K> <O> <T> <O> <braceright> : "ヿ"  U30FF  # KATAKANA DIGRAPH KOTO
 
 # Katakana (upper case)
 
@@ -15269,8 +15332,10 @@ include "%L"
 
 <Multi_key> <j> <c> <Y> <A>              : "ヤ"  U30E4  # KATAKANA LETTER YA
 <Multi_key> <j> <c> <underscore> <Y> <A> : "ャ"  U30E3  # KATAKANA LETTER SMALL YA
+<Multi_key> <j> <c> <Y> <I>              : "𛄠"  U1B120  # KATAKANA LETTER ARCHAIC YI
 <Multi_key> <j> <c> <Y> <U>              : "ユ"  U30E6  # KATAKANA LETTER YU
 <Multi_key> <j> <c> <underscore> <Y> <U> : "ュ"  U30E5  # KATAKANA LETTER SMALL YU
+<Multi_key> <j> <c> <Y> <E>              : "𛄡"  U1B121  # KATAKANA LETTER ARCHAIC YE
 <Multi_key> <j> <c> <Y> <O>              : "ヨ"  U30E8  # KATAKANA LETTER YO
 <Multi_key> <j> <c> <underscore> <Y> <O> : "ョ"  U30E7  # KATAKANA LETTER SMALL YO
 
@@ -15289,6 +15354,7 @@ include "%L"
 <Multi_key> <j> <c> <W> <A>              : "ワ"  U30EF  # KATAKANA LETTER WA
 <Multi_key> <j> <c> <W> <I>              : "ヰ"  U30F0  # KATAKANA LETTER WI
 <Multi_key> <j> <c> <underscore> <W> <I> : "𛅤"  U1B164  # KATAKANA LETTER SMALL WI
+<Multi_key> <j> <c> <W> <U>              : "𛄢"  U1B122  # KATAKANA LETTER ARCHAIC WU
 <Multi_key> <j> <c> <W> <E>              : "ヱ"  U30F1  # KATAKANA LETTER WE
 <Multi_key> <j> <c> <underscore> <W> <E> : "𛅥"  U1B165  # KATAKANA LETTER SMALL WE
 <Multi_key> <j> <c> <W> <O>              : "ヲ"  U30F2  # KATAKANA LETTER WO
@@ -15450,6 +15516,331 @@ include "%L"
 <Multi_key> <j> <c> <braceleft> <Y> <A> <A> <D> <O> <braceright> : "㍎"  U334E  # SQUARE YAADO
 <Multi_key> <j> <c> <braceleft> <Y> <A> <A> <R> <U> <braceright> : "㍏"  U334F  # SQUARE YAARU
 <Multi_key> <j> <c> <braceleft> <Y> <U> <A> <N> <braceright> : "㍐"  U3350  # SQUARE YUAN
+
+# Hentaigana (like hiragana but prefixed by variant number)
+
+<Multi_key> <j> <c> <1> <a> : "𛀂"  U1B002  # HENTAIGANA LETTER A-1
+<Multi_key> <j> <c> <2> <a> : "𛀃"  U1B003  # HENTAIGANA LETTER A-2
+<Multi_key> <j> <c> <3> <a> : "𛀄"  U1B004  # HENTAIGANA LETTER A-3
+<Multi_key> <j> <c> <4> <a> : "𛀅"  U1B005  # HENTAIGANA LETTER A-WO
+<Multi_key> <j> <c> <1> <i> : "𛀆"  U1B006  # HENTAIGANA LETTER I-1
+<Multi_key> <j> <c> <2> <i> : "𛀇"  U1B007  # HENTAIGANA LETTER I-2
+<Multi_key> <j> <c> <3> <i> : "𛀈"  U1B008  # HENTAIGANA LETTER I-3
+<Multi_key> <j> <c> <4> <i> : "𛀉"  U1B009  # HENTAIGANA LETTER I-4
+<Multi_key> <j> <c> <1> <u> : "𛀊"  U1B00A  # HENTAIGANA LETTER U-1
+<Multi_key> <j> <c> <2> <u> : "𛀋"  U1B00B  # HENTAIGANA LETTER U-2
+<Multi_key> <j> <c> <3> <u> : "𛀌"  U1B00C  # HENTAIGANA LETTER U-3
+<Multi_key> <j> <c> <4> <u> : "𛀍"  U1B00D  # HENTAIGANA LETTER U-4
+<Multi_key> <j> <c> <5> <u> : "𛀎"  U1B00E  # HENTAIGANA LETTER U-5
+<Multi_key> <j> <c> <1> <e> : "𛀁"  U1B001  # HIRAGANA LETTER ARCHAIC YE
+<Multi_key> <j> <c> <2> <e> : "𛀏"  U1B00F  # HENTAIGANA LETTER E-2
+<Multi_key> <j> <c> <3> <e> : "𛀐"  U1B010  # HENTAIGANA LETTER E-3
+<Multi_key> <j> <c> <4> <e> : "𛀑"  U1B011  # HENTAIGANA LETTER E-4
+<Multi_key> <j> <c> <5> <e> : "𛀒"  U1B012  # HENTAIGANA LETTER E-5
+<Multi_key> <j> <c> <6> <e> : "𛀓"  U1B013  # HENTAIGANA LETTER E-6
+<Multi_key> <j> <c> <1> <o> : "𛀔"  U1B014  # HENTAIGANA LETTER O-1
+<Multi_key> <j> <c> <2> <o> : "𛀕"  U1B015  # HENTAIGANA LETTER O-2
+<Multi_key> <j> <c> <3> <o> : "𛀖"  U1B016  # HENTAIGANA LETTER O-3
+<Multi_key> <j> <c> <1> <k> <a> : "𛀗"  U1B017  # HENTAIGANA LETTER KA-1
+<Multi_key> <j> <c> <2> <k> <a> : "𛀘"  U1B018  # HENTAIGANA LETTER KA-2
+<Multi_key> <j> <c> <3> <k> <a> : "𛀙"  U1B019  # HENTAIGANA LETTER KA-3
+<Multi_key> <j> <c> <4> <k> <a> : "𛀚"  U1B01A  # HENTAIGANA LETTER KA-4
+<Multi_key> <j> <c> <5> <k> <a> : "𛀛"  U1B01B  # HENTAIGANA LETTER KA-5
+<Multi_key> <j> <c> <6> <k> <a> : "𛀜"  U1B01C  # HENTAIGANA LETTER KA-6
+<Multi_key> <j> <c> <7> <k> <a> : "𛀝"  U1B01D  # HENTAIGANA LETTER KA-7
+<Multi_key> <j> <c> <8> <k> <a> : "𛀞"  U1B01E  # HENTAIGANA LETTER KA-8
+<Multi_key> <j> <c> <9> <k> <a> : "𛀟"  U1B01F  # HENTAIGANA LETTER KA-9
+<Multi_key> <j> <c> <1> <0> <k> <a> : "𛀠"  U1B020  # HENTAIGANA LETTER KA-10
+<Multi_key> <j> <c> <1> <1> <k> <a> : "𛀡"  U1B021  # HENTAIGANA LETTER KA-11
+<Multi_key> <j> <c> <1> <2> <k> <a> : "𛀢"  U1B022  # HENTAIGANA LETTER KA-KE
+<Multi_key> <j> <c> <1> <k> <i> : "𛀣"  U1B023  # HENTAIGANA LETTER KI-1
+<Multi_key> <j> <c> <2> <k> <i> : "𛀤"  U1B024  # HENTAIGANA LETTER KI-2
+<Multi_key> <j> <c> <3> <k> <i> : "𛀥"  U1B025  # HENTAIGANA LETTER KI-3
+<Multi_key> <j> <c> <4> <k> <i> : "𛀦"  U1B026  # HENTAIGANA LETTER KI-4
+<Multi_key> <j> <c> <5> <k> <i> : "𛀧"  U1B027  # HENTAIGANA LETTER KI-5
+<Multi_key> <j> <c> <6> <k> <i> : "𛀨"  U1B028  # HENTAIGANA LETTER KI-6
+<Multi_key> <j> <c> <7> <k> <i> : "𛀩"  U1B029  # HENTAIGANA LETTER KI-7
+<Multi_key> <j> <c> <8> <k> <i> : "𛀪"  U1B02A  # HENTAIGANA LETTER KI-8
+<Multi_key> <j> <c> <9> <k> <i> : "𛀻"  U1B03B  # HENTAIGANA LETTER KO-KI
+<Multi_key> <j> <c> <1> <k> <u> : "𛀫"  U1B02B  # HENTAIGANA LETTER KU-1
+<Multi_key> <j> <c> <2> <k> <u> : "𛀬"  U1B02C  # HENTAIGANA LETTER KU-2
+<Multi_key> <j> <c> <3> <k> <u> : "𛀭"  U1B02D  # HENTAIGANA LETTER KU-3
+<Multi_key> <j> <c> <4> <k> <u> : "𛀮"  U1B02E  # HENTAIGANA LETTER KU-4
+<Multi_key> <j> <c> <5> <k> <u> : "𛀯"  U1B02F  # HENTAIGANA LETTER KU-5
+<Multi_key> <j> <c> <6> <k> <u> : "𛀰"  U1B030  # HENTAIGANA LETTER KU-6
+<Multi_key> <j> <c> <7> <k> <u> : "𛀱"  U1B031  # HENTAIGANA LETTER KU-7
+<Multi_key> <j> <c> <1> <k> <e> : "𛀲"  U1B032  # HENTAIGANA LETTER KE-1
+<Multi_key> <j> <c> <2> <k> <e> : "𛀳"  U1B033  # HENTAIGANA LETTER KE-2
+<Multi_key> <j> <c> <3> <k> <e> : "𛀴"  U1B034  # HENTAIGANA LETTER KE-3
+<Multi_key> <j> <c> <4> <k> <e> : "𛀵"  U1B035  # HENTAIGANA LETTER KE-4
+<Multi_key> <j> <c> <5> <k> <e> : "𛀶"  U1B036  # HENTAIGANA LETTER KE-5
+<Multi_key> <j> <c> <6> <k> <e> : "𛀷"  U1B037  # HENTAIGANA LETTER KE-6
+<Multi_key> <j> <c> <7> <k> <e> : "𛀢"  U1B022  # HENTAIGANA LETTER KA-KE
+<Multi_key> <j> <c> <1> <k> <o> : "𛀸"  U1B038  # HENTAIGANA LETTER KO-1
+<Multi_key> <j> <c> <2> <k> <o> : "𛀹"  U1B039  # HENTAIGANA LETTER KO-2
+<Multi_key> <j> <c> <3> <k> <o> : "𛀺"  U1B03A  # HENTAIGANA LETTER KO-3
+<Multi_key> <j> <c> <4> <k> <o> : "𛀻"  U1B03B  # HENTAIGANA LETTER KO-KI
+<Multi_key> <j> <c> <5> <k> <o> : "𛂘"  U1B098  # HENTAIGANA LETTER NE-KO
+<Multi_key> <j> <c> <1> <s> <a> : "𛀼"  U1B03C  # HENTAIGANA LETTER SA-1
+<Multi_key> <j> <c> <2> <s> <a> : "𛀽"  U1B03D  # HENTAIGANA LETTER SA-2
+<Multi_key> <j> <c> <3> <s> <a> : "𛀾"  U1B03E  # HENTAIGANA LETTER SA-3
+<Multi_key> <j> <c> <4> <s> <a> : "𛀿"  U1B03F  # HENTAIGANA LETTER SA-4
+<Multi_key> <j> <c> <5> <s> <a> : "𛁀"  U1B040  # HENTAIGANA LETTER SA-5
+<Multi_key> <j> <c> <6> <s> <a> : "𛁁"  U1B041  # HENTAIGANA LETTER SA-6
+<Multi_key> <j> <c> <7> <s> <a> : "𛁂"  U1B042  # HENTAIGANA LETTER SA-7
+<Multi_key> <j> <c> <8> <s> <a> : "𛁃"  U1B043  # HENTAIGANA LETTER SA-8
+<Multi_key> <j> <c> <1> <s> <h> <i> : "𛁄"  U1B044  # HENTAIGANA LETTER SI-1
+<Multi_key> <j> <c> <1> <s> <i> : "𛁄"  U1B044  # HENTAIGANA LETTER SI-1
+<Multi_key> <j> <c> <2> <s> <h> <i> : "𛁅"  U1B045  # HENTAIGANA LETTER SI-2
+<Multi_key> <j> <c> <2> <s> <i> : "𛁅"  U1B045  # HENTAIGANA LETTER SI-2
+<Multi_key> <j> <c> <3> <s> <h> <i> : "𛁆"  U1B046  # HENTAIGANA LETTER SI-3
+<Multi_key> <j> <c> <3> <s> <i> : "𛁆"  U1B046  # HENTAIGANA LETTER SI-3
+<Multi_key> <j> <c> <4> <s> <h> <i> : "𛁇"  U1B047  # HENTAIGANA LETTER SI-4
+<Multi_key> <j> <c> <4> <s> <i> : "𛁇"  U1B047  # HENTAIGANA LETTER SI-4
+<Multi_key> <j> <c> <5> <s> <h> <i> : "𛁈"  U1B048  # HENTAIGANA LETTER SI-5
+<Multi_key> <j> <c> <5> <s> <i> : "𛁈"  U1B048  # HENTAIGANA LETTER SI-5
+<Multi_key> <j> <c> <6> <s> <h> <i> : "𛁉"  U1B049  # HENTAIGANA LETTER SI-6
+<Multi_key> <j> <c> <6> <s> <i> : "𛁉"  U1B049  # HENTAIGANA LETTER SI-6
+<Multi_key> <j> <c> <1> <s> <u> : "𛁊"  U1B04A  # HENTAIGANA LETTER SU-1
+<Multi_key> <j> <c> <2> <s> <u> : "𛁋"  U1B04B  # HENTAIGANA LETTER SU-2
+<Multi_key> <j> <c> <3> <s> <u> : "𛁌"  U1B04C  # HENTAIGANA LETTER SU-3
+<Multi_key> <j> <c> <4> <s> <u> : "𛁍"  U1B04D  # HENTAIGANA LETTER SU-4
+<Multi_key> <j> <c> <5> <s> <u> : "𛁎"  U1B04E  # HENTAIGANA LETTER SU-5
+<Multi_key> <j> <c> <6> <s> <u> : "𛁏"  U1B04F  # HENTAIGANA LETTER SU-6
+<Multi_key> <j> <c> <7> <s> <u> : "𛁐"  U1B050  # HENTAIGANA LETTER SU-7
+<Multi_key> <j> <c> <8> <s> <u> : "𛁑"  U1B051  # HENTAIGANA LETTER SU-8
+<Multi_key> <j> <c> <1> <s> <e> : "𛁒"  U1B052  # HENTAIGANA LETTER SE-1
+<Multi_key> <j> <c> <2> <s> <e> : "𛁓"  U1B053  # HENTAIGANA LETTER SE-2
+<Multi_key> <j> <c> <3> <s> <e> : "𛁔"  U1B054  # HENTAIGANA LETTER SE-3
+<Multi_key> <j> <c> <4> <s> <e> : "𛁕"  U1B055  # HENTAIGANA LETTER SE-4
+<Multi_key> <j> <c> <5> <s> <e> : "𛁖"  U1B056  # HENTAIGANA LETTER SE-5
+<Multi_key> <j> <c> <1> <s> <o> : "𛁗"  U1B057  # HENTAIGANA LETTER SO-1
+<Multi_key> <j> <c> <2> <s> <o> : "𛁘"  U1B058  # HENTAIGANA LETTER SO-2
+<Multi_key> <j> <c> <3> <s> <o> : "𛁙"  U1B059  # HENTAIGANA LETTER SO-3
+<Multi_key> <j> <c> <4> <s> <o> : "𛁚"  U1B05A  # HENTAIGANA LETTER SO-4
+<Multi_key> <j> <c> <5> <s> <o> : "𛁛"  U1B05B  # HENTAIGANA LETTER SO-5
+<Multi_key> <j> <c> <6> <s> <o> : "𛁜"  U1B05C  # HENTAIGANA LETTER SO-6
+<Multi_key> <j> <c> <7> <s> <o> : "𛁝"  U1B05D  # HENTAIGANA LETTER SO-7
+<Multi_key> <j> <c> <1> <t> <a> : "𛁞"  U1B05E  # HENTAIGANA LETTER TA-1
+<Multi_key> <j> <c> <2> <t> <a> : "𛁟"  U1B05F  # HENTAIGANA LETTER TA-2
+<Multi_key> <j> <c> <3> <t> <a> : "𛁠"  U1B060  # HENTAIGANA LETTER TA-3
+<Multi_key> <j> <c> <4> <t> <a> : "𛁡"  U1B061  # HENTAIGANA LETTER TA-4
+<Multi_key> <j> <c> <1> <c> <h> <i> : "𛁢"  U1B062  # HENTAIGANA LETTER TI-1
+<Multi_key> <j> <c> <1> <t> <i> : "𛁢"  U1B062  # HENTAIGANA LETTER TI-1
+<Multi_key> <j> <c> <2> <c> <h> <i> : "𛁣"  U1B063  # HENTAIGANA LETTER TI-2
+<Multi_key> <j> <c> <2> <t> <i> : "𛁣"  U1B063  # HENTAIGANA LETTER TI-2
+<Multi_key> <j> <c> <3> <c> <h> <i> : "𛁤"  U1B064  # HENTAIGANA LETTER TI-3
+<Multi_key> <j> <c> <3> <t> <i> : "𛁤"  U1B064  # HENTAIGANA LETTER TI-3
+<Multi_key> <j> <c> <4> <c> <h> <i> : "𛁥"  U1B065  # HENTAIGANA LETTER TI-4
+<Multi_key> <j> <c> <4> <t> <i> : "𛁥"  U1B065  # HENTAIGANA LETTER TI-4
+<Multi_key> <j> <c> <5> <c> <h> <i> : "𛁦"  U1B066  # HENTAIGANA LETTER TI-5
+<Multi_key> <j> <c> <5> <t> <i> : "𛁦"  U1B066  # HENTAIGANA LETTER TI-5
+<Multi_key> <j> <c> <6> <c> <h> <i> : "𛁧"  U1B067  # HENTAIGANA LETTER TI-6
+<Multi_key> <j> <c> <6> <t> <i> : "𛁧"  U1B067  # HENTAIGANA LETTER TI-6
+<Multi_key> <j> <c> <7> <c> <h> <i> : "𛁨"  U1B068  # HENTAIGANA LETTER TI-7
+<Multi_key> <j> <c> <7> <t> <i> : "𛁨"  U1B068  # HENTAIGANA LETTER TI-7
+<Multi_key> <j> <c> <1> <t> <s> <u> : "𛁩"  U1B069  # HENTAIGANA LETTER TU-1
+<Multi_key> <j> <c> <1> <t> <u> : "𛁩"  U1B069  # HENTAIGANA LETTER TU-1
+<Multi_key> <j> <c> <2> <t> <s> <u> : "𛁪"  U1B06A  # HENTAIGANA LETTER TU-2
+<Multi_key> <j> <c> <2> <t> <u> : "𛁪"  U1B06A  # HENTAIGANA LETTER TU-2
+<Multi_key> <j> <c> <3> <t> <s> <u> : "𛁫"  U1B06B  # HENTAIGANA LETTER TU-3
+<Multi_key> <j> <c> <3> <t> <u> : "𛁫"  U1B06B  # HENTAIGANA LETTER TU-3
+<Multi_key> <j> <c> <4> <t> <s> <u> : "𛁬"  U1B06C  # HENTAIGANA LETTER TU-4
+<Multi_key> <j> <c> <4> <t> <u> : "𛁬"  U1B06C  # HENTAIGANA LETTER TU-4
+<Multi_key> <j> <c> <5> <t> <s> <u> : "𛁭"  U1B06D  # HENTAIGANA LETTER TU-TO
+<Multi_key> <j> <c> <5> <t> <u> : "𛁭"  U1B06D  # HENTAIGANA LETTER TU-TO
+<Multi_key> <j> <c> <1> <t> <e> : "𛁮"  U1B06E  # HENTAIGANA LETTER TE-1
+<Multi_key> <j> <c> <2> <t> <e> : "𛁯"  U1B06F  # HENTAIGANA LETTER TE-2
+<Multi_key> <j> <c> <3> <t> <e> : "𛁰"  U1B070  # HENTAIGANA LETTER TE-3
+<Multi_key> <j> <c> <4> <t> <e> : "𛁱"  U1B071  # HENTAIGANA LETTER TE-4
+<Multi_key> <j> <c> <5> <t> <e> : "𛁲"  U1B072  # HENTAIGANA LETTER TE-5
+<Multi_key> <j> <c> <6> <t> <e> : "𛁳"  U1B073  # HENTAIGANA LETTER TE-6
+<Multi_key> <j> <c> <7> <t> <e> : "𛁴"  U1B074  # HENTAIGANA LETTER TE-7
+<Multi_key> <j> <c> <8> <t> <e> : "𛁵"  U1B075  # HENTAIGANA LETTER TE-8
+<Multi_key> <j> <c> <9> <t> <e> : "𛁶"  U1B076  # HENTAIGANA LETTER TE-9
+<Multi_key> <j> <c> <1> <0> <t> <e> : "𛂎"  U1B08E  # HENTAIGANA LETTER NI-TE
+<Multi_key> <j> <c> <1> <t> <o> : "𛁷"  U1B077  # HENTAIGANA LETTER TO-1
+<Multi_key> <j> <c> <2> <t> <o> : "𛁸"  U1B078  # HENTAIGANA LETTER TO-2
+<Multi_key> <j> <c> <3> <t> <o> : "𛁹"  U1B079  # HENTAIGANA LETTER TO-3
+<Multi_key> <j> <c> <4> <t> <o> : "𛁺"  U1B07A  # HENTAIGANA LETTER TO-4
+<Multi_key> <j> <c> <5> <t> <o> : "𛁻"  U1B07B  # HENTAIGANA LETTER TO-5
+<Multi_key> <j> <c> <6> <t> <o> : "𛁼"  U1B07C  # HENTAIGANA LETTER TO-6
+<Multi_key> <j> <c> <7> <t> <o> : "𛁽"  U1B07D  # HENTAIGANA LETTER TO-RA
+<Multi_key> <j> <c> <8> <t> <o> : "𛁭"  U1B06D  # HENTAIGANA LETTER TU-TO
+<Multi_key> <j> <c> <1> <n> <a> : "𛁾"  U1B07E  # HENTAIGANA LETTER NA-1
+<Multi_key> <j> <c> <2> <n> <a> : "𛁿"  U1B07F  # HENTAIGANA LETTER NA-2
+<Multi_key> <j> <c> <3> <n> <a> : "𛂀"  U1B080  # HENTAIGANA LETTER NA-3
+<Multi_key> <j> <c> <4> <n> <a> : "𛂁"  U1B081  # HENTAIGANA LETTER NA-4
+<Multi_key> <j> <c> <5> <n> <a> : "𛂂"  U1B082  # HENTAIGANA LETTER NA-5
+<Multi_key> <j> <c> <6> <n> <a> : "𛂃"  U1B083  # HENTAIGANA LETTER NA-6
+<Multi_key> <j> <c> <7> <n> <a> : "𛂄"  U1B084  # HENTAIGANA LETTER NA-7
+<Multi_key> <j> <c> <8> <n> <a> : "𛂅"  U1B085  # HENTAIGANA LETTER NA-8
+<Multi_key> <j> <c> <9> <n> <a> : "𛂆"  U1B086  # HENTAIGANA LETTER NA-9
+<Multi_key> <j> <c> <1> <n> <i> : "𛂇"  U1B087  # HENTAIGANA LETTER NI-1
+<Multi_key> <j> <c> <2> <n> <i> : "𛂈"  U1B088  # HENTAIGANA LETTER NI-2
+<Multi_key> <j> <c> <3> <n> <i> : "𛂉"  U1B089  # HENTAIGANA LETTER NI-3
+<Multi_key> <j> <c> <4> <n> <i> : "𛂊"  U1B08A  # HENTAIGANA LETTER NI-4
+<Multi_key> <j> <c> <5> <n> <i> : "𛂋"  U1B08B  # HENTAIGANA LETTER NI-5
+<Multi_key> <j> <c> <6> <n> <i> : "𛂌"  U1B08C  # HENTAIGANA LETTER NI-6
+<Multi_key> <j> <c> <7> <n> <i> : "𛂍"  U1B08D  # HENTAIGANA LETTER NI-7
+<Multi_key> <j> <c> <8> <n> <i> : "𛂎"  U1B08E  # HENTAIGANA LETTER NI-TE
+<Multi_key> <j> <c> <1> <n> <u> : "𛂏"  U1B08F  # HENTAIGANA LETTER NU-1
+<Multi_key> <j> <c> <2> <n> <u> : "𛂐"  U1B090  # HENTAIGANA LETTER NU-2
+<Multi_key> <j> <c> <3> <n> <u> : "𛂑"  U1B091  # HENTAIGANA LETTER NU-3
+<Multi_key> <j> <c> <1> <n> <e> : "𛂒"  U1B092  # HENTAIGANA LETTER NE-1
+<Multi_key> <j> <c> <2> <n> <e> : "𛂓"  U1B093  # HENTAIGANA LETTER NE-2
+<Multi_key> <j> <c> <3> <n> <e> : "𛂔"  U1B094  # HENTAIGANA LETTER NE-3
+<Multi_key> <j> <c> <4> <n> <e> : "𛂕"  U1B095  # HENTAIGANA LETTER NE-4
+<Multi_key> <j> <c> <5> <n> <e> : "𛂖"  U1B096  # HENTAIGANA LETTER NE-5
+<Multi_key> <j> <c> <6> <n> <e> : "𛂗"  U1B097  # HENTAIGANA LETTER NE-6
+<Multi_key> <j> <c> <7> <n> <e> : "𛂘"  U1B098  # HENTAIGANA LETTER NE-KO
+<Multi_key> <j> <c> <1> <n> <o> : "𛂙"  U1B099  # HENTAIGANA LETTER NO-1
+<Multi_key> <j> <c> <2> <n> <o> : "𛂚"  U1B09A  # HENTAIGANA LETTER NO-2
+<Multi_key> <j> <c> <3> <n> <o> : "𛂛"  U1B09B  # HENTAIGANA LETTER NO-3
+<Multi_key> <j> <c> <4> <n> <o> : "𛂜"  U1B09C  # HENTAIGANA LETTER NO-4
+<Multi_key> <j> <c> <5> <n> <o> : "𛂝"  U1B09D  # HENTAIGANA LETTER NO-5
+<Multi_key> <j> <c> <1> <h> <a> : "𛂞"  U1B09E  # HENTAIGANA LETTER HA-1
+<Multi_key> <j> <c> <2> <h> <a> : "𛂟"  U1B09F  # HENTAIGANA LETTER HA-2
+<Multi_key> <j> <c> <3> <h> <a> : "𛂠"  U1B0A0  # HENTAIGANA LETTER HA-3
+<Multi_key> <j> <c> <4> <h> <a> : "𛂡"  U1B0A1  # HENTAIGANA LETTER HA-4
+<Multi_key> <j> <c> <5> <h> <a> : "𛂢"  U1B0A2  # HENTAIGANA LETTER HA-5
+<Multi_key> <j> <c> <6> <h> <a> : "𛂣"  U1B0A3  # HENTAIGANA LETTER HA-6
+<Multi_key> <j> <c> <7> <h> <a> : "𛂤"  U1B0A4  # HENTAIGANA LETTER HA-7
+<Multi_key> <j> <c> <8> <h> <a> : "𛂥"  U1B0A5  # HENTAIGANA LETTER HA-8
+<Multi_key> <j> <c> <9> <h> <a> : "𛂦"  U1B0A6  # HENTAIGANA LETTER HA-9
+<Multi_key> <j> <c> <1> <0> <h> <a> : "𛂧"  U1B0A7  # HENTAIGANA LETTER HA-10
+<Multi_key> <j> <c> <1> <1> <h> <a> : "𛂨"  U1B0A8  # HENTAIGANA LETTER HA-11
+<Multi_key> <j> <c> <1> <h> <i> : "𛂩"  U1B0A9  # HENTAIGANA LETTER HI-1
+<Multi_key> <j> <c> <2> <h> <i> : "𛂪"  U1B0AA  # HENTAIGANA LETTER HI-2
+<Multi_key> <j> <c> <3> <h> <i> : "𛂫"  U1B0AB  # HENTAIGANA LETTER HI-3
+<Multi_key> <j> <c> <4> <h> <i> : "𛂬"  U1B0AC  # HENTAIGANA LETTER HI-4
+<Multi_key> <j> <c> <5> <h> <i> : "𛂭"  U1B0AD  # HENTAIGANA LETTER HI-5
+<Multi_key> <j> <c> <6> <h> <i> : "𛂮"  U1B0AE  # HENTAIGANA LETTER HI-6
+<Multi_key> <j> <c> <7> <h> <i> : "𛂯"  U1B0AF  # HENTAIGANA LETTER HI-7
+<Multi_key> <j> <c> <1> <f> <u> : "𛂰"  U1B0B0  # HENTAIGANA LETTER HU-1
+<Multi_key> <j> <c> <1> <h> <u> : "𛂰"  U1B0B0  # HENTAIGANA LETTER HU-1
+<Multi_key> <j> <c> <2> <f> <u> : "𛂱"  U1B0B1  # HENTAIGANA LETTER HU-2
+<Multi_key> <j> <c> <2> <h> <u> : "𛂱"  U1B0B1  # HENTAIGANA LETTER HU-2
+<Multi_key> <j> <c> <3> <f> <u> : "𛂲"  U1B0B2  # HENTAIGANA LETTER HU-3
+<Multi_key> <j> <c> <3> <h> <u> : "𛂲"  U1B0B2  # HENTAIGANA LETTER HU-3
+<Multi_key> <j> <c> <1> <h> <e> : "𛂳"  U1B0B3  # HENTAIGANA LETTER HE-1
+<Multi_key> <j> <c> <2> <h> <e> : "𛂴"  U1B0B4  # HENTAIGANA LETTER HE-2
+<Multi_key> <j> <c> <3> <h> <e> : "𛂵"  U1B0B5  # HENTAIGANA LETTER HE-3
+<Multi_key> <j> <c> <4> <h> <e> : "𛂶"  U1B0B6  # HENTAIGANA LETTER HE-4
+<Multi_key> <j> <c> <5> <h> <e> : "𛂷"  U1B0B7  # HENTAIGANA LETTER HE-5
+<Multi_key> <j> <c> <6> <h> <e> : "𛂸"  U1B0B8  # HENTAIGANA LETTER HE-6
+<Multi_key> <j> <c> <7> <h> <e> : "𛂹"  U1B0B9  # HENTAIGANA LETTER HE-7
+<Multi_key> <j> <c> <1> <h> <o> : "𛂺"  U1B0BA  # HENTAIGANA LETTER HO-1
+<Multi_key> <j> <c> <2> <h> <o> : "𛂻"  U1B0BB  # HENTAIGANA LETTER HO-2
+<Multi_key> <j> <c> <3> <h> <o> : "𛂼"  U1B0BC  # HENTAIGANA LETTER HO-3
+<Multi_key> <j> <c> <4> <h> <o> : "𛂽"  U1B0BD  # HENTAIGANA LETTER HO-4
+<Multi_key> <j> <c> <5> <h> <o> : "𛂾"  U1B0BE  # HENTAIGANA LETTER HO-5
+<Multi_key> <j> <c> <6> <h> <o> : "𛂿"  U1B0BF  # HENTAIGANA LETTER HO-6
+<Multi_key> <j> <c> <7> <h> <o> : "𛃀"  U1B0C0  # HENTAIGANA LETTER HO-7
+<Multi_key> <j> <c> <8> <h> <o> : "𛃁"  U1B0C1  # HENTAIGANA LETTER HO-8
+<Multi_key> <j> <c> <1> <m> <a> : "𛃂"  U1B0C2  # HENTAIGANA LETTER MA-1
+<Multi_key> <j> <c> <2> <m> <a> : "𛃃"  U1B0C3  # HENTAIGANA LETTER MA-2
+<Multi_key> <j> <c> <3> <m> <a> : "𛃄"  U1B0C4  # HENTAIGANA LETTER MA-3
+<Multi_key> <j> <c> <4> <m> <a> : "𛃅"  U1B0C5  # HENTAIGANA LETTER MA-4
+<Multi_key> <j> <c> <5> <m> <a> : "𛃆"  U1B0C6  # HENTAIGANA LETTER MA-5
+<Multi_key> <j> <c> <6> <m> <a> : "𛃇"  U1B0C7  # HENTAIGANA LETTER MA-6
+<Multi_key> <j> <c> <7> <m> <a> : "𛃈"  U1B0C8  # HENTAIGANA LETTER MA-7
+<Multi_key> <j> <c> <8> <m> <a> : "𛃖"  U1B0D6  # HENTAIGANA LETTER ME-MA
+<Multi_key> <j> <c> <1> <m> <i> : "𛃉"  U1B0C9  # HENTAIGANA LETTER MI-1
+<Multi_key> <j> <c> <2> <m> <i> : "𛃊"  U1B0CA  # HENTAIGANA LETTER MI-2
+<Multi_key> <j> <c> <3> <m> <i> : "𛃋"  U1B0CB  # HENTAIGANA LETTER MI-3
+<Multi_key> <j> <c> <4> <m> <i> : "𛃌"  U1B0CC  # HENTAIGANA LETTER MI-4
+<Multi_key> <j> <c> <5> <m> <i> : "𛃍"  U1B0CD  # HENTAIGANA LETTER MI-5
+<Multi_key> <j> <c> <6> <m> <i> : "𛃎"  U1B0CE  # HENTAIGANA LETTER MI-6
+<Multi_key> <j> <c> <7> <m> <i> : "𛃏"  U1B0CF  # HENTAIGANA LETTER MI-7
+<Multi_key> <j> <c> <1> <m> <u> : "𛃐"  U1B0D0  # HENTAIGANA LETTER MU-1
+<Multi_key> <j> <c> <2> <m> <u> : "𛃑"  U1B0D1  # HENTAIGANA LETTER MU-2
+<Multi_key> <j> <c> <3> <m> <u> : "𛃒"  U1B0D2  # HENTAIGANA LETTER MU-3
+<Multi_key> <j> <c> <4> <m> <u> : "𛃓"  U1B0D3  # HENTAIGANA LETTER MU-4
+<Multi_key> <j> <c> <5> <m> <u> : "𛄝"  U1B11D  # HENTAIGANA LETTER N-MU-MO-1
+<Multi_key> <j> <c> <6> <m> <u> : "𛄞"  U1B11E  # HENTAIGANA LETTER N-MU-MO-2
+<Multi_key> <j> <c> <1> <m> <e> : "𛃔"  U1B0D4  # HENTAIGANA LETTER ME-1
+<Multi_key> <j> <c> <2> <m> <e> : "𛃕"  U1B0D5  # HENTAIGANA LETTER ME-2
+<Multi_key> <j> <c> <3> <m> <e> : "𛃖"  U1B0D6  # HENTAIGANA LETTER ME-MA
+<Multi_key> <j> <c> <1> <m> <o> : "𛃗"  U1B0D7  # HENTAIGANA LETTER MO-1
+<Multi_key> <j> <c> <2> <m> <o> : "𛃘"  U1B0D8  # HENTAIGANA LETTER MO-2
+<Multi_key> <j> <c> <3> <m> <o> : "𛃙"  U1B0D9  # HENTAIGANA LETTER MO-3
+<Multi_key> <j> <c> <4> <m> <o> : "𛃚"  U1B0DA  # HENTAIGANA LETTER MO-4
+<Multi_key> <j> <c> <5> <m> <o> : "𛃛"  U1B0DB  # HENTAIGANA LETTER MO-5
+<Multi_key> <j> <c> <6> <m> <o> : "𛃜"  U1B0DC  # HENTAIGANA LETTER MO-6
+<Multi_key> <j> <c> <7> <m> <o> : "𛄝"  U1B11D  # HENTAIGANA LETTER N-MU-MO-1
+<Multi_key> <j> <c> <8> <m> <o> : "𛄞"  U1B11E  # HENTAIGANA LETTER N-MU-MO-2
+<Multi_key> <j> <c> <1> <y> <a> : "𛃝"  U1B0DD  # HENTAIGANA LETTER YA-1
+<Multi_key> <j> <c> <2> <y> <a> : "𛃞"  U1B0DE  # HENTAIGANA LETTER YA-2
+<Multi_key> <j> <c> <3> <y> <a> : "𛃟"  U1B0DF  # HENTAIGANA LETTER YA-3
+<Multi_key> <j> <c> <4> <y> <a> : "𛃠"  U1B0E0  # HENTAIGANA LETTER YA-4
+<Multi_key> <j> <c> <5> <y> <a> : "𛃡"  U1B0E1  # HENTAIGANA LETTER YA-5
+<Multi_key> <j> <c> <6> <y> <a> : "𛃢"  U1B0E2  # HENTAIGANA LETTER YA-YO
+<Multi_key> <j> <c> <1> <y> <u> : "𛃣"  U1B0E3  # HENTAIGANA LETTER YU-1
+<Multi_key> <j> <c> <2> <y> <u> : "𛃤"  U1B0E4  # HENTAIGANA LETTER YU-2
+<Multi_key> <j> <c> <3> <y> <u> : "𛃥"  U1B0E5  # HENTAIGANA LETTER YU-3
+<Multi_key> <j> <c> <4> <y> <u> : "𛃦"  U1B0E6  # HENTAIGANA LETTER YU-4
+<Multi_key> <j> <c> <1> <y> <o> : "𛃧"  U1B0E7  # HENTAIGANA LETTER YO-1
+<Multi_key> <j> <c> <2> <y> <o> : "𛃨"  U1B0E8  # HENTAIGANA LETTER YO-2
+<Multi_key> <j> <c> <3> <y> <o> : "𛃩"  U1B0E9  # HENTAIGANA LETTER YO-3
+<Multi_key> <j> <c> <4> <y> <o> : "𛃪"  U1B0EA  # HENTAIGANA LETTER YO-4
+<Multi_key> <j> <c> <5> <y> <o> : "𛃫"  U1B0EB  # HENTAIGANA LETTER YO-5
+<Multi_key> <j> <c> <6> <y> <o> : "𛃬"  U1B0EC  # HENTAIGANA LETTER YO-6
+<Multi_key> <j> <c> <7> <y> <o> : "𛃢"  U1B0E2  # HENTAIGANA LETTER YA-YO
+<Multi_key> <j> <c> <1> <r> <a> : "𛃭"  U1B0ED  # HENTAIGANA LETTER RA-1
+<Multi_key> <j> <c> <2> <r> <a> : "𛃮"  U1B0EE  # HENTAIGANA LETTER RA-2
+<Multi_key> <j> <c> <3> <r> <a> : "𛃯"  U1B0EF  # HENTAIGANA LETTER RA-3
+<Multi_key> <j> <c> <4> <r> <a> : "𛃰"  U1B0F0  # HENTAIGANA LETTER RA-4
+<Multi_key> <j> <c> <5> <r> <a> : "𛁽"  U1B07D  # HENTAIGANA LETTER TO-RA
+<Multi_key> <j> <c> <1> <r> <i> : "𛃱"  U1B0F1  # HENTAIGANA LETTER RI-1
+<Multi_key> <j> <c> <2> <r> <i> : "𛃲"  U1B0F2  # HENTAIGANA LETTER RI-2
+<Multi_key> <j> <c> <3> <r> <i> : "𛃳"  U1B0F3  # HENTAIGANA LETTER RI-3
+<Multi_key> <j> <c> <4> <r> <i> : "𛃴"  U1B0F4  # HENTAIGANA LETTER RI-4
+<Multi_key> <j> <c> <5> <r> <i> : "𛃵"  U1B0F5  # HENTAIGANA LETTER RI-5
+<Multi_key> <j> <c> <6> <r> <i> : "𛃶"  U1B0F6  # HENTAIGANA LETTER RI-6
+<Multi_key> <j> <c> <7> <r> <i> : "𛃷"  U1B0F7  # HENTAIGANA LETTER RI-7
+<Multi_key> <j> <c> <1> <r> <u> : "𛃸"  U1B0F8  # HENTAIGANA LETTER RU-1
+<Multi_key> <j> <c> <2> <r> <u> : "𛃹"  U1B0F9  # HENTAIGANA LETTER RU-2
+<Multi_key> <j> <c> <3> <r> <u> : "𛃺"  U1B0FA  # HENTAIGANA LETTER RU-3
+<Multi_key> <j> <c> <4> <r> <u> : "𛃻"  U1B0FB  # HENTAIGANA LETTER RU-4
+<Multi_key> <j> <c> <5> <r> <u> : "𛃼"  U1B0FC  # HENTAIGANA LETTER RU-5
+<Multi_key> <j> <c> <6> <r> <u> : "𛃽"  U1B0FD  # HENTAIGANA LETTER RU-6
+<Multi_key> <j> <c> <1> <r> <e> : "𛃾"  U1B0FE  # HENTAIGANA LETTER RE-1
+<Multi_key> <j> <c> <2> <r> <e> : "𛃿"  U1B0FF  # HENTAIGANA LETTER RE-2
+<Multi_key> <j> <c> <3> <r> <e> : "𛄀"  U1B100  # HENTAIGANA LETTER RE-3
+<Multi_key> <j> <c> <4> <r> <e> : "𛄁"  U1B101  # HENTAIGANA LETTER RE-4
+<Multi_key> <j> <c> <1> <r> <o> : "𛄂"  U1B102  # HENTAIGANA LETTER RO-1
+<Multi_key> <j> <c> <2> <r> <o> : "𛄃"  U1B103  # HENTAIGANA LETTER RO-2
+<Multi_key> <j> <c> <3> <r> <o> : "𛄄"  U1B104  # HENTAIGANA LETTER RO-3
+<Multi_key> <j> <c> <4> <r> <o> : "𛄅"  U1B105  # HENTAIGANA LETTER RO-4
+<Multi_key> <j> <c> <5> <r> <o> : "𛄆"  U1B106  # HENTAIGANA LETTER RO-5
+<Multi_key> <j> <c> <6> <r> <o> : "𛄇"  U1B107  # HENTAIGANA LETTER RO-6
+<Multi_key> <j> <c> <1> <w> <a> : "𛄈"  U1B108  # HENTAIGANA LETTER WA-1
+<Multi_key> <j> <c> <2> <w> <a> : "𛄉"  U1B109  # HENTAIGANA LETTER WA-2
+<Multi_key> <j> <c> <3> <w> <a> : "𛄊"  U1B10A  # HENTAIGANA LETTER WA-3
+<Multi_key> <j> <c> <4> <w> <a> : "𛄋"  U1B10B  # HENTAIGANA LETTER WA-4
+<Multi_key> <j> <c> <5> <w> <a> : "𛄌"  U1B10C  # HENTAIGANA LETTER WA-5
+<Multi_key> <j> <c> <1> <w> <i> : "𛄍"  U1B10D  # HENTAIGANA LETTER WI-1
+<Multi_key> <j> <c> <2> <w> <i> : "𛄎"  U1B10E  # HENTAIGANA LETTER WI-2
+<Multi_key> <j> <c> <3> <w> <i> : "𛄏"  U1B10F  # HENTAIGANA LETTER WI-3
+<Multi_key> <j> <c> <4> <w> <i> : "𛄐"  U1B110  # HENTAIGANA LETTER WI-4
+<Multi_key> <j> <c> <5> <w> <i> : "𛄑"  U1B111  # HENTAIGANA LETTER WI-5
+<Multi_key> <j> <c> <1> <w> <e> : "𛄒"  U1B112  # HENTAIGANA LETTER WE-1
+<Multi_key> <j> <c> <2> <w> <e> : "𛄓"  U1B113  # HENTAIGANA LETTER WE-2
+<Multi_key> <j> <c> <3> <w> <e> : "𛄔"  U1B114  # HENTAIGANA LETTER WE-3
+<Multi_key> <j> <c> <4> <w> <e> : "𛄕"  U1B115  # HENTAIGANA LETTER WE-4
+<Multi_key> <j> <c> <1> <w> <o> : "𛄖"  U1B116  # HENTAIGANA LETTER WO-1
+<Multi_key> <j> <c> <2> <w> <o> : "𛄗"  U1B117  # HENTAIGANA LETTER WO-2
+<Multi_key> <j> <c> <3> <w> <o> : "𛄘"  U1B118  # HENTAIGANA LETTER WO-3
+<Multi_key> <j> <c> <4> <w> <o> : "𛄙"  U1B119  # HENTAIGANA LETTER WO-4
+<Multi_key> <j> <c> <5> <w> <o> : "𛄚"  U1B11A  # HENTAIGANA LETTER WO-5
+<Multi_key> <j> <c> <6> <w> <o> : "𛄛"  U1B11B  # HENTAIGANA LETTER WO-6
+<Multi_key> <j> <c> <7> <w> <o> : "𛄜"  U1B11C  # HENTAIGANA LETTER WO-7
+<Multi_key> <j> <c> <8> <w> <o> : "𛀅"  U1B005  # HENTAIGANA LETTER A-WO
+<Multi_key> <j> <c> <1> <n> <n> : "𛄝"  U1B11D  # HENTAIGANA LETTER N-MU-MO-1
+<Multi_key> <j> <c> <2> <n> <n> : "𛄞"  U1B11E  # HENTAIGANA LETTER N-MU-MO-2
+
+<Multi_key> <j> <c> <1> <E> : "𛀀"  U1B000  # KATAKANA LETTER ARCHAIC E
 
 # Kanji
 
@@ -18964,7 +19355,7 @@ include "HangulSyllables"
 <Multi_key> <z> <semicolon> <L>          : "˪" U02EA    # MODIFIER LETTER YIN DEPARTING TONE MARK
 <Multi_key> <z> <semicolon> <T>          : "˫" U02EB    # MODIFIER LETTER YANG DEPARTING TONE MARK
 
-# Hanzi
+# Numerals
 
 <Multi_key> <z> <numbersign> <0>         : "零"  U96F6   # CJK UNIFIED IDEOGRAPH-96F6 (0)
 <Multi_key> <z> <numbersign> <O>         : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
@@ -18995,6 +19386,13 @@ include "HangulSyllables"
 <Multi_key> <z> <numbersign> <parenleft> <8> <parenright> : "㊇"  U3287  # CIRCLED IDEOGRAPH EIGHT
 <Multi_key> <z> <numbersign> <parenleft> <9> <parenright> : "㊈"  U3288  # CIRCLED IDEOGRAPH NINE
 <Multi_key> <z> <numbersign> <parenleft> <1> <0> <parenright> : "㊉"  U3289  # CIRCLED IDEOGRAPH TEN
+
+# Hanzi
+
+<Multi_key> <z> <c> <Y> <equal>          : "元" U5143    # CJK UNIFIED IDEOGRAPH-5143 (Chinese yuan) (use Y= for ¥)
+<Multi_key> <z> <c> <Y> <dollar>         : "圓" U5713    # CJK UNIFIED IDEOGRAPH-5713 (New Taiwan $)
+<Multi_key> <z> <c> <Y> <j>              : "角" U89D2    # CJK UNIFIED IDEOGRAPH-89D2 (Chinese jiao)
+<Multi_key> <z> <c> <Y> <f>              : "分" U5206    # CJK UNIFIED IDEOGRAPH-5206 (Chinese fen)
 
 <Multi_key> <z> <c> <braceleft> <1> <m> <braceright> : "㋀"  U32C0  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR JANUARY
 <Multi_key> <z> <c> <braceleft> <2> <m> <braceright> : "㋁"  U32C1  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR FEBRUARY
@@ -19067,10 +19465,403 @@ include "HangulSyllables"
 <Multi_key> <z> <c> <braceleft> <2> <3> <h> <braceright> : "㍯"  U336F  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR HOUR TWENTY-THREE
 <Multi_key> <z> <c> <braceleft> <2> <4> <h> <braceright> : "㍰"  U3370  # IDEOGRAPHIC TELEGRAPH SYMBOL FOR HOUR TWENTY-FOUR
 
-<Multi_key> <z> <c> <Y> <equal>          : "元" U5143    # CJK UNIFIED IDEOGRAPH-5143 (Chinese yuan) (use Y= for ¥)
-<Multi_key> <z> <c> <Y> <dollar>         : "圓" U5713    # CJK UNIFIED IDEOGRAPH-5713 (New Taiwan $)
-<Multi_key> <z> <c> <Y> <j>              : "角" U89D2    # CJK UNIFIED IDEOGRAPH-89D2 (Chinese jiao)
-<Multi_key> <z> <c> <Y> <f>              : "分" U5206    # CJK UNIFIED IDEOGRAPH-5206 (Chinese fen)
+# ({...} = strokes, radicals and ideographic description)
+
+# strokes listed by English name
+
+<Multi_key> <z> <braceleft> <H> <braceright> : "㇐"  U31D0  # CJK STROKE H
+<Multi_key> <z> <braceleft> <U> <braceright> : "㇀"  U31C0  # CJK STROKE T
+<Multi_key> <z> <braceleft> <V> <braceright> : "㇑"  U31D1  # CJK STROKE S
+<Multi_key> <z> <braceleft> <T> <braceright> : "㇒"  U31D2  # CJK STROKE P
+<Multi_key> <z> <braceleft> <W> <T> <braceright> : "㇓"  U31D3  # CJK STROKE SP
+<Multi_key> <z> <braceleft> <D> <braceright> : "㇔"  U31D4  # CJK STROKE D
+<Multi_key> <z> <braceleft> <P> <braceright> : "㇏"  U31CF  # CJK STROKE N
+<Multi_key> <z> <braceleft> <U> <P> <braceright> : "㇝"  U31DD  # CJK STROKE TN
+<Multi_key> <z> <braceleft> <O> <braceright> : "㇣"  U31E3  # CJK STROKE Q
+<Multi_key> <z> <braceleft> <H> <J> <braceright> : "㇖"  U31D6  # CJK STROKE HG
+<Multi_key> <z> <braceleft> <H> <T> <braceright> : "㇇"  U31C7  # CJK STROKE HP
+<Multi_key> <z> <braceleft> <H> <V> <braceright> : "㇕"  U31D5  # CJK STROKE HZ
+<Multi_key> <z> <braceleft> <H> <V> <J> <braceright> : "㇆"  U31C6  # CJK STROKE HZG
+<Multi_key> <z> <braceleft> <H> <V> <H> <braceright> : "㇅"  U31C5  # CJK STROKE HZZ
+<Multi_key> <z> <braceleft> <H> <V> <U> <braceright> : "㇊"  U31CA  # CJK STROKE HZT
+<Multi_key> <z> <braceleft> <H> <A> <braceright> : "㇍"  U31CD  # CJK STROKE HZW
+<Multi_key> <z> <braceleft> <H> <A> <J> <braceright> : "㇈"  U31C8  # CJK STROKE HZWG
+<Multi_key> <z> <braceleft> <H> <P> <G> <braceright> : "㇤"  U31E4  # CJK STROKE HXG
+<Multi_key> <z> <braceleft> <H> <T> <A> <J> <braceright> : "㇠"  U31E0  # CJK STROKE HXWG
+<Multi_key> <z> <braceleft> <H> <T> <H> <T> <braceright> : "㇋"  U31CB  # CJK STROKE HZZP
+<Multi_key> <z> <braceleft> <H> <T> <C> <J> <braceright> : "㇌"  U31CC  # CJK STROKE HPWG
+<Multi_key> <z> <braceleft> <H> <V> <H> <V> <braceright> : "㇎"  U31CE  # CJK STROKE HZZZ
+<Multi_key> <z> <braceleft> <H> <T> <H> <T> <J> <braceright> : "㇡"  U31E1  # CJK STROKE HZZZG
+<Multi_key> <z> <braceleft> <V> <U> <braceright> : "㇙"  U31D9  # CJK STROKE ST
+<Multi_key> <z> <braceleft> <V> <H> <braceright> : "㇗"  U31D7  # CJK STROKE SZ
+<Multi_key> <z> <braceleft> <V> <A> <braceright> : "㇄"  U31C4  # CJK STROKE SW
+<Multi_key> <z> <braceleft> <V> <A> <J> <braceright> : "㇟"  U31DF  # CJK STROKE SWG
+<Multi_key> <z> <braceleft> <V> <H> <V> <braceright> : "㇞"  U31DE  # CJK STROKE SZZ
+<Multi_key> <z> <braceleft> <V> <H> <T> <braceright> : "㇥"  U31E5  # CJK STROKE SZP
+<Multi_key> <z> <braceleft> <V> <H> <T> <J> <braceright> : "㇉"  U31C9  # CJK STROKE SZWG
+<Multi_key> <z> <braceleft> <V> <J> <braceright> : "㇚"  U31DA  # CJK STROKE SG
+<Multi_key> <z> <braceleft> <V> <C> <braceright> : "㇘"  U31D8  # CJK STROKE SWZ
+<Multi_key> <z> <braceleft> <T> <U> <braceright> : "㇜"  U31DC  # CJK STROKE PZ
+<Multi_key> <z> <braceleft> <T> <D> <braceright> : "㇛"  U31DB  # CJK STROKE PD
+<Multi_key> <z> <braceleft> <T> <J> <braceright> : "㇢"  U31E2  # CJK STROKE PG
+<Multi_key> <z> <braceleft> <C> <J> <braceright> : "㇁"  U31C1  # CJK STROKE WG
+<Multi_key> <z> <braceleft> <F> <P> <J> <braceright> : "㇃"  U31C3  # CJK STROKE BXG
+<Multi_key> <z> <braceleft> <P> <J> <braceright> : "㇂"  U31C2  # CJK STROKE XG
+
+# radicals listed by Kangxi order; extended radicals distinguished by position then by letter
+
+<Multi_key> <z> <braceleft> <1> <braceright> : "⼀"  U2F00  # KANGXI RADICAL ONE
+<Multi_key> <z> <braceleft> <2> <braceright> : "⼁"  U2F01  # KANGXI RADICAL LINE
+<Multi_key> <z> <braceleft> <3> <braceright> : "⼂"  U2F02  # KANGXI RADICAL DOT
+<Multi_key> <z> <braceleft> <4> <braceright> : "⼃"  U2F03  # KANGXI RADICAL SLASH
+<Multi_key> <z> <braceleft> <5> <braceright> : "⼄"  U2F04  # KANGXI RADICAL SECOND
+<Multi_key> <z> <braceleft> <6> <braceright> : "⼅"  U2F05  # KANGXI RADICAL HOOK
+<Multi_key> <z> <braceleft> <7> <braceright> : "⼆"  U2F06  # KANGXI RADICAL TWO
+<Multi_key> <z> <braceleft> <8> <braceright> : "⼇"  U2F07  # KANGXI RADICAL LID
+<Multi_key> <z> <braceleft> <9> <braceright> : "⼈"  U2F08  # KANGXI RADICAL MAN
+<Multi_key> <z> <braceleft> <1> <0> <braceright> : "⼉"  U2F09  # KANGXI RADICAL LEGS
+<Multi_key> <z> <braceleft> <1> <1> <braceright> : "⼊"  U2F0A  # KANGXI RADICAL ENTER
+<Multi_key> <z> <braceleft> <1> <2> <braceright> : "⼋"  U2F0B  # KANGXI RADICAL EIGHT
+<Multi_key> <z> <braceleft> <1> <3> <braceright> : "⼌"  U2F0C  # KANGXI RADICAL DOWN BOX
+<Multi_key> <z> <braceleft> <1> <4> <braceright> : "⼍"  U2F0D  # KANGXI RADICAL COVER
+<Multi_key> <z> <braceleft> <1> <5> <braceright> : "⼎"  U2F0E  # KANGXI RADICAL ICE
+<Multi_key> <z> <braceleft> <1> <6> <braceright> : "⼏"  U2F0F  # KANGXI RADICAL TABLE
+<Multi_key> <z> <braceleft> <1> <7> <braceright> : "⼐"  U2F10  # KANGXI RADICAL OPEN BOX
+<Multi_key> <z> <braceleft> <1> <8> <braceright> : "⼑"  U2F11  # KANGXI RADICAL KNIFE
+<Multi_key> <z> <braceleft> <1> <9> <braceright> : "⼒"  U2F12  # KANGXI RADICAL POWER
+<Multi_key> <z> <braceleft> <2> <0> <braceright> : "⼓"  U2F13  # KANGXI RADICAL WRAP
+<Multi_key> <z> <braceleft> <2> <1> <braceright> : "⼔"  U2F14  # KANGXI RADICAL SPOON
+<Multi_key> <z> <braceleft> <2> <2> <braceright> : "⼕"  U2F15  # KANGXI RADICAL RIGHT OPEN BOX
+<Multi_key> <z> <braceleft> <2> <3> <braceright> : "⼖"  U2F16  # KANGXI RADICAL HIDING ENCLOSURE
+<Multi_key> <z> <braceleft> <2> <4> <braceright> : "⼗"  U2F17  # KANGXI RADICAL TEN
+<Multi_key> <z> <braceleft> <2> <5> <braceright> : "⼘"  U2F18  # KANGXI RADICAL DIVINATION
+<Multi_key> <z> <braceleft> <2> <6> <braceright> : "⼙"  U2F19  # KANGXI RADICAL SEAL
+<Multi_key> <z> <braceleft> <2> <7> <braceright> : "⼚"  U2F1A  # KANGXI RADICAL CLIFF
+<Multi_key> <z> <braceleft> <2> <8> <braceright> : "⼛"  U2F1B  # KANGXI RADICAL PRIVATE
+<Multi_key> <z> <braceleft> <2> <9> <braceright> : "⼜"  U2F1C  # KANGXI RADICAL AGAIN
+<Multi_key> <z> <braceleft> <3> <0> <braceright> : "⼝"  U2F1D  # KANGXI RADICAL MOUTH
+<Multi_key> <z> <braceleft> <3> <1> <braceright> : "⼞"  U2F1E  # KANGXI RADICAL ENCLOSURE
+<Multi_key> <z> <braceleft> <3> <2> <braceright> : "⼟"  U2F1F  # KANGXI RADICAL EARTH
+<Multi_key> <z> <braceleft> <3> <3> <braceright> : "⼠"  U2F20  # KANGXI RADICAL SCHOLAR
+<Multi_key> <z> <braceleft> <3> <4> <braceright> : "⼡"  U2F21  # KANGXI RADICAL GO
+<Multi_key> <z> <braceleft> <3> <5> <braceright> : "⼢"  U2F22  # KANGXI RADICAL GO SLOWLY
+<Multi_key> <z> <braceleft> <3> <6> <braceright> : "⼣"  U2F23  # KANGXI RADICAL EVENING
+<Multi_key> <z> <braceleft> <3> <7> <braceright> : "⼤"  U2F24  # KANGXI RADICAL BIG
+<Multi_key> <z> <braceleft> <3> <8> <braceright> : "⼥"  U2F25  # KANGXI RADICAL WOMAN
+<Multi_key> <z> <braceleft> <3> <9> <braceright> : "⼦"  U2F26  # KANGXI RADICAL CHILD
+<Multi_key> <z> <braceleft> <4> <0> <braceright> : "⼧"  U2F27  # KANGXI RADICAL ROOF
+<Multi_key> <z> <braceleft> <4> <1> <braceright> : "⼨"  U2F28  # KANGXI RADICAL INCH
+<Multi_key> <z> <braceleft> <4> <2> <braceright> : "⼩"  U2F29  # KANGXI RADICAL SMALL
+<Multi_key> <z> <braceleft> <4> <3> <braceright> : "⼪"  U2F2A  # KANGXI RADICAL LAME
+<Multi_key> <z> <braceleft> <4> <4> <braceright> : "⼫"  U2F2B  # KANGXI RADICAL CORPSE
+<Multi_key> <z> <braceleft> <4> <5> <braceright> : "⼬"  U2F2C  # KANGXI RADICAL SPROUT
+<Multi_key> <z> <braceleft> <4> <6> <braceright> : "⼭"  U2F2D  # KANGXI RADICAL MOUNTAIN
+<Multi_key> <z> <braceleft> <4> <7> <braceright> : "⼮"  U2F2E  # KANGXI RADICAL RIVER
+<Multi_key> <z> <braceleft> <4> <8> <braceright> : "⼯"  U2F2F  # KANGXI RADICAL WORK
+<Multi_key> <z> <braceleft> <4> <9> <braceright> : "⼰"  U2F30  # KANGXI RADICAL ONESELF
+<Multi_key> <z> <braceleft> <5> <0> <braceright> : "⼱"  U2F31  # KANGXI RADICAL TURBAN
+<Multi_key> <z> <braceleft> <5> <1> <braceright> : "⼲"  U2F32  # KANGXI RADICAL DRY
+<Multi_key> <z> <braceleft> <5> <2> <braceright> : "⼳"  U2F33  # KANGXI RADICAL SHORT THREAD
+<Multi_key> <z> <braceleft> <5> <3> <braceright> : "⼴"  U2F34  # KANGXI RADICAL DOTTED CLIFF
+<Multi_key> <z> <braceleft> <5> <4> <braceright> : "⼵"  U2F35  # KANGXI RADICAL LONG STRIDE
+<Multi_key> <z> <braceleft> <5> <5> <braceright> : "⼶"  U2F36  # KANGXI RADICAL TWO HANDS
+<Multi_key> <z> <braceleft> <5> <6> <braceright> : "⼷"  U2F37  # KANGXI RADICAL SHOOT
+<Multi_key> <z> <braceleft> <5> <7> <braceright> : "⼸"  U2F38  # KANGXI RADICAL BOW
+<Multi_key> <z> <braceleft> <5> <8> <braceright> : "⼹"  U2F39  # KANGXI RADICAL SNOUT
+<Multi_key> <z> <braceleft> <5> <9> <braceright> : "⼺"  U2F3A  # KANGXI RADICAL BRISTLE
+<Multi_key> <z> <braceleft> <6> <0> <braceright> : "⼻"  U2F3B  # KANGXI RADICAL STEP
+<Multi_key> <z> <braceleft> <6> <1> <braceright> : "⼼"  U2F3C  # KANGXI RADICAL HEART
+<Multi_key> <z> <braceleft> <6> <2> <braceright> : "⼽"  U2F3D  # KANGXI RADICAL HALBERD
+<Multi_key> <z> <braceleft> <6> <3> <braceright> : "⼾"  U2F3E  # KANGXI RADICAL DOOR
+<Multi_key> <z> <braceleft> <6> <4> <braceright> : "⼿"  U2F3F  # KANGXI RADICAL HAND
+<Multi_key> <z> <braceleft> <6> <5> <braceright> : "⽀"  U2F40  # KANGXI RADICAL BRANCH
+<Multi_key> <z> <braceleft> <6> <6> <braceright> : "⽁"  U2F41  # KANGXI RADICAL RAP
+<Multi_key> <z> <braceleft> <6> <7> <braceright> : "⽂"  U2F42  # KANGXI RADICAL SCRIPT
+<Multi_key> <z> <braceleft> <6> <8> <braceright> : "⽃"  U2F43  # KANGXI RADICAL DIPPER
+<Multi_key> <z> <braceleft> <6> <9> <braceright> : "⽄"  U2F44  # KANGXI RADICAL AXE
+<Multi_key> <z> <braceleft> <7> <0> <braceright> : "⽅"  U2F45  # KANGXI RADICAL SQUARE
+<Multi_key> <z> <braceleft> <7> <1> <braceright> : "⽆"  U2F46  # KANGXI RADICAL NOT
+<Multi_key> <z> <braceleft> <7> <2> <braceright> : "⽇"  U2F47  # KANGXI RADICAL SUN
+<Multi_key> <z> <braceleft> <7> <3> <braceright> : "⽈"  U2F48  # KANGXI RADICAL SAY
+<Multi_key> <z> <braceleft> <7> <4> <braceright> : "⽉"  U2F49  # KANGXI RADICAL MOON
+<Multi_key> <z> <braceleft> <7> <5> <braceright> : "⽊"  U2F4A  # KANGXI RADICAL TREE
+<Multi_key> <z> <braceleft> <7> <6> <braceright> : "⽋"  U2F4B  # KANGXI RADICAL LACK
+<Multi_key> <z> <braceleft> <7> <7> <braceright> : "⽌"  U2F4C  # KANGXI RADICAL STOP
+<Multi_key> <z> <braceleft> <7> <8> <braceright> : "⽍"  U2F4D  # KANGXI RADICAL DEATH
+<Multi_key> <z> <braceleft> <7> <9> <braceright> : "⽎"  U2F4E  # KANGXI RADICAL WEAPON
+<Multi_key> <z> <braceleft> <8> <0> <braceright> : "⽏"  U2F4F  # KANGXI RADICAL DO NOT
+<Multi_key> <z> <braceleft> <8> <1> <braceright> : "⽐"  U2F50  # KANGXI RADICAL COMPARE
+<Multi_key> <z> <braceleft> <8> <2> <braceright> : "⽑"  U2F51  # KANGXI RADICAL FUR
+<Multi_key> <z> <braceleft> <8> <3> <braceright> : "⽒"  U2F52  # KANGXI RADICAL CLAN
+<Multi_key> <z> <braceleft> <8> <4> <braceright> : "⽓"  U2F53  # KANGXI RADICAL STEAM
+<Multi_key> <z> <braceleft> <8> <5> <braceright> : "⽔"  U2F54  # KANGXI RADICAL WATER
+<Multi_key> <z> <braceleft> <8> <6> <braceright> : "⽕"  U2F55  # KANGXI RADICAL FIRE
+<Multi_key> <z> <braceleft> <8> <7> <braceright> : "⽖"  U2F56  # KANGXI RADICAL CLAW
+<Multi_key> <z> <braceleft> <8> <8> <braceright> : "⽗"  U2F57  # KANGXI RADICAL FATHER
+<Multi_key> <z> <braceleft> <8> <9> <braceright> : "⽘"  U2F58  # KANGXI RADICAL DOUBLE X
+<Multi_key> <z> <braceleft> <9> <0> <braceright> : "⽙"  U2F59  # KANGXI RADICAL HALF TREE TRUNK
+<Multi_key> <z> <braceleft> <9> <1> <braceright> : "⽚"  U2F5A  # KANGXI RADICAL SLICE
+<Multi_key> <z> <braceleft> <9> <2> <braceright> : "⽛"  U2F5B  # KANGXI RADICAL FANG
+<Multi_key> <z> <braceleft> <9> <3> <braceright> : "⽜"  U2F5C  # KANGXI RADICAL COW
+<Multi_key> <z> <braceleft> <9> <4> <braceright> : "⽝"  U2F5D  # KANGXI RADICAL DOG
+<Multi_key> <z> <braceleft> <9> <5> <braceright> : "⽞"  U2F5E  # KANGXI RADICAL PROFOUND
+<Multi_key> <z> <braceleft> <9> <6> <braceright> : "⽟"  U2F5F  # KANGXI RADICAL JADE
+<Multi_key> <z> <braceleft> <9> <7> <braceright> : "⽠"  U2F60  # KANGXI RADICAL MELON
+<Multi_key> <z> <braceleft> <9> <8> <braceright> : "⽡"  U2F61  # KANGXI RADICAL TILE
+<Multi_key> <z> <braceleft> <9> <9> <braceright> : "⽢"  U2F62  # KANGXI RADICAL SWEET
+<Multi_key> <z> <braceleft> <1> <0> <0> <braceright> : "⽣"  U2F63  # KANGXI RADICAL LIFE
+<Multi_key> <z> <braceleft> <1> <0> <1> <braceright> : "⽤"  U2F64  # KANGXI RADICAL USE
+<Multi_key> <z> <braceleft> <1> <0> <2> <braceright> : "⽥"  U2F65  # KANGXI RADICAL FIELD
+<Multi_key> <z> <braceleft> <1> <0> <3> <braceright> : "⽦"  U2F66  # KANGXI RADICAL BOLT OF CLOTH
+<Multi_key> <z> <braceleft> <1> <0> <4> <braceright> : "⽧"  U2F67  # KANGXI RADICAL SICKNESS
+<Multi_key> <z> <braceleft> <1> <0> <5> <braceright> : "⽨"  U2F68  # KANGXI RADICAL DOTTED TENT
+<Multi_key> <z> <braceleft> <1> <0> <6> <braceright> : "⽩"  U2F69  # KANGXI RADICAL WHITE
+<Multi_key> <z> <braceleft> <1> <0> <7> <braceright> : "⽪"  U2F6A  # KANGXI RADICAL SKIN
+<Multi_key> <z> <braceleft> <1> <0> <8> <braceright> : "⽫"  U2F6B  # KANGXI RADICAL DISH
+<Multi_key> <z> <braceleft> <1> <0> <9> <braceright> : "⽬"  U2F6C  # KANGXI RADICAL EYE
+<Multi_key> <z> <braceleft> <1> <1> <0> <braceright> : "⽭"  U2F6D  # KANGXI RADICAL SPEAR
+<Multi_key> <z> <braceleft> <1> <1> <1> <braceright> : "⽮"  U2F6E  # KANGXI RADICAL ARROW
+<Multi_key> <z> <braceleft> <1> <1> <2> <braceright> : "⽯"  U2F6F  # KANGXI RADICAL STONE
+<Multi_key> <z> <braceleft> <1> <1> <3> <braceright> : "⽰"  U2F70  # KANGXI RADICAL SPIRIT
+<Multi_key> <z> <braceleft> <1> <1> <4> <braceright> : "⽱"  U2F71  # KANGXI RADICAL TRACK
+<Multi_key> <z> <braceleft> <1> <1> <5> <braceright> : "⽲"  U2F72  # KANGXI RADICAL GRAIN
+<Multi_key> <z> <braceleft> <1> <1> <6> <braceright> : "⽳"  U2F73  # KANGXI RADICAL CAVE
+<Multi_key> <z> <braceleft> <1> <1> <7> <braceright> : "⽴"  U2F74  # KANGXI RADICAL STAND
+<Multi_key> <z> <braceleft> <1> <1> <8> <braceright> : "⽵"  U2F75  # KANGXI RADICAL BAMBOO
+<Multi_key> <z> <braceleft> <1> <1> <9> <braceright> : "⽶"  U2F76  # KANGXI RADICAL RICE
+<Multi_key> <z> <braceleft> <1> <2> <0> <braceright> : "⽷"  U2F77  # KANGXI RADICAL SILK
+<Multi_key> <z> <braceleft> <1> <2> <1> <braceright> : "⽸"  U2F78  # KANGXI RADICAL JAR
+<Multi_key> <z> <braceleft> <1> <2> <2> <braceright> : "⽹"  U2F79  # KANGXI RADICAL NET
+<Multi_key> <z> <braceleft> <1> <2> <3> <braceright> : "⽺"  U2F7A  # KANGXI RADICAL SHEEP
+<Multi_key> <z> <braceleft> <1> <2> <4> <braceright> : "⽻"  U2F7B  # KANGXI RADICAL FEATHER
+<Multi_key> <z> <braceleft> <1> <2> <5> <braceright> : "⽼"  U2F7C  # KANGXI RADICAL OLD
+<Multi_key> <z> <braceleft> <1> <2> <6> <braceright> : "⽽"  U2F7D  # KANGXI RADICAL AND
+<Multi_key> <z> <braceleft> <1> <2> <7> <braceright> : "⽾"  U2F7E  # KANGXI RADICAL PLOW
+<Multi_key> <z> <braceleft> <1> <2> <8> <braceright> : "⽿"  U2F7F  # KANGXI RADICAL EAR
+<Multi_key> <z> <braceleft> <1> <2> <9> <braceright> : "⾀"  U2F80  # KANGXI RADICAL BRUSH
+<Multi_key> <z> <braceleft> <1> <3> <0> <braceright> : "⾁"  U2F81  # KANGXI RADICAL MEAT
+<Multi_key> <z> <braceleft> <1> <3> <1> <braceright> : "⾂"  U2F82  # KANGXI RADICAL MINISTER
+<Multi_key> <z> <braceleft> <1> <3> <2> <braceright> : "⾃"  U2F83  # KANGXI RADICAL SELF
+<Multi_key> <z> <braceleft> <1> <3> <3> <braceright> : "⾄"  U2F84  # KANGXI RADICAL ARRIVE
+<Multi_key> <z> <braceleft> <1> <3> <4> <braceright> : "⾅"  U2F85  # KANGXI RADICAL MORTAR
+<Multi_key> <z> <braceleft> <1> <3> <5> <braceright> : "⾆"  U2F86  # KANGXI RADICAL TONGUE
+<Multi_key> <z> <braceleft> <1> <3> <6> <braceright> : "⾇"  U2F87  # KANGXI RADICAL OPPOSE
+<Multi_key> <z> <braceleft> <1> <3> <7> <braceright> : "⾈"  U2F88  # KANGXI RADICAL BOAT
+<Multi_key> <z> <braceleft> <1> <3> <8> <braceright> : "⾉"  U2F89  # KANGXI RADICAL STOPPING
+<Multi_key> <z> <braceleft> <1> <3> <9> <braceright> : "⾊"  U2F8A  # KANGXI RADICAL COLOR
+<Multi_key> <z> <braceleft> <1> <4> <0> <braceright> : "⾋"  U2F8B  # KANGXI RADICAL GRASS
+<Multi_key> <z> <braceleft> <1> <4> <1> <braceright> : "⾌"  U2F8C  # KANGXI RADICAL TIGER
+<Multi_key> <z> <braceleft> <1> <4> <2> <braceright> : "⾍"  U2F8D  # KANGXI RADICAL INSECT
+<Multi_key> <z> <braceleft> <1> <4> <3> <braceright> : "⾎"  U2F8E  # KANGXI RADICAL BLOOD
+<Multi_key> <z> <braceleft> <1> <4> <4> <braceright> : "⾏"  U2F8F  # KANGXI RADICAL WALK ENCLOSURE
+<Multi_key> <z> <braceleft> <1> <4> <5> <braceright> : "⾐"  U2F90  # KANGXI RADICAL CLOTHES
+<Multi_key> <z> <braceleft> <1> <4> <6> <braceright> : "⾑"  U2F91  # KANGXI RADICAL WEST
+<Multi_key> <z> <braceleft> <1> <4> <7> <braceright> : "⾒"  U2F92  # KANGXI RADICAL SEE
+<Multi_key> <z> <braceleft> <1> <4> <8> <braceright> : "⾓"  U2F93  # KANGXI RADICAL HORN
+<Multi_key> <z> <braceleft> <1> <4> <9> <braceright> : "⾔"  U2F94  # KANGXI RADICAL SPEECH
+<Multi_key> <z> <braceleft> <1> <5> <0> <braceright> : "⾕"  U2F95  # KANGXI RADICAL VALLEY
+<Multi_key> <z> <braceleft> <1> <5> <1> <braceright> : "⾖"  U2F96  # KANGXI RADICAL BEAN
+<Multi_key> <z> <braceleft> <1> <5> <2> <braceright> : "⾗"  U2F97  # KANGXI RADICAL PIG
+<Multi_key> <z> <braceleft> <1> <5> <3> <braceright> : "⾘"  U2F98  # KANGXI RADICAL BADGER
+<Multi_key> <z> <braceleft> <1> <5> <4> <braceright> : "⾙"  U2F99  # KANGXI RADICAL SHELL
+<Multi_key> <z> <braceleft> <1> <5> <5> <braceright> : "⾚"  U2F9A  # KANGXI RADICAL RED
+<Multi_key> <z> <braceleft> <1> <5> <6> <braceright> : "⾛"  U2F9B  # KANGXI RADICAL RUN
+<Multi_key> <z> <braceleft> <1> <5> <7> <braceright> : "⾜"  U2F9C  # KANGXI RADICAL FOOT
+<Multi_key> <z> <braceleft> <1> <5> <8> <braceright> : "⾝"  U2F9D  # KANGXI RADICAL BODY
+<Multi_key> <z> <braceleft> <1> <5> <9> <braceright> : "⾞"  U2F9E  # KANGXI RADICAL CART
+<Multi_key> <z> <braceleft> <1> <6> <0> <braceright> : "⾟"  U2F9F  # KANGXI RADICAL BITTER
+<Multi_key> <z> <braceleft> <1> <6> <1> <braceright> : "⾠"  U2FA0  # KANGXI RADICAL MORNING
+<Multi_key> <z> <braceleft> <1> <6> <2> <braceright> : "⾡"  U2FA1  # KANGXI RADICAL WALK
+<Multi_key> <z> <braceleft> <1> <6> <3> <braceright> : "⾢"  U2FA2  # KANGXI RADICAL CITY
+<Multi_key> <z> <braceleft> <1> <6> <4> <braceright> : "⾣"  U2FA3  # KANGXI RADICAL WINE
+<Multi_key> <z> <braceleft> <1> <6> <5> <braceright> : "⾤"  U2FA4  # KANGXI RADICAL DISTINGUISH
+<Multi_key> <z> <braceleft> <1> <6> <6> <braceright> : "⾥"  U2FA5  # KANGXI RADICAL VILLAGE
+<Multi_key> <z> <braceleft> <1> <6> <7> <braceright> : "⾦"  U2FA6  # KANGXI RADICAL GOLD
+<Multi_key> <z> <braceleft> <1> <6> <8> <braceright> : "⾧"  U2FA7  # KANGXI RADICAL LONG
+<Multi_key> <z> <braceleft> <1> <6> <9> <braceright> : "⾨"  U2FA8  # KANGXI RADICAL GATE
+<Multi_key> <z> <braceleft> <1> <7> <0> <braceright> : "⾩"  U2FA9  # KANGXI RADICAL MOUND
+<Multi_key> <z> <braceleft> <1> <7> <1> <braceright> : "⾪"  U2FAA  # KANGXI RADICAL SLAVE
+<Multi_key> <z> <braceleft> <1> <7> <2> <braceright> : "⾫"  U2FAB  # KANGXI RADICAL SHORT TAILED BIRD
+<Multi_key> <z> <braceleft> <1> <7> <3> <braceright> : "⾬"  U2FAC  # KANGXI RADICAL RAIN
+<Multi_key> <z> <braceleft> <1> <7> <4> <braceright> : "⾭"  U2FAD  # KANGXI RADICAL BLUE
+<Multi_key> <z> <braceleft> <1> <7> <5> <braceright> : "⾮"  U2FAE  # KANGXI RADICAL WRONG
+<Multi_key> <z> <braceleft> <1> <7> <6> <braceright> : "⾯"  U2FAF  # KANGXI RADICAL FACE
+<Multi_key> <z> <braceleft> <1> <7> <7> <braceright> : "⾰"  U2FB0  # KANGXI RADICAL LEATHER
+<Multi_key> <z> <braceleft> <1> <7> <8> <braceright> : "⾱"  U2FB1  # KANGXI RADICAL TANNED LEATHER
+<Multi_key> <z> <braceleft> <1> <7> <9> <braceright> : "⾲"  U2FB2  # KANGXI RADICAL LEEK
+<Multi_key> <z> <braceleft> <1> <8> <0> <braceright> : "⾳"  U2FB3  # KANGXI RADICAL SOUND
+<Multi_key> <z> <braceleft> <1> <8> <1> <braceright> : "⾴"  U2FB4  # KANGXI RADICAL LEAF
+<Multi_key> <z> <braceleft> <1> <8> <2> <braceright> : "⾵"  U2FB5  # KANGXI RADICAL WIND
+<Multi_key> <z> <braceleft> <1> <8> <3> <braceright> : "⾶"  U2FB6  # KANGXI RADICAL FLY
+<Multi_key> <z> <braceleft> <1> <8> <4> <braceright> : "⾷"  U2FB7  # KANGXI RADICAL EAT
+<Multi_key> <z> <braceleft> <1> <8> <5> <braceright> : "⾸"  U2FB8  # KANGXI RADICAL HEAD
+<Multi_key> <z> <braceleft> <1> <8> <6> <braceright> : "⾹"  U2FB9  # KANGXI RADICAL FRAGRANT
+<Multi_key> <z> <braceleft> <1> <8> <7> <braceright> : "⾺"  U2FBA  # KANGXI RADICAL HORSE
+<Multi_key> <z> <braceleft> <1> <8> <8> <braceright> : "⾻"  U2FBB  # KANGXI RADICAL BONE
+<Multi_key> <z> <braceleft> <1> <8> <9> <braceright> : "⾼"  U2FBC  # KANGXI RADICAL TALL
+<Multi_key> <z> <braceleft> <1> <9> <0> <braceright> : "⾽"  U2FBD  # KANGXI RADICAL HAIR
+<Multi_key> <z> <braceleft> <1> <9> <1> <braceright> : "⾾"  U2FBE  # KANGXI RADICAL FIGHT
+<Multi_key> <z> <braceleft> <1> <9> <2> <braceright> : "⾿"  U2FBF  # KANGXI RADICAL SACRIFICIAL WINE
+<Multi_key> <z> <braceleft> <1> <9> <3> <braceright> : "⿀"  U2FC0  # KANGXI RADICAL CAULDRON
+<Multi_key> <z> <braceleft> <1> <9> <4> <braceright> : "⿁"  U2FC1  # KANGXI RADICAL GHOST
+<Multi_key> <z> <braceleft> <1> <9> <5> <braceright> : "⿂"  U2FC2  # KANGXI RADICAL FISH
+<Multi_key> <z> <braceleft> <1> <9> <6> <braceright> : "⿃"  U2FC3  # KANGXI RADICAL BIRD
+<Multi_key> <z> <braceleft> <1> <9> <7> <braceright> : "⿄"  U2FC4  # KANGXI RADICAL SALT
+<Multi_key> <z> <braceleft> <1> <9> <8> <braceright> : "⿅"  U2FC5  # KANGXI RADICAL DEER
+<Multi_key> <z> <braceleft> <1> <9> <9> <braceright> : "⿆"  U2FC6  # KANGXI RADICAL WHEAT
+<Multi_key> <z> <braceleft> <2> <0> <0> <braceright> : "⿇"  U2FC7  # KANGXI RADICAL HEMP
+<Multi_key> <z> <braceleft> <2> <0> <1> <braceright> : "⿈"  U2FC8  # KANGXI RADICAL YELLOW
+<Multi_key> <z> <braceleft> <2> <0> <2> <braceright> : "⿉"  U2FC9  # KANGXI RADICAL MILLET
+<Multi_key> <z> <braceleft> <2> <0> <3> <braceright> : "⿊"  U2FCA  # KANGXI RADICAL BLACK
+<Multi_key> <z> <braceleft> <2> <0> <4> <braceright> : "⿋"  U2FCB  # KANGXI RADICAL EMBROIDERY
+<Multi_key> <z> <braceleft> <2> <0> <5> <braceright> : "⿌"  U2FCC  # KANGXI RADICAL FROG
+<Multi_key> <z> <braceleft> <2> <0> <6> <braceright> : "⿍"  U2FCD  # KANGXI RADICAL TRIPOD
+<Multi_key> <z> <braceleft> <2> <0> <7> <braceright> : "⿎"  U2FCE  # KANGXI RADICAL DRUM
+<Multi_key> <z> <braceleft> <2> <0> <8> <braceright> : "⿏"  U2FCF  # KANGXI RADICAL RAT
+<Multi_key> <z> <braceleft> <2> <0> <9> <braceright> : "⿐"  U2FD0  # KANGXI RADICAL NOSE
+<Multi_key> <z> <braceleft> <2> <1> <0> <braceright> : "⿑"  U2FD1  # KANGXI RADICAL EVEN
+<Multi_key> <z> <braceleft> <2> <1> <1> <braceright> : "⿒"  U2FD2  # KANGXI RADICAL TOOTH
+<Multi_key> <z> <braceleft> <2> <1> <2> <braceright> : "⿓"  U2FD3  # KANGXI RADICAL DRAGON
+<Multi_key> <z> <braceleft> <2> <1> <3> <braceright> : "⿔"  U2FD4  # KANGXI RADICAL TURTLE
+<Multi_key> <z> <braceleft> <2> <1> <4> <braceright> : "⿕"  U2FD5  # KANGXI RADICAL FLUTE
+
+<Multi_key> <z> <braceleft> <3> <A> <braceright> : "⺀"  U2E80  # CJK RADICAL REPEAT
+<Multi_key> <z> <braceleft> <2> <7> <A> <braceright> : "⺁"  U2E81  # CJK RADICAL CLIFF
+<Multi_key> <z> <braceleft> <5> <A> <braceright> : "⺂"  U2E82  # CJK RADICAL SECOND ONE
+<Multi_key> <z> <braceleft> <5> <B> <braceright> : "⺃"  U2E83  # CJK RADICAL SECOND TWO
+<Multi_key> <z> <braceleft> <5> <C> <braceright> : "⺄"  U2E84  # CJK RADICAL SECOND THREE
+<Multi_key> <z> <braceleft> <9> <less> <braceright> : "⺅"  U2E85  # CJK RADICAL PERSON
+<Multi_key> <z> <braceleft> <1> <3> <A> <braceright> : "⺆"  U2E86  # CJK RADICAL BOX
+<Multi_key> <z> <braceleft> <1> <6> <A> <braceright> : "⺇"  U2E87  # CJK RADICAL TABLE
+<Multi_key> <z> <braceleft> <1> <8> <asciicircum> <braceright> : "⺈"  U2E88  # CJK RADICAL KNIFE ONE
+<Multi_key> <z> <braceleft> <1> <8> <greater> <braceright> : "⺉"  U2E89  # CJK RADICAL KNIFE TWO
+<Multi_key> <z> <braceleft> <2> <5> <asciicircum> <braceright> : "⺊"  U2E8A  # CJK RADICAL DIVINATION
+<Multi_key> <z> <braceleft> <2> <6> <underscore> <braceright> : "⺋"  U2E8B  # CJK RADICAL SEAL
+<Multi_key> <z> <braceleft> <4> <2> <asciicircum> <braceright> : "⺌"  U2E8C  # CJK RADICAL SMALL ONE
+<Multi_key> <z> <braceleft> <4> <2> <asciicircum> <A> <braceright> : "⺍"  U2E8D  # CJK RADICAL SMALL TWO
+<Multi_key> <z> <braceleft> <4> <3> <A> <braceright> : "⺎"  U2E8E  # CJK RADICAL LAME ONE
+<Multi_key> <z> <braceleft> <4> <3> <B> <braceright> : "⺏"  U2E8F  # CJK RADICAL LAME TWO
+<Multi_key> <z> <braceleft> <4> <3> <C> <braceright> : "⺐"  U2E90  # CJK RADICAL LAME THREE
+<Multi_key> <z> <braceleft> <4> <3> <D> <braceright> : "⺑"  U2E91  # CJK RADICAL LAME FOUR
+<Multi_key> <z> <braceleft> <4> <9> <A> <braceright> : "⺒"  U2E92  # CJK RADICAL SNAKE
+<Multi_key> <z> <braceleft> <5> <2> <A> <braceright> : "⺓"  U2E93  # CJK RADICAL THREAD
+<Multi_key> <z> <braceleft> <5> <8> <A> <braceright> : "⺔"  U2E94  # CJK RADICAL SNOUT ONE
+<Multi_key> <z> <braceleft> <5> <8> <B> <braceright> : "⺕"  U2E95  # CJK RADICAL SNOUT TWO
+<Multi_key> <z> <braceleft> <6> <1> <less> <braceright> : "⺖"  U2E96  # CJK RADICAL HEART ONE
+<Multi_key> <z> <braceleft> <6> <1> <underscore> <braceright> : "⺗"  U2E97  # CJK RADICAL HEART TWO
+<Multi_key> <z> <braceleft> <6> <4> <less> <braceright> : "⺘"  U2E98  # CJK RADICAL HAND
+<Multi_key> <z> <braceleft> <6> <6> <greater> <braceright> : "⺙"  U2E99  # CJK RADICAL RAP
+<Multi_key> <z> <braceleft> <7> <1> <A> <braceright> : "⺛"  U2E9B  # CJK RADICAL CHOKE
+<Multi_key> <z> <braceleft> <7> <2> <A> <braceright> : "⺜"  U2E9C  # CJK RADICAL SUN
+<Multi_key> <z> <braceleft> <7> <4> <A> <braceright> : "⺝"  U2E9D  # CJK RADICAL MOON
+<Multi_key> <z> <braceleft> <7> <8> <A> <braceright> : "⺞"  U2E9E  # CJK RADICAL DEATH
+<Multi_key> <z> <braceleft> <8> <0> <A> <braceright> : "⺟"  U2E9F  # CJK RADICAL MOTHER
+<Multi_key> <z> <braceleft> <8> <3> <A> <braceright> : "⺠"  U2EA0  # CJK RADICAL CIVILIAN
+<Multi_key> <z> <braceleft> <8> <5> <less> <braceright> : "⺡"  U2EA1  # CJK RADICAL WATER ONE
+<Multi_key> <z> <braceleft> <8> <5> <underscore> <braceright> : "⺢"  U2EA2  # CJK RADICAL WATER TWO
+<Multi_key> <z> <braceleft> <8> <6> <underscore> <braceright> : "⺣"  U2EA3  # CJK RADICAL FIRE
+<Multi_key> <z> <braceleft> <8> <7> <asciicircum> <braceright> : "⺤"  U2EA4  # CJK RADICAL PAW ONE
+<Multi_key> <z> <braceleft> <8> <7> <asciicircum> <A> <braceright> : "⺥"  U2EA5  # CJK RADICAL PAW TWO
+<Multi_key> <z> <braceleft> <9> <0> <A> <braceright> : "⺦"  U2EA6  # CJK RADICAL SIMPLIFIED HALF TREE TRUNK
+<Multi_key> <z> <braceleft> <9> <3> <A> <braceright> : "⺧"  U2EA7  # CJK RADICAL COW
+<Multi_key> <z> <braceleft> <9> <4> <less> <braceright> : "⺨"  U2EA8  # CJK RADICAL DOG
+<Multi_key> <z> <braceleft> <9> <6> <less> <braceright> : "⺩"  U2EA9  # CJK RADICAL JADE
+<Multi_key> <z> <braceleft> <1> <0> <3> <less> <braceright> : "⺪"  U2EAA  # CJK RADICAL BOLT OF CLOTH
+<Multi_key> <z> <braceleft> <1> <0> <9> <asciicircum> <braceright> : "⺫"  U2EAB  # CJK RADICAL EYE
+<Multi_key> <z> <braceleft> <1> <2> <2> <asciicircum> <braceright> : "⺫"  U2EAB  # CJK RADICAL EYE
+<Multi_key> <z> <braceleft> <1> <1> <3> <A> <braceright> : "⺬"  U2EAC  # CJK RADICAL SPIRIT ONE
+<Multi_key> <z> <braceleft> <1> <1> <3> <B> <braceright> : "⺭"  U2EAD  # CJK RADICAL SPIRIT TWO
+<Multi_key> <z> <braceleft> <1> <1> <8> <A> <braceright> : "⺮"  U2EAE  # CJK RADICAL BAMBOO
+<Multi_key> <z> <braceleft> <1> <2> <0> <less> <braceright> : "⺯"  U2EAF  # CJK RADICAL SILK
+<Multi_key> <z> <braceleft> <1> <2> <0> <less> <A> <braceright> : "⺰"  U2EB0  # CJK RADICAL C-SIMPLIFIED SILK
+<Multi_key> <z> <braceleft> <1> <2> <2> <A> <braceright> : "⺱"  U2EB1  # CJK RADICAL NET ONE
+<Multi_key> <z> <braceleft> <1> <0> <9> <A> <braceright> : "⺲"  U2EB2  # CJK RADICAL NET TWO
+<Multi_key> <z> <braceleft> <1> <2> <2> <B> <braceright> : "⺲"  U2EB2  # CJK RADICAL NET TWO
+<Multi_key> <z> <braceleft> <1> <2> <2> <C> <braceright> : "⺳"  U2EB3  # CJK RADICAL NET THREE
+<Multi_key> <z> <braceleft> <1> <2> <2> <D> <braceright> : "⺴"  U2EB4  # CJK RADICAL NET FOUR
+<Multi_key> <z> <braceleft> <1> <2> <2> <E> <braceright> : "⺵"  U2EB5  # CJK RADICAL MESH
+<Multi_key> <z> <braceleft> <1> <2> <3> <less> <braceright> : "⺶"  U2EB6  # CJK RADICAL SHEEP
+<Multi_key> <z> <braceleft> <1> <2> <3> <asciicircum> <braceright> : "⺷"  U2EB7  # CJK RADICAL RAM
+<Multi_key> <z> <braceleft> <1> <2> <3> <A> <braceright> : "⺸"  U2EB8  # CJK RADICAL EWE
+<Multi_key> <z> <braceleft> <1> <2> <5> <A> <braceright> : "⺹"  U2EB9  # CJK RADICAL OLD
+<Multi_key> <z> <braceleft> <1> <2> <9> <A> <braceright> : "⺺"  U2EBA  # CJK RADICAL BRUSH ONE
+<Multi_key> <z> <braceleft> <1> <2> <9> <B> <braceright> : "⺻"  U2EBB  # CJK RADICAL BRUSH TWO
+<Multi_key> <z> <braceleft> <1> <3> <0> <A> <braceright> : "⺼"  U2EBC  # CJK RADICAL MEAT
+<Multi_key> <z> <braceleft> <1> <3> <4> <A> <braceright> : "⺽"  U2EBD  # CJK RADICAL MORTAR
+<Multi_key> <z> <braceleft> <1> <4> <0> <A> <braceright> : "⺾"  U2EBE  # CJK RADICAL GRASS ONE
+<Multi_key> <z> <braceleft> <1> <4> <0> <B> <braceright> : "⺿"  U2EBF  # CJK RADICAL GRASS TWO
+<Multi_key> <z> <braceleft> <1> <4> <0> <C> <braceright> : "⻀"  U2EC0  # CJK RADICAL GRASS THREE
+<Multi_key> <z> <braceleft> <1> <4> <1> <A> <braceright> : "⻁"  U2EC1  # CJK RADICAL TIGER
+<Multi_key> <z> <braceleft> <1> <4> <5> <less> <braceright> : "⻂"  U2EC2  # CJK RADICAL CLOTHES
+<Multi_key> <z> <braceleft> <1> <4> <6> <asciicircum> <braceright> : "⻃"  U2EC3  # CJK RADICAL WEST ONE
+<Multi_key> <z> <braceleft> <1> <4> <6> <less> <braceright> : "⻄"  U2EC4  # CJK RADICAL WEST TWO
+<Multi_key> <z> <braceleft> <1> <4> <7> <A> <braceright> : "⻅"  U2EC5  # CJK RADICAL C-SIMPLIFIED SEE
+<Multi_key> <z> <braceleft> <1> <4> <8> <A> <braceright> : "⻆"  U2EC6  # CJK RADICAL SIMPLIFIED HORN
+<Multi_key> <z> <braceleft> <1> <4> <8> <B> <braceright> : "⻇"  U2EC7  # CJK RADICAL HORN
+<Multi_key> <z> <braceleft> <1> <4> <9> <A> <braceright> : "⻈"  U2EC8  # CJK RADICAL C-SIMPLIFIED SPEECH
+<Multi_key> <z> <braceleft> <1> <5> <4> <A> <braceright> : "⻉"  U2EC9  # CJK RADICAL C-SIMPLIFIED SHELL
+<Multi_key> <z> <braceleft> <1> <5> <7> <less> <braceright> : "⻊"  U2ECA  # CJK RADICAL FOOT
+<Multi_key> <z> <braceleft> <1> <5> <9> <A> <braceright> : "⻋"  U2ECB  # CJK RADICAL C-SIMPLIFIED CART
+<Multi_key> <z> <braceleft> <1> <6> <2> <A> <braceright> : "⻌"  U2ECC  # CJK RADICAL SIMPLIFIED WALK
+<Multi_key> <z> <braceleft> <1> <6> <2> <B> <braceright> : "⻍"  U2ECD  # CJK RADICAL WALK ONE
+<Multi_key> <z> <braceleft> <1> <6> <2> <C> <braceright> : "⻎"  U2ECE  # CJK RADICAL WALK TWO
+<Multi_key> <z> <braceleft> <1> <6> <3> <greater> <braceright> : "⻏"  U2ECF  # CJK RADICAL CITY
+<Multi_key> <z> <braceleft> <1> <6> <7> <A> <braceright> : "⻐"  U2ED0  # CJK RADICAL C-SIMPLIFIED GOLD
+<Multi_key> <z> <braceleft> <1> <6> <8> <A> <braceright> : "⻑"  U2ED1  # CJK RADICAL LONG ONE
+<Multi_key> <z> <braceleft> <1> <6> <8> <less> <braceright> : "⻒"  U2ED2  # CJK RADICAL LONG TWO
+<Multi_key> <z> <braceleft> <1> <6> <8> <B> <braceright> : "⻓"  U2ED3  # CJK RADICAL C-SIMPLIFIED LONG
+<Multi_key> <z> <braceleft> <1> <6> <9> <A> <braceright> : "⻔"  U2ED4  # CJK RADICAL C-SIMPLIFIED GATE
+<Multi_key> <z> <braceleft> <1> <7> <0> <A> <braceright> : "⻕"  U2ED5  # CJK RADICAL MOUND ONE
+<Multi_key> <z> <braceleft> <1> <7> <0> <less> <braceright> : "⻖"  U2ED6  # CJK RADICAL MOUND TWO
+<Multi_key> <z> <braceleft> <1> <7> <3> <A> <braceright> : "⻗"  U2ED7  # CJK RADICAL RAIN
+<Multi_key> <z> <braceleft> <1> <7> <4> <A> <braceright> : "⻘"  U2ED8  # CJK RADICAL BLUE
+<Multi_key> <z> <braceleft> <1> <7> <8> <A> <braceright> : "⻙"  U2ED9  # CJK RADICAL C-SIMPLIFIED TANNED LEATHER
+<Multi_key> <z> <braceleft> <1> <8> <1> <A> <braceright> : "⻚"  U2EDA  # CJK RADICAL C-SIMPLIFIED LEAF
+<Multi_key> <z> <braceleft> <1> <8> <2> <A> <braceright> : "⻛"  U2EDB  # CJK RADICAL C-SIMPLIFIED WIND
+<Multi_key> <z> <braceleft> <1> <8> <3> <A> <braceright> : "⻜"  U2EDC  # CJK RADICAL C-SIMPLIFIED FLY
+<Multi_key> <z> <braceleft> <1> <8> <4> <underscore> <braceright> : "⻝"  U2EDD  # CJK RADICAL EAT ONE
+<Multi_key> <z> <braceleft> <1> <8> <4> <less> <braceright> : "⻞"  U2EDE  # CJK RADICAL EAT TWO
+<Multi_key> <z> <braceleft> <1> <8> <4> <less> <A> <braceright> : "⻟"  U2EDF  # CJK RADICAL EAT THREE
+<Multi_key> <z> <braceleft> <1> <8> <4> <less> <B> <braceright> : "⻠"  U2EE0  # CJK RADICAL C-SIMPLIFIED EAT
+<Multi_key> <z> <braceleft> <1> <8> <5> <A> <braceright> : "⻡"  U2EE1  # CJK RADICAL HEAD
+<Multi_key> <z> <braceleft> <1> <8> <7> <A> <braceright> : "⻢"  U2EE2  # CJK RADICAL C-SIMPLIFIED HORSE
+<Multi_key> <z> <braceleft> <1> <8> <8> <A> <braceright> : "⻣"  U2EE3  # CJK RADICAL BONE
+<Multi_key> <z> <braceleft> <1> <9> <4> <A> <braceright> : "⻤"  U2EE4  # CJK RADICAL GHOST
+<Multi_key> <z> <braceleft> <1> <9> <5> <A> <braceright> : "⻥"  U2EE5  # CJK RADICAL C-SIMPLIFIED FISH
+<Multi_key> <z> <braceleft> <1> <9> <6> <A> <braceright> : "⻦"  U2EE6  # CJK RADICAL C-SIMPLIFIED BIRD
+<Multi_key> <z> <braceleft> <1> <9> <7> <A> <braceright> : "⻧"  U2EE7  # CJK RADICAL C-SIMPLIFIED SALT
+<Multi_key> <z> <braceleft> <1> <9> <9> <A> <braceright> : "⻨"  U2EE8  # CJK RADICAL SIMPLIFIED WHEAT
+<Multi_key> <z> <braceleft> <2> <0> <1> <A> <braceright> : "⻩"  U2EE9  # CJK RADICAL SIMPLIFIED YELLOW
+<Multi_key> <z> <braceleft> <2> <0> <5> <A> <braceright> : "⻪"  U2EEA  # CJK RADICAL C-SIMPLIFIED FROG
+<Multi_key> <z> <braceleft> <2> <1> <0> <A> <braceright> : "⻫"  U2EEB  # CJK RADICAL J-SIMPLIFIED EVEN
+<Multi_key> <z> <braceleft> <2> <1> <0> <B> <braceright> : "⻬"  U2EEC  # CJK RADICAL C-SIMPLIFIED EVEN
+<Multi_key> <z> <braceleft> <2> <1> <1> <A> <braceright> : "⻭"  U2EED  # CJK RADICAL J-SIMPLIFIED TOOTH
+<Multi_key> <z> <braceleft> <2> <1> <1> <B> <braceright> : "⻮"  U2EEE  # CJK RADICAL C-SIMPLIFIED TOOTH
+<Multi_key> <z> <braceleft> <2> <1> <2> <A> <braceright> : "⻯"  U2EEF  # CJK RADICAL J-SIMPLIFIED DRAGON
+<Multi_key> <z> <braceleft> <2> <1> <2> <B> <braceright> : "⻰"  U2EF0  # CJK RADICAL C-SIMPLIFIED DRAGON
+<Multi_key> <z> <braceleft> <2> <1> <3> <A> <braceright> : "⻱"  U2EF1  # CJK RADICAL TURTLE
+<Multi_key> <z> <braceleft> <2> <1> <3> <B> <braceright> : "⻲"  U2EF2  # CJK RADICAL J-SIMPLIFIED TURTLE
+<Multi_key> <z> <braceleft> <2> <1> <3> <C> <braceright> : "⻳"  U2EF3  # CJK RADICAL C-SIMPLIFIED TURTLE
+
+# ideographic description characters
+
+<Multi_key> <z> <braceleft> <greater> <braceright> : "⿰"  U2FF0  # IDEOGRAPHIC DESCRIPTION CHARACTER LEFT TO RIGHT
+<Multi_key> <z> <braceleft> <v> <braceright> : "⿱"  U2FF1  # IDEOGRAPHIC DESCRIPTION CHARACTER ABOVE TO BELOW
+<Multi_key> <z> <braceleft> <greater> <greater> <braceright> : "⿲"  U2FF2  # IDEOGRAPHIC DESCRIPTION CHARACTER LEFT TO MIDDLE AND RIGHT
+<Multi_key> <z> <braceleft> <v> <v> <braceright> : "⿳"  U2FF3  # IDEOGRAPHIC DESCRIPTION CHARACTER ABOVE TO MIDDLE AND BELOW
+<Multi_key> <z> <braceleft> <0> <braceright> : "⿴"  U2FF4  # IDEOGRAPHIC DESCRIPTION CHARACTER FULL SURROUND
+<Multi_key> <z> <braceleft> <N> <braceright> : "⿵"  U2FF5  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM ABOVE
+<Multi_key> <z> <braceleft> <S> <braceright> : "⿶"  U2FF6  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM BELOW
+<Multi_key> <z> <braceleft> <W> <braceright> : "⿷"  U2FF7  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM LEFT
+<Multi_key> <z> <braceleft> <N> <W> <braceright> : "⿸"  U2FF8  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM UPPER LEFT
+<Multi_key> <z> <braceleft> <N> <E> <braceright> : "⿹"  U2FF9  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM UPPER RIGHT
+<Multi_key> <z> <braceleft> <S> <W> <braceright> : "⿺"  U2FFA  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM LOWER LEFT
+<Multi_key> <z> <braceleft> <bracketleft> <bracketright> <braceright> : "⿻"  U2FFB  # IDEOGRAPHIC DESCRIPTION CHARACTER OVERLAID
+<Multi_key> <z> <braceleft> <E> <braceright> : "⿼"  U2FFC  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM RIGHT
+<Multi_key> <z> <braceleft> <S> <E> <braceright> : "⿽"  U2FFD  # IDEOGRAPHIC DESCRIPTION CHARACTER SURROUND FROM LOWER RIGHT
+<Multi_key> <z> <braceleft> <less> <greater> <braceright> : "⿾"  U2FFE  # IDEOGRAPHIC DESCRIPTION CHARACTER HORIZONTAL REFLECTION
+<Multi_key> <z> <braceleft> <less> <parenright> <braceright> : "⿿"  U2FFF  # IDEOGRAPHIC DESCRIPTION CHARACTER ROTATION
+<Multi_key> <z> <braceleft> <minus> <braceright> : "㇯"  U31EF  # IDEOGRAPHIC DESCRIPTION CHARACTER SUBTRACTION
 
 # (f = Fraser/Lisu)
 
@@ -27775,6 +28566,141 @@ include "Logograms"
 <Multi_key> <numbersign> <8> <s> : "🯸" U1FBF8    # SEGMENTED DIGIT EIGHT
 <Multi_key> <numbersign> <9> <s> : "🯹" U1FBF9    # SEGMENTED DIGIT NINE
 
+# (IS) Indic Siyaq numbers
+
+<Multi_key> <numbersign> <1> <I> <S> : "𞱱"  U1EC71  # INDIC SIYAQ NUMBER ONE
+<Multi_key> <numbersign> <2> <I> <S> : "𞱲"  U1EC72  # INDIC SIYAQ NUMBER TWO
+<Multi_key> <numbersign> <3> <I> <S> : "𞱳"  U1EC73  # INDIC SIYAQ NUMBER THREE
+<Multi_key> <numbersign> <4> <I> <S> : "𞱴"  U1EC74  # INDIC SIYAQ NUMBER FOUR
+<Multi_key> <numbersign> <5> <I> <S> : "𞱵"  U1EC75  # INDIC SIYAQ NUMBER FIVE
+<Multi_key> <numbersign> <6> <I> <S> : "𞱶"  U1EC76  # INDIC SIYAQ NUMBER SIX
+<Multi_key> <numbersign> <7> <I> <S> : "𞱷"  U1EC77  # INDIC SIYAQ NUMBER SEVEN
+<Multi_key> <numbersign> <8> <I> <S> : "𞱸"  U1EC78  # INDIC SIYAQ NUMBER EIGHT
+<Multi_key> <numbersign> <9> <I> <S> : "𞱹"  U1EC79  # INDIC SIYAQ NUMBER NINE
+<Multi_key> <numbersign> <1> <0> <I> <S> : "𞱺"  U1EC7A  # INDIC SIYAQ NUMBER TEN
+<Multi_key> <numbersign> <2> <0> <I> <S> : "𞱻"  U1EC7B  # INDIC SIYAQ NUMBER TWENTY
+<Multi_key> <numbersign> <3> <0> <I> <S> : "𞱼"  U1EC7C  # INDIC SIYAQ NUMBER THIRTY
+<Multi_key> <numbersign> <4> <0> <I> <S> : "𞱽"  U1EC7D  # INDIC SIYAQ NUMBER FORTY
+<Multi_key> <numbersign> <5> <0> <I> <S> : "𞱾"  U1EC7E  # INDIC SIYAQ NUMBER FIFTY
+<Multi_key> <numbersign> <6> <0> <I> <S> : "𞱿"  U1EC7F  # INDIC SIYAQ NUMBER SIXTY
+<Multi_key> <numbersign> <7> <0> <I> <S> : "𞲀"  U1EC80  # INDIC SIYAQ NUMBER SEVENTY
+<Multi_key> <numbersign> <8> <0> <I> <S> : "𞲁"  U1EC81  # INDIC SIYAQ NUMBER EIGHTY
+<Multi_key> <numbersign> <9> <0> <I> <S> : "𞲂"  U1EC82  # INDIC SIYAQ NUMBER NINETY
+<Multi_key> <numbersign> <1> <0> <0> <I> <S> : "𞲃"  U1EC83  # INDIC SIYAQ NUMBER ONE HUNDRED
+<Multi_key> <numbersign> <2> <0> <0> <I> <S> : "𞲄"  U1EC84  # INDIC SIYAQ NUMBER TWO HUNDRED
+<Multi_key> <numbersign> <3> <0> <0> <I> <S> : "𞲅"  U1EC85  # INDIC SIYAQ NUMBER THREE HUNDRED
+<Multi_key> <numbersign> <4> <0> <0> <I> <S> : "𞲆"  U1EC86  # INDIC SIYAQ NUMBER FOUR HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <I> <S> : "𞲇"  U1EC87  # INDIC SIYAQ NUMBER FIVE HUNDRED
+<Multi_key> <numbersign> <6> <0> <0> <I> <S> : "𞲈"  U1EC88  # INDIC SIYAQ NUMBER SIX HUNDRED
+<Multi_key> <numbersign> <7> <0> <0> <I> <S> : "𞲉"  U1EC89  # INDIC SIYAQ NUMBER SEVEN HUNDRED
+<Multi_key> <numbersign> <8> <0> <0> <I> <S> : "𞲊"  U1EC8A  # INDIC SIYAQ NUMBER EIGHT HUNDRED
+<Multi_key> <numbersign> <9> <0> <0> <I> <S> : "𞲋"  U1EC8B  # INDIC SIYAQ NUMBER NINE HUNDRED
+<Multi_key> <numbersign> <1> <0> <0> <0> <I> <S> : "𞲌"  U1EC8C  # INDIC SIYAQ NUMBER ONE THOUSAND
+<Multi_key> <numbersign> <2> <0> <0> <0> <I> <S> : "𞲍"  U1EC8D  # INDIC SIYAQ NUMBER TWO THOUSAND
+<Multi_key> <numbersign> <3> <0> <0> <0> <I> <S> : "𞲎"  U1EC8E  # INDIC SIYAQ NUMBER THREE THOUSAND
+<Multi_key> <numbersign> <4> <0> <0> <0> <I> <S> : "𞲏"  U1EC8F  # INDIC SIYAQ NUMBER FOUR THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <I> <S> : "𞲐"  U1EC90  # INDIC SIYAQ NUMBER FIVE THOUSAND
+<Multi_key> <numbersign> <6> <0> <0> <0> <I> <S> : "𞲑"  U1EC91  # INDIC SIYAQ NUMBER SIX THOUSAND
+<Multi_key> <numbersign> <7> <0> <0> <0> <I> <S> : "𞲒"  U1EC92  # INDIC SIYAQ NUMBER SEVEN THOUSAND
+<Multi_key> <numbersign> <8> <0> <0> <0> <I> <S> : "𞲓"  U1EC93  # INDIC SIYAQ NUMBER EIGHT THOUSAND
+<Multi_key> <numbersign> <9> <0> <0> <0> <I> <S> : "𞲔"  U1EC94  # INDIC SIYAQ NUMBER NINE THOUSAND
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <I> <S> : "𞲕"  U1EC95  # INDIC SIYAQ NUMBER TEN THOUSAND
+<Multi_key> <numbersign> <2> <0> <0> <0> <0> <I> <S> : "𞲖"  U1EC96  # INDIC SIYAQ NUMBER TWENTY THOUSAND
+<Multi_key> <numbersign> <3> <0> <0> <0> <0> <I> <S> : "𞲗"  U1EC97  # INDIC SIYAQ NUMBER THIRTY THOUSAND
+<Multi_key> <numbersign> <4> <0> <0> <0> <0> <I> <S> : "𞲘"  U1EC98  # INDIC SIYAQ NUMBER FORTY THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <0> <I> <S> : "𞲙"  U1EC99  # INDIC SIYAQ NUMBER FIFTY THOUSAND
+<Multi_key> <numbersign> <6> <0> <0> <0> <0> <I> <S> : "𞲚"  U1EC9A  # INDIC SIYAQ NUMBER SIXTY THOUSAND
+<Multi_key> <numbersign> <7> <0> <0> <0> <0> <I> <S> : "𞲛"  U1EC9B  # INDIC SIYAQ NUMBER SEVENTY THOUSAND
+<Multi_key> <numbersign> <8> <0> <0> <0> <0> <I> <S> : "𞲜"  U1EC9C  # INDIC SIYAQ NUMBER EIGHTY THOUSAND
+<Multi_key> <numbersign> <9> <0> <0> <0> <0> <I> <S> : "𞲝"  U1EC9D  # INDIC SIYAQ NUMBER NINETY THOUSAND
+<Multi_key> <numbersign> <1> <L> <I> <S> : "𞲞"  U1EC9E  # INDIC SIYAQ NUMBER LAKH
+<Multi_key> <numbersign> <2> <L> <I> <S> : "𞲟"  U1EC9F  # INDIC SIYAQ NUMBER LAKHAN
+<Multi_key> <numbersign> <L> <I> <S> : "𞲠"  U1ECA0  # INDIC SIYAQ LAKH MARK
+<Multi_key> <numbersign> <1> <c> <r> <I> <S> : "𞲡"  U1ECA1  # INDIC SIYAQ NUMBER KAROR
+<Multi_key> <numbersign> <2> <c> <r> <I> <S> : "𞲢"  U1ECA2  # INDIC SIYAQ NUMBER KARORAN
+<Multi_key> <numbersign> <less> <1> <I> <S> : "𞲣"  U1ECA3  # INDIC SIYAQ NUMBER PREFIXED ONE
+<Multi_key> <numbersign> <less> <2> <I> <S> : "𞲤"  U1ECA4  # INDIC SIYAQ NUMBER PREFIXED TWO
+<Multi_key> <numbersign> <less> <3> <I> <S> : "𞲥"  U1ECA5  # INDIC SIYAQ NUMBER PREFIXED THREE
+<Multi_key> <numbersign> <less> <4> <I> <S> : "𞲦"  U1ECA6  # INDIC SIYAQ NUMBER PREFIXED FOUR
+<Multi_key> <numbersign> <less> <5> <I> <S> : "𞲧"  U1ECA7  # INDIC SIYAQ NUMBER PREFIXED FIVE
+<Multi_key> <numbersign> <less> <6> <I> <S> : "𞲨"  U1ECA8  # INDIC SIYAQ NUMBER PREFIXED SIX
+<Multi_key> <numbersign> <less> <7> <I> <S> : "𞲩"  U1ECA9  # INDIC SIYAQ NUMBER PREFIXED SEVEN
+<Multi_key> <numbersign> <less> <8> <I> <S> : "𞲪"  U1ECAA  # INDIC SIYAQ NUMBER PREFIXED EIGHT
+<Multi_key> <numbersign> <less> <9> <I> <S> : "𞲫"  U1ECAB  # INDIC SIYAQ NUMBER PREFIXED NINE
+<Multi_key> <numbersign> <space> <I> <S> : "𞲬"  U1ECAC  # INDIC SIYAQ PLACEHOLDER
+<Multi_key> <numbersign> <1> <slash> <4> <I> <S> : "𞲭"  U1ECAD  # INDIC SIYAQ FRACTION ONE QUARTER
+<Multi_key> <numbersign> <1> <slash> <2> <I> <S> : "𞲮"  U1ECAE  # INDIC SIYAQ FRACTION ONE HALF
+<Multi_key> <numbersign> <3> <slash> <4> <I> <S> : "𞲯"  U1ECAF  # INDIC SIYAQ FRACTION THREE QUARTERS
+<Multi_key> <numbersign> <R> <u> <I> <S> : "𞲰"  U1ECB0  # INDIC SIYAQ RUPEE MARK
+<Multi_key> <numbersign> <1> <A> <I> <S> : "𞲱"  U1ECB1  # INDIC SIYAQ NUMBER ALTERNATE ONE
+<Multi_key> <numbersign> <2> <A> <I> <S> : "𞲲"  U1ECB2  # INDIC SIYAQ NUMBER ALTERNATE TWO
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <A> <I> <S> : "𞲳"  U1ECB3  # INDIC SIYAQ NUMBER ALTERNATE TEN THOUSAND
+<Multi_key> <numbersign> <L> <A> <I> <S> : "𞲴"  U1ECB4  # INDIC SIYAQ ALTERNATE LAKH MARK
+
+# (OS) Ottoman Siyaq numbers
+
+<Multi_key> <numbersign> <1> <O> <S> : "𞴁"  U1ED01  # OTTOMAN SIYAQ NUMBER ONE
+<Multi_key> <numbersign> <2> <O> <S> : "𞴂"  U1ED02  # OTTOMAN SIYAQ NUMBER TWO
+<Multi_key> <numbersign> <3> <O> <S> : "𞴃"  U1ED03  # OTTOMAN SIYAQ NUMBER THREE
+<Multi_key> <numbersign> <4> <O> <S> : "𞴄"  U1ED04  # OTTOMAN SIYAQ NUMBER FOUR
+<Multi_key> <numbersign> <5> <O> <S> : "𞴅"  U1ED05  # OTTOMAN SIYAQ NUMBER FIVE
+<Multi_key> <numbersign> <6> <O> <S> : "𞴆"  U1ED06  # OTTOMAN SIYAQ NUMBER SIX
+<Multi_key> <numbersign> <7> <O> <S> : "𞴇"  U1ED07  # OTTOMAN SIYAQ NUMBER SEVEN
+<Multi_key> <numbersign> <8> <O> <S> : "𞴈"  U1ED08  # OTTOMAN SIYAQ NUMBER EIGHT
+<Multi_key> <numbersign> <9> <O> <S> : "𞴉"  U1ED09  # OTTOMAN SIYAQ NUMBER NINE
+<Multi_key> <numbersign> <1> <0> <O> <S> : "𞴊"  U1ED0A  # OTTOMAN SIYAQ NUMBER TEN
+<Multi_key> <numbersign> <2> <0> <O> <S> : "𞴋"  U1ED0B  # OTTOMAN SIYAQ NUMBER TWENTY
+<Multi_key> <numbersign> <3> <0> <O> <S> : "𞴌"  U1ED0C  # OTTOMAN SIYAQ NUMBER THIRTY
+<Multi_key> <numbersign> <4> <0> <O> <S> : "𞴍"  U1ED0D  # OTTOMAN SIYAQ NUMBER FORTY
+<Multi_key> <numbersign> <5> <0> <O> <S> : "𞴎"  U1ED0E  # OTTOMAN SIYAQ NUMBER FIFTY
+<Multi_key> <numbersign> <6> <0> <O> <S> : "𞴏"  U1ED0F  # OTTOMAN SIYAQ NUMBER SIXTY
+<Multi_key> <numbersign> <7> <0> <O> <S> : "𞴐"  U1ED10  # OTTOMAN SIYAQ NUMBER SEVENTY
+<Multi_key> <numbersign> <8> <0> <O> <S> : "𞴑"  U1ED11  # OTTOMAN SIYAQ NUMBER EIGHTY
+<Multi_key> <numbersign> <9> <0> <O> <S> : "𞴒"  U1ED12  # OTTOMAN SIYAQ NUMBER NINETY
+<Multi_key> <numbersign> <1> <0> <0> <O> <S> : "𞴓"  U1ED13  # OTTOMAN SIYAQ NUMBER ONE HUNDRED
+<Multi_key> <numbersign> <2> <0> <0> <O> <S> : "𞴔"  U1ED14  # OTTOMAN SIYAQ NUMBER TWO HUNDRED
+<Multi_key> <numbersign> <3> <0> <0> <O> <S> : "𞴕"  U1ED15  # OTTOMAN SIYAQ NUMBER THREE HUNDRED
+<Multi_key> <numbersign> <4> <0> <0> <O> <S> : "𞴖"  U1ED16  # OTTOMAN SIYAQ NUMBER FOUR HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <O> <S> : "𞴗"  U1ED17  # OTTOMAN SIYAQ NUMBER FIVE HUNDRED
+<Multi_key> <numbersign> <6> <0> <0> <O> <S> : "𞴘"  U1ED18  # OTTOMAN SIYAQ NUMBER SIX HUNDRED
+<Multi_key> <numbersign> <7> <0> <0> <O> <S> : "𞴙"  U1ED19  # OTTOMAN SIYAQ NUMBER SEVEN HUNDRED
+<Multi_key> <numbersign> <8> <0> <0> <O> <S> : "𞴚"  U1ED1A  # OTTOMAN SIYAQ NUMBER EIGHT HUNDRED
+<Multi_key> <numbersign> <9> <0> <0> <O> <S> : "𞴛"  U1ED1B  # OTTOMAN SIYAQ NUMBER NINE HUNDRED
+<Multi_key> <numbersign> <1> <0> <0> <0> <O> <S> : "𞴜"  U1ED1C  # OTTOMAN SIYAQ NUMBER ONE THOUSAND
+<Multi_key> <numbersign> <2> <0> <0> <0> <O> <S> : "𞴝"  U1ED1D  # OTTOMAN SIYAQ NUMBER TWO THOUSAND
+<Multi_key> <numbersign> <3> <0> <0> <0> <O> <S> : "𞴞"  U1ED1E  # OTTOMAN SIYAQ NUMBER THREE THOUSAND
+<Multi_key> <numbersign> <4> <0> <0> <0> <O> <S> : "𞴟"  U1ED1F  # OTTOMAN SIYAQ NUMBER FOUR THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <O> <S> : "𞴠"  U1ED20  # OTTOMAN SIYAQ NUMBER FIVE THOUSAND
+<Multi_key> <numbersign> <6> <0> <0> <0> <O> <S> : "𞴡"  U1ED21  # OTTOMAN SIYAQ NUMBER SIX THOUSAND
+<Multi_key> <numbersign> <7> <0> <0> <0> <O> <S> : "𞴢"  U1ED22  # OTTOMAN SIYAQ NUMBER SEVEN THOUSAND
+<Multi_key> <numbersign> <8> <0> <0> <0> <O> <S> : "𞴣"  U1ED23  # OTTOMAN SIYAQ NUMBER EIGHT THOUSAND
+<Multi_key> <numbersign> <9> <0> <0> <0> <O> <S> : "𞴤"  U1ED24  # OTTOMAN SIYAQ NUMBER NINE THOUSAND
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <O> <S> : "𞴥"  U1ED25  # OTTOMAN SIYAQ NUMBER TEN THOUSAND
+<Multi_key> <numbersign> <2> <0> <0> <0> <0> <O> <S> : "𞴦"  U1ED26  # OTTOMAN SIYAQ NUMBER TWENTY THOUSAND
+<Multi_key> <numbersign> <3> <0> <0> <0> <0> <O> <S> : "𞴧"  U1ED27  # OTTOMAN SIYAQ NUMBER THIRTY THOUSAND
+<Multi_key> <numbersign> <4> <0> <0> <0> <0> <O> <S> : "𞴨"  U1ED28  # OTTOMAN SIYAQ NUMBER FORTY THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <0> <O> <S> : "𞴩"  U1ED29  # OTTOMAN SIYAQ NUMBER FIFTY THOUSAND
+<Multi_key> <numbersign> <6> <0> <0> <0> <0> <O> <S> : "𞴪"  U1ED2A  # OTTOMAN SIYAQ NUMBER SIXTY THOUSAND
+<Multi_key> <numbersign> <7> <0> <0> <0> <0> <O> <S> : "𞴫"  U1ED2B  # OTTOMAN SIYAQ NUMBER SEVENTY THOUSAND
+<Multi_key> <numbersign> <8> <0> <0> <0> <0> <O> <S> : "𞴬"  U1ED2C  # OTTOMAN SIYAQ NUMBER EIGHTY THOUSAND
+<Multi_key> <numbersign> <9> <0> <0> <0> <0> <O> <S> : "𞴭"  U1ED2D  # OTTOMAN SIYAQ NUMBER NINETY THOUSAND
+<Multi_key> <numbersign> <asterisk> <O> <S> : "𞴮"  U1ED2E  # OTTOMAN SIYAQ MARRATAN
+<Multi_key> <numbersign> <2> <A> <O> <S> : "𞴯"  U1ED2F  # OTTOMAN SIYAQ ALTERNATE NUMBER TWO
+<Multi_key> <numbersign> <3> <A> <O> <S> : "𞴰"  U1ED30  # OTTOMAN SIYAQ ALTERNATE NUMBER THREE
+<Multi_key> <numbersign> <4> <A> <O> <S> : "𞴱"  U1ED31  # OTTOMAN SIYAQ ALTERNATE NUMBER FOUR
+<Multi_key> <numbersign> <5> <A> <O> <S> : "𞴲"  U1ED32  # OTTOMAN SIYAQ ALTERNATE NUMBER FIVE
+<Multi_key> <numbersign> <6> <A> <O> <S> : "𞴳"  U1ED33  # OTTOMAN SIYAQ ALTERNATE NUMBER SIX
+<Multi_key> <numbersign> <7> <A> <O> <S> : "𞴴"  U1ED34  # OTTOMAN SIYAQ ALTERNATE NUMBER SEVEN
+<Multi_key> <numbersign> <8> <A> <O> <S> : "𞴵"  U1ED35  # OTTOMAN SIYAQ ALTERNATE NUMBER EIGHT
+<Multi_key> <numbersign> <9> <A> <O> <S> : "𞴶"  U1ED36  # OTTOMAN SIYAQ ALTERNATE NUMBER NINE
+<Multi_key> <numbersign> <1> <0> <A> <O> <S> : "𞴷"  U1ED37  # OTTOMAN SIYAQ ALTERNATE NUMBER TEN
+<Multi_key> <numbersign> <4> <0> <0> <A> <O> <S> : "𞴸"  U1ED38  # OTTOMAN SIYAQ ALTERNATE NUMBER FOUR HUNDRED
+<Multi_key> <numbersign> <6> <0> <0> <A> <O> <S> : "𞴹"  U1ED39  # OTTOMAN SIYAQ ALTERNATE NUMBER SIX HUNDRED
+<Multi_key> <numbersign> <2> <0> <0> <0> <A> <O> <S> : "𞴺"  U1ED3A  # OTTOMAN SIYAQ ALTERNATE NUMBER TWO THOUSAND
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <A> <O> <S> : "𞴻"  U1ED3B  # OTTOMAN SIYAQ ALTERNATE NUMBER TEN THOUSAND
+<Multi_key> <numbersign> <1> <slash> <2> <O> <S> : "𞴼"  U1ED3C  # OTTOMAN SIYAQ FRACTION ONE HALF
+<Multi_key> <numbersign> <1> <slash> <6> <S> : "𞴽"  U1ED3D  # OTTOMAN SIYAQ FRACTION ONE SIXTH
+
 #########################################
 # Astrological and astronomical symbols #
 #########################################
@@ -27978,6 +28904,20 @@ include "Logograms"
 <Multi_key> <I> <C> <1> <2> <1> <2> <1> <2> : "䷿"  U4DFF  # HEXAGRAM FOR BEFORE COMPLETION
 
 # Taixuanjing tetragrams: TJ + 1 (=tiān) / 2 (=dì) / 3 (=rén) from top to bottom
+
+<Multi_key> <T> <J> <1> <space> : "⚊"  U268A  # MONOGRAM FOR YANG
+<Multi_key> <T> <J> <2> <space> : "⚋"  U268B  # MONOGRAM FOR YIN
+<Multi_key> <T> <J> <3> <space> : "𝌀"  U1D300  # MONOGRAM FOR EARTH
+
+<Multi_key> <T> <J> <1> <1> <space> : "⚌"  U268C  # DIGRAM FOR GREATER YANG
+<Multi_key> <T> <J> <2> <1> <space> : "⚍"  U268D  # DIGRAM FOR LESSER YIN
+<Multi_key> <T> <J> <3> <1> <space> : "𝌃"  U1D303  # DIGRAM FOR EARTHLY HEAVEN
+<Multi_key> <T> <J> <1> <2> <space> : "⚎"  U268E  # DIGRAM FOR LESSER YANG
+<Multi_key> <T> <J> <2> <2> <space> : "⚏"  U268F  # DIGRAM FOR GREATER YIN
+<Multi_key> <T> <J> <3> <2> <space> : "𝌄"  U1D304  # DIGRAM FOR EARTHLY HUMAN
+<Multi_key> <T> <J> <1> <3> <space> : "𝌁"  U1D301  # DIGRAM FOR HEAVENLY EARTH
+<Multi_key> <T> <J> <2> <3> <space> : "𝌂"  U1D302  # DIGRAM FOR HUMAN EARTH
+<Multi_key> <T> <J> <3> <3> <space> : "𝌅"  U1D305  # DIGRAM FOR EARTH
 
 <Multi_key> <T> <J> <1> <1> <1> <1> : "𝌆"  U1D306  # TETRAGRAM FOR CENTRE
 <Multi_key> <T> <J> <1> <1> <1> <2> : "𝌇"  U1D307  # TETRAGRAM FOR FULL CIRCLE
