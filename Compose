@@ -210,6 +210,7 @@ include "%L"
 <Multi_key> <space> <parenright> <Return>              : "᫂"  U1AC2  # COMBINING RIGHT PARENTHESIS ABOVE RIGHT
 <Multi_key> <asciicircum> <bracketleft> <bracketright> <Return> : "᫅"  U1AC5  # COMBINING SQUARE BRACKETS ABOVE
 <Multi_key> <numbersign> <Return>                      : "᫆"  U1AC6  # COMBINING NUMBER SIGN ABOVE
+<Multi_key> <w> <Return>                               : "᫇"  U1AC7  # COMBINING INVERTED DOUBLE ARCH ABOVE
 <Multi_key> <asciicircum> <asciicircum> <plus> <Return> : "᫈"  U1AC8  # COMBINING PLUS SIGN ABOVE
 <Multi_key> <plus> <plus> <Return>                     : "᫉"  U1AC9  # COMBINING DOUBLE PLUS SIGN ABOVE (conflicts with useless #)
 <Multi_key> <apostrophe> <quotedbl> <Return>           : "᫋"  U1ACB  # COMBINING TRIPLE ACUTE ACCENT (not ideal, but ''' and 3' are taken)
@@ -276,12 +277,18 @@ include "%L"
 <Multi_key> <underscore> <o> <o> <Return>              : "͚"  U035A   # COMBINING DOUBLE RING BELOW (conflicts with ō, use -o)
 <Multi_key> <underscore> <underscore> <parenright> <Return> : "͜"  U035C   # COMBINING DOUBLE BREVE BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <x> <x> <Return> : "᪵"  U1AB5   # COMBINING X-X BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <asciitilde> <minus> <Return> : "᪶"  U1AB6  # COMBINING WIGGLY LINE BELOW
+<Multi_key> <underscore> <comma> <less> <Return>       : "᪷"  U1AB7  # COMBINING OPEN MARK BELOW
+<Multi_key> <underscore> <comma> <comma> <less> <Return> : "᪸"  U1AB8  # COMBINING DOUBLE OPEN MARK BELOW
+<Multi_key> <underscore> <slash> <Return>              : "᪹"  U1AB9  # COMBINING LIGHT CENTRALIZATION STROKE BELOW
+<Multi_key> <underscore> <period> <slash> <Return>     : "᪺"  U1ABA  # COMBINING STRONG CENTRALIZATION STROKE BELOW
 <Multi_key> <underscore> <underscore> <parenleft> <space> <parenright> <Return> : "᪽"  U1ABD   # COMBINING PARENTHESES BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <parenleft> <parenright> <Return> : "᪽"  U1ABD   # COMBINING PARENTHESES BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <W> <v> <Return>              : "ᫀ"  U1AC0   # COMBINING LATIN SMALL LETTER TURNED W BELOW
 <Multi_key> <underscore> <underscore> <parenleft> <space> <Return> : "᫃"  U1AC3  # COMBINING LEFT PARENTHESIS BELOW LEFT (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <space> <parenright> <Return> : "᫄"  U1AC4  # COMBINING RIGHT PARENTHESIS BELOW RIGHT (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <plus> <plus> <Return> : "᫊"  U1ACA  # COMBINING DOUBLE PLUS SIGN BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <z> <Return>                  : "᷏"  U1DCF  # COMBINING ZIGZAG BELOW
 <Multi_key> <asciicircum> <apostrophe> <apostrophe> <apostrophe> <Return> : "᷻"  U1DFB   # COMBINING DELETION MARK
 <Multi_key> <underscore> <asciitilde> <asciitilde> <Return> : "᷽"  U1DFD   # COMBINING ALMOST EQUAL TO BELOW
 <Multi_key> <underscore> <underscore> <parenleft> <Return> : "᷼"  U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (conflicts with ¯, use -^)
@@ -863,6 +870,8 @@ include "%L"
 
 # various other letters
 
+<Multi_key> <C> <less> <period>     : "Ꜿ"  UA73E  # LATIN CAPITAL LETTER REVERSED C WITH DOT (conflicts with Č, use vC)
+<Multi_key> <c> <less> <period>     : "ꜿ"  UA73F  # LATIN SMALL LETTER REVERSED C WITH DOT (conflicts with č, use vc)
 <Multi_key> <d> <z>                 : "ǳ"  U01F3   # LATIN SMALL LETTER DZ
 <Multi_key> <H> <G>                 : "Ꜧ"  UA726  # LATIN CAPITAL LETTER HENG
 <Multi_key> <h> <g>                 : "ꜧ"  UA727  # LATIN SMALL LETTER HENG
@@ -891,6 +900,17 @@ include "%L"
 <Multi_key> <less> <k>              : "𝼃"  U1DF03  # LATIN SMALL LETTER REVERSED K
 <Multi_key> <less> <Multi_key> <Z> <H> : "Ƹ"  U01B8  # LATIN CAPITAL LETTER EZH REVERSED
 <Multi_key> <less> <Multi_key> <z> <h> : "ƹ"  U01B9  # LATIN SMALL LETTER EZH REVERSED
+
+# scribal abbreviations (though most abbreviations are handled as letters or diacritics elsewhere)
+
+<Multi_key> <C> <U> <9>             : "Ꝯ"  UA76E  # LATIN CAPITAL LETTER CON
+<Multi_key> <c> <u> <9>             : "ꝯ"  UA76F  # LATIN SMALL LETTER CON (conflicts with ǔ, use vu)
+<Multi_key> <E> <T> <3>             : "Ꝫ"  UA76A  # LATIN CAPITAL LETTER ET
+<Multi_key> <e> <t> <3>             : "ꝫ"  UA76B  # LATIN SMALL LETTER ET
+<Multi_key> <I> <S> <f>             : "Ꝭ"  UA76C  # LATIN CAPITAL LETTER IS
+<Multi_key> <i> <s> <f>             : "ꝭ"  UA76D  # LATIN SMALL LETTER IS
+<Multi_key> <u> <m> <ampersand>     : "ꝸ"  UA778  # LATIN SMALL LETTER UM
+<Multi_key> <u> <s> <9>             : "ꝰ"  UA770  # MODIFIER LETTER US
 
 # letters with diacritics (prioritising using v for carons and - for horizontal strokes)
 
@@ -1000,6 +1020,8 @@ include "%L"
 <Multi_key> <R> <underscore> <slash> : "ꝶ"  UA776  # LATIN LETTER SMALL CAPITAL RUM
 <Multi_key> <r> <underscore> <slash> : "ꝵ"  UA775  # LATIN SMALL LETTER RUM
 <Multi_key> <t> <underscore> <slash> : "ꝷ"  UA777  # LATIN SMALL LETTER TUM
+<Multi_key> <Multi_key> <R> <parenright> <underscore> <slash> : "Ꝝ"  UA75C  # LATIN CAPITAL LETTER RUM ROTUNDA
+<Multi_key> <Multi_key> <r> <parenright> <underscore> <slash> : "ꝝ"  UA75D  # LATIN SMALL LETTER RUM ROTUNDA
 
 <Multi_key> <parenright> <A> : "Ꞻ"  UA7BA  # LATIN CAPITAL LETTER GLOTTAL A
 <Multi_key> <parenright> <a> : "ꞻ"  UA7BB  # LATIN SMALL LETTER GLOTTAL A
@@ -1049,7 +1071,10 @@ include "%L"
 <Multi_key> <Multi_key> <t> <apostrophe> <l> : "𝼉"  U1DF09  # LATIN SMALL LETTER T WITH HOOK AND RETROFLEX HOOK
 <Multi_key> <Multi_key> <z> <h> <l> : "ᶚ"  U1D9A  # LATIN SMALL LETTER EZH WITH RETROFLEX HOOK
 
-<Multi_key> <l> <d> : "𝼑"  U1DF11  # LATIN SMALL LETTER L WITH FISHHOOK (by analogy to rd)
+<Multi_key> <l> <d>                  : "𝼑"  U1DF11  # LATIN SMALL LETTER L WITH FISHHOOK (by analogy to rd)
+
+<Multi_key> <grave> <P>              : "Ꝕ"  UA754  # LATIN CAPITAL LETTER P WITH SQUIRREL TAIL
+<Multi_key> <grave> <p>              : "ꝕ"  UA755  # LATIN SMALL LETTER P WITH SQUIRREL TAIL
 
 <Multi_key> <S> <underscore> <comma> : "Ș"  U0218  # LATIN CAPITAL LETTER S WITH COMMA BELOW
 <Multi_key> <s> <underscore> <comma> : "ș"  U0219  # LATIN SMALL LETTER S WITH COMMA BELOW
@@ -1575,6 +1600,7 @@ include "%L"
 <Multi_key> <asciicircum> <asciicircum> <r> <parenright> <Return> : "ᷣ"  U1DE3  # COMBINING LATIN SMALL LETTER R ROTUNDA
 <Multi_key> <asciicircum> <asciicircum> <s> <h> <Return> : "ᷯ" U1DEF   # COMBINING LATIN SMALL LETTER ESH
 <Multi_key> <asciicircum> <asciicircum> <u> <quotedbl> <Return> : "ᷴ" U1DF4   # COMBINING LATIN SMALL LETTER U WITH DIAERESIS
+<Multi_key> <asciicircum> <asciicircum> <u> <s> <9> <Return> : "᷒"  U1DD2  # COMBINING US ABOVE
 
 # combining letters below: __x[Return]
 
