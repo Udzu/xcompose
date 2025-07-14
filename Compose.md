@@ -19,12 +19,12 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (174): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2576)
+### Latin script characters (2649)
 * **International Phonetic Alphabet** (126): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
-* **Latin script letters** (377): Ƿ Ȝ ␢ ȵ etc
+* **Latin script letters** (442): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (790): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 𜳖 etc
 * **Enclosed alphanumerics** (288): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (295): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
+* **Superscripts and subscripts** (303): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (384): ʣ ㏈ etc
 * **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
@@ -37,26 +37,26 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Cyrillic**, Glagolitic & Old Permic (565): Ре́ддит, Ⱃⰵδδιτ, 𐍠𐍔𐍓𐍓𐍙𐍢 etc
 * **Geʽez**, Adlam, Bamum, Bassa Vah, Garay, Mende Kikakui, Meroitic Cursive & Hieroglyphic, NKo & Vai (1308): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, 𖫦𖫬𖫗𖫭𖫡, ⁧𐵞𐵩𐵺𐵋𐵽⁩, ⁧𞠺𞠾𞡊⁩, ⁧𐦫𐦪𐦷𐦢𐦴⁩, ⁧𐦎𐦁𐦝𐦂𐦘⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian** & Caucasian Albanian (207): რედდიტ, ႰႤႣႣႨႲ, 𐕙𐔴𐔳𐔳𐔼𐔸 etc
-* **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian, Todhri & Vithkuqi (1129): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗, 𐗝𐗉𐗆𐗒𐗢, 𐖊𐖞𐖜𐖜𐖥𐖵 etc
+* **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian, Todhri & Vithkuqi (1130): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗, 𐗝𐗉𐗆𐗒𐗢, 𐖊𐖞𐖜𐖜𐖥𐖵 etc
 * **Hebrew**, Aramaic, Elymaic, Lydian, Palmyrene, Phoenician, Samaritan & Ugaritic (350): ⁧רֶדִיט⁩, ⁧𐡓𐡃𐡉𐡕⁩, ⁧𐿳𐿣𐿵⁩, ⁧𐤭𐤤𐤣𐤣𐤦𐤯⁩, ⁧𐡴𐡣𐡩𐡶⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩, 𐎗𐎄𐎚 etc
 * **Japanese** (mostly kana) (866): 「レディット」 etc
 * **Kawi Scripts**: Balinese, Batak, Baybayin, Buginese, Buhid, Hanunoo, Javanese, Old Kawi, Makasar, Rejang, Sundanese & Tagbanwa (485): ᬭᬾᬤᬶᬢ᭄, ᯒᯧᯑᯪᯖ᯲, ᜍᜒᜇᜒᜆ᜔, ᨑᨙᨉᨗ, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ꦫꦺꦢꦶꦠ, 𑼬𑼾𑼤𑼶𑼢, 𑻭𑻵𑻧𑻳, ꤽꥉꤴꥇꤳ, ᮛᮨᮓᮤᮒ᮪, ᝮᝲᝧᝲ, etc
 * **Korean** (11736): 레딧 etc
 * **International Morse Code** (76): ·-· · -·· -·· ·· - etc
-* **Old Italic**, Carian, Ogham, Old Hungarian, Runic & Old Turkic (381): 𐌓𐌄𐌃𐌃𐌉𐌕, 𐊥𐊺𐊢𐊢𐊹𐊭, ᚏᚓᚇᚔᚈ, ⁧𐲢𐳉𐳇𐳇𐳐𐳦⁩, ᚱᛖᛞᛞᛁᛏ, ⁧𐰺𐰅𐰑𐰃𐱃⁩ etc
+* **Old Italic**, Carian, Ogham, Old Hungarian, Runic & Old Turkic (382): 𐌓𐌄𐌃𐌃𐌉𐌕, 𐊥𐊺𐊢𐊢𐊹𐊭, ᚏᚓᚇᚔᚈ, ⁧𐲢𐳉𐳇𐳇𐳐𐳦⁩, ᚱᛖᛞᛞᛁᛏ, ⁧𐰺𐰅𐰑𐰃𐱃⁩ etc
 * **Sutton SignWriting** (667): 𝧿𝨾𝡇𝪜𝪡𝦈𝪪 etc
 * **Thai**, Cham, Khmer, Lao, Tai Tham & Tai Viet (502): เรดดิต, ꨣꨮꨖꨪꩅ, រេទិត, ເຣັດິຕ, ᩁᩮᨯᩥᨲ, ꪧꪵꪒꪲꪒ etc
 * **Zhuyin**, Fraser, Mongolian, New Tai Lue, ʼPhags-pa, Pollard, Soyombo, Tai LeTibetan, Yi, Zanabazar Square (2420): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ᦜᦵᦡᦲᧆ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, 𑩼𑩔𑩩𑩑𑪍, ᥘᥦᥖᥤᥖ, རེཌིཊ྄, ꏒꄶ, 𑨫𑨄𑨜𑨁𑨚𑨴 etc
 * **Logograms/undeciphered**: Anatolian Hieroglyphs, Cuneiform, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B (4635): 𔐅 𒆛 𒿌 𓀁 𐙞 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4931)
+### Symbols (4933)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (147): 🗫 🯅 ㋡ etc
 * **Math and science** (384): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (106): ⏻ ⎙ ⌘ etc
-* **Numerals** (352): 𝍸𝍷 𝍵 Ⅻ ↁ etc
+* **Numerals** (354): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (137): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (358): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
