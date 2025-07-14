@@ -142,7 +142,39 @@ include "%L"
 <Multi_key> <asciitilde> <underscore> <period> : "⸟"  U2E1F  # TILDE WITH DOT BELOW
 <Multi_key> <slash> <Multi_key> <period> : "⹊"  U2E4A  # DOTTED SOLIDUS
 
+# (spacing modifier letters, consistent with combining diacritics below afap)
+
+<Multi_key> <c> <less> <space>           : "ʾ"  U02BE  # MODIFIER LETTER RIGHT HALF RING (conflicts with č, use vc)
+<Multi_key> <c> <space>                  : "ʿ"  U02BF  # MODIFIER LETTER LEFT HALF RING
+<Multi_key> <asciicircum> <asciicircum> <space> : "˄"  U02C4  # MODIFIER LETTER UP ARROWHEAD
+<Multi_key> <asciicircum> <v> <space>    : "˅"  U02C5  # MODIFIER LETTER DOWN ARROWHEAD
 <Multi_key> <space> <v>                  : "ˇ"  U02C7  # CARON
+<Multi_key> <grave> <space>              : "ˋ"  U02CB  # MODIFIER LETTER GRAVE ACCENT
+<Multi_key> <underscore> <underscore> <underscore> <space> : "ˍ"  U02CD  # MODIFIER LETTER LOW MACRON (conflicts with ¯, use -^)
+<Multi_key> <underscore> <grave> <space> <space> : "ˎ"  U02CE  # MODIFIER LETTER LOW GRAVE ACCENT
+<Multi_key> <underscore> <apostrophe> <space> <space> : "ˏ"  U02CF  # MODIFIER LETTER LOW ACUTE ACCENT (conflicts with ⍘, use [Return]_')
+<Multi_key> <o> <space>                  : "˚"  U02DA  # RING ABOVE
+<Multi_key> <asciitilde> <space>         : "˜"  U02DC  # SMALL TILDE
+<Multi_key> <equal> <space>              : "˝"  U02DD  # DOUBLE ACUTE ACCENT
+<Multi_key> <x> <space>                  : "˟"  U02DF  # MODIFIER LETTER CROSS ACCENT
+<Multi_key> <underscore> <underscore> <v> <space> : "ˬ"  U02EC  # MODIFIER LETTER VOICING (conflicts with ¯, use -^)
+<Multi_key> <asciicircum> <underscore> <underscore> <space> : "˭"  U02ED  # MODIFIER LETTER UNASPIRATED
+<Multi_key> <underscore> <v> <space>     : "˯"  U02EF  # MODIFIER LETTER LOW DOWN ARROWHEAD
+<Multi_key> <underscore> <asciicircum> <space> : "˰"  U02F0  # MODIFIER LETTER LOW UP ARROWHEAD (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <less> <space> : "˱"  U02F1  # MODIFIER LETTER LOW LEFT ARROWHEAD (conflicts with ¯, use -^)
+<Multi_key> <underscore> <underscore> <greater> <space> : "˲"  U02F2  # MODIFIER LETTER LOW RIGHT ARROWHEAD (conflicts with ¯, use -^)
+<Multi_key> <underscore> <o> <space>     : "˳"  U02F3  # MODIFIER LETTER LOW RING (conflicts with ō)
+<Multi_key> <minus> <grave> <space>      : "˴"  U02F4  # MODIFIER LETTER MIDDLE GRAVE ACCENT
+<Multi_key> <minus> <grave> <grave> <space> : "˵"  U02F5  # MODIFIER LETTER MIDDLE DOUBLE GRAVE ACCENT (sadly -" is taken)
+<Multi_key> <minus> <equal> <space>      : "˶"  U02F6  # MODIFIER LETTER MIDDLE DOUBLE ACUTE ACCENT
+<Multi_key> <underscore> <asciitilde> <space> : "˷"  U02F7  # MODIFIER LETTER LOW TILDE
+<Multi_key> <asciicircum> <bracketleft> <space> : "˹"  U02F9  # MODIFIER LETTER BEGIN HIGH TONE
+<Multi_key> <asciicircum> <bracketright> <space> : "˺"  U02FA  # MODIFIER LETTER END HIGH TONE
+<Multi_key> <underscore> <bracketleft> <space> : "˻"  U02FB  # MODIFIER LETTER BEGIN LOW TONE
+<Multi_key> <underscore> <bracketright> <space> : "˼"  U02FC  # MODIFIER LETTER END LOW TONE
+<Multi_key> <underscore> <underscore> <bracketright> <space> : "˽"  U02FD  # MODIFIER LETTER SHELF (conflicts with ¯, use -^)
+<Multi_key> <underscore> <apostrophe> <minus> <space> : "˾"  U02FE  # MODIFIER LETTER OPEN SHELF (conflicts with ⍘, use [Return]_')
+<Multi_key> <underscore> <underscore> <less> <minus> <space> : "˿"  U02FF  # MODIFIER LETTER LOW LEFT ARROW (conflicts with ¯, use -^)
 <Multi_key> <2> <underscore> <space>     : "‗"  U2017  # DOUBLE LOW LINE
 
 ########################
@@ -860,6 +892,8 @@ include "%L"
 <Multi_key> <A> <less>              : "Ɒ"  U2C70   # LATIN CAPITAL LETTER TURNED ALPHA
 <Multi_key> <A> <question>          : "Ɂ"  U0241   # LATIN CAPITAL LETTER GLOTTAL STOP
 <Multi_key> <a> <question>          : "ɂ"  U0242   # LATIN SMALL LETTER GLOTTAL STOP
+<Multi_key> <a> <parenright>        : "ˀ"  U02C0  # MODIFIER LETTER GLOTTAL STOP
+<Multi_key> <a> <parenleft>         : "ˁ"  U02C1  # MODIFIER LETTER REVERSED GLOTTAL STOP (conflicts with ă, use ua)
 <Multi_key> <A> <Multi_key> <apostrophe> : "Ꞌ"  UA78B  # LATIN CAPITAL LETTER SALTILLO
 <Multi_key> <a> <Multi_key> <apostrophe> : "ꞌ"  UA78C  # LATIN SMALL LETTER SALTILLO
 <Multi_key> <B> <H>                 : "Ꞵ"  UA7B4   # LATIN CAPITAL LETTER BETA
@@ -899,8 +933,8 @@ include "%L"
 
 # various other letters
 
-<Multi_key> <A> <parenright>        : "Ꜣ"  UA722  # LATIN CAPITAL LETTER EGYPTOLOGICAL ALEF
-<Multi_key> <a> <parenright>        : "ꜣ"  UA723  # LATIN SMALL LETTER EGYPTOLOGICAL ALEF
+<Multi_key> <A> <2> <parenright>    : "Ꜣ"  UA722  # LATIN CAPITAL LETTER EGYPTOLOGICAL ALEF
+<Multi_key> <a> <2> <parenright>    : "ꜣ"  UA723  # LATIN SMALL LETTER EGYPTOLOGICAL ALEF
 <Multi_key> <d> <z>                 : "ǳ"  U01F3   # LATIN SMALL LETTER DZ
 <Multi_key> <E> <parenleft>         : "Ꜥ"  UA724  # LATIN CAPITAL LETTER EGYPTOLOGICAL AIN
 <Multi_key> <e> <parenleft>         : "ꜥ"  UA725  # LATIN SMALL LETTER EGYPTOLOGICAL AIN
@@ -998,7 +1032,7 @@ include "%L"
 <Multi_key> <less> <Multi_key> <n> <g> : "𝼇"  U1DF07  # LATIN SMALL LETTER REVERSED ENG
 <Multi_key> <less> <Multi_key> <Z> <H> : "Ƹ"  U01B8  # LATIN CAPITAL LETTER EZH REVERSED
 <Multi_key> <less> <Multi_key> <z> <h> : "ƹ"  U01B9  # LATIN SMALL LETTER EZH REVERSED
-<Multi_key> <c> <less> <space>      : "ↄ"  U2184  # LATIN SMALL LETTER REVERSED C (conflicts with č, use vc)
+<Multi_key> <C> <less> <space>      : "ↄ"  U2184  # LATIN SMALL LETTER REVERSED C (conflicts with Č, use vC)
 <Multi_key> <C> <less> <period>     : "Ꜿ"  UA73E  # LATIN CAPITAL LETTER REVERSED C WITH DOT (conflicts with Č, use vC)
 <Multi_key> <c> <less> <period>     : "ꜿ"  UA73F  # LATIN SMALL LETTER REVERSED C WITH DOT (conflicts with č, use vc)
 
@@ -23841,7 +23875,7 @@ include "Logograms"
 <Multi_key> <b> <e> <t> <w> <e> <e> <n> : "≬"  U226C   # BETWEEN (conflicts with ĕ, use ue)
 <Multi_key> <b> <u> <m> <p> <e> <q>     : "≏"  U224F   # DIFFERENCE BETWEEN (conflicts with ŭ, use uu)
 <Multi_key> <B> <u> <m> <p> <e> <q>     : "≎"  U224E   # GEOMETRICALLY EQUIVALENT TO
-<Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va) (use hat for 🧢)
+<Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va) (use hat for 👒, bbcap for 🧢)
 <Multi_key> <C> <a> <p>                 : "⋒"  U22D2   # DOUBLE INTERSECTION
 <Multi_key> <C> <A> <P>                 : "⋂"  U22C2   # N-ARY INTERSECTION
 <Multi_key> <C> <L>                     : "℄"  U2104   # CENTRE LINE SYMBOL
@@ -24425,6 +24459,7 @@ include "Logograms"
 <Multi_key> <c> <l> <o> <w> <n>     : "🤡"  U1F921        # CLOWN FACE (conflicts with ľ, use vl)
 <Multi_key> <c> <o> <l> <d>         : "🥶"  U1F976        # FREEZING FACE (COLD)  (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <o> <l>         : "😎"  U1F60E        # SMILING FACE WITH SUNGLASSES (COOL) (conflicts with ǒ, use vo)
+<Multi_key> <c> <o> <n> <f> <u> <s> : "😕"  U1F615        # CONFUSED FACE (conflicts with ǒ, use vo) (alternatively :L)
 <Multi_key> <c> <o> <v> <i> <d>     : "😷"  U1F637        # FACE WITH MEDICAL MASK (COVID) (conflicts with ǒ, use vo) (alternatively mask)
 <Multi_key> <c> <o> <y>             : "🤭"  U1F92D        # SMILING FACE WITH SMILING EYES AND HAND COVERING MOUTH (COY) (conflicts with ǒ, use vo)
 <Multi_key> <d> <e> <a> <d>         : "💀"  U1F480        # SKULL (DEAD)
@@ -24714,6 +24749,7 @@ include "Logograms"
 <Multi_key> <p> <a> <s> <t> <a>     : "🍝"  U1F35D        # SPAGHETTI (PASTA)
 <Multi_key> <p> <e> <a> <n> <u> <t> : "🥜"  U1F95C        # PEANUTS
 <Multi_key> <p> <e> <a> <r>         : "🍐"  U1F350        # PEAR
+<Multi_key> <p> <e> <a> <space>     : "🫛"  U1FADB        # PEA POD
 <Multi_key> <p> <e> <a> <s>         : "🫛"  U1FADB        # PEA POD
 <Multi_key> <p> <e> <p> <p> <e> <r> : "🫑"  U1FAD1        # BELL PEPPER (use spicy for 🌶️)
 <Multi_key> <p> <o> <t> <a> <t> <o> : "🥔"  U1F954        # POTATO
