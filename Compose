@@ -885,6 +885,8 @@ include "%L"
 # Latin script letters #
 ########################
 
+# (note that some letters are enoded as digraphs below)
+
 # capital versions of IPA letters
 
 <Multi_key> <A> <H>                 : "Ɑ"  U2C6D   # LATIN CAPITAL LETTER ALPHA
@@ -936,11 +938,15 @@ include "%L"
 
 <Multi_key> <A> <2> <parenright>    : "Ꜣ"  UA722  # LATIN CAPITAL LETTER EGYPTOLOGICAL ALEF
 <Multi_key> <a> <2> <parenright>    : "ꜣ"  UA723  # LATIN SMALL LETTER EGYPTOLOGICAL ALEF
+<Multi_key> <A> <U>                 : "Ꜷ"  UA736  # LATIN CAPITAL LETTER AU
+<Multi_key> <C> <bracketleft>       : "ʗ"  U0297  # LATIN LETTER STRETCHED C
+<Multi_key> <b> <i> <a>             : "ꭠ"  UAB60  # LATIN SMALL LETTER SAKHA YAT (conflicts with ĭ, use ui)
 <Multi_key> <d> <z>                 : "ǳ"  U01F3   # LATIN SMALL LETTER DZ
 <Multi_key> <E> <parenleft>         : "Ꜥ"  UA724  # LATIN CAPITAL LETTER EGYPTOLOGICAL AIN
 <Multi_key> <e> <parenleft>         : "ꜥ"  UA725  # LATIN SMALL LETTER EGYPTOLOGICAL AIN
 <Multi_key> <e> <parenright>        : "ʚ"  U029A  # LATIN SMALL LETTER CLOSED OPEN E
 <Multi_key> <f> <underscore>        : "ꬵ"  UAB35  # LATIN SMALL LETTER LENIS F
+<Multi_key> <f> <n>                 : "ʩ"  U02A9  # LATIN SMALL LETTER FENG DIGRAPH
 <Multi_key> <G> <O> <I>             : "Ƣ"  U01A2  # LATIN CAPITAL LETTER OI (GHA)
 <Multi_key> <g> <o> <i>             : "ƣ"  U01A3  # LATIN SMALL LETTER OI (GHA)
 <Multi_key> <H> <G>                 : "Ꜧ"  UA726  # LATIN CAPITAL LETTER HENG
@@ -956,6 +962,7 @@ include "%L"
 <Multi_key> <Multi_key> <o> <parenright> <e> : "ꭢ"  UAB62  # LATIN SMALL LETTER OPEN OE
 <Multi_key> <bar> <O>               : "Ꟁ"  UA7C0  # LATIN CAPITAL LETTER OLD POLISH O
 <Multi_key> <bar> <o>               : "ꟁ"  UA7C1  # LATIN SMALL LETTER OLD POLISH O
+<Multi_key> <parenleft> <p> <h>     : "ⱷ"  U2C77  # LATIN SMALL LETTER TAILLESS PHI
 <Multi_key> <Q> <3>                 : "Ꜫ"  UA72A  # LATIN CAPITAL LETTER TRESILLO
 <Multi_key> <q> <3>                 : "ꜫ"  UA72B  # LATIN SMALL LETTER TRESILLO
 <Multi_key> <R> <parenright>        : "Ꝛ"  UA75A  # LATIN CAPITAL LETTER R ROTUNDA
@@ -984,7 +991,7 @@ include "%L"
 <Multi_key> <grave> <l>             : "ᴥ"  U1D25  # LATIN LETTER AIN
 <Multi_key> <period> <minus>        : "ꞏ"  UA78F  # LATIN LETTER SINOLOGICAL DOT (conflicts with ·, use .^)
 
-# Zhuang tone letters
+# (Zhuang tone letters)
 
 <Multi_key> <Z> <2>                 : "Ƨ"  U01A7  # LATIN CAPITAL LETTER TONE TWO
 <Multi_key> <z> <2>                 : "ƨ"  U01A8  # LATIN SMALL LETTER TONE TWO
@@ -997,7 +1004,7 @@ include "%L"
 <Multi_key> <H> <6>                 : "Ƅ"  U0184  # LATIN CAPITAL LETTER TONE SIX
 <Multi_key> <h> <6>                 : "ƅ"  U0185  # LATIN SMALL LETTER TONE SIX
 
-# Volapük and Visigothic forms
+# (a few script-prefix shortcuts)
 
 <Multi_key> <V> <quotedbl> <A>      : "Ꞛ"  UA79A  # LATIN CAPITAL LETTER VOLAPUK AE
 <Multi_key> <V> <quotedbl> <a>      : "ꞛ"  UA79B  # LATIN SMALL LETTER VOLAPUK AE
@@ -1007,8 +1014,10 @@ include "%L"
 <Multi_key> <V> <quotedbl> <u>      : "ꞟ"  UA79F  # LATIN SMALL LETTER VOLAPUK UE
 <Multi_key> <V> <Z>                 : "Ꝣ"  UA762  # LATIN CAPITAL LETTER VISIGOTHIC Z
 <Multi_key> <V> <z>                 : "ꝣ"  UA763  # LATIN SMALL LETTER VISIGOTHIC Z
+<Multi_key> <W> <L> <L>             : "Ỻ"  U1EFA  # LATIN CAPITAL LETTER MIDDLE-WELSH LL
+<Multi_key> <W> <l> <l>             : "ỻ"  U1EFB  # LATIN SMALL LETTER MIDDLE-WELSH LL
 
-# scribal abbreviations (though most are handled elsewhere)
+# (scribal abbreviations, though most are handled elsewhere)
 
 <Multi_key> <C> <U> <9>             : "Ꝯ"  UA76E  # LATIN CAPITAL LETTER CON
 <Multi_key> <c> <u> <9>             : "ꝯ"  UA76F  # LATIN SMALL LETTER CON (conflicts with ǔ, use vu)
@@ -1019,7 +1028,7 @@ include "%L"
 <Multi_key> <u> <m> <ampersand>     : "ꝸ"  UA778  # LATIN SMALL LETTER UM
 <Multi_key> <u> <s> <9>             : "ꝰ"  UA770  # MODIFIER LETTER US
 
-# translated letters
+# transformed letters
 
 <Multi_key> <e> <v> <space>         : "ǝ"  U01DD  # LATIN SMALL LETTER TURNED E
 <Multi_key> <i> <v>                 : "ᴉ"  U1D09  # LATIN SMALL LETTER TURNED I
@@ -1032,6 +1041,7 @@ include "%L"
 <Multi_key> <t> <v> <space>         : "ʇ"  U0287  # LATIN SMALL LETTER TURNED T
 <Multi_key> <comma> <v>             : "ʻ"  U02BB   # MODIFIER LETTER TURNED COMMA
 <Multi_key> <Multi_key> <a> <e> <v> : "ᴂ"  U1D02  # LATIN SMALL LETTER TURNED AE
+<Multi_key> <Multi_key> <a> <h> <v> : "ꭤ"  UAB64  # LATIN SMALL LETTER INVERTED ALPHA
 <Multi_key> <Multi_key> <o> <e> <v> : "ᴔ"  U1D14  # LATIN SMALL LETTER TURNED OE
 <Multi_key> <Multi_key> <o> <e> <V> : "ꭀ"  UAB40  # LATIN SMALL LETTER INVERTED OE (not ideal)
 <Multi_key> <Multi_key> <slash> <o> <e> <v> : "ꭁ"  UAB41  # LATIN SMALL LETTER TURNED OE WITH STROKE
@@ -1104,10 +1114,15 @@ include "%L"
 <Multi_key> <minus> <minus> <2>     : "ƻ"  U01BB  # LATIN LETTER TWO WITH STROKE
 <Multi_key> <minus> <Multi_key> <A> <E> : "Ǣ"  U01E2  # LATIN CAPITAL LETTER AE WITH MACRON
 <Multi_key> <minus> <Multi_key> <a> <e> : "ǣ"  U01E3  # LATIN SMALL LETTER AE WITH MACRON
+<Multi_key> <minus> <Multi_key> <f> <s> : "ẝ"  U1E9D  # LATIN SMALL LETTER LONG S WITH HIGH STROKE
+<Multi_key> <minus> <Multi_key> <l> <s> : "ẝ"  U1E9D  # LATIN SMALL LETTER LONG S WITH HIGH STROKE
 <Multi_key> <minus> <Multi_key> <T> <H> : "ꝧ"  UA767  # LATIN SMALL LETTER THORN WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <Multi_key> <t> <h> : "Ꝧ"  UA766  # LATIN CAPITAL LETTER THORN WITH STROKE THROUGH DESCENDER
+
 <Multi_key> <equal> <L>             : "Ⱡ"  U2C60  # LATIN CAPITAL LETTER L WITH DOUBLE BAR (conflicts with ₤, use L=)
 <Multi_key> <equal> <l>             : "ⱡ"  U2C61  # LATIN SMALL LETTER L WITH DOUBLE BAR
+<Multi_key> <equal> <s> <h>         : "𝼋"  U1DF0B  # LATIN SMALL LETTER ESH WITH DOUBLE BAR
+<Multi_key> <equal> <Multi_key> <s> <h> <at> : "𝼌"  U1DF0C  # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
 
 <Multi_key> <minus> <bar> <D>       : "Ꟈ"  UA7C7  # LATIN CAPITAL LETTER D WITH SHORT STROKE OVERLAY
 <Multi_key> <minus> <bar> <d>       : "ꟈ"  UA7C8  # LATIN SMALL LETTER D WITH SHORT STROKE OVERLAY
@@ -1182,7 +1197,10 @@ include "%L"
 <Multi_key> <n> <at> : "ȵ"  U0235  # LATIN SMALL LETTER N WITH CURL (for ꬻ use [Multi_key]n@)
 <Multi_key> <s> <at> : "𝼞"  U1DF1E  # LATIN SMALL LETTER S WITH CURL
 <Multi_key> <t> <at> : "ȶ"  U0236  # LATIN SMALL LETTER T WITH CURL
+<Multi_key> <t> <v> <at> : "𝼍"  U1DF0D  # LATIN SMALL LETTER TURNED T WITH CURL
 <Multi_key> <v> <at> : "ⱴ"  U2C74  # LATIN SMALL LETTER V WITH CURL
+<Multi_key> <question> <v> <at> : "𝼎"  U1DF0E  # LATIN LETTER INVERTED GLOTTAL STOP WITH CURL
+<Multi_key> <Multi_key> <C> <bracketleft> <at> : "𝼏"  U1DF0F  # LATIN LETTER STRETCHED C WITH CURL
 <Multi_key> <Multi_key> <s> <h> <at> : "ʆ"  U0286  # LATIN SMALL LETTER ESH WITH CURL
 <Multi_key> <Multi_key> <z> <h> <at> : "ʓ"  U0293  # LATIN SMALL LETTER EZH WITH CURL
 
@@ -1274,6 +1292,8 @@ include "%L"
 <Multi_key> <asciitilde> <Z> : "Ɀ"  U2C7F  # LATIN CAPITAL LETTER Z WITH SWASH TAIL LATIN CAPITAL LETTER Z WITH SWASH TAIL
 <Multi_key> <asciitilde> <z> : "ɀ"  U0240  # LATIN SMALL LETTER Z WITH SWASH TAIL LATIN SMALL LETTER Z WITH SWASH TAIL
 
+<Multi_key> <f> <asciitilde> <n> : "𝼀"  U1DF00  # LATIN SMALL LETTER FENG DIGRAPH WITH TRILL
+
 <Multi_key> <K> <apostrophe> : "Ƙ"  U0198  # LATIN CAPITAL LETTER K WITH HOOK
 <Multi_key> <k> <apostrophe> : "ƙ"  U0199  # LATIN SMALL LETTER K WITH HOOK
 <Multi_key> <P> <apostrophe> : "Ƥ"  U01A4  # LATIN CAPITAL LETTER P WITH HOOK
@@ -1311,6 +1331,8 @@ include "%L"
 <Multi_key> <less> <comma> <s> : "𝼩"  U1DF29  # LATIN SMALL LETTER S WITH MID-HEIGHT LEFT HOOK
 <Multi_key> <less> <comma> <t> : "𝼪"  U1DF2A  # LATIN SMALL LETTER T WITH MID-HEIGHT LEFT HOOK
 <Multi_key> <less> <comma> <u> : "ꭒ"  UAB52   # LATIN SMALL LETTER U WITH LEFT HOOK
+
+<Multi_key> <c> <less> <a> : "ẚ"  U1E9A  # LATIN SMALL LETTER A WITH RIGHT HALF RING (conflicts with č, use vc)
 
 <Multi_key> <H> <bar> : "Ⱨ"  U2C67  # LATIN CAPITAL LETTER H WITH DESCENDER
 <Multi_key> <h> <bar> : "ⱨ"  U2C68  # LATIN SMALL LETTER H WITH DESCENDER
@@ -1581,6 +1603,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <s> <h> : "ᶴ"  U1DB4  # MODIFIER LETTER SMALL ESH
 <Multi_key> <asciicircum> <underscore> <Multi_key> <s> <j> : "𐞗"  U10797  # MODIFIER LETTER SMALL HENG WITH HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <s> <l> : "ᶳ"  U1DB3  # MODIFIER LETTER SMALL S WITH HOOK
+<Multi_key> <asciicircum> <underscore> <Multi_key> <semicolon> <t> : "ᶵ"  U1DB5  # MODIFIER LETTER SMALL T WITH PALATAL HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <t> <c> : "𐞫"  U107AB  # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
 <Multi_key> <asciicircum> <underscore> <Multi_key> <t> <l> : "𐞯"  U107AF  # MODIFIER LETTER SMALL T WITH RETROFLEX HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <t> <s> : "𐞬"  U107AC  # MODIFIER LETTER SMALL TS DIGRAPH
@@ -1595,6 +1618,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <Multi_key> <v> <backslash> : "ᶹ"  U1DB9  # MODIFIER LETTER SMALL V WITH HOOK
 <Multi_key> <asciicircum> <underscore> <Multi_key> <v> <v> : "ᶺ"  U1DBA  # MODIFIER LETTER SMALL TURNED V
 <Multi_key> <asciicircum> <underscore> <Multi_key> <v> <w> : "ᶹ"  U1DB9  # MODIFIER LETTER SMALL V WITH HOOK
+<Multi_key> <asciicircum> <underscore> <Multi_key> <w> <parenright> : "𐞤"  U107A4  # MODIFIER LETTER SMALL CLOSED OMEGA
 <Multi_key> <asciicircum> <underscore> <Multi_key> <w> <h> : "ᵚ"  U1D5A  # MODIFIER LETTER SMALL TURNED M
 <Multi_key> <asciicircum> <underscore> <Multi_key> <W> <v> : "ꭩ"  UAB69  # MODIFIER LETTER SMALL TURNED W
 <Multi_key> <asciicircum> <underscore> <Multi_key> <y> <h> : "𐞡"  U107A1  # MODIFIER LETTER SMALL TURNED Y WITH BELT
@@ -3232,9 +3256,11 @@ include "%L"
 <Multi_key> <braceleft> <Z> <H> <braceright> : "래" UB798   # HANGUL SYLLABLE RAE (visually similar)
 <Multi_key> <braceleft> <Z> <l> <braceright> : "리" UB9AC   # HANGUL SYLLABLE RI (visually similar)
 
-# multigraphs with some non-Latin letters
+# multigraphs with diacritics or some non-Latin letters
 
 <Multi_key> <braceleft> <Multi_key> <o> <A> <braceright> : "Å"  U212B  # ANGSTROM SIGN
+<Multi_key> <braceleft> <Multi_key> <minus> <A> <V> <braceright> : "Ꜻ"  UA73A  # LATIN CAPITAL LETTER AV WITH HORIZONTAL BAR
+<Multi_key> <braceleft> <Multi_key> <minus> <a> <v> <braceright> : "ꜻ"  UA73B  # LATIN SMALL LETTER AV WITH HORIZONTAL BAR
 <Multi_key> <braceleft> <d> <Multi_key> <z> <h> <braceright> : "ʤ"  U02A4  # LATIN SMALL LETTER DEZH DIGRAPH
 <Multi_key> <braceleft> <d> <Multi_key> <semicolon> <z> <h> <braceright> : "𝼒"  U1DF12  # LATIN SMALL LETTER DEZH DIGRAPH WITH PALATAL HOOK
 <Multi_key> <braceleft> <d> <Multi_key> <z> <h> <l> <braceright> : "𝼙"  U1DF19  # LATIN SMALL LETTER DEZH DIGRAPH WITH RETROFLEX HOOK
@@ -3248,6 +3274,8 @@ include "%L"
 <Multi_key> <braceleft> <Multi_key> <m> <u> <F> <braceright> : "㎌" U338C   # SQUARE MU F
 <Multi_key> <braceleft> <Multi_key> <m> <u> <V> <braceright> : "㎶" U33B6   # SQUARE MU V
 <Multi_key> <braceleft> <Multi_key> <m> <u> <W> <braceright> : "㎼" U33BC   # SQUARE MU W
+<Multi_key> <braceleft> <Multi_key> <f> <s> <t> <braceright> : "ﬅ"  UFB05  # LATIN SMALL LIGATURE LONG S T
+<Multi_key> <braceleft> <Multi_key> <l> <s> <t> <braceright> : "ﬅ"  UFB05  # LATIN SMALL LIGATURE LONG S T
 <Multi_key> <braceleft> <t> <Multi_key> <s> <l> <braceright> : "ꭧ"  UAB67  # LATIN SMALL LETTER TS DIGRAPH WITH RETROFLEX HOOK
 <Multi_key> <braceleft> <t> <Multi_key> <semicolon> <s> <h> <braceright> : "𝼗"  U1DF17  # LATIN SMALL LETTER TESH DIGRAPH WITH PALATAL HOOK
 <Multi_key> <braceleft> <t> <Multi_key> <s> <h> <l> <braceright> : "𝼜"  U1DF1C  # LATIN SMALL LETTER TESH DIGRAPH WITH RETROFLEX HOOK
@@ -14703,6 +14731,8 @@ include "%L"
 <Multi_key> <percent> <g> <l> <Multi_key> <slash> <u> : "ᵿ"  U1D7F  # LATIN SMALL LETTER UPSILON WITH STROKE
 <Multi_key> <percent> <g> <l> <Multi_key> <slash> <y> : "ᵿ"  U1D7F  # LATIN SMALL LETTER UPSILON WITH STROKE
 <Multi_key> <percent> <g> <l> <Multi_key> <c> <o> : "ꭔ"  UAB54  # LATIN SMALL LETTER CHI WITH LOW RIGHT RING
+
+<Multi_key> <g> <l> <asciicircum> <underscore> <i> : "ᶥ"  U1DA5  # MODIFIER LETTER SMALL IOTA
 
 #########################################
 # (G) Georgian (and Caucasian Albanian) #
