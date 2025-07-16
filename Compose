@@ -13658,6 +13658,11 @@ include "%L"
 <Multi_key> <g> <numbersign> <S> : "Ϡ"  U03E0  # GREEK LETTER SAMPI
 <Multi_key> <g> <numbersign> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
 
+<Multi_key> <g> <numbersign> <1> <slash> <2> : "𐅵"  U10175  # GREEK ONE HALF SIGN
+<Multi_key> <g> <numbersign> <2> <slash> <4> : "𐅶"  U10176  # GREEK ONE HALF SIGN ALTERNATE FORM
+<Multi_key> <g> <numbersign> <2> <slash> <3> : "𐅷"  U10177  # GREEK TWO THIRDS SIGN
+<Multi_key> <g> <numbersign> <3> <slash> <4> : "𐅸"  U10178  # GREEK THREE QUARTERS SIGN
+
 # diacritics
 
 <Multi_key> <g> <semicolon> <grave> <Return> : "̀"  U0300  # COMBINING GRAVE ACCENT (VARIA)
@@ -24045,6 +24050,35 @@ include "Logograms"
 <Multi_key> <Multi_key> <less> <backslash> <backslash> : "⫹"  U2AF9  # DOUBLE-LINE SLANTED LESS-THAN OR EQUAL TO
 <Multi_key> <Multi_key> <greater> <slash> <slash>    : "⫺"  U2AFA  # DOUBLE-LINE SLANTED GREATER-THAN OR EQUAL TO
 
+<Multi_key> <greater> <minus> <space>                 : "≻"  U227B  # SUCCEEDS
+<Multi_key> <greater> <minus> <equal>                 : "≽"  U227D  # SUCCEEDS OR EQUAL TO
+<Multi_key> <greater> <minus> <asciitilde>            : "≿"  U227F  # SUCCEEDS OR EQUIVALENT TO
+<Multi_key> <greater> <minus> <slash>                 : "⊁"  U2281  # DOES NOT SUCCEED
+<Multi_key> <slash> <Multi_key> <greater> <minus> <equal> : "⋡"  U22E1  # DOES NOT SUCCEED OR EQUAL
+<Multi_key> <greater> <minus> <Multi_key> <slash> <asciitilde> <space> : "⋩"  U22E9  # SUCCEEDS BUT NOT EQUIVALENT TO
+<Multi_key> <greater> <minus> <Multi_key> <minus>     : "⪰"  U2AB0  # SUCCEEDS ABOVE SINGLE-LINE EQUALS SIGN
+<Multi_key> <greater> <minus> <Multi_key> <slash> <minus> : "⪲"  U2AB2  # SUCCEEDS ABOVE SINGLE-LINE NOT EQUAL TO
+<Multi_key> <greater> <minus> <Multi_key> <equal>     : "⪴"  U2AB4  # SUCCEEDS ABOVE EQUALS SIGN
+<Multi_key> <greater> <minus> <Multi_key> <slash> <equal> : "⪶"  U2AB6  # SUCCEEDS ABOVE NOT EQUAL TO
+<Multi_key> <greater> <minus> <Multi_key> <asciitilde> <asciitilde> : "⪸"  U2AB8  # SUCCEEDS ABOVE ALMOST EQUAL TO
+<Multi_key> <greater> <minus> <Multi_key> <slash> <asciitilde> <asciitilde> : "⪺"  U2ABA  # SUCCEEDS ABOVE NOT ALMOST EQUAL TO
+<Multi_key> <Multi_key> <backslash> <greater> <minus> : "⋟"  U22DF  # EQUAL TO OR SUCCEEDS
+<Multi_key> <2> <Multi_key> <greater> <minus>         : "⪼"  U2ABC  # DOUBLE SUCCEEDS
+<Multi_key> <minus> <less> <space>                    : "≺"  U227A  # PRECEDES
+<Multi_key> <minus> <less> <equal>                    : "≼"  U227C  # PRECEDES OR EQUAL TO
+<Multi_key> <minus> <less> <asciitilde>               : "≾"  U227E  # PRECEDES OR EQUIVALENT TO
+<Multi_key> <minus> <less> <slash>                    : "⊀"  U2280  # DOES NOT PRECEDE
+<Multi_key> <slash> <Multi_key> <minus> <less> <equal> : "⋠"  U22E0  # DOES NOT PRECEDE OR EQUAL
+<Multi_key> <minus> <less> <Multi_key> <slash> <asciitilde> <space> : "⋨"  U22E8  # PRECEDES BUT NOT EQUIVALENT TO
+<Multi_key> <minus> <less> <Multi_key> <minus>        : "⪯"  U2AAF  # PRECEDES ABOVE SINGLE-LINE EQUALS SIGN
+<Multi_key> <minus> <less> <Multi_key> <slash> <minus> : "⪱"  U2AB1  # PRECEDES ABOVE SINGLE-LINE NOT EQUAL TO
+<Multi_key> <minus> <less> <Multi_key> <equal>        : "⪳"  U2AB3  # PRECEDES ABOVE EQUALS SIGN
+<Multi_key> <minus> <less> <Multi_key> <slash> <equal> : "⪵"  U2AB5  # PRECEDES ABOVE NOT EQUAL TO
+<Multi_key> <minus> <less> <Multi_key> <asciitilde> <asciitilde> : "⪷"  U2AB7  # PRECEDES ABOVE ALMOST EQUAL TO
+<Multi_key> <minus> <less> <Multi_key> <slash> <asciitilde> <asciitilde> : "⪹"  U2AB9  # PRECEDES ABOVE NOT ALMOST EQUAL TO
+<Multi_key> <Multi_key> <slash> <minus> <less>        : "⋞"  U22DE  # EQUAL TO OR PRECEDES
+<Multi_key> <2> <Multi_key> <minus> <less>            : "⪻"  U2ABB  # DOUBLE PRECEDES
+
 <Multi_key> <parenleft> <plus> <parenright>          : "⊕"  U2295   # CIRCLED PLUS
 <Multi_key> <parenleft> <minus> <parenright>         : "⊖"  U2296   # CIRCLED MINUS (conflicts with useless {)
 <Multi_key> <parenleft> <asterisk> <parenright>      : "⊗"  U2297   # CIRCLED TIMES
@@ -24160,7 +24194,7 @@ include "Logograms"
 <Multi_key> <o> <t> <i> <m> <e> <s>     : "⊗"  U2297  # CIRCLED TIMES
 <Multi_key> <O> <T> <I> <M> <E> <S>     : "⨂"  U2A02  # N-ARY CIRCLED TIMES OPERATOR
 <Multi_key> <P> <L>                     : "⅊"  U214A   # PROPERTY LINE
-<Multi_key> <p> <r> <e> <c> <space>     : "≺"  U227A   # PRECEDES
+<Multi_key> <p> <r> <e> <c> <space>     : "≺"  U227A   # PRECEDES (alternatively -< based shortcuts)
 <Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
 <Multi_key> <p> <r> <e> <c> <s> <i> <m> : "≾"  U227E   # PRECEDES OR EQUIVALENT TO
 <Multi_key> <p> <r> <o> <d>             : "∏"  U220F   # N-ARY PRODUCT
@@ -24197,7 +24231,7 @@ include "Logograms"
 <Multi_key> <s> <u> <b> <asciitilde> <asciitilde> : "⫉"  U2AC9  # SUBSET OF ABOVE ALMOST EQUAL TO
 <Multi_key> <s> <u> <b> <slash> <equal> : "⫋"  U2ACB  # SUBSET OF ABOVE NOT EQUAL TO
 <Multi_key> <backslash> <s> <u> <b>     : "⟈"  U27C8  # REVERSE SOLIDUS PRECEDING SUBSET
-<Multi_key> <s> <u> <c> <c> <space>     : "≻"  U227B   # SUCCEEDS
+<Multi_key> <s> <u> <c> <c> <space>     : "≻"  U227B   # SUCCEEDS (alternatively >- based shortcuts)
 <Multi_key> <s> <u> <c> <c> <e> <q>     : "≽"  U227D   # SUCCEEDS OR EQUAL TO
 <Multi_key> <s> <u> <c> <c> <s> <i> <m> : "≿"  U227F   # SUCCEEDS OR EQUIVALENT TO
 <Multi_key> <s> <u> <m>                 : "∑"  U2211   # N-ARY SUMMATION
