@@ -9,27 +9,27 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (557)
+### Common script characters (587)
 * **Spaces** (15): NBSP MMSP ZWSP etc
 * **Dashes** (12): – — ⁓ ⸻ etc
 * **Brackets** (24): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
-* **General punctuation** (30): ⁁ ⁂ ⸎ etc
+* **General punctuation** (60): ⁁ ⁂ ⸎ etc
 * **Currency symbols** (20): ₱ ₿ ₪ etc
 * **Combining diacritics** (174): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2576)
-* **International Phonetic Alphabet** (126): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
-* **Latin script letters** (377): Ƿ Ȝ ␢ ȵ etc
-* **Mathematical alphanumerics** (790): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 𜳖 etc
+### Latin script characters (2734)
+* **International Phonetic Alphabet** (128): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
+* **Latin script letters** (513): Ƿ Ȝ ␢ ȵ etc
+* **Mathematical alphanumerics** (792): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 𜳖 etc
 * **Enclosed alphanumerics** (288): ⓼ 🅛 🆛 ⒜ ⒓ etc
-* **Superscripts and subscripts** (295): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
-* **Multigraphs and ligatures** (384): ʣ ㏈ etc
-* **Letter games** (316): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
+* **Superscripts and subscripts** (309): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
+* **Multigraphs and ligatures** (389): ʣ ㏈ etc
+* **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (32711)
-* **Arabic**, Old North Arabian, Old South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Old Persian, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Hanifi Rohingya, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi (1988): ⁧رِيدِتْ⁩, ⁧𐪇𐪕𐪉⁩, ⁧𐬭𐬈𐬛𐬌𐬙⁩, ⁧𐩧𐩵𐩩⁩, ⁧𐿂𐾴𐾺𐿄⁩, ⁧𐣣𐣣𐣩𐣵⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧𐫡𐫅𐫏𐫤⁩, ⁧𐢛𐢅𐢍𐢞⁩, 𐎼𐎡𐎮𐎡𐎫, 𐒇𐒗𐒆𐒘𐒂, ⁧𐭥𐭣𐭩𐭲⁩, ⁧𐮅𐮃𐮈𐮑⁩, ⁧𐴌𐴠𐴊𐴞𐴃⁩, ⁧𐭓𐭃𐭉𐭕⁩, ⁧𐼘𐼘𐼊𐼚⁩, ⁧𐽀𐼲𐼷𐽂⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐽾𐽲𐽶𐾀⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
+### Non-Latin script characters (32716)
+* **Arabic**, Old North Arabian, Old South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Old Persian, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Hanifi Rohingya, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi (1989): ⁧رِيدِتْ⁩, ⁧𐪇𐪕𐪉⁩, ⁧𐬭𐬈𐬛𐬌𐬙⁩, ⁧𐩧𐩵𐩩⁩, ⁧𐿂𐾴𐾺𐿄⁩, ⁧𐣣𐣣𐣩𐣵⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧𐫡𐫅𐫏𐫤⁩, ⁧𐢛𐢅𐢍𐢞⁩, 𐎼𐎡𐎮𐎡𐎫, 𐒇𐒗𐒆𐒘𐒂, ⁧𐭥𐭣𐭩𐭲⁩, ⁧𐮅𐮃𐮈𐮑⁩, ⁧𐴌𐴠𐴊𐴞𐴃⁩, ⁧𐭓𐭃𐭉𐭕⁩, ⁧𐼘𐼘𐼊𐼚⁩, ⁧𐽀𐼲𐼷𐽂⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐽾𐽲𐽶𐾀⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (95): Րեդդիտ etc
 * **Brahmic scripts**: Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dives Akuru, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi, Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Khojki, Khudawadi, Kirat Rai, Lepcha, Limbu, Mahajani, Makasar, Malayalam, Marchen, Masaram Gondi, Meitei, Modi, Multani, Nandinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu, Tigalari, Tirhuta (3092): 𑜍𑜦𑜔𑜢𑜌𑜫, রেডিট, 𑰨𑰸𑰠𑰰𑰞, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ္, 𑄢𑄬𑄘𑄨𑄖𑄳, रेडिट, 𑤧𑤵𑤞𑤱𑤜𑤽, 𑠤𑠳𑠜𑠭𑠚, 𑌰𑍇𑌧𑌿𑌥, 𑶈𑶐𑵹𑶋𑵴𑶗, રેડિટ, ਰੇਡਿਟ, 𖄛𖄣𖄓𖄟𖄑, 𑂩𑂵𑂡𑂱𑂟, ರೆಡಿತ್, ⁧𐨪𐨅𐨢𐨁𐨠⁩, 𑈦𑈰𑈝𑈭𑈚, 𑋙𑋥𑋐𑋡𑋎, 𖵝𖵧𖵕𖵤𖵓, ᰛᰬᰌᰧᰳ, ᤖᤧᤍᤡᤳ, 𑅭𑅓𑅦𑅑𑅟, രെഡിട്, 𑲊𑲳𑱼𑲱𑱻, 𑴦𑴺𑴞𑴲𑴜, ꯔꯦꯗꯤꯠ, 𑘨𑘹𑘠𑘱𑘞, 𑊢𑊃𑊙𑊁𑊗, 𑧈𑧚𑧀𑧒𑦾, 𑐬𑐾𑐢𑐶𑐠, ରେଡିଟ, ꢬꢾꢞꢶꢜ, 𑆫𑆼𑆣𑆴𑆡, 𑖨𑖸𑖠𑖰𑖞, රෙඩිට්, ꠞꠦꠗꠤꠕ, 𑚤𑚲𑚜𑚮𑚚, ரெடிட், రెడిట్, 𑎬𑏂𑎤𑎹𑎢, 𑒩𑒺𑒡𑒱𑒟 etc
 * **Braille**, UEB (272): ⠗⠫⠙⠊⠞ etc
@@ -37,26 +37,26 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Cyrillic**, Glagolitic & Old Permic (565): Ре́ддит, Ⱃⰵδδιτ, 𐍠𐍔𐍓𐍓𐍙𐍢 etc
 * **Geʽez**, Adlam, Bamum, Bassa Vah, Garay, Mende Kikakui, Meroitic Cursive & Hieroglyphic, NKo & Vai (1308): ሬዲተ, ⁧𞤈𞤫𞤣𞤭𞤼⁩, ꚥꛤꛤ꛱, 𖫦𖫬𖫗𖫭𖫡, ⁧𐵞𐵩𐵺𐵋𐵽⁩, ⁧𞠺𞠾𞡊⁩, ⁧𐦫𐦪𐦷𐦢𐦴⁩, ⁧𐦎𐦁𐦝𐦂𐦘⁩, ⁧ߙߍߘߘߌߕ⁩, ꗸꔹꗋ etc
 * **Georgian** & Caucasian Albanian (207): რედდიტ, ႰႤႣႣႨႲ, 𐕙𐔴𐔳𐔳𐔼𐔸 etc
-* **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian, Todhri & Vithkuqi (1129): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗, 𐗝𐗉𐗆𐗒𐗢, 𐖊𐖞𐖜𐖜𐖥𐖵 etc
+* **Greek**, Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian, Todhri & Vithkuqi (1132): Ρέντιτ, Ⲣⲉⲇⲇⲓⲧ, ⁧𐠤𐠯𐠮⁩, 𐔙𐔇𐔄𐔍𐔝, 𐍂𐌴𐌳𐌳𐌹𐍄, 𐀩𐀇𐀵, 𐊕𐊁𐊅𐊅𐊆𐊗, 𐗝𐗉𐗆𐗒𐗢, 𐖊𐖞𐖜𐖜𐖥𐖵 etc
 * **Hebrew**, Aramaic, Elymaic, Lydian, Palmyrene, Phoenician, Samaritan & Ugaritic (350): ⁧רֶדִיט⁩, ⁧𐡓𐡃𐡉𐡕⁩, ⁧𐿳𐿣𐿵⁩, ⁧𐤭𐤤𐤣𐤣𐤦𐤯⁩, ⁧𐡴𐡣𐡩𐡶⁩, ⁧𐤓𐤃𐤕⁩, ⁧ࠓࠝࠃࠪࠕ⁩, 𐎗𐎄𐎚 etc
 * **Japanese** (mostly kana) (866): 「レディット」 etc
 * **Kawi Scripts**: Balinese, Batak, Baybayin, Buginese, Buhid, Hanunoo, Javanese, Old Kawi, Makasar, Rejang, Sundanese & Tagbanwa (485): ᬭᬾᬤᬶᬢ᭄, ᯒᯧᯑᯪᯖ᯲, ᜍᜒᜇᜒᜆ᜔, ᨑᨙᨉᨗ, ᝍᝒᝇᝒ, ᜭᜲᜧᜲᜦ᜴, ꦫꦺꦢꦶꦠ, 𑼬𑼾𑼤𑼶𑼢, 𑻭𑻵𑻧𑻳, ꤽꥉꤴꥇꤳ, ᮛᮨᮓᮤᮒ᮪, ᝮᝲᝧᝲ, etc
 * **Korean** (11736): 레딧 etc
 * **International Morse Code** (76): ·-· · -·· -·· ·· - etc
-* **Old Italic**, Carian, Ogham, Old Hungarian, Runic & Old Turkic (381): 𐌓𐌄𐌃𐌃𐌉𐌕, 𐊥𐊺𐊢𐊢𐊹𐊭, ᚏᚓᚇᚔᚈ, ⁧𐲢𐳉𐳇𐳇𐳐𐳦⁩, ᚱᛖᛞᛞᛁᛏ, ⁧𐰺𐰅𐰑𐰃𐱃⁩ etc
+* **Old Italic**, Carian, Ogham, Old Hungarian, Runic & Old Turkic (382): 𐌓𐌄𐌃𐌃𐌉𐌕, 𐊥𐊺𐊢𐊢𐊹𐊭, ᚏᚓᚇᚔᚈ, ⁧𐲢𐳉𐳇𐳇𐳐𐳦⁩, ᚱᛖᛞᛞᛁᛏ, ⁧𐰺𐰅𐰑𐰃𐱃⁩ etc
 * **Sutton SignWriting** (667): 𝧿𝨾𝡇𝪜𝪡𝦈𝪪 etc
 * **Thai**, Cham, Khmer, Lao, Tai Tham & Tai Viet (502): เรดดิต, ꨣꨮꨖꨪꩅ, រេទិត, ເຣັດິຕ, ᩁᩮᨯᩥᨲ, ꪧꪵꪒꪲꪒ etc
 * **Zhuyin**, Fraser, Mongolian, New Tai Lue, ʼPhags-pa, Pollard, Soyombo, Tai LeTibetan, Yi, Zanabazar Square (2420): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ᦜᦵᦡᦲᧆ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, 𑩼𑩔𑩩𑩑𑪍, ᥘᥦᥖᥤᥖ, རེཌིཊ྄, ꏒꄶ, 𑨫𑨄𑨜𑨁𑨚𑨴 etc
 * **Logograms/undeciphered**: Anatolian Hieroglyphs, Cuneiform, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B (4635): 𔐅 𒆛 𒿌 𓀁 𐙞 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4931)
+### Symbols (4983)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (147): 🗫 🯅 ㋡ etc
 * **Math and science** (384): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (106): ⏻ ⎙ ⌘ etc
-* **Numerals** (352): 𝍸𝍷 𝍵 Ⅻ ↁ etc
+* **Numerals** (404): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (137): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (358): ♞c6 🩡 🂽 🁖 🀄︎ etc
 * **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
