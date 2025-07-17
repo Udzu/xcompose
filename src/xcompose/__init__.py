@@ -138,7 +138,7 @@ def get_definitions(
             elif line.startswith("include "):
                 if ignore_includes:
                     continue
-                include_path = get_include_path(line[8:].strip().strip('"'))
+                include_path = file.parent / get_include_path(line[8:].strip().strip('"'))
                 yield from get_definitions(include_path, modifier_key=modifier_key)
             elif m := re.match(DEFN_REGEXP, line):
                 events, string, keysym, comment = m.groups()
