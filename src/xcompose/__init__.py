@@ -1,4 +1,5 @@
 import argparse
+import importlib.resources
 import os
 import re
 import sys
@@ -11,22 +12,38 @@ from typing import Literal, Sequence
 from pygtrie import Trie  # type: ignore[import-untyped]
 
 LOCALE_DIR = Path("/usr/share/X11/locale/")
-KEYSYM_DEF = Path("/usr/include/X11/keysymdef.h")
+KEYSYM_DEF_DEFAULT_PATH = Path("/usr/include/X11/keysymdef.h")
+KEYSYM_DEF_RESOURCE_PATH = "keysymdef.h"
 CONFLICT_MARKERS = ["conflict", "override"]
 
 CHAR_TO_KEYWORD: dict[str, str] = {}
 KEYWORD_TO_CHAR: dict[str, str] = {}
 KEYSYMS: set[str] = set()
 
-with KEYSYM_DEF.open() as f:
-    for line in f:
-        if m := re.match(r"#define XK_([^ ]+)\s.*U[+]([0-9A-Fa-f]{4,6})", line):
-            key, code = m.groups()
-            char = chr(int(code, base=16))
-            CHAR_TO_KEYWORD.setdefault(char, key)
-            KEYWORD_TO_CHAR.setdefault(key, char)
-        if m := re.match(r"#define XK_([^ ]+)\s", line):
-            KEYSYMS.add(m.group(1))
+
+def read_keysms(file: Path | None = None) -> None:
+    """Populate keysym mappings. If the file is unspecified, then
+    default to then value of $KEYSYMDEF, then to KEYSYM_DEF_DEFAULT_PATH,
+    then to the packaged resource."""
+    if file is None:
+        if "KEYSYMDEF" in os.environ:
+            file = Path(os.environ["KEYSYMDEF"])
+        elif KEYSYM_DEF_DEFAULT_PATH.exists():
+            file = KEYSYM_DEF_DEFAULT_PATH
+
+    with (
+        file.open()
+        if file
+        else importlib.resources.open_text(__package__, KEYSYM_DEF_RESOURCE_PATH) as f
+    ):
+        for line in f:
+            if m := re.match(r"#define XK_([^ ]+)\s.*U[+]([0-9A-Fa-f]{4,6})", line):
+                key, code = m.groups()
+                char = chr(int(code, base=16))
+                CHAR_TO_KEYWORD.setdefault(char, key)
+                KEYWORD_TO_CHAR.setdefault(key, char)
+            if m := re.match(r"#define XK_([^ ]+)\s", line):
+                KEYSYMS.add(m.group(1))
 
 
 def get_system_xcompose_name(lang: str | None = None) -> str:
@@ -460,6 +477,13 @@ def main() -> None:
         default=None,
         help="sort resulting sequences (options: 'keys', 'value')",
     )
+    parser.add_argument(
+        "--keysymdef",
+        metavar="FILE",
+        type=Path,
+        help="keysemdef.h location (defaults to value of $KEYSYMDEF, then\n"
+        "/usr/include/X11/keysymdef.h, then packaged resource)",
+    )
 
     subparsers = parser.add_subparsers(required=True, dest="command")
 
@@ -501,6 +525,8 @@ def main() -> None:
     args = parser.parse_args()
     if args.modifier_key == ANY_KEY:
         args.modifier_key = None
+
+    read_keysms(args.keysymdef)
     args.func(args)
 
 
