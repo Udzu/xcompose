@@ -2636,6 +2636,7 @@ include "%L"
 <Multi_key> <percent> <O> <7> : "𜳷"  U1CCF7  # OUTLINED DIGIT SEVEN
 <Multi_key> <percent> <O> <8> : "𜳸"  U1CCF8  # OUTLINED DIGIT EIGHT
 <Multi_key> <percent> <O> <9> : "𜳹"  U1CCF9  # OUTLINED DIGIT NINE
+<Multi_key> <percent> <O> <colon> : "⦂"  U2982  # Z NOTATION TYPE COLON
 <Multi_key> <percent> <O> <semicolon> : "⨟"  U2A1F  # Z NOTATION SCHEMA COMPOSITION
 
 <Multi_key> <percent> <i> <D> : "Ꝺ"  UA779  # LATIN CAPITAL LETTER INSULAR D
@@ -23978,6 +23979,7 @@ include "Logograms"
 <Multi_key> <bar> <X> <bar>           : "⋈"  U22C8   # BOWTIE (JOIN)
 <Multi_key> <bar> <x>                 : "⋉"  U22C9   # LEFT NORMAL FACTOR SEMIDIRECT PRODUCT
 <Multi_key> <x> <bar>                 : "⋊"  U22CA   # RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT
+<Multi_key> <minus> <X> <minus>       : "⧖"  U29D6  # WHITE HOURGLASS
 <Multi_key> <less> <period>           : "⋖"  U22D6   # LESS-THAN WITH DOT
 <Multi_key> <greater> <period>        : "⋗"  U22D7   # GREATER-THAN WITH DOT
 <Multi_key> <minus> <minus> <o>       : "⊸"  U22B8   # MULTIMAP
@@ -23988,6 +23990,11 @@ include "Logograms"
 <Multi_key> <slash> <less>            : "⪕"  U2A95   # SLANTED EQUAL TO OR LESS-THAN (conflicts with useless \)
 <Multi_key> <backslash> <greater>     : "⪖"  U2A96   # SLANTED EQUAL TO OR GREATER-THAN
 <Multi_key> <greater> <less> <space>  : "⪥"  U2AA5  # GREATER-THAN BESIDE LESS-THAN (conflicts with ⋄, use diamond)
+<Multi_key> <greater> <Multi_key> <less> : "⪤"  U2AA4  # GREATER-THAN OVERLAPPING LESS-THAN
+<Multi_key> <less> <parenright> <space> : "⪦"  U2AA6  # LESS-THAN CLOSED BY CURVE
+<Multi_key> <parenleft> <greater> <space> : "⪧"  U2AA7  # GREATER-THAN CLOSED BY CURVE
+<Multi_key> <backslash> <Multi_key> <less> <parenright> : "⪨"  U2AA8  # LESS-THAN CLOSED BY CURVE ABOVE SLANTED EQUAL
+<Multi_key> <Multi_key> <parenleft> <greater> <slash> : "⪩"  U2AA9  # GREATER-THAN CLOSED BY CURVE ABOVE SLANTED EQUAL
 
 <Multi_key> <equal> <Multi_key> <period>             : "≐"  U2250   # APPROACHES THE LIMIT
 <Multi_key> <equal> <Multi_key> <colon>              : "≑"  U2251   # GEOMETRICALLY EQUAL TO
@@ -24004,8 +24011,14 @@ include "Logograms"
 <Multi_key> <asciitilde> <Multi_key> <period>        : "⩪"  U2A6A   # TILDE OPERATOR WITH DOT ABOVE
 <Multi_key> <less> <Multi_key> <minus>               : "⪪"  U2AAA  # SMALLER THAN
 <Multi_key> <less> <Multi_key> <equal>               : "⪬"  U2AAC  # SMALLER THAN OR EQUAL TO
+<Multi_key> <less> <Multi_key> <o>                   : "⩹"  U2A79  # LESS-THAN WITH CIRCLE INSIDE
+<Multi_key> <less> <Multi_key> <parenleft>           : "⦓"  U2993  # LEFT ARC LESS-THAN BRACKET
+<Multi_key> <less> <Multi_key> <parenright> <parenright> : "⦖"  U2996  # DOUBLE RIGHT ARC LESS-THAN BRACKET
 <Multi_key> <greater> <Multi_key> <minus>            : "⪫"  U2AAB  # LARGER THAN
 <Multi_key> <greater> <Multi_key> <equal>            : "⪭"  U2AAD  # LARGER THAN OR EQUAL TO
+<Multi_key> <greater> <Multi_key> <o>                : "⩺"  U2A7A  # GREATER-THAN WITH CIRCLE INSIDE
+<Multi_key> <greater> <Multi_key> <parenright>       : "⦔"  U2994  # RIGHT ARC GREATER-THAN BRACKET
+<Multi_key> <greater> <Multi_key> <parenleft> <parenleft> : "⦕"  U2995  # DOUBLE LEFT ARC GREATER-THAN BRACKET
 
 <Multi_key> <slash> <Multi_key> <equal> <underscore> : "≢"  U2262   # NOT IDENTICAL TO
 <Multi_key> <period> <Multi_key> <equal> <underscore> : "⩧"  U2A67  # IDENTICAL WITH DOT ABOVE
@@ -24120,6 +24133,24 @@ include "Logograms"
 <Multi_key> <parenleft> <x> <space>                  : "⨴"  U2A34  # MULTIPLICATION SIGN IN LEFT HALF CIRCLE
 <Multi_key> <space> <x> <parenright>                 : "⨵"  U2A35  # MULTIPLICATION SIGN IN RIGHT HALF CIRCLE
 
+<Multi_key> <asterisk> <Multi_key> <c> <a> <p>       : "⩀"  U2A40  # INTERSECTION WITH DOT
+<Multi_key> <underscore> <Multi_key> <c> <a> <p>     : "⩃"  U2A43  # INTERSECTION WITH OVERBAR
+<Multi_key> <Multi_key> <slash> <backslash> <Multi_key> <c> <a> <p> : "⩄"  U2A44  # INTERSECTION WITH LOGICAL AND
+<Multi_key> <Multi_key> <l> <a> <n> <d> <Multi_key> <c> <a> <p> : "⩄"  U2A44  # INTERSECTION WITH LOGICAL AND
+<Multi_key> <less> <Multi_key> <c> <u> <p>           : "⊌"  U228C  # MULTISET
+<Multi_key> <asterisk> <Multi_key> <c> <u> <p>       : "⊍"  U228D  # MULTISET MULTIPLICATION
+<Multi_key> <plus> <Multi_key> <c> <u> <p>           : "⊎"  U228E  # MULTISET UNION
+<Multi_key> <minus> <Multi_key> <c> <u> <p>          : "⩁"  U2A41  # UNION WITH MINUS SIGN
+<Multi_key> <underscore> <Multi_key> <c> <u> <p>     : "⩂"  U2A42  # UNION WITH OVERBAR
+<Multi_key> <Multi_key> <backslash> <slash> <Multi_key> <c> <u> <p> : "⩅"  U2A45  # UNION WITH LOGICAL OR
+<Multi_key> <Multi_key> <l> <o> <r> <Multi_key> <c> <u> <p> : "⩅"  U2A45  # UNION WITH LOGICAL OR
+<Multi_key> <period> <Multi_key> <i> <s> <i> <n>     : "⋵"  U22F5  # ELEMENT OF WITH DOT ABOVE
+<Multi_key> <minus> <Multi_key> <i> <s> <i> <n>      : "⋶"  U22F6  # ELEMENT OF WITH OVERBAR
+<Multi_key> <minus> <minus> <Multi_key> <i> <s> <i> <n> : "⋲"  U22F2  # ELEMENT OF WITH LONG HORIZONTAL STROKE
+<Multi_key> <underscore> <Multi_key> <i> <s> <i> <n> : "⋸"  U22F8  # ELEMENT OF WITH UNDERBAR
+<Multi_key> <equal> <Multi_key> <i> <s> <i> <n>      : "⋹"  U22F9  # ELEMENT OF WITH TWO HORIZONTAL STROKES
+<Multi_key> <bar> <Multi_key> <i> <s> <i> <n>        : "⋳"  U22F3  # ELEMENT OF WITH VERTICAL BAR AT END OF HORIZONTAL STROKE
+
 <Multi_key> <v> <Multi_key> <i> <n> <t>              : "∲"  U2232  # CLOCKWISE CONTOUR INTEGRAL
 <Multi_key> <asciicircum> <Multi_key> <i> <n> <t>    : "∳"  U2233  # ANTICLOCKWISE CONTOUR INTEGRAL
 <Multi_key> <parenleft> <v> <Multi_key> <i> <n> <t>  : "∱"  U2231  # CLOCKWISE INTEGRAL
@@ -24178,6 +24209,7 @@ include "Logograms"
 <Multi_key> <a> <n> <g> <l> <e>         : "∠"  U2220   # ANGLE
 <Multi_key> <a> <s> <space>             : "∶"  U2236   # RATIO (AS)
 <Multi_key> <b> <e> <t> <w> <e> <e> <n> : "≬"  U226C   # BETWEEN (conflicts with ĕ, use ue)
+<Multi_key> <b> <o> <w> <t> <i> <e>     : "⋈"  U22C8  # BOWTIE (JOIN) (conflicts with ŏ, use uo) (alternatively |X|)
 <Multi_key> <b> <u> <m> <p> <e> <q>     : "≏"  U224F   # DIFFERENCE BETWEEN (conflicts with ŭ, use uu)
 <Multi_key> <B> <u> <m> <p> <e> <q>     : "≎"  U224E   # GEOMETRICALLY EQUIVALENT TO
 <Multi_key> <c> <a> <p>                 : "∩"  U2229   # SET INTERSECTION (conflicts with ǎ, use va) (use hat for 👒, bbcap for 🧢)
@@ -24199,9 +24231,15 @@ include "Logograms"
 <Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter) (use gem for 💎)
 <Multi_key> <d> <i> <j> <k>             : "⫾"  U2AFE  # WHITE VERTICAL BAR (conflicts with ⌀, use diameter) (DIJKSTRA'S CHOICE)
 <Multi_key> <D> <I> <J> <K>             : "⫿"  U2AFF  # N-ARY WHITE VERTICAL BAR (DIJKSTRA'S CHOICE)
+<Multi_key> <d> <o> <w> <n> <i> <n>     : "⫙"  U2AD9  # ELEMENT OF OPENING DOWNWARDS
 <Multi_key> <e> <q> <u> <i> <v>         : "≍"  U224D  # EQUIVALENT TO (use =_ for ≡)
 <Multi_key> <e> <x> <i> <s> <t> <s>     : "∃"  U2203   # THERE EXISTS
+<Multi_key> <f> <b> <o> <w>             : "⧓"  U29D3  # BLACK BOWTIE
+<Multi_key> <f> <h> <o> <u> <r>         : "⧗"  U29D7  # BLACK HOURGLASS
 <Multi_key> <f> <o> <r> <a> <l> <l>     : "∀"  U2200   # FOR ALL
+<Multi_key> <g> <g> <g>                 : "⫸"  U2AF8  # TRIPLE NESTED GREATER-THAN
+<Multi_key> <G> <t>                     : "⪢"  U2AA2  # DOUBLE NESTED GREATER-THAN
+<Multi_key> <h> <o> <u> <r>             : "⧖"  U29D6  # WHITE HOURGLASS (use done for ⌛ and wait for ⏳)
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
 <Multi_key> <i> <i> <i> <i> <n> <t>     : "⨌"  U2A0C   # QUADRUPLE INTEGRAL OPERATOR
 <Multi_key> <i> <i> <i> <n> <t>         : "∭"  U222D   # TRIPLE INTEGRAL
@@ -24213,9 +24251,16 @@ include "Logograms"
 <Multi_key> <l> <a> <n> <d>             : "∧"  U2227   # LOGICAL AND (alternatively /\)
 <Multi_key> <L> <a> <n> <d>             : "⩓"  U2A53   # DOUBLE LOGICAL AND
 <Multi_key> <L> <A> <N> <D>             : "⋀"  U22C0   # N-ARY LOGICAL AND
+<Multi_key> <l> <e> <f> <t> <i> <n>     : "∋"  U220B  # CONTAINS AS MEMBER (alternatively ni␣)
+<Multi_key> <l> <f> <b> <o> <w>         : "⧑"  U29D1   # BOWTIE WITH LEFT HALF BLACK
+<Multi_key> <l> <f> <t> <i> <m> <e> <s> : "⧔"  U29D4   # TIMES WITH LEFT HALF BLACK
+<Multi_key> <l> <l> <l>                 : "⫷"  U2AF7  # TRIPLE NESTED LESS-THAN
+<Multi_key> <l> <o> <n> <g> <d>         : "⟌"  U27CC  # LONG DIVISION
 <Multi_key> <l> <o> <r>                 : "∨"  U2228   # LOGICAL OR (alternatively \/)
 <Multi_key> <L> <o> <r>                 : "⩔"  U2A54   # DOUBLE LOGICAL OR
 <Multi_key> <L> <O> <R>                 : "⋁"  U22C1   # N-ARY LOGICAL OR
+<Multi_key> <L> <t>                     : "⪡"  U2AA1  # DOUBLE NESTED LESS-THAN
+<Multi_key> <l> <t> <i> <m> <e> <s>     : "⋉"  U22C9  # LEFT NORMAL FACTOR SEMIDIRECT PRODUCT (conflicts with useless <) (alternatively |x)
 <Multi_key> <m> <e> <a> <n> <g> <l> <e> : "∡"  U2221   # MEASURED ANGLE (not ideal)
 <Multi_key> <n> <a> <n> <d>             : "⊼"  U22BC   # NAND
 <Multi_key> <n> <e> <q> <u> <i> <v>     : "≭"  U226D   # NOT EQUIVALENT TO (use /⎄=_ for ≢)
@@ -24246,14 +24291,20 @@ include "Logograms"
 <Multi_key> <O> <T> <I> <M> <E> <S>     : "⨂"  U2A02  # N-ARY CIRCLED TIMES OPERATOR
 <Multi_key> <P> <L>                     : "⅊"  U214A   # PROPERTY LINE
 <Multi_key> <p> <r> <e> <c> <space>     : "≺"  U227A   # PRECEDES (alternatively -< based shortcuts)
+<Multi_key> <P> <r> <e> <c>             : "⪻"  U2ABB   # DOUBLE PRECEDES
 <Multi_key> <p> <r> <e> <c> <e> <q>     : "≼"  U227C   # PRECEDES OR EQUAL TO
 <Multi_key> <p> <r> <e> <c> <s> <i> <m> : "≾"  U227E   # PRECEDES OR EQUIVALENT TO
 <Multi_key> <p> <r> <o> <d>             : "∏"  U220F   # N-ARY PRODUCT
 <Multi_key> <p> <r> <o> <p>             : "∝"  U221D   # PROPORTIONAL TO
 <Multi_key> <Q> <E> <D>                 : "∎"  U220E   # END OF PROOF
 <Multi_key> <r> <a> <n> <g> <l> <e>     : "∟"  U221F   # RIGHT ANGLE
+<Multi_key> <r> <f> <b> <o> <w>         : "⧒"  U29D2   # BOWTIE WITH RIGHT HALF BLACK
+<Multi_key> <r> <f> <t> <i> <m> <e> <s> : "⧕"  U29D5   # TIMES WITH RIGHT HALF BLACK
+<Multi_key> <r> <t> <i> <m> <e> <s>     : "⋊"  U22CA   # RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT (alternatively x|)
 <Multi_key> <s> <i> <n> <e>             : "∿"  U223F   # SINE WAVE
 <Multi_key> <s> <i> <n> <t>             : "⨋"  U2A0B   # SUMMATION WITH INTEGRAL
+<Multi_key> <s> <m> <a> <l> <l> <i> <n> : "∊"  U220A   # SMALL ELEMENT OF (conflicts with ℠, use SM)
+<Multi_key> <s> <m> <a> <l> <l> <n> <i> : "∍"  U220D   # SMALL CONTAINS AS MEMBER (conflicts with ℠, use SM)
 <Multi_key> <s> <p> <a> <n> <g> <l> <e> : "∢"  U2222   # SPHERICAL ANGLE
 <Multi_key> <s> <q> <c> <a> <p>         : "⊓"  U2293   # SQUARE CAP
 <Multi_key> <S> <q> <c> <a> <p>         : "⩎"  U2A4E   # DOUBLE SQUARE INTERSECTION
@@ -24283,6 +24334,7 @@ include "Logograms"
 <Multi_key> <s> <u> <b> <slash> <equal> : "⫋"  U2ACB  # SUBSET OF ABOVE NOT EQUAL TO
 <Multi_key> <backslash> <s> <u> <b>     : "⟈"  U27C8  # REVERSE SOLIDUS PRECEDING SUBSET
 <Multi_key> <s> <u> <c> <c> <space>     : "≻"  U227B   # SUCCEEDS (alternatively >- based shortcuts)
+<Multi_key> <S> <u> <c> <c>             : "⪼"  U2ABC  # DOUBLE SUCCEEDS
 <Multi_key> <s> <u> <c> <c> <e> <q>     : "≽"  U227D   # SUCCEEDS OR EQUAL TO
 <Multi_key> <s> <u> <c> <c> <s> <i> <m> : "≿"  U227F   # SUCCEEDS OR EQUIVALENT TO
 <Multi_key> <s> <u> <m>                 : "∑"  U2211   # N-ARY SUMMATION
@@ -24305,7 +24357,10 @@ include "Logograms"
 <Multi_key> <s> <u> <p> <slash> <space> : "⟉"  U27C9   # SUPERSET PRECEDING SOLIDUS
 <Multi_key> <t> <i> <m> <e> <s>         : "×"  U00D7   # MULTIPLICATION SIGN (alternatively xx)
 <Multi_key> <T> <I> <M> <E> <S>         : "⨉"  U2A09   # N-ARY TIMES OPERATOR
+<Multi_key> <t> <m> <i> <n> <u> <s>     : "⧿"  U29FF  # MINY (conflicts with ™, use TM)
+<Multi_key> <t> <p> <l> <u> <s>         : "⧾"  U29FE  # TINY
 <Multi_key> <U> <D> <O> <T>             : "⨃"  U2A03  # N-ARY UNION OPERATOR WITH DOT
+<Multi_key> <u> <p> <i> <n>             : "⟒"  U27D2  # ELEMENT OF OPENING UPWARDS
 <Multi_key> <U> <P> <L> <U> <S>         : "⨄"  U2A04  # N-ARY UNION OPERATOR WITH PLUS
 <Multi_key> <w> <r> <e> <a> <t> <h>     : "≀"   U2240   # WREATH PRODUCT
 <Multi_key> <x> <o> <r>                 : "⊻"  U22BB   # XOR (conflicts with ¤, use ox)
@@ -24318,6 +24373,22 @@ include "Logograms"
 <Multi_key> <Multi_key> <s> <u> <p> <Multi_key> <s> <u> <b> : "⫔"  U2AD4  # SUPERSET ABOVE SUBSET (use supsub for ⫗)
 <Multi_key> <Multi_key> <s> <u> <b> <Multi_key> <s> <u> <b> : "⫕"  U2AD5  # SUBSET ABOVE SUBSET
 <Multi_key> <Multi_key> <s> <u> <p> <Multi_key> <s> <u> <p> : "⫖"  U2AD6  # SUPERSET ABOVE SUPERSET
+
+# Z notation (start with z)
+
+<Multi_key> <z> <colon>         : "⦂"  U2982  # Z NOTATION TYPE COLON
+<Multi_key> <z> <parenleft> <bar> : "⦇"  U2987  # Z NOTATION LEFT IMAGE BRACKET
+<Multi_key> <z> <parenright> <bar> : "⦈"  U2988  # Z NOTATION RIGHT IMAGE BRACKET
+<Multi_key> <z> <less> <bar>    : "⦉"  U2989  # Z NOTATION LEFT BINDING BRACKET (conflicts with ž, use vz)
+<Multi_key> <z> <greater> <bar> : "⦊"  U298A  # Z NOTATION RIGHT BINDING BRACKET
+<Multi_key> <z> <b> <a> <g>     : "⋿"  U22FF  # Z NOTATION BAG MEMBERSHIP
+<Multi_key> <z> <d> <s> <u> <b> : "⩤"  U2A64  # Z NOTATION DOMAIN ANTIRESTRICTION
+<Multi_key> <z> <p> <i> <p> <e> : "⨠"  U2A20  # Z NOTATION SCHEMA PIPING
+<Multi_key> <z> <p> <r> <o> <j> : "⨡"  U2A21  # Z NOTATION SCHEMA PROJECTION
+<Multi_key> <z> <r> <c> <m> <p> : "⨾"  U2A3E  # Z NOTATION RELATIONAL COMPOSITION
+<Multi_key> <z> <r> <s> <u> <b> : "⩥"  U2A65  # Z NOTATION RANGE ANTIRESTRICTION
+<Multi_key> <z> <s> <c> <m> <p> : "⨟"  U2A1F  # Z NOTATION SCHEMA COMPOSITION
+<Multi_key> <z> <s> <p> <o> <t> : "⦁"  U2981  # Z NOTATION SPOT
 
 # Logic symbols (start with &)
 
@@ -24961,7 +25032,7 @@ include "Logograms"
 <Multi_key> <s> <t> <o> <p>         : "✋"  U270B         # RAISED HAND (STOP)
 <Multi_key> <s> <t> <r> <o> <n> <g> : "💪"  U1F4AA        # FLEXED BICEPS (STRONG)
 <Multi_key> <s> <w> <e> <a> <t>     : "💦"  U1F4A6        # SPLASHING SWEAT SYMBOL
-<Multi_key> <t> <i> <n> <y>         : "🤏"  U1F90F        # PINCHING HAND (TINY)
+<Multi_key> <t> <i> <n> <y>         : "🤏"  U1F90F        # PINCHING HAND (TINY) (use tplus for ⧾)
 <Multi_key> <t> <o> <n> <g> <u> <e> : "👅"  U1F445        # TONGUE
 <Multi_key> <t> <o> <o> <t> <h>     : "🦷"  U1F9B7        # TOOTH
 <Multi_key> <w> <r> <i> <t> <e>     : "✍️"  U270D UFE0F   # WRITING HAND EMOJI
@@ -29496,7 +29567,6 @@ include "Logograms"
 <Multi_key> <backslash> <KP_Enter>              : "⌅"  U2305  # PROJECTIVE
 <Multi_key> <backslash> <Break>                 : "⎊"  U238A  # CIRCLED TRIANGLE DOWN
 <Multi_key> <backslash> <Pause>                 : "⎉"  U2389  # CIRCLED HORIZONTAL BAR WITH NOTCH
-<Multi_key> <backslash> <Multi_key>             : "⎄"  U2384  # COMPOSITION SYMBOL
 
 # keysyms (useful for editing this file, though other \ shortcuts take precedence)
 

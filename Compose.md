@@ -19,10 +19,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Combining diacritics** (174): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2735)
+### Latin script characters (2736)
 * **International Phonetic Alphabet** (128): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Latin script letters** (513): Ƿ Ȝ ␢ ȵ etc
-* **Mathematical alphanumerics** (793): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 𜳖 etc
+* **Mathematical alphanumerics** (794): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 𜳖 etc
 * **Enclosed alphanumerics** (288): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (309): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
 * **Multigraphs and ligatures** (389): ʣ ㏈ etc
@@ -50,10 +50,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Logograms/undeciphered**: Anatolian Hieroglyphs, Cuneiform, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B (4691): 𔐅 𒆛 𒿌 𓀁 𐙞 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4933)
+### Symbols (4990)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (150): 🗫 🯅 ㋡ etc
-* **Math and science** (451): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Math and science** (508): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (106): ⏻ ⎙ ⌘ etc
 * **Numerals** (338): 𝍸𝍷 𝍵 Ⅻ ↁ etc
