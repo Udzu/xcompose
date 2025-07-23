@@ -73,21 +73,42 @@ include "%L"
 <Multi_key> <parenright> <bar>               : "⎹"  U23B9  # RIGHT VERTICAL BOX LINE
 <Multi_key> <S> <parenleft>                  : "⟅"  U27C5  # LEFT S-SHAPED BAG DELIMITER
 <Multi_key> <S> <parenright>                 : "⟆"  U27C6  # RIGHT S-SHAPED BAG DELIMITER
+<Multi_key> <0> <bracketleft>                : "⟦"  U27E6  # MATHEMATICAL LEFT WHITE SQUARE BRACKET
 <Multi_key> <bracketleft> <bracketleft>      : "⟦"  U27E6  # MATHEMATICAL LEFT WHITE SQUARE BRACKET
+<Multi_key> <0> <bracketright>               : "⟧"  U27E7  # MATHEMATICAL RIGHT WHITE SQUARE BRACKET
 <Multi_key> <bracketright> <bracketright>    : "⟧"  U27E7  # MATHEMATICAL RIGHT WHITE SQUARE BRACKET
 <Multi_key> <less> <parenleft>               : "⟨"  U27E8  # MATHEMATICAL LEFT ANGLE BRACKET
 <Multi_key> <greater> <parenright>           : "⟩"  U27E9  # MATHEMATICAL RIGHT ANGLE BRACKET
 <Multi_key> <parenleft> <less> <less>        : "⟪"  U27EA  # MATHEMATICAL LEFT DOUBLE ANGLE BRACKET
 <Multi_key> <parenright> <greater> <greater> : "⟫"  U27EB  # MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
-<Multi_key> <less> <bracketleft>             : "⟬"  U27EC  # MATHEMATICAL LEFT WHITE TORTOISE SHELL BRACKET
-<Multi_key> <greater> <bracketright>         : "⟭"  U27ED  # MATHEMATICAL RIGHT WHITE TORTOISE SHELL BRACKET
+<Multi_key> <0> <less> <bracketleft>         : "⟬"  U27EC  # MATHEMATICAL LEFT WHITE TORTOISE SHELL BRACKET
+<Multi_key> <0> <greater> <bracketright>     : "⟭"  U27ED  # MATHEMATICAL RIGHT WHITE TORTOISE SHELL BRACKET
+<Multi_key> <less> <bracketleft>             : "⟮"  U27EE  # MATHEMATICAL LEFT FLATTENED PARENTHESIS
+<Multi_key> <greater> <bracketright>         : "⟯"  U27EF  # MATHEMATICAL RIGHT FLATTENED PARENTHESIS
+<Multi_key> <0> <braceleft>                  : "⦃"  U2983  # LEFT WHITE CURLY BRACKET
 <Multi_key> <braceleft> <bar>                : "⦃"  U2983  # LEFT WHITE CURLY BRACKET
+<Multi_key> <0> <braceright>                 : "⦄"  U2984  # RIGHT WHITE CURLY BRACKET
 <Multi_key> <bar> <braceright>               : "⦄"  U2984  # RIGHT WHITE CURLY BRACKET
+<Multi_key> <0> <parenleft>                  : "⦅"  U2985  # LEFT WHITE PARENTHESIS
+<Multi_key> <0> <parenright>                 : "⦆"  U2986  # RIGHT WHITE PARENTHESIS
+<Multi_key> <apostrophe> <bracketleft>       : "⦍"  U298D  # LEFT SQUARE BRACKET WITH TICK IN TOP CORNER
+<Multi_key> <comma> <bracketright>           : "⦎"  U298E  # RIGHT SQUARE BRACKET WITH TICK IN BOTTOM CORNER
+<Multi_key> <comma> <bracketleft>            : "⦏"  U298F  # LEFT SQUARE BRACKET WITH TICK IN BOTTOM CORNER
+<Multi_key> <apostrophe> <bracketright>      : "⦐"  U2990  # RIGHT SQUARE BRACKET WITH TICK IN TOP CORNER
+<Multi_key> <1> <less> <bracketleft>         : "⦗"  U2997  # LEFT BLACK TORTOISE SHELL BRACKET
+<Multi_key> <1> <greater> <bracketright>     : "⦘"  U2998  # RIGHT BLACK TORTOISE SHELL BRACKET
+<Multi_key> <minus> <less> <parenleft>       : "⧼"  U29FC  # LEFT-POINTING CURVED ANGLE BRACKET
+<Multi_key> <greater> <minus> <parenright>   : "⧽"  U29FD  # RIGHT-POINTING CURVED ANGLE BRACKET
 <Multi_key> <parenleft> <slash> <slash>      : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR
 <Multi_key> <parenright> <slash> <slash>     : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR
 <Multi_key> <slash> <slash> <slash>          : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
 <Multi_key> <parenleft> <parenleft>          : "⸨"  U2E28  # LEFT DOUBLE PARENTHESIS (conflicts with useless [)
 <Multi_key> <parenright> <parenright>        : "⸩"  U2E29  # RIGHT DOUBLE PARENTHESIS (conflicts with useless ])
+
+<Multi_key> <underscore> <Multi_key> <bracketleft>      : "⦋"  U298B  # LEFT SQUARE BRACKET WITH UNDERBAR
+<Multi_key> <underscore> <Multi_key> <bracketright>     : "⦌"  U298C  # RIGHT SQUARE BRACKET WITH UNDERBAR
+<Multi_key> <period> <Multi_key> <less> <parenleft>     : "⦑"  U2991  # LEFT ANGLE BRACKET WITH DOT
+<Multi_key> <period> <Multi_key> <greater> <parenright> : "⦒"  U2992  # RIGHT ANGLE BRACKET WITH DOT
 
 ###########
 # Bullets #
@@ -23886,6 +23907,8 @@ include "Logograms"
 <Multi_key> <period> <Multi_key> <x> <x>      : "⨰"  U2A30   # MULTIPLICATION SIGN WITH DOT ABOVE
 <Multi_key> <underscore> <Multi_key> <x> <x>  : "⨱"  U2A31   # MULTIPLICATION SIGN WITH UNDERBAR
 <Multi_key> <period> <asterisk>       : "⋅"  U22C5   # DOT OPERATOR
+<Multi_key> <asterisk> <space>        : "∗"  U2217   # ASTERISK OPERATOR
+<Multi_key> <asterisk> <period>       : "∙"  U2219   # BULLET OPERATOR
 <Multi_key> <x> <asterisk>            : "⨯"  U2A2F   # VECTOR OR CROSS PRODUCT
 <Multi_key> <x> <minus> <colon>       : "⋇"  U22C7   # DIVISION TIMES
 <Multi_key> <3> <v> <slash>           : "∛"  U221B   # CUBE ROOT
@@ -24114,6 +24137,8 @@ include "Logograms"
 <Multi_key> <minus> <less> <Multi_key> <slash> <asciitilde> <asciitilde> : "⪹"  U2AB9  # PRECEDES ABOVE NOT ALMOST EQUAL TO
 <Multi_key> <Multi_key> <slash> <minus> <less>        : "⋞"  U22DE  # EQUAL TO OR PRECEDES
 <Multi_key> <2> <Multi_key> <minus> <less>            : "⪻"  U2ABB  # DOUBLE PRECEDES
+<Multi_key> <v> <bar>                                 : "⋎"  U22CE  # CURLY LOGICAL OR (conflicts with ↓, use |v)
+<Multi_key> <bar> <asciicircum>                       : "⋏"  U22CF  # CURLY LOGICAL AND (conflicts with ↑, use ^|)
 
 <Multi_key> <parenleft> <plus> <parenright>          : "⊕"  U2295   # CIRCLED PLUS
 <Multi_key> <parenleft> <minus> <parenright>         : "⊖"  U2296   # CIRCLED MINUS (conflicts with useless {)

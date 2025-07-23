@@ -9,10 +9,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (587)
+### Common script characters (603)
 * **Spaces** (15): NBSP MMSP ZWSP etc
 * **Dashes** (12): – — ⁓ ⸻ etc
-* **Brackets** (24): ⟨ ⟦ ⸨ ⌈ ⫽ etc
+* **Brackets** (40): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
 * **General punctuation** (60): ⁁ ⁂ ⸎ etc
 * **Currency symbols** (20): ₱ ₿ ₪ etc
@@ -50,10 +50,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Logograms/undeciphered**: Anatolian Hieroglyphs, Cuneiform, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B (4691): 𔐅 𒆛 𒿌 𓀁 𐙞 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (4990)
+### Symbols (4994)
 * **Emoji** (1515): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (150): 🗫 🯅 ㋡ etc
-* **Math and science** (508): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Math and science** (512): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (106): ⏻ ⎙ ⌘ etc
 * **Numerals** (338): 𝍸𝍷 𝍵 Ⅻ ↁ etc
