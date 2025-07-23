@@ -809,6 +809,7 @@ include "%L"
 <Multi_key> <e> <less>              : "ɘ"  U0258   # LATIN SMALL LETTER REVERSED E (conflicts with ě, use ve)
 <Multi_key> <question> <less> <period> : "ʕ"  U0295   # LATIN LETTER PHARYNGEAL VOICED FRICATIVE
 <Multi_key> <question> <less> <minus> : "ʢ"  U02A2   # LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE
+<Multi_key> <question> <v> <space>  : "ʖ"  U0296  # LATIN LETTER INVERTED GLOTTAL STOP
 <Multi_key> <question> <v> <minus>  : "ƾ"  U01BE  # LATIN LETTER INVERTED GLOTTAL STOP WITH STROKE
 
 <Multi_key> <d> <l>                 : "ɖ"  U0256   # LATIN SMALL LETTER D WITH TAIL
@@ -3338,6 +3339,10 @@ include "%L"
 <Multi_key> <braceleft> <t> <Multi_key> <s> <h> <braceright> : "ʧ"  U02A7  # LATIN SMALL LETTER TESH DIGRAPH
 <Multi_key> <braceleft> <Multi_key> <m> <u> <A> <braceright> : "㎂" U3382   # SQUARE MU A
 <Multi_key> <braceleft> <Multi_key> <m> <u> <F> <braceright> : "㎌" U338C   # SQUARE MU F
+<Multi_key> <braceleft> <Multi_key> <m> <u> <g> <braceright> : "㎍"  U338D  # SQUARE MU G
+<Multi_key> <braceleft> <Multi_key> <m> <u> <l> <braceright> : "㎕"  U3395  # SQUARE MU L
+<Multi_key> <braceleft> <Multi_key> <m> <u> <m> <braceright> : "㎛"  U339B  # SQUARE MU M
+<Multi_key> <braceleft> <Multi_key> <m> <u> <s> <braceright> : "㎲"  U33B2  # SQUARE MU S
 <Multi_key> <braceleft> <Multi_key> <m> <u> <V> <braceright> : "㎶" U33B6   # SQUARE MU V
 <Multi_key> <braceleft> <Multi_key> <m> <u> <W> <braceright> : "㎼" U33BC   # SQUARE MU W
 <Multi_key> <braceleft> <Multi_key> <f> <s> <t> <braceright> : "ﬅ"  UFB05  # LATIN SMALL LIGATURE LONG S T
@@ -3927,6 +3932,7 @@ include "%L"
 <Multi_key> <a> <semicolon> <asciitilde> <Return>     : "ٓ"  U0653  # ARABIC MADDAH ABOVE (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <2> <Return>              : "ٔ"  U0654  # ARABIC HAMZA ABOVE (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <underscore> <2> <Return> : "ٕ"  U0655  # ARABIC HAMZA BELOW (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <underscore> <asciitilde> <2> <Return> : "ٟ"  U065F  # ARABIC WAVY HAMZA BELOW (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <a> <n> <Return>          : "ً"  U064B  # ARABIC FATHATAN (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <i> <n> <Return>          : "ٍ"  U064D  # ARABIC KASRATAN (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <underscore> <i> <n> <Return> : "ٍ"  U064D  # ARABIC KASRATAN (conflicts with ą, use ,a)
@@ -3966,8 +3972,10 @@ include "%L"
 
 <Multi_key> <a> <x> <asciitilde> <a>     : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
 <Multi_key> <a> <x> <2> <a>              : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
+<Multi_key> <a> <x> <asciitilde> <2> <a> : "ٲ"  U0672  # ARABIC LETTER ALEF WITH WAVY HAMZA ABOVE
 <Multi_key> <a> <x> <underscore> <2> <a> : "إ"  U0625   # ARABIC LETTER ALEF WITH HAMZA BELOW
 <Multi_key> <a> <x> <numbersign> <2> <a> : "ݳ"  U0773  # ARABIC LETTER ALEF WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
+<Multi_key> <a> <x> <underscore> <asciitilde> <2> <a> : "ٳ"  U0673  # ARABIC LETTER ALEF WITH WAVY HAMZA BELOW
 <Multi_key> <a> <x> <numbersign> <3> <a> : "ݴ"  U0774  # ARABIC LETTER ALEF WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
 <Multi_key> <a> <x> <period> <a>         : "ࡺ"  U087A  # ARABIC LETTER ALEF WITH DOT ABOVE
 
@@ -7684,6 +7692,7 @@ include "%L"
 <Multi_key> <b> <G> <colon> <Return>     : "ਃ"  U0A03  # GURMUKHI SIGN VISARGA (conflicts)
 <Multi_key> <b> <G> <underscore> <period> <Return> : "਼"  U0A3C  # GURMUKHI SIGN NUKTA (conflicts)
 <Multi_key> <b> <G> <comma> <Return>     : "੍"  U0A4D  # GURMUKHI SIGN VIRAMA (conflicts)
+<Multi_key> <b> <G> <parenleft> <Return> : "ੰ"  U0A70  # GURMUKHI TIPPI (conflicts)
 
 # Numerals
 
@@ -10995,6 +11004,10 @@ include "%L"
 <Multi_key> <c> <c> <period> <h>   : "һ"  U04BB  # CYRILLIC SMALL LETTER SHHA (conflict)
 <Multi_key> <c> <x> <H> <W>        : "Ꚕ"  UA694  # CYRILLIC CAPITAL LETTER HWE
 <Multi_key> <c> <x> <h> <w>        : "ꚕ"  UA695  # CYRILLIC SMALL LETTER HWE
+<Multi_key> <c> <x> <I> <1>        : "Ӏ"  U04C0  # CYRILLIC LETTER PALOCHKA
+<Multi_key> <c> <x> <i> <1>        : "ӏ"  U04CF  # CYRILLIC SMALL LETTER PALOCHKA
+<Multi_key> <c> <x> <minus> <k>    : "ҡ"  U04A1  # CYRILLIC SMALL LETTER BASHKIR KA
+<Multi_key> <c> <x> <minus> <K>    : "Ҡ"  U04A0  # CYRILLIC CAPITAL LETTER BASHKIR KA
 <Multi_key> <c> <x> <L> <H>        : "Ԕ"  U0514  # CYRILLIC CAPITAL LETTER LHA
 <Multi_key> <c> <x> <L> <X>        : "Ԕ"  U0514  # CYRILLIC CAPITAL LETTER LHA
 <Multi_key> <c> <x> <l> <h>        : "ԕ"  U0515  # CYRILLIC SMALL LETTER LHA
@@ -11219,7 +11232,8 @@ include "%L"
 <Multi_key> <c> <c> <asciicircum> <underscore> <apostrophe> : "ꚝ"  UA69D  # MODIFIER LETTER CYRILLIC SOFT SIGN (conflicts)
 <Multi_key> <c> <c> <asciicircum> <underscore> <e> : "𞁈"  U1E048  # MODIFIER LETTER CYRILLIC SMALL E (conflict)
 <Multi_key> <c> <c> <asciicircum> <underscore> <y> <u> : "𞁉"  U1E049  # MODIFIER LETTER CYRILLIC SMALL YU (conflict)
-<Multi_key> <c> <x> <asciicircum> <underscore> <i> : "𞁌"  U1E04C  # MODIFIER LETTER CYRILLIC SMALL BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <asciicircum> <underscore> <i> <space> : "𞁌"  U1E04C  # MODIFIER LETTER CYRILLIC SMALL BYELORUSSIAN-UKRAINIAN I
+<Multi_key> <c> <x> <asciicircum> <underscore> <i> <1> : "𞁐"  U1E050  # MODIFIER LETTER CYRILLIC SMALL PALOCHKA
 <Multi_key> <c> <x> <asciicircum> <underscore> <j> : "𞁍"  U1E04D  # MODIFIER LETTER CYRILLIC SMALL JE
 <Multi_key> <c> <c> <asciicircum> <underscore> <comma> <s> : "𞁫"  U1E06B  # MODIFIER LETTER CYRILLIC SMALL ES WITH DESCENDER (conflict)
 <Multi_key> <c> <c> <asciicircum> <underscore> <minus> <y> <y> : "𞁭"  U1E06D  # MODIFIER LETTER CYRILLIC SMALL STRAIGHT U WITH STROKE (conflict)
@@ -14939,6 +14953,7 @@ include "%L"
 <Multi_key> <G> <c> <l> : "ლ" U10DA   # GEORGIAN LETTER LAS
 <Multi_key> <G> <c> <m> : "მ" U10DB   # GEORGIAN LETTER MAN
 <Multi_key> <G> <c> <n> : "ნ" U10DC   # GEORGIAN LETTER NAR
+<Multi_key> <G> <c> <asciicircum> <underscore> <n> : "ჼ"  U10FC  # MODIFIER LETTER GEORGIAN NAR
 <Multi_key> <G> <c> <o> : "ო" U10DD   # GEORGIAN LETTER ON
 <Multi_key> <G> <c> <p> : "პ" U10DE   # GEORGIAN LETTER PAR
 <Multi_key> <G> <c> <v> <z> : "ჟ" U10DF   # GEORGIAN LETTER ZHAR (ž)
@@ -17063,6 +17078,8 @@ include "HangulSyllables"
 <Multi_key> <k> <3> <braceleft> <p> <s> <braceright> : "ퟺ"  UD7FA  # HANGUL JONGSEONG PHIEUPH-SIOS
 <Multi_key> <k> <3> <braceleft> <p> <t> <braceright> : "ퟻ"  UD7FB  # HANGUL JONGSEONG PHIEUPH-THIEUTH
 
+<Multi_key> <k> <j> <braceleft> <n> <n> <braceright> : "ㅥ" U3165   # HANGUL LETTER SSANGNIEUN
+<Multi_key> <k> <j> <braceleft> <n> <d> <braceright> : "ㅦ" U3166   # HANGUL LETTER NIEUN-TIKEUT
 <Multi_key> <k> <j> <braceleft> <n> <s> <braceright> : "ㅧ"  U3167  # HANGUL LETTER NIEUN-SIOS
 <Multi_key> <k> <j> <braceleft> <l> <g> <s> <braceright> : "ㅩ"  U3169  # HANGUL LETTER RIEUL-KIYEOK-SIOS
 <Multi_key> <k> <j> <braceleft> <l> <d> <braceright> : "ㅪ"  U316A  # HANGUL LETTER RIEUL-TIKEUT
@@ -20932,6 +20949,8 @@ include "HangulSyllables"
 
 # Other signs
 
+<Multi_key> <z> <t> <space> : "་"  U0F0B  # TIBETAN MARK INTERSYLLABIC TSHEG
+<Multi_key> <z> <t> <Multi_key> <space> <space> : "༌"  U0F0C  # TIBETAN MARK DELIMITER TSHEG BSTAR
 <Multi_key> <z> <t> <bar> : "།"  U0F0D  # TIBETAN MARK SHAD
 <Multi_key> <z> <t> <2> <bar> : "༎"  U0F0E  # TIBETAN MARK NYIS SHAD
 <Multi_key> <z> <t> <period> <bar> : "༏"  U0F0F  # TIBETAN MARK TSHEG SHAD
