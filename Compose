@@ -904,6 +904,17 @@ include "%L"
 <Multi_key> <bar> <2> : "꜕"  UA715  # MODIFIER LETTER LOW LEFT-STEM TONE BAR
 <Multi_key> <bar> <1> : "꜖"  UA716  # MODIFIER LETTER EXTRA-LOW LEFT-STEM TONE BAR
 
+<Multi_key> <period> <5> <bar> : "꜈"  UA708  # MODIFIER LETTER EXTRA-HIGH DOTTED TONE BAR
+<Multi_key> <period> <4> <bar> : "꜉"  UA709  # MODIFIER LETTER HIGH DOTTED TONE BAR
+<Multi_key> <period> <3> <bar> : "꜊"  UA70A  # MODIFIER LETTER MID DOTTED TONE BAR
+<Multi_key> <period> <2> <bar> : "꜋"  UA70B  # MODIFIER LETTER LOW DOTTED TONE BAR
+<Multi_key> <period> <1> <bar> : "꜌"  UA70C  # MODIFIER LETTER EXTRA-LOW DOTTED TONE BAR
+<Multi_key> <period> <bar> <5> : "꜍"  UA70D  # MODIFIER LETTER EXTRA-HIGH DOTTED LEFT-STEM TONE BAR
+<Multi_key> <period> <bar> <4> : "꜎"  UA70E  # MODIFIER LETTER HIGH DOTTED LEFT-STEM TONE BAR
+<Multi_key> <period> <bar> <3> : "꜏"  UA70F  # MODIFIER LETTER MID DOTTED LEFT-STEM TONE BAR
+<Multi_key> <period> <bar> <2> : "꜐"  UA710  # MODIFIER LETTER LOW DOTTED LEFT-STEM TONE BAR
+<Multi_key> <period> <bar> <1> : "꜑"  UA711  # MODIFIER LETTER EXTRA-LOW DOTTED LEFT-STEM TONE BAR
+
 ########################
 # Latin script letters #
 ########################
@@ -11067,6 +11078,8 @@ include "%L"
 <Multi_key> <c> <x> <y> <n>          : "ꙟ"  UA65F  # CYRILLIC SMALL LETTER YN
 <Multi_key> <c> <x> <Z> <l>          : "Ꙁ"  UA640  # CYRILLIC CAPITAL LETTER ZEMLYA
 <Multi_key> <c> <x> <z> <l>          : "ꙁ"  UA641  # CYRILLIC SMALL LETTER ZEMLYA
+<Multi_key> <c> <x> <quotedbl> <quotedbl> <I> : "Ꙑ"  UA650  # CYRILLIC CAPITAL LETTER YERU WITH BACK YER
+<Multi_key> <c> <x> <quotedbl> <quotedbl> <i> : "ꙑ"  UA651  # CYRILLIC SMALL LETTER YERU WITH BACK YER
 
 # diacritics
 
@@ -11241,6 +11254,7 @@ include "%L"
 <Multi_key> <c> <x> <asciicircum> <underscore> <e> <e> : "𞁋"  U1E04B  # MODIFIER LETTER CYRILLIC SMALL SCHWA
 <Multi_key> <c> <c> <asciicircum> <underscore> <minus> <o> : "𞁎"  U1E04E  # MODIFIER LETTER CYRILLIC SMALL BARRED O (conflicts)
 <Multi_key> <c> <x> <asciicircum> <underscore> <y> <bar> : "𞁏"  U1E04F  # MODIFIER LETTER CYRILLIC SMALL STRAIGHT U
+<Multi_key> <c> <x> <asciicircum> <underscore> <quotedbl> <quotedbl> <i> : "𞁬"  U1E06C  # MODIFIER LETTER CYRILLIC SMALL YERU WITH BACK YER
 
 <Multi_key> <c> <c> <underscore> <a> : "𞁑"  U1E051  # CYRILLIC SUBSCRIPT SMALL LETTER A (conflicts)
 <Multi_key> <c> <c> <underscore> <b> : "𞁒"  U1E052  # CYRILLIC SUBSCRIPT SMALL LETTER BE (conflicts)
@@ -20699,6 +20713,14 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <T> <greater> <asciicircum> <Return> : "𖾐"  U16F90  # MIAO TONE TOP RIGHT
 <Multi_key> <z> <p> <T> <asciicircum> <Return> : "𖾑"  U16F91  # MIAO TONE ABOVE
 <Multi_key> <z> <p> <T> <v> <Return> : "𖾒"  U16F92  # MIAO TONE BELOW
+
+<Multi_key> <z> <p> <T> <2> : "𖾓"  U16F93  # MIAO LETTER TONE-2
+<Multi_key> <z> <p> <T> <3> : "𖾔"  U16F94  # MIAO LETTER TONE-3
+<Multi_key> <z> <p> <T> <4> : "𖾕"  U16F95  # MIAO LETTER TONE-4
+<Multi_key> <z> <p> <T> <5> : "𖾖"  U16F96  # MIAO LETTER TONE-5
+<Multi_key> <z> <p> <T> <6> : "𖾗"  U16F97  # MIAO LETTER TONE-6
+<Multi_key> <z> <p> <T> <7> : "𖾘"  U16F98  # MIAO LETTER TONE-7
+<Multi_key> <z> <p> <T> <8> : "𖾙"  U16F99  # MIAO LETTER TONE-8
 
 # (P = ʼPhags-Pa) follows ISO 15919 like other Brahmic scripts
 
