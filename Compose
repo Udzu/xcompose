@@ -915,6 +915,11 @@ include "%L"
 <Multi_key> <period> <bar> <2> : "꜐"  UA710  # MODIFIER LETTER LOW DOTTED LEFT-STEM TONE BAR
 <Multi_key> <period> <bar> <1> : "꜑"  UA711  # MODIFIER LETTER EXTRA-LOW DOTTED LEFT-STEM TONE BAR
 
+<Multi_key> <period> <bar> <space>        : "ꜗ"  UA717  # MODIFIER LETTER DOT VERTICAL BAR
+<Multi_key> <period> <slash> <space>      : "ꜘ"  UA718  # MODIFIER LETTER DOT SLASH
+<Multi_key> <period> <underscore> <space> : "ꜙ"  UA719  # MODIFIER LETTER DOT HORIZONTAL BAR
+<Multi_key> <minus> <apostrophe> <space>  : "ꜚ"  UA71A  # MODIFIER LETTER LOWER RIGHT CORNER ANGLE
+
 ########################
 # Latin script letters #
 ########################
@@ -1030,6 +1035,7 @@ include "%L"
 <Multi_key> <grave> <comma>         : "ʽ"  U02BD   # MODIFIER LETTER REVERSED COMMA
 <Multi_key> <grave> <l>             : "ᴥ"  U1D25  # LATIN LETTER AIN
 <Multi_key> <period> <minus>        : "ꞏ"  UA78F  # LATIN LETTER SINOLOGICAL DOT (conflicts with ·, use .^)
+<Multi_key> <space> <colon>         : "꞉"  UA789  # MODIFIER LETTER COLON (not ideal but :␣ is taken)
 
 # (Zhuang tone letters)
 
@@ -14555,7 +14561,7 @@ include "%L"
 <Multi_key> <percent> <g> <at> <r> : "ϱ" U03F1   # GREEK RHO SYMBOL
 <Multi_key> <percent> <g> <at> <f> : "ϕ" U03D5   # GREEK PHI SYMBOL
 <Multi_key> <percent> <G> <at> <p> <h> : "ϕ" U03D5   # GREEK PHI SYMBOL
-# additional Greek letter variants not represented in the alphanumerics block
+# additional Greek letter symbols not represented in the alphanumerics block
 <Multi_key> <percent> <g> <at> <U> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
 <Multi_key> <percent> <g> <at> <Y> : "ϒ" U03D2   # GREEK UPSILON WITH HOOK SYMBOL
 <Multi_key> <percent> <g> <at> <apostrophe> <U> : "ϓ"  U03D3  # GREEK UPSILON WITH ACUTE AND HOOK SYMBOL
@@ -24440,6 +24446,12 @@ include "Logograms"
 <Multi_key> <Multi_key> <s> <u> <b> <Multi_key> <s> <u> <b> : "⫕"  U2AD5  # SUBSET ABOVE SUBSET
 <Multi_key> <Multi_key> <s> <u> <p> <Multi_key> <s> <u> <p> : "⫖"  U2AD6  # SUPERSET ABOVE SUPERSET
 
+<Multi_key> <a> <l> <c> <o> <h> : "C₂H₅OH"     # ETHANOL (ALCOHOL)
+<Multi_key> <c> <a> <f> <f> <e> : "C₈H₁₀N₄O₂"  # CAFFEINE (conflicts with ă, use ua)
+<Multi_key> <m> <o> <r> <p> <h> : "C₁₇H₁₉NO₃"  # MORPHINE
+<Multi_key> <s> <p> <i> <c> <e> : "C₁₈H₂₇NO₃"  # CAPSAICIN (SPICE) (use spicy for 🌶️)
+<Multi_key> <w> <e> <e> <d>     : "C₂₁H₃₀O₂"   # THC (WEED)
+
 # Z notation (start with z)
 
 <Multi_key> <z> <colon>         : "⦂"  U2982  # Z NOTATION TYPE COLON
@@ -25135,6 +25147,7 @@ include "Logograms"
 <Multi_key> <c> <h> <e> <e> <s> <e> : "🧀"  U1F9C0        # CHEESE WEDGE (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <e> <r> <r> <y> : "🍒"  U1F352        # CHERRIES (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <e> <s> <t> <n> : "🌰"  U1F330        # CHESTNUT (conflicts with ȟ, use vh)
+<Multi_key> <c> <h> <i> <l> <l> <i> : "🌶️"  U1F336 UFE0F  # HOT PEPPER EMOJI (CHILLI) (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <i> <p> <s>     : "🍟"  U1F35F        # FRENCH FRIES (CHIPS) (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <o> <c>         : "🍫"  U1F36B        # CHOCOLATE BAR (conflicts with ȟ, use vh)
 <Multi_key> <c> <h> <o> <p>         : "🥢"  U1F962        # CHOPSTICKS (conflicts with ȟ, use vh)
@@ -25989,6 +26002,7 @@ include "Logograms"
 <Multi_key> <backslash> <w> <a> <l> <k>         : "🚷"  U1F6B7    # NO PEDESTRIANS
 <Multi_key> <backslash> <1> <8>                 : "🔞"  U1F51E    # NO ONE UNDER EIGHTEEN SYMBOL (alternatively NSFW)
 <Multi_key> <backslash> <0>                     : "🚫"  U1F6AB    # NO ENTRY SIGN
+<Multi_key> <backslash> <Multi_key> <0>         : "🛇"  U1F6C7    # PROHIBITED SIGN
 
 # Shapes (see geometric shapes section for many more)
 
@@ -26355,6 +26369,8 @@ include "Logograms"
 <Multi_key> <a> <b> <less>     : "🗮"  U1F5EE        # LEFT ANGER BUBBLE
 <Multi_key> <a> <b> <0>        : "🗰"  U1F5F0        # MOOD BUBBLE
 <Multi_key> <a> <b> <z>        : "🗱"  U1F5F1        # LIGHTNING MOOD BUBBLE
+
+<Multi_key> <a> <n> <k> <h>    : "☥"  U2625  # ANKH
 
 # Legacy computing sprites and related pictographs
 
@@ -26906,12 +26922,6 @@ include "Logograms"
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <backslash>  : "▧" U25A7   # SQUARE WITH UPPER LEFT TO LOWER RIGHT FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <slash>      : "▨" U25A8   # SQUARE WITH UPPER RIGHT TO LOWER LEFT FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <X>          : "▩" U25A9   # SQUARE WITH DIAGONAL CROSSHATCH FILL (conflicts)
-<Multi_key> <bracketleft> <bracketright> <numbersign> <0> : "🞎"  U1F78E  # LIGHT WHITE SQUARE (conflicts)
-<Multi_key> <bracketleft> <bracketright> <numbersign> <1> : "🞏"  U1F78F  # MEDIUM WHITE SQUARE (conflicts)
-<Multi_key> <bracketleft> <bracketright> <numbersign> <2> : "🞐"  U1F790  # BOLD WHITE SQUARE (conflicts)
-<Multi_key> <bracketleft> <bracketright> <numbersign> <3> : "🞑"  U1F791  # HEAVY WHITE SQUARE (conflicts)
-<Multi_key> <bracketleft> <bracketright> <numbersign> <4> : "🞒"  U1F792  # VERY HEAVY WHITE SQUARE (conflicts)
-<Multi_key> <bracketleft> <bracketright> <numbersign> <5> : "🞓"  U1F793  # EXTREMELY HEAVY WHITE SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Return>      : "⃞" U20DE   # COMBINING ENCLOSING SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <less> <greater> : "⛋" U26CB   # WHITE DIAMOND IN SQUARE (conflicts)
 
@@ -26988,11 +26998,6 @@ include "Logograms"
 <Multi_key> <parenleft> <parenright> <Multi_key> <bar>   : "◍" U25CD    # CIRCLE WITH VERTICAL FILL
 <Multi_key> <parenleft> <parenright> <Multi_key> <minus> : "⦵"  U29B5  # CIRCLE WITH HORIZONTAL BAR
 <Multi_key> <parenleft> <parenright> <Multi_key> <X>     : "⦻"  U29BB  # CIRCLE WITH SUPERIMPOSED X
-<Multi_key> <parenleft> <parenright> <numbersign> <1>    : "🞅"  U1F785  # MEDIUM BOLD WHITE CIRCLE
-<Multi_key> <parenleft> <parenright> <numbersign> <2>    : "🞆"  U1F786  # BOLD WHITE CIRCLE
-<Multi_key> <parenleft> <parenright> <numbersign> <3>    : "🞇"  U1F787  # HEAVY WHITE CIRCLE
-<Multi_key> <parenleft> <parenright> <numbersign> <4>    : "🞈"  U1F788  # VERY HEAVY WHITE CIRCLE
-<Multi_key> <parenleft> <parenright> <numbersign> <5>    : "🞉"  U1F789  # EXTREMELY HEAVY WHITE CIRCLE
 <Multi_key> <parenleft> <parenright> <Return>      : "⃝" U20DD   # COMBINING ENCLOSING CIRCLE
 <Multi_key> <parenleft> <parenright> <backslash> <Return> : "⃠" U20E0   # COMBINING ENCLOSING CIRCLE BACKSLASH
 
@@ -27123,13 +27128,77 @@ include "Logograms"
 <Multi_key> <Tab> <asterisk> <5> <greater> : "⯫" U2BEB    # STAR WITH RIGHT HALF BLACK
 <Multi_key> <Tab> <asterisk> <5> <minus> : "⛤" U26E4    # PENTAGRAM
 <Multi_key> <Tab> <asterisk> <5> <v> <minus> : "⛧" U26E7    # INVERTED PENTAGRAM
+<Multi_key> <Tab> <asterisk> <5> <at> : "✯"  U272F  # PINWHEEL STAR
 <Multi_key> <Tab> <asterisk> <6> <1> : "✶" U2736    # SIX POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <6> <minus> : "✡" U2721    # STAR OF DAVID (alternatively *6)
+<Multi_key> <Tab> <asterisk> <6> <at> : "🟍"  U1F7CD  # SIX POINTED PINWHEEL STAR
 <Multi_key> <Tab> <asterisk> <8> <1> : "✴" U2734    # EIGHT POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <8> <O> : "❂" U2742    # CIRCLED OPEN CENTRE EIGHT POINTED STAR
 <Multi_key> <Tab> <asterisk> <8> <minus> : "۞"  U06DE  # ARABIC START OF RUB EL HIZB
+<Multi_key> <Tab> <asterisk> <8> <at> : "✵"  U2735  # EIGHT POINTED PINWHEEL STAR
 <Multi_key> <Tab> <asterisk> <9> <0> : "🟙" U1F7D9    # NINE POINTED WHITE STAR
 <Multi_key> <Tab> <asterisk> <1> <2> <1> : "✹" U2739    # TWELVE POINTED BLACK STAR
+
+# Weighted shapes
+
+<Multi_key> <bracketleft> <bracketright> <numbersign> <1> : "🞎"  U1F78E  # LIGHT WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <2> : "🞏"  U1F78F  # MEDIUM WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <3> : "🞐"  U1F790  # BOLD WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <4> : "🞑"  U1F791  # HEAVY WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <5> : "🞒"  U1F792  # VERY HEAVY WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <numbersign> <6> : "🞓"  U1F793  # EXTREMELY HEAVY WHITE SQUARE (conflicts)
+<Multi_key> <parenleft> <parenright> <numbersign> <2>     : "🞅"  U1F785  # MEDIUM BOLD WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <numbersign> <3>     : "🞆"  U1F786  # BOLD WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <numbersign> <4>     : "🞇"  U1F787  # HEAVY WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <numbersign> <5>     : "🞈"  U1F788  # VERY HEAVY WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <numbersign> <6>     : "🞉"  U1F789  # EXTREMELY HEAVY WHITE CIRCLE
+
+<Multi_key> <Tab> <plus> <numbersign> <0> : "🞡"  U1F7A1  # THIN GREEK CROSS
+<Multi_key> <Tab> <plus> <numbersign> <1> : "🞢"  U1F7A2  # LIGHT GREEK CROSS
+<Multi_key> <Tab> <plus> <numbersign> <2> : "🞣"  U1F7A3  # MEDIUM GREEK CROSS
+<Multi_key> <Tab> <plus> <numbersign> <3> : "🞤"  U1F7A4  # BOLD GREEK CROSS
+<Multi_key> <Tab> <plus> <numbersign> <4> : "🞥"  U1F7A5  # VERY BOLD GREEK CROSS
+<Multi_key> <Tab> <plus> <numbersign> <5> : "🞦"  U1F7A6  # VERY HEAVY GREEK CROSS
+<Multi_key> <Tab> <plus> <numbersign> <6> : "🞧"  U1F7A7  # EXTREMELY HEAVY GREEK CROSS
+<Multi_key> <Tab> <X> <numbersign> <0>    : "🞨"  U1F7A8  # THIN SALTIRE
+<Multi_key> <Tab> <X> <numbersign> <1>    : "🞩"  U1F7A9  # LIGHT SALTIRE
+<Multi_key> <Tab> <X> <numbersign> <2>    : "🞪"  U1F7AA  # MEDIUM SALTIRE
+<Multi_key> <Tab> <X> <numbersign> <3>    : "🞫"  U1F7AB  # BOLD SALTIRE
+<Multi_key> <Tab> <X> <numbersign> <4>    : "🞬"  U1F7AC  # HEAVY SALTIRE
+<Multi_key> <Tab> <X> <numbersign> <5>    : "🞭"  U1F7AD  # VERY HEAVY SALTIRE
+<Multi_key> <Tab> <X> <numbersign> <6>    : "🞮"  U1F7AE  # EXTREMELY HEAVY SALTIRE
+
+<Multi_key> <Tab> <asterisk> <asterisk> <5> <numbersign> <1> : "🞯"  U1F7AF  # LIGHT FIVE SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <5> <numbersign> <2> : "🞰"  U1F7B0  # MEDIUM FIVE SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <5> <numbersign> <3> : "🞱"  U1F7B1  # BOLD FIVE SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <5> <numbersign> <4> : "🞲"  U1F7B2  # HEAVY FIVE SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <5> <numbersign> <5> : "🞳"  U1F7B3  # VERY HEAVY FIVE SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <5> <numbersign> <6> : "🞴"  U1F7B4  # EXTREMELY HEAVY FIVE SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <6> <numbersign> <1> : "🞵"  U1F7B5  # LIGHT SIX SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <6> <numbersign> <2> : "🞶"  U1F7B6  # MEDIUM SIX SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <6> <numbersign> <3> : "🞷"  U1F7B7  # BOLD SIX SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <6> <numbersign> <4> : "🞸"  U1F7B8  # HEAVY SIX SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <6> <numbersign> <5> : "🞹"  U1F7B9  # VERY HEAVY SIX SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <6> <numbersign> <6> : "🞺"  U1F7BA  # EXTREMELY HEAVY SIX SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <8> <numbersign> <1> : "🞻"  U1F7BB  # LIGHT EIGHT SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <8> <numbersign> <2> : "🞼"  U1F7BC  # MEDIUM EIGHT SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <8> <numbersign> <3> : "🞽"  U1F7BD  # BOLD EIGHT SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <8> <numbersign> <4> : "🞾"  U1F7BE  # HEAVY EIGHT SPOKED ASTERISK
+<Multi_key> <Tab> <asterisk> <asterisk> <8> <numbersign> <5> : "🞿"  U1F7BF  # VERY HEAVY EIGHT SPOKED ASTERISK
+
+<Multi_key> <Tab> <asterisk> <3> <numbersign> <1> : "🟀"  U1F7C0  # LIGHT THREE POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <3> <numbersign> <2> : "🟁"  U1F7C1  # MEDIUM THREE POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <4> <numbersign> <1> : "🟄"  U1F7C4  # LIGHT FOUR POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <4> <numbersign> <2> : "🟅"  U1F7C5  # MEDIUM FOUR POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <5> <numbersign> <1> : "🟉"  U1F7C9  # LIGHT FIVE POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <5> <numbersign> <4> : "🟊"  U1F7CA  # HEAVY FIVE POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <6> <numbersign> <2> : "🟋"  U1F7CB  # MEDIUM SIX POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <6> <numbersign> <4> : "🟌"  U1F7CC  # HEAVY SIX POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <8> <numbersign> <2> : "🟎"  U1F7CE  # MEDIUM EIGHT POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <8> <numbersign> <4> : "🟏"  U1F7CF  # HEAVY EIGHT POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <8> <numbersign> <5> : "🟐"  U1F7D0  # VERY HEAVY EIGHT POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <1> <2> <numbersign> <1> : "🟒"  U1F7D2  # LIGHT TWELVE POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <1> <2> <numbersign> <4> : "🟓"  U1F7D3  # HEAVY TWELVE POINTED BLACK STAR
 
 ##########
 # Arrows #
