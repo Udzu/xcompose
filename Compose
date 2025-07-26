@@ -3944,7 +3944,9 @@ include "%L"
 <Multi_key> <a> <semicolon> <u> <Return>              : "ُ"  U064F  # ARABIC DAMMA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <i> <Return>              : "ِ"  U0650  # ARABIC KASRA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <underscore> <i> <Return> : "ِ"  U0650  # ARABIC KASRA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <quotedbl> <Return>       : "ّ"  U0651  # ARABIC SHADDA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <w> <Return>              : "ّ"  U0651  # ARABIC SHADDA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <0> <Return>              : "ْ"  U0652  # ARABIC SUKUN (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <o> <Return>              : "ْ"  U0652  # ARABIC SUKUN (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <asciitilde> <Return>     : "ٓ"  U0653  # ARABIC MADDAH ABOVE (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <2> <Return>              : "ٔ"  U0654  # ARABIC HAMZA ABOVE (conflicts with ą, use ,a)
@@ -11218,6 +11220,11 @@ include "%L"
 <Multi_key> <c> <x> <bar> <C> <H> : "Ҹ"  U04B8  # CYRILLIC CAPITAL LETTER CHE WITH VERTICAL STROKE
 <Multi_key> <c> <x> <bar> <c> <h> : "ҹ"  U04B9  # CYRILLIC SMALL LETTER CHE WITH VERTICAL STROKE
 
+<Multi_key> <c> <x> <period> <O> : "Ꙩ"  UA668  # CYRILLIC CAPITAL LETTER MONOCULAR O
+<Multi_key> <c> <x> <period> <o> : "ꙩ"  UA669  # CYRILLIC SMALL LETTER MONOCULAR O
+<Multi_key> <c> <x> <quotedbl> <O> : "Ꙫ"  UA66A  # CYRILLIC CAPITAL LETTER BINOCULAR O
+<Multi_key> <c> <x> <quotedbl> <o> : "ꙫ"  UA66B  # CYRILLIC SMALL LETTER BINOCULAR O
+
 # (superscripts and subscripts)
 
 <Multi_key> <c> <c> <asciicircum> <underscore> <a> : "𞀰"  U1E030  # MODIFIER LETTER CYRILLIC SMALL A (conflict)
@@ -17525,42 +17532,72 @@ include "HangulSyllables"
 <Multi_key> <K> <B> <L> <2> <bar>        : "᭟"  U1B5F  # BALINESE CARIK PAREREN (DOUBLE DANDA)
 <Multi_key> <K> <B> <L> <minus> <Return> : "᭠"  U1B60  # BALINESE PAMENENG
 
-# (BT = Batak)
+# (BT = Batak) minority forms suffixed by K(aro), M(andailing), P(akpak), T(oba), S(imalungun)
 
 <Multi_key> <K> <B> <T> <a> <space>      : "ᯀ"  U1BC0  # BATAK LETTER A
-<Multi_key> <K> <B> <T> <h> <space>      : "ᯂ"  U1BC2  # BATAK LETTER HA
-<Multi_key> <K> <B> <T> <b>              : "ᯅ"  U1BC5  # BATAK LETTER BA
-<Multi_key> <K> <B> <T> <p>              : "ᯇ"  U1BC7  # BATAK LETTER PA
+<Multi_key> <K> <B> <T> <a> <S>          : "ᯁ"  U1BC1  # BATAK LETTER SIMALUNGUN A
+<Multi_key> <K> <B> <T> <h> <K>          : "ᯀ"  U1BC0  # BATAK LETTER A
+<Multi_key> <K> <B> <T> <h> <M>          : "ᯄ"  U1BC4  # BATAK LETTER MANDAILING HA
+<Multi_key> <K> <B> <T> <h> <P>          : "ᯀ"  U1BC0  # BATAK LETTER A
+<Multi_key> <K> <B> <T> <h> <T>          : "ᯂ"  U1BC2  # BATAK LETTER HA
+<Multi_key> <K> <B> <T> <h> <S>          : "ᯃ"  U1BC3  # BATAK LETTER SIMALUNGUN HA
+<Multi_key> <K> <B> <T> <k> <space>      : "ᯂ"  U1BC2  # BATAK LETTER HA
+<Multi_key> <K> <B> <T> <k> <M>          : "ᯂ᯦"  U1BC2 U1BE6  # BATAK LETTER HA BATAK SIGN TOMPI
+<Multi_key> <K> <B> <T> <k> <S>          : "ᯃ"  U1BC3  # BATAK LETTER SIMALUNGUN HA
+<Multi_key> <K> <B> <T> <b> <space>      : "ᯅ"  U1BC5  # BATAK LETTER BA
+<Multi_key> <K> <B> <T> <b> <K>          : "ᯆ"  U1BC6  # BATAK LETTER KARO BA
+<Multi_key> <K> <B> <T> <p> <space>      : "ᯇ"  U1BC7  # BATAK LETTER PA
+<Multi_key> <K> <B> <T> <p> <S>          : "ᯈ"  U1BC8  # BATAK LETTER SIMALUNGUN PA
 <Multi_key> <K> <B> <T> <n> <space>      : "ᯉ"  U1BC9  # BATAK LETTER NA
-<Multi_key> <K> <B> <T> <w>              : "ᯋ"  U1BCB  # BATAK LETTER WA
-<Multi_key> <K> <B> <T> <g>              : "ᯎ"  U1BCE  # BATAK LETTER GA
+<Multi_key> <K> <B> <T> <n> <M>          : "ᯊ"  U1BCA  # BATAK LETTER MANDAILING NA
+<Multi_key> <K> <B> <T> <w> <space>      : "ᯋ"  U1BCB  # BATAK LETTER WA
+<Multi_key> <K> <B> <T> <w> <P>          : "ᯍ"  U1BCD  # BATAK LETTER PAKPAK WA
+<Multi_key> <K> <B> <T> <w> <S>          : "ᯌ"  U1BCC  # BATAK LETTER SIMALUNGUN WA
+<Multi_key> <K> <B> <T> <g> <space>      : "ᯎ"  U1BCE  # BATAK LETTER GA
+<Multi_key> <K> <B> <T> <g> <S>          : "ᯏ"  U1BCF  # BATAK LETTER SIMALUNGUN GA
 <Multi_key> <K> <B> <T> <j>              : "ᯐ"  U1BD0  # BATAK LETTER JA
 <Multi_key> <K> <B> <T> <d>              : "ᯑ"  U1BD1  # BATAK LETTER DA
-<Multi_key> <K> <B> <T> <r>              : "ᯒ"  U1BD2  # BATAK LETTER RA
+<Multi_key> <K> <B> <T> <r> <space>      : "ᯒ"  U1BD2  # BATAK LETTER RA
+<Multi_key> <K> <B> <T> <r> <S>          : "ᯓ"  U1BD3  # BATAK LETTER SIMALUNGUN RA
 <Multi_key> <K> <B> <T> <m> <space>      : "ᯔ"  U1BD4  # BATAK LETTER MA
-<Multi_key> <K> <B> <T> <t> <S>          : "ᯖ"  U1BD6  # BATAK LETTER SOUTHERN TA
-<Multi_key> <K> <B> <T> <t> <N>          : "ᯗ"  U1BD7  # BATAK LETTER NORTHERN TA
-<Multi_key> <K> <B> <T> <s>              : "ᯘ"  U1BD8  # BATAK LETTER SA
-<Multi_key> <K> <B> <T> <y>              : "ᯛ"  U1BDB  # BATAK LETTER YA
+<Multi_key> <K> <B> <T> <m> <S>          : "ᯕ"  U1BD5  # BATAK LETTER SIMALUNGUN MA
+<Multi_key> <K> <B> <T> <t> <space>      : "ᯖ"  U1BD6  # BATAK LETTER SOUTHERN TA
+<Multi_key> <K> <B> <T> <t> <K>          : "ᯗ"  U1BD7  # BATAK LETTER NORTHERN TA
+<Multi_key> <K> <B> <T> <t> <P>          : "ᯗ"  U1BD7  # BATAK LETTER NORTHERN TA
+<Multi_key> <K> <B> <T> <s> <space>      : "ᯘ"  U1BD8  # BATAK LETTER SA
+<Multi_key> <K> <B> <T> <s> <M>          : "ᯚ"  U1BDA  # BATAK LETTER MANDAILING SA
+<Multi_key> <K> <B> <T> <s> <S>          : "ᯙ"  U1BD9  # BATAK LETTER SIMALUNGUN SA
+<Multi_key> <K> <B> <T> <y> <space>      : "ᯛ"  U1BDB  # BATAK LETTER YA
+<Multi_key> <K> <B> <T> <y> <S>          : "ᯜ"  U1BDC  # BATAK LETTER SIMALUNGUN YA
 <Multi_key> <K> <B> <T> <semicolon> <n> <space> : "ᯝ"  U1BDD  # BATAK LETTER NGA
-<Multi_key> <K> <B> <T> <l>              : "ᯞ"  U1BDE  # BATAK LETTER LA
+<Multi_key> <K> <B> <T> <l> <space>      : "ᯞ"  U1BDE  # BATAK LETTER LA
+<Multi_key> <K> <B> <T> <l> <S>          : "ᯟ"  U1BDF  # BATAK LETTER SIMALUNGUN LA
 <Multi_key> <K> <B> <T> <asciitilde> <n> : "ᯠ"  U1BE0  # BATAK LETTER NYA
-<Multi_key> <K> <B> <T> <c>              : "ᯡ"  U1BE1  # BATAK LETTER CA
+<Multi_key> <K> <B> <T> <c> <space>      : "ᯡ"  U1BE1  # BATAK LETTER CA
+<Multi_key> <K> <B> <T> <c> <M>          : "ᯚ᯦"  U1BDA U1BE6  # BATAK LETTER MANDAILING SA BATAK SIGN TOMPI
+<Multi_key> <K> <B> <T> <c> <P>          : "ᯘ"  U1BD8  # BATAK LETTER SA
 <Multi_key> <K> <B> <T> <n> <d>          : "ᯢ"  U1BE2  # BATAK LETTER NDA
 <Multi_key> <K> <B> <T> <m> <b>          : "ᯣ"  U1BE3  # BATAK LETTER MBA
 <Multi_key> <K> <B> <T> <i> <space>      : "ᯤ"  U1BE4  # BATAK LETTER I
 <Multi_key> <K> <B> <T> <u> <space>      : "ᯥ"  U1BE5  # BATAK LETTER U
 
 <Multi_key> <K> <B> <T> <equal> <Return> : "᯦"  U1BE6  # BATAK SIGN TOMPI
-<Multi_key> <K> <B> <T> <e> <Return>     : "ᯧ"  U1BE7  # BATAK VOWEL SIGN E
-<Multi_key> <K> <B> <T> <e> <e> <Return> : "ᯩ"  U1BE9  # BATAK VOWEL SIGN EE
+<Multi_key> <K> <B> <T> <e> <Return>     : "ᯩ"  U1BE9  # BATAK VOWEL SIGN EE
+<Multi_key> <K> <B> <T> <e> <K> <Return> : "ᯧ"  U1BE7  # BATAK VOWEL SIGN E
+<Multi_key> <K> <B> <T> <e> <P> <Return> : "ᯨ"  U1BE8  # BATAK VOWEL SIGN PAKPAK E
 <Multi_key> <K> <B> <T> <i> <Return>     : "ᯪ"  U1BEA  # BATAK VOWEL SIGN I
-<Multi_key> <K> <B> <T> <o> <o> <Return> : "ᯬ"  U1BEC  # BATAK VOWEL SIGN O
+<Multi_key> <K> <B> <T> <i> <K> <Return> : "ᯫ"  U1BEB  # BATAK VOWEL SIGN KARO I
+<Multi_key> <K> <B> <T> <i> <S> <Return> : "ᯫ"  U1BEB  # BATAK VOWEL SIGN KARO I
+<Multi_key> <K> <B> <T> <o> <Return>     : "ᯬ"  U1BEC  # BATAK VOWEL SIGN O
+<Multi_key> <K> <B> <T> <o> <K> <Return> : "ᯭ"  U1BED  # BATAK VOWEL SIGN KARO O
 <Multi_key> <K> <B> <T> <u> <Return>     : "ᯮ"  U1BEE  # BATAK VOWEL SIGN U
+<Multi_key> <K> <B> <T> <u> <K> <Return> : "ᯬ"  U1BEC  # BATAK VOWEL SIGN O
+<Multi_key> <K> <B> <T> <u> <S> <Return> : "ᯯ"  U1BEF  # BATAK VOWEL SIGN U FOR SIMALUNGUN SA
 <Multi_key> <K> <B> <T> <semicolon> <n> <Return> : "ᯰ"  U1BF0  # BATAK CONSONANT SIGN NG
 <Multi_key> <K> <B> <T> <h> <Return>     : "ᯱ"  U1BF1  # BATAK CONSONANT SIGN H
 <Multi_key> <K> <B> <0> <Return>         : "᯲"  U1BF2  # BATAK PANGOLAT (VIRAMA)
-<Multi_key> <K> <B> <2> <0> <Return>     : "᯳"  U1BF3  # BATAK PANONGONAN (VIRAMA)
+<Multi_key> <K> <B> <0> <K> <Return>     : "᯳"  U1BF3  # BATAK PANONGONAN (VIRAMA)
+<Multi_key> <K> <B> <0> <S> <Return>     : "᯳"  U1BF3  # BATAK PANONGONAN (VIRAMA)
 
 # (h = Hanunoo)
 
@@ -29815,6 +29852,7 @@ include "Logograms"
 
 <Multi_key> <backslash> <n> <e> <t>             : "🖧"  U1F5A7  # THREE NETWORKED COMPUTERS
 <Multi_key> <backslash> <c> <a> <l> <c>         : "🖩"  U1F5A9  # POCKET CALCULATOR
+<Multi_key> <backslash> <d> <e> <s> <k>         : "🖳"  U1F5B3  # OLD PERSONAL COMPUTER (DESKTOP)
 <Multi_key> <backslash> <f> <l> <o> <p> <p> <y> : "🖬"  U1F5AC  # SOFT SHELL FLOPPY DISK
 <Multi_key> <backslash> <t> <a> <p> <e>         : "🖭"  U1F5AD  # TAPE CARTRIDGE
 <Multi_key> <backslash> <k> <b> <o> <a> <r> <d> : "⌨"  U2328   # KEYBOARD
