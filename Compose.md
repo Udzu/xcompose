@@ -9,23 +9,23 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (603)
+### Common script characters (604)
 * **Spaces** (15): NBSP MMSP ZWSP etc
 * **Dashes** (12): – — ⁓ ⸻ etc
 * **Brackets** (40): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
 * **General punctuation** (60): ⁁ ⁂ ⸎ etc
-* **Currency symbols** (20): ₱ ₿ ₪ etc
+* **Currency symbols** (21): ₱ ₿ ₪ etc
 * **Combining diacritics** (174): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (271): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2752)
+### Latin script characters (2754)
 * **International Phonetic Alphabet** (143): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Latin script letters** (514): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (794): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 𜳖 etc
 * **Enclosed alphanumerics** (288): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (309): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
-* **Multigraphs and ligatures** (389): ʣ ㏈ etc
+* **Multigraphs and ligatures** (391): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
 ### Non-Latin script characters (32960)
