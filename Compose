@@ -17397,6 +17397,7 @@ include "HangulSyllables"
 # Dependent vowels
 
 <Multi_key> <K> <c> <a> <a> <Return> : "𑼴"  U11F34  # KAWI VOWEL SIGN AA
+<Multi_key> <K> <c> <2> <a> <a> <Return> : "𑼵"  U11F35  # KAWI VOWEL SIGN ALTERNATE AA
 <Multi_key> <K> <c> <i> <Return> : "𑼶"  U11F36  # KAWI VOWEL SIGN I
 <Multi_key> <K> <c> <i> <i> <Return> : "𑼷"  U11F37  # KAWI VOWEL SIGN II
 <Multi_key> <K> <c> <u> <Return> : "𑼸"  U11F38  # KAWI VOWEL SIGN U
@@ -17414,12 +17415,23 @@ include "HangulSyllables"
 <Multi_key> <K> <c> <underscore> <period> <Return> : "𑽚"  U11F5A  # KAWI SIGN NUKTA
 <Multi_key> <K> <c> <0> <Return> : "𑽁"  U11F41  # KAWI SIGN KILLER
 <Multi_key> <K> <c> <underscore> <plus> <Return> : "𑽂"  U11F42  # KAWI CONJOINER
+<Multi_key> <K> <c> <asciicircum> <r> <Return> : "𑼂"  U11F02  # KAWI SIGN REPHA
 
 # Punctuation
 
 <Multi_key> <K> <c> <bar> : "𑽃"  U11F43  # KAWI DANDA
 <Multi_key> <K> <c> <2> <bar> : "𑽄"  U11F44  # KAWI DOUBLE DANDA
 <Multi_key> <K> <c> <Multi_key> <S> <O> : "𑽅"  U11F45  # KAWI PUNCTUATION SECTION MARKER
+<Multi_key> <K> <c> <2> <Multi_key> <S> <O> : "𑽆"  U11F46  # KAWI PUNCTUATION ALTERNATE SECTION MARKER
+<Multi_key> <K> <c> <asterisk> : "𑽇"  U11F47  # KAWI PUNCTUATION FLOWER
+<Multi_key> <K> <c> <space> : "𑽈"  U11F48  # KAWI PUNCTUATION SPACE FILLER
+<Multi_key> <K> <c> <1> <period> : "𑽉"  U11F49  # KAWI PUNCTUATION DOT
+<Multi_key> <K> <c> <2> <period> : "𑽊"  U11F4A  # KAWI PUNCTUATION DOUBLE DOT
+<Multi_key> <K> <c> <3> <period> : "𑽋"  U11F4B  # KAWI PUNCTUATION TRIPLE DOT
+<Multi_key> <K> <c> <O> : "𑽌"  U11F4C  # KAWI PUNCTUATION CIRCLE
+<Multi_key> <K> <c> <period> <O> : "𑽍"  U11F4D  # KAWI PUNCTUATION FILLED CIRCLE
+<Multi_key> <K> <c> <at> : "𑽎"  U11F4E  # KAWI PUNCTUATION SPIRAL
+<Multi_key> <K> <c> <parenright> <at> : "𑽏"  U11F4F  # KAWI PUNCTUATION CLOSING SPIRAL
 
 # Numerals
 
@@ -23578,12 +23590,17 @@ include "HangulSyllables"
 <Multi_key> <Z> <n> <f> : "ߝ" U07DD   # NKO LETTER FA
 <Multi_key> <Z> <n> <k> : "ߞ" U07DE   # NKO LETTER KA
 <Multi_key> <Z> <n> <l> : "ߟ" U07DF   # NKO LETTER LA
+<Multi_key> <Z> <n> <greater> <n> <space> : "ߠ"  U07E0  # NKO LETTER NA WOLOSO
 <Multi_key> <Z> <n> <m> : "ߡ" U07E1   # NKO LETTER MA
 <Multi_key> <Z> <n> <n> <y> : "ߢ" U07E2   # NKO LETTER NYA
 <Multi_key> <Z> <n> <n> <space> : "ߣ" U07E3   # NKO LETTER NA
 <Multi_key> <Z> <n> <h> : "ߤ" U07E4   # NKO LETTER HA
 <Multi_key> <Z> <n> <w> : "ߥ" U07E5   # NKO LETTER WA
 <Multi_key> <Z> <n> <y> : "ߦ" U07E6   # NKO LETTER YA
+<Multi_key> <Z> <n> <greater> <n> <y> : "ߧ"  U07E7  # NKO LETTER NYA WOLOSO
+<Multi_key> <Z> <n> <2> <j> : "ߨ"  U07E8  # NKO LETTER JONA JA
+<Multi_key> <Z> <n> <2> <c> <h> : "ߩ"  U07E9  # NKO LETTER JONA CHA
+<Multi_key> <Z> <n> <2> <r> : "ߪ"  U07EA  # NKO LETTER JONA RA
 
 <Multi_key> <Z> <n> <minus> <Return> : "߫" U07EB   # NKO COMBINING SHORT HIGH TONE
 <Multi_key> <Z> <n> <asciitilde> <Return> : "߬" U07EC   # NKO COMBINING SHORT LOW TONE
