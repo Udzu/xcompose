@@ -9247,6 +9247,7 @@ include "%L"
 # Other signs
 
 <Multi_key> <b> <M> <R> <bar> : "𑱱"  U11C71  # MARCHEN MARK SHAD
+<Multi_key> <b> <M> <R> <bracketleft> : "𑱰"  U11C70  # MARCHEN HEAD MARK
 <Multi_key> <b> <M> <R> <period> <Return> : "𑲵"  U11CB5  # MARCHEN SIGN ANUSVARA
 <Multi_key> <b> <M> <R> <period> <parenright> <Return> : "𑲶"  U11CB6  # MARCHEN SIGN CANDRABINDU
 
@@ -20648,6 +20649,7 @@ include "HangulSyllables"
 
 <Multi_key> <z> <n> <numbersign> <0> : "᧐"  U19D0  # NEW TAI LUE DIGIT ZERO
 <Multi_key> <z> <n> <numbersign> <1> : "᧑"  U19D1  # NEW TAI LUE DIGIT ONE
+<Multi_key> <z> <n> <numbersign> <T> <1> : "᧚"  U19DA  # NEW TAI LUE THAM DIGIT ONE
 <Multi_key> <z> <n> <numbersign> <2> : "᧒"  U19D2  # NEW TAI LUE DIGIT TWO
 <Multi_key> <z> <n> <numbersign> <3> : "᧓"  U19D3  # NEW TAI LUE DIGIT THREE
 <Multi_key> <z> <n> <numbersign> <4> : "᧔"  U19D4  # NEW TAI LUE DIGIT FOUR
@@ -20837,6 +20839,8 @@ include "HangulSyllables"
 <Multi_key> <z> <P> <underscore> <r> : "ꡱ"  UA871  # PHAGS-PA SUBJOINED LETTER RA
 
 <Multi_key> <z> <P> <period> <parenright> : "ꡳ"  UA873  # PHAGS-PA LETTER CANDRABINDU
+<Multi_key> <z> <P> <bracketleft> : "꡴"  UA874  # PHAGS-PA SINGLE HEAD MARK
+<Multi_key> <z> <P> <2> <bracketleft> : "꡵"  UA875  # PHAGS-PA DOUBLE HEAD MARK
 
 # (s = Soyombo)
 
@@ -22405,9 +22409,14 @@ include "HangulSyllables"
 <Multi_key> <z> <Z> <underscore> <l> <Return> : "𑨽"  U11A3D  # ZANABAZAR SQUARE CLUSTER-FINAL LETTER LA
 <Multi_key> <z> <Z> <underscore> <v> <Return> : "𑨾"  U11A3E  # ZANABAZAR SQUARE CLUSTER-FINAL LETTER VA
 
+<Multi_key> <z> <Z> <underscore> <plus> <Return> : "𑩇"  U11A47  # ZANABAZAR SQUARE SUBJOINER
+
 <Multi_key> <z> <Z> <bar>                : "𑩂"  U11A42  # ZANABAZAR SQUARE MARK SHAD
 <Multi_key> <z> <Z> <2> <bar>            : "𑩃"  U11A43  # ZANABAZAR SQUARE MARK DOUBLE SHAD
-<Multi_key> <z> <Z> <underscore> <plus> <Return> : "𑩇"  U11A47  # ZANABAZAR SQUARE SUBJOINER
+<Multi_key> <z> <Z> <bracketleft>        : "𑨿"  U11A3F  # ZANABAZAR SQUARE INITIAL HEAD MARK
+<Multi_key> <z> <Z> <bracketright>       : "𑩀"  U11A40  # ZANABAZAR SQUARE CLOSING HEAD MARK
+<Multi_key> <z> <Z> <underscore> <bracketleft> : "𑩅"  U11A45  # ZANABAZAR SQUARE INITIAL DOUBLE-LINED HEAD MARK
+<Multi_key> <z> <Z> <underscore> <bracketright> : "𑩆"  U11A46  # ZANABAZAR SQUARE CLOSING DOUBLE-LINED HEAD MARK
 
 ########################################
 # (Z) Ge'ez (and other nearby scripts) #
