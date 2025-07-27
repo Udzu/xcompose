@@ -8396,23 +8396,26 @@ include "%L"
 <Multi_key> <b> <K> <R> <semicolon> <s> : "𖵡"  U16D61  # KIRAT RAI LETTER SHA
 <Multi_key> <b> <K> <R> <h> : "𖵢"  U16D62  # KIRAT RAI LETTER HA
 
-# Dependent vowels
+# Modifying vowels (note that these aren't combining characters)
 
-<Multi_key> <b> <K> <R> <a> <a> <Return> : "𖵣"  U16D63  # KIRAT RAI VOWEL SIGN AA
-<Multi_key> <b> <K> <R> <i> <Return> : "𖵤"  U16D64  # KIRAT RAI VOWEL SIGN I
-<Multi_key> <b> <K> <R> <u> <Return> : "𖵥"  U16D65  # KIRAT RAI VOWEL SIGN U
-<Multi_key> <b> <K> <R> <u> <e> <Return> : "𖵦"  U16D66  # KIRAT RAI VOWEL SIGN UE
-<Multi_key> <b> <K> <R> <e> <e> <Return> : "𖵧"  U16D67  # KIRAT RAI VOWEL SIGN E
-<Multi_key> <b> <K> <R> <a> <i> <Return> : "𖵨"  U16D68  # KIRAT RAI VOWEL SIGN AI
-<Multi_key> <b> <K> <R> <o> <o> <Return> : "𖵩"  U16D69  # KIRAT RAI VOWEL SIGN O
-<Multi_key> <b> <K> <R> <a> <u> <Return> : "𖵪"  U16D6A  # KIRAT RAI VOWEL SIGN AU
-<Multi_key> <b> <K> <R> <0> <Return> : "𖵫"  U16D6B  # KIRAT RAI SIGN VIRAMA
+<Multi_key> <b> <K> <R> <a> <a> : "𖵣"  U16D63  # KIRAT RAI VOWEL SIGN AA
+<Multi_key> <b> <K> <R> <i> : "𖵤"  U16D64  # KIRAT RAI VOWEL SIGN I
+<Multi_key> <b> <K> <R> <u> <space> : "𖵥"  U16D65  # KIRAT RAI VOWEL SIGN U
+<Multi_key> <b> <K> <R> <u> <e> : "𖵦"  U16D66  # KIRAT RAI VOWEL SIGN UE
+<Multi_key> <b> <K> <R> <e> <e> : "𖵧"  U16D67  # KIRAT RAI VOWEL SIGN E
+<Multi_key> <b> <K> <R> <a> <i> : "𖵨"  U16D68  # KIRAT RAI VOWEL SIGN AI
+<Multi_key> <b> <K> <R> <o> <o> : "𖵩"  U16D69  # KIRAT RAI VOWEL SIGN O
+<Multi_key> <b> <K> <R> <a> <u> : "𖵪"  U16D6A  # KIRAT RAI VOWEL SIGN AU
+<Multi_key> <b> <K> <R> <0> : "𖵫"  U16D6B  # KIRAT RAI SIGN VIRAMA
 
 # Other signs
 
 <Multi_key> <b> <K> <R> <period> <Return> : "𖵀"  U16D40  # KIRAT RAI SIGN ANUSVARA
-<Multi_key> <b> <K> <R> <colon> <Return> : "𖵂"  U16D42  # KIRAT RAI SIGN VISARGA
-<Multi_key> <b> <K> <R> <comma> <Return> : "𖵫"  U16D6B  # KIRAT RAI SIGN VIRAMA
+<Multi_key> <b> <K> <R> <underscore> <period> : "𖵁"  U16D41  # KIRAT RAI SIGN TONPI
+<Multi_key> <b> <K> <R> <colon> : "𖵂"  U16D42  # KIRAT RAI SIGN VISARGA
+<Multi_key> <b> <K> <R> <comma> : "𖵫"  U16D6B  # KIRAT RAI SIGN VIRAMA
+<Multi_key> <b> <K> <R> <asciicircum> : "𖵬"  U16D6C  # KIRAT RAI SIGN SAAT
+<Multi_key> <b> <K> <R> <period> <space> : "𖵭"  U16D6D  # KIRAT RAI SIGN YUPI (for 𖵀 use bKR.[Return])
 
 # Punctuation
 
@@ -8955,6 +8958,9 @@ include "%L"
 <Multi_key> <b> <M> <G> <k> <s> <s> : "𑴮"  U11D2E  # MASARAM GONDI LETTER KSSA
 <Multi_key> <b> <M> <G> <j> <asciitilde> <n> : "𑴯"  U11D2F  # MASARAM GONDI LETTER JNYA
 <Multi_key> <b> <M> <G> <t> <r> : "𑴰"  U11D30  # MASARAM GONDI LETTER TRA
+
+<Multi_key> <b> <M> <G> <less> <r> <Return> : "𑵆"  U11D46  # MASARAM GONDI REPHA
+<Multi_key> <b> <M> <G> <greater> <r> <Return> : "𑵇"  U11D47  # MASARAM GONDI RA-KARA
 
 # Independent vowels
 
@@ -9514,8 +9520,10 @@ include "%L"
 <Multi_key> <b> <O> <comma> <r> <r> <Return> : "ୄ"  U0B44  # ORIYA VOWEL SIGN VOCALIC RR (conflicts)
 <Multi_key> <b> <O> <e> <e> <Return>     : "େ"  U0B47  # ORIYA VOWEL SIGN E (conflicts)
 <Multi_key> <b> <O> <a> <i> <Return>     : "ୈ"  U0B48  # ORIYA VOWEL SIGN AI (conflicts)
+<Multi_key> <b> <O> <minus> <a> <i> <Return> : "ୖ"  U0B56  # ORIYA AI LENGTH MARK (conflicts)
 <Multi_key> <b> <O> <o> <o> <Return>     : "ୋ"  U0B4B  # ORIYA VOWEL SIGN O (conflicts)
 <Multi_key> <b> <O> <a> <u> <Return>     : "ୌ"  U0B4C  # ORIYA VOWEL SIGN AU (conflicts)
+<Multi_key> <b> <O> <minus> <a> <u> <Return> : "ୗ"  U0B57  # ORIYA AU LENGTH MARK (conflicts)
 <Multi_key> <b> <O> <comma> <l> <Return> : "ୢ"  U0B62  # ORIYA VOWEL SIGN VOCALIC L (conflicts)
 <Multi_key> <b> <O> <comma> <l> <l> <Return> : "ୣ"  U0B63  # ORIYA VOWEL SIGN VOCALIC LL (conflicts)
 <Multi_key> <b> <O> <0> <Return>         : "୍"  U0B4D  # ORIYA SIGN VIRAMA (conflicts)
@@ -9528,8 +9536,10 @@ include "%L"
 <Multi_key> <b> <O> <8> <Return>         : "ଃ"  U0B03  # ORIYA SIGN VISARGA (conflicts)
 <Multi_key> <b> <O> <underscore> <period> <Return> : "଼"  U0B3C  # ORIYA SIGN NUKTA (conflicts)
 <Multi_key> <b> <O> <comma> <Return>     : "୍"  U0B4D  # ORIYA SIGN VIRAMA (conflicts)
+<Multi_key> <b> <O> <minus> <Return>     : "୕"  U0B55  # ORIYA SIGN OVERLINE (conflicts)
 
 <Multi_key> <b> <O> <S>                  : "ଽ"  U0B3D  # ORIYA SIGN AVAGRAHA (conflicts)
+<Multi_key> <b> <O> <R> <I> <P>          : "୰"  U0B70  # ORIYA ISSHAR (conflicts)
 
 # Numerals
 
@@ -17620,6 +17630,11 @@ include "HangulSyllables"
 <Multi_key> <K> <B> <0> <K> <Return>     : "᯳"  U1BF3  # BATAK PANONGONAN (VIRAMA)
 <Multi_key> <K> <B> <0> <S> <Return>     : "᯳"  U1BF3  # BATAK PANONGONAN (VIRAMA)
 
+<Multi_key> <K> <B> <T> <at> <parenleft> : "᯼"  U1BFC  # BATAK SYMBOL BINDU NA METEK
+<Multi_key> <K> <B> <T> <at> <plus> : "᯽"  U1BFD  # BATAK SYMBOL BINDU PINARBORAS
+<Multi_key> <K> <B> <T> <at> <colon> : "᯾"  U1BFE  # BATAK SYMBOL BINDU JUDUL (TITLE)
+<Multi_key> <K> <B> <T> <at> <parenright> : "᯿"  U1BFF  # BATAK SYMBOL BINDU PANGOLAT (TRAILING)
+
 # (h = Hanunoo)
 
 <Multi_key> <K> <h> <k> : "ᜣ"  U1723  # HANUNOO LETTER KA
@@ -18221,6 +18236,7 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <h> <braceleft> <U> <N> <K> <braceright> : "𐲕"  U10C95  # OLD HUNGARIAN CAPITAL LETTER UNK
 <Multi_key> <o> <i> <h> <braceleft> <E> <M> <P> <braceright> : "𐲡"  U10CA1  # OLD HUNGARIAN CAPITAL LETTER EMP
 <Multi_key> <o> <i> <h> <braceleft> <E> <N> <T> <braceright> : "𐲧"  U10CA7  # OLD HUNGARIAN CAPITAL LETTER ENT
+<Multi_key> <o> <i> <h> <braceleft> <T> <P> <R> <U> <S> <braceright> : "𐲱"  U10CB1  # OLD HUNGARIAN CAPITAL LETTER ENT-SHAPED SIGN
 <Multi_key> <o> <i> <h> <braceleft> <U> <S> <braceright> : "𐲲"  U10CB2  # OLD HUNGARIAN CAPITAL LETTER US
 <Multi_key> <o> <i> <h> <braceleft> <a> <m> <b> <braceright> : "𐳃"  U10CC3  # OLD HUNGARIAN SMALL LETTER AMB
 <Multi_key> <o> <i> <h> <braceleft> <e> <n> <c> <braceright> : "𐳅"  U10CC5  # OLD HUNGARIAN SMALL LETTER ENC
@@ -18228,6 +18244,7 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <h> <braceleft> <u> <n> <k> <braceright> : "𐳕"  U10CD5  # OLD HUNGARIAN SMALL LETTER UNK
 <Multi_key> <o> <i> <h> <braceleft> <e> <m> <p> <braceright> : "𐳡"  U10CE1  # OLD HUNGARIAN SMALL LETTER EMP
 <Multi_key> <o> <i> <h> <braceleft> <e> <n> <t> <braceright> : "𐳧"  U10CE7  # OLD HUNGARIAN SMALL LETTER ENT
+<Multi_key> <o> <i> <h> <braceleft> <t> <p> <r> <u> <s> <braceright> : "𐳱"  U10CF1  # OLD HUNGARIAN SMALL LETTER ENT-SHAPED SIGN
 <Multi_key> <o> <i> <h> <braceleft> <u> <s> <braceright> : "𐳲"  U10CF2  # OLD HUNGARIAN SMALL LETTER US
 
 # (o = Ogham)
@@ -19829,6 +19846,9 @@ include "HangulSyllables"
 
 <Multi_key> <t> <v> <braceright> <m> <a> <n> : "ꫛ"  UAADB  # TAI VIET SYMBOL KON
 <Multi_key> <t> <v> <braceright> <o> <n> <e> : "ꫜ"  UAADC  # TAI VIET SYMBOL NUENG
+<Multi_key> <t> <v> <quotedbl>           : "ꫝ"  UAADD  # TAI VIET SYMBOL SAM
+<Multi_key> <t> <v> <bracketleft>        : "꫞"  UAADE  # TAI VIET SYMBOL HO HOI
+<Multi_key> <t> <v> <bracketright>       : "꫟"  UAADF  # TAI VIET SYMBOL KOI KOI
 
 ##################################################
 # (z) Zhuyin/Bopomofo (and other nearby scripts) #
@@ -23076,6 +23096,8 @@ include "HangulSyllables"
 <Multi_key> <Z> <g> <N> : "𐵡"  U10D61  # GARAY CAPITAL LETTER NA
 <Multi_key> <Z> <g> <P> : "𐵢"  U10D62  # GARAY CAPITAL LETTER PA
 <Multi_key> <Z> <g> <H> : "𐵣"  U10D63  # GARAY CAPITAL LETTER HA
+<Multi_key> <Z> <g> <2> <K> : "𐵤"  U10D64  # GARAY CAPITAL LETTER OLD KA
+<Multi_key> <Z> <g> <2> <N> : "𐵥"  U10D65  # GARAY CAPITAL LETTER OLD NA
 
 <Multi_key> <Z> <g> <asciicircum> <Return> : "𐵪"  U10D6A  # GARAY CONSONANT GEMINATION MARK
 <Multi_key> <Z> <g> <period> <Return> : "𐵫"  U10D6B  # GARAY COMBINING DOT ABOVE
@@ -23104,6 +23126,8 @@ include "HangulSyllables"
 <Multi_key> <Z> <g> <n> : "𐶁"  U10D81  # GARAY SMALL LETTER NA
 <Multi_key> <Z> <g> <p> : "𐶂"  U10D82  # GARAY SMALL LETTER PA
 <Multi_key> <Z> <g> <h> : "𐶃"  U10D83  # GARAY SMALL LETTER HA
+<Multi_key> <Z> <g> <2> <k> : "𐶄"  U10D84  # GARAY SMALL LETTER OLD KA
+<Multi_key> <Z> <g> <2> <n> : "𐶅"  U10D85  # GARAY SMALL LETTER OLD NA
 
 <Multi_key> <Z> <g> <plus> : "𐶎"  U10D8E  # GARAY PLUS SIGN
 <Multi_key> <Z> <g> <minus> <underscore> : "𐶏"  U10D8F  # GARAY MINUS SIGN
