@@ -6621,6 +6621,7 @@ include "%L"
 <Multi_key> <b> <c> <s>                  : "𑀲" U11032   # BRAHMI LETTER SA
 <Multi_key> <b> <c> <h>                  : "𑀳" U11033   # BRAHMI LETTER HA
 <Multi_key> <b> <c> <period> <l>         : "𑀴" U11034   # BRAHMI LETTER LLA
+<Multi_key> <b> <c> <2> <period> <l>     : "𑁵"  U11075  # BRAHMI LETTER OLD TAMIL LLA
 <Multi_key> <b> <c> <underscore> <l>     : "𑀵" U11035   # BRAHMI LETTER OLD TAMIL LLLA
 <Multi_key> <b> <c> <underscore> <r>     : "𑀶" U11036   # BRAHMI LETTER OLD TAMIL RRA
 <Multi_key> <b> <c> <underscore> <n>     : "𑀷" U11037   # BRAHMI LETTER OLD TAMIL NNNA
@@ -6647,6 +6648,7 @@ include "%L"
 # Dependent vowels
 
 <Multi_key> <b> <c> <a> <a> <Return>        : "𑀸" U11038   # BRAHMI VOWEL SIGN AA
+<Multi_key> <b> <c> <B> <a> <a> <Return>    : "𑀹"  U11039  # BRAHMI VOWEL SIGN BHATTIPROLU AA
 <Multi_key> <b> <c> <i> <Return>            : "𑀺" U1103A   # BRAHMI VOWEL SIGN I
 <Multi_key> <b> <c> <i> <i> <Return>        : "𑀻" U1103B   # BRAHMI VOWEL SIGN II
 <Multi_key> <b> <c> <u> <Return>            : "𑀼" U1103C   # BRAHMI VOWEL SIGN U
@@ -6670,6 +6672,7 @@ include "%L"
 <Multi_key> <b> <c> <colon> <Return>        : "𑀂" U11002   # BRAHMI SIGN VISARGA
 <Multi_key> <b> <c> <minus> <Return>        : "𑁆" U11046   # BRAHMI VIRAMA
 <Multi_key> <b> <c> <greater> <period> <Return> : "𑁰" U11070   # BRAHMI SIGN OLD TAMIL VIRAMA
+<Multi_key> <b> <c> <asterisk> <Return>     : "𑁿"  U1107F  # BRAHMI NUMBER JOINER
 
 <Multi_key> <b> <c> <x>                     : "𑀃" U11003   # BRAHMI SIGN JIHVAMULIYA
 <Multi_key> <b> <c> <o> <x>                 : "𑀄" U11004   # BRAHMI SIGN UPADHMANIYA
@@ -6681,6 +6684,8 @@ include "%L"
 <Multi_key> <b> <c> <minus> <period> : "𑁉" U11049   # BRAHMI PUNCTUATION DOT
 <Multi_key> <b> <c> <minus> <colon> : "𑁊" U1104A   # BRAHMI PUNCTUATION DOUBLE DOT
 <Multi_key> <b> <c> <minus> <minus> : "𑁋" U1104B   # BRAHMI PUNCTUATION LINE
+<Multi_key> <b> <c> <Multi_key> <P> <P> : "𑁌"  U1104C  # BRAHMI PUNCTUATION CRESCENT BAR
+<Multi_key> <b> <c> <Multi_key> <S> <O> : "𑁍"  U1104D  # BRAHMI PUNCTUATION LOTUS
 
 # Numbers
 
@@ -18317,13 +18322,17 @@ include "HangulSyllables"
 #  N = Norse (= Short Twig Younger Futhark)
 #  D = Danish (= Long Branch Younger Futhark)
 #  M = Medieval
+#  F = Frans Casket
+#  T = Tolkienian(!)
 #  ␣ = majority form
 
 <Multi_key> <o> <i> <r> <a> <D> : "ᛅ" U16C5   # RUNIC LETTER LONG-BRANCH-AR AE
 <Multi_key> <o> <i> <r> <a> <E> : "ᚪ" U16AA   # RUNIC LETTER AC A
 <Multi_key> <o> <i> <r> <a> <G> : "ᚨ" U16A8   # RUNIC LETTER ANSUZ A
 <Multi_key> <o> <i> <r> <a> <N> : "ᛆ" U16C6   # RUNIC LETTER SHORT-TWIG-AR A
-<Multi_key> <o> <i> <r> <a> <e> : "ᚫ" U16AB   # RUNIC LETTER AESC
+<Multi_key> <o> <i> <r> <a> <F> : "ᛷ"  U16F7  # RUNIC LETTER FRANKS CASKET AC
+<Multi_key> <o> <i> <r> <a> <e> <space> : "ᚫ" U16AB   # RUNIC LETTER AESC
+<Multi_key> <o> <i> <r> <a> <e> <F> : "ᛸ"  U16F8  # RUNIC LETTER FRANKS CASKET AESC
 <Multi_key> <o> <i> <r> <b> <N> : "ᛓ" U16D3   # RUNIC LETTER SHORT-TWIG-BJARKAN B
 <Multi_key> <o> <i> <r> <b> <space> : "ᛒ" U16D2   # RUNIC LETTER BERKANAN BEORC BJARKAN B
 <Multi_key> <o> <i> <r> <c> <E> : "ᚳ" U16B3   # RUNIC LETTER CEN
@@ -18336,6 +18345,7 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <r> <e> <E> : "ᛖ" U16D6   # RUNIC LETTER EHWAZ EH E
 <Multi_key> <o> <i> <r> <e> <G> : "ᛖ" U16D6   # RUNIC LETTER EHWAZ EH E
 <Multi_key> <o> <i> <r> <e> <N> : "ᛂ" U16C2   # RUNIC LETTER E
+<Multi_key> <o> <i> <r> <e> <F> : "ᛶ"  U16F6  # RUNIC LETTER FRANKS CASKET EH
 <Multi_key> <o> <i> <r> <e> <a> : "ᛠ" U16E0   # RUNIC LETTER EAR
 <Multi_key> <o> <i> <r> <f> : "ᚠ" U16A0   # RUNIC LETTER FEHU FEOH FE F
 <Multi_key> <o> <i> <r> <g> <E> : "ᚸ" U16B8   # RUNIC LETTER GAR
@@ -18345,13 +18355,15 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <r> <h> <2> : "ᚻ" U16BB   # RUNIC LETTER HAEGL H
 <Multi_key> <o> <i> <r> <h> <D> : "ᚼ" U16BC   # RUNIC LETTER LONG-BRANCH-HAGALL H
 <Multi_key> <o> <i> <r> <h> <N> : "ᚽ" U16BD   # RUNIC LETTER SHORT-TWIG-HAGALL H
-<Multi_key> <o> <i> <r> <i>     : "ᛁ" U16C1   # RUNIC LETTER ISAZ IS ISS I
+<Multi_key> <o> <i> <r> <i> <space> : "ᛁ" U16C1   # RUNIC LETTER ISAZ IS ISS I
+<Multi_key> <o> <i> <r> <i> <F> : "ᛵ"  U16F5  # RUNIC LETTER FRANKS CASKET IS
 <Multi_key> <o> <i> <r> <j> <1> : "ᛄ" U16C4   # RUNIC LETTER GER
 <Multi_key> <o> <i> <r> <j> <2> : "ᛡ" U16E1   # RUNIC LETTER IOR
 <Multi_key> <o> <i> <r> <j> <G> : "ᛃ" U16C3   # RUNIC LETTER JERAN J
 <Multi_key> <o> <i> <r> <k> <E> : "ᛣ" U16E3   # RUNIC LETTER CALC
 <Multi_key> <o> <i> <r> <k> <G> : "ᚲ" U16B2   # RUNIC LETTER KAUNA
 <Multi_key> <o> <i> <r> <k> <N> : "ᚴ" U16B4   # RUNIC LETTER KAUN K
+<Multi_key> <o> <i> <r> <k> <T> : "ᛱ"  U16F1  # RUNIC LETTER K
 <Multi_key> <o> <i> <r> <l> : "ᛚ" U16DA   # RUNIC LETTER LAUKAZ LAGU LOGR L
 <Multi_key> <o> <i> <r> <m> <D> : "ᛘ" U16D8   # RUNIC LETTER LONG-BRANCH-MADR M
 <Multi_key> <o> <i> <r> <m> <E> : "ᛗ" U16D7   # RUNIC LETTER MANNAZ MAN M
@@ -18367,9 +18379,11 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <r> <o> <G> : "ᛟ" U16DF   # RUNIC LETTER OTHALAN ETHEL O
 <Multi_key> <o> <i> <r> <o> <M> : "ᚮ" U16AE   # RUNIC LETTER O
 <Multi_key> <o> <i> <r> <o> <N> : "ᚭ" U16AD   # RUNIC LETTER SHORT-TWIG-OSS O
+<Multi_key> <o> <i> <r> <o> <F> : "ᛴ"  U16F4  # RUNIC LETTER FRANKS CASKET OS
 <Multi_key> <o> <i> <r> <o> <e> <E> : "ᛟ" U16DF   # RUNIC LETTER OTHALAN ETHEL O
 <Multi_key> <o> <i> <r> <o> <e> <M> : "ᚯ" U16AF   # RUNIC LETTER OE
 <Multi_key> <o> <i> <r> <o> <n> : "ᚰ" U16B0   # RUNIC LETTER ON
+<Multi_key> <o> <i> <r> <o> <o> : "ᛳ"  U16F3  # RUNIC LETTER OO
 <Multi_key> <o> <i> <r> <p> <E> : "ᛈ" U16C8   # RUNIC LETTER PERTHO PEORTH P
 <Multi_key> <o> <i> <r> <p> <G> : "ᛈ" U16C8   # RUNIC LETTER PERTHO PEORTH P
 <Multi_key> <o> <i> <r> <p> <M> : "ᛕ" U16D5   # RUNIC LETTER OPEN-P
@@ -18382,6 +18396,7 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <r> <s> <G> : "ᛊ" U16CA   # RUNIC LETTER SOWILO S
 <Multi_key> <o> <i> <r> <s> <N> : "ᛌ" U16CC   # RUNIC LETTER SHORT-TWIG-SOL S
 <Multi_key> <o> <i> <r> <s> <t> : "ᛥ" U16E5   # RUNIC LETTER STAN
+<Multi_key> <o> <i> <r> <s> <h> : "ᛲ"  U16F2  # RUNIC LETTER SH
 <Multi_key> <o> <i> <r> <t> <N> : "ᛐ" U16D0   # RUNIC LETTER SHORT-TWIG-TYR T
 <Multi_key> <o> <i> <r> <t> <space> : "ᛏ" U16CF   # RUNIC LETTER TIWAZ TIR TYR T
 <Multi_key> <o> <i> <r> <t> <h> : "ᚦ" U16A6   # RUNIC LETTER THURISAZ THURS THORN
@@ -18401,6 +18416,10 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <r> <R> <D> : "ᛦ" U16E6   # RUNIC LETTER LONG-BRANCH-YR
 <Multi_key> <o> <i> <r> <R> <N> : "ᛧ" U16E7   # RUNIC LETTER SHORT-TWIG-YR
 <Multi_key> <o> <i> <r> <quotedbl> <i> : "ᛇ" U16C7   # RUNIC LETTER IWAZ EOH
+
+<Multi_key> <o> <i> <r> <1> <6> : "ᛮ"  U16EE  # RUNIC ARLAUG SYMBOL
+<Multi_key> <o> <i> <r> <1> <7> : "ᛯ"  U16EF  # RUNIC TVIMADUR SYMBOL
+<Multi_key> <o> <i> <r> <1> <8> : "ᛰ"  U16F0  # RUNIC BELGTHOR SYMBOL
 
 # (t = Old Turkic) " used to indicate back vowel consonants
 
@@ -22374,6 +22393,7 @@ include "HangulSyllables"
 <Multi_key> <z> <Z> <a> <i> <Return>     : "𑨇"  U11A07  # ZANABAZAR SQUARE VOWEL SIGN AI
 <Multi_key> <z> <Z> <a> <u> <Return>     : "𑨈"  U11A08  # ZANABAZAR SQUARE VOWEL SIGN AU
 <Multi_key> <z> <Z> <minus> <Return>     : "𑨊"  U11A0A  # ZANABAZAR SQUARE VOWEL LENGTH MARK
+<Multi_key> <z> <Z> <comma> <Return>     : "𑨉"  U11A09  # ZANABAZAR SQUARE VOWEL SIGN REVERSED I
 <Multi_key> <z> <Z> <0> <Return>         : "𑨴"  U11A34  # ZANABAZAR SQUARE SIGN VIRAMA
 
 <Multi_key> <z> <Z> <k> <space>          : "𑨋"  U11A0B  # ZANABAZAR SQUARE LETTER KA
@@ -22418,8 +22438,9 @@ include "HangulSyllables"
 <Multi_key> <z> <Z> <k> <s> <s>          : "𑨲"  U11A32  # ZANABAZAR SQUARE LETTER KSSA
 
 <Multi_key> <z> <Z> <underscore> <period> <Return> : "𑨳"  U11A33  # ZANABAZAR SQUARE FINAL CONSONANT MARK
-<Multi_key> <z> <Z> <comma> <Return>     : "𑨴"  U11A34  # ZANABAZAR SQUARE SIGN VIRAMA
 <Multi_key> <z> <Z> <period> <parenright> <Return> : "𑨵"  U11A35  # ZANABAZAR SQUARE SIGN CANDRABINDU
+<Multi_key> <z> <Z> <J> <period> <parenright> <Return> : "𑨶"  U11A36  # ZANABAZAR SQUARE SIGN CANDRABINDU WITH ORNAMENT
+<Multi_key> <z> <Z> <J> <parenright> <Return> : "𑨷"  U11A37  # ZANABAZAR SQUARE SIGN CANDRA WITH ORNAMENT
 <Multi_key> <z> <Z> <period> <Return>    : "𑨸"  U11A38  # ZANABAZAR SQUARE SIGN ANUSVARA
 <Multi_key> <z> <Z> <colon> <Return>     : "𑨹"  U11A39  # ZANABAZAR SQUARE SIGN VISARGA
 
@@ -22431,8 +22452,10 @@ include "HangulSyllables"
 
 <Multi_key> <z> <Z> <underscore> <plus> <Return> : "𑩇"  U11A47  # ZANABAZAR SQUARE SUBJOINER
 
+<Multi_key> <z> <Z> <space>              : "𑩁"  U11A41  # ZANABAZAR SQUARE MARK TSHEG
 <Multi_key> <z> <Z> <bar>                : "𑩂"  U11A42  # ZANABAZAR SQUARE MARK SHAD
 <Multi_key> <z> <Z> <2> <bar>            : "𑩃"  U11A43  # ZANABAZAR SQUARE MARK DOUBLE SHAD
+<Multi_key> <z> <Z> <comma> <space>      : "𑩄"  U11A44  # ZANABAZAR SQUARE MARK LONG TSHEG
 <Multi_key> <z> <Z> <bracketleft>        : "𑨿"  U11A3F  # ZANABAZAR SQUARE INITIAL HEAD MARK
 <Multi_key> <z> <Z> <bracketright>       : "𑩀"  U11A40  # ZANABAZAR SQUARE CLOSING HEAD MARK
 <Multi_key> <z> <Z> <underscore> <bracketleft> : "𑩅"  U11A45  # ZANABAZAR SQUARE INITIAL DOUBLE-LINED HEAD MARK

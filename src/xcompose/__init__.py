@@ -211,7 +211,8 @@ def add(
     comment: str | None = None,
 ):
     """Utility function to simplify calling add independently."""
-    if not KEYSYMS: read_keysyms()
+    if not KEYSYMS:
+        read_keysyms()
     add_fn(
         args=argparse.Namespace(
             value=value,
