@@ -7678,7 +7678,8 @@ include "%L"
 <Multi_key> <b> <G> <b> <space>          : "ਬ"  U0A2C  # GURMUKHI LETTER BA (conflicts)
 <Multi_key> <b> <G> <b> <h>              : "ਭ"  U0A2D  # GURMUKHI LETTER BHA (conflicts)
 <Multi_key> <b> <G> <m>                  : "ਮ"  U0A2E  # GURMUKHI LETTER MA (conflicts)
-<Multi_key> <b> <G> <y>                  : "ਯ"  U0A2F  # GURMUKHI LETTER YA (conflicts)
+<Multi_key> <b> <G> <y> <space>          : "ਯ"  U0A2F  # GURMUKHI LETTER YA (conflicts)
+<Multi_key> <b> <G> <y> <Return>         : "ੵ"  U0A75  # GURMUKHI SIGN YAKASH (conflicts)
 <Multi_key> <b> <G> <r>                  : "ਰ"  U0A30  # GURMUKHI LETTER RA (conflicts)
 <Multi_key> <b> <G> <l>                  : "ਲ"  U0A32  # GURMUKHI LETTER LA (conflicts)
 <Multi_key> <b> <G> <period> <l>         : "ਲ਼"  U0A33  # GURMUKHI LETTER LLA (conflicts)
@@ -7705,6 +7706,9 @@ include "%L"
 <Multi_key> <b> <G> <o> <o> <space>      : "ਓ"  U0A13  # GURMUKHI LETTER OO (conflicts)
 <Multi_key> <b> <G> <a> <u> <space>      : "ਔ"  U0A14  # GURMUKHI LETTER AU (conflicts)
 
+<Multi_key> <b> <G> <i> <minus>          : "ੲ"  U0A72  # GURMUKHI IRI (conflicts)
+<Multi_key> <b> <G> <u> <minus>          : "ੳ"  U0A73  # GURMUKHI URA (conflicts)
+
 # Dependent vowels
 
 <Multi_key> <b> <G> <a> <a> <Return>     : "ਾ"  U0A3E  # GURMUKHI VOWEL SIGN AA (conflicts)
@@ -7725,7 +7729,13 @@ include "%L"
 <Multi_key> <b> <G> <colon> <Return>     : "ਃ"  U0A03  # GURMUKHI SIGN VISARGA (conflicts)
 <Multi_key> <b> <G> <underscore> <period> <Return> : "਼"  U0A3C  # GURMUKHI SIGN NUKTA (conflicts)
 <Multi_key> <b> <G> <comma> <Return>     : "੍"  U0A4D  # GURMUKHI SIGN VIRAMA (conflicts)
+<Multi_key> <b> <G> <asciicircum> <Return> : "ੑ"  U0A51  # GURMUKHI SIGN UDAAT (conflicts) (HIGH TONE)
 <Multi_key> <b> <G> <parenleft> <Return> : "ੰ"  U0A70  # GURMUKHI TIPPI (conflicts)
+<Multi_key> <b> <G> <parenright> <Return> : "ੱ"  U0A71  # GURMUKHI ADDAK (conflicts)
+<Multi_key> <b> <G> <quotedbl> <Return> : "ੱ"  U0A71  # GURMUKHI ADDAK (conflicts) (GEMINATION PREFIX)
+
+<Multi_key> <b> <G> <e> <k> <o> <n> <k> <a> <r> : "ੴ"  U0A74  # GURMUKHI EK ONKAR (conflicts)
+<Multi_key> <b> <G> <i> <k> <o> <n> <k> <a> <r> : "ੴ"  U0A74  # GURMUKHI EK ONKAR (conflicts)
 
 # Punctuation
 
@@ -8266,8 +8276,15 @@ include "%L"
 
 # Punctuation
 
+<Multi_key> <b> <K> <H> <period> <period> : "𐩐"  U10A50  # KHAROSHTHI PUNCTUATION DOT
+<Multi_key> <b> <K> <H> <period> <o> : "𐩑"  U10A51  # KHAROSHTHI PUNCTUATION SMALL CIRCLE
+<Multi_key> <b> <K> <H> <period> <O> : "𐩒"  U10A52  # KHAROSHTHI PUNCTUATION CIRCLE
+<Multi_key> <b> <K> <H> <E> : "𐩓"  U10A53  # KHAROSHTHI PUNCTUATION CRESCENT BAR
+<Multi_key> <b> <K> <H> <asterisk> <o> : "𐩔"  U10A54  # KHAROSHTHI PUNCTUATION MANGALAM
+<Multi_key> <b> <K> <H> <asterisk> <O> : "𐩕"  U10A55  # KHAROSHTHI PUNCTUATION LOTUS
 <Multi_key> <b> <K> <H> <bar> : "𐩖"  U10A56  # KHAROSHTHI PUNCTUATION DANDA
 <Multi_key> <b> <K> <H> <2> <bar> : "𐩗"  U10A57  # KHAROSHTHI PUNCTUATION DOUBLE DANDA
+<Multi_key> <b> <K> <H> <equal> : "𐩘"  U10A58  # KHAROSHTHI PUNCTUATION LINES
 
 # Numerals
 
@@ -16452,6 +16469,22 @@ include "%L"
 <Multi_key> <j> <semicolon> <less> <bracketleft>   : "〔"  U3014  # LEFT TORTOISE SHELL BRACKET
 <Multi_key> <j> <semicolon> <greater> <bracketright> : "〕"  U3015  # RIGHT TORTOISE SHELL BRACKET
 
+# Tones used for writing Taiwanese
+
+<Multi_key> <j> <c> <bar> <2> : "𚿰"  U1AFF0  # KATAKANA LETTER MINNAN TONE-2
+<Multi_key> <j> <c> <bar> <3> : "𚿱"  U1AFF1  # KATAKANA LETTER MINNAN TONE-3
+<Multi_key> <j> <c> <bar> <4> : "𚿲"  U1AFF2  # KATAKANA LETTER MINNAN TONE-4
+<Multi_key> <j> <c> <bar> <5> : "𚿳"  U1AFF3  # KATAKANA LETTER MINNAN TONE-5
+<Multi_key> <j> <c> <bar> <7> : "𚿵"  U1AFF5  # KATAKANA LETTER MINNAN TONE-7
+<Multi_key> <j> <c> <bar> <8> : "𚿶"  U1AFF6  # KATAKANA LETTER MINNAN TONE-8
+<Multi_key> <j> <c> <bar> <asciitilde> <1> : "𚿷"  U1AFF7  # KATAKANA LETTER MINNAN NASALIZED TONE-1
+<Multi_key> <j> <c> <bar> <asciitilde> <2> : "𚿸"  U1AFF8  # KATAKANA LETTER MINNAN NASALIZED TONE-2
+<Multi_key> <j> <c> <bar> <asciitilde> <3> : "𚿹"  U1AFF9  # KATAKANA LETTER MINNAN NASALIZED TONE-3
+<Multi_key> <j> <c> <bar> <asciitilde> <4> : "𚿺"  U1AFFA  # KATAKANA LETTER MINNAN NASALIZED TONE-4
+<Multi_key> <j> <c> <bar> <asciitilde> <5> : "𚿻"  U1AFFB  # KATAKANA LETTER MINNAN NASALIZED TONE-5
+<Multi_key> <j> <c> <bar> <asciitilde> <7> : "𚿽"  U1AFFD  # KATAKANA LETTER MINNAN NASALIZED TONE-7
+<Multi_key> <j> <c> <bar> <asciitilde> <8> : "𚿾"  U1AFFE  # KATAKANA LETTER MINNAN NASALIZED TONE-8
+
 # (f = fullwidth forms)
 
 <Multi_key> <j> <f> <exclam>       : "！" UFF01    # FULLWIDTH EXCLAMATION MARK
@@ -20865,6 +20898,12 @@ include "HangulSyllables"
 <Multi_key> <z> <P> <period> <d> : "ꡫ"  UA86B  # PHAGS-PA LETTER DDA
 <Multi_key> <z> <P> <period> <n> : "ꡬ"  UA86C  # PHAGS-PA LETTER NNA
 
+<Multi_key> <z> <P> <2> <y> : "ꡭ"  UA86D  # PHAGS-PA LETTER ALTERNATE YA
+<Multi_key> <z> <P> <2> <semicolon> <s> : "ꡮ"  UA86E  # PHAGS-PA LETTER VOICELESS SHA
+<Multi_key> <z> <P> <2> <h> : "ꡯ"  UA86F  # PHAGS-PA LETTER VOICED HA
+<Multi_key> <z> <P> <2> <f> : "ꡰ"  UA870  # PHAGS-PA LETTER ASPIRATED FA
+<Multi_key> <z> <P> <2> <r> : "ꡲ"  UA872  # PHAGS-PA SUPERFIXED LETTER RA
+
 <Multi_key> <z> <P> <a> : "ꡝ"  UA85D  # PHAGS-PA LETTER A
 <Multi_key> <z> <P> <i> : "ꡞ"  UA85E  # PHAGS-PA LETTER I
 <Multi_key> <z> <P> <u> : "ꡟ"  UA85F  # PHAGS-PA LETTER U
@@ -20880,6 +20919,8 @@ include "HangulSyllables"
 <Multi_key> <z> <P> <period> <parenright> : "ꡳ"  UA873  # PHAGS-PA LETTER CANDRABINDU
 <Multi_key> <z> <P> <bracketleft> : "꡴"  UA874  # PHAGS-PA SINGLE HEAD MARK
 <Multi_key> <z> <P> <2> <bracketleft> : "꡵"  UA875  # PHAGS-PA DOUBLE HEAD MARK
+<Multi_key> <z> <P> <bar> : "꡶"  UA876  # PHAGS-PA MARK SHAD
+<Multi_key> <z> <P> <2> <bar> : "꡷"  UA877  # PHAGS-PA MARK DOUBLE SHAD
 
 # (s = Soyombo)
 
@@ -20965,6 +21006,12 @@ include "HangulSyllables"
 <Multi_key> <z> <s> <period> <space>     : "𑪚"  U11A9A  # SOYOMBO MARK TSHEG
 <Multi_key> <z> <s> <bar>                : "𑪛"  U11A9B  # SOYOMBO MARK SHAD
 <Multi_key> <z> <s> <2> <bar>            : "𑪜"  U11A9C  # SOYOMBO MARK DOUBLE SHAD
+<Multi_key> <z> <s> <minus> <space>      : "𑪝"  U11A9D  # SOYOMBO MARK PLUTA
+<Multi_key> <z> <s> <bracketleft> <3>    : "𑪞"  U11A9E  # SOYOMBO HEAD MARK WITH MOON AND SUN AND TRIPLE FLAME
+<Multi_key> <z> <s> <bracketleft> <2>    : "𑪟"  U11A9F  # SOYOMBO HEAD MARK WITH MOON AND SUN AND FLAME
+<Multi_key> <z> <s> <bracketleft> <1>    : "𑪠"  U11AA0  # SOYOMBO HEAD MARK WITH MOON AND SUN
+<Multi_key> <z> <s> <bracketright> <1>   : "𑪡"  U11AA1  # SOYOMBO TERMINAL MARK-1
+<Multi_key> <z> <s> <bracketright> <2>   : "𑪢"  U11AA2  # SOYOMBO TERMINAL MARK-2
 
 # (t = Tibetan) follows ISO 15919 like other Brahmic scripts
 
