@@ -717,8 +717,11 @@ include "%L"
 <Multi_key> <equal> <A>      : "₳"  U20B3  # AUSTRAL SIGN
 <Multi_key> <S> <equal>      : "₴"  U20B4  # HRYVNIA SIGN
 <Multi_key> <equal> <S>      : "₴"  U20B4  # HRYVNIA SIGN
+<Multi_key> <l> <t> <space>  : "₶"  U20B6  # LIVRE TOURNOIS SIGN (conflicts with useless <)
+<Multi_key> <S> <m> <space>  : "₷"  U20B7  # SPESMILO SIGN
 <Multi_key> <T> <asciicircum> <minus> : "₸"  U20B8  # TENGE SIGN
 <Multi_key> <T> <L>          : "₺"  U20BA  # TURKISH LIRA SIGN
+<Multi_key> <M> <at>         : "₻"  U20BB  # NORDIC MARK SIGN
 <Multi_key> <M> <bar>        : "₼"  U20BC  # MANAT SIGN
 <Multi_key> <bar> <M>        : "₼"  U20BC  # MANAT SIGN
 <Multi_key> <P> <minus>      : "₽"  U20BD  # RUBLE SIGN
@@ -2709,8 +2712,11 @@ include "%L"
 
 # (normal circled alphanumerics are defined as in the system config, with no prefix)
 
+<Multi_key> <parenleft> <C> <C> <parenright> : "🅭"  U1F16D  # CIRCLED CC
 <Multi_key> <parenleft> <C> <D> <parenright> : "🄭" U1F12D   # CIRCLED CD
 <Multi_key> <parenleft> <W> <z> <parenright> : "🄮" U1F12E   # CIRCLED WZ
+<Multi_key> <parenleft> <slash> <0> <parenright> : "🄍"  U1F10D  # CIRCLED ZERO WITH SLASH
+<Multi_key> <parenleft> <0> <slash> <parenright> : "🄍"  U1F10D  # CIRCLED ZERO WITH SLASH
 
 <Multi_key> <parenleft> <i> <C> <parenright> : "🄫"  U1F12B  # CIRCLED ITALIC LATIN CAPITAL LETTER C
 <Multi_key> <parenleft> <i> <R> <parenright> : "🄬"  U1F12C  # CIRCLED ITALIC LATIN CAPITAL LETTER R
@@ -6846,6 +6852,12 @@ include "%L"
 <Multi_key> <b> <d> <o> <m>                        : "ॐ" U0950   # DEVANAGARI OM
 <Multi_key> <b> <d> <R> <u>                        : "௹" U0BF9   # TAMIL RUPEE SIGN
 
+# Punctuation
+
+<Multi_key> <b> <d> <bar>         : "।" U0964   # DEVANAGARI DANDA
+<Multi_key> <b> <d> <2> <bar>     : "॥" U0965   # DEVANAGARI DOUBLE DANDA
+<Multi_key> <b> <d> <o> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
+
 # Numerals
 
 <Multi_key> <b> <d> <numbersign> <0> : "०" U0966   # DEVANAGARI DIGIT ZERO
@@ -6869,12 +6881,6 @@ include "%L"
 <Multi_key> <b> <d> <asciicircum> <asciicircum> <7> <Return> : "꣧"  UA8E7  # COMBINING DEVANAGARI DIGIT SEVEN
 <Multi_key> <b> <d> <asciicircum> <asciicircum> <8> <Return> : "꣨"  UA8E8  # COMBINING DEVANAGARI DIGIT EIGHT
 <Multi_key> <b> <d> <asciicircum> <asciicircum> <9> <Return> : "꣩"  UA8E9  # COMBINING DEVANAGARI DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <b> <d> <bar>         : "।" U0964   # DEVANAGARI DANDA
-<Multi_key> <b> <d> <2> <bar>     : "॥" U0965   # DEVANAGARI DOUBLE DANDA
-<Multi_key> <b> <d> <o> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
 
 # (A = Ahom)
 
@@ -6937,6 +6943,13 @@ include "%L"
 <Multi_key> <b> <A> <0> <Return>         : "𑜫"  U1172B  # AHOM SIGN KILLER (VIRAMA) (conflicts)
 <Multi_key> <b> <A> <comma> <Return>     : "𑜫"  U1172B  # AHOM SIGN KILLER (VIRAMA) (conflicts)
 
+# Punctuation
+
+<Multi_key> <b> <A> <bar>                : "𑜼"  U1173C  # AHOM SIGN SMALL SECTION (DANDA) (conflicts)
+<Multi_key> <b> <A> <2> <bar>            : "𑜽"  U1173D  # AHOM SIGN SECTION (DOUBLE DANDA) (conflicts)
+<Multi_key> <b> <A> <at>                 : "𑜾"  U1173E  # AHOM SIGN RULAI (conflicts)
+<Multi_key> <b> <A> <exclam>             : "𑜿"  U1173F  # AHOM SYMBOL VI (conflicts)
+
 # Numbers
 
 <Multi_key> <b> <A> <numbersign> <0>     : "𑜰"  U11730  # AHOM DIGIT ZERO (conflicts)
@@ -6951,13 +6964,6 @@ include "%L"
 <Multi_key> <b> <A> <numbersign> <9>     : "𑜹"  U11739  # AHOM DIGIT NINE (conflicts)
 <Multi_key> <b> <A> <1> <0>              : "𑜺"  U1173A  # AHOM NUMBER TEN (conflicts)
 <Multi_key> <b> <A> <2> <0>              : "𑜻"  U1173B  # AHOM NUMBER TWENTY (conflicts)
-
-# Punctuation
-
-<Multi_key> <b> <A> <bar>                : "𑜼"  U1173C  # AHOM SIGN SMALL SECTION (DANDA) (conflicts)
-<Multi_key> <b> <A> <2> <bar>            : "𑜽"  U1173D  # AHOM SIGN SECTION (DOUBLE DANDA) (conflicts)
-<Multi_key> <b> <A> <at>                 : "𑜾"  U1173E  # AHOM SIGN RULAI (conflicts)
-<Multi_key> <b> <A> <exclam>             : "𑜿"  U1173F  # AHOM SYMBOL VI (conflicts)
 
 # (b = Bengali)
 
@@ -7368,6 +7374,13 @@ include "%L"
 <Multi_key> <b> <C> <underscore> <plus> <Return> : "𑄳"  U11133  # CHAKMA VIRAMA
 <Multi_key> <b> <C> <minus> <Return>     : "𑄴"  U11134  # CHAKMA MAAYYAA
 
+# Punctuation
+
+<Multi_key> <b> <C> <bar>                : "𑅁"  U11141  # CHAKMA DANDA
+<Multi_key> <b> <C> <2> <bar>            : "𑅂"  U11142  # CHAKMA DOUBLE DANDA
+<Multi_key> <b> <C> <question>           : "𑅃"  U11143  # CHAKMA QUESTION MARK
+<Multi_key> <b> <C> <Multi_key> <S> <O>  : "𑅀"  U11140  # CHAKMA SECTION MARK
+
 # Numerals
 
 <Multi_key> <b> <C> <numbersign> <0>     : "𑄶"  U11136  # CHAKMA DIGIT ZERO
@@ -7380,13 +7393,6 @@ include "%L"
 <Multi_key> <b> <C> <numbersign> <7>     : "𑄽"  U1113D  # CHAKMA DIGIT SEVEN
 <Multi_key> <b> <C> <numbersign> <8>     : "𑄾"  U1113E  # CHAKMA DIGIT EIGHT
 <Multi_key> <b> <C> <numbersign> <9>     : "𑄿"  U1113F  # CHAKMA DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <b> <C> <bar>                : "𑅁"  U11141  # CHAKMA DANDA
-<Multi_key> <b> <C> <2> <bar>            : "𑅂"  U11142  # CHAKMA DOUBLE DANDA
-<Multi_key> <b> <C> <question>           : "𑅃"  U11143  # CHAKMA QUESTION MARK
-<Multi_key> <b> <C> <Multi_key> <S> <O>  : "𑅀"  U11140  # CHAKMA SECTION MARK
 
 # (D = Dogra)
 
@@ -7621,6 +7627,10 @@ include "%L"
 <Multi_key> <b> <g> <o> <m>              : "ૐ"  U0AD0  # GUJARATI OM (conflicts)
 <Multi_key> <b> <g> <R> <u>              : "૱"  U0AF1  # GUJARATI RUPEE SIGN (conflicts)
 
+# Punctuation
+
+<Multi_key> <b> <g> <o> <period>         : "૰"  U0AF0  # GUJARATI ABBREVIATION SIGN (conflicts)
+
 # Numerals
 
 <Multi_key> <b> <g> <numbersign> <0>     : "૦"  U0AE6  # GUJARATI DIGIT ZERO (conflicts)
@@ -7633,10 +7643,6 @@ include "%L"
 <Multi_key> <b> <g> <numbersign> <7>     : "૭"  U0AED  # GUJARATI DIGIT SEVEN (conflicts)
 <Multi_key> <b> <g> <numbersign> <8>     : "૮"  U0AEE  # GUJARATI DIGIT EIGHT (conflicts)
 <Multi_key> <b> <g> <numbersign> <9>     : "૯"  U0AEF  # GUJARATI DIGIT NINE (conflicts)
-
-# Punctuation
-
-<Multi_key> <b> <g> <o> <period>         : "૰"  U0AF0  # GUJARATI ABBREVIATION SIGN (conflicts)
 
 # (G = Gurmukhi)
 
@@ -7716,6 +7722,10 @@ include "%L"
 <Multi_key> <b> <G> <comma> <Return>     : "੍"  U0A4D  # GURMUKHI SIGN VIRAMA (conflicts)
 <Multi_key> <b> <G> <parenleft> <Return> : "ੰ"  U0A70  # GURMUKHI TIPPI (conflicts)
 
+# Punctuation
+
+<Multi_key> <b> <G> <o> <period>         : "੶"  U0A76  # GURMUKHI ABBREVIATION SIGN (conflicts)
+
 # Numerals
 
 <Multi_key> <b> <G> <numbersign> <0>     : "੦"  U0A66  # GURMUKHI DIGIT ZERO (conflicts)
@@ -7728,10 +7738,6 @@ include "%L"
 <Multi_key> <b> <G> <numbersign> <7>     : "੭"  U0A6D  # GURMUKHI DIGIT SEVEN (conflicts)
 <Multi_key> <b> <G> <numbersign> <8>     : "੮"  U0A6E  # GURMUKHI DIGIT EIGHT (conflicts)
 <Multi_key> <b> <G> <numbersign> <9>     : "੯"  U0A6F  # GURMUKHI DIGIT NINE (conflicts)
-
-# Punctuation
-
-<Multi_key> <b> <G> <o> <period>         : "੶"  U0A76  # GURMUKHI ABBREVIATION SIGN (conflicts)
 
 # (GG = Gujala Gondi)
 
@@ -8253,6 +8259,11 @@ include "%L"
 <Multi_key> <b> <K> <H> <underscore> <period> <Return> : "𐨺"  U10A3A  # KHAROSHTHI SIGN DOT BELOW
 <Multi_key> <b> <K> <H> <underscore> <plus> <Return> : "𐨿"  U10A3F  # KHAROSHTHI VIRAMA
 
+# Punctuation
+
+<Multi_key> <b> <K> <H> <bar> : "𐩖"  U10A56  # KHAROSHTHI PUNCTUATION DANDA
+<Multi_key> <b> <K> <H> <2> <bar> : "𐩗"  U10A57  # KHAROSHTHI PUNCTUATION DOUBLE DANDA
+
 # Numerals
 
 <Multi_key> <b> <K> <H> <numbersign> <1> : "𐩀"  U10A40  # KHAROSHTHI DIGIT ONE
@@ -8264,11 +8275,6 @@ include "%L"
 <Multi_key> <b> <K> <H> <1> <0> <0> <space> : "𐩆"  U10A46  # KHAROSHTHI NUMBER ONE HUNDRED
 <Multi_key> <b> <K> <H> <1> <0> <0> <0> : "𐩇"  U10A47  # KHAROSHTHI NUMBER ONE THOUSAND
 <Multi_key> <b> <K> <H> <1> <slash> <2> : "𐩈"  U10A48  # KHAROSHTHI FRACTION ONE HALF
-
-# Punctuation
-
-<Multi_key> <b> <K> <H> <bar> : "𐩖"  U10A56  # KHAROSHTHI PUNCTUATION DANDA
-<Multi_key> <b> <K> <H> <2> <bar> : "𐩗"  U10A57  # KHAROSHTHI PUNCTUATION DOUBLE DANDA
 
 # (KJ = Khojki)
 
@@ -8408,6 +8414,11 @@ include "%L"
 <Multi_key> <b> <K> <R> <colon> <Return> : "𖵂"  U16D42  # KIRAT RAI SIGN VISARGA
 <Multi_key> <b> <K> <R> <comma> <Return> : "𖵫"  U16D6B  # KIRAT RAI SIGN VIRAMA
 
+# Punctuation
+
+<Multi_key> <b> <K> <R> <bar> : "𖵮"  U16D6E  # KIRAT RAI DANDA
+<Multi_key> <b> <K> <R> <2> <bar> : "𖵯"  U16D6F  # KIRAT RAI DOUBLE DANDA
+
 # Numerals
 
 <Multi_key> <b> <K> <R> <numbersign> <0> : "𖵰"  U16D70  # KIRAT RAI DIGIT ZERO
@@ -8420,11 +8431,6 @@ include "%L"
 <Multi_key> <b> <K> <R> <numbersign> <7> : "𖵷"  U16D77  # KIRAT RAI DIGIT SEVEN
 <Multi_key> <b> <K> <R> <numbersign> <8> : "𖵸"  U16D78  # KIRAT RAI DIGIT EIGHT
 <Multi_key> <b> <K> <R> <numbersign> <9> : "𖵹"  U16D79  # KIRAT RAI DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <b> <K> <R> <bar> : "𖵮"  U16D6E  # KIRAT RAI DANDA
-<Multi_key> <b> <K> <R> <2> <bar> : "𖵯"  U16D6F  # KIRAT RAI DOUBLE DANDA
 
 # (KT = Kaithi)
 
@@ -8585,6 +8591,11 @@ include "%L"
 <Multi_key> <b> <L> <underscore> <Return> : "᤻"  U193B  # LIMBU SIGN SA-I
 <Multi_key> <b> <L> <L> <O>              : "᥀"  U1940  # LIMBU SIGN LOO
 
+# Punctuation
+
+<Multi_key> <b> <L> <exclam>             : "᥄"  U1944  # LIMBU EXCLAMATION MARK
+<Multi_key> <b> <L> <question>           : "᥅"  U1945  # LIMBU QUESTION MARK
+
 # Numerals
 
 <Multi_key> <b> <L> <numbersign> <0>     : "᥆"  U1946  # LIMBU DIGIT ZERO
@@ -8597,11 +8608,6 @@ include "%L"
 <Multi_key> <b> <L> <numbersign> <7>     : "᥍"  U194D  # LIMBU DIGIT SEVEN
 <Multi_key> <b> <L> <numbersign> <8>     : "᥎"  U194E  # LIMBU DIGIT EIGHT
 <Multi_key> <b> <L> <numbersign> <9>     : "᥏"  U194F  # LIMBU DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <b> <L> <exclam>             : "᥄"  U1944  # LIMBU EXCLAMATION MARK
-<Multi_key> <b> <L> <question>           : "᥅"  U1945  # LIMBU QUESTION MARK
 
 # (LP = Lepcha)
 
@@ -9144,6 +9150,12 @@ include "%L"
 <Multi_key> <b> <M> <M> <e> <i> <Return>     : "ꯩ"  UABE9  # MEETEI MAYEK VOWEL SIGN CHEINAP
 <Multi_key> <b> <M> <M> <comma> <Return>     : "ꯪ"  UABEA  # MEETEI MAYEK VOWEL SIGN NUNG
 
+# Punctuation
+
+<Multi_key> <b> <M> <M> <2> <bar>            : "꯫"  UABEB  # MEETEI MAYEK CHEIKHEI
+<Multi_key> <b> <M> <M> <period> <Return>    : "꯬"  UABEC  # MEETEI MAYEK LUM IYEK
+<Multi_key> <b> <M> <M> <underscore> <Return> : "꯭"  UABED  # MEETEI MAYEK APUN IYEK
+
 # Numerals
 
 <Multi_key> <b> <M> <M> <numbersign> <0>     : "꯰"  UABF0  # MEETEI MAYEK DIGIT ZERO
@@ -9156,12 +9168,6 @@ include "%L"
 <Multi_key> <b> <M> <M> <numbersign> <7>     : "꯷"  UABF7  # MEETEI MAYEK DIGIT SEVEN
 <Multi_key> <b> <M> <M> <numbersign> <8>     : "꯸"  UABF8  # MEETEI MAYEK DIGIT EIGHT
 <Multi_key> <b> <M> <M> <numbersign> <9>     : "꯹"  UABF9  # MEETEI MAYEK DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <b> <M> <M> <2> <bar>            : "꯫"  UABEB  # MEETEI MAYEK CHEIKHEI
-<Multi_key> <b> <M> <M> <period> <Return>    : "꯬"  UABEC  # MEETEI MAYEK LUM IYEK
-<Multi_key> <b> <M> <M> <underscore> <Return> : "꯭"  UABED  # MEETEI MAYEK APUN IYEK
 
 # (MR = Marchen)
 
@@ -9331,6 +9337,14 @@ include "%L"
 <Multi_key> <b> <n> <greater> <S> : "𑑈"  U11448  # NEWA SIGN FINAL ANUSVARA
 <Multi_key> <b> <n> <o> <m> : "𑑉"  U11449  # NEWA OM
 
+# Punctuation
+
+<Multi_key> <b> <n> <bar> : "𑑋"  U1144B  # NEWA DANDA
+<Multi_key> <b> <n> <2> <bar> : "𑑌"  U1144C  # NEWA DOUBLE DANDA
+<Multi_key> <b> <n> <comma> <space> : "𑑍"  U1144D  # NEWA COMMA
+<Multi_key> <b> <n> <o> <period> : "𑑏"  U1144F  # NEWA ABBREVIATION SIGN
+<Multi_key> <b> <n> <comma> <comma> : "𑑚"  U1145A  # NEWA DOUBLE COMMA
+
 # Numerals
 
 <Multi_key> <b> <n> <numbersign> <0> : "𑑐"  U11450  # NEWA DIGIT ZERO
@@ -9343,14 +9357,6 @@ include "%L"
 <Multi_key> <b> <n> <numbersign> <7> : "𑑗"  U11457  # NEWA DIGIT SEVEN
 <Multi_key> <b> <n> <numbersign> <8> : "𑑘"  U11458  # NEWA DIGIT EIGHT
 <Multi_key> <b> <n> <numbersign> <9> : "𑑙"  U11459  # NEWA DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <b> <n> <bar> : "𑑋"  U1144B  # NEWA DANDA
-<Multi_key> <b> <n> <2> <bar> : "𑑌"  U1144C  # NEWA DOUBLE DANDA
-<Multi_key> <b> <n> <comma> <space> : "𑑍"  U1144D  # NEWA COMMA
-<Multi_key> <b> <n> <o> <period> : "𑑏"  U1144F  # NEWA ABBREVIATION SIGN
-<Multi_key> <b> <n> <comma> <comma> : "𑑚"  U1145A  # NEWA DOUBLE COMMA
 
 # (N = Nandinagari)
 
@@ -9639,6 +9645,10 @@ include "%L"
 <Multi_key> <b> <s> <colon> <Return>     : "ඃ"  U0D83  # SINHALA SIGN VISARGAYA
 <Multi_key> <b> <s> <P> <Return>         : "්"  U0DCA  # SINHALA SIGN AL-LAKUNA
 
+# Punctuation
+
+<Multi_key> <b> <s> <period> <space> : "෴"  U0DF4  # SINHALA PUNCTUATION KUNDDALIYA
+
 # Numerals
 
 <Multi_key> <b> <s> <numbersign> <0>     : "෦"  U0DE6  # SINHALA LITH DIGIT ZERO
@@ -9843,6 +9853,13 @@ include "%L"
 <Multi_key> <b> <S> <H> <underscore> <period> <Return> : "𑇊"  U111CA  # SHARADA SIGN NUKTA
 <Multi_key> <b> <S> <H> <period> <parenright> <Return> : "𑇏"  U111CF  # SHARADA SIGN INVERTED CANDRABINDU
 
+# Punctuation
+
+<Multi_key> <b> <S> <H> <bar> : "𑇅"  U111C5  # SHARADA DANDA
+<Multi_key> <b> <S> <H> <2> <bar> : "𑇆"  U111C6  # SHARADA DOUBLE DANDA
+<Multi_key> <b> <S> <H> <o> <period> : "𑇇"  U111C7  # SHARADA ABBREVIATION SIGN
+<Multi_key> <b> <S> <H> <comma> <space> : "𑇈"  U111C8  # SHARADA SEPARATOR
+
 # Numerals
 
 <Multi_key> <b> <S> <H> <numbersign> <0> : "𑇐"  U111D0  # SHARADA DIGIT ZERO
@@ -9855,13 +9872,6 @@ include "%L"
 <Multi_key> <b> <S> <H> <numbersign> <7> : "𑇗"  U111D7  # SHARADA DIGIT SEVEN
 <Multi_key> <b> <S> <H> <numbersign> <8> : "𑇘"  U111D8  # SHARADA DIGIT EIGHT
 <Multi_key> <b> <S> <H> <numbersign> <9> : "𑇙"  U111D9  # SHARADA DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <b> <S> <H> <bar> : "𑇅"  U111C5  # SHARADA DANDA
-<Multi_key> <b> <S> <H> <2> <bar> : "𑇆"  U111C6  # SHARADA DOUBLE DANDA
-<Multi_key> <b> <S> <H> <o> <period> : "𑇇"  U111C7  # SHARADA ABBREVIATION SIGN
-<Multi_key> <b> <S> <H> <comma> <space> : "𑇈"  U111C8  # SHARADA SEPARATOR
 
 # (SN = Sylheti Nagri)
 
@@ -10006,6 +10016,11 @@ include "%L"
 <Multi_key> <b> <S> <R> <comma> <Return>     : "꣄"  UA8C4  # SAURASHTRA SIGN VIRAMA
 <Multi_key> <b> <S> <R> <period> <parenright> <Return> : "ꣅ"  UA8C5  # SAURASHTRA SIGN CANDRABINDU
 
+# Punctuation
+
+<Multi_key> <b> <S> <R> <bar>                : "꣎"  UA8CE  # SAURASHTRA DANDA
+<Multi_key> <b> <S> <R> <2> <bar>            : "꣏"  UA8CF  # SAURASHTRA DOUBLE DANDA
+
 # Numerals
 
 <Multi_key> <b> <S> <R> <numbersign> <0>     : "꣐"  UA8D0  # SAURASHTRA DIGIT ZERO
@@ -10018,11 +10033,6 @@ include "%L"
 <Multi_key> <b> <S> <R> <numbersign> <7>     : "꣗"  UA8D7  # SAURASHTRA DIGIT SEVEN
 <Multi_key> <b> <S> <R> <numbersign> <8>     : "꣘"  UA8D8  # SAURASHTRA DIGIT EIGHT
 <Multi_key> <b> <S> <R> <numbersign> <9>     : "꣙"  UA8D9  # SAURASHTRA DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <b> <S> <R> <bar>                : "꣎"  UA8CE  # SAURASHTRA DANDA
-<Multi_key> <b> <S> <R> <2> <bar>            : "꣏"  UA8CF  # SAURASHTRA DOUBLE DANDA
 
 # (t = Tamil)
 
@@ -17356,6 +17366,12 @@ include "HangulSyllables"
 <Multi_key> <K> <c> <0> <Return> : "𑽁"  U11F41  # KAWI SIGN KILLER
 <Multi_key> <K> <c> <underscore> <plus> <Return> : "𑽂"  U11F42  # KAWI CONJOINER
 
+# Punctuation
+
+<Multi_key> <K> <c> <bar> : "𑽃"  U11F43  # KAWI DANDA
+<Multi_key> <K> <c> <2> <bar> : "𑽄"  U11F44  # KAWI DOUBLE DANDA
+<Multi_key> <K> <c> <Multi_key> <S> <O> : "𑽅"  U11F45  # KAWI PUNCTUATION SECTION MARKER
+
 # Numerals
 
 <Multi_key> <K> <c> <numbersign> <0> : "𑽐"  U11F50  # KAWI DIGIT ZERO
@@ -17368,12 +17384,6 @@ include "HangulSyllables"
 <Multi_key> <K> <c> <numbersign> <7> : "𑽗"  U11F57  # KAWI DIGIT SEVEN
 <Multi_key> <K> <c> <numbersign> <8> : "𑽘"  U11F58  # KAWI DIGIT EIGHT
 <Multi_key> <K> <c> <numbersign> <9> : "𑽙"  U11F59  # KAWI DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <K> <c> <bar> : "𑽃"  U11F43  # KAWI DANDA
-<Multi_key> <K> <c> <2> <bar> : "𑽄"  U11F44  # KAWI DOUBLE DANDA
-<Multi_key> <K> <c> <Multi_key> <S> <O> : "𑽅"  U11F45  # KAWI PUNCTUATION SECTION MARKER
 
 # (b = Babayin)
 
@@ -19713,6 +19723,11 @@ include "HangulSyllables"
 <Multi_key> <t> <t> <bar> <4> <Return> : "᩸"  U1A78  # TAI THAM SIGN KHUEN TONE-4
 <Multi_key> <t> <t> <bar> <5> <Return> : "᩹"  U1A79  # TAI THAM SIGN KHUEN TONE-5
 
+# Punctuation
+
+<Multi_key> <t> <t> <bar> <space> : "᪨"  U1AA8  # TAI THAM SIGN KAAN
+<Multi_key> <t> <t> <2> <bar> : "᪩"  U1AA9  # TAI THAM SIGN KAANKUU
+
 # Numerals
 
 <Multi_key> <t> <t> <numbersign> <0> <H> : "᪀"  U1A80  # TAI THAM HORA DIGIT ZERO
@@ -19736,11 +19751,6 @@ include "HangulSyllables"
 <Multi_key> <t> <t> <numbersign> <7> <T> : "᪗"  U1A97  # TAI THAM THAM DIGIT SEVEN
 <Multi_key> <t> <t> <numbersign> <8> <T> : "᪘"  U1A98  # TAI THAM THAM DIGIT EIGHT
 <Multi_key> <t> <t> <numbersign> <9> <T> : "᪙"  U1A99  # TAI THAM THAM DIGIT NINE
-
-# Punctuation
-
-<Multi_key> <t> <t> <bar> <space> : "᪨"  U1AA8  # TAI THAM SIGN KAAN
-<Multi_key> <t> <t> <2> <bar> : "᪩"  U1AA9  # TAI THAM SIGN KAANKUU
 
 # (v = Tai Viet)
 
@@ -26070,6 +26080,8 @@ include "Logograms"
 <Multi_key> <backslash> <1> <8>                 : "🔞"  U1F51E    # NO ONE UNDER EIGHTEEN SYMBOL (alternatively NSFW)
 <Multi_key> <backslash> <0>                     : "🚫"  U1F6AB    # NO ENTRY SIGN
 <Multi_key> <backslash> <Multi_key> <0>         : "🛇"  U1F6C7    # PROHIBITED SIGN
+<Multi_key> <backslash> <Multi_key> <dollar>    : "🄏"  U1F10F   # CIRCLED DOLLAR SIGN WITH OVERLAID BACKSLASH
+<Multi_key> <backslash> <Multi_key> <C>         : "🅮"  U1F16E   # CIRCLED C WITH OVERLAID BACKSLASH
 
 # Shapes (see geometric shapes section for many more)
 
