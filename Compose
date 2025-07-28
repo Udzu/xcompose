@@ -6023,7 +6023,9 @@ include "%L"
 <Multi_key> <a> <s> <asciicircum> <a> : "ܑ"  U0711  # SYRIAC LETTER SUPERSCRIPT ALAPH
 <Multi_key> <a> <s> <b>               : "ܒ"  U0712  # SYRIAC LETTER BETH
 <Multi_key> <a> <s> <g>               : "ܓ"  U0713  # SYRIAC LETTER GAMAL
+<Multi_key> <a> <s> <2> <g>           : "ܔ"  U0714  # SYRIAC LETTER GAMAL GARSHUNI
 <Multi_key> <a> <s> <d>               : "ܕ"  U0715  # SYRIAC LETTER DALATH
+<Multi_key> <a> <s> <2> <d>           : "ܖ"  U0716  # SYRIAC LETTER DOTLESS DALATH RISH
 <Multi_key> <a> <s> <h>               : "ܗ"  U0717  # SYRIAC LETTER HE
 <Multi_key> <a> <s> <w>               : "ܘ"  U0718  # SYRIAC LETTER WAW
 <Multi_key> <a> <s> <z>               : "ܙ"  U0719  # SYRIAC LETTER ZAIN
@@ -6033,6 +6035,8 @@ include "%L"
 <Multi_key> <a> <s> <exclam> <h>      : "ܚ"  U071A  # SYRIAC LETTER HETH (ḥ)
 <Multi_key> <a> <s> <exclam> <t>      : "ܛ"  U071B  # SYRIAC LETTER TETH (ṭ)
 <Multi_key> <a> <s> <T>               : "ܛ"  U071B  # SYRIAC LETTER TETH
+<Multi_key> <a> <s> <2> <exclam> <t>  : "ܜ"  U071C  # SYRIAC LETTER TETH GARSHUNI (ṭ)
+<Multi_key> <a> <s> <2> <T>           : "ܜ"  U071C  # SYRIAC LETTER TETH GARSHUNI
 <Multi_key> <a> <s> <y>               : "ܝ"  U071D  # SYRIAC LETTER YUDH
 <Multi_key> <a> <s> <Y> <H>           : "ܞ"  U071E  # SYRIAC LETTER YUDH HE
 <Multi_key> <a> <s> <k>               : "ܟ"  U071F  # SYRIAC LETTER KAPH
@@ -6048,6 +6052,7 @@ include "%L"
 <Multi_key> <a> <s> <exclam> <s>      : "ܨ"  U0728  # SYRIAC LETTER SADHE (ṣ)
 <Multi_key> <a> <s> <q>               : "ܩ"  U0729  # SYRIAC LETTER QAPH
 <Multi_key> <a> <s> <r>               : "ܪ"  U072A  # SYRIAC LETTER RISH
+<Multi_key> <a> <s> <2> <r>           : "ܖ"  U0716  # SYRIAC LETTER DOTLESS DALATH RISH
 <Multi_key> <a> <s> <S>               : "ܫ"  U072B  # SYRIAC LETTER SHIN
 <Multi_key> <a> <s> <t>               : "ܬ"  U072C  # SYRIAC LETTER TAW
 <Multi_key> <a> <s> <B>               : "ܭ"  U072D  # SYRIAC LETTER PERSIAN BHETH
@@ -6101,6 +6106,20 @@ include "%L"
 <Multi_key> <a> <s> <backslash> <greater> : "܌"  U070C  # SYRIAC HARKLEAN METOBELUS
 <Multi_key> <a> <s> <plus> <colon> : "܍"  U070D  # SYRIAC HARKLEAN ASTERISCUS
 <Multi_key> <a> <s> <quotedbl> <Return> : "܏"  U070F  # SYRIAC ABBREVIATION MARK
+
+# Malayalam letters (using equivalent abbreviations)
+
+<Multi_key> <a> <s> <M> <semicolon> <n>  : "ࡠ"  U0860  # SYRIAC LETTER MALAYALAM NGA
+<Multi_key> <a> <s> <M> <j>              : "ࡡ"  U0861  # SYRIAC LETTER MALAYALAM JA
+<Multi_key> <a> <s> <M> <asciitilde> <n> : "ࡢ"  U0862  # SYRIAC LETTER MALAYALAM NYA
+<Multi_key> <a> <s> <M> <period> <t>     : "ࡣ"  U0863  # SYRIAC LETTER MALAYALAM TTA
+<Multi_key> <a> <s> <M> <period> <n>     : "ࡤ"  U0864  # SYRIAC LETTER MALAYALAM NNA
+<Multi_key> <a> <s> <M> <underscore> <n> : "ࡥ"  U0865  # SYRIAC LETTER MALAYALAM NNNA
+<Multi_key> <a> <s> <M> <b> <h>          : "ࡦ"  U0866  # SYRIAC LETTER MALAYALAM BHA
+<Multi_key> <a> <s> <M> <r>              : "ࡧ"  U0867  # SYRIAC LETTER MALAYALAM RA
+<Multi_key> <a> <s> <M> <period> <l>     : "ࡨ"  U0868  # SYRIAC LETTER MALAYALAM LLA
+<Multi_key> <a> <s> <M> <underscore> <l> : "ࡩ"  U0869  # SYRIAC LETTER MALAYALAM LLLA
+<Multi_key> <a> <s> <M> <period> <s>     : "ࡪ"  U086A  # SYRIAC LETTER MALAYALAM SSA
 
 # (t = Neo-Tifinagh)
 
@@ -7649,6 +7668,16 @@ include "%L"
 <Multi_key> <b> <g> <numbersign> <8>     : "૮"  U0AEE  # GUJARATI DIGIT EIGHT (conflicts)
 <Multi_key> <b> <g> <numbersign> <9>     : "૯"  U0AEF  # GUJARATI DIGIT NINE (conflicts)
 
+# Arabic transliteration
+
+<Multi_key> <b> <g> <A> <0> <Return> : "ૺ"  U0AFA  # GUJARATI SIGN SUKUN (conflicts)
+<Multi_key> <b> <g> <A> <quotedbl> <Return> : "ૻ"  U0AFB  # GUJARATI SIGN SHADDA (conflicts)
+<Multi_key> <b> <g> <A> <w> <Return> : "ૻ"  U0AFB  # GUJARATI SIGN SHADDA (conflicts)
+<Multi_key> <b> <g> <A> <asciitilde> <Return> : "ૼ"  U0AFC  # GUJARATI SIGN MADDAH (conflicts)
+<Multi_key> <b> <g> <A> <asciicircum> <Return> : "૽"  U0AFD  # GUJARATI SIGN THREE-DOT NUKTA ABOVE (conflicts)
+<Multi_key> <b> <g> <A> <o> <Return> : "૾"  U0AFE  # GUJARATI SIGN CIRCLE NUKTA ABOVE (conflicts)
+<Multi_key> <b> <g> <A> <o> <o> <Return> : "૿"  U0AFF  # GUJARATI SIGN TWO-CIRCLE NUKTA ABOVE (conflicts)
+
 # (G = Gurmukhi)
 
 # Consonants
@@ -8056,7 +8085,7 @@ include "%L"
 <Multi_key> <b> <k> <s>                  : "ಸ"  U0CB8  # KANNADA LETTER SA
 <Multi_key> <b> <k> <h>                  : "ಹ"  U0CB9  # KANNADA LETTER HA
 <Multi_key> <b> <k> <f>                  : "ೞ"  U0CDE  # KANNADA LETTER FA
-<Multi_key> <b> <k> <2> <n>              : "ೝ"  U0CDD  # KANNADA LETTER NAKAARA POLLU
+<Multi_key> <b> <k> <0> <n>              : "ೝ"  U0CDD  # KANNADA LETTER NAKAARA POLLU
 
 # Independent vowels
 
@@ -8760,12 +8789,27 @@ include "%L"
 <Multi_key> <b> <m> <h>                  : "ഹ"  U0D39  # MALAYALAM LETTER HA
 <Multi_key> <b> <m> <underscore> <t>     : "ഺ"  U0D3A  # MALAYALAM LETTER TTTA
 
+<Multi_key> <b> <m> <asciicircum> <r> <Return> : "ൎ"  U0D4E  # MALAYALAM LETTER DOT REPH
+
+# Chillu consonants
+
+<Multi_key> <b> <m> <0> <m>              : "ൔ"  U0D54  # MALAYALAM LETTER CHILLU M
+<Multi_key> <b> <m> <0> <y>              : "ൕ"  U0D55  # MALAYALAM LETTER CHILLU Y
+<Multi_key> <b> <m> <0> <underscore> <l> : "ൖ"  U0D56  # MALAYALAM LETTER CHILLU LLL
+<Multi_key> <b> <m> <0> <period> <n>     : "ൺ"  U0D7A  # MALAYALAM LETTER CHILLU NN
+<Multi_key> <b> <m> <0> <n>              : "ൻ"  U0D7B  # MALAYALAM LETTER CHILLU N
+<Multi_key> <b> <m> <0> <underscore> <r> : "ർ"  U0D7C  # MALAYALAM LETTER CHILLU RR
+<Multi_key> <b> <m> <0> <l>              : "ൽ"  U0D7D  # MALAYALAM LETTER CHILLU L
+<Multi_key> <b> <m> <0> <period> <l>     : "ൾ"  U0D7E  # MALAYALAM LETTER CHILLU LL
+<Multi_key> <b> <m> <0> <k>              : "ൿ"  U0D7F  # MALAYALAM LETTER CHILLU K
+
 # Independent vowels
 
 <Multi_key> <b> <m> <a> <space>          : "അ"  U0D05  # MALAYALAM LETTER A
 <Multi_key> <b> <m> <a> <a> <space>      : "ആ"  U0D06  # MALAYALAM LETTER AA
 <Multi_key> <b> <m> <i> <space>          : "ഇ"  U0D07  # MALAYALAM LETTER I
 <Multi_key> <b> <m> <i> <i> <space>      : "ഈ"  U0D08  # MALAYALAM LETTER II
+<Multi_key> <b> <m> <2> <i> <i> <space>  : "ൟ"  U0D5F  # MALAYALAM LETTER ARCHAIC II
 <Multi_key> <b> <m> <u> <space>          : "ഉ"  U0D09  # MALAYALAM LETTER U
 <Multi_key> <b> <m> <u> <u> <space>      : "ഊ"  U0D0A  # MALAYALAM LETTER UU
 <Multi_key> <b> <m> <comma> <r> <space>  : "ഋ"  U0D0B  # MALAYALAM LETTER VOCALIC R
@@ -8807,9 +8851,12 @@ include "%L"
 <Multi_key> <b> <m> <comma> <Return>     : "്"  U0D4D  # MALAYALAM SIGN VIRAMA
 <Multi_key> <b> <m> <bar> <Return>       : "഻"  U0D3B  # MALAYALAM SIGN VERTICAL BAR VIRAMA
 <Multi_key> <b> <m> <0> <0> <Return>     : "഼"  U0D3C  # MALAYALAM SIGN CIRCULAR VIRAMA
+<Multi_key> <b> <m> <minus> <a> <u> <Return> : "ൗ"  U0D57  # MALAYALAM AU LENGTH MARK
 
 <Multi_key> <b> <m> <period> <parenright> <space> : "ഄ"  U0D04  # MALAYALAM LETTER VEDIC ANUSVARA
 <Multi_key> <b> <m> <S>                  : "ഽ"  U0D3D  # MALAYALAM SIGN AVAGRAHA
+<Multi_key> <b> <m> <p> <a> <r> <a>      : "൏"  U0D4F  # MALAYALAM SIGN PARA
+<Multi_key> <b> <m> <d> <a> <t> <e>      : "൹"  U0D79  # MALAYALAM DATE MARK
 
 # Numerals
 
@@ -10214,6 +10261,8 @@ include "%L"
 <Multi_key> <b> <T> <h>                  : "హ"  U0C39  # TELUGU LETTER HA
 <Multi_key> <b> <T> <asciicircum> <c>    : "ౘ"  U0C58  # TELUGU LETTER TSA
 <Multi_key> <b> <T> <z>                  : "ౙ"  U0C59  # TELUGU LETTER DZA
+<Multi_key> <b> <T> <underscore> <R>     : "ౚ"  U0C5A  # TELUGU LETTER RRRA
+<Multi_key> <b> <T> <0> <n>              : "ౝ"  U0C5D  # TELUGU LETTER NAKAARA POLLU
 
 # Independent vowels
 
@@ -10262,8 +10311,11 @@ include "%L"
 <Multi_key> <b> <T> <asciicircum> <period> <Return> : "ఄ"  U0C04  # TELUGU SIGN COMBINING ANUSVARA ABOVE
 <Multi_key> <b> <T> <underscore> <period> <Return> : "఼"  U0C3C  # TELUGU SIGN NUKTA
 <Multi_key> <b> <T> <comma> <Return>     : "్"  U0C4D  # TELUGU SIGN VIRAMA
+<Multi_key> <b> <T> <minus> <Return>     : "ౕ"  U0C55  # TELUGU LENGTH MARK
+<Multi_key> <b> <T> <minus> <a> <i> <Return> : "ౖ"  U0C56  # TELUGU AI LENGTH MARK
 
 <Multi_key> <b> <T> <S>                  : "ఽ"  U0C3D  # TELUGU SIGN AVAGRAHA
+<Multi_key> <b> <T> <at>                 : "౷"  U0C77  # TELUGU SIGN SIDDHAM
 
 # Numerals
 
@@ -10277,6 +10329,15 @@ include "%L"
 <Multi_key> <b> <T> <numbersign> <7>     : "౭"  U0C6D  # TELUGU DIGIT SEVEN
 <Multi_key> <b> <T> <numbersign> <8>     : "౮"  U0C6E  # TELUGU DIGIT EIGHT
 <Multi_key> <b> <T> <numbersign> <9>     : "౯"  U0C6F  # TELUGU DIGIT NINE
+
+<Multi_key> <b> <T> <0> <slash> <4>      : "౸"  U0C78  # TELUGU FRACTION DIGIT ZERO FOR ODD POWERS OF FOUR
+<Multi_key> <b> <T> <1> <slash> <4>      : "౹"  U0C79  # TELUGU FRACTION DIGIT ONE FOR ODD POWERS OF FOUR
+<Multi_key> <b> <T> <2> <slash> <4>      : "౺"  U0C7A  # TELUGU FRACTION DIGIT TWO FOR ODD POWERS OF FOUR
+<Multi_key> <b> <T> <3> <slash> <4>      : "౻"  U0C7B  # TELUGU FRACTION DIGIT THREE FOR ODD POWERS OF FOUR
+<Multi_key> <b> <T> <1> <slash> <1> <6>  : "౼"  U0C7C  # TELUGU FRACTION DIGIT ONE FOR EVEN POWERS OF FOUR
+<Multi_key> <b> <T> <2> <slash> <1> <6>  : "౽"  U0C7D  # TELUGU FRACTION DIGIT TWO FOR EVEN POWERS OF FOUR
+<Multi_key> <b> <T> <3> <slash> <1> <6>  : "౾"  U0C7E  # TELUGU FRACTION DIGIT THREE FOR EVEN POWERS OF FOUR
+<Multi_key> <b> <T> <t> <u> <u> <m> <u>  : "౿"  U0C7F  # TELUGU SIGN TUUMU
 
 # (TK = Takri)
 
@@ -20752,6 +20813,7 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <b> : "𖼁"  U16F01  # MIAO LETTER BA
 <Multi_key> <z> <p> <p> <l> : "𖼃"  U16F03  # MIAO LETTER PLA
 <Multi_key> <z> <p> <m> <space> : "𖼄"  U16F04  # MIAO LETTER MA
+<Multi_key> <z> <p> <2> <m> : "𖼆"  U16F06  # MIAO LETTER ARCHAIC MA
 <Multi_key> <z> <p> <m> <h> : "𖼅"  U16F05  # MIAO LETTER MHA
 <Multi_key> <z> <p> <f> : "𖼇"  U16F07  # MIAO LETTER FA
 <Multi_key> <z> <p> <v> <space> : "𖼈"  U16F08  # MIAO LETTER VA
@@ -20761,6 +20823,7 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <t> <t> : "𖼎"  U16F0E  # MIAO LETTER TTA
 <Multi_key> <z> <p> <d> <d> : "𖼏"  U16F0F  # MIAO LETTER DDA
 <Multi_key> <z> <p> <n> <space> : "𖼐"  U16F10  # MIAO LETTER NA
+<Multi_key> <z> <p> <2> <n> <space> : "𖼓"  U16F13  # MIAO LETTER ARCHAIC NA
 <Multi_key> <z> <p> <n> <h> : "𖼑"  U16F11  # MIAO LETTER NHA
 <Multi_key> <z> <p> <n> <n> <space> : "𖼔"  U16F14  # MIAO LETTER NNA
 <Multi_key> <z> <p> <n> <n> <h> : "𖼕"  U16F15  # MIAO LETTER NNHA
@@ -20777,6 +20840,7 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <q> <space> : "𖼡"  U16F21  # MIAO LETTER QA
 <Multi_key> <z> <p> <q> <g> : "𖼢"  U16F22  # MIAO LETTER QGA
 <Multi_key> <z> <p> <n> <g> <space> : "𖼣"  U16F23  # MIAO LETTER NGA
+<Multi_key> <z> <p> <2> <n> <g> : "𖼥"  U16F25  # MIAO LETTER ARCHAIC NGA
 <Multi_key> <z> <p> <n> <g> <h> : "𖼤"  U16F24  # MIAO LETTER NGHA
 <Multi_key> <z> <p> <h> : "𖼦"  U16F26  # MIAO LETTER HA
 <Multi_key> <z> <p> <x> : "𖼧"  U16F27  # MIAO LETTER XA
@@ -20858,18 +20922,25 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <i> <o> <n> <g> <Return> : "𖾆"  U16F86  # MIAO VOWEL SIGN IONG
 <Multi_key> <z> <p> <u> <i> <Return> : "𖾇"  U16F87  # MIAO VOWEL SIGN UI
 
-<Multi_key> <z> <p> <T> <greater> <Return> : "𖾏"  U16F8F  # MIAO TONE RIGHT
-<Multi_key> <z> <p> <T> <greater> <asciicircum> <Return> : "𖾐"  U16F90  # MIAO TONE TOP RIGHT
-<Multi_key> <z> <p> <T> <asciicircum> <Return> : "𖾑"  U16F91  # MIAO TONE ABOVE
-<Multi_key> <z> <p> <T> <v> <Return> : "𖾒"  U16F92  # MIAO TONE BELOW
+<Multi_key> <z> <p> <bar> <greater> <Return> : "𖾏"  U16F8F  # MIAO TONE RIGHT
+<Multi_key> <z> <p> <bar> <greater> <asciicircum> <Return> : "𖾐"  U16F90  # MIAO TONE TOP RIGHT
+<Multi_key> <z> <p> <bar> <asciicircum> <Return> : "𖾑"  U16F91  # MIAO TONE ABOVE
+<Multi_key> <z> <p> <bar> <v> <Return> : "𖾒"  U16F92  # MIAO TONE BELOW
 
-<Multi_key> <z> <p> <T> <2> : "𖾓"  U16F93  # MIAO LETTER TONE-2
-<Multi_key> <z> <p> <T> <3> : "𖾔"  U16F94  # MIAO LETTER TONE-3
-<Multi_key> <z> <p> <T> <4> : "𖾕"  U16F95  # MIAO LETTER TONE-4
-<Multi_key> <z> <p> <T> <5> : "𖾖"  U16F96  # MIAO LETTER TONE-5
-<Multi_key> <z> <p> <T> <6> : "𖾗"  U16F97  # MIAO LETTER TONE-6
-<Multi_key> <z> <p> <T> <7> : "𖾘"  U16F98  # MIAO LETTER TONE-7
-<Multi_key> <z> <p> <T> <8> : "𖾙"  U16F99  # MIAO LETTER TONE-8
+<Multi_key> <z> <p> <bar> <2> : "𖾓"  U16F93  # MIAO LETTER TONE-2
+<Multi_key> <z> <p> <bar> <3> : "𖾔"  U16F94  # MIAO LETTER TONE-3
+<Multi_key> <z> <p> <bar> <4> : "𖾕"  U16F95  # MIAO LETTER TONE-4
+<Multi_key> <z> <p> <bar> <5> : "𖾖"  U16F96  # MIAO LETTER TONE-5
+<Multi_key> <z> <p> <bar> <6> : "𖾗"  U16F97  # MIAO LETTER TONE-6
+<Multi_key> <z> <p> <bar> <7> : "𖾘"  U16F98  # MIAO LETTER TONE-7
+<Multi_key> <z> <p> <bar> <8> : "𖾙"  U16F99  # MIAO LETTER TONE-8
+
+<Multi_key> <z> <p> <bar> <r> <1> : "𖾚"  U16F9A  # MIAO LETTER REFORMED TONE-1
+<Multi_key> <z> <p> <bar> <r> <2> : "𖾛"  U16F9B  # MIAO LETTER REFORMED TONE-2
+<Multi_key> <z> <p> <bar> <r> <4> : "𖾜"  U16F9C  # MIAO LETTER REFORMED TONE-4
+<Multi_key> <z> <p> <bar> <r> <5> : "𖾝"  U16F9D  # MIAO LETTER REFORMED TONE-5
+<Multi_key> <z> <p> <bar> <r> <6> : "𖾞"  U16F9E  # MIAO LETTER REFORMED TONE-6
+<Multi_key> <z> <p> <bar> <r> <8> : "𖾟"  U16F9F  # MIAO LETTER REFORMED TONE-8
 
 # (P = ʼPhags-Pa) follows ISO 15919 like other Brahmic scripts
 
@@ -23619,6 +23690,11 @@ include "HangulSyllables"
 <Multi_key> <Z> <n> <Multi_key> <P> <P> : "߷"  U07F7  # NKO SYMBOL GBAKURUNEN
 <Multi_key> <Z> <n> <question> : "؟"  U061F  # ARABIC QUESTION MARK
 <Multi_key> <Z> <n> <semicolon> : "؛"  U061B  # ARABIC SEMICOLON
+<Multi_key> <Z> <n> <9> <2> : "߶"  U07F6  # NKO SYMBOL OO DENNEN
+<Multi_key> <Z> <n> <underscore> <underscore> : "ߺ"  U07FA  # NKO LAJANYALAN
+<Multi_key> <Z> <n> <bracketleft> <Return> : "߽"  U07FD  # NKO DANTAYALAN
+<Multi_key> <Z> <n> <minus> <d> : "߾"  U07FE  # NKO DOROME SIGN (đ)
+<Multi_key> <Z> <n> <minus> <t> : "߿"  U07FF  # NKO TAMAN SIGN (ŧ)
 
 <Multi_key> <Z> <n> <numbersign> <0> : "߀" U07C0   # NKO DIGIT ZERO
 <Multi_key> <Z> <n> <numbersign> <1> : "߁" U07C1   # NKO DIGIT ONE
