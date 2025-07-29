@@ -9887,6 +9887,9 @@ include "%L"
 <Multi_key> <b> <S> <H> <s> : "𑆱"  U111B1  # SHARADA LETTER SA
 <Multi_key> <b> <S> <H> <h> : "𑆲"  U111B2  # SHARADA LETTER HA
 
+<Multi_key> <b> <S> <H> <x> <Return> : "𑇂"  U111C2  # SHARADA SIGN JIHVAMULIYA
+<Multi_key> <b> <S> <H> <f> <Return> : "𑇃"  U111C3  # SHARADA SIGN UPADHMANIYA
+
 # Independent vowels
 
 <Multi_key> <b> <S> <H> <a> <space> : "𑆃"  U11183  # SHARADA LETTER A
@@ -9930,7 +9933,10 @@ include "%L"
 <Multi_key> <b> <S> <H> <colon> <Return> : "𑆂"  U11182  # SHARADA SIGN VISARGA
 <Multi_key> <b> <S> <H> <S> : "𑇁"  U111C1  # SHARADA SIGN AVAGRAHA
 <Multi_key> <b> <S> <H> <o> <m> : "𑇄"  U111C4  # SHARADA OM
+<Multi_key> <b> <S> <H> <underscore> <S> <Return> : "𑇉"  U111C9  # SHARADA SANDHI MARK
 <Multi_key> <b> <S> <H> <underscore> <period> <Return> : "𑇊"  U111CA  # SHARADA SIGN NUKTA
+<Multi_key> <b> <S> <H> <asciicircum> <bar> <Return> : "𑇋"  U111CB  # SHARADA VOWEL MODIFIER MARK
+<Multi_key> <b> <S> <H> <underscore> <backslash> <Return> : "𑇌"  U111CC  # SHARADA EXTRA SHORT VOWEL MARK
 <Multi_key> <b> <S> <H> <period> <parenright> <Return> : "𑇏"  U111CF  # SHARADA SIGN INVERTED CANDRABINDU
 
 # Punctuation
@@ -9939,6 +9945,14 @@ include "%L"
 <Multi_key> <b> <S> <H> <2> <bar> : "𑇆"  U111C6  # SHARADA DOUBLE DANDA
 <Multi_key> <b> <S> <H> <o> <period> : "𑇇"  U111C7  # SHARADA ABBREVIATION SIGN
 <Multi_key> <b> <S> <H> <comma> <space> : "𑇈"  U111C8  # SHARADA SEPARATOR
+<Multi_key> <b> <S> <H> <bracketright> : "𑇍"  U111CD  # SHARADA SUTRA MARK
+<Multi_key> <b> <S> <H> <exclam> : "𑇚"  U111DA  # SHARADA EKAM
+<Multi_key> <b> <S> <H> <at> : "𑇛"  U111DB  # SHARADA SIGN SIDDHAM
+<Multi_key> <b> <S> <H> <space> : "𑇜"  U111DC  # SHARADA HEADSTROKE
+<Multi_key> <b> <S> <H> <period> <period> : "𑇜"  U111DC  # SHARADA HEADSTROKE
+<Multi_key> <b> <S> <H> <minus> : "𑇝"  U111DD  # SHARADA CONTINUATION SIGN
+<Multi_key> <b> <S> <H> <Multi_key> <S> <O> : "𑇞"  U111DE  # SHARADA SECTION MARK-1
+<Multi_key> <b> <S> <H> <2> <Multi_key> <S> <O> : "𑇟"  U111DF  # SHARADA SECTION MARK-2
 
 # Numerals
 
@@ -11122,8 +11136,10 @@ include "%L"
 <Multi_key> <c> <x> <less> <d> <z> : "ꙅ"  UA645  # CYRILLIC SMALL LETTER REVERSED DZE
 <Multi_key> <c> <x> <D> <Z> <W>    : "Ꚃ"  UA682  # CYRILLIC CAPITAL LETTER DZWE
 <Multi_key> <c> <x> <d> <z> <w>    : "ꚃ"  UA683  # CYRILLIC SMALL LETTER DZWE
-<Multi_key> <c> <x> <D> <Z> <Z>    : "Ꚉ"  UA688  # CYRILLIC CAPITAL LETTER DZZE
-<Multi_key> <c> <x> <d> <z> <z>    : "ꚉ"  UA689  # CYRILLIC SMALL LETTER DZZE
+<Multi_key> <c> <x> <D> <Z> <Z> <space> : "Ꚉ"  UA688  # CYRILLIC CAPITAL LETTER DZZE
+<Multi_key> <c> <x> <d> <z> <z> <space> : "ꚉ"  UA689  # CYRILLIC SMALL LETTER DZZE
+<Multi_key> <c> <x> <D> <Z> <Z> <H> : "Ԫ"  U052A  # CYRILLIC CAPITAL LETTER DZZHE
+<Multi_key> <c> <x> <d> <z> <z> <h> : "ԫ"  U052B  # CYRILLIC SMALL LETTER DZZHE
 <Multi_key> <c> <x> <E> <E>        : "Ә"  U04D8  # CYRILLIC CAPITAL LETTER SCHWA
 <Multi_key> <c> <x> <e> <e>        : "ә"  U04D9  # CYRILLIC SMALL LETTER SCHWA
 <Multi_key> <c> <c> <period> <H>   : "Һ"  U04BA  # CYRILLIC CAPITAL LETTER SHHA (conflict)
@@ -11138,10 +11154,18 @@ include "%L"
 <Multi_key> <c> <x> <L> <X>        : "Ԕ"  U0514  # CYRILLIC CAPITAL LETTER LHA
 <Multi_key> <c> <x> <l> <h>        : "ԕ"  U0515  # CYRILLIC SMALL LETTER LHA
 <Multi_key> <c> <x> <l> <x>        : "ԕ"  U0515  # CYRILLIC SMALL LETTER LHA
+<Multi_key> <c> <x> <N> <G>        : "Ҥ"  U04A4  # CYRILLIC CAPITAL LIGATURE EN GHE
+<Multi_key> <c> <x> <n> <g>        : "ҥ"  U04A5  # CYRILLIC SMALL LIGATURE EN GHE
 <Multi_key> <c> <x> <R> <H>        : "Ԗ"  U0516  # CYRILLIC CAPITAL LETTER RHA
 <Multi_key> <c> <x> <R> <X>        : "Ԗ"  U0516  # CYRILLIC CAPITAL LETTER RHA
 <Multi_key> <c> <x> <r> <h>        : "ԗ"  U0517  # CYRILLIC SMALL LETTER RHA
 <Multi_key> <c> <x> <r> <x>        : "ԗ"  U0517  # CYRILLIC SMALL LETTER RHA
+<Multi_key> <c> <x> <S> <W>        : "Ꚗ"  UA696  # CYRILLIC CAPITAL LETTER SHWE
+<Multi_key> <c> <x> <s> <w>        : "ꚗ"  UA697  # CYRILLIC SMALL LETTER SHWE
+<Multi_key> <c> <x> <T> <C> <space> : "Ҵ"  U04B4  # CYRILLIC CAPITAL LIGATURE TE TSE
+<Multi_key> <c> <x> <t> <c> <space> : "ҵ"  U04B5  # CYRILLIC SMALL LIGATURE TE TSE
+<Multi_key> <c> <x> <T> <C> <H>    : "Ꚓ"  UA692  # CYRILLIC CAPITAL LETTER TCHE
+<Multi_key> <c> <x> <t> <c> <h>    : "ꚓ"  UA693  # CYRILLIC SMALL LETTER TCHE
 <Multi_key> <c> <x> <T> <J>        : "Ᲊ"  U1C89  # CYRILLIC CAPITAL LETTER TJE
 <Multi_key> <c> <x> <t> <j>        : "ᲊ"  U1C8A  # CYRILLIC SMALL LETTER TJE
 <Multi_key> <c> <x> <less> <T> <S> : "Ꙡ"  UA660  # CYRILLIC CAPITAL LETTER REVERSED TSE
@@ -11154,6 +11178,23 @@ include "%L"
 <Multi_key> <c> <c> <less> <y> <u> : "ꙕ"  UA655  # CYRILLIC SMALL LETTER REVERSED YU (conflicts)
 <Multi_key> <c> <c> <less> <Z>     : "Ԑ"  U0510  # CYRILLIC CAPITAL LETTER REVERSED ZE (conflicts)
 <Multi_key> <c> <c> <less> <z>     : "ԑ"  U0511  # CYRILLIC SMALL LETTER REVERSED ZE (conflicts)
+<Multi_key> <c> <x> <Z> <W>        : "Ꚅ"  UA684  # CYRILLIC CAPITAL LETTER ZHWE
+<Multi_key> <c> <x> <z> <w>        : "ꚅ"  UA685  # CYRILLIC SMALL LETTER ZHWE
+
+<Multi_key> <c> <x> <k> <D> <J>    : "Ԃ"  U0502  # CYRILLIC CAPITAL LETTER KOMI DJE
+<Multi_key> <c> <x> <k> <d> <j>    : "ԃ"  U0503  # CYRILLIC SMALL LETTER KOMI DJE
+<Multi_key> <c> <x> <k> <Z> <J>    : "Ԅ"  U0504  # CYRILLIC CAPITAL LETTER KOMI ZJE
+<Multi_key> <c> <x> <k> <z> <j>    : "ԅ"  U0505  # CYRILLIC SMALL LETTER KOMI ZJE
+<Multi_key> <c> <x> <k> <D> <Z>    : "Ԇ"  U0506  # CYRILLIC CAPITAL LETTER KOMI DZJE
+<Multi_key> <c> <x> <k> <d> <z>    : "ԇ"  U0507  # CYRILLIC SMALL LETTER KOMI DZJE
+<Multi_key> <c> <x> <k> <L> <J>    : "Ԉ"  U0508  # CYRILLIC CAPITAL LETTER KOMI LJE
+<Multi_key> <c> <x> <k> <l> <j>    : "ԉ"  U0509  # CYRILLIC SMALL LETTER KOMI LJE
+<Multi_key> <c> <x> <k> <N> <J>    : "Ԋ"  U050A  # CYRILLIC CAPITAL LETTER KOMI NJE
+<Multi_key> <c> <x> <k> <n> <j>    : "ԋ"  U050B  # CYRILLIC SMALL LETTER KOMI NJE
+<Multi_key> <c> <x> <k> <S> <J>    : "Ԍ"  U050C  # CYRILLIC CAPITAL LETTER KOMI SJE
+<Multi_key> <c> <x> <k> <s> <j>    : "ԍ"  U050D  # CYRILLIC SMALL LETTER KOMI SJE
+<Multi_key> <c> <x> <k> <T> <J>    : "Ԏ"  U050E  # CYRILLIC CAPITAL LETTER KOMI TJE
+<Multi_key> <c> <x> <k> <t> <j>    : "ԏ"  U050F  # CYRILLIC SMALL LETTER KOMI TJE
 
 # archaic letters
 
@@ -11173,12 +11214,16 @@ include "%L"
 <Multi_key> <c> <x> <i> <e>          : "ѥ"  U0465  # CYRILLIC SMALL LETTER IOTIFIED E
 <Multi_key> <c> <x> <I> <v> <O>      : "Ѭ"  U046C  # CYRILLIC CAPITAL LETTER IOTIFIED BIG YUS
 <Multi_key> <c> <x> <i> <v> <o>      : "ѭ"  U046D  # CYRILLIC SMALL LETTER IOTIFIED BIG YUS
-<Multi_key> <c> <x> <K> <S>          : "Ѯ"  U046E  # CYRILLIC CAPITAL LETTER KSI
-<Multi_key> <c> <x> <k> <s>          : "ѯ"  U046F  # CYRILLIC SMALL LETTER KSI
+<Multi_key> <c> <x> <X>              : "Ѯ"  U046E  # CYRILLIC CAPITAL LETTER KSI
+<Multi_key> <c> <x> <x>              : "ѯ"  U046F  # CYRILLIC SMALL LETTER KSI
 <Multi_key> <c> <x> <v> <O>          : "Ѫ"  U046A  # CYRILLIC CAPITAL LETTER BIG YUS
 <Multi_key> <c> <x> <v> <o>          : "ѫ"  U046B  # CYRILLIC SMALL LETTER BIG YUS
+<Multi_key> <c> <x> <O> <O>          : "Ꚙ"  UA698  # CYRILLIC CAPITAL LETTER DOUBLE O
+<Multi_key> <c> <x> <o> <o>          : "ꚙ"  UA699  # CYRILLIC SMALL LETTER DOUBLE O
 <Multi_key> <c> <x> <O> <Y>          : "Ѹ"  U0478  # CYRILLIC CAPITAL LETTER UK
 <Multi_key> <c> <x> <o> <y>          : "ѹ"  U0479  # CYRILLIC SMALL LETTER UK
+<Multi_key> <c> <x> <O> <plus>       : "Ꚛ"  UA69A  # CYRILLIC CAPITAL LETTER CROSSED O
+<Multi_key> <c> <x> <o> <plus>       : "ꚛ"  UA69B  # CYRILLIC SMALL LETTER CROSSED O
 <Multi_key> <c> <x> <P> <S>          : "Ѱ"  U0470  # CYRILLIC CAPITAL LETTER PSI
 <Multi_key> <c> <x> <p> <s>          : "ѱ"  U0471  # CYRILLIC SMALL LETTER PSI
 <Multi_key> <c> <c> <Q>              : "Ҁ"  U0480  # CYRILLIC CAPITAL LETTER KOPPA (conflicts)
@@ -17989,6 +18034,15 @@ include "HangulSyllables"
 <Multi_key> <K> <s> <numbersign> <7> : "᮷"  U1BB7  # SUNDANESE DIGIT SEVEN
 <Multi_key> <K> <s> <numbersign> <8> : "᮸"  U1BB8  # SUNDANESE DIGIT EIGHT
 <Multi_key> <K> <s> <numbersign> <9> : "᮹"  U1BB9  # SUNDANESE DIGIT NINE
+
+<Multi_key> <K> <s> <O> <o> : "᳀"  U1CC0  # SUNDANESE PUNCTUATION BINDU SURYA
+<Multi_key> <K> <s> <O> <X> : "᳁"  U1CC1  # SUNDANESE PUNCTUATION BINDU PANGLONG
+<Multi_key> <K> <s> <O> <equal> : "᳂"  U1CC2  # SUNDANESE PUNCTUATION BINDU PURNAMA
+<Multi_key> <K> <s> <O> <space> : "᳃"  U1CC3  # SUNDANESE PUNCTUATION BINDU CAKRA
+<Multi_key> <K> <s> <equal> <l> : "᳄"  U1CC4  # SUNDANESE PUNCTUATION BINDU LEU SATANGA
+<Multi_key> <K> <s> <equal> <k> : "᳅"  U1CC5  # SUNDANESE PUNCTUATION BINDU KA SATANGA
+<Multi_key> <K> <s> <equal> <d> : "᳆"  U1CC6  # SUNDANESE PUNCTUATION BINDU DA SATANGA
+<Multi_key> <K> <s> <equal> <b> : "᳇"  U1CC7  # SUNDANESE PUNCTUATION BINDU BA SATANGA
 
 # (t = Tagbanwa)
 
