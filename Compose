@@ -1,7 +1,7 @@
 # -*- coding: utf-8; mode: conf -*-
 
-# Some additional Compose key sequences, focusing on maths, linguistics, emoji and general
-# text input. To use them, copy all or parts of this config into your ~/.XCompose file.
+# A comprehensive collection of Compose key sequences, covering a significant proportion
+# of Unicode. To use this, copy all or parts of this config into your ~/.XCompose file.
 # For full Hangul support also copy the HangulSyllables file, which is included from here.
 # Similarly, copy the Logogram file for logographic and undeciphered scripts.
 #
@@ -12,6 +12,9 @@
 #
 # For a simple command line tool to help manage your compose configuration, check out
 # https://github.com/Udzu/xcompose
+#
+# For a helpful guide to various scripts, see https://r12a.github.io/scripts/index.html,
+# though much of this file was written before becoming aware of that.
 
 include "%L"
 
@@ -6693,8 +6696,9 @@ include "%L"
 <Multi_key> <b> <c> <greater> <period> <Return> : "𑁰" U11070   # BRAHMI SIGN OLD TAMIL VIRAMA
 <Multi_key> <b> <c> <asterisk> <Return>     : "𑁿"  U1107F  # BRAHMI NUMBER JOINER
 
-<Multi_key> <b> <c> <x>                     : "𑀃" U11003   # BRAHMI SIGN JIHVAMULIYA
-<Multi_key> <b> <c> <o> <x>                 : "𑀄" U11004   # BRAHMI SIGN UPADHMANIYA
+<Multi_key> <b> <c> <x> <Return>            : "𑀃" U11003   # BRAHMI SIGN JIHVAMULIYA
+<Multi_key> <b> <c> <f> <Return>            : "𑀄" U11004   # BRAHMI SIGN UPADHMANIYA
+<Multi_key> <b> <c> <o> <x> <Return>        : "𑀄" U11004   # BRAHMI SIGN UPADHMANIYA
 
 # Punctuation
 
@@ -7009,6 +7013,7 @@ include "%L"
 <Multi_key> <b> <b> <period> <d> <h>     : "ঢ"  U09A2  # BENGALI LETTER DDHA
 <Multi_key> <b> <b> <period> <n>         : "ণ"  U09A3  # BENGALI LETTER NNA
 <Multi_key> <b> <b> <t> <space>          : "ত"  U09A4  # BENGALI LETTER TA
+<Multi_key> <b> <b> <0> <t>              : "ৎ"  U09CE  # BENGALI LETTER KHANDA TA
 <Multi_key> <b> <b> <t> <h>              : "থ"  U09A5  # BENGALI LETTER THA
 <Multi_key> <b> <b> <d> <space>          : "দ"  U09A6  # BENGALI LETTER DA
 <Multi_key> <b> <b> <d> <h>              : "ধ"  U09A7  # BENGALI LETTER DHA
@@ -7028,6 +7033,8 @@ include "%L"
 <Multi_key> <b> <b> <underscore> <r>     : "ড়"  U09DC  # BENGALI LETTER RRA
 <Multi_key> <b> <b> <period> <r> <h>     : "ঢ়"  U09DD  # BENGALI LETTER RHA
 <Multi_key> <b> <b> <period> <y>         : "য়"  U09DF  # BENGALI LETTER YYA
+<Multi_key> <b> <b> <v>                  : "ৰ"  U09F0  # BENGALI LETTER RA WITH MIDDLE DIAGONAL
+<Multi_key> <b> <b> <w>                  : "ৱ"  U09F1  # BENGALI LETTER RA WITH LOWER DIAGONAL
 
 # Independent vowels
 
@@ -7062,6 +7069,7 @@ include "%L"
 <Multi_key> <b> <b> <comma> <l> <Return> : "ৢ"  U09E2  # BENGALI VOWEL SIGN VOCALIC L
 <Multi_key> <b> <b> <comma> <l> <l> <Return> : "ৣ"  U09E3  # BENGALI VOWEL SIGN VOCALIC LL
 <Multi_key> <b> <b> <0> <Return>         : "্"  U09CD  # BENGALI SIGN VIRAMA
+<Multi_key> <b> <b> <minus> <a> <u> <Return> : "ৗ"  U09D7  # BENGALI AU LENGTH MARK
 
 # Other signs
 
@@ -7070,9 +7078,15 @@ include "%L"
 <Multi_key> <b> <b> <colon> <Return>     : "ঃ"  U0983  # BENGALI SIGN VISARGA
 <Multi_key> <b> <b> <underscore> <period> <Return> : "়"  U09BC  # BENGALI SIGN NUKTA
 <Multi_key> <b> <b> <comma> <Return>     : "্"  U09CD  # BENGALI SIGN VIRAMA
+<Multi_key> <b> <b> <asciicircum> <S> <Return> : "৾"  U09FE  # BENGALI SANDHI MARK
 
-<Multi_key> <b> <b> <2>                  : "ঽ"  U09BD  # BENGALI SIGN AVAGRAHA
+<Multi_key> <b> <b> <bracketleft>        : "ঀ"  U0980  # BENGALI ANJI
+<Multi_key> <b> <b> <S>                  : "ঽ"  U09BD  # BENGALI SIGN AVAGRAHA
 <Multi_key> <b> <b> <R> <u>              : "৲"  U09F2  # BENGALI RUPEE MARK (use Tk for ৳)
+<Multi_key> <b> <b> <period> <parenright> <space> : "৺"  U09FA  # BENGALI ISSHAR
+<Multi_key> <b> <b> <dollar>             : "৻"  U09FB  # BENGALI GANDA MARK
+<Multi_key> <b> <b> <period> <parenright> <backslash> : "ৼ"  U09FC  # BENGALI LETTER VEDIC ANUSVARA
+<Multi_key> <b> <b> <o> <space>          : "৽"  U09FD  # BENGALI ABBREVIATION SIGN
 
 # Numerals
 
@@ -7086,6 +7100,13 @@ include "%L"
 <Multi_key> <b> <b> <numbersign> <7>     : "৭"  U09ED  # BENGALI DIGIT SEVEN
 <Multi_key> <b> <b> <numbersign> <8>     : "৮"  U09EE  # BENGALI DIGIT EIGHT
 <Multi_key> <b> <b> <numbersign> <9>     : "৯"  U09EF  # BENGALI DIGIT NINE
+
+<Multi_key> <b> <b> <1> <slash>          : "৴"  U09F4  # BENGALI CURRENCY NUMERATOR ONE
+<Multi_key> <b> <b> <2> <slash>          : "৵"  U09F5  # BENGALI CURRENCY NUMERATOR TWO
+<Multi_key> <b> <b> <3> <slash>          : "৶"  U09F6  # BENGALI CURRENCY NUMERATOR THREE
+<Multi_key> <b> <b> <4> <slash>          : "৷"  U09F7  # BENGALI CURRENCY NUMERATOR FOUR
+<Multi_key> <b> <b> <minus> <1> <slash>  : "৸"  U09F8  # BENGALI CURRENCY NUMERATOR ONE LESS THAN THE DENOMINATOR
+<Multi_key> <b> <b> <slash> <1> <6>      : "৹"  U09F9  # BENGALI CURRENCY DENOMINATOR SIXTEEN
 
 # (B = Burmese) - not covered by ISO 15919 but similar enough to fit
 
@@ -8084,7 +8105,7 @@ include "%L"
 <Multi_key> <b> <k> <period> <s>         : "ಷ"  U0CB7  # KANNADA LETTER SSA
 <Multi_key> <b> <k> <s>                  : "ಸ"  U0CB8  # KANNADA LETTER SA
 <Multi_key> <b> <k> <h>                  : "ಹ"  U0CB9  # KANNADA LETTER HA
-<Multi_key> <b> <k> <f>                  : "ೞ"  U0CDE  # KANNADA LETTER FA
+<Multi_key> <b> <k> <f> <space>          : "ೞ"  U0CDE  # KANNADA LETTER FA
 <Multi_key> <b> <k> <0> <n>              : "ೝ"  U0CDD  # KANNADA LETTER NAKAARA POLLU
 
 # Independent vowels
@@ -8139,8 +8160,8 @@ include "%L"
 
 <Multi_key> <b> <k> <at>                 : "಄"  U0C84  # KANNADA SIGN SIDDHAM
 <Multi_key> <b> <k> <S>                  : "ಽ"  U0CBD  # KANNADA SIGN AVAGRAHA
-<Multi_key> <b> <k> <x>                  : "ೱ"  U0CF1  # KANNADA SIGN JIHVAMULIYA
-<Multi_key> <b> <k> <o> <x>              : "ೲ"  U0CF2  # KANNADA SIGN UPADHMANIYA
+<Multi_key> <b> <k> <x> <Return>         : "ೱ"  U0CF1  # KANNADA SIGN JIHVAMULIYA
+<Multi_key> <b> <k> <f> <Return>         : "ೲ"  U0CF2  # KANNADA SIGN UPADHMANIYA
 
 # Numerals
 
@@ -9368,6 +9389,9 @@ include "%L"
 <Multi_key> <b> <n> <s> : "𑐳"  U11433  # NEWA LETTER SA
 <Multi_key> <b> <n> <h> : "𑐴"  U11434  # NEWA LETTER HA
 
+<Multi_key> <b> <n> <x> <Return> : "𑑠"  U11460  # NEWA SIGN JIHVAMULIYA
+<Multi_key> <b> <n> <f> <Return> : "𑑡"  U11461  # NEWA SIGN UPADHMANIYA
+
 # Independent vowels
 
 <Multi_key> <b> <n> <a> <space> : "𑐀"  U11400  # NEWA LETTER A
@@ -9412,14 +9436,21 @@ include "%L"
 <Multi_key> <b> <n> <S> : "𑑇"  U11447  # NEWA SIGN AVAGRAHA
 <Multi_key> <b> <n> <greater> <S> : "𑑈"  U11448  # NEWA SIGN FINAL ANUSVARA
 <Multi_key> <b> <n> <o> <m> : "𑑉"  U11449  # NEWA OM
+<Multi_key> <b> <n> <2> <s> <i> <d> : "𑑊"  U1144A  # NEWA SIDDHI (not ideal)
+<Multi_key> <b> <n> <period> <parenright> <space> : "𑑟"  U1145F  # NEWA LETTER VEDIC ANUSVARA
 
 # Punctuation
 
 <Multi_key> <b> <n> <bar> : "𑑋"  U1144B  # NEWA DANDA
 <Multi_key> <b> <n> <2> <bar> : "𑑌"  U1144C  # NEWA DOUBLE DANDA
 <Multi_key> <b> <n> <comma> <space> : "𑑍"  U1144D  # NEWA COMMA
+<Multi_key> <b> <n> <space> : "𑑎"  U1144E  # NEWA GAP FILLER
+<Multi_key> <b> <n> <period> <period> : "𑑎"  U1144E  # NEWA GAP FILLER
 <Multi_key> <b> <n> <o> <period> : "𑑏"  U1144F  # NEWA ABBREVIATION SIGN
 <Multi_key> <b> <n> <comma> <comma> : "𑑚"  U1145A  # NEWA DOUBLE COMMA
+<Multi_key> <b> <n> <bracketright> : "𑑛"  U1145B  # NEWA PLACEHOLDER MARK
+<Multi_key> <b> <n> <v> <asciicircum> : "𑑝"  U1145D  # NEWA INSERTION SIGN
+<Multi_key> <b> <n> <asciicircum> <S> <Return> : "𑑞"  U1145E  # NEWA SANDHI MARK
 
 # Numerals
 
@@ -10613,6 +10644,7 @@ include "%L"
 <Multi_key> <b> <T> <T> <a> <i> <Return> : "𑏅"  U113C5  # TULU-TIGALARI VOWEL SIGN AI
 <Multi_key> <b> <T> <T> <o> <o> <Return> : "𑏇"  U113C7  # TULU-TIGALARI VOWEL SIGN OO
 <Multi_key> <b> <T> <T> <a> <u> <Return> : "𑏈"  U113C8  # TULU-TIGALARI VOWEL SIGN AU
+<Multi_key> <b> <T> <T> <minus> <a> <u> <Return> : "𑏉"  U113C9  # TULU-TIGALARI AU LENGTH MARK
 
 # Other signs
 
@@ -12457,6 +12489,7 @@ include "%L"
 <Multi_key> <C> <n> <e>                  : "𞄪"  U1E12A  # NYIAKENG PUACHUE HMONG LETTER E
 <Multi_key> <C> <n> <minus> <e>          : "𞄫"  U1E12B  # NYIAKENG PUACHUE HMONG LETTER EE
 <Multi_key> <C> <n> <w>                  : "𞄬"  U1E12C  # NYIAKENG PUACHUE HMONG LETTER W
+<Multi_key> <C> <n> <minus> <space>      : "𞄽"  U1E13D  # NYIAKENG PUACHUE HMONG SYLLABLE LENGTHENER
 
 <Multi_key> <C> <n> <bar> <Return>       : "𞄰"  U1E130  # NYIAKENG PUACHUE HMONG TONE-B
 <Multi_key> <C> <n> <period> <minus> <Return> : "𞄱"  U1E131  # NYIAKENG PUACHUE HMONG TONE-M
@@ -12476,6 +12509,16 @@ include "%L"
 <Multi_key> <C> <n> <numbersign> <7>     : "𞅇"  U1E147  # NYIAKENG PUACHUE HMONG DIGIT SEVEN
 <Multi_key> <C> <n> <numbersign> <8>     : "𞅈"  U1E148  # NYIAKENG PUACHUE HMONG DIGIT EIGHT
 <Multi_key> <C> <n> <numbersign> <9>     : "𞅉"  U1E149  # NYIAKENG PUACHUE HMONG DIGIT NINE
+
+<Multi_key> <C> <n> <braceright> <m> <a> <n> : "𞄷"  U1E137  # NYIAKENG PUACHUE HMONG SIGN FOR PERSON
+<Multi_key> <C> <n> <braceright> <t> <h> <i> <n> <g> : "𞄸"  U1E138  # NYIAKENG PUACHUE HMONG SIGN FOR THING
+<Multi_key> <C> <n> <braceright> <p> <l> <a> <c> <e> : "𞄹"  U1E139  # NYIAKENG PUACHUE HMONG SIGN FOR LOCATION
+<Multi_key> <C> <n> <braceright> <b> <e> <a> <s> <t> : "𞄺"  U1E13A  # NYIAKENG PUACHUE HMONG SIGN FOR ANIMAL
+<Multi_key> <C> <n> <braceright> <b> <u> <g> : "𞄻"  U1E13B  # NYIAKENG PUACHUE HMONG SIGN FOR INVERTEBRATE
+
+<Multi_key> <C> <n> <quotedbl>           : "𞄼"  U1E13C  # NYIAKENG PUACHUE HMONG SIGN XW XW
+<Multi_key> <C> <n> <dollar>             : "𞅎"  U1E14E  # NYIAKENG PUACHUE HMONG LOGOGRAM NYAJ
+<Multi_key> <C> <n> <parenleft> <c> <parenright> : "𞅏"  U1E14F  # NYIAKENG PUACHUE HMONG CIRCLED CA
 
 # (N = Nag Mundari/Mundari Bani)
 
@@ -18051,6 +18094,7 @@ include "HangulSyllables"
 <Multi_key> <K> <t> <semicolon> <n> : "ᝥ"  U1765  # TAGBANWA LETTER NGA
 <Multi_key> <K> <t> <t> : "ᝦ"  U1766  # TAGBANWA LETTER TA
 <Multi_key> <K> <t> <d> : "ᝧ"  U1767  # TAGBANWA LETTER DA
+<Multi_key> <K> <t> <r> : "ᝧ"  U1767  # TAGBANWA LETTER DA
 <Multi_key> <K> <t> <n> : "ᝨ"  U1768  # TAGBANWA LETTER NA
 <Multi_key> <K> <t> <p> : "ᝩ"  U1769  # TAGBANWA LETTER PA
 <Multi_key> <K> <t> <b> : "ᝪ"  U176A  # TAGBANWA LETTER BA
@@ -19907,10 +19951,13 @@ include "HangulSyllables"
 <Multi_key> <t> <t> <a> <e> <Return> : "ᩯ"  U1A6F  # TAI THAM VOWEL SIGN AE
 <Multi_key> <t> <t> <o> <o> <Return> : "ᩰ"  U1A70  # TAI THAM VOWEL SIGN OO
 <Multi_key> <t> <t> <a> <i> <Return> : "ᩱ"  U1A71  # TAI THAM VOWEL SIGN AI
+<Multi_key> <t> <t> <2> <a> <i> <Return> : "ᩲ"  U1A72  # TAI THAM VOWEL SIGN THAM AI
 <Multi_key> <t> <t> <asciicircum> <o> <a> <Return> : "ᩳ"  U1A73  # TAI THAM VOWEL SIGN OA ABOVE
 <Multi_key> <t> <t> <period> <Return> : "ᩴ"  U1A74  # TAI THAM SIGN MAI KANG (ANUSVARA)
 <Multi_key> <t> <t> <w> <Return> : "ᩴ"  U1A74  # TAI THAM SIGN MAI KANG (ANUSVARA)
 <Multi_key> <t> <t> <0> <Return> : "᩺"  U1A7A  # TAI THAM SIGN RA HAAM
+<Multi_key> <t> <t> <asciicircum> <0> <Return> : "᩼"  U1A7C  # TAI THAM SIGN KHUEN-LUE KARAN
+<Multi_key> <t> <t> <underscore> <period> <Return> : "᩿"  U1A7F  # TAI THAM COMBINING CRYPTOGRAMMIC DOT
 
 # Tones
 
@@ -19922,8 +19969,18 @@ include "HangulSyllables"
 
 # Punctuation
 
-<Multi_key> <t> <t> <bar> <space> : "᪨"  U1AA8  # TAI THAM SIGN KAAN
-<Multi_key> <t> <t> <2> <bar> : "᪩"  U1AA9  # TAI THAM SIGN KAANKUU
+<Multi_key> <t> <t> <comma> : "᪨"  U1AA8  # TAI THAM SIGN KAAN
+<Multi_key> <t> <t> <2> <comma> : "᪩"  U1AA9  # TAI THAM SIGN KAANKUU
+<Multi_key> <t> <t> <semicolon> : "᪪"  U1AAA  # TAI THAM SIGN SATKAAN
+<Multi_key> <t> <t> <2> <semicolon> : "᪫"  U1AAB  # TAI THAM SIGN SATKAANKUU
+<Multi_key> <t> <t> <asterisk> <plus> : "᪣"  U1AA3  # TAI THAM SIGN KEOW
+<Multi_key> <t> <t> <asterisk> <at> : "᪤"  U1AA4  # TAI THAM SIGN HOY
+<Multi_key> <t> <t> <asterisk> <asterisk> : "᪥"  U1AA5  # TAI THAM SIGN DOKMAI
+<Multi_key> <t> <t> <asterisk> <o> : "᪭"  U1AAD  # TAI THAM SIGN CAANG
+<Multi_key> <t> <t> <bracketright> : "᪦"  U1AA6  # TAI THAM SIGN REVERSED ROTATED RANA
+<Multi_key> <t> <t> <2> <bracketright> : "᪬"  U1AAC  # TAI THAM SIGN HANG
+<Multi_key> <t> <t> <quotedbl> : "ᪧ"  U1AA7  # TAI THAM SIGN MAI YAMOK
+<Multi_key> <t> <t> <2> <quotedbl> : "᩻"  U1A7B  # TAI THAM SIGN MAI SAM
 
 # Numerals
 
@@ -19948,6 +20005,12 @@ include "HangulSyllables"
 <Multi_key> <t> <t> <numbersign> <7> <T> : "᪗"  U1A97  # TAI THAM THAM DIGIT SEVEN
 <Multi_key> <t> <t> <numbersign> <8> <T> : "᪘"  U1A98  # TAI THAM THAM DIGIT EIGHT
 <Multi_key> <t> <t> <numbersign> <9> <T> : "᪙"  U1A99  # TAI THAM THAM DIGIT NINE
+
+# Logograms
+
+<Multi_key> <t> <t> <braceright> <c> <i> <t> <y> : "᪠"  U1AA0  # TAI THAM SIGN WIANG (CITY)
+<Multi_key> <t> <t> <braceright> <v> <i> <l> <l> : "᪡"  U1AA1  # TAI THAM SIGN WIANGWAAK (VILLAGE)
+<Multi_key> <t> <t> <braceright> <h> <e> <a> <v> : "᪢"  U1AA2  # TAI THAM SIGN SAWAN (HEAVEN)
 
 # (v = Tai Viet)
 
@@ -21115,8 +21178,8 @@ include "HangulSyllables"
 <Multi_key> <z> <s> <h>                  : "𑪂"  U11A82  # SOYOMBO LETTER HA
 <Multi_key> <z> <s> <k> <s> <s>          : "𑪃"  U11A83  # SOYOMBO LETTER KSSA
 
-<Multi_key> <z> <s> <x>                  : "𑪄"  U11A84  # SOYOMBO SIGN JIHVAMULIYA
-<Multi_key> <z> <s> <o> <x>              : "𑪅"  U11A85  # SOYOMBO SIGN UPADHMANIYA
+<Multi_key> <z> <s> <x> <Return>         : "𑪄"  U11A84  # SOYOMBO SIGN JIHVAMULIYA
+<Multi_key> <z> <s> <f> <Return>         : "𑪅"  U11A85  # SOYOMBO SIGN UPADHMANIYA
 
 <Multi_key> <z> <s> <less> <r> <Return>  : "𑪆"  U11A86  # SOYOMBO CLUSTER-INITIAL LETTER RA
 <Multi_key> <z> <s> <less> <l> <Return>  : "𑪇"  U11A87  # SOYOMBO CLUSTER-INITIAL LETTER LA
