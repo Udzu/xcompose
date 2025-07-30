@@ -12,9 +12,6 @@
 #
 # For a simple command line tool to help manage your compose configuration, check out
 # https://github.com/Udzu/xcompose
-#
-# For a helpful guide to various scripts, see https://r12a.github.io/scripts/index.html,
-# though much of this file was written before becoming aware of that.
 
 include "%L"
 
@@ -6171,6 +6168,27 @@ include "%L"
 <Multi_key> <a> <t> <H>                  : "ⵁ"  U2D41  # TIFINAGH LETTER BERBER ACADEMY YAH
 <Multi_key> <a> <t> <C>                  : "ⵞ"  U2D5E  # TIFINAGH LETTER YACH
 
+# Tuareg variants
+<Multi_key> <a> <t> <2> <d>              : "ⴸ"  U2D38  # TIFINAGH LETTER YADH
+<Multi_key> <a> <t> <2> <g> <space>      : "ⴶ"  U2D36  # TIFINAGH LETTER YAJ
+<Multi_key> <a> <t> <2> <k> <space>      : "ⴾ"  U2D3E  # TIFINAGH LETTER TUAREG YAK
+<Multi_key> <a> <t> <2> <h>              : "ⵂ"  U2D42  # TIFINAGH LETTER TUAREG YAH
+<Multi_key> <a> <t> <2> <k> <h>          : "ⵆ"  U2D46  # TIFINAGH LETTER TUAREG YAKH
+<Multi_key> <a> <t> <2> <q>              : "ⵈ"  U2D48  # TIFINAGH LETTER TUAREG YAQ
+<Multi_key> <a> <t> <2> <j>              : "ⵋ"  U2D4B  # TIFINAGH LETTER AHAGGAR YAZH
+<Multi_key> <a> <t> <3> <j>              : "ⵌ"  U2D4C  # TIFINAGH LETTER TUAREG YAZH
+<Multi_key> <a> <t> <g> <n>              : "ⵐ"  U2D50  # TIFINAGH LETTER TUAREG YAGN
+<Multi_key> <a> <t> <asciitilde> <n>     : "ⵐ"  U2D50  # TIFINAGH LETTER TUAREG YAGN
+<Multi_key> <a> <t> <Multi_key> <n> <g>  : "ⵑ"  U2D51  # TIFINAGH LETTER TUAREG YANG
+<Multi_key> <a> <t> <semicolon> <n>      : "ⵑ"  U2D51  # TIFINAGH LETTER TUAREG YANG
+<Multi_key> <a> <t> <2> <g> <h>          : "ⵗ"  U2D57  # TIFINAGH LETTER TUAREG YAGH
+<Multi_key> <a> <t> <3> <g> <h>          : "ⵘ"  U2D58  # TIFINAGH LETTER AYER YAGH
+<Multi_key> <a> <t> <2> <z>              : "ⵤ"  U2D64  # TIFINAGH LETTER TAWELLEMET YAZ
+<Multi_key> <a> <t> <2> <o>              : "ⵧ"  U2D67  # TIFINAGH LETTER YO
+
+<Multi_key> <a> <t> <comma>              : "⵰"  U2D70  # TIFINAGH SEPARATOR MARK
+<Multi_key> <a> <t> <underscore> <plus> <Return> : "⵿"  U2D7F  # TIFINAGH CONSONANT JOINER
+
 # (T = Thaana)
 
 <Multi_key> <a> <T> <h>                  : "ހ"  U0780  # THAANA LETTER HAA
@@ -7569,7 +7587,7 @@ include "%L"
 <Multi_key> <b> <D> <A> <underscore> <period> <Return> : "𑥃"  U11943  # DIVES AKURU SIGN NUKTA
 <Multi_key> <b> <D> <A> <2> <bar> : "𑥄"  U11944  # DIVES AKURU DOUBLE DANDA
 <Multi_key> <b> <D> <A> <space> : "𑥅"  U11945  # DIVES AKURU GAP FILLER
-<Multi_key> <b> <D> <A> <Return> : "𑥆"  U11946  # DIVES AKURU END OF TEXT MARK
+<Multi_key> <b> <D> <A> <bracketright> : "𑥆"  U11946  # DIVES AKURU END OF TEXT MARK
 
 <Multi_key> <b> <D> <A> <numbersign> <0> : "𑥐"  U11950  # DIVES AKURU DIGIT ZERO
 <Multi_key> <b> <D> <A> <numbersign> <1> : "𑥑"  U11951  # DIVES AKURU DIGIT ONE
@@ -9851,6 +9869,11 @@ include "%L"
 <Multi_key> <b> <S> <D> <o> <o> <space> : "𑖌"  U1158C  # SIDDHAM LETTER O
 <Multi_key> <b> <S> <D> <a> <u> <space> : "𑖍"  U1158D  # SIDDHAM LETTER AU
 
+<Multi_key> <b> <S> <D> <2> <i> <space> : "𑗙"  U115D9  # SIDDHAM LETTER TWO-CIRCLE ALTERNATE I
+<Multi_key> <b> <S> <D> <3> <i> <space> : "𑗘"  U115D8  # SIDDHAM LETTER THREE-CIRCLE ALTERNATE I
+<Multi_key> <b> <S> <D> <2> <i> <i> <space> : "𑗚"  U115DA  # SIDDHAM LETTER TWO-CIRCLE ALTERNATE II
+<Multi_key> <b> <S> <D> <2> <u> <space> : "𑗛"  U115DB  # SIDDHAM LETTER ALTERNATE U
+
 # Dependent vowels
 
 <Multi_key> <b> <S> <D> <a> <a> <Return> : "𑖯"  U115AF  # SIDDHAM VOWEL SIGN AA
@@ -9866,6 +9889,9 @@ include "%L"
 <Multi_key> <b> <S> <D> <a> <u> <Return> : "𑖻"  U115BB  # SIDDHAM VOWEL SIGN AU
 <Multi_key> <b> <S> <D> <0> <Return> : "𑖿"  U115BF  # SIDDHAM SIGN VIRAMA
 
+<Multi_key> <b> <S> <D> <2> <u> <Return> : "𑗜"  U115DC  # SIDDHAM VOWEL SIGN ALTERNATE U
+<Multi_key> <b> <S> <D> <2> <u> <u> <Return> : "𑗝"  U115DD  # SIDDHAM VOWEL SIGN ALTERNATE UU
+
 # Other signs
 
 <Multi_key> <b> <S> <D> <period> <parenright> <Return> : "𑖼"  U115BC  # SIDDHAM SIGN CANDRABINDU
@@ -9876,8 +9902,33 @@ include "%L"
 
 # Punctuation
 
+<Multi_key> <b> <S> <D> <at> : "𑗁"  U115C1  # SIDDHAM SIGN SIDDHAM
 <Multi_key> <b> <S> <D> <bar> : "𑗂"  U115C2  # SIDDHAM DANDA
 <Multi_key> <b> <S> <D> <2> <bar> : "𑗃"  U115C3  # SIDDHAM DOUBLE DANDA
+<Multi_key> <b> <S> <D> <space> <period> : "𑗄"  U115C4  # SIDDHAM SEPARATOR DOT
+<Multi_key> <b> <S> <D> <space> <bar> : "𑗅"  U115C5  # SIDDHAM SEPARATOR BAR
+<Multi_key> <b> <S> <D> <quotedbl> <1> : "𑗆"  U115C6  # SIDDHAM REPETITION MARK-1
+<Multi_key> <b> <S> <D> <quotedbl> <2> : "𑗇"  U115C7  # SIDDHAM REPETITION MARK-2
+<Multi_key> <b> <S> <D> <quotedbl> <3> : "𑗈"  U115C8  # SIDDHAM REPETITION MARK-3
+<Multi_key> <b> <S> <D> <bracketright> : "𑗉"  U115C9  # SIDDHAM END OF TEXT MARK
+
+# Siddham marks
+
+<Multi_key> <b> <S> <D> <o> <Y> <U> : "𑗊"  U115CA  # SIDDHAM SECTION MARK WITH TRIDENT AND U-SHAPED ORNAMENTS
+<Multi_key> <b> <S> <D> <o> <Y> <parenright> : "𑗋"  U115CB  # SIDDHAM SECTION MARK WITH TRIDENT AND DOTTED CRESCENTS
+<Multi_key> <b> <S> <D> <o> <X> <parenright> : "𑗌"  U115CC  # SIDDHAM SECTION MARK WITH RAYS AND DOTTED CRESCENTS
+<Multi_key> <b> <S> <D> <o> <X> <2> <parenright> : "𑗍"  U115CD  # SIDDHAM SECTION MARK WITH RAYS AND DOTTED DOUBLE CRESCENTS
+<Multi_key> <b> <S> <D> <o> <X> <3> <parenright> : "𑗎"  U115CE  # SIDDHAM SECTION MARK WITH RAYS AND DOTTED TRIPLE CRESCENTS
+<Multi_key> <b> <S> <D> <o> <O> <space> : "𑗏"  U115CF  # SIDDHAM SECTION MARK DOUBLE RING
+<Multi_key> <b> <S> <D> <o> <O> <X> : "𑗐"  U115D0  # SIDDHAM SECTION MARK DOUBLE RING WITH RAYS
+<Multi_key> <b> <S> <D> <o> <2> <parenright> : "𑗑"  U115D1  # SIDDHAM SECTION MARK WITH DOUBLE CRESCENTS
+<Multi_key> <b> <S> <D> <o> <3> <parenright>: "𑗒"  U115D2  # SIDDHAM SECTION MARK WITH TRIPLE CRESCENTS
+<Multi_key> <b> <S> <D> <o> <4> <parenright>: "𑗓"  U115D3  # SIDDHAM SECTION MARK WITH QUADRUPLE CRESCENTS
+<Multi_key> <b> <S> <D> <o> <7> <parenright> : "𑗔"  U115D4  # SIDDHAM SECTION MARK WITH SEPTUPLE CRESCENTS
+<Multi_key> <b> <S> <D> <o> <X> <o> : "𑗕"  U115D5  # SIDDHAM SECTION MARK WITH CIRCLES AND RAYS
+<Multi_key> <b> <S> <D> <o> <o> <2> <parenright>: "𑗖"  U115D6  # SIDDHAM SECTION MARK WITH CIRCLES AND TWO ENCLOSURES
+<Multi_key> <b> <S> <D> <o> <o> <4> <parenright> : "𑗗"  U115D7  # SIDDHAM SECTION MARK WITH CIRCLES AND FOUR ENCLOSURES
+
 
 # (SH = Sharada)
 
@@ -10610,6 +10661,7 @@ include "%L"
 <Multi_key> <b> <T> <T> <period> <l> : "𑎳"  U113B3  # TULU-TIGALARI LETTER LLA
 <Multi_key> <b> <T> <T> <underscore> <r> : "𑎴"  U113B4  # TULU-TIGALARI LETTER RRA
 <Multi_key> <b> <T> <T> <underscore> <l> : "𑎵"  U113B5  # TULU-TIGALARI LETTER LLLA
+<Multi_key> <b> <T> <T> <less> <r> <Return> : "𑏑"  U113D1  # TULU-TIGALARI REPHA
 
 # Independent vowels
 
@@ -10645,13 +10697,24 @@ include "%L"
 <Multi_key> <b> <T> <T> <o> <o> <Return> : "𑏇"  U113C7  # TULU-TIGALARI VOWEL SIGN OO
 <Multi_key> <b> <T> <T> <a> <u> <Return> : "𑏈"  U113C8  # TULU-TIGALARI VOWEL SIGN AU
 <Multi_key> <b> <T> <T> <minus> <a> <u> <Return> : "𑏉"  U113C9  # TULU-TIGALARI AU LENGTH MARK
+<Multi_key> <b> <T> <T> <0> <Return> : "𑏎"  U113CE  # TULU-TIGALARI SIGN VIRAMA
+<Multi_key> <b> <T> <T> <0> <at> <Return> : "𑏏"  U113CF  # TULU-TIGALARI SIGN LOOPED VIRAMA
 
 # Other signs
 
+<Multi_key> <b> <T> <T> <parenright> <Return> : "𑏊"  U113CA  # TULU-TIGALARI SIGN CANDRA ANUNASIKA
 <Multi_key> <b> <T> <T> <period> <Return> : "𑏌"  U113CC  # TULU-TIGALARI SIGN ANUSVARA
 <Multi_key> <b> <T> <T> <colon> <Return> : "𑏍"  U113CD  # TULU-TIGALARI SIGN VISARGA
 <Multi_key> <b> <T> <T> <comma> <Return> : "𑏎"  U113CE  # TULU-TIGALARI SIGN VIRAMA
+<Multi_key> <b> <T> <T> <comma> <at> <Return> : "𑏏"  U113CF  # TULU-TIGALARI SIGN LOOPED VIRAMA
 <Multi_key> <b> <T> <T> <underscore> <plus> <Return> : "𑏐"  U113D0  # TULU-TIGALARI CONJOINER
+<Multi_key> <b> <T> <T> <apostrophe> <Return> : "𑏡"  U113E1  # TULU-TIGALARI VEDIC TONE SVARITA
+<Multi_key> <b> <T> <T> <underscore> <S> <Return> : "𑏢"  U113E2  # TULU-TIGALARI VEDIC TONE ANUDATTA
+
+<Multi_key> <b> <T> <T> <quotedbl> : "𑏒"  U113D2  # TULU-TIGALARI GEMINATION MARK
+<Multi_key> <b> <T> <T> <minus> <space> : "𑏓"  U113D3  # TULU-TIGALARI SIGN PLUTA
+<Multi_key> <b> <T> <T> <o> <m> : "𑏗"  U113D7  # TULU-TIGALARI SIGN OM PUSHPIKA
+<Multi_key> <b> <T> <T> <at> : "𑏘"  U113D8  # TULU-TIGALARI SIGN SHRII PUSHPIKA
 
 # Punctuation
 
@@ -11814,7 +11877,7 @@ include "%L"
 
 # (Du/DU = Sloan-Duployan) - based on 1934 edition
 
-# TODO: check that this is correct, especially forms with combining diacritics
+# TODO: check that this is correct, especially forms with combining diacritics,
 # and add affixes and layout characters
 
 # consonants
@@ -11893,8 +11956,6 @@ include "%L"
 # r-form selector
 
 <Multi_key> <C> <D> <U> <r> <Return> : "𛲝"  U1BC9D  # DUPLOYAN THICK LETTER SELECTOR
-
-# TODO: affixes
 
 # (h = Cherokee) (not the best abbreviation, but think Ch = Cherokee)
 
@@ -13008,9 +13069,12 @@ include "%L"
 <Multi_key> <C> <P> <minus> : "𖬽"  U16B3D  # PAHAWH HMONG SIGN XYEEM RHO
 <Multi_key> <C> <P> <asterisk> : "𖬾"  U16B3E  # PAHAWH HMONG SIGN XYEEM TOV
 <Multi_key> <C> <P> <slash> : "𖬿"  U16B3F  # PAHAWH HMONG SIGN XYEEM FAIB
-<Multi_key> <C> <P> <quotedbl> <quotedbl> : "𖭂"  U16B42  # PAHAWH HMONG SIGN VOS NRUA
-<Multi_key> <C> <P> <quotedbl> <space> : "𖭃"  U16B43  # PAHAWH HMONG SIGN IB YAM
+<Multi_key> <C> <P> <quotedbl> <quotedbl> : "𖭂"  U16B42  # PAHAWH HMONG SIGN VOS NRUA (REDUPLICATION)
+<Multi_key> <C> <P> <quotedbl> <space> : "𖭃"  U16B43  # PAHAWH HMONG SIGN IB YAM (DITTO)
+<Multi_key> <C> <P> <quotedbl> <greater> : "𖭀"  U16B40  # PAHAWH HMONG SIGN VOS SEEV
+<Multi_key> <C> <P> <quotedbl> <1> : "𖭁"  U16B41  # PAHAWH HMONG SIGN MEEJ SUAB
 <Multi_key> <C> <P> <Multi_key> <S> <O> : "𖭄"  U16B44  # PAHAWH HMONG SIGN XAUS
+<Multi_key> <C> <P> <quotedbl> <at> : "𖭅"  U16B45  # PAHAWH HMONG SIGN CIM TSOV ROG
 
 # numerals
 
@@ -13034,8 +13098,10 @@ include "%L"
 
 # logographs
 
+<Multi_key> <C> <P> <braceright> <l> <u> <b> : "𖭣"  U16B63  # PAHAWH HMONG SIGN VOS LUB
 <Multi_key> <C> <P> <braceright> <y> <e> <a> <r> : "𖭤"  U16B64  # PAHAWH HMONG SIGN XYOO
 <Multi_key> <C> <P> <braceright> <m> <o> <n> <t> <h> : "𖭦"  U16B66  # PAHAWH HMONG SIGN THIRD-STAGE HLI
+<Multi_key> <C> <P> <braceright> <2> <m> <o> <n> <t> <h> : "𖭥"  U16B65  # PAHAWH HMONG SIGN HLI
 <Multi_key> <C> <P> <braceright> <d> <a> <t> <e> : "𖭧"  U16B67  # PAHAWH HMONG SIGN ZWJ THAJ
 <Multi_key> <C> <P> <braceright> <d> <a> <y> : "𖭨"  U16B68  # PAHAWH HMONG SIGN HNUB
 <Multi_key> <C> <P> <braceright> <m> <o> <o> <n> <minus> : "𖭩"  U16B69  # PAHAWH HMONG SIGN NQIG
@@ -13053,6 +13119,26 @@ include "%L"
 <Multi_key> <C> <P> <braceright> <exclam> <t> <o> <u> <c> <h> : "𖭵"  U16B75  # PAHAWH HMONG SIGN CIM TXWV CHWV
 <Multi_key> <C> <P> <braceright> <g> <i> <v> <e> : "𖭶"  U16B76  # PAHAWH HMONG SIGN CIM PUB DAWB
 <Multi_key> <C> <P> <braceright> <s> <t> <o> <p> : "𖭷"  U16B77  # PAHAWH HMONG SIGN CIM NRES TOS
+
+<Multi_key> <C> <P> <braceright> <C> <h> <e> <n> <g> : "𖭽"  U16B7D  # PAHAWH HMONG CLAN SIGN TSHEEJ
+<Multi_key> <C> <P> <braceright> <Y> <e> <n> <g> : "𖭾"  U16B7E  # PAHAWH HMONG CLAN SIGN YEEG
+<Multi_key> <C> <P> <braceright> <L> <e> <e> : "𖭿"  U16B7F  # PAHAWH HMONG CLAN SIGN LIS
+<Multi_key> <C> <P> <braceright> <L> <o> <r> : "𖮀"  U16B80  # PAHAWH HMONG CLAN SIGN LAUJ
+<Multi_key> <C> <P> <braceright> <X> <i> <o> <n> <g> : "𖮁"  U16B81  # PAHAWH HMONG CLAN SIGN XYOOJ
+<Multi_key> <C> <P> <braceright> <K> <o> <n> <g> : "𖮂"  U16B82  # PAHAWH HMONG CLAN SIGN KOO
+<Multi_key> <C> <P> <braceright> <H> <e> <r> : "𖮃"  U16B83  # PAHAWH HMONG CLAN SIGN HAWJ
+<Multi_key> <C> <P> <braceright> <M> <o> <u> <a> : "𖮄"  U16B84  # PAHAWH HMONG CLAN SIGN MUAS
+<Multi_key> <C> <P> <braceright> <T> <h> <a> <o> : "𖮅"  U16B85  # PAHAWH HMONG CLAN SIGN THOJ
+<Multi_key> <C> <P> <braceright> <C> <h> <a> <n> <g> : "𖮆"  U16B86  # PAHAWH HMONG CLAN SIGN TSAB
+<Multi_key> <C> <P> <braceright> <P> <h> <a> : "𖮇"  U16B87  # PAHAWH HMONG CLAN SIGN PHAB
+<Multi_key> <C> <P> <braceright> <K> <h> <a> <n> <g> : "𖮈"  U16B88  # PAHAWH HMONG CLAN SIGN KHAB
+<Multi_key> <C> <P> <braceright> <H> <a> <n> <g> : "𖮉"  U16B89  # PAHAWH HMONG CLAN SIGN HAM
+<Multi_key> <C> <P> <braceright> <V> <a> <n> <g> : "𖮊"  U16B8A  # PAHAWH HMONG CLAN SIGN VAJ
+<Multi_key> <C> <P> <braceright> <F> <a> <n> <g> : "𖮋"  U16B8B  # PAHAWH HMONG CLAN SIGN FAJ
+<Multi_key> <C> <P> <braceright> <Y> <a> <n> <g> : "𖮌"  U16B8C  # PAHAWH HMONG CLAN SIGN YAJ
+<Multi_key> <C> <P> <braceright> <C> <h> <u> <e> : "𖮍"  U16B8D  # PAHAWH HMONG CLAN SIGN TSWB
+<Multi_key> <C> <P> <braceright> <K> <w> : "𖮎"  U16B8E  # PAHAWH HMONG CLAN SIGN KWM
+<Multi_key> <C> <P> <braceright> <V> <u> <e> : "𖮏"  U16B8F  # PAHAWH HMONG CLAN SIGN VWJ
 
 # (R = Cree Syllabics) (not the best abbreviation, but think CR = CREE)
 
@@ -19855,8 +19941,9 @@ include "HangulSyllables"
 <Multi_key> <t> <L> <2> <Return> : "້" U0EC9   # LAO TONE MAI THO
 <Multi_key> <t> <L> <6> <2> <Return> : "໊" U0ECA   # LAO TONE MAI TI
 <Multi_key> <t> <L> <plus> <Return> : "໋" U0ECB   # LAO TONE MAI CATAWA
-<Multi_key> <t> <L> <asciitilde> <Return> : "໌" U0ECC   # LAO CANCELLATION MARK
+<Multi_key> <t> <L> <asciitilde> <asciitilde> <Return> : "໌" U0ECC   # LAO CANCELLATION MARK
 <Multi_key> <t> <L> <asciicircum> <o> <Return> : "ໍ" U0ECD   # LAO NIGGAHITA
+<Multi_key> <t> <L> <asciitilde> <Return> : "໎"  U0ECE  # LAO YAMAKKAN
 
 # Punctuation
 
@@ -19876,7 +19963,29 @@ include "HangulSyllables"
 <Multi_key> <t> <L> <numbersign> <8> : "໘" U0ED8   # LAO DIGIT EIGHT
 <Multi_key> <t> <L> <numbersign> <9> : "໙" U0ED9   # LAO DIGIT NINE
 
-# (t = Tai Tham)
+# Other languages
+
+<Multi_key> <t> <L> <s> <h> : "ຨ"  U0EA8  # LAO LETTER SANSKRIT SHA
+<Multi_key> <t> <L> <semicolon> <s> : "ຨ"  U0EA8  # LAO LETTER SANSKRIT SHA
+<Multi_key> <t> <L> <s> <s> : "ຩ"  U0EA9  # LAO LETTER SANSKRIT SSA
+<Multi_key> <t> <L> <period> <s> : "ຩ"  U0EA9  # LAO LETTER SANSKRIT SSA
+
+<Multi_key> <t> <L> <P> <g> <h> : "ຆ"  U0E86  # LAO LETTER PALI GHA
+<Multi_key> <t> <L> <P> <c> <h> : "ຉ"  U0E89  # LAO LETTER PALI CHA
+<Multi_key> <t> <L> <P> <j> <h> : "ຌ"  U0E8C  # LAO LETTER PALI JHA
+<Multi_key> <t> <L> <P> <n> <y> : "ຎ"  U0E8E  # LAO LETTER PALI NYA
+<Multi_key> <t> <L> <P> <t> <t> <space> : "ຏ"  U0E8F  # LAO LETTER PALI TTA
+<Multi_key> <t> <L> <P> <t> <t> <h> : "ຐ"  U0E90  # LAO LETTER PALI TTHA
+<Multi_key> <t> <L> <P> <d> <d> <space> : "ຑ"  U0E91  # LAO LETTER PALI DDA
+<Multi_key> <t> <L> <P> <d> <d> <h> : "ຒ"  U0E92  # LAO LETTER PALI DDHA
+<Multi_key> <t> <L> <P> <n> <n> : "ຓ"  U0E93  # LAO LETTER PALI NNA
+<Multi_key> <t> <L> <P> <d> <h> : "ຘ"  U0E98  # LAO LETTER PALI DHA
+<Multi_key> <t> <L> <P> <b> <h> : "ຠ"  U0EA0  # LAO LETTER PALI BHA
+<Multi_key> <t> <L> <P> <l> <l> : "ຬ"  U0EAC  # LAO LETTER PALI LLA
+<Multi_key> <t> <L> <K> <g> : "ໞ"  U0EDE  # LAO LETTER KHMU GO
+<Multi_key> <t> <L> <K> <n> <y> : "ໟ"  U0EDF  # LAO LETTER KHMU NYO
+
+# (t = Tai Tham) cf https://r12a.github.io/scripts/lana/index.html
 
 # Consonants (based on corresponding Thai transliteration)
 
@@ -20950,7 +21059,7 @@ include "HangulSyllables"
 # (p = Pollard/Miao)
 
 <Multi_key> <z> <p> <p> <space> : "𖼀"  U16F00  # MIAO LETTER PA
-<Multi_key> <z> <p> <b> : "𖼁"  U16F01  # MIAO LETTER BA
+<Multi_key> <z> <p> <b> <space> : "𖼁"  U16F01  # MIAO LETTER BA
 <Multi_key> <z> <p> <p> <l> : "𖼃"  U16F03  # MIAO LETTER PLA
 <Multi_key> <z> <p> <m> <space> : "𖼄"  U16F04  # MIAO LETTER MA
 <Multi_key> <z> <p> <2> <m> : "𖼆"  U16F06  # MIAO LETTER ARCHAIC MA
@@ -20982,7 +21091,7 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <n> <g> <space> : "𖼣"  U16F23  # MIAO LETTER NGA
 <Multi_key> <z> <p> <2> <n> <g> : "𖼥"  U16F25  # MIAO LETTER ARCHAIC NGA
 <Multi_key> <z> <p> <n> <g> <h> : "𖼤"  U16F24  # MIAO LETTER NGHA
-<Multi_key> <z> <p> <h> : "𖼦"  U16F26  # MIAO LETTER HA
+<Multi_key> <z> <p> <h> <space> : "𖼦"  U16F26  # MIAO LETTER HA
 <Multi_key> <z> <p> <x> : "𖼧"  U16F27  # MIAO LETTER XA
 <Multi_key> <z> <p> <g> <h> <space> : "𖼨"  U16F28  # MIAO LETTER GHA
 <Multi_key> <z> <p> <g> <h> <h> : "𖼩"  U16F29  # MIAO LETTER GHHA
@@ -20991,6 +21100,7 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <n> <y> <space> : "𖼬"  U16F2C  # MIAO LETTER NYA
 <Multi_key> <z> <p> <n> <y> <h> : "𖼭"  U16F2D  # MIAO LETTER NYHA
 <Multi_key> <z> <p> <t> <s> <h> : "𖼮"  U16F2E  # MIAO LETTER TSHA
+<Multi_key> <z> <p> <Y> <2> <t> <s> <h> : "𖼲"  U16F32  # MIAO LETTER REFORMED TSHA
 <Multi_key> <z> <p> <d> <z> <h> : "𖼯"  U16F2F  # MIAO LETTER DZHA
 <Multi_key> <z> <p> <s> <h> : "𖼳"  U16F33  # MIAO LETTER SHA
 <Multi_key> <z> <p> <s> <s> : "𖼴"  U16F34  # MIAO LETTER SSA
@@ -21006,10 +21116,30 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <z> <z> <y> : "𖽀"  U16F40  # MIAO LETTER ZZYA
 <Multi_key> <z> <p> <z> <z> <s> <y> : "𖽁"  U16F41  # MIAO LETTER ZZSYA
 <Multi_key> <z> <p> <w> <space> : "𖽂"  U16F42  # MIAO LETTER WA
+<Multi_key> <z> <p> <a> <h> <space> : "𖽃"  U16F43  # MIAO LETTER AH
+<Multi_key> <z> <p> <h> <h> : "𖽄"  U16F44  # MIAO LETTER HHA
+# Yi alternatives
+<Multi_key> <z> <p> <Y> <p> : "𖼂"  U16F02  # MIAO LETTER YI PA
+<Multi_key> <z> <p> <Y> <t> <t> : "𖼌"  U16F0C  # MIAO LETTER YI TTA
+<Multi_key> <z> <p> <Y> <t> <space> : "𖼍"  U16F0D  # MIAO LETTER YI TA
+<Multi_key> <z> <p> <Y> <n> <n> : "𖼒"  U16F12  # MIAO LETTER YI NNA
+<Multi_key> <z> <p> <Y> <k> : "𖼠"  U16F20  # MIAO LETTER YI KA
+<Multi_key> <z> <p> <Y> <t> <s> <h> : "𖼰"  U16F30  # MIAO LETTER YI TSHA
+<Multi_key> <z> <p> <Y> <d> <z> <h> : "𖼱"  U16F31  # MIAO LETTER YI DZHA
+<Multi_key> <z> <p> <Y> <t> <s> <space> : "𖼹"  U16F39  # MIAO LETTER YI TSA
+# Xiaohua Miao & Bai Yi (Q: what sounds do these make?)
+<Multi_key> <z> <p> <b> <r> <i> : "𖽅"  U16F45  # MIAO LETTER BRI
+<Multi_key> <z> <p> <s> <y> <i> : "𖽆"  U16F46  # MIAO LETTER SYI
+<Multi_key> <z> <p> <d> <z> <y> <i> : "𖽇"  U16F47  # MIAO LETTER DZYI
+<Multi_key> <z> <p> <t> <e> : "𖽈"  U16F48  # MIAO LETTER TE
+<Multi_key> <z> <p> <t> <s> <e> : "𖽉"  U16F49  # MIAO LETTER TSE
+<Multi_key> <z> <p> <r> <t> <e> : "𖽊"  U16F4A  # MIAO LETTER RTE
 
 <Multi_key> <z> <p> <underscore> <period> <Return> : "𖽏"  U16F4F  # MIAO SIGN CONSONANT MODIFIER BAR (NUKTA)
 <Multi_key> <z> <p> <C> : "𖽐"  U16F50  # MIAO LETTER NASALIZATION
 <Multi_key> <z> <p> <apostrophe> <Return> : "𖽑"  U16F51  # MIAO SIGN ASPIRATION
+<Multi_key> <z> <p> <less> <apostrophe> <Return> : "𖽒"  U16F52  # MIAO SIGN REFORMED VOICING
+<Multi_key> <z> <p> <comma> <Return> : "𖽓"  U16F53  # MIAO SIGN REFORMED ASPIRATION
 
 <Multi_key> <z> <p> <a> <Return> : "𖽔"  U16F54  # MIAO VOWEL SIGN A
 <Multi_key> <z> <p> <a> <a> <Return> : "𖽕"  U16F55  # MIAO VOWEL SIGN AA
@@ -21045,7 +21175,9 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <a> <e> <Return> : "𖽳"  U16F73  # MIAO VOWEL SIGN AE
 <Multi_key> <z> <p> <a> <e> <e> <Return> : "𖽴"  U16F74  # MIAO VOWEL SIGN AEE
 <Multi_key> <z> <p> <e> <r> <r> <Return> : "𖽵"  U16F75  # MIAO VOWEL SIGN ERR
+<Multi_key> <z> <p> <parenright> <e> <r> <r> <Return> : "𖽶"  U16F76  # MIAO VOWEL SIGN ROUNDED ERR
 <Multi_key> <z> <p> <e> <r> <Return> : "𖽷"  U16F77  # MIAO VOWEL SIGN ER
+<Multi_key> <z> <p> <parenright> <e> <r> <Return> : "𖽸"  U16F78  # MIAO VOWEL SIGN ROUNDED ER
 <Multi_key> <z> <p> <a> <i> <Return> : "𖽹"  U16F79  # MIAO VOWEL SIGN AI
 <Multi_key> <z> <p> <e> <i> <Return> : "𖽺"  U16F7A  # MIAO VOWEL SIGN EI
 <Multi_key> <z> <p> <a> <u> <Return> : "𖽻"  U16F7B  # MIAO VOWEL SIGN AU
