@@ -21,7 +21,7 @@ KEYWORD_TO_CHAR: dict[str, str] = {}
 KEYSYMS: set[str] = set()
 
 
-def read_keysms(file: Path | None = None) -> None:
+def read_keysyms(file: Path | None = None) -> None:
     """Populate keysym mappings. If the file is unspecified, then
     default to then value of $KEYSYMDEF, then to KEYSYM_DEF_DEFAULT_PATH,
     then to the packaged resource."""
@@ -211,6 +211,8 @@ def add(
     comment: str | None = None,
 ):
     """Utility function to simplify calling add independently."""
+    if not KEYSYMS:
+        read_keysyms()
     add_fn(
         args=argparse.Namespace(
             value=value,
@@ -528,7 +530,7 @@ def main() -> None:
     if args.modifier_key == ANY_KEY:
         args.modifier_key = None
 
-    read_keysms(args.keysymdef)
+    read_keysyms(args.keysymdef)
     args.func(args)
 
 
