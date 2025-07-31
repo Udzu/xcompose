@@ -9220,7 +9220,7 @@ include "%L"
 <Multi_key> <b> <M> <M> <m>                  : "ꯃ"  UABC3  # MEETEI MAYEK LETTER MIT
 <Multi_key> <b> <M> <M> <p> <space>          : "ꯄ"  UABC4  # MEETEI MAYEK LETTER PA
 <Multi_key> <b> <M> <M> <n>                  : "ꯅ"  UABC5  # MEETEI MAYEK LETTER NA
-<Multi_key> <b> <M> <M> <c>                  : "ꯆ"  UABC6  # MEETEI MAYEK LETTER CHIL
+<Multi_key> <b> <M> <M> <c> <space>          : "ꯆ"  UABC6  # MEETEI MAYEK LETTER CHIL
 <Multi_key> <b> <M> <M> <t> <space>          : "ꯇ"  UABC7  # MEETEI MAYEK LETTER TIL
 <Multi_key> <b> <M> <M> <k> <h>              : "ꯈ"  UABC8  # MEETEI MAYEK LETTER KHOU
 <Multi_key> <b> <M> <M> <semicolon> <n>      : "ꯉ"  UABC9  # MEETEI MAYEK LETTER NGOU
@@ -9241,6 +9241,15 @@ include "%L"
 <Multi_key> <b> <M> <M> <g> <h>              : "ꯘ"  UABD8  # MEETEI MAYEK LETTER GHOU
 <Multi_key> <b> <M> <M> <d> <h>              : "ꯙ"  UABD9  # MEETEI MAYEK LETTER DHOU
 <Multi_key> <b> <M> <M> <b> <h>              : "ꯚ"  UABDA  # MEETEI MAYEK LETTER BHAM
+<Multi_key> <b> <M> <M> <c> <h>              : "ꫢ"  UAAE2  # MEETEI MAYEK LETTER CHA
+<Multi_key> <b> <M> <M> <asciitilde> <n>     : "ꫣ"  UAAE3  # MEETEI MAYEK LETTER NYA
+<Multi_key> <b> <M> <M> <period> <t> <space> : "ꫤ"  UAAE4  # MEETEI MAYEK LETTER TTA
+<Multi_key> <b> <M> <M> <period> <t> <h>     : "ꫥ"  UAAE5  # MEETEI MAYEK LETTER TTHA
+<Multi_key> <b> <M> <M> <period> <d> <space> : "ꫦ"  UAAE6  # MEETEI MAYEK LETTER DDA
+<Multi_key> <b> <M> <M> <period> <d> <h>     : "ꫧ"  UAAE7  # MEETEI MAYEK LETTER DDHA
+<Multi_key> <b> <M> <M> <period> <n>         : "ꫨ"  UAAE8  # MEETEI MAYEK LETTER NNA
+<Multi_key> <b> <M> <M> <semicolon> <s>      : "ꫩ"  UAAE9  # MEETEI MAYEK LETTER SHA
+<Multi_key> <b> <M> <M> <period> <s>         : "ꫪ"  UAAEA  # MEETEI MAYEK LETTER SSA
 
 # Final letters
 
@@ -9253,6 +9262,11 @@ include "%L"
 <Multi_key> <b> <M> <M> <greater> <semicolon> <n> : "ꯡ"  UABE1  # MEETEI MAYEK LETTER NGOU LONSUM
 <Multi_key> <b> <M> <M> <greater> <i>        : "ꯢ"  UABE2  # MEETEI MAYEK LETTER I LONSUM
 
+# Independent vowels
+
+<Multi_key> <b> <M> <M> <e> <e> <space>      : "ꫠ"  UAAE0  # MEETEI MAYEK LETTER E
+<Multi_key> <b> <M> <M> <o> <o> <space>      : "ꫡ"  UAAE1  # MEETEI MAYEK LETTER O
+
 # Dependent vowels
 
 <Multi_key> <b> <M> <M> <o> <o> <Return>     : "ꯣ"  UABE3  # MEETEI MAYEK VOWEL SIGN ONAP
@@ -9263,12 +9277,27 @@ include "%L"
 <Multi_key> <b> <M> <M> <u> <Return>         : "ꯨ"  UABE8  # MEETEI MAYEK VOWEL SIGN UNAP
 <Multi_key> <b> <M> <M> <e> <i> <Return>     : "ꯩ"  UABE9  # MEETEI MAYEK VOWEL SIGN CHEINAP
 <Multi_key> <b> <M> <M> <comma> <Return>     : "ꯪ"  UABEA  # MEETEI MAYEK VOWEL SIGN NUNG
+<Multi_key> <b> <M> <M> <i> <i> <Return>     : "ꫫ"  UAAEB  # MEETEI MAYEK VOWEL SIGN II
+<Multi_key> <b> <M> <M> <u> <u> <Return>     : "ꫬ"  UAAEC  # MEETEI MAYEK VOWEL SIGN UU
+<Multi_key> <b> <M> <M> <a> <a> <i> <Return> : "ꫭ"  UAAED  # MEETEI MAYEK VOWEL SIGN AAI
+<Multi_key> <b> <M> <M> <a> <u> <Return>     : "ꫮ"  UAAEE  # MEETEI MAYEK VOWEL SIGN AU
+<Multi_key> <b> <M> <M> <a> <a> <u> <Return> : "ꫯ"  UAAEF  # MEETEI MAYEK VOWEL SIGN AAU
+<Multi_key> <b> <M> <M> <colon> <Return>     : "ꫵ"  UAAF5  # MEETEI MAYEK VOWEL SIGN VISARGA
+
+# Other signs
+
+<Multi_key> <b> <M> <M> <underscore> <plus> <Return> : "꫶"  UAAF6  # MEETEI MAYEK VIRAMA
+<Multi_key> <b> <M> <M> <o> <m>              : "ꫲ"  UAAF2  # MEETEI MAYEK ANJI
 
 # Punctuation
 
+<Multi_key> <b> <M> <M> <bar>                : "꫰"  UAAF0  # MEETEI MAYEK CHEIKHAN
 <Multi_key> <b> <M> <M> <2> <bar>            : "꯫"  UABEB  # MEETEI MAYEK CHEIKHEI
 <Multi_key> <b> <M> <M> <period> <Return>    : "꯬"  UABEC  # MEETEI MAYEK LUM IYEK
 <Multi_key> <b> <M> <M> <underscore> <Return> : "꯭"  UABED  # MEETEI MAYEK APUN IYEK
+<Multi_key> <b> <M> <M> <question>           : "꫱"  UAAF1  # MEETEI MAYEK AHANG KHUDAM
+<Multi_key> <b> <M> <M> <quotedbl> <s>       : "ꫳ"  UAAF3  # MEETEI MAYEK SYLLABLE REPETITION MARK
+<Multi_key> <b> <M> <M> <quotedbl> <w>       : "ꫴ"  UAAF4  # MEETEI MAYEK WORD REPETITION MARK
 
 # Numerals
 
@@ -15864,6 +15893,10 @@ include "%L"
 <Multi_key> <h> <s> <r> : "ࠓ" U0813   # SAMARITAN LETTER RISH
 <Multi_key> <h> <s> <S> : "ࠔ" U0814   # SAMARITAN LETTER SHAN
 <Multi_key> <h> <s> <t> : "ࠕ" U0815   # SAMARITAN LETTER TAAF
+<Multi_key> <h> <s> <asciicircum> <grave> <Return> : "ࠖ"  U0816  # SAMARITAN MARK IN
+<Multi_key> <h> <s> <asciicircum> <o> <Return> : "ࠖ"  U0816  # SAMARITAN MARK IN
+<Multi_key> <h> <s> <asciicircum> <grave> <apostrophe> <Return> : "ࠗ"  U0817  # SAMARITAN MARK IN-ALAF
+<Multi_key> <h> <s> <asciicircum> <o> <a> <Return> : "ࠗ"  U0817  # SAMARITAN MARK IN-ALAF
 
 <Multi_key> <h> <s> <A> <Return> : "ࠣ" U0823   # SAMARITAN VOWEL SIGN A
 <Multi_key> <h> <s> <A> <A> <Return> : "ࠠ" U0820   # SAMARITAN VOWEL SIGN AA
@@ -15882,7 +15915,28 @@ include "%L"
 <Multi_key> <h> <s> <asciicircum> <A> <A> <colon> <Return> : "ࠞ" U081E   # SAMARITAN VOWEL SIGN OVERLONG AA
 <Multi_key> <h> <s> <asciicircum> <A> <colon> <Return> : "ࠡ" U0821   # SAMARITAN VOWEL SIGN OVERLONG A
 <Multi_key> <h> <s> <0> <Return> : "ࠬ" U082C   # SAMARITAN VOWEL SIGN SUKUN
+<Multi_key> <h> <s> <minus> <Return> : "࠘"  U0818  # SAMARITAN MARK OCCLUSION
 <Multi_key> <h> <s> <asterisk> <Return> : "࠙" U0819   # SAMARITAN MARK DAGESH
+<Multi_key> <h> <s> <greater> <Return> : "࠙" U0819   # SAMARITAN MARK DAGESH
+<Multi_key> <h> <s> <asciitilde> <space> : "ࠚ"  U081A  # SAMARITAN MODIFIER LETTER EPENTHETIC YUT
+<Multi_key> <h> <s> <asciitilde> <Return> : "ࠛ"  U081B  # SAMARITAN MARK EPENTHETIC YUT
+<Multi_key> <h> <s> <period> <Return> : "࠭"  U082D  # SAMARITAN MARK NEQUDAA
+
+<Multi_key> <h> <s> <semicolon> <period> <space> : "࠰"  U0830  # SAMARITAN PUNCTUATION NEQUDAA
+<Multi_key> <h> <s> <semicolon> <colon> : "࠱"  U0831  # SAMARITAN PUNCTUATION AFSAAQ
+<Multi_key> <h> <s> <semicolon> <quotedbl> <space> : "࠲"  U0832  # SAMARITAN PUNCTUATION ANGED
+<Multi_key> <h> <s> <semicolon> <less> <period> : "࠳"  U0833  # SAMARITAN PUNCTUATION BAU
+<Multi_key> <h> <s> <semicolon> <less> <colon> : "࠴"  U0834  # SAMARITAN PUNCTUATION ATMAAU
+<Multi_key> <h> <s> <semicolon> <quotedbl> <less> : "࠵"  U0835  # SAMARITAN PUNCTUATION SHIYYAALAA
+<Multi_key> <h> <s> <semicolon> <period> <less> : "࠶"  U0836  # SAMARITAN ABBREVIATION MARK
+<Multi_key> <h> <s> <semicolon> <minus> <less> : "࠷"  U0837  # SAMARITAN PUNCTUATION MELODIC QITSA
+<Multi_key> <h> <s> <semicolon> <minus> <period> : "࠸"  U0838  # SAMARITAN PUNCTUATION ZIQAA
+<Multi_key> <h> <s> <semicolon> <minus> <colon> : "࠹"  U0839  # SAMARITAN PUNCTUATION QITSA
+<Multi_key> <h> <s> <semicolon> <equal> <colon> : "࠺"  U083A  # SAMARITAN PUNCTUATION ZAEF
+<Multi_key> <h> <s> <semicolon> <bar> <colon> : "࠻"  U083B  # SAMARITAN PUNCTUATION TURU
+<Multi_key> <h> <s> <semicolon> <slash> <space> : "࠼"  U083C  # SAMARITAN PUNCTUATION ARKAANU
+<Multi_key> <h> <s> <semicolon> <slash> <period> <quotedbl> : "࠽"  U083D  # SAMARITAN PUNCTUATION SOF MASHFAAT
+<Multi_key> <h> <s> <semicolon> <o> : "࠾"  U083E  # SAMARITAN PUNCTUATION ANNAAU
 
 # (U = Ugaritic)
 
@@ -17973,31 +18027,51 @@ include "HangulSyllables"
 # (j = Javanese)
 
 <Multi_key> <K> <j> <a> <space>          : "ꦄ"  UA984  # JAVANESE LETTER A
+<Multi_key> <K> <j> <2> <i>              : "ꦅ"  UA985  # JAVANESE LETTER I KAWI
 <Multi_key> <K> <j> <i> <space>          : "ꦆ"  UA986  # JAVANESE LETTER I
 <Multi_key> <K> <j> <i> <i> <space>      : "ꦇ"  UA987  # JAVANESE LETTER II
 <Multi_key> <K> <j> <u> <space>          : "ꦈ"  UA988  # JAVANESE LETTER U
+<Multi_key> <K> <j> <comma> <r> <space>  : "ꦉ"  UA989  # JAVANESE LETTER PA CEREK
+<Multi_key> <K> <j> <comma> <l> <space>  : "ꦊ"  UA98A  # JAVANESE LETTER NGA LELET
+<Multi_key> <K> <j> <comma> <l> <l>      : "ꦋ"  UA98B  # JAVANESE LETTER NGA LELET RASWADI
 <Multi_key> <K> <j> <e> <e> <space>      : "ꦌ"  UA98C  # JAVANESE LETTER E
 <Multi_key> <K> <j> <a> <i> <space>      : "ꦍ"  UA98D  # JAVANESE LETTER AI
 <Multi_key> <K> <j> <o> <o> <space>      : "ꦎ"  UA98E  # JAVANESE LETTER O
-<Multi_key> <K> <j> <k>                  : "ꦏ"  UA98F  # JAVANESE LETTER KA
-<Multi_key> <K> <j> <g>                  : "ꦒ"  UA992  # JAVANESE LETTER GA
+<Multi_key> <K> <j> <k> <space>          : "ꦏ"  UA98F  # JAVANESE LETTER KA
+<Multi_key> <K> <j> <q>                  : "ꦐ"  UA990  # JAVANESE LETTER KA SASAK
+<Multi_key> <K> <j> <k> <h>              : "ꦑ"  UA991  # JAVANESE LETTER KA MURDA
+<Multi_key> <K> <j> <g> <space>          : "ꦒ"  UA992  # JAVANESE LETTER GA
+<Multi_key> <K> <j> <g> <h>              : "ꦓ"  UA993  # JAVANESE LETTER GA MURDA
 <Multi_key> <K> <j> <semicolon> <n>      : "ꦔ"  UA994  # JAVANESE LETTER NGA
-<Multi_key> <K> <j> <c>                  : "ꦕ"  UA995  # JAVANESE LETTER CA
-<Multi_key> <K> <j> <j>                  : "ꦗ"  UA997  # JAVANESE LETTER JA
+<Multi_key> <K> <j> <c> <space>          : "ꦕ"  UA995  # JAVANESE LETTER CA
+<Multi_key> <K> <j> <c> <h>              : "ꦖ"  UA996  # JAVANESE LETTER CA MURDA
+<Multi_key> <K> <j> <j> <space>          : "ꦗ"  UA997  # JAVANESE LETTER JA
 <Multi_key> <K> <j> <asciitilde> <n>     : "ꦚ"  UA99A  # JAVANESE LETTER NYA
-<Multi_key> <K> <j> <period> <t>         : "ꦛ"  UA99B  # JAVANESE LETTER TTA
-<Multi_key> <K> <j> <period> <d>         : "ꦝ"  UA99D  # JAVANESE LETTER DDA
-<Multi_key> <K> <j> <t>                  : "ꦠ"  UA9A0  # JAVANESE LETTER TA
-<Multi_key> <K> <j> <d>                  : "ꦢ"  UA9A2  # JAVANESE LETTER DA
+<Multi_key> <K> <j> <j> <asciitilde> <n> : "ꦘ"  UA998  # JAVANESE LETTER NYA MURDA
+<Multi_key> <K> <j> <j> <h>              : "ꦙ"  UA999  # JAVANESE LETTER JA MAHAPRANA
+<Multi_key> <K> <j> <period> <t> <space> : "ꦛ"  UA99B  # JAVANESE LETTER TTA
+<Multi_key> <K> <j> <period> <t> <h>     : "ꦜ"  UA99C  # JAVANESE LETTER TTA MAHAPRANA
+<Multi_key> <K> <j> <period> <d> <space> : "ꦝ"  UA99D  # JAVANESE LETTER DDA
+<Multi_key> <K> <j> <period> <d> <h>     : "ꦞ"  UA99E  # JAVANESE LETTER DDA MAHAPRANA
+<Multi_key> <K> <j> <period> <n>         : "ꦟ"  UA99F  # JAVANESE LETTER NA MURDA
+<Multi_key> <K> <j> <t> <space>          : "ꦠ"  UA9A0  # JAVANESE LETTER TA
+<Multi_key> <K> <j> <t> <h>              : "ꦡ"  UA9A1  # JAVANESE LETTER TA MURDA
+<Multi_key> <K> <j> <d> <space>          : "ꦢ"  UA9A2  # JAVANESE LETTER DA
+<Multi_key> <K> <j> <d> <h>              : "ꦣ"  UA9A3  # JAVANESE LETTER DA MAHAPRANA
 <Multi_key> <K> <j> <n>                  : "ꦤ"  UA9A4  # JAVANESE LETTER NA
-<Multi_key> <K> <j> <p>                  : "ꦥ"  UA9A5  # JAVANESE LETTER PA
-<Multi_key> <K> <j> <b>                  : "ꦧ"  UA9A7  # JAVANESE LETTER BA
+<Multi_key> <K> <j> <p> <space>          : "ꦥ"  UA9A5  # JAVANESE LETTER PA
+<Multi_key> <K> <j> <p> <h>              : "ꦦ"  UA9A6  # JAVANESE LETTER PA MURDA
+<Multi_key> <K> <j> <b> <space>          : "ꦧ"  UA9A7  # JAVANESE LETTER BA
+<Multi_key> <K> <j> <b> <h>              : "ꦨ"  UA9A8  # JAVANESE LETTER BA MURDA
 <Multi_key> <K> <j> <m>                  : "ꦩ"  UA9A9  # JAVANESE LETTER MA
 <Multi_key> <K> <j> <y> <space>          : "ꦪ"  UA9AA  # JAVANESE LETTER YA
 <Multi_key> <K> <j> <r> <space>          : "ꦫ"  UA9AB  # JAVANESE LETTER RA
+<Multi_key> <K> <j> <2> <r>              : "ꦬ"  UA9AC  # JAVANESE LETTER RA AGUNG
 <Multi_key> <K> <j> <l>                  : "ꦭ"  UA9AD  # JAVANESE LETTER LA
 <Multi_key> <K> <j> <w>                  : "ꦮ"  UA9AE  # JAVANESE LETTER WA
-<Multi_key> <K> <j> <s>                  : "ꦱ"  UA9B1  # JAVANESE LETTER SA
+<Multi_key> <K> <j> <s> <space>          : "ꦱ"  UA9B1  # JAVANESE LETTER SA
+<Multi_key> <K> <j> <s> <h>              : "ꦯ"  UA9AF  # JAVANESE LETTER SA MURDA
+<Multi_key> <K> <j> <period> <s>         : "ꦰ"  UA9B0  # JAVANESE LETTER SA MAHAPRANA
 <Multi_key> <K> <j> <h>                  : "ꦲ"  UA9B2  # JAVANESE LETTER HA
 
 <Multi_key> <K> <j> <y> <Return>         : "ꦾ"  UA9BE  # JAVANESE CONSONANT SIGN PENGKAL
@@ -18026,6 +18100,7 @@ include "HangulSyllables"
 <Multi_key> <K> <j> <at> <underscore>    : "꧃"  UA9C3  # JAVANESE PADA ANDAP
 <Multi_key> <K> <j> <at> <minus>         : "꧄"  UA9C4  # JAVANESE PADA MADYA
 <Multi_key> <K> <j> <at> <asciicircum>   : "꧅"  UA9C5  # JAVANESE PADA LUHUR
+<Multi_key> <K> <j> <O>                  : "꧆"  UA9C6  # JAVANESE PADA WINDU
 <Multi_key> <K> <j> <colon> <space>      : "꧇"  UA9C7  # JAVANESE PADA PANGKAT
 <Multi_key> <K> <j> <comma> <space>      : "꧈"  UA9C8  # JAVANESE PADA LINGSA
 <Multi_key> <K> <j> <period> <space>     : "꧉"  UA9C9  # JAVANESE PADA LUNGSI
@@ -18045,6 +18120,9 @@ include "HangulSyllables"
 <Multi_key> <K> <j> <numbersign> <7>     : "꧗"  UA9D7  # JAVANESE DIGIT SEVEN
 <Multi_key> <K> <j> <numbersign> <8>     : "꧘"  UA9D8  # JAVANESE DIGIT EIGHT
 <Multi_key> <K> <j> <numbersign> <9>     : "꧙"  UA9D9  # JAVANESE DIGIT NINE
+
+<Multi_key> <K> <j> <asciitilde> <t>     : "꧞"  UA9DE  # JAVANESE PADA TIRTA TUMETES
+<Multi_key> <K> <j> <asciitilde> <i>     : "꧟"  UA9DF  # JAVANESE PADA ISEN-ISEN
 
 # (m = Makasar)
 
@@ -19008,7 +19086,7 @@ include "HangulSyllables"
 #    hand shape: a(=angle), c(=circle), C(=cup), f(=fist), F(=flat), h(=hinge), H(=hook), o(=oval), u=(curlicue), w(=claw)
 #        finger: 1(=thumb), 2(=index), 3(=middle), 4(=ring), 5(=little)
 #  finger shape: as hand + ∅(=up), b(=bent), d(=diagonal), f(=forward), r(=raised knuckles),
-#                          _(=under), ^(=over), >(=between/touching), v(=down), x(=no)
+#                          _(=under), ^(=over), >(=between/touching), v(=down), x(=no), )(=curved)
 #   joint shape: ∅(=spread), j(=conjoined), x(=crossed)
 #      modifier: l(=large), o(=open), s=(small)
 
@@ -19107,7 +19185,7 @@ include "HangulSyllables"
 <Multi_key> <S> <h> <F> <1> <2> <h> <3> <h> <4> <h> <5> <h> : "𝡘"  U1D858  # SIGNWRITING HAND-FLAT FIVE FINGERS SPREAD HINGED THUMB SIDE
 <Multi_key> <S> <h> <F> <1> <x> <2> <h> <3> <h> <4> <h> <5> <h> : "𝡙"  U1D859  # SIGNWRITING HAND-FLAT FIVE FINGERS SPREAD HINGED NO THUMB
 <Multi_key> <S> <h> <F> <space> : "𝡚"  U1D85A  # SIGNWRITING HAND-FLAT
-# <Multi_key> <S> <h> <F> : "𝡛"  U1D85B  # SIGNWRITING HAND-FLAT BETWEEN PALM FACINGS
+<Multi_key> <S> <h> <F> <p> : "𝡛"  U1D85B  # SIGNWRITING HAND-FLAT BETWEEN PALM FACINGS
 <Multi_key> <S> <h> <F> <h> <space> : "𝡜"  U1D85C  # SIGNWRITING HAND-FLAT HEEL
 <Multi_key> <S> <h> <F> <1> <space> : "𝡝"  U1D85D  # SIGNWRITING HAND-FLAT THUMB SIDE
 <Multi_key> <S> <h> <F> <h> <1> <space> : "𝡞"  U1D85E  # SIGNWRITING HAND-FLAT HEEL THUMB SIDE
@@ -19159,9 +19237,9 @@ include "HangulSyllables"
 <Multi_key> <S> <h> <f> <2> <b> <3> <b> <4> <b> : "𝢋"  U1D88B  # SIGNWRITING HAND-FIST INDEX MIDDLE RING BENT
 <Multi_key> <S> <h> <f> <2> <3> <4> <j> : "𝢌"  U1D88C  # SIGNWRITING HAND-FIST INDEX MIDDLE RING CONJOINED
 <Multi_key> <S> <h> <h> <2> <3> <4> <j> : "𝢍"  U1D88D  # SIGNWRITING HAND-HINGE INDEX MIDDLE RING CONJOINED
-<Multi_key> <S> <h> <f> <1> <2> <3> <4> : "𝢎"  U1D88E  # SIGNWRITING HAND-FIST LITTLE DOWN
-# <Multi_key> <S> <h> <f> : "𝢏"  U1D88F  # SIGNWRITING HAND-FIST LITTLE DOWN RIPPLE STRAIGHT
-# <Multi_key> <S> <h> <f> : "𝢐"  U1D890  # SIGNWRITING HAND-FIST LITTLE DOWN RIPPLE CURVED
+<Multi_key> <S> <h> <f> <1> <2> <3> <4> <space> : "𝢎"  U1D88E  # SIGNWRITING HAND-FIST LITTLE DOWN
+<Multi_key> <S> <h> <f> <1> <2> <3> <4> <r> : "𝢏"  U1D88F  # SIGNWRITING HAND-FIST LITTLE DOWN RIPPLE STRAIGHT
+<Multi_key> <S> <h> <f> <1> <2> <3> <4> <parenright> : "𝢐"  U1D890  # SIGNWRITING HAND-FIST LITTLE DOWN RIPPLE CURVED
 <Multi_key> <S> <h> <1> <c> <2> <c> <3> <c> <4> <c> : "𝢑"  U1D891  # SIGNWRITING HAND-FIST LITTLE DOWN OTHERS CIRCLED
 <Multi_key> <S> <h> <f> <5> <space> : "𝢒"  U1D892  # SIGNWRITING HAND-FIST LITTLE UP
 <Multi_key> <S> <h> <f> <1> <underscore> <5> : "𝢓"  U1D893  # SIGNWRITING HAND-FIST THUMB UNDER LITTLE UP
@@ -19252,9 +19330,9 @@ include "HangulSyllables"
 <Multi_key> <S> <h> <f> <1> <f> <2> <b> : "𝣥"  U1D8E5  # SIGNWRITING HAND-FIST INDEX THUMB FORWARD INDEX BENT
 <Multi_key> <S> <h> <f> <1> <2> <H> : "𝣦"  U1D8E6  # SIGNWRITING HAND-FIST INDEX THUMB HOOK
 <Multi_key> <S> <h> <f> <1> <2> <u> : "𝣧"  U1D8E7  # SIGNWRITING HAND-FIST INDEX THUMB CURLICUE
-# <Multi_key> <S> <h> <f> <1> <2> : "𝣨"  U1D8E8  # SIGNWRITING HAND-FIST INDEX THUMB CURVE THUMB INSIDE
-# <Multi_key> <S> <h> <w> <1> <2> : "𝣩"  U1D8E9  # SIGNWRITING HAND-CLAW INDEX THUMB CURVE THUMB INSIDE
-# <Multi_key> <S> <h> <f> <1> <2> : "𝣪"  U1D8EA  # SIGNWRITING HAND-FIST INDEX THUMB CURVE THUMB UNDER
+<Multi_key> <S> <h> <f> <1> <parenright> <2> : "𝣨"  U1D8E8  # SIGNWRITING HAND-FIST INDEX THUMB CURVE THUMB INSIDE
+<Multi_key> <S> <h> <w> <1> <parenright> <2> : "𝣩"  U1D8E9  # SIGNWRITING HAND-CLAW INDEX THUMB CURVE THUMB INSIDE
+<Multi_key> <S> <h> <f> <1> <parenright> <underscore> <2> : "𝣪"  U1D8EA  # SIGNWRITING HAND-FIST INDEX THUMB CURVE THUMB UNDER
 <Multi_key> <S> <h> <f> <1> <2> <c>  : "𝣫"  U1D8EB  # SIGNWRITING HAND-FIST INDEX THUMB CIRCLE
 <Multi_key> <S> <h> <C> <1> <2> <space> : "𝣬"  U1D8EC  # SIGNWRITING HAND-CUP INDEX THUMB
 <Multi_key> <S> <h> <C> <o> <1> <2> <space> : "𝣭"  U1D8ED  # SIGNWRITING HAND-CUP INDEX THUMB OPEN
