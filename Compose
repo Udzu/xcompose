@@ -14006,6 +14006,13 @@ include "%L"
 <Multi_key> <g> <x> <o>     : "ω"  U03C9   # GREEK SMALL LETTER OMEGA
 
 <Multi_key> <g> <semicolon> <question>   : ";"  U037E   # GREEK QUESTION MARK
+<Multi_key> <g> <semicolon> <semicolon>  : "·"  U0387  # GREEK ANO TELEIA
+<Multi_key> <g> <semicolon> <period>     : "·"  U0387  # GREEK ANO TELEIA
+<Multi_key> <g> <semicolon> <K> : "Ϗ"  U03CF  # GREEK CAPITAL KAI SYMBOL
+<Multi_key> <g> <semicolon> <k> : "ϗ"  U03D7  # GREEK KAI SYMBOL
+<Multi_key> <g> <semicolon> <S> : "𐆌"  U1018C  # GREEK SINUSOID SIGN
+<Multi_key> <g> <semicolon> <I> : "𐆍"  U1018D  # GREEK INDICTION SIGN
+<Multi_key> <g> <semicolon> <N> : "𐆎"  U1018E  # NOMISMA SIGN
 
 <Multi_key> <g> <x> <H>     : "Ͱ"  U0370  # GREEK CAPITAL LETTER HETA
 <Multi_key> <g> <x> <h>     : "ͱ"  U0371  # GREEK SMALL LETTER HETA
@@ -14017,12 +14024,17 @@ include "%L"
 <Multi_key> <g> <x> <t> <s> : "ͳ"  U0373   # GREEK SMALL LETTER ARCHAIC SAMPI
 <Multi_key> <g> <c> <W>     : "Ϝ"  U03DC   # GREEK LETTER DIGAMMA
 <Multi_key> <g> <c> <w>     : "ϝ"  U03DD   # GREEK SMALL LETTER DIGAMMA
+<Multi_key> <g> <x> <P> <W> : "Ͷ"  U0376  # GREEK CAPITAL LETTER PAMPHYLIAN DIGAMMA
+<Multi_key> <g> <x> <P> <w> : "ͷ"  U0377  # GREEK SMALL LETTER PAMPHYLIAN DIGAMMA
 
 <Multi_key> <g> <c> <J>     : "Ϳ"  U037F   # GREEK CAPITAL LETTER YOT
 <Multi_key> <g> <c> <j>     : "ϳ"  U03F3   # GREEK LETTER YOT
 <Multi_key> <g> <x> <S> <H> : "Ϸ"  U03F7   # GREEK CAPITAL LETTER SHO
 <Multi_key> <g> <x> <s> <h> : "ϸ"  U03F8   # GREEK SMALL LETTER SHO
 <Multi_key> <g> <x> <T> <R> : "𐆠"  U101A0  # GREEK SYMBOL TAU RHO
+
+<Multi_key> <g> <numbersign> <apostrophe> : "ʹ"  U0374  # GREEK NUMERAL SIGN
+<Multi_key> <g> <numbersign> <comma>      : "͵"  U0375  # GREEK LOWER NUMERAL SIGN
 
 <Multi_key> <g> <numbersign> <W> : "Ϛ"  U03DA  # GREEK LETTER STIGMA
 <Multi_key> <g> <numbersign> <w> : "ϛ"  U03DB   # GREEK SMALL LETTER STIGMA
@@ -14031,11 +14043,6 @@ include "%L"
 <Multi_key> <g> <numbersign> <q> : "ϟ"  U03DF   # GREEK SMALL LETTER KOPPA
 <Multi_key> <g> <numbersign> <S> : "Ϡ"  U03E0  # GREEK LETTER SAMPI
 <Multi_key> <g> <numbersign> <s> : "ϡ"  U03E1   # GREEK SMALL LETTER SAMPI
-
-<Multi_key> <g> <numbersign> <1> <slash> <2> : "𐅵"  U10175  # GREEK ONE HALF SIGN
-<Multi_key> <g> <numbersign> <2> <slash> <4> : "𐅶"  U10176  # GREEK ONE HALF SIGN ALTERNATE FORM
-<Multi_key> <g> <numbersign> <2> <slash> <3> : "𐅷"  U10177  # GREEK TWO THIRDS SIGN
-<Multi_key> <g> <numbersign> <3> <slash> <4> : "𐅸"  U10178  # GREEK THREE QUARTERS SIGN
 
 # diacritics
 
@@ -14895,6 +14902,14 @@ include "%L"
 <Multi_key> <percent> <g> <at> <b> : "ϐ" U03D0   # GREEK BETA SYMBOL
 <Multi_key> <percent> <g> <at> <S> : "Ϲ"  U03F9  # GREEK CAPITAL LUNATE SIGMA SYMBOL
 <Multi_key> <percent> <g> <at> <s> : "ϲ" U03F2   # GREEK LUNATE SIGMA SYMBOL
+<Multi_key> <percent> <g> <at> <period> <S> : "Ͼ"  U03FE  # GREEK CAPITAL DOTTED LUNATE SIGMA SYMBOL
+<Multi_key> <percent> <g> <at> <period> <s> : "ͼ"  U037C  # GREEK SMALL DOTTED LUNATE SIGMA SYMBOL
+<Multi_key> <percent> <g> <at> <less> <S> : "Ͻ"  U03FD  # GREEK CAPITAL REVERSED LUNATE SIGMA SYMBOL
+<Multi_key> <percent> <g> <at> <less> <s> : "ͻ"  U037B  # GREEK SMALL REVERSED LUNATE SIGMA SYMBOL
+<Multi_key> <percent> <g> <at> <less> <period> <S> : "Ͽ"  U03FF  # GREEK CAPITAL REVERSED DOTTED LUNATE SIGMA SYMBOL
+<Multi_key> <percent> <g> <at> <less> <period> <s> : "ͽ"  U037D  # GREEK SMALL REVERSED DOTTED LUNATE SIGMA SYMBOL
+<Multi_key> <percent> <g> <at> <less> <e> : "϶"  U03F6  # GREEK REVERSED LUNATE EPSILON SYMBOL
+<Multi_key> <percent> <g> <at> <minus> <r> : "ϼ"  U03FC  # GREEK RHO WITH STROKE SYMBOL
 
 <Multi_key> <percent> <g> <asterisk> <A> : "𝚨" U1D6A8    # MATHEMATICAL BOLD CAPITAL ALPHA
 <Multi_key> <percent> <g> <asterisk> <B> : "𝚩" U1D6A9    # MATHEMATICAL BOLD CAPITAL BETA
@@ -26469,7 +26484,7 @@ include "Logograms"
 <Multi_key> <m> <e> <d> <i> <u> <m> : "🔉"  U1F509        # SPEAKER WITH ONE SOUND WAVE (MEDIUM)
 <Multi_key> <m> <i> <k> <e>         : "🎤"  U1F3A4        # MICROPHONE (MIKE) (🧑+ZWJ+🎤=🧑‍🎤)
 <Multi_key> <m> <p> <h> <o> <n> <e> : "📣"  U1F4E3        # CHEERING MEGAPHONE
-<Multi_key> <n> <o> <t> <e> <space> : "🎵" U1F3B5        # MUSICAL NOTE
+<Multi_key> <n> <o> <t> <e> <space> : "🎵"  U1F3B5        # MUSICAL NOTE
 <Multi_key> <n> <o> <t> <e> <s>     : "🎶"  U1F3B6        # MULTIPLE MUSICAL NOTES
 <Multi_key> <q> <u> <i> <e> <t>     : "🔈"  U1F508        # SPEAKER (QUIET)
 <Multi_key> <r> <a> <d> <i> <o>     : "📻"  U1F4FB        # RADIO
@@ -29172,6 +29187,239 @@ include "Logograms"
 <Multi_key> <numbersign> <M> <4> <8> : "𝇌"  U1D1CC  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-1
 <Multi_key> <numbersign> <M> <2> <4> : "𝇎"  U1D1CE  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-3
 
+# ancient greek notation
+
+<Multi_key> <numbersign> <G> <minus> <2> <Return> : "̅"  U0305   # COMBINING OVERLINE (DISEME) (unconfirmed)
+<Multi_key> <numbersign> <G> <minus> <3> <Return> : "𝉂"  U1D242  # COMBINING GREEK MUSICAL TRISEME
+<Multi_key> <numbersign> <G> <minus> <4> <Return> : "𝉃"  U1D243  # COMBINING GREEK MUSICAL TETRASEME
+<Multi_key> <numbersign> <G> <minus> <5> <Return> : "𝉄"  U1D244  # COMBINING GREEK MUSICAL PENTASEME
+<Multi_key> <numbersign> <G> <period> <Return>    : "̇"  U0307    # COMBINING DOT ABOVE (STIGME) (unconfirmed)
+<Multi_key> <numbersign> <G> <space>              : "𝉅"  U1D245  # GREEK MUSICAL LEIMMA
+
+# (by pitch)
+
+<Multi_key> <numbersign> <G> <v> <E>                                        : "𝈀"  U1D200  # GREEK VOCAL NOTATION SYMBOL-1
+<Multi_key> <numbersign> <G> <v> <numbersign> <E>                           : "𝈁"  U1D201  # GREEK VOCAL NOTATION SYMBOL-2
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <E>              : "𝈂"  U1D202  # GREEK VOCAL NOTATION SYMBOL-3
+<Multi_key> <numbersign> <G> <v> <F>                                        : "𝈃"  U1D203  # GREEK VOCAL NOTATION SYMBOL-4
+<Multi_key> <numbersign> <G> <v> <numbersign> <F>                           : "𝈄"  U1D204  # GREEK VOCAL NOTATION SYMBOL-5
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <F>              : "𝈅"  U1D205  # GREEK VOCAL NOTATION SYMBOL-6
+<Multi_key> <numbersign> <G> <v> <G>                                        : "𝈆"  U1D206  # GREEK VOCAL NOTATION SYMBOL-7
+<Multi_key> <numbersign> <G> <v> <numbersign> <G>                           : "𝈇"  U1D207  # GREEK VOCAL NOTATION SYMBOL-8
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <G>              : "𝈈"  U1D208  # GREEK VOCAL NOTATION SYMBOL-9
+<Multi_key> <numbersign> <G> <v> <A>                                        : "𝈉"  U1D209  # GREEK VOCAL NOTATION SYMBOL-10
+<Multi_key> <numbersign> <G> <v> <numbersign> <A>                           : "𝈊"  U1D20A  # GREEK VOCAL NOTATION SYMBOL-11
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <A>              : "𝈋"  U1D20B  # GREEK VOCAL NOTATION SYMBOL-12
+<Multi_key> <numbersign> <G> <v> <B>                                        : "𝈌"  U1D20C  # GREEK VOCAL NOTATION SYMBOL-13
+<Multi_key> <numbersign> <G> <v> <numbersign> <B>                           : "𝈍"  U1D20D  # GREEK VOCAL NOTATION SYMBOL-14
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <B>              : "𝈎"  U1D20E  # GREEK VOCAL NOTATION SYMBOL-15
+<Multi_key> <numbersign> <G> <v> <c>                                        : "𝈏"  U1D20F  # GREEK VOCAL NOTATION SYMBOL-16
+<Multi_key> <numbersign> <G> <v> <numbersign> <c>                           : "𝈐"  U1D210  # GREEK VOCAL NOTATION SYMBOL-17
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <c>              : "𝈑"  U1D211  # GREEK VOCAL NOTATION SYMBOL-18
+<Multi_key> <numbersign> <G> <v> <d>                                        : "𝈒"  U1D212  # GREEK VOCAL NOTATION SYMBOL-19
+<Multi_key> <numbersign> <G> <v> <numbersign> <d>                           : "𝈓"  U1D213  # GREEK VOCAL NOTATION SYMBOL-20
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <d>              : "𝈔"  U1D214  # GREEK VOCAL NOTATION SYMBOL-21
+<Multi_key> <numbersign> <G> <v> <e>                                        : "𝈕"  U1D215  # GREEK VOCAL NOTATION SYMBOL-22
+<Multi_key> <numbersign> <G> <v> <numbersign> <e>                           : "𝈖"  U1D216  # GREEK VOCAL NOTATION SYMBOL-23
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <e>              : "𝈗"  U1D217  # GREEK VOCAL NOTATION SYMBOL-24
+<Multi_key> <numbersign> <G> <v> <f>                                        : "Ω"  U03A9  # GREEK CAPITAL LETTER OMEGA (GREEK VOCAL NOTATION SYMBOL-25)
+<Multi_key> <numbersign> <G> <v> <numbersign> <f>                           : "Ψ"  U03A8  # GREEK CAPITAL LETTER PSI (GREEK VOCAL NOTATION SYMBOL-26)
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <f>              : "Χ"  U03A7  # GREEK CAPITAL LETTER CHI (GREEK VOCAL NOTATION SYMBOL-27)
+<Multi_key> <numbersign> <G> <v> <g>                                        : "Φ"  U03A6  # GREEK CAPITAL LETTER PHI (GREEK VOCAL NOTATION SYMBOL-28)
+<Multi_key> <numbersign> <G> <v> <numbersign> <g>                           : "Υ"  U03A5  # GREEK CAPITAL LETTER UPSILON (GREEK VOCAL NOTATION SYMBOL-29)
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <g>              : "Τ"  U03A4  # GREEK CAPITAL LETTER TAU (GREEK VOCAL NOTATION SYMBOL-30)
+<Multi_key> <numbersign> <G> <v> <a>                                        : "Ϲ"  U03F9  # GREEK CAPITAL LUNATE SIGMA SYMBOL (GREEK VOCAL NOTATION SYMBOL-31)
+<Multi_key> <numbersign> <G> <v> <numbersign> <a>                           : "Ρ"  U03A1  # GREEK CAPITAL LETTER RHO (GREEK VOCAL NOTATION SYMBOL-32)
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <a>              : "Π"  U03A0  # GREEK CAPITAL LETTER PI (GREEK VOCAL NOTATION SYMBOL-33)
+<Multi_key> <numbersign> <G> <v> <b>                                        : "Ο"  U039F  # GREEK CAPITAL LETTER OMICRON (GREEK VOCAL NOTATION SYMBOL-34)
+<Multi_key> <numbersign> <G> <v> <numbersign> <b>                           : "Ξ"  U039E  # GREEK CAPITAL LETTER XI (GREEK VOCAL NOTATION SYMBOL-35)
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <b>              : "Ν"  U039D  # GREEK CAPITAL LETTER NU (GREEK VOCAL NOTATION SYMBOL-36)
+<Multi_key> <numbersign> <G> <v> <apostrophe> <c>                           : "Μ"  U039C  # GREEK CAPITAL LETTER MU (GREEK VOCAL NOTATION SYMBOL-37)
+<Multi_key> <numbersign> <G> <v> <numbersign> <apostrophe> <c>              : "Λ"  U039B  # GREEK CAPITAL LETTER LAMDA (GREEK VOCAL NOTATION SYMBOL-38)
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <apostrophe> <c> : "Κ"  U039A  # GREEK CAPITAL LETTER KAPPA (GREEK VOCAL NOTATION SYMBOL-39)
+<Multi_key> <numbersign> <G> <v> <apostrophe> <d>                           : "Ι"  U0399  # GREEK CAPITAL LETTER IOTA (GREEK VOCAL NOTATION SYMBOL-40)
+<Multi_key> <numbersign> <G> <v> <numbersign> <apostrophe> <d>              : "Θ"  U0398  # GREEK CAPITAL LETTER THETA (GREEK VOCAL NOTATION SYMBOL-41)
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <apostrophe> <d> : "Η"  U0397  # GREEK CAPITAL LETTER ETA (GREEK VOCAL NOTATION SYMBOL-42)
+<Multi_key> <numbersign> <G> <v> <apostrophe> <e>                           : "Ζ"  U0396  # GREEK CAPITAL LETTER ZETA (GREEK VOCAL NOTATION SYMBOL-43)
+<Multi_key> <numbersign> <G> <v> <numbersign> <apostrophe> <e>              : "Ε"  U0395  # GREEK CAPITAL LETTER EPSILON (GREEK VOCAL NOTATION SYMBOL-44)
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <apostrophe> <e> : "Δ"  U0394  # GREEK CAPITAL LETTER DELTA (GREEK VOCAL NOTATION SYMBOL-45)
+<Multi_key> <numbersign> <G> <v> <apostrophe> <f>                           : "Γ"  U0393  # GREEK CAPITAL LETTER GAMMA (GREEK VOCAL NOTATION SYMBOL-46)
+<Multi_key> <numbersign> <G> <v> <numbersign> <apostrophe> <f>              : "Β"  U0392  # GREEK CAPITAL LETTER BETA (GREEK VOCAL NOTATION SYMBOL-47)
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <apostrophe> <f> : "Α"  U0391  # GREEK CAPITAL LETTER ALPHA (GREEK VOCAL NOTATION SYMBOL-48)
+<Multi_key> <numbersign> <G> <v> <apostrophe> <g>                           : "℧"  U2127  # INVERTED OHM SIGN (GREEK VOCAL NOTATION SYMBOL-49)
+<Multi_key> <numbersign> <G> <v> <numbersign> <apostrophe> <g>              : "𝈘"  U1D218  # GREEK VOCAL NOTATION SYMBOL-50
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <apostrophe> <g> : "𝈙"  U1D219  # GREEK VOCAL NOTATION SYMBOL-51
+<Multi_key> <numbersign> <G> <v> <apostrophe> <a>                           : "𝈚"  U1D21A  # GREEK VOCAL NOTATION SYMBOL-52
+<Multi_key> <numbersign> <G> <v> <numbersign> <apostrophe> <a>              : "𝈛"  U1D21B  # GREEK VOCAL NOTATION SYMBOL-53
+<Multi_key> <numbersign> <G> <v> <numbersign> <numbersign> <apostrophe> <a> : "𝈜"  U1D21C  # GREEK VOCAL NOTATION SYMBOL-54
+
+<Multi_key> <numbersign> <G> <i> <E>                                        : "𝈝"  U1D21D  # GREEK INSTRUMENTAL NOTATION SYMBOL-1
+<Multi_key> <numbersign> <G> <i> <numbersign> <E>                           : "𝈞"  U1D21E  # GREEK INSTRUMENTAL NOTATION SYMBOL-2
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <E>              : "𝈂"  U1D202  # GREEK VOCAL NOTATION SYMBOL-3 (GREEK INSTRUMENTAL NOTATION SYMBOL-3)
+<Multi_key> <numbersign> <G> <i> <F>                                        : "𝈟"  U1D21F  # GREEK INSTRUMENTAL NOTATION SYMBOL-4
+<Multi_key> <numbersign> <G> <i> <numbersign> <F>                           : "𝈠"  U1D220  # GREEK INSTRUMENTAL NOTATION SYMBOL-5
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <F>              : "Τ"  U03A4  # GREEK CAPITAL LETTER TAU (GREEK INSTRUMENTAL NOTATION SYMBOL-6)
+<Multi_key> <numbersign> <G> <i> <G>                                        : "𝈡"  U1D221  # GREEK INSTRUMENTAL NOTATION SYMBOL-7
+<Multi_key> <numbersign> <G> <i> <numbersign> <G>                           : "𝈢"  U1D222  # GREEK INSTRUMENTAL NOTATION SYMBOL-8
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <G>              : "𝈆"  U1D206  # GREEK VOCAL NOTATION SYMBOL-7 (GREEK INSTRUMENTAL NOTATION SYMBOL-9)
+<Multi_key> <numbersign> <G> <i> <A>                                        : "Η"  U0397  # GREEK CAPITAL LETTER ETA (GREEK INSTRUMENTAL NOTATION SYMBOL-10)
+<Multi_key> <numbersign> <G> <i> <numbersign> <A>                           : "𝈣"  U1D223  # GREEK INSTRUMENTAL NOTATION SYMBOL-11
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <A>              : "𝈤"  U1D224  # GREEK INSTRUMENTAL NOTATION SYMBOL-12
+<Multi_key> <numbersign> <G> <i> <B>                                        : "𝈥"  U1D225  # GREEK INSTRUMENTAL NOTATION SYMBOL-13
+<Multi_key> <numbersign> <G> <i> <numbersign> <B>                           : "𝈦"  U1D226  # GREEK INSTRUMENTAL NOTATION SYMBOL-14
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <B>              : "𝈑"  U1D211  # GREEK VOCAL NOTATION SYMBOL-18 (GREEK INSTRUMENTAL NOTATION SYMBOL-15)
+<Multi_key> <numbersign> <G> <i> <c>                                        : "Ε"  U0395  # GREEK CAPITAL LETTER EPSILON (GREEK INSTRUMENTAL NOTATION SYMBOL-16)
+<Multi_key> <numbersign> <G> <i> <numbersign> <c>                           : "𝈧"  U1D227  # GREEK INSTRUMENTAL NOTATION SYMBOL-17
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <c>              : "𝈨"  U1D228  # GREEK INSTRUMENTAL NOTATION SYMBOL-18
+<Multi_key> <numbersign> <G> <i> <d>                                        : "𝈩"  U1D229  # GREEK INSTRUMENTAL NOTATION SYMBOL-19
+<Multi_key> <numbersign> <G> <i> <numbersign> <d>                           : "𝈜"  U1D21C  # GREEK VOCAL NOTATION SYMBOL-54 (GREEK INSTRUMENTAL NOTATION SYMBOL-20)
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <d>              : "𝈅"  U1D205  # GREEK VOCAL NOTATION SYMBOL-6 (GREEK INSTRUMENTAL NOTATION SYMBOL-21)
+<Multi_key> <numbersign> <G> <i> <e>                                        : "Γ"  U0393  # GREEK CAPITAL LETTER GAMMA (GREEK INSTRUMENTAL NOTATION SYMBOL-22)
+<Multi_key> <numbersign> <G> <i> <numbersign> <e>                           : "𝈪"  U1D22A  # GREEK INSTRUMENTAL NOTATION SYMBOL-23
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <e>              : "𝈫"  U1D22B  # GREEK INSTRUMENTAL NOTATION SYMBOL-24
+<Multi_key> <numbersign> <G> <i> <f>                                        : "𝈬"  U1D22C  # GREEK INSTRUMENTAL NOTATION SYMBOL-25
+<Multi_key> <numbersign> <G> <i> <numbersign> <f>                           : "𝈭"  U1D22D  # GREEK INSTRUMENTAL NOTATION SYMBOL-26
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <f>              : "𝈮"  U1D22E  # GREEK INSTRUMENTAL NOTATION SYMBOL-27
+<Multi_key> <numbersign> <G> <i> <g>                                        : "𝈓"  U1D213  # GREEK VOCAL NOTATION SYMBOL-20 (GREEK INSTRUMENTAL NOTATION SYMBOL-28)
+<Multi_key> <numbersign> <G> <i> <numbersign> <g>                           : "𝈯"  U1D22F  # GREEK INSTRUMENTAL NOTATION SYMBOL-29
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <g>              : "𝈰"  U1D230  # GREEK INSTRUMENTAL NOTATION SYMBOL-30
+<Multi_key> <numbersign> <G> <i> <a>                                        : "Ϲ"  U03F9  # GREEK CAPITAL LUNATE SIGMA SYMBOL (GREEK INSTRUMENTAL NOTATION SYMBOL-31)
+<Multi_key> <numbersign> <G> <i> <numbersign> <a>                           : "𝈱"  U1D231  # GREEK INSTRUMENTAL NOTATION SYMBOL-32
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <a>              : "Ͻ"  U03FD  # GREEK CAPITAL REVERSED LUNATE SIGMA SYMBOL (GREEK INSTRUMENTAL NOTATION SYMBOL-33)
+<Multi_key> <numbersign> <G> <i> <b>                                        : "Κ"  U039A  # GREEK CAPITAL LETTER KAPPA (GREEK INSTRUMENTAL NOTATION SYMBOL-34)
+<Multi_key> <numbersign> <G> <i> <numbersign> <b>                           : "𝈎"  U1D20E  # GREEK VOCAL NOTATION SYMBOL-15 (GREEK INSTRUMENTAL NOTATION SYMBOL-35)
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <b>              : "𝈲"  U1D232  # GREEK INSTRUMENTAL NOTATION SYMBOL-36
+<Multi_key> <numbersign> <G> <i> <apostrophe> <c>                           : "𝈳"  U1D233  # GREEK INSTRUMENTAL NOTATION SYMBOL-37
+<Multi_key> <numbersign> <G> <i> <numbersign> <apostrophe> <c>              : "𝈴"  U1D234  # GREEK INSTRUMENTAL NOTATION SYMBOL-38
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <apostrophe> <c> : "𝈵"  U1D235  # GREEK INSTRUMENTAL NOTATION SYMBOL-39
+<Multi_key> <numbersign> <G> <i> <apostrophe> <d>                           : "𝈶"  U1D236  # GREEK INSTRUMENTAL NOTATION SYMBOL-40
+<Multi_key> <numbersign> <G> <i> <numbersign> <apostrophe> <d>              : "𝈍"  U1D20D  # GREEK VOCAL NOTATION SYMBOL-14 (GREEK INSTRUMENTAL NOTATION SYMBOL-41)
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <apostrophe> <d> : "𝈷"  U1D237  # GREEK INSTRUMENTAL NOTATION SYMBOL-42
+<Multi_key> <numbersign> <G> <i> <apostrophe> <e>                           : "𝈸"  U1D238  # GREEK INSTRUMENTAL NOTATION SYMBOL-43
+<Multi_key> <numbersign> <G> <i> <numbersign> <apostrophe> <e>              : "𝈈"  U1D208  # GREEK VOCAL NOTATION SYMBOL-9 (GREEK INSTRUMENTAL NOTATION SYMBOL-44)
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <apostrophe> <e> : "𝈹"  U1D239  # GREEK INSTRUMENTAL NOTATION SYMBOL-45
+<Multi_key> <numbersign> <G> <i> <apostrophe> <f>                           : "Ν"  U039D  # GREEK CAPITAL LETTER NU (GREEK INSTRUMENTAL NOTATION SYMBOL-46)
+<Multi_key> <numbersign> <G> <i> <numbersign> <apostrophe> <f>              : "𝈺"  U1D23A  # GREEK INSTRUMENTAL NOTATION SYMBOL-47
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <apostrophe> <f> : "𝈻"  U1D23B  # GREEK INSTRUMENTAL NOTATION SYMBOL-48
+<Multi_key> <numbersign> <G> <i> <apostrophe> <g>                           : "𝈼"  U1D23C  # GREEK INSTRUMENTAL NOTATION SYMBOL-49
+<Multi_key> <numbersign> <G> <i> <numbersign> <apostrophe> <g>              : "𝈽"  U1D23D  # GREEK INSTRUMENTAL NOTATION SYMBOL-50
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <apostrophe> <g> : "𝈾"  U1D23E  # GREEK INSTRUMENTAL NOTATION SYMBOL-51
+<Multi_key> <numbersign> <G> <i> <apostrophe> <a>                           : "𝈿"  U1D23F  # GREEK INSTRUMENTAL NOTATION SYMBOL-52
+<Multi_key> <numbersign> <G> <i> <numbersign> <apostrophe> <a>              : "𝉀"  U1D240  # GREEK INSTRUMENTAL NOTATION SYMBOL-53
+<Multi_key> <numbersign> <G> <i> <numbersign> <numbersign> <apostrophe> <a> : "𝉁"  U1D241  # GREEK INSTRUMENTAL NOTATION SYMBOL-54
+
+# (by symbol number)
+
+<Multi_key> <numbersign> <G> <v> <0> <1> : "𝈀"  U1D200  # GREEK VOCAL NOTATION SYMBOL-1
+<Multi_key> <numbersign> <G> <v> <0> <2> : "𝈁"  U1D201  # GREEK VOCAL NOTATION SYMBOL-2
+<Multi_key> <numbersign> <G> <v> <0> <3> : "𝈂"  U1D202  # GREEK VOCAL NOTATION SYMBOL-3
+<Multi_key> <numbersign> <G> <v> <0> <4> : "𝈃"  U1D203  # GREEK VOCAL NOTATION SYMBOL-4
+<Multi_key> <numbersign> <G> <v> <0> <5> : "𝈄"  U1D204  # GREEK VOCAL NOTATION SYMBOL-5
+<Multi_key> <numbersign> <G> <v> <0> <6> : "𝈅"  U1D205  # GREEK VOCAL NOTATION SYMBOL-6
+<Multi_key> <numbersign> <G> <v> <0> <7> : "𝈆"  U1D206  # GREEK VOCAL NOTATION SYMBOL-7
+<Multi_key> <numbersign> <G> <v> <0> <8> : "𝈇"  U1D207  # GREEK VOCAL NOTATION SYMBOL-8
+<Multi_key> <numbersign> <G> <v> <0> <9> : "𝈈"  U1D208  # GREEK VOCAL NOTATION SYMBOL-9
+<Multi_key> <numbersign> <G> <v> <1> <0> : "𝈉"  U1D209  # GREEK VOCAL NOTATION SYMBOL-10
+<Multi_key> <numbersign> <G> <v> <1> <1> : "𝈊"  U1D20A  # GREEK VOCAL NOTATION SYMBOL-11
+<Multi_key> <numbersign> <G> <v> <1> <2> : "𝈋"  U1D20B  # GREEK VOCAL NOTATION SYMBOL-12
+<Multi_key> <numbersign> <G> <v> <1> <3> : "𝈌"  U1D20C  # GREEK VOCAL NOTATION SYMBOL-13
+<Multi_key> <numbersign> <G> <v> <1> <4> : "𝈍"  U1D20D  # GREEK VOCAL NOTATION SYMBOL-14
+<Multi_key> <numbersign> <G> <v> <1> <5> : "𝈎"  U1D20E  # GREEK VOCAL NOTATION SYMBOL-15
+<Multi_key> <numbersign> <G> <v> <1> <6> : "𝈏"  U1D20F  # GREEK VOCAL NOTATION SYMBOL-16
+<Multi_key> <numbersign> <G> <v> <1> <7> : "𝈐"  U1D210  # GREEK VOCAL NOTATION SYMBOL-17
+<Multi_key> <numbersign> <G> <v> <1> <8> : "𝈑"  U1D211  # GREEK VOCAL NOTATION SYMBOL-18
+<Multi_key> <numbersign> <G> <v> <1> <9> : "𝈒"  U1D212  # GREEK VOCAL NOTATION SYMBOL-19
+<Multi_key> <numbersign> <G> <v> <2> <0> : "𝈓"  U1D213  # GREEK VOCAL NOTATION SYMBOL-20
+<Multi_key> <numbersign> <G> <v> <2> <1> : "𝈔"  U1D214  # GREEK VOCAL NOTATION SYMBOL-21
+<Multi_key> <numbersign> <G> <v> <2> <2> : "𝈕"  U1D215  # GREEK VOCAL NOTATION SYMBOL-22
+<Multi_key> <numbersign> <G> <v> <2> <3> : "𝈖"  U1D216  # GREEK VOCAL NOTATION SYMBOL-23
+<Multi_key> <numbersign> <G> <v> <2> <4> : "𝈗"  U1D217  # GREEK VOCAL NOTATION SYMBOL-24
+<Multi_key> <numbersign> <G> <v> <2> <5> : "Ω"  U03A9  # GREEK CAPITAL LETTER OMEGA (GREEK VOCAL NOTATION SYMBOL-25)
+<Multi_key> <numbersign> <G> <v> <2> <6> : "Ψ"  U03A8  # GREEK CAPITAL LETTER PSI (GREEK VOCAL NOTATION SYMBOL-26)
+<Multi_key> <numbersign> <G> <v> <2> <7> : "Χ"  U03A7  # GREEK CAPITAL LETTER CHI (GREEK VOCAL NOTATION SYMBOL-27)
+<Multi_key> <numbersign> <G> <v> <2> <8> : "Φ"  U03A6  # GREEK CAPITAL LETTER PHI (GREEK VOCAL NOTATION SYMBOL-28)
+<Multi_key> <numbersign> <G> <v> <2> <9> : "Υ"  U03A5  # GREEK CAPITAL LETTER UPSILON (GREEK VOCAL NOTATION SYMBOL-29)
+<Multi_key> <numbersign> <G> <v> <3> <0> : "Τ"  U03A4  # GREEK CAPITAL LETTER TAU (GREEK VOCAL NOTATION SYMBOL-30)
+<Multi_key> <numbersign> <G> <v> <3> <1> : "Ϲ"  U03F9  # GREEK CAPITAL LUNATE SIGMA SYMBOL (GREEK VOCAL NOTATION SYMBOL-31)
+<Multi_key> <numbersign> <G> <v> <3> <2> : "Ρ"  U03A1  # GREEK CAPITAL LETTER RHO (GREEK VOCAL NOTATION SYMBOL-32)
+<Multi_key> <numbersign> <G> <v> <3> <3> : "Π"  U03A0  # GREEK CAPITAL LETTER PI (GREEK VOCAL NOTATION SYMBOL-33)
+<Multi_key> <numbersign> <G> <v> <3> <4> : "Ο"  U039F  # GREEK CAPITAL LETTER OMICRON (GREEK VOCAL NOTATION SYMBOL-34)
+<Multi_key> <numbersign> <G> <v> <3> <5> : "Ξ"  U039E  # GREEK CAPITAL LETTER XI (GREEK VOCAL NOTATION SYMBOL-35)
+<Multi_key> <numbersign> <G> <v> <3> <6> : "Ν"  U039D  # GREEK CAPITAL LETTER NU (GREEK VOCAL NOTATION SYMBOL-36)
+<Multi_key> <numbersign> <G> <v> <3> <7> : "Μ"  U039C  # GREEK CAPITAL LETTER MU (GREEK VOCAL NOTATION SYMBOL-37)
+<Multi_key> <numbersign> <G> <v> <3> <8> : "Λ"  U039B  # GREEK CAPITAL LETTER LAMDA (GREEK VOCAL NOTATION SYMBOL-38)
+<Multi_key> <numbersign> <G> <v> <3> <9> : "Κ"  U039A  # GREEK CAPITAL LETTER KAPPA (GREEK VOCAL NOTATION SYMBOL-39)
+<Multi_key> <numbersign> <G> <v> <4> <0> : "Ι"  U0399  # GREEK CAPITAL LETTER IOTA (GREEK VOCAL NOTATION SYMBOL-40)
+<Multi_key> <numbersign> <G> <v> <4> <1> : "Θ"  U0398  # GREEK CAPITAL LETTER THETA (GREEK VOCAL NOTATION SYMBOL-41)
+<Multi_key> <numbersign> <G> <v> <4> <2> : "Η"  U0397  # GREEK CAPITAL LETTER ETA (GREEK VOCAL NOTATION SYMBOL-42)
+<Multi_key> <numbersign> <G> <v> <4> <3> : "Ζ"  U0396  # GREEK CAPITAL LETTER ZETA (GREEK VOCAL NOTATION SYMBOL-43)
+<Multi_key> <numbersign> <G> <v> <4> <4> : "Ε"  U0395  # GREEK CAPITAL LETTER EPSILON (GREEK VOCAL NOTATION SYMBOL-44)
+<Multi_key> <numbersign> <G> <v> <4> <5> : "Δ"  U0394  # GREEK CAPITAL LETTER DELTA (GREEK VOCAL NOTATION SYMBOL-45)
+<Multi_key> <numbersign> <G> <v> <4> <6> : "Γ"  U0393  # GREEK CAPITAL LETTER GAMMA (GREEK VOCAL NOTATION SYMBOL-46)
+<Multi_key> <numbersign> <G> <v> <4> <7> : "Β"  U0392  # GREEK CAPITAL LETTER BETA (GREEK VOCAL NOTATION SYMBOL-47)
+<Multi_key> <numbersign> <G> <v> <4> <8> : "Α"  U0391  # GREEK CAPITAL LETTER ALPHA (GREEK VOCAL NOTATION SYMBOL-48)
+<Multi_key> <numbersign> <G> <v> <4> <9> : "℧"  U2127  # INVERTED OHM SIGN (GREEK VOCAL NOTATION SYMBOL-49)
+<Multi_key> <numbersign> <G> <v> <5> <0> : "𝈘"  U1D218  # GREEK VOCAL NOTATION SYMBOL-50
+<Multi_key> <numbersign> <G> <v> <5> <1> : "𝈙"  U1D219  # GREEK VOCAL NOTATION SYMBOL-51
+<Multi_key> <numbersign> <G> <v> <5> <2> : "𝈚"  U1D21A  # GREEK VOCAL NOTATION SYMBOL-52
+<Multi_key> <numbersign> <G> <v> <5> <3> : "𝈛"  U1D21B  # GREEK VOCAL NOTATION SYMBOL-53
+<Multi_key> <numbersign> <G> <v> <5> <4> : "𝈜"  U1D21C  # GREEK VOCAL NOTATION SYMBOL-54
+
+<Multi_key> <numbersign> <G> <i> <0> <1> : "𝈝"  U1D21D  # GREEK INSTRUMENTAL NOTATION SYMBOL-1
+<Multi_key> <numbersign> <G> <i> <0> <2> : "𝈞"  U1D21E  # GREEK INSTRUMENTAL NOTATION SYMBOL-2
+<Multi_key> <numbersign> <G> <i> <0> <3> : "𝈂"  U1D202  # GREEK VOCAL NOTATION SYMBOL-3 (GREEK INSTRUMENTAL NOTATION SYMBOL-3)
+<Multi_key> <numbersign> <G> <i> <0> <4> : "𝈟"  U1D21F  # GREEK INSTRUMENTAL NOTATION SYMBOL-4
+<Multi_key> <numbersign> <G> <i> <0> <5> : "𝈠"  U1D220  # GREEK INSTRUMENTAL NOTATION SYMBOL-5
+<Multi_key> <numbersign> <G> <i> <0> <6> : "Τ"  U03A4  # GREEK CAPITAL LETTER TAU (GREEK INSTRUMENTAL NOTATION SYMBOL-6)
+<Multi_key> <numbersign> <G> <i> <0> <7> : "𝈡"  U1D221  # GREEK INSTRUMENTAL NOTATION SYMBOL-7
+<Multi_key> <numbersign> <G> <i> <0> <8> : "𝈢"  U1D222  # GREEK INSTRUMENTAL NOTATION SYMBOL-8
+<Multi_key> <numbersign> <G> <i> <0> <9> : "𝈆"  U1D206  # GREEK VOCAL NOTATION SYMBOL-7 (GREEK INSTRUMENTAL NOTATION SYMBOL-9)
+<Multi_key> <numbersign> <G> <i> <1> <0> : "Η"  U0397  # GREEK CAPITAL LETTER ETA (GREEK INSTRUMENTAL NOTATION SYMBOL-10)
+<Multi_key> <numbersign> <G> <i> <1> <1> : "𝈣"  U1D223  # GREEK INSTRUMENTAL NOTATION SYMBOL-11
+<Multi_key> <numbersign> <G> <i> <1> <2> : "𝈤"  U1D224  # GREEK INSTRUMENTAL NOTATION SYMBOL-12
+<Multi_key> <numbersign> <G> <i> <1> <3> : "𝈥"  U1D225  # GREEK INSTRUMENTAL NOTATION SYMBOL-13
+<Multi_key> <numbersign> <G> <i> <1> <4> : "𝈦"  U1D226  # GREEK INSTRUMENTAL NOTATION SYMBOL-14
+<Multi_key> <numbersign> <G> <i> <1> <5> : "𝈑"  U1D211  # GREEK VOCAL NOTATION SYMBOL-18 (GREEK INSTRUMENTAL NOTATION SYMBOL-15)
+<Multi_key> <numbersign> <G> <i> <1> <6> : "Ε"  U0395  # GREEK CAPITAL LETTER EPSILON (GREEK INSTRUMENTAL NOTATION SYMBOL-16)
+<Multi_key> <numbersign> <G> <i> <1> <7> : "𝈧"  U1D227  # GREEK INSTRUMENTAL NOTATION SYMBOL-17
+<Multi_key> <numbersign> <G> <i> <1> <8> : "𝈨"  U1D228  # GREEK INSTRUMENTAL NOTATION SYMBOL-18
+<Multi_key> <numbersign> <G> <i> <1> <9> : "𝈩"  U1D229  # GREEK INSTRUMENTAL NOTATION SYMBOL-19
+<Multi_key> <numbersign> <G> <i> <2> <0> : "𝈜"  U1D21C  # GREEK VOCAL NOTATION SYMBOL-54 (GREEK INSTRUMENTAL NOTATION SYMBOL-20)
+<Multi_key> <numbersign> <G> <i> <2> <1> : "𝈅"  U1D205  # GREEK VOCAL NOTATION SYMBOL-6 (GREEK INSTRUMENTAL NOTATION SYMBOL-21)
+<Multi_key> <numbersign> <G> <i> <2> <2> : "Γ"  U0393  # GREEK CAPITAL LETTER GAMMA (GREEK INSTRUMENTAL NOTATION SYMBOL-22)
+<Multi_key> <numbersign> <G> <i> <2> <3> : "𝈪"  U1D22A  # GREEK INSTRUMENTAL NOTATION SYMBOL-23
+<Multi_key> <numbersign> <G> <i> <2> <4> : "𝈫"  U1D22B  # GREEK INSTRUMENTAL NOTATION SYMBOL-24
+<Multi_key> <numbersign> <G> <i> <2> <5> : "𝈬"  U1D22C  # GREEK INSTRUMENTAL NOTATION SYMBOL-25
+<Multi_key> <numbersign> <G> <i> <2> <6> : "𝈭"  U1D22D  # GREEK INSTRUMENTAL NOTATION SYMBOL-26
+<Multi_key> <numbersign> <G> <i> <2> <7> : "𝈮"  U1D22E  # GREEK INSTRUMENTAL NOTATION SYMBOL-27
+<Multi_key> <numbersign> <G> <i> <2> <8> : "𝈓"  U1D213  # GREEK VOCAL NOTATION SYMBOL-20 (GREEK INSTRUMENTAL NOTATION SYMBOL-28)
+<Multi_key> <numbersign> <G> <i> <2> <9> : "𝈯"  U1D22F  # GREEK INSTRUMENTAL NOTATION SYMBOL-29
+<Multi_key> <numbersign> <G> <i> <3> <0> : "𝈰"  U1D230  # GREEK INSTRUMENTAL NOTATION SYMBOL-30
+<Multi_key> <numbersign> <G> <i> <3> <1> : "Ϲ"  U03F9  # GREEK CAPITAL LUNATE SIGMA SYMBOL (GREEK INSTRUMENTAL NOTATION SYMBOL-31)
+<Multi_key> <numbersign> <G> <i> <3> <2> : "𝈱"  U1D231  # GREEK INSTRUMENTAL NOTATION SYMBOL-32
+<Multi_key> <numbersign> <G> <i> <3> <3> : "Ͻ"  U03FD  # GREEK CAPITAL REVERSED LUNATE SIGMA SYMBOL (GREEK INSTRUMENTAL NOTATION SYMBOL-33)
+<Multi_key> <numbersign> <G> <i> <3> <4> : "Κ"  U039A  # GREEK CAPITAL LETTER KAPPA (GREEK INSTRUMENTAL NOTATION SYMBOL-34)
+<Multi_key> <numbersign> <G> <i> <3> <5> : "𝈎"  U1D20E  # GREEK VOCAL NOTATION SYMBOL-15 (GREEK INSTRUMENTAL NOTATION SYMBOL-35)
+<Multi_key> <numbersign> <G> <i> <3> <6> : "𝈲"  U1D232  # GREEK INSTRUMENTAL NOTATION SYMBOL-36
+<Multi_key> <numbersign> <G> <i> <3> <7> : "𝈳"  U1D233  # GREEK INSTRUMENTAL NOTATION SYMBOL-37
+<Multi_key> <numbersign> <G> <i> <3> <8> : "𝈴"  U1D234  # GREEK INSTRUMENTAL NOTATION SYMBOL-38
+<Multi_key> <numbersign> <G> <i> <3> <9> : "𝈵"  U1D235  # GREEK INSTRUMENTAL NOTATION SYMBOL-39
+<Multi_key> <numbersign> <G> <i> <4> <0> : "𝈶"  U1D236  # GREEK INSTRUMENTAL NOTATION SYMBOL-40
+<Multi_key> <numbersign> <G> <i> <4> <1> : "𝈍"  U1D20D  # GREEK VOCAL NOTATION SYMBOL-14 (GREEK INSTRUMENTAL NOTATION SYMBOL-41)
+<Multi_key> <numbersign> <G> <i> <4> <2> : "𝈷"  U1D237  # GREEK INSTRUMENTAL NOTATION SYMBOL-42
+<Multi_key> <numbersign> <G> <i> <4> <3> : "𝈸"  U1D238  # GREEK INSTRUMENTAL NOTATION SYMBOL-43
+<Multi_key> <numbersign> <G> <i> <4> <4> : "𝈈"  U1D208  # GREEK VOCAL NOTATION SYMBOL-9 (GREEK INSTRUMENTAL NOTATION SYMBOL-44)
+<Multi_key> <numbersign> <G> <i> <4> <5> : "𝈹"  U1D239  # GREEK INSTRUMENTAL NOTATION SYMBOL-45
+<Multi_key> <numbersign> <G> <i> <4> <6> : "Ν"  U039D  # GREEK CAPITAL LETTER NU (GREEK INSTRUMENTAL NOTATION SYMBOL-46)
+<Multi_key> <numbersign> <G> <i> <4> <7> : "𝈺"  U1D23A  # GREEK INSTRUMENTAL NOTATION SYMBOL-47
+<Multi_key> <numbersign> <G> <i> <4> <8> : "𝈻"  U1D23B  # GREEK INSTRUMENTAL NOTATION SYMBOL-48
+<Multi_key> <numbersign> <G> <i> <4> <9> : "𝈼"  U1D23C  # GREEK INSTRUMENTAL NOTATION SYMBOL-49
+<Multi_key> <numbersign> <G> <i> <5> <0> : "𝈽"  U1D23D  # GREEK INSTRUMENTAL NOTATION SYMBOL-50
+<Multi_key> <numbersign> <G> <i> <5> <1> : "𝈾"  U1D23E  # GREEK INSTRUMENTAL NOTATION SYMBOL-51
+<Multi_key> <numbersign> <G> <i> <5> <2> : "𝈿"  U1D23F  # GREEK INSTRUMENTAL NOTATION SYMBOL-52
+<Multi_key> <numbersign> <G> <i> <5> <3> : "𝉀"  U1D240  # GREEK INSTRUMENTAL NOTATION SYMBOL-53
+<Multi_key> <numbersign> <G> <i> <5> <4> : "𝉁"  U1D241  # GREEK INSTRUMENTAL NOTATION SYMBOL-54
+
 #########
 # Games #
 #########
@@ -29631,10 +29879,10 @@ include "Logograms"
 <Multi_key> <numbersign> <8> <0> <0> <0> <0> <a> : "𐄲"  U10132  # AEGEAN NUMBER EIGHTY THOUSAND
 <Multi_key> <numbersign> <9> <0> <0> <0> <0> <a> : "𐄳"  U10133  # AEGEAN NUMBER NINETY THOUSAND
 
-# (A) Attic numerals
+# (A) Attic numerals - defaults to Attic forms
 
-<Multi_key> <numbersign> <1> <slash> <4> <A> : "𐅀"  U10140  # GREEK ACROPHONIC ATTIC ONE QUARTER
-<Multi_key> <numbersign> <1> <slash> <2> <A> : "𐅁"  U10141  # GREEK ACROPHONIC ATTIC ONE HALF
+<Multi_key> <numbersign> <1> <slash> <4> <A> <space> : "𐅀"  U10140  # GREEK ACROPHONIC ATTIC ONE QUARTER
+<Multi_key> <numbersign> <1> <slash> <2> <A> <space> : "𐅁"  U10141  # GREEK ACROPHONIC ATTIC ONE HALF
 <Multi_key> <numbersign> <1> <A> <space> : "Ι"  U0399  # GREEK CAPITAL LETTER IOTA (1)
 <Multi_key> <numbersign> <1> <A> <D> : "𐅂"  U10142  # GREEK ACROPHONIC ATTIC ONE DRACHMA
 <Multi_key> <numbersign> <5> <A> <space> : "𐅃"  U10143  # GREEK ACROPHONIC ATTIC FIVE
@@ -29661,6 +29909,64 @@ include "Logograms"
 <Multi_key> <numbersign> <1> <0> <0> <0> <0> <A> <S> : "𐅕"  U10155  # GREEK ACROPHONIC ATTIC TEN THOUSAND STATERS
 <Multi_key> <numbersign> <5> <0> <0> <0> <0> <A> <space> : "𐅇"  U10147  # GREEK ACROPHONIC ATTIC FIFTY THOUSAND
 <Multi_key> <numbersign> <5> <0> <0> <0> <0> <A> <S> : "𐅖"  U10156  # GREEK ACROPHONIC ATTIC FIFTY THOUSAND STATERS
+<Multi_key> <numbersign> <1> <0> <A> <M> : "𐅗"  U10157  # GREEK ACROPHONIC ATTIC TEN MNAS
+
+<Multi_key> <numbersign> <1> <A> <h> <P> : "𐅘"  U10158  # GREEK ACROPHONIC HERAEUM ONE PLETHRON
+<Multi_key> <numbersign> <1> <A> <t> <h> : "𐅙"  U10159  # GREEK ACROPHONIC THESPIAN ONE
+<Multi_key> <numbersign> <1> <A> <h> <space> : "𐅚"  U1015A  # GREEK ACROPHONIC HERMIONIAN ONE
+<Multi_key> <numbersign> <2> <A> <e> <space> : "𐅛"  U1015B  # GREEK ACROPHONIC EPIDAUREAN TWO
+<Multi_key> <numbersign> <2> <A> <t> <h> : "𐅜"  U1015C  # GREEK ACROPHONIC THESPIAN TWO
+<Multi_key> <numbersign> <2> <A> <c> <D> : "𐅝"  U1015D  # GREEK ACROPHONIC CYRENAIC TWO DRACHMAS
+<Multi_key> <numbersign> <2> <A> <e> <D> : "𐅞"  U1015E  # GREEK ACROPHONIC EPIDAUREAN TWO DRACHMAS
+<Multi_key> <numbersign> <5> <A> <t> <r> : "𐅟"  U1015F  # GREEK ACROPHONIC TROEZENIAN FIVE
+<Multi_key> <numbersign> <1> <0> <A> <t> <r> : "𐅠"  U10160  # GREEK ACROPHONIC TROEZENIAN TEN
+<Multi_key> <numbersign> <1> <0> <asterisk> <A> <t> <r> : "𐅡"  U10161  # GREEK ACROPHONIC TROEZENIAN TEN ALTERNATE FORM
+<Multi_key> <numbersign> <1> <0> <A> <h> : "𐅢"  U10162  # GREEK ACROPHONIC HERMIONIAN TEN
+<Multi_key> <numbersign> <1> <0> <A> <m> : "𐅣"  U10163  # GREEK ACROPHONIC MESSENIAN TEN
+<Multi_key> <numbersign> <1> <0> <A> <t> <h> : "𐅤"  U10164  # GREEK ACROPHONIC THESPIAN TEN
+<Multi_key> <numbersign> <3> <0> <A> <t> <h> : "𐅥"  U10165  # GREEK ACROPHONIC THESPIAN THIRTY
+<Multi_key> <numbersign> <5> <0> <A> <t> <r> : "𐅦"  U10166  # GREEK ACROPHONIC TROEZENIAN FIFTY
+<Multi_key> <numbersign> <5> <0> <asterisk> <A> <t> <r> : "𐅧"  U10167  # GREEK ACROPHONIC TROEZENIAN FIFTY ALTERNATE FORM
+<Multi_key> <numbersign> <5> <0> <A> <h> : "𐅨"  U10168  # GREEK ACROPHONIC HERMIONIAN FIFTY
+<Multi_key> <numbersign> <5> <0> <A> <t> <h> : "𐅩"  U10169  # GREEK ACROPHONIC THESPIAN FIFTY
+<Multi_key> <numbersign> <1> <0> <0> <A> <t> <h> : "𐅪"  U1016A  # GREEK ACROPHONIC THESPIAN ONE HUNDRED
+<Multi_key> <numbersign> <3> <0> <0> <A> <t> <h> : "𐅫"  U1016B  # GREEK ACROPHONIC THESPIAN THREE HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <A> <e> : "𐅬"  U1016C  # GREEK ACROPHONIC EPIDAUREAN FIVE HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <A> <t> <r> : "𐅭"  U1016D  # GREEK ACROPHONIC TROEZENIAN FIVE HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <A> <t> <h> : "𐅮"  U1016E  # GREEK ACROPHONIC THESPIAN FIVE HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <A> <c> : "𐅯"  U1016F  # GREEK ACROPHONIC CARYSTIAN FIVE HUNDRED
+<Multi_key> <numbersign> <5> <0> <0> <A> <n> : "𐅰"  U10170  # GREEK ACROPHONIC NAXIAN FIVE HUNDRED
+<Multi_key> <numbersign> <1> <0> <0> <0> <A> <t> <h> : "𐅱"  U10171  # GREEK ACROPHONIC THESPIAN ONE THOUSAND
+<Multi_key> <numbersign> <5> <0> <0> <0> <A> <t> <h> : "𐅲"  U10172  # GREEK ACROPHONIC THESPIAN FIVE THOUSAND
+<Multi_key> <numbersign> <5> <A> <d> <M> : "𐅳"  U10173  # GREEK ACROPHONIC DELPHIC FIVE MNAS
+<Multi_key> <numbersign> <5> <0> <A> <s> <M> : "𐅴"  U10174  # GREEK ACROPHONIC STRATIAN FIFTY MNAS
+
+# (AP) Ancient Greek papyrological numbers (and measures)
+
+<Multi_key> <numbersign> <0> <A> <P> : "𐆊"  U1018A  # GREEK ZERO SIGN
+<Multi_key> <numbersign> <1> <slash> <4> <A> <P> : "𐆋"  U1018B  # GREEK ONE QUARTER SIGN
+<Multi_key> <numbersign> <1> <slash> <2> <A> <P> : "𐅵"  U10175  # GREEK ONE HALF SIGN
+<Multi_key> <numbersign> <1> <slash> <2> <asterisk> <A> <P> : "𐅶"  U10176  # GREEK ONE HALF SIGN ALTERNATE FORM
+<Multi_key> <numbersign> <2> <slash> <3> <A> <P> : "𐅷"  U10177  # GREEK TWO THIRDS SIGN
+<Multi_key> <numbersign> <3> <slash> <4> <A> <P> : "𐅸"  U10178  # GREEK THREE QUARTERS SIGN
+
+<Multi_key> <numbersign> <A> <P> <Y> : "𐅹"  U10179  # GREEK YEAR SIGN
+<Multi_key> <numbersign> <A> <P> <T> : "𐅺"  U1017A  # GREEK TALENT SIGN
+<Multi_key> <numbersign> <A> <P> <D> : "𐅻"  U1017B  # GREEK DRACHMA SIGN
+<Multi_key> <numbersign> <A> <P> <O> : "𐅼"  U1017C  # GREEK OBOL SIGN
+<Multi_key> <numbersign> <2> <A> <P> <O> : "𐅽"  U1017D  # GREEK TWO OBOLS SIGN
+<Multi_key> <numbersign> <3> <A> <P> <O> : "𐅾"  U1017E  # GREEK THREE OBOLS SIGN
+<Multi_key> <numbersign> <4> <A> <P> <O> : "𐅿"  U1017F  # GREEK FOUR OBOLS SIGN
+<Multi_key> <numbersign> <5> <A> <P> <O> : "𐆀"  U10180  # GREEK FIVE OBOLS SIGN
+<Multi_key> <numbersign> <A> <P> <M> : "𐆁"  U10181  # GREEK METRETES SIGN
+<Multi_key> <numbersign> <A> <P> <K> : "𐆂"  U10182  # GREEK KYATHOS BASE SIGN
+<Multi_key> <numbersign> <A> <P> <L> : "𐆃"  U10183  # GREEK LITRA SIGN
+<Multi_key> <numbersign> <A> <P> <o> : "𐆄"  U10184  # GREEK OUNKIA SIGN
+<Multi_key> <numbersign> <A> <P> <X> : "𐆅"  U10185  # GREEK XESTES SIGN
+<Multi_key> <numbersign> <A> <P> <A> : "𐆆"  U10186  # GREEK ARTABE SIGN
+<Multi_key> <numbersign> <A> <P> <a> : "𐆇"  U10187  # GREEK AROURA SIGN
+<Multi_key> <numbersign> <A> <P> <G> : "𐆈"  U10188  # GREEK GRAMMA SIGN
+<Multi_key> <numbersign> <A> <P> <t> : "𐆉"  U10189  # GREEK TRYBLION BASE SIGN
 
 # (f) fence tally
 
@@ -29900,10 +30206,10 @@ include "Logograms"
 <Multi_key> <numbersign> <1> <slash> <2> <I> <S> : "𞲮"  U1ECAE  # INDIC SIYAQ FRACTION ONE HALF
 <Multi_key> <numbersign> <3> <slash> <4> <I> <S> : "𞲯"  U1ECAF  # INDIC SIYAQ FRACTION THREE QUARTERS
 <Multi_key> <numbersign> <R> <u> <I> <S> : "𞲰"  U1ECB0  # INDIC SIYAQ RUPEE MARK
-<Multi_key> <numbersign> <1> <A> <I> <S> : "𞲱"  U1ECB1  # INDIC SIYAQ NUMBER ALTERNATE ONE
-<Multi_key> <numbersign> <2> <A> <I> <S> : "𞲲"  U1ECB2  # INDIC SIYAQ NUMBER ALTERNATE TWO
-<Multi_key> <numbersign> <1> <0> <0> <0> <0> <A> <I> <S> : "𞲳"  U1ECB3  # INDIC SIYAQ NUMBER ALTERNATE TEN THOUSAND
-<Multi_key> <numbersign> <L> <A> <I> <S> : "𞲴"  U1ECB4  # INDIC SIYAQ ALTERNATE LAKH MARK
+<Multi_key> <numbersign> <1> <asterisk> <I> <S> : "𞲱"  U1ECB1  # INDIC SIYAQ NUMBER ALTERNATE ONE
+<Multi_key> <numbersign> <2> <asterisk> <I> <S> : "𞲲"  U1ECB2  # INDIC SIYAQ NUMBER ALTERNATE TWO
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <asterisk> <I> <S> : "𞲳"  U1ECB3  # INDIC SIYAQ NUMBER ALTERNATE TEN THOUSAND
+<Multi_key> <numbersign> <L> <asterisk> <I> <S> : "𞲴"  U1ECB4  # INDIC SIYAQ ALTERNATE LAKH MARK
 
 # (OS) Ottoman Siyaq numbers
 
@@ -29953,19 +30259,19 @@ include "Logograms"
 <Multi_key> <numbersign> <8> <0> <0> <0> <0> <O> <S> : "𞴬"  U1ED2C  # OTTOMAN SIYAQ NUMBER EIGHTY THOUSAND
 <Multi_key> <numbersign> <9> <0> <0> <0> <0> <O> <S> : "𞴭"  U1ED2D  # OTTOMAN SIYAQ NUMBER NINETY THOUSAND
 <Multi_key> <numbersign> <asterisk> <O> <S> : "𞴮"  U1ED2E  # OTTOMAN SIYAQ MARRATAN
-<Multi_key> <numbersign> <2> <A> <O> <S> : "𞴯"  U1ED2F  # OTTOMAN SIYAQ ALTERNATE NUMBER TWO
-<Multi_key> <numbersign> <3> <A> <O> <S> : "𞴰"  U1ED30  # OTTOMAN SIYAQ ALTERNATE NUMBER THREE
-<Multi_key> <numbersign> <4> <A> <O> <S> : "𞴱"  U1ED31  # OTTOMAN SIYAQ ALTERNATE NUMBER FOUR
-<Multi_key> <numbersign> <5> <A> <O> <S> : "𞴲"  U1ED32  # OTTOMAN SIYAQ ALTERNATE NUMBER FIVE
-<Multi_key> <numbersign> <6> <A> <O> <S> : "𞴳"  U1ED33  # OTTOMAN SIYAQ ALTERNATE NUMBER SIX
-<Multi_key> <numbersign> <7> <A> <O> <S> : "𞴴"  U1ED34  # OTTOMAN SIYAQ ALTERNATE NUMBER SEVEN
-<Multi_key> <numbersign> <8> <A> <O> <S> : "𞴵"  U1ED35  # OTTOMAN SIYAQ ALTERNATE NUMBER EIGHT
-<Multi_key> <numbersign> <9> <A> <O> <S> : "𞴶"  U1ED36  # OTTOMAN SIYAQ ALTERNATE NUMBER NINE
-<Multi_key> <numbersign> <1> <0> <A> <O> <S> : "𞴷"  U1ED37  # OTTOMAN SIYAQ ALTERNATE NUMBER TEN
-<Multi_key> <numbersign> <4> <0> <0> <A> <O> <S> : "𞴸"  U1ED38  # OTTOMAN SIYAQ ALTERNATE NUMBER FOUR HUNDRED
-<Multi_key> <numbersign> <6> <0> <0> <A> <O> <S> : "𞴹"  U1ED39  # OTTOMAN SIYAQ ALTERNATE NUMBER SIX HUNDRED
-<Multi_key> <numbersign> <2> <0> <0> <0> <A> <O> <S> : "𞴺"  U1ED3A  # OTTOMAN SIYAQ ALTERNATE NUMBER TWO THOUSAND
-<Multi_key> <numbersign> <1> <0> <0> <0> <0> <A> <O> <S> : "𞴻"  U1ED3B  # OTTOMAN SIYAQ ALTERNATE NUMBER TEN THOUSAND
+<Multi_key> <numbersign> <2> <asterisk> <O> <S> : "𞴯"  U1ED2F  # OTTOMAN SIYAQ ALTERNATE NUMBER TWO
+<Multi_key> <numbersign> <3> <asterisk> <O> <S> : "𞴰"  U1ED30  # OTTOMAN SIYAQ ALTERNATE NUMBER THREE
+<Multi_key> <numbersign> <4> <asterisk> <O> <S> : "𞴱"  U1ED31  # OTTOMAN SIYAQ ALTERNATE NUMBER FOUR
+<Multi_key> <numbersign> <5> <asterisk> <O> <S> : "𞴲"  U1ED32  # OTTOMAN SIYAQ ALTERNATE NUMBER FIVE
+<Multi_key> <numbersign> <6> <asterisk> <O> <S> : "𞴳"  U1ED33  # OTTOMAN SIYAQ ALTERNATE NUMBER SIX
+<Multi_key> <numbersign> <7> <asterisk> <O> <S> : "𞴴"  U1ED34  # OTTOMAN SIYAQ ALTERNATE NUMBER SEVEN
+<Multi_key> <numbersign> <8> <asterisk> <O> <S> : "𞴵"  U1ED35  # OTTOMAN SIYAQ ALTERNATE NUMBER EIGHT
+<Multi_key> <numbersign> <9> <asterisk> <O> <S> : "𞴶"  U1ED36  # OTTOMAN SIYAQ ALTERNATE NUMBER NINE
+<Multi_key> <numbersign> <1> <0> <asterisk> <O> <S> : "𞴷"  U1ED37  # OTTOMAN SIYAQ ALTERNATE NUMBER TEN
+<Multi_key> <numbersign> <4> <0> <0> <asterisk> <O> <S> : "𞴸"  U1ED38  # OTTOMAN SIYAQ ALTERNATE NUMBER FOUR HUNDRED
+<Multi_key> <numbersign> <6> <0> <0> <asterisk> <O> <S> : "𞴹"  U1ED39  # OTTOMAN SIYAQ ALTERNATE NUMBER SIX HUNDRED
+<Multi_key> <numbersign> <2> <0> <0> <0> <asterisk> <O> <S> : "𞴺"  U1ED3A  # OTTOMAN SIYAQ ALTERNATE NUMBER TWO THOUSAND
+<Multi_key> <numbersign> <1> <0> <0> <0> <0> <asterisk> <O> <S> : "𞴻"  U1ED3B  # OTTOMAN SIYAQ ALTERNATE NUMBER TEN THOUSAND
 <Multi_key> <numbersign> <1> <slash> <2> <O> <S> : "𞴼"  U1ED3C  # OTTOMAN SIYAQ FRACTION ONE HALF
 <Multi_key> <numbersign> <1> <slash> <6> <S> : "𞴽"  U1ED3D  # OTTOMAN SIYAQ FRACTION ONE SIXTH
 
