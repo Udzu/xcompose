@@ -3820,7 +3820,7 @@ include "%L"
 <Multi_key> <dollar> <slash>       : "Ⳇ" U2CC6    # COPTIC CAPITAL LETTER OLD COPTIC ESH
 <Multi_key> <dollar> <less>        : "ⵦ" U2D66    # TIFINAGH LETTER YE
 <Multi_key> <dollar> <greater>     : "𖼿" U16F3F   # MIAO LETTER ARCHAIC ZZA
-<Multi_key> <dollar> <question>    : "ɂ̣" U0242 U0323    # LATIN SMALL LETTER GLOTTAL STOP COMBINING DOT BELOW
+<Multi_key> <dollar> <question>    : "ॽ̣" U097D U0323  # DEVANAGARI LETTER GLOTTAL STOP COMBINING DOT BELOW
 <Multi_key> <dollar> <percent>     : "ºⳆₒ" U00BA U2CC6 U2092    # MASCULINE ORDINAL INDICATOR COPTIC CAPITAL LETTER OLD COPTIC ESH LATIN SUBSCRIPT SMALL LETTER O
 <Multi_key> <dollar> <Return>      : "︍" UFE0D   # VARIATION SELECTOR-14
 
@@ -6818,7 +6818,7 @@ include "%L"
 <Multi_key> <b> <d> <q>                  : "क़" U0958   # DEVANAGARI LETTER QA
 <Multi_key> <b> <d> <underscore> <k> <h> : "ख़" U0959   # DEVANAGARI LETTER KHHA
 <Multi_key> <b> <d> <period> <g>         : "ग़" U095A   # DEVANAGARI LETTER GHHA
-<Multi_key> <b> <d> <z>                  : "ज़" U095B   # DEVANAGARI LETTER ZA
+<Multi_key> <b> <d> <z> <space>          : "ज़" U095B   # DEVANAGARI LETTER ZA
 <Multi_key> <b> <d> <period> <r> <space> : "ड़" U095C   # DEVANAGARI LETTER DDDHA
 <Multi_key> <b> <d> <period> <r> <h>     : "ढ़" U095D   # DEVANAGARI LETTER RHA
 <Multi_key> <b> <d> <f>                  : "फ़" U095E   # DEVANAGARI LETTER FA
@@ -6827,6 +6827,9 @@ include "%L"
 <Multi_key> <b> <d> <j> <j>              : "ॼ"  U097C  # DEVANAGARI LETTER JJA
 <Multi_key> <b> <d> <period> <d> <period> <d> : "ॾ"  U097E  # DEVANAGARI LETTER DDDA
 <Multi_key> <b> <d> <b> <b>              : "ॿ"  U097F  # DEVANAGARI LETTER BBA
+<Multi_key> <b> <d> <z> <h>              : "ॹ"  U0979  # DEVANAGARI LETTER ZHA
+<Multi_key> <b> <d> <Y>                  : "ॺ"  U097A  # DEVANAGARI LETTER HEAVY YA
+<Multi_key> <b> <d> <apostrophe> <space> : "ॽ"  U097D  # DEVANAGARI LETTER GLOTTAL STOP
 
 # Combining consonants
 
@@ -6836,6 +6839,7 @@ include "%L"
 <Multi_key> <b> <d> <asciicircum> <asciicircum> <n> <Return> : "꣭"  UA8ED  # COMBINING DEVANAGARI LETTER NA
 <Multi_key> <b> <d> <asciicircum> <asciicircum> <p> <Return> : "꣮"  UA8EE  # COMBINING DEVANAGARI LETTER PA
 <Multi_key> <b> <d> <asciicircum> <asciicircum> <r> <Return> : "꣯"  UA8EF  # COMBINING DEVANAGARI LETTER RA
+<Multi_key> <b> <d> <asciicircum> <asciicircum> <v> <Return> : "꣰"  UA8F0  # COMBINING DEVANAGARI LETTER VI
 
 # Independent vowels
 
@@ -6893,6 +6897,7 @@ include "%L"
 <Multi_key> <b> <d> <comma> <l> <l> <Return>   : "ॣ" U0963   # DEVANAGARI VOWEL SIGN VOCALIC LL
 <Multi_key> <b> <d> <0> <Return>               : "्" U094D   # DEVANAGARI SIGN VIRAMA
 <Multi_key> <b> <d> <p> <e> <Return>           : "ॎ"  U094E  # DEVANAGARI VOWEL SIGN PRISHTHAMATRA E
+<Multi_key> <b> <d> <asciicircum> <e> <e> <Return> : "ॕ"  U0955  # DEVANAGARI VOWEL SIGN CANDRA LONG E
 
 # Other signs
 
@@ -6904,11 +6909,21 @@ include "%L"
 <Multi_key> <b> <d> <comma> <Return>               : "्" U094D   # DEVANAGARI SIGN VIRAMA
 <Multi_key> <b> <d> <apostrophe> <Return>          : "॑" U0951   # DEVANAGARI STRESS SIGN UDATTA
 <Multi_key> <b> <d> <underscore> <Return>          : "॒" U0952   # DEVANAGARI STRESS SIGN ANUDATTA
+<Multi_key> <b> <d> <asciicircum> <S> <Return>     : "꣱"  UA8F1  # COMBINING DEVANAGARI SIGN AVAGRAHA
 
 <Multi_key> <b> <d> <S>                            : "ऽ" U093D   # DEVANAGARI SIGN AVAGRAHA
-<Multi_key> <b> <d> <asciicircum> <S> <Return>     : "꣱"  UA8F1  # COMBINING DEVANAGARI SIGN AVAGRAHA
+<Multi_key> <b> <d> <period> <space>               : "ॱ"  U0971  # DEVANAGARI SIGN HIGH SPACING DOT
+<Multi_key> <b> <d> <period> <parenright> <space>  : "ꣲ"  UA8F2  # DEVANAGARI SIGN SPACING CANDRABINDU
+<Multi_key> <b> <d> <at>                           : "꣼"  UA8FC  # DEVANAGARI SIGN SIDDHAM
 <Multi_key> <b> <d> <o> <m>                        : "ॐ" U0950   # DEVANAGARI OM
+<Multi_key> <b> <d> <J> <o> <m>                    : "ꣽ"  UA8FD  # DEVANAGARI JAIN OM
 <Multi_key> <b> <d> <R> <u>                        : "௹" U0BF9   # TAMIL RUPEE SIGN
+
+<Multi_key> <b> <d> <period> <parenright> <comma> : "ꣳ"  UA8F3  # DEVANAGARI SIGN CANDRABINDU VIRAMA
+<Multi_key> <b> <d> <period> <parenright> <period> <parenright> <comma> : "ꣴ"  UA8F4  # DEVANAGARI SIGN DOUBLE CANDRABINDU VIRAMA
+<Multi_key> <b> <d> <period> <parenright> <2> : "ꣵ"  UA8F5  # DEVANAGARI SIGN CANDRABINDU TWO
+<Multi_key> <b> <d> <period> <parenright> <3> : "ꣶ"  UA8F6  # DEVANAGARI SIGN CANDRABINDU THREE
+<Multi_key> <b> <d> <period> <parenright> <S> : "ꣷ"  UA8F7  # DEVANAGARI SIGN CANDRABINDU AVAGRAHA
 
 # Punctuation
 
