@@ -145,6 +145,12 @@ include "%L"
 <Multi_key> <greater> <P> <P>            : "⁋"  U204B  # REVERSED PILCROW SIGN
 <Multi_key> <equal> <minus> <equal>      : "⸎"  U2E0E  # EDITORIAL CORONIS
 
+<Multi_key> <p> <e> <r> <space>          : "⅌"  U214C  # PER SIGN
+<Multi_key> <Q> <less>                   : "℺"  U213A  # ROTATED CAPITAL Q
+<Multi_key> <R> <x>                      : "℞"  U211E  # PRESCRIPTION TAKE
+<Multi_key> <R> <slash>                  : "℟"  U211F  # RESPONSE
+<Multi_key> <V> <slash>                  : "℣"  U2123  # VERSICLE
+
 <Multi_key> <bar> <space> <period>       : "⁚"  U205A  # TWO DOT PUNCTUATION
 <Multi_key> <V> <space> <period>         : "⸪"  U2E2A  # TWO DOTS OVER ONE DOT PUNCTUATION
 <Multi_key> <asciicircum> <space> <period> : "⸫"  U2E2B  # ONE DOT OVER TWO DOTS PUNCTUATION
@@ -197,6 +203,10 @@ include "%L"
 <Multi_key> <underscore> <apostrophe> <minus> <space> : "˾"  U02FE  # MODIFIER LETTER OPEN SHELF (conflicts with ⍘, use [Return]_')
 <Multi_key> <underscore> <underscore> <less> <minus> <space> : "˿"  U02FF  # MODIFIER LETTER LOW LEFT ARROW (conflicts with ¯, use -^)
 <Multi_key> <2> <underscore> <space>     : "‗"  U2017  # DOUBLE LOW LINE
+<Multi_key> <t> <space>                  : "꜠"  UA720  # MODIFIER LETTER STRESS AND HIGH TONE
+<Multi_key> <F> <space>                  : "꜡"  UA721  # MODIFIER LETTER STRESS AND LOW TONE
+<Multi_key> <underscore> <underscore> <asciicircum> <space> : "ꞈ"  UA788  # MODIFIER LETTER LOW CIRCUMFLEX ACCENT (conflicts with ¯, use -^)
+<Multi_key> <parenright> <parenleft> <space> : "꭛"  UAB5B  # MODIFIER BREVE WITH INVERTED BREVE
 
 ########################
 # Combining diacritics #
@@ -739,7 +749,8 @@ include "%L"
 <Multi_key> <N> <I> <S>      : "₪"  U20AA  # NEW SHEQEL SIGN
 
 <Multi_key> <period> <slash> <period> : "⁒"  U2052  # COMMERCIAL MINUS SIGN
-
+<Multi_key> <O> <P> <space>           : "℗"  U2117  # SOUND RECORDING COPYRIGHT
+<Multi_key> <e> <s> <t>               : "℮"  U212E  # ESTIMATED SYMBOL
 
 ##############################
 # B. LATIN SCRIPT CHARACTERS #
@@ -6184,6 +6195,7 @@ include "%L"
 <Multi_key> <a> <t> <2> <g> <h>          : "ⵗ"  U2D57  # TIFINAGH LETTER TUAREG YAGH
 <Multi_key> <a> <t> <3> <g> <h>          : "ⵘ"  U2D58  # TIFINAGH LETTER AYER YAGH
 <Multi_key> <a> <t> <2> <z>              : "ⵤ"  U2D64  # TIFINAGH LETTER TAWELLEMET YAZ
+<Multi_key> <a> <t> <2> <e>              : "ⵦ"  U2D66  # TIFINAGH LETTER YE
 <Multi_key> <a> <t> <2> <o>              : "ⵧ"  U2D67  # TIFINAGH LETTER YO
 
 <Multi_key> <a> <t> <comma>              : "⵰"  U2D70  # TIFINAGH SEPARATOR MARK
@@ -11248,6 +11260,12 @@ include "%L"
 <Multi_key> <c> <c> <less> <c>     : "ꙡ"  UA661  # CYRILLIC SMALL LETTER REVERSED TSE (conflicts)
 <Multi_key> <c> <x> <C> <C> <H>    : "Ꚇ"  UA686  # CYRILLIC CAPITAL LETTER CCHE
 <Multi_key> <c> <x> <c> <c> <h>    : "ꚇ"  UA687  # CYRILLIC SMALL LETTER CCHE
+<Multi_key> <c> <x> <C> <E>        : "Ҽ"  U04BC  # CYRILLIC CAPITAL LETTER ABKHASIAN CHE
+<Multi_key> <c> <x> <c> <e>        : "ҽ"  U04BD  # CYRILLIC SMALL LETTER ABKHASIAN CHE
+<Multi_key> <c> <x> <comma> <C> <E> : "Ҿ"  U04BE  # CYRILLIC CAPITAL LETTER ABKHASIAN CHE WITH DESCENDER
+<Multi_key> <c> <x> <comma> <c> <e> : "ҿ"  U04BF  # CYRILLIC SMALL LETTER ABKHASIAN CHE WITH DESCENDER
+<Multi_key> <c> <x> <C> <J>        : "Ӌ"  U04CB  # CYRILLIC CAPITAL LETTER KHAKASSIAN CHE
+<Multi_key> <c> <x> <c> <j>        : "ӌ"  U04CC  # CYRILLIC SMALL LETTER KHAKASSIAN CHE
 <Multi_key> <c> <x> <C> <S>        : "Ꚑ"  UA690  # CYRILLIC CAPITAL LETTER TSSE
 <Multi_key> <c> <x> <c> <s>        : "ꚑ"  UA691  # CYRILLIC SMALL LETTER TSSE
 <Multi_key> <c> <x> <C> <W>        : "Ꚏ"  UA68E  # CYRILLIC CAPITAL LETTER TSWE
@@ -11258,6 +11276,8 @@ include "%L"
 <Multi_key> <c> <x> <d> <w>        : "ꚁ"  UA681  # CYRILLIC SMALL LETTER DWE
 <Multi_key> <c> <x> <less> <D> <Z> : "Ꙅ"  UA644  # CYRILLIC CAPITAL LETTER REVERSED DZE
 <Multi_key> <c> <x> <less> <d> <z> : "ꙅ"  UA645  # CYRILLIC SMALL LETTER REVERSED DZE
+<Multi_key> <c> <x> <D> <Z> <A>    : "Ӡ"  U04E0  # CYRILLIC CAPITAL LETTER ABKHASIAN DZE
+<Multi_key> <c> <x> <d> <z> <a>    : "ӡ"  U04E1  # CYRILLIC SMALL LETTER ABKHASIAN DZE
 <Multi_key> <c> <x> <D> <Z> <W>    : "Ꚃ"  UA682  # CYRILLIC CAPITAL LETTER DZWE
 <Multi_key> <c> <x> <d> <z> <w>    : "ꚃ"  UA683  # CYRILLIC SMALL LETTER DZWE
 <Multi_key> <c> <x> <D> <Z> <Z> <space> : "Ꚉ"  UA688  # CYRILLIC CAPITAL LETTER DZZE
@@ -11274,12 +11294,18 @@ include "%L"
 <Multi_key> <c> <x> <i> <1>        : "ӏ"  U04CF  # CYRILLIC SMALL LETTER PALOCHKA
 <Multi_key> <c> <x> <minus> <k>    : "ҡ"  U04A1  # CYRILLIC SMALL LETTER BASHKIR KA
 <Multi_key> <c> <x> <minus> <K>    : "Ҡ"  U04A0  # CYRILLIC CAPITAL LETTER BASHKIR KA
+<Multi_key> <c> <x> <K> <Q>        : "Ԟ"  U051E  # CYRILLIC CAPITAL LETTER ALEUT KA
+<Multi_key> <c> <x> <k> <q>        : "ԟ"  U051F  # CYRILLIC SMALL LETTER ALEUT KA
 <Multi_key> <c> <x> <L> <H>        : "Ԕ"  U0514  # CYRILLIC CAPITAL LETTER LHA
 <Multi_key> <c> <x> <L> <X>        : "Ԕ"  U0514  # CYRILLIC CAPITAL LETTER LHA
 <Multi_key> <c> <x> <l> <h>        : "ԕ"  U0515  # CYRILLIC SMALL LETTER LHA
 <Multi_key> <c> <x> <l> <x>        : "ԕ"  U0515  # CYRILLIC SMALL LETTER LHA
 <Multi_key> <c> <x> <N> <G>        : "Ҥ"  U04A4  # CYRILLIC CAPITAL LIGATURE EN GHE
 <Multi_key> <c> <x> <n> <g>        : "ҥ"  U04A5  # CYRILLIC SMALL LIGATURE EN GHE
+<Multi_key> <c> <x> <O> <h>        : "Ҩ"  U04A8  # CYRILLIC CAPITAL LETTER ABKHASIAN HA
+<Multi_key> <c> <x> <o> <h>        : "ҩ"  U04A9  # CYRILLIC SMALL LETTER ABKHASIAN HA
+<Multi_key> <c> <x> <Q>            : "Ԛ"  U051A  # CYRILLIC CAPITAL LETTER QA
+<Multi_key> <c> <x> <q>            : "ԛ"  U051B  # CYRILLIC SMALL LETTER QA
 <Multi_key> <c> <x> <R> <H>        : "Ԗ"  U0516  # CYRILLIC CAPITAL LETTER RHA
 <Multi_key> <c> <x> <R> <X>        : "Ԗ"  U0516  # CYRILLIC CAPITAL LETTER RHA
 <Multi_key> <c> <x> <r> <h>        : "ԗ"  U0517  # CYRILLIC SMALL LETTER RHA
@@ -11296,6 +11322,8 @@ include "%L"
 <Multi_key> <c> <x> <less> <t> <s> : "ꙡ"  UA661  # CYRILLIC SMALL LETTER REVERSED TSE
 <Multi_key> <c> <x> <T> <W>        : "Ꚍ"  UA68C  # CYRILLIC CAPITAL LETTER TWE
 <Multi_key> <c> <x> <t> <w>        : "ꚍ"  UA68D  # CYRILLIC SMALL LETTER TWE
+<Multi_key> <c> <x> <W>            : "Ԝ"  U051C  # CYRILLIC CAPITAL LETTER WE
+<Multi_key> <c> <x> <w>            : "ԝ"  U051D  # CYRILLIC SMALL LETTER WE
 <Multi_key> <c> <x> <Y> <bar>      : "Ү"  U04AE  # CYRILLIC CAPITAL LETTER STRAIGHT U
 <Multi_key> <c> <x> <y> <bar>      : "ү"  U04AF  # CYRILLIC SMALL LETTER STRAIGHT U
 <Multi_key> <c> <c> <less> <Y> <U> : "Ꙕ"  UA654  # CYRILLIC CAPITAL LETTER REVERSED YU (conflicts)
@@ -11305,6 +11333,8 @@ include "%L"
 <Multi_key> <c> <x> <Z> <W>        : "Ꚅ"  UA684  # CYRILLIC CAPITAL LETTER ZHWE
 <Multi_key> <c> <x> <z> <w>        : "ꚅ"  UA685  # CYRILLIC SMALL LETTER ZHWE
 
+<Multi_key> <c> <x> <k> <D> <space> : "Ԁ"  U0500  # CYRILLIC CAPITAL LETTER KOMI DE
+<Multi_key> <c> <x> <k> <d> <space> : "ԁ"  U0501  # CYRILLIC SMALL LETTER KOMI DE
 <Multi_key> <c> <x> <k> <D> <J>    : "Ԃ"  U0502  # CYRILLIC CAPITAL LETTER KOMI DJE
 <Multi_key> <c> <x> <k> <d> <j>    : "ԃ"  U0503  # CYRILLIC SMALL LETTER KOMI DJE
 <Multi_key> <c> <x> <k> <Z> <J>    : "Ԅ"  U0504  # CYRILLIC CAPITAL LETTER KOMI ZJE
@@ -11322,36 +11352,56 @@ include "%L"
 
 # archaic letters
 
-<Multi_key> <c> <x> <v> <A>          : "Ѧ"  U0466  # CYRILLIC CAPITAL LETTER LITTLE YUS
-<Multi_key> <c> <x> <v> <a>          : "ѧ"  U0467  # CYRILLIC SMALL LETTER LITTLE YUS
+<Multi_key> <c> <x> <v> <A>          : "Ѧ"  U0466  # CYRILLIC CAPITAL LETTER LITTLE YUS (ǎ)
+<Multi_key> <c> <x> <v> <a>          : "ѧ"  U0467  # CYRILLIC SMALL LETTER LITTLE YUS (ǎ)
+<Multi_key> <c> <x> <underscore> <v> <A> : "Ꙙ"  UA658  # CYRILLIC CAPITAL LETTER CLOSED LITTLE YUS
+<Multi_key> <c> <x> <underscore> <v> <a> : "ꙙ"  UA659  # CYRILLIC SMALL LETTER CLOSED LITTLE YUS
+<Multi_key> <c> <x> <D> <G>          : "Ꙉ"  UA648  # CYRILLIC CAPITAL LETTER DJERV
+<Multi_key> <c> <x> <d> <g>          : "ꙉ"  UA649  # CYRILLIC SMALL LETTER DJERV
 <Multi_key> <c> <x> <D> <Z> <l>      : "Ꙃ"  UA642  # CYRILLIC CAPITAL LETTER DZELO
 <Multi_key> <c> <x> <d> <z> <l>      : "ꙃ"  UA643  # CYRILLIC SMALL LETTER DZELO
-<Multi_key> <c> <x> <v> <E>          : "Ѣ"  U0462  # CYRILLIC CAPITAL LETTER YAT
-<Multi_key> <c> <x> <v> <e>          : "ѣ"  U0463  # CYRILLIC SMALL LETTER YAT
+<Multi_key> <c> <x> <v> <E>          : "Ѣ"  U0462  # CYRILLIC CAPITAL LETTER YAT (ě)
+<Multi_key> <c> <x> <v> <e>          : "ѣ"  U0463  # CYRILLIC SMALL LETTER YAT (ě)
 <Multi_key> <c> <x> <grave> <F>      : "Ѳ"  U0472  # CYRILLIC CAPITAL LETTER FITA
 <Multi_key> <c> <x> <grave> <f>      : "ѳ"  U0473  # CYRILLIC SMALL LETTER FITA
 <Multi_key> <c> <x> <I> <A>          : "Ꙗ"  UA656  # CYRILLIC CAPITAL LETTER IOTIFIED A
 <Multi_key> <c> <x> <i> <a>          : "ꙗ"  UA657  # CYRILLIC SMALL LETTER IOTIFIED A
 <Multi_key> <c> <x> <I> <v> <A>      : "Ѩ"  U0468  # CYRILLIC CAPITAL LETTER IOTIFIED LITTLE YUS
 <Multi_key> <c> <x> <i> <v> <a>      : "ѩ"  U0469  # CYRILLIC SMALL LETTER IOTIFIED LITTLE YUS
+<Multi_key> <c> <x> <I> <underscore> <v> <A> : "Ꙝ"  UA65C  # CYRILLIC CAPITAL LETTER IOTIFIED CLOSED LITTLE YUS
+<Multi_key> <c> <x> <i> <underscore> <v> <a> : "ꙝ"  UA65D  # CYRILLIC SMALL LETTER IOTIFIED CLOSED LITTLE YUS
 <Multi_key> <c> <x> <I> <E>          : "Ѥ"  U0464  # CYRILLIC CAPITAL LETTER IOTIFIED E
 <Multi_key> <c> <x> <i> <e>          : "ѥ"  U0465  # CYRILLIC SMALL LETTER IOTIFIED E
+<Multi_key> <c> <x> <I> <J>          : "Ꙇ"  UA646  # CYRILLIC CAPITAL LETTER IOTA
+<Multi_key> <c> <x> <i> <j>          : "ꙇ"  UA647  # CYRILLIC SMALL LETTER IOTA
+<Multi_key> <c> <x> <i> <v> <E>      : "Ꙓ"  UA652  # CYRILLIC CAPITAL LETTER IOTIFIED YAT
+<Multi_key> <c> <x> <i> <v> <e>      : "ꙓ"  UA653  # CYRILLIC SMALL LETTER IOTIFIED YAT
 <Multi_key> <c> <x> <I> <v> <O>      : "Ѭ"  U046C  # CYRILLIC CAPITAL LETTER IOTIFIED BIG YUS
 <Multi_key> <c> <x> <i> <v> <o>      : "ѭ"  U046D  # CYRILLIC SMALL LETTER IOTIFIED BIG YUS
 <Multi_key> <c> <x> <X>              : "Ѯ"  U046E  # CYRILLIC CAPITAL LETTER KSI
 <Multi_key> <c> <x> <x>              : "ѯ"  U046F  # CYRILLIC SMALL LETTER KSI
-<Multi_key> <c> <x> <v> <O>          : "Ѫ"  U046A  # CYRILLIC CAPITAL LETTER BIG YUS
-<Multi_key> <c> <x> <v> <o>          : "ѫ"  U046B  # CYRILLIC SMALL LETTER BIG YUS
+<Multi_key> <c> <x> <v> <O>          : "Ѫ"  U046A  # CYRILLIC CAPITAL LETTER BIG YUS (ǒ)
+<Multi_key> <c> <x> <v> <o>          : "ѫ"  U046B  # CYRILLIC SMALL LETTER BIG YUS (ǒ)
+<Multi_key> <c> <x> <underscore> <v> <O> : "Ꙛ"  UA65A  # CYRILLIC CAPITAL LETTER BLENDED YUS
+<Multi_key> <c> <x> <underscore> <v> <o> : "ꙛ"  UA65B  # CYRILLIC SMALL LETTER BLENDED YUS
+<Multi_key> <c> <x> <less> <O>       : "Ѻ"  U047A  # CYRILLIC CAPITAL LETTER ROUND OMEGA
+<Multi_key> <c> <x> <less> <o>       : "ѻ"  U047B  # CYRILLIC SMALL LETTER ROUND OMEGA
+<Multi_key> <c> <x> <O> <space>      : "Ꙍ"  UA64C  # CYRILLIC CAPITAL LETTER BROAD OMEGA
+<Multi_key> <c> <x> <o> <space>      : "ꙍ"  UA64D  # CYRILLIC SMALL LETTER BROAD OMEGA
+<Multi_key> <c> <x> <O> <exclam>     : "Ѽ"  U047C  # CYRILLIC CAPITAL LETTER OMEGA WITH TITLO
+<Multi_key> <c> <x> <o> <exclam>     : "ѽ"  U047D  # CYRILLIC SMALL LETTER OMEGA WITH TITLO
 <Multi_key> <c> <x> <O> <O>          : "Ꚙ"  UA698  # CYRILLIC CAPITAL LETTER DOUBLE O
 <Multi_key> <c> <x> <o> <o>          : "ꚙ"  UA699  # CYRILLIC SMALL LETTER DOUBLE O
-<Multi_key> <c> <x> <O> <Y>          : "Ѹ"  U0478  # CYRILLIC CAPITAL LETTER UK
-<Multi_key> <c> <x> <o> <y>          : "ѹ"  U0479  # CYRILLIC SMALL LETTER UK
+<Multi_key> <c> <x> <O> <Y>          : "Ѹ"  U0478  # CYRILLIC CAPITAL LETTER UK (use cxUK for Ꙋ)
+<Multi_key> <c> <x> <o> <y>          : "ѹ"  U0479  # CYRILLIC SMALL LETTER UK (use cxuk for ꙋ)
 <Multi_key> <c> <x> <O> <plus>       : "Ꚛ"  UA69A  # CYRILLIC CAPITAL LETTER CROSSED O
 <Multi_key> <c> <x> <o> <plus>       : "ꚛ"  UA69B  # CYRILLIC SMALL LETTER CROSSED O
 <Multi_key> <c> <x> <P> <S>          : "Ѱ"  U0470  # CYRILLIC CAPITAL LETTER PSI
 <Multi_key> <c> <x> <p> <s>          : "ѱ"  U0471  # CYRILLIC SMALL LETTER PSI
 <Multi_key> <c> <c> <Q>              : "Ҁ"  U0480  # CYRILLIC CAPITAL LETTER KOPPA (conflicts)
 <Multi_key> <c> <c> <q>              : "ҁ"  U0481  # CYRILLIC SMALL LETTER KOPPA (conflicts)
+<Multi_key> <c> <x> <U> <K>          : "Ꙋ"  UA64A  # CYRILLIC CAPITAL LETTER MONOGRAPH UK
+<Multi_key> <c> <x> <u> <k>          : "ꙋ"  UA64B  # CYRILLIC SMALL LETTER MONOGRAPH UK
 <Multi_key> <c> <x> <V>              : "Ѵ"  U0474  # CYRILLIC CAPITAL LETTER IZHITSA
 <Multi_key> <c> <x> <v> <space>      : "ѵ"  U0475  # CYRILLIC SMALL LETTER IZHITSA
 <Multi_key> <c> <c> <W>              : "Ѡ"  U0460  # CYRILLIC CAPITAL LETTER OMEGA (conflicts)
@@ -11362,8 +11412,25 @@ include "%L"
 <Multi_key> <c> <x> <y> <n>          : "ꙟ"  UA65F  # CYRILLIC SMALL LETTER YN
 <Multi_key> <c> <x> <Z> <l>          : "Ꙁ"  UA640  # CYRILLIC CAPITAL LETTER ZEMLYA
 <Multi_key> <c> <x> <z> <l>          : "ꙁ"  UA641  # CYRILLIC SMALL LETTER ZEMLYA
+
 <Multi_key> <c> <x> <quotedbl> <quotedbl> <I> : "Ꙑ"  UA650  # CYRILLIC CAPITAL LETTER YERU WITH BACK YER
 <Multi_key> <c> <x> <quotedbl> <quotedbl> <i> : "ꙑ"  UA651  # CYRILLIC SMALL LETTER YERU WITH BACK YER
+<Multi_key> <c> <x> <apostrophe> <apostrophe> <minus> : "Ҍ"  U048C  # CYRILLIC CAPITAL LETTER SEMISOFT SIGN
+<Multi_key> <c> <x> <apostrophe> <minus> : "ҍ"  U048D  # CYRILLIC SMALL LETTER SEMISOFT SIGN
+<Multi_key> <c> <x> <quotedbl> <apostrophe> : "Ꙏ"  UA64E  # CYRILLIC CAPITAL LETTER NEUTRAL YER
+<Multi_key> <c> <x> <apostrophe> <quotedbl> : "ꙏ"  UA64F  # CYRILLIC SMALL LETTER NEUTRAL YER
+
+# variant forms
+
+<Multi_key> <c> <x> <v> <parenleft>  : "ᲀ"  U1C80  # CYRILLIC SMALL LETTER ROUNDED VE
+<Multi_key> <c> <x> <d> <bar>        : "ᲁ"  U1C81  # CYRILLIC SMALL LETTER LONG-LEGGED DE
+<Multi_key> <c> <x> <o> <bar>        : "ᲂ"  U1C82  # CYRILLIC SMALL LETTER NARROW O
+<Multi_key> <c> <x> <s> <equal>      : "ᲃ"  U1C83  # CYRILLIC SMALL LETTER WIDE ES
+<Multi_key> <c> <x> <t> <7>          : "ᲄ"  U1C84  # CYRILLIC SMALL LETTER TALL TE
+<Multi_key> <c> <x> <t> <m>          : "ᲅ"  U1C85  # CYRILLIC SMALL LETTER THREE-LEGGED TE
+<Multi_key> <c> <x> <v> <k>          : "ᲈ"  U1C88  # CYRILLIC SMALL LETTER UNBLENDED UK
+<Multi_key> <c> <x> <bar> <quotedbl> : "ᲆ"  U1C86  # CYRILLIC SMALL LETTER TALL HARD SIGN
+<Multi_key> <c> <x> <bar> <v> <e>    : "ᲇ"  U1C87  # CYRILLIC SMALL LETTER TALL YAT
 
 # diacritics
 
@@ -11602,6 +11669,8 @@ include "%L"
 <Multi_key> <c> <c> <asciicircum> <asciicircum> <s> <t> <Return> : "ⷵ"  U2DF5  # COMBINING CYRILLIC LETTER ES-TE (conflicts)
 <Multi_key> <c> <c> <asciicircum> <asciicircum> <a> <Return> : "ⷶ"  U2DF6  # COMBINING CYRILLIC LETTER A (conflicts)
 <Multi_key> <c> <c> <asciicircum> <asciicircum> <y> <e> <Return> : "ⷷ"  U2DF7  # COMBINING CYRILLIC LETTER IE (conflicts)
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <d> <g> <Return> : "ⷸ"  U2DF8  # COMBINING CYRILLIC LETTER DJERV
+<Multi_key> <c> <x> <asciicircum> <asciicircum> <u> <k> <Return> : "ⷹ"  U2DF9  # COMBINING CYRILLIC LETTER MONOGRAPH UK
 <Multi_key> <c> <x> <asciicircum> <asciicircum> <v> <e> <Return> : "ⷺ"  U2DFA  # COMBINING CYRILLIC LETTER YAT
 <Multi_key> <c> <c> <asciicircum> <asciicircum> <y> <u> <Return> : "ⷻ"  U2DFB  # COMBINING CYRILLIC LETTER YU (conflicts)
 <Multi_key> <c> <x> <asciicircum> <asciicircum> <i> <a> <Return> : "ⷼ"  U2DFC  # COMBINING CYRILLIC LETTER IOTIFIED A
@@ -11619,6 +11688,31 @@ include "%L"
 <Multi_key> <c> <c> <asciicircum> <asciicircum> <w> <Return> : "ꙻ"  UA67B  # COMBINING CYRILLIC LETTER OMEGA (conflicts)
 <Multi_key> <c> <c> <asciicircum> <asciicircum> <f> <Return> : "ꚞ"  UA69E  # COMBINING CYRILLIC LETTER EF (conflicts)
 <Multi_key> <c> <x> <asciicircum> <asciicircum> <i> <e> <Return> : "ꚟ"  UA69F  # COMBINING CYRILLIC LETTER IOTIFIED E
+
+# numerals
+
+<Multi_key> <c> <numbersign> <1> <k> : "҂"  U0482  # CYRILLIC THOUSANDS SIGN
+<Multi_key> <c> <numbersign> <1> <0> <k> <Return> : "⃝"  U20DD  # COMBINING ENCLOSING CIRCLE
+<Multi_key> <c> <numbersign> <1> <0> <0> <k> <Return> : "҈"  U0488  # COMBINING CYRILLIC HUNDRED THOUSANDS SIGN
+<Multi_key> <c> <numbersign> <1> <m> <Return> : "҉"  U0489  # COMBINING CYRILLIC MILLIONS SIGN
+<Multi_key> <c> <numbersign> <1> <0> <m> <Return> : "꙰"  UA670  # COMBINING CYRILLIC TEN MILLIONS SIGN
+<Multi_key> <c> <numbersign> <1> <0> <0> <m> <Return> : "꙱"  UA671  # COMBINING CYRILLIC HUNDRED MILLIONS SIGN
+<Multi_key> <c> <numbersign> <1> <b> <Return> : "꙲"  UA672  # COMBINING CYRILLIC THOUSAND MILLIONS SIGN
+
+# punctuation
+
+<Multi_key> <c> <semicolon> <asciitilde> <Return> : "҃"  U0483  # COMBINING CYRILLIC TITLO
+<Multi_key> <c> <semicolon> <apostrophe> <Return> : "҄"  U0484  # COMBINING CYRILLIC PALATALIZATION
+<Multi_key> <c> <semicolon> <grave> <Return> : "҇"  U0487  # COMBINING CYRILLIC POKRYTIE
+<Multi_key> <c> <semicolon> <bracketleft> <Return> : "꙯"  UA66F  # COMBINING CYRILLIC VZMET
+<Multi_key> <c> <semicolon> <parenright> <Return> : "꙼"  UA67C  # COMBINING CYRILLIC KAVYKA
+<Multi_key> <c> <semicolon> <y> <Return> : "꙽"  UA67D  # COMBINING CYRILLIC PAYEROK
+<Multi_key> <c> <semicolon> <less> <asciitilde> <Return> : "︮"  UFE2E  # COMBINING CYRILLIC TITLO LEFT HALF
+<Multi_key> <c> <semicolon> <greater> <asciitilde> <Return> : "︯"  UFE2F  # COMBINING CYRILLIC TITLO RIGHT HALF
+
+<Multi_key> <c> <semicolon> <asterisk> : "꙳"  UA673  # SLAVONIC ASTERISK
+<Multi_key> <c> <semicolon> <parenright> <space> : "꙾"  UA67E  # CYRILLIC KAVYKA
+<Multi_key> <c> <semicolon> <y> <space> : "ꙿ"  UA67F  # CYRILLIC PAYEROK
 
 # (g/G = Glagolitic)
 
@@ -14026,6 +14120,8 @@ include "%L"
 <Multi_key> <g> <c> <w>     : "ϝ"  U03DD   # GREEK SMALL LETTER DIGAMMA
 <Multi_key> <g> <x> <P> <W> : "Ͷ"  U0376  # GREEK CAPITAL LETTER PAMPHYLIAN DIGAMMA
 <Multi_key> <g> <x> <P> <w> : "ͷ"  U0377  # GREEK SMALL LETTER PAMPHYLIAN DIGAMMA
+<Multi_key> <g> <x> <j>     : "℩"  U2129  # TURNED GREEK SMALL LETTER IOTA
+<Multi_key> <g> <x> <less> <i> : "℩"  U2129  # TURNED GREEK SMALL LETTER IOTA
 
 <Multi_key> <g> <c> <J>     : "Ϳ"  U037F   # GREEK CAPITAL LETTER YOT
 <Multi_key> <g> <c> <j>     : "ϳ"  U03F3   # GREEK LETTER YOT
@@ -15343,6 +15439,7 @@ include "%L"
 <Multi_key> <G> <c> <grave> <e> : "ჺ"  U10FA  # GEORGIAN LETTER AIN (`)
 <Multi_key> <G> <c> <Multi_key> <m> <v> : "ჷ"  U10F7  # GEORGIAN LETTER YN (ɯ)
 <Multi_key> <G> <c> <Multi_key> <slash> <i> : "ჷ"  U10F7  # GEORGIAN LETTER YN (ɨ)
+<Multi_key> <G> <c> <apostrophe> <a> : "ჸ"  U10F8  # GEORGIAN LETTER ELIFI (')
 <Multi_key> <G> <c> <Multi_key> <g> <h> : "ჹ"  U10F9  # GEORGIAN LETTER TURNED GAN (ɣ)
 <Multi_key> <G> <c> <Multi_key> <e> <e> : "ჽ"  U10FD  # GEORGIAN LETTER AEN (ə)
 <Multi_key> <G> <c> <asciicircum> <g> : "ჾ"  U10FE  # GEORGIAN LETTER HARD SIGN (ˠ)
@@ -15952,6 +16049,8 @@ include "%L"
 <Multi_key> <h> <s> <semicolon> <slash> <space> : "࠼"  U083C  # SAMARITAN PUNCTUATION ARKAANU
 <Multi_key> <h> <s> <semicolon> <slash> <period> <quotedbl> : "࠽"  U083D  # SAMARITAN PUNCTUATION SOF MASHFAAT
 <Multi_key> <h> <s> <semicolon> <o> : "࠾"  U083E  # SAMARITAN PUNCTUATION ANNAAU
+
+<Multi_key> <h> <s> <quotedbl> : "⅏"  U214F  # SYMBOL FOR SAMARITAN SOURCE
 
 # (U = Ugaritic)
 
@@ -17141,6 +17240,7 @@ include "HangulSyllables"
 
 # punctuation
 
+<Multi_key> <k> <semicolon> <space> : "ㅤ"  U3164  # HANGUL FILLER
 <Multi_key> <k> <semicolon> <period> <Return> : "〮"  U302E  # HANGUL SINGLE DOT TONE MARK
 <Multi_key> <k> <semicolon> <colon> <Return> : "〯"  U302F  # HANGUL DOUBLE DOT TONE MARK
 
@@ -18826,6 +18926,10 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <r> <1> <6> : "ᛮ"  U16EE  # RUNIC ARLAUG SYMBOL
 <Multi_key> <o> <i> <r> <1> <7> : "ᛯ"  U16EF  # RUNIC TVIMADUR SYMBOL
 <Multi_key> <o> <i> <r> <1> <8> : "ᛰ"  U16F0  # RUNIC BELGTHOR SYMBOL
+
+<Multi_key> <o> <i> <r> <period> : "᛫"  U16EB  # RUNIC SINGLE PUNCTUATION
+<Multi_key> <o> <i> <r> <colon> : "᛬"  U16EC  # RUNIC MULTIPLE PUNCTUATION
+<Multi_key> <o> <i> <r> <plus>  : "᛭"  U16ED  # RUNIC CROSS PUNCTUATION
 
 # (t = Old Turkic) " used to indicate back vowel consonants
 
@@ -21205,6 +21309,7 @@ include "HangulSyllables"
 <Multi_key> <z> <p> <z> <space> : "𖼻"  U16F3B  # MIAO LETTER ZA
 <Multi_key> <z> <p> <z> <s> <space> : "𖼼"  U16F3C  # MIAO LETTER ZSA
 <Multi_key> <z> <p> <z> <z> <space> : "𖼽"  U16F3D  # MIAO LETTER ZZA
+<Multi_key> <z> <p> <2> <z> <z> : "𖼿"  U16F3F  # MIAO LETTER ARCHAIC ZZA
 <Multi_key> <z> <p> <z> <z> <s> <space> : "𖼾"  U16F3E  # MIAO LETTER ZZSA
 <Multi_key> <z> <p> <z> <z> <y> : "𖽀"  U16F40  # MIAO LETTER ZZYA
 <Multi_key> <z> <p> <z> <z> <s> <y> : "𖽁"  U16F41  # MIAO LETTER ZZSYA
@@ -24888,6 +24993,7 @@ include "Logograms"
 <Multi_key> <a> <l> <p> <h> <a>         : "α"  U03B1   # GREEK SMALL LETTER ALPHA
 <Multi_key> <b> <e> <t> <a>             : "β"  U03B2   # GREEK SMALL LETTER BETA (conflicts with ĕ, use ue)
 <Multi_key> <b> <e> <t> <h>             : "ℶ"  U2136   # BET SYMBOL (conflicts with ĕ, use ue)
+<Multi_key> <d> <a> <l> <e> <t>         : "ℸ"  U2138   # DALET SYMBOL
 <Multi_key> <d> <e> <l> <space>         : "∇"  U2207   # NABLA (alternatively nabla)
 <Multi_key> <d> <e> <l> <t> <a>         : "δ"  U03B4   # GREEK SMALL LETTER DELTA
 <Multi_key> <e> <p> <s> <i> <l> <o> <n> : "ε"  U03B5   # GREEK SMALL LETTER EPSILON
