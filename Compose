@@ -6791,6 +6791,7 @@ include "%L"
 <Multi_key> <b> <d> <period> <t> <space> : "ट" U091F   # DEVANAGARI LETTER TTA
 <Multi_key> <b> <d> <period> <t> <h>     : "ठ" U0920   # DEVANAGARI LETTER TTHA
 <Multi_key> <b> <d> <period> <d> <space> : "ड" U0921   # DEVANAGARI LETTER DDA
+<Multi_key> <b> <d> <M> <period> <d>     : "ॸ"  U0978  # DEVANAGARI LETTER MARWARI DDA
 <Multi_key> <b> <d> <period> <d> <h>     : "ढ" U0922   # DEVANAGARI LETTER DDHA
 <Multi_key> <b> <d> <period> <n>         : "ण" U0923   # DEVANAGARI LETTER NNA
 <Multi_key> <b> <d> <t> <space>          : "त" U0924   # DEVANAGARI LETTER TA
@@ -6830,6 +6831,7 @@ include "%L"
 <Multi_key> <b> <d> <z> <h>              : "ॹ"  U0979  # DEVANAGARI LETTER ZHA
 <Multi_key> <b> <d> <Y>                  : "ॺ"  U097A  # DEVANAGARI LETTER HEAVY YA
 <Multi_key> <b> <d> <apostrophe> <space> : "ॽ"  U097D  # DEVANAGARI LETTER GLOTTAL STOP
+<Multi_key> <b> <d> <question>           : "ꣻ"  UA8FB  # DEVANAGARI HEADSTROKE
 
 # Combining consonants
 
@@ -6841,7 +6843,7 @@ include "%L"
 <Multi_key> <b> <d> <asciicircum> <asciicircum> <r> <Return> : "꣯"  UA8EF  # COMBINING DEVANAGARI LETTER RA
 <Multi_key> <b> <d> <asciicircum> <asciicircum> <v> <Return> : "꣰"  UA8F0  # COMBINING DEVANAGARI LETTER VI
 
-# Independent vowels
+# Independent vowels (short vowels preceded by . to avoid ambiguity)
 
 <Multi_key> <b> <d> <period> <a> <space>      : "ऄ" U0904   # DEVANAGARI LETTER SHORT A
 <Multi_key> <b> <d> <a> <space>               : "अ" U0905   # DEVANAGARI LETTER A
@@ -6854,7 +6856,6 @@ include "%L"
 <Multi_key> <b> <d> <comma> <l> <space>       : "ऌ" U090C   # DEVANAGARI LETTER VOCALIC L
 <Multi_key> <b> <d> <asciicircum> <e> <space> : "ऍ" U090D   # DEVANAGARI LETTER CANDRA E
 <Multi_key> <b> <d> <period> <e> <space>      : "ऎ" U090E   # DEVANAGARI LETTER SHORT E
-<Multi_key> <b> <d> <e> <space>               : "ऎ" U090E   # DEVANAGARI LETTER SHORT E
 <Multi_key> <b> <d> <e> <e> <space>           : "ए" U090F   # DEVANAGARI LETTER E
 <Multi_key> <b> <d> <a> <i> <space>           : "ऐ" U0910   # DEVANAGARI LETTER AI
 <Multi_key> <b> <d> <asciicircum> <o> <space> : "ऑ" U0911   # DEVANAGARI LETTER CANDRA O
@@ -6866,9 +6867,11 @@ include "%L"
 <Multi_key> <b> <d> <asciicircum> <a> <space> : "ॲ" U0972   # DEVANAGARI LETTER CANDRA A
 <Multi_key> <b> <d> <o> <e> <space>           : "ॳ" U0973   # DEVANAGARI LETTER OE
 <Multi_key> <b> <d> <o> <o> <e> <space>       : "ॴ" U0974   # DEVANAGARI LETTER OOE
+<Multi_key> <b> <d> <period> <a> <u> <space>  : "ॵ" U0975   # DEVANAGARI LETTER AW (SHORT AU)
 <Multi_key> <b> <d> <a> <w> <space>           : "ॵ" U0975   # DEVANAGARI LETTER AW
 <Multi_key> <b> <d> <u> <e> <space>           : "ॶ" U0976   # DEVANAGARI LETTER UE
 <Multi_key> <b> <d> <u> <u> <e> <space>       : "ॷ" U0977   # DEVANAGARI LETTER UUE
+<Multi_key> <b> <d> <period> <a> <i> <space>  : "ꣾ"  UA8FE  # DEVANAGARI LETTER AY (SHORT AI)
 
 # Dependent vowels
 
@@ -6883,13 +6886,13 @@ include "%L"
 <Multi_key> <b> <d> <comma> <r> <r> <Return>   : "ॄ" U0944   # DEVANAGARI VOWEL SIGN VOCALIC RR
 <Multi_key> <b> <d> <asciicircum> <e> <Return> : "ॅ" U0945   # DEVANAGARI VOWEL SIGN CANDRA E
 <Multi_key> <b> <d> <period> <e> <Return>      : "ॆ" U0946   # DEVANAGARI VOWEL SIGN SHORT E
-<Multi_key> <b> <d> <e> <Return>               : "ॆ" U0946   # DEVANAGARI VOWEL SIGN SHORT E
 <Multi_key> <b> <d> <e> <e> <Return>           : "े" U0947   # DEVANAGARI VOWEL SIGN E
 <Multi_key> <b> <d> <a> <i> <Return>           : "ै" U0948   # DEVANAGARI VOWEL SIGN AI
 <Multi_key> <b> <d> <asciicircum> <o> <Return> : "ॉ" U0949   # DEVANAGARI VOWEL SIGN CANDRA O
 <Multi_key> <b> <d> <period> <o> <Return>      : "ॊ" U094A   # DEVANAGARI VOWEL SIGN SHORT O
 <Multi_key> <b> <d> <o> <o> <Return>           : "ो" U094B   # DEVANAGARI VOWEL SIGN O
 <Multi_key> <b> <d> <a> <u> <Return>           : "ौ" U094C   # DEVANAGARI VOWEL SIGN AU
+<Multi_key> <b> <d> <period> <a> <u> <Return>  : "ॏ" U094F   # DEVANAGARI VOWEL SIGN AW (SHORT AU)
 <Multi_key> <b> <d> <a> <w> <Return>           : "ॏ" U094F   # DEVANAGARI VOWEL SIGN AW
 <Multi_key> <b> <d> <u> <e> <Return>           : "ॖ" U0956   # DEVANAGARI VOWEL SIGN UE
 <Multi_key> <b> <d> <u> <u> <e> <Return>       : "ॗ" U0957   # DEVANAGARI VOWEL SIGN UUE
@@ -6898,6 +6901,7 @@ include "%L"
 <Multi_key> <b> <d> <0> <Return>               : "्" U094D   # DEVANAGARI SIGN VIRAMA
 <Multi_key> <b> <d> <p> <e> <Return>           : "ॎ"  U094E  # DEVANAGARI VOWEL SIGN PRISHTHAMATRA E
 <Multi_key> <b> <d> <asciicircum> <e> <e> <Return> : "ॕ"  U0955  # DEVANAGARI VOWEL SIGN CANDRA LONG E
+<Multi_key> <b> <d> <period> <a> <i> <Return>  : "ꣿ"  UA8FF  # DEVANAGARI VOWEL SIGN AY (SHORT AI)
 
 # Other signs
 
@@ -6927,9 +6931,26 @@ include "%L"
 
 # Punctuation
 
-<Multi_key> <b> <d> <bar>         : "।" U0964   # DEVANAGARI DANDA
-<Multi_key> <b> <d> <2> <bar>     : "॥" U0965   # DEVANAGARI DOUBLE DANDA
-<Multi_key> <b> <d> <o> <period>  : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
+<Multi_key> <b> <d> <bar>                : "।" U0964   # DEVANAGARI DANDA
+<Multi_key> <b> <d> <2> <bar>            : "॥" U0965   # DEVANAGARI DOUBLE DANDA
+<Multi_key> <b> <d> <o> <period>         : "॰" U0970   # DEVANAGARI ABBREVIATION SIGN
+<Multi_key> <b> <d> <period> <period>    : "꣹"  UA8F9  # DEVANAGARI GAP FILLER
+<Multi_key> <b> <d> <period> <ampersand> : "꣸"  UA8F8  # DEVANAGARI SIGN PUSHPIKA
+<Multi_key> <b> <d> <asciicircum> <v>    : "꣺"  UA8FA  # DEVANAGARI CARET
+<Multi_key> <b> <d> <Insert>             : "꣺"  UA8FA  # DEVANAGARI CARET
+
+# Bhale mīṇḍu
+
+<Multi_key> <b> <d> <bracketleft>         : "𑬀"  U11B00  # DEVANAGARI HEAD MARK
+<Multi_key> <b> <d> <minus> <bracketleft> : "𑬁"  U11B01  # DEVANAGARI HEAD MARK WITH HEADSTROKE
+<Multi_key> <b> <d> <B> : "𑬂"  U11B02  # DEVANAGARI SIGN BHALE
+<Multi_key> <b> <d> <parenleft> <B> : "𑬃"  U11B03  # DEVANAGARI SIGN BHALE WITH HOOK
+<Multi_key> <b> <d> <minus> <B> : "𑬄"  U11B04  # DEVANAGARI SIGN EXTENDED BHALE
+<Multi_key> <b> <d> <parenleft> <minus> <B> : "𑬅"  U11B05  # DEVANAGARI SIGN EXTENDED BHALE WITH HOOK
+<Multi_key> <b> <d> <5> <B> : "𑬆"  U11B06  # DEVANAGARI SIGN WESTERN FIVE-LIKE BHALE
+<Multi_key> <b> <d> <9> <B> : "𑬇"  U11B07  # DEVANAGARI SIGN WESTERN NINE-LIKE BHALE
+<Multi_key> <b> <d> <less> <9> <B> : "𑬈"  U11B08  # DEVANAGARI SIGN REVERSED NINE-LIKE BHALE
+<Multi_key> <b> <d> <bracketright> : "𑬉"  U11B09  # DEVANAGARI SIGN MINDU
 
 # Numerals
 
