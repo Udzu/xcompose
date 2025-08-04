@@ -883,8 +883,8 @@ include "%L"
 <Multi_key> <j> <j>                 : "ʲ"  U02B2   # MODIFIER LETTER SMALL J
 <Multi_key> <n> <n>                 : "ⁿ"  U207F   # SUPERSCRIPT LATIN SMALL LETTER N
 <Multi_key> <w> <w>                 : "ʷ"  U02B7   # MODIFIER LETTER SMALL W
-<Multi_key> <C> <c>                 : "˓"  U02D3   # MODIFIER LETTER CENTRED LEFT HALF RING
-<Multi_key> <C> <less> <c>          : "˒"  U02D2   # MODIFIER LETTER CENTRED RIGHT HALF RING (conflicts with Č, use vC)
+<Multi_key> <C> <parenleft>         : "˓"  U02D3   # MODIFIER LETTER CENTRED LEFT HALF RING
+<Multi_key> <C> <parenright>        : "˒"  U02D2   # MODIFIER LETTER CENTRED RIGHT HALF RING
 <Multi_key> <T> <T>                 : "˕"  U02D5   # MODIFIER LETTER DOWN TACK
 <Multi_key> <T> <v> <T>             : "˔"  U02D4   # MODIFIER LETTER UP TACK
 <Multi_key> <T> <less> <T>          : "꭪"  UAB6A   # MODIFIER LETTER LEFT TACK (conflicts with Ť, use vT)
@@ -4021,6 +4021,7 @@ include "%L"
 
 <Multi_key> <a> <x> <asciitilde> <a>     : "آ"  U0622   # ARABIC LETTER ALEF WITH MADDA ABOVE
 <Multi_key> <a> <x> <2> <a>              : "أ"  U0623   # ARABIC LETTER ALEF WITH HAMZA ABOVE
+<Multi_key> <a> <x> <6> <a>              : "ٱ"  U0671  # ARABIC LETTER ALEF WASLA
 <Multi_key> <a> <x> <asciitilde> <2> <a> : "ٲ"  U0672  # ARABIC LETTER ALEF WITH WAVY HAMZA ABOVE
 <Multi_key> <a> <x> <underscore> <2> <a> : "إ"  U0625   # ARABIC LETTER ALEF WITH HAMZA BELOW
 <Multi_key> <a> <x> <numbersign> <2> <a> : "ݳ"  U0773  # ARABIC LETTER ALEF WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
@@ -4390,6 +4391,8 @@ include "%L"
 <Multi_key> <a> <F> <less> <asciitilde> <a> : "ﺂ"  UFE82  # ARABIC LETTER ALEF WITH MADDA ABOVE FINAL FORM
 <Multi_key> <a> <F> <space> <2> <a> : "ﺃ"  UFE83  # ARABIC LETTER ALEF WITH HAMZA ABOVE ISOLATED FORM
 <Multi_key> <a> <F> <less> <2> <a> : "ﺄ"  UFE84  # ARABIC LETTER ALEF WITH HAMZA ABOVE FINAL FORM
+<Multi_key> <a> <F> <space> <6> <a> : "ﭐ"  UFB50  # ARABIC LETTER ALEF WASLA ISOLATED FORM
+<Multi_key> <a> <F> <less> <6> <a> : "ﭑ"  UFB51  # ARABIC LETTER ALEF WASLA FINAL FORM
 <Multi_key> <a> <F> <space> <2> <w> : "ﺅ"  UFE85  # ARABIC LETTER WAW WITH HAMZA ABOVE ISOLATED FORM
 <Multi_key> <a> <F> <space> <2> <u> : "ﺅ"  UFE85  # ARABIC LETTER WAW WITH HAMZA ABOVE ISOLATED FORM
 <Multi_key> <a> <F> <less> <2> <w> : "ﺆ"  UFE86  # ARABIC LETTER WAW WITH HAMZA ABOVE FINAL FORM
@@ -12199,9 +12202,211 @@ include "%L"
 # (C) ConScripts # 
 ##################
 
-# covers Cherokee, Deseret, Inuktitut Syllabics, Kayah Li, Medefeidrin, Mru, Nag Mundari,
-# Nyiakeng Puachue Hmong, Ol Chiki, Old Onal, Osage, Pahawh Hmong, Pau Cin Hau, Shavian, 
-# Sora Sompeng, Sunuwar, Tangsa, Toto, Wancho & Warang Citi
+# covers Carrier Syllabics, Cherokee, Cree Syllabics, Deseret, Inuktitut Syllabics, Kayah Li,
+# Medefeidrin, Mru, Nag Mundari, Nyiakeng Puachue Hmong, Ol Chiki, Old Onal, Osage, Pahawh Hmong,
+# Pau Cin Hau, Shavian, Sora Sompeng, Sunuwar, Tangsa, Toto, Wancho & Warang Citi
+
+# (c = Carrier Syllabics) see https://www.ydli.org/dakinfo/dulkwah.htm
+
+<Multi_key> <C> <c> <o> <o> : "ᐁ"  U1401  # CANADIAN SYLLABICS E
+<Multi_key> <C> <c> <o> <space> : "ᐃ"  U1403  # CANADIAN SYLLABICS I
+<Multi_key> <C> <c> <u> : "ᐅ"  U1405  # CANADIAN SYLLABICS O
+<Multi_key> <C> <c> <e> : "ᐈ"  U1408  # CANADIAN SYLLABICS CARRIER EE
+<Multi_key> <C> <c> <i> : "ᐉ"  U1409  # CANADIAN SYLLABICS CARRIER I
+<Multi_key> <C> <c> <a> : "ᐊ"  U140A  # CANADIAN SYLLABICS A
+<Multi_key> <C> <c> <g> <space> : "ᐟ"  U141F  # CANADIAN SYLLABICS FINAL ACUTE
+<Multi_key> <C> <c> <k> <space> : "ᐠ"  U1420  # CANADIAN SYLLABICS FINAL GRAVE
+<Multi_key> <C> <c> <n> <space> : "ᐣ"  U1423  # CANADIAN SYLLABICS FINAL RIGHT HALF RING
+<Multi_key> <C> <c> <k> <h> <space> : "ᐥ"  U1425  # CANADIAN SYLLABICS FINAL DOUBLE ACUTE
+<Multi_key> <C> <c> <g> <h> <space> : "ᐦ"  U1426  # CANADIAN SYLLABICS FINAL DOUBLE SHORT VERTICAL STROKES
+<Multi_key> <C> <c> <apostrophe> <space> : "ᐧ"  U1427  # CANADIAN SYLLABICS FINAL MIDDLE DOT
+<Multi_key> <C> <c> <t> <space> : "ᐪ"  U142A  # CANADIAN SYLLABICS FINAL DOWN TACK
+<Multi_key> <C> <c> <h> <o> <o> : "ᐯ"  U142F  # CANADIAN SYLLABICS PE
+<Multi_key> <C> <c> <h> <o> <space> : "ᐱ"  U1431  # CANADIAN SYLLABICS PI
+<Multi_key> <C> <c> <h> <u> : "ᐳ"  U1433  # CANADIAN SYLLABICS PO
+<Multi_key> <C> <c> <h> <e> : "ᐶ"  U1436  # CANADIAN SYLLABICS CARRIER HEE
+<Multi_key> <C> <c> <h> <i> : "ᐷ"  U1437  # CANADIAN SYLLABICS CARRIER HI
+<Multi_key> <C> <c> <h> <a> : "ᐸ"  U1438  # CANADIAN SYLLABICS PA
+<Multi_key> <C> <c> <l> <space> : "ᑊ"  U144A  # CANADIAN SYLLABICS WEST-CREE P
+<Multi_key> <C> <c> <h> <space> : "ᑋ"  U144B  # CANADIAN SYLLABICS CARRIER H
+<Multi_key> <C> <c> <d> <o> <o> : "ᑌ"  U144C  # CANADIAN SYLLABICS TE
+<Multi_key> <C> <c> <d> <o> <space> : "ᑎ"  U144E  # CANADIAN SYLLABICS TI
+<Multi_key> <C> <c> <d> <u> <space> : "ᑐ"  U1450  # CANADIAN SYLLABICS TO
+<Multi_key> <C> <c> <d> <e> : "ᑓ"  U1453  # CANADIAN SYLLABICS CARRIER DEE
+<Multi_key> <C> <c> <d> <i> : "ᑔ"  U1454  # CANADIAN SYLLABICS CARRIER DI
+<Multi_key> <C> <c> <d> <a> : "ᑕ"  U1455  # CANADIAN SYLLABICS TA
+<Multi_key> <C> <c> <l> <h> <space> : "ᒡ"  U14A1  # CANADIAN SYLLABICS C
+<Multi_key> <C> <c> <m> <space> : "ᒼ"  U14BC  # CANADIAN SYLLABICS WEST-CREE M
+<Multi_key> <C> <c> <n> <g> <space> : "ᓑ"  U14D1  # CANADIAN SYLLABICS CARRIER NG
+<Multi_key> <C> <c> <s> <space> : "ᔆ"  U1506  # CANADIAN SYLLABICS ATHAPASCAN S
+<Multi_key> <C> <c> <underscore> <s> : "ᣵ"  U18F5  # CANADIAN SYLLABICS CARRIER DENTAL S (s̱)
+<Multi_key> <C> <c> <g> <h> <o> <o> : "ᗄ"  U15C4  # CANADIAN SYLLABICS CARRIER GHU
+<Multi_key> <C> <c> <g> <h> <o> <space> : "ᗅ"  U15C5  # CANADIAN SYLLABICS CARRIER GHO
+<Multi_key> <C> <c> <g> <h> <u> : "ᗆ"  U15C6  # CANADIAN SYLLABICS CARRIER GHE
+<Multi_key> <C> <c> <g> <h> <e> : "ᗇ"  U15C7  # CANADIAN SYLLABICS CARRIER GHEE
+<Multi_key> <C> <c> <g> <h> <i> : "ᗈ"  U15C8  # CANADIAN SYLLABICS CARRIER GHI
+<Multi_key> <C> <c> <g> <h> <a> : "ᗉ"  U15C9  # CANADIAN SYLLABICS CARRIER GHA
+<Multi_key> <C> <c> <k> <h> <o> <o> : "ᗊ"  U15CA  # CANADIAN SYLLABICS CARRIER RU
+<Multi_key> <C> <c> <k> <h> <o> <space> : "ᗋ"  U15CB  # CANADIAN SYLLABICS CARRIER RO
+<Multi_key> <C> <c> <k> <h> <u> : "ᗌ"  U15CC  # CANADIAN SYLLABICS CARRIER RE
+<Multi_key> <C> <c> <k> <h> <e> : "ᗍ"  U15CD  # CANADIAN SYLLABICS CARRIER REE
+<Multi_key> <C> <c> <k> <h> <i> : "ᗎ"  U15CE  # CANADIAN SYLLABICS CARRIER RI
+<Multi_key> <C> <c> <k> <h> <a> : "ᗏ"  U15CF  # CANADIAN SYLLABICS CARRIER RA
+<Multi_key> <C> <c> <w> <o> <o> : "ᗐ"  U15D0  # CANADIAN SYLLABICS CARRIER WU
+<Multi_key> <C> <c> <w> <o> <space> : "ᗑ"  U15D1  # CANADIAN SYLLABICS CARRIER WO
+<Multi_key> <C> <c> <w> <u> : "ᗒ"  U15D2  # CANADIAN SYLLABICS CARRIER WE
+<Multi_key> <C> <c> <w> <e> : "ᗓ"  U15D3  # CANADIAN SYLLABICS CARRIER WEE
+<Multi_key> <C> <c> <w> <i> : "ᗔ"  U15D4  # CANADIAN SYLLABICS CARRIER WI
+<Multi_key> <C> <c> <w> <a> : "ᗕ"  U15D5  # CANADIAN SYLLABICS CARRIER WA
+<Multi_key> <C> <c> <w> <h> <o> <o> : "ᗖ"  U15D6  # CANADIAN SYLLABICS CARRIER HWU
+<Multi_key> <C> <c> <w> <h> <o> <space> : "ᗗ"  U15D7  # CANADIAN SYLLABICS CARRIER HWO
+<Multi_key> <C> <c> <w> <h> <u> : "ᗘ"  U15D8  # CANADIAN SYLLABICS CARRIER HWE
+<Multi_key> <C> <c> <w> <h> <e> : "ᗙ"  U15D9  # CANADIAN SYLLABICS CARRIER HWEE
+<Multi_key> <C> <c> <w> <h> <i> : "ᗚ"  U15DA  # CANADIAN SYLLABICS CARRIER HWI
+<Multi_key> <C> <c> <w> <h> <a> : "ᗛ"  U15DB  # CANADIAN SYLLABICS CARRIER HWA
+<Multi_key> <C> <c> <t> <o> <o> : "ᗜ"  U15DC  # CANADIAN SYLLABICS CARRIER THU
+<Multi_key> <C> <c> <t> <o> <space> : "ᗝ"  U15DD  # CANADIAN SYLLABICS CARRIER THO
+<Multi_key> <C> <c> <t> <u> : "ᗞ"  U15DE  # CANADIAN SYLLABICS CARRIER THE
+<Multi_key> <C> <c> <t> <e> : "ᗟ"  U15DF  # CANADIAN SYLLABICS CARRIER THEE
+<Multi_key> <C> <c> <t> <i> : "ᗠ"  U15E0  # CANADIAN SYLLABICS CARRIER THI
+<Multi_key> <C> <c> <t> <a> : "ᗡ"  U15E1  # CANADIAN SYLLABICS CARRIER THA
+<Multi_key> <C> <c> <t> <apostrophe> <o> <o> : "ᗢ"  U15E2  # CANADIAN SYLLABICS CARRIER TTU
+<Multi_key> <C> <c> <t> <apostrophe> <o> <space> : "ᗣ"  U15E3  # CANADIAN SYLLABICS CARRIER TTO
+<Multi_key> <C> <c> <t> <apostrophe> <u> : "ᗤ"  U15E4  # CANADIAN SYLLABICS CARRIER TTE
+<Multi_key> <C> <c> <t> <apostrophe> <e> : "ᗥ"  U15E5  # CANADIAN SYLLABICS CARRIER TTEE
+<Multi_key> <C> <c> <t> <apostrophe> <i> : "ᗦ"  U15E6  # CANADIAN SYLLABICS CARRIER TTI
+<Multi_key> <C> <c> <t> <apostrophe> <a> : "ᗧ"  U15E7  # CANADIAN SYLLABICS CARRIER TTA
+<Multi_key> <C> <c> <b> <o> <o> : "ᗨ"  U15E8  # CANADIAN SYLLABICS CARRIER PU
+<Multi_key> <C> <c> <b> <o> <space> : "ᗩ"  U15E9  # CANADIAN SYLLABICS CARRIER PO
+<Multi_key> <C> <c> <b> <u> : "ᗪ"  U15EA  # CANADIAN SYLLABICS CARRIER PE
+<Multi_key> <C> <c> <b> <e> : "ᗫ"  U15EB  # CANADIAN SYLLABICS CARRIER PEE
+<Multi_key> <C> <c> <b> <i> : "ᗬ"  U15EC  # CANADIAN SYLLABICS CARRIER PI
+<Multi_key> <C> <c> <b> <a> : "ᗭ"  U15ED  # CANADIAN SYLLABICS CARRIER PA
+<Multi_key> <C> <c> <b> <space> : "ᗮ"  U15EE  # CANADIAN SYLLABICS CARRIER P
+<Multi_key> <C> <c> <g> <o> <o> : "ᗯ"  U15EF  # CANADIAN SYLLABICS CARRIER GU
+<Multi_key> <C> <c> <g> <o> <space> : "ᗰ"  U15F0  # CANADIAN SYLLABICS CARRIER GO
+<Multi_key> <C> <c> <g> <u> : "ᗱ"  U15F1  # CANADIAN SYLLABICS CARRIER GE
+<Multi_key> <C> <c> <g> <e> : "ᗲ"  U15F2  # CANADIAN SYLLABICS CARRIER GEE
+<Multi_key> <C> <c> <g> <i> : "ᗳ"  U15F3  # CANADIAN SYLLABICS CARRIER GI
+<Multi_key> <C> <c> <g> <a> : "ᗴ"  U15F4  # CANADIAN SYLLABICS CARRIER GA
+<Multi_key> <C> <c> <k> <o> <o> : "ᗵ"  U15F5  # CANADIAN SYLLABICS CARRIER KHU
+<Multi_key> <C> <c> <k> <o> <space> : "ᗶ"  U15F6  # CANADIAN SYLLABICS CARRIER KHO
+<Multi_key> <C> <c> <k> <u> : "ᗷ"  U15F7  # CANADIAN SYLLABICS CARRIER KHE
+<Multi_key> <C> <c> <k> <e> : "ᗸ"  U15F8  # CANADIAN SYLLABICS CARRIER KHEE
+<Multi_key> <C> <c> <k> <i> : "ᗹ"  U15F9  # CANADIAN SYLLABICS CARRIER KHI
+<Multi_key> <C> <c> <k> <a> : "ᗺ"  U15FA  # CANADIAN SYLLABICS CARRIER KHA
+<Multi_key> <C> <c> <k> <apostrophe> <o> <o> : "ᗻ"  U15FB  # CANADIAN SYLLABICS CARRIER KKU
+<Multi_key> <C> <c> <k> <apostrophe> <o> <space> : "ᗼ"  U15FC  # CANADIAN SYLLABICS CARRIER KKO
+<Multi_key> <C> <c> <k> <apostrophe> <u> : "ᗽ"  U15FD  # CANADIAN SYLLABICS CARRIER KKE
+<Multi_key> <C> <c> <k> <apostrophe> <e> : "ᗾ"  U15FE  # CANADIAN SYLLABICS CARRIER KKEE
+<Multi_key> <C> <c> <k> <apostrophe> <i> : "ᗿ"  U15FF  # CANADIAN SYLLABICS CARRIER KKI
+<Multi_key> <C> <c> <k> <apostrophe> <a> : "ᘀ"  U1600  # CANADIAN SYLLABICS CARRIER KKA
+<Multi_key> <C> <c> <k> <apostrophe> <space> : "ᘁ"  U1601  # CANADIAN SYLLABICS CARRIER KK
+<Multi_key> <C> <c> <n> <o> <o> : "ᘂ"  U1602  # CANADIAN SYLLABICS CARRIER NU
+<Multi_key> <C> <c> <n> <o> <space> : "ᘃ"  U1603  # CANADIAN SYLLABICS CARRIER NO
+<Multi_key> <C> <c> <n> <u> : "ᘄ"  U1604  # CANADIAN SYLLABICS CARRIER NE
+<Multi_key> <C> <c> <n> <e> : "ᘅ"  U1605  # CANADIAN SYLLABICS CARRIER NEE
+<Multi_key> <C> <c> <n> <i> : "ᘆ"  U1606  # CANADIAN SYLLABICS CARRIER NI
+<Multi_key> <C> <c> <n> <a> : "ᘇ"  U1607  # CANADIAN SYLLABICS CARRIER NA
+<Multi_key> <C> <c> <m> <o> <o> : "ᘈ"  U1608  # CANADIAN SYLLABICS CARRIER MU
+<Multi_key> <C> <c> <m> <o> <space> : "ᘉ"  U1609  # CANADIAN SYLLABICS CARRIER MO
+<Multi_key> <C> <c> <m> <u> : "ᘊ"  U160A  # CANADIAN SYLLABICS CARRIER ME
+<Multi_key> <C> <c> <m> <e> : "ᘋ"  U160B  # CANADIAN SYLLABICS CARRIER MEE
+<Multi_key> <C> <c> <m> <i> : "ᘌ"  U160C  # CANADIAN SYLLABICS CARRIER MI
+<Multi_key> <C> <c> <m> <a> : "ᘍ"  U160D  # CANADIAN SYLLABICS CARRIER MA
+<Multi_key> <C> <c> <y> <o> <o> : "ᘎ"  U160E  # CANADIAN SYLLABICS CARRIER YU
+<Multi_key> <C> <c> <y> <o> <space> : "ᘏ"  U160F  # CANADIAN SYLLABICS CARRIER YO
+<Multi_key> <C> <c> <y> <u> : "ᘐ"  U1610  # CANADIAN SYLLABICS CARRIER YE
+<Multi_key> <C> <c> <y> <e> : "ᘑ"  U1611  # CANADIAN SYLLABICS CARRIER YEE
+<Multi_key> <C> <c> <y> <i> : "ᘒ"  U1612  # CANADIAN SYLLABICS CARRIER YI
+<Multi_key> <C> <c> <y> <a> : "ᘓ"  U1613  # CANADIAN SYLLABICS CARRIER YA
+<Multi_key> <C> <c> <j> <o> <o> : "ᘔ"  U1614  # CANADIAN SYLLABICS CARRIER JU
+<Multi_key> <C> <c> <j> <o> <space> : "ᘖ"  U1616  # CANADIAN SYLLABICS CARRIER JO
+<Multi_key> <C> <c> <j> <u> : "ᘗ"  U1617  # CANADIAN SYLLABICS CARRIER JE
+<Multi_key> <C> <c> <j> <e> : "ᘘ"  U1618  # CANADIAN SYLLABICS CARRIER JEE
+<Multi_key> <C> <c> <j> <i> : "ᘙ"  U1619  # CANADIAN SYLLABICS CARRIER JI
+<Multi_key> <C> <c> <j> <a> : "ᘛ"  U161B  # CANADIAN SYLLABICS CARRIER JA
+<Multi_key> <C> <c> <c> <h> <apostrophe> <o> <o> : "ᘜ"  U161C  # CANADIAN SYLLABICS CARRIER JJU
+<Multi_key> <C> <c> <c> <h> <apostrophe> <o> <space> : "ᘝ"  U161D  # CANADIAN SYLLABICS CARRIER JJO
+<Multi_key> <C> <c> <c> <h> <apostrophe> <u> : "ᘞ"  U161E  # CANADIAN SYLLABICS CARRIER JJE
+<Multi_key> <C> <c> <c> <h> <apostrophe> <e> : "ᘟ"  U161F  # CANADIAN SYLLABICS CARRIER JJEE
+<Multi_key> <C> <c> <c> <h> <apostrophe> <i> : "ᘠ"  U1620  # CANADIAN SYLLABICS CARRIER JJI
+<Multi_key> <C> <c> <c> <h> <apostrophe> <a> : "ᘡ"  U1621  # CANADIAN SYLLABICS CARRIER JJA
+<Multi_key> <C> <c> <l> <o> <o> : "ᘢ"  U1622  # CANADIAN SYLLABICS CARRIER LU
+<Multi_key> <C> <c> <l> <o> <space> : "ᘣ"  U1623  # CANADIAN SYLLABICS CARRIER LO
+<Multi_key> <C> <c> <l> <u> : "ᘤ"  U1624  # CANADIAN SYLLABICS CARRIER LE
+<Multi_key> <C> <c> <l> <e> : "ᘥ"  U1625  # CANADIAN SYLLABICS CARRIER LEE
+<Multi_key> <C> <c> <l> <i> : "ᘦ"  U1626  # CANADIAN SYLLABICS CARRIER LI
+<Multi_key> <C> <c> <l> <a> : "ᘧ"  U1627  # CANADIAN SYLLABICS CARRIER LA
+<Multi_key> <C> <c> <d> <l> <o> <o> : "ᘨ"  U1628  # CANADIAN SYLLABICS CARRIER DLU
+<Multi_key> <C> <c> <d> <l> <o> <space> : "ᘩ"  U1629  # CANADIAN SYLLABICS CARRIER DLO
+<Multi_key> <C> <c> <d> <l> <u> : "ᘪ"  U162A  # CANADIAN SYLLABICS CARRIER DLE
+<Multi_key> <C> <c> <d> <l> <e> : "ᘫ"  U162B  # CANADIAN SYLLABICS CARRIER DLEE
+<Multi_key> <C> <c> <d> <l> <i> : "ᘬ"  U162C  # CANADIAN SYLLABICS CARRIER DLI
+<Multi_key> <C> <c> <d> <l> <a> : "ᘭ"  U162D  # CANADIAN SYLLABICS CARRIER DLA
+<Multi_key> <C> <c> <l> <h> <o> <o> : "ᘮ"  U162E  # CANADIAN SYLLABICS CARRIER LHU
+<Multi_key> <C> <c> <l> <h> <o> <space> : "ᘯ"  U162F  # CANADIAN SYLLABICS CARRIER LHO
+<Multi_key> <C> <c> <l> <h> <u> : "ᘰ"  U1630  # CANADIAN SYLLABICS CARRIER LHE
+<Multi_key> <C> <c> <l> <h> <e> : "ᘱ"  U1631  # CANADIAN SYLLABICS CARRIER LHEE
+<Multi_key> <C> <c> <l> <h> <i> : "ᘲ"  U1632  # CANADIAN SYLLABICS CARRIER LHI
+<Multi_key> <C> <c> <l> <h> <a> : "ᘳ"  U1633  # CANADIAN SYLLABICS CARRIER LHA
+<Multi_key> <C> <c> <t> <l> <o> <o> : "ᘴ"  U1634  # CANADIAN SYLLABICS CARRIER TLHU
+<Multi_key> <C> <c> <t> <l> <o> <space> : "ᘵ"  U1635  # CANADIAN SYLLABICS CARRIER TLHO
+<Multi_key> <C> <c> <t> <l> <u> : "ᘶ"  U1636  # CANADIAN SYLLABICS CARRIER TLHE
+<Multi_key> <C> <c> <t> <l> <e> : "ᘷ"  U1637  # CANADIAN SYLLABICS CARRIER TLHEE
+<Multi_key> <C> <c> <t> <l> <i> : "ᘸ"  U1638  # CANADIAN SYLLABICS CARRIER TLHI
+<Multi_key> <C> <c> <t> <l> <a> : "ᘹ"  U1639  # CANADIAN SYLLABICS CARRIER TLHA
+<Multi_key> <C> <c> <t> <l> <apostrophe> <o> <o> : "ᘺ"  U163A  # CANADIAN SYLLABICS CARRIER TLU
+<Multi_key> <C> <c> <t> <l> <apostrophe> <o> <space> : "ᘻ"  U163B  # CANADIAN SYLLABICS CARRIER TLO
+<Multi_key> <C> <c> <t> <l> <apostrophe> <u> : "ᘼ"  U163C  # CANADIAN SYLLABICS CARRIER TLE
+<Multi_key> <C> <c> <t> <l> <apostrophe> <e> : "ᘽ"  U163D  # CANADIAN SYLLABICS CARRIER TLEE
+<Multi_key> <C> <c> <t> <l> <apostrophe> <i> : "ᘾ"  U163E  # CANADIAN SYLLABICS CARRIER TLI
+<Multi_key> <C> <c> <t> <l> <apostrophe> <a> : "ᘿ"  U163F  # CANADIAN SYLLABICS CARRIER TLA
+<Multi_key> <C> <c> <z> <o> <o> : "ᙀ"  U1640  # CANADIAN SYLLABICS CARRIER ZU
+<Multi_key> <C> <c> <z> <o> <space> : "ᙁ"  U1641  # CANADIAN SYLLABICS CARRIER ZO
+<Multi_key> <C> <c> <z> <u> : "ᙂ"  U1642  # CANADIAN SYLLABICS CARRIER ZE
+<Multi_key> <C> <c> <z> <e> : "ᙃ"  U1643  # CANADIAN SYLLABICS CARRIER ZEE
+<Multi_key> <C> <c> <z> <i> : "ᙄ"  U1644  # CANADIAN SYLLABICS CARRIER ZI
+<Multi_key> <C> <c> <z> <a> : "ᙅ"  U1645  # CANADIAN SYLLABICS CARRIER ZA
+<Multi_key> <C> <c> <z> <space> : "ᙆ"  U1646  # CANADIAN SYLLABICS CARRIER Z
+<Multi_key> <C> <c> <underscore> <z> : "ᙇ"  U1647  # CANADIAN SYLLABICS CARRIER INITIAL Z (ẕ)
+<Multi_key> <C> <c> <d> <z> <o> <o> : "ᙈ"  U1648  # CANADIAN SYLLABICS CARRIER DZU
+<Multi_key> <C> <c> <d> <z> <o> <space> : "ᙉ"  U1649  # CANADIAN SYLLABICS CARRIER DZO
+<Multi_key> <C> <c> <d> <z> <u> : "ᙊ"  U164A  # CANADIAN SYLLABICS CARRIER DZE
+<Multi_key> <C> <c> <d> <z> <e> : "ᙋ"  U164B  # CANADIAN SYLLABICS CARRIER DZEE
+<Multi_key> <C> <c> <d> <z> <i> : "ᙌ"  U164C  # CANADIAN SYLLABICS CARRIER DZI
+<Multi_key> <C> <c> <d> <z> <a> : "ᙍ"  U164D  # CANADIAN SYLLABICS CARRIER DZA
+<Multi_key> <C> <c> <s> <o> <o> : "ᙎ"  U164E  # CANADIAN SYLLABICS CARRIER SU
+<Multi_key> <C> <c> <s> <o> <space> : "ᙏ"  U164F  # CANADIAN SYLLABICS CARRIER SO
+<Multi_key> <C> <c> <s> <u> : "ᙐ"  U1650  # CANADIAN SYLLABICS CARRIER SE
+<Multi_key> <C> <c> <s> <e> : "ᙑ"  U1651  # CANADIAN SYLLABICS CARRIER SEE
+<Multi_key> <C> <c> <s> <i> : "ᙒ"  U1652  # CANADIAN SYLLABICS CARRIER SI
+<Multi_key> <C> <c> <s> <a> : "ᙓ"  U1653  # CANADIAN SYLLABICS CARRIER SA
+<Multi_key> <C> <c> <s> <h> <o> <o> : "ᙔ"  U1654  # CANADIAN SYLLABICS CARRIER SHU
+<Multi_key> <C> <c> <s> <h> <o> <space> : "ᙕ"  U1655  # CANADIAN SYLLABICS CARRIER SHO
+<Multi_key> <C> <c> <s> <h> <u> : "ᙖ"  U1656  # CANADIAN SYLLABICS CARRIER SHE
+<Multi_key> <C> <c> <s> <h> <e> : "ᙗ"  U1657  # CANADIAN SYLLABICS CARRIER SHEE
+<Multi_key> <C> <c> <s> <h> <i> : "ᙘ"  U1658  # CANADIAN SYLLABICS CARRIER SHI
+<Multi_key> <C> <c> <s> <h> <a> : "ᙙ"  U1659  # CANADIAN SYLLABICS CARRIER SHA
+<Multi_key> <C> <c> <s> <h> <space> : "ᙚ"  U165A  # CANADIAN SYLLABICS CARRIER SH
+<Multi_key> <C> <c> <c> <h> <o> <o> : "ᙛ"  U165B  # CANADIAN SYLLABICS CARRIER TSU
+<Multi_key> <C> <c> <c> <h> <o> <space> : "ᙜ"  U165C  # CANADIAN SYLLABICS CARRIER TSO
+<Multi_key> <C> <c> <c> <h> <u> : "ᙝ"  U165D  # CANADIAN SYLLABICS CARRIER TSE
+<Multi_key> <C> <c> <c> <h> <e> : "ᙞ"  U165E  # CANADIAN SYLLABICS CARRIER TSEE
+<Multi_key> <C> <c> <c> <h> <i> : "ᙟ"  U165F  # CANADIAN SYLLABICS CARRIER TSI
+<Multi_key> <C> <c> <c> <h> <a> : "ᙠ"  U1660  # CANADIAN SYLLABICS CARRIER TSA
+<Multi_key> <C> <c> <t> <s> <o> <o> : "ᙡ"  U1661  # CANADIAN SYLLABICS CARRIER CHU
+<Multi_key> <C> <c> <t> <s> <o> <space> : "ᙢ"  U1662  # CANADIAN SYLLABICS CARRIER CHO
+<Multi_key> <C> <c> <t> <s> <u> : "ᙣ"  U1663  # CANADIAN SYLLABICS CARRIER CHE
+<Multi_key> <C> <c> <t> <s> <e> : "ᙤ"  U1664  # CANADIAN SYLLABICS CARRIER CHEE
+<Multi_key> <C> <c> <t> <s> <i> : "ᙥ"  U1665  # CANADIAN SYLLABICS CARRIER CHI
+<Multi_key> <C> <c> <t> <s> <a> : "ᙦ"  U1666  # CANADIAN SYLLABICS CARRIER CHA
+<Multi_key> <C> <c> <t> <s> <apostrophe> <o> <o> : "ᙧ"  U1667  # CANADIAN SYLLABICS CARRIER TTSU
+<Multi_key> <C> <c> <t> <s> <apostrophe> <o> <space> : "ᙨ"  U1668  # CANADIAN SYLLABICS CARRIER TTSO
+<Multi_key> <C> <c> <t> <s> <apostrophe> <u> : "ᙩ"  U1669  # CANADIAN SYLLABICS CARRIER TTSE
+<Multi_key> <C> <c> <t> <s> <apostrophe> <e> : "ᙪ"  U166A  # CANADIAN SYLLABICS CARRIER TTSEE
+<Multi_key> <C> <c> <t> <s> <apostrophe> <i> : "ᙫ"  U166B  # CANADIAN SYLLABICS CARRIER TTSI
+<Multi_key> <C> <c> <t> <s> <apostrophe> <a> : "ᙬ"  U166C  # CANADIAN SYLLABICS CARRIER TTSA
 
 # (d/D = Deseret)
 
@@ -12290,7 +12495,7 @@ include "%L"
 # (Du/DU = Sloan-Duployan) - based on 1934 edition
 
 # TODO: check that this is correct, especially forms with combining diacritics,
-# and add affixes and layout characters
+# and add affixes
 
 # consonants
 
@@ -12368,6 +12573,13 @@ include "%L"
 # r-form selector
 
 <Multi_key> <C> <D> <U> <r> <Return> : "𛲝"  U1BC9D  # DUPLOYAN THICK LETTER SELECTOR
+
+# format controls
+
+<Multi_key> <C> <D> <U> <less> <Return> : "𛲠"  U1BCA0  # SHORTHAND FORMAT LETTER OVERLAP
+<Multi_key> <C> <D> <U> <less> <greater> <Return> : "𛲡"  U1BCA1  # SHORTHAND FORMAT CONTINUING OVERLAP
+<Multi_key> <C> <D> <U> <underscore> <Return> : "𛲢"  U1BCA2  # SHORTHAND FORMAT DOWN STEP
+<Multi_key> <C> <D> <U> <asciicircum> <Return> : "𛲣"  U1BCA3  # SHORTHAND FORMAT UP STEP
 
 # (h = Cherokee) (not the best abbreviation, but think Ch = Cherokee)
 
@@ -15942,6 +16154,11 @@ include "%L"
 <Multi_key> <G> <k> <Multi_key> <m> <v> : "ⴧ"  U2D27  # GEORGIAN SMALL LETTER YN (ɯ)
 <Multi_key> <G> <k> <Multi_key> <slash> <i> : "ⴧ"  U2D27  # GEORGIAN SMALL LETTER YN (ɨ)
 <Multi_key> <G> <k> <Multi_key> <e> <e> : "ⴭ"  U2D2D  # GEORGIAN SMALL LETTER AEN (ə)
+
+# Punctuation
+
+<Multi_key> <G> <semicolon> <greater> <period>  : "჻"  U10FB  # GEORGIAN PARAGRAPH SEPARATOR
+<Multi_key> <G> <semicolon> <Multi_key> <P> <P> : "჻"  U10FB  # GEORGIAN PARAGRAPH SEPARATOR
 
 # (a = Caucasian Albanian) https://aiearmeniennes.org/artsakh/Alb-script/
 
@@ -21616,6 +21833,7 @@ include "HangulSyllables"
 <Multi_key> <z> <m> <period> : "᠃" U1803   # MONGOLIAN FULL STOP
 <Multi_key> <z> <m> <colon> : "᠄" U1804   # MONGOLIAN COLON
 <Multi_key> <z> <m> <minus> : "᠊"  U180A  # MONGOLIAN NIRUGU
+<Multi_key> <z> <m> <plus> <period> : "᠅"  U1805  # MONGOLIAN FOUR DOTS
 
 # control characters
 
@@ -22294,6 +22512,13 @@ include "HangulSyllables"
 
 <Multi_key> <z> <t> <S> : "྅" U0F85   # TIBETAN MARK PALUTA (AVAGRAHA)
 <Multi_key> <z> <t> <o> <m> : "ༀ" U0F00   # TIBETAN SYLLABLE OM
+<Multi_key> <z> <t> <X> : "྾"  U0FBE  # TIBETAN KU RU KHA
+<Multi_key> <z> <t> <period> <X> : "྿"  U0FBF  # TIBETAN KU RU KHA BZHI MIG CAN
+<Multi_key> <z> <t> <x> <o> : "࿎"  U0FCE  # TIBETAN SIGN RDEL NAG RDEL DKAR
+<Multi_key> <z> <t> <x> <x> <x> : "࿏"  U0FCF  # TIBETAN SIGN RDEL NAG GSUM
+<Multi_key> <z> <t> <colon> <space> : "࿒"  U0FD2  # TIBETAN MARK NYIS TSHEG
+<Multi_key> <z> <t> <plus> <period> : "༶"  U0F36  # TIBETAN MARK CARET -DZUD RTAGS BZHI MIG CAN
+
 
 # Numerals
 
@@ -22318,6 +22543,23 @@ include "HangulSyllables"
 <Multi_key> <z> <t> <1> <5> <slash> <2> : "༱"  U0F31  # TIBETAN DIGIT HALF EIGHT
 <Multi_key> <z> <t> <1> <7> <slash> <2> : "༲"  U0F32  # TIBETAN DIGIT HALF NINE
 <Multi_key> <z> <t> <minus> <1> <slash> <2> : "༳"  U0F33  # TIBETAN DIGIT HALF ZERO
+
+# symbols
+
+<Multi_key> <z> <t> <braceright> <b> <e> <l> <l> : "࿄"  U0FC4  # TIBETAN SYMBOL DRIL BU
+<Multi_key> <z> <t> <braceright> <g> <a> <n> <k> : "࿋"  U0FCB  # TIBETAN SYMBOL NOR BU GSUM -KHYIL (GANKYIL)
+<Multi_key> <z> <t> <braceright> <s> <a> <u> <v> : "࿖"  U0FD6  # LEFT-FACING SVASTI SIGN (SAUVASTIKA)
+<Multi_key> <z> <t> <braceright> <period> <s> <a> <u> <v> : "࿘"  U0FD8  # LEFT-FACING SVASTI SIGN WITH DOTS (SAUVASTIKA)
+<Multi_key> <z> <t> <braceright> <s> <w> <a> <s> <t> : "࿕"  U0FD5  # RIGHT-FACING SVASTI SIGN (SWASTIKA)
+<Multi_key> <z> <t> <braceright> <period> <s> <w> <a> <s> <t> : "࿗"  U0FD7  # RIGHT-FACING SVASTI SIGN WITH DOTS (SWASTIKA)
+<Multi_key> <z> <t> <braceright> <t> <r> <i> <k> : "࿋"  U0FCB  # TIBETAN SYMBOL NOR BU GSUM -KHYIL (TRIKAYA)
+<Multi_key> <z> <t> <braceright> <y> <i> <n> : "࿊"  U0FCA  # TIBETAN SYMBOL NOR BU NYIS -KHYIL (YIN-YANG)
+
+<Multi_key> <z> <t> <braceright> <1> <B> : "࿉"  U0FC9  # TIBETAN SYMBOL NOR BU
+<Multi_key> <z> <t> <braceright> <2> <B> : "࿊"  U0FCA  # TIBETAN SYMBOL NOR BU NYIS -KHYIL
+<Multi_key> <z> <t> <braceright> <3> <B> : "࿋"  U0FCB  # TIBETAN SYMBOL NOR BU GSUM -KHYIL
+<Multi_key> <z> <t> <braceright> <4> <B> : "࿌"  U0FCC  # TIBETAN SYMBOL NOR BU BZHI -KHYIL
+
 
 # (T = Tai Le)
 
@@ -28651,7 +28893,7 @@ include "Logograms"
 <Multi_key> <Tab> <asterisk> <5> <v> <minus> : "⛧" U26E7    # INVERTED PENTAGRAM
 <Multi_key> <Tab> <asterisk> <5> <at> : "✯"  U272F  # PINWHEEL STAR
 <Multi_key> <Tab> <asterisk> <6> <1> : "✶" U2736    # SIX POINTED BLACK STAR
-<Multi_key> <Tab> <asterisk> <6> <minus> : "✡" U2721    # STAR OF DAVID (alternatively *6)
+<Multi_key> <Tab> <asterisk> <6> <minus> : "✡" U2721    # STAR OF DAVID (alternatively *6 for emoji variant)
 <Multi_key> <Tab> <asterisk> <6> <at> : "🟍"  U1F7CD  # SIX POINTED PINWHEEL STAR
 <Multi_key> <Tab> <asterisk> <8> <1> : "✴" U2734    # EIGHT POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <8> <O> : "❂" U2742    # CIRCLED OPEN CENTRE EIGHT POINTED STAR
@@ -31346,6 +31588,155 @@ include "Logograms"
 <Multi_key> <asterisk> <L> <F> : "🝴" U1F774    # LOT OF FORTUNE
 <Multi_key> <asterisk> <O> <C> : "🝵" U1F775    # OCCULTATION
 <Multi_key> <asterisk> <E> <C> : "🝶" U1F776    # LUNAR ECLIPSE
+
+######################
+# Alchemical symbols #
+######################
+
+# Convention: @* + name (max 6 letters)
+
+<Multi_key> <at> <asterisk> <A> <g>                        : "🜛"  U1F71B  # ALCHEMICAL SYMBOL FOR SILVER
+<Multi_key> <at> <asterisk> <A> <s>                        : "🜺"  U1F73A  # ALCHEMICAL SYMBOL FOR ARSENIC
+<Multi_key> <at> <asterisk> <A> <u>                        : "🜚"  U1F71A  # ALCHEMICAL SYMBOL FOR GOLD
+<Multi_key> <at> <asterisk> <B> <i>                        : "🜾"  U1F73E  # ALCHEMICAL SYMBOL FOR BISMUTH ORE
+<Multi_key> <at> <asterisk> <C> <M>                        : "🝎"  U1F74E  # ALCHEMICAL SYMBOL FOR CAPUT MORTUUM
+<Multi_key> <at> <asterisk> <C> <u>                        : "🜠"  U1F720  # ALCHEMICAL SYMBOL FOR COPPER ORE
+<Multi_key> <at> <asterisk> <F> <e> <space>                : "🜜"  U1F71C  # ALCHEMICAL SYMBOL FOR IRON ORE
+<Multi_key> <at> <asterisk> <F> <e> <2>                    : "🜝"  U1F71D  # ALCHEMICAL SYMBOL FOR IRON ORE-2
+<Multi_key> <at> <asterisk> <F> <e> <C> <u>                : "🜡"  U1F721  # ALCHEMICAL SYMBOL FOR IRON-COPPER ORE
+<Multi_key> <at> <asterisk> <F> <e> <S> <2>                : "🜸"  U1F738  # ALCHEMICAL SYMBOL FOR MARCASITE
+<Multi_key> <at> <asterisk> <H> <g> <space>                : "🜐"  U1F710  # ALCHEMICAL SYMBOL FOR MERCURY SUBLIMATE
+<Multi_key> <at> <asterisk> <H> <g> <2>                    : "🜑"  U1F711  # ALCHEMICAL SYMBOL FOR MERCURY SUBLIMATE-2
+<Multi_key> <at> <asterisk> <H> <g> <3>                    : "🜒"  U1F712  # ALCHEMICAL SYMBOL FOR MERCURY SUBLIMATE-3
+<Multi_key> <at> <asterisk> <K> <N> <O> <3>                : "🜕"  U1F715  # ALCHEMICAL SYMBOL FOR NITRE
+<Multi_key> <at> <asterisk> <N> <a> <C> <l>                : "🜔"  U1F714  # ALCHEMICAL SYMBOL FOR SALT
+<Multi_key> <at> <asterisk> <P> <b>                        : "🜪"  U1F72A  # ALCHEMICAL SYMBOL FOR LEAD ORE
+<Multi_key> <at> <asterisk> <S> <space>                    : "🜍"  U1F70D  # ALCHEMICAL SYMBOL FOR SULFUR
+<Multi_key> <at> <asterisk> <S> <b>                        : "🜫"  U1F72B  # ALCHEMICAL SYMBOL FOR ANTIMONY ORE
+<Multi_key> <at> <asterisk> <S> <n>                        : "🜩"  U1F729  # ALCHEMICAL SYMBOL FOR TIN ORE
+
+<Multi_key> <at> <asterisk> <0> <period> <5> <d> <r>       : "🝲"  U1F772  # ALCHEMICAL SYMBOL FOR HALF DRAM
+<Multi_key> <at> <asterisk> <0> <period> <5> <o> <z>       : "🝳"  U1F773  # ALCHEMICAL SYMBOL FOR HALF OUNCE
+
+<Multi_key> <at> <asterisk> <A> <F>                        : "🜅"  U1F705  # ALCHEMICAL SYMBOL FOR AQUAFORTIS
+<Multi_key> <at> <asterisk> <A> <R> <space>                : "🜆"  U1F706  # ALCHEMICAL SYMBOL FOR AQUA REGIA
+<Multi_key> <at> <asterisk> <A> <R> <2>                    : "🜇"  U1F707  # ALCHEMICAL SYMBOL FOR AQUA REGIA-2
+<Multi_key> <at> <asterisk> <A> <V> <space>                : "🜈"  U1F708  # ALCHEMICAL SYMBOL FOR AQUA VITAE
+<Multi_key> <at> <asterisk> <A> <V> <2>                    : "🜉"  U1F709  # ALCHEMICAL SYMBOL FOR AQUA VITAE-2
+<Multi_key> <at> <asterisk> <B> <O> <M>                    : "🝫"  U1F76B  # ALCHEMICAL SYMBOL FOR BATH OF MARY
+<Multi_key> <at> <asterisk> <B> <O> <V>                    : "🝬"  U1F76C  # ALCHEMICAL SYMBOL FOR BATH OF VAPOURS
+<Multi_key> <at> <asterisk> <S> <O> <J>                    : "🝏"  U1F74F  # ALCHEMICAL SYMBOL FOR SCEPTER OF JOVE
+<Multi_key> <at> <asterisk> <S> <S> <S> <space>            : "🝜"  U1F75C  # ALCHEMICAL SYMBOL FOR STRATUM SUPER STRATUM
+<Multi_key> <at> <asterisk> <S> <S> <S> <2>                : "🝝"  U1F75D  # ALCHEMICAL SYMBOL FOR STRATUM SUPER STRATUM-2
+
+<Multi_key> <at> <asterisk> <a> <i> <r>                    : "🜁"  U1F701  # ALCHEMICAL SYMBOL FOR AIR
+<Multi_key> <at> <asterisk> <a> <l> <e> <m> <b> <i>        : "🝪"  U1F76A  # ALCHEMICAL SYMBOL FOR ALEMBIC
+<Multi_key> <at> <asterisk> <a> <l> <k> <a> <l> <2>        : "🜷"  U1F737  # ALCHEMICAL SYMBOL FOR ALKALI-2
+<Multi_key> <at> <asterisk> <a> <l> <k> <a> <l> <i>        : "🜶"  U1F736  # ALCHEMICAL SYMBOL FOR ALKALI
+<Multi_key> <at> <asterisk> <a> <l> <u> <m>                : "🝅"  U1F745  # ALCHEMICAL SYMBOL FOR ALUM
+<Multi_key> <at> <asterisk> <a> <m> <a> <l> <g> <a>        : "🝛"  U1F75B  # ALCHEMICAL SYMBOL FOR AMALGAM
+<Multi_key> <at> <asterisk> <a> <n> <t> <i> <m> <o>        : "🜫"  U1F72B  # ALCHEMICAL SYMBOL FOR ANTIMONY ORE
+<Multi_key> <at> <asterisk> <a> <r> <s> <e> <n> <i>        : "🜺"  U1F73A  # ALCHEMICAL SYMBOL FOR ARSENIC
+<Multi_key> <at> <asterisk> <a> <s> <h> <e> <s>            : "🝗"  U1F757  # ALCHEMICAL SYMBOL FOR ASHES
+<Multi_key> <at> <asterisk> <a> <u> <r> <i> <p> <i>        : "🜽"  U1F73D  # ALCHEMICAL SYMBOL FOR AURIPIGMENT
+<Multi_key> <at> <asterisk> <b> <i> <s> <m> <u> <t>        : "🜾"  U1F73E  # ALCHEMICAL SYMBOL FOR BISMUTH ORE
+<Multi_key> <at> <asterisk> <b> <m> <a> <r> <y>            : "🝫"  U1F76B  # ALCHEMICAL SYMBOL FOR BATH OF MARY
+<Multi_key> <at> <asterisk> <b> <o> <r> <a> <x> <space>    : "🝂"  U1F742  # ALCHEMICAL SYMBOL FOR BORAX
+<Multi_key> <at> <asterisk> <b> <o> <r> <a> <x> <2>        : "🝃"  U1F743  # ALCHEMICAL SYMBOL FOR BORAX-2
+<Multi_key> <at> <asterisk> <b> <o> <r> <a> <x> <3>        : "🝄"  U1F744  # ALCHEMICAL SYMBOL FOR BORAX-3
+<Multi_key> <at> <asterisk> <b> <r> <i> <c> <k>            : "🝙"  U1F759  # ALCHEMICAL SYMBOL FOR BRICK
+<Multi_key> <at> <asterisk> <b> <s> <u> <l> <f>            : "🜏"  U1F70F  # ALCHEMICAL SYMBOL FOR BLACK SULFUR
+<Multi_key> <at> <asterisk> <b> <v> <a> <p> <o> <u>        : "🝬"  U1F76C  # ALCHEMICAL SYMBOL FOR BATH OF VAPOURS
+<Multi_key> <at> <asterisk> <c> <a> <d> <u> <c> <e>        : "🝐"  U1F750  # ALCHEMICAL SYMBOL FOR CADUCEUS
+<Multi_key> <at> <asterisk> <c> <a> <l> <x>                : "🝌"  U1F74C  # ALCHEMICAL SYMBOL FOR CALX
+<Multi_key> <at> <asterisk> <c> <c> <o> <p> <p> <2>        : "🜤"  U1F724  # ALCHEMICAL SYMBOL FOR CROCUS OF COPPER-2
+<Multi_key> <at> <asterisk> <c> <c> <o> <p> <p> <e>        : "🜣"  U1F723  # ALCHEMICAL SYMBOL FOR CROCUS OF COPPER
+<Multi_key> <at> <asterisk> <c> <i> <n> <n> <a> <b>        : "🜓"  U1F713  # ALCHEMICAL SYMBOL FOR CINNABAR
+<Multi_key> <at> <asterisk> <c> <i> <r> <o> <n>            : "🜞"  U1F71E  # ALCHEMICAL SYMBOL FOR CROCUS OF IRON
+<Multi_key> <at> <asterisk> <c> <o> <p> <a> <n> <t>        : "🜥"  U1F725  # ALCHEMICAL SYMBOL FOR COPPER ANTIMONIATE
+<Multi_key> <at> <asterisk> <c> <o> <p> <p> <e> <r>        : "🜠"  U1F720  # ALCHEMICAL SYMBOL FOR COPPER ORE
+<Multi_key> <at> <asterisk> <c> <r> <u> <c> <i> <2>        : "🝦"  U1F766  # ALCHEMICAL SYMBOL FOR CRUCIBLE-2
+<Multi_key> <at> <asterisk> <c> <r> <u> <c> <i> <3>        : "🝧"  U1F767  # ALCHEMICAL SYMBOL FOR CRUCIBLE-3
+<Multi_key> <at> <asterisk> <c> <r> <u> <c> <i> <4>        : "🝨"  U1F768  # ALCHEMICAL SYMBOL FOR CRUCIBLE-4
+<Multi_key> <at> <asterisk> <c> <r> <u> <c> <i> <5>        : "🝩"  U1F769  # ALCHEMICAL SYMBOL FOR CRUCIBLE-5
+<Multi_key> <at> <asterisk> <c> <r> <u> <c> <i> <b>        : "🝥"  U1F765  # ALCHEMICAL SYMBOL FOR CRUCIBLE
+<Multi_key> <at> <asterisk> <d> <a> <y> <n> <i> <g>        : "🝰"  U1F770  # ALCHEMICAL SYMBOL FOR DAY-NIGHT
+<Multi_key> <at> <asterisk> <d> <i> <s> <s> <o> <2>        : "🝢"  U1F762  # ALCHEMICAL SYMBOL FOR DISSOLVE-2
+<Multi_key> <at> <asterisk> <d> <i> <s> <s> <o> <l>        : "🝡"  U1F761  # ALCHEMICAL SYMBOL FOR DISSOLVE
+<Multi_key> <at> <asterisk> <d> <i> <s> <t> <i> <l>        : "🝠"  U1F760  # ALCHEMICAL SYMBOL FOR DISTILL
+<Multi_key> <at> <asterisk> <e> <a> <r> <t> <h>            : "🜃"  U1F703  # ALCHEMICAL SYMBOL FOR EARTH
+<Multi_key> <at> <asterisk> <f> <i> <r> <e>                : "🜂"  U1F702  # ALCHEMICAL SYMBOL FOR FIRE
+<Multi_key> <at> <asterisk> <g> <o> <l> <d>                : "🜚"  U1F71A  # ALCHEMICAL SYMBOL FOR GOLD
+<Multi_key> <at> <asterisk> <g> <u> <m>                    : "🝉"  U1F749  # ALCHEMICAL SYMBOL FOR GUM
+<Multi_key> <at> <asterisk> <h> <d> <u> <n> <g>            : "🝖"  U1F756  # ALCHEMICAL SYMBOL FOR HORSE DUNG
+<Multi_key> <at> <asterisk> <h> <o> <u> <r>                : "🝮"  U1F76E  # ALCHEMICAL SYMBOL FOR HOUR
+<Multi_key> <at> <asterisk> <i> <r> <o> <n> <space>        : "🜜"  U1F71C  # ALCHEMICAL SYMBOL FOR IRON ORE
+<Multi_key> <at> <asterisk> <i> <r> <o> <n> <2>            : "🜝"  U1F71D  # ALCHEMICAL SYMBOL FOR IRON ORE-2
+<Multi_key> <at> <asterisk> <l> <e> <a> <d>                : "🜪"  U1F72A  # ALCHEMICAL SYMBOL FOR LEAD ORE
+<Multi_key> <at> <asterisk> <l> <o> <d> <e> <s> <t>        : "🝓"  U1F753  # ALCHEMICAL SYMBOL FOR LODESTONE
+<Multi_key> <at> <asterisk> <m> <a> <r> <c> <a> <s>        : "🜸"  U1F738  # ALCHEMICAL SYMBOL FOR MARCASITE
+<Multi_key> <at> <asterisk> <m> <e> <r> <c> <u> <2>        : "🜑"  U1F711  # ALCHEMICAL SYMBOL FOR MERCURY SUBLIMATE-2
+<Multi_key> <at> <asterisk> <m> <e> <r> <c> <u> <3>        : "🜒"  U1F712  # ALCHEMICAL SYMBOL FOR MERCURY SUBLIMATE-3
+<Multi_key> <at> <asterisk> <m> <e> <r> <c> <u> <r>        : "🜐"  U1F710  # ALCHEMICAL SYMBOL FOR MERCURY SUBLIMATE
+<Multi_key> <at> <asterisk> <m> <o> <n> <t> <h>            : "🝱"  U1F771  # ALCHEMICAL SYMBOL FOR MONTH
+<Multi_key> <at> <asterisk> <n> <i> <g> <h> <t>            : "🝯"  U1F76F  # ALCHEMICAL SYMBOL FOR NIGHT
+<Multi_key> <at> <asterisk> <n> <i> <t> <r> <e>            : "🜕"  U1F715  # ALCHEMICAL SYMBOL FOR NITRE
+<Multi_key> <at> <asterisk> <o> <i> <l>                    : "🝆"  U1F746  # ALCHEMICAL SYMBOL FOR OIL
+<Multi_key> <at> <asterisk> <p> <a> <s> <h> <e> <s>        : "🝘"  U1F758  # ALCHEMICAL SYMBOL FOR POT ASHES
+<Multi_key> <at> <asterisk> <p> <b> <r> <i> <c> <k>        : "🝚"  U1F75A  # ALCHEMICAL SYMBOL FOR POWDERED BRICK
+<Multi_key> <at> <asterisk> <p> <o> <w> <d> <e> <r>        : "🝋"  U1F74B  # ALCHEMICAL SYMBOL FOR POWDER
+<Multi_key> <at> <asterisk> <p> <r> <e> <c> <i> <p>        : "🝟"  U1F75F  # ALCHEMICAL SYMBOL FOR PRECIPITATE
+<Multi_key> <at> <asterisk> <p> <s> <u> <l> <f>            : "🜎"  U1F70E  # ALCHEMICAL SYMBOL FOR PHILOSOPHERS SULFUR
+<Multi_key> <at> <asterisk> <p> <u> <r> <i> <f> <y>        : "🝣"  U1F763  # ALCHEMICAL SYMBOL FOR PURIFY
+<Multi_key> <at> <asterisk> <p> <u> <t> <r> <e> <f>        : "🝤"  U1F764  # ALCHEMICAL SYMBOL FOR PUTREFACTION
+<Multi_key> <at> <asterisk> <q> <l> <i> <m> <e>            : "🝁"  U1F741  # ALCHEMICAL SYMBOL FOR QUICK LIME
+<Multi_key> <at> <asterisk> <q> <u> <i> <n> <t>            : "🜀"  U1F700  # ALCHEMICAL SYMBOL FOR QUINTESSENCE
+<Multi_key> <at> <asterisk> <r> <a> <n> <t> <i> <2>        : "🜱"  U1F731  # ALCHEMICAL SYMBOL FOR REGULUS OF ANTIMONY-2
+<Multi_key> <at> <asterisk> <r> <a> <n> <t> <i> <m>        : "🜰"  U1F730  # ALCHEMICAL SYMBOL FOR REGULUS OF ANTIMONY
+<Multi_key> <at> <asterisk> <r> <e> <a> <l> <g> <2>        : "🜼"  U1F73C  # ALCHEMICAL SYMBOL FOR REALGAR-2
+<Multi_key> <at> <asterisk> <r> <e> <a> <l> <g> <a>        : "🜻"  U1F73B  # ALCHEMICAL SYMBOL FOR REALGAR
+<Multi_key> <at> <asterisk> <r> <e> <g> <u> <l> <2>        : "🜳"  U1F733  # ALCHEMICAL SYMBOL FOR REGULUS-2
+<Multi_key> <at> <asterisk> <r> <e> <g> <u> <l> <3>        : "🜴"  U1F734  # ALCHEMICAL SYMBOL FOR REGULUS-3
+<Multi_key> <at> <asterisk> <r> <e> <g> <u> <l> <4>        : "🜵"  U1F735  # ALCHEMICAL SYMBOL FOR REGULUS-4
+<Multi_key> <at> <asterisk> <r> <e> <g> <u> <l> <u>        : "🜲"  U1F732  # ALCHEMICAL SYMBOL FOR REGULUS
+<Multi_key> <at> <asterisk> <r> <e> <t> <o> <r> <t>        : "🝭"  U1F76D  # ALCHEMICAL SYMBOL FOR RETORT
+<Multi_key> <at> <asterisk> <r> <i> <r> <o> <n>            : "🜟"  U1F71F  # ALCHEMICAL SYMBOL FOR REGULUS OF IRON
+<Multi_key> <at> <asterisk> <r> <s> <a> <l> <t> <space>    : "🜘"  U1F718  # ALCHEMICAL SYMBOL FOR ROCK SALT
+<Multi_key> <at> <asterisk> <r> <s> <a> <l> <t> <2>        : "🜙"  U1F719  # ALCHEMICAL SYMBOL FOR ROCK SALT-2
+<Multi_key> <at> <asterisk> <s> <a> <l> <a> <m> <o>        : "🜹"  U1F739  # ALCHEMICAL SYMBOL FOR SAL-AMMONIAC
+<Multi_key> <at> <asterisk> <s> <a> <l> <t>                : "🜔"  U1F714  # ALCHEMICAL SYMBOL FOR SALT
+<Multi_key> <at> <asterisk> <s> <a> <n> <t> <i> <m>        : "🜬"  U1F72C  # ALCHEMICAL SYMBOL FOR SUBLIMATE OF ANTIMONY
+<Multi_key> <at> <asterisk> <s> <c> <e> <p> <t> <e>        : "🝏"  U1F74F  # ALCHEMICAL SYMBOL FOR SCEPTER OF JOVE
+<Multi_key> <at> <asterisk> <s> <c> <o> <p> <a> <n>        : "🜦"  U1F726  # ALCHEMICAL SYMBOL FOR SALT OF COPPER ANTIMONIATE
+<Multi_key> <at> <asterisk> <s> <c> <o> <p> <p> <e>        : "🜢"  U1F722  # ALCHEMICAL SYMBOL FOR SUBLIMATE OF COPPER
+<Multi_key> <at> <asterisk> <s> <i> <l> <v> <e> <r>        : "🜛"  U1F71B  # ALCHEMICAL SYMBOL FOR SILVER
+<Multi_key> <at> <asterisk> <s> <o> <a> <p>                : "🝔"  U1F754  # ALCHEMICAL SYMBOL FOR SOAP
+<Multi_key> <at> <asterisk> <s> <p> <i> <r> <i> <t>        : "🝇"  U1F747  # ALCHEMICAL SYMBOL FOR SPIRIT
+<Multi_key> <at> <asterisk> <s> <s> <a> <n> <t> <i>        : "🜮"  U1F72E  # ALCHEMICAL SYMBOL FOR SUBLIMATE OF SALT OF ANTIMONY
+<Multi_key> <at> <asterisk> <s> <s> <c> <o> <p> <p>        : "🜧"  U1F727  # ALCHEMICAL SYMBOL FOR SUBLIMATE OF SALT OF COPPER
+<Multi_key> <at> <asterisk> <s> <t> <r> <a> <t> <2>        : "🝝"  U1F75D  # ALCHEMICAL SYMBOL FOR STRATUM SUPER STRATUM-2
+<Multi_key> <at> <asterisk> <s> <t> <r> <a> <t> <u>        : "🝜"  U1F75C  # ALCHEMICAL SYMBOL FOR STRATUM SUPER STRATUM
+<Multi_key> <at> <asterisk> <s> <t> <r> <i> <d> <e>        : "🝒"  U1F752  # ALCHEMICAL SYMBOL FOR STARRED TRIDENT
+<Multi_key> <at> <asterisk> <s> <u> <a> <n> <t> <i>        : "🜭"  U1F72D  # ALCHEMICAL SYMBOL FOR SALT OF ANTIMONY (not ideal)
+<Multi_key> <at> <asterisk> <s> <u> <b> <l> <i> <m>        : "🝞"  U1F75E  # ALCHEMICAL SYMBOL FOR SUBLIMATION
+<Multi_key> <at> <asterisk> <s> <u> <l> <f> <u> <r>        : "🜍"  U1F70D  # ALCHEMICAL SYMBOL FOR SULFUR
+<Multi_key> <at> <asterisk> <t> <a> <r> <t> <a> <2>        : "🝀"  U1F740  # ALCHEMICAL SYMBOL FOR TARTAR-2
+<Multi_key> <at> <asterisk> <t> <a> <r> <t> <a> <r>        : "🜿"  U1F73F  # ALCHEMICAL SYMBOL FOR TARTAR
+<Multi_key> <at> <asterisk> <t> <i> <n> <space>            : "🜩"  U1F729  # ALCHEMICAL SYMBOL FOR TIN ORE
+<Multi_key> <at> <asterisk> <t> <i> <n> <c> <t> <u>        : "🝈"  U1F748  # ALCHEMICAL SYMBOL FOR TINCTURE
+<Multi_key> <at> <asterisk> <t> <r> <i> <d> <e> <n>        : "🝑"  U1F751  # ALCHEMICAL SYMBOL FOR TRIDENT
+<Multi_key> <at> <asterisk> <asterisk> <t> <r> <i> <d> <e> : "🝒"  U1F752  # ALCHEMICAL SYMBOL FOR STARRED TRIDENT
+<Multi_key> <at> <asterisk> <t> <u> <t> <t> <y>            : "🝍"  U1F74D  # ALCHEMICAL SYMBOL FOR TUTTY
+<Multi_key> <at> <asterisk> <u> <r> <i> <n> <e>            : "🝕"  U1F755  # ALCHEMICAL SYMBOL FOR URINE
+<Multi_key> <at> <asterisk> <v> <a> <n> <t> <i> <m>        : "🜯"  U1F72F  # ALCHEMICAL SYMBOL FOR VINEGAR OF ANTIMONY
+<Multi_key> <at> <asterisk> <v> <e> <r> <d> <i> <g>        : "🜨"  U1F728  # ALCHEMICAL SYMBOL FOR VERDIGRIS
+<Multi_key> <at> <asterisk> <v> <i> <n> <e> <g> <2>        : "🜋"  U1F70B  # ALCHEMICAL SYMBOL FOR VINEGAR-2
+<Multi_key> <at> <asterisk> <v> <i> <n> <e> <g> <3>        : "🜌"  U1F70C  # ALCHEMICAL SYMBOL FOR VINEGAR-3
+<Multi_key> <at> <asterisk> <v> <i> <n> <e> <g> <a>        : "🜊"  U1F70A  # ALCHEMICAL SYMBOL FOR VINEGAR
+<Multi_key> <at> <asterisk> <v> <i> <t> <r> <i> <2>        : "🜗"  U1F717  # ALCHEMICAL SYMBOL FOR VITRIOL-2
+<Multi_key> <at> <asterisk> <v> <i> <t> <r> <i> <o>        : "🜖"  U1F716  # ALCHEMICAL SYMBOL FOR VITRIOL
+<Multi_key> <at> <asterisk> <w> <a> <t> <e> <r>            : "🜄"  U1F704  # ALCHEMICAL SYMBOL FOR WATER
+<Multi_key> <at> <asterisk> <w> <a> <x>                    : "🝊"  U1F74A  # ALCHEMICAL SYMBOL FOR WAX
 
 #####################
 # I Ching hexagrams #
