@@ -3994,6 +3994,16 @@ include "%L"
 <Multi_key> <a> <semicolon> <i> <n> <space>           : "ﹴ"  UFE74  # ARABIC KASRATAN ISOLATED FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <underscore> <i> <n> <space> : "ﹴ"  UFE74  # ARABIC KASRATAN ISOLATED FORM (conflicts with ą)
 
+<Multi_key> <a> <semicolon> <w> <u> <n>               : "ﱞ"  UFC5E  # ARABIC LIGATURE SHADDA WITH DAMMATAN ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <w> <i> <n>               : "ﱟ"  UFC5F  # ARABIC LIGATURE SHADDA WITH KASRATAN ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <w> <a> <space>           : "ﱠ"  UFC60  # ARABIC LIGATURE SHADDA WITH FATHA ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <w> <u> <space>           : "ﱡ"  UFC61  # ARABIC LIGATURE SHADDA WITH DAMMA ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <w> <i> <space>           : "ﱢ"  UFC62  # ARABIC LIGATURE SHADDA WITH KASRA ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <asciicircum> <asciicircum> <a> <w> : "ﱣ"  UFC63  # ARABIC LIGATURE SHADDA WITH SUPERSCRIPT ALEF ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <w> <a> <m>               : "ﳲ"  UFCF2  # ARABIC LIGATURE SHADDA WITH FATHA MEDIAL FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <w> <u> <m>               : "ﳳ"  UFCF3  # ARABIC LIGATURE SHADDA WITH DAMMA MEDIAL FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <w> <i> <m>               : "ﳴ"  UFCF4  # ARABIC LIGATURE SHADDA WITH KASRA MEDIAL FORM (conflicts with ą)
+
 # additional letters (represented semantically)
 
 <Multi_key> <a> <x> <less> <t>      : "ة"  U0629  # ARABIC LETTER TEH MARBUTA
@@ -4244,18 +4254,55 @@ include "%L"
 
 <Multi_key> <a> <c> <asciicircum> <asciicircum> <a> <Return> : "ٰ"  U0670  # ARABIC LETTER SUPERSCRIPT ALEF
 
+<Multi_key> <a> <x> <asciicircum> <underscore> <t> : "ؕ"  U0615  # ARABIC SMALL HIGH TAH
+<Multi_key> <a> <c> <asciicircum> <underscore> <z> : "ؗ"  U0617  # ARABIC SMALL HIGH ZAIN
+<Multi_key> <a> <f> <asciicircum> <underscore> <greater> <m> : "ۘ"  U06D8  # ARABIC SMALL HIGH MEEM INITIAL FORM
+<Multi_key> <a> <c> <asciicircum> <underscore> <j> : "ۚ"  U06DA  # ARABIC SMALL HIGH JEEM
+<Multi_key> <a> <c> <asciicircum> <underscore> <s> : "ۜ"  U06DC  # ARABIC SMALL HIGH SEEN
+<Multi_key> <a> <f> <asciicircum> <underscore> <space> <m> : "ۢ"  U06E2  # ARABIC SMALL HIGH MEEM ISOLATED FORM
+<Multi_key> <a> <c> <asciicircum> <underscore> <y> : "ۧ"  U06E7  # ARABIC SMALL HIGH YEH
+<Multi_key> <a> <c> <asciicircum> <underscore> <i> : "ۧ"  U06E7  # ARABIC SMALL HIGH YEH
+<Multi_key> <a> <c> <asciicircum> <underscore> <n> : "ۨ"  U06E8  # ARABIC SMALL HIGH NOON
+<Multi_key> <a> <x> <asciicircum> <underscore> <y> : "࣊"  U08CA  # ARABIC SMALL HIGH FARSI YEH
+<Multi_key> <a> <x> <asciicircum> <underscore> <z> : "࣍"  U08CD  # ARABIC SMALL HIGH ZAH
+<Multi_key> <a> <x> <asciicircum> <underscore> <s> : "ࣕ"  U08D5  # ARABIC SMALL HIGH SAD
+<Multi_key> <a> <c> <asciicircum> <underscore> <grave> : "ࣖ"  U08D6  # ARABIC SMALL HIGH AIN
+<Multi_key> <a> <c> <asciicircum> <underscore> <q> : "ࣗ"  U08D7  # ARABIC SMALL HIGH QAF
+<Multi_key> <a> <c> <asciicircum> <underscore> <w> : "ࣳ"  U08F3  # ARABIC SMALL HIGH WAW
+<Multi_key> <a> <c> <asciicircum> <underscore> <u> : "ࣳ"  U08F3  # ARABIC SMALL HIGH WAW
+
+<Multi_key> <a> <c> <underscore> <w> : "ۥ"  U06E5  # ARABIC SMALL WAW
+<Multi_key> <a> <c> <underscore> <u> : "ۥ"  U06E5  # ARABIC SMALL WAW
+<Multi_key> <a> <c> <underscore> <y> : "ۦ"  U06E6  # ARABIC SMALL YEH
+<Multi_key> <a> <c> <underscore> <i> : "ۦ"  U06E6  # ARABIC SMALL YEH
+<Multi_key> <a> <x> <underscore> <y> : "ࣉ"  U08C9  # ARABIC SMALL FARSI YEH
+
 # ligatures
 
 <Multi_key> <a> <x> <a> <k> <b> <a> <r>  : "ﷳ"  UFDF3  # ARABIC LIGATURE AKBAR ISOLATED FORM
 <Multi_key> <a> <x> <a> <l> <l> <a> <h>  : "ﷲ"  UFDF2  # ARABIC LIGATURE ALLAH ISOLATED FORM
 <Multi_key> <a> <x> <b> <i> <s> <m> <i> <l> <l> <a> <h> : "﷽"  UFDFD  # ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM
 
-<Multi_key> <a> <x> <A> <A> <S>          : "﵇"  UFD47  # ARABIC LIGATURE ALAYHI AS-SALAAM
 <Multi_key> <a> <x> <A> <W> <J>          : "﷿"  UFDFF  # ARABIC LIGATURE AZZA WA JALL
-<Multi_key> <x> <J> <J>                  : "ﷻ"  UFDFB  # ARABIC LIGATURE JALLAJALALOUHOU
+<Multi_key> <a> <x> <J> <J>              : "ﷻ"  UFDFB  # ARABIC LIGATURE JALLAJALALOUHOU
 <Multi_key> <a> <x> <P> <B> <U> <H>      : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM (PBUH)
+<Multi_key> <a> <x> <Q> <S>              : "﵋"  UFD4B  # ARABIC LIGATURE QUDDISA SIRRAH
 <Multi_key> <a> <x> <S> <A> <W>          : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM
 <Multi_key> <a> <x> <S> <W> <T>          : "﷾"  UFDFE  # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
+<Multi_key> <a> <x> <T> <W> <T>          : "﵎"  UFD4E  # ARABIC LIGATURE TABAARAKA WA-TAAALAA
+
+<Multi_key> <a> <x> <A> <m> <A> <Return> : "ؑ"  U0611  # ARABIC SIGN ALAYHE ASSALLAM
+<Multi_key> <a> <x> <A> <A> <S> <space>  : "﵇"  UFD47  # ARABIC LIGATURE ALAYHI AS-SALAAM
+<Multi_key> <a> <x> <A> <m> <A> <S>      : "﵈"  UFD48  # ARABIC LIGATURE ALAYHIM AS-SALAAM
+<Multi_key> <a> <x> <A> <2> <A> <S>      : "﵉"  UFD49  # ARABIC LIGATURE ALAYHIMAA AS-SALAAM
+<Multi_key> <a> <x> <A> <a> <A> <S>      : "﵍"  UFD4D  # ARABIC LIGATURE ALAYHAA AS-SALAAM
+
+<Multi_key> <a> <x> <R> <A> <Return>     : "ؓ"  U0613  # ARABIC SIGN RADI ALLAHOU ANHU
+<Multi_key> <a> <x> <R> <A> <space>      : "﵁"  UFD41  # ARABIC LIGATURE RADI ALLAAHU ANH
+<Multi_key> <a> <x> <R> <A> <a>          : "﵂"  UFD42  # ARABIC LIGATURE RADI ALLAAHU ANHAA
+<Multi_key> <a> <x> <R> <A> <m>          : "﵃"  UFD43  # ARABIC LIGATURE RADI ALLAAHU ANHUM
+<Multi_key> <a> <x> <R> <A> <2>          : "﵄"  UFD44  # ARABIC LIGATURE RADI ALLAAHU ANHUMAA
+<Multi_key> <a> <x> <R> <A> <n>          : "﵅"  UFD45  # ARABIC LIGATURE RADI ALLAAHU ANHUNNA
 
 # punctuation
 
@@ -4326,6 +4373,9 @@ include "%L"
 <Multi_key> <a> <numbersign> <r> <1> <slash> <4> : "𐹼"  U10E7C  # RUMI FRACTION ONE QUARTER
 <Multi_key> <a> <numbersign> <r> <1> <slash> <3> : "𐹽"  U10E7D  # RUMI FRACTION ONE THIRD
 <Multi_key> <a> <numbersign> <r> <2> <slash> <3> : "𐹾"  U10E7E  # RUMI FRACTION TWO THIRDS
+
+<Multi_key> <a> <x> <numbersign> <s> <u> <m> : "𞻰"  U1EEF0  # ARABIC MATHEMATICAL OPERATOR MEEM WITH HAH WITH TATWEEL
+<Multi_key> <a> <x> <numbersign> <l> <i> <m> : "𞻱"  U1EEF1  # ARABIC MATHEMATICAL OPERATOR HAH WITH DAL
 
 # (f/F = presentation forms)
 
@@ -7216,6 +7266,12 @@ include "%L"
 <Multi_key> <b> <B> <h> <space>          : "ဟ"  U101F  # MYANMAR LETTER HA
 <Multi_key> <b> <B> <h> <Return>         : "ှ"  U103E  # MYANMAR CONSONANT SIGN MEDIAL HA
 <Multi_key> <b> <B> <period> <l>         : "ဠ"  U1020  # MYANMAR LETTER LLA
+<Multi_key> <b> <B> <semicolon> <s>      : "ၐ"  U1050  # MYANMAR LETTER SHA
+<Multi_key> <b> <B> <period> <s> <space> : "ၑ"  U1051  # MYANMAR LETTER SSA
+<Multi_key> <b> <B> <comma> <r> <space>  : "ၒ"  U1052  # MYANMAR LETTER VOCALIC R
+<Multi_key> <b> <B> <comma> <r> <r> <space> : "ၓ"  U1053  # MYANMAR LETTER VOCALIC RR
+<Multi_key> <b> <B> <comma> <l> <space>  : "ၔ"  U1054  # MYANMAR LETTER VOCALIC L
+<Multi_key> <b> <B> <comma> <l> <l> <space> : "ၕ"  U1055  # MYANMAR LETTER VOCALIC LL
 
 # Independent vowels
 
@@ -7240,6 +7296,10 @@ include "%L"
 <Multi_key> <b> <B> <a> <i> <Return>     : "ဲ"  U1032  # MYANMAR VOWEL SIGN AI
 <Multi_key> <b> <B> <asciicircum> <e> <e> <Return> : "ဵ"  U1035  # MYANMAR VOWEL SIGN E ABOVE
 <Multi_key> <b> <B> <0> <Return>         : "္"  U1039  # MYANMAR SIGN VIRAMA
+<Multi_key> <b> <B> <comma> <r> <Return> : "ၖ"  U1056  # MYANMAR VOWEL SIGN VOCALIC R
+<Multi_key> <b> <B> <comma> <r> <r> <Return> : "ၗ"  U1057  # MYANMAR VOWEL SIGN VOCALIC RR
+<Multi_key> <b> <B> <comma> <l> <Return> : "ၘ"  U1058  # MYANMAR VOWEL SIGN VOCALIC L
+<Multi_key> <b> <B> <comma> <l> <l> <Return> : "ၙ"  U1059  # MYANMAR VOWEL SIGN VOCALIC LL
 
 # Other signs
 
@@ -7248,6 +7308,14 @@ include "%L"
 <Multi_key> <b> <B> <colon> <Return>     : "း"  U1038  # MYANMAR SIGN VISARGA
 <Multi_key> <b> <B> <underscore> <plus> <Return> : "္"  U1039  # MYANMAR SIGN VIRAMA
 <Multi_key> <b> <B> <c> <Return>         : "်"  U103A  # MYANMAR SIGN ASAT
+<Multi_key> <b> <B> <bar>                : "၊"  U104A  # MYANMAR SIGN LITTLE SECTION
+<Multi_key> <b> <B> <2> <bar>            : "။"  U104B  # MYANMAR SIGN SECTION
+
+<Multi_key> <b> <B> <braceright> <i> <n>          : "၌"  U104C  # MYANMAR SYMBOL LOCATIVE
+<Multi_key> <b> <B> <braceright> <d> <o> <n> <e>  : "၍"  U104D  # MYANMAR SYMBOL COMPLETED
+<Multi_key> <b> <B> <braceright> <i> <b> <i> <d>  : "၎"  U104E  # MYANMAR SYMBOL AFOREMENTIONED
+<Multi_key> <b> <B> <braceright> <o> <f>          : "၏"  U104F  # MYANMAR SYMBOL GENITIVE
+<Multi_key> <b> <B> <braceright> <apostrophe> <s> : "၏"  U104F  # MYANMAR SYMBOL GENITIVE
 
 # Numerals
 
@@ -7262,49 +7330,180 @@ include "%L"
 <Multi_key> <b> <B> <numbersign> <8>     : "၈"  U1048  # MYANMAR DIGIT EIGHT
 <Multi_key> <b> <B> <numbersign> <9>     : "၉"  U1049  # MYANMAR DIGIT NINE
 
-<Multi_key> <b> <B> <numbersign> <K> <0> : "𑛚"  U116DA  # MYANMAR EASTERN PWO KAREN DIGIT ZERO
-<Multi_key> <b> <B> <numbersign> <K> <1> : "𑛛"  U116DB  # MYANMAR EASTERN PWO KAREN DIGIT ONE
-<Multi_key> <b> <B> <numbersign> <K> <2> : "𑛜"  U116DC  # MYANMAR EASTERN PWO KAREN DIGIT TWO
-<Multi_key> <b> <B> <numbersign> <K> <3> : "𑛝"  U116DD  # MYANMAR EASTERN PWO KAREN DIGIT THREE
-<Multi_key> <b> <B> <numbersign> <K> <4> : "𑛞"  U116DE  # MYANMAR EASTERN PWO KAREN DIGIT FOUR
-<Multi_key> <b> <B> <numbersign> <K> <5> : "𑛟"  U116DF  # MYANMAR EASTERN PWO KAREN DIGIT FIVE
-<Multi_key> <b> <B> <numbersign> <K> <6> : "𑛠"  U116E0  # MYANMAR EASTERN PWO KAREN DIGIT SIX
-<Multi_key> <b> <B> <numbersign> <K> <7> : "𑛡"  U116E1  # MYANMAR EASTERN PWO KAREN DIGIT SEVEN
-<Multi_key> <b> <B> <numbersign> <K> <8> : "𑛢"  U116E2  # MYANMAR EASTERN PWO KAREN DIGIT EIGHT
-<Multi_key> <b> <B> <numbersign> <K> <9> : "𑛣"  U116E3  # MYANMAR EASTERN PWO KAREN DIGIT NINE
+<Multi_key> <b> <B> <E> <P> <K> <numbersign> <0> : "𑛚"  U116DA  # MYANMAR EASTERN PWO KAREN DIGIT ZERO
+<Multi_key> <b> <B> <E> <P> <K> <numbersign> <1> : "𑛛"  U116DB  # MYANMAR EASTERN PWO KAREN DIGIT ONE
+<Multi_key> <b> <B> <E> <P> <K> <numbersign> <2> : "𑛜"  U116DC  # MYANMAR EASTERN PWO KAREN DIGIT TWO
+<Multi_key> <b> <B> <E> <P> <K> <numbersign> <3> : "𑛝"  U116DD  # MYANMAR EASTERN PWO KAREN DIGIT THREE
+<Multi_key> <b> <B> <E> <P> <K> <numbersign> <4> : "𑛞"  U116DE  # MYANMAR EASTERN PWO KAREN DIGIT FOUR
+<Multi_key> <b> <B> <E> <P> <K> <numbersign> <5> : "𑛟"  U116DF  # MYANMAR EASTERN PWO KAREN DIGIT FIVE
+<Multi_key> <b> <B> <E> <P> <K> <numbersign> <6> : "𑛠"  U116E0  # MYANMAR EASTERN PWO KAREN DIGIT SIX
+<Multi_key> <b> <B> <E> <P> <K> <numbersign> <7> : "𑛡"  U116E1  # MYANMAR EASTERN PWO KAREN DIGIT SEVEN
+<Multi_key> <b> <B> <E> <P> <K> <numbersign> <8> : "𑛢"  U116E2  # MYANMAR EASTERN PWO KAREN DIGIT EIGHT
+<Multi_key> <b> <B> <E> <P> <K> <numbersign> <9> : "𑛣"  U116E3  # MYANMAR EASTERN PWO KAREN DIGIT NINE
 
-<Multi_key> <b> <B> <numbersign> <P> <0> : "𑛐"  U116D0  # MYANMAR PAO DIGIT ZERO
-<Multi_key> <b> <B> <numbersign> <P> <1> : "𑛑"  U116D1  # MYANMAR PAO DIGIT ONE
-<Multi_key> <b> <B> <numbersign> <P> <2> : "𑛒"  U116D2  # MYANMAR PAO DIGIT TWO
-<Multi_key> <b> <B> <numbersign> <P> <3> : "𑛓"  U116D3  # MYANMAR PAO DIGIT THREE
-<Multi_key> <b> <B> <numbersign> <P> <4> : "𑛔"  U116D4  # MYANMAR PAO DIGIT FOUR
-<Multi_key> <b> <B> <numbersign> <P> <5> : "𑛕"  U116D5  # MYANMAR PAO DIGIT FIVE
-<Multi_key> <b> <B> <numbersign> <P> <6> : "𑛖"  U116D6  # MYANMAR PAO DIGIT SIX
-<Multi_key> <b> <B> <numbersign> <P> <7> : "𑛗"  U116D7  # MYANMAR PAO DIGIT SEVEN
-<Multi_key> <b> <B> <numbersign> <P> <8> : "𑛘"  U116D8  # MYANMAR PAO DIGIT EIGHT
-<Multi_key> <b> <B> <numbersign> <P> <9> : "𑛙"  U116D9  # MYANMAR PAO DIGIT NINE
+<Multi_key> <b> <B> <P> <numbersign> <0> : "𑛐"  U116D0  # MYANMAR PAO DIGIT ZERO
+<Multi_key> <b> <B> <P> <numbersign> <1> : "𑛑"  U116D1  # MYANMAR PAO DIGIT ONE
+<Multi_key> <b> <B> <P> <numbersign> <2> : "𑛒"  U116D2  # MYANMAR PAO DIGIT TWO
+<Multi_key> <b> <B> <P> <numbersign> <3> : "𑛓"  U116D3  # MYANMAR PAO DIGIT THREE
+<Multi_key> <b> <B> <P> <numbersign> <4> : "𑛔"  U116D4  # MYANMAR PAO DIGIT FOUR
+<Multi_key> <b> <B> <P> <numbersign> <5> : "𑛕"  U116D5  # MYANMAR PAO DIGIT FIVE
+<Multi_key> <b> <B> <P> <numbersign> <6> : "𑛖"  U116D6  # MYANMAR PAO DIGIT SIX
+<Multi_key> <b> <B> <P> <numbersign> <7> : "𑛗"  U116D7  # MYANMAR PAO DIGIT SEVEN
+<Multi_key> <b> <B> <P> <numbersign> <8> : "𑛘"  U116D8  # MYANMAR PAO DIGIT EIGHT
+<Multi_key> <b> <B> <P> <numbersign> <9> : "𑛙"  U116D9  # MYANMAR PAO DIGIT NINE
 
-<Multi_key> <b> <B> <numbersign> <S> <0> : "႐"  U1090  # MYANMAR SHAN DIGIT ZERO
-<Multi_key> <b> <B> <numbersign> <S> <1> : "႑"  U1091  # MYANMAR SHAN DIGIT ONE
-<Multi_key> <b> <B> <numbersign> <S> <2> : "႒"  U1092  # MYANMAR SHAN DIGIT TWO
-<Multi_key> <b> <B> <numbersign> <S> <3> : "႓"  U1093  # MYANMAR SHAN DIGIT THREE
-<Multi_key> <b> <B> <numbersign> <S> <4> : "႔"  U1094  # MYANMAR SHAN DIGIT FOUR
-<Multi_key> <b> <B> <numbersign> <S> <5> : "႕"  U1095  # MYANMAR SHAN DIGIT FIVE
-<Multi_key> <b> <B> <numbersign> <S> <6> : "႖"  U1096  # MYANMAR SHAN DIGIT SIX
-<Multi_key> <b> <B> <numbersign> <S> <7> : "႗"  U1097  # MYANMAR SHAN DIGIT SEVEN
-<Multi_key> <b> <B> <numbersign> <S> <8> : "႘"  U1098  # MYANMAR SHAN DIGIT EIGHT
-<Multi_key> <b> <B> <numbersign> <S> <9> : "႙"  U1099  # MYANMAR SHAN DIGIT NINE
+<Multi_key> <b> <B> <S> <numbersign> <0> : "႐"  U1090  # MYANMAR SHAN DIGIT ZERO
+<Multi_key> <b> <B> <S> <numbersign> <1> : "႑"  U1091  # MYANMAR SHAN DIGIT ONE
+<Multi_key> <b> <B> <S> <numbersign> <2> : "႒"  U1092  # MYANMAR SHAN DIGIT TWO
+<Multi_key> <b> <B> <S> <numbersign> <3> : "႓"  U1093  # MYANMAR SHAN DIGIT THREE
+<Multi_key> <b> <B> <S> <numbersign> <4> : "႔"  U1094  # MYANMAR SHAN DIGIT FOUR
+<Multi_key> <b> <B> <S> <numbersign> <5> : "႕"  U1095  # MYANMAR SHAN DIGIT FIVE
+<Multi_key> <b> <B> <S> <numbersign> <6> : "႖"  U1096  # MYANMAR SHAN DIGIT SIX
+<Multi_key> <b> <B> <S> <numbersign> <7> : "႗"  U1097  # MYANMAR SHAN DIGIT SEVEN
+<Multi_key> <b> <B> <S> <numbersign> <8> : "႘"  U1098  # MYANMAR SHAN DIGIT EIGHT
+<Multi_key> <b> <B> <S> <numbersign> <9> : "႙"  U1099  # MYANMAR SHAN DIGIT NINE
 
-<Multi_key> <b> <B> <numbersign> <T> <L> <0> : "꧰"  UA9F0  # MYANMAR TAI LAING DIGIT ZERO
-<Multi_key> <b> <B> <numbersign> <T> <L> <1> : "꧱"  UA9F1  # MYANMAR TAI LAING DIGIT ONE
-<Multi_key> <b> <B> <numbersign> <T> <L> <2> : "꧲"  UA9F2  # MYANMAR TAI LAING DIGIT TWO
-<Multi_key> <b> <B> <numbersign> <T> <L> <3> : "꧳"  UA9F3  # MYANMAR TAI LAING DIGIT THREE
-<Multi_key> <b> <B> <numbersign> <T> <L> <4> : "꧴"  UA9F4  # MYANMAR TAI LAING DIGIT FOUR
-<Multi_key> <b> <B> <numbersign> <T> <L> <5> : "꧵"  UA9F5  # MYANMAR TAI LAING DIGIT FIVE
-<Multi_key> <b> <B> <numbersign> <T> <L> <6> : "꧶"  UA9F6  # MYANMAR TAI LAING DIGIT SIX
-<Multi_key> <b> <B> <numbersign> <T> <L> <7> : "꧷"  UA9F7  # MYANMAR TAI LAING DIGIT SEVEN
-<Multi_key> <b> <B> <numbersign> <T> <L> <8> : "꧸"  UA9F8  # MYANMAR TAI LAING DIGIT EIGHT
-<Multi_key> <b> <B> <numbersign> <T> <L> <9> : "꧹"  UA9F9  # MYANMAR TAI LAING DIGIT NINE
+<Multi_key> <b> <B> <T> <numbersign> <0> : "꧰"  UA9F0  # MYANMAR TAI LAING DIGIT ZERO
+<Multi_key> <b> <B> <T> <numbersign> <1> : "꧱"  UA9F1  # MYANMAR TAI LAING DIGIT ONE
+<Multi_key> <b> <B> <T> <numbersign> <2> : "꧲"  UA9F2  # MYANMAR TAI LAING DIGIT TWO
+<Multi_key> <b> <B> <T> <numbersign> <3> : "꧳"  UA9F3  # MYANMAR TAI LAING DIGIT THREE
+<Multi_key> <b> <B> <T> <numbersign> <4> : "꧴"  UA9F4  # MYANMAR TAI LAING DIGIT FOUR
+<Multi_key> <b> <B> <T> <numbersign> <5> : "꧵"  UA9F5  # MYANMAR TAI LAING DIGIT FIVE
+<Multi_key> <b> <B> <T> <numbersign> <6> : "꧶"  UA9F6  # MYANMAR TAI LAING DIGIT SIX
+<Multi_key> <b> <B> <T> <numbersign> <7> : "꧷"  UA9F7  # MYANMAR TAI LAING DIGIT SEVEN
+<Multi_key> <b> <B> <T> <numbersign> <8> : "꧸"  UA9F8  # MYANMAR TAI LAING DIGIT EIGHT
+<Multi_key> <b> <B> <T> <numbersign> <9> : "꧹"  UA9F9  # MYANMAR TAI LAING DIGIT NINE
+
+# language variants
+
+<Multi_key> <b> <B> <A> <a> <space> : "ႜ"  U109C  # MYANMAR VOWEL SIGN AITON A
+<Multi_key> <b> <B> <A> <a> <i> : "ႝ"  U109D  # MYANMAR VOWEL SIGN AITON AI
+<Multi_key> <b> <B> <A> <exclam> : "꩷"  UAA77  # MYANMAR SYMBOL AITON EXCLAMATION
+<Multi_key> <b> <B> <A> <1> : "꩸"  UAA78  # MYANMAR SYMBOL AITON ONE
+<Multi_key> <b> <B> <A> <2> : "꩹"  UAA79  # MYANMAR SYMBOL AITON TWO
+<Multi_key> <b> <B> <A> <r> : "ꩺ"  UAA7A  # MYANMAR LETTER AITON RA
+
+<Multi_key> <b> <B> <K> <g> : "ꩠ"  UAA60  # MYANMAR LETTER KHAMTI GA
+<Multi_key> <b> <B> <K> <c> <space> : "ꩡ"  UAA61  # MYANMAR LETTER KHAMTI CA
+<Multi_key> <b> <B> <K> <c> <h> : "ꩢ"  UAA62  # MYANMAR LETTER KHAMTI CHA
+<Multi_key> <b> <B> <K> <j> <space> : "ꩣ"  UAA63  # MYANMAR LETTER KHAMTI JA
+<Multi_key> <b> <B> <K> <j> <h> : "ꩤ"  UAA64  # MYANMAR LETTER KHAMTI JHA
+<Multi_key> <b> <B> <K> <asciitilde> <n> : "ꩥ"  UAA65  # MYANMAR LETTER KHAMTI NYA
+<Multi_key> <b> <B> <K> <period> <t> <space> : "ꩦ"  UAA66  # MYANMAR LETTER KHAMTI TTA
+<Multi_key> <b> <B> <K> <period> <t> <h> : "ꩧ"  UAA67  # MYANMAR LETTER KHAMTI TTHA
+<Multi_key> <b> <B> <K> <period> <d> <space> : "ꩨ"  UAA68  # MYANMAR LETTER KHAMTI DDA
+<Multi_key> <b> <B> <K> <period> <d> <h> : "ꩩ"  UAA69  # MYANMAR LETTER KHAMTI DDHA
+<Multi_key> <b> <B> <K> <d> <h> : "ꩪ"  UAA6A  # MYANMAR LETTER KHAMTI DHA
+<Multi_key> <b> <B> <K> <n> : "ꩫ"  UAA6B  # MYANMAR LETTER KHAMTI NA
+<Multi_key> <b> <B> <K> <s> : "ꩬ"  UAA6C  # MYANMAR LETTER KHAMTI SA
+<Multi_key> <b> <B> <K> <h> <space> : "ꩭ"  UAA6D  # MYANMAR LETTER KHAMTI HA
+<Multi_key> <b> <B> <K> <h> <h> : "ꩮ"  UAA6E  # MYANMAR LETTER KHAMTI HHA
+<Multi_key> <b> <B> <K> <f> : "ꩯ"  UAA6F  # MYANMAR LETTER KHAMTI FA
+<Multi_key> <b> <B> <K> <quotedbl> : "ꩰ"  UAA70  # MYANMAR MODIFIER LETTER KHAMTI REDUPLICATION
+<Multi_key> <b> <B> <K> <x> : "ꩱ"  UAA71  # MYANMAR LETTER KHAMTI XA
+<Multi_key> <b> <B> <K> <z> : "ꩲ"  UAA72  # MYANMAR LETTER KHAMTI ZA
+<Multi_key> <b> <B> <K> <r> : "ꩳ"  UAA73  # MYANMAR LETTER KHAMTI RA
+<Multi_key> <b> <B> <K> <q> <a> <y> : "ꩴ"  UAA74  # MYANMAR LOGOGRAM KHAMTI OAY
+<Multi_key> <b> <B> <K> <q> <n> : "ꩵ"  UAA75  # MYANMAR LOGOGRAM KHAMTI QN
+<Multi_key> <b> <B> <K> <h> <m> : "ꩶ"  UAA76  # MYANMAR LOGOGRAM KHAMTI HM
+<Multi_key> <b> <B> <K> <bar> <1> <Return> : "ႚ"  U109A  # MYANMAR SIGN KHAMTI TONE-1
+<Multi_key> <b> <B> <K> <bar> <3> <Return> : "ႛ"  U109B  # MYANMAR SIGN KHAMTI TONE-3
+
+<Multi_key> <b> <B> <K> <o> <e> <Return> : "ၲ"  U1072  # MYANMAR VOWEL SIGN KAYAH OE
+<Multi_key> <b> <B> <K> <u> <Return> : "ၳ"  U1073  # MYANMAR VOWEL SIGN KAYAH U
+<Multi_key> <b> <B> <K> <e> <e> <Return> : "ၴ"  U1074  # MYANMAR VOWEL SIGN KAYAH EE
+
+<Multi_key> <b> <B> <G> <K> <i> <Return> : "ၱ"  U1071  # MYANMAR VOWEL SIGN GEBA KAREN I
+<Multi_key> <b> <B> <P> <K> <bar> : "ꩻ"  UAA7B  # MYANMAR SIGN PAO KAREN TONE
+
+<Multi_key> <b> <B> <E> <P> <K> <period> <n> : "ၮ"  U106E  # MYANMAR LETTER EASTERN PWO KAREN NNA
+<Multi_key> <b> <B> <E> <P> <K> <y> <w> : "ၯ"  U106F  # MYANMAR LETTER EASTERN PWO KAREN YWA
+<Multi_key> <b> <B> <E> <P> <K> <g> <h> <w> : "ၰ"  U1070  # MYANMAR LETTER EASTERN PWO KAREN GHWA
+
+<Multi_key> <b> <B> <W> <P> <K> <t> <h> : "ၥ"  U1065  # MYANMAR LETTER WESTERN PWO KAREN THA
+<Multi_key> <b> <B> <W> <P> <K> <p> <w> : "ၦ"  U1066  # MYANMAR LETTER WESTERN PWO KAREN PWA
+<Multi_key> <b> <B> <W> <P> <K> <e> <u> <Return> : "ၧ"  U1067  # MYANMAR VOWEL SIGN WESTERN PWO KAREN EU
+<Multi_key> <b> <B> <W> <P> <K> <u> <e> <Return> : "ၨ"  U1068  # MYANMAR VOWEL SIGN WESTERN PWO KAREN UE
+<Multi_key> <b> <B> <W> <P> <K> <bar> <1> <Return> : "ၩ"  U1069  # MYANMAR SIGN WESTERN PWO KAREN TONE-1
+<Multi_key> <b> <B> <W> <P> <K> <bar> <2> <Return> : "ၪ"  U106A  # MYANMAR SIGN WESTERN PWO KAREN TONE-2
+<Multi_key> <b> <B> <W> <P> <K> <bar> <3> <Return> : "ၫ"  U106B  # MYANMAR SIGN WESTERN PWO KAREN TONE-3
+<Multi_key> <b> <B> <W> <P> <K> <bar> <4> <Return> : "ၬ"  U106C  # MYANMAR SIGN WESTERN PWO KAREN TONE-4
+<Multi_key> <b> <B> <W> <P> <K> <bar> <5> <Return> : "ၭ"  U106D  # MYANMAR SIGN WESTERN PWO KAREN TONE-5
+
+<Multi_key> <b> <B> <S> <K> <s> <h> : "ၡ"  U1061  # MYANMAR LETTER SGAW KAREN SHA
+<Multi_key> <b> <B> <S> <K> <e> <u> <Return> : "ၢ"  U1062  # MYANMAR VOWEL SIGN SGAW KAREN EU
+<Multi_key> <b> <B> <S> <K> <bar> <h> : "ၣ"  U1063  # MYANMAR TONE MARK SGAW KAREN HATHI
+<Multi_key> <b> <B> <S> <K> <bar> <k> : "ၤ"  U1064  # MYANMAR TONE MARK SGAW KAREN KE PHO
+
+<Multi_key> <b> <B> <M> <e> <space> : "ဨ"  U1028  # MYANMAR LETTER MON E
+<Multi_key> <b> <B> <M> <i> <i> <Return> : "ဳ"  U1033  # MYANMAR VOWEL SIGN MON II
+<Multi_key> <b> <B> <M> <o> <Return> : "ဴ"  U1034  # MYANMAR VOWEL SIGN MON O
+<Multi_key> <b> <B> <M> <semicolon> <n> : "ၚ"  U105A  # MYANMAR LETTER MON NGA
+<Multi_key> <b> <B> <M> <j> <h> : "ၛ"  U105B  # MYANMAR LETTER MON JHA
+<Multi_key> <b> <B> <M> <b> <b> <a> : "ၜ"  U105C  # MYANMAR LETTER MON BBA
+<Multi_key> <b> <B> <M> <b> <b> <e> : "ၝ"  U105D  # MYANMAR LETTER MON BBE
+<Multi_key> <b> <B> <M> <n> <Return> : "ၞ"  U105E  # MYANMAR CONSONANT SIGN MON MEDIAL NA
+<Multi_key> <b> <B> <M> <m> <Return> : "ၟ"  U105F  # MYANMAR CONSONANT SIGN MON MEDIAL MA
+<Multi_key> <b> <B> <M> <l> <Return> : "ၠ"  U1060  # MYANMAR CONSONANT SIGN MON MEDIAL LA
+
+<Multi_key> <b> <B> <R> <P> <f> : "ႎ"  U108E  # MYANMAR LETTER RUMAI PALAUNG FA
+<Multi_key> <b> <B> <R> <P> <bar> <5> : "ႏ"  U108F  # MYANMAR SIGN RUMAI PALAUNG TONE-5
+
+<Multi_key> <b> <B> <S> <P> <c> <h> : "ꩾ"  UAA7E  # MYANMAR LETTER SHWE PALAUNG CHA
+<Multi_key> <b> <B> <S> <P> <s> <h> : "ꩿ"  UAA7F  # MYANMAR LETTER SHWE PALAUNG SHA
+
+<Multi_key> <b> <B> <S> <a> <space> : "ဢ"  U1022  # MYANMAR LETTER SHAN A
+<Multi_key> <b> <B> <S> <k> <space> : "ၵ"  U1075  # MYANMAR LETTER SHAN KA
+<Multi_key> <b> <B> <S> <k> <h> : "ၶ"  U1076  # MYANMAR LETTER SHAN KHA
+<Multi_key> <b> <B> <S> <g> <space> : "ၷ"  U1077  # MYANMAR LETTER SHAN GA
+<Multi_key> <b> <B> <S> <c> <space> : "ၸ"  U1078  # MYANMAR LETTER SHAN CA
+<Multi_key> <b> <B> <S> <z> : "ၹ"  U1079  # MYANMAR LETTER SHAN ZA
+<Multi_key> <b> <B> <S> <asciitilde> <n> : "ၺ"  U107A  # MYANMAR LETTER SHAN NYA
+<Multi_key> <b> <B> <S> <d> : "ၻ"  U107B  # MYANMAR LETTER SHAN DA
+<Multi_key> <b> <B> <S> <n> : "ၼ"  U107C  # MYANMAR LETTER SHAN NA
+<Multi_key> <b> <B> <S> <p> <h> : "ၽ"  U107D  # MYANMAR LETTER SHAN PHA
+<Multi_key> <b> <B> <S> <f> : "ၾ"  U107E  # MYANMAR LETTER SHAN FA
+<Multi_key> <b> <B> <S> <b> <space> : "ၿ"  U107F  # MYANMAR LETTER SHAN BA
+<Multi_key> <b> <B> <S> <t> <h> : "ႀ"  U1080  # MYANMAR LETTER SHAN THA
+<Multi_key> <b> <B> <S> <h> : "ႁ"  U1081  # MYANMAR LETTER SHAN HA
+<Multi_key> <b> <B> <S> <w> <Return> : "ႂ"  U1082  # MYANMAR CONSONANT SIGN SHAN MEDIAL WA
+<Multi_key> <b> <B> <S> <a> <a> <Return> : "ႃ"  U1083  # MYANMAR VOWEL SIGN SHAN AA
+<Multi_key> <b> <B> <S> <e> <Return> : "ႄ"  U1084  # MYANMAR VOWEL SIGN SHAN E
+<Multi_key> <b> <B> <S> <asciicircum> <e> <Return> : "ႅ"  U1085  # MYANMAR VOWEL SIGN SHAN E ABOVE
+<Multi_key> <b> <B> <S> <greater> <y> <Return> : "ႆ"  U1086  # MYANMAR VOWEL SIGN SHAN FINAL Y
+<Multi_key> <b> <B> <S> <g> <h> : "ꧠ"  UA9E0  # MYANMAR LETTER SHAN GHA
+<Multi_key> <b> <B> <S> <c> <h> : "ꧡ"  UA9E1  # MYANMAR LETTER SHAN CHA
+<Multi_key> <b> <B> <S> <j> <h> : "ꧢ"  UA9E2  # MYANMAR LETTER SHAN JHA
+<Multi_key> <b> <B> <S> <period> <n> : "ꧣ"  UA9E3  # MYANMAR LETTER SHAN NNA
+<Multi_key> <b> <B> <S> <b> <h> : "ꧤ"  UA9E4  # MYANMAR LETTER SHAN BHA
+<Multi_key> <b> <B> <S> <bar> <2> <Return> : "ႇ"  U1087  # MYANMAR SIGN SHAN TONE-2
+<Multi_key> <b> <B> <S> <bar> <3> <Return> : "ႈ"  U1088  # MYANMAR SIGN SHAN TONE-3
+<Multi_key> <b> <B> <S> <bar> <5> <Return> : "ႉ"  U1089  # MYANMAR SIGN SHAN TONE-5
+<Multi_key> <b> <B> <S> <bar> <6> <Return> : "ႊ"  U108A  # MYANMAR SIGN SHAN TONE-6
+<Multi_key> <b> <B> <S> <C> <bar> <2> : "ႋ"  U108B  # MYANMAR SIGN SHAN COUNCIL TONE-2
+<Multi_key> <b> <B> <S> <C> <bar> <3> : "ႌ"  U108C  # MYANMAR SIGN SHAN COUNCIL TONE-3
+<Multi_key> <b> <B> <S> <C> <bar> <exclam> : "ႍ"  U108D  # MYANMAR SIGN SHAN COUNCIL EMPHATIC TONE
+<Multi_key> <b> <B> <S> <1> : "႞"  U109E  # MYANMAR SYMBOL SHAN ONE
+<Multi_key> <b> <B> <S> <exclam> : "႟"  U109F  # MYANMAR SYMBOL SHAN EXCLAMATION
+<Multi_key> <b> <B> <S> <2> <Return> : "ꧥ"  UA9E5  # MYANMAR SIGN SHAN SAW
+<Multi_key> <b> <B> <S> <quotedbl> : "ꧦ"  UA9E6  # MYANMAR MODIFIER LETTER SHAN REDUPLICATION
+
+<Multi_key> <b> <B> <T> <asciitilde> <n> : "ꧧ"  UA9E7  # MYANMAR LETTER TAI LAING NYA
+<Multi_key> <b> <B> <T> <f> : "ꧨ"  UA9E8  # MYANMAR LETTER TAI LAING FA
+<Multi_key> <b> <B> <T> <g> <space> : "ꧩ"  UA9E9  # MYANMAR LETTER TAI LAING GA
+<Multi_key> <b> <B> <T> <g> <h> : "ꧪ"  UA9EA  # MYANMAR LETTER TAI LAING GHA
+<Multi_key> <b> <B> <T> <j> <space> : "ꧫ"  UA9EB  # MYANMAR LETTER TAI LAING JA
+<Multi_key> <b> <B> <T> <j> <h> : "ꧬ"  UA9EC  # MYANMAR LETTER TAI LAING JHA
+<Multi_key> <b> <B> <T> <period> <d> <space> : "ꧭ"  UA9ED  # MYANMAR LETTER TAI LAING DDA
+<Multi_key> <b> <B> <T> <period> <d> <h> : "ꧮ"  UA9EE  # MYANMAR LETTER TAI LAING DDHA
+<Multi_key> <b> <B> <T> <period> <n> : "ꧯ"  UA9EF  # MYANMAR LETTER TAI LAING NNA
+<Multi_key> <b> <B> <T> <period> <l> : "ꧺ"  UA9FA  # MYANMAR LETTER TAI LAING LLA
+<Multi_key> <b> <B> <T> <d> <space> : "ꧻ"  UA9FB  # MYANMAR LETTER TAI LAING DA
+<Multi_key> <b> <B> <T> <d> <h> : "ꧼ"  UA9FC  # MYANMAR LETTER TAI LAING DHA
+<Multi_key> <b> <B> <T> <b> <space> : "ꧽ"  UA9FD  # MYANMAR LETTER TAI LAING BA
+<Multi_key> <b> <B> <T> <b> <h> : "ꧾ"  UA9FE  # MYANMAR LETTER TAI LAING BHA
+<Multi_key> <b> <B> <T> <bar> <2> <Return> : "ꩼ"  UAA7C  # MYANMAR SIGN TAI LAING TONE-2
+<Multi_key> <b> <B> <T> <bar> <5> <Return> : "ꩽ"  UAA7D  # MYANMAR SIGN TAI LAING TONE-5
 
 # (BH = Bhaiksuki)
 
@@ -18129,24 +18328,48 @@ include "HangulSyllables"
 
 # (BL = Balinese)
 
-<Multi_key> <K> <B> <L> <k>              : "ᬓ"  U1B13  # BALINESE LETTER KA
-<Multi_key> <K> <B> <L> <g>              : "ᬕ"  U1B15  # BALINESE LETTER GA
+<Multi_key> <K> <B> <L> <k> <space>      : "ᬓ"  U1B13  # BALINESE LETTER KA
+<Multi_key> <K> <B> <L> <k> <h>          : "ᬔ"  U1B14  # BALINESE LETTER KA MAHAPRANA
+<Multi_key> <K> <B> <L> <g> <space>      : "ᬕ"  U1B15  # BALINESE LETTER GA
+<Multi_key> <K> <B> <L> <g> <h>          : "ᬖ"  U1B16  # BALINESE LETTER GA GORA
 <Multi_key> <K> <B> <L> <semicolon> <n>  : "ᬗ"  U1B17  # BALINESE LETTER NGA
-<Multi_key> <K> <B> <L> <c>              : "ᬘ"  U1B18  # BALINESE LETTER CA
-<Multi_key> <K> <B> <L> <j>              : "ᬚ"  U1B1A  # BALINESE LETTER JA
+<Multi_key> <K> <B> <L> <c> <space>      : "ᬘ"  U1B18  # BALINESE LETTER CA
+<Multi_key> <K> <B> <L> <c> <h>          : "ᬙ"  U1B19  # BALINESE LETTER CA LACA
+<Multi_key> <K> <B> <L> <j> <space>      : "ᬚ"  U1B1A  # BALINESE LETTER JA
+<Multi_key> <K> <B> <L> <j> <h>          : "ᬛ"  U1B1B  # BALINESE LETTER JA JERA
 <Multi_key> <K> <B> <L> <asciitilde> <n> : "ᬜ"  U1B1C  # BALINESE LETTER NYA
-<Multi_key> <K> <B> <L> <t>              : "ᬢ"  U1B22  # BALINESE LETTER TA
-<Multi_key> <K> <B> <L> <d>              : "ᬤ"  U1B24  # BALINESE LETTER DA
+<Multi_key> <K> <B> <L> <period> <t> <space> : "ᬝ"  U1B1D  # BALINESE LETTER TA LATIK
+<Multi_key> <K> <B> <L> <period> <t> <h> : "ᬞ"  U1B1E  # BALINESE LETTER TA MURDA MAHAPRANA
+<Multi_key> <K> <B> <L> <period> <d> <space> : "ᬟ"  U1B1F  # BALINESE LETTER DA MURDA ALPAPRANA
+<Multi_key> <K> <B> <L> <period> <d> <h> : "ᬠ"  U1B20  # BALINESE LETTER DA MURDA MAHAPRANA
+<Multi_key> <K> <B> <L> <period> <n>     : "ᬡ"  U1B21  # BALINESE LETTER NA RAMBAT
+<Multi_key> <K> <B> <L> <t> <space>      : "ᬢ"  U1B22  # BALINESE LETTER TA
+<Multi_key> <K> <B> <L> <t> <h>          : "ᬣ"  U1B23  # BALINESE LETTER TA TAWA
+<Multi_key> <K> <B> <L> <d> <space>      : "ᬤ"  U1B24  # BALINESE LETTER DA
+<Multi_key> <K> <B> <L> <d> <h>          : "ᬥ"  U1B25  # BALINESE LETTER DA MADU
 <Multi_key> <K> <B> <L> <n>              : "ᬦ"  U1B26  # BALINESE LETTER NA
-<Multi_key> <K> <B> <L> <p>              : "ᬧ"  U1B27  # BALINESE LETTER PA
-<Multi_key> <K> <B> <L> <b>              : "ᬩ"  U1B29  # BALINESE LETTER BA
+<Multi_key> <K> <B> <L> <p> <space>      : "ᬧ"  U1B27  # BALINESE LETTER PA
+<Multi_key> <K> <B> <L> <p> <h>          : "ᬨ"  U1B28  # BALINESE LETTER PA KAPAL
+<Multi_key> <K> <B> <L> <b> <space>      : "ᬩ"  U1B29  # BALINESE LETTER BA
+<Multi_key> <K> <B> <L> <b> <h>          : "ᬪ"  U1B2A  # BALINESE LETTER BA KEMBANG
 <Multi_key> <K> <B> <L> <m>              : "ᬫ"  U1B2B  # BALINESE LETTER MA
 <Multi_key> <K> <B> <L> <y>              : "ᬬ"  U1B2C  # BALINESE LETTER YA
 <Multi_key> <K> <B> <L> <r>              : "ᬭ"  U1B2D  # BALINESE LETTER RA
 <Multi_key> <K> <B> <L> <l>              : "ᬮ"  U1B2E  # BALINESE LETTER LA
 <Multi_key> <K> <B> <L> <w>              : "ᬯ"  U1B2F  # BALINESE LETTER WA
 <Multi_key> <K> <B> <L> <s>              : "ᬲ"  U1B32  # BALINESE LETTER SA
+<Multi_key> <K> <B> <L> <semicolon> <s>  : "ᬰ"  U1B30  # BALINESE LETTER SA SAGA
+<Multi_key> <K> <B> <L> <period> <s>     : "ᬱ"  U1B31  # BALINESE LETTER SA SAPA
 <Multi_key> <K> <B> <L> <h>              : "ᬳ"  U1B33  # BALINESE LETTER HA
+<Multi_key> <K> <B> <L> <j> <asciitilde> <n> : "ᭌ"  U1B4C  # BALINESE LETTER ARCHAIC JNYA
+
+<Multi_key> <K> <B> <L> <S> <q>          : "ᭅ"  U1B45  # BALINESE LETTER KAF SASAK
+<Multi_key> <K> <B> <L> <S> <k>          : "ᭆ"  U1B46  # BALINESE LETTER KHOT SASAK
+<Multi_key> <K> <B> <L> <S> <t>          : "ᭇ"  U1B47  # BALINESE LETTER TZIR SASAK
+<Multi_key> <K> <B> <L> <S> <f>          : "ᭈ"  U1B48  # BALINESE LETTER EF SASAK
+<Multi_key> <K> <B> <L> <S> <v>          : "ᭉ"  U1B49  # BALINESE LETTER VE SASAK
+<Multi_key> <K> <B> <L> <S> <z>          : "ᭊ"  U1B4A  # BALINESE LETTER ZAL SASAK
+<Multi_key> <K> <B> <L> <S> <a>          : "ᭋ"  U1B4B  # BALINESE LETTER ASYURA SASAK
 
 <Multi_key> <K> <B> <L> <a> <space>      : "ᬅ"  U1B05  # BALINESE LETTER AKARA
 <Multi_key> <K> <B> <L> <a> <a> <space>  : "ᬆ"  U1B06  # BALINESE LETTER AKARA TEDUNG
@@ -18198,11 +18421,19 @@ include "HangulSyllables"
 <Multi_key> <K> <B> <L> <numbersign> <8> : "᭘"  U1B58  # BALINESE DIGIT EIGHT
 <Multi_key> <K> <B> <L> <numbersign> <9> : "᭙"  U1B59  # BALINESE DIGIT NINE
 
-<Multi_key> <K> <B> <L> <Multi_key> <S> <O> : "᭚"  U1B5A  # BALINESE PANTI
 <Multi_key> <K> <B> <L> <colon> <space>  : "᭝"  U1B5D  # BALINESE CARIK PAMUNGKAH
 <Multi_key> <K> <B> <L> <bar>            : "᭞"  U1B5E  # BALINESE CARIK SIKI (DANDA)
 <Multi_key> <K> <B> <L> <2> <bar>        : "᭟"  U1B5F  # BALINESE CARIK PAREREN (DOUBLE DANDA)
 <Multi_key> <K> <B> <L> <minus> <Return> : "᭠"  U1B60  # BALINESE PAMENENG
+<Multi_key> <K> <B> <L> <v> <bar>        : "᭎"  U1B4E  # BALINESE INVERTED CARIK SIKI
+<Multi_key> <K> <B> <L> <v> <2> <bar>    : "᭏"  U1B4F  # BALINESE INVERTED CARIK PAREREN
+<Multi_key> <K> <B> <L> <O>              : "᭜"  U1B5C  # BALINESE WINDU
+
+<Multi_key> <K> <B> <L> <bracketleft> <M>  : "᭚"  U1B5A  # BALINESE PANTI
+<Multi_key> <K> <B> <L> <bracketleft> <m>  : "᭿"  U1B7F  # BALINESE PANTI BAWAK
+<Multi_key> <K> <B> <L> <bracketright> <M> : "᭽"  U1B7D  # BALINESE PANTI LANTANG
+<Multi_key> <K> <B> <L> <bracketleft> <W>  : "᭛"  U1B5B  # BALINESE PAMADA
+<Multi_key> <K> <B> <L> <bracketright> <W> : "᭾"  U1B7E  # BALINESE PAMADA LANTANG
 
 # (BT = Batak) minority forms suffixed by K(aro), M(andailing), P(akpak), T(oba), S(imalungun)
 
@@ -21351,7 +21582,6 @@ include "HangulSyllables"
 <Multi_key> <z> <m> <v> <j> : "ᠵ" U1835   # MONGOLIAN LETTER JA (ǰ)
 <Multi_key> <z> <m> <y> : "ᠶ" U1836   # MONGOLIAN LETTER YA
 <Multi_key> <z> <m> <r> : "ᠷ" U1837   # MONGOLIAN LETTER RA
-# Galik
 <Multi_key> <z> <m> <E> : "ᠧ" U1827   # MONGOLIAN LETTER EE
 <Multi_key> <z> <m> <w> : "ᠸ" U1838   # MONGOLIAN LETTER WA
 <Multi_key> <z> <m> <f> : "ᠹ" U1839   # MONGOLIAN LETTER FA
@@ -21364,6 +21594,11 @@ include "HangulSyllables"
 <Multi_key> <z> <m> <L> : "ᡀ" U1840   # MONGOLIAN LETTER LHA
 <Multi_key> <z> <m> <v> <z> : "ᡁ" U1841   # MONGOLIAN LETTER ZHI (ž)
 <Multi_key> <z> <m> <T> : "ᡂ" U1842   # MONGOLIAN LETTER CHI
+
+<Multi_key> <z> <m> <quotedbl> <C> : "ᡸ"  U1878  # MONGOLIAN LETTER CHA WITH TWO DOTS
+<Multi_key> <z> <m> <quotedbl> <v> <c> : "ᡸ"  U1878  # MONGOLIAN LETTER CHA WITH TWO DOTS
+
+# numbers and punctuation
 
 <Multi_key> <z> <m> <numbersign> <0> : "᠐" U1810   # MONGOLIAN DIGIT ZERO
 <Multi_key> <z> <m> <numbersign> <1> : "᠑" U1811   # MONGOLIAN DIGIT ONE
@@ -21380,12 +21615,151 @@ include "HangulSyllables"
 <Multi_key> <z> <m> <comma> : "᠂" U1802   # MONGOLIAN COMMA
 <Multi_key> <z> <m> <period> : "᠃" U1803   # MONGOLIAN FULL STOP
 <Multi_key> <z> <m> <colon> : "᠄" U1804   # MONGOLIAN COLON
+<Multi_key> <z> <m> <minus> : "᠊"  U180A  # MONGOLIAN NIRUGU
+
+# control characters
 
 <Multi_key> <z> <m> <V> <1> : "᠋" U180B   # MONGOLIAN FREE VARIATION SELECTOR ONE
 <Multi_key> <z> <m> <V> <2> : "᠌" U180C   # MONGOLIAN FREE VARIATION SELECTOR TWO
 <Multi_key> <z> <m> <V> <3> : "᠍" U180D   # MONGOLIAN FREE VARIATION SELECTOR THREE
 <Multi_key> <z> <m> <V> <S> : "᠎" U180E   # MONGOLIAN VOWEL SEPARATOR
 <Multi_key> <z> <m> <V> <4> : "᠏" U180F   # MONGOLIAN FREE VARIATION SELECTOR FOUR
+
+# language variants
+
+<Multi_key> <z> <m> <at> <M> <i> : "ᡳ"  U1873  # MONGOLIAN LETTER MANCHU I
+<Multi_key> <z> <m> <at> <M> <k> : "ᡴ"  U1874  # MONGOLIAN LETTER MANCHU KA
+<Multi_key> <z> <m> <at> <M> <r> : "ᡵ"  U1875  # MONGOLIAN LETTER MANCHU RA
+<Multi_key> <z> <m> <at> <M> <f> : "ᡶ"  U1876  # MONGOLIAN LETTER MANCHU FA
+<Multi_key> <z> <m> <at> <M> <z> <h> : "ᡷ"  U1877  # MONGOLIAN LETTER MANCHU ZHA
+<Multi_key> <z> <m> <at> <M> <v> <z> : "ᡷ"  U1877  # MONGOLIAN LETTER MANCHU ZHA
+<Multi_key> <z> <m> <at> <M> <comma> : "᠈"  U1808  # MONGOLIAN MANCHU COMMA
+<Multi_key> <z> <m> <at> <M> <period> : "᠉"  U1809  # MONGOLIAN MANCHU FULL STOP
+
+<Multi_key> <z> <m> <at> <S> <e> : "ᡝ"  U185D  # MONGOLIAN LETTER SIBE E
+<Multi_key> <z> <m> <at> <S> <i> <space> : "ᡞ"  U185E  # MONGOLIAN LETTER SIBE I
+<Multi_key> <z> <m> <at> <S> <i> <y> : "ᡟ"  U185F  # MONGOLIAN LETTER SIBE IY
+<Multi_key> <z> <m> <at> <S> <u> <e> : "ᡠ"  U1860  # MONGOLIAN LETTER SIBE UE
+<Multi_key> <z> <m> <at> <S> <u> <space> : "ᡡ"  U1861  # MONGOLIAN LETTER SIBE U
+<Multi_key> <z> <m> <at> <S> <N> : "ᡢ"  U1862  # MONGOLIAN LETTER SIBE ANG
+<Multi_key> <z> <m> <at> <S> <k> : "ᡣ"  U1863  # MONGOLIAN LETTER SIBE KA
+<Multi_key> <z> <m> <at> <S> <g> : "ᡤ"  U1864  # MONGOLIAN LETTER SIBE GA
+<Multi_key> <z> <m> <at> <S> <H> : "ᡥ"  U1865  # MONGOLIAN LETTER SIBE HA
+<Multi_key> <z> <m> <at> <S> <p> : "ᡦ"  U1866  # MONGOLIAN LETTER SIBE PA
+<Multi_key> <z> <m> <at> <S> <S> : "ᡧ"  U1867  # MONGOLIAN LETTER SIBE SHA
+<Multi_key> <z> <m> <at> <S> <v> <s> : "ᡧ"  U1867  # MONGOLIAN LETTER SIBE SHA
+<Multi_key> <z> <m> <at> <S> <t> : "ᡨ"  U1868  # MONGOLIAN LETTER SIBE TA
+<Multi_key> <z> <m> <at> <S> <d> : "ᡩ"  U1869  # MONGOLIAN LETTER SIBE DA
+<Multi_key> <z> <m> <at> <S> <j> : "ᡪ"  U186A  # MONGOLIAN LETTER SIBE JA
+<Multi_key> <z> <m> <at> <S> <f> : "ᡫ"  U186B  # MONGOLIAN LETTER SIBE FA
+<Multi_key> <z> <m> <at> <S> <G> : "ᡬ"  U186C  # MONGOLIAN LETTER SIBE GAA
+<Multi_key> <z> <m> <at> <S> <h> : "ᡭ"  U186D  # MONGOLIAN LETTER SIBE HAA
+<Multi_key> <z> <m> <at> <S> <c> : "ᡮ"  U186E  # MONGOLIAN LETTER SIBE TSA
+<Multi_key> <z> <m> <at> <S> <z> : "ᡯ"  U186F  # MONGOLIAN LETTER SIBE ZA
+<Multi_key> <z> <m> <at> <S> <r> : "ᡰ"  U1870  # MONGOLIAN LETTER SIBE RAA
+<Multi_key> <z> <m> <at> <S> <C> : "ᡱ"  U1871  # MONGOLIAN LETTER SIBE CHA
+<Multi_key> <z> <m> <at> <S> <v> <c> : "ᡱ"  U1871  # MONGOLIAN LETTER SIBE CHA
+<Multi_key> <z> <m> <at> <S> <Z> : "ᡲ"  U1872  # MONGOLIAN LETTER SIBE ZHA
+<Multi_key> <z> <m> <at> <S> <v> <z> : "ᡲ"  U1872  # MONGOLIAN LETTER SIBE ZHA
+<Multi_key> <z> <m> <at> <S> <minus> : "᠇"  U1807  # MONGOLIAN SIBE SYLLABLE BOUNDARY MARKER
+
+<Multi_key> <z> <m> <at> <minus> : "ᡃ"  U1843  # MONGOLIAN LETTER TODO LONG VOWEL SIGN
+<Multi_key> <z> <m> <at> <T> <e> : "ᡄ"  U1844  # MONGOLIAN LETTER TODO E
+<Multi_key> <z> <m> <at> <T> <i> : "ᡅ"  U1845  # MONGOLIAN LETTER TODO I
+<Multi_key> <z> <m> <at> <T> <o> <space> : "ᡆ"  U1846  # MONGOLIAN LETTER TODO O
+<Multi_key> <z> <m> <at> <T> <u> <space> : "ᡇ"  U1847  # MONGOLIAN LETTER TODO U
+<Multi_key> <z> <m> <at> <T> <o> <e> : "ᡈ"  U1848  # MONGOLIAN LETTER TODO OE
+<Multi_key> <z> <m> <at> <T> <u> <e> : "ᡉ"  U1849  # MONGOLIAN LETTER TODO UE
+<Multi_key> <z> <m> <at> <T> <N> : "ᡊ"  U184A  # MONGOLIAN LETTER TODO ANG
+<Multi_key> <z> <m> <at> <T> <b> : "ᡋ"  U184B  # MONGOLIAN LETTER TODO BA
+<Multi_key> <z> <m> <at> <T> <p> : "ᡌ"  U184C  # MONGOLIAN LETTER TODO PA
+<Multi_key> <z> <m> <at> <T> <q> : "ᡍ"  U184D  # MONGOLIAN LETTER TODO QA
+<Multi_key> <z> <m> <at> <T> <g> : "ᡎ"  U184E  # MONGOLIAN LETTER TODO GA
+<Multi_key> <z> <m> <at> <T> <m> : "ᡏ"  U184F  # MONGOLIAN LETTER TODO MA
+<Multi_key> <z> <m> <at> <T> <t> : "ᡐ"  U1850  # MONGOLIAN LETTER TODO TA
+<Multi_key> <z> <m> <at> <T> <d> <space> : "ᡑ"  U1851  # MONGOLIAN LETTER TODO DA
+<Multi_key> <z> <m> <at> <T> <C> : "ᡒ"  U1852  # MONGOLIAN LETTER TODO CHA
+<Multi_key> <z> <m> <at> <T> <v> <c> : "ᡒ"  U1852  # MONGOLIAN LETTER TODO CHA
+<Multi_key> <z> <m> <at> <T> <j> <space> : "ᡓ"  U1853  # MONGOLIAN LETTER TODO JA
+<Multi_key> <z> <m> <at> <T> <c> : "ᡔ"  U1854  # MONGOLIAN LETTER TODO TSA
+<Multi_key> <z> <m> <at> <T> <y> : "ᡕ"  U1855  # MONGOLIAN LETTER TODO YA
+<Multi_key> <z> <m> <at> <T> <w> : "ᡖ"  U1856  # MONGOLIAN LETTER TODO WA
+<Multi_key> <z> <m> <at> <T> <k> : "ᡗ"  U1857  # MONGOLIAN LETTER TODO KA
+<Multi_key> <z> <m> <at> <T> <G> : "ᡘ"  U1858  # MONGOLIAN LETTER TODO GAA
+<Multi_key> <z> <m> <at> <T> <H> : "ᡙ"  U1859  # MONGOLIAN LETTER TODO HAA
+<Multi_key> <z> <m> <at> <T> <j> <i> : "ᡚ"  U185A  # MONGOLIAN LETTER TODO JIA
+<Multi_key> <z> <m> <at> <T> <n> <i> : "ᡛ"  U185B  # MONGOLIAN LETTER TODO NIA
+<Multi_key> <z> <m> <at> <T> <d> <z>: "ᡜ"  U185C  # MONGOLIAN LETTER TODO DZA
+<Multi_key> <z> <m> <at> <T> <minus> : "᠆"  U1806  # MONGOLIAN TODO SOFT HYPHEN
+
+
+# Sanskrit forms (using Tibetan-style transliteration)
+
+<Multi_key> <z> <m> <at> <G> <a> <space> : "ᢇ"  U1887  # MONGOLIAN LETTER ALI GALI A
+<Multi_key> <z> <m> <at> <G> <i> : "ᢈ"  U1888  # MONGOLIAN LETTER ALI GALI I
+<Multi_key> <z> <m> <at> <G> <k> : "ᢉ"  U1889  # MONGOLIAN LETTER ALI GALI KA
+<Multi_key> <z> <m> <at> <G> <semicolon> <n> : "ᢊ"  U188A  # MONGOLIAN LETTER ALI GALI NGA
+<Multi_key> <z> <m> <at> <G> <c> : "ᢋ"  U188B  # MONGOLIAN LETTER ALI GALI CA
+<Multi_key> <z> <m> <at> <G> <period> <t> <space> : "ᢌ"  U188C  # MONGOLIAN LETTER ALI GALI TTA
+<Multi_key> <z> <m> <at> <G> <period> <t> <h> : "ᢍ"  U188D  # MONGOLIAN LETTER ALI GALI TTHA
+<Multi_key> <z> <m> <at> <G> <period> <d> : "ᢎ"  U188E  # MONGOLIAN LETTER ALI GALI DDA
+<Multi_key> <z> <m> <at> <G> <period> <n> : "ᢏ"  U188F  # MONGOLIAN LETTER ALI GALI NNA
+<Multi_key> <z> <m> <at> <G> <t> : "ᢐ"  U1890  # MONGOLIAN LETTER ALI GALI TA
+<Multi_key> <z> <m> <at> <G> <d> : "ᢑ"  U1891  # MONGOLIAN LETTER ALI GALI DA
+<Multi_key> <z> <m> <at> <G> <p> <space> : "ᢒ"  U1892  # MONGOLIAN LETTER ALI GALI PA
+<Multi_key> <z> <m> <at> <G> <p> <h> : "ᢓ"  U1893  # MONGOLIAN LETTER ALI GALI PHA
+<Multi_key> <z> <m> <at> <G> <period> <s> : "ᢔ"  U1894  # MONGOLIAN LETTER ALI GALI SSA
+<Multi_key> <z> <m> <at> <G> <z> <h> : "ᢕ"  U1895  # MONGOLIAN LETTER ALI GALI ZHA
+<Multi_key> <z> <m> <at> <G> <z> <space> : "ᢖ"  U1896  # MONGOLIAN LETTER ALI GALI ZA
+<Multi_key> <z> <m> <at> <G> <a> <h> : "ᢗ"  U1897  # MONGOLIAN LETTER ALI GALI AH
+<Multi_key> <z> <m> <at> <G> <u> <slash> <2> : "ᢦ"  U18A6  # MONGOLIAN LETTER ALI GALI HALF U
+<Multi_key> <z> <m> <at> <G> <y> <slash> <2> : "ᢧ"  U18A7  # MONGOLIAN LETTER ALI GALI HALF YA
+<Multi_key> <z> <m> <at> <G> <comma> <Return> : "ᢩ"  U18A9  # MONGOLIAN LETTER ALI GALI DAGALGA
+
+<Multi_key> <z> <m> <at> <G> <T> <t> : "ᢘ"  U1898  # MONGOLIAN LETTER TODO ALI GALI TA
+<Multi_key> <z> <m> <at> <G> <T> <z> <h> : "ᢙ"  U1899  # MONGOLIAN LETTER TODO ALI GALI ZHA
+
+<Multi_key> <z> <m> <at> <G> <M> <g> <h> : "ᢚ"  U189A  # MONGOLIAN LETTER MANCHU ALI GALI GHA
+<Multi_key> <z> <m> <at> <G> <M> <semicolon> <n> : "ᢛ"  U189B  # MONGOLIAN LETTER MANCHU ALI GALI NGA
+<Multi_key> <z> <m> <at> <G> <M> <c> <space> : "ᢜ"  U189C  # MONGOLIAN LETTER MANCHU ALI GALI CA
+<Multi_key> <z> <m> <at> <G> <M> <j> <h> : "ᢝ"  U189D  # MONGOLIAN LETTER MANCHU ALI GALI JHA
+<Multi_key> <z> <m> <at> <G> <M> <period> <t> : "ᢞ"  U189E  # MONGOLIAN LETTER MANCHU ALI GALI TTA
+<Multi_key> <z> <m> <at> <G> <M> <period> <d> <h> : "ᢟ"  U189F  # MONGOLIAN LETTER MANCHU ALI GALI DDHA
+<Multi_key> <z> <m> <at> <G> <M> <t> : "ᢠ"  U18A0  # MONGOLIAN LETTER MANCHU ALI GALI TA
+<Multi_key> <z> <m> <at> <G> <M> <d> <h> : "ᢡ"  U18A1  # MONGOLIAN LETTER MANCHU ALI GALI DHA
+<Multi_key> <z> <m> <at> <G> <M> <period> <s> : "ᢢ"  U18A2  # MONGOLIAN LETTER MANCHU ALI GALI SSA
+<Multi_key> <z> <m> <at> <G> <M> <c> <y> : "ᢣ"  U18A3  # MONGOLIAN LETTER MANCHU ALI GALI CYA
+<Multi_key> <z> <m> <at> <G> <M> <z> <h> : "ᢤ"  U18A4  # MONGOLIAN LETTER MANCHU ALI GALI ZHA
+<Multi_key> <z> <m> <at> <G> <M> <z> <space> : "ᢥ"  U18A5  # MONGOLIAN LETTER MANCHU ALI GALI ZA
+<Multi_key> <z> <m> <at> <G> <M> <b> <h> : "ᢨ"  U18A8  # MONGOLIAN LETTER MANCHU ALI GALI BHA
+<Multi_key> <z> <m> <at> <G> <M> <l> <h> : "ᢪ"  U18AA  # MONGOLIAN LETTER MANCHU ALI GALI LHA
+
+<Multi_key> <z> <m> <at> <G> <period> <parenright> : "ᢀ"  U1880  # MONGOLIAN LETTER ALI GALI ANUSVARA ONE
+<Multi_key> <z> <m> <at> <G> <colon> : "ᢁ"  U1881  # MONGOLIAN LETTER ALI GALI VISARGA ONE
+<Multi_key> <z> <m> <at> <G> <8> : "ᢁ"  U1881  # MONGOLIAN LETTER ALI GALI VISARGA ONE
+<Multi_key> <z> <m> <at> <G> <X> : "ᢂ"  U1882  # MONGOLIAN LETTER ALI GALI DAMARU
+<Multi_key> <z> <m> <at> <G> <3> : "ᢃ"  U1883  # MONGOLIAN LETTER ALI GALI UBADAMA
+<Multi_key> <z> <m> <at> <G> <E> : "ᢄ"  U1884  # MONGOLIAN LETTER ALI GALI INVERTED UBADAMA
+<Multi_key> <z> <m> <at> <G> <m> <Return> : "ᢅ"  U1885  # MONGOLIAN LETTER ALI GALI BALUDA
+<Multi_key> <z> <m> <at> <G> <m> <3> <Return> : "ᢆ"  U1886  # MONGOLIAN LETTER ALI GALI THREE BALUDA
+
+# birgas
+
+<Multi_key> <z> <m> <bracketleft> <space> : "᠀"  U1800  # MONGOLIAN BIRGA
+<Multi_key> <z> <m> <bracketleft> <bar> : "𑙠"  U11660  # MONGOLIAN BIRGA WITH ORNAMENT
+<Multi_key> <z> <m> <greater> <bracketleft> <space> : "𑙡"  U11661  # MONGOLIAN ROTATED BIRGA
+<Multi_key> <z> <m> <2> <bracketleft> : "𑙢"  U11662  # MONGOLIAN DOUBLE BIRGA WITH ORNAMENT
+<Multi_key> <z> <m> <3> <bracketleft> : "𑙣"  U11663  # MONGOLIAN TRIPLE BIRGA WITH ORNAMENT
+<Multi_key> <z> <m> <bracketleft> <2> <bar> : "𑙤"  U11664  # MONGOLIAN BIRGA WITH DOUBLE ORNAMENT
+<Multi_key> <z> <m> <greater> <bracketleft> <bar> : "𑙥"  U11665  # MONGOLIAN ROTATED BIRGA WITH ORNAMENT
+<Multi_key> <z> <m> <greater> <bracketleft> <2> <bar> : "𑙦"  U11666  # MONGOLIAN ROTATED BIRGA WITH DOUBLE ORNAMENT
+<Multi_key> <z> <m> <v> <bracketleft> <space> : "𑙧"  U11667  # MONGOLIAN INVERTED BIRGA
+<Multi_key> <z> <m> <v> <bracketleft> <2> <bar> : "𑙨"  U11668  # MONGOLIAN INVERTED BIRGA WITH DOUBLE ORNAMENT
+<Multi_key> <z> <m> <at> <bracketleft> <space> : "𑙩"  U11669  # MONGOLIAN SWIRL BIRGA
+<Multi_key> <z> <m> <at> <bracketleft> <bar> : "𑙪"  U1166A  # MONGOLIAN SWIRL BIRGA WITH ORNAMENT
+<Multi_key> <z> <m> <at> <bracketleft> <2> <bar>: "𑙫"  U1166B  # MONGOLIAN SWIRL BIRGA WITH DOUBLE ORNAMENT
+<Multi_key> <z> <m> <2> <bar> <at> <bracketleft> : "𑙬"  U1166C  # MONGOLIAN TURNED SWIRL BIRGA WITH DOUBLE ORNAMENT
+
 
 # (n = New Tai Le)
 
@@ -25102,6 +25476,8 @@ include "Logograms"
 <Multi_key> <x> <minus> <colon>       : "⋇"  U22C7   # DIVISION TIMES
 <Multi_key> <3> <v> <slash>           : "∛"  U221B   # CUBE ROOT
 <Multi_key> <4> <v> <slash>           : "∜"  U221C   # FOURTH ROOT
+<Multi_key> <backslash> <v> <3>       : "؆"  U0606  # ARABIC-INDIC CUBE ROOT
+<Multi_key> <backslash> <v> <4>       : "؇"  U0607  # ARABIC-INDIC FOURTH ROOT
 <Multi_key> <8> <greater>             : "∞"  U221E   # INFINITY (alternatively 88)
 <Multi_key> <percent> <percent>       : "‱"  U2031   # PER TEN THOUSAND SIGN
 <Multi_key> <6> <less>                : "∂"  U2202   # PARTIAL DIFFERENTIAL
@@ -29662,7 +30038,7 @@ include "Logograms"
 <Multi_key> <numbersign> <g> <asciicircum>   : "𝆱" U1D1B1    # MUSICAL SYMBOL GLISSANDO UP
 <Multi_key> <numbersign> <g> <v>             : "𝆲" U1D1B2    # MUSICAL SYMBOL GLISSANDO DOWN
 
-# mensural notation
+# M = mensural notation
 
 <Multi_key> <numbersign> <n> <M> <m> <x> : "𝆶"  U1D1B6  # MUSICAL SYMBOL MAXIMA
 <Multi_key> <numbersign> <n> <M> <l> : "𝆷"  U1D1B7  # MUSICAL SYMBOL LONGA
@@ -29692,7 +30068,7 @@ include "Logograms"
 <Multi_key> <numbersign> <M> <4> <8> : "𝇌"  U1D1CC  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-1
 <Multi_key> <numbersign> <M> <2> <4> : "𝇎"  U1D1CE  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-3
 
-# ancient greek notation
+# G = ancient greek notation
 
 <Multi_key> <numbersign> <G> <minus> <2> <Return> : "̅"  U0305   # COMBINING OVERLINE (DISEME) (unconfirmed)
 <Multi_key> <numbersign> <G> <minus> <3> <Return> : "𝉂"  U1D242  # COMBINING GREEK MUSICAL TRISEME
@@ -29924,6 +30300,49 @@ include "Logograms"
 <Multi_key> <numbersign> <G> <i> <5> <2> : "𝈿"  U1D23F  # GREEK INSTRUMENTAL NOTATION SYMBOL-52
 <Multi_key> <numbersign> <G> <i> <5> <3> : "𝉀"  U1D240  # GREEK INSTRUMENTAL NOTATION SYMBOL-53
 <Multi_key> <numbersign> <G> <i> <5> <4> : "𝉁"  U1D241  # GREEK INSTRUMENTAL NOTATION SYMBOL-54
+
+# B = Balinese notation (see https://www.unicode.org/notes/tn51/UTN51-Balinese-Characters-1.pdf)
+
+<Multi_key> <numbersign> <B> <1> : "᭦"  U1B66  # BALINESE MUSICAL SYMBOL DING
+<Multi_key> <numbersign> <B> <2> : "᭡"  U1B61  # BALINESE MUSICAL SYMBOL DONG
+<Multi_key> <numbersign> <B> <3> : "᭢"  U1B62  # BALINESE MUSICAL SYMBOL DENG
+<Multi_key> <numbersign> <B> <4> : "᭨"  U1B68  # BALINESE MUSICAL SYMBOL DEUNG
+<Multi_key> <numbersign> <B> <5> : "᭣"  U1B63  # BALINESE MUSICAL SYMBOL DUNG
+<Multi_key> <numbersign> <B> <6> : "᭤"  U1B64  # BALINESE MUSICAL SYMBOL DANG
+<Multi_key> <numbersign> <B> <7> : "᭧"  U1B67  # BALINESE MUSICAL SYMBOL DAENG
+<Multi_key> <numbersign> <B> <8> <Return> : "᭫"  U1B6B  # BALINESE MUSICAL SYMBOL COMBINING TEGEH
+<Multi_key> <numbersign> <B> <minus> <8> <Return> : "᭬"  U1B6C  # BALINESE MUSICAL SYMBOL COMBINING ENDEP
+
+<Multi_key> <numbersign> <B> <i> : "᭦"  U1B66  # BALINESE MUSICAL SYMBOL DING
+<Multi_key> <numbersign> <B> <o> : "᭡"  U1B61  # BALINESE MUSICAL SYMBOL DONG
+<Multi_key> <numbersign> <B> <e> <space> : "᭢"  U1B62  # BALINESE MUSICAL SYMBOL DENG
+<Multi_key> <numbersign> <B> <e> <u> : "᭨"  U1B68  # BALINESE MUSICAL SYMBOL DEUNG
+<Multi_key> <numbersign> <B> <u> : "᭣"  U1B63  # BALINESE MUSICAL SYMBOL DUNG
+<Multi_key> <numbersign> <B> <a> <space> : "᭤"  U1B64  # BALINESE MUSICAL SYMBOL DANG
+<Multi_key> <numbersign> <B> <a> <s> : "᭥"  U1B65  # BALINESE MUSICAL SYMBOL DANG SURANG
+<Multi_key> <numbersign> <B> <a> <e> : "᭧"  U1B67  # BALINESE MUSICAL SYMBOL DAENG
+<Multi_key> <numbersign> <B> <a> <i> : "᭩"  U1B69  # BALINESE MUSICAL SYMBOL DAING
+<Multi_key> <numbersign> <B> <a> <g> : "᭪"  U1B6A  # BALINESE MUSICAL SYMBOL DANG GEDE
+
+<Multi_key> <numbersign> <B> <parenright> <Return> : "᭫"  U1B6B  # BALINESE MUSICAL SYMBOL COMBINING TEGEH
+<Multi_key> <numbersign> <B> <underscore> <parenright> <Return> : "᭬"  U1B6C  # BALINESE MUSICAL SYMBOL COMBINING ENDEP
+<Multi_key> <numbersign> <B> <plus> <Return> : "᭭"  U1B6D  # BALINESE MUSICAL SYMBOL COMBINING KEMPUL
+<Multi_key> <numbersign> <B> <minus> <Return> : "᭮"  U1B6E  # BALINESE MUSICAL SYMBOL COMBINING KEMPLI
+<Multi_key> <numbersign> <B> <asciicircum> <Return> : "᭯"  U1B6F  # BALINESE MUSICAL SYMBOL COMBINING JEGOGAN
+<Multi_key> <numbersign> <B> <asterisk> <Return> : "᭰"  U1B70  # BALINESE MUSICAL SYMBOL COMBINING KEMPUL WITH JEGOGAN
+<Multi_key> <numbersign> <B> <minus> <asciicircum> <Return> : "᭱"  U1B71  # BALINESE MUSICAL SYMBOL COMBINING KEMPLI WITH JEGOGAN
+<Multi_key> <numbersign> <B> <v> <Return> : "᭲"  U1B72  # BALINESE MUSICAL SYMBOL COMBINING BENDE
+<Multi_key> <numbersign> <B> <0> <Return> : "᭳"  U1B73  # BALINESE MUSICAL SYMBOL COMBINING GONG
+
+<Multi_key> <numbersign> <B> <r> <o> <u> : "᭴"  U1B74  # BALINESE MUSICAL SYMBOL RIGHT-HAND OPEN DUG
+<Multi_key> <numbersign> <B> <r> <o> <a> : "᭵"  U1B75  # BALINESE MUSICAL SYMBOL RIGHT-HAND OPEN DAG
+<Multi_key> <numbersign> <B> <r> <c> <u> : "᭶"  U1B76  # BALINESE MUSICAL SYMBOL RIGHT-HAND CLOSED TUK
+<Multi_key> <numbersign> <B> <r> <c> <a> : "᭷"  U1B77  # BALINESE MUSICAL SYMBOL RIGHT-HAND CLOSED TAK
+<Multi_key> <numbersign> <B> <l> <o> <a> : "᭸"  U1B78  # BALINESE MUSICAL SYMBOL LEFT-HAND OPEN PANG
+<Multi_key> <numbersign> <B> <l> <o> <u> : "᭹"  U1B79  # BALINESE MUSICAL SYMBOL LEFT-HAND OPEN PUNG
+<Multi_key> <numbersign> <B> <l> <c> <a> : "᭺"  U1B7A  # BALINESE MUSICAL SYMBOL LEFT-HAND CLOSED PLAK
+<Multi_key> <numbersign> <B> <l> <c> <u> : "᭻"  U1B7B  # BALINESE MUSICAL SYMBOL LEFT-HAND CLOSED PLUK
+<Multi_key> <numbersign> <B> <l> <o> <i> : "᭼"  U1B7C  # BALINESE MUSICAL SYMBOL LEFT-HAND OPEN PING
 
 #########
 # Games #
