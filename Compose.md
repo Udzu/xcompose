@@ -3,7 +3,7 @@
 
 > Link: https://github.com/Udzu/xcompose/blob/master/Compose
 
-This repo also hosts my personal .XCompose file, which contains over 44 000 memorable compose key sequences. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.  Note that the shortcuts for Hangul syllables and logograms are in separate files.
+This repo also hosts my personal .XCompose file, which contains over 45 000 memorable compose key sequences. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.  Note that the shortcuts for Hangul syllables and logograms are in separate files.
 
 The file aims for memorability and consistency. As a result, a small number of the rules here conflict with the default system rules, with workarounds given in the comments (e.g. \<underscore>'s usefulness for subscripting often interferes with its system use for macrons, for which \<minus> works equally well as an alternative).
 
@@ -28,7 +28,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Multigraphs and ligatures** (391): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (34461)
+### Non-Latin script characters (34485)
 * **Arabic**, Old North Arabian, Old South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Old Persian, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Hanifi Rohingya, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi (2066): ⁧رِيدِتْ⁩, ⁧𐪇𐪕𐪉⁩, ⁧𐬭𐬈𐬛𐬌𐬙⁩, ⁧𐩧𐩵𐩩⁩, ⁧𐿂𐾴𐾺𐿄⁩, ⁧𐣣𐣣𐣩𐣵⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧𐫡𐫅𐫏𐫤⁩, ⁧𐢛𐢅𐢍𐢞⁩, 𐎼𐎡𐎮𐎡𐎫, 𐒇𐒗𐒆𐒘𐒂, ⁧𐭥𐭣𐭩𐭲⁩, ⁧𐮅𐮃𐮈𐮑⁩, ⁧𐴌𐴠𐴊𐴞𐴃⁩, ⁧𐭓𐭃𐭉𐭕⁩, ⁧𐼘𐼘𐼊𐼚⁩, ⁧𐽀𐼲𐼷𐽂⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐽾𐽲𐽶𐾀⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (95): Րեդդիտ etc
 * **Brahmic scripts**: Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dives Akuru, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi, Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Khojki, Khudawadi, Kirat Rai, Lepcha, Limbu, Mahajani, Makasar, Malayalam, Marchen, Masaram Gondi, Meitei, Modi, Multani, Nandinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu, Tigalari, Tirhuta (3553): 𑜍𑜦𑜔𑜢𑜌𑜫, রেডিট, 𑰨𑰸𑰠𑰰𑰞, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ္, 𑄢𑄬𑄘𑄨𑄖𑄳, रेडिट, 𑤧𑤵𑤞𑤱𑤜𑤽, 𑠤𑠳𑠜𑠭𑠚, 𑌰𑍇𑌧𑌿𑌥, 𑶈𑶐𑵹𑶋𑵴𑶗, રેડિટ, ਰੇਡਿਟ, 𖄛𖄣𖄓𖄟𖄑, 𑂩𑂵𑂡𑂱𑂟, ರೆಡಿತ್, ⁧𐨪𐨅𐨢𐨁𐨠⁩, 𑈦𑈰𑈝𑈭𑈚, 𑋙𑋥𑋐𑋡𑋎, 𖵝𖵧𖵕𖵤𖵓, ᰛᰬᰌᰧᰳ, ᤖᤧᤍᤡᤳ, 𑅭𑅓𑅦𑅑𑅟, രെഡിട്, 𑲊𑲳𑱼𑲱𑱻, 𑴦𑴺𑴞𑴲𑴜, ꯔꯦꯗꯤꯠ, 𑘨𑘹𑘠𑘱𑘞, 𑊢𑊃𑊙𑊁𑊗, 𑧈𑧚𑧀𑧒𑦾, 𑐬𑐾𑐢𑐶𑐠, ରେଡିଟ, ꢬꢾꢞꢶꢜ, 𑆫𑆼𑆣𑆴𑆡, 𑖨𑖸𑖠𑖰𑖞, රෙඩිට්, ꠞꠦꠗꠤꠕ, 𑚤𑚲𑚜𑚮𑚚, ரெடிட், రెడిట్, 𑎬𑏂𑎤𑎹𑎢, 𑒩𑒺𑒡𑒱𑒟 etc
@@ -46,23 +46,23 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Old Italic**, Carian, Ogham, Old Hungarian, Runic & Old Turkic (398): 𐌓𐌄𐌃𐌃𐌉𐌕, 𐊥𐊺𐊢𐊢𐊹𐊭, ᚏᚓᚇᚔᚈ, ⁧𐲢𐳉𐳇𐳇𐳐𐳦⁩, ᚱᛖᛞᛞᛁᛏ, ⁧𐰺𐰅𐰑𐰃𐱃⁩ etc
 * **Sutton SignWriting** (673): 𝧿𝨾𝡇𝪜𝪡𝦈𝪪 etc
 * **Thai**, Cham, Khmer, Lao, Tai Tham & Tai Viet (596): เรดดิต, ꨣꨮꨖꨪꩅ, រេទិត, ເຣັດິຕ, ᩁᩮᨯᩥᨲ, ꪧꪵꪒꪲꪒ etc
-* **Zhuyin**, Fraser, Mongolian, New Tai Lue, ʼPhags-pa, Pollard, Soyombo, Tai LeTibetan, Yi, Zanabazar Square (2627): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ᦜᦵᦡᦲᧆ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, 𑩼𑩔𑩩𑩑𑪍, ᥘᥦᥖᥤᥖ, རེཌིཊ྄, ꏒꄶ, 𑨫𑨄𑨜𑨁𑨚𑨴 etc
+* **Zhuyin**, Fraser, Mongolian, New Tai Lue, ʼPhags-pa, Pollard, Soyombo, Tai LeTibetan, Yi, Zanabazar Square (2651): ㄏㄨㄥˊㄉㄧˊ, ꓡꓯꓓꓲꓔ, ᠷᠡᠳᠢᠲ, ᦜᦵᦡᦲᧆ, ꡘꡠꡊꡞꡈ, 𖼖𖽝𖼋𖽡𖼊, 𑩼𑩔𑩩𑩑𑪍, ᥘᥦᥖᥤᥖ, རེཌིཊ྄, ꏒꄶ, 𑨫𑨄𑨜𑨁𑨚𑨴 etc
 * **Logograms/undeciphered**: Anatolian Hieroglyphs, Cuneiform, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B (4747): 𔐅 𒆛 𒿌 𓀁 𐙞 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (5349)
-* **Emoji** (1516): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Sprites** (151): 🗫 🯅 ㋡ etc
+### Symbols (5406)
+* **Emoji** (1518): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+* **Sprites** (197): 🗫 🯅 ㋡ etc
 * **Math and science** (520): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (107): ⏻ ⎙ ⌘ etc
 * **Numerals** (391): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (263): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (358): ♞c6 🩡 🂽 🁖 🀄︎ etc
-* **Astrology** (81): ♈ 🐉 🌒 ☿ ♇ etc
+* **Astrology** (87): ♈ 🐉 🌒 ☿ ♇ etc
 * **Alchemical symbols** (116): 🜇 🜢 🝖 etc
 * **I Ching** (166): ䷇ ☰☷☲☵ etc
 * **Hieroglyphs** (300): 𓁖 𓁹 𓃠 etc
 * **Arrows** (319): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
-* **Geometric shapes** (287): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
+* **Geometric shapes** (292): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (665): ╞╦╕ etc

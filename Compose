@@ -22433,6 +22433,9 @@ include "HangulSyllables"
 <Multi_key> <z> <t> <h> : "ཧ" U0F67   # TIBETAN LETTER HA
 <Multi_key> <z> <t> <a> <space> : "ཨ" U0F68   # TIBETAN LETTER A
 <Multi_key> <z> <t> <k> <s> <s> : "ཀྵ" U0F69   # TIBETAN LETTER KSSA
+<Multi_key> <z> <t> <R> : "ཪ"  U0F6A  # TIBETAN LETTER FIXED-FORM RA
+<Multi_key> <z> <t> <k> <k> : "ཫ"  U0F6B  # TIBETAN LETTER KKA
+<Multi_key> <z> <t> <underscore> <r> <space> : "ཬ"  U0F6C  # TIBETAN LETTER RRA
 
 # Subjoined consonants
 
@@ -22478,6 +22481,9 @@ include "HangulSyllables"
 <Multi_key> <z> <t> <underscore> <h> <Return> : "ྷ" U0FB7   # TIBETAN SUBJOINED LETTER HA
 <Multi_key> <z> <t> <underscore> <a> <Return> : "ྸ" U0FB8   # TIBETAN SUBJOINED LETTER A
 <Multi_key> <z> <t> <underscore> <k> <s> <s> <Return> : "ྐྵ" U0FB9   # TIBETAN SUBJOINED LETTER KSSA
+<Multi_key> <z> <t> <underscore> <W> <Return> : "ྺ"  U0FBA  # TIBETAN SUBJOINED LETTER FIXED-FORM WA
+<Multi_key> <z> <t> <underscore> <Y> <Return> : "ྻ"  U0FBB  # TIBETAN SUBJOINED LETTER FIXED-FORM YA
+<Multi_key> <z> <t> <underscore> <R> <Return> : "ྼ"  U0FBC  # TIBETAN SUBJOINED LETTER FIXED-FORM RA
 
 # Dependent vowels
 
@@ -22495,6 +22501,8 @@ include "HangulSyllables"
 <Multi_key> <z> <t> <o> <Return> : "ོ" U0F7C   # TIBETAN VOWEL SIGN O
 <Multi_key> <z> <t> <o> <o> <Return> : "ཽ" U0F7D   # TIBETAN VOWEL SIGN OO
 <Multi_key> <z> <t> <0> <Return> : "྄" U0F84   # TIBETAN MARK HALANTA (VIRAMA)
+<Multi_key> <z> <t> <less> <i> <Return> : "ྀ"  U0F80  # TIBETAN VOWEL SIGN REVERSED I
+<Multi_key> <z> <t> <less> <i> <i> <Return> : "ཱྀ"  U0F81  # TIBETAN VOWEL SIGN REVERSED II
 
 # Other signs
 
@@ -22505,6 +22513,8 @@ include "HangulSyllables"
 <Multi_key> <z> <t> <period> <bar> : "༏"  U0F0F  # TIBETAN MARK TSHEG SHAD
 <Multi_key> <z> <t> <colon> <bar> : "༐"  U0F10  # TIBETAN MARK NYIS TSHEG SHAD
 <Multi_key> <z> <t> <quotedbl> <period> <bar> : "༑"  U0F11  # TIBETAN MARK RIN CHEN SPUNGS SHAD
+<Multi_key> <z> <t> <asciitilde> <bar> : "༈"  U0F08  # TIBETAN MARK SBRUL SHAD
+<Multi_key> <z> <t> <T> <bar> : "༒"  U0F12  # TIBETAN MARK RGYA GRAM SHAD
 <Multi_key> <z> <t> <period> <Return> : "ཾ" U0F7E   # TIBETAN SIGN RJES SU NGA RO (ANUSVARA)
 <Multi_key> <z> <t> <colon> <Return> : "ཿ" U0F7F   # TIBETAN SIGN RNAM BCAD (VISARGA)
 <Multi_key> <z> <t> <period> <parenright> <Return> : "ྃ" U0F83   # TIBETAN SIGN SNA LDAN (CANDRABINDU)
@@ -22514,11 +22524,29 @@ include "HangulSyllables"
 <Multi_key> <z> <t> <o> <m> : "ༀ" U0F00   # TIBETAN SYLLABLE OM
 <Multi_key> <z> <t> <X> : "྾"  U0FBE  # TIBETAN KU RU KHA
 <Multi_key> <z> <t> <period> <X> : "྿"  U0FBF  # TIBETAN KU RU KHA BZHI MIG CAN
-<Multi_key> <z> <t> <x> <o> : "࿎"  U0FCE  # TIBETAN SIGN RDEL NAG RDEL DKAR
-<Multi_key> <z> <t> <x> <x> <x> : "࿏"  U0FCF  # TIBETAN SIGN RDEL NAG GSUM
 <Multi_key> <z> <t> <colon> <space> : "࿒"  U0FD2  # TIBETAN MARK NYIS TSHEG
+<Multi_key> <z> <t> <colon> <minus> : "༔"  U0F14  # TIBETAN MARK GTER TSHEG
 <Multi_key> <z> <t> <plus> <period> : "༶"  U0F36  # TIBETAN MARK CARET -DZUD RTAGS BZHI MIG CAN
 
+<Multi_key> <z> <t> <bracketleft> <a> : "༁"  U0F01  # TIBETAN MARK GTER YIG MGO TRUNCATED A
+<Multi_key> <z> <t> <bracketleft> <colon> <space> : "༂"  U0F02  # TIBETAN MARK GTER YIG MGO -UM RNAM BCAD MA
+<Multi_key> <z> <t> <bracketleft> <colon> <minus> : "༃"  U0F03  # TIBETAN MARK GTER YIG MGO -UM GTER TSHEG MA
+<Multi_key> <z> <t> <at> <parenright> : "༄"  U0F04  # TIBETAN MARK INITIAL YIG MGO MDUN MA
+<Multi_key> <z> <t> <at> <space> : "༅"  U0F05  # TIBETAN MARK CLOSING YIG MGO SGAB MA
+<Multi_key> <z> <t> <at> <bar> : "༆"  U0F06  # TIBETAN MARK CARET YIG MGO PHUR SHAD MA
+<Multi_key> <z> <t> <at> <colon> : "༇"  U0F07  # TIBETAN MARK YIG MGO TSHEG SHAD MA
+
+
+# Astrology
+
+<Multi_key> <z> <t> <asterisk> <1> <o> : "༚"  U0F1A  # TIBETAN SIGN RDEL DKAR GCIG 
+<Multi_key> <z> <t> <asterisk> <2> <o> : "༛"  U0F1B  # TIBETAN SIGN RDEL DKAR GNYIS
+<Multi_key> <z> <t> <asterisk> <3> <o> : "༜"  U0F1C  # TIBETAN SIGN RDEL DKAR GSUM
+<Multi_key> <z> <t> <asterisk> <1> <x> : "༝"  U0F1D  # TIBETAN SIGN RDEL NAG GCIG
+<Multi_key> <z> <t> <asterisk> <2> <x> : "༞"  U0F1E  # TIBETAN SIGN RDEL NAG GNYIS
+<Multi_key> <z> <t> <asterisk> <o> <x> : "༟"  U0F1F  # TIBETAN SIGN RDEL DKAR RDEL NAG
+<Multi_key> <z> <t> <asterisk> <x> <o> : "࿎"  U0FCE  # TIBETAN SIGN RDEL NAG RDEL DKAR
+<Multi_key> <z> <t> <asterisk> <3> <x> : "࿏"  U0FCF  # TIBETAN SIGN RDEL NAG GSUM
 
 # Numerals
 
@@ -28120,20 +28148,47 @@ include "Logograms"
 
 # Pseudo-convention: directed sprites often replace the last letter with a direction to avoid conflict
 
-# Text-presentation dingbats
 
-<Multi_key> <s> <b> <less>     : "🗨"  U1F5E8        # LEFT SPEECH BUBBLE
-<Multi_key> <s> <b> <greater>  : "🗩"  U1F5E9        # RIGHT SPEECH BUBBLE
-<Multi_key> <s> <b> <2>        : "🗪"  U1F5EA        # TWO SPEECH BUBBLES
-<Multi_key> <s> <b> <3>        : "🗫"  U1F5EB        # THREE SPEECH BUBBLES
-<Multi_key> <t> <b> <less>     : "🗬"  U1F5EC        # LEFT THOUGHT BUBBLE
-<Multi_key> <t> <b> <greater>  : "🗭"  U1F5ED        # RIGHT THOUGHT BUBBLE
-<Multi_key> <a> <b> <greater>  : "🗯"  U1F5EF        # RIGHT ANGER BUBBLE
-<Multi_key> <a> <b> <less>     : "🗮"  U1F5EE        # LEFT ANGER BUBBLE
-<Multi_key> <a> <b> <0>        : "🗰"  U1F5F0        # MOOD BUBBLE
-<Multi_key> <a> <b> <z>        : "🗱"  U1F5F1        # LIGHTNING MOOD BUBBLE
+# Text-presentation dingbats and pictograms
 
-<Multi_key> <a> <n> <k> <h>    : "☥"  U2625  # ANKH
+<Multi_key> <a> <n> <k> <h>         : "☥"  U2625  # ANKH
+<Multi_key> <c> <e> <l> <t> <i> <c> : "🕈"  U1F548  # CELTIC CROSS (conflicts with ě, use ve)
+
+<Multi_key> <s> <b> <less>     : "🗨"  U1F5E8  # LEFT SPEECH BUBBLE
+<Multi_key> <s> <b> <greater>  : "🗩"  U1F5E9  # RIGHT SPEECH BUBBLE
+<Multi_key> <s> <b> <2>        : "🗪"  U1F5EA  # TWO SPEECH BUBBLES
+<Multi_key> <s> <b> <3>        : "🗫"  U1F5EB  # THREE SPEECH BUBBLES
+<Multi_key> <t> <b> <less>     : "🗬"  U1F5EC  # LEFT THOUGHT BUBBLE
+<Multi_key> <t> <b> <greater>  : "🗭"  U1F5ED  # RIGHT THOUGHT BUBBLE
+<Multi_key> <a> <b> <greater>  : "🗯"  U1F5EF  # RIGHT ANGER BUBBLE
+<Multi_key> <a> <b> <less>     : "🗮"  U1F5EE  # LEFT ANGER BUBBLE
+<Multi_key> <a> <b> <0>        : "🗰"  U1F5F0  # MOOD BUBBLE
+<Multi_key> <a> <b> <z>        : "🗱"  U1F5F1  # LIGHTNING MOOD BUBBLE
+
+<Multi_key> <asterisk> <n> <w> <l> : "🙐"  U1F650  # NORTH WEST POINTING LEAF
+<Multi_key> <asterisk> <s> <w> <l> : "🙑"  U1F651  # SOUTH WEST POINTING LEAF
+<Multi_key> <asterisk> <n> <e> <l> : "🙒"  U1F652  # NORTH EAST POINTING LEAF
+<Multi_key> <asterisk> <s> <e> <l> : "🙓"  U1F653  # SOUTH EAST POINTING LEAF
+<Multi_key> <asterisk> <v> <n> <w> <l> : "🙔"  U1F654  # TURNED NORTH WEST POINTING LEAF
+<Multi_key> <asterisk> <v> <s> <w> <l> : "🙕"  U1F655  # TURNED SOUTH WEST POINTING LEAF
+<Multi_key> <asterisk> <v> <n> <e> <l> : "🙖"  U1F656  # TURNED NORTH EAST POINTING LEAF
+<Multi_key> <asterisk> <v> <s> <e> <l> : "🙗"  U1F657  # TURNED SOUTH EAST POINTING LEAF
+<Multi_key> <asterisk> <n> <w> <v> : "🙘"  U1F658  # NORTH WEST POINTING VINE LEAF
+<Multi_key> <asterisk> <s> <w> <v> : "🙙"  U1F659  # SOUTH WEST POINTING VINE LEAF
+<Multi_key> <asterisk> <n> <e> <v> : "🙚"  U1F65A  # NORTH EAST POINTING VINE LEAF
+<Multi_key> <asterisk> <s> <e> <v> : "🙛"  U1F65B  # SOUTH EAST POINTING VINE LEAF
+<Multi_key> <asterisk> <n> <w> <V> : "🙜"  U1F65C  # HEAVY NORTH WEST POINTING VINE LEAF
+<Multi_key> <asterisk> <s> <w> <V> : "🙝"  U1F65D  # HEAVY SOUTH WEST POINTING VINE LEAF
+<Multi_key> <asterisk> <n> <e> <V> : "🙞"  U1F65E  # HEAVY NORTH EAST POINTING VINE LEAF
+<Multi_key> <asterisk> <s> <e> <V> : "🙟"  U1F65F  # HEAVY SOUTH EAST POINTING VINE LEAF
+<Multi_key> <asterisk> <n> <w> <b> : "🙠"  U1F660  # NORTH WEST POINTING BUD
+<Multi_key> <asterisk> <s> <w> <b> : "🙡"  U1F661  # SOUTH WEST POINTING BUD
+<Multi_key> <asterisk> <n> <e> <b> : "🙢"  U1F662  # NORTH EAST POINTING BUD
+<Multi_key> <asterisk> <s> <e> <b> : "🙣"  U1F663  # SOUTH EAST POINTING BUD
+<Multi_key> <asterisk> <n> <w> <B> : "🙤"  U1F664  # HEAVY NORTH WEST POINTING BUD
+<Multi_key> <asterisk> <s> <w> <B> : "🙥"  U1F665  # HEAVY SOUTH WEST POINTING BUD
+<Multi_key> <asterisk> <n> <e> <B> : "🙦"  U1F666  # HEAVY NORTH EAST POINTING BUD
+<Multi_key> <asterisk> <s> <e> <B> : "🙧"  U1F667  # HEAVY SOUTH EAST POINTING BUD
 
 # Legacy computing sprites and related pictographs
 
@@ -28245,8 +28300,31 @@ include "Logograms"
 <Multi_key> <at> <underscore> <r> <o> <b> <o> <greater> : "𜱟"  U1CC5F  # BOTTOM HALF RIGHT-FACING ROBOT
 <Multi_key> <at> <asciicircum> <r> <o> <o> <k>         : "𜳂𜳃"  U1CCC2 U1CCC3  # CHESS ROOK (TOP)
 <Multi_key> <at> <underscore> <r> <o> <o> <k>          : "𜳄𜳅"  U1CCC4 U1CCC5  # CHESS ROOK (BOTTOM)
+<Multi_key> <at> <asciicircum> <s> <u> <m>             : "⎲"  U23B2  # SUMMATION TOP
+<Multi_key> <at> <underscore> <s> <u> <m>              : "⎳"  U23B3  # SUMMATION BOTTOM
 <Multi_key> <at> <asciicircum> <T> <V>                 : "𜲲𜲳"  U1CCB2 U1CCB3  # TELEVISION (TOP)
 <Multi_key> <at> <underscore> <T> <V>                  : "𜲴𜲵"  U1CCB4 U1CCB5  # TELEVISION (BOTTOM)
+
+<Multi_key> <at> <asciicircum> <parenleft> <space>     : "⎛"  U239B  # LEFT PARENTHESIS UPPER HOOK
+<Multi_key> <at> <bar> <parenleft>                     : "⎜"  U239C  # LEFT PARENTHESIS EXTENSION
+<Multi_key> <at> <underscore> <parenleft> <space>      : "⎝"  U239D  # LEFT PARENTHESIS LOWER HOOK
+<Multi_key> <at> <asciicircum> <parenright>            : "⎞"  U239E  # RIGHT PARENTHESIS UPPER HOOK
+<Multi_key> <at> <bar> <parenright>                    : "⎟"  U239F  # RIGHT PARENTHESIS EXTENSION
+<Multi_key> <at> <underscore> <parenright>             : "⎠"  U23A0  # RIGHT PARENTHESIS LOWER HOOK
+<Multi_key> <at> <asciicircum> <bracketleft>           : "⎡"  U23A1  # LEFT SQUARE BRACKET UPPER CORNER
+<Multi_key> <at> <bar> <bracketleft>                   : "⎢"  U23A2  # LEFT SQUARE BRACKET EXTENSION
+<Multi_key> <at> <underscore> <bracketleft>            : "⎣"  U23A3  # LEFT SQUARE BRACKET LOWER CORNER
+<Multi_key> <at> <asciicircum> <bracketright>          : "⎤"  U23A4  # RIGHT SQUARE BRACKET UPPER CORNER
+<Multi_key> <at> <bar> <bracketright>                  : "⎥"  U23A5  # RIGHT SQUARE BRACKET EXTENSION
+<Multi_key> <at> <underscore> <bracketright>           : "⎦"  U23A6  # RIGHT SQUARE BRACKET LOWER CORNER
+<Multi_key> <at> <asciicircum> <braceleft>             : "⎧"  U23A7  # LEFT CURLY BRACKET UPPER HOOK
+<Multi_key> <at> <braceleft> <braceleft>               : "⎨"  U23A8  # LEFT CURLY BRACKET MIDDLE PIECE
+<Multi_key> <at> <underscore> <braceleft>              : "⎩"  U23A9  # LEFT CURLY BRACKET LOWER HOOK
+<Multi_key> <at> <bar> <braceleft>                     : "⎪"  U23AA  # CURLY BRACKET EXTENSION
+<Multi_key> <at> <asciicircum> <braceright>            : "⎫"  U23AB  # RIGHT CURLY BRACKET UPPER HOOK
+<Multi_key> <at> <braceright> <braceright>             : "⎬"  U23AC  # RIGHT CURLY BRACKET MIDDLE PIECE
+<Multi_key> <at> <underscore> <braceright>             : "⎭"  U23AD  # RIGHT CURLY BRACKET LOWER HOOK
+<Multi_key> <at> <bar> <braceright>                    : "⎪"  U23AA  # CURLY BRACKET EXTENSION
 
 # Some emoji-like text characters (also see hieroglyph section below)
 
@@ -28898,9 +28976,10 @@ include "Logograms"
 <Multi_key> <Tab> <asterisk> <8> <1> : "✴" U2734    # EIGHT POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <8> <O> : "❂" U2742    # CIRCLED OPEN CENTRE EIGHT POINTED STAR
 <Multi_key> <Tab> <asterisk> <8> <minus> : "۞"  U06DE  # ARABIC START OF RUB EL HIZB
-<Multi_key> <Tab> <asterisk> <8> <at> : "✵"  U2735  # EIGHT POINTED PINWHEEL STAR
+<Multi_key> <Tab> <asterisk> <8> <at> <space> : "✵"  U2735  # EIGHT POINTED PINWHEEL STAR
 <Multi_key> <Tab> <asterisk> <9> <0> : "🟙" U1F7D9    # NINE POINTED WHITE STAR
 <Multi_key> <Tab> <asterisk> <1> <2> <1> : "✹" U2739    # TWELVE POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <1> <6> <1> : "✺" U273A   # SIXTEEN POINTED ASTERISK
 
 # Weighted shapes
 
@@ -28962,6 +29041,11 @@ include "Logograms"
 <Multi_key> <Tab> <asterisk> <8> <numbersign> <5> : "🟐"  U1F7D0  # VERY HEAVY EIGHT POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <1> <2> <numbersign> <1> : "🟒"  U1F7D2  # LIGHT TWELVE POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <1> <2> <numbersign> <4> : "🟓"  U1F7D3  # HEAVY TWELVE POINTED BLACK STAR
+
+<Multi_key> <Tab> <asterisk> <3> <at> <numbersign> <2> : "🟃"  U1F7C3  # MEDIUM THREE POINTED PINWHEEL STAR
+<Multi_key> <Tab> <asterisk> <4> <at> <numbersign> <2> : "🟇"  U1F7C7  # MEDIUM FOUR POINTED PINWHEEL STAR
+<Multi_key> <Tab> <asterisk> <8> <at> <numbersign> <4> : "🟑"  U1F7D1  # HEAVY EIGHT POINTED PINWHEEL STAR
+<Multi_key> <Tab> <asterisk> <1> <2> <at> <numbersign> <4> : "🟔"  U1F7D4  # HEAVY TWELVE POINTED PINWHEEL STAR
 
 ##########
 # Arrows #
@@ -31548,14 +31632,20 @@ include "Logograms"
 <Multi_key> <asterisk> <S> <T> : "♄" U2644    # SATURN
 <Multi_key> <asterisk> <U> <R> : "♅" U2645    # URANUS (conflicts with Ů, use oU)
 <Multi_key> <asterisk> <N> <E> : "♆" U2646    # NEPTUNE
+<Multi_key> <asterisk> <N> <2> : "⯉" U2BC9    # NEPTUNE FORM TWO
 
 <Multi_key> <asterisk> <P> <L> : "♇" U2647    # PLUTO
+<Multi_key> <asterisk> <P> <2> : "⯓" U2BD3   # PLUTO FORM TWO
+<Multi_key> <asterisk> <P> <3> : "⯔" U2BD4   # PLUTO FORM THREE
+<Multi_key> <asterisk> <P> <4> : "⯕" U2BD5   # PLUTO FORM FOUR
+<Multi_key> <asterisk> <P> <5> : "⯖" U2BD6   # PLUTO FORM FIVE
 <Multi_key> <asterisk> <C> <E> : "⚳" U26B3    # CERES
 <Multi_key> <asterisk> <P> <A> : "⚴" U26B4    # PALLAS
 <Multi_key> <asterisk> <J> <O> : "⚵" U26B5    # JUNO
 <Multi_key> <asterisk> <V> <A> : "⚶" U26B6    # VESTA
 <Multi_key> <asterisk> <C> <H> : "⚷" U26B7    # CHIRON
 <Multi_key> <asterisk> <E> <R> : "⯰" U2BF0    # ERIS FORM ONE
+<Multi_key> <asterisk> <E> <2> : "⯱"  U2BF1   # ERIS FORM TWO
 <Multi_key> <asterisk> <S> <E> : "⯲" U2BF2    # SEDNA
 <Multi_key> <asterisk> <H> <U> : "🝻" U1F77B    # HAUMEA
 <Multi_key> <asterisk> <M> <K> : "🝼" U1F77C    # MAKEMAKE

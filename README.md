@@ -6,7 +6,7 @@
 
 Simple utilities to help configure X11 compose key sequences.
 
-> The repo also hosts a very extensive [.XCompose file](Compose) with over 44 000 new sequences; [more details here](Compose.md).
+> The repo also hosts a very extensive [.XCompose file](Compose) with over 45 000 new sequences; [more details here](Compose.md).
 
 ## Installation
 
