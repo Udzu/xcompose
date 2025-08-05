@@ -1520,7 +1520,7 @@
 <Multi_key> <braceright> <C> <s> <h> <a> <3> <asterisk> <u> <plus> <a> : "𒊶"  U122B6  # CUNEIFORM SIGN SHA3 TIMES U PLUS A
 <Multi_key> <braceright> <C> <s> <h> <a> <6> <space> : "𒊷"  U122B7  # CUNEIFORM SIGN SHA6
 <Multi_key> <braceright> <C> <s> <h> <a> <b> <6> : "𒊸"  U122B8  # CUNEIFORM SIGN SHAB6
-<Multi_key> <braceright> <C> <s> <h> <a> <r> <2> : "𒊹"  U122B9  # CUNEIFORM SIGN SHAR2
+<Multi_key> <braceright> <C> <s> <h> <a> <r> <2> <space> : "𒊹"  U122B9  # CUNEIFORM SIGN SHAR2
 <Multi_key> <braceright> <C> <s> <h> <e> <space> : "𒊺"  U122BA  # CUNEIFORM SIGN SHE
 <Multi_key> <braceright> <C> <s> <h> <e> <h> <u> : "𒊻"  U122BB  # CUNEIFORM SIGN SHE HU
 <Multi_key> <braceright> <C> <s> <h> <e> <slash> <s> <h> <e> <g> <a> <d> <slash> <g> <a> <d> <g> <a> <r> <slash> <g> <a> <r> : "𒊼"  U122BC  # CUNEIFORM SIGN SHE OVER SHE GAD OVER GAD GAR OVER GAR
@@ -1943,6 +1943,11 @@
 <Multi_key> <braceright> <C> <z> <u> <slash> <z> <u> <plus> <s> <a> <r> : "𒕂"  U12542  # CUNEIFORM SIGN ZU OVER ZU PLUS SAR
 <Multi_key> <braceright> <C> <z> <u> <5> <asterisk> <t> <h> <r> <e> <e> <d> <i> <s> <h> <T> : "𒕃"  U12543  # CUNEIFORM SIGN ZU5 TIMES THREE DISH TENU
 
+<Multi_key> <braceright> <C> <s> <h> <a> <r> <2> <asterisk> <g> <a> <l> <plus> <d> <i> <s> <h> : "𒐲"  U12432  # CUNEIFORM NUMERIC SIGN SHAR2 TIMES GAL PLUS DISH
+<Multi_key> <braceright> <C> <s> <h> <a> <r> <2> <asterisk> <g> <a> <l> <plus> <m> <i> <n> : "𒐳"  U12433  # CUNEIFORM NUMERIC SIGN SHAR2 TIMES GAL PLUS MIN
+<Multi_key> <braceright> <C> <n> <i> <g> <i> <d> <a> <m> <i> <n> : "𒑖"  U12456  # CUNEIFORM NUMERIC SIGN NIGIDAMIN
+<Multi_key> <braceright> <C> <n> <i> <g> <i> <d> <a> <e> <s> <h> : "𒑗"  U12457  # CUNEIFORM NUMERIC SIGN NIGIDAESH
+
 # numerals
 
 <Multi_key> <braceright> <C> <1> <space> : "𒁹"  U12079  # CUNEIFORM SIGN DISH
@@ -1955,27 +1960,67 @@
 <Multi_key> <braceright> <C> <8> <space> : "𒐍"  U1240D  # CUNEIFORM NUMERIC SIGN EIGHT DISH
 <Multi_key> <braceright> <C> <9> <space> : "𒐎"  U1240E  # CUNEIFORM NUMERIC SIGN NINE DISH
 
+<Multi_key> <braceright> <C> <3> <e> <1> <6> : "𒐺"  U1243A  # CUNEIFORM NUMERIC SIGN THREE VARIANT FORM ESH16
+<Multi_key> <braceright> <C> <3> <e> <2> <1> : "𒐻"  U1243B  # CUNEIFORM NUMERIC SIGN THREE VARIANT FORM ESH21
+<Multi_key> <braceright> <C> <4> <l> <space> : "𒐼"  U1243C  # CUNEIFORM NUMERIC SIGN FOUR VARIANT FORM LIMMU
+<Multi_key> <braceright> <C> <4> <l> <4> : "𒐽"  U1243D  # CUNEIFORM NUMERIC SIGN FOUR VARIANT FORM LIMMU4
+<Multi_key> <braceright> <C> <4> <l> <a> : "𒐾"  U1243E  # CUNEIFORM NUMERIC SIGN FOUR VARIANT FORM LIMMU A
+<Multi_key> <braceright> <C> <4> <l> <b> : "𒐿"  U1243F  # CUNEIFORM NUMERIC SIGN FOUR VARIANT FORM LIMMU B
+<Multi_key> <braceright> <C> <6> <a> <9> : "𒑀"  U12440  # CUNEIFORM NUMERIC SIGN SIX VARIANT FORM ASH9
+<Multi_key> <braceright> <C> <7> <i> <3> : "𒑁"  U12441  # CUNEIFORM NUMERIC SIGN SEVEN VARIANT FORM IMIN3
+<Multi_key> <braceright> <C> <7> <i> <a> : "𒑂"  U12442  # CUNEIFORM NUMERIC SIGN SEVEN VARIANT FORM IMIN A
+<Multi_key> <braceright> <C> <7> <i> <b> : "𒑃"  U12443  # CUNEIFORM NUMERIC SIGN SEVEN VARIANT FORM IMIN B
+<Multi_key> <braceright> <C> <8> <u> <space> : "𒑄"  U12444  # CUNEIFORM NUMERIC SIGN EIGHT VARIANT FORM USSU
+<Multi_key> <braceright> <C> <8> <u> <3> : "𒑅"  U12445  # CUNEIFORM NUMERIC SIGN EIGHT VARIANT FORM USSU3
+<Multi_key> <braceright> <C> <9> <i> <space> : "𒑆"  U12446  # CUNEIFORM NUMERIC SIGN NINE VARIANT FORM ILIMMU
+<Multi_key> <braceright> <C> <9> <i> <3> : "𒑇"  U12447  # CUNEIFORM NUMERIC SIGN NINE VARIANT FORM ILIMMU3
+<Multi_key> <braceright> <C> <9> <i> <4> : "𒑈"  U12448  # CUNEIFORM NUMERIC SIGN NINE VARIANT FORM ILIMMU4
+<Multi_key> <braceright> <C> <9> <i> <a> : "𒑉"  U12449  # CUNEIFORM NUMERIC SIGN NINE VARIANT FORM ILIMMU A
+
 <Multi_key> <braceright> <C> <1> <0> <space> : "𒌋"  U1230B  # CUNEIFORM SIGN U
 <Multi_key> <braceright> <C> <2> <0> <space> : "𒎙"  U12399  # CUNEIFORM SIGN U U
 <Multi_key> <braceright> <C> <3> <0> : "𒌍"  U1230D  # CUNEIFORM SIGN U U U
-<Multi_key> <braceright> <C> <4> <0> : "𒐏"  U1240F  # CUNEIFORM NUMERIC SIGN FOUR U
-<Multi_key> <braceright> <C> <5> <0> : "𒐐"  U12410  # CUNEIFORM NUMERIC SIGN FIVE U
+<Multi_key> <braceright> <C> <4> <0> <space> : "𒐏"  U1240F  # CUNEIFORM NUMERIC SIGN FOUR U
+<Multi_key> <braceright> <C> <4> <0> <E> : "𒑧"  U12467  # CUNEIFORM NUMERIC SIGN ELAMITE FORTY
+<Multi_key> <braceright> <C> <5> <0> <space> : "𒐐"  U12410  # CUNEIFORM NUMERIC SIGN FIVE U
+<Multi_key> <braceright> <C> <5> <0> <E> : "𒑨"  U12468  # CUNEIFORM NUMERIC SIGN ELAMITE FIFTY
 <Multi_key> <braceright> <C> <6> <0> : "𒐑"  U12411  # CUNEIFORM NUMERIC SIGN SIX U
 <Multi_key> <braceright> <C> <7> <0> : "𒐒"  U12412  # CUNEIFORM NUMERIC SIGN SEVEN U
 <Multi_key> <braceright> <C> <8> <0> : "𒐓"  U12413  # CUNEIFORM NUMERIC SIGN EIGHT U
 <Multi_key> <braceright> <C> <9> <0> : "𒐔"  U12414  # CUNEIFORM NUMERIC SIGN NINE U
 
-# by wedge shape (suffixed abbreviation)
+<Multi_key> <braceright> <C> <1> <slash> <2> : "𒑤"  U12464  # CUNEIFORM NUMERIC SIGN ONE HALF GUR
+<Multi_key> <braceright> <C> <1> <slash> <3> <d> : "𒑚"  U1245A  # CUNEIFORM NUMERIC SIGN ONE THIRD DISH
+<Multi_key> <braceright> <C> <1> <slash> <3> <v> : "𒑝"  U1245D  # CUNEIFORM NUMERIC SIGN ONE THIRD VARIANT FORM A
+<Multi_key> <braceright> <C> <1> <slash> <3> <E> : "𒑥"  U12465  # CUNEIFORM NUMERIC SIGN ELAMITE ONE THIRD
+<Multi_key> <braceright> <C> <2> <slash> <3> <d> : "𒑛"  U1245B  # CUNEIFORM NUMERIC SIGN TWO THIRDS DISH
+<Multi_key> <braceright> <C> <2> <slash> <3> <v> : "𒑞"  U1245E  # CUNEIFORM NUMERIC SIGN TWO THIRDS VARIANT FORM A
+<Multi_key> <braceright> <C> <2> <slash> <3> <E> : "𒑦"  U12466  # CUNEIFORM NUMERIC SIGN ELAMITE TWO THIRDS
+<Multi_key> <braceright> <C> <1> <slash> <4> <a> : "𒑠"  U12460  # CUNEIFORM NUMERIC SIGN ONE QUARTER ASH
+<Multi_key> <braceright> <C> <1> <slash> <4> <g> : "𒑣"  U12463  # CUNEIFORM NUMERIC SIGN ONE QUARTER GUR
+<Multi_key> <braceright> <C> <1> <slash> <4> <A> : "𒑢"  U12462  # CUNEIFORM NUMERIC SIGN OLD ASSYRIAN ONE QUARTER
+<Multi_key> <braceright> <C> <1> <slash> <6> : "𒑡"  U12461  # CUNEIFORM NUMERIC SIGN OLD ASSYRIAN ONE SIXTH
+<Multi_key> <braceright> <C> <5> <slash> <6> : "𒑜"  U1245C  # CUNEIFORM NUMERIC SIGN FIVE SIXTHS DISH
+<Multi_key> <braceright> <C> <1> <slash> <8> : "𒑟"  U1245F  # CUNEIFORM NUMERIC SIGN ONE EIGHTH ASH
 
-<Multi_key> <braceright> <C> <1> <a> : "𒀸"  U12038  # CUNEIFORM SIGN ASH
-<Multi_key> <braceright> <C> <2> <a> : "𒐀"  U12400  # CUNEIFORM NUMERIC SIGN TWO ASH
-<Multi_key> <braceright> <C> <3> <a> : "𒐁"  U12401  # CUNEIFORM NUMERIC SIGN THREE ASH
-<Multi_key> <braceright> <C> <4> <a> : "𒐂"  U12402  # CUNEIFORM NUMERIC SIGN FOUR ASH
-<Multi_key> <braceright> <C> <5> <a> : "𒐃"  U12403  # CUNEIFORM NUMERIC SIGN FIVE ASH
-<Multi_key> <braceright> <C> <6> <a> : "𒐄"  U12404  # CUNEIFORM NUMERIC SIGN SIX ASH
-<Multi_key> <braceright> <C> <7> <a> : "𒐅"  U12405  # CUNEIFORM NUMERIC SIGN SEVEN ASH
-<Multi_key> <braceright> <C> <8> <a> : "𒐆"  U12406  # CUNEIFORM NUMERIC SIGN EIGHT ASH
-<Multi_key> <braceright> <C> <9> <a> : "𒐇"  U12407  # CUNEIFORM NUMERIC SIGN NINE ASH
+# numerals by wedge shape (suffixed abbreviation)
+
+<Multi_key> <braceright> <C> <1> <a> <s> : "𒀸"  U12038  # CUNEIFORM SIGN ASH
+<Multi_key> <braceright> <C> <2> <a> <s> : "𒐀"  U12400  # CUNEIFORM NUMERIC SIGN TWO ASH
+<Multi_key> <braceright> <C> <3> <a> <s> : "𒐁"  U12401  # CUNEIFORM NUMERIC SIGN THREE ASH
+<Multi_key> <braceright> <C> <4> <a> <s> : "𒐂"  U12402  # CUNEIFORM NUMERIC SIGN FOUR ASH
+<Multi_key> <braceright> <C> <5> <a> <s> : "𒐃"  U12403  # CUNEIFORM NUMERIC SIGN FIVE ASH
+<Multi_key> <braceright> <C> <6> <a> <s> : "𒐄"  U12404  # CUNEIFORM NUMERIC SIGN SIX ASH
+<Multi_key> <braceright> <C> <7> <a> <s> : "𒐅"  U12405  # CUNEIFORM NUMERIC SIGN SEVEN ASH
+<Multi_key> <braceright> <C> <8> <a> <s> : "𒐆"  U12406  # CUNEIFORM NUMERIC SIGN EIGHT ASH
+<Multi_key> <braceright> <C> <9> <a> <s> : "𒐇"  U12407  # CUNEIFORM NUMERIC SIGN NINE ASH
+
+<Multi_key> <braceright> <C> <1> <a> <t> : "𒀹"  U12039  # CUNEIFORM SIGN ASH ZIDA TENU
+<Multi_key> <braceright> <C> <2> <a> <t> : "𒑊"  U1244A  # CUNEIFORM NUMERIC SIGN TWO ASH TENU
+<Multi_key> <braceright> <C> <3> <a> <t> : "𒑋"  U1244B  # CUNEIFORM NUMERIC SIGN THREE ASH TENU
+<Multi_key> <braceright> <C> <4> <a> <t> : "𒑌"  U1244C  # CUNEIFORM NUMERIC SIGN FOUR ASH TENU
+<Multi_key> <braceright> <C> <5> <a> <t> : "𒑍"  U1244D  # CUNEIFORM NUMERIC SIGN FIVE ASH TENU
+<Multi_key> <braceright> <C> <6> <a> <t> : "𒑎"  U1244E  # CUNEIFORM NUMERIC SIGN SIX ASH TENU
 
 <Multi_key> <braceright> <C> <1> <b> <u> : "𒐴"  U12434  # CUNEIFORM NUMERIC SIGN ONE BURU
 <Multi_key> <braceright> <C> <2> <b> <u> : "𒐵"  U12435  # CUNEIFORM NUMERIC SIGN TWO BURU
@@ -1987,8 +2032,10 @@
 <Multi_key> <braceright> <C> <1> <b> <2> : "𒑏"  U1244F  # CUNEIFORM NUMERIC SIGN ONE BAN2
 <Multi_key> <braceright> <C> <2> <b> <2> : "𒑐"  U12450  # CUNEIFORM NUMERIC SIGN TWO BAN2
 <Multi_key> <braceright> <C> <3> <b> <2> : "𒑑"  U12451  # CUNEIFORM NUMERIC SIGN THREE BAN2
-<Multi_key> <braceright> <C> <4> <b> <2> : "𒑒"  U12452  # CUNEIFORM NUMERIC SIGN FOUR BAN2
-<Multi_key> <braceright> <C> <5> <b> <2> : "𒑔"  U12454  # CUNEIFORM NUMERIC SIGN FIVE BAN2
+<Multi_key> <braceright> <C> <4> <b> <2> <space> : "𒑒"  U12452  # CUNEIFORM NUMERIC SIGN FOUR BAN2
+<Multi_key> <braceright> <C> <4> <b> <2> <v> : "𒑓"  U12453  # CUNEIFORM NUMERIC SIGN FOUR BAN2 VARIANT FORM
+<Multi_key> <braceright> <C> <5> <b> <2> <space> : "𒑔"  U12454  # CUNEIFORM NUMERIC SIGN FIVE BAN2
+<Multi_key> <braceright> <C> <5> <b> <2> <v> : "𒑕"  U12455  # CUNEIFORM NUMERIC SIGN FIVE BAN2 VARIANT FORM
 
 <Multi_key> <braceright> <C> <1> <d> : "𒁹"  U12079  # CUNEIFORM SIGN DISH
 <Multi_key> <braceright> <C> <2> <d> : "𒈫"  U1222B  # CUNEIFORM SIGN MIN
@@ -1999,6 +2046,9 @@
 <Multi_key> <braceright> <C> <7> <d> : "𒐌"  U1240C  # CUNEIFORM NUMERIC SIGN SEVEN DISH
 <Multi_key> <braceright> <C> <8> <d> : "𒐍"  U1240D  # CUNEIFORM NUMERIC SIGN EIGHT DISH
 <Multi_key> <braceright> <C> <9> <d> : "𒐎"  U1240E  # CUNEIFORM NUMERIC SIGN NINE DISH
+
+<Multi_key> <braceright> <C> <1> <e> : "𒑘"  U12458  # CUNEIFORM NUMERIC SIGN ONE ESHE3
+<Multi_key> <braceright> <C> <2> <e> : "𒑙"  U12459  # CUNEIFORM NUMERIC SIGN TWO ESHE3
 
 <Multi_key> <braceright> <C> <1> <g> <2> : "𒐕"  U12415  # CUNEIFORM NUMERIC SIGN ONE GESH2
 <Multi_key> <braceright> <C> <2> <g> <2> : "𒐖"  U12416  # CUNEIFORM NUMERIC SIGN TWO GESH2
@@ -2018,7 +2068,8 @@
 
 <Multi_key> <braceright> <C> <1> <s> <2> : "𒄭"  U1212D  # CUNEIFORM SIGN HI (Q: why is this HI rather than SHAR2 𒊹 ?)
 <Multi_key> <braceright> <C> <2> <s> <2> : "𒐣"  U12423  # CUNEIFORM NUMERIC SIGN TWO SHAR2
-<Multi_key> <braceright> <C> <3> <s> <2> : "𒐤"  U12424  # CUNEIFORM NUMERIC SIGN THREE SHAR2
+<Multi_key> <braceright> <C> <3> <s> <2> <space> : "𒐤"  U12424  # CUNEIFORM NUMERIC SIGN THREE SHAR2
+<Multi_key> <braceright> <C> <3> <s> <2> <v> : "𒐥"  U12425  # CUNEIFORM NUMERIC SIGN THREE SHAR2 VARIANT FORM
 <Multi_key> <braceright> <C> <4> <s> <2> : "𒐦"  U12426  # CUNEIFORM NUMERIC SIGN FOUR SHAR2
 <Multi_key> <braceright> <C> <5> <s> <2> : "𒐧"  U12427  # CUNEIFORM NUMERIC SIGN FIVE SHAR2
 <Multi_key> <braceright> <C> <6> <s> <2> : "𒐨"  U12428  # CUNEIFORM NUMERIC SIGN SIX SHAR2
@@ -2028,19 +2079,34 @@
 
 <Multi_key> <braceright> <C> <1> <s> <u> : "𒐬"  U1242C  # CUNEIFORM NUMERIC SIGN ONE SHARU
 <Multi_key> <braceright> <C> <2> <s> <u> : "𒐭"  U1242D  # CUNEIFORM NUMERIC SIGN TWO SHARU
-<Multi_key> <braceright> <C> <3> <s> <u> : "𒐮"  U1242E  # CUNEIFORM NUMERIC SIGN THREE SHARU
+<Multi_key> <braceright> <C> <3> <s> <u> <space> : "𒐮"  U1242E  # CUNEIFORM NUMERIC SIGN THREE SHARU
+<Multi_key> <braceright> <C> <3> <s> <u> <v> : "𒐯"  U1242F  # CUNEIFORM NUMERIC SIGN THREE SHARU VARIANT FORM
 <Multi_key> <braceright> <C> <4> <s> <u> : "𒐰"  U12430  # CUNEIFORM NUMERIC SIGN FOUR SHARU
 <Multi_key> <braceright> <C> <5> <s> <u> : "𒐱"  U12431  # CUNEIFORM NUMERIC SIGN FIVE SHARU
 
 <Multi_key> <braceright> <C> <1> <u> : "𒌋"  U1230B  # CUNEIFORM SIGN U
 <Multi_key> <braceright> <C> <2> <u> : "𒎙"  U12399  # CUNEIFORM SIGN U U
 <Multi_key> <braceright> <C> <3> <u> : "𒌍"  U1230D  # CUNEIFORM SIGN U U U
-<Multi_key> <braceright> <C> <4> <u> : "𒐏"  U1240F  # CUNEIFORM NUMERIC SIGN FOUR U
-<Multi_key> <braceright> <C> <5> <u> : "𒐐"  U12410  # CUNEIFORM NUMERIC SIGN FIVE U
-<Multi_key> <braceright> <C> <6> <u> : "𒐑"  U12411  # CUNEIFORM NUMERIC SIGN SIX U
-<Multi_key> <braceright> <C> <7> <u> : "𒐒"  U12412  # CUNEIFORM NUMERIC SIGN SEVEN U
-<Multi_key> <braceright> <C> <8> <u> : "𒐓"  U12413  # CUNEIFORM NUMERIC SIGN EIGHT U
-<Multi_key> <braceright> <C> <9> <u> : "𒐔"  U12414  # CUNEIFORM NUMERIC SIGN NINE U
+<Multi_key> <braceright> <C> <4> <u> <space> : "𒐏"  U1240F  # CUNEIFORM NUMERIC SIGN FOUR U
+<Multi_key> <braceright> <C> <4> <u> <v> : "𒑩"  U12469  # CUNEIFORM NUMERIC SIGN FOUR U VARIANT FORM
+<Multi_key> <braceright> <C> <5> <u> <space> : "𒐐"  U12410  # CUNEIFORM NUMERIC SIGN FIVE U
+<Multi_key> <braceright> <C> <5> <u> <v> : "𒑪"  U1246A  # CUNEIFORM NUMERIC SIGN FIVE U VARIANT FORM
+<Multi_key> <braceright> <C> <6> <u> <space> : "𒐑"  U12411  # CUNEIFORM NUMERIC SIGN SIX U
+<Multi_key> <braceright> <C> <6> <u> <v> : "𒑫"  U1246B  # CUNEIFORM NUMERIC SIGN SIX U VARIANT FORM
+<Multi_key> <braceright> <C> <7> <u> <space> : "𒐒"  U12412  # CUNEIFORM NUMERIC SIGN SEVEN U
+<Multi_key> <braceright> <C> <7> <u> <v> : "𒑬"  U1246C  # CUNEIFORM NUMERIC SIGN SEVEN U VARIANT FORM
+<Multi_key> <braceright> <C> <8> <u> <space> : "𒐓"  U12413  # CUNEIFORM NUMERIC SIGN EIGHT U
+<Multi_key> <braceright> <C> <8> <u> <v> : "𒑭"  U1246D  # CUNEIFORM NUMERIC SIGN EIGHT U VARIANT FORM
+<Multi_key> <braceright> <C> <9> <u> <space> : "𒐔"  U12414  # CUNEIFORM NUMERIC SIGN NINE U
+<Multi_key> <braceright> <C> <9> <u> <v> : "𒑮"  U1246E  # CUNEIFORM NUMERIC SIGN NINE U VARIANT FORM
+
+# punctuation
+
+<Multi_key> <braceright> <C> <space> : "𒑰"  U12470  # CUNEIFORM PUNCTUATION SIGN OLD ASSYRIAN WORD DIVIDER
+<Multi_key> <braceright> <C> <colon> : "𒑱"  U12471  # CUNEIFORM PUNCTUATION SIGN VERTICAL COLON
+<Multi_key> <braceright> <C> <2> <backslash> : "𒑲"  U12472  # CUNEIFORM PUNCTUATION SIGN DIAGONAL COLON
+<Multi_key> <braceright> <C> <3> <backslash> : "𒑳"  U12473  # CUNEIFORM PUNCTUATION SIGN DIAGONAL TRICOLON
+<Multi_key> <braceright> <C> <4> <backslash> : "𒑴"  U12474  # CUNEIFORM PUNCTUATION SIGN DIAGONAL QUADCOLON
 
 # (CM = Cypro-Minoan) Olivier 2007
 
@@ -3350,7 +3416,7 @@
 <Multi_key> <braceright> <E> <A> <1> <7> <4> <B> : "𓖊"  U1358A  # EGYPTIAN HIEROGLYPH-1358A
 <Multi_key> <braceright> <E> <A> <1> <7> <4> <C> : "𓖋"  U1358B  # EGYPTIAN HIEROGLYPH-1358B
 <Multi_key> <braceright> <E> <A> <1> <7> <4> <D> : "𓖌"  U1358C  # EGYPTIAN HIEROGLYPH-1358C
-<Multi_key> <braceright> <E> <A> <5> <2> <7> <space> : "𓖍"  U1358D  # EGYPTIAN HIEROGLYPH-1358D
+<Multi_key> <braceright> <E> <A> <5> <2> <7> : "𓖍"  U1358D  # EGYPTIAN HIEROGLYPH-1358D
 <Multi_key> <braceright> <E> <A> <1> <9> <6> <A> : "𓖎"  U1358E  # EGYPTIAN HIEROGLYPH-1358E
 <Multi_key> <braceright> <E> <A> <1> <9> <9> <C> : "𓖏"  U1358F  # EGYPTIAN HIEROGLYPH-1358F
 <Multi_key> <braceright> <E> <A> <1> <9> <9> <B> : "𓖐"  U13590  # EGYPTIAN HIEROGLYPH-13590
