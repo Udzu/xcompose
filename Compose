@@ -3997,6 +3997,8 @@ include "%L"
 <Multi_key> <a> <semicolon> <u> <n> <space>           : "ﹲ"  UFE72  # ARABIC DAMMATAN ISOLATED FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <i> <n> <space>           : "ﹴ"  UFE74  # ARABIC KASRATAN ISOLATED FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <underscore> <i> <n> <space> : "ﹴ"  UFE74  # ARABIC KASRATAN ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <apostrophe> <space>      : "ﺀ"  UFE80  # ARABIC LETTER HAMZA ISOLATED FORM (conflicts with ą)
+<Multi_key> <a> <semicolon> <2> <space>               : "ﺀ"  UFE80  # ARABIC LETTER HAMZA ISOLATED FORM (conflicts with ą)
 
 <Multi_key> <a> <semicolon> <w> <u> <n>               : "ﱞ"  UFC5E  # ARABIC LIGATURE SHADDA WITH DAMMATAN ISOLATED FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <w> <i> <n>               : "ﱟ"  UFC5F  # ARABIC LIGATURE SHADDA WITH KASRATAN ISOLATED FORM (conflicts with ą)
@@ -4020,6 +4022,8 @@ include "%L"
 <Multi_key> <a> <x> <less> <y>      : "ے"  U06D2  # ARABIC LETTER YEH BARREE
 <Multi_key> <a> <x> <a> <e>         : "ە"  U06D5  # ARABIC LETTER AE
 <Multi_key> <a> <x> <q>             : "ࢼ"  U08BC  # ARABIC LETTER AFRICAN QAF
+<Multi_key> <a> <x> <n> <asciitilde> : "ں"  U06BA  # ARABIC LETTER NOON GHUNNA
+<Multi_key> <a> <x> <g> <h>          : "ہ"  U06C1  # ARABIC LETTER HEH GOAL
 
 # additional letters (represented visually)
 
@@ -4248,6 +4252,8 @@ include "%L"
 <Multi_key> <a> <x> <period> <quotedbl> <g> : "ڴ"  U06B4  # ARABIC LETTER GAF WITH THREE DOTS ABOVE
 <Multi_key> <a> <x> <underscore> <slash> <g> : "ࢰ"  U08B0  # ARABIC LETTER GAF WITH INVERTED STROKE
 
+<Multi_key> <a> <x> <2> <g> <h>           : "ۂ"  U06C2  # ARABIC LETTER HEH GOAL WITH HAMZA ABOVE
+
 <Multi_key> <a> <x> <2> <less> <y>        : "ۓ"  U06D3  # ARABIC LETTER YEH BARREE WITH HAMZA ABOVE
 <Multi_key> <a> <x> <numbersign> <2> <less> <y> : "ݺ"  U077A  # ARABIC LETTER YEH BARREE WITH EXTENDED ARABIC-INDIC DIGIT TWO ABOVE
 <Multi_key> <a> <x> <numbersign> <3> <less> <y> : "ݻ"  U077B  # ARABIC LETTER YEH BARREE WITH EXTENDED ARABIC-INDIC DIGIT THREE ABOVE
@@ -4258,6 +4264,7 @@ include "%L"
 # superscripts
 
 <Multi_key> <a> <c> <asciicircum> <asciicircum> <a> <Return> : "ٰ"  U0670  # ARABIC LETTER SUPERSCRIPT ALEF
+<Multi_key> <a> <x> <asciicircum> <asciicircum> <n> <asciitilde> <Return> : "٘"  U0658  # ARABIC MARK NOON GHUNNA
 
 <Multi_key> <a> <x> <asciicircum> <underscore> <t> : "ؕ"  U0615  # ARABIC SMALL HIGH TAH
 <Multi_key> <a> <c> <asciicircum> <underscore> <z> : "ؗ"  U0617  # ARABIC SMALL HIGH ZAIN
@@ -4389,24 +4396,22 @@ include "%L"
 #   form: ␣ = isolated, > = initial, < = final, . = medial
 #   character: as above
 
-<Multi_key> <a> <f> <space> <apostrophe> : "ﺀ"  UFE80  # ARABIC LETTER HAMZA ISOLATED FORM
-<Multi_key> <a> <f> <space> <2> : "ﺀ"  UFE80  # ARABIC LETTER HAMZA ISOLATED FORM
-<Multi_key> <a> <F> <space> <asciitilde> <a> : "ﺁ"  UFE81  # ARABIC LETTER ALEF WITH MADDA ABOVE ISOLATED FORM
-<Multi_key> <a> <F> <less> <asciitilde> <a> : "ﺂ"  UFE82  # ARABIC LETTER ALEF WITH MADDA ABOVE FINAL FORM
-<Multi_key> <a> <F> <space> <2> <a> : "ﺃ"  UFE83  # ARABIC LETTER ALEF WITH HAMZA ABOVE ISOLATED FORM
-<Multi_key> <a> <F> <less> <2> <a> : "ﺄ"  UFE84  # ARABIC LETTER ALEF WITH HAMZA ABOVE FINAL FORM
-<Multi_key> <a> <F> <space> <6> <a> : "ﭐ"  UFB50  # ARABIC LETTER ALEF WASLA ISOLATED FORM
-<Multi_key> <a> <F> <less> <6> <a> : "ﭑ"  UFB51  # ARABIC LETTER ALEF WASLA FINAL FORM
-<Multi_key> <a> <F> <space> <2> <w> : "ﺅ"  UFE85  # ARABIC LETTER WAW WITH HAMZA ABOVE ISOLATED FORM
-<Multi_key> <a> <F> <space> <2> <u> : "ﺅ"  UFE85  # ARABIC LETTER WAW WITH HAMZA ABOVE ISOLATED FORM
-<Multi_key> <a> <F> <less> <2> <w> : "ﺆ"  UFE86  # ARABIC LETTER WAW WITH HAMZA ABOVE FINAL FORM
-<Multi_key> <a> <F> <less> <2> <u> : "ﺆ"  UFE86  # ARABIC LETTER WAW WITH HAMZA ABOVE FINAL FORM
-<Multi_key> <a> <F> <space> <underscore> <2> <a> : "ﺇ"  UFE87  # ARABIC LETTER ALEF WITH HAMZA BELOW ISOLATED FORM
-<Multi_key> <a> <F> <less> <underscore> <2> <a> : "ﺈ"  UFE88  # ARABIC LETTER ALEF WITH HAMZA BELOW FINAL FORM
-<Multi_key> <a> <F> <space> <2> <y> : "ﺉ"  UFE89  # ARABIC LETTER YEH WITH HAMZA ABOVE ISOLATED FORM
-<Multi_key> <a> <F> <less> <2> <y> : "ﺊ"  UFE8A  # ARABIC LETTER YEH WITH HAMZA ABOVE FINAL FORM
-<Multi_key> <a> <F> <greater> <2> <y> : "ﺋ"  UFE8B  # ARABIC LETTER YEH WITH HAMZA ABOVE INITIAL FORM
-<Multi_key> <a> <F> <period> <2> <y> : "ﺌ"  UFE8C  # ARABIC LETTER YEH WITH HAMZA ABOVE MEDIAL FORM
+<Multi_key> <a> <f> <space> <asciitilde> <a> : "ﺁ"  UFE81  # ARABIC LETTER ALEF WITH MADDA ABOVE ISOLATED FORM
+<Multi_key> <a> <f> <less> <asciitilde> <a> : "ﺂ"  UFE82  # ARABIC LETTER ALEF WITH MADDA ABOVE FINAL FORM
+<Multi_key> <a> <f> <space> <2> <a> : "ﺃ"  UFE83  # ARABIC LETTER ALEF WITH HAMZA ABOVE ISOLATED FORM
+<Multi_key> <a> <f> <less> <2> <a> : "ﺄ"  UFE84  # ARABIC LETTER ALEF WITH HAMZA ABOVE FINAL FORM
+<Multi_key> <a> <f> <space> <6> <a> : "ﭐ"  UFB50  # ARABIC LETTER ALEF WASLA ISOLATED FORM
+<Multi_key> <a> <f> <less> <6> <a> : "ﭑ"  UFB51  # ARABIC LETTER ALEF WASLA FINAL FORM
+<Multi_key> <a> <f> <space> <2> <w> : "ﺅ"  UFE85  # ARABIC LETTER WAW WITH HAMZA ABOVE ISOLATED FORM
+<Multi_key> <a> <f> <space> <2> <u> : "ﺅ"  UFE85  # ARABIC LETTER WAW WITH HAMZA ABOVE ISOLATED FORM
+<Multi_key> <a> <f> <less> <2> <w> : "ﺆ"  UFE86  # ARABIC LETTER WAW WITH HAMZA ABOVE FINAL FORM
+<Multi_key> <a> <f> <less> <2> <u> : "ﺆ"  UFE86  # ARABIC LETTER WAW WITH HAMZA ABOVE FINAL FORM
+<Multi_key> <a> <f> <space> <underscore> <2> <a> : "ﺇ"  UFE87  # ARABIC LETTER ALEF WITH HAMZA BELOW ISOLATED FORM
+<Multi_key> <a> <f> <less> <underscore> <2> <a> : "ﺈ"  UFE88  # ARABIC LETTER ALEF WITH HAMZA BELOW FINAL FORM
+<Multi_key> <a> <f> <space> <2> <y> : "ﺉ"  UFE89  # ARABIC LETTER YEH WITH HAMZA ABOVE ISOLATED FORM
+<Multi_key> <a> <f> <less> <2> <y> : "ﺊ"  UFE8A  # ARABIC LETTER YEH WITH HAMZA ABOVE FINAL FORM
+<Multi_key> <a> <f> <greater> <2> <y> : "ﺋ"  UFE8B  # ARABIC LETTER YEH WITH HAMZA ABOVE INITIAL FORM
+<Multi_key> <a> <f> <period> <2> <y> : "ﺌ"  UFE8C  # ARABIC LETTER YEH WITH HAMZA ABOVE MEDIAL FORM
 <Multi_key> <a> <f> <space> <a> : "ﺍ"  UFE8D  # ARABIC LETTER ALEF ISOLATED FORM
 <Multi_key> <a> <f> <less> <a> : "ﺎ"  UFE8E  # ARABIC LETTER ALEF FINAL FORM
 <Multi_key> <a> <f> <space> <b> : "ﺏ"  UFE8F  # ARABIC LETTER BEH ISOLATED FORM
@@ -4628,6 +4633,10 @@ include "%L"
 <Multi_key> <a> <F> <less> <Multi_key> <h> : "ﮫ"  UFBAB  # ARABIC LETTER HEH DOACHASHMEE FINAL FORM
 <Multi_key> <a> <F> <greater> <Multi_key> <h> : "ﮬ"  UFBAC  # ARABIC LETTER HEH DOACHASHMEE INITIAL FORM
 <Multi_key> <a> <F> <period> <Multi_key> <h> : "ﮭ"  UFBAD  # ARABIC LETTER HEH DOACHASHMEE MEDIAL FORM
+<Multi_key> <a> <F> <space> <g> <h> : "ﮦ"  UFBA6  # ARABIC LETTER HEH GOAL ISOLATED FORM
+<Multi_key> <a> <F> <less> <g> <h> : "ﮧ"  UFBA7  # ARABIC LETTER HEH GOAL FINAL FORM
+<Multi_key> <a> <F> <greater> <g> <h> : "ﮨ"  UFBA8  # ARABIC LETTER HEH GOAL INITIAL FORM
+<Multi_key> <a> <F> <period> <g> <h> : "ﮩ"  UFBA9  # ARABIC LETTER HEH GOAL MEDIAL FORM
 <Multi_key> <a> <F> <space> <less> <y> : "ﮮ"  UFBAE  # ARABIC LETTER YEH BARREE ISOLATED FORM
 <Multi_key> <a> <F> <less> <less> <y> : "ﮯ"  UFBAF  # ARABIC LETTER YEH BARREE FINAL FORM
 <Multi_key> <a> <F> <space> <2> <less> <y> : "ﮰ"  UFBB0  # ARABIC LETTER YEH BARREE WITH HAMZA ABOVE ISOLATED FORM
@@ -4636,6 +4645,8 @@ include "%L"
 <Multi_key> <a> <F> <less> <period> <quotedbl> <k> <space> : "ﯔ"  UFBD4  # ARABIC LETTER NG FINAL FORM
 <Multi_key> <a> <F> <greater> <period> <quotedbl> <k> <space> : "ﯕ"  UFBD5  # ARABIC LETTER NG INITIAL FORM
 <Multi_key> <a> <F> <period> <period> <quotedbl> <k> <space> : "ﯖ"  UFBD6  # ARABIC LETTER NG MEDIAL FORM
+<Multi_key> <a> <F> <space> <n> <asciitilde> : "ﮞ"  UFB9E  # ARABIC LETTER NOON GHUNNA ISOLATED FORM
+<Multi_key> <a> <F> <less> <n> <asciitilde> : "ﮟ"  UFB9F  # ARABIC LETTER NOON GHUNNA FINAL FORM
 <Multi_key> <a> <F> <space> <u> <w> : "ﯗ"  UFBD7  # ARABIC LETTER U ISOLATED FORM
 <Multi_key> <a> <F> <space> <u> <u> : "ﯗ"  UFBD7  # ARABIC LETTER U ISOLATED FORM
 <Multi_key> <a> <F> <less> <u> <w> : "ﯘ"  UFBD8  # ARABIC LETTER U FINAL FORM
@@ -4660,6 +4671,7 @@ include "%L"
 <Multi_key> <a> <F> <space> <asciicircum> <u> : "ﯢ"  UFBE2  # ARABIC LETTER KIRGHIZ YU ISOLATED FORM
 <Multi_key> <a> <F> <less> <asciicircum> <w> : "ﯣ"  UFBE3  # ARABIC LETTER KIRGHIZ YU FINAL FORM
 <Multi_key> <a> <F> <less> <asciicircum> <u> : "ﯣ"  UFBE3  # ARABIC LETTER KIRGHIZ YU FINAL FORM
+<Multi_key> <a> <F> <space> <2> <u> <u> : "ﯝ"  UFBDD  # ARABIC LETTER U WITH HAMZA ABOVE ISOLATED FORM
 <Multi_key> <a> <F> <space> <underscore> <colon> <y> : "ﯤ"  UFBE4  # ARABIC LETTER E ISOLATED FORM
 <Multi_key> <a> <F> <less> <underscore> <colon> <y> : "ﯥ"  UFBE5  # ARABIC LETTER E FINAL FORM
 <Multi_key> <a> <F> <greater> <underscore> <colon> <y> : "ﯦ"  UFBE6  # ARABIC LETTER E INITIAL FORM
@@ -4670,6 +4682,18 @@ include "%L"
 <Multi_key> <a> <F> <less> <y> : "ﯽ"  UFBFD  # ARABIC LETTER FARSI YEH FINAL FORM
 <Multi_key> <a> <F> <greater> <y> : "ﯾ"  UFBFE  # ARABIC LETTER FARSI YEH INITIAL FORM
 <Multi_key> <a> <F> <period> <y> : "ﯿ"  UFBFF  # ARABIC LETTER FARSI YEH MEDIAL FORM
+
+<Multi_key> <a> <f> <space> <asciicircum> <a> <n> <a> : "ﴼ"  UFD3C  # ARABIC LIGATURE ALEF WITH FATHATAN FINAL FORM
+<Multi_key> <a> <f> <less> <asciicircum> <a> <n> <a> : "ﴽ"  UFD3D  # ARABIC LIGATURE ALEF WITH FATHATAN ISOLATED FORM
+<Multi_key> <a> <f> <space> <asciicircum> <a> <D> : "ﱛ"  UFC5B  # ARABIC LIGATURE THAL WITH SUPERSCRIPT ALEF ISOLATED FORM
+<Multi_key> <a> <f> <space> <asciicircum> <a> <r> : "ﱜ"  UFC5C  # ARABIC LIGATURE REH WITH SUPERSCRIPT ALEF ISOLATED FORM
+<Multi_key> <a> <F> <space> <asciicircum> <a> <a> <y> : "ﱝ"  UFC5D  # ARABIC LIGATURE ALEF MAKSURA WITH SUPERSCRIPT ALEF ISOLATED FORM
+<Multi_key> <a> <F> <less> <asciicircum> <a> <a> <y> : "ﲐ"  UFC90  # ARABIC LIGATURE ALEF MAKSURA WITH SUPERSCRIPT ALEF FINAL FORM
+<Multi_key> <a> <f> <space> <asciicircum> <a> <h> : "ﳙ"  UFCD9  # ARABIC LIGATURE HEH WITH SUPERSCRIPT ALEF INITIAL FORM
+<Multi_key> <a> <f> <space> <asciicircum> <y> <h> : "ﮤ"  UFBA4  # ARABIC LETTER HEH WITH YEH ABOVE ISOLATED FORM
+<Multi_key> <a> <f> <space> <asciicircum> <i> <h> : "ﮤ"  UFBA4  # ARABIC LETTER HEH WITH YEH ABOVE ISOLATED FORM
+<Multi_key> <a> <f> <less> <asciicircum> <y> <h> : "ﮥ"  UFBA5  # ARABIC LETTER HEH WITH YEH ABOVE FINAL FORM
+<Multi_key> <a> <f> <less> <asciicircum> <i> <h> : "ﮥ"  UFBA5  # ARABIC LETTER HEH WITH YEH ABOVE FINAL FORM
 
 # ({ = ligatures)
 
@@ -14084,6 +14108,7 @@ include "%L"
 <Multi_key> <C> <R> <r> <w> <asciicircum> <o> <E> : "ᣒ"  U18D2  # CANADIAN SYLLABICS RWOO
 <Multi_key> <C> <R> <r> <w> <asciicircum> <a> <E> : "ᕎ"  U154E  # CANADIAN SYLLABICS RWAA
 <Multi_key> <C> <R> <r> <w> <asciicircum> <a> <W> : "ᕏ"  U154F  # CANADIAN SYLLABICS WEST-CREE RWAA
+<Multi_key> <C> <R> <r> <w> <asciicircum> <e> : "ᣎ"  U18CE  # CANADIAN SYLLABICS RWEE
 
 <Multi_key> <C> <R> <l> <w> <e> <E> : "ᓜ"  U14DC  # CANADIAN SYLLABICS LWE
 <Multi_key> <C> <R> <l> <w> <e> <W> : "ᓝ"  U14DD  # CANADIAN SYLLABICS WEST-CREE LWE
