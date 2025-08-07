@@ -3980,6 +3980,10 @@ include "%L"
 <Multi_key> <a> <semicolon> <i> <n> <Return>          : "ٍ"  U064D  # ARABIC KASRATAN (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <underscore> <i> <n> <Return> : "ٍ"  U064D  # ARABIC KASRATAN (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <u> <n> <Return>          : "ٌ"  U064C  # ARABIC DAMMATAN (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <greater> <a> <Return> : "ؘ"  U0618  # ARABIC SMALL FATHA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <greater> <u> <Return> : "ؙ"  U0619  # ARABIC SMALL DAMMA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <greater> <i> <Return> : "ؚ"  U061A  # ARABIC SMALL KASRA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <greater> <underscore> <i> <Return> : "ؚ"  U061A  # ARABIC SMALL KASRA (conflicts with ą, use ,a)
 
 <Multi_key> <a> <semicolon> <a> <space>               : "ﹶ"  UFE76  # ARABIC FATHA ISOLATED FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <a> <period>              : "ﹷ"  UFE77  # ARABIC FATHA MEDIAL FORM (conflicts with ą)
@@ -4265,29 +4269,34 @@ include "%L"
 
 <Multi_key> <a> <c> <asciicircum> <asciicircum> <a> <Return> : "ٰ"  U0670  # ARABIC LETTER SUPERSCRIPT ALEF
 <Multi_key> <a> <x> <asciicircum> <asciicircum> <n> <asciitilde> <Return> : "٘"  U0658  # ARABIC MARK NOON GHUNNA
-
-<Multi_key> <a> <x> <asciicircum> <underscore> <t> : "ؕ"  U0615  # ARABIC SMALL HIGH TAH
-<Multi_key> <a> <c> <asciicircum> <underscore> <z> : "ؗ"  U0617  # ARABIC SMALL HIGH ZAIN
-<Multi_key> <a> <f> <asciicircum> <underscore> <greater> <m> : "ۘ"  U06D8  # ARABIC SMALL HIGH MEEM INITIAL FORM
-<Multi_key> <a> <c> <asciicircum> <underscore> <j> : "ۚ"  U06DA  # ARABIC SMALL HIGH JEEM
-<Multi_key> <a> <c> <asciicircum> <underscore> <s> : "ۜ"  U06DC  # ARABIC SMALL HIGH SEEN
-<Multi_key> <a> <f> <asciicircum> <underscore> <space> <m> : "ۢ"  U06E2  # ARABIC SMALL HIGH MEEM ISOLATED FORM
-<Multi_key> <a> <c> <asciicircum> <underscore> <y> : "ۧ"  U06E7  # ARABIC SMALL HIGH YEH
-<Multi_key> <a> <c> <asciicircum> <underscore> <i> : "ۧ"  U06E7  # ARABIC SMALL HIGH YEH
-<Multi_key> <a> <c> <asciicircum> <underscore> <n> : "ۨ"  U06E8  # ARABIC SMALL HIGH NOON
-<Multi_key> <a> <x> <asciicircum> <underscore> <y> : "࣊"  U08CA  # ARABIC SMALL HIGH FARSI YEH
-<Multi_key> <a> <x> <asciicircum> <underscore> <z> : "࣍"  U08CD  # ARABIC SMALL HIGH ZAH
-<Multi_key> <a> <x> <asciicircum> <underscore> <s> : "ࣕ"  U08D5  # ARABIC SMALL HIGH SAD
-<Multi_key> <a> <c> <asciicircum> <underscore> <grave> : "ࣖ"  U08D6  # ARABIC SMALL HIGH AIN
-<Multi_key> <a> <c> <asciicircum> <underscore> <q> : "ࣗ"  U08D7  # ARABIC SMALL HIGH QAF
-<Multi_key> <a> <c> <asciicircum> <underscore> <w> : "ࣳ"  U08F3  # ARABIC SMALL HIGH WAW
-<Multi_key> <a> <c> <asciicircum> <underscore> <u> : "ࣳ"  U08F3  # ARABIC SMALL HIGH WAW
+<Multi_key> <a> <x> <asciicircum> <asciicircum> <t> <Return> : "ؕ"  U0615  # ARABIC SMALL HIGH TAH
+<Multi_key> <a> <c> <asciicircum> <asciicircum> <z> <Return> : "ؗ"  U0617  # ARABIC SMALL HIGH ZAIN
+<Multi_key> <a> <f> <asciicircum> <asciicircum> <greater> <m> <Return> : "ۘ"  U06D8  # ARABIC SMALL HIGH MEEM INITIAL FORM
+<Multi_key> <a> <c> <asciicircum> <asciicircum> <j> <Return> : "ۚ"  U06DA  # ARABIC SMALL HIGH JEEM
+<Multi_key> <a> <c> <asciicircum> <asciicircum> <s> <Return> : "ۜ"  U06DC  # ARABIC SMALL HIGH SEEN
+<Multi_key> <a> <f> <asciicircum> <asciicircum> <space> <m> <Return> : "ۢ"  U06E2  # ARABIC SMALL HIGH MEEM ISOLATED FORM
+<Multi_key> <a> <c> <asciicircum> <asciicircum> <y> <Return> : "ۧ"  U06E7  # ARABIC SMALL HIGH YEH
+<Multi_key> <a> <c> <asciicircum> <asciicircum> <i> <Return> : "ۧ"  U06E7  # ARABIC SMALL HIGH YEH
+<Multi_key> <a> <c> <asciicircum> <asciicircum> <n> <Return> : "ۨ"  U06E8  # ARABIC SMALL HIGH NOON
+<Multi_key> <a> <x> <asciicircum> <asciicircum> <y> <Return> : "࣊"  U08CA  # ARABIC SMALL HIGH FARSI YEH
+<Multi_key> <a> <x> <asciicircum> <asciicircum> <z> <Return> : "࣍"  U08CD  # ARABIC SMALL HIGH ZAH
+<Multi_key> <a> <x> <asciicircum> <asciicircum> <s> <Return> : "ࣕ"  U08D5  # ARABIC SMALL HIGH SAD
+<Multi_key> <a> <c> <asciicircum> <asciicircum> <grave> <Return> : "ࣖ"  U08D6  # ARABIC SMALL HIGH AIN
+<Multi_key> <a> <c> <asciicircum> <asciicircum> <q> <Return> : "ࣗ"  U08D7  # ARABIC SMALL HIGH QAF
+<Multi_key> <a> <c> <asciicircum> <asciicircum> <w> <Return> : "ࣳ"  U08F3  # ARABIC SMALL HIGH WAW
+<Multi_key> <a> <c> <asciicircum> <asciicircum> <u> <Return> : "ࣳ"  U08F3  # ARABIC SMALL HIGH WAW
 
 <Multi_key> <a> <c> <underscore> <w> : "ۥ"  U06E5  # ARABIC SMALL WAW
 <Multi_key> <a> <c> <underscore> <u> : "ۥ"  U06E5  # ARABIC SMALL WAW
 <Multi_key> <a> <c> <underscore> <y> : "ۦ"  U06E6  # ARABIC SMALL YEH
 <Multi_key> <a> <c> <underscore> <i> : "ۦ"  U06E6  # ARABIC SMALL YEH
 <Multi_key> <a> <x> <underscore> <y> : "ࣉ"  U08C9  # ARABIC SMALL FARSI YEH
+
+<Multi_key> <a> <c> <underscore> <underscore> <a> <Return> : "ٖ"  U0656  # ARABIC SUBSCRIPT ALEF
+<Multi_key> <a> <c> <underscore> <underscore> <s> <Return> : "ۣ"  U06E3  # ARABIC SMALL LOW SEEN
+<Multi_key> <a> <c> <underscore> <underscore> <m> <Return> : "ۭ"  U06ED  # ARABIC SMALL LOW MEEM
+<Multi_key> <a> <c> <underscore> <underscore> <w> <Return> : "࣓"  U08D3  # ARABIC SMALL LOW WAW
+<Multi_key> <a> <c> <underscore> <underscore> <u> <Return> : "࣓"  U08D3  # ARABIC SMALL LOW WAW
 
 # ligatures
 
@@ -4303,7 +4312,7 @@ include "%L"
 <Multi_key> <a> <x> <S> <W> <T>          : "﷾"  UFDFE  # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
 <Multi_key> <a> <x> <T> <W> <T>          : "﵎"  UFD4E  # ARABIC LIGATURE TABAARAKA WA-TAAALAA
 
-<Multi_key> <a> <x> <A> <m> <A> <Return> : "ؑ"  U0611  # ARABIC SIGN ALAYHE ASSALLAM
+<Multi_key> <a> <x> <A> <A> <S> <Return> : "ؑ"  U0611  # ARABIC SIGN ALAYHE ASSALLAM
 <Multi_key> <a> <x> <A> <A> <S> <space>  : "﵇"  UFD47  # ARABIC LIGATURE ALAYHI AS-SALAAM
 <Multi_key> <a> <x> <A> <m> <A> <S>      : "﵈"  UFD48  # ARABIC LIGATURE ALAYHIM AS-SALAAM
 <Multi_key> <a> <x> <A> <2> <A> <S>      : "﵉"  UFD49  # ARABIC LIGATURE ALAYHIMAA AS-SALAAM
@@ -4329,6 +4338,7 @@ include "%L"
 <Multi_key> <a> <semicolon> <ampersand> : "۽"  U06FD   # ARABIC SIGN SINDHI AMPERSAND LEFT-TO-RIGHT MARK (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <parenleft> : "﴾"  UFD3E  # ORNATE LEFT PARENTHESIS (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <parenright> : "﴿"  UFD3F  # ORNATE RIGHT PARENTHESIS (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <underscore> <Return> : "؂"  U0602  # ARABIC FOOTNOTE MARKER (conflicts with ą, use ,a)
 
 # numerals
 
@@ -4386,8 +4396,20 @@ include "%L"
 <Multi_key> <a> <numbersign> <r> <1> <slash> <3> : "𐹽"  U10E7D  # RUMI FRACTION ONE THIRD
 <Multi_key> <a> <numbersign> <r> <2> <slash> <3> : "𐹾"  U10E7E  # RUMI FRACTION TWO THIRDS
 
-<Multi_key> <a> <x> <numbersign> <s> <u> <m> : "𞻰"  U1EEF0  # ARABIC MATHEMATICAL OPERATOR MEEM WITH HAH WITH TATWEEL
-<Multi_key> <a> <x> <numbersign> <l> <i> <m> : "𞻱"  U1EEF1  # ARABIC MATHEMATICAL OPERATOR HAH WITH DAL
+<Multi_key> <a> <numbersign> <Return> : "؀"  U0600  # ARABIC NUMBER SIGN
+<Multi_key> <a> <numbersign> <asciicircum> <Return> : "؅"  U0605  # ARABIC NUMBER MARK ABOVE
+<Multi_key> <a> <numbersign> <p> <Return> : "؃"  U0603  # ARABIC SIGN SAFHA
+<Multi_key> <a> <numbersign> <p> <a> <g> <e> <Return> : "؃"  U0603  # ARABIC SIGN SAFHA
+<Multi_key> <a> <numbersign> <y> <Return> : "؁"  U0601  # ARABIC SIGN SANAH
+<Multi_key> <a> <numbersign> <y> <e> <a> <r> <Return> : "؁"  U0601  # ARABIC SIGN SANAH
+<Multi_key> <a> <numbersign> <s> <Return> : "؄"  U0604  # ARABIC SIGN SAMVAT
+<Multi_key> <a> <numbersign> <s> <h> <a> <k> <a> <Return> : "؄"  U0604  # ARABIC SIGN SAMVAT
+
+<Multi_key> <a> <numbersign> <l> <i> <m> : "𞻱"  U1EEF1  # ARABIC MATHEMATICAL OPERATOR HAH WITH DAL
+<Multi_key> <a> <numbersign> <r> <a> <d> : "؈"  U0608  # ARABIC RAY
+<Multi_key> <a> <numbersign> <s> <u> <m> : "𞻰"  U1EEF0  # ARABIC MATHEMATICAL OPERATOR MEEM WITH HAH WITH TATWEEL
+<Multi_key> <a> <numbersign> <backslash> <v> <3> : "؆"  U0606  # ARABIC-INDIC CUBE ROOT (alternatively just \v3)
+<Multi_key> <a> <numbersign> <backslash> <v> <4> : "؇"  U0607  # ARABIC-INDIC FOURTH ROOT (alternatively just \v4)
 
 # (f/F = presentation forms)
 
@@ -21131,7 +21153,7 @@ include "HangulSyllables"
 # (z) Zhuyin/Bopomofo (and other nearby scripts) #
 ##################################################
 
-# covers Fraser, Mongolian, ʼPhags-Pa, Pollard, Soyombo, Tai Le, Tibetan, Yi & Zanabazar Square
+# covers Fraser, Mongolian, Nüshu, ʼPhags-Pa, Pollard, Soyombo, Tai Le, Tibetan, Yi & Zanabazar Square
 
 <Multi_key> <z> <c> <b> : "ㄅ" U3105    # BOPOMOFO LETTER B
 <Multi_key> <z> <c> <p> : "ㄆ" U3106    # BOPOMOFO LETTER P
@@ -22007,7 +22029,6 @@ include "HangulSyllables"
 <Multi_key> <z> <m> <at> <bracketleft> <2> <bar>: "𑙫"  U1166B  # MONGOLIAN SWIRL BIRGA WITH DOUBLE ORNAMENT
 <Multi_key> <z> <m> <2> <bar> <at> <bracketleft> : "𑙬"  U1166C  # MONGOLIAN TURNED SWIRL BIRGA WITH DOUBLE ORNAMENT
 
-
 # (n = New Tai Le)
 
 <Multi_key> <z> <n> <q> <asciicircum> : "ᦀ"  U1980  # NEW TAI LUE LETTER HIGH QA
@@ -22102,6 +22123,405 @@ include "HangulSyllables"
 
 <Multi_key> <z> <n> <ampersand> : "᧞"  U19DE  # NEW TAI LUE SIGN LAE (AND)
 <Multi_key> <z> <n> <braceright> <h> <a> <v> <e> : "᧟"  U19DF  # NEW TAI LUE SIGN LAEV (HAVE)
+
+# (N = Nüshu) based on readings in NushuSources.txt
+
+<Multi_key> <z> <N> <a> <i> <4> <2>                 : "𛇈"  U1B1C8  # NUSHU CHARACTER-1B1C8
+<Multi_key> <z> <N> <a> <n> <g> <2> <1>             : "𛈪"  U1B22A  # NUSHU CHARACTER-1B22A
+<Multi_key> <z> <N> <c> <i> <2> <1>                 : "𛆓"  U1B193  # NUSHU CHARACTER-1B193
+<Multi_key> <z> <N> <c> <i> <3> <5>                 : "𛆻"  U1B1BB  # NUSHU CHARACTER-1B1BB
+<Multi_key> <z> <N> <c> <i> <a> <n> <g> <1> <3>     : "𛆈"  U1B188  # NUSHU CHARACTER-1B188
+<Multi_key> <z> <N> <c> <i> <a> <n> <g> <3> <5>     : "𛉷"  U1B277  # NUSHU CHARACTER-1B277
+<Multi_key> <z> <N> <c> <i> <a> <n> <g> <4> <2>     : "𛈾"  U1B23E  # NUSHU CHARACTER-1B23E
+<Multi_key> <z> <N> <c> <i> <a> <n> <g> <4> <4>     : "𛉶"  U1B276  # NUSHU CHARACTER-1B276
+<Multi_key> <z> <N> <c> <i> <e> <2> <1>             : "𛋐"  U1B2D0  # NUSHU CHARACTER-1B2D0
+<Multi_key> <z> <N> <c> <i> <e> <4> <4>             : "𛈛"  U1B21B  # NUSHU CHARACTER-1B21B
+<Multi_key> <z> <N> <c> <i> <n> <g> <1> <3>         : "𛋌"  U1B2CC  # NUSHU CHARACTER-1B2CC
+<Multi_key> <z> <N> <c> <i> <n> <g> <3> <5>         : "𛉃"  U1B243  # NUSHU CHARACTER-1B243
+<Multi_key> <z> <N> <c> <i> <n> <g> <4> <2>         : "𛊁"  U1B281  # NUSHU CHARACTER-1B281
+<Multi_key> <z> <N> <c> <i> <o> <n> <g> <2> <1>     : "𛈓"  U1B213  # NUSHU CHARACTER-1B213
+<Multi_key> <z> <N> <c> <i> <o> <n> <g> <4> <2>     : "𛈒"  U1B212  # NUSHU CHARACTER-1B212
+<Multi_key> <z> <N> <c> <i> <o> <n> <g> <4> <4>     : "𛉂"  U1B242  # NUSHU CHARACTER-1B242
+<Multi_key> <z> <N> <c> <i> <o> <u> <1> <3>         : "𛉬"  U1B26C  # NUSHU CHARACTER-1B26C
+<Multi_key> <z> <N> <c> <i> <o> <u> <3> <5>         : "𛆞"  U1B19E  # NUSHU CHARACTER-1B19E
+<Multi_key> <z> <N> <c> <i> <o> <u> <4> <4>         : "𛈀"  U1B200  # NUSHU CHARACTER-1B200
+<Multi_key> <z> <N> <c> <i> <o> <u> <5>             : "𛊡"  U1B2A1  # NUSHU CHARACTER-1B2A1
+<Multi_key> <z> <N> <c> <i> <u> <3> <5>             : "𛆿"  U1B1BF  # NUSHU CHARACTER-1B1BF
+<Multi_key> <z> <N> <c> <i> <u> <4> <4>             : "𛊼"  U1B2BC  # NUSHU CHARACTER-1B2BC
+<Multi_key> <z> <N> <c> <y> <5>                     : "𛊗"  U1B297  # NUSHU CHARACTER-1B297
+<Multi_key> <z> <N> <c> <y> <a> <3> <5>             : "𛅸"  U1B178  # NUSHU CHARACTER-1B178
+<Multi_key> <z> <N> <c> <y> <a> <4> <2>             : "𛉅"  U1B245  # NUSHU CHARACTER-1B245
+<Multi_key> <z> <N> <c> <y> <a> <5>                 : "𛈚"  U1B21A  # NUSHU CHARACTER-1B21A
+<Multi_key> <z> <N> <c> <y> <e> <4> <4>             : "𛊍"  U1B28D  # NUSHU CHARACTER-1B28D
+<Multi_key> <z> <N> <c> <y> <u> <3> <3>             : "𛋙"  U1B2D9  # NUSHU CHARACTER-1B2D9
+<Multi_key> <z> <N> <c> <y> <u> <3> <5>             : "𛋱"  U1B2F1  # NUSHU CHARACTER-1B2F1
+<Multi_key> <z> <N> <c> <y> <u> <4> <4>             : "𛈬"  U1B22C  # NUSHU CHARACTER-1B22C
+<Multi_key> <z> <N> <f> <a> <4> <4>                 : "𛆌"  U1B18C  # NUSHU CHARACTER-1B18C
+<Multi_key> <z> <N> <f> <a> <i> <4> <2>             : "𛈮"  U1B22E  # NUSHU CHARACTER-1B22E
+<Multi_key> <z> <N> <f> <a> <i> <4> <4>             : "𛆙"  U1B199  # NUSHU CHARACTER-1B199
+<Multi_key> <z> <N> <f> <a> <n> <g> <1> <3>         : "𛉮"  U1B26E  # NUSHU CHARACTER-1B26E
+<Multi_key> <z> <N> <f> <a> <n> <g> <3> <3>         : "𛋹"  U1B2F9  # NUSHU CHARACTER-1B2F9
+<Multi_key> <z> <N> <f> <a> <n> <g> <4> <4> <space> : "𛆠"  U1B1A0  # NUSHU CHARACTER-1B1A0
+<Multi_key> <z> <N> <f> <a> <n> <g> <4> <4> <A>     : "𛋆"  U1B2C6  # NUSHU CHARACTER-1B2C6
+<Multi_key> <z> <N> <f> <i> <2> <1>                 : "𛋻"  U1B2FB  # NUSHU CHARACTER-1B2FB
+<Multi_key> <z> <N> <f> <o> <e> <4> <2>             : "𛈝"  U1B21D  # NUSHU CHARACTER-1B21D
+<Multi_key> <z> <N> <f> <u> <1> <3>                 : "𛆖"  U1B196  # NUSHU CHARACTER-1B196
+<Multi_key> <z> <N> <f> <u> <2> <1>                 : "𛊓"  U1B293  # NUSHU CHARACTER-1B293
+<Multi_key> <z> <N> <f> <u> <3> <3>                 : "𛈩"  U1B229  # NUSHU CHARACTER-1B229
+<Multi_key> <z> <N> <f> <u> <3> <5>                 : "𛆕"  U1B195  # NUSHU CHARACTER-1B195
+<Multi_key> <z> <N> <f> <u> <4> <2>                 : "𛇮"  U1B1EE  # NUSHU CHARACTER-1B1EE
+<Multi_key> <z> <N> <f> <u> <4> <4>                 : "𛆔"  U1B194  # NUSHU CHARACTER-1B194
+<Multi_key> <z> <N> <f> <u> <5>                     : "𛋷"  U1B2F7  # NUSHU CHARACTER-1B2F7
+<Multi_key> <z> <N> <f> <w> <4> <2>                 : "𛇳"  U1B1F3  # NUSHU CHARACTER-1B1F3
+<Multi_key> <z> <N> <f> <w> <e> <1> <3>             : "𛅽"  U1B17D  # NUSHU CHARACTER-1B17D
+<Multi_key> <z> <N> <f> <w> <e> <4> <4> <space>     : "𛆐"  U1B190  # NUSHU CHARACTER-1B190
+<Multi_key> <z> <N> <f> <w> <e> <4> <4> <A>         : "𛈣"  U1B223  # NUSHU CHARACTER-1B223
+<Multi_key> <z> <N> <h> <a> <i> <4> <2>             : "𛉢"  U1B262  # NUSHU CHARACTER-1B262
+<Multi_key> <z> <N> <h> <a> <n> <g> <4> <2>         : "𛊨"  U1B2A8  # NUSHU CHARACTER-1B2A8
+<Multi_key> <z> <N> <h> <a> <n> <g> <4> <4>         : "𛊧"  U1B2A7  # NUSHU CHARACTER-1B2A7
+<Multi_key> <z> <N> <h> <a> <u> <3> <3>             : "𛉥"  U1B265  # NUSHU CHARACTER-1B265
+<Multi_key> <z> <N> <h> <a> <u> <3> <5> <space>     : "𛆚"  U1B19A  # NUSHU CHARACTER-1B19A
+<Multi_key> <z> <N> <h> <a> <u> <3> <5> <A>         : "𛇉"  U1B1C9  # NUSHU CHARACTER-1B1C9
+<Multi_key> <z> <N> <h> <o> <u> <3> <3>             : "𛋄"  U1B2C4  # NUSHU CHARACTER-1B2C4
+<Multi_key> <z> <N> <h> <u> <4> <2> <space>         : "𛊕"  U1B295  # NUSHU CHARACTER-1B295
+<Multi_key> <z> <N> <h> <u> <4> <2> <A>             : "𛋘"  U1B2D8  # NUSHU CHARACTER-1B2D8
+<Multi_key> <z> <N> <h> <u> <5>                     : "𛇱"  U1B1F1  # NUSHU CHARACTER-1B1F1
+<Multi_key> <z> <N> <h> <u> <o> <w> <2> <1>         : "𛈹"  U1B239  # NUSHU CHARACTER-1B239
+<Multi_key> <z> <N> <h> <u> <o> <w> <3> <5>         : "𛇑"  U1B1D1  # NUSHU CHARACTER-1B1D1
+<Multi_key> <z> <N> <h> <u> <o> <w> <4> <2>         : "𛇐"  U1B1D0  # NUSHU CHARACTER-1B1D0
+<Multi_key> <z> <N> <h> <w> <3> <5>                 : "𛉝"  U1B25D  # NUSHU CHARACTER-1B25D
+<Multi_key> <z> <N> <h> <w> <4> <4>                 : "𛇶"  U1B1F6  # NUSHU CHARACTER-1B1F6
+<Multi_key> <z> <N> <h> <w> <5>                     : "𛋚"  U1B2DA  # NUSHU CHARACTER-1B2DA
+<Multi_key> <z> <N> <i> <2> <1>                     : "𛋤"  U1B2E4  # NUSHU CHARACTER-1B2E4
+<Multi_key> <z> <N> <i> <3> <5>                     : "𛋕"  U1B2D5  # NUSHU CHARACTER-1B2D5
+<Multi_key> <z> <N> <i> <4> <2>                     : "𛊺"  U1B2BA  # NUSHU CHARACTER-1B2BA
+<Multi_key> <z> <N> <i> <5> <space>                 : "𛅰"  U1B170  # NUSHU CHARACTER-1B170
+<Multi_key> <z> <N> <i> <5> <A>                     : "𛆼"  U1B1BC  # NUSHU CHARACTER-1B1BC
+<Multi_key> <z> <N> <i> <a> <n> <g> <1> <3>         : "𛈍"  U1B20D  # NUSHU CHARACTER-1B20D
+<Multi_key> <z> <N> <i> <a> <n> <g> <4> <2>         : "𛈿"  U1B23F  # NUSHU CHARACTER-1B23F
+<Multi_key> <z> <N> <i> <a> <n> <g> <4> <4>         : "𛊫"  U1B2AB  # NUSHU CHARACTER-1B2AB
+<Multi_key> <z> <N> <i> <e> <1> <3>                 : "𛊉"  U1B289  # NUSHU CHARACTER-1B289
+<Multi_key> <z> <N> <i> <e> <2> <1> <space>         : "𛅳"  U1B173  # NUSHU CHARACTER-1B173
+<Multi_key> <z> <N> <i> <e> <2> <1> <A>             : "𛇢"  U1B1E2  # NUSHU CHARACTER-1B1E2
+<Multi_key> <z> <N> <i> <e> <3> <3>                 : "𛆲"  U1B1B2  # NUSHU CHARACTER-1B1B2
+<Multi_key> <z> <N> <i> <e> <3> <5>                 : "𛋡"  U1B2E1  # NUSHU CHARACTER-1B2E1
+<Multi_key> <z> <N> <i> <e> <4> <4>                 : "𛆱"  U1B1B1  # NUSHU CHARACTER-1B1B1
+<Multi_key> <z> <N> <i> <n> <g> <2> <1>             : "𛊂"  U1B282  # NUSHU CHARACTER-1B282
+<Multi_key> <z> <N> <i> <n> <g> <4> <2>             : "𛋍"  U1B2CD  # NUSHU CHARACTER-1B2CD
+<Multi_key> <z> <N> <i> <o> <n> <g> <4> <2>         : "𛆧"  U1B1A7  # NUSHU CHARACTER-1B1A7
+<Multi_key> <z> <N> <i> <o> <u> <1> <3> <space>     : "𛇌"  U1B1CC  # NUSHU CHARACTER-1B1CC
+<Multi_key> <z> <N> <i> <o> <u> <1> <3> <A>         : "𛈶"  U1B236  # NUSHU CHARACTER-1B236
+<Multi_key> <z> <N> <i> <o> <u> <4> <2>             : "𛊢"  U1B2A2  # NUSHU CHARACTER-1B2A2
+<Multi_key> <z> <N> <k> <a> <i> <4> <4>             : "𛆃"  U1B183  # NUSHU CHARACTER-1B183
+<Multi_key> <z> <N> <k> <a> <n> <g> <3> <5>         : "𛊦"  U1B2A6  # NUSHU CHARACTER-1B2A6
+<Multi_key> <z> <N> <k> <a> <n> <g> <4> <4>         : "𛇕"  U1B1D5  # NUSHU CHARACTER-1B1D5
+<Multi_key> <z> <N> <k> <a> <u> <4> <4>             : "𛋂"  U1B2C2  # NUSHU CHARACTER-1B2C2
+<Multi_key> <z> <N> <k> <h> <a> <n> <g> <2> <1>     : "𛆣"  U1B1A3  # NUSHU CHARACTER-1B1A3
+<Multi_key> <z> <N> <k> <h> <a> <n> <g> <3> <5>     : "𛈋"  U1B20B  # NUSHU CHARACTER-1B20B
+<Multi_key> <z> <N> <k> <h> <a> <n> <g> <4> <4>     : "𛉲"  U1B272  # NUSHU CHARACTER-1B272
+<Multi_key> <z> <N> <k> <h> <a> <n> <g> <5>         : "𛉳"  U1B273  # NUSHU CHARACTER-1B273
+<Multi_key> <z> <N> <k> <h> <a> <u> <2> <1>         : "𛆄"  U1B184  # NUSHU CHARACTER-1B184
+<Multi_key> <z> <N> <k> <h> <u> <3> <5>             : "𛇰"  U1B1F0  # NUSHU CHARACTER-1B1F0
+<Multi_key> <z> <N> <k> <h> <u> <a> <4> <4>         : "𛆩"  U1B1A9  # NUSHU CHARACTER-1B1A9
+<Multi_key> <z> <N> <k> <h> <u> <o> <e> <2> <1>     : "𛇨"  U1B1E8  # NUSHU CHARACTER-1B1E8
+<Multi_key> <z> <N> <k> <h> <w> <5>                 : "𛊙"  U1B299  # NUSHU CHARACTER-1B299
+<Multi_key> <z> <N> <k> <o> <e> <3> <5>             : "𛊴"  U1B2B4  # NUSHU CHARACTER-1B2B4
+<Multi_key> <z> <N> <k> <o> <e> <4> <4>             : "𛇧"  U1B1E7  # NUSHU CHARACTER-1B1E7
+<Multi_key> <z> <N> <k> <o> <u> <2> <1>             : "𛆅"  U1B185  # NUSHU CHARACTER-1B185
+<Multi_key> <z> <N> <k> <o> <u> <3> <3>             : "𛇿"  U1B1FF  # NUSHU CHARACTER-1B1FF
+<Multi_key> <z> <N> <k> <o> <u> <5>                 : "𛉦"  U1B266  # NUSHU CHARACTER-1B266
+<Multi_key> <z> <N> <k> <u> <2> <1>                 : "𛉘"  U1B258  # NUSHU CHARACTER-1B258
+<Multi_key> <z> <N> <k> <u> <4> <4> <space>         : "𛊿"  U1B2BF  # NUSHU CHARACTER-1B2BF
+<Multi_key> <z> <N> <k> <u> <4> <4> <A>             : "𛋰"  U1B2F0  # NUSHU CHARACTER-1B2F0
+<Multi_key> <z> <N> <k> <u> <5>                     : "𛋸"  U1B2F8  # NUSHU CHARACTER-1B2F8
+<Multi_key> <z> <N> <k> <u> <a> <3> <5>             : "𛈙"  U1B219  # NUSHU CHARACTER-1B219
+<Multi_key> <z> <N> <k> <u> <a> <4> <4>             : "𛈘"  U1B218  # NUSHU CHARACTER-1B218
+<Multi_key> <z> <N> <k> <u> <e> <2> <1>             : "𛉌"  U1B24C  # NUSHU CHARACTER-1B24C
+<Multi_key> <z> <N> <k> <u> <e> <3> <5>             : "𛉨"  U1B268  # NUSHU CHARACTER-1B268
+<Multi_key> <z> <N> <k> <u> <e> <4> <4>             : "𛉊"  U1B24A  # NUSHU CHARACTER-1B24A
+<Multi_key> <z> <N> <k> <u> <o> <w> <4> <4>         : "𛈸"  U1B238  # NUSHU CHARACTER-1B238
+<Multi_key> <z> <N> <k> <u> <w> <5>                 : "𛈅"  U1B205  # NUSHU CHARACTER-1B205
+<Multi_key> <z> <N> <k> <w> <5>                     : "𛇵"  U1B1F5  # NUSHU CHARACTER-1B1F5
+<Multi_key> <z> <N> <l> <a> <1> <3>                 : "𛉄"  U1B244  # NUSHU CHARACTER-1B244
+<Multi_key> <z> <N> <l> <a> <3> <3>                 : "𛇟"  U1B1DF  # NUSHU CHARACTER-1B1DF
+<Multi_key> <z> <N> <l> <a> <4> <4>                 : "𛆍"  U1B18D  # NUSHU CHARACTER-1B18D
+<Multi_key> <z> <N> <l> <a> <i> <3> <5>             : "𛉠"  U1B260  # NUSHU CHARACTER-1B260
+<Multi_key> <z> <N> <l> <a> <i> <4> <2>             : "𛇇"  U1B1C7  # NUSHU CHARACTER-1B1C7
+<Multi_key> <z> <N> <l> <a> <i> <4> <4>             : "𛊚"  U1B29A  # NUSHU CHARACTER-1B29A
+<Multi_key> <z> <N> <l> <a> <n> <g> <3> <3>         : "𛋈"  U1B2C8  # NUSHU CHARACTER-1B2C8
+<Multi_key> <z> <N> <l> <a> <n> <g> <4> <2>         : "𛊥"  U1B2A5  # NUSHU CHARACTER-1B2A5
+<Multi_key> <z> <N> <l> <a> <n> <g> <4> <4>         : "𛉰"  U1B270  # NUSHU CHARACTER-1B270
+<Multi_key> <z> <N> <l> <a> <u> <2> <1> <space>     : "𛇼"  U1B1FC  # NUSHU CHARACTER-1B1FC
+<Multi_key> <z> <N> <l> <a> <u> <2> <1> <A>         : "𛇽"  U1B1FD  # NUSHU CHARACTER-1B1FD
+<Multi_key> <z> <N> <l> <e> <n> <g> <4> <2>         : "𛉹"  U1B279  # NUSHU CHARACTER-1B279
+<Multi_key> <z> <N> <l> <e> <w> <3> <3>             : "𛋝"  U1B2DD  # NUSHU CHARACTER-1B2DD
+<Multi_key> <z> <N> <l> <e> <w> <4> <4>             : "𛈁"  U1B201  # NUSHU CHARACTER-1B201
+<Multi_key> <z> <N> <l> <i> <3> <5>                 : "𛋒"  U1B2D2  # NUSHU CHARACTER-1B2D2
+<Multi_key> <z> <N> <l> <i> <a> <n> <g> <3> <3>     : "𛇖"  U1B1D6  # NUSHU CHARACTER-1B1D6
+<Multi_key> <z> <N> <l> <i> <a> <n> <g> <3> <5>     : "𛆇"  U1B187  # NUSHU CHARACTER-1B187
+<Multi_key> <z> <N> <l> <i> <a> <n> <g> <4> <2>     : "𛉴"  U1B274  # NUSHU CHARACTER-1B274
+<Multi_key> <z> <N> <l> <i> <e> <2> <1>             : "𛆬"  U1B1AC  # NUSHU CHARACTER-1B1AC
+<Multi_key> <z> <N> <l> <i> <e> <4> <2>             : "𛊆"  U1B286  # NUSHU CHARACTER-1B286
+<Multi_key> <z> <N> <l> <i> <o> <n> <g> <1> <3>     : "𛉼"  U1B27C  # NUSHU CHARACTER-1B27C
+<Multi_key> <z> <N> <l> <i> <o> <n> <g> <4> <2>     : "𛉀"  U1B240  # NUSHU CHARACTER-1B240
+<Multi_key> <z> <N> <l> <i> <o> <u> <3> <3>         : "𛆜"  U1B19C  # NUSHU CHARACTER-1B19C
+<Multi_key> <z> <N> <l> <i> <o> <u> <4> <2>         : "𛇋"  U1B1CB  # NUSHU CHARACTER-1B1CB
+<Multi_key> <z> <N> <l> <i> <u> <4> <4> <space>     : "𛅾"  U1B17E  # NUSHU CHARACTER-1B17E
+<Multi_key> <z> <N> <l> <i> <u> <4> <4> <A>         : "𛆽"  U1B1BD  # NUSHU CHARACTER-1B1BD
+<Multi_key> <z> <N> <l> <o> <e> <2> <1>             : "𛊋"  U1B28B  # NUSHU CHARACTER-1B28B
+<Multi_key> <z> <N> <l> <o> <e> <3> <5>             : "𛈞"  U1B21E  # NUSHU CHARACTER-1B21E
+<Multi_key> <z> <N> <l> <o> <e> <4> <2>             : "𛇤"  U1B1E4  # NUSHU CHARACTER-1B1E4
+<Multi_key> <z> <N> <l> <o> <n> <g> <3> <5>         : "𛉻"  U1B27B  # NUSHU CHARACTER-1B27B
+<Multi_key> <z> <N> <l> <o> <u> <3> <3>             : "𛋧"  U1B2E7  # NUSHU CHARACTER-1B2E7
+<Multi_key> <z> <N> <l> <o> <u> <3> <5>             : "𛆛"  U1B19B  # NUSHU CHARACTER-1B19B
+<Multi_key> <z> <N> <l> <o> <u> <4> <2>             : "𛈰"  U1B230  # NUSHU CHARACTER-1B230
+<Multi_key> <z> <N> <l> <u> <2> <1>                 : "𛋗"  U1B2D7  # NUSHU CHARACTER-1B2D7
+<Multi_key> <z> <N> <l> <u> <3> <5>                 : "𛋦"  U1B2E6  # NUSHU CHARACTER-1B2E6
+<Multi_key> <z> <N> <l> <w> <5>                     : "𛋀"  U1B2C0  # NUSHU CHARACTER-1B2C0
+<Multi_key> <z> <N> <m> <a> <5>                     : "𛆋"  U1B18B  # NUSHU CHARACTER-1B18B
+<Multi_key> <z> <N> <m> <a> <i> <3> <3>             : "𛉟"  U1B25F  # NUSHU CHARACTER-1B25F
+<Multi_key> <z> <N> <m> <a> <i> <4> <2> <space>     : "𛇷"  U1B1F7  # NUSHU CHARACTER-1B1F7
+<Multi_key> <z> <N> <m> <a> <i> <4> <2> <A>         : "𛋁"  U1B2C1  # NUSHU CHARACTER-1B2C1
+<Multi_key> <z> <N> <m> <a> <n> <g> <1> <3>         : "𛋪"  U1B2EA  # NUSHU CHARACTER-1B2EA
+<Multi_key> <z> <N> <m> <a> <n> <g> <4> <2>         : "𛇓"  U1B1D3  # NUSHU CHARACTER-1B1D3
+<Multi_key> <z> <N> <m> <a> <u> <3> <3>             : "𛉣"  U1B263  # NUSHU CHARACTER-1B263
+<Multi_key> <z> <N> <m> <e> <n> <g> <3> <3>         : "𛋉"  U1B2C9  # NUSHU CHARACTER-1B2C9
+<Multi_key> <z> <N> <m> <e> <n> <g> <4> <2>         : "𛊬"  U1B2AC  # NUSHU CHARACTER-1B2AC
+<Multi_key> <z> <N> <m> <i> <o> <n> <g> <3> <3>     : "𛈑"  U1B211  # NUSHU CHARACTER-1B211
+<Multi_key> <z> <N> <m> <i> <o> <u> <1> <3>         : "𛈳"  U1B233  # NUSHU CHARACTER-1B233
+<Multi_key> <z> <N> <m> <o> <e> <1> <3>             : "𛊊"  U1B28A  # NUSHU CHARACTER-1B28A
+<Multi_key> <z> <N> <m> <o> <e> <3> <3>             : "𛋯"  U1B2EF  # NUSHU CHARACTER-1B2EF
+<Multi_key> <z> <N> <m> <o> <e> <4> <2>             : "𛋑"  U1B2D1  # NUSHU CHARACTER-1B2D1
+<Multi_key> <z> <N> <m> <u> <1> <3>                 : "𛇀"  U1B1C0  # NUSHU CHARACTER-1B1C0
+<Multi_key> <z> <N> <m> <u> <3> <3>                 : "𛋖"  U1B2D6  # NUSHU CHARACTER-1B2D6
+<Multi_key> <z> <N> <m> <w> <e> <1> <3>             : "𛆳"  U1B1B3  # NUSHU CHARACTER-1B1B3
+<Multi_key> <z> <N> <n> <a> <3> <3>                 : "𛅱"  U1B171  # NUSHU CHARACTER-1B171
+<Multi_key> <z> <N> <n> <e> <n> <g> <3> <3>         : "𛈏"  U1B20F  # NUSHU CHARACTER-1B20F
+<Multi_key> <z> <N> <n> <e> <n> <g> <3> <5>         : "𛉸"  U1B278  # NUSHU CHARACTER-1B278
+<Multi_key> <z> <N> <n> <e> <n> <g> <4> <4>         : "𛆥"  U1B1A5  # NUSHU CHARACTER-1B1A5
+<Multi_key> <z> <N> <n> <g> <1> <3>                 : "𛈕"  U1B215  # NUSHU CHARACTER-1B215
+<Multi_key> <z> <N> <n> <g> <4> <4>                 : "𛊃"  U1B283  # NUSHU CHARACTER-1B283
+<Multi_key> <z> <N> <n> <g> <o> <u> <4> <2>         : "𛊞"  U1B29E  # NUSHU CHARACTER-1B29E
+<Multi_key> <z> <N> <n> <g> <u> <1> <3>             : "𛈻"  U1B23B  # NUSHU CHARACTER-1B23B
+<Multi_key> <z> <N> <n> <g> <u> <o> <w> <1> <3>     : "𛋵"  U1B2F5  # NUSHU CHARACTER-1B2F5
+<Multi_key> <z> <N> <n> <g> <u> <w> <3> <3>         : "𛇒"  U1B1D2  # NUSHU CHARACTER-1B1D2
+<Multi_key> <z> <N> <n> <i> <3> <3>                 : "𛈥"  U1B225  # NUSHU CHARACTER-1B225
+<Multi_key> <z> <N> <n> <i> <e> <3> <3>             : "𛆫"  U1B1AB  # NUSHU CHARACTER-1B1AB
+<Multi_key> <z> <N> <n> <j> <i> <a> <n> <g> <4> <2> : "𛇘"  U1B1D8  # NUSHU CHARACTER-1B1D8
+<Multi_key> <z> <N> <n> <j> <i> <e> <3> <3>         : "𛅺"  U1B17A  # NUSHU CHARACTER-1B17A
+<Multi_key> <z> <N> <n> <j> <i> <e> <4> <2>         : "𛆰"  U1B1B0  # NUSHU CHARACTER-1B1B0
+<Multi_key> <z> <N> <n> <j> <i> <e> <4> <4>         : "𛆯"  U1B1AF  # NUSHU CHARACTER-1B1AF
+<Multi_key> <z> <N> <n> <j> <i> <n> <g> <4> <2>     : "𛈔"  U1B214  # NUSHU CHARACTER-1B214
+<Multi_key> <z> <N> <n> <j> <i> <o> <u> <1> <3>     : "𛊠"  U1B2A0  # NUSHU CHARACTER-1B2A0
+<Multi_key> <z> <N> <n> <j> <i> <o> <u> <3> <3>     : "𛈵"  U1B235  # NUSHU CHARACTER-1B235
+<Multi_key> <z> <N> <n> <j> <i> <u> <3> <3>         : "𛆾"  U1B1BE  # NUSHU CHARACTER-1B1BE
+<Multi_key> <z> <N> <n> <j> <y> <3> <3>             : "𛇃"  U1B1C3  # NUSHU CHARACTER-1B1C3
+<Multi_key> <z> <N> <n> <j> <y> <u> <1> <3>         : "𛆁"  U1B181  # NUSHU CHARACTER-1B181
+<Multi_key> <z> <N> <n> <j> <y> <u> <3> <3>         : "𛉚"  U1B25A  # NUSHU CHARACTER-1B25A
+<Multi_key> <z> <N> <n> <o> <e> <3> <3>             : "𛉈"  U1B248  # NUSHU CHARACTER-1B248
+<Multi_key> <z> <N> <n> <o> <n> <g> <4> <2>         : "𛉺"  U1B27A  # NUSHU CHARACTER-1B27A
+<Multi_key> <z> <N> <n> <o> <n> <g> <4> <4>         : "𛋶"  U1B2F6  # NUSHU CHARACTER-1B2F6
+<Multi_key> <z> <N> <n> <u> <o> <w> <4> <2>         : "𛈷"  U1B237  # NUSHU CHARACTER-1B237
+<Multi_key> <z> <N> <n> <w> <3> <3>                 : "𛇾"  U1B1FE  # NUSHU CHARACTER-1B1FE
+<Multi_key> <z> <N> <o> <e> <4> <4>                 : "𛈡"  U1B221  # NUSHU CHARACTER-1B221
+<Multi_key> <z> <N> <o> <u> <4> <4>                 : "𛉧"  U1B267  # NUSHU CHARACTER-1B267
+<Multi_key> <z> <N> <p> <a> <3> <3>                 : "𛊰"  U1B2B0  # NUSHU CHARACTER-1B2B0
+<Multi_key> <z> <N> <p> <a> <5>                     : "𛇞"  U1B1DE  # NUSHU CHARACTER-1B1DE
+<Multi_key> <z> <N> <p> <a> <i> <3> <5> <space>     : "𛇅"  U1B1C5  # NUSHU CHARACTER-1B1C5
+<Multi_key> <z> <N> <p> <a> <i> <3> <5> <A>         : "𛇆"  U1B1C6  # NUSHU CHARACTER-1B1C6
+<Multi_key> <z> <N> <p> <a> <n> <g> <4> <2>         : "𛋅"  U1B2C5  # NUSHU CHARACTER-1B2C5
+<Multi_key> <z> <N> <p> <a> <n> <g> <4> <4>         : "𛈺"  U1B23A  # NUSHU CHARACTER-1B23A
+<Multi_key> <z> <N> <p> <e> <n> <g> <4> <4>         : "𛇙"  U1B1D9  # NUSHU CHARACTER-1B1D9
+<Multi_key> <z> <N> <p> <h> <a> <i> <3> <5>         : "𛉞"  U1B25E  # NUSHU CHARACTER-1B25E
+<Multi_key> <z> <N> <p> <h> <i> <u> <4> <4>         : "𛅶"  U1B176  # NUSHU CHARACTER-1B176
+<Multi_key> <z> <N> <p> <h> <o> <e> <3> <5>         : "𛈜"  U1B21C  # NUSHU CHARACTER-1B21C
+<Multi_key> <z> <N> <p> <h> <w> <2> <1>             : "𛈭"  U1B22D  # NUSHU CHARACTER-1B22D
+<Multi_key> <z> <N> <p> <i> <3> <3>                 : "𛊎"  U1B28E  # NUSHU CHARACTER-1B28E
+<Multi_key> <z> <N> <p> <i> <o> <n> <g> <1> <3>     : "𛆦"  U1B1A6  # NUSHU CHARACTER-1B1A6
+<Multi_key> <z> <N> <p> <i> <o> <n> <g> <3> <3>     : "𛈐"  U1B210  # NUSHU CHARACTER-1B210
+<Multi_key> <z> <N> <p> <i> <o> <n> <g> <4> <2>     : "𛇛"  U1B1DB  # NUSHU CHARACTER-1B1DB
+<Multi_key> <z> <N> <p> <i> <o> <u> <4> <4>         : "𛈲"  U1B232  # NUSHU CHARACTER-1B232
+<Multi_key> <z> <N> <p> <o> <e> <2> <1>             : "𛇣"  U1B1E3  # NUSHU CHARACTER-1B1E3
+<Multi_key> <z> <N> <p> <o> <e> <4> <2>             : "𛉆"  U1B246  # NUSHU CHARACTER-1B246
+<Multi_key> <z> <N> <p> <o> <e> <5>                 : "𛅴"  U1B174  # NUSHU CHARACTER-1B174
+<Multi_key> <z> <N> <p> <u> <3> <3>                 : "𛉖"  U1B256  # NUSHU CHARACTER-1B256
+<Multi_key> <z> <N> <p> <u> <5>                     : "𛊒"  U1B292  # NUSHU CHARACTER-1B292
+<Multi_key> <z> <N> <p> <w> <1> <3>                 : "𛇲"  U1B1F2  # NUSHU CHARACTER-1B1F2
+<Multi_key> <z> <N> <p> <w> <2> <1>                 : "𛋲"  U1B2F2  # NUSHU CHARACTER-1B2F2
+<Multi_key> <z> <N> <p> <w> <4> <2>                 : "𛊘"  U1B298  # NUSHU CHARACTER-1B298
+<Multi_key> <z> <N> <p> <w> <5>                     : "𛉜"  U1B25C  # NUSHU CHARACTER-1B25C
+<Multi_key> <z> <N> <p> <w> <e> <3> <3>             : "𛇪"  U1B1EA  # NUSHU CHARACTER-1B1EA
+<Multi_key> <z> <N> <p> <w> <e> <3> <5> <space>     : "𛉎"  U1B24E  # NUSHU CHARACTER-1B24E
+<Multi_key> <z> <N> <p> <w> <e> <3> <5> <A>         : "𛊷"  U1B2B7  # NUSHU CHARACTER-1B2B7
+<Multi_key> <z> <N> <p> <w> <e> <5>                 : "𛇫"  U1B1EB  # NUSHU CHARACTER-1B1EB
+<Multi_key> <z> <N> <s> <a> <2> <1>                 : "𛈗"  U1B217  # NUSHU CHARACTER-1B217
+<Multi_key> <z> <N> <s> <a> <3> <5>                 : "𛊅"  U1B285  # NUSHU CHARACTER-1B285
+<Multi_key> <z> <N> <s> <a> <i> <2> <1>             : "𛉡"  U1B261  # NUSHU CHARACTER-1B261
+<Multi_key> <z> <N> <s> <a> <i> <4> <4> <space>     : "𛇹"  U1B1F9  # NUSHU CHARACTER-1B1F9
+<Multi_key> <z> <N> <s> <a> <i> <4> <4> <A>         : "𛇺"  U1B1FA  # NUSHU CHARACTER-1B1FA
+<Multi_key> <z> <N> <s> <a> <i> <4> <4> <B>         : "𛊛"  U1B29B  # NUSHU CHARACTER-1B29B
+<Multi_key> <z> <N> <s> <a> <n> <g> <3> <3>         : "𛆢"  U1B1A2  # NUSHU CHARACTER-1B1A2
+<Multi_key> <z> <N> <s> <a> <n> <g> <4> <4>         : "𛈊"  U1B20A  # NUSHU CHARACTER-1B20A
+<Multi_key> <z> <N> <s> <a> <u> <3> <5>             : "𛊜"  U1B29C  # NUSHU CHARACTER-1B29C
+<Multi_key> <z> <N> <s> <e> <n> <g> <4> <4>         : "𛇚"  U1B1DA  # NUSHU CHARACTER-1B1DA
+<Multi_key> <z> <N> <s> <e> <w> <3> <5>             : "𛈂"  U1B202  # NUSHU CHARACTER-1B202
+<Multi_key> <z> <N> <s> <i> <4> <4>                 : "𛈨"  U1B228  # NUSHU CHARACTER-1B228
+<Multi_key> <z> <N> <s> <i> <a> <n> <g> <3> <5>     : "𛊩"  U1B2A9  # NUSHU CHARACTER-1B2A9
+<Multi_key> <z> <N> <s> <i> <a> <n> <g> <4> <4>     : "𛉵"  U1B275  # NUSHU CHARACTER-1B275
+<Multi_key> <z> <N> <s> <i> <e> <3> <5>             : "𛇠"  U1B1E0  # NUSHU CHARACTER-1B1E0
+<Multi_key> <z> <N> <s> <i> <e> <5> <space>         : "𛊈"  U1B288  # NUSHU CHARACTER-1B288
+<Multi_key> <z> <N> <s> <i> <e> <5> <A>             : "𛊲"  U1B2B2  # NUSHU CHARACTER-1B2B2
+<Multi_key> <z> <N> <s> <i> <o> <n> <g> <2> <1>     : "𛊮"  U1B2AE  # NUSHU CHARACTER-1B2AE
+<Multi_key> <z> <N> <s> <i> <o> <n> <g> <4> <4>     : "𛉾"  U1B27E  # NUSHU CHARACTER-1B27E
+<Multi_key> <z> <N> <s> <i> <o> <u> <2> <1>         : "𛋜"  U1B2DC  # NUSHU CHARACTER-1B2DC
+<Multi_key> <z> <N> <s> <i> <o> <u> <4> <4>         : "𛉪"  U1B26A  # NUSHU CHARACTER-1B26A
+<Multi_key> <z> <N> <s> <i> <u> <3> <5>             : "𛅿"  U1B17F  # NUSHU CHARACTER-1B17F
+<Multi_key> <z> <N> <s> <o> <e> <5>                 : "𛇦"  U1B1E6  # NUSHU CHARACTER-1B1E6
+<Multi_key> <z> <N> <s> <o> <n> <g> <4> <4>         : "𛆊"  U1B18A  # NUSHU CHARACTER-1B18A
+<Multi_key> <z> <N> <s> <u> <o> <w> <4> <4>         : "𛇏"  U1B1CF  # NUSHU CHARACTER-1B1CF
+<Multi_key> <z> <N> <s> <w> <5>                     : "𛇴"  U1B1F4  # NUSHU CHARACTER-1B1F4
+<Multi_key> <z> <N> <s> <w> <e> <1> <3>             : "𛆹"  U1B1B9  # NUSHU CHARACTER-1B1B9
+<Multi_key> <z> <N> <s> <w> <e> <3> <3>             : "𛅵"  U1B175  # NUSHU CHARACTER-1B175
+<Multi_key> <z> <N> <s> <w> <e> <4> <2>             : "𛆸"  U1B1B8  # NUSHU CHARACTER-1B1B8
+<Multi_key> <z> <N> <s> <w> <e> <4> <4>             : "𛊸"  U1B2B8  # NUSHU CHARACTER-1B2B8
+<Multi_key> <z> <N> <t> <a> <n> <g> <1> <3>         : "𛋇"  U1B2C7  # NUSHU CHARACTER-1B2C7
+<Multi_key> <z> <N> <t> <a> <n> <g> <4> <2>         : "𛊤"  U1B2A4  # NUSHU CHARACTER-1B2A4
+<Multi_key> <z> <N> <t> <a> <u> <1> <3>             : "𛋛"  U1B2DB  # NUSHU CHARACTER-1B2DB
+<Multi_key> <z> <N> <t> <c> <h> <i> <2> <1>         : "𛇬"  U1B1EC  # NUSHU CHARACTER-1B1EC
+<Multi_key> <z> <N> <t> <c> <h> <i> <a> <n> <g> <2> <1> : "𛋬"  U1B2EC  # NUSHU CHARACTER-1B2EC
+<Multi_key> <z> <N> <t> <c> <h> <i> <e> <4> <4>     : "𛆮"  U1B1AE  # NUSHU CHARACTER-1B1AE
+<Multi_key> <z> <N> <t> <c> <h> <i> <o> <n> <g> <4> <4> : "𛊯"  U1B2AF  # NUSHU CHARACTER-1B2AF
+<Multi_key> <z> <N> <t> <c> <h> <i> <o> <u> <2> <1> : "𛈴"  U1B234  # NUSHU CHARACTER-1B234
+<Multi_key> <z> <N> <t> <c> <h> <y> <2> <1>         : "𛇂"  U1B1C2  # NUSHU CHARACTER-1B1C2
+<Multi_key> <z> <N> <t> <c> <h> <y> <3> <5>         : "𛉛"  U1B25B  # NUSHU CHARACTER-1B25B
+<Multi_key> <z> <N> <t> <c> <h> <y> <a> <3> <3>     : "𛆪"  U1B1AA  # NUSHU CHARACTER-1B1AA
+<Multi_key> <z> <N> <t> <c> <h> <y> <e> <3> <5>     : "𛈢"  U1B222  # NUSHU CHARACTER-1B222
+<Multi_key> <z> <N> <t> <c> <h> <y> <e> <4> <4>     : "𛊌"  U1B28C  # NUSHU CHARACTER-1B28C
+<Multi_key> <z> <N> <t> <c> <h> <y> <e> <5>         : "𛅼"  U1B17C  # NUSHU CHARACTER-1B17C
+<Multi_key> <z> <N> <t> <c> <h> <y> <n> <2> <1>     : "𛆟"  U1B19F  # NUSHU CHARACTER-1B19F
+<Multi_key> <z> <N> <t> <c> <h> <y> <u> <2> <1>     : "𛈫"  U1B22B  # NUSHU CHARACTER-1B22B
+<Multi_key> <z> <N> <t> <c> <i> <2> <1> <space>     : "𛉓"  U1B253  # NUSHU CHARACTER-1B253
+<Multi_key> <z> <N> <t> <c> <i> <2> <1> <A>         : "𛉔"  U1B254  # NUSHU CHARACTER-1B254
+<Multi_key> <z> <N> <t> <c> <i> <3> <5>             : "𛆺"  U1B1BA  # NUSHU CHARACTER-1B1BA
+<Multi_key> <z> <N> <t> <c> <i> <4> <4>             : "𛋔"  U1B2D4  # NUSHU CHARACTER-1B2D4
+<Multi_key> <z> <N> <t> <c> <i> <5>                 : "𛊐"  U1B290  # NUSHU CHARACTER-1B290
+<Multi_key> <z> <N> <t> <c> <i> <a> <n> <g> <1> <3> : "𛊪"  U1B2AA  # NUSHU CHARACTER-1B2AA
+<Multi_key> <z> <N> <t> <c> <i> <a> <n> <g> <3> <3> : "𛋫"  U1B2EB  # NUSHU CHARACTER-1B2EB
+<Multi_key> <z> <N> <t> <c> <i> <a> <n> <g> <3> <5> : "𛇗"  U1B1D7  # NUSHU CHARACTER-1B1D7
+<Multi_key> <z> <N> <t> <c> <i> <a> <n> <g> <4> <4> : "𛈌"  U1B20C  # NUSHU CHARACTER-1B20C
+<Multi_key> <z> <N> <t> <c> <i> <e> <3> <5>         : "𛇡"  U1B1E1  # NUSHU CHARACTER-1B1E1
+<Multi_key> <z> <N> <t> <c> <i> <e> <4> <4>         : "𛆭"  U1B1AD  # NUSHU CHARACTER-1B1AD
+<Multi_key> <z> <N> <t> <c> <i> <n> <g> <2> <1>     : "𛇝"  U1B1DD  # NUSHU CHARACTER-1B1DD
+<Multi_key> <z> <N> <t> <c> <i> <n> <g> <4> <4> <space> : "𛉿"  U1B27F  # NUSHU CHARACTER-1B27F
+<Multi_key> <z> <N> <t> <c> <i> <n> <g> <4> <4> <A> : "𛊀"  U1B280  # NUSHU CHARACTER-1B280
+<Multi_key> <z> <N> <t> <c> <i> <o> <n> <g> <4> <4> : "𛋭"  U1B2ED  # NUSHU CHARACTER-1B2ED
+<Multi_key> <z> <N> <t> <c> <i> <o> <u> <3> <5>     : "𛆆"  U1B186  # NUSHU CHARACTER-1B186
+<Multi_key> <z> <N> <t> <c> <i> <o> <u> <4> <4>     : "𛆝"  U1B19D  # NUSHU CHARACTER-1B19D
+<Multi_key> <z> <N> <t> <c> <i> <o> <u> <5>         : "𛉫"  U1B26B  # NUSHU CHARACTER-1B26B
+<Multi_key> <z> <N> <t> <c> <i> <u> <4> <2>         : "𛊻"  U1B2BB  # NUSHU CHARACTER-1B2BB
+<Multi_key> <z> <N> <t> <c> <y> <1> <3>             : "𛊖"  U1B296  # NUSHU CHARACTER-1B296
+<Multi_key> <z> <N> <t> <c> <y> <e> <2> <1>         : "𛋺"  U1B2FA  # NUSHU CHARACTER-1B2FA
+<Multi_key> <z> <N> <t> <c> <y> <e> <4> <2>         : "𛊶"  U1B2B6  # NUSHU CHARACTER-1B2B6
+<Multi_key> <z> <N> <t> <c> <y> <e> <4> <4>         : "𛊵"  U1B2B5  # NUSHU CHARACTER-1B2B5
+<Multi_key> <z> <N> <t> <c> <y> <n> <4> <2>         : "𛈆"  U1B206  # NUSHU CHARACTER-1B206
+<Multi_key> <z> <N> <t> <c> <y> <u> <2> <1>         : "𛆘"  U1B198  # NUSHU CHARACTER-1B198
+<Multi_key> <z> <N> <t> <c> <y> <u> <3> <5>         : "𛆗"  U1B197  # NUSHU CHARACTER-1B197
+<Multi_key> <z> <N> <t> <c> <y> <u> <4> <4>         : "𛉙"  U1B259  # NUSHU CHARACTER-1B259
+<Multi_key> <z> <N> <t> <e> <n> <g> <4> <2> <space> : "𛈎"  U1B20E  # NUSHU CHARACTER-1B20E
+<Multi_key> <z> <N> <t> <e> <n> <g> <4> <2> <A>     : "𛋊"  U1B2CA  # NUSHU CHARACTER-1B2CA
+<Multi_key> <z> <N> <t> <h> <a> <i> <4> <4>         : "𛇸"  U1B1F8  # NUSHU CHARACTER-1B1F8
+<Multi_key> <z> <N> <t> <h> <a> <n> <g> <4> <4>     : "𛇔"  U1B1D4  # NUSHU CHARACTER-1B1D4
+<Multi_key> <z> <N> <t> <h> <a> <u> <3> <5>         : "𛇻"  U1B1FB  # NUSHU CHARACTER-1B1FB
+<Multi_key> <z> <N> <t> <h> <e> <n> <g> <4> <4>     : "𛆤"  U1B1A4  # NUSHU CHARACTER-1B1A4
+<Multi_key> <z> <N> <t> <h> <i> <5>                 : "𛉐"  U1B250  # NUSHU CHARACTER-1B250
+<Multi_key> <z> <N> <t> <h> <o> <e> <2> <1>         : "𛆎"  U1B18E  # NUSHU CHARACTER-1B18E
+<Multi_key> <z> <N> <t> <h> <o> <e> <4> <4>         : "𛉇"  U1B247  # NUSHU CHARACTER-1B247
+<Multi_key> <z> <N> <t> <h> <o> <u> <2> <1>         : "𛋃"  U1B2C3  # NUSHU CHARACTER-1B2C3
+<Multi_key> <z> <N> <t> <h> <u> <3> <5> <space>     : "𛆀"  U1B180  # NUSHU CHARACTER-1B180
+<Multi_key> <z> <N> <t> <h> <u> <3> <5> <A>         : "𛊔"  U1B294  # NUSHU CHARACTER-1B294
+<Multi_key> <z> <N> <t> <h> <u> <o> <w> <2> <1>     : "𛈃"  U1B203  # NUSHU CHARACTER-1B203
+<Multi_key> <z> <N> <t> <h> <u> <o> <w> <4> <4>     : "𛉭"  U1B26D  # NUSHU CHARACTER-1B26D
+<Multi_key> <z> <N> <t> <i> <1> <3>                 : "𛆒"  U1B192  # NUSHU CHARACTER-1B192
+<Multi_key> <z> <N> <t> <i> <4> <2>                 : "𛊹"  U1B2B9  # NUSHU CHARACTER-1B2B9
+<Multi_key> <z> <N> <t> <i> <4> <4>                 : "𛊏"  U1B28F  # NUSHU CHARACTER-1B28F
+<Multi_key> <z> <N> <t> <i> <e> <4> <2>             : "𛅹"  U1B179  # NUSHU CHARACTER-1B179
+<Multi_key> <z> <N> <t> <o> <e> <3> <3>             : "𛅻"  U1B17B  # NUSHU CHARACTER-1B17B
+<Multi_key> <z> <N> <t> <o> <n> <g> <1> <3>         : "𛋠"  U1B2E0  # NUSHU CHARACTER-1B2E0
+<Multi_key> <z> <N> <t> <o> <u> <4> <2>             : "𛇊"  U1B1CA  # NUSHU CHARACTER-1B1CA
+<Multi_key> <z> <N> <t> <s> <a> <3> <3>             : "𛋎"  U1B2CE  # NUSHU CHARACTER-1B2CE
+<Multi_key> <z> <N> <t> <s> <a> <3> <5>             : "𛈖"  U1B216  # NUSHU CHARACTER-1B216
+<Multi_key> <z> <N> <t> <s> <a> <i> <1> <3>         : "𛈯"  U1B22F  # NUSHU CHARACTER-1B22F
+<Multi_key> <z> <N> <t> <s> <a> <n> <g> <4> <4>     : "𛈉"  U1B209  # NUSHU CHARACTER-1B209
+<Multi_key> <z> <N> <t> <s> <e> <n> <g> <4> <2>     : "𛋋"  U1B2CB  # NUSHU CHARACTER-1B2CB
+<Multi_key> <z> <N> <t> <s> <e> <w> <2> <1>         : "𛇎"  U1B1CE  # NUSHU CHARACTER-1B1CE
+<Multi_key> <z> <N> <t> <s> <e> <w> <3> <5>         : "𛇍"  U1B1CD  # NUSHU CHARACTER-1B1CD
+<Multi_key> <z> <N> <t> <s> <h> <a> <5>             : "𛅲"  U1B172  # NUSHU CHARACTER-1B172
+<Multi_key> <z> <N> <t> <s> <h> <a> <i> <4> <4>     : "𛋴"  U1B2F4  # NUSHU CHARACTER-1B2F4
+<Multi_key> <z> <N> <t> <s> <h> <a> <n> <g> <4> <4> : "𛉱"  U1B271  # NUSHU CHARACTER-1B271
+<Multi_key> <z> <N> <t> <s> <h> <a> <u> <3> <5>     : "𛉤"  U1B264  # NUSHU CHARACTER-1B264
+<Multi_key> <z> <N> <t> <s> <h> <e> <n> <g> <4> <4> : "𛆉"  U1B189  # NUSHU CHARACTER-1B189
+<Multi_key> <z> <N> <t> <s> <h> <e> <w> <5>         : "𛋞"  U1B2DE  # NUSHU CHARACTER-1B2DE
+<Multi_key> <z> <N> <t> <s> <h> <i> <5> <space>     : "𛈦"  U1B226  # NUSHU CHARACTER-1B226
+<Multi_key> <z> <N> <t> <s> <h> <i> <5> <A>         : "𛈧"  U1B227  # NUSHU CHARACTER-1B227
+<Multi_key> <z> <N> <t> <s> <h> <i> <e> <2> <1>     : "𛊇"  U1B287  # NUSHU CHARACTER-1B287
+<Multi_key> <z> <N> <t> <s> <h> <i> <e> <5>         : "𛊱"  U1B2B1  # NUSHU CHARACTER-1B2B1
+<Multi_key> <z> <N> <t> <s> <h> <i> <o> <n> <g> <2> <1> : "𛇜"  U1B1DC  # NUSHU CHARACTER-1B1DC
+<Multi_key> <z> <N> <t> <s> <h> <i> <o> <n> <g> <3> <5> : "𛉁"  U1B241  # NUSHU CHARACTER-1B241
+<Multi_key> <z> <N> <t> <s> <h> <i> <o> <u> <4> <4> : "𛉩"  U1B269  # NUSHU CHARACTER-1B269
+<Multi_key> <z> <N> <t> <s> <h> <i> <u> <2> <1>     : "𛉕"  U1B255  # NUSHU CHARACTER-1B255
+<Multi_key> <z> <N> <t> <s> <h> <o> <e> <2> <1>     : "𛈠"  U1B220  # NUSHU CHARACTER-1B220
+<Multi_key> <z> <N> <t> <s> <h> <o> <e> <4> <4> <space> : "𛈟"  U1B21F  # NUSHU CHARACTER-1B21F
+<Multi_key> <z> <N> <t> <s> <h> <o> <e> <4> <4> <A> : "𛉉"  U1B249  # NUSHU CHARACTER-1B249
+<Multi_key> <z> <N> <t> <s> <h> <u> <3> <5>         : "𛊾"  U1B2BE  # NUSHU CHARACTER-1B2BE
+<Multi_key> <z> <N> <t> <s> <i> <4> <2> <space>     : "𛉑"  U1B251  # NUSHU CHARACTER-1B251
+<Multi_key> <z> <N> <t> <s> <i> <4> <2> <A>         : "𛉒"  U1B252  # NUSHU CHARACTER-1B252
+<Multi_key> <z> <N> <t> <s> <i> <5>                 : "𛋓"  U1B2D3  # NUSHU CHARACTER-1B2D3
+<Multi_key> <z> <N> <t> <s> <i> <a> <n> <g> <4> <2> <space> : "𛈽"  U1B23D  # NUSHU CHARACTER-1B23D
+<Multi_key> <z> <N> <t> <s> <i> <a> <n> <g> <4> <2> <A> : "𛋳"  U1B2F3  # NUSHU CHARACTER-1B2F3
+<Multi_key> <z> <N> <t> <s> <i> <a> <n> <g> <4> <4> : "𛈼"  U1B23C  # NUSHU CHARACTER-1B23C
+<Multi_key> <z> <N> <t> <s> <i> <e> <2> <1>         : "𛋏"  U1B2CF  # NUSHU CHARACTER-1B2CF
+<Multi_key> <z> <N> <t> <s> <i> <e> <3> <3>         : "𛋮"  U1B2EE  # NUSHU CHARACTER-1B2EE
+<Multi_key> <z> <N> <t> <s> <i> <o> <n> <g> <1> <3> : "𛉽"  U1B27D  # NUSHU CHARACTER-1B27D
+<Multi_key> <z> <N> <t> <s> <i> <o> <n> <g> <4> <2> : "𛊭"  U1B2AD  # NUSHU CHARACTER-1B2AD
+<Multi_key> <z> <N> <t> <s> <i> <o> <u> <3> <3> <space> : "𛉋"  U1B24B  # NUSHU CHARACTER-1B24B
+<Multi_key> <z> <N> <t> <s> <i> <o> <u> <3> <3> <A> : "𛊟"  U1B29F  # NUSHU CHARACTER-1B29F
+<Multi_key> <z> <N> <t> <s> <i> <u> <3> <3>         : "𛇭"  U1B1ED  # NUSHU CHARACTER-1B1ED
+<Multi_key> <z> <N> <t> <s> <i> <u> <4> <4>         : "𛊑"  U1B291  # NUSHU CHARACTER-1B291
+<Multi_key> <z> <N> <t> <s> <o> <e> <1> <3>         : "𛇥"  U1B1E5  # NUSHU CHARACTER-1B1E5
+<Multi_key> <z> <N> <t> <s> <o> <e> <4> <2>         : "𛆏"  U1B18F  # NUSHU CHARACTER-1B18F
+<Multi_key> <z> <N> <t> <s> <o> <e> <4> <4>         : "𛊳"  U1B2B3  # NUSHU CHARACTER-1B2B3
+<Multi_key> <z> <N> <t> <s> <o> <u> <4> <2> <space> : "𛊝"  U1B29D  # NUSHU CHARACTER-1B29D
+<Multi_key> <z> <N> <t> <s> <o> <u> <4> <2> <A>     : "𛋨"  U1B2E8  # NUSHU CHARACTER-1B2E8
+<Multi_key> <z> <N> <t> <s> <o> <u> <5>             : "𛈱"  U1B231  # NUSHU CHARACTER-1B231
+<Multi_key> <z> <N> <t> <s> <u> <3> <5>             : "𛊽"  U1B2BD  # NUSHU CHARACTER-1B2BD
+<Multi_key> <z> <N> <t> <s> <u> <4> <2>             : "𛉗"  U1B257  # NUSHU CHARACTER-1B257
+<Multi_key> <z> <N> <t> <s> <u> <o> <w> <4> <4>     : "𛋩"  U1B2E9  # NUSHU CHARACTER-1B2E9
+<Multi_key> <z> <N> <t> <s> <w> <e> <2> <1>         : "𛋣"  U1B2E3  # NUSHU CHARACTER-1B2E3
+<Multi_key> <z> <N> <t> <s> <w> <e> <3> <3>         : "𛈤"  U1B224  # NUSHU CHARACTER-1B224
+<Multi_key> <z> <N> <t> <s> <w> <e> <3> <5>         : "𛆑"  U1B191  # NUSHU CHARACTER-1B191
+<Multi_key> <z> <N> <t> <s> <w> <e> <4> <4>         : "𛆷"  U1B1B7  # NUSHU CHARACTER-1B1B7
+<Multi_key> <z> <N> <t> <u> <3> <3>                 : "𛋥"  U1B2E5  # NUSHU CHARACTER-1B2E5
+<Multi_key> <z> <N> <t> <w> <e> <3> <3>             : "𛆶"  U1B1B6  # NUSHU CHARACTER-1B1B6
+<Multi_key> <z> <N> <u> <5>                         : "𛅷"  U1B177  # NUSHU CHARACTER-1B177
+<Multi_key> <z> <N> <u> <o> <w> <3> <3>             : "𛈄"  U1B204  # NUSHU CHARACTER-1B204
+<Multi_key> <z> <N> <v> <a> <3> <3>                 : "𛆨"  U1B1A8  # NUSHU CHARACTER-1B1A8
+<Multi_key> <z> <N> <v> <a> <4> <2>                 : "𛊄"  U1B284  # NUSHU CHARACTER-1B284
+<Multi_key> <z> <N> <v> <a> <i> <4> <2>             : "𛆂"  U1B182  # NUSHU CHARACTER-1B182
+<Multi_key> <z> <N> <v> <a> <n> <g> <3> <3>         : "𛈈"  U1B208  # NUSHU CHARACTER-1B208
+<Multi_key> <z> <N> <v> <a> <n> <g> <4> <2>         : "𛆡"  U1B1A1  # NUSHU CHARACTER-1B1A1
+<Multi_key> <z> <N> <v> <a> <n> <g> <5>             : "𛉯"  U1B26F  # NUSHU CHARACTER-1B26F
+<Multi_key> <z> <N> <v> <o> <e> <5>                 : "𛋢"  U1B2E2  # NUSHU CHARACTER-1B2E2
+<Multi_key> <z> <N> <v> <u> <4> <2>                 : "𛇯"  U1B1EF  # NUSHU CHARACTER-1B1EF
+<Multi_key> <z> <N> <v> <w> <e> <3> <3>             : "𛆴"  U1B1B4  # NUSHU CHARACTER-1B1B4
+<Multi_key> <z> <N> <v> <w> <e> <3> <5>             : "𛉏"  U1B24F  # NUSHU CHARACTER-1B24F
+<Multi_key> <z> <N> <v> <w> <e> <5>                 : "𛆵"  U1B1B5  # NUSHU CHARACTER-1B1B5
+<Multi_key> <z> <N> <y> <4> <2>                     : "𛇄"  U1B1C4  # NUSHU CHARACTER-1B1C4
+<Multi_key> <z> <N> <y> <e> <2> <1>                 : "𛇩"  U1B1E9  # NUSHU CHARACTER-1B1E9
+<Multi_key> <z> <N> <y> <e> <4> <2>                 : "𛉍"  U1B24D  # NUSHU CHARACTER-1B24D
+<Multi_key> <z> <N> <y> <n> <1> <3>                 : "𛋟"  U1B2DF  # NUSHU CHARACTER-1B2DF
+<Multi_key> <z> <N> <y> <n> <3> <5>                 : "𛈇"  U1B207  # NUSHU CHARACTER-1B207
+<Multi_key> <z> <N> <y> <n> <4> <4>                 : "𛊣"  U1B2A3  # NUSHU CHARACTER-1B2A3
+<Multi_key> <z> <N> <y> <u> <4> <4>                 : "𛇁"  U1B1C1  # NUSHU CHARACTER-1B1C1
 
 # (p = Pollard/Miao)
 
@@ -26315,6 +26735,7 @@ include "Logograms"
 <Multi_key> <Multi_key> <s> <u> <p> <Multi_key> <s> <u> <p> : "⫖"  U2AD6  # SUPERSET ABOVE SUPERSET
 
 <Multi_key> <a> <l> <c> <o> <h> : "C₂H₅OH"     # ETHANOL (ALCOHOL)
+<Multi_key> <b> <o> <o> <z> <e> : "C₂H₅OH"     # ETHANOL (BOOZE) (conflicts with ŏ, use uo) (use wine for 🍷, bubbly for 🍾, beer for 🍺, cheers for 🍻, etc)
 <Multi_key> <c> <a> <f> <f> <e> : "C₈H₁₀N₄O₂"  # CAFFEINE (conflicts with ă, use ua)
 <Multi_key> <m> <o> <r> <p> <h> : "C₁₇H₁₉NO₃"  # MORPHINE
 <Multi_key> <s> <p> <i> <c> <e> : "C₁₈H₂₇NO₃"  # CAPSAICIN (SPICE) (use spicy for 🌶️)
@@ -28237,7 +28658,6 @@ include "Logograms"
 ################
 
 # Pseudo-convention: directed sprites often replace the last letter with a direction to avoid conflict
-
 
 # Text-presentation dingbats and pictograms
 
