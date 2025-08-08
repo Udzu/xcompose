@@ -3984,6 +3984,18 @@ include "%L"
 <Multi_key> <a> <semicolon> <greater> <u> <Return> : "ؙ"  U0619  # ARABIC SMALL DAMMA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <greater> <i> <Return> : "ؚ"  U061A  # ARABIC SMALL KASRA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <greater> <underscore> <i> <Return> : "ؚ"  U061A  # ARABIC SMALL KASRA (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <asciitilde> <a> <Return> : "ࣤ"  U08E4  # ARABIC CURLY FATHA (conflicts with ą)
+<Multi_key> <a> <semicolon> <asciitilde> <u> <Return> : "ࣥ"  U08E5  # ARABIC CURLY DAMMA (conflicts with ą)
+<Multi_key> <a> <semicolon> <asciitilde> <i> <Return> : "ࣦ"  U08E6  # ARABIC CURLY KASRA (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <asciitilde> <i> <Return> : "ࣦ"  U08E6  # ARABIC CURLY KASRA (conflicts with ą)
+<Multi_key> <a> <semicolon> <asciitilde> <a> <n> <Return> : "ࣧ"  U08E7  # ARABIC CURLY FATHATAN (conflicts with ą)
+<Multi_key> <a> <semicolon> <asciitilde> <u> <n> <Return> : "ࣨ"  U08E8  # ARABIC CURLY DAMMATAN (conflicts with ą)
+<Multi_key> <a> <semicolon> <asciitilde> <i> <n> <Return> : "ࣩ"  U08E9  # ARABIC CURLY KASRATAN (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <asciitilde> <i> <n> <Return> : "ࣩ"  U08E9  # ARABIC CURLY KASRATAN (conflicts with ą)
+<Multi_key> <a> <semicolon> <space> <a> <n> <Return>  : "ࣰ"  U08F0  # ARABIC OPEN FATHATAN (conflicts with ą)
+<Multi_key> <a> <semicolon> <space> <u> <n> <Return>  : "ࣱ"  U08F1  # ARABIC OPEN DAMMATAN (conflicts with ą)
+<Multi_key> <a> <semicolon> <space> <i> <n> <Return>  : "ࣲ"  U08F2  # ARABIC OPEN KASRATAN (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <space> <i> <n> <Return> : "ࣲ"  U08F2  # ARABIC OPEN KASRATAN (conflicts with ą)
 
 <Multi_key> <a> <semicolon> <a> <space>               : "ﹶ"  UFE76  # ARABIC FATHA ISOLATED FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <a> <period>              : "ﹷ"  UFE77  # ARABIC FATHA MEDIAL FORM (conflicts with ą)
@@ -4013,6 +4025,38 @@ include "%L"
 <Multi_key> <a> <semicolon> <w> <a> <m>               : "ﳲ"  UFCF2  # ARABIC LIGATURE SHADDA WITH FATHA MEDIAL FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <w> <u> <m>               : "ﳳ"  UFCF3  # ARABIC LIGATURE SHADDA WITH DAMMA MEDIAL FORM (conflicts with ą)
 <Multi_key> <a> <semicolon> <w> <i> <m>               : "ﳴ"  UFCF4  # ARABIC LIGATURE SHADDA WITH KASRA MEDIAL FORM (conflicts with ą)
+
+<Multi_key> <a> <semicolon> <bar> <period> <Return>   : "࣪"  U08EA  # ARABIC TONE ONE DOT ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <bar> <quotedbl> <Return> : "࣫"  U08EB  # ARABIC TONE TWO DOTS ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <bar> <a> <Return>        : "࣬"  U08EC  # ARABIC TONE LOOP ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <bar> <underscore> <period> <Return>   : "࣭"  U08ED  # ARABIC TONE ONE DOT BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <bar> <underscore> <quotedbl> <Return> : "࣮"  U08EE  # ARABIC TONE TWO DOTS BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <bar> <underscore> <a> <Return>        : "࣯"  U08EF  # ARABIC TONE LOOP BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <less> <Return> : "ࣷ"  U08F7  # ARABIC LEFT ARROWHEAD ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <greater> <Return> : "ࣸ"  U08F8  # ARABIC RIGHT ARROWHEAD ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <less> <Return> : "ࣹ"  U08F9  # ARABIC LEFT ARROWHEAD BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <greater> <Return> : "ࣺ"  U08FA  # ARABIC RIGHT ARROWHEAD BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <greater> <greater> <Return> : "ࣻ"  U08FB  # ARABIC DOUBLE RIGHT ARROWHEAD ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <period> <greater> <greater> <Return> : "ࣼ"  U08FC  # ARABIC DOUBLE RIGHT ARROWHEAD ABOVE WITH DOT (conflicts with ą)
+<Multi_key> <a> <semicolon> <period> <greater> <Return> : "ࣽ"  U08FD  # ARABIC RIGHT ARROWHEAD ABOVE WITH DOT (conflicts with ą)
+
+<Multi_key> <a> <semicolon> <period> <space>          : "﮲"  UFBB2  # ARABIC SYMBOL DOT ABOVE (conflicts with ą) (for ۔ use a;..)
+<Multi_key> <a> <semicolon> <underscore> <period> <space> : "﮳"  UFBB3  # ARABIC SYMBOL DOT BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <quotedbl> <space>        : "﮴"  UFBB4  # ARABIC SYMBOL TWO DOTS ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <quotedbl> <space> : "﮵"  UFBB5  # ARABIC SYMBOL TWO DOTS BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <period> <quotedbl> <space> : "﮶"  UFBB6  # ARABIC SYMBOL THREE DOTS ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <period> <quotedbl> <space> : "﮷"  UFBB7  # ARABIC SYMBOL THREE DOTS BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <quotedbl> <period> <space> : "﮸"  UFBB8  # ARABIC SYMBOL THREE DOTS POINTING DOWNWARDS ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <quotedbl> <period> <space> : "﮹"  UFBB9  # ARABIC SYMBOL THREE DOTS POINTING DOWNWARDS BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <quotedbl> <quotedbl> <space> : "﮺"  UFBBA  # ARABIC SYMBOL FOUR DOTS ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <quotedbl> <quotedbl> <space> : "﮻"  UFBBB  # ARABIC SYMBOL FOUR DOTS BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <bar> <bar> <space> : "﮼"  UFBBC  # ARABIC SYMBOL DOUBLE VERTICAL BAR BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <colon> <space>           : "﮽"  UFBBD  # ARABIC SYMBOL TWO DOTS VERTICALLY ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <colon> <space> : "﮾"  UFBBE  # ARABIC SYMBOL TWO DOTS VERTICALLY BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <o> <o> <space>               : "﮿"  UFBBF  # ARABIC SYMBOL RING (conflicts with ą)
+<Multi_key> <a> <semicolon> <t> <space>               : "﯀"  UFBC0  # ARABIC SYMBOL SMALL TAH ABOVE (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <t> <space>  : "﯁"  UFBC1  # ARABIC SYMBOL SMALL TAH BELOW (conflicts with ą)
+<Multi_key> <a> <semicolon> <6> <space>               : "﯂"  UFBC2  # ARABIC SYMBOL WASLA ABOVE (conflicts with ą)
 
 # additional letters (represented semantically)
 
@@ -4265,6 +4309,8 @@ include "%L"
 <Multi_key> <a> <x> <period> <C>         : "ڿ"  U06BF  # ARABIC LETTER TCHEH WITH DOT ABOVE
 <Multi_key> <a> <x> <v> <C>              : "ࣁ"  U08C1  # ARABIC LETTER TCHEH WITH SMALL V
 
+<Multi_key> <a> <x> <u> <2> <u>          : "ٷ"  U0677  # ARABIC LETTER U WITH HAMZA ABOVE (not ideal)
+
 # superscripts
 
 <Multi_key> <a> <c> <asciicircum> <asciicircum> <a> <Return> : "ٰ"  U0670  # ARABIC LETTER SUPERSCRIPT ALEF
@@ -4327,7 +4373,7 @@ include "%L"
 
 # punctuation
 
-<Multi_key> <a> <semicolon> <period>    : "۔" U06D4    # ARABIC FULL STOP (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <period> <period> : "۔" U06D4    # ARABIC FULL STOP (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <comma>     : "،" U060C    # ARABIC COMMA (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <semicolon> : "؛" U061B    # ARABIC SEMICOLON (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <question>  : "؟" U061F    # ARABIC QUESTION MARK (conflicts with ą, use ,a)
@@ -4396,6 +4442,10 @@ include "%L"
 <Multi_key> <a> <numbersign> <r> <1> <slash> <3> : "𐹽"  U10E7D  # RUMI FRACTION ONE THIRD
 <Multi_key> <a> <numbersign> <r> <2> <slash> <3> : "𐹾"  U10E7E  # RUMI FRACTION TWO THIRDS
 
+<Multi_key> <a> <numbersign> <period> : "٫"  U066B  # ARABIC DECIMAL SEPARATOR
+<Multi_key> <a> <numbersign> <comma> : "٬"  U066C  # ARABIC THOUSANDS SEPARATOR
+<Multi_key> <a> <numbersign> <t> <h> : "؍"  U060D  # ARABIC DATE SEPARATOR
+
 <Multi_key> <a> <numbersign> <Return> : "؀"  U0600  # ARABIC NUMBER SIGN
 <Multi_key> <a> <numbersign> <asciicircum> <Return> : "؅"  U0605  # ARABIC NUMBER MARK ABOVE
 <Multi_key> <a> <numbersign> <p> <Return> : "؃"  U0603  # ARABIC SIGN SAFHA
@@ -4404,6 +4454,11 @@ include "%L"
 <Multi_key> <a> <numbersign> <y> <e> <a> <r> <Return> : "؁"  U0601  # ARABIC SIGN SANAH
 <Multi_key> <a> <numbersign> <s> <Return> : "؄"  U0604  # ARABIC SIGN SAMVAT
 <Multi_key> <a> <numbersign> <s> <h> <a> <k> <a> <Return> : "؄"  U0604  # ARABIC SIGN SAMVAT
+<Multi_key> <a> <numbersign> <E> <G> <P> <Return> : "࢐"  U0890  # ARABIC POUND MARK ABOVE
+<Multi_key> <a> <numbersign> <P> <Return> : "࢐"  U0890  # ARABIC POUND MARK ABOVE
+<Multi_key> <a> <numbersign> <sterling> <Return> : "࢑"  U0891  # ARABIC PIASTRE MARK ABOVE
+<Multi_key> <a> <numbersign> <P> <T> <Return> : "࢑"  U0891  # ARABIC PIASTRE MARK ABOVE
+<Multi_key> <a> <numbersign> <q> <Return> : "࢑"  U0891  # ARABIC PIASTRE MARK ABOVE (QIRSH)
 
 <Multi_key> <a> <numbersign> <l> <i> <m> : "𞻱"  U1EEF1  # ARABIC MATHEMATICAL OPERATOR HAH WITH DAL
 <Multi_key> <a> <numbersign> <r> <a> <d> : "؈"  U0608  # ARABIC RAY
@@ -6876,6 +6931,52 @@ include "%L"
 <Multi_key> <b> <c> <9> <0> : "𑁣" U11063   # BRAHMI NUMBER NINETY
 <Multi_key> <b> <c> <1> <0> <0> <space> : "𑁤" U11064   # BRAHMI NUMBER ONE HUNDRED
 <Multi_key> <b> <c> <1> <0> <0> <0> : "𑁥" U11065   # BRAHMI NUMBER ONE THOUSAND
+
+# (; = Vedic symbols)
+
+<Multi_key> <b> <semicolon> <asciicircum> <Return> : "᳐"  U1CD0  # VEDIC TONE KARSHANA
+<Multi_key> <b> <semicolon> <asciicircum> <bar> <Return> : "᳑"  U1CD1  # VEDIC TONE SHARA
+<Multi_key> <b> <semicolon> <minus> <Return> : "᳒"  U1CD2  # VEDIC TONE PRENKHA
+<Multi_key> <b> <semicolon> <quotedbl> <space> : "᳓"  U1CD3  # VEDIC SIGN NIHSHVASA
+<Multi_key> <b> <semicolon> <Multi_key> <minus> <Return> : "᳔"  U1CD4  # VEDIC SIGN YAJURVEDIC MIDLINE SVARITA
+<Multi_key> <b> <semicolon> <underscore> <w> <Return> : "᳕"  U1CD5  # VEDIC TONE YAJURVEDIC AGGRAVATED INDEPENDENT SVARITA
+<Multi_key> <b> <semicolon> <underscore> <L> <Return> : "᳖"  U1CD6  # VEDIC TONE YAJURVEDIC INDEPENDENT SVARITA
+<Multi_key> <b> <semicolon> <underscore> <c> <Return> : "᳗"  U1CD7  # VEDIC TONE YAJURVEDIC KATHAKA INDEPENDENT SVARITA
+<Multi_key> <b> <semicolon> <underscore> <u> <Return> : "᳘"  U1CD8  # VEDIC TONE CANDRA BELOW
+<Multi_key> <b> <semicolon> <underscore> <asciicircum> <Return> : "᳙"  U1CD9  # VEDIC TONE YAJURVEDIC KATHAKA INDEPENDENT SVARITA SCHROEDER
+<Multi_key> <b> <semicolon> <bar> <bar> <Return> : "᳚"  U1CDA  # VEDIC TONE DOUBLE SVARITA
+<Multi_key> <b> <semicolon> <bar> <bar> <bar> <Return> : "᳛"  U1CDB  # VEDIC TONE TRIPLE SVARITA
+<Multi_key> <b> <semicolon> <underscore> <bar> <Return> : "᳜"  U1CDC  # VEDIC TONE KATHAKA ANUDATTA
+<Multi_key> <b> <semicolon> <underscore> <period> <Return> : "᳝"  U1CDD  # VEDIC TONE DOT BELOW
+<Multi_key> <b> <semicolon> <underscore> <period> <period> <Return> : "᳞"  U1CDE  # VEDIC TONE TWO DOTS BELOW
+<Multi_key> <b> <semicolon> <underscore> <period> <period> <period> <Return> : "᳟"  U1CDF  # VEDIC TONE THREE DOTS BELOW
+<Multi_key> <b> <semicolon> <c> <Return> : "᳠"  U1CE0  # VEDIC TONE RIGVEDIC KASHMIRI INDEPENDENT SVARITA
+<Multi_key> <b> <semicolon> <S> <Return> : "᳡"  U1CE1  # VEDIC TONE ATHARVAVEDIC INDEPENDENT SVARITA
+<Multi_key> <b> <semicolon> <minus> <minus> <Return> : "᳢"  U1CE2  # VEDIC SIGN VISARGA SVARITA
+<Multi_key> <b> <semicolon> <asciicircum> <greater> <Return> : "᳣"  U1CE3  # VEDIC SIGN VISARGA UDATTA
+<Multi_key> <b> <semicolon> <asciicircum> <less> <Return> : "᳤"  U1CE4  # VEDIC SIGN REVERSED VISARGA UDATTA
+<Multi_key> <b> <semicolon> <underscore> <less> <Return> : "᳥"  U1CE5  # VEDIC SIGN VISARGA ANUDATTA
+<Multi_key> <b> <semicolon> <underscore> <greater> <Return> : "᳦"  U1CE6  # VEDIC SIGN REVERSED VISARGA ANUDATTA
+<Multi_key> <b> <semicolon> <asciicircum> <S> <Return> : "᳧"  U1CE7  # VEDIC SIGN VISARGA UDATTA WITH TAIL
+<Multi_key> <b> <semicolon> <underscore> <S> <Return> : "᳨"  U1CE8  # VEDIC SIGN VISARGA ANUDATTA WITH TAIL
+<Multi_key> <b> <semicolon> <U> : "ᳩ"  U1CE9  # VEDIC SIGN ANUSVARA ANTARGOMUKHA
+<Multi_key> <b> <semicolon> <W> : "ᳪ"  U1CEA  # VEDIC SIGN ANUSVARA BAHIRGOMUKHA
+<Multi_key> <b> <semicolon> <V> <space> : "ᳫ"  U1CEB  # VEDIC SIGN ANUSVARA VAMAGOMUKHA
+<Multi_key> <b> <semicolon> <V> <at> : "ᳬ"  U1CEC  # VEDIC SIGN ANUSVARA VAMAGOMUKHA WITH TAIL
+<Multi_key> <b> <semicolon> <underscore> <backslash> <Return> : "᳭"  U1CED  # VEDIC SIGN TIRYAK
+<Multi_key> <b> <semicolon> <E> <period> : "ᳮ"  U1CEE  # VEDIC SIGN HEXIFORM LONG ANUSVARA
+<Multi_key> <b> <semicolon> <F> <period> : "ᳯ"  U1CEF  # VEDIC SIGN LONG ANUSVARA
+<Multi_key> <b> <semicolon> <d> <period> : "ᳰ"  U1CF0  # VEDIC SIGN RTHANG LONG ANUSVARA
+<Multi_key> <b> <semicolon> <S> <colon> : "ᳱ"  U1CF1  # VEDIC SIGN ANUSVARA UBHAYATO MUKHA
+<Multi_key> <b> <semicolon> <u> <n> : "ᳲ"  U1CF2  # VEDIC SIGN ARDHAVISARGA
+<Multi_key> <b> <semicolon> <parenleft> <parenright> : "ᳳ"  U1CF3  # VEDIC SIGN ROTATED ARDHAVISARGA
+<Multi_key> <b> <semicolon> <u> <Return> : "᳴"  U1CF4  # VEDIC TONE CANDRA ABOVE
+<Multi_key> <b> <semicolon> <x> <Return> : "ᳵ"  U1CF5  # VEDIC SIGN JIHVAMULIYA
+<Multi_key> <b> <semicolon> <w> <Return> : "ᳶ"  U1CF6  # VEDIC SIGN UPADHMANIYA
+<Multi_key> <b> <semicolon> <f> <Return> : "᳷"  U1CF7  # VEDIC SIGN ATIKRAMA
+<Multi_key> <b> <semicolon> <o> <Return> : "᳸"  U1CF8  # VEDIC TONE RING ABOVE
+<Multi_key> <b> <semicolon> <o> <o> <Return> : "᳹"  U1CF9  # VEDIC TONE DOUBLE RING ABOVE
+<Multi_key> <b> <semicolon> <2> <U> : "ᳺ"  U1CFA  # VEDIC SIGN DOUBLE ANUSVARA ANTARGOMUKHA
 
 # (d = Devanagari)
 
@@ -22124,7 +22225,7 @@ include "HangulSyllables"
 <Multi_key> <z> <n> <ampersand> : "᧞"  U19DE  # NEW TAI LUE SIGN LAE (AND)
 <Multi_key> <z> <n> <braceright> <h> <a> <v> <e> : "᧟"  U19DF  # NEW TAI LUE SIGN LAEV (HAVE)
 
-# (N = Nüshu) based on readings in NushuSources.txt
+# (N = Nushu) based on readings in NushuSources.txt
 
 <Multi_key> <z> <N> <a> <i> <4> <2>                 : "𛇈"  U1B1C8  # NUSHU CHARACTER-1B1C8
 <Multi_key> <z> <N> <a> <n> <g> <2> <1>             : "𛈪"  U1B22A  # NUSHU CHARACTER-1B22A
@@ -22522,6 +22623,7 @@ include "HangulSyllables"
 <Multi_key> <z> <N> <y> <n> <3> <5>                 : "𛈇"  U1B207  # NUSHU CHARACTER-1B207
 <Multi_key> <z> <N> <y> <n> <4> <4>                 : "𛊣"  U1B2A3  # NUSHU CHARACTER-1B2A3
 <Multi_key> <z> <N> <y> <u> <4> <4>                 : "𛇁"  U1B1C1  # NUSHU CHARACTER-1B1C1
+<Multi_key> <z> <N> <quotedbl>                      : "𖿡"  U16FE1  # NUSHU ITERATION MARK
 
 # (p = Pollard/Miao)
 
