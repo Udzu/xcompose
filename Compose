@@ -4313,6 +4313,37 @@ include "%L"
 
 <Multi_key> <a> <x> <u> <2> <u>          : "ٷ"  U0677  # ARABIC LETTER U WITH HAMZA ABOVE (not ideal)
 
+<Multi_key> <a> <x> <minus> <minus> <minus> : "ـ" U0640    # ARABIC TATWEEL (alternatively a;-)
+<Multi_key> <a> <x> <minus> <minus> <2>  : "ࢃ"  U0883  # ARABIC TATWEEL WITH OVERSTRUCK HAMZA
+<Multi_key> <a> <x> <minus> <minus> <w>  : "ࢄ"  U0884  # ARABIC TATWEEL WITH OVERSTRUCK WAW
+<Multi_key> <a> <x> <minus> <minus> <u>  : "ࢄ"  U0884  # ARABIC TATWEEL WITH OVERSTRUCK WAW
+<Multi_key> <a> <x> <minus> <minus> <quotedbl> : "ࢅ"  U0885  # ARABIC TATWEEL WITH TWO DOTS BELOW
+<Multi_key> <a> <x> <minus> <minus> <a> <n> : "ﹱ"  UFE71  # ARABIC TATWEEL WITH FATHATAN ABOVE
+<Multi_key> <a> <x> <minus> <minus> <comma> : "ﹳ"  UFE73  # ARABIC TAIL FRAGMENT
+
+# Quranic forms represented ultravisually
+
+<Multi_key> <a> <x> <slash> <bar> : "ࡰ"  U0870  # ARABIC LETTER ALEF WITH ATTACHED FATHA
+<Multi_key> <a> <x> <bar> <slash> : "ࡱ"  U0871  # ARABIC LETTER ALEF WITH ATTACHED TOP RIGHT FATHA
+<Multi_key> <a> <x> <bar> <minus> : "ࡲ"  U0872  # ARABIC LETTER ALEF WITH RIGHT MIDDLE STROKE
+<Multi_key> <a> <x> <minus> <bar> : "ࡳ"  U0873  # ARABIC LETTER ALEF WITH LEFT MIDDLE STROKE
+<Multi_key> <a> <x> <underscore> <bar> : "ࡴ"  U0874  # ARABIC LETTER ALEF WITH ATTACHED KASRA
+<Multi_key> <a> <x> <bar> <underscore> : "ࡵ"  U0875  # ARABIC LETTER ALEF WITH ATTACHED BOTTOM RIGHT KASRA
+<Multi_key> <a> <x> <bar> <period> <asciicircum> : "ࡶ"  U0876  # ARABIC LETTER ALEF WITH ATTACHED ROUND DOT ABOVE
+<Multi_key> <a> <x> <bar> <period> <greater> : "ࡷ"  U0877  # ARABIC LETTER ALEF WITH ATTACHED RIGHT ROUND DOT
+<Multi_key> <a> <x> <period> <bar> : "ࡸ"  U0878  # ARABIC LETTER ALEF WITH ATTACHED LEFT ROUND DOT
+<Multi_key> <a> <x> <bar> <period> <v> : "ࡹ"  U0879  # ARABIC LETTER ALEF WITH ATTACHED ROUND DOT BELOW
+<Multi_key> <a> <x> <bar> <exclam> : "ࡹ"  U0879  # ARABIC LETTER ALEF WITH ATTACHED ROUND DOT BELOW
+<Multi_key> <a> <x> <bar> <period> <space> : "ࡺ"  U087A  # ARABIC LETTER ALEF WITH DOT ABOVE
+<Multi_key> <a> <x> <bar> <period> <slash> : "ࡻ"  U087B  # ARABIC LETTER ALEF WITH ATTACHED TOP RIGHT FATHA AND DOT ABOVE
+<Multi_key> <a> <x> <bar> <period> <minus>  : "ࡼ"  U087C  # ARABIC LETTER ALEF WITH RIGHT MIDDLE STROKE AND DOT ABOVE
+<Multi_key> <a> <x> <bar> <period> <underscore> : "ࡽ"  U087D  # ARABIC LETTER ALEF WITH ATTACHED BOTTOM RIGHT KASRA AND DOT ABOVE
+<Multi_key> <a> <x> <o> <bar> <slash> : "ࡾ"  U087E  # ARABIC LETTER ALEF WITH ATTACHED TOP RIGHT FATHA AND LEFT RING
+<Multi_key> <a> <x> <o> <bar> <minus> : "ࡿ"  U087F  # ARABIC LETTER ALEF WITH RIGHT MIDDLE STROKE AND LEFT RING
+<Multi_key> <a> <x> <o> <bar> <underscore> : "ࢀ"  U0880  # ARABIC LETTER ALEF WITH ATTACHED BOTTOM RIGHT KASRA AND LEFT RING
+<Multi_key> <a> <x> <bar> <2> : "ࢁ"  U0881  # ARABIC LETTER ALEF WITH ATTACHED RIGHT HAMZA
+<Multi_key> <a> <x> <2> <bar> : "ࢂ"  U0882  # ARABIC LETTER ALEF WITH ATTACHED LEFT HAMZA
+
 # superscripts
 
 <Multi_key> <a> <c> <asciicircum> <asciicircum> <a> <Return> : "ٰ"  U0670  # ARABIC LETTER SUPERSCRIPT ALEF
@@ -4346,6 +4377,8 @@ include "%L"
 <Multi_key> <a> <c> <underscore> <underscore> <w> <Return> : "࣓"  U08D3  # ARABIC SMALL LOW WAW
 <Multi_key> <a> <c> <underscore> <underscore> <u> <Return> : "࣓"  U08D3  # ARABIC SMALL LOW WAW
 
+<Multi_key> <a> <x> <a> <Return> : "𐻼"  U10EFC  # ARABIC COMBINING ALEF OVERLAY
+
 # ligatures
 
 <Multi_key> <a> <x> <a> <k> <b> <a> <r>  : "ﷳ"  UFDF3  # ARABIC LIGATURE AKBAR ISOLATED FORM
@@ -4355,13 +4388,19 @@ include "%L"
 <Multi_key> <a> <x> <A> <W> <J>          : "﷿"  UFDFF  # ARABIC LIGATURE AZZA WA JALL
 <Multi_key> <a> <x> <J> <J>              : "ﷻ"  UFDFB  # ARABIC LIGATURE JALLAJALALOUHOU
 <Multi_key> <a> <x> <P> <B> <U> <H>      : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM (PBUH)
+<Multi_key> <a> <x> <P> <B> <U> <U>      : "﷏"  UFDCF  # ARABIC LIGATURE SALAAMUHU ALAYNAA (PBUU)
+<Multi_key> <a> <x> <R> <h> <space>      : "﵀"  UFD40  # ARABIC LIGATURE RAHIMAHU ALLAAH
+<Multi_key> <a> <x> <R> <h> <m>          : "﵏"  UFD4F  # ARABIC LIGATURE RAHIMAHUM ALLAAH
 <Multi_key> <a> <x> <Q> <S>              : "﵋"  UFD4B  # ARABIC LIGATURE QUDDISA SIRRAH
-<Multi_key> <a> <x> <S> <A> <W>          : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM
+<Multi_key> <a> <x> <S> <A> <W> <A> <space> : "﵆"  UFD46  # ARABIC LIGATURE SALLALLAAHU ALAYHI WA-AALIH
+<Multi_key> <a> <x> <S> <A> <W> <A> <W> <S> : "﵌"  UFD4C  # ARABIC LIGATURE SALLALLAHU ALAYHI WAAALIHEE WA-SALLAM
+<Multi_key> <a> <x> <S> <A> <W> <S>      : "ﷺ"  UFDFA  # ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM (alternatively axPBUH)
 <Multi_key> <a> <x> <S> <W> <T>          : "﷾"  UFDFE  # ARABIC LIGATURE SUBHAANAHU WA TAAALAA
 <Multi_key> <a> <x> <T> <W> <T>          : "﵎"  UFD4E  # ARABIC LIGATURE TABAARAKA WA-TAAALAA
 
 <Multi_key> <a> <x> <A> <A> <S> <Return> : "ؑ"  U0611  # ARABIC SIGN ALAYHE ASSALLAM
 <Multi_key> <a> <x> <A> <A> <S> <space>  : "﵇"  UFD47  # ARABIC LIGATURE ALAYHI AS-SALAAM
+<Multi_key> <a> <x> <A> <A> <S> <W> <S>  : "﵊"  UFD4A  # ARABIC LIGATURE ALAYHI AS-SALAATU WAS-SALAAM
 <Multi_key> <a> <x> <A> <m> <A> <S>      : "﵈"  UFD48  # ARABIC LIGATURE ALAYHIM AS-SALAAM
 <Multi_key> <a> <x> <A> <2> <A> <S>      : "﵉"  UFD49  # ARABIC LIGATURE ALAYHIMAA AS-SALAAM
 <Multi_key> <a> <x> <A> <a> <A> <S>      : "﵍"  UFD4D  # ARABIC LIGATURE ALAYHAA AS-SALAAM
@@ -4833,6 +4872,7 @@ include "%L"
 <Multi_key> <a> <braceleft> <x> <2> <y> <x> <h> <braceright> <space> : "ﰁ"  UFC01  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH HAH ISOLATED FORM
 <Multi_key> <a> <braceleft> <x> <2> <y> <c> <m> <braceright> <space> : "ﰂ"  UFC02  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH MEEM ISOLATED FORM
 <Multi_key> <a> <braceleft> <x> <2> <y> <x> <a> <y> <braceright> <space> : "ﰃ"  UFC03  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH ALEF MAKSURA ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <a> <y> <braceright> <U> <space> : "ﯹ"  UFBF9  # ARABIC LIGATURE UIGHUR KIRGHIZ YEH WITH HAMZA ABOVE WITH ALEF MAKSURA ISOLATED FORM
 <Multi_key> <a> <braceleft> <x> <2> <y> <c> <y> <braceright> <space> : "ﰄ"  UFC04  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YEH ISOLATED FORM
 <Multi_key> <a> <braceleft> <x> <2> <y> <c> <i> <braceright> <space> : "ﰄ"  UFC04  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YEH ISOLATED FORM
 <Multi_key> <a> <braceleft> <c> <b> <c> <j> <braceright> <space> : "ﰅ"  UFC05  # ARABIC LIGATURE BEH WITH JEEM ISOLATED FORM
@@ -4964,6 +5004,7 @@ include "%L"
 <Multi_key> <a> <braceleft> <x> <2> <y> <c> <m> <braceright> <less> : "ﱦ"  UFC66  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH MEEM FINAL FORM
 <Multi_key> <a> <braceleft> <x> <2> <y> <c> <n> <braceright> <less> : "ﱧ"  UFC67  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH NOON FINAL FORM
 <Multi_key> <a> <braceleft> <x> <2> <y> <x> <a> <y> <braceright> <less> : "ﱨ"  UFC68  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH ALEF MAKSURA FINAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <a> <y> <braceright> <U> <less> : "ﯺ"  UFBFA  # ARABIC LIGATURE UIGHUR KIRGHIZ YEH WITH HAMZA ABOVE WITH ALEF MAKSURA FINAL FORM
 <Multi_key> <a> <braceleft> <x> <2> <y> <c> <y> <braceright> <less> : "ﱩ"  UFC69  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YEH FINAL FORM
 <Multi_key> <a> <braceleft> <x> <2> <y> <c> <i> <braceright> <less> : "ﱩ"  UFC69  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH YEH FINAL FORM
 <Multi_key> <a> <braceleft> <c> <b> <c> <r> <braceright> <less> : "ﱪ"  UFC6A  # ARABIC LIGATURE BEH WITH REH FINAL FORM
@@ -5032,6 +5073,7 @@ include "%L"
 <Multi_key> <a> <braceleft> <x> <2> <y> <c> <K> <braceright> <greater> : "ﲙ"  UFC99  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH KHAH INITIAL FORM
 <Multi_key> <a> <braceleft> <x> <2> <y> <c> <m> <braceright> <greater> : "ﲚ"  UFC9A  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH MEEM INITIAL FORM
 <Multi_key> <a> <braceleft> <x> <2> <y> <c> <h> <braceright> <greater> : "ﲛ"  UFC9B  # ARABIC LIGATURE YEH WITH HAMZA ABOVE WITH HEH INITIAL FORM
+<Multi_key> <a> <braceleft> <x> <2> <y> <x> <a> <y> <braceright> <U> <greater> : "ﯻ"  UFBFB  # ARABIC LIGATURE UIGHUR KIRGHIZ YEH WITH HAMZA ABOVE WITH ALEF MAKSURA INITIAL FORM
 <Multi_key> <a> <braceleft> <c> <b> <c> <j> <braceright> <greater> : "ﲜ"  UFC9C  # ARABIC LIGATURE BEH WITH JEEM INITIAL FORM
 <Multi_key> <a> <braceleft> <c> <b> <c> <H> <braceright> <greater> : "ﲝ"  UFC9D  # ARABIC LIGATURE BEH WITH HAH INITIAL FORM
 <Multi_key> <a> <braceleft> <c> <b> <x> <h> <braceright> <greater> : "ﲝ"  UFC9D  # ARABIC LIGATURE BEH WITH HAH INITIAL FORM
@@ -5500,6 +5542,8 @@ include "%L"
 <Multi_key> <a> <braceleft> <c> <w> <c> <s> <c> <l> <c> <m> <braceright> : "ﷸ"  UFDF8  # ARABIC LIGATURE WASALLAM ISOLATED FORM
 <Multi_key> <a> <braceleft> <c> <u> <c> <s> <c> <l> <c> <m> <braceright> : "ﷸ"  UFDF8  # ARABIC LIGATURE WASALLAM ISOLATED FORM
 <Multi_key> <a> <braceleft> <x> <s> <c> <l> <x> <a> <y> <braceright> : "ﷹ"  UFDF9  # ARABIC LIGATURE SALLA ISOLATED FORM
+<Multi_key> <a> <braceleft> <x> <s> <c> <l> <x> <a> <y> <period> : "ﷰ"  UFDF0  # ARABIC LIGATURE SALLA USED AS KORANIC STOP SIGN ISOLATED FORM
+<Multi_key> <a> <braceleft> <c> <q> <c> <l> <x> <a> <y> <period> : "ﷱ"  UFDF1  # ARABIC LIGATURE QALA USED AS KORANIC STOP SIGN ISOLATED FORM
 
 <Multi_key> <a> <braceleft> <c> <a> <x> <less> <y> <Return> : "ؖ"  U0616  # ARABIC SMALL HIGH LIGATURE ALEF WITH LAM WITH YEH
 <Multi_key> <a> <braceleft> <x> <s> <c> <l> <x> <a> <y> <Return> : "ۖ"  U06D6  # ARABIC SMALL HIGH LIGATURE SAD WITH LAM WITH ALEF MAKSURA
