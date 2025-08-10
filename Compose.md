@@ -9,7 +9,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (618)
+### Common script characters (619)
 * **Spaces** (15): NBSP MMSP ZWSP etc
 * **Dashes** (12): – — ⁓ ⸻ etc
 * **Brackets** (40): ⟨ ⟦ ⸨ ⌈ ⫽ etc
@@ -17,19 +17,19 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **General punctuation** (69): ⁁ ⁂ ⸎ etc
 * **Currency symbols** (26): ₱ ₿ ₪ etc
 * **Combining diacritics** (174): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
-* **Control characters** (271): RLI PDI ZWJ VS16 etc
+* **Control characters** (272): RLI PDI ZWJ VS16 etc
 
-### Latin script characters (2756)
+### Latin script characters (2757)
 * **International Phonetic Alphabet** (143): ⫽ˈɹɛ.dɪt⫽ [aɪ̯ pʰiː eɪ̯] etc
 * **Latin script letters** (514): Ƿ Ȝ ␢ ȵ etc
 * **Mathematical alphanumerics** (794): 𝐀 𝐴 𝑨 A 𝗔 𝘈 𝘼 𝒜 𝓐 𝔄 𝕬 𝙰 𝔸 𜳖 etc
 * **Enclosed alphanumerics** (290): ⓼ 🅛 🆛 ⒜ ⒓ etc
 * **Superscripts and subscripts** (309): ᵃ ᴬ ₐ ᴀ ◌ͣ etc
-* **Multigraphs and ligatures** (391): ʣ ㏈ etc
+* **Multigraphs and ligatures** (392): ʣ ㏈ etc
 * **Letter games** (315): ʇᴉppǝɹ ɟibbɘר டωᓀᓀ·–⟝ etc
 
-### Non-Latin script characters (35676)
-* **Arabic**, Old North Arabian, Old South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Old Persian, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Hanifi Rohingya, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi (2203): ⁧رِيدِتْ⁩, ⁧𐪇𐪕𐪉⁩, ⁧𐬭𐬈𐬛𐬌𐬙⁩, ⁧𐩧𐩵𐩩⁩, ⁧𐿂𐾴𐾺𐿄⁩, ⁧𐣣𐣣𐣩𐣵⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧𐫡𐫅𐫏𐫤⁩, ⁧𐢛𐢅𐢍𐢞⁩, 𐎼𐎡𐎮𐎡𐎫, 𐒇𐒗𐒆𐒘𐒂, ⁧𐭥𐭣𐭩𐭲⁩, ⁧𐮅𐮃𐮈𐮑⁩, ⁧𐴌𐴠𐴊𐴞𐴃⁩, ⁧𐭓𐭃𐭉𐭕⁩, ⁧𐼘𐼘𐼊𐼚⁩, ⁧𐽀𐼲𐼷𐽂⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐽾𐽲𐽶𐾀⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
+### Non-Latin script characters (35737)
+* **Arabic**, Old North Arabian, Old South Arabian, Avestan, Chorasmian, Hatran, Mandaic, Manichaean, Nabatean, Old Persian, Osmanya, Inscriptional Pahlavi, Psalter Pahlavi, Inscriptional Parthian, Hanifi Rohingya, Old Sogdian, Sogdian, Syriac, Neo-Tifinagh, Thaana, Old Uyghur & Yezidi (2264): ⁧رِيدِتْ⁩, ⁧𐪇𐪕𐪉⁩, ⁧𐬭𐬈𐬛𐬌𐬙⁩, ⁧𐩧𐩵𐩩⁩, ⁧𐿂𐾴𐾺𐿄⁩, ⁧𐣣𐣣𐣩𐣵⁩, ⁧ࡓࡏࡃࡉࡕ⁩, ⁧𐫡𐫅𐫏𐫤⁩, ⁧𐢛𐢅𐢍𐢞⁩, 𐎼𐎡𐎮𐎡𐎫, 𐒇𐒗𐒆𐒘𐒂, ⁧𐭥𐭣𐭩𐭲⁩, ⁧𐮅𐮃𐮈𐮑⁩, ⁧𐴌𐴠𐴊𐴞𐴃⁩, ⁧𐭓𐭃𐭉𐭕⁩, ⁧𐼘𐼘𐼊𐼚⁩, ⁧𐽀𐼲𐼷𐽂⁩, ⁧ܪܕ݁ܝܬ݁⁩, ⵔⴻⴷⴷⵉⵜ, ⁧ރެދިތް⁩, ⁧𐽾𐽲𐽶𐾀⁩, ⁧𐺎𐺩𐺋𐺨𐺕⁩ etc
 * **Armenian** (95): Րեդդիտ etc
 * **Brahmic scripts**: Ahom, Bengali, Bhaiksuki, Brahmi, Burmese, Chakma, Devanagari, Dives Akuru, Dogra, Grantha, Gujala Gondi, Gujarati, Gurmukhi, Gurung Khema, Kaithi, Kannada, Kawi, Kharoshthi, Khojki, Khudawadi, Kirat Rai, Lepcha, Limbu, Mahajani, Makasar, Malayalam, Marchen, Masaram Gondi, Meitei, Modi, Multani, Nandinagari, Newa, Odia, Rejang, Saurashtra, Sharada, Siddham, Sinhala, Sylheti Nagri, Takri, Tamil, Telugu, Tigalari, Tirhuta (3596): 𑜍𑜦𑜔𑜢𑜌𑜫, রেডিট, 𑰨𑰸𑰠𑰰𑰞, 𑀭𑁂𑀟𑀺𑀝, ရေဍိဋ္, 𑄢𑄬𑄘𑄨𑄖𑄳, रेडिट, 𑤧𑤵𑤞𑤱𑤜𑤽, 𑠤𑠳𑠜𑠭𑠚, 𑌰𑍇𑌧𑌿𑌥, 𑶈𑶐𑵹𑶋𑵴𑶗, રેડિટ, ਰੇਡਿਟ, 𖄛𖄣𖄓𖄟𖄑, 𑂩𑂵𑂡𑂱𑂟, ರೆಡಿತ್, ⁧𐨪𐨅𐨢𐨁𐨠⁩, 𑈦𑈰𑈝𑈭𑈚, 𑋙𑋥𑋐𑋡𑋎, 𖵝𖵧𖵕𖵤𖵓, ᰛᰬᰌᰧᰳ, ᤖᤧᤍᤡᤳ, 𑅭𑅓𑅦𑅑𑅟, രെഡിട്, 𑲊𑲳𑱼𑲱𑱻, 𑴦𑴺𑴞𑴲𑴜, ꯔꯦꯗꯤꯠ, 𑘨𑘹𑘠𑘱𑘞, 𑊢𑊃𑊙𑊁𑊗, 𑧈𑧚𑧀𑧒𑦾, 𑐬𑐾𑐢𑐶𑐠, ରେଡିଟ, ꢬꢾꢞꢶꢜ, 𑆫𑆼𑆣𑆴𑆡, 𑖨𑖸𑖠𑖰𑖞, රෙඩිට්, ꠞꠦꠗꠤꠕ, 𑚤𑚲𑚜𑚮𑚚, ரெடிட், రెడిట్, 𑎬𑏂𑎤𑎹𑎢, 𑒩𑒺𑒡𑒱𑒟 etc
 * **Braille**, UEB (272): ⠗⠫⠙⠊⠞ etc
