@@ -248,6 +248,8 @@ include "%L"
 <Multi_key> <S> <Return>                               : "̾"  U033E   # COMBINING VERTICAL TILDE
 <Multi_key> <asciicircum> <underscore> <underscore> <Return> : "̿"  U033F  # COMBINING DOUBLE OVERLINE
 <Multi_key> <bracketleft> <Return>                     : "͆"  U0346   # COMBINING BRIDGE ABOVE
+<Multi_key> <Multi_key> <grave> <Return>               : "̀"  U0340  # COMBINING GRAVE TONE MARK
+<Multi_key> <Multi_key> <apostrophe> <Return>          : "́"  U0341  # COMBINING ACUTE TONE MARK
 <Multi_key> <asciitilde> <slash> <Return>              : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <slash> <asciitilde> <Return>              : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <asciicircum> <asciitilde> <colon> <Return> : "͋"  U034B  # COMBINING HOMOTHETIC ABOVE
@@ -406,6 +408,21 @@ include "%L"
 <Multi_key> <2> <underscore> <greater> <Return>        : "͢"  U0362   # COMBINING DOUBLE RIGHTWARDS ARROW BELOW
 <Multi_key> <2> <underscore> <u> <v> <Return>          : "᷼"  U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (alternatively __([Return])
 <Multi_key> <2> <asciicircum> <Return>                 : "᷍"  U1DCD   # COMBINING DOUBLE CIRCUMFLEX ABOVE (conflicts with ², use ^2)
+
+<Multi_key> <2> <L> <u> <v> <Return>                   : "︠"  UFE20  # COMBINING LIGATURE LEFT HALF
+<Multi_key> <2> <R> <u> <v> <Return>                   : "︡"  UFE21  # COMBINING LIGATURE RIGHT HALF
+<Multi_key> <2> <L> <asciitilde> <Return>              : "︢"  UFE22  # COMBINING DOUBLE TILDE LEFT HALF
+<Multi_key> <2> <R> <asciitilde> <Return>              : "︣"  UFE23  # COMBINING DOUBLE TILDE RIGHT HALF
+<Multi_key> <2> <L> <underscore> <Return>              : "︤"  UFE24  # COMBINING MACRON LEFT HALF
+<Multi_key> <2> <R> <underscore> <Return>              : "︥"  UFE25  # COMBINING MACRON RIGHT HALF
+<Multi_key> <2> <C> <underscore> <greater> <Return>    : "︦"  UFE26  # COMBINING CONJOINING MACRON
+<Multi_key> <2> <L> <underscore> <u> <Return>          : "︧"  UFE27  # COMBINING LIGATURE LEFT HALF BELOW
+<Multi_key> <2> <R> <underscore> <u> <Return>          : "︨"  UFE28  # COMBINING LIGATURE RIGHT HALF BELOW
+<Multi_key> <2> <L> <underscore> <asciitilde> <Return> : "︩"  UFE29  # COMBINING TILDE LEFT HALF BELOW
+<Multi_key> <2> <R> <underscore> <asciitilde> <Return> : "︪"  UFE2A  # COMBINING TILDE RIGHT HALF BELOW
+<Multi_key> <2> <L> <underscore> <underscore> <Return> : "︫"  UFE2B  # COMBINING MACRON LEFT HALF BELOW
+<Multi_key> <2> <R> <underscore> <underscore> <Return> : "︬"  UFE2C  # COMBINING MACRON RIGHT HALF BELOW
+<Multi_key> <2> <C> <underscore> <underscore> <Return> : "︭"  UFE2D  # COMBINING CONJOINING MACRON BELOW
 
 <Multi_key> <O> <period>                               : "◌"  U25CC    # DOTTED CIRCLE (PLACEHOLDER GLYPH)
 
@@ -4524,6 +4541,8 @@ include "%L"
 <Multi_key> <a> <semicolon> <underscore> <Return> : "؂"  U0602  # ARABIC FOOTNOTE MARKER (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <asciicircum> <underscore> <Return> : "࣠"  U08E0  # ARABIC SMALL HIGH FOOTNOTE MARKER (conflicts with ą)
 <Multi_key> <a> <semicolon> <bar> <apostrophe> : "ࢎ"  U088E  # ARABIC VERTICAL TAIL (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <O> <Return> : "۝"  U06DD  # ARABIC END OF AYAH (conflicts with ą)
+<Multi_key> <a> <semicolon> <2> <O> <Return> : "࣢"  U08E2  # ARABIC DISPUTED END OF AYAH (conflicts with ą)
 
 # numerals
 
@@ -7085,6 +7104,8 @@ include "%L"
 
 # (; = Vedic symbols)
 
+<Multi_key> <b> <semicolon> <grave> <Return> : "॓"  U0953  # DEVANAGARI GRAVE ACCENT
+<Multi_key> <b> <semicolon> <apostrophe> <Return> : "॔"  U0954  # DEVANAGARI ACUTE ACCENT
 <Multi_key> <b> <semicolon> <asciicircum> <Return> : "᳐"  U1CD0  # VEDIC TONE KARSHANA
 <Multi_key> <b> <semicolon> <asciicircum> <bar> <Return> : "᳑"  U1CD1  # VEDIC TONE SHARA
 <Multi_key> <b> <semicolon> <minus> <Return> : "᳒"  U1CD2  # VEDIC TONE PRENKHA
@@ -12297,6 +12318,8 @@ include "%L"
 
 <Multi_key> <c> <semicolon> <asciitilde> <Return> : "҃"  U0483  # COMBINING CYRILLIC TITLO
 <Multi_key> <c> <semicolon> <apostrophe> <Return> : "҄"  U0484  # COMBINING CYRILLIC PALATALIZATION
+<Multi_key> <c> <semicolon> <asciicircum> <comma> <less> <Return> : "҅"  U0485  # COMBINING CYRILLIC DASIA PNEUMATA
+<Multi_key> <c> <semicolon> <asciicircum> <comma> <Return> : "҆"  U0486  # COMBINING CYRILLIC PSILI PNEUMATA
 <Multi_key> <c> <semicolon> <grave> <Return> : "҇"  U0487  # COMBINING CYRILLIC POKRYTIE
 <Multi_key> <c> <semicolon> <bracketleft> <Return> : "꙯"  UA66F  # COMBINING CYRILLIC VZMET
 <Multi_key> <c> <semicolon> <parenright> <Return> : "꙼"  UA67C  # COMBINING CYRILLIC KAVYKA
@@ -22559,6 +22582,11 @@ include "HangulSyllables"
 <Multi_key> <z> <semicolon> <period>     : "˙" U02D9    # DOT ABOVE
 <Multi_key> <z> <semicolon> <L>          : "˪" U02EA    # MODIFIER LETTER YIN DEPARTING TONE MARK
 <Multi_key> <z> <semicolon> <T>          : "˫" U02EB    # MODIFIER LETTER YANG DEPARTING TONE MARK
+
+<Multi_key> <z> <semicolon> <bar> <1> <Return> : "〪"  U302A  # IDEOGRAPHIC LEVEL TONE MARK
+<Multi_key> <z> <semicolon> <bar> <2> <Return> : "〫"  U302B  # IDEOGRAPHIC RISING TONE MARK
+<Multi_key> <z> <semicolon> <bar> <3> <Return> : "〬"  U302C  # IDEOGRAPHIC DEPARTING TONE MARK
+<Multi_key> <z> <semicolon> <bar> <4> <Return> : "〭"  U302D  # IDEOGRAPHIC ENTERING TONE MARK
 
 # Numerals
 
