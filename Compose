@@ -12504,8 +12504,8 @@ include "%L"
 # (C) ConScripts # 
 ##################
 
-# covers Canadian Aboriginal Syllabics (including Carrier, Cree & Inuktitut), Cherokee, Deseret, Kayah Li,
-# Medefeidrin, Mru, Nag Mundari, Nyiakeng Puachue Hmong, Ol Chiki, Old Onal, Osage, Pahawh Hmong,
+# covers Canadian Aboriginal Syllabics (including Carrier, Cree & Inuktitut shortcuts), Cherokee, Deseret,
+# Kayah Li, Medefeidrin, Mru, Nag Mundari, Nyiakeng Puachue Hmong, Ol Chiki, Old Onal, Osage, Pahawh Hmong,
 # Pau Cin Hau, Shavian, Sora Sompeng, Sunuwar, Tangsa, Toto, Wancho & Warang Citi
 
 # (AS = Canadian Aboriginal Syllabics)
@@ -12514,7 +12514,7 @@ include "%L"
 
 # convention: [left diacritic] + shape + [centre diacritic] + orientation + [right diacritic]
 
-# ᐁ ᐃ ᐅ ᐊ = Dv D^ D> D<
+# ᐁ ᐃ ᐅ ᐊ = Dv D^ D> D< (see |D and C| below for ᗪ and ᗞ)
 
 <Multi_key> <C> <A> <S> <D> <v> <space> : "ᐁ"  U1401  # CANADIAN SYLLABICS E
 <Multi_key> <C> <A> <S> <period> <D> <v> : "ᐌ"  U140C  # CANADIAN SYLLABICS WE
@@ -12528,6 +12528,7 @@ include "%L"
 <Multi_key> <C> <A> <S> <D> <asciicircum> <period> : "ᐏ"  U140F  # CANADIAN SYLLABICS WEST-CREE WI
 <Multi_key> <C> <A> <S> <period> <D> <period> <asciicircum> : "ᐐ"  U1410  # CANADIAN SYLLABICS WII
 <Multi_key> <C> <A> <S> <D> <period> <asciicircum> <period> : "ᐑ"  U1411  # CANADIAN SYLLABICS WEST-CREE WII
+<Multi_key> <C> <A> <S> <asciicircum> <D> <asciicircum> <space> : "ᐞ"  U141E  # CANADIAN SYLLABICS GLOTTAL STOP
 <Multi_key> <C> <A> <S> <D> <asciicircum> <backslash> : "ᐬ"  U142C  # CANADIAN SYLLABICS IN
 <Multi_key> <C> <A> <S> <asciicircum> <period> <D> <asciicircum> : "ᣜ"  U18DC  # CANADIAN SYLLABICS EASTERN W
 <Multi_key> <C> <A> <S> <asciicircum> <D> <asciicircum> <period> : "ᣝ"  U18DD  # CANADIAN SYLLABICS WESTERN W
@@ -12536,7 +12537,7 @@ include "%L"
 <Multi_key> <C> <A> <S> <D> <period> <greater> <space> : "ᐆ"  U1406  # CANADIAN SYLLABICS OO
 <Multi_key> <C> <A> <S> <D> <quotedbl> <greater> : "ᐇ"  U1407  # CANADIAN SYLLABICS Y-CREE OO
 <Multi_key> <C> <A> <S> <D> <bar> <greater>: "ᐈ"  U1408  # CANADIAN SYLLABICS CARRIER EE
-<Multi_key> <C> <A> <S> <D> <Multi_key> <period> <greater> : "ᐉ"  U1409  # CANADIAN SYLLABICS CARRIER I
+<Multi_key> <C> <A> <S> <D> <asterisk> <greater> : "ᐉ"  U1409  # CANADIAN SYLLABICS CARRIER I
 <Multi_key> <C> <A> <S> <period> <D> <greater> : "ᐒ"  U1412  # CANADIAN SYLLABICS WO
 <Multi_key> <C> <A> <S> <D> <greater> <period> : "ᐓ"  U1413  # CANADIAN SYLLABICS WEST-CREE WO
 <Multi_key> <C> <A> <S> <period> <D> <period> <greater> : "ᐔ"  U1414  # CANADIAN SYLLABICS WOO
@@ -12577,7 +12578,7 @@ include "%L"
 <Multi_key> <C> <A> <S> <V> <period> <greater> <space> : "ᐴ"  U1434  # CANADIAN SYLLABICS POO
 <Multi_key> <C> <A> <S> <V> <quotedbl> <greater> : "ᐵ"  U1435  # CANADIAN SYLLABICS Y-CREE POO
 <Multi_key> <C> <A> <S> <V> <bar> <greater> : "ᐶ"  U1436  # CANADIAN SYLLABICS CARRIER HEE
-<Multi_key> <C> <A> <S> <V> <Multi_key> <period> <greater> : "ᐷ"  U1437  # CANADIAN SYLLABICS CARRIER HI
+<Multi_key> <C> <A> <S> <V> <asterisk> <greater> : "ᐷ"  U1437  # CANADIAN SYLLABICS CARRIER HI
 <Multi_key> <C> <A> <S> <period> <V> <greater> : "ᑀ"  U1440  # CANADIAN SYLLABICS PWO
 <Multi_key> <C> <A> <S> <V> <greater> <period> : "ᑁ"  U1441  # CANADIAN SYLLABICS WEST-CREE PWO
 <Multi_key> <C> <A> <S> <period> <V> <period> <greater> : "ᑂ"  U1442  # CANADIAN SYLLABICS PWOO
@@ -12638,7 +12639,7 @@ include "%L"
 <Multi_key> <C> <A> <S> <U> <u> <v> : "ᕰ"  U1570  # CANADIAN SYLLABICS TYE
 <Multi_key> <C> <A> <S> <U> <bar> <v> <period> : "ᣥ"  U18E5  # CANADIAN SYLLABICS TTHWE
 
-<Multi_key> <C> <A> <S> <asciicircum> <U> <asciicircum> : "ᐢ"  U1422  # CANADIAN SYLLABICS FINAL TOP HALF RING
+<Multi_key> <C> <A> <S> <asciicircum> <U> <asciicircum> <space> : "ᐢ"  U1422  # CANADIAN SYLLABICS FINAL TOP HALF RING
 <Multi_key> <C> <A> <S> <U> <o> <asciicircum> : "ᑍ"  U144D  # CANADIAN SYLLABICS TAAI
 <Multi_key> <C> <A> <S> <U> <asciicircum> <space> : "ᑎ"  U144E  # CANADIAN SYLLABICS TI
 <Multi_key> <C> <A> <S> <U> <period> <asciicircum> <space> : "ᑏ"  U144F  # CANADIAN SYLLABICS TII
@@ -12649,13 +12650,14 @@ include "%L"
 <Multi_key> <C> <A> <S> <U> <asciicircum> <bar> : "ᑨ"  U1468  # CANADIAN SYLLABICS TTI
 <Multi_key> <C> <A> <S> <U> <bar> <asciicircum> : "ᕬ"  U156C  # CANADIAN SYLLABICS TTHI
 <Multi_key> <C> <A> <S> <U> <u> <asciicircum> : "ᕱ"  U1571  # CANADIAN SYLLABICS TYI
+<Multi_key> <C> <A> <S> <asciicircum> <U> <asciicircum> <O> : "ᣕ"  U18D5  # CANADIAN SYLLABICS OJIBWAY T
 
 <Multi_key> <C> <A> <S> <asciicircum> <U> <greater> : "ᐣ"  U1423  # CANADIAN SYLLABICS FINAL RIGHT HALF RING
 <Multi_key> <C> <A> <S> <U> <greater> <space> : "ᑐ"  U1450  # CANADIAN SYLLABICS TO
 <Multi_key> <C> <A> <S> <U> <period> <greater> <space> : "ᑑ"  U1451  # CANADIAN SYLLABICS TOO
 <Multi_key> <C> <A> <S> <U> <quotedbl> <greater> : "ᑒ"  U1452  # CANADIAN SYLLABICS Y-CREE TOO
 <Multi_key> <C> <A> <S> <U> <bar> <greater> : "ᑓ"  U1453  # CANADIAN SYLLABICS CARRIER DEE
-<Multi_key> <C> <A> <S> <U> <Multi_key> <period> <greater> : "ᑔ"  U1454  # CANADIAN SYLLABICS CARRIER DI
+<Multi_key> <C> <A> <S> <U> <asterisk> <greater> : "ᑔ"  U1454  # CANADIAN SYLLABICS CARRIER DI
 <Multi_key> <C> <A> <S> <period> <U> <greater> : "ᑝ"  U145D  # CANADIAN SYLLABICS TWO
 <Multi_key> <C> <A> <S> <U> <greater> <period> : "ᑞ"  U145E  # CANADIAN SYLLABICS WEST-CREE TWO
 <Multi_key> <C> <A> <S> <period> <U> <period> <greater> : "ᑟ"  U145F  # CANADIAN SYLLABICS TWOO
@@ -12683,7 +12685,7 @@ include "%L"
 
 # ᕞ ᕟ ᕠ ᕡ ᕤ ᕦ = eUv 9Uv 9U^ eU^ 9U> eU<
 
-<Multi_key> <C> <A> <S> <e> <U> <v> : "ᕞ"  U155E  # CANADIAN SYLLABICS THE
+<Multi_key> <C> <A> <S> <e> <U> <v> <space> : "ᕞ"  U155E  # CANADIAN SYLLABICS THE
 <Multi_key> <C> <A> <S> <9> <U> <v> : "ᕟ"  U155F  # CANADIAN SYLLABICS N-CREE THE
 <Multi_key> <C> <A> <S> <9> <U> <asciicircum> : "ᕠ"  U1560  # CANADIAN SYLLABICS THI
 <Multi_key> <C> <A> <S> <e> <U> <asciicircum> : "ᕡ"  U1561  # CANADIAN SYLLABICS N-CREE THI
@@ -12691,11 +12693,13 @@ include "%L"
 <Multi_key> <C> <A> <S> <e> <U> <period> <asciicircum> : "ᕣ"  U1563  # CANADIAN SYLLABICS N-CREE THII
 <Multi_key> <C> <A> <S> <9> <U> <greater> : "ᕤ"  U1564  # CANADIAN SYLLABICS THO
 <Multi_key> <C> <A> <S> <9> <U> <period> <greater> : "ᕥ"  U1565  # CANADIAN SYLLABICS THOO
-<Multi_key> <C> <A> <S> <e> <U> <less> : "ᕦ"  U1566  # CANADIAN SYLLABICS THA
+<Multi_key> <C> <A> <S> <e> <U> <less> <space> : "ᕦ"  U1566  # CANADIAN SYLLABICS THA
 <Multi_key> <C> <A> <S> <e> <U> <period> <less> <space> : "ᕧ"  U1567  # CANADIAN SYLLABICS THAA
 <Multi_key> <C> <A> <S> <period> <e> <U> <period> <less> : "ᕨ"  U1568  # CANADIAN SYLLABICS THWAA
 <Multi_key> <C> <A> <S> <e> <U> <period> <less> <period> : "ᕩ"  U1569  # CANADIAN SYLLABICS WEST-CREE THWAA
 <Multi_key> <C> <A> <S> <asciicircum> <e> <U> <less> : "ᕪ"  U156A  # CANADIAN SYLLABICS TH
+<Multi_key> <C> <A> <S> <e> <U> <v> <period> : "ᣣ"  U18E3  # CANADIAN SYLLABICS THWE
+<Multi_key> <C> <A> <S> <e> <U> <less> <period> : "ᣤ"  U18E4  # CANADIAN SYLLABICS THWA
 
 # ᑫ ᑭ ᑯ ᑲ = qv pv dv bv
 
@@ -12704,8 +12708,10 @@ include "%L"
 <Multi_key> <C> <A> <S> <q> <v> <period> : "ᑵ"  U1475  # CANADIAN SYLLABICS WEST-CREE KWE
 <Multi_key> <C> <A> <S> <q> <v> <bar> : "ᒅ"  U1485  # CANADIAN SYLLABICS SOUTH-SLAVEY KEH
 <Multi_key> <C> <A> <S> <q> <v> <slash> : "ᕴ"  U1574  # CANADIAN SYLLABICS NUNAVIK HE
-<Multi_key> <C> <A> <S> <q> <space> <v> : "ᖗ"  U1597  # CANADIAN SYLLABICS SAYISI SHE
+<Multi_key> <C> <A> <S> <q> <space> <v> <space> : "ᖗ"  U1597  # CANADIAN SYLLABICS SAYISI SHE
 <Multi_key> <C> <A> <S> <q> <asterisk> <v> : "ᖳ"  U15B3  # CANADIAN SYLLABICS BLACKFOOT A
+<Multi_key> <C> <A> <S> <question> <q> <v> : "ᙯ"  U166F  # CANADIAN SYLLABICS QAI
+<Multi_key> <C> <A> <S> <q> <space> <v> <period> : "ᣪ"  U18EA  # CANADIAN SYLLABICS SAYISI SHWE
 
 <Multi_key> <C> <A> <S> <p> <o> <v> : "ᑬ"  U146C  # CANADIAN SYLLABICS KAAI
 <Multi_key> <C> <A> <S> <p> <v> <space> : "ᑭ"  U146D  # CANADIAN SYLLABICS KI
@@ -12722,6 +12728,7 @@ include "%L"
 <Multi_key> <C> <A> <S> <question> <p> <period> <v> : "ᖀ"  U1580  # CANADIAN SYLLABICS QII
 <Multi_key> <C> <A> <S> <p> <space> <v> : "ᖘ"  U1598  # CANADIAN SYLLABICS SAYISI SHI
 <Multi_key> <C> <A> <S> <p> <asterisk> <v> : "ᖰ"  U15B0  # CANADIAN SYLLABICS BLACKFOOT E
+<Multi_key> <C> <A> <S> <asciicircum> <p> <v> : "ᣖ"  U18D6  # CANADIAN SYLLABICS OJIBWAY K
 
 <Multi_key> <C> <A> <S> <d> <v> <space> : "ᑯ"  U146F  # CANADIAN SYLLABICS KO
 <Multi_key> <C> <A> <S> <d> <period> <v> <space> : "ᑰ"  U1470  # CANADIAN SYLLABICS KOO
@@ -12736,8 +12743,9 @@ include "%L"
 <Multi_key> <C> <A> <S> <d> <period> <v> <backslash> : "ᕸ"  U1578  # CANADIAN SYLLABICS NUNAVIK HOO
 <Multi_key> <C> <A> <S> <question> <d> <v> : "ᖁ"  U1581  # CANADIAN SYLLABICS QO
 <Multi_key> <C> <A> <S> <question> <d> <period> <v> : "ᖂ"  U1582  # CANADIAN SYLLABICS QOO
-<Multi_key> <C> <A> <S> <d> <space> <v> : "ᖙ"  U1599  # CANADIAN SYLLABICS SAYISI SHO
+<Multi_key> <C> <A> <S> <d> <space> <v> <space> : "ᖙ"  U1599  # CANADIAN SYLLABICS SAYISI SHO
 <Multi_key> <C> <A> <S> <d> <asterisk> <v> : "ᖱ"  U15B1  # CANADIAN SYLLABICS BLACKFOOT I
+<Multi_key> <C> <A> <S> <d> <space> <v> <period> : "ᣫ"  U18EB  # CANADIAN SYLLABICS SAYISI SHOO
 
 <Multi_key> <C> <A> <S> <b> <v> <space> : "ᑲ"  U1472  # CANADIAN SYLLABICS KA
 <Multi_key> <C> <A> <S> <b> <period> <v> <space> : "ᑳ"  U1473  # CANADIAN SYLLABICS KAA
@@ -12751,8 +12759,10 @@ include "%L"
 <Multi_key> <C> <A> <S> <period> <s> <period> <b> <v> : "ᔎ"  U150E  # CANADIAN SYLLABICS NASKAPI SKWA
 <Multi_key> <C> <A> <S> <slash> <b> <v> : "ᕹ"  U1579  # CANADIAN SYLLABICS NUNAVIK HA
 <Multi_key> <C> <A> <S> <slash> <b> <period> <v> : "ᕺ"  U157A  # CANADIAN SYLLABICS NUNAVIK HAA
+<Multi_key> <C> <A> <S> <asciicircum> <slash> <b> <v> : "ᕻ"  U157B  # CANADIAN SYLLABICS NUNAVIK H
 <Multi_key> <C> <A> <S> <question> <b> <v> : "ᖃ"  U1583  # CANADIAN SYLLABICS QA
 <Multi_key> <C> <A> <S> <question> <b> <period> <v> : "ᖄ"  U1584  # CANADIAN SYLLABICS QAA
+<Multi_key> <C> <A> <S> <asciicircum> <question> <b> <v> : "ᖅ"  U1585  # CANADIAN SYLLABICS Q
 <Multi_key> <C> <A> <S> <b> <space> <v> : "ᖚ"  U159A  # CANADIAN SYLLABICS SAYISI SHA
 <Multi_key> <C> <A> <S> <b> <asterisk> <v> : "ᖲ"  U15B2  # CANADIAN SYLLABICS BLACKFOOT O
 <Multi_key> <C> <A> <S> <b> <o> <v> : "ᢸ"  U18B8  # CANADIAN SYLLABICS KAY
@@ -12796,6 +12806,7 @@ include "%L"
 <Multi_key> <C> <A> <S> <period> <b> <period> <greater> : "ᣈ"  U18C8  # CANADIAN SYLLABICS NWII
 <Multi_key> <C> <A> <S> <b> <period> <greater> <period> : "ᣉ"  U18C9  # CANADIAN SYLLABICS OJIBWAY NWII
 <Multi_key> <C> <A> <S> <b> <minus> <greater> : "ᖜ"  U159C  # CANADIAN SYLLABICS WOODS-CREE THI
+<Multi_key> <C> <A> <S> <asciicircum> <b> <greater> : "ᣙ"  U18D9  # CANADIAN SYLLABICS OJIBWAY N
 
 # ᒉ ᒋ ᒍ ᒐ = J^ J@ Jv J>
 
@@ -12804,6 +12815,7 @@ include "%L"
 <Multi_key> <C> <A> <S> <J> <asciicircum> <period> : "ᒓ"  U1493  # CANADIAN SYLLABICS WEST-CREE CWE
 <Multi_key> <C> <A> <S> <J> <asciicircum> <slash> : "ᖊ"  U158A  # CANADIAN SYLLABICS WEST-CREE RE
 <Multi_key> <C> <A> <S> <J> <asciicircum> <C> : "ᘃ"  U1603  # CANADIAN SYLLABICS CARRIER NO
+<Multi_key> <C> <A> <S> <o> <i> <J> <asciicircum> : "ᙰ"  U1670  # CANADIAN SYLLABICS NGAI
 
 <Multi_key> <C> <A> <S> <J> <o> <at> : "ᒊ"  U148A  # CANADIAN SYLLABICS CAAI
 <Multi_key> <C> <A> <S> <J> <at> <space> : "ᒋ"  U148B  # CANADIAN SYLLABICS CI
@@ -12813,6 +12825,12 @@ include "%L"
 <Multi_key> <C> <A> <S> <period> <J> <period> <at> : "ᒖ"  U1496  # CANADIAN SYLLABICS CWII
 <Multi_key> <C> <A> <S> <J> <period> <at> <period> : "ᒗ"  U1497  # CANADIAN SYLLABICS WEST-CREE CWII
 <Multi_key> <C> <A> <S> <backslash> <J> <at> : "ᖋ"  U158B  # CANADIAN SYLLABICS WEST-CREE RI
+<Multi_key> <C> <A> <S> <o> <i> <J> <o> <at> : "ᖎ"  U158E  # CANADIAN SYLLABICS NGAAI
+<Multi_key> <C> <A> <S> <o> <i> <J> <at> : "ᖏ"  U158F  # CANADIAN SYLLABICS NGI
+<Multi_key> <C> <A> <S> <o> <i> <J> <period> <at> : "ᖐ"  U1590  # CANADIAN SYLLABICS NGII
+<Multi_key> <C> <A> <S> <o> <o> <i> <J> <at> : "ᙱ"  U1671  # CANADIAN SYLLABICS NNGI
+<Multi_key> <C> <A> <S> <o> <o> <i> <J> <period> <at> : "ᙲ"  U1672  # CANADIAN SYLLABICS NNGII
+<Multi_key> <C> <A> <S> <asciicircum> <J> <at> : "ᣗ"  U18D7  # CANADIAN SYLLABICS OJIBWAY C
 
 <Multi_key> <C> <A> <S> <J> <v> <space> : "ᒍ"  U148D  # CANADIAN SYLLABICS CO
 <Multi_key> <C> <A> <S> <J> <period> <v> <space> : "ᒎ"  U148E  # CANADIAN SYLLABICS COO
@@ -12823,6 +12841,10 @@ include "%L"
 <Multi_key> <C> <A> <S> <J> <period> <v> <period> : "ᒛ"  U149B  # CANADIAN SYLLABICS WEST-CREE CWOO
 <Multi_key> <C> <A> <S> <asciicircum> <J> <v> : "ᒢ"  U14A2  # CANADIAN SYLLABICS SAYISI TH
 <Multi_key> <C> <A> <S> <J> <v> <backslash> : "ᖌ"  U158C  # CANADIAN SYLLABICS WEST-CREE RO
+<Multi_key> <C> <A> <S> <o> <i> <J> <v> : "ᖑ"  U1591  # CANADIAN SYLLABICS NGO
+<Multi_key> <C> <A> <S> <o> <i> <J> <period> <v> : "ᖒ"  U1592  # CANADIAN SYLLABICS NGOO
+<Multi_key> <C> <A> <S> <o> <o> <i> <J> <v> : "ᙳ"  U1673  # CANADIAN SYLLABICS NNGO
+<Multi_key> <C> <A> <S> <o> <o> <i> <J> <period> <v> : "ᙴ"  U1674  # CANADIAN SYLLABICS NNGOO
 
 <Multi_key> <C> <A> <S> <J> <greater> <space> : "ᒐ"  U1490  # CANADIAN SYLLABICS CA
 <Multi_key> <C> <A> <S> <J> <period> <greater> <space> : "ᒑ"  U1491  # CANADIAN SYLLABICS CAA
@@ -12835,6 +12857,10 @@ include "%L"
 <Multi_key> <C> <A> <S> <period> <s> <period> <J> <greater> : "ᔏ"  U150F  # CANADIAN SYLLABICS NASKAPI SCWA
 <Multi_key> <C> <A> <S> <slash> <J> <greater> : "ᖍ"  U158D  # CANADIAN SYLLABICS WEST-CREE RA
 <Multi_key> <C> <A> <S> <J> <greater> <C> : "ᘂ"  U1602  # CANADIAN SYLLABICS CARRIER NU
+<Multi_key> <C> <A> <S> <o> <i> <J> <greater> : "ᖓ"  U1593  # CANADIAN SYLLABICS NGA
+<Multi_key> <C> <A> <S> <o> <i> <J> <period> <greater> : "ᖔ"  U1594  # CANADIAN SYLLABICS NGAA
+<Multi_key> <C> <A> <S> <o> <o> <i> <J> <greater> : "ᙵ"  U1675  # CANADIAN SYLLABICS NNGA
+<Multi_key> <C> <A> <S> <o> <o> <i> <J> <period> <greater> : "ᙶ"  U1676  # CANADIAN SYLLABICS NNGAA
 
 # ᓓ ᓕ ᓗ ᓚ = >J@ >J^ >J> >Jv
 
@@ -12843,7 +12869,7 @@ include "%L"
 <Multi_key> <C> <A> <S> <greater> <J> <at> <period> : "ᓝ"  U14DD  # CANADIAN SYLLABICS WEST-CREE LWE
 <Multi_key> <C> <A> <S> <greater> <J> <at> <C> : "ᘄ"  U1604  # CANADIAN SYLLABICS CARRIER NE
 <Multi_key> <C> <A> <S> <greater> <J> <bar> <at> : "ᘅ"  U1605  # CANADIAN SYLLABICS CARRIER NEE
-<Multi_key> <C> <A> <S> <greater> <J> <Multi_key> <period> <at> : "ᘆ"  U1606  # CANADIAN SYLLABICS CARRIER NI
+<Multi_key> <C> <A> <S> <greater> <J> <asterisk> <at> : "ᘆ"  U1606  # CANADIAN SYLLABICS CARRIER NI
 
 <Multi_key> <C> <A> <S> <greater> <J> <o> <asciicircum> : "ᓔ"  U14D4  # CANADIAN SYLLABICS LAAI
 <Multi_key> <C> <A> <S> <greater> <J> <asciicircum> <space> : "ᓕ"  U14D5  # CANADIAN SYLLABICS LI
@@ -12871,9 +12897,10 @@ include "%L"
 <Multi_key> <C> <A> <S> <greater> <J> <v> <period> : "ᓧ"  U14E7  # CANADIAN SYLLABICS WEST-CREE LWA
 <Multi_key> <C> <A> <S> <period> <greater> <J> <period> <v> : "ᓨ"  U14E8  # CANADIAN SYLLABICS LWAA
 <Multi_key> <C> <A> <S> <greater> <J> <period> <v> <period> : "ᓩ"  U14E9  # CANADIAN SYLLABICS WEST-CREE LWAA
-<Multi_key> <C> <A> <S> <asciicircum> <greater> <J> <v> : "ᓪ"  U14EA  # CANADIAN SYLLABICS L
+<Multi_key> <C> <A> <S> <asciicircum> <greater> <J> <v> <space> : "ᓪ"  U14EA  # CANADIAN SYLLABICS L
 <Multi_key> <C> <A> <S> <greater> <J> <v> <slash> : "ᖤ"  U15A4  # CANADIAN SYLLABICS LHA
 <Multi_key> <C> <A> <S> <greater> <J> <period> <v> <slash> : "ᖥ"  U15A5  # CANADIAN SYLLABICS LHAA
+<Multi_key> <C> <A> <S> <asciicircum> <greater> <J> <v> <slash> : "ᖦ"  U15A6  # CANADIAN SYLLABICS LH
 <Multi_key> <C> <A> <S> <greater> <J> <v> <C> : "ᘇ"  U1607  # CANADIAN SYLLABICS CARRIER NA
 <Multi_key> <C> <A> <S> <greater> <J> <o> <v> : "ᢽ"  U18BD  # CANADIAN SYLLABICS LAY
 
@@ -12908,7 +12935,8 @@ include "%L"
 <Multi_key> <C> <A> <S> <period> <L> <period> <v> : "ᒸ"  U14B8  # CANADIAN SYLLABICS MWAA
 <Multi_key> <C> <A> <S> <L> <period> <v> <period> : "ᒹ"  U14B9  # CANADIAN SYLLABICS WEST-CREE MWAA
 <Multi_key> <C> <A> <S> <colon> <L> <v> : "ᒺ"  U14BA  # CANADIAN SYLLABICS NASKAPI MWAA
-<Multi_key> <C> <A> <S> <asciicircum> <L> <v> : "ᒻ"  U14BB  # CANADIAN SYLLABICS M
+<Multi_key> <C> <A> <S> <asciicircum> <L> <v> <space> : "ᒻ"  U14BB  # CANADIAN SYLLABICS M
+<Multi_key> <C> <A> <S> <asciicircum> <L> <v> <B> : "ᔈ"  U1508  # CANADIAN SYLLABICS BLACKFOOT S
 <Multi_key> <C> <A> <S> <L> <o> <v> : "ᢺ"  U18BA  # CANADIAN SYLLABICS MAY
 
 # ᓭ ᓯ ᓱ ᓴ  = \v /v /^ \^
@@ -12924,6 +12952,7 @@ include "%L"
 <Multi_key> <C> <A> <S> <slash> <v> <period> : "ᓹ"  U14F9  # CANADIAN SYLLABICS WEST-CREE SWI
 <Multi_key> <C> <A> <S> <period> <slash> <period> <v> : "ᓺ"  U14FA  # CANADIAN SYLLABICS SWII
 <Multi_key> <C> <A> <S> <slash> <period> <v> <period> : "ᓻ"  U14FB  # CANADIAN SYLLABICS WEST-CREE SWII
+<Multi_key> <C> <A> <S> <asciicircum> <slash> <v> : "ᣚ"  U18DA  # CANADIAN SYLLABICS OJIBWAY S
 
 <Multi_key> <C> <A> <S> <slash> <asciicircum> <space> : "ᓱ"  U14F1  # CANADIAN SYLLABICS SO
 <Multi_key> <C> <A> <S> <slash> <period> <asciicircum> <space> : "ᓲ"  U14F2  # CANADIAN SYLLABICS SOO
@@ -12933,6 +12962,7 @@ include "%L"
 <Multi_key> <C> <A> <S> <period> <slash> <period> <asciicircum> : "ᓾ"  U14FE  # CANADIAN SYLLABICS SWOO
 <Multi_key> <C> <A> <S> <slash> <period> <asciicircum> <period> : "ᓿ"  U14FF  # CANADIAN SYLLABICS WEST-CREE SWOO
 <Multi_key> <C> <A> <S> <asciicircum> <slash> <asciicircum> : "ᔇ"  U1507  # CANADIAN SYLLABICS SW
+<Multi_key> <C> <A> <S> <asciicircum> <o> <slash> <asciicircum> : "ᔊ"  U150A  # CANADIAN SYLLABICS NASKAPI SKW
 <Multi_key> <C> <A> <S> <slash> <o> <asciicircum> : "ᢾ"  U18BE  # CANADIAN SYLLABICS SOY
 
 <Multi_key> <C> <A> <S> <backslash> <asciicircum> <space> : "ᓴ"  U14F4  # CANADIAN SYLLABICS SA
@@ -12942,8 +12972,27 @@ include "%L"
 <Multi_key> <C> <A> <S> <period> <backslash> <period> <asciicircum> : "ᔂ"  U1502  # CANADIAN SYLLABICS SWAA
 <Multi_key> <C> <A> <S> <backslash> <period> <asciicircum> <period> : "ᔃ"  U1503  # CANADIAN SYLLABICS WEST-CREE SWAA
 <Multi_key> <C> <A> <S> <colon> <backslash> <asciicircum> : "ᔄ"  U1504  # CANADIAN SYLLABICS NASKAPI SWAA
-<Multi_key> <C> <A> <S> <asciicircum> <backslash> <asciicircum> : "ᔅ"  U1505  # CANADIAN SYLLABICS S
+<Multi_key> <C> <A> <S> <asciicircum> <backslash> <asciicircum> <space> : "ᔅ"  U1505  # CANADIAN SYLLABICS S
+<Multi_key> <C> <A> <S> <asciicircum> <backslash> <asciicircum> <o> : "ᔉ"  U1509  # CANADIAN SYLLABICS MOOSE-CREE SK
 <Multi_key> <C> <A> <S> <backslash> <o> <asciicircum> : "ᢿ"  U18BF  # CANADIAN SYLLABICS SAY
+
+# 𑪰 𑪲 𑪴 = -/v -/^ -\^
+
+<Multi_key> <C> <A> <S> <minus> <slash> <v> : "𑪰"  U11AB0  # CANADIAN SYLLABICS NATTILIK HI
+<Multi_key> <C> <A> <S> <minus> <slash> <period> <v> : "𑪱"  U11AB1  # CANADIAN SYLLABICS NATTILIK HII
+<Multi_key> <C> <A> <S> <minus> <slash> <asciicircum> : "𑪲"  U11AB2  # CANADIAN SYLLABICS NATTILIK HO
+<Multi_key> <C> <A> <S> <minus> <slash> <period> <asciicircum> : "𑪳"  U11AB3  # CANADIAN SYLLABICS NATTILIK HOO
+<Multi_key> <C> <A> <S> <minus> <backslash> <asciicircum> : "𑪴"  U11AB4  # CANADIAN SYLLABICS NATTILIK HA
+<Multi_key> <C> <A> <S> <minus> <backslash> <period> <asciicircum> : "𑪵"  U11AB5  # CANADIAN SYLLABICS NATTILIK HAA
+
+# 𑪶 𑪸 𑪺 = |/v |/^ |\^
+
+<Multi_key> <C> <A> <S> <bar> <slash> <v> : "𑪶"  U11AB6  # CANADIAN SYLLABICS NATTILIK SHRI
+<Multi_key> <C> <A> <S> <bar> <slash> <period> <v> : "𑪷"  U11AB7  # CANADIAN SYLLABICS NATTILIK SHRII
+<Multi_key> <C> <A> <S> <bar> <slash> <asciicircum> : "𑪸"  U11AB8  # CANADIAN SYLLABICS NATTILIK SHRO
+<Multi_key> <C> <A> <S> <bar> <slash> <period> <asciicircum> : "𑪹"  U11AB9  # CANADIAN SYLLABICS NATTILIK SHROO
+<Multi_key> <C> <A> <S> <bar> <backslash> <asciicircum> : "𑪺"  U11ABA  # CANADIAN SYLLABICS NATTILIK SHRA
+<Multi_key> <C> <A> <S> <bar> <backslash> <period> <asciicircum> : "𑪻"  U11ABB  # CANADIAN SYLLABICS NATTILIK SHRAA
 
 # ᔐ ᔑ ᔓ ᔕ = S^ Sv ~v ~^
 
@@ -13062,6 +13111,125 @@ include "%L"
 <Multi_key> <C> <A> <S> <question> <at> : "ᕍ"  U154D  # CANADIAN SYLLABICS WEST-CREE LA
 <Multi_key> <C> <A> <S> <question> <period> <at> : "ᣢ"  U18E2  # CANADIAN SYLLABICS WEST-CREE LAA
 
+# ᘢ ᘣ ᘤ ᘧ = ?Cv ?C^ ?C> ?C<
+
+<Multi_key> <C> <A> <S> <question> <C> <v> : "ᘢ"  U1622  # CANADIAN SYLLABICS CARRIER LU
+<Multi_key> <C> <A> <S> <question> <C> <asciicircum> : "ᘣ"  U1623  # CANADIAN SYLLABICS CARRIER LO
+<Multi_key> <C> <A> <S> <question> <C> <greater> : "ᘤ"  U1624  # CANADIAN SYLLABICS CARRIER LE
+<Multi_key> <C> <A> <S> <question> <C> <bar> <greater> : "ᘥ"  U1625  # CANADIAN SYLLABICS CARRIER LEE
+<Multi_key> <C> <A> <S> <question> <C> <asterisk> <greater> : "ᘦ"  U1626  # CANADIAN SYLLABICS CARRIER LI
+<Multi_key> <C> <A> <S> <question> <C> <less> : "ᘧ"  U1627  # CANADIAN SYLLABICS CARRIER LA
+
+# ᘨ ᘩ ᘪ ᘭ = ?-Cv ?-C^ ?-C> ?-C<
+
+<Multi_key> <C> <A> <S> <question> <minus> <C> <v> : "ᘨ"  U1628  # CANADIAN SYLLABICS CARRIER DLU
+<Multi_key> <C> <A> <S> <question> <minus> <C> <asciicircum> : "ᘩ"  U1629  # CANADIAN SYLLABICS CARRIER DLO
+<Multi_key> <C> <A> <S> <question> <minus> <C> <greater> : "ᘪ"  U162A  # CANADIAN SYLLABICS CARRIER DLE
+<Multi_key> <C> <A> <S> <question> <minus> <C> <bar> <greater> : "ᘫ"  U162B  # CANADIAN SYLLABICS CARRIER DLEE
+<Multi_key> <C> <A> <S> <question> <minus> <C> <asterisk> <greater> : "ᘬ"  U162C  # CANADIAN SYLLABICS CARRIER DLI
+<Multi_key> <C> <A> <S> <question> <minus> <C> <less> : "ᘭ"  U162D  # CANADIAN SYLLABICS CARRIER DLA
+
+# ᘴ ᘵ ᘶ ᘹ = |Cv |C^ |C> |C<
+
+<Multi_key> <C> <A> <S> <bar> <C> <v> : "ᘴ"  U1634  # CANADIAN SYLLABICS CARRIER TLHU
+<Multi_key> <C> <A> <S> <bar> <C> <asciicircum> : "ᘵ"  U1635  # CANADIAN SYLLABICS CARRIER TLHO
+<Multi_key> <C> <A> <S> <bar> <C> <greater> : "ᘶ"  U1636  # CANADIAN SYLLABICS CARRIER TLHE
+<Multi_key> <C> <A> <S> <bar> <C> <bar> <greater> : "ᘷ"  U1637  # CANADIAN SYLLABICS CARRIER TLHEE
+<Multi_key> <C> <A> <S> <bar> <C> <asterisk> <greater> : "ᘸ"  U1638  # CANADIAN SYLLABICS CARRIER TLHI
+<Multi_key> <C> <A> <S> <bar> <C> <less> : "ᘹ"  U1639  # CANADIAN SYLLABICS CARRIER TLHA
+
+# ᘎ ᘏ ᘐ ᘓ = @v @^ @> @<
+
+<Multi_key> <C> <A> <S> <at> <v> : "ᘎ"  U160E  # CANADIAN SYLLABICS CARRIER YU
+<Multi_key> <C> <A> <S> <at> <asciicircum> : "ᘏ"  U160F  # CANADIAN SYLLABICS CARRIER YO
+<Multi_key> <C> <A> <S> <at> <greater> : "ᘐ"  U1610  # CANADIAN SYLLABICS CARRIER YE
+<Multi_key> <C> <A> <S> <at> <bar> <greater> : "ᘑ"  U1611  # CANADIAN SYLLABICS CARRIER YEE
+<Multi_key> <C> <A> <S> <at> <asterisk> <greater> : "ᘒ"  U1612  # CANADIAN SYLLABICS CARRIER YI
+<Multi_key> <C> <A> <S> <at> <less> <space> : "ᘓ"  U1613  # CANADIAN SYLLABICS CARRIER YA
+<Multi_key> <C> <A> <S> <backslash> <at> <less> : "ᘜ"  U161C  # CANADIAN SYLLABICS CARRIER JJU
+<Multi_key> <C> <A> <S> <at> <less> <backslash>  : "ᘝ"  U161D  # CANADIAN SYLLABICS CARRIER JJO
+
+# ᘞ ᘡ = -@^ -@v
+
+<Multi_key> <C> <A> <S> <minus> <at> <asciicircum> : "ᘞ"  U161E  # CANADIAN SYLLABICS CARRIER JJE
+<Multi_key> <C> <A> <S> <minus> <at> <bar> <asciicircum> : "ᘟ"  U161F  # CANADIAN SYLLABICS CARRIER JJEE
+<Multi_key> <C> <A> <S> <minus> <at> <asterisk> <v> : "ᘠ"  U1620  # CANADIAN SYLLABICS CARRIER JJI
+<Multi_key> <C> <A> <S> <minus> <at> <v> : "ᘡ"  U1621  # CANADIAN SYLLABICS CARRIER JJA
+
+# ᘮ ᘯ ᘰ ᘳ = Ov O^ O> O<
+ 
+<Multi_key> <C> <A> <S> <O> <v> : "ᘮ"  U162E  # CANADIAN SYLLABICS CARRIER LHU
+<Multi_key> <C> <A> <S> <O> <asciicircum> : "ᘯ"  U162F  # CANADIAN SYLLABICS CARRIER LHO
+<Multi_key> <C> <A> <S> <O> <greater>  : "ᘰ"  U1630  # CANADIAN SYLLABICS CARRIER LHE
+<Multi_key> <C> <A> <S> <O> <bar> <greater>  : "ᘱ"  U1631  # CANADIAN SYLLABICS CARRIER LHEE
+<Multi_key> <C> <A> <S> <O> <asterisk> <greater> : "ᘲ"  U1632  # CANADIAN SYLLABICS CARRIER LHI
+<Multi_key> <C> <A> <S> <O> <less> : "ᘳ"  U1633  # CANADIAN SYLLABICS CARRIER LHA
+
+# ᙀ ᙁ ᙂ ᙅ = OUv OU^ OU> OU<
+
+<Multi_key> <C> <A> <S> <O> <U> <v> : "ᙀ"  U1640  # CANADIAN SYLLABICS CARRIER ZU
+<Multi_key> <C> <A> <S> <O> <U> <asciicircum> : "ᙁ"  U1641  # CANADIAN SYLLABICS CARRIER ZO
+<Multi_key> <C> <A> <S> <O> <U> <greater> : "ᙂ"  U1642  # CANADIAN SYLLABICS CARRIER ZE
+<Multi_key> <C> <A> <S> <O> <U> <bar> <greater> : "ᙃ"  U1643  # CANADIAN SYLLABICS CARRIER ZEE
+<Multi_key> <C> <A> <S> <O> <U> <asterisk> <greater> : "ᙄ"  U1644  # CANADIAN SYLLABICS CARRIER ZI
+<Multi_key> <C> <A> <S> <O> <U> <less> : "ᙅ"  U1645  # CANADIAN SYLLABICS CARRIER ZA
+<Multi_key> <C> <A> <S> <O> <U> <T> <v> : "ᙈ"  U1648  # CANADIAN SYLLABICS CARRIER DZU
+<Multi_key> <C> <A> <S> <O> <U> <T> <asciicircum> : "ᙉ"  U1649  # CANADIAN SYLLABICS CARRIER DZO
+<Multi_key> <C> <A> <S> <O> <U> <T> <greater> : "ᙊ"  U164A  # CANADIAN SYLLABICS CARRIER DZE
+<Multi_key> <C> <A> <S> <O> <U> <T> <bar> <greater> : "ᙋ"  U164B  # CANADIAN SYLLABICS CARRIER DZEE
+<Multi_key> <C> <A> <S> <O> <U> <T> <period> <greater> : "ᙌ"  U164C  # CANADIAN SYLLABICS CARRIER DZI
+<Multi_key> <C> <A> <S> <O> <U> <T> <less> : "ᙍ"  U164D  # CANADIAN SYLLABICS CARRIER DZA
+
+# ᙏ ᙢ ᘻ = M M_ ,M
+
+<Multi_key> <C> <A> <S> <M> <v> : "ᙎ"  U164E  # CANADIAN SYLLABICS CARRIER SU
+<Multi_key> <C> <A> <S> <M> <asciicircum> : "ᙏ"  U164F  # CANADIAN SYLLABICS CARRIER SO
+<Multi_key> <C> <A> <S> <M> <greater> : "ᙐ"  U1650  # CANADIAN SYLLABICS CARRIER SE
+<Multi_key> <C> <A> <S> <M> <bar> <greater> : "ᙑ"  U1651  # CANADIAN SYLLABICS CARRIER SEE
+<Multi_key> <C> <A> <S> <M> <asterisk> <greater> : "ᙒ"  U1652  # CANADIAN SYLLABICS CARRIER SI
+<Multi_key> <C> <A> <S> <M> <less> : "ᙓ"  U1653  # CANADIAN SYLLABICS CARRIER SA
+<Multi_key> <C> <A> <S> <M> <minus> <v> : "ᙔ"  U1654  # CANADIAN SYLLABICS CARRIER SHU
+<Multi_key> <C> <A> <S> <M> <minus> <asciicircum> : "ᙕ"  U1655  # CANADIAN SYLLABICS CARRIER SHO
+
+<Multi_key> <C> <A> <S> <M> <underscore> <v> : "ᙡ"  U1661  # CANADIAN SYLLABICS CARRIER CHU
+<Multi_key> <C> <A> <S> <M> <underscore> <asciicircum> : "ᙢ"  U1662  # CANADIAN SYLLABICS CARRIER CHO
+<Multi_key> <C> <A> <S> <M> <underscore> <greater> : "ᙣ"  U1663  # CANADIAN SYLLABICS CARRIER CHE
+<Multi_key> <C> <A> <S> <M> <underscore> <bar> <greater> : "ᙤ"  U1664  # CANADIAN SYLLABICS CARRIER CHEE
+<Multi_key> <C> <A> <S> <M> <underscore> <asterisk> <greater> : "ᙥ"  U1665  # CANADIAN SYLLABICS CARRIER CHI
+<Multi_key> <C> <A> <S> <M> <underscore> <less> : "ᙦ"  U1666  # CANADIAN SYLLABICS CARRIER CHA
+
+<Multi_key> <C> <A> <S> <comma> <M> <v> : "ᘺ"  U163A  # CANADIAN SYLLABICS CARRIER TLU
+<Multi_key> <C> <A> <S> <comma> <M> <asciicircum> : "ᘻ"  U163B  # CANADIAN SYLLABICS CARRIER TLO
+<Multi_key> <C> <A> <S> <comma> <M> <greater> : "ᘼ"  U163C  # CANADIAN SYLLABICS CARRIER TLE
+<Multi_key> <C> <A> <S> <comma> <M> <bar> <greater> : "ᘽ"  U163D  # CANADIAN SYLLABICS CARRIER TLEE
+<Multi_key> <C> <A> <S> <comma> <M> <asterisk> <greater> : "ᘾ"  U163E  # CANADIAN SYLLABICS CARRIER TLI
+<Multi_key> <C> <A> <S> <comma> <M> <less> : "ᘿ"  U163F  # CANADIAN SYLLABICS CARRIER TLA
+<Multi_key> <C> <A> <S> <M> <comma> <less> : "ᘿ"  U163F  # CANADIAN SYLLABICS CARRIER TLA
+
+# ᖼ ᖽ ᖾ ᖿ = M/v /Wv W\v \Mv
+
+<Multi_key> <C> <A> <S> <M> <slash> <v> : "ᖼ"  U15BC  # CANADIAN SYLLABICS BLACKFOOT KE
+<Multi_key> <C> <A> <S> <slash> <W> <v> : "ᖽ"  U15BD  # CANADIAN SYLLABICS BLACKFOOT KI
+<Multi_key> <C> <A> <S> <W> <backslash> <v> : "ᖾ"  U15BE  # CANADIAN SYLLABICS BLACKFOOT KO
+<Multi_key> <C> <A> <S> <backslash> <M> <v> : "ᖿ"  U15BF  # CANADIAN SYLLABICS BLACKFOOT KA
+
+# ᘈ ᘉ ᘊ ᘍ = w\v \mv m/> /w>
+
+<Multi_key> <C> <A> <S> <w> <backslash> <v> : "ᘈ"  U1608  # CANADIAN SYLLABICS CARRIER MU
+<Multi_key> <C> <A> <S> <backslash> <m> <v> : "ᘉ"  U1609  # CANADIAN SYLLABICS CARRIER MO
+<Multi_key> <C> <A> <S> <m> <slash> <greater> : "ᘊ"  U160A  # CANADIAN SYLLABICS CARRIER ME
+<Multi_key> <C> <A> <S> <m> <slash> <bar> <greater> : "ᘋ"  U160B  # CANADIAN SYLLABICS CARRIER MEE
+<Multi_key> <C> <A> <S> <m> <slash> <asterisk> <greater> : "ᘌ"  U160C  # CANADIAN SYLLABICS CARRIER MI
+<Multi_key> <C> <A> <S> <slash> <w> <greater> : "ᘍ"  U160D  # CANADIAN SYLLABICS CARRIER MA
+
+# ᗀ ᗁ ᗂ ᗃ = h/> h/v h/@ h/^
+
+<Multi_key> <C> <A> <S> <h> <slash> <greater> : "ᗀ"  U15C0  # CANADIAN SYLLABICS SAYISI HE
+<Multi_key> <C> <A> <S> <h> <slash> <v> : "ᗁ"  U15C1  # CANADIAN SYLLABICS SAYISI HI
+<Multi_key> <C> <A> <S> <h> <slash> <at> : "ᗂ"  U15C2  # CANADIAN SYLLABICS SAYISI HO
+<Multi_key> <C> <A> <S> <h> <slash> <asciicircum> : "ᗃ"  U15C3  # CANADIAN SYLLABICS SAYISI HA
+<Multi_key> <C> <A> <S> <h> <slash> <period> <at> : "ᣬ"  U18EC  # CANADIAN SYLLABICS SAYISI HOO
+
 # ᘔ ᘕ ᘖ ᘗ ᘚ ᘛ = 2@ 2^ 2v >2v >2^ >2@
 
 <Multi_key> <C> <A> <S> <2> <at> : "ᘔ"  U1614  # CANADIAN SYLLABICS CARRIER JU
@@ -13072,10 +13240,12 @@ include "%L"
 <Multi_key> <C> <A> <S> <greater> <2> <bar> <v> : "ᘘ"  U1618  # CANADIAN SYLLABICS CARRIER JEE
 <Multi_key> <C> <A> <S> <greater> <2> <asterisk> <v>  : "ᘙ"  U1619  # CANADIAN SYLLABICS CARRIER JI
 <Multi_key> <C> <A> <S> <greater> <2> <asciicircum>  : "ᘚ"  U161A  # CANADIAN SYLLABICS SAYISI JI
-<Multi_key> <C> <A> <S> <greater> <2> <at>  : "ᘛ"  U161B  # CANADIAN SYLLABICS CARRIER JA
+<Multi_key> <C> <A> <S> <greater> <2> <at> <space> : "ᘛ"  U161B  # CANADIAN SYLLABICS CARRIER JA
+<Multi_key> <C> <A> <S> <greater> <2> <at> <period> : "ᣲ"  U18F2  # CANADIAN SYLLABICS CARRIER JWA
 
-# 3 A B F h R W
+# ᗱ ᗅ ᗷ ᖴ ᖺ 𑪾 ᖇ ᐪ ᕒ 𑪼 =  3 A B F h N R T W Z (see >3 and ]3 below for ᗽ and ᙖ)
 
+<Multi_key> <C> <A> <S> <asciicircum> <3> <v> : "ᐜ"  U141C  # CANADIAN SYLLABICS AI
 <Multi_key> <C> <A> <S> <3> <v> <space> : "ᗯ"  U15EF  # CANADIAN SYLLABICS CARRIER GU
 <Multi_key> <C> <A> <S> <3> <v> <period> : "ᣭ"  U18ED  # CANADIAN SYLLABICS CARRIER GWU
 <Multi_key> <C> <A> <S> <3> <asciicircum> : "ᗰ"  U15F0  # CANADIAN SYLLABICS CARRIER GO
@@ -13111,6 +13281,9 @@ include "%L"
 <Multi_key> <C> <A> <S> <h> <v> : "ᖺ"  U15BA  # CANADIAN SYLLABICS BLACKFOOT NO
 <Multi_key> <C> <A> <S> <v> <at> : "ᖻ"  U15BB  # CANADIAN SYLLABICS BLACKFOOT NA
 
+<Multi_key> <C> <A> <S> <N> <v> : "𑪾"  U11ABE  # CANADIAN SYLLABICS SPO
+<Multi_key> <C> <A> <S> <N> <greater> : "𑪿"  U11ABF  # CANADIAN SYLLABICS SPA
+
 <Multi_key> <C> <A> <S> <R> <greater> <space> : "ᖆ"  U1586  # CANADIAN SYLLABICS TLHE
 <Multi_key> <C> <A> <S> <R> <greater> <period> : "ᣨ"  U18E8  # CANADIAN SYLLABICS TLHWE
 <Multi_key> <C> <A> <S> <R> <v> : "ᖇ"  U1587  # CANADIAN SYLLABICS TLHI
@@ -13118,20 +13291,45 @@ include "%L"
 <Multi_key> <C> <A> <S> <R> <period> <at> : "ᣩ"  U18E9  # CANADIAN SYLLABICS TLHOO
 <Multi_key> <C> <A> <S> <R> <asciicircum> : "ᖉ"  U1589  # CANADIAN SYLLABICS TLHA
 
+<Multi_key> <C> <A> <S> <asciicircum> <T> <v> : "ᐪ"  U142A  # CANADIAN SYLLABICS FINAL DOWN TACK
+<Multi_key> <C> <A> <S> <asciicircum> <T> <asciicircum> : "ᗮ"  U15EE  # CANADIAN SYLLABICS CARRIER P
+
 <Multi_key> <C> <A> <S> <asciicircum> <W> <less> : "ᓫ"  U14EB  # CANADIAN SYLLABICS WEST-CREE L
 <Multi_key> <C> <A> <S> <W> <less> : "ᓬ"  U14EC  # CANADIAN SYLLABICS MEDIAL L
 <Multi_key> <C> <A> <S> <W> <asciicircum> : "ᔿ"  U153F  # CANADIAN SYLLABICS BIBLE-CREE Y
 <Multi_key> <C> <A> <S> <asciicircum> <W> <greater> : "ᕑ"  U1551  # CANADIAN SYLLABICS WEST-CREE R
 <Multi_key> <C> <A> <S> <W> <greater> : "ᕒ"  U1552  # CANADIAN SYLLABICS MEDIAL R
 
-# ᗽ ᗡ ᗧ ᗌ = >3 C| C< |>
+<Multi_key> <C> <A> <S> <Z> <v> : "𑪼"  U11ABC  # CANADIAN SYLLABICS SPE
+<Multi_key> <C> <A> <S> <Z> <greater> : "𑪽"  U11ABD  # CANADIAN SYLLABICS SPI
 
-<Multi_key> <C> <A> <S> <less> <3> <v> : "ᗻ"  U15FB  # CANADIAN SYLLABICS CARRIER KKU
-<Multi_key> <C> <A> <S> <less> <3> <asciicircum> : "ᗼ"  U15FC  # CANADIAN SYLLABICS CARRIER KKO
-<Multi_key> <C> <A> <S> <less> <3> <greater> : "ᗽ"  U15FD  # CANADIAN SYLLABICS CARRIER KKE
-<Multi_key> <C> <A> <S> <less> <3> <bar> <greater> : "ᗾ"  U15FE  # CANADIAN SYLLABICS CARRIER KKEE
-<Multi_key> <C> <A> <S> <less> <3> <asterisk> <greater> : "ᗿ"  U15FF  # CANADIAN SYLLABICS CARRIER KKI
-<Multi_key> <C> <A> <S> <less> <3> <less> : "ᘀ"  U1600  # CANADIAN SYLLABICS CARRIER KKA
+# ᗽ ᙖ ᗡ ᗧ ᗪ ᗌ ᗨ = >3 ]3 C| C< |D |> -U
+
+<Multi_key> <C> <A> <S> <greater> <3> <v> : "ᗻ"  U15FB  # CANADIAN SYLLABICS CARRIER KKU
+<Multi_key> <C> <A> <S> <greater> <3> <asciicircum> : "ᗼ"  U15FC  # CANADIAN SYLLABICS CARRIER KKO
+<Multi_key> <C> <A> <S> <greater> <3> <greater> : "ᗽ"  U15FD  # CANADIAN SYLLABICS CARRIER KKE
+<Multi_key> <C> <A> <S> <greater> <3> <bar> <greater> : "ᗾ"  U15FE  # CANADIAN SYLLABICS CARRIER KKEE
+<Multi_key> <C> <A> <S> <greater> <3> <asterisk> <greater> : "ᗿ"  U15FF  # CANADIAN SYLLABICS CARRIER KKI
+<Multi_key> <C> <A> <S> <greater> <3> <less> : "ᘀ"  U1600  # CANADIAN SYLLABICS CARRIER KKA
+
+<Multi_key> <C> <A> <S> <bar> <greater> <3> <v> : "ᙧ"  U1667  # CANADIAN SYLLABICS CARRIER TTSU
+<Multi_key> <C> <A> <S> <bar> <greater> <3> <asciicircum> : "ᙨ"  U1668  # CANADIAN SYLLABICS CARRIER TTSO
+<Multi_key> <C> <A> <S> <bar> <greater> <3> <greater> : "ᙩ"  U1669  # CANADIAN SYLLABICS CARRIER TTSE
+<Multi_key> <C> <A> <S> <bar> <greater> <3> <bar> <greater> : "ᙪ"  U166A  # CANADIAN SYLLABICS CARRIER TTSEE
+<Multi_key> <C> <A> <S> <bar> <greater> <3> <asterisk> <greater> : "ᙫ"  U166B  # CANADIAN SYLLABICS CARRIER TTSI
+<Multi_key> <C> <A> <S> <bar> <greater> <3> <less> : "ᙬ"  U166C  # CANADIAN SYLLABICS CARRIER TTSA
+
+<Multi_key> <C> <A> <S> <bracketright> <3> <greater> : "ᙖ"  U1656  # CANADIAN SYLLABICS CARRIER SHE
+<Multi_key> <C> <A> <S> <bracketright> <bar> <3> <greater> : "ᙗ"  U1657  # CANADIAN SYLLABICS CARRIER SHEE
+<Multi_key> <C> <A> <S> <bracketright> <asterisk> <3> <greater> : "ᙘ"  U1658  # CANADIAN SYLLABICS CARRIER SHI
+<Multi_key> <C> <A> <S> <bracketright> <3> <less> : "ᙙ"  U1659  # CANADIAN SYLLABICS CARRIER SHA
+
+<Multi_key> <C> <A> <S> <bar> <bracketright> <3> <v> : "ᙛ"  U165B  # CANADIAN SYLLABICS CARRIER TSU
+<Multi_key> <C> <A> <S> <bar> <bracketright> <3> <asciicircum> : "ᙜ"  U165C  # CANADIAN SYLLABICS CARRIER TSO
+<Multi_key> <C> <A> <S> <bar> <bracketright> <3> <greater> : "ᙝ"  U165D  # CANADIAN SYLLABICS CARRIER TSE
+<Multi_key> <C> <A> <S> <bar> <bracketright> <3> <bar> <greater> : "ᙞ"  U165E  # CANADIAN SYLLABICS CARRIER TSEE
+<Multi_key> <C> <A> <S> <bar> <bracketright> <3> <asterisk> <greater> : "ᙟ"  U165F  # CANADIAN SYLLABICS CARRIER TSI
+<Multi_key> <C> <A> <S> <bar> <bracketright> <3> <less> : "ᙠ"  U1660  # CANADIAN SYLLABICS CARRIER TSA
 
 <Multi_key> <C> <A> <S> <C> <bar> <v> : "ᗜ"  U15DC  # CANADIAN SYLLABICS CARRIER THU
 <Multi_key> <C> <A> <S> <C> <bar> <asciicircum> : "ᗝ"  U15DD  # CANADIAN SYLLABICS CARRIER THO
@@ -13147,6 +13345,11 @@ include "%L"
 <Multi_key> <C> <A> <S> <C> <less> <period> <greater> : "ᗦ"  U15E6  # CANADIAN SYLLABICS CARRIER TTI
 <Multi_key> <C> <A> <S> <C> <less> <less> : "ᗧ"  U15E7  # CANADIAN SYLLABICS CARRIER TTA
 
+<Multi_key> <C> <A> <S> <bar> <D> <greater> : "ᗪ"  U15EA  # CANADIAN SYLLABICS CARRIER PE
+<Multi_key> <C> <A> <S> <bar> <D> <bar> <greater> : "ᗫ"  U15EB  # CANADIAN SYLLABICS CARRIER PEE
+<Multi_key> <C> <A> <S> <bar> <D> <asterisk> <greater> : "ᗬ"  U15EC  # CANADIAN SYLLABICS CARRIER PI
+<Multi_key> <C> <A> <S> <bar> <D> <less> : "ᗭ"  U15ED  # CANADIAN SYLLABICS CARRIER PA
+
 <Multi_key> <C> <A> <S> <bar> <greater> <v> : "ᗊ"  U15CA  # CANADIAN SYLLABICS CARRIER RU
 <Multi_key> <C> <A> <S> <bar> <greater> <asciicircum> : "ᗋ"  U15CB  # CANADIAN SYLLABICS CARRIER RO
 <Multi_key> <C> <A> <S> <bar> <greater> <greater> : "ᗌ"  U15CC  # CANADIAN SYLLABICS CARRIER RE
@@ -13154,34 +13357,50 @@ include "%L"
 <Multi_key> <C> <A> <S> <bar> <greater> <period> <greater> : "ᗎ"  U15CE  # CANADIAN SYLLABICS CARRIER RI
 <Multi_key> <C> <A> <S> <bar> <greater> <less> : "ᗏ"  U15CF  # CANADIAN SYLLABICS CARRIER RA
 
+<Multi_key> <C> <A> <S> <minus> <U> <v> : "ᗨ"  U15E8  # CANADIAN SYLLABICS CARRIER PU
+<Multi_key> <C> <A> <S> <minus> <U> <asciicircum> : "ᗩ"  U15E9  # CANADIAN SYLLABICS CARRIER PO
+
 # non-orientable shapes
 
+<Multi_key> <C> <A> <S> <period> <asciicircum> : "ᐧ"  U1427  # CANADIAN SYLLABICS FINAL MIDDLE DOT
+<Multi_key> <C> <A> <S> <asciicircum> <period> <space> : "ᣟ"  U18DF  # CANADIAN SYLLABICS FINAL RAISED DOT
 <Multi_key> <C> <A> <S> <equal> : "᐀"  U1400  # CANADIAN SYLLABICS HYPHEN
 <Multi_key> <C> <A> <S> <asciicircum> <equal> : "ᙿ"  U167F  # CANADIAN SYLLABICS BLACKFOOT W
+<Multi_key> <C> <A> <S> <bar> <equal> : "ᙾ"  U167E  # CANADIAN SYLLABICS WOODS-CREE FINAL TH
 <Multi_key> <C> <A> <S> <plus> : "ᕀ"  U1540  # CANADIAN SYLLABICS WEST-CREE Y
 <Multi_key> <C> <A> <S> <asciicircum> <plus> : "ᐩ"  U1429  # CANADIAN SYLLABICS FINAL PLUS
+<Multi_key> <C> <A> <S> <asciicircum> <minus> <space> : "ᐨ"  U1428  # CANADIAN SYLLABICS FINAL SHORT HORIZONTAL STROKE
 <Multi_key> <C> <A> <S> <asciicircum> <asterisk> <asterisk> : "ᕯ"  U156F  # CANADIAN SYLLABICS TTH
+<Multi_key> <C> <A> <S> <asciicircum> <slash> <space> : "ᐟ"  U141F  # CANADIAN SYLLABICS FINAL ACUTE
 <Multi_key> <C> <A> <S> <asciicircum> <slash> <slash> : "ᐥ"  U1425  # CANADIAN SYLLABICS FINAL DOUBLE ACUTE
+<Multi_key> <C> <A> <S> <asciicircum> <slash> <o> : "ᐝ"  U141D  # CANADIAN SYLLABICS Y-CREE W
+<Multi_key> <C> <A> <S> <asciicircum> <backslash> <space> : "ᐠ"  U1420  # CANADIAN SYLLABICS FINAL GRAVE
+<Multi_key> <C> <A> <S> <asciicircum> <bar> <space> : "ᑊ"  U144A  # CANADIAN SYLLABICS WEST-CREE P
 <Multi_key> <C> <A> <S> <asciicircum> <bar> <bar> : "ᐦ"  U1426  # CANADIAN SYLLABICS FINAL DOUBLE SHORT VERTICAL STROKES
+<Multi_key> <C> <A> <S> <asciicircum> <dollar> : "ᙚ"  U165A  # CANADIAN SYLLABICS CARRIER SH
 
 <Multi_key> <C> <A> <S> <asciicircum> <2> <space> : "ᒾ"  U14BE  # CANADIAN SYLLABICS ATHAPASCAN M
-<Multi_key> <C> <A> <S> <2> <space> : "ᒿ"  U14BF  # CANADIAN SYLLABICS SAYISI M
+<Multi_key> <C> <A> <S> <2> <2> : "ᒿ"  U14BF  # CANADIAN SYLLABICS SAYISI M
 
+<Multi_key> <C> <A> <S> <b> <b> : "ᖯ"  U15AF  # CANADIAN SYLLABICS AIVILIK B
 <Multi_key> <C> <A> <S> <H> <v> : "ᕼ"  U157C  # CANADIAN SYLLABICS NUNAVUT H
-
+<Multi_key> <C> <A> <S> <asciicircum> <h> : "ᑋ"  U144B  # CANADIAN SYLLABICS CARRIER H
 <Multi_key> <C> <A> <S> <asciicircum> <l> : "ᣳ"  U18F3  # CANADIAN SYLLABICS BEAVER DENE L
+<Multi_key> <C> <A> <S> <asciicircum> <O> : "ᐤ"  U1424  # CANADIAN SYLLABICS FINAL RING
+<Multi_key> <C> <A> <S> <asciicircum> <o> <space> : "ᣞ"  U18DE  # CANADIAN SYLLABICS FINAL SMALL RING
+<Multi_key> <C> <A> <S> <asciicircum> <o> <o> <space> : "ᐝ"  U141D  # CANADIAN SYLLABICS Y-CREE W
+<Multi_key> <C> <A> <S> <asciicircum> <o> <i> : "ᖕ"  U1595  # CANADIAN SYLLABICS NG
+<Multi_key> <C> <A> <S> <asciicircum> <o> <o> <i> : "ᖖ"  U1596  # CANADIAN SYLLABICS NNG
 <Multi_key> <C> <A> <S> <asciicircum> <r> : "ᣴ"  U18F4  # CANADIAN SYLLABICS BEAVER DENE R
-<Multi_key> <C> <A> <S> <asciicircum> <s> : "ᣵ"  U18F5  # CANADIAN SYLLABICS CARRIER DENTAL S
-
+<Multi_key> <C> <A> <S> <asciicircum> <s> <A> : "ᔆ"  U1506  # CANADIAN SYLLABICS ATHAPASCAN S
+<Multi_key> <C> <A> <S> <asciicircum> <s> <C> : "ᣵ"  U18F5  # CANADIAN SYLLABICS CARRIER DENTAL S
+<Multi_key> <C> <A> <S> <asciicircum> <period> <s> <period> : "ᔋ"  U150B  # CANADIAN SYLLABICS NASKAPI S-W
 <Multi_key> <C> <A> <S> <X> : "᙭"  U166D  # CANADIAN SYLLABICS CHI SIGN
 <Multi_key> <C> <A> <S> <underscore> <X> : "᙮"  U166E  # CANADIAN SYLLABICS FULL STOP
 <Multi_key> <C> <A> <S> <asciicircum> <X> : "ᕽ"  U157D  # CANADIAN SYLLABICS HK
 <Multi_key> <C> <A> <S> <x> : "ᕁ"  U1541  # CANADIAN SYLLABICS SAYISI YI
-
 <Multi_key> <C> <A> <S> <asciicircum> <Z> : "ᙆ"  U1646  # CANADIAN SYLLABICS CARRIER Z
 <Multi_key> <C> <A> <S> <asciicircum> <bar> <Z> : "ᙇ"  U1647  # CANADIAN SYLLABICS CARRIER INITIAL Z
-
-# TODO: ...
 
 # (c = Carrier Syllabics) see https://www.ydli.org/dakinfo/dulkwah.htm
 
