@@ -33069,11 +33069,14 @@ include "Logograms"
 
 # bars, codas, repetitions and pauses
 <Multi_key> <numbersign> <bar> <space>       : "𝄀" U1D100    # MUSICAL SYMBOL SINGLE BARLINE
-<Multi_key> <numbersign> <bar> <bar> <space> : "𝄁" U1D101    # MUSICAL SYMBOL DOUBLE BARLINE
-<Multi_key> <numbersign> <bar> <bar> <bar>   : "𝄂" U1D102    # MUSICAL SYMBOL FINAL BARLINE
+<Multi_key> <numbersign> <bar> <bar>         : "𝄁" U1D101    # MUSICAL SYMBOL DOUBLE BARLINE
+<Multi_key> <numbersign> <bar> <Multi_key> <bar> : "𝄂" U1D102    # MUSICAL SYMBOL FINAL BARLINE
+<Multi_key> <numbersign> <Multi_key> <bar> <bar> <space> : "𝄃"  U1D103  # MUSICAL SYMBOL REVERSE FINAL BARLINE
 <Multi_key> <numbersign> <period> <bar>      : "𝄄" U1D104    # MUSICAL SYMBOL DASHED BARLINE
-<Multi_key> <numbersign> <bar> <bar> <colon> : "𝄆" U1D106    # MUSICAL SYMBOL LEFT REPEAT SIGN
-<Multi_key> <numbersign> <colon> <bar> <bar> : "𝄇" U1D107    # MUSICAL SYMBOL RIGHT REPEAT SIGN
+<Multi_key> <numbersign> <space> <bar>       : "𝄅"  U1D105  # MUSICAL SYMBOL SHORT BARLINE
+<Multi_key> <numbersign> <Multi_key> <bar> <bar> <colon> : "𝄆" U1D106    # MUSICAL SYMBOL LEFT REPEAT SIGN
+<Multi_key> <numbersign> <colon> <bar> <Multi_key> <bar> : "𝄇" U1D107    # MUSICAL SYMBOL RIGHT REPEAT SIGN
+<Multi_key> <numbersign> <colon> <space>     : "𝄈"  U1D108  # MUSICAL SYMBOL REPEAT DOTS
 <Multi_key> <numbersign> <d> <s>             : "𝄉" U1D109    # MUSICAL SYMBOL DAL SEGNO
 <Multi_key> <numbersign> <d> <c>             : "𝄊" U1D10A    # MUSICAL SYMBOL DA CAPO
 <Multi_key> <numbersign> <s> <e> <g> <n> <o> : "𝄋" U1D10B    # MUSICAL SYMBOL SEGNO
@@ -33095,8 +33098,8 @@ include "Logograms"
 <Multi_key> <numbersign> <4> <equal> : "𝄙"  U1D119  # MUSICAL SYMBOL FOUR-LINE STAFF
 <Multi_key> <numbersign> <5> <equal> : "𝄚"  U1D11A  # MUSICAL SYMBOL FIVE-LINE STAFF
 <Multi_key> <numbersign> <6> <equal> : "𝄛"  U1D11B  # MUSICAL SYMBOL SIX-LINE STAFF
-<Multi_key> <numbersign> <6> <numbersign> : "𝄜"  U1D11C  # MUSICAL SYMBOL SIX-STRING FRETBOARD
-<Multi_key> <numbersign> <4> <numbersign> : "𝄝"  U1D11D  # MUSICAL SYMBOL FOUR-STRING FRETBOARD
+<Multi_key> <numbersign> <6> <bar> <bar> : "𝄜"  U1D11C  # MUSICAL SYMBOL SIX-STRING FRETBOARD
+<Multi_key> <numbersign> <4> <bar> <bar> : "𝄝"  U1D11D  # MUSICAL SYMBOL FOUR-STRING FRETBOARD
 
 # notes
 <Multi_key> <numbersign> <n> <b>             : "𝅜" U1D15C    # MUSICAL SYMBOL BREVE
@@ -33145,15 +33148,43 @@ include "Logograms"
 <Multi_key> <numbersign> <numbersign>        : "♯" U266F    # MUSIC SHARP SIGN
 <Multi_key> <numbersign> <2> <numbersign>    : "𝄪" U1D12A    # MUSICAL SYMBOL DOUBLE SHARP
 <Multi_key> <numbersign> <2> <b>             : "𝄫" U1D12B    # MUSICAL SYMBOL DOUBLE FLAT
+<Multi_key> <numbersign> <asciicircum> <b>   : "𝄬"  U1D12C  # MUSICAL SYMBOL FLAT UP
+<Multi_key> <numbersign> <v> <b>             : "𝄭"  U1D12D  # MUSICAL SYMBOL FLAT DOWN
+<Multi_key> <numbersign> <asciicircum> <equal> : "𝄮"  U1D12E  # MUSICAL SYMBOL NATURAL UP
+<Multi_key> <numbersign> <v> <equal>         : "𝄯"  U1D12F  # MUSICAL SYMBOL NATURAL DOWN
+<Multi_key> <numbersign> <asciicircum> <numbersign> : "𝄰"  U1D130  # MUSICAL SYMBOL SHARP UP
+<Multi_key> <numbersign> <v> <numbersign>    : "𝄱"  U1D131  # MUSICAL SYMBOL SHARP DOWN
+<Multi_key> <numbersign> <4> <numbersign>    : "𝄲"  U1D132  # MUSICAL SYMBOL QUARTER TONE SHARP
+<Multi_key> <numbersign> <4> <b>             : "𝄳"  U1D133  # MUSICAL SYMBOL QUARTER TONE FLAT
 <Multi_key> <numbersign> <4> <4>             : "𝄴" U1D134    # MUSICAL SYMBOL COMMON TIME
 <Multi_key> <numbersign> <2> <2>             : "𝄵" U1D135    # MUSICAL SYMBOL CUT TIME
 
 # note heads
 <Multi_key> <numbersign> <h> <x>             : "𝅃" U1D143    # MUSICAL SYMBOL X NOTEHEAD
 <Multi_key> <numbersign> <h> <plus>          : "𝅄" U1D144    # MUSICAL SYMBOL PLUS NOTEHEAD
-<Multi_key> <numbersign> <h> <bracketleft> <bracketright> : "𝅆" U1D146    # MUSICAL SYMBOL SQUARE NOTEHEAD WHITE
+<Multi_key> <numbersign> <h> <parenleft> <asterisk> <parenright> : "𝅅"  U1D145  # MUSICAL SYMBOL CIRCLE X NOTEHEAD
+<Multi_key> <numbersign> <h> <bracketleft> <bracketright> <0> : "𝅆" U1D146    # MUSICAL SYMBOL SQUARE NOTEHEAD WHITE
+<Multi_key> <numbersign> <h> <bracketleft> <bracketright> <1> : "𝅇"  U1D147  # MUSICAL SYMBOL SQUARE NOTEHEAD BLACK
+<Multi_key> <numbersign> <h> <slash> <backslash> <0> : "𝅈"  U1D148  # MUSICAL SYMBOL TRIANGLE NOTEHEAD UP WHITE
+<Multi_key> <numbersign> <h> <slash> <backslash> <1> : "𝅉"  U1D149  # MUSICAL SYMBOL TRIANGLE NOTEHEAD UP BLACK
+<Multi_key> <numbersign> <h> <bar> <backslash> <0> : "𝅊"  U1D14A  # MUSICAL SYMBOL TRIANGLE NOTEHEAD LEFT WHITE
+<Multi_key> <numbersign> <h> <bar> <backslash> <1> : "𝅋"  U1D14B  # MUSICAL SYMBOL TRIANGLE NOTEHEAD LEFT BLACK
+<Multi_key> <numbersign> <h> <slash> <bar> <0> : "𝅌"  U1D14C  # MUSICAL SYMBOL TRIANGLE NOTEHEAD RIGHT WHITE
+<Multi_key> <numbersign> <h> <slash> <bar> <1> : "𝅍"  U1D14D  # MUSICAL SYMBOL TRIANGLE NOTEHEAD RIGHT BLACK
+<Multi_key> <numbersign> <h> <backslash> <slash> <0> : "𝅎"  U1D14E  # MUSICAL SYMBOL TRIANGLE NOTEHEAD DOWN WHITE
+<Multi_key> <numbersign> <h> <backslash> <slash> <1> : "𝅏"  U1D14F  # MUSICAL SYMBOL TRIANGLE NOTEHEAD DOWN BLACK
+<Multi_key> <numbersign> <h> <backslash> <bar> <0> : "𝅐"  U1D150  # MUSICAL SYMBOL TRIANGLE NOTEHEAD UP RIGHT WHITE
+<Multi_key> <numbersign> <h> <backslash> <bar> <1> : "𝅑"  U1D151  # MUSICAL SYMBOL TRIANGLE NOTEHEAD UP RIGHT BLACK
+<Multi_key> <numbersign> <h> <U> <0>         : "𝅒"  U1D152  # MUSICAL SYMBOL MOON NOTEHEAD WHITE
+<Multi_key> <numbersign> <h> <U> <1>         : "𝅓"  U1D153  # MUSICAL SYMBOL MOON NOTEHEAD BLACK
+<Multi_key> <numbersign> <h> <V> <0>         : "𝅔"  U1D154  # MUSICAL SYMBOL TRIANGLE-ROUND NOTEHEAD DOWN WHITE
+<Multi_key> <numbersign> <h> <V> <1>         : "𝅕"  U1D155  # MUSICAL SYMBOL TRIANGLE-ROUND NOTEHEAD DOWN BLACK
+<Multi_key> <numbersign> <h> <parenleft> <parenright> : "𝅖"  U1D156  # MUSICAL SYMBOL PARENTHESIS NOTEHEAD
 <Multi_key> <numbersign> <h> <o>             : "𝅗" U1D157    # MUSICAL SYMBOL VOID NOTEHEAD
 <Multi_key> <numbersign> <h> <asterisk>      : "𝅘" U1D158    # MUSICAL SYMBOL NOTEHEAD BLACK
+<Multi_key> <numbersign> <h> <space>         : "𝅙"  U1D159  # MUSICAL SYMBOL NULL NOTEHEAD
+<Multi_key> <numbersign> <h> <bracketleft> <space> <bracketright> <v> <0> : "𝅚"  U1D15A  # MUSICAL SYMBOL CLUSTER NOTEHEAD WHITE
+<Multi_key> <numbersign> <h> <bracketleft> <space> <bracketright> <v> <1> : "𝅛"  U1D15B  # MUSICAL SYMBOL CLUSTER NOTEHEAD BLACK
 
 # stems and flags
 <Multi_key> <numbersign> <bar> <Return>      : "𝅥" U1D165    # MUSICAL SYMBOL COMBINING STEM
@@ -33164,15 +33195,41 @@ include "Logograms"
 <Multi_key> <numbersign> <bar> <4> <Return>  : "𝅱" U1D171    # MUSICAL SYMBOL COMBINING FLAG-4
 <Multi_key> <numbersign> <bar> <5> <Return>  : "𝅲" U1D172    # MUSICAL SYMBOL COMBINING FLAG-5
 
+# beams and slurs
+<Multi_key> <numbersign> <parenleft> <b> <Return> : "𝅳"  U1D173  # MUSICAL SYMBOL BEGIN BEAM
+<Multi_key> <numbersign> <parenright> <b> <Return> : "𝅴"  U1D174  # MUSICAL SYMBOL END BEAM
+<Multi_key> <numbersign> <parenleft> <t> <Return> : "𝅵"  U1D175  # MUSICAL SYMBOL BEGIN TIE
+<Multi_key> <numbersign> <parenright> <t> <Return> : "𝅶"  U1D176  # MUSICAL SYMBOL END TIE
+<Multi_key> <numbersign> <parenleft> <s> <Return> : "𝅷"  U1D177  # MUSICAL SYMBOL BEGIN SLUR
+<Multi_key> <numbersign> <parenright> <s> <Return> : "𝅸"  U1D178  # MUSICAL SYMBOL END SLUR
+<Multi_key> <numbersign> <parenleft> <p> <Return> : "𝅹"  U1D179  # MUSICAL SYMBOL BEGIN PHRASE
+<Multi_key> <numbersign> <parenright> <p> <Return> : "𝅺"  U1D17A  # MUSICAL SYMBOL END PHRASE
+
 # articulation and instrumentation
 <Multi_key> <numbersign> <slash> <Return>    : "𝅧" U1D167    # MUSICAL SYMBOL COMBINING TREMOLO-1
 <Multi_key> <numbersign> <slash> <slash> <Return> : "𝅨" U1D168    # MUSICAL SYMBOL COMBINING TREMOLO-2
 <Multi_key> <numbersign> <slash> <slash> <slash> <Return> : "𝅩" U1D169    # MUSICAL SYMBOL COMBINING TREMOLO-3
+<Multi_key> <numbersign> <space> <slash> <space> : "𝅪"  U1D16A  # MUSICAL SYMBOL FINGERED TREMOLO-1
+<Multi_key> <numbersign> <space> <slash> <slash> <space> : "𝅫"  U1D16B  # MUSICAL SYMBOL FINGERED TREMOLO-2
+<Multi_key> <numbersign> <space> <slash> <slash> <slash> : "𝅬"  U1D16C  # MUSICAL SYMBOL FINGERED TREMOLO-3
 <Multi_key> <numbersign> <greater> <Return>  : "𝅻" U1D17B    # MUSICAL SYMBOL COMBINING ACCENT
 <Multi_key> <numbersign> <period> <Return>   : "𝅼" U1D17C    # MUSICAL SYMBOL COMBINING STACCATO
 <Multi_key> <numbersign> <underscore> <Return> : "𝅽" U1D17D    # MUSICAL SYMBOL COMBINING TENUTO
 <Multi_key> <numbersign> <period> <period> <Return> : "𝅾" U1D17E    # MUSICAL SYMBOL COMBINING STACCATISSIMO
 <Multi_key> <numbersign> <asciicircum> <Return> : "𝅿" U1D17F    # MUSICAL SYMBOL COMBINING MARCATO
+<Multi_key> <numbersign> <asciicircum> <period> <Return> : "𝆀"  U1D180  # MUSICAL SYMBOL COMBINING MARCATO-STACCATO
+<Multi_key> <numbersign> <greater> <period> <Return> : "𝆁"  U1D181  # MUSICAL SYMBOL COMBINING ACCENT-STACCATO
+<Multi_key> <numbersign> <minus> <period> <Return> : "𝆂"  U1D182  # MUSICAL SYMBOL COMBINING LOURE
+<Multi_key> <numbersign> <z> <asciicircum> : "𝆃"  U1D183  # MUSICAL SYMBOL ARPEGGIATO UP
+<Multi_key> <numbersign> <z> <v> : "𝆄"  U1D184  # MUSICAL SYMBOL ARPEGGIATO DOWN
+<Multi_key> <numbersign> <parenright> <Return> : "𝆅"  U1D185  # MUSICAL SYMBOL COMBINING DOIT
+<Multi_key> <numbersign> <parenleft> <Return> : "𝆆"  U1D186  # MUSICAL SYMBOL COMBINING RIP
+<Multi_key> <numbersign> <bar> <backslash> <Return> : "𝆇"  U1D187  # MUSICAL SYMBOL COMBINING FLIP
+<Multi_key> <numbersign> <asciitilde> <Return> : "𝆈"  U1D188  # MUSICAL SYMBOL COMBINING SMEAR
+<Multi_key> <numbersign> <U> <Return> : "𝆉"  U1D189  # MUSICAL SYMBOL COMBINING BEND
+<Multi_key> <numbersign> <2> <period> <parenright> : "𝆊"  U1D18A  # MUSICAL SYMBOL COMBINING DOUBLE TONGUE
+<Multi_key> <numbersign> <colon> <parenright> : "𝆊"  U1D18A  # MUSICAL SYMBOL COMBINING DOUBLE TONGUE
+<Multi_key> <numbersign> <3> <period> <parenright> : "𝆋"  U1D18B  # MUSICAL SYMBOL COMBINING TRIPLE TONGUE
 <Multi_key> <numbersign> <bracketleft> <Return> : "𝆪" U1D1AA    # MUSICAL SYMBOL COMBINING DOWN BOW
 <Multi_key> <numbersign> <v> <Return>        : "𝆫" U1D1AB    # MUSICAL SYMBOL COMBINING UP BOW
 <Multi_key> <numbersign> <o> <Return>        : "𝆬" U1D1AC    # MUSICAL SYMBOL COMBINING HARMONIC
@@ -33196,14 +33253,32 @@ include "Logograms"
 <Multi_key> <numbersign> <o> <asciitilde>    : "𝆗" U1D197    # MUSICAL SYMBOL TURN
 <Multi_key> <numbersign> <o> <less> <asciitilde> : "𝆘" U1D198    # MUSICAL SYMBOL INVERTED TURN
 <Multi_key> <numbersign> <o> <bar> <asciitilde> : "𝆙" U1D199    # MUSICAL SYMBOL TURN SLASH
+<Multi_key> <numbersign> <o> <less> <S>      : "𝆚"  U1D19A  # MUSICAL SYMBOL TURN UP
 <Multi_key> <numbersign> <o> <m>             : "𝆜𝆝" U1D19C U1D19D    # UPPER MORDENT
 <Multi_key> <numbersign> <o> <bar> <m>       : "𝆜𝆠𝆝" U1D19C U1D1A0 U1D19D    # LOWER MORDENT
+
+<Multi_key> <numbersign> <o> <l>             : "𝆛"  U1D19B  # MUSICAL SYMBOL ORNAMENT STROKE-1
+<Multi_key> <numbersign> <o> <asciicircum>   : "𝆜"  U1D19C  # MUSICAL SYMBOL ORNAMENT STROKE-2
+<Multi_key> <numbersign> <o> <N>             : "𝆝"  U1D19D  # MUSICAL SYMBOL ORNAMENT STROKE-3
+<Multi_key> <numbersign> <o> <parenright> <asciicircum> : "𝆞"  U1D19E  # MUSICAL SYMBOL ORNAMENT STROKE-4
+<Multi_key> <numbersign> <o> <parenright> <v> : "𝆟"  U1D19F  # MUSICAL SYMBOL ORNAMENT STROKE-5
+<Multi_key> <numbersign> <o> <bar> <space>   : "𝆠"  U1D1A0  # MUSICAL SYMBOL ORNAMENT STROKE-6
+<Multi_key> <numbersign> <o> <I>             : "𝆠"  U1D1A0  # MUSICAL SYMBOL ORNAMENT STROKE-6
+<Multi_key> <numbersign> <o> <a>             : "𝆡"  U1D1A1  # MUSICAL SYMBOL ORNAMENT STROKE-7
+<Multi_key> <numbersign> <o> <c>             : "𝆢"  U1D1A2  # MUSICAL SYMBOL ORNAMENT STROKE-8
+<Multi_key> <numbersign> <o> <n>             : "𝆣"  U1D1A3  # MUSICAL SYMBOL ORNAMENT STROKE-9
+<Multi_key> <numbersign> <o> <u>             : "𝆤"  U1D1A4  # MUSICAL SYMBOL ORNAMENT STROKE-10
+<Multi_key> <numbersign> <o> <i>             : "𝆥"  U1D1A5  # MUSICAL SYMBOL ORNAMENT STROKE-11
 
 # other
 <Multi_key> <numbersign> <8> <v> <a>         : "𝄶"  U1D136  # MUSICAL SYMBOL OTTAVA ALTA
 <Multi_key> <numbersign> <8> <v> <b>         : "𝄷"  U1D137  # MUSICAL SYMBOL OTTAVA BASSA
 <Multi_key> <numbersign> <1> <5> <v> <a>     : "𝄸"  U1D138  # MUSICAL SYMBOL QUINDICESIMA ALTA
 <Multi_key> <numbersign> <1> <5> <v> <b>     : "𝄹"  U1D139  # MUSICAL SYMBOL QUINDICESIMA BASSA
+<Multi_key> <numbersign> <H> <T>             : "𝆦"  U1D1A6  # MUSICAL SYMBOL HAUPTSTIMME
+<Multi_key> <numbersign> <N> <T>             : "𝆧"  U1D1A7  # MUSICAL SYMBOL NEBENSTIMME
+<Multi_key> <numbersign> <parenleft> <T>     : "𝆨"  U1D1A8  # MUSICAL SYMBOL END OF STIMME
+<Multi_key> <numbersign> <slash> <o>         : "𝆩"  U1D1A9  # MUSICAL SYMBOL DEGREE SLASH
 <Multi_key> <numbersign> <P> <e> <d>         : "𝆮" U1D1AE    # MUSICAL SYMBOL PEDAL MARK
 <Multi_key> <numbersign> <P> <u> <p>         : "𝆯" U1D1AF    # MUSICAL SYMBOL PEDAL UP MARK
 <Multi_key> <numbersign> <P> <asciicircum>   : "𝆰" U1D1B0    # MUSICAL SYMBOL HALF PEDAL MARK
@@ -33211,6 +33286,10 @@ include "Logograms"
 <Multi_key> <numbersign> <asciitilde> <v>    : "𝆲" U1D1B2    # MUSICAL SYMBOL GLISSANDO DOWN
 <Multi_key> <numbersign> <g> <asciicircum>   : "𝆱" U1D1B1    # MUSICAL SYMBOL GLISSANDO UP
 <Multi_key> <numbersign> <g> <v>             : "𝆲" U1D1B2    # MUSICAL SYMBOL GLISSANDO DOWN
+<Multi_key> <numbersign> <n> <a> <i> <l>     : "𝆳"  U1D1B3  # MUSICAL SYMBOL WITH FINGERNAILS
+<Multi_key> <numbersign> <o> <plus>          : "𝆴"  U1D1B4  # MUSICAL SYMBOL DAMP
+<Multi_key> <numbersign> <O> <o> <plus>      : "𝆵"  U1D1B5  # MUSICAL SYMBOL DAMP ALL
+<Multi_key> <numbersign> <x> <x>             : "𝇏"  U1D1CF  # MUSICAL SYMBOL CROIX
 
 # M = mensural notation
 
@@ -33242,7 +33321,45 @@ include "Logograms"
 <Multi_key> <numbersign> <M> <4> <8> : "𝇌"  U1D1CC  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-1
 <Multi_key> <numbersign> <M> <2> <4> : "𝇎"  U1D1CE  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-3
 
-# G = ancient greek notation
+# G = gregorian notation (shares namespace with ancient greek notation)
+
+<Multi_key> <numbersign> <G> <at> <c> : "𝇐"  U1D1D0  # MUSICAL SYMBOL GREGORIAN C CLEF
+<Multi_key> <numbersign> <G> <at> <f> : "𝇑"  U1D1D1  # MUSICAL SYMBOL GREGORIAN F CLEF
+
+<Multi_key> <numbersign> <G> <b> : "𝇒"  U1D1D2  # MUSICAL SYMBOL SQUARE B
+
+<Multi_key> <numbersign> <G> <n> <1> : "𝇓"  U1D1D3  # MUSICAL SYMBOL VIRGA
+<Multi_key> <numbersign> <G> <n> <2> <asciicircum> : "𝇔"  U1D1D4  # MUSICAL SYMBOL PODATUS
+<Multi_key> <numbersign> <G> <n> <2> <v> : "𝇕"  U1D1D5  # MUSICAL SYMBOL CLIVIS
+<Multi_key> <numbersign> <G> <n> <3> <asciicircum> <asciicircum> : "𝇖"  U1D1D6  # MUSICAL SYMBOL SCANDICUS
+<Multi_key> <numbersign> <G> <n> <3> <v> <v> : "𝇗"  U1D1D7  # MUSICAL SYMBOL CLIMACUS
+<Multi_key> <numbersign> <G> <n> <3> <asciicircum> <v> : "𝇘"  U1D1D8  # MUSICAL SYMBOL TORCULUS
+<Multi_key> <numbersign> <G> <n> <3> <v> <asciicircum> : "𝇙"  U1D1D9  # MUSICAL SYMBOL PORRECTUS
+<Multi_key> <numbersign> <G> <n> <4> <v> <asciicircum> <v> : "𝇚"  U1D1DA  # MUSICAL SYMBOL PORRECTUS FLEXUS
+<Multi_key> <numbersign> <G> <n> <4> <asciicircum> <asciicircum> <v> : "𝇛"  U1D1DB  # MUSICAL SYMBOL SCANDICUS FLEXUS
+<Multi_key> <numbersign> <G> <n> <4> <asciicircum> <v> <asciicircum> : "𝇜"  U1D1DC  # MUSICAL SYMBOL TORCULUS RESUPINUS
+<Multi_key> <numbersign> <G> <n> <4> <asciicircum> <v> <v> : "𝇝"  U1D1DD  # MUSICAL SYMBOL PES SUBPUNCTIS
+
+# K = kievan notation
+
+<Multi_key> <numbersign> <K> <at> <c> : "𝇞"  U1D1DE  # MUSICAL SYMBOL KIEVAN C CLEF
+<Multi_key> <numbersign> <K> <bracketright> : "𝇟"  U1D1DF  # MUSICAL SYMBOL KIEVAN END OF PIECE
+<Multi_key> <numbersign> <K> <n> <bracketright> : "𝇠"  U1D1E0  # MUSICAL SYMBOL KIEVAN FINAL NOTE
+<Multi_key> <numbersign> <K> <n> <equal> : "𝇡"  U1D1E1  # MUSICAL SYMBOL KIEVAN RECITATIVE MARK
+<Multi_key> <numbersign> <K> <n> <1> <slash> : "𝇢"  U1D1E2  # MUSICAL SYMBOL KIEVAN WHOLE NOTE
+<Multi_key> <numbersign> <K> <n> <2> <slash> : "𝇣"  U1D1E3  # MUSICAL SYMBOL KIEVAN HALF NOTE
+<Multi_key> <numbersign> <K> <n> <4> <slash> <v> : "𝇤"  U1D1E4  # MUSICAL SYMBOL KIEVAN QUARTER NOTE STEM DOWN
+<Multi_key> <numbersign> <K> <n> <4> <slash> <asciicircum> : "𝇥"  U1D1E5  # MUSICAL SYMBOL KIEVAN QUARTER NOTE STEM UP
+<Multi_key> <numbersign> <K> <n> <8> <slash> <v> : "𝇦"  U1D1E6  # MUSICAL SYMBOL KIEVAN EIGHTH NOTE STEM DOWN
+<Multi_key> <numbersign> <K> <n> <8> <slash> <asciicircum> : "𝇧"  U1D1E7  # MUSICAL SYMBOL KIEVAN EIGHTH NOTE STEM UP
+<Multi_key> <numbersign> <K> <b> : "𝇨"  U1D1E8  # MUSICAL SYMBOL KIEVAN FLAT SIGN
+
+# I = iranian classical notation
+
+<Multi_key> <numbersign> <I> <numbersign> : "𝇩"  U1D1E9  # MUSICAL SYMBOL SORI
+<Multi_key> <numbersign> <I> <b> : "𝇪"  U1D1EA  # MUSICAL SYMBOL KORON
+
+# G = ancient greek notation (shares namespace with gregorian notation)
 
 <Multi_key> <numbersign> <G> <minus> <2> <Return> : "̅"  U0305   # COMBINING OVERLINE (DISEME) (unconfirmed)
 <Multi_key> <numbersign> <G> <minus> <3> <Return> : "𝉂"  U1D242  # COMBINING GREEK MUSICAL TRISEME
