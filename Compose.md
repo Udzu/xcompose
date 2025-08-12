@@ -50,7 +50,7 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Logograms/undeciphered**: Anatolian Hieroglyphs, Cuneiform, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B, Phaistos Disc (4835): 𔐅 𒆛 𒿌 𓀁 𐙞 𐇑 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (5550)
+### Symbols (5574)
 * **Emoji** (1521): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (197): 🗫 🯅 ㋡ etc
 * **Math and science** (520): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
@@ -63,6 +63,6 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Alchemical symbols** (116): 🜇 🜢 🝖 etc
 * **I Ching** (166): ䷇ ☰☷☲☵ etc
 * **Hieroglyphs** (300): 𓁖 𓁹 𓃠 etc
-* **Arrows** (359): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
+* **Arrows** (383): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
 * **Geometric shapes** (292): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (665): ╞╦╕ etc
