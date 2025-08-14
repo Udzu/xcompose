@@ -9,10 +9,10 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (635)
+### Common script characters (639)
 * **Spaces** (15): NBSP MMSP ZWSP etc
 * **Dashes** (12): – — ⁓ ⸻ etc
-* **Brackets** (40): ⟨ ⟦ ⸨ ⌈ ⫽ etc
+* **Brackets** (44): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
 * **General punctuation** (69): ⁁ ⁂ ⸎ etc
 * **Currency symbols** (26): ₱ ₿ ₪ etc
@@ -50,12 +50,12 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Logograms/undeciphered**: Anatolian Hieroglyphs, Cuneiform, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B, Phaistos Disc (4835): 𔐅 𒆛 𒿌 𓀁 𐙞 𐇑 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (5574)
+### Symbols (5604)
 * **Emoji** (1521): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (197): 🗫 🯅 ㋡ etc
-* **Math and science** (520): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Math and science** (543): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
-* **Technical** (107): ⏻ ⎙ ⌘ etc
+* **Technical** (108): ⏻ ⎙ ⌘ etc
 * **Numerals** (391): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (364): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (358): ♞c6 🩡 🂽 🁖 🀄︎ etc
@@ -64,5 +64,5 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **I Ching** (166): ䷇ ☰☷☲☵ etc
 * **Hieroglyphs** (300): 𓁖 𓁹 𓃠 etc
 * **Arrows** (383): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
-* **Geometric shapes** (292): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
+* **Geometric shapes** (298): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (665): ╞╦╕ etc

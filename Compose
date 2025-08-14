@@ -97,6 +97,10 @@ include "%L"
 <Multi_key> <apostrophe> <bracketright>      : "⦐"  U2990  # RIGHT SQUARE BRACKET WITH TICK IN TOP CORNER
 <Multi_key> <1> <less> <bracketleft>         : "⦗"  U2997  # LEFT BLACK TORTOISE SHELL BRACKET
 <Multi_key> <1> <greater> <bracketright>     : "⦘"  U2998  # RIGHT BLACK TORTOISE SHELL BRACKET
+<Multi_key> <parenleft> <greater> <less>     : "⧘"  U29D8  # LEFT WIGGLY FENCE
+<Multi_key> <parenright> <less> <greater>    : "⧙"  U29D9  # RIGHT WIGGLY FENCE
+<Multi_key> <parenleft> <greater> <parenleft> <greater> : "⧚"  U29DA  # LEFT DOUBLE WIGGLY FENCE
+<Multi_key> <parenright> <less> <parenright> <less> : "⧛"  U29DB  # RIGHT DOUBLE WIGGLY FENCE
 <Multi_key> <minus> <less> <parenleft>       : "⧼"  U29FC  # LEFT-POINTING CURVED ANGLE BRACKET
 <Multi_key> <greater> <minus> <parenright>   : "⧽"  U29FD  # RIGHT-POINTING CURVED ANGLE BRACKET
 <Multi_key> <parenleft> <slash> <slash>      : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR
@@ -28571,6 +28575,7 @@ include "Logograms"
 <Multi_key> <plus> <2>                : "⨧"  U2A27   # PLUS SIGN WITH SUBSCRIPT TWO
 <Multi_key> <o> <plus>                : "⨢"  U2A22   # PLUS SIGN WITH SMALL CIRCLE ABOVE
 <Multi_key> <period> <plus>           : "∔"  U2214   # DOT PLUS
+<Multi_key> <3> <plus>                : "⧻"  U29FB  # TRIPLE PLUS
 <Multi_key> <plus> <underscore> <period>      : "⨥"  U2A25   # PLUS SIGN WITH DOT BELOW
 <Multi_key> <asciitilde> <plus> <space>       : "⨤"  U2A24   # PLUS SIGN WITH TILDE ABOVE
 <Multi_key> <plus> <underscore> <asciitilde>  : "⨦"  U2A26   # PLUS SIGN WITH TILDE BELOW
@@ -28817,9 +28822,15 @@ include "Logograms"
 <Multi_key> <parenleft> <asterisk> <parenright>      : "⊗"  U2297   # CIRCLED TIMES
 <Multi_key> <parenleft> <slash> <parenright>         : "⊘"  U2298   # CIRCLED DIVISION SLASH
 <Multi_key> <parenleft> <period> <parenright>        : "⊙"  U2299  # CIRCLED DOT OPERATOR
+<Multi_key> <parenleft> <space> <minus> <space> <parenright> : "⊝"  U229D  # CIRCLED DASH (conflicts with ˘, use ␣()
+<Multi_key> <parenleft> <backslash> <bar> <parenright> : "⦷"  U29B7  # CIRCLED PARALLEL
 <Multi_key> <parenleft> <backslash> <parenright>     : "⦸"  U29B8   # CIRCLED REVERSE SOLIDUS
+<Multi_key> <parenleft> <ampersand> <F> <parenright> : "⦹"  U29B9  # CIRCLED PERPENDICULAR
+<Multi_key> <parenleft> <period> <slash> <period> <parenright> : "⦼"  U29BC  # CIRCLED ANTICLOCKWISE-ROTATED DIVISION SIGN
 <Multi_key> <parenleft> <less> <parenright>          : "⧀"  U29C0   # CIRCLED LESS-THAN
 <Multi_key> <parenleft> <greater> <parenright>       : "⧁"  U29C1   # CIRCLED GREATER-THAN
+<Multi_key> <parenleft> <asterisk> <asciicircum> <parenright> : "⨶"  U2A36  # CIRCLED MULTIPLICATION SIGN WITH CIRCUMFLEX ACCENT
+<Multi_key> <parenleft> <asciicircum> <asterisk> <parenright> : "⨶"  U2A36  # CIRCLED MULTIPLICATION SIGN WITH CIRCUMFLEX ACCENT
 <Multi_key> <parenleft> <minus> <colon> <parenright> : "⨸"  U2A38   # CIRCLED DIVISION SIGN (conflicts with useless {)
 <Multi_key> <bracketleft> <asterisk> <bracketright>  : "⧆"  U29C6   # SQUARED ASTERISK
 <Multi_key> <bracketleft> <slash> <backslash> <bracketright> : "⟎"  U27CE   # SQUARED LOGICAL AND
@@ -28904,6 +28915,10 @@ include "Logograms"
 <Multi_key> <P> <H> <I>                 : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
 <Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 
+<Multi_key> <2> <l> <a> <n> <d>         : "⩕"  U2A55  # TWO INTERSECTING LOGICAL AND
+<Multi_key> <2> <L> <A> <N> <D>         : "⨇"  U2A07  # TWO LOGICAL AND OPERATOR
+<Multi_key> <2> <l> <o> <r>             : "⩖"  U2A56  # TWO INTERSECTING LOGICAL OR
+<Multi_key> <2> <L> <O> <R>             : "⨈"  U2A08  # TWO LOGICAL OR OPERATOR
 <Multi_key> <a> <n> <g> <l> <e>         : "∠"  U2220   # ANGLE
 <Multi_key> <a> <s> <space>             : "∶"  U2236   # RATIO (AS)
 <Multi_key> <b> <e> <t> <w> <e> <e> <n> : "≬"  U226C   # BETWEEN (conflicts with ĕ, use ue)
@@ -28942,6 +28957,7 @@ include "Logograms"
 <Multi_key> <i> <i> <i> <i> <n> <t>     : "⨌"  U2A0C   # QUADRUPLE INTEGRAL OPERATOR
 <Multi_key> <i> <i> <i> <n> <t>         : "∭"  U222D   # TRIPLE INTEGRAL
 <Multi_key> <i> <i> <n> <t>             : "∬"  U222C   # DOUBLE INTEGRAL
+<Multi_key> <i> <n> <f> <space>         : "⧜"  U29DC  # INCOMPLETE INFINITY (use 88 for ∞ or infty for ♾️)
 <Multi_key> <i> <n> <t>                 : "∫"  U222B   # INTEGRAL
 <Multi_key> <i> <n> <space>             : "∈"  U2208   # ELEMENT OF (alternatively isin)
 <Multi_key> <i> <s> <i> <n>             : "∈"  U2208   # ELEMENT OF
@@ -29108,6 +29124,20 @@ include "Logograms"
 <Multi_key> <ampersand> <C>           : "⊂"  U2282   # SUBSET OF (CONSEQUENCE OF)
 <Multi_key> <ampersand> <less> <C>    : "⊃"  U2283   # SUPERSET OF (IMPLIES)
 <Multi_key> <ampersand> <ampersand>   : "⅋" U214B    # TURNED AMPERSAND (INTENSIONAL DISJUNCTION)
+
+<Multi_key> <ampersand> <period> <asciicircum>         : "⟑"  U27D1  # AND WITH DOT
+<Multi_key> <ampersand> <bar> <asciicircum>            : "⩚"  U2A5A  # LOGICAL AND WITH MIDDLE STEM
+<Multi_key> <ampersand> <minus> <asciicircum>          : "⩜"  U2A5C  # LOGICAL AND WITH HORIZONTAL DASH
+<Multi_key> <ampersand> <2> <minus> <asciicircum>      : "⩞"  U2A5E  # LOGICAL AND WITH DOUBLE OVERBAR
+<Multi_key> <ampersand> <underscore> <asciicircum>     : "⩟"  U2A5F  # LOGICAL AND WITH UNDERBAR
+<Multi_key> <ampersand> <2> <underscore> <asciicircum> : "⩠"  U2A60  # LOGICAL AND WITH DOUBLE UNDERBAR
+<Multi_key> <ampersand> <period> <V>                   : "⟇"  U27C7  # OR WITH DOT INSIDE
+<Multi_key> <ampersand> <bar> <V>                      : "⩛"  U2A5B  # LOGICAL OR WITH MIDDLE STEM
+<Multi_key> <ampersand> <minus> <V>                    : "⩝"  U2A5D  # LOGICAL OR WITH HORIZONTAL DASH
+<Multi_key> <ampersand> <2> <minus> <V>                : "⩢"  U2A62  # LOGICAL OR WITH DOUBLE OVERBAR
+<Multi_key> <ampersand> <2> <underscore> <V>           : "⩣"  U2A63  # LOGICAL OR WITH DOUBLE UNDERBAR
+<Multi_key> <ampersand> <Multi_key> <V> <asciicircum>  : "⩙"  U2A59  # LOGICAL OR OVERLAPPING LOGICAL AND
+<Multi_key> <ampersand> <Multi_key> <asciicircum> <V>  : "⩙"  U2A59  # LOGICAL OR OVERLAPPING LOGICAL AND
 
 <Multi_key> <ampersand> <bracketleft> <bracketright> : "□"  U25A1   # WHITE SQUARE (NECESSITY)
 <Multi_key> <ampersand> <less> <greater>             : "◇"  U25C7   # WHITE DIAMOND (POSSIBILITY)
@@ -31604,6 +31634,8 @@ include "Logograms"
 <Multi_key> <bracketleft> <bracketright> <o>           : "⧇" U29C7    # SQUARED SMALL CIRCLE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <0>       : "⧈" U29C8    # SQUARED SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <equal> <0>   : "⧮"  U29EE  # ERROR-BARRED WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <equal> <1>   : "⧯"  U29EF  # ERROR-BARRED BLACK SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <c>           : "▢" U25A2    # WHITE SQUARE WITH ROUNDED CORNERS (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <minus>      : "▤" U25A4   # SQUARE WITH HORIZONTAL FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <bar>        : "▥" U25A5   # SQUARE WITH VERTICAL FILL (conflicts)
@@ -31681,7 +31713,9 @@ include "Logograms"
 <Multi_key> <parenleft> <parenright> <Multi_key> <period> <minus> : "⊙" U2299    # CIRCLED DOT OPERATOR
 <Multi_key> <parenleft> <parenright> <o>           : "⊚" U229A    # CIRCLED RING OPERATOR
 <Multi_key> <parenleft> <parenright> <asterisk>    : "⊛" U229B    # CIRCLED ASTERISK OPERATOR
-<Multi_key> <parenleft> <parenright> <equal>       : "⊜" U229C    # CIRCLED EQUALS
+<Multi_key> <parenleft> <parenright> <equal> <space> : "⊜" U229C    # CIRCLED EQUALS
+<Multi_key> <parenleft> <parenright> <equal> <0>   : "⧲"  U29F2  # ERROR-BARRED WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <equal> <1>   : "⧳"  U29F3  # ERROR-BARRED BLACK CIRCLE
 <Multi_key> <parenleft> <parenright> <2> <0>       : "◎" U25CE    # BULLSEYE
 <Multi_key> <parenleft> <parenright> <2> <1>       : "◉" U25C9    # FISHEYE
 <Multi_key> <parenleft> <parenright> <Multi_key> <bar>   : "◍" U25CD    # CIRCLE WITH VERTICAL FILL
@@ -31787,6 +31821,8 @@ include "Logograms"
 <Multi_key> <Tab> <less> <greater> <period>      : "⟐" U27D0   # WHITE DIAMOND WITH CENTRED DOT
 <Multi_key> <Tab> <less> <greater> <question>    : "�" UFFFD   # REPLACEMENT CHARACTER
 <Multi_key> <Tab> <less> <greater> <underscore>  : "⍚"  U235A  # APL FUNCTIONAL SYMBOL DIAMOND UNDERBAR
+<Multi_key> <Tab> <less> <greater> <equal> <0>   : "⧰"  U29F0  # ERROR-BARRED WHITE DIAMOND
+<Multi_key> <Tab> <less> <greater> <equal> <1>   : "⧱"  U29F1  # ERROR-BARRED BLACK DIAMOND
 <Multi_key> <Tab> <less> <greater> <exclam>      : "𜲍"  U1CC8D  # INVERSE BLACK DIAMOND
 <Multi_key> <Tab> <less> <greater> <Return>      : "⃟" U20DF   # COMBINING ENCLOSING DIAMOND
 
@@ -35216,6 +35252,8 @@ include "Logograms"
 <Multi_key> <backslash> <m> <o> <u> <s> <e> <1> : "🖯"  U1F5AF  # ONE BUTTON MOUSE
 <Multi_key> <backslash> <m> <o> <u> <s> <e> <2> : "🖰"  U1F5B0  # TWO BUTTON MOUSE
 <Multi_key> <backslash> <m> <o> <u> <s> <e> <3> : "🖱"  U1F5B1  # THREE BUTTON MOUSE
+<Multi_key> <backslash> <t> <b> <a> <l> <l>     : "🖲"  U1F5B2  # TRACKBALL
+<Multi_key> <backslash> <t> <r> <a> <c> <k> <b> : "🖲"  U1F5B2  # TRACKBALL
 <Multi_key> <backslash> <h> <a> <r> <d>         : "🖴"  U1F5B4  # HARD DISK
 <Multi_key> <backslash> <s> <c> <r> <e> <e> <n> : "🖵"  U1F5B5  # SCREEN
 <Multi_key> <backslash> <p> <r> <i> <n> <t>     : "🖶"  U1F5B6  # PRINTER ICON (use \prtsc for ⎙)
