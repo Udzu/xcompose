@@ -3,18 +3,18 @@
 
 > Link: https://github.com/Udzu/xcompose/blob/master/Compose
 
-This repo also hosts my personal .XCompose file, which contains over 47 000 memorable compose key sequences. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.  Note that the shortcuts for Hangul syllables and logograms are in separate files.
+This repo also hosts my personal .XCompose file, which contains over 48 000 memorable compose key sequences. To use them, copy all or parts of the config into your ~/.XCompose file. You can browse the sequences either directly in the config or using the [xcompose](https://github.com/Udzu/xcompose/) utility.  Note that the shortcuts for Hangul syllables and logograms are in separate files.
 
 The file aims for memorability and consistency. As a result, a small number of the rules here conflict with the default system rules, with workarounds given in the comments (e.g. \<underscore>'s usefulness for subscripting often interferes with its system use for macrons, for which \<minus> works equally well as an alternative).
 
 ## Table of contents and examples
 
-### Common script characters (639)
+### Common script characters (644)
 * **Spaces** (15): NBSP MMSP ZWSP etc
-* **Dashes** (12): – — ⁓ ⸻ etc
-* **Brackets** (44): ⟨ ⟦ ⸨ ⌈ ⫽ etc
+* **Dashes** (13): – — ⁓ ⸻ etc
+* **Brackets** (46): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
-* **General punctuation** (69): ⁁ ⁂ ⸎ etc
+* **General punctuation** (71): ⁁ ⁂ ⸎ etc
 * **Currency symbols** (26): ₱ ₿ ₪ etc
 * **Combining diacritics** (190): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (272): RLI PDI ZWJ VS16 etc
@@ -50,19 +50,19 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Logograms/undeciphered**: Anatolian Hieroglyphs, Cuneiform, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B, Phaistos Disc (4835): 𔐅 𒆛 𒿌 𓀁 𐙞 𐇑 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (5604)
+### Symbols (5643)
 * **Emoji** (1521): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
-* **Sprites** (197): 🗫 🯅 ㋡ etc
-* **Math and science** (543): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Sprites** (223): 🗫 🯅 ㋡ etc
+* **Math and science** (547): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (108): ⏻ ⎙ ⌘ etc
 * **Numerals** (391): 𝍸𝍷 𝍵 Ⅻ ↁ etc
 * **Music** (364): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
 * **Games** (358): ♞c6 🩡 🂽 🁖 🀄︎ etc
-* **Astrology** (87): ♈ 🐉 🌒 ☿ ♇ etc
+* **Astrology** (91): ♈ 🐉 🌒 ☿ ♇ etc
 * **Alchemical symbols** (116): 🜇 🜢 🝖 etc
 * **I Ching** (166): ䷇ ☰☷☲☵ etc
 * **Hieroglyphs** (300): 𓁖 𓁹 𓃠 etc
-* **Arrows** (383): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
+* **Arrows** (388): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
 * **Geometric shapes** (298): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (665): ╞╦╕ etc

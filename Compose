@@ -57,6 +57,7 @@ include "%L"
 <Multi_key> <minus> <3>                  : "⸻"  U2E3B  # THREE-EM DASH
 <Multi_key> <quotedbl> <minus>           : "⸚"  U2E1A  # HYPHEN WITH DIAERESIS
 <Multi_key> <2> <minus>                  : "⹀"  U2E40  # DOUBLE HYPHEN
+<Multi_key> <slash> <slash> <minus>      : "⸗"  U2E17  # DOUBLE OBLIQUE HYPHEN (conflicts with useless \)
 
 ############
 # Brackets #
@@ -106,6 +107,8 @@ include "%L"
 <Multi_key> <parenleft> <slash> <slash>      : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR
 <Multi_key> <parenright> <slash> <slash>     : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR
 <Multi_key> <slash> <slash> <slash>          : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
+<Multi_key> <U> <parenleft>                  : "⸦"  U2E26  # LEFT SIDEWAYS U BRACKET
+<Multi_key> <U> <parenright>                 : "⸧"  U2E27  # RIGHT SIDEWAYS U BRACKET
 <Multi_key> <parenleft> <parenleft>          : "⸨"  U2E28  # LEFT DOUBLE PARENTHESIS (conflicts with useless [)
 <Multi_key> <parenright> <parenright>        : "⸩"  U2E29  # RIGHT DOUBLE PARENTHESIS (conflicts with useless ])
 
@@ -168,6 +171,8 @@ include "%L"
 <Multi_key> <v> <parenleft> <space>      : "⁀"  U2040  # CHARACTER TIE
 <Multi_key> <v> <parenleft> <parenright> : "⁐"  U2050  # CLOSE UP
 
+<Multi_key> <slash> <Multi_key> <colon>  : "⸓"  U2E13  # DOTTED OBELOS
+<Multi_key> <greater> <Multi_key> <colon> : "⸖"  U2E16  # DOTTED RIGHT-POINTING ANGLE
 <Multi_key> <asciitilde> <Multi_key> <o> : "⸛"  U2E1B  # TILDE WITH RING ABOVE
 <Multi_key> <asciitilde> <asciicircum> <period> : "⸞"  U2E1E  # TILDE WITH DOT ABOVE
 <Multi_key> <asciitilde> <underscore> <period> : "⸟"  U2E1F  # TILDE WITH DOT BELOW
@@ -28880,6 +28885,11 @@ include "Logograms"
 <Multi_key> <underscore> <Multi_key> <i> <n> <t>     : "⨜"  U2A1C  # INTEGRAL WITH UNDERBAR
 <Multi_key> <o> <Multi_key> <s> <u> <m>              : "⨊"  U2A0A  # MODULO TWO SUM
 
+<Multi_key> <Multi_key> <parenleft> <parenright> <Return> : "⁡"  U2061  # FUNCTION APPLICATION
+<Multi_key> <Multi_key> <asterisk> <Return>          : "⁢"  U2062  # INVISIBLE TIMES
+<Multi_key> <Multi_key> <comma> <Return>             : "⁣"  U2063  # INVISIBLE SEPARATOR
+<Multi_key> <Multi_key> <plus> <Return>              : "⁤"  U2064  # INVISIBLE PLUS
+
 # LaTeX-inspired names
 
 <Multi_key> <a> <l> <e> <p> <h>         : "ℵ"  U2135   # ALEF SYMBOL
@@ -29767,7 +29777,7 @@ include "Logograms"
 <Multi_key> <n> <a> <i> <l>         : "💅"  U1F485        # NAIL POLISH
 <Multi_key> <n> <o> <s> <e>         : "👃"  U1F443        # NOSE
 <Multi_key> <p> <u> <n> <c> <h>     : "👊"  U1F44A        # FISTED HAND SIGN (PUNCH)
-<Multi_key> <r> <o> <c> <k>         : "🤘"  U1F918        # SIGN OF THE HORNS (ROCK ON) (use stone for 🪨)
+<Multi_key> <r> <o> <c> <k> <o> <n> : "🤘"  U1F918        # SIGN OF THE HORNS (ROCK ON) (use stone for 🪨)
 <Multi_key> <s> <e> <l> <f> <i> <e> : "🤳"  U1F933        # SELFIE
 <Multi_key> <s> <n> <a> <p>         : "🫰"  U1FAF0        # HAND WITH INDEX FINGER AND THUMB CROSSED (SNAP)
 <Multi_key> <s> <t> <o> <p>         : "✋"  U270B         # RAISED HAND (STOP)
@@ -30378,6 +30388,7 @@ include "Logograms"
 <Multi_key> <r> <i> <c> <k> <s> <h> : "🛺"  U1F6FA        # AUTO RICKSHAW
 <Multi_key> <r> <i> <d> <e>         : "🎢"  U1F3A2        # ROLLER COASTER (RIDE)
 <Multi_key> <r> <o> <a> <d> <w> <o> : "🚧"  U1F6A7        # CONSTRUCTION SIGN (ROADWORKS)
+<Multi_key> <r> <o> <c> <k> <e> <t> : "🚀"  U1F680        # ROCKET (🧑+ZWJ+🚀=🧑‍🚀)
 <Multi_key> <s> <c> <h> <o> <o> <l> : "🏫"  U1F3EB        # SCHOOL (🧑+ZWJ+🏫=🧑‍🏫)
 <Multi_key> <s> <c> <o> <o> <t>     : "🛴"  U1F6F4        # SCOOTER
 <Multi_key> <s> <e> <a> <t>         : "💺"  U1F4BA        # SEAT
@@ -31031,6 +31042,7 @@ include "Logograms"
 
 <Multi_key> <a> <n> <k> <h>         : "☥"  U2625  # ANKH
 <Multi_key> <c> <e> <l> <t> <i> <c> : "🕈"  U1F548  # CELTIC CROSS (conflicts with ě, use ve)
+<Multi_key> <s> <t> <e> <r> <e> <o> : "📾"  U1F4FE  # PORTABLE STEREO
 
 <Multi_key> <s> <b> <less>     : "🗨"  U1F5E8  # LEFT SPEECH BUBBLE
 <Multi_key> <s> <b> <greater>  : "🗩"  U1F5E9  # RIGHT SPEECH BUBBLE
@@ -31124,6 +31136,10 @@ include "Logograms"
 <Multi_key> <r> <i> <f> <l> <e> <greater>     : "𜱧"  U1CC67  # RIGHT-POINTING RIFLE
 <Multi_key> <r> <i> <f> <l> <e> <v>           : "𜱨"  U1CC68  # DOWN-POINTING RIFLE
 <Multi_key> <r> <i> <f> <l> <e> <space>       : "🥆"  U1F946  # RIFLE
+<Multi_key> <r> <o> <c> <k> <e> <less>        : "🙬"  U1F66C  # LEFTWARDS ROCKET
+<Multi_key> <r> <o> <c> <k> <e> <asciicircum> : "🙭"  U1F66D  # UPWARDS ROCKET
+<Multi_key> <r> <o> <c> <k> <e> <greater>     : "🙮"  U1F66E  # RIGHTWARDS ROCKET
+<Multi_key> <r> <o> <c> <k> <e> <v>           : "🙯"  U1F66F  # DOWNWARDS ROCKET
 <Multi_key> <r> <u> <2>                       : "🮲🮳"  U1FBB2 U1FBB3  # RUNNING MAN (TWO CHARACTERS)
 <Multi_key> <s> <n> <a> <k> <less> <c>        : "𜱴"  U1CC74  # LEFT-FACING SNAKE HEAD WITH CLOSED MOUTH
 <Multi_key> <s> <n> <a> <k> <asciicircum> <c> : "𜱵"  U1CC75  # UP-FACING SNAKE HEAD WITH CLOSED MOUTH
@@ -31155,8 +31171,15 @@ include "Logograms"
 <Multi_key> <at> <underscore> <parenleft> <u> <parenright> : "𜲪𜲫"  U1CCAA U1CCAB  # SMILING FACE (BOTTOM)
 <Multi_key> <at> <underscore> <parenleft> <minus> <parenright> : "𜲬𜲭"  U1CCAC U1CCAD  # NEUTRAL FACE (BOTTOM)
 <Multi_key> <at> <underscore> <parenleft> <n> <parenright> : "𜲰𜲱"  U1CCB0 U1CCB1  # FROWNING FACE (BOTTOM)
+
 <Multi_key> <at> <asciicircum> <b> <i> <s> <h> <o> <p> : "𜳆𜳇"  U1CCC6 U1CCC7  # CHESS BISHOP (TOP)
 <Multi_key> <at> <underscore> <b> <i> <s> <h> <o> <p>  : "𜳈𜳉"  U1CCC8 U1CCC9  # CHESS BISHOP (BOTTOM)
+<Multi_key> <at> <asciicircum> <c> <i> <r> <c> <l> <e> : "𜰵𜰶"  U1CC35 U1CC36  # CIRCLE (TOP)
+<Multi_key> <at> <underscore> <c> <i> <r> <c> <l> <e>  : "𜰹𜰺"  U1CC39 U1CC3A  # CIRCLE (BOTTOM)
+<Multi_key> <at> <asciicircum> <asciicircum> <c> <i> <r> <c> <l> <e> : "𜰰𜰱𜰲𜰳"  U1CC30 U1CC31 U1CC32 U1CC33  # UPPER TWELFTH CIRCLE
+<Multi_key> <at> <asciicircum> <underscore> <c> <i> <r> <c> <l> <e>  : "𜰴  𜰷"  U1CC34 U0020 U0020 U1CC37  # UPPER MIDDLE TWELFTH CIRCLE
+<Multi_key> <at> <underscore> <asciicircum> <c> <i> <r> <c> <l> <e>  : "𜰸  𜰻"  U1CC38 U0020 U0020 U1CC3B  # LOWER MIDDLE TWELFTH CIRCLE
+<Multi_key> <at> <underscore> <underscore> <c> <i> <r> <c> <l> <e>   : "𜰼𜰽𜰾𜰿"  U1CC3C U1CC3D U1CC3E U1CC3F  # LOWER TWELFTH CIRCLE
 <Multi_key> <at> <asciicircum> <i> <n> <t>             : "⌠"  U2320  # TOP HALF INTEGRAL
 <Multi_key> <at> <bar> <i> <n> <t>                     : "⎮"  U23AE  # INTEGRAL EXTENSION
 <Multi_key> <at> <underscore> <i> <n> <t>              : "⌡"  U2321  # BOTTOM HALF INTEGRAL
@@ -31168,6 +31191,8 @@ include "Logograms"
 <Multi_key> <at> <underscore> <p> <a> <w> <n>          : "𜳐𜳑"  U1CCD0 U1CCD1  # CHESS PAWN (BOTTOM)
 <Multi_key> <at> <asciicircum> <P> <C>                 : "𜲶𜲷"  U1CCB6 U1CCB7  # MICROCOMPUTER (PC) (TOP)
 <Multi_key> <at> <underscore> <P> <C>                  : "𜲸𜲹"  U1CCB8 U1CCB9  # MICROCOMPUTER (PC) (BOTTOM)
+<Multi_key> <at> <asciicircum> <p> <e> <r> <s> <o> <n> : "𜷦"  U1CDE6  # TOP HALF STANDING PERSON
+<Multi_key> <at> <underscore> <p> <e> <r> <s> <o> <n>  : "𜷧"  U1CDE7  # BOTTOM HALF STANDING PERSON
 <Multi_key> <at> <asciicircum> <q> <u> <e> <e> <n>     : "𜲾𜲿"  U1CCBE U1CCBF  # CHESS QUEEN (TOP)
 <Multi_key> <at> <underscore> <q> <u> <e> <e> <n>      : "𜳀𜳁"  U1CCC0 U1CCC1  # CHESS QUEEN (BOTTOM)
 <Multi_key> <at> <asciicircum> <r> <o> <b> <o> <t>     : "𜱛"  U1CC5B  # TOP HALF FORWARD-FACING ROBOT
@@ -31178,6 +31203,19 @@ include "Logograms"
 <Multi_key> <at> <underscore> <r> <o> <b> <o> <greater> : "𜱟"  U1CC5F  # BOTTOM HALF RIGHT-FACING ROBOT
 <Multi_key> <at> <asciicircum> <r> <o> <o> <k>         : "𜳂𜳃"  U1CCC2 U1CCC3  # CHESS ROOK (TOP)
 <Multi_key> <at> <underscore> <r> <o> <o> <k>          : "𜳄𜳅"  U1CCC4 U1CCC5  # CHESS ROOK (BOTTOM)
+<Multi_key> <at> <asciicircum> <r> <u> <n> <n> <e> <greater> <1> : "𜷨"  U1CDE8  # TOP HALF RIGHT-FACING RUNNER FRAME-1
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <greater> <1> : "𜷩"  U1CDE9  # BOTTOM HALF RIGHT-FACING RUNNER FRAME-1
+<Multi_key> <at> <asciicircum> <r> <u> <n> <n> <e> <greater> <2> : "𜷪"  U1CDEA  # TOP HALF RIGHT-FACING RUNNER FRAME-2
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <greater> <2> : "𜷫"  U1CDEB  # BOTTOM HALF RIGHT-FACING RUNNER FRAME-2
+<Multi_key> <at> <asciicircum> <r> <u> <n> <n> <e> <less> <1> : "𜷬"  U1CDEC  # TOP HALF LEFT-FACING RUNNER FRAME-1
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <less> <1> : "𜷭"  U1CDED  # BOTTOM HALF LEFT-FACING RUNNER FRAME-1
+<Multi_key> <at> <asciicircum> <r> <u> <n> <n> <e> <less> <2> : "𜷮"  U1CDEE  # TOP HALF LEFT-FACING RUNNER FRAME-2
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <less> <2> : "𜷯"  U1CDEF  # BOTTOM HALF LEFT-FACING RUNNER FRAME-2
+<Multi_key> <at> <asciicircum> <r> <u> <n> <n> <e> <r> : "𜷰"  U1CDF0  # TOP HALF FORWARD-FACING RUNNER
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <r> <1> : "𜷱"  U1CDF1  # BOTTOM HALF FORWARD-FACING RUNNER FRAME-1
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <r> <2> : "𜷲"  U1CDF2  # BOTTOM HALF FORWARD-FACING RUNNER FRAME-2
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <r> <3> : "𜷳"  U1CDF3  # BOTTOM HALF FORWARD-FACING RUNNER FRAME-3
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <r> <4> : "𜷴"  U1CDF4  # BOTTOM HALF FORWARD-FACING RUNNER FRAME-4
 <Multi_key> <at> <asciicircum> <s> <u> <m>             : "⎲"  U23B2  # SUMMATION TOP
 <Multi_key> <at> <underscore> <s> <u> <m>              : "⎳"  U23B3  # SUMMATION BOTTOM
 <Multi_key> <at> <asciicircum> <T> <V>                 : "𜲲𜲳"  U1CCB2 U1CCB3  # TELEVISION (TOP)
@@ -32089,7 +32127,7 @@ include "Logograms"
 <Multi_key> <Tab> <bar> <Multi_key> <minus> <minus> <greater> : "⟼"  U27FC  # LONG RIGHTWARDS ARROW FROM BAR
 <Multi_key> <Tab> <less> <Multi_key> <equal> <equal> <bar> : "⟽"  U27FD  # LONG LEFTWARDS DOUBLE ARROW FROM BAR
 <Multi_key> <Tab> <bar> <Multi_key> <equal> <equal> <greater> : "⟾"  U27FE  # LONG RIGHTWARDS DOUBLE ARROW FROM BAR
-<Multi_key> <Tab> <minus> <Multi_key> <asciitilde> <asciitilde> <greater> : "⟿"  U27FF  # LONG RIGHTWARDS SQUIGGLE ARROW
+<Multi_key> <Tab> <asciitilde> <Multi_key> <asciitilde> <asciitilde> <greater> : "⟿"  U27FF  # LONG RIGHTWARDS SQUIGGLE ARROW
 
 # Supplemental Arrows-B
 
@@ -32233,7 +32271,7 @@ include "Logograms"
 <Multi_key> <Tab> <minus> <Multi_key> <asciitilde> <minus> <greater> : "⥲"  U2972  # TILDE OPERATOR ABOVE RIGHTWARDS ARROW
 <Multi_key> <Tab> <less> <Multi_key> <minus> <asciitilde> <minus> : "⥳"  U2973  # LEFTWARDS ARROW ABOVE TILDE OPERATOR
 <Multi_key> <Tab> <minus> <Multi_key> <minus> <asciitilde> <greater> : "⥴"  U2974  # RIGHTWARDS ARROW ABOVE TILDE OPERATOR
-<Multi_key> <Tab> <minus> <Multi_key> <minus> <Multi_key> <asciitilde> <asciitilde> <greater> : "⥵"  U2975  # RIGHTWARDS ARROW ABOVE ALMOST EQUAL TO
+<Multi_key> <Tab> <minus> <Multi_key> <minus> <asciitilde> <asciitilde> <greater> : "⥵"  U2975  # RIGHTWARDS ARROW ABOVE ALMOST EQUAL TO
 <Multi_key> <Tab> <less> <minus> <Multi_key> <less> <minus> : "⥷"  U2977  # LEFTWARDS ARROW THROUGH LESS-THAN
 <Multi_key> <Tab> <less> <minus> <E>                      : "⥺"  U297A  # LEFTWARDS ARROW THROUGH SUBSET
 <Multi_key> <Tab> <E> <minus> <minus>                     : "⥼"  U297C  # LEFT FISH TAIL
@@ -32364,7 +32402,7 @@ include "Logograms"
 <Multi_key> <Tab> <less> <o> <minus>                      : "⬰"  U2B30  # LEFT ARROW WITH SMALL CIRCLE
 <Multi_key> <Tab> <3> <less> <less> <less>                : "⬱"  U2B31  # THREE LEFTWARDS ARROWS
 <Multi_key> <Tab> <less> <Multi_key> <o> <plus> <minus>   : "⬲"  U2B32  # LEFT ARROW WITH CIRCLED PLUS
-<Multi_key> <Tab> <less> <Multi_key> <asciitilde> <asciitilde> <minus> : "⬳"  U2B33  # LONG LEFTWARDS SQUIGGLE ARROW
+<Multi_key> <Tab> <less> <Multi_key> <asciitilde> <asciitilde> <asciitilde> : "⬳"  U2B33  # LONG LEFTWARDS SQUIGGLE ARROW
 <Multi_key> <Tab> <Multi_key> <less> <less> <bar> <minus> : "⬴"  U2B34  # LEFTWARDS TWO-HEADED ARROW WITH VERTICAL STROKE
 <Multi_key> <Tab> <Multi_key> <less> <less> <Multi_key> <bar> <bar> <minus> : "⬵"  U2B35  # LEFTWARDS TWO-HEADED ARROW WITH DOUBLE VERTICAL STROKE
 <Multi_key> <Tab> <Multi_key> <less> <less> <minus> <bar> : "⬶"  U2B36  # LEFTWARDS TWO-HEADED ARROW FROM BAR
@@ -32378,10 +32416,15 @@ include "Logograms"
 <Multi_key> <Tab> <less> <x> <minus>                      : "⬾"  U2B3E  # LEFTWARDS ARROW THROUGH X
 <Multi_key> <Tab> <Multi_key> <less> <minus> <asciitilde> <asciitilde> : "⬿"  U2B3F  # WAVE ARROW POINTING DIRECTLY LEFT
 <Multi_key> <Tab> <less> <equal> <minus>                  : "⭀"  U2B40  # EQUALS SIGN ABOVE LEFTWARDS ARROW
+<Multi_key> <Tab> <less> <Multi_key> <minus> <less> <asciitilde> <asciitilde> <minus> : "⭂"  U2B42  # LEFTWARDS ARROW ABOVE REVERSE ALMOST EQUAL TO
 <Multi_key> <Tab> <Multi_key> <minus> <less> <minus> <less> : "⭃"  U2B43  # RIGHTWARDS ARROW THROUGH GREATER-THAN
 <Multi_key> <Tab> <3> <minus> <less>                      : "⭄"  U2B44  # RIGHTWARDS ARROW THROUGH SUPERSET
 <Multi_key> <Tab> <less> <4> <minus>                      : "⭅"  U2B45  # LEFTWARDS QUADRUPLE ARROW
 <Multi_key> <Tab> <minus> <4> <greater>                   : "⭆"  U2B46  # RIGHTWARDS QUADRUPLE ARROW
+<Multi_key> <Tab> <minus> <Multi_key> <minus> <less> <asciitilde> <asciitilde> <greater> : "⭈"  U2B48  # RIGHTWARDS ARROW ABOVE REVERSE ALMOST EQUAL TO
+<Multi_key> <Tab> <less> <Multi_key> <minus> <asciitilde> <asciitilde> <minus> : "⭊"  U2B4A  # LEFTWARDS ARROW ABOVE ALMOST EQUAL TO
+<Multi_key> <Tab> <less> <Multi_key> <minus> <less> <asciitilde> <minus> : "⭋"  U2B4B  # LEFTWARDS ARROW ABOVE REVERSE TILDE OPERATOR
+<Multi_key> <Tab> <minus> <Multi_key> <minus> <less> <asciitilde> <greater> : "⭌"  U2B4C  # RIGHTWARDS ARROW ABOVE REVERSE TILDE OPERATOR
 
 <Multi_key> <Tab> <Multi_key> <less> <bar> <Multi_key> <bar> <bar> <minus> : "⭺"  U2B7A  # LEFTWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE
 <Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <Multi_key> <minus> <minus> <bar> : "⭻"  U2B7B  # UPWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE
@@ -34739,6 +34782,10 @@ include "Logograms"
 <Multi_key> <asterisk> <E> <R> : "⯰" U2BF0    # ERIS FORM ONE
 <Multi_key> <asterisk> <E> <2> : "⯱"  U2BF1   # ERIS FORM TWO
 <Multi_key> <asterisk> <S> <E> : "⯲" U2BF2    # SEDNA
+<Multi_key> <asterisk> <A> <S> : "⯙"  U2BD9   # ASTRAEA (conflicts with Å, use oA)
+<Multi_key> <asterisk> <H> <Y> : "⯚"  U2BDA  # HYGIEA
+<Multi_key> <asterisk> <P> <H> : "⯛"  U2BDB  # PHOLUS
+<Multi_key> <asterisk> <N> <S> : "⯜"  U2BDC  # NESSUS
 <Multi_key> <asterisk> <H> <U> : "🝻" U1F77B    # HAUMEA
 <Multi_key> <asterisk> <M> <K> : "🝼" U1F77C    # MAKEMAKE
 <Multi_key> <asterisk> <G> <O> : "🝽" U1F77D    # GONGGONG
