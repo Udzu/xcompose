@@ -57,6 +57,7 @@ include "%L"
 <Multi_key> <minus> <3>                  : "⸻"  U2E3B  # THREE-EM DASH
 <Multi_key> <quotedbl> <minus>           : "⸚"  U2E1A  # HYPHEN WITH DIAERESIS
 <Multi_key> <2> <minus>                  : "⹀"  U2E40  # DOUBLE HYPHEN
+<Multi_key> <slash> <slash> <minus>      : "⸗"  U2E17  # DOUBLE OBLIQUE HYPHEN (conflicts with useless \)
 
 ############
 # Brackets #
@@ -97,11 +98,17 @@ include "%L"
 <Multi_key> <apostrophe> <bracketright>      : "⦐"  U2990  # RIGHT SQUARE BRACKET WITH TICK IN TOP CORNER
 <Multi_key> <1> <less> <bracketleft>         : "⦗"  U2997  # LEFT BLACK TORTOISE SHELL BRACKET
 <Multi_key> <1> <greater> <bracketright>     : "⦘"  U2998  # RIGHT BLACK TORTOISE SHELL BRACKET
+<Multi_key> <parenleft> <greater> <less>     : "⧘"  U29D8  # LEFT WIGGLY FENCE
+<Multi_key> <parenright> <less> <greater>    : "⧙"  U29D9  # RIGHT WIGGLY FENCE
+<Multi_key> <parenleft> <greater> <parenleft> <greater> : "⧚"  U29DA  # LEFT DOUBLE WIGGLY FENCE
+<Multi_key> <parenright> <less> <parenright> <less> : "⧛"  U29DB  # RIGHT DOUBLE WIGGLY FENCE
 <Multi_key> <minus> <less> <parenleft>       : "⧼"  U29FC  # LEFT-POINTING CURVED ANGLE BRACKET
 <Multi_key> <greater> <minus> <parenright>   : "⧽"  U29FD  # RIGHT-POINTING CURVED ANGLE BRACKET
 <Multi_key> <parenleft> <slash> <slash>      : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR
 <Multi_key> <parenright> <slash> <slash>     : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR
 <Multi_key> <slash> <slash> <slash>          : "⫽"  U2AFD  # DOUBLE SOLIDUS OPERATOR (conflicts with useless \)
+<Multi_key> <U> <parenleft>                  : "⸦"  U2E26  # LEFT SIDEWAYS U BRACKET
+<Multi_key> <U> <parenright>                 : "⸧"  U2E27  # RIGHT SIDEWAYS U BRACKET
 <Multi_key> <parenleft> <parenleft>          : "⸨"  U2E28  # LEFT DOUBLE PARENTHESIS (conflicts with useless [)
 <Multi_key> <parenright> <parenright>        : "⸩"  U2E29  # RIGHT DOUBLE PARENTHESIS (conflicts with useless ])
 
@@ -164,6 +171,8 @@ include "%L"
 <Multi_key> <v> <parenleft> <space>      : "⁀"  U2040  # CHARACTER TIE
 <Multi_key> <v> <parenleft> <parenright> : "⁐"  U2050  # CLOSE UP
 
+<Multi_key> <slash> <Multi_key> <colon>  : "⸓"  U2E13  # DOTTED OBELOS
+<Multi_key> <greater> <Multi_key> <colon> : "⸖"  U2E16  # DOTTED RIGHT-POINTING ANGLE
 <Multi_key> <asciitilde> <Multi_key> <o> : "⸛"  U2E1B  # TILDE WITH RING ABOVE
 <Multi_key> <asciitilde> <asciicircum> <period> : "⸞"  U2E1E  # TILDE WITH DOT ABOVE
 <Multi_key> <asciitilde> <underscore> <period> : "⸟"  U2E1F  # TILDE WITH DOT BELOW
@@ -248,6 +257,8 @@ include "%L"
 <Multi_key> <S> <Return>                               : "̾"  U033E   # COMBINING VERTICAL TILDE
 <Multi_key> <asciicircum> <underscore> <underscore> <Return> : "̿"  U033F  # COMBINING DOUBLE OVERLINE
 <Multi_key> <bracketleft> <Return>                     : "͆"  U0346   # COMBINING BRIDGE ABOVE
+<Multi_key> <Multi_key> <grave> <Return>               : "̀"  U0340  # COMBINING GRAVE TONE MARK
+<Multi_key> <Multi_key> <apostrophe> <Return>          : "́"  U0341  # COMBINING ACUTE TONE MARK
 <Multi_key> <asciitilde> <slash> <Return>              : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <slash> <asciitilde> <Return>              : "͊"  U034A   # COMBINING NOT TILDE ABOVE
 <Multi_key> <asciicircum> <asciitilde> <colon> <Return> : "͋"  U034B  # COMBINING HOMOTHETIC ABOVE
@@ -406,6 +417,21 @@ include "%L"
 <Multi_key> <2> <underscore> <greater> <Return>        : "͢"  U0362   # COMBINING DOUBLE RIGHTWARDS ARROW BELOW
 <Multi_key> <2> <underscore> <u> <v> <Return>          : "᷼"  U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (alternatively __([Return])
 <Multi_key> <2> <asciicircum> <Return>                 : "᷍"  U1DCD   # COMBINING DOUBLE CIRCUMFLEX ABOVE (conflicts with ², use ^2)
+
+<Multi_key> <2> <L> <u> <v> <Return>                   : "︠"  UFE20  # COMBINING LIGATURE LEFT HALF
+<Multi_key> <2> <R> <u> <v> <Return>                   : "︡"  UFE21  # COMBINING LIGATURE RIGHT HALF
+<Multi_key> <2> <L> <asciitilde> <Return>              : "︢"  UFE22  # COMBINING DOUBLE TILDE LEFT HALF
+<Multi_key> <2> <R> <asciitilde> <Return>              : "︣"  UFE23  # COMBINING DOUBLE TILDE RIGHT HALF
+<Multi_key> <2> <L> <underscore> <Return>              : "︤"  UFE24  # COMBINING MACRON LEFT HALF
+<Multi_key> <2> <R> <underscore> <Return>              : "︥"  UFE25  # COMBINING MACRON RIGHT HALF
+<Multi_key> <2> <C> <underscore> <greater> <Return>    : "︦"  UFE26  # COMBINING CONJOINING MACRON
+<Multi_key> <2> <L> <underscore> <u> <Return>          : "︧"  UFE27  # COMBINING LIGATURE LEFT HALF BELOW
+<Multi_key> <2> <R> <underscore> <u> <Return>          : "︨"  UFE28  # COMBINING LIGATURE RIGHT HALF BELOW
+<Multi_key> <2> <L> <underscore> <asciitilde> <Return> : "︩"  UFE29  # COMBINING TILDE LEFT HALF BELOW
+<Multi_key> <2> <R> <underscore> <asciitilde> <Return> : "︪"  UFE2A  # COMBINING TILDE RIGHT HALF BELOW
+<Multi_key> <2> <L> <underscore> <underscore> <Return> : "︫"  UFE2B  # COMBINING MACRON LEFT HALF BELOW
+<Multi_key> <2> <R> <underscore> <underscore> <Return> : "︬"  UFE2C  # COMBINING MACRON RIGHT HALF BELOW
+<Multi_key> <2> <C> <underscore> <underscore> <Return> : "︭"  UFE2D  # COMBINING CONJOINING MACRON BELOW
 
 <Multi_key> <O> <period>                               : "◌"  U25CC    # DOTTED CIRCLE (PLACEHOLDER GLYPH)
 
@@ -1761,6 +1787,7 @@ include "%L"
 <Multi_key> <underscore> <v> <underscore> : "ᵥ"  U1D65   # LATIN SUBSCRIPT SMALL LETTER V
 <Multi_key> <underscore> <x>              : "ₓ"  U2093   # LATIN SUBSCRIPT SMALL LETTER X
 
+<Multi_key> <underscore> <Multi_key> <1> <0> : "⏨"  U23E8  # DECIMAL EXPONENT SYMBOL
 <Multi_key> <underscore> <Multi_key> <e> <e> : "ₔ"  U2094   # LATIN SUBSCRIPT SMALL LETTER SCHWA
 
 <Multi_key> <underscore> <asterisk> <space> : "⁎"  U204E  # LOW ASTERISK
@@ -2082,11 +2109,13 @@ include "%L"
 <Multi_key> <percent> <s> <E> : "𝖤" U1D5A4    # MATHEMATICAL SANS-SERIF CAPITAL E
 <Multi_key> <percent> <s> <F> : "𝖥" U1D5A5    # MATHEMATICAL SANS-SERIF CAPITAL F
 <Multi_key> <percent> <s> <G> : "𝖦" U1D5A6    # MATHEMATICAL SANS-SERIF CAPITAL G
+<Multi_key> <percent> <s> <asciicircum> <v> <G> : "⅁"  U2141  # TURNED SANS-SERIF CAPITAL G
 <Multi_key> <percent> <s> <H> : "𝖧" U1D5A7    # MATHEMATICAL SANS-SERIF CAPITAL H
 <Multi_key> <percent> <s> <I> : "𝖨" U1D5A8    # MATHEMATICAL SANS-SERIF CAPITAL I
 <Multi_key> <percent> <s> <J> : "𝖩" U1D5A9    # MATHEMATICAL SANS-SERIF CAPITAL J
 <Multi_key> <percent> <s> <K> : "𝖪" U1D5AA    # MATHEMATICAL SANS-SERIF CAPITAL K
 <Multi_key> <percent> <s> <L> : "𝖫" U1D5AB    # MATHEMATICAL SANS-SERIF CAPITAL L
+<Multi_key> <percent> <s> <asciicircum> <v> <L> : "⅂"  U2142  # TURNED SANS-SERIF CAPITAL L
 <Multi_key> <percent> <s> <M> : "𝖬" U1D5AC    # MATHEMATICAL SANS-SERIF CAPITAL M
 <Multi_key> <percent> <s> <N> : "𝖭" U1D5AD    # MATHEMATICAL SANS-SERIF CAPITAL N
 <Multi_key> <percent> <s> <O> : "𝖮" U1D5AE    # MATHEMATICAL SANS-SERIF CAPITAL O
@@ -4524,6 +4553,8 @@ include "%L"
 <Multi_key> <a> <semicolon> <underscore> <Return> : "؂"  U0602  # ARABIC FOOTNOTE MARKER (conflicts with ą, use ,a)
 <Multi_key> <a> <semicolon> <asciicircum> <underscore> <Return> : "࣠"  U08E0  # ARABIC SMALL HIGH FOOTNOTE MARKER (conflicts with ą)
 <Multi_key> <a> <semicolon> <bar> <apostrophe> : "ࢎ"  U088E  # ARABIC VERTICAL TAIL (conflicts with ą, use ,a)
+<Multi_key> <a> <semicolon> <O> <Return> : "۝"  U06DD  # ARABIC END OF AYAH (conflicts with ą)
+<Multi_key> <a> <semicolon> <2> <O> <Return> : "࣢"  U08E2  # ARABIC DISPUTED END OF AYAH (conflicts with ą)
 
 # numerals
 
@@ -7085,6 +7116,8 @@ include "%L"
 
 # (; = Vedic symbols)
 
+<Multi_key> <b> <semicolon> <grave> <Return> : "॓"  U0953  # DEVANAGARI GRAVE ACCENT
+<Multi_key> <b> <semicolon> <apostrophe> <Return> : "॔"  U0954  # DEVANAGARI ACUTE ACCENT
 <Multi_key> <b> <semicolon> <asciicircum> <Return> : "᳐"  U1CD0  # VEDIC TONE KARSHANA
 <Multi_key> <b> <semicolon> <asciicircum> <bar> <Return> : "᳑"  U1CD1  # VEDIC TONE SHARA
 <Multi_key> <b> <semicolon> <minus> <Return> : "᳒"  U1CD2  # VEDIC TONE PRENKHA
@@ -12297,6 +12330,8 @@ include "%L"
 
 <Multi_key> <c> <semicolon> <asciitilde> <Return> : "҃"  U0483  # COMBINING CYRILLIC TITLO
 <Multi_key> <c> <semicolon> <apostrophe> <Return> : "҄"  U0484  # COMBINING CYRILLIC PALATALIZATION
+<Multi_key> <c> <semicolon> <asciicircum> <comma> <less> <Return> : "҅"  U0485  # COMBINING CYRILLIC DASIA PNEUMATA
+<Multi_key> <c> <semicolon> <asciicircum> <comma> <Return> : "҆"  U0486  # COMBINING CYRILLIC PSILI PNEUMATA
 <Multi_key> <c> <semicolon> <grave> <Return> : "҇"  U0487  # COMBINING CYRILLIC POKRYTIE
 <Multi_key> <c> <semicolon> <bracketleft> <Return> : "꙯"  UA66F  # COMBINING CYRILLIC VZMET
 <Multi_key> <c> <semicolon> <parenright> <Return> : "꙼"  UA67C  # COMBINING CYRILLIC KAVYKA
@@ -18764,6 +18799,11 @@ include "%L"
 
 <Multi_key> <j> <c> <Y> <equal>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
 <Multi_key> <j> <c> <equal> <Y>          : "円"  U5186   # CJK UNIFIED IDEOGRAPH-5186 (yen) (use Y= or =Y for ¥)
+<Multi_key> <j> <c> <K> <K>              : "㍿"  U337F  # SQUARE CORPORATION (KABUSHIKI KAISHA)
+<Multi_key> <j> <c> <parenleft> <K> <K> <parenright> : "㊑"  U3291  # CIRCLED IDEOGRAPH STOCK (KABUSHIKI KAISHA)
+<Multi_key> <j> <c> <parenleft> <Y> <K> <parenright> : "㊒"  U3292  # CIRCLED IDEOGRAPH HAVE (YUGEN GAISHA)
+<Multi_key> <j> <c> <asciitilde> <parenleft> <K> <K> <parenright> : "㈱"  U3231  # PARENTHESIZED IDEOGRAPH STOCK (KABUSHIKI KAISHA)
+<Multi_key> <j> <c> <asciitilde> <parenleft> <Y> <K> <parenright> : "㈲"  U3232  # PARENTHESIZED IDEOGRAPH HAVE (YUGEN GAISHA)
 
 <Multi_key> <j> <numbersign> <0>         : "〇"  U3007   # IDEOGRAPHIC NUMBER ZERO
 <Multi_key> <j> <numbersign> <1>         : "一"  U4E00   # CJK UNIFIED IDEOGRAPH-4E00 (1)
@@ -18780,6 +18820,26 @@ include "%L"
 <Multi_key> <j> <numbersign> <E> <3>     : "千"  U5343   # CJK UNIFIED IDEOGRAPH-5343 (1_000)
 <Multi_key> <j> <numbersign> <E> <4>     : "万"  U4E07   # CJK UNIFIED IDEOGRAPH-4E07 (10_000)
 <Multi_key> <j> <numbersign> <E> <8>     : "億"  U5104   # CJK UNIFIED IDEOGRAPH-5104 (100_000_000)
+<Multi_key> <j> <numbersign> <Y>         : "年"  U5E74  # CJK UNIFIED IDEOGRAPH-5E74 (YEAR)
+<Multi_key> <j> <numbersign> <M>         : "月"  U6708  # CJK UNIFIED IDEOGRAPH-6708 (MONTH)
+<Multi_key> <j> <numbersign> <D> <space> : "日"  U65E5  # CJK UNIFIED IDEOGRAPH-65E5 (DAY)
+<Multi_key> <j> <numbersign> <D> <1>     : "月"  U6708  # CJK UNIFIED IDEOGRAPH-6708 (MONDAY)
+<Multi_key> <j> <numbersign> <D> <2>     : "火"  U706B  # CJK UNIFIED IDEOGRAPH-706B (TUESDAY)
+<Multi_key> <j> <numbersign> <D> <3>     : "水"  U6C34  # CJK UNIFIED IDEOGRAPH-6C34 (WEDNESDAY)
+<Multi_key> <j> <numbersign> <D> <4>     : "木"  U6728  # CJK UNIFIED IDEOGRAPH-6728 (THURSDAY)
+<Multi_key> <j> <numbersign> <D> <5>     : "金"  U91D1  # CJK UNIFIED IDEOGRAPH-91D1 (FRIDAY)
+<Multi_key> <j> <numbersign> <D> <6>     : "土"  U571F  # CJK UNIFIED IDEOGRAPH-571F (SATURDAY)
+<Multi_key> <j> <numbersign> <D> <7>     : "日"  U65E5  # CJK UNIFIED IDEOGRAPH-65E5 (SUNDAY)
+<Multi_key> <j> <numbersign> <h>         : "時"  U6642  # CJK UNIFIED IDEOGRAPH-6642 (HOUR)
+<Multi_key> <j> <numbersign> <m>         : "分"  U5206  # CJK UNIFIED IDEOGRAPH-5206 (MINUTE)
+<Multi_key> <j> <numbersign> <s>         : "秒"  U79D2  # CJK UNIFIED IDEOGRAPH-79D2 (SECOND)
+<Multi_key> <j> <numbersign> <a> <m>     : "午前"  U5348 U524D  # CJK UNIFIED IDEOGRAPH-5348 CJK UNIFIED IDEOGRAPH-524D (AM)
+<Multi_key> <j> <numbersign> <p> <m>     : "午後"  U5348 U5F8C  # CJK UNIFIED IDEOGRAPH-5348 CJK UNIFIED IDEOGRAPH-5F8C (PM)
+<Multi_key> <j> <numbersign> <at> <R>    : "㋿"  U32FF  # SQUARE ERA NAME REIWA
+<Multi_key> <j> <numbersign> <at> <H>    : "㍻"  U337B  # SQUARE ERA NAME HEISEI
+<Multi_key> <j> <numbersign> <at> <S>    : "㍼"  U337C  # SQUARE ERA NAME SYOUWA
+<Multi_key> <j> <numbersign> <at> <T>    : "㍽"  U337D  # SQUARE ERA NAME TAISYOU
+<Multi_key> <j> <numbersign> <at> <M>    : "㍾"  U337E  # SQUARE ERA NAME MEIZI
 
 <Multi_key> <j> <numbersign> <parenleft> <1> <parenright> : "㊀"  U3280  # CIRCLED IDEOGRAPH ONE
 <Multi_key> <j> <numbersign> <parenleft> <2> <parenright> : "㊁"  U3281  # CIRCLED IDEOGRAPH TWO
@@ -18791,6 +18851,13 @@ include "%L"
 <Multi_key> <j> <numbersign> <parenleft> <8> <parenright> : "㊇"  U3287  # CIRCLED IDEOGRAPH EIGHT
 <Multi_key> <j> <numbersign> <parenleft> <9> <parenright> : "㊈"  U3288  # CIRCLED IDEOGRAPH NINE
 <Multi_key> <j> <numbersign> <parenleft> <1> <0> <parenright> : "㊉"  U3289  # CIRCLED IDEOGRAPH TEN
+<Multi_key> <j> <numbersign> <parenleft> <D> <1> <parenright> : "㊊"  U328A  # CIRCLED IDEOGRAPH MOON
+<Multi_key> <j> <numbersign> <parenleft> <D> <2> <parenright> : "㊋"  U328B  # CIRCLED IDEOGRAPH FIRE
+<Multi_key> <j> <numbersign> <parenleft> <D> <3> <parenright> : "㊌"  U328C  # CIRCLED IDEOGRAPH WATER
+<Multi_key> <j> <numbersign> <parenleft> <D> <4> <parenright> : "㊍"  U328D  # CIRCLED IDEOGRAPH WOOD
+<Multi_key> <j> <numbersign> <parenleft> <D> <5> <parenright> : "㊎"  U328E  # CIRCLED IDEOGRAPH METAL
+<Multi_key> <j> <numbersign> <parenleft> <D> <6> <parenright> : "㊏"  U328F  # CIRCLED IDEOGRAPH EARTH
+<Multi_key> <j> <numbersign> <parenleft> <D> <7> <parenright> : "㊐"  U3290  # CIRCLED IDEOGRAPH SUN
 
 <Multi_key> <j> <numbersign> <asciitilde> <parenleft> <1> <parenright> : "㈠"  U3220  # PARENTHESIZED IDEOGRAPH ONE
 <Multi_key> <j> <numbersign> <asciitilde> <parenleft> <2> <parenright> : "㈡"  U3221  # PARENTHESIZED IDEOGRAPH TWO
@@ -18802,6 +18869,13 @@ include "%L"
 <Multi_key> <j> <numbersign> <asciitilde> <parenleft> <8> <parenright> : "㈧"  U3227  # PARENTHESIZED IDEOGRAPH EIGHT
 <Multi_key> <j> <numbersign> <asciitilde> <parenleft> <9> <parenright> : "㈨"  U3228  # PARENTHESIZED IDEOGRAPH NINE
 <Multi_key> <j> <numbersign> <asciitilde> <parenleft> <1> <0> <parenright> : "㈩"  U3229  # PARENTHESIZED IDEOGRAPH TEN
+<Multi_key> <j> <numbersign> <asciitilde> <parenleft> <D> <1> <parenright> : "㈪"  U322A  # PARENTHESIZED IDEOGRAPH MOON
+<Multi_key> <j> <numbersign> <asciitilde> <parenleft> <D> <2> <parenright> : "㈫"  U322B  # PARENTHESIZED IDEOGRAPH FIRE
+<Multi_key> <j> <numbersign> <asciitilde> <parenleft> <D> <3> <parenright> : "㈬"  U322C  # PARENTHESIZED IDEOGRAPH WATER
+<Multi_key> <j> <numbersign> <asciitilde> <parenleft> <D> <4> <parenright> : "㈭"  U322D  # PARENTHESIZED IDEOGRAPH WOOD
+<Multi_key> <j> <numbersign> <asciitilde> <parenleft> <D> <5> <parenright> : "㈮"  U322E  # PARENTHESIZED IDEOGRAPH METAL
+<Multi_key> <j> <numbersign> <asciitilde> <parenleft> <D> <6> <parenright> : "㈯"  U322F  # PARENTHESIZED IDEOGRAPH EARTH
+<Multi_key> <j> <numbersign> <asciitilde> <parenleft> <D> <7> <parenright> : "㈰"  U3230  # PARENTHESIZED IDEOGRAPH SUN
 
 <Multi_key> <j> <numbersign> <bracketleft> <1> <bracketright> : "🈩"  U1F229  # SQUARED CJK UNIFIED IDEOGRAPH-4E00
 <Multi_key> <j> <numbersign> <bracketleft> <2> <bracketright> : "🈔"  U1F214  # SQUARED CJK UNIFIED IDEOGRAPH-4E8C
@@ -22559,6 +22633,11 @@ include "HangulSyllables"
 <Multi_key> <z> <semicolon> <period>     : "˙" U02D9    # DOT ABOVE
 <Multi_key> <z> <semicolon> <L>          : "˪" U02EA    # MODIFIER LETTER YIN DEPARTING TONE MARK
 <Multi_key> <z> <semicolon> <T>          : "˫" U02EB    # MODIFIER LETTER YANG DEPARTING TONE MARK
+
+<Multi_key> <z> <semicolon> <bar> <1> <Return> : "〪"  U302A  # IDEOGRAPHIC LEVEL TONE MARK
+<Multi_key> <z> <semicolon> <bar> <2> <Return> : "〫"  U302B  # IDEOGRAPHIC RISING TONE MARK
+<Multi_key> <z> <semicolon> <bar> <3> <Return> : "〬"  U302C  # IDEOGRAPHIC DEPARTING TONE MARK
+<Multi_key> <z> <semicolon> <bar> <4> <Return> : "〭"  U302D  # IDEOGRAPHIC ENTERING TONE MARK
 
 # Numerals
 
@@ -28543,6 +28622,7 @@ include "Logograms"
 <Multi_key> <plus> <2>                : "⨧"  U2A27   # PLUS SIGN WITH SUBSCRIPT TWO
 <Multi_key> <o> <plus>                : "⨢"  U2A22   # PLUS SIGN WITH SMALL CIRCLE ABOVE
 <Multi_key> <period> <plus>           : "∔"  U2214   # DOT PLUS
+<Multi_key> <3> <plus>                : "⧻"  U29FB  # TRIPLE PLUS
 <Multi_key> <plus> <underscore> <period>      : "⨥"  U2A25   # PLUS SIGN WITH DOT BELOW
 <Multi_key> <asciitilde> <plus> <space>       : "⨤"  U2A24   # PLUS SIGN WITH TILDE ABOVE
 <Multi_key> <plus> <underscore> <asciitilde>  : "⨦"  U2A26   # PLUS SIGN WITH TILDE BELOW
@@ -28553,6 +28633,7 @@ include "Logograms"
 <Multi_key> <asterisk> <period>       : "∙"  U2219   # BULLET OPERATOR
 <Multi_key> <x> <asterisk>            : "⨯"  U2A2F   # VECTOR OR CROSS PRODUCT
 <Multi_key> <x> <minus> <colon>       : "⋇"  U22C7   # DIVISION TIMES
+<Multi_key> <x> <numbersign>          : "⨳"  U2A33  # SMASH PRODUCT
 <Multi_key> <3> <v> <slash>           : "∛"  U221B   # CUBE ROOT
 <Multi_key> <4> <v> <slash>           : "∜"  U221C   # FOURTH ROOT
 <Multi_key> <backslash> <v> <3>       : "؆"  U0606  # ARABIC-INDIC CUBE ROOT
@@ -28665,17 +28746,23 @@ include "Logograms"
 
 <Multi_key> <equal> <Multi_key> <period>             : "≐"  U2250   # APPROACHES THE LIMIT
 <Multi_key> <equal> <Multi_key> <colon>              : "≑"  U2251   # GEOMETRICALLY EQUAL TO
+<Multi_key> <equal> <Multi_key> <backslash> <colon>  : "≒"  U2252  # APPROXIMATELY EQUAL TO OR THE IMAGE OF
+<Multi_key> <equal> <Multi_key> <slash> <colon>      : "≓"  U2253  # IMAGE OF OR APPROXIMATELY EQUAL TO
 <Multi_key> <equal> <Multi_key> <o>                  : "≗"  U2257   # RING EQUAL TO
 <Multi_key> <equal> <Multi_key> <asciicircum>        : "≙"  U2259   # ESTIMATES
 <Multi_key> <equal> <Multi_key> <v>                  : "≚"  U225A   # EQUIANGULAR TO
 <Multi_key> <equal> <Multi_key> <asterisk>           : "⩮"  U2A6E   # EQUALS WITH ASTERISK
 <Multi_key> <equal> <Multi_key> <less>               : "≦"  U2266   # LESS-THAN OVER EQUAL TO
 <Multi_key> <equal> <Multi_key> <greater>            : "≧"  U2267   # GREATER-THAN OVER EQUAL TO
+<Multi_key> <equal> <Multi_key> <asciitilde>         : "≌"  U224C   # ALL EQUAL TO (for ≅ use ~=)
 <Multi_key> <minus> <Multi_key> <period>             : "∸"  U2238   # DOT MINUS
 <Multi_key> <minus> <Multi_key> <comma>              : "⨩"  U2A29   # MINUS SIGN WITH COMMA ABOVE
 <Multi_key> <minus> <Multi_key> <colon>              : "∹"  U2239   # EXCESS (really should swap with ÷ but that's much more useful)
+<Multi_key> <minus> <Multi_key> <2> <colon>          : "∺"  U223A   # GEOMETRIC PROPORTION
+<Multi_key> <minus> <Multi_key> <asciitilde>         : "⋍"  U22CD  # REVERSED TILDE EQUALS (for ≃ use ~-)
 <Multi_key> <plus> <Multi_key> <asciicircum>         : "⨣"  U2A23   # PLUS SIGN WITH CIRCUMFLEX ACCENT ABOVE
 <Multi_key> <asciitilde> <Multi_key> <period>        : "⩪"  U2A6A   # TILDE OPERATOR WITH DOT ABOVE
+<Multi_key> <asciitilde> <Multi_key> <slash> <colon> : "⩫"  U2A6B  # TILDE OPERATOR WITH RISING DOTS
 <Multi_key> <less> <Multi_key> <minus>               : "⪪"  U2AAA  # SMALLER THAN
 <Multi_key> <less> <Multi_key> <equal>               : "⪬"  U2AAC  # SMALLER THAN OR EQUAL TO
 <Multi_key> <less> <Multi_key> <o>                   : "⩹"  U2A79  # LESS-THAN WITH CIRCLE INSIDE
@@ -28789,9 +28876,15 @@ include "Logograms"
 <Multi_key> <parenleft> <asterisk> <parenright>      : "⊗"  U2297   # CIRCLED TIMES
 <Multi_key> <parenleft> <slash> <parenright>         : "⊘"  U2298   # CIRCLED DIVISION SLASH
 <Multi_key> <parenleft> <period> <parenright>        : "⊙"  U2299  # CIRCLED DOT OPERATOR
+<Multi_key> <parenleft> <space> <minus> <space> <parenright> : "⊝"  U229D  # CIRCLED DASH (conflicts with ˘, use ␣()
+<Multi_key> <parenleft> <backslash> <bar> <parenright> : "⦷"  U29B7  # CIRCLED PARALLEL
 <Multi_key> <parenleft> <backslash> <parenright>     : "⦸"  U29B8   # CIRCLED REVERSE SOLIDUS
+<Multi_key> <parenleft> <ampersand> <F> <parenright> : "⦹"  U29B9  # CIRCLED PERPENDICULAR
+<Multi_key> <parenleft> <period> <slash> <period> <parenright> : "⦼"  U29BC  # CIRCLED ANTICLOCKWISE-ROTATED DIVISION SIGN
 <Multi_key> <parenleft> <less> <parenright>          : "⧀"  U29C0   # CIRCLED LESS-THAN
 <Multi_key> <parenleft> <greater> <parenright>       : "⧁"  U29C1   # CIRCLED GREATER-THAN
+<Multi_key> <parenleft> <asterisk> <asciicircum> <parenright> : "⨶"  U2A36  # CIRCLED MULTIPLICATION SIGN WITH CIRCUMFLEX ACCENT
+<Multi_key> <parenleft> <asciicircum> <asterisk> <parenright> : "⨶"  U2A36  # CIRCLED MULTIPLICATION SIGN WITH CIRCUMFLEX ACCENT
 <Multi_key> <parenleft> <minus> <colon> <parenright> : "⨸"  U2A38   # CIRCLED DIVISION SIGN (conflicts with useless {)
 <Multi_key> <bracketleft> <asterisk> <bracketright>  : "⧆"  U29C6   # SQUARED ASTERISK
 <Multi_key> <bracketleft> <slash> <backslash> <bracketright> : "⟎"  U27CE   # SQUARED LOGICAL AND
@@ -28841,6 +28934,11 @@ include "Logograms"
 <Multi_key> <underscore> <Multi_key> <i> <n> <t>     : "⨜"  U2A1C  # INTEGRAL WITH UNDERBAR
 <Multi_key> <o> <Multi_key> <s> <u> <m>              : "⨊"  U2A0A  # MODULO TWO SUM
 
+<Multi_key> <Multi_key> <parenleft> <parenright> <Return> : "⁡"  U2061  # FUNCTION APPLICATION
+<Multi_key> <Multi_key> <asterisk> <Return>          : "⁢"  U2062  # INVISIBLE TIMES
+<Multi_key> <Multi_key> <comma> <Return>             : "⁣"  U2063  # INVISIBLE SEPARATOR
+<Multi_key> <Multi_key> <plus> <Return>              : "⁤"  U2064  # INVISIBLE PLUS
+
 # LaTeX-inspired names
 
 <Multi_key> <a> <l> <e> <p> <h>         : "ℵ"  U2135   # ALEF SYMBOL
@@ -28876,6 +28974,10 @@ include "Logograms"
 <Multi_key> <P> <H> <I>                 : "Φ"  U03A6   # GREEK CAPITAL LETTER PHI
 <Multi_key> <P> <S> <I>                 : "Ψ"  U03A8   # GREEK CAPITAL LETTER PSI
 
+<Multi_key> <2> <l> <a> <n> <d>         : "⩕"  U2A55  # TWO INTERSECTING LOGICAL AND
+<Multi_key> <2> <L> <A> <N> <D>         : "⨇"  U2A07  # TWO LOGICAL AND OPERATOR
+<Multi_key> <2> <l> <o> <r>             : "⩖"  U2A56  # TWO INTERSECTING LOGICAL OR
+<Multi_key> <2> <L> <O> <R>             : "⨈"  U2A08  # TWO LOGICAL OR OPERATOR
 <Multi_key> <a> <n> <g> <l> <e>         : "∠"  U2220   # ANGLE
 <Multi_key> <a> <s> <space>             : "∶"  U2236   # RATIO (AS)
 <Multi_key> <b> <e> <t> <w> <e> <e> <n> : "≬"  U226C   # BETWEEN (conflicts with ĕ, use ue)
@@ -28897,6 +28999,7 @@ include "Logograms"
 <Multi_key> <C> <u> <p>                 : "⋓"  U22D3   # DOUBLE UNION
 <Multi_key> <C> <U> <P>                 : "⋃"  U22C3   # N-ARY UNION
 <Multi_key> <2> <c> <u> <p>             : "⩊"  U2A4A  # UNION BESIDE AND JOINED WITH UNION
+<Multi_key> <d> <b> <e> <n> <d>         : "☡"  U2621  # CAUTION SIGN
 <Multi_key> <d> <i> <a> <m> <e> <t> <e> <r> : "⌀"  U2300   # DIAMETER SIGN (overrides di)
 <Multi_key> <d> <i> <a> <m> <o> <n> <d> : "⋄"  U22C4   # DIAMOND OPERATOR (conflicts with ⌀, use diameter) (use gem for 💎)
 <Multi_key> <d> <i> <j> <k>             : "⫾"  U2AFE  # WHITE VERTICAL BAR (conflicts with ⌀, use diameter) (DIJKSTRA'S CHOICE)
@@ -28914,6 +29017,7 @@ include "Logograms"
 <Multi_key> <i> <i> <i> <i> <n> <t>     : "⨌"  U2A0C   # QUADRUPLE INTEGRAL OPERATOR
 <Multi_key> <i> <i> <i> <n> <t>         : "∭"  U222D   # TRIPLE INTEGRAL
 <Multi_key> <i> <i> <n> <t>             : "∬"  U222C   # DOUBLE INTEGRAL
+<Multi_key> <i> <n> <f> <space>         : "⧜"  U29DC  # INCOMPLETE INFINITY (use 88 for ∞ or infty for ♾️)
 <Multi_key> <i> <n> <t>                 : "∫"  U222B   # INTEGRAL
 <Multi_key> <i> <n> <space>             : "∈"  U2208   # ELEMENT OF (alternatively isin)
 <Multi_key> <i> <s> <i> <n>             : "∈"  U2208   # ELEMENT OF
@@ -29080,6 +29184,20 @@ include "Logograms"
 <Multi_key> <ampersand> <C>           : "⊂"  U2282   # SUBSET OF (CONSEQUENCE OF)
 <Multi_key> <ampersand> <less> <C>    : "⊃"  U2283   # SUPERSET OF (IMPLIES)
 <Multi_key> <ampersand> <ampersand>   : "⅋" U214B    # TURNED AMPERSAND (INTENSIONAL DISJUNCTION)
+
+<Multi_key> <ampersand> <period> <asciicircum>         : "⟑"  U27D1  # AND WITH DOT
+<Multi_key> <ampersand> <bar> <asciicircum>            : "⩚"  U2A5A  # LOGICAL AND WITH MIDDLE STEM
+<Multi_key> <ampersand> <minus> <asciicircum>          : "⩜"  U2A5C  # LOGICAL AND WITH HORIZONTAL DASH
+<Multi_key> <ampersand> <2> <minus> <asciicircum>      : "⩞"  U2A5E  # LOGICAL AND WITH DOUBLE OVERBAR
+<Multi_key> <ampersand> <underscore> <asciicircum>     : "⩟"  U2A5F  # LOGICAL AND WITH UNDERBAR
+<Multi_key> <ampersand> <2> <underscore> <asciicircum> : "⩠"  U2A60  # LOGICAL AND WITH DOUBLE UNDERBAR
+<Multi_key> <ampersand> <period> <V>                   : "⟇"  U27C7  # OR WITH DOT INSIDE
+<Multi_key> <ampersand> <bar> <V>                      : "⩛"  U2A5B  # LOGICAL OR WITH MIDDLE STEM
+<Multi_key> <ampersand> <minus> <V>                    : "⩝"  U2A5D  # LOGICAL OR WITH HORIZONTAL DASH
+<Multi_key> <ampersand> <2> <minus> <V>                : "⩢"  U2A62  # LOGICAL OR WITH DOUBLE OVERBAR
+<Multi_key> <ampersand> <2> <underscore> <V>           : "⩣"  U2A63  # LOGICAL OR WITH DOUBLE UNDERBAR
+<Multi_key> <ampersand> <Multi_key> <V> <asciicircum>  : "⩙"  U2A59  # LOGICAL OR OVERLAPPING LOGICAL AND
+<Multi_key> <ampersand> <Multi_key> <asciicircum> <V>  : "⩙"  U2A59  # LOGICAL OR OVERLAPPING LOGICAL AND
 
 <Multi_key> <ampersand> <bracketleft> <bracketright> : "□"  U25A1   # WHITE SQUARE (NECESSITY)
 <Multi_key> <ampersand> <less> <greater>             : "◇"  U25C7   # WHITE DIAMOND (POSSIBILITY)
@@ -29375,6 +29493,9 @@ include "Logograms"
 <Multi_key> <less> <3> <A> <G>      : "○"  U25CB    # WHITE CIRCLE (AGENDER)
 <Multi_key> <less> <3> <N> <G>      : "⚲"  U26B2    # NEUTER (NEUTRAL GENDER)
 <Multi_key> <less> <3> <N> <B>      : "🜬"  U1F72C   # ALCHEMICAL SYMBOL FOR SUBLIMATE OF ANTIMONY (NON-BINARY)
+<Multi_key> <less> <3> <o> <Multi_key> <o> : "⚭"  U26AD  # MARRIAGE SYMBOL
+<Multi_key> <less> <3> <o> <bar> <o>       : "⚮"  U26AE  # DIVORCE SYMBOL
+<Multi_key> <less> <3> <o> <minus> <o>     : "⚯"  U26AF  # UNMARRIED PARTNERSHIP SYMBOL
 
 <Multi_key> <f> <e> <m> <a> <l> <e> : "♀️"  U2640 UFE0F  # FEMALE SIGN EMOJI
 <Multi_key> <m> <a> <l> <e>         : "♂️"  U2642 UFE0F  # MALE SIGN EMOJI
@@ -29709,7 +29830,7 @@ include "Logograms"
 <Multi_key> <n> <a> <i> <l>         : "💅"  U1F485        # NAIL POLISH
 <Multi_key> <n> <o> <s> <e>         : "👃"  U1F443        # NOSE
 <Multi_key> <p> <u> <n> <c> <h>     : "👊"  U1F44A        # FISTED HAND SIGN (PUNCH)
-<Multi_key> <r> <o> <c> <k>         : "🤘"  U1F918        # SIGN OF THE HORNS (ROCK ON) (use stone for 🪨)
+<Multi_key> <r> <o> <c> <k> <o> <n> : "🤘"  U1F918        # SIGN OF THE HORNS (ROCK ON) (use stone for 🪨)
 <Multi_key> <s> <e> <l> <f> <i> <e> : "🤳"  U1F933        # SELFIE
 <Multi_key> <s> <n> <a> <p>         : "🫰"  U1FAF0        # HAND WITH INDEX FINGER AND THUMB CROSSED (SNAP)
 <Multi_key> <s> <t> <o> <p>         : "✋"  U270B         # RAISED HAND (STOP)
@@ -30320,6 +30441,7 @@ include "Logograms"
 <Multi_key> <r> <i> <c> <k> <s> <h> : "🛺"  U1F6FA        # AUTO RICKSHAW
 <Multi_key> <r> <i> <d> <e>         : "🎢"  U1F3A2        # ROLLER COASTER (RIDE)
 <Multi_key> <r> <o> <a> <d> <w> <o> : "🚧"  U1F6A7        # CONSTRUCTION SIGN (ROADWORKS)
+<Multi_key> <r> <o> <c> <k> <e> <t> : "🚀"  U1F680        # ROCKET (🧑+ZWJ+🚀=🧑‍🚀)
 <Multi_key> <s> <c> <h> <o> <o> <l> : "🏫"  U1F3EB        # SCHOOL (🧑+ZWJ+🏫=🧑‍🏫)
 <Multi_key> <s> <c> <o> <o> <t>     : "🛴"  U1F6F4        # SCOOTER
 <Multi_key> <s> <e> <a> <t>         : "💺"  U1F4BA        # SEAT
@@ -30971,8 +31093,22 @@ include "Logograms"
 
 # Text-presentation dingbats and pictograms
 
+<Multi_key> <X> <P>                 : "☧"  U2627  # CHI RHO
 <Multi_key> <a> <n> <k> <h>         : "☥"  U2625  # ANKH
 <Multi_key> <c> <e> <l> <t> <i> <c> : "🕈"  U1F548  # CELTIC CROSS (conflicts with ě, use ve)
+<Multi_key> <r> <e> <c> <y> <0>     : "♲"  U2672  # UNIVERSAL RECYCLING SYMBOL
+<Multi_key> <r> <e> <c> <y> <1>     : "♻"  U267B  # BLACK UNIVERSAL RECYCLING SYMBOL
+<Multi_key> <r> <e> <c> <y> <g>     : "♺"  U267A  # RECYCLING SYMBOL FOR GENERIC MATERIALS
+<Multi_key> <r> <e> <c> <y> <p> <1> : "♳"  U2673  # RECYCLING SYMBOL FOR TYPE-1 PLASTICS
+<Multi_key> <r> <e> <c> <y> <p> <2> : "♴"  U2674  # RECYCLING SYMBOL FOR TYPE-2 PLASTICS
+<Multi_key> <r> <e> <c> <y> <p> <3> : "♵"  U2675  # RECYCLING SYMBOL FOR TYPE-3 PLASTICS
+<Multi_key> <r> <e> <c> <y> <p> <4> : "♶"  U2676  # RECYCLING SYMBOL FOR TYPE-4 PLASTICS
+<Multi_key> <r> <e> <c> <y> <p> <5> : "♷"  U2677  # RECYCLING SYMBOL FOR TYPE-5 PLASTICS
+<Multi_key> <r> <e> <c> <y> <p> <6> : "♸"  U2678  # RECYCLING SYMBOL FOR TYPE-6 PLASTICS
+<Multi_key> <r> <e> <c> <y> <p> <7> : "♹"  U2679  # RECYCLING SYMBOL FOR TYPE-7 PLASTICS
+<Multi_key> <r> <e> <c> <y> <p> <a> : "♼"  U267C  # RECYCLED PAPER SYMBOL
+<Multi_key> <r> <e> <c> <y> <p> <p> : "♽"  U267D  # PARTIALLY-RECYCLED PAPER SYMBOL
+<Multi_key> <s> <t> <e> <r> <e> <o> : "📾"  U1F4FE  # PORTABLE STEREO
 
 <Multi_key> <s> <b> <less>     : "🗨"  U1F5E8  # LEFT SPEECH BUBBLE
 <Multi_key> <s> <b> <greater>  : "🗩"  U1F5E9  # RIGHT SPEECH BUBBLE
@@ -31066,6 +31202,10 @@ include "Logograms"
 <Multi_key> <r> <i> <f> <l> <e> <greater>     : "𜱧"  U1CC67  # RIGHT-POINTING RIFLE
 <Multi_key> <r> <i> <f> <l> <e> <v>           : "𜱨"  U1CC68  # DOWN-POINTING RIFLE
 <Multi_key> <r> <i> <f> <l> <e> <space>       : "🥆"  U1F946  # RIFLE
+<Multi_key> <r> <o> <c> <k> <e> <less>        : "🙬"  U1F66C  # LEFTWARDS ROCKET
+<Multi_key> <r> <o> <c> <k> <e> <asciicircum> : "🙭"  U1F66D  # UPWARDS ROCKET
+<Multi_key> <r> <o> <c> <k> <e> <greater>     : "🙮"  U1F66E  # RIGHTWARDS ROCKET
+<Multi_key> <r> <o> <c> <k> <e> <v>           : "🙯"  U1F66F  # DOWNWARDS ROCKET
 <Multi_key> <r> <u> <2>                       : "🮲🮳"  U1FBB2 U1FBB3  # RUNNING MAN (TWO CHARACTERS)
 <Multi_key> <s> <n> <a> <k> <less> <c>        : "𜱴"  U1CC74  # LEFT-FACING SNAKE HEAD WITH CLOSED MOUTH
 <Multi_key> <s> <n> <a> <k> <asciicircum> <c> : "𜱵"  U1CC75  # UP-FACING SNAKE HEAD WITH CLOSED MOUTH
@@ -31097,8 +31237,15 @@ include "Logograms"
 <Multi_key> <at> <underscore> <parenleft> <u> <parenright> : "𜲪𜲫"  U1CCAA U1CCAB  # SMILING FACE (BOTTOM)
 <Multi_key> <at> <underscore> <parenleft> <minus> <parenright> : "𜲬𜲭"  U1CCAC U1CCAD  # NEUTRAL FACE (BOTTOM)
 <Multi_key> <at> <underscore> <parenleft> <n> <parenright> : "𜲰𜲱"  U1CCB0 U1CCB1  # FROWNING FACE (BOTTOM)
+
 <Multi_key> <at> <asciicircum> <b> <i> <s> <h> <o> <p> : "𜳆𜳇"  U1CCC6 U1CCC7  # CHESS BISHOP (TOP)
 <Multi_key> <at> <underscore> <b> <i> <s> <h> <o> <p>  : "𜳈𜳉"  U1CCC8 U1CCC9  # CHESS BISHOP (BOTTOM)
+<Multi_key> <at> <asciicircum> <c> <i> <r> <c> <l> <e> : "𜰵𜰶"  U1CC35 U1CC36  # CIRCLE (TOP)
+<Multi_key> <at> <underscore> <c> <i> <r> <c> <l> <e>  : "𜰹𜰺"  U1CC39 U1CC3A  # CIRCLE (BOTTOM)
+<Multi_key> <at> <asciicircum> <asciicircum> <c> <i> <r> <c> <l> <e> : "𜰰𜰱𜰲𜰳"  U1CC30 U1CC31 U1CC32 U1CC33  # UPPER TWELFTH CIRCLE
+<Multi_key> <at> <asciicircum> <underscore> <c> <i> <r> <c> <l> <e>  : "𜰴  𜰷"  U1CC34 U0020 U0020 U1CC37  # UPPER MIDDLE TWELFTH CIRCLE
+<Multi_key> <at> <underscore> <asciicircum> <c> <i> <r> <c> <l> <e>  : "𜰸  𜰻"  U1CC38 U0020 U0020 U1CC3B  # LOWER MIDDLE TWELFTH CIRCLE
+<Multi_key> <at> <underscore> <underscore> <c> <i> <r> <c> <l> <e>   : "𜰼𜰽𜰾𜰿"  U1CC3C U1CC3D U1CC3E U1CC3F  # LOWER TWELFTH CIRCLE
 <Multi_key> <at> <asciicircum> <i> <n> <t>             : "⌠"  U2320  # TOP HALF INTEGRAL
 <Multi_key> <at> <bar> <i> <n> <t>                     : "⎮"  U23AE  # INTEGRAL EXTENSION
 <Multi_key> <at> <underscore> <i> <n> <t>              : "⌡"  U2321  # BOTTOM HALF INTEGRAL
@@ -31110,6 +31257,8 @@ include "Logograms"
 <Multi_key> <at> <underscore> <p> <a> <w> <n>          : "𜳐𜳑"  U1CCD0 U1CCD1  # CHESS PAWN (BOTTOM)
 <Multi_key> <at> <asciicircum> <P> <C>                 : "𜲶𜲷"  U1CCB6 U1CCB7  # MICROCOMPUTER (PC) (TOP)
 <Multi_key> <at> <underscore> <P> <C>                  : "𜲸𜲹"  U1CCB8 U1CCB9  # MICROCOMPUTER (PC) (BOTTOM)
+<Multi_key> <at> <asciicircum> <p> <e> <r> <s> <o> <n> : "𜷦"  U1CDE6  # TOP HALF STANDING PERSON
+<Multi_key> <at> <underscore> <p> <e> <r> <s> <o> <n>  : "𜷧"  U1CDE7  # BOTTOM HALF STANDING PERSON
 <Multi_key> <at> <asciicircum> <q> <u> <e> <e> <n>     : "𜲾𜲿"  U1CCBE U1CCBF  # CHESS QUEEN (TOP)
 <Multi_key> <at> <underscore> <q> <u> <e> <e> <n>      : "𜳀𜳁"  U1CCC0 U1CCC1  # CHESS QUEEN (BOTTOM)
 <Multi_key> <at> <asciicircum> <r> <o> <b> <o> <t>     : "𜱛"  U1CC5B  # TOP HALF FORWARD-FACING ROBOT
@@ -31120,6 +31269,19 @@ include "Logograms"
 <Multi_key> <at> <underscore> <r> <o> <b> <o> <greater> : "𜱟"  U1CC5F  # BOTTOM HALF RIGHT-FACING ROBOT
 <Multi_key> <at> <asciicircum> <r> <o> <o> <k>         : "𜳂𜳃"  U1CCC2 U1CCC3  # CHESS ROOK (TOP)
 <Multi_key> <at> <underscore> <r> <o> <o> <k>          : "𜳄𜳅"  U1CCC4 U1CCC5  # CHESS ROOK (BOTTOM)
+<Multi_key> <at> <asciicircum> <r> <u> <n> <n> <e> <greater> <1> : "𜷨"  U1CDE8  # TOP HALF RIGHT-FACING RUNNER FRAME-1
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <greater> <1> : "𜷩"  U1CDE9  # BOTTOM HALF RIGHT-FACING RUNNER FRAME-1
+<Multi_key> <at> <asciicircum> <r> <u> <n> <n> <e> <greater> <2> : "𜷪"  U1CDEA  # TOP HALF RIGHT-FACING RUNNER FRAME-2
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <greater> <2> : "𜷫"  U1CDEB  # BOTTOM HALF RIGHT-FACING RUNNER FRAME-2
+<Multi_key> <at> <asciicircum> <r> <u> <n> <n> <e> <less> <1> : "𜷬"  U1CDEC  # TOP HALF LEFT-FACING RUNNER FRAME-1
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <less> <1> : "𜷭"  U1CDED  # BOTTOM HALF LEFT-FACING RUNNER FRAME-1
+<Multi_key> <at> <asciicircum> <r> <u> <n> <n> <e> <less> <2> : "𜷮"  U1CDEE  # TOP HALF LEFT-FACING RUNNER FRAME-2
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <less> <2> : "𜷯"  U1CDEF  # BOTTOM HALF LEFT-FACING RUNNER FRAME-2
+<Multi_key> <at> <asciicircum> <r> <u> <n> <n> <e> <r> : "𜷰"  U1CDF0  # TOP HALF FORWARD-FACING RUNNER
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <r> <1> : "𜷱"  U1CDF1  # BOTTOM HALF FORWARD-FACING RUNNER FRAME-1
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <r> <2> : "𜷲"  U1CDF2  # BOTTOM HALF FORWARD-FACING RUNNER FRAME-2
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <r> <3> : "𜷳"  U1CDF3  # BOTTOM HALF FORWARD-FACING RUNNER FRAME-3
+<Multi_key> <at> <underscore> <r> <u> <n> <n> <e> <r> <4> : "𜷴"  U1CDF4  # BOTTOM HALF FORWARD-FACING RUNNER FRAME-4
 <Multi_key> <at> <asciicircum> <s> <u> <m>             : "⎲"  U23B2  # SUMMATION TOP
 <Multi_key> <at> <underscore> <s> <u> <m>              : "⎳"  U23B3  # SUMMATION BOTTOM
 <Multi_key> <at> <asciicircum> <T> <V>                 : "𜲲𜲳"  U1CCB2 U1CCB3  # TELEVISION (TOP)
@@ -31576,6 +31738,8 @@ include "Logograms"
 <Multi_key> <bracketleft> <bracketright> <o>           : "⧇" U29C7    # SQUARED SMALL CIRCLE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <0>       : "⧈" U29C8    # SQUARED SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <equal> <0>   : "⧮"  U29EE  # ERROR-BARRED WHITE SQUARE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <equal> <1>   : "⧯"  U29EF  # ERROR-BARRED BLACK SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <c>           : "▢" U25A2    # WHITE SQUARE WITH ROUNDED CORNERS (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <minus>      : "▤" U25A4   # SQUARE WITH HORIZONTAL FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <bar>        : "▥" U25A5   # SQUARE WITH VERTICAL FILL (conflicts)
@@ -31653,7 +31817,9 @@ include "Logograms"
 <Multi_key> <parenleft> <parenright> <Multi_key> <period> <minus> : "⊙" U2299    # CIRCLED DOT OPERATOR
 <Multi_key> <parenleft> <parenright> <o>           : "⊚" U229A    # CIRCLED RING OPERATOR
 <Multi_key> <parenleft> <parenright> <asterisk>    : "⊛" U229B    # CIRCLED ASTERISK OPERATOR
-<Multi_key> <parenleft> <parenright> <equal>       : "⊜" U229C    # CIRCLED EQUALS
+<Multi_key> <parenleft> <parenright> <equal> <space> : "⊜" U229C    # CIRCLED EQUALS
+<Multi_key> <parenleft> <parenright> <equal> <0>   : "⧲"  U29F2  # ERROR-BARRED WHITE CIRCLE
+<Multi_key> <parenleft> <parenright> <equal> <1>   : "⧳"  U29F3  # ERROR-BARRED BLACK CIRCLE
 <Multi_key> <parenleft> <parenright> <2> <0>       : "◎" U25CE    # BULLSEYE
 <Multi_key> <parenleft> <parenright> <2> <1>       : "◉" U25C9    # FISHEYE
 <Multi_key> <parenleft> <parenright> <Multi_key> <bar>   : "◍" U25CD    # CIRCLE WITH VERTICAL FILL
@@ -31759,6 +31925,8 @@ include "Logograms"
 <Multi_key> <Tab> <less> <greater> <period>      : "⟐" U27D0   # WHITE DIAMOND WITH CENTRED DOT
 <Multi_key> <Tab> <less> <greater> <question>    : "�" UFFFD   # REPLACEMENT CHARACTER
 <Multi_key> <Tab> <less> <greater> <underscore>  : "⍚"  U235A  # APL FUNCTIONAL SYMBOL DIAMOND UNDERBAR
+<Multi_key> <Tab> <less> <greater> <equal> <0>   : "⧰"  U29F0  # ERROR-BARRED WHITE DIAMOND
+<Multi_key> <Tab> <less> <greater> <equal> <1>   : "⧱"  U29F1  # ERROR-BARRED BLACK DIAMOND
 <Multi_key> <Tab> <less> <greater> <exclam>      : "𜲍"  U1CC8D  # INVERSE BLACK DIAMOND
 <Multi_key> <Tab> <less> <greater> <Return>      : "⃟" U20DF   # COMBINING ENCLOSING DIAMOND
 
@@ -31775,6 +31943,7 @@ include "Logograms"
 <Multi_key> <Tab> <O> <5> <v> <1>       : "⯂" U2BC2    # TURNED BLACK PENTAGON
 <Multi_key> <Tab> <O> <6> <0>           : "⬡" U2B21    # WHITE HEXAGON
 <Multi_key> <Tab> <O> <6> <1>           : "⬢" U2B22    # BLACK HEXAGON
+<Multi_key> <Tab> <O> <6> <h> <0>       : "⎔"  U2394  # SOFTWARE-FUNCTION SYMBOL
 <Multi_key> <Tab> <O> <6> <h> <1>       : "⬣" U2B23    # HORIZONTAL BLACK HEXAGON
 <Multi_key> <Tab> <O> <8> <1>           : "⯄" U2BC4    # BLACK OCTAGON
 <Multi_key> <Tab> <O> <8> <h> <1>       : "⯃" U2BC3    # HORIZONTAL BLACK OCTAGON
@@ -31782,6 +31951,8 @@ include "Logograms"
 <Multi_key> <Tab> <asterisk> <3> <1> : "🟂" U1F7C2    # THREE POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <4> <0> : "✧" U2727    # WHITE FOUR POINTED STAR
 <Multi_key> <Tab> <asterisk> <4> <1> : "🟆" U1F7C6    # FOUR POINTED BLACK STAR
+<Multi_key> <Tab> <asterisk> <4> <greater> <0> : "⯏"  U2BCF  # ROTATED WHITE FOUR POINTED CUSP
+<Multi_key> <Tab> <asterisk> <4> <greater> <1> : "⯍"  U2BCD  # ROTATED LIGHT FOUR POINTED BLACK CUSP
 <Multi_key> <Tab> <asterisk> <5> <0> : "☆" U2606    # WHITE STAR (alternatively *0)
 <Multi_key> <Tab> <asterisk> <5> <1> : "★" U2605    # BLACK STAR (alternatively *1)
 <Multi_key> <Tab> <asterisk> <5> <O> : "✪"   U272A         # CIRCLED WHITE STAR
@@ -31797,6 +31968,7 @@ include "Logograms"
 <Multi_key> <Tab> <asterisk> <8> <O> : "❂" U2742    # CIRCLED OPEN CENTRE EIGHT POINTED STAR
 <Multi_key> <Tab> <asterisk> <8> <minus> : "۞"  U06DE  # ARABIC START OF RUB EL HIZB
 <Multi_key> <Tab> <asterisk> <8> <at> <space> : "✵"  U2735  # EIGHT POINTED PINWHEEL STAR
+<Multi_key> <Tab> <asterisk> <8> <asterisk> : "⁕"  U2055  # FLOWER PUNCTUATION MARK
 <Multi_key> <Tab> <asterisk> <9> <0> : "🟙" U1F7D9    # NINE POINTED WHITE STAR
 <Multi_key> <Tab> <asterisk> <1> <2> <1> : "✹" U2739    # TWELVE POINTED BLACK STAR
 <Multi_key> <Tab> <asterisk> <1> <6> <1> : "✺" U273A   # SIXTEEN POINTED ASTERISK
@@ -32025,7 +32197,7 @@ include "Logograms"
 <Multi_key> <Tab> <bar> <Multi_key> <minus> <minus> <greater> : "⟼"  U27FC  # LONG RIGHTWARDS ARROW FROM BAR
 <Multi_key> <Tab> <less> <Multi_key> <equal> <equal> <bar> : "⟽"  U27FD  # LONG LEFTWARDS DOUBLE ARROW FROM BAR
 <Multi_key> <Tab> <bar> <Multi_key> <equal> <equal> <greater> : "⟾"  U27FE  # LONG RIGHTWARDS DOUBLE ARROW FROM BAR
-<Multi_key> <Tab> <minus> <Multi_key> <asciitilde> <asciitilde> <greater> : "⟿"  U27FF  # LONG RIGHTWARDS SQUIGGLE ARROW
+<Multi_key> <Tab> <asciitilde> <Multi_key> <asciitilde> <asciitilde> <greater> : "⟿"  U27FF  # LONG RIGHTWARDS SQUIGGLE ARROW
 
 # Supplemental Arrows-B
 
@@ -32169,13 +32341,104 @@ include "Logograms"
 <Multi_key> <Tab> <minus> <Multi_key> <asciitilde> <minus> <greater> : "⥲"  U2972  # TILDE OPERATOR ABOVE RIGHTWARDS ARROW
 <Multi_key> <Tab> <less> <Multi_key> <minus> <asciitilde> <minus> : "⥳"  U2973  # LEFTWARDS ARROW ABOVE TILDE OPERATOR
 <Multi_key> <Tab> <minus> <Multi_key> <minus> <asciitilde> <greater> : "⥴"  U2974  # RIGHTWARDS ARROW ABOVE TILDE OPERATOR
-<Multi_key> <Tab> <minus> <Multi_key> <minus> <Multi_key> <asciitilde> <asciitilde> <greater> : "⥵"  U2975  # RIGHTWARDS ARROW ABOVE ALMOST EQUAL TO
+<Multi_key> <Tab> <minus> <Multi_key> <minus> <asciitilde> <asciitilde> <greater> : "⥵"  U2975  # RIGHTWARDS ARROW ABOVE ALMOST EQUAL TO
 <Multi_key> <Tab> <less> <minus> <Multi_key> <less> <minus> : "⥷"  U2977  # LEFTWARDS ARROW THROUGH LESS-THAN
 <Multi_key> <Tab> <less> <minus> <E>                      : "⥺"  U297A  # LEFTWARDS ARROW THROUGH SUBSET
 <Multi_key> <Tab> <E> <minus> <minus>                     : "⥼"  U297C  # LEFT FISH TAIL
 <Multi_key> <Tab> <minus> <minus> <3>                     : "⥽"  U297D  # RIGHT FISH TAIL
 <Multi_key> <Tab> <E> <bar> <bar>                         : "⥾"  U297E  # UP FISH TAIL
 <Multi_key> <Tab> <bar> <bar> <3>                         : "⥿"  U297F  # DOWN FISH TAIL
+
+# Supplumental Arrows-C
+
+<Multi_key> <Tab> <S> <less> <minus>                      : "🠀"  U1F800  # LEFTWARDS ARROW WITH SMALL TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <S> <asciicircum> <bar>                 : "🠁"  U1F801  # UPWARDS ARROW WITH SMALL TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <minus> <greater> <S>                   : "🠂"  U1F802  # RIGHTWARDS ARROW WITH SMALL TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <bar> <v> <S>                           : "🠃"  U1F803  # DOWNWARDS ARROW WITH SMALL TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <M> <less> <minus>                      : "🠄"  U1F804  # LEFTWARDS ARROW WITH MEDIUM TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <M> <asciicircum> <bar>                 : "🠅"  U1F805  # UPWARDS ARROW WITH MEDIUM TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <minus> <greater> <M>                   : "🠆"  U1F806  # RIGHTWARDS ARROW WITH MEDIUM TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <bar> <v> <M>                           : "🠇"  U1F807  # DOWNWARDS ARROW WITH MEDIUM TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <L> <less> <minus>                      : "🠈"  U1F808  # LEFTWARDS ARROW WITH LARGE TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <L> <asciicircum> <bar>                 : "🠉"  U1F809  # UPWARDS ARROW WITH LARGE TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <minus> <greater> <L>                   : "🠊"  U1F80A  # RIGHTWARDS ARROW WITH LARGE TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <bar> <v> <L>                           : "🠋"  U1F80B  # DOWNWARDS ARROW WITH LARGE TRIANGLE ARROWHEAD
+
+<Multi_key> <Tab> <less> <asterisk> <bar>                 : "🠴"  U1F834  # LEFTWARDS FINGER-POST ARROW
+<Multi_key> <Tab> <asciicircum> <asterisk> <minus>        : "🠵"  U1F835  # UPWARDS FINGER-POST ARROW
+<Multi_key> <Tab> <bar> <asterisk> <greater>              : "🠶"  U1F836  # RIGHTWARDS FINGER-POST ARROW
+<Multi_key> <Tab> <minus> <asterisk> <v>                  : "🠷"  U1F837  # DOWNWARDS FINGER-POST ARROW
+
+<Multi_key> <Tab> <bracketleft> <less> <bracketright>     : "🠸"  U1F838  # LEFTWARDS SQUARED ARROW
+<Multi_key> <Tab> <bracketleft> <asciicircum> <bracketright> : "🠹"  U1F839  # UPWARDS SQUARED ARROW
+<Multi_key> <Tab> <bracketleft> <greater> <bracketright>  : "🠺"  U1F83A  # RIGHTWARDS SQUARED ARROW
+<Multi_key> <Tab> <bracketleft> <v> <bracketright>        : "🠻"  U1F83B  # DOWNWARDS SQUARED ARROW
+
+<Multi_key> <Tab> <less> <minus> <1>                      : "🡠"  U1F860  # WIDE-HEADED LEFTWARDS LIGHT BARB ARROW
+<Multi_key> <Tab> <asciicircum> <bar> <1>                 : "🡡"  U1F861  # WIDE-HEADED UPWARDS LIGHT BARB ARROW
+<Multi_key> <Tab> <minus> <greater> <1>                   : "🡢"  U1F862  # WIDE-HEADED RIGHTWARDS LIGHT BARB ARROW
+<Multi_key> <Tab> <bar> <v> <1>                           : "🡣"  U1F863  # WIDE-HEADED DOWNWARDS LIGHT BARB ARROW
+<Multi_key> <Tab> <less> <backslash> <1>                  : "🡤"  U1F864  # WIDE-HEADED NORTH WEST LIGHT BARB ARROW
+<Multi_key> <Tab> <asciicircum> <backslash> <1>           : "🡤"  U1F864  # WIDE-HEADED NORTH WEST LIGHT BARB ARROW
+<Multi_key> <Tab> <slash> <greater> <1>                   : "🡥"  U1F865  # WIDE-HEADED NORTH EAST LIGHT BARB ARROW
+<Multi_key> <Tab> <asciicircum> <slash> <1>               : "🡥"  U1F865  # WIDE-HEADED NORTH EAST LIGHT BARB ARROW
+<Multi_key> <Tab> <backslash> <greater> <1>               : "🡦"  U1F866  # WIDE-HEADED SOUTH EAST LIGHT BARB ARROW
+<Multi_key> <Tab> <backslash> <v> <1>                     : "🡦"  U1F866  # WIDE-HEADED SOUTH EAST LIGHT BARB ARROW
+<Multi_key> <Tab> <less> <slash> <1>                      : "🡧"  U1F867  # WIDE-HEADED SOUTH WEST LIGHT BARB ARROW
+<Multi_key> <Tab> <slash> <v> <1>                         : "🡧"  U1F867  # WIDE-HEADED SOUTH WEST LIGHT BARB ARROW
+<Multi_key> <Tab> <less> <minus> <2>                      : "🡨"  U1F868  # WIDE-HEADED LEFTWARDS BARB ARROW
+<Multi_key> <Tab> <asciicircum> <bar> <2>                 : "🡩"  U1F869  # WIDE-HEADED UPWARDS BARB ARROW
+<Multi_key> <Tab> <minus> <greater> <2>                   : "🡪"  U1F86A  # WIDE-HEADED RIGHTWARDS BARB ARROW
+<Multi_key> <Tab> <bar> <v> <2>                           : "🡫"  U1F86B  # WIDE-HEADED DOWNWARDS BARB ARROW
+<Multi_key> <Tab> <less> <backslash> <2>                  : "🡬"  U1F86C  # WIDE-HEADED NORTH WEST BARB ARROW
+<Multi_key> <Tab> <asciicircum> <backslash> <2>           : "🡬"  U1F86C  # WIDE-HEADED NORTH WEST BARB ARROW
+<Multi_key> <Tab> <slash> <greater> <2>                   : "🡭"  U1F86D  # WIDE-HEADED NORTH EAST BARB ARROW
+<Multi_key> <Tab> <asciicircum> <slash> <2>               : "🡭"  U1F86D  # WIDE-HEADED NORTH EAST BARB ARROW
+<Multi_key> <Tab> <backslash> <greater> <2>               : "🡮"  U1F86E  # WIDE-HEADED SOUTH EAST BARB ARROW
+<Multi_key> <Tab> <backslash> <v> <2>                     : "🡮"  U1F86E  # WIDE-HEADED SOUTH EAST BARB ARROW
+<Multi_key> <Tab> <less> <slash> <2>                      : "🡯"  U1F86F  # WIDE-HEADED SOUTH WEST BARB ARROW
+<Multi_key> <Tab> <slash> <v> <2>                         : "🡯"  U1F86F  # WIDE-HEADED SOUTH WEST BARB ARROW
+<Multi_key> <Tab> <less> <minus> <3>                      : "🡰"  U1F870  # WIDE-HEADED LEFTWARDS MEDIUM BARB ARROW
+<Multi_key> <Tab> <asciicircum> <bar> <3>                 : "🡱"  U1F871  # WIDE-HEADED UPWARDS MEDIUM BARB ARROW
+<Multi_key> <Tab> <minus> <greater> <3>                   : "🡲"  U1F872  # WIDE-HEADED RIGHTWARDS MEDIUM BARB ARROW
+<Multi_key> <Tab> <bar> <v> <3>                           : "🡳"  U1F873  # WIDE-HEADED DOWNWARDS MEDIUM BARB ARROW
+<Multi_key> <Tab> <less> <backslash> <3>                  : "🡴"  U1F874  # WIDE-HEADED NORTH WEST MEDIUM BARB ARROW
+<Multi_key> <Tab> <asciicircum> <backslash> <3>           : "🡴"  U1F874  # WIDE-HEADED NORTH WEST MEDIUM BARB ARROW
+<Multi_key> <Tab> <slash> <greater> <3>                   : "🡵"  U1F875  # WIDE-HEADED NORTH EAST MEDIUM BARB ARROW
+<Multi_key> <Tab> <asciicircum> <slash> <3>               : "🡵"  U1F875  # WIDE-HEADED NORTH EAST MEDIUM BARB ARROW
+<Multi_key> <Tab> <backslash> <greater> <3>               : "🡶"  U1F876  # WIDE-HEADED SOUTH EAST MEDIUM BARB ARROW
+<Multi_key> <Tab> <backslash> <v> <3>                     : "🡶"  U1F876  # WIDE-HEADED SOUTH EAST MEDIUM BARB ARROW
+<Multi_key> <Tab> <less> <slash> <3>                      : "🡷"  U1F877  # WIDE-HEADED SOUTH WEST MEDIUM BARB ARROW
+<Multi_key> <Tab> <slash> <v> <3>                         : "🡷"  U1F877  # WIDE-HEADED SOUTH WEST MEDIUM BARB ARROW
+<Multi_key> <Tab> <less> <minus> <4>                      : "🡸"  U1F878  # WIDE-HEADED LEFTWARDS HEAVY BARB ARROW
+<Multi_key> <Tab> <asciicircum> <bar> <4>                 : "🡹"  U1F879  # WIDE-HEADED UPWARDS HEAVY BARB ARROW
+<Multi_key> <Tab> <minus> <greater> <4>                   : "🡺"  U1F87A  # WIDE-HEADED RIGHTWARDS HEAVY BARB ARROW
+<Multi_key> <Tab> <bar> <v> <4>                           : "🡻"  U1F87B  # WIDE-HEADED DOWNWARDS HEAVY BARB ARROW
+<Multi_key> <Tab> <less> <backslash> <4>                  : "🡼"  U1F87C  # WIDE-HEADED NORTH WEST HEAVY BARB ARROW
+<Multi_key> <Tab> <asciicircum> <backslash> <4>           : "🡼"  U1F87C  # WIDE-HEADED NORTH WEST HEAVY BARB ARROW
+<Multi_key> <Tab> <slash> <greater> <4>                   : "🡽"  U1F87D  # WIDE-HEADED NORTH EAST HEAVY BARB ARROW
+<Multi_key> <Tab> <asciicircum> <slash> <4>               : "🡽"  U1F87D  # WIDE-HEADED NORTH EAST HEAVY BARB ARROW
+<Multi_key> <Tab> <backslash> <greater> <4>               : "🡾"  U1F87E  # WIDE-HEADED SOUTH EAST HEAVY BARB ARROW
+<Multi_key> <Tab> <backslash> <v> <4>                     : "🡾"  U1F87E  # WIDE-HEADED SOUTH EAST HEAVY BARB ARROW
+<Multi_key> <Tab> <less> <slash> <4>                      : "🡿"  U1F87F  # WIDE-HEADED SOUTH WEST HEAVY BARB ARROW
+<Multi_key> <Tab> <slash> <v> <4>                         : "🡿"  U1F87F  # WIDE-HEADED SOUTH WEST HEAVY BARB ARROW
+<Multi_key> <Tab> <less> <minus> <5>                      : "🢀"  U1F880  # WIDE-HEADED LEFTWARDS VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <asciicircum> <bar> <5>                 : "🢁"  U1F881  # WIDE-HEADED UPWARDS VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <minus> <greater> <5>                   : "🢂"  U1F882  # WIDE-HEADED RIGHTWARDS VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <bar> <v> <5>                           : "🢃"  U1F883  # WIDE-HEADED DOWNWARDS VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <less> <backslash> <5>                  : "🢄"  U1F884  # WIDE-HEADED NORTH WEST VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <asciicircum> <backslash> <5>           : "🢄"  U1F884  # WIDE-HEADED NORTH WEST VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <slash> <greater> <5>                   : "🢅"  U1F885  # WIDE-HEADED NORTH EAST VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <asciicircum> <slash> <5>               : "🢅"  U1F885  # WIDE-HEADED NORTH EAST VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <backslash> <greater> <5>               : "🢆"  U1F886  # WIDE-HEADED SOUTH EAST VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <backslash> <v> <5>                     : "🢆"  U1F886  # WIDE-HEADED SOUTH EAST VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <less> <slash> <5>                      : "🢇"  U1F887  # WIDE-HEADED SOUTH WEST VERY HEAVY BARB ARROW
+<Multi_key> <Tab> <slash> <v> <5>                         : "🢇"  U1F887  # WIDE-HEADED SOUTH WEST VERY HEAVY BARB ARROW
+
+<Multi_key> <Tab> <space> <less> <space>                  : "🢐"  U1F890  # LEFTWARDS TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <space> <asciicircum> <space>           : "🢑"  U1F891  # UPWARDS TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <space> <greater> <space>               : "🢒"  U1F892  # RIGHTWARDS TRIANGLE ARROWHEAD
+<Multi_key> <Tab> <space> <v> <space>                     : "🢓"  U1F893  # DOWNWARDS TRIANGLE ARROWHEAD
 
 # Miscellaneous Symbols and Arrows
 
@@ -32209,7 +32472,7 @@ include "Logograms"
 <Multi_key> <Tab> <less> <o> <minus>                      : "⬰"  U2B30  # LEFT ARROW WITH SMALL CIRCLE
 <Multi_key> <Tab> <3> <less> <less> <less>                : "⬱"  U2B31  # THREE LEFTWARDS ARROWS
 <Multi_key> <Tab> <less> <Multi_key> <o> <plus> <minus>   : "⬲"  U2B32  # LEFT ARROW WITH CIRCLED PLUS
-<Multi_key> <Tab> <less> <Multi_key> <asciitilde> <asciitilde> <minus> : "⬳"  U2B33  # LONG LEFTWARDS SQUIGGLE ARROW
+<Multi_key> <Tab> <less> <Multi_key> <asciitilde> <asciitilde> <asciitilde> : "⬳"  U2B33  # LONG LEFTWARDS SQUIGGLE ARROW
 <Multi_key> <Tab> <Multi_key> <less> <less> <bar> <minus> : "⬴"  U2B34  # LEFTWARDS TWO-HEADED ARROW WITH VERTICAL STROKE
 <Multi_key> <Tab> <Multi_key> <less> <less> <Multi_key> <bar> <bar> <minus> : "⬵"  U2B35  # LEFTWARDS TWO-HEADED ARROW WITH DOUBLE VERTICAL STROKE
 <Multi_key> <Tab> <Multi_key> <less> <less> <minus> <bar> : "⬶"  U2B36  # LEFTWARDS TWO-HEADED ARROW FROM BAR
@@ -32223,10 +32486,18 @@ include "Logograms"
 <Multi_key> <Tab> <less> <x> <minus>                      : "⬾"  U2B3E  # LEFTWARDS ARROW THROUGH X
 <Multi_key> <Tab> <Multi_key> <less> <minus> <asciitilde> <asciitilde> : "⬿"  U2B3F  # WAVE ARROW POINTING DIRECTLY LEFT
 <Multi_key> <Tab> <less> <equal> <minus>                  : "⭀"  U2B40  # EQUALS SIGN ABOVE LEFTWARDS ARROW
+<Multi_key> <Tab> <less> <Multi_key> <less> <asciitilde> <minus> <minus> : "⭁"  U2B41  # REVERSE TILDE OPERATOR ABOVE LEFTWARDS ARROW
+<Multi_key> <Tab> <less> <Multi_key> <minus> <less> <asciitilde> <asciitilde> <minus> : "⭂"  U2B42  # LEFTWARDS ARROW ABOVE REVERSE ALMOST EQUAL TO
 <Multi_key> <Tab> <Multi_key> <minus> <less> <minus> <less> : "⭃"  U2B43  # RIGHTWARDS ARROW THROUGH GREATER-THAN
 <Multi_key> <Tab> <3> <minus> <less>                      : "⭄"  U2B44  # RIGHTWARDS ARROW THROUGH SUPERSET
 <Multi_key> <Tab> <less> <4> <minus>                      : "⭅"  U2B45  # LEFTWARDS QUADRUPLE ARROW
 <Multi_key> <Tab> <minus> <4> <greater>                   : "⭆"  U2B46  # RIGHTWARDS QUADRUPLE ARROW
+<Multi_key> <Tab> <minus> <Multi_key> <less> <asciitilde> <minus> <greater> : "⭇"  U2B47  # REVERSE TILDE OPERATOR ABOVE RIGHTWARDS ARROW
+<Multi_key> <Tab> <minus> <Multi_key> <minus> <less> <asciitilde> <asciitilde> <greater> : "⭈"  U2B48  # RIGHTWARDS ARROW ABOVE REVERSE ALMOST EQUAL TO
+<Multi_key> <Tab> <less> <Multi_key> <asciitilde> <minus> <minus> : "⭉"  U2B49  # TILDE OPERATOR ABOVE LEFTWARDS ARROW
+<Multi_key> <Tab> <less> <Multi_key> <minus> <asciitilde> <asciitilde> <minus> : "⭊"  U2B4A  # LEFTWARDS ARROW ABOVE ALMOST EQUAL TO
+<Multi_key> <Tab> <less> <Multi_key> <minus> <less> <asciitilde> <minus> : "⭋"  U2B4B  # LEFTWARDS ARROW ABOVE REVERSE TILDE OPERATOR
+<Multi_key> <Tab> <minus> <Multi_key> <minus> <less> <asciitilde> <greater> : "⭌"  U2B4C  # RIGHTWARDS ARROW ABOVE REVERSE TILDE OPERATOR
 
 <Multi_key> <Tab> <Multi_key> <less> <bar> <Multi_key> <bar> <bar> <minus> : "⭺"  U2B7A  # LEFTWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE
 <Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <Multi_key> <minus> <minus> <bar> : "⭻"  U2B7B  # UPWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE
@@ -32246,6 +32517,15 @@ include "Logograms"
 <Multi_key> <Tab> <bar> <parenright> <Multi_key> <minus> <asciicircum> : "⮍"  U2B8D  # ANTICLOCKWISE TRIANGLE-HEADED BOTTOM U-SHAPED ARROW
 <Multi_key> <Tab> <minus> <parenleft> <Multi_key> <bar> <greater> : "⮎"  U2B8E  # ANTICLOCKWISE TRIANGLE-HEADED LEFT U-SHAPED ARROW
 <Multi_key> <Tab> <Multi_key> <v> <minus> <parenleft> <bar> : "⮏"  U2B8F  # ANTICLOCKWISE TRIANGLE-HEADED TOP U-SHAPED ARROW
+
+<Multi_key> <Tab> <space> <Multi_key> <less> <minus> <space> : "⮘"  U2B98  # THREE-D TOP-LIGHTED LEFTWARDS EQUILATERAL ARROWHEAD
+<Multi_key> <Tab> <space> <Multi_key> <asciicircum> <bar> <space> : "⮙"  U2B99  # THREE-D RIGHT-LIGHTED UPWARDS EQUILATERAL ARROWHEAD
+<Multi_key> <Tab> <space> <Multi_key> <greater> <minus> <space> : "⮚"  U2B9A  # THREE-D TOP-LIGHTED RIGHTWARDS EQUILATERAL ARROWHEAD
+<Multi_key> <Tab> <space> <Multi_key> <v> <bar> <space> : "⮛"  U2B9B  # THREE-D LEFT-LIGHTED DOWNWARDS EQUILATERAL ARROWHEAD
+<Multi_key> <Tab> <space> <Multi_key> <less> <less> <space> : "⮜"  U2B9C  # BLACK LEFTWARDS EQUILATERAL ARROWHEAD
+<Multi_key> <Tab> <space> <Multi_key> <asciicircum> <asciicircum> <space> : "⮝"  U2B9D  # BLACK UPWARDS EQUILATERAL ARROWHEAD
+<Multi_key> <Tab> <space> <Multi_key> <greater> <greater> <space> : "⮞"  U2B9E  # BLACK RIGHTWARDS EQUILATERAL ARROWHEAD
+<Multi_key> <Tab> <space> <Multi_key> <v> <v> <space> : "⮟"  U2B9F  # BLACK DOWNWARDS EQUILATERAL ARROWHEAD
 
 <Multi_key> <Tab> <Multi_key> <less> <bar> <Multi_key> <less> <bar> <minus> : "⯬"  U2BEC  # LEFTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
 <Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <Multi_key> <asciicircum> <minus> <bar> : "⯭"  U2BED  # UPWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
@@ -33020,6 +33300,297 @@ include "Logograms"
 <Multi_key> <bar> <backslash> <l> <l> <u> <c> <l> <r> : "🯞"  U1FBDE  # BOX DRAWINGS LIGHT DIAGONAL LOWER LEFT TO UPPER CENTRE TO LOWER RIGHT
 <Multi_key> <bar> <backslash> <u> <l> <m> <r> <l> <l> : "🯟"  U1FBDF  # BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE RIGHT TO LOWER LEFT
 
+# dentistry symbols (cf https://ionathan.ch/2022/04/07/dentistry-symbols.html)
+
+<Multi_key> <bar> <D> <minus> <greater>         : "⎾"  U23BE  # DENTISTRY SYMBOL LIGHT VERTICAL AND TOP RIGHT
+<Multi_key> <bar> <D> <underscore> <greater>    : "⎿"  U23BF  # DENTISTRY SYMBOL LIGHT VERTICAL AND BOTTOM RIGHT
+<Multi_key> <bar> <D> <O>                       : "⏀"  U23C0  # DENTISTRY SYMBOL LIGHT VERTICAL WITH CIRCLE
+<Multi_key> <bar> <D> <minus> <O>               : "⏁"  U23C1  # DENTISTRY SYMBOL LIGHT DOWN AND HORIZONTAL WITH CIRCLE
+<Multi_key> <bar> <D> <underscore> <O>          : "⏂"  U23C2  # DENTISTRY SYMBOL LIGHT UP AND HORIZONTAL WITH CIRCLE
+<Multi_key> <bar> <D> <D>                       : "⏃"  U23C3  # DENTISTRY SYMBOL LIGHT VERTICAL WITH TRIANGLE
+<Multi_key> <bar> <D> <minus> <D>               : "⏄"  U23C4  # DENTISTRY SYMBOL LIGHT DOWN AND HORIZONTAL WITH TRIANGLE
+<Multi_key> <bar> <D> <underscore> <D>          : "⏅"  U23C5  # DENTISTRY SYMBOL LIGHT UP AND HORIZONTAL WITH TRIANGLE
+<Multi_key> <bar> <D> <asciitilde>              : "⏆"  U23C6  # DENTISTRY SYMBOL LIGHT VERTICAL AND WAVE
+<Multi_key> <bar> <D> <minus> <asciitilde>      : "⏇"  U23C7  # DENTISTRY SYMBOL LIGHT DOWN AND HORIZONTAL WITH WAVE
+<Multi_key> <bar> <D> <underscore> <asciitilde> : "⏈"  U23C8  # DENTISTRY SYMBOL LIGHT UP AND HORIZONTAL WITH WAVE
+<Multi_key> <bar> <D> <minus> <bar>             : "⏉"  U23C9  # DENTISTRY SYMBOL LIGHT DOWN AND HORIZONTAL
+<Multi_key> <bar> <D> <underscore> <bar>        : "⏊"  U23CA  # DENTISTRY SYMBOL LIGHT UP AND HORIZONTAL
+<Multi_key> <bar> <D> <minus> <less>            : "⏋"  U23CB  # DENTISTRY SYMBOL LIGHT VERTICAL AND TOP LEFT
+<Multi_key> <bar> <D> <underscore> <less>       : "⏌"  U23CC  # DENTISTRY SYMBOL LIGHT VERTICAL AND BOTTOM LEFT
+
+# HP 2640 large type: | + @ + (^=top -=middle _=bottom) + character
+
+<Multi_key> <bar> <at> <asciicircum> <space>        : "   "  U0020 U0020 U0020  # LARGE TYPE SPACE (TOP)
+<Multi_key> <bar> <at> <minus> <space>              : "   "  U0020 U0020 U0020  # LARGE TYPE SPACE (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <space>         : "   "  U0020 U0020 U0020  # LARGE TYPE SPACE (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <exclam>       : " 𜸜 "  U0020 U1CE1C U0020  # LARGE TYPE EXCLAMATION MARK (TOP)
+<Multi_key> <bar> <at> <minus> <exclam>             : " 𜸩 "  U0020 U1CE29 U0020  # LARGE TYPE EXCLAMATION MARK (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <exclam>        : " 𜹊 "  U0020 U1CE4A U0020  # LARGE TYPE EXCLAMATION MARK (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <quotedbl>     : "𜸜𜸜 "  U1CE1C U1CE1C U0020  # LARGE TYPE QUOTATION MARK (TOP)
+<Multi_key> <bar> <at> <minus> <quotedbl>           : "   "  U0020 U0020 U0020  # LARGE TYPE QUOTATION MARK (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <quotedbl>      : "   "  U0020 U0020 U0020  # LARGE TYPE QUOTATION MARK (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <numbersign>   : "   "  U0020 U0020 U0020  # LARGE TYPE NUMBER SIGN (TOP)
+<Multi_key> <bar> <at> <minus> <numbersign>         : "𜸺𜸺 "  U1CE3A U1CE3A U0020  # LARGE TYPE NUMBER SIGN (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <numbersign>    : "𜸺𜸺 "  U1CE3A U1CE3A U0020  # LARGE TYPE NUMBER SIGN (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <dollar>       : "𜸚𜸺𜸤"  U1CE1A U1CE3A U1CE24  # LARGE TYPE DOLLAR SIGN (TOP)
+<Multi_key> <bar> <at> <minus> <dollar>             : "𜸾𜸺𜸤"  U1CE3E U1CE3A U1CE24  # LARGE TYPE DOLLAR SIGN (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <dollar>        : "𜸾𜸺𜹃"  U1CE3E U1CE3A U1CE43  # LARGE TYPE DOLLAR SIGN (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <percent>      : "𜹇 𜹇"  U1CE47 U0020 U1CE47  # LARGE TYPE PERCENT SIGN (TOP)
+<Multi_key> <bar> <at> <minus> <percent>            : "𜸬𜸴𜸻"  U1CE2C U1CE34 U1CE3B  # LARGE TYPE PERCENT SIGN (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <percent>       : "𜹐 𜹐"  U1CE50 U0020 U1CE50  # LARGE TYPE PERCENT SIGN (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <ampersand>    : "𜸚𜸤 "  U1CE1A U1CE24 U0020  # LARGE TYPE AMPERSAND (TOP)
+<Multi_key> <bar> <at> <minus> <ampersand>          : "𜸮𜹀𜸺"  U1CE2E U1CE40 U1CE3A  # LARGE TYPE AMPERSAND (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <ampersand>     : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE AMPERSAND (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <apostrophe>   : " 𜸜 "  U0020 U1CE1C U0020  # LARGE TYPE APOSTROPHE (TOP)
+<Multi_key> <bar> <at> <minus> <apostrophe>         : "   "  U0020 U0020 U0020  # LARGE TYPE APOSTROPHE (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <apostrophe>    : "   "  U0020 U0020 U0020  # LARGE TYPE APOSTROPHE (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <parenleft>    : " 𜸚𜸥"  U0020 U1CE1A U1CE25  # LARGE TYPE LEFT PARENTHESIS (TOP)
+<Multi_key> <bar> <at> <minus> <parenleft>          : " 𜸩 "  U0020 U1CE29 U0020  # LARGE TYPE LEFT PARENTHESIS (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <parenleft>     : " 𜸾𜸥"  U0020 U1CE3E U1CE25  # LARGE TYPE LEFT PARENTHESIS (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <parenright>   : "𜸞𜸤 "  U1CE1E U1CE24 U0020  # LARGE TYPE RIGHT PARENTHESIS (TOP)
+<Multi_key> <bar> <at> <minus> <parenright>         : " 𜸩 "  U0020 U1CE29 U0020  # LARGE TYPE RIGHT PARENTHESIS (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <parenright>    : "𜸞𜹃 "  U1CE1E U1CE43 U0020  # LARGE TYPE RIGHT PARENTHESIS (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <asterisk>     : "   "  U0020 U0020 U0020  # LARGE TYPE ASTERISK (TOP)
+<Multi_key> <bar> <at> <minus> <asterisk>           : "𜸪𜸲𜸸"  U1CE2A U1CE32 U1CE38  # LARGE TYPE ASTERISK (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <asterisk>      : "   "  U0020 U0020 U0020  # LARGE TYPE ASTERISK (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <plus>         : " 𜸣 "  U0020 U1CE23 U0020  # LARGE TYPE PLUS SIGN (TOP)
+<Multi_key> <bar> <at> <minus> <plus>               : "𜸞𜸺𜸥"  U1CE1E U1CE3A U1CE25  # LARGE TYPE PLUS SIGN (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <plus>          : " 𜸭 "  U0020 U1CE2D U0020  # LARGE TYPE PLUS SIGN (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <comma>        : "   "  U0020 U0020 U0020  # LARGE TYPE COMMA (TOP)
+<Multi_key> <bar> <at> <minus> <comma>              : "   "  U0020 U0020 U0020  # LARGE TYPE COMMA (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <comma>         : " 𜹃 "  U0020 U1CE43 U0020  # LARGE TYPE COMMA (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <minus>        : "   "  U0020 U0020 U0020  # LARGE TYPE HYPHEN-MINUS (TOP)
+<Multi_key> <bar> <at> <minus> <minus>              : "𜸞𜸟𜸥"  U1CE1E U1CE1F U1CE25  # LARGE TYPE HYPHEN-MINUS (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <minus>         : "   "  U0020 U0020 U0020  # LARGE TYPE HYPHEN-MINUS (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <period>       : "   "  U0020 U0020 U0020  # LARGE TYPE FULL STOP (TOP)
+<Multi_key> <bar> <at> <minus> <period>             : "   "  U0020 U0020 U0020  # LARGE TYPE FULL STOP (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <period>        : " 𜹐 "  U0020 U1CE50 U0020  # LARGE TYPE FULL STOP (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <slash>        : " 𜸣 "  U0020 U1CE23 U0020  # LARGE TYPE SOLIDUS (TOP)
+<Multi_key> <bar> <at> <minus> <slash>              : "𜸞𜸟𜸥"  U1CE1E U1CE1F U1CE25  # LARGE TYPE SOLIDUS (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <slash>         : " 𜸭 "  U0020 U1CE2D U0020  # LARGE TYPE SOLIDUS (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <0>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE DIGIT ZERO (TOP)
+<Multi_key> <bar> <at> <minus> <0>                  : "𜸩 𜸩"  U1CE29 U0020 U1CE29  # LARGE TYPE DIGIT ZERO (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <0>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE DIGIT ZERO (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <1>            : " 𜸦 "  U0020 U1CE26 U0020  # LARGE TYPE DIGIT ONE (TOP)
+<Multi_key> <bar> <at> <minus> <1>                  : " 𜸩 "  U0020 U1CE29 U0020  # LARGE TYPE DIGIT ONE (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <1>             : " 𜸼 "  U0020 U1CE3C U0020  # LARGE TYPE DIGIT ONE (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <2>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE DIGIT TWO (TOP)
+<Multi_key> <bar> <at> <minus> <2>                  : "𜸚𜸟𜹃"  U1CE1A U1CE1F U1CE43  # LARGE TYPE DIGIT TWO (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <2>             : "𜸽𜸟𜸥"  U1CE3D U1CE1F U1CE25  # LARGE TYPE DIGIT TWO (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <3>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE DIGIT THREE (TOP)
+<Multi_key> <bar> <at> <minus> <3>                  : " 𜸟𜸷"  U0020 U1CE1F U1CE37  # LARGE TYPE DIGIT THREE (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <3>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE DIGIT THREE (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <4>            : "𜸜 𜸜"  U1CE1C U0020 U1CE1C  # LARGE TYPE DIGIT FOUR (TOP)
+<Multi_key> <bar> <at> <minus> <4>                  : "𜸽𜸟𜸺"  U1CE3D U1CE1F U1CE3A  # LARGE TYPE DIGIT FOUR (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <4>             : "  𜸼"  U0020 U0020 U1CE3C  # LARGE TYPE DIGIT FOUR (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <5>            : "𜸛𜸟𜸥"  U1CE1B U1CE1F U1CE25  # LARGE TYPE DIGIT FIVE (TOP)
+<Multi_key> <bar> <at> <minus> <5>                  : "𜸽𜸟𜸤"  U1CE3D U1CE1F U1CE24  # LARGE TYPE DIGIT FIVE (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <5>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE DIGIT FIVE (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <6>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE DIGIT SIX (TOP)
+<Multi_key> <bar> <at> <minus> <6>                  : "𜸨𜸟𜸤"  U1CE28 U1CE1F U1CE24  # LARGE TYPE DIGIT SIX (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <6>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE DIGIT SIX (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <7>            : "𜸞𜸟𜸧"  U1CE1E U1CE1F U1CE27  # LARGE TYPE DIGIT SEVEN (TOP)
+<Multi_key> <bar> <at> <minus> <7>                  : " 𜸵𜸻"  U0020 U1CE35 U1CE3B  # LARGE TYPE DIGIT SEVEN (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <7>             : " 𜸼 "  U0020 U1CE3C U0020  # LARGE TYPE DIGIT SEVEN (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <8>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE DIGIT EIGHT (TOP)
+<Multi_key> <bar> <at> <minus> <8>                  : "𜸮𜸟𜸷"  U1CE2E U1CE1F U1CE37  # LARGE TYPE DIGIT EIGHT (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <8>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE DIGIT EIGHT (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <9>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE DIGIT NINE (TOP)
+<Multi_key> <bar> <at> <minus> <9>                  : "𜸾𜸟𜸶"  U1CE3E U1CE1F U1CE36  # LARGE TYPE DIGIT NINE (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <9>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE DIGIT NINE (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <colon>        : "   "  U0020 U0020 U0020  # LARGE TYPE COLON (TOP)
+<Multi_key> <bar> <at> <minus> <colon>              : " 𜹐 "  U0020 U1CE50 U0020  # LARGE TYPE COLON (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <colon>         : " 𜹐 "  U0020 U1CE50 U0020  # LARGE TYPE COLON (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <semicolon>    : "   "  U0020 U0020 U0020  # LARGE TYPE SEMICOLON (TOP)
+<Multi_key> <bar> <at> <minus> <semicolon>          : " 𜹐 "  U0020 U1CE50 U0020  # LARGE TYPE SEMICOLON (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <semicolon>     : " 𜹃 "  U0020 U1CE43 U0020  # LARGE TYPE SEMICOLON (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <equal>        : "   "  U0020 U0020 U0020  # LARGE TYPE EQUALS SIGN (TOP)
+<Multi_key> <bar> <at> <minus> <equal>              : "𜸞𜸟𜸥"  U1CE1E U1CE1F U1CE25  # LARGE TYPE EQUALS SIGN (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <equal>         : "𜸞𜸟𜸥"  U1CE1E U1CE1F U1CE25  # LARGE TYPE EQUALS SIGN (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <question>     : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE QUESTION MARK (TOP)
+<Multi_key> <bar> <at> <minus> <question>           : " 𜸵𜸻"  U0020 U1CE35 U1CE3B  # LARGE TYPE QUESTION MARK (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <question>      : " 𜹊 "  U0020 U1CE4A U0020  # LARGE TYPE QUESTION MARK (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <at>           : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE COMMERCIAL AT (TOP)
+<Multi_key> <bar> <at> <minus> <at>                 : "𜸚𜸧𜸩"  U1CE1A U1CE27 U1CE29  # LARGE TYPE COMMERCIAL AT (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <at>            : "𜸾𜹀𜹃"  U1CE3E U1CE40 U1CE43  # LARGE TYPE COMMERCIAL AT (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <A>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE LATIN CAPITAL LETTER A (TOP)
+<Multi_key> <bar> <at> <minus> <A>                  : "𜸨𜸟𜸶"  U1CE28 U1CE1F U1CE36  # LARGE TYPE LATIN CAPITAL LETTER A (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <A>             : "𜸼 𜸼"  U1CE3C U0020 U1CE3C  # LARGE TYPE LATIN CAPITAL LETTER A (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <B>            : "𜸛𜸟𜸤"  U1CE1B U1CE1F U1CE24  # LARGE TYPE LATIN CAPITAL LETTER B (TOP)
+<Multi_key> <bar> <at> <minus> <B>                  : "𜸨𜸟𜸷"  U1CE28 U1CE1F U1CE37  # LARGE TYPE LATIN CAPITAL LETTER B (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <B>             : "𜸽𜸟𜹃"  U1CE3D U1CE1F U1CE43  # LARGE TYPE LATIN CAPITAL LETTER B (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <C>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE LATIN CAPITAL LETTER C (TOP)
+<Multi_key> <bar> <at> <minus> <C>                  : "𜸩  "  U1CE29 U0020 U0020  # LARGE TYPE LATIN CAPITAL LETTER C (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <C>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE LATIN CAPITAL LETTER C (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <D>            : "𜸛𜸟𜸤"  U1CE1B U1CE1F U1CE24  # LARGE TYPE LATIN CAPITAL LETTER D (TOP)
+<Multi_key> <bar> <at> <minus> <D>                  : "𜸩 𜸩"  U1CE29 U0020 U1CE29  # LARGE TYPE LATIN CAPITAL LETTER D (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <D>             : "𜸽𜸟𜹃"  U1CE3D U1CE1F U1CE43  # LARGE TYPE LATIN CAPITAL LETTER D (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <E>            : "𜸛𜸟𜸥"  U1CE1B U1CE1F U1CE25  # LARGE TYPE LATIN CAPITAL LETTER E (TOP)
+<Multi_key> <bar> <at> <minus> <E>                  : "𜸨𜸟 "  U1CE28 U1CE1F U0020  # LARGE TYPE LATIN CAPITAL LETTER E (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <E>             : "𜸽𜸟𜸥"  U1CE3D U1CE1F U1CE25  # LARGE TYPE LATIN CAPITAL LETTER E (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <F>            : "𜸛𜸟𜸥"  U1CE1B U1CE1F U1CE25  # LARGE TYPE LATIN CAPITAL LETTER F (TOP)
+<Multi_key> <bar> <at> <minus> <F>                  : "𜸨𜸟 "  U1CE28 U1CE1F U0020  # LARGE TYPE LATIN CAPITAL LETTER F (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <F>             : "𜸼  "  U1CE3C U0020 U0020  # LARGE TYPE LATIN CAPITAL LETTER F (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <G>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE LATIN CAPITAL LETTER G (TOP)
+<Multi_key> <bar> <at> <minus> <G>                  : "𜸩 𜸧"  U1CE29 U0020 U1CE27  # LARGE TYPE LATIN CAPITAL LETTER G (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <G>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE LATIN CAPITAL LETTER G (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <H>            : "𜸜 𜸜"  U1CE1C U0020 U1CE1C  # LARGE TYPE LATIN CAPITAL LETTER H (TOP)
+<Multi_key> <bar> <at> <minus> <H>                  : "𜸨𜸟𜸶"  U1CE28 U1CE1F U1CE36  # LARGE TYPE LATIN CAPITAL LETTER H (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <H>             : "𜸼 𜸼"  U1CE3C U0020 U1CE3C  # LARGE TYPE LATIN CAPITAL LETTER H (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <I>            : " 𜸠 "  U0020 U1CE20 U0020  # LARGE TYPE LATIN CAPITAL LETTER I (TOP)
+<Multi_key> <bar> <at> <minus> <I>                  : " 𜸩 "  U0020 U1CE29 U0020  # LARGE TYPE LATIN CAPITAL LETTER I (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <I>             : " 𜹀 "  U0020 U1CE40 U0020  # LARGE TYPE LATIN CAPITAL LETTER I (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <J>            : "  𜸜"  U0020 U0020 U1CE1C  # LARGE TYPE LATIN CAPITAL LETTER J (TOP)
+<Multi_key> <bar> <at> <minus> <J>                  : "  𜸩"  U0020 U0020 U1CE29  # LARGE TYPE LATIN CAPITAL LETTER J (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <J>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE LATIN CAPITAL LETTER J (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <K>            : "𜸜 𜸜"  U1CE1C U0020 U1CE1C  # LARGE TYPE LATIN CAPITAL LETTER K (TOP)
+<Multi_key> <bar> <at> <minus> <K>                  : "𜸨𜸯𜸸"  U1CE28 U1CE2F U1CE38  # LARGE TYPE LATIN CAPITAL LETTER K (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <K>             : "𜸼 𜸼"  U1CE3C U0020 U1CE3C  # LARGE TYPE LATIN CAPITAL LETTER K (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <L>            : "𜸜  "  U1CE1C U0020 U0020  # LARGE TYPE LATIN CAPITAL LETTER L (TOP)
+<Multi_key> <bar> <at> <minus> <L>                  : "𜸩  "  U1CE29 U0020 U0020  # LARGE TYPE LATIN CAPITAL LETTER L (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <L>             : "𜸽𜸟𜸥"  U1CE3D U1CE1F U1CE25  # LARGE TYPE LATIN CAPITAL LETTER L (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <M>            : "𜸝𜸡𜸦"  U1CE1D U1CE21 U1CE26  # LARGE TYPE LATIN CAPITAL LETTER M (TOP)
+<Multi_key> <bar> <at> <minus> <M>                  : "𜸩𜸰𜸩"  U1CE29 U1CE30 U1CE29  # LARGE TYPE LATIN CAPITAL LETTER M (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <M>             : "𜸼 𜸼"  U1CE3C U0020 U1CE3C  # LARGE TYPE LATIN CAPITAL LETTER M (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <N>            : "𜸝𜸶𜸜"  U1CE1D U1CE36 U1CE1C  # LARGE TYPE LATIN CAPITAL LETTER N (TOP)
+<Multi_key> <bar> <at> <minus> <N>                  : "𜸩𜸱𜸹"  U1CE29 U1CE31 U1CE39  # LARGE TYPE LATIN CAPITAL LETTER N (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <N>             : "𜸼 𜸼"  U1CE3C U0020 U1CE3C  # LARGE TYPE LATIN CAPITAL LETTER N (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <O>            : "𜸛𜸟𜸧"  U1CE1B U1CE1F U1CE27  # LARGE TYPE LATIN CAPITAL LETTER O (TOP)
+<Multi_key> <bar> <at> <minus> <O>                  : "𜸩 𜸩"  U1CE29 U0020 U1CE29  # LARGE TYPE LATIN CAPITAL LETTER O (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <O>             : "𜸽𜸟𜹄"  U1CE3D U1CE1F U1CE44  # LARGE TYPE LATIN CAPITAL LETTER O (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <P>            : "𜸜𜸟𜸤"  U1CE1C U1CE1F U1CE24  # LARGE TYPE LATIN CAPITAL LETTER P (TOP)
+<Multi_key> <bar> <at> <minus> <P>                  : "𜸨𜸟𜹃"  U1CE28 U1CE1F U1CE43  # LARGE TYPE LATIN CAPITAL LETTER P (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <P>             : "𜸼  "  U1CE3C U0020 U0020  # LARGE TYPE LATIN CAPITAL LETTER P (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <Q>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE LATIN CAPITAL LETTER Q (TOP)
+<Multi_key> <bar> <at> <minus> <Q>                  : "𜸩 𜸩"  U1CE29 U0020 U1CE29  # LARGE TYPE LATIN CAPITAL LETTER Q (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <Q>             : "𜸾𜸟𜹅"  U1CE3E U1CE1F U1CE45  # LARGE TYPE LATIN CAPITAL LETTER Q (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <R>            : "𜸛𜸟𜸤"  U1CE1B U1CE1F U1CE24  # LARGE TYPE LATIN CAPITAL LETTER R (TOP)
+<Multi_key> <bar> <at> <minus> <R>                  : "𜸨𜸟𜸷"  U1CE28 U1CE1F U1CE37  # LARGE TYPE LATIN CAPITAL LETTER R (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <R>             : "𜸼 𜸼"  U1CE3C U0020 U1CE3C  # LARGE TYPE LATIN CAPITAL LETTER R (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <S>            : "𜸚𜸟𜸤"  U1CE1A U1CE1F U1CE24  # LARGE TYPE LATIN CAPITAL LETTER S (TOP)
+<Multi_key> <bar> <at> <minus> <S>                  : "𜸾𜸟𜸤"  U1CE3E U1CE1F U1CE24  # LARGE TYPE LATIN CAPITAL LETTER S (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <S>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE LATIN CAPITAL LETTER S (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <T>            : "𜸞𜸠𜸥"  U1CE1E U1CE20 U1CE25  # LARGE TYPE LATIN CAPITAL LETTER T (TOP)
+<Multi_key> <bar> <at> <minus> <T>                  : " 𜸩 "  U0020 U1CE29 U0020  # LARGE TYPE LATIN CAPITAL LETTER T (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <T>             : " 𜸼 "  U0020 U1CE3C U0020  # LARGE TYPE LATIN CAPITAL LETTER T (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <U>            : "𜸜 𜸜"  U1CE1C U0020 U1CE1C  # LARGE TYPE LATIN CAPITAL LETTER U (TOP)
+<Multi_key> <bar> <at> <minus> <U>                  : "𜸩 𜸩"  U1CE29 U0020 U1CE29  # LARGE TYPE LATIN CAPITAL LETTER U (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <U>             : "𜸾𜸟𜹃"  U1CE3E U1CE1F U1CE43  # LARGE TYPE LATIN CAPITAL LETTER U (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <V>            : "𜸜 𜸜"  U1CE1C U0020 U1CE1C  # LARGE TYPE LATIN CAPITAL LETTER V (TOP)
+<Multi_key> <bar> <at> <minus> <V>                  : "𜸩 𜸩"  U1CE29 U0020 U1CE29  # LARGE TYPE LATIN CAPITAL LETTER V (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <V>             : "𜸫𜹁𜸻"  U1CE2B U1CE41 U1CE3B  # LARGE TYPE LATIN CAPITAL LETTER V (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <W>            : "𜸜 𜸜"  U1CE1C U0020 U1CE1C  # LARGE TYPE LATIN CAPITAL LETTER W (TOP)
+<Multi_key> <bar> <at> <minus> <W>                  : "𜸩𜸱𜸩"  U1CE29 U1CE31 U1CE29  # LARGE TYPE LATIN CAPITAL LETTER W (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <W>             : "𜹂𜸿𜹆"  U1CE42 U1CE3F U1CE46  # LARGE TYPE LATIN CAPITAL LETTER W (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <X>            : "𜸜 𜸜"  U1CE1C U0020 U1CE1C  # LARGE TYPE LATIN CAPITAL LETTER X (TOP)
+<Multi_key> <bar> <at> <minus> <X>                  : "𜸪𜸲𜸸"  U1CE2A U1CE32 U1CE38  # LARGE TYPE LATIN CAPITAL LETTER X (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <X>             : "𜸼 𜸼"  U1CE3C U0020 U1CE3C  # LARGE TYPE LATIN CAPITAL LETTER X (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <Y>            : "𜹐 𜹐"  U1CE50 U0020 U1CE50  # LARGE TYPE LATIN CAPITAL LETTER Y (TOP)
+<Multi_key> <bar> <at> <minus> <Y>                  : "𜸫𜸳𜸻"  U1CE2B U1CE33 U1CE3B  # LARGE TYPE LATIN CAPITAL LETTER Y (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <Y>             : " 𜸼 "  U0020 U1CE3C U0020  # LARGE TYPE LATIN CAPITAL LETTER Y (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <Z>            : "𜸛𜸟𜸧"  U1CE1B U1CE1F U1CE27  # LARGE TYPE LATIN CAPITAL LETTER Z (TOP)
+<Multi_key> <bar> <at> <minus> <Z>                  : "𜸬𜸴𜸻"  U1CE2C U1CE34 U1CE3B  # LARGE TYPE LATIN CAPITAL LETTER Z (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <Z>             : "𜸽𜸟𜹄"  U1CE3D U1CE1F U1CE44  # LARGE TYPE LATIN CAPITAL LETTER Z (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <bracketleft>  : " 𜸛𜸥"  U0020 U1CE1B U1CE25  # LARGE TYPE LEFT SQUARE BRACKET (TOP)
+<Multi_key> <bar> <at> <minus> <bracketleft>        : " 𜸩 "  U0020 U1CE29 U0020  # LARGE TYPE LEFT SQUARE BRACKET (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <bracketleft>   : " 𜸽𜸥"  U0020 U1CE3D U1CE25  # LARGE TYPE LEFT SQUARE BRACKET (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <bracketright> : "𜸞𜸧 "  U1CE1E U1CE27 U0020  # LARGE TYPE RIGHT SQUARE BRACKET (TOP)
+<Multi_key> <bar> <at> <minus> <bracketright>       : " 𜸩 "  U0020 U1CE29 U0020  # LARGE TYPE RIGHT SQUARE BRACKET (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <bracketright>  : "𜸞𜹄 "  U1CE1E U1CE44 U0020  # LARGE TYPE RIGHT SQUARE BRACKET (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <asciicircum>  : " 𜸱 "  U0020 U1CE31 U0020  # LARGE TYPE CIRCUMFLEX ACCENT (TOP)
+<Multi_key> <bar> <at> <minus> <asciicircum>        : " 𜹂 "  U0020 U1CE42 U0020  # LARGE TYPE CIRCUMFLEX ACCENT (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <asciicircum>   : "   "  U0020 U0020 U0020  # LARGE TYPE CIRCUMFLEX ACCENT (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <grave>        : " 𜸤 "  U0020 U1CE24 U0020  # LARGE TYPE GRAVE ACCENT (TOP)
+<Multi_key> <bar> <at> <minus> <grave>              : "   "  U0020 U0020 U0020  # LARGE TYPE GRAVE ACCENT (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <grave>         : "   "  U0020 U0020 U0020  # LARGE TYPE GRAVE ACCENT (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <a>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER A (TOP)
+<Multi_key> <bar> <at> <minus> <a>                  : "𜸚𜸧 "  U1CE1A U1CE27 U0020  # LARGE TYPE LATIN SMALL LETTER A (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <a>             : "𜸾𜹄 "  U1CE3E U1CE44 U0020  # LARGE TYPE LATIN SMALL LETTER A (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <b>            : "𜸜  "  U1CE1C U0020 U0020  # LARGE TYPE LATIN SMALL LETTER B (TOP)
+<Multi_key> <bar> <at> <minus> <b>                  : "𜸨𜸤 "  U1CE28 U1CE24 U0020  # LARGE TYPE LATIN SMALL LETTER B (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <b>             : "𜸽𜹃 "  U1CE3D U1CE43 U0020  # LARGE TYPE LATIN SMALL LETTER B (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <c>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER C (TOP)
+<Multi_key> <bar> <at> <minus> <c>                  : "𜸚𜸥 "  U1CE1A U1CE25 U0020  # LARGE TYPE LATIN SMALL LETTER C (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <c>             : "𜸾𜸥 "  U1CE3E U1CE25 U0020  # LARGE TYPE LATIN SMALL LETTER C (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <d>            : " 𜸜 "  U0020 U1CE1C U0020  # LARGE TYPE LATIN SMALL LETTER D (TOP)
+<Multi_key> <bar> <at> <minus> <d>                  : "𜸚𜸶 "  U1CE1A U1CE36 U0020  # LARGE TYPE LATIN SMALL LETTER D (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <d>             : "𜸾𜹄 "  U1CE3E U1CE44 U0020  # LARGE TYPE LATIN SMALL LETTER D (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <e>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER E (TOP)
+<Multi_key> <bar> <at> <minus> <e>                  : "𜸚𜸤 "  U1CE1A U1CE24 U0020  # LARGE TYPE LATIN SMALL LETTER E (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <e>             : "𜸾𜸥 "  U1CE3E U1CE25 U0020  # LARGE TYPE LATIN SMALL LETTER E (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <f>            : "𜸚𜸤 "  U1CE1A U1CE24 U0020  # LARGE TYPE LATIN SMALL LETTER F (TOP)
+<Multi_key> <bar> <at> <minus> <f>                  : "𜸺  "  U1CE3A U0020 U0020  # LARGE TYPE LATIN SMALL LETTER F (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <f>             : "𜸼  "  U1CE3C U0020 U0020  # LARGE TYPE LATIN SMALL LETTER F (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <g>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER G (TOP)
+<Multi_key> <bar> <at> <minus> <g>                  : "𜸚𜸧 "  U1CE1A U1CE27 U0020  # LARGE TYPE LATIN SMALL LETTER G (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <g>             : "𜸾𜸶 "  U1CE3E U1CE36 U0020  # LARGE TYPE LATIN SMALL LETTER G (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <h>            : "𜸜  "  U1CE1C U0020 U0020  # LARGE TYPE LATIN SMALL LETTER H (TOP)
+<Multi_key> <bar> <at> <minus> <h>                  : "𜸨𜸤 "  U1CE28 U1CE24 U0020  # LARGE TYPE LATIN SMALL LETTER H (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <h>             : "𜸼𜸼 "  U1CE3C U1CE3C U0020  # LARGE TYPE LATIN SMALL LETTER H (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <i>            : " 𜸣 "  U0020 U1CE23 U0020  # LARGE TYPE LATIN SMALL LETTER I (TOP)
+<Multi_key> <bar> <at> <minus> <i>                  : " 𜸜 "  U0020 U1CE1C U0020  # LARGE TYPE LATIN SMALL LETTER I (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <i>             : " 𜸼 "  U0020 U1CE3C U0020  # LARGE TYPE LATIN SMALL LETTER I (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <j>            : " 𜸣 "  U0020 U1CE23 U0020  # LARGE TYPE LATIN SMALL LETTER J (TOP)
+<Multi_key> <bar> <at> <minus> <j>                  : " 𜸜 "  U0020 U1CE1C U0020  # LARGE TYPE LATIN SMALL LETTER J (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <j>             : "𜸾𜹃 "  U1CE3E U1CE43 U0020  # LARGE TYPE LATIN SMALL LETTER J (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <k>            : "𜸜  "  U1CE1C U0020 U0020  # LARGE TYPE LATIN SMALL LETTER K (TOP)
+<Multi_key> <bar> <at> <minus> <k>                  : "𜸨𜸷 "  U1CE28 U1CE37 U0020  # LARGE TYPE LATIN SMALL LETTER K (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <k>             : "𜸼𜸼 "  U1CE3C U1CE3C U0020  # LARGE TYPE LATIN SMALL LETTER K (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <l>            : " 𜸜 "  U0020 U1CE1C U0020  # LARGE TYPE LATIN SMALL LETTER L (TOP)
+<Multi_key> <bar> <at> <minus> <l>                  : " 𜸩 "  U0020 U1CE29 U0020  # LARGE TYPE LATIN SMALL LETTER L (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <l>             : " 𜸼 "  U0020 U1CE3C U0020  # LARGE TYPE LATIN SMALL LETTER L (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <m>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER M (TOP)
+<Multi_key> <bar> <at> <minus> <m>                  : "𜸝𜸦 "  U1CE1D U1CE26 U0020  # LARGE TYPE LATIN SMALL LETTER M (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <m>             : "𜸼𜸼 "  U1CE3C U1CE3C U0020  # LARGE TYPE LATIN SMALL LETTER M (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <n>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER N (TOP)
+<Multi_key> <bar> <at> <minus> <n>                  : "𜸛𜸤 "  U1CE1B U1CE24 U0020  # LARGE TYPE LATIN SMALL LETTER N (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <n>             : "𜸼𜸼 "  U1CE3C U1CE3C U0020  # LARGE TYPE LATIN SMALL LETTER N (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <o>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER O (TOP)
+<Multi_key> <bar> <at> <minus> <o>                  : "𜸚𜸤 "  U1CE1A U1CE24 U0020  # LARGE TYPE LATIN SMALL LETTER O (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <o>             : "𜸾𜹃 "  U1CE3E U1CE43 U0020  # LARGE TYPE LATIN SMALL LETTER O (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <p>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER P (TOP)
+<Multi_key> <bar> <at> <minus> <p>                  : "𜸛𜸤 "  U1CE1B U1CE24 U0020  # LARGE TYPE LATIN SMALL LETTER P (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <p>             : "𜸨𜹃 "  U1CE28 U1CE43 U0020  # LARGE TYPE LATIN SMALL LETTER P (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <q>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER Q (TOP)
+<Multi_key> <bar> <at> <minus> <q>                  : "𜸚𜸧 "  U1CE1A U1CE27 U0020  # LARGE TYPE LATIN SMALL LETTER Q (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <q>             : "𜸾𜸶 "  U1CE3E U1CE36 U0020  # LARGE TYPE LATIN SMALL LETTER Q (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <r>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER R (TOP)
+<Multi_key> <bar> <at> <minus> <r>                  : "𜸚𜸥 "  U1CE1A U1CE25 U0020  # LARGE TYPE LATIN SMALL LETTER R (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <r>             : "𜸼  "  U1CE3C U0020 U0020  # LARGE TYPE LATIN SMALL LETTER R (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <s>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER S (TOP)
+<Multi_key> <bar> <at> <minus> <s>                  : "𜸚𜸥 "  U1CE1A U1CE25 U0020  # LARGE TYPE LATIN SMALL LETTER S (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <s>             : "𜸞𜹃 "  U1CE1E U1CE43 U0020  # LARGE TYPE LATIN SMALL LETTER S (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <t>            : "𜸣  "  U1CE23 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER T (TOP)
+<Multi_key> <bar> <at> <minus> <t>                  : "𜸺  "  U1CE3A U0020 U0020  # LARGE TYPE LATIN SMALL LETTER T (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <t>             : "𜸾𜹃 "  U1CE3E U1CE43 U0020  # LARGE TYPE LATIN SMALL LETTER T (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <u>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER U (TOP)
+<Multi_key> <bar> <at> <minus> <u>                  : "𜸜𜸜 "  U1CE1C U1CE1C U0020  # LARGE TYPE LATIN SMALL LETTER U (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <u>             : "𜸽𜹄 "  U1CE3D U1CE44 U0020  # LARGE TYPE LATIN SMALL LETTER U (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <v>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER V (TOP)
+<Multi_key> <bar> <at> <minus> <v>                  : "𜸜𜸜 "  U1CE1C U1CE1C U0020  # LARGE TYPE LATIN SMALL LETTER V (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <v>             : "𜸾𜹃 "  U1CE3E U1CE43 U0020  # LARGE TYPE LATIN SMALL LETTER V (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <w>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER W (TOP)
+<Multi_key> <bar> <at> <minus> <w>                  : "𜸜𜸜 "  U1CE1C U1CE1C U0020  # LARGE TYPE LATIN SMALL LETTER W (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <w>             : "𜸿𜹆 "  U1CE3F U1CE46 U0020  # LARGE TYPE LATIN SMALL LETTER W (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <x>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER X (TOP)
+<Multi_key> <bar> <at> <minus> <x>                  : "𜸮𜸷 "  U1CE2E U1CE37 U0020  # LARGE TYPE LATIN SMALL LETTER X (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <x>             : "𜸼𜸼 "  U1CE3C U1CE3C U0020  # LARGE TYPE LATIN SMALL LETTER X (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <y>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER Y (TOP)
+<Multi_key> <bar> <at> <minus> <y>                  : "𜸜𜸜 "  U1CE1C U1CE1C U0020  # LARGE TYPE LATIN SMALL LETTER Y (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <y>             : "𜸾𜸶 "  U1CE3E U1CE36 U0020  # LARGE TYPE LATIN SMALL LETTER Y (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <z>            : "   "  U0020 U0020 U0020  # LARGE TYPE LATIN SMALL LETTER Z (TOP)
+<Multi_key> <bar> <at> <minus> <z>                  : "𜸞𜸧 "  U1CE1E U1CE27 U0020  # LARGE TYPE LATIN SMALL LETTER Z (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <z>             : "𜸽𜸥 "  U1CE3D U1CE25 U0020  # LARGE TYPE LATIN SMALL LETTER Z (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <braceleft>    : " 𜸚𜸥"  U0020 U1CE1A U1CE25  # LARGE TYPE LEFT CURLY BRACKET (TOP)
+<Multi_key> <bar> <at> <minus> <braceleft>          : " 𜸷 "  U0020 U1CE37 U0020  # LARGE TYPE LEFT CURLY BRACKET (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <braceleft>     : " 𜸾𜸥"  U0020 U1CE3E U1CE25  # LARGE TYPE LEFT CURLY BRACKET (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <braceright>   : "𜸞𜸤 "  U1CE1E U1CE24 U0020  # LARGE TYPE RIGHT CURLY BRACKET (TOP)
+<Multi_key> <bar> <at> <minus> <braceright>         : " 𜸮 "  U0020 U1CE2E U0020  # LARGE TYPE RIGHT CURLY BRACKET (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <braceright>    : "𜸞𜹃 "  U1CE1E U1CE43 U0020  # LARGE TYPE RIGHT CURLY BRACKET (BOTTOM)
+<Multi_key> <bar> <at> <asciicircum> <asciitilde>   : "   "  U0020 U0020 U0020  # LARGE TYPE TILDE (TOP)
+<Multi_key> <bar> <at> <minus> <asciitilde>         : "𜸚𜸟𜹃"  U1CE1A U1CE1F U1CE43  # LARGE TYPE TILDE (MIDDLE)
+<Multi_key> <bar> <at> <underscore> <asciitilde>    : "   "  U0020 U0020 U0020  # LARGE TYPE TILDE (BOTTOM)
+
 #########
 # Music #
 #########
@@ -33041,11 +33612,14 @@ include "Logograms"
 
 # bars, codas, repetitions and pauses
 <Multi_key> <numbersign> <bar> <space>       : "𝄀" U1D100    # MUSICAL SYMBOL SINGLE BARLINE
-<Multi_key> <numbersign> <bar> <bar> <space> : "𝄁" U1D101    # MUSICAL SYMBOL DOUBLE BARLINE
-<Multi_key> <numbersign> <bar> <bar> <bar>   : "𝄂" U1D102    # MUSICAL SYMBOL FINAL BARLINE
+<Multi_key> <numbersign> <bar> <bar>         : "𝄁" U1D101    # MUSICAL SYMBOL DOUBLE BARLINE
+<Multi_key> <numbersign> <bar> <Multi_key> <bar> : "𝄂" U1D102    # MUSICAL SYMBOL FINAL BARLINE
+<Multi_key> <numbersign> <Multi_key> <bar> <bar> <space> : "𝄃"  U1D103  # MUSICAL SYMBOL REVERSE FINAL BARLINE
 <Multi_key> <numbersign> <period> <bar>      : "𝄄" U1D104    # MUSICAL SYMBOL DASHED BARLINE
-<Multi_key> <numbersign> <bar> <bar> <colon> : "𝄆" U1D106    # MUSICAL SYMBOL LEFT REPEAT SIGN
-<Multi_key> <numbersign> <colon> <bar> <bar> : "𝄇" U1D107    # MUSICAL SYMBOL RIGHT REPEAT SIGN
+<Multi_key> <numbersign> <space> <bar>       : "𝄅"  U1D105  # MUSICAL SYMBOL SHORT BARLINE
+<Multi_key> <numbersign> <Multi_key> <bar> <bar> <colon> : "𝄆" U1D106    # MUSICAL SYMBOL LEFT REPEAT SIGN
+<Multi_key> <numbersign> <colon> <bar> <Multi_key> <bar> : "𝄇" U1D107    # MUSICAL SYMBOL RIGHT REPEAT SIGN
+<Multi_key> <numbersign> <colon> <space>     : "𝄈"  U1D108  # MUSICAL SYMBOL REPEAT DOTS
 <Multi_key> <numbersign> <d> <s>             : "𝄉" U1D109    # MUSICAL SYMBOL DAL SEGNO
 <Multi_key> <numbersign> <d> <c>             : "𝄊" U1D10A    # MUSICAL SYMBOL DA CAPO
 <Multi_key> <numbersign> <s> <e> <g> <n> <o> : "𝄋" U1D10B    # MUSICAL SYMBOL SEGNO
@@ -33067,8 +33641,8 @@ include "Logograms"
 <Multi_key> <numbersign> <4> <equal> : "𝄙"  U1D119  # MUSICAL SYMBOL FOUR-LINE STAFF
 <Multi_key> <numbersign> <5> <equal> : "𝄚"  U1D11A  # MUSICAL SYMBOL FIVE-LINE STAFF
 <Multi_key> <numbersign> <6> <equal> : "𝄛"  U1D11B  # MUSICAL SYMBOL SIX-LINE STAFF
-<Multi_key> <numbersign> <6> <numbersign> : "𝄜"  U1D11C  # MUSICAL SYMBOL SIX-STRING FRETBOARD
-<Multi_key> <numbersign> <4> <numbersign> : "𝄝"  U1D11D  # MUSICAL SYMBOL FOUR-STRING FRETBOARD
+<Multi_key> <numbersign> <6> <bar> <bar> : "𝄜"  U1D11C  # MUSICAL SYMBOL SIX-STRING FRETBOARD
+<Multi_key> <numbersign> <4> <bar> <bar> : "𝄝"  U1D11D  # MUSICAL SYMBOL FOUR-STRING FRETBOARD
 
 # notes
 <Multi_key> <numbersign> <n> <b>             : "𝅜" U1D15C    # MUSICAL SYMBOL BREVE
@@ -33117,15 +33691,43 @@ include "Logograms"
 <Multi_key> <numbersign> <numbersign>        : "♯" U266F    # MUSIC SHARP SIGN
 <Multi_key> <numbersign> <2> <numbersign>    : "𝄪" U1D12A    # MUSICAL SYMBOL DOUBLE SHARP
 <Multi_key> <numbersign> <2> <b>             : "𝄫" U1D12B    # MUSICAL SYMBOL DOUBLE FLAT
+<Multi_key> <numbersign> <asciicircum> <b>   : "𝄬"  U1D12C  # MUSICAL SYMBOL FLAT UP
+<Multi_key> <numbersign> <v> <b>             : "𝄭"  U1D12D  # MUSICAL SYMBOL FLAT DOWN
+<Multi_key> <numbersign> <asciicircum> <equal> : "𝄮"  U1D12E  # MUSICAL SYMBOL NATURAL UP
+<Multi_key> <numbersign> <v> <equal>         : "𝄯"  U1D12F  # MUSICAL SYMBOL NATURAL DOWN
+<Multi_key> <numbersign> <asciicircum> <numbersign> : "𝄰"  U1D130  # MUSICAL SYMBOL SHARP UP
+<Multi_key> <numbersign> <v> <numbersign>    : "𝄱"  U1D131  # MUSICAL SYMBOL SHARP DOWN
+<Multi_key> <numbersign> <4> <numbersign>    : "𝄲"  U1D132  # MUSICAL SYMBOL QUARTER TONE SHARP
+<Multi_key> <numbersign> <4> <b>             : "𝄳"  U1D133  # MUSICAL SYMBOL QUARTER TONE FLAT
 <Multi_key> <numbersign> <4> <4>             : "𝄴" U1D134    # MUSICAL SYMBOL COMMON TIME
 <Multi_key> <numbersign> <2> <2>             : "𝄵" U1D135    # MUSICAL SYMBOL CUT TIME
 
 # note heads
 <Multi_key> <numbersign> <h> <x>             : "𝅃" U1D143    # MUSICAL SYMBOL X NOTEHEAD
 <Multi_key> <numbersign> <h> <plus>          : "𝅄" U1D144    # MUSICAL SYMBOL PLUS NOTEHEAD
-<Multi_key> <numbersign> <h> <bracketleft> <bracketright> : "𝅆" U1D146    # MUSICAL SYMBOL SQUARE NOTEHEAD WHITE
+<Multi_key> <numbersign> <h> <parenleft> <asterisk> <parenright> : "𝅅"  U1D145  # MUSICAL SYMBOL CIRCLE X NOTEHEAD
+<Multi_key> <numbersign> <h> <bracketleft> <bracketright> <0> : "𝅆" U1D146    # MUSICAL SYMBOL SQUARE NOTEHEAD WHITE
+<Multi_key> <numbersign> <h> <bracketleft> <bracketright> <1> : "𝅇"  U1D147  # MUSICAL SYMBOL SQUARE NOTEHEAD BLACK
+<Multi_key> <numbersign> <h> <slash> <backslash> <0> : "𝅈"  U1D148  # MUSICAL SYMBOL TRIANGLE NOTEHEAD UP WHITE
+<Multi_key> <numbersign> <h> <slash> <backslash> <1> : "𝅉"  U1D149  # MUSICAL SYMBOL TRIANGLE NOTEHEAD UP BLACK
+<Multi_key> <numbersign> <h> <bar> <backslash> <0> : "𝅊"  U1D14A  # MUSICAL SYMBOL TRIANGLE NOTEHEAD LEFT WHITE
+<Multi_key> <numbersign> <h> <bar> <backslash> <1> : "𝅋"  U1D14B  # MUSICAL SYMBOL TRIANGLE NOTEHEAD LEFT BLACK
+<Multi_key> <numbersign> <h> <slash> <bar> <0> : "𝅌"  U1D14C  # MUSICAL SYMBOL TRIANGLE NOTEHEAD RIGHT WHITE
+<Multi_key> <numbersign> <h> <slash> <bar> <1> : "𝅍"  U1D14D  # MUSICAL SYMBOL TRIANGLE NOTEHEAD RIGHT BLACK
+<Multi_key> <numbersign> <h> <backslash> <slash> <0> : "𝅎"  U1D14E  # MUSICAL SYMBOL TRIANGLE NOTEHEAD DOWN WHITE
+<Multi_key> <numbersign> <h> <backslash> <slash> <1> : "𝅏"  U1D14F  # MUSICAL SYMBOL TRIANGLE NOTEHEAD DOWN BLACK
+<Multi_key> <numbersign> <h> <backslash> <bar> <0> : "𝅐"  U1D150  # MUSICAL SYMBOL TRIANGLE NOTEHEAD UP RIGHT WHITE
+<Multi_key> <numbersign> <h> <backslash> <bar> <1> : "𝅑"  U1D151  # MUSICAL SYMBOL TRIANGLE NOTEHEAD UP RIGHT BLACK
+<Multi_key> <numbersign> <h> <U> <0>         : "𝅒"  U1D152  # MUSICAL SYMBOL MOON NOTEHEAD WHITE
+<Multi_key> <numbersign> <h> <U> <1>         : "𝅓"  U1D153  # MUSICAL SYMBOL MOON NOTEHEAD BLACK
+<Multi_key> <numbersign> <h> <V> <0>         : "𝅔"  U1D154  # MUSICAL SYMBOL TRIANGLE-ROUND NOTEHEAD DOWN WHITE
+<Multi_key> <numbersign> <h> <V> <1>         : "𝅕"  U1D155  # MUSICAL SYMBOL TRIANGLE-ROUND NOTEHEAD DOWN BLACK
+<Multi_key> <numbersign> <h> <parenleft> <parenright> : "𝅖"  U1D156  # MUSICAL SYMBOL PARENTHESIS NOTEHEAD
 <Multi_key> <numbersign> <h> <o>             : "𝅗" U1D157    # MUSICAL SYMBOL VOID NOTEHEAD
 <Multi_key> <numbersign> <h> <asterisk>      : "𝅘" U1D158    # MUSICAL SYMBOL NOTEHEAD BLACK
+<Multi_key> <numbersign> <h> <space>         : "𝅙"  U1D159  # MUSICAL SYMBOL NULL NOTEHEAD
+<Multi_key> <numbersign> <h> <bracketleft> <space> <bracketright> <v> <0> : "𝅚"  U1D15A  # MUSICAL SYMBOL CLUSTER NOTEHEAD WHITE
+<Multi_key> <numbersign> <h> <bracketleft> <space> <bracketright> <v> <1> : "𝅛"  U1D15B  # MUSICAL SYMBOL CLUSTER NOTEHEAD BLACK
 
 # stems and flags
 <Multi_key> <numbersign> <bar> <Return>      : "𝅥" U1D165    # MUSICAL SYMBOL COMBINING STEM
@@ -33136,15 +33738,41 @@ include "Logograms"
 <Multi_key> <numbersign> <bar> <4> <Return>  : "𝅱" U1D171    # MUSICAL SYMBOL COMBINING FLAG-4
 <Multi_key> <numbersign> <bar> <5> <Return>  : "𝅲" U1D172    # MUSICAL SYMBOL COMBINING FLAG-5
 
+# beams and slurs
+<Multi_key> <numbersign> <parenleft> <b> <Return> : "𝅳"  U1D173  # MUSICAL SYMBOL BEGIN BEAM
+<Multi_key> <numbersign> <parenright> <b> <Return> : "𝅴"  U1D174  # MUSICAL SYMBOL END BEAM
+<Multi_key> <numbersign> <parenleft> <t> <Return> : "𝅵"  U1D175  # MUSICAL SYMBOL BEGIN TIE
+<Multi_key> <numbersign> <parenright> <t> <Return> : "𝅶"  U1D176  # MUSICAL SYMBOL END TIE
+<Multi_key> <numbersign> <parenleft> <s> <Return> : "𝅷"  U1D177  # MUSICAL SYMBOL BEGIN SLUR
+<Multi_key> <numbersign> <parenright> <s> <Return> : "𝅸"  U1D178  # MUSICAL SYMBOL END SLUR
+<Multi_key> <numbersign> <parenleft> <p> <Return> : "𝅹"  U1D179  # MUSICAL SYMBOL BEGIN PHRASE
+<Multi_key> <numbersign> <parenright> <p> <Return> : "𝅺"  U1D17A  # MUSICAL SYMBOL END PHRASE
+
 # articulation and instrumentation
 <Multi_key> <numbersign> <slash> <Return>    : "𝅧" U1D167    # MUSICAL SYMBOL COMBINING TREMOLO-1
 <Multi_key> <numbersign> <slash> <slash> <Return> : "𝅨" U1D168    # MUSICAL SYMBOL COMBINING TREMOLO-2
 <Multi_key> <numbersign> <slash> <slash> <slash> <Return> : "𝅩" U1D169    # MUSICAL SYMBOL COMBINING TREMOLO-3
+<Multi_key> <numbersign> <space> <slash> <space> : "𝅪"  U1D16A  # MUSICAL SYMBOL FINGERED TREMOLO-1
+<Multi_key> <numbersign> <space> <slash> <slash> <space> : "𝅫"  U1D16B  # MUSICAL SYMBOL FINGERED TREMOLO-2
+<Multi_key> <numbersign> <space> <slash> <slash> <slash> : "𝅬"  U1D16C  # MUSICAL SYMBOL FINGERED TREMOLO-3
 <Multi_key> <numbersign> <greater> <Return>  : "𝅻" U1D17B    # MUSICAL SYMBOL COMBINING ACCENT
 <Multi_key> <numbersign> <period> <Return>   : "𝅼" U1D17C    # MUSICAL SYMBOL COMBINING STACCATO
 <Multi_key> <numbersign> <underscore> <Return> : "𝅽" U1D17D    # MUSICAL SYMBOL COMBINING TENUTO
 <Multi_key> <numbersign> <period> <period> <Return> : "𝅾" U1D17E    # MUSICAL SYMBOL COMBINING STACCATISSIMO
 <Multi_key> <numbersign> <asciicircum> <Return> : "𝅿" U1D17F    # MUSICAL SYMBOL COMBINING MARCATO
+<Multi_key> <numbersign> <asciicircum> <period> <Return> : "𝆀"  U1D180  # MUSICAL SYMBOL COMBINING MARCATO-STACCATO
+<Multi_key> <numbersign> <greater> <period> <Return> : "𝆁"  U1D181  # MUSICAL SYMBOL COMBINING ACCENT-STACCATO
+<Multi_key> <numbersign> <minus> <period> <Return> : "𝆂"  U1D182  # MUSICAL SYMBOL COMBINING LOURE
+<Multi_key> <numbersign> <z> <asciicircum> : "𝆃"  U1D183  # MUSICAL SYMBOL ARPEGGIATO UP
+<Multi_key> <numbersign> <z> <v> : "𝆄"  U1D184  # MUSICAL SYMBOL ARPEGGIATO DOWN
+<Multi_key> <numbersign> <parenright> <Return> : "𝆅"  U1D185  # MUSICAL SYMBOL COMBINING DOIT
+<Multi_key> <numbersign> <parenleft> <Return> : "𝆆"  U1D186  # MUSICAL SYMBOL COMBINING RIP
+<Multi_key> <numbersign> <bar> <backslash> <Return> : "𝆇"  U1D187  # MUSICAL SYMBOL COMBINING FLIP
+<Multi_key> <numbersign> <asciitilde> <Return> : "𝆈"  U1D188  # MUSICAL SYMBOL COMBINING SMEAR
+<Multi_key> <numbersign> <U> <Return> : "𝆉"  U1D189  # MUSICAL SYMBOL COMBINING BEND
+<Multi_key> <numbersign> <2> <period> <parenright> : "𝆊"  U1D18A  # MUSICAL SYMBOL COMBINING DOUBLE TONGUE
+<Multi_key> <numbersign> <colon> <parenright> : "𝆊"  U1D18A  # MUSICAL SYMBOL COMBINING DOUBLE TONGUE
+<Multi_key> <numbersign> <3> <period> <parenright> : "𝆋"  U1D18B  # MUSICAL SYMBOL COMBINING TRIPLE TONGUE
 <Multi_key> <numbersign> <bracketleft> <Return> : "𝆪" U1D1AA    # MUSICAL SYMBOL COMBINING DOWN BOW
 <Multi_key> <numbersign> <v> <Return>        : "𝆫" U1D1AB    # MUSICAL SYMBOL COMBINING UP BOW
 <Multi_key> <numbersign> <o> <Return>        : "𝆬" U1D1AC    # MUSICAL SYMBOL COMBINING HARMONIC
@@ -33168,14 +33796,32 @@ include "Logograms"
 <Multi_key> <numbersign> <o> <asciitilde>    : "𝆗" U1D197    # MUSICAL SYMBOL TURN
 <Multi_key> <numbersign> <o> <less> <asciitilde> : "𝆘" U1D198    # MUSICAL SYMBOL INVERTED TURN
 <Multi_key> <numbersign> <o> <bar> <asciitilde> : "𝆙" U1D199    # MUSICAL SYMBOL TURN SLASH
+<Multi_key> <numbersign> <o> <less> <S>      : "𝆚"  U1D19A  # MUSICAL SYMBOL TURN UP
 <Multi_key> <numbersign> <o> <m>             : "𝆜𝆝" U1D19C U1D19D    # UPPER MORDENT
 <Multi_key> <numbersign> <o> <bar> <m>       : "𝆜𝆠𝆝" U1D19C U1D1A0 U1D19D    # LOWER MORDENT
+
+<Multi_key> <numbersign> <o> <l>             : "𝆛"  U1D19B  # MUSICAL SYMBOL ORNAMENT STROKE-1
+<Multi_key> <numbersign> <o> <asciicircum>   : "𝆜"  U1D19C  # MUSICAL SYMBOL ORNAMENT STROKE-2
+<Multi_key> <numbersign> <o> <N>             : "𝆝"  U1D19D  # MUSICAL SYMBOL ORNAMENT STROKE-3
+<Multi_key> <numbersign> <o> <parenright> <asciicircum> : "𝆞"  U1D19E  # MUSICAL SYMBOL ORNAMENT STROKE-4
+<Multi_key> <numbersign> <o> <parenright> <v> : "𝆟"  U1D19F  # MUSICAL SYMBOL ORNAMENT STROKE-5
+<Multi_key> <numbersign> <o> <bar> <space>   : "𝆠"  U1D1A0  # MUSICAL SYMBOL ORNAMENT STROKE-6
+<Multi_key> <numbersign> <o> <I>             : "𝆠"  U1D1A0  # MUSICAL SYMBOL ORNAMENT STROKE-6
+<Multi_key> <numbersign> <o> <a>             : "𝆡"  U1D1A1  # MUSICAL SYMBOL ORNAMENT STROKE-7
+<Multi_key> <numbersign> <o> <c>             : "𝆢"  U1D1A2  # MUSICAL SYMBOL ORNAMENT STROKE-8
+<Multi_key> <numbersign> <o> <n>             : "𝆣"  U1D1A3  # MUSICAL SYMBOL ORNAMENT STROKE-9
+<Multi_key> <numbersign> <o> <u>             : "𝆤"  U1D1A4  # MUSICAL SYMBOL ORNAMENT STROKE-10
+<Multi_key> <numbersign> <o> <i>             : "𝆥"  U1D1A5  # MUSICAL SYMBOL ORNAMENT STROKE-11
 
 # other
 <Multi_key> <numbersign> <8> <v> <a>         : "𝄶"  U1D136  # MUSICAL SYMBOL OTTAVA ALTA
 <Multi_key> <numbersign> <8> <v> <b>         : "𝄷"  U1D137  # MUSICAL SYMBOL OTTAVA BASSA
 <Multi_key> <numbersign> <1> <5> <v> <a>     : "𝄸"  U1D138  # MUSICAL SYMBOL QUINDICESIMA ALTA
 <Multi_key> <numbersign> <1> <5> <v> <b>     : "𝄹"  U1D139  # MUSICAL SYMBOL QUINDICESIMA BASSA
+<Multi_key> <numbersign> <H> <T>             : "𝆦"  U1D1A6  # MUSICAL SYMBOL HAUPTSTIMME
+<Multi_key> <numbersign> <N> <T>             : "𝆧"  U1D1A7  # MUSICAL SYMBOL NEBENSTIMME
+<Multi_key> <numbersign> <parenleft> <T>     : "𝆨"  U1D1A8  # MUSICAL SYMBOL END OF STIMME
+<Multi_key> <numbersign> <slash> <o>         : "𝆩"  U1D1A9  # MUSICAL SYMBOL DEGREE SLASH
 <Multi_key> <numbersign> <P> <e> <d>         : "𝆮" U1D1AE    # MUSICAL SYMBOL PEDAL MARK
 <Multi_key> <numbersign> <P> <u> <p>         : "𝆯" U1D1AF    # MUSICAL SYMBOL PEDAL UP MARK
 <Multi_key> <numbersign> <P> <asciicircum>   : "𝆰" U1D1B0    # MUSICAL SYMBOL HALF PEDAL MARK
@@ -33183,6 +33829,10 @@ include "Logograms"
 <Multi_key> <numbersign> <asciitilde> <v>    : "𝆲" U1D1B2    # MUSICAL SYMBOL GLISSANDO DOWN
 <Multi_key> <numbersign> <g> <asciicircum>   : "𝆱" U1D1B1    # MUSICAL SYMBOL GLISSANDO UP
 <Multi_key> <numbersign> <g> <v>             : "𝆲" U1D1B2    # MUSICAL SYMBOL GLISSANDO DOWN
+<Multi_key> <numbersign> <n> <a> <i> <l>     : "𝆳"  U1D1B3  # MUSICAL SYMBOL WITH FINGERNAILS
+<Multi_key> <numbersign> <o> <plus>          : "𝆴"  U1D1B4  # MUSICAL SYMBOL DAMP
+<Multi_key> <numbersign> <O> <o> <plus>      : "𝆵"  U1D1B5  # MUSICAL SYMBOL DAMP ALL
+<Multi_key> <numbersign> <x> <x>             : "𝇏"  U1D1CF  # MUSICAL SYMBOL CROIX
 
 # M = mensural notation
 
@@ -33214,7 +33864,45 @@ include "Logograms"
 <Multi_key> <numbersign> <M> <4> <8> : "𝇌"  U1D1CC  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-1
 <Multi_key> <numbersign> <M> <2> <4> : "𝇎"  U1D1CE  # MUSICAL SYMBOL TEMPUS IMPERFECTUM CUM PROLATIONE IMPERFECTA DIMINUTION-3
 
-# G = ancient greek notation
+# G = gregorian notation (shares namespace with ancient greek notation)
+
+<Multi_key> <numbersign> <G> <at> <c> : "𝇐"  U1D1D0  # MUSICAL SYMBOL GREGORIAN C CLEF
+<Multi_key> <numbersign> <G> <at> <f> : "𝇑"  U1D1D1  # MUSICAL SYMBOL GREGORIAN F CLEF
+
+<Multi_key> <numbersign> <G> <b> : "𝇒"  U1D1D2  # MUSICAL SYMBOL SQUARE B
+
+<Multi_key> <numbersign> <G> <n> <1> : "𝇓"  U1D1D3  # MUSICAL SYMBOL VIRGA
+<Multi_key> <numbersign> <G> <n> <2> <asciicircum> : "𝇔"  U1D1D4  # MUSICAL SYMBOL PODATUS
+<Multi_key> <numbersign> <G> <n> <2> <v> : "𝇕"  U1D1D5  # MUSICAL SYMBOL CLIVIS
+<Multi_key> <numbersign> <G> <n> <3> <asciicircum> <asciicircum> : "𝇖"  U1D1D6  # MUSICAL SYMBOL SCANDICUS
+<Multi_key> <numbersign> <G> <n> <3> <v> <v> : "𝇗"  U1D1D7  # MUSICAL SYMBOL CLIMACUS
+<Multi_key> <numbersign> <G> <n> <3> <asciicircum> <v> : "𝇘"  U1D1D8  # MUSICAL SYMBOL TORCULUS
+<Multi_key> <numbersign> <G> <n> <3> <v> <asciicircum> : "𝇙"  U1D1D9  # MUSICAL SYMBOL PORRECTUS
+<Multi_key> <numbersign> <G> <n> <4> <v> <asciicircum> <v> : "𝇚"  U1D1DA  # MUSICAL SYMBOL PORRECTUS FLEXUS
+<Multi_key> <numbersign> <G> <n> <4> <asciicircum> <asciicircum> <v> : "𝇛"  U1D1DB  # MUSICAL SYMBOL SCANDICUS FLEXUS
+<Multi_key> <numbersign> <G> <n> <4> <asciicircum> <v> <asciicircum> : "𝇜"  U1D1DC  # MUSICAL SYMBOL TORCULUS RESUPINUS
+<Multi_key> <numbersign> <G> <n> <4> <asciicircum> <v> <v> : "𝇝"  U1D1DD  # MUSICAL SYMBOL PES SUBPUNCTIS
+
+# K = kievan notation
+
+<Multi_key> <numbersign> <K> <at> <c> : "𝇞"  U1D1DE  # MUSICAL SYMBOL KIEVAN C CLEF
+<Multi_key> <numbersign> <K> <bracketright> : "𝇟"  U1D1DF  # MUSICAL SYMBOL KIEVAN END OF PIECE
+<Multi_key> <numbersign> <K> <n> <bracketright> : "𝇠"  U1D1E0  # MUSICAL SYMBOL KIEVAN FINAL NOTE
+<Multi_key> <numbersign> <K> <n> <equal> : "𝇡"  U1D1E1  # MUSICAL SYMBOL KIEVAN RECITATIVE MARK
+<Multi_key> <numbersign> <K> <n> <1> <slash> : "𝇢"  U1D1E2  # MUSICAL SYMBOL KIEVAN WHOLE NOTE
+<Multi_key> <numbersign> <K> <n> <2> <slash> : "𝇣"  U1D1E3  # MUSICAL SYMBOL KIEVAN HALF NOTE
+<Multi_key> <numbersign> <K> <n> <4> <slash> <v> : "𝇤"  U1D1E4  # MUSICAL SYMBOL KIEVAN QUARTER NOTE STEM DOWN
+<Multi_key> <numbersign> <K> <n> <4> <slash> <asciicircum> : "𝇥"  U1D1E5  # MUSICAL SYMBOL KIEVAN QUARTER NOTE STEM UP
+<Multi_key> <numbersign> <K> <n> <8> <slash> <v> : "𝇦"  U1D1E6  # MUSICAL SYMBOL KIEVAN EIGHTH NOTE STEM DOWN
+<Multi_key> <numbersign> <K> <n> <8> <slash> <asciicircum> : "𝇧"  U1D1E7  # MUSICAL SYMBOL KIEVAN EIGHTH NOTE STEM UP
+<Multi_key> <numbersign> <K> <b> : "𝇨"  U1D1E8  # MUSICAL SYMBOL KIEVAN FLAT SIGN
+
+# I = iranian classical notation
+
+<Multi_key> <numbersign> <I> <numbersign> : "𝇩"  U1D1E9  # MUSICAL SYMBOL SORI
+<Multi_key> <numbersign> <I> <b> : "𝇪"  U1D1EA  # MUSICAL SYMBOL KORON
+
+# G = ancient greek notation (shares namespace with gregorian notation)
 
 <Multi_key> <numbersign> <G> <minus> <2> <Return> : "̅"  U0305   # COMBINING OVERLINE (DISEME) (unconfirmed)
 <Multi_key> <numbersign> <G> <minus> <3> <Return> : "𝉂"  U1D242  # COMBINING GREEK MUSICAL TRISEME
@@ -33599,6 +34287,11 @@ include "Logograms"
 <Multi_key> <numbersign> <B> <plus> <N> <Q> : "🩑"  U1FA51  # BLACK CHESS KNIGHT-QUEEN
 <Multi_key> <numbersign> <B> <plus> <N> <R> : "🩒"  U1FA52  # BLACK CHESS KNIGHT-ROOK
 <Multi_key> <numbersign> <B> <plus> <N> <B> : "🩓"  U1FA53  # BLACK CHESS KNIGHT-BISHOP
+
+<Multi_key> <numbersign> <P> <U> : "⯺"  U2BFA  # UNITED SYMBOL
+<Multi_key> <numbersign> <P> <S> : "⯻"  U2BFB  # SEPARATED SYMBOL
+<Multi_key> <numbersign> <P> <D> : "⯼"  U2BFC  # DOUBLED SYMBOL
+<Multi_key> <numbersign> <P> <P> : "⯽"  U2BFD  # PASSED SYMBOL
 
 # Draughts
 <Multi_key> <numbersign> <W> <D> <M> : "⛀" U26C0    # WHITE DRAUGHTS MAN
@@ -34451,6 +35144,7 @@ include "Logograms"
 <Multi_key> <asterisk> <S> <A> : "♄" U2644    # SATURN
 <Multi_key> <asterisk> <S> <T> : "♄" U2644    # SATURN
 <Multi_key> <asterisk> <U> <R> : "♅" U2645    # URANUS (conflicts with Ů, use oU)
+<Multi_key> <asterisk> <U> <2> : "⛢"  U26E2   # ASTRONOMICAL SYMBOL FOR URANUS (conflicts with Ů, use oU)
 <Multi_key> <asterisk> <N> <E> : "♆" U2646    # NEPTUNE
 <Multi_key> <asterisk> <N> <2> : "⯉" U2BC9    # NEPTUNE FORM TWO
 
@@ -34467,6 +35161,10 @@ include "Logograms"
 <Multi_key> <asterisk> <E> <R> : "⯰" U2BF0    # ERIS FORM ONE
 <Multi_key> <asterisk> <E> <2> : "⯱"  U2BF1   # ERIS FORM TWO
 <Multi_key> <asterisk> <S> <E> : "⯲" U2BF2    # SEDNA
+<Multi_key> <asterisk> <A> <S> : "⯙"  U2BD9   # ASTRAEA (conflicts with Å, use oA)
+<Multi_key> <asterisk> <H> <Y> : "⯚"  U2BDA  # HYGIEA
+<Multi_key> <asterisk> <P> <H> : "⯛"  U2BDB  # PHOLUS
+<Multi_key> <asterisk> <N> <S> : "⯜"  U2BDC  # NESSUS
 <Multi_key> <asterisk> <H> <U> : "🝻" U1F77B    # HAUMEA
 <Multi_key> <asterisk> <M> <K> : "🝼" U1F77C    # MAKEMAKE
 <Multi_key> <asterisk> <G> <O> : "🝽" U1F77D    # GONGGONG
@@ -34980,6 +35678,8 @@ include "Logograms"
 <Multi_key> <backslash> <m> <o> <u> <s> <e> <1> : "🖯"  U1F5AF  # ONE BUTTON MOUSE
 <Multi_key> <backslash> <m> <o> <u> <s> <e> <2> : "🖰"  U1F5B0  # TWO BUTTON MOUSE
 <Multi_key> <backslash> <m> <o> <u> <s> <e> <3> : "🖱"  U1F5B1  # THREE BUTTON MOUSE
+<Multi_key> <backslash> <t> <b> <a> <l> <l>     : "🖲"  U1F5B2  # TRACKBALL
+<Multi_key> <backslash> <t> <r> <a> <c> <k> <b> : "🖲"  U1F5B2  # TRACKBALL
 <Multi_key> <backslash> <h> <a> <r> <d>         : "🖴"  U1F5B4  # HARD DISK
 <Multi_key> <backslash> <s> <c> <r> <e> <e> <n> : "🖵"  U1F5B5  # SCREEN
 <Multi_key> <backslash> <p> <r> <i> <n> <t>     : "🖶"  U1F5B6  # PRINTER ICON (use \prtsc for ⎙)
