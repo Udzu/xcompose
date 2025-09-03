@@ -114,6 +114,9 @@ include "%L"
 <Multi_key> <parenright> <parenright>        : "⸩"  U2E29  # RIGHT DOUBLE PARENTHESIS (conflicts with useless ])
 <Multi_key> <minus> <bracketleft>            : "⫍"  U2ACD  # SQUARE LEFT OPEN BOX OPERATOR
 <Multi_key> <minus> <bracketright>           : "⫎"  U2ACE  # SQUARE RIGHT OPEN BOX OPERATOR
+<Multi_key> <3> <Multi_key> <bar>            : "⦀"  U2980  # TRIPLE VERTICAL BAR DELIMITER (for ⫴ use 3vb)
+<Multi_key> <parenleft> <exclam>             : "🗦"  U1F5E6  # THREE RAYS LEFT
+<Multi_key> <parenright> <exclam>            : "🗧"  U1F5E7  # THREE RAYS RIGHT
 
 <Multi_key> <underscore> <Multi_key> <bracketleft>      : "⦋"  U298B  # LEFT SQUARE BRACKET WITH UNDERBAR
 <Multi_key> <underscore> <Multi_key> <bracketright>     : "⦌"  U298C  # RIGHT SQUARE BRACKET WITH UNDERBAR
@@ -129,6 +132,8 @@ include "%L"
 <Multi_key> <v> <braceright>                 : "⏟"  U23DF  # BOTTOM CURLY BRACKET
 <Multi_key> <v> <less> <bracketleft>         : "⏠"  U23E0  # TOP TORTOISE SHELL BRACKET
 <Multi_key> <v> <greater> <bracketright>     : "⏡"  U23E1  # BOTTOM TORTOISE SHELL BRACKET
+<Multi_key> <v> <parenleft> <exclam>         : "🗤"  U1F5E4  # THREE RAYS ABOVE
+<Multi_key> <v> <parenright> <exclam>        : "🗥"  U1F5E5  # THREE RAYS BELOW
 
 ###########
 # Bullets #
@@ -155,7 +160,7 @@ include "%L"
 <Multi_key> <2> <asterisk>               : "⁑"  U2051  # TWO ASTERISKS ALIGNED VERTICALLY
 <Multi_key> <3> <asterisk>               : "⁂"  U2042  # ASTERISM
 <Multi_key> <3> <colon>                  : "⁝"  U205D  # TRICOLON (for ⫶ use 3⎄:)
-<Multi_key> <4> <colon>                  : "⁞"  U205E  # VERTICAL FOUR DOTS
+<Multi_key> <4> <colon>                  : "⁞"  U205E  # VERTICAL FOUR DOTS (for ⦙ use 4⎄:)
 <Multi_key> <6> <colon>                  : "⸽"  U2E3D  # VERTICAL SIX DOTS
 <Multi_key> <plus> <period>              : "⸭"  U2E2D  # FIVE DOT MARK (use _.+ for ⨥)
 <Multi_key> <plus> <colon>               : "⁜"  U205C  # DOTTED CROSS
@@ -164,6 +169,7 @@ include "%L"
 <Multi_key> <ampersand> <7>              : "⁊"  U204A  # TIRONIAN SIGN ET
 <Multi_key> <greater> <P> <P>            : "⁋"  U204B  # REVERSED PILCROW SIGN
 <Multi_key> <equal> <minus> <equal>      : "⸎"  U2E0E  # EDITORIAL CORONIS
+<Multi_key> <bar> <Multi_key> <equal> <underscore> : "⹋"  U2E4B  # TRIPLE DAGGER
 
 <Multi_key> <p> <e> <r> <space>          : "⅌"  U214C  # PER SIGN
 <Multi_key> <Q> <less>                   : "℺"  U213A  # ROTATED CAPITAL Q
@@ -790,8 +796,13 @@ include "%L"
 <Multi_key> <N> <I> <S>      : "₪"  U20AA  # NEW SHEQEL SIGN
 
 <Multi_key> <period> <slash> <period> : "⁒"  U2052  # COMMERCIAL MINUS SIGN
+<Multi_key> <O> <M> <space>           : "🆭"  U1F1AD  # MASK WORK SYMBOL
 <Multi_key> <O> <P> <space>           : "℗"  U2117  # SOUND RECORDING COPYRIGHT
+<Multi_key> <O> <a> <t> <t> <r>       : "🅯"  U1F16F  # CIRCLED HUMAN FIGURE (ATTIRUBTION REQUIRED)
 <Multi_key> <e> <s> <t>               : "℮"  U212E  # ESTIMATED SYMBOL
+
+<Multi_key> <parenleft> <parenright> <parenright> : "🄯"   U1F12F  # COPYLEFT SYMBOL
+<Multi_key> <parenleft> <less> <O> <parenright>   : "🄎"   U1F10E  # CIRCLED ANTICLOCKWISE ARROW
 
 ##############################
 # B. LATIN SCRIPT CHARACTERS #
@@ -3059,6 +3070,9 @@ include "%L"
 <Multi_key> <exclam> <bracketleft> <A> <B> <bracketright> : "🆎︎" U1F18E UFE0E  # NEGATIVE SQUARED AB (prefix with @ for emoji variant)
 <Multi_key> <exclam> <bracketleft> <W> <C> <bracketright> : "🆏" U1F18F   # NEGATIVE SQUARED WC
 <Multi_key> <exclam> <bracketleft> <question> <bracketright> : "🯄"  U1FBC4  # NEGATIVE SQUARED QUESTION MARK
+<Multi_key> <exclam> <X> <bracketleft> <P> <bracketright> : "🆊"  U1F18A  # CROSSED NEGATIVE SQUARED LATIN CAPITAL LETTER P
+
+<Multi_key> <greater> <bracketleft> <S> <bracketright> : "🄪"  U1F12A  # TORTOISE SHELL BRACKETED LATIN CAPITAL LETTER S
 
 <Multi_key> <bracketleft> <parenleft> <1> <0> <parenright> <bracketright> : "㉈" U3248   # CIRCLED NUMBER TEN ON BLACK SQUARE
 <Multi_key> <bracketleft> <parenleft> <2> <0> <parenright> <bracketright> : "㉉" U3249   # CIRCLED NUMBER TWENTY ON BLACK SQUARE
@@ -3068,6 +3082,7 @@ include "%L"
 <Multi_key> <bracketleft> <parenleft> <6> <0> <parenright> <bracketright> : "㉍" U324D   # CIRCLED NUMBER SIXTY ON BLACK SQUARE
 <Multi_key> <bracketleft> <parenleft> <7> <0> <parenright> <bracketright> : "㉎" U324E   # CIRCLED NUMBER SEVENTY ON BLACK SQUARE
 <Multi_key> <bracketleft> <parenleft> <8> <0> <parenright> <bracketright> : "㉏" U324F   # CIRCLED NUMBER EIGHTY ON BLACK SQUARE
+<Multi_key> <bracketleft> <parenleft> <backslash> <parenright> <bracketright> : "⛞"  U26DE  # FALLING DIAGONAL IN WHITE CIRCLE IN BLACK SQUARE
 
 #############################
 # Multigraphs and ligatures #
@@ -4280,6 +4295,7 @@ include "%L"
 <Multi_key> <a> <x> <period> <quotedbl> <G> : "ࣃ"  U08C3  # ARABIC LETTER GHAIN WITH THREE DOTS ABOVE
 
 <Multi_key> <a> <x> <space> <f>          : "ࢻ"  U08BB  # ARABIC LETTER AFRICAN FEH
+<Multi_key> <a> <x> <space> <p>          : "ڡ"  U06A1  # ARABIC LETTER DOTLESS FEH
 <Multi_key> <a> <x> <underscore> <period> <f> : "ڢ"  U06A2  # ARABIC LETTER FEH WITH DOT MOVED BELOW
 <Multi_key> <a> <x> <period> <underscore> <period> <f> : "ڣ"  U06A3  # ARABIC LETTER FEH WITH DOT BELOW
 <Multi_key> <a> <x> <period> <quotedbl> <f> : "ڤ"  U06A4  # ARABIC LETTER VEH (alternatively acv)
@@ -5950,11 +5966,11 @@ include "%L"
 <Multi_key> <a> <M> <quotedbl> <Return> : "𐫥"  U10AE5  # MANICHAEAN ABBREVIATION MARK ABOVE
 <Multi_key> <a> <M> <underscore> <quotedbl> <Return> : "𐫦"  U10AE6  # MANICHAEAN ABBREVIATION MARK BELOW
 
-<Multi_key> <numbersign> <1> <space> <M> <numbersign> <1> <space> : "𐫫"  U10AEB  # MANICHAEAN NUMBER ONE
-<Multi_key> <numbersign> <1> <space> <M> <numbersign> <5> : "𐫬"  U10AEC  # MANICHAEAN NUMBER FIVE
-<Multi_key> <numbersign> <1> <space> <M> <numbersign> <1> <0> <space> : "𐫭"  U10AED  # MANICHAEAN NUMBER TEN
-<Multi_key> <numbersign> <1> <space> <M> <numbersign> <2> <0> : "𐫮"  U10AEE  # MANICHAEAN NUMBER TWENTY
-<Multi_key> <numbersign> <1> <space> <M> <numbersign> <1> <0> <0> : "𐫯"  U10AEF  # MANICHAEAN NUMBER ONE HUNDRED
+<Multi_key> <a> <M> <numbersign> <1> <space> : "𐫫"  U10AEB  # MANICHAEAN NUMBER ONE
+<Multi_key> <a> <M> <numbersign> <5> : "𐫬"  U10AEC  # MANICHAEAN NUMBER FIVE
+<Multi_key> <a> <M> <numbersign> <1> <0> <space> : "𐫭"  U10AED  # MANICHAEAN NUMBER TEN
+<Multi_key> <a> <M> <numbersign> <2> <0> : "𐫮"  U10AEE  # MANICHAEAN NUMBER TWENTY
+<Multi_key> <a> <M> <numbersign> <1> <0> <0> : "𐫯"  U10AEF  # MANICHAEAN NUMBER ONE HUNDRED
 
 <Multi_key> <a> <M> <ampersand> : "𐫈"  U10AC8  # MANICHAEAN SIGN UD
 
@@ -10191,6 +10207,21 @@ include "%L"
 <Multi_key> <b> <N> <space> : "𑧣"  U119E3  # NANDINAGARI HEADSTROKE
 <Multi_key> <b> <N> <period> <period> : "𑧣"  U119E3  # NANDINAGARI HEADSTROKE
 
+# (NI = North Indic number forms)
+
+<Multi_key> <b> <N> <I> <numbersign> <1> <slash> <4> : "꠰"  UA830  # NORTH INDIC FRACTION ONE QUARTER
+<Multi_key> <b> <N> <I> <numbersign> <2> <slash> <4> : "꠱"  UA831  # NORTH INDIC FRACTION ONE HALF
+<Multi_key> <b> <N> <I> <numbersign> <1> <slash> <2> : "꠱"  UA831  # NORTH INDIC FRACTION ONE HALF
+<Multi_key> <b> <N> <I> <numbersign> <3> <slash> <4> : "꠲"  UA832  # NORTH INDIC FRACTION THREE QUARTERS
+<Multi_key> <b> <N> <I> <numbersign> <1> <slash> <1> <6> : "꠳"  UA833  # NORTH INDIC FRACTION ONE SIXTEENTH
+<Multi_key> <b> <N> <I> <numbersign> <2> <slash> <1> <6> : "꠴"  UA834  # NORTH INDIC FRACTION ONE EIGHTH
+<Multi_key> <b> <N> <I> <numbersign> <1> <slash> <8> : "꠴"  UA834  # NORTH INDIC FRACTION ONE EIGHTH
+<Multi_key> <b> <N> <I> <numbersign> <3> <slash> <1> <6> : "꠵"  UA835  # NORTH INDIC FRACTION THREE SIXTEENTHS
+<Multi_key> <b> <N> <I> <numbersign> <slash> <4> : "꠶"  UA836  # NORTH INDIC QUARTER MARK
+<Multi_key> <b> <N> <I> <numbersign> <0> : "꠷"  UA837  # NORTH INDIC PLACEHOLDER MARK
+<Multi_key> <b> <N> <I> <numbersign> <R> <u> : "꠸"  UA838  # NORTH INDIC RUPEE MARK
+<Multi_key> <b> <N> <I> <numbersign> <numbersign> : "꠹"  UA839  # NORTH INDIC QUANTITY MARK
+
 # (O = Odia)
 
 # Consonants
@@ -13738,8 +13769,7 @@ include "%L"
 
 # (Du/DU = Sloan-Duployan) - based on 1934 edition
 
-# TODO: check that this is correct, especially forms with combining diacritics,
-# and add affixes
+# TODO: check correctness (especially combining forms) and add affixes
 
 # consonants
 
@@ -20582,7 +20612,7 @@ include "HangulSyllables"
 
 # covers Carian, Ogham, Old Hungarian & Runic
 
-# also see numerals sections for Roman Numerals
+# includes some Ancient Latin, but see numerals sections for Roman Numerals
 
 <Multi_key> <o> <i> <c> <a> : "𐌀" U10300    # OLD ITALIC LETTER A
 <Multi_key> <o> <i> <c> <b> : "𐌁" U10301    # OLD ITALIC LETTER BE
@@ -20637,6 +20667,14 @@ include "HangulSyllables"
 <Multi_key> <o> <i> <x> <I> <colon> : "ꟾ" UA7FE    # LATIN EPIGRAPHIC LETTER I LONGA
 <Multi_key> <o> <i> <x> <M> <N> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
 <Multi_key> <o> <i> <x> <M> <apostrophe> : "ꟿ" UA7FF    # LATIN EPIGRAPHIC LETTER ARCHAIC M (MANIUS)
+
+<Multi_key> <o> <i> <x> <X> <minus> : "𐆖"  U10196  # ROMAN DENARIUS SIGN
+<Multi_key> <o> <i> <x> <V> <minus> : "𐆗"  U10197  # ROMAN QUINARIUS SIGN
+<Multi_key> <o> <i> <x> <H> <S> <minus> : "𐆘"  U10198  # ROMAN SESTERTIUS SIGN
+<Multi_key> <o> <i> <x> <H> <minus> : "𐆙"  U10199  # ROMAN DUPONDIUS SIGN
+<Multi_key> <o> <i> <x> <slash> <minus> : "𐆚"  U1019A  # ROMAN AS SIGN
+<Multi_key> <o> <i> <x> <greater> <C> : "𐆛"  U1019B  # ROMAN CENTURIAL SIGN
+<Multi_key> <o> <i> <x> <L> <I> : "𐆜"  U1019C  # ASCIA SYMBOL
 
 <Multi_key> <o> <i> <numbersign> <1> <space> : "𐌠" U10320    # OLD ITALIC NUMERAL ONE
 <Multi_key> <o> <i> <numbersign> <5> <space> : "𐌡" U10321    # OLD ITALIC NUMERAL FIVE
@@ -21073,7 +21111,7 @@ include "HangulSyllables"
 # (S) Sutton SignWriting #
 ##########################
 
-# TODO: needs checking for errors and to see how practical this actually is
+# TODO: check for errors and see how practical this actually is
 
 # Modifiers
 
@@ -22651,6 +22689,15 @@ include "HangulSyllables"
 <Multi_key> <z> <semicolon> <bar> <2> <Return> : "〫"  U302B  # IDEOGRAPHIC RISING TONE MARK
 <Multi_key> <z> <semicolon> <bar> <3> <Return> : "〬"  U302C  # IDEOGRAPHIC DEPARTING TONE MARK
 <Multi_key> <z> <semicolon> <bar> <4> <Return> : "〭"  U302D  # IDEOGRAPHIC ENTERING TONE MARK
+
+<Multi_key> <z> <semicolon> <bar> <1> <c> : "꜀"  UA700  # MODIFIER LETTER CHINESE TONE YIN PING
+<Multi_key> <z> <semicolon> <bar> <1> <underscore> <c> : "꜁"  UA701  # MODIFIER LETTER CHINESE TONE YANG PING
+<Multi_key> <z> <semicolon> <bar> <2> <c> : "꜂"  UA702  # MODIFIER LETTER CHINESE TONE YIN SHANG
+<Multi_key> <z> <semicolon> <bar> <2> <underscore> <c> : "꜃"  UA703  # MODIFIER LETTER CHINESE TONE YANG SHANG
+<Multi_key> <z> <semicolon> <bar> <3> <c> : "꜄"  UA704  # MODIFIER LETTER CHINESE TONE YIN QU
+<Multi_key> <z> <semicolon> <bar> <3> <underscore> <c> : "꜅"  UA705  # MODIFIER LETTER CHINESE TONE YANG QU
+<Multi_key> <z> <semicolon> <bar> <4> <c> : "꜆"  UA706  # MODIFIER LETTER CHINESE TONE YIN RU
+<Multi_key> <z> <semicolon> <bar> <4> <underscore> <c> : "꜇"  UA707  # MODIFIER LETTER CHINESE TONE YANG RU
 
 # Numerals
 
@@ -28635,6 +28682,7 @@ include "Logograms"
 <Multi_key> <plus> <2>                : "⨧"  U2A27   # PLUS SIGN WITH SUBSCRIPT TWO
 <Multi_key> <o> <plus>                : "⨢"  U2A22   # PLUS SIGN WITH SMALL CIRCLE ABOVE
 <Multi_key> <period> <plus>           : "∔"  U2214   # DOT PLUS
+<Multi_key> <2> <plus>                : "⧺"  U29FA  # DOUBLE PLUS
 <Multi_key> <3> <plus>                : "⧻"  U29FB  # TRIPLE PLUS
 <Multi_key> <plus> <underscore> <period>      : "⨥"  U2A25   # PLUS SIGN WITH DOT BELOW
 <Multi_key> <asciitilde> <plus> <space>       : "⨤"  U2A24   # PLUS SIGN WITH TILDE ABOVE
@@ -28653,6 +28701,8 @@ include "Logograms"
 <Multi_key> <backslash> <v> <3>       : "؆"  U0606  # ARABIC-INDIC CUBE ROOT
 <Multi_key> <backslash> <v> <4>       : "؇"  U0607  # ARABIC-INDIC FOURTH ROOT
 <Multi_key> <8> <greater>             : "∞"  U221E   # INFINITY (alternatively 88)
+<Multi_key> <8> <parenleft> <8>       : "⧝"  U29DD  # TIE OVER INFINITY
+<Multi_key> <8> <bar> <8>             : "⧞"  U29DE  # INFINITY NEGATED WITH VERTICAL BAR
 <Multi_key> <percent> <percent>       : "‱"  U2031   # PER TEN THOUSAND SIGN
 <Multi_key> <6> <less>                : "∂"  U2202   # PARTIAL DIFFERENTIAL
 <Multi_key> <1> <apostrophe>          : "′"  U2032   # PRIME (not to be confused with '1)
@@ -28731,6 +28781,9 @@ include "Logograms"
 <Multi_key> <plus> <equal>            : "⩲"  U2A72   # PLUS SIGN ABOVE EQUALS SIGN
 <Multi_key> <equal> <plus>            : "⩱"  U2A71   # EQUALS SIGN ABOVE PLUS SIGN
 <Multi_key> <equal> <Multi_key> <8> <8> : "⯹"  U2BF9  # EQUALS SIGN WITH INFINITY BELOW
+<Multi_key> <slash> <slash> <equal>   : "⧣"  U29E3  # EQUALS SIGN AND SLANTED PARALLEL (conflicts with uselsss \)
+<Multi_key> <asciitilde> <slash> <slash> <equal> : "⧤"  U29E4  # EQUALS SIGN AND SLANTED PARALLEL WITH TILDE ABOVE
+<Multi_key> <slash> <slash> <Multi_key> <equal> <underscore> : "⧥"  U29E5  # IDENTICAL TO AND SLANTED PARALLEL (conflicts with uselsss \)
 <Multi_key> <minus> <period> <space>   : "⨪"  U2A2A  # MINUS SIGN WITH DOT BELOW (for ∸ use -⎄.)
 <Multi_key> <minus> <period> <backslash> : "⨫"  U2A2B  # MINUS SIGN WITH FALLING DOTS
 <Multi_key> <minus> <period> <slash>  : "⨬"  U2A2C  # MINUS SIGN WITH RISING DOTS
@@ -28771,6 +28824,7 @@ include "Logograms"
 <Multi_key> <parenleft> <greater> <space> : "⪧"  U2AA7  # GREATER-THAN CLOSED BY CURVE
 <Multi_key> <backslash> <Multi_key> <less> <parenright> : "⪨"  U2AA8  # LESS-THAN CLOSED BY CURVE ABOVE SLANTED EQUAL
 <Multi_key> <Multi_key> <parenleft> <greater> <slash> : "⪩"  U2AA9  # GREATER-THAN CLOSED BY CURVE ABOVE SLANTED EQUAL
+<Multi_key> <slash> <bar> <underscore> : "⧡"  U29E1  # INCREASES AS
 <Multi_key> <T> <space>               : "⊺"  U22BA  # INTERCALATE
 <Multi_key> <T> <greater> <space>     : "⋌"  U22CC  # RIGHT SEMIDIRECT PRODUCT
 <Multi_key> <T> <less> <space>        : "⋋"  U22CB  # LEFT SEMIDIRECT PRODUCT (conflicts with Ť, use vT)
@@ -28778,6 +28832,8 @@ include "Logograms"
 <Multi_key> <L> <period> <less>       : "⟔"  U27D4  # UPPER LEFT CORNER WITH DOT
 <Multi_key> <L> <space>               : "∟"  U221F   # RIGHT ANGLE (alternatively rangle)
 <Multi_key> <L> <parenright>          : "⊾"  U22BE  # RIGHT ANGLE WITH ARC
+<Multi_key> <L> <bracketright>        : "⦜"  U299C  # RIGHT ANGLE VARIANT WITH SQUARE
+<Multi_key> <L> <period> <parenright> : "⦝"  U299D  # MEASURED RIGHT ANGLE WITH DOT
 <Multi_key> <L> <backslash>           : "⊿"  U22BF  # RIGHT TRIANGLE
 <Multi_key> <slash> <underscore> <bar> : "⊿"  U22BF  # RIGHT TRIANGLE
 <Multi_key> <bar> <underscore>        : "⟂"  U27C2  # PERPENDICULAR (for ⊥ use |F)
@@ -28790,11 +28846,13 @@ include "Logograms"
 <Multi_key> <bar> <u> <Return>        : "⫝"  U2ADD  # NONFORKING (not ideal, but |u␣ is taken)
 <Multi_key> <S> <8>                   : "∾"  U223E  # INVERTED LAZY S
 <Multi_key> <H> <plus>                : "⊹"  U22B9  # HERMITIAN CONJUGATE MATRIX
-<Multi_key> <3> <Multi_key> <bar>     : "⫴"  U2AF4  # TRIPLE VERTICAL BAR BINARY RELATION (alternatively 3vb)
+<Multi_key> <S> <asterisk>            : "⧢"  U29E2  # SHUFFLE PRODUCT
 <Multi_key> <minus> <bar> <bar> <bar> : "⫵"  U2AF5  # TRIPLE VERTICAL BAR WITH HORIZONTAL STROKE
 <Multi_key> <3> <minus> <2> <bar>     : "⩨"  U2A68  # TRIPLE HORIZONTAL BAR WITH DOUBLE VERTICAL STROKE
 <Multi_key> <3> <minus> <3> <bar>     : "⩩"  U2A69  # TRIPLE HORIZONTAL BAR WITH TRIPLE VERTICAL STROKE
 <Multi_key> <3> <Multi_key> <colon>   : "⫶"  U2AF6  # TRIPLE COLON OPERATOR
+<Multi_key> <4> <Multi_key> <colon>   : "⦙"  U2999  # DOTTED FENCE
+<Multi_key> <bar> <z>                 : "⦚"  U299A  # VERTICAL ZIGZAG LINE
 
 <Multi_key> <equal> <Multi_key> <period>             : "≐"  U2250   # APPROACHES THE LIMIT
 <Multi_key> <equal> <Multi_key> <colon>              : "≑"  U2251   # GEOMETRICALLY EQUAL TO
@@ -28826,7 +28884,20 @@ include "Logograms"
 <Multi_key> <greater> <Multi_key> <parenright>       : "⦔"  U2994  # RIGHT ARC GREATER-THAN BRACKET
 <Multi_key> <greater> <Multi_key> <parenleft> <parenleft> : "⦕"  U2995  # DOUBLE LEFT ARC GREATER-THAN BRACKET
 <Multi_key> <bar> <Multi_key> <minus>                : "⟊"  U27CA  # VERTICAL BAR WITH HORIZONTAL STROKE
+<Multi_key> <bar> <Multi_key> <equal> <space>        : "⧧"  U29E7  # THERMODYNAMIC
 <Multi_key> <L> <Multi_key> <slash>                  : "⟀"  U27C0  # THREE DIMENSIONAL ANGLE
+<Multi_key> <less> <Multi_key> <parenright> <space>  : "∡"  U2221   # MEASURED ANGLE
+<Multi_key> <less> <Multi_key> <parenright> <less>   : "⦛"  U299B  # MEASURED ANGLE OPENING LEFT (not ideal)
+<Multi_key> <less> <Multi_key> <N> <E>               : "⦨"  U29A8  # MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING UP AND RIGHT
+<Multi_key> <less> <Multi_key> <S> <E>               : "⦪"  U29AA  # MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING DOWN AND RIGHT
+<Multi_key> <less> <Multi_key> <N> <W>               : "⦩"  U29A9  # MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING UP AND LEFT
+<Multi_key> <less> <Multi_key> <S> <W>               : "⦫"  U29AB  # MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING DOWN AND LEFT
+<Multi_key> <less> <Multi_key> <E> <N>               : "⦬"  U29AC  # MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING RIGHT AND UP
+<Multi_key> <less> <Multi_key> <W> <N>               : "⦭"  U29AD  # MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING LEFT AND UP
+<Multi_key> <less> <Multi_key> <E> <S>               : "⦮"  U29AE  # MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING RIGHT AND DOWN
+<Multi_key> <less> <Multi_key> <W> <S>               : "⦯"  U29AF  # MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING LEFT AND DOWN
+<Multi_key> <V> <Multi_key> <parenleft>              : "⦡"  U29A1  # SPHERICAL ANGLE OPENING UP
+<Multi_key> <greater> <Multi_key> <parenleft> <space> : "⦠"  U29A0  # SPHERICAL ANGLE OPENING LEFT
 
 <Multi_key> <slash> <Multi_key> <equal> <underscore> : "≢"  U2262   # NOT IDENTICAL TO
 <Multi_key> <period> <Multi_key> <equal> <underscore> : "⩧"  U2A67  # IDENTICAL WITH DOT ABOVE
@@ -28851,6 +28922,9 @@ include "Logograms"
 <Multi_key> <slash> <Multi_key> <greater> <bar>      : "⋫"  U22EB   # DOES NOT CONTAIN AS NORMAL SUBGROUP
 <Multi_key> <slash> <Multi_key> <Multi_key> <less> <bar> <equal> : "⋬" U22EC   # NOT NORMAL SUBGROUP OF OR EQUAL TO
 <Multi_key> <slash> <Multi_key> <Multi_key> <greater> <bar> <equal> : "⋭" U22ED   # DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL
+<Multi_key> <Multi_key> <greater> <bar> <Multi_key> <less> <bar> : "⧎"  U29CE  # RIGHT TRIANGLE ABOVE LEFT TRIANGLE
+<Multi_key> <Multi_key> <less> <bar> <bar>           : "⧏"  U29CF  # LEFT TRIANGLE BESIDE VERTICAL BAR
+<Multi_key> <bar> <Multi_key> <greater> <bar>        : "⧐"  U29D0  # VERTICAL BAR BESIDE RIGHT TRIANGLE
 
 <Multi_key> <Multi_key> <asciitilde> <asciitilde> <minus> : "≊" U224A   # ALMOST EQUAL OR EQUAL TO
 <Multi_key> <Multi_key> <asciitilde> <minus> <asciitilde> : "⩬"  U2A6C  # SIMILAR MINUS SIMILAR
@@ -28939,6 +29013,8 @@ include "Logograms"
 <Multi_key> <parenleft> <backslash> <parenright>     : "⦸"  U29B8   # CIRCLED REVERSE SOLIDUS
 <Multi_key> <parenleft> <ampersand> <F> <parenright> : "⦹"  U29B9  # CIRCLED PERPENDICULAR
 <Multi_key> <parenleft> <period> <slash> <period> <parenright> : "⦼"  U29BC  # CIRCLED ANTICLOCKWISE-ROTATED DIVISION SIGN
+<Multi_key> <parenleft> <minus> <bar> <parenright>   : "⦺"  U29BA  # CIRCLE DIVIDED BY HORIZONTAL BAR AND TOP HALF DIVIDED BY VERTICAL BAR (conflicts with useless {)
+<Multi_key> <parenleft> <asciicircum> <bar> <parenright> : "⦽"  U29BD  # UP ARROW THROUGH CIRCLE
 <Multi_key> <parenleft> <less> <parenright>          : "⧀"  U29C0   # CIRCLED LESS-THAN
 <Multi_key> <parenleft> <greater> <parenright>       : "⧁"  U29C1   # CIRCLED GREATER-THAN
 <Multi_key> <parenleft> <asterisk> <asciicircum> <parenright> : "⨶"  U2A36  # CIRCLED MULTIPLICATION SIGN WITH CIRCUMFLEX ACCENT
@@ -28952,6 +29028,8 @@ include "Logograms"
 <Multi_key> <space> <plus> <parenright>              : "⨮"  U2A2E  # PLUS SIGN IN RIGHT HALF CIRCLE
 <Multi_key> <parenleft> <x> <space>                  : "⨴"  U2A34  # MULTIPLICATION SIGN IN LEFT HALF CIRCLE
 <Multi_key> <space> <x> <parenright>                 : "⨵"  U2A35  # MULTIPLICATION SIGN IN RIGHT HALF CIRCLE
+<Multi_key> <O> <o>                                  : "⧂"  U29C2  # CIRCLE WITH SMALL CIRCLE TO THE RIGHT
+<Multi_key> <O> <equal>                              : "⧃"  U29C3  # CIRCLE WITH TWO HORIZONTAL STROKES TO THE RIGHT
 
 <Multi_key> <asterisk> <Multi_key> <c> <a> <p>       : "⩀"  U2A40  # INTERSECTION WITH DOT
 <Multi_key> <underscore> <Multi_key> <c> <a> <p>     : "⩃"  U2A43  # INTERSECTION WITH OVERBAR
@@ -29048,8 +29126,16 @@ include "Logograms"
 <Multi_key> <3> <v> <b>                 : "⫴"  U2AF4  # TRIPLE VERTICAL BAR BINARY RELATION
 <Multi_key> <3> <V> <B>                 : "⫼"  U2AFC  # LARGE TRIPLE VERTICAL BAR OPERATOR
 <Multi_key> <a> <n> <g> <l> <e>         : "∠"  U2220   # ANGLE
+<Multi_key> <at> <a> <n> <g> <l> <e>    : "⦢"  U29A2  # TURNED ANGLE
+<Multi_key> <less> <a> <n> <g> <l> <e>  : "⦣"  U29A3  # REVERSED ANGLE
+<Multi_key> <underscore> <underscore> <a> <n> <g> <l> <e> : "⦤"  U29A4  # ANGLE WITH UNDERBAR (conflicts with ⁻, use -^)
+<Multi_key> <underscore> <underscore> <less> <a> <n> <g> <l> <e> : "⦥"  U29A5  # REVERSED ANGLE WITH UNDERBAR (conflicts with ⁻, use -^)
+<Multi_key> <a> <n> <g> <l> <a>         : "⦟"  U299F  # ACUTE ANGLE
+<Multi_key> <a> <n> <g> <l> <o> <asciicircum> : "⦦"  U29A6  # OBLIQUE ANGLE OPENING UP
+<Multi_key> <a> <n> <g> <l> <o> <v>     : "⦧"  U29A7  # OBLIQUE ANGLE OPENING DOWN
 <Multi_key> <a> <s> <space>             : "∶"  U2236   # RATIO (AS)
-<Multi_key> <b> <e> <n> <z> <e> <n>     : "⌬"  U232C  # BENZENE RING (conflicts with ĕ, use ue)
+<Multi_key> <b> <e> <n> <z>             : "⌬"  U232C  # BENZENE RING (conflicts with ĕ, use ue)
+<Multi_key> <O> <b> <e> <n> <z>         : "⏣"  U23E3  # BENZENE RING WITH CIRCLE
 <Multi_key> <b> <e> <t> <w> <e> <e> <n> : "≬"  U226C   # BETWEEN (conflicts with ĕ, use ue)
 <Multi_key> <B> <O> <T>                 : "⟘"  U27D8  # LARGE UP TACK
 <Multi_key> <b> <o> <w> <t> <i> <e>     : "⋈"  U22C8  # BOWTIE (JOIN) (conflicts with ŏ, use uo) (alternatively |X|)
@@ -29082,12 +29168,14 @@ include "Logograms"
 <Multi_key> <d> <i> <j> <k>             : "⫾"  U2AFE  # WHITE VERTICAL BAR (conflicts with ⌀, use diameter) (DIJKSTRA'S CHOICE)
 <Multi_key> <D> <I> <J> <K>             : "⫿"  U2AFF  # N-ARY WHITE VERTICAL BAR (DIJKSTRA'S CHOICE)
 <Multi_key> <d> <o> <w> <n> <i> <n>     : "⫙"  U2AD9  # ELEMENT OF OPENING DOWNWARDS
+<Multi_key> <d> <s> <o> <l>             : "⧶"  U29F6  # SOLIDUS WITH OVERBAR
 <Multi_key> <e> <q> <u> <i> <v>         : "≍"  U224D  # EQUIVALENT TO (use =_ for ≡)
 <Multi_key> <e> <x> <i> <s> <t> <s>     : "∃"  U2203   # THERE EXISTS
 <Multi_key> <f> <b> <o> <w>             : "⧓"  U29D3  # BLACK BOWTIE
 <Multi_key> <f> <h> <o> <u> <r>         : "⧗"  U29D7  # BLACK HOURGLASS
 <Multi_key> <f> <o> <r> <a> <l> <l>     : "∀"  U2200   # FOR ALL
 <Multi_key> <g> <g> <g>                 : "⫸"  U2AF8  # TRIPLE NESTED GREATER-THAN
+<Multi_key> <g> <l> <e> <i> <c> <h>     : "⧦"  U29E6  # GLEICH STARK
 <Multi_key> <G> <t>                     : "⪢"  U2AA2  # DOUBLE NESTED GREATER-THAN
 <Multi_key> <h> <o> <u> <r>             : "⧖"  U29D6  # WHITE HOURGLASS (use done for ⌛ and wait for ⏳)
 <Multi_key> <i> <f> <f>                 : "⇔"  U21D4   # LEFT RIGHT DOUBLE ARROW
@@ -29115,7 +29203,6 @@ include "Logograms"
 <Multi_key> <underscore> <L> <t>        : "⪣"  U2AA3  # DOUBLE NESTED LESS-THAN WITH UNDERBAR
 <Multi_key> <l> <t> <i> <m> <e> <s>     : "⋉"  U22C9  # LEFT NORMAL FACTOR SEMIDIRECT PRODUCT (conflicts with useless <) (alternatively |X␣)
 <Multi_key> <l> <t> <r>                 : "⨞"  U2A1E  # LARGE LEFT TRIANGLE OPERATOR (conflicts with useless <)
-<Multi_key> <m> <e> <a> <n> <g> <l> <e> : "∡"  U2221   # MEASURED ANGLE (not ideal)
 <Multi_key> <n> <a> <n> <d>             : "⊼"  U22BC   # NAND
 <Multi_key> <n> <e> <q> <u> <i> <v>     : "≭"  U226D   # NOT EQUIVALENT TO (use /⎄=_ for ≢)
 <Multi_key> <n> <e> <x> <i> <s> <t> <s> : "∄"  U2204   # THERE DOES NOT EXIST
@@ -29155,7 +29242,10 @@ include "Logograms"
 <Multi_key> <r> <a> <n> <g> <l> <e>     : "∟"  U221F   # RIGHT ANGLE
 <Multi_key> <r> <f> <b> <o> <w>         : "⧒"  U29D2   # BOWTIE WITH RIGHT HALF BLACK
 <Multi_key> <r> <f> <t> <i> <m> <e> <s> : "⧕"  U29D5   # TIMES WITH RIGHT HALF BLACK
+<Multi_key> <r> <s> <o> <l>             : "⧵"  U29F5  # REVERSE SOLIDUS OPERATOR
+<Multi_key> <r> <s> <o> <minus>         : "⧷"  U29F7  # REVERSE SOLIDUS WITH HORIZONTAL STROKE
 <Multi_key> <r> <t> <i> <m> <e> <s>     : "⋊"  U22CA   # RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT (alternatively ␣X|)
+<Multi_key> <s> <a> <n> <g> <l> <e>     : "⦞"  U299E  # ANGLE WITH S INSIDE
 <Multi_key> <s> <i> <n> <e>             : "∿"  U223F   # SINE WAVE
 <Multi_key> <s> <i> <n> <t>             : "⨋"  U2A0B   # SUMMATION WITH INTEGRAL
 <Multi_key> <s> <m> <a> <l> <l> <i> <n> : "∊"  U220A   # SMALL ELEMENT OF (conflicts with ℠, use SM)
@@ -29221,6 +29311,8 @@ include "Logograms"
 <Multi_key> <U> <P> <L> <U> <S>         : "⨄"  U2A04  # N-ARY UNION OPERATOR WITH PLUS
 <Multi_key> <w> <r> <e> <a> <t> <h>     : "≀"   U2240   # WREATH PRODUCT
 <Multi_key> <x> <o> <r>                 : "⊻"  U22BB   # XOR (conflicts with ¤, use ox)
+<Multi_key> <x> <r> <s> <o> <l>         : "⧹"  U29F9  # BIG REVERSE SOLIDUS
+<Multi_key> <x> <s> <o> <l>             : "⧸"  U29F8  # BIG SOLIDUS
 
 <Multi_key> <Multi_key> <c> <a> <p> <Multi_key> <c> <u> <p> : "⩇"  U2A47  # INTERSECTION ABOVE UNION
 <Multi_key> <Multi_key> <c> <a> <p> <minus> <Multi_key> <c> <u> <p> : "⩉"  U2A49  # INTERSECTION ABOVE BAR ABOVE UNION
@@ -31192,6 +31284,7 @@ include "Logograms"
 <Multi_key> <X> <P>                 : "☧"  U2627  # CHI RHO
 <Multi_key> <a> <n> <k> <h>         : "☥"  U2625  # ANKH
 <Multi_key> <c> <e> <l> <t> <i> <c> : "🕈"  U1F548  # CELTIC CROSS (conflicts with ě, use ve)
+<Multi_key> <i> <c> <y>             : "⛐"  U26D0  # CAR SLIDING (ICY ROAD)
 <Multi_key> <r> <e> <c> <y> <0>     : "♲"  U2672  # UNIVERSAL RECYCLING SYMBOL
 <Multi_key> <r> <e> <c> <y> <1>     : "♻"  U267B  # BLACK UNIVERSAL RECYCLING SYMBOL
 <Multi_key> <r> <e> <c> <y> <g>     : "♺"  U267A  # RECYCLING SYMBOL FOR GENERIC MATERIALS
@@ -31205,6 +31298,8 @@ include "Logograms"
 <Multi_key> <r> <e> <c> <y> <p> <a> : "♼"  U267C  # RECYCLED PAPER SYMBOL
 <Multi_key> <r> <e> <c> <y> <p> <p> : "♽"  U267D  # PARTIALLY-RECYCLED PAPER SYMBOL
 <Multi_key> <s> <t> <e> <r> <e> <o> : "📾"  U1F4FE  # PORTABLE STEREO
+<Multi_key> <s> <t> <o> <c> <k>     : "🗠"  U1F5E0  # STOCK CHART
+<Multi_key> <s> <y> <n> <t> <h>     : "🎘"  U1F398  # MUSICAL KEYBOARD WITH JACKS (SYNTHESIZER)
 <Multi_key> <t> <e> <0>             : "☏"  U260F  # WHITE TELEPHONE
 <Multi_key> <t> <e> <1>             : "☎"  U260E  # BLACK TELEPHONE
 
@@ -31218,6 +31313,11 @@ include "Logograms"
 <Multi_key> <a> <b> <less>     : "🗮"  U1F5EE  # LEFT ANGER BUBBLE
 <Multi_key> <a> <b> <0>        : "🗰"  U1F5F0  # MOOD BUBBLE
 <Multi_key> <a> <b> <z>        : "🗱"  U1F5F1  # LIGHTNING MOOD BUBBLE
+
+<Multi_key> <M> <S>            : "🚹︎"  U1F6B9 UFE0E  # MENS SYMBOL VARIATION SELECTOR-15 (for 🚹 use MR)
+<Multi_key> <W> <S>            : "🚺︎"  U1F6BA UFE0E  # WOMENS SYMBOL VARIATION SELECTOR-15 (for 🚺 use WR)
+<Multi_key> <B> <S>            : "🛉"  U1F6C9  # BOYS SYMBOL
+<Multi_key> <G> <S>            : "🛊"  U1F6CA  # GIRLS SYMBOL
 
 <Multi_key> <asterisk> <n> <w> <l> : "🙐"  U1F650  # NORTH WEST POINTING LEAF
 <Multi_key> <asterisk> <s> <w> <l> : "🙑"  U1F651  # SOUTH WEST POINTING LEAF
@@ -31335,6 +31435,8 @@ include "Logograms"
 <Multi_key> <at> <underscore> <parenleft> <u> <parenright> : "𜲪𜲫"  U1CCAA U1CCAB  # SMILING FACE (BOTTOM)
 <Multi_key> <at> <underscore> <parenleft> <minus> <parenright> : "𜲬𜲭"  U1CCAC U1CCAD  # NEUTRAL FACE (BOTTOM)
 <Multi_key> <at> <underscore> <parenleft> <n> <parenright> : "𜲰𜲱"  U1CCB0 U1CCB1  # FROWNING FACE (BOTTOM)
+<Multi_key> <at> <asciicircum> <bracketleft> <bracketright> : "𜸖𜸘"  U1CE16 U1CE18  # SQUARE (TOP)
+<Multi_key> <at> <underscore> <bracketleft> <bracketright> : "𜸗𜸙"  U1CE17 U1CE19  # SQUARE (BOTTOM)
 
 <Multi_key> <at> <asciicircum> <b> <i> <s> <h> <o> <p> : "𜳆𜳇"  U1CCC6 U1CCC7  # CHESS BISHOP (TOP)
 <Multi_key> <at> <underscore> <b> <i> <s> <h> <o> <p>  : "𜳈𜳉"  U1CCC8 U1CCC9  # CHESS BISHOP (BOTTOM)
@@ -31391,9 +31493,9 @@ include "Logograms"
 <Multi_key> <at> <asciicircum> <parenright>            : "⎞"  U239E  # RIGHT PARENTHESIS UPPER HOOK
 <Multi_key> <at> <bar> <parenright>                    : "⎟"  U239F  # RIGHT PARENTHESIS EXTENSION
 <Multi_key> <at> <underscore> <parenright>             : "⎠"  U23A0  # RIGHT PARENTHESIS LOWER HOOK
-<Multi_key> <at> <asciicircum> <bracketleft>           : "⎡"  U23A1  # LEFT SQUARE BRACKET UPPER CORNER
+<Multi_key> <at> <asciicircum> <bracketleft> <space>   : "⎡"  U23A1  # LEFT SQUARE BRACKET UPPER CORNER
 <Multi_key> <at> <bar> <bracketleft>                   : "⎢"  U23A2  # LEFT SQUARE BRACKET EXTENSION
-<Multi_key> <at> <underscore> <bracketleft>            : "⎣"  U23A3  # LEFT SQUARE BRACKET LOWER CORNER
+<Multi_key> <at> <underscore> <bracketleft> <space>    : "⎣"  U23A3  # LEFT SQUARE BRACKET LOWER CORNER
 <Multi_key> <at> <asciicircum> <bracketright>          : "⎤"  U23A4  # RIGHT SQUARE BRACKET UPPER CORNER
 <Multi_key> <at> <bar> <bracketright>                  : "⎥"  U23A5  # RIGHT SQUARE BRACKET EXTENSION
 <Multi_key> <at> <underscore> <bracketright>           : "⎦"  U23A6  # RIGHT SQUARE BRACKET LOWER CORNER
@@ -31832,13 +31934,15 @@ include "Logograms"
 <Multi_key> <bracketleft> <bracketright> <plus>        : "⊞" U229E    # SQUARED PLUS (conflicts)
 <Multi_key> <bracketleft> <bracketright> <minus>       : "⊟" U229F    # SQUARED MINUS (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <period>      : "⊡" U22A1    # SQUARED DOT OPERATOR (conflicts) (not ideal but ⬚ is taken)
-<Multi_key> <bracketleft> <bracketright> <X>           : "⊠" U22A0    # SQUARED TIMES (conflicts)
+<Multi_key> <bracketleft> <bracketright> <x>           : "⊠" U22A0    # SQUARED TIMES (conflicts)
 <Multi_key> <bracketleft> <bracketright> <o>           : "⧇" U29C7    # SQUARED SMALL CIRCLE (conflicts)
+<Multi_key> <bracketleft> <bracketright> <X>           : "⛝" U26DD   # SQUARED SALTIRE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <1>       : "▣" U25A3    # WHITE SQUARE CONTAINING BLACK SMALL SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <2> <0>       : "⧈" U29C8    # SQUARED SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <equal> <0>   : "⧮"  U29EE  # ERROR-BARRED WHITE SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <equal> <1>   : "⧯"  U29EF  # ERROR-BARRED BLACK SQUARE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <c>           : "▢" U25A2    # WHITE SQUARE WITH ROUNDED CORNERS (conflicts)
+<Multi_key> <bracketleft> <bracketright> <C>           : "⧠"  U29E0  # SQUARE WITH CONTOURED OUTLINE (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <minus>      : "▤" U25A4   # SQUARE WITH HORIZONTAL FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <bar>        : "▥" U25A5   # SQUARE WITH VERTICAL FILL (conflicts)
 <Multi_key> <bracketleft> <bracketright> <Multi_key> <numbersign> : "▦" U25A6   # SQUARE WITH ORTHOGONAL CROSSHATCH FILL (conflicts)
@@ -31923,6 +32027,8 @@ include "Logograms"
 <Multi_key> <parenleft> <parenright> <Multi_key> <bar>   : "◍" U25CD    # CIRCLE WITH VERTICAL FILL
 <Multi_key> <parenleft> <parenright> <Multi_key> <minus> : "⦵"  U29B5  # CIRCLE WITH HORIZONTAL BAR
 <Multi_key> <parenleft> <parenright> <Multi_key> <X>     : "⦻"  U29BB  # CIRCLE WITH SUPERIMPOSED X
+<Multi_key> <parenleft> <parenright> <Multi_key> <v> <0> : "⧬"  U29EC  # WHITE CIRCLE WITH DOWN ARROW
+<Multi_key> <parenleft> <parenright> <Multi_key> <v> <1> : "⧭"  U29ED  # BLACK CIRCLE WITH DOWN ARROW
 <Multi_key> <parenleft> <parenright> <Return>      : "⃝" U20DD   # COMBINING ENCLOSING CIRCLE
 <Multi_key> <parenleft> <parenright> <backslash> <Return> : "⃠" U20E0   # COMBINING ENCLOSING CIRCLE BACKSLASH
 
@@ -31977,6 +32083,7 @@ include "Logograms"
 <Multi_key> <Tab> <slash> <backslash> <s> : "⧌"  U29CC  # S IN TRIANGLE
 <Multi_key> <Tab> <slash> <backslash> <period> : "⧊" U29CA   # TRIANGLE WITH DOT ABOVE
 <Multi_key> <Tab> <slash> <backslash> <underscore> : "⧋"  U29CB  # TRIANGLE WITH UNDERBAR
+<Multi_key> <Tab> <slash> <backslash> <Multi_key> <underscore> : "⧍"  U29CD  # TRIANGLE WITH SERIFS AT BOTTOM
 <Multi_key> <Tab> <slash> <backslash> <Return> : "⃤" U20E4   # COMBINING ENCLOSING UPWARD POINTING TRIANGLE
 
 <Multi_key> <Tab> <bar> <greater> <0>   : "▷" U25B7    # WHITE RIGHT-POINTING TRIANGLE
@@ -32025,6 +32132,9 @@ include "Logograms"
 <Multi_key> <Tab> <less> <greater> <underscore>  : "⍚"  U235A  # APL FUNCTIONAL SYMBOL DIAMOND UNDERBAR
 <Multi_key> <Tab> <less> <greater> <equal> <0>   : "⧰"  U29F0  # ERROR-BARRED WHITE DIAMOND
 <Multi_key> <Tab> <less> <greater> <equal> <1>   : "⧱"  U29F1  # ERROR-BARRED BLACK DIAMOND
+<Multi_key> <Tab> <less> <greater> <Multi_key> <v> <1> : "⧪"  U29EA  # BLACK DIAMOND WITH DOWN ARROW
+<Multi_key> <Tab> <less> <greater> <2> <asciicircum> <v> <1> : "⛖"  U26D6  # BLACK TWO-WAY LEFT WAY TRAFFIC
+<Multi_key> <Tab> <less> <greater> <2> <asciicircum> <v> <0> : "⛗"  U26D7  # WHITE TWO-WAY LEFT WAY TRAFFIC
 <Multi_key> <Tab> <less> <greater> <exclam>      : "𜲍"  U1CC8D  # INVERSE BLACK DIAMOND
 <Multi_key> <Tab> <less> <greater> <Return>      : "⃟" U20DF   # COMBINING ENCLOSING DIAMOND
 
@@ -32462,6 +32572,27 @@ include "Logograms"
 <Multi_key> <Tab> <minus> <greater> <L>                   : "🠊"  U1F80A  # RIGHTWARDS ARROW WITH LARGE TRIANGLE ARROWHEAD
 <Multi_key> <Tab> <bar> <v> <L>                           : "🠋"  U1F80B  # DOWNWARDS ARROW WITH LARGE TRIANGLE ARROWHEAD
 
+<Multi_key> <Tab> <Multi_key> <less> <bar> <minus> <1>    : "🠠"  U1F820  # LEFTWARDS TRIANGLE-HEADED ARROW WITH NARROW SHAFT
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <bar> <1> : "🠡"  U1F821  # UPWARDS TRIANGLE-HEADED ARROW WITH NARROW SHAFT
+<Multi_key> <Tab> <minus> <Multi_key> <bar> <greater> <1> : "🠢"  U1F822  # RIGHTWARDS TRIANGLE-HEADED ARROW WITH NARROW SHAFT
+<Multi_key> <Tab> <bar> <Multi_key> <minus> <v> <1>       : "🠣"  U1F823  # DOWNWARDS TRIANGLE-HEADED ARROW WITH NARROW SHAFT
+<Multi_key> <Tab> <Multi_key> <less> <bar> <minus> <2>    : "🠤"  U1F824  # LEFTWARDS TRIANGLE-HEADED ARROW WITH MEDIUM SHAFT
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <bar> <2> : "🠥"  U1F825  # UPWARDS TRIANGLE-HEADED ARROW WITH MEDIUM SHAFT
+<Multi_key> <Tab> <minus> <Multi_key> <bar> <greater> <2> : "🠦"  U1F826  # RIGHTWARDS TRIANGLE-HEADED ARROW WITH MEDIUM SHAFT
+<Multi_key> <Tab> <bar> <Multi_key> <minus> <v> <2>       : "🠧"  U1F827  # DOWNWARDS TRIANGLE-HEADED ARROW WITH MEDIUM SHAFT
+<Multi_key> <Tab> <Multi_key> <less> <bar> <minus> <3>    : "🠨"  U1F828  # LEFTWARDS TRIANGLE-HEADED ARROW WITH BOLD SHAFT
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <bar> <3> : "🠩"  U1F829  # UPWARDS TRIANGLE-HEADED ARROW WITH BOLD SHAFT
+<Multi_key> <Tab> <minus> <Multi_key> <bar> <greater> <3> : "🠪"  U1F82A  # RIGHTWARDS TRIANGLE-HEADED ARROW WITH BOLD SHAFT
+<Multi_key> <Tab> <bar> <Multi_key> <minus> <v> <3>       : "🠫"  U1F82B  # DOWNWARDS TRIANGLE-HEADED ARROW WITH BOLD SHAFT
+<Multi_key> <Tab> <Multi_key> <less> <bar> <minus> <4>    : "🠬"  U1F82C  # LEFTWARDS TRIANGLE-HEADED ARROW WITH HEAVY SHAFT
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <bar> <4> : "🠭"  U1F82D  # UPWARDS TRIANGLE-HEADED ARROW WITH HEAVY SHAFT
+<Multi_key> <Tab> <minus> <Multi_key> <bar> <greater> <4> : "🠮"  U1F82E  # RIGHTWARDS TRIANGLE-HEADED ARROW WITH HEAVY SHAFT
+<Multi_key> <Tab> <bar> <Multi_key> <minus> <v> <4>       : "🠯"  U1F82F  # DOWNWARDS TRIANGLE-HEADED ARROW WITH HEAVY SHAFT
+<Multi_key> <Tab> <Multi_key> <less> <bar> <minus> <5>    : "🠰"  U1F830  # LEFTWARDS TRIANGLE-HEADED ARROW WITH VERY HEAVY SHAFT
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <bar> <5> : "🠱"  U1F831  # UPWARDS TRIANGLE-HEADED ARROW WITH VERY HEAVY SHAFT
+<Multi_key> <Tab> <minus> <Multi_key> <bar> <greater> <5> : "🠲"  U1F832  # RIGHTWARDS TRIANGLE-HEADED ARROW WITH VERY HEAVY SHAFT
+<Multi_key> <Tab> <bar> <Multi_key> <minus> <v> <5>       : "🠳"  U1F833  # DOWNWARDS TRIANGLE-HEADED ARROW WITH VERY HEAVY SHAFT
+
 <Multi_key> <Tab> <less> <asterisk> <bar>                 : "🠴"  U1F834  # LEFTWARDS FINGER-POST ARROW
 <Multi_key> <Tab> <asciicircum> <asterisk> <minus>        : "🠵"  U1F835  # UPWARDS FINGER-POST ARROW
 <Multi_key> <Tab> <bar> <asterisk> <greater>              : "🠶"  U1F836  # RIGHTWARDS FINGER-POST ARROW
@@ -32597,10 +32728,39 @@ include "Logograms"
 <Multi_key> <Tab> <less> <Multi_key> <minus> <less> <asciitilde> <minus> : "⭋"  U2B4B  # LEFTWARDS ARROW ABOVE REVERSE TILDE OPERATOR
 <Multi_key> <Tab> <minus> <Multi_key> <minus> <less> <asciitilde> <greater> : "⭌"  U2B4C  # RIGHTWARDS ARROW ABOVE REVERSE TILDE OPERATOR
 
+<Multi_key> <Tab> <Multi_key> <less> <bar> <minus> <minus> : "⭠"  U2B60  # LEFTWARDS TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <bar> <bar> : "⭡"  U2B61  # UPWARDS TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <minus> <minus> <Multi_key> <bar> <greater> : "⭢"  U2B62  # RIGHTWARDS TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <bar> <bar> <Multi_key> <minus> <v> : "⭣"  U2B63  # DOWNWARDS TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <Multi_key> <less> <bar> <minus> <Multi_key> <bar> <greater> : "⭤"  U2B64  # LEFT RIGHT TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <bar> <Multi_key> <minus> <v> : "⭥"  U2B65  # UP DOWN TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <Multi_key> <less> <bar> <backslash> <backslash> : "⭦"  U2B66  # NORTH WEST TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <backslash> <backslash> : "⭦"  U2B66  # NORTH WEST TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <slash> <slash> <Multi_key> <bar> <greater> : "⭧"  U2B67  # NORTH EAST TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <slash> <slash> : "⭧"  U2B67  # NORTH EAST TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <backslash> <backslash> <Multi_key> <bar> <greater> : "⭨"  U2B68  # SOUTH EAST TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <backslash> <backslash> <Multi_key> <minus> <v> : "⭨"  U2B68  # SOUTH EAST TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <Multi_key> <less> <bar> <slash> <slash> : "⭩"  U2B69  # SOUTH WEST TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <slash> <slash> <Multi_key> <minus> <v> : "⭩"  U2B69  # SOUTH WEST TRIANGLE-HEADED ARROW
+<Multi_key> <Tab> <Multi_key> <less> <bar> <period> <period> : "⭪"  U2B6A  # LEFTWARDS TRIANGLE-HEADED DASHED ARROW
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <period> <period> : "⭫"  U2B6B  # UPWARDS TRIANGLE-HEADED DASHED ARROW
+<Multi_key> <Tab> <period> <period> <Multi_key> <bar> <greater> : "⭬"  U2B6C  # RIGHTWARDS TRIANGLE-HEADED DASHED ARROW
+<Multi_key> <Tab> <period> <period> <Multi_key> <minus> <v> : "⭭"  U2B6D  # DOWNWARDS TRIANGLE-HEADED DASHED ARROW
+<Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <parenleft> <parenright> : "⭮"  U2B6E  # CLOCKWISE TRIANGLE-HEADED OPEN CIRCLE ARROW
+<Multi_key> <Tab> <Multi_key> <parenleft> <parenright> <Multi_key> <asciicircum> <minus> : "⭯"  U2B6F  # ANTICLOCKWISE TRIANGLE-HEADED OPEN CIRCLE ARROW
+<Multi_key> <Tab> <bar> <Multi_key> <less> <bar> <minus> : "⭰"  U2B70  # LEFTWARDS TRIANGLE-HEADED ARROW TO BAR
+<Multi_key> <Tab> <minus> <Multi_key> <asciicircum> <minus> <bar> : "⭱"  U2B71  # UPWARDS TRIANGLE-HEADED ARROW TO BAR
+<Multi_key> <Tab> <minus> <Multi_key> <bar> <greater> <bar> : "⭲"  U2B72  # RIGHTWARDS TRIANGLE-HEADED ARROW TO BAR
+<Multi_key> <Tab> <bar> <Multi_key> <minus> <v> <minus> : "⭳"  U2B73  # DOWNWARDS TRIANGLE-HEADED ARROW TO BAR
+<Multi_key> <Tab> <minus> <Multi_key> <asciicircum> <minus> <backslash> : "⭶"  U2B76  # NORTH WEST TRIANGLE-HEADED ARROW TO BAR
+<Multi_key> <Tab> <minus> <Multi_key> <asciicircum> <minus> <slash> : "⭷"  U2B77  # NORTH EAST TRIANGLE-HEADED ARROW TO BAR
+<Multi_key> <Tab> <backslash> <Multi_key> <minus> <v> <minus> : "⭸"  U2B78  # SOUTH EAST TRIANGLE-HEADED ARROW TO BAR
+<Multi_key> <Tab> <slash> <Multi_key> <minus> <v> <minus> : "⭹"  U2B79  # SOUTH WEST TRIANGLE-HEADED ARROW TO BAR
 <Multi_key> <Tab> <Multi_key> <less> <bar> <Multi_key> <bar> <bar> <minus> : "⭺"  U2B7A  # LEFTWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE
 <Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <Multi_key> <minus> <minus> <bar> : "⭻"  U2B7B  # UPWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE
 <Multi_key> <Tab> <minus> <Multi_key> <bar> <bar> <Multi_key> <bar> <greater> : "⭼"  U2B7C  # RIGHTWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE
 <Multi_key> <Tab> <bar> <Multi_key> <minus> <minus> <Multi_key> <minus> <v> : "⭽"  U2B7D  # DOWNWARDS TRIANGLE-HEADED ARROW WITH DOUBLE HORIZONTAL STROKE
+
 <Multi_key> <Tab> <2> <Multi_key> <bar> <less> <Multi_key> <greater> <bar> : "⭾"  U2B7E  # HORIZONTAL TAB KEY
 <Multi_key> <Tab> <2> <Multi_key> <v> <minus> <Multi_key> <minus> <asciicircum> : "⭿"  U2B7F  # VERTICAL TAB KEY
 <Multi_key> <Tab> <2> <Multi_key> <less> <bar> <Multi_key> <bar> <greater> : "⮀"  U2B80  # LEFTWARDS TRIANGLE-HEADED ARROW OVER RIGHTWARDS TRIANGLE-HEADED ARROW
@@ -32625,12 +32785,30 @@ include "Logograms"
 <Multi_key> <Tab> <space> <Multi_key> <greater> <greater> <space> : "⮞"  U2B9E  # BLACK RIGHTWARDS EQUILATERAL ARROWHEAD
 <Multi_key> <Tab> <space> <Multi_key> <v> <v> <space> : "⮟"  U2B9F  # BLACK DOWNWARDS EQUILATERAL ARROWHEAD
 
+<Multi_key> <Tab> <v> <minus> <Multi_key> <less> <bar> : "⮠"  U2BA0  # DOWNWARDS TRIANGLE-HEADED ARROW WITH LONG TIP LEFTWARDS
+<Multi_key> <Tab> <v> <minus> <Multi_key> <bar> <greater> : "⮡"  U2BA1  # DOWNWARDS TRIANGLE-HEADED ARROW WITH LONG TIP RIGHTWARDS
+<Multi_key> <Tab> <asciicircum> <minus> <Multi_key> <less> <bar> : "⮢"  U2BA2  # UPWARDS TRIANGLE-HEADED ARROW WITH LONG TIP LEFTWARDS
+<Multi_key> <Tab> <asciicircum> <minus> <Multi_key> <bar> <greater> : "⮣"  U2BA3  # UPWARDS TRIANGLE-HEADED ARROW WITH LONG TIP RIGHTWARDS
+<Multi_key> <Tab> <less> <bar> <Multi_key> <asciicircum> <minus> : "⮤"  U2BA4  # LEFTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP UPWARDS
+<Multi_key> <Tab> <greater> <bar> <Multi_key> <asciicircum> <minus> : "⮥"  U2BA5  # RIGHTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP UPWARDS
+<Multi_key> <Tab> <less> <bar> <Multi_key> <minus> <v> : "⮦"  U2BA6  # LEFTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP DOWNWARDS
+<Multi_key> <Tab> <greater> <bar> <Multi_key> <minus> <v> : "⮧"  U2BA7  # RIGHTWARDS TRIANGLE-HEADED ARROW WITH LONG TIP DOWNWARDS
+
+<Multi_key> <Tab> <v> <R> <less> : "⮰"  U2BB0  # RIBBON ARROW DOWN LEFT
+<Multi_key> <Tab> <v> <R> <greater> : "⮱"  U2BB1  # RIBBON ARROW DOWN RIGHT
+<Multi_key> <Tab> <asciicircum> <R> <less> : "⮲"  U2BB2  # RIBBON ARROW UP LEFT
+<Multi_key> <Tab> <asciicircum> <R> <greater> : "⮳"  U2BB3  # RIBBON ARROW UP RIGHT
+<Multi_key> <Tab> <less> <R> <asciicircum> : "⮴"  U2BB4  # RIBBON ARROW LEFT UP
+<Multi_key> <Tab> <greater> <R> <asciicircum> : "⮵"  U2BB5  # RIBBON ARROW RIGHT UP
+<Multi_key> <Tab> <less> <R> <v> : "⮶"  U2BB6  # RIBBON ARROW LEFT DOWN
+<Multi_key> <Tab> <greater> <R> <v> : "⮷"  U2BB7  # RIBBON ARROW RIGHT DOWN
+
 <Multi_key> <Tab> <Multi_key> <less> <bar> <Multi_key> <less> <bar> <minus> : "⯬"  U2BEC  # LEFTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
 <Multi_key> <Tab> <Multi_key> <asciicircum> <minus> <Multi_key> <asciicircum> <minus> <bar> : "⯭"  U2BED  # UPWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
 <Multi_key> <Tab> <minus> <Multi_key> <bar> <greater> <Multi_key> <bar> <greater> : "⯮"  U2BEE  # RIGHTWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
 <Multi_key> <Tab> <bar> <Multi_key> <minus> <v> <Multi_key> <minus> <v> : "⯯"  U2BEF  # DOWNWARDS TWO-HEADED ARROW WITH TRIANGLE ARROWHEADS
 
-# Mathematical operators that best fit here
+# Mathematical operators and other symbols that best fit here
 
 <Multi_key> <Tab> <o> <minus> <asterisk> : "⊶"  U22B6  # ORIGINAL OF
 <Multi_key> <Tab> <asterisk> <minus> <o> : "⊷"  U22B7  # IMAGE OF
@@ -32639,6 +32817,10 @@ include "Logograms"
 <Multi_key> <Tab> <o> <minus> <o>        : "⧟"  U29DF  # DOUBLE-ENDED MULTIMAP
 <Multi_key> <Tab> <o> <bar> <bar>        : "⫯"  U2AEF  # VERTICAL LINE WITH CIRCLE ABOVE
 <Multi_key> <Tab> <bar> <bar> <o>        : "⫰"  U2AF0  # VERTICAL LINE WITH CIRCLE BELOW
+
+<Multi_key> <Tab> <2> <asciicircum> <Multi_key> <parenleft> <v> : "⛕"  U26D5  # ALTERNATE ONE-WAY LEFT WAY TRAFFIC
+<Multi_key> <Tab> <2> <parenleft> <parenright>        : "🗘"  U1F5D8  # CLOCKWISE RIGHT AND LEFT SEMICIRCLE ARROWS
+<Multi_key> <Tab> <asciicircum> <equal> <asciicircum> : "🯊"  U1FBCA  # WHITE UP-POINTING CHEVRON
 
 ##########################
 # Box drawing characters #
@@ -32787,6 +32969,19 @@ include "Logograms"
 <Multi_key> <bar> <numbersign> <exclam> <asciicircum> : "🮒"  U1FB92  # UPPER HALF INVERSE MEDIUM SHADE AND LOWER HALF BLOCK
 <Multi_key> <bar> <numbersign> <exclam> <less>        : "🮔"  U1FB94  # LEFT HALF INVERSE MEDIUM SHADE AND RIGHT HALF BLOCK
 
+<Multi_key> <bar> <numbersign> <numbersign>           : "🮕"  U1FB95  # CHECKER BOARD FILL
+<Multi_key> <bar> <numbersign> <exclam> <numbersign>  : "🮖"  U1FB96  # INVERSE CHECKER BOARD FILL
+<Multi_key> <bar> <numbersign> <backslash>            : "🮘"  U1FB98  # UPPER LEFT TO LOWER RIGHT FILL
+<Multi_key> <bar> <numbersign> <slash>                : "🮙"  U1FB99  # UPPER RIGHT TO LOWER LEFT FILL
+<Multi_key> <bar> <numbersign> <space> <minus>        : "𜱀"  U1CC40  # SPARSE HORIZONTAL FILL
+<Multi_key> <bar> <numbersign> <space> <bar>          : "𜱁"  U1CC41  # SPARSE VERTICAL FILL
+<Multi_key> <bar> <numbersign> <space> <numbersign>   : "𜱂"  U1CC42  # ORTHOGONAL CROSSHATCH FILL
+<Multi_key> <bar> <numbersign> <X>                    : "𜱃"  U1CC43  # DIAGONAL CROSSHATCH FILL
+<Multi_key> <bar> <numbersign> <bar>                  : "𜱄"  U1CC44  # DENSE VERTICAL FILL
+<Multi_key> <bar> <numbersign> <minus>                : "𜱅"  U1CC45  # DENSE HORIZONTAL FILL
+<Multi_key> <bar> <numbersign> <period> <1>           : "𜱆"  U1CC46  # SPECKLE FILL FRAME-1
+<Multi_key> <bar> <numbersign> <period> <2>           : "𜱇"  U1CC47  # SPECKLE FILL FRAME-2
+
 # basic blocks: | + b + direction
 
 <Multi_key> <bar> <b> <asterisk>        : "█"  U2588  # FULL BLOCK
@@ -32839,6 +33034,11 @@ include "Logograms"
 <Multi_key> <bar> <b> <backslash> <numbersign> <less>    : "🮞"  U1FB9E  # LOWER RIGHT TRIANGULAR MEDIUM SHADE
 <Multi_key> <bar> <b> <backslash> <numbersign> <greater> : "🮟"  U1FB9F  # LOWER LEFT TRIANGULAR MEDIUM SHADE
 
+<Multi_key> <bar> <b> <backslash> <backslash>  : "🙽"  U1F67D  # VERY HEAVY REVERSE SOLIDUS
+<Multi_key> <bar> <b> <slash> <slash>          : "🙼"  U1F67C  # VERY HEAVY SOLIDUS
+<Multi_key> <bar> <b> <numbersign> <backslash> : "🙿"  U1F67F  # REVERSE CHECKER BOARD (for ▚ use |81368)
+<Multi_key> <bar> <b> <numbersign> <slash>     : "🙾"  U1F67E  # CHECKER BOARD (for ▞ use |82457␣)
+
 <Multi_key> <bar> <b> <X> <less>        : "🭬"  U1FB6C  # LEFT TRIANGULAR ONE QUARTER BLOCK
 <Multi_key> <bar> <b> <X> <asciicircum> : "🭭"  U1FB6D  # UPPER TRIANGULAR ONE QUARTER BLOCK
 <Multi_key> <bar> <b> <X> <greater>     : "🭮"  U1FB6E  # RIGHT TRIANGULAR ONE QUARTER BLOCK
@@ -32851,6 +33051,11 @@ include "Logograms"
 <Multi_key> <bar> <b> <X> <exclam> <greater>     : "🭪"  U1FB6A  # UPPER AND LEFT AND LOWER TRIANGULAR THREE QUARTERS BLOCK
 <Multi_key> <bar> <b> <X> <exclam> <v>           : "🭫"  U1FB6B  # LEFT AND UPPER AND RIGHT TRIANGULAR THREE QUARTERS BLOCK
 
+<Multi_key> <bar> <b> <bracketleft> <bracketright> <asciicircum> : "🯤"  U1FBE4  # UPPER CENTRE ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <bracketleft> <bracketright> <v>           : "🯥"  U1FBE5  # LOWER CENTRE ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <bracketleft> <bracketright> <less>        : "🯦"  U1FBE6  # MIDDLE LEFT ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <bracketleft> <bracketright> <greater>     : "🯧"  U1FBE7  # MIDDLE RIGHT ONE QUARTER BLOCK
+
 <Multi_key> <bar> <b> <bar> <1> : "▏"  U258F  # LEFT ONE EIGHTH BLOCK
 <Multi_key> <bar> <b> <bar> <2> : "🭰"  U1FB70  # VERTICAL ONE EIGHTH BLOCK-2
 <Multi_key> <bar> <b> <bar> <3> : "🭱"  U1FB71  # VERTICAL ONE EIGHTH BLOCK-3
@@ -32859,6 +33064,8 @@ include "Logograms"
 <Multi_key> <bar> <b> <bar> <6> : "🭴"  U1FB74  # VERTICAL ONE EIGHTH BLOCK-6
 <Multi_key> <bar> <b> <bar> <7> : "🭵"  U1FB75  # VERTICAL ONE EIGHTH BLOCK-7
 <Multi_key> <bar> <b> <bar> <8> : "▕"  U2595  # RIGHT ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <bar> <v> <8> : "🮷"  U1FBB7  # DOWNWARDS ARROW AND RIGHT ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <bar> <asciicircum> <8> : "🮸"  U1FBB8  # UPWARDS ARROW AND RIGHT ONE EIGHTH BLOCK
 
 <Multi_key> <bar> <b> <minus> <1> : "▔"  U2594  # UPPER ONE EIGHTH BLOCK
 <Multi_key> <bar> <b> <minus> <2> : "🭶"  U1FB76  # HORIZONTAL ONE EIGHTH BLOCK-2
@@ -32870,7 +33077,10 @@ include "Logograms"
 <Multi_key> <bar> <b> <minus> <8> : "▁"  U2581  # LOWER ONE EIGHTH BLOCK
 
 <Multi_key> <bar> <b> <equal> <1> <8> : "🮀"  U1FB80  # UPPER AND LOWER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <equal> <1> <less> <8> : "🮵"  U1FBB5  # LEFTWARDS ARROW AND UPPER AND LOWER ONE EIGHTH BLOCK
+<Multi_key> <bar> <b> <equal> <1> <greater> <8> : "🮶"  U1FBB6  # RIGHTWARDS ARROW AND UPPER AND LOWER ONE EIGHTH BLOCK
 <Multi_key> <bar> <b> <equal> <1> <3> <5> <8> : "🮁"  U1FB81  # HORIZONTAL ONE EIGHTH BLOCK-1358
+<Multi_key> <bar> <b> <equal> <2> <4> : "🮗"  U1FB97  # HEAVY HORIZONTAL FILL
 
 <Multi_key> <bar> <b> <L> <space> : "🭼"  U1FB7C  # LEFT AND LOWER ONE EIGHTH BLOCK
 <Multi_key> <bar> <b> <L> <asciicircum> : "🭽"  U1FB7D  # LEFT AND UPPER ONE EIGHTH BLOCK
@@ -32893,6 +33103,23 @@ include "Logograms"
 <Multi_key> <bar> <b> <e> <2> <4> : "𜺝"  U1CE9D  # LOWER CENTRE LEFT ONE SIXTEENTH BLOCK
 <Multi_key> <bar> <b> <e> <3> <4> : "𜺞"  U1CE9E  # LOWER CENTRE RIGHT ONE SIXTEENTH BLOCK
 <Multi_key> <bar> <b> <e> <4> <4> : "𜺟"  U1CE9F  # LOWER RIGHT ONE SIXTEENTH BLOCK
+
+<Multi_key> <bar> <b> <e> <bracketleft> <3> <4> <bracketright> <4>     : "𜺠"  U1CEA0  # RIGHT HALF LOWER ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <bracketleft> <2> <3> <4> <bracketright> <4> : "𜺡"  U1CEA1  # RIGHT THREE QUARTERS LOWER ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <bracketleft> <1> <2> <3> <bracketright> <4> : "𜺢"  U1CEA2  # LEFT THREE QUARTERS LOWER ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <bracketleft> <1> <2> <bracketright> <4>     : "𜺣"  U1CEA3  # LEFT HALF LOWER ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <1> <bracketleft> <3> <4> <bracketright>     : "𜺤"  U1CEA4  # LOWER HALF LEFT ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <1> <bracketleft> <2> <3> <4> <bracketright> : "𜺥"  U1CEA5  # LOWER THREE QUARTERS LEFT ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <1> <bracketleft> <1> <2> <3> <bracketright> : "𜺦"  U1CEA6  # UPPER THREE QUARTERS LEFT ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <1> <bracketleft> <1> <2> <bracketright>     : "𜺧"  U1CEA7  # UPPER HALF LEFT ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <bracketleft> <1> <2> <bracketright> <1>     : "𜺨"  U1CEA8  # LEFT HALF UPPER ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <bracketleft> <1> <2> <3> <bracketright> <1> : "𜺩"  U1CEA9  # LEFT THREE QUARTERS UPPER ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <bracketleft> <2> <3> <4> <bracketright> <1> : "𜺪"  U1CEAA  # RIGHT THREE QUARTERS UPPER ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <bracketleft> <3> <4> <bracketright> <1>     : "𜺫"  U1CEAB  # RIGHT HALF UPPER ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <4> <bracketleft> <1> <2> <bracketright>     : "𜺬"  U1CEAC  # UPPER HALF RIGHT ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <4> <bracketleft> <1> <2> <3> <bracketright> : "𜺭"  U1CEAD  # UPPER THREE QUARTERS RIGHT ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <4> <bracketleft> <2> <3> <4> <bracketright> : "𜺮"  U1CEAE  # LOWER THREE QUARTERS RIGHT ONE QUARTER BLOCK
+<Multi_key> <bar> <b> <e> <4> <bracketleft> <3> <4> <bracketright>     : "𜺯"  U1CEAF  # LOWER HALF RIGHT ONE QUARTER BLOCK
 
 # sextants: | + 6 + sextant list
 
@@ -33932,6 +34159,18 @@ include "Logograms"
 <Multi_key> <numbersign> <O> <o> <plus>      : "𝆵"  U1D1B5  # MUSICAL SYMBOL DAMP ALL
 <Multi_key> <numbersign> <x> <x>             : "𝇏"  U1D1CF  # MUSICAL SYMBOL CROIX
 
+# m = metrical notation
+
+<Multi_key> <numbersign> <m> <u> <space> : "⏑"  U23D1  # METRICAL BREVE
+<Multi_key> <numbersign> <m> <minus> <u> <space> : "⏒"  U23D2  # METRICAL LONG OVER SHORT
+<Multi_key> <numbersign> <m> <u> <minus> : "⏓"  U23D3  # METRICAL SHORT OVER LONG
+<Multi_key> <numbersign> <m> <minus> <u> <u> : "⏔"  U23D4  # METRICAL LONG OVER TWO SHORTS
+<Multi_key> <numbersign> <m> <u> <u> <minus> : "⏕"  U23D5  # METRICAL TWO SHORTS OVER LONG
+<Multi_key> <numbersign> <m> <u> <u> <space> : "⏖"  U23D6  # METRICAL TWO SHORTS JOINED
+<Multi_key> <numbersign> <m> <minus> <3> : "⏗"  U23D7  # METRICAL TRISEME
+<Multi_key> <numbersign> <m> <minus> <4> : "⏘"  U23D8  # METRICAL TETRASEME
+<Multi_key> <numbersign> <m> <minus> <5> : "⏙"  U23D9  # METRICAL PENTASEME
+
 # M = mensural notation
 
 <Multi_key> <numbersign> <n> <M> <m> <x> : "𝆶"  U1D1B6  # MUSICAL SYMBOL MAXIMA
@@ -34275,6 +34514,252 @@ include "Logograms"
 <Multi_key> <numbersign> <B> <l> <c> <a> : "᭺"  U1B7A  # BALINESE MUSICAL SYMBOL LEFT-HAND CLOSED PLAK
 <Multi_key> <numbersign> <B> <l> <c> <u> : "᭻"  U1B7B  # BALINESE MUSICAL SYMBOL LEFT-HAND CLOSED PLUK
 <Multi_key> <numbersign> <B> <l> <o> <i> : "᭼"  U1B7C  # BALINESE MUSICAL SYMBOL LEFT-HAND OPEN PING
+
+# Z = Znemanny notation
+
+# (red marks)
+
+<Multi_key> <numbersign> <Z> <less> <G> <x> <Return> : "𜼀"  U1CF00  # ZNAMENNY COMBINING MARK GORAZDO NIZKO S KRYZHEM ON LEFT
+<Multi_key> <numbersign> <Z> <less> <N> <x> <Return> : "𜼁"  U1CF01  # ZNAMENNY COMBINING MARK NIZKO S KRYZHEM ON LEFT
+<Multi_key> <numbersign> <Z> <less> <C> <Return> : "𜼂"  U1CF02  # ZNAMENNY COMBINING MARK TSATA ON LEFT
+<Multi_key> <numbersign> <Z> <less> <G> <Return> : "𜼃"  U1CF03  # ZNAMENNY COMBINING MARK GORAZDO NIZKO ON LEFT
+<Multi_key> <numbersign> <Z> <less> <N> <Return> : "𜼄"  U1CF04  # ZNAMENNY COMBINING MARK NIZKO ON LEFT
+<Multi_key> <numbersign> <Z> <less> <period> <Return> : "𜼅"  U1CF05  # ZNAMENNY COMBINING MARK SREDNE ON LEFT
+<Multi_key> <numbersign> <Z> <less> <M> <Return> : "𜼆"  U1CF06  # ZNAMENNY COMBINING MARK MALO POVYSHE ON LEFT
+<Multi_key> <numbersign> <Z> <less> <P> <Return> : "𜼇"  U1CF07  # ZNAMENNY COMBINING MARK POVYSHE ON LEFT
+<Multi_key> <numbersign> <Z> <less> <V> <Return> : "𜼈"  U1CF08  # ZNAMENNY COMBINING MARK VYSOKO ON LEFT
+<Multi_key> <numbersign> <Z> <less> <period> <M> <Return> : "𜼉"  U1CF09  # ZNAMENNY COMBINING MARK MALO POVYSHE S KHOKHLOM ON LEFT
+<Multi_key> <numbersign> <Z> <less> <period> <P> <Return> : "𜼊"  U1CF0A  # ZNAMENNY COMBINING MARK POVYSHE S KHOKHLOM ON LEFT
+<Multi_key> <numbersign> <Z> <less> <period> <V> <Return> : "𜼋"  U1CF0B  # ZNAMENNY COMBINING MARK VYSOKO S KHOKHLOM ON LEFT
+
+<Multi_key> <numbersign> <Z> <greater> <G> <x> <Return> : "𜼌"  U1CF0C  # ZNAMENNY COMBINING MARK GORAZDO NIZKO S KRYZHEM ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <N> <x> <Return> : "𜼍"  U1CF0D  # ZNAMENNY COMBINING MARK NIZKO S KRYZHEM ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <C> <Return> : "𜼎"  U1CF0E  # ZNAMENNY COMBINING MARK TSATA ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <G> <Return> : "𜼏"  U1CF0F  # ZNAMENNY COMBINING MARK GORAZDO NIZKO ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <N> <Return> : "𜼐"  U1CF10  # ZNAMENNY COMBINING MARK NIZKO ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <period> <Return> : "𜼑"  U1CF11  # ZNAMENNY COMBINING MARK SREDNE ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <M> <Return> : "𜼒"  U1CF12  # ZNAMENNY COMBINING MARK MALO POVYSHE ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <P> <Return> : "𜼓"  U1CF13  # ZNAMENNY COMBINING MARK POVYSHE ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <V> <Return> : "𜼔"  U1CF14  # ZNAMENNY COMBINING MARK VYSOKO ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <period> <M> <Return> : "𜼕"  U1CF15  # ZNAMENNY COMBINING MARK MALO POVYSHE S KHOKHLOM ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <period> <P> <Return> : "𜼖"  U1CF16  # ZNAMENNY COMBINING MARK POVYSHE S KHOKHLOM ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <period> <V> <Return> : "𜼗"  U1CF17  # ZNAMENNY COMBINING MARK VYSOKO S KHOKHLOM ON RIGHT
+
+<Multi_key> <numbersign> <Z> <C> <x> <Return> : "𜼘"  U1CF18  # ZNAMENNY COMBINING MARK TSATA S KRYZHEM
+<Multi_key> <numbersign> <Z> <M> <x> <Return> : "𜼙"  U1CF19  # ZNAMENNY COMBINING MARK MALO POVYSHE S KRYZHEM
+<Multi_key> <numbersign> <Z> <S> <M> <Return> : "𜼚"  U1CF1A  # ZNAMENNY COMBINING MARK STRANNO MALO POVYSHE
+<Multi_key> <numbersign> <Z> <P> <x> <Return> : "𜼛"  U1CF1B  # ZNAMENNY COMBINING MARK POVYSHE S KRYZHEM
+<Multi_key> <numbersign> <Z> <P> <S> <Return> : "𜼜"  U1CF1C  # ZNAMENNY COMBINING MARK POVYSHE STRANNO
+<Multi_key> <numbersign> <Z> <V> <x> <Return> : "𜼝"  U1CF1D  # ZNAMENNY COMBINING MARK VYSOKO S KRYZHEM
+<Multi_key> <numbersign> <Z> <M> <S> <Return> : "𜼞"  U1CF1E  # ZNAMENNY COMBINING MARK MALO POVYSHE STRANNO
+<Multi_key> <numbersign> <Z> <G> <V> <Return> : "𜼟"  U1CF1F  # ZNAMENNY COMBINING MARK GORAZDO VYSOKO
+
+<Multi_key> <numbersign> <Z> <Z> <Return> : "𜼠"  U1CF20  # ZNAMENNY COMBINING MARK ZELO
+<Multi_key> <numbersign> <Z> <O> <Return> : "𜼡"  U1CF21  # ZNAMENNY COMBINING MARK ON
+<Multi_key> <numbersign> <Z> <R> <Return> : "𜼢"  U1CF22  # ZNAMENNY COMBINING MARK RAVNO
+<Multi_key> <numbersign> <Z> <T> <Return> : "𜼣"  U1CF23  # ZNAMENNY COMBINING MARK TIKHAYA
+<Multi_key> <numbersign> <Z> <B> <Return> : "𜼤"  U1CF24  # ZNAMENNY COMBINING MARK BORZAYA
+<Multi_key> <numbersign> <Z> <U> <Return> : "𜼥"  U1CF25  # ZNAMENNY COMBINING MARK UDARKA
+<Multi_key> <numbersign> <Z> <P> <Return> : "𜼦"  U1CF26  # ZNAMENNY COMBINING MARK PODVERTKA
+<Multi_key> <numbersign> <Z> <L> <O> <Return> : "𜼧"  U1CF27  # ZNAMENNY COMBINING MARK LOMKA
+
+<Multi_key> <numbersign> <Z> <5> <Return> : "𜼠"  U1CF20  # ZNAMENNY COMBINING MARK ZELO
+<Multi_key> <numbersign> <Z> <underscore> <Return> : "𜼣"  U1CF23  # ZNAMENNY COMBINING MARK TIKHAYA
+<Multi_key> <numbersign> <Z> <underscore> <quotedbl> <Return> : "𜼨"  U1CF28  # ZNAMENNY COMBINING MARK KUPNAYA
+<Multi_key> <numbersign> <Z> <quotedbl> <Return> : "𜼩"  U1CF29  # ZNAMENNY COMBINING MARK KACHKA
+<Multi_key> <numbersign> <Z> <3> <Return> : "𜼪"  U1CF2A  # ZNAMENNY COMBINING MARK ZEVOK
+<Multi_key> <numbersign> <Z> <less> <Return> : "𜼫"  U1CF2B  # ZNAMENNY COMBINING MARK SKOBA
+<Multi_key> <numbersign> <Z> <apostrophe> <Return> : "𜼬"  U1CF2C  # ZNAMENNY COMBINING MARK RAZSEKA
+<Multi_key> <numbersign> <Z> <less> <x> <Return> : "𜼭"  U1CF2D  # ZNAMENNY COMBINING MARK KRYZH ON LEFT
+
+# (pitch marks by modern convention)
+
+<Multi_key> <numbersign> <Z> <less> <g> <Return> : "𜼀"  U1CF00  # ZNAMENNY COMBINING MARK GORAZDO NIZKO S KRYZHEM ON LEFT
+<Multi_key> <numbersign> <Z> <less> <a> <Return> : "𜼁"  U1CF01  # ZNAMENNY COMBINING MARK NIZKO S KRYZHEM ON LEFT
+<Multi_key> <numbersign> <Z> <less> <b> <Return> : "𜼂"  U1CF02  # ZNAMENNY COMBINING MARK TSATA ON LEFT
+<Multi_key> <numbersign> <Z> <less> <c> <apostrophe> <Return> : "𜼃"  U1CF03  # ZNAMENNY COMBINING MARK GORAZDO NIZKO ON LEFT
+<Multi_key> <numbersign> <Z> <less> <d> <apostrophe> <Return> : "𜼄"  U1CF04  # ZNAMENNY COMBINING MARK NIZKO ON LEFT
+<Multi_key> <numbersign> <Z> <less> <e> <apostrophe> <Return> : "𜼅"  U1CF05  # ZNAMENNY COMBINING MARK SREDNE ON LEFT
+<Multi_key> <numbersign> <Z> <less> <f> <apostrophe> <Return> : "𜼆"  U1CF06  # ZNAMENNY COMBINING MARK MALO POVYSHE ON LEFT
+<Multi_key> <numbersign> <Z> <less> <g> <apostrophe> <Return> : "𜼇"  U1CF07  # ZNAMENNY COMBINING MARK POVYSHE ON LEFT
+<Multi_key> <numbersign> <Z> <less> <a> <apostrophe> <Return> : "𜼈"  U1CF08  # ZNAMENNY COMBINING MARK VYSOKO ON LEFT
+<Multi_key> <numbersign> <Z> <less> <b> <apostrophe> <Return> : "𜼉"  U1CF09  # ZNAMENNY COMBINING MARK MALO POVYSHE S KHOKHLOM ON LEFT
+<Multi_key> <numbersign> <Z> <less> <b> <b> <apostrophe> <Return> : "𜼉"  U1CF09  # ZNAMENNY COMBINING MARK MALO POVYSHE S KHOKHLOM ON LEFT
+<Multi_key> <numbersign> <Z> <less> <c> <apostrophe> <apostrophe> <Return> : "𜼊"  U1CF0A  # ZNAMENNY COMBINING MARK POVYSHE S KHOKHLOM ON LEFT
+<Multi_key> <numbersign> <Z> <less> <d> <apostrophe> <apostrophe> <Return> : "𜼋"  U1CF0B  # ZNAMENNY COMBINING MARK VYSOKO S KHOKHLOM ON LEFT
+
+<Multi_key> <numbersign> <Z> <greater> <g> <Return> : "𜼌"  U1CF0C  # ZNAMENNY COMBINING MARK GORAZDO NIZKO S KRYZHEM ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <a> <Return> : "𜼍"  U1CF0D  # ZNAMENNY COMBINING MARK NIZKO S KRYZHEM ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <b> <Return> : "𜼎"  U1CF0E  # ZNAMENNY COMBINING MARK TSATA ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <c> <apostrophe> <Return> : "𜼏"  U1CF0F  # ZNAMENNY COMBINING MARK GORAZDO NIZKO ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <d> <apostrophe> <Return> : "𜼐"  U1CF10  # ZNAMENNY COMBINING MARK NIZKO ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <e> <apostrophe> <Return> : "𜼑"  U1CF11  # ZNAMENNY COMBINING MARK SREDNE ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <f> <apostrophe> <Return> : "𜼒"  U1CF12  # ZNAMENNY COMBINING MARK MALO POVYSHE ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <g> <apostrophe> <Return> : "𜼓"  U1CF13  # ZNAMENNY COMBINING MARK POVYSHE ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <a> <apostrophe> <Return> : "𜼔"  U1CF14  # ZNAMENNY COMBINING MARK VYSOKO ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <b> <apostrophe> <Return> : "𜼕"  U1CF15  # ZNAMENNY COMBINING MARK MALO POVYSHE S KHOKHLOM ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <b> <b> <apostrophe> <Return> : "𜼕"  U1CF15  # ZNAMENNY COMBINING MARK MALO POVYSHE S KHOKHLOM ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <c> <apostrophe> <apostrophe> <Return> : "𜼖"  U1CF16  # ZNAMENNY COMBINING MARK POVYSHE S KHOKHLOM ON RIGHT
+<Multi_key> <numbersign> <Z> <greater> <d> <apostrophe> <apostrophe> <Return> : "𜼗"  U1CF17  # ZNAMENNY COMBINING MARK VYSOKO S KHOKHLOM ON RIGHT
+
+# (black marks)
+
+<Multi_key> <numbersign> <Z> <asterisk> <Return> : "𜼰"  U1CF30  # ZNAMENNY COMBINING TONAL RANGE MARK MRACHNO
+<Multi_key> <numbersign> <Z> <asterisk> <asterisk> <Return> : "𜼱"  U1CF31  # ZNAMENNY COMBINING TONAL RANGE MARK SVETLO
+<Multi_key> <numbersign> <Z> <asterisk> <asterisk> <asterisk> <Return> : "𜼲"  U1CF32  # ZNAMENNY COMBINING TONAL RANGE MARK TRESVETLO
+<Multi_key> <numbersign> <Z> <greater> <asterisk> <Return> : "𜼳"  U1CF33  # ZNAMENNY COMBINING MARK ZADERZHKA
+<Multi_key> <numbersign> <Z> <less> <asterisk> <Return> : "𜼴"  U1CF34  # ZNAMENNY COMBINING MARK DEMESTVENNY ZADERZHKA
+<Multi_key> <numbersign> <Z> <bar> <Return> : "𜼵"  U1CF35  # ZNAMENNY COMBINING MARK OTSECHKA
+<Multi_key> <numbersign> <Z> <underscore> <u> <Return> : "𜼶"  U1CF36  # ZNAMENNY COMBINING MARK PODCHASHIE
+<Multi_key> <numbersign> <Z> <underscore> <u> <bar> <Return> : "𜼷"  U1CF37  # ZNAMENNY COMBINING MARK PODCHASHIE WITH VERTICAL STROKE
+<Multi_key> <numbersign> <Z> <u> <Return> : "𜼸"  U1CF38  # ZNAMENNY COMBINING MARK CHASHKA
+<Multi_key> <numbersign> <Z> <asterisk> <u> <Return> : "𜼹"  U1CF39  # ZNAMENNY COMBINING MARK CHASHKA POLNAYA
+<Multi_key> <numbersign> <Z> <parenleft> <Return> : "𜼺"  U1CF3A  # ZNAMENNY COMBINING MARK OBLACHKO
+<Multi_key> <numbersign> <Z> <bar> <parenright> <Return> : "𜼻"  U1CF3B  # ZNAMENNY COMBINING MARK SOROCHYA NOZHKA
+<Multi_key> <numbersign> <Z> <minus> <Return> : "𜼼"  U1CF3C  # ZNAMENNY COMBINING MARK TOCHKA
+<Multi_key> <numbersign> <Z> <equal> <Return> : "𜼽"  U1CF3D  # ZNAMENNY COMBINING MARK DVOETOCHIE
+<Multi_key> <numbersign> <Z> <underscore> <bar> <Return> : "𜼾"  U1CF3E  # ZNAMENNY COMBINING ATTACHING VERTICAL OMET
+<Multi_key> <numbersign> <Z> <greater> <parenleft> <Return> : "𜼿"  U1CF3F  # ZNAMENNY COMBINING MARK CURVED OMET
+<Multi_key> <numbersign> <Z> <x> <Return> : "𜽀"  U1CF40  # ZNAMENNY COMBINING MARK KRYZH
+<Multi_key> <numbersign> <Z> <underscore> <minus> <Return> : "𜽁"  U1CF41  # ZNAMENNY COMBINING LOWER TONAL RANGE INDICATOR
+
+# (priznaki marks)
+
+<Multi_key> <numbersign> <Z> <less> <underscore> <period> <Return> : "𜽂"  U1CF42  # ZNAMENNY PRIZNAK MODIFIER LEVEL-2
+<Multi_key> <numbersign> <Z> <less> <asciicircum> <period> <Return> : "𜽃"  U1CF43  # ZNAMENNY PRIZNAK MODIFIER LEVEL-3
+<Multi_key> <numbersign> <Z> <greater> <asciicircum> <period> <Return> : "𜽄"  U1CF44  # ZNAMENNY PRIZNAK MODIFIER DIRECTION FLIP
+<Multi_key> <numbersign> <Z> <less> <underscore> <x> <Return> : "𜽅"  U1CF45  # ZNAMENNY PRIZNAK MODIFIER KRYZH
+<Multi_key> <numbersign> <Z> <less> <asciicircum> <grave> <Return> : "𜽆"  U1CF46  # ZNAMENNY PRIZNAK MODIFIER ROG
+
+# (neumes) convention: # Z { shape }
+
+# TODO: second pass to improve shortcuts
+
+<Multi_key> <numbersign> <Z> <braceleft> <V> <braceright> : "𜽐"  U1CF50  # ZNAMENNY NEUME KRYUK
+<Multi_key> <numbersign> <Z> <braceleft> <V> <bar> <braceright> : "𜽑"  U1CF51  # ZNAMENNY NEUME KRYUK TIKHY
+<Multi_key> <numbersign> <Z> <braceleft> <period> <V> <braceright> : "𜽒"  U1CF52  # ZNAMENNY NEUME PARAKLIT
+<Multi_key> <numbersign> <Z> <braceleft> <bar> <bar> <V> <braceright> : "𜽓"  U1CF53  # ZNAMENNY NEUME DVA V CHELNU
+<Multi_key> <numbersign> <Z> <braceleft> <V> <x> <braceright> : "𜽔"  U1CF54  # ZNAMENNY NEUME KLYUCH
+<Multi_key> <numbersign> <Z> <braceleft> <greater> <V> <braceright> : "𜽕"  U1CF55  # ZNAMENNY NEUME ZANOZHEK
+
+<Multi_key> <numbersign> <Z> <braceleft> <L> <braceright> : "𜽖"  U1CF56  # ZNAMENNY NEUME STOPITSA
+<Multi_key> <numbersign> <Z> <braceleft> <L> <asterisk> <braceright> : "𜽗"  U1CF57  # ZNAMENNY NEUME STOPITSA S OCHKOM
+<Multi_key> <numbersign> <Z> <braceleft> <L> <asterisk> <asterisk> <braceright> : "𜽘"  U1CF58  # ZNAMENNY NEUME PEREVODKA
+<Multi_key> <numbersign> <Z> <braceleft> <L> <asterisk> <asterisk> <asterisk> <braceright> : "𜽙"  U1CF59  # ZNAMENNY NEUME PEREVODKA NEPOSTOYANNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <greater> <L> <braceright> : "𜽚"  U1CF5A  # ZNAMENNY NEUME STOPITSA WITH SOROCHYA NOZHKA
+<Multi_key> <numbersign> <Z> <braceleft> <L> <parenright> <braceright> : "𜽛"  U1CF5B  # ZNAMENNY NEUME CHELYUSTKA
+
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <braceright> : "𜽜"  U1CF5C  # ZNAMENNY NEUME PALKA
+<Multi_key> <numbersign> <Z> <braceleft> <n> <braceright> : "𜽝"  U1CF5D  # ZNAMENNY NEUME ZAPYATAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <n> <braceright> : "𜽞"  U1CF5E  # ZNAMENNY NEUME GOLUBCHIK BORZY
+<Multi_key> <numbersign> <Z> <braceleft> <n> <bar> <asterisk> <braceright> : "𜽟"  U1CF5F  # ZNAMENNY NEUME GOLUBCHIK TIKHY
+<Multi_key> <numbersign> <Z> <braceleft> <n> <asterisk> <braceright> : "𜽠"  U1CF60  # ZNAMENNY NEUME GOLUBCHIK MRACHNY
+<Multi_key> <numbersign> <Z> <braceleft> <n> <asterisk> <asterisk> <braceright> : "𜽡"  U1CF61  # ZNAMENNY NEUME GOLUBCHIK SVETLY
+<Multi_key> <numbersign> <Z> <braceleft> <n> <asterisk> <asterisk> <asterisk> <braceright> : "𜽢"  U1CF62  # ZNAMENNY NEUME GOLUBCHIK TRESVETLY
+<Multi_key> <numbersign> <Z> <braceleft> <n> <minus> <braceright> : "𜽣"  U1CF63  # ZNAMENNY NEUME VRAKHIYA PROSTAYA
+<Multi_key> <numbersign> <Z> <braceleft> <n> <asterisk> <minus> <braceright> : "𜽤"  U1CF64  # ZNAMENNY NEUME VRAKHIYA MRACHNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <n> <asterisk> <asterisk> <minus> <braceright> : "𜽥"  U1CF65  # ZNAMENNY NEUME VRAKHIYA SVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <n> <asterisk> <asterisk> <asterisk> <minus> <braceright> : "𜽦"  U1CF66  # ZNAMENNY NEUME VRAKHIYA TRESVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <n> <minus> <x> <braceright> : "𜽧"  U1CF67  # ZNAMENNY NEUME VRAKHIYA KLYUCHEVAYA PROSTAYA
+<Multi_key> <numbersign> <Z> <braceleft> <n> <asterisk> <minus> <x> <braceright> : "𜽨"  U1CF68  # ZNAMENNY NEUME VRAKHIYA KLYUCHEVAYA MRACHNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <n> <asterisk> <asterisk> <minus> <x> <braceright> : "𜽩"  U1CF69  # ZNAMENNY NEUME VRAKHIYA KLYUCHEVAYA SVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <n> <asterisk> <asterisk> <asterisk> <minus> <x> <braceright> : "𜽪"  U1CF6A  # ZNAMENNY NEUME VRAKHIYA KLYUCHEVAYA TRESVETLAYA
+
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <parenright> <braceright> : "𜽫"  U1CF6B  # ZNAMENNY NEUME DOUBLE ZAPYATAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <parenleft> <braceright> : "𜽬"  U1CF6C  # ZNAMENNY NEUME REVERSED CHELYUSTKA
+<Multi_key> <numbersign> <Z> <braceleft> <n> <n> <parenright> <braceright> : "𜽭"  U1CF6D  # ZNAMENNY NEUME DERBITSA
+<Multi_key> <numbersign> <Z> <braceleft> <n> <n> <J> <braceright> : "𜽮"  U1CF6E  # ZNAMENNY NEUME KHAMILO
+<Multi_key> <numbersign> <Z> <braceleft> <J> <braceright> : "𜽯"  U1CF6F  # ZNAMENNY NEUME CHASHKA
+
+<Multi_key> <numbersign> <Z> <braceleft> <minus> <u> <braceright> : "𜽰"  U1CF70  # ZNAMENNY NEUME PODCHASHIE
+<Multi_key> <numbersign> <Z> <braceleft> <minus> <asterisk> <braceright> : "𜽱"  U1CF71  # ZNAMENNY NEUME SKAMEYTSA MRACHNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <minus> <asterisk> <asterisk> <braceright> : "𜽲"  U1CF72  # ZNAMENNY NEUME SKAMEYTSA SVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <minus> <asterisk> <asterisk> <asterisk> <braceright> : "𜽳"  U1CF73  # ZNAMENNY NEUME SKAMEYTSA TRESVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <V> <asterisk> <asterisk> <braceright> : "𜽴"  U1CF74  # ZNAMENNY NEUME SKAMEYTSA TIKHAYA
+<Multi_key> <numbersign> <Z> <braceleft> <minus> <x> <braceright> : "𜽵"  U1CF75  # ZNAMENNY NEUME DEMESTVENNY KLYUCH
+<Multi_key> <numbersign> <Z> <braceleft> <minus> <x> <asterisk> <asterisk> <braceright> : "𜽶"  U1CF76  # ZNAMENNY NEUME SKAMEYTSA KLYUCHEVAYA SVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <minus> <x> <asterisk> <asterisk> <asterisk> <braceright> : "𜽷"  U1CF77  # ZNAMENNY NEUME SKAMEYTSA KLYUCHENEPOSTOYANNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <V> <x> <asterisk> <asterisk> <braceright> : "𜽸"  U1CF78  # ZNAMENNY NEUME SKAMEYTSA KLYUCHEVAYA TIKHAYA
+<Multi_key> <numbersign> <Z> <braceleft> <bar> <bar> <minus> <braceright> : "𜽹"  U1CF79  # ZNAMENNY NEUME SKAMEYTSA DVOECHELNAYA PROSTAYA
+<Multi_key> <numbersign> <Z> <braceleft> <bar> <bar> <minus> <asterisk> <asterisk> <braceright> : "𜽺"  U1CF7A  # ZNAMENNY NEUME SKAMEYTSA DVOECHELNAYA SVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <bar> <bar> <minus> <asterisk> <asterisk> <asterisk> <braceright> : "𜽻"  U1CF7B  # ZNAMENNY NEUME SKAMEYTSA DVOECHELNAYA NEPOSTOYANNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <bar> <bar> <minus> <x> <asterisk> <asterisk> <braceright> : "𜽼"  U1CF7C  # ZNAMENNY NEUME SKAMEYTSA DVOECHELNAYA KLYUCHEVAYA
+
+<Multi_key> <numbersign> <Z> <braceleft> <period> <period> <braceright> : "𜽽"  U1CF7D  # ZNAMENNY NEUME SLOZHITIE
+<Multi_key> <numbersign> <Z> <braceleft> <period> <period> <parenright> <braceright> : "𜽾"  U1CF7E  # ZNAMENNY NEUME SLOZHITIE S ZAPYATOY
+<Multi_key> <numbersign> <Z> <braceleft> <period> <period> <period> <braceright> : "𜽿"  U1CF7F  # ZNAMENNY NEUME SLOZHITIE ZAKRYTOE
+<Multi_key> <numbersign> <Z> <braceleft> <period> <period> <plus> <braceright> : "𜾀"  U1CF80  # ZNAMENNY NEUME SLOZHITIE S KRYZHEM
+<Multi_key> <numbersign> <Z> <braceleft> <plus> <braceright> : "𜾁"  U1CF81  # ZNAMENNY NEUME KRYZH
+<Multi_key> <numbersign> <Z> <braceleft> <z> <braceright> : "𜾂"  U1CF82  # ZNAMENNY NEUME ROG
+<Multi_key> <numbersign> <Z> <braceleft> <0> <braceright> : "𜾃"  U1CF83  # ZNAMENNY NEUME FITA
+<Multi_key> <numbersign> <Z> <braceleft> <m> <braceright> : "𜾄"  U1CF84  # ZNAMENNY NEUME KOBYLA
+<Multi_key> <numbersign> <Z> <braceleft> <equal> <underscore> <braceright> : "𜾅"  U1CF85  # ZNAMENNY NEUME ZMEYTSA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <braceright> : "𜾆"  U1CF86  # ZNAMENNY NEUME STATYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <parenright> <braceright> : "𜾇"  U1CF87  # ZNAMENNY NEUME STATYA S ZAPYATOY
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <plus> <braceright> : "𜾈"  U1CF88  # ZNAMENNY NEUME STATYA S KRYZHEM
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <parenright> <plus> <braceright> : "𜾉"  U1CF89  # ZNAMENNY NEUME STATYA S ZAPYATOY I KRYZHEM
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <plus> <parenright> <braceright> : "𜾊"  U1CF8A  # ZNAMENNY NEUME STATYA S KRYZHEM I ZAPYATOY
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <comma> <braceright> : "𜾋"  U1CF8B  # ZNAMENNY NEUME STATYA ZAKRYTAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <comma> <parenright> <braceright> : "𜾌"  U1CF8C  # ZNAMENNY NEUME STATYA ZAKRYTAYA S ZAPYATOY
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <z> <braceright> : "𜾍"  U1CF8D  # ZNAMENNY NEUME STATYA S ROGOM
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <parenright> <parenright> <braceright> : "𜾎"  U1CF8E  # ZNAMENNY NEUME STATYA S DVUMYA ZAPYATYMI
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <parenright> <u> <braceright> : "𜾏"  U1CF8F  # ZNAMENNY NEUME STATYA S ZAPYATOY I PODCHASHIEM
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <u> <braceright> : "𜾐"  U1CF90  # ZNAMENNY NEUME POLKULIZMY
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <asterisk> <asterisk> <braceright> : "𜾑"  U1CF91  # ZNAMENNY NEUME STATYA NEPOSTOYANNAYA
+
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <minus> <braceright> : "𜾒"  U1CF92  # ZNAMENNY NEUME STRELA PROSTAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <minus> <bar> <braceright> : "𜾓"  U1CF93  # ZNAMENNY NEUME STRELA MRACHNOTIKHAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <minus> <plus> <braceright> : "𜾔"  U1CF94  # ZNAMENNY NEUME STRELA KRYZHEVAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <minus> <asterisk> <braceright> : "𜾕"  U1CF95  # ZNAMENNY NEUME STRELA POLUPOVODNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <minus> <asterisk> <asterisk> <braceright> : "𜾖"  U1CF96  # ZNAMENNY NEUME STRELA POVODNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <minus> <asterisk> <asterisk> <asterisk> <braceright> : "𜾗"  U1CF97  # ZNAMENNY NEUME STRELA NEPOSTOYANNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <minus> <x> <asterisk> <asterisk> <braceright> : "𜾘"  U1CF98  # ZNAMENNY NEUME STRELA KLYUCHEPOVODNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <minus> <x> <asterisk> <asterisk> <asterisk> <braceright> : "𜾙"  U1CF99  # ZNAMENNY NEUME STRELA KLYUCHENEPOSTOYANNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <bar> <minus> <braceright> : "𜾚"  U1CF9A  # ZNAMENNY NEUME STRELA TIKHAYA PUTNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <bar> <bar> <minus> <braceright> : "𜾛"  U1CF9B  # ZNAMENNY NEUME STRELA DVOECHELNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <bar> <bar> <minus> <plus> <braceright> : "𜾜"  U1CF9C  # ZNAMENNY NEUME STRELA DVOECHELNOKRYZHEVAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <bar> <bar> <minus> <asterisk> <asterisk> <braceright> : "𜾝"  U1CF9D  # ZNAMENNY NEUME STRELA DVOECHELNOPOVODNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <bar> <bar> <minus> <x> <braceright> : "𜾞"  U1CF9E  # ZNAMENNY NEUME STRELA DVOECHELNAYA KLYUCHEVAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <bar> <bar> <minus> <x> <asterisk> <asterisk> <braceright> : "𜾟"  U1CF9F  # ZNAMENNY NEUME STRELA DVOECHELNOPOVODNAYA KLYUCHEVAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <minus> <braceright> : "𜾠"  U1CFA0  # ZNAMENNY NEUME STRELA GROMNAYA WITH SINGLE ZAPYATAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <asterisk> <asterisk> <minus> <braceright> : "𜾡"  U1CFA1  # ZNAMENNY NEUME STRELA GROMOPOVODNAYA WITH SINGLE ZAPYATAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <parenright> <minus> <braceright> : "𜾢"  U1CFA2  # ZNAMENNY NEUME STRELA GROMNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <parenright> <minus> <asterisk> <asterisk> <braceright> : "𜾣"  U1CFA3  # ZNAMENNY NEUME STRELA GROMOPOVODNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <parenright> <asterisk> <asterisk> <minus> <braceright> : "𜾤"  U1CFA4  # ZNAMENNY NEUME STRELA GROMOPOVODNAYA WITH DOUBLE ZAPYATAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <plus> <minus> <braceright> : "𜾥"  U1CFA5  # ZNAMENNY NEUME STRELA GROMOKRYZHEVAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <plus> <minus>  <asterisk> <asterisk> <braceright> : "𜾦"  U1CFA6  # ZNAMENNY NEUME STRELA GROMOKRYZHEVAYA POVODNAYA
+
+<Multi_key> <numbersign> <Z> <braceleft> <1> <minus> <braceright> : "𜾧"  U1CFA7  # ZNAMENNY NEUME MECHIK
+<Multi_key> <numbersign> <Z> <braceleft> <1> <minus> <asterisk> <asterisk> <braceright> : "𜾨"  U1CFA8  # ZNAMENNY NEUME MECHIK POVODNY
+<Multi_key> <numbersign> <Z> <braceleft> <1> <minus> <x> <braceright> : "𜾩"  U1CFA9  # ZNAMENNY NEUME MECHIK KLYUCHEVOY
+<Multi_key> <numbersign> <Z> <braceleft> <1> <minus> <x> <asterisk> <asterisk> <braceright> : "𜾪"  U1CFAA  # ZNAMENNY NEUME MECHIK KLYUCHEPOVODNY
+<Multi_key> <numbersign> <Z> <braceleft> <1> <minus> <x> <asterisk> <asterisk> <asterisk> <braceright> : "𜾫"  U1CFAB  # ZNAMENNY NEUME MECHIK KLYUCHENEPOSTOYANNY
+<Multi_key> <numbersign> <Z> <braceleft> <1> <1> <minus> <braceright> : "𜾬"  U1CFAC  # ZNAMENNY NEUME STRELA TRYASOGLASNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <1> <1> <minus> <asterisk> <asterisk> <braceright> : "𜾭"  U1CFAD  # ZNAMENNY NEUME STRELA TRYASOPOVODNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <1> <1> <minus> <plus> <braceright> : "𜾮"  U1CFAE  # ZNAMENNY NEUME STRELA TRYASOSTRELNAYA
+
+<Multi_key> <numbersign> <Z> <braceleft> <L> <minus> <braceright> : "𜾯"  U1CFAF  # ZNAMENNY NEUME OSOKA
+<Multi_key> <numbersign> <Z> <braceleft> <L> <asterisk> <asterisk> <minus> <braceright> : "𜾰"  U1CFB0  # ZNAMENNY NEUME OSOKA SVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <L> <asterisk> <asterisk> <asterisk> <minus> <braceright> : "𜾱"  U1CFB1  # ZNAMENNY NEUME OSOKA TRESVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <L> <asterisk> <asterisk> <V> <braceright> : "𜾲"  U1CFB2  # ZNAMENNY NEUME OSOKA KRYUKOVAYA SVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <L> <asterisk> <asterisk> <minus> <x> <braceright> : "𜾳"  U1CFB3  # ZNAMENNY NEUME OSOKA KLYUCHEVAYA SVETLAYA
+<Multi_key> <numbersign> <Z> <braceleft> <L> <asterisk> <asterisk> <asterisk> <minus> <x> <braceright> : "𜾴"  U1CFB4  # ZNAMENNY NEUME OSOKA KLYUCHEVAYA NEPOSTOYANNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <V> <braceright> : "𜾵"  U1CFB5  # ZNAMENNY NEUME STRELA KRYUKOVAYA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <asterisk> <V> <asterisk> <asterisk> <braceright> : "𜾶"  U1CFB6  # ZNAMENNY NEUME STRELA KRYUKOVAYA POVODNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <V> <braceright> : "𜾷"  U1CFB7  # ZNAMENNY NEUME STRELA KRYUKOVAYA GROMNAYA WITH SINGLE ZAPYATAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <asterisk> <asterisk> <V> <braceright> : "𜾸"  U1CFB8  # ZNAMENNY NEUME STRELA KRYUKOVAYA GROMOPOVODNAYA WITH SINGLE ZAPYATAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <parenright> <V> <braceright> : "𜾹"  U1CFB9  # ZNAMENNY NEUME STRELA KRYUKOVAYA GROMNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <parenright> <V> <asterisk> <asterisk> <braceright> : "𜾺"  U1CFBA  # ZNAMENNY NEUME STRELA KRYUKOVAYA GROMOPOVODNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <parenright> <asterisk> <asterisk> <V> <braceright> : "𜾻"  U1CFBB  # ZNAMENNY NEUME STRELA KRYUKOVAYA GROMOPOVODNAYA WITH DOUBLE ZAPYATAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <plus> <V> <braceright> : "𜾼"  U1CFBC  # ZNAMENNY NEUME STRELA KRYUKOVAYA GROMOKRYZHEVAYA
+<Multi_key> <numbersign> <Z> <braceleft> <parenright> <plus> <V> <asterisk> <asterisk> <braceright> : "𜾽"  U1CFBD  # ZNAMENNY NEUME STRELA KRYUKOVAYA GROMOKRYZHEVAYA POVODNAYA
+<Multi_key> <numbersign> <Z> <braceleft> <1> <1> <V> <braceright> : "𜾾"  U1CFBE  # ZNAMENNY NEUME STRELA KRYUKOVAYA TRYASKA
+
+<Multi_key> <numbersign> <Z> <braceleft> <s> <braceright> : "𜾿"  U1CFBF  # ZNAMENNY NEUME KUFISMA
+<Multi_key> <numbersign> <Z> <braceleft> <parenleft> <braceright> : "𜿀"  U1CFC0  # ZNAMENNY NEUME OBLAKO
+<Multi_key> <numbersign> <Z> <braceleft> <less> <greater> <braceright> : "𜿁"  U1CFC1  # ZNAMENNY NEUME DUDA
+<Multi_key> <numbersign> <Z> <braceleft> <bar> <equal> <bar> <braceright> : "𜿂"  U1CFC2  # ZNAMENNY NEUME NEMKA
+<Multi_key> <numbersign> <Z> <braceleft> <asterisk> <V> <braceright> : "𜿃"  U1CFC3  # ZNAMENNY NEUME PAUK
 
 #########
 # Games #
@@ -34739,6 +35224,20 @@ include "Logograms"
 <Multi_key> <numbersign> <7> <0> <0> <0> <0> <a> : "𐄱"  U10131  # AEGEAN NUMBER SEVENTY THOUSAND
 <Multi_key> <numbersign> <8> <0> <0> <0> <0> <a> : "𐄲"  U10132  # AEGEAN NUMBER EIGHTY THOUSAND
 <Multi_key> <numbersign> <9> <0> <0> <0> <0> <a> : "𐄳"  U10133  # AEGEAN NUMBER NINETY THOUSAND
+
+<Multi_key> <numbersign> <w> <0> <a> : "𐄷"  U10137  # AEGEAN WEIGHT BASE UNIT
+<Multi_key> <numbersign> <w> <1> <a> : "𐄸"  U10138  # AEGEAN WEIGHT FIRST SUBUNIT
+<Multi_key> <numbersign> <w> <2> <a> : "𐄹"  U10139  # AEGEAN WEIGHT SECOND SUBUNIT
+<Multi_key> <numbersign> <w> <3> <a> : "𐄺"  U1013A  # AEGEAN WEIGHT THIRD SUBUNIT
+<Multi_key> <numbersign> <w> <4> <a> : "𐄻"  U1013B  # AEGEAN WEIGHT FOURTH SUBUNIT
+<Multi_key> <numbersign> <m> <1> <a> <d> : "𐄼"  U1013C  # AEGEAN DRY MEASURE FIRST SUBUNIT
+<Multi_key> <numbersign> <m> <1> <a> <l> : "𐄽"  U1013D  # AEGEAN LIQUID MEASURE FIRST SUBUNIT
+<Multi_key> <numbersign> <m> <2> <a> : "𐄾"  U1013E  # AEGEAN MEASURE SECOND SUBUNIT
+<Multi_key> <numbersign> <m> <3> <a> : "𐄿"  U1013F  # AEGEAN MEASURE THIRD SUBUNIT
+
+<Multi_key> <numbersign> <comma> <a> : "𐄀"  U10100  # AEGEAN WORD SEPARATOR LINE
+<Multi_key> <numbersign> <period> <a> : "𐄁"  U10101  # AEGEAN WORD SEPARATOR DOT
+<Multi_key> <numbersign> <x> <a> : "𐄂"  U10102  # AEGEAN CHECK MARK
 
 # (A) Attic numerals - defaults to Attic forms
 
@@ -35636,7 +36135,7 @@ include "Logograms"
 # Technical symbols #
 #####################
 
-# computer keys (by key)
+# computer key symbols (by key)
 
 <Multi_key> <backslash> <Up>                    : "↑"  U2191  # UPWARDS ARROW
 <Multi_key> <backslash> <Down>                  : "↓"  U2193  # DOWNWARDS ARROW
@@ -35680,7 +36179,7 @@ include "Logograms"
 <Multi_key> <backslash> <quotedbl>     : "quotedbl"        # QUOTATION MARK
 <Multi_key> <backslash> <semicolon>    : "semicolon"       # SEMICOLON
 
-# computer keys (by name)
+# computer key symbols (by name)
 
 <Multi_key> <backslash> <c> <t> <r> <l>         : "⎈"  U2388  # HELM SYMBOL (CONTROL)
 <Multi_key> <backslash> <s> <h> <i> <f> <t>     : "⇧"  U21E7  # UPWARDS WHITE ARROW (SHIFT)
