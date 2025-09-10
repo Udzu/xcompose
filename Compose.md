@@ -9,13 +9,13 @@ The file aims for memorability and consistency. As a result, a small number of t
 
 ## Table of contents and examples
 
-### Common script characters (665)
+### Common script characters (666)
 * **Spaces** (15): NBSP MMSP ZWSP etc
 * **Dashes** (13): – — ⁓ ⸻ etc
 * **Brackets** (62): ⟨ ⟦ ⸨ ⌈ ⫽ etc
 * **Bullets** (11): • ‣ ⁃ ◉ etc
 * **General punctuation** (72): ⁁ ⁂ ⸎ etc
-* **Currency symbols** (30): ₱ ₿ ₪ etc
+* **Currency symbols** (31): ₱ ₿ ₪ etc
 * **Combining diacritics** (190): ń n̊ n̫ m͡n Zǎ̺̣͆̚l⃪ğ̶̍ö̱̰̥̂̃ etc
 * **Control characters** (272): RLI PDI ZWJ VS16 etc
 
@@ -50,19 +50,19 @@ The file aims for memorability and consistency. As a result, a small number of t
 * **Logograms/undeciphered**: Anatolian Hieroglyphs, Cuneiform, Cypro-Minoan, Egyptian Hieroglyphs, Linear A&B, Phaistos Disc (4835): 𔐅 𒆛 𒿌 𓀁 𐙞 𐇑 etc
 * Language names (150): 🇯🇵 日本語 🇮🇷 ⁧فارس⁩ 🇻🇳 Tiếng Việt etc
 
-### Symbols (6249)
-* **Emoji** (1524): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
+### Symbols (6327)
+* **Emoji** (1531): 😉 👌🏾 🇳🇿 🫡 👉🏼 💔 🤣 🤦🏽‍♀️ 🏳️‍⚧️ ✨ etc
 * **Sprites** (247): 🗫 🯅 ㋡ etc
-* **Math and science** (675): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
+* **Math and science** (676): ρ(∂v⃗/∂t + (v⃗·∇)v) ∫πeⁱᶿ dθ etc.
 * **APL** (107): ⍟ ⍫ ⍉ etc
 * **Technical** (108): ⏻ ⎙ ⌘ etc
 * **Numerals** (403): 𝍸𝍷 𝍵 Ⅻ ↁ etc
-* **Music** (558): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
-* **Games** (362): ♞c6 🩡 🂽 🁖 🀄︎ etc
-* **Astrology** (92): ♈ 🐉 🌒 ☿ ♇ etc
+* **Music** (578): 𝄞 𝅗𝅨𝅥 𝅃𝅥𝅮 𝆍𝆑𝆎 etc
+* **Games** (366): ♞c6 🩡 🂽 🁖 🀄︎ etc
+* **Astrology** (113): ♈ 🐉 🌒 ☿ ♇ etc
 * **Alchemical symbols** (116): 🜇 🜢 🝖 etc
-* **I Ching** (166): ䷇ ☰☷☲☵ etc
+* **Divination symbols** (182): ䷇ ☰☷☲☵ etc
 * **Hieroglyphs** (300): 𓁖 𓁹 𓃠 etc
-* **Arrows** (462): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
+* **Arrows** (471): ↦ ↺ ⇄ ⇼ ⏎ ⇬ etc
 * **Geometric shapes** (310): ⬛ ⬚ 🟣 ◐ ◭ ◈ ✶ etc
 * **Box drawing** (819): ╞╦╕ etc
