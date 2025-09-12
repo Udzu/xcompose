@@ -1040,6 +1040,8 @@ include "%L"
 <Multi_key> <X> <H>                 : "Ꭓ"  UA7B3   # LATIN CAPITAL LETTER CHI
 <Multi_key> <Y> <R>                 : "Ʀ"  U01A6   # LATIN LETTER YR
 <Multi_key> <Z> <H>                 : "Ʒ"  U01B7   # LATIN CAPITAL LETTER EZH
+<Multi_key> <question> <less> <asciicircum> : "꟎"  UA7CE  # LATIN CAPITAL LETTER PHARYNGEAL VOICED FRICATIVE
+<Multi_key> <question> <less> <underscore>  : "꟏"  UA7CF  # LATIN SMALL LETTER PHARYNGEAL VOICED FRICATIVE
 
 # various other letters
 
@@ -1083,6 +1085,7 @@ include "%L"
 <Multi_key> <s> <d>                 : "ꟙ"  UA7D9  # LATIN SMALL LETTER SIGMOID S
 <Multi_key> <S> <R>                 : "Ꟗ"  UA7D6  # LATIN CAPITAL LETTER MIDDLE SCOTS S
 <Multi_key> <s> <R>                 : "ꟗ"  UA7D7  # LATIN SMALL LETTER MIDDLE SCOTS S
+<Multi_key> <2> <T> <H>             : "꟒"  UA7D2  # LATIN CAPITAL LETTER DOUBLE THORN
 <Multi_key> <2> <t> <h>             : "ꟓ"  UA7D3  # LATIN SMALL LETTER DOUBLE THORN
 <Multi_key> <U> <underscore> <O>    : "Ȣ"  U0222   # LATIN CAPITAL LETTER OU (conflicts with Ū, use -U or U-)
 <Multi_key> <u> <underscore> <o>    : "ȣ"  U0223   # LATIN SMALL LETTER OU (conflicts with ū, use -u or u-)
@@ -1092,6 +1095,7 @@ include "%L"
 <Multi_key> <V> <n>                 : "ꝩ"  UA769  # LATIN SMALL LETTER VEND (not ideal, but vn=ň is taken)
 <Multi_key> <W> <N>                 : "Ƿ"  U01F7   # LATIN CAPITAL LETTER WYNN
 <Multi_key> <w> <n>                 : "ƿ"  U01BF   # LATIN LETTER WYNN
+<Multi_key> <2> <W> <N>             : "꟔"  UA7D4  # LATIN CAPITAL LETTER DOUBLE WYNN
 <Multi_key> <2> <w> <n>             : "ꟕ"  UA7D5  # LATIN SMALL LETTER DOUBLE WYNN
 <Multi_key> <w> <period>            : "ꭐ"  UAB50  # LATIN SMALL LETTER UI
 <Multi_key> <w> <v> <period>        : "ꭑ"  UAB51  # LATIN SMALL LETTER TURNED UI
@@ -1652,6 +1656,7 @@ include "%L"
 <Multi_key> <asciicircum> <underscore> <P>  : "ᴾ"  U1D3E   # MODIFIER LETTER CAPITAL P
 <Multi_key> <asciicircum> <underscore> <Q>  : "ꟴ"  UA7F4   # MODIFIER LETTER CAPITAL Q
 <Multi_key> <asciicircum> <underscore> <R>  : "ᴿ"  U1D3F   # MODIFIER LETTER CAPITAL R
+<Multi_key> <asciicircum> <underscore> <S> : "꟱"  UA7F1  # MODIFIER LETTER CAPITAL S
 <Multi_key> <asciicircum> <underscore> <T>  : "ᵀ"  U1D40   # MODIFIER LETTER CAPITAL T
 <Multi_key> <asciicircum> <underscore> <U>  : "ᵁ"  U1D41   # MODIFIER LETTER CAPITAL U
 <Multi_key> <asciicircum> <underscore> <V>  : "ⱽ"  U2C7D   # MODIFIER LETTER CAPITAL V
@@ -4353,6 +4358,7 @@ include "%L"
 <Multi_key> <a> <x> <b> <period> <n>     : "ݨ"  U0768  # ARABIC LETTER NOON WITH SMALL TAH
 <Multi_key> <a> <x> <v> <n>              : "ݩ"  U0769  # ARABIC LETTER NOON WITH SMALL V
 <Multi_key> <a> <x> <asciicircum> <n>    : "ࢉ"  U0889  # ARABIC LETTER NOON WITH INVERTED SMALL V
+<Multi_key> <a> <x> <o> <n>              : "࢏"  U088F  # ARABIC LETTER NOON WITH RING ABOVE
 
 <Multi_key> <a> <x> <asciicircum> <h>    : "ۿ"  U06FF  # ARABIC LETTER HEH WITH INVERTED V
 <Multi_key> <a> <x> <y> <h>              : "ۀ"  U06C0  # ARABIC LETTER HEH WITH YEH ABOVE
@@ -8796,6 +8802,8 @@ include "%L"
 <Multi_key> <b> <k> <x> <Return>         : "ೱ"  U0CF1  # KANNADA SIGN JIHVAMULIYA
 <Multi_key> <b> <k> <f> <Return>         : "ೲ"  U0CF2  # KANNADA SIGN UPADHMANIYA
 
+<Multi_key> <b> <k> <braceright> <s> <h> <r> <i> <i> : "೜"  U0CDC  # KANNADA ARCHAIC SHRII
+
 # Numerals
 
 <Multi_key> <b> <k> <numbersign> <0>     : "೦"  U0CE6  # KANNADA DIGIT ZERO
@@ -10647,6 +10655,14 @@ include "%L"
 <Multi_key> <b> <S> <H> <a> <i> <space> : "𑆎"  U1118E  # SHARADA LETTER AI
 <Multi_key> <b> <S> <H> <o> <o> <space> : "𑆏"  U1118F  # SHARADA LETTER O
 <Multi_key> <b> <S> <H> <a> <u> <space> : "𑆐"  U11190  # SHARADA LETTER AU
+<Multi_key> <b> <S> <H> <o> <e> <Return> : "𑭠"  U11B60  # SHARADA VOWEL SIGN OE
+<Multi_key> <b> <S> <H> <o> <o> <e> <Return> : "𑭡"  U11B61  # SHARADA VOWEL SIGN OOE
+<Multi_key> <b> <S> <H> <u> <e> <Return> : "𑭢"  U11B62  # SHARADA VOWEL SIGN UE
+<Multi_key> <b> <S> <H> <u> <u> <e> <Return> : "𑭣"  U11B63  # SHARADA VOWEL SIGN UUE
+<Multi_key> <b> <S> <H> <e> <Return> : "𑭤"  U11B64  # SHARADA VOWEL SIGN SHORT E
+<Multi_key> <b> <S> <H> <o> <Return> : "𑭥"  U11B65  # SHARADA VOWEL SIGN SHORT O
+<Multi_key> <b> <S> <H> <asciicircum> <e> <Return> : "𑭦"  U11B66  # SHARADA VOWEL SIGN CANDRA E
+<Multi_key> <b> <S> <H> <asciicircum> <o> <Return> : "𑭧"  U11B67  # SHARADA VOWEL SIGN CANDRA O
 
 # Dependent vowels
 
@@ -11125,6 +11141,8 @@ include "%L"
 
 <Multi_key> <b> <T> <S>                  : "ఽ"  U0C3D  # TELUGU SIGN AVAGRAHA
 <Multi_key> <b> <T> <at>                 : "౷"  U0C77  # TELUGU SIGN SIDDHAM
+
+<Multi_key> <b> <T> <braceright> <s> <h> <r> <i> <i> : "౜"  U0C5C  # TELUGU ARCHAIC SHRII
 
 # Numerals
 
@@ -13481,6 +13499,60 @@ include "%L"
 <Multi_key> <C> <A> <S> <x> : "ᕁ"  U1541  # CANADIAN SYLLABICS SAYISI YI
 <Multi_key> <C> <A> <S> <asciicircum> <Z> : "ᙆ"  U1646  # CANADIAN SYLLABICS CARRIER Z
 <Multi_key> <C> <A> <S> <asciicircum> <bar> <Z> : "ᙇ"  U1647  # CANADIAN SYLLABICS CARRIER INITIAL Z
+
+# (b/B = Beria)
+
+<Multi_key> <C> <b> <A> : "𖺠"  U16EA0  # BERIA ERFE CAPITAL LETTER ARKAB
+<Multi_key> <C> <b> <B> : "𖺡"  U16EA1  # BERIA ERFE CAPITAL LETTER BASIGNA
+<Multi_key> <C> <b> <D> : "𖺢"  U16EA2  # BERIA ERFE CAPITAL LETTER DARBAI
+<Multi_key> <C> <b> <E> : "𖺣"  U16EA3  # BERIA ERFE CAPITAL LETTER EH
+<Multi_key> <C> <b> <F> : "𖺤"  U16EA4  # BERIA ERFE CAPITAL LETTER FITKO
+<Multi_key> <C> <b> <G> : "𖺥"  U16EA5  # BERIA ERFE CAPITAL LETTER GOWAY
+<Multi_key> <C> <b> <H> : "𖺦"  U16EA6  # BERIA ERFE CAPITAL LETTER HIRDEABO
+<Multi_key> <C> <b> <I> : "𖺧"  U16EA7  # BERIA ERFE CAPITAL LETTER I
+<Multi_key> <C> <b> <J> : "𖺨"  U16EA8  # BERIA ERFE CAPITAL LETTER DJAI
+<Multi_key> <C> <b> <K> : "𖺩"  U16EA9  # BERIA ERFE CAPITAL LETTER KOBO
+<Multi_key> <C> <b> <L> : "𖺪"  U16EAA  # BERIA ERFE CAPITAL LETTER LAKKO
+<Multi_key> <C> <b> <M> : "𖺫"  U16EAB  # BERIA ERFE CAPITAL LETTER MERI
+<Multi_key> <C> <b> <N> : "𖺬"  U16EAC  # BERIA ERFE CAPITAL LETTER NINI
+<Multi_key> <C> <B> <G> <N> : "𖺭"  U16EAD  # BERIA ERFE CAPITAL LETTER GNA
+<Multi_key> <C> <B> <N> <G> : "𖺮"  U16EAE  # BERIA ERFE CAPITAL LETTER NGAY
+<Multi_key> <C> <b> <O> : "𖺯"  U16EAF  # BERIA ERFE CAPITAL LETTER OI
+<Multi_key> <C> <b> <P> : "𖺰"  U16EB0  # BERIA ERFE CAPITAL LETTER PI
+<Multi_key> <C> <b> <R> : "𖺱"  U16EB1  # BERIA ERFE CAPITAL LETTER ERIGO
+<Multi_key> <C> <B> <R> : "𖺲"  U16EB2  # BERIA ERFE CAPITAL LETTER ERIGO TAMURA
+<Multi_key> <C> <b> <S> : "𖺳"  U16EB3  # BERIA ERFE CAPITAL LETTER SERI
+<Multi_key> <C> <B> <S> <H> : "𖺴"  U16EB4  # BERIA ERFE CAPITAL LETTER SHEP
+<Multi_key> <C> <b> <T> : "𖺵"  U16EB5  # BERIA ERFE CAPITAL LETTER TATASOUE
+<Multi_key> <C> <b> <U> : "𖺶"  U16EB6  # BERIA ERFE CAPITAL LETTER UI
+<Multi_key> <C> <b> <W> : "𖺷"  U16EB7  # BERIA ERFE CAPITAL LETTER WASSE
+<Multi_key> <C> <b> <Y> : "𖺸"  U16EB8  # BERIA ERFE CAPITAL LETTER AY
+
+<Multi_key> <C> <b> <a> : "𖺻"  U16EBB  # BERIA ERFE SMALL LETTER ARKAB
+<Multi_key> <C> <b> <b> : "𖺼"  U16EBC  # BERIA ERFE SMALL LETTER BASIGNA
+<Multi_key> <C> <b> <d> : "𖺽"  U16EBD  # BERIA ERFE SMALL LETTER DARBAI
+<Multi_key> <C> <b> <e> : "𖺾"  U16EBE  # BERIA ERFE SMALL LETTER EH
+<Multi_key> <C> <b> <f> : "𖺿"  U16EBF  # BERIA ERFE SMALL LETTER FITKO
+<Multi_key> <C> <b> <g> : "𖻀"  U16EC0  # BERIA ERFE SMALL LETTER GOWAY
+<Multi_key> <C> <b> <h> : "𖻁"  U16EC1  # BERIA ERFE SMALL LETTER HIRDEABO
+<Multi_key> <C> <b> <i> : "𖻂"  U16EC2  # BERIA ERFE SMALL LETTER I
+<Multi_key> <C> <b> <j> : "𖻃"  U16EC3  # BERIA ERFE SMALL LETTER DJAI
+<Multi_key> <C> <b> <k> : "𖻄"  U16EC4  # BERIA ERFE SMALL LETTER KOBO
+<Multi_key> <C> <b> <l> : "𖻅"  U16EC5  # BERIA ERFE SMALL LETTER LAKKO
+<Multi_key> <C> <b> <m> : "𖻆"  U16EC6  # BERIA ERFE SMALL LETTER MERI
+<Multi_key> <C> <b> <n> : "𖻇"  U16EC7  # BERIA ERFE SMALL LETTER NINI
+<Multi_key> <C> <B> <g> <n> : "𖻈"  U16EC8  # BERIA ERFE SMALL LETTER GNA
+<Multi_key> <C> <B> <n> <g> : "𖻉"  U16EC9  # BERIA ERFE SMALL LETTER NGAY
+<Multi_key> <C> <b> <o> : "𖻊"  U16ECA  # BERIA ERFE SMALL LETTER OI
+<Multi_key> <C> <b> <p> : "𖻋"  U16ECB  # BERIA ERFE SMALL LETTER PI
+<Multi_key> <C> <b> <r> : "𖻌"  U16ECC  # BERIA ERFE SMALL LETTER ERIGO
+<Multi_key> <C> <B> <r> : "𖻍"  U16ECD  # BERIA ERFE SMALL LETTER ERIGO TAMURA
+<Multi_key> <C> <b> <s> : "𖻎"  U16ECE  # BERIA ERFE SMALL LETTER SERI
+<Multi_key> <C> <B> <s> <h> : "𖻏"  U16ECF  # BERIA ERFE SMALL LETTER SHEP
+<Multi_key> <C> <b> <t> : "𖻐"  U16ED0  # BERIA ERFE SMALL LETTER TATASOUE
+<Multi_key> <C> <b> <u> : "𖻑"  U16ED1  # BERIA ERFE SMALL LETTER UI
+<Multi_key> <C> <b> <w> : "𖻒"  U16ED2  # BERIA ERFE SMALL LETTER WASSE
+<Multi_key> <C> <b> <y> : "𖻓"  U16ED3  # BERIA ERFE SMALL LETTER AY
 
 # (c = Carrier Syllabics) see https://www.ydli.org/dakinfo/dulkwah.htm
 
@@ -15976,7 +16048,7 @@ include "%L"
 # (g) Greek (and other nearby scripts) #
 ########################################
 
-# covers Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian, Todhri & Vithkuqi
+# covers Coptic, Cypriot, Elbasan, Gothic, Linear B, Lycian, Sidetic, Todhri & Vithkuqi
 
 <Multi_key> <g> <c> <A> : "Α"  U0391   # GREEK CAPITAL LETTER ALPHA
 <Multi_key> <g> <c> <B> : "Β"  U0392   # GREEK CAPITAL LETTER BETA
@@ -16635,6 +16707,35 @@ include "%L"
 <Multi_key> <g> <L> <asciitilde> <e> : "𐊚"  U1029A  # LYCIAN LETTER EN
 <Multi_key> <g> <L> <h> : "𐊛"  U1029B  # LYCIAN LETTER H
 <Multi_key> <g> <L> <x> : "𐊜"  U1029C  # LYCIAN LETTER X
+
+# (s = Sidetic)
+
+<Multi_key> <g> <s> <a> : "𐥀"  U10940  # SIDETIC LETTER N01
+<Multi_key> <g> <s> <e> : "𐥁"  U10941  # SIDETIC LETTER N02
+<Multi_key> <g> <s> <i> : "𐥂"  U10942  # SIDETIC LETTER N03
+<Multi_key> <g> <s> <o> : "𐥃"  U10943  # SIDETIC LETTER N04
+<Multi_key> <g> <s> <u> : "𐥄"  U10944  # SIDETIC LETTER N05
+<Multi_key> <g> <s> <w> : "𐥅"  U10945  # SIDETIC LETTER N06
+<Multi_key> <g> <s> <y> : "𐥆"  U10946  # SIDETIC LETTER N07
+<Multi_key> <g> <s> <p> : "𐥇"  U10947  # SIDETIC LETTER N08
+<Multi_key> <g> <s> <D> : "𐥈"  U10948  # SIDETIC LETTER N09 (d2)
+<Multi_key> <g> <s> <m> : "𐥉"  U10949  # SIDETIC LETTER N10
+<Multi_key> <g> <s> <t> : "𐥊"  U1094A  # SIDETIC LETTER N11
+<Multi_key> <g> <s> <d> : "𐥋"  U1094B  # SIDETIC LETTER N12
+<Multi_key> <g> <s> <8> : "𐥌"  U1094C  # SIDETIC LETTER N13 (θ)
+<Multi_key> <g> <s> <s> : "𐥍"  U1094D  # SIDETIC LETTER N14
+<Multi_key> <g> <s> <S> : "𐥎"  U1094E  # SIDETIC LETTER N15 (s2)
+<Multi_key> <g> <s> <n> : "𐥏"  U1094F  # SIDETIC LETTER N16
+<Multi_key> <g> <s> <l> : "𐥐"  U10950  # SIDETIC LETTER N17
+<Multi_key> <g> <s> <T> : "𐥑"  U10951  # SIDETIC LETTER N18 (𐌣)
+<Multi_key> <g> <s> <g> : "𐥒"  U10952  # SIDETIC LETTER N19
+<Multi_key> <g> <s> <x> : "𐥓"  U10953  # SIDETIC LETTER N20 (χ)
+<Multi_key> <g> <s> <r> : "𐥔"  U10954  # SIDETIC LETTER N21
+<Multi_key> <g> <s> <V> : "𐥕"  U10955  # SIDETIC LETTER N22
+<Multi_key> <g> <s> <k> : "𐥖"  U10956  # SIDETIC LETTER N23
+<Multi_key> <g> <s> <b> : "𐥗"  U10957  # SIDETIC LETTER N24
+<Multi_key> <g> <s> <N> : "𐥘"  U10958  # SIDETIC LETTER N25
+<Multi_key> <g> <s> <z> : "𐥙"  U10959  # SIDETIC LETTER N26
 
 # (p/P = Coptic) (not the best abbreviation, but think gp = egyptian)
 
