@@ -12640,7 +12640,7 @@ include "%L"
 
 # covers Beria, Canadian Aboriginal Syllabics (including Carrier, Cree & Inuktitut shortcuts), Cherokee, Deseret,
 # Kayah Li, Medefeidrin, Mru, Nag Mundari, Nyiakeng Puachue Hmong, Ol Chiki, Old Onal, Osage, Pahawh Hmong,
-# Pau Cin Hau, Shavian, Sora Sompeng, Sunuwar, Tangsa, Toto, Wancho & Warang Citi
+# Pau Cin Hau, Shavian, Sora Sompeng, Sunuwar, Tangsa, Tolong Siki, Toto, Wancho & Warang Citi
 
 # (AS = Canadian Aboriginal Syllabics)
 
@@ -22061,9 +22061,9 @@ include "HangulSyllables"
 <Multi_key> <S> <space> <parenleft> : "𝪋"  U1DA8B  # SIGNWRITING PARENTHESIS
 <Multi_key> <S> <space> <parenright> : "𝪋𝪤"  U1DA8B U1DA44 # SIGNWRITING CLOSE PARENTHESIS
 
-########################################################
-# (t) Thai (and Cham, Khmer, Lao, Tai Tham & Tai Viet) #
-########################################################
+################################################################
+# (t) Thai (and Cham, Khmer, Lao, Tai Tham, Tai Viet & Tai Yo) #
+################################################################
 
 # (based on ISO 11940)
 
@@ -22776,6 +22776,68 @@ include "HangulSyllables"
 <Multi_key> <t> <v> <quotedbl>           : "ꫝ"  UAADD  # TAI VIET SYMBOL SAM
 <Multi_key> <t> <v> <bracketleft>        : "꫞"  UAADE  # TAI VIET SYMBOL HO HOI
 <Multi_key> <t> <v> <bracketright>       : "꫟"  UAADF  # TAI VIET SYMBOL KOI KOI
+
+# (Y = Tai Yo)
+
+<Multi_key> <t> <Y> <k> <underscore> : "𞛀"  U1E6C0  # TAI YO LETTER LOW KO
+<Multi_key> <t> <Y> <k> <asciicircum> : "𞛁"  U1E6C1  # TAI YO LETTER HIGH KO
+<Multi_key> <t> <Y> <k> <h> <underscore> : "𞛂"  U1E6C2  # TAI YO LETTER LOW KHO
+<Multi_key> <t> <Y> <k> <h> <asciicircum> : "𞛃"  U1E6C3  # TAI YO LETTER HIGH KHO
+<Multi_key> <t> <Y> <g> : "𞛄"  U1E6C4  # TAI YO LETTER GO
+<Multi_key> <t> <Y> <n> <g> : "𞛅"  U1E6C5  # TAI YO LETTER NGO
+<Multi_key> <t> <Y> <c> : "𞛆"  U1E6C6  # TAI YO LETTER CO
+<Multi_key> <t> <Y> <x> <underscore> : "𞛇"  U1E6C7  # TAI YO LETTER LOW XO
+<Multi_key> <t> <Y> <x> <asciicircum> : "𞛈"  U1E6C8  # TAI YO LETTER HIGH XO
+<Multi_key> <t> <Y> <n> <y> <underscore> : "𞛉"  U1E6C9  # TAI YO LETTER LOW NYO
+<Multi_key> <t> <Y> <n> <y> <asciicircum> : "𞛊"  U1E6CA  # TAI YO LETTER HIGH NYO
+<Multi_key> <t> <Y> <d> : "𞛋"  U1E6CB  # TAI YO LETTER DO
+<Multi_key> <t> <Y> <t> <underscore> : "𞛌"  U1E6CC  # TAI YO LETTER LOW TO
+<Multi_key> <t> <Y> <t> <asciicircum> : "𞛍"  U1E6CD  # TAI YO LETTER HIGH TO
+<Multi_key> <t> <Y> <t> <h> : "𞛎"  U1E6CE  # TAI YO LETTER THO
+<Multi_key> <t> <Y> <n> <space> : "𞛏"  U1E6CF  # TAI YO LETTER NO
+<Multi_key> <t> <Y> <b> : "𞛐"  U1E6D0  # TAI YO LETTER BO
+<Multi_key> <t> <Y> <p> <underscore> : "𞛑"  U1E6D1  # TAI YO LETTER LOW PO
+<Multi_key> <t> <Y> <p> <asciicircum> : "𞛒"  U1E6D2  # TAI YO LETTER HIGH PO
+<Multi_key> <t> <Y> <p> <h> : "𞛓"  U1E6D3  # TAI YO LETTER PHO
+<Multi_key> <t> <Y> <f> <underscore> : "𞛔"  U1E6D4  # TAI YO LETTER LOW FO
+<Multi_key> <t> <Y> <f> <asciicircum> : "𞛕"  U1E6D5  # TAI YO LETTER HIGH FO
+<Multi_key> <t> <Y> <m> : "𞛖"  U1E6D6  # TAI YO LETTER MO
+<Multi_key> <t> <Y> <y> : "𞛗"  U1E6D7  # TAI YO LETTER YO
+<Multi_key> <t> <Y> <l> : "𞛘"  U1E6D8  # TAI YO LETTER LO
+<Multi_key> <t> <Y> <v> : "𞛙"  U1E6D9  # TAI YO LETTER VO
+<Multi_key> <t> <Y> <h> <underscore> : "𞛚"  U1E6DA  # TAI YO LETTER LOW HO
+<Multi_key> <t> <Y> <h> <asciicircum> : "𞛛"  U1E6DB  # TAI YO LETTER HIGH HO
+<Multi_key> <t> <Y> <q> : "𞛜"  U1E6DC  # TAI YO LETTER QO
+<Multi_key> <t> <Y> <apostrophe> : "𞛜"  U1E6DC  # TAI YO LETTER QO
+<Multi_key> <t> <Y> <k> <v> <underscore> : "𞛝"  U1E6DD  # TAI YO LETTER LOW KVO
+<Multi_key> <t> <Y> <k> <v> <asciicircum> : "𞛞"  U1E6DE  # TAI YO LETTER HIGH KVO
+
+<Multi_key> <t> <Y> <a> <a> : "𞛠"  U1E6E0  # TAI YO LETTER AA
+<Multi_key> <t> <Y> <i> <space> : "𞛡"  U1E6E1  # TAI YO LETTER I
+<Multi_key> <t> <Y> <u> <e> <space> : "𞛢"  U1E6E2  # TAI YO LETTER UE
+<Multi_key> <t> <Y> <u> <e> <Return> : "𞛣"  U1E6E3  # TAI YO SIGN UE
+<Multi_key> <t> <Y> <u> <space> : "𞛤"  U1E6E4  # TAI YO LETTER U
+<Multi_key> <t> <Y> <a> <e> : "𞛥"  U1E6E5  # TAI YO LETTER AE
+<Multi_key> <t> <Y> <a> <u> <Return> : "𞛦"  U1E6E6  # TAI YO SIGN AU
+<Multi_key> <t> <Y> <o> <space> : "𞛧"  U1E6E7  # TAI YO LETTER O
+<Multi_key> <t> <Y> <e> : "𞛨"  U1E6E8  # TAI YO LETTER E
+<Multi_key> <t> <Y> <i> <a> : "𞛩"  U1E6E9  # TAI YO LETTER IA
+<Multi_key> <t> <Y> <u> <e> <a> : "𞛪"  U1E6EA  # TAI YO LETTER UEA
+<Multi_key> <t> <Y> <u> <a> : "𞛫"  U1E6EB  # TAI YO LETTER UA
+<Multi_key> <t> <Y> <o> <o> : "𞛬"  U1E6EC  # TAI YO LETTER OO
+<Multi_key> <t> <Y> <a> <u> <e> : "𞛭"  U1E6ED  # TAI YO LETTER AUE
+
+<Multi_key> <t> <Y> <a> <y> <Return> : "𞛮"  U1E6EE  # TAI YO SIGN AY
+<Multi_key> <t> <Y> <a> <n> <g> <Return> : "𞛯"  U1E6EF  # TAI YO SIGN ANG
+<Multi_key> <t> <Y> <a> <n> <space> : "𞛰"  U1E6F0  # TAI YO LETTER AN
+<Multi_key> <t> <Y> <a> <m> : "𞛱"  U1E6F1  # TAI YO LETTER AM
+<Multi_key> <t> <Y> <a> <k> : "𞛲"  U1E6F2  # TAI YO LETTER AK
+<Multi_key> <t> <Y> <a> <t> : "𞛳"  U1E6F3  # TAI YO LETTER AT
+<Multi_key> <t> <Y> <a> <p> : "𞛴"  U1E6F4  # TAI YO LETTER AP
+<Multi_key> <t> <Y> <o> <m> <Return> : "𞛵"  U1E6F5  # TAI YO SIGN OM
+
+<Multi_key> <t> <Y> <O> <o> : "𞛾"  U1E6FE  # TAI YO SYMBOL MUEANG
+<Multi_key> <t> <Y> <quotedbl> : "𞛿"  U1E6FF  # TAI YO XAM LAI
 
 ##################################################
 # (z) Zhuyin/Bopomofo (and other nearby scripts) #
