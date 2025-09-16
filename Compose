@@ -300,12 +300,40 @@ include "%L"
 <Multi_key> <2> <parenleft> <parenright> <Return>      : "᪼"  U1ABC  # COMBINING DOUBLE PARENTHESES ABOVE
 <Multi_key> <parenleft> <space> <Return>               : "᫁"  U1AC1  # COMBINING LEFT PARENTHESIS ABOVE LEFT (conflicts with ˘, use ␣()
 <Multi_key> <space> <parenright> <Return>              : "᫂"  U1AC2  # COMBINING RIGHT PARENTHESIS ABOVE RIGHT
-<Multi_key> <asciicircum> <bracketleft> <bracketright> <Return> : "᫅"  U1AC5  # COMBINING SQUARE BRACKETS ABOVE
+<Multi_key> <bracketleft> <space> <bracketright> <Return> : "᫅"  U1AC5  # COMBINING SQUARE BRACKETS ABOVE
 <Multi_key> <numbersign> <Return>                      : "᫆"  U1AC6  # COMBINING NUMBER SIGN ABOVE
 <Multi_key> <w> <Return>                               : "᫇"  U1AC7  # COMBINING INVERTED DOUBLE ARCH ABOVE (for ◌ᷓ use a[Return])
 <Multi_key> <asciicircum> <asciicircum> <plus> <Return> : "᫈"  U1AC8  # COMBINING PLUS SIGN ABOVE
 <Multi_key> <plus> <plus> <Return>                     : "᫉"  U1AC9  # COMBINING DOUBLE PLUS SIGN ABOVE (conflicts with useless #)
+<Multi_key> <Multi_key> <v> <v> <Return>               : "᫏"  U1ACF  # COMBINING DOUBLE CARON
+<Multi_key> <Multi_key> <bar> <slash> <Return>         : "᫐"  U1AD0  # COMBINING VERTICAL-LINE-ACUTE
+<Multi_key> <Multi_key> <backslash> <bar> <Return>     : "᫑"  U1AD1  # COMBINING GRAVE-VERTICAL-LINE
+<Multi_key> <Multi_key> <bar> <backslash> <Return>     : "᫒"  U1AD2  # COMBINING VERTICAL-LINE-GRAVE
+<Multi_key> <Multi_key> <slash> <bar> <Return>         : "᫓"  U1AD3  # COMBINING ACUTE-VERTICAL-LINE
+<Multi_key> <Multi_key> <bar> <minus> <Return>         : "᫔"  U1AD4  # COMBINING VERTICAL-LINE-MACRON
+<Multi_key> <Multi_key> <minus> <bar> <Return>         : "᫕"  U1AD5  # COMBINING MACRON-VERTICAL-LINE
+<Multi_key> <Multi_key> <bar> <asciicircum> <Return>   : "᫖"  U1AD6  # COMBINING VERTICAL-LINE-ACUTE-GRAVE
+<Multi_key> <Multi_key> <bar> <slash> <backslash> <Return> : "᫖"  U1AD6  # COMBINING VERTICAL-LINE-ACUTE-GRAVE
+<Multi_key> <Multi_key> <bar> <v> <Return>             : "᫗"  U1AD7  # COMBINING VERTICAL-LINE-GRAVE-ACUTE
+<Multi_key> <Multi_key> <bar> <backslash> <slash> <Return> : "᫗"  U1AD7  # COMBINING VERTICAL-LINE-GRAVE-ACUTE
+<Multi_key> <Multi_key> <minus> <asciicircum> <Return> : "᫘"  U1AD8  # COMBINING MACRON-ACUTE-GRAVE
+<Multi_key> <Multi_key> <minus> <slash> <backslash> <Return> : "᫘"  U1AD8  # COMBINING MACRON-ACUTE-GRAVE
+<Multi_key> <asciicircum> <numbersign> <Return>        : "᫙"  U1AD9  # COMBINING SHARP SIGN
+<Multi_key> <asciicircum> <b> <Return>                 : "᫚"  U1ADA  # COMBINING FLAT SIGN
+<Multi_key> <T> <Return>                               : "᫛"  U1ADB  # COMBINING DOWN TACK ABOVE
+<Multi_key> <quotedbl> <backslash> <Return>            : "᫜"  U1ADC  # COMBINING DIAERESIS WITH RAISED LEFT DOT
 <Multi_key> <apostrophe> <quotedbl> <Return>           : "᫋"  U1ACB  # COMBINING TRIPLE ACUTE ACCENT (not ideal, but ''' and 3' are taken)
+<Multi_key> <T> <greater> <Return>                     : "᫠"  U1AE0  # COMBINING LEFT TACK ABOVE
+<Multi_key> <T> <less> <Return>                        : "᫡"  U1AE1  # COMBINING RIGHT TACK ABOVE (conflicts with Ť, use vT)
+<Multi_key> <asciicircum> <underscore> <minus> <Return> : "᫢"  U1AE2  # COMBINING MINUS SIGN ABOVE
+<Multi_key> <bracketright> <Return>                    : "᫣"  U1AE3  # COMBINING INVERTED BRIDGE ABOVE
+<Multi_key> <asciicircum> <bracketleft> <bracketright> <Return> : "᫤"  U1AE4  # COMBINING SQUARE ABOVE
+<Multi_key> <asciicircum> <M> <Return>                 : "᫥"  U1AE5  # COMBINING SEAGULL ABOVE
+<Multi_key> <m> <Return>                               : "᫧"  U1AE7  # COMBINING DOUBLE ARCH ABOVE
+<Multi_key> <asciicircum> <asciicircum> <equal> <Return> : "᫨"  U1AE8  # COMBINING EQUALS SIGN ABOVE
+<Multi_key> <notsign> <less>                           : "᫩"  U1AE9  # COMBINING LEFT ANGLE CENTRED ABOVE
+<Multi_key> <Multi_key> <minus> <comma> <less>         : "᫩"  U1AE9  # COMBINING LEFT ANGLE CENTRED ABOVE
+<Multi_key> <asciicircum> <asciicircum> <asciicircum> <bar> <Return> : "᫪"  U1AEA  # COMBINING UPWARDS ARROW ABOVE
 <Multi_key> <period> <grave> <period> <Return>         : "᷀"  U1DC0   # COMBINING DOTTED GRAVE ACCENT
 <Multi_key> <period> <apostrophe> <period> <Return>    : "᷁"  U1DC1   # COMBINING DOTTED ACUTE ACCENT
 <Multi_key> <underscore> <apostrophe> <space> <Return> : "᷄"  U1DC4   # COMBINING MACRON-ACUTE (conflicts with ⍘, use [Return]_' defined below)
@@ -396,6 +424,9 @@ include "%L"
 <Multi_key> <underscore> <underscore> <parenleft> <space> <Return> : "᫃"  U1AC3  # COMBINING LEFT PARENTHESIS BELOW LEFT (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <space> <parenright> <Return> : "᫄"  U1AC4  # COMBINING RIGHT PARENTHESIS BELOW RIGHT (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <plus> <plus> <Return> : "᫊"  U1ACA  # COMBINING DOUBLE PLUS SIGN BELOW (conflicts with ¯, use -^)
+<Multi_key> <underscore> <period> <o> <Return>         : "᫝"  U1ADD  # COMBINING DOT-AND-RING BELOW (conflicts with ȱ, use -.o or _.o␣)
+<Multi_key> <underscore> <period> <o> <space>          : "ȱ"  U0231  # LATIN SMALL LETTER O WITH DOT ABOVE AND MACRON (overrides, alternatively -.o)
+<Multi_key> <underscore> <m> <Return>                  : "᫦"  U1AE6  # COMBINING DOUBLE ARCH BELOW
 <Multi_key> <underscore> <z> <Return>                  : "᷏"  U1DCF  # COMBINING ZIGZAG BELOW
 <Multi_key> <underscore> <underscore> <i> <s> <Return> : "᷐"  U1DD0  # COMBINING IS BELOW (conflicts with ¯, use -^)
 <Multi_key> <underscore> <underscore> <greater> <bracketright> <Return> : "᷹"  U1DF9  # COMBINING WIDE INVERTED BRIDGE BELOW (conflicts with ¯, use -^)
@@ -436,6 +467,7 @@ include "%L"
 <Multi_key> <2> <underscore> <greater> <Return>        : "͢"  U0362   # COMBINING DOUBLE RIGHTWARDS ARROW BELOW
 <Multi_key> <2> <underscore> <u> <v> <Return>          : "᷼"  U1DFC   # COMBINING DOUBLE INVERTED BREVE BELOW (alternatively __([Return])
 <Multi_key> <2> <asciicircum> <Return>                 : "᷍"  U1DCD   # COMBINING DOUBLE CIRCUMFLEX ABOVE (conflicts with ², use ^2)
+<Multi_key> <2> <asciicircum> <greater> <Return>       : "᫫"  U1AEB  # COMBINING DOUBLE RIGHTWARDS ARROW ABOVE (conflicts with ², use ^2)
 
 <Multi_key> <2> <L> <u> <v> <Return>                   : "︠"  UFE20  # COMBINING LIGATURE LEFT HALF
 <Multi_key> <2> <R> <u> <v> <Return>                   : "︡"  UFE21  # COMBINING LIGATURE RIGHT HALF
@@ -1218,6 +1250,7 @@ include "%L"
 <Multi_key> <minus> <l>             : "ƚ"  U019A  # LATIN SMALL LETTER L WITH BAR (conflicts with £, use l-)
 <Multi_key> <minus> <minus> <L>     : "Ꝉ"  UA748  # LATIN CAPITAL LETTER L WITH HIGH STROKE
 <Multi_key> <minus> <minus> <l>     : "ꝉ"  UA749  # LATIN SMALL LETTER L WITH HIGH STROKE
+<Multi_key> <minus> <period> <o>    : "ȱ"  U0231  # LATIN SMALL LETTER O WITH DOT ABOVE AND MACRON
 <Multi_key> <minus> <p>             : "ꝑ"  UA751  # LATIN SMALL LETTER P WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <P>             : "Ꝑ"  UA750  # LATIN CAPITAL LETTER P WITH STROKE THROUGH DESCENDER
 <Multi_key> <minus> <minus> <P>     : "Ᵽ"  U2C63  # LATIN CAPITAL LETTER P WITH STROKE
@@ -1806,7 +1839,7 @@ include "%L"
 <Multi_key> <underscore> <j>              : "ⱼ"  U2C7C   # LATIN SUBSCRIPT SMALL LETTER J
 <Multi_key> <underscore> <k>              : "ₖ"  U2096   # LATIN SUBSCRIPT SMALL LETTER K
 <Multi_key> <underscore> <l>              : "ₗ"  U2097   # LATIN SUBSCRIPT SMALL LETTER L
-<Multi_key> <underscore> <m>              : "ₘ"  U2098   # LATIN SUBSCRIPT SMALL LETTER M
+<Multi_key> <underscore> <m> <underscore> : "ₘ"  U2098   # LATIN SUBSCRIPT SMALL LETTER M
 <Multi_key> <underscore> <n>              : "ₙ"  U2099   # LATIN SUBSCRIPT SMALL LETTER N
 <Multi_key> <underscore> <o> <underscore> : "ₒ"  U2092   # LATIN SUBSCRIPT SMALL LETTER O (conflicts with ō, use -o)
 <Multi_key> <underscore> <p>              : "ₚ"  U209A   # LATIN SUBSCRIPT SMALL LETTER P
@@ -4142,6 +4175,7 @@ include "%L"
 <Multi_key> <a> <semicolon> <greater> <greater> <Return> : "ࣻ"  U08FB  # ARABIC DOUBLE RIGHT ARROWHEAD ABOVE (conflicts with ą)
 <Multi_key> <a> <semicolon> <period> <greater> <greater> <Return> : "ࣼ"  U08FC  # ARABIC DOUBLE RIGHT ARROWHEAD ABOVE WITH DOT (conflicts with ą)
 <Multi_key> <a> <semicolon> <period> <greater> <Return> : "ࣽ"  U08FD  # ARABIC RIGHT ARROWHEAD ABOVE WITH DOT (conflicts with ą)
+<Multi_key> <a> <semicolon> <underscore> <bar> <bar> <Return> : "𐻺"  U10EFA  # ARABIC DOUBLE VERTICAL BAR BELOW (conflicts with ą)
 
 <Multi_key> <a> <semicolon> <period> <space>          : "﮲"  UFBB2  # ARABIC SYMBOL DOT ABOVE (conflicts with ą) (for ۔ use a;..)
 <Multi_key> <a> <semicolon> <underscore> <period> <space> : "﮳"  UFBB3  # ARABIC SYMBOL DOT BELOW (conflicts with ą)
@@ -4410,6 +4444,7 @@ include "%L"
 <Multi_key> <a> <x> <2> <underscore> <quotedbl> <y> : "ࢨ"  U08A8  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND HAMZA ABOVE
 <Multi_key> <a> <x> <period> <underscore> <quotedbl> <y> : "ࢩ"  U08A9  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND DOT ABOVE
 <Multi_key> <a> <x> <n> <underscore> <quotedbl> <y> : "ࢺ"  U08BA  # ARABIC LETTER YEH WITH TWO DOTS BELOW AND SMALL NOON ABOVE
+<Multi_key> <a> <x> <underscore> <quotedbl> <quotedbl> <y> : "𐻇"  U10EC7  # ARABIC LETTER YEH WITH FOUR DOTS BELOW
 
 <Multi_key> <a> <x> <m> <p>              : "ࢷ"  U08B7  # ARABIC LETTER PEH WITH SMALL MEEM ABOVE
 <Multi_key> <a> <x> <v> <p>              : "ࢾ"  U08BE  # ARABIC LETTER PEH WITH SMALL V
@@ -4501,6 +4536,7 @@ include "%L"
 <Multi_key> <a> <c> <underscore> <underscore> <a> <Return> : "ٖ"  U0656  # ARABIC SUBSCRIPT ALEF
 <Multi_key> <a> <c> <underscore> <underscore> <s> <Return> : "ۣ"  U06E3  # ARABIC SMALL LOW SEEN
 <Multi_key> <a> <c> <underscore> <underscore> <m> <Return> : "ۭ"  U06ED  # ARABIC SMALL LOW MEEM
+<Multi_key> <a> <c> <underscore> <underscore> <n> <Return> : "𐻻"  U10EFB  # ARABIC SMALL LOW NOON
 <Multi_key> <a> <c> <underscore> <underscore> <n> <i> <Return> : "ࣙ"  U08D9  # ARABIC SMALL LOW NOON WITH KASRA
 <Multi_key> <a> <c> <underscore> <underscore> <w> <Return> : "࣓"  U08D3  # ARABIC SMALL LOW WAW
 <Multi_key> <a> <c> <underscore> <underscore> <u> <Return> : "࣓"  U08D3  # ARABIC SMALL LOW WAW
@@ -12602,7 +12638,7 @@ include "%L"
 # (C) ConScripts # 
 ##################
 
-# covers Canadian Aboriginal Syllabics (including Carrier, Cree & Inuktitut shortcuts), Cherokee, Deseret,
+# covers Beria, Canadian Aboriginal Syllabics (including Carrier, Cree & Inuktitut shortcuts), Cherokee, Deseret,
 # Kayah Li, Medefeidrin, Mru, Nag Mundari, Nyiakeng Puachue Hmong, Ol Chiki, Old Onal, Osage, Pahawh Hmong,
 # Pau Cin Hau, Shavian, Sora Sompeng, Sunuwar, Tangsa, Toto, Wancho & Warang Citi
 
@@ -15888,6 +15924,66 @@ include "%L"
 <Multi_key> <C> <T> <numbersign> <7>     : "𖫇"  U16AC7  # TANGSA DIGIT SEVEN
 <Multi_key> <C> <T> <numbersign> <8>     : "𖫈"  U16AC8  # TANGSA DIGIT EIGHT
 <Multi_key> <C> <T> <numbersign> <9>     : "𖫉"  U16AC9  # TANGSA DIGIT NINE
+
+# (TS = Tolong Siki)
+
+<Multi_key> <C> <T> <S> <i> : "𑶰"  U11DB0  # TOLONG SIKI LETTER I
+<Multi_key> <C> <T> <S> <e> : "𑶱"  U11DB1  # TOLONG SIKI LETTER E
+<Multi_key> <C> <T> <S> <u> : "𑶲"  U11DB2  # TOLONG SIKI LETTER U
+<Multi_key> <C> <T> <S> <o> : "𑶳"  U11DB3  # TOLONG SIKI LETTER O
+<Multi_key> <C> <T> <S> <a> <space> : "𑶴"  U11DB4  # TOLONG SIKI LETTER A
+<Multi_key> <C> <T> <S> <a> <a> : "𑶵"  U11DB5  # TOLONG SIKI LETTER AA
+
+<Multi_key> <C> <T> <S> <p> <space> : "𑶶"  U11DB6  # TOLONG SIKI LETTER P
+<Multi_key> <C> <T> <S> <p> <h> : "𑶷"  U11DB7  # TOLONG SIKI LETTER PH
+<Multi_key> <C> <T> <S> <b> <space> : "𑶸"  U11DB8  # TOLONG SIKI LETTER B
+<Multi_key> <C> <T> <S> <b> <h> : "𑶹"  U11DB9  # TOLONG SIKI LETTER BH
+<Multi_key> <C> <T> <S> <m> : "𑶺"  U11DBA  # TOLONG SIKI LETTER M
+<Multi_key> <C> <T> <S> <t> <space> : "𑶻"  U11DBB  # TOLONG SIKI LETTER T
+<Multi_key> <C> <T> <S> <t> <h> : "𑶼"  U11DBC  # TOLONG SIKI LETTER TH
+<Multi_key> <C> <T> <S> <d> <space> : "𑶽"  U11DBD  # TOLONG SIKI LETTER D
+<Multi_key> <C> <T> <S> <d> <h> : "𑶾"  U11DBE  # TOLONG SIKI LETTER DH
+<Multi_key> <C> <T> <S> <n> <space> : "𑶿"  U11DBF  # TOLONG SIKI LETTER N
+<Multi_key> <C> <T> <S> <t> <t> <space> : "𑷀"  U11DC0  # TOLONG SIKI LETTER TT
+<Multi_key> <C> <T> <S> <t> <t> <h> : "𑷁"  U11DC1  # TOLONG SIKI LETTER TTH
+<Multi_key> <C> <T> <S> <d> <d> <space> : "𑷂"  U11DC2  # TOLONG SIKI LETTER DD
+<Multi_key> <C> <T> <S> <d> <d> <h> : "𑷃"  U11DC3  # TOLONG SIKI LETTER DDH
+<Multi_key> <C> <T> <S> <n> <n> <space> : "𑷄"  U11DC4  # TOLONG SIKI LETTER NN
+<Multi_key> <C> <T> <S> <c> <space> : "𑷅"  U11DC5  # TOLONG SIKI LETTER C
+<Multi_key> <C> <T> <S> <c> <h> : "𑷆"  U11DC6  # TOLONG SIKI LETTER CH
+<Multi_key> <C> <T> <S> <j> <space> : "𑷇"  U11DC7  # TOLONG SIKI LETTER J
+<Multi_key> <C> <T> <S> <j> <h> : "𑷈"  U11DC8  # TOLONG SIKI LETTER JH
+<Multi_key> <C> <T> <S> <n> <y> : "𑷉"  U11DC9  # TOLONG SIKI LETTER NY
+<Multi_key> <C> <T> <S> <k> <space> : "𑷊"  U11DCA  # TOLONG SIKI LETTER K
+<Multi_key> <C> <T> <S> <k> <h> : "𑷋"  U11DCB  # TOLONG SIKI LETTER KH
+<Multi_key> <C> <T> <S> <g> <space> : "𑷌"  U11DCC  # TOLONG SIKI LETTER G
+<Multi_key> <C> <T> <S> <g> <h> : "𑷍"  U11DCD  # TOLONG SIKI LETTER GH
+<Multi_key> <C> <T> <S> <n> <g> : "𑷎"  U11DCE  # TOLONG SIKI LETTER NG
+<Multi_key> <C> <T> <S> <y> : "𑷏"  U11DCF  # TOLONG SIKI LETTER Y
+<Multi_key> <C> <T> <S> <r> <space> : "𑷐"  U11DD0  # TOLONG SIKI LETTER R
+<Multi_key> <C> <T> <S> <l> : "𑷑"  U11DD1  # TOLONG SIKI LETTER L
+<Multi_key> <C> <T> <S> <v> : "𑷒"  U11DD2  # TOLONG SIKI LETTER V
+<Multi_key> <C> <T> <S> <n> <n> <y> : "𑷓"  U11DD3  # TOLONG SIKI LETTER NNY
+<Multi_key> <C> <T> <S> <s> : "𑷔"  U11DD4  # TOLONG SIKI LETTER S
+<Multi_key> <C> <T> <S> <h> : "𑷕"  U11DD5  # TOLONG SIKI LETTER H
+<Multi_key> <C> <T> <S> <x> : "𑷖"  U11DD6  # TOLONG SIKI LETTER X
+<Multi_key> <C> <T> <S> <r> <r> <space> : "𑷗"  U11DD7  # TOLONG SIKI LETTER RR
+<Multi_key> <C> <T> <S> <r> <r> <h> : "𑷘"  U11DD8  # TOLONG SIKI LETTER RRH
+
+<Multi_key> <C> <T> <S> <colon> : "𑷙"  U11DD9  # TOLONG SIKI SIGN SELA
+<Multi_key> <C> <T> <S> <bar> : "𑷚"  U11DDA  # TOLONG SIKI SIGN HECAKA
+<Multi_key> <C> <T> <S> <braceright> <u> <n> <g> <g> <a> : "𑷛"  U11DDB  # TOLONG SIKI UNGGA
+
+<Multi_key> <C> <T> <S> <numbersign> <0> : "𑷠"  U11DE0  # TOLONG SIKI DIGIT ZERO
+<Multi_key> <C> <T> <S> <numbersign> <1> : "𑷡"  U11DE1  # TOLONG SIKI DIGIT ONE
+<Multi_key> <C> <T> <S> <numbersign> <2> : "𑷢"  U11DE2  # TOLONG SIKI DIGIT TWO
+<Multi_key> <C> <T> <S> <numbersign> <3> : "𑷣"  U11DE3  # TOLONG SIKI DIGIT THREE
+<Multi_key> <C> <T> <S> <numbersign> <4> : "𑷤"  U11DE4  # TOLONG SIKI DIGIT FOUR
+<Multi_key> <C> <T> <S> <numbersign> <5> : "𑷥"  U11DE5  # TOLONG SIKI DIGIT FIVE
+<Multi_key> <C> <T> <S> <numbersign> <6> : "𑷦"  U11DE6  # TOLONG SIKI DIGIT SIX
+<Multi_key> <C> <T> <S> <numbersign> <7> : "𑷧"  U11DE7  # TOLONG SIKI DIGIT SEVEN
+<Multi_key> <C> <T> <S> <numbersign> <8> : "𑷨"  U11DE8  # TOLONG SIKI DIGIT EIGHT
+<Multi_key> <C> <T> <S> <numbersign> <9> : "𑷩"  U11DE9  # TOLONG SIKI DIGIT NINE
 
 # (w = Wancho)
 
@@ -32162,20 +32258,20 @@ include "Logograms"
 
 # Rectangles [ ] and ellipses ( )
 
-<Multi_key> <bracketleft> <space> <bracketright> <0> : "▭" U25AD    # WHITE RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <1> : "▬" U25AC    # BLACK RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <X> : "⌧" U2327   # X IN A RECTANGLE BOX
-<Multi_key> <bracketleft> <space> <bracketright> <asciicircum> : "⮹"  U2BB9  # UP ARROWHEAD IN A RECTANGLE BOX
-<Multi_key> <bracketleft> <space> <bracketright> <Return> : "⃢" U20E2   # COMBINING ENCLOSING SCREEN
-<Multi_key> <bracketleft> <space> <bracketright> <v> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <v> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
-<Multi_key> <bracketleft> <space> <bracketright> <v> <minus> : "𜸆"  U1CE06  # WHITE VERTICAL RECTANGLE WITH HORIZONTAL BAR
+<Multi_key> <bracketleft> <equal> <bracketright> <0> : "▭" U25AD    # WHITE RECTANGLE
+<Multi_key> <bracketleft> <equal> <bracketright> <1> : "▬" U25AC    # BLACK RECTANGLE
+<Multi_key> <bracketleft> <equal> <bracketright> <X> : "⌧" U2327   # X IN A RECTANGLE BOX
+<Multi_key> <bracketleft> <equal> <bracketright> <asciicircum> : "⮹"  U2BB9  # UP ARROWHEAD IN A RECTANGLE BOX
+<Multi_key> <bracketleft> <equal> <bracketright> <Return> : "⃢" U20E2   # COMBINING ENCLOSING SCREEN
+<Multi_key> <bracketleft> <equal> <bracketright> <v> <0> : "▯" U25AF    # WHITE VERTICAL RECTANGLE
+<Multi_key> <bracketleft> <equal> <bracketright> <v> <1> : "▮" U25AE    # BLACK VERTICAL RECTANGLE
+<Multi_key> <bracketleft> <equal> <bracketright> <v> <minus> : "𜸆"  U1CE06  # WHITE VERTICAL RECTANGLE WITH HORIZONTAL BAR
 
-<Multi_key> <parenleft> <space> <parenright> <0> : "⬭" U2B2D    # WHITE HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
-<Multi_key> <parenleft> <space> <parenright> <1> : "⬬" U2B2C    # BLACK HORIZONTAL ELLIPSE (conflicts with ˘, use ␣()
-<Multi_key> <parenleft> <space> <parenright> <2> : "𜸋𜸌"  U1CE0B U1CE0C  # WHITE ELLIPSE (TWO CHARACTERS) (conflicts with ˘, use ␣()
-<Multi_key> <parenleft> <space> <parenright> <v> <0> : "⬯" U2B2F    # WHITE VERTICAL ELLIPSE (conflicts with ˘, use ␣()
-<Multi_key> <parenleft> <space> <parenright> <v> <1> : "⬮" U2B2E    # BLACK VERTICAL ELLIPSE (conflicts with ˘, use ␣()
+<Multi_key> <parenleft> <equal> <parenright> <0> : "⬭" U2B2D    # WHITE HORIZONTAL ELLIPSE
+<Multi_key> <parenleft> <equal> <parenright> <1> : "⬬" U2B2C    # BLACK HORIZONTAL ELLIPSE
+<Multi_key> <parenleft> <equal> <parenright> <2> : "𜸋𜸌"  U1CE0B U1CE0C  # WHITE ELLIPSE (TWO CHARACTERS)
+<Multi_key> <parenleft> <equal> <parenright> <v> <0> : "⬯" U2B2F    # WHITE VERTICAL ELLIPSE
+<Multi_key> <parenleft> <equal> <parenright> <v> <1> : "⬮" U2B2E    # BLACK VERTICAL ELLIPSE
 
 # Other shapes: [TAB] + 2 letter shape + code (note this shares a namespace with arrows)
 
