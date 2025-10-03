@@ -4566,10 +4566,13 @@ include "%L"
 
 <Multi_key> <a> <x> <A> <A> <S> <Return> : "ؑ"  U0611  # ARABIC SIGN ALAYHE ASSALLAM
 <Multi_key> <a> <x> <A> <A> <S> <space>  : "﵇"  UFD47  # ARABIC LIGATURE ALAYHI AS-SALAAM
+<Multi_key> <a> <x> <A> <m> <A> <S> <space> : "﵈"  UFD48  # ARABIC LIGATURE ALAYHIM AS-SALAAM
+<Multi_key> <a> <x> <A> <2> <A> <S> <space> : "﵉"  UFD49  # ARABIC LIGATURE ALAYHIMAA AS-SALAAM
+<Multi_key> <a> <x> <A> <a> <A> <S> <space> : "﵍"  UFD4D  # ARABIC LIGATURE ALAYHAA AS-SALAAM
 <Multi_key> <a> <x> <A> <A> <S> <W> <S>  : "﵊"  UFD4A  # ARABIC LIGATURE ALAYHI AS-SALAATU WAS-SALAAM
-<Multi_key> <a> <x> <A> <m> <A> <S>      : "﵈"  UFD48  # ARABIC LIGATURE ALAYHIM AS-SALAAM
-<Multi_key> <a> <x> <A> <2> <A> <S>      : "﵉"  UFD49  # ARABIC LIGATURE ALAYHIMAA AS-SALAAM
-<Multi_key> <a> <x> <A> <a> <A> <S>      : "﵍"  UFD4D  # ARABIC LIGATURE ALAYHAA AS-SALAAM
+<Multi_key> <a> <x> <A> <a> <A> <S> <W> <S> : "𐻑"  U10ED1  # ARABIC LIGATURE ALAYHAA AS-SALAATU WAS-SALAAM
+<Multi_key> <a> <x> <A> <m> <A> <S> <W> <S> : "𐻒"  U10ED2  # ARABIC LIGATURE ALAYHIM AS-SALAATU WAS-SALAAM
+<Multi_key> <a> <x> <A> <2> <A> <S> <W> <S> : "𐻓"  U10ED3  # ARABIC LIGATURE ALAYHIMAA AS-SALAATU WAS-SALAAM
 
 <Multi_key> <a> <x> <R> <A> <Return>     : "ؓ"  U0613  # ARABIC SIGN RADI ALLAHOU ANHU
 <Multi_key> <a> <x> <R> <A> <space>      : "﵁"  UFD41  # ARABIC LIGATURE RADI ALLAAHU ANH
@@ -30129,6 +30132,7 @@ include "Logograms"
 <Multi_key> <m> <w> <a> <h>         : "😗"  U1F617        # KISSING FACE (MWAH) (use :x for 😙)
 <Multi_key> <n> <e> <r> <d>         : "🤓"  U1F913        # NERD FACE
 <Multi_key> <n> <o> <exclam>        : "🙂‍↔️"  U1F642 U200D U2194 UFE0F    # HEAD SHAKING HORIZONTALLY EMOJI (NO!) (use -1 for 👎)
+<Multi_key> <o> <h> <exclam>        : "😮"  U1F62E        # FACE WITH OPEN MOUTH (OH!) (alternatively :O)
 <Multi_key> <o> <h> <n> <o>         : "🫢"  U1FAE2        # FACE WITH OPEN EYES AND HAND OVER MOUTH (OH NO!)
 <Multi_key> <p> <a> <r> <t> <y>     : "🥳"  U1F973        # FACE WITH PARTY HORN AND PARTY HAT (use yay for 🎉)
 <Multi_key> <p> <e> <e> <k>         : "🫣"  U1FAE3        # FACE WITH PEEKING EYE
@@ -30330,6 +30334,7 @@ include "Logograms"
 <Multi_key> <c> <h> <o> <p>         : "🥢"  U1F962        # CHOPSTICKS (conflicts with ȟ, use vh)
 <Multi_key> <c> <l> <i> <n> <k>     : "🥂"  U1F942        # CLINKING GLASSES (conflicts with ľ, use vl)
 <Multi_key> <c> <o> <c> <k> <t>     : "🍸"  U1F378        # COCKTAIL GLASS (conflicts with ǒ, use vo)
+<Multi_key> <c> <o> <f> <f> <e> <e> : "☕"  U2615         # HOT BEVERAGE (COFFEE) (alternatively tea) (conflicts with ǎ, use va)
 <Multi_key> <c> <o> <o> <k> <space>  : "🍳"  U1F373       # COOKING (conflicts with ǒ, use vo) (use chef for 🧑‍🍳)
 <Multi_key> <c> <o> <o> <k> <i> <e> : "🍪"  U1F36A        # COOKIE (conflicts with ǒ, use vo)
 <Multi_key> <c> <o> <r> <k>         : "🍾"  U1F37E        # BOTTLE WITH POPPING CORK (conflicts with ǒ, use vo)
@@ -30352,6 +30357,7 @@ include "Logograms"
 <Multi_key> <g> <a> <p> <p> <l> <e> : "🍏"  U1F34F        # GREEN APPLE
 <Multi_key> <g> <a> <r> <l> <i> <c> : "🧄"  U1F9C4        # GARLIC
 <Multi_key> <g> <e> <l> <a> <t> <o> : "🍨"  U1F368        # ICE CREAM (GELATO)
+<Multi_key> <g> <i> <n> <space>     : "🍸"  U1F378        # COCKTAIL GLASS (GIN)
 <Multi_key> <g> <i> <n> <g> <e> <r> : "🫚"  U1FADA        # GINGER ROOT
 <Multi_key> <g> <l> <a> <s> <s>     : "🥃"  U1F943        # TUMBLER GLASS
 <Multi_key> <g> <r> <a> <p> <e>     : "🍇"  U1F347        # GRAPES
